@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Why the World Still Chants His Name — Rama Navami</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg-deep: #080300;
@@ -129,10 +129,11 @@
   }
 
   .hero-title {
-    font-family: 'Cinzel Decorative', serif;
+    font-family: 'Cinzel', serif;
     font-size: clamp(2rem, 5vw, 3.6rem);
     font-weight: 700;
     color: var(--gold-bright);
+    letter-spacing: 0.03em;
     line-height: 1.2;
     max-width: 800px;
     margin-bottom: 1rem;
@@ -1053,6 +1054,31 @@
   <h1 class="hero-title">Why the World Still<br>Chants His Name</h1>
   <p class="hero-subtitle">A man was born 5,000+ years ago. Kings rise and fall. Empires become dust. His story only grows.</p>
 
+  <!-- ── STORY CAROUSEL ── -->
+  <div class="story-carousel-wrap">
+    <div class="carousel-eyebrow">The Epic in Twelve Moments</div>
+    <div class="carousel-subtitle">From the first prayer to meeting Hanuman</div>
+
+    <div class="story-carousel" id="storyCarousel">
+      <div class="carousel-num" id="carouselNum">01 / 12</div>
+      <img id="storyCarouselImage" class="story-carousel-image" src="" alt="Ramayana scene">
+      <div class="slide-caption">
+        <div class="slide-title" id="carouselTitle"></div>
+        <div class="slide-desc" id="carouselDesc"></div>
+      </div>
+    </div>
+
+    <!-- Navigation dots -->
+    <div class="carousel-dots" id="carouselDots"></div>
+
+    <!-- Prev / Next arrows -->
+    <button class="carousel-arrow carousel-prev" onclick="carouselMove(-1)" aria-label="Previous">&#8592;</button>
+    <button class="carousel-arrow carousel-next" onclick="carouselMove(1)" aria-label="Next">&#8594;</button>
+
+    <div class="carousel-kanda" id="carouselKanda"></div>
+
+  </div><!-- .story-carousel-wrap -->
+
   <!-- Birth Data -->
   <div class="birth-grid">
     <div class="birth-cell">
@@ -1079,31 +1105,6 @@
   <p style="font-size:0.8rem; color:var(--cream-dim); margin-top:1rem; font-style:italic;">
     All three believed to occur on the same tithi — making Chaitra Navami unique in the entire Hindu calendar.
   </p>
-
-  <!-- ── STORY CAROUSEL ── -->
-  <div class="story-carousel-wrap">
-    <div class="carousel-eyebrow">The Epic in Twelve Moments</div>
-    <div class="carousel-subtitle">From the first prayer to meeting Hanuman</div>
-
-    <div class="story-carousel" id="storyCarousel">
-      <div class="carousel-num" id="carouselNum">01 / 12</div>
-      <img id="storyCarouselImage" class="story-carousel-image" src="" alt="Ramayana scene">
-      <div class="slide-caption">
-        <div class="slide-title" id="carouselTitle"></div>
-        <div class="slide-desc" id="carouselDesc"></div>
-      </div>
-    </div>
-
-    <!-- Navigation dots -->
-    <div class="carousel-dots" id="carouselDots"></div>
-
-    <!-- Prev / Next arrows -->
-    <button class="carousel-arrow carousel-prev" onclick="carouselMove(-1)" aria-label="Previous">&#8592;</button>
-    <button class="carousel-arrow carousel-next" onclick="carouselMove(1)" aria-label="Next">&#8594;</button>
-
-    <div class="carousel-kanda" id="carouselKanda"></div>
-
-  </div><!-- .story-carousel-wrap -->
 
 </section>
 
@@ -1649,6 +1650,7 @@
   <p>Built with devotion on Rama Navami 2026 &nbsp;·&nbsp; Sources: Valmiki Ramayana (Critical Edition), Goldman &amp; Goldman (Princeton), Bibek Debroy (Penguin) &nbsp;·&nbsp; <span>Jai Shri Rama 🙏</span></p>
 </footer>
 
+<script src="config.js"></script>
 <script>
   // ── SCROLL REVEAL ──
   const revealEls = document.querySelectorAll('.reveal');
@@ -1671,23 +1673,82 @@
     if (!wasOpen) item.classList.add('open');
   }
 
-  // ── CTA SIGNUP ──
-  function handleSignup() {
+  // ── CTA SIGNUP / EMAIL CAPTURE ──
+  // Set these once (for example before this script) to enable Supabase writes:
+  // window.__SUPABASE_CONFIG__ = { url: 'https://xxxx.supabase.co', anonKey: 'public-anon-key', table: 'email_captures' };
+  const supabaseCaptureConfig = window.__SUPABASE_CONFIG__ || {};
+
+  async function storeEmailCapture(email, cta) {
+    const url = supabaseCaptureConfig.url;
+    const anonKey = supabaseCaptureConfig.anonKey;
+    const table = supabaseCaptureConfig.table || 'email_captures';
+    if (!url || !anonKey) {
+      console.warn('Supabase config missing. Set window.__SUPABASE_CONFIG__.');
+      return { ok: false, reason: 'config_missing' };
+    }
+
+    const endpoint = `${url.replace(/\/$/, '')}/rest/v1/${table}`;
+    const resp = await fetch(endpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        apikey: anonKey,
+        Authorization: `Bearer ${anonKey}`,
+        Prefer: 'return=minimal'
+      },
+      body: JSON.stringify({
+        email_id: email.trim(),
+        cta: cta
+      })
+    });
+
+    if (!resp.ok) {
+      let errorText = '';
+      try { errorText = await resp.text(); } catch (_) {}
+      throw new Error(`Supabase insert failed (${resp.status}): ${errorText}`);
+    }
+
+    return { ok: true };
+  }
+
+  function isValidEmail(value) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test((value || '').trim());
+  }
+
+  async function handleSignup() {
     const input = document.querySelector('.cta-input');
     const btn = document.querySelector('.cta-btn');
-    if (input.value && input.value.includes('@')) {
+    const email = (input.value || '').trim();
+    if (!isValidEmail(email)) {
+      input.style.borderLeft = '3px solid #E07070';
+      setTimeout(() => input.style.borderLeft = '', 2000);
+      return;
+    }
+
+    const originalText = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Saving...';
+    try {
+      await storeEmailCapture(email, 'main_page');
       btn.textContent = '🙏 Jai Shri Rama!';
       btn.style.background = 'var(--saffron)';
       input.value = '';
       input.placeholder = 'You\'re on the list — thank you!';
       setTimeout(() => {
-        btn.textContent = 'Join the List';
+        btn.textContent = originalText;
         btn.style.background = '';
         input.placeholder = 'your@email.com — get early access';
       }, 4000);
-    } else {
+    } catch (err) {
+      console.error(err);
+      btn.textContent = 'Try Again';
       input.style.borderLeft = '3px solid #E07070';
-      setTimeout(() => input.style.borderLeft = '', 2000);
+      setTimeout(() => {
+        btn.textContent = originalText;
+        input.style.borderLeft = '';
+      }, 2500);
+    } finally {
+      btn.disabled = false;
     }
   }
 
@@ -1938,15 +1999,41 @@
     document.body.style.overflow = '';
   }
 
-  function handleColoringUnlock() {
+  async function handleColoringUnlock() {
     const emailInput = document.getElementById('coloringUnlockEmail');
-    if (!emailInput.value || !emailInput.value.includes('@')) {
+    const unlockBtn = emailInput ? emailInput.parentElement.querySelector('.cta-btn') : null;
+    const email = (emailInput.value || '').trim();
+    if (!isValidEmail(email)) {
       emailInput.style.borderLeft = '3px solid #E07070';
       setTimeout(() => { emailInput.style.borderLeft = ''; }, 1800);
       return;
     }
-    emailInput.value = '';
-    emailInput.placeholder = 'Thank you! We will notify you with new pages.';
+
+    const originalText = unlockBtn ? unlockBtn.textContent : 'Unlock More';
+    if (unlockBtn) {
+      unlockBtn.disabled = true;
+      unlockBtn.textContent = 'Saving...';
+    }
+
+    try {
+      await storeEmailCapture(email, 'kids_coloring_book');
+      emailInput.value = '';
+      emailInput.placeholder = 'Thank you! We will notify you with new pages.';
+      if (unlockBtn) unlockBtn.textContent = 'Unlocked!';
+      setTimeout(() => {
+        if (unlockBtn) unlockBtn.textContent = originalText;
+      }, 3000);
+    } catch (err) {
+      console.error(err);
+      emailInput.style.borderLeft = '3px solid #E07070';
+      if (unlockBtn) unlockBtn.textContent = 'Try Again';
+      setTimeout(() => {
+        emailInput.style.borderLeft = '';
+        if (unlockBtn) unlockBtn.textContent = originalText;
+      }, 2500);
+    } finally {
+      if (unlockBtn) unlockBtn.disabled = false;
+    }
   }
 
   window.openColoringBook = openColoringBook;
@@ -1971,18 +2058,18 @@
   // ── STORY CAROUSEL ──
   (function() {
     const storyCarouselData = [
-      { title: "Putrakameshti", kanda: "Bala Kanda", desc: "Dasharatha performs the sacred yajna seeking heirs.", image: "PutraKameshti .png" },
-      { title: "Rama's Birth", kanda: "Bala Kanda", desc: "Rama is born in Ayodhya under an auspicious sky.", image: "Rama's birth.png" },
-      { title: "Vishwamitra's Request", kanda: "Bala Kanda", desc: "The sage requests Rama and Lakshmana for protection.", image: "Vishwamitra's request.png" },
-      { title: "Tataka Vadha", kanda: "Bala Kanda", desc: "Rama defeats Tataka in his first great trial.", image: "Tataka Vadha.png" },
-      { title: "Sita Swayamvar", kanda: "Bala Kanda", desc: "Rama strings and breaks Shiva's bow in Mithila.", image: "Sita Swayamvar.png" },
-      { title: "Marriage", kanda: "Bala Kanda", desc: "Rama and Sita are wed in sacred ceremony.", image: "Marriage.png" },
-      { title: "Kaikeyi's Boon", kanda: "Ayodhya Kanda", desc: "Kaikeyi invokes her boons and alters Ayodhya's fate.", image: "Kaikeyi's boons.png" },
-      { title: "Exile", kanda: "Ayodhya Kanda", desc: "Rama, Sita, and Lakshmana leave for the forest.", image: "exile.png" },
-      { title: "Bharath's Vow", kanda: "Ayodhya Kanda", desc: "Bharath rules as regent with Rama's sandals on the throne.", image: "Bharath's vow.png" },
-      { title: "Golden Deer", kanda: "Aranya Kanda", desc: "Maricha's illusion leads to a turning point.", image: "Golden deer.png" },
-      { title: "Jatayu's Sacrifice", kanda: "Aranya Kanda", desc: "Jatayu gives his life while trying to save Sita.", image: "Jatayu's sacrifice.png" },
-      { title: "Meeting Hanuman", kanda: "Kishkindha Kanda", desc: "Rama meets Hanuman and a great alliance begins.", image: "Meeting Hanuman.png" }
+      { title: "Putrakameshti", kanda: "Bala Kanda", desc: "Dasharatha performs the sacred yajna seeking heirs.", image: "Images/PutraKameshti .png" },
+      { title: "Rama's Birth", kanda: "Bala Kanda", desc: "Rama is born in Ayodhya under an auspicious sky.", image: "Images/Rama's birth.png" },
+      { title: "Vishwamitra's Request", kanda: "Bala Kanda", desc: "The sage requests Rama and Lakshmana for protection.", image: "Images/Vishwamitra's request.png" },
+      { title: "Tataka Vadha", kanda: "Bala Kanda", desc: "Rama defeats Tataka in his first great trial.", image: "Images/Tataka Vadha.png" },
+      { title: "Sita Swayamvar", kanda: "Bala Kanda", desc: "Rama strings and breaks Shiva's bow in Mithila.", image: "Images/Sita Swayamvar.png" },
+      { title: "Marriage", kanda: "Bala Kanda", desc: "Rama and Sita are wed in sacred ceremony.", image: "Images/Marriage.png" },
+      { title: "Kaikeyi's Boon", kanda: "Ayodhya Kanda", desc: "Kaikeyi invokes her boons and alters Ayodhya's fate.", image: "Images/Kaikeyi's boons.png" },
+      { title: "Exile", kanda: "Ayodhya Kanda", desc: "Rama, Sita, and Lakshmana leave for the forest.", image: "Images/exile.png" },
+      { title: "Bharath's Vow", kanda: "Ayodhya Kanda", desc: "Bharath rules as regent with Rama's sandals on the throne.", image: "Images/Bharath's vow.png" },
+      { title: "Golden Deer", kanda: "Aranya Kanda", desc: "Maricha's illusion leads to a turning point.", image: "Images/Golden deer.png" },
+      { title: "Jatayu's Sacrifice", kanda: "Aranya Kanda", desc: "Jatayu gives his life while trying to save Sita.", image: "Images/Jatayu's sacrifice.png" },
+      { title: "Meeting Hanuman", kanda: "Kishkindha Kanda", desc: "Rama meets Hanuman and a great alliance begins.", image: "Images/Meeting Hanuman.png" }
     ];
 
     const imageEl = document.getElementById('storyCarouselImage');
@@ -2050,6 +2137,9 @@
 
   document.querySelector('.cta-input').addEventListener('keydown', e => {
     if (e.key === 'Enter') handleSignup();
+  });
+  document.getElementById('coloringUnlockEmail').addEventListener('keydown', e => {
+    if (e.key === 'Enter') handleColoringUnlock();
   });
 </script>
 
