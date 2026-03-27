@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why the World Still Chants His Name — Rama Navami</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-deep: #080300;
+    --bg-card: #120800;
+    --bg-card2: #1a0d04;
+    --gold: #C8962C;
+    --gold-bright: #E8B94F;
+    --saffron: #E07B1A;
+    --saffron-light: #F5A23C;
+    --cream: #F5E6C8;
+    --cream-dim: #BEA882;
+    --maroon: #6B1A1A;
+    --teal: #1A5C5C;
+    --lotus-pink: #C45C7A;
+    --text-body: #D4C4A0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg-deep);
+    color: var(--cream);
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.75;
+    overflow-x: hidden;
+  }
+
+  /* ── MANDALA BACKGROUND PATTERN ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      radial-gradient(ellipse 80% 60% at 50% -10%, rgba(200,150,44,0.08) 0%, transparent 70%),
+      radial-gradient(ellipse 60% 40% at 80% 110%, rgba(224,123,26,0.06) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  section { position: relative; z-index: 1; }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(8,3,0,0.92);
+    border-bottom: 1px solid rgba(200,150,44,0.2);
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 2rem;
+  }
+
+  .nav-brand {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.85rem;
+    color: var(--gold);
+    letter-spacing: 0.08em;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: var(--cream-dim);
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: 'Crimson Text', serif;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover { color: var(--gold-bright); }
+
+  /* ── SECTION 1: HERO ── */
+  #hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 2rem 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-mandala {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.06;
+    width: 700px;
+    height: 700px;
+    animation: slowspin 80s linear infinite;
+  }
+
+  @keyframes slowspin { to { transform: translate(-50%,-50%) rotate(360deg); } }
+
+  .hero-date-badge {
+    font-family: 'Crimson Text', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--saffron);
+    border: 1px solid rgba(224,123,26,0.4);
+    padding: 0.4rem 1.2rem;
+    border-radius: 2px;
+    margin-bottom: 2rem;
+    display: inline-block;
+    animation: fadeUp 0.8s ease both;
+  }
+
+  .hero-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(2rem, 5vw, 3.6rem);
+    font-weight: 700;
+    color: var(--gold-bright);
+    line-height: 1.2;
+    max-width: 800px;
+    margin-bottom: 1rem;
+    animation: fadeUp 1s 0.2s ease both;
+  }
+
+  .hero-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    font-style: italic;
+    color: var(--cream-dim);
+    max-width: 600px;
+    margin-bottom: 3rem;
+    animation: fadeUp 1s 0.4s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Birth card */
+  .birth-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1px;
+    background: rgba(200,150,44,0.15);
+    border: 1px solid rgba(200,150,44,0.2);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 3rem;
+    animation: fadeUp 1s 0.6s ease both;
+  }
+
+  .birth-cell {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .birth-cell .label {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--saffron);
+    margin-bottom: 0.5rem;
+    font-family: 'Crimson Text', serif;
+  }
+
+  .birth-cell .value {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cream);
+  }
+
+  .birth-cell .sub {
+    font-size: 0.75rem;
+    color: var(--cream-dim);
+    margin-top: 0.25rem;
+  }
+
+  /* Triple significance */
+  .triple-significance {
+    display: flex;
+    gap: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: fadeUp 1s 0.8s ease both;
+  }
+
+  .triple-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--cream-dim);
+    font-size: 0.9rem;
+  }
+
+  .triple-dot {
+    width: 8px; height: 8px;
+    background: var(--gold);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* Divider lotus */
+  .lotus-divider {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 4rem auto;
+    max-width: 600px;
+    padding: 0 2rem;
+  }
+
+  .lotus-divider::before,
+  .lotus-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(200,150,44,0.4));
+  }
+
+  .lotus-divider::after {
+    background: linear-gradient(to left, transparent, rgba(200,150,44,0.4));
+  }
+
+  /* ── SECTION 2: MARYADA ── */
+  #maryada {
+    padding: 5rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .section-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--saffron);
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+
+  .section-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 700;
+    color: var(--gold-bright);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+
+  .lead-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--cream-dim);
+    margin-bottom: 2rem;
+    border-left: 3px solid var(--saffron);
+    padding-left: 1.5rem;
+  }
+
+  .maryada-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  .virtue-card {
+    background: var(--bg-card2);
+    border: 1px solid rgba(200,150,44,0.15);
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+
+  .virtue-card:hover {
+    border-color: rgba(200,150,44,0.4);
+    transform: translateY(-2px);
+  }
+
+  .virtue-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: var(--gold);
+  }
+
+  .virtue-role {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--saffron-light);
+    margin-bottom: 0.5rem;
+  }
+
+  .virtue-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--cream);
+    margin-bottom: 0.5rem;
+  }
+
+  .virtue-desc {
+    font-size: 0.9rem;
+    color: var(--cream-dim);
+    line-height: 1.6;
+  }
+
+  /* ── SECTION 3: SEVEN KANDAS ── */
+  #kandas {
+    padding: 5rem 2rem;
+    background: linear-gradient(180deg, transparent, rgba(200,150,44,0.03) 50%, transparent);
+  }
+
+  .kandas-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .kandas-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+
+  .kanda-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .kanda-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 0;
+    border-bottom: 1px solid rgba(200,150,44,0.1);
+    padding: 1.75rem 0;
+    align-items: start;
+    transition: background 0.3s;
+    cursor: default;
+  }
+
+  .kanda-item:hover { background: rgba(200,150,44,0.04); }
+  .kanda-item:first-child { border-top: 1px solid rgba(200,150,44,0.1); }
+
+  .kanda-number {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.7rem;
+    color: rgba(200,150,44,0.4);
+    padding-top: 0.25rem;
+    letter-spacing: 0.1em;
+  }
+
+  .kanda-body { padding-right: 1rem; }
+
+  .kanda-name-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .kanda-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--gold-bright);
+  }
+
+  .kanda-tag {
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.6rem;
+    border-radius: 2px;
+    font-family: 'Crimson Text', serif;
+  }
+
+  .tag-student   { background: rgba(100,160,200,0.15); color: #7ABFE0; border: 1px solid rgba(100,160,200,0.25); }
+  .tag-prince    { background: rgba(180,120,60,0.15);  color: #D4956A; border: 1px solid rgba(180,120,60,0.25); }
+  .tag-wanderer  { background: rgba(100,180,100,0.15); color: #7ACE8A; border: 1px solid rgba(100,180,100,0.25); }
+  .tag-ally      { background: rgba(160,100,200,0.15); color: #C07AE0; border: 1px solid rgba(160,100,200,0.25); }
+  .tag-devotee   { background: rgba(224,123,26,0.15);  color: #F5A23C; border: 1px solid rgba(224,123,26,0.3); }
+  .tag-warrior   { background: rgba(200,60,60,0.15);   color: #E07070; border: 1px solid rgba(200,60,60,0.25); }
+  .tag-king      { background: rgba(200,150,44,0.15);  color: #C8962C; border: 1px solid rgba(200,150,44,0.25); }
+
+  .kanda-lesson {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--cream);
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .kanda-detail {
+    color: var(--cream-dim);
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  .kanda-modern {
+    margin-top: 0.75rem;
+    font-size: 0.82rem;
+    color: var(--saffron-light);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .kanda-modern::before {
+    content: '→';
+    flex-shrink: 0;
+  }
+
+  /* ── SECTION 4: MYTH BUSTERS ── */
+  #myths {
+    padding: 5rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .myth-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 2.5rem;
+    border: 1px solid rgba(200,150,44,0.15);
+  }
+
+  .myth-item {
+    border-bottom: 1px solid rgba(200,150,44,0.1);
+    overflow: hidden;
+  }
+
+  .myth-item:last-child { border-bottom: none; }
+
+  .myth-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    cursor: pointer;
+    background: var(--bg-card);
+    transition: background 0.3s;
+    user-select: none;
+  }
+
+  .myth-header:hover { background: var(--bg-card2); }
+
+  .myth-num {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.65rem;
+    color: rgba(200,150,44,0.5);
+    min-width: 28px;
+    padding-top: 0.1rem;
+  }
+
+  .myth-q {
+    flex: 1;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+    color: var(--cream);
+    line-height: 1.5;
+  }
+
+  .myth-expand {
+    color: var(--gold);
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  .myth-item.open .myth-expand { transform: rotate(45deg); }
+
+  .myth-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: rgba(200,150,44,0.03);
+  }
+
+  .myth-item.open .myth-body { max-height: 300px; }
+
+  .myth-body-inner {
+    padding: 1rem 1.5rem 1.25rem calc(1.5rem + 28px + 1rem);
+  }
+
+  .myth-verdict {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #E07070;
+    border: 1px solid rgba(200,80,80,0.3);
+    padding: 0.15rem 0.6rem;
+    border-radius: 2px;
+    margin-bottom: 0.75rem;
+  }
+
+  .myth-verdict.fact { color: #7ACE8A; border-color: rgba(80,180,80,0.3); }
+
+  .myth-answer {
+    color: var(--text-body);
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .source-tag {
+    display: inline-block;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    padding: 0.1rem 0.4rem;
+    border-radius: 2px;
+    margin-left: 0.4rem;
+    vertical-align: middle;
+    font-family: 'Crimson Text', serif;
+  }
+
+  .src-v0 { background: rgba(100,160,100,0.2); color: #8ECE8E; border: 1px solid rgba(100,160,100,0.3); }
+  .src-t  { background: rgba(160,100,200,0.2); color: #C07AE0; border: 1px solid rgba(160,100,200,0.3); }
+  .src-s  { background: rgba(100,150,200,0.2); color: #7AB0E0; border: 1px solid rgba(100,150,200,0.3); }
+
+  /* ── SECTION 5: CTA ── */
+  #cta {
+    padding: 6rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-glow {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px; height: 300px;
+    background: radial-gradient(ellipse, rgba(200,150,44,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .cta-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--saffron);
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+
+  .cta-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: var(--gold-bright);
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-desc {
+    color: var(--cream-dim);
+    max-width: 520px;
+    margin: 0 auto 2.5rem;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .cta-cards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+
+  .coming-card {
+    background: var(--bg-card);
+    border: 1px solid rgba(200,150,44,0.2);
+    padding: 1.25rem 1.75rem;
+    text-align: left;
+    min-width: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .coming-card.clickable {
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+
+  .coming-card.clickable:hover {
+    transform: translateY(-2px);
+    border-color: rgba(200,150,44,0.45);
+  }
+
+  .coming-card::after {
+    content: 'COMING SOON';
+    position: absolute;
+    top: 0.5rem; right: 0.5rem;
+    font-size: 0.55rem;
+    letter-spacing: 0.15em;
+    color: var(--saffron);
+    background: rgba(224,123,26,0.1);
+    padding: 0.1rem 0.4rem;
+    border-radius: 2px;
+  }
+
+  .coming-card.open-now::after {
+    content: 'OPEN NOW';
+    color: #8ECE8E;
+    background: rgba(100,160,100,0.16);
+  }
+
+  .coming-card .icon {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .coming-card .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--cream);
+    margin-bottom: 0.25rem;
+  }
+
+  .coming-card .card-sub {
+    font-size: 0.8rem;
+    color: var(--cream-dim);
+  }
+
+  .cta-form {
+    display: flex;
+    gap: 0;
+    max-width: 440px;
+    margin: 0 auto;
+    border: 1px solid rgba(200,150,44,0.3);
+  }
+
+  .cta-input {
+    flex: 1;
+    background: var(--bg-card);
+    border: none;
+    padding: 0.9rem 1.2rem;
+    color: var(--cream);
+    font-family: 'Crimson Text', serif;
+    font-size: 1rem;
+    outline: none;
+  }
+
+  .cta-input::placeholder { color: var(--cream-dim); opacity: 0.6; }
+
+  .cta-btn {
+    background: var(--gold);
+    color: var(--bg-deep);
+    border: none;
+    padding: 0.9rem 1.5rem;
+    font-family: 'Crimson Text', serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s;
+    white-space: nowrap;
+  }
+
+  .cta-btn:hover { background: var(--gold-bright); }
+
+  /* ── COLORING BOOK MODAL ── */
+  .coloring-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.82);
+    backdrop-filter: blur(3px);
+    z-index: 1200;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .coloring-modal.open { display: flex; }
+
+  .coloring-panel {
+    width: min(1080px, 96vw);
+    max-height: 94vh;
+    overflow: auto;
+    background: #090300;
+    border: 1px solid rgba(200,150,44,0.35);
+    box-shadow: 0 14px 40px rgba(0,0,0,0.55);
+    padding: 1rem;
+  }
+
+  .coloring-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .coloring-title {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold-bright);
+    font-size: 1.15rem;
+  }
+
+  .coloring-close {
+    border: 1px solid rgba(200,150,44,0.3);
+    background: #140700;
+    color: var(--gold);
+    padding: 0.35rem 0.55rem;
+    cursor: pointer;
+  }
+
+  .coloring-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+    align-items: center;
+  }
+
+  .coloring-btn {
+    border: 1px solid rgba(200,150,44,0.25);
+    background: #140700;
+    color: var(--cream);
+    padding: 0.45rem 0.65rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+  }
+
+  .coloring-btn.active {
+    border-color: rgba(100,160,100,0.6);
+    color: #8ECE8E;
+  }
+
+  .coloring-stage {
+    position: relative;
+    margin: 0 auto;
+    width: min(100%, 720px);
+    border: 1px solid rgba(200,150,44,0.2);
+    background: #000;
+  }
+
+  .coloring-base {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  .coloring-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    cursor: crosshair;
+    touch-action: none;
+  }
+
+  .coloring-foot {
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    color: var(--cream-dim);
+    font-size: 0.8rem;
+  }
+
+  .unlock-more {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(200,150,44,0.2);
+    padding-top: 1rem;
+  }
+
+  .unlock-more p {
+    color: var(--cream-dim);
+    margin-bottom: 0.6rem;
+    font-size: 0.86rem;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top: 1px solid rgba(200,150,44,0.1);
+    padding: 2rem;
+    text-align: center;
+    color: rgba(200,150,44,0.35);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+  }
+
+  footer span { color: var(--saffron); }
+
+  /* ── STORY CAROUSEL ── */
+  .story-carousel-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 620px;
+    margin: 3rem auto 0;
+    user-select: none;
+  }
+
+  .carousel-eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--saffron);
+    text-align: center;
+    margin-bottom: 0.4rem;
+  }
+
+  .carousel-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--cream-dim);
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .story-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border: none;
+    background: transparent;
+    overflow: visible;
+  }
+
+  .story-carousel-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    display: block;
+    background: transparent;
+    border: 1px solid rgba(200,150,44,0.2);
+  }
+
+  .slide-caption {
+    background: transparent;
+    padding: 0.85rem 0.4rem 0.2rem;
+  }
+
+  .slide-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--gold-bright);
+    margin-bottom: 0.25rem;
+  }
+
+  .slide-desc {
+    font-size: 0.82rem;
+    color: var(--cream-dim);
+    line-height: 1.55;
+  }
+
+  .carousel-num {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.65rem;
+    color: rgba(200,150,44,0.55);
+    letter-spacing: 0.1em;
+    z-index: 10;
+  }
+
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0.9rem 0 0.4rem;
+    flex-wrap: wrap;
+  }
+
+  .c-dot {
+    width: 24px;
+    height: 3px;
+    background: rgba(200,150,44,0.2);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background 0.3s, width 0.3s;
+  }
+
+  .c-dot.active {
+    background: var(--gold);
+    width: 36px;
+  }
+
+  .carousel-arrow {
+    position: absolute;
+    top: calc(50% - 18px);
+    background: rgba(8,3,0,0.75);
+    border: 1px solid rgba(200,150,44,0.25);
+    color: var(--gold);
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+  }
+
+  .carousel-prev { left: 6px; }
+  .carousel-next { right: 6px; }
+
+  .carousel-kanda {
+    text-align: center;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(200,150,44,0.45);
+    margin-top: 0.4rem;
+    min-height: 1.2em;
+  }
+
+  @media (max-width: 600px) {
+    .story-carousel-wrap { margin-top: 2rem; }
+    .slide-caption { padding: 0.65rem 1rem; }
+    .slide-title { font-size: 0.9rem; }
+    .slide-desc { font-size: 0.75rem; }
+    .carousel-arrow { display: none; }
+  }
+
+  /* ── SCROLL REVEAL ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .nav-links { display: none; }
+    .kanda-item { grid-template-columns: 50px 1fr; }
+    .birth-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">Jai Shri Rama</div>
+  <ul class="nav-links">
+    <li><a href="#hero">Navami</a></li>
+    <li><a href="#maryada">Maryada</a></li>
+    <li><a href="#kandas">7 Kandas</a></li>
+    <li><a href="#myths">Myths</a></li>
+    <li><a href="#cta">Coming</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     SECTION 1 — WHY RAMA NAVAMI
+══════════════════════════════════════════ -->
+<section id="hero">
+
+  <!-- Spinning mandala background -->
+  <svg class="hero-mandala" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" stroke="rgba(200,150,44,1)" stroke-width="0.5">
+      <circle cx="250" cy="250" r="240"/>
+      <circle cx="250" cy="250" r="200"/>
+      <circle cx="250" cy="250" r="160"/>
+      <circle cx="250" cy="250" r="120"/>
+      <circle cx="250" cy="250" r="80"/>
+      <circle cx="250" cy="250" r="40"/>
+      <!-- Petals outer -->
+      <g transform="translate(250,250)">
+        <g transform="rotate(0)">   <ellipse rx="18" ry="60" cy="-180"/></g>
+        <g transform="rotate(22.5)"><ellipse rx="18" ry="60" cy="-180"/></g>
+        <g transform="rotate(45)">  <ellipse rx="18" ry="60" cy="-180"/></g>
+        <g transform="rotate(67.5)"><ellipse rx="18" ry="60" cy="-180"/></g>
+        <g transform="rotate(90)">  <ellipse rx="18" ry="60" cy="-180"/></g>
+        <g transform="rotate(112.5)"><ellipse rx="18" ry="60" cy="-180"/></g>
+        <g transform="rotate(135)"> <ellipse rx="18" ry="60" cy="-180"/></g>
+        <g transform="rotate(157.5)"><ellipse rx="18" ry="60" cy="-180"/></g>
+        <g transform="rotate(180)"> <ellipse rx="18" ry="60" cy="-180"/></g>
+        <g transform="rotate(202.5)"><ellipse rx="18" ry="60" cy="-180"/></g>
+        <g transform="rotate(225)"> <ellipse rx="18" ry="60" cy="-180"/></g>
+        <g transform="rotate(247.5)"><ellipse rx="18" ry="60" cy="-180"/></g>
+        <g transform="rotate(270)"> <ellipse rx="18" ry="60" cy="-180"/></g>
+        <g transform="rotate(292.5)"><ellipse rx="18" ry="60" cy="-180"/></g>
+        <g transform="rotate(315)"> <ellipse rx="18" ry="60" cy="-180"/></g>
+        <g transform="rotate(337.5)"><ellipse rx="18" ry="60" cy="-180"/></g>
+        <!-- Inner petals -->
+        <g transform="rotate(0)">   <ellipse rx="10" ry="40" cy="-110"/></g>
+        <g transform="rotate(30)">  <ellipse rx="10" ry="40" cy="-110"/></g>
+        <g transform="rotate(60)">  <ellipse rx="10" ry="40" cy="-110"/></g>
+        <g transform="rotate(90)">  <ellipse rx="10" ry="40" cy="-110"/></g>
+        <g transform="rotate(120)"> <ellipse rx="10" ry="40" cy="-110"/></g>
+        <g transform="rotate(150)"> <ellipse rx="10" ry="40" cy="-110"/></g>
+        <g transform="rotate(180)"> <ellipse rx="10" ry="40" cy="-110"/></g>
+        <g transform="rotate(210)"> <ellipse rx="10" ry="40" cy="-110"/></g>
+        <g transform="rotate(240)"> <ellipse rx="10" ry="40" cy="-110"/></g>
+        <g transform="rotate(270)"> <ellipse rx="10" ry="40" cy="-110"/></g>
+        <g transform="rotate(300)"> <ellipse rx="10" ry="40" cy="-110"/></g>
+        <g transform="rotate(330)"> <ellipse rx="10" ry="40" cy="-110"/></g>
+      </g>
+      <!-- Radial lines -->
+      <line x1="250" y1="10"  x2="250" y2="490"/>
+      <line x1="10"  y1="250" x2="490" y2="250"/>
+      <line x1="73"  y1="73"  x2="427" y2="427"/>
+      <line x1="427" y1="73"  x2="73"  y2="427"/>
+      <line x1="42"  y1="161" x2="458" y2="339"/>
+      <line x1="458" y1="161" x2="42"  y2="339"/>
+      <line x1="161" y1="42"  x2="339" y2="458"/>
+      <line x1="161" y1="458" x2="339" y2="42"/>
+    </g>
+  </svg>
+
+  <div class="hero-date-badge">27 March 2026 · Chaitra Shukla Navami · Rama Navami</div>
+
+  <h1 class="hero-title">Why the World Still<br>Chants His Name</h1>
+  <p class="hero-subtitle">A man was born 5,000+ years ago. Kings rise and fall. Empires become dust. His story only grows.</p>
+
+  <!-- Birth Data -->
+  <div class="birth-grid">
+    <div class="birth-cell">
+      <div class="label">Tithi</div>
+      <div class="value">Chaitra Shukla Navami</div>
+      <div class="sub">9th day, bright fortnight</div>
+    </div>
+    <div class="birth-cell">
+      <div class="label">Nakshatra</div>
+      <div class="value">Punarvasu</div>
+      <div class="sub">Ruled by Jupiter · restoration</div>
+    </div>
+  </div>
+  <p style="font-size:0.72rem; color:var(--cream-dim); opacity:0.6; margin-top:-0.6rem; margin-bottom:2rem;">
+    Source: Valmiki Ramayana, Bala Kanda Sarga 18
+  </p>
+
+  <!-- Triple significance -->
+  <div class="triple-significance">
+    <div class="triple-item"><div class="triple-dot"></div> Birth of Rama</div>
+    <div class="triple-item"><div class="triple-dot"></div> Marriage to Sita</div>
+    <div class="triple-item"><div class="triple-dot"></div> Coronation as King</div>
+  </div>
+  <p style="font-size:0.8rem; color:var(--cream-dim); margin-top:1rem; font-style:italic;">
+    All three believed to occur on the same tithi — making Chaitra Navami unique in the entire Hindu calendar.
+  </p>
+
+  <!-- ── STORY CAROUSEL ── -->
+  <div class="story-carousel-wrap">
+    <div class="carousel-eyebrow">The Epic in Twelve Moments</div>
+    <div class="carousel-subtitle">From the first prayer to meeting Hanuman</div>
+
+    <div class="story-carousel" id="storyCarousel">
+      <div class="carousel-num" id="carouselNum">01 / 12</div>
+      <img id="storyCarouselImage" class="story-carousel-image" src="" alt="Ramayana scene">
+      <div class="slide-caption">
+        <div class="slide-title" id="carouselTitle"></div>
+        <div class="slide-desc" id="carouselDesc"></div>
+      </div>
+    </div>
+
+    <!-- Navigation dots -->
+    <div class="carousel-dots" id="carouselDots"></div>
+
+    <!-- Prev / Next arrows -->
+    <button class="carousel-arrow carousel-prev" onclick="carouselMove(-1)" aria-label="Previous">&#8592;</button>
+    <button class="carousel-arrow carousel-next" onclick="carouselMove(1)" aria-label="Next">&#8594;</button>
+
+    <div class="carousel-kanda" id="carouselKanda"></div>
+
+  </div><!-- .story-carousel-wrap -->
+
+</section>
+
+<!-- DIVIDER -->
+<div class="lotus-divider">
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+    <path d="M16 4 C14 8 10 10 6 10 C10 10 12 14 16 28 C20 14 22 10 26 10 C22 10 18 8 16 4Z" fill="rgba(200,150,44,0.6)"/>
+    <path d="M16 8 C15 11 13 12 10 12 C13 12 15 15 16 24 C17 15 19 12 22 12 C19 12 17 11 16 8Z" fill="rgba(200,150,44,0.3)"/>
+  </svg>
+</div>
+
+<!-- ══════════════════════════════════════════
+     SECTION 2 — MARYADA PURUSHOTTAM
+══════════════════════════════════════════ -->
+<section id="maryada">
+  <span class="section-eyebrow reveal">The Man Behind the Deity</span>
+  <h2 class="section-heading reveal">Why We Celebrate a Man,<br>Not Just a God</h2>
+
+  <p class="lead-text reveal">
+    "Gods perform miracles. Rama made choices. That is why he still matters."
+  </p>
+
+  <p class="reveal" style="color:var(--text-body); margin-bottom:1rem;">
+    When Sage Narada was asked whether any single human being possesses all sixteen noble qualities,
+    he named none other than Rama. Not because Rama was born divine — but because he
+    <em>lived</em> with integrity within purely human constraints. He wept when Sita was taken.
+    He was counselled by elders. He asked for forgiveness from Vali. He chose exile to honor
+    a promise he didn't make.
+  </p>
+
+  <p class="reveal" style="color:var(--text-body); margin-bottom:2rem;">
+    <strong style="color:var(--cream);">Maryada Purushottam</strong> — "the supreme upholder of righteous limits" — is not a title
+    given to a superhero. It is the highest honor given to someone who chose the harder right
+    over the easier wrong, again and again, across fourteen years of forest exile, personal loss,
+    and impossible governance decisions.
+  </p>
+
+  <div class="maryada-grid">
+    <div class="virtue-card reveal">
+      <div class="virtue-role">As a Son</div>
+      <div class="virtue-title">He honored a promise he didn't make</div>
+      <div class="virtue-desc">Kaikeyi's boons were Dasharatha's debt — not Rama's. He accepted exile anyway, to preserve the sanctity of a father's word.</div>
+    </div>
+    <div class="virtue-card reveal">
+      <div class="virtue-role">As a Brother</div>
+      <div class="virtue-title">Bharata placed sandals on a throne</div>
+      <div class="virtue-desc">Rama inspired such loyalty that Bharata refused the kingdom and governed only as custodian — the most selfless act of fraternal love in world literature.</div>
+    </div>
+    <div class="virtue-card reveal">
+      <div class="virtue-role">As a Friend</div>
+      <div class="virtue-title">He saw equals where others saw inferiors</div>
+      <div class="virtue-desc">He embraced Sugriva, a vanara, as a brother-ally. He wept at Jatayu's death — a vulture — as he would at a father's.</div>
+    </div>
+    <div class="virtue-card reveal">
+      <div class="virtue-role">As a King</div>
+      <div class="virtue-title">He chose his people over his heart</div>
+      <div class="virtue-desc">The Uttara Kanda's decisions are not abandonment — they are the loneliest sacrifice any leader can make: public duty over private happiness.</div>
+    </div>
+    <div class="virtue-card reveal">
+      <div class="virtue-role">As a Warrior</div>
+      <div class="virtue-title">He fought with strategy, not ego</div>
+      <div class="virtue-desc">He performed puja to the Ocean. He raised an army from available resources — not superior technology — and defeated the most powerful kingdom of his age.</div>
+    </div>
+    <div class="virtue-card reveal">
+      <div class="virtue-role">As a Human</div>
+      <div class="virtue-title">He felt everything</div>
+      <div class="virtue-desc">He wept when Sita disappeared. He laughed with Hanuman. He was angry at injustice. His divinity didn't insulate him — it expressed itself through his humanity.</div>
+    </div>
+  </div>
+</section>
+
+<div class="lotus-divider">
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+    <path d="M16 4 C14 8 10 10 6 10 C10 10 12 14 16 28 C20 14 22 10 26 10 C22 10 18 8 16 4Z" fill="rgba(200,150,44,0.6)"/>
+  </svg>
+</div>
+
+<!-- ══════════════════════════════════════════
+     SECTION 3 — SEVEN KANDAS
+══════════════════════════════════════════ -->
+<section id="kandas">
+  <div class="kandas-inner">
+    <div class="kandas-header">
+      <span class="section-eyebrow reveal">The Seven Books</span>
+      <h2 class="section-heading reveal">One Life. Seven Stages.<br>Timeless Lessons.</h2>
+      <p class="reveal" style="color:var(--cream-dim); max-width:550px; margin:0 auto; font-size:0.95rem;">
+        The Ramayana is not structured as a story. It is structured as a curriculum —
+        each Kanda a stage of human becoming.
+      </p>
+    </div>
+
+    <div class="kanda-list">
+
+      <div class="kanda-item reveal">
+        <div class="kanda-number">01</div>
+        <div class="kanda-body">
+          <div class="kanda-name-row">
+            <span class="kanda-name">Bala Kanda</span>
+            <span class="kanda-tag tag-student">The Student</span>
+          </div>
+          <div class="kanda-lesson">"Greatness is grown, not declared."</div>
+          <div class="kanda-detail">
+            From the Putrakameshti yajna to the breaking of Shiva's bow — the foundation of integrity.
+            Rama does not arrive great. He is prepared, tested by Vishwamitra, and shaped through discipline
+            before he is ever called to lead.
+          </div>
+          <div class="kanda-modern">Today: No shortcut replaces preparation. The gurukul precedes the throne.</div>
+        </div>
+      </div>
+
+      <div class="kanda-item reveal">
+        <div class="kanda-number">02</div>
+        <div class="kanda-body">
+          <div class="kanda-name-row">
+            <span class="kanda-name">Ayodhya Kanda</span>
+            <span class="kanda-tag tag-prince">The Prince</span>
+          </div>
+          <div class="kanda-lesson">"Duty transcends desire. The throne can wait. Your word cannot."</div>
+          <div class="kanda-detail">
+            The longest Kanda. Rama was set to be crowned. In one night it is gone.
+            His equanimity — the ability to receive fortune and loss with the same face — is the
+            central teaching. Not stoicism. Grounded clarity.
+          </div>
+          <div class="kanda-modern">Today: Your character is most visible not in success, but in how you receive loss.</div>
+        </div>
+      </div>
+
+      <div class="kanda-item reveal">
+        <div class="kanda-number">03</div>
+        <div class="kanda-body">
+          <div class="kanda-name-row">
+            <span class="kanda-name">Aranya Kanda</span>
+            <span class="kanda-tag tag-wanderer">The Wanderer</span>
+          </div>
+          <div class="kanda-lesson">"Danger enters through desire, not force. What you chase often costs what you cannot replace."</div>
+          <div class="kanda-detail">
+            The golden deer is the pivot of the entire epic. Maricha's illusion. Sita's longing.
+            The kanda teaches that even the most virtuous must guard against manufactured temptation
+            — and that wisdom requires satsang, the company of the truly wise.
+          </div>
+          <div class="kanda-modern">Today: Most crises are preceded by a "golden deer" moment. Learn to pause before you chase.</div>
+        </div>
+      </div>
+
+      <div class="kanda-item reveal">
+        <div class="kanda-number">04</div>
+        <div class="kanda-body">
+          <div class="kanda-name-row">
+            <span class="kanda-name">Kishkindha Kanda</span>
+            <span class="kanda-tag tag-ally">The Ally</span>
+          </div>
+          <div class="kanda-lesson">"No mission succeeds alone. Know who your Hanuman is."</div>
+          <div class="kanda-detail">
+            The kanda of alliance and impartiality. Rama's genius is inclusive leadership —
+            he sees Sugriva, a vanara, as an equal. He defeats Vali not by brute force
+            but by strategic alignment. The greatest resources are often the most overlooked.
+          </div>
+          <div class="kanda-modern">Today: Your ecosystem — not your solo capability — determines your reach.</div>
+        </div>
+      </div>
+
+      <div class="kanda-item reveal" style="background:rgba(224,123,26,0.03); border-left: 2px solid var(--saffron);">
+        <div class="kanda-number">05</div>
+        <div class="kanda-body">
+          <div class="kanda-name-row">
+            <span class="kanda-name">Sundara Kanda ✦</span>
+            <span class="kanda-tag tag-devotee">The Devotee</span>
+          </div>
+          <div class="kanda-lesson">"One committed individual — not an army — changed everything."</div>
+          <div class="kanda-detail">
+            The spiritual heart of the Ramayana. Hanuman alone crosses the ocean, enters enemy territory,
+            finds Sita, reassures her, warns Ravana, and returns. He attributes everything to Rama's grace.
+            The combination of supreme capability and total humility is the rarest human quality.
+          </div>
+          <div class="kanda-modern">Today: Confidence without ego is the most powerful force in any room. ✦ Our graphic novel starts here.</div>
+        </div>
+      </div>
+
+      <div class="kanda-item reveal">
+        <div class="kanda-number">06</div>
+        <div class="kanda-body">
+          <div class="kanda-name-row">
+            <span class="kanda-name">Yuddha Kanda</span>
+            <span class="kanda-tag tag-warrior">The Warrior</span>
+          </div>
+          <div class="kanda-lesson">"Righteousness is not the absence of conflict. It is what guides you through it."</div>
+          <div class="kanda-detail">
+            The great war. But its deepest teaching is forgiveness — Rama instructs Vibhishana
+            to perform last rites for Ravana. The enemy deserves dignity in death. Hatred must
+            end with the life it rode in on.
+          </div>
+          <div class="kanda-modern">Today: How you treat a fallen adversary reveals your true character.</div>
+        </div>
+      </div>
+
+      <div class="kanda-item reveal">
+        <div class="kanda-number">07</div>
+        <div class="kanda-body">
+          <div class="kanda-name-row">
+            <span class="kanda-name">Uttara Kanda</span>
+            <span class="kanda-tag tag-king">The King</span>
+          </div>
+          <div class="kanda-lesson">"Leadership is not a reward. It is loneliness in service."</div>
+          <div class="kanda-detail">
+            The most debated Kanda — and the most honest. Rama wept in private while governing
+            in public. A king who sacrifices personal happiness for perceived duty to his people
+            is not weak; he is paying the full price of sovereignty.
+          </div>
+          <div class="kanda-modern">Today: The hardest leadership decisions are the ones only you know you made.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="lotus-divider">
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+    <path d="M16 4 C14 8 10 10 6 10 C10 10 12 14 16 28 C20 14 22 10 26 10 C22 10 18 8 16 4Z" fill="rgba(200,150,44,0.6)"/>
+  </svg>
+</div>
+
+<!-- ══════════════════════════════════════════
+     SECTION 4 — MYTH BUSTERS
+══════════════════════════════════════════ -->
+<section id="myths">
+  <span class="section-eyebrow reveal">What the Original Text Actually Says</span>
+  <h2 class="section-heading reveal">10 Things Most People<br>Believe — That Aren't in Valmiki</h2>
+  <p class="reveal" style="color:var(--cream-dim); margin-bottom:0.5rem; font-size:0.9rem;">
+    Source legend:
+    <span class="source-tag src-v0">V0</span> Valmiki / Critical Edition &nbsp;
+    <span class="source-tag src-t">T</span> Later tradition / regional retelling &nbsp;
+    <span class="source-tag src-s">S</span> Scholarly note
+  </p>
+
+  <div class="myth-list reveal">
+
+    <div class="myth-item">
+      <div class="myth-header" onclick="toggleMyth(this)">
+        <div class="myth-num">01</div>
+        <div class="myth-q">Lakshmana drew a magical protective line — the "Lakshman Rekha" — before leaving Sita</div>
+        <div class="myth-expand">+</div>
+      </div>
+      <div class="myth-body">
+        <div class="myth-body-inner">
+          <div class="myth-verdict">✕ Not in Valmiki's text</div>
+          <p class="myth-answer">
+            In Valmiki's Aranya Kanda (Sarga 45), Lakshmana simply leaves after Sita rebukes him harshly —
+            he folds his hands in reverence and departs. No boundary is drawn.
+            <span class="source-tag src-v0">V0</span>
+            The concept first appears in the 14th-15th century Bengali (Krittivasa) and Telugu (Ranganatha) retellings.
+            <span class="source-tag src-t">T</span>
+            Even Tulsidas's Ramcharitmanas only implies it obliquely, through Mandodari's words to Ravana.
+            <span class="source-tag src-t">T</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="myth-item">
+      <div class="myth-header" onclick="toggleMyth(this)">
+        <div class="myth-num">02</div>
+        <div class="myth-q">Hanuman is a monkey</div>
+        <div class="myth-expand">+</div>
+      </div>
+      <div class="myth-body">
+        <div class="myth-body-inner">
+          <div class="myth-verdict">✕ Partially inaccurate</div>
+          <p class="myth-answer">
+            In Valmiki's original Sanskrit, Hanuman belongs to the <em>Vanara</em> tribe —
+            a highly evolved, intelligent community of forest-dwelling beings.
+            <span class="source-tag src-v0">V0</span>
+            Tulsidas's Ramcharitmanas later depicts Hanuman as a monkey and uses "Vanara" as a species name.
+            <span class="source-tag src-t">T</span>
+            The distinction matters: Valmiki's Hanuman is a scholar who mastered the Vedas, a diplomat, and a strategist — not a playful primate.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="myth-item">
+      <div class="myth-header" onclick="toggleMyth(this)">
+        <div class="myth-num">03</div>
+        <div class="myth-q">The "real" Sita was never abducted — a clone (Maya Sita) was taken</div>
+        <div class="myth-expand">+</div>
+      </div>
+      <div class="myth-body">
+        <div class="myth-body-inner">
+          <div class="myth-verdict">✕ Not in Valmiki</div>
+          <p class="myth-answer">
+            In Valmiki's text, the real Sita is genuinely abducted — which is precisely what gives the epic its
+            human stakes and emotional weight. <span class="source-tag src-v0">V0</span>
+            The "Maya Sita" (illusory clone) concept appears in later devotional versions, including
+            Tulsidas's Ramcharitmanas and the Adhyatma Ramayana, where it preserves Sita's theological purity.
+            <span class="source-tag src-t">T</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="myth-item">
+      <div class="myth-header" onclick="toggleMyth(this)">
+        <div class="myth-num">04</div>
+        <div class="myth-q">Ravana didn't touch Sita out of respect for her</div>
+        <div class="myth-expand">+</div>
+      </div>
+      <div class="myth-body">
+        <div class="myth-body-inner">
+          <div class="myth-verdict">✕ Inaccurate framing</div>
+          <p class="myth-answer">
+            Ravana's restraint was not moral virtue — it was self-preservation. Having once violated the
+            celestial nymph Rambha, he was cursed that if he ever forced himself on an unwilling woman,
+            his heads would shatter. His restraint with Sita was driven by this curse, not by respect.
+            <span class="source-tag src-v0">V0</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="myth-item">
+      <div class="myth-header" onclick="toggleMyth(this)">
+        <div class="myth-num">05</div>
+        <div class="myth-q">Ahalya was turned into a stone</div>
+        <div class="myth-expand">+</div>
+      </div>
+      <div class="myth-body">
+        <div class="myth-body-inner">
+          <div class="myth-verdict">✕ Later metaphor</div>
+          <p class="myth-answer">
+            In Valmiki's Bala Kanda, Ahalya is cursed to be invisible — to do penance unseen in the ashram,
+            living on air, awaiting the day Rama would arrive and restore her.
+            <span class="source-tag src-v0">V0</span>
+            The "stone" imagery is a later poetic metaphor that entered popular tradition.
+            <span class="source-tag src-t">T</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="myth-item">
+      <div class="myth-header" onclick="toggleMyth(this)">
+        <div class="myth-num">06</div>
+        <div class="myth-q">King Dasharatha had only three wives</div>
+        <div class="myth-expand">+</div>
+      </div>
+      <div class="myth-body">
+        <div class="myth-body-inner">
+          <div class="myth-verdict">✕ Simplified in popular retellings</div>
+          <p class="myth-answer">
+            Valmiki's text describes Dasharatha as having over 350 wives, of which Kausalya, Kaikeyi,
+            and Sumitra were the three principal queens.
+            <span class="source-tag src-v0">V0</span>
+            The Ramcharitmanas simplifies this to three wives only.
+            <span class="source-tag src-t">T</span>
+            This was historically consistent with royal custom in that era.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="myth-item">
+      <div class="myth-header" onclick="toggleMyth(this)">
+        <div class="myth-num">07</div>
+        <div class="myth-q">Rama killed Vali from behind because it was cowardly</div>
+        <div class="myth-expand">+</div>
+      </div>
+      <div class="myth-body">
+        <div class="myth-body-inner">
+          <div class="myth-verdict">✕ Context missing</div>
+          <p class="myth-answer">
+            Vali had a unique boon: anyone who faced him directly lost half their strength to him.
+            Rama killed him from concealment as a strategic necessity to honor his commitment to Sugriva.
+            <span class="source-tag src-v0">V0</span>
+            Valmiki records Rama's full justification to Vali after the shot — and notably, Vali ultimately
+            accepts the reasoning. The debate is actually in the text itself, making it one of the most
+            sophisticated ethical exchanges in world literature.
+            <span class="source-tag src-s">S</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="myth-item">
+      <div class="myth-header" onclick="toggleMyth(this)">
+        <div class="myth-num">08</div>
+        <div class="myth-q">Rama used the Sudarshana Chakra in battle</div>
+        <div class="myth-expand">+</div>
+      </div>
+      <div class="myth-body">
+        <div class="myth-body-inner">
+          <div class="myth-verdict">✕ Wrong weapon</div>
+          <p class="myth-answer">
+            Rama's primary weapon was the Kodanda bow. The Sudarshana Chakra is associated with
+            Vishnu in his celestial form — not with Rama's human avatar.
+            <span class="source-tag src-v0">V0</span>
+            He did receive a divine chariot and weapons from Indra for the final battle, but not the Chakra.
+            This confusion likely arises from conflating Rama-as-human with Vishnu-as-deity.
+            <span class="source-tag src-s">S</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="myth-item">
+      <div class="myth-header" onclick="toggleMyth(this)">
+        <div class="myth-num">09</div>
+        <div class="myth-q">Rama abandoned Sita because he doubted her purity</div>
+        <div class="myth-expand">+</div>
+      </div>
+      <div class="myth-body">
+        <div class="myth-body-inner">
+          <div class="myth-verdict">✕ Oversimplified</div>
+          <p class="myth-answer">
+            Valmiki's text shows Rama knew Sita was pure — the Agni Pariksha was itself proof.
+            The Uttara Kanda decision was one of Raj-Dharma: a king subordinating personal happiness
+            to perceived duty to his subjects, based on public discourse.
+            <span class="source-tag src-v0">V0</span>
+            Whether that choice was just remains one of the great moral debates the text itself invites.
+            Valmiki records it without endorsing it uncritically.
+            <span class="source-tag src-s">S</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="myth-item">
+      <div class="myth-header" onclick="toggleMyth(this)">
+        <div class="myth-num">10</div>
+        <div class="myth-q">Shabari offered Rama half-eaten (pre-tasted) berries out of love</div>
+        <div class="myth-expand">+</div>
+      </div>
+      <div class="myth-body">
+        <div class="myth-body-inner">
+          <div class="myth-verdict">✕ Later devotional tradition</div>
+          <p class="myth-answer">
+            The beloved story of Shabari tasting berries to find the sweetest ones for Rama
+            is not present in Valmiki's core text in that form.
+            <span class="source-tag src-t">T</span>
+            It is a later devotional addition that powerfully conveys the spirit of pure bhakti —
+            and is culturally precious for that reason — but should not be cited as Valmiki-original.
+            Shabari does appear in Valmiki's Aranya Kanda as a devout ascetic who welcomes Rama.
+            <span class="source-tag src-v0">V0</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <p style="color:var(--cream-dim); font-size:0.8rem; margin-top:1.5rem; font-style:italic; text-align:center;" class="reveal">
+    100 full questions &amp; answers — with complete source citations — coming soon on our website.
+  </p>
+</section>
+
+<div class="lotus-divider">
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+    <path d="M16 4 C14 8 10 10 6 10 C10 10 12 14 16 28 C20 14 22 10 26 10 C22 10 18 8 16 4Z" fill="rgba(200,150,44,0.6)"/>
+  </svg>
+</div>
+
+<!-- ══════════════════════════════════════════
+     SECTION 5 — CTA
+══════════════════════════════════════════ -->
+<section id="cta">
+  <div class="cta-glow"></div>
+
+  <span class="cta-label reveal">What's Coming Next</span>
+  <h2 class="cta-title reveal">We Are Bringing<br>Ramayana to a New Generation</h2>
+  <p class="cta-desc reveal">
+    Built on Valmiki's original text. Honest about what's tradition vs. core scripture.
+    Beautiful enough for adults. Accessible enough for children.
+  </p>
+
+  <div class="cta-cards reveal">
+    <div class="coming-card open-now clickable" onclick="openColoringBook()">
+      <div class="icon">🎨</div>
+      <div class="card-title">Kids Coloring Book</div>
+      <div class="card-sub">Interactive pages · Download or color online</div>
+    </div>
+    <div class="coming-card">
+      <div class="icon">📖</div>
+      <div class="card-title">Sundara Kanda Graphic Novel</div>
+      <div class="card-sub">50 pages · Hanuman's mission · Manga-Indian fusion art</div>
+    </div>
+    <div class="coming-card">
+      <div class="icon">🧠</div>
+      <div class="card-title">100 Myths Unlocked</div>
+      <div class="card-sub">Fully source-tagged · Progressive reveal · Free on website</div>
+    </div>
+  </div>
+
+  <div class="cta-form reveal">
+    <input class="cta-input" type="email" placeholder="your@email.com — get early access">
+    <button class="cta-btn" onclick="handleSignup()">Join the List</button>
+  </div>
+
+  <p style="color:var(--cream-dim); font-size:0.8rem; margin-top:1rem; font-style:italic;" class="reveal">
+    Rama Navami, 27 March 2026 · No spam. Just the story.
+  </p>
+</section>
+
+<!-- COLORING BOOK MODAL -->
+<div id="coloringModal" class="coloring-modal" aria-hidden="true">
+  <div class="coloring-panel">
+    <div class="coloring-head">
+      <div class="coloring-title" id="coloringPageTitle">Ramayana Coloring Book</div>
+      <button class="coloring-close" onclick="closeColoringBook()" aria-label="Close coloring book">✕</button>
+    </div>
+
+    <div class="coloring-controls">
+      <button class="coloring-btn" onclick="coloringPrev()">← Prev</button>
+      <button class="coloring-btn" onclick="coloringNext()">Next →</button>
+      <button class="coloring-btn active" id="fillToggle" onclick="setColorTool('fill')">Fill Mode</button>
+      <button class="coloring-btn" id="clearBlockToggle" onclick="setColorTool('clear-block')">Clear Block</button>
+      <button class="coloring-btn" onclick="clearColoring()">Clear Colors</button>
+      <label class="coloring-btn">Color <input id="brushColor" type="color" value="#ff6f3c"></label>
+      <a class="coloring-btn" id="downloadOriginalLink" href="#" download>Download Image</a>
+      <button class="coloring-btn" onclick="downloadColoredImage()">Download Colored</button>
+    </div>
+
+    <div class="coloring-stage" id="coloringStage">
+      <img id="coloringBaseImage" class="coloring-base" src="" alt="Coloring page">
+      <canvas id="coloringCanvas" class="coloring-canvas"></canvas>
+    </div>
+
+    <div class="coloring-foot">
+      <div id="coloringPageCounter">1 / 13</div>
+      <div>Tip: Download original, or color directly and download your artwork.</div>
+    </div>
+
+    <div class="unlock-more">
+      <p><strong style="color:var(--gold);">Finished these pages?</strong> Register to unlock more Ramayana coloring pages.</p>
+      <div class="cta-form" style="max-width:520px; margin:0;">
+        <input class="cta-input" id="coloringUnlockEmail" type="email" placeholder="your@email.com — unlock next pages">
+        <button class="cta-btn" onclick="handleColoringUnlock()">Unlock More</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>Built with devotion on Rama Navami 2026 &nbsp;·&nbsp; Sources: Valmiki Ramayana (Critical Edition), Goldman &amp; Goldman (Princeton), Bibek Debroy (Penguin) &nbsp;·&nbsp; <span>Jai Shri Rama 🙏</span></p>
+</footer>
+
+<script>
+  // ── SCROLL REVEAL ──
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        e.target.style.transitionDelay = (i % 4) * 0.08 + 's';
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => io.observe(el));
+
+  // ── MYTH ACCORDION ──
+  function toggleMyth(header) {
+    const item = header.parentElement;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.myth-item.open').forEach(el => el.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  }
+
+  // ── CTA SIGNUP ──
+  function handleSignup() {
+    const input = document.querySelector('.cta-input');
+    const btn = document.querySelector('.cta-btn');
+    if (input.value && input.value.includes('@')) {
+      btn.textContent = '🙏 Jai Shri Rama!';
+      btn.style.background = 'var(--saffron)';
+      input.value = '';
+      input.placeholder = 'You\'re on the list — thank you!';
+      setTimeout(() => {
+        btn.textContent = 'Join the List';
+        btn.style.background = '';
+        input.placeholder = 'your@email.com — get early access';
+      }, 4000);
+    } else {
+      input.style.borderLeft = '3px solid #E07070';
+      setTimeout(() => input.style.borderLeft = '', 2000);
+    }
+  }
+
+  // ── COLORING BOOK ──
+  const coloringPages = [
+    { title: "Cover", file: "ChildrenBook/Cover.png" },
+    { title: "Ayodhya Kingdom", file: "ChildrenBook/Ayodhya kingdom.png" },
+    { title: "Putrakameshti", file: "ChildrenBook/Putrakameshti.png" },
+    { title: "Ram's Birth", file: "ChildrenBook/Rama's birth.png" },
+    { title: "Four Brothers", file: "ChildrenBook/the four brothers.png" },
+    { title: "Learning from the Sage", file: "ChildrenBook/Learning from the sage.png" },
+    { title: "Young Sita", file: "ChildrenBook/Young Sita.png" },
+    { title: "Sita Swayamvar", file: "ChildrenBook/Sita Swayamvar.png" },
+    { title: "Marriage", file: "ChildrenBook/Marriage.png" },
+    { title: "Happy Family", file: "ChildrenBook/Happy family.png" },
+    { title: "Kaikeyi's Wish", file: "ChildrenBook/Kaikeyi's wish.png" },
+    { title: "Rama's Decision", file: "ChildrenBook/Rama's decision.png" },
+    { title: "Exile", file: "ChildrenBook/Exile.png" }
+  ].map(p => ({ ...p, file: encodeURI(p.file) }));
+
+  const coloringModal = document.getElementById('coloringModal');
+  const coloringBaseImage = document.getElementById('coloringBaseImage');
+  const coloringCanvas = document.getElementById('coloringCanvas');
+  const coloringStage = document.getElementById('coloringStage');
+  const coloringPageTitle = document.getElementById('coloringPageTitle');
+  const coloringPageCounter = document.getElementById('coloringPageCounter');
+  const downloadOriginalLink = document.getElementById('downloadOriginalLink');
+  const brushColorInput = document.getElementById('brushColor');
+  const fillToggle = document.getElementById('fillToggle');
+  const clearBlockToggle = document.getElementById('clearBlockToggle');
+  const ctxColoring = coloringCanvas.getContext('2d');
+
+  let coloringIdx = 0;
+  let colorTool = 'fill';
+  const baseAnalysisCanvas = document.createElement('canvas');
+  const baseAnalysisCtx = baseAnalysisCanvas.getContext('2d', { willReadFrequently: true });
+  let baseImageData = null;
+
+  function setCanvasSizeToImage() {
+    const rect = coloringBaseImage.getBoundingClientRect();
+    if (!rect.width || !rect.height) return;
+    coloringCanvas.width = Math.floor(rect.width);
+    coloringCanvas.height = Math.floor(rect.height);
+    baseAnalysisCanvas.width = coloringCanvas.width;
+    baseAnalysisCanvas.height = coloringCanvas.height;
+    baseAnalysisCtx.clearRect(0, 0, baseAnalysisCanvas.width, baseAnalysisCanvas.height);
+    baseAnalysisCtx.drawImage(coloringBaseImage, 0, 0, baseAnalysisCanvas.width, baseAnalysisCanvas.height);
+    baseImageData = baseAnalysisCtx.getImageData(0, 0, baseAnalysisCanvas.width, baseAnalysisCanvas.height);
+    ctxColoring.lineCap = 'round';
+    ctxColoring.lineJoin = 'round';
+  }
+
+  function refreshColoringPage() {
+    const page = coloringPages[coloringIdx];
+    coloringPageTitle.textContent = `Ramayana Coloring Book — ${page.title}`;
+    coloringPageCounter.textContent = `${coloringIdx + 1} / ${coloringPages.length}`;
+    coloringBaseImage.src = page.file;
+    coloringBaseImage.alt = page.title;
+    downloadOriginalLink.href = page.file;
+    downloadOriginalLink.download = page.file.split('/').pop();
+  }
+
+  coloringBaseImage.addEventListener('load', () => {
+    setCanvasSizeToImage();
+    clearColoring();
+  });
+
+  function getCanvasPoint(evt) {
+    const rect = coloringCanvas.getBoundingClientRect();
+    const clientX = evt.touches ? evt.touches[0].clientX : evt.clientX;
+    const clientY = evt.touches ? evt.touches[0].clientY : evt.clientY;
+    return { x: clientX - rect.left, y: clientY - rect.top };
+  }
+
+  function isBoundaryPixel(x, y, threshold = 120) {
+    if (!baseImageData) return false;
+    const idx = (y * baseImageData.width + x) * 4;
+    const r = baseImageData.data[idx];
+    const g = baseImageData.data[idx + 1];
+    const b = baseImageData.data[idx + 2];
+    const luminance = 0.299 * r + 0.587 * g + 0.114 * b;
+    return luminance < threshold;
+  }
+
+  function colorDiff(aR, aG, aB, bR, bG, bB) {
+    return Math.abs(aR - bR) + Math.abs(aG - bG) + Math.abs(aB - bB);
+  }
+
+  function floodFillAt(x, y) {
+    if (!baseImageData) return;
+    const w = coloringCanvas.width;
+    const h = coloringCanvas.height;
+    const ix = Math.max(0, Math.min(w - 1, Math.floor(x)));
+    const iy = Math.max(0, Math.min(h - 1, Math.floor(y)));
+    if (isBoundaryPixel(ix, iy)) return;
+
+    const bData = baseImageData.data;
+    const bStart = (iy * w + ix) * 4;
+    const targetR = bData[bStart];
+    const targetG = bData[bStart + 1];
+    const targetB = bData[bStart + 2];
+
+    const fillHex = brushColorInput.value;
+    const fillR = parseInt(fillHex.slice(1, 3), 16);
+    const fillG = parseInt(fillHex.slice(3, 5), 16);
+    const fillB = parseInt(fillHex.slice(5, 7), 16);
+    const fillA = 190;
+    const tolerance = 75;
+
+    const paintImage = ctxColoring.getImageData(0, 0, w, h);
+    const pData = paintImage.data;
+    const visited = new Uint8Array(w * h);
+    const stack = [[ix, iy]];
+
+    while (stack.length) {
+      const [cx, cy] = stack.pop();
+      const pos = cy * w + cx;
+      if (visited[pos]) continue;
+      visited[pos] = 1;
+
+      if (isBoundaryPixel(cx, cy)) continue;
+
+      const bi = pos * 4;
+      const br = bData[bi];
+      const bg = bData[bi + 1];
+      const bb = bData[bi + 2];
+      if (colorDiff(br, bg, bb, targetR, targetG, targetB) > tolerance) continue;
+
+      pData[bi] = fillR;
+      pData[bi + 1] = fillG;
+      pData[bi + 2] = fillB;
+      pData[bi + 3] = fillA;
+
+      if (cx > 0) stack.push([cx - 1, cy]);
+      if (cx < w - 1) stack.push([cx + 1, cy]);
+      if (cy > 0) stack.push([cx, cy - 1]);
+      if (cy < h - 1) stack.push([cx, cy + 1]);
+    }
+
+    ctxColoring.putImageData(paintImage, 0, 0);
+  }
+
+  function clearBlockAt(x, y) {
+    const w = coloringCanvas.width;
+    const h = coloringCanvas.height;
+    const ix = Math.max(0, Math.min(w - 1, Math.floor(x)));
+    const iy = Math.max(0, Math.min(h - 1, Math.floor(y)));
+    const paintImage = ctxColoring.getImageData(0, 0, w, h);
+    const pData = paintImage.data;
+    const start = (iy * w + ix) * 4;
+    const startA = pData[start + 3];
+    if (startA < 10) return;
+
+    const targetR = pData[start];
+    const targetG = pData[start + 1];
+    const targetB = pData[start + 2];
+    const tolerance = 70;
+    const visited = new Uint8Array(w * h);
+    const stack = [[ix, iy]];
+
+    while (stack.length) {
+      const [cx, cy] = stack.pop();
+      const pos = cy * w + cx;
+      if (visited[pos]) continue;
+      visited[pos] = 1;
+      const i = pos * 4;
+      if (pData[i + 3] < 10) continue;
+      if (colorDiff(pData[i], pData[i + 1], pData[i + 2], targetR, targetG, targetB) > tolerance) continue;
+
+      pData[i + 3] = 0;
+
+      if (cx > 0) stack.push([cx - 1, cy]);
+      if (cx < w - 1) stack.push([cx + 1, cy]);
+      if (cy > 0) stack.push([cx, cy - 1]);
+      if (cy < h - 1) stack.push([cx, cy + 1]);
+    }
+
+    ctxColoring.putImageData(paintImage, 0, 0);
+  }
+
+  function setColorTool(tool) {
+    colorTool = tool === 'clear-block' ? 'clear-block' : 'fill';
+    fillToggle.classList.toggle('active', colorTool === 'fill');
+    clearBlockToggle.classList.toggle('active', colorTool === 'clear-block');
+    coloringCanvas.style.cursor = colorTool === 'clear-block' ? 'not-allowed' : 'cell';
+  }
+
+  coloringCanvas.addEventListener('click', (evt) => {
+    const p = getCanvasPoint(evt);
+    if (colorTool === 'clear-block') {
+      clearBlockAt(p.x, p.y);
+    } else {
+      floodFillAt(p.x, p.y);
+    }
+  });
+  coloringCanvas.addEventListener('touchstart', (evt) => {
+    const p = getCanvasPoint(evt);
+    if (colorTool === 'clear-block') {
+      clearBlockAt(p.x, p.y);
+    } else {
+      floodFillAt(p.x, p.y);
+    }
+    evt.preventDefault();
+  }, { passive: false });
+  window.addEventListener('resize', () => {
+    if (coloringModal.classList.contains('open')) setCanvasSizeToImage();
+  });
+
+  function clearColoring() {
+    ctxColoring.clearRect(0, 0, coloringCanvas.width, coloringCanvas.height);
+  }
+
+  function coloringPrev() {
+    coloringIdx = (coloringIdx - 1 + coloringPages.length) % coloringPages.length;
+    refreshColoringPage();
+  }
+
+  function coloringNext() {
+    coloringIdx = (coloringIdx + 1) % coloringPages.length;
+    refreshColoringPage();
+  }
+
+  function downloadColoredImage() {
+    const merged = document.createElement('canvas');
+    merged.width = coloringBaseImage.naturalWidth;
+    merged.height = coloringBaseImage.naturalHeight;
+    const mctx = merged.getContext('2d');
+    mctx.drawImage(coloringBaseImage, 0, 0);
+    if (coloringCanvas.width && coloringCanvas.height) {
+      mctx.drawImage(coloringCanvas, 0, 0, merged.width, merged.height);
+    }
+    const link = document.createElement('a');
+    link.href = merged.toDataURL('image/png');
+    link.download = `colored-${coloringPages[coloringIdx].title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}.png`;
+    link.click();
+  }
+
+  function openColoringBook() {
+    coloringModal.classList.add('open');
+    coloringModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    refreshColoringPage();
+  }
+
+  function closeColoringBook() {
+    coloringModal.classList.remove('open');
+    coloringModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  function handleColoringUnlock() {
+    const emailInput = document.getElementById('coloringUnlockEmail');
+    if (!emailInput.value || !emailInput.value.includes('@')) {
+      emailInput.style.borderLeft = '3px solid #E07070';
+      setTimeout(() => { emailInput.style.borderLeft = ''; }, 1800);
+      return;
+    }
+    emailInput.value = '';
+    emailInput.placeholder = 'Thank you! We will notify you with new pages.';
+  }
+
+  window.openColoringBook = openColoringBook;
+  window.closeColoringBook = closeColoringBook;
+  window.coloringPrev = coloringPrev;
+  window.coloringNext = coloringNext;
+  window.clearColoring = clearColoring;
+  window.downloadColoredImage = downloadColoredImage;
+  window.handleColoringUnlock = handleColoringUnlock;
+  window.setColorTool = setColorTool;
+
+  coloringModal.addEventListener('click', (evt) => {
+    if (evt.target === coloringModal) closeColoringBook();
+  });
+
+  setColorTool('fill');
+
+  document.addEventListener('keydown', (evt) => {
+    if (evt.key === 'Escape' && coloringModal.classList.contains('open')) closeColoringBook();
+  });
+
+  // ── STORY CAROUSEL ──
+  (function() {
+    const storyCarouselData = [
+      { title: "Putrakameshti", kanda: "Bala Kanda", desc: "Dasharatha performs the sacred yajna seeking heirs.", image: "PutraKameshti .png" },
+      { title: "Rama's Birth", kanda: "Bala Kanda", desc: "Rama is born in Ayodhya under an auspicious sky.", image: "Rama's birth.png" },
+      { title: "Vishwamitra's Request", kanda: "Bala Kanda", desc: "The sage requests Rama and Lakshmana for protection.", image: "Vishwamitra's request.png" },
+      { title: "Tataka Vadha", kanda: "Bala Kanda", desc: "Rama defeats Tataka in his first great trial.", image: "Tataka Vadha.png" },
+      { title: "Sita Swayamvar", kanda: "Bala Kanda", desc: "Rama strings and breaks Shiva's bow in Mithila.", image: "Sita Swayamvar.png" },
+      { title: "Marriage", kanda: "Bala Kanda", desc: "Rama and Sita are wed in sacred ceremony.", image: "Marriage.png" },
+      { title: "Kaikeyi's Boon", kanda: "Ayodhya Kanda", desc: "Kaikeyi invokes her boons and alters Ayodhya's fate.", image: "Kaikeyi's boons.png" },
+      { title: "Exile", kanda: "Ayodhya Kanda", desc: "Rama, Sita, and Lakshmana leave for the forest.", image: "exile.png" },
+      { title: "Bharath's Vow", kanda: "Ayodhya Kanda", desc: "Bharath rules as regent with Rama's sandals on the throne.", image: "Bharath's vow.png" },
+      { title: "Golden Deer", kanda: "Aranya Kanda", desc: "Maricha's illusion leads to a turning point.", image: "Golden deer.png" },
+      { title: "Jatayu's Sacrifice", kanda: "Aranya Kanda", desc: "Jatayu gives his life while trying to save Sita.", image: "Jatayu's sacrifice.png" },
+      { title: "Meeting Hanuman", kanda: "Kishkindha Kanda", desc: "Rama meets Hanuman and a great alliance begins.", image: "Meeting Hanuman.png" }
+    ];
+
+    const imageEl = document.getElementById('storyCarouselImage');
+    const numEl = document.getElementById('carouselNum');
+    const titleEl = document.getElementById('carouselTitle');
+    const descEl = document.getElementById('carouselDesc');
+    const dotsWrap = document.getElementById('carouselDots');
+    const kandaLabel = document.getElementById('carouselKanda');
+    const carousel = document.getElementById('storyCarousel');
+    let current = 0;
+    let timer = null;
+    const INTERVAL = 3000;
+
+    storyCarouselData.forEach((item) => {
+      item.image = encodeURI(item.image);
+    });
+
+    storyCarouselData.forEach((_, i) => {
+      const dot = document.createElement('div');
+      dot.className = 'c-dot' + (i === 0 ? ' active' : '');
+      dot.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(dot);
+    });
+
+    function updateSlide(idx) {
+      const slide = storyCarouselData[idx];
+      imageEl.src = slide.image;
+      imageEl.alt = slide.title;
+      titleEl.textContent = slide.title;
+      descEl.textContent = slide.desc;
+      kandaLabel.textContent = slide.kanda;
+      numEl.textContent = `${String(idx + 1).padStart(2, '0')} / ${storyCarouselData.length}`;
+      document.querySelectorAll('.c-dot').forEach((d, i) => {
+        d.classList.toggle('active', i === idx);
+      });
+    }
+
+    function goTo(idx) {
+      current = (idx + storyCarouselData.length) % storyCarouselData.length;
+      updateSlide(current);
+      resetTimer();
+    }
+
+    function next() { goTo(current + 1); }
+
+    function resetTimer() {
+      clearInterval(timer);
+      timer = setInterval(next, INTERVAL);
+    }
+
+    window.carouselMove = function(dir) { goTo(current + dir); };
+
+    // Touch swipe
+    let touchX = 0;
+    carousel.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+    carousel.addEventListener('touchend', e => {
+      const diff = touchX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) goTo(current + (diff > 0 ? 1 : -1));
+    }, { passive: true });
+
+    updateSlide(0);
+    resetTimer();
+  })();
+
+
+  document.querySelector('.cta-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter') handleSignup();
+  });
+</script>
+
+<!--
+═══════════════════════════════════════════════════════
+  IMAGE GENERATION PROMPTS (for each section)
+  Use these with Midjourney / DALL·E 3 / Stable Diffusion
+═══════════════════════════════════════════════════════
+
+HERO SECTION — Rama's Birth:
+"Lord Rama as a newborn in the arms of Queen Kausalya in the palace of Ayodhya,
+golden divine light radiating from the infant, five celestial planets visible through
+the palace window, midday sun blazing, Indian Pattachitra art style with gold leaf
+detailing, warm saffron and cream tones, sacred geometry border, no text"
+
+MARYADA SECTION — Rama in exile:
+"Prince Rama, Sita, and Lakshmana leaving Ayodhya palace gates on foot,
+Bharata kneeling with folded hands in the distance, forest path ahead,
+Rama's face serene not sorrowful, Indian miniature painting style meets
+modern clean linework, deep blue night sky transitioning to forest green,
+dramatic lighting, gold accents"
+
+SUNDARA KANDA PREVIEW — Hanuman's leap:
+"Hanuman in divine expanded form leaping across a vast dark ocean at night,
+Lanka visible in the distance with golden towers, stars above, ocean waves
+below, dynamic motion, anime-influenced Indian art style, orange-saffron body
+radiating divine energy, sense of scale and grandeur, no text, cinematic"
+
+MYTH SECTION — Debate visual:
+"Ancient Sanskrit manuscript open on stone floor, oil lamp casting warm light,
+stylized illustration of Valmiki writing the Ramayana, scholarly atmosphere,
+Indian temple architecture background, gold and deep maroon palette, minimalist
+modern illustration style meets ancient Indian art"
+
+═══════════════════════════════════════════════════════
+-->
+
+</body>
+</html>
