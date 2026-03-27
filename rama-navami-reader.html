@@ -1650,7 +1650,13 @@
   <p>Built with devotion on Rama Navami 2026 &nbsp;·&nbsp; Sources: Valmiki Ramayana (Critical Edition), Goldman &amp; Goldman (Princeton), Bibek Debroy (Penguin) &nbsp;·&nbsp; <span>Jai Shri Rama 🙏</span></p>
 </footer>
 
-<script src="config.js"></script>
+<script>
+  if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+    const localConfig = document.createElement('script');
+    localConfig.src = 'config.js';
+    document.head.appendChild(localConfig);
+  }
+</script>
 <script>
   // ── SCROLL REVEAL ──
   const revealEls = document.querySelectorAll('.reveal');
@@ -1674,17 +1680,31 @@
   }
 
   // ── CTA SIGNUP / EMAIL CAPTURE ──
-  // Set these once (for example before this script) to enable Supabase writes:
-  // window.__SUPABASE_CONFIG__ = { url: 'https://xxxx.supabase.co', anonKey: 'public-anon-key', table: 'email_captures' };
+  // Preferred in production: call /api/email-capture (Vercel serverless).
+  // Optional local fallback: window.__SUPABASE_CONFIG__ in config.js
   const supabaseCaptureConfig = window.__SUPABASE_CONFIG__ || {};
 
   async function storeEmailCapture(email, cta) {
+    const payload = { email_id: email.trim(), cta: cta };
+
+    // 1) Try secure server endpoint first (no key in frontend).
+    try {
+      const apiResp = await fetch('/api/email-capture', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (apiResp.ok) return { ok: true, via: 'api' };
+    } catch (_) {
+      // Ignore and try local fallback below.
+    }
+
+    // 2) Local fallback (works with local static server + config.js).
     const url = supabaseCaptureConfig.url;
     const anonKey = supabaseCaptureConfig.anonKey;
     const table = supabaseCaptureConfig.table || 'email_captures';
     if (!url || !anonKey) {
-      console.warn('Supabase config missing. Set window.__SUPABASE_CONFIG__.');
-      return { ok: false, reason: 'config_missing' };
+      throw new Error('Email capture endpoint unavailable and Supabase fallback config missing.');
     }
 
     const endpoint = `${url.replace(/\/$/, '')}/rest/v1/${table}`;
@@ -1696,10 +1716,7 @@
         Authorization: `Bearer ${anonKey}`,
         Prefer: 'return=minimal'
       },
-      body: JSON.stringify({
-        email_id: email.trim(),
-        cta: cta
-      })
+      body: JSON.stringify(payload)
     });
 
     if (!resp.ok) {
@@ -1708,7 +1725,7 @@
       throw new Error(`Supabase insert failed (${resp.status}): ${errorText}`);
     }
 
-    return { ok: true };
+    return { ok: true, via: 'supabase_fallback' };
   }
 
   function isValidEmail(value) {
