@@ -1695,8 +1695,18 @@
         body: JSON.stringify(payload)
       });
       if (apiResp.ok) return { ok: true, via: 'api' };
-    } catch (_) {
-      // Ignore and try local fallback below.
+      let apiErrText = '';
+      try { apiErrText = await apiResp.text(); } catch (_) {}
+      // Fall back only in local mode where API route may not exist.
+      if (!(location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+        throw new Error(`API capture failed (${apiResp.status}): ${apiErrText}`);
+      }
+    } catch (err) {
+      // In production, surface API errors instead of silently masking them.
+      if (!(location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+        throw err;
+      }
+      // Local-only: ignore and try fallback below.
     }
 
     // 2) Local fallback (works with local static server + config.js).
