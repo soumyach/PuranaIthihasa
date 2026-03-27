@@ -67,11 +67,20 @@ export default async function handler(req, res) {
     }
 
     const insertErrorText = await insertResp.text();
+    if (insertResp.status === 409 && isDuplicateConflict(insertErrorText)) {
+      // Duplicate email+cta should be considered success for signup UX.
+      return res.status(200).json({ ok: true, mode: 'duplicate' });
+    }
     return res.status(insertResp.status).json({
       error: 'Supabase insert failed',
       status: insertResp.status,
       detail: insertErrorText
     });
+  }
+
+  if (upsertResp.status === 409 && isDuplicateConflict(upsertErrorText)) {
+    // Duplicate email+cta should be considered success for signup UX.
+    return res.status(200).json({ ok: true, mode: 'duplicate' });
   }
 
   return res.status(upsertResp.status).json({
@@ -92,6 +101,11 @@ function normalizeCta(value) {
     return 'kids_coloring_book';
   }
   return '';
+}
+
+function isDuplicateConflict(errorText) {
+  const text = String(errorText || '');
+  return text.includes('duplicate key value violates unique constraint');
 }
 
 function safeJsonParse(value) {
