@@ -31,8 +31,8 @@ export default async function handler(req, res) {
     });
   }
 
-  const endpoint = `${supabaseUrl.replace(/\/$/, '')}/rest/v1/${table}?on_conflict=email_id,cta`;
-  const resp = await fetch(endpoint, {
+  const baseUrl = `${supabaseUrl.replace(/\/$/, '')}/rest/v1/${table}`;
+  const upsertResp = await fetch(`${baseUrl}?on_conflict=email_id,cta`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -43,16 +43,42 @@ export default async function handler(req, res) {
     body: JSON.stringify({ email_id: email, cta: cta })
   });
 
-  if (!resp.ok) {
-    const errorText = await resp.text();
-    return res.status(resp.status).json({
+  if (upsertResp.ok) {
+    return res.status(200).json({ ok: true });
+  }
+
+  const upsertErrorText = await upsertResp.text();
+  // If no matching unique/exclusion constraint exists for on_conflict,
+  // fall back to a plain insert so capture still works.
+  if (upsertResp.status === 400 && upsertErrorText.includes('42P10')) {
+    const insertResp = await fetch(baseUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        apikey: serviceRoleKey,
+        Authorization: `Bearer ${serviceRoleKey}`,
+        Prefer: 'return=minimal'
+      },
+      body: JSON.stringify({ email_id: email, cta: cta })
+    });
+
+    if (insertResp.ok) {
+      return res.status(200).json({ ok: true, mode: 'insert' });
+    }
+
+    const insertErrorText = await insertResp.text();
+    return res.status(insertResp.status).json({
       error: 'Supabase insert failed',
-      status: resp.status,
-      detail: errorText
+      status: insertResp.status,
+      detail: insertErrorText
     });
   }
 
-  return res.status(200).json({ ok: true });
+  return res.status(upsertResp.status).json({
+    error: 'Supabase insert failed',
+    status: upsertResp.status,
+    detail: upsertErrorText
+  });
 }
 
 function isValidEmail(value) {
