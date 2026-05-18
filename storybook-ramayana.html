@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ramayana Premium Colorbook - Khatakshetra</title>
-<meta name="description" content="A premium printable Ramayana colorbook with story art, coloring briefs, family activities, and PDF-ready pages.">
+<title>Ramayana Premium Storybook - Khatakshetra</title>
+<meta name="description" content="A premium printable Ramayana storybook with art plates, family activities, and PDF-ready pages.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="site.css">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
@@ -57,9 +57,9 @@
 <nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="stories.html">Stories</a><a href="booklets.html">Booklets</a><a href="drawing-kits.html">Drawing</a><a href="games.html">Play</a></div></nav>
 <header class="page-hero" style="--hero-image:linear-gradient(180deg,rgba(8,3,0,.18),rgba(8,3,0,.96)),url('Images/Rama%27s%20birth.png')">
   <div class="hero-inner">
-    <div class="eyebrow">Premium Colorbook</div>
+    <div class="eyebrow">Premium Storybook</div>
     <h1>Ramayana: The First Door.</h1>
-    <p class="lead">A PDF-ready storybook and colorbook prototype using the existing Ramayana art as the emotional reference layer.</p>
+    <p class="lead">A PDF-ready storybook prototype using the existing Ramayana art as the emotional reference layer.</p>
     <div class="book-actions"><button class="btn primary" onclick="window.print()">Print / Save as PDF</button><a class="btn" href="story-experience.html?pack=ramayana-starter">Back to Story Pack</a></div>
   </div>
 </header>
@@ -116,9 +116,9 @@ const spreads = [
 
 document.getElementById('bookShell').innerHTML = spreads.map((spread) => {
   if (spread.type === 'cover') {
-    return `<article class="spread cover-spread"><div class="spread-art"><img src="${spread.image}" alt="${spread.title}"><div class="cover-copy"><div class="eyebrow">Khatakshetra Colorbook</div><h1>${spread.title}</h1><p class="lead">${spread.subtitle}</p><p>${spread.copy}</p></div></div></article>`;
+    return `<article class="spread cover-spread"><div class="spread-art"><img src="${spread.image}" alt="${spread.title}"><div class="cover-copy"><div class="eyebrow">Khatakshetra Storybook</div><h1>${spread.title}</h1><p class="lead">${spread.subtitle}</p><p>${spread.copy}</p></div></div></article>`;
   }
-  return `<article class="spread"><div class="spread-art"><img src="${spread.image}" alt="${spread.title}"></div><div class="spread-copy"><div class="eyebrow">Story Plate</div><h2>${spread.title}</h2><p>${spread.copy}</p><div class="activity-box"><strong>Colorbook Activity</strong><p>${spread.activity}</p></div><div class="activity-box line-brief"><strong>Final Line-Art Direction</strong><p>${spread.brief}</p></div></div></article>`;
+  return `<article class="spread"><div class="spread-art"><img src="${spread.image}" alt="${spread.title}"></div><div class="spread-copy"><div class="eyebrow">Story Plate</div><h2>${spread.title}</h2><p>${spread.copy}</p><div class="activity-box"><strong>Family Activity</strong><p>${spread.activity}</p></div><div class="activity-box line-brief"><strong>Coloring Page Direction</strong><p>${spread.brief}</p></div></div></article>`;
 }).join('');
 </script>
 </body>

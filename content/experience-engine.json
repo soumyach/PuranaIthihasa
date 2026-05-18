@@ -1,13 +1,13 @@
 {
   "version": "0.2",
-  "purpose": "Single manifest for turning a story pack into story reader, quiz, colorbook, booklet PDF, board game, competition, and community unlocks.",
+  "purpose": "Single manifest for turning a story pack into story reader, quiz, storybook, drawing book, booklet PDF, board game, competition, and community unlocks.",
   "contentTypes": [
     "story_pack",
     "deity_profile",
     "festival_profile",
     "temple_profile",
     "quiz",
-    "colorbook",
+    "drawing_book",
     "booklet_pdf",
     "board_game",
     "competition"
@@ -16,14 +16,15 @@
     {"id": "story", "label": "Story", "inputs": ["narratives", "artPlates", "kg"]},
     {"id": "kids", "label": "Kids", "inputs": ["kids5to8", "kids9to12", "activities"]},
     {"id": "quiz", "label": "Quiz", "inputs": ["quizId", "topicTags", "relatedStories"]},
-    {"id": "colorbook", "label": "Colorbook", "inputs": ["artPlates", "colorbookPages", "printableLineArt"]},
+    {"id": "artbook", "label": "Art Book", "inputs": ["artPlates", "storySpreads", "booklet"]},
+    {"id": "drawing_book", "label": "Drawing Book", "inputs": ["artPlates", "drawingBriefs", "printableLineArt"]},
     {"id": "booklet", "label": "Booklet / PDF", "inputs": ["booklet", "artPlates", "talapatraCards"]},
     {"id": "games", "label": "Games", "inputs": ["gameIdeas", "boardGames", "competitionPrompt"]}
   ],
   "qualityRules": [
     "Do not show internal production language on public pages.",
     "Do not show rough placeholder diagrams as final coloring pages.",
-    "Every colorbook page must have reference art, final line-art asset, brief, and activity.",
+    "Every drawing book page must have reference art, final line-art asset, brief, and activity.",
     "Every story must connect to at least one deity/place/text/source node.",
     "Every quiz must declare topic tags for filtering and unlock behavior.",
     "Every PDF-oriented page must work through browser print/save-as-PDF."
