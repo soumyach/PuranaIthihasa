@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Story Library - Khatakshetra</title>
+<meta name="description" content="Hindu story packs with references, deity linkages, quizzes, drawing kits, booklets, and PDFs.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a class="keep-mobile" href="stories.html">Stories</a><a href="deities.html">Deities</a><a href="booklets.html">Booklets</a><a href="games.html">Play</a><a href="kits.html">Kits</a></div></nav>
+<header class="page-hero" style="--hero-image:linear-gradient(180deg,rgba(8,3,0,.22),rgba(8,3,0,.96)),url('Images/Rama%27s%20birth.png')">
+  <div class="hero-inner">
+    <div class="eyebrow">Story library</div>
+    <h1>Every story should become an experience, not just an article.</h1>
+    <p class="lead">Each story pack below is designed for references, beautiful narration, quiz, drawing kit, PDF-ready booklet, and linked deity/place/source nodes.</p>
+  </div>
+</header>
+<main>
+<section class="band"><div class="inner">
+  <div class="cta-strip" style="margin-top:0">
+    <div>
+      <h2 class="section-title">Free starter unlock: Ramayana First Door.</h2>
+      <p class="section-copy">The emotional hook is simple: help families recover stories before they become distant names. Start with one story, then unlock play, drawing, booklet, and community layers.</p>
+    </div>
+    <a class="btn primary" href="story-experience.html?pack=ramayana-starter">Open Experience</a>
+  </div>
+</div></section>
+<section class="band alt"><div class="inner">
+  <div class="section-head">
+    <div class="eyebrow">Launch packs</div>
+    <h2 class="section-title">Story packs ready to explore.</h2>
+    <p class="section-copy">These are the first packs I would make real before doing more UX polish.</p>
+  </div>
+  <div class="grid">
+    <article class="card featured"><h2>Ramayana Starter</h2><p>Rama birth, Vishwamitra's request, Sita Swayamvar, exile, and Hanuman meeting. Includes story mode, quiz, coloring kit, booklet path, and PDF-ready structure.</p><div class="tag-row"><span class="tag">Story</span><span class="tag">Quiz</span><span class="tag">Drawing</span><span class="tag">PDF</span></div><a class="btn primary" href="story-experience.html?pack=ramayana-starter">Open</a></article>
+    <article class="card"><h3>Shani Dev Charitra</h3><p>Birth of Shani, Dasharatha and Shani, karma lesson, quiz, talapatra cards, drawing prompts, and booklet mode.</p><div class="tag-row"><span class="tag">Story</span><span class="tag">Karma quiz</span><span class="tag">Talapatra</span></div><a class="btn primary" href="story-experience.html?pack=dasharatha-meets-shani">Open Shani Story</a></article>
+    <article class="card"><h3>Ganesha: Before Every Beginning</h3><p>Elephant head story, fruit of wisdom, obstacle reflection, Ganesh Chaturthi kit linkage, and drawing prompts.</p><div class="tag-row"><span class="tag">Kit linked</span><span class="tag">Parent guide</span><span class="tag">Drawing</span></div><a class="btn primary" href="story-experience.html?pack=ganesha-beginnings">Open</a></article>
+    <article class="card"><h3>Dashavatara</h3><p>Ten-avatar collection with timeline, story cards, avatar symbols, quizzes, and temple/festival linkages.</p><div class="tag-row"><span class="tag">Collection</span><span class="tag">Avatar quiz</span><span class="tag">Symbol kit</span></div><a class="btn primary" href="story-experience.html?pack=dashavatara">Open</a></article>
+    <article class="card"><h3>Sundara Kanda</h3><p>Hanuman's search for Sita should become the first advanced devotional reading path with dialogue scenes, group recitation mode, quiz, and booklet pages.</p><div class="tag-row"><span class="tag">Adult + family</span><span class="tag">Recitation</span><span class="tag">Planned</span></div></article>
+    <article class="card"><h3>Temple Story Packs</h3><p>Tirupati, Kashi, Puri, Madurai, Srisailam, and local city temple guides should connect story, ritual, logistics, food, and user tips.</p><div class="tag-row"><span class="tag">Temples</span><span class="tag">Travel</span><span class="tag">Community tips</span></div></article>
+  </div>
+</div></section>
+<section class="band"><div class="inner">
+  <div class="section-head">
+    <div class="eyebrow">Story nodes</div>
+    <h2 class="section-title">Stories already in the content graph.</h2>
+    <p class="section-copy">This list is rendered from structured content so the library is visible and expandable.</p>
+  </div>
+  <div class="grid" id="storyGrid"></div>
+</div></section>
+</main>
+<footer><a href="/">Home</a></footer>
+<script src="site.js"></script>
+<script>
+fetch('content/stories.json')
+  .then((response) => response.json())
+  .then((stories) => {
+    const grid = document.getElementById('storyGrid');
+    grid.innerHTML = stories.map((story) => `
+      <article class="card">
+        <h3>${story.title}</h3>
+        <p>${story.summary}</p>
+        <div class="tag-row">
+          ${(story.themes || []).slice(0, 4).map((theme) => `<span class="tag">${theme}</span>`).join('')}
+        </div>
+      </article>
+    `).join('');
+  });
+</script>
+</body>
+</html>

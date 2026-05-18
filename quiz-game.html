@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khatakshetra Quiz Game</title>
+<meta name="description" content="Play a Khatakshetra story quiz and unlock the next story activity.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  .game-board { max-width: 980px; margin: 0 auto; }
+  .score-strip { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; color: var(--gold); text-transform: uppercase; letter-spacing: .1em; font-size: .75rem; }
+  .choice-btn { width: 100%; justify-content: flex-start; margin: .45rem 0; }
+  .choice-btn.is-correct { border-color: rgba(87,171,96,.9); background: rgba(87,171,96,.16); }
+  .choice-btn.is-wrong { border-color: rgba(192,79,58,.9); background: rgba(192,79,58,.16); }
+  .progress-track { height: 10px; background: rgba(255,255,255,.08); border: 1px solid rgba(232,185,79,.2); margin: 1rem 0; }
+  .progress-fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--gold), var(--saffron)); transition: width .35s ease; }
+</style>
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="stories.html">Stories</a><a href="games.html">Play</a><a href="drawing-kits.html">Drawing</a><a href="booklets.html">Booklets</a></div></nav>
+<header class="page-hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Quiz round</div>
+    <h1 id="quizTitle">Loading quiz...</h1>
+    <p class="lead" id="quizLead">Answer the round, reveal the unlock, and save your result locally for now.</p>
+  </div>
+</header>
+<main>
+<section class="band"><div class="inner">
+  <div class="game-board">
+    <div class="score-strip"><span id="roundLabel">Round 1</span><span id="scoreLabel">Score 0</span><span id="ageLabel"></span></div>
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+    <article class="card featured" id="questionBox"></article>
+    <div class="cta-strip" id="resultBox" style="display:none">
+      <div><h2 class="section-title" id="resultTitle"></h2><p class="section-copy" id="resultCopy"></p></div>
+      <button class="btn primary" onclick="localSignupIntent('quiz_unlock')">Save My Unlock</button>
+    </div>
+  </div>
+</div></section>
+</main>
+<footer><a href="games.html">Back to Games</a></footer>
+<script src="site.js"></script>
+<script>
+const quizParam = new URLSearchParams(window.location.search).get('quiz') || 'rama-navami-beginner';
+const storyLinks = {
+  'rama-navami-beginner': 'story-experience.html?pack=ramayana-starter',
+  'shani-dev-beginner': 'story-experience.html?pack=dasharatha-meets-shani',
+  'ganesha-beginner': 'story-experience.html?pack=ganesha-beginnings',
+  'dashavatara-beginner': 'story-experience.html?pack=dashavatara'
+};
+let quiz;
+let index = 0;
+let score = 0;
+let locked = false;
+
+function renderQuestion() {
+  const question = quiz.questions[index];
+  locked = false;
+  document.getElementById('roundLabel').textContent = `Round ${index + 1} of ${quiz.questions.length}`;
+  document.getElementById('scoreLabel').textContent = `Score ${score}`;
+  document.getElementById('progressFill').style.width = `${(index / quiz.questions.length) * 100}%`;
+  document.getElementById('questionBox').innerHTML = `
+    <h2>${question.question}</h2>
+    ${question.choices.map((choice) => `<button class="btn choice-btn" type="button" data-choice="${choice}">${choice}</button>`).join('')}
+    <p id="explanation" style="display:none"></p>
+  `;
+  document.querySelectorAll('.choice-btn').forEach((button) => {
+    button.addEventListener('click', () => chooseAnswer(button, question));
+  });
+}
+
+function chooseAnswer(button, question) {
+  if (locked) return;
+  locked = true;
+  const picked = button.dataset.choice;
+  const correct = picked === question.answer;
+  if (correct) score += 1;
+  document.querySelectorAll('.choice-btn').forEach((choiceButton) => {
+    if (choiceButton.dataset.choice === question.answer) choiceButton.classList.add('is-correct');
+    if (choiceButton === button && !correct) choiceButton.classList.add('is-wrong');
+  });
+  const explanation = document.getElementById('explanation');
+  explanation.style.display = 'block';
+  explanation.textContent = question.explanation;
+  setTimeout(() => {
+    index += 1;
+    if (index < quiz.questions.length) renderQuestion();
+    else renderResult();
+  }, 1200);
+}
+
+function renderResult() {
+  document.getElementById('progressFill').style.width = '100%';
+  document.getElementById('questionBox').style.display = 'none';
+  document.getElementById('scoreLabel').textContent = `Score ${score}`;
+  const pct = Math.round((score / quiz.questions.length) * 100);
+  const key = `khatakshetra.quiz.${quiz.slug}`;
+  localStorage.setItem(key, JSON.stringify({ score, total: quiz.questions.length, pct, completedAt: new Date().toISOString() }));
+  document.getElementById('resultBox').style.display = 'flex';
+  document.getElementById('resultTitle').textContent = pct >= 80 ? 'Unlock earned.' : 'Round complete.';
+  document.getElementById('resultCopy').innerHTML = `You scored ${score}/${quiz.questions.length}. Next unlock: coloring page, booklet spread, or family challenge. <a href="${storyLinks[quiz.slug] || 'stories.html'}">Open the story pack</a>.`;
+}
+
+fetch('content/quizzes.json')
+  .then((response) => response.json())
+  .then((quizzes) => {
+    quiz = quizzes.find((item) => item.slug === quizParam) || quizzes[0];
+    document.title = `${quiz.title} - Khatakshetra`;
+    document.getElementById('quizTitle').textContent = quiz.title;
+    document.getElementById('ageLabel').textContent = `Ages ${quiz.ageBand}`;
+    renderQuestion();
+  });
+</script>
+</body>
+</html>

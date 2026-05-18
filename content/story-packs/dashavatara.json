@@ -1,0 +1,97 @@
+{
+  "id": "pack.dashavatara",
+  "slug": "dashavatara",
+  "title": "Dashavatara: Ten Ways Vishnu Restores Balance",
+  "status": "reference_tracked",
+  "hook": "The avatars are not random miracles; they are a pattern of protection, adaptation, and dharma returning in different forms.",
+  "sourceBrief": {
+    "primarySources": [
+      {
+        "label": "Puranic Dashavatara traditions",
+        "status": "variant tradition",
+        "note": "Different traditions preserve variant lists and emphases; this page names those variations where useful."
+      }
+    ],
+    "variantNotes": [
+      "Some lists include Buddha; some include Balarama. The page should explain this variant respectfully.",
+      "Avatar order is often interpreted symbolically, but avoid overclaiming modern evolutionary readings as traditional fact."
+    ],
+    "rightsStatus": "original explanatory version from traditional source trail",
+    "reviewerNotes": "Add source table for each avatar before verified publication."
+  },
+  "kg": {
+    "nodes": ["deity.vishnu", "collection.dashavatara", "story.vishnu.matsya", "story.vishnu.kurma", "story.vishnu.narasimha", "story.ramayana.rama-birth", "deity.krishna"],
+    "edges": [
+      {"from": "collection.dashavatara", "to": "deity.vishnu", "type": "AVATARS_OF", "confidence": 0.9, "reviewStatus": "reference_tracked"},
+      {"from": "story.vishnu.narasimha", "to": "virtue.protection", "type": "TEACHES", "confidence": 0.8, "reviewStatus": "reference_tracked"}
+    ]
+  },
+  "seo": {
+    "title": "Dashavatara Stories: Ten Avatars of Vishnu with Meaning, Quiz, and Coloring Pages",
+    "description": "Learn the Dashavatara with simple stories, symbolism, source notes, quiz, booklet path, and drawing activities.",
+    "canonicalPath": "/story-experience.html?pack=dashavatara",
+    "faq": [
+      {"question": "What are the Dashavatara?", "answer": "The Dashavatara are ten major avatars of Vishnu remembered as divine descents that restore dharma."},
+      {"question": "Why do some lists differ?", "answer": "Some traditions include Buddha, while others include Balarama. Khatakshetra marks this as a respectful variant note."}
+    ]
+  },
+  "aeo": {
+    "directAnswer40Words": "The Dashavatara are ten major avatars of Vishnu: Matsya, Kurma, Varaha, Narasimha, Vamana, Parashurama, Rama, Krishna, Buddha or Balarama in variant lists, and Kalki.",
+    "directAnswer120Words": "The Dashavatara are ten major avatars of Vishnu, each remembered as a form through which dharma is protected or restored. The sequence usually begins with Matsya, the fish, and Kurma, the tortoise, then Varaha, Narasimha, Vamana, Parashurama, Rama, Krishna, Buddha or Balarama depending on tradition, and Kalki. For families, the Dashavatara can be taught as a pattern: protection during danger, steadiness during struggle, courage against tyranny, humility before pride, and renewal when order declines. Khatakshetra connects each avatar to a short story, symbol, quiz, drawing prompt, and variant note."
+  },
+  "narratives": {
+    "oneLineHook": "Whenever dharma bends too far, Vishnu returns in the form the moment requires.",
+    "adultCinematic": "The Dashavatara are not a row of disconnected miracles. They are a rhythm.\n\nWhen the world is flooded and wisdom is at risk, Vishnu comes as Matsya, small enough to be rescued and vast enough to rescue everything that must survive. When the ocean must be churned and the mountain cannot stand, he comes as Kurma, teaching that every great effort needs a foundation no one applauds.\n\nWhen the Earth is pulled into darkness, Varaha raises her. When a child devotee stands before a tyrant father, Narasimha appears in a form that breaks the arrogance of impossible protections. When Bali's generosity becomes tangled with power, Vamana arrives as a small seeker and expands until pride has nowhere to hide.\n\nParashurama is the fierce correction of corrupted power. Rama is dharma made human, walking through duty, exile, grief, and kingship. Krishna is wisdom that can play, guide, love, and speak the Gita on a battlefield. Then comes the variant place: Buddha in many lists, Balarama in others, reminding us that tradition has branches, not only one road.\n\nAnd Kalki remains future-facing: the rider at the edge of decline, the promise that restoration is not exhausted.\n\nThe Dashavatara teach that protection is not always the same shape. Sometimes it is a fish. Sometimes a tortoise. Sometimes a king. Sometimes a friend with a flute. Dharma returns in the language the age can understand.",
+    "kids5to8": "Vishnu helps the world in many forms. As Matsya, he protects wisdom. As Kurma, he supports a great mountain. As Narasimha, he protects Prahlada. As Rama, he shows dharma. As Krishna, he teaches love and wisdom.\n\nThe Dashavatara show that help can come in many shapes.",
+    "kids9to12": "The Dashavatara are ten important avatars of Vishnu. Each avatar appears when the world needs a different kind of help. Matsya protects life and wisdom. Kurma gives support. Narasimha protects devotion. Vamana teaches humility. Rama shows dharma through human life. Krishna teaches wisdom, love, and the Gita.\n\nThe big lesson is that dharma is restored in different ways depending on the problem."
+  },
+  "booklet": {
+    "coverTitle": "Dashavatara",
+    "coverSubtitle": "Ten Ways Vishnu Restores Balance",
+    "spreads": [
+      {"title": "What Is an Avatar?", "type": "explainer", "summary": "A simple explanation of divine descent and dharma."},
+      {"title": "Matsya to Narasimha", "type": "chapter", "summary": "Protection, support, Earth, and devotion."},
+      {"title": "Vamana to Rama", "type": "chapter", "summary": "Humility, correction, and dharma in human form."},
+      {"title": "Krishna and the Variant Note", "type": "chapter", "summary": "Krishna, Buddha/Balarama variants, and respectful tradition notes."},
+      {"title": "Kalki and Renewal", "type": "reflection", "summary": "What restoration means."}
+    ],
+    "talapatraCards": [
+      {"text": "Dharma returns in the form the moment needs.", "meaning": "The avatars differ because the problems differ."},
+      {"text": "Support can be sacred even when unseen.", "meaning": "Kurma holds the mountain."},
+      {"text": "Devotion is never small to the divine.", "meaning": "Prahlada is protected by Narasimha."}
+    ],
+    "parentReflection": ["Which avatar story feels most relevant today?", "When do we need courage, support, or humility?", "How do we explain variant traditions respectfully?"],
+    "childActivity": ["Match each avatar to a symbol.", "Draw your own avatar timeline.", "Color the Dashavatara wheel."]
+  },
+  "visuals": {
+    "heroImage": "assets/dashavatara-symbol-wheel.svg",
+    "heroPrompt": "Premium illustrated Dashavatara wheel with Vishnu at center, ten avatar symbols around, antique gold, indigo, forest green, temple manuscript style",
+    "scenePrompts": [
+      "Matsya protecting sacred wisdom in a cosmic flood, child-friendly devotional illustration",
+      "Kurma supporting Mount Mandara during ocean churning, balanced composition",
+      "Narasimha protecting Prahlada with dignity, powerful but not frightening",
+      "Vamana expanding across the cosmos, humble beginning and vast form"
+    ],
+    "coloringPages": [
+      {"title": "Dashavatara Symbols", "file": "coloring/dashavatara-symbols.svg", "prompt": "Simple line art: fish, tortoise, boar, lion face, umbrella, axe, bow, flute, lotus, horse"},
+      {"title": "Narasimha and Prahlada", "file": "coloring/narasimha-prahlada.svg", "prompt": "Simple line art: Narasimha blessing Prahlada, respectful and nonviolent"},
+      {"title": "Vamana's Umbrella", "file": "coloring/vamana-umbrella.svg", "prompt": "Simple line art: Vamana with umbrella and cosmic steps"}
+    ]
+  },
+  "activities": {
+    "quizId": "quiz.dashavatara-beginner",
+    "drawingPrompts": ["Draw the Dashavatara symbol wheel.", "Design Vamana's umbrella.", "Draw Kurma holding a mountain."],
+    "gameIdeas": [
+      "Avatar Match: match problem cards to avatar cards.",
+      "Dharma Restore Board: collect support, courage, humility, and wisdom tokens."
+    ],
+    "competitionPrompt": "Create a Dashavatara timeline and explain which avatar teaches you the most."
+  },
+  "workflow": {
+    "status": "reference_tracked",
+    "generatedBy": "Codex",
+    "generatedAt": "2026-05-18",
+    "reviewedBy": "",
+    "reviewedAt": ""
+  }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khatakshetra Story Experience</title>
+<meta name="description" content="Khatakshetra story experience with adult story, kids story, source notes, quiz, booklet mode, coloring pages, and game ideas.">
+<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  .mode-tabs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.5rem 0; }
+  .mode-tab { border: 1px solid rgba(232,185,79,0.28); background: rgba(18,8,0,0.78); color: var(--cream-dim); padding: 0.65rem 0.75rem; cursor: pointer; text-transform: uppercase; letter-spacing: 0.11em; font-size: 0.7rem; }
+  .mode-tab.active { background: linear-gradient(135deg, rgba(232,185,79,0.96), rgba(224,123,26,0.92)); color: #120800; font-weight: 700; }
+  .mode-panel { display: none; }
+  .mode-panel.active { display: block; }
+  .booklet-preview { background: #f4e7cf; color: #231407; border: 1px solid rgba(232,185,79,0.3); padding: clamp(1rem, 3vw, 2rem); }
+  .booklet-preview h2, .booklet-preview h3 { color: #5b2b07; }
+  .coloring-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  .coloring-card img { width: 100%; background: #f8f1e4; border: 1px solid rgba(232,185,79,0.28); display: block; }
+  .quiz-option { width: 100%; margin: 0.35rem 0; text-align: left; justify-content: flex-start; }
+  .quiz-option.correct { border-color: rgba(232,185,79,0.8); background: rgba(200,150,44,0.16); }
+  @media (max-width: 860px) { .coloring-grid { grid-template-columns: 1fr; } }
+  @media print {
+    .nav, .mode-tabs, footer, .no-print { display: none; }
+    .mode-panel { display: block; }
+    .page-hero { min-height: auto; padding: 1rem; }
+    .band { padding: 1rem; }
+  }
+</style>
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="stories.html">Stories</a><a href="games.html">Play</a><a href="drawing-kits.html">Drawing</a><a class="keep-mobile" href="booklets.html">Booklets</a></div></nav>
+<header class="page-hero" id="hero">
+  <div class="hero-inner">
+    <div class="eyebrow" id="status">Story experience</div>
+    <h1 id="title">Loading story...</h1>
+    <p class="lead" id="hook"></p>
+  </div>
+</header>
+<main>
+<section class="band"><div class="inner">
+  <div class="mode-tabs" role="tablist">
+    <button class="mode-tab active" data-mode="adult">Story</button>
+    <button class="mode-tab" data-mode="kids">Kids</button>
+    <button class="mode-tab" data-mode="sources">References + Links</button>
+    <button class="mode-tab" data-mode="quiz">Quiz</button>
+    <button class="mode-tab" data-mode="booklet">Booklet / PDF</button>
+    <button class="mode-tab" data-mode="coloring">Coloring</button>
+    <button class="mode-tab" data-mode="games">Games</button>
+  </div>
+  <section class="mode-panel active" id="mode-adult"><div class="story-detail"><article class="story-prose" id="adultStory"></article><aside class="side-stack" id="adultSide"></aside></div></section>
+  <section class="mode-panel" id="mode-kids"><div class="grid two"><article class="card featured" id="kidsSmall"></article><article class="card" id="kidsOlder"></article></div></section>
+  <section class="mode-panel" id="mode-sources"><div class="grid two"><article class="card featured" id="sourceNotes"></article><article class="card" id="linkageNotes"></article></div></section>
+  <section class="mode-panel" id="mode-quiz"><div class="quiz-room" id="quizBox"></div></section>
+  <section class="mode-panel" id="mode-booklet"><div class="booklet-preview" id="bookletBox"></div></section>
+  <section class="mode-panel" id="mode-coloring"><div class="coloring-grid" id="coloringGrid"></div></section>
+  <section class="mode-panel" id="mode-games"><div class="grid" id="gamesGrid"></div></section>
+</div></section>
+</main>
+<footer><a href="stories.html">Back to Stories</a></footer>
+<script src="site.js"></script>
+<script>
+const params = new URLSearchParams(window.location.search);
+const slug = params.get('pack') || 'ramayana-starter';
+const packMap = {
+  'ramayana-starter': 'content/story-packs/ramayana-starter.json',
+  'dasharatha-meets-shani': 'content/story-packs/dasharatha-meets-shani.json',
+  'ganesha-beginnings': 'content/story-packs/ganesha-beginnings.json',
+  'dashavatara': 'content/story-packs/dashavatara.json'
+};
+let activePack;
+
+function paragraphs(text) {
+  return (text || '').split('\n\n').map((p) => `<p>${p}</p>`).join('');
+}
+
+function tags(items) {
+  return (items || []).map((item) => `<span class="tag">${item}</span>`).join('');
+}
+
+function setMode(mode) {
+  document.querySelectorAll('.mode-tab').forEach((tab) => tab.classList.toggle('active', tab.dataset.mode === mode));
+  document.querySelectorAll('.mode-panel').forEach((panel) => panel.classList.toggle('active', panel.id === `mode-${mode}`));
+}
+
+document.querySelectorAll('.mode-tab').forEach((tab) => tab.addEventListener('click', () => setMode(tab.dataset.mode)));
+
+async function loadQuiz(quizId) {
+  const quizzes = await fetch('content/quizzes.json').then((response) => response.json());
+  return quizzes.find((quiz) => quiz.id === quizId);
+}
+
+function renderQuiz(quiz) {
+  if (!quiz) return '<p>Quiz is queued for this story pack.</p>';
+  return `
+    <div class="room-head"><span>${quiz.title}</span><span>${quiz.questions.length} questions</span></div>
+    <p><a class="btn primary" href="quiz-game.html?quiz=${quiz.slug}">Play as a game</a></p>
+    ${quiz.questions.map((q, index) => `
+      <div class="question-card">
+        <h2>${index + 1}. ${q.question}</h2>
+        ${q.choices.map((choice) => `<button class="btn quiz-option ${choice === q.answer ? 'correct' : ''}" type="button">${choice}</button>`).join('')}
+        <p>${q.explanation}</p>
+      </div>
+    `).join('')}
+  `;
+}
+
+async function renderPack(pack) {
+  activePack = pack;
+  document.title = `${pack.title} - Khatakshetra`;
+  document.getElementById('title').textContent = pack.title;
+  document.getElementById('hook').textContent = pack.hook || pack.narratives.oneLineHook;
+  document.getElementById('status').textContent = pack.heroEyebrow || 'Story Experience';
+  if (pack.visuals && pack.visuals.heroImage) {
+    document.getElementById('hero').style.setProperty('--hero-image', `linear-gradient(180deg,rgba(8,3,0,.18),rgba(8,3,0,.96)),url('${pack.visuals.heroImage}')`);
+  }
+  document.getElementById('adultStory').innerHTML = `<div class="eyebrow">The Story</div><h2>${pack.narratives.oneLineHook}</h2>${paragraphs(pack.narratives.adultCinematic)}`;
+  document.getElementById('adultSide').innerHTML = `
+    <article class="card featured"><h2>Quick Answer</h2><p>${pack.aeo.directAnswer40Words}</p></article>
+    <article class="card"><h3>Talapatra Cards</h3><div class="talapatra-list">${pack.booklet.talapatraCards.map((card) => `<div class="talapatra-card"><strong>${card.text}</strong>${card.meaning}</div>`).join('')}</div></article>
+  `;
+  document.getElementById('kidsSmall').innerHTML = `<h2>Ages 5-8</h2>${paragraphs(pack.narratives.kids5to8)}`;
+  document.getElementById('kidsOlder').innerHTML = `<h2>Ages 9-12</h2>${paragraphs(pack.narratives.kids9to12)}`;
+  document.getElementById('sourceNotes').innerHTML = `<h2>References</h2>${pack.sourceBrief.primarySources.map((source) => `<p><strong>${source.label}</strong><br>${cleanPublicText(source.note)}</p>`).join('')}`;
+  document.getElementById('linkageNotes').innerHTML = `<h2>Linked Nodes</h2><div class="tag-row">${tags(pack.kg.nodes)}</div><h3>Edges</h3>${(pack.kg.edges || []).map((edge) => `<p>${edge.from} -> ${edge.type} -> ${edge.to}</p>`).join('')}`;
+  document.getElementById('quizBox').innerHTML = renderQuiz(await loadQuiz(pack.activities.quizId));
+  document.getElementById('bookletBox').innerHTML = `
+    <div class="eyebrow">Booklet Mode</div>
+    <h2>${pack.booklet.coverTitle}</h2>
+    <p>${pack.booklet.coverSubtitle}</p>
+    <button class="btn primary no-print" onclick="window.print()">Print / Save as PDF</button>
+    ${pack.booklet.spreads.map((spread) => `<h3>${spread.title}</h3><p>${spread.summary}</p>`).join('')}
+    <h3>Parent Reflection</h3><ul>${pack.booklet.parentReflection.map((item) => `<li>${item}</li>`).join('')}</ul>
+    <h3>Child Activities</h3><ul>${pack.booklet.childActivity.map((item) => `<li>${item}</li>`).join('')}</ul>
+  `;
+  document.getElementById('coloringGrid').innerHTML = (pack.visuals.coloringPages || []).map((page) => `
+    <article class="card coloring-card">
+      <img src="${page.file}" alt="${page.title} coloring page">
+      <h3>${page.title}</h3>
+      <p>${page.prompt}</p>
+      <a class="btn" href="${page.file}" target="_blank" rel="noopener">Open printable</a>
+    </article>
+  `).join('');
+  document.getElementById('gamesGrid').innerHTML = pack.activities.gameIdeas.map((game) => `<article class="card"><h3>${game.split(':')[0]}</h3><p>${game}</p></article>`).join('') + `<article class="card featured"><h2>Competition Prompt</h2><p>${pack.activities.competitionPrompt}</p><button class="btn primary" onclick="localSignupIntent('${pack.slug}_competition')">Join challenge</button></article>`;
+}
+
+fetch(packMap[slug] || packMap['ramayana-starter'])
+  .then((response) => response.json())
+  .then(renderPack);
+
+function cleanPublicText(text) {
+  return text || '';
+}
+</script>
+</body>
+</html>

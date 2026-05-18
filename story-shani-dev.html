@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shani Dev Charitra - Khatakshetra</title>
+<meta name="description" content="Shani Dev Charitra with Dasharatha and Shani, birth of Shani, story references, quiz, booklet, talapatra cards, and drawing activities.">
+<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="stories.html">Stories</a><a href="deities.html">Deities</a><a class="keep-mobile" href="games.html">Play</a><a href="booklets.html">Booklets</a></div></nav>
+<header class="page-hero" style="--hero-image:linear-gradient(180deg,rgba(8,3,0,.12),rgba(8,3,0,.96)),url('assets/shani-dev-character.png')">
+  <div class="hero-inner">
+    <div class="eyebrow">Shani Dev Charitra</div>
+    <h1>Shani Dev Charitra: The Necessary Teacher.</h1>
+    <p class="lead">A story experience for Shani Dev with Dasharatha's courage, Shani's deeper meaning, talapatra wisdom cards, quiz, booklet mode, and drawing activities.</p>
+  </div>
+</header>
+<main>
+<section class="band"><div class="inner">
+  <div class="story-detail">
+    <article class="story-prose">
+      <div class="eyebrow">The Story</div>
+      <h2 id="storyTitle">Dasharatha Meets Shani</h2>
+      <div class="source-note" id="sourceNote">Loading source note...</div>
+      <div id="storyBody"></div>
+      <h2>Kid-Friendly Version</h2>
+      <div id="kidVersion"></div>
+    </article>
+    <aside class="side-stack">
+      <img class="side-image" src="assets/shani-dev-character.png" alt="Shani Dev character art">
+      <article class="card featured">
+        <h2>Linked Nodes</h2>
+        <div class="tag-row" id="nodeTags"></div>
+      </article>
+      <article class="card">
+        <h3>Quiz</h3>
+        <p>Beginner Shani quiz connected to karma, Surya, Chhaya, and Dasharatha.</p>
+        <a class="btn primary" href="games.html">Open Quiz Area</a>
+      </article>
+      <article class="card">
+        <h3>Booklet</h3>
+        <p>Read it as “The King Who Stood Before Saturn,” then print or save the booklet version from the story experience.</p>
+        <button class="btn" onclick="localSignupIntent('shani_booklet')">Request PDF</button>
+      </article>
+    </aside>
+  </div>
+</div></section>
+<section class="band alt"><div class="inner">
+  <div class="grid">
+    <article class="card featured"><h2>Birth of Shani</h2><p>Shani is remembered as the son of Surya and Chhaya, associated with karma, time, discipline, and consequence.</p><div class="tag-row"><span class="tag">Surya</span><span class="tag">Chhaya</span><span class="tag">Karma</span></div></article>
+    <article class="card"><h3>Dasharatha and Shani</h3><p>A king sees drought in the heavens and acts for his people. This is the richer story pack now visible on this page.</p></article>
+    <article class="card"><h3>Pippalada and Shani</h3><p>A later Shani story path for children, protection, humility, and the question of suffering.</p></article>
+  </div>
+</div></section>
+<section class="band"><div class="inner">
+  <div class="section-head"><div class="eyebrow">Talapatra and activities</div><h2 class="section-title">What this becomes next.</h2></div>
+  <div class="grid">
+    <article class="card"><h3>Talapatra Cards</h3><div class="talapatra-list" id="talapatraList"></div></article>
+    <article class="card"><h3>Drawing Prompts</h3><div class="tag-row" id="drawingPrompts"></div></article>
+    <article class="card"><h3>Game Ideas</h3><p>Karma Path and Protect the Kingdom: cooperative games around patience, responsibility, and protecting others.</p></article>
+  </div>
+</div></section>
+</main>
+<footer><a href="stories.html">Back to Stories</a></footer>
+<script src="site.js"></script>
+<script>
+fetch('content/story-packs/dasharatha-meets-shani.json')
+  .then((response) => response.json())
+  .then((pack) => {
+    document.getElementById('storyTitle').textContent = pack.title;
+    document.getElementById('sourceNote').textContent = `${pack.sourceBrief.primarySources[0].label}: ${pack.sourceBrief.primarySources[0].note.replace('Before publication, validate exact textual location and variant details.', 'Presented with care as a devotional story tradition.')}`;
+    document.getElementById('storyBody').innerHTML = pack.narratives.adultCinematic
+      .split('\n\n')
+      .map((paragraph) => `<p>${paragraph}</p>`)
+      .join('');
+    document.getElementById('kidVersion').innerHTML = pack.narratives.kids9to12
+      .split('\n\n')
+      .map((paragraph) => `<p>${paragraph}</p>`)
+      .join('');
+    document.getElementById('nodeTags').innerHTML = pack.kg.nodes.map((node) => `<span class="tag">${node}</span>`).join('');
+    document.getElementById('talapatraList').innerHTML = pack.booklet.talapatraCards.map((card) => `<div class="talapatra-card"><strong>${card.text}</strong>${card.meaning}</div>`).join('');
+    document.getElementById('drawingPrompts').innerHTML = pack.activities.drawingPrompts.map((prompt) => `<span class="tag">${prompt}</span>`).join('');
+  });
+</script>
+</body>
+</html>

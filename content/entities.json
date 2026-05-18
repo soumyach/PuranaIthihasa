@@ -1,0 +1,252 @@
+[
+  {
+    "id": "deity.rama",
+    "slug": "rama",
+    "type": "Deity",
+    "name": "Rama",
+    "alsoKnownAs": ["Sri Rama", "Maryada Purushottama", "Raghava"],
+    "summary": "Rama is the prince of Ayodhya and central figure of the Ramayana, revered as an avatar of Vishnu and as the ideal upholder of dharma.",
+    "related": ["deity.sita", "person.dasharatha", "deity.hanuman", "place.ayodhya", "text.valmiki-ramayana"]
+  },
+  {
+    "id": "deity.sita",
+    "slug": "sita",
+    "type": "Deity",
+    "name": "Sita",
+    "alsoKnownAs": ["Janaki", "Vaidehi"],
+    "summary": "Sita is the princess of Mithila, wife of Rama, and one of the most revered figures of devotion, courage, and dignity in the Ramayana.",
+    "related": ["deity.rama", "person.janaka", "place.mithila", "text.valmiki-ramayana"]
+  },
+  {
+    "id": "deity.hanuman",
+    "slug": "hanuman",
+    "type": "Deity",
+    "name": "Hanuman",
+    "alsoKnownAs": ["Anjaneya", "Maruti", "Bajrangbali"],
+    "summary": "Hanuman is Rama's devoted ally in the Ramayana, celebrated for strength, humility, wisdom, and complete devotion.",
+    "related": ["deity.rama", "story.ramayana.hanuman-meets-rama", "text.valmiki-ramayana"]
+  },
+  {
+    "id": "person.dasharatha",
+    "slug": "dasharatha",
+    "type": "Person",
+    "name": "Dasharatha",
+    "summary": "Dasharatha is the king of Ayodhya and father of Rama, Bharata, Lakshmana, and Shatrughna.",
+    "related": ["deity.rama", "place.ayodhya", "story.ramayana.rama-birth", "story.puranas.dasharatha-meets-shani"]
+  },
+  {
+    "id": "person.bharata",
+    "slug": "bharata",
+    "type": "Person",
+    "name": "Bharata",
+    "summary": "Bharata is Rama's brother, remembered for refusing the throne and ruling Ayodhya only as Rama's custodian.",
+    "related": ["deity.rama", "person.dasharatha", "story.ramayana.bharatas-vow"]
+  },
+  {
+    "id": "rishi.vishwamitra",
+    "slug": "vishwamitra",
+    "type": "RishiMuni",
+    "name": "Vishwamitra",
+    "summary": "Vishwamitra is the sage who asks Dasharatha to send Rama and Lakshmana to protect his yajna, beginning Rama's public journey.",
+    "related": ["deity.rama", "story.ramayana.vishwamitras-request", "story.ramayana.tataka-vadha"]
+  },
+  {
+    "id": "rishi.valmiki",
+    "slug": "valmiki",
+    "type": "RishiMuni",
+    "name": "Valmiki",
+    "summary": "Valmiki is traditionally revered as the author of the Ramayana.",
+    "related": ["text.valmiki-ramayana"]
+  },
+  {
+    "id": "deity.shani",
+    "slug": "shani-dev",
+    "type": "Deity",
+    "name": "Shani Dev",
+    "alsoKnownAs": ["Shanaishchara", "Sanaiscara"],
+    "summary": "Shani Dev is associated with time, discipline, karma, delay, and consequence. Puranic traditions remember him as the son of Surya and Chhaya.",
+    "related": ["deity.surya", "deity.chhaya", "deity.shiva", "story.puranas.birth-of-shani", "story.puranas.dasharatha-meets-shani"]
+  },
+  {
+    "id": "deity.surya",
+    "slug": "surya-dev",
+    "type": "Deity",
+    "name": "Surya Dev",
+    "summary": "Surya is the solar deity, associated with light, vitality, order, and the movement of time.",
+    "related": ["deity.shani", "deity.chhaya"]
+  },
+  {
+    "id": "deity.chhaya",
+    "slug": "chhaya-devi",
+    "type": "Deity",
+    "name": "Chhaya Devi",
+    "summary": "Chhaya is remembered as the shadow-form connected with Surya and as the mother of Shani in several Puranic traditions.",
+    "related": ["deity.shani", "deity.surya"]
+  },
+  {
+    "id": "deity.shiva",
+    "slug": "shiva",
+    "type": "Deity",
+    "name": "Shiva",
+    "alsoKnownAs": ["Mahadeva", "Shambhu"],
+    "summary": "Shiva is one of the great deities of Hindu tradition, associated with transformation, tapas, dissolution, and grace.",
+    "related": ["deity.shani", "story.puranas.birth-of-shani"]
+  },
+  {
+    "id": "place.ayodhya",
+    "slug": "ayodhya",
+    "type": "Place",
+    "name": "Ayodhya",
+    "summary": "Ayodhya is the kingdom of Dasharatha and birthplace of Rama in the Ramayana tradition.",
+    "related": ["deity.rama", "person.dasharatha", "festival.rama-navami"]
+  },
+  {
+    "id": "place.mithila",
+    "slug": "mithila",
+    "type": "Place",
+    "name": "Mithila",
+    "summary": "Mithila is the kingdom of Janaka and the setting of Sita's swayamvar.",
+    "related": ["deity.sita", "story.ramayana.sita-swayamvar"]
+  },
+  {
+    "id": "text.valmiki-ramayana",
+    "slug": "valmiki-ramayana",
+    "type": "Text",
+    "name": "Valmiki Ramayana",
+    "summary": "The Valmiki Ramayana is the Sanskrit epic narrating the life of Rama across seven kandas.",
+    "related": ["deity.rama", "deity.sita", "deity.hanuman", "rishi.valmiki"]
+  },
+  {
+    "id": "text.skanda-purana",
+    "slug": "skanda-purana",
+    "type": "Text",
+    "name": "Skanda Purana",
+    "summary": "The Skanda Purana is one of the major Puranas, containing extensive sacred geography, deity traditions, pilgrimage narratives, and devotional stories.",
+    "related": ["deity.shiva", "deity.shani"]
+  },
+  {
+    "id": "deity.vishnu",
+    "slug": "vishnu",
+    "type": "Deity",
+    "name": "Vishnu",
+    "alsoKnownAs": ["Narayana", "Hari"],
+    "summary": "Vishnu is revered as the preserver and protector of cosmic order, remembered through the avatar traditions and many Puranic stories.",
+    "related": ["collection.dashavatara", "deity.lakshmi", "deity.rama", "deity.krishna"]
+  },
+  {
+    "id": "deity.krishna",
+    "slug": "krishna",
+    "type": "Deity",
+    "name": "Krishna",
+    "alsoKnownAs": ["Govinda", "Gopala", "Vasudeva"],
+    "summary": "Krishna is a central deity of devotion, wisdom, playfulness, and the Bhagavad Gita.",
+    "related": ["deity.vishnu", "text.bhagavad-gita", "festival.janmashtami"]
+  },
+  {
+    "id": "deity.ganesha",
+    "slug": "ganesha",
+    "type": "Deity",
+    "name": "Ganesha",
+    "alsoKnownAs": ["Ganapati", "Vinayaka", "Vighnaharta"],
+    "summary": "Ganesha is the beloved remover of obstacles and lord of beginnings, wisdom, and auspicious starts.",
+    "related": ["deity.shiva", "deity.parvati", "deity.subrahmanya", "story.puranas.ganesha-elephant-head", "festival.ganesh-chaturthi"]
+  },
+  {
+    "id": "deity.parvati",
+    "slug": "parvati",
+    "type": "Deity",
+    "name": "Parvati",
+    "alsoKnownAs": ["Uma", "Gauri", "Devi"],
+    "summary": "Parvati is the mother goddess, consort of Shiva, and source of many Devi traditions including Durga and Annapurna.",
+    "related": ["deity.shiva", "deity.ganesha", "deity.subrahmanya", "collection.dasa-mahavidya"]
+  },
+  {
+    "id": "deity.lakshmi",
+    "slug": "lakshmi",
+    "type": "Deity",
+    "name": "Lakshmi",
+    "summary": "Lakshmi is the goddess of prosperity, beauty, auspiciousness, and abundance, closely associated with Vishnu and Diwali.",
+    "related": ["deity.vishnu", "festival.diwali", "story.vishnu.kurma"]
+  },
+  {
+    "id": "deity.saraswati",
+    "slug": "saraswati",
+    "type": "Deity",
+    "name": "Saraswati",
+    "summary": "Saraswati is the goddess of learning, speech, music, and wisdom.",
+    "related": ["festival.vasant-panchami", "collection.devi"]
+  },
+  {
+    "id": "deity.subrahmanya",
+    "slug": "subrahmanya",
+    "type": "Deity",
+    "name": "Subrahmanya",
+    "alsoKnownAs": ["Skanda", "Kartikeya", "Murugan"],
+    "summary": "Subrahmanya is the warrior son of Shiva and Parvati, associated with courage, wisdom, and victory.",
+    "related": ["deity.shiva", "deity.parvati", "deity.ganesha", "text.skanda-purana"]
+  },
+  {
+    "id": "deity.brahma",
+    "slug": "brahma",
+    "type": "Deity",
+    "name": "Brahma",
+    "summary": "Brahma is associated with creation and the unfolding of cosmic order.",
+    "related": ["deity.saraswati", "text.puranas"]
+  },
+  {
+    "id": "deity.indra",
+    "slug": "indra",
+    "type": "Deity",
+    "name": "Indra",
+    "summary": "Indra is the king of the Devas in many Vedic and Puranic traditions, associated with storms, rain, and divine sovereignty.",
+    "related": ["story.vishnu.govardhana", "deity.varuna"]
+  },
+  {
+    "id": "deity.varuna",
+    "slug": "varuna",
+    "type": "Deity",
+    "name": "Varuna",
+    "summary": "Varuna is associated with waters, cosmic order, and moral law in Vedic traditions.",
+    "related": ["deity.indra", "story.ramayana.sea-prayer"]
+  },
+  {
+    "id": "deity.kubera",
+    "slug": "kubera",
+    "type": "Deity",
+    "name": "Kubera",
+    "summary": "Kubera is associated with wealth, guardianship, and Alakapuri, and appears in several Puranic and epic traditions.",
+    "related": ["festival.dhanteras", "person.ravana"]
+  },
+  {
+    "id": "place.kailasa",
+    "slug": "kailasa",
+    "type": "Place",
+    "name": "Kailasa",
+    "summary": "Kailasa is revered as the abode of Shiva in Hindu tradition.",
+    "related": ["deity.shiva", "deity.parvati", "deity.ganesha", "deity.subrahmanya"]
+  },
+  {
+    "id": "place.kishkindha",
+    "slug": "kishkindha",
+    "type": "Place",
+    "name": "Kishkindha",
+    "summary": "Kishkindha is the Vanara kingdom connected with Sugriva, Hanuman, and Rama's search for Sita.",
+    "related": ["deity.hanuman", "deity.rama", "story.ramayana.hanuman-meets-rama"]
+  },
+  {
+    "id": "collection.dashavatara",
+    "slug": "dashavatara",
+    "type": "Collection",
+    "name": "Dashavatara",
+    "summary": "The Dashavatara are the ten major avatars of Vishnu, remembered as recurring restorations of dharma.",
+    "related": ["deity.vishnu", "story.vishnu.matsya", "story.vishnu.kurma", "story.vishnu.narasimha"]
+  },
+  {
+    "id": "collection.dasa-mahavidya",
+    "slug": "dasa-mahavidya",
+    "type": "Collection",
+    "name": "Dasa Mahavidya",
+    "summary": "The Dasa Mahavidya are ten great wisdom goddesses in Tantric Devi traditions, requiring careful adult/devotional presentation.",
+    "related": ["deity.parvati", "collection.devi"]
+  }
+]

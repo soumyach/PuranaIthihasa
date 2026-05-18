@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="white"/>
+  <g fill="none" stroke="#111" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="110" y="260" width="580" height="360"/>
+    <path d="M120 260 L400 90 L680 260"/>
+    <path d="M210 260 L210 620 M320 260 L320 620 M480 260 L480 620 M590 260 L590 620"/>
+    <path d="M170 620 H630 V720 H170 Z"/>
+    <path d="M360 620 V470 C360 410 440 410 440 470 V620"/>
+    <path d="M260 410 C260 360 310 360 310 410 V510 H260 Z"/>
+    <path d="M490 410 C490 360 540 360 540 410 V510 H490 Z"/>
+    <path d="M250 735 C230 705 230 680 250 650 C270 680 270 705 250 735 Z"/>
+    <path d="M400 765 C380 725 380 700 400 660 C420 700 420 725 400 765 Z"/>
+    <path d="M550 735 C530 705 530 680 550 650 C570 680 570 705 550 735 Z"/>
+    <path d="M230 800 C300 760 500 760 570 800"/>
+    <path d="M290 850 C350 820 450 820 510 850"/>
+    <path d="M150 190 C190 170 230 170 270 190 M530 190 C570 170 610 170 650 190"/>
+    <circle cx="400" cy="205" r="45"/>
+    <path d="M370 205 H430 M400 175 V235"/>
+  </g>
+  <text x="400" y="940" text-anchor="middle" font-family="serif" font-size="42" fill="#111">The Joy of Ayodhya</text>
+</svg>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drawing Kits - Khatakshetra</title>
+<meta name="description" content="Digital Hindu drawing and coloring kits connected to stories, festivals, competitions, and unlocks.">
+<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="stories.html">Stories</a><a class="keep-mobile" href="drawing-kits.html">Drawing</a><a href="booklets.html">Booklets</a><a href="games.html">Play</a><a href="community.html">Community</a></div></nav>
+<header class="page-hero" style="--hero-image:linear-gradient(180deg,rgba(8,3,0,.22),rgba(8,3,0,.94)),url('ChildrenBook/Sita%20Swayamvar.png')">
+  <div class="hero-inner">
+    <div class="eyebrow">Create, submit, unlock</div>
+    <h1>Drawing kits should be the creative reason to return.</h1>
+    <p class="lead">A child colors a scene, an adult reflects on the story, a family submits it, and the next page unlocks.</p>
+  </div>
+</header>
+<main>
+<section class="band"><div class="inner">
+  <div class="grid">
+    <article class="card featured"><h2>Ramayana Starter Drawing Kit</h2><p>Ayodhya, Sita Swayamvar, and Hanuman meets Rama. Printable line-art pages are now connected to the story pack.</p><a class="btn primary" href="story-experience.html?pack=ramayana-starter">Open Kit</a></article>
+    <article class="card"><h3>Ganesh Chaturthi Kit</h3><p>Ganesha doorway, modak bowl, and fruit of wisdom pages connected to the Ganesh Chaturthi product path.</p><a class="btn primary" href="story-experience.html?pack=ganesha-beginnings">Open Kit</a></article>
+    <article class="card"><h3>Dashavatara Symbols</h3><p>Fish, tortoise, boar, lion face, umbrella, axe, bow, flute, and avatar story pages.</p><a class="btn primary" href="story-experience.html?pack=dashavatara">Open Kit</a></article>
+  </div>
+</div></section>
+<section class="band alt"><div class="inner">
+  <div class="section-head"><div class="eyebrow">Printable pages</div><h2 class="section-title">Line-art pages available now.</h2><p class="section-copy">Open a page, print it, color it, and submit it later for family challenges and festival competitions.</p></div>
+  <div class="grid" id="drawingGrid"></div>
+</div></section>
+</main>
+<footer><a href="/">Home</a></footer>
+<script src="site.js"></script>
+<script>
+const packFiles = [
+  'content/story-packs/ramayana-starter.json',
+  'content/story-packs/dasharatha-meets-shani.json',
+  'content/story-packs/ganesha-beginnings.json',
+  'content/story-packs/dashavatara.json'
+];
+
+Promise.all(packFiles.map((file) => fetch(file).then((response) => response.json())))
+  .then((packs) => {
+    const pages = packs.flatMap((pack) => (pack.visuals.coloringPages || []).map((page) => ({ ...page, packTitle: pack.title, packSlug: pack.slug })));
+    document.getElementById('drawingGrid').innerHTML = pages.map((page) => `
+      <article class="card">
+        <img src="${page.file}" alt="${page.title} printable coloring page" style="width:100%;background:#fffdf8;border:1px solid rgba(232,185,79,.28);">
+        <div class="eyebrow">${page.packTitle}</div>
+        <h3>${page.title}</h3>
+        <p>${page.prompt}</p>
+        <a class="btn primary" href="${page.file}" target="_blank" rel="noopener">Open printable</a>
+      </article>
+    `).join('');
+  });
+</script>
+</body>
+</html>

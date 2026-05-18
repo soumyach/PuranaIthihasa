@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Games and Quizzes - Khatakshetra</title>
+<meta name="description" content="Hindu story quizzes, family games, multiplayer rooms, challenges, points, and local competitions.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="stories.html">Stories</a><a class="keep-mobile" href="games.html">Play</a><a href="community.html">Community</a><a href="kits.html">Kits</a></div></nav>
+<header class="page-hero" style="--hero-image:linear-gradient(180deg,rgba(8,3,0,.2),rgba(8,3,0,.96)),url('Images/Meeting%20Hanuman.png')">
+  <div class="hero-inner">
+    <div class="eyebrow">Play with meaning</div>
+    <h1>Story quizzes that unlock booklets, drawing pages, and family challenges.</h1>
+    <p class="lead">Start with a five-question story round. Then come back for city leagues, temple-group rooms, festival competitions, and contributor unlocks.</p>
+    <div class="hero-actions"><a class="btn primary" href="#quizLibrary">Play a Quiz</a><button class="btn ghost" onclick="localSignupIntent('games_waitlist')">Join Challenge Waitlist</button></div>
+  </div>
+</header>
+<main>
+<section class="band"><div class="inner">
+  <div class="play-shell">
+    <div class="quiz-room">
+      <div class="room-head"><span>Game Loop</span><span>Read -> Answer -> Unlock -> Share</span></div>
+      <div class="question-card">
+        <h2>What makes this different from badge theater?</h2>
+        <div class="answer-grid">
+          <div class="answer correct">Small winnable challenges</div>
+          <div class="answer correct">Real story mastery</div>
+          <div class="answer correct">Unlocks people want</div>
+          <div class="answer">Empty points</div>
+        </div>
+      </div>
+      <div class="room-loop">
+        <div class="loop-step"><span>Read</span><strong>Story scene</strong></div>
+        <div class="loop-step"><span>Answer</span><strong>Quiz round</strong></div>
+        <div class="loop-step"><span>Unlock</span><strong>Coloring/PDF</strong></div>
+        <div class="loop-step"><span>Compete</span><strong>Family room</strong></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+<section class="band alt" id="quizLibrary"><div class="inner">
+  <div class="section-head">
+    <div class="eyebrow">Playable quizzes</div>
+    <h2 class="section-title">Quizzes live from the content system.</h2>
+    <p class="section-copy">Each quiz is tied back to a story pack, so play never floats away from source-aware content.</p>
+  </div>
+  <div class="grid" id="quizGrid"></div>
+</div></section>
+<section class="band"><div class="inner">
+  <div class="section-head">
+    <div class="eyebrow">Next game modes</div>
+    <h2 class="section-title">The engagement flywheel we should build after signup validation.</h2>
+  </div>
+  <div class="grid">
+    <article class="card"><h3>Family Group Rooms</h3><p>Invite cousins, grandparents, or temple friends into five-question rooms with an unlock reveal at the end.</p><button class="btn" onclick="localSignupIntent('family_group_play')">Notify Me</button></article>
+    <article class="card"><h3>Festival Micro-Leagues</h3><p>Winnable competitions by city, school, temple group, age band, and festival. No impossible global leaderboard.</p></article>
+    <article class="card"><h3>Completion Rings</h3><p>Complete a deity, festival, temple, or Itihasa path to unlock booklet PDFs, printable coloring pages, and challenge entries.</p></article>
+    <article class="card"><h3>Contribution Quality</h3><p>Temple tips, story questions, translations, and reviews should earn status only after helpfulness votes or moderation.</p></article>
+  </div>
+</div></section>
+</main>
+<footer><a href="/">Home</a></footer>
+<script src="site.js"></script>
+<script>
+const storyLinks = {
+  'quiz.rama-navami-beginner': 'story-experience.html?pack=ramayana-starter',
+  'quiz.shani-dev-beginner': 'story-experience.html?pack=dasharatha-meets-shani',
+  'quiz.ganesha-beginner': 'story-experience.html?pack=ganesha-beginnings',
+  'quiz.dashavatara-beginner': 'story-experience.html?pack=dashavatara'
+};
+
+fetch('content/quizzes.json')
+  .then((response) => response.json())
+  .then((quizzes) => {
+    document.getElementById('quizGrid').innerHTML = quizzes.map((quiz) => `
+      <article class="card ${quiz.slug === 'rama-navami-beginner' ? 'featured' : ''}">
+        <div class="eyebrow">${quiz.ageBand} years</div>
+        <h3>${quiz.title}</h3>
+        <p>${quiz.questions.length} questions tied to ${quiz.relatedStories.length} story nodes. Finish the round to reveal the suggested unlock.</p>
+        <div class="tag-row"><span class="tag">Quiz</span><span class="tag">Story-linked</span><span class="tag">Unlock-ready</span></div>
+        <a class="btn primary" href="quiz-game.html?quiz=${quiz.slug}">Play</a>
+        <a class="btn" href="${storyLinks[quiz.id] || 'stories.html'}">Read first</a>
+      </article>
+    `).join('');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "collection.itihasa.ramayana",
+    "slug": "ramayana",
+    "type": "itihasa",
+    "title": "Ramayana",
+    "priority": 1,
+    "experienceTypes": ["summary", "storybook", "quiz", "drawing_kit", "audio", "journey_map", "temple_links"]
+  },
+  {
+    "id": "collection.itihasa.mahabharata",
+    "slug": "mahabharata",
+    "type": "itihasa",
+    "title": "Mahabharata",
+    "priority": 1,
+    "experienceTypes": ["summary", "storybook", "quiz", "dharma_dilemma_game", "audio", "character_debate"]
+  },
+  {
+    "id": "collection.text.bhagavad-gita",
+    "slug": "bhagavad-gita",
+    "type": "text",
+    "title": "Bhagavad Gita",
+    "priority": 1,
+    "experienceTypes": ["summary", "chapter_cards", "quiz", "audio", "life_lessons", "discussion_guide"]
+  },
+  {
+    "id": "collection.deity.dashavatara",
+    "slug": "dashavatara",
+    "type": "sacred_set",
+    "title": "Dashavatara",
+    "priority": 1,
+    "items": ["Matsya", "Kurma", "Varaha", "Narasimha", "Vamana", "Parashurama", "Rama", "Krishna", "Buddha/Balarama variant", "Kalki"],
+    "experienceTypes": ["summary", "avatar_pages", "quiz", "drawing_kit", "storybook", "temple_links"]
+  },
+  {
+    "id": "collection.deity.dasa-mahavidya",
+    "slug": "dasa-mahavidya",
+    "type": "sacred_set",
+    "title": "Dasa Mahavidya",
+    "priority": 2,
+    "items": ["Kali", "Tara", "Tripura Sundari", "Bhuvaneshwari", "Bhairavi", "Chinnamasta", "Dhumavati", "Bagalamukhi", "Matangi", "Kamala"],
+    "experienceTypes": ["summary", "goddess_pages", "quiz", "audio", "source_notes", "age_guidance"]
+  },
+  {
+    "id": "collection.temples.jyotirlingas",
+    "slug": "jyotirlingas",
+    "type": "temple_series",
+    "title": "12 Jyotirlingas",
+    "priority": 2,
+    "experienceTypes": ["temple_guides", "map", "stories", "rituals", "travel_notes", "quiz"]
+  },
+  {
+    "id": "collection.temples.shakti-peethas",
+    "slug": "shakti-peethas",
+    "type": "temple_series",
+    "title": "Shakti Peethas",
+    "priority": 2,
+    "experienceTypes": ["temple_guides", "map", "stories", "rituals", "travel_notes", "quiz"]
+  },
+  {
+    "id": "collection.temples.divya-desams",
+    "slug": "divya-desams",
+    "type": "temple_series",
+    "title": "108 Divya Desams",
+    "priority": 2,
+    "experienceTypes": ["temple_guides", "map", "stories", "rituals", "travel_notes", "quiz"]
+  }
+]

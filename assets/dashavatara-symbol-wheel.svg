@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Dashavatara Symbol Wheel</title>
+  <desc id="desc">A premium manuscript-style symbolic wheel for the ten avatars of Vishnu.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0" stop-color="#f4dfb9"/>
+      <stop offset="0.58" stop-color="#4d2010"/>
+      <stop offset="1" stop-color="#120800"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0" stop-color="#a66a1e"/>
+      <stop offset="0.5" stop-color="#f3cf73"/>
+      <stop offset="1" stop-color="#8a4d12"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <g opacity=".22" stroke="#f3cf73" fill="none">
+    <circle cx="700" cy="450" r="350"/>
+    <circle cx="700" cy="450" r="270"/>
+    <circle cx="700" cy="450" r="188"/>
+  </g>
+  <circle cx="700" cy="450" r="118" fill="#10251d" stroke="url(#gold)" stroke-width="6"/>
+  <text x="700" y="430" text-anchor="middle" font-size="42" font-family="Cinzel, Georgia, serif" fill="#f3cf73">VISHNU</text>
+  <text x="700" y="475" text-anchor="middle" font-size="22" font-family="Georgia, serif" fill="#f7ead2">Dharma restored in many forms</text>
+  <g fill="none" stroke="url(#gold)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M342 454c42-39 95-39 138 0-43 39-96 39-138 0Z"/>
+    <path d="M429 230c48 0 82 22 105 66-59 13-102-5-128-51"/>
+    <path d="M637 153c52 35 66 78 43 128-47-33-62-76-43-128Z"/>
+    <path d="M878 191c-56 16-90 52-100 106 57-5 93-40 100-106Z"/>
+    <path d="M1046 354c-36-39-78-49-127-27 32 45 75 53 127 27Z"/>
+    <path d="M1048 549c-51-22-94-12-128 30 49 22 91 12 128-30Z"/>
+    <path d="M872 710c-53-10-91-41-112-93 57-4 96 27 112 93Z"/>
+    <path d="M637 743c-20-55-7-98 42-129 24 51 9 95-42 129Z"/>
+    <path d="M423 666c24-49 64-69 119-59-21 52-61 72-119 59Z"/>
+    <path d="M281 452h-74m986 0h-74M700 100v-74m0 848v-74"/>
+  </g>
+  <g fill="#f7ead2" font-family="Cinzel, Georgia, serif" font-size="24" text-anchor="middle">
+    <text x="410" y="524">Matsya</text>
+    <text x="466" y="205">Kurma</text>
+    <text x="650" y="124">Varaha</text>
+    <text x="896" y="158">Narasimha</text>
+    <text x="1090" y="354">Vamana</text>
+    <text x="1092" y="583">Parashurama</text>
+    <text x="898" y="760">Rama</text>
+    <text x="638" y="805">Krishna</text>
+    <text x="410" y="708">Buddha/Balarama</text>
+    <text x="214" y="442">Kalki</text>
+  </g>
+  <g opacity=".38" filter="url(#soft)">
+    <circle cx="700" cy="450" r="250" fill="none" stroke="#f3cf73" stroke-width="20"/>
+  </g>
+</svg>

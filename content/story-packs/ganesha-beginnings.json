@@ -1,0 +1,98 @@
+{
+  "id": "pack.ganesha-beginnings",
+  "slug": "ganesha-beginnings",
+  "title": "Ganesha: Before Every Beginning",
+  "status": "reference_tracked",
+  "hook": "The elephant-headed child is not only cute; he is a story about boundaries, repair, wisdom, and starting again.",
+  "sourceBrief": {
+    "primarySources": [
+      {
+        "label": "Shiva Purana and Puranic Ganesha traditions",
+        "status": "needs exact source validation",
+        "note": "Presented as a family-friendly version with references shown for deeper reading."
+      }
+    ],
+    "variantNotes": [
+      "Ganesha's birth and elephant head episode has multiple Puranic and regional versions.",
+      "The fruit of wisdom story varies across Ganesha and Subrahmanya traditions."
+    ],
+    "rightsStatus": "original retelling from traditional source trail",
+    "reviewerNotes": "Keep child version emotionally safe while preserving the repair/transformation arc."
+  },
+  "kg": {
+    "nodes": ["deity.ganesha", "deity.parvati", "deity.shiva", "deity.subrahmanya", "place.kailasa", "festival.ganesh-chaturthi"],
+    "edges": [
+      {"from": "deity.ganesha", "to": "deity.parvati", "type": "CHILD_OF", "confidence": 0.85, "reviewStatus": "reference_tracked"},
+      {"from": "deity.ganesha", "to": "deity.shiva", "type": "CHILD_OF", "confidence": 0.85, "reviewStatus": "reference_tracked"},
+      {"from": "story.puranas.ganesha-fruit-of-wisdom", "to": "virtue.wisdom", "type": "TEACHES", "confidence": 0.8, "reviewStatus": "reference_tracked"}
+    ]
+  },
+  "seo": {
+    "title": "Ganesha Stories for Ganesh Chaturthi: Elephant Head, Wisdom Fruit, Quiz, and Coloring Pages",
+    "description": "Read Ganesha stories with kid-friendly meaning, source notes, Ganesh Chaturthi activities, quiz, booklet, and coloring pages.",
+    "canonicalPath": "/story-experience.html?pack=ganesha-beginnings",
+    "faq": [
+      {"question": "Why does Ganesha have an elephant head?", "answer": "In Puranic traditions, Ganesha is restored with an elephant head after Shiva realizes the child guarding Parvati's doorway must be brought back and honored."},
+      {"question": "What does Ganesha teach?", "answer": "Ganesha teaches beginnings, wisdom, humility, boundaries, and the repair that can follow mistakes."}
+    ]
+  },
+  "aeo": {
+    "directAnswer40Words": "Ganesha is honored before beginnings because he represents wisdom, auspiciousness, and the removal of obstacles. His elephant head story teaches boundaries, repair, transformation, and the grace of starting again.",
+    "directAnswer120Words": "Ganesha's stories make him one of the most approachable deities for families. In the elephant head story, Parvati creates Ganesha and asks him to guard her doorway. Shiva does not recognize him, conflict follows, and Ganesha is restored with an elephant head and honored before beginnings. In the fruit of wisdom story, Ganesha wins not by speed but by insight, circling Shiva and Parvati as his world. Together, these stories teach boundaries, repair, humility, wisdom, and devotion. For Ganesh Chaturthi, they naturally become a storybook, quiz, clay-making guide, drawing kit, obstacle reflection card, and family conversation."
+  },
+  "narratives": {
+    "oneLineHook": "Before every beginning, there is a story about what must be repaired.",
+    "adultCinematic": "Kailasa was quiet, but not empty. In the house of Shiva and Parvati, silence could hold mountains, rivers, stars, and the tenderness of a mother shaping life with her own hands.\n\nParvati created a child and gave him a duty: guard the door. The command was simple, but the meaning was deep. A doorway is not only wood and stone. It is a boundary. It tells the world that love also has privacy, dignity, and form.\n\nWhen Shiva returned, the child did not move. He did not yet know the great lord before him. He knew only the instruction of his mother. In that moment, obedience and power stood facing each other without understanding.\n\nThe story turns painful, as many old stories do, because transformation rarely begins in comfort. Shiva's anger becomes a wound in the world. Parvati's grief fills Kailasa with a force no god can ignore.\n\nThen comes repair. The child is restored with the head of an elephant: vast-eared, wise-eyed, strong, gentle, unforgettable. What seemed like an ending becomes the beginning of Ganesha's place in every beginning.\n\nThis is why Ganesha is not merely charming. He is the reminder that mistakes must be repaired, boundaries must be respected, and wisdom can be born from rupture when love refuses to leave the story broken.\n\nIn another beloved story, Ganesha and Subrahmanya are asked to circle the world. Subrahmanya speeds away. Ganesha walks around Shiva and Parvati. To him, they are the world. It is not laziness; it is insight. Speed sees distance. Wisdom sees meaning.\n\nTogether, these stories give Ganesha his emotional power. He protects thresholds. He repairs beginnings. He teaches that the first step is not always movement. Sometimes the first step is understanding.",
+    "kids5to8": "Parvati made Ganesha and asked him to guard her door. Ganesha listened carefully. When Shiva came, Ganesha did not know him and would not let him enter.\n\nA mistake happened, and everyone was sad. Then Ganesha was restored with an elephant head and blessed. From then on, people remembered him before new beginnings.\n\nIn another story, Ganesha wins through wisdom. He walks around his parents because he knows they are his world.\n\nGanesha teaches us to listen, think, and begin with kindness.",
+    "kids9to12": "Ganesha's stories are about beginnings, but they are also about boundaries and wisdom. Parvati creates him and gives him a duty: guard the door. Ganesha follows that duty even when Shiva arrives. The conflict becomes painful, but the story does not end with loss. Ganesha is restored, transformed, and honored before all beginnings.\n\nIn the fruit of wisdom story, Ganesha does not win by speed. He circles Shiva and Parvati, recognizing them as his world. The lesson is that wisdom often sees what hurry misses."
+  },
+  "booklet": {
+    "coverTitle": "Ganesha: Before Every Beginning",
+    "coverSubtitle": "A Story of Boundaries, Repair, and Wisdom",
+    "spreads": [
+      {"title": "Parvati Creates a Guardian", "type": "chapter", "summary": "Ganesha is given the duty to guard the door."},
+      {"title": "The Doorway", "type": "chapter", "summary": "A boundary becomes the center of the story."},
+      {"title": "The Mistake and the Repair", "type": "chapter", "summary": "Painful conflict becomes restoration."},
+      {"title": "The Fruit of Wisdom", "type": "chapter", "summary": "Ganesha wins through insight rather than speed."},
+      {"title": "My New Beginning", "type": "reflection", "summary": "A child names an obstacle and a beginning."}
+    ],
+    "talapatraCards": [
+      {"text": "Before every beginning, make space.", "meaning": "Ganesha helps us pause before we start."},
+      {"text": "Wisdom hears what speed misses.", "meaning": "Ganesha wins by understanding, not rushing."},
+      {"text": "Repair is also sacred.", "meaning": "Mistakes must become responsibility and healing."}
+    ],
+    "parentReflection": ["What boundary matters in our home?", "What mistake have we repaired well?", "What beginning needs courage this year?"],
+    "childActivity": ["Name your Ganesha.", "Draw five modaks.", "Write one obstacle you want to understand."]
+  },
+  "visuals": {
+    "heroImage": "assets/khatakshetra-ganesh-kit.png",
+    "heroPrompt": "Premium Indian storybook illustration of child Ganesha near a doorway on Kailasa, Parvati's presence warm and protective, Shiva in distance, sacred but gentle mood",
+    "scenePrompts": [
+      "Parvati creating Ganesha with warm golden light, child-friendly premium devotional style",
+      "Ganesha guarding a doorway on Kailasa, respectful and brave",
+      "Ganesha restored with elephant head, Shiva and Parvati blessing him, no violence shown",
+      "Ganesha circling Shiva and Parvati while Subrahmanya travels the world"
+    ],
+    "coloringPages": [
+      {"title": "Ganesha's Doorway", "file": "coloring/ganesha-doorway.svg", "prompt": "Simple line art: child Ganesha guarding a decorated doorway"},
+      {"title": "Modak Bowl", "file": "coloring/ganesha-modak.svg", "prompt": "Simple line art: Ganesha, modaks, mouse, lotus border"},
+      {"title": "Fruit of Wisdom", "file": "coloring/ganesha-wisdom.svg", "prompt": "Simple line art: Ganesha walking around Shiva and Parvati symbolically"}
+    ]
+  },
+  "activities": {
+    "quizId": "quiz.ganesha-beginner",
+    "drawingPrompts": ["Design Ganesha's doorway.", "Draw your obstacle as a mountain.", "Decorate a modak bowl."],
+    "gameIdeas": [
+      "Obstacle Path: players remove obstacles by choosing wise actions.",
+      "Circle the World: compare speed choices and wisdom choices."
+    ],
+    "competitionPrompt": "Draw Ganesha before a new beginning and write what you want courage for."
+  },
+  "workflow": {
+    "status": "reference_tracked",
+    "generatedBy": "Codex",
+    "generatedAt": "2026-05-18",
+    "reviewedBy": "",
+    "reviewedAt": ""
+  }
+}

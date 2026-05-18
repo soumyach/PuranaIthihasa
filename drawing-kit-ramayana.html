@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramayana Drawing Kit - Khatakshetra</title>
+<meta name="description" content="A printable Ramayana starter drawing kit with prompts for Rama's birth, Sita Swayamvar, and Hanuman meets Rama.">
+<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  .draw-page { max-width: 920px; margin: 2rem auto; border: 1px solid rgba(232,185,79,0.28); background: #f4e7cf; color: #231407; padding: clamp(1rem, 4vw, 2.4rem); box-shadow: 0 24px 70px rgba(0,0,0,0.35); }
+  .draw-page h1, .draw-page h2, .draw-page h3 { color: #5b2b07; }
+  .draw-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: stretch; }
+  .reference { width: 100%; height: 360px; object-fit: cover; border: 1px solid rgba(91,43,7,0.22); filter: grayscale(0.25) contrast(0.92); }
+  .canvas-box { min-height: 360px; border: 2px dashed rgba(91,43,7,0.36); background: rgba(255,255,255,0.46); padding: 1rem; display: grid; place-items: center; text-align: center; font-family: 'Playfair Display', serif; color: rgba(91,43,7,0.72); }
+  @media (max-width: 760px) { .draw-grid { grid-template-columns: 1fr; } }
+  @media print {
+    body { background: white; }
+    .nav, footer, .no-print { display: none; }
+    .draw-page { box-shadow: none; margin: 0; page-break-after: always; border: 0; }
+  }
+</style>
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="stories.html">Stories</a><a class="keep-mobile" href="drawing-kits.html">Drawing</a><a href="games.html">Play</a></div></nav>
+<main>
+<section class="draw-page">
+  <div class="eyebrow">Ramayana Starter Drawing Kit</div>
+  <h1>Color, trace, and remember.</h1>
+  <p>This is a functional placeholder kit using existing art. The production version should replace these with text-free premium line-art generated in the same temple-archive style.</p>
+  <p class="no-print"><button class="btn primary" onclick="window.print()">Print / Save as PDF</button></p>
+</section>
+<section class="draw-page">
+  <h2>Page 1: The Joy of Ayodhya</h2>
+  <div class="draw-grid"><img class="reference" src="ChildrenBook/Rama's birth.png" alt="Rama birth reference"><div class="canvas-box">Draw lamps, flowers, and the palace of Ayodhya around baby Rama.</div></div>
+  <p><strong>Prompt:</strong> What makes a home feel blessed?</p>
+</section>
+<section class="draw-page">
+  <h2>Page 2: Sita Swayamvar</h2>
+  <div class="draw-grid"><img class="reference" src="ChildrenBook/Sita Swayamvar.png" alt="Sita Swayamvar reference"><div class="canvas-box">Design Sita's garland and decorate the hall of Mithila.</div></div>
+  <p><strong>Prompt:</strong> What is the difference between strength and showing off?</p>
+</section>
+<section class="draw-page">
+  <h2>Page 3: Hanuman Meets Rama</h2>
+  <div class="draw-grid"><img class="reference" src="Images/Meeting Hanuman.png" alt="Hanuman meets Rama reference"><div class="canvas-box">Draw the forest path where Hanuman first recognizes Rama.</div></div>
+  <p><strong>Prompt:</strong> What makes someone a true helper?</p>
+</section>
+</main>
+<footer><a href="drawing-kits.html">Back to Drawing Kits</a></footer>
+</body>
+</html>

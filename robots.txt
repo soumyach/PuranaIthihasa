@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+Disallow: /api/
+Disallow: /admin/
+Disallow: /account/
+Disallow: /profile/
+Disallow: /auth/
+Disallow: /community/submissions/
+Disallow: /unlock/
+Disallow: /preview/
+
+Sitemap: https://khatakshetra.com/sitemap.xml

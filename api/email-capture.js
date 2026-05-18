@@ -100,6 +100,27 @@ function normalizeCta(value) {
   if (key === 'kids_coloring_book' || key === 'kids_colouring_book' || key === 'coloring_book') {
     return 'kids_coloring_book';
   }
+  if (key === 'starter_story_kit' || key === 'free_story_kit') return 'starter_story_kit';
+  if (key === 'temple_updates' || key === 'temple_guides') return 'temple_updates';
+  if (key === 'festival_challenge') return 'festival_challenge';
+  if (key === 'community_contributor' || key === 'community') return 'community_contributor';
+  if (key === 'pdf_storybook') return 'pdf_storybook';
+  if (key === 'mahabharata_interest') return 'mahabharata_interest';
+  if (key === 'gita_interest') return 'gita_interest';
+  if (key === 'shani_story_interest') return 'shani_story_interest';
+  if (key === 'ganesha_story_interest') return 'ganesha_story_interest';
+  if (key === 'dashavatara_interest') return 'dashavatara_interest';
+  if (key === 'deity_hub_vote') return 'deity_hub_vote';
+  if (key === 'temple_updates_hyderabad') return 'temple_updates_hyderabad';
+  if (key === 'ganesh_kit' || key === 'ganesh_chaturthi_kit') return 'ganesh_kit';
+  if (key === 'rath_yatra_kit' || key === 'rath_kit') return 'rath_yatra_kit';
+  if (key === 'raksha_janmashtami_kit' || key === 'raksha_bandhan_janmashtami_kit') {
+    return 'raksha_janmashtami_kit';
+  }
+  if (key === 'quiz_rama_navami') return 'quiz_rama_navami';
+  if (key === 'quiz_shani_dev') return 'quiz_shani_dev';
+  if (key === 'school_bulk') return 'school_bulk';
+  if (key === 'nri_family') return 'nri_family';
   return '';
 }
 

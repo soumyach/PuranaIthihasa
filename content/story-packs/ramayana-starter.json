@@ -1,0 +1,100 @@
+{
+  "id": "pack.ramayana-starter",
+  "slug": "ramayana-starter",
+  "title": "Ramayana Starter: The First Door",
+  "status": "reference_tracked",
+  "hook": "Before Rama became the king everyone remembers, he became the child, student, son, brother, and seeker every family can understand.",
+  "sourceBrief": {
+    "primarySources": [
+      {
+        "label": "Valmiki Ramayana",
+        "status": "reference trail ready",
+        "note": "Use Bala Kanda and Ayodhya Kanda for the first publication pass. Exact sarga references should be added story by story."
+      }
+    ],
+    "variantNotes": [
+      "This starter pack focuses on broad Ramayana tradition with Valmiki as the source trail.",
+      "Regional tellings may differ in emphasis and should be noted on final pages."
+    ],
+    "rightsStatus": "original retelling from traditional source trail",
+    "reviewerNotes": "Add exact sarga references before marking verified."
+  },
+  "kg": {
+    "nodes": ["deity.rama", "deity.sita", "deity.hanuman", "person.dasharatha", "rishi.vishwamitra", "place.ayodhya", "place.mithila", "text.valmiki-ramayana"],
+    "edges": [
+      {"from": "deity.rama", "to": "place.ayodhya", "type": "BORN_IN", "confidence": 0.9, "reviewStatus": "reference_tracked"},
+      {"from": "rishi.vishwamitra", "to": "deity.rama", "type": "TEACHES", "confidence": 0.85, "reviewStatus": "reference_tracked"},
+      {"from": "deity.hanuman", "to": "deity.rama", "type": "SERVES", "confidence": 0.9, "reviewStatus": "reference_tracked"}
+    ]
+  },
+  "seo": {
+    "title": "Ramayana Starter Stories for Families: Summary, Quiz, Booklet, and Coloring Pages",
+    "description": "Start the Ramayana with source-aware family stories, kid-friendly summaries, quiz, printable booklet, coloring pages, and story linkages.",
+    "canonicalPath": "/story-experience.html?pack=ramayana-starter",
+    "faq": [
+      {"question": "What is the Ramayana Starter pack?", "answer": "It is a beginner-friendly path through Rama's birth, Vishwamitra's request, Sita Swayamvar, exile, and Hanuman meeting Rama."},
+      {"question": "Is this for kids or adults?", "answer": "Both. It includes adult story versions, simpler kid versions, quizzes, coloring pages, and family reflection prompts."},
+      {"question": "Can this become a PDF?", "answer": "Yes. The booklet mode is structured to print or save as PDF."}
+    ]
+  },
+  "aeo": {
+    "directAnswer40Words": "The Ramayana Starter pack introduces Rama through five family-friendly story moments: his birth, Vishwamitra's request, Sita Swayamvar, exile, and Hanuman meeting Rama. It connects story, quiz, coloring pages, and booklet activities.",
+    "directAnswer120Words": "The Ramayana Starter pack is designed as the first doorway into the Ramayana for families. It begins with Rama's birth in Ayodhya, continues through Vishwamitra's request and the first lessons of responsibility, moves to Sita Swayamvar in Mithila, then Rama's exile, and finally Hanuman's meeting with Rama. Each episode is paired with a life lesson: blessed beginnings, learning from teachers, strength with humility, keeping promises, and devotion through service. The pack is built for multiple modes: adult reading, kid-friendly summaries, quiz questions, drawing prompts, a PDF-ready booklet, and simple family game ideas."
+  },
+  "narratives": {
+    "oneLineHook": "A kingdom waited for a child, and the child grew into a path the world still follows.",
+    "adultCinematic": "Ayodhya did not lack gold, armies, or order. What it lacked was the sound Dasharatha longed for most: the footsteps of children in the palace halls.\n\nWhen Rama was born, the joy of the kingdom felt less like celebration and more like relief. A prayer had taken human form. Along with Bharata, Lakshmana, and Shatrughna, the royal house became complete, and Ayodhya saw in Rama a calmness that seemed older than childhood.\n\nBut a prince cannot remain only a child of the palace. When Vishwamitra came to Dasharatha's court, he asked for Rama, not for armies. The request was difficult because it sounded unreasonable to a father's heart. Yet dharma often arrives first as discomfort. Rama left with the sage and learned that protection is not an idea; it is a duty that must be practiced.\n\nIn Mithila, Rama stood before the bow of Shiva. Others had approached it like a test of pride. Rama approached it with reverence. The bow broke, not because strength was loud, but because true strength had no need to announce itself. Sita and Rama were joined, and two kingdoms saw destiny take a visible shape.\n\nLater, when the crown came close, exile came closer. Rama accepted the forest because a promise had to be honored. He did not turn dharma into an argument. He became the argument for dharma by walking away from power without bitterness.\n\nAnd in the forested paths of Kishkindha, Hanuman met Rama. Recognition moved between them before strategy did. Hanuman saw not merely a prince in need, but the one his devotion had been waiting to serve.\n\nThis is why the Ramayana begins so powerfully. It does not introduce Rama only as a hero. It introduces him as a son, student, husband, exile, and friend. Every role becomes a lesson. Every lesson becomes a doorway.",
+    "kids5to8": "Rama was born in Ayodhya, and everyone was happy. He grew up with his brothers and learned to be kind, brave, and truthful.\n\nOne day, Sage Vishwamitra asked Rama to help protect a sacred prayer. Rama went with him and learned how to use courage for others.\n\nIn Mithila, Rama lifted Shiva's great bow and married Sita. Later, Rama went to the forest to keep a promise. In the forest, Hanuman met Rama and became his devoted helper.\n\nThe Ramayana teaches us to be brave, truthful, humble, and helpful.",
+    "kids9to12": "The Ramayana begins by showing Rama in many roles. He is born in Ayodhya as Dasharatha's son. He becomes Vishwamitra's student and learns that courage means protecting what is sacred. At Sita Swayamvar, he shows strength with humility. When exile comes, he accepts it to honor a promise. When Hanuman meets him, a story of devotion begins.\n\nThese early stories help us understand Rama not just as a warrior, but as someone who turns every situation into dharma: as a son, student, husband, brother, exile, and friend."
+  },
+  "booklet": {
+    "coverTitle": "Ramayana: The First Door",
+    "coverSubtitle": "Five Stories to Begin the Journey",
+    "spreads": [
+      {"title": "The Joy of Ayodhya", "type": "chapter", "summary": "Rama's birth fills Ayodhya with hope."},
+      {"title": "The Sage Arrives", "type": "chapter", "summary": "Vishwamitra asks for Rama and begins his education in responsibility."},
+      {"title": "The Bow of Shiva", "type": "chapter", "summary": "Rama wins Sita's hand through strength with humility."},
+      {"title": "The Promise and the Forest", "type": "chapter", "summary": "Rama accepts exile to honor dharma."},
+      {"title": "Hanuman Recognizes Rama", "type": "chapter", "summary": "A meeting of devotion begins."},
+      {"title": "Family Reflection", "type": "reflection", "summary": "Questions on duty, humility, and service."}
+    ],
+    "talapatraCards": [
+      {"text": "True strength does not need to shout.", "meaning": "Rama's humility at Sita Swayamvar."},
+      {"text": "A promise becomes sacred when comfort becomes costly.", "meaning": "Rama's exile."},
+      {"text": "Service begins when recognition becomes devotion.", "meaning": "Hanuman meeting Rama."}
+    ],
+    "parentReflection": ["What promise matters in our family?", "What does strength with humility look like?", "Who helps move our life forward?"],
+    "childActivity": ["Draw Ayodhya with lamps.", "Design Sita's garland.", "Draw Hanuman meeting Rama."]
+  },
+  "visuals": {
+    "heroImage": "Images/Rama's birth.png",
+    "heroPrompt": "Premium Indian epic storybook illustration of Ayodhya glowing with lamps at Rama's birth, warm ivory and antique gold, temple mural influence, family-friendly and reverent",
+    "scenePrompts": [
+      "Rama as a child in Ayodhya with brothers, warm palace light, premium Indian children's book style",
+      "Vishwamitra in Dasharatha's court asking for Rama, serious but gentle atmosphere",
+      "Rama lifting Shiva's bow in Mithila while Sita watches with quiet wonder",
+      "Hanuman meeting Rama in a forest path, devotion and recognition"
+    ],
+    "coloringPages": [
+      {"title": "The Joy of Ayodhya", "file": "coloring/ramayana-ayodhya.svg", "prompt": "Simple line art: palace of Ayodhya, lamps, flowers, baby Rama symbolically in a cradle"},
+      {"title": "Sita Swayamvar", "file": "coloring/ramayana-swayamvar.svg", "prompt": "Simple line art: bow, garland, palace pillars, no crowded faces"},
+      {"title": "Hanuman Meets Rama", "file": "coloring/ramayana-hanuman.svg", "prompt": "Simple line art: Hanuman bowing before Rama and Lakshmana on a forest path"}
+    ]
+  },
+  "activities": {
+    "quizId": "quiz.rama-navami-beginner",
+    "drawingPrompts": ["Draw the lamp of Ayodhya.", "Decorate Sita's garland.", "Draw Hanuman's first meeting with Rama."],
+    "gameIdeas": [
+      "Story Path: move from Ayodhya to Mithila to the forest by answering story questions.",
+      "Dharma Choice Cards: choose the action that keeps a promise, helps a friend, or protects others."
+    ],
+    "competitionPrompt": "Draw one early Ramayana scene and write one sentence about the value it teaches."
+  },
+  "workflow": {
+    "status": "reference_tracked",
+    "generatedBy": "Codex",
+    "generatedAt": "2026-05-18",
+    "reviewedBy": "",
+    "reviewedAt": ""
+  }
+}

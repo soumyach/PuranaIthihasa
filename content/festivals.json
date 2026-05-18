@@ -1,0 +1,82 @@
+[
+  {
+    "id": "festival.ganesh-chaturthi",
+    "slug": "ganesh-chaturthi",
+    "title": "Ganesh Chaturthi",
+    "priority": 1,
+    "relatedEntities": ["deity.ganesha"],
+    "experienceTypes": ["story", "booklet", "drawing_kit", "quiz", "family_challenge", "kit_waitlist"]
+  },
+  {
+    "id": "festival.janmashtami",
+    "slug": "janmashtami",
+    "title": "Janmashtami",
+    "priority": 1,
+    "relatedEntities": ["deity.krishna"],
+    "experienceTypes": ["story", "booklet", "drawing_kit", "quiz", "family_challenge", "kit_waitlist"]
+  },
+  {
+    "id": "festival.rama-navami",
+    "slug": "rama-navami",
+    "title": "Rama Navami",
+    "priority": 1,
+    "relatedEntities": ["deity.rama"],
+    "experienceTypes": ["story", "reader", "drawing_kit", "quiz", "audio"]
+  },
+  {
+    "id": "festival.maha-shivaratri",
+    "slug": "maha-shivaratri",
+    "title": "Maha Shivaratri",
+    "priority": 1,
+    "relatedEntities": ["deity.shiva"],
+    "experienceTypes": ["story", "booklet", "quiz", "temple_guides", "audio"]
+  },
+  {
+    "id": "festival.navaratri",
+    "slug": "navaratri",
+    "title": "Navaratri",
+    "priority": 1,
+    "relatedEntities": ["deity.durga", "deity.devi"],
+    "experienceTypes": ["story", "navadurga_cards", "quiz", "drawing_kit", "challenge"]
+  },
+  {
+    "id": "festival.diwali",
+    "slug": "diwali",
+    "title": "Diwali",
+    "priority": 1,
+    "relatedEntities": ["deity.rama", "deity.lakshmi", "deity.krishna"],
+    "experienceTypes": ["story_variants", "booklet", "quiz", "drawing_kit", "family_challenge"]
+  },
+  {
+    "id": "festival.rath-yatra",
+    "slug": "rath-yatra",
+    "title": "Rath Yatra",
+    "priority": 1,
+    "relatedEntities": ["deity.jagannath", "deity.krishna"],
+    "experienceTypes": ["story", "temple_guide", "quiz", "build_activity", "kit_waitlist"]
+  },
+  {
+    "id": "festival.raksha-bandhan",
+    "slug": "raksha-bandhan",
+    "title": "Raksha Bandhan",
+    "priority": 1,
+    "relatedEntities": [],
+    "experienceTypes": ["story", "family_challenge", "craft", "kit_waitlist"]
+  },
+  {
+    "id": "festival.makar-sankranti-pongal",
+    "slug": "makar-sankranti-pongal",
+    "title": "Makar Sankranti / Pongal",
+    "priority": 1,
+    "relatedEntities": ["deity.surya"],
+    "experienceTypes": ["story", "regional_variants", "quiz", "activity"]
+  },
+  {
+    "id": "festival.hanuman-jayanti",
+    "slug": "hanuman-jayanti",
+    "title": "Hanuman Jayanti",
+    "priority": 1,
+    "relatedEntities": ["deity.hanuman"],
+    "experienceTypes": ["story", "audio", "quiz", "drawing_kit"]
+  }
+]

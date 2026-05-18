@@ -1,0 +1,258 @@
+{
+  "brand": {
+    "name": "Khatakshetra",
+    "emotionalHook": "The stories your grandparents wished you knew, rebuilt as living experiences you can read, play, draw, visit, and pass on.",
+    "freeUnlock": "A Ramayana starter experience with a beautiful story, beginner quiz, coloring pages, talapatra wisdom card, and PDF-ready booklet preview.",
+    "trustPromise": "Reference-led, child-friendly where needed, adult-worthy where it matters, and clear about variant traditions."
+  },
+  "priorityDeities": [
+    {
+      "id": "deity.vishnu",
+      "name": "Vishnu",
+      "hubStatus": "planned",
+      "coreStories": ["Dashavatara", "Gajendra Moksha", "Samudra Manthana", "Vamana and Bali"],
+      "linkedFestivals": ["Vaikuntha Ekadashi", "Narasimha Jayanti", "Onam"],
+      "activities": ["Dashavatara quiz", "Avatar matching game", "Vishnu symbols drawing kit"]
+    },
+    {
+      "id": "deity.shiva",
+      "name": "Shiva",
+      "hubStatus": "planned",
+      "coreStories": ["Neelakantha", "Shiva and Ganga", "Tripurantaka", "Ardhanarishvara"],
+      "linkedFestivals": ["Maha Shivaratri", "Karthika Masam"],
+      "activities": ["Shiva symbols booklet", "Lingodbhava quiz", "Kailasa coloring kit"]
+    },
+    {
+      "id": "deity.brahma",
+      "name": "Brahma",
+      "hubStatus": "planned",
+      "coreStories": ["Creation cycles", "Brahma and Saraswati", "Brahma and the four Vedas"],
+      "linkedFestivals": [],
+      "activities": ["Creation cycle explainer", "Cosmic timeline card"]
+    },
+    {
+      "id": "deity.parvati",
+      "name": "Parvati",
+      "hubStatus": "planned",
+      "coreStories": ["Parvati's tapas", "Birth of Ganesha", "Annapurna", "Durga as Mahishasuramardini"],
+      "linkedFestivals": ["Navratri", "Ganesh Chaturthi", "Teej"],
+      "activities": ["Devi forms matching game", "Mother goddess booklet"]
+    },
+    {
+      "id": "deity.lakshmi",
+      "name": "Lakshmi",
+      "hubStatus": "planned",
+      "coreStories": ["Lakshmi from Samudra Manthana", "Lakshmi and Vishnu", "Ashta Lakshmi"],
+      "linkedFestivals": ["Diwali", "Varalakshmi Vratam"],
+      "activities": ["Diwali prosperity reflection", "Ashta Lakshmi cards"]
+    },
+    {
+      "id": "deity.saraswati",
+      "name": "Saraswati",
+      "hubStatus": "planned",
+      "coreStories": ["Saraswati and wisdom", "The river and the goddess", "Vasant Panchami"],
+      "linkedFestivals": ["Vasant Panchami", "Navratri"],
+      "activities": ["Learning blessing card", "Veena coloring page"]
+    },
+    {
+      "id": "deity.ganesha",
+      "name": "Ganesha",
+      "hubStatus": "launch-candidate",
+      "coreStories": ["Why Ganesha has an elephant head", "Ganesha and the fruit of wisdom", "Ganesha as Vighnaharta"],
+      "linkedFestivals": ["Ganesh Chaturthi"],
+      "activities": ["Clay Ganesha guide", "Modak drawing prompt", "Obstacle reflection card"]
+    },
+    {
+      "id": "deity.subrahmanya",
+      "name": "Subrahmanya",
+      "hubStatus": "planned",
+      "coreStories": ["Birth of Skanda", "Tarakasura vadha", "Murugan and the fruit of wisdom"],
+      "linkedFestivals": ["Skanda Sashti", "Thaipusam"],
+      "activities": ["Vel symbol drawing", "Courage quiz"]
+    },
+    {
+      "id": "deity.hanuman",
+      "name": "Hanuman",
+      "hubStatus": "launch-candidate",
+      "coreStories": ["Hanuman meets Rama", "Sundara Kanda", "Carrying Sanjeevani", "Hanuman's leap"],
+      "linkedFestivals": ["Hanuman Jayanti"],
+      "activities": ["Devotion quiz", "Leap-to-Lanka board game", "Strength and humility card"]
+    },
+    {
+      "id": "deity.shani",
+      "name": "Shani Dev",
+      "hubStatus": "launch-candidate",
+      "coreStories": ["Birth of Shani", "Dasharatha meets Shani", "Pippalada and Shani"],
+      "linkedFestivals": ["Shani Jayanti"],
+      "activities": ["Karma quiz", "Discipline tracker", "Voiceover booklet"]
+    },
+    {
+      "id": "deity.surya",
+      "name": "Surya Dev",
+      "hubStatus": "planned",
+      "coreStories": ["Surya and the seven horses", "Sanjna and Chhaya", "Surya and Karna"],
+      "linkedFestivals": ["Ratha Saptami", "Makar Sankranti", "Chhath"],
+      "activities": ["Sun chariot drawing", "Daily discipline card"]
+    },
+    {
+      "id": "deity.indra",
+      "name": "Indra",
+      "hubStatus": "planned",
+      "coreStories": ["Indra and Vritra", "Govardhana episode", "Indra and the rains"],
+      "linkedFestivals": ["Govardhan Puja"],
+      "activities": ["Rain and responsibility quiz"]
+    },
+    {
+      "id": "deity.varuna",
+      "name": "Varuna",
+      "hubStatus": "planned",
+      "coreStories": ["Varuna and cosmic order", "Varuna in Ramayana sea episode"],
+      "linkedFestivals": [],
+      "activities": ["Ocean symbolism card"]
+    },
+    {
+      "id": "deity.kubera",
+      "name": "Kubera",
+      "hubStatus": "planned",
+      "coreStories": ["Kubera and Alakapuri", "Kubera and Ravana", "Wealth as responsibility"],
+      "linkedFestivals": ["Dhanteras"],
+      "activities": ["Wealth and generosity reflection"]
+    }
+  ],
+  "collections": [
+    {
+      "id": "collection.dashavatara",
+      "name": "Dashavatara",
+      "members": ["Matsya", "Kurma", "Varaha", "Narasimha", "Vamana", "Parashurama", "Rama", "Krishna", "Buddha or Balarama variant note", "Kalki"],
+      "launchTreatment": "Ten short story pages, avatar timeline, quiz ladder, symbol drawing kit, and temple/festival linkages."
+    },
+    {
+      "id": "collection.dasa-mahavidya",
+      "name": "Dasa Mahavidya",
+      "members": ["Kali", "Tara", "Tripura Sundari", "Bhuvaneshwari", "Bhairavi", "Chhinnamasta", "Dhumavati", "Bagalamukhi", "Matangi", "Kamala"],
+      "launchTreatment": "Adult/devotional guide first, careful age guidance, iconography notes, source trail, and temple links."
+    },
+    {
+      "id": "collection.navagraha",
+      "name": "Nava Graha",
+      "members": ["Surya", "Chandra", "Mangala", "Budha", "Guru", "Shukra", "Shani", "Rahu", "Ketu"],
+      "launchTreatment": "Planet deity explainers, story pages, Saturday/Shani quiz, temple guide path, and discipline tracker."
+    }
+  ],
+  "launchStoryPacks": [
+    {
+      "id": "pack.ramayana-starter",
+      "title": "Ramayana Starter: The First Door",
+      "hook": "Before Rama became the king everyone remembers, he became the child, student, son, brother, and seeker every family can understand.",
+      "storyIds": ["story.ramayana.rama-birth", "story.ramayana.vishwamitras-request", "story.ramayana.sita-swayamvar", "story.ramayana.rama-exile", "story.ramayana.hanuman-meets-rama"],
+      "deities": ["deity.rama", "deity.sita", "deity.hanuman"],
+      "places": ["place.ayodhya", "place.mithila", "place.kishkindha"],
+      "booklet": "booklet.ramayana-starter",
+      "quiz": "quiz.rama-navami-beginner",
+      "drawingKit": "drawing.ramayana-starter",
+      "audioScript": "script.ramayana-voiceover-starter",
+      "pdfReady": true
+    },
+    {
+      "id": "pack.shani-dev-charitra",
+      "title": "Shani Dev Charitra: The Necessary Teacher",
+      "hook": "The deity people fear is also the teacher who asks what hardship is trying to mature in us.",
+      "storyIds": ["story.puranas.birth-of-shani", "story.puranas.dasharatha-meets-shani"],
+      "deities": ["deity.shani", "deity.surya", "deity.chhaya", "deity.shiva"],
+      "places": ["place.ayodhya"],
+      "booklet": "booklet.shani-dev-charitra",
+      "quiz": "quiz.shani-dev-beginner",
+      "drawingKit": "drawing.navagraha-shani",
+      "audioScript": "script.shani-dev-voiceover",
+      "pdfReady": true,
+      "sourceStatus": "needs_review"
+    },
+    {
+      "id": "pack.ganesha-beginnings",
+      "title": "Ganesha: Before Every Beginning",
+      "hook": "The elephant-headed child is not only cute; he is a story about boundaries, repair, wisdom, and starting again.",
+      "storyIds": ["story.puranas.ganesha-elephant-head", "story.puranas.ganesha-fruit-of-wisdom"],
+      "deities": ["deity.ganesha", "deity.parvati", "deity.shiva", "deity.subrahmanya"],
+      "places": ["place.kailasa"],
+      "booklet": "booklet.ganesha-beginnings",
+      "quiz": "quiz.ganesha-beginner",
+      "drawingKit": "drawing.ganesha-chaturthi",
+      "audioScript": "script.ganesha-voiceover",
+      "kit": "kit.ganesh-chaturthi-the-remover",
+      "pdfReady": true
+    },
+    {
+      "id": "pack.dashavatara",
+      "title": "Dashavatara: Ten Ways Vishnu Restores Balance",
+      "hook": "The avatars are not random miracles; they are a pattern of protection, adaptation, and dharma returning in different forms.",
+      "storyIds": ["story.vishnu.matsya", "story.vishnu.kurma", "story.vishnu.varaha", "story.vishnu.narasimha", "story.vishnu.vamana", "story.ramayana.rama-birth"],
+      "deities": ["deity.vishnu", "deity.rama", "deity.krishna"],
+      "places": [],
+      "booklet": "booklet.dashavatara",
+      "quiz": "quiz.dashavatara-beginner",
+      "drawingKit": "drawing.dashavatara-symbols",
+      "audioScript": "script.dashavatara-descriptive",
+      "pdfReady": false
+    }
+  ],
+  "booklets": [
+    {
+      "id": "booklet.ramayana-starter",
+      "title": "Ramayana Starter Storybook",
+      "format": "print-ready-html",
+      "pages": ["Cover", "Blessing", "Source note", "Five story chapters", "Talapatra wisdom card", "Quiz page", "Coloring prompts", "Family reflection"],
+      "cta": "Unlock PDF"
+    },
+    {
+      "id": "booklet.shani-dev-charitra",
+      "title": "Shani Dev: The Necessary Teacher",
+      "format": "print-ready-html",
+      "pages": ["Cover", "Reference note", "Dasharatha chapter", "Birth of Shani", "Karma lesson", "Quiz", "Reflection card"],
+      "cta": "Get Shani booklet"
+    },
+    {
+      "id": "booklet.ganesha-beginnings",
+      "title": "Ganesha: Before Every Beginning",
+      "format": "print-ready-html",
+      "pages": ["Cover", "Elephant head story", "Fruit of wisdom", "Modak activity", "Obstacle card", "Parent guide"],
+      "cta": "Join Ganesh kit waitlist"
+    }
+  ],
+  "drawingKits": [
+    {
+      "id": "drawing.ramayana-starter",
+      "title": "Ramayana Starter Drawing Kit",
+      "pages": ["Rama's birth", "Sita Swayamvar", "Hanuman meets Rama"],
+      "unlockMechanic": "Email unlock gives first three pages; referrals unlock the next three."
+    },
+    {
+      "id": "drawing.ganesha-chaturthi",
+      "title": "Ganesh Chaturthi Drawing Kit",
+      "pages": ["Ganesha outline", "Modak bowl", "Mouse vahana", "Bamboo platform design"],
+      "unlockMechanic": "Submit artwork to join the first Khatakshetra challenge."
+    },
+    {
+      "id": "drawing.dashavatara-symbols",
+      "title": "Dashavatara Symbol Kit",
+      "pages": ["Fish", "Turtle", "Boar", "Lion pillar", "Umbrella", "Bow"],
+      "unlockMechanic": "Complete symbols to unlock the avatar timeline."
+    }
+  ],
+  "scriptTypes": [
+    {
+      "id": "voiceover",
+      "name": "Voiceover",
+      "purpose": "Narration for video and story listening."
+    },
+    {
+      "id": "dialogue",
+      "name": "Character Dialogue",
+      "purpose": "Skits, school competitions, group reading, and family performance."
+    },
+    {
+      "id": "descriptive",
+      "name": "Descriptive",
+      "purpose": "SEO/AEO article copy, source notes, explainers, and printable booklets."
+    }
+  ]
+}
