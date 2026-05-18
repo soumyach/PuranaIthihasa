@@ -22,18 +22,26 @@
   <div class="grid">
     <article class="card featured"><h2>Prime launch hubs</h2><p>Vishnu, Shiva, Brahma, Parvati, Lakshmi, Saraswati, Ganesha, Subrahmanya, Hanuman, Shani, Surya, Indra, Varuna, Kubera.</p><div class="tag-row"><span class="tag">Stories</span><span class="tag">Titles</span><span class="tag">Temples</span><span class="tag">Quizzes</span></div></article>
     <article class="card"><h3>Collections</h3><p>Dashavatara, Dasa Mahavidya, Nava Graha, Ashta Lakshmi, Shiva forms, Devi forms, and Ramayana character clusters.</p></article>
-    <article class="card"><h3>Linkage rule</h3><p>No isolated pages. Every deity links to stories, festivals, temples, source texts, related deities, and activities.</p></article>
+    <article class="card"><h3>Related paths</h3><p>Every deity page connects stories, festivals, temples, source texts, related deities, and activities.</p></article>
   </div>
 </div></section>
 <section class="band alt"><div class="inner">
   <div class="section-head">
     <div class="eyebrow">Priority deity hubs</div>
-    <h2 class="section-title">Clear launch inventory.</h2>
-    <p class="section-copy">This is the content coverage map from <code>content/launch-library.json</code>.</p>
+    <h2 class="section-title">Start with the major gods and story families.</h2>
+    <p class="section-copy">Each hub gathers names, stories, festivals, temples, quizzes, drawing pages, and related figures in one place.</p>
   </div>
   <div class="grid" id="deityGrid"></div>
 </div></section>
 <section class="band"><div class="inner">
+  <div class="section-head">
+    <div class="eyebrow">Gods, sages, places, and texts</div>
+    <h2 class="section-title">The god list we discussed is in the site map.</h2>
+    <p class="section-copy">Open any card to explore the summary and its connected stories, places, texts, and activities.</p>
+  </div>
+  <div class="grid" id="entityGrid"></div>
+</div></section>
+<section class="band alt"><div class="inner">
   <div class="section-head">
     <div class="eyebrow">Collections</div>
     <h2 class="section-title">The pages that can become evergreen SEO/AEO hubs.</h2>
@@ -51,11 +59,12 @@ fetch('content/launch-library.json')
     deityGrid.innerHTML = library.priorityDeities.map((deity) => `
       <article class="card">
         <h3>${deity.name}</h3>
-        <p><strong>Status:</strong> ${deity.hubStatus}</p>
+        <p><strong>Experience:</strong> ${deity.hubStatus === 'featured-path' ? 'Featured path' : 'Story hub'}</p>
         <p>${deity.coreStories.slice(0, 3).join(', ')}</p>
         <div class="tag-row">
           ${deity.activities.slice(0, 3).map((activity) => `<span class="tag">${activity}</span>`).join('')}
         </div>
+        <a class="btn" href="deity.html?slug=${deity.slug}">Open hub</a>
       </article>
     `).join('');
     const collectionGrid = document.getElementById('collectionGrid');
@@ -64,6 +73,23 @@ fetch('content/launch-library.json')
         <h3>${collection.name}</h3>
         <p>${collection.launchTreatment}</p>
         <div class="tag-row">${collection.members.slice(0, 6).map((item) => `<span class="tag">${item}</span>`).join('')}</div>
+      </article>
+    `).join('');
+  });
+
+fetch('content/entities.json?v=20260518a')
+  .then((response) => response.json())
+  .then((entities) => {
+    const priorityTypes = new Set(['Deity', 'Avatar', 'Collection', 'RishiMuni', 'Text', 'Place']);
+    const launchEntities = entities.filter((entity) => priorityTypes.has(entity.type));
+    document.getElementById('entityGrid').innerHTML = launchEntities.map((entity) => `
+      <article class="card">
+        <div class="eyebrow">${entity.type}</div>
+        <h3>${entity.name}</h3>
+        <p>${entity.summary}</p>
+        <div class="tag-row">${(entity.alsoKnownAs || []).slice(0, 3).map((name) => `<span class="tag">${name}</span>`).join('')}</div>
+        <p><strong>Linked:</strong> ${(entity.related || []).slice(0, 4).join(', ')}</p>
+        <a class="btn" href="deity.html?slug=${entity.slug}">Open hub</a>
       </article>
     `).join('');
   });

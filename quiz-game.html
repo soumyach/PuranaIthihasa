@@ -24,7 +24,7 @@
   <div class="hero-inner">
     <div class="eyebrow">Quiz round</div>
     <h1 id="quizTitle">Loading quiz...</h1>
-    <p class="lead" id="quizLead">Answer the round, reveal the unlock, and save your result locally for now.</p>
+    <p class="lead" id="quizLead">Answer the round, reveal the unlock, or open the same quiz as a family room.</p>
   </div>
 </header>
 <main>
@@ -36,6 +36,7 @@
     <div class="cta-strip" id="resultBox" style="display:none">
       <div><h2 class="section-title" id="resultTitle"></h2><p class="section-copy" id="resultCopy"></p></div>
       <button class="btn primary" onclick="localSignupIntent('quiz_unlock')">Save My Unlock</button>
+      <a class="btn" id="familyRoomLink" href="quiz-room.html">Open Family Room</a>
     </div>
   </div>
 </div></section>
@@ -48,7 +49,13 @@ const storyLinks = {
   'rama-navami-beginner': 'story-experience.html?pack=ramayana-starter',
   'shani-dev-beginner': 'story-experience.html?pack=dasharatha-meets-shani',
   'ganesha-beginner': 'story-experience.html?pack=ganesha-beginnings',
-  'dashavatara-beginner': 'story-experience.html?pack=dashavatara'
+  'dashavatara-beginner': 'story-experience.html?pack=dashavatara',
+  'shiva-beginner': 'deity.html?slug=shiva',
+  'krishna-beginner': 'deity.html?slug=krishna',
+  'devi-navratri-beginner': 'deity.html?slug=durga',
+  'lakshmi-diwali-beginner': 'deity.html?slug=lakshmi',
+  'saraswati-beginner': 'deity.html?slug=saraswati',
+  'subrahmanya-surya-beginner': 'deity.html?slug=subrahmanya'
 };
 let quiz;
 let index = 0;
@@ -103,13 +110,14 @@ function renderResult() {
   document.getElementById('resultCopy').innerHTML = `You scored ${score}/${quiz.questions.length}. Next unlock: coloring page, booklet spread, or family challenge. <a href="${storyLinks[quiz.slug] || 'stories.html'}">Open the story pack</a>.`;
 }
 
-fetch('content/quizzes.json')
+fetch('content/quizzes.json?v=20260518a')
   .then((response) => response.json())
   .then((quizzes) => {
     quiz = quizzes.find((item) => item.slug === quizParam) || quizzes[0];
     document.title = `${quiz.title} - Khatakshetra`;
     document.getElementById('quizTitle').textContent = quiz.title;
     document.getElementById('ageLabel').textContent = `Ages ${quiz.ageBand}`;
+    document.getElementById('familyRoomLink').href = `quiz-room.html?quiz=${quiz.slug}`;
     renderQuestion();
   });
 </script>

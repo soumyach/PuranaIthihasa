@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paint - Khatakshetra</title>
+<meta name="description" content="Paint a Khatakshetra coloring page digitally.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  .paint-shell { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 1rem; align-items: start; }
+  .paint-toolbar { position: sticky; top: 88px; }
+  .swatches { display: grid; grid-template-columns: repeat(4, 1fr); gap: .45rem; margin: 1rem 0; }
+  .swatch { width: 100%; aspect-ratio: 1; border: 2px solid rgba(255,255,255,.2); cursor: pointer; }
+  .swatch.active { outline: 3px solid var(--gold-bright); }
+  .paint-stage { position: relative; width: min(760px, 100%); margin: 0 auto; background: white; border: 1px solid rgba(232,185,79,.35); }
+  .paint-stage img { width: 100%; display: block; user-select: none; pointer-events: none; }
+  #paintLayer { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; mix-blend-mode: multiply; cursor: crosshair; }
+  .range-row { display: grid; gap: .35rem; color: var(--cream-dim); }
+  @media (max-width: 900px) { .paint-shell { grid-template-columns: 1fr; } .paint-toolbar { position: static; } }
+</style>
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="coloring-book-ramayana.html">Coloring Book</a><a href="stories.html">Stories</a><a href="games.html">Play</a></div></nav>
+<header class="page-hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Digital Coloring</div>
+    <h1 id="title">Paint a page.</h1>
+    <p class="lead">Choose a color, paint on the page, then download your artwork.</p>
+  </div>
+</header>
+<main>
+<section class="band"><div class="inner paint-shell">
+  <aside class="card paint-toolbar">
+    <h2>Palette</h2>
+    <div class="swatches" id="swatches"></div>
+    <label class="range-row">Brush size <input id="brushSize" type="range" min="4" max="60" value="18"></label>
+    <button class="btn primary" id="downloadBtn" type="button">Download artwork</button>
+    <button class="btn" id="clearBtn" type="button">Clear paint</button>
+    <a class="btn" href="coloring-book-ramayana.html">Back to book</a>
+  </aside>
+  <div class="paint-stage" id="stage">
+    <img id="baseImage" alt="Coloring page">
+    <canvas id="paintLayer"></canvas>
+  </div>
+</div></section>
+</main>
+<script>
+const params = new URLSearchParams(location.search);
+const image = params.get('image') || 'ChildrenBook/Cover.png';
+const title = params.get('title') || 'Coloring Page';
+const allowed = ['ChildrenBook/', 'Images/', 'assets/', 'coloring/'];
+if (!allowed.some((prefix) => image.startsWith(prefix))) throw new Error('Unsupported image path');
+
+const colors = ['#ef4444','#f97316','#facc15','#22c55e','#38bdf8','#2563eb','#a855f7','#ec4899','#8b5e34','#ffffff','#111111','#f5e6c8'];
+let currentColor = colors[0];
+let drawing = false;
+const img = document.getElementById('baseImage');
+const canvas = document.getElementById('paintLayer');
+const ctx = canvas.getContext('2d');
+document.getElementById('title').textContent = title;
+img.src = image;
+
+document.getElementById('swatches').innerHTML = colors.map((color, index) => `<button class="swatch ${index === 0 ? 'active' : ''}" style="background:${color}" data-color="${color}" aria-label="${color}"></button>`).join('');
+document.querySelectorAll('.swatch').forEach((button) => button.addEventListener('click', () => {
+  currentColor = button.dataset.color;
+  document.querySelectorAll('.swatch').forEach((item) => item.classList.remove('active'));
+  button.classList.add('active');
+}));
+
+img.addEventListener('load', resizeCanvas);
+window.addEventListener('resize', resizeCanvas);
+
+function resizeCanvas() {
+  const existing = document.createElement('canvas');
+  existing.width = canvas.width || 1;
+  existing.height = canvas.height || 1;
+  existing.getContext('2d').drawImage(canvas, 0, 0);
+  canvas.width = img.naturalWidth;
+  canvas.height = img.naturalHeight;
+  ctx.drawImage(existing, 0, 0, canvas.width, canvas.height);
+}
+
+function getPoint(event) {
+  const rect = canvas.getBoundingClientRect();
+  const touch = event.touches ? event.touches[0] : event;
+  return {
+    x: ((touch.clientX - rect.left) / rect.width) * canvas.width,
+    y: ((touch.clientY - rect.top) / rect.height) * canvas.height
+  };
+}
+
+function start(event) {
+  drawing = true;
+  const point = getPoint(event);
+  ctx.beginPath();
+  ctx.moveTo(point.x, point.y);
+  event.preventDefault();
+}
+
+function move(event) {
+  if (!drawing) return;
+  const point = getPoint(event);
+  ctx.lineTo(point.x, point.y);
+  ctx.strokeStyle = currentColor;
+  ctx.lineWidth = Number(document.getElementById('brushSize').value) * (canvas.width / canvas.getBoundingClientRect().width);
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  ctx.globalAlpha = currentColor === '#ffffff' ? 1 : 0.72;
+  ctx.stroke();
+  event.preventDefault();
+}
+
+function stop() {
+  drawing = false;
+  ctx.closePath();
+}
+
+canvas.addEventListener('pointerdown', start);
+canvas.addEventListener('pointermove', move);
+canvas.addEventListener('pointerup', stop);
+canvas.addEventListener('pointerleave', stop);
+
+document.getElementById('clearBtn').addEventListener('click', () => ctx.clearRect(0, 0, canvas.width, canvas.height));
+document.getElementById('downloadBtn').addEventListener('click', () => {
+  const output = document.createElement('canvas');
+  output.width = img.naturalWidth;
+  output.height = img.naturalHeight;
+  const out = output.getContext('2d');
+  out.drawImage(img, 0, 0);
+  out.globalAlpha = 0.8;
+  out.globalCompositeOperation = 'multiply';
+  out.drawImage(canvas, 0, 0);
+  const link = document.createElement('a');
+  link.download = `${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-colored.png`;
+  link.href = output.toDataURL('image/png');
+  link.click();
+});
+</script>
+</body>
+</html>

@@ -43,17 +43,19 @@ const packFiles = [
 Promise.all(packFiles.map((file) => fetch(file).then((response) => response.json())))
   .then((packs) => {
     const pages = packs.flatMap((pack) => {
-      const colorbookPages = pack.visuals.colorbookPages || [];
+      const paintablePages = pack.visuals.paintablePages || [];
+      const colorbookPages = pack.visuals.drawingBriefs || pack.visuals.colorbookPages || [];
       const fallbackPages = pack.visuals.coloringPages || [];
-      return (colorbookPages.length ? colorbookPages : fallbackPages).map((page) => ({ ...page, packTitle: pack.title, packSlug: pack.slug }));
+      return (paintablePages.length ? paintablePages : (colorbookPages.length ? colorbookPages : fallbackPages)).map((page) => ({ ...page, packTitle: pack.title, packSlug: pack.slug }));
     });
     document.getElementById('drawingGrid').innerHTML = pages.map((page) => `
       <article class="card">
-        <img src="${page.referenceImage || page.file}" alt="${page.title} reference art" style="width:100%;background:#fffdf8;border:1px solid rgba(232,185,79,.28);">
+        <img src="${page.file || page.referenceImage}" alt="${page.title} drawing page" style="width:100%;background:#fffdf8;border:1px solid rgba(232,185,79,.28);">
         <div class="eyebrow">${page.packTitle}</div>
         <h3>${page.title}</h3>
         <p>${page.activity || page.prompt || page.brief}</p>
-        <a class="btn primary" href="${page.referenceImage || page.file}" target="_blank" rel="noopener">Open reference</a>
+        ${(page.file || '').startsWith('ChildrenBook/') ? `<a class="btn primary" href="paint.html?image=${encodeURIComponent(page.file)}&title=${encodeURIComponent(page.title)}">Paint digitally</a>` : ''}
+        <a class="btn" href="${page.file || page.referenceImage}" target="_blank" rel="noopener">Open page</a>
       </article>
     `).join('');
   });

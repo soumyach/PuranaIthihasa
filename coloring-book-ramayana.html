@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My First Ramayana Coloring Book - Khatakshetra</title>
+<meta name="description" content="Paint and print Ramayana coloring pages from Bala Kanda and Ayodhya Kanda.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  .coloring-book-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  .coloring-page-card img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; background: #fff; border: 1px solid rgba(232,185,79,.28); }
+  @media (max-width: 920px) { .coloring-book-grid { grid-template-columns: 1fr; } }
+  @media print {
+    .nav, .page-hero, footer, .card h3, .card p, .card .btn { display: none; }
+    body { background: white; }
+    .band { padding: 0; }
+    .coloring-book-grid { display: block; }
+    .card { border: 0; padding: 0; page-break-after: always; background: white; }
+    .coloring-page-card img { width: 100%; height: auto; border: 0; }
+  }
+</style>
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="stories.html">Stories</a><a href="booklets.html">Booklets</a><a href="drawing-kits.html">Drawing</a><a href="games.html">Play</a></div></nav>
+<header class="page-hero" style="--hero-image:linear-gradient(180deg,rgba(8,3,0,.18),rgba(8,3,0,.96)),url('ChildrenBook/Cover.png')">
+  <div class="hero-inner">
+    <div class="eyebrow">Paintable Coloring Book</div>
+    <h1>My First Ramayana Coloring Book.</h1>
+    <p class="lead">The original paintable pages are back: open any page to color digitally, or print/save the whole book as a PDF.</p>
+    <div class="hero-actions"><button class="btn primary" onclick="window.print()">Print / Save as PDF</button><a class="btn" href="story-experience.html?pack=ramayana-starter">Back to Ramayana</a></div>
+  </div>
+</header>
+<main>
+<section class="band"><div class="inner">
+  <div class="coloring-book-grid" id="pageGrid"></div>
+</div></section>
+</main>
+<footer><a href="booklets.html">Back to Booklets</a></footer>
+<script src="site.js"></script>
+<script>
+const pages = [
+  ['Cover', 'ChildrenBook/Cover.png', 'Write your name on the cover after coloring.'],
+  ['Ayodhya: The Golden Kingdom', 'ChildrenBook/Ayodhya kingdom.png', 'Color the palace, river, lotus border, and sky.'],
+  ['The Special Prayer', 'ChildrenBook/Putrakameshti.png', 'Color the sacred fire and prayer scene.'],
+  ['Baby Rama Is Born', "ChildrenBook/Rama's birth.png", 'Color baby Rama and add one blessing.'],
+  ['The Four Brothers', 'ChildrenBook/the four brothers.png', 'Give each brother a unique color.'],
+  ['Learning from the Sage', 'ChildrenBook/Learning from the sage.png', 'Color the forest classroom.'],
+  ['Sita in the Garden', 'ChildrenBook/Young Sita.png', 'Color the flowers around Sita.'],
+  ['Rama Breaks the Bow', 'ChildrenBook/Sita Swayamvar.png', 'Color the bow and celebration stars.'],
+  ["Rama and Sita's Wedding", 'ChildrenBook/Marriage.png', 'Decorate the wedding garlands.'],
+  ['The Happy Family', 'ChildrenBook/Happy family.png', 'Color the family outfits and rangoli.'],
+  ['A Difficult Wish', "ChildrenBook/Kaikeyi's wish.png", 'Color the palace room and feelings.'],
+  ["Rama's Brave Goodbye", "ChildrenBook/Rama's decision.png", 'Color the doorway and the forest path.'],
+  ['Into the Forest Together', 'ChildrenBook/Exile.png', 'Color the forest and companions.']
+];
+
+document.getElementById('pageGrid').innerHTML = pages.map(([title, file, activity]) => `
+  <article class="card coloring-page-card">
+    <img src="${file}" alt="${title} coloring page">
+    <h3>${title}</h3>
+    <p>${activity}</p>
+    <a class="btn primary" href="paint.html?image=${encodeURIComponent(file)}&title=${encodeURIComponent(title)}">Paint digitally</a>
+    <a class="btn" href="${file}" target="_blank" rel="noopener">Open page</a>
+  </article>
+`).join('');
+</script>
+</body>
+</html>

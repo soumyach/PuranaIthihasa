@@ -31,7 +31,7 @@
     <aside class="side-stack">
       <img class="side-image" src="assets/shani-dev-character.png" alt="Shani Dev character art">
       <article class="card featured">
-        <h2>Linked Nodes</h2>
+        <h2>Related Paths</h2>
         <div class="tag-row" id="nodeTags"></div>
       </article>
       <article class="card">
@@ -79,7 +79,8 @@ fetch('content/story-packs/dasharatha-meets-shani.json')
       .split('\n\n')
       .map((paragraph) => `<p>${paragraph}</p>`)
       .join('');
-    document.getElementById('nodeTags').innerHTML = pack.kg.nodes.map((node) => `<span class="tag">${node}</span>`).join('');
+    const prettyNode = (id) => id.split('.').pop().split('-').map((word) => word[0].toUpperCase() + word.slice(1)).join(' ');
+    document.getElementById('nodeTags').innerHTML = pack.kg.nodes.map((node) => `<span class="tag">${prettyNode(node)}</span>`).join('');
     document.getElementById('talapatraList').innerHTML = pack.booklet.talapatraCards.map((card) => `<div class="talapatra-card"><strong>${card.text}</strong>${card.meaning}</div>`).join('');
     document.getElementById('drawingPrompts').innerHTML = pack.activities.drawingPrompts.map((prompt) => `<span class="tag">${prompt}</span>`).join('');
   });

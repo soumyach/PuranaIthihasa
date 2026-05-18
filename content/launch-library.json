@@ -9,7 +9,7 @@
     {
       "id": "deity.vishnu",
       "name": "Vishnu",
-      "hubStatus": "planned",
+      "hubStatus": "story-hub",
       "coreStories": ["Dashavatara", "Gajendra Moksha", "Samudra Manthana", "Vamana and Bali"],
       "linkedFestivals": ["Vaikuntha Ekadashi", "Narasimha Jayanti", "Onam"],
       "activities": ["Dashavatara quiz", "Avatar matching game", "Vishnu symbols drawing kit"]
@@ -17,7 +17,7 @@
     {
       "id": "deity.shiva",
       "name": "Shiva",
-      "hubStatus": "planned",
+      "hubStatus": "story-hub",
       "coreStories": ["Neelakantha", "Shiva and Ganga", "Tripurantaka", "Ardhanarishvara"],
       "linkedFestivals": ["Maha Shivaratri", "Karthika Masam"],
       "activities": ["Shiva symbols booklet", "Lingodbhava quiz", "Kailasa coloring kit"]
@@ -25,7 +25,7 @@
     {
       "id": "deity.brahma",
       "name": "Brahma",
-      "hubStatus": "planned",
+      "hubStatus": "story-hub",
       "coreStories": ["Creation cycles", "Brahma and Saraswati", "Brahma and the four Vedas"],
       "linkedFestivals": [],
       "activities": ["Creation cycle explainer", "Cosmic timeline card"]
@@ -33,7 +33,7 @@
     {
       "id": "deity.parvati",
       "name": "Parvati",
-      "hubStatus": "planned",
+      "hubStatus": "story-hub",
       "coreStories": ["Parvati's tapas", "Birth of Ganesha", "Annapurna", "Durga as Mahishasuramardini"],
       "linkedFestivals": ["Navratri", "Ganesh Chaturthi", "Teej"],
       "activities": ["Devi forms matching game", "Mother goddess booklet"]
@@ -41,7 +41,7 @@
     {
       "id": "deity.lakshmi",
       "name": "Lakshmi",
-      "hubStatus": "planned",
+      "hubStatus": "story-hub",
       "coreStories": ["Lakshmi from Samudra Manthana", "Lakshmi and Vishnu", "Ashta Lakshmi"],
       "linkedFestivals": ["Diwali", "Varalakshmi Vratam"],
       "activities": ["Diwali prosperity reflection", "Ashta Lakshmi cards"]
@@ -49,7 +49,7 @@
     {
       "id": "deity.saraswati",
       "name": "Saraswati",
-      "hubStatus": "planned",
+      "hubStatus": "story-hub",
       "coreStories": ["Saraswati and wisdom", "The river and the goddess", "Vasant Panchami"],
       "linkedFestivals": ["Vasant Panchami", "Navratri"],
       "activities": ["Learning blessing card", "Veena coloring page"]
@@ -57,7 +57,7 @@
     {
       "id": "deity.ganesha",
       "name": "Ganesha",
-      "hubStatus": "launch-candidate",
+      "hubStatus": "featured-path",
       "coreStories": ["Why Ganesha has an elephant head", "Ganesha and the fruit of wisdom", "Ganesha as Vighnaharta"],
       "linkedFestivals": ["Ganesh Chaturthi"],
       "activities": ["Clay Ganesha guide", "Modak drawing prompt", "Obstacle reflection card"]
@@ -65,7 +65,7 @@
     {
       "id": "deity.subrahmanya",
       "name": "Subrahmanya",
-      "hubStatus": "planned",
+      "hubStatus": "story-hub",
       "coreStories": ["Birth of Skanda", "Tarakasura vadha", "Murugan and the fruit of wisdom"],
       "linkedFestivals": ["Skanda Sashti", "Thaipusam"],
       "activities": ["Vel symbol drawing", "Courage quiz"]
@@ -73,7 +73,7 @@
     {
       "id": "deity.hanuman",
       "name": "Hanuman",
-      "hubStatus": "launch-candidate",
+      "hubStatus": "featured-path",
       "coreStories": ["Hanuman meets Rama", "Sundara Kanda", "Carrying Sanjeevani", "Hanuman's leap"],
       "linkedFestivals": ["Hanuman Jayanti"],
       "activities": ["Devotion quiz", "Leap-to-Lanka board game", "Strength and humility card"]
@@ -81,7 +81,7 @@
     {
       "id": "deity.shani",
       "name": "Shani Dev",
-      "hubStatus": "launch-candidate",
+      "hubStatus": "featured-path",
       "coreStories": ["Birth of Shani", "Dasharatha meets Shani", "Pippalada and Shani"],
       "linkedFestivals": ["Shani Jayanti"],
       "activities": ["Karma quiz", "Discipline tracker", "Voiceover booklet"]
@@ -89,7 +89,7 @@
     {
       "id": "deity.surya",
       "name": "Surya Dev",
-      "hubStatus": "planned",
+      "hubStatus": "story-hub",
       "coreStories": ["Surya and the seven horses", "Sanjna and Chhaya", "Surya and Karna"],
       "linkedFestivals": ["Ratha Saptami", "Makar Sankranti", "Chhath"],
       "activities": ["Sun chariot drawing", "Daily discipline card"]
@@ -97,7 +97,7 @@
     {
       "id": "deity.indra",
       "name": "Indra",
-      "hubStatus": "planned",
+      "hubStatus": "story-hub",
       "coreStories": ["Indra and Vritra", "Govardhana episode", "Indra and the rains"],
       "linkedFestivals": ["Govardhan Puja"],
       "activities": ["Rain and responsibility quiz"]
@@ -105,7 +105,7 @@
     {
       "id": "deity.varuna",
       "name": "Varuna",
-      "hubStatus": "planned",
+      "hubStatus": "story-hub",
       "coreStories": ["Varuna and cosmic order", "Varuna in Ramayana sea episode"],
       "linkedFestivals": [],
       "activities": ["Ocean symbolism card"]
@@ -113,7 +113,7 @@
     {
       "id": "deity.kubera",
       "name": "Kubera",
-      "hubStatus": "planned",
+      "hubStatus": "story-hub",
       "coreStories": ["Kubera and Alakapuri", "Kubera and Ravana", "Wealth as responsibility"],
       "linkedFestivals": ["Dhanteras"],
       "activities": ["Wealth and generosity reflection"]
@@ -165,7 +165,7 @@
       "drawingKit": "drawing.navagraha-shani",
       "audioScript": "script.shani-dev-voiceover",
       "pdfReady": true,
-      "sourceStatus": "needs_review"
+      "sourceNote": "variant_tracked"
     },
     {
       "id": "pack.ganesha-beginnings",

@@ -248,5 +248,159 @@
     "name": "Dasa Mahavidya",
     "summary": "The Dasa Mahavidya are ten great wisdom goddesses in Tantric Devi traditions, requiring careful adult/devotional presentation.",
     "related": ["deity.parvati", "collection.devi"]
+  },
+  {
+    "id": "deity.durga",
+    "slug": "durga",
+    "type": "Deity",
+    "name": "Durga",
+    "alsoKnownAs": ["Mahishasuramardini", "Devi"],
+    "summary": "Durga is a fierce and compassionate form of Devi, celebrated especially during Navratri and remembered for the restoration of dharma.",
+    "related": ["deity.parvati", "festival.navratri", "collection.devi", "collection.dasa-mahavidya"]
+  },
+  {
+    "id": "deity.kali",
+    "slug": "kali",
+    "type": "Deity",
+    "name": "Kali",
+    "summary": "Kali is a powerful form of Devi associated with time, transformation, fierce protection, and the destruction of ego and adharma.",
+    "related": ["deity.parvati", "collection.dasa-mahavidya", "festival.navratri"]
+  },
+  {
+    "id": "deity.lalita-tripurasundari",
+    "slug": "lalita-tripurasundari",
+    "type": "Deity",
+    "name": "Lalita Tripurasundari",
+    "alsoKnownAs": ["Shodashi", "Tripura Sundari"],
+    "summary": "Lalita Tripurasundari is a central Sri Vidya form of Devi, associated with beauty, sovereignty, wisdom, and the subtle power of consciousness.",
+    "related": ["collection.dasa-mahavidya", "deity.parvati"]
+  },
+  {
+    "id": "avatar.matsya",
+    "slug": "matsya",
+    "type": "Avatar",
+    "name": "Matsya",
+    "summary": "Matsya is Vishnu's fish avatar, remembered for protecting sacred wisdom during a cosmic flood.",
+    "related": ["deity.vishnu", "collection.dashavatara", "story.vishnu.matsya"]
+  },
+  {
+    "id": "avatar.kurma",
+    "slug": "kurma",
+    "type": "Avatar",
+    "name": "Kurma",
+    "summary": "Kurma is Vishnu's tortoise avatar, remembered as the steady support beneath Mount Mandara during the churning of the ocean.",
+    "related": ["deity.vishnu", "collection.dashavatara", "story.vishnu.kurma"]
+  },
+  {
+    "id": "avatar.varaha",
+    "slug": "varaha",
+    "type": "Avatar",
+    "name": "Varaha",
+    "summary": "Varaha is Vishnu's boar avatar, remembered for lifting the Earth from the cosmic waters and restoring stability.",
+    "related": ["deity.vishnu", "collection.dashavatara", "story.vishnu.varaha"]
+  },
+  {
+    "id": "avatar.narasimha",
+    "slug": "narasimha",
+    "type": "Avatar",
+    "name": "Narasimha",
+    "summary": "Narasimha is Vishnu's man-lion avatar, remembered for protecting Prahlada and breaking the arrogance of tyranny.",
+    "related": ["deity.vishnu", "collection.dashavatara", "story.vishnu.narasimha"]
+  },
+  {
+    "id": "avatar.vamana",
+    "slug": "vamana",
+    "type": "Avatar",
+    "name": "Vamana",
+    "summary": "Vamana is Vishnu's dwarf avatar, remembered for revealing how humility can become cosmic power.",
+    "related": ["deity.vishnu", "collection.dashavatara", "story.vishnu.vamana"]
+  },
+  {
+    "id": "avatar.parashurama",
+    "slug": "parashurama",
+    "type": "Avatar",
+    "name": "Parashurama",
+    "summary": "Parashurama is the axe-bearing avatar of Vishnu, associated with discipline, fierce justice, and the correction of arrogant power.",
+    "related": ["deity.vishnu", "collection.dashavatara"]
+  },
+  {
+    "id": "avatar.buddha-balarama-variant",
+    "slug": "buddha-balarama-variant",
+    "type": "Avatar",
+    "name": "Buddha or Balarama Variant",
+    "summary": "Some Dashavatara lists include Buddha, while others include Balarama. Khatakshetra should explain the variant clearly instead of hiding it.",
+    "related": ["deity.vishnu", "deity.krishna", "collection.dashavatara"]
+  },
+  {
+    "id": "avatar.kalki",
+    "slug": "kalki",
+    "type": "Avatar",
+    "name": "Kalki",
+    "summary": "Kalki is the future-facing avatar in many Dashavatara traditions, associated with restoration at the end of decline.",
+    "related": ["deity.vishnu", "collection.dashavatara"]
+  },
+  {
+    "id": "mahavidya.tara",
+    "slug": "tara",
+    "type": "Deity",
+    "name": "Tara",
+    "summary": "Tara is one of the Dasa Mahavidyas, associated with protective wisdom, crossing danger, and guiding seekers through difficult thresholds.",
+    "related": ["collection.dasa-mahavidya", "deity.parvati"]
+  },
+  {
+    "id": "mahavidya.bhuvaneshwari",
+    "slug": "bhuvaneshwari",
+    "type": "Deity",
+    "name": "Bhuvaneshwari",
+    "summary": "Bhuvaneshwari is one of the Dasa Mahavidyas, associated with the vastness of space, sovereignty, and the divine presence pervading the worlds.",
+    "related": ["collection.dasa-mahavidya", "deity.parvati"]
+  },
+  {
+    "id": "mahavidya.bhairavi",
+    "slug": "bhairavi",
+    "type": "Deity",
+    "name": "Bhairavi",
+    "summary": "Bhairavi is one of the Dasa Mahavidyas, associated with disciplined spiritual intensity, transformation, and fierce devotion.",
+    "related": ["collection.dasa-mahavidya", "deity.parvati"]
+  },
+  {
+    "id": "mahavidya.chhinnamasta",
+    "slug": "chhinnamasta",
+    "type": "Deity",
+    "name": "Chhinnamasta",
+    "summary": "Chhinnamasta is one of the Dasa Mahavidyas, a difficult and symbolic form associated with self-sacrifice, life force, and radical ego-transcendence.",
+    "related": ["collection.dasa-mahavidya", "deity.parvati"]
+  },
+  {
+    "id": "mahavidya.dhumavati",
+    "slug": "dhumavati",
+    "type": "Deity",
+    "name": "Dhumavati",
+    "summary": "Dhumavati is one of the Dasa Mahavidyas, associated with the wisdom found in loss, old age, emptiness, and what worldly life often avoids.",
+    "related": ["collection.dasa-mahavidya", "deity.parvati"]
+  },
+  {
+    "id": "mahavidya.bagalamukhi",
+    "slug": "bagalamukhi",
+    "type": "Deity",
+    "name": "Bagalamukhi",
+    "summary": "Bagalamukhi is one of the Dasa Mahavidyas, associated with stilling hostile force, speech, and harmful momentum.",
+    "related": ["collection.dasa-mahavidya", "deity.parvati"]
+  },
+  {
+    "id": "mahavidya.matangi",
+    "slug": "matangi",
+    "type": "Deity",
+    "name": "Matangi",
+    "summary": "Matangi is one of the Dasa Mahavidyas, associated with speech, music, learning, and forms of wisdom outside ordinary social boundaries.",
+    "related": ["collection.dasa-mahavidya", "deity.saraswati", "deity.parvati"]
+  },
+  {
+    "id": "mahavidya.kamala",
+    "slug": "kamala",
+    "type": "Deity",
+    "name": "Kamala",
+    "summary": "Kamala is one of the Dasa Mahavidyas, associated with prosperity, beauty, and the sacred form of abundance.",
+    "related": ["collection.dasa-mahavidya", "deity.lakshmi", "deity.parvati"]
   }
 ]

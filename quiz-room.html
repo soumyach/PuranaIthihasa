@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family Quiz Room - Khatakshetra</title>
+<meta name="description" content="Play a Khatakshetra quiz with multiple family members on one device.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  .room-layout { max-width: 980px; margin: 0 auto; }
+  .player-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: .75rem; margin: 1rem 0; }
+  .player-pill { border: 1px solid rgba(232,185,79,.26); padding: .8rem; color: var(--cream-dim); }
+  .player-pill.active { background: rgba(232,185,79,.14); color: var(--gold-bright); border-color: rgba(232,185,79,.65); }
+  .choice-btn { width: 100%; justify-content: flex-start; margin: .45rem 0; }
+  .choice-btn.is-correct { border-color: rgba(87,171,96,.9); background: rgba(87,171,96,.16); }
+  .choice-btn.is-wrong { border-color: rgba(192,79,58,.9); background: rgba(192,79,58,.16); }
+  @media (max-width: 760px) { .player-grid { grid-template-columns: 1fr 1fr; } }
+</style>
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="games.html">Play</a><a href="stories.html">Stories</a><a href="booklets.html">Booklets</a></div></nav>
+<header class="page-hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Family Room</div>
+    <h1 id="roomTitle">Loading quiz...</h1>
+    <p class="lead">Pass the device around. Each player gets a turn, and the room keeps score.</p>
+  </div>
+</header>
+<main>
+<section class="band"><div class="inner room-layout">
+  <article class="card featured" id="setupBox">
+    <h2>Players</h2>
+    <p>Enter names separated by commas.</p>
+    <input class="field" id="playersInput" value="Amma, Nana, Child" aria-label="Player names">
+    <button class="btn primary" id="startBtn" type="button">Start family room</button>
+  </article>
+  <div id="gameBox" style="display:none">
+    <div class="player-grid" id="playersGrid"></div>
+    <article class="card featured" id="questionBox"></article>
+    <div class="cta-strip" id="resultBox" style="display:none"></div>
+  </div>
+</div></section>
+</main>
+<script src="site.js"></script>
+<script>
+const quizParam = new URLSearchParams(location.search).get('quiz') || 'rama-navami-beginner';
+let quiz;
+let players = [];
+let turn = 0;
+let questionIndex = 0;
+let locked = false;
+
+document.getElementById('startBtn').addEventListener('click', startRoom);
+
+function startRoom() {
+  players = document.getElementById('playersInput').value.split(',').map((name) => name.trim()).filter(Boolean).slice(0, 6).map((name) => ({ name, score: 0 }));
+  if (!players.length) players = [{ name: 'Player 1', score: 0 }];
+  document.getElementById('setupBox').style.display = 'none';
+  document.getElementById('gameBox').style.display = 'block';
+  renderQuestion();
+}
+
+function renderPlayers() {
+  document.getElementById('playersGrid').innerHTML = players.map((player, index) => `
+    <div class="player-pill ${index === turn ? 'active' : ''}"><strong>${player.name}</strong><br>${player.score} points</div>
+  `).join('');
+}
+
+function renderQuestion() {
+  locked = false;
+  renderPlayers();
+  const question = quiz.questions[questionIndex];
+  document.getElementById('questionBox').innerHTML = `
+    <div class="eyebrow">${players[turn].name}'s turn · Question ${questionIndex + 1} of ${quiz.questions.length}</div>
+    <h2>${question.question}</h2>
+    ${question.choices.map((choice) => `<button class="btn choice-btn" type="button" data-choice="${choice}">${choice}</button>`).join('')}
+    <p id="explanation" style="display:none"></p>
+  `;
+  document.querySelectorAll('.choice-btn').forEach((button) => button.addEventListener('click', () => choose(button, question)));
+}
+
+function choose(button, question) {
+  if (locked) return;
+  locked = true;
+  const correct = button.dataset.choice === question.answer;
+  if (correct) players[turn].score += 1;
+  document.querySelectorAll('.choice-btn').forEach((choiceButton) => {
+    if (choiceButton.dataset.choice === question.answer) choiceButton.classList.add('is-correct');
+    if (choiceButton === button && !correct) choiceButton.classList.add('is-wrong');
+  });
+  const explanation = document.getElementById('explanation');
+  explanation.style.display = 'block';
+  explanation.textContent = question.explanation;
+  setTimeout(nextTurn, 1300);
+}
+
+function nextTurn() {
+  turn = (turn + 1) % players.length;
+  questionIndex += 1;
+  if (questionIndex >= quiz.questions.length) renderResult();
+  else renderQuestion();
+}
+
+function renderResult() {
+  renderPlayers();
+  document.getElementById('questionBox').style.display = 'none';
+  const sorted = [...players].sort((a,b) => b.score - a.score);
+  document.getElementById('resultBox').style.display = 'flex';
+  document.getElementById('resultBox').innerHTML = `
+    <div><h2 class="section-title">Room complete.</h2><p class="section-copy">${sorted.map((player) => `${player.name}: ${player.score}`).join(' · ')}</p></div>
+    <button class="btn primary" onclick="localSignupIntent('family_quiz_room')">Save family score</button>
+  `;
+}
+
+fetch('content/quizzes.json?v=20260518a')
+  .then((response) => response.json())
+  .then((quizzes) => {
+    quiz = quizzes.find((item) => item.slug === quizParam) || quizzes[0];
+    document.title = `${quiz.title} Family Room - Khatakshetra`;
+    document.getElementById('roomTitle').textContent = quiz.title;
+  });
+</script>
+</body>
+</html>

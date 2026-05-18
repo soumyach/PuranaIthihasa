@@ -25,7 +25,7 @@
     <div class="quiz-room">
       <div class="room-head"><span>Game Loop</span><span>Read -> Answer -> Unlock -> Share</span></div>
       <div class="question-card">
-        <h2>What makes this different from badge theater?</h2>
+        <h2>What makes a story game worth returning to?</h2>
         <div class="answer-grid">
           <div class="answer correct">Small winnable challenges</div>
           <div class="answer correct">Real story mastery</div>
@@ -45,8 +45,8 @@
 <section class="band alt" id="quizLibrary"><div class="inner">
   <div class="section-head">
     <div class="eyebrow">Playable quizzes</div>
-    <h2 class="section-title">Quizzes live from the content system.</h2>
-    <p class="section-copy">Each quiz is tied back to a story pack, so play never floats away from source-aware content.</p>
+    <h2 class="section-title">Choose a story round.</h2>
+    <p class="section-copy">Each quiz opens a small mastery path: read, answer, unlock a booklet or coloring page, then challenge family and friends.</p>
   </div>
   <div class="tag-row" id="topicFilters" style="margin-bottom:1rem"></div>
   <div class="grid" id="quizGrid"></div>
@@ -54,15 +54,15 @@
 <section class="band"><div class="inner">
   <div class="section-head">
     <div class="eyebrow">Board games</div>
-    <h2 class="section-title">Physical and digital game concepts.</h2>
-    <p class="section-copy">These are ready to turn into printable boards, card decks, and digital group rooms.</p>
+    <h2 class="section-title">Board games and family play.</h2>
+    <p class="section-copy">Printable boards, card decks, and pass-the-device rounds make the stories social instead of solitary.</p>
   </div>
   <div class="grid" id="boardGameGrid"></div>
 </div></section>
 <section class="band"><div class="inner">
   <div class="section-head">
     <div class="eyebrow">Next game modes</div>
-    <h2 class="section-title">The engagement flywheel we should build after signup validation.</h2>
+    <h2 class="section-title">Keep learning through friendly challenges.</h2>
   </div>
   <div class="grid">
     <article class="card"><h3>Family Group Rooms</h3><p>Invite cousins, grandparents, or temple friends into five-question rooms with an unlock reveal at the end.</p><button class="btn" onclick="localSignupIntent('family_group_play')">Notify Me</button></article>
@@ -79,12 +79,18 @@ const storyLinks = {
   'quiz.rama-navami-beginner': 'story-experience.html?pack=ramayana-starter',
   'quiz.shani-dev-beginner': 'story-experience.html?pack=dasharatha-meets-shani',
   'quiz.ganesha-beginner': 'story-experience.html?pack=ganesha-beginnings',
-  'quiz.dashavatara-beginner': 'story-experience.html?pack=dashavatara'
+  'quiz.dashavatara-beginner': 'story-experience.html?pack=dashavatara',
+  'quiz.shiva-beginner': 'deity.html?slug=shiva',
+  'quiz.krishna-beginner': 'deity.html?slug=krishna',
+  'quiz.devi-navratri-beginner': 'deity.html?slug=durga',
+  'quiz.lakshmi-diwali-beginner': 'deity.html?slug=lakshmi',
+  'quiz.saraswati-beginner': 'deity.html?slug=saraswati',
+  'quiz.subrahmanya-surya-beginner': 'deity.html?slug=subrahmanya'
 };
 let allQuizzes = [];
 let activeTopic = 'All';
 
-fetch('content/quizzes.json')
+fetch('content/quizzes.json?v=20260518a')
   .then((response) => response.json())
   .then((quizzes) => {
     allQuizzes = quizzes.map((quiz) => ({ ...quiz, topics: inferTopics(quiz) }));
@@ -113,6 +119,12 @@ function inferTopics(quiz) {
   if (text.includes('shani')) topics.push('Shani');
   if (text.includes('ganesha')) topics.push('Ganesha');
   if (text.includes('dashavatara') || text.includes('vishnu')) topics.push('Vishnu');
+  if (text.includes('shiva')) topics.push('Shiva');
+  if (text.includes('krishna')) topics.push('Krishna');
+  if (text.includes('devi') || text.includes('durga') || text.includes('navratri')) topics.push('Devi');
+  if (text.includes('lakshmi') || text.includes('diwali')) topics.push('Lakshmi');
+  if (text.includes('saraswati')) topics.push('Saraswati');
+  if (text.includes('subrahmanya') || text.includes('skanda') || text.includes('surya')) topics.push('Other Deities');
   topics.push(quiz.ageBand);
   return topics;
 }
@@ -133,9 +145,10 @@ function renderQuizzes() {
       <article class="card ${quiz.slug === 'rama-navami-beginner' ? 'featured' : ''}">
         <div class="eyebrow">${quiz.ageBand} years</div>
         <h3>${quiz.title}</h3>
-        <p>${quiz.questions.length} questions tied to ${quiz.relatedStories.length} story nodes. Finish the round to reveal the suggested unlock.</p>
+        <p>${quiz.questions.length} questions tied to ${quiz.relatedStories.length} story moments. Finish the round to reveal the suggested unlock.</p>
         <div class="tag-row">${quiz.topics.filter((topic) => topic !== 'All').map((topic) => `<span class="tag">${topic}</span>`).join('')}<span class="tag">Unlock-ready</span></div>
-        <a class="btn primary" href="quiz-game.html?quiz=${quiz.slug}">Play</a>
+        <a class="btn primary" href="quiz-game.html?quiz=${quiz.slug}">Solo quiz</a>
+        <a class="btn" href="quiz-room.html?quiz=${quiz.slug}">Family room</a>
         <a class="btn" href="${storyLinks[quiz.id] || 'stories.html'}">Read first</a>
       </article>
     `).join('');
