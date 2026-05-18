@@ -48,7 +48,16 @@
     <h2 class="section-title">Quizzes live from the content system.</h2>
     <p class="section-copy">Each quiz is tied back to a story pack, so play never floats away from source-aware content.</p>
   </div>
+  <div class="tag-row" id="topicFilters" style="margin-bottom:1rem"></div>
   <div class="grid" id="quizGrid"></div>
+</div></section>
+<section class="band"><div class="inner">
+  <div class="section-head">
+    <div class="eyebrow">Board games</div>
+    <h2 class="section-title">Physical and digital game concepts.</h2>
+    <p class="section-copy">These are ready to turn into printable boards, card decks, and digital group rooms.</p>
+  </div>
+  <div class="grid" id="boardGameGrid"></div>
 </div></section>
 <section class="band"><div class="inner">
   <div class="section-head">
@@ -72,21 +81,65 @@ const storyLinks = {
   'quiz.ganesha-beginner': 'story-experience.html?pack=ganesha-beginnings',
   'quiz.dashavatara-beginner': 'story-experience.html?pack=dashavatara'
 };
+let allQuizzes = [];
+let activeTopic = 'All';
 
 fetch('content/quizzes.json')
   .then((response) => response.json())
   .then((quizzes) => {
-    document.getElementById('quizGrid').innerHTML = quizzes.map((quiz) => `
+    allQuizzes = quizzes.map((quiz) => ({ ...quiz, topics: inferTopics(quiz) }));
+    renderFilters();
+    renderQuizzes();
+  });
+
+fetch('content/game-templates.json')
+  .then((response) => response.json())
+  .then((games) => {
+    document.getElementById('boardGameGrid').innerHTML = games.map((game) => `
+      <article class="card featured">
+        <div class="eyebrow">${game.type.replace('_', ' ')}</div>
+        <h3>${game.title}</h3>
+        <p>${game.coreLoop}</p>
+        <div class="tag-row"><span class="tag">${game.players}</span><span class="tag">${game.duration}</span><span class="tag">${game.relatedPack}</span></div>
+        <p><strong>Unlock:</strong> ${game.unlock}</p>
+      </article>
+    `).join('');
+  });
+
+function inferTopics(quiz) {
+  const text = `${quiz.title} ${(quiz.relatedStories || []).join(' ')}`.toLowerCase();
+  const topics = ['All'];
+  if (text.includes('rama') || text.includes('ramayana')) topics.push('Ramayana');
+  if (text.includes('shani')) topics.push('Shani');
+  if (text.includes('ganesha')) topics.push('Ganesha');
+  if (text.includes('dashavatara') || text.includes('vishnu')) topics.push('Vishnu');
+  topics.push(quiz.ageBand);
+  return topics;
+}
+
+function renderFilters() {
+  const topics = [...new Set(allQuizzes.flatMap((quiz) => quiz.topics))];
+  document.getElementById('topicFilters').innerHTML = topics.map((topic) => `<button class="btn ${topic === activeTopic ? 'primary' : ''}" type="button" data-topic="${topic}">${topic}</button>`).join('');
+  document.querySelectorAll('[data-topic]').forEach((button) => button.addEventListener('click', () => {
+    activeTopic = button.dataset.topic;
+    renderFilters();
+    renderQuizzes();
+  }));
+}
+
+function renderQuizzes() {
+  const quizzes = activeTopic === 'All' ? allQuizzes : allQuizzes.filter((quiz) => quiz.topics.includes(activeTopic));
+  document.getElementById('quizGrid').innerHTML = quizzes.map((quiz) => `
       <article class="card ${quiz.slug === 'rama-navami-beginner' ? 'featured' : ''}">
         <div class="eyebrow">${quiz.ageBand} years</div>
         <h3>${quiz.title}</h3>
         <p>${quiz.questions.length} questions tied to ${quiz.relatedStories.length} story nodes. Finish the round to reveal the suggested unlock.</p>
-        <div class="tag-row"><span class="tag">Quiz</span><span class="tag">Story-linked</span><span class="tag">Unlock-ready</span></div>
+        <div class="tag-row">${quiz.topics.filter((topic) => topic !== 'All').map((topic) => `<span class="tag">${topic}</span>`).join('')}<span class="tag">Unlock-ready</span></div>
         <a class="btn primary" href="quiz-game.html?quiz=${quiz.slug}">Play</a>
         <a class="btn" href="${storyLinks[quiz.id] || 'stories.html'}">Read first</a>
       </article>
     `).join('');
-  });
+}
 </script>
 </body>
 </html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramayana Premium Colorbook - Khatakshetra</title>
+<meta name="description" content="A premium printable Ramayana colorbook with story art, coloring briefs, family activities, and PDF-ready pages.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  .book-shell { max-width: 1180px; margin: 0 auto; }
+  .book-actions { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1rem; }
+  .spread {
+    display: grid;
+    grid-template-columns: minmax(0, 0.52fr) minmax(0, 0.48fr);
+    min-height: 680px;
+    margin: 2rem 0;
+    border: 1px solid rgba(232,185,79,.34);
+    background: #f2dfbd;
+    color: #251506;
+    box-shadow: 0 24px 60px rgba(0,0,0,.38);
+  }
+  .spread-art { position: relative; min-height: 680px; overflow: hidden; background: #1a0d04; }
+  .spread-art img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .spread-art::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent 72%, rgba(242,223,189,.78));
+    pointer-events: none;
+  }
+  .spread-copy { padding: clamp(1.5rem, 4vw, 3rem); display: flex; flex-direction: column; justify-content: center; }
+  .spread-copy h2 { font-family: 'Cinzel', serif; font-size: clamp(2rem, 4vw, 3.4rem); color: #603008; line-height: 1.08; margin: 0 0 1rem; }
+  .spread-copy p { color: #4c3217; font-size: 1.12rem; }
+  .activity-box { margin-top: 1.25rem; border: 1px solid rgba(96,48,8,.25); padding: 1rem; background: rgba(255,255,255,.26); }
+  .line-brief { border-left: 4px solid #b87819; padding-left: 1rem; color: #5d3c17; }
+  .cover-spread { grid-template-columns: 1fr; min-height: 760px; background: #10261d; color: #f5e6c8; }
+  .cover-spread .spread-art { min-height: 760px; }
+  .cover-spread .spread-art::after { background: linear-gradient(180deg, rgba(8,3,0,.08), rgba(8,3,0,.82)); }
+  .cover-copy { position: absolute; inset: auto 5% 8% 5%; color: #f5e6c8; }
+  .cover-copy h1 { max-width: 780px; color: #e8b94f; }
+  @media (max-width: 900px) {
+    .spread { grid-template-columns: 1fr; }
+    .spread-art, .cover-spread .spread-art { min-height: 420px; }
+  }
+  @media print {
+    .nav, .page-hero, footer, .book-actions { display: none; }
+    body { background: white; }
+    .band { padding: 0; }
+    .spread { box-shadow: none; margin: 0; border: 0; page-break-after: always; min-height: 100vh; }
+    .spread-art { min-height: 100vh; }
+  }
+</style>
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="stories.html">Stories</a><a href="booklets.html">Booklets</a><a href="drawing-kits.html">Drawing</a><a href="games.html">Play</a></div></nav>
+<header class="page-hero" style="--hero-image:linear-gradient(180deg,rgba(8,3,0,.18),rgba(8,3,0,.96)),url('Images/Rama%27s%20birth.png')">
+  <div class="hero-inner">
+    <div class="eyebrow">Premium Colorbook</div>
+    <h1>Ramayana: The First Door.</h1>
+    <p class="lead">A PDF-ready storybook and colorbook prototype using the existing Ramayana art as the emotional reference layer.</p>
+    <div class="book-actions"><button class="btn primary" onclick="window.print()">Print / Save as PDF</button><a class="btn" href="story-experience.html?pack=ramayana-starter">Back to Story Pack</a></div>
+  </div>
+</header>
+<main>
+<section class="band"><div class="book-shell" id="bookShell"></div></section>
+</main>
+<footer><a href="booklets.html">Back to Booklets</a></footer>
+<script src="site.js"></script>
+<script>
+const spreads = [
+  {
+    type: 'cover',
+    title: 'Ramayana: The First Door',
+    subtitle: 'Five stories to begin the journey',
+    image: "Images/Rama's birth.png",
+    copy: 'Before Rama became the king everyone remembers, he became the child, student, son, brother, and seeker every family can understand.'
+  },
+  {
+    title: 'The Joy of Ayodhya',
+    image: "Images/Rama's birth.png",
+    copy: 'Ayodhya did not lack gold, armies, or order. What it lacked was the sound Dasharatha longed for most: the footsteps of children in the palace halls. When Rama was born, the joy of the kingdom felt like a prayer taking form.',
+    activity: 'Color the lamps first. Then write one blessing for a new beginning.',
+    brief: 'Line-art brief: palace lamps, cradle symbolism, family warmth, large open color areas, no dense shading.'
+  },
+  {
+    title: 'The Sage Arrives',
+    image: "Images/Vishwamitra's request.png",
+    copy: 'When Vishwamitra came to court, he asked for Rama, not armies. A father heard danger; a teacher saw readiness. Rama stepped out of palace comfort and learned that courage is meant to protect what is sacred.',
+    activity: 'Draw a small courage token beside Rama and Lakshmana.',
+    brief: 'Line-art brief: Vishwamitra, Dasharatha, Rama, Lakshmana, palace columns, readable expressions.'
+  },
+  {
+    title: 'The Bow of Shiva',
+    image: 'Images/Sita Swayamvar.png',
+    copy: 'In Mithila, strength stood before humility. Rama approached Shiva’s bow with reverence, not pride. When the bow broke, Sita and Rama’s path became visible to two kingdoms.',
+    activity: 'Design Sita’s garland border with three repeating motifs.',
+    brief: 'Line-art brief: Rama, Sita, Shiva’s bow, garland, Mithila palace. Premium, open, not crowded.'
+  },
+  {
+    title: 'The Promise and the Forest',
+    image: 'Images/exile.png',
+    copy: 'When exile came, Rama did not turn dharma into an argument. He became the argument for dharma by walking away from power without bitterness.',
+    activity: 'Color the forest path and write one promise you want to keep.',
+    brief: 'Line-art brief: Rama, Sita, Lakshmana, forest path, gentle emotion, clear silhouettes.'
+  },
+  {
+    title: 'Hanuman Recognizes Rama',
+    image: 'Images/Meeting Hanuman.png',
+    copy: 'In the forested paths of Kishkindha, Hanuman met Rama. Recognition moved between them before strategy did. Hanuman saw not merely a prince in need, but the one his devotion had been waiting to serve.',
+    activity: 'Add a glow around the moment of recognition.',
+    brief: 'Line-art brief: Hanuman bowing, Rama and Lakshmana, forest path, devotional body language.'
+  }
+];
+
+document.getElementById('bookShell').innerHTML = spreads.map((spread) => {
+  if (spread.type === 'cover') {
+    return `<article class="spread cover-spread"><div class="spread-art"><img src="${spread.image}" alt="${spread.title}"><div class="cover-copy"><div class="eyebrow">Khatakshetra Colorbook</div><h1>${spread.title}</h1><p class="lead">${spread.subtitle}</p><p>${spread.copy}</p></div></div></article>`;
+  }
+  return `<article class="spread"><div class="spread-art"><img src="${spread.image}" alt="${spread.title}"></div><div class="spread-copy"><div class="eyebrow">Story Plate</div><h2>${spread.title}</h2><p>${spread.copy}</p><div class="activity-box"><strong>Colorbook Activity</strong><p>${spread.activity}</p></div><div class="activity-box line-brief"><strong>Final Line-Art Direction</strong><p>${spread.brief}</p></div></div></article>`;
+}).join('');
+</script>
+</body>
+</html>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Khatakshetra Story Experience</title>
-<meta name="description" content="Khatakshetra story experience with adult story, kids story, source notes, quiz, booklet mode, coloring pages, and game ideas.">
+<meta name="description" content="Khatakshetra story experience with story, kids mode, references, quiz, premium booklet mode, colorbook plates, and family games.">
 <link rel="stylesheet" href="site.css">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
 <style>
@@ -15,11 +15,17 @@
   .mode-panel.active { display: block; }
   .booklet-preview { background: #f4e7cf; color: #231407; border: 1px solid rgba(232,185,79,0.3); padding: clamp(1rem, 3vw, 2rem); }
   .booklet-preview h2, .booklet-preview h3 { color: #5b2b07; }
-  .coloring-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
-  .coloring-card img { width: 100%; background: #f8f1e4; border: 1px solid rgba(232,185,79,0.28); display: block; }
+  .colorbook-intro { display: grid; grid-template-columns: minmax(0, 0.7fr) minmax(260px, 0.3fr); gap: 1rem; margin-bottom: 1rem; }
+  .colorbook-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+  .colorbook-card { display: grid; grid-template-columns: minmax(180px, 0.45fr) minmax(0, 0.55fr); gap: 1rem; align-items: stretch; }
+  .colorbook-card img { width: 100%; height: 100%; min-height: 280px; object-fit: cover; background: #f8f1e4; border: 1px solid rgba(232,185,79,0.28); display: block; }
+  .colorbook-meta { display: flex; flex-direction: column; justify-content: space-between; gap: 1rem; }
+  .brief-box { border-left: 3px solid rgba(232,185,79,0.6); padding-left: 0.8rem; color: var(--cream-dim); }
   .quiz-option { width: 100%; margin: 0.35rem 0; text-align: left; justify-content: flex-start; }
   .quiz-option.correct { border-color: rgba(232,185,79,0.8); background: rgba(200,150,44,0.16); }
-  @media (max-width: 860px) { .coloring-grid { grid-template-columns: 1fr; } }
+  .board-spec { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.65rem; margin-top: 1rem; }
+  .board-spec span { border: 1px solid rgba(232,185,79,0.2); padding: 0.55rem; color: var(--cream-dim); }
+  @media (max-width: 980px) { .colorbook-grid, .colorbook-intro { grid-template-columns: 1fr; } .colorbook-card { grid-template-columns: 1fr; } }
   @media print {
     .nav, .mode-tabs, footer, .no-print { display: none; }
     .mode-panel { display: block; }
@@ -45,7 +51,7 @@
     <button class="mode-tab" data-mode="sources">References + Links</button>
     <button class="mode-tab" data-mode="quiz">Quiz</button>
     <button class="mode-tab" data-mode="booklet">Booklet / PDF</button>
-    <button class="mode-tab" data-mode="coloring">Coloring</button>
+    <button class="mode-tab" data-mode="coloring">Colorbook</button>
     <button class="mode-tab" data-mode="games">Games</button>
   </div>
   <section class="mode-panel active" id="mode-adult"><div class="story-detail"><article class="story-prose" id="adultStory"></article><aside class="side-stack" id="adultSide"></aside></div></section>
@@ -53,7 +59,7 @@
   <section class="mode-panel" id="mode-sources"><div class="grid two"><article class="card featured" id="sourceNotes"></article><article class="card" id="linkageNotes"></article></div></section>
   <section class="mode-panel" id="mode-quiz"><div class="quiz-room" id="quizBox"></div></section>
   <section class="mode-panel" id="mode-booklet"><div class="booklet-preview" id="bookletBox"></div></section>
-  <section class="mode-panel" id="mode-coloring"><div class="coloring-grid" id="coloringGrid"></div></section>
+  <section class="mode-panel" id="mode-coloring"><div id="coloringGrid"></div></section>
   <section class="mode-panel" id="mode-games"><div class="grid" id="gamesGrid"></div></section>
 </div></section>
 </main>
@@ -124,24 +130,19 @@ async function renderPack(pack) {
   document.getElementById('sourceNotes').innerHTML = `<h2>References</h2>${pack.sourceBrief.primarySources.map((source) => `<p><strong>${source.label}</strong><br>${cleanPublicText(source.note)}</p>`).join('')}`;
   document.getElementById('linkageNotes').innerHTML = `<h2>Linked Nodes</h2><div class="tag-row">${tags(pack.kg.nodes)}</div><h3>Edges</h3>${(pack.kg.edges || []).map((edge) => `<p>${edge.from} -> ${edge.type} -> ${edge.to}</p>`).join('')}`;
   document.getElementById('quizBox').innerHTML = renderQuiz(await loadQuiz(pack.activities.quizId));
+  const designedBookletLink = pack.slug === 'ramayana-starter' ? '<p><a class="btn primary no-print" href="colorbook-ramayana.html">Open Designed Booklet</a></p>' : '';
   document.getElementById('bookletBox').innerHTML = `
     <div class="eyebrow">Booklet Mode</div>
     <h2>${pack.booklet.coverTitle}</h2>
     <p>${pack.booklet.coverSubtitle}</p>
+    ${designedBookletLink}
     <button class="btn primary no-print" onclick="window.print()">Print / Save as PDF</button>
     ${pack.booklet.spreads.map((spread) => `<h3>${spread.title}</h3><p>${spread.summary}</p>`).join('')}
     <h3>Parent Reflection</h3><ul>${pack.booklet.parentReflection.map((item) => `<li>${item}</li>`).join('')}</ul>
     <h3>Child Activities</h3><ul>${pack.booklet.childActivity.map((item) => `<li>${item}</li>`).join('')}</ul>
   `;
-  document.getElementById('coloringGrid').innerHTML = (pack.visuals.coloringPages || []).map((page) => `
-    <article class="card coloring-card">
-      <img src="${page.file}" alt="${page.title} coloring page">
-      <h3>${page.title}</h3>
-      <p>${page.prompt}</p>
-      <a class="btn" href="${page.file}" target="_blank" rel="noopener">Open printable</a>
-    </article>
-  `).join('');
-  document.getElementById('gamesGrid').innerHTML = pack.activities.gameIdeas.map((game) => `<article class="card"><h3>${game.split(':')[0]}</h3><p>${game}</p></article>`).join('') + `<article class="card featured"><h2>Competition Prompt</h2><p>${pack.activities.competitionPrompt}</p><button class="btn primary" onclick="localSignupIntent('${pack.slug}_competition')">Join challenge</button></article>`;
+  renderColorbook(pack);
+  document.getElementById('gamesGrid').innerHTML = renderGames(pack);
 }
 
 fetch(packMap[slug] || packMap['ramayana-starter'])
@@ -150,6 +151,58 @@ fetch(packMap[slug] || packMap['ramayana-starter'])
 
 function cleanPublicText(text) {
   return text || '';
+}
+
+function renderColorbook(pack) {
+  const pages = pack.visuals.colorbookPages || [];
+  const plates = pack.visuals.artPlates || [];
+  if (!pages.length && !plates.length) {
+    document.getElementById('coloringGrid').innerHTML = '<article class="card"><h2>Colorbook pages are being prepared for this story.</h2><p>The story and quiz are ready; art plates will appear here when available.</p></article>';
+    return;
+  }
+  document.getElementById('coloringGrid').innerHTML = `
+    <div class="colorbook-intro">
+      <article class="card featured">
+        <div class="eyebrow">Art-led colorbook</div>
+        <h2>Use the story art as the reference layer.</h2>
+        <p>These plates come from the existing Ramayana artwork in the project. The final coloring pages should be designed from these references, not from placeholder diagrams.</p>
+        ${pack.slug === 'ramayana-starter' ? '<a class="btn primary" href="colorbook-ramayana.html">Open Premium Colorbook</a>' : ''}
+      </article>
+      <article class="card">
+        <h3>Production rule</h3>
+        <p>Each page needs two assets: reference art for emotion and a separate clean line-art printable with large color areas.</p>
+      </article>
+    </div>
+    <div class="colorbook-grid">
+      ${pages.map((page) => `
+        <article class="card colorbook-card">
+          <img src="${page.referenceImage || page.file}" alt="${page.title} reference art">
+          <div class="colorbook-meta">
+            <div>
+              <div class="eyebrow">Colorbook Plate</div>
+              <h3>${page.title}</h3>
+              <p>${page.activity || page.prompt || ''}</p>
+              <div class="brief-box">${page.brief || page.prompt || ''}</div>
+            </div>
+            <a class="btn" href="${page.referenceImage || page.file}" target="_blank" rel="noopener">Open reference art</a>
+          </div>
+        </article>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderGames(pack) {
+  const ideas = (pack.activities.gameIdeas || []).map((game) => `<article class="card"><h3>${game.split(':')[0]}</h3><p>${game}</p></article>`).join('');
+  const boards = (pack.activities.boardGames || []).map((game) => `
+    <article class="card featured">
+      <div class="eyebrow">Board Game</div>
+      <h3>${game.title}</h3>
+      <p>${game.loop}</p>
+      <div class="board-spec"><span>${game.players}</span><span>${game.duration}</span><span>${game.winCondition}</span></div>
+    </article>
+  `).join('');
+  return boards + ideas + `<article class="card featured"><h2>Competition Prompt</h2><p>${pack.activities.competitionPrompt}</p><button class="btn primary" onclick="localSignupIntent('${pack.slug}_competition')">Join challenge</button></article>`;
 }
 </script>
 </body>

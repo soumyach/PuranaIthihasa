@@ -1,0 +1,36 @@
+[
+  {
+    "id": "game.ramayana-story-path",
+    "title": "Ramayana Story Path",
+    "type": "board_game",
+    "relatedPack": "ramayana-starter",
+    "players": "2-6",
+    "duration": "20 minutes",
+    "materials": ["Story board", "Question cards", "Dharma choice cards", "Promise tokens", "Service tokens"],
+    "boardSpaces": ["Ayodhya", "Vishwamitra's Ashram", "Mithila", "Forest Path", "Kishkindha"],
+    "coreLoop": "Answer a story question or resolve a dharma choice to move one space. Cooperative prompts let another player move with you.",
+    "unlock": "Completing the board unlocks the colorbook cover and family challenge prompt."
+  },
+  {
+    "id": "game.dashavatara-match",
+    "title": "Dashavatara Match",
+    "type": "card_game",
+    "relatedPack": "dashavatara",
+    "players": "2-5",
+    "duration": "15 minutes",
+    "materials": ["Avatar cards", "Problem cards", "Symbol cards"],
+    "coreLoop": "Match each problem card to the avatar whose story best responds to it, then explain the symbol.",
+    "unlock": "Three correct explanations unlock the Dashavatara symbol colorbook."
+  },
+  {
+    "id": "game.shani-slow-path",
+    "title": "The Slow Path",
+    "type": "reflection_game",
+    "relatedPack": "dasharatha-meets-shani",
+    "players": "Family circle",
+    "duration": "10 minutes",
+    "materials": ["Patience cards", "Consequence cards", "Courage cards"],
+    "coreLoop": "Choose a patient action for a difficult situation and explain what it matures.",
+    "unlock": "Completing the circle unlocks a talapatra wisdom card."
+  }
+]

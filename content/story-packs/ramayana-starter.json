@@ -75,10 +75,24 @@
       "Rama lifting Shiva's bow in Mithila while Sita watches with quiet wonder",
       "Hanuman meeting Rama in a forest path, devotion and recognition"
     ],
+    "artPlates": [
+      {"title": "Rama's Birth", "file": "Images/Rama's birth.png", "chapter": "The Joy of Ayodhya", "caption": "Ayodhya receives Rama as a long-awaited blessing."},
+      {"title": "Vishwamitra's Request", "file": "Images/Vishwamitra's request.png", "chapter": "The Sage Arrives", "caption": "A father's love meets the call of dharma."},
+      {"title": "Sita Swayamvar", "file": "Images/Sita Swayamvar.png", "chapter": "The Bow of Shiva", "caption": "Strength becomes beautiful when it is humble."},
+      {"title": "Rama's Exile", "file": "Images/exile.png", "chapter": "The Promise and the Forest", "caption": "Rama walks away from power to keep a promise."},
+      {"title": "Hanuman Meets Rama", "file": "Images/Meeting Hanuman.png", "chapter": "Hanuman Recognizes Rama", "caption": "Devotion recognizes its purpose."}
+    ],
+    "colorbookPages": [
+      {"title": "The Joy of Ayodhya", "referenceImage": "Images/Rama's birth.png", "brief": "Create premium clean line art from the Rama birth scene: palace lamps, cradle symbolism, family warmth, no dense shading, large open color areas.", "activity": "Color the lamps first, then add one blessing for a new beginning."},
+      {"title": "Vishwamitra's Request", "referenceImage": "Images/Vishwamitra's request.png", "brief": "Create line art of Vishwamitra in Dasharatha's court with Rama and Lakshmana, readable faces, palace columns, respectful devotional mood.", "activity": "Circle the person showing courage and write why."},
+      {"title": "Sita Swayamvar", "referenceImage": "Images/Sita Swayamvar.png", "brief": "Create line art of Rama, Sita, Shiva's bow, garland, and Mithila palace. Keep composition premium and not crowded.", "activity": "Design Sita's garland border."},
+      {"title": "The Promise and the Forest", "referenceImage": "Images/exile.png", "brief": "Create line art of Rama, Sita, and Lakshmana leaving for the forest; emotional but gentle; include trees and path.", "activity": "Color the path and write one promise you want to keep."},
+      {"title": "Hanuman Meets Rama", "referenceImage": "Images/Meeting Hanuman.png", "brief": "Create line art of Hanuman bowing before Rama and Lakshmana on a forest path, with clear devotional body language.", "activity": "Add a glow around the moment of recognition."}
+    ],
     "coloringPages": [
-      {"title": "The Joy of Ayodhya", "file": "coloring/ramayana-ayodhya.svg", "prompt": "Simple line art: palace of Ayodhya, lamps, flowers, baby Rama symbolically in a cradle"},
-      {"title": "Sita Swayamvar", "file": "coloring/ramayana-swayamvar.svg", "prompt": "Simple line art: bow, garland, palace pillars, no crowded faces"},
-      {"title": "Hanuman Meets Rama", "file": "coloring/ramayana-hanuman.svg", "prompt": "Simple line art: Hanuman bowing before Rama and Lakshmana on a forest path"}
+      {"title": "The Joy of Ayodhya", "referenceImage": "Images/Rama's birth.png", "prompt": "Premium colorbook page brief: palace of Ayodhya, lamps, flowers, baby Rama symbolically in a cradle"},
+      {"title": "Sita Swayamvar", "referenceImage": "Images/Sita Swayamvar.png", "prompt": "Premium colorbook page brief: bow, garland, palace pillars, Rama and Sita as the emotional center"},
+      {"title": "Hanuman Meets Rama", "referenceImage": "Images/Meeting Hanuman.png", "prompt": "Premium colorbook page brief: Hanuman bowing before Rama and Lakshmana on a forest path"}
     ]
   },
   "activities": {
@@ -87,6 +101,22 @@
     "gameIdeas": [
       "Story Path: move from Ayodhya to Mithila to the forest by answering story questions.",
       "Dharma Choice Cards: choose the action that keeps a promise, helps a friend, or protects others."
+    ],
+    "boardGames": [
+      {
+        "title": "Ramayana Story Path",
+        "players": "2-6",
+        "duration": "20 minutes",
+        "loop": "Move from Ayodhya to Mithila to the forest by answering story, courage, and dharma-choice cards.",
+        "winCondition": "The group wins when everyone reaches the forest with at least one promise token and one service token."
+      },
+      {
+        "title": "Dharma Choice Cards",
+        "players": "Family circle",
+        "duration": "10 minutes",
+        "loop": "Read a situation card and choose the response that protects truth, humility, service, or responsibility.",
+        "winCondition": "Players explain their choice; the best explanation unlocks the next story plate."
+      }
     ],
     "competitionPrompt": "Draw one early Ramayana scene and write one sentence about the value it teaches."
   },
