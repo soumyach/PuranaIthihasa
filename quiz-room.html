@@ -85,7 +85,10 @@ function choose(button, question) {
   if (locked) return;
   locked = true;
   const correct = button.dataset.choice === question.answer;
-  if (correct) players[turn].score += 1;
+  if (correct) {
+    players[turn].score += 1;
+    awardKhatakshetraProgress('quiz_answer_correct', { properties: { quiz: quiz.slug, room: true, player: players[turn].name } });
+  }
   document.querySelectorAll('.choice-btn').forEach((choiceButton) => {
     if (choiceButton.dataset.choice === question.answer) choiceButton.classList.add('is-correct');
     if (choiceButton === button && !correct) choiceButton.classList.add('is-wrong');
@@ -107,9 +110,14 @@ function renderResult() {
   renderPlayers();
   document.getElementById('questionBox').style.display = 'none';
   const sorted = [...players].sort((a,b) => b.score - a.score);
+  const totalScore = players.reduce((sum, player) => sum + player.score, 0);
+  const profile = awardKhatakshetraProgress('family_room_complete', {
+    unlock: `${quiz.slug}_family_room_badge`,
+    properties: { quiz: quiz.slug, players: players.map((player) => player.name), totalScore }
+  });
   document.getElementById('resultBox').style.display = 'flex';
   document.getElementById('resultBox').innerHTML = `
-    <div><h2 class="section-title">Room complete.</h2><p class="section-copy">${sorted.map((player) => `${player.name}: ${player.score}`).join(' · ')}</p></div>
+    <div><h2 class="section-title">Room complete.</h2><p class="section-copy">${sorted.map((player) => `${player.name}: ${player.score}`).join(' · ')}. Family room saved ${profile.xp} XP at Level ${profile.level}.</p></div>
     <button class="btn primary" onclick="localSignupIntent('family_quiz_room')">Save family score</button>
   `;
 }

@@ -83,7 +83,10 @@ function chooseAnswer(button, question) {
   locked = true;
   const picked = button.dataset.choice;
   const correct = picked === question.answer;
-  if (correct) score += 1;
+  if (correct) {
+    score += 1;
+    awardKhatakshetraProgress('quiz_answer_correct', { properties: { quiz: quiz.slug, question: index + 1 } });
+  }
   document.querySelectorAll('.choice-btn').forEach((choiceButton) => {
     if (choiceButton.dataset.choice === question.answer) choiceButton.classList.add('is-correct');
     if (choiceButton === button && !correct) choiceButton.classList.add('is-wrong');
@@ -105,9 +108,13 @@ function renderResult() {
   const pct = Math.round((score / quiz.questions.length) * 100);
   const key = `khatakshetra.quiz.${quiz.slug}`;
   localStorage.setItem(key, JSON.stringify({ score, total: quiz.questions.length, pct, completedAt: new Date().toISOString() }));
+  const profile = awardKhatakshetraProgress('quiz_complete', {
+    unlock: pct >= 80 ? `${quiz.slug}_booklet_page` : `${quiz.slug}_practice_round`,
+    properties: { quiz: quiz.slug, score, total: quiz.questions.length, pct }
+  });
   document.getElementById('resultBox').style.display = 'flex';
   document.getElementById('resultTitle').textContent = pct >= 80 ? 'Unlock earned.' : 'Round complete.';
-  document.getElementById('resultCopy').innerHTML = `You scored ${score}/${quiz.questions.length}. Next unlock: coloring page, booklet spread, or family challenge. <a href="${storyLinks[quiz.slug] || 'stories.html'}">Open the story pack</a>.`;
+  document.getElementById('resultCopy').innerHTML = `You scored ${score}/${quiz.questions.length}. You are now Level ${profile.level} with ${profile.xp} XP. Next unlock: coloring page, booklet spread, or family challenge. <a href="${storyLinks[quiz.slug] || 'stories.html'}">Open the story pack</a>.`;
 }
 
 fetch('content/quizzes.json?v=20260518a')

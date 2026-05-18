@@ -26,6 +26,10 @@
   </div>
 </div></section>
 <section class="band alt"><div class="inner">
+  <div class="section-head"><div class="eyebrow">Coloring book shelf</div><h2 class="section-title">Coloring collections by story and deity.</h2><p class="section-copy">Ramayana pages are paintable now. Ganesha, Shani, Dashavatara, and deity-symbol sets give families a clear creative path to unlock next.</p></div>
+  <div class="grid" id="coloringBookGrid"></div>
+</div></section>
+<section class="band alt"><div class="inner">
   <div class="section-head"><div class="eyebrow">Printable pages</div><h2 class="section-title">Line-art pages available now.</h2><p class="section-copy">Open a page, print it, color it, and submit it later for family challenges and festival competitions.</p></div>
   <div class="grid" id="drawingGrid"></div>
 </div></section>
@@ -44,9 +48,9 @@ Promise.all(packFiles.map((file) => fetch(file).then((response) => response.json
   .then((packs) => {
     const pages = packs.flatMap((pack) => {
       const paintablePages = pack.visuals.paintablePages || [];
+      const coloringPages = pack.visuals.coloringPages || [];
       const colorbookPages = pack.visuals.drawingBriefs || pack.visuals.colorbookPages || [];
-      const fallbackPages = pack.visuals.coloringPages || [];
-      return (paintablePages.length ? paintablePages : (colorbookPages.length ? colorbookPages : fallbackPages)).map((page) => ({ ...page, packTitle: pack.title, packSlug: pack.slug }));
+      return (paintablePages.length ? paintablePages : (coloringPages.length ? coloringPages : colorbookPages)).map((page) => ({ ...page, packTitle: pack.title, packSlug: pack.slug }));
     });
     document.getElementById('drawingGrid').innerHTML = pages.map((page) => `
       <article class="card">
@@ -54,8 +58,20 @@ Promise.all(packFiles.map((file) => fetch(file).then((response) => response.json
         <div class="eyebrow">${page.packTitle}</div>
         <h3>${page.title}</h3>
         <p>${page.activity || page.prompt || page.brief}</p>
-        ${(page.file || '').startsWith('ChildrenBook/') ? `<a class="btn primary" href="paint.html?image=${encodeURIComponent(page.file)}&title=${encodeURIComponent(page.title)}">Paint digitally</a>` : ''}
+        ${page.file ? `<a class="btn primary" href="paint.html?image=${encodeURIComponent(page.file)}&title=${encodeURIComponent(page.title)}">Paint digitally</a>` : ''}
         <a class="btn" href="${page.file || page.referenceImage}" target="_blank" rel="noopener">Open page</a>
+      </article>
+    `).join('');
+  });
+
+fetch('content/coloring-books.json?v=20260518b')
+  .then((response) => response.json())
+  .then((books) => {
+    document.getElementById('coloringBookGrid').innerHTML = books.map((book) => `
+      <article class="card ${book.status === 'available' ? 'featured' : ''}">
+        <h3>${book.title}</h3>
+        <p>${book.pages.slice(0, 8).join(', ')}${book.pages.length > 8 ? ', and more' : ''}.</p>
+        ${book.experienceUrl ? `<a class="btn primary" href="${book.experienceUrl}">Open coloring book</a>` : `<button class="btn" onclick="localSignupIntent('${book.id}')">Get this set</button>`}
       </article>
     `).join('');
   });

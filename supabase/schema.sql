@@ -148,6 +148,58 @@ create table if not exists public.quiz_attempts (
   completed_at timestamptz default now()
 );
 
+create table if not exists public.user_progress (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid references public.app_users(id) on delete cascade,
+  anonymous_id text,
+  xp integer not null default 0,
+  level integer not null default 1,
+  tracks jsonb not null default '{"story_mastery":0,"creative_practice":0,"temple_seva":0,"community":0}'::jsonb,
+  unlocks jsonb not null default '[]'::jsonb,
+  last_activity_at timestamptz default now(),
+  created_at timestamptz default now(),
+  updated_at timestamptz default now(),
+  constraint user_progress_identity check (user_id is not null or anonymous_id is not null)
+);
+
+create table if not exists public.points_ledger (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid references public.app_users(id) on delete set null,
+  anonymous_id text,
+  event_name text not null,
+  xp_delta integer not null,
+  track text not null,
+  unlock_key text,
+  metadata jsonb default '{}'::jsonb,
+  created_at timestamptz default now()
+);
+
+create table if not exists public.quiz_rooms (
+  id uuid primary key default gen_random_uuid(),
+  room_code text unique not null,
+  quiz_id text references public.quizzes(id) on delete set null,
+  host_user_id uuid references public.app_users(id) on delete set null,
+  host_anonymous_id text,
+  players jsonb default '[]'::jsonb,
+  status text not null default 'open',
+  created_at timestamptz default now(),
+  started_at timestamptz,
+  completed_at timestamptz
+);
+
+create table if not exists public.quiz_room_results (
+  id uuid primary key default gen_random_uuid(),
+  room_id uuid references public.quiz_rooms(id) on delete cascade,
+  user_id uuid references public.app_users(id) on delete set null,
+  anonymous_id text,
+  player_name text,
+  score integer not null,
+  total integer not null,
+  xp_awarded integer not null default 0,
+  answers jsonb default '[]'::jsonb,
+  completed_at timestamptz default now()
+);
+
 create table if not exists public.unlocks (
   id uuid primary key default gen_random_uuid(),
   user_id uuid references public.app_users(id) on delete cascade,
@@ -281,6 +333,12 @@ create table if not exists public.user_tips (
 
 create index if not exists idx_user_events_user_id on public.user_events(user_id);
 create index if not exists idx_user_events_event_name on public.user_events(event_name);
+create index if not exists idx_user_progress_user_id on public.user_progress(user_id);
+create index if not exists idx_user_progress_anonymous_id on public.user_progress(anonymous_id);
+create index if not exists idx_points_ledger_user_id on public.points_ledger(user_id);
+create index if not exists idx_points_ledger_anonymous_id on public.points_ledger(anonymous_id);
+create index if not exists idx_quiz_rooms_quiz_id on public.quiz_rooms(quiz_id);
+create index if not exists idx_quiz_room_results_room on public.quiz_room_results(room_id);
 create index if not exists idx_kg_edges_from on public.kg_edges(from_node_id);
 create index if not exists idx_kg_edges_to on public.kg_edges(to_node_id);
 create index if not exists idx_stories_slug on public.stories(slug);

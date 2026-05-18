@@ -61,6 +61,7 @@ const canvas = document.getElementById('paintLayer');
 const ctx = canvas.getContext('2d');
 document.getElementById('title').textContent = title;
 img.src = image;
+awardKhatakshetraProgress('coloring_open', { properties: { image, title } });
 
 document.getElementById('swatches').innerHTML = colors.map((color, index) => `<button class="swatch ${index === 0 ? 'active' : ''}" style="background:${color}" data-color="${color}" aria-label="${color}"></button>`).join('');
 document.querySelectorAll('.swatch').forEach((button) => button.addEventListener('click', () => {
@@ -136,6 +137,7 @@ document.getElementById('downloadBtn').addEventListener('click', () => {
   link.download = `${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-colored.png`;
   link.href = output.toDataURL('image/png');
   link.click();
+  awardKhatakshetraProgress('coloring_download', { unlock: 'creative_coloring_download', properties: { image, title } });
 });
 </script>
 </body>

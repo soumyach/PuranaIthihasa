@@ -1,0 +1,56 @@
+{
+  "accountModel": {
+    "anonymousFirst": true,
+    "productionIdentity": "Supabase Auth user mapped to app_users.email",
+    "mergeRule": "When a visitor signs up or logs in, merge local anonymous progress into their account by anonymous_id and email."
+  },
+  "tracks": [
+    {
+      "id": "story_mastery",
+      "name": "Story Mastery",
+      "earnsFrom": ["read story", "correct quiz answer", "complete solo quiz", "print booklet"],
+      "unlocks": ["story badges", "PDF spreads", "advanced quizzes", "recitation paths"]
+    },
+    {
+      "id": "creative_practice",
+      "name": "Creative Practice",
+      "earnsFrom": ["open coloring page", "download artwork", "submit coloring challenge", "complete drawing kit"],
+      "unlocks": ["coloring books", "festival challenge entries", "gallery eligibility"]
+    },
+    {
+      "id": "temple_seva",
+      "name": "Temple Seva",
+      "earnsFrom": ["approved temple tip", "fresh timing update", "food/local tip", "accessibility note"],
+      "unlocks": ["contributor status", "city guide credits", "temple challenge rooms"]
+    },
+    {
+      "id": "community",
+      "name": "Community",
+      "earnsFrom": ["family quiz room", "referral", "helpful comment", "event participation"],
+      "unlocks": ["family leagues", "local leaderboards", "event eligibility"]
+    }
+  ],
+  "levels": [
+    {"level": 1, "name": "Listener", "minXp": 0, "unlock": "Starter story and solo quiz"},
+    {"level": 2, "name": "Seeker", "minXp": 80, "unlock": "First coloring page and progress ring"},
+    {"level": 3, "name": "Story Keeper", "minXp": 220, "unlock": "PDF booklet spread"},
+    {"level": 4, "name": "Family Champion", "minXp": 420, "unlock": "Family-room challenge and share card"},
+    {"level": 5, "name": "Temple Friend", "minXp": 750, "unlock": "Festival pack preview and temple guide contribution"},
+    {"level": 6, "name": "Khatakshetra Contributor", "minXp": 1200, "unlock": "Leaderboard eligibility, event invites, and early kit access"}
+  ],
+  "events": {
+    "quiz_answer_correct": {"xp": 10, "track": "story_mastery"},
+    "quiz_complete": {"xp": 50, "track": "story_mastery"},
+    "family_room_complete": {"xp": 75, "track": "community"},
+    "coloring_open": {"xp": 15, "track": "creative_practice"},
+    "coloring_download": {"xp": 40, "track": "creative_practice"},
+    "booklet_print": {"xp": 60, "track": "story_mastery"},
+    "temple_tip_saved": {"xp": 80, "track": "temple_seva"},
+    "referral_saved": {"xp": 120, "track": "community"}
+  },
+  "competitionRules": [
+    "Use family, city, temple group, school, and age-band rooms before global leaderboards.",
+    "Reward completion and quality, not empty activity.",
+    "Unlock concrete artifacts: PDF pages, coloring sheets, talapatra cards, kit previews, and event entry."
+  ]
+}

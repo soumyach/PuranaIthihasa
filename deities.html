@@ -13,30 +13,30 @@
 <header class="page-hero">
   <div class="hero-inner">
     <div class="eyebrow">Gods, titles, places, stories</div>
-    <h1>The deity map should make the whole tradition easier to enter.</h1>
-    <p class="lead">Each hub needs a quick summary, key stories, titles, symbols, festivals, temples, quizzes, drawing kits, and links to related gods and texts.</p>
+    <h1>The deity map makes the tradition easier to enter.</h1>
+    <p class="lead">Each hub brings together quick summaries, key stories, titles, symbols, festivals, temples, quizzes, drawing kits, and related gods and texts.</p>
   </div>
 </header>
 <main>
 <section class="band"><div class="inner">
   <div class="grid">
-    <article class="card featured"><h2>Prime launch hubs</h2><p>Vishnu, Shiva, Brahma, Parvati, Lakshmi, Saraswati, Ganesha, Subrahmanya, Hanuman, Shani, Surya, Indra, Varuna, Kubera.</p><div class="tag-row"><span class="tag">Stories</span><span class="tag">Titles</span><span class="tag">Temples</span><span class="tag">Quizzes</span></div></article>
+    <article class="card featured"><h2>Core hubs</h2><p>Vishnu, Shiva, Brahma, Parvati, Lakshmi, Saraswati, Ganesha, Subrahmanya, Hanuman, Shani, Surya, Indra, Varuna, Kubera, Durga, and Kali.</p><div class="tag-row"><span class="tag">Stories</span><span class="tag">Titles</span><span class="tag">Temples</span><span class="tag">Quizzes</span></div></article>
     <article class="card"><h3>Collections</h3><p>Dashavatara, Dasa Mahavidya, Nava Graha, Ashta Lakshmi, Shiva forms, Devi forms, and Ramayana character clusters.</p></article>
     <article class="card"><h3>Related paths</h3><p>Every deity page connects stories, festivals, temples, source texts, related deities, and activities.</p></article>
   </div>
 </div></section>
 <section class="band alt"><div class="inner">
   <div class="section-head">
-    <div class="eyebrow">Priority deity hubs</div>
-    <h2 class="section-title">Start with the major gods and story families.</h2>
-    <p class="section-copy">Each hub gathers names, stories, festivals, temples, quizzes, drawing pages, and related figures in one place.</p>
+    <div class="eyebrow">Core deity hubs</div>
+    <h2 class="section-title">Sixteen hubs with story, quiz, coloring, booklet, and relationships.</h2>
+    <p class="section-copy">Each hub gathers a first story, family quiz, drawing direction, booklet path, and related figures in one place.</p>
   </div>
   <div class="grid" id="deityGrid"></div>
 </div></section>
 <section class="band"><div class="inner">
   <div class="section-head">
     <div class="eyebrow">Gods, sages, places, and texts</div>
-    <h2 class="section-title">The god list we discussed is in the site map.</h2>
+    <h2 class="section-title">Explore the wider web of deities, sages, places, and texts.</h2>
     <p class="section-copy">Open any card to explore the summary and its connected stories, places, texts, and activities.</p>
   </div>
   <div class="grid" id="entityGrid"></div>
@@ -52,19 +52,25 @@
 <footer><a href="/">Home</a></footer>
 <script src="site.js"></script>
 <script>
-fetch('content/launch-library.json')
-  .then((response) => response.json())
-  .then((library) => {
+Promise.all([
+  fetch('content/launch-library.json').then((response) => response.json()),
+  fetch('content/deity-experience-packs.json?v=20260518b').then((response) => response.json())
+])
+  .then(([library, packs]) => {
+    const titleCase = (slug) => slug.split('-').map((word) => word ? word[0].toUpperCase() + word.slice(1) : word).join(' ');
     const deityGrid = document.getElementById('deityGrid');
-    deityGrid.innerHTML = library.priorityDeities.map((deity) => `
-      <article class="card">
-        <h3>${deity.name}</h3>
-        <p><strong>Experience:</strong> ${deity.hubStatus === 'featured-path' ? 'Featured path' : 'Story hub'}</p>
-        <p>${deity.coreStories.slice(0, 3).join(', ')}</p>
+    deityGrid.innerHTML = packs.map((pack) => `
+      <article class="card ${pack.slug === 'ganesha' || pack.slug === 'shani-dev' ? 'featured' : ''}">
+        <h3>${titleCase(pack.slug).replace('Dev', 'Dev')}</h3>
+        <p>${pack.story}</p>
+        <p><strong>Booklet:</strong> ${pack.booklet}</p>
         <div class="tag-row">
-          ${deity.activities.slice(0, 3).map((activity) => `<span class="tag">${activity}</span>`).join('')}
+          <span class="tag">${pack.quiz.replace('-beginner', '')}</span>
+          <span class="tag">${pack.coloringBook.replace('coloring.', '')}</span>
+          ${pack.relationships.slice(0, 2).map((name) => `<span class="tag">${name}</span>`).join('')}
         </div>
-        <a class="btn" href="deity.html?slug=${deity.slug}">Open hub</a>
+        <a class="btn primary" href="deity.html?slug=${pack.slug}">Open hub</a>
+        <a class="btn" href="quiz-game.html?quiz=${pack.quiz}">Quiz</a>
       </article>
     `).join('');
     const collectionGrid = document.getElementById('collectionGrid');

@@ -38,9 +38,17 @@
     </article>
   </div>
 </div></section>
+<section class="band"><div class="inner">
+  <div class="section-head">
+    <div class="eyebrow">Experience Pack</div>
+    <h2 class="section-title" id="experienceTitle">Story, quiz, coloring, and booklet.</h2>
+    <p class="section-copy" id="experienceCopy"></p>
+  </div>
+  <div class="grid" id="experienceGrid"></div>
+</div></section>
 <section class="band alt"><div class="inner">
   <div class="section-head">
-    <div class="eyebrow">Related paths</div>
+    <div class="eyebrow">Related Paths</div>
     <h2 class="section-title">People, places, stories, and texts connected to this hub.</h2>
   </div>
   <div class="grid" id="relatedGrid"></div>
@@ -60,10 +68,15 @@ const storyPackLinks = {
   dashavatara: 'story-experience.html?pack=dashavatara'
 };
 
-fetch('content/entities.json?v=20260518a')
-  .then((response) => response.json())
-  .then((entities) => {
+Promise.all([
+  fetch('content/entities.json?v=20260518b').then((response) => response.json()),
+  fetch('content/deity-experience-packs.json?v=20260518b').then((response) => response.json()),
+  fetch('content/quizzes.json?v=20260518a').then((response) => response.json())
+])
+  .then(([entities, packs, quizzes]) => {
     const entity = entities.find((item) => item.slug === slug) || entities[0];
+    const pack = packs.find((item) => item.slug === entity.slug);
+    const quiz = pack ? quizzes.find((item) => item.slug === pack.quiz || item.id === `quiz.${pack.quiz}`) : null;
     const byId = Object.fromEntries(entities.map((item) => [item.id, item]));
     document.title = `${entity.name} - Khatakshetra`;
     document.getElementById('typeLabel').textContent = entity.type;
@@ -72,12 +85,56 @@ fetch('content/entities.json?v=20260518a')
     document.getElementById('quickSummary').textContent = entity.summary;
     document.getElementById('aliases').innerHTML = (entity.alsoKnownAs || []).map((name) => `<span class="tag">${name}</span>`).join('');
     document.getElementById('storyLink').href = storyPackLinks[entity.slug] || 'stories.html';
-    document.getElementById('relatedGrid').innerHTML = (entity.related || []).map((id) => {
-      const related = byId[id];
-      if (!related) return `<article class="card"><h3>${id}</h3><p>Story or source node connected to ${entity.name}.</p></article>`;
-      return `<article class="card"><div class="eyebrow">${related.type}</div><h3>${related.name}</h3><p>${related.summary}</p><a class="btn" href="deity.html?slug=${related.slug}">Open hub</a></article>`;
-    }).join('');
+    document.getElementById('storyPath').textContent = pack ? `${pack.booklet} brings together the story, quiz, coloring brief, and family reflection.` : 'Open related stories, quizzes, booklets, and drawing pages connected to this hub.';
+    renderExperience(entity, pack, quiz);
+    renderRelated(entity, byId);
   });
+
+function renderExperience(entity, pack, quiz) {
+  document.getElementById('experienceTitle').textContent = pack ? `${entity.name}: story, quiz, coloring, and booklet.` : `${entity.name}: related experiences.`;
+  document.getElementById('experienceCopy').textContent = pack ? `Connected with ${pack.relationships.join(', ')}.` : 'Open the story library and play section to continue.';
+  document.getElementById('experienceGrid').innerHTML = pack ? `
+    <article class="card featured">
+      <div class="eyebrow">Story</div>
+      <h3>${pack.booklet}</h3>
+      <p>${pack.story}</p>
+      <a class="btn primary" href="${storyPackLinks[entity.slug] || 'stories.html'}">Read the story</a>
+    </article>
+    <article class="card">
+      <div class="eyebrow">Quiz</div>
+      <h3>${quiz ? quiz.title : 'Story quiz'}</h3>
+      <p>${quiz ? `${quiz.questions.length} questions for solo play or a family room.` : 'Open the quiz library for a related story round.'}</p>
+      <a class="btn primary" href="quiz-game.html?quiz=${pack.quiz}">Solo quiz</a>
+      <a class="btn" href="quiz-room.html?quiz=${pack.quiz}">Family room</a>
+    </article>
+    <article class="card">
+      <div class="eyebrow">Creative</div>
+      <h3>${prettyName(pack.coloringBook)}</h3>
+      <p>${pack.imageSet.join(', ')}.</p>
+      <a class="btn" href="drawing-kits.html">Open drawing kits</a>
+    </article>
+    <article class="card">
+      <div class="eyebrow">Relationships</div>
+      <h3>People, places, texts, and ideas</h3>
+      <div class="tag-row">${pack.relationships.map((name) => `<span class="tag">${name}</span>`).join('')}</div>
+    </article>
+  ` : `
+    <article class="card featured"><h3>Open related stories</h3><p>${entity.summary}</p><a class="btn primary" href="stories.html">Open stories</a></article>
+    <article class="card"><h3>Play a story quiz</h3><p>Choose a related topic and unlock booklets or coloring pages.</p><a class="btn" href="games.html">Open play</a></article>
+  `;
+}
+
+function renderRelated(entity, byId) {
+  document.getElementById('relatedGrid').innerHTML = (entity.related || []).map((id) => {
+    const related = byId[id];
+    if (!related) return `<article class="card"><h3>${prettyName(id)}</h3><p>Connected tradition, story, place, or text related to ${entity.name}.</p></article>`;
+    return `<article class="card"><div class="eyebrow">${related.type}</div><h3>${related.name}</h3><p>${related.summary}</p><a class="btn" href="deity.html?slug=${related.slug}">Open hub</a></article>`;
+  }).join('');
+}
+
+function prettyName(value) {
+  return String(value).split('.').pop().split('-').map((word) => word ? word[0].toUpperCase() + word.slice(1) : word).join(' ');
+}
 </script>
 </body>
 </html>

@@ -99,7 +99,7 @@ async function loadQuiz(quizId) {
 }
 
 function renderQuiz(quiz) {
-  if (!quiz) return '<p>Quiz is queued for this story pack.</p>';
+  if (!quiz) return '<p>Open the quiz library to choose a related round.</p>';
   return `
     <div class="room-head"><span>${quiz.title}</span><span>${quiz.questions.length} questions</span></div>
     <p><a class="btn primary" href="quiz-game.html?quiz=${quiz.slug}">Solo quiz</a> <a class="btn" href="quiz-room.html?quiz=${quiz.slug}">Family room</a></p>
@@ -144,7 +144,7 @@ async function renderPack(pack) {
     <h3>Child Activities</h3><ul>${pack.booklet.childActivity.map((item) => `<li>${item}</li>`).join('')}</ul>
   `;
   renderColoringBook(pack);
-  document.getElementById('gamesGrid').innerHTML = renderGames(pack);
+  document.getElementById('gamesGrid').innerHTML = renderCollectionCards(pack) + renderGames(pack);
 }
 
 fetch(packMap[slug] || packMap['ramayana-starter'])
@@ -180,9 +180,10 @@ function prettyRelation(type) {
 
 function renderColoringBook(pack) {
   const paintable = pack.visuals.paintablePages || [];
+  const generatedColoring = pack.visuals.coloringPages || [];
   const briefs = pack.visuals.drawingBriefs || pack.visuals.colorbookPages || [];
-  if (!paintable.length && !briefs.length) {
-    document.getElementById('coloringGrid').innerHTML = '<article class="card"><h2>Coloring pages</h2><p>Open the story and quiz now. Coloring pages for this path will be added to the drawing library.</p></article>';
+  if (!paintable.length && !generatedColoring.length && !briefs.length) {
+    document.getElementById('coloringGrid').innerHTML = '<article class="card"><h2>Coloring pages</h2><p>Open the drawing library for related coloring and art activities.</p><a class="btn primary" href="drawing-kits.html">Open drawing kits</a></article>';
     return;
   }
   const paintableMarkup = paintable.length ? `
@@ -210,6 +211,19 @@ function renderColoringBook(pack) {
       `).join('')}
     </div>
   ` : '';
+  const generatedMarkup = generatedColoring.length ? `
+    <div class="paintbook-grid">
+      ${generatedColoring.map((page) => `
+        <article class="card paintbook-card">
+          <img src="${page.file}" alt="${page.title} coloring page">
+          <h3>${page.title}</h3>
+          <p>${page.prompt || ''}</p>
+          <a class="btn primary" href="paint.html?image=${encodeURIComponent(page.file)}&title=${encodeURIComponent(page.title)}">Paint digitally</a>
+          <a class="btn" href="${page.file}" target="_blank" rel="noopener">Open page</a>
+        </article>
+      `).join('')}
+    </div>
+  ` : '';
   const briefMarkup = briefs.length ? `
     <div class="artbook-grid">
       ${briefs.map((page) => `
@@ -230,6 +244,7 @@ function renderColoringBook(pack) {
   ` : '';
   document.getElementById('coloringGrid').innerHTML = `
     ${paintableMarkup}
+    ${generatedMarkup}
     ${briefMarkup}
   `;
 }
@@ -245,6 +260,25 @@ function renderGames(pack) {
     </article>
   `).join('');
   return boards + ideas + `<article class="card featured"><h2>Competition Prompt</h2><p>${pack.activities.competitionPrompt}</p><button class="btn primary" onclick="localSignupIntent('${pack.slug}_competition')">Join challenge</button></article>`;
+}
+
+function renderCollectionCards(pack) {
+  if (!pack.collectionCards || !pack.collectionCards.length) return '';
+  return `
+    <article class="card featured" style="grid-column:1/-1">
+      <div class="eyebrow">Collection Cards</div>
+      <h2>Ten avatar cards</h2>
+      <p>Use these as a memory game, quiz ladder, booklet spread, or printable card deck.</p>
+    </article>
+    ${pack.collectionCards.map((card) => `
+      <article class="card">
+        <div class="eyebrow">${card.symbol}</div>
+        <h3>${card.name}</h3>
+        <p>${card.meaning}</p>
+        <p><strong>Lesson:</strong> ${card.lesson}</p>
+      </article>
+    `).join('')}
+  `;
 }
 </script>
 </body>
