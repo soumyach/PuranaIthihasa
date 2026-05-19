@@ -672,3 +672,181 @@ Build `scripts/content-engine/` next with:
 
 The engine should write to the structured content files, and the pages should render from those files.
 
+## Full Structured Content Register
+
+This section is the canonical as-is inventory for the current repo. It should be updated whenever a story, deity/god hub, festival, quiz, temple guide, coloring book, booklet, or content-engine output changes.
+
+### Story Pack Register
+
+| Pack | File | Public entry | Current content | Current gaps |
+|---|---|---|---|---|
+| Ramayana Starter | `content/story-packs/ramayana-starter.json` | `story-experience.html?pack=ramayana-starter` | Adult story, kids versions, references, related people/places/texts, quiz mapping, booklet structure, art plates, 13 real paintable pages | Needs guided chapter journey, final PDF export, stronger unlock flow |
+| Shani Dev / Dasharatha Meets Shani | `content/story-packs/dasharatha-meets-shani.json` | `story-experience.html?pack=dasharatha-meets-shani`, `story-shani-dev.html` | Strong adult story, kids versions, voiceover script, dialogue script, descriptive script, quiz mapping, booklet, talapatra cards, 3 coloring SVGs | Needs final source verification, premium visual set, final PDF export |
+| Ganesha Beginnings | `content/story-packs/ganesha-beginnings.json` | `story-experience.html?pack=ganesha-beginnings` | Adult story, kids versions, quiz mapping, Ganesh Chaturthi kit link, booklet structure, talapatra cards, 3 coloring SVGs/prompts | Needs final generated coloring book, final story art, designed PDF |
+| Dashavatara | `content/story-packs/dashavatara.json` | `story-experience.html?pack=dashavatara` | Adult story, kids versions, quiz mapping, booklet structure, talapatra cards, 10 avatar cards, 3 coloring SVGs/prompts | Needs all 10 avatar story pages, final coloring book, final PDF |
+
+### God / Deity Hub Register
+
+Location: `content/deity-experience-packs.json`
+
+Page pattern: `deity.html?slug={slug}`
+
+| Deity / Hub | Slug | Story status | Quiz | Coloring / drawing | Booklet path | Relationships captured | Current visual status |
+|---|---|---|---|---|---|---|---|
+| Vishnu | `vishnu` | Summary-level | `dashavatara-beginner` | Dashavatara coloring | Dashavatara: Ten Ways Vishnu Restores Balance | Lakshmi, Rama, Krishna, Dashavatara | Prompted only; needs final Vishnu hero and symbol art |
+| Shiva | `shiva` | Summary-level | `shiva-beginner` | Core deity symbols | Shiva: Transformation and Grace | Parvati, Ganesha, Subrahmanya, Kailasa | Prompted only; needs final Shiva art |
+| Brahma | `brahma` | Summary-level | `saraswati-beginner` | Core deity symbols | Brahma and the Four Directions | Saraswati, Vedas, Creation cycles | Prompted only; needs final Brahma art |
+| Parvati | `parvati` | Summary-level | `devi-navratri-beginner` | Ganesha beginnings | Parvati: Strength with Tenderness | Shiva, Ganesha, Subrahmanya, Durga | Prompted only; needs final Parvati art |
+| Lakshmi | `lakshmi` | Summary-level | `lakshmi-diwali-beginner` | Core deity symbols | Lakshmi: The Light of Abundance | Vishnu, Diwali, Samudra Manthana | Prompted only; needs final Lakshmi art |
+| Saraswati | `saraswati` | Summary-level | `saraswati-beginner` | Core deity symbols | Saraswati: The Blessing of Learning | Brahma, Vasant Panchami, Veena | Prompted only; needs final Saraswati art |
+| Ganesha | `ganesha` | Full starter pack exists | `ganesha-beginner` | Ganesha coloring SVGs/prompts | Ganesha: Before Every Beginning | Parvati, Shiva, Subrahmanya, Mouse vahana | Kit image exists; final coloring/story art still needed |
+| Subrahmanya | `subrahmanya` | Summary-level | `subrahmanya-surya-beginner` | Core deity symbols | Subrahmanya: The Vel of Courage | Shiva, Parvati, Ganesha, Skanda Sashti | Prompted only; needs final Subrahmanya art |
+| Hanuman | `hanuman` | Connected to Ramayana pack | `rama-navami-beginner` | Ramayana coloring | Hanuman: Strength That Serves | Rama, Sita, Sundara Kanda, Kishkindha | Some Ramayana art exists; needs Hanuman-specific set |
+| Shani Dev | `shani-dev` | Full starter pack exists | `shani-dev-beginner` | Shani coloring SVGs/prompts | Shani Dev: The Necessary Teacher | Surya, Chhaya, Dasharatha, Saturday worship | Character image exists; final booklet/coloring art needed |
+| Surya Dev | `surya-dev` | Summary-level | `subrahmanya-surya-beginner` | Core deity symbols | Surya: The Chariot of Light | Shani, Chhaya, Sanjna, Ratha Saptami | Prompted only; needs final Surya art |
+| Indra | `indra` | Summary-level | `devi-navratri-beginner` | Core deity symbols | Indra: Power and Responsibility | Devas, Govardhana, Varuna, Vritra | Prompted only; needs final Indra art |
+| Varuna | `varuna` | Summary-level | `subrahmanya-surya-beginner` | Core deity symbols | Varuna: Waters and Cosmic Order | Ocean, Rama sea prayer, Indra | Prompted only; needs final Varuna art |
+| Kubera | `kubera` | Summary-level | `lakshmi-diwali-beginner` | Core deity symbols | Kubera: Wealth with Responsibility | Lakshmi, Dhanteras, Alakapuri, Ravana | Prompted only; needs final Kubera art |
+| Durga | `durga` | Summary-level | `devi-navratri-beginner` | Core deity symbols | Durga: Courage Across Nine Nights | Parvati, Navratri, Mahishasura, Devi | Prompted only; needs final Durga art |
+| Kali | `kali` | Summary-level | `devi-navratri-beginner` | Core deity symbols | Kali: Fierce Compassion | Parvati, Dasa Mahavidya, Time, Transformation | Prompted only; needs final Kali art |
+
+Important: the 16 deity hubs are captured structurally, but most are not yet deep content pages. The next step is to generate one full story pack per deity or deity collection.
+
+### Temple Guide Register
+
+Location: `content/temple-guides.json`
+
+Page: `temples.html`
+
+| Temple | City / State | Primary deity | Story captured | How-to-reach captured | What-not-to-miss captured | Food nearby captured | Current gaps |
+|---|---|---|---|---|---|---|---|
+| Tirumala Venkateswara Temple | Tirupati, Andhra Pradesh | Venkateswara / Vishnu | Yes | Yes | Suprabhatam tradition, Laddu prasadam, Hill route atmosphere | Temple prasadam, Tirupati vegetarian meals | Needs timings, official links, darshan rules, map, source verification |
+| Kashi Vishwanath Temple | Varanasi, Uttar Pradesh | Shiva | Yes | Yes | Ganga darshan, Evening aarti nearby, Old city walk | Kachori sabzi, Banarasi sweets, Lassi | Needs timings, entry gates, official links, map, source verification |
+| Jagannath Temple | Puri, Odisha | Jagannath / Krishna | Yes | Yes | Mahaprasad, Rath Yatra context, Puri beach sunrise | Mahaprasad at Ananda Bazaar, Odia vegetarian food | Needs timings, access rules, official links, map, source verification |
+| Meenakshi Amman Temple | Madurai, Tamil Nadu | Meenakshi / Parvati | Yes | Yes | Gopuram details, Thousand-pillar hall, Evening rituals | Madurai idli, Jigarthanda, Temple-street vegetarian meals | Needs timings, official links, ritual schedule, map, source verification |
+| Ramanathaswamy Temple | Rameswaram, Tamil Nadu | Shiva | Yes | Yes | Temple corridors, Sacred wells, Dhanushkodi trip | South Indian vegetarian meals, Local tiffin | Needs timings, ritual process, official links, map, source verification |
+| Somnath Temple | Somnath, Gujarat | Shiva | Yes | Yes | Sea-facing temple view, Evening light and sound show, Prabhas Patan context | Gujarati thali, Temple-town vegetarian meals | Needs timings, official links, map, source verification |
+| Mahakaleshwar Temple | Ujjain, Madhya Pradesh | Shiva | Yes | Yes | Bhasma aarti booking rules, Mahakal corridor, Shipra river | Poha-jalebi, Ujjain snacks, Vegetarian thali | Needs current booking process, official links, map, source verification |
+| Siddhivinayak Temple | Mumbai, Maharashtra | Ganesha | Yes | Yes | Tuesday darshan rhythm, Modak offering context, Prabhadevi area | Mumbai snacks, Vegetarian restaurants nearby | Needs timings, queue details, official links, map, source verification |
+| Kamakhya Temple | Guwahati, Assam | Kamakhya / Devi | Yes | Yes | Nilachal Hill view, Ambubachi context, Shakti Peetha story | Assamese vegetarian options, Temple-area meals | Needs timings, ritual guidance, official links, map, source verification |
+| Sabarimala | Pathanamthitta, Kerala | Ayyappa | Yes | Yes | Vrata discipline, Forest pilgrimage context, Makara season rules | Pilgrim annadanam where available, Kerala vegetarian meals en route | Needs seasonal rules, official links, route data, source verification |
+
+Important: temple details are captured at a first-guide/card level. They are not yet full temple travel pages. The site still needs individual temple URLs, source links, timings, maps, review/vlog summaries, accessibility notes, and last-verified dates.
+
+### Festival Register
+
+Location: `content/festival-pages-2026.json`
+
+Page: `festivals.html`
+
+| Festival | 2026 date captured | Story captured | Quiz | Creative path | CTA |
+|---|---:|---|---|---|---|
+| Raksha Bandhan | August 28, 2026 | Yes | `krishna-beginner` | Rakhi mandala and promise card | Raksha/Janmashtami kit interest |
+| Krishna Janmashtami | September 4, 2026 | Yes | `krishna-beginner` | Baby Krishna, butter pot, flute, dahi handi | Raksha/Janmashtami kit interest |
+| Ganesh Chaturthi | September 14, 2026 | Yes | `ganesha-beginner` | Ganesha, modak, mouse vahana, bamboo platform | Ganesh kit interest |
+| Navratri | October 11-19, 2026 | Yes | `devi-navratri-beginner` | Navadurga symbols, lion, lotus, lamp, garba circle | Navratri challenge |
+| Dussehra | October 20, 2026 | Yes | `rama-navami-beginner` | Rama with bow, Ravana context card, victory lamps | Dussehra challenge |
+| Diwali | November 8, 2026 | Yes | `lakshmi-diwali-beginner` | Diyas, Lakshmi lotus, Ayodhya lights, rangoli | Diwali unlock |
+| Guru Nanak Jayanti | November 24, 2026 | Yes | `saraswati-beginner` | Lamp, kirtan, langar, seva symbols | Festival challenge |
+| Maha Shivaratri | To verify by panchang | Yes | `shiva-beginner` | Shiva lingam, bilva leaves, damru, trishula, moon | Shivaratri unlock |
+| Rath Yatra | To verify by panchang | Yes | `krishna-beginner` | Jagannath chariot, wheels, flags, ropes | Rath Yatra kit |
+| Hanuman Jayanti | To verify by region | Yes | `rama-navami-beginner` | Hanuman mace, mountain, folded hands, Rama name | Hanuman challenge |
+
+Important: festivals are captured as hub cards, not full festival pages. They need individual pages with rituals, stories, activities, kit path, FAQs, schema, and region/date notes.
+
+### Quiz Register
+
+Location: `content/quizzes.json`
+
+Pages:
+
+- Solo: `quiz-game.html?quiz={slug}`
+- Family room: `quiz-room.html?quiz={slug}`
+- Library: `games.html`
+
+| Quiz | Slug | Current use |
+|---|---|---|
+| Rama Navami Beginner Quiz | `rama-navami-beginner` | Ramayana, Dussehra, Hanuman-linked paths |
+| Shani Dev Beginner Quiz | `shani-dev-beginner` | Shani Dev path |
+| Ganesha Beginner Quiz | `ganesha-beginner` | Ganesha and Ganesh Chaturthi path |
+| Dashavatara Beginner Quiz | `dashavatara-beginner` | Vishnu/Dashavatara path |
+| Shiva Beginner Quiz | `shiva-beginner` | Shiva and Maha Shivaratri path |
+| Krishna Beginner Quiz | `krishna-beginner` | Krishna, Janmashtami, Rath Yatra path |
+| Devi and Navratri Beginner Quiz | `devi-navratri-beginner` | Devi, Durga, Kali, Navratri path |
+| Lakshmi and Diwali Beginner Quiz | `lakshmi-diwali-beginner` | Lakshmi, Kubera, Diwali path |
+| Saraswati Beginner Quiz | `saraswati-beginner` | Saraswati, Brahma, Guru Nanak Jayanti placeholder quiz path |
+| Subrahmanya and Surya Beginner Quiz | `subrahmanya-surya-beginner` | Subrahmanya, Surya, Varuna path |
+
+Important: these are starter quizzes. They are not yet deep quiz ladders with beginner/intermediate/advanced levels.
+
+### Coloring / Drawing Register
+
+Location: `content/coloring-books.json`
+
+| Coloring collection | Status | Page / assets | Current gaps |
+|---|---|---|---|
+| My First Ramayana Coloring Book | Available | `coloring-book-ramayana.html`, `ChildrenBook/*.png` | Needs improved digital coloring UX and PDF export |
+| Ganesha Beginnings Coloring Book | Prompt-ready plus simple SVGs | `coloring/ganesha-*.svg`, story pack prompts | Needs final premium generated line art |
+| Dashavatara Symbol Coloring Book | Prompt-ready plus simple SVGs | `coloring/dashavatara-symbols.svg`, `coloring/narasimha-prahlada.svg`, `coloring/vamana-umbrella.svg` | Needs full 10-avatar coloring book |
+| Shani Dev Discipline Coloring Pages | Prompt-ready plus simple SVGs | `coloring/shani-*.svg` | Needs final premium line art and devotional style QA |
+| Core Deity Symbols Coloring Book | Prompt-ready | Manifest only | Needs final generated symbol pages |
+
+### Larger Text Coverage Register
+
+Location: `content/purana-itihasa-coverage.json`
+
+Currently captured as roadmap/coverage inventory:
+
+- Itihasas: Ramayana, Mahabharata.
+- Primary text: Bhagavad Gita.
+- 18 Mahapuranas:
+  - Brahma Purana
+  - Padma Purana
+  - Vishnu Purana
+  - Shiva Purana
+  - Bhagavata Purana
+  - Narada Purana
+  - Markandeya Purana
+  - Agni Purana
+  - Bhavishya Purana
+  - Brahmavaivarta Purana
+  - Linga Purana
+  - Varaha Purana
+  - Skanda Purana
+  - Vamana Purana
+  - Kurma Purana
+  - Matsya Purana
+  - Garuda Purana
+  - Brahmanda Purana
+
+First expansion topics captured:
+
+- Sundara Kanda
+- Bhagavad Gita chapter path
+- Samudra Manthana
+- Narasimha and Prahlada
+- Gajendra Moksha
+- Markandeya and Devi
+- Shiva and Ganga
+- Skanda birth
+- Rukmini and Krishna
+- Savitri and Satyavan
+
+Important: these are coverage targets, not completed story experiences yet.
+
+### Exact “Real vs Structured vs Missing” State
+
+| Category | Real user-facing content exists | Structured data exists | Still missing |
+|---|---|---|---|
+| Ramayana | Yes | Yes | Guided journey, PDF export, stronger UX |
+| Shani Dev | Yes | Yes | Final images, source validation, PDF export |
+| Ganesha | Partial | Yes | Final images, PDF export, stronger kit page linkage |
+| Dashavatara | Partial | Yes | Full 10-avatar pages, images, PDF |
+| 16 deity hubs | Basic pages | Yes | Full stories, art, PDFs, SEO depth |
+| Festivals | Hub cards | Yes | Individual festival pages |
+| Temples | Hub cards | Yes | Individual full temple guides with verified data |
+| Quizzes | Yes | Yes | Quiz ladders, better multiplayer, account persistence |
+| Coloring | Ramayana yes; others simple/prompted | Yes | Premium generated art for non-Ramayana |
+| Community | Concept page | Schema exists | Auth, comments, moderation, profiles |
+| Gamification | Local prototype | Schema and JSON model exist | Real account-backed progress and refined expert loop |
+
