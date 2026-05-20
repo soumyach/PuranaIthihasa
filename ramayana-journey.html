@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramayana Journey - Khatakshetra</title>
+<meta name="description" content="Begin the Khatakshetra Ramayana journey with story, coloring, quiz, family room, progress, and shareable completion.">
+<link rel="canonical" href="https://khatakshetra.com/ramayana-journey">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a class="keep-mobile" href="ramayana-journey.html">Journey</a><a href="stories.html">Stories</a><a href="games.html">Play</a><a href="drawing-kits.html">Drawing</a><a href="booklets.html">Booklets</a></div></nav>
+<header class="page-hero" style="--hero-image:linear-gradient(180deg,rgba(8,3,0,.18),rgba(8,3,0,.96)),url('ChildrenBook/Cover.png')">
+  <div class="hero-inner">
+    <div class="eyebrow">First Kshetra</div>
+    <h1>Walk the first Ramayana path.</h1>
+    <p class="lead">A guided family journey through story, coloring, quiz, and a family room. Complete the path to grow your Parampara Tree and share the first unlock.</p>
+    <div class="hero-actions">
+      <button class="btn primary" type="button" onclick="startJourney()">Begin Journey</button>
+      <a class="btn" href="story-experience.html?pack=ramayana-starter">Open Full Story Pack</a>
+    </div>
+  </div>
+</header>
+<main>
+<section class="band"><div class="inner">
+  <div class="cta-strip" style="margin-top:0">
+    <div>
+      <div class="eyebrow">Learning Loop</div>
+      <h2 class="section-title">One story path, five meaningful steps.</h2>
+      <p class="section-copy">Every activity is a node, every node moves the family forward, and completion lights the first branch of your Parampara Tree.</p>
+    </div>
+    <a class="btn primary" href="sangraha.html">View Sangraha</a>
+  </div>
+</div></section>
+
+<section class="band alt"><div class="inner">
+  <div class="story-detail">
+    <div>
+      <div class="section-head">
+        <div class="eyebrow">Ayodhya path</div>
+        <h2 class="section-title">Complete the glowing nodes.</h2>
+        <p class="section-copy">You can do this in one sitting with a child, or split it across the week with grandparents and cousins.</p>
+      </div>
+      <div class="journey-map" id="journeyMap"></div>
+    </div>
+    <aside class="side-stack">
+      <div id="journeyProgressPanel"></div>
+      <article class="card">
+        <h3>What unlocks here</h3>
+        <p>Story understanding, a coloring page, solo quiz mastery, family play, and a Talapatra card reveal after the quiz.</p>
+        <div class="tag-row"><span class="tag">Story</span><span class="tag">Color</span><span class="tag">Quiz</span><span class="tag">Family</span><span class="tag">Card</span></div>
+      </article>
+    </aside>
+  </div>
+</div></section>
+
+<section class="band" id="completionSection" style="display:none"><div class="inner">
+  <article class="share-card">
+    <div class="eyebrow">Journey complete</div>
+    <h2 id="completionTitle">Your family has walked the first Ramayana path.</h2>
+    <p id="completionCopy">The first branch of your Parampara Tree is lit. Share the journey and invite another family to begin.</p>
+    <div class="parampara-mini" id="completionStats"></div>
+    <div class="journey-actions">
+      <a class="btn primary" id="whatsappShare" target="_blank" rel="noopener">Share on WhatsApp</a>
+      <a class="btn" href="sangraha.html">Open Sangraha</a>
+      <button class="btn" type="button" onclick="localSignupIntent('ramayana_journey_complete')">Save Journey</button>
+    </div>
+  </article>
+</div></section>
+</main>
+<footer><a href="/">Home</a></footer>
+<script src="site.js"></script>
+<script>
+const journeyKey = 'khatakshetra.journey.ramayana';
+const journeyNodes = [
+  {
+    id: 'story',
+    title: 'Ayodhya Opens',
+    copy: 'Read the first Ramayana experience and notice the people, promises, and places that begin the story.',
+    primary: { label: 'Read Story', href: 'story-experience.html?pack=ramayana-starter' },
+    completeLabel: 'Mark Story Read'
+  },
+  {
+    id: 'coloring',
+    title: 'Color the First Scene',
+    copy: 'Open the paintable Ramayana coloring book and begin with Ayodhya or the four brothers.',
+    primary: { label: 'Open Coloring', href: 'coloring-book-ramayana.html' },
+    completeLabel: 'Mark Coloring Done'
+  },
+  {
+    id: 'save',
+    title: 'Save the Family Path',
+    copy: 'Add an email so this becomes a real family journey instead of a one-time visit.',
+    signup: true,
+    completeLabel: 'Save Progress'
+  },
+  {
+    id: 'quiz',
+    title: 'Quiz Sabha',
+    copy: 'Answer the beginner quiz. The Talapatra card reveal happens after demonstrated understanding.',
+    primary: { label: 'Play Solo Quiz', href: 'quiz-game.html?quiz=rama-navami-beginner' },
+    completeLabel: 'Mark Quiz Done'
+  },
+  {
+    id: 'family',
+    title: 'Family Room',
+    copy: 'Pass the device between family members and turn the story into conversation.',
+    primary: { label: 'Open Family Room', href: 'quiz-room.html?quiz=rama-navami-beginner' },
+    completeLabel: 'Mark Family Round Done'
+  }
+];
+
+function getJourneyState() {
+  return JSON.parse(localStorage.getItem(journeyKey) || '{"started":false,"completed":[]}');
+}
+
+function saveJourneyState(state) {
+  localStorage.setItem(journeyKey, JSON.stringify(state));
+  renderJourney();
+}
+
+function startJourney() {
+  const state = getJourneyState();
+  state.started = true;
+  state.startedAt = state.startedAt || new Date().toISOString();
+  saveJourneyState(state);
+  document.getElementById('journeyMap').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function completeJourneyNode(id) {
+  const state = getJourneyState();
+  state.started = true;
+  state.completed = state.completed || [];
+  if (!state.completed.includes(id)) {
+    state.completed.push(id);
+    awardKhatakshetraProgress('journey_node_complete', {
+      unlock: `ramayana_journey_${id}`,
+      properties: { journey: 'ramayana', node: id }
+    });
+  }
+  if (state.completed.length === journeyNodes.length && !state.completedAt) {
+    state.completedAt = new Date().toISOString();
+    awardKhatakshetraProgress('journey_complete', {
+      unlock: 'ramayana_first_path_complete',
+      properties: { journey: 'ramayana' }
+    });
+    setTimeout(() => revealTalapatraCard({ id: 'rama-first-path-rare', title: 'Rama', subtitle: 'The First Path Lit', rarity: 'rare', quote: 'A journey begins when a family remembers together.' }), 250);
+  }
+  saveJourneyState(state);
+}
+
+function completeSignupNode() {
+  localSignupIntent('ramayana_journey_save', {
+    afterSave: () => completeJourneyNode('save')
+  });
+}
+
+function renderJourney() {
+  const state = getJourneyState();
+  const completed = state.completed || [];
+  const nextNode = journeyNodes.find((node) => !completed.includes(node.id));
+  document.getElementById('journeyMap').innerHTML = journeyNodes.map((node, index) => {
+    const isComplete = completed.includes(node.id);
+    const isActive = nextNode && nextNode.id === node.id;
+    const primary = node.signup
+      ? `<button class="btn primary" type="button" onclick="completeSignupNode()">${node.completeLabel}</button>`
+      : `<a class="btn primary" href="${node.primary.href}">${node.primary.label}</a><button class="btn" type="button" onclick="completeJourneyNode('${node.id}')">${node.completeLabel}</button>`;
+    return `
+      <article class="journey-node ${isComplete ? 'is-complete' : ''} ${isActive ? 'is-active' : ''}">
+        <div class="node-mark">${isComplete ? '✓' : index + 1}</div>
+        <div>
+          <h3>${node.title}</h3>
+          <p>${node.copy}</p>
+          <div class="journey-actions">${primary}</div>
+        </div>
+      </article>
+    `;
+  }).join('');
+  renderKhatakshetraProgress('journeyProgressPanel');
+  renderCompletion();
+}
+
+function renderCompletion() {
+  const state = getJourneyState();
+  const completed = state.completed || [];
+  const done = completed.length === journeyNodes.length;
+  document.getElementById('completionSection').style.display = done ? 'block' : 'none';
+  if (!done) return;
+  const profile = getKhatakshetraProfile();
+  const childName = profile.child_name || 'Your family';
+  const title = getKhatakshetraTitle(profile.level);
+  document.getElementById('completionTitle').textContent = `${childName} completed the first Ramayana journey.`;
+  document.getElementById('completionStats').innerHTML = `
+    <span>${title.title}</span>
+    <span>${profile.xp} XP</span>
+    <span>${(profile.cards || []).length} cards</span>
+    <span>${completed.length} nodes lit</span>
+  `;
+  const shareText = encodeURIComponent(`${childName} completed Khatakshetra's first Ramayana journey: story, coloring, quiz, and family play. Begin here: https://khatakshetra.com/ramayana-journey`);
+  document.getElementById('whatsappShare').href = `https://wa.me/?text=${shareText}`;
+}
+
+renderJourney();
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sangraha - Khatakshetra</title>
+<meta name="description" content="Your Khatakshetra Sangraha: Talapatra cards, Parampara Tree progress, and story unlocks.">
+<link rel="canonical" href="https://khatakshetra.com/sangraha">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="ramayana-journey.html">Journey</a><a href="stories.html">Stories</a><a href="games.html">Play</a><a class="keep-mobile" href="sangraha.html">Sangraha</a></div></nav>
+<header class="page-hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Collector arc</div>
+    <h1>Your Sangraha of story cards.</h1>
+    <p class="lead">Cards are earned through understanding, not empty clicks. Complete quizzes and journeys to reveal more Talapatra cards.</p>
+  </div>
+</header>
+<main>
+<section class="band"><div class="inner">
+  <div class="story-detail">
+    <div>
+      <div class="section-head">
+        <div class="eyebrow">Talapatra cards</div>
+        <h2 class="section-title">Cards earned so far.</h2>
+        <p class="section-copy">Your collection grows as you understand stories, complete journeys, and join family challenges.</p>
+      </div>
+      <div class="sangraha-grid" id="cardGrid"></div>
+    </div>
+    <aside class="side-stack">
+      <div id="profilePanel"></div>
+      <article class="card">
+        <h3>Next best unlock</h3>
+        <p>Finish the Ramayana quiz or complete the full journey to add a rare card and light the first path.</p>
+        <a class="btn primary" href="ramayana-journey.html">Open Journey</a>
+      </article>
+    </aside>
+  </div>
+</div></section>
+</main>
+<footer><a href="/">Home</a></footer>
+<script src="site.js"></script>
+<script>
+function renderSangraha() {
+  const profile = getKhatakshetraProfile();
+  const cards = profile.cards || [];
+  renderKhatakshetraProgress('profilePanel');
+  document.getElementById('cardGrid').innerHTML = cards.length ? cards.map((card) => `
+    <article class="sangraha-card">
+      <div>
+        <div class="card-rarity ${card.rarity || 'common'}">${card.rarity || 'common'}</div>
+        <h3>${card.title}</h3>
+        <p><strong>${card.subtitle || 'Story Card'}</strong></p>
+        <p>${card.quote || 'A story remembered becomes a light for the next path.'}</p>
+      </div>
+      <small>${card.earned_at ? new Date(card.earned_at).toLocaleDateString() : 'Earned'}</small>
+    </article>
+  `).join('') : `
+    <article class="card featured">
+      <h3>No cards yet</h3>
+      <p>Complete a quiz or the Ramayana journey to reveal your first Talapatra card.</p>
+      <a class="btn primary" href="quiz-game.html?quiz=rama-navami-beginner">Play First Quiz</a>
+    </article>
+  `;
+}
+renderSangraha();
+</script>
+</body>
+</html>

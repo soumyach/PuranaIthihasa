@@ -112,9 +112,11 @@ function renderResult() {
     unlock: pct >= 80 ? `${quiz.slug}_booklet_page` : `${quiz.slug}_practice_round`,
     properties: { quiz: quiz.slug, score, total: quiz.questions.length, pct }
   });
+  const earnedCard = getTalapatraCardForQuiz(quiz.slug, pct);
   document.getElementById('resultBox').style.display = 'flex';
-  document.getElementById('resultTitle').textContent = pct >= 80 ? 'Unlock earned.' : 'Round complete.';
-  document.getElementById('resultCopy').innerHTML = `You scored ${score}/${quiz.questions.length}. You are now Level ${profile.level} with ${profile.xp} XP. Next unlock: coloring page, booklet spread, or family challenge. <a href="${storyLinks[quiz.slug] || 'stories.html'}">Open the story pack</a>.`;
+  document.getElementById('resultTitle').textContent = pct >= 80 ? 'Talapatra card unlocked.' : 'Round complete.';
+  document.getElementById('resultCopy').innerHTML = `You scored ${score}/${quiz.questions.length}. Your Parampara Tree is now Level ${profile.level} with ${profile.xp} XP. A ${earnedCard.rarity} card has been added to your Sangraha. <a href="${storyLinks[quiz.slug] || 'stories.html'}">Open the story pack</a>.`;
+  setTimeout(() => revealTalapatraCard(earnedCard), 350);
 }
 
 fetch('content/quizzes.json?v=20260518a')
