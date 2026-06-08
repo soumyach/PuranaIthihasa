@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramayana Story Path Game - Khatakshetra</title>
+<meta name="description" content="Play a simple Ramayana board game with story spaces, dharma choices, service tokens, and family-friendly challenges.">
+<link rel="canonical" href="https://khatakshetra.com/ramayana-path-game">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  .game-layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 1rem; align-items: start; }
+  .path-board { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; }
+  .path-space { min-height: 150px; border: 1px solid rgba(232,185,79,.24); background: rgba(18,8,0,.78); padding: .85rem; position: relative; }
+  .path-space.active { border-color: rgba(232,185,79,.78); background: linear-gradient(145deg, rgba(18,58,42,.72), rgba(18,8,0,.92)); box-shadow: 0 18px 48px rgba(0,0,0,.24); }
+  .path-space.complete { border-color: rgba(87,171,96,.55); }
+  .space-number { color: var(--saffron-light); letter-spacing: .18em; text-transform: uppercase; font-size: .65rem; }
+  .path-space h3 { color: var(--gold-bright); font-family: 'Playfair Display', serif; line-height: 1.1; margin: .35rem 0; }
+  .token { position: absolute; right: .7rem; top: .7rem; width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid rgba(232,185,79,.48); background: rgba(8,3,0,.82); color: var(--gold-bright); font-family: 'Cinzel', serif; }
+  .dice { font-family: 'Cinzel', serif; font-size: clamp(3rem, 8vw, 5rem); color: var(--gold-bright); line-height: 1; }
+  .challenge-box { min-height: 260px; }
+  .choice-stack { display: grid; gap: .55rem; }
+  .game-score { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5rem; }
+  .score-tile { border: 1px solid rgba(232,185,79,.24); background: rgba(8,3,0,.42); padding: .65rem; }
+  .score-tile span { color: var(--saffron-light); letter-spacing: .15em; text-transform: uppercase; font-size: .62rem; display: block; }
+  .score-tile strong { color: var(--cream); font-family: 'Playfair Display', serif; font-size: 1.5rem; }
+  @media (max-width: 900px) { .game-layout, .path-board { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="ramayana-journey.html">Journey</a><a href="games.html">Play</a><a href="coloring-book-ramayana.html">Coloring</a><a class="keep-mobile" href="stories.html">Stories</a></div></nav>
+<header class="page-hero" style="--hero-image:linear-gradient(180deg,rgba(8,3,0,.25),rgba(8,3,0,.96)),url('Images/Meeting%20Hanuman.png')">
+  <div class="hero-inner">
+    <div class="eyebrow">Playable board game</div>
+    <h1>Ramayana Story Path.</h1>
+    <p class="lead">Move through the first Ramayana scenes by answering story prompts and making dharma choices. Designed for one child with a parent, or pass-and-play family mode.</p>
+    <div class="hero-actions"><button class="btn primary" type="button" onclick="startGame()">Start Game</button><a class="btn" href="ramayana-journey.html">Back to Journey</a></div>
+  </div>
+</header>
+<main>
+<section class="band"><div class="inner game-layout">
+  <div>
+    <div class="section-head">
+      <div class="eyebrow">The path</div>
+      <h2 class="section-title">Reach Kishkindha with wisdom tokens.</h2>
+      <p class="section-copy">Roll, move, answer the prompt, and collect Dharma, Courage, and Seva tokens. The game completes when the final space is reached.</p>
+    </div>
+    <div class="path-board" id="pathBoard"></div>
+  </div>
+  <aside class="side-stack">
+    <article class="card featured challenge-box">
+      <div class="eyebrow">Current turn</div>
+      <div class="dice" id="diceValue">-</div>
+      <h2 id="challengeTitle">Start the game.</h2>
+      <p id="challengeCopy">Press Start Game, then roll to move through the story path.</p>
+      <div class="choice-stack" id="choiceStack"></div>
+    </article>
+    <article class="card">
+      <h3>Tokens</h3>
+      <div class="game-score">
+        <div class="score-tile"><span>Dharma</span><strong id="dharmaScore">0</strong></div>
+        <div class="score-tile"><span>Courage</span><strong id="courageScore">0</strong></div>
+        <div class="score-tile"><span>Seva</span><strong id="sevaScore">0</strong></div>
+      </div>
+    </article>
+    <button class="btn primary" type="button" onclick="rollDice()">Roll</button>
+    <button class="btn" type="button" onclick="resetGame()">Reset</button>
+  </aside>
+</div></section>
+</main>
+<footer><a href="games.html">Back to Games</a></footer>
+<script src="site.js"></script>
+<script>
+const gameKey = 'khatakshetra.ramayana.path.game';
+const spaces = [
+  { title: 'Ayodhya', prompt: 'What makes a kingdom feel safe for everyone?', choices: [['Good rule and care', 'dharma'], ['Only gold and palaces', 'none'], ['Loud celebrations', 'none']] },
+  { title: 'The Special Prayer', prompt: 'Why does Dasharatha perform the Putrakameshti yajna?', choices: [['To pray for children', 'dharma'], ['To win a war', 'none'], ['To build a palace', 'none']] },
+  { title: 'Rama Is Born', prompt: 'A blessing has arrived. What should the family remember?', choices: [['Gratitude', 'dharma'], ['Pride', 'none'], ['Competition', 'none']] },
+  { title: 'The Four Brothers', prompt: 'Which token fits brothers who grow together?', choices: [['Seva', 'seva'], ['Jealousy', 'none'], ['Silence only', 'none']] },
+  { title: 'The Sage Arrives', prompt: 'Vishwamitra asks for help. What does Rama learn?', choices: [['Duty can begin early', 'courage'], ['Avoid every hard task', 'none'], ['Only kings protect', 'none']] },
+  { title: 'Forest Lesson', prompt: 'A challenge appears in the forest. What should courage include?', choices: [['Discipline', 'courage'], ['Anger first', 'none'], ['Showing off', 'none']] },
+  { title: 'Sita in the Garden', prompt: 'Sita is remembered with grace and strength. Which token fits?', choices: [['Dharma', 'dharma'], ['Mockery', 'none'], ['Fear', 'none']] },
+  { title: 'The Bow', prompt: 'Rama lifts Shiva's bow. What makes strength meaningful?', choices: [['Humility', 'dharma'], ['Boasting', 'none'], ['Ignoring elders', 'none']] },
+  { title: 'Wedding Joy', prompt: 'A family celebrates. What should joy create?', choices: [['Connection', 'seva'], ['Waste', 'none'], ['Argument', 'none']] },
+  { title: 'A Difficult Promise', prompt: 'A promise becomes painful. What does Rama choose?', choices: [['Honor', 'dharma'], ['Revenge', 'none'], ['Escape', 'none']] },
+  { title: 'Forest Path', prompt: 'Who walks with Rama into exile?', choices: [['Sita and Lakshmana', 'seva'], ['Only soldiers', 'none'], ['No one', 'none']] },
+  { title: 'Hanuman Meets Rama', prompt: 'Hanuman shows strength through what?', choices: [['Devotion and service', 'seva'], ['Pride', 'none'], ['Trickery only', 'none']] }
+];
+
+function getGameState() {
+  return JSON.parse(localStorage.getItem(gameKey) || '{"position":0,"started":false,"complete":[],"tokens":{"dharma":0,"courage":0,"seva":0}}');
+}
+
+function saveGameState(state) {
+  localStorage.setItem(gameKey, JSON.stringify(state));
+  renderGame();
+}
+
+function startGame() {
+  const state = getGameState();
+  state.started = true;
+  saveGameState(state);
+  showChallenge();
+}
+
+function resetGame() {
+  localStorage.removeItem(gameKey);
+  renderGame();
+  document.getElementById('diceValue').textContent = '-';
+  document.getElementById('challengeTitle').textContent = 'Start the game.';
+  document.getElementById('challengeCopy').textContent = 'Press Start Game, then roll to move through the story path.';
+  document.getElementById('choiceStack').innerHTML = '';
+}
+
+function rollDice() {
+  const state = getGameState();
+  if (!state.started) state.started = true;
+  const roll = Math.floor(Math.random() * 3) + 1;
+  state.position = Math.min(spaces.length - 1, state.position + roll);
+  document.getElementById('diceValue').textContent = roll;
+  saveGameState(state);
+  showChallenge();
+}
+
+function showChallenge() {
+  const state = getGameState();
+  const space = spaces[state.position];
+  document.getElementById('challengeTitle').textContent = space.title;
+  document.getElementById('challengeCopy').textContent = space.prompt;
+  document.getElementById('choiceStack').innerHTML = space.choices.map(([label, token]) => `<button class="btn" type="button" onclick="answerChallenge('${token}')">${label}</button>`).join('');
+}
+
+function answerChallenge(token) {
+  const state = getGameState();
+  state.complete = state.complete || [];
+  if (!state.complete.includes(state.position)) {
+    state.complete.push(state.position);
+    if (state.tokens[token] !== undefined) state.tokens[token] += 1;
+    awardKhatakshetraProgress('journey_node_complete', {
+      xp: token === 'none' ? 5 : 20,
+      unlock: `ramayana_path_space_${state.position}`,
+      properties: { game: 'ramayana-path', space: spaces[state.position].title, token }
+    });
+  }
+  const finished = state.position === spaces.length - 1;
+  saveGameState(state);
+  if (finished) {
+    awardKhatakshetraProgress('journey_complete', {
+      unlock: 'ramayana_path_game_complete',
+      properties: { game: 'ramayana-path', tokens: state.tokens }
+    });
+    revealTalapatraCard({ id: 'hanuman-path-seva-rare', title: 'Hanuman', subtitle: 'The Path of Service', rarity: 'rare', quote: 'Strength becomes luminous when it serves.' });
+    document.getElementById('challengeTitle').textContent = 'Path complete.';
+    document.getElementById('challengeCopy').textContent = 'You reached Hanuman Meets Rama. Open Sangraha to see the card.';
+    document.getElementById('choiceStack').innerHTML = '<a class="btn primary" href="sangraha.html">Open Sangraha</a>';
+  } else {
+    document.getElementById('challengeCopy').textContent = token === 'none' ? 'That was not the strongest story choice. Roll again and keep moving.' : `You earned a ${token} token. Roll again.`;
+    document.getElementById('choiceStack').innerHTML = '';
+  }
+}
+
+function renderGame() {
+  const state = getGameState();
+  document.getElementById('pathBoard').innerHTML = spaces.map((space, index) => `
+    <article class="path-space ${index === state.position ? 'active' : ''} ${(state.complete || []).includes(index) ? 'complete' : ''}">
+      ${index === state.position ? '<div class="token">R</div>' : ''}
+      <div class="space-number">Space ${index + 1}</div>
+      <h3>${space.title}</h3>
+      <p>${index === state.position ? space.prompt : 'Move here to reveal the challenge.'}</p>
+    </article>
+  `).join('');
+  document.getElementById('dharmaScore').textContent = state.tokens.dharma || 0;
+  document.getElementById('courageScore').textContent = state.tokens.courage || 0;
+  document.getElementById('sevaScore').textContent = state.tokens.seva || 0;
+}
+
+renderGame();
+</script>
+</body>
+</html>

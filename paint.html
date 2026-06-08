@@ -16,8 +16,9 @@
   .swatch.active { outline: 3px solid var(--gold-bright); }
   .paint-stage { position: relative; width: min(760px, 100%); margin: 0 auto; background: white; border: 1px solid rgba(232,185,79,.35); }
   .paint-stage img { width: 100%; display: block; user-select: none; pointer-events: none; }
-  #paintLayer { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; mix-blend-mode: multiply; cursor: crosshair; }
+  #paintLayer { position: absolute; inset: 0; z-index: 2; width: 100%; height: 100%; touch-action: none; mix-blend-mode: multiply; cursor: crosshair; }
   .range-row { display: grid; gap: .35rem; color: var(--cream-dim); }
+  .paint-status { color: var(--cream-dim); margin-top: .8rem; font-size: .92rem; }
   @media (max-width: 900px) { .paint-shell { grid-template-columns: 1fr; } .paint-toolbar { position: static; } }
 </style>
 </head>
@@ -39,6 +40,7 @@
     <button class="btn primary" id="downloadBtn" type="button">Download artwork</button>
     <button class="btn" id="clearBtn" type="button">Clear paint</button>
     <a class="btn" href="coloring-book-ramayana.html">Back to book</a>
+    <p class="paint-status" id="paintStatus">Choose a color and draw on the page.</p>
   </aside>
   <div class="paint-stage" id="stage">
     <img id="baseImage" alt="Coloring page">
@@ -57,36 +59,49 @@ if (!allowed.some((prefix) => image.startsWith(prefix))) throw new Error('Unsupp
 const colors = ['#ef4444','#f97316','#facc15','#22c55e','#38bdf8','#2563eb','#a855f7','#ec4899','#8b5e34','#ffffff','#111111','#f5e6c8'];
 let currentColor = colors[0];
 let drawing = false;
+let lastPoint = null;
 const img = document.getElementById('baseImage');
 const canvas = document.getElementById('paintLayer');
 const ctx = canvas.getContext('2d');
+const status = document.getElementById('paintStatus');
 document.getElementById('title').textContent = title;
-img.src = image;
-awardKhatakshetraProgress('coloring_open', { properties: { image, title } });
+
+function safeAward(eventName, options) {
+  if (typeof awardKhatakshetraProgress === 'function') {
+    awardKhatakshetraProgress(eventName, options);
+  }
+}
 
 document.getElementById('swatches').innerHTML = colors.map((color, index) => `<button class="swatch ${index === 0 ? 'active' : ''}" style="background:${color}" data-color="${color}" aria-label="${color}"></button>`).join('');
 document.querySelectorAll('.swatch').forEach((button) => button.addEventListener('click', () => {
   currentColor = button.dataset.color;
   document.querySelectorAll('.swatch').forEach((item) => item.classList.remove('active'));
   button.classList.add('active');
+  status.textContent = `Selected ${button.dataset.color}. Draw on the page.`;
 }));
 
 img.addEventListener('load', resizeCanvas);
+img.addEventListener('error', () => {
+  status.textContent = 'Could not load this page. Go back to the coloring book and open it again.';
+});
 window.addEventListener('resize', resizeCanvas);
+img.src = image;
+safeAward('coloring_open', { properties: { image, title } });
 
 function resizeCanvas() {
   const existing = document.createElement('canvas');
   existing.width = canvas.width || 1;
   existing.height = canvas.height || 1;
   existing.getContext('2d').drawImage(canvas, 0, 0);
-  canvas.width = img.naturalWidth;
-  canvas.height = img.naturalHeight;
-  ctx.drawImage(existing, 0, 0, canvas.width, canvas.height);
+  canvas.width = img.naturalWidth || img.clientWidth || 760;
+  canvas.height = img.naturalHeight || img.clientHeight || 1000;
+  if (existing.width > 1 && existing.height > 1) ctx.drawImage(existing, 0, 0, canvas.width, canvas.height);
+  status.textContent = 'Ready. Choose a color and draw on the page.';
 }
 
 function getPoint(event) {
   const rect = canvas.getBoundingClientRect();
-  const touch = event.touches ? event.touches[0] : event;
+  const touch = event.touches ? event.touches[0] : event.changedTouches ? event.changedTouches[0] : event;
   return {
     x: ((touch.clientX - rect.left) / rect.width) * canvas.width,
     y: ((touch.clientY - rect.top) / rect.height) * canvas.height
@@ -95,15 +110,20 @@ function getPoint(event) {
 
 function start(event) {
   drawing = true;
-  const point = getPoint(event);
+  lastPoint = getPoint(event);
+  if (event.pointerId !== undefined && canvas.setPointerCapture) canvas.setPointerCapture(event.pointerId);
   ctx.beginPath();
-  ctx.moveTo(point.x, point.y);
+  ctx.moveTo(lastPoint.x, lastPoint.y);
+  drawDot(lastPoint);
   event.preventDefault();
 }
 
 function move(event) {
   if (!drawing) return;
   const point = getPoint(event);
+  if (!lastPoint) lastPoint = point;
+  ctx.beginPath();
+  ctx.moveTo(lastPoint.x, lastPoint.y);
   ctx.lineTo(point.x, point.y);
   ctx.strokeStyle = currentColor;
   ctx.lineWidth = Number(document.getElementById('brushSize').value) * (canvas.width / canvas.getBoundingClientRect().width);
@@ -111,20 +131,47 @@ function move(event) {
   ctx.lineJoin = 'round';
   ctx.globalAlpha = currentColor === '#ffffff' ? 1 : 0.72;
   ctx.stroke();
+  lastPoint = point;
   event.preventDefault();
 }
 
-function stop() {
+function drawDot(point) {
+  ctx.fillStyle = currentColor;
+  ctx.globalAlpha = currentColor === '#ffffff' ? 1 : 0.72;
+  const radius = Number(document.getElementById('brushSize').value) * (canvas.width / canvas.getBoundingClientRect().width) / 2;
+  ctx.beginPath();
+  ctx.arc(point.x, point.y, radius, 0, Math.PI * 2);
+  ctx.fill();
+}
+
+function stop(event) {
   drawing = false;
+  lastPoint = null;
+  if (event && event.pointerId !== undefined && canvas.releasePointerCapture) {
+    try { canvas.releasePointerCapture(event.pointerId); } catch (error) {}
+  }
   ctx.closePath();
 }
 
-canvas.addEventListener('pointerdown', start);
-canvas.addEventListener('pointermove', move);
-canvas.addEventListener('pointerup', stop);
-canvas.addEventListener('pointerleave', stop);
+if (window.PointerEvent) {
+  canvas.addEventListener('pointerdown', start);
+  canvas.addEventListener('pointermove', move);
+  canvas.addEventListener('pointerup', stop);
+  canvas.addEventListener('pointercancel', stop);
+  canvas.addEventListener('pointerleave', stop);
+} else {
+  canvas.addEventListener('mousedown', start);
+  canvas.addEventListener('mousemove', move);
+  window.addEventListener('mouseup', stop);
+  canvas.addEventListener('touchstart', start, { passive: false });
+  canvas.addEventListener('touchmove', move, { passive: false });
+  canvas.addEventListener('touchend', stop);
+}
 
-document.getElementById('clearBtn').addEventListener('click', () => ctx.clearRect(0, 0, canvas.width, canvas.height));
+document.getElementById('clearBtn').addEventListener('click', () => {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  status.textContent = 'Paint cleared.';
+});
 document.getElementById('downloadBtn').addEventListener('click', () => {
   const output = document.createElement('canvas');
   output.width = img.naturalWidth;
@@ -136,9 +183,14 @@ document.getElementById('downloadBtn').addEventListener('click', () => {
   out.drawImage(canvas, 0, 0);
   const link = document.createElement('a');
   link.download = `${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-colored.png`;
-  link.href = output.toDataURL('image/png');
-  link.click();
-  awardKhatakshetraProgress('coloring_download', { unlock: 'creative_coloring_download', properties: { image, title } });
+  try {
+    link.href = output.toDataURL('image/png');
+    link.click();
+    safeAward('coloring_download', { unlock: 'creative_coloring_download', properties: { image, title } });
+    status.textContent = 'Artwork downloaded.';
+  } catch (error) {
+    status.textContent = 'Drawing works here. For download, open this page through the local server or live site.';
+  }
 });
 </script>
 </body>

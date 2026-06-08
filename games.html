@@ -16,7 +16,7 @@
     <div class="eyebrow">Play with meaning</div>
     <h1>Story quizzes that unlock booklets, drawing pages, and family challenges.</h1>
     <p class="lead">Start with a five-question story round. Then come back for city leagues, temple-group rooms, festival competitions, and contributor unlocks.</p>
-    <div class="hero-actions"><a class="btn primary" href="#quizLibrary">Play a Quiz</a><button class="btn ghost" onclick="localSignupIntent('games_waitlist')">Join Challenge Waitlist</button></div>
+    <div class="hero-actions"><a class="btn primary" href="ramayana-path-game.html">Play Ramayana Path</a><a class="btn" href="#quizLibrary">Play a Quiz</a><button class="btn ghost" onclick="localSignupIntent('games_waitlist')">Join Challenge Waitlist</button></div>
   </div>
 </header>
 <main>
@@ -110,6 +110,7 @@ fetch('content/game-templates.json')
         <p>${game.coreLoop}</p>
         <div class="tag-row"><span class="tag">${game.players}</span><span class="tag">${game.duration}</span><span class="tag">${game.relatedPack}</span></div>
         <p><strong>Unlock:</strong> ${game.unlock}</p>
+        ${game.id === 'game.ramayana-story-path' ? '<a class="btn primary" href="ramayana-path-game.html">Play now</a>' : '<button class="btn" onclick="localSignupIntent(\\'' + game.id + '\\')">Request playtest</button>'}
       </article>
     `).join('');
   });
