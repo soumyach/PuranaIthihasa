@@ -1,6 +1,8 @@
 # Khatakshetra
 
-Khatakshetra is a Hindu stories, festivals, deity hubs, temple guide, quiz, booklet, and family activity website. The project repository is PuranaIthihasa.
+Khatakshetra is a premium Hindu culture experience platform for stories, festivals, deity hubs, temple guides, quizzes, games, coloring books, digital booklets, family journeys, community challenges, and physical festival kits. The project repository is PuranaIthihasa.
+
+The product goal is not to be a passive mythology archive. It is to become a connected cultural learning world where every story links to deities, people, places, texts, festivals, temples, games, quizzes, coloring pages, booklets, family challenges, and kit interest.
 
 ## Important Pages
 
@@ -8,10 +10,14 @@ Khatakshetra is a Hindu stories, festivals, deity hubs, temple guide, quiz, book
 - Story library: https://khatakshetra.com/stories
 - Deity hubs: https://khatakshetra.com/deities
 - Games and quizzes: https://khatakshetra.com/games
+- Ramayana journey: https://khatakshetra.com/ramayana-journey
+- Ramayana path game: https://khatakshetra.com/ramayana-path-game
 - Festival calendar: https://khatakshetra.com/festivals
 - Temple guides: https://khatakshetra.com/temples
 - Booklets and PDFs: https://khatakshetra.com/booklets
 - Drawing kits: https://khatakshetra.com/drawing-kits
+- Ramayana coloring book: https://khatakshetra.com/coloring-book-ramayana
+- Sangraha card collection: https://khatakshetra.com/sangraha
 
 ## Launch Experiences
 
@@ -19,3 +25,24 @@ Khatakshetra is a Hindu stories, festivals, deity hubs, temple guide, quiz, book
 - Shani Dev story experience with karma reflection, quiz, talapatra cards, and booklet.
 - Ganesha beginnings experience with story, quiz, drawing, and kit interest.
 - Dashavatara collection with ten avatar cards and quiz path.
+
+## Product Architecture
+
+- Learning Loop: journeys, story nodes, quizzes, coloring, booklets, games, and Talapatra card unlocks.
+- Kula Loop: future family/group retention system with private groups, weekly challenges, card gifting, and internal progress.
+- Sabha Loop: future seasonal competitions tied to the Hindu calendar with public recognition and physical kit rewards.
+- Knowledge Graph: lightweight structured relationships across deities, people, places, temples, festivals, texts, values, stories, games, and kits.
+- Content Engine: each story pack should include adult narration, kids versions, dialogue/skit mode, descriptive mode, source notes, quiz questions, coloring specs, booklet sections, AEO FAQs, and relationship metadata.
+
+## Contributor Starting Points
+
+- Holistic blueprint: https://khatakshetra.com/docs/KHATAKSHETRA_HOLISTIC_PRODUCT_BLUEPRINT.md
+- As-is state: https://khatakshetra.com/docs/SITE_AS_IS_STATE.md
+- Gamification implementation: https://khatakshetra.com/docs/GAMIFICATION_IMPLEMENTATION_SOLUTION.md
+- Content seeding tasks: https://khatakshetra.com/docs/CONTENT_SEED_TASKS.md
+- SEO/AEO keyword map: https://khatakshetra.com/docs/SEO_AEO_KEYWORDS.md
+- UI style system: https://khatakshetra.com/docs/UI_COMPONENT_AND_STYLE_SYSTEM.md
+
+## Public Copy Rules
+
+Public pages should not mention internal words such as seed content, placeholder, content graph, or future features as if they already exist. If a feature is not live, frame it as an invitation, waitlist, or upcoming challenge.

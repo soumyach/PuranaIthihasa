@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
+Allow: /llms.txt
+Allow: /llm.txt
+Allow: /sitemap.xml
+Allow: /docs/
 
 Disallow: /api/
 Disallow: /admin/
