@@ -8,6 +8,8 @@ export default async function handler(req, res) {
   const email = ((body && body.email_id) || '').trim().toLowerCase();
   const ctaRaw = ((body && body.cta) || '').trim();
   const cta = normalizeCta(ctaRaw);
+  // P0-1: capture the child/family name the in-product modal collects.
+  const childName = ((body && body.child_name) || '').toString().trim().slice(0, 120);
 
   if (!isValidEmail(email)) {
     return res.status(400).json({ error: 'Invalid email' });
@@ -31,6 +33,11 @@ export default async function handler(req, res) {
     });
   }
 
+  // Only attach metadata when we actually have some, so duplicate upserts do
+  // not clobber a previously stored name with an empty object.
+  const row = { email_id: email, cta: cta };
+  if (childName) row.metadata = { child_name: childName };
+
   const baseUrl = `${supabaseUrl.replace(/\/$/, '')}/rest/v1/${table}`;
   const upsertResp = await fetch(`${baseUrl}?on_conflict=email_id,cta`, {
     method: 'POST',
@@ -40,7 +47,7 @@ export default async function handler(req, res) {
       Authorization: `Bearer ${serviceRoleKey}`,
       Prefer: 'resolution=merge-duplicates,return=minimal'
     },
-    body: JSON.stringify({ email_id: email, cta: cta })
+    body: JSON.stringify(row)
   });
 
   if (upsertResp.ok) {
@@ -59,7 +66,7 @@ export default async function handler(req, res) {
         Authorization: `Bearer ${serviceRoleKey}`,
         Prefer: 'return=minimal'
       },
-      body: JSON.stringify({ email_id: email, cta: cta })
+      body: JSON.stringify(row)
     });
 
     if (insertResp.ok) {
@@ -121,6 +128,11 @@ function normalizeCta(value) {
   if (key === 'quiz_shani_dev') return 'quiz_shani_dev';
   if (key === 'school_bulk') return 'school_bulk';
   if (key === 'nri_family') return 'nri_family';
+  // P0-1: previously any unlisted CTA returned '' and was rejected with 400.
+  // That dropped every in-product signup (quiz_unlock, progress_chip,
+  // ramayana_journey_save, family_quiz_room, temple_tip_*, festival_calendar,
+  // site_signup, ...). Accept any safe slug so those captures are saved.
+  if (/^[a-z0-9_]{2,40}$/.test(key)) return key;
   return '';
 }
 
