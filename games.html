@@ -10,13 +10,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="stories.html">Stories</a><a class="keep-mobile" href="games.html">Play</a><a href="community.html">Community</a><a href="kits.html">Kits</a></div></nav>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="daily.html">Daily</a><a href="stories.html">Stories</a><a class="keep-mobile" href="games.html">Play</a><a href="community.html">Community</a><a href="kits.html">Kits</a></div></nav>
 <header class="page-hero" style="--hero-image:linear-gradient(180deg,rgba(8,3,0,.2),rgba(8,3,0,.96)),url('Images/Meeting%20Hanuman.png')">
   <div class="hero-inner">
     <div class="eyebrow">Play with meaning</div>
     <h1>Story quizzes that unlock booklets, drawing pages, and family challenges.</h1>
     <p class="lead">Start with a five-question story round. Then come back for city leagues, temple-group rooms, festival competitions, and contributor unlocks.</p>
-    <div class="hero-actions"><a class="btn primary" href="ramayana-path-game.html">Play Ramayana Path</a><a class="btn" href="#quizLibrary">Play a Quiz</a><button class="btn ghost" onclick="localSignupIntent('games_waitlist')">Join Challenge Waitlist</button></div>
+    <div class="hero-actions"><a class="btn primary" href="daily.html">Play Today's Puzzle</a><a class="btn" href="ramayana-path-game.html">Ramayana Path</a><a class="btn" href="#quizLibrary">All Quizzes</a><button class="btn ghost" onclick="localSignupIntent('games_waitlist')">Join Challenge Waitlist</button></div>
   </div>
 </header>
 <main>
@@ -44,6 +44,12 @@
   </div>
 </div></section>
 <section class="band alt" id="quizLibrary"><div class="inner">
+  <article class="card featured" style="margin-bottom:1.25rem">
+    <div class="eyebrow">New &middot; Every day</div>
+    <h3>Today's Daily Puzzle</h3>
+    <p>A 60-second katha and a guess-the-deity puzzle. Build a streak, collect Talapatra cards, and share your result with family.</p>
+    <a class="btn primary" href="daily.html">Play today's puzzle</a>
+  </article>
   <div class="section-head">
     <div class="eyebrow">Playable quizzes</div>
     <h2 class="section-title">Choose a story round.</h2>
@@ -110,7 +116,7 @@ fetch('content/game-templates.json')
         <p>${game.coreLoop}</p>
         <div class="tag-row"><span class="tag">${game.players}</span><span class="tag">${game.duration}</span><span class="tag">${game.relatedPack}</span></div>
         <p><strong>Unlock:</strong> ${game.unlock}</p>
-        ${game.id === 'game.ramayana-story-path' ? '<a class="btn primary" href="ramayana-path-game.html">Play now</a>' : '<button class="btn" onclick="localSignupIntent(\\'' + game.id + '\\')">Request playtest</button>'}
+        ${game.id === 'game.ramayana-story-path' ? '<a class="btn primary" href="ramayana-path-game.html">Play now</a>' : '<button class="btn" onclick="localSignupIntent(\'' + game.id + '\')">Request playtest</button>'}
       </article>
     `).join('');
   });
