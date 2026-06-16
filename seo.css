@@ -1,0 +1,79 @@
+/* seo.css — styling for the pre-rendered deity / festival / temple pages.
+   Self-contained and on-brand (dark, warm, serif) so search-landing visitors
+   meet a polished page even though these are static, server-rendered files. */
+:root {
+  --seo-bg: #0d0704;
+  --seo-panel: #160f08;
+  --seo-ink: #f4ead9;
+  --seo-muted: #c9b491;
+  --seo-gold: #e8b94f;
+  --seo-line: rgba(232, 185, 79, 0.22);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background:
+    radial-gradient(120% 80% at 50% -10%, rgba(232,185,79,0.10), transparent 60%),
+    var(--seo-bg);
+  color: var(--seo-ink);
+  font-family: 'Crimson Text', Georgia, 'Times New Roman', serif;
+  font-size: 1.14rem;
+  line-height: 1.72;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--seo-gold); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.site-nav {
+  display: flex; align-items: center; gap: 1.5rem;
+  padding: 1.1rem 6%; border-bottom: 1px solid var(--seo-line);
+  flex-wrap: wrap;
+}
+.site-nav ul { display: flex; gap: 1.25rem; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
+.site-nav a { color: var(--seo-muted); font-size: 1rem; letter-spacing: .02em; }
+.site-nav a:hover { color: var(--seo-ink); }
+.site-brand {
+  font-family: 'Cinzel Decorative', 'Cinzel', serif; font-weight: 700;
+  font-size: 1.3rem; color: var(--seo-ink) !important; margin-right: auto;
+}
+
+main { max-width: 760px; margin: 0 auto; padding: 3.25rem 6% 4rem; }
+.entity-header h1 {
+  font-family: 'Cinzel', serif; font-weight: 700;
+  font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.08;
+  margin: 0 0 .5rem; color: #fff;
+}
+.temple-location, .festival-date { color: var(--seo-muted); margin: 0 0 .5rem; }
+.entity-summary p { font-size: 1.18rem; }
+h2 {
+  font-family: 'Cinzel', serif; color: var(--seo-gold);
+  font-size: 1.4rem; margin: 2.2rem 0 .6rem;
+}
+section { margin: 1.7rem 0; }
+
+.key-facts, .cta-links { list-style: none; padding: 0; margin: .5rem 0; }
+.key-facts li, .cta-links li { padding: .45rem 0; border-bottom: 1px solid var(--seo-line); }
+.cta-links a { font-weight: 600; }
+
+.related-links { list-style: none; padding: 0; margin: .5rem 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.related-links li { border: none; padding: 0; }
+.related-links a {
+  display: inline-block; padding: .35rem .85rem;
+  border: 1px solid var(--seo-line); border-radius: 999px; color: var(--seo-muted);
+}
+.related-links a:hover { color: var(--seo-ink); border-color: var(--seo-gold); text-decoration: none; }
+
+.deity-pack, .festival-activities, .temple-guide-cta, .temple-facts, .what-not-to-miss, .food-nearby {
+  background: var(--seo-panel); border: 1px solid var(--seo-line);
+  border-radius: 14px; padding: 1.25rem 1.4rem;
+}
+ul:not(.key-facts):not(.cta-links):not(.related-links) { padding-left: 1.2rem; }
+
+.site-footer {
+  border-top: 1px solid var(--seo-line); margin-top: 3rem;
+  padding: 2rem 6%; color: var(--seo-muted); font-size: .95rem; text-align: center;
+}
+@media (max-width: 600px) {
+  main { padding-top: 2.25rem; }
+  .site-brand { margin-right: 0; }
+}
