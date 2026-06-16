@@ -161,7 +161,7 @@
   }
 
 
-  
+
   .proof-card {
     border: 1px solid rgba(232,185,79,0.25);
     background: rgba(18,8,0,0.66);
@@ -1004,6 +1004,8 @@
     font-size: 0.9rem;
   }
 
+  .daily-hero-cta:hover { border-color: rgba(232,185,79,0.85) !important; transform: translateY(-1px); }
+
   @media (max-width: 920px) {
     .hero {
       grid-template-columns: 1fr;
@@ -1094,6 +1096,7 @@
   <nav class="nav" aria-label="Main navigation">
     <a class="brand" href="/">Khatakshetra</a>
     <div class="nav-links">
+      <a href="daily.html" class="keep-mobile">Daily</a>
       <a href="stories.html">Stories</a>
       <a href="temples.html">Temples</a>
       <a href="games.html">Play</a>
@@ -1105,6 +1108,10 @@
   <main>
     <section class="hero" id="home">
       <div>
+        <a class="daily-hero-cta" href="daily.html" style="display:inline-flex;align-items:center;gap:.55rem;margin-bottom:1.15rem;padding:.6rem .95rem;border:1px solid rgba(232,185,79,0.5);background:linear-gradient(135deg,rgba(232,185,79,0.16),rgba(224,123,26,0.12));color:var(--gold-bright);text-decoration:none;font-size:.8rem;letter-spacing:.06em">
+          <strong style="font-family:'Cinzel',serif;letter-spacing:.04em">Today's Katha &amp; Puzzle</strong>
+          <span style="color:var(--cream-dim);text-transform:none;letter-spacing:0">60-second story + daily puzzle &rarr;</span>
+        </a>
         <div class="eyebrow">Stories. Temples. Booklets. Games. Community.</div>
         <h1>The stories we inherited deserve to be lived, not just remembered.</h1>
         <p class="hero-copy">Khatakshetra turns Itihasa and Purana stories into experiences you can read, play, draw, visit, discuss, compete in, and pass on. Start with a free Ramayana unlock today.</p>
