@@ -13,6 +13,70 @@ const KHATAKSHETRA_TITLES = [
 let pendingSignupCta = 'site_signup';
 let pendingSignupCallback = null;
 
+// ---------------------------------------------------------------------------
+// Analytics (added for P0-2). Wired site-wide via site.js so every page is
+// covered without editing each HTML file. No-op until the IDs below are set,
+// so this is safe to deploy with empty values.
+// ---------------------------------------------------------------------------
+const KHATAKSHETRA_ANALYTICS = {
+  ga4Id: '',            // e.g. 'G-XXXXXXXXXX'  (Google Analytics 4 Measurement ID)
+  posthogKey: '',       // e.g. 'phc_xxxxxxxx'  (PostHog project API key)
+  posthogHost: 'https://us.i.posthog.com'
+};
+let khatakshetraAnalyticsReady = false;
+
+function initKhatakshetraAnalytics() {
+  if (khatakshetraAnalyticsReady) return;
+  khatakshetraAnalyticsReady = true;
+  // Google Analytics 4
+  if (KHATAKSHETRA_ANALYTICS.ga4Id && KHATAKSHETRA_ANALYTICS.ga4Id.indexOf('G-') === 0) {
+    const tag = document.createElement('script');
+    tag.async = true;
+    tag.src = `https://www.googletagmanager.com/gtag/js?id=${KHATAKSHETRA_ANALYTICS.ga4Id}`;
+    document.head.appendChild(tag);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', KHATAKSHETRA_ANALYTICS.ga4Id);
+  }
+  // PostHog (loaded from CDN; init on load)
+  if (KHATAKSHETRA_ANALYTICS.posthogKey && KHATAKSHETRA_ANALYTICS.posthogKey.indexOf('phc_') === 0) {
+    const ph = document.createElement('script');
+    ph.async = true;
+    ph.src = 'https://cdn.jsdelivr.net/npm/posthog-js@1/dist/array.full.js';
+    ph.onload = function () {
+      if (window.posthog && typeof window.posthog.init === 'function') {
+        window.posthog.init(KHATAKSHETRA_ANALYTICS.posthogKey, {
+          api_host: KHATAKSHETRA_ANALYTICS.posthogHost,
+          person_profiles: 'identified_only'
+        });
+      }
+    };
+    document.head.appendChild(ph);
+  }
+}
+
+// Send one event to GA4, PostHog, and first-party Supabase (/api/event).
+// Every channel is wrapped so analytics can never break the page.
+function trackKhatakshetraEvent(eventName, properties) {
+  properties = properties || {};
+  try { if (window.gtag) window.gtag('event', eventName, properties); } catch (e) {}
+  try { if (window.posthog && window.posthog.capture) window.posthog.capture(eventName, properties); } catch (e) {}
+  try {
+    const raw = JSON.parse(localStorage.getItem(KHATAKSHETRA_PROFILE_KEY) || 'null');
+    fetch('/api/event', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        event_name: eventName,
+        anonymous_id: raw && raw.anonymous_id ? raw.anonymous_id : null,
+        event_properties: properties
+      }),
+      keepalive: true
+    }).catch(function () {});
+  } catch (e) {}
+}
+
 function getKhatakshetraProfile() {
   const existing = JSON.parse(localStorage.getItem(KHATAKSHETRA_PROFILE_KEY) || 'null');
   if (existing && existing.anonymous_id) {
@@ -104,6 +168,8 @@ function awardKhatakshetraProgress(eventName, options = {}) {
     properties: options.properties || {},
     created_at: new Date().toISOString()
   });
+  // P0-2: also emit the event to analytics (GA4 / PostHog / first-party).
+  trackKhatakshetraEvent(eventName, Object.assign({ xp: xp, track: track, unlock: options.unlock || '' }, options.properties || {}));
   if (options.card) addTalapatraCard(options.card, profile);
   return saveKhatakshetraProfile(profile);
 }
@@ -266,6 +332,16 @@ function saveKhatakshetraSignupFromModal(event) {
   const existing = JSON.parse(localStorage.getItem(KHATAKSHETRA_SIGNUPS_KEY) || '[]');
   existing.push({ email, child_name: childName, cta: pendingSignupCta, captured_at: new Date().toISOString() });
   localStorage.setItem(KHATAKSHETRA_SIGNUPS_KEY, JSON.stringify(existing));
+
+  // P0-1: actually send the signup to the server. Previously this modal saved
+  // only to localStorage, so in-product signups never reached Supabase.
+  fetch('/api/email-capture', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email_id: email, cta: pendingSignupCta, child_name: childName })
+  }).catch(function () {});
+  trackKhatakshetraEvent('signup_intent_saved', { cta: pendingSignupCta });
+
   closeKhatakshetraSignupModal();
   if (pendingSignupCallback) pendingSignupCallback(profile);
   pendingSignupCallback = null;
@@ -328,4 +404,5 @@ function closeTalapatraReveal() {
 document.addEventListener('DOMContentLoaded', () => {
   ensureKhatakshetraShell();
   renderKhatakshetraProgressChip();
+  initKhatakshetraAnalytics();
 });
