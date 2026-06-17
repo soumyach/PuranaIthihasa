@@ -16,7 +16,7 @@
     <div class="eyebrow">Temple Guides</div>
     <h1>Go for darshan with the story, the ritual meaning, and the practical path in hand.</h1>
     <p class="lead">Explore temple stories, what not to miss, how to reach, food nearby, and local tips from families who have gone recently.</p>
-    <div class="hero-actions"><a class="btn primary" href="#templeGrid">Explore Guides</a><button class="btn ghost" onclick="localSignupIntent('temple_updates')">Get Temple Updates</button></div>
+    <div class="hero-actions"><a class="btn primary" href="#templeGrid">Explore Guides</a><a class="btn" href="temple-tips.html">Read &amp; share tips</a><button class="btn ghost" onclick="localSignupIntent('temple_updates')">Get Temple Updates</button></div>
   </div>
 </header>
 <main>
@@ -34,7 +34,7 @@
       <h2 class="section-title">Help make temple guides better.</h2>
       <p class="section-copy">Share current queue advice, food recommendations, accessibility notes, or respectful ritual tips. Helpful approved tips earn contribution points.</p>
     </div>
-    <button class="btn primary" onclick="saveTempleTip('general')">Share a Temple Tip</button>
+    <a class="btn primary" href="temple-tips.html">Share a Temple Tip</a>
   </div>
 </div></section>
 </main>
@@ -53,15 +53,10 @@ fetch('content/temple-guides.json?v=20260518b')
         <p><strong>How to reach:</strong> ${guide.howToReach}</p>
         <p><strong>Do not miss:</strong> ${guide.whatNotToMiss.join(', ')}.</p>
         <p><strong>Food nearby:</strong> ${guide.foodNearby.join(', ')}.</p>
-        <button class="btn primary" onclick="saveTempleTip('${guide.slug}')">Add local tip</button>
+        <a class="btn primary" href="temple-tips.html?temple=${guide.slug}">See &amp; add tips</a>
       </article>
     `).join('');
   });
-
-function saveTempleTip(slug) {
-  awardKhatakshetraProgress('temple_tip_saved', { unlock: `temple-tip-${slug}`, properties: { slug } });
-  localSignupIntent(`temple_tip_${slug}`);
-}
 </script>
 </body>
 </html>
