@@ -71,14 +71,28 @@
   .text-link { color: var(--gold-bright); text-decoration: none; font-size: 0.95rem; }
   .text-link:hover { text-decoration: underline; }
 
-  /* ---- HERO: one promise, one image, one action ---- */
-  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; padding: clamp(3rem, 7vw, 5.5rem) 0; }
-  .hero h1 { font-family: 'Cinzel', serif; font-size: clamp(2.3rem, 4.6vw, 4rem); line-height: 1.06; margin: 0 0 1.1rem; color: var(--gold-bright); }
-  .hero p.sub { color: var(--body); font-size: clamp(1.1rem, 1.7vw, 1.3rem); margin: 0 0 1.6rem; max-width: 38ch; }
+  /* ---- HERO: one promise, a rotating darshan, one action + pillar row ---- */
+  .hero-zone { position: relative; background: linear-gradient(180deg, rgba(42,24,7,0.55), rgba(11,5,2,0) 72%); border-bottom: 1px solid var(--line-soft); }
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; padding: clamp(2.6rem, 6vw, 4.6rem) 0 clamp(2rem, 4vw, 3rem); }
+  .hero h1 { font-family: 'Cinzel', serif; font-size: clamp(2.2rem, 4.4vw, 3.8rem); line-height: 1.07; margin: 0 0 1.1rem; color: var(--gold-bright); }
+  .hero p.sub { color: var(--body); font-size: clamp(1.08rem, 1.6vw, 1.28rem); margin: 0 0 1.7rem; max-width: 40ch; }
   .hero-actions { display: flex; align-items: center; gap: 1.1rem; flex-wrap: wrap; }
-  .trust { margin-top: 1.4rem; color: var(--dim); font-size: 0.9rem; }
+  .btn-ico { flex: none; }
+  .trust { margin-top: 1.5rem; color: var(--dim); font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; }
+  .trust svg { flex: none; color: var(--gold); }
   .hero-art { position: relative; }
-  .hero-art img { width: 100%; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); aspect-ratio: 5/4; object-fit: cover; }
+  .hero-stage { position: relative; aspect-ratio: 5/4; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: #1a0f05; }
+  .hero-stage img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1.1s ease; }
+  .hero-stage img.active { opacity: 1; }
+  .hero-stage::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, transparent 50%, rgba(7,3,0,0.6)); }
+  .hero-caption { position: absolute; left: 16px; bottom: 13px; z-index: 2; color: var(--cream); font-family: 'Cinzel', serif; font-size: 0.95rem; letter-spacing: 0.04em; text-shadow: 0 2px 10px rgba(0,0,0,0.7); }
+  .pillars { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 1rem; padding-bottom: clamp(2.6rem, 5vw, 4rem); }
+  .pillar { text-align: center; border: 1px solid var(--line); background: rgba(20,11,3,0.62); border-radius: var(--radius); padding: 1.5rem 1.2rem; text-decoration: none; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+  a.pillar:hover { transform: translateY(-3px); border-color: rgba(232,185,79,0.5); box-shadow: var(--shadow); }
+  .pillar .badge { display: grid; place-items: center; width: 56px; height: 56px; margin: 0 auto 0.9rem; border: 1px solid rgba(232,185,79,0.5); border-radius: 50%; color: var(--gold-bright); }
+  .pillar .badge svg { width: 26px; height: 26px; }
+  .pillar h3 { font-family: 'Cinzel', serif; color: var(--gold-bright); font-size: 1.04rem; margin: 0 0 0.4rem; }
+  .pillar p { color: var(--dim); font-size: 0.88rem; margin: 0; line-height: 1.5; }
 
   .band { padding: clamp(3rem, 6vw, 4.5rem) 0; }
   .band.alt { background: rgba(26,13,4,0.5); border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); }
@@ -117,6 +131,7 @@
   .modal-panel h2 { font-family: 'Cinzel', serif; color: var(--gold-bright); margin: 0.3rem 2rem 0.6rem 0; line-height: 1.1; }
   .modal-close { position: absolute; right: 0.8rem; top: 0.8rem; width: 36px; height: 36px; border: 1px solid rgba(232,185,79,0.28); background: rgba(8,3,0,0.52); color: var(--cream); border-radius: var(--radius-sm); cursor: pointer; }
 
+  @media (max-width: 980px) { .pillars { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 860px) {
     .hero, .grid3, .offer, .strip { grid-template-columns: 1fr; }
     .hero-art { order: -1; }
@@ -143,21 +158,52 @@
   </nav>
 
   <main>
-    <section class="wrap hero" id="home">
-      <div>
-        <div class="eyebrow">Itihasa &amp; Purana, brought to life</div>
-        <h1>The stories we inherited deserve to be lived, not just remembered.</h1>
-        <p class="sub">A little every day &mdash; read a katha, solve a puzzle, play a quiz, colour a scene, and pass it on. For the whole family.</p>
-        <div class="hero-actions">
-          <a class="btn primary big" href="daily.html">Play today's Katha &amp; Puzzle</a>
-          <a class="text-link" href="#explore">See everything you can do &darr;</a>
+    <div class="hero-zone">
+      <section class="wrap hero" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow">Itihasa &amp; Purana, brought to life</div>
+          <h1>The stories we inherited deserve to be lived, not just remembered.</h1>
+          <p class="sub">Timeless wisdom. Immersive storytelling. Meaningful play &mdash; for the whole family.</p>
+          <div class="hero-actions">
+            <a class="btn primary big" href="daily.html"><svg class="btn-ico" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Play today's Katha &amp; Puzzle</a>
+            <a class="text-link" href="#explore">See everything you can do &darr;</a>
+          </div>
+          <p class="trust"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16" aria-hidden="true"><path d="M12 3l7 3v5c0 4.2-2.9 7.4-7 8.5-4.1-1.1-7-4.3-7-8.5V6z"/></svg>Source-aware stories &middot; Free to start &middot; No child account needed</p>
         </div>
-        <p class="trust">Source-aware stories &middot; No child account needed &middot; English, with Hindi &amp; Telugu next</p>
+        <div class="hero-art">
+          <div class="hero-stage" role="img" aria-label="A rotating darshan of beloved deities">
+            <img class="deity active" src="Images/hero/rama.jpg" data-name="Bhagwan Rama" alt="Bhagwan Rama, divine prince of Ayodhya, holding his bow" fetchpriority="high" width="600" height="480">
+            <img class="deity" src="Images/hero/krishna.jpg" data-name="Bhagwan Krishna" alt="Bhagwan Krishna playing his flute" width="600" height="480">
+            <img class="deity" src="Images/hero/durga.jpg" data-name="Maa Durga" alt="Maa Durga, the warrior mother goddess, upon her lion" width="600" height="480">
+            <img class="deity" src="Images/hero/shiva.jpg" data-name="Bhagwan Shiva" alt="Bhagwan Shiva in meditation" width="600" height="480">
+            <img class="deity" src="Images/hero/ganesha.jpg" data-name="Bhagwan Ganesha" alt="Bhagwan Ganesha, the remover of obstacles" width="600" height="480">
+            <div class="hero-caption" id="deityName">Bhagwan Rama</div>
+          </div>
+        </div>
+      </section>
+      <div class="wrap pillars">
+        <a class="pillar" href="stories.html">
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M12 6c-1.6-1.1-3.7-1.6-6-1.5v12c2.3-.1 4.4.4 6 1.5 1.6-1.1 3.7-1.6 6-1.5v-12c-2.3-.1-4.4.4-6 1.5z"/><path d="M12 6v12"/></svg></span>
+          <h3>Timeless Stories</h3>
+          <p>Curated Itihasa &amp; Purana tales for all ages.</p>
+        </a>
+        <a class="pillar" href="games.html">
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M9 4.5a1.5 1.5 0 0 1 3 0c0 .6.5 1 1.1 1H16a1 1 0 0 1 1 1v2.4c0 .6.4 1.1 1 1.1a1.5 1.5 0 0 1 0 3c-.6 0-1 .5-1 1.1V18a1 1 0 0 1-1 1h-2.4c-.6 0-1.1.4-1.1 1a1.5 1.5 0 0 1-3 0c0-.6-.5-1-1.1-1H6a1 1 0 0 1-1-1v-2.9c0-.6-.4-1-1-1a1.5 1.5 0 0 1 0-3c.6 0 1-.5 1-1.1V6a1 1 0 0 1 1-1h1.9c.6 0 1.1-.4 1.1-1z"/></svg></span>
+          <h3>Play &amp; Learn</h3>
+          <p>Kathas, puzzles &amp; games that make learning joyful.</p>
+        </a>
+        <a class="pillar" href="temples.html">
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 4H5z"/><path d="M6 7v10M10 7v10M14 7v10M18 7v10"/><path d="M4 17h16v3H4z"/></svg></span>
+          <h3>Sacred Connections</h3>
+          <p>Explore temples, tirthas &amp; their glorious legends.</p>
+        </a>
+        <a class="pillar" href="daily.html">
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.2"/><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/><path d="M15.5 14c2.4.1 4.5 2 4.5 4.5"/></svg></span>
+          <h3>Family Time</h3>
+          <p>Meaningful content that brings families closer.</p>
+        </a>
       </div>
-      <div class="hero-art">
-        <img src="ChildrenBook/Cover.png" alt="Illustrated Ramayana cover art" fetchpriority="high" width="600" height="480">
-      </div>
-    </section>
+    </div>
 
     <section class="band alt" id="explore">
       <div class="wrap">
@@ -324,6 +370,30 @@
       finally { form.reset(); submit.disabled = false; submit.textContent = original; }
     });
   });
+
+  // Rotating darshan: crossfade the hero deity every few seconds.
+  (function () {
+    const stage = document.querySelector('.hero-stage');
+    if (!stage) return;
+    const slides = Array.prototype.slice.call(stage.querySelectorAll('img.deity'));
+    const caption = document.getElementById('deityName');
+    // If a deity image is missing, fall back once to existing cover art so the hero is never blank.
+    slides.forEach(function (img) {
+      img.addEventListener('error', function () {
+        if (!img.dataset.fellback) { img.dataset.fellback = '1'; img.src = 'ChildrenBook/Cover.png'; }
+      });
+    });
+    if (slides.length < 2) return;
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) return; // honour reduced-motion: show the first darshan only
+    let i = 0;
+    setInterval(function () {
+      slides[i].classList.remove('active');
+      i = (i + 1) % slides.length;
+      slides[i].classList.add('active');
+      if (caption) caption.textContent = slides[i].getAttribute('data-name') || '';
+    }, 4500);
+  })();
 </script>
 </body>
 </html>
