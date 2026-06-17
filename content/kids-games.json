@@ -1,0 +1,39 @@
+{
+  "memory": {
+    "title": "Memory Match",
+    "pairs": [
+      { "label": "Ganesha", "emoji": "🐘" },
+      { "label": "Hanuman", "emoji": "🚩" },
+      { "label": "Shiva", "emoji": "🔱" },
+      { "label": "Lakshmi", "emoji": "🪔" },
+      { "label": "Saraswati", "emoji": "🦢" },
+      { "label": "Krishna", "emoji": "🪈" }
+    ]
+  },
+  "vahana": {
+    "title": "Match the Vahana",
+    "pairs": [
+      { "deity": "Ganesha", "vahana": "Mooshika (mouse)", "emoji": "🐁" },
+      { "deity": "Shiva", "vahana": "Nandi (bull)", "emoji": "🐂" },
+      { "deity": "Vishnu", "vahana": "Garuda (eagle)", "emoji": "🦅" },
+      { "deity": "Durga", "vahana": "Lion", "emoji": "🦁" },
+      { "deity": "Saraswati", "vahana": "Swan", "emoji": "🦢" },
+      { "deity": "Kartikeya", "vahana": "Peacock", "emoji": "🦚" }
+    ]
+  },
+  "sequence": {
+    "title": "Put the Story in Order",
+    "items": [
+      "Rama is born in Ayodhya",
+      "Rama wins Sita's hand at the swayamvar",
+      "Rama accepts fourteen years of exile",
+      "Hanuman meets Rama in the forest",
+      "Rama returns home to Ayodhya"
+    ]
+  },
+  "jigsaw": {
+    "title": "Sliding Picture Puzzle",
+    "image": "/ChildrenBook/Cover.png",
+    "size": 3
+  }
+}
