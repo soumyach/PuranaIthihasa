@@ -463,11 +463,103 @@ ${footerBlock()}
 
 // ── MAIN ──────────────────────────────────────────────────────────────────────
 
+// ── STORY PAGES ───────────────────────────────────────────────────────────────
+
+function buildStoryPage(story) {
+  const { slug, title, summary, kidSummary, seo = {}, aeo = {}, sourceRefs = [], themes = [], entities = [], relatedActivities = [] } = story;
+  const canonicalUrl = `https://khatakshetra.com/story/${slug}`;
+  const pageTitle = (seo.title ? seo.title : `${title} — Ramayana & Purana Story`) + ' | Khatakshetra';
+  const metaDesc = truncate(seo.description || summary, 155);
+
+  const deityLinks = entities
+    .filter(e => e.startsWith('deity.'))
+    .map(e => {
+      const s = e.replace(/^deity\./, '');
+      const label = s.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+      return `<a href="/deity/${s}">${escHtml(label)}</a>`;
+    });
+
+  const quizLinks = relatedActivities
+    .filter(a => a.startsWith('quiz.'))
+    .map(a => `<li><a href="/quiz-game.html?quiz=${a.replace(/^quiz\./, '')}">Play the related quiz</a></li>`);
+
+  const sources = sourceRefs.map(r => {
+    const label = [r.text, r.section, r.sarga ? `Sarga ${r.sarga}` : ''].filter(Boolean).join(' · ');
+    return r.url
+      ? `<li><a href="${escHtml(r.url)}" target="_blank" rel="noopener noreferrer">${escHtml(label)}</a></li>`
+      : `<li>${escHtml(label)}</li>`;
+  }).join('\n        ');
+
+  const articleLd = { '@context': 'https://schema.org', '@type': 'Article', headline: pageTitle, description: metaDesc, url: canonicalUrl, publisher: { '@type': 'Organization', name: 'Khatakshetra', url: 'https://khatakshetra.com' }, mainEntityOfPage: canonicalUrl };
+  const breadcrumbLd = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [ { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://khatakshetra.com/' }, { '@type': 'ListItem', position: 2, name: 'Stories', item: 'https://khatakshetra.com/stories' }, { '@type': 'ListItem', position: 3, name: title, item: canonicalUrl } ] };
+  const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: [ { '@type': 'Question', name: `What is the story of ${title}?`, acceptedAnswer: { '@type': 'Answer', text: aeo.shortAnswer || summary } } ] };
+
+  const extraJsonLd = [
+    `<script type="application/ld+json">${JSON.stringify(articleLd)}</script>`,
+    `<script type="application/ld+json">${JSON.stringify(breadcrumbLd)}</script>`,
+    `<script type="application/ld+json">${JSON.stringify(faqLd)}</script>`
+  ].join('\n  ');
+
+  return `<!DOCTYPE html>
+<html lang="en">
+${headBlock({ title: pageTitle, description: metaDesc, canonicalUrl, ogType: 'article', extraJsonLd })}
+<body>
+${navBlock()}
+<main class="story-page">
+  <article>
+    <header class="entity-header">
+      <h1>${escHtml(title)}</h1>
+    </header>
+    <section class="entity-summary">
+      <p>${escHtml(summary)}</p>
+      ${kidSummary ? `<p><strong>For children:</strong> ${escHtml(kidSummary)}</p>` : ''}
+    </section>
+    ${themes.length ? `<section class="story-themes"><h2>Themes</h2><div class="tag-row">${themes.map(t => `<span class="tag">${escHtml(t)}</span>`).join('')}</div></section>` : ''}
+    ${deityLinks.length ? `<section class="related-entities"><h2>Who's in this story</h2><ul class="related-links">${deityLinks.map(l => `<li>${l}</li>`).join('')}</ul></section>` : ''}
+    <section class="story-activities">
+      <h2>Explore this story</h2>
+      <ul class="cta-links">
+        ${quizLinks.join('\n        ')}
+        <li><a href="/stories">All stories</a></li>
+      </ul>
+    </section>
+    ${sources ? `<section class="story-sources"><h2>Sources</h2><ul>${sources}</ul></section>` : ''}
+  </article>
+</main>
+${footerBlock()}
+</body>
+</html>`;
+}
+
+// ── SITEMAP ───────────────────────────────────────────────────────────────────
+
+function writeSitemap(entities, packBySlug, festivals, temples, stories) {
+  const base = 'https://khatakshetra.com';
+  const urls = [];
+  const add = (loc, priority) => urls.push(`  <url><loc>${base}${loc}</loc><priority>${priority}</priority></url>`);
+  add('/', '1.0');
+  ['/stories', '/deities', '/games', '/festivals', '/temples'].forEach(u => add(u, '0.9'));
+  add('/daily', '0.9'); add('/which-character', '0.8'); add('/paths', '0.7');
+  ['/ramayana-journey', '/ramayana-path-game'].forEach(u => add(u, '0.8'));
+  ['/booklets', '/drawing-kits', '/kits', '/coloring-book-ramayana', '/storybook-ramayana', '/rama-navami-reader'].forEach(u => add(u, '0.7'));
+  ['/sangraha', '/community'].forEach(u => add(u, '0.6'));
+  ['ramayana-starter', 'dasharatha-meets-shani', 'ganesha-beginnings', 'dashavatara'].forEach(p => add(`/story-experience?pack=${p}`, '0.8'));
+  entities.filter(e => e.type === 'Deity' || packBySlug[e.slug]).forEach(e => add(`/deity/${e.slug}`, '0.7'));
+  festivals.forEach(f => add(`/festival/${f.slug}`, '0.8'));
+  temples.forEach(t => add(`/temple/${t.slug}`, '0.8'));
+  stories.forEach(s => add(`/story/${s.slug}`, '0.7'));
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`;
+  fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), xml, 'utf8');
+}
+
+// ── MAIN ──────────────────────────────────────────────────────────────────────
+
 function main() {
   const entities = readJSON('entities.json');
   const packs = readJSON('deity-experience-packs.json');
   const festivals = readJSON('festival-pages-2026.json');
   const temples = readJSON('temple-guides.json');
+  const stories = readJSON('stories.json');
 
   // Build slug→pack map
   const packBySlug = {};
@@ -518,11 +610,25 @@ function main() {
     templeCount++;
   }
 
+  // Story pages
+  const storyDir = path.join(ROOT, 'story');
+  ensureDir(storyDir);
+  let storyCount = 0;
+  for (const story of stories) {
+    fs.writeFileSync(path.join(storyDir, `${story.slug}.html`), buildStoryPage(story), 'utf8');
+    storyCount++;
+  }
+
+  // Sitemap: covers static pages + all generated entity/story pages.
+  writeSitemap(entities, packBySlug, festivals, temples, stories);
+
   console.log(`Done.`);
   console.log(`  Deity pages:   ${deityCount}`);
   console.log(`  Festival pages: ${festivalCount}`);
   console.log(`  Temple pages:   ${templeCount}`);
+  console.log(`  Story pages:    ${storyCount}`);
   console.log(`  Skipped:        ${skipped.length}`);
+  console.log(`  sitemap.xml written.`);
   if (skipped.length) console.log(`  Skipped list:  ${skipped.join('; ')}`);
 }
 
