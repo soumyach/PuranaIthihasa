@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temple Tips - Khatakshetra</title>
+<meta name="description" content="Real visitor tips for major temples — queue advice, darshan timings, food nearby, accessibility, and etiquette. Share your own; tips are reviewed before they appear.">
+<link rel="canonical" href="https://khatakshetra.com/temple-tips">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="temples.html">Temples</a><a href="stories.html">Stories</a><a class="keep-mobile" href="games.html">Play</a><a href="daily.html">Daily</a></div></nav>
+<header class="page-hero">
+  <div class="hero-inner">
+    <div class="eyebrow">From families who have been</div>
+    <h1>Temple Tips</h1>
+    <p class="lead">Real, recent advice for darshan: queues, timings, food nearby, accessibility, and etiquette. Share yours &mdash; every tip is reviewed before it appears.</p>
+  </div>
+</header>
+<main>
+<section class="band"><div class="inner" style="max-width:760px;margin:0 auto">
+  <label style="display:block;margin-bottom:1rem">Choose a temple
+    <select id="templeSelect" class="field" style="display:block;width:100%;margin-top:.4rem"></select>
+  </label>
+
+  <article class="card" style="margin-bottom:1.25rem">
+    <div class="eyebrow">Share a tip</div>
+    <h3 id="tipTempleName">&nbsp;</h3>
+    <form id="tipForm" class="signup-form">
+      <label>Tip type
+        <select id="tipType" class="field" style="display:block;width:100%;margin-top:.3rem">
+          <option value="timings">Darshan timings / queue</option>
+          <option value="how_to_reach">How to reach</option>
+          <option value="food">Food nearby</option>
+          <option value="accessibility">Accessibility</option>
+          <option value="etiquette">Etiquette / what to wear</option>
+          <option value="general">General tip</option>
+        </select>
+      </label>
+      <label>Your tip
+        <textarea id="tipBody" class="field" rows="3" maxlength="1000" required placeholder="e.g. Go before 7am on weekdays to avoid the longest queue." style="display:block;width:100%;margin-top:.3rem"></textarea>
+      </label>
+      <label>Month you visited (optional)
+        <input id="tipMonth" class="field" type="text" maxlength="20" placeholder="e.g. March 2026" style="display:block;width:100%;margin-top:.3rem">
+      </label>
+      <button class="btn primary" type="submit">Submit tip for review</button>
+      <p class="fine-print" id="tipMsg">Tips are reviewed before they appear, to keep them accurate and respectful.</p>
+    </form>
+  </article>
+
+  <div class="section-head"><h2 class="section-title" style="font-size:1.5rem">Approved tips</h2></div>
+  <div id="tipList"><article class="card"><p>Loading tips&hellip;</p></article></div>
+</div></section>
+</main>
+<footer><a href="/">Home</a> &middot; <a href="temples.html">Temple guides</a></footer>
+<script src="site.js"></script>
+<script src="community-tips.js"></script>
+<script>
+const T = window.KhatakshetraTips;
+let temples = [];
+function currentSlug() { return document.getElementById('templeSelect').value; }
+function currentName() { const o = document.getElementById('templeSelect').selectedOptions[0]; return o ? o.textContent : ''; }
+
+async function renderTips() {
+  const slug = currentSlug();
+  document.getElementById('tipTempleName').textContent = currentName();
+  const list = document.getElementById('tipList');
+  const tips = await T.listApproved(slug);
+  if (tips === null) { list.innerHTML = '<article class="card"><p>Community tips go live once accounts are enabled.</p></article>'; return; }
+  if (!tips.length) { list.innerHTML = '<article class="card"><p>No approved tips yet for this temple. Be the first to share one above.</p></article>'; return; }
+  list.innerHTML = tips.map(function (t) {
+    const when = t.visit_month ? ' &middot; visited ' + t.visit_month : '';
+    return '<article class="card"><div class="eyebrow">' + (t.tip_type || 'tip').replace(/_/g, ' ') + when + '</div><p>' + (t.body || '') + '</p></article>';
+  }).join('');
+}
+
+document.getElementById('tipForm').addEventListener('submit', async function (e) {
+  e.preventDefault();
+  const msg = document.getElementById('tipMsg');
+  const body = document.getElementById('tipBody').value;
+  const signedIn = await T.signedIn();
+  if (!signedIn) {
+    msg.textContent = 'Please save your progress (sign in) so we can credit and review your tip.';
+    if (typeof localSignupIntent === 'function') localSignupIntent('temple_tip');
+    return;
+  }
+  const res = await T.submit(currentSlug(), document.getElementById('tipType').value, body, document.getElementById('tipMonth').value);
+  if (res.ok) {
+    msg.textContent = 'Thank you! Your tip has been submitted and will appear after review.';
+    document.getElementById('tipBody').value = '';
+    document.getElementById('tipMonth').value = '';
+    if (typeof awardKhatakshetraProgress === 'function') { try { awardKhatakshetraProgress('temple_tip_saved', { properties: { temple: currentSlug() } }); } catch (e2) {} }
+  } else if (res.reason === 'config') {
+    msg.textContent = 'Tips will be enabled soon — thanks for your patience.';
+  } else {
+    msg.textContent = 'Sorry, that did not save. Please try again.';
+  }
+});
+
+fetch('content/temple-guides.json?v=1')
+  .then(function (r) { return r.json(); })
+  .then(function (guides) {
+    temples = guides;
+    const sel = document.getElementById('templeSelect');
+    const requested = new URLSearchParams(location.search).get('temple');
+    sel.innerHTML = guides.map(function (g) { return '<option value="' + g.slug + '">' + g.name + '</option>'; }).join('');
+    if (requested && guides.some(function (g) { return g.slug === requested; })) sel.value = requested;
+    sel.addEventListener('change', renderTips);
+    renderTips();
+  })
+  .catch(function () { document.getElementById('tipList').innerHTML = '<article class="card"><p>Could not load temples.</p></article>'; });
+</script>
+</body>
+</html>
