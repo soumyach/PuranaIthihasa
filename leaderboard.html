@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Leaderboard - Khatakshetra</title>
+<meta name="description" content="This week's most active Khatakshetra learners. Opt in with a handle to join the friendly weekly board.">
+<link rel="canonical" href="https://khatakshetra.com/leaderboard">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  .lb-row { display:flex; align-items:center; gap:1rem; padding:.6rem .25rem; border-bottom:1px solid rgba(232,185,79,.18); }
+  .lb-rank { width:2rem; text-align:center; font-family:'Cinzel',serif; color:var(--gold); }
+  .lb-handle { flex:1; min-width:0; }
+  .lb-xp { color:var(--gold); font-weight:600; }
+  .lb-row.is-you { background:rgba(232,185,79,.10); border-radius:8px; }
+</style>
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="daily.html">Daily</a><a href="stories.html">Stories</a><a class="keep-mobile" href="games.html">Play</a><a href="paths.html">Paths</a><a href="sangraha.html">Sangraha</a></div></nav>
+<header class="page-hero">
+  <div class="hero-inner">
+    <div class="eyebrow">This week &middot; friendly &amp; winnable</div>
+    <h1>Weekly Leaderboard</h1>
+    <p class="lead">The week's most active learners. Opt in with just a first name or handle &mdash; no full names, no all-time global pressure. It resets every week.</p>
+  </div>
+</header>
+<main>
+<section class="band"><div class="inner">
+  <div id="lbControl" style="margin-bottom:1rem"></div>
+  <div id="lbApp" class="game-board" style="max-width:640px;margin:0 auto">
+    <article class="card"><h3>Loading the board&hellip;</h3></article>
+  </div>
+</div></section>
+</main>
+<footer><a href="/">Home</a> &middot; <a href="games.html">Games</a> &middot; <a href="paths.html">Your Paths</a></footer>
+<script src="site.js"></script>
+<script src="community.js"></script>
+<script>
+const C = window.KhatakshetraCommunity;
+
+async function render() {
+  const st = await C.status();
+  const control = document.getElementById('lbControl');
+  const appEl = document.getElementById('lbApp');
+
+  if (!st.configured) {
+    control.innerHTML = '';
+    appEl.innerHTML = '<article class="card"><h3>The leaderboard goes live with accounts.</h3><p>Once sign-in is enabled, opt in here to join the friendly weekly board.</p></article>';
+    return;
+  }
+
+  // Keep the signed-in, opted-in user's entry current for this week.
+  if (st.signedIn && st.optedIn) { try { await C.refreshOwnEntry(); } catch (e) {} }
+
+  // Opt-in / opt-out control
+  if (!st.signedIn) {
+    control.innerHTML = '<article class="card"><div class="eyebrow">Join the board</div><p>Save your progress (sign in) to opt into the weekly leaderboard.</p><button class="btn primary" type="button" onclick="localSignupIntent(\'leaderboard\')">Sign in to join</button></article>';
+  } else if (!st.optedIn) {
+    control.innerHTML = '<article class="card"><div class="eyebrow">Join the board</div><label>Display name (first name or a handle) <input id="lbHandle" class="field" type="text" maxlength="40" placeholder="e.g. Anika or Rao family" style="display:block;width:100%;margin:.4rem 0"></label><button class="btn primary" type="button" id="lbJoin">Join this week\'s board</button></article>';
+    const join = document.getElementById('lbJoin');
+    if (join) join.addEventListener('click', async function () {
+      const h = (document.getElementById('lbHandle') || {}).value || '';
+      await C.join(h);
+      render();
+    });
+  } else {
+    control.innerHTML = '<div class="cta-strip"><div><div class="eyebrow">You are on the board</div><p style="margin:0">Showing as <strong>' + (st.handle || 'A learner') + '</strong> this week.</p></div><button class="btn" type="button" id="lbLeave">Leave board</button></div>';
+    const leave = document.getElementById('lbLeave');
+    if (leave) leave.addEventListener('click', async function () { await C.leave(); render(); });
+  }
+
+  // The board itself
+  const rows = await C.top(25);
+  if (!rows || !rows.length) {
+    appEl.innerHTML = '<article class="card"><h3>No one\'s on the board yet this week.</h3><p>Be the first &mdash; opt in above.</p></article>';
+    return;
+  }
+  appEl.innerHTML = '<article class="card">' + rows.map(function (r, i) {
+    const you = st.handle && r.handle === st.handle ? ' is-you' : '';
+    return '<div class="lb-row' + you + '"><span class="lb-rank">' + (i + 1) + '</span><span class="lb-handle">' + r.handle + ' <small style="color:var(--cream-dim,#bea882)">&middot; Lv ' + (r.level || 1) + '</small></span><span class="lb-xp">' + (r.xp || 0) + ' XP</span></div>';
+  }).join('') + '</article>';
+}
+
+render();
+</script>
+</body>
+</html>
