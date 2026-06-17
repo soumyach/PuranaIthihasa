@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Khatakshetra Quiz Game</title>
-<meta name="description" content="Play a Khatakshetra story quiz and unlock the next story activity.">
+<meta name="description" content="Play a Khatakshetra story quiz at your level and unlock the next story activity.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="site.css">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
@@ -16,6 +16,8 @@
   .choice-btn.is-wrong { border-color: rgba(192,79,58,.9); background: rgba(192,79,58,.16); }
   .progress-track { height: 10px; background: rgba(255,255,255,.08); border: 1px solid rgba(232,185,79,.2); margin: 1rem 0; }
   .progress-fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--gold), var(--saffron)); transition: width .35s ease; }
+  .diff-grid { display: grid; gap: .7rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  #timerLabel.is-low { color: #e07b1a; }
 </style>
 </head>
 <body>
@@ -24,19 +26,21 @@
   <div class="hero-inner">
     <div class="eyebrow">Quiz round</div>
     <h1 id="quizTitle">Loading quiz...</h1>
-    <p class="lead" id="quizLead">Answer the round, reveal the unlock, or open the same quiz as a family room.</p>
+    <p class="lead" id="quizLead">Pick a difficulty, answer the round, reveal the unlock, or open the same quiz as a family room.</p>
   </div>
 </header>
 <main>
 <section class="band"><div class="inner">
   <div class="game-board">
-    <div class="score-strip"><span id="roundLabel">Round 1</span><span id="scoreLabel">Score 0</span><span id="ageLabel"></span></div>
+    <div class="score-strip"><span id="roundLabel">Choose level</span><span id="scoreLabel">Score 0</span><span id="levelLabel"></span><span id="timerLabel"></span><span id="ageLabel"></span></div>
     <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
     <article class="card featured" id="questionBox"></article>
     <div class="cta-strip" id="resultBox" style="display:none">
       <div><h2 class="section-title" id="resultTitle"></h2><p class="section-copy" id="resultCopy"></p></div>
       <button class="btn primary" onclick="localSignupIntent('quiz_unlock')">Save My Unlock</button>
+      <a class="btn" id="dailyQuizLink" href="daily-quiz.html">Today's Daily Quiz</a>
       <a class="btn" id="familyRoomLink" href="quiz-room.html">Open Family Room</a>
+      <button class="btn" type="button" id="replayBtn">Change difficulty</button>
     </div>
   </div>
 </div></section>
@@ -44,7 +48,8 @@
 <footer><a href="games.html">Back to Games</a></footer>
 <script src="site.js"></script>
 <script>
-const quizParam = new URLSearchParams(window.location.search).get('quiz') || 'rama-navami-beginner';
+const params = new URLSearchParams(window.location.search);
+const quizParam = params.get('quiz') || 'rama-navami-beginner';
 const storyLinks = {
   'rama-navami-beginner': 'story-experience.html?pack=ramayana-starter',
   'shani-dev-beginner': 'story-experience.html?pack=dasharatha-meets-shani',
@@ -57,10 +62,65 @@ const storyLinks = {
   'saraswati-beginner': 'deity.html?slug=saraswati',
   'subrahmanya-surya-beginner': 'deity.html?slug=subrahmanya'
 };
+const LEVELS = {
+  beginner:     { label: 'Beginner',     shuffle: false, timer: 0,  deferExplain: false, mult: 1 },
+  intermediate: { label: 'Intermediate', shuffle: true,  timer: 0,  deferExplain: false, mult: 1.5 },
+  hard:         { label: 'Hard',         shuffle: true,  timer: 15, deferExplain: true,  mult: 2 }
+};
+
 let quiz;
+let cfg = null;
 let index = 0;
 let score = 0;
 let locked = false;
+let countdown = null;
+let answersLog = [];
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); const t = a[i]; a[i] = a[j]; a[j] = t; }
+  return a;
+}
+
+function renderChooser() {
+  document.getElementById('roundLabel').textContent = 'Choose level';
+  document.getElementById('progressFill').style.width = '0%';
+  document.getElementById('questionBox').innerHTML = `
+    <h2>Choose your difficulty</h2>
+    <div class="diff-grid">
+      <button class="btn primary" type="button" data-level="beginner">Beginner<br><small>Explanations, no timer</small></button>
+      <button class="btn" type="button" data-level="intermediate">Intermediate<br><small>Shuffled answers · 1.5× XP</small></button>
+      <button class="btn" type="button" data-level="hard">Hard<br><small>15s timer · 2× XP</small></button>
+    </div>`;
+  document.querySelectorAll('[data-level]').forEach((b) => b.addEventListener('click', () => setLevel(b.dataset.level)));
+}
+
+function setLevel(key) {
+  cfg = LEVELS[key] || LEVELS.beginner;
+  index = 0; score = 0; answersLog = [];
+  document.getElementById('levelLabel').textContent = cfg.label;
+  document.getElementById('resultBox').style.display = 'none';
+  document.getElementById('questionBox').style.display = 'block';
+  renderQuestion();
+}
+
+function clearCountdown() {
+  if (countdown) { clearInterval(countdown); countdown = null; }
+  document.getElementById('timerLabel').textContent = '';
+  document.getElementById('timerLabel').classList.remove('is-low');
+}
+
+function startTimer() {
+  let remaining = cfg.timer;
+  const label = document.getElementById('timerLabel');
+  label.textContent = `⏱ ${remaining}`;
+  countdown = setInterval(() => {
+    remaining -= 1;
+    label.textContent = `⏱ ${remaining}`;
+    if (remaining <= 5) label.classList.add('is-low');
+    if (remaining <= 0) { clearCountdown(); timeOut(); }
+  }, 1000);
+}
 
 function renderQuestion() {
   const question = quiz.questions[index];
@@ -68,56 +128,92 @@ function renderQuestion() {
   document.getElementById('roundLabel').textContent = `Round ${index + 1} of ${quiz.questions.length}`;
   document.getElementById('scoreLabel').textContent = `Score ${score}`;
   document.getElementById('progressFill').style.width = `${(index / quiz.questions.length) * 100}%`;
+  const choices = cfg.shuffle ? shuffle(question.choices) : question.choices;
   document.getElementById('questionBox').innerHTML = `
     <h2>${question.question}</h2>
-    ${question.choices.map((choice) => `<button class="btn choice-btn" type="button" data-choice="${choice}">${choice}</button>`).join('')}
+    ${choices.map((choice) => `<button class="btn choice-btn" type="button" data-choice="${choice}">${choice}</button>`).join('')}
     <p id="explanation" style="display:none"></p>
   `;
   document.querySelectorAll('.choice-btn').forEach((button) => {
     button.addEventListener('click', () => chooseAnswer(button, question));
   });
+  if (cfg.timer) startTimer();
+}
+
+function lockChoices(question, picked) {
+  document.querySelectorAll('.choice-btn').forEach((choiceButton) => {
+    if (choiceButton.dataset.choice === question.answer) choiceButton.classList.add('is-correct');
+    if (choiceButton.dataset.choice === picked && picked !== question.answer) choiceButton.classList.add('is-wrong');
+  });
+}
+
+function advance() {
+  setTimeout(() => {
+    index += 1;
+    if (index < quiz.questions.length) renderQuestion();
+    else renderResult();
+  }, cfg.deferExplain ? 650 : 1200);
 }
 
 function chooseAnswer(button, question) {
   if (locked) return;
   locked = true;
+  clearCountdown();
   const picked = button.dataset.choice;
   const correct = picked === question.answer;
   if (correct) {
     score += 1;
-    awardKhatakshetraProgress('quiz_answer_correct', { properties: { quiz: quiz.slug, question: index + 1 } });
+    awardKhatakshetraProgress('quiz_answer_correct', { xp: Math.round(10 * cfg.mult), properties: { quiz: quiz.slug, level: cfg.label, question: index + 1 } });
   }
-  document.querySelectorAll('.choice-btn').forEach((choiceButton) => {
-    if (choiceButton.dataset.choice === question.answer) choiceButton.classList.add('is-correct');
-    if (choiceButton === button && !correct) choiceButton.classList.add('is-wrong');
-  });
-  const explanation = document.getElementById('explanation');
-  explanation.style.display = 'block';
-  explanation.textContent = question.explanation;
-  setTimeout(() => {
-    index += 1;
-    if (index < quiz.questions.length) renderQuestion();
-    else renderResult();
-  }, 1200);
+  answersLog.push({ q: question.question, answer: question.answer, picked: picked, correct: correct, explanation: question.explanation });
+  lockChoices(question, picked);
+  if (!cfg.deferExplain) {
+    const explanation = document.getElementById('explanation');
+    explanation.style.display = 'block';
+    explanation.textContent = question.explanation;
+  }
+  advance();
+}
+
+function timeOut() {
+  if (locked) return;
+  locked = true;
+  const question = quiz.questions[index];
+  answersLog.push({ q: question.question, answer: question.answer, picked: '(no answer)', correct: false, explanation: question.explanation });
+  lockChoices(question, null);
+  advance();
 }
 
 function renderResult() {
+  clearCountdown();
   document.getElementById('progressFill').style.width = '100%';
   document.getElementById('questionBox').style.display = 'none';
   document.getElementById('scoreLabel').textContent = `Score ${score}`;
   const pct = Math.round((score / quiz.questions.length) * 100);
   const key = `khatakshetra.quiz.${quiz.slug}`;
-  localStorage.setItem(key, JSON.stringify({ score, total: quiz.questions.length, pct, completedAt: new Date().toISOString() }));
+  localStorage.setItem(key, JSON.stringify({ score, total: quiz.questions.length, pct, level: cfg.label, completedAt: new Date().toISOString() }));
   const profile = awardKhatakshetraProgress('quiz_complete', {
+    xp: Math.round(50 * cfg.mult),
     unlock: pct >= 80 ? `${quiz.slug}_booklet_page` : `${quiz.slug}_practice_round`,
-    properties: { quiz: quiz.slug, score, total: quiz.questions.length, pct }
+    properties: { quiz: quiz.slug, level: cfg.label, score, total: quiz.questions.length, pct }
   });
-  const earnedCard = getTalapatraCardForQuiz(quiz.slug, pct);
+  const cardPct = cfg.deferExplain ? Math.min(100, pct + 20) : pct; // hard mode boosts rarity
+  const earnedCard = getTalapatraCardForQuiz(quiz.slug, cardPct);
   document.getElementById('resultBox').style.display = 'flex';
   document.getElementById('resultTitle').textContent = pct >= 80 ? 'Talapatra card unlocked.' : 'Round complete.';
-  document.getElementById('resultCopy').innerHTML = `You scored ${score}/${quiz.questions.length}. Your Parampara Tree is now Level ${profile.level} with ${profile.xp} XP. A ${earnedCard.rarity} card has been added to your Sangraha. <a href="${storyLinks[quiz.slug] || 'stories.html'}">Open the story pack</a>.`;
+  let copy = `You scored ${score}/${quiz.questions.length} on ${cfg.label}. Your Parampara Tree is now Level ${profile.level} with ${profile.xp} XP. A ${earnedCard.rarity} card has been added to your Sangraha. <a href="${storyLinks[quiz.slug] || 'stories.html'}">Open the story pack</a>.`;
+  if (cfg.deferExplain) {
+    copy += '<br><br><strong>Answers:</strong><br>' + answersLog.map((a) => `&bull; ${a.q} <em>${a.answer}</em>${a.explanation ? ' — ' + a.explanation : ''}`).join('<br>');
+  }
+  document.getElementById('resultCopy').innerHTML = copy;
   setTimeout(() => revealTalapatraCard(earnedCard), 350);
 }
+
+document.getElementById('replayBtn').addEventListener('click', () => {
+  document.getElementById('resultBox').style.display = 'none';
+  document.getElementById('questionBox').style.display = 'block';
+  renderChooser();
+});
 
 fetch('content/quizzes.json?v=20260518a')
   .then((response) => response.json())
@@ -127,7 +223,9 @@ fetch('content/quizzes.json?v=20260518a')
     document.getElementById('quizTitle').textContent = quiz.title;
     document.getElementById('ageLabel').textContent = `Ages ${quiz.ageBand}`;
     document.getElementById('familyRoomLink').href = `quiz-room.html?quiz=${quiz.slug}`;
-    renderQuestion();
+    const requested = params.get('level');
+    if (requested && LEVELS[requested]) setLevel(requested);
+    else renderChooser();
   });
 </script>
 </body>
