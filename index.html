@@ -3,1418 +3,263 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Khatakshetra - Stories, Temples, Booklets, Games, and Festival Kits</title>
-<meta name="description" content="Unlock Hindu stories, premium digital booklets, drawing kits, quizzes, temple guides, competitions, and festival kit early access.">
-<meta property="og:title" content="Khatakshetra - Unlock Your First Story Experience">
-<meta property="og:description" content="A premium cultural world for Hindu stories, temples, games, booklets, drawing kits, competitions, and festival kits.">
+<title>Khatakshetra - Hindu Stories, Temples, Games & Festival Kits</title>
+<meta name="description" content="Read, play, draw, and pass on the Itihasa and Purana stories. A daily katha and puzzle, story quizzes, temple guides, and festival kits — for the whole family.">
+<meta property="og:title" content="Khatakshetra — the stories we inherited, brought to life">
+<meta property="og:description" content="A daily katha and puzzle, story quizzes, drawing, temple guides, and festival kits for the whole family.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://khatakshetra.com/">
 <meta property="og:image" content="https://khatakshetra.com/Images/Rama%27s%20birth.png">
 <link rel="canonical" href="https://khatakshetra.com/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{ "@context": "https://schema.org", "@type": "WebSite", "name": "Khatakshetra", "url": "https://khatakshetra.com/", "description": "Hindu stories, temple guides, booklets, quizzes, drawing kits, and festival kits." }
+</script>
 <style>
   :root {
-    --bg-deep: #080300;
-    --bg-card: #120800;
-    --bg-card2: #1a0d04;
-    --gold: #C8962C;
-    --gold-bright: #E8B94F;
-    --saffron: #E07B1A;
-    --saffron-light: #F5A23C;
-    --cream: #F5E6C8;
-    --cream-dim: #BEA882;
-    --maroon: #6B1A1A;
-    --green: #123A2A;
-    --indigo: #111B35;
-    --teal: #1A5C5C;
-    --text-body: #D4C4A0;
-    --line: rgba(200,150,44,0.18);
+    --bg: #0b0502; --panel: #1a0f05; --panel-2: #221406;
+    --gold: #C8962C; --gold-bright: #E8B94F; --saffron: #E07B1A; --saffron-light: #F5A23C;
+    --cream: #F7EBD2; --body: #E4D6B4; --dim: #BEA882; --maroon: #6B1A1A;
+    --line: rgba(200,150,44,0.22); --line-soft: rgba(200,150,44,0.14);
+    --radius: 14px; --radius-sm: 9px;
+    --shadow-sm: 0 4px 16px rgba(0,0,0,0.28); --shadow: 0 16px 44px rgba(0,0,0,0.40);
   }
-
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body {
-    margin: 0;
-    background: var(--bg-deep);
-    color: var(--cream);
-    font-family: 'Crimson Text', Georgia, serif;
-    font-size: 18px;
-    line-height: 1.65;
-    overflow-x: hidden;
+    margin: 0; background: var(--bg); color: var(--cream);
+    font-family: 'Crimson Text', Georgia, serif; font-size: 18px; line-height: 1.7;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
   }
-
   body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background:
-      radial-gradient(ellipse 80% 55% at 50% -10%, rgba(200,150,44,0.11), transparent 70%),
-      radial-gradient(ellipse 60% 35% at 92% 12%, rgba(26,92,92,0.16), transparent 70%),
-      radial-gradient(ellipse 70% 45% at 10% 92%, rgba(107,26,26,0.18), transparent 70%);
-    pointer-events: none;
-    z-index: 0;
+    content: ''; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background: radial-gradient(ellipse 90% 50% at 50% -8%, rgba(200,150,44,0.10), transparent 70%);
   }
-
   a { color: inherit; }
+  img { max-width: 100%; height: auto; display: block; }
   button, input, select { font: inherit; }
-  section, nav, footer { position: relative; z-index: 1; }
+  nav, section, footer { position: relative; z-index: 1; }
+  .wrap { width: min(1140px, 100%); margin: 0 auto; padding: 0 clamp(1rem, 3vw, 2rem); }
 
   .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 20;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 0.85rem clamp(1rem, 3vw, 2rem);
-    background: rgba(8,3,0,0.88);
-    border-bottom: 1px solid var(--line);
-    backdrop-filter: blur(14px);
+    position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem; padding: 0.85rem clamp(1rem, 3vw, 2rem);
+    background: rgba(11,5,2,0.86); border-bottom: 1px solid var(--line-soft); backdrop-filter: blur(14px);
   }
-
-  .brand {
-    font-family: 'Cinzel Decorative', serif;
-    color: var(--gold-bright);
-    letter-spacing: 0.16em;
-    font-size: 0.82rem;
-    text-decoration: none;
-    white-space: nowrap;
-  }
-
-  .nav-links {
-    display: flex;
-    align-items: center;
-    gap: clamp(0.8rem, 2vw, 1.6rem);
-  }
-
-  .nav-links a {
-    color: var(--cream-dim);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: 0.72rem;
-  }
-
-  .nav-links a:hover { color: var(--gold-bright); }
-
+  .brand { font-family: 'Cinzel', serif; font-weight: 700; color: var(--gold-bright); letter-spacing: 0.14em; font-size: 0.95rem; text-decoration: none; }
+  .nav-links { display: flex; align-items: center; gap: clamp(0.9rem, 2vw, 1.6rem); }
+  .nav-links a { color: var(--cream); opacity: 0.82; text-decoration: none; font-size: 0.95rem; }
+  .nav-links a:hover { color: var(--gold-bright); opacity: 1; }
   .nav-cta {
-    border: 1px solid rgba(232,185,79,0.5);
-    background: linear-gradient(135deg, rgba(200,150,44,0.95), rgba(245,162,60,0.92));
-    color: #120800;
-    padding: 0.6rem 0.9rem;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 0.72rem;
-    font-weight: 700;
+    border: 1px solid rgba(232,185,79,0.55); background: linear-gradient(135deg, var(--gold-bright), var(--saffron));
+    color: #160d02; padding: 0.55rem 0.95rem; border-radius: var(--radius-sm); cursor: pointer; font-weight: 700; font-size: 0.9rem;
   }
 
-  .hero {
-    min-height: 100vh;
-    padding: 5.5rem clamp(1rem, 3vw, 2rem) 2.25rem;
-    display: grid;
-    grid-template-columns: minmax(0, 0.88fr) minmax(420px, 1.12fr);
-    gap: clamp(2rem, 5vw, 5rem);
-    align-items: center;
-    max-width: 1220px;
-    margin: 0 auto;
-  }
-
-  .eyebrow {
-    color: var(--saffron-light);
-    text-transform: uppercase;
-    letter-spacing: 0.25em;
-    font-size: 0.75rem;
-    margin-bottom: 1rem;
-  }
-
-  h1 {
-    font-family: 'Cinzel', serif;
-    font-size: clamp(2.2rem, 4.05vw, 3.65rem);
-    line-height: 1.04;
-    letter-spacing: 0.02em;
-    margin: 0 0 1.15rem;
-    color: var(--gold-bright);
-    max-width: 650px;
-    overflow-wrap: break-word;
-    text-wrap: balance;
-  }
-
-  .hero-copy {
-    color: var(--cream-dim);
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(1.02rem, 1.7vw, 1.22rem);
-    max-width: 620px;
-    margin: 0 0 1rem;
-  }
-
-  .hero-proof {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.55rem;
-    max-width: 670px;
-    margin: 1rem 0 0;
-  }
-
-
-
-  .proof-card {
-    border: 1px solid rgba(232,185,79,0.25);
-    background: rgba(18,8,0,0.66);
-    padding: 0.65rem 0.7rem;
-    min-height: 66px;
-  }
-
-  .proof-label {
-    display: block;
-    color: var(--saffron-light);
-    font-size: 0.62rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    margin-bottom: 0.25rem;
-  }
-
-  .proof-card strong {
-    display: block;
-    color: var(--cream);
-    font-family: 'Playfair Display', serif;
-    font-size: 0.94rem;
-    line-height: 1.15;
-  }
-
-  .hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.85rem;
-    margin: 1.2rem 0 1rem;
-  }
-
-  .hero-signup {
-    display: grid;
-    grid-template-columns: minmax(190px, 1fr) minmax(150px, 0.62fr) auto;
-    gap: 0.55rem;
-    align-items: stretch;
-    max-width: 670px;
-    margin: 1rem 0 0.75rem;
-    padding: 0.55rem;
-    border: 1px solid rgba(232,185,79,0.32);
-    background: rgba(18,8,0,0.82);
-    box-shadow: 0 18px 48px rgba(0,0,0,0.28);
-  }
-
-  .hero-signup .field,
-  .hero-signup .select {
-    min-height: 46px;
-    border-color: rgba(232,185,79,0.22);
-  }
-
-  .hero-signup .btn-primary {
-    min-width: 150px;
-    white-space: nowrap;
-  }
-
-  .hero-status {
-    grid-column: 1 / -1;
-    min-height: 18px;
-    color: var(--saffron-light);
-    font-size: 0.84rem;
-  }
-
-  .hero-unlocks {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 0.65rem;
-    max-width: 670px;
-    margin-top: 0.9rem;
-  }
-
-  .hero-unlock {
-    border: 1px solid rgba(200,150,44,0.22);
-    background: rgba(18,8,0,0.68);
-    padding: 0.75rem;
-    text-decoration: none;
-    min-height: 106px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.2s ease, border-color 0.2s ease;
-  }
-
-  .hero-unlock:hover {
-    border-color: rgba(232,185,79,0.55);
-    transform: translateY(-2px);
-  }
-
-  .unlock-type {
-    color: var(--saffron-light);
-    font-size: 0.64rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-  }
-
-  .unlock-title {
-    color: var(--cream);
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    line-height: 1.15;
-    margin: 0.35rem 0;
-  }
-
-  .unlock-note {
-    color: var(--cream-dim);
-    font-size: 0.82rem;
-    line-height: 1.3;
-  }
-
+  .eyebrow { color: var(--saffron-light); text-transform: uppercase; letter-spacing: 0.22em; font-size: 0.72rem; margin-bottom: 1rem; }
   .btn {
-    border: 1px solid rgba(200,150,44,0.45);
-    background: rgba(18,8,0,0.82);
-    color: var(--cream);
-    text-decoration: none;
-    padding: 0.85rem 1.1rem;
-    min-height: 46px;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 0.78rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.45rem;
-  }
-
-  .btn-primary {
-    background: linear-gradient(135deg, rgba(232,185,79,0.98), rgba(224,123,26,0.98));
-    color: #120800;
-    border-color: rgba(232,185,79,0.75);
-    font-weight: 700;
-    box-shadow: 0 0 34px rgba(224,123,26,0.22);
-  }
-
-  .btn:hover { border-color: rgba(232,185,79,0.85); transform: translateY(-1px); }
-
-  .trust-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.65rem;
-    margin-top: 1.25rem;
-  }
-
-  .trust-pill {
-    border: 1px solid rgba(200,150,44,0.22);
-    background: rgba(18,8,0,0.72);
-    color: var(--cream-dim);
-    padding: 0.35rem 0.6rem;
-    font-size: 0.78rem;
-  }
-
-  .experience-stage {
-    position: relative;
-    min-height: 560px;
-    border: 1px solid rgba(200,150,44,0.28);
-    background:
-      linear-gradient(180deg, rgba(18,8,0,0.92), rgba(8,3,0,0.95)),
-      radial-gradient(ellipse at 20% 8%, rgba(232,185,79,0.15), transparent 46%),
-      radial-gradient(ellipse at 82% 88%, rgba(18,58,42,0.38), transparent 52%);
-    overflow: hidden;
-    box-shadow: 0 28px 80px rgba(0,0,0,0.45);
-  }
-
-  .experience-stage::before {
-    content: '';
-    position: absolute;
-    inset: 1rem;
-    border: 1px solid rgba(200,150,44,0.18);
-    pointer-events: none;
-  }
-
-  .stage-tabs {
-    position: absolute;
-    z-index: 2;
-    top: 1rem;
-    left: 1rem;
-    right: 1rem;
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 0.45rem;
-  }
-
-  .stage-tab {
-    border: 1px solid rgba(232,185,79,0.24);
-    background: rgba(8,3,0,0.68);
-    color: var(--cream-dim);
-    min-height: 42px;
-    padding: 0.48rem 0.4rem;
-    text-align: center;
-    font-size: 0.68rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    backdrop-filter: blur(10px);
-  }
-
-  .stage-tab.active {
-    color: #120800;
-    background: linear-gradient(135deg, rgba(232,185,79,0.96), rgba(245,162,60,0.94));
-    border-color: rgba(232,185,79,0.7);
-    font-weight: 700;
-  }
-
-  .stage-image {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.42;
-    transform: scale(1.04);
-    transition: opacity 0.6s ease, transform 4s ease;
-  }
-
-  .experience-stage.is-changing .stage-image {
-    opacity: 0.18;
-    transform: scale(1.09);
-  }
-
-  .experience-dashboard {
-    position: absolute;
-    inset: 4.4rem 1.25rem 1.25rem;
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0.85rem;
-  }
-
-  .demo-card {
-    position: relative;
-    border: 1px solid rgba(232,185,79,0.24);
-    background: rgba(8,3,0,0.62);
-    overflow: hidden;
-    min-height: 0;
-    transition: transform 0.28s ease, border-color 0.28s ease, background 0.28s ease;
-  }
-
-  .demo-card.active {
-    border-color: rgba(232,185,79,0.78);
-    background: rgba(26,13,4,0.9);
-    transform: translateY(-3px);
-  }
-
-  .demo-card.large {
-    grid-row: span 2;
-  }
-
-  .demo-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    opacity: 0.74;
-    filter: saturate(0.92) contrast(0.95);
-  }
-
-  .demo-card.large img {
-    height: 62%;
-  }
-
-  .demo-body {
-    position: absolute;
-    inset: auto 0 0;
-    padding: 1rem;
-    background: linear-gradient(180deg, transparent, rgba(8,3,0,0.96) 28%, rgba(8,3,0,0.98));
-  }
-
-  .demo-card.large .demo-body {
-    position: relative;
-    inset: auto;
-    min-height: 38%;
-    background: rgba(8,3,0,0.98);
-  }
-
-  .demo-type {
-    display: block;
-    color: var(--saffron-light);
-    font-size: 0.62rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    margin-bottom: 0.34rem;
-  }
-
-  .demo-body h2,
-  .demo-body h3 {
-    margin: 0 0 0.35rem;
-    color: var(--gold-bright);
-    font-family: 'Playfair Display', serif;
-    line-height: 1.12;
-  }
-
-  .demo-body h2 { font-size: 1.52rem; }
-  .demo-body h3 { font-size: 1.08rem; }
-
-  .demo-body p {
-    color: var(--cream-dim);
-    margin: 0;
-    font-size: 0.88rem;
-    line-height: 1.32;
-  }
-
-  .quiz-preview {
-    height: 100%;
-    padding: 1rem;
-    display: grid;
-    gap: 0.65rem;
-    align-content: center;
-  }
-
-  .quiz-question {
-    color: var(--cream);
-    font-family: 'Playfair Display', serif;
-    font-size: 1.06rem;
-    line-height: 1.18;
-  }
-
-  .mini-answer {
-    border: 1px solid rgba(232,185,79,0.24);
-    color: var(--cream-dim);
-    padding: 0.45rem 0.55rem;
-    font-size: 0.8rem;
-  }
-
-  .mini-answer.correct {
-    color: var(--gold-bright);
-    border-color: rgba(232,185,79,0.65);
-    background: rgba(200,150,44,0.12);
-  }
-
-  .hero-showcase {
-    position: absolute;
-    inset: 4.4rem 1.25rem 1.25rem;
-    border: 1px solid rgba(232,185,79,0.18);
-    overflow: hidden;
-    background: #120800;
-  }
-
-  .showcase-image {
-    position: absolute;
-    inset: -8% -8%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 36% 58%;
-    opacity: 0.88;
-    filter: saturate(0.94) contrast(0.96);
-    transform: scale(1.2);
-  }
-
-  .hero-showcase::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-      linear-gradient(90deg, rgba(8,3,0,0.74), rgba(8,3,0,0.04) 48%, rgba(8,3,0,0.7)),
-      linear-gradient(180deg, rgba(8,3,0,0), rgba(8,3,0,0.84));
-  }
-
-  .showcase-main {
-    position: absolute;
-    z-index: 2;
-    left: 1.1rem;
-    bottom: 1.1rem;
-    width: min(380px, calc(100% - 2.2rem));
-    border: 1px solid rgba(232,185,79,0.38);
-    background: rgba(8,3,0,0.84);
-    padding: 1rem;
-    backdrop-filter: blur(12px);
-  }
-
-  .showcase-main h2 {
-    margin: 0.3rem 0 0.45rem;
-    color: var(--gold-bright);
-    font-family: 'Playfair Display', serif;
-    font-size: 1.45rem;
-    line-height: 1.12;
-  }
-
-  .showcase-main p {
-    margin: 0;
-    color: var(--cream-dim);
-    font-size: 0.9rem;
-    line-height: 1.34;
-  }
-
-  .showcase-stack {
-    position: absolute;
-    z-index: 2;
-    right: 1rem;
-    top: 5.2rem;
-    width: min(255px, 42%);
-    display: grid;
-    gap: 0.6rem;
-  }
-
-  .showcase-panel {
-    border: 1px solid rgba(232,185,79,0.26);
-    background: rgba(8,3,0,0.82);
-    padding: 0.75rem;
-    backdrop-filter: blur(12px);
-    transition: transform 0.28s ease, border-color 0.28s ease, background 0.28s ease;
-  }
-
-  .showcase-panel.active {
-    border-color: rgba(232,185,79,0.78);
-    background: rgba(26,13,4,0.94);
-    transform: translateX(-5px);
-  }
-
-  .showcase-panel h3 {
-    margin: 0.25rem 0 0.2rem;
-    color: var(--cream);
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-    line-height: 1.1;
-  }
-
-  .showcase-panel p {
-    margin: 0;
-    color: var(--cream-dim);
-    font-size: 0.78rem;
-    line-height: 1.28;
-  }
-
-  .book-title {
-    position: relative;
-    font-family: 'Cinzel', serif;
-    color: var(--gold-bright);
-    font-size: clamp(1.3rem, 3vw, 2rem);
-    line-height: 1.15;
-    margin-top: 1.4rem;
-  }
-
-  .book-sub {
-    position: relative;
-    color: var(--cream-dim);
-    font-size: 0.9rem;
-  }
-
-  .experience-card {
-    position: absolute;
-    right: 7%;
-    bottom: 9%;
-    width: min(355px, 80%);
-    background: rgba(18,8,0,0.9);
-    border: 1px solid rgba(232,185,79,0.35);
-    padding: 1.25rem;
-    backdrop-filter: blur(12px);
-  }
-
-  .stage-kicker {
-    color: var(--saffron-light);
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
-    font-size: 0.68rem;
-    margin-bottom: 0.55rem;
-  }
-
-  .stage-title {
-    font-family: 'Playfair Display', serif;
-    color: var(--cream);
-    font-weight: 700;
-    font-size: 1.35rem;
-    line-height: 1.2;
-    margin-bottom: 0.45rem;
-  }
-
-  .stage-desc {
-    color: var(--cream-dim);
-    font-size: 0.95rem;
-  }
-
-  .stage-dots {
-    position: absolute;
-    left: 7%;
-    bottom: 8%;
-    display: flex;
-    gap: 0.4rem;
-  }
-
-  .stage-unlock-strip {
-    position: absolute;
-    z-index: 2;
-    left: 7%;
-    right: 7%;
-    bottom: 2.4%;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.5rem;
-  }
-
-  .stage-unlock-strip span {
-    border: 1px solid rgba(232,185,79,0.24);
-    background: rgba(8,3,0,0.72);
-    color: var(--cream-dim);
-    padding: 0.48rem 0.55rem;
-    font-size: 0.72rem;
-    text-align: center;
-  }
-
-  .stage-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: rgba(190,168,130,0.35);
-  }
-
-  .stage-dot.active { background: var(--gold-bright); }
-
-  @keyframes bookFloat {
-    0%, 100% { transform: rotate(-4deg) translateY(0); }
-    50% { transform: rotate(-2deg) translateY(-12px); }
-  }
-
-  .band {
-    padding: 5rem clamp(1rem, 3vw, 2rem);
-  }
-
-  .quick-live {
-    padding: 0 clamp(1rem, 3vw, 2rem) 4rem;
-    margin-top: -1.5rem;
-  }
-
-  .quick-live-grid {
-    max-width: 1140px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.85rem;
-  }
-
-  .quick-card {
-    border: 1px solid rgba(232,185,79,0.24);
-    background:
-      linear-gradient(180deg, rgba(18,8,0,0.88), rgba(8,3,0,0.86));
-    padding: 1rem;
-    min-height: 150px;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .quick-card:hover {
-    border-color: rgba(232,185,79,0.6);
-    transform: translateY(-2px);
-  }
-
-  .quick-kicker {
-    color: var(--saffron-light);
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    font-size: 0.65rem;
-  }
-
-  .quick-card h2 {
-    font-family: 'Playfair Display', serif;
-    color: var(--gold-bright);
-    margin: 0.55rem 0 0.35rem;
-    font-size: 1.25rem;
-    line-height: 1.12;
-  }
-
-  .quick-card p {
-    color: var(--cream-dim);
-    margin: 0;
-    font-size: 0.92rem;
-    line-height: 1.35;
-  }
-
-  .band.alt {
-    background: linear-gradient(180deg, transparent, rgba(200,150,44,0.035), transparent);
-  }
-
-  .inner {
-    max-width: 1140px;
-    margin: 0 auto;
-  }
-
-  .section-head {
-    max-width: 780px;
-    margin-bottom: 2rem;
-  }
-
-  .section-title {
-    font-family: 'Playfair Display', serif;
-    color: var(--gold-bright);
-    font-size: clamp(1.8rem, 4vw, 3rem);
-    line-height: 1.12;
-    margin: 0 0 0.75rem;
-  }
-
-  .section-copy {
-    color: var(--cream-dim);
-    margin: 0;
-    max-width: 720px;
-  }
-
-  .intent-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 0.8rem;
-  }
-
-  .intent {
-    border: 1px solid var(--line);
-    background: rgba(18,8,0,0.72);
-    padding: 1rem;
-    min-height: 112px;
-    cursor: pointer;
-    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
-  }
-
-  .intent:hover {
-    transform: translateY(-2px);
-    border-color: rgba(232,185,79,0.55);
-    background: rgba(26,13,4,0.9);
-  }
-
-  .intent span {
-    display: block;
-    color: var(--saffron-light);
-    font-size: 0.72rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    margin-bottom: 0.45rem;
-  }
-
-  .intent strong {
-    display: block;
-    font-family: 'Playfair Display', serif;
-    color: var(--cream);
-    font-size: 1.08rem;
-    line-height: 1.25;
-  }
-
-  .offer-grid {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 1rem;
-    align-items: stretch;
-  }
-
-  .offer-panel, .signup-panel, .feature-card, .kit-card {
-    border: 1px solid var(--line);
-    background: rgba(18,8,0,0.78);
-  }
-
-  .offer-panel {
-    padding: clamp(1.2rem, 3vw, 2rem);
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(220px, 0.7fr);
-    gap: 1.2rem;
-    align-items: center;
-  }
-
-  .offer-list {
-    margin: 1.2rem 0 0;
-    padding: 0;
-    list-style: none;
-    display: grid;
-    gap: 0.55rem;
-  }
-
-  .offer-list li {
-    color: var(--cream-dim);
-    border-left: 2px solid rgba(232,185,79,0.45);
-    padding-left: 0.75rem;
-  }
-
-  .starter-art {
-    min-height: 305px;
-    background:
-      linear-gradient(180deg, rgba(8,3,0,0), rgba(8,3,0,0.86)),
-      url("ChildrenBook/Cover.png") center/cover;
-    border: 1px solid rgba(232,185,79,0.28);
-  }
-
-  .signup-panel {
-    padding: clamp(1.2rem, 3vw, 2rem);
-  }
-
-  .signup-title {
-    font-family: 'Playfair Display', serif;
-    color: var(--gold-bright);
-    font-size: 1.55rem;
-    line-height: 1.15;
-    margin: 0 0 0.65rem;
-  }
-
-  .signup-form {
-    display: grid;
-    gap: 0.75rem;
-    margin-top: 1.1rem;
-  }
-
-  .field, .select {
-    width: 100%;
-    background: rgba(8,3,0,0.8);
-    border: 1px solid rgba(200,150,44,0.26);
-    color: var(--cream);
-    padding: 0.85rem 0.9rem;
-    min-height: 48px;
-  }
-
-  .field::placeholder { color: rgba(190,168,130,0.66); }
-
-  .fine-print {
-    color: rgba(190,168,130,0.78);
-    font-size: 0.78rem;
-    margin-top: 0.75rem;
-  }
-
-  .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
-  }
-
-  .feature-card {
-    overflow: hidden;
-  }
-
-  .feature-card img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    display: block;
-    filter: saturate(0.92);
-  }
-
-  .feature-body {
-    padding: 1rem;
-  }
-
-  .feature-body h3, .kit-card h3 {
-    margin: 0 0 0.45rem;
-    color: var(--gold-bright);
-    font-family: 'Playfair Display', serif;
-    font-size: 1.25rem;
-  }
-
-  .feature-body p, .kit-card p {
-    margin: 0;
-    color: var(--cream-dim);
-    font-size: 0.95rem;
-  }
-
-  .kit-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
-  }
-
-  .kit-card {
-    padding: 1.2rem;
-    min-height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .kit-meta {
-    color: var(--saffron-light);
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    font-size: 0.68rem;
-    margin-bottom: 0.65rem;
-  }
-
-  .community-strip {
-    border: 1px solid rgba(232,185,79,0.3);
-    background:
-      linear-gradient(90deg, rgba(18,58,42,0.72), rgba(18,8,0,0.84), rgba(107,26,26,0.54));
-    padding: clamp(1.2rem, 3vw, 2rem);
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 1rem;
-    align-items: center;
-  }
-
-  .points {
-    display: flex;
-    gap: 0.6rem;
-    flex-wrap: wrap;
-    margin-top: 0.8rem;
-  }
-
-  .point {
-    border: 1px solid rgba(232,185,79,0.28);
-    padding: 0.35rem 0.55rem;
-    color: var(--cream-dim);
-    font-size: 0.8rem;
-    background: rgba(8,3,0,0.38);
-  }
-
-  footer {
-    padding: 2rem;
-    color: rgba(190,168,130,0.7);
-    text-align: center;
-    border-top: 1px solid var(--line);
-  }
-
-  .modal {
-    position: fixed;
-    inset: 0;
-    z-index: 50;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    background: rgba(0,0,0,0.72);
-    backdrop-filter: blur(8px);
-  }
-
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+    border: 1px solid rgba(200,150,44,0.45); background: rgba(28,16,5,0.82); color: var(--cream);
+    text-decoration: none; padding: 0.85rem 1.3rem; border-radius: var(--radius-sm); cursor: pointer;
+    font-weight: 600; font-size: 0.95rem; transition: transform .15s ease, border-color .2s ease;
+  }
+  .btn:hover { transform: translateY(-1px); border-color: rgba(232,185,79,0.7); }
+  .btn.primary { background: linear-gradient(135deg, var(--gold-bright), var(--saffron)); color: #160d02; border-color: rgba(232,185,79,0.75); box-shadow: 0 8px 24px rgba(224,123,26,0.22); }
+  .btn.big { padding: 1rem 1.6rem; font-size: 1.05rem; }
+  .text-link { color: var(--gold-bright); text-decoration: none; font-size: 0.95rem; }
+  .text-link:hover { text-decoration: underline; }
+
+  /* ---- HERO: one promise, one image, one action ---- */
+  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; padding: clamp(3rem, 7vw, 5.5rem) 0; }
+  .hero h1 { font-family: 'Cinzel', serif; font-size: clamp(2.3rem, 4.6vw, 4rem); line-height: 1.06; margin: 0 0 1.1rem; color: var(--gold-bright); }
+  .hero p.sub { color: var(--body); font-size: clamp(1.1rem, 1.7vw, 1.3rem); margin: 0 0 1.6rem; max-width: 38ch; }
+  .hero-actions { display: flex; align-items: center; gap: 1.1rem; flex-wrap: wrap; }
+  .trust { margin-top: 1.4rem; color: var(--dim); font-size: 0.9rem; }
+  .hero-art { position: relative; }
+  .hero-art img { width: 100%; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); aspect-ratio: 5/4; object-fit: cover; }
+
+  .band { padding: clamp(3rem, 6vw, 4.5rem) 0; }
+  .band.alt { background: rgba(26,13,4,0.5); border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); }
+  .section-head { max-width: 720px; margin-bottom: 2rem; }
+  .section-title { font-family: 'Cinzel', serif; color: var(--gold-bright); font-size: clamp(1.7rem, 3.6vw, 2.6rem); line-height: 1.14; margin: 0 0 0.6rem; }
+  .section-copy { color: var(--body); margin: 0; max-width: 640px; }
+
+  .grid3 { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1.1rem; }
+  .card { border: 1px solid var(--line); background: rgba(28,16,5,0.7); border-radius: var(--radius); padding: 1.4rem; box-shadow: var(--shadow-sm); text-decoration: none; display: block; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+  a.card:hover { transform: translateY(-3px); border-color: rgba(232,185,79,0.45); box-shadow: var(--shadow); }
+  .card .ico { font-size: 1.6rem; }
+  .card h3 { font-family: 'Crimson Text', serif; font-weight: 600; color: var(--gold-bright); font-size: 1.3rem; margin: 0.5rem 0 0.35rem; }
+  .card p { color: var(--body); margin: 0; font-size: 0.98rem; }
+
+  .feature-card { overflow: hidden; padding: 0; }
+  .feature-card img { aspect-ratio: 4/3; object-fit: cover; width: 100%; }
+  .feature-card .body { padding: 1.2rem; }
+
+  .offer { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1.2rem; align-items: center; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(28,16,5,0.7); padding: clamp(1.4rem, 3vw, 2.2rem); box-shadow: var(--shadow-sm); }
+  .offer-list { margin: 1rem 0 0; padding: 0; list-style: none; display: grid; gap: 0.5rem; }
+  .offer-list li { color: var(--body); border-left: 2px solid rgba(232,185,79,0.45); padding-left: 0.75rem; }
+  .signup-form { display: grid; gap: 0.7rem; margin-top: 0.5rem; }
+  .field { width: 100%; min-height: 50px; background: rgba(8,3,0,0.7); border: 1px solid rgba(232,185,79,0.3); color: var(--cream); border-radius: var(--radius-sm); padding: 0.7rem 0.9rem; }
+  .field::placeholder { color: rgba(190,168,130,0.6); }
+  .status { min-height: 20px; color: var(--saffron-light); font-size: 0.9rem; }
+  .fine { color: rgba(190,168,130,0.75); font-size: 0.8rem; }
+
+  .strip { display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: center; border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(90deg, rgba(50,31,8,0.85), rgba(18,8,0,0.85), rgba(107,26,26,0.42)); padding: clamp(1.4rem, 3vw, 2.2rem); box-shadow: var(--shadow-sm); }
+
+  footer { padding: 2.5rem 2rem; color: rgba(190,168,130,0.72); text-align: center; border-top: 1px solid var(--line-soft); }
+  footer a { color: var(--gold-bright); }
+
+  .modal { position: fixed; inset: 0; z-index: 100; display: none; align-items: center; justify-content: center; padding: 1rem; background: rgba(0,0,0,0.72); backdrop-filter: blur(10px); }
   .modal.open { display: flex; }
+  .modal-panel { position: relative; width: min(520px, 100%); border: 1px solid rgba(232,185,79,0.4); border-radius: var(--radius); background: linear-gradient(150deg, rgba(44,27,7,0.96), rgba(18,8,0,0.97)); padding: clamp(1.4rem, 4vw, 2rem); box-shadow: 0 28px 90px rgba(0,0,0,0.55); }
+  .modal-panel h2 { font-family: 'Cinzel', serif; color: var(--gold-bright); margin: 0.3rem 2rem 0.6rem 0; line-height: 1.1; }
+  .modal-close { position: absolute; right: 0.8rem; top: 0.8rem; width: 36px; height: 36px; border: 1px solid rgba(232,185,79,0.28); background: rgba(8,3,0,0.52); color: var(--cream); border-radius: var(--radius-sm); cursor: pointer; }
 
-  .modal-panel {
-    width: min(560px, 100%);
-    border: 1px solid rgba(232,185,79,0.38);
-    background: #120800;
-    padding: clamp(1.2rem, 3vw, 2rem);
-    position: relative;
+  @media (max-width: 860px) {
+    .hero, .grid3, .offer, .strip { grid-template-columns: 1fr; }
+    .hero-art { order: -1; }
   }
-
-  .modal-close {
-    position: absolute;
-    right: 0.75rem;
-    top: 0.75rem;
-    border: 1px solid rgba(232,185,79,0.25);
-    background: transparent;
-    color: var(--gold-bright);
-    width: 34px;
-    height: 34px;
-    cursor: pointer;
-  }
-
-  .status {
-    min-height: 24px;
-    color: var(--saffron-light);
-    margin-top: 0.6rem;
-    font-size: 0.9rem;
-  }
-
-  .daily-hero-cta:hover { border-color: rgba(232,185,79,0.85) !important; transform: translateY(-1px); }
-
-  @media (max-width: 920px) {
-    .hero {
-      grid-template-columns: 1fr;
-      padding-top: 6rem;
-    }
-    .experience-stage { min-height: 530px; }
-    .intent-grid, .feature-grid, .kit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .quick-live-grid { grid-template-columns: 1fr; }
-    .offer-grid, .offer-panel, .community-strip { grid-template-columns: 1fr; }
-    .hero-signup { grid-template-columns: 1fr; }
-    .hero-unlocks, .hero-proof { grid-template-columns: 1fr 1fr; }
-    .stage-tabs { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .experience-dashboard {
-      position: relative;
-      inset: auto;
-      padding: 4.4rem 1.25rem 1.25rem;
-      grid-template-columns: 1fr;
-    }
-    .hero-showcase {
-      position: relative;
-      inset: auto;
-      min-height: 520px;
-      margin: 4.4rem 1.25rem 1.25rem;
-    }
-    .demo-card.large { grid-row: auto; }
-    .demo-card { min-height: 220px; }
-    .stage-unlock-strip { grid-template-columns: 1fr; }
-  }
-
   @media (max-width: 640px) {
     .nav-links a:not(.keep-mobile) { display: none; }
-    .nav { padding: 0.7rem 1rem; }
-    .brand { font-size: 0.7rem; letter-spacing: 0.12em; }
-    .nav-cta { padding: 0.52rem 0.62rem; font-size: 0.66rem; }
-    .hero { padding-top: 5.5rem; }
-    .experience-stage { min-height: auto; }
-    .experience-card { right: 6%; width: 88%; }
-    .stage-dots { bottom: 4%; }
-    .stage-tabs { display: none; }
-    .experience-dashboard { padding: 1rem; }
-    .hero-showcase {
-      min-height: 560px;
-      margin: 1rem;
-    }
-    .showcase-stack {
-      top: 1rem;
-      left: 1rem;
-      right: 1rem;
-      width: auto;
-    }
-    .showcase-main {
-      left: 1rem;
-      right: 1rem;
-      width: auto;
-    }
-    .stage-unlock-strip { display: none; }
-    .intent-grid, .feature-grid, .kit-grid { grid-template-columns: 1fr; }
-    .hero-unlocks, .hero-proof { grid-template-columns: 1fr; }
     .hero-actions { flex-direction: column; align-items: stretch; }
     .btn { width: 100%; }
   }
-
-  @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-      animation-duration: 0.001ms !important;
-      animation-iteration-count: 1 !important;
-      scroll-behavior: auto !important;
-      transition-duration: 0.001ms !important;
-    }
-  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
 </style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Khatakshetra",
-  "url": "https://khatakshetra.com/",
-  "description": "Hindu stories, temple guides, digital booklets, quizzes, drawing kits, competitions, and festival kits.",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://khatakshetra.com/search?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
 </head>
 <body>
-  <nav class="nav" aria-label="Main navigation">
+  <nav class="nav">
     <a class="brand" href="/">Khatakshetra</a>
     <div class="nav-links">
       <a href="daily.html" class="keep-mobile">Daily</a>
       <a href="stories.html">Stories</a>
-      <a href="temples.html">Temples</a>
       <a href="games.html">Play</a>
-      <a href="kits.html" class="keep-mobile">Kits</a>
-      <button class="nav-cta" data-open-signup data-cta="starter_story_kit">Claim Unlock</button>
+      <a href="temples.html">Temples</a>
+      <a href="kits.html">Kits</a>
+      <button class="nav-cta" data-open-signup data-cta="starter_story_kit">Claim unlock</button>
     </div>
   </nav>
 
   <main>
-    <section class="hero" id="home">
+    <section class="wrap hero" id="home">
       <div>
-        <a class="daily-hero-cta" href="daily.html" style="display:inline-flex;align-items:center;gap:.55rem;margin-bottom:1.15rem;padding:.6rem .95rem;border:1px solid rgba(232,185,79,0.5);background:linear-gradient(135deg,rgba(232,185,79,0.16),rgba(224,123,26,0.12));color:var(--gold-bright);text-decoration:none;font-size:.8rem;letter-spacing:.06em">
-          <strong style="font-family:'Cinzel',serif;letter-spacing:.04em">Today's Katha &amp; Puzzle</strong>
-          <span style="color:var(--cream-dim);text-transform:none;letter-spacing:0">60-second story + daily puzzle &rarr;</span>
-        </a>
-        <div class="eyebrow">Stories. Temples. Booklets. Games. Community.</div>
+        <div class="eyebrow">Itihasa &amp; Purana, brought to life</div>
         <h1>The stories we inherited deserve to be lived, not just remembered.</h1>
-        <p class="hero-copy">Khatakshetra turns Itihasa and Purana stories into experiences you can read, play, draw, visit, discuss, compete in, and pass on. Start with a free Ramayana unlock today.</p>
-        <div class="hero-proof" aria-label="Launch status">
-          <div class="proof-card">
-            <span class="proof-label">Live now</span>
-            <strong>Ramayana reader and story art</strong>
-          </div>
-          <div class="proof-card">
-            <span class="proof-label">Unlock next</span>
-            <strong>Quiz rooms, booklets, drawing kits</strong>
-          </div>
-          <div class="proof-card">
-            <span class="proof-label">Help shape</span>
-            <strong>Temples, deities, festivals, kits</strong>
-          </div>
-        </div>
-        <form class="hero-signup" data-signup-form>
-          <input class="field" type="email" name="email" placeholder="your@email.com" required>
-          <select class="select" name="interest" aria-label="Choose first unlock">
-            <option value="stories">Story + booklet</option>
-            <option value="quizzes">Quiz and group play</option>
-            <option value="kids">Drawing kit</option>
-            <option value="kits">Festival kits</option>
-            <option value="temples">Temple guides</option>
-          </select>
-          <button class="btn btn-primary" type="submit">Claim First Unlock</button>
-          <div class="hero-status status" data-status></div>
-        </form>
-        <div class="hero-unlocks" aria-label="Featured experiences">
-          <a class="hero-unlock" href="ramayana-journey.html">
-            <span class="unlock-type">Guided Journey</span>
-            <span class="unlock-title">Ramayana First Door</span>
-            <span class="unlock-note">Story, coloring, solo quiz, family room, and Talapatra card.</span>
-          </a>
-          <a class="hero-unlock" href="games.html">
-            <span class="unlock-type">Play</span>
-            <span class="unlock-title">Quiz + Group Rooms</span>
-            <span class="unlock-note">Solo quiz first, family rooms and local challenges next.</span>
-          </a>
-          <a class="hero-unlock" href="booklets.html">
-            <span class="unlock-type">Download</span>
-            <span class="unlock-title">Storybook PDFs</span>
-            <span class="unlock-note">Premium booklet and printable PDF unlocks for families.</span>
-          </a>
-          <a class="hero-unlock" href="drawing-kits.html">
-            <span class="unlock-type">Create</span>
-            <span class="unlock-title">Drawing Kits</span>
-            <span class="unlock-note">Coloring pages become gallery entries and competition unlocks.</span>
-          </a>
-        </div>
+        <p class="sub">A little every day &mdash; read a katha, solve a puzzle, play a quiz, colour a scene, and pass it on. For the whole family.</p>
         <div class="hero-actions">
-          <button class="btn btn-primary" data-open-signup data-cta="starter_story_kit">Claim First Story Kit</button>
-          <a class="btn" href="#experiences">See What You Can Do</a>
+          <a class="btn primary big" href="daily.html">Play today's Katha &amp; Puzzle</a>
+          <a class="text-link" href="#explore">See everything you can do &darr;</a>
         </div>
-        <div class="trust-row" aria-label="Trust signals">
-          <div class="trust-pill">Source-aware stories</div>
-          <div class="trust-pill">No child account required</div>
-          <div class="trust-pill">English first, Hindi and Telugu next</div>
-          <div class="trust-pill">Quizzes, points, and community unlocks</div>
-        </div>
+        <p class="trust">Source-aware stories &middot; No child account needed &middot; English, with Hindi &amp; Telugu next</p>
       </div>
-
-      <div class="experience-stage" id="experienceStage" aria-label="Khatakshetra experience preview">
-        <div class="stage-tabs" aria-hidden="true">
-          <span class="stage-tab active" data-stage-tab>Storybook</span>
-          <span class="stage-tab" data-stage-tab>Quiz Room</span>
-          <span class="stage-tab" data-stage-tab>Group Play</span>
-          <span class="stage-tab" data-stage-tab>Drawing Kit</span>
-          <span class="stage-tab" data-stage-tab>Temple Guide</span>
-        </div>
-        <div class="hero-showcase">
-          <img class="showcase-image" src="assets/khatakshetra-ganesh-kit.png" alt="Khatakshetra Ganesh Chaturthi kit and digital experience preview">
-          <div class="showcase-main active" data-experience-card>
-            <span class="demo-type">Free unlock + kit waitlist</span>
-            <h2>One story becomes a whole experience.</h2>
-            <p>Read the story, hear it, play the quiz, color the scene, join a challenge, then waitlist the physical festival kit.</p>
-          </div>
-          <div class="showcase-stack">
-            <div class="showcase-panel" data-experience-card>
-              <span class="demo-type">Quiz room</span>
-              <h3>5-question family rounds</h3>
-              <p>Solo first, family rooms next, festival leagues after.</p>
-            </div>
-            <div class="showcase-panel" data-experience-card>
-              <span class="demo-type">Drawing kit</span>
-              <h3>Color, trace, submit</h3>
-              <p>Artwork becomes gallery and competition entries.</p>
-            </div>
-            <div class="showcase-panel" data-experience-card>
-              <span class="demo-type">Group play</span>
-              <h3>Local challenges</h3>
-              <p>City, school, temple, and family rooms that feel winnable.</p>
-            </div>
-            <div class="showcase-panel" data-experience-card>
-              <span class="demo-type">Temple path</span>
-              <h3>Story plus logistics</h3>
-              <p>Know the place, ritual, timings, food, route, and what not to miss.</p>
-            </div>
-          </div>
-        </div>
+      <div class="hero-art">
+        <img src="ChildrenBook/Cover.png" alt="Illustrated Ramayana cover art" fetchpriority="high" width="600" height="480">
       </div>
     </section>
 
-    <section class="quick-live" aria-label="Live Khatakshetra experiences">
-      <div class="quick-live-grid">
-        <a class="quick-card" href="ramayana-journey.html">
-          <div>
-            <span class="quick-kicker">Journey live</span>
-            <h2>Begin the Ramayana path</h2>
-            <p>Read, color, quiz, play as a family, reveal a Talapatra card, and share the first completion.</p>
-          </div>
-          <span class="unlock-type">Start journey</span>
-        </a>
-        <a class="quick-card" href="games.html">
-          <div>
-            <span class="quick-kicker">Play visible</span>
-            <h2>Quizzes and group play</h2>
-            <p>Rama Navami, Shani, Ganesha, Dashavatara, Shiva, Krishna, Devi, Lakshmi, Saraswati, and Subrahmanya rounds include solo and family play.</p>
-          </div>
-          <span class="unlock-type">See games</span>
-        </a>
-        <a class="quick-card" href="stories.html">
-          <div>
-            <span class="quick-kicker">Explore</span>
-            <h2>Stories, deities, temples</h2>
-            <p>Move from story to deity hubs, Puranas, festivals, temples, PDF booklets, and language paths.</p>
-          </div>
-          <span class="unlock-type">Explore library</span>
-        </a>
-      </div>
-    </section>
-
-    <section class="band alt" id="experiences">
-      <div class="inner">
+    <section class="band alt" id="explore">
+      <div class="wrap">
         <div class="section-head">
-          <div class="eyebrow">Near-zero discovery friction</div>
-          <h2 class="section-title">What do you want to do today?</h2>
-          <p class="section-copy">No maze, no taxonomy homework. Choose the experience and Khatakshetra should take you straight there.</p>
+          <div class="eyebrow">Explore Khatakshetra</div>
+          <h2 class="section-title">Choose how you want to begin.</h2>
+          <p class="section-copy">One place for stories, play, and devotion &mdash; pick a door and we take you straight there.</p>
         </div>
-        <div class="intent-grid">
-          <button class="intent" data-open-signup data-cta="starter_story_kit"><span>Read</span><strong>Learn a story</strong></button>
-          <button class="intent" data-open-signup data-cta="temple_updates"><span>Visit</span><strong>Find a temple guide</strong></button>
-          <button class="intent" data-open-signup data-cta="starter_story_kit"><span>Preserve</span><strong>Open a booklet</strong></button>
-          <button class="intent" data-open-signup data-cta="kids_coloring_book"><span>Create</span><strong>Start drawing</strong></button>
-          <button class="intent" data-open-signup data-cta="quiz_rama_navami"><span>Play</span><strong>Take a quiz</strong></button>
-          <button class="intent" data-open-signup data-cta="festival_challenge"><span>Compete</span><strong>Join a challenge</strong></button>
-          <button class="intent" data-open-signup data-cta="community_contributor"><span>Contribute</span><strong>Earn points</strong></button>
-          <button class="intent" data-open-signup data-cta="ganesh_kit"><span>Kits</span><strong>Join kit waitlist</strong></button>
-        </div>
-      </div>
-    </section>
-
-    <section class="band" id="signup">
-      <div class="inner">
-        <div class="offer-grid">
-          <div class="offer-panel">
-            <div>
-              <div class="eyebrow">Free starter kit</div>
-              <h2 class="section-title">A real reason to sign up, not another newsletter.</h2>
-              <p class="section-copy">The first unlock should feel useful immediately: a story to read, a page to color, a quiz to play, a talapatra card to keep, and a path to earn more.</p>
-              <ul class="offer-list">
-                <li>Premium Ramayana story experience</li>
-                <li>Digital booklet preview with premium hardbound feel</li>
-                <li>Three drawing/coloring pages</li>
-                <li>Beginner quiz with score save</li>
-                <li>Talapatra wisdom card and reflection prompt</li>
-                <li>Referral unlocks for more pages and booklets</li>
-              </ul>
-            </div>
-            <div class="starter-art" role="img" aria-label="Ramayana starter kit cover preview"></div>
-          </div>
-          <div class="signup-panel">
-            <h2 class="signup-title">Unlock the free story kit.</h2>
-            <p class="section-copy">Tell us what you care about first. We will use this to shape the next unlocks.</p>
-            <form class="signup-form" data-signup-form>
-              <input class="field" type="email" name="email" placeholder="your@email.com" required>
-              <select class="select" name="interest" aria-label="Choose interest">
-                <option value="stories">Stories and life lessons</option>
-                <option value="temples">Temple guides</option>
-                <option value="kids">Drawing kits for kids</option>
-                <option value="quizzes">Quizzes and games</option>
-                <option value="kits">Festival kits</option>
-                <option value="community">Competitions and community</option>
-              </select>
-              <button class="btn btn-primary" type="submit">Unlock Free Story Kit</button>
-              <div class="status" data-status></div>
-            </form>
-            <p class="fine-print">No spam. We will use your email for unlocks, kit updates, competitions, and Khatakshetra launch notes.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="band alt" id="stories">
-      <div class="inner">
-        <div class="section-head">
-          <div class="eyebrow">Stories become experiences</div>
-          <h2 class="section-title">Start with Ramayana. Expand into the full cultural universe.</h2>
-          <p class="section-copy">Every major deity, Itihasa, Purana, festival, and temple should eventually have a hub with summary, booklet, quiz, drawing kit, source notes, and community discussion.</p>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <img src="Images/Sita Swayamvar.png" alt="Sita Swayamvar story art">
-            <div class="feature-body">
-              <h3>Story Hubs</h3>
-              <p>Quick summaries, story versions, dialogue scripts, reference notes, and life lessons.</p>
-            </div>
-          </article>
-          <article class="feature-card">
-            <img src="ChildrenBook/Rama's decision.png" alt="Digital booklet preview art">
-            <div class="feature-body">
-              <h3>Booklets</h3>
-              <p>Premium hardbound digital readers with page-turns, talapatra inserts, and print-ready PDF paths.</p>
-            </div>
-          </article>
-          <article class="feature-card" id="play">
-            <img src="ChildrenBook/Learning from the sage.png" alt="Quiz and learning art">
-            <div class="feature-body">
-              <h3>Quizzes and Games</h3>
-              <p>Solo quizzes first, then family rooms, multiplayer, competitions, and leaderboards.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="band" id="temples">
-      <div class="inner">
-        <div class="section-head">
-          <div class="eyebrow">Temples with story and utility</div>
-          <h2 class="section-title">Temple guides should answer both devotion and logistics.</h2>
-          <p class="section-copy">Story behind the temple, rituals, timings, how to reach, what not to miss, food, local tips, vlogs, and freshness checks.</p>
-        </div>
-        <div class="community-strip">
-          <div>
-            <h2 class="signup-title">Tell us your city and we will prioritize your temple guides.</h2>
-            <p class="section-copy">Hyderabad, Chennai, Bengaluru, Tirupati, Kashi, Puri, Madurai and more. User tips will earn points once moderation is live.</p>
-            <div class="points">
-              <span class="point">Timings</span>
-              <span class="point">Story</span>
-              <span class="point">How to reach</span>
-              <span class="point">Food nearby</span>
-              <span class="point">Local tips</span>
-            </div>
-          </div>
-          <button class="btn btn-primary" data-open-signup data-cta="temple_updates">Get Temple Updates</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="band alt" id="kits">
-      <div class="inner">
-        <div class="section-head">
-          <div class="eyebrow">Early kit demand</div>
-          <h2 class="section-title">Bring the festival experience home.</h2>
-          <p class="section-copy">Join the early list for premium kits that turn stories, craft, play, and family time into keepsakes.</p>
-        </div>
-        <div class="kit-grid">
-          <article class="kit-card">
-            <div>
-              <div class="kit-meta">Launch Hero</div>
-              <h3>Ganesh Chaturthi: The Remover</h3>
-              <p>Clay Ganesha, bamboo platform, talapatra strips, booklet, quiz, and family challenge.</p>
-            </div>
-            <button class="btn" data-open-signup data-cta="ganesh_kit">Join Waitlist</button>
-          </article>
-          <article class="kit-card">
-            <div>
-              <div class="kit-meta">Build</div>
-              <h3>Rath Yatra: The Great Journey</h3>
-              <p>A slot-fit bamboo Rath, Jagannath story, journey challenge, and display-worthy keepsake.</p>
-            </div>
-            <button class="btn" data-open-signup data-cta="rath_yatra_kit">Join Waitlist</button>
-          </article>
-          <article class="kit-card">
-            <div>
-              <div class="kit-meta">Family</div>
-              <h3>Raksha Bandhan + Janmashtami</h3>
-              <p>Rakhi making, bamboo dahi handi, Krishna story, and the bond/play family experience.</p>
-            </div>
-            <button class="btn" data-open-signup data-cta="raksha_janmashtami_kit">Join Waitlist</button>
-          </article>
+        <div class="grid3">
+          <a class="card" href="daily.html"><div class="ico">🪔</div><h3>Daily Katha &amp; Puzzle</h3><p>A 60-second story and a guess-the-deity puzzle. Build a streak.</p></a>
+          <a class="card" href="stories.html"><div class="ico">📖</div><h3>Stories &amp; Deities</h3><p>The Ramayana, Puranas, deity hubs, and life lessons.</p></a>
+          <a class="card" href="games.html"><div class="ico">🎲</div><h3>Play &amp; Quizzes</h3><p>Story quizzes, family rooms, kids games, and the Ramayana path.</p></a>
+          <a class="card" href="drawing-kits.html"><div class="ico">🎨</div><h3>Draw &amp; Colour</h3><p>Printable coloring pages and drawing kits for kids.</p></a>
+          <a class="card" href="temples.html"><div class="ico">🛕</div><h3>Temple Guides</h3><p>Story, timings, how to reach, and tips from families.</p></a>
+          <a class="card" href="kits.html"><div class="ico">🎁</div><h3>Festival Kits</h3><p>Bring the festival home with story-led keepsake kits.</p></a>
         </div>
       </div>
     </section>
 
     <section class="band">
-      <div class="inner">
-        <div class="community-strip">
+      <div class="wrap">
+        <div class="offer">
           <div>
-            <div class="eyebrow">Points, contribution, and community</div>
-            <h2 class="section-title">Learn, play, contribute, and earn your place on the leaderboard.</h2>
-            <p class="section-copy">The community loop should reward useful participation: quiz scores, verified temple tips, artwork, story questions, referrals, and competition entries.</p>
+            <div class="eyebrow">Free starter kit</div>
+            <h2 class="section-title">A real reason to sign up.</h2>
+            <p class="section-copy">The first unlock is useful immediately: a story to read, a page to colour, a quiz to play, and a talapatra wisdom card to keep.</p>
+            <ul class="offer-list">
+              <li>Premium Ramayana story experience</li>
+              <li>Three drawing &amp; colouring pages</li>
+              <li>Beginner quiz with score save</li>
+              <li>A talapatra wisdom card</li>
+            </ul>
           </div>
-          <button class="btn btn-primary" data-open-signup data-cta="community_contributor">Join the Early Community</button>
+          <div>
+            <form class="signup-form" data-signup-form data-cta="starter_story_kit">
+              <input class="field" type="email" name="email" placeholder="your@email.com" required>
+              <button class="btn primary" type="submit">Unlock the free story kit</button>
+              <div class="status" data-status></div>
+              <p class="fine">No spam. We'll use your email for unlocks, festival drops, and launch notes.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band alt">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Stories become experiences</div>
+          <h2 class="section-title">Start with Ramayana. Grow into the whole cultural universe.</h2>
+        </div>
+        <div class="grid3">
+          <a class="card feature-card" href="stories.html"><img src="Images/Sita Swayamvar.png" alt="Sita Swayamvar story art" loading="lazy"><div class="body"><h3>Story hubs</h3><p>Summaries, kids versions, source notes, and life lessons.</p></div></a>
+          <a class="card feature-card" href="booklets.html"><img src="ChildrenBook/Rama's decision.png" alt="Ramayana booklet art" loading="lazy"><div class="body"><h3>Booklets &amp; PDFs</h3><p>Premium digital readers with print-ready pages.</p></div></a>
+          <a class="card feature-card" href="games.html"><img src="ChildrenBook/Learning from the sage.png" alt="Quiz and learning art" loading="lazy"><div class="body"><h3>Quizzes &amp; games</h3><p>Solo and family rounds, daily puzzles, and kids games.</p></div></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <div class="strip">
+          <div>
+            <div class="eyebrow">Temples with story and utility</div>
+            <h2 class="section-title">Plan a darshan with the story and the practical path in hand.</h2>
+            <p class="section-copy">Timings, how to reach, what not to miss, food nearby, and recent tips from families.</p>
+          </div>
+          <a class="btn" href="temples.html">Explore temple guides</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band alt">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Bring the festival home</div>
+          <h2 class="section-title">Heirloom festival kits.</h2>
+        </div>
+        <div class="grid3">
+          <div class="card"><h3>Ganesh Chaturthi</h3><p>Clay Ganesha, booklet, quiz, and a family challenge.</p><button class="btn" data-open-signup data-cta="ganesh_kit">Join waitlist</button></div>
+          <div class="card"><h3>Rath Yatra</h3><p>A build-it bamboo Rath, the Jagannath story, and a journey challenge.</p><button class="btn" data-open-signup data-cta="rath_yatra_kit">Join waitlist</button></div>
+          <div class="card"><h3>Raksha Bandhan + Janmashtami</h3><p>Rakhi making, dahi handi, and the Krishna story.</p><button class="btn" data-open-signup data-cta="raksha_janmashtami_kit">Join waitlist</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <div class="strip">
+          <div>
+            <div class="eyebrow">Learn, play, contribute</div>
+            <h2 class="section-title">Join the early Khatakshetra community.</h2>
+            <p class="section-copy">Quiz scores, temple tips, artwork, and a weekly leaderboard &mdash; participation that means something.</p>
+          </div>
+          <button class="btn primary" data-open-signup data-cta="community_contributor">Join the community</button>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>Khatakshetra - stories, temples, booklets, games, competitions, and heirloom festival experiences.</p>
+    <p>Khatakshetra &mdash; stories, temples, booklets, games, and heirloom festival experiences.</p>
     <p><a href="story-experience.html?pack=ramayana-starter">Open the Ramayana story pack</a></p>
   </footer>
 
@@ -1422,47 +267,20 @@
     <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <button class="modal-close" type="button" data-close-modal aria-label="Close">x</button>
       <div class="eyebrow">Unlock</div>
-      <h2 class="signup-title" id="modalTitle">Get your free Khatakshetra starter experience.</h2>
-      <p class="section-copy" id="modalCopy">Get the first unlock and choose the stories, temples, games, or kits you want most.</p>
-      <form class="signup-form" data-signup-form>
+      <h2 id="modalTitle">Get your free Khatakshetra starter experience.</h2>
+      <p class="section-copy">Drop your email and we'll send the first unlock and the stories, temples, and kits you care about most.</p>
+      <form class="signup-form" data-signup-form data-cta="starter_story_kit">
         <input class="field" type="email" name="email" placeholder="your@email.com" required>
-        <select class="select" name="interest" aria-label="Choose interest">
-          <option value="stories">Stories and life lessons</option>
-          <option value="temples">Temple guides</option>
-          <option value="kids">Drawing kits</option>
-          <option value="quizzes">Quizzes and games</option>
-          <option value="kits">Festival kits</option>
-          <option value="community">Community and competitions</option>
-        </select>
-        <button class="btn btn-primary" type="submit">Unlock Now</button>
+        <button class="btn primary" type="submit">Unlock now</button>
         <div class="status" data-status></div>
       </form>
-      <p class="fine-print">Early members will help decide which stories, temples, and kits launch first.</p>
+      <p class="fine">Early members help decide which stories, temples, and kits launch first.</p>
     </div>
   </div>
 
 <script>
-  const stage = document.getElementById('experienceStage');
-  const stageTabs = [...document.querySelectorAll('[data-stage-tab]')];
-  const demoCards = [...document.querySelectorAll('[data-experience-card]')];
-  let currentExperience = 0;
-  let activeCta = 'starter_story_kit';
-
-  function setExperience(index) {
-    currentExperience = (index + demoCards.length) % demoCards.length;
-    stage.classList.add('is-changing');
-    setTimeout(() => {
-      demoCards.forEach((card, i) => card.classList.toggle('active', i === currentExperience));
-      stageTabs.forEach((tab, i) => tab.classList.toggle('active', i === currentExperience));
-      stage.classList.remove('is-changing');
-    }, 220);
-  }
-
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    setInterval(() => setExperience(currentExperience + 1), 3600);
-  }
-
   const modal = document.getElementById('signupModal');
+  let activeCta = 'starter_story_kit';
   document.querySelectorAll('[data-open-signup]').forEach((el) => {
     el.addEventListener('click', () => {
       activeCta = el.getAttribute('data-cta') || 'starter_story_kit';
@@ -1472,68 +290,38 @@
       if (input) input.focus();
     });
   });
-
+  function closeModal() { modal.classList.remove('open'); modal.setAttribute('aria-hidden', 'true'); }
   document.querySelector('[data-close-modal]').addEventListener('click', closeModal);
-  modal.addEventListener('click', (event) => {
-    if (event.target === modal) closeModal();
-  });
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') closeModal();
-  });
+  modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
 
-  function closeModal() {
-    modal.classList.remove('open');
-    modal.setAttribute('aria-hidden', 'true');
+  function isValidEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+  function localCapture(email, cta) {
+    const k = 'khatakshetra_signups';
+    const e = JSON.parse(localStorage.getItem(k) || '[]');
+    e.push({ email: email, cta: cta, captured_at: new Date().toISOString() });
+    localStorage.setItem(k, JSON.stringify(e));
   }
-
-  function isValidEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  }
-
-  async function captureEmail(email, cta, interest) {
-    const payload = { email_id: email, cta: cta, interest: interest };
-    const response = await fetch('/api/email-capture', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
+  async function captureEmail(email, cta) {
+    const res = await fetch('/api/email-capture', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email_id: email, cta: cta })
     });
-    if (!response.ok) throw new Error('capture failed');
-    return response.json();
+    if (!res.ok) throw new Error('capture failed');
+    return res.json();
   }
-
-  function localCapture(email, cta, interest) {
-    const key = 'khatakshetra_signups';
-    const existing = JSON.parse(localStorage.getItem(key) || '[]');
-    existing.push({ email, cta, interest, captured_at: new Date().toISOString() });
-    localStorage.setItem(key, JSON.stringify(existing));
-  }
-
   document.querySelectorAll('[data-signup-form]').forEach((form) => {
     form.addEventListener('submit', async (event) => {
       event.preventDefault();
       const email = (form.email.value || '').trim().toLowerCase();
-      const interest = (form.interest.value || '').trim();
       const status = form.querySelector('[data-status]');
       const submit = form.querySelector('button[type="submit"]');
-      if (!isValidEmail(email)) {
-        status.textContent = 'Please enter a valid email.';
-        return;
-      }
-      submit.disabled = true;
-      const original = submit.textContent;
-      submit.textContent = 'Unlocking...';
-      status.textContent = '';
-      try {
-        await captureEmail(email, activeCta, interest);
-        status.textContent = 'You are in. We will send the first unlock soon.';
-      } catch (error) {
-        localCapture(email, activeCta, interest);
-        status.textContent = 'Saved locally for now. In production this will go to Supabase.';
-      } finally {
-        form.reset();
-        submit.disabled = false;
-        submit.textContent = original;
-      }
+      const cta = form.getAttribute('data-cta') || activeCta;
+      if (!isValidEmail(email)) { status.textContent = 'Please enter a valid email.'; return; }
+      submit.disabled = true; const original = submit.textContent; submit.textContent = 'Unlocking…'; status.textContent = '';
+      try { await captureEmail(email, cta); status.textContent = 'You are in. We will send the first unlock soon.'; }
+      catch (e) { localCapture(email, cta); status.textContent = 'Saved — we will send your unlock soon.'; }
+      finally { form.reset(); submit.disabled = false; submit.textContent = original; }
     });
   });
 </script>
