@@ -112,6 +112,8 @@ function saveKhatakshetraProfile(profile) {
   profile.level = getLevelForXp(profile.xp || 0);
   localStorage.setItem(KHATAKSHETRA_PROFILE_KEY, JSON.stringify(profile));
   renderKhatakshetraProgressChip();
+  // P1-2: if signed in, push the updated profile to Supabase (debounced).
+  khatakshetraQueueProgressPush();
   return profile;
 }
 
@@ -342,6 +344,10 @@ function saveKhatakshetraSignupFromModal(event) {
   }).catch(function () {});
   trackKhatakshetraEvent('signup_intent_saved', { cta: pendingSignupCta });
 
+  // P1-1: also send a magic link so progress can sync across devices. No-op
+  // until Supabase is provisioned. The email capture above still works either way.
+  khatakshetraSupabaseSignIn(email);
+
   closeKhatakshetraSignupModal();
   if (pendingSignupCallback) pendingSignupCallback(profile);
   pendingSignupCallback = null;
@@ -401,8 +407,142 @@ function closeTalapatraReveal() {
   modal.setAttribute('aria-hidden', 'true');
 }
 
+// ---------------------------------------------------------------------------
+// Supabase auth + cross-device progress sync (P1-1 / P1-2).
+// Entirely additive and graceful: if /api/public-config reports the project is
+// not configured (env vars unset), every function below quietly no-ops, so the
+// site behaves exactly as before. Once provisioned + RLS applied, a magic-link
+// sign-in links the local anonymous profile to a real user and keeps XP,
+// streaks, unlocks, and the Sangraha in sync across devices.
+// ---------------------------------------------------------------------------
+let khatakshetraSupabase = null;
+let khatakshetraSupabaseInit = null;     // promise, so we init once
+let khatakshetraSyncedUserId = null;
+let khatakshetraPushTimer = null;
+
+function khatakshetraLoadScript(src) {
+  return new Promise(function (resolve, reject) {
+    const s = document.createElement('script');
+    s.src = src;
+    s.async = true;
+    s.onload = resolve;
+    s.onerror = reject;
+    document.head.appendChild(s);
+  });
+}
+
+function initKhatakshetraSupabase() {
+  if (khatakshetraSupabaseInit) return khatakshetraSupabaseInit;
+  khatakshetraSupabaseInit = (async function () {
+    try {
+      const res = await fetch('/api/public-config');
+      if (!res.ok) return null;
+      const cfg = await res.json();
+      if (!cfg || !cfg.configured || !cfg.supabaseUrl || !cfg.supabaseAnonKey) return null;
+      if (!(window.supabase && window.supabase.createClient)) {
+        await khatakshetraLoadScript('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js');
+      }
+      khatakshetraSupabase = window.supabase.createClient(cfg.supabaseUrl, cfg.supabaseAnonKey, {
+        auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true }
+      });
+      khatakshetraSupabase.auth.onAuthStateChange(function (_event, session) {
+        if (session && session.user) khatakshetraOnSignedIn(session.user);
+      });
+      const sess = await khatakshetraSupabase.auth.getSession();
+      if (sess && sess.data && sess.data.session && sess.data.session.user) {
+        khatakshetraOnSignedIn(sess.data.session.user);
+      }
+      return khatakshetraSupabase;
+    } catch (e) {
+      return null;
+    }
+  })();
+  return khatakshetraSupabaseInit;
+}
+
+async function khatakshetraSupabaseSignIn(email) {
+  if (!email) return false;
+  const client = await initKhatakshetraSupabase();
+  if (!client) return false; // not configured yet — email capture already handled it
+  try {
+    await client.auth.signInWithOtp({ email: email, options: { emailRedirectTo: window.location.href } });
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+async function khatakshetraOnSignedIn(user) {
+  if (!khatakshetraSupabase || !user || khatakshetraSyncedUserId === user.id) return;
+  khatakshetraSyncedUserId = user.id;
+  const profile = getKhatakshetraProfile();
+  try {
+    await khatakshetraSupabase.from('app_users').upsert(
+      { id: user.id, email: user.email || profile.email || null, full_name: profile.child_name || null },
+      { onConflict: 'id' }
+    );
+    const remote = await khatakshetraSupabase
+      .from('user_progress').select('*').eq('user_id', user.id).maybeSingle();
+    const merged = mergeKhatakshetraProgress(profile, remote && remote.data);
+    saveKhatakshetraProfile(merged);               // also queues a push
+    await khatakshetraPushProgress(user.id, merged);
+  } catch (e) {
+    /* keep local copy; never break the page */
+  }
+}
+
+function mergeKhatakshetraProgress(local, remote) {
+  if (!remote) return local;
+  const out = local;
+  out.xp = Math.max(local.xp || 0, remote.xp || 0);
+  out.level = getLevelForXp(out.xp);
+  out.tracks = out.tracks || {};
+  const rt = remote.tracks || {};
+  ['story_mastery', 'creative_practice', 'temple_seva', 'community'].forEach(function (k) {
+    out.tracks[k] = Math.max((out.tracks && out.tracks[k]) || 0, rt[k] || 0);
+  });
+  out.unlocks = Array.from(new Set([].concat(local.unlocks || [], remote.unlocks || [])));
+  const byId = {};
+  [].concat(local.cards || [], remote.cards || []).forEach(function (c) { if (c && c.id) byId[c.id] = c; });
+  out.cards = Object.keys(byId).map(function (k) { return byId[k]; });
+  const localStreak = (local.daily && local.daily.streak) || 0;
+  const remoteStreak = (remote.daily && remote.daily.streak) || 0;
+  out.daily = (remoteStreak > localStreak ? remote.daily : local.daily) || out.daily || { streak: 0, lastDate: '', history: [] };
+  return out;
+}
+
+async function khatakshetraPushProgress(userId, profile) {
+  if (!khatakshetraSupabase || !userId) return;
+  try {
+    await khatakshetraSupabase.from('user_progress').upsert({
+      user_id: userId,
+      anonymous_id: profile.anonymous_id || null,
+      xp: profile.xp || 0,
+      level: profile.level || 1,
+      tracks: profile.tracks || {},
+      unlocks: profile.unlocks || [],
+      cards: profile.cards || [],
+      daily: profile.daily || {},
+      last_activity_at: new Date().toISOString(),
+      updated_at: new Date().toISOString()
+    }, { onConflict: 'user_id' });
+  } catch (e) {
+    /* ignore — localStorage remains the source of truth offline */
+  }
+}
+
+// Debounced: when a signed-in user earns XP, persist it without hammering the DB.
+function khatakshetraQueueProgressPush() {
+  if (!khatakshetraSyncedUserId) return;
+  clearTimeout(khatakshetraPushTimer);
+  khatakshetraPushTimer = setTimeout(function () {
+    khatakshetraPushProgress(khatakshetraSyncedUserId, getKhatakshetraProfile());
+  }, 1500);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   ensureKhatakshetraShell();
   renderKhatakshetraProgressChip();
   initKhatakshetraAnalytics();
+  initKhatakshetraSupabase();
 });
