@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ramayana-first-path",
+    "title": "Ramayana First Path",
+    "subtitle": "Walk the five-step guided journey",
+    "emoji": "🏹",
+    "check": { "type": "journeyNodes", "key": "khatakshetra.journey.ramayana", "total": 5 },
+    "reward": "The first branch of your Parampara Tree + a journey card",
+    "cta": { "label": "Continue the journey", "href": "ramayana-journey.html" }
+  },
+  {
+    "id": "quiz-rounds",
+    "title": "Quiz Rounds",
+    "subtitle": "Complete four story quizzes",
+    "emoji": "❓",
+    "check": { "type": "quizCount", "total": 4 },
+    "reward": "Talapatra cards and booklet-page unlocks",
+    "cta": { "label": "Play a quiz", "href": "games.html" }
+  },
+  {
+    "id": "sangraha-collector",
+    "title": "Talapatra Collector",
+    "subtitle": "Earn five wisdom cards",
+    "emoji": "🪔",
+    "check": { "type": "cardCount", "total": 5 },
+    "reward": "A growing Sangraha collection",
+    "cta": { "label": "Open Sangraha", "href": "sangraha.html" }
+  },
+  {
+    "id": "daily-devotion",
+    "title": "Daily Devotion",
+    "subtitle": "Keep a seven-day streak",
+    "emoji": "🔥",
+    "check": { "type": "streak", "total": 7 },
+    "reward": "A steady daily habit and bonus XP",
+    "cta": { "label": "Today's puzzle", "href": "daily.html" }
+  }
+]

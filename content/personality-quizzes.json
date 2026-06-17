@@ -1,0 +1,104 @@
+{
+  "which-ramayana-character": {
+    "title": "Which Ramayana character are you?",
+    "intro": "Six quick questions reveal the Ramayana soul you carry. No signup needed — then share your result.",
+    "results": {
+      "rama": {
+        "name": "Rama",
+        "archetype": "The Keeper of Dharma",
+        "blurb": "You hold to what is right even when it costs you. People trust your word like a promise carved in stone.",
+        "traits": ["Principled", "Steady", "Just"],
+        "emoji": "🏹",
+        "link": "/deity/rama"
+      },
+      "sita": {
+        "name": "Sita",
+        "archetype": "The Resilient Heart",
+        "blurb": "Gentle and unbreakable at once. You carry hardship with a grace that quietly outlasts every storm.",
+        "traits": ["Resilient", "Graceful", "Devoted"],
+        "emoji": "🌸",
+        "link": "/deity/sita"
+      },
+      "hanuman": {
+        "name": "Hanuman",
+        "archetype": "The Devoted Doer",
+        "blurb": "When someone you believe in needs you, no ocean is too wide and no mountain too heavy. Your strength kneels in service.",
+        "traits": ["Loyal", "Fearless", "Humble"],
+        "emoji": "🚩",
+        "link": "/deity/hanuman"
+      },
+      "lakshmana": {
+        "name": "Lakshmana",
+        "archetype": "The Loyal Guardian",
+        "blurb": "You stand watch so the people you love can rest. Loyalty, for you, is something you live, not something you say.",
+        "traits": ["Protective", "Devoted", "Brave"],
+        "emoji": "🛡️",
+        "link": "story-experience.html?pack=ramayana-starter"
+      },
+      "bharata": {
+        "name": "Bharata",
+        "archetype": "The Selfless Steward",
+        "blurb": "You'd hold a throne in trust rather than take what isn't yours. Humility and honesty are your quiet superpowers.",
+        "traits": ["Humble", "Dutiful", "Honest"],
+        "emoji": "👣",
+        "link": "story-experience.html?pack=ramayana-starter"
+      }
+    },
+    "questions": [
+      {
+        "q": "A loved one asks you to give up something you have earned.",
+        "options": [
+          { "t": "Honour the request without complaint — duty first.", "s": ["rama", "bharata"] },
+          { "t": "Accept it, and quietly carry the weight for them.", "s": ["sita"] },
+          { "t": "Do it gladly if it serves someone I believe in.", "s": ["hanuman"] },
+          { "t": "Step back, but stay close to protect them.", "s": ["lakshmana"] }
+        ]
+      },
+      {
+        "q": "Beside the people you love, your natural role is to…",
+        "options": [
+          { "t": "Lead and set the example.", "s": ["rama"] },
+          { "t": "Stand guard so they are safe.", "s": ["lakshmana"] },
+          { "t": "Serve with my whole heart.", "s": ["hanuman"] },
+          { "t": "Keep things together while they are away.", "s": ["bharata"] }
+        ]
+      },
+      {
+        "q": "What do people most rely on you for?",
+        "options": [
+          { "t": "Doing what is right, even when it is hard.", "s": ["rama"] },
+          { "t": "Quiet strength when things fall apart.", "s": ["sita"] },
+          { "t": "Showing up, no matter the distance or danger.", "s": ["hanuman"] },
+          { "t": "Loyalty you can stake your life on.", "s": ["lakshmana"] }
+        ]
+      },
+      {
+        "q": "Torn between duty and your own desire, you…",
+        "options": [
+          { "t": "Choose duty, always.", "s": ["rama", "bharata"] },
+          { "t": "Find the strength to bear the harder path.", "s": ["sita"] },
+          { "t": "Follow whatever lets me serve my purpose.", "s": ["hanuman"] },
+          { "t": "Guard the ones I love above all.", "s": ["lakshmana"] }
+        ]
+      },
+      {
+        "q": "Your real strength in tough times is…",
+        "options": [
+          { "t": "Unshakable principle.", "s": ["rama"] },
+          { "t": "Patience and grace.", "s": ["sita"] },
+          { "t": "Courage and boundless energy.", "s": ["hanuman"] },
+          { "t": "Humility and restraint.", "s": ["bharata"] }
+        ]
+      },
+      {
+        "q": "You show love by…",
+        "options": [
+          { "t": "Keeping my word to them.", "s": ["rama"] },
+          { "t": "Staying faithful through every season.", "s": ["sita"] },
+          { "t": "Leaping any obstacle to help.", "s": ["hanuman"] },
+          { "t": "Serving their wishes before my own.", "s": ["bharata"] }
+        ]
+      }
+    ]
+  }
+}
