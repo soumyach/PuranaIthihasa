@@ -56,6 +56,20 @@
   }
   function setMsg(t) { const m = document.getElementById('kgMsg'); if (m) m.textContent = t; }
   function clear() { const a = app(); a.innerHTML = ''; return a; }
+  function actionsBar() { const d = document.createElement('div'); d.className = 'kg-actions'; d.id = 'kgActions'; return d; }
+  function clearActions() { const h = document.getElementById('kgActions'); if (h) h.innerHTML = ''; }
+  function showActions(actions) {
+    const host = document.getElementById('kgActions');
+    if (!host) return;
+    host.innerHTML = '';
+    actions.forEach(function (a) {
+      const b = document.createElement('button');
+      b.type = 'button'; b.className = 'btn' + (a.primary ? ' primary' : '');
+      b.textContent = a.label; b.addEventListener('click', a.onClick);
+      host.appendChild(b);
+    });
+    try { host.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch (e) {}
+  }
 
   // ───────────────────────── Menu ─────────────────────────
   function renderMenu() {
@@ -116,6 +130,7 @@
     const grid = document.createElement('div'); grid.className = 'kg-grid';
     grid.style.gridTemplateColumns = 'repeat(' + cols + ', 1fr)';
     a.appendChild(grid);
+    a.appendChild(actionsBar());
 
     let first = null, lock = false, matched = 0, moves2 = 0;
     deck.forEach(function (unit) {
@@ -137,6 +152,11 @@
         if (matched === level.pairs) {
           setMsg('You matched them all in ' + moves2 + ' moves! 🎉');
           award('memory', { theme: theme.id, level: level.name, moves: moves2 });
+          const li = theme.levels.indexOf(level);
+          const acts = [{ label: '↻ Play again', onClick: function () { playMemory(theme, level); } }];
+          if (li > -1 && li < theme.levels.length - 1) acts.push({ label: 'Next level →', primary: true, onClick: function () { playMemory(theme, theme.levels[li + 1]); } });
+          else acts.push({ label: 'Try another theme →', primary: true, onClick: renderMemoryThemes });
+          showActions(acts);
         }
       } else {
         lock = true; const f = first; first = null;
@@ -163,6 +183,7 @@
     const dCol = document.createElement('div'); dCol.className = 'kg-col';
     const vCol = document.createElement('div'); vCol.className = 'kg-col';
     cols.appendChild(dCol); cols.appendChild(vCol); a.appendChild(cols);
+    a.appendChild(actionsBar());
 
     function tile(item, key, col) {
       const b = document.createElement('button'); b.type = 'button'; b.className = 'kg-tile';
@@ -187,8 +208,14 @@
           b.classList.add('is-done'); selected.classList.add('is-done');
           b.classList.remove('is-sel'); selected.classList.remove('is-sel');
           selected = null; matched++;
-          if (matched === pairs.length) { setMsg('Perfect match! 🎉'); award('vahana', { level: level.name }); }
-          else { setMsg('Yes! ' + matched + ' of ' + pairs.length + ' matched.'); }
+          if (matched === pairs.length) {
+            setMsg('Perfect match! 🎉'); award('vahana', { level: level.name });
+            const li = DATA.vahana.levels.indexOf(level);
+            const acts = [{ label: '↻ Play again', onClick: function () { playVahana(level); } }];
+            if (li > -1 && li < DATA.vahana.levels.length - 1) acts.push({ label: 'Next level →', primary: true, onClick: function () { playVahana(DATA.vahana.levels[li + 1]); } });
+            else acts.push({ label: 'More games →', primary: true, onClick: renderMenu });
+            showActions(acts);
+          } else { setMsg('Yes! ' + matched + ' of ' + pairs.length + ' matched.'); }
         } else { setMsg('Not their vahana — try again.'); }
       });
     });
@@ -225,7 +252,7 @@
     const ansRow = document.createElement('div'); ansRow.className = 'kg-seq-answer'; ansRow.id = 'kgAns';
     const choices = document.createElement('div'); choices.className = 'kg-seq-choices'; choices.id = 'kgChoices';
     const reset = document.createElement('button'); reset.className = 'btn kg-reset'; reset.type = 'button'; reset.textContent = 'Reset';
-    a.appendChild(ansRow); a.appendChild(choices); a.appendChild(reset);
+    a.appendChild(ansRow); a.appendChild(choices); a.appendChild(reset); a.appendChild(actionsBar());
 
     function tileFor(item, n) {
       const b = document.createElement('button'); b.type = 'button'; b.className = 'kg-scene';
@@ -234,6 +261,7 @@
       return b;
     }
     function render() {
+      clearActions();
       choices.innerHTML = '';
       pool.forEach(function (item) {
         if (answer.indexOf(item) !== -1) return;
@@ -249,8 +277,14 @@
       });
       if (answer.length === correct.length) {
         const ok = answer.every(function (it, i) { return it === correct[i]; });
-        if (ok) { setMsg('Correct order! 🎉'); award('sequence', { category: cat.id, level: level.name }); }
-        else { setMsg('Not quite — tap a placed scene to remove it, or Reset.'); }
+        if (ok) {
+          setMsg('Correct order! 🎉'); award('sequence', { category: cat.id, level: level.name });
+          const li = cat.levels.indexOf(level);
+          const acts = [{ label: '↻ Play again', onClick: function () { playSequence(cat, level); } }];
+          if (li > -1 && li < cat.levels.length - 1) acts.push({ label: 'Next level →', primary: true, onClick: function () { playSequence(cat, cat.levels[li + 1]); } });
+          else acts.push({ label: 'Try another epic →', primary: true, onClick: renderSequenceCats });
+          showActions(acts);
+        } else { setMsg('Not quite — tap a placed scene to remove it, or Reset.'); }
       } else { setMsg('Tap the scenes in the order they happen.'); }
     }
     reset.addEventListener('click', function () { answer = []; render(); });
@@ -302,6 +336,7 @@
     const grid = document.createElement('div'); grid.className = 'kg-jig';
     grid.style.gridTemplateColumns = 'repeat(' + size + ', 1fr)';
     a.appendChild(grid);
+    a.appendChild(actionsBar());
     function draw() {
       grid.innerHTML = '';
       tiles.forEach(function (val, pos) {
@@ -321,7 +356,13 @@
       if (neighbors(blank).indexOf(pos) === -1) return;
       const tmp = tiles[blank]; tiles[blank] = tiles[pos]; tiles[pos] = tmp; blank = pos;
       draw();
-      if (tiles.every(function (v, i) { return v === i; })) { setMsg('You solved it! 🎉'); award('jigsaw', { picture: choice.id, size: size }); }
+      if (tiles.every(function (v, i) { return v === i; })) {
+        setMsg('You solved it! 🎉'); award('jigsaw', { picture: choice.id, size: size });
+        const acts = [{ label: '↻ Shuffle again', onClick: function () { playJigsaw(choice, size); } }];
+        if (size < 4) acts.push({ label: 'Try 4 × 4 →', primary: true, onClick: function () { playJigsaw(choice, 4); } });
+        else acts.push({ label: 'New picture →', primary: true, onClick: renderJigsawChoices });
+        showActions(acts);
+      }
     }
     draw();
   }
