@@ -4,11 +4,68 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kids Games - Khatakshetra</title>
-<meta name="description" content="Free Hindu mythology games for kids: memory match, match-the-vahana, story sequencing, and a sliding picture puzzle. No signup needed.">
+<meta name="description" content="Free Hindu mythology games for kids: image memory match (deities, Dashavatara, deity & vahana), match-the-vahana, and story order for the Ramayana — with multiple themes and difficulty levels. No signup needed.">
 <link rel="canonical" href="https://khatakshetra.com/kids-games">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="site.css">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  #kidsApp { color: #F7EBD2; }
+  .kg-back-btn, .kg-back { margin-bottom: 0.5rem; }
+  .kg-title { font-family: 'Cinzel', serif; color: #E8B94F; margin: 0.6rem 0 0.2rem; }
+  .kg-sub { color: #BEA882; margin: 0 0 1rem; }
+  .kg-msg { min-height: 1.5em; color: #F5A23C; font-weight: 600; margin: 0.4rem 0; }
+  .kg-stat { color: #BEA882; font-size: 0.85rem; margin: 0 0 0.6rem; }
+
+  .kg-menu { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .kg-gamecard { display: flex; flex-direction: column; }
+  .kg-gamecard .btn { margin-top: auto; align-self: flex-start; }
+
+  .kg-choose { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.75rem; }
+  .kg-opt { display: flex; align-items: center; gap: 0.7rem; text-align: left; padding: 0.7rem; border: 1px solid rgba(232,185,79,0.3); background: rgba(28,16,5,0.7); border-radius: 12px; color: #F7EBD2; cursor: pointer; font: inherit; transition: border-color .15s ease, transform .15s ease; }
+  .kg-opt:hover:not(.is-locked) { border-color: rgba(232,185,79,0.65); transform: translateY(-2px); }
+  .kg-opt.is-locked { opacity: 0.5; cursor: not-allowed; }
+  .kg-opt.is-sel { border-color: #E8B94F; box-shadow: 0 0 0 2px rgba(232,185,79,0.4); }
+  .kg-opt-thumb { width: 54px; height: 54px; border-radius: 8px; background-size: cover; background-position: center; flex: none; border: 1px solid rgba(232,185,79,0.3); }
+  .kg-opt-name { font-weight: 600; display: block; }
+  .kg-opt-sub { font-size: 0.8rem; color: #BEA882; display: block; }
+
+  .kg-grid { display: grid; gap: 0.5rem; max-width: 560px; margin: 0 auto; }
+  .kg-card { position: relative; aspect-ratio: 1; border: none; padding: 0; border-radius: 10px; cursor: pointer; background: transparent; }
+  .kg-card .kg-back { position: absolute; inset: 0; margin: 0; display: grid; place-items: center; font-size: 1.7rem; color: #160d02; background: linear-gradient(140deg, #E8B94F, #E07B1A); border-radius: 10px; border: 1px solid rgba(232,185,79,0.6); transition: opacity .25s ease; }
+  .kg-face { position: absolute; inset: 0; border-radius: 10px; overflow: hidden; opacity: 0; transition: opacity .25s ease; }
+  .kg-face img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .kg-card.is-up .kg-back { opacity: 0; }
+  .kg-card.is-up .kg-face, .kg-card.is-done .kg-face { opacity: 1; }
+  .kg-card.is-done { outline: 3px solid #6fcf97; outline-offset: -1px; }
+  .kg-cap { position: absolute; left: 0; right: 0; bottom: 0; font-size: 0.68rem; text-align: center; padding: 2px 1px; background: rgba(8,3,0,0.62); color: #F7EBD2; }
+
+  .kg-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; max-width: 540px; margin: 0 auto; }
+  .kg-col { display: flex; flex-direction: column; gap: 0.6rem; }
+  .kg-tile { position: relative; border: 1px solid rgba(232,185,79,0.3); border-radius: 10px; overflow: hidden; padding: 0; cursor: pointer; background: rgba(28,16,5,0.7); }
+  .kg-tile img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
+  .kg-tile.is-sel { outline: 3px solid #E8B94F; outline-offset: -2px; }
+  .kg-tile.is-done { opacity: 0.45; cursor: default; }
+
+  .kg-seq-answer, .kg-seq-choices { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.6rem 0; }
+  .kg-seq-answer { padding: 0.5rem; border: 1px dashed rgba(232,185,79,0.4); border-radius: 10px; min-height: 70px; }
+  .kg-scene { position: relative; width: 96px; border: 1px solid rgba(232,185,79,0.3); border-radius: 8px; overflow: hidden; padding: 0; cursor: pointer; background: rgba(28,16,5,0.7); }
+  .kg-scene img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
+  .kg-ord { position: absolute; top: 2px; left: 2px; width: 20px; height: 20px; border-radius: 50%; background: #E8B94F; color: #160d02; font-size: 0.72rem; font-weight: 700; display: grid; place-items: center; z-index: 2; }
+
+  .kg-jig { display: grid; gap: 2px; max-width: 330px; aspect-ratio: 1; margin: 0 auto; }
+  .kg-jigcell { aspect-ratio: 1; border: 1px solid rgba(232,185,79,0.2); padding: 0; cursor: pointer; background-repeat: no-repeat; }
+  .kg-sizes { display: flex; gap: 0.6rem; margin-top: 1rem; flex-wrap: wrap; }
+  .kg-reset { margin-top: 0.6rem; }
+
+  @media (max-width: 560px) {
+    .kg-menu { grid-template-columns: 1fr; }
+    .kg-scene { width: 78px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .kg-back, .kg-face, .kg-opt { transition: none !important; } }
+</style>
 </head>
 <body>
 <nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="daily.html">Daily</a><a href="stories.html">Stories</a><a class="keep-mobile" href="games.html">Play</a><a href="drawing-kits.html">Drawing</a><a href="temples.html">Temples</a></div></nav>
@@ -16,7 +73,7 @@
   <div class="hero-inner">
     <div class="eyebrow">For kids (and families)</div>
     <h1>Kids Games</h1>
-    <p class="lead">Four quick, gentle games to learn the deities and stories by playing. No signup — just tap and play.</p>
+    <p class="lead">Learn the deities, their vahanas, and the great stories by playing — with real picture cards, multiple themes, and levels that grow with you. No signup, just tap and play.</p>
   </div>
 </header>
 <main>

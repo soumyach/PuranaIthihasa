@@ -1,8 +1,10 @@
-// Kids Games hub — four self-contained mini-games (no database). Data comes
-// from content/kids-games.json; completion awards a little XP via site.js.
+// Kids Games hub — image-driven mini-games with categories + difficulty levels.
+// Card art comes from content/kids-games.json (assets are embedded data URIs).
+// Completion awards a little XP via site.js (awardKhatakshetraProgress).
 (function () {
   let DATA = null;
   function app() { return document.getElementById('kidsApp'); }
+
   function shuffle(arr) {
     const a = arr.slice();
     for (let i = a.length - 1; i > 0; i--) {
@@ -11,153 +13,280 @@
     }
     return a;
   }
-  function award(game) {
+  function img(id) { return (DATA.assets && DATA.assets[id]) || ''; }
+  function award(game, props) {
     if (typeof awardKhatakshetraProgress === 'function') {
-      try { awardKhatakshetraProgress('kids_game_complete', { xp: 15, track: 'creative_practice', properties: { game: game } }); } catch (e) {}
+      try { awardKhatakshetraProgress('kids_game_complete', { xp: 15, track: 'creative_practice', properties: Object.assign({ game: game }, props || {}) }); } catch (e) {}
     }
   }
-  function header(title) {
-    return `<button class="btn" type="button" id="kidsBack" style="margin-bottom:1rem">&lsaquo; All games</button><h2>${title}</h2>`;
+  function bar(label, handler) {
+    const b = document.createElement('button');
+    b.className = 'btn kg-back'; b.type = 'button'; b.textContent = label || '‹ Back';
+    b.addEventListener('click', handler);
+    return b;
   }
-  function wireBack() {
-    const b = document.getElementById('kidsBack');
-    if (b) b.addEventListener('click', renderMenu);
+  function head(backLabel, backFn, title, subtitle) {
+    const wrap = document.createElement('div');
+    wrap.appendChild(bar(backLabel, backFn));
+    const h = document.createElement('h2'); h.className = 'kg-title'; h.textContent = title; wrap.appendChild(h);
+    if (subtitle) { const p = document.createElement('p'); p.className = 'kg-sub'; p.textContent = subtitle; wrap.appendChild(p); }
+    return wrap;
   }
-
-  function renderMenu() {
-    app().innerHTML = `
-      <div class="grid">
-        <article class="card"><div class="eyebrow">🧠 Pairs</div><h3>Memory Match</h3><p>Flip the cards and match the deities.</p><button class="btn primary" type="button" data-game="memory">Play</button></article>
-        <article class="card"><div class="eyebrow">🐂 Match</div><h3>Match the Vahana</h3><p>Pair each deity with their mount (vahana).</p><button class="btn primary" type="button" data-game="vahana">Play</button></article>
-        <article class="card"><div class="eyebrow">🔢 Order</div><h3>Story Order</h3><p>Put the Ramayana events in the right order.</p><button class="btn primary" type="button" data-game="sequence">Play</button></article>
-        <article class="card"><div class="eyebrow">🧩 Puzzle</div><h3>Sliding Picture</h3><p>Slide the tiles to complete the picture.</p><button class="btn primary" type="button" data-game="jigsaw">Play</button></article>
-      </div>`;
-    app().querySelectorAll('[data-game]').forEach(function (b) {
-      b.addEventListener('click', function () {
-        const g = b.dataset.game;
-        if (g === 'memory') startMemory();
-        else if (g === 'vahana') startVahana();
-        else if (g === 'sequence') startSequence();
-        else startJigsaw();
-      });
-    });
-  }
-
-  // ── Memory Match ──
-  function startMemory() {
-    const pairs = DATA.memory.pairs;
-    const deck = shuffle(pairs.concat(pairs));
-    let first = null, lock = false, matched = 0;
-    app().innerHTML = header(DATA.memory.title) + '<p id="memMsg">Find all the pairs.</p><div class="grid" id="memGrid" style="grid-template-columns:repeat(4,1fr);gap:.5rem"></div>';
-    wireBack();
-    const grid = document.getElementById('memGrid');
-    deck.forEach(function (card) {
+  function chooser(options) {
+    const grid = document.createElement('div');
+    grid.className = 'kg-choose';
+    options.forEach(function (o) {
       const c = document.createElement('button');
-      c.className = 'btn'; c.type = 'button';
-      c.style.cssText = 'aspect-ratio:1;font-size:1.7rem;min-height:64px';
-      c.textContent = '?';
-      c.addEventListener('click', function () { flip(c, card); });
+      c.type = 'button';
+      c.className = 'kg-opt' + (o.locked ? ' is-locked' : '');
+      let inner = '';
+      if (o.thumb) inner += '<span class="kg-opt-thumb" style="background-image:url(' + o.thumb + ')"></span>';
+      inner += '<span class="kg-opt-body"><span class="kg-opt-name">' + o.name + '</span>';
+      if (o.sub) inner += '<span class="kg-opt-sub">' + o.sub + '</span>';
+      inner += '</span>';
+      c.innerHTML = inner;
+      if (o.locked) { c.disabled = true; }
+      else { c.addEventListener('click', o.onClick); }
       grid.appendChild(c);
     });
-    function flip(c, card) {
-      if (lock || c.disabled || c.dataset.up === '1') return;
-      c.textContent = card.emoji; c.dataset.up = '1';
-      if (!first) { first = { c: c, card: card }; return; }
-      if (first.card.label === card.label && first.c !== c) {
-        first.c.disabled = c.disabled = true; matched++; first = null;
-        if (matched === pairs.length) { document.getElementById('memMsg').textContent = 'You matched them all! 🎉'; award('memory'); }
+    return grid;
+  }
+  function msg(text) {
+    const p = document.createElement('p'); p.className = 'kg-msg'; p.id = 'kgMsg'; p.textContent = text || ''; return p;
+  }
+  function setMsg(t) { const m = document.getElementById('kgMsg'); if (m) m.textContent = t; }
+  function clear() { const a = app(); a.innerHTML = ''; return a; }
+
+  // ───────────────────────── Menu ─────────────────────────
+  function renderMenu() {
+    const a = clear();
+    const grid = document.createElement('div'); grid.className = 'kg-menu';
+    const games = [
+      { id: 'memory', tag: '🧠 Pairs', name: 'Memory Match', desc: 'Flip cards to find matching pairs. Choose a theme and a level.', go: renderMemoryThemes },
+      { id: 'vahana', tag: '🦅 Match', name: 'Match the Vahana', desc: 'Pair each deity with the mount (vahana) they ride.', go: renderVahanaLevels },
+      { id: 'sequence', tag: '🔢 Order', name: 'Story Order', desc: 'Put the events of an epic in the order they happen.', go: renderSequenceCats },
+      { id: 'jigsaw', tag: '🧩 Puzzle', name: 'Sliding Picture', desc: 'Slide the tiles to complete a picture.', go: renderJigsawChoices }
+    ];
+    games.forEach(function (g) {
+      const c = document.createElement('article'); c.className = 'card kg-gamecard';
+      c.innerHTML = '<div class="eyebrow">' + g.tag + '</div><h3>' + g.name + '</h3><p>' + g.desc + '</p>';
+      const b = document.createElement('button'); b.className = 'btn primary'; b.type = 'button'; b.textContent = 'Play';
+      b.addEventListener('click', g.go); c.appendChild(b); grid.appendChild(c);
+    });
+    a.appendChild(grid);
+  }
+
+  // ─────────────────── Memory: themes → levels → play ───────────────────
+  function renderMemoryThemes() {
+    const a = clear();
+    a.appendChild(head('‹ All games', renderMenu, DATA.memory.title, 'Pick a theme.'));
+    a.appendChild(chooser(DATA.memory.themes.map(function (th) {
+      const sample = th.mode === 'related' ? (th.pairs[0] && th.pairs[0].a.id) : (th.cards[0] && th.cards[0].id);
+      return { name: th.name, sub: th.tagline || '', thumb: img(sample), onClick: function () { renderMemoryLevels(th); } };
+    })));
+  }
+  function renderMemoryLevels(theme) {
+    const a = clear();
+    a.appendChild(head('‹ Themes', renderMemoryThemes, theme.name, 'Pick a level.'));
+    a.appendChild(chooser(theme.levels.map(function (lv) {
+      return { name: lv.name, sub: lv.pairs + ' pairs · ' + (lv.pairs * 2) + ' cards', onClick: function () { playMemory(theme, lv); } };
+    })));
+  }
+  function playMemory(theme, level) {
+    const a = clear();
+    a.appendChild(head('‹ Levels', function () { renderMemoryLevels(theme); }, theme.name + ' — ' + level.name));
+    a.appendChild(msg('Find all the pairs.'));
+    const moves = document.createElement('p'); moves.className = 'kg-stat'; moves.id = 'kgMoves'; moves.textContent = 'Moves: 0';
+    a.appendChild(moves);
+
+    let units = [];
+    if (theme.mode === 'related') {
+      shuffle(theme.pairs).slice(0, level.pairs).forEach(function (p, i) {
+        units.push({ key: 'k' + i, id: p.a.id, label: p.a.label });
+        units.push({ key: 'k' + i, id: p.b.id, label: p.b.label });
+      });
+    } else {
+      shuffle(theme.cards).slice(0, level.pairs).forEach(function (card, i) {
+        units.push({ key: 'k' + i, id: card.id, label: card.label });
+        units.push({ key: 'k' + i, id: card.id, label: card.label });
+      });
+    }
+    const deck = shuffle(units);
+    const cols = level.pairs <= 3 ? 3 : (level.pairs <= 8 ? 4 : 5);
+    const grid = document.createElement('div'); grid.className = 'kg-grid';
+    grid.style.gridTemplateColumns = 'repeat(' + cols + ', 1fr)';
+    a.appendChild(grid);
+
+    let first = null, lock = false, matched = 0, moves2 = 0;
+    deck.forEach(function (unit) {
+      const c = document.createElement('button');
+      c.type = 'button'; c.className = 'kg-card';
+      c.innerHTML = '<span class="kg-back">ॐ</span>' +
+        '<span class="kg-face"><img src="' + img(unit.id) + '" alt="' + unit.label + '" loading="lazy"><span class="kg-cap">' + unit.label + '</span></span>';
+      c.addEventListener('click', function () { flip(c, unit); });
+      grid.appendChild(c);
+    });
+    function flip(c, unit) {
+      if (lock || c.classList.contains('is-up') || c.classList.contains('is-done')) return;
+      c.classList.add('is-up');
+      if (!first) { first = { c: c, unit: unit }; return; }
+      moves2++; document.getElementById('kgMoves').textContent = 'Moves: ' + moves2;
+      if (first.unit.key === unit.key && first.c !== c) {
+        first.c.classList.add('is-done'); c.classList.add('is-done');
+        first = null; matched++;
+        if (matched === level.pairs) {
+          setMsg('You matched them all in ' + moves2 + ' moves! 🎉');
+          award('memory', { theme: theme.id, level: level.name, moves: moves2 });
+        }
       } else {
         lock = true; const f = first; first = null;
-        setTimeout(function () {
-          f.c.textContent = '?'; c.textContent = '?'; f.c.dataset.up = '0'; c.dataset.up = '0'; lock = false;
-        }, 800);
+        setTimeout(function () { f.c.classList.remove('is-up'); c.classList.remove('is-up'); lock = false; }, 850);
       }
     }
   }
 
-  // ── Match the Vahana ──
-  function startVahana() {
-    const pairs = DATA.vahana.pairs;
+  // ─────────────────── Match the Vahana (image, leveled) ───────────────────
+  function renderVahanaLevels() {
+    const a = clear();
+    a.appendChild(head('‹ All games', renderMenu, DATA.vahana.title, 'Pick a level.'));
+    a.appendChild(chooser(DATA.vahana.levels.map(function (lv) {
+      return { name: lv.name, sub: lv.pairs + ' deities to match', onClick: function () { playVahana(lv); } };
+    })));
+  }
+  function playVahana(level) {
+    const a = clear();
+    a.appendChild(head('‹ Levels', renderVahanaLevels, DATA.vahana.title + ' — ' + level.name));
+    a.appendChild(msg('Tap a deity, then tap the vahana they ride.'));
+    const pairs = shuffle(DATA.vahana.pairs).slice(0, level.pairs);
+    pairs.forEach(function (p, i) { p._k = 'p' + i; });
+    const cols = document.createElement('div'); cols.className = 'kg-cols';
+    const dCol = document.createElement('div'); dCol.className = 'kg-col';
+    const vCol = document.createElement('div'); vCol.className = 'kg-col';
+    cols.appendChild(dCol); cols.appendChild(vCol); a.appendChild(cols);
+
+    function tile(item, key, col) {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'kg-tile';
+      b.dataset.key = key;
+      b.innerHTML = '<img src="' + img(item.id) + '" alt="' + item.label + '" loading="lazy"><span class="kg-cap">' + item.label + '</span>';
+      col.appendChild(b); return b;
+    }
     let selected = null, matched = 0;
-    app().innerHTML = header(DATA.vahana.title) +
-      '<p id="vMsg">Tap a deity, then tap their vahana.</p>' +
-      '<div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem"><div id="vDeities"></div><div id="vVahanas"></div></div>';
-    wireBack();
-    const dCol = document.getElementById('vDeities');
-    const vCol = document.getElementById('vVahanas');
-    pairs.forEach(function (p) {
-      const b = document.createElement('button');
-      b.className = 'btn'; b.type = 'button'; b.style.cssText = 'width:100%;margin:.3rem 0';
-      b.textContent = p.deity; b.dataset.deity = p.deity;
+    shuffle(pairs).forEach(function (p) {
+      const b = tile(p.deity, p._k, dCol);
       b.addEventListener('click', function () {
-        if (b.disabled) return;
-        if (selected) selected.classList.remove('primary');
-        selected = b; b.classList.add('primary');
+        if (b.classList.contains('is-done')) return;
+        if (selected) selected.classList.remove('is-sel');
+        selected = b; b.classList.add('is-sel');
       });
-      dCol.appendChild(b);
     });
     shuffle(pairs).forEach(function (p) {
-      const b = document.createElement('button');
-      b.className = 'btn'; b.type = 'button'; b.style.cssText = 'width:100%;margin:.3rem 0';
-      b.textContent = p.emoji + '  ' + p.vahana; b.dataset.deity = p.deity;
+      const b = tile(p.vahana, p._k, vCol);
       b.addEventListener('click', function () {
-        if (b.disabled || !selected) return;
-        if (selected.dataset.deity === p.deity) {
-          b.disabled = selected.disabled = true;
-          b.classList.remove('primary'); b.classList.add('is-correct');
-          selected.classList.remove('primary'); selected.classList.add('is-correct');
+        if (b.classList.contains('is-done') || !selected) return;
+        if (selected.dataset.key === b.dataset.key) {
+          b.classList.add('is-done'); selected.classList.add('is-done');
+          b.classList.remove('is-sel'); selected.classList.remove('is-sel');
           selected = null; matched++;
-          if (matched === pairs.length) { document.getElementById('vMsg').textContent = 'Perfect match! 🎉'; award('vahana'); }
-        } else {
-          document.getElementById('vMsg').textContent = 'Not a match — try again.';
-        }
+          if (matched === pairs.length) { setMsg('Perfect match! 🎉'); award('vahana', { level: level.name }); }
+          else { setMsg('Yes! ' + matched + ' of ' + pairs.length + ' matched.'); }
+        } else { setMsg('Not their vahana — try again.'); }
       });
-      vCol.appendChild(b);
     });
   }
 
-  // ── Story Sequencing ──
-  function startSequence() {
-    const correct = DATA.sequence.items;
-    const shuffled = shuffle(correct);
+  // ─────────────────── Story Order: category → level → play ───────────────────
+  function renderSequenceCats() {
+    const a = clear();
+    a.appendChild(head('‹ All games', renderMenu, DATA.sequence.title, 'Pick an epic.'));
+    a.appendChild(chooser(DATA.sequence.categories.map(function (cat) {
+      return {
+        name: cat.name + (cat.locked ? '  🔒' : ''),
+        sub: cat.locked ? (cat.note || 'Coming soon') : (cat.items.length + ' scenes'),
+        thumb: cat.items ? img(cat.items[0].id) : '',
+        locked: !!cat.locked,
+        onClick: function () { renderSequenceLevels(cat); }
+      };
+    })));
+  }
+  function renderSequenceLevels(cat) {
+    const a = clear();
+    a.appendChild(head('‹ Epics', renderSequenceCats, cat.name, 'Pick a level.'));
+    a.appendChild(chooser(cat.levels.map(function (lv) {
+      return { name: lv.name, sub: lv.count + ' scenes to order', onClick: function () { playSequence(cat, lv); } };
+    })));
+  }
+  function playSequence(cat, level) {
+    const a = clear();
+    a.appendChild(head('‹ Levels', function () { renderSequenceLevels(cat); }, cat.name + ' — ' + level.name));
+    a.appendChild(msg('Tap the scenes in the order they happen.'));
+    const correct = cat.items.slice(0, level.count);
+    const pool = shuffle(correct);
     let answer = [];
-    app().innerHTML = header(DATA.sequence.title) +
-      '<p id="sMsg">Tap the events in the order they happen.</p><div id="sChoices"></div><ol id="sAnswer" style="margin-top:1rem"></ol><button class="btn" type="button" id="sReset">Reset</button>';
-    wireBack();
-    const choices = document.getElementById('sChoices');
+    const ansRow = document.createElement('div'); ansRow.className = 'kg-seq-answer'; ansRow.id = 'kgAns';
+    const choices = document.createElement('div'); choices.className = 'kg-seq-choices'; choices.id = 'kgChoices';
+    const reset = document.createElement('button'); reset.className = 'btn kg-reset'; reset.type = 'button'; reset.textContent = 'Reset';
+    a.appendChild(ansRow); a.appendChild(choices); a.appendChild(reset);
+
+    function tileFor(item, n) {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'kg-scene';
+      b.innerHTML = (n ? '<span class="kg-ord">' + n + '</span>' : '') +
+        '<img src="' + img(item.id) + '" alt="' + item.label + '" loading="lazy"><span class="kg-cap">' + item.label + '</span>';
+      return b;
+    }
     function render() {
       choices.innerHTML = '';
-      shuffled.forEach(function (item) {
+      pool.forEach(function (item) {
         if (answer.indexOf(item) !== -1) return;
-        const b = document.createElement('button');
-        b.className = 'btn'; b.type = 'button';
-        b.style.cssText = 'display:block;width:100%;text-align:left;margin:.3rem 0';
-        b.textContent = item;
+        const b = tileFor(item, 0);
         b.addEventListener('click', function () { answer.push(item); render(); });
         choices.appendChild(b);
       });
-      document.getElementById('sAnswer').innerHTML = answer.map(function (a) { return '<li>' + a + '</li>'; }).join('');
+      ansRow.innerHTML = '';
+      answer.forEach(function (item, i) {
+        const b = tileFor(item, i + 1);
+        b.addEventListener('click', function () { answer.splice(i, 1); render(); });
+        ansRow.appendChild(b);
+      });
       if (answer.length === correct.length) {
-        const ok = answer.every(function (a, i) { return a === correct[i]; });
-        document.getElementById('sMsg').textContent = ok ? 'Correct order! 🎉' : 'Not quite — tap Reset and try again.';
-        if (ok) award('sequence');
-      }
+        const ok = answer.every(function (it, i) { return it === correct[i]; });
+        if (ok) { setMsg('Correct order! 🎉'); award('sequence', { category: cat.id, level: level.name }); }
+        else { setMsg('Not quite — tap a placed scene to remove it, or Reset.'); }
+      } else { setMsg('Tap the scenes in the order they happen.'); }
     }
-    document.getElementById('sReset').addEventListener('click', function () {
-      answer = []; document.getElementById('sMsg').textContent = 'Tap the events in the order they happen.'; render();
-    });
+    reset.addEventListener('click', function () { answer = []; render(); });
     render();
   }
 
-  // ── Sliding Picture Puzzle ──
-  function startJigsaw() {
-    const size = DATA.jigsaw.size || 3;
-    const img = DATA.jigsaw.image;
-    const n = size * size;
-    const blankVal = n - 1;
-    let tiles = [];
+  // ─────────────────── Sliding Picture (image picker + size) ───────────────────
+  function renderJigsawChoices() {
+    const a = clear();
+    a.appendChild(head('‹ All games', renderMenu, DATA.jigsaw.title, 'Pick a picture and a size.'));
+    let pick = DATA.jigsaw.choices[0];
+    const picGrid = chooser(DATA.jigsaw.choices.map(function (ch) {
+      return { name: ch.label, thumb: img(ch.id), onClick: function () { pick = ch; highlight(); } };
+    }));
+    a.appendChild(picGrid);
+    function highlight() {
+      const opts = picGrid.querySelectorAll('.kg-opt');
+      DATA.jigsaw.choices.forEach(function (ch, i) { opts[i].classList.toggle('is-sel', ch === pick); });
+    }
+    highlight();
+    const sizeRow = document.createElement('div'); sizeRow.className = 'kg-sizes';
+    DATA.jigsaw.sizes.forEach(function (s) {
+      const b = document.createElement('button'); b.className = 'btn primary'; b.type = 'button'; b.textContent = s.name;
+      b.addEventListener('click', function () { playJigsaw(pick, s.size); });
+      sizeRow.appendChild(b);
+    });
+    a.appendChild(sizeRow);
+  }
+  function playJigsaw(choice, size) {
+    const a = clear();
+    a.appendChild(head('‹ Pictures', renderJigsawChoices, DATA.jigsaw.title + ' — ' + choice.label));
+    a.appendChild(msg('Slide tiles into the empty space to complete the picture.'));
+    const image = img(choice.id);
+    const n = size * size, blankVal = n - 1;
+    let tiles = [], blank = n - 1;
     for (let i = 0; i < n; i++) tiles.push(i);
-    let blank = n - 1;
     function neighbors(b) {
       const r = Math.floor(b / size), c = b % size, res = [];
       if (r > 0) res.push(b - size);
@@ -166,27 +295,22 @@
       if (c < size - 1) res.push(b + 1);
       return res;
     }
-    for (let k = 0; k < 200; k++) {
-      const nb = neighbors(blank);
-      const t = nb[Math.floor(Math.random() * nb.length)];
+    for (let k = 0; k < 300; k++) {
+      const nb = neighbors(blank); const t = nb[Math.floor(Math.random() * nb.length)];
       const tmp = tiles[blank]; tiles[blank] = tiles[t]; tiles[t] = tmp; blank = t;
     }
-    app().innerHTML = header(DATA.jigsaw.title) +
-      '<p id="jMsg">Slide tiles into the empty space to complete the picture.</p>' +
-      '<div id="jGrid" style="display:grid;grid-template-columns:repeat(' + size + ',1fr);gap:3px;max-width:360px"></div>';
-    wireBack();
-    const grid = document.getElementById('jGrid');
+    const grid = document.createElement('div'); grid.className = 'kg-jig';
+    grid.style.gridTemplateColumns = 'repeat(' + size + ', 1fr)';
+    a.appendChild(grid);
     function draw() {
       grid.innerHTML = '';
       tiles.forEach(function (val, pos) {
-        const cell = document.createElement('button');
-        cell.type = 'button';
-        cell.style.cssText = 'aspect-ratio:1;border:1px solid rgba(232,185,79,.3);padding:0;cursor:pointer;background-repeat:no-repeat;background-size:' + (size * 100) + '% ' + (size * 100) + '%';
-        if (val === blankVal) {
-          cell.style.visibility = 'hidden';
-        } else {
+        const cell = document.createElement('button'); cell.type = 'button'; cell.className = 'kg-jigcell';
+        if (val === blankVal) { cell.style.visibility = 'hidden'; }
+        else {
           const r = Math.floor(val / size), c = val % size;
-          cell.style.backgroundImage = 'url("' + img + '")';
+          cell.style.backgroundImage = 'url("' + image + '")';
+          cell.style.backgroundSize = (size * 100) + '% ' + (size * 100) + '%';
           cell.style.backgroundPosition = (c * 100 / (size - 1)) + '% ' + (r * 100 / (size - 1)) + '%';
         }
         cell.addEventListener('click', function () { tryMove(pos); });
@@ -197,14 +321,12 @@
       if (neighbors(blank).indexOf(pos) === -1) return;
       const tmp = tiles[blank]; tiles[blank] = tiles[pos]; tiles[pos] = tmp; blank = pos;
       draw();
-      if (tiles.every(function (v, i) { return v === i; })) {
-        document.getElementById('jMsg').textContent = 'You solved it! 🎉'; award('jigsaw');
-      }
+      if (tiles.every(function (v, i) { return v === i; })) { setMsg('You solved it! 🎉'); award('jigsaw', { picture: choice.id, size: size }); }
     }
     draw();
   }
 
-  fetch('content/kids-games.json?v=1')
+  fetch('content/kids-games.json?v=2')
     .then(function (r) { return r.json(); })
     .then(function (d) { DATA = d; renderMenu(); })
     .catch(function () { const a = app(); if (a) a.innerHTML = '<article class="card"><h3>Games are loading soon.</h3></article>'; });
