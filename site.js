@@ -540,9 +540,31 @@ function khatakshetraQueueProgressPush() {
   }, 1500);
 }
 
+// Shared footer: ensures every page that loads site.js carries a consistent set
+// of footer links (incl. About + Contact). Non-destructive — appends a links row
+// to the page's existing <footer>. Skips if static footer links already exist
+// (e.g. generated SEO pages, which print .site-footer-links server-side).
+function injectKhatakshetraFooter() {
+  if (document.querySelector('.kx-footer-links') || document.querySelector('.site-footer-links')) return;
+  var links = [
+    ['/', 'Home'], ['/stories', 'Stories'], ['/games', 'Play'], ['/temples', 'Temples'],
+    ['/daily', 'Daily'], ['/kits', 'Kits'], ['/about', 'About'], ['/contact', 'Contact']
+  ];
+  var bar = document.createElement('nav');
+  bar.className = 'kx-footer-links';
+  bar.setAttribute('aria-label', 'Footer');
+  bar.style.cssText = 'text-align:center;padding:1.25rem 1rem;font-size:0.9rem;line-height:2.1;border-top:1px solid rgba(200,150,44,0.18);';
+  bar.innerHTML = links.map(function (l) {
+    return '<a href="' + l[0] + '" style="color:#C8962C;text-decoration:none;margin:0 0.5rem;white-space:nowrap;">' + l[1] + '</a>';
+  }).join('<span style="opacity:.4">&middot;</span>');
+  var foot = document.querySelector('footer');
+  (foot || document.body).appendChild(bar);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   ensureKhatakshetraShell();
   renderKhatakshetraProgressChip();
   initKhatakshetraAnalytics();
   initKhatakshetraSupabase();
+  injectKhatakshetraFooter();
 });
