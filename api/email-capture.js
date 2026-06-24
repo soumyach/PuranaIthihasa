@@ -1,3 +1,5 @@
+import { sendWelcomeEmail } from './_welcome-email.js';
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
@@ -39,6 +41,29 @@ export default async function handler(req, res) {
   if (childName) row.metadata = { child_name: childName };
 
   const baseUrl = `${supabaseUrl.replace(/\/$/, '')}/rest/v1/${table}`;
+
+  // Welcome-email automation: detect a brand-new subscriber (no prior row for
+  // this email) BEFORE we write, so we send the welcome exactly once, ever.
+  // Skipped for the contact form and when Resend isn't configured (no latency).
+  let isNewSubscriber = false;
+  if (process.env.RESEND_API_KEY && cta !== 'contact') {
+    try {
+      const checkResp = await fetch(
+        `${baseUrl}?email_id=eq.${encodeURIComponent(email)}&select=email_id&limit=1`,
+        { headers: { apikey: serviceRoleKey, Authorization: `Bearer ${serviceRoleKey}` } }
+      );
+      if (checkResp.ok) {
+        const existing = await checkResp.json();
+        isNewSubscriber = Array.isArray(existing) && existing.length === 0;
+      }
+    } catch (_) { /* non-fatal: skip welcome on lookup failure */ }
+  }
+
+  async function maybeSendWelcome() {
+    if (!isNewSubscriber || cta === 'contact' || !process.env.RESEND_API_KEY) return;
+    try { await sendWelcomeEmail(email, { name: childName || '' }); } catch (_) { /* never block capture */ }
+  }
+
   const upsertResp = await fetch(`${baseUrl}?on_conflict=email_id,cta`, {
     method: 'POST',
     headers: {
@@ -51,6 +76,7 @@ export default async function handler(req, res) {
   });
 
   if (upsertResp.ok) {
+    await maybeSendWelcome();
     return res.status(200).json({ ok: true });
   }
 
@@ -70,6 +96,7 @@ export default async function handler(req, res) {
     });
 
     if (insertResp.ok) {
+      await maybeSendWelcome();
       return res.status(200).json({ ok: true, mode: 'insert' });
     }
 

@@ -92,6 +92,9 @@ function navBlock() {
 function footerBlock() {
   return `<footer class="site-footer">
   <p>&copy; Khatakshetra. Exploring Puranas and Itihasa for families.</p>
+  <nav class="site-footer-links" aria-label="Footer">
+    <a href="/">Home</a> &middot; <a href="/stories">Stories</a> &middot; <a href="/games">Play</a> &middot; <a href="/temples">Temples</a> &middot; <a href="/daily">Daily</a> &middot; <a href="/about">About</a> &middot; <a href="/contact">Contact</a>
+  </nav>
 </footer>
 <script src="/site.js"></script>`;
 }
@@ -540,6 +543,8 @@ function writeSitemap(entities, packBySlug, festivals, temples, stories) {
   add('/', '1.0');
   ['/stories', '/deities', '/games', '/festivals', '/temples'].forEach(u => add(u, '0.9'));
   add('/daily', '0.9'); add('/which-character', '0.8'); add('/paths', '0.7');
+  add('/kids-games', '0.8'); add('/daily-quiz', '0.8'); add('/leaderboard', '0.6'); add('/temple-tips', '0.8');
+  add('/about', '0.6'); add('/contact', '0.5');
   ['/ramayana-journey', '/ramayana-path-game'].forEach(u => add(u, '0.8'));
   ['/booklets', '/drawing-kits', '/kits', '/coloring-book-ramayana', '/storybook-ramayana', '/rama-navami-reader'].forEach(u => add(u, '0.7'));
   ['/sangraha', '/community'].forEach(u => add(u, '0.6'));
