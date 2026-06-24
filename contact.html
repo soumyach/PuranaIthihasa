@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Khatakshetra — We'd Love to Hear From You</title>
+<meta name="description" content="Questions, ideas, corrections, partnerships, or just hello — reach the Khatakshetra team. We read every message.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://khatakshetra.com/contact">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact Khatakshetra">
+<meta property="og:description" content="Questions, ideas, corrections, or partnerships — reach the Khatakshetra team.">
+<meta property="og:url" content="https://khatakshetra.com/contact">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="daily.html">Daily</a><a href="stories.html">Stories</a><a class="keep-mobile" href="games.html">Play</a><a href="temples.html">Temples</a><a href="about.html">About</a></div></nav>
+
+<header class="page-hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Contact</div>
+    <h1>We'd love to hear from you.</h1>
+    <p class="lead">Questions, ideas, a correction to a story, a temple tip, a partnership, or just hello &mdash; send it over. We're a small team and we read every message.</p>
+  </div>
+</header>
+
+<main>
+<section class="band"><div class="inner" style="max-width:640px;margin:0 auto">
+  <article class="card">
+    <div class="eyebrow">Email us</div>
+    <!-- TODO: replace with your real inbox address -->
+    <h3 style="margin:.3rem 0 1rem"><a href="mailto:hello@khatakshetra.com">hello@khatakshetra.com</a></h3>
+    <form id="contactForm" class="signup-form">
+      <label>Your name
+        <input id="cName" class="field" type="text" maxlength="80" autocomplete="name" style="display:block;width:100%;margin-top:.3rem">
+      </label>
+      <label>Your email
+        <input id="cEmail" class="field" type="email" required autocomplete="email" placeholder="your@email.com" style="display:block;width:100%;margin-top:.3rem">
+      </label>
+      <label>Message
+        <textarea id="cMsg" class="field" rows="5" maxlength="2000" required placeholder="How can we help?" style="display:block;width:100%;margin-top:.3rem"></textarea>
+      </label>
+      <button class="btn primary" type="submit">Send message</button>
+      <p class="fine-print" id="cStatus" style="min-height:1.2em">We'll get back to you by email. Your address is only used to reply.</p>
+    </form>
+  </article>
+  <p class="section-copy" style="margin-top:1rem;font-size:.92rem;opacity:.85">Prefer social? Add your channels here (Instagram, YouTube, WhatsApp community) once they're live &mdash; this is the page people will look for them on.</p>
+</div></section>
+</main>
+
+<footer><a href="/">Home</a> &middot; <a href="about.html">About</a> &middot; <a href="contact.html">Contact</a> &middot; <a href="temples.html">Temples</a></footer>
+<script src="analytics.js"></script>
+<script src="site.js"></script>
+<script>
+  (function () {
+    var INBOX = 'hello@khatakshetra.com'; // ← set your real inbox
+    var form = document.getElementById('contactForm');
+    function valid(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = document.getElementById('cName').value.trim();
+      var email = document.getElementById('cEmail').value.trim();
+      var msg = document.getElementById('cMsg').value.trim();
+      var status = document.getElementById('cStatus');
+      if (!valid(email) || !msg) { status.textContent = 'Please add a valid email and a message.'; return; }
+      // Capture the address as a lead (best-effort) so we never lose a contact.
+      try {
+        fetch('/api/email-capture', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email_id: email, cta: 'contact' }) });
+      } catch (err) {}
+      if (typeof window.trackKhatakshetra === 'function') window.trackKhatakshetra('contact_submitted', {});
+      // Open the visitor's email client with the message prefilled.
+      var subject = encodeURIComponent('Khatakshetra — message from ' + (name || email));
+      var body = encodeURIComponent((name ? 'Name: ' + name + '\n' : '') + 'Email: ' + email + '\n\n' + msg);
+      window.location.href = 'mailto:' + INBOX + '?subject=' + subject + '&body=' + body;
+      status.textContent = 'Opening your email app… if nothing happens, write to us at ' + INBOX + '.';
+      form.reset();
+    });
+  })();
+</script>
+</body>
+</html>
