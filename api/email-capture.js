@@ -41,27 +41,43 @@ export default async function handler(req, res) {
   if (childName) row.metadata = { child_name: childName };
 
   const baseUrl = `${supabaseUrl.replace(/\/$/, '')}/rest/v1/${table}`;
+  const authHeaders = { apikey: serviceRoleKey, Authorization: `Bearer ${serviceRoleKey}` };
 
-  // Welcome-email automation: detect a brand-new subscriber (no prior row for
-  // this email) BEFORE we write, so we send the welcome exactly once, ever.
-  // Skipped for the contact form and when Resend isn't configured (no latency).
-  let isNewSubscriber = false;
-  if (process.env.RESEND_API_KEY && cta !== 'contact') {
+  // Welcome-email automation (Gmail). Manages a per-email subscriber row so we
+  // (a) send the welcome exactly once per email, (b) respect unsubscribes,
+  // (c) mint the token used in unsubscribe / preferences links. Entirely
+  // skipped (no latency) unless Gmail is configured; never blocks capture.
+  const gmailReady = !!(process.env.GMAIL_REFRESH_TOKEN && process.env.GMAIL_CLIENT_ID && process.env.GMAIL_CLIENT_SECRET);
+
+  async function ensureSubscriberAndWelcome() {
+    if (!gmailReady || cta === 'contact') return;
+    const subBase = `${supabaseUrl.replace(/\/$/, '')}/rest/v1/email_subscribers`;
+    let token = null, isNew = false, subscribed = true;
     try {
-      const checkResp = await fetch(
-        `${baseUrl}?email_id=eq.${encodeURIComponent(email)}&select=email_id&limit=1`,
-        { headers: { apikey: serviceRoleKey, Authorization: `Bearer ${serviceRoleKey}` } }
-      );
-      if (checkResp.ok) {
-        const existing = await checkResp.json();
-        isNewSubscriber = Array.isArray(existing) && existing.length === 0;
+      const getResp = await fetch(`${subBase}?email=eq.${encodeURIComponent(email)}&select=token,subscribed`, { headers: authHeaders });
+      if (!getResp.ok) return; // table may not exist yet — skip silently
+      const rows = await getResp.json();
+      if (Array.isArray(rows) && rows.length) {
+        token = rows[0].token; subscribed = rows[0].subscribed !== false;
+      } else {
+        const insResp = await fetch(subBase, {
+          method: 'POST',
+          headers: { ...authHeaders, 'Content-Type': 'application/json', Prefer: 'return=representation' },
+          body: JSON.stringify({ email: email, source_cta: cta })
+        });
+        if (insResp.ok) {
+          const created = await insResp.json();
+          token = created && created[0] && created[0].token; isNew = true;
+        } else if (insResp.status === 409) {
+          // race: another request created it first — fetch the token
+          const g2 = await fetch(`${subBase}?email=eq.${encodeURIComponent(email)}&select=token,subscribed`, { headers: authHeaders });
+          if (g2.ok) { const r2 = await g2.json(); if (r2.length) { token = r2[0].token; subscribed = r2[0].subscribed !== false; } }
+        }
       }
-    } catch (_) { /* non-fatal: skip welcome on lookup failure */ }
-  }
-
-  async function maybeSendWelcome() {
-    if (!isNewSubscriber || cta === 'contact' || !process.env.RESEND_API_KEY) return;
-    try { await sendWelcomeEmail(email, { name: childName || '' }); } catch (_) { /* never block capture */ }
+    } catch (_) { return; }
+    if (isNew && subscribed && token) {
+      try { await sendWelcomeEmail(email, { name: childName || '', token: token }); } catch (_) { /* never block capture */ }
+    }
   }
 
   const upsertResp = await fetch(`${baseUrl}?on_conflict=email_id,cta`, {
@@ -76,7 +92,7 @@ export default async function handler(req, res) {
   });
 
   if (upsertResp.ok) {
-    await maybeSendWelcome();
+    await ensureSubscriberAndWelcome();
     return res.status(200).json({ ok: true });
   }
 
@@ -96,7 +112,7 @@ export default async function handler(req, res) {
     });
 
     if (insertResp.ok) {
-      await maybeSendWelcome();
+      await ensureSubscriberAndWelcome();
       return res.status(200).json({ ok: true, mode: 'insert' });
     }
 

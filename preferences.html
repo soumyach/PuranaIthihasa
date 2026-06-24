@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email preferences - Khatakshetra</title>
+<meta name="description" content="Manage your Khatakshetra email preferences — choose what you hear from us, or unsubscribe.">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://khatakshetra.com/preferences">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="daily.html">Daily</a><a href="stories.html">Stories</a><a class="keep-mobile" href="games.html">Play</a><a href="temples.html">Temples</a><a href="about.html">About</a></div></nav>
+
+<header class="page-hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Email preferences</div>
+    <h1>You're in control.</h1>
+    <p class="lead">Choose what you'd like to hear from us — or unsubscribe completely. Changes save instantly.</p>
+  </div>
+</header>
+
+<main>
+<section class="band"><div class="inner" style="max-width:560px;margin:0 auto">
+  <article class="card" id="prefCard">
+    <p id="prefEmail" class="eyebrow" style="margin-bottom:1rem">Loading your preferences…</p>
+    <div id="prefBody" style="display:none">
+      <label style="display:flex;gap:.7rem;align-items:flex-start;margin:0 0 1rem;cursor:pointer">
+        <input type="checkbox" id="optSubscribed" style="margin-top:.35rem;width:18px;height:18px">
+        <span><strong>Emails from Khatakshetra</strong><br><span style="opacity:.8;font-size:.92rem">Your free unlock, festival drops, and the occasional note. Turn this off to stop all emails.</span></span>
+      </label>
+      <label style="display:flex;gap:.7rem;align-items:flex-start;margin:0 0 1.25rem;cursor:pointer">
+        <input type="checkbox" id="optWeekly" style="margin-top:.35rem;width:18px;height:18px">
+        <span><strong>Weekly digest</strong><br><span style="opacity:.8;font-size:.92rem">One short, beautiful email a week — a katha, a featured story, and a new game.</span></span>
+      </label>
+      <button class="btn primary" id="saveBtn" type="button">Save preferences</button>
+      <button class="btn" id="unsubBtn" type="button" style="margin-left:.5rem">Unsubscribe from all</button>
+      <p id="prefStatus" class="fine-print" style="min-height:1.3em;margin-top:1rem"></p>
+    </div>
+    <p id="prefError" style="display:none;color:#F5A23C"></p>
+  </article>
+</div></section>
+</main>
+
+<footer><a href="/">Home</a> &middot; <a href="about.html">About</a> &middot; <a href="contact.html">Contact</a></footer>
+<script src="analytics.js"></script>
+<script>
+  (function () {
+    var params = new URLSearchParams(location.search);
+    var token = params.get('t') || params.get('token') || '';
+    var emailEl = document.getElementById('prefEmail');
+    var bodyEl = document.getElementById('prefBody');
+    var errEl = document.getElementById('prefError');
+    var statusEl = document.getElementById('prefStatus');
+    var subEl = document.getElementById('optSubscribed');
+    var wkEl = document.getElementById('optWeekly');
+
+    function showError(msg) { emailEl.style.display = 'none'; bodyEl.style.display = 'none'; errEl.style.display = 'block'; errEl.textContent = msg; }
+    function maskEmail(e) { var p = String(e || '').split('@'); if (p.length !== 2) return e; var u = p[0]; return (u.length <= 2 ? u[0] + '*' : u.slice(0, 2) + '***') + '@' + p[1]; }
+
+    if (!token) { showError('This link is missing its access token. Please use the link from one of our emails.'); return; }
+
+    fetch('/api/preferences?token=' + encodeURIComponent(token))
+      .then(function (r) { if (!r.ok) throw new Error(r.status === 404 ? 'We couldn\'t find these preferences. The link may have expired.' : 'Could not load your preferences.'); return r.json(); })
+      .then(function (d) {
+        emailEl.textContent = 'Preferences for ' + maskEmail(d.email);
+        subEl.checked = d.subscribed !== false;
+        wkEl.checked = d.weekly_digest !== false;
+        bodyEl.style.display = 'block';
+      })
+      .catch(function (e) { showError(e.message || 'Something went wrong.'); });
+
+    function save(patch, okMsg) {
+      statusEl.textContent = 'Saving…';
+      fetch('/api/preferences?token=' + encodeURIComponent(token), {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(patch)
+      })
+        .then(function (r) { if (!r.ok) throw new Error('save failed'); return r.json(); })
+        .then(function (d) {
+          subEl.checked = d.subscribed !== false; wkEl.checked = d.weekly_digest !== false;
+          statusEl.textContent = okMsg || 'Saved.';
+        })
+        .catch(function () { statusEl.textContent = 'Sorry, that did not save. Please try again.'; });
+    }
+
+    document.getElementById('saveBtn').addEventListener('click', function () {
+      save({ subscribed: subEl.checked, weekly_digest: wkEl.checked }, 'Your preferences are saved. Thank you.');
+    });
+    document.getElementById('unsubBtn').addEventListener('click', function () {
+      save({ subscribed: false, weekly_digest: false }, 'You have been unsubscribed. We are sorry to see you go — you are always welcome back.');
+    });
+  })();
+</script>
+</body>
+</html>
