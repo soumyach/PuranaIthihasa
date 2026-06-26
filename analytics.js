@@ -21,9 +21,10 @@
   if (window.__khAnalyticsLoaded) return;
   window.__khAnalyticsLoaded = true;
 
-  // A value is "real" only if it has the right prefix AND contains no placeholder X's.
-  var hasGA = /^G-/.test(ANALYTICS.ga4Id) && ANALYTICS.ga4Id.indexOf('X') === -1;
-  var hasPH = /^phc_/.test(ANALYTICS.posthogKey) && ANALYTICS.posthogKey.indexOf('X') === -1;
+  // A value is "real" if it has the right prefix and isn't the literal placeholder.
+  // (Real GA4 IDs and PostHog keys can legitimately contain the letter X.)
+  var hasGA = /^G-/.test(ANALYTICS.ga4Id) && ANALYTICS.ga4Id !== 'G-XXXXXXXXXX';
+  var hasPH = /^phc_/.test(ANALYTICS.posthogKey) && ANALYTICS.posthogKey !== 'phc_XXXXXXXXXXXXXXXX';
 
   // ── Google Analytics 4 ──
   if (hasGA) {
