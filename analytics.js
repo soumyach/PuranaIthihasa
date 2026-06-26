@@ -13,8 +13,8 @@
  */
 (function () {
   var ANALYTICS = {
-    ga4Id: 'G-XXXXXXXXXX',            // ← replace with real GA4 id, e.g. 'G-AB12CD34EF'
-    posthogKey: 'phc_XXXXXXXXXXXXXXXX', // ← replace with real PostHog key, e.g. 'phc_abc123...'
+    ga4Id: 'G-X9NTBSLFTJ',            // ← replace with real GA4 id, e.g. 'G-AB12CD34EF'
+    posthogKey: 'phc_CqRMmaREFGZM3gQdhp3xF3nc3h4MCyfhASP9jjzbT4GZ', // ← replace with real PostHog key, e.g. 'phc_abc123...'
     posthogHost: 'https://us.i.posthog.com'
   };
 

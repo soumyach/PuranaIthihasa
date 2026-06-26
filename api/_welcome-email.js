@@ -153,10 +153,10 @@ export async function sendWelcomeEmail(to, opts) {
   if (!process.env.GMAIL_REFRESH_TOKEN || !process.env.GMAIL_CLIENT_ID || !process.env.GMAIL_CLIENT_SECRET) {
     return { sent: false, reason: 'gmail_not_configured' };
   }
-  const from = process.env.WELCOME_FROM || 'Khatakshetra <hello@khatakshetra.com>';
+  const from = process.env.WELCOME_FROM || 'Khatakshetra <vyasa@khatakshetra.com>';
   const html = welcomeEmailHtml({ name: opts.name, token: opts.token });
   const manageHttps = prefsUrl(opts.token);
-  const unsubMailto = 'mailto:' + (from.match(/<([^>]+)>/) ? from.match(/<([^>]+)>/)[1] : 'hello@khatakshetra.com') + '?subject=unsubscribe';
+  const unsubMailto = 'mailto:' + (from.match(/<([^>]+)>/) ? from.match(/<([^>]+)>/)[1] : 'vyasa@khatakshetra.com') + '?subject=unsubscribe';
   try {
     const accessToken = await getAccessToken();
     const message = [

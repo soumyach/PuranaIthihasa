@@ -19,8 +19,8 @@ let pendingSignupCallback = null;
 // so this is safe to deploy with empty values.
 // ---------------------------------------------------------------------------
 const KHATAKSHETRA_ANALYTICS = {
-  ga4Id: '',            // e.g. 'G-XXXXXXXXXX'  (Google Analytics 4 Measurement ID)
-  posthogKey: '',       // e.g. 'phc_xxxxxxxx'  (PostHog project API key)
+  ga4Id: 'G-X9NTBSLFTJ',            // e.g. 'G-XXXXXXXXXX'  (Google Analytics 4 Measurement ID)
+  posthogKey: 'phc_CqRMmaREFGZM3gQdhp3xF3nc3h4MCyfhASP9jjzbT4GZ',       // e.g. 'phc_xxxxxxxx'  (PostHog project API key)
   posthogHost: 'https://us.i.posthog.com'
 };
 let khatakshetraAnalyticsReady = false;
