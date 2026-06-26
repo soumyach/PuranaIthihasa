@@ -28,8 +28,9 @@ let khatakshetraAnalyticsReady = false;
 function initKhatakshetraAnalytics() {
   if (khatakshetraAnalyticsReady) return;
   khatakshetraAnalyticsReady = true;
-  // Google Analytics 4
-  if (KHATAKSHETRA_ANALYTICS.ga4Id && KHATAKSHETRA_ANALYTICS.ga4Id.indexOf('G-') === 0) {
+  // Google Analytics 4 — skip if a hardcoded Google tag is already on the page
+  // (window.gtag defined in <head>), so the page never loads GA4 twice.
+  if (KHATAKSHETRA_ANALYTICS.ga4Id && KHATAKSHETRA_ANALYTICS.ga4Id.indexOf('G-') === 0 && typeof window.gtag !== 'function') {
     const tag = document.createElement('script');
     tag.async = true;
     tag.src = `https://www.googletagmanager.com/gtag/js?id=${KHATAKSHETRA_ANALYTICS.ga4Id}`;

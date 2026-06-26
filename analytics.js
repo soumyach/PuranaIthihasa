@@ -23,7 +23,9 @@
 
   // A value is "real" if it has the right prefix and isn't the literal placeholder.
   // (Real GA4 IDs and PostHog keys can legitimately contain the letter X.)
-  var hasGA = /^G-/.test(ANALYTICS.ga4Id) && ANALYTICS.ga4Id !== 'G-XXXXXXXXXX';
+  // GA also stands down if a hardcoded Google tag is already on the page
+  // (window.gtag defined in <head>), so we never load GA4 twice.
+  var hasGA = /^G-/.test(ANALYTICS.ga4Id) && ANALYTICS.ga4Id !== 'G-XXXXXXXXXX' && typeof window.gtag !== 'function';
   var hasPH = /^phc_/.test(ANALYTICS.posthogKey) && ANALYTICS.posthogKey !== 'phc_XXXXXXXXXXXXXXXX';
 
   // ── Google Analytics 4 ──
