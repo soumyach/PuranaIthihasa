@@ -1,6 +1,20 @@
-import { sendWelcomeEmail } from './_welcome-email.js';
+// The welcome-email helper is imported LAZILY, inside a try/catch, further down.
+// A static import of a module Vercel doesn't bundle (e.g. `api/_welcome-email.js`)
+// crashes the entire route at load — that is what silently broke every signup
+// with FUNCTION_INVOCATION_FAILED. Capturing an email must never depend on the
+// email-*sending* code being importable.
 
 export default async function handler(req, res) {
+  try {
+    return await captureHandler(req, res);
+  } catch (err) {
+    console.error('email-capture failed:', err);
+    if (res.headersSent) return;
+    return res.status(500).json({ error: 'Capture failed', detail: String((err && err.message) || err) });
+  }
+}
+
+async function captureHandler(req, res) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
     return res.status(405).json({ error: 'Method not allowed' });
@@ -76,7 +90,13 @@ export default async function handler(req, res) {
       }
     } catch (_) { return; }
     if (isNew && subscribed && token) {
-      try { await sendWelcomeEmail(email, { name: childName || '', token: token }); } catch (_) { /* never block capture */ }
+      try {
+        const mod = await import('../lib/welcome-email.js');
+        await mod.sendWelcomeEmail(email, { name: childName || '', token: token });
+      } catch (e) {
+        // Sending is best-effort: log and move on. The subscriber is already saved.
+        console.error('welcome email skipped:', e && e.message);
+      }
     }
   }
 
