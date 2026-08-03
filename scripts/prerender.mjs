@@ -43,6 +43,15 @@ function headBlock({ title, description, canonicalUrl, ogType = 'article', extra
   const safeTitle = escHtml(title);
   const safeDesc = escHtml(description);
   return `<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9NTBSLFTJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-X9NTBSLFTJ');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${safeTitle}</title>
