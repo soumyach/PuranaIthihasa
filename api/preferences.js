@@ -7,6 +7,16 @@
  * Uses the Supabase service role (server-side); the token is the only credential.
  */
 export default async function handler(req, res) {
+  try {
+    return await prefsHandler(req, res);
+  } catch (err) {
+    console.error('preferences failed:', err);
+    if (res.headersSent) return;
+    return res.status(500).json({ error: 'Preferences failed', detail: String((err && err.message) || err) });
+  }
+}
+
+async function prefsHandler(req, res) {
   const supabaseUrl = process.env.SUPABASE_URL;
   const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SECRET_KEY;
   if (!supabaseUrl || !serviceRoleKey) {
@@ -21,7 +31,12 @@ export default async function handler(req, res) {
 
   if (req.method === 'GET') {
     const r = await fetch(`${base}?token=eq.${encodeURIComponent(token)}&select=email,subscribed,weekly_digest`, { headers: H });
-    if (!r.ok) return res.status(502).json({ error: 'Lookup failed' });
+    if (!r.ok) {
+      const detail = await r.text();
+      // 404 from PostgREST here usually means the email_subscribers table hasn't
+      // been created yet — run supabase/email-subscribers.sql.
+      return res.status(502).json({ error: 'Lookup failed', status: r.status, detail: detail.slice(0, 300) });
+    }
     const rows = await r.json();
     if (!Array.isArray(rows) || !rows.length) return res.status(404).json({ error: 'Not found' });
     return res.status(200).json(rows[0]);
