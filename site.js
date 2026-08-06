@@ -41,7 +41,11 @@ function initKhatakshetraAnalytics() {
     window.gtag('config', KHATAKSHETRA_ANALYTICS.ga4Id);
   }
   // PostHog (loaded from CDN; init on load)
-  if (KHATAKSHETRA_ANALYTICS.posthogKey && KHATAKSHETRA_ANALYTICS.posthogKey.indexOf('phc_') === 0) {
+  // Guarded: analytics.js is now loaded on every page and initialises PostHog
+  // too. Whichever runs first wins — never initialise it twice.
+  if (KHATAKSHETRA_ANALYTICS.posthogKey && KHATAKSHETRA_ANALYTICS.posthogKey.indexOf('phc_') === 0
+      && !window.__khPosthogInit && !window.posthog) {
+    window.__khPosthogInit = true;
     const ph = document.createElement('script');
     ph.async = true;
     ph.src = 'https://cdn.jsdelivr.net/npm/posthog-js@1/dist/array.full.js';
@@ -61,8 +65,14 @@ function initKhatakshetraAnalytics() {
 // Every channel is wrapped so analytics can never break the page.
 function trackKhatakshetraEvent(eventName, properties) {
   properties = properties || {};
-  try { if (window.gtag) window.gtag('event', eventName, properties); } catch (e) {}
-  try { if (window.posthog && window.posthog.capture) window.posthog.capture(eventName, properties); } catch (e) {}
+  // Prefer the unified tracker in analytics.js (also hits Meta Pixel + Clarity).
+  // Fall back to GA4/PostHog directly if analytics.js hasn't loaded.
+  if (typeof window.trackKhatakshetra === 'function') {
+    try { window.trackKhatakshetra(eventName, properties); } catch (e) {}
+  } else {
+    try { if (window.gtag) window.gtag('event', eventName, properties); } catch (e) {}
+    try { if (window.posthog && window.posthog.capture) window.posthog.capture(eventName, properties); } catch (e) {}
+  }
   try {
     const raw = JSON.parse(localStorage.getItem(KHATAKSHETRA_PROFILE_KEY) || 'null');
     fetch('/api/event', {
@@ -338,12 +348,20 @@ function saveKhatakshetraSignupFromModal(event) {
 
   // P0-1: actually send the signup to the server. Previously this modal saved
   // only to localStorage, so in-product signups never reached Supabase.
+  // Attach first-touch attribution so we can answer "which channel produced
+  // this subscriber?" — the sprint's core weekly metric.
+  const attribution = (typeof window.khatakshetraAttribution === 'function')
+    ? window.khatakshetraAttribution() : {};
   fetch('/api/email-capture', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email_id: email, cta: pendingSignupCta, child_name: childName })
+    body: JSON.stringify({ email_id: email, cta: pendingSignupCta, child_name: childName, attribution: attribution })
   }).catch(function () {});
   trackKhatakshetraEvent('signup_intent_saved', { cta: pendingSignupCta });
+  // Canonical conversion → GA4 sign_up + Meta Lead + PostHog signup + Clarity.
+  if (typeof window.trackKhatakshetraSignup === 'function') {
+    try { window.trackKhatakshetraSignup({ cta: pendingSignupCta }); } catch (e) {}
+  }
 
   // P1-1: also send a magic link so progress can sync across devices. No-op
   // until Supabase is provisioned. The email capture above still works either way.
