@@ -476,9 +476,13 @@
     localStorage.setItem(k, JSON.stringify(e));
   }
   async function captureEmail(email, cta) {
+    // First-touch attribution rides along so every subscriber is traceable
+    // back to the channel that produced them.
+    const attribution = (typeof window.khatakshetraAttribution === 'function')
+      ? window.khatakshetraAttribution() : {};
     const res = await fetch('/api/email-capture', {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email_id: email, cta: cta })
+      body: JSON.stringify({ email_id: email, cta: cta, attribution: attribution })
     });
     if (!res.ok) throw new Error('capture failed');
     return res.json();
@@ -492,7 +496,11 @@
       const cta = form.getAttribute('data-cta') || activeCta;
       if (!isValidEmail(email)) { status.textContent = 'Please enter a valid email.'; return; }
       submit.disabled = true; const original = submit.textContent; submit.textContent = 'Unlocking…'; status.textContent = '';
-      try { await captureEmail(email, cta); status.textContent = 'You are in. We will send the first unlock soon.'; }
+      try {
+        await captureEmail(email, cta);
+        status.textContent = 'You are in. We will send the first unlock soon.';
+        if (typeof window.trackKhatakshetraSignup === 'function') window.trackKhatakshetraSignup({ cta: cta });
+      }
       catch (e) { localCapture(email, cta); status.textContent = 'Saved — we will send your unlock soon.'; }
       finally { form.reset(); submit.disabled = false; submit.textContent = original; }
     });

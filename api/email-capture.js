@@ -49,10 +49,20 @@ async function captureHandler(req, res) {
     });
   }
 
+  // Attribution: which channel produced this subscriber (first-touch, sent by
+  // analytics.js). Stored in metadata so cost-per-subscriber can be reported
+  // by channel — the sprint's core weekly metric.
+  const attribution = sanitizeAttribution(body && body.attribution);
+  const segment = ((body && body.segment) || '').toString().trim().toLowerCase().slice(0, 20);
+
   // Only attach metadata when we actually have some, so duplicate upserts do
-  // not clobber a previously stored name with an empty object.
+  // not clobber previously stored values with an empty object.
   const row = { email_id: email, cta: cta };
-  if (childName) row.metadata = { child_name: childName };
+  const metadata = {};
+  if (childName) metadata.child_name = childName;
+  if (segment) metadata.segment = segment;
+  Object.assign(metadata, attribution);
+  if (Object.keys(metadata).length) row.metadata = metadata;
 
   const baseUrl = `${supabaseUrl.replace(/\/$/, '')}/rest/v1/${table}`;
   const authHeaders = { apikey: serviceRoleKey, Authorization: `Bearer ${serviceRoleKey}` };
@@ -162,6 +172,22 @@ async function captureHandler(req, res) {
 
 function isValidEmail(value) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+}
+
+/**
+ * Whitelist + length-cap the attribution object the browser sends, so a
+ * client can never write arbitrary keys or unbounded data into our metadata.
+ */
+function sanitizeAttribution(input) {
+  const allowed = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term',
+    'ref', 'fbclid', 'gclid', 'referrer', 'landing_page', 'first_seen'];
+  const out = {};
+  if (!input || typeof input !== 'object') return out;
+  for (const key of allowed) {
+    const v = input[key];
+    if (typeof v === 'string' && v.trim()) out[key] = v.trim().slice(0, 300);
+  }
+  return out;
 }
 
 function normalizeCta(value) {
