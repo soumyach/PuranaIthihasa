@@ -10,199 +10,487 @@
 
     gtag('config', 'G-X9NTBSLFTJ');
   </script>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paint - Khatakshetra</title>
-<meta name="description" content="Paint a Khatakshetra coloring page digitally.">
+<title>Colour Online - Free Ganesha, Krishna &amp; Rakhi Colouring Pages | Khatakshetra</title>
+<meta name="description" content="Colour Ganesha, Krishna and Raksha Bandhan pictures online for free. Tap to fill, undo anything, and save your artwork. Works on phone and tablet - no app needed.">
+<link rel="canonical" href="https://khatakshetra.com/paint">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Colour online, free - Khatakshetra">
+<meta property="og:description" content="Tap to fill, undo anything, save your artwork. Ganesha, Krishna and Rakhi colouring pages for kids.">
+<meta property="og:url" content="https://khatakshetra.com/paint">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="site.css">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
-  .paint-shell { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 1rem; align-items: start; }
-  .paint-toolbar { position: sticky; top: 88px; }
-  .swatches { display: grid; grid-template-columns: repeat(4, 1fr); gap: .45rem; margin: 1rem 0; }
-  .swatch { width: 100%; aspect-ratio: 1; border: 2px solid rgba(255,255,255,.2); cursor: pointer; }
-  .swatch.active { outline: 3px solid var(--gold-bright); }
-  .paint-stage { position: relative; width: min(760px, 100%); margin: 0 auto; background: white; border: 1px solid rgba(232,185,79,.35); }
-  .paint-stage img { width: 100%; display: block; user-select: none; pointer-events: none; }
-  #paintLayer { position: absolute; inset: 0; z-index: 2; width: 100%; height: 100%; touch-action: none; mix-blend-mode: multiply; cursor: crosshair; }
-  .range-row { display: grid; gap: .35rem; color: var(--cream-dim); }
-  .paint-status { color: var(--cream-dim); margin-top: .8rem; font-size: .92rem; }
-  @media (max-width: 900px) { .paint-shell { grid-template-columns: 1fr; } .paint-toolbar { position: static; } }
+  :root {
+    --pg-gold: #C8962C; --pg-gold-br: #E8B94F; --pg-cream: #F7EBD2;
+    --pg-line: rgba(200,150,44,0.28); --pg-panel: rgba(28,16,5,0.72);
+  }
+  .pg-wrap { max-width: 1180px; margin: 0 auto; }
+
+  /* picker */
+  .pg-festival { margin-bottom: 1.7rem; }
+  .pg-fest-head { display: flex; align-items: baseline; gap: .7rem; flex-wrap: wrap; margin-bottom: .7rem; }
+  .pg-fest-name { font-family: 'Cinzel', serif; color: var(--pg-gold-br); font-size: 1.12rem; margin: 0; }
+  .pg-fest-date { color: #BEA882; font-size: .85rem; }
+  .pg-thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); gap: .7rem; }
+  .pg-thumb { position: relative; border: 1px solid var(--pg-line); background: #fff; border-radius: 10px;
+    overflow: hidden; padding: 0; cursor: pointer; aspect-ratio: 3/4;
+    transition: transform .15s ease, border-color .15s ease; }
+  .pg-thumb:hover { transform: translateY(-3px); border-color: var(--pg-gold-br); }
+  .pg-thumb img { width: 100%; height: 100%; object-fit: contain; display: block; }
+  .pg-thumb .pg-cap { position: absolute; left: 0; right: 0; bottom: 0; font-size: .68rem; padding: 3px 4px;
+    background: rgba(8,3,0,.72); color: var(--pg-cream); text-align: center; }
+  .pg-thumb .pg-age { position: absolute; top: 5px; right: 5px; font-size: .6rem; background: var(--pg-gold);
+    color: #160d02; border-radius: 999px; padding: 1px 6px; font-weight: 700; }
+  .pg-missing { display: grid; place-items: center; height: 100%; color: #8a7448; font-size: .72rem;
+    text-align: center; padding: .4rem; }
+
+  /* studio */
+  .pg-studio { display: none; }
+  .pg-studio.is-open { display: block; }
+  .pg-stage-row { display: grid; grid-template-columns: 1fr 236px; gap: 1rem; align-items: start; }
+  .pg-canvas-hold { position: relative; background: #fff; border: 1px solid var(--pg-line);
+    border-radius: 12px; overflow: hidden; box-shadow: 0 16px 44px rgba(0,0,0,.4); }
+  #pgCanvas { display: block; width: 100%; height: auto; touch-action: none; cursor: crosshair; }
+  .pg-side { background: var(--pg-panel); border: 1px solid var(--pg-line); border-radius: 12px; padding: .85rem; }
+  .pg-side h4 { font-family: 'Cinzel', serif; color: var(--pg-gold-br); font-size: .76rem; letter-spacing: .12em;
+    text-transform: uppercase; margin: 0 0 .55rem; }
+  .pg-swatches { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; }
+  .pg-sw { aspect-ratio: 1; border-radius: 6px; border: 2px solid rgba(255,255,255,.18); cursor: pointer; padding: 0; }
+  .pg-sw.is-active { border-color: #fff; box-shadow: 0 0 0 2px var(--pg-gold-br); }
+  .pg-tools { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: .5rem; }
+  .pg-tool { padding: .5rem .3rem; border: 1px solid var(--pg-line); background: rgba(8,3,0,.45);
+    color: var(--pg-cream); border-radius: 8px; cursor: pointer; font: inherit; font-size: .82rem; }
+  .pg-tool.is-active { background: linear-gradient(135deg, var(--pg-gold-br), #E07B1A); color: #160d02;
+    border-color: var(--pg-gold-br); font-weight: 700; }
+  .pg-tool:disabled { opacity: .4; cursor: not-allowed; }
+  .pg-sizes { display: none; gap: 6px; margin-top: .5rem; }
+  .pg-size { flex: 1; padding: .4rem; border: 1px solid var(--pg-line); background: rgba(8,3,0,.45);
+    color: var(--pg-cream); border-radius: 8px; cursor: pointer; font: inherit; font-size: .78rem; }
+  .pg-size.is-active { background: var(--pg-gold); color: #160d02; font-weight: 700; }
+  .pg-actions { display: grid; gap: 6px; margin-top: .6rem; }
+  .pg-hint { color: #BEA882; font-size: .74rem; line-height: 1.5; margin: .55rem 0 0; }
+  .pg-toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: 22px; z-index: 60;
+    background: rgba(8,3,0,.92); border: 1px solid var(--pg-gold); color: var(--pg-cream);
+    padding: .6rem 1.1rem; border-radius: 999px; font-size: .9rem; opacity: 0; pointer-events: none;
+    transition: opacity .25s ease; }
+  .pg-toast.is-on { opacity: 1; }
+
+  @media (max-width: 780px) {
+    .pg-stage-row { grid-template-columns: 1fr; }
+    .pg-side { order: -1; }
+    .pg-swatches { grid-template-columns: repeat(8, 1fr); }
+  }
+  @media (prefers-reduced-motion: reduce) { .pg-thumb, .pg-sw, .pg-toast { transition: none !important; } }
 </style>
 </head>
 <body>
-<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="coloring-book-ramayana.html">Coloring Book</a><a href="stories.html">Stories</a><a href="games.html">Play</a></div></nav>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="daily.html">Daily</a><a href="stories.html">Stories</a><a class="keep-mobile" href="games.html">Play</a><a href="drawing-kits.html">Drawing</a><a href="temples.html">Temples</a></div></nav>
+
 <header class="page-hero">
   <div class="hero-inner">
-    <div class="eyebrow">Digital Coloring</div>
-    <h1 id="title">Paint a page.</h1>
-    <p class="lead">Choose a color, paint on the page, then download your artwork.</p>
+    <div class="eyebrow">Colour online &mdash; free</div>
+    <h1>Colouring, without the mess.</h1>
+    <p class="lead">Pick a picture, tap any area to fill it with colour, and undo anything you don't like. Save your artwork when you're done. Works on a phone, tablet or computer &mdash; nothing to install.</p>
   </div>
 </header>
+
 <main>
-<section class="band"><div class="inner paint-shell">
-  <aside class="card paint-toolbar">
-    <h2>Palette</h2>
-    <div class="swatches" id="swatches"></div>
-    <label class="range-row">Brush size <input id="brushSize" type="range" min="4" max="60" value="18"></label>
-    <button class="btn primary" id="downloadBtn" type="button">Download artwork</button>
-    <button class="btn" id="clearBtn" type="button">Clear paint</button>
-    <a class="btn" href="coloring-book-ramayana.html">Back to book</a>
-    <p class="paint-status" id="paintStatus">Choose a color and draw on the page.</p>
-  </aside>
-  <div class="paint-stage" id="stage">
-    <img id="baseImage" alt="Coloring page">
-    <canvas id="paintLayer"></canvas>
+<section class="band"><div class="inner pg-wrap">
+
+  <div id="pgPicker">
+    <div class="section-head" style="margin-bottom:1.2rem">
+      <h2 class="section-title" style="font-size:1.6rem">Choose a picture</h2>
+      <p class="section-copy">Three for each festival &mdash; simple shapes for little ones, intricate ones for patient hands and grown-ups.</p>
+    </div>
+    <div id="pgFestivals"></div>
+  </div>
+
+  <div class="pg-studio" id="pgStudio">
+    <button class="btn" type="button" id="pgBack" style="margin-bottom:.9rem">&lsaquo; All pictures</button>
+    <h2 class="section-title" id="pgTitle" style="font-size:1.35rem;margin:0 0 .8rem"></h2>
+    <div class="pg-stage-row">
+      <div class="pg-canvas-hold"><canvas id="pgCanvas"></canvas></div>
+      <div class="pg-side">
+        <h4>Colours</h4>
+        <div class="pg-swatches" id="pgSwatches"></div>
+        <label class="pg-hint" style="display:flex;align-items:center;gap:.5rem;margin-top:.55rem">
+          <input type="color" id="pgCustom" value="#E07B1A" style="width:34px;height:26px;border:none;background:none;padding:0;cursor:pointer">
+          Any other colour
+        </label>
+
+        <h4 style="margin-top:.9rem">Tool</h4>
+        <div class="pg-tools">
+          <button class="pg-tool is-active" type="button" data-tool="fill">Fill</button>
+          <button class="pg-tool" type="button" data-tool="brush">Brush</button>
+          <button class="pg-tool" type="button" data-tool="eraser">Eraser</button>
+          <button class="pg-tool" type="button" id="pgUndo" disabled>Undo</button>
+        </div>
+        <div class="pg-sizes" id="pgSizes">
+          <button class="pg-size" type="button" data-size="6">Thin</button>
+          <button class="pg-size is-active" type="button" data-size="14">Medium</button>
+          <button class="pg-size" type="button" data-size="30">Thick</button>
+        </div>
+
+        <div class="pg-actions">
+          <button class="btn primary" type="button" id="pgSave">Save my artwork</button>
+          <button class="btn" type="button" id="pgClear">Start over</button>
+        </div>
+        <p class="pg-hint" id="pgHint">Tap inside any outlined area to fill it with colour.</p>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="band alt"><div class="inner">
+  <div class="cta-strip">
+    <div>
+      <div class="eyebrow">Print them too</div>
+      <h2 class="section-title">Want these on paper?</h2>
+      <p class="section-copy">Get the free festival DIY Starter &mdash; three printable colouring sheets, the story behind them, and a wisdom card to keep.</p>
+    </div>
+    <a class="btn primary" href="drawing-kits.html">Get the free printables</a>
   </div>
 </div></section>
 </main>
+
+<footer><a href="/">Home</a> &middot; <a href="drawing-kits.html">Drawing kits</a> &middot; <a href="games.html">Games</a></footer>
+<div class="pg-toast" id="pgToast"></div>
+
 <script src="analytics.js"></script>
 <script src="site.js"></script>
 <script>
-const params = new URLSearchParams(location.search);
-const image = params.get('image') || 'ChildrenBook/Cover.png';
-const title = params.get('title') || 'Coloring Page';
-const allowed = ['ChildrenBook/', 'Images/', 'assets/', 'coloring/'];
-if (!allowed.some((prefix) => image.startsWith(prefix))) throw new Error('Unsupported image path');
+(function () {
+  'use strict';
 
-const colors = ['#ef4444','#f97316','#facc15','#22c55e','#38bdf8','#2563eb','#a855f7','#ec4899','#8b5e34','#ffffff','#111111','#f5e6c8'];
-let currentColor = colors[0];
-let drawing = false;
-let lastPoint = null;
-const img = document.getElementById('baseImage');
-const canvas = document.getElementById('paintLayer');
-const ctx = canvas.getContext('2d');
-const status = document.getElementById('paintStatus');
-document.getElementById('title').textContent = title;
+  var BASE = 'Images/coloring/';
+  var FESTIVALS = [
+    { name: 'Raksha Bandhan', date: '28 August', pages: [
+      { slug: 'rakhi',              title: 'The rakhi',             age: '3+' },
+      { slug: 'rakhi-tying',        title: 'Tying the rakhi',       age: '6+' },
+      { slug: 'rakhi-thali',        title: 'The festive thali',     age: '9+' } ] },
+    { name: 'Janmashtami', date: '4 September', pages: [
+      { slug: 'krishna-baby',       title: 'Little Krishna',        age: '3+' },
+      { slug: 'krishna-flute',      title: 'Krishna and his flute', age: '6+' },
+      { slug: 'krishna-dahi-handi', title: 'The dahi handi',        age: '9+' } ] },
+    { name: 'Ganesh Chaturthi', date: '14 September', pages: [
+      { slug: 'ganesha-face',       title: 'Ganesha',               age: '3+' },
+      { slug: 'ganesha-seated',     title: 'Ganesha in blessing',   age: '6+' },
+      { slug: 'ganesha-temple',     title: 'Ganesha in the temple', age: '9+' } ] }
+  ];
 
-function safeAward(eventName, options) {
-  if (typeof awardKhatakshetraProgress === 'function') {
-    awardKhatakshetraProgress(eventName, options);
+  var PALETTE = [
+    '#E53935','#D81B60','#8E24AA','#5E35B1','#3949AB','#1E88E5',
+    '#039BE5','#00ACC1','#00897B','#43A047','#7CB342','#C0CA33',
+    '#FDD835','#FFB300','#FB8C00','#F4511E','#6D4C41','#8D6E63',
+    '#E8B94F','#C8962C','#6B1A1A','#F7EBD2','#BDBDBD','#000000'
+  ];
+
+  var canvas = document.getElementById('pgCanvas');
+  var ctx = canvas.getContext('2d', { willReadFrequently: true });
+  var lineCv = document.createElement('canvas');
+  var fillCv = document.createElement('canvas');
+  var lineCtx = lineCv.getContext('2d', { willReadFrequently: true });
+  var fillCtx = fillCv.getContext('2d', { willReadFrequently: true });
+  var isLine = null, W = 0, H = 0;
+  var colour = '#E53935', tool = 'fill', brushSize = 14;
+  var undoStack = [], MAX_UNDO = 12;
+  var drawing = false, current = null;
+
+  function toast(msg) {
+    var t = document.getElementById('pgToast');
+    t.textContent = msg; t.classList.add('is-on');
+    clearTimeout(toast._t);
+    toast._t = setTimeout(function () { t.classList.remove('is-on'); }, 2200);
   }
-}
-
-document.getElementById('swatches').innerHTML = colors.map((color, index) => `<button class="swatch ${index === 0 ? 'active' : ''}" style="background:${color}" data-color="${color}" aria-label="${color}"></button>`).join('');
-document.querySelectorAll('.swatch').forEach((button) => button.addEventListener('click', () => {
-  currentColor = button.dataset.color;
-  document.querySelectorAll('.swatch').forEach((item) => item.classList.remove('active'));
-  button.classList.add('active');
-  status.textContent = `Selected ${button.dataset.color}. Draw on the page.`;
-}));
-
-img.addEventListener('load', resizeCanvas);
-img.addEventListener('error', () => {
-  status.textContent = 'Could not load this page. Go back to the coloring book and open it again.';
-});
-window.addEventListener('resize', resizeCanvas);
-img.src = image;
-safeAward('coloring_open', { properties: { image, title } });
-
-function resizeCanvas() {
-  const existing = document.createElement('canvas');
-  existing.width = canvas.width || 1;
-  existing.height = canvas.height || 1;
-  existing.getContext('2d').drawImage(canvas, 0, 0);
-  canvas.width = img.naturalWidth || img.clientWidth || 760;
-  canvas.height = img.naturalHeight || img.clientHeight || 1000;
-  if (existing.width > 1 && existing.height > 1) ctx.drawImage(existing, 0, 0, canvas.width, canvas.height);
-  status.textContent = 'Ready. Choose a color and draw on the page.';
-}
-
-function getPoint(event) {
-  const rect = canvas.getBoundingClientRect();
-  const touch = event.touches ? event.touches[0] : event.changedTouches ? event.changedTouches[0] : event;
-  return {
-    x: ((touch.clientX - rect.left) / rect.width) * canvas.width,
-    y: ((touch.clientY - rect.top) / rect.height) * canvas.height
-  };
-}
-
-function start(event) {
-  drawing = true;
-  lastPoint = getPoint(event);
-  if (event.pointerId !== undefined && canvas.setPointerCapture) canvas.setPointerCapture(event.pointerId);
-  ctx.beginPath();
-  ctx.moveTo(lastPoint.x, lastPoint.y);
-  drawDot(lastPoint);
-  event.preventDefault();
-}
-
-function move(event) {
-  if (!drawing) return;
-  const point = getPoint(event);
-  if (!lastPoint) lastPoint = point;
-  ctx.beginPath();
-  ctx.moveTo(lastPoint.x, lastPoint.y);
-  ctx.lineTo(point.x, point.y);
-  ctx.strokeStyle = currentColor;
-  ctx.lineWidth = Number(document.getElementById('brushSize').value) * (canvas.width / canvas.getBoundingClientRect().width);
-  ctx.lineCap = 'round';
-  ctx.lineJoin = 'round';
-  ctx.globalAlpha = currentColor === '#ffffff' ? 1 : 0.72;
-  ctx.stroke();
-  lastPoint = point;
-  event.preventDefault();
-}
-
-function drawDot(point) {
-  ctx.fillStyle = currentColor;
-  ctx.globalAlpha = currentColor === '#ffffff' ? 1 : 0.72;
-  const radius = Number(document.getElementById('brushSize').value) * (canvas.width / canvas.getBoundingClientRect().width) / 2;
-  ctx.beginPath();
-  ctx.arc(point.x, point.y, radius, 0, Math.PI * 2);
-  ctx.fill();
-}
-
-function stop(event) {
-  drawing = false;
-  lastPoint = null;
-  if (event && event.pointerId !== undefined && canvas.releasePointerCapture) {
-    try { canvas.releasePointerCapture(event.pointerId); } catch (error) {}
+  function track(ev, props) {
+    if (typeof window.trackKhatakshetra === 'function') window.trackKhatakshetra(ev, props || {});
   }
-  ctx.closePath();
-}
 
-if (window.PointerEvent) {
-  canvas.addEventListener('pointerdown', start);
-  canvas.addEventListener('pointermove', move);
-  canvas.addEventListener('pointerup', stop);
-  canvas.addEventListener('pointercancel', stop);
-  canvas.addEventListener('pointerleave', stop);
-} else {
-  canvas.addEventListener('mousedown', start);
+  // ── picker ──
+  (function () {
+    var host = document.getElementById('pgFestivals');
+    FESTIVALS.forEach(function (f) {
+      var block = document.createElement('div');
+      block.className = 'pg-festival';
+      block.innerHTML = '<div class="pg-fest-head"><h3 class="pg-fest-name">' + f.name +
+        '</h3><span class="pg-fest-date">' + f.date + '</span></div>';
+      var grid = document.createElement('div');
+      grid.className = 'pg-thumbs';
+      f.pages.forEach(function (p) {
+        var b = document.createElement('button');
+        b.type = 'button'; b.className = 'pg-thumb'; b.title = p.title;
+        var img = new Image();
+        img.alt = p.title; img.loading = 'lazy'; img.src = BASE + p.slug + '.png';
+        img.addEventListener('error', function () {
+          b.innerHTML = '<div class="pg-missing">' + p.title + '<br><small>coming soon</small></div>';
+          b.disabled = true;
+        });
+        b.appendChild(img);
+        var cap = document.createElement('span'); cap.className = 'pg-cap'; cap.textContent = p.title;
+        var age = document.createElement('span'); age.className = 'pg-age'; age.textContent = p.age;
+        b.appendChild(cap); b.appendChild(age);
+        b.addEventListener('click', function () { openPage(p, f); });
+        grid.appendChild(b);
+      });
+      block.appendChild(grid);
+      host.appendChild(block);
+    });
+  })();
+
+  // ── palette ──
+  (function () {
+    var host = document.getElementById('pgSwatches');
+    PALETTE.forEach(function (hex, i) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'pg-sw' + (i === 0 ? ' is-active' : '');
+      b.style.background = hex; b.title = hex;
+      b.addEventListener('click', function () {
+        colour = hex;
+        Array.prototype.forEach.call(host.querySelectorAll('.pg-sw'), function (s) { s.classList.remove('is-active'); });
+        b.classList.add('is-active');
+      });
+      host.appendChild(b);
+    });
+    document.getElementById('pgCustom').addEventListener('input', function (e) {
+      colour = e.target.value;
+      Array.prototype.forEach.call(host.querySelectorAll('.pg-sw'), function (s) { s.classList.remove('is-active'); });
+    });
+  })();
+
+  // ── tools ──
+  Array.prototype.forEach.call(document.querySelectorAll('.pg-tool[data-tool]'), function (b) {
+    b.addEventListener('click', function () {
+      tool = b.getAttribute('data-tool');
+      Array.prototype.forEach.call(document.querySelectorAll('.pg-tool[data-tool]'), function (o) { o.classList.remove('is-active'); });
+      b.classList.add('is-active');
+      document.getElementById('pgSizes').style.display = (tool === 'fill') ? 'none' : 'flex';
+      document.getElementById('pgHint').textContent = tool === 'fill'
+        ? 'Tap inside any outlined area to fill it with colour.'
+        : (tool === 'brush' ? 'Drag to draw freely. Good for small details.'
+                            : 'Drag to rub out colour. The outlines stay safe.');
+    });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('.pg-size'), function (b) {
+    b.addEventListener('click', function () {
+      brushSize = parseInt(b.getAttribute('data-size'), 10);
+      Array.prototype.forEach.call(document.querySelectorAll('.pg-size'), function (o) { o.classList.remove('is-active'); });
+      b.classList.add('is-active');
+    });
+  });
+
+  // ── open a picture ──
+  function openPage(page, festival) {
+    var img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = function () {
+      current = page;
+      // Cap the working size: sharp enough to look good, small enough that
+      // flood fill and undo snapshots stay quick on a phone.
+      var maxW = 820;
+      var scale = Math.min(1, maxW / img.naturalWidth);
+      W = Math.round(img.naturalWidth * scale);
+      H = Math.round(img.naturalHeight * scale);
+      [canvas, lineCv, fillCv].forEach(function (cv) { cv.width = W; cv.height = H; });
+
+      lineCtx.clearRect(0, 0, W, H);
+      lineCtx.drawImage(img, 0, 0, W, H);
+
+      // Barrier mask, built once: dark pixels are outlines and stop the fill.
+      var d = lineCtx.getImageData(0, 0, W, H).data;
+      isLine = new Uint8Array(W * H);
+      for (var i = 0, p = 0; i < d.length; i += 4, p++) {
+        var lum = d[i] * 0.299 + d[i + 1] * 0.587 + d[i + 2] * 0.114;
+        isLine[p] = (d[i + 3] > 40 && lum < 128) ? 1 : 0;
+      }
+
+      fillCtx.clearRect(0, 0, W, H);
+      undoStack = []; updateUndo(); composite();
+
+      document.getElementById('pgTitle').textContent = page.title + '  ·  ' + festival.name;
+      document.getElementById('pgPicker').style.display = 'none';
+      document.getElementById('pgStudio').classList.add('is-open');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      track('colouring_opened', { page: page.slug, festival: festival.name });
+    };
+    img.onerror = function () { toast('That picture could not load yet.'); };
+    img.src = BASE + page.slug + '.png';
+  }
+
+  document.getElementById('pgBack').addEventListener('click', function () {
+    document.getElementById('pgStudio').classList.remove('is-open');
+    document.getElementById('pgPicker').style.display = '';
+  });
+
+  // ── composite: colour underneath, outlines always on top ──
+  function composite() {
+    ctx.clearRect(0, 0, W, H);
+    ctx.fillStyle = '#FFFFFF';
+    ctx.fillRect(0, 0, W, H);
+    ctx.drawImage(fillCv, 0, 0);
+    ctx.drawImage(lineCv, 0, 0);
+  }
+
+  function pushUndo() {
+    try {
+      undoStack.push(fillCtx.getImageData(0, 0, W, H));
+      if (undoStack.length > MAX_UNDO) undoStack.shift();
+      updateUndo();
+    } catch (e) {}
+  }
+  function updateUndo() { document.getElementById('pgUndo').disabled = undoStack.length === 0; }
+  document.getElementById('pgUndo').addEventListener('click', function () {
+    if (!undoStack.length) return;
+    fillCtx.putImageData(undoStack.pop(), 0, 0);
+    updateUndo(); composite();
+  });
+
+  // ── flood fill: scanline, stops at the outlines ──
+  function hexToRgb(hex) {
+    var h = hex.replace('#', '');
+    if (h.length === 3) h = h[0] + h[0] + h[1] + h[1] + h[2] + h[2];
+    var n = parseInt(h, 16);
+    return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+  }
+
+  function floodFill(sx, sy) {
+    var start = sy * W + sx;
+    if (isLine[start]) { toast('That is an outline — tap inside a shape.'); return; }
+    var img = fillCtx.getImageData(0, 0, W, H);
+    var data = img.data;
+    var rgb = hexToRgb(colour);
+    var q0 = start * 4;
+    var s0 = data[q0], s1 = data[q0 + 1], s2 = data[q0 + 2], s3 = data[q0 + 3];
+    if (s3 === 255 && s0 === rgb[0] && s1 === rgb[1] && s2 === rgb[2]) return;
+
+    function matches(p) {
+      if (isLine[p]) return false;
+      var q = p * 4;
+      return data[q] === s0 && data[q + 1] === s1 && data[q + 2] === s2 && data[q + 3] === s3;
+    }
+
+    var stack = [[sx, sy]];
+    while (stack.length) {
+      var pt = stack.pop();
+      var x = pt[0], y = pt[1], p = y * W + x;
+      while (x > 0 && matches(p - 1)) { x--; p--; }
+      var reachUp = false, reachDown = false;
+      while (x < W && matches(p)) {
+        var q = p * 4;
+        data[q] = rgb[0]; data[q + 1] = rgb[1]; data[q + 2] = rgb[2]; data[q + 3] = 255;
+        if (y > 0) {
+          if (matches(p - W)) { if (!reachUp) { stack.push([x, y - 1]); reachUp = true; } }
+          else reachUp = false;
+        }
+        if (y < H - 1) {
+          if (matches(p + W)) { if (!reachDown) { stack.push([x, y + 1]); reachDown = true; } }
+          else reachDown = false;
+        }
+        x++; p++;
+      }
+    }
+    fillCtx.putImageData(img, 0, 0);
+    composite();
+  }
+
+  // ── pointer (mouse + touch) ──
+  function pos(e) {
+    var r = canvas.getBoundingClientRect();
+    var t = (e.touches && e.touches[0]) ? e.touches[0] : e;
+    return {
+      x: Math.max(0, Math.min(W - 1, Math.round((t.clientX - r.left) * (W / r.width)))),
+      y: Math.max(0, Math.min(H - 1, Math.round((t.clientY - r.top) * (H / r.height))))
+    };
+  }
+  function strokeTo(p) {
+    fillCtx.lineCap = 'round'; fillCtx.lineJoin = 'round'; fillCtx.lineWidth = brushSize;
+    if (tool === 'eraser') {
+      fillCtx.globalCompositeOperation = 'destination-out';
+      fillCtx.strokeStyle = 'rgba(0,0,0,1)';
+    } else {
+      fillCtx.globalCompositeOperation = 'source-over';
+      fillCtx.strokeStyle = colour;
+    }
+    fillCtx.lineTo(p.x, p.y);
+    fillCtx.stroke();
+    fillCtx.globalCompositeOperation = 'source-over';
+    composite();
+  }
+  function down(e) {
+    if (!current) return;
+    e.preventDefault();
+    var p = pos(e);
+    pushUndo();
+    if (tool === 'fill') { floodFill(p.x, p.y); return; }
+    drawing = true;
+    fillCtx.beginPath();
+    fillCtx.moveTo(p.x, p.y);
+    strokeTo({ x: p.x + 0.01, y: p.y + 0.01 });
+  }
+  function move(e) { if (drawing) { e.preventDefault(); strokeTo(pos(e)); } }
+  function up() { drawing = false; }
+
+  canvas.addEventListener('mousedown', down);
   canvas.addEventListener('mousemove', move);
-  window.addEventListener('mouseup', stop);
-  canvas.addEventListener('touchstart', start, { passive: false });
+  window.addEventListener('mouseup', up);
+  canvas.addEventListener('touchstart', down, { passive: false });
   canvas.addEventListener('touchmove', move, { passive: false });
-  canvas.addEventListener('touchend', stop);
-}
+  window.addEventListener('touchend', up);
 
-document.getElementById('clearBtn').addEventListener('click', () => {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  status.textContent = 'Paint cleared.';
-});
-document.getElementById('downloadBtn').addEventListener('click', () => {
-  const output = document.createElement('canvas');
-  output.width = img.naturalWidth;
-  output.height = img.naturalHeight;
-  const out = output.getContext('2d');
-  out.drawImage(img, 0, 0);
-  out.globalAlpha = 0.8;
-  out.globalCompositeOperation = 'multiply';
-  out.drawImage(canvas, 0, 0);
-  const link = document.createElement('a');
-  link.download = `${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-colored.png`;
-  try {
-    link.href = output.toDataURL('image/png');
-    link.click();
-    safeAward('coloring_download', { unlock: 'creative_coloring_download', properties: { image, title } });
-    status.textContent = 'Artwork downloaded.';
-  } catch (error) {
-    status.textContent = 'Drawing works here. For download, open this page through the local server or live site.';
-  }
-});
+  // ── clear / save ──
+  document.getElementById('pgClear').addEventListener('click', function () {
+    if (!current) return;
+    pushUndo();
+    fillCtx.clearRect(0, 0, W, H);
+    composite();
+    toast('Cleared — the outlines are still there.');
+  });
+
+  document.getElementById('pgSave').addEventListener('click', function () {
+    if (!current) return;
+    var out = document.createElement('canvas');
+    out.width = W; out.height = H + 34;
+    var o = out.getContext('2d');
+    o.fillStyle = '#FFFFFF'; o.fillRect(0, 0, out.width, out.height);
+    o.drawImage(fillCv, 0, 0); o.drawImage(lineCv, 0, 0);
+    o.fillStyle = '#F7EBD2'; o.fillRect(0, H, W, 34);
+    o.fillStyle = '#7A5A2A'; o.font = '16px Georgia, serif'; o.textAlign = 'center';
+    o.fillText('coloured at khatakshetra.com', W / 2, H + 22);
+
+    var name = 'khatakshetra-' + current.slug + '.png';
+    out.toBlob(function (blob) {
+      var shared = false;
+      try {
+        var file = new File([blob], name, { type: 'image/png' });
+        if (navigator.canShare && navigator.canShare({ files: [file] })) {
+          shared = true;
+          navigator.share({ files: [file], title: 'My colouring',
+            text: 'I coloured this at khatakshetra.com' })
+            .then(function () { track('colouring_shared', { page: current.slug }); })
+            .catch(function () {});
+        }
+      } catch (e) { shared = false; }
+      if (!shared) {
+        var a = document.createElement('a');
+        a.href = URL.createObjectURL(blob); a.download = name;
+        document.body.appendChild(a); a.click(); a.remove();
+        toast('Saved to your downloads.');
+      }
+      track('colouring_saved', { page: current.slug });
+      if (typeof awardKhatakshetraProgress === 'function') {
+        try {
+          awardKhatakshetraProgress('colouring_saved', {
+            xp: 15, track: 'creative_practice', properties: { page: current.slug }
+          });
+        } catch (e) {}
+      }
+    }, 'image/png');
+  });
+})();
 </script>
 </body>
 </html>
