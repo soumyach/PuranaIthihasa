@@ -55,7 +55,18 @@
   .pg-stage-row { display: grid; grid-template-columns: 1fr 236px; gap: 1rem; align-items: start; }
   .pg-canvas-hold { position: relative; background: #fff; border: 1px solid var(--pg-line);
     border-radius: 12px; overflow: hidden; box-shadow: 0 16px 44px rgba(0,0,0,.4); }
-  #pgCanvas { display: block; width: 100%; height: auto; touch-action: none; cursor: crosshair; }
+  /* Scrollable viewport so a zoomed-in picture can be panned around. */
+  .pg-viewport { height: min(74vh, 820px); overflow: auto; display: grid; place-items: center;
+    background: #fff; -webkit-overflow-scrolling: touch; }
+  #pgCanvas { display: block; touch-action: none; cursor: crosshair; max-width: none; }
+  #pgCanvas.is-move { cursor: grab; }
+  #pgCanvas.is-panning { cursor: grabbing; }
+  .pg-zoombar { display: flex; align-items: center; gap: 6px; margin-top: .5rem; }
+  .pg-zoombar button { flex: none; width: 34px; height: 30px; border: 1px solid var(--pg-line);
+    background: rgba(8,3,0,.45); color: var(--pg-cream); border-radius: 8px; cursor: pointer;
+    font: inherit; font-size: 1rem; line-height: 1; }
+  .pg-zoombar .pg-fit { flex: 1; width: auto; font-size: .78rem; }
+  .pg-zoomval { min-width: 46px; text-align: center; color: #BEA882; font-size: .78rem; }
   .pg-side { background: var(--pg-panel); border: 1px solid var(--pg-line); border-radius: 12px; padding: .85rem; }
   .pg-side h4 { font-family: 'Cinzel', serif; color: var(--pg-gold-br); font-size: .76rem; letter-spacing: .12em;
     text-transform: uppercase; margin: 0 0 .55rem; }
@@ -114,7 +125,9 @@
     <button class="btn" type="button" id="pgBack" style="margin-bottom:.9rem">&lsaquo; All pictures</button>
     <h2 class="section-title" id="pgTitle" style="font-size:1.35rem;margin:0 0 .8rem"></h2>
     <div class="pg-stage-row">
-      <div class="pg-canvas-hold"><canvas id="pgCanvas"></canvas></div>
+      <div class="pg-canvas-hold">
+        <div class="pg-viewport" id="pgViewport"><canvas id="pgCanvas"></canvas></div>
+      </div>
       <div class="pg-side">
         <h4>Colours</h4>
         <div class="pg-swatches" id="pgSwatches"></div>
@@ -128,7 +141,7 @@
           <button class="pg-tool is-active" type="button" data-tool="fill">Fill</button>
           <button class="pg-tool" type="button" data-tool="brush">Brush</button>
           <button class="pg-tool" type="button" data-tool="eraser">Eraser</button>
-          <button class="pg-tool" type="button" id="pgUndo" disabled>Undo</button>
+          <button class="pg-tool" type="button" data-tool="move">Move</button>
         </div>
         <div class="pg-sizes" id="pgSizes">
           <button class="pg-size" type="button" data-size="6">Thin</button>
@@ -136,7 +149,16 @@
           <button class="pg-size" type="button" data-size="30">Thick</button>
         </div>
 
+        <h4 style="margin-top:.9rem">Zoom</h4>
+        <div class="pg-zoombar">
+          <button type="button" id="pgZoomOut" aria-label="Zoom out">&minus;</button>
+          <span class="pg-zoomval" id="pgZoomVal">100%</span>
+          <button type="button" id="pgZoomIn" aria-label="Zoom in">+</button>
+          <button type="button" class="pg-fit" id="pgFit">Fit</button>
+        </div>
+
         <div class="pg-actions">
+          <button class="btn" type="button" id="pgUndo" disabled>Undo</button>
           <button class="btn primary" type="button" id="pgSave">Save my artwork</button>
           <button class="btn" type="button" id="pgClear">Start over</button>
         </div>
@@ -200,6 +222,52 @@
   var colour = '#E53935', tool = 'fill', brushSize = 14;
   var undoStack = [], MAX_UNDO = 12;
   var drawing = false, current = null;
+  var zoom = 1, fitW = 0;                 // fitW = display width that shows the whole page
+  var viewport = document.getElementById('pgViewport');
+  var panning = false, panStart = null;
+  var pinchStart = null;
+
+  // ── zoom & pan ────────────────────────────────────────────────────────
+  // The canvas is sized in CSS pixels; getBoundingClientRect() therefore
+  // reflects the zoom, so the existing pointer maths keeps working untouched.
+  function computeFit() {
+    if (!W || !H) return;
+    var availW = viewport.clientWidth - 8;
+    var availH = viewport.clientHeight - 8;
+    fitW = Math.max(120, Math.min(availW, availH * (W / H)));
+  }
+  function applyZoom(centreOn) {
+    if (!fitW) return;
+    var before = canvas.getBoundingClientRect();
+    var relX = centreOn ? (centreOn.x - before.left) / (before.width || 1) : 0.5;
+    var relY = centreOn ? (centreOn.y - before.top) / (before.height || 1) : 0.5;
+    canvas.style.width = Math.round(fitW * zoom) + 'px';
+    canvas.style.height = 'auto';
+    document.getElementById('pgZoomVal').textContent = Math.round(zoom * 100) + '%';
+    // keep the point of interest roughly under the cursor/fingers
+    var after = canvas.getBoundingClientRect();
+    if (after.width > viewport.clientWidth || after.height > viewport.clientHeight) {
+      viewport.scrollLeft = Math.max(0, relX * after.width - viewport.clientWidth / 2);
+      viewport.scrollTop = Math.max(0, relY * after.height - viewport.clientHeight / 2);
+    }
+  }
+  function setZoom(z, centreOn) {
+    zoom = Math.max(0.5, Math.min(6, z));
+    applyZoom(centreOn);
+  }
+  document.getElementById('pgZoomIn').addEventListener('click', function () { setZoom(zoom * 1.35); });
+  document.getElementById('pgZoomOut').addEventListener('click', function () { setZoom(zoom / 1.35); });
+  document.getElementById('pgFit').addEventListener('click', function () { computeFit(); setZoom(1); });
+  window.addEventListener('resize', function () {
+    if (!current) return;
+    computeFit(); applyZoom();
+  });
+  // Desktop: ctrl/cmd + wheel zooms (plain wheel keeps scrolling the viewport)
+  viewport.addEventListener('wheel', function (e) {
+    if (!current || !(e.ctrlKey || e.metaKey)) return;
+    e.preventDefault();
+    setZoom(zoom * (e.deltaY < 0 ? 1.12 : 1 / 1.12), { x: e.clientX, y: e.clientY });
+  }, { passive: false });
 
   function toast(msg) {
     var t = document.getElementById('pgToast');
@@ -268,11 +336,14 @@
       tool = b.getAttribute('data-tool');
       Array.prototype.forEach.call(document.querySelectorAll('.pg-tool[data-tool]'), function (o) { o.classList.remove('is-active'); });
       b.classList.add('is-active');
-      document.getElementById('pgSizes').style.display = (tool === 'fill') ? 'none' : 'flex';
-      document.getElementById('pgHint').textContent = tool === 'fill'
-        ? 'Tap inside any outlined area to fill it with colour.'
-        : (tool === 'brush' ? 'Drag to draw freely. Good for small details.'
-                            : 'Drag to rub out colour. The outlines stay safe.');
+      document.getElementById('pgSizes').style.display =
+        (tool === 'brush' || tool === 'eraser') ? 'flex' : 'none';
+      canvas.classList.toggle('is-move', tool === 'move');
+      document.getElementById('pgHint').textContent =
+        tool === 'fill'   ? 'Tap inside any outlined area to fill it with colour.' :
+        tool === 'brush'  ? 'Drag to draw freely. Good for small details.' :
+        tool === 'eraser' ? 'Drag to rub out colour. The outlines stay safe.' :
+                            'Drag to move the picture around. Zoom in first with +.';
     });
   });
   Array.prototype.forEach.call(document.querySelectorAll('.pg-size'), function (b) {
@@ -321,6 +392,10 @@
       undoStack = []; updateUndo(); composite();
 
       document.getElementById('pgTitle').textContent = page.title + '  ·  ' + festival.name;
+      // Show the whole picture by default — previously it rendered at full
+      // width and ran off the bottom of the screen.
+      document.getElementById('pgStudio').classList.add('is-open');
+      computeFit(); zoom = 1; applyZoom();
       document.getElementById('pgPicker').style.display = 'none';
       var studio = document.getElementById('pgStudio');
       studio.classList.add('is-open');
@@ -433,9 +508,30 @@
     fillCtx.globalCompositeOperation = 'source-over';
     composite();
   }
+  function touchDist(t) {
+    var dx = t[0].clientX - t[1].clientX, dy = t[0].clientY - t[1].clientY;
+    return Math.sqrt(dx * dx + dy * dy);
+  }
   function down(e) {
     if (!current) return;
+    // Two fingers = pinch to zoom + drag to pan, whatever the tool.
+    if (e.touches && e.touches.length === 2) {
+      e.preventDefault();
+      drawing = false;
+      pinchStart = { d: touchDist(e.touches), z: zoom,
+        x: (e.touches[0].clientX + e.touches[1].clientX) / 2,
+        y: (e.touches[0].clientY + e.touches[1].clientY) / 2,
+        sl: viewport.scrollLeft, st: viewport.scrollTop };
+      return;
+    }
     e.preventDefault();
+    if (tool === 'move') {
+      var t0 = (e.touches && e.touches[0]) ? e.touches[0] : e;
+      panning = true;
+      canvas.classList.add('is-panning');
+      panStart = { x: t0.clientX, y: t0.clientY, sl: viewport.scrollLeft, st: viewport.scrollTop };
+      return;
+    }
     var p = pos(e);
     pushUndo();
     if (tool === 'fill') { floodFill(p.x, p.y); return; }
@@ -444,8 +540,26 @@
     fillCtx.moveTo(p.x, p.y);
     strokeTo({ x: p.x + 0.01, y: p.y + 0.01 });
   }
-  function move(e) { if (drawing) { e.preventDefault(); strokeTo(pos(e)); } }
-  function up() { drawing = false; }
+  function move(e) {
+    if (pinchStart && e.touches && e.touches.length === 2) {
+      e.preventDefault();
+      var d = touchDist(e.touches);
+      setZoom(pinchStart.z * (d / (pinchStart.d || 1)), { x: pinchStart.x, y: pinchStart.y });
+      return;
+    }
+    if (panning) {
+      e.preventDefault();
+      var t0 = (e.touches && e.touches[0]) ? e.touches[0] : e;
+      viewport.scrollLeft = panStart.sl - (t0.clientX - panStart.x);
+      viewport.scrollTop = panStart.st - (t0.clientY - panStart.y);
+      return;
+    }
+    if (drawing) { e.preventDefault(); strokeTo(pos(e)); }
+  }
+  function up() {
+    drawing = false; panning = false; pinchStart = null;
+    canvas.classList.remove('is-panning');
+  }
 
   canvas.addEventListener('mousedown', down);
   canvas.addEventListener('mousemove', move);
