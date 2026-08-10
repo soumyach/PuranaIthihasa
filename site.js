@@ -567,7 +567,7 @@ function injectKhatakshetraFooter() {
   if (document.querySelector('.kx-footer-links') || document.querySelector('.site-footer-links')) return;
   var links = [
     ['/', 'Home'], ['/stories', 'Stories'], ['/games', 'Play'], ['/temples', 'Temples'],
-    ['/daily', 'Daily'], ['/kits', 'Kits'], ['/about', 'About'], ['/contact', 'Contact']
+    ['/daily', 'Daily'], ['/paint', 'Colour'], ['/kits', 'Kits'], ['/about', 'About'], ['/contact', 'Contact']
   ];
   var bar = document.createElement('nav');
   bar.className = 'kx-footer-links';
