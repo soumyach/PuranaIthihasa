@@ -258,13 +258,13 @@ function ensureKhatakshetraShell() {
     modal.innerHTML = `
       <div class="signup-modal" role="dialog" aria-modal="true" aria-labelledby="signupTitle">
         <button class="modal-close" type="button" data-close-signup aria-label="Close">x</button>
-        <div class="eyebrow">Save your journey</div>
-        <h2 id="signupTitle">Keep the story path alive.</h2>
-        <p>Save progress, unlock the next story drop, and get first access to family challenges and festival kit updates.</p>
+        <div class="eyebrow">Khatakshetra Family — Free</div>
+        <h2 id="signupTitle">Join Khatakshetra Family — free.</h2>
+        <p>Free, forever. Your progress and streak are saved, you collect talapatra cards, and you get the printable festival kits before every festival.</p>
         <form id="khatakshetraSignupForm" class="signup-form">
           <label>Child or family name <input id="signupChildName" type="text" autocomplete="name" placeholder="Example: Anika or Rao family"></label>
           <label>Email <input id="signupEmail" type="email" autocomplete="email" required placeholder="you@example.com"></label>
-          <button class="btn primary" type="submit">Save Progress</button>
+          <button class="btn primary" type="submit">Join free</button>
         </form>
         <p class="fine-print">We will use this to preserve your unlocks and send the next story, challenge, or kit update.</p>
       </div>
