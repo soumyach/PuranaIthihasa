@@ -131,6 +131,102 @@
     try { if (hasClarity && window.clarity) window.clarity('event', event); } catch (e) {}
   };
 
+  // ── Which channel did this visitor come from? ─────────────────────────
+  // Explicit resolution so YouTube / Instagram traffic is countable even when
+  // a link gets shared without UTMs (referrer fallback).
+  function resolveChannel(attr) {
+    var src = (attr.utm_source || '').toLowerCase();
+    if (src) return src;
+    var r = (attr.referrer || '').toLowerCase();
+    if (!r) return 'direct';
+    if (r.indexOf('youtube.') !== -1 || r.indexOf('youtu.be') !== -1) return 'youtube';
+    if (r.indexOf('instagram.') !== -1) return 'instagram';
+    if (r.indexOf('facebook.') !== -1) return 'facebook';
+    if (r.indexOf('whatsapp') !== -1 || r.indexOf('wa.me') !== -1) return 'whatsapp';
+    if (r.indexOf('t.co') !== -1 || r.indexOf('twitter.') !== -1 || r.indexOf('x.com') !== -1) return 'twitter';
+    if (r.indexOf('pinterest.') !== -1) return 'pinterest';
+    if (r.indexOf('t.me') !== -1 || r.indexOf('telegram') !== -1) return 'telegram';
+    if (r.indexOf('google.') !== -1 || r.indexOf('bing.') !== -1) return 'search';
+    if (r.indexOf('khatakshetra.com') !== -1) return 'internal';
+    return 'referral';
+  }
+  window.khatakshetraChannel = function () { return resolveChannel(window.khatakshetraAttribution()); };
+
+  // ── Product events (names per the growth spec) ────────────────────────
+  // ON DOUBLE-COUNTING: the spec's `member_created` is the same action as
+  // GA4's conventional `sign_up`. We deliberately fire ONE conversion event
+  // (`sign_up`, which GA4 and Meta optimise against) instead of both, so the
+  // conversion numbers stay trustworthy. Everything below is descriptive.
+  function ev(name, props) { if (window.trackKhatakshetra) window.trackKhatakshetra(name, props || {}); }
+
+  window.kxTrack = {
+    landingView: function (path) {
+      var a = window.khatakshetraAttribution();
+      ev('landing_view', {
+        channel: resolveChannel(a), landing_path: path || location.pathname,
+        utm_source: a.utm_source || '', utm_medium: a.utm_medium || '',
+        utm_campaign: a.utm_campaign || '', utm_content: a.utm_content || ''
+      });
+    },
+    ctaClick: function (placement, page) {
+      ev('membership_cta_click', {
+        placement: placement || '', page: page || location.pathname,
+        campaign: window.khatakshetraAttribution().utm_campaign || ''
+      });
+    },
+    activityStarted: function (type, subject) { ev('activity_started', { activity_type: type, subject: subject || '' }); },
+    activityCompleted: function (type, subject, progress) {
+      ev('activity_completed', { activity_type: type, subject: subject || '', progress: progress || '' });
+    },
+    talapatraUnlocked: function (cardId, from) { ev('talapatra_unlocked', { card_id: cardId, source_activity: from || '' }); },
+    journeyProgress: function (journeyId, node, pct) { ev('journey_progress', { journey_id: journeyId, node: node, completion_pct: pct }); },
+    kitWaitlist: function (festival, from) { ev('kit_waitlist_join', { festival: festival, source_content: from || '' }); }
+  };
+
+  // Fire landing_view once per page load, and detect returning members.
+  try {
+    window.kxTrack.landingView();
+    var joined = localStorage.getItem('khatakshetra_joined_at');
+    if (joined) {
+      var days = Math.floor((Date.now() - parseInt(joined, 10)) / 86400000);
+      var seenKey = 'kx_return_' + new Date().toISOString().slice(0, 10);
+      if (!sessionStorage.getItem(seenKey)) {
+        sessionStorage.setItem(seenKey, '1');
+        ev('return_visit', { days_since_join: days, channel: resolveChannel(window.khatakshetraAttribution()) });
+      }
+    }
+  } catch (e) {}
+
+
+  // ── Sharing (WhatsApp first — it is how Indian families actually share) ──
+  window.kxShare = function (opts) {
+    opts = opts || {};
+    var url = opts.url || (location.origin + location.pathname);
+    var text = opts.text || document.title;
+    var full = text + ' ' + url;
+    ev('share_clicked', { channel: opts.channel || 'whatsapp', page: location.pathname });
+    if (opts.channel === 'native' && navigator.share) {
+      navigator.share({ title: document.title, text: text, url: url }).catch(function () {});
+      return;
+    }
+    window.open('https://wa.me/?text=' + encodeURIComponent(full), '_blank', 'noopener');
+  };
+
+  // Any element with data-kx-share becomes a WhatsApp share button.
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest && e.target.closest('[data-kx-share]');
+    if (!el) return;
+    e.preventDefault();
+    window.kxShare({ text: el.getAttribute('data-kx-share') || document.title,
+                     url: el.getAttribute('data-kx-share-url') || undefined });
+  });
+
+  // Any element with data-kx-cta reports itself as a membership CTA click.
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest && e.target.closest('[data-kx-cta]');
+    if (el && window.kxTrack) window.kxTrack.ctaClick(el.getAttribute('data-kx-cta'));
+  });
+
   /**
    * The canonical subscriber conversion — call the moment a signup succeeds.
    * Sends each tool its *native* event so GA4 key-events, Meta ad optimisation
@@ -147,6 +243,9 @@
       utm_campaign: attr.utm_campaign || '',
       referrer: attr.referrer || ''
     };
+    // Stamp the join so we can measure return visits and day-N retention.
+    try { if (!localStorage.getItem('khatakshetra_joined_at')) localStorage.setItem('khatakshetra_joined_at', String(Date.now())); } catch (e) {}
+    payload.channel = resolveChannel(attr);
     try { if (hasGA && window.gtag) window.gtag('event', 'sign_up', payload); } catch (e) {}
     try { if (hasPH && window.posthog && window.posthog.capture) window.posthog.capture('signup', payload); } catch (e) {}
     try { if (hasPixel && window.fbq) window.fbq('track', 'Lead', { content_name: payload.cta }); } catch (e) {}

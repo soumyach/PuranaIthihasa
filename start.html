@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9NTBSLFTJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-X9NTBSLFTJ');
+  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start Free - 7 Stories Your Family Will Remember | Khatakshetra</title>
+<meta name="description" content="Seven days, ten minutes a day. One story, one question to ask your children, one card to keep. Join Khatakshetra Family free and start today.">
+<link rel="canonical" href="https://khatakshetra.com/start">
+<meta property="og:type" content="website">
+<meta property="og:title" content="7 days. 10 minutes a day. Seven stories your family will remember.">
+<meta property="og:description" content="One story, one question to ask your children, one card to keep. Join Khatakshetra Family - free.">
+<meta property="og:url" content="https://khatakshetra.com/start">
+<meta property="og:image" content="https://khatakshetra.com/Images/home/rama.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="7 days. 10 minutes a day. Seven stories your family will remember.">
+<meta name="twitter:description" content="One story, one question, one card to keep. Join free.">
+<meta name="twitter:image" content="https://khatakshetra.com/Images/home/rama.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  .st-wrap { max-width: 940px; margin: 0 auto; }
+  .st-promise { font-family: 'Cinzel', serif; color: #E8B94F; font-size: clamp(1.7rem, 4vw, 2.7rem);
+    line-height: 1.18; margin: 0 0 .8rem; }
+  .st-sub { color: #E4D6B4; font-size: clamp(1.02rem, 1.7vw, 1.2rem); max-width: 48ch; }
+
+  /* the 7-day preview rail */
+  .st-days { display: grid; grid-template-columns: repeat(7, 1fr); gap: .5rem; margin: 1.6rem 0 0; }
+  .st-day { text-align: center; border: 1px solid rgba(200,150,44,.26); background: rgba(28,16,5,.6);
+    border-radius: 10px; padding: .6rem .3rem; }
+  .st-day.is-done { border-color: #6fcf97; background: rgba(111,207,151,.12); }
+  .st-day.is-now { border-color: #E8B94F; box-shadow: 0 0 0 2px rgba(232,185,79,.3); }
+  .st-day .n { font-family: 'Cinzel', serif; color: #E8B94F; font-size: .82rem; display: block; }
+  .st-day .t { color: #BEA882; font-size: .68rem; display: block; margin-top: .15rem; line-height: 1.25; }
+  .st-day.is-done .n::after { content: ' ✓'; color: #6fcf97; }
+
+  .st-card { border: 1px solid rgba(232,185,79,.42); border-radius: 14px;
+    background: linear-gradient(150deg, rgba(50,31,8,.9), rgba(20,11,3,.84));
+    padding: clamp(1.3rem, 3vw, 2rem); }
+  .st-benefits { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .5rem; }
+  .st-benefits li { color: #E4D6B4; padding-left: 1.5rem; position: relative; font-size: .97rem; }
+  .st-benefits li::before { content: '✦'; position: absolute; left: 0; color: #E8B94F; font-size: .8rem; top: .22rem; }
+  .st-seg { display: flex; gap: .6rem; margin: .3rem 0 .9rem; flex-wrap: wrap; }
+  .st-seg label { flex: 1; min-width: 132px; display: flex; align-items: center; gap: .5rem;
+    border: 1px solid rgba(200,150,44,.3); background: rgba(8,3,0,.4); border-radius: 9px;
+    padding: .55rem .7rem; cursor: pointer; color: #F7EBD2; font-size: .93rem; }
+  .st-seg label:has(input:checked) { border-color: #E8B94F; background: rgba(232,185,79,.12); }
+  .st-fine { color: rgba(190,168,130,.8); font-size: .8rem; margin: .7rem 0 0; }
+
+  /* the activity */
+  .st-activity { display: none; }
+  .st-activity.is-on { display: block; }
+  .st-katha { border-left: 3px solid #E07B1A; padding-left: 1rem; margin: 1rem 0; }
+  .st-katha h3 { font-family: 'Cinzel', serif; color: #E8B94F; font-size: 1.25rem; margin: 0 0 .4rem; }
+  .st-katha p { color: #E4D6B4; margin: 0; line-height: 1.7; }
+  .st-ask { background: rgba(247,235,210,.07); border: 1px solid rgba(200,150,44,.24);
+    border-radius: 10px; padding: 1rem 1.1rem; margin: 1.1rem 0; }
+  .st-ask .lbl { color: #E8B94F; font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; }
+  .st-ask p { color: #F7EBD2; margin: .35rem 0 0; font-size: 1.05rem; font-style: italic; }
+  .st-reveal { display: none; }
+  .st-reveal.is-on { display: block; }
+  .st-tala { max-width: 330px; aspect-ratio: 3/4; border-radius: 12px; margin: 1rem 0;
+    background: linear-gradient(160deg,#f4dea4,#e7c777 52%,#d6ae54); position: relative;
+    display: flex; flex-direction: column; justify-content: flex-end; padding: 1.3rem;
+    box-shadow: 0 16px 44px rgba(0,0,0,.4); overflow: hidden; }
+  .st-tala::before { content: ''; position: absolute; inset: 10px; border: 1px solid rgba(120,80,20,.4); border-radius: 8px; }
+  .st-tala .rar { position: absolute; top: 14px; left: 14px; font-size: .58rem; letter-spacing: .14em;
+    text-transform: uppercase; font-weight: 700; color: #fff; background: #8a6a2a; padding: .22rem .55rem; border-radius: 999px; }
+  .st-tala .om { position: absolute; top: 12px; right: 16px; font-size: 1.3rem; color: rgba(120,80,20,.55); }
+  .st-tala .nm { font-family: 'Cinzel', serif; font-weight: 700; font-size: 1.5rem; color: #3a2407; }
+  .st-tala .sb { font-size: .85rem; color: #5a3a0a; }
+  .st-tala .qt { font-style: italic; font-size: .95rem; color: #43290a; margin-top: .4rem; }
+  .st-next { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: 1.2rem; }
+
+  @media (max-width: 620px) { .st-days { grid-template-columns: repeat(4, 1fr); } }
+</style>
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="daily.html">Daily</a><a href="stories.html">Stories</a><a class="keep-mobile" href="paint.html">Colour</a><a href="games.html">Play</a><a href="temples.html">Temples</a></div></nav>
+
+<header class="page-hero">
+  <div class="hero-inner">
+    <div class="eyebrow" id="stEyebrow">Khatakshetra Family &mdash; Free</div>
+    <h1 class="st-promise" id="stPromise">7 days. 10 minutes a day.<br>Seven stories your family will remember.</h1>
+    <p class="lead st-sub">One story, one question to ask your children at dinner, and one card to keep. No lectures, no homework &mdash; just the stories we inherited, handed on properly.</p>
+  </div>
+</header>
+
+<main>
+<section class="band"><div class="inner st-wrap">
+
+  <!-- 7-DAY PREVIEW -->
+  <div class="section-head" style="margin-bottom:.4rem">
+    <h2 class="section-title" style="font-size:1.5rem">Your seven days</h2>
+    <p class="section-copy">Each day is one katha, one family question, and one talapatra card you unlock and keep.</p>
+  </div>
+  <div class="st-days" id="stDays"></div>
+
+  <!-- JOIN -->
+  <div class="st-card" id="stJoin" style="margin-top:1.8rem">
+    <div class="eyebrow">Join free</div>
+    <h2 class="section-title" style="font-size:1.4rem;margin:.1rem 0 .5rem">Become a Khatakshetra Family member.</h2>
+    <p class="section-copy" style="font-size:.97rem">Free, forever. It takes one tap and you start straight away &mdash; no waiting for an email.</p>
+
+    <ul class="st-benefits">
+      <li><strong>Your progress is saved</strong> &mdash; streaks, stories read, days completed</li>
+      <li><strong>Collect talapatra cards</strong> &mdash; one wisdom card for every story</li>
+      <li><strong>Free festival kits</strong> &mdash; printable colouring sheets and stories, before every festival</li>
+      <li><strong>One short email a week</strong> &mdash; a katha worth reading, never spam</li>
+    </ul>
+
+    <form id="stForm" class="signup-form" style="margin-top:1.1rem">
+      <label style="display:block">
+        <span style="display:block;margin-bottom:.3rem;font-size:.88rem;color:#BEA882">Your email</span>
+        <input class="field" type="email" id="stEmail" required autocomplete="email" placeholder="your@email.com" style="width:100%">
+      </label>
+      <div style="margin-top:.7rem">
+        <span style="display:block;margin-bottom:.3rem;font-size:.88rem;color:#BEA882">Where's your family?</span>
+        <div class="st-seg">
+          <label><input type="radio" name="stSeg" value="india" checked> In India</label>
+          <label><input type="radio" name="stSeg" value="abroad"> Outside India</label>
+        </div>
+      </div>
+      <button class="btn primary" type="submit" id="stSubmit" style="width:100%">Join free &amp; start Day 1</button>
+      <p class="st-fine" id="stStatus">Free forever. Unsubscribe in one click, any time.</p>
+    </form>
+  </div>
+
+  <!-- THE ACTIVITY (revealed immediately after joining — never a dead end) -->
+  <div class="st-card st-activity" id="stActivity" style="margin-top:1.8rem">
+    <div class="eyebrow" id="stDayLabel">Day 1</div>
+    <h2 class="section-title" style="font-size:1.4rem;margin:.1rem 0 .2rem" id="stTitle"></h2>
+    <p class="st-fine" style="margin:0 0 .2rem" id="stTheme"></p>
+
+    <div class="st-katha">
+      <h3 id="stKathaTitle"></h3>
+      <p id="stTeaser"></p>
+    </div>
+
+    <div class="st-ask">
+      <span class="lbl">Ask your family</span>
+      <p id="stQuestion"></p>
+    </div>
+
+    <button class="btn primary" type="button" id="stComplete">We talked about it &mdash; unlock the card</button>
+
+    <div class="st-reveal" id="stReveal">
+      <div class="st-tala">
+        <span class="rar" id="stRar">rare</span><span class="om">&#2384;</span>
+        <div class="nm" id="stCardName"></div>
+        <div class="sb" id="stCardSub"></div>
+        <div class="qt" id="stCardQuote"></div>
+      </div>
+      <p class="section-copy" id="stLesson" style="font-size:.98rem"></p>
+      <div class="st-next">
+        <button class="btn primary" type="button" id="stNextDay">Continue to the next day &rarr;</button>
+        <a class="btn" href="paint.html">Colour this story</a>
+        <a class="btn" href="kit.html">Get the free festival kits</a>
+        <button class="btn" type="button" data-kx-share="We're doing a 7-day story journey with the kids — one katha a day. Join us:" data-kx-share-url="https://khatakshetra.com/start">Share with a family &rarr;</button>
+      </div>
+      <p class="st-fine" id="stTomorrow">Best done one a day &mdash; come back tomorrow and keep the streak going.</p>
+    </div>
+  </div>
+
+</div></section>
+
+<section class="band alt"><div class="inner st-wrap">
+  <div class="section-head">
+    <h2 class="section-title" style="font-size:1.4rem">New here? This is how it works.</h2>
+  </div>
+  <div class="grid3">
+    <article class="card"><div class="ico">📖</div><h3>1 · Story</h3><p>A 60-second katha, traced to its source. Read it together.</p></article>
+    <article class="card"><div class="ico">🎲</div><h3>2 · Play</h3><p>A question to ask, a puzzle, or a page to colour.</p></article>
+    <article class="card"><div class="ico">🍃</div><h3>3 · Collect</h3><p>Unlock a talapatra wisdom card and keep it.</p></article>
+    <article class="card"><div class="ico">🔥</div><h3>4 · Return</h3><p>Come back tomorrow. Seven days builds a habit.</p></article>
+  </div>
+</div></section>
+</main>
+
+<footer><a href="/">Home</a> &middot; <a href="kit.html">Free kits</a> &middot; <a href="paint.html">Colour online</a> &middot; <a href="about.html">About</a></footer>
+
+<script src="analytics.js"></script>
+<script src="site.js"></script>
+<script>
+(function () {
+  'use strict';
+  var KEY = 'khatakshetra_start_journey';
+  var DAYS = 7;
+  var data = [], state = load();
+
+  // Optional festival framing: /start?f=rakhi|krishna|ganesha (used by the
+  // short campaign URLs so video traffic lands on a page that matches the video)
+  var FEST = {
+    rakhi:   { label: 'Raksha Bandhan · 28 August', line: 'Seven stories to tell before Raksha Bandhan.' },
+    krishna: { label: 'Janmashtami · 4 September',  line: 'Seven stories to tell before Janmashtami.' },
+    ganesha: { label: 'Ganesh Chaturthi · 14 September', line: 'Seven stories to tell before Ganesh Chaturthi.' }
+  };
+  (function festivalFrame() {
+    var f = new URLSearchParams(location.search).get('f');
+    if (f && FEST[f]) {
+      document.getElementById('stEyebrow').textContent = FEST[f].label;
+      document.getElementById('stPromise').innerHTML =
+        '7 days. 10 minutes a day.<br>' + FEST[f].line;
+    }
+  })();
+
+  function load() {
+    try { return JSON.parse(localStorage.getItem(KEY) || '{"joined":false,"day":0,"done":[]}'); }
+    catch (e) { return { joined: false, day: 0, done: [] }; }
+  }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+
+  function renderDays() {
+    var host = document.getElementById('stDays');
+    host.innerHTML = '';
+    for (var i = 0; i < DAYS; i++) {
+      var d = document.createElement('div');
+      var done = state.done.indexOf(i) !== -1;
+      d.className = 'st-day' + (done ? ' is-done' : '') + (i === state.day && state.joined && !done ? ' is-now' : '');
+      var theme = data[i] ? data[i].theme : '';
+      d.innerHTML = '<span class="n">Day ' + (i + 1) + '</span><span class="t">' + theme + '</span>';
+      host.appendChild(d);
+    }
+  }
+
+  function showDay(i) {
+    var e = data[i];
+    if (!e) return;
+    document.getElementById('stJoin').style.display = 'none';
+    var act = document.getElementById('stActivity');
+    act.classList.add('is-on');
+    document.getElementById('stDayLabel').textContent = 'Day ' + (i + 1) + ' of ' + DAYS;
+    document.getElementById('stTitle').textContent = e.deity;
+    document.getElementById('stTheme').textContent = e.theme;
+    document.getElementById('stKathaTitle').textContent = e.kathaTitle;
+    document.getElementById('stTeaser').textContent = e.teaser;
+    document.getElementById('stQuestion').textContent = familyQuestion(e);
+    document.getElementById('stReveal').classList.remove('is-on');
+    document.getElementById('stComplete').style.display = '';
+    renderDays();
+    if (window.kxTrack) window.kxTrack.activityStarted('journey_day', e.deity);
+    try { act.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch (err) {}
+  }
+
+  // Turn each katha's lesson into something a parent can actually ask at dinner.
+  function familyQuestion(e) {
+    var byTheme = {
+      'Beginnings': 'What is something new you want to start — and what is the small thing in the way?',
+      'Devotion': 'Who is someone you would help without being asked?',
+      'Dharma': 'Have you ever kept a promise that was hard to keep?',
+      'Choices': 'When is it hard to do the right thing, even when you know what it is?',
+      'Patience': 'What is something you had to wait a long time for?',
+      'Strength': 'Can someone be gentle and strong at the same time?',
+      'Knowledge': 'What is something you learned this week that surprised you?',
+      'Rescue': 'Who makes you feel safe, and how do they do it?'
+    };
+    return byTheme[e.theme] || 'What did this story make you think about?';
+  }
+
+  function completeDay(i) {
+    var e = data[i];
+    if (state.done.indexOf(i) === -1) state.done.push(i);
+    state.day = Math.min(i + 1, DAYS - 1);
+    save();
+    var c = e.card || {};
+    document.getElementById('stCardName').textContent = c.title || e.deity;
+    document.getElementById('stCardSub').textContent = c.subtitle || '';
+    document.getElementById('stCardQuote').textContent = c.quote ? '“' + c.quote + '”' : '';
+    var rar = document.getElementById('stRar');
+    rar.textContent = c.rarity || 'rare';
+    document.getElementById('stLesson').textContent = e.lesson || '';
+    document.getElementById('stReveal').classList.add('is-on');
+    document.getElementById('stComplete').style.display = 'none';
+    renderDays();
+
+    var pct = Math.round(state.done.length / DAYS * 100);
+    if (window.kxTrack) {
+      window.kxTrack.activityCompleted('journey_day', e.deity, pct + '%');
+      window.kxTrack.talapatraUnlocked(c.id || e.deity, 'journey_day_' + (i + 1));
+      window.kxTrack.journeyProgress('start_7day', 'day_' + (i + 1), pct);
+    }
+    if (typeof awardKhatakshetraProgress === 'function') {
+      try { awardKhatakshetraProgress('journey_day_complete', { xp: 20, track: 'story_mastery',
+        properties: { day: i + 1, deity: e.deity } }); } catch (err) {}
+    }
+    var last = state.done.length >= DAYS;
+    document.getElementById('stNextDay').textContent = last ? 'See all seven cards →' : 'Continue to the next day →';
+    document.getElementById('stTomorrow').textContent = last
+      ? 'You finished all seven. The daily katha keeps going — one new story every day.'
+      : 'Best done one a day — come back tomorrow and keep the streak going.';
+  }
+
+  document.getElementById('stComplete').addEventListener('click', function () { completeDay(state.day); });
+  document.getElementById('stNextDay').addEventListener('click', function () {
+    if (state.done.length >= DAYS) { window.location.href = 'sangraha.html'; return; }
+    var next = 0;
+    for (var i = 0; i < DAYS; i++) { if (state.done.indexOf(i) === -1) { next = i; break; } }
+    state.day = next; save(); showDay(next);
+  });
+
+  // ── join ──
+  document.getElementById('stForm').addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var email = (document.getElementById('stEmail').value || '').trim().toLowerCase();
+    var seg = (document.querySelector('input[name="stSeg"]:checked') || {}).value || '';
+    var status = document.getElementById('stStatus');
+    var btn = document.getElementById('stSubmit');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { status.textContent = 'Please enter a valid email address.'; return; }
+    btn.disabled = true; var lbl = btn.textContent; btn.textContent = 'Joining…';
+    if (window.kxTrack) window.kxTrack.ctaClick('start_join_form', '/start');
+
+    var attribution = (typeof window.khatakshetraAttribution === 'function') ? window.khatakshetraAttribution() : {};
+    fetch('/api/email-capture', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email_id: email, cta: 'family_free', segment: seg, attribution: attribution })
+    }).catch(function () {
+      try {
+        var k = 'khatakshetra_signups';
+        var arr = JSON.parse(localStorage.getItem(k) || '[]');
+        arr.push({ email: email, cta: 'family_free', captured_at: new Date().toISOString() });
+        localStorage.setItem(k, JSON.stringify(arr));
+      } catch (e2) {}
+    }).then(function () {
+      state.joined = true; state.email = email; save();
+      if (typeof window.trackKhatakshetraSignup === 'function') {
+        window.trackKhatakshetraSignup({ cta: 'family_free', segment: seg });
+      }
+      btn.disabled = false; btn.textContent = lbl;
+      // Straight into the first activity — never a "check your inbox" dead end.
+      showDay(state.day || 0);
+    });
+  });
+
+  // ── boot ──
+  fetch('content/daily.json?v=1')
+    .then(function (r) { return r.json(); })
+    .then(function (list) {
+      data = list.slice(0, DAYS);
+      renderDays();
+      if (state.joined) {
+        var next = 0;
+        for (var i = 0; i < DAYS; i++) { if (state.done.indexOf(i) === -1) { next = i; break; } }
+        if (state.done.length >= DAYS) next = DAYS - 1;
+        state.day = next;
+        showDay(next);
+      }
+    })
+    .catch(function () {});
+})();
+</script>
+</body>
+</html>
