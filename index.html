@@ -158,6 +158,21 @@
   .tala-quote { font-style: italic; font-size: 0.94rem; color: #43290a; margin-top: 0.25rem; }
   .tala-foot { margin-top: 0.5rem; font-size: 0.64rem; letter-spacing: 0.03em; color: rgba(80,52,8,0.85); border-top: 1px solid rgba(120,80,20,0.3); padding-top: 0.45rem; }
   .today-actions { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin-top: 1.2rem; }
+  .today-status { color: var(--saffron-light); font-size: 0.86rem; margin: 0.8rem 0 0; min-height: 1.2em; }
+
+  /* ---- Sealed talapatra: the darshan stays hidden until today's puzzle is solved.
+     While sealed we render no deity image, no name and no quote — the puzzle
+     answer must not be readable from the homepage. ---- */
+  .talapatra.is-sealed .tcard-art { background: radial-gradient(circle at 50% 38%, #5a3a0c, #150c02 76%); }
+  .tcard-lock { position: absolute; inset: 0; z-index: 3; display: none; place-content: center; justify-items: center; gap: 0.6rem; text-align: center; padding: 1rem; }
+  .talapatra.is-sealed .tcard-lock { display: grid; }
+  .tcard-lock svg { width: 42px; height: 42px; color: var(--gold-bright); filter: drop-shadow(0 0 14px rgba(232,185,79,0.45)); }
+  .tcard-lock .seal-label { font-family: 'Cinzel', serif; font-size: 0.64rem; letter-spacing: 0.24em; text-transform: uppercase; color: rgba(247,235,210,0.92); }
+  .tala-deity.is-masked { letter-spacing: 0.2em; color: rgba(58,36,7,0.5); }
+  .talapatra.is-sealed .tala-quote { display: none; }
+  .tcard-hit { position: absolute; inset: 0; z-index: 6; display: none; }
+  .talapatra.is-sealed .tcard-hit { display: block; }
+  .talapatra.is-revealed { box-shadow: var(--shadow), inset 0 0 0 6px rgba(255,255,255,0.10), 0 0 0 2px rgba(232,185,79,0.55); }
 
   /* ---- Full-bleed image band ---- */
   .fullbleed { position: relative; min-height: clamp(300px, 44vw, 470px); display: grid; place-items: center; text-align: center; background-image: linear-gradient(rgba(8,4,1,0.62), rgba(8,4,1,0.74)), url('Images/home/fullbleed-lamps.jpg'); background-size: cover; background-position: center; border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); }
@@ -290,15 +305,21 @@
       <div class="wrap">
         <div class="today" id="todayKatha">
           <div class="today-visual">
-            <div class="talapatra d-rama" id="todayCard">
-              <div class="tcard-art"></div>
+            <div class="talapatra is-sealed" id="todayCard">
+              <div class="tcard-art">
+                <div class="tcard-lock" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2.2"/><path d="M8.2 10.5V7.8a3.8 3.8 0 0 1 7.6 0v2.7"/><path d="M12 14v3"/></svg>
+                  <span class="seal-label">Sealed</span>
+                </div>
+              </div>
               <span class="tala-rarity r-rare" id="todayRarity">rare</span>
               <div class="tcard-body">
-                <div class="tala-deity" id="todayDeity">Rama</div>
-                <div class="tala-sub" id="todaySub">The Prince of Dharma</div>
-                <div class="tala-quote" id="todayQuote">&ldquo;A promise becomes sacred when it costs something.&rdquo;</div>
-                <div class="tala-foot">Talapatra card &middot; solve today&rsquo;s puzzle to collect</div>
+                <div class="tala-deity is-masked" id="todayDeity">? ? ?</div>
+                <div class="tala-sub" id="todaySub">Today&rsquo;s darshan is hidden</div>
+                <div class="tala-quote" id="todayQuote"></div>
+                <div class="tala-foot" id="todayFoot">Talapatra card &middot; solve today&rsquo;s puzzle to reveal and collect</div>
               </div>
+              <a class="tcard-hit" href="daily.html" data-kx-cta="today_card_sealed" aria-label="Solve today's puzzle to reveal the card"></a>
             </div>
           </div>
           <div class="today-copy">
@@ -306,9 +327,10 @@
             <h2 class="section-title" id="todayTitle">The promise that cost a kingdom</h2>
             <p class="section-copy" id="todayTeaser">On the eve of his crowning, a promise made long ago sent him into fourteen years of exile &mdash; and he went without bitterness.</p>
             <div class="today-actions">
-              <a class="btn primary" href="daily.html"><svg class="btn-ico" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Play today&rsquo;s Katha &amp; Puzzle</a>
+              <a class="btn primary" href="daily.html" id="todayCta" data-kx-cta="today_play"><svg class="btn-ico" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><span id="todayCtaLabel">Play &amp; reveal today&rsquo;s card</span></a>
               <a class="text-link" href="daily.html">See the clues &amp; streak &rarr;</a>
             </div>
+            <p class="today-status" id="todayStatus">Guess the deity in five tries to unseal today&rsquo;s talapatra card.</p>
           </div>
         </div>
       </div>
@@ -513,10 +535,38 @@
   });
 
   // Today's Katha: surface today's real entry from the daily content (mirrors daily.js).
+  // The talapatra stays SEALED — no deity image, name or quote — until the visitor
+  // has actually solved today's puzzle on /daily. The teaser and theme are safe to
+  // show; the answer is not.
   (function () {
     function pad(n) { return String(n).padStart(2, '0'); }
     function isoOf(d) { return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
     function dayIndex() { return Math.floor((new Date() - new Date(2026, 0, 1)) / 86400000); }
+
+    // Read the daily record written by daily.js (via site.js's profile). We read
+    // localStorage directly because site.js is not loaded on the homepage.
+    function todayRecord() {
+      try {
+        var p = JSON.parse(localStorage.getItem('khatakshetra_profile') || 'null');
+        if (!p || !p.daily || !Array.isArray(p.daily.history)) return null;
+        var t = isoOf(new Date());
+        return p.daily.history.filter(function (h) { return h && h.date === t; }).pop() || null;
+      } catch (err) { return null; }
+    }
+
+    // Safety net: if a katha's title or teaser ever names the deity, blank the
+    // name out while the puzzle is unsolved. The mask on the card is pointless
+    // if the headline beside it gives the answer away.
+    function redact(text, e) {
+      var names = [e.answer, e.deity].concat(e.accept || []).filter(Boolean);
+      var out = String(text || '');
+      names.forEach(function (n) {
+        var safe = String(n).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        out = out.replace(new RegExp('\\b' + safe + '\\b', 'gi'), '———');
+      });
+      return out;
+    }
+
     fetch('content/daily.json?v=1')
       .then(function (r) { return r.json(); })
       .then(function (list) {
@@ -525,19 +575,42 @@
         var e = list.find(function (x) { return x.date === t; });
         if (!e) { var i = ((dayIndex() % list.length) + list.length) % list.length; e = list[i]; }
         var c = e.card || {};
+        var rec = todayRecord();
+        var solved = !!(rec && rec.won === true);
         function set(id, val) { var el = document.getElementById(id); if (el && val != null && val !== '') el.textContent = val; }
+
+        // The theme and rarity are safe; the title and teaser are redacted until solved.
         set('todayEyebrow', 'Today · ' + (e.theme || ''));
-        set('todayTitle', e.kathaTitle || '');
-        set('todayTeaser', e.teaser || '');
+        set('todayTitle', solved ? (e.kathaTitle || '') : redact(e.kathaTitle, e));
+        set('todayTeaser', solved ? (e.teaser || '') : redact(e.teaser, e));
+        var rar = document.getElementById('todayRarity');
+        if (rar && c.rarity) { rar.textContent = c.rarity; rar.className = 'tala-rarity r-' + c.rarity; }
+
+        var card = document.getElementById('todayCard');
+        if (!card) return;
+
+        if (!solved) {
+          // Played today and ran out of guesses: they've already seen the answer on
+          // /daily, so don't prompt them to guess again — but the card isn't earned.
+          if (rec) {
+            set('todayStatus', 'Today’s card stayed sealed. A new katha — and a new chance — tomorrow.');
+            set('todayCtaLabel', 'See today’s answer & streak');
+          }
+          return; // leave the card sealed exactly as rendered
+        }
+
+        // Solved today — unseal the card and show the darshan they earned.
+        var deity = (e.deity || '').toLowerCase().replace(/[^a-z]/g, '');
+        var known = ['rama', 'krishna', 'durga', 'ganesha', 'hanuman', 'shani', 'saraswati', 'narasimha'];
+        card.className = 'talapatra is-revealed' + (known.indexOf(deity) !== -1 ? ' d-' + deity : '');
+        var name = document.getElementById('todayDeity');
+        if (name) name.classList.remove('is-masked');
         set('todayDeity', c.title || e.deity || '');
         set('todaySub', c.subtitle || '');
         if (c.quote) set('todayQuote', '“' + c.quote + '”');
-        var rar = document.getElementById('todayRarity');
-        if (rar && c.rarity) { rar.textContent = c.rarity; rar.className = 'tala-rarity r-' + c.rarity; }
-        var deity = (e.deity || '').toLowerCase().replace(/[^a-z]/g, '');
-        var known = ['rama', 'krishna', 'durga', 'ganesha', 'hanuman', 'shani', 'saraswati', 'narasimha'];
-        var card = document.getElementById('todayCard');
-        if (card && known.indexOf(deity) !== -1) { card.className = 'talapatra d-' + deity; }
+        set('todayFoot', 'Talapatra card · collected ' + t);
+        set('todayStatus', 'Solved today — this card is yours. A new katha unseals tomorrow.');
+        set('todayCtaLabel', 'See your streak');
       })
       .catch(function () {});
   })();
