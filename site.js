@@ -563,6 +563,21 @@ function khatakshetraQueueProgressPush() {
 // of footer links (incl. About + Contact). Non-destructive — appends a links row
 // to the page's existing <footer>. Skips if static footer links already exist
 // (e.g. generated SEO pages, which print .site-footer-links server-side).
+// Single source of truth for the channels. Anything that links to YouTube or
+// Instagram reads from here, so a handle change is a one-line edit.
+var KHATAKSHETRA_SOCIAL = {
+  youtube: 'https://www.youtube.com/@Khatakshetra',
+  instagram: 'https://www.instagram.com/khatakshetra/'
+};
+
+function khatakshetraSocialRow(placement) {
+  return '<a href="' + KHATAKSHETRA_SOCIAL.youtube + '" target="_blank" rel="noopener"' +
+         ' data-kx-social="' + (placement || 'footer') + '">YouTube</a>' +
+         '<span style="opacity:.4">&middot;</span>' +
+         '<a href="' + KHATAKSHETRA_SOCIAL.instagram + '" target="_blank" rel="noopener"' +
+         ' data-kx-social="' + (placement || 'footer') + '">Instagram</a>';
+}
+
 function injectKhatakshetraFooter() {
   if (document.querySelector('.kx-footer-links') || document.querySelector('.site-footer-links')) return;
   var links = [
@@ -578,6 +593,15 @@ function injectKhatakshetraFooter() {
   }).join('<span style="opacity:.4">&middot;</span>');
   var foot = document.querySelector('footer');
   (foot || document.body).appendChild(bar);
+
+  // Channels row — the site should always offer somewhere to follow next.
+  var social = document.createElement('nav');
+  social.className = 'kx-footer-social';
+  social.setAttribute('aria-label', 'Khatakshetra on social media');
+  social.style.cssText = 'text-align:center;padding:0 1rem 1.25rem;font-size:0.9rem;';
+  social.innerHTML = '<span style="opacity:.7;margin-right:.5rem">Follow the stories:</span>' +
+    khatakshetraSocialRow('footer').replace(/<a /g, '<a style="color:#E8B94F;text-decoration:none;margin:0 0.5rem;" ');
+  (foot || document.body).appendChild(social);
 }
 
 // Shared inline email capture. Any page can print
@@ -591,6 +615,35 @@ function injectKhatakshetraFooter() {
 //
 // NOTE: index.html has its own inline handler and does NOT load site.js, so
 // there is no double-binding. The data-kxWired flag guards repeat calls here.
+/** scrollIntoView is missing in some embedded webviews and test environments.
+ *  Left unguarded, a throw here would land in the capture promise's .catch and
+ *  make a SUCCESSFUL signup report as failed. */
+function kxScrollIntoView(el, opts) {
+  try { if (el && typeof el.scrollIntoView === 'function') el.scrollIntoView(opts); } catch (e) {}
+}
+
+/**
+ * The three asks a brand-new member should see, in priority order: start the
+ * thing you joined for, follow the channel, bring one more family. Rendered
+ * once, right where they signed up.
+ */
+function appendKhatakshetraNextSteps(afterEl) {
+  if (!afterEl || document.querySelector('.kx-next')) return;
+  var share = "I found a free 7-day family katha journey — thought you might enjoy it with your children.";
+  var box = document.createElement('div');
+  box.className = 'kx-next';
+  box.innerHTML =
+    '<p class="kx-next-title">You are in. Three things worth doing now:</p>' +
+    '<ol class="kx-next-list">' +
+      '<li><a href="/start" data-kx-cta="post_signup_start">Start today&rsquo;s katha</a> &mdash; ten minutes, with your children.</li>' +
+      '<li><a href="' + KHATAKSHETRA_SOCIAL.youtube + '" target="_blank" rel="noopener" data-kx-social="post_signup">Subscribe on YouTube</a>' +
+        ' for the story videos, or <a href="' + KHATAKSHETRA_SOCIAL.instagram + '" target="_blank" rel="noopener" data-kx-social="post_signup">follow on Instagram</a>.</li>' +
+      '<li><button class="kx-btn" type="button" data-kx-share="' + share + '" data-kx-share-url="https://khatakshetra.com/start">Share with one family</button></li>' +
+    '</ol>';
+  afterEl.parentNode.insertBefore(box, afterEl.nextSibling);
+  kxScrollIntoView(box, { behavior: 'smooth', block: 'nearest' });
+}
+
 function wireKhatakshetraInlineForms() {
   var forms = document.querySelectorAll('[data-signup-form]');
   Array.prototype.forEach.call(forms, function (form) {
@@ -620,8 +673,12 @@ function wireKhatakshetraInlineForms() {
           if (box) {
             box.hidden = false;
             box.classList.add('is-open');
-            box.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            kxScrollIntoView(box, { behavior: 'smooth', block: 'start' });
           }
+        } else {
+          // No pack to reveal on this form, so answer "what now?" instead of
+          // leaving a new member on a page with a status line and no next step.
+          appendKhatakshetraNextSteps(form);
         }
         if (form.getAttribute('data-hide-on-success') !== 'false') {
           var fields = form.querySelector('[data-signup-fields]');

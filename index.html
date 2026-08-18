@@ -229,6 +229,16 @@
     .hero-actions { flex-direction: column; align-items: stretch; }
     .btn { width: 100%; }
   }
+  .foot-social { margin-top: .4rem; }
+  .foot-social a { color: var(--gold-bright); text-decoration: none; }
+  .foot-social a:hover { text-decoration: underline; }
+
+  .next-steps { margin-top: 1rem; padding: 1rem 1.1rem; border: 1px solid rgba(232,185,79,0.4); border-radius: var(--radius-sm); background: rgba(232,185,79,0.07); }
+  .ns-title { margin: 0 0 .4rem; color: var(--gold-bright); font-size: .95rem; }
+  .ns-list { margin: 0; padding-left: 1.2rem; color: var(--body); font-size: .95rem; display: grid; gap: .45rem; }
+  .ns-list a { color: var(--gold-bright); }
+  .ns-list .btn { padding: .5rem .9rem; font-size: .9rem; width: auto; }
+
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
 </style>
 <meta name="twitter:card" content="summary_large_image">
@@ -462,6 +472,10 @@
   <footer>
     <p>Khatakshetra &mdash; stories, temples, booklets, games, and heirloom festival experiences.</p>
     <p><a href="about.html">About</a> &middot; <a href="contact.html">Contact</a> &middot; <a href="story-experience.html?pack=ramayana-starter">Open the Ramayana story pack</a></p>
+    <p class="foot-social">Follow the stories:
+      <a href="https://www.youtube.com/@Khatakshetra" target="_blank" rel="noopener" data-kx-social="footer">YouTube</a> &middot;
+      <a href="https://www.instagram.com/khatakshetra/" target="_blank" rel="noopener" data-kx-social="footer">Instagram</a>
+    </p>
   </footer>
 
   <div class="modal" id="signupModal" aria-hidden="true">
@@ -496,6 +510,23 @@
   modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
 
+  // A new member's three best next actions, shown once, right where they joined.
+  // Without this a signup ends on a status line and the visit dead-ends.
+  function showNextSteps(form) {
+    if (document.querySelector('.next-steps')) return;
+    const share = "I found a free 7-day family katha journey — thought you might enjoy it with your children.";
+    const box = document.createElement('div');
+    box.className = 'next-steps';
+    box.innerHTML =
+      '<p class="ns-title">Three things worth doing now:</p>' +
+      '<ol class="ns-list">' +
+        '<li><a href="start.html" data-kx-cta="post_signup_start">Start today\u2019s katha</a> &mdash; ten minutes, with your children.</li>' +
+        '<li><a href="https://www.youtube.com/@Khatakshetra" target="_blank" rel="noopener" data-kx-social="post_signup">Subscribe on YouTube</a> for the story videos.</li>' +
+        '<li><button class="btn" type="button" data-kx-share="' + share + '" data-kx-share-url="https://khatakshetra.com/start">Share with one family</button></li>' +
+      '</ol>';
+    form.parentNode.insertBefore(box, form.nextSibling);
+  }
+
   function isValidEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
   function localCapture(email, cta) {
     const k = 'khatakshetra_signups';
@@ -528,8 +559,9 @@
         await captureEmail(email, cta);
         status.textContent = 'You are in. We will send the first unlock soon.';
         if (typeof window.trackKhatakshetraSignup === 'function') window.trackKhatakshetraSignup({ cta: cta });
+        showNextSteps(form);
       }
-      catch (e) { localCapture(email, cta); status.textContent = 'Saved — we will send your unlock soon.'; }
+      catch (e) { localCapture(email, cta); status.textContent = 'Saved — we will send your unlock soon.'; showNextSteps(form); }
       finally { form.reset(); submit.disabled = false; submit.textContent = original; }
     });
   });

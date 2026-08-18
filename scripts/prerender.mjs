@@ -98,11 +98,23 @@ function navBlock() {
 </nav>`;
 }
 
+// The channels, in one place. site.js holds the same pair for the hand-written
+// pages; change both together if a handle ever moves.
+const SOCIAL = {
+  youtube: 'https://www.youtube.com/@Khatakshetra',
+  instagram: 'https://www.instagram.com/khatakshetra/'
+};
+
 function footerBlock() {
   return `<footer class="site-footer">
   <p>&copy; Khatakshetra. Exploring Puranas and Itihasa for families.</p>
   <nav class="site-footer-links" aria-label="Footer">
     <a href="/">Home</a> &middot; <a href="/stories">Stories</a> &middot; <a href="/games">Play</a> &middot; <a href="/paint">Colour</a> &middot; <a href="/temples">Temples</a> &middot; <a href="/daily">Daily</a> &middot; <a href="/about">About</a> &middot; <a href="/contact">Contact</a>
+  </nav>
+  <nav class="site-footer-social" aria-label="Khatakshetra on social media">
+    <span>Follow the stories:</span>
+    <a href="${SOCIAL.youtube}" target="_blank" rel="noopener" data-kx-social="footer">YouTube</a> &middot;
+    <a href="${SOCIAL.instagram}" target="_blank" rel="noopener" data-kx-social="footer">Instagram</a>
   </nav>
 </footer>
 <script src="/analytics.js"></script>
@@ -345,6 +357,7 @@ function buildFestivalPage(festival) {
         <div class="kx-reveal" id="printable-${escHtml(slug)}" hidden>
           <a class="kx-btn kx-btn-primary" href="${escHtml(pack.printable)}" download>Download the ${escHtml(title)} printable (PDF)</a>
           <button class="kx-btn" type="button" data-kx-share="${escHtml(shareText)}">Share with one family on WhatsApp</button>
+          <a class="kx-btn" href="${SOCIAL.youtube}" target="_blank" rel="noopener" data-kx-social="festival_pack">Subscribe on YouTube</a>
         </div>
       </div>` : ''}
     </section>
