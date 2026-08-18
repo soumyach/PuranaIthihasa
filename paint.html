@@ -316,6 +316,19 @@
       block.appendChild(grid);
       host.appendChild(block);
     });
+
+    // Deep link: /paint?page=krishna-dahi-handi opens that sheet straight away.
+    // The festival pages link this way, so a family that clicked "colour the
+    // dahi handi" lands on the dahi handi — not on a gallery to search through.
+    var wanted = '';
+    try { wanted = new URLSearchParams(location.search).get('page') || ''; } catch (e) {}
+    if (wanted) {
+      FESTIVALS.forEach(function (f) {
+        f.pages.forEach(function (p) {
+          if (p.slug === wanted) openPage(p, f);
+        });
+      });
+    }
   })();
 
   // ── palette ──
