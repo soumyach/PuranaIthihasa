@@ -102,10 +102,34 @@ function footerBlock() {
   return `<footer class="site-footer">
   <p>&copy; Khatakshetra. Exploring Puranas and Itihasa for families.</p>
   <nav class="site-footer-links" aria-label="Footer">
-    <a href="/">Home</a> &middot; <a href="/stories">Stories</a> &middot; <a href="/games">Play</a> &middot; <a href="/temples">Temples</a> &middot; <a href="/daily">Daily</a> &middot; <a href="/about">About</a> &middot; <a href="/contact">Contact</a>
+    <a href="/">Home</a> &middot; <a href="/stories">Stories</a> &middot; <a href="/games">Play</a> &middot; <a href="/paint">Colour</a> &middot; <a href="/temples">Temples</a> &middot; <a href="/daily">Daily</a> &middot; <a href="/about">About</a> &middot; <a href="/contact">Contact</a>
   </nav>
 </footer>
+<script src="/analytics.js"></script>
 <script src="/site.js"></script>`;
+}
+
+/**
+ * Reusable membership block. Generated pages previously had no email field at
+ * all, so every visitor an SEO result or a campaign link delivered had no way
+ * to become a member. site.js wires [data-signup-form] globally, so this is
+ * markup-only — no per-page script, one implementation to maintain.
+ */
+function joinBlock({ cta, heading, copy, button = 'Join Khatakshetra Family — free' }) {
+  return `<section class="kx-join">
+      <div class="kx-eyebrow">Khatakshetra Family — Free</div>
+      <h2>${escHtml(heading)}</h2>
+      <p>${escHtml(copy)}</p>
+      <form class="kx-join-form" data-signup-form data-cta="${escHtml(cta)}">
+        <div class="kx-join-fields" data-signup-fields>
+          <input type="email" name="email" placeholder="your@email.com" aria-label="Your email" required>
+          <button class="kx-btn kx-btn-primary" type="submit">${escHtml(button)}</button>
+        </div>
+        <p class="kx-status" data-status role="status"></p>
+      </form>
+      <p class="kx-fine">Free forever &middot; no child account needed &middot; unsubscribe in one click.</p>
+      <p class="kx-alt"><a href="/start">Or start the free 7-day family journey &rarr;</a></p>
+    </section>`;
 }
 
 // ── DEITY PAGES ───────────────────────────────────────────────────────────────
@@ -238,6 +262,12 @@ ${navBlock()}
     </section>` : ''}
 
     ${packSection}
+
+    ${joinBlock({
+      cta: `deity_${slug}`,
+      heading: `Bring ${name} into your family's week`,
+      copy: `Join free and we will send you one story at a time — with a question to ask your children and a page they can colour. Ten minutes, not homework.`
+    })}
   </article>
 </main>
 ${footerBlock()}
@@ -250,8 +280,75 @@ ${footerBlock()}
 // ── FESTIVAL PAGES ────────────────────────────────────────────────────────────
 
 function buildFestivalPage(festival) {
-  const { slug, title, date, story, quiz, coloring, kitCta } = festival;
+  const { slug, title, date, story, quiz, coloring, kitCta, pack = null } = festival;
   const canonicalUrl = `https://khatakshetra.com/festival/${slug}`;
+
+  // "August 28, 2026" → "2026-08-28" for the client-side countdown.
+  const isoDate = (function () {
+    const t = Date.parse(date);
+    if (isNaN(t)) return '';
+    const d = new Date(t);
+    const p = (n) => String(n).padStart(2, '0');
+    return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+  })();
+
+  // Deep-link straight to the first colouring sheet rather than dumping the
+  // visitor on the studio index and making them hunt for the festival.
+  const colouringLink = (pack && pack.colouring && pack.colouring.length)
+    ? `/paint?page=${encodeURIComponent(pack.colouring[0].slug)}`
+    : '';
+
+  const shareText = (pack && pack.shareText) || `${title} 2026 — story, colouring and a family question, free at Khatakshetra.`;
+
+  // The free pack itself: visible immediately (the doc is right that cold
+  // traffic must see the value), with the printable PDF behind the email.
+  const packSection = pack ? `
+    <section class="kx-pack">
+      <h2>What is in the free pack</h2>
+      <ol class="kx-ritual">
+        ${(pack.ritual || []).map((step) => `<li>${escHtml(step)}</li>`).join('\n        ')}
+      </ol>
+
+      <div class="kx-pack-grid">
+        ${(pack.colouring || []).map((c) => `<a class="kx-pack-card" href="/paint?page=${encodeURIComponent(c.slug)}" data-kx-cta="festival_${escHtml(slug)}_colour">
+          <span class="kx-pack-kind">Colour</span>
+          <strong>${escHtml(c.title)}</strong>
+          <span class="kx-pack-age">Ages ${escHtml(c.age)}</span>
+        </a>`).join('\n        ')}
+        ${quiz ? `<a class="kx-pack-card" href="/quiz-game.html?quiz=${escHtml(quiz)}" data-kx-cta="festival_${escHtml(slug)}_quiz">
+          <span class="kx-pack-kind">Play</span>
+          <strong>${escHtml(pack.quizLabel || (title + ' family quiz'))}</strong>
+          <span class="kx-pack-age">All ages</span>
+        </a>` : ''}
+        ${pack.story ? `<a class="kx-pack-card" href="${escHtml(pack.story.href)}" data-kx-cta="festival_${escHtml(slug)}_story">
+          <span class="kx-pack-kind">Read</span>
+          <strong>${escHtml(pack.story.title)}</strong>
+          <span class="kx-pack-age">Source-labelled</span>
+        </a>` : ''}
+      </div>
+
+      <div class="kx-ask">
+        <p class="kx-ask-label">Ask at the table</p>
+        <p class="kx-ask-q">${escHtml(pack.familyQuestion)}</p>
+      </div>
+
+      ${pack.printable ? `<div class="kx-printable">
+        <h3>Want it on paper?</h3>
+        <p>The printable starter has every sheet in this pack, ready for the printer.</p>
+        <form class="kx-join-form" data-signup-form data-cta="festival_${escHtml(slug)}_printable" data-reveal="printable-${escHtml(slug)}">
+          <div class="kx-join-fields" data-signup-fields>
+            <input type="email" name="email" placeholder="your@email.com" aria-label="Your email" required>
+            <button class="kx-btn kx-btn-primary" type="submit">Send me the printable</button>
+          </div>
+          <p class="kx-status" data-status role="status"></p>
+        </form>
+        <div class="kx-reveal" id="printable-${escHtml(slug)}" hidden>
+          <a class="kx-btn kx-btn-primary" href="${escHtml(pack.printable)}" download>Download the ${escHtml(title)} printable (PDF)</a>
+          <button class="kx-btn" type="button" data-kx-share="${escHtml(shareText)}">Share with one family on WhatsApp</button>
+        </div>
+      </div>` : ''}
+    </section>
+` : '';
 
   const pageTitle = `${title} 2026 — Story, Date & Family Activities | Khatakshetra`;
   const metaDesc = truncate(`${title} ${date}: ${story}`, 155);
@@ -311,26 +408,51 @@ ${navBlock()}
 <main class="festival-page">
   <article>
     <header class="entity-header">
+      <p class="kx-eyebrow">${pack ? 'Free family pack' : 'Festival guide'}</p>
       <h1>${escHtml(title)}</h1>
-      <p class="festival-date"><strong>2026 Date:</strong> ${escHtml(date)}</p>
+      <p class="festival-date"><strong>2026:</strong> ${escHtml(date)}<span class="kx-countdown" data-kx-countdown="${escHtml(isoDate)}"></span></p>
     </header>
 
     <section class="entity-summary">
       <p>${escHtml(story)}</p>
+      ${pack ? `<p class="festival-promise">${escHtml(pack.promise)}</p>` : ''}
     </section>
-
+${packSection}
     <section class="festival-activities">
-      <h2>Family Activities for ${escHtml(title)}</h2>
+      <h2>${pack ? 'Keep going' : `Family activities for ${escHtml(title)}`}</h2>
       <ul class="cta-links">
-        ${quiz ? `<li><a href="/quiz-game.html?quiz=${escHtml(quiz)}">Take the ${escHtml(title)} quiz</a></li>` : ''}
-        ${coloring ? `<li><a href="/drawing-kits">Coloring activity: ${escHtml(coloring)}</a></li>` : ''}
-        ${kitCta ? `<li><a href="/kits?kit=${escHtml(kitCta)}">Get the ${escHtml(title)} activity kit</a></li>` : ''}
+        ${pack ? '' : (quiz ? `<li><a href="/quiz-game.html?quiz=${escHtml(quiz)}">Play the ${escHtml(title)} quiz</a></li>` : '')}
+        ${pack ? '' : (coloring ? `<li><a href="/paint">Colouring activity: ${escHtml(coloring)}</a></li>` : '')}
+        <li><a href="/daily">Today&rsquo;s katha &amp; puzzle</a></li>
+        ${kitCta ? `<li><a href="/kits?kit=${escHtml(kitCta)}">See the ${escHtml(title)} keepsake kit</a></li>` : ''}
         <li><a href="/festivals">Browse all festivals</a></li>
       </ul>
     </section>
+
+    ${joinBlock({
+      cta: `festival_${slug}`,
+      heading: pack ? `Get the free ${title} pack` : `Never miss a festival again`,
+      copy: pack
+        ? `One email and the whole pack opens on this page — story, colouring and the family question. We will send the next festival pack before it arrives.`
+        : `Join free and we will send you the story, the colouring pages and the family question before each festival — in time to actually use them.`
+    })}
   </article>
 </main>
 ${footerBlock()}
+<script>
+  // "in N days" beside the date — a static page that still feels current.
+  (function () {
+    var el = document.querySelector('[data-kx-countdown]');
+    if (!el) return;
+    var target = new Date(el.getAttribute('data-kx-countdown') + 'T00:00:00');
+    if (isNaN(target)) return;
+    var today = new Date(); today.setHours(0, 0, 0, 0);
+    var days = Math.round((target - today) / 86400000);
+    if (days > 1) el.textContent = ' — in ' + days + ' days';
+    else if (days === 1) el.textContent = ' — tomorrow';
+    else if (days === 0) el.textContent = ' — today';
+  })();
+</script>
 </body>
 </html>`;
 
@@ -464,6 +586,12 @@ ${navBlock()}
         <li><a href="/community">Share your temple tip with the community</a></li>
       </ul>
     </section>
+
+    ${joinBlock({
+      cta: `temple_${slug}`,
+      heading: `Know the story before you stand there`,
+      copy: `Join free and we will send the story behind the temple you are planning to visit — so the darshan means something to the children too.`
+    })}
   </article>
 </main>
 ${footerBlock()}
@@ -536,6 +664,12 @@ ${navBlock()}
       </ul>
     </section>
     ${sources ? `<section class="story-sources"><h2>Sources</h2><ul>${sources}</ul></section>` : ''}
+
+    ${joinBlock({
+      cta: `story_${slug}`,
+      heading: `One story like this, every week`,
+      copy: `Join free and we will send the next one — with a question worth asking at dinner and a page your children can colour while you talk.`
+    })}
   </article>
 </main>
 ${footerBlock()}
@@ -551,6 +685,11 @@ function writeSitemap(entities, packBySlug, festivals, temples, stories) {
   const add = (loc, priority) => urls.push(`  <url><loc>${base}${loc}</loc><priority>${priority}</priority></url>`);
   add('/', '1.0');
   ['/stories', '/deities', '/games', '/festivals', '/temples'].forEach(u => add(u, '0.9'));
+  // /start is the primary acquisition page; /kit and /paint are the free-value
+  // pages campaigns point at. These had been hand-added to sitemap.xml, which
+  // meant re-running this generator silently deleted them. Declared here so
+  // regeneration is lossless.
+  add('/start', '0.95'); add('/kit', '0.9'); add('/paint', '0.8');
   add('/daily', '0.9'); add('/which-character', '0.8'); add('/paths', '0.7');
   add('/kids-games', '0.8'); add('/daily-quiz', '0.8'); add('/leaderboard', '0.6'); add('/temple-tips', '0.8');
   add('/about', '0.6'); add('/contact', '0.5');

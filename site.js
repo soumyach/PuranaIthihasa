@@ -580,10 +580,128 @@ function injectKhatakshetraFooter() {
   (foot || document.body).appendChild(bar);
 }
 
+// Shared inline email capture. Any page can print
+//   <form data-signup-form data-cta="festival_janmashtami" data-reveal="packBox">
+//     <input type="email" name="email" required><button type="submit">Join free</button>
+//     <p data-status></p>
+//   </form>
+// and get a working, tracked signup with no per-page JavaScript. This is what
+// lets the generated SEO pages (festival/deity/story/temple) convert — they
+// previously had no email path at all.
+//
+// NOTE: index.html has its own inline handler and does NOT load site.js, so
+// there is no double-binding. The data-kxWired flag guards repeat calls here.
+function wireKhatakshetraInlineForms() {
+  var forms = document.querySelectorAll('[data-signup-form]');
+  Array.prototype.forEach.call(forms, function (form) {
+    if (form.dataset.kxWired) return;
+    form.dataset.kxWired = '1';
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var input = form.querySelector('input[type="email"]');
+      var email = ((input && input.value) || '').trim().toLowerCase();
+      var status = form.querySelector('[data-status]');
+      var submit = form.querySelector('button[type="submit"]');
+      var cta = form.getAttribute('data-cta') || 'site_signup';
+      var revealId = form.getAttribute('data-reveal');
+
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        if (status) status.textContent = 'Please enter a valid email.';
+        return;
+      }
+
+      // Give the visitor what was promised even if the network fails. A broken
+      // API must never withhold a free colouring page from a family.
+      function deliver(message) {
+        if (status) status.textContent = message;
+        if (revealId) {
+          var box = document.getElementById(revealId);
+          if (box) {
+            box.hidden = false;
+            box.classList.add('is-open');
+            box.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+        if (form.getAttribute('data-hide-on-success') !== 'false') {
+          var fields = form.querySelector('[data-signup-fields]');
+          if (fields) fields.hidden = true;
+        }
+      }
+
+      var profile = (typeof getKhatakshetraProfile === 'function') ? getKhatakshetraProfile() : null;
+      if (profile) {
+        profile.email = email;
+        profile.last_cta = cta;
+        if (typeof saveKhatakshetraProfile === 'function') saveKhatakshetraProfile(profile);
+      }
+
+      if (submit) { submit.disabled = true; submit.dataset.label = submit.textContent; submit.textContent = 'Unlocking…'; }
+      if (status) status.textContent = '';
+
+      var attribution = (typeof window.khatakshetraAttribution === 'function')
+        ? window.khatakshetraAttribution() : {};
+
+      fetch('/api/email-capture', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email_id: email, cta: cta, attribution: attribution })
+      })
+        .then(function (res) {
+          if (!res || res.ok === false) throw new Error('capture rejected');
+          deliver('You are in — your pack is unlocked below.');
+          // Count the conversion ONLY when the server actually took it, so the
+          // GA4 member count cannot drift above the rows in Supabase.
+          if (typeof window.trackKhatakshetraSignup === 'function') {
+            try { window.trackKhatakshetraSignup({ cta: cta }); } catch (e) {}
+          }
+        })
+        .catch(function () {
+          // Fail open: the family still gets the pack. But don't report a
+          // conversion we can't back up — log the failure so the gap is
+          // visible instead of silently inflating the numbers.
+          deliver('Saved — your pack is unlocked below.');
+          try {
+            var k = 'khatakshetra_signups';
+            var pending = JSON.parse(localStorage.getItem(k) || '[]');
+            pending.push({ email: email, cta: cta, captured_at: new Date().toISOString(), unsent: true });
+            localStorage.setItem(k, JSON.stringify(pending));
+          } catch (e) {}
+          if (typeof trackKhatakshetraEvent === 'function') {
+            trackKhatakshetraEvent('signup_capture_failed', { cta: cta });
+          }
+        })
+        .finally(function () {
+          if (submit) { submit.disabled = false; submit.textContent = submit.dataset.label || 'Join free'; }
+          if (typeof khatakshetraSupabaseSignIn === 'function') khatakshetraSupabaseSignIn(email);
+        });
+    });
+  });
+}
+
+// Outbound social clicks (YouTube / Instagram). Tracked wherever they appear so
+// "did the site send people to the channel?" is answerable.
+function wireKhatakshetraSocialClicks() {
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    var dest = '';
+    if (/youtube\.com|youtu\.be/i.test(href)) dest = 'youtube';
+    else if (/instagram\.com/i.test(href)) dest = 'instagram';
+    if (!dest) return;
+    var payload = { destination: dest, placement: a.getAttribute('data-kx-social') || 'link', page: location.pathname };
+    if (typeof trackKhatakshetraEvent === 'function') trackKhatakshetraEvent(dest + '_click', payload);
+    if (typeof window.gtag === 'function') window.gtag('event', dest + '_click', payload);
+  }, true);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   ensureKhatakshetraShell();
   renderKhatakshetraProgressChip();
   initKhatakshetraAnalytics();
   initKhatakshetraSupabase();
   injectKhatakshetraFooter();
+  wireKhatakshetraInlineForms();
+  wireKhatakshetraSocialClicks();
 });

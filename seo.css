@@ -77,3 +77,91 @@ ul:not(.key-facts):not(.cta-links):not(.related-links) { padding-left: 1.2rem; }
   main { padding-top: 2.25rem; }
   .site-brand { margin-right: 0; }
 }
+
+/* ── Membership + festival pack blocks (generated pages) ──────────────────────
+   These pages previously had no conversion path at all. The join block appears
+   on every generated page; the pack block only on festivals that have one. */
+.kx-eyebrow {
+  color: var(--seo-gold); text-transform: uppercase;
+  letter-spacing: .2em; font-size: .72rem; margin: 0 0 .5rem;
+}
+
+.kx-join {
+  margin: 2.5rem 0 0; padding: 1.6rem 1.5rem;
+  border: 1px solid rgba(232,185,79,0.42); border-radius: 16px;
+  background: linear-gradient(150deg, rgba(52,33,9,0.9), rgba(20,11,3,0.86));
+}
+.kx-join h2 { margin: 0 0 .4rem; font-size: 1.5rem; }
+.kx-join p { margin: 0 0 .9rem; color: var(--seo-muted); }
+.kx-join-form { margin: 0; }
+.kx-join-fields { display: flex; gap: .6rem; flex-wrap: wrap; }
+.kx-join-fields input {
+  flex: 1 1 240px; min-height: 50px; padding: .7rem .9rem;
+  background: rgba(8,3,0,0.72); color: var(--seo-ink);
+  border: 1px solid rgba(232,185,79,0.32); border-radius: 10px; font: inherit;
+}
+.kx-join-fields input::placeholder { color: rgba(201,180,145,0.6); }
+.kx-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: .8rem 1.3rem; border-radius: 10px; cursor: pointer;
+  border: 1px solid rgba(232,185,79,0.45); background: rgba(28,16,5,0.82);
+  color: var(--seo-ink); font: inherit; font-weight: 600; text-decoration: none;
+}
+.kx-btn-primary {
+  background: linear-gradient(135deg, #e8b94f, #e07b1a);
+  color: #160d02; border-color: rgba(232,185,79,0.75);
+}
+.kx-btn:hover { text-decoration: none; border-color: rgba(232,185,79,0.8); }
+.kx-status { min-height: 1.3em; margin: .6rem 0 0; color: #f5a23c; font-size: .95rem; }
+.kx-fine { font-size: .84rem; color: rgba(201,180,145,0.78); margin: .7rem 0 .2rem; }
+.kx-alt { margin: 0; font-size: .95rem; }
+.kx-alt a { color: var(--seo-gold); }
+
+.festival-promise { color: var(--seo-ink); font-style: italic; }
+.kx-countdown { color: var(--seo-gold); font-style: normal; }
+
+.kx-pack {
+  margin: 2rem 0 0; padding: 1.5rem;
+  border: 1px solid var(--seo-line); border-radius: 16px; background: var(--seo-panel);
+}
+.kx-pack h2 { margin-top: 0; }
+.kx-ritual { margin: 0 0 1.2rem; padding-left: 1.3rem; color: var(--seo-muted); }
+.kx-ritual li { margin: .3rem 0; }
+
+.kx-pack-grid {
+  display: grid; gap: .8rem;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+.kx-pack-card {
+  display: grid; gap: .2rem; align-content: start;
+  padding: .95rem 1rem; text-decoration: none; color: var(--seo-ink);
+  border: 1px solid var(--seo-line); border-radius: 12px; background: rgba(8,3,0,0.4);
+  transition: transform .18s ease, border-color .18s ease;
+}
+.kx-pack-card:hover { transform: translateY(-2px); border-color: var(--seo-gold); text-decoration: none; }
+.kx-pack-kind {
+  font-size: .66rem; letter-spacing: .18em; text-transform: uppercase; color: var(--seo-gold);
+}
+.kx-pack-age { font-size: .82rem; color: rgba(201,180,145,0.8); }
+
+.kx-ask {
+  margin: 1.4rem 0 0; padding: 1rem 1.1rem;
+  border: 1px solid var(--seo-line); border-left: 3px solid #e07b1a;
+  border-radius: 10px; background: rgba(244,234,217,0.05);
+}
+.kx-ask-label {
+  margin: 0; font-size: .7rem; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--seo-gold);
+}
+.kx-ask-q { margin: .35rem 0 0; font-style: italic; font-size: 1.1rem; }
+
+.kx-printable { margin: 1.6rem 0 0; padding-top: 1.2rem; border-top: 1px solid var(--seo-line); }
+.kx-printable h3 { margin: 0 0 .3rem; }
+.kx-printable p { color: var(--seo-muted); margin: 0 0 .8rem; }
+.kx-reveal { display: flex; gap: .7rem; flex-wrap: wrap; margin-top: .9rem; }
+.kx-reveal[hidden] { display: none; }
+
+@media (max-width: 600px) {
+  .kx-join, .kx-pack { padding: 1.2rem 1.1rem; }
+  .kx-join-fields input, .kx-join-fields .kx-btn, .kx-reveal .kx-btn { flex: 1 1 100%; width: 100%; }
+}

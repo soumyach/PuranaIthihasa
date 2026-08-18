@@ -1,12 +1,186 @@
 [
-  {"slug":"raksha-bandhan","title":"Raksha Bandhan","date":"August 28, 2026","story":"A festival of protection, promise, affection, and remembered responsibility between siblings and loved ones.","quiz":"krishna-beginner","coloring":"Rakhi mandala and promise card","kitCta":"raksha_janmashtami_kit"},
-  {"slug":"janmashtami","title":"Krishna Janmashtami","date":"September 4, 2026","story":"Krishna's birth is remembered as hope arriving in darkness, joy crossing danger, and love becoming playful wisdom.","quiz":"krishna-beginner","coloring":"Baby Krishna, butter pot, flute, and dahi handi","kitCta":"raksha_janmashtami_kit"},
-  {"slug":"ganesh-chaturthi","title":"Ganesh Chaturthi","date":"September 14, 2026","story":"Ganesha teaches beginnings, boundaries, repair, wisdom, and the courage to start again.","quiz":"ganesha-beginner","coloring":"Ganesha, modak bowl, mouse vahana, and bamboo platform","kitCta":"ganesh_kit"},
-  {"slug":"navratri","title":"Navratri","date":"October 11-19, 2026","story":"Nine nights of Devi worship invite courage, discipline, beauty, protection, and inner renewal.","quiz":"devi-navratri-beginner","coloring":"Navadurga symbols, lion, lotus, lamp, and garba circle","kitCta":"navratri_challenge"},
-  {"slug":"dussehra","title":"Dussehra","date":"October 20, 2026","story":"Dussehra remembers the victory of dharma over arrogance and the return of courage after testing.","quiz":"rama-navami-beginner","coloring":"Rama with bow, Ravana context card, victory lamps","kitCta":"dussehra_challenge"},
-  {"slug":"diwali","title":"Diwali","date":"November 8, 2026","story":"Diwali gathers light, return, Lakshmi, gratitude, and family renewal into one luminous season.","quiz":"lakshmi-diwali-beginner","coloring":"Diyas, Lakshmi lotus, Ayodhya lights, rangoli","kitCta":"diwali_unlock"},
-  {"slug":"guru-nanak-jayanti","title":"Guru Nanak Jayanti","date":"November 24, 2026","story":"A day of remembrance, service, song, humility, and the light of divine wisdom.","quiz":"saraswati-beginner","coloring":"Lamp, kirtan, langar, and seva symbols","kitCta":"festival_challenge"},
-  {"slug":"maha-shivaratri","title":"Maha Shivaratri","date":"To verify by panchang","story":"A night for Shiva, stillness, discipline, transformation, and the inner lamp that does not go out.","quiz":"shiva-beginner","coloring":"Shiva lingam, bilva leaves, damru, trishula, moon","kitCta":"shivaratri_unlock"},
-  {"slug":"ratha-yatra","title":"Rath Yatra","date":"To verify by panchang","story":"Jagannath comes out to the people, turning darshan into a shared journey of love.","quiz":"krishna-beginner","coloring":"Jagannath chariot, wheels, flags, pulling ropes","kitCta":"rath_yatra_kit"},
-  {"slug":"hanuman-jayanti","title":"Hanuman Jayanti","date":"To verify by region","story":"Hanuman Jayanti celebrates strength that bows, speed that serves, and devotion that becomes action.","quiz":"rama-navami-beginner","coloring":"Hanuman mace, mountain, folded hands, Rama name","kitCta":"hanuman_challenge"}
+  {
+    "slug": "raksha-bandhan",
+    "title": "Raksha Bandhan",
+    "date": "August 28, 2026",
+    "story": "A festival of protection, promise, affection, and remembered responsibility between siblings and loved ones.",
+    "quiz": "krishna-beginner",
+    "coloring": "Rakhi mandala and promise card",
+    "kitCta": "raksha_janmashtami_kit",
+    "pack": {
+      "promise": "A free Raksha Bandhan family pack — the story behind the thread, three colouring sheets, a promise card to fill in, and one question to ask at the table.",
+      "colouring": [
+        {
+          "slug": "rakhi",
+          "title": "The rakhi",
+          "age": "3+"
+        },
+        {
+          "slug": "rakhi-tying",
+          "title": "Tying the rakhi",
+          "age": "6+"
+        },
+        {
+          "slug": "rakhi-thali",
+          "title": "The festive thali",
+          "age": "9+"
+        }
+      ],
+      "printable": "/downloads/raksha-bandhan-diy-starter.pdf",
+      "printableLabel": "Raksha Bandhan printable starter (PDF)",
+      "familyQuestion": "Who in this family has quietly protected you — and did you ever thank them for it?",
+      "ritual": [
+        "Read the story of the thread together — three minutes.",
+        "Colour a rakhi each, on screen or printed.",
+        "Ask the question at dinner, and let the youngest answer first."
+      ],
+      "shareText": "We're doing a free Raksha Bandhan family pack from Khatakshetra — story, colouring and one question to ask at the table.",
+      "quizLabel": "Krishna family quiz"
+    }
+  },
+  {
+    "slug": "janmashtami",
+    "title": "Krishna Janmashtami",
+    "date": "September 4, 2026",
+    "story": "Krishna's birth is remembered as hope arriving in darkness, joy crossing danger, and love becoming playful wisdom.",
+    "quiz": "krishna-beginner",
+    "coloring": "Baby Krishna, butter pot, flute, and dahi handi",
+    "kitCta": "raksha_janmashtami_kit",
+    "pack": {
+      "promise": "A free Janmashtami family pack — Krishna's birth story, a five-question family quiz, three colouring sheets including the dahi handi, and a question worth carrying home.",
+      "colouring": [
+        {
+          "slug": "krishna-baby",
+          "title": "Little Krishna",
+          "age": "3+"
+        },
+        {
+          "slug": "krishna-flute",
+          "title": "Krishna and his flute",
+          "age": "6+"
+        },
+        {
+          "slug": "krishna-dahi-handi",
+          "title": "The dahi handi",
+          "age": "9+"
+        }
+      ],
+      "printable": "/downloads/janmashtami-diy-starter.pdf",
+      "printableLabel": "Janmashtami printable starter (PDF)",
+      "familyQuestion": "Krishna was born in a prison and still brought joy. What is one hard place where your family still found something to celebrate?",
+      "ritual": [
+        "Read how hope arrived at midnight — three minutes.",
+        "Play the Krishna quiz together, then colour the dahi handi.",
+        "Ask the question before the lamps go out."
+      ],
+      "shareText": "Free Janmashtami family pack from Khatakshetra — Krishna's birth story, a quiz and colouring for the children.",
+      "quizLabel": "Krishna family quiz"
+    }
+  },
+  {
+    "slug": "ganesh-chaturthi",
+    "title": "Ganesh Chaturthi",
+    "date": "September 14, 2026",
+    "story": "Ganesha teaches beginnings, boundaries, repair, wisdom, and the courage to start again.",
+    "quiz": "ganesha-beginner",
+    "coloring": "Ganesha, modak bowl, mouse vahana, and bamboo platform",
+    "kitCta": "ganesh_kit",
+    "pack": {
+      "promise": "A free Ganesh Chaturthi family pack — a source-labelled Ganesha story, a quiz, three colouring sheets, and a three-day family challenge.",
+      "colouring": [
+        {
+          "slug": "ganesha-face",
+          "title": "Ganesha",
+          "age": "3+"
+        },
+        {
+          "slug": "ganesha-seated",
+          "title": "Ganesha in blessing",
+          "age": "6+"
+        },
+        {
+          "slug": "ganesha-temple",
+          "title": "Ganesha in the temple",
+          "age": "9+"
+        }
+      ],
+      "printable": "/downloads/ganesha-diy-starter.pdf",
+      "printableLabel": "Ganesh Chaturthi printable starter (PDF)",
+      "familyQuestion": "Ganesha is asked first to clear the way. What is the one small obstacle your family could remove this week?",
+      "ritual": [
+        "Read why Ganesha is remembered before every beginning.",
+        "Colour a Ganesha each, and name the obstacle you want cleared.",
+        "Come back on day three and say whether it moved."
+      ],
+      "story": {
+        "href": "/story/ganesha-elephant-head",
+        "title": "Why Ganesha Has an Elephant Head"
+      },
+      "shareText": "Free Ganesh Chaturthi family pack from Khatakshetra — the story, a quiz and colouring sheets for the children.",
+      "quizLabel": "Ganesha family quiz"
+    }
+  },
+  {
+    "slug": "navratri",
+    "title": "Navratri",
+    "date": "October 11-19, 2026",
+    "story": "Nine nights of Devi worship invite courage, discipline, beauty, protection, and inner renewal.",
+    "quiz": "devi-navratri-beginner",
+    "coloring": "Navadurga symbols, lion, lotus, lamp, and garba circle",
+    "kitCta": "navratri_challenge"
+  },
+  {
+    "slug": "dussehra",
+    "title": "Dussehra",
+    "date": "October 20, 2026",
+    "story": "Dussehra remembers the victory of dharma over arrogance and the return of courage after testing.",
+    "quiz": "rama-navami-beginner",
+    "coloring": "Rama with bow, Ravana context card, victory lamps",
+    "kitCta": "dussehra_challenge"
+  },
+  {
+    "slug": "diwali",
+    "title": "Diwali",
+    "date": "November 8, 2026",
+    "story": "Diwali gathers light, return, Lakshmi, gratitude, and family renewal into one luminous season.",
+    "quiz": "lakshmi-diwali-beginner",
+    "coloring": "Diyas, Lakshmi lotus, Ayodhya lights, rangoli",
+    "kitCta": "diwali_unlock"
+  },
+  {
+    "slug": "guru-nanak-jayanti",
+    "title": "Guru Nanak Jayanti",
+    "date": "November 24, 2026",
+    "story": "A day of remembrance, service, song, humility, and the light of divine wisdom.",
+    "quiz": "saraswati-beginner",
+    "coloring": "Lamp, kirtan, langar, and seva symbols",
+    "kitCta": "festival_challenge"
+  },
+  {
+    "slug": "maha-shivaratri",
+    "title": "Maha Shivaratri",
+    "date": "To verify by panchang",
+    "story": "A night for Shiva, stillness, discipline, transformation, and the inner lamp that does not go out.",
+    "quiz": "shiva-beginner",
+    "coloring": "Shiva lingam, bilva leaves, damru, trishula, moon",
+    "kitCta": "shivaratri_unlock"
+  },
+  {
+    "slug": "ratha-yatra",
+    "title": "Rath Yatra",
+    "date": "To verify by panchang",
+    "story": "Jagannath comes out to the people, turning darshan into a shared journey of love.",
+    "quiz": "krishna-beginner",
+    "coloring": "Jagannath chariot, wheels, flags, pulling ropes",
+    "kitCta": "rath_yatra_kit"
+  },
+  {
+    "slug": "hanuman-jayanti",
+    "title": "Hanuman Jayanti",
+    "date": "To verify by region",
+    "story": "Hanuman Jayanti celebrates strength that bows, speed that serves, and devotion that becomes action.",
+    "quiz": "rama-navami-beginner",
+    "coloring": "Hanuman mace, mountain, folded hands, Rama name",
+    "kitCta": "hanuman_challenge"
+  }
 ]

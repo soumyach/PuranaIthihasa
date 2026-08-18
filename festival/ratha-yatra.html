@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9NTBSLFTJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-X9NTBSLFTJ');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rath Yatra 2026 — Story, Date &amp; Family Activities | Khatakshetra</title>
@@ -47,28 +56,64 @@
 <main class="festival-page">
   <article>
     <header class="entity-header">
+      <p class="kx-eyebrow">Festival guide</p>
       <h1>Rath Yatra</h1>
-      <p class="festival-date"><strong>2026 Date:</strong> To verify by panchang</p>
+      <p class="festival-date"><strong>2026:</strong> To verify by panchang<span class="kx-countdown" data-kx-countdown=""></span></p>
     </header>
 
     <section class="entity-summary">
       <p>Jagannath comes out to the people, turning darshan into a shared journey of love.</p>
+      
     </section>
 
     <section class="festival-activities">
-      <h2>Family Activities for Rath Yatra</h2>
+      <h2>Family activities for Rath Yatra</h2>
       <ul class="cta-links">
-        <li><a href="/quiz-game.html?quiz=krishna-beginner">Take the Rath Yatra quiz</a></li>
-        <li><a href="/drawing-kits">Coloring activity: Jagannath chariot, wheels, flags, pulling ropes</a></li>
-        <li><a href="/kits?kit=rath_yatra_kit">Get the Rath Yatra activity kit</a></li>
+        <li><a href="/quiz-game.html?quiz=krishna-beginner">Play the Rath Yatra quiz</a></li>
+        <li><a href="/paint">Colouring activity: Jagannath chariot, wheels, flags, pulling ropes</a></li>
+        <li><a href="/daily">Today&rsquo;s katha &amp; puzzle</a></li>
+        <li><a href="/kits?kit=rath_yatra_kit">See the Rath Yatra keepsake kit</a></li>
         <li><a href="/festivals">Browse all festivals</a></li>
       </ul>
+    </section>
+
+    <section class="kx-join">
+      <div class="kx-eyebrow">Khatakshetra Family — Free</div>
+      <h2>Never miss a festival again</h2>
+      <p>Join free and we will send you the story, the colouring pages and the family question before each festival — in time to actually use them.</p>
+      <form class="kx-join-form" data-signup-form data-cta="festival_ratha-yatra">
+        <div class="kx-join-fields" data-signup-fields>
+          <input type="email" name="email" placeholder="your@email.com" aria-label="Your email" required>
+          <button class="kx-btn kx-btn-primary" type="submit">Join Khatakshetra Family — free</button>
+        </div>
+        <p class="kx-status" data-status role="status"></p>
+      </form>
+      <p class="kx-fine">Free forever &middot; no child account needed &middot; unsubscribe in one click.</p>
+      <p class="kx-alt"><a href="/start">Or start the free 7-day family journey &rarr;</a></p>
     </section>
   </article>
 </main>
 <footer class="site-footer">
   <p>&copy; Khatakshetra. Exploring Puranas and Itihasa for families.</p>
+  <nav class="site-footer-links" aria-label="Footer">
+    <a href="/">Home</a> &middot; <a href="/stories">Stories</a> &middot; <a href="/games">Play</a> &middot; <a href="/paint">Colour</a> &middot; <a href="/temples">Temples</a> &middot; <a href="/daily">Daily</a> &middot; <a href="/about">About</a> &middot; <a href="/contact">Contact</a>
+  </nav>
 </footer>
+<script src="/analytics.js"></script>
 <script src="/site.js"></script>
+<script>
+  // "in N days" beside the date — a static page that still feels current.
+  (function () {
+    var el = document.querySelector('[data-kx-countdown]');
+    if (!el) return;
+    var target = new Date(el.getAttribute('data-kx-countdown') + 'T00:00:00');
+    if (isNaN(target)) return;
+    var today = new Date(); today.setHours(0, 0, 0, 0);
+    var days = Math.round((target - today) / 86400000);
+    if (days > 1) el.textContent = ' — in ' + days + ' days';
+    else if (days === 1) el.textContent = ' — tomorrow';
+    else if (days === 0) el.textContent = ' — today';
+  })();
+</script>
 </body>
 </html>
