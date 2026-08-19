@@ -141,6 +141,27 @@
     if (solved && entry.card && typeof revealTalapatraCard === 'function') {
       setTimeout(function () { revealTalapatraCard(entry.card); }, 300);
     }
+    // The daily habit loop hands off to the 7-day journey here — this was the
+    // missing doorway between /daily and /start.
+    if (typeof khatakshetraOfferNextStep === 'function') {
+      try {
+        khatakshetraOfferNextStep({
+          mount: document.getElementById('dailyApp'),
+          context: 'daily',
+          cta: 'daily_' + (solved ? 'solved' : 'played'),
+          heading: solved ? 'Seven more like this, in order.' : 'Tomorrow is a fresh katha.',
+          copy: solved
+            ? 'The 7-day family journey takes one story a night \u2014 with a question to ask your children and a card to keep.'
+            : 'Save your streak so it survives a closed tab, and we will send the next story.',
+          button: 'Save my streak',
+          actions: [
+            { label: 'Start the 7-day journey', href: 'start.html', kxCta: 'after_daily_journey' },
+            { label: 'Colour today\u2019s deity', href: 'paint.html', kxCta: 'after_daily_colour' },
+            { label: 'Free festival kits', href: 'kits.html', kxCta: 'after_daily_kits' }
+          ]
+        });
+      } catch (e) {}
+    }
     return streak;
   }
 
@@ -167,6 +188,11 @@
       if (!Array.isArray(list) || !list.length) return;
       entry = pickEntry(list);
       render();
+      // One of the strategy doc's ten events, previously never fired: we only
+      // knew when someone FINISHED the daily, not when they started it.
+      if (window.kxTrack && window.kxTrack.activityStarted) {
+        window.kxTrack.activityStarted('daily_katha', entry.deity || entry.kathaTitle || '');
+      }
     })
     .catch(function () {
       const app = document.getElementById('dailyApp');

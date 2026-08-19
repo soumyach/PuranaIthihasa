@@ -3,6 +3,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/kit",
+      "destination": "/kits",
+      "permanent": true
+    },
+    {
       "source": "/docs/(.*)",
       "destination": "/",
       "permanent": false
