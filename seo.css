@@ -165,3 +165,16 @@ ul:not(.key-facts):not(.cta-links):not(.related-links) { padding-left: 1.2rem; }
   .kx-join, .kx-pack { padding: 1.2rem 1.1rem; }
   .kx-join-fields input, .kx-join-fields .kx-btn, .kx-reveal .kx-btn { flex: 1 1 100%; width: 100%; }
 }
+
+.site-footer-social { margin-top: .5rem; font-size: .95rem; }
+.site-footer-social span { opacity: .75; margin-right: .35rem; }
+.site-footer-social a { color: var(--seo-gold); }
+
+.kx-next {
+  margin: 1rem 0 0; padding: 1rem 1.1rem;
+  border: 1px solid rgba(232,185,79,0.4); border-radius: 12px; background: rgba(232,185,79,0.07);
+}
+.kx-next-title { margin: 0 0 .4rem; color: var(--seo-gold); font-size: .98rem; }
+.kx-next-list { margin: 0; padding-left: 1.2rem; display: grid; gap: .45rem; color: var(--seo-muted); }
+.kx-next-list a { color: var(--seo-gold); }
+.kx-next-list .kx-btn { padding: .5rem .9rem; font-size: .9rem; }
