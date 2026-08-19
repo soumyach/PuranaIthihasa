@@ -623,6 +623,76 @@ function kxScrollIntoView(el, opts) {
 }
 
 /**
+ * Offer the next step after a visitor DOES something — finishes a quiz, saves a
+ * colouring page, completes the daily katha.
+ *
+ * Every one of those actions used to dead-end: the artwork downloaded, the score
+ * appeared, and the visit was over. This renders one consistent card that (a)
+ * asks for an email if we don't have one yet, at the moment we have just proved
+ * the site is worth something, and (b) always names the next thing to do.
+ *
+ *   khatakshetraOfferNextStep({
+ *     mount: 'resultBox',            // element or id to append to
+ *     context: 'quiz',               // for analytics + de-duping
+ *     cta: 'quiz_complete_krishna',  // signup cta if we ask for an email
+ *     heading: 'Want tomorrow's story?',
+ *     copy: 'Save your streak — free.',
+ *     actions: [{ label, href, kxCta }]
+ *   })
+ *
+ * If we already have the visitor's email, the ask is skipped and only the next
+ * actions render — we don't pester members for something we already have.
+ */
+function khatakshetraOfferNextStep(opts) {
+  opts = opts || {};
+  var context = opts.context || 'action';
+  if (document.querySelector('.kx-after[data-context="' + context + '"]')) return null;
+
+  var mount = typeof opts.mount === 'string' ? document.getElementById(opts.mount) : opts.mount;
+  if (!mount) return null;
+
+  var profile = (typeof getKhatakshetraProfile === 'function') ? getKhatakshetraProfile() : null;
+  var isMember = !!(profile && profile.email);
+
+  var box = document.createElement('div');
+  box.className = 'kx-after';
+  box.setAttribute('data-context', context);
+
+  var actions = (opts.actions || []).map(function (a) {
+    var attrs = 'class="kx-after-btn" href="' + a.href + '"';
+    if (a.kxCta) attrs += ' data-kx-cta="' + a.kxCta + '"';
+    if (a.share) {
+      return '<button class="kx-after-btn" type="button" data-kx-share="' + a.share +
+             (a.shareUrl ? '" data-kx-share-url="' + a.shareUrl : '') + '">' + a.label + '</button>';
+    }
+    return '<a ' + attrs + '>' + a.label + '</a>';
+  }).join('');
+
+  var askHtml = isMember ? '' :
+    '<form class="kx-after-form" data-signup-form data-cta="' + (opts.cta || ('after_' + context)) + '">' +
+      '<div class="kx-after-fields" data-signup-fields>' +
+        '<input type="email" name="email" placeholder="your@email.com" aria-label="Your email" required>' +
+        '<button type="submit">' + (opts.button || 'Save my progress') + '</button>' +
+      '</div>' +
+      '<p class="kx-after-status" data-status role="status"></p>' +
+    '</form>';
+
+  box.innerHTML =
+    '<p class="kx-after-title">' + (opts.heading || 'What next?') + '</p>' +
+    (opts.copy ? '<p class="kx-after-copy">' + opts.copy + '</p>' : '') +
+    askHtml +
+    (actions ? '<div class="kx-after-actions">' + actions + '</div>' : '');
+
+  mount.appendChild(box);
+  // Newly injected forms need wiring — the page-load pass has already run.
+  if (typeof wireKhatakshetraInlineForms === 'function') wireKhatakshetraInlineForms();
+  if (typeof trackKhatakshetraEvent === 'function') {
+    trackKhatakshetraEvent('next_step_offered', { context: context, is_member: isMember });
+  }
+  return box;
+}
+
+/**
  * The three asks a brand-new member should see, in priority order: start the
  * thing you joined for, follow the channel, bring one more family. Rendered
  * once, right where they signed up.

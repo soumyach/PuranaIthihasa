@@ -642,3 +642,38 @@ footer a { color: var(--gold-bright); }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* ── "What next?" card, shown after a visitor completes something ─────────────
+   Injected by khatakshetraOfferNextStep() in site.js. Keeps the ask and the
+   next action in one consistent place across quiz, colouring and daily katha. */
+.kx-after {
+  margin: 1.1rem 0 0; padding: 1rem 1.15rem; text-align: left;
+  border: 1px solid rgba(232, 185, 79, 0.42); border-radius: 12px;
+  background: linear-gradient(150deg, rgba(52, 33, 9, 0.92), rgba(20, 11, 3, 0.86));
+}
+.kx-after-title { font-family: 'Cinzel', serif; color: #E8B94F; font-size: 1.05rem; margin: 0 0 .3rem; }
+.kx-after-copy { color: #E4D6B4; font-size: .95rem; margin: 0 0 .8rem; line-height: 1.6; }
+.kx-after-form { margin: 0 0 .8rem; }
+.kx-after-fields { display: flex; gap: .5rem; flex-wrap: wrap; }
+.kx-after-fields input {
+  flex: 1 1 200px; min-height: 46px; padding: .6rem .8rem; font: inherit; font-size: .95rem;
+  color: #F7EBD2; background: rgba(8, 3, 0, 0.7);
+  border: 1px solid rgba(232, 185, 79, 0.32); border-radius: 9px;
+}
+.kx-after-fields input::placeholder { color: rgba(190, 168, 130, 0.6); }
+.kx-after-fields button {
+  padding: .6rem 1.1rem; font: inherit; font-size: .95rem; font-weight: 600; cursor: pointer;
+  color: #160d02; background: linear-gradient(135deg, #E8B94F, #E07B1A);
+  border: 1px solid rgba(232, 185, 79, 0.75); border-radius: 9px;
+}
+.kx-after-status { min-height: 1.2em; margin: .5rem 0 0; color: #F5A23C; font-size: .9rem; }
+.kx-after-actions { display: flex; gap: .5rem; flex-wrap: wrap; }
+.kx-after-btn {
+  display: inline-flex; align-items: center; padding: .55rem 1rem; cursor: pointer;
+  font: inherit; font-size: .9rem; text-decoration: none; color: #F7EBD2;
+  background: rgba(28, 16, 5, 0.8); border: 1px solid rgba(200, 150, 44, 0.45); border-radius: 9px;
+}
+.kx-after-btn:hover { border-color: rgba(232, 185, 79, 0.8); color: #F7EBD2; }
+@media (max-width: 560px) {
+  .kx-after-fields input, .kx-after-fields button, .kx-after-btn { flex: 1 1 100%; width: 100%; justify-content: center; }
+}

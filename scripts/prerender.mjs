@@ -702,12 +702,12 @@ function writeSitemap(entities, packBySlug, festivals, temples, stories) {
   // pages campaigns point at. These had been hand-added to sitemap.xml, which
   // meant re-running this generator silently deleted them. Declared here so
   // regeneration is lossless.
-  add('/start', '0.95'); add('/kit', '0.9'); add('/paint', '0.8');
+  add('/start', '0.95'); add('/kits', '0.9'); add('/paint', '0.8');
   add('/daily', '0.9'); add('/which-character', '0.8'); add('/paths', '0.7');
   add('/kids-games', '0.8'); add('/daily-quiz', '0.8'); add('/leaderboard', '0.6'); add('/temple-tips', '0.8');
   add('/about', '0.6'); add('/contact', '0.5');
   ['/ramayana-journey', '/ramayana-path-game'].forEach(u => add(u, '0.8'));
-  ['/booklets', '/drawing-kits', '/kits', '/coloring-book-ramayana', '/storybook-ramayana', '/rama-navami-reader'].forEach(u => add(u, '0.7'));
+  ['/booklets', '/drawing-kits', '/coloring-book-ramayana', '/storybook-ramayana', '/rama-navami-reader'].forEach(u => add(u, '0.7'));
   ['/sangraha', '/community'].forEach(u => add(u, '0.6'));
   ['ramayana-starter', 'dasharatha-meets-shani', 'ganesha-beginnings', 'dashavatara'].forEach(p => add(`/story-experience?pack=${p}`, '0.8'));
   entities.filter(e => e.type === 'Deity' || packBySlug[e.slug]).forEach(e => add(`/deity/${e.slug}`, '0.7'));

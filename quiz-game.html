@@ -218,6 +218,27 @@ function renderResult() {
   }
   document.getElementById('resultCopy').innerHTML = copy;
   setTimeout(() => revealTalapatraCard(earnedCard), 350);
+
+  // A score with nowhere to go is a lost visit. Ask for the email here — we have
+  // just earned it — and always name the next thing to do.
+  if (typeof khatakshetraOfferNextStep === 'function') {
+    try {
+      khatakshetraOfferNextStep({
+        mount: 'resultBox',
+        context: 'quiz',
+        cta: 'quiz_complete_' + quiz.slug,
+        heading: 'Want tomorrow\u2019s story?',
+        copy: 'Save your streak and your Talapatra cards \u2014 free, and we send one story at a time.',
+        button: 'Save my streak',
+        actions: [
+          { label: 'Today\u2019s katha & puzzle', href: 'daily.html', kxCta: 'after_quiz_daily' },
+          { label: 'Colour this story', href: 'paint.html', kxCta: 'after_quiz_colour' },
+          { label: 'Start the 7-day journey', href: 'start.html', kxCta: 'after_quiz_journey' },
+          { label: 'Challenge the family', href: 'quiz-room.html?quiz=' + quiz.slug, kxCta: 'after_quiz_room' }
+        ]
+      });
+    } catch (e) {}
+  }
 }
 
 document.getElementById('replayBtn').addEventListener('click', () => {

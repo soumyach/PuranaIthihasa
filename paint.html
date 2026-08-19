@@ -636,6 +636,26 @@
           });
         } catch (e) {}
       }
+      // Saving used to be the end of the visit. Offer the printable set (the
+      // reason to leave an email) and name the next thing to do.
+      if (typeof khatakshetraOfferNextStep === 'function') {
+        try {
+          khatakshetraOfferNextStep({
+            mount: document.querySelector('.pg-studio') || document.body,
+            context: 'colouring',
+            cta: 'colouring_saved_' + current.slug,
+            heading: 'Lovely. Want the printable set?',
+            copy: 'The whole festival pack as print-ready sheets, plus the story behind the one you just coloured.',
+            button: 'Send me the printables',
+            actions: [
+              { label: 'Colour another sheet', href: '#pgFestivals', kxCta: 'after_colouring_another' },
+              { label: 'Today\u2019s katha & puzzle', href: 'daily.html', kxCta: 'after_colouring_daily' },
+              { label: 'Start the 7-day journey', href: 'start.html', kxCta: 'after_colouring_journey' },
+              { label: 'Show someone', share: 'My child colours the Ramayana and Krishna stories here, free:', shareUrl: 'https://khatakshetra.com/paint' }
+            ]
+          });
+        } catch (e) {}
+      }
     }, 'image/png');
   });
 })();
