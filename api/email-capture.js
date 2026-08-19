@@ -102,7 +102,23 @@ async function captureHandler(req, res) {
     if (isNew && subscribed && token) {
       try {
         const mod = await import('../lib/welcome-email.js');
-        await mod.sendWelcomeEmail(email, { name: childName || '', token: token });
+        const result = await mod.sendWelcomeEmail(email, { name: childName || '', token: token });
+        // Log the welcome alongside the drip sends, so email_sends is the whole
+        // picture of what a family has received — not just the automated part.
+        // Best-effort: a logging failure must never affect the signup.
+        await fetch(`${supabaseUrl.replace(/\/$/, '')}/rest/v1/email_sends`, {
+          method: 'POST',
+          headers: { ...authHeaders, 'Content-Type': 'application/json', Prefer: 'resolution=ignore-duplicates' },
+          body: JSON.stringify({
+            email: email,
+            template: 'welcome',
+            dedupe_key: 'welcome',
+            status: result && result.sent ? 'sent' : 'failed',
+            sent_at: result && result.sent ? new Date().toISOString() : null,
+            error: result && result.sent ? null : String((result && result.reason) || 'unknown').slice(0, 300),
+            metadata: { cta: cta }
+          })
+        }).catch(() => {});
       } catch (e) {
         // Sending is best-effort: log and move on. The subscriber is already saved.
         console.error('welcome email skipped:', e && e.message);
