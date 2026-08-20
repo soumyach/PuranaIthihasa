@@ -214,6 +214,11 @@ function getTalapatraCardForQuiz(quizSlug, pct) {
       rare: { id: 'dasharatha-courage-rare', title: 'Dasharatha', subtitle: 'The King Who Stood Before Saturn', rarity: 'rare', quote: 'Courage protects more than itself.' },
       epic: { id: 'shani-karma-epic', title: 'Shani Dev', subtitle: 'Karma Made Visible', rarity: 'epic', quote: 'What is true does not need to hurry.' }
     },
+    'raksha-bandhan-beginner': {
+      common: { id: 'raksha-sutra-common', title: 'Raksha Sutra', subtitle: 'The Thread of Protection', rarity: 'common', quote: 'A promise you can see on your wrist is harder to forget.' },
+      rare: { id: 'draupadi-rare', title: 'Draupadi', subtitle: 'She Who Bound the Wound', rarity: 'rare', quote: 'Care given without being asked is never small.' },
+      epic: { id: 'yamuna-epic', title: 'Yamuna', subtitle: 'The Sister Who Softened Yama', rarity: 'epic', quote: 'Even the keeper of the ledger can be moved by love.' }
+    },
     'ganesha-beginner': {
       common: { id: 'ganesha-beginning-common', title: 'Ganesha', subtitle: 'Before Every Beginning', rarity: 'common', quote: 'Wisdom begins by making space.' },
       rare: { id: 'parvati-boundary-rare', title: 'Parvati', subtitle: 'The Mother Who Creates', rarity: 'rare', quote: 'Love can set a boundary.' },
