@@ -627,6 +627,34 @@ function kxScrollIntoView(el, opts) {
   try { if (el && typeof el.scrollIntoView === 'function') el.scrollIntoView(opts); } catch (e) {}
 }
 
+
+// ── Referral ────────────────────────────────────────────────────────────────
+// A member shares a link carrying their own short code; when someone joins
+// through it, the code rides along in the attribution we already capture. Two
+// families joined unlocks the printable Talapatra card pack.
+//
+// The code is deliberately NOT the subscriber token used for unsubscribe links
+// — a share link must never let a stranger change someone's email preferences.
+function khatakshetraReferralCode() {
+  var p = getKhatakshetraProfile();
+  if (!p.referral_code) {
+    p.referral_code = (Math.random().toString(36).slice(2, 6) + Math.random().toString(36).slice(2, 6)).toUpperCase();
+    saveKhatakshetraProfile(p);
+  }
+  return p.referral_code;
+}
+
+function khatakshetraReferralUrl(path) {
+  return 'https://khatakshetra.com' + (path || '/kits') + '?ref=' + encodeURIComponent(khatakshetraReferralCode());
+}
+
+/** How many families have joined through this member's link. */
+function khatakshetraReferralCount() {
+  return fetch('/api/referrals?code=' + encodeURIComponent(khatakshetraReferralCode()))
+    .then(function (r) { return r.ok ? r.json() : { referrals: 0 }; })
+    .catch(function () { return { referrals: 0 }; });
+}
+
 /**
  * Offer the next step after a visitor DOES something — finishes a quiz, saves a
  * colouring page, completes the daily katha.
@@ -713,7 +741,7 @@ function appendKhatakshetraNextSteps(afterEl) {
       '<li><a href="/start" data-kx-cta="post_signup_start">Start today&rsquo;s katha</a> &mdash; ten minutes, with your children.</li>' +
       '<li><a href="' + KHATAKSHETRA_SOCIAL.youtube + '" target="_blank" rel="noopener" data-kx-social="post_signup">Subscribe on YouTube</a>' +
         ' for the story videos, or <a href="' + KHATAKSHETRA_SOCIAL.instagram + '" target="_blank" rel="noopener" data-kx-social="post_signup">follow on Instagram</a>.</li>' +
-      '<li><button class="kx-btn" type="button" data-kx-share="' + share + '" data-kx-share-url="https://khatakshetra.com/start">Share with one family</button></li>' +
+      '<li><button class="kx-btn" type="button" data-kx-share="' + share + '" data-kx-share-url="' + khatakshetraReferralUrl('/start') + '">Share with one family</button></li>' +
     '</ol>';
   afterEl.parentNode.insertBefore(box, afterEl.nextSibling);
   kxScrollIntoView(box, { behavior: 'smooth', block: 'nearest' });

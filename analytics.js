@@ -180,7 +180,10 @@
     },
     talapatraUnlocked: function (cardId, from) { ev('talapatra_unlocked', { card_id: cardId, source_activity: from || '' }); },
     journeyProgress: function (journeyId, node, pct) { ev('journey_progress', { journey_id: journeyId, node: node, completion_pct: pct }); },
-    kitWaitlist: function (festival, from) { ev('kit_waitlist_join', { festival: festival, source_content: from || '' }); }
+    kitWaitlist: function (festival, from) { ev('kit_waitlist_join', { festival: festival, source_content: from || '' }); },
+    // The promised unlock actually being opened — distinct from signing up for
+    // it. The gap between sign_up and starter_open is the delivery problem.
+    starterOpen: function (what, where) { ev('starter_open', { starter: what || 'festival_kits', placement: where || '' }); }
   };
 
   // Fire landing_view once per page load, and detect returning members.
@@ -246,6 +249,12 @@
     // Stamp the join so we can measure return visits and day-N retention.
     try { if (!localStorage.getItem('khatakshetra_joined_at')) localStorage.setItem('khatakshetra_joined_at', String(Date.now())); } catch (e) {}
     payload.channel = resolveChannel(attr);
+    // A signup that arrived through a member's own share link. Reported as a
+    // SEPARATE event beside sign_up (never instead of it), so the referral loop
+    // can be measured without distorting the headline conversion count.
+    if (attr.ref) {
+      try { ev('referral_signup', { cta: payload.cta, ref: attr.ref, channel: payload.channel }); } catch (e) {}
+    }
     try { if (hasGA && window.gtag) window.gtag('event', 'sign_up', payload); } catch (e) {}
     try { if (hasPH && window.posthog && window.posthog.capture) window.posthog.capture('signup', payload); } catch (e) {}
     try { if (hasPixel && window.fbq) window.fbq('track', 'Lead', { content_name: payload.cta }); } catch (e) {}

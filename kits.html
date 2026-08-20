@@ -204,6 +204,19 @@
     </div>
   </div>
 </div></section>
+<section class="band"><div class="inner kt-wrap">
+  <div class="kt-physical" style="border-style:solid;border-color:rgba(232,185,79,.4)">
+    <div class="eyebrow">Pass it on</div>
+    <h2 class="section-title" style="font-size:1.5rem">Two families, and the card pack is yours.</h2>
+    <p class="section-copy" style="font-size:.96rem">Send your link to someone whose children would enjoy this. When two of them start, the printable Talapatra card pack &mdash; eight wisdom cards to cut out and keep &mdash; unlocks for you.</p>
+    <p class="kt-fine" id="ktRefCount" style="color:#E8B94F;font-size:.95rem">Loading your link&hellip;</p>
+    <div class="kt-actions" style="margin-top:.6rem">
+      <button class="btn primary" type="button" id="ktRefWa">Send on WhatsApp</button>
+      <button class="btn" type="button" id="ktRefCopy">Copy my link</button>
+      <a class="btn" href="cards.html" data-kx-cta="kits_to_cards">See the card pack</a>
+    </div>
+  </div>
+</div></section>
 </main>
 
 <footer><a href="/">Home</a> &middot; <a href="paint.html">Colour online</a> &middot; <a href="stories.html">Stories</a> &middot; <a href="about.html">About</a></footer>
@@ -331,6 +344,9 @@
   function reveal() {
     document.getElementById('ktFormWrap').style.display = 'none';
     document.getElementById('ktDone').classList.add('is-on');
+    // The promised unlock actually being opened — the gap between sign_up and
+    // starter_open is the delivery problem, and it was previously invisible.
+    if (window.kxTrack && window.kxTrack.starterOpen) window.kxTrack.starterOpen('festival_kits', 'kits');
     try { document.getElementById('ktDone').scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch (e) {}
   }
 
@@ -379,6 +395,41 @@
         reveal();
       });
   });
+
+  // ── referral: your link, your count, the reward ──
+  (function () {
+    var url = (typeof khatakshetraReferralUrl === 'function')
+      ? khatakshetraReferralUrl('/kits') : 'https://khatakshetra.com/kits';
+    var text = 'We are doing a 10-minute family katha each evening — one story, one question, one card the children keep. Thought yours might enjoy it:';
+    var label = document.getElementById('ktRefCount');
+
+    function share() {
+      if (typeof window.kxShare === 'function') window.kxShare({ text: text, url: url });
+      else window.open('https://wa.me/?text=' + encodeURIComponent(text + ' ' + url), '_blank', 'noopener');
+    }
+    var wa = document.getElementById('ktRefWa');
+    if (wa) wa.addEventListener('click', share);
+
+    var copy = document.getElementById('ktRefCopy');
+    if (copy) copy.addEventListener('click', function () {
+      if (navigator.clipboard) navigator.clipboard.writeText(url).catch(function () {});
+      copy.textContent = 'Copied';
+      setTimeout(function () { copy.textContent = 'Copy my link'; }, 1600);
+      if (typeof trackKhatakshetraEvent === 'function') trackKhatakshetraEvent('referral_link_copied', { placement: 'kits' });
+    });
+
+    if (typeof khatakshetraReferralCount === 'function') {
+      khatakshetraReferralCount().then(function (r) {
+        var n = (r && r.referrals) || 0;
+        if (!label) return;
+        label.textContent = n >= 2
+          ? 'Unlocked — ' + n + ' families joined through you. The card pack is ready.'
+          : n + ' of 2 families joined so far.';
+      });
+    } else if (label) {
+      label.textContent = '0 of 2 families joined so far.';
+    }
+  })();
 
   // Which kit actually gets downloaded tells us which festival pulls hardest.
   Array.prototype.forEach.call(document.querySelectorAll('.kt-dl a'), function (a) {
