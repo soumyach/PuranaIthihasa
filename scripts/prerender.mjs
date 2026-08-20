@@ -702,7 +702,7 @@ function writeSitemap(entities, packBySlug, festivals, temples, stories) {
   // pages campaigns point at. These had been hand-added to sitemap.xml, which
   // meant re-running this generator silently deleted them. Declared here so
   // regeneration is lossless.
-  add('/start', '0.95'); add('/kits', '0.9'); add('/paint', '0.8');
+  add('/start', '0.95'); add('/kits', '0.9'); add('/paint', '0.8'); add('/cards', '0.6');
   add('/daily', '0.9'); add('/which-character', '0.8'); add('/paths', '0.7');
   add('/kids-games', '0.8'); add('/daily-quiz', '0.8'); add('/leaderboard', '0.6'); add('/temple-tips', '0.8');
   add('/about', '0.6'); add('/contact', '0.5');

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9NTBSLFTJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-X9NTBSLFTJ');
+  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Talapatra Card Pack - Printable Wisdom Cards | Khatakshetra</title>
+<meta name="description" content="Eight printable talapatra wisdom cards - one line of wisdom from each katha, ready to cut out and keep. Unlocked when two families join through your invitation.">
+<link rel="canonical" href="https://khatakshetra.com/cards">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Talapatra Card Pack">
+<meta property="og:description" content="Eight wisdom cards to print, cut out and keep — one from each katha.">
+<meta property="og:url" content="https://khatakshetra.com/cards">
+<meta property="og:image" content="https://khatakshetra.com/Images/home/rama.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  .cd-wrap { max-width: 1000px; margin: 0 auto; }
+  .cd-locked, .cd-open { display: none; }
+  .cd-locked.is-on, .cd-open.is-on { display: block; }
+
+  .cd-gate { border: 1px solid rgba(232,185,79,.45); border-radius: 14px;
+    background: linear-gradient(150deg, rgba(50,31,8,.9), rgba(20,11,3,.84));
+    padding: clamp(1.3rem, 3vw, 2rem); max-width: 640px; margin: 0 auto; }
+  .cd-progress { display: flex; gap: .5rem; margin: 1rem 0; }
+  .cd-pip { flex: 1; height: 8px; border-radius: 999px; background: rgba(232,185,79,.18); }
+  .cd-pip.is-on { background: linear-gradient(90deg, #E8B94F, #E07B1A); }
+  .cd-count { color: #E8B94F; font-family: 'Cinzel', serif; font-size: 1.05rem; margin: .2rem 0 0; }
+  .cd-share { display: flex; gap: .55rem; flex-wrap: wrap; margin-top: 1rem; }
+  .cd-link { display: flex; gap: .5rem; margin-top: .8rem; }
+  .cd-link input { flex: 1; min-height: 46px; padding: .6rem .8rem; font: inherit; font-size: .9rem;
+    color: #F7EBD2; background: rgba(8,3,0,.7); border: 1px solid rgba(232,185,79,.3); border-radius: 9px; }
+
+  /* the cards themselves — screen preview */
+  .cd-sheet { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 1rem; margin-top: 1.6rem; }
+  .cd-card { aspect-ratio: 3/4; border-radius: 12px; position: relative; overflow: hidden;
+    background: linear-gradient(160deg, #f4dea4, #e7c777 52%, #d6ae54);
+    border: 1px solid rgba(120,80,20,.55); color: #3a2407;
+    display: flex; flex-direction: column; justify-content: flex-end; padding: 1.1rem; }
+  .cd-card::before { content: ''; position: absolute; inset: 9px; border: 1px solid rgba(120,80,20,.4); border-radius: 8px; }
+  .cd-card .om { position: absolute; top: 10px; right: 14px; font-size: 1.2rem; color: rgba(120,80,20,.5); }
+  .cd-rar { position: absolute; top: 12px; left: 12px; font-size: .56rem; letter-spacing: .14em; text-transform: uppercase;
+    font-weight: 700; color: #fff; background: #8a6a2a; padding: .2rem .5rem; border-radius: 999px; }
+  .cd-rar.r-common { background: #6b7280; } .cd-rar.r-rare { background: #2f6fb0; } .cd-rar.r-epic { background: #7c4dbf; }
+  .cd-name { font-family: 'Cinzel', serif; font-weight: 700; font-size: 1.25rem; line-height: 1.1; }
+  .cd-sub { font-size: .8rem; color: #5a3a0a; }
+  .cd-quote { font-style: italic; font-size: .92rem; color: #43290a; margin-top: .35rem; }
+  .cd-foot { margin-top: .5rem; padding-top: .4rem; font-size: .58rem; letter-spacing: .03em;
+    color: rgba(80,52,8,.85); border-top: 1px solid rgba(120,80,20,.3); }
+
+  /* print: four cards to an A4 page, no site chrome, no ink-heavy backgrounds */
+  @media print {
+    nav, footer, .page-hero, .cd-gate, .cd-noprint { display: none !important; }
+    body { background: #fff !important; }
+    .band { padding: 0 !important; }
+    .cd-sheet { grid-template-columns: repeat(2, 1fr); gap: 8mm; margin: 0; }
+    .cd-card { background: #fff !important; border: 1px dashed #999 !important; break-inside: avoid;
+      aspect-ratio: auto; height: 118mm; color: #000; box-shadow: none !important; }
+    .cd-card .om, .cd-rar { color: #555 !important; background: none !important; }
+    .cd-sub, .cd-quote, .cd-foot { color: #333 !important; }
+  }
+</style>
+</head>
+<body>
+<nav class="nav"><a class="brand" href="/">Khatakshetra</a><div class="nav-links"><a href="daily.html">Daily</a><a href="stories.html">Stories</a><a class="keep-mobile" href="paint.html">Colour</a><a href="games.html">Play</a><a href="kits.html">Kits</a></div></nav>
+
+<header class="page-hero cd-noprint">
+  <div class="hero-inner">
+    <div class="eyebrow">A thank-you, for passing it on</div>
+    <h1>The Talapatra card pack.</h1>
+    <p class="lead">Eight wisdom cards, one from each katha &mdash; print them, cut them out, and let the children keep the ones they earn. Yours when two families have started because of you.</p>
+  </div>
+</header>
+
+<main>
+<section class="band"><div class="inner cd-wrap">
+
+  <!-- LOCKED -->
+  <div class="cd-locked" id="cdLocked">
+    <div class="cd-gate">
+      <div class="eyebrow">Invite two families</div>
+      <h2 class="section-title" style="font-size:1.4rem;margin:.1rem 0 .5rem">Two families, and the pack is yours.</h2>
+      <p class="section-copy" style="font-size:.96rem">Send your link to someone whose children would enjoy this. When two of them start their own free journey, the printable pack unlocks here.</p>
+
+      <p class="cd-count" id="cdCount">0 of 2 families joined</p>
+      <div class="cd-progress"><span class="cd-pip" id="cdPip1"></span><span class="cd-pip" id="cdPip2"></span></div>
+
+      <div class="cd-link">
+        <input type="text" id="cdUrl" readonly aria-label="Your invitation link">
+        <button class="btn" type="button" id="cdCopy">Copy</button>
+      </div>
+      <div class="cd-share">
+        <button class="btn primary" type="button" id="cdWa">Send on WhatsApp</button>
+        <a class="btn" href="kits.html">See the free kits</a>
+      </div>
+      <p class="fine" style="margin-top:.9rem">No cash, no points, no pestering. Just the pack &mdash; and one more family telling these stories.</p>
+    </div>
+  </div>
+
+  <!-- UNLOCKED -->
+  <div class="cd-open" id="cdOpen">
+    <div class="section-head cd-noprint">
+      <div class="eyebrow">Unlocked &mdash; thank you</div>
+      <h2 class="section-title" style="font-size:1.6rem">Your card pack is ready to print.</h2>
+      <p class="section-copy">Print on A4 at 100% scale, ideally on thicker paper. Cut along the dashed lines. Four cards to a page.</p>
+      <p style="margin-top:.8rem">
+        <button class="btn primary" type="button" id="cdPrint">Print the pack</button>
+        <button class="btn" type="button" id="cdShare2" style="margin-left:.5rem">Share with another family</button>
+      </p>
+    </div>
+    <div class="cd-sheet" id="cdSheet"></div>
+  </div>
+
+</div></section>
+</main>
+
+<footer class="cd-noprint"><a href="/">Home</a> &middot; <a href="kits.html">Free kits</a> &middot; <a href="daily.html">Daily katha</a> &middot; <a href="about.html">About</a></footer>
+
+<script src="analytics.js"></script>
+<script src="site.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  var SHARE_TEXT = 'We are doing a 10-minute family katha each evening — one story, one question, one card the children keep. Thought yours might enjoy it:';
+
+  function renderCards(list) {
+    var host = document.getElementById('cdSheet');
+    host.innerHTML = list.filter(function (e) { return e.card; }).map(function (e) {
+      var c = e.card;
+      return '<article class="cd-card">' +
+        '<span class="cd-rar r-' + esc(c.rarity || 'common') + '">' + esc(c.rarity || 'common') + '</span>' +
+        '<span class="om">&#2384;</span>' +
+        '<div class="cd-name">' + esc(c.title || e.deity || '') + '</div>' +
+        '<div class="cd-sub">' + esc(c.subtitle || '') + '</div>' +
+        '<div class="cd-quote">&ldquo;' + esc(c.quote || '') + '&rdquo;</div>' +
+        '<div class="cd-foot">Talapatra &middot; ' + esc(e.theme || '') + ' &middot; khatakshetra.com</div>' +
+      '</article>';
+    }).join('');
+  }
+
+  function unlock(list) {
+    document.getElementById('cdLocked').classList.remove('is-on');
+    document.getElementById('cdOpen').classList.add('is-on');
+    renderCards(list);
+    if (window.kxTrack && window.kxTrack.starterOpen) window.kxTrack.starterOpen('talapatra_card_pack', 'cards');
+  }
+
+  function lock(count) {
+    document.getElementById('cdOpen').classList.remove('is-on');
+    document.getElementById('cdLocked').classList.add('is-on');
+    document.getElementById('cdCount').textContent = count + ' of 2 families joined';
+    if (count >= 1) document.getElementById('cdPip1').classList.add('is-on');
+    if (count >= 2) document.getElementById('cdPip2').classList.add('is-on');
+  }
+
+  var url = (typeof khatakshetraReferralUrl === 'function')
+    ? khatakshetraReferralUrl('/kits') : 'https://khatakshetra.com/kits';
+  var input = document.getElementById('cdUrl');
+  if (input) input.value = url;
+
+  document.getElementById('cdCopy').addEventListener('click', function () {
+    var btn = this;
+    try { input.select(); document.execCommand('copy'); } catch (e) {}
+    if (navigator.clipboard) navigator.clipboard.writeText(url).catch(function () {});
+    btn.textContent = 'Copied';
+    setTimeout(function () { btn.textContent = 'Copy'; }, 1600);
+    if (typeof trackKhatakshetraEvent === 'function') trackKhatakshetraEvent('referral_link_copied', { placement: 'cards' });
+  });
+
+  function waShare() {
+    if (typeof window.kxShare === 'function') window.kxShare({ text: SHARE_TEXT, url: url });
+    else window.open('https://wa.me/?text=' + encodeURIComponent(SHARE_TEXT + ' ' + url), '_blank', 'noopener');
+  }
+  document.getElementById('cdWa').addEventListener('click', waShare);
+  var s2 = document.getElementById('cdShare2');
+  if (s2) s2.addEventListener('click', waShare);
+  document.getElementById('cdPrint').addEventListener('click', function () { window.print(); });
+
+  // Load the cards and the referral count together; show whichever state applies.
+  var cards = fetch('content/daily.json?v=1').then(function (r) { return r.json(); }).catch(function () { return []; });
+  var count = (typeof khatakshetraReferralCount === 'function')
+    ? khatakshetraReferralCount() : Promise.resolve({ referrals: 0 });
+
+  Promise.all([cards, count]).then(function (out) {
+    var list = out[0] || [];
+    var n = (out[1] && out[1].referrals) || 0;
+    if (n >= 2) unlock(list); else lock(n);
+  });
+})();
+</script>
+</body>
+</html>
