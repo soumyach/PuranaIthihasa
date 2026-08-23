@@ -250,7 +250,11 @@
     document.getElementById('stReveal').classList.remove('is-on');
     document.getElementById('stComplete').style.display = '';
     renderDays();
-    if (window.kxTrack) window.kxTrack.activityStarted('journey_day', e.deity);
+    if (window.kxTrack) {
+      window.kxTrack.activityStarted('journey_day', e.deity);
+      // Day 1 opening is the promised starter actually being opened.
+      if (i === 0 && window.kxTrack.starterOpen) window.kxTrack.starterOpen('family_journey', 'start');
+    }
     try { act.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch (err) {}
   }
 
