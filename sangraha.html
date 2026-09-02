@@ -62,6 +62,7 @@ function renderSangraha() {
   document.getElementById('cardGrid').innerHTML = cards.length ? cards.map((card) => `
     <article class="sangraha-card">
       <div>
+        ${(card.art || (typeof talapatraArt === 'function' ? talapatraArt(card) : '')) ? `<div class="sangraha-art"><img src="${card.art || talapatraArt(card)}" alt="${card.title || ''}" loading="lazy" onerror="this.closest('.sangraha-art').remove()"></div>` : ''}
         <div class="card-rarity ${card.rarity || 'common'}">${card.rarity || 'common'}</div>
         <h3>${card.title}</h3>
         <p><strong>${card.subtitle || 'Story Card'}</strong></p>
