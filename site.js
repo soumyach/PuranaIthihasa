@@ -88,8 +88,27 @@ function trackKhatakshetraEvent(eventName, properties) {
   } catch (e) {}
 }
 
+// Storage that cannot throw. localStorage access raises SecurityError when a
+// browser blocks storage — Safari private browsing, some in-app webviews (which
+// is exactly where Instagram and WhatsApp traffic lands). Every profile read
+// went through unguarded, so one throw broke the quiz, the colouring save and
+// the daily puzzle's moment of success. Falls back to memory: the visit still
+// works, it just is not remembered.
+var KX_MEM = {};
+var kxStore = {
+  get: function (k) {
+    try { return localStorage.getItem(k); } catch (e) { return (k in KX_MEM) ? KX_MEM[k] : null; }
+  },
+  set: function (k, v) {
+    try { localStorage.setItem(k, v); } catch (e) { KX_MEM[k] = String(v); }
+  },
+  remove: function (k) {
+    try { localStorage.removeItem(k); } catch (e) { delete KX_MEM[k]; }
+  }
+};
+
 function getKhatakshetraProfile() {
-  const existing = JSON.parse(localStorage.getItem(KHATAKSHETRA_PROFILE_KEY) || 'null');
+  const existing = JSON.parse(kxStore.get(KHATAKSHETRA_PROFILE_KEY) || 'null');
   if (existing && existing.anonymous_id) {
     existing.tracks = existing.tracks || {};
     existing.unlocks = existing.unlocks || [];
@@ -115,13 +134,13 @@ function getKhatakshetraProfile() {
     events: [],
     created_at: new Date().toISOString()
   };
-  localStorage.setItem(KHATAKSHETRA_PROFILE_KEY, JSON.stringify(created));
+  kxStore.set(KHATAKSHETRA_PROFILE_KEY, JSON.stringify(created));
   return created;
 }
 
 function saveKhatakshetraProfile(profile) {
   profile.level = getLevelForXp(profile.xp || 0);
-  localStorage.setItem(KHATAKSHETRA_PROFILE_KEY, JSON.stringify(profile));
+  kxStore.set(KHATAKSHETRA_PROFILE_KEY, JSON.stringify(profile));
   renderKhatakshetraProgressChip();
   // P1-2: if signed in, push the updated profile to Supabase (debounced).
   khatakshetraQueueProgressPush();
