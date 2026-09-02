@@ -780,3 +780,14 @@ footer a { color: var(--gold-bright); }
   .dq-clue { grid-template-columns: auto 1fr; }
   .dq-clue-tag { grid-column: 2; justify-self: start; }
 }
+
+/* The deity portrait on an earned talapatra card — in the reveal modal and in
+   the Sangraha. A card that names a deity should show them. */
+.talapatra-art {
+  width: 168px; margin: 0 auto .9rem; border-radius: 10px; overflow: hidden;
+  border: 1px solid rgba(120, 80, 20, 0.5); box-shadow: 0 12px 34px rgba(0, 0, 0, 0.45);
+}
+.talapatra-art img { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; }
+
+.sangraha-art { border-radius: 8px; overflow: hidden; margin-bottom: .7rem; border: 1px solid rgba(120, 80, 20, 0.4); }
+.sangraha-art img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
