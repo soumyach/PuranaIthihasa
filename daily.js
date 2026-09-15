@@ -338,7 +338,8 @@
           actions: [
             { label: 'Start the 7-day journey', href: 'start.html', kxCta: 'after_daily_journey' },
             { label: 'Colour today’s deity', href: 'paint.html', kxCta: 'after_daily_colour' },
-            { label: 'Free festival kits', href: 'kits.html', kxCta: 'after_daily_kits' }
+            { label: 'Free festival kits', href: 'kits.html', kxCta: 'after_daily_kits' },
+            { label: 'The Ganapati season', href: '/ganapati', kxCta: 'after_daily_season' }
           ]
         });
       } catch (e) {}

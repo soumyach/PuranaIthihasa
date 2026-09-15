@@ -206,42 +206,6 @@ function awardKhatakshetraProgress(eventName, options = {}) {
   return saveKhatakshetraProfile(profile);
 }
 
-/**
- * The deity artwork for a talapatra card. Cards carry a title (and an id like
- * "daily-ganesha-rare"), not an image, so the slug is derived and matched
- * against the eight portraits in Images/home/. Anything without a portrait
- * returns '' and the card renders exactly as before — no broken image.
- */
-var KX_CARD_ART = {
-  rama: 1, krishna: 1, durga: 1, ganesha: 1, hanuman: 1, shani: 1, saraswati: 1, narasimha: 1
-};
-var KX_CARD_ALIAS = {
-  shanidev: 'shani', shanaishchara: 'shani', saturn: 'shani',
-  vighnaharta: 'ganesha', ganapati: 'ganesha', vinayaka: 'ganesha',
-  devi: 'durga', amba: 'durga', parvati: 'durga',
-  anjaneya: 'hanuman', maruti: 'hanuman', bajrangbali: 'hanuman',
-  nrisimha: 'narasimha', saraswathi: 'saraswati', vagdevi: 'saraswati',
-  ram: 'rama', raghava: 'rama', ramachandra: 'rama',
-  govinda: 'krishna', gopala: 'krishna', madhava: 'krishna'
-};
-
-function talapatraArt(card) {
-  if (!card) return '';
-  if (card.art) return card.art;
-  var tries = [card.deity, card.title, card.id];
-  for (var i = 0; i < tries.length; i++) {
-    var raw = String(tries[i] || '').toLowerCase().replace(/[^a-z]/g, '');
-    if (!raw) continue;
-    var slug = KX_CARD_ALIAS[raw] || raw;
-    if (KX_CARD_ART[slug]) return 'Images/home/daily-' + slug + '.jpg';
-    // ids look like "daily-ganesha-rare" — find a known name inside them
-    for (var name in KX_CARD_ART) {
-      if (raw.indexOf(name) !== -1) return 'Images/home/daily-' + name + '.jpg';
-    }
-  }
-  return '';
-}
-
 function addTalapatraCard(card, profileArg) {
   if (!card || !card.id) return { profile: getKhatakshetraProfile(), isNew: false };
   const profile = profileArg || getKhatakshetraProfile();
@@ -250,7 +214,6 @@ function addTalapatraCard(card, profileArg) {
   if (!exists) {
     profile.cards.push({
       ...card,
-      art: card.art || talapatraArt(card),
       earned_at: new Date().toISOString()
     });
   }
@@ -468,10 +431,7 @@ function revealTalapatraCard(card) {
   const result = addTalapatraCard(card);
   const storedCard = result.profile.cards.find((item) => item.id === card.id) || card;
   const prize = document.getElementById('talapatraPrize');
-  const art = talapatraArt(storedCard);
   prize.innerHTML = `
-    ${art ? `<div class="talapatra-art"><img src="${art}" alt="${storedCard.title || ''}"
-       onerror="this.closest('.talapatra-art').remove()"></div>` : ''}
     <div class="card-rarity ${storedCard.rarity || 'common'}">${storedCard.rarity || 'common'}</div>
     <h2 id="cardRevealTitle">${storedCard.title}</h2>
     <h3>${storedCard.subtitle || 'Story Card'}</h3>
@@ -646,7 +606,10 @@ function injectKhatakshetraFooter() {
   if (document.querySelector('.kx-footer-links') || document.querySelector('.site-footer-links')) return;
   var links = [
     ['/', 'Home'], ['/stories', 'Stories'], ['/games', 'Play'], ['/temples', 'Temples'],
-    ['/daily', 'Daily'], ['/paint', 'Colour'], ['/kits', 'Kits'], ['/about', 'About'], ['/contact', 'Contact']
+    ['/daily', 'Daily'], ['/paint', 'Colour'], ['/kits', 'Kits'],
+    // The current season. One line to change when Ganapati becomes Navaratri.
+    ['/ganapati', 'Ganapati'],
+    ['/about', 'About'], ['/contact', 'Contact']
   ];
   var bar = document.createElement('nav');
   bar.className = 'kx-footer-links';

@@ -39,9 +39,28 @@ function escHtml(str) {
 }
 
 /** Common <head> block shared by all pages. */
-function headBlock({ title, description, canonicalUrl, ogType = 'article', extraJsonLd = '' }) {
+const SITE = 'https://khatakshetra.com';
+const OG_FALLBACK = '/Images/home/fullbleed-lamps.jpg';
+
+/**
+ * Pick the best share image available on disk. Every generated page previously
+ * shipped with NO og:image, so a shared deity/festival/story/season link
+ * rendered as a blank grey card in WhatsApp and on social — on exactly the
+ * pages we are about to push.
+ */
+function ogImageFor(candidates) {
+  for (const rel of (candidates || [])) {
+    if (!rel) continue;
+    const clean = rel.replace(/^\//, '');
+    if (fs.existsSync(path.join(ROOT, clean))) return '/' + clean;
+  }
+  return OG_FALLBACK;
+}
+
+function headBlock({ title, description, canonicalUrl, ogType = 'article', extraJsonLd = '', image = OG_FALLBACK }) {
   const safeTitle = escHtml(title);
   const safeDesc = escHtml(description);
+  const safeImage = escHtml(image.indexOf('http') === 0 ? image : SITE + image);
   return `<head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9NTBSLFTJ"></script>
@@ -64,11 +83,13 @@ function headBlock({ title, description, canonicalUrl, ogType = 'article', extra
   <meta property="og:description" content="${safeDesc}">
   <meta property="og:url" content="${canonicalUrl}">
   <meta property="og:site_name" content="Khatakshetra">
+  <meta property="og:image" content="${safeImage}">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${safeTitle}">
   <meta name="twitter:description" content="${safeDesc}">
+  <meta name="twitter:image" content="${safeImage}">
 
   <!-- Fonts (matching site) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -105,11 +126,18 @@ const SOCIAL = {
   instagram: 'https://www.instagram.com/khatakshetra/'
 };
 
+// Set in main() from seasons.json, so switching Ganapati -> Navaratri is a
+// content change, not a code change.
+let FOOTER_SEASON = null;
+
 function footerBlock() {
+  const season = FOOTER_SEASON
+    ? ` &middot; <a href="/${FOOTER_SEASON.slug}">${escHtml(FOOTER_SEASON.label)}</a>`
+    : '';
   return `<footer class="site-footer">
   <p>&copy; Khatakshetra. Exploring Puranas and Itihasa for families.</p>
   <nav class="site-footer-links" aria-label="Footer">
-    <a href="/">Home</a> &middot; <a href="/stories">Stories</a> &middot; <a href="/games">Play</a> &middot; <a href="/paint">Colour</a> &middot; <a href="/temples">Temples</a> &middot; <a href="/daily">Daily</a> &middot; <a href="/about">About</a> &middot; <a href="/contact">Contact</a>
+    <a href="/">Home</a> &middot; <a href="/stories">Stories</a> &middot; <a href="/games">Play</a> &middot; <a href="/paint">Colour</a> &middot; <a href="/temples">Temples</a> &middot; <a href="/daily">Daily</a>${season} &middot; <a href="/about">About</a> &middot; <a href="/contact">Contact</a>
   </nav>
   <nav class="site-footer-social" aria-label="Khatakshetra on social media">
     <span>Follow the stories:</span>
@@ -288,6 +316,7 @@ function buildSeasonHub(season) {
   return `<!DOCTYPE html>
 <html lang="en">
 ${headBlock({ title: pageTitle, description: metaDesc, canonicalUrl, ogType: 'website',
+  image: ogImageFor([season.ogImage]),
   extraJsonLd: [`<script type="application/ld+json">${JSON.stringify(ld)}</script>`,
                 `<script type="application/ld+json">${JSON.stringify(crumbs)}</script>`].join('\n  ') })}
 <body class="kx-season" data-kx-season="${escHtml(season.slug)}">
@@ -378,6 +407,7 @@ function buildSeasonForms(season, feature) {
   return `<!DOCTYPE html>
 <html lang="en">
 ${headBlock({ title: pageTitle, description: metaDesc, canonicalUrl, ogType: 'article',
+  image: ogImageFor([season.ogImage]),
   extraJsonLd: [`<script type="application/ld+json">${JSON.stringify(ld)}</script>`,
                 `<script type="application/ld+json">${JSON.stringify(crumbs)}</script>`].join('\n  ') })}
 <body class="kx-season" data-kx-season="${escHtml(season.slug)}">
@@ -456,6 +486,7 @@ function buildSeasonArticle(season, feature) {
   return `<!DOCTYPE html>
 <html lang="en">
 ${headBlock({ title: pageTitle, description: metaDesc, canonicalUrl, ogType: 'article',
+  image: ogImageFor([season.ogImage]),
   extraJsonLd: [`<script type="application/ld+json">${JSON.stringify(ld)}</script>`,
                 `<script type="application/ld+json">${JSON.stringify(crumbs)}</script>`].join('\n  ') })}
 <body class="kx-season" data-kx-season="${escHtml(season.slug)}">
@@ -606,7 +637,8 @@ function buildDeityPage(entity, pack) {
 
   const html = `<!DOCTYPE html>
 <html lang="en">
-${headBlock({ title: pageTitle, description: metaDesc, canonicalUrl, ogType: 'article', extraJsonLd })}
+${headBlock({ title: pageTitle, description: metaDesc, canonicalUrl, ogType: 'article', extraJsonLd,
+  image: ogImageFor([`Images/home/${slug}.jpg`, `Images/home/daily-${slug}.jpg`]) })}
 <body>
 ${navBlock()}
 <main class="deity-page">
@@ -770,7 +802,8 @@ function buildFestivalPage(festival) {
 
   const html = `<!DOCTYPE html>
 <html lang="en">
-${headBlock({ title: pageTitle, description: metaDesc, canonicalUrl, ogType: 'article', extraJsonLd })}
+${headBlock({ title: pageTitle, description: metaDesc, canonicalUrl, ogType: 'article', extraJsonLd,
+  image: ogImageFor([pack && pack.colouring && pack.colouring.length ? `Images/coloring/${pack.colouring[0].slug}.png` : '']) })}
 <body>
 ${navBlock()}
 <main class="festival-page">
@@ -1086,6 +1119,9 @@ function main() {
   const temples = readJSON('temple-guides.json');
   const stories = readJSON('stories.json');
   const seasons = fs.existsSync(path.join(CONTENT, 'seasons.json')) ? readJSON('seasons.json') : [];
+
+  // The current season also appears in every footer.
+  if (seasons.length) FOOTER_SEASON = { slug: seasons[0].slug, label: seasons[0].footerLabel || 'Ganapati' };
 
   // Register season on-ramps BEFORE the deity/festival pages render.
   for (const season of seasons) {

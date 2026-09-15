@@ -95,5 +95,28 @@ check('the content model is a LIST of seasons, not ganapati-specific',
 check('  → and features declare their own kind (forms/article)',
       season.features.every(f => ['forms','article'].includes(f.kind)));
 
+// ── DISCOVERY: can a real visitor actually reach the season? ──
+const home = fs.readFileSync('index.html','utf8');
+check('the homepage has a season band linking to /ganapati',
+      /class="strip season"/.test(home) && /href="\/ganapati"/.test(home));
+check('  → and a nav entry', /nav-links[\s\S]{0,400}href="\/ganapati"/.test(home));
+check('the festivals hub points at the season', /href="\/ganapati"/.test(fs.readFileSync('festivals.html','utf8')));
+check('the injected footer carries the season', /\['\/ganapati', 'Ganapati'\]/.test(fs.readFileSync('site.js','utf8')));
+check('the generated footer carries the season', /href="\/ganapati">Ganapati<\/a>/.test(hub));
+check('finishing the daily offers the season', /after_daily_season/.test(fs.readFileSync('daily.js','utf8')));
+
+// ── every generated page must be shareable (no blank grey card) ──
+const gen = ['ganapati/index.html','ganapati/eight-manifestations.html','ganapati/vighnaharta-vighnakarta.html',
+             'deity/ganesha.html','deity/krishna.html','festival/raksha-bandhan.html','festival/diwali.html',
+             'story/ganesha-elephant-head.html','temple/jagannath-puri.html'];
+let missing = gen.filter(f => !/og:image" content="https:\/\/khatakshetra.com\/Images\//.test(fs.readFileSync(f,'utf8')));
+check('every sampled generated page has an og:image', missing.length === 0, missing.join(', '));
+check('  → and a matching twitter:image',
+      gen.every(f => /twitter:image" content="https:\/\/khatakshetra.com\/Images\//.test(fs.readFileSync(f,'utf8'))));
+check('  → the deity page uses that deity\'s own portrait',
+      /og:image" content="[^"]*daily-ganesha\.jpg|og:image" content="[^"]*home\/ganesha\.jpg/.test(fs.readFileSync('deity/ganesha.html','utf8')));
+check('  → and a page with no portrait falls back rather than breaking',
+      /og:image" content="[^"]*fullbleed-lamps\.jpg/.test(fs.readFileSync('story/ganesha-elephant-head.html','utf8')));
+
 let fails=0; for (const [p,n,d] of results){ if(!p) fails++; console.log(`${p?'PASS':'FAIL'}  ${n}${!p&&d?'  → '+d:''}`);}
 console.log(`\n${results.length-fails}/${results.length} passed`); process.exit(fails?1:0);
