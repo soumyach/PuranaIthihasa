@@ -144,6 +144,361 @@ function joinBlock({ cta, heading, copy, button = 'Join Khatakshetra Family — 
     </section>`;
 }
 
+
+// Populated in main() before the deity/festival pages are built, so an existing
+// page can point at the season it belongs to without a parallel URL tree.
+const ONRAMP = { deity: {}, festival: {} };
+
+// ── SEASONS (Ganapati pilot; Navaratri reuses these unchanged) ────────────────
+//
+// The provenance system is the point of this template. Khatakshetra's promise is
+// "source-aware stories", so the interface has to SHOW provenance rather than
+// bury it in a footer. Three classes:
+//   mula      — what a text actually says (paraphrased), with the edition named
+//   tradition — received or later tradition, labelled as such
+//   drishti   — our own reading, never passed off as scripture
+//
+// Citation honesty rule: a source renders a LINK only when verified === true.
+// Unverified sources render at khaṇḍa (book) level with the edition named and an
+// explicit note, because chapter numbering differs between witnesses and a wrong
+// verse locator would destroy the credibility the whole season rests on.
+
+const SOURCE_CLASS = {
+  mula: { label: 'Mūla · what the text says', cls: 'sc-mula' },
+  tradition: { label: 'Tradition · received telling', cls: 'sc-tradition' },
+  drishti: { label: 'Drishti · our reading', cls: 'sc-drishti' }
+};
+
+function sourceBadge(kind) {
+  const meta = SOURCE_CLASS[kind];
+  if (!meta) return '';
+  return `<span class="kx-sc ${meta.cls}">${escHtml(meta.label)}</span>`;
+}
+
+/** The exact provenance of a claim: text, locator, edition, and a link if checked. */
+function provenancePanel(sources, opts = {}) {
+  const list = (sources || []).filter(Boolean);
+  if (!list.length) return '';
+  const rows = list.map((r) => {
+    const link = (r.verified && r.url)
+      ? ` <a href="${escHtml(r.url)}" target="_blank" rel="noopener" data-kx-source="${escHtml(r.text || '')}">Read the source &rarr;</a>`
+      : '';
+    const flag = r.verified
+      ? '<span class="kx-prov-ok" title="Checked against the linked edition">checked</span>'
+      : '<span class="kx-prov-pending" title="Cited at book level; verse locator not yet checked against the edition">book level</span>';
+    return `<li>
+        <strong>${escHtml(r.text || '')}</strong>${r.locator ? ` &mdash; ${escHtml(r.locator)}` : ''} ${flag}
+        ${r.edition ? `<div class="kx-prov-ed">${escHtml(r.edition)}</div>` : ''}
+        ${r.note ? `<div class="kx-prov-note">${escHtml(r.note)}</div>` : ''}
+        ${link ? `<div class="kx-prov-link">${link}</div>` : ''}
+      </li>`;
+  }).join('\n      ');
+  return `<aside class="kx-prov">
+      <p class="kx-prov-h">${escHtml(opts.heading || 'Where this comes from')}</p>
+      <ul>
+      ${rows}
+      </ul>
+    </aside>`;
+}
+
+function seasonHero(season, sub) {
+  return `<header class="kx-season-hero">
+      <p class="kx-eyebrow">${escHtml(season.eyebrow || 'Khatakshetra · Season')}</p>
+      <h1>${escHtml(sub ? sub.title : season.title)}</h1>
+      <p class="kx-season-thesis">${escHtml(sub ? sub.hook : season.thesis)}</p>
+      ${sub ? `<p class="kx-season-back"><a href="/${escHtml(season.slug)}">&larr; ${escHtml(season.title)}</a></p>` : ''}
+    </header>`;
+}
+
+function seasonNav(season, currentSlug) {
+  const items = season.features.map((f) => {
+    const here = f.slug === currentSlug;
+    return here
+      ? `<span class="is-here">${escHtml(f.navTitle || f.title)}</span>`
+      : `<a href="/${escHtml(season.slug)}/${escHtml(f.slug)}">${escHtml(f.navTitle || f.title)}</a>`;
+  }).join('');
+  return `<nav class="kx-season-nav" aria-label="${escHtml(season.title)}">
+      <a href="/${escHtml(season.slug)}"${currentSlug ? '' : ' class="is-here"'}>Season home</a>${items}
+    </nav>`;
+}
+
+function sourceShelf(season) {
+  if (!season.sourceShelf || !season.sourceShelf.length) return '';
+  const rows = season.sourceShelf.map((r) => `<li>
+        <strong>${escHtml(r.text)}</strong>
+        ${r.verified && r.url ? ` <a href="${escHtml(r.url)}" target="_blank" rel="noopener" data-kx-source="${escHtml(r.text)}">open &rarr;</a>` : ''}
+        <div class="kx-prov-ed">${escHtml(r.edition || '')}</div>
+        <div class="kx-prov-note">${escHtml(r.use || '')}</div>
+      </li>`).join('\n        ');
+  return `<section class="kx-shelf">
+      <h2>The source shelf</h2>
+      <p class="kx-shelf-note">${escHtml(season.editionNote || '')}</p>
+      <ul>
+        ${rows}
+      </ul>
+    </section>`;
+}
+
+function buildSeasonHub(season) {
+  const canonicalUrl = `https://khatakshetra.com/${season.slug}`;
+  const pageTitle = season.seoTitle || season.title;
+  const metaDesc = truncate(season.seoDescription || season.thesis, 155);
+
+  const ld = {
+    '@context': 'https://schema.org', '@type': 'CollectionPage',
+    name: pageTitle, description: metaDesc, url: canonicalUrl,
+    isPartOf: { '@type': 'WebSite', name: 'Khatakshetra', url: 'https://khatakshetra.com/' }
+  };
+  const crumbs = {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://khatakshetra.com/' },
+      { '@type': 'ListItem', position: 2, name: season.title, item: canonicalUrl }
+    ]
+  };
+
+  const cards = season.features.map((f) => `<a class="kx-feat" href="/${escHtml(season.slug)}/${escHtml(f.slug)}">
+        <h3>${escHtml(f.navTitle || f.title)}</h3>
+        <p>${escHtml(f.hook || '')}</p>
+        <span class="kx-feat-go">Read it &rarr;</span>
+      </a>`).join('\n      ');
+
+  const eight = season.features.find((f) => f.kind === 'forms');
+  const rail = eight ? `<section class="kx-rail-wrap">
+      <h2>The eight, at a glance</h2>
+      <p class="kx-rail-note">${escHtml(eight.caution || '')}</p>
+      <ol class="kx-rail">
+        ${eight.forms.map((f) => `<li><a href="/${escHtml(season.slug)}/${escHtml(eight.slug)}#${escHtml(f.slug)}">
+          <span class="kx-rail-form">${escHtml(f.form)}</span>
+          <span class="kx-rail-vs">confronts</span>
+          <span class="kx-rail-asura">${escHtml(f.asura)}</span>
+          <span class="kx-rail-obs">${escHtml(f.obstacle)} &middot; ${escHtml(f.gloss)}</span>
+        </a></li>`).join('\n        ')}
+      </ol>
+    </section>` : '';
+
+  const soon = (season.comingSoon || []).length ? `<section class="kx-soon">
+      <h2>Still being written</h2>
+      <p class="kx-shelf-note">We would rather publish four pages we can stand behind than eight we cannot.</p>
+      <ul>
+        ${season.comingSoon.map((c) => `<li><strong>${escHtml(c.title)}</strong><div>${escHtml(c.note)}</div></li>`).join('\n        ')}
+      </ul>
+    </section>` : '';
+
+  return `<!DOCTYPE html>
+<html lang="en">
+${headBlock({ title: pageTitle, description: metaDesc, canonicalUrl, ogType: 'website',
+  extraJsonLd: [`<script type="application/ld+json">${JSON.stringify(ld)}</script>`,
+                `<script type="application/ld+json">${JSON.stringify(crumbs)}</script>`].join('\n  ') })}
+<body class="kx-season" data-kx-season="${escHtml(season.slug)}">
+${navBlock()}
+<main class="season-page">
+${seasonHero(season)}
+${seasonNav(season, '')}
+
+  <section class="kx-season-intro">
+    <p>${escHtml(season.intro || '')}</p>
+    <p class="kx-season-legend">
+      ${sourceBadge('mula')} ${sourceBadge('tradition')} ${sourceBadge('drishti')}
+    </p>
+  </section>
+
+  <section class="kx-feats">
+    <h2>Start here</h2>
+    <div class="kx-feat-grid">
+      ${cards}
+    </div>
+  </section>
+
+${rail}
+
+${joinBlock({
+    cta: `season_${season.slug}`,
+    heading: 'Get one of these a week, free',
+    copy: 'Join Khatakshetra Family and we will send one story at a time — with the sources named, a question to ask your children, and a page they can colour.'
+  })}
+
+${soon}
+
+${sourceShelf(season)}
+</main>
+${footerBlock()}
+</body>
+</html>`;
+}
+
+function buildSeasonForms(season, feature) {
+  const canonicalUrl = `https://khatakshetra.com/${season.slug}/${feature.slug}`;
+  const pageTitle = feature.seoTitle || feature.title;
+  const metaDesc = truncate(feature.seoDescription || feature.hook, 155);
+
+  const ld = {
+    '@context': 'https://schema.org', '@type': 'Article',
+    headline: pageTitle, description: metaDesc, url: canonicalUrl,
+    publisher: { '@type': 'Organization', name: 'Khatakshetra', url: 'https://khatakshetra.com' },
+    mainEntityOfPage: canonicalUrl
+  };
+  const crumbs = {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://khatakshetra.com/' },
+      { '@type': 'ListItem', position: 2, name: season.title, item: `https://khatakshetra.com/${season.slug}` },
+      { '@type': 'ListItem', position: 3, name: feature.navTitle || feature.title, item: canonicalUrl }
+    ]
+  };
+
+  // <details> rather than a JS accordion: keyboard-accessible, works with JS
+  // off, and deep-linkable. One page now; each form can become its own /story/
+  // page later without changing this data.
+  const forms = feature.forms.map((f, i) => `<details class="kx-form" id="${escHtml(f.slug)}" data-kx-form="${escHtml(f.slug)}">
+        <summary>
+          <span class="kx-form-n">${i + 1}</span>
+          <span class="kx-form-head">
+            <span class="kx-form-name">${escHtml(f.form)}</span>
+            <span class="kx-form-vs">confronts ${escHtml(f.asura)}</span>
+            <span class="kx-form-obs">${escHtml(f.obstacle)} &mdash; ${escHtml(f.gloss)}</span>
+          </span>
+          <span class="kx-form-khanda">Khaṇḍa ${escHtml(String(f.khanda))}</span>
+        </summary>
+        <div class="kx-form-body">
+          <p class="kx-form-hook">${escHtml(f.hook || '')}</p>
+          <div class="kx-claim">
+            ${sourceBadge('mula')}
+            <p>${escHtml(f.mula || '')}</p>
+          </div>
+          ${f.note ? `<p class="kx-form-note"><strong>A distinction we keep:</strong> ${escHtml(f.note)}</p>` : ''}
+          <div class="kx-claim">
+            ${sourceBadge('drishti')}
+            <p>${escHtml(f.drishti || '')}</p>
+          </div>
+          ${f.visual ? `<p class="kx-form-visual"><strong>How we picture it:</strong> ${escHtml(f.visual)}</p>` : ''}
+        </div>
+      </details>`).join('\n      ');
+
+  return `<!DOCTYPE html>
+<html lang="en">
+${headBlock({ title: pageTitle, description: metaDesc, canonicalUrl, ogType: 'article',
+  extraJsonLd: [`<script type="application/ld+json">${JSON.stringify(ld)}</script>`,
+                `<script type="application/ld+json">${JSON.stringify(crumbs)}</script>`].join('\n  ') })}
+<body class="kx-season" data-kx-season="${escHtml(season.slug)}">
+${navBlock()}
+<main class="season-page">
+${seasonHero(season, feature)}
+${seasonNav(season, feature.slug)}
+
+  <section class="kx-season-intro">
+    <div class="kx-claim">
+      ${sourceBadge('mula')}
+      <p>${escHtml(feature.intro || '')}</p>
+    </div>
+    ${feature.caution ? `<p class="kx-caution"><strong>What we do not claim:</strong> ${escHtml(feature.caution)}</p>` : ''}
+    ${provenancePanel(feature.sources)}
+  </section>
+
+  <section class="kx-forms">
+    <h2>The eight manifestations</h2>
+    <p class="kx-shelf-note">Open any one. Each has the story as the khaṇḍa tells it, and our reading kept visibly separate.</p>
+    <div class="kx-forms-list">
+      ${forms}
+    </div>
+  </section>
+
+  ${feature.pattern ? `<section class="kx-pattern">
+    <h2>What the eight share</h2>
+    <div class="kx-claim">
+      ${sourceBadge('drishti')}
+      <p>${escHtml(feature.pattern)}</p>
+    </div>
+  </section>` : ''}
+
+${joinBlock({
+    cta: `season_${season.slug}_${feature.slug}`,
+    heading: 'One story a week, with the sources',
+    copy: 'Join free and we will send these one at a time, so the eight are not a wall of text — with a question to ask at the table.'
+  })}
+
+${sourceShelf(season)}
+</main>
+${footerBlock()}
+</body>
+</html>`;
+}
+
+function buildSeasonArticle(season, feature) {
+  const canonicalUrl = `https://khatakshetra.com/${season.slug}/${feature.slug}`;
+  const pageTitle = feature.seoTitle || feature.title;
+  const metaDesc = truncate(feature.seoDescription || feature.hook, 155);
+
+  const ld = {
+    '@context': 'https://schema.org', '@type': 'Article',
+    headline: pageTitle, description: metaDesc, url: canonicalUrl,
+    publisher: { '@type': 'Organization', name: 'Khatakshetra', url: 'https://khatakshetra.com' },
+    mainEntityOfPage: canonicalUrl
+  };
+  const crumbs = {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://khatakshetra.com/' },
+      { '@type': 'ListItem', position: 2, name: season.title, item: `https://khatakshetra.com/${season.slug}` },
+      { '@type': 'ListItem', position: 3, name: feature.navTitle || feature.title, item: canonicalUrl }
+    ]
+  };
+
+  const sections = (feature.sections || []).map((sec) => `<section class="kx-sec">
+        <h2>${escHtml(sec.heading)}</h2>
+        <div class="kx-claim">
+          ${sourceBadge(sec.sourceClass)}
+          <p>${escHtml(sec.body)}</p>
+        </div>
+        ${provenancePanel(sec.sources, { heading: 'Exact source' })}
+      </section>`).join('\n      ');
+
+  return `<!DOCTYPE html>
+<html lang="en">
+${headBlock({ title: pageTitle, description: metaDesc, canonicalUrl, ogType: 'article',
+  extraJsonLd: [`<script type="application/ld+json">${JSON.stringify(ld)}</script>`,
+                `<script type="application/ld+json">${JSON.stringify(crumbs)}</script>`].join('\n  ') })}
+<body class="kx-season" data-kx-season="${escHtml(season.slug)}">
+${navBlock()}
+<main class="season-page">
+${seasonHero(season, feature)}
+${seasonNav(season, feature.slug)}
+
+  <section class="kx-season-intro">
+    <p class="kx-lede">${escHtml(feature.intro || '')}</p>
+  </section>
+
+      ${sections}
+
+${joinBlock({
+    cta: `season_${season.slug}_${feature.slug}`,
+    heading: 'The stories, with their sources',
+    copy: 'Join Khatakshetra Family free. One story at a time, the text it comes from named every time, and a question worth asking your children.'
+  })}
+
+${sourceShelf(season)}
+</main>
+${footerBlock()}
+</body>
+</html>`;
+}
+
+/** '' when there is no season for this page — so pages without one are byte-identical. */
+function onRampFor(kind, slug) {
+  const banner = ONRAMP[kind] && ONRAMP[kind][slug];
+  return banner ? `\n\n    ${banner}` : '';
+}
+
+/** A banner pointing an existing deity/festival page at the season it belongs to. */
+function seasonOnRamp(season, label) {
+  return `<section class="kx-onramp">
+      <p class="kx-eyebrow">Season</p>
+      <h2>${escHtml(season.title)}</h2>
+      <p>${escHtml(season.thesis)}</p>
+      <p><a class="kx-btn kx-btn-primary" href="/${escHtml(season.slug)}" data-kx-cta="onramp_${escHtml(label)}">Enter the season &rarr;</a></p>
+    </section>`;
+}
+
 // ── DEITY PAGES ───────────────────────────────────────────────────────────────
 
 function buildDeityPage(entity, pack) {
@@ -273,7 +628,7 @@ ${navBlock()}
       </ul>
     </section>` : ''}
 
-    ${packSection}
+    ${packSection}${onRampFor('deity', slug)}
 
     ${joinBlock({
       cta: `deity_${slug}`,
@@ -440,7 +795,7 @@ ${packSection}
         ${kitCta ? `<li><a href="/kits?kit=${escHtml(kitCta)}">See the ${escHtml(title)} keepsake kit</a></li>` : ''}
         <li><a href="/festivals">Browse all festivals</a></li>
       </ul>
-    </section>
+    </section>${onRampFor('festival', slug)}
 
     ${joinBlock({
       cta: `festival_${slug}`,
@@ -692,7 +1047,7 @@ ${footerBlock()}
 
 // ── SITEMAP ───────────────────────────────────────────────────────────────────
 
-function writeSitemap(entities, packBySlug, festivals, temples, stories) {
+function writeSitemap(entities, packBySlug, festivals, temples, stories, seasons = []) {
   const base = 'https://khatakshetra.com';
   const urls = [];
   const add = (loc, priority) => urls.push(`  <url><loc>${base}${loc}</loc><priority>${priority}</priority></url>`);
@@ -714,6 +1069,10 @@ function writeSitemap(entities, packBySlug, festivals, temples, stories) {
   festivals.forEach(f => add(`/festival/${f.slug}`, '0.8'));
   temples.forEach(t => add(`/temple/${t.slug}`, '0.8'));
   stories.forEach(s => add(`/story/${s.slug}`, '0.7'));
+  seasons.forEach(se => {
+    add(`/${se.slug}`, '0.9');
+    (se.features || []).forEach(f => add(`/${se.slug}/${f.slug}`, '0.8'));
+  });
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`;
   fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), xml, 'utf8');
 }
@@ -726,6 +1085,13 @@ function main() {
   const festivals = readJSON('festival-pages-2026.json');
   const temples = readJSON('temple-guides.json');
   const stories = readJSON('stories.json');
+  const seasons = fs.existsSync(path.join(CONTENT, 'seasons.json')) ? readJSON('seasons.json') : [];
+
+  // Register season on-ramps BEFORE the deity/festival pages render.
+  for (const season of seasons) {
+    for (const d of (season.onRamps && season.onRamps.deities) || []) ONRAMP.deity[d] = seasonOnRamp(season, 'deity');
+    for (const f of (season.onRamps && season.onRamps.festivals) || []) ONRAMP.festival[f] = seasonOnRamp(season, 'festival');
+  }
 
   // Build slug→pack map
   const packBySlug = {};
@@ -785,14 +1151,29 @@ function main() {
     storyCount++;
   }
 
+  // Season pages
+  let seasonCount = 0;
+  for (const season of seasons) {
+    const dir = path.join(ROOT, season.slug);
+    ensureDir(dir);
+    fs.writeFileSync(path.join(dir, 'index.html'), buildSeasonHub(season), 'utf8');
+    seasonCount++;
+    for (const feature of season.features || []) {
+      const html = feature.kind === 'forms' ? buildSeasonForms(season, feature) : buildSeasonArticle(season, feature);
+      fs.writeFileSync(path.join(dir, `${feature.slug}.html`), html, 'utf8');
+      seasonCount++;
+    }
+  }
+
   // Sitemap: covers static pages + all generated entity/story pages.
-  writeSitemap(entities, packBySlug, festivals, temples, stories);
+  writeSitemap(entities, packBySlug, festivals, temples, stories, seasons);
 
   console.log(`Done.`);
   console.log(`  Deity pages:   ${deityCount}`);
   console.log(`  Festival pages: ${festivalCount}`);
   console.log(`  Temple pages:   ${templeCount}`);
   console.log(`  Story pages:    ${storyCount}`);
+  console.log(`  Season pages:   ${seasonCount}`);
   console.log(`  Skipped:        ${skipped.length}`);
   console.log(`  sitemap.xml written.`);
   if (skipped.length) console.log(`  Skipped list:  ${skipped.join('; ')}`);

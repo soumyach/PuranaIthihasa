@@ -875,6 +875,29 @@ function wireKhatakshetraSocialClicks() {
   }, true);
 }
 
+// Season pages: measure whether people actually open the stories and click
+// through to the sources. "Story -> source click rate" is the signal that tells
+// us whether source-first publishing is worth the work.
+function wireKhatakshetraSeason() {
+  var season = document.body && document.body.getAttribute('data-kx-season');
+  if (!season) return;
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-kx-form]'), function (el) {
+    el.addEventListener('toggle', function () {
+      if (!el.open) return;
+      trackKhatakshetraEvent('story_open', { season: season, story_slug: el.getAttribute('data-kx-form'), source_class: 'mula' });
+    });
+  });
+
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('[data-kx-source]') : null;
+    if (!a) return;
+    trackKhatakshetraEvent('source_open', { season: season, text: a.getAttribute('data-kx-source') || '', href: a.getAttribute('href') || '' });
+  }, true);
+
+  trackKhatakshetraEvent('season_hub_view', { season: season, page: location.pathname });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   ensureKhatakshetraShell();
   renderKhatakshetraProgressChip();
@@ -883,4 +906,5 @@ document.addEventListener('DOMContentLoaded', () => {
   injectKhatakshetraFooter();
   wireKhatakshetraInlineForms();
   wireKhatakshetraSocialClicks();
+  wireKhatakshetraSeason();
 });
