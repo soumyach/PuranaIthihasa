@@ -81,6 +81,15 @@
   .st-tala .nm { font-family: 'Cinzel', serif; font-weight: 700; font-size: 1.5rem; color: #3a2407; }
   .st-tala .sb { font-size: .85rem; color: #5a3a0a; }
   .st-tala .qt { font-style: italic; font-size: .95rem; color: #43290a; margin-top: .4rem; }
+  /* the deity portrait, so an earned card shows WHO it is — not just words */
+  .st-tala { padding: 0; }
+  .st-tala-art { position: relative; height: 54%; margin: 10px 10px 0; border-radius: 8px 8px 0 0;
+    background-color: #2a1a06; background-position: center 20%; background-size: cover; background-repeat: no-repeat; }
+  .st-tala-art::after { content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 46%;
+    background: linear-gradient(180deg, rgba(233,202,123,0), #ead091 88%); }
+  .st-tala-art.is-empty { display: none; }
+  .st-tala-body { position: relative; z-index: 2; flex: 1; padding: .4rem 1.3rem 1.3rem;
+    display: flex; flex-direction: column; justify-content: flex-end; }
   .st-next { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: 1.2rem; }
 
   @media (max-width: 620px) { .st-days { grid-template-columns: repeat(4, 1fr); } }
@@ -156,11 +165,14 @@
     <button class="btn primary" type="button" id="stComplete">We talked about it &mdash; unlock the card</button>
 
     <div class="st-reveal" id="stReveal">
-      <div class="st-tala">
+      <div class="st-tala" id="stTala">
+        <div class="st-tala-art" id="stTalaArt"></div>
         <span class="rar" id="stRar">rare</span><span class="om">&#2384;</span>
-        <div class="nm" id="stCardName"></div>
-        <div class="sb" id="stCardSub"></div>
-        <div class="qt" id="stCardQuote"></div>
+        <div class="st-tala-body">
+          <div class="nm" id="stCardName"></div>
+          <div class="sb" id="stCardSub"></div>
+          <div class="qt" id="stCardQuote"></div>
+        </div>
       </div>
       <p class="section-copy" id="stLesson" style="font-size:.98rem"></p>
       <div class="st-next">
@@ -279,6 +291,13 @@
     state.day = Math.min(i + 1, DAYS - 1);
     save();
     var c = e.card || {};
+    // The portrait for this card — same eight deity images the homepage uses.
+    var stArt = document.getElementById('stTalaArt');
+    var stArtUrl = (typeof talapatraArt === 'function') ? talapatraArt(Object.assign({ deity: e.deity }, c)) : '';
+    if (stArt) {
+      if (stArtUrl) { stArt.style.backgroundImage = 'url("' + stArtUrl + '")'; stArt.classList.remove('is-empty'); }
+      else { stArt.classList.add('is-empty'); }
+    }
     document.getElementById('stCardName').textContent = c.title || e.deity;
     document.getElementById('stCardSub').textContent = c.subtitle || '';
     document.getElementById('stCardQuote').textContent = c.quote ? '“' + c.quote + '”' : '';

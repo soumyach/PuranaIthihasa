@@ -621,6 +621,42 @@
         var card = document.getElementById('todayCard');
         if (!card) return;
 
+        // Re-check when the tab is looked at again, when it comes back from the
+        // back/forward cache, and when another tab writes the profile. Solving
+        // on /daily in one tab used to leave the homepage sealed in the other
+        // until a manual reload.
+        if (!window.__kxSealWatch) {
+          window.__kxSealWatch = true;
+          var recheck = function () {
+            var r = todayRecord();
+            if (r && r.won === true && card.classList.contains('is-sealed')) apply(true);
+          };
+          document.addEventListener('visibilitychange', function () {
+            if (!document.hidden) recheck();
+          });
+          window.addEventListener('pageshow', recheck);
+          window.addEventListener('storage', function (ev) {
+            if (!ev || !ev.key || ev.key === 'khatakshetra_profile') recheck();
+          });
+        }
+
+        function apply(isSolved) {
+          if (!isSolved) return;
+          var deity = (e.deity || '').toLowerCase().replace(/[^a-z]/g, '');
+          var known = ['rama', 'krishna', 'durga', 'ganesha', 'hanuman', 'shani', 'saraswati', 'narasimha'];
+          card.className = 'talapatra is-revealed' + (known.indexOf(deity) !== -1 ? ' d-' + deity : '');
+          var nm = document.getElementById('todayDeity');
+          if (nm) nm.classList.remove('is-masked');
+          set('todayDeity', c.title || e.deity || '');
+          set('todaySub', c.subtitle || '');
+          if (c.quote) set('todayQuote', '\u201c' + c.quote + '\u201d');
+          set('todayTitle', e.kathaTitle || '');
+          set('todayTeaser', e.teaser || '');
+          set('todayFoot', 'Talapatra card \u00b7 collected ' + t);
+          set('todayStatus', 'Solved today \u2014 this card is yours. A new katha unseals tomorrow.');
+          set('todayCtaLabel', 'See your streak');
+        }
+
         if (!solved) {
           // Played today and ran out of guesses: they've already seen the answer on
           // /daily, so don't prompt them to guess again — but the card isn't earned.
@@ -632,17 +668,7 @@
         }
 
         // Solved today — unseal the card and show the darshan they earned.
-        var deity = (e.deity || '').toLowerCase().replace(/[^a-z]/g, '');
-        var known = ['rama', 'krishna', 'durga', 'ganesha', 'hanuman', 'shani', 'saraswati', 'narasimha'];
-        card.className = 'talapatra is-revealed' + (known.indexOf(deity) !== -1 ? ' d-' + deity : '');
-        var name = document.getElementById('todayDeity');
-        if (name) name.classList.remove('is-masked');
-        set('todayDeity', c.title || e.deity || '');
-        set('todaySub', c.subtitle || '');
-        if (c.quote) set('todayQuote', '“' + c.quote + '”');
-        set('todayFoot', 'Talapatra card · collected ' + t);
-        set('todayStatus', 'Solved today — this card is yours. A new katha unseals tomorrow.');
-        set('todayCtaLabel', 'See your streak');
+        apply(true);
       })
       .catch(function () {});
   })();
