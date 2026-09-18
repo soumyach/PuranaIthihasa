@@ -118,5 +118,17 @@ check('  → the deity page uses that deity\'s own portrait',
 check('  → and a page with no portrait falls back rather than breaking',
       /og:image" content="[^"]*fullbleed-lamps\.jpg/.test(fs.readFileSync('story/ganesha-elephant-head.html','utf8')));
 
+// ── artwork: referenced now, degrades until the files are uploaded ──
+check('each of the eight shows a form portrait', (eight.match(/-form\.jpg/g)||[]).length === 8);
+check('  → and its adversary', (eight.match(/-asura\.jpg/g)||[]).length === 8);
+check('  → every image removes itself if the file is missing',
+      (eight.match(/onerror="this\.closest\('figure'\)\.remove\(\)"/g)||[]).length === 16,
+      String((eight.match(/onerror=/g)||[]).length));
+check('the hub rail carries thumbnails that also degrade',
+      (hub.match(/kx-rail-art/g)||[]).length === 8 && /onerror="this\.remove\(\)"/.test(hub));
+check('art paths follow the slug convention',
+      /\/Images\/ganapati\/vakratunda-matsarasura-form\.jpg/.test(eight) &&
+      /\/Images\/ganapati\/dhumravarna-ahamkarasura-asura\.jpg/.test(eight));
+
 let fails=0; for (const [p,n,d] of results){ if(!p) fails++; console.log(`${p?'PASS':'FAIL'}  ${n}${!p&&d?'  → '+d:''}`);}
 console.log(`\n${results.length-fails}/${results.length} passed`); process.exit(fails?1:0);

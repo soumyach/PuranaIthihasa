@@ -297,6 +297,8 @@ function buildSeasonHub(season) {
       <p class="kx-rail-note">${escHtml(eight.caution || '')}</p>
       <ol class="kx-rail">
         ${eight.forms.map((f) => `<li><a href="/${escHtml(season.slug)}/${escHtml(eight.slug)}#${escHtml(f.slug)}">
+          <img class="kx-rail-art" src="/Images/ganapati/${escHtml(f.slug)}-form.jpg" alt=""
+            loading="lazy" onerror="this.remove()">
           <span class="kx-rail-form">${escHtml(f.form)}</span>
           <span class="kx-rail-vs">confronts</span>
           <span class="kx-rail-asura">${escHtml(f.asura)}</span>
@@ -390,6 +392,16 @@ function buildSeasonForms(season, feature) {
           <span class="kx-form-khanda">Khaṇḍa ${escHtml(String(f.khanda))}</span>
         </summary>
         <div class="kx-form-body">
+          <!-- Art is referenced unconditionally and removes itself if the file
+               is not there yet, so the page is correct before and after upload. -->
+          <div class="kx-form-art">
+            <figure><img src="/Images/ganapati/${escHtml(f.slug)}-form.jpg" alt="${escHtml(f.form)}"
+              loading="lazy" onerror="this.closest('figure').remove()">
+              <figcaption>${escHtml(f.form)}</figcaption></figure>
+            <figure><img src="/Images/ganapati/${escHtml(f.slug)}-asura.jpg" alt="${escHtml(f.asura)}"
+              loading="lazy" onerror="this.closest('figure').remove()">
+              <figcaption>${escHtml(f.asura)}</figcaption></figure>
+          </div>
           <p class="kx-form-hook">${escHtml(f.hook || '')}</p>
           <div class="kx-claim">
             ${sourceBadge('mula')}
