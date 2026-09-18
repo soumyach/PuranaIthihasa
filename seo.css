@@ -319,3 +319,74 @@ ul:not(.key-facts):not(.cta-links):not(.related-links) { padding-left: 1.2rem; }
   .kx-form summary { grid-template-columns: auto 1fr; }
   .kx-form-khanda { grid-column: 2; }
 }
+
+/* ── Season challenge (season-game.js) ───────────────────────────────────────
+   Tap-to-pair rather than drag: works on touch, with a keyboard, and with a
+   screen reader. Every answer shows where it comes from, like the articles. */
+.kg { margin: 0 0 2rem; }
+.kg-card {
+  padding: 1.4rem 1.4rem 1.5rem; border: 1px solid var(--seo-line);
+  border-radius: 16px; background: var(--seo-panel);
+}
+.kg-eyebrow { margin: 0 0 .4rem; font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; color: var(--seo-gold); }
+.kg-round-title { font-family: 'Cinzel', serif; color: #fff; font-size: 1.5rem; margin: 0 0 .5rem; }
+.kg-blurb { color: var(--seo-muted); margin: 0 0 1rem; }
+.kg-rounds { margin: 0 0 1.3rem; padding-left: 1.2rem; color: var(--seo-ink); display: grid; gap: .45rem; }
+.kg-rounds strong { color: var(--seo-gold); }
+
+.kg-prog { display: flex; gap: .35rem; margin: 0 0 1.2rem; }
+.kg-prog-step { flex: 1; height: 5px; border-radius: 999px; background: rgba(232,185,79,.16); }
+.kg-prog-step.is-now { background: linear-gradient(90deg, #E8B94F, #E07B1A); }
+.kg-prog-step.is-done { background: rgba(111,207,151,.65); }
+
+.kg-qn { font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--seo-muted); margin: 0 0 .4rem; }
+.kg-q { font-size: 1.2rem; line-height: 1.5; color: var(--seo-ink); margin: 0 0 1.1rem; }
+.kg-choices { display: grid; gap: .55rem; }
+.kg-choice {
+  text-align: left; padding: .85rem 1rem; font: inherit; font-size: 1rem; cursor: pointer;
+  color: var(--seo-ink); background: rgba(8,3,0,.45);
+  border: 1px solid var(--seo-line); border-radius: 11px; transition: border-color .15s ease, background .15s ease;
+}
+.kg-choice:hover:not(:disabled) { border-color: var(--seo-gold); background: rgba(232,185,79,.08); }
+.kg-choice:focus-visible { outline: 2px solid var(--seo-gold); outline-offset: 2px; }
+.kg-choice:disabled { cursor: default; }
+.kg-choice.is-right { border-color: #6fcf97; background: rgba(111,207,151,.14); color: #d8f5e4; }
+.kg-choice.is-wrong { border-color: rgba(190,80,60,.8); background: rgba(190,80,60,.14); }
+
+.kg-after { margin-top: 1.1rem; padding-top: 1rem; border-top: 1px solid var(--seo-line); }
+.kg-after[hidden] { display: none; }
+.kg-verdict { margin: 0 0 .4rem; font-family: 'Cinzel', serif; font-size: 1.05rem; }
+.kg-verdict.is-right { color: #8fe0b0; }
+.kg-verdict.is-wrong { color: #f0a08c; }
+.kg-why { margin: 0 0 .5rem; color: var(--seo-ink); line-height: 1.65; }
+.kg-src { margin: 0 0 1rem; font-size: .86rem; color: var(--seo-muted); font-style: italic; }
+
+/* match the eight */
+.kg-match { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+.kg-col { display: grid; gap: .45rem; align-content: start; }
+.kg-col-h { margin: 0 0 .2rem; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--seo-gold); }
+.kg-tile {
+  display: grid; gap: .1rem; text-align: left; padding: .7rem .8rem; font: inherit; cursor: pointer;
+  color: var(--seo-ink); background: rgba(8,3,0,.45);
+  border: 1px solid var(--seo-line); border-radius: 10px; min-height: 52px;
+}
+.kg-tile:hover:not(:disabled) { border-color: var(--seo-gold); }
+.kg-tile:focus-visible { outline: 2px solid var(--seo-gold); outline-offset: 2px; }
+.kg-tile-sub { font-size: .76rem; color: var(--seo-muted); }
+.kg-tile.is-sel { border-color: var(--seo-gold); background: rgba(232,185,79,.14); }
+.kg-tile.is-matched { border-color: rgba(111,207,151,.55); background: rgba(111,207,151,.12); opacity: .75; cursor: default; }
+.kg-tile.is-miss { border-color: rgba(190,80,60,.85); background: rgba(190,80,60,.14); }
+.kg-match-msg { min-height: 1.3em; margin: .9rem 0 0; color: var(--seo-muted); font-size: .92rem; }
+
+/* result */
+.kg-result { text-align: center; }
+.kg-score { font-family: 'Cinzel', serif; font-size: 3.4rem; line-height: 1; color: var(--seo-gold); margin: .2rem 0 .3rem; }
+.kg-score span { font-size: 1.4rem; color: var(--seo-muted); }
+.kg-tier { font-family: 'Cinzel', serif; color: #fff; font-size: 1.5rem; margin: 0 0 .4rem; }
+.kg-tier-note { color: var(--seo-muted); margin: 0 auto 1.3rem; max-width: 46ch; line-height: 1.65; }
+.kg-actions { display: flex; gap: .55rem; flex-wrap: wrap; justify-content: center; }
+
+@media (max-width: 560px) {
+  .kg-match { grid-template-columns: 1fr; gap: 1.1rem; }
+  .kg-actions .kx-btn { flex: 1 1 100%; justify-content: center; }
+}
