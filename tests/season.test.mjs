@@ -92,8 +92,8 @@ check('  → and both features', sm.includes('/ganapati/eight-manifestations') &
 // ── the data model is season-generic (Navaratri reuse) ──
 check('the content model is a LIST of seasons, not ganapati-specific',
       Array.isArray(JSON.parse(fs.readFileSync('content/seasons.json','utf8'))));
-check('  → and features declare their own kind (forms/article)',
-      season.features.every(f => ['forms','article'].includes(f.kind)));
+check('  → and features declare their own kind (forms/article/game)',
+      season.features.every(f => ['forms','article','game'].includes(f.kind)));
 
 // ── DISCOVERY: can a real visitor actually reach the season? ──
 const home = fs.readFileSync('index.html','utf8');

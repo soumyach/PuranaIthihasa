@@ -514,6 +514,82 @@ ${footerBlock()}
 </html>`;
 }
 
+
+/**
+ * The season challenge. The match-round pairs are DERIVED from the eight
+ * manifestations rather than duplicated, so the game can never disagree with
+ * the article. Game data is embedded as JSON (no extra fetch) and played by
+ * /season-game.js, which keeps all state local — no answers or score ever
+ * reach a URL or a server.
+ */
+function buildSeasonGame(season, feature) {
+  const canonicalUrl = `https://khatakshetra.com/${season.slug}/${feature.slug}`;
+  const pageTitle = feature.seoTitle || feature.title;
+  const metaDesc = truncate(feature.seoDescription || feature.hook, 155);
+
+  const formsFeature = season.features.find((f) => f.kind === 'forms');
+  const pairs = ((formsFeature && formsFeature.forms) || []).map((f) => ({
+    key: f.slug, form: f.form, asura: f.asura, obstacle: f.gloss || f.obstacle
+  }));
+
+  const gameData = JSON.stringify({
+    slug: feature.slug,
+    title: feature.title,
+    intro: feature.intro,
+    rounds: feature.rounds,
+    tiers: feature.tiers,
+    card: feature.card,
+    shareText: feature.shareText,
+    pairs
+  }).replace(/</g, '\\u003c');   // safe to sit inside a <script> block
+
+  const ld = {
+    '@context': 'https://schema.org', '@type': 'Quiz',
+    name: pageTitle, description: metaDesc, url: canonicalUrl,
+    about: { '@type': 'Thing', name: season.title },
+    publisher: { '@type': 'Organization', name: 'Khatakshetra', url: 'https://khatakshetra.com' }
+  };
+  const crumbs = {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://khatakshetra.com/' },
+      { '@type': 'ListItem', position: 2, name: season.title, item: `https://khatakshetra.com/${season.slug}` },
+      { '@type': 'ListItem', position: 3, name: feature.navTitle || feature.title, item: canonicalUrl }
+    ]
+  };
+
+  return `<!DOCTYPE html>
+<html lang="en">
+${headBlock({ title: pageTitle, description: metaDesc, canonicalUrl, ogType: 'website',
+  image: ogImageFor([season.ogImage]),
+  extraJsonLd: [`<script type="application/ld+json">${JSON.stringify(ld)}</script>`,
+                `<script type="application/ld+json">${JSON.stringify(crumbs)}</script>`].join('\n  ') })}
+<body class="kx-season" data-kx-season="${escHtml(season.slug)}">
+${navBlock()}
+<main class="season-page">
+${seasonHero(season, feature)}
+${seasonNav(season, feature.slug)}
+
+  <div id="kxGame" class="kg">
+    <noscript><p class="kx-caution">This challenge needs JavaScript. The stories themselves do not &mdash;
+      <a href="/${escHtml(season.slug)}/${escHtml(formsFeature ? formsFeature.slug : '')}">read the eight manifestations</a>.</p></noscript>
+  </div>
+
+${joinBlock({
+    cta: `season_${season.slug}_${feature.slug}`,
+    heading: 'Play the next one with them too',
+    copy: 'Join Khatakshetra Family free. One story a week with its sources, a question to ask at the table, and the next season challenge when it lands.'
+  })}
+
+${sourceShelf(season)}
+</main>
+<script type="application/json" id="kxGameData">${gameData}</script>
+${footerBlock()}
+<script src="/season-game.js"></script>
+</body>
+</html>`;
+}
+
 /** '' when there is no season for this page — so pages without one are byte-identical. */
 function onRampFor(kind, slug) {
   const banner = ONRAMP[kind] && ONRAMP[kind][slug];
@@ -1195,7 +1271,9 @@ function main() {
     fs.writeFileSync(path.join(dir, 'index.html'), buildSeasonHub(season), 'utf8');
     seasonCount++;
     for (const feature of season.features || []) {
-      const html = feature.kind === 'forms' ? buildSeasonForms(season, feature) : buildSeasonArticle(season, feature);
+      const html = feature.kind === 'forms' ? buildSeasonForms(season, feature)
+                 : feature.kind === 'game' ? buildSeasonGame(season, feature)
+                 : buildSeasonArticle(season, feature);
       fs.writeFileSync(path.join(dir, `${feature.slug}.html`), html, 'utf8');
       seasonCount++;
     }
