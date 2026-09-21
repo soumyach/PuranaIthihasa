@@ -255,6 +255,20 @@ function mooshika() {
       </div>`;
 }
 
+// Which painting fronts a page. The forms page leads with its own first
+// form; other features may name one; everything falls back to the season.
+function heroArtFor(season, feature) {
+  const cands = [];
+  if (feature) {
+    cands.push(feature.heroImage);
+    if (feature.kind === 'forms' && feature.forms && feature.forms[0]) {
+      cands.push(`Images/${season.slug}/${feature.forms[0].slug}-form.jpg`);
+    }
+  }
+  cands.push(season.ogImage);
+  return ogImageFor(cands);
+}
+
 function seasonHero(season, sub) {
   const copy = `<div class="kx-hero-copy">
         <p class="kx-eyebrow">${escHtml(season.eyebrow || 'Khatakshetra · Season')}</p>
@@ -263,22 +277,33 @@ function seasonHero(season, sub) {
         ${sub ? `<p class="kx-season-back"><a href="/${escHtml(season.slug)}">&larr; ${escHtml(season.title)}</a></p>` : ''}
       </div>`;
 
-  // Article pages stay a single reading column.
-  if (sub) return `<header class="kx-season-hero">${copy}</header>`;
+  const art = heroArtFor(season, sub);
+  const artBlock = `<div class="kx-hero-art">
+            <img src="${escHtml(art)}" alt="${escHtml(sub ? sub.title : season.title)}" fetchpriority="high"
+              onerror="this.closest('.kx-hero-art').classList.add('is-bare')">
+            ${sub ? '' : mooshika()}
+          </div>`;
 
-  // The season home gets a full-bleed band. On a wide monitor a capped column
-  // leaves the page looking like a ribbon in a void; the band lets the
-  // background carry the width while the text stays a readable measure.
-  const art = ogImageFor([season.ogImage]);
+  // Every season page gets a full-bleed band. On a wide monitor a capped
+  // column reads as a ribbon floating in a void; the band lets the background
+  // carry the width while the text keeps a readable measure. The mooshika is
+  // the season home's alone — a running mouse on every page would wear out.
+  if (sub) {
+    return `<header class="kx-hero-band is-article">
+      <div class="kx-hero-band-inner">
+        <div class="kx-season-hero is-split">
+          ${copy}
+          ${artBlock}
+        </div>
+      </div>
+    </header>`;
+  }
+
   return `<header class="kx-hero-band">
       <div class="kx-hero-band-inner">
-        <div class="kx-season-hero is-hub">
+        <div class="kx-season-hero is-split">
           ${copy}
-          <div class="kx-hero-art">
-            <img src="${escHtml(art)}" alt="${escHtml(season.title)}" fetchpriority="high"
-              onerror="this.closest('.kx-hero-art').classList.add('is-bare')">
-            ${mooshika()}
-          </div>
+          ${artBlock}
         </div>
         <div class="kx-hero-foot">
           <p>${escHtml(season.intro || '')}</p>
@@ -375,8 +400,8 @@ ${headBlock({ title: pageTitle, description: metaDesc, canonicalUrl, ogType: 'we
                 `<script type="application/ld+json">${JSON.stringify(crumbs)}</script>`].join('\n  ') })}${mooshikaStyle()}
 <body class="kx-season" data-kx-season="${escHtml(season.slug)}">
 ${navBlock()}
-<main class="season-page is-hub">
 ${seasonHero(season)}
+<main class="season-page is-hub">
 ${seasonNav(season, '')}
 
   <section class="kx-feats">
@@ -426,40 +451,45 @@ function buildSeasonForms(season, feature) {
   // <details> rather than a JS accordion: keyboard-accessible, works with JS
   // off, and deep-linkable. One page now; each form can become its own /story/
   // page later without changing this data.
-  const forms = feature.forms.map((f, i) => `<details class="kx-form" id="${escHtml(f.slug)}" data-kx-form="${escHtml(f.slug)}">
-        <summary>
+  // These eight paintings are the reason the page exists, so they are shown,
+  // not hidden behind a disclosure. What stays folded is the long reading —
+  // the khaṇḍa's own account, our drishti, and the adversary's portrait.
+  // `data-kx-form` moves to the inner <details> so the existing story_open
+  // tracking keeps firing on exactly the same event.
+  const forms = feature.forms.map((f, i) => `<article class="kx-form" id="${escHtml(f.slug)}">
+        <div class="kx-form-shot">
+          <img src="/Images/${escHtml(season.slug)}/${escHtml(f.slug)}-form.jpg" alt="${escHtml(f.form)}"
+            loading="lazy" onerror="this.closest('.kx-form-shot').classList.add('is-bare')">
           <span class="kx-form-n">${i + 1}</span>
-          <span class="kx-form-head">
-            <span class="kx-form-name">${escHtml(f.form)}</span>
-            <span class="kx-form-vs">confronts ${escHtml(f.asura)}</span>
-            <span class="kx-form-obs">${escHtml(f.obstacle)} &mdash; ${escHtml(f.gloss)}</span>
-          </span>
           <span class="kx-form-khanda">Khaṇḍa ${escHtml(String(f.khanda))}</span>
-        </summary>
-        <div class="kx-form-body">
-          <!-- Art is referenced unconditionally and removes itself if the file
-               is not there yet, so the page is correct before and after upload. -->
-          <div class="kx-form-art">
-            <figure><img src="/Images/ganapati/${escHtml(f.slug)}-form.jpg" alt="${escHtml(f.form)}"
-              loading="lazy" onerror="this.closest('figure').remove()">
-              <figcaption>${escHtml(f.form)}</figcaption></figure>
-            <figure><img src="/Images/ganapati/${escHtml(f.slug)}-asura.jpg" alt="${escHtml(f.asura)}"
-              loading="lazy" onerror="this.closest('figure').remove()">
-              <figcaption>${escHtml(f.asura)}</figcaption></figure>
-          </div>
-          <p class="kx-form-hook">${escHtml(f.hook || '')}</p>
-          <div class="kx-claim">
-            ${sourceBadge('mula')}
-            <p>${escHtml(f.mula || '')}</p>
-          </div>
-          ${f.note ? `<p class="kx-form-note"><strong>A distinction we keep:</strong> ${escHtml(f.note)}</p>` : ''}
-          <div class="kx-claim">
-            ${sourceBadge('drishti')}
-            <p>${escHtml(f.drishti || '')}</p>
-          </div>
-          ${f.visual ? `<p class="kx-form-visual"><strong>How we picture it:</strong> ${escHtml(f.visual)}</p>` : ''}
         </div>
-      </details>`).join('\n      ');
+        <div class="kx-form-txt">
+          <h3 class="kx-form-name">${escHtml(f.form)}</h3>
+          <p class="kx-form-vs">confronts ${escHtml(f.asura)}</p>
+          <p class="kx-form-obs">${escHtml(f.obstacle)} &mdash; ${escHtml(f.gloss)}</p>
+          <p class="kx-form-hook">${escHtml(f.hook || '')}</p>
+          <details class="kx-form-more" data-kx-form="${escHtml(f.slug)}">
+            <summary>The khaṇḍa, and our reading</summary>
+            <div class="kx-form-body">
+              <figure class="kx-form-asura">
+                <img src="/Images/${escHtml(season.slug)}/${escHtml(f.slug)}-asura.jpg" alt="${escHtml(f.asura)}"
+                  loading="lazy" onerror="this.closest('figure').remove()">
+                <figcaption>${escHtml(f.asura)}</figcaption>
+              </figure>
+              <div class="kx-claim">
+                ${sourceBadge('mula')}
+                <p>${escHtml(f.mula || '')}</p>
+              </div>
+              ${f.note ? `<p class="kx-form-note"><strong>A distinction we keep:</strong> ${escHtml(f.note)}</p>` : ''}
+              <div class="kx-claim">
+                ${sourceBadge('drishti')}
+                <p>${escHtml(f.drishti || '')}</p>
+              </div>
+              ${f.visual ? `<p class="kx-form-visual"><strong>How we picture it:</strong> ${escHtml(f.visual)}</p>` : ''}
+            </div>
+          </details>
+        </div>
+      </article>`).join('\n      ');
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -469,8 +499,8 @@ ${headBlock({ title: pageTitle, description: metaDesc, canonicalUrl, ogType: 'ar
                 `<script type="application/ld+json">${JSON.stringify(crumbs)}</script>`].join('\n  ') })}
 <body class="kx-season" data-kx-season="${escHtml(season.slug)}">
 ${navBlock()}
-<main class="season-page">
 ${seasonHero(season, feature)}
+<main class="season-page">
 ${seasonNav(season, feature.slug)}
 
   <section class="kx-season-intro">
@@ -482,9 +512,9 @@ ${seasonNav(season, feature.slug)}
     ${provenancePanel(feature.sources)}
   </section>
 
-  <section class="kx-forms">
+  <section class="kx-forms kx-breakout">
     <h2>The eight manifestations</h2>
-    <p class="kx-shelf-note">Open any one. Each has the story as the khaṇḍa tells it, and our reading kept visibly separate.</p>
+    <p class="kx-shelf-note">Each has the story as the khaṇḍa tells it, and our reading kept visibly separate.</p>
     <div class="kx-forms-list">
       ${forms}
     </div>
@@ -548,8 +578,8 @@ ${headBlock({ title: pageTitle, description: metaDesc, canonicalUrl, ogType: 'ar
                 `<script type="application/ld+json">${JSON.stringify(crumbs)}</script>`].join('\n  ') })}
 <body class="kx-season" data-kx-season="${escHtml(season.slug)}">
 ${navBlock()}
-<main class="season-page">
 ${seasonHero(season, feature)}
+<main class="season-page">
 ${seasonNav(season, feature.slug)}
 
   <section class="kx-season-intro">
@@ -623,8 +653,8 @@ ${headBlock({ title: pageTitle, description: metaDesc, canonicalUrl, ogType: 'we
                 `<script type="application/ld+json">${JSON.stringify(crumbs)}</script>`].join('\n  ') })}
 <body class="kx-season" data-kx-season="${escHtml(season.slug)}">
 ${navBlock()}
-<main class="season-page">
 ${seasonHero(season, feature)}
+<main class="season-page">
 ${seasonNav(season, feature.slug)}
 
   <div id="kxGame" class="kg">

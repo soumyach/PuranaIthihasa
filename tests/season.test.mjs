@@ -54,12 +54,22 @@ check('Dhūmraketu is distinguished from Dhūmravarṇa', /Dhūmraketu/.test(eig
 // ── structure / a11y / plumbing ──
 const dom = new JSDOM(eight, { url: 'https://khatakshetra.com/ganapati/eight-manifestations' });
 const doc = dom.window.document;
-check('all eight forms render', doc.querySelectorAll('details.kx-form').length === 8,
-      String(doc.querySelectorAll('details.kx-form').length));
-check('  → as native <details>, so keyboard + no-JS both work',
-      doc.querySelectorAll('details.kx-form > summary').length === 8);
-check('  → each is deep-linkable by id', doc.querySelectorAll('details.kx-form[id]').length === 8);
+check('all eight forms render', doc.querySelectorAll('article.kx-form').length === 8,
+      String(doc.querySelectorAll('article.kx-form').length));
+// The paintings are the reason the page exists. They used to sit inside eight
+// collapsed rows, invisible until clicked — this is the assertion that stops
+// them being hidden again.
+check('  → each shows its painting without any interaction',
+      doc.querySelectorAll('article.kx-form > .kx-form-shot > img').length === 8 &&
+      !doc.querySelector('details > .kx-form-shot'));
+check('  → the long reading stays folded, as native <details>',
+      doc.querySelectorAll('article.kx-form details.kx-form-more > summary').length === 8);
+check('  → and story_open tracking still has its hook on the toggle',
+      doc.querySelectorAll('details.kx-form-more[data-kx-form]').length === 8);
+check('  → each is deep-linkable by id', doc.querySelectorAll('article.kx-form[id]').length === 8);
 check('  → each names its khaṇḍa', doc.querySelectorAll('.kx-form-khanda').length === 8);
+check('  → the adversary portrait is the reward for opening it',
+      doc.querySelectorAll('details.kx-form-more .kx-form-asura img').length === 8);
 check('  → each separates Mūla from Drishti', doc.querySelectorAll('.sc-mula').length >= 8 && doc.querySelectorAll('.sc-drishti').length >= 8);
 dom.window.close();
 
@@ -119,10 +129,12 @@ check('  → and a page with no portrait falls back rather than breaking',
       /og:image" content="[^"]*fullbleed-lamps\.jpg/.test(fs.readFileSync('story/ganesha-elephant-head.html','utf8')));
 
 // ── artwork: referenced now, degrades until the files are uploaded ──
-check('each of the eight shows a form portrait', (eight.match(/-form\.jpg/g)||[]).length === 8);
+check('each of the eight shows a form portrait',
+      (eight.split('kx-forms-list')[1].match(/-form\.jpg/g)||[]).length === 8);
 check('  → and its adversary', (eight.match(/-asura\.jpg/g)||[]).length === 8);
-check('  → every image removes itself if the file is missing',
-      (eight.match(/onerror="this\.closest\('figure'\)\.remove\(\)"/g)||[]).length === 16,
+check('  → every image degrades if the file is missing',
+      (eight.match(/onerror="this\.closest\('figure'\)\.remove\(\)"/g)||[]).length === 8 &&
+      (eight.match(/onerror="this\.closest\('\.kx-form-shot'\)\.classList\.add\('is-bare'\)"/g)||[]).length === 8,
       String((eight.match(/onerror=/g)||[]).length));
 check('the hub rail carries thumbnails that also degrade',
       (hub.match(/kx-rail-art/g)||[]).length === 8 && /onerror="this\.remove\(\)"/.test(hub));
@@ -133,10 +145,12 @@ check('art paths follow the slug convention',
 // ── hub layout: the full-bleed hero band, and the mooshika ──
 check('the hub uses the wide layout, the articles do not',
       /<main class="season-page is-hub"/.test(hub) && !/is-hub/.test(eight));
+check('  → and the two-column hero has its own name, used by both',
+      /kx-season-hero is-split/.test(hub) && /kx-season-hero is-split/.test(eight));
 check('the hub hero is a full-bleed band',
       /<header class="kx-hero-band">/.test(hub) && /kx-hero-band-inner/.test(hub));
 check('  → two columns, with the artwork',
-      /kx-season-hero is-hub/.test(hub) && /kx-hero-art/.test(hub) &&
+      /kx-season-hero is-split/.test(hub) && /kx-hero-art/.test(hub) &&
       /<img src="\/Images\/home\/ganesha\.jpg"/.test(hub));
 check('  → and the hero image degrades rather than leaving a hole',
       /onerror="this\.closest\('\.kx-hero-art'\)\.classList\.add\('is-bare'\)"/.test(hub));
@@ -180,7 +194,31 @@ check('  → and is decorative, not announced to screen readers',
         /\.is-hub \.kx-feat-grid[\s\S]{0,200}auto-fit/.test(css) &&
         /\.is-hub \.kx-rail[\s\S]{0,200}auto-fit/.test(css));
   check('  → the hero stacks on a phone',
-        /max-width:\s*860px\)[\s\S]{0,400}\.kx-season-hero\.is-hub\s*{\s*grid-template-columns:\s*1fr/.test(css));
+        /max-width:\s*860px\)[\s\S]{0,400}\.kx-season-hero\.is-split\s*{\s*grid-template-columns:\s*1fr/.test(css));
+}
+
+// ── article pages: the same band, and a gallery that uses the width ──
+check('article pages get the hero band too',
+      /<header class="kx-hero-band is-article">/.test(eight) &&
+      /<header class="kx-hero-band is-article">/.test(vighna));
+check('  → the forms page leads with its own first painting',
+      /kx-hero-band[\s\S]{0,600}vakratunda-matsarasura-form\.jpg/.test(eight));
+check('  → but the mooshika stays the season home\'s alone',
+      !/kx-mooshika/.test(eight) && !/kx-mooshika/.test(vighna));
+check('the band sits outside <main>, so it needs no 100vw',
+      /<header class="kx-hero-band[^"]*">[\s\S]*?<main class="season-page/.test(hub) &&
+      /<header class="kx-hero-band[^"]*">[\s\S]*?<main class="season-page/.test(eight));
+check('the gallery steps outside the reading column',
+      /<section class="kx-forms kx-breakout">/.test(eight));
+{
+  const css = fs.readFileSync('seo.css','utf8');
+  check('  → and is capped against the viewport, so it cannot scroll sideways',
+        /\.kx-breakout\s*{[\s\S]{0,160}width:\s*min\(1180px,\s*calc\(100vw - 40px\)\)/.test(css));
+  check('  → the band is plain full width now, not 100vw',
+        /\.kx-hero-band\s*{[\s\S]{0,200}width:\s*100%/.test(css) &&
+        !/\.kx-hero-band\s*{[\s\S]{0,200}width:\s*100vw/.test(css));
+  check('  → cards in a row share a height',
+        /\.kx-forms\.kx-breakout \.kx-forms-list[\s\S]{0,260}align-items:\s*stretch/.test(css));
 }
 
 let fails=0; for (const [p,n,d] of results){ if(!p) fails++; console.log(`${p?'PASS':'FAIL'}  ${n}${!p&&d?'  → '+d:''}`);}
