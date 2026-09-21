@@ -130,5 +130,33 @@ check('art paths follow the slug convention',
       /\/Images\/ganapati\/vakratunda-matsarasura-form\.jpg/.test(eight) &&
       /\/Images\/ganapati\/dhumravarna-ahamkarasura-asura\.jpg/.test(eight));
 
+// ── hub layout: the wide two-column hero, and the mooshika ──
+check('the hub uses the wide layout, the articles do not',
+      /<main class="season-page is-hub"/.test(hub) && !/is-hub/.test(eight));
+check('the hub hero is two-column, with artwork',
+      /kx-season-hero is-hub/.test(hub) && /kx-hero-art/.test(hub) &&
+      /<img src="\/Images\/home\/ganesha\.jpg"/.test(hub));
+check('  → and the hero image degrades rather than leaving a hole',
+      /onerror="this\.closest\('\.kx-hero-art'\)\.classList\.add\('is-bare'\)"/.test(hub));
+check('the mooshika appears on the hub only',
+      /kx-mooshika/.test(hub) && !/kx-mooshika/.test(eight) && !/kx-mooshika/.test(vighna));
+check('  → and is decorative, not announced to screen readers',
+      /<div class="kx-mooshika" aria-hidden="true">/.test(hub));
+check('  → he faces the direction he runs',
+      /facing RIGHT/.test(hub));
+{
+  const css = fs.readFileSync('seo.css','utf8');
+  check('the scurry runs once and settles, never loops',
+        /animation:\s*kx-moo-path[^;]*forwards/.test(css) &&
+        !/kx-moo-path[^;]*infinite/.test(css));
+  check('  → and motion-sensitive visitors get him at rest',
+        /prefers-reduced-motion[\s\S]{0,400}kx-mooshika/.test(css));
+  check('the hub is allowed to be wider than an article column',
+        /\.season-page\.is-hub\s*{[^}]*max-width:\s*1180px/.test(css));
+  check('  → and its grids reflow instead of stranding one card',
+        /\.is-hub \.kx-feat-grid[\s\S]{0,200}auto-fit/.test(css) &&
+        /\.is-hub \.kx-rail[\s\S]{0,200}auto-fit/.test(css));
+}
+
 let fails=0; for (const [p,n,d] of results){ if(!p) fails++; console.log(`${p?'PASS':'FAIL'}  ${n}${!p&&d?'  → '+d:''}`);}
 console.log(`\n${results.length-fails}/${results.length} passed`); process.exit(fails?1:0);
