@@ -512,7 +512,7 @@ ${seasonNav(season, feature.slug)}
     ${provenancePanel(feature.sources)}
   </section>
 
-  <section class="kx-forms kx-breakout">
+  <section class="kx-forms">
     <h2>The eight manifestations</h2>
     <p class="kx-shelf-note">Each has the story as the khaṇḍa tells it, and our reading kept visibly separate.</p>
     <div class="kx-forms-list">

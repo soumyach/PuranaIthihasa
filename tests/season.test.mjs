@@ -188,11 +188,14 @@ check('  → and is decorative, not announced to screen readers',
         /prefers-reduced-motion[\s\S]{0,400}kx-mooshika\s*{\s*animation:\s*none/.test(css));
   check('the full-bleed band cannot produce a horizontal scrollbar',
         /body\.kx-season\s*{\s*overflow-x:\s*clip/.test(css));
-  check('the hub is allowed to be wider than an article column',
-        /\.season-page\.is-hub\s*{\s*max-width:\s*1280px/.test(css));
-  check('  → and its grids reflow instead of stranding one card',
-        /\.is-hub \.kx-feat-grid[\s\S]{0,200}auto-fit/.test(css) &&
-        /\.is-hub \.kx-rail[\s\S]{0,200}auto-fit/.test(css));
+  check('  → the grids reflow instead of stranding one card',
+        /\.kx-feat-grid[\s\S]{0,200}auto-fit/.test(css) &&
+        /\.kx-rail\s*{[\s\S]{0,200}auto-fit/.test(css));
+  // The bug this guards: `.kx-hero-band.is-article .kx-season-hero.is-split`
+  // is more specific than the phone rule, so unscoped it kept the article
+  // hero two-column at 390px. It lives above the breakpoint now.
+  check('  → the article\'s column ratio cannot outrank the phone rule',
+        /@media \(min-width: 861px\)[\s\S]{0,240}\.kx-hero-band\.is-article \.kx-season-hero\.is-split/.test(css));
   check('  → the hero stacks on a phone',
         /max-width:\s*860px\)[\s\S]{0,400}\.kx-season-hero\.is-split\s*{\s*grid-template-columns:\s*1fr/.test(css));
 }
@@ -208,17 +211,27 @@ check('  → but the mooshika stays the season home\'s alone',
 check('the band sits outside <main>, so it needs no 100vw',
       /<header class="kx-hero-band[^"]*">[\s\S]*?<main class="season-page/.test(hub) &&
       /<header class="kx-hero-band[^"]*">[\s\S]*?<main class="season-page/.test(eight));
-check('the gallery steps outside the reading column',
-      /<section class="kx-forms kx-breakout">/.test(eight));
+check('nothing needs to break out of the column any more',
+      !/kx-breakout/.test(eight) && !/kx-breakout/.test(hub));
 {
   const css = fs.readFileSync('seo.css','utf8');
-  check('  → and is capped against the viewport, so it cannot scroll sideways',
-        /\.kx-breakout\s*{[\s\S]{0,160}width:\s*min\(1180px,\s*calc\(100vw - 40px\)\)/.test(css));
+  // The bug this guards: the band, the prose and the gallery were three
+  // different widths CENTRED on each other, so the left edge moved four times
+  // going down the page. One container and one gutter, shared.
+  check('  → every page region shares one container and one gutter',
+        /\.season-page\s*{[\s\S]{0,200}max-width:\s*var\(--kx-page\)[\s\S]{0,120}padding-inline:\s*var\(--kx-gut\)/.test(css) &&
+        /\.kx-hero-band-inner\s*{[\s\S]{0,200}max-width:\s*var\(--kx-page\)[\s\S]{0,120}padding-inline:\s*var\(--kx-gut\)/.test(css));
+  check('  → and no region overrides that width for itself',
+        !/\.season-page\.is-hub\s*{[^}]*max-width/.test(css) && !/\.kx-breakout/.test(css));
+  check('  → prose is narrowed from the right, so the left edge never moves',
+        /--kx-measure:\s*\d+ch/.test(css) && /max-width:\s*var\(--kx-measure\)/.test(css));
   check('  → the band is plain full width now, not 100vw',
         /\.kx-hero-band\s*{[\s\S]{0,200}width:\s*100%/.test(css) &&
         !/\.kx-hero-band\s*{[\s\S]{0,200}width:\s*100vw/.test(css));
+  check('  → the provenance panel sits beside the claim, not under it',
+        /@media \(min-width: 1040px\)[\s\S]{0,400}\.kx-season-intro\s*{\s*display:\s*grid/.test(css));
   check('  → cards in a row share a height',
-        /\.kx-forms\.kx-breakout \.kx-forms-list[\s\S]{0,260}align-items:\s*stretch/.test(css));
+        /\.kx-forms \.kx-forms-list[\s\S]{0,260}align-items:\s*stretch/.test(css));
 }
 
 let fails=0; for (const [p,n,d] of results){ if(!p) fails++; console.log(`${p?'PASS':'FAIL'}  ${n}${!p&&d?'  → '+d:''}`);}
