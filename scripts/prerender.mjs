@@ -232,23 +232,26 @@ function provenancePanel(sources, opts = {}) {
 // A small mooshika who scurries in and settles at Ganesha's feet. Pure CSS,
 // decorative only (aria-hidden), and it simply appears in place when the
 // visitor has asked for reduced motion.
+// The mooshika is a painted cutout, not a vector cartoon — a flat SVG mouse
+// beside a devotional painting reads as clipart. Kept as base64 so it commits
+// as text and costs no extra request; inlined on the hub page only.
+let MOOSHIKA_B64 = null;
+function mooshikaStyle() {
+  if (MOOSHIKA_B64 === null) {
+    try { MOOSHIKA_B64 = fs.readFileSync(path.join(ROOT, 'assets/mooshika-b64.txt'), 'utf8').trim(); }
+    catch { MOOSHIKA_B64 = ''; }
+  }
+  if (!MOOSHIKA_B64) return '';
+  return `\n  <style>.kx-moo-body{background-image:url(data:image/webp;base64,${MOOSHIKA_B64})}</style>`;
+}
+
 function mooshika() {
+  if (!mooshikaStyle()) return '';
+  // Three layers so the motion can be built from parts: the run (translateX on
+  // the outer), the scurry bob (the body), and a shadow that squashes with it.
   return `<div class="kx-mooshika" aria-hidden="true">
-        <svg viewBox="0 0 126 66" xmlns="http://www.w3.org/2000/svg">
-          <!-- facing RIGHT, because he is running toward Ganesha -->
-          <path class="kx-moo-tail" d="M23 50C11 53 2 47 4 37c1-5 5-8 9-8"
-            stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none"/>
-          <ellipse class="kx-moo-foot kx-moo-foot-a" cx="44" cy="57" rx="6.5" ry="3.4" fill="currentColor"/>
-          <ellipse class="kx-moo-foot kx-moo-foot-b" cx="72" cy="57" rx="6.5" ry="3.4" fill="currentColor"/>
-          <circle cx="74" cy="24" r="11.5" fill="currentColor"/>
-          <circle cx="74" cy="24" r="5.5" fill="#3a2407" opacity=".45"/>
-          <path d="M22 52C12 50 12 34 25 30c12-4 34-6 52-2 10 2 20 6 28 12 3 2 7 4 10 5 2 .6 2 2.4 0 3-5 1.5-11 2-17 1-10 5-38 8-56 7-10-.6-16-2-20-4Z"
-            fill="currentColor"/>
-          <circle cx="97" cy="41" r="2.3" fill="#3a2407" opacity=".85"/>
-          <circle cx="116" cy="46" r="2" fill="#3a2407" opacity=".5"/>
-          <path d="M112 50c4 3 8 4 12 4M112 52c3 4 6 6 10 7" stroke="currentColor"
-            stroke-width="1.5" stroke-linecap="round" opacity=".75"/>
-        </svg>
+        <span class="kx-moo-shadow"></span>
+        <span class="kx-moo-body"></span>
       </div>`;
 }
 
@@ -260,17 +263,29 @@ function seasonHero(season, sub) {
         ${sub ? `<p class="kx-season-back"><a href="/${escHtml(season.slug)}">&larr; ${escHtml(season.title)}</a></p>` : ''}
       </div>`;
 
-  // Only the season home gets the full two-column hero; the article pages stay
-  // a single reading column.
+  // Article pages stay a single reading column.
   if (sub) return `<header class="kx-season-hero">${copy}</header>`;
 
+  // The season home gets a full-bleed band. On a wide monitor a capped column
+  // leaves the page looking like a ribbon in a void; the band lets the
+  // background carry the width while the text stays a readable measure.
   const art = ogImageFor([season.ogImage]);
-  return `<header class="kx-season-hero is-hub">
-      ${copy}
-      <div class="kx-hero-art">
-        <img src="${escHtml(art)}" alt="${escHtml(season.title)}" fetchpriority="high"
-          onerror="this.closest('.kx-hero-art').classList.add('is-bare')">
-        ${mooshika()}
+  return `<header class="kx-hero-band">
+      <div class="kx-hero-band-inner">
+        <div class="kx-season-hero is-hub">
+          ${copy}
+          <div class="kx-hero-art">
+            <img src="${escHtml(art)}" alt="${escHtml(season.title)}" fetchpriority="high"
+              onerror="this.closest('.kx-hero-art').classList.add('is-bare')">
+            ${mooshika()}
+          </div>
+        </div>
+        <div class="kx-hero-foot">
+          <p>${escHtml(season.intro || '')}</p>
+          <p class="kx-season-legend">
+            ${sourceBadge('mula')} ${sourceBadge('tradition')} ${sourceBadge('drishti')}
+          </p>
+        </div>
       </div>
     </header>`;
 }
@@ -357,19 +372,12 @@ function buildSeasonHub(season) {
 ${headBlock({ title: pageTitle, description: metaDesc, canonicalUrl, ogType: 'website',
   image: ogImageFor([season.ogImage]),
   extraJsonLd: [`<script type="application/ld+json">${JSON.stringify(ld)}</script>`,
-                `<script type="application/ld+json">${JSON.stringify(crumbs)}</script>`].join('\n  ') })}
+                `<script type="application/ld+json">${JSON.stringify(crumbs)}</script>`].join('\n  ') })}${mooshikaStyle()}
 <body class="kx-season" data-kx-season="${escHtml(season.slug)}">
 ${navBlock()}
 <main class="season-page is-hub">
 ${seasonHero(season)}
 ${seasonNav(season, '')}
-
-  <section class="kx-season-intro">
-    <p>${escHtml(season.intro || '')}</p>
-    <p class="kx-season-legend">
-      ${sourceBadge('mula')} ${sourceBadge('tradition')} ${sourceBadge('drishti')}
-    </p>
-  </section>
 
   <section class="kx-feats">
     <h2>Start here</h2>

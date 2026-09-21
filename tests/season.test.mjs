@@ -130,32 +130,57 @@ check('art paths follow the slug convention',
       /\/Images\/ganapati\/vakratunda-matsarasura-form\.jpg/.test(eight) &&
       /\/Images\/ganapati\/dhumravarna-ahamkarasura-asura\.jpg/.test(eight));
 
-// ── hub layout: the wide two-column hero, and the mooshika ──
+// ── hub layout: the full-bleed hero band, and the mooshika ──
 check('the hub uses the wide layout, the articles do not',
       /<main class="season-page is-hub"/.test(hub) && !/is-hub/.test(eight));
-check('the hub hero is two-column, with artwork',
+check('the hub hero is a full-bleed band',
+      /<header class="kx-hero-band">/.test(hub) && /kx-hero-band-inner/.test(hub));
+check('  → two columns, with the artwork',
       /kx-season-hero is-hub/.test(hub) && /kx-hero-art/.test(hub) &&
       /<img src="\/Images\/home\/ganesha\.jpg"/.test(hub));
 check('  → and the hero image degrades rather than leaving a hole',
       /onerror="this\.closest\('\.kx-hero-art'\)\.classList\.add\('is-bare'\)"/.test(hub));
+check('the intro and the three badges are folded into the band',
+      /kx-hero-foot/.test(hub) && !/kx-season-intro/.test(hub) &&
+      /kx-hero-foot[\s\S]{0,900}kx-season-legend/.test(hub));
+check('  → and the badges are not also left duplicated below it',
+      (hub.match(/kx-season-legend/g)||[]).length === 1);
+
+// The mooshika is a painted cutout, committed as base64 so it needs no binary
+// and no extra request. A flat vector mouse beside a devotional painting
+// reads as clipart — that is the bug this replaced.
+check('the mooshika is painted artwork, not an inline vector drawing',
+      /kx-moo-body/.test(hub) && !/<svg[^>]*>[\s\S]{0,400}kx-moo/.test(hub));
+check('  → its image is inlined, so it costs no extra request',
+      /\.kx-moo-body\{background-image:url\(data:image\/webp;base64,/.test(hub));
+check('  → and it stays small enough to inline (< 30KB of base64)',
+      fs.readFileSync('assets/mooshika-b64.txt','utf8').trim().length < 30000,
+      String(fs.readFileSync('assets/mooshika-b64.txt','utf8').trim().length));
 check('the mooshika appears on the hub only',
       /kx-mooshika/.test(hub) && !/kx-mooshika/.test(eight) && !/kx-mooshika/.test(vighna));
 check('  → and is decorative, not announced to screen readers',
       /<div class="kx-mooshika" aria-hidden="true">/.test(hub));
-check('  → he faces the direction he runs',
-      /facing RIGHT/.test(hub));
 {
   const css = fs.readFileSync('seo.css','utf8');
   check('the scurry runs once and settles, never loops',
-        /animation:\s*kx-moo-path[^;]*forwards/.test(css) &&
-        !/kx-moo-path[^;]*infinite/.test(css));
+        /animation:\s*kx-moo-run[^;]*forwards/.test(css) && !/kx-moo-run[^;]*infinite/.test(css));
+  // The bug this guards: two transform animations on one element, the later
+  // one with `both`, fills backwards through its delay and cancels the bob.
+  check('  → the look-up does not fill backwards over the scurry',
+        !/kx-moo-look[^;]*\bboth\b/.test(css) && /kx-moo-look[^;]*forwards/.test(css));
+  check('  → the body bobs and a shadow squashes with it',
+        /@keyframes kx-moo-scurry/.test(css) && /@keyframes kx-moo-shadow/.test(css));
   check('  → and motion-sensitive visitors get him at rest',
-        /prefers-reduced-motion[\s\S]{0,400}kx-mooshika/.test(css));
+        /prefers-reduced-motion[\s\S]{0,400}kx-mooshika\s*{\s*animation:\s*none/.test(css));
+  check('the full-bleed band cannot produce a horizontal scrollbar',
+        /body\.kx-season\s*{\s*overflow-x:\s*clip/.test(css));
   check('the hub is allowed to be wider than an article column',
-        /\.season-page\.is-hub\s*{[^}]*max-width:\s*1180px/.test(css));
+        /\.season-page\.is-hub\s*{\s*max-width:\s*1280px/.test(css));
   check('  → and its grids reflow instead of stranding one card',
         /\.is-hub \.kx-feat-grid[\s\S]{0,200}auto-fit/.test(css) &&
         /\.is-hub \.kx-rail[\s\S]{0,200}auto-fit/.test(css));
+  check('  → the hero stacks on a phone',
+        /max-width:\s*860px\)[\s\S]{0,400}\.kx-season-hero\.is-hub\s*{\s*grid-template-columns:\s*1fr/.test(css));
 }
 
 let fails=0; for (const [p,n,d] of results){ if(!p) fails++; console.log(`${p?'PASS':'FAIL'}  ${n}${!p&&d?'  → '+d:''}`);}
