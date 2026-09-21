@@ -390,3 +390,21 @@ ul:not(.key-facts):not(.cta-links):not(.related-links) { padding-left: 1.2rem; }
   .kg-match { grid-template-columns: 1fr; gap: 1.1rem; }
   .kg-actions .kx-btn { flex: 1 1 100%; justify-content: center; }
 }
+
+/* Season artwork. Referenced unconditionally; each <img> removes itself if the
+   file has not been uploaded yet, so the pages are correct either way. */
+.kx-form-art { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; margin: 0 0 1.1rem; }
+.kx-form-art:empty { display: none; }
+.kx-form-art figure { margin: 0; }
+.kx-form-art img {
+  width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;
+  border-radius: 10px; border: 1px solid rgba(232,185,79,.3);
+}
+.kx-form-art figcaption {
+  margin-top: .3rem; font-size: .78rem; color: var(--seo-muted); text-align: center;
+}
+.kx-rail-art {
+  width: 100%; aspect-ratio: 16/10; object-fit: cover; object-position: center 22%;
+  border-radius: 8px; margin-bottom: .45rem; display: block;
+}
+@media (max-width: 480px) { .kx-form-art { grid-template-columns: 1fr; } }
