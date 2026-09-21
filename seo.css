@@ -183,7 +183,18 @@ ul:not(.key-facts):not(.cta-links):not(.related-links) { padding-left: 1.2rem; }
    The provenance classes are the point: a reader should be able to tell, at a
    glance and without scrolling to a footnote, whether a sentence is what a text
    says or what we think it means. */
-.season-page { max-width: 820px; }
+/* ── One grid for every season page ─────────────────────────────────────────
+   The band, the nav, the prose and the gallery used to be three different
+   widths CENTRED on each other, so the left edge moved four times on the way
+   down the page. They now share one container and one gutter. Prose is still
+   narrowed to a readable measure — but narrowed from the RIGHT, so the left
+   edge never moves. */
+:root { --kx-page: 1180px; --kx-gut: clamp(18px, 4vw, 56px); --kx-measure: 74ch; }
+.season-page {
+  max-width: var(--kx-page);
+  margin-inline: auto;
+  padding-inline: var(--kx-gut);
+}
 
 .kx-season-hero { margin-bottom: 1.4rem; }
 .kx-season-hero h1 {
@@ -415,7 +426,6 @@ ul:not(.key-facts):not(.cta-links):not(.related-links) { padding-left: 1.2rem; }
    lets the background carry the width, while the text keeps a readable
    measure. Second, the hub is a directory, not a reading page, so below the
    band it may run wider than the articles do. */
-.season-page.is-hub { max-width: 1280px; }
 /* 100vw counts the scrollbar gutter, so a full-bleed child overflows by its
    width. Clip rather than hide: clip does not create a scroll container, so
    position: sticky elsewhere on the page keeps working. */
@@ -426,7 +436,7 @@ body.kx-season { overflow-x: clip; }
    (100vw counts the scrollbar gutter; the page's own width does not). */
 .kx-hero-band {
   position: relative;
-  margin: 0 0 34px;
+  margin: 0;
   width: 100%;
   padding: clamp(28px, 4.5vw, 58px) 0 clamp(26px, 3.5vw, 44px);
   background:
@@ -437,9 +447,9 @@ body.kx-season { overflow-x: clip; }
   overflow: hidden;
 }
 .kx-hero-band-inner {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 clamp(18px, 4vw, 56px);
+  max-width: var(--kx-page);
+  margin-inline: auto;
+  padding-inline: var(--kx-gut);
 }
 
 /* `is-split` = the two-column hero, used by every season page. `is-hub` on
@@ -496,12 +506,12 @@ body.kx-season { overflow-x: clip; }
 
 /* Below the band, let the grids use the width instead of stranding one card
    beside a gap. */
-.is-hub .kx-feat-grid {
+.kx-feat-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: clamp(14px, 1.6vw, 22px);
 }
-.is-hub .kx-rail {
+.kx-rail {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: clamp(14px, 1.6vw, 22px);
@@ -591,29 +601,23 @@ body.kx-season { overflow-x: clip; }
 /* ── Article pages: the same band, minus the mouse ──────────────────────────
    An article opened cold from search used to begin with four lines of text on
    a black field and nothing else, while sixteen paintings sat below the fold. */
-.kx-hero-band.is-article { margin-bottom: 26px; }
-.kx-hero-band.is-article .kx-season-hero.is-split {
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
-  align-items: center;
+/* Scoped above the stacking breakpoint on purpose. Unscoped, this selector is
+   more specific than the phone rule and beat it, so the article hero stayed
+   two columns at 390px — a squeezed headline beside a thumbnail. */
+@media (min-width: 861px) {
+  .kx-hero-band.is-article .kx-season-hero.is-split {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+    align-items: center;
+  }
 }
 .kx-hero-band.is-article .kx-hero-art img { aspect-ratio: 1 / 1; }
 .kx-hero-band.is-article .kx-season-back { margin-bottom: 0; }
-
-/* A block that steps outside the reading column. Prose stays narrow because
-   long lines are hard to read; a gallery has no such excuse. Capped against
-   the viewport so it can never introduce a horizontal scrollbar. */
-.kx-breakout {
-  width: min(1180px, calc(100vw - 40px));
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 /* ── The eight, as a gallery ────────────────────────────────────────────────
    These paintings are the reason the page exists, so they are visible on
    arrival rather than hidden behind eight identical collapsed bars. What
    stays folded is the long reading. */
-.kx-forms.kx-breakout .kx-forms-list {
+.kx-forms .kx-forms-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: clamp(14px, 1.6vw, 22px);
@@ -676,4 +680,44 @@ article.kx-form .kx-form-khanda {
 }
 .kx-form-asura figcaption {
   margin-top: .35rem; font-size: .78rem; color: var(--seo-muted); text-align: center;
+}
+
+/* ── Measure ────────────────────────────────────────────────────────────────
+   Long lines are hard to read, so prose is capped. Capping the block (rather
+   than centring a narrow column) keeps every left edge on the same line. */
+.kx-pattern,
+.kx-soon,
+.kx-shelf,
+.kx-sec,
+.kx-forms > p,
+.kx-feats > p,
+.kx-rail-wrap > p,
+.kx-season-hero:not(.is-split) { max-width: var(--kx-measure); }
+
+/* The opening of an article: prose at a readable measure on the left, and the
+   provenance panel promoted to a column beside it rather than stacked under
+   it. The point of this season is that a reader can see the source without
+   hunting for it — putting it alongside the claim says that better than
+   putting it below, and it uses the width the measure gives back. */
+.kx-season-intro { max-width: none; }
+@media (min-width: 1040px) {
+  .kx-season-intro {
+    display: grid;
+    grid-template-columns: minmax(0, var(--kx-measure)) minmax(250px, 1fr);
+    column-gap: clamp(28px, 3.4vw, 54px);
+    align-items: start;
+  }
+  .kx-season-intro > .kx-prov {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    margin-top: 0;
+    position: sticky;
+    top: 86px;
+  }
+  .kx-season-intro > .kx-claim,
+  .kx-season-intro > .kx-caution { grid-column: 1; }
+}
+@media (max-width: 1039px) {
+  .kx-season-intro > .kx-claim,
+  .kx-season-intro > .kx-caution { max-width: var(--kx-measure); }
 }
