@@ -229,12 +229,49 @@ function provenancePanel(sources, opts = {}) {
     </aside>`;
 }
 
+// A small mooshika who scurries in and settles at Ganesha's feet. Pure CSS,
+// decorative only (aria-hidden), and it simply appears in place when the
+// visitor has asked for reduced motion.
+function mooshika() {
+  return `<div class="kx-mooshika" aria-hidden="true">
+        <svg viewBox="0 0 126 66" xmlns="http://www.w3.org/2000/svg">
+          <!-- facing RIGHT, because he is running toward Ganesha -->
+          <path class="kx-moo-tail" d="M23 50C11 53 2 47 4 37c1-5 5-8 9-8"
+            stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+          <ellipse class="kx-moo-foot kx-moo-foot-a" cx="44" cy="57" rx="6.5" ry="3.4" fill="currentColor"/>
+          <ellipse class="kx-moo-foot kx-moo-foot-b" cx="72" cy="57" rx="6.5" ry="3.4" fill="currentColor"/>
+          <circle cx="74" cy="24" r="11.5" fill="currentColor"/>
+          <circle cx="74" cy="24" r="5.5" fill="#3a2407" opacity=".45"/>
+          <path d="M22 52C12 50 12 34 25 30c12-4 34-6 52-2 10 2 20 6 28 12 3 2 7 4 10 5 2 .6 2 2.4 0 3-5 1.5-11 2-17 1-10 5-38 8-56 7-10-.6-16-2-20-4Z"
+            fill="currentColor"/>
+          <circle cx="97" cy="41" r="2.3" fill="#3a2407" opacity=".85"/>
+          <circle cx="116" cy="46" r="2" fill="#3a2407" opacity=".5"/>
+          <path d="M112 50c4 3 8 4 12 4M112 52c3 4 6 6 10 7" stroke="currentColor"
+            stroke-width="1.5" stroke-linecap="round" opacity=".75"/>
+        </svg>
+      </div>`;
+}
+
 function seasonHero(season, sub) {
-  return `<header class="kx-season-hero">
-      <p class="kx-eyebrow">${escHtml(season.eyebrow || 'Khatakshetra · Season')}</p>
-      <h1>${escHtml(sub ? sub.title : season.title)}</h1>
-      <p class="kx-season-thesis">${escHtml(sub ? sub.hook : season.thesis)}</p>
-      ${sub ? `<p class="kx-season-back"><a href="/${escHtml(season.slug)}">&larr; ${escHtml(season.title)}</a></p>` : ''}
+  const copy = `<div class="kx-hero-copy">
+        <p class="kx-eyebrow">${escHtml(season.eyebrow || 'Khatakshetra · Season')}</p>
+        <h1>${escHtml(sub ? sub.title : season.title)}</h1>
+        <p class="kx-season-thesis">${escHtml(sub ? sub.hook : season.thesis)}</p>
+        ${sub ? `<p class="kx-season-back"><a href="/${escHtml(season.slug)}">&larr; ${escHtml(season.title)}</a></p>` : ''}
+      </div>`;
+
+  // Only the season home gets the full two-column hero; the article pages stay
+  // a single reading column.
+  if (sub) return `<header class="kx-season-hero">${copy}</header>`;
+
+  const art = ogImageFor([season.ogImage]);
+  return `<header class="kx-season-hero is-hub">
+      ${copy}
+      <div class="kx-hero-art">
+        <img src="${escHtml(art)}" alt="${escHtml(season.title)}" fetchpriority="high"
+          onerror="this.closest('.kx-hero-art').classList.add('is-bare')">
+        ${mooshika()}
+      </div>
     </header>`;
 }
 
@@ -323,7 +360,7 @@ ${headBlock({ title: pageTitle, description: metaDesc, canonicalUrl, ogType: 'we
                 `<script type="application/ld+json">${JSON.stringify(crumbs)}</script>`].join('\n  ') })}
 <body class="kx-season" data-kx-season="${escHtml(season.slug)}">
 ${navBlock()}
-<main class="season-page">
+<main class="season-page is-hub">
 ${seasonHero(season)}
 ${seasonNav(season, '')}
 
