@@ -275,7 +275,7 @@ ul:not(.key-facts):not(.cta-links):not(.related-links) { padding-left: 1.2rem; }
 .kx-rail-obs { font-size: .82rem; color: var(--seo-muted); margin-top: .2rem; }
 
 /* the eight, expanded — native <details>, so keyboard and no-JS both work */
-.kx-forms-list { display: grid; gap: .6rem; }
+.kx-forms-list { display: grid; gap: .6rem; }  /* overridden by the gallery rules below */
 .kx-form {
   border: 1px solid var(--seo-line); border-radius: 12px; background: var(--seo-panel);
   scroll-margin-top: 80px;
@@ -421,10 +421,13 @@ ul:not(.key-facts):not(.cta-links):not(.related-links) { padding-left: 1.2rem; }
    position: sticky elsewhere on the page keeps working. */
 body.kx-season { overflow-x: clip; }
 
+/* The band sits outside <main>, so it is simply full width — no 100vw and no
+   negative margins, which is what was producing an 8px horizontal overflow
+   (100vw counts the scrollbar gutter; the page's own width does not). */
 .kx-hero-band {
   position: relative;
-  margin: -18px calc(50% - 50vw) 34px;
-  width: 100vw;
+  margin: 0 0 34px;
+  width: 100%;
   padding: clamp(28px, 4.5vw, 58px) 0 clamp(26px, 3.5vw, 44px);
   background:
     radial-gradient(120% 150% at 72% 18%, rgba(224, 168, 74, .17), transparent 58%),
@@ -439,16 +442,20 @@ body.kx-season { overflow-x: clip; }
   padding: 0 clamp(18px, 4vw, 56px);
 }
 
-.kx-season-hero.is-hub {
+/* `is-split` = the two-column hero, used by every season page. `is-hub` on
+   <main> means "this is the season home" and controls width only — the two
+   were the same class until articles gained the band, which made `is-hub`
+   appear on pages that are not the hub. */
+.kx-season-hero.is-split {
   display: grid;
   grid-template-columns: minmax(0, 1.04fr) minmax(0, .96fr);
   gap: clamp(28px, 4vw, 66px);
   align-items: center;
   margin: 0;
 }
-.kx-season-hero.is-hub .kx-hero-copy { min-width: 0; }
-.kx-season-hero.is-hub h1 { margin: .12em 0 .4em; }
-.kx-season-hero.is-hub .kx-season-thesis { max-width: 34em; }
+.kx-season-hero.is-split .kx-hero-copy { min-width: 0; }
+.kx-season-hero.is-split h1 { margin: .12em 0 .4em; }
+.kx-season-hero.is-split .kx-season-thesis { max-width: 34em; }
 
 /* The artwork. Sixteen paintings were commissioned for this season; the hero
    should show one rather than describing them. */
@@ -573,10 +580,100 @@ body.kx-season { overflow-x: clip; }
 }
 
 @media (max-width: 860px) {
-  .kx-season-hero.is-hub { grid-template-columns: 1fr; gap: 22px; }
-  .kx-season-hero.is-hub .kx-hero-copy { order: 1; }
+  .kx-season-hero.is-split { grid-template-columns: 1fr; gap: 22px; }
+  .kx-season-hero.is-split .kx-hero-copy { order: 1; }
   .kx-hero-art { order: 2; }
   .kx-hero-foot { grid-template-columns: 1fr; }
   .kx-hero-foot .kx-season-legend { justify-content: flex-start; }
   .kx-mooshika { width: 84px; }
+}
+
+/* ── Article pages: the same band, minus the mouse ──────────────────────────
+   An article opened cold from search used to begin with four lines of text on
+   a black field and nothing else, while sixteen paintings sat below the fold. */
+.kx-hero-band.is-article { margin-bottom: 26px; }
+.kx-hero-band.is-article .kx-season-hero.is-split {
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  align-items: center;
+}
+.kx-hero-band.is-article .kx-hero-art img { aspect-ratio: 1 / 1; }
+.kx-hero-band.is-article .kx-season-back { margin-bottom: 0; }
+
+/* A block that steps outside the reading column. Prose stays narrow because
+   long lines are hard to read; a gallery has no such excuse. Capped against
+   the viewport so it can never introduce a horizontal scrollbar. */
+.kx-breakout {
+  width: min(1180px, calc(100vw - 40px));
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ── The eight, as a gallery ────────────────────────────────────────────────
+   These paintings are the reason the page exists, so they are visible on
+   arrival rather than hidden behind eight identical collapsed bars. What
+   stays folded is the long reading. */
+.kx-forms.kx-breakout .kx-forms-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: clamp(14px, 1.6vw, 22px);
+  /* stretch, not start: cards in a row match height, so the disclosure line
+     sits on one baseline across the row instead of stepping. */
+  align-items: stretch;
+}
+article.kx-form {
+  border: 1px solid rgba(224, 168, 74, .2);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(58, 36, 16, .5), rgba(30, 19, 9, .5));
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.kx-form-shot { position: relative; line-height: 0; background: rgba(0, 0, 0, .35); }
+.kx-form-shot img {
+  display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+  border-bottom: 1px solid rgba(224, 168, 74, .18);
+}
+.kx-form-shot.is-bare img { display: none; }
+.kx-form-shot.is-bare { min-height: 8px; }
+article.kx-form .kx-form-n {
+  position: absolute; top: 10px; left: 10px;
+  width: 30px; height: 30px; border-radius: 50%;
+  display: grid; place-items: center;
+  font-family: 'Cinzel', serif; font-size: .86rem; line-height: 1;
+  color: #2a1a08; background: rgba(232, 185, 79, .92);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
+}
+article.kx-form .kx-form-khanda {
+  position: absolute; bottom: 10px; right: 10px;
+  padding: 3px 9px; border-radius: 999px;
+  font-size: .7rem; letter-spacing: .04em; white-space: nowrap;
+  color: #f6ead2; background: rgba(14, 8, 3, .82);
+  border: 1px solid rgba(224, 168, 74, .34);
+  backdrop-filter: blur(3px);
+}
+.kx-form-txt { padding: 1rem 1.05rem 1.05rem; display: flex; flex-direction: column; gap: .3rem; flex: 1; }
+.kx-form-txt .kx-form-name { margin: 0; font-family: 'Cinzel', serif; color: var(--seo-gold); font-size: 1.16rem; }
+.kx-form-txt .kx-form-vs { margin: 0; font-size: .92rem; color: var(--seo-ink); }
+.kx-form-txt .kx-form-obs { margin: 0 0 .2rem; font-size: .84rem; color: var(--seo-muted); }
+.kx-form-txt .kx-form-hook { margin: .25rem 0 .7rem; font-style: italic; color: var(--seo-gold); font-size: .95rem; }
+
+.kx-form-more { margin-top: auto; border-top: 1px solid rgba(224, 168, 74, .16); padding-top: .6rem; }
+.kx-form-more > summary {
+  cursor: pointer; list-style: none;
+  font-size: .84rem; letter-spacing: .03em; color: var(--seo-muted);
+}
+.kx-form-more > summary::-webkit-details-marker { display: none; }
+.kx-form-more > summary::after { content: ' \2192'; }
+.kx-form-more[open] > summary { color: var(--seo-gold); }
+.kx-form-more[open] > summary::after { content: ' \2191'; }
+.kx-form-more > summary:focus-visible { outline: 2px solid var(--seo-gold); outline-offset: 3px; border-radius: 6px; }
+.kx-form-more .kx-form-body { padding: .7rem 0 0; }
+.kx-form-asura { margin: 0 0 .9rem; }
+.kx-form-asura img {
+  display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+  border-radius: 10px; border: 1px solid rgba(224, 168, 74, .2);
+}
+.kx-form-asura figcaption {
+  margin-top: .35rem; font-size: .78rem; color: var(--seo-muted); text-align: center;
 }
