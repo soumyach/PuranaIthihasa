@@ -1,0 +1,9 @@
+{
+  "escalation_conditions": ["provider unavailable", "budget cap reached", "ambiguous external result", "repeated critical art QA failure"],
+  "id": "illustration",
+  "inputs": ["approved page prompt package", "approved bibles", "provider capability record", "budget reservation"],
+  "outputs": ["immutable art candidate", "provider audit record", "artifact metadata"],
+  "responsibilities": ["use only an approved adapter", "avoid baked lettering", "retry only failed page or panel", "preserve every candidate"],
+  "schema_version": "1.0",
+  "validation_rules": ["capability check precedes call", "budget reservation precedes call", "idempotency key is durable", "no silent provider fallback"]
+}

@@ -1,0 +1,9 @@
+{
+  "escalation_conditions": ["iconographic evidence conflicts", "significant deviation is requested", "visual rules or benchmark rights are missing"],
+  "id": "art-iconography",
+  "inputs": ["approved manuscript", "source dossier", "authoritative visual rules", "approved style references"],
+  "outputs": ["versioned character bible", "location bible", "iconography bible", "visual-style record"],
+  "responsibilities": ["separate factual evidence from style references", "record required and prohibited attributes", "invalidate dependents when a bible hash changes"],
+  "schema_version": "1.0",
+  "validation_rules": ["each sacred attribute has evidence or explicit classification", "style approval is hash-scoped", "missing rules blocks output"]
+}

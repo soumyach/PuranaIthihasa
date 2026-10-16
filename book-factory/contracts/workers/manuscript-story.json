@@ -1,0 +1,9 @@
+{
+  "escalation_conditions": ["requested adaptation changes doctrine", "source choice is ambiguous", "required rules or approved dossier is absent"],
+  "id": "manuscript-story",
+  "inputs": ["approved source-readiness dossier", "book manifest", "rules hash"],
+  "outputs": ["versioned manuscript", "claim map", "page beats"],
+  "responsibilities": ["label claims MULA SAMPRADAYA DRISHTI or KALPANA", "preserve approved source choices", "keep narration and dialogue structured"],
+  "schema_version": "1.0",
+  "validation_rules": ["manuscript completeness passes", "all material claims have provenance", "Kalpana is visibly labeled"]
+}

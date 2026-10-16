@@ -1,0 +1,17 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/page-script.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "dialogue": {"items": {"type": "string"}, "type": "array"},
+    "event_ids": {"items": {"type": "string"}, "type": "array"},
+    "narration": {"items": {"type": "string"}, "type": "array"},
+    "page_id": {"type": "string"},
+    "page_number": {"minimum": 1, "type": "integer"},
+    "panels": {"items": {"type": "object"}, "type": "array"},
+    "version": {"minimum": 1, "type": "integer"}
+  },
+  "required": ["page_id", "page_number", "version", "event_ids", "panels", "narration", "dialogue"],
+  "title": "Page and panel script",
+  "type": "object"
+}

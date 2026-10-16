@@ -1,0 +1,14 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/qa-report.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "findings": {"items": {"type": "object"}, "type": "array"},
+    "gate": {"type": "string"},
+    "id": {"type": "string"},
+    "result": {"enum": ["PASS", "FIX", "ESCALATE"], "type": "string"}
+  },
+  "required": ["id", "gate", "result", "findings"],
+  "title": "Quality-gate result",
+  "type": "object"
+}

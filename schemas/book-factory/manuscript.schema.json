@@ -1,0 +1,17 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/manuscript.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "audience": {"type": "string"},
+    "beats": {"items": {"type": "object"}, "minItems": 1, "type": "array"},
+    "book_id": {"type": "string"},
+    "ending": {"type": "string"},
+    "source_classification": {"enum": ["MULA", "SAMPRADAYA", "DRISHTI", "KALPANA"], "type": "string"},
+    "title": {"type": "string"},
+    "version": {"minimum": 1, "type": "integer"}
+  },
+  "required": ["book_id", "version", "title", "audience", "beats", "ending", "source_classification"],
+  "title": "Versioned manuscript",
+  "type": "object"
+}

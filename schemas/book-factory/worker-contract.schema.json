@@ -1,0 +1,17 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/worker-contract.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "escalation_conditions": {"items": {"type": "string"}, "type": "array"},
+    "id": {"type": "string"},
+    "inputs": {"items": {"type": "string"}, "type": "array"},
+    "outputs": {"items": {"type": "string"}, "type": "array"},
+    "responsibilities": {"items": {"type": "string"}, "type": "array"},
+    "schema_version": {"type": "string"},
+    "validation_rules": {"items": {"type": "string"}, "type": "array"}
+  },
+  "required": ["schema_version", "id", "inputs", "outputs", "responsibilities", "validation_rules", "escalation_conditions"],
+  "title": "Specialist worker contract",
+  "type": "object"
+}

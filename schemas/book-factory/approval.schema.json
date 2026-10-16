@@ -1,0 +1,17 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/approval.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "approval_type": {"enum": ["VISUAL_STYLE_OR_CHARACTER_FAMILY", "SOURCE_OR_THEOLOGICAL_UNCERTAINTY", "ICONOGRAPHY_DEVIATION", "BUDGET_OVERRUN", "REPEATED_QA_FAILURE"], "type": "string"},
+    "approver": {"type": "object"},
+    "decision": {"enum": ["PASS", "PASS_WITH_CONDITIONS", "FAIL", "REVOKED"], "type": "string"},
+    "id": {"type": "string"},
+    "scope": {"type": "object"},
+    "subject_hash": {"type": "string"},
+    "subject_type": {"type": "string"}
+  },
+  "required": ["id", "approval_type", "subject_type", "subject_hash", "scope", "approver", "decision"],
+  "title": "Immutable approval record",
+  "type": "object"
+}

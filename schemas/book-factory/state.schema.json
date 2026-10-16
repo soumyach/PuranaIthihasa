@@ -1,0 +1,16 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/state.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "attempts": {"type": "object"},
+    "book_id": {"type": "string"},
+    "completed_stages": {"items": {"type": "string"}, "type": "array"},
+    "current_stage": {"enum": ["QUEUED", "SOURCE_CHECK", "MANUSCRIPT", "EDITORIAL_QA", "STORYBOARD", "CHARACTER_BIBLE", "ART_PROOFS", "AWAITING_STYLE_APPROVAL", "ILLUSTRATION", "LETTERING", "PDF_LAYOUT", "VISUAL_QA", "READY_FOR_PUBLICATION", "BLOCKED", "FAILED"], "type": "string"},
+    "last_event_id": {"type": "string"},
+    "version": {"minimum": 1, "type": "integer"}
+  },
+  "required": ["book_id", "current_stage", "version", "last_event_id", "completed_stages", "attempts"],
+  "title": "Book production state",
+  "type": "object"
+}

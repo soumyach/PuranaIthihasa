@@ -1,0 +1,9 @@
+{
+  "escalation_conditions": ["a repair would change approved theology or outcome", "violence or age suitability needs a human decision", "three repeated QA failures"],
+  "id": "family-editor",
+  "inputs": ["immutable manuscript version", "audience contract", "source-readiness dossier"],
+  "outputs": ["editorial QA report", "bounded repair requests"],
+  "responsibilities": ["review clarity pacing dignity and age suitability", "remain independent of manuscript authorship", "never mutate the reviewed version"],
+  "schema_version": "1.0",
+  "validation_rules": ["findings identify exact beats", "critical failures cannot average to PASS", "reviewer differs from creator"]
+}

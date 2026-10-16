@@ -1,0 +1,9 @@
+{
+  "escalation_conditions": ["text repair changes meaning", "licensed fonts are missing", "visual backend is unavailable", "critical PDF or source finding remains"],
+  "id": "typesetter-independent-qa",
+  "inputs": ["approved art", "structured lettering", "page layouts", "approved manuscript", "bibles", "qa policy"],
+  "outputs": ["editable page source", "proof metadata", "PDF metadata", "independent QA reports"],
+  "responsibilities": ["preserve editable text layers", "validate page order and 3:4 geometry", "review independently from upstream creators", "never publish or deploy"],
+  "schema_version": "1.0",
+  "validation_rules": ["caption dialogue duplication check passes", "continuity and source gates pass", "visual QA is ESCALATE until a backend exists", "critical findings block readiness"]
+}

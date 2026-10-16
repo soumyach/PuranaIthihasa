@@ -1,0 +1,14 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/bible.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "book_id": {"type": "string"},
+    "entries": {"items": {"properties": {"evidence_ids": {"items": {"type": "string"}, "type": "array"}, "id": {"type": "string"}, "prohibited_attributes": {"items": {"type": "string"}, "type": "array"}, "required_attributes": {"items": {"type": "string"}, "type": "array"}}, "required": ["id", "required_attributes", "prohibited_attributes", "evidence_ids"], "type": "object"}, "type": "array"},
+    "kind": {"enum": ["CHARACTER", "LOCATION", "ICONOGRAPHY", "VISUAL_STYLE"], "type": "string"},
+    "version": {"minimum": 1, "type": "integer"}
+  },
+  "required": ["book_id", "version", "kind", "entries"],
+  "title": "Versioned production bible",
+  "type": "object"
+}
