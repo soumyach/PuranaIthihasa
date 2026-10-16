@@ -1,6 +1,6 @@
-# Khatakshetra Book Factory — Foundation PR1
+# Khatakshetra Book Factory — Foundation PR2
 
-This milestone supplies the offline, deterministic control plane for future book production. It does not generate a manuscript, image, page, PDF, pull request, deployment, or public release.
+This milestone extends the offline control plane with evidence-grounded source dossiers, Story Packets, narrative contracts, separate character/location bible contracts, independent editorial gates, and scope-safe approvals. It does not generate a manuscript, image, page, PDF, pull request, deployment, or public release. See `docs/BOOK_FACTORY_FOUNDATION_PR2.md` for the complete execution report.
 
 ## Command interface
 
@@ -10,6 +10,9 @@ From the repository root, use the checked-in launcher:
 ./factory status
 ./factory list-books
 ./factory check-readiness
+./factory missing-inputs
+./factory source-dossier --book-id ID
+./factory story-packet --spine-id SPINE_ID
 ./factory produce-next --dry-run
 ./factory resume --book-id ID
 ```
@@ -22,7 +25,7 @@ The synthetic command path is explicit and never changes the authoritative catal
 ./factory --catalogue book-factory/fixtures/synthetic-book/catalogue.json produce-next --dry-run
 ```
 
-All commands are repository-local and make no network or provider calls. `produce-next` requires `--dry-run` in PR1. `resume` reads durable state but never advances an unsupported stage; it returns `NOT_IMPLEMENTED` or a concrete blocker.
+All commands are repository-local and make no network or provider calls. `produce-next` still requires `--dry-run`. `source-dossier` writes only with explicit `--write`; otherwise it and `story-packet` are read-only. `resume` reads durable state but never advances an unsupported stage.
 
 ## Implemented
 
@@ -30,9 +33,13 @@ All commands are repository-local and make no network or provider calls. `produc
 - Readiness values `READY`, `NEEDS_SOURCE_REVIEW`, `INCOMPLETE_SOURCE`, `BLOCKED`, and `COMPLETED`; selection is by ascending priority then stable book ID, and considers only `READY` entries.
 - Read-only access to complete graph spines, ordered events, passages, evidence, related entities/relationships/boons/powers, variants, review flags, and bounded-completeness metadata.
 - Invocation of the existing graph validator with a before/after byte-hash guard.
+- Hash-addressed source-readiness dossiers that separately assess bounded arcs, chapter extraction, source examination, critical flags, and rights.
+- Evidence-grounded Story Packets with ordered events, claims, characters, relationships, conflicts, motivations, powers, citations, variants, and explicit adaptation boundaries.
+- Deterministic manuscript validation plus an independent editorial gate that escalates when semantic review is unavailable.
+- Separate character and location bible schemas with identity and source-scope controls.
 - Replayable append-only events and atomic `state.json` materialization for the requested lifecycle, plus `BLOCKED` and `FAILED` recovery.
 - Deterministic book/page/event/job/artifact IDs, immutable content-addressed artifacts, operation idempotency, retry bounds, one-active-book lease, and bounded concurrency configuration.
-- Immutable approval records for new visual/character style, source/theological uncertainty, iconography deviation, budget overrun, and repeated QA failure. Exact-hash inheritance is allowed only for declared scopes and invalidators.
+- Immutable approval records for series, collection, character-family, book-exception, and manuscript-dispute decisions in addition to PR1 approvals. Inheritance also binds source scope, tradition, edition, evidence hash, expiry, and invalidators.
 - Provider-neutral language model, image/edit, PDF, and visual-evaluation contracts. Every production capability is unavailable by default with an actionable setup hint.
 - Hard budget reservation before provider execution. The checked-in policy permits zero paid spend.
 - Deterministic `PASS` / `FIX` / `ESCALATE` reports for source-event coverage, claim provenance, manuscript completeness, character/iconography fields, scene continuity, caption/dialogue duplication, page order, and PDF 3:4 geometry/duplicate render metadata.
@@ -80,18 +87,19 @@ Any active stage can enter `BLOCKED` or `FAILED` with a reason and exact `resume
 
 Approval records bind a decision to the exact subject hash, scope, approver identity, evidence, conditions, and invalidators. Artifact creators cannot issue their own independent approval. Routine page repair stays inside its retry/QA loop and needs no user approval. New style families, unresolved theology, significant iconography deviations, budget overruns, and repeated failures require an explicit persisted decision.
 
-Reusable approvals must opt into inheritance, keep the identical approved hash, target a descendant scope, and have no changed invalidator. Source-readiness, manuscript, page-composition, and story-specific theological approvals are never inheritable.
+Reusable approvals must opt into inheritance, keep the identical approved hash, target a descendant scope, retain the same source scope/tradition/edition/evidence hash, remain unexpired, and have no changed invalidator. Source-readiness, manuscript, page-composition, book-specific theological exceptions, and manuscript source disputes are never inheritable.
 
 ## Adding a provider later
 
 Implement `Provider.capabilities()`, `estimate_minor_units()`, and `execute()` for one provider kind. Register it only after credentials, rights, spending authority, retry/recovery behavior, and benchmark evaluation are approved. Capability checks and budget reservation must pass before `execute`; do not log secrets or silently switch providers. Paid calls also require a durable intent/reconciliation ledger in a later milestone.
 
-## Missing inputs and blockers
+## Authoritative inputs and blockers
 
-- `MYTHOLOGY_COMIC_RULES.md` is absent. Production fails closed as `BLOCKED_STANDARD`; no rule is reconstructed.
-- The authoritative 78-book catalogue is absent.
-- The named visual benchmark books and rights notes are absent.
+- `MYTHOLOGY_COMIC_RULES.md` is imported unchanged and exact-hash registered.
+- Both named visual benchmark PDFs are imported unchanged as presentation-only references; rights remain unresolved.
+- The authoritative 78-book catalogue is absent, so `books/catalogue.json` remains empty.
 - DM08 Manuscript v2 is absent and no DM08 production record was created.
+- The 122,897,487-byte Enemy benchmark requires an approved large-file policy before a GitHub push.
 - No approved image/LLM/visual-evaluation provider, credential, quota, or price is configured.
 - No licensed pinned font family or approved Git LFS quota/storage policy exists.
 - Human theological/iconographic reviewer identities are not configured.
@@ -102,8 +110,8 @@ The user-specified lifecycle replaces the audit document's more granular propose
 
 The requested six-specialist model combines lettering/PDF responsibilities with independent QA in one machine-readable contract, rather than the seven workers pictured in the audit. Independence is still enforced by approver/creator identity and immutable reviewed artifacts.
 
-The plan mentioned a deterministic fixture image provider. To honor the stricter instruction not to simulate provider success, PR1 ships only its unavailable capability contract. A test-only implementation can be added when a later milestone explicitly needs provider-flow testing.
+The plan mentioned a deterministic fixture image provider. To honor the stricter instruction not to simulate provider success, the foundation ships only its unavailable capability contract. A test-only implementation can be added when a later milestone explicitly needs provider-flow testing.
 
 No Git LFS patterns are added because quota/billing authorization is still unknown. CI instead blocks oversized normal-Git binaries under `books/`.
 
-PR1 groups closely related foundation logic into `state.py`, `quality.py`, and the provider base contract instead of adding empty stage-specific Python modules from the proposed tree. Stage-specific modules will be introduced only when their implementations arrive, avoiding executable-looking placeholders.
+The foundation groups closely related control-plane logic into focused modules rather than adding empty stage-specific placeholders. PR2 adds stage modules only for source intelligence, narrative validation, editorial QA, and bibles because those contracts are now executable.

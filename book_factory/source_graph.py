@@ -19,6 +19,8 @@ TABLES = {
     "relationships": "relationships.json",
     "powers": "boons_and_powers.json",
     "variants": "variants_and_conflicts.json",
+    "source_registry": "source_registry.json",
+    "chapter_coverage": "chapter_coverage.json",
 }
 
 
@@ -68,6 +70,17 @@ class ReadOnlySourceGraph:
             key=lambda item: item["id"],
         )
 
+    def story_spine(self, spine_id):
+        spine = next((item for item in self._load("spines") if item["id"] == spine_id), None)
+        if not spine:
+            raise ContractError("unknown story spine %s" % spine_id)
+        return spine
+
+    def source_record(self, source_id):
+        registry = self._load("source_registry")
+        records = registry.get("sources", []) if isinstance(registry, dict) else registry
+        return next((item for item in records if item.get("id") == source_id), None)
+
     @staticmethod
     def _review_records(value):
         records = []
@@ -83,10 +96,7 @@ class ReadOnlySourceGraph:
         return records
 
     def story_packet(self, spine_id):
-        spines = {item["id"]: item for item in self._load("spines")}
-        spine = spines.get(spine_id)
-        if not spine:
-            raise ContractError("unknown story spine %s" % spine_id)
+        spine = self.story_spine(spine_id)
         event_index = {item["id"]: item for item in self._load("events")}
         events = [event_index[event_id] for event_id in spine["event_ids"]]
         events.sort(key=lambda item: item["sequence"])
@@ -125,6 +135,12 @@ class ReadOnlySourceGraph:
             or item.get("id") in power_ids
             or item.get("id") in spine["event_ids"]
         ]
+        coverage = [
+            item for item in self._load("chapter_coverage")
+            if item.get("source_id") == spine["source_id"]
+            and (not item.get("witness_id") or item.get("witness_id") == spine.get("witness_id"))
+            and passage_ids.intersection(item.get("passage_ids", []))
+        ]
         return {
             "graph_hash": self.graph_hash(),
             "spine": spine,
@@ -136,9 +152,15 @@ class ReadOnlySourceGraph:
             "boons_and_powers": powers,
             "variants_and_conflicts": variants,
             "unresolved_review_flags": unresolved,
+            "source": self.source_record(spine["source_id"]),
+            "chapter_coverage": coverage,
             "completeness": {
                 "bounded_spine_status": spine["status"],
                 "basis": spine.get("completeness_basis"),
+                "chapter_extraction_status": "COMPLETE" if coverage and all(
+                    item.get("state") == "COMPLETE" and item.get("read_entire_chapter")
+                    for item in coverage
+                ) else "INCOMPLETE",
                 "not_exhaustive_scripture_verification": True,
             },
         }

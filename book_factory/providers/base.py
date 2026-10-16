@@ -1,4 +1,4 @@
-"""Provider-neutral contracts. Foundation PR1 ships no successful backend."""
+"""Provider-neutral contracts. Foundation PR2 ships no successful backend."""
 
 from abc import ABC, abstractmethod
 

@@ -1,5 +1,7 @@
 # Khatakshetra Autonomous Book Factory — Implementation Plan
 
+> Foundation status: PR1 established the offline control plane. PR2 implements source-readiness dossiers, Story Packets, narrative/editorial contracts, bible validation, and scoped approval inheritance. See `docs/BOOK_FACTORY_FOUNDATION_PR2.md`. Manuscript generation remains deferred to PR3.
+
 Status: architecture proposal only; no factory or book has been generated  
 Audit date: 2026-10-16  
 Repository: `https://github.com/soumyach/PuranaIthihasa`  

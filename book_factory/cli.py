@@ -9,7 +9,7 @@ from .errors import FactoryError
 
 
 def build_parser():
-    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory Foundation PR1")
+    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory Foundation PR2")
     parser.add_argument("--root", default=".", help="repository root (default: current directory)")
     parser.add_argument("--catalogue", help="explicit catalogue path (intended for offline fixtures and validation)")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -22,6 +22,12 @@ def build_parser():
     resume = subparsers.add_parser("resume", help="inspect resumable state without fabricating work")
     resume.add_argument("--book-id", required=True)
     subparsers.add_parser("validate", help="validate foundation contracts and the source graph")
+    subparsers.add_parser("missing-inputs", help="show the exact authoritative-input inventory")
+    dossier = subparsers.add_parser("source-dossier", help="build a source-readiness dossier")
+    dossier.add_argument("--book-id", required=True)
+    dossier.add_argument("--write", action="store_true", help="persist an immutable dossier version")
+    packet = subparsers.add_parser("story-packet", help="build a story packet from one graph spine")
+    packet.add_argument("--spine-id", required=True)
     subparsers.add_parser("next", help="alias for a dry-run next-book selection")
     return parser
 
@@ -40,6 +46,12 @@ def run(args):
         return director.resume(args.book_id)
     if args.command == "validate":
         return director.validate()
+    if args.command == "missing-inputs":
+        return director.input_report()
+    if args.command == "source-dossier":
+        return director.source_dossier(args.book_id, args.write)
+    if args.command == "story-packet":
+        return director.story_packet(args.spine_id)
     if args.command == "next":
         return director.produce_next(True)
     raise AssertionError("unreachable")

@@ -4,14 +4,21 @@
   "additionalProperties": true,
   "properties": {
     "book_id": {"type": "string"},
+    "blockers": {"items": {"type": "object"}, "type": "array"},
     "claim_mappings": {"items": {"type": "object"}, "type": "array"},
+    "dimensions": {"type": "object"},
+    "dossier_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
     "graph_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "id": {"type": "string"},
+    "not_exhaustive_scripture_verification": {"const": true, "type": "boolean"},
+    "rights": {"type": "object"},
     "rules_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
     "status": {"enum": ["READY", "NEEDS_SOURCE_REVIEW", "INCOMPLETE_SOURCE", "BLOCKED"], "type": "string"},
+    "story_packets": {"items": {"type": "object"}, "type": "array"},
     "story_spine_ids": {"items": {"type": "string"}, "type": "array"},
     "unresolved_flags": {"items": {"type": "object"}, "type": "array"}
   },
-  "required": ["book_id", "status", "graph_hash", "rules_hash", "story_spine_ids", "claim_mappings", "unresolved_flags"],
+  "required": ["id", "book_id", "status", "graph_hash", "rules_hash", "dossier_hash", "story_spine_ids", "story_packets", "claim_mappings", "rights", "dimensions", "blockers", "unresolved_flags", "not_exhaustive_scripture_verification"],
   "title": "Source-readiness dossier",
   "type": "object"
 }

@@ -2,8 +2,8 @@
   "escalation_conditions": ["a repair would change approved theology or outcome", "violence or age suitability needs a human decision", "three repeated QA failures"],
   "id": "family-editor",
   "inputs": ["immutable manuscript version", "audience contract", "source-readiness dossier"],
-  "outputs": ["editorial QA report", "bounded repair requests"],
-  "responsibilities": ["review clarity pacing dignity and age suitability", "remain independent of manuscript authorship", "never mutate the reviewed version"],
+  "outputs": ["editorial QA report", "specific beat-level findings", "bounded repair requests"],
+  "responsibilities": ["review clarity pacing dignity age suitability identity distinctness and source fidelity", "remain independent of manuscript authorship", "never mutate the reviewed version", "escalate rather than fake unavailable semantic review"],
   "schema_version": "1.0",
-  "validation_rules": ["findings identify exact beats", "critical failures cannot average to PASS", "reviewer differs from creator"]
+  "validation_rules": ["findings identify exact beats or claims", "critical failures cannot average to PASS", "reviewer differs from creator", "all semantic dimensions are attested before PASS"]
 }

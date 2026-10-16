@@ -101,5 +101,5 @@ def pdf_geometry_and_duplicates(pages, subject_id=None, tolerance=0.001):
 def visual_evaluation_status(subject_id=None):
     return report("VISUAL_EVALUATION", "ESCALATE", [{
         "code": "VISUAL_BACKEND_NOT_IMPLEMENTED",
-        "message": "No image-based visual-review backend is integrated in Foundation PR1",
+        "message": "No image-based visual-review backend is integrated in Foundation PR2",
     }], subject_id)

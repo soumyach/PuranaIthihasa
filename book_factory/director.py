@@ -1,4 +1,4 @@
-"""Single user-facing orchestration facade for Foundation PR1."""
+"""Single user-facing orchestration facade for Foundation PR2."""
 
 import json
 from pathlib import Path
@@ -10,8 +10,9 @@ from .errors import ContractError, NotImplementedStageError
 from .providers.base import FixtureImageProviderContract, ProviderRegistry
 from .rules import rules_status
 from .source_graph import ReadOnlySourceGraph
+from .source_intelligence import DossierStore, SourceReadinessAssessor, StoryPacketBuilder
 from .state import StateStore, next_stage
-from .util import load_json
+from .util import load_json, sha256_bytes
 
 
 class FactoryDirector:
@@ -20,6 +21,7 @@ class FactoryDirector:
         self.books_root = self.root / "books"
         self.catalogue = CatalogueStore(Path(catalogue_path).resolve() if catalogue_path else self.books_root / "catalogue.json")
         self.graph = ReadOnlySourceGraph(self.root / "research" / "source-graph")
+        self.source_intelligence = SourceReadinessAssessor(self.graph, self.root)
         self.providers = ProviderRegistry({"image": FixtureImageProviderContract()})
 
     def _configuration(self):
@@ -45,7 +47,7 @@ class FactoryDirector:
                 states.append({"book_id": book_id, "status": "INVALID", "message": str(exc)})
         return {
             "factory_version": __version__,
-            "implementation": "FOUNDATION_PR1",
+            "implementation": "FOUNDATION_PR2",
             "catalogue_books": len(books),
             "readiness_counts": {state: sum(book["readiness"] == state for book in books) for state in sorted({book["readiness"] for book in books})},
             "active_runs": states,
@@ -53,12 +55,17 @@ class FactoryDirector:
             "providers": self.providers.capabilities(),
             "configuration": self._configuration(),
             "publishing": "NOT_IMPLEMENTED",
+            "inputs": self.input_report(),
         }
+
+    def input_report(self):
+        return load_json(self.root / "book-factory" / "reports" / "missing-inputs.json")
 
     def list_books(self):
         return {"books": self.catalogue.list_books(), "count": len(self.catalogue.list_books())}
 
     def check_readiness(self, book_id=None):
+        before = self.graph.snapshot()
         graph_report = self.graph.verify()
         standards = rules_status(self.root)
         books = self.catalogue.list_books()
@@ -68,18 +75,19 @@ class FactoryDirector:
                 raise ContractError("book %s is not in the catalogue" % book_id)
         decisions = []
         for book in books:
-            blockers = []
-            if book["readiness"] != "READY":
-                blockers.append("CATALOGUE_%s" % book["readiness"])
-            if standards["status"] != "AVAILABLE":
-                blockers.append("BLOCKED_STANDARD")
+            dossier = self.source_intelligence.assess(book)
+            blockers = ["CATALOGUE_%s" % book["readiness"]] if book["readiness"] != "READY" else []
+            blockers.extend(item["code"] for item in dossier["blockers"])
+            blockers.extend(item["code"] for item in dossier["unresolved_flags"])
             decisions.append({
                 "book_id": book["id"],
                 "catalogue_readiness": book["readiness"],
-                "decision": "READY" if not blockers else "BLOCKED",
+                "source_readiness": dossier["status"],
+                "dossier_hash": dossier["dossier_hash"],
+                "decision": "READY" if not blockers and dossier["status"] == "READY" else "BLOCKED",
                 "blockers": blockers,
             })
-        return {
+        result = {
             "graph": {
                 "passed": graph_report["passed"],
                 "graph_hash": graph_report["graph_hash"],
@@ -90,10 +98,35 @@ class FactoryDirector:
             "books": decisions,
             "catalogue_empty": not bool(self.catalogue.list_books()),
         }
+        self.graph.assert_unchanged(before)
+        return result
+
+    def source_dossier(self, book_id, write=False):
+        manifest = self.catalogue.get(book_id)
+        if manifest is None:
+            raise ContractError("book %s is not in the catalogue" % book_id)
+        before = self.graph.snapshot()
+        self.graph.verify()
+        dossier = self.source_intelligence.assess(manifest)
+        validate_named(dossier, self.root / "schemas" / "book-factory", "source-readiness")
+        self.graph.assert_unchanged(before)
+        if write:
+            dossier["stored_at"] = str(DossierStore(self.books_root).put(dossier))
+        else:
+            dossier["mutated"] = False
+        return dossier
+
+    def story_packet(self, spine_id):
+        before = self.graph.snapshot()
+        self.graph.verify()
+        packet = StoryPacketBuilder.build(self.graph.story_packet(spine_id))
+        validate_named(packet, self.root / "schemas" / "book-factory", "story-packet")
+        self.graph.assert_unchanged(before)
+        return packet
 
     def produce_next(self, dry_run=False):
         if not dry_run:
-            raise NotImplementedStageError("Foundation PR1 supports produce-next only with --dry-run")
+            raise NotImplementedStageError("Foundation PR2 supports produce-next only with --dry-run")
         selected = self.catalogue.select_next()
         standards = rules_status(self.root)
         if selected is None:
@@ -143,7 +176,7 @@ class FactoryDirector:
             "book_id": book_id,
             "current_stage": state["current_stage"],
             "requested_stage": target,
-            "message": "Foundation PR1 does not execute production stages",
+            "message": "Foundation PR2 does not execute production stages",
             "mutated": False,
         }
 
@@ -167,11 +200,32 @@ class FactoryDirector:
         fixture = load_json(self.root / "book-factory" / "fixtures" / "synthetic-book" / "catalogue.json")
         validate_named(fixture, schema_root, "catalogue")
         graph_report = self.graph.verify()
+        reference_registry = load_json(self.root / "book-factory" / "references" / "reference-assets.json")
+        reference_assets = []
+        for item in reference_registry["assets"]:
+            path = self.root / item["path"]
+            if not path.is_file():
+                reference_assets.append({
+                    "path": item["path"],
+                    "sha256": item["sha256"],
+                    "availability": "MISSING_LOCAL_REFERENCE",
+                })
+                continue
+            digest = sha256_bytes(path.read_bytes())
+            if digest != item["sha256"] or path.stat().st_size != item["bytes"]:
+                raise ContractError("reference asset hash mismatch", {"path": item["path"], "actual": digest})
+            reference_assets.append({
+                "path": item["path"],
+                "sha256": digest,
+                "availability": "AVAILABLE_LOCAL_REFERENCE",
+            })
         return {
             "status": "PASS",
             "schemas": schemas,
             "worker_contracts": worker_contracts,
             "source_graph": {"passed": graph_report["passed"], "graph_hash": graph_report["graph_hash"]},
             "rules": rules_status(self.root),
-            "note": "missing authoritative rules are a production blocker, not a schema-validation failure",
+            "reference_assets": reference_assets,
+            "input_report": self.input_report(),
+            "note": "Foundation PR2 validates readiness and editorial contracts but does not produce a book",
         }

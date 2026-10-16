@@ -1,0 +1,39 @@
+{
+  "found": [
+    {
+      "destination": "MYTHOLOGY_COMIC_RULES.md",
+      "filename": "MYTHOLOGY_COMIC_RULES.md",
+      "sha256": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070"
+    },
+    {
+      "destination": "book-factory/references/visual-benchmarks/Satyanarayana_Vrata_Katha_Complete_Illustrated_Storybook.pdf",
+      "filename": "Satyanarayana_Vrata_Katha_Complete_Illustrated_Storybook.pdf",
+      "sha256": "82ae125d099ef2608adad705922567df6b553db40dd39af64b77c5de28dcadd2"
+    },
+    {
+      "destination": "book-factory/references/visual-benchmarks/The_Enemy_Who_Multiplied_Original_Size_Combined.pdf",
+      "filename": "The_Enemy_Who_Multiplied_Original_Size_Combined.pdf",
+      "sha256": "3867fccdd8c8755d27ff06c7543d8002cefb7531c1d4f39c743a43bff9c4a29f"
+    }
+  ],
+  "missing": [
+    {
+      "expected_destination": "books/catalogue.json",
+      "filename": "Khatakshetra_Illustrated_Library_Catalogue_v0.1.json",
+      "impact": "The authoritative 78-book, 12-collection catalogue cannot be reconciled or assessed. The production catalogue remains empty."
+    },
+    {
+      "expected_destination": "book-factory/inputs/manuscripts/The_Enemy_Who_Multiplied_Manuscript_v2.md",
+      "filename": "The_Enemy_Who_Multiplied_Manuscript_v2.md",
+      "impact": "DM08 manuscript import and editorial evaluation cannot run. No DM08 production record is created."
+    }
+  ],
+  "search_scope": [
+    "/Users/vellankisriharsha/Documents/Codex",
+    "/Users/vellankisriharsha/Desktop",
+    "/Users/vellankisriharsha/Downloads",
+    "/Users/vellankisriharsha/.codex/attachments",
+    "macOS Spotlight exact-name search"
+  ],
+  "status": "INCOMPLETE_INPUT_SET"
+}

@@ -1,0 +1,37 @@
+{
+  "assets": [
+    {
+      "asset_id": "satyanarayana-illustrated-storybook-v1",
+      "filename": "Satyanarayana_Vrata_Katha_Complete_Illustrated_Storybook.pdf",
+      "bytes": 8222659,
+      "pages": 7,
+      "path": "book-factory/references/visual-benchmarks/Satyanarayana_Vrata_Katha_Complete_Illustrated_Storybook.pdf",
+      "version": "1.0",
+      "role": "VISUAL_PRESENTATION_BENCHMARK_ONLY",
+      "sha256": "82ae125d099ef2608adad705922567df6b553db40dd39af64b77c5de28dcadd2",
+      "source_fact_authority": false,
+      "storage_mode": "LOCAL_UNTRACKED_REFERENCE",
+      "git_tracked": false,
+      "availability_policy": "OPTIONAL_FOR_GENERIC_VALIDATION_REQUIRED_FOR_VISUAL_BENCHMARK_USE",
+      "verified_identity": "cover, middle, and final page visually inspected; PDF metadata inspected"
+    },
+    {
+      "asset_id": "dm08-existing-illustrated-edition-v1",
+      "filename": "The_Enemy_Who_Multiplied_Original_Size_Combined.pdf",
+      "bytes": 122897487,
+      "pages": 30,
+      "path": "book-factory/references/visual-benchmarks/The_Enemy_Who_Multiplied_Original_Size_Combined.pdf",
+      "version": "1.0",
+      "role": "PRIMARY_VISUAL_PRESENTATION_BENCHMARK_ONLY",
+      "sha256": "3867fccdd8c8755d27ff06c7543d8002cefb7531c1d4f39c743a43bff9c4a29f",
+      "source_fact_authority": false,
+      "storage_mode": "LOCAL_UNTRACKED_REFERENCE",
+      "git_tracked": false,
+      "availability_policy": "OPTIONAL_FOR_GENERIC_VALIDATION_REQUIRED_FOR_VISUAL_BENCHMARK_USE",
+      "storage_note": "Kept outside ordinary Git history because the exact 122897487-byte file exceeds GitHub's 100 MiB object limit.",
+      "verified_identity": "cover, middle, and final page visually inspected; PDF metadata inspected"
+    }
+  ],
+  "rights_status": "UNKNOWN_REVIEW_REQUIRED",
+  "schema_version": "1.1"
+}

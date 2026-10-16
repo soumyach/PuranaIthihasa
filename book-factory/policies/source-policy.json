@@ -2,6 +2,9 @@
   "bounded_complete_is_exhaustive_scripture_verification": false,
   "graph_access": "READ_ONLY",
   "partial_spines_selected_by_default": false,
+  "readiness_dimensions": ["bounded_arc", "chapter_extraction", "source_examination", "critical_flags", "rights"],
+  "rights_statuses_allowed_for_ready": ["PERMITTED", "LICENSED", "PUBLIC_DOMAIN_VERIFIED", "OWNED"],
   "schema_version": "1.0",
-  "source_classes": ["MULA", "SAMPRADAYA", "DRISHTI", "KALPANA"]
+  "source_classes": ["MULA", "SAMPRADAYA", "DRISHTI", "KALPANA"],
+  "unsupported_critical_claims": "BLOCKED"
 }

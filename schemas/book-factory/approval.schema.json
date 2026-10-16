@@ -3,13 +3,18 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "additionalProperties": true,
   "properties": {
-    "approval_type": {"enum": ["VISUAL_STYLE_OR_CHARACTER_FAMILY", "SOURCE_OR_THEOLOGICAL_UNCERTAINTY", "ICONOGRAPHY_DEVIATION", "BUDGET_OVERRUN", "REPEATED_QA_FAILURE"], "type": "string"},
+    "approval_type": {"enum": ["VISUAL_STYLE_OR_CHARACTER_FAMILY", "SOURCE_OR_THEOLOGICAL_UNCERTAINTY", "ICONOGRAPHY_DEVIATION", "BUDGET_OVERRUN", "REPEATED_QA_FAILURE", "SERIES_VISUAL_STANDARD", "COLLECTION_STYLE", "CHARACTER_FAMILY", "BOOK_THEOLOGICAL_EXCEPTION", "MANUSCRIPT_SOURCE_DISPUTE"], "type": "string"},
     "approver": {"type": "object"},
     "decision": {"enum": ["PASS", "PASS_WITH_CONDITIONS", "FAIL", "REVOKED"], "type": "string"},
     "id": {"type": "string"},
+    "evidence_hash": {"type": "string"},
+    "edition_id": {},
+    "expires_at": {},
     "scope": {"type": "object"},
+    "source_scope": {},
     "subject_hash": {"type": "string"},
-    "subject_type": {"type": "string"}
+    "subject_type": {"type": "string"},
+    "tradition_id": {}
   },
   "required": ["id", "approval_type", "subject_type", "subject_hash", "scope", "approver", "decision"],
   "title": "Immutable approval record",

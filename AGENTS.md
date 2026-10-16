@@ -5,6 +5,10 @@
 - Use `factory` / `python -m book_factory` as the only Book Factory control interface. Durable files, not chat history, are the system of record.
 - Treat `research/source-graph/` as strictly read-only. Run its existing validator and integrity tests; do not replace them or silently normalize IDs.
 - A complete story spine is a complete bounded chronology, not exhaustive scripture verification.
+- Keep bounded-arc completeness, chapter extraction, source examination, critical flags, and rights as separate readiness dimensions.
+- Every critical Story Packet fact needs evidence; leave missing details `UNSPECIFIED` unless an adaptation is explicitly classified and approved.
+- Editorial semantic PASS requires an independent reviewer or capability; otherwise use `ESCALATE`.
+- Approval inheritance must preserve source scope, tradition, edition, evidence hash, expiry, and provenance.
 - Production must fail closed when `MYTHOLOGY_COMIC_RULES.md`, required evidence, approvals, provider capability, budget, rights, fonts, or storage policy is absent.
 - Never report an unsupported production stage or unavailable visual backend as successful. Use `NOT_IMPLEMENTED`, `BLOCKED`, `FAILED`, `FIX`, or `ESCALATE` as applicable.
 - Do not overwrite approved assets. Add immutable, content-addressed versions and invalidate only their dependents.
