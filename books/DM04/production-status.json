@@ -1,21 +1,47 @@
 {
   "book_id": "DM04",
-  "exact_result": "PRIVATE_MANUSCRIPT_EDITORIALLY_REVIEWED_PUBLICATION_BLOCKED",
-  "independent_editorial_review": "PASS",
-  "latest_manuscript_hash": "40d02a77dedf68f8b9e216822293b8a5911ba9be8c644fe8ca6d434efbdba1fa",
-  "latest_review_hash": "d75c3da76b645f037cb7ab68413370c65ecb614ee43f336723ec46cc4b68117f",
-  "manuscript_draft_completion": "COMPLETE",
+  "component_hashes": {
+    "character_bible": "a0f22e1c57a8ba8bb4ed39b4840dd85f13aef5e3caec0806986e59bba8410914",
+    "location_bible": "85d6ef6982daf75cf18c9ebc34c8857715f23db060ae94a726e8a1fcab709189",
+    "proof_specs": "718b4bc0352c652403a1ca429be5acb170896cbf4cf93e23665e862490276c20",
+    "storyboard": "25cc8bed5368e78c36a3bec43ad03efb7fe2ddc4dd41124ca9ce02bcdcc18185",
+    "typography": "605f269acb50053132a7a313374456ad707c48c2c4dde0b31c075cabfae7b835"
+  },
+  "exact_result": "VISUAL_PREPRODUCTION_REVIEWED_PUBLICATION_BLOCKED",
+  "full_page_immersive_scenes": [
+    4,
+    9,
+    14,
+    23,
+    29,
+    30
+  ],
+  "independent_editorial_review": "PASS_DUAL_PERSPECTIVE",
+  "latest_manuscript_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+  "latest_manuscript_version": 5,
+  "manuscript_draft_completion": "COMPLETE_PR5_LATEST_REVISION",
+  "manuscript_v3_hash": "b4256fcb2d4bf24a9c04559f59c3f0985101ef42c6299392b159fba5e41cfdcd",
+  "preproduction_review_hash": "c0cce041baa11473ed2afdc1ec8a8b185ee124bffa90c1124d5bbef3e19afdd6",
   "private_draft_gate": "PRIVATE_DRAFT_PERMITTED_PUBLICATION_BLOCKED",
+  "proof_specs": 4,
   "publication_blockers": [
     "WORLDWIDE_OR_TARGET_MARKET_PUBLICATION_RIGHTS_NOT_CLEARED",
     "CHAPTER_EXTRACTION_ATOMICALLY_PARTIAL",
     "INDEPENDENT_FULL_ARC_SOURCE_APPROVAL_NOT_ESTABLISHED",
-    "VISUAL_PRODUCTION_NOT_STARTED"
+    "IMAGE_PROVIDER_NOT_CONFIGURED",
+    "VISUAL_SEMANTIC_REVIEW_NOT_EXECUTED",
+    "TYPOGRAPHY_FONT_LICENSE_SELECTION_PENDING",
+    "TRIM_BLEED_AND_EXPORT_PROFILE_NOT_SPECIFIED",
+    "FULL_ILLUSTRATION_PDF_AND_PUBLICATION_OUTSIDE_PR5"
   ],
   "publication_readiness": "BLOCKED",
-  "revision_required": false,
+  "run_stage": "ART_PROOFS",
   "schema_version": "1.0",
+  "scripted_pages": 32,
+  "semantic_visual_review": "NOT_EXECUTED_NO_IMAGES_OR_BACKEND",
   "source_readiness": "BLOCKED",
-  "status_hash": "909d68e1c79a6a0a728f7ce5b698f3d46306d06a258b20bee884d5c0bddbf134",
-  "visual_production": "NOT_STARTED_PR4_BOUNDARY"
+  "status_hash": "4c81b01281901ced4ce00d86208e60c2cf9e4ce18d82833c5ae4fb756569e300",
+  "visual_preproduction": "PASS_DETERMINISTIC_SPECIFICATION_REVIEW",
+  "visual_production": "NOT_STARTED_PR5_BOUNDARY",
+  "visual_proof_generation": "BLOCKED_PROVIDER"
 }

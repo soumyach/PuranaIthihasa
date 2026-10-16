@@ -12,7 +12,10 @@ from .errors import ContractError
 from .util import atomic_json_write, content_hash, load_json, stable_id, utc_now
 
 
-HANDOFF_KINDS = {"MANUSCRIPT_GENERATION", "MANUSCRIPT_REVISION", "EDITORIAL_REVIEW"}
+HANDOFF_KINDS = {
+    "MANUSCRIPT_GENERATION", "MANUSCRIPT_REVISION", "EDITORIAL_REVIEW",
+    "VISUAL_PREPRODUCTION",
+}
 MECHANISM = "CODEX_SPECIALIST_SUBAGENT_HANDOFF"
 
 
@@ -69,7 +72,11 @@ class SessionHandoffStore:
             "request_hash": request_hash,
             "request": request,
             "required_role": required_role,
-            "required_capability": "manuscript_generation" if kind != "EDITORIAL_REVIEW" else "editorial_review",
+            "required_capability": (
+                "editorial_review" if kind == "EDITORIAL_REVIEW" else
+                "visual_preproduction" if kind == "VISUAL_PREPRODUCTION" else
+                "manuscript_generation"
+            ),
             "required_independence_from_writer_id": writer_id,
             "locked_input_hashes": sorted(set(locked_input_hashes)),
             "execution_boundary": {

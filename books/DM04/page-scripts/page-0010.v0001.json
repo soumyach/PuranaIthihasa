@@ -1,0 +1,198 @@
+{
+  "character_ids": [
+    "dm-devi",
+    "dm-lion",
+    "dm-mahisha",
+    "dm-asura-army"
+  ],
+  "continuity_in": "after-page-09",
+  "continuity_out": "after-page-10",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-devi",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-lion",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-mahisha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-asura-army",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-012"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "TWO_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p10-narration",
+      "placement": "caption-safe-region",
+      "text": "Mahiṣāsura and his army approach the sound as Devī's radiance, crown and bow fill the field."
+    }
+  ],
+  "location_id": "battlefield",
+  "moment_ids": [],
+  "narrative_beats": [
+    "Mahiṣāsura and his army approach the sound as Devī's radiance, crown and bow fill the field."
+  ],
+  "page_id": "page-38806388c007c8ff091c6893",
+  "page_number": 10,
+  "panel_count": 2,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-lion",
+        "dm-mahisha",
+        "dm-asura-army"
+      ],
+      "composition": "Wide establishing action",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p10-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false
+      },
+      "location_id": "battlefield",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p10-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Mahiṣāsura and his army approach the sound as Devī's radiance, crown and bow fill the field."
+    },
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-lion",
+        "dm-mahisha",
+        "dm-asura-army"
+      ],
+      "composition": "Closer reaction or consequence beat",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p10-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false
+      },
+      "location_id": "battlefield",
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p10-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Advance the same sourced action without repeating the lettering."
+    }
+  ],
+  "reading_order": [
+    "p10-panel-01",
+    "p10-panel-02"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p10-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-012-a",
+    "claim-012-b"
+  ],
+  "title": "The Army Turns Toward Her",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation"
+  ],
+  "version": 1,
+  "visual_intent": "A cinematic story beat with exact editable lettering and source-bounded imagery."
+}

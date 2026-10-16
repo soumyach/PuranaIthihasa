@@ -4,11 +4,12 @@
   "additionalProperties": true,
   "properties": {
     "book_id": {"type": "string"},
-    "entries": {"items": {"type": "object"}, "type": "array"},
+    "entries": {"items": {"type": "object"}, "minItems": 1, "type": "array"},
+    "manuscript_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
     "kind": {"const": "CHARACTER", "type": "string"},
     "version": {"minimum": 1, "type": "integer"}
   },
-  "required": ["book_id", "version", "kind", "entries"],
+  "required": ["book_id", "version", "kind", "manuscript_hash", "entries"],
   "title": "Character bible",
   "type": "object"
 }

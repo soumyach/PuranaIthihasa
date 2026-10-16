@@ -1,0 +1,200 @@
+{
+  "character_ids": [
+    "dm-devi",
+    "dm-lion",
+    "dm-chikshura"
+  ],
+  "continuity_in": "after-page-16",
+  "continuity_out": "after-page-17",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-devi",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": [
+        "dm-bow",
+        "dm-arrows"
+      ]
+    },
+    {
+      "character_id": "dm-lion",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-chikshura",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-016"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "TWO_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p17-narration",
+      "placement": "caption-safe-region",
+      "text": "Devī answers Cikṣura's arrows, then his horses, driver, bow and banner fall from the fight."
+    }
+  ],
+  "location_id": "battlefield",
+  "moment_ids": [
+    "commander_battles"
+  ],
+  "narrative_beats": [
+    "Devī answers Cikṣura's arrows, then his horses, driver, bow and banner fall from the fight."
+  ],
+  "page_id": "page-354711e6abadf0d5b67a0147",
+  "page_number": 17,
+  "panel_count": 2,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-lion",
+        "dm-chikshura"
+      ],
+      "composition": "Wide establishing composition for Cikṣura's Volley",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p17-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Establish Cikṣura's Volley in battlefield: Devī answers Cikṣura's arrows, then his horses, driver, bow and banner fall from the fight.",
+        "shot_scale": "wide"
+      },
+      "location_id": "battlefield",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p17-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Establish Cikṣura's Volley in battlefield: Devī answers Cikṣura's arrows, then his horses, driver, bow and banner fall from the fight."
+    },
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-lion",
+        "dm-chikshura"
+      ],
+      "composition": "Medium consequence composition for Cikṣura's Volley",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p17-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Move closer on the immediate sourced action or reaction in Cikṣura's Volley; preserve the listed characters, action direction and event boundary.",
+        "shot_scale": "medium"
+      },
+      "location_id": "battlefield",
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p17-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Move closer on the immediate sourced action or reaction in Cikṣura's Volley; preserve the listed characters, action direction and event boundary."
+    }
+  ],
+  "reading_order": [
+    "p17-panel-01",
+    "p17-panel-02"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p17-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-016-a",
+    "claim-016-b"
+  ],
+  "title": "Cikṣura's Volley",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation"
+  ],
+  "version": 2,
+  "visual_intent": "A cinematic story beat with exact editable lettering and source-bounded imagery."
+}

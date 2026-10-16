@@ -1,0 +1,20 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/typography.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {"const": "1.0", "type": "string"},
+    "book_id": {"type": "string"},
+    "version": {"minimum": 1, "type": "integer"},
+    "manuscript_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "canvas": {"type": "object"},
+    "palette": {"items": {"type": "string"}, "minItems": 7, "type": "array"},
+    "text_channels": {"type": "object"},
+    "editable_text_separate": {"const": true, "type": "boolean"},
+    "font_candidates": {"items": {"type": "object"}, "type": "array"},
+    "print_readiness": {"type": "object"}
+  },
+  "required": ["schema_version", "book_id", "version", "manuscript_hash", "canvas", "palette", "text_channels", "editable_text_separate", "font_candidates", "print_readiness"],
+  "title": "Typography and page-format specification",
+  "type": "object"
+}

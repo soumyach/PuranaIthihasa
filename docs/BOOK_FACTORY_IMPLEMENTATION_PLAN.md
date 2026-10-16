@@ -1,6 +1,6 @@
 # Khatakshetra Autonomous Book Factory — Implementation Plan
 
-> Foundation status: PR1 established the offline control plane. PR2 implements source-readiness dossiers, Story Packets, narrative/editorial contracts, bible validation, and scoped approval inheritance. See `docs/BOOK_FACTORY_FOUNDATION_PR2.md`. Manuscript generation remains deferred to PR3.
+> Foundation status: PR1 established the offline control plane; PR2 added source intelligence; PR3/PR4 added the private manuscript and independent editorial loop; PR5 now completes DM04 literary revision and deterministic visual preproduction. Rendering, semantic image review, PDF production, and publication remain blocked or out of scope. See `docs/BOOK_FACTORY_FOUNDATION_PR5.md` for the current executable state.
 
 Status: architecture proposal only; no factory or book has been generated  
 Audit date: 2026-10-16  

@@ -75,3 +75,33 @@ class ManuscriptVersionStore(ImmutableVersionStore):
 class EditorialReviewStore(ImmutableVersionStore):
     def __init__(self, books_root):
         super().__init__(books_root, "editorial-reviews")
+
+
+class CharacterBibleVersionStore(ImmutableVersionStore):
+    def __init__(self, books_root):
+        super().__init__(books_root, "character-bibles")
+
+
+class LocationBibleVersionStore(ImmutableVersionStore):
+    def __init__(self, books_root):
+        super().__init__(books_root, "location-bibles")
+
+
+class StoryboardVersionStore(ImmutableVersionStore):
+    def __init__(self, books_root):
+        super().__init__(books_root, "storyboards")
+
+
+class TypographyVersionStore(ImmutableVersionStore):
+    def __init__(self, books_root):
+        super().__init__(books_root, "typography")
+
+
+class ProofSpecVersionStore(ImmutableVersionStore):
+    def __init__(self, books_root):
+        super().__init__(books_root, "proof-specs")
+
+
+class PreproductionReviewVersionStore(ImmutableVersionStore):
+    def __init__(self, books_root):
+        super().__init__(books_root, "preproduction-reviews")

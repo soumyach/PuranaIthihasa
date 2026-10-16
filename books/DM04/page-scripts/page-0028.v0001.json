@@ -1,0 +1,194 @@
+{
+  "character_ids": [
+    "dm-devi",
+    "dm-mahisha",
+    "dm-gods"
+  ],
+  "continuity_in": "after-page-27",
+  "continuity_out": "after-page-28",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-devi",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-mahisha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "manifestation_id": "dm-mahisha-buffalo",
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-gods",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-021"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "TWO_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p28-narration",
+      "placement": "caption-safe-region",
+      "text": "Devī drinks and laughs, breaks the hurled mountains with arrows and answers the buffalo king's roar."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p28-dialogue",
+      "placement": "speaker-anchored-balloon",
+      "speaker_id": "dm-devi",
+      "text": "Roar while you can, Mahishasura. When this battle is ended, the gods will raise their voices."
+    }
+  ],
+  "location_id": "mahisha-arrival",
+  "moment_ids": [],
+  "narrative_beats": [
+    "Devī drinks and laughs, breaks the hurled mountains with arrows and answers the buffalo king's roar."
+  ],
+  "page_id": "page-e427e9b4b622290ca9db6ab8",
+  "page_number": 28,
+  "panel_count": 2,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-mahisha",
+        "dm-gods"
+      ],
+      "composition": "Wide establishing action",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p28-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false
+      },
+      "location_id": "mahisha-arrival",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p28-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Devī drinks and laughs, breaks the hurled mountains with arrows and answers the buffalo king's roar."
+    },
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-mahisha",
+        "dm-gods"
+      ],
+      "composition": "Closer reaction or consequence beat",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p28-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false
+      },
+      "location_id": "mahisha-arrival",
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p28-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Advance the same sourced action without repeating the lettering."
+    }
+  ],
+  "reading_order": [
+    "p28-panel-01",
+    "p28-panel-02"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p28-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-021-a",
+    "claim-021-b",
+    "claim-021-c"
+  ],
+  "title": "Roar While You Can",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation"
+  ],
+  "version": 1,
+  "visual_intent": "A cinematic story beat with exact editable lettering and source-bounded imagery."
+}

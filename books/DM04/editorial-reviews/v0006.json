@@ -1,0 +1,401 @@
+{
+  "book_id": "DM04",
+  "content_hash": "3e27f4949c673a8d8bd037370577bd8af8642791803e2b674b47e96f831dde7a",
+  "id": "editorial-reviews-9113403fbd4b6723dbaf2848",
+  "kind": "editorial-reviews",
+  "parent_hash": "053700141ba34f4e82e5b3b447c9325dfcf514a6f4eea8ae2e61943abd954d7a",
+  "payload": {
+    "book_id": "DM04",
+    "certification_scope": "SOURCE_FIDELITY_INDEPENDENT_MANUSCRIPT_REVIEW_ONLY",
+    "dimension_assessments": [
+      {
+        "dimension": "causal_sequence",
+        "result": "PASS",
+        "summary": "The manuscript preserves the locked sequence and its material cause-and-effect chain: occupation and displacement lead to the gods' appeal; their radiances manifest as Devi; gifts, roar, army battle, commanders, Mahishasura's buffalo attack and successive forms follow; restraint, half-emergence, beheading, celebration, praise, boon, and disappearance then close the arc. The noose passage now reports transformation without inventing a bond-breaking escape."
+      },
+      {
+        "dimension": "character_and_divine_identity_accuracy",
+        "result": "PASS",
+        "summary": "Devi, Mahishasura, the gods, Devi's lion, and all retained commanders remain distinct. Mahishasura's buffalo, lion, armed-man, elephant, and returned-buffalo bodies are successive forms of the same being; the manifestation correspondences and divine donors remain correctly assigned; no unsupported genealogy or boon origin is added; and disputed Ugradarshana and Bombay-only extra-chief readings are excluded."
+      },
+      {
+        "dimension": "complete_source_event_coverage",
+        "result": "PASS",
+        "summary": "All sixteen required events, dm-event-008 through dm-event-023, are substantively present in the bounded chronology. Required outcomes and mechanisms are retained, including the army's destruction, the commanders' deaths, the form sequence, the half-emerged Mahishasura's explicit beheading, the attributed hymn, the narrow boon, Devi's disappearance, and the later Gauri transition only after closure."
+      },
+      {
+        "dimension": "ending",
+        "result": "PASS",
+        "summary": "The ending is complete before reflection or collection continuity: Mahishasura is dead; the gods and celestial beings celebrate; the gods offer their attributed praise, flowers, perfume, and incense; request remembrance-based relief and prosperity for mortal hymn-singers; receive Devi's agreement; and witness her disappearance. Chapter 8 explicitly finishes the buffalo king's story before the modern reflection and future hook."
+      },
+      {
+        "dimension": "factual_and_theological_accuracy",
+        "result": "PASS",
+        "summary": "Material narrative and theological claims stay within the locked packet. V5 correctly describes Mahishasura's seizure as offices, jurisdictions, and duties rather than acquisition of divine power; preserves the gods' operative radiances; confines the armed-man arrow counter to striking the man, sword, and shield; explicitly preserves the final beheading; and keeps the hymn's cosmic, merciful, and soteriological statements attributed to the gods."
+      },
+      {
+        "dimension": "framing_and_background",
+        "result": "PASS",
+        "summary": "The Medhas-Suratha-Samadhi forest material and labeled modern reflection are bounded literary adaptation, not source fact or doctrine. The claim map classifies frame additions as KALPANA or DRISHTI, dialogue metadata marks them non-verbatim, the Mahishasura arc remains central, and the manuscript does not misrepresent this complete bounded spine as an exhaustive account of the Devi Mahatmya."
+      },
+      {
+        "dimension": "quotation_and_source_notes",
+        "result": "PASS",
+        "summary": "All nineteen dialogue records are marked non-verbatim, sourced speeches are fresh paraphrases, and no invented line is presented as scripture. The source note identifies the exact packet boundary, adaptation status, excluded variants, single-witness gaps, absence of critical collation or blanket theological certification, and continuing block on publication and downstream production."
+      }
+    ],
+    "evidence_checks": [
+      {
+        "claim_ids": [
+          "claim-008-a"
+        ],
+        "event_ids": [
+          "dm-event-008"
+        ],
+        "evidence_ids": [
+          "dm-evidence-008",
+          "dm-sanskrit-evidence-008"
+        ],
+        "finding_code": "DIVINE_JURISDICTIONS_MISSTATED_AS_POWERS",
+        "kind": "PRIOR_FINDING_RESOLUTION",
+        "note": "The prose no longer says Mahishasura acquired the gods' powers. It now stays within the locked office/jurisdiction claim, while the gods' radiances remain available for dm-event-009.",
+        "resolution_excerpt": "He took Indra's office and claimed the offices, jurisdictions and duties held by the gods of fire, wind, moon, waters and the other regions of the world.",
+        "result": "RESOLVED",
+        "section_ids": [
+          "ch-01",
+          "beat-008"
+        ]
+      },
+      {
+        "claim_ids": [
+          "claim-020-a",
+          "claim-020-c",
+          "claim-transform-escalation"
+        ],
+        "event_ids": [
+          "dm-event-020"
+        ],
+        "evidence_ids": [
+          "dm-evidence-020"
+        ],
+        "finding_code": "NOOSE_TRANSFORMATION_MISSTATED_AS_ESCAPE",
+        "kind": "PRIOR_FINDING_RESOLUTION",
+        "note": "The revision reports the sourced transformation from the bound buffalo to lion-form without claiming that the lion tore, broke, or escaped the noose; the noose's physical disposition remains unspecified.",
+        "resolution_excerpt": "The buffalo vanished. In its place, a lion appeared and sprang toward Devi.",
+        "result": "RESOLVED",
+        "section_ids": [
+          "ch-06",
+          "beat-020"
+        ]
+      },
+      {
+        "claim_ids": [
+          "claim-020-b"
+        ],
+        "event_ids": [
+          "dm-event-020"
+        ],
+        "evidence_ids": [
+          "dm-evidence-020"
+        ],
+        "finding_code": "ARMED_MAN_COUNTER_EXCEEDS_LOCKED_EVIDENCE",
+        "kind": "PRIOR_FINDING_RESOLUTION",
+        "note": "The revision matches the locked counter and no longer invents penetration or breakage of the sword and shield.",
+        "resolution_excerpt": "Devi's arrows struck the armed man, his sword and his shield.",
+        "result": "RESOLVED",
+        "section_ids": [
+          "ch-07",
+          "beat-020"
+        ]
+      },
+      {
+        "claim_ids": [
+          "claim-021-b"
+        ],
+        "event_ids": [
+          "dm-event-021"
+        ],
+        "evidence_ids": [
+          "dm-evidence-021"
+        ],
+        "finding_code": "FINAL_BEHEADING_MECHANISM_NOT_PRESERVED",
+        "kind": "PRIOR_FINDING_RESOLUTION",
+        "note": "The revision now explicitly preserves the source-required beheading of Mahishasura during half-emergence while keeping the description brief and non-lingering.",
+        "resolution_excerpt": "Before he could rise fully into another form, Devi cut off his head with one stroke and ended the struggle.",
+        "result": "RESOLVED",
+        "section_ids": [
+          "ch-07",
+          "beat-021"
+        ]
+      },
+      {
+        "event_id": "dm-event-008",
+        "evidence_ids": [
+          "dm-evidence-008",
+          "dm-sanskrit-evidence-008"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-008-a",
+          "claim-008-b"
+        ],
+        "note": "The hundred-year war, Mahishasura's seizure of Indra's office and divine jurisdictions, the gods' displacement, their Brahma-led appeal to Shiva and Vishnu, and their request for a means to stop him are present without implying transfer of divine essence or capacity.",
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-009",
+        "evidence_ids": [
+          "dm-evidence-009",
+          "dm-sanskrit-evidence-009"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-009-a",
+          "claim-009-b",
+          "claim-manifestation-rhythm"
+        ],
+        "note": "The divine radiances converge as Devi and the source-specified body correspondences are retained without adding a genealogy or collapsing the contributing divine identities.",
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-010",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-010-a",
+          "claim-010-b",
+          "claim-arming-rhythm"
+        ],
+        "note": "The listed divine equipment is correctly assigned: Shiva's trident, Vishnu's discus, Varuna's conch and noose, Agni's spear, Vayu's bow and quivers, Indra's thunderbolt and Airavata-associated bell, Yama's rod, Prajapati's beads, Brahma's water-pot, Surya's rays, and Kala's sword and shield.",
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-011",
+        "evidence_ids": [
+          "dm-evidence-011",
+          "dm-sanskrit-evidence-011"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-011-a",
+          "claim-011-b"
+        ],
+        "note": "Garments, ornaments, impenetrable armor, lotus gifts, Himavat's lion and jewels, Kubera's cup, and Shesha's jeweled serpent necklace are present and correctly attributed. Referring to the cup's contents as 'drink' is a bounded age-level compression and creates no contrary claim.",
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-012",
+        "evidence_ids": [
+          "dm-evidence-012",
+          "dm-sanskrit-evidence-012"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-012-a",
+          "claim-012-b"
+        ],
+        "note": "Devi's roar shakes the worlds, sea, earth, and mountains; gods and sages respond; Mahishasura hears and advances with his forces; and her radiance, crown, bow sound, and thousand arms fill the worlds. No unsourced plan or interior motive is supplied.",
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-013",
+        "evidence_ids": [
+          "dm-evidence-013",
+          "dm-sanskrit-evidence-013"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-013-a",
+          "claim-013-b"
+        ],
+        "note": "The retained commanders and vast chariot, elephant, cavalry, and foot contingents enter the battle. Ugradarshana is omitted in accordance with the recorded witness difference, and Bombay-only chief outcomes are not merged into the main sequence.",
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-014",
+        "evidence_ids": [
+          "dm-evidence-014"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-014-a",
+          "claim-014-b"
+        ],
+        "note": "Devi cuts the missile storm, her lion attacks, breath-born warriors arise with the listed weapons and martial music, and her noose, weapons, and bell stay within the packet's kill, bind, and confound boundaries.",
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-015",
+        "evidence_ids": [
+          "dm-evidence-015"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-015-a",
+          "claim-015-b",
+          "claim-015-c"
+        ],
+        "note": "The field obstructed by the fallen, red streams, continuing terrible forms, destruction of the host by Devi, lion, and breath-born troops, and the gods' flower shower are preserved. Graphic specifics are compressed without changing the source outcome or cost.",
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-016",
+        "evidence_ids": [
+          "dm-evidence-016",
+          "dm-sanskrit-evidence-016"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-016-a",
+          "claim-016-b"
+        ],
+        "note": "Cikshura's volleys, killed horses and charioteer, broken bow and banner, wound, broken sword after striking the lion and Devi, spear counter, and death are retained in order. The bodily destruction is compressed into 'ended his attack' and the later statement that all chiefs had fallen.",
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-017",
+        "evidence_ids": [
+          "dm-evidence-017",
+          "dm-sanskrit-evidence-017"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-017-a",
+          "claim-017-b"
+        ],
+        "note": "Chamara's two failed spear attacks, the lion's leap onto the elephant, the struggle to the ground, and the killing paw-blow are present. The later statement that all chiefs had fallen keeps the death outcome explicit while the severed-head detail is compressed.",
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-018",
+        "evidence_ids": [
+          "dm-evidence-018",
+          "dm-sanskrit-evidence-018"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-018-a",
+          "claim-018-b"
+        ],
+        "note": "Udagra, Karala, Uddhata, Bashkala, Tamra, Andhaka, Ugrasya, Ugravirya, Mahahanu, Bidala, Durdhara, and Durmukha are defeated by the source-specified means, without assigning a disputed extra-chief mechanism.",
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-019",
+        "evidence_ids": [
+          "dm-evidence-019",
+          "dm-sanskrit-evidence-019"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-019-a",
+          "claim-019-b",
+          "claim-mahisha-reversal"
+        ],
+        "note": "Buffalo-form Mahishasura attacks the breath-born troops and Devi's lion through the sourced muzzle, hoof, tail, horn, rush, roar, circling, and breath actions; his movement disturbs earth, sea, clouds, and mountains. His personal entrance follows the commanders without changing source order.",
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-020",
+        "evidence_ids": [
+          "dm-evidence-020"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-020-a",
+          "claim-020-b",
+          "claim-020-c",
+          "claim-transform-escalation"
+        ],
+        "note": "Devi binds Mahishasura; buffalo becomes lion without an invented noose-escape action; sword counters lion; lion becomes armed man; arrows strike the man, sword, and shield without invented breakage; elephant-form seizes Devi's lion; Devi cuts its trunk; and Mahishasura returns to buffalo form.",
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-021",
+        "evidence_ids": [
+          "dm-evidence-021"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-021-a",
+          "claim-021-b",
+          "claim-021-c"
+        ],
+        "note": "Devi drinks and laughs, breaks Mahishasura's hurled mountains with arrows, warns him, leaps, pins his neck, strikes with the trident, and explicitly cuts off his head during half-emergence. The gods, celestial singers, and dancers then celebrate his death.",
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-022",
+        "evidence_ids": [
+          "dm-evidence-022"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-022-a",
+          "claim-022-b",
+          "claim-022-c"
+        ],
+        "note": "The gods' hymn preserves praise of Devi's cosmic power, knowledge, household fortune, refuge, inexpressible greatness, perceived mercy, heaven for the slain, and protection by her forms and weapons in every direction. These theological and soteriological claims remain attributed to the gods.",
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-023",
+        "evidence_ids": [
+          "dm-evidence-023"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-023-a",
+          "claim-023-b",
+          "claim-023-c",
+          "claim-next-volume-frame"
+        ],
+        "note": "The gods offer flowers, perfumes, and incense; Devi invites their request; they ask the narrow remembrance/prosperity boon; she grants it and disappears. Only after the story is explicitly finished does Medhas introduce the later emergence from Gauri.",
+        "result": "PASS"
+      }
+    ],
+    "findings": [],
+    "id": "editorial-review-03cda03595b1b706583cbfc5",
+    "limitations": [
+      "This PASS is an independent SOURCE_FIDELITY assessment of immutable DM04 manuscript v5 at hash 25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6 against the single locked Story Packet hash b784b365d9c921312285f453b4f6a4a15a7be935e2f0fdda6cfa8eba12797744. It does not apply to any other manuscript version or later derivative.",
+      "PASS means semantic fidelity to the locked packet and claim map only. It does not certify that the packet is exhaustive, that the complete Devi Mahatmya has been extracted, or that the selected witnesses form a critical edition.",
+      "Events 014-015 and 020-023 remain supported only by the single English witness recorded in the packet. This review performs no new translation, manuscript collation, critical-edition adjudication, or resolution of open witness variants.",
+      "This review neither certifies nor changes source readiness, private-draft rights, publication or territorial rights, legal clearance, theological or cultural authority, iconographic accuracy, visual quality, PDF quality, or publication readiness.",
+      "The review covers manuscript semantics only. It does not review character or location bibles, page scripts, artwork, typography, proofs, distribution files, or later visual and production outputs.",
+      "Publication, illustration, PDF generation, and distribution remain subject to the separate gates and blockers recorded by the repository; this manuscript-level PASS does not override them."
+    ],
+    "publication_readiness_certified": false,
+    "result": "PASS",
+    "review_hash": "c05ba53f995882cdf3287ed38c33708e0e673ea04c85819ec9d627f388447a6d",
+    "review_perspective": "SOURCE_FIDELITY",
+    "reviewed_dimensions": [
+      "causal_sequence",
+      "character_and_divine_identity_accuracy",
+      "complete_source_event_coverage",
+      "ending",
+      "factual_and_theological_accuracy",
+      "framing_and_background",
+      "quotation_and_source_notes"
+    ],
+    "reviewed_manuscript_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+    "reviewed_packet_hashes": [
+      "b784b365d9c921312285f453b4f6a4a15a7be935e2f0fdda6cfa8eba12797744"
+    ],
+    "reviewer": {
+      "attestation_scope": "ORCHESTRATOR_SESSION_RECORD_NOT_CRYPTOGRAPHIC_IDENTITY",
+      "capability_verified": true,
+      "execution_mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+      "id": "/root/pr4_source_rights",
+      "independent": true,
+      "provider_kind": "editorial_review",
+      "role": "source-evidence"
+    },
+    "schema_version": "1.0",
+    "source_readiness_overridden": false
+  },
+  "schema_version": "1.0",
+  "version": 6
+}

@@ -19,10 +19,44 @@ REQUIRED_SEMANTIC_DIMENSIONS = {
     "collection_continuity",
 }
 
+# PR4 reviews remain re-playable against their original eleven-dimension
+# contract.  PR5 composes two narrower perspectives and adds six explicit
+# literary dimensions; callers must pass the exact perspective contract.
+SOURCE_FIDELITY_DIMENSIONS = {
+    "complete_source_event_coverage",
+    "factual_and_theological_accuracy",
+    "character_and_divine_identity_accuracy",
+    "causal_sequence",
+    "framing_and_background",
+    "quotation_and_source_notes",
+    "ending",
+}
+PR5_LITERARY_DIMENSIONS = {
+    "dramatic_scene_quality",
+    "character_engagement",
+    "emotional_rhythm",
+    "dialogue_quality",
+    "narrative_redundancy",
+    "visual_adaptability",
+}
+LITERARY_EXPERIENCE_DIMENSIONS = {
+    "family_readability",
+    "dialogue_and_emotional_progression",
+    "action_narration_reflection_balance",
+    "ending",
+    "collection_continuity",
+    *PR5_LITERARY_DIMENSIONS,
+}
+PR5_REVIEW_PERSPECTIVES = {
+    "SOURCE_FIDELITY": SOURCE_FIDELITY_DIMENSIONS,
+    "LITERARY_EXPERIENCE": LITERARY_EXPERIENCE_DIMENSIONS,
+}
+
 
 def editorial_review(manuscript, required_event_ids=None, reviewer=None,
                      manuscript_hash=None, packet_hashes=None,
-                     allowed_evidence_ids=None, event_evidence_map=None):
+                     allowed_evidence_ids=None, event_evidence_map=None,
+                     required_dimensions=None, require_event_checks=True):
     reviewer = reviewer or {}
     # An unverified semantic response can never be converted into a deterministic
     # FIX and thereby appear to have participated in review.
@@ -72,7 +106,8 @@ def editorial_review(manuscript, required_event_ids=None, reviewer=None,
     if packet_hashes and sorted(reviewer.get("reviewed_packet_hashes", [])) != sorted(packet_hashes):
         findings.append({"code": "REVIEWED_PACKET_HASH_MISMATCH"})
         return report("EDITORIAL_INDEPENDENT_QA", "ESCALATE", findings, manuscript.get("book_id"))
-    missing = sorted(REQUIRED_SEMANTIC_DIMENSIONS - set(reviewer.get("reviewed_dimensions", [])))
+    required_dimensions = set(required_dimensions or REQUIRED_SEMANTIC_DIMENSIONS)
+    missing = sorted(required_dimensions - set(reviewer.get("reviewed_dimensions", [])))
     if missing:
         findings.append({"code": "SEMANTIC_DIMENSIONS_NOT_REVIEWED", "dimensions": missing})
         return report("EDITORIAL_INDEPENDENT_QA", "ESCALATE", findings, manuscript.get("book_id"))
@@ -84,21 +119,22 @@ def editorial_review(manuscript, required_event_ids=None, reviewer=None,
         assessments = reviewer.get("dimension_assessments", [])
         assessed_dimensions = [item.get("dimension") for item in assessments]
         if (
-            set(assessed_dimensions) != REQUIRED_SEMANTIC_DIMENSIONS
-            or len(assessed_dimensions) != len(REQUIRED_SEMANTIC_DIMENSIONS)
+            set(assessed_dimensions) != required_dimensions
+            or len(assessed_dimensions) != len(required_dimensions)
             or any(item.get("result") != "PASS" for item in assessments)
         ):
             findings.append({"code": "SEMANTIC_PASS_ASSESSMENTS_INCOMPLETE"})
             result = "ESCALATE"
-        checked_events = {
-            item.get("event_id")
-            for item in reviewer.get("evidence_checks", [])
-            if item.get("kind") == "SOURCE_EVENT_CHECK" and item.get("result") == "PASS"
-        }
-        missing_event_checks = sorted(set(required_event_ids or []) - checked_events)
-        if missing_event_checks:
-            findings.append({"code": "SEMANTIC_PASS_EVENT_CHECKS_INCOMPLETE", "event_ids": missing_event_checks})
-            result = "ESCALATE"
+        if require_event_checks:
+            checked_events = {
+                item.get("event_id")
+                for item in reviewer.get("evidence_checks", [])
+                if item.get("kind") == "SOURCE_EVENT_CHECK" and item.get("result") == "PASS"
+            }
+            missing_event_checks = sorted(set(required_event_ids or []) - checked_events)
+            if missing_event_checks:
+                findings.append({"code": "SEMANTIC_PASS_EVENT_CHECKS_INCOMPLETE", "event_ids": missing_event_checks})
+                result = "ESCALATE"
     findings.extend(reviewer.get("findings", []))
     return report("EDITORIAL_INDEPENDENT_QA", result, findings, manuscript.get("book_id"))
 
@@ -120,12 +156,15 @@ def finalize_review(book_id, reviewer_payload, deterministic_report, execution):
         "reviewed_manuscript_hash": reviewer_payload["reviewed_manuscript_hash"],
         "reviewed_packet_hashes": sorted(reviewer_payload["reviewed_packet_hashes"]),
         "reviewed_dimensions": sorted(reviewer_payload["reviewed_dimensions"]),
+        "review_perspective": reviewer_payload.get("review_perspective", "LEGACY_COMBINED"),
         "result": deterministic_report["result"],
         "findings": deterministic_report["findings"],
         "dimension_assessments": reviewer_payload.get("dimension_assessments", []),
         "evidence_checks": reviewer_payload.get("evidence_checks", []),
         "limitations": reviewer_payload.get("limitations", []),
-        "certification_scope": "INDEPENDENT_MANUSCRIPT_EDITORIAL_REVIEW_ONLY",
+        "certification_scope": "%s_INDEPENDENT_MANUSCRIPT_REVIEW_ONLY" % reviewer_payload.get(
+            "review_perspective", "LEGACY_COMBINED"
+        ),
         "publication_readiness_certified": False,
         "source_readiness_overridden": False,
     }

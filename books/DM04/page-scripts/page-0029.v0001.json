@@ -1,0 +1,152 @@
+{
+  "character_ids": [
+    "dm-devi",
+    "dm-mahisha",
+    "dm-gods"
+  ],
+  "continuity_in": "after-page-28",
+  "continuity_out": "after-page-29",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-devi",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-mahisha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "manifestation_id": "dm-mahisha-partial-emergence",
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-gods",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-021"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "immersive hold",
+    "type": "FULL_PAGE"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p29-narration",
+      "placement": "caption-safe-region",
+      "text": "Devī leaps, pins his neck, strikes with the trident and beheads the half-emerged Asura without graphic emphasis."
+    }
+  ],
+  "location_id": "mahisha-arrival",
+  "moment_ids": [
+    "devi_decisive_victory"
+  ],
+  "narrative_beats": [
+    "Devī leaps, pins his neck, strikes with the trident and beheads the half-emerged Asura without graphic emphasis."
+  ],
+  "page_id": "page-ee247aeaffc829b0c7a69d76",
+  "page_number": 29,
+  "panel_count": 1,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-mahisha",
+        "dm-gods"
+      ],
+      "composition": "Wide establishing action",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p29-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false
+      },
+      "location_id": "mahisha-arrival",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p29-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Devī leaps, pins his neck, strikes with the trident and beheads the half-emerged Asura without graphic emphasis."
+    }
+  ],
+  "reading_order": [
+    "p29-panel-01"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p29-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-021-a",
+    "claim-021-b",
+    "claim-021-c"
+  ],
+  "title": "The Decisive Moment",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation"
+  ],
+  "version": 1,
+  "visual_intent": "A cinematic story beat with exact editable lettering and source-bounded imagery."
+}

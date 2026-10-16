@@ -1,10 +1,12 @@
 """Evidence-bound manuscript and review requests; this module drafts no prose."""
 
+from .editorial import PR5_REVIEW_PERSPECTIVES, REQUIRED_SEMANTIC_DIMENSIONS
 from .util import content_hash, stable_id
 
 
 def build_manuscript_request(manifest, dossier, packets, rules_hash, clearance=None,
-                             parent_manuscript=None, revision_request=None):
+                             parent_manuscript=None, revision_request=None,
+                             milestone_contract=None):
     required_events = [event["id"] for packet in packets for event in packet.get("events", [])]
     allowed_evidence_ids = sorted({
         citation["id"] for packet in packets for citation in packet.get("citations", [])
@@ -14,7 +16,11 @@ def build_manuscript_request(manifest, dossier, packets, rules_hash, clearance=N
         "book_id": manifest["id"],
         "title": manifest["title"],
         "scope": manifest.get("scope"),
-        "audience": "family readers; exact age band requires editorial confirmation",
+        "audience": (
+            "family read-aloud and independent readers approximately age 10+"
+            if milestone_contract else
+            "family readers; exact age band requires editorial confirmation"
+        ),
         "dossier_hash": dossier["dossier_hash"],
         "packet_hashes": [packet["packet_hash"] for packet in packets],
         "graph_hash": dossier["graph_hash"],
@@ -78,6 +84,7 @@ def build_manuscript_request(manifest, dossier, packets, rules_hash, clearance=N
         ],
         "parent_manuscript_hash": (parent_manuscript or {}).get("content_hash"),
         "revision_request": revision_request,
+        "milestone_contract": milestone_contract,
     }
     request["request_hash"] = content_hash(request)
     request["operation_key"] = stable_id("draft-manuscript", manifest["id"], request["request_hash"])
@@ -85,8 +92,14 @@ def build_manuscript_request(manifest, dossier, packets, rules_hash, clearance=N
 
 
 def build_review_request(manuscript_record, packet_hashes, required_event_ids,
-                         dossier_hash, clearance_hash, packets=None):
+                         dossier_hash, clearance_hash, packets=None,
+                         perspective="LEGACY_COMBINED"):
     manuscript = manuscript_record["payload"]
+    dimensions = (
+        sorted(PR5_REVIEW_PERSPECTIVES[perspective])
+        if perspective in PR5_REVIEW_PERSPECTIVES else
+        sorted(REQUIRED_SEMANTIC_DIMENSIONS)
+    )
     request = {
         "schema_version": "1.0",
         "book_id": manuscript_record["book_id"],
@@ -96,19 +109,9 @@ def build_review_request(manuscript_record, packet_hashes, required_event_ids,
         "source_clearance_hash": clearance_hash,
         "writer_id": manuscript.get("creator", {}).get("id"),
         "required_event_ids": list(required_event_ids),
-        "required_dimensions": [
-            "complete_source_event_coverage",
-            "factual_and_theological_accuracy",
-            "character_and_divine_identity_accuracy",
-            "causal_sequence",
-            "framing_and_background",
-            "family_readability",
-            "dialogue_and_emotional_progression",
-            "action_narration_reflection_balance",
-            "quotation_and_source_notes",
-            "ending",
-            "collection_continuity",
-        ],
+        "review_perspective": perspective,
+        "required_dimensions": dimensions,
+        "require_source_event_checks": perspective != "LITERARY_EXPERIENCE",
         "manuscript": manuscript,
         "locked_source_evidence": [
             {
@@ -129,6 +132,40 @@ def build_review_request(manuscript_record, packet_hashes, required_event_ids,
     }
     request["request_hash"] = content_hash(request)
     request["operation_key"] = stable_id("review-manuscript", manuscript_record["book_id"], request["request_hash"])
+    return request
+
+
+def pr5_quality_revision_request(manuscript_record, prior_review_record):
+    """Authorize the explicit PR5 literary pass without mislabelling it a FIX."""
+    request = {
+        "schema_version": "1.0",
+        "book_id": manuscript_record["book_id"],
+        "milestone": "PR5_VISUAL_PREPRODUCTION",
+        "revision_kind": "AUTHORIZED_LITERARY_QUALITY_REVISION",
+        "parent_manuscript_hash": manuscript_record["content_hash"],
+        "prior_pass_review_hash": prior_review_record["payload"]["review_hash"],
+        "preserve_required_event_ids": ["dm-event-%03d" % number for number in range(8, 24)],
+        "audience": "family read-aloud and independent readers approximately age 10+",
+        "required_improvements": [
+            "Open with a stronger forest-frame scene and a compelling question.",
+            "Give Suratha and Samadhi meaningful listener reactions, labelled as literary adaptation.",
+            "Use natural dialogue and reactions without presenting invented words as scripture.",
+            "Reduce commander-name exposition while retaining every sourced event.",
+            "Give Devi's manifestation more dramatic space and make the arming sequence memorable.",
+            "Make Mahishasura's arrival a reversal and separate his transformations into escalating beats.",
+            "Remove the duplicated transformation summary in chapter 6 and reduce battle recap in chapter 7.",
+            "Preserve the attributed hymn, boon request, grant and disappearance.",
+            "Close with an accessible reflection and a natural transition to the next volume only after resolution.",
+        ],
+        "source_constraints": [
+            "Preserve the sixteen locked source events, their sequence and theological distinctions.",
+            "Do not introduce canonical claims outside the locked packet.",
+            "Label new framing dialogue and listener business DRISHTI or KALPANA in the claim map.",
+            "Keep the hymn's theology attributed to the gods and do not certify theological authority.",
+        ],
+        "benchmark": "Use DM08/Raktabija Manuscript v2 only as a literary-quality benchmark; do not copy it.",
+    }
+    request["request_hash"] = content_hash(request)
     return request
 
 

@@ -1,0 +1,18 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/storyboard.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {"const": "1.0", "type": "string"},
+    "book_id": {"type": "string"},
+    "version": {"minimum": 1, "type": "integer"},
+    "manuscript_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "canvas": {"type": "object"},
+    "pages": {"items": {"$ref": "page-script.schema.json"}, "minItems": 1, "type": "array"},
+    "required_moments": {"items": {"type": "object"}, "minItems": 1, "type": "array"},
+    "text_channels": {"items": {"type": "string"}, "minItems": 4, "type": "array"}
+  },
+  "required": ["schema_version", "book_id", "version", "manuscript_hash", "canvas", "pages", "required_moments", "text_channels"],
+  "title": "Complete page-by-page storyboard",
+  "type": "object"
+}

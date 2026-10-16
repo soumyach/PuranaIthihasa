@@ -10,6 +10,7 @@
     "result": {"enum": ["PASS", "FIX", "ESCALATE"], "type": "string"},
     "findings": {"items": {"type": "object"}, "type": "array"},
     "reviewed_dimensions": {"items": {"type": "string"}, "minItems": 1, "type": "array"},
+    "review_perspective": {"enum": ["LEGACY_COMBINED", "SOURCE_FIDELITY", "LITERARY_EXPERIENCE"], "type": "string"},
     "reviewer": {"type": "object"},
     "dimension_assessments": {"items": {"type": "object"}, "type": "array"},
     "evidence_checks": {"items": {"type": "object"}, "type": "array"},

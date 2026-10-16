@@ -1,6 +1,17 @@
-# Khatakshetra Book Factory — Foundation PR4
+# Khatakshetra Book Factory — Foundation PR5
 
-This milestone adds executable, evidence-grounded manuscript production and independent editorial review through an auditable Codex specialist-agent handoff. DM04 is the first new private editorial draft. DM08 remains an existing reference edition and is never regenerated. Illustration, page, PDF, publishing, deployment, and public release are outside PR4. See `docs/BOOK_FACTORY_FOUNDATION_PR4.md` for the execution report.
+PR5 preserves the PR4 manuscript pipeline and adds an authorized DM04 literary-quality revision, separate source-fidelity and literary-experience review gates, versioned character/location bibles, complete storyboard/page scripts, typography controls, and four proof specifications. DM08 remains an existing reference edition and is never regenerated. No image or PDF is generated, and publication remains blocked. See `docs/BOOK_FACTORY_FOUNDATION_PR5.md` for the execution report.
+
+## PR5 visual-preproduction workflow
+
+1. `prepare-manuscript-handoff --pr5-quality-revision` binds the immutable v2 parent and its prior PASS review.
+2. `import-manuscript-handoff` stores v3 with event and claim sidecars; v1 and v2 remain unchanged.
+3. Prepare and import separate `SOURCE_FIDELITY` and `LITERARY_EXPERIENCE` reviews. Both are mandatory and hash-bound.
+4. `prepare-preproduction-handoff` opens only after both review perspectives pass.
+5. `import-preproduction-handoff` validates and versions the character bible, location bible, complete storyboard, page scripts, typography specification and four proof specifications.
+6. Proof rendering and semantic visual review remain `BLOCKED_PROVIDER`; specification QA never masquerades as image inspection or approval.
+
+The successful PR5 terminal status is `VISUAL_PREPRODUCTION_REVIEWED_PUBLICATION_BLOCKED`. It certifies only that the manuscript and preproduction specification gates passed. It does not certify source readiness, publication rights, theological authority, visual quality, print readiness, or release readiness.
 
 ## Command interface
 

@@ -9,7 +9,7 @@ from .errors import FactoryError
 
 
 def build_parser():
-    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory Foundation PR4")
+    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory Foundation PR5")
     parser.add_argument("--root", default=".", help="repository root (default: current directory)")
     parser.add_argument("--catalogue", help="explicit catalogue path (intended for offline fixtures and validation)")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -43,18 +43,26 @@ def build_parser():
     manuscript_handoff = subparsers.add_parser("prepare-manuscript-handoff", help="prepare a locked Codex manuscript-agent request")
     manuscript_handoff.add_argument("--book-id", required=True)
     manuscript_handoff.add_argument("--revision-review-hash")
+    manuscript_handoff.add_argument("--pr5-quality-revision", action="store_true")
     import_manuscript = subparsers.add_parser("import-manuscript-handoff", help="validate and store a Codex manuscript-agent response")
     import_manuscript.add_argument("--book-id", required=True)
     import_manuscript.add_argument("--handoff", required=True)
     import_manuscript.add_argument("--response", required=True)
     review_handoff = subparsers.add_parser("prepare-review-handoff", help="prepare a locked independent-review request")
     review_handoff.add_argument("--book-id", required=True)
+    review_handoff.add_argument("--perspective", choices=["SOURCE_FIDELITY", "LITERARY_EXPERIENCE"])
     import_review = subparsers.add_parser("import-review-handoff", help="validate and store an independent-review response")
     import_review.add_argument("--book-id", required=True)
     import_review.add_argument("--handoff", required=True)
     import_review.add_argument("--response", required=True)
     manuscript_status = subparsers.add_parser("manuscript-status", help="show separated DM04 production dimensions")
     manuscript_status.add_argument("--book-id", required=True)
+    preproduction_handoff = subparsers.add_parser("prepare-preproduction-handoff", help="prepare locked bibles, storyboard, typography and proof-spec request")
+    preproduction_handoff.add_argument("--book-id", required=True)
+    import_preproduction = subparsers.add_parser("import-preproduction-handoff", help="validate and store a visual-preproduction specialist response")
+    import_preproduction.add_argument("--book-id", required=True)
+    import_preproduction.add_argument("--handoff", required=True)
+    import_preproduction.add_argument("--response", required=True)
     subparsers.add_parser("next", help="alias for a dry-run next-book selection")
     return parser
 
@@ -90,15 +98,21 @@ def run(args):
     if args.command == "import-source-clearance":
         return director.import_source_clearance(args.book_id, args.record)
     if args.command == "prepare-manuscript-handoff":
-        return director.prepare_manuscript_handoff(args.book_id, args.revision_review_hash)
+        return director.prepare_manuscript_handoff(
+            args.book_id, args.revision_review_hash, args.pr5_quality_revision
+        )
     if args.command == "import-manuscript-handoff":
         return director.import_manuscript_handoff(args.book_id, args.handoff, args.response)
     if args.command == "prepare-review-handoff":
-        return director.prepare_review_handoff(args.book_id)
+        return director.prepare_review_handoff(args.book_id, args.perspective)
     if args.command == "import-review-handoff":
         return director.import_review_handoff(args.book_id, args.handoff, args.response)
     if args.command == "manuscript-status":
         return director.manuscript_status(args.book_id)
+    if args.command == "prepare-preproduction-handoff":
+        return director.prepare_preproduction_handoff(args.book_id)
+    if args.command == "import-preproduction-handoff":
+        return director.import_preproduction_handoff(args.book_id, args.handoff, args.response)
     if args.command == "next":
         return director.produce_next(True)
     raise AssertionError("unreachable")

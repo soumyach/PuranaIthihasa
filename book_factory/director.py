@@ -1,4 +1,4 @@
-"""Single user-facing orchestration facade for Foundation PR4."""
+"""Single user-facing orchestration facade for Foundation PR5."""
 
 import json
 from pathlib import Path
@@ -10,14 +10,16 @@ from .contracts import load_schema, validate_named
 from .drafting import (
     build_manuscript_request,
     build_review_request,
+    pr5_quality_revision_request,
     render_manuscript_markdown,
     targeted_revision_request,
 )
-from .editorial import editorial_review, finalize_review
+from .editorial import PR5_REVIEW_PERSPECTIVES, editorial_review, finalize_review
 from .errors import ContractError, NotImplementedStageError
 from .handoffs import SessionHandoffStore, finalize_handoff, validate_execution
 from .narrative import validate_manuscript
 from .pilot import PilotSelector, catalogue_readiness_report
+from .preproduction import build_semantic_visual_review_request, validate_preproduction_package
 from .providers.base import FixtureImageProviderContract, ProviderRegistry
 from .references import ReferenceEditionRegistry
 from .rules import rules_status
@@ -26,7 +28,16 @@ from .source_intelligence import DossierStore, SourceReadinessAssessor, StoryPac
 from .source_clearance import SourceClearanceStore, finalize_clearance, validate_private_draft_clearance
 from .state import StateStore, next_stage
 from .util import atomic_json_write, atomic_write, content_hash, load_json, sha256_bytes
-from .versioning import EditorialReviewStore, ManuscriptVersionStore
+from .versioning import (
+    CharacterBibleVersionStore,
+    EditorialReviewStore,
+    LocationBibleVersionStore,
+    ManuscriptVersionStore,
+    PreproductionReviewVersionStore,
+    ProofSpecVersionStore,
+    StoryboardVersionStore,
+    TypographyVersionStore,
+)
 
 
 class FactoryDirector:
@@ -65,7 +76,7 @@ class FactoryDirector:
                 states.append({"book_id": book_id, "status": "INVALID", "message": str(exc)})
         return {
             "factory_version": __version__,
-            "implementation": "FOUNDATION_PR4",
+            "implementation": "FOUNDATION_PR5",
             "catalogue_books": len(books),
             "readiness_counts": {state: sum(book["readiness"] == state for book in books) for state in sorted({book["readiness"] for book in books})},
             "active_runs": states,
@@ -251,7 +262,7 @@ class FactoryDirector:
             "source_readiness_unchanged": dossier["status"],
         }
 
-    def prepare_manuscript_handoff(self, book_id, revision_review_hash=None):
+    def prepare_manuscript_handoff(self, book_id, revision_review_hash=None, pr5_quality_revision=False):
         manifest, dossier, packets = self._production_inputs(book_id)
         clearance = self.clearances.latest(book_id)
         validate_private_draft_clearance(clearance, dossier, packets)
@@ -259,14 +270,37 @@ class FactoryDirector:
         parent = versions[-1] if versions else None
         revision = None
         kind = "MANUSCRIPT_GENERATION"
-        if revision_review_hash:
+        milestone_contract = None
+        if pr5_quality_revision:
+            if revision_review_hash:
+                raise ContractError("PR5 quality revision and FIX-review revision are mutually exclusive")
+            if not parent or parent["version"] != 2:
+                raise ContractError("PR5 quality revision requires immutable DM04 manuscript v2 as latest parent")
+            reviews = EditorialReviewStore(self.books_root).versions(book_id)
+            passed = [
+                item for item in reviews
+                if item["payload"].get("result") == "PASS"
+                and item["payload"].get("reviewed_manuscript_hash") == parent["content_hash"]
+            ]
+            if not passed:
+                raise ContractError("PR5 quality revision requires the independent PASS review bound to v2")
+            revision = pr5_quality_revision_request(parent, passed[-1])
+            milestone_contract = revision
+            kind = "MANUSCRIPT_REVISION"
+        elif revision_review_hash:
             reviews = EditorialReviewStore(self.books_root).versions(book_id)
             matching = [item for item in reviews if item["payload"].get("review_hash") == revision_review_hash]
             if not matching:
                 raise ContractError("revision review hash is not an immutable review version")
             if matching[-1]["payload"].get("result") != "FIX":
                 raise ContractError("only a FIX review can authorize manuscript revision")
-            if len(versions) - 1 >= self._configuration()["retry_limits"]["qa_repair"]:
+            if matching[-1]["payload"].get("reviewed_manuscript_hash") != parent["content_hash"]:
+                raise ContractError("a FIX review can revise only the exact latest manuscript it reviewed")
+            fix_review_count = len({
+                item["payload"].get("review_hash") for item in reviews
+                if item["payload"].get("result") == "FIX"
+            })
+            if fix_review_count > self._configuration()["retry_limits"]["qa_repair"]:
                 raise ContractError("manuscript revision retry cap reached")
             revision = targeted_revision_request(matching[-1]["payload"])
             validate_named(revision, self.root / "schemas" / "book-factory", "revision-request")
@@ -281,6 +315,7 @@ class FactoryDirector:
             clearance=clearance,
             parent_manuscript=parent,
             revision_request=revision,
+            milestone_contract=milestone_contract,
         )
         validate_named(request, self.root / "schemas" / "book-factory", "manuscript-request")
         locked = [
@@ -440,14 +475,22 @@ class FactoryDirector:
             "private_draft_gate": clearance["private_draft_gate"],
             "manuscript_draft_completion": "COMPLETE",
             "independent_editorial_review": "AWAITING_REVIEW",
-            "visual_production": "NOT_STARTED_PR4_BOUNDARY",
+            "required_review_perspectives": (
+                sorted(PR5_REVIEW_PERSPECTIVES) if record["version"] >= 3 else ["LEGACY_COMBINED"]
+            ),
+            "completed_review_perspectives": [],
+            "visual_production": "NOT_STARTED",
             "publication_readiness": "BLOCKED",
             "latest_manuscript_hash": record["content_hash"],
             "revision_required": False,
             "exact_result": (
+                "MANUSCRIPT_PR5_TARGETED_REVISION_COMPLETE_AWAITING_DUAL_INDEPENDENT_REVIEW_PUBLICATION_BLOCKED"
+                if record["version"] > 3 else
+                "MANUSCRIPT_V3_COMPLETE_AWAITING_DUAL_INDEPENDENT_REVIEW_PUBLICATION_BLOCKED"
+                if record["version"] == 3 else
                 "PRIVATE_MANUSCRIPT_REVISION_COMPLETE_AWAITING_INDEPENDENT_REREVIEW_PUBLICATION_BLOCKED"
-                if record["version"] > 1
-                else "PRIVATE_MANUSCRIPT_COMPLETE_AWAITING_INDEPENDENT_REVIEW_PUBLICATION_BLOCKED"
+                if record["version"] > 1 else
+                "PRIVATE_MANUSCRIPT_COMPLETE_AWAITING_INDEPENDENT_REVIEW_PUBLICATION_BLOCKED"
             ),
         }
         awaiting_review_status["status_hash"] = content_hash(awaiting_review_status)
@@ -467,7 +510,7 @@ class FactoryDirector:
             "publication_gate": "BLOCKED",
         }
 
-    def prepare_review_handoff(self, book_id):
+    def prepare_review_handoff(self, book_id, perspective=None):
         _, dossier, packets = self._production_inputs(book_id)
         clearance = self.clearances.latest(book_id)
         validate_private_draft_clearance(clearance, dossier, packets)
@@ -475,6 +518,20 @@ class FactoryDirector:
         if not manuscripts:
             raise ContractError("no immutable manuscript exists to review")
         manuscript = manuscripts[-1]
+        if manuscript["version"] >= 3:
+            if perspective not in PR5_REVIEW_PERSPECTIVES:
+                raise ContractError("PR5 review requires SOURCE_FIDELITY or LITERARY_EXPERIENCE perspective")
+        else:
+            perspective = perspective or "LEGACY_COMBINED"
+            if perspective != "LEGACY_COMBINED":
+                raise ContractError("pre-PR5 manuscripts use the legacy combined review contract")
+        prior_reviews = EditorialReviewStore(self.books_root).versions(book_id)
+        if any(
+            item["payload"].get("reviewed_manuscript_hash") == manuscript["content_hash"]
+            and item["payload"].get("review_perspective", "LEGACY_COMBINED") == perspective
+            for item in prior_reviews
+        ):
+            raise ContractError("this manuscript and review perspective already have an immutable review")
         required_events = [event["id"] for packet in packets for event in packet.get("events", [])]
         packet_hashes = [packet["packet_hash"] for packet in packets]
         request = build_review_request(
@@ -484,12 +541,14 @@ class FactoryDirector:
             dossier["dossier_hash"],
             clearance["clearance_hash"],
             packets=packets,
+            perspective=perspective,
         )
+        role = "source-evidence" if perspective == "SOURCE_FIDELITY" else "family-editor"
         handoff, path = self.handoffs.prepare(
             book_id,
             "EDITORIAL_REVIEW",
             request,
-            "family-editor",
+            role,
             [manuscript["content_hash"], dossier["dossier_hash"], clearance["clearance_hash"], *packet_hashes],
             writer_id=request["writer_id"],
         )
@@ -501,6 +560,8 @@ class FactoryDirector:
             "path": str(path),
             "writer_id": request["writer_id"],
             "required_independence": True,
+            "review_perspective": perspective,
+            "required_dimensions": request["required_dimensions"],
         }
 
     def import_review_handoff(self, book_id, handoff_path, response_path):
@@ -527,6 +588,9 @@ class FactoryDirector:
         review_input = response.get("result", {}).get("review")
         if not isinstance(review_input, dict):
             raise ContractError("agent response has no structured editorial review")
+        perspective = handoff["request"].get("review_perspective", "LEGACY_COMBINED")
+        if review_input.get("review_perspective", "LEGACY_COMBINED") != perspective:
+            raise ContractError("editorial response perspective does not match the locked request")
         reviewer = dict(review_input)
         reviewer.update({
             "id": execution["agent_id"],
@@ -550,6 +614,8 @@ class FactoryDirector:
                 event["id"]: event.get("evidence_ids", [])
                 for packet in packets for event in packet.get("events", [])
             },
+            required_dimensions=set(handoff["request"]["required_dimensions"]),
+            require_event_checks=handoff["request"].get("require_source_event_checks", True),
         )
         finalized = finalize_review(book_id, review_input, gate, execution)
         validate_named(finalized, self.root / "schemas" / "book-factory", "editorial-review")
@@ -579,14 +645,46 @@ class FactoryDirector:
             validate_named(revision, self.root / "schemas" / "book-factory", "revision-request")
             revision_path = self.books_root / book_id / "revisions" / (revision["request_hash"] + ".json")
             atomic_json_write(revision_path, revision)
+        current_reviews = [*prior_reviews, record]
+        perspective_results = {
+            item["payload"].get("review_perspective", "LEGACY_COMBINED"): item["payload"].get("result")
+            for item in current_reviews
+            if item["payload"].get("reviewed_manuscript_hash") == current["content_hash"]
+        }
+        pr5_dual_pass = all(perspective_results.get(name) == "PASS" for name in PR5_REVIEW_PERSPECTIVES)
+        any_fix = any(value == "FIX" for value in perspective_results.values())
+        any_escalate = any(value == "ESCALATE" for value in perspective_results.values())
+        if current["version"] >= 3:
+            pr5_label = "MANUSCRIPT_V3" if current["version"] == 3 else "MANUSCRIPT_PR5_LATEST_REVISION"
+            exact_result = (
+                "%s_REQUIRES_REVISION_PUBLICATION_BLOCKED" % pr5_label if any_fix else
+                "%s_REVIEW_ESCALATED_PUBLICATION_BLOCKED" % pr5_label if any_escalate else
+                "%s_DUAL_REVIEWED_VISUAL_PREPRODUCTION_PENDING_PUBLICATION_BLOCKED" % pr5_label if pr5_dual_pass else
+                "%s_AWAITING_SECOND_INDEPENDENT_REVIEW_PUBLICATION_BLOCKED" % pr5_label
+            )
+            editorial_summary = "PASS" if pr5_dual_pass else "FIX" if any_fix else "ESCALATE" if any_escalate else "PARTIAL_PASS"
+        else:
+            exact_result = (
+                "PRIVATE_MANUSCRIPT_REQUIRES_REVISION_PUBLICATION_BLOCKED"
+                if finalized["result"] == "FIX"
+                else "PRIVATE_MANUSCRIPT_EDITORIALLY_REVIEWED_PUBLICATION_BLOCKED"
+                if finalized["result"] == "PASS"
+                else "PRIVATE_MANUSCRIPT_ESCALATED_PUBLICATION_BLOCKED"
+            )
+            editorial_summary = finalized["result"]
         status = {
             "schema_version": "1.0",
             "book_id": book_id,
             "source_readiness": dossier["status"],
             "private_draft_gate": clearance["private_draft_gate"],
             "manuscript_draft_completion": "COMPLETE",
-            "independent_editorial_review": finalized["result"],
-            "visual_production": "NOT_STARTED_PR4_BOUNDARY",
+            "independent_editorial_review": editorial_summary,
+            "required_review_perspectives": (
+                sorted(PR5_REVIEW_PERSPECTIVES) if current["version"] >= 3 else ["LEGACY_COMBINED"]
+            ),
+            "completed_review_perspectives": sorted(perspective_results),
+            "review_results_by_perspective": perspective_results,
+            "visual_production": "NOT_STARTED",
             "publication_readiness": "BLOCKED",
             "publication_blockers": [
                 "WORLDWIDE_OR_TARGET_MARKET_PUBLICATION_RIGHTS_NOT_CLEARED",
@@ -596,14 +694,8 @@ class FactoryDirector:
             ],
             "latest_manuscript_hash": current["content_hash"],
             "latest_review_hash": finalized["review_hash"],
-            "revision_required": finalized["result"] == "FIX",
-            "exact_result": (
-                "PRIVATE_MANUSCRIPT_REQUIRES_REVISION_PUBLICATION_BLOCKED"
-                if finalized["result"] == "FIX"
-                else "PRIVATE_MANUSCRIPT_EDITORIALLY_REVIEWED_PUBLICATION_BLOCKED"
-                if finalized["result"] == "PASS"
-                else "PRIVATE_MANUSCRIPT_ESCALATED_PUBLICATION_BLOCKED"
-            ),
+            "revision_required": any_fix if current["version"] >= 3 else finalized["result"] == "FIX",
+            "exact_result": exact_result,
         }
         status["status_hash"] = content_hash(status)
         atomic_json_write(self.books_root / book_id / "production-status.json", status)
@@ -617,6 +709,287 @@ class FactoryDirector:
             "response_path": str(stored_response_path),
             "revision_request": revision,
             "production_status": status,
+        }
+
+    def _pr5_review_gate(self, book_id):
+        manuscripts = ManuscriptVersionStore(self.books_root).versions(book_id)
+        if not manuscripts or manuscripts[-1]["version"] < 3:
+            raise ContractError("visual preproduction requires immutable manuscript v3")
+        current = manuscripts[-1]
+        reviews = EditorialReviewStore(self.books_root).versions(book_id)
+        results = {
+            item["payload"].get("review_perspective"): item["payload"].get("result")
+            for item in reviews
+            if item["payload"].get("reviewed_manuscript_hash") == current["content_hash"]
+        }
+        missing = sorted(name for name in PR5_REVIEW_PERSPECTIVES if results.get(name) != "PASS")
+        if missing:
+            raise ContractError("visual preproduction requires both PR5 independent PASS reviews", {"missing": missing})
+        return current, reviews
+
+    def prepare_preproduction_handoff(self, book_id):
+        _, dossier, packets = self._production_inputs(book_id)
+        current, reviews = self._pr5_review_gate(book_id)
+        review_hashes = [
+            item["payload"]["review_hash"] for item in reviews
+            if item["payload"].get("reviewed_manuscript_hash") == current["content_hash"]
+            and item["payload"].get("review_perspective") in PR5_REVIEW_PERSPECTIVES
+        ]
+        request = {
+            "schema_version": "1.0",
+            "book_id": book_id,
+            "milestone": "PR5_VISUAL_PREPRODUCTION",
+            "manuscript_hash": current["content_hash"],
+            "manuscript": current["payload"],
+            "packet_hashes": sorted(packet["packet_hash"] for packet in packets),
+            "review_hashes": sorted(review_hashes),
+            "required_event_ids": [event["id"] for packet in packets for event in packet.get("events", [])],
+            "locked_source_evidence": [
+                {
+                    "packet_hash": packet["packet_hash"],
+                    "events": packet.get("events", []),
+                    "citations": packet.get("citations", []),
+                    "characters": packet.get("characters", []),
+                    "manifestations_boons_powers": packet.get("manifestations_boons_powers", []),
+                    "variants_and_conflicts": packet.get("variants_and_conflicts", []),
+                    "adaptation_boundaries": packet.get("adaptation_boundaries", []),
+                }
+                for packet in packets
+            ],
+            "frame_evidence_boundary": {
+                "permitted_for_context_only": ["dm-evidence-001", "dm-evidence-002", "dm-evidence-003"],
+                "rule": "Suratha, Samadhi and Medhas may support the frame, but new listener reactions remain explicitly labelled literary adaptation.",
+                "source_graph_mutation_allowed": False,
+            },
+            "required_character_groups": [
+                "Devi", "Mahishasura and each sourced form", "Devi's lion", "principal gods",
+                "principal commanders", "Medhas", "Suratha", "Samadhi",
+            ],
+            "required_locations": [
+                "forest hermitage", "gods' gathering", "manifestation space", "battlefield",
+                "Mahishasura arrival", "thanksgiving",
+            ],
+            "canvas": {"aspect_ratio": "3:4", "pixel_width": 1086, "pixel_height": 1448},
+            "palette": ["#071F35", "#D8AC4E", "#F0CF76", "#F6E8C6", "#FFF9EF", "#251C18", "#692019"],
+            "text_channels": ["NARRATION", "DIALOGUE", "THOUGHT", "INSET_EXPLANATION"],
+            "proof_kinds": ["QUIET_CONVERSATION", "DIVINE_REVEAL", "BATTLE", "FULL_PAGE_IMMERSION"],
+            "proof_retry_limit": 2,
+            "constraints": [
+                "Return structured bibles, a complete page-by-page storyboard, typography spec and four proof specs.",
+                "Separate authoritative source record from proposed visual interpretation and preserve source silence.",
+                "Use exact lettering text and explicit speaker ids; do not duplicate captions as dialogue.",
+                "Use cinematic rhythm rather than a fixed panel count; identify every full-page immersive scene.",
+                "Do not generate images, manuscript prose, PDF, print files or approvals.",
+                "Record image and semantic visual review as BLOCKED_PROVIDER when no backend is configured.",
+            ],
+            "dossier_hash": dossier["dossier_hash"],
+            "rules_hash": dossier["rules_hash"],
+        }
+        request["request_hash"] = content_hash(request)
+        handoff, path = self.handoffs.prepare(
+            book_id,
+            "VISUAL_PREPRODUCTION",
+            request,
+            "art-iconography",
+            [current["content_hash"], dossier["dossier_hash"], dossier["rules_hash"], *request["packet_hashes"], *review_hashes],
+            writer_id=current["payload"].get("creator", {}).get("id"),
+        )
+        return {
+            "status": handoff["status"],
+            "book_id": book_id,
+            "handoff_hash": handoff["handoff_hash"],
+            "request_hash": request["request_hash"],
+            "path": str(path),
+            "required_role": "art-iconography",
+            "images_requested": False,
+        }
+
+    def import_preproduction_handoff(self, book_id, handoff_path, response_path):
+        _, dossier, packets = self._production_inputs(book_id)
+        current, _ = self._pr5_review_gate(book_id)
+        handoff = load_json(Path(handoff_path))
+        response = load_json(Path(response_path))
+        validate_named(handoff, self.root / "schemas" / "book-factory", "agent-handoff")
+        validate_named(response, self.root / "schemas" / "book-factory", "agent-response")
+        if handoff.get("book_id") != book_id or handoff.get("kind") != "VISUAL_PREPRODUCTION":
+            raise ContractError("wrong visual-preproduction handoff")
+        if finalize_handoff(handoff) != handoff:
+            raise ContractError("visual-preproduction handoff content hash is invalid")
+        if handoff["request"].get("manuscript_hash") != current["content_hash"]:
+            raise ContractError("visual-preproduction handoff has a stale manuscript hash")
+        if handoff["request"].get("dossier_hash") != dossier["dossier_hash"]:
+            raise ContractError("visual-preproduction handoff has a stale dossier hash")
+        execution = validate_execution(
+            handoff, response, "visual_preproduction",
+            writer_id=handoff.get("required_independence_from_writer_id"),
+        )
+        package = response.get("result", {}).get("preproduction")
+        if not isinstance(package, dict):
+            raise ContractError("agent response has no structured visual-preproduction package")
+        if package.get("book_id") != book_id or package.get("manuscript_hash") != current["content_hash"]:
+            raise ContractError("visual-preproduction package identity is stale")
+        if package.get("proof_package", {}).get("storyboard_hash") != content_hash(package.get("storyboard")):
+            raise ContractError("proof specifications do not bind the storyboard payload")
+        required_events = [event["id"] for packet in packets for event in packet.get("events", [])]
+        qa = validate_preproduction_package(
+            package, required_events, current["payload"], current["content_hash"]
+        )
+        if qa["result"] != "PASS":
+            raise ContractError("visual-preproduction package failed deterministic validation", {"findings": qa["findings"]})
+        schema_root = self.root / "schemas" / "book-factory"
+        validate_named(package["character_bible"], schema_root, "character-bible")
+        validate_named(package["location_bible"], schema_root, "location-bible")
+        validate_named(package["storyboard"], schema_root, "storyboard")
+        validate_named(package["typography"], schema_root, "typography")
+        validate_named(package["proof_package"], schema_root, "proof-spec")
+
+        existing_components = (
+            CharacterBibleVersionStore(self.books_root).versions(book_id),
+            LocationBibleVersionStore(self.books_root).versions(book_id),
+            StoryboardVersionStore(self.books_root).versions(book_id),
+            TypographyVersionStore(self.books_root).versions(book_id),
+            ProofSpecVersionStore(self.books_root).versions(book_id),
+        )
+        component_payloads = (
+            package["character_bible"], package["location_bible"], package["storyboard"],
+            package["typography"], package["proof_package"],
+        )
+        if all(records and records[-1]["payload"] == payload for records, payload in zip(existing_components, component_payloads)):
+            status_path = self.books_root / book_id / "production-status.json"
+            return {
+                "status": load_json(status_path)["exact_result"],
+                "book_id": book_id,
+                "idempotent_replay": True,
+                "publication_gate": "BLOCKED",
+            }
+
+        stores_and_payloads = [
+            (CharacterBibleVersionStore(self.books_root), package["character_bible"]),
+            (LocationBibleVersionStore(self.books_root), package["location_bible"]),
+            (StoryboardVersionStore(self.books_root), package["storyboard"]),
+            (TypographyVersionStore(self.books_root), package["typography"]),
+            (ProofSpecVersionStore(self.books_root), package["proof_package"]),
+        ]
+        component_records = []
+        for store, payload in stores_and_payloads:
+            existing = store.versions(book_id)
+            if existing and existing[-1]["payload"] == payload:
+                component_records.append(existing[-1])
+                continue
+            parent_hash = existing[-1]["content_hash"] if existing else None
+            component_records.append(store.put(book_id, payload, parent_hash=parent_hash))
+        component_hashes = {
+            "character_bible": component_records[0]["content_hash"],
+            "location_bible": component_records[1]["content_hash"],
+            "storyboard": component_records[2]["content_hash"],
+            "typography": component_records[3]["content_hash"],
+            "proof_specs": component_records[4]["content_hash"],
+        }
+        pages_root = self.books_root / book_id / "page-scripts"
+        for page in package["storyboard"]["pages"]:
+            validate_named(page, schema_root, "page-script")
+            path = pages_root / ("page-%04d.v%04d.json" % (page["page_number"], package["storyboard"]["version"]))
+            if path.exists() and load_json(path) != page:
+                raise ContractError("immutable page script already differs", {"path": str(path)})
+            if not path.exists():
+                atomic_json_write(path, page)
+
+        semantic_request = build_semantic_visual_review_request(
+            package["proof_package"], self.providers.capabilities()["visual_evaluation"]
+        )
+        preproduction_review = {
+            "schema_version": "1.0",
+            "book_id": book_id,
+            "result": "PASS",
+            "review_kind": "DETERMINISTIC_SPECIFICATION_REVIEW",
+            "reviewer": {
+                "id": execution["agent_id"],
+                "role": execution.get("role", "art-iconography"),
+                "capability_verified": True,
+                "execution_mechanism": execution["mechanism"],
+            },
+            "manuscript_hash": current["content_hash"],
+            "component_hashes": component_hashes,
+            "component_reports": qa["components"],
+            "semantic_visual_review": semantic_request,
+            "semantic_visual_approval_claimed": False,
+            "images_generated": False,
+            "pdf_generated": False,
+            "publication_readiness_certified": False,
+        }
+        validate_named(preproduction_review, schema_root, "preproduction-review")
+        review_store = PreproductionReviewVersionStore(self.books_root)
+        prior = review_store.versions(book_id)
+        review_record = review_store.put(book_id, preproduction_review, prior[-1]["content_hash"] if prior else None)
+        response_record, stored_response_path = self.handoffs.store_response(handoff, response)
+
+        state_store = StateStore(self.books_root, book_id, self._configuration()["retry_limits"]["stage"])
+        state = state_store.load()
+        transitions = (
+            ("EDITORIAL_QA", "STORYBOARD", component_hashes["storyboard"]),
+            ("STORYBOARD", "CHARACTER_BIBLE", component_hashes["character_bible"]),
+            ("CHARACTER_BIBLE", "ART_PROOFS", component_hashes["proof_specs"]),
+        )
+        for source, target, output_hash in transitions:
+            if state["current_stage"] == source:
+                state = state_store.transition(
+                    target,
+                    "pr5-%s-%s" % (target.lower(), output_hash),
+                    actor=execution["agent_id"],
+                    input_hashes=handoff["locked_input_hashes"],
+                    output_hashes=[output_hash],
+                    policy_hashes=[dossier["rules_hash"]],
+                )
+        status = {
+            "schema_version": "1.0",
+            "book_id": book_id,
+            "source_readiness": dossier["status"],
+            "private_draft_gate": self.clearances.latest(book_id)["private_draft_gate"],
+            "manuscript_draft_completion": "COMPLETE_PR5_LATEST_REVISION",
+            "manuscript_v3_hash": ManuscriptVersionStore(self.books_root).versions(book_id)[2]["content_hash"],
+            "latest_manuscript_version": current["version"],
+            "independent_editorial_review": "PASS_DUAL_PERSPECTIVE",
+            "visual_preproduction": "PASS_DETERMINISTIC_SPECIFICATION_REVIEW",
+            "visual_proof_generation": "BLOCKED_PROVIDER",
+            "semantic_visual_review": "NOT_EXECUTED_NO_IMAGES_OR_BACKEND",
+            "visual_production": "NOT_STARTED_PR5_BOUNDARY",
+            "publication_readiness": "BLOCKED",
+            "publication_blockers": [
+                "WORLDWIDE_OR_TARGET_MARKET_PUBLICATION_RIGHTS_NOT_CLEARED",
+                "CHAPTER_EXTRACTION_ATOMICALLY_PARTIAL",
+                "INDEPENDENT_FULL_ARC_SOURCE_APPROVAL_NOT_ESTABLISHED",
+                "IMAGE_PROVIDER_NOT_CONFIGURED",
+                "VISUAL_SEMANTIC_REVIEW_NOT_EXECUTED",
+                "TYPOGRAPHY_FONT_LICENSE_SELECTION_PENDING",
+                "TRIM_BLEED_AND_EXPORT_PROFILE_NOT_SPECIFIED",
+                "FULL_ILLUSTRATION_PDF_AND_PUBLICATION_OUTSIDE_PR5",
+            ],
+            "latest_manuscript_hash": current["content_hash"],
+            "component_hashes": component_hashes,
+            "preproduction_review_hash": review_record["content_hash"],
+            "scripted_pages": len(package["storyboard"]["pages"]),
+            "full_page_immersive_scenes": [
+                page["page_number"] for page in package["storyboard"]["pages"]
+                if page.get("layout", {}).get("type") == "FULL_PAGE"
+            ],
+            "proof_specs": len(package["proof_package"]["specs"]),
+            "run_stage": state["current_stage"],
+            "exact_result": "VISUAL_PREPRODUCTION_REVIEWED_PUBLICATION_BLOCKED",
+        }
+        status["status_hash"] = content_hash(status)
+        atomic_json_write(self.books_root / book_id / "production-status.json", status)
+        return {
+            "status": status["exact_result"],
+            "book_id": book_id,
+            "component_hashes": component_hashes,
+            "preproduction_review_hash": review_record["content_hash"],
+            "response_path": str(stored_response_path),
+            "deterministic_review": qa,
+            "semantic_visual_review": semantic_request,
+            "run_stage": state["current_stage"],
+            "images_generated": False,
+            "pdf_generated": False,
+            "publication_gate": "BLOCKED",
         }
 
     def manuscript_status(self, book_id):
@@ -788,6 +1161,17 @@ class FactoryDirector:
                     "message": "resume from the existing locked review handoff; the manuscript was not regenerated",
                     "mutated": False,
                 }
+        if state["current_stage"] in {"STORYBOARD", "CHARACTER_BIBLE", "ART_PROOFS"}:
+            status_path = self.books_root / book_id / "production-status.json"
+            if status_path.exists():
+                status = load_json(status_path)
+                return {
+                    "status": status["exact_result"],
+                    "book_id": book_id,
+                    "current_stage": state["current_stage"],
+                    "production_status": status,
+                    "mutated": False,
+                }
         target = state.get("recovery", {}).get("resume_stage") if state["current_stage"] in {"BLOCKED", "FAILED"} else next_stage(state["current_stage"])
         required_provider = {"MANUSCRIPT": "manuscript_generation", "EDITORIAL_QA": "editorial_review"}.get(target)
         if required_provider:
@@ -889,6 +1273,10 @@ class FactoryDirector:
             })
         manuscript_versions = []
         editorial_review_versions = []
+        preproduction_versions = {
+            "character_bibles": [], "location_bibles": [], "storyboards": [],
+            "typography": [], "proof_specs": [], "preproduction_reviews": [],
+        }
         for book_root in sorted(path for path in self.books_root.iterdir() if path.is_dir() and path.name != "_artifacts"):
             for record in ManuscriptVersionStore(self.books_root).versions(book_root.name):
                 validate_named(record["payload"], schema_root, "manuscript")
@@ -896,6 +1284,20 @@ class FactoryDirector:
             for record in EditorialReviewStore(self.books_root).versions(book_root.name):
                 validate_named(record["payload"], schema_root, "editorial-review")
                 editorial_review_versions.append({"book_id": book_root.name, "content_hash": record["content_hash"]})
+            component_stores = (
+                ("character_bibles", CharacterBibleVersionStore(self.books_root), "character-bible"),
+                ("location_bibles", LocationBibleVersionStore(self.books_root), "location-bible"),
+                ("storyboards", StoryboardVersionStore(self.books_root), "storyboard"),
+                ("typography", TypographyVersionStore(self.books_root), "typography"),
+                ("proof_specs", ProofSpecVersionStore(self.books_root), "proof-spec"),
+                ("preproduction_reviews", PreproductionReviewVersionStore(self.books_root), "preproduction-review"),
+            )
+            for label, store, schema_name in component_stores:
+                for record in store.versions(book_root.name):
+                    validate_named(record["payload"], schema_root, schema_name)
+                    preproduction_versions[label].append({
+                        "book_id": book_root.name, "content_hash": record["content_hash"]
+                    })
         return {
             "status": "PASS",
             "schemas": schemas,
@@ -909,7 +1311,8 @@ class FactoryDirector:
             "agent_responses": agent_responses,
             "manuscript_versions": manuscript_versions,
             "editorial_review_versions": editorial_review_versions,
+            "preproduction_versions": preproduction_versions,
             "catalogue_mapping_validation": mapping_validation,
             "input_report": self.input_report(),
-            "note": "Foundation PR4 supports audited Codex session handoffs for manuscripts and independent review; illustration and PDF production remain out of scope",
+            "note": "Foundation PR5 supports dual independent manuscript review and deterministic visual-preproduction handoffs; proof rendering, semantic image review, illustration and PDF production remain blocked or out of scope",
         }

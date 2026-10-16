@@ -1,0 +1,279 @@
+{
+  "character_ids": [
+    "dm-medhas",
+    "dm-suratha",
+    "dm-samadhi"
+  ],
+  "continuity_in": "after-page-31",
+  "continuity_out": "story-complete",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-medhas",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-suratha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-samadhi",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-023"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "THREE_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p32-narration",
+      "placement": "caption-safe-region",
+      "text": "Back at the hermitage, the fire has burned low. The listeners sit with the completed ending before asking what came later."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p32-extra-01",
+      "placement": "closing-summary-balloon",
+      "speaker_id": "dm-medhas",
+      "text": "That is how Mahishasura's rule was broken. The gods asked for aid in calamity. Devi granted their request, and she vanished from their sight."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p32-extra-02",
+      "placement": "listener-balloon",
+      "speaker_id": "dm-samadhi",
+      "text": "So the story ends not with another blow, but with remembrance."
+    },
+    {
+      "channel": "INSET_EXPLANATION",
+      "id": "p32-extra-03",
+      "placement": "labeled-modern-editorial-reflection-inset",
+      "text": "A danger may change shape. Courage works best with attention: when a problem changes, look again before acting. This is a modern editorial reflection, not scripture or doctrine."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p32-extra-04",
+      "placement": "resolution-balloon",
+      "speaker_id": "dm-medhas",
+      "text": "Let the story rest there."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p32-extra-05",
+      "placement": "next-story-question-balloon",
+      "speaker_id": "dm-suratha",
+      "text": "Did the gods ever need her again?"
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p32-extra-06",
+      "placement": "next-volume-transition-balloon",
+      "speaker_id": "dm-medhas",
+      "text": "They did. Later, when another danger arose, the Goddess would emerge from Gauri. But that is another story, and it begins on another evening."
+    }
+  ],
+  "location_id": "forest-hermitage",
+  "moment_ids": [
+    "return_to_hermitage"
+  ],
+  "narrative_beats": [
+    "Back at the hermitage, the fire has burned low. The listeners sit with the completed ending before asking what came later."
+  ],
+  "page_id": "page-6dfe00104f4935095412a0b2",
+  "page_number": 32,
+  "panel_count": 3,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-medhas",
+        "dm-suratha",
+        "dm-samadhi"
+      ],
+      "composition": "Wide establishing composition for Let the Story Rest",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p32-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Re-establish Medhas, Suratha and Samādhi around the low hermitage fire as Medhas closes the completed Mahiṣāsura story.",
+        "shot_scale": "wide"
+      },
+      "location_id": "forest-hermitage",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p32-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Re-establish Medhas, Suratha and Samādhi around the low hermitage fire as Medhas closes the completed Mahiṣāsura story."
+    },
+    {
+      "character_ids": [
+        "dm-medhas",
+        "dm-suratha",
+        "dm-samadhi"
+      ],
+      "composition": "Medium consequence composition for Let the Story Rest",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p32-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Samādhi reflects on remembrance; pause for the labeled modern editorial reflection without presenting it as scripture.",
+        "shot_scale": "medium"
+      },
+      "location_id": "forest-hermitage",
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p32-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Samādhi reflects on remembrance; pause for the labeled modern editorial reflection without presenting it as scripture."
+    },
+    {
+      "character_ids": [
+        "dm-medhas",
+        "dm-suratha",
+        "dm-samadhi"
+      ],
+      "composition": "Close transition composition for Let the Story Rest",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p32-panel-03",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Suratha asks about later danger; Medhas names the later emergence from Gaurī as another story and another evening.",
+        "shot_scale": "close"
+      },
+      "location_id": "forest-hermitage",
+      "reading_order": 3,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p32-panel-03-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Suratha asks about later danger; Medhas names the later emergence from Gaurī as another story and another evening."
+    }
+  ],
+  "reading_order": [
+    "p32-panel-01",
+    "p32-panel-02",
+    "p32-panel-03"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p32-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-023-a",
+    "claim-023-b",
+    "claim-023-c",
+    "claim-next-volume-frame"
+  ],
+  "title": "Let the Story Rest",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation"
+  ],
+  "version": 2,
+  "visual_intent": "A cinematic story beat with exact editable lettering and source-bounded imagery."
+}

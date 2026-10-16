@@ -1,0 +1,290 @@
+{
+  "character_ids": [
+    "dm-devi",
+    "dm-tamra",
+    "dm-andhaka",
+    "dm-ugrasya",
+    "dm-ugravirya",
+    "dm-mahahanu",
+    "dm-bidala",
+    "dm-durdhara",
+    "dm-durmukha"
+  ],
+  "continuity_in": "after-page-21",
+  "continuity_out": "after-page-22",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-devi",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": [
+        "dm-bow",
+        "dm-arrows",
+        "dm-trident",
+        "dm-sword"
+      ]
+    },
+    {
+      "character_id": "dm-tamra",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-andhaka",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-ugrasya",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-ugravirya",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-mahahanu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-bidala",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-durdhara",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-durmukha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-018"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "TWO_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p22-narration",
+      "placement": "caption-safe-region",
+      "text": "Arrows stop Tāmra and Andhaka; the trident meets Ugrāsya, Ugravīrya and Mahāhanu; the sword stops Biḍāla; arrows end Durdhara's and Durmukha's attacks."
+    }
+  ],
+  "location_id": "battlefield",
+  "moment_ids": [],
+  "narrative_beats": [
+    "Arrows stop Tāmra and Andhaka; the trident meets Ugrāsya, Ugravīrya and Mahāhanu; the sword stops Biḍāla; arrows end Durdhara's and Durmukha's attacks."
+  ],
+  "page_id": "page-0b2629bb18a43b4183e08863",
+  "page_number": 22,
+  "panel_count": 2,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-tamra",
+        "dm-andhaka",
+        "dm-ugrasya",
+        "dm-ugravirya",
+        "dm-mahahanu",
+        "dm-bidala",
+        "dm-durdhara",
+        "dm-durmukha"
+      ],
+      "composition": "Broad first wave: arrows stop Tāmra and Andhaka at left while the trident meets Ugrāsya, Ugravīrya and Mahāhanu in three separated right-side lanes.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p22-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Broad first wave: arrows stop Tāmra and Andhaka at left while the trident meets Ugrāsya, Ugravīrya and Mahāhanu in three separated right-side lanes.",
+        "shot_scale": "wide"
+      },
+      "location_id": "battlefield",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p22-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Broad first wave: arrows stop Tāmra and Andhaka at left while the trident meets Ugrāsya, Ugravīrya and Mahāhanu in three separated right-side lanes."
+    },
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-tamra",
+        "dm-andhaka",
+        "dm-ugrasya",
+        "dm-ugravirya",
+        "dm-mahahanu",
+        "dm-bidala",
+        "dm-durdhara",
+        "dm-durmukha"
+      ],
+      "composition": "Broad second wave: the sword stops Biḍāla in the foreground and arrows end the distant attacks of Durdhara and Durmukha; finish on the chiefs' weapons falling silent.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p22-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Broad second wave: the sword stops Biḍāla in the foreground and arrows end the distant attacks of Durdhara and Durmukha; finish on the chiefs' weapons falling silent.",
+        "shot_scale": "medium"
+      },
+      "location_id": "battlefield",
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p22-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Broad second wave: the sword stops Biḍāla in the foreground and arrows end the distant attacks of Durdhara and Durmukha; finish on the chiefs' weapons falling silent."
+    }
+  ],
+  "reading_order": [
+    "p22-panel-01",
+    "p22-panel-02"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p22-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-018-a",
+    "claim-018-b"
+  ],
+  "title": "The Chiefs, Final Wave",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation"
+  ],
+  "version": 3,
+  "visual_intent": "A cinematic story beat with exact editable lettering and source-bounded imagery."
+}

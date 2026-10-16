@@ -1,0 +1,248 @@
+{
+  "character_ids": [
+    "dm-devi",
+    "dm-shiva",
+    "dm-vishnu",
+    "dm-varuna",
+    "dm-agni",
+    "dm-gods"
+  ],
+  "continuity_in": "after-page-04",
+  "continuity_out": "after-page-05",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-devi",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": [
+        "dm-trident",
+        "dm-discus",
+        "dm-conch",
+        "dm-spear"
+      ]
+    },
+    {
+      "character_id": "dm-shiva",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-vishnu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-varuna",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-agni",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-gods",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-010"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "TWO_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p05-narration",
+      "placement": "caption-safe-region",
+      "text": "Śiva gives a trident; Viṣṇu a discus; Varuṇa a conch; Agni a spear. Each donor and gift remains visually distinct."
+    }
+  ],
+  "location_id": "manifestation-space",
+  "moment_ids": [
+    "divine_gifts_and_weapons"
+  ],
+  "narrative_beats": [
+    "Śiva gives a trident; Viṣṇu a discus; Varuṇa a conch; Agni a spear. Each donor and gift remains visually distinct."
+  ],
+  "page_id": "page-f121bbf88437cd8098549bcd",
+  "page_number": 5,
+  "panel_count": 2,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-shiva",
+        "dm-vishnu",
+        "dm-varuna",
+        "dm-agni",
+        "dm-gods"
+      ],
+      "composition": "Wide establishing composition for Weapons of the Gods",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p05-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Śiva presents the trident and Viṣṇu presents the discus; keep both donor-to-gift handoffs readable.",
+        "shot_scale": "wide"
+      },
+      "location_id": "manifestation-space",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p05-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Śiva presents the trident and Viṣṇu presents the discus; keep both donor-to-gift handoffs readable."
+    },
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-shiva",
+        "dm-vishnu",
+        "dm-varuna",
+        "dm-agni",
+        "dm-gods"
+      ],
+      "composition": "Medium consequence composition for Weapons of the Gods",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p05-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Varuṇa presents the conch and Agni presents the spear; Devī receives each without merging donors.",
+        "shot_scale": "medium"
+      },
+      "location_id": "manifestation-space",
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p05-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Varuṇa presents the conch and Agni presents the spear; Devī receives each without merging donors."
+    }
+  ],
+  "reading_order": [
+    "p05-panel-01",
+    "p05-panel-02"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p05-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-010-a",
+    "claim-010-b",
+    "claim-arming-rhythm"
+  ],
+  "title": "Weapons of the Gods",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation"
+  ],
+  "version": 2,
+  "visual_intent": "A cinematic story beat with exact editable lettering and source-bounded imagery."
+}

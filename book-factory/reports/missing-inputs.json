@@ -8,10 +8,12 @@
   ],
   "missing": [],
   "operational_blockers": [
-    "No direct programmatic manuscript-generation or editorial-review provider is configured; PR4 uses an explicit zero-cost Codex specialist-agent handoff.",
+    "No direct programmatic manuscript-generation, editorial-review, illustration, or semantic visual-review provider is configured; PR5 uses explicit zero-cost Codex specialist-agent handoffs for manuscript and specification work.",
     "DM04 has private-draft rights clearance only; worldwide or target-market publication clearance is not granted.",
     "DM04 chapter extraction remains atomically partial and blanket independent full-arc scripture/theological approval is not established.",
-    "No illustration, visual-evaluation, or PDF production provider is configured."
+    "The four visual proof specifications are ready, but proof rendering and semantic image review are blocked because no image or visual-evaluation backend is configured.",
+    "Typography is not print-ready until a redistributable font choice, trim, bleed, and export profile are approved.",
+    "Full illustration, PDF production, and publication remain outside the PR5 milestone."
   ],
-  "status": "MANUSCRIPT_HANDOFF_AVAILABLE_PUBLICATION_AND_VISUAL_PRODUCTION_BLOCKED"
+  "status": "VISUAL_PREPRODUCTION_REVIEWED_PUBLICATION_BLOCKED"
 }
