@@ -1,0 +1,154 @@
+{
+  "book_id": "DM04",
+  "content_hash": "6f02b660a96ed4c97b103e760232dea7b5804a41d41fb2fde621c3c6ad40721c",
+  "id": "visual-reviews-94695fd5f840d4e937f52ebb",
+  "kind": "visual-reviews",
+  "parent_hash": "7dfb58cd54249b9a1b23f5e753161341c8e1d5f6a9a51f71b155c74299f04da3",
+  "payload": {
+    "actual_pixels_inspected": true,
+    "approval_claimed": false,
+    "book_id": "DM04",
+    "dimension_assessments": [
+      {
+        "dimension": "source_fidelity",
+        "findings": [
+          "The half-emergence from the buffalo mouth and trident contact are now readable, but the sword blade is directed into Mahiṣāsura's mouth rather than making the sourced beheading stroke at his neck, Devī's foot reads on the buffalo's head rather than clearly pinning the neck, and the required rejoicing gods are absent from the high distance."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "religious_iconography",
+        "findings": [
+          "The mouth-emergence iconography is corrected, but Devī is given a large disk halo contrary to the locked prohibition on unsourced halo symbolism."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "character_identity",
+        "findings": [
+          "The focal Devī/Mahiṣāsura pair is distinct and the lion/foreground troops are removed, but the page-authorized rejoicing gods are omitted."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "limbs",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "weapons_and_mounts",
+        "findings": [
+          "The trident and great sword are both present and the trident contacts the buffalo, but the great sword is not used at the Asura's neck for the required beheading action."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "anatomy",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "composition",
+        "findings": [
+          "Devī is dominant and the emergence is now clear, but the decisive pin-trident-sword action does not resolve into an unambiguous sword-at-neck culmination."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "environmental_consistency",
+        "findings": [
+          "The storm-dark battlefield is maintained, but the locked stable ridge anchor is not visible in the confrontation arena."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "cropping_and_clipping",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "lighting_and_color",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "series_identity",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "scripted_page_suitability",
+        "findings": [
+          "The image now supports the half-emergence and trident clauses, but not the explicit neck pin, great-sword beheading or rejoicing-gods clause; the visible red neck band and bleeding trident wound also exceed the requested non-graphic emphasis."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "lettering_safe_regions",
+        "findings": [
+          "The gold field is open at the very top, but the exact x=0.08..0.92, y=0.06..0.24 rectangle is occupied in its lower portion by the trident, Devī's crown and halo, hair and storm clouds."
+        ],
+        "result": "FIX"
+      }
+    ],
+    "findings": [
+      {
+        "code": "SWORD_BEHEADING_ACTION_UNRESOLVED",
+        "dimension": "source_fidelity",
+        "message": "Retain the corrected mouth emergence and trident contact, but place the great sword at Mahiṣāsura's neck in a clear, non-graphic beheading stroke."
+      },
+      {
+        "code": "NECK_PIN_UNCLEAR",
+        "dimension": "composition",
+        "message": "Place Devī's pinning contact unambiguously on the buffalo's neck rather than the crown of its head."
+      },
+      {
+        "code": "REJOICING_GODS_OMITTED",
+        "dimension": "character_identity",
+        "message": "Restore only the page-authorized rejoicing gods in the high distance; do not restore the lion or foreground troops."
+      },
+      {
+        "code": "NON_GRAPHIC_LIMIT_EXCEEDED",
+        "dimension": "scripted_page_suitability",
+        "message": "Reduce the bright red neck band and trident blood so the decisive action remains family-appropriate and non-graphic."
+      },
+      {
+        "code": "LETTERING_SAFE_REGION_STILL_OCCUPIED",
+        "dimension": "lettering_safe_regions",
+        "message": "Move crown, halo, trident and cloud detail below y=0.24 within x=0.08..0.92."
+      }
+    ],
+    "id": "visual-review-ff904d73246a73203eca0839",
+    "image": {
+      "aspect_ratio": "3:4",
+      "bytes": 3261467,
+      "format": "PNG",
+      "height": 1448,
+      "integrity": "PASS_CRC_AND_PIXEL_STREAM",
+      "path": "books/DM04/illustration-proofs/images/dm04-proof-full-page/attempt-02-18f850fb0ba3acca.png",
+      "readable": true,
+      "sha256": "18f850fb0ba3accaf956cc7d74cec34af610e174b8f68890e1ebdf87e9b54d32",
+      "width": 1086
+    },
+    "page_id": "page-ee247aeaffc829b0c7a69d76",
+    "producer": {
+      "id": "codex-native-image-tool",
+      "role": "illustration"
+    },
+    "proof_id": "dm04-proof-full-page",
+    "proof_spec_hash": "7ecb6152abc177a396e1abceaa352279573c6b9b272549a12081b1c7639496f0",
+    "request_hash": "01e4d58497e9871258a25e4af6f38cb910a8345f9a9255f701dd7b1277b74118",
+    "result": "FIX",
+    "review_hash": "5a3bf531147662ee0872a27f6ff5254c92f6642b8e64cc999ba345a9a64bd798",
+    "reviewed_at": "2026-10-16T17:09:13Z",
+    "reviewer": {
+      "capability_verified": true,
+      "execution_mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+      "id": "/root/dm04_visual_preproduction",
+      "role": "typesetter-independent-qa"
+    },
+    "schema_version": "1.0"
+  },
+  "schema_version": "1.0",
+  "version": 8
+}

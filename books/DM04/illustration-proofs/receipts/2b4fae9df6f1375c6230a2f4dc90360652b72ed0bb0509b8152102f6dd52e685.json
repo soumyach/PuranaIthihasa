@@ -1,0 +1,75 @@
+{
+  "actual_cost_minor_units": 0,
+  "attempt_number": 2,
+  "book_id": "DM04",
+  "character_reference_ids": [
+    "character-reference-73412409c4f1b2c61395a6db",
+    "character-reference-ad0dad819048c3e2fb5e86b0",
+    "character-reference-bd08c8f314e575bfdd7db527",
+    "character-reference-ca1ec2443310e1930975812e"
+  ],
+  "created_at": "2026-10-16T17:03:19Z",
+  "currency": "USD",
+  "estimated_cost_minor_units": 0,
+  "framing": {
+    "crop": null,
+    "method": "IDENTITY_COPY",
+    "output": {
+      "aspect_ratio": "3:4",
+      "bytes": 3146315,
+      "format": "PNG",
+      "height": 1448,
+      "integrity": "PASS_CRC_AND_PIXEL_STREAM",
+      "readable": true,
+      "sha256": "016faa6b34b5c1addeffd634554015033c1dbacd0ba6718dba1c767a17f3a619",
+      "width": 1086
+    },
+    "source": {
+      "aspect_ratio": "3:4",
+      "bytes": 3146315,
+      "format": "PNG",
+      "height": 1448,
+      "integrity": "PASS_CRC_AND_PIXEL_STREAM",
+      "readable": true,
+      "sha256": "016faa6b34b5c1addeffd634554015033c1dbacd0ba6718dba1c767a17f3a619",
+      "width": 1086
+    }
+  },
+  "generation_version": 2,
+  "id": "proof-receipt-10a76e924d557816613f38f7",
+  "image": {
+    "aspect_ratio": "3:4",
+    "bytes": 3146315,
+    "format": "PNG",
+    "height": 1448,
+    "integrity": "PASS_CRC_AND_PIXEL_STREAM",
+    "path": "books/DM04/illustration-proofs/images/dm04-proof-battle/attempt-02-016faa6b34b5c1ad.png",
+    "readable": true,
+    "sha256": "016faa6b34b5c1addeffd634554015033c1dbacd0ba6718dba1c767a17f3a619",
+    "width": 1086
+  },
+  "operation_key": "37fd80e0d6f47ff855b792065d348db2cc6816d0027de8ccabf64f307ca9d6f0",
+  "page_id": "page-354711e6abadf0d5b67a0147",
+  "producer": {
+    "id": "codex-native-image-tool",
+    "role": "illustration"
+  },
+  "proof_id": "dm04-proof-battle",
+  "proof_spec_hash": "ff7b1f1d55c0d3e8f37a9e796eef85688a33df00a65ba6c7c579314b8796b218",
+  "provider": {
+    "integration": "CODEX_NATIVE_IMAGE_TOOL_SESSION_HANDOFF",
+    "model": "NOT_SURFACED_BY_BUILTIN_TOOL",
+    "provider_id": "codex-built-in-image-gen",
+    "provider_request_id": "exec-f3d51953-223f-49ca-9856-8aa68cc80e3c"
+  },
+  "receipt_hash": "2b4fae9df6f1375c6230a2f4dc90360652b72ed0bb0509b8152102f6dd52e685",
+  "request_hash": "381f280d563eef7eac1c982d4b01aaa70e06c83c79ac445cbeb8fee8a8e23c6c",
+  "schema_version": "1.0",
+  "source_hashes": {
+    "character_registry": "55c2baf60d34188a547c72752683b575ecebaece3bbd751ff376ebdad6fab31f",
+    "manuscript": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+    "proof_package": "718b4bc0352c652403a1ca429be5acb170896cbf4cf93e23665e862490276c20",
+    "rules": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070"
+  },
+  "status": "GENERATED_AWAITING_INDEPENDENT_VISUAL_REVIEW"
+}

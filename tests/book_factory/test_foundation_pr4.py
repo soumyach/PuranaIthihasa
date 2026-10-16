@@ -120,11 +120,17 @@ class FoundationPR4Tests(unittest.TestCase):
             "MANUSCRIPT_V3_AWAITING_SECOND_INDEPENDENT_REVIEW_PUBLICATION_BLOCKED",
             "MANUSCRIPT_V3_DUAL_REVIEWED_VISUAL_PREPRODUCTION_PENDING_PUBLICATION_BLOCKED",
             "VISUAL_PREPRODUCTION_REVIEWED_PUBLICATION_BLOCKED",
+            "ILLUSTRATION_PROOFS_REVIEWED_FIX_RETRY_EXHAUSTED_PUBLICATION_BLOCKED",
         } or status["exact_result"].startswith("MANUSCRIPT_PR5_"))
         self.assertEqual(status["source_readiness"], "BLOCKED")
         self.assertIn(status["manuscript_draft_completion"], {"COMPLETE", "COMPLETE_PR5_LATEST_REVISION"})
         self.assertIn(status["independent_editorial_review"], {"PASS", "AWAITING_REVIEW", "FIX", "PARTIAL_PASS", "PASS_DUAL_PERSPECTIVE"})
-        self.assertIn(status["visual_production"], {"NOT_STARTED_PR4_BOUNDARY", "NOT_STARTED", "NOT_STARTED_PR5_BOUNDARY"})
+        self.assertIn(status["visual_production"], {
+            "NOT_STARTED_PR4_BOUNDARY",
+            "NOT_STARTED",
+            "NOT_STARTED_PR5_BOUNDARY",
+            "PROOFS_ONLY_FULL_BOOK_NOT_STARTED",
+        })
         self.assertEqual(status["publication_readiness"], "BLOCKED")
 
     def test_unsupported_canonical_claim_is_detected(self):
@@ -313,6 +319,7 @@ class FoundationPR4Tests(unittest.TestCase):
             "MANUSCRIPT_V3_DUAL_REVIEWED_VISUAL_PREPRODUCTION_PENDING_PUBLICATION_BLOCKED",
             "MANUSCRIPT_PR5_LATEST_REVISION_DUAL_REVIEWED_VISUAL_PREPRODUCTION_PENDING_PUBLICATION_BLOCKED",
             "VISUAL_PREPRODUCTION_REVIEWED_PUBLICATION_BLOCKED",
+            "ILLUSTRATION_PROOFS_REVIEWED_FIX_RETRY_EXHAUSTED_PUBLICATION_BLOCKED",
         })
         self.assertEqual(before, events_path.read_bytes())
 

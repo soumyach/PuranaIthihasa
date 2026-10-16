@@ -1,6 +1,7 @@
-"""Single user-facing orchestration facade for Foundation PR5."""
+"""Single user-facing orchestration facade for Foundation PR6."""
 
 import json
+from copy import deepcopy
 from pathlib import Path
 
 from . import __version__
@@ -17,10 +18,23 @@ from .drafting import (
 from .editorial import PR5_REVIEW_PERSPECTIVES, editorial_review, finalize_review
 from .errors import ContractError, NotImplementedStageError
 from .handoffs import SessionHandoffStore, finalize_handoff, validate_execution
+from .illustration_production import (
+    ProofExecutionLedger,
+    build_character_reference_registry,
+    build_contact_sheet_svg,
+    build_generation_request,
+    build_style_approval_request,
+    discover_image_backends,
+    finalize_visual_review,
+    store_snapshot,
+    validate_proof_receipts,
+    visual_review_request,
+)
 from .narrative import validate_manuscript
 from .pilot import PilotSelector, catalogue_readiness_report
 from .preproduction import build_semantic_visual_review_request, validate_preproduction_package
-from .providers.base import FixtureImageProviderContract, ProviderRegistry
+from .providers import CodexNativeImageProvider
+from .providers.base import ProviderRegistry
 from .references import ReferenceEditionRegistry
 from .rules import rules_status
 from .source_graph import ReadOnlySourceGraph
@@ -30,13 +44,17 @@ from .state import StateStore, next_stage
 from .util import atomic_json_write, atomic_write, content_hash, load_json, sha256_bytes
 from .versioning import (
     CharacterBibleVersionStore,
+    CharacterReferenceVersionStore,
     EditorialReviewStore,
+    IllustrationProofVersionStore,
     LocationBibleVersionStore,
     ManuscriptVersionStore,
     PreproductionReviewVersionStore,
     ProofSpecVersionStore,
     StoryboardVersionStore,
+    StyleApprovalRequestVersionStore,
     TypographyVersionStore,
+    VisualReviewVersionStore,
 )
 
 
@@ -47,7 +65,7 @@ class FactoryDirector:
         self.catalogue = CatalogueStore(Path(catalogue_path).resolve() if catalogue_path else self.books_root / "catalogue.json")
         self.graph = ReadOnlySourceGraph(self.root / "research" / "source-graph")
         self.source_intelligence = SourceReadinessAssessor(self.graph, self.root)
-        self.providers = ProviderRegistry({"image": FixtureImageProviderContract()})
+        self.providers = ProviderRegistry({"image": CodexNativeImageProvider()})
         self.mappings = SourceMappingRegistry(self.root / "book-factory" / "config" / "catalogue-source-mappings.json")
         self.reference_editions = ReferenceEditionRegistry(self.root)
         self.clearances = SourceClearanceStore(self.books_root)
@@ -76,12 +94,13 @@ class FactoryDirector:
                 states.append({"book_id": book_id, "status": "INVALID", "message": str(exc)})
         return {
             "factory_version": __version__,
-            "implementation": "FOUNDATION_PR5",
+            "implementation": "FOUNDATION_PR6",
             "catalogue_books": len(books),
             "readiness_counts": {state: sum(book["readiness"] == state for book in books) for state in sorted({book["readiness"] for book in books})},
             "active_runs": states,
             "rules": rules_status(self.root),
             "providers": self.providers.capabilities(),
+            "image_generation_environment": self.image_capabilities(),
             "codex_session_handoff": {
                 "supported": True,
                 "programmatic_repository_spawn": False,
@@ -992,6 +1011,446 @@ class FactoryDirector:
             "publication_gate": "BLOCKED",
         }
 
+    def image_capabilities(self):
+        path = self.root / "book-factory" / "config" / "image-provider-capabilities.json"
+        if path.is_file():
+            report = load_json(path)
+            supplied = report.pop("capability_hash", None)
+            digest = content_hash(report)
+            if supplied and supplied != digest:
+                raise ContractError("image provider capability hash is invalid")
+            report["capability_hash"] = digest
+            return report
+        return discover_image_backends(builtin_available=False)
+
+    def _pr6_components(self, book_id):
+        if book_id == "DM08":
+            raise ContractError("DM08 is an immutable existing edition and cannot enter proof generation")
+        manuscripts = ManuscriptVersionStore(self.books_root).versions(book_id)
+        characters = CharacterBibleVersionStore(self.books_root).versions(book_id)
+        locations = LocationBibleVersionStore(self.books_root).versions(book_id)
+        storyboards = StoryboardVersionStore(self.books_root).versions(book_id)
+        proofs = ProofSpecVersionStore(self.books_root).versions(book_id)
+        if not all((manuscripts, characters, locations, storyboards, proofs)):
+            raise ContractError("PR6 requires the complete immutable PR5 package")
+        state = StateStore(self.books_root, book_id, self._configuration()["retry_limits"]["stage"]).load()
+        if state["current_stage"] not in {"ART_PROOFS", "AWAITING_STYLE_APPROVAL"}:
+            raise ContractError("PR6 proof work requires ART_PROOFS or AWAITING_STYLE_APPROVAL state")
+        return {
+            "manuscript": manuscripts[-1],
+            "character": characters[-1],
+            "location": locations[-1],
+            "storyboard": storyboards[-1],
+            "proofs": proofs[-1],
+            "state": state,
+        }
+
+    def _pr6_character_registry(self, book_id, components):
+        payload = build_character_reference_registry(book_id, components["character"])
+        return store_snapshot(CharacterReferenceVersionStore, self.books_root, book_id, payload)
+
+    @staticmethod
+    def _proof_page_number(kind):
+        mapping = {
+            "QUIET_CONVERSATION": 1,
+            "DIVINE_REVEAL": 4,
+            "BATTLE": 17,
+            "FULL_PAGE_IMMERSION": 29,
+        }
+        if kind not in mapping:
+            raise ContractError("unknown locked proof kind")
+        return mapping[kind]
+
+    def prepare_proof_generation(self, book_id, proof_id):
+        components = self._pr6_components(book_id)
+        capability_report = self.image_capabilities()
+        selected_id = capability_report.get("selected_provider_id")
+        capability = next(
+            (item for item in capability_report.get("candidates", []) if item.get("provider_id") == selected_id),
+            None,
+        )
+        if not capability or not capability.get("available") or not capability.get("actual_creation_executable"):
+            raise ProviderUnavailableError(
+                "no authorized executable image backend is available",
+                capability_report,
+            )
+        specs = [item for item in components["proofs"]["payload"]["specs"] if item.get("id") == proof_id]
+        if len(specs) != 1:
+            raise ContractError("proof id is not unique in the active locked package")
+        proof_spec = specs[0]
+        page_number = self._proof_page_number(proof_spec["kind"])
+        page = next(
+            item for item in components["storyboard"]["payload"]["pages"]
+            if item["page_number"] == page_number
+        )
+        location = next(
+            item for item in components["location"]["payload"]["entries"]
+            if item["id"] == proof_spec["setting"]
+        )
+        registry_record = self._pr6_character_registry(book_id, components)
+        ledger = ProofExecutionLedger(self.books_root, book_id)
+        prior_intents = [
+            item for item in ledger.events()
+            if item.get("proof_id") == proof_id and item.get("status") == "INTENT_RECORDED"
+        ]
+        prior_visual_review_hash = None
+        revision_findings = []
+        if prior_intents:
+            prior_receipt = next(
+                (item for item in self._latest_successful_receipts(book_id) if item["proof_id"] == proof_id),
+                None,
+            )
+            if prior_receipt is None:
+                raise ContractError("retry requires a completed prior proof image")
+            prior_reviews = [
+                item["payload"] for item in VisualReviewVersionStore(self.books_root).versions(book_id)
+                if item["payload"].get("image", {}).get("sha256") == prior_receipt["image"]["sha256"]
+            ]
+            if not prior_reviews:
+                raise ContractError("retry requires independent review of the exact prior proof image")
+            prior_review = prior_reviews[-1]
+            if prior_review.get("result") != "FIX":
+                raise ContractError("retry is allowed only when the exact prior image received FIX")
+            prior_visual_review_hash = prior_review["review_hash"]
+            revision_findings = [
+                "%s: %s" % (item.get("code", "REVIEW_FINDING"), item.get("message", ""))
+                for item in prior_review.get("findings", [])
+            ]
+            if not revision_findings:
+                revision_findings = [
+                    "%s: %s" % (assessment["dimension"], finding)
+                    for assessment in prior_review.get("dimension_assessments", [])
+                    for finding in assessment.get("findings", [])
+                    if assessment.get("result") == "FIX"
+                ]
+        existing_reference_paths = [
+            reference["image_path"]
+            for entry in registry_record["payload"]["entries"]
+            if entry["canonical_character_id"] in proof_spec["character_ids"]
+            for reference in entry.get("approved_visual_references", [])
+        ]
+        request = build_generation_request(
+            book_id,
+            proof_spec,
+            page,
+            registry_record["payload"],
+            location,
+            capability,
+            components["proofs"]["content_hash"],
+            components["manuscript"]["content_hash"],
+            rules_status(self.root)["sha256"],
+            len(prior_intents) + 1,
+            existing_reference_paths,
+            prior_visual_review_hash,
+            revision_findings,
+        )
+        spending = load_json(self.root / "book-factory" / "policies" / "spending-policy.json")
+        prepared = ledger.prepare(request, spending)
+        return {
+            "status": "READY_FOR_CODEX_NATIVE_IMAGE_TOOL",
+            "book_id": book_id,
+            "proof_id": proof_id,
+            "provider": capability,
+            "request": request,
+            "request_path": prepared["request_path"],
+            "idempotent_replay": prepared["idempotent"],
+            "actual_cost_authorized_minor_units": 0,
+            "paid_calls_authorized": False,
+        }
+
+    def import_proof_image(self, book_id, request_path, image_path, provider_receipt_path):
+        components = self._pr6_components(book_id)
+        request = load_json(Path(request_path))
+        if request.get("request_hash") != content_hash({key: value for key, value in request.items() if key != "request_hash"}):
+            raise ContractError("proof request content hash is invalid")
+        if request.get("proof_package_hash") != components["proofs"]["content_hash"]:
+            raise ContractError("proof request is stale against the locked proof package")
+        provider_receipt = load_json(Path(provider_receipt_path))
+        ledger = ProofExecutionLedger(self.books_root, book_id)
+        receipt, replay = ledger.import_image(request, image_path, provider_receipt)
+        successful = [
+            load_json(path) for path in sorted((self.books_root / book_id / "illustration-proofs" / "receipts").glob("*.json"))
+        ]
+        snapshot = {
+            "schema_version": "1.0",
+            "book_id": book_id,
+            "proof_package_hash": components["proofs"]["content_hash"],
+            "provider_capability_hash": self.image_capabilities().get("capability_hash"),
+            "receipts": sorted(successful, key=lambda item: (item["proof_id"], item["attempt_number"])),
+            "validation": validate_proof_receipts(self.root, successful),
+        }
+        record = store_snapshot(IllustrationProofVersionStore, self.books_root, book_id, snapshot)
+        return {
+            "status": receipt["status"],
+            "book_id": book_id,
+            "proof_id": receipt["proof_id"],
+            "image": receipt["image"],
+            "receipt_hash": receipt["receipt_hash"],
+            "proof_record_hash": record["content_hash"],
+            "idempotent_replay": replay,
+            "actual_cost_minor_units": receipt["actual_cost_minor_units"],
+        }
+
+    def _latest_successful_receipts(self, book_id):
+        root = self.books_root / book_id / "illustration-proofs" / "receipts"
+        receipts = [load_json(path) for path in sorted(root.glob("*.json"))]
+        latest = {}
+        for receipt in receipts:
+            current = latest.get(receipt["proof_id"])
+            if current is None or receipt["attempt_number"] > current["attempt_number"]:
+                latest[receipt["proof_id"]] = receipt
+        return [latest[key] for key in sorted(latest)]
+
+    def _all_successful_receipts(self, book_id):
+        root = self.books_root / book_id / "illustration-proofs" / "receipts"
+        return [load_json(path) for path in sorted(root.glob("*.json"))]
+
+    def prepare_visual_review(self, book_id, proof_id):
+        self._pr6_components(book_id)
+        receipt = next(
+            (item for item in self._latest_successful_receipts(book_id) if item["proof_id"] == proof_id),
+            None,
+        )
+        if receipt is None:
+            raise ContractError("visual review requires a real generated proof image")
+        request = visual_review_request(receipt)
+        handoff, path = self.handoffs.prepare(
+            book_id,
+            "VISUAL_REVIEW",
+            request,
+            "typesetter-independent-qa",
+            [receipt["image"]["sha256"], receipt["proof_spec_hash"], *receipt["source_hashes"].values()],
+            writer_id=receipt["producer"]["id"],
+        )
+        return {
+            "status": handoff["status"],
+            "book_id": book_id,
+            "proof_id": proof_id,
+            "handoff_hash": handoff["handoff_hash"],
+            "request_hash": request["request_hash"],
+            "path": str(path),
+            "actual_pixels_required": True,
+            "required_independence_from_producer_id": receipt["producer"]["id"],
+        }
+
+    def import_visual_review(self, book_id, handoff_path, response_path):
+        self._pr6_components(book_id)
+        handoff = load_json(Path(handoff_path))
+        response = load_json(Path(response_path))
+        validate_named(handoff, self.root / "schemas" / "book-factory", "agent-handoff")
+        validate_named(response, self.root / "schemas" / "book-factory", "agent-response")
+        if handoff.get("book_id") != book_id or handoff.get("kind") != "VISUAL_REVIEW":
+            raise ContractError("wrong visual-review handoff")
+        if finalize_handoff(handoff) != handoff:
+            raise ContractError("visual-review handoff content hash is invalid")
+        execution = validate_execution(
+            handoff,
+            response,
+            "visual_evaluation",
+            writer_id=handoff.get("required_independence_from_writer_id"),
+        )
+        review_input = response.get("result", {}).get("visual_review")
+        if not isinstance(review_input, dict):
+            raise ContractError("agent response has no structured visual review")
+        review_input = deepcopy(review_input)
+        review_input["request_hash"] = handoff["request_hash"]
+        review_input["reviewer"] = {
+            "id": execution["agent_id"],
+            "role": execution.get("role", "typesetter-independent-qa"),
+            "capability_verified": True,
+            "execution_mechanism": execution["mechanism"],
+        }
+        review_store = VisualReviewVersionStore(self.books_root)
+        prior_for_request = [
+            item for item in review_store.versions(book_id)
+            if item["payload"].get("request_hash") == handoff["request_hash"]
+        ]
+        if prior_for_request:
+            record = prior_for_request[-1]
+            record_payload = record["payload"]
+            comparable_keys = {
+                "result", "actual_pixels_inspected", "dimension_assessments", "findings", "reviewer"
+            }
+            if any(record_payload.get(key) != review_input.get(key) for key in comparable_keys):
+                raise ContractError("visual-review handoff already has a different immutable response")
+        else:
+            record_payload = finalize_visual_review(handoff["request"], review_input, self.root)
+            record = store_snapshot(VisualReviewVersionStore, self.books_root, book_id, record_payload)
+        response_record, stored_response_path = self.handoffs.store_response(handoff, response)
+        latest_receipts = self._latest_successful_receipts(book_id)
+        all_reviews = [item["payload"] for item in VisualReviewVersionStore(self.books_root).versions(book_id)]
+        review_by_image = {item["image"]["sha256"]: item for item in all_reviews}
+        latest_reviews = [review_by_image.get(item["image"]["sha256"]) for item in latest_receipts]
+        required_proofs = {
+            item["id"] for item in self._pr6_components(book_id)["proofs"]["payload"]["specs"]
+        }
+        if (
+            {item["proof_id"] for item in latest_receipts} == required_proofs
+            and all(latest_reviews)
+        ):
+            prior_status = load_json(self.books_root / book_id / "production-status.json")
+            aggregate_result = "PASS" if all(item["result"] == "PASS" for item in latest_reviews) else "FIX"
+            attempts = [
+                item for item in ProofExecutionLedger(self.books_root, book_id).events()
+                if item.get("status") == "INTENT_RECORDED"
+            ]
+            status = dict(prior_status)
+            status.update({
+                "visual_proof_generation": "COMPLETE_FOUR_REAL_PROOFS",
+                "semantic_visual_review": "%s_INDEPENDENT_EXACT_IMAGE_REVIEW" % aggregate_result,
+                "visual_production": "PROOFS_ONLY_FULL_BOOK_NOT_STARTED",
+                "style_approval": (
+                    "ELIGIBLE_TO_PREPARE_HUMAN_REQUEST" if aggregate_result == "PASS"
+                    else "BLOCKED_PROOF_FIXES_AND_RETRY_CEILING"
+                ),
+                "proof_images_latest": len(latest_receipts),
+                "real_images_generated_total": len(attempts),
+                "proof_image_hashes": [item["image"]["sha256"] for item in latest_receipts],
+                "visual_review_hashes": [item["review_hash"] for item in latest_reviews],
+                "actual_spending_minor_units": sum(
+                    item["actual_cost_minor_units"] for item in self._all_successful_receipts(book_id)
+                ),
+                "run_stage": "ART_PROOFS",
+                "exact_result": (
+                    "ILLUSTRATION_PROOFS_REVIEWED_PASS_STYLE_REQUEST_NOT_YET_PREPARED_PUBLICATION_BLOCKED"
+                    if aggregate_result == "PASS"
+                    else "ILLUSTRATION_PROOFS_REVIEWED_FIX_RETRY_EXHAUSTED_PUBLICATION_BLOCKED"
+                ),
+            })
+            status["publication_blockers"] = [
+                item for item in prior_status.get("publication_blockers", [])
+                if item not in {
+                    "IMAGE_PROVIDER_NOT_CONFIGURED",
+                    "VISUAL_SEMANTIC_REVIEW_NOT_EXECUTED",
+                    "FULL_ILLUSTRATION_PDF_AND_PUBLICATION_OUTSIDE_PR5",
+                    "FULL_ILLUSTRATION_PDF_AND_PUBLICATION_OUTSIDE_PR6",
+                    "PROOF_FIXES_REQUIRED_RETRY_CEILING_EXHAUSTED",
+                }
+            ]
+            status["publication_blockers"].append("FULL_ILLUSTRATION_PDF_AND_PUBLICATION_OUTSIDE_PR6")
+            if aggregate_result == "FIX":
+                status["publication_blockers"].append("PROOF_FIXES_REQUIRED_RETRY_CEILING_EXHAUSTED")
+            status.pop("status_hash", None)
+            status["status_hash"] = content_hash(status)
+            atomic_json_write(self.books_root / book_id / "production-status.json", status)
+        return {
+            "status": record_payload["result"],
+            "book_id": book_id,
+            "proof_id": record_payload["proof_id"],
+            "image_hash": record_payload["image"]["sha256"],
+            "review_hash": record_payload["review_hash"],
+            "review_version_hash": record["content_hash"],
+            "response_hash": response_record["response_hash"],
+            "response_path": str(stored_response_path),
+            "approval_claimed": False,
+        }
+
+    def build_proof_contact_sheet(self, book_id):
+        components = self._pr6_components(book_id)
+        receipts = self._latest_successful_receipts(book_id)
+        reviews = [item["payload"] for item in VisualReviewVersionStore(self.books_root).versions(book_id)]
+        validation = validate_proof_receipts(self.root, receipts)
+        if validation["result"] != "PASS":
+            raise ContractError("proof files fail deterministic validation", {"findings": validation["findings"]})
+        destination = self.books_root / book_id / "illustration-proofs" / "contact-sheets" / "pr6-proof-contact-sheet.svg"
+        metadata = build_contact_sheet_svg(self.root, receipts, reviews, destination)
+        status_path = self.books_root / book_id / "production-status.json"
+        if status_path.exists():
+            status = load_json(status_path)
+            status["contact_sheet_hash"] = metadata["contact_sheet_hash"]
+            status["contact_sheet_path"] = metadata["contact_sheet_path"]
+            status.pop("status_hash", None)
+            status["status_hash"] = content_hash(status)
+            atomic_json_write(status_path, status)
+        return {
+            "status": "CONTACT_SHEET_READY",
+            "book_id": book_id,
+            "path": str(destination),
+            "metadata_path": str(destination.with_suffix(".json")),
+            "contact_sheet": metadata,
+            "proof_package_hash": components["proofs"]["content_hash"],
+        }
+
+    def prepare_style_approval(self, book_id):
+        components = self._pr6_components(book_id)
+        receipts = self._latest_successful_receipts(book_id)
+        required_proofs = {item["id"] for item in components["proofs"]["payload"]["specs"]}
+        if {item["proof_id"] for item in receipts} != required_proofs:
+            raise ContractError("style approval requires all four locked proof images")
+        validation = validate_proof_receipts(self.root, receipts)
+        if validation["result"] != "PASS":
+            raise ContractError("style approval requires deterministic proof validation PASS")
+        reviews = [item["payload"] for item in VisualReviewVersionStore(self.books_root).versions(book_id)]
+        latest_review_by_image = {item["image"]["sha256"]: item for item in reviews}
+        if any(latest_review_by_image.get(item["image"]["sha256"], {}).get("result") != "PASS" for item in receipts):
+            raise ContractError("style approval requires independent PASS review for every exact proof image")
+        contact = self.build_proof_contact_sheet(book_id)["contact_sheet"]
+        registry = self._pr6_character_registry(book_id, components)
+        request = build_style_approval_request(
+            book_id,
+            receipts,
+            [latest_review_by_image[item["image"]["sha256"]] for item in receipts],
+            registry["content_hash"],
+            components["proofs"]["content_hash"],
+            {
+                "manuscript_hash": components["manuscript"]["content_hash"],
+                "source_graph_hash": self.graph.graph_hash(),
+                "rules_hash": rules_status(self.root)["sha256"],
+            },
+            contact,
+        )
+        approval_record = store_snapshot(
+            StyleApprovalRequestVersionStore, self.books_root, book_id, request
+        )
+        state_store = StateStore(self.books_root, book_id, self._configuration()["retry_limits"]["stage"])
+        state = state_store.load()
+        if state["current_stage"] == "ART_PROOFS":
+            state = state_store.transition(
+                "AWAITING_STYLE_APPROVAL",
+                "pr6-awaiting-style-%s" % request["approval_request_hash"],
+                actor="director",
+                input_hashes=[components["proofs"]["content_hash"], registry["content_hash"], *[item["image"]["sha256"] for item in receipts]],
+                output_hashes=[approval_record["content_hash"], contact["contact_sheet_hash"]],
+                policy_hashes=[rules_status(self.root)["sha256"]],
+            )
+        total_spend = sum(
+            item["actual_cost_minor_units"] for item in self._all_successful_receipts(book_id)
+        )
+        prior_status = load_json(self.books_root / book_id / "production-status.json")
+        status = dict(prior_status)
+        status.update({
+            "visual_proof_generation": "COMPLETE_FOUR_REAL_PROOFS",
+            "semantic_visual_review": "PASS_INDEPENDENT_EXACT_IMAGE_REVIEW",
+            "visual_production": "PROOFS_ONLY_FULL_BOOK_NOT_STARTED",
+            "style_approval": "AWAITING_HUMAN_STYLE_APPROVAL",
+            "proof_images": len(receipts),
+            "proof_image_hashes": [item["image"]["sha256"] for item in receipts],
+            "visual_review_hashes": [latest_review_by_image[item["image"]["sha256"]]["review_hash"] for item in receipts],
+            "contact_sheet_hash": contact["contact_sheet_hash"],
+            "style_approval_request_hash": approval_record["content_hash"],
+            "actual_spending_minor_units": total_spend,
+            "run_stage": state["current_stage"],
+            "exact_result": "ILLUSTRATION_PROOFS_READY_AWAITING_STYLE_APPROVAL_PUBLICATION_BLOCKED",
+        })
+        status["publication_blockers"] = [
+            item for item in prior_status.get("publication_blockers", [])
+            if item not in {"IMAGE_PROVIDER_NOT_CONFIGURED", "VISUAL_SEMANTIC_REVIEW_NOT_EXECUTED"}
+        ] + ["HUMAN_VISUAL_STYLE_APPROVAL_PENDING"]
+        status.pop("status_hash", None)
+        status["status_hash"] = content_hash(status)
+        atomic_json_write(self.books_root / book_id / "production-status.json", status)
+        return {
+            "status": request["status"],
+            "book_id": book_id,
+            "approval_request_hash": request["approval_request_hash"],
+            "approval_version_hash": approval_record["content_hash"],
+            "contact_sheet": contact,
+            "proof_count": len(receipts),
+            "actual_spending_minor_units": total_spend,
+            "run_stage": state["current_stage"],
+            "publication_gate": "BLOCKED",
+        }
+
     def manuscript_status(self, book_id):
         manifests = ManuscriptVersionStore(self.books_root).versions(book_id)
         reviews = EditorialReviewStore(self.books_root).versions(book_id)
@@ -1217,6 +1676,9 @@ class FactoryDirector:
             validate_named(load_json(path), schema_root, "worker-contract")
             worker_contracts.append(path.name)
         validate_named(load_json(self.root / "book-factory" / "policies" / "spending-policy.json"), schema_root, "budget")
+        image_capabilities = self.image_capabilities()
+        if image_capabilities.get("selected_provider_id") != "codex-built-in-image-gen":
+            raise ContractError("PR6 capability record must select the executed Codex native backend")
         fixture = load_json(self.root / "book-factory" / "fixtures" / "synthetic-book" / "catalogue.json")
         validate_named(fixture, schema_root, "catalogue")
         graph_report = self.graph.verify()
@@ -1276,7 +1738,10 @@ class FactoryDirector:
         preproduction_versions = {
             "character_bibles": [], "location_bibles": [], "storyboards": [],
             "typography": [], "proof_specs": [], "preproduction_reviews": [],
+            "character_references": [], "illustration_proof_records": [],
+            "visual_reviews": [], "style_approval_requests": [],
         }
+        proof_execution_validation = []
         for book_root in sorted(path for path in self.books_root.iterdir() if path.is_dir() and path.name != "_artifacts"):
             for record in ManuscriptVersionStore(self.books_root).versions(book_root.name):
                 validate_named(record["payload"], schema_root, "manuscript")
@@ -1291,6 +1756,10 @@ class FactoryDirector:
                 ("typography", TypographyVersionStore(self.books_root), "typography"),
                 ("proof_specs", ProofSpecVersionStore(self.books_root), "proof-spec"),
                 ("preproduction_reviews", PreproductionReviewVersionStore(self.books_root), "preproduction-review"),
+                ("character_references", CharacterReferenceVersionStore(self.books_root), "character-reference"),
+                ("illustration_proof_records", IllustrationProofVersionStore(self.books_root), "illustration-proof-record"),
+                ("visual_reviews", VisualReviewVersionStore(self.books_root), "visual-review"),
+                ("style_approval_requests", StyleApprovalRequestVersionStore(self.books_root), "style-approval-request"),
             )
             for label, store, schema_name in component_stores:
                 for record in store.versions(book_root.name):
@@ -1298,6 +1767,21 @@ class FactoryDirector:
                     preproduction_versions[label].append({
                         "book_id": book_root.name, "content_hash": record["content_hash"]
                     })
+            receipt_root = book_root / "illustration-proofs" / "receipts"
+            if receipt_root.is_dir():
+                receipts = [load_json(path) for path in sorted(receipt_root.glob("*.json"))]
+                proof_gate = validate_proof_receipts(self.root, receipts)
+                if proof_gate["result"] != "PASS":
+                    raise ContractError("stored illustration proof failed validation", {"book_id": book_root.name, "findings": proof_gate["findings"]})
+                ledger = ProofExecutionLedger(self.books_root, book_root.name)
+                events = ledger.events()
+                proof_execution_validation.append({
+                    "book_id": book_root.name,
+                    "receipts": len(receipts),
+                    "ledger_events": len(events),
+                    "actual_cost_minor_units": sum(item.get("actual_cost_minor_units", 0) for item in receipts),
+                    "result": proof_gate["result"],
+                })
         return {
             "status": "PASS",
             "schemas": schemas,
@@ -1312,7 +1796,9 @@ class FactoryDirector:
             "manuscript_versions": manuscript_versions,
             "editorial_review_versions": editorial_review_versions,
             "preproduction_versions": preproduction_versions,
+            "proof_execution_validation": proof_execution_validation,
             "catalogue_mapping_validation": mapping_validation,
             "input_report": self.input_report(),
-            "note": "Foundation PR5 supports dual independent manuscript review and deterministic visual-preproduction handoffs; proof rendering, semantic image review, illustration and PDF production remain blocked or out of scope",
+            "image_capabilities": image_capabilities,
+            "note": "Foundation PR6 adds real four-proof generation through an auditable Codex native-tool bridge, exact pixel validation, independent visual review, and a fail-closed human style-approval request gate; full-book illustration and PDF production remain blocked.",
         }

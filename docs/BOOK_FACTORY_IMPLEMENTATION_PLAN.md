@@ -1,6 +1,6 @@
 # Khatakshetra Autonomous Book Factory — Implementation Plan
 
-> Foundation status: PR1 established the offline control plane; PR2 added source intelligence; PR3/PR4 added the private manuscript and independent editorial loop; PR5 now completes DM04 literary revision and deterministic visual preproduction. Rendering, semantic image review, PDF production, and publication remain blocked or out of scope. See `docs/BOOK_FACTORY_FOUNDATION_PR5.md` for the current executable state.
+> Foundation status: PR1 established the offline control plane; PR2 added source intelligence; PR3/PR4 added the private manuscript and independent editorial loop; PR5 completed DM04 literary revision and deterministic visual preproduction; PR6 executed eight real illustration-proof attempts with independent pixel review. All four latest proofs remain `FIX`, so the state stays `ART_PROOFS`. PDF production and publication remain blocked or out of scope. See `docs/BOOK_FACTORY_FOUNDATION_PR6.md` for the current executable state.
 
 Status: architecture proposal only; no factory or book has been generated  
 Audit date: 2026-10-16  
@@ -769,18 +769,22 @@ Rules:
 - Use synthetic licensed fixtures and pinned fonts.
 - Prove page-level regeneration without invalidating unrelated pages.
 
-### PR5 — Authorized image-provider canary
+### PR5 — Literary revision and deterministic visual preproduction
 
-- Add one selected real provider adapter behind secret storage and hard spending limits.
-- Run a small non-DM08 canary only after explicit authorization.
-- Record quality, cost, recovery, rights, and benchmark results; do not publish.
+- Complete the DM04 v5 literary revision, independent source and family review, character/location bibles, 32-page storyboard, typography controls, and four locked proof specifications.
+- Preserve the provider block honestly; do not render images or claim pixel review.
 
-### PR6 — New-book end-to-end acceptance
+### PR6 — Real illustration-proof canary
 
-- Use a selected new-book pilot, not DM08, after storage, font, provider, rights, source-readiness, and reviewer prerequisites are present.
-- Keep DM08 immutable as a literary/presentation reference unless the user explicitly requests separate work on it.
-- Produce one complete reviewed new book with page-level recovery, independent QA, and a final PDF.
-- Stop at `FINAL_PDF_READY`; do not deploy or publish.
+- Execute only the four locked DM04 proof scenes through a selected authorized image boundary.
+- Enforce zero unauthorized spend, durable intent-before-call logging, exact image hashes, two attempts per proof, and independent actual-pixel review.
+- Build a review contact sheet, but open style approval only when every latest proof independently passes.
+
+### PR7 — Proof repair strategy and style decision
+
+- Do not add a third attempt under the PR6 policy. First obtain a human decision on whether to revise the proof specifications, change the provider/model, or explicitly authorize a new bounded proof run.
+- Add machine-checkable safe-region overlays and stronger scene-specific composition controls before any new generation.
+- Keep full-book illustration, lettering, PDF assembly, deployment, and publication out of scope until a representative proof set passes and receives exact-asset human style approval.
 
 ## 12. Acceptance criteria for PR1
 

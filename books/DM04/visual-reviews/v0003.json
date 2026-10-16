@@ -1,0 +1,144 @@
+{
+  "book_id": "DM04",
+  "content_hash": "c03afbb8a4f20c1fe99ff8a947d0d2d1fa233063b4affacdcbe8d6223547d8df",
+  "id": "visual-reviews-7ec629709814205469deda5e",
+  "kind": "visual-reviews",
+  "parent_hash": "09a5515015a407792a2e0b5c040d4439ed5db2e6303a4c1b21cd20ee5aa40d85",
+  "payload": {
+    "actual_pixels_inspected": true,
+    "approval_claimed": false,
+    "book_id": "DM04",
+    "dimension_assessments": [
+      {
+        "dimension": "source_fidelity",
+        "findings": [
+          "The counter-arrow exchange is visible, but the locked second beat is incomplete: the charioteer's fall is not identifiable and Cikṣura is thrown through the air rather than leaving the disabled chariot on foot with sword and shield."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "religious_iconography",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "character_identity",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "limbs",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "weapons_and_mounts",
+        "findings": [
+          "The locked page authorizes Devī's bow and arrows for this action, but the image foregrounds trident, mace, discus, conch, curved sword and multiple bows as simultaneous action equipment.",
+          "Cikṣura's required sword-and-shield continuation is absent, while the horses and chariot do not clearly convey the exact ordered losses."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "anatomy",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "composition",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "environmental_consistency",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "cropping_and_clipping",
+        "findings": [
+          "Cikṣura's outward arm is cut by the right edge, and prominent foreground combatants and bodies are clipped along the lower frame."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "lighting_and_color",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "series_identity",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "scripted_page_suitability",
+        "findings": [
+          "The image reads as a generalized battlefield climax rather than page 17's precise two-stage Cikṣura sequence."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "lettering_safe_regions",
+        "findings": [
+          "The required top safe rectangle is occupied on the left by Devī's crown, arms and weapons and on the right by broken bows, arrows and the command banner."
+        ],
+        "result": "FIX"
+      }
+    ],
+    "findings": [
+      {
+        "code": "CIKSHURA_SEQUENCE_INCOMPLETE",
+        "dimension": "source_fidelity",
+        "message": "Show the arrow counter, exact horse/driver/bow/banner losses, and Cikṣura continuing on foot with sword and shield."
+      },
+      {
+        "code": "PAGE_ACTION_EQUIPMENT_MISMATCH",
+        "dimension": "weapons_and_mounts",
+        "message": "Keep Devī's readable foreground action to the locked bow-and-arrow exchange instead of a simultaneous full armory display."
+      },
+      {
+        "code": "PRIMARY_CHARACTER_CLIPPED",
+        "dimension": "cropping_and_clipping",
+        "message": "Keep Cikṣura's full action silhouette and hands inside the frame."
+      },
+      {
+        "code": "LETTERING_SAFE_REGION_OCCUPIED",
+        "dimension": "lettering_safe_regions",
+        "message": "Clear the full normalized top safe rectangle (x 0.08-0.92, y 0.06-0.24)."
+      }
+    ],
+    "id": "visual-review-36d6ab2c9cfebf3d3c70bcab",
+    "image": {
+      "aspect_ratio": "3:4",
+      "bytes": 3200157,
+      "format": "PNG",
+      "height": 1448,
+      "integrity": "PASS_CRC_AND_PIXEL_STREAM",
+      "path": "books/DM04/illustration-proofs/images/dm04-proof-battle/attempt-01-42cfdd660d064fdd.png",
+      "readable": true,
+      "sha256": "42cfdd660d064fddb289c38f7f404ab0232ed1234f66ffa66dfdd8ae8c47ddef",
+      "width": 1086
+    },
+    "page_id": "page-354711e6abadf0d5b67a0147",
+    "producer": {
+      "id": "codex-native-image-tool",
+      "role": "illustration"
+    },
+    "proof_id": "dm04-proof-battle",
+    "proof_spec_hash": "ff7b1f1d55c0d3e8f37a9e796eef85688a33df00a65ba6c7c579314b8796b218",
+    "request_hash": "37801ba8d9ba58c80036b6cf6f529cbbfbf98c1ce372ffa5620cc16bfc40112c",
+    "result": "FIX",
+    "review_hash": "ace314c60186d2202dfa0118b0f2a4d13834e809290828cbf483ecee9e8f603a",
+    "reviewed_at": "2026-10-16T16:57:59Z",
+    "reviewer": {
+      "capability_verified": true,
+      "execution_mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+      "id": "/root/dm04_visual_preproduction",
+      "role": "typesetter-independent-qa"
+    },
+    "schema_version": "1.0"
+  },
+  "schema_version": "1.0",
+  "version": 3
+}

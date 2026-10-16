@@ -1,0 +1,57 @@
+{
+  "attempt_ceiling": 2,
+  "attempt_number": 2,
+  "book_attempt_ceiling": 8,
+  "book_id": "DM04",
+  "character_reference_ids": [
+    "character-reference-3d6085dacbd59c85f095ad47",
+    "character-reference-ad0dad819048c3e2fb5e86b0"
+  ],
+  "character_registry_hash": "55c2baf60d34188a547c72752683b575ecebaece3bbd751ff376ebdad6fab31f",
+  "currency": "USD",
+  "estimated_cost_minor_units": 0,
+  "integration": "CODEX_NATIVE_IMAGE_TOOL_SESSION_HANDOFF",
+  "manuscript_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+  "model": "NOT_SURFACED_BY_BUILTIN_TOOL",
+  "operation": "generate",
+  "operation_key": "be23cab58f1fd6a278a9930fd5033f5cb0247d36c7c31e07a9abfc20856165a1",
+  "page_id": "page-ee247aeaffc829b0c7a69d76",
+  "page_number": 29,
+  "paid_operation": false,
+  "prior_visual_review_hash": "857fecce96361276d2964fcdb69b11c38581d9982577ec449fd9c3955c04af84",
+  "prompt": "Use case: illustration-story\nAsset type: Khatakshetra DM04 internal illustration proof; artwork only, no lettering\nPrimary request: The decisive moment\nScene/backdrop: Mahiṣāsura's direct confrontation. same battlefield compressed into a circular confrontation arena; ridge remains visible\nSubject and sourced action: Devī leaps, pins his neck, strikes with the trident and beheads the half-emerged Asura without graphic emphasis.\nSource-bounded character facts: Devī / Caṇḍikā: Manifested from gathered divine radiances; receives the sourced gifts, lion and adornments; at the start of battle her crown touches the sky and her thousand arms fill the surrounding spaces; defeats Mahiṣāsura and grants the gods' request. | Mahiṣāsura: Displaces the gods, enters battle in buffalo form, changes through the sourced sequence of forms, and is slain while half-emerged.\nApproved artistic proposals, not textual facts: Devī / Caṇḍikā: deep blue, antique gold and warm ivory; serene authority; source-specified thousand-arm cosmic field on event 012 pages, with readable foreground hands holding sourced equipment | Mahiṣāsura: dark umber and oxblood accents; powerful asymmetrical mass; one persistent brow and eye motif across forms\nStyle/medium: traditional Indian miniature and Kalamkari influences; rich painterly detail; devotional, dignified premium storybook atmosphere; expressive characters; jewel-toned scene colors; consistent navy and antique-gold ornamental framing cues\nComposition/framing: portrait 3:4; Vertical full-page confrontation with Devī dominant and the half-emerged form unambiguous.; protect the specified lettering-safe region with uncluttered negative space\nLighting/mood: storm-dark edge light against Devī's gold\nColor palette: midnight navy and antique gold anchors with saffron, vermilion, crimson, emerald, turquoise, peacock blue, royal purple, ivory and bronze inside the painting\nConstraints: No invented doctrine or boon. | Source silence stays marked as visual proposal. | Use only locked DM04 identities and events.\nAvoid: borrowing attributes from another deity or manifestation | embedded lettering | extra limb | graphic gore | merged Mahisha forms | merged identity | modern object | treating an unspecified detail as textual fact | unsourced halo symbolism | unsourced weapon | watermark | generic Western fantasy armor | futuristic elements | speech balloons | captions | letters | words | watermarks\nTargeted attempt-2 corrections from independent pixel review: MAHISHA_PARTIAL_EMERGENCE_WRONG: Depict the Asura specifically half-emerged from the buffalo's mouth, not joined to or riding from its back. | DECISIVE_ACTION_INCOMPLETE: Show Devī pinning the buffalo neck, making trident contact and using the great sword for the non-graphic beheading. | EXTRA_CHARACTERS_IN_LOCKED_PROOF: Remove the lion and foreground asura troops; retain only the locked focal pair and the page-authorized rejoicing gods high in the distance. | MALFORMED_FOREGROUND_HAND: Correct Mahiṣāsura's foreground hand to an unambiguous five-digit structure. | LETTERING_SAFE_REGION_OCCUPIED: Clear the full normalized top safe rectangle (x 0.08-0.92, y 0.06-0.24).",
+  "proof_id": "dm04-proof-full-page",
+  "proof_kind": "FULL_PAGE_IMMERSION",
+  "proof_package_hash": "718b4bc0352c652403a1ca429be5acb170896cbf4cf93e23665e862490276c20",
+  "proof_spec_hash": "7ecb6152abc177a396e1abceaa352279573c6b9b272549a12081b1c7639496f0",
+  "provider_id": "codex-built-in-image-gen",
+  "reference_image_paths": [],
+  "request_hash": "cfec57a5b1c1c15991179a006c8f8dda7529491a3610078ba87bcd7c467521e3",
+  "revision_findings": [
+    "MAHISHA_PARTIAL_EMERGENCE_WRONG: Depict the Asura specifically half-emerged from the buffalo's mouth, not joined to or riding from its back.",
+    "DECISIVE_ACTION_INCOMPLETE: Show Devī pinning the buffalo neck, making trident contact and using the great sword for the non-graphic beheading.",
+    "EXTRA_CHARACTERS_IN_LOCKED_PROOF: Remove the lion and foreground asura troops; retain only the locked focal pair and the page-authorized rejoicing gods high in the distance.",
+    "MALFORMED_FOREGROUND_HAND: Correct Mahiṣāsura's foreground hand to an unambiguous five-digit structure.",
+    "LETTERING_SAFE_REGION_OCCUPIED: Clear the full normalized top safe rectangle (x 0.08-0.92, y 0.06-0.24)."
+  ],
+  "rules_hash": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070",
+  "safe_regions": [
+    {
+      "height": 0.18,
+      "id": "dm04-proof-full-page-safe",
+      "purpose": "editable lettering",
+      "width": 0.84,
+      "x": 0.08,
+      "y": 0.06
+    }
+  ],
+  "schema_version": "1.0",
+  "source_support": [
+    "dm-evidence-021"
+  ],
+  "target_canvas": {
+    "aspect_ratio": "3:4",
+    "pixel_height": 1448,
+    "pixel_width": 1086
+  }
+}

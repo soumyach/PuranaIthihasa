@@ -1,0 +1,18 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/style-approval-request.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {"const": "1.0", "type": "string"},
+    "book_id": {"type": "string"},
+    "approval_type": {"const": "VISUAL_STYLE_OR_CHARACTER_FAMILY", "type": "string"},
+    "status": {"const": "AWAITING_STYLE_APPROVAL", "type": "string"},
+    "human_approver_required": {"const": true, "type": "boolean"},
+    "self_approval_prohibited": {"const": true, "type": "boolean"},
+    "assets": {"items": {"type": "object"}, "minItems": 1, "type": "array"},
+    "approval_request_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
+  },
+  "required": ["schema_version", "book_id", "approval_type", "status", "human_approver_required", "self_approval_prohibited", "assets", "approval_request_hash"],
+  "title": "Human visual-style approval request",
+  "type": "object"
+}

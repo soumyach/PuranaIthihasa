@@ -1,17 +1,17 @@
-# Khatakshetra Book Factory — Foundation PR5
+# Khatakshetra Book Factory — Foundation PR6
 
-PR5 preserves the PR4 manuscript pipeline and adds an authorized DM04 literary-quality revision, separate source-fidelity and literary-experience review gates, versioned character/location bibles, complete storyboard/page scripts, typography controls, and four proof specifications. DM08 remains an existing reference edition and is never regenerated. No image or PDF is generated, and publication remains blocked. See `docs/BOOK_FACTORY_FOUNDATION_PR5.md` for the execution report.
+PR6 preserves the complete PR5 literary and visual-preproduction package and adds a real-image execution boundary, durable cost/idempotency ledger, character-reference registry, strict two-attempt proof loop, independent pixel review, and a self-contained contact sheet. Eight genuine DM04 proof attempts were generated at zero direct monetary cost. Both attempts for every locked proof received independent `FIX`, so DM04 correctly remains at `ART_PROOFS`; no style approval is claimed. DM08 remains an immutable existing reference edition. See `docs/BOOK_FACTORY_FOUNDATION_PR6.md` for the execution report.
 
-## PR5 visual-preproduction workflow
+## PR6 illustration-proof workflow
 
-1. `prepare-manuscript-handoff --pr5-quality-revision` binds the immutable v2 parent and its prior PASS review.
-2. `import-manuscript-handoff` stores v3 with event and claim sidecars; v1 and v2 remain unchanged.
-3. Prepare and import separate `SOURCE_FIDELITY` and `LITERARY_EXPERIENCE` reviews. Both are mandatory and hash-bound.
-4. `prepare-preproduction-handoff` opens only after both review perspectives pass.
-5. `import-preproduction-handoff` validates and versions the character bible, location bible, complete storyboard, page scripts, typography specification and four proof specifications.
-6. Proof rendering and semantic visual review remain `BLOCKED_PROVIDER`; specification QA never masquerades as image inspection or approval.
+1. `image-capabilities` records every inspected backend and selects only the zero-direct-cost Codex built-in image tool for this execution session.
+2. `prepare-proof-generation` persists an exact request and operation key before any provider call.
+3. `import-proof-image` validates the real PNG pixel stream, normalizes without stretching when needed, rejects duplicates, and stores a hash-bound execution receipt.
+4. `prepare-visual-review` and `import-visual-review` enforce an actual-pixel review by an identity distinct from the producer.
+5. A `FIX` may open one targeted retry carrying the exact prior review hash and findings. Two attempts per proof and eight total are hard ceilings.
+6. `build-proof-contact-sheet` embeds the latest real PNG pixels and exact QA metadata. `prepare-style-approval` fails closed unless all four latest images have independent `PASS`.
 
-The successful PR5 terminal status is `VISUAL_PREPRODUCTION_REVIEWED_PUBLICATION_BLOCKED`. It certifies only that the manuscript and preproduction specification gates passed. It does not certify source readiness, publication rights, theological authority, visual quality, print readiness, or release readiness.
+The PR6 terminal status is `ILLUSTRATION_PROOFS_REVIEWED_FIX_RETRY_EXHAUSTED_PUBLICATION_BLOCKED`. It records successful real generation and deterministic validation, not visual approval, source certification, publication rights, print readiness, or release readiness.
 
 ## Command interface
 
@@ -34,6 +34,13 @@ From the repository root, use the checked-in launcher:
 ./factory prepare-review-handoff --book-id DM04
 ./factory import-review-handoff --book-id DM04 --handoff PATH --response PATH
 ./factory manuscript-status --book-id DM04
+./factory image-capabilities
+./factory prepare-proof-generation --book-id DM04 --proof-id PROOF_ID
+./factory import-proof-image --book-id DM04 --request REQUEST --image PNG --provider-receipt RECEIPT
+./factory prepare-visual-review --book-id DM04 --proof-id PROOF_ID
+./factory import-visual-review --book-id DM04 --handoff HANDOFF --response RESPONSE
+./factory build-proof-contact-sheet --book-id DM04
+./factory prepare-style-approval --book-id DM04
 ./factory produce-next --dry-run
 ./factory resume --book-id ID
 ```
@@ -87,13 +94,13 @@ The direct `manuscript_generation` and `editorial_review` adapters remain unavai
 - Machine-readable contracts and reusable skills for the Director and six specialist roles.
 - Offline unit tests, existing graph tests, dependency-free baseline Node tests, source-path/binary boundary checks, and GitHub Actions CI.
 
-## Scaffolded, not implemented
+## Scaffolded or still blocked
 
 - Direct programmatic manuscript-generation and editorial-review provider adapters. PR4 uses the verified Codex session handoff instead.
-- Illustration generation/editing, including the test fixture execution backend. The fixture provider is only a capability seam and cannot claim success.
+- A reusable credential-backed image service. PR6's real Codex-native adapter is host-injected and session-scoped; a plain repository process fails closed without that executor.
 - Page composition, editable SVG lettering, PDF assembly, font embedding, rendered-page inspection, or pixel comparison.
-- Image-based visual evaluation. Its deterministic result is `ESCALATE` with `VISUAL_BACKEND_NOT_IMPLEMENTED`.
-- A real provider, API credential, pricing model, cost reconciliation, or network recovery protocol.
+- Automatic visual acceptance. PR6 uses an explicit independent Codex specialist handoff and preserves its actual-pixel `FIX` decisions.
+- A paid provider credential, pinned external pricing model, or provider-side recovery API. PR6 made no paid call.
 - Git LFS enablement, publishing, deployment, PR creation, merging, sales, or email.
 
 ## Catalogue and readiness
@@ -143,7 +150,8 @@ Implement `Provider.capabilities()`, `estimate_minor_units()`, and `execute()` f
 - Both reference PDFs remain local, hash-verified, ignored presentation references; no oversized PDF exists in ordinary Git history.
 - DM04's source dossier remains `BLOCKED`; a separate private-draft clearance permits only an original editorial adaptation from graph paraphrases and locators.
 - DM04 publication remains blocked on target-market legal review, atomically partial source extraction, lack of blanket full-arc source/theological approval, and all visual production.
-- No approved image/LLM/visual-evaluation provider, credential, quota, or price is configured.
+- The Codex built-in image tool worked for this PR6 session, but no reusable repository credential, quota, or external price is configured.
+- All four latest DM04 proofs remain `FIX` after attempt two; the hard retry ceiling is exhausted and style approval is unopened.
 - No licensed pinned font family or approved Git LFS quota/storage policy exists.
 - Human theological/iconographic reviewer identities are not configured.
 

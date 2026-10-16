@@ -5,7 +5,7 @@
   "properties": {
     "schema_version": {"const": "1.0", "type": "string"},
     "book_id": {"type": "string"},
-    "kind": {"enum": ["MANUSCRIPT_GENERATION", "MANUSCRIPT_REVISION", "EDITORIAL_REVIEW", "VISUAL_PREPRODUCTION"], "type": "string"},
+    "kind": {"enum": ["MANUSCRIPT_GENERATION", "MANUSCRIPT_REVISION", "EDITORIAL_REVIEW", "VISUAL_PREPRODUCTION", "VISUAL_REVIEW"], "type": "string"},
     "status": {"const": "AWAITING_CODEX_SPECIALIST_AGENT", "type": "string"},
     "request_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
     "request": {"type": "object"},

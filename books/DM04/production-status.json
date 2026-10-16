@@ -1,4 +1,5 @@
 {
+  "actual_spending_minor_units": 0,
   "book_id": "DM04",
   "component_hashes": {
     "character_bible": "a0f22e1c57a8ba8bb4ed39b4840dd85f13aef5e3caec0806986e59bba8410914",
@@ -7,7 +8,9 @@
     "storyboard": "25cc8bed5368e78c36a3bec43ad03efb7fe2ddc4dd41124ca9ce02bcdcc18185",
     "typography": "605f269acb50053132a7a313374456ad707c48c2c4dde0b31c075cabfae7b835"
   },
-  "exact_result": "VISUAL_PREPRODUCTION_REVIEWED_PUBLICATION_BLOCKED",
+  "contact_sheet_hash": "c5a14a3c41ed186bef03290d274d4b8ab117af46ddcf58048f79074d68612e95",
+  "contact_sheet_path": "books/DM04/illustration-proofs/contact-sheets/pr6-proof-contact-sheet.svg",
+  "exact_result": "ILLUSTRATION_PROOFS_REVIEWED_FIX_RETRY_EXHAUSTED_PUBLICATION_BLOCKED",
   "full_page_immersive_scenes": [
     4,
     9,
@@ -23,25 +26,39 @@
   "manuscript_v3_hash": "b4256fcb2d4bf24a9c04559f59c3f0985101ef42c6299392b159fba5e41cfdcd",
   "preproduction_review_hash": "c0cce041baa11473ed2afdc1ec8a8b185ee124bffa90c1124d5bbef3e19afdd6",
   "private_draft_gate": "PRIVATE_DRAFT_PERMITTED_PUBLICATION_BLOCKED",
+  "proof_image_hashes": [
+    "016faa6b34b5c1addeffd634554015033c1dbacd0ba6718dba1c767a17f3a619",
+    "21af6bf894e1abc6d63f6d797ccebebda569e65f372658ff4cc126164f3a7139",
+    "18f850fb0ba3accaf956cc7d74cec34af610e174b8f68890e1ebdf87e9b54d32",
+    "578e0fcdb4dcf016b7b85a50736e498859528560f569885ddf0f8060003f32fc"
+  ],
+  "proof_images_latest": 4,
   "proof_specs": 4,
   "publication_blockers": [
     "WORLDWIDE_OR_TARGET_MARKET_PUBLICATION_RIGHTS_NOT_CLEARED",
     "CHAPTER_EXTRACTION_ATOMICALLY_PARTIAL",
     "INDEPENDENT_FULL_ARC_SOURCE_APPROVAL_NOT_ESTABLISHED",
-    "IMAGE_PROVIDER_NOT_CONFIGURED",
-    "VISUAL_SEMANTIC_REVIEW_NOT_EXECUTED",
     "TYPOGRAPHY_FONT_LICENSE_SELECTION_PENDING",
     "TRIM_BLEED_AND_EXPORT_PROFILE_NOT_SPECIFIED",
-    "FULL_ILLUSTRATION_PDF_AND_PUBLICATION_OUTSIDE_PR5"
+    "FULL_ILLUSTRATION_PDF_AND_PUBLICATION_OUTSIDE_PR6",
+    "PROOF_FIXES_REQUIRED_RETRY_CEILING_EXHAUSTED"
   ],
   "publication_readiness": "BLOCKED",
+  "real_images_generated_total": 8,
   "run_stage": "ART_PROOFS",
   "schema_version": "1.0",
   "scripted_pages": 32,
-  "semantic_visual_review": "NOT_EXECUTED_NO_IMAGES_OR_BACKEND",
+  "semantic_visual_review": "FIX_INDEPENDENT_EXACT_IMAGE_REVIEW",
   "source_readiness": "BLOCKED",
-  "status_hash": "4c81b01281901ced4ce00d86208e60c2cf9e4ce18d82833c5ae4fb756569e300",
+  "status_hash": "b9002f60e9585ae681eb66077ce7892ba7a0add92956f124db3bd6764d855d95",
+  "style_approval": "BLOCKED_PROOF_FIXES_AND_RETRY_CEILING",
   "visual_preproduction": "PASS_DETERMINISTIC_SPECIFICATION_REVIEW",
-  "visual_production": "NOT_STARTED_PR5_BOUNDARY",
-  "visual_proof_generation": "BLOCKED_PROVIDER"
+  "visual_production": "PROOFS_ONLY_FULL_BOOK_NOT_STARTED",
+  "visual_proof_generation": "COMPLETE_FOUR_REAL_PROOFS",
+  "visual_review_hashes": [
+    "14027187d4222aedfd3abbc966939bdf554cc2901efea95ba20ebbca54a43104",
+    "7b40da0afef3e8aa65d6b84ae7f7a284960bf76a1fed212131f3e245c40c22d6",
+    "5a3bf531147662ee0872a27f6ff5254c92f6642b8e64cc999ba345a9a64bd798",
+    "b561d06259a14dad40b40844dc2013ddb65e4d946cd7a4d8905859e8ae1f804e"
+  ]
 }

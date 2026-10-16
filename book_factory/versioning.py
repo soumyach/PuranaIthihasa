@@ -105,3 +105,23 @@ class ProofSpecVersionStore(ImmutableVersionStore):
 class PreproductionReviewVersionStore(ImmutableVersionStore):
     def __init__(self, books_root):
         super().__init__(books_root, "preproduction-reviews")
+
+
+class CharacterReferenceVersionStore(ImmutableVersionStore):
+    def __init__(self, books_root):
+        super().__init__(books_root, "character-references")
+
+
+class IllustrationProofVersionStore(ImmutableVersionStore):
+    def __init__(self, books_root):
+        super().__init__(books_root, "illustration-proof-records")
+
+
+class VisualReviewVersionStore(ImmutableVersionStore):
+    def __init__(self, books_root):
+        super().__init__(books_root, "visual-reviews")
+
+
+class StyleApprovalRequestVersionStore(ImmutableVersionStore):
+    def __init__(self, books_root):
+        super().__init__(books_root, "style-approval-requests")

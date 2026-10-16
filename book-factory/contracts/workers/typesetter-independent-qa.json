@@ -3,7 +3,7 @@
   "id": "typesetter-independent-qa",
   "inputs": ["approved art", "structured lettering", "page layouts", "approved manuscript", "bibles", "qa policy"],
   "outputs": ["editable page source", "proof metadata", "PDF metadata", "independent QA reports"],
-  "responsibilities": ["preserve editable text layers and four distinct lettering channels", "validate page order and 1086 by 1448 3:4 geometry", "inspect fonts and licensing without bundling unauthorized font files", "refuse print-ready claims without trim bleed and export profiles", "review independently from upstream creators", "never publish or deploy"],
+  "responsibilities": ["preserve editable text layers and four distinct lettering channels", "validate page order and 1086 by 1448 3:4 geometry", "inspect exact proof-image pixels across all thirteen PR6 visual dimensions", "inspect fonts and licensing without bundling unauthorized font files", "refuse print-ready claims without trim bleed and export profiles", "review independently from upstream creators", "never publish or deploy"],
   "schema_version": "1.0",
-  "validation_rules": ["caption dialogue duplication check passes", "continuity and source gates pass", "visual QA is ESCALATE until a backend exists", "critical findings block readiness"]
+  "validation_rules": ["caption dialogue duplication check passes", "continuity and source gates pass", "visual QA inspects actual image pixels and exact hashes when a backend exists", "visual PASS requires every PR6 review dimension to pass", "critical findings block readiness"]
 }

@@ -14,7 +14,7 @@ from .util import atomic_json_write, content_hash, load_json, stable_id, utc_now
 
 HANDOFF_KINDS = {
     "MANUSCRIPT_GENERATION", "MANUSCRIPT_REVISION", "EDITORIAL_REVIEW",
-    "VISUAL_PREPRODUCTION",
+    "VISUAL_PREPRODUCTION", "VISUAL_REVIEW",
 }
 MECHANISM = "CODEX_SPECIALIST_SUBAGENT_HANDOFF"
 
@@ -74,6 +74,7 @@ class SessionHandoffStore:
             "required_role": required_role,
             "required_capability": (
                 "editorial_review" if kind == "EDITORIAL_REVIEW" else
+                "visual_evaluation" if kind == "VISUAL_REVIEW" else
                 "visual_preproduction" if kind == "VISUAL_PREPRODUCTION" else
                 "manuscript_generation"
             ),

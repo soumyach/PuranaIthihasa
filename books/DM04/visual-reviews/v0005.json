@@ -1,0 +1,120 @@
+{
+  "book_id": "DM04",
+  "content_hash": "8036e94b9ad8d2b6402cbd686c1ac261679483028496337a8d627769d38bd38a",
+  "id": "visual-reviews-8ea5086ec1f34d7f735941ee",
+  "kind": "visual-reviews",
+  "parent_hash": "f38b4de1e9d63a0cbebda50f9402670fc3d2384d126025592f5d2499457a15da",
+  "payload": {
+    "actual_pixels_inspected": true,
+    "approval_claimed": false,
+    "book_id": "DM04",
+    "dimension_assessments": [
+      {
+        "dimension": "source_fidelity",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "religious_iconography",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "character_identity",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "limbs",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "weapons_and_mounts",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "anatomy",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "composition",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "environmental_consistency",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "cropping_and_clipping",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "lighting_and_color",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "series_identity",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "scripted_page_suitability",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "lettering_safe_regions",
+        "findings": [
+          "The exact normalized safe rectangle x=0.08..0.92, y=0.06..0.24 is not fully clear: dense tree crowns and branches enter its lower-left and lower-right portions from roughly y=0.17 onward."
+        ],
+        "result": "FIX"
+      }
+    ],
+    "findings": [
+      {
+        "code": "LETTERING_SAFE_REGION_STILL_OCCUPIED",
+        "dimension": "lettering_safe_regions",
+        "message": "The sword correction is resolved, but the full top safe rectangle must remain uniformly uncluttered; move both tree crowns below y=0.24 or outside x=0.08..0.92."
+      }
+    ],
+    "id": "visual-review-afab78a46b1f57b77c33eae6",
+    "image": {
+      "aspect_ratio": "3:4",
+      "bytes": 3148451,
+      "format": "PNG",
+      "height": 1448,
+      "integrity": "PASS_CRC_AND_PIXEL_STREAM",
+      "path": "books/DM04/illustration-proofs/images/dm04-proof-quiet-conversation/attempt-02-578e0fcdb4dcf016.png",
+      "readable": true,
+      "sha256": "578e0fcdb4dcf016b7b85a50736e498859528560f569885ddf0f8060003f32fc",
+      "width": 1086
+    },
+    "page_id": "page-27d143ae995bf60742b65c5b",
+    "producer": {
+      "id": "codex-native-image-tool",
+      "role": "illustration"
+    },
+    "proof_id": "dm04-proof-quiet-conversation",
+    "proof_spec_hash": "9cebfb2575456dc1986f11c1feb6ce3de65c0d18706571ab4b787ccc464223ac",
+    "request_hash": "8c9b7ab688a50c4651ca792e9958d399ba84f837c043d06d3eab330a85f892b8",
+    "result": "FIX",
+    "review_hash": "b561d06259a14dad40b40844dc2013ddb65e4d946cd7a4d8905859e8ae1f804e",
+    "reviewed_at": "2026-10-16T17:09:13Z",
+    "reviewer": {
+      "capability_verified": true,
+      "execution_mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+      "id": "/root/dm04_visual_preproduction",
+      "role": "typesetter-independent-qa"
+    },
+    "schema_version": "1.0"
+  },
+  "schema_version": "1.0",
+  "version": 5
+}

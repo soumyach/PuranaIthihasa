@@ -8,12 +8,13 @@
   ],
   "missing": [],
   "operational_blockers": [
-    "No direct programmatic manuscript-generation, editorial-review, illustration, or semantic visual-review provider is configured; PR5 uses explicit zero-cost Codex specialist-agent handoffs for manuscript and specification work.",
+    "The Codex built-in image tool executed real proof generation in the PR6 session, but its executor is host-injected and no reusable repository credential or provider-side recovery API is configured.",
     "DM04 has private-draft rights clearance only; worldwide or target-market publication clearance is not granted.",
     "DM04 chapter extraction remains atomically partial and blanket independent full-arc scripture/theological approval is not established.",
-    "The four visual proof specifications are ready, but proof rendering and semantic image review are blocked because no image or visual-evaluation backend is configured.",
+    "All four latest DM04 proof images received independent FIX after attempt two; the hard ceiling of two attempts per proof and eight total is exhausted, so style approval cannot open.",
+    "The independent visual reviewer is a zero-cost Codex specialist handoff, not a reusable programmatic visual-evaluation service or human theological approval.",
     "Typography is not print-ready until a redistributable font choice, trim, bleed, and export profile are approved.",
-    "Full illustration, PDF production, and publication remain outside the PR5 milestone."
+    "Full illustration, PDF production, and publication remain outside the PR6 milestone."
   ],
-  "status": "VISUAL_PREPRODUCTION_REVIEWED_PUBLICATION_BLOCKED"
+  "status": "ILLUSTRATION_PROOFS_REVIEWED_FIX_RETRY_EXHAUSTED_PUBLICATION_BLOCKED"
 }

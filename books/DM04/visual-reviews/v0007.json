@@ -1,0 +1,156 @@
+{
+  "book_id": "DM04",
+  "content_hash": "7dfb58cd54249b9a1b23f5e753161341c8e1d5f6a9a51f71b155c74299f04da3",
+  "id": "visual-reviews-6a83d5c1b9684c053610e32b",
+  "kind": "visual-reviews",
+  "parent_hash": "a61cb9292f1473bee6d50739e859fcdd100022ab06fedda3ec701cfb0401f026",
+  "payload": {
+    "actual_pixels_inspected": true,
+    "approval_claimed": false,
+    "book_id": "DM04",
+    "dimension_assessments": [
+      {
+        "dimension": "source_fidelity",
+        "findings": [
+          "The fallen horses and driver and Cikṣura's sword-and-shield continuation are now visible, but no incoming Cikṣura arrows oppose Devī's arrows, the bow on the ground reads intact, and the command banner remains upright rather than broken or fallen."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "religious_iconography",
+        "findings": [
+          "Devī is reduced to a fixed ordinary two-arm form and given a large disk halo, conflicting with the locked many-armed identity and the ban on unsourced halo symbolism."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "character_identity",
+        "findings": [
+          "Cikṣura and the lion are distinct and readable, but Devī does not preserve her locked many-armed identity."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "limbs",
+        "findings": [
+          "The fully visible torso shows exactly two arms with no implication of Devī's required many-armed identity."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "weapons_and_mounts",
+        "findings": [
+          "Devī is correctly limited to bow and arrow and Cikṣura now holds sword and shield, but Cikṣura's bow is not visibly broken and his banner is still standing; the exact ordered equipment losses are therefore incomplete."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "anatomy",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "composition",
+        "findings": [
+          "The opposing character staging is clear, but the arrow exchange is one-directional rather than two readable countering vectors."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "environmental_consistency",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "cropping_and_clipping",
+        "findings": [
+          "Cikṣura's rear foot is cut by the lower-right canvas edge, so the targeted full action silhouette correction is not completely resolved."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "lighting_and_color",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "series_identity",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "scripted_page_suitability",
+        "findings": [
+          "The corrected image covers part of page 17's consequence beat, but it still omits the counter-arrow exchange and the broken bow/banner state required by the script."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "lettering_safe_regions",
+        "findings": [
+          "The safe rectangle is mostly open sky, but the mountain summit intrudes into its lower-right portion before y=0.24; the targeted instruction required the full rectangle to remain clear."
+        ],
+        "result": "FIX"
+      }
+    ],
+    "findings": [
+      {
+        "code": "COUNTER_ARROW_VECTOR_MISSING",
+        "dimension": "source_fidelity",
+        "message": "Add Cikṣura's incoming arrows and show them meeting Devī's counter-arrows in opposing directions."
+      },
+      {
+        "code": "BOW_AND_BANNER_LOSSES_UNRESOLVED",
+        "dimension": "weapons_and_mounts",
+        "message": "Make Cikṣura's bow visibly broken and his banner visibly split or fallen while retaining the resolved horses, driver, sword and shield."
+      },
+      {
+        "code": "DEVI_MANY_ARMED_IDENTITY_LOST",
+        "dimension": "limbs",
+        "message": "Keep bow and arrow as the only foreground equipment while still implying Devī's locked many-armed identity."
+      },
+      {
+        "code": "PRIMARY_SILHOUETTE_STILL_CLIPPED",
+        "dimension": "cropping_and_clipping",
+        "message": "Move Cikṣura fully inside the frame, including the rear foot."
+      },
+      {
+        "code": "LETTERING_SAFE_REGION_STILL_OCCUPIED",
+        "dimension": "lettering_safe_regions",
+        "message": "Lower the mountain summit below y=0.24 throughout x=0.08..0.92."
+      }
+    ],
+    "id": "visual-review-f91c02bc7b0001cd37f0c8c9",
+    "image": {
+      "aspect_ratio": "3:4",
+      "bytes": 3146315,
+      "format": "PNG",
+      "height": 1448,
+      "integrity": "PASS_CRC_AND_PIXEL_STREAM",
+      "path": "books/DM04/illustration-proofs/images/dm04-proof-battle/attempt-02-016faa6b34b5c1ad.png",
+      "readable": true,
+      "sha256": "016faa6b34b5c1addeffd634554015033c1dbacd0ba6718dba1c767a17f3a619",
+      "width": 1086
+    },
+    "page_id": "page-354711e6abadf0d5b67a0147",
+    "producer": {
+      "id": "codex-native-image-tool",
+      "role": "illustration"
+    },
+    "proof_id": "dm04-proof-battle",
+    "proof_spec_hash": "ff7b1f1d55c0d3e8f37a9e796eef85688a33df00a65ba6c7c579314b8796b218",
+    "request_hash": "4db14881dd24689b94f5a22a733d74b4807d1381cbce9b2ccd18c39a43d832d7",
+    "result": "FIX",
+    "review_hash": "14027187d4222aedfd3abbc966939bdf554cc2901efea95ba20ebbca54a43104",
+    "reviewed_at": "2026-10-16T17:09:13Z",
+    "reviewer": {
+      "capability_verified": true,
+      "execution_mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+      "id": "/root/dm04_visual_preproduction",
+      "role": "typesetter-independent-qa"
+    },
+    "schema_version": "1.0"
+  },
+  "schema_version": "1.0",
+  "version": 7
+}

@@ -17,3 +17,6 @@ __all__ = [
     "ProviderRegistry",
     "guarded_provider_call",
 ]
+from .codex_image import CodexNativeImageProvider
+
+__all__.append("CodexNativeImageProvider")

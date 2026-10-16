@@ -1,0 +1,73 @@
+{
+  "book_id": "DM04",
+  "execution_boundary": {
+    "identity_assurance": "SESSION_ATTESTATION_ONLY_NOT_CRYPTOGRAPHIC",
+    "mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+    "orchestrated_by_current_codex_session": true,
+    "paid_api_calls_allowed": 0,
+    "programmatic_spawn_available_inside_repository": false
+  },
+  "handoff_hash": "caf845a5e3b40fc77e6300de19e93da43cb1aa4a98f3084f9e17305855debc52",
+  "id": "agent-handoff-e9488f5e50bfb26d1b853a79",
+  "kind": "VISUAL_REVIEW",
+  "locked_input_hashes": [
+    "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070",
+    "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+    "42cfdd660d064fddb289c38f7f404ab0232ed1234f66ffa66dfdd8ae8c47ddef",
+    "55c2baf60d34188a547c72752683b575ecebaece3bbd751ff376ebdad6fab31f",
+    "718b4bc0352c652403a1ca429be5acb170896cbf4cf93e23665e862490276c20",
+    "ff7b1f1d55c0d3e8f37a9e796eef85688a33df00a65ba6c7c579314b8796b218"
+  ],
+  "request": {
+    "actual_pixels_required": true,
+    "book_id": "DM04",
+    "image": {
+      "aspect_ratio": "3:4",
+      "bytes": 3200157,
+      "format": "PNG",
+      "height": 1448,
+      "integrity": "PASS_CRC_AND_PIXEL_STREAM",
+      "path": "books/DM04/illustration-proofs/images/dm04-proof-battle/attempt-01-42cfdd660d064fdd.png",
+      "readable": true,
+      "sha256": "42cfdd660d064fddb289c38f7f404ab0232ed1234f66ffa66dfdd8ae8c47ddef",
+      "width": 1086
+    },
+    "independence_required": true,
+    "page_id": "page-354711e6abadf0d5b67a0147",
+    "producer": {
+      "id": "codex-native-image-tool",
+      "role": "illustration"
+    },
+    "proof_id": "dm04-proof-battle",
+    "proof_spec_hash": "ff7b1f1d55c0d3e8f37a9e796eef85688a33df00a65ba6c7c579314b8796b218",
+    "request_hash": "37801ba8d9ba58c80036b6cf6f529cbbfbf98c1ce372ffa5620cc16bfc40112c",
+    "request_hash_source": "62939be6b201795ed916985d24637ea45c7e7410f73858a2644cb0863c704809",
+    "required_dimensions": [
+      "source_fidelity",
+      "religious_iconography",
+      "character_identity",
+      "limbs",
+      "weapons_and_mounts",
+      "anatomy",
+      "composition",
+      "environmental_consistency",
+      "cropping_and_clipping",
+      "lighting_and_color",
+      "series_identity",
+      "scripted_page_suitability",
+      "lettering_safe_regions"
+    ],
+    "required_result": [
+      "ESCALATE",
+      "FIX",
+      "PASS"
+    ],
+    "schema_version": "1.0"
+  },
+  "request_hash": "37801ba8d9ba58c80036b6cf6f529cbbfbf98c1ce372ffa5620cc16bfc40112c",
+  "required_capability": "visual_evaluation",
+  "required_independence_from_writer_id": "codex-native-image-tool",
+  "required_role": "typesetter-independent-qa",
+  "schema_version": "1.0",
+  "status": "AWAITING_CODEX_SPECIALIST_AGENT"
+}
