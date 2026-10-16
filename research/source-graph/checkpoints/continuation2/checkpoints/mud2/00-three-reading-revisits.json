@@ -1,0 +1,144 @@
+{
+  "passages": [
+    {
+      "id": "mud2-p-heart-revisit",
+      "source_id": "gp-src-mudgala",
+      "witness_id": "gp-wit-sd-mudgala-1",
+      "book": null,
+      "khanda": 1,
+      "chapter": 27,
+      "verses": "28–32",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam1.html",
+      "locator": "Mudgala1.27.28–32",
+      "reading_status": "READ",
+      "extraction_status": "PARTIAL",
+      "limitations": "Bounded passage extraction; chapter checks separately recorded. Independent printed-edition comparison not completed."
+    },
+    {
+      "id": "mud2-p-son-revisit",
+      "source_id": "gp-src-mudgala",
+      "witness_id": "gp-wit-sd-mudgala-1",
+      "book": null,
+      "khanda": 1,
+      "chapter": 31,
+      "verses": "1–3",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam1.html",
+      "locator": "Mudgala1.31.1–3",
+      "reading_status": "READ",
+      "extraction_status": "PARTIAL",
+      "limitations": "Bounded passage extraction; chapter checks separately recorded. Independent printed-edition comparison not completed."
+    },
+    {
+      "id": "mud2-p-pushkara-revisit",
+      "source_id": "gp-src-mudgala",
+      "witness_id": "gp-wit-sd-mudgala-1",
+      "book": null,
+      "khanda": 1,
+      "chapter": 32,
+      "verses": "15–18",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam1.html",
+      "locator": "Mudgala1.32.15–18",
+      "reading_status": "READ",
+      "extraction_status": "PARTIAL",
+      "limitations": "Bounded passage extraction; chapter checks separately recorded. Independent printed-edition comparison not completed."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "mud2-e-heart-revisit",
+      "source_id": "gp-src-mudgala",
+      "witness_id": "gp-wit-sd-mudgala-1",
+      "passage_id": "mud2-p-heart-revisit",
+      "locator": "Mudgala1.27.28–32",
+      "paraphrase": "The transcription still reads narāṇāṃ hṛdy atāḍayat in29, between Viṣayapriya’s arrival and diseases being hurt by weapons. Exact subject/object of the heart-striking clause remains unresolved; no heart-entry power inferred.",
+      "classification": "DIRECT_TEXT",
+      "verification_status": "NEEDS_REVIEW",
+      "verifier": "Mudgala continuation2 author, direct Sanskrit body",
+      "verification_notes": "Primary body reread. Printed-scan catalogue located, but archive full-text too large for web reader; linked PDF redirect inaccessible; BharatKosha requested pages inaccessible. Catalogue/OCR headings do not resolve wording. No upgrade."
+    },
+    {
+      "id": "mud2-e-son-revisit",
+      "source_id": "gp-src-mudgala",
+      "witness_id": "gp-wit-sd-mudgala-1",
+      "passage_id": "mud2-p-son-revisit",
+      "locator": "Mudgala1.31.1–3",
+      "paraphrase": "The transcription names Sundarapriya for Kailāsa and spells the Vaikuṇṭha appointee Vijayapriya; surrounding earlier and later narrative spells Viṣayapriya. Identity equivalence remains unestablished.",
+      "classification": "DIRECT_TEXT",
+      "verification_status": "NEEDS_REVIEW",
+      "verifier": "Mudgala continuation2 author, direct Sanskrit body",
+      "verification_notes": "Primary body reread. Printed-scan catalogue located, but archive full-text too large for web reader; linked PDF redirect inaccessible; BharatKosha requested pages inaccessible. Catalogue/OCR headings do not resolve wording. No upgrade."
+    },
+    {
+      "id": "mud2-e-pushkara-revisit",
+      "source_id": "gp-src-mudgala",
+      "witness_id": "gp-wit-sd-mudgala-1",
+      "passage_id": "mud2-p-pushkara-revisit",
+      "locator": "Mudgala1.32.15–18",
+      "paraphrase": "The last half of18 still has puṣkaraṃ puṣkare dhṛtvā bhrāmayan. Exact held object and locus/action remain unresolved; certain iconography15–17 already separately supported.",
+      "classification": "DIRECT_TEXT",
+      "verification_status": "NEEDS_REVIEW",
+      "verifier": "Mudgala continuation2 author, direct Sanskrit body",
+      "verification_notes": "Primary body reread. Printed-scan catalogue located, but archive full-text too large for web reader; linked PDF redirect inaccessible; BharatKosha requested pages inaccessible. Catalogue/OCR headings do not resolve wording. No upgrade."
+    }
+  ],
+  "entities": [],
+  "assertions": [],
+  "relationships": [],
+  "boons_and_powers": [],
+  "narrative_events": [],
+  "story_spines": [],
+  "variants_and_conflicts": [],
+  "coverage": [],
+  "queue": [],
+  "chapter_coverage": [],
+  "updates": [
+    {
+      "table": "queue",
+      "id": "mud-queue-27",
+      "fields": {
+        "status": "OPEN",
+        "reason": "Direct rereading confirms unresolved clause/name; attempted accessible parallel-page retrieval did not return actual target body."
+      },
+      "reason": "Before: unresolved. After: still unresolved with documented rereading/access attempts; no forced resolution.",
+      "evidence_ids": [
+        "mud2-e-heart-revisit"
+      ]
+    },
+    {
+      "table": "queue",
+      "id": "mud-queue-31",
+      "fields": {
+        "status": "OPEN",
+        "reason": "Direct rereading confirms unresolved clause/name; attempted accessible parallel-page retrieval did not return actual target body."
+      },
+      "reason": "Before: unresolved. After: still unresolved with documented rereading/access attempts; no forced resolution.",
+      "evidence_ids": [
+        "mud2-e-son-revisit"
+      ]
+    },
+    {
+      "table": "queue",
+      "id": "mud-queue-32",
+      "fields": {
+        "status": "OPEN",
+        "reason": "Direct rereading confirms unresolved clause/name; attempted accessible parallel-page retrieval did not return actual target body."
+      },
+      "reason": "Before: unresolved. After: still unresolved with documented rereading/access attempts; no forced resolution.",
+      "evidence_ids": [
+        "mud2-e-pushkara-revisit"
+      ]
+    }
+  ],
+  "base_snapshot_sha256": "85d6a312ebbb73a3ed3aef31e2d52acb6dfb0f44c480aa2cf4d8dbd3d145a31f",
+  "notes": "Append-only continuation from current issued graph. Existing source-local IDs and all nine khaṇḍas/428 chapters retained. Author direct Sanskrit witness checks are separate from independent language/edition review. No earlier1.1–22 work duplicated.",
+  "changes": [
+    "1.27: flagged reading remains unresolved after direct rereading and attempted printed-witness access. Existing PARTIAL chapter state retained.",
+    "1.31: flagged reading remains unresolved after direct rereading and attempted printed-witness access. Existing PARTIAL chapter state retained.",
+    "1.32: flagged reading remains unresolved after direct rereading and attempted printed-witness access. Existing PARTIAL chapter state retained."
+  ],
+  "inspected_urls": [
+    "https://sanskritdocuments.org/doc_purana/mudgalapurANam1.html",
+    "https://bharatkosha.org/hi/granth/mudgala-puranam-hindi?from=41",
+    "https://archive.org/details/mudgala-puranam-mv-mahasabde-1976-nsp"
+  ]
+}

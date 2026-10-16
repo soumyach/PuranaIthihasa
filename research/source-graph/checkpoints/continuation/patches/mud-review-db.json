@@ -1,0 +1,391 @@
+{
+  "reviewer": "Independent Mudgala extractor; no editing of reviewed dbx or frozen mud patch",
+  "scope": "Devī Bhāgavata7.28.1–83 hosted Vijñanananda1921 English translation, complete displayed body read",
+  "reviewed_snapshot": {
+    "path": "work/continuation/patches/dbx.json",
+    "sha256": "286f738fc82bfb3eac5a3ee9979f813d3d81f63cdb201da9e0278948531d5281"
+  },
+  "source_url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+  "source_reading": {
+    "read_whole_displayed_body": true,
+    "start": "1–3 Janamejaya question",
+    "end": "81–83 Vyāsa final benefit and disappearance",
+    "witness": "Hosted English translation only",
+    "sanskrit_collation": "NOT_PERFORMED",
+    "locator_rule": "Hosted translator groups retained:1–3,4–45,46–68,69–73,74–80,81–83. Specific individual Sanskrit verse numbers not invented."
+  },
+  "findings": [
+    {
+      "id": "mud-review-db-genealogy",
+      "claim_ids": [
+        "dbx-assert-ruru-parent",
+        "dbx-rel-ruru-parent",
+        "dbx-assert-durgama-family",
+        "dbx-rel-durgama-family",
+        "dbx-ent-ruru",
+        "dbx-ent-hiranyaksha-family"
+      ],
+      "locator": "7.28.4–45, opening Durgama introduction",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+      "verdict": "SUPPORTED",
+      "notes": "Explicitly Ruru’s son and born in Hiraṇyākṣa family; does not assert Hiraṇyākṣa is immediate father. Unknown mother/spouse remain unstated.",
+      "gap_or_recommendation": null
+    },
+    {
+      "id": "mud-review-db-tapas",
+      "claim_ids": [
+        "dbx-event-durgama-tapas",
+        "dbx-power-durgama",
+        "dbx-e-durgama-origin"
+      ],
+      "locator": "7.28.4–45, Himalayan tapas/Brahmā arrival paragraphs",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+      "verdict": "SUPPORTED",
+      "notes": "Air-only meditation on Brahmā in heart for1000years; agitation affects gods, Asuras and worlds; Brahmā arrives on swan and offers wishes.",
+      "gap_or_recommendation": "The event compresses world-agitation and swan arrival; these do not alter the bounded chronology."
+    },
+    {
+      "id": "mud-review-db-request-grant",
+      "claim_ids": [
+        "dbx-power-durgama",
+        "dbx-assert-durgama-worship",
+        "dbx-rel-durgama-worship",
+        "dbx-assert-durgama-vedas",
+        "dbx-rel-durgama-vedas"
+      ],
+      "locator": "7.28.4–45, Durgama request and Brahmā assent paragraph",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+      "verdict": "SUPPORTED",
+      "notes": "Request comprises all Vedic mantras with gods/Brahmins in three worlds and strength to conquer gods. Brahmā assents. No death immunity, weapon exception or boon expiration is stated. Null restriction/duration are appropriate witness-scope unknowns.",
+      "gap_or_recommendation": null
+    },
+    {
+      "id": "mud-review-db-mechanism",
+      "claim_ids": [
+        "dbx-power-durgama",
+        "dbx-event-durgama-drought"
+      ],
+      "locator": "7.28.4–45, Brahmin forgetting/oblations/gods weakness paragraphs",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+      "verdict": "SUPPORTED",
+      "notes": "Brahmins forget Vedas, then bathing/sandhyā/homa/śrāddha/sacrifice/japa cease. Lack of havis progressively weakens gods; Durgama invests Amarāvatī, gods flee to Sumeru caves.",
+      "gap_or_recommendation": "Prefer explicit wording “Brahmins forget Vedas; rites cease” rather than only “forget Vedic rites”, which compresses epistemic loss into consequence."
+    },
+    {
+      "id": "mud-review-db-drought",
+      "claim_ids": [
+        "dbx-event-durgama-drought",
+        "dbx-e-durgama-origin"
+      ],
+      "locator": "7.28.4–45, Homa→Sun→rain and100-year drought paragraphs",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+      "verdict": "SUPPORTED",
+      "notes": "Hosted account explicitly relates lost Homa to absent rain; drought lasts100years and kills humans/livestock. Fasted Himalayan prayer follows catastrophe. No inference that100years is tapas duration.",
+      "gap_or_recommendation": null
+    },
+    {
+      "id": "mud-review-db-many-eyes-form",
+      "claim_ids": [
+        "dbx-assert-sataksi-manifest",
+        "dbx-rel-sataksi-manifest",
+        "dbx-event-sataksi-food",
+        "dbx-ent-sataksi"
+      ],
+      "locator": "7.28.4–45, manifestation and tears paragraphs",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+      "verdict": "SUPPORTED",
+      "notes": "Goddess creates innumerable eyes, appears four-handed with arrows/lotus/bow/plant foods. Many eyes are not narrated biological children; Śatākṣī is their naming response. Translator fourth-dimension gloss excluded properly.",
+      "gap_or_recommendation": null
+    },
+    {
+      "id": "mud-review-db-nine-night-food-order",
+      "claim_ids": [
+        "dbx-event-sataksi-food",
+        "dbx-power-sataksi-rain"
+      ],
+      "locator": "7.28.4–45 final tears/prayer paragraphs;46–68 opening food distribution",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+      "verdict": "SUPPORTED",
+      "notes": "Nine nights are continuous rain from tears, filling rivers. Gods leave caves and with Brahmins request food and Vedas. Thereafter food from the hand and further juicy provisions for humans/grass for beasts are given until crops arise. Śākambharī designation follows nourishment; army encounter follows messengers’ report.",
+      "gap_or_recommendation": "Nine nights qualify tears/rain, not an exclusive duration for the food provision. Current record preserves that distinction; do not infer festival dates."
+    },
+    {
+      "id": "mud-review-db-army1000",
+      "claim_ids": [
+        "dbx-ent-durgama-army",
+        "dbx-event-durgama-confront",
+        "dbx-e-durgama-battle"
+      ],
+      "locator": "7.28.46–68, Durgama’s approach paragraph",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+      "verdict": "SUPPORTED",
+      "notes": "Initial opposing army is1000akṣauhiṇīs. The later100destroyed is an intermediate loss, not a rival total.",
+      "gap_or_recommendation": null
+    },
+    {
+      "id": "mud-review-db-defense",
+      "claim_ids": [
+        "dbx-power-luminous-defense",
+        "dbx-event-durgama-confront"
+      ],
+      "locator": "7.28.46–68, luminous circle and first battle paragraphs",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+      "verdict": "SUPPORTED",
+      "notes": "Luminous circle encloses gods/Brahmins, Goddess stays outside to fight. Arrow rain causes darkness; arrows’ collision kindles fire and restores illumination.",
+      "gap_or_recommendation": null
+    },
+    {
+      "id": "mud-review-db-fourteen-emanations",
+      "claim_ids": [
+        "dbx-ent-durgama-shakti-1",
+        "dbx-assert-durgama-emergence-1",
+        "dbx-rel-durgama-emergence-1",
+        "dbx-ent-durgama-shakti-2",
+        "dbx-assert-durgama-emergence-2",
+        "dbx-rel-durgama-emergence-2",
+        "dbx-ent-durgama-shakti-3",
+        "dbx-assert-durgama-emergence-3",
+        "dbx-rel-durgama-emergence-3",
+        "dbx-ent-durgama-shakti-4",
+        "dbx-assert-durgama-emergence-4",
+        "dbx-rel-durgama-emergence-4",
+        "dbx-ent-durgama-shakti-5",
+        "dbx-assert-durgama-emergence-5",
+        "dbx-rel-durgama-emergence-5",
+        "dbx-ent-durgama-shakti-6",
+        "dbx-assert-durgama-emergence-6",
+        "dbx-rel-durgama-emergence-6",
+        "dbx-ent-durgama-shakti-7",
+        "dbx-assert-durgama-emergence-7",
+        "dbx-rel-durgama-emergence-7",
+        "dbx-ent-durgama-shakti-8",
+        "dbx-assert-durgama-emergence-8",
+        "dbx-rel-durgama-emergence-8",
+        "dbx-ent-durgama-shakti-9",
+        "dbx-assert-durgama-emergence-9",
+        "dbx-rel-durgama-emergence-9",
+        "dbx-ent-durgama-shakti-10",
+        "dbx-assert-durgama-emergence-10",
+        "dbx-rel-durgama-emergence-10",
+        "dbx-ent-durgama-shakti-11",
+        "dbx-assert-durgama-emergence-11",
+        "dbx-rel-durgama-emergence-11",
+        "dbx-ent-durgama-shakti-12",
+        "dbx-assert-durgama-emergence-12",
+        "dbx-rel-durgama-emergence-12",
+        "dbx-ent-durgama-shakti-13",
+        "dbx-assert-durgama-emergence-13",
+        "dbx-rel-durgama-emergence-13",
+        "dbx-ent-durgama-shakti-14",
+        "dbx-assert-durgama-emergence-14",
+        "dbx-rel-durgama-emergence-14"
+      ],
+      "locator": "7.28.46–68, principal Śakti enumeration paragraph",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+      "verdict": "SUPPORTED",
+      "notes": "All14record names match displayed list: Kālikā, Tāriṇī, Ṣoḍaśī, Tripurā, Bhairabī, Kamalā, Bagalā, Mātaṅgī, Tripurā Sundarī, Kāmāksī, Tulajā Devī, Jambhinī, Mohinī, Ccinnamaṣtā. They come out of Goddess’s body; emanation, not biological kinship. Distinct Tripurā and Tripurā Sundarī entries retained as displayed. Sanskrit spelling collation not performed.",
+      "gap_or_recommendation": null
+    },
+    {
+      "id": "mud-review-db-further-hosts",
+      "claim_ids": [
+        "dbx-ent-durgama-shakti-hosts",
+        "dbx-event-durgama-confront"
+      ],
+      "locator": "7.28.46–68, enumeration followed by successive host paragraph",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+      "verdict": "SUPPORTED",
+      "notes": "10000armed Guhya Kālīs and others; successive32,64and innumerable armed Śaktis explicitly appear. No restriction to a familiar ten-form list.",
+      "gap_or_recommendation": null
+    },
+    {
+      "id": "mud-review-db-hundred-ten-days",
+      "claim_ids": [
+        "dbx-event-durgama-confront"
+      ],
+      "locator": "7.28.46–68, successive hosts/100destroyed/Durgama fight paragraph",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+      "verdict": "SUPPORTED",
+      "notes": "Śaktis destroy100akṣauhiṇīs; instruments sound; Durgama first fights them. Within10days all the akṣauhiṇī troops are destroyed. Avoid recasting100as entire army or adding1000new troops.",
+      "gap_or_recommendation": null
+    },
+    {
+      "id": "mud-review-db-eleventh-day",
+      "claim_ids": [
+        "dbx-event-durgama-defeat",
+        "dbx-e-durgama-battle"
+      ],
+      "locator": "7.28.46–68, red festivity/chariot paragraph",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+      "verdict": "SUPPORTED",
+      "notes": "On11thday Durgama wears red, celebrates, mounts chariot, overcomes Śaktis and reaches Goddess; duel lasts2praharas. Current omission of red garlands/sandal and festivity is descriptive, not a lost battle transition. Six-hour gloss is hosted translator gloss; record correctly preserves prahara unit.",
+      "gap_or_recommendation": null
+    },
+    {
+      "id": "mud-review-db-fifteen-arrows",
+      "claim_ids": [
+        "dbx-event-durgama-defeat",
+        "dbx-power-durgama",
+        "dbx-assert-durgama-killer",
+        "dbx-rel-durgama-killer"
+      ],
+      "locator": "7.28.46–68, final15-arrow paragraph",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+      "verdict": "SUPPORTED",
+      "notes": "Arrow allocation is4horses+1charioteer+2eyes+2arms+1flag+5heart=15. Current record preserves targets and five-heart detail. Goddess kills him; no surrender or weapon-immunity exception inferred.",
+      "gap_or_recommendation": null
+    },
+    {
+      "id": "mud-review-db-death-merger",
+      "claim_ids": [
+        "dbx-event-durgama-defeat"
+      ],
+      "locator": "7.28.46–68, death and luminosity paragraph",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+      "verdict": "SUPPORTED",
+      "notes": "Blood vomiting and bodily death precede luminous vital counterpart merging into Goddess’s body. Merger does not erase narrated killing; peace in three worlds follows.",
+      "gap_or_recommendation": null
+    },
+    {
+      "id": "mud-review-db-vedas-return",
+      "claim_ids": [
+        "dbx-assert-vedas-return",
+        "dbx-rel-vedas-return",
+        "dbx-event-durgama-return",
+        "dbx-e-durgama-outcome"
+      ],
+      "locator": "7.28.74–80, Vedas return/address paragraph",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+      "verdict": "SUPPORTED",
+      "notes": "Goddess hands Vedas to Brahmins, calls them excellent parts of her body and directs careful preservation after remembered calamity. Return is explicit, not inferred solely from Durgama death.",
+      "gap_or_recommendation": "Recipient Brahmins should be made explicit in event/edge notes if graph needs transfer recipients."
+    },
+    {
+      "id": "mud-review-db-ending-names-benefits",
+      "claim_ids": [
+        "dbx-event-durgama-return"
+      ],
+      "locator": "7.28.4–45 Śatākṣī naming;74–80 Durgā/name-remembrance address;81–83 disappearance/hearing benefit",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+      "verdict": "SUPPORTED",
+      "notes": "Durgā name is expressly connected to killing Durgama; Śatākṣī cause was stated before battle. Goddess enjoins worship/service and reading deeds; both Suras/Asuras should serve her alone; disappearance and daily-hearing wish/Devī-Loka benefit finish chapter.",
+      "gap_or_recommendation": "Current single event compresses final injunctions and daily-hearing/Devī-Loka benefit. It should cite origin evidence for explicit many-eyes name-cause, rather than imply that causal naming explanation is newly spoken in74–80."
+    },
+    {
+      "id": "mud-review-db-story-completeness",
+      "claim_ids": [
+        "dbx-story-durgama"
+      ],
+      "locator": "7.28.1–83, whole hosted body",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+      "verdict": "SUPPORTED",
+      "notes": "Six-event spine retains all major causal transitions from boon to rites-loss/drought, maternal rain/food relief, army attack/defense/emanations, quantified reversals/death and Vedas return/disappearance. No major transition missing. Full chapter remains PARTIAL appropriately because named frame speakers, hymn/benefit details and Sanskrit collation are not exhaustively normalized.",
+      "gap_or_recommendation": "Dialogue contents compressed: initial Janamejaya Śiva-wife/Hariścandra context, Brahmin internal-ruler/mercy reasoning, final all-Sura/Asura service and full phala not granularly recorded. COMPLETE bounded chronology must not imply full atomic conversational extraction."
+    }
+  ],
+  "counts": {
+    "findings": 18,
+    "unique_claim_record_ids_checked": 74,
+    "supported_findings": 18,
+    "correction_needed_findings": 0,
+    "other_record_ids_in_dbx_not_individually_checked": 88,
+    "notes": "Counts refer to explicit finding claim IDs; remaining records include other arcs and documentary passage rows, not implicit blanket approval."
+  },
+  "unreviewed_record_ids": [
+    "dbx-assert-aruna-brahma",
+    "dbx-assert-aruna-defeated",
+    "dbx-assert-aruna-gayatri",
+    "dbx-assert-bhramari-command",
+    "dbx-assert-bhramari-form",
+    "dbx-assert-gauri-future-daughter",
+    "dbx-assert-gauri-future-wife",
+    "dbx-assert-gita-teaching",
+    "dbx-assert-guru-persuades",
+    "dbx-assert-him-teacher",
+    "dbx-assert-indra-sends",
+    "dbx-assert-manidvipa-created",
+    "dbx-assert-manidvipa-ocean",
+    "dbx-assert-maya-inherent",
+    "dbx-e-aruna-strategy",
+    "dbx-e-aruna-tapas",
+    "dbx-e-bhramari-appearance",
+    "dbx-e-bhramari-outcome",
+    "dbx-e-gita-first-teaching",
+    "dbx-e-gita-frame",
+    "dbx-e-manidvipa-opening",
+    "dbx-ent-aruna",
+    "dbx-ent-aruna-host",
+    "dbx-ent-bees",
+    "dbx-ent-bhramari",
+    "dbx-ent-brahma",
+    "dbx-ent-brahmins",
+    "dbx-ent-brhaspati",
+    "dbx-ent-durgama",
+    "dbx-ent-gauri-future",
+    "dbx-ent-gayatri",
+    "dbx-ent-goddess",
+    "dbx-ent-gods",
+    "dbx-ent-heavenly-voice",
+    "dbx-ent-himalaya",
+    "dbx-ent-indra",
+    "dbx-ent-manidvipa",
+    "dbx-ent-maya",
+    "dbx-ent-narada",
+    "dbx-ent-narayana",
+    "dbx-ent-siva",
+    "dbx-ent-sudha-ocean",
+    "dbx-ent-taraka",
+    "dbx-ent-vedas",
+    "dbx-event-aruna-austerity",
+    "dbx-event-aruna-conquest",
+    "dbx-event-aruna-gayatri-loss",
+    "dbx-event-aruna-request",
+    "dbx-event-bhramari-appears",
+    "dbx-event-bhramari-boons",
+    "dbx-event-bhramari-defeat",
+    "dbx-event-gita-petition",
+    "dbx-event-gita-teaches",
+    "dbx-event-manidvipa-setting",
+    "dbx-p-aruna-strategy",
+    "dbx-p-aruna-tapas",
+    "dbx-p-bhramari-appearance",
+    "dbx-p-bhramari-outcome",
+    "dbx-p-durgama-battle",
+    "dbx-p-durgama-origin",
+    "dbx-p-durgama-outcome",
+    "dbx-p-gita-first-teaching",
+    "dbx-p-gita-frame",
+    "dbx-p-manidvipa-opening",
+    "dbx-power-aruna",
+    "dbx-power-bee-swarm",
+    "dbx-power-bhramari-devotion",
+    "dbx-queue-bhramari-collation",
+    "dbx-queue-durgama-collation",
+    "dbx-queue-gita-resume",
+    "dbx-queue-manidvipa-resume",
+    "dbx-rel-aruna-brahma",
+    "dbx-rel-aruna-defeated",
+    "dbx-rel-aruna-gayatri",
+    "dbx-rel-bhramari-command",
+    "dbx-rel-bhramari-form",
+    "dbx-rel-gauri-future-daughter",
+    "dbx-rel-gauri-future-wife",
+    "dbx-rel-gita-teaching",
+    "dbx-rel-guru-persuades",
+    "dbx-rel-him-teacher",
+    "dbx-rel-indra-sends",
+    "dbx-rel-manidvipa-created",
+    "dbx-rel-manidvipa-ocean",
+    "dbx-rel-maya-inherent",
+    "dbx-story-bhramari",
+    "dbx-story-devi-gita",
+    "dbx-story-manidvipa"
+  ],
+  "overall": {
+    "bounded_english_narrative_verdict": "SUPPORTED_WITH_RECORDED_PRECISION_AND_DEPTH_GAPS",
+    "critical_genealogy_boon_numbers_outcome": "SUPPORTED",
+    "sanskrit_or_other_edition_equivalence": "UNDETERMINED",
+    "whole_corpus_completeness": "NOT_REVIEWED",
+    "no_mutations": "Frozen mud patch and dbx source patch unchanged by reviewer."
+  }
+}

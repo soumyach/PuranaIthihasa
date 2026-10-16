@@ -1,0 +1,1811 @@
+{
+  "checkpoint": "continuation3",
+  "completed_arc_id": "mud4-story-creation-manu-kardama",
+  "graph_sha256": "cecbec8daa706000cb98923d6b48e16119667f17c4f6fce4acf05de2b7a7a376",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checking complete; selective independent review in separate bounded reports, not universal certification.",
+  "story": {
+    "id": "mud4-story-creation-manu-kardama",
+    "title": "Brahmā’s body creation, Manu and Kardama’s creation mission",
+    "source_id": "gp-src-mudgala",
+    "witness_id": "gp-wit-sd-mudgala-2",
+    "scope": "2.4.1–23;2.5.39–63;2.6.1–15",
+    "event_ids": [
+      "mud4-event-creation-body-orders",
+      "mud4-event-nine-sargas",
+      "mud4-event-manu-satarupa-kardama-origin",
+      "mud4-event-manu-eight-syllable-tapas",
+      "mud4-event-manu-request-grant",
+      "mud4-event-manu-family-kardama-kapila-yajna"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Whole bounded creation-mission/grant/offspring passages read and significant source-local creation origins, practices, family, request/grant/fulfillment and Yajña aftermath extracted. Later Dakṣa daughter genealogy is a separate spine.",
+    "missing_sections": [],
+    "editorial_notes": "Source narration order. Embedded narratives have their own spines; parent records their framing transitions without duplicating events."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "mud4-event-creation-body-orders",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-creation-manu-kardama",
+        "sequence": 1,
+        "passage_ids": [
+          "mud4-p-creation-body-orders"
+        ],
+        "participants": [
+          "mud-en-mudgala",
+          "mud-en-daksha",
+          "mud-en-brahma",
+          "mud4-en-varna-asrama",
+          "rmd2-en-dharma",
+          "mud4-en-adharma",
+          "mud4-en-body-created-creatures"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Mudgala resumes Brahmā’s creation: Brahmins from mouth, Kṣatriyas arms, Vaiśyas thighs, Śūdras feet; renunciation from head, forest-stage heart, brahmacarya navel and household-state lower legs. Dharma chest and Adharma back set god/demon courses; gods/Gandharvas/Apsarases/Yakṣas/Asuras/Yātudhānas, snakes/birds/beasts/humans arise from his body. They act yet do not multiply. These are source-local cosmological body-emergences, not universal biological descent claims.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-creation-body-orders"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-creation-body-orders",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-creation-body-orders",
+          "locator": "Mudgala2.4.1–7",
+          "paraphrase": "Mudgala resumes Brahmā’s creation: Brahmins from mouth, Kṣatriyas arms, Vaiśyas thighs, Śūdras feet; renunciation from head, forest-stage heart, brahmacarya navel and household-state lower legs. Dharma chest and Adharma back set god/demon courses; gods/Gandharvas/Apsarases/Yakṣas/Asuras/Yātudhānas, snakes/birds/beasts/humans arise from his body. They act yet do not multiply. These are source-local cosmological body-emergences, not universal biological descent claims.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud4-event-nine-sargas",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-creation-manu-kardama",
+        "sequence": 2,
+        "passage_ids": [
+          "mud4-p-nine-sargas"
+        ],
+        "participants": [
+          "mud-en-mudgala",
+          "mud-en-daksha",
+          "mud-en-brahma",
+          "mud4-en-nine-sargas",
+          "mud4-en-body-created-creatures"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Mudgala classifies nine creations: first mahat, second tanmātra/bhūta, third vaikārika/indriya (three prākṛta); fourth stationary beings, fifth tiryak, sixth upward-flow gods, seventh downward-flow humans, eighth bhautika beings, ninth kaumāra (six vaikṛta). The first three are described as buddhi-pūrva, guiding creatures through principles. Brahmā is distressed that his diverse creatures do not multiply.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-nine-sargas"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-nine-sargas",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-nine-sargas",
+          "locator": "Mudgala2.4.8–16",
+          "paraphrase": "Mudgala classifies nine creations: first mahat, second tanmātra/bhūta, third vaikārika/indriya (three prākṛta); fourth stationary beings, fifth tiryak, sixth upward-flow gods, seventh downward-flow humans, eighth bhautika beings, ninth kaumāra (six vaikṛta). The first three are described as buddhi-pūrva, guiding creatures through principles. Brahmā is distressed that his diverse creatures do not multiply.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud4-event-manu-satarupa-kardama-origin",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-creation-manu-kardama",
+        "sequence": 3,
+        "passage_ids": [
+          "mud4-p-manu-satarupa-kardama-origin"
+        ],
+        "participants": [
+          "mud-en-brahma",
+          "mud4-en-svayambhuva",
+          "mud4-en-satarupa",
+          "mud4-en-kardama",
+          "mud-en-vakratunda",
+          "mud-en-vishnu"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "A couple emerges from Brahmā: Śatarūpā from left limb and Svāyambhuva Manu from right, first knowledgeable in Kṣatriya dharma. They ask orders; he directs sexual procreation through tapas. They bow, go to forest and practice intense Gaṇeśa meditation. Kardama emerges from Brahmā’s shadow, is ordered to create, then goes to forest desiring progeny and meditates on white-form Viṣṇu with prescribed tapas.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-manu-satarupa-kardama-origin"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-manu-satarupa-kardama-origin",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-manu-satarupa-kardama-origin",
+          "locator": "Mudgala2.4.17–23",
+          "paraphrase": "A couple emerges from Brahmā: Śatarūpā from left limb and Svāyambhuva Manu from right, first knowledgeable in Kṣatriya dharma. They ask orders; he directs sexual procreation through tapas. They bow, go to forest and practice intense Gaṇeśa meditation. Kardama emerges from Brahmā’s shadow, is ordered to create, then goes to forest desiring progeny and meditates on white-form Viṣṇu with prescribed tapas.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud4-event-manu-eight-syllable-tapas",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-creation-manu-kardama",
+        "sequence": 4,
+        "passage_ids": [
+          "mud4-p-manu-eight-syllable-tapas"
+        ],
+        "participants": [
+          "mud4-en-svayambhuva",
+          "mud4-en-satarupa",
+          "mud-en-vakratunda",
+          "mud4-en-eight-syllable-mantra",
+          "mud4-en-manu-hymn",
+          "rmd2-en-mouse-vehicle",
+          "mud4-en-qualified-hymn-users"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Svāyambhuva Manu with wife goes to forest, performs intense tapas by eight-syllable procedure1000 DIVINE years and gains Gaṇeśa’s appearance. He bows, worships and hymns elephant/Human-elephant/Oṃ form, four arms, mouse vehicle, Svānanda, Siddhi/Buddhi and yoga, saying vision inspires praise and blesses father/tapas/knowledge/lineage/learning/vows. Gaṇeśa raises him, offers a boon and promises his hymn readers/hearers all ends, progeny/prosperity, sorrow removal, wealth/grain, four aims/Brahman and firm devotion.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-manu-eight-syllable-tapas"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-manu-eight-syllable-tapas",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-manu-eight-syllable-tapas",
+          "locator": "Mudgala2.5.39–58",
+          "paraphrase": "Svāyambhuva Manu with wife goes to forest, performs intense tapas by eight-syllable procedure1000 DIVINE years and gains Gaṇeśa’s appearance. He bows, worships and hymns elephant/Human-elephant/Oṃ form, four arms, mouse vehicle, Svānanda, Siddhi/Buddhi and yoga, saying vision inspires praise and blesses father/tapas/knowledge/lineage/learning/vows. Gaṇeśa raises him, offers a boon and promises his hymn readers/hearers all ends, progeny/prosperity, sorrow removal, wealth/grain, four aims/Brahman and firm devotion.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud4-event-manu-request-grant",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-creation-manu-kardama",
+        "sequence": 5,
+        "passage_ids": [
+          "mud4-p-manu-request-grant"
+        ],
+        "participants": [
+          "mud4-en-svayambhuva",
+          "mud-en-vakratunda",
+          "mud4-en-satarupa"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Manu requests firm Gaṇeśa devotion eliminating delusion, capacity to create, excellent dharma maintenance, lasting protection of subjects, success in every wish and continual dwelling among Gaṇeśa devotees. Gaṇeśa assents to Manu, vanishes and goes to his own realm.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud4-power-manu-creation-protection"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-manu-request-grant"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-manu-request-grant",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-manu-request-grant",
+          "locator": "Mudgala2.5.59–63",
+          "paraphrase": "Manu requests firm Gaṇeśa devotion eliminating delusion, capacity to create, excellent dharma maintenance, lasting protection of subjects, success in every wish and continual dwelling among Gaṇeśa devotees. Gaṇeśa assents to Manu, vanishes and goes to his own realm.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud4-event-manu-family-kardama-kapila-yajna",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-creation-manu-kardama",
+        "sequence": 6,
+        "passage_ids": [
+          "mud4-p-manu-family-kardama-kapila-yajna"
+        ],
+        "participants": [
+          "mud4-en-svayambhuva",
+          "mud4-en-satarupa",
+          "mud-en-brahma",
+          "mud-en-daksha",
+          "mud4-en-kardama",
+          "mud-en-vishnu",
+          "mud-en-vakratunda",
+          "mud4-en-ruci",
+          "mud4-en-kapila",
+          "mud4-en-yajna-person",
+          "mud4-en-daksina",
+          "mud4-en-twelve-yamas",
+          "mud4-en-yajna-disciples",
+          "mud4-en-priyavrata",
+          "mud4-en-uttanapada",
+          "mud4-en-akuti",
+          "mud4-en-devahuti",
+          "mud4-en-prasuti"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Manu and Śatarūpā bow to Brahmā and depart at his order; Manu rules dharmically, armed and fond of Gaṇapatyas. Through sexual union they produce sons Priyavrata/Uttānapāda and daughters Ākūti/Devahūti/Prasūti. He gives Prasūti to Dakṣa, Ākūti to Ruci and Devahūti to Kardama. Kardama’s100-year Viṣṇu tapas gains appearance; he asks Viṣṇu as son, receives grant, and Viṣṇu as Kapila becomes his son in Devahūti. Ruci’s mānasa twin Yajña/Dakṣiṇā is born in Ākūti; Yajña Viṣṇu fathers12 Yāma gods in Dakṣiṇā. With wife/sages he makes a jeweled four-armed Gaṇeśa image, constantly worships by yoga; Gaṇeśa gives marvelous yoga. Yajña becomes foremost Gaṇapatya yogin, chants Heramba and teaches disciples Gaṇapatya yoga.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud4-power-kardama-visnu-son",
+          "mud4-power-yajna-ganapatya-yoga"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-manu-family-kardama-kapila-yajna"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-manu-family-kardama-kapila-yajna",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-manu-family-kardama-kapila-yajna",
+          "locator": "Mudgala2.6.1–15",
+          "paraphrase": "Manu and Śatarūpā bow to Brahmā and depart at his order; Manu rules dharmically, armed and fond of Gaṇapatyas. Through sexual union they produce sons Priyavrata/Uttānapāda and daughters Ākūti/Devahūti/Prasūti. He gives Prasūti to Dakṣa, Ākūti to Ruci and Devahūti to Kardama. Kardama’s100-year Viṣṇu tapas gains appearance; he asks Viṣṇu as son, receives grant, and Viṣṇu as Kapila becomes his son in Devahūti. Ruci’s mānasa twin Yajña/Dakṣiṇā is born in Ākūti; Yajña Viṣṇu fathers12 Yāma gods in Dakṣiṇā. With wife/sages he makes a jeweled four-armed Gaṇeśa image, constantly worships by yoga; Gaṇeśa gives marvelous yoga. Yajña becomes foremost Gaṇapatya yogin, chants Heramba and teaches disciples Gaṇapatya yoga.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "mud-en-daksha",
+      "name": "Dakṣa",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-five-emergence",
+        "mud2-e-field-benefits",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-mudgala",
+      "name": "Mudgala",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "rmd2-e-supremacy-question",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-five-emergence",
+        "mud2-e-field-benefits",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-brahma",
+      "name": "Brahmā",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-naimisha",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-assembly",
+        "mud2-e-yaj-arrives",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-vishnu",
+      "name": "Viṣṇu",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-senses-gods",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-vakratunda",
+      "name": "Vakratunda / Gaṇeśa / Gaṇanāyaka / Vighnapa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "rmd2-e-invocation",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-tattva-boon",
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-tapas",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "rmd2-e-five-request-hymn-fruits",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "rmd2-en-dharma",
+      "name": "Dharma (opposed by Nandin)",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "rmd2-e-sacrifice-duels",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "rmd2-en-mouse-vehicle",
+      "name": "Mouse vehicle in five-deity manifestation",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "rmd2-e-five-manifestation-hymn",
+        "mud3-e-eight-forms-foes-vehicles",
+        "mud4-e-nine-prajapati-grants"
+      ]
+    },
+    {
+      "id": "mud4-en-varna-asrama",
+      "name": "Four varṇas and four āśramas in Brahmā’s body creation",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud4-en-adharma",
+      "name": "Adharma emerging from Brahmā’s back",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud4-en-body-created-creatures",
+      "name": "Brahmā’s body-created gods and other creatures",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud4-en-nine-sargas",
+      "name": "Nine sargas in Mudgala’s creation classification",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-nine-sargas"
+      ]
+    },
+    {
+      "id": "mud4-en-svayambhuva",
+      "name": "Svāyambhuva Manu",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin"
+      ]
+    },
+    {
+      "id": "mud4-en-satarupa",
+      "name": "Śatarūpā",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin"
+      ]
+    },
+    {
+      "id": "mud4-en-kardama",
+      "name": "Kardama",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin"
+      ]
+    },
+    {
+      "id": "mud4-en-qualified-hymn-users",
+      "name": "Qualified users of continuation4 hymns/accounts",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-visnu-hymn-benefits"
+      ]
+    },
+    {
+      "id": "mud4-en-eight-syllable-mantra",
+      "name": "Eight-syllable Gaṇeśa procedure practiced by Manu",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-eight-syllable-tapas"
+      ]
+    },
+    {
+      "id": "mud4-en-manu-hymn",
+      "name": "Svāyambhuva Manu’s Gaṇeśa hymn",
+      "type": "TEXT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-eight-syllable-tapas"
+      ]
+    },
+    {
+      "id": "mud4-en-priyavrata",
+      "name": "Priyavrata",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ]
+    },
+    {
+      "id": "mud4-en-uttanapada",
+      "name": "Uttānapāda",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ]
+    },
+    {
+      "id": "mud4-en-akuti",
+      "name": "Ākūti",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ]
+    },
+    {
+      "id": "mud4-en-devahuti",
+      "name": "Devahūti",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ]
+    },
+    {
+      "id": "mud4-en-prasuti",
+      "name": "Prasūti",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ]
+    },
+    {
+      "id": "mud4-en-ruci",
+      "name": "Ruci",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ]
+    },
+    {
+      "id": "mud4-en-kapila",
+      "name": "Kapila, Viṣṇu’s granted son-form of Kardama/Devahūti",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ]
+    },
+    {
+      "id": "mud4-en-yajna-person",
+      "name": "Yajña, Viṣṇu twin born to Ruci/Ākūti",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ]
+    },
+    {
+      "id": "mud4-en-daksina",
+      "name": "Dakṣiṇā, twin born to Ruci/Ākūti",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ]
+    },
+    {
+      "id": "mud4-en-twelve-yamas",
+      "name": "Twelve Yāma gods, Yajña/Dakṣiṇā sons",
+      "type": "FAMILY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ]
+    },
+    {
+      "id": "mud4-en-yajna-disciples",
+      "name": "Disciples taught Gaṇapatya yoga by Yajña",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "mud4-r-orders-body",
+      "subject_id": "mud4-en-varna-asrama",
+      "predicate": "cosmologically_emerges_from",
+      "object_id": "mud-en-brahma",
+      "evidence_ids": [
+        "mud4-e-creation-body-orders"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-orders-body",
+      "kinship_kind": "BODY_EMANATION"
+    },
+    {
+      "id": "mud4-r-dharma-chest",
+      "subject_id": "rmd2-en-dharma",
+      "predicate": "emerges_from_chest_of",
+      "object_id": "mud-en-brahma",
+      "evidence_ids": [
+        "mud4-e-creation-body-orders"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-dharma-chest",
+      "kinship_kind": "BODY_EMANATION"
+    },
+    {
+      "id": "mud4-r-adharma-back",
+      "subject_id": "mud4-en-adharma",
+      "predicate": "emerges_from_back_of",
+      "object_id": "mud-en-brahma",
+      "evidence_ids": [
+        "mud4-e-creation-body-orders"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-adharma-back",
+      "kinship_kind": "BODY_EMANATION"
+    },
+    {
+      "id": "mud4-r-creatures-body",
+      "subject_id": "mud4-en-body-created-creatures",
+      "predicate": "cosmologically_emerges_from",
+      "object_id": "mud-en-brahma",
+      "evidence_ids": [
+        "mud4-e-creation-body-orders"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-creatures-body",
+      "kinship_kind": "BODY_EMANATION"
+    },
+    {
+      "id": "mud4-r-sata-left",
+      "subject_id": "mud4-en-satarupa",
+      "predicate": "emerges_from_left_limb_of",
+      "object_id": "mud-en-brahma",
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-sata-left",
+      "kinship_kind": "BODY_EMANATION"
+    },
+    {
+      "id": "mud4-r-manu-right",
+      "subject_id": "mud4-en-svayambhuva",
+      "predicate": "emerges_from_right_limb_of",
+      "object_id": "mud-en-brahma",
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-manu-right",
+      "kinship_kind": "BODY_EMANATION"
+    },
+    {
+      "id": "mud4-r-manu-satarupa",
+      "subject_id": "mud4-en-svayambhuva",
+      "predicate": "spouse_of",
+      "object_id": "mud4-en-satarupa",
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-manu-satarupa"
+    },
+    {
+      "id": "mud4-r-kardama-shadow",
+      "subject_id": "mud4-en-kardama",
+      "predicate": "emerges_from_shadow_of",
+      "object_id": "mud-en-brahma",
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-kardama-shadow",
+      "kinship_kind": "SHADOW_EMANATION"
+    },
+    {
+      "id": "mud4-r-manu-worship",
+      "subject_id": "mud4-en-svayambhuva",
+      "predicate": "worships",
+      "object_id": "mud-en-vakratunda",
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-manu-worship"
+    },
+    {
+      "id": "mud4-r-satarupa-worship",
+      "subject_id": "mud4-en-satarupa",
+      "predicate": "worships",
+      "object_id": "mud-en-vakratunda",
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-satarupa-worship"
+    },
+    {
+      "id": "mud4-r-kardama-worship",
+      "subject_id": "mud4-en-kardama",
+      "predicate": "worships",
+      "object_id": "mud-en-vishnu",
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-kardama-worship"
+    },
+    {
+      "id": "mud4-r-manu-eight-practice",
+      "subject_id": "mud4-en-svayambhuva",
+      "predicate": "practices",
+      "object_id": "mud4-en-eight-syllable-mantra",
+      "evidence_ids": [
+        "mud4-e-manu-eight-syllable-tapas"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-manu-eight-practice"
+    },
+    {
+      "id": "mud4-r-manu-hymn-author",
+      "subject_id": "mud4-en-manu-hymn",
+      "predicate": "hymned_by",
+      "object_id": "mud4-en-svayambhuva",
+      "evidence_ids": [
+        "mud4-e-manu-eight-syllable-tapas"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-manu-hymn-author"
+    },
+    {
+      "id": "mud4-r-priyavrata-manu",
+      "subject_id": "mud4-en-priyavrata",
+      "predicate": "child_of",
+      "object_id": "mud4-en-svayambhuva",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-priyavrata-manu",
+      "kinship_kind": "SEXUAL_PROCREATION"
+    },
+    {
+      "id": "mud4-r-priyavrata-satarupa",
+      "subject_id": "mud4-en-priyavrata",
+      "predicate": "child_of",
+      "object_id": "mud4-en-satarupa",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-priyavrata-satarupa",
+      "kinship_kind": "SEXUAL_PROCREATION"
+    },
+    {
+      "id": "mud4-r-uttanapada-manu",
+      "subject_id": "mud4-en-uttanapada",
+      "predicate": "child_of",
+      "object_id": "mud4-en-svayambhuva",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-uttanapada-manu",
+      "kinship_kind": "SEXUAL_PROCREATION"
+    },
+    {
+      "id": "mud4-r-uttanapada-satarupa",
+      "subject_id": "mud4-en-uttanapada",
+      "predicate": "child_of",
+      "object_id": "mud4-en-satarupa",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-uttanapada-satarupa",
+      "kinship_kind": "SEXUAL_PROCREATION"
+    },
+    {
+      "id": "mud4-r-akuti-manu",
+      "subject_id": "mud4-en-akuti",
+      "predicate": "child_of",
+      "object_id": "mud4-en-svayambhuva",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-akuti-manu",
+      "kinship_kind": "SEXUAL_PROCREATION"
+    },
+    {
+      "id": "mud4-r-akuti-satarupa",
+      "subject_id": "mud4-en-akuti",
+      "predicate": "child_of",
+      "object_id": "mud4-en-satarupa",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-akuti-satarupa",
+      "kinship_kind": "SEXUAL_PROCREATION"
+    },
+    {
+      "id": "mud4-r-devahuti-manu",
+      "subject_id": "mud4-en-devahuti",
+      "predicate": "child_of",
+      "object_id": "mud4-en-svayambhuva",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-devahuti-manu",
+      "kinship_kind": "SEXUAL_PROCREATION"
+    },
+    {
+      "id": "mud4-r-devahuti-satarupa",
+      "subject_id": "mud4-en-devahuti",
+      "predicate": "child_of",
+      "object_id": "mud4-en-satarupa",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-devahuti-satarupa",
+      "kinship_kind": "SEXUAL_PROCREATION"
+    },
+    {
+      "id": "mud4-r-prasuti-manu",
+      "subject_id": "mud4-en-prasuti",
+      "predicate": "child_of",
+      "object_id": "mud4-en-svayambhuva",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-prasuti-manu",
+      "kinship_kind": "SEXUAL_PROCREATION"
+    },
+    {
+      "id": "mud4-r-prasuti-satarupa",
+      "subject_id": "mud4-en-prasuti",
+      "predicate": "child_of",
+      "object_id": "mud4-en-satarupa",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-prasuti-satarupa",
+      "kinship_kind": "SEXUAL_PROCREATION"
+    },
+    {
+      "id": "mud4-r-prasuti-spouse",
+      "subject_id": "mud4-en-prasuti",
+      "predicate": "spouse_of",
+      "object_id": "mud-en-daksha",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-prasuti-spouse"
+    },
+    {
+      "id": "mud4-r-akuti-spouse",
+      "subject_id": "mud4-en-akuti",
+      "predicate": "spouse_of",
+      "object_id": "mud4-en-ruci",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-akuti-spouse"
+    },
+    {
+      "id": "mud4-r-devahuti-spouse",
+      "subject_id": "mud4-en-devahuti",
+      "predicate": "spouse_of",
+      "object_id": "mud4-en-kardama",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-devahuti-spouse"
+    },
+    {
+      "id": "mud4-r-kapila-visnu",
+      "subject_id": "mud4-en-kapila",
+      "predicate": "manifestation_of",
+      "object_id": "mud-en-vishnu",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-kapila-visnu"
+    },
+    {
+      "id": "mud4-r-kapila-kardama",
+      "subject_id": "mud4-en-kapila",
+      "predicate": "child_of",
+      "object_id": "mud4-en-kardama",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-kapila-kardama",
+      "kinship_kind": "BOON_FULFILLMENT"
+    },
+    {
+      "id": "mud4-r-kapila-devahuti",
+      "subject_id": "mud4-en-kapila",
+      "predicate": "child_of",
+      "object_id": "mud4-en-devahuti",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-kapila-devahuti",
+      "kinship_kind": "BOON_FULFILLMENT"
+    },
+    {
+      "id": "mud4-r-yajna-ruci",
+      "subject_id": "mud4-en-yajna-person",
+      "predicate": "child_of",
+      "object_id": "mud4-en-ruci",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-yajna-ruci",
+      "kinship_kind": "MANASA_TWIN_BIRTH"
+    },
+    {
+      "id": "mud4-r-yajna-akuti",
+      "subject_id": "mud4-en-yajna-person",
+      "predicate": "child_of",
+      "object_id": "mud4-en-akuti",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-yajna-akuti",
+      "kinship_kind": "MANASA_TWIN_BIRTH"
+    },
+    {
+      "id": "mud4-r-daksina-ruci",
+      "subject_id": "mud4-en-daksina",
+      "predicate": "child_of",
+      "object_id": "mud4-en-ruci",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-daksina-ruci",
+      "kinship_kind": "MANASA_TWIN_BIRTH"
+    },
+    {
+      "id": "mud4-r-daksina-akuti",
+      "subject_id": "mud4-en-daksina",
+      "predicate": "child_of",
+      "object_id": "mud4-en-akuti",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-daksina-akuti",
+      "kinship_kind": "MANASA_TWIN_BIRTH"
+    },
+    {
+      "id": "mud4-r-yajna-visnu",
+      "subject_id": "mud4-en-yajna-person",
+      "predicate": "manifestation_of",
+      "object_id": "mud-en-vishnu",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-yajna-visnu"
+    },
+    {
+      "id": "mud4-r-yajna-daksina-spouse",
+      "subject_id": "mud4-en-yajna-person",
+      "predicate": "spouse_of",
+      "object_id": "mud4-en-daksina",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-yajna-daksina-spouse"
+    },
+    {
+      "id": "mud4-r-yamas-yajna",
+      "subject_id": "mud4-en-twelve-yamas",
+      "predicate": "collective_children_of",
+      "object_id": "mud4-en-yajna-person",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-yamas-yajna"
+    },
+    {
+      "id": "mud4-r-yamas-daksina",
+      "subject_id": "mud4-en-twelve-yamas",
+      "predicate": "collective_children_of",
+      "object_id": "mud4-en-daksina",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-yamas-daksina"
+    },
+    {
+      "id": "mud4-r-yajna-yoga-students",
+      "subject_id": "mud4-en-yajna-disciples",
+      "predicate": "pupils_of",
+      "object_id": "mud4-en-yajna-person",
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-yajna-yoga-students"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "mud4-power-manu-hymn-users",
+      "type": "BOON",
+      "recipient_id": "mud4-en-qualified-hymn-users",
+      "grantor_id": "mud-en-vakratunda",
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-manu-eight-syllable-tapas"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-manu-eight-syllable-tapas"
+        ],
+        "grantor_id": [
+          "mud4-e-manu-eight-syllable-tapas"
+        ],
+        "trigger": [
+          "mud4-e-manu-eight-syllable-tapas"
+        ],
+        "granted": [
+          "mud4-e-manu-eight-syllable-tapas"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "All ends, progeny/prosperity, sorrow removal, wealth/grain, dharma/artha/kāma/mokṣa, Brahman and firm devotion.",
+      "mechanism": null,
+      "trigger": "Read/hear Manu’s Gaṇeśa hymn.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud4-power-manu-creation-protection",
+      "type": "BOON",
+      "recipient_id": "mud4-en-svayambhuva",
+      "grantor_id": "mud-en-vakratunda",
+      "worshipped_id": "mud-en-vakratunda",
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-manu-request-grant",
+        "mud4-e-manu-eight-syllable-tapas"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-manu-request-grant",
+          "mud4-e-manu-eight-syllable-tapas"
+        ],
+        "grantor_id": [
+          "mud4-e-manu-request-grant",
+          "mud4-e-manu-eight-syllable-tapas"
+        ],
+        "worshipped_id": [
+          "mud4-e-manu-request-grant",
+          "mud4-e-manu-eight-syllable-tapas"
+        ],
+        "austerity_or_circumstances": [
+          "mud4-e-manu-request-grant",
+          "mud4-e-manu-eight-syllable-tapas"
+        ],
+        "requested": [
+          "mud4-e-manu-request-grant",
+          "mud4-e-manu-eight-syllable-tapas"
+        ],
+        "granted": [
+          "mud4-e-manu-request-grant",
+          "mud4-e-manu-eight-syllable-tapas"
+        ],
+        "duration": [
+          "mud4-e-manu-request-grant",
+          "mud4-e-manu-eight-syllable-tapas"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": "1000-DIVINE-year eight-syllable tapas and hymn.",
+      "requested": "Firm devotion without delusion; creation capacity; excellent dharma preservation; long protection of subjects; every wished endeavor succeeds; continual dwelling among devotees.",
+      "granted": "Assent to all requested items.",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": null,
+      "duration": "Long protection and always dwelling among devotees requested and accepted.",
+      "counter": null
+    },
+    {
+      "id": "mud4-power-kardama-visnu-son",
+      "type": "BOON",
+      "recipient_id": "mud4-en-kardama",
+      "grantor_id": "mud-en-vishnu",
+      "worshipped_id": "mud-en-vishnu",
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-manu-family-kardama-kapila-yajna"
+        ],
+        "grantor_id": [
+          "mud4-e-manu-family-kardama-kapila-yajna"
+        ],
+        "worshipped_id": [
+          "mud4-e-manu-family-kardama-kapila-yajna"
+        ],
+        "austerity_or_circumstances": [
+          "mud4-e-manu-family-kardama-kapila-yajna"
+        ],
+        "requested": [
+          "mud4-e-manu-family-kardama-kapila-yajna"
+        ],
+        "granted": [
+          "mud4-e-manu-family-kardama-kapila-yajna"
+        ],
+        "mechanism": [
+          "mud4-e-manu-family-kardama-kapila-yajna"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": "100-year Viṣṇu tapas.",
+      "requested": "Viṣṇu become his son.",
+      "granted": "Request accepted; fulfilled as Kapila in Devahūti.",
+      "mechanism": "Viṣṇu takes Kapila form in Devahūti.",
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud4-power-yajna-ganapatya-yoga",
+      "type": "BOON",
+      "recipient_id": "mud4-en-yajna-person",
+      "grantor_id": "mud-en-vakratunda",
+      "worshipped_id": "mud-en-vakratunda",
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-manu-family-kardama-kapila-yajna"
+        ],
+        "grantor_id": [
+          "mud4-e-manu-family-kardama-kapila-yajna"
+        ],
+        "worshipped_id": [
+          "mud4-e-manu-family-kardama-kapila-yajna"
+        ],
+        "austerity_or_circumstances": [
+          "mud4-e-manu-family-kardama-kapila-yajna"
+        ],
+        "granted": [
+          "mud4-e-manu-family-kardama-kapila-yajna"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": "Yoga tapas with wife; jeweled four-armed Gaṇeśa image worship with sages.",
+      "requested": null,
+      "granted": "Marvelous yoga; foremost Gaṇapatya yogin; taught to disciples.",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "mud4-a-varna-asrama-map",
+      "subject_id": "mud4-en-varna-asrama",
+      "predicate": "body_emergence_map",
+      "object_id": null,
+      "value": "Brāhmaṇa mouth/Kṣatriya arms/Vaiśya thighs/Śūdra feet; saṃnyāsa head/vānaprastha heart/brahmacarya navel/gṛhastha lower legs",
+      "evidence_ids": [
+        "mud4-e-creation-body-orders"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-orders-body",
+      "subject_id": "mud4-en-varna-asrama",
+      "predicate": "cosmologically_emerges_from",
+      "object_id": "mud-en-brahma",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-creation-body-orders"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-dharma-chest",
+      "subject_id": "rmd2-en-dharma",
+      "predicate": "emerges_from_chest_of",
+      "object_id": "mud-en-brahma",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-creation-body-orders"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-adharma-back",
+      "subject_id": "mud4-en-adharma",
+      "predicate": "emerges_from_back_of",
+      "object_id": "mud-en-brahma",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-creation-body-orders"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-creatures-body",
+      "subject_id": "mud4-en-body-created-creatures",
+      "predicate": "cosmologically_emerges_from",
+      "object_id": "mud-en-brahma",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-creation-body-orders"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-sarga-inventory",
+      "subject_id": "mud4-en-nine-sargas",
+      "predicate": "enumeration",
+      "object_id": null,
+      "value": "Three prākṛta: mahat;tanmātra/bhūta;vaikārika/indriya. Six vaikṛta: sthāvara;tiryak;deva;human;bhautika;kaumāra",
+      "evidence_ids": [
+        "mud4-e-nine-sargas"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-sarga-buddhi-purva",
+      "subject_id": "mud4-en-nine-sargas",
+      "predicate": "source_qualification",
+      "object_id": null,
+      "value": "First three described as buddhi-pūrva; no imported alternate classification",
+      "evidence_ids": [
+        "mud4-e-nine-sargas"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-sata-left",
+      "subject_id": "mud4-en-satarupa",
+      "predicate": "emerges_from_left_limb_of",
+      "object_id": "mud-en-brahma",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-manu-right",
+      "subject_id": "mud4-en-svayambhuva",
+      "predicate": "emerges_from_right_limb_of",
+      "object_id": "mud-en-brahma",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-manu-satarupa",
+      "subject_id": "mud4-en-svayambhuva",
+      "predicate": "spouse_of",
+      "object_id": "mud4-en-satarupa",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-kardama-shadow",
+      "subject_id": "mud4-en-kardama",
+      "predicate": "emerges_from_shadow_of",
+      "object_id": "mud-en-brahma",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-manu-worship",
+      "subject_id": "mud4-en-svayambhuva",
+      "predicate": "worships",
+      "object_id": "mud-en-vakratunda",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-satarupa-worship",
+      "subject_id": "mud4-en-satarupa",
+      "predicate": "worships",
+      "object_id": "mud-en-vakratunda",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-kardama-worship",
+      "subject_id": "mud4-en-kardama",
+      "predicate": "worships",
+      "object_id": "mud-en-vishnu",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-manu-eight-practice",
+      "subject_id": "mud4-en-svayambhuva",
+      "predicate": "practices",
+      "object_id": "mud4-en-eight-syllable-mantra",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-eight-syllable-tapas"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-manu-hymn-author",
+      "subject_id": "mud4-en-manu-hymn",
+      "predicate": "hymned_by",
+      "object_id": "mud4-en-svayambhuva",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-eight-syllable-tapas"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-manu-tapas-duration",
+      "subject_id": "mud4-en-svayambhuva",
+      "predicate": "tapas_duration",
+      "object_id": null,
+      "value": "1000 DIVINE years; eight-syllable procedure with wife",
+      "evidence_ids": [
+        "mud4-e-manu-eight-syllable-tapas"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-priyavrata-manu",
+      "subject_id": "mud4-en-priyavrata",
+      "predicate": "child_of",
+      "object_id": "mud4-en-svayambhuva",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-priyavrata-satarupa",
+      "subject_id": "mud4-en-priyavrata",
+      "predicate": "child_of",
+      "object_id": "mud4-en-satarupa",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-uttanapada-manu",
+      "subject_id": "mud4-en-uttanapada",
+      "predicate": "child_of",
+      "object_id": "mud4-en-svayambhuva",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-uttanapada-satarupa",
+      "subject_id": "mud4-en-uttanapada",
+      "predicate": "child_of",
+      "object_id": "mud4-en-satarupa",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-akuti-manu",
+      "subject_id": "mud4-en-akuti",
+      "predicate": "child_of",
+      "object_id": "mud4-en-svayambhuva",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-akuti-satarupa",
+      "subject_id": "mud4-en-akuti",
+      "predicate": "child_of",
+      "object_id": "mud4-en-satarupa",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-devahuti-manu",
+      "subject_id": "mud4-en-devahuti",
+      "predicate": "child_of",
+      "object_id": "mud4-en-svayambhuva",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-devahuti-satarupa",
+      "subject_id": "mud4-en-devahuti",
+      "predicate": "child_of",
+      "object_id": "mud4-en-satarupa",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-prasuti-manu",
+      "subject_id": "mud4-en-prasuti",
+      "predicate": "child_of",
+      "object_id": "mud4-en-svayambhuva",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-prasuti-satarupa",
+      "subject_id": "mud4-en-prasuti",
+      "predicate": "child_of",
+      "object_id": "mud4-en-satarupa",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-prasuti-spouse",
+      "subject_id": "mud4-en-prasuti",
+      "predicate": "spouse_of",
+      "object_id": "mud-en-daksha",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-akuti-spouse",
+      "subject_id": "mud4-en-akuti",
+      "predicate": "spouse_of",
+      "object_id": "mud4-en-ruci",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-devahuti-spouse",
+      "subject_id": "mud4-en-devahuti",
+      "predicate": "spouse_of",
+      "object_id": "mud4-en-kardama",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-kapila-visnu",
+      "subject_id": "mud4-en-kapila",
+      "predicate": "manifestation_of",
+      "object_id": "mud-en-vishnu",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-kapila-kardama",
+      "subject_id": "mud4-en-kapila",
+      "predicate": "child_of",
+      "object_id": "mud4-en-kardama",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-kapila-devahuti",
+      "subject_id": "mud4-en-kapila",
+      "predicate": "child_of",
+      "object_id": "mud4-en-devahuti",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-yajna-ruci",
+      "subject_id": "mud4-en-yajna-person",
+      "predicate": "child_of",
+      "object_id": "mud4-en-ruci",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-yajna-akuti",
+      "subject_id": "mud4-en-yajna-person",
+      "predicate": "child_of",
+      "object_id": "mud4-en-akuti",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-daksina-ruci",
+      "subject_id": "mud4-en-daksina",
+      "predicate": "child_of",
+      "object_id": "mud4-en-ruci",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-daksina-akuti",
+      "subject_id": "mud4-en-daksina",
+      "predicate": "child_of",
+      "object_id": "mud4-en-akuti",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-yajna-visnu",
+      "subject_id": "mud4-en-yajna-person",
+      "predicate": "manifestation_of",
+      "object_id": "mud-en-vishnu",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-yajna-daksina-spouse",
+      "subject_id": "mud4-en-yajna-person",
+      "predicate": "spouse_of",
+      "object_id": "mud4-en-daksina",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-yamas-yajna",
+      "subject_id": "mud4-en-twelve-yamas",
+      "predicate": "collective_children_of",
+      "object_id": "mud4-en-yajna-person",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-yamas-daksina",
+      "subject_id": "mud4-en-twelve-yamas",
+      "predicate": "collective_children_of",
+      "object_id": "mud4-en-daksina",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-yamas-number",
+      "subject_id": "mud4-en-twelve-yamas",
+      "predicate": "number",
+      "object_id": null,
+      "value": 12,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-yajna-yoga-students",
+      "subject_id": "mud4-en-yajna-disciples",
+      "predicate": "pupils_of",
+      "object_id": "mud4-en-yajna-person",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-creation-label-anomalies",
+      "subject_id": "mud4-en-varna-asrama",
+      "predicate": "witness_note",
+      "object_id": null,
+      "value": "4.2 uses Mahādeva inside continued Brahmā creation;4.8 has svarga introducing the9–16 sarga list. Attribution preserved in chapter context, no separate Śiva intervention or extra heavenly-world classification asserted.",
+      "evidence_ids": [
+        "mud4-e-creation-body-orders",
+        "mud4-e-nine-sargas"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ]
+}

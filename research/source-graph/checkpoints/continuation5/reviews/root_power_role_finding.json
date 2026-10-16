@@ -1,0 +1,114 @@
+{
+  "review_id": "continuation5-root-power-role-finding",
+  "reviewer": "Root; independent Sanskrit61.19–34 and graph comparison",
+  "compared_patch_sha256": "4e28a067a9c22c741368539515a6e99164cae59012a5b00661f5cc90e06b4962",
+  "findings": [
+    {
+      "id": "rfix5-finding-delusion-power-owner",
+      "status": "CORRECTION_RECOMMENDED",
+      "record_ids": [
+        "gkr6-power-narantaka-delusion61"
+      ],
+      "records": [
+        {
+          "id": "gkr6-power-narantaka-delusion61",
+          "type": "POWER",
+          "recipient_id": "gkr-en-narantaka",
+          "grantor_id": null,
+          "worshipped_id": null,
+          "evidence_ids": [
+            "gkr6-e-narantaka-day-night-identity-delusion61",
+            "gkr6-e-virat-toenail-narantaka-death61"
+          ],
+          "verification_status": "VERIFIED",
+          "notes": "No asserted twilight exception or categorical-boon expiry formula; the old day/night grant remains source-supported but bypass explanation is not normalized.",
+          "motive": null,
+          "austerity_or_circumstances": null,
+          "requested": null,
+          "granted": null,
+          "mechanism": "Vināyaka’s māyā confounds time, cosmic place, consciousness-state and personal identity; Virāṭ then crushes him.",
+          "trigger": null,
+          "restrictions": null,
+          "duration": null,
+          "counter": "Final nail-tip crushing kills where repeated severing did not.",
+          "later_event_ids": [
+            "gkr6-event-axe-heads-delusion",
+            "gkr6-event-virat-final-crush"
+          ],
+          "field_evidence": {
+            "recipient_id": [
+              "gkr6-e-narantaka-day-night-identity-delusion61",
+              "gkr6-e-virat-toenail-narantaka-death61"
+            ],
+            "mechanism": [
+              "gkr6-e-narantaka-day-night-identity-delusion61",
+              "gkr6-e-virat-toenail-narantaka-death61"
+            ],
+            "counter": [
+              "gkr6-e-narantaka-day-night-identity-delusion61",
+              "gkr6-e-virat-toenail-narantaka-death61"
+            ],
+            "later_event_ids": [
+              "gkr6-e-narantaka-day-night-identity-delusion61",
+              "gkr6-e-virat-toenail-narantaka-death61"
+            ]
+          }
+        }
+      ],
+      "source_locator": "Krīḍā61.24–30",
+      "finding": "mohayāmāsa ... māyayā has Vināyaka deluding Narāntaka. Current POWER recipient_id is Narāntaka although mechanism is deity exercise of māyā. Correct recipient to Vināyaka, or explicitly model the former as suffered condition rather than ability owned by victim.",
+      "suggested": "Preserve ID; use Vināyaka as wielder/recipient of POWER and note Narāntaka as affected target, with61.19–24 source evidence included in recipient field support. Retain no invented boon grantor.",
+      "applied_before_author_freeze": true,
+      "author_checkpoint": "checkpoints/gkr6/007-final-receipt.json",
+      "after_record": {
+        "id": "gkr6-power-narantaka-delusion61",
+        "type": "POWER",
+        "recipient_id": "gkr-en-vinayaka",
+        "grantor_id": null,
+        "worshipped_id": null,
+        "evidence_ids": [
+          "gkr6-e-narantaka-day-night-identity-delusion61",
+          "gkr6-e-virat-toenail-narantaka-death61",
+          "gkr6-e-narantaka-many-heads-axe61"
+        ],
+        "verification_status": "VERIFIED",
+        "notes": "POWER owner is Vināyaka, who acts through māyā; affected target is Narāntaka. Before checkpoint004 recipient_id was Narāntaka, misleadingly reading the suffered condition as his owned power. Corrected after independent root audit. No asserted twilight exception or categorical-boon expiry formula.",
+        "motive": null,
+        "austerity_or_circumstances": null,
+        "requested": null,
+        "granted": null,
+        "mechanism": "Vināyaka’s māyā confounds time, cosmic place, consciousness-state and personal identity; Virāṭ then crushes him.",
+        "trigger": null,
+        "restrictions": null,
+        "duration": null,
+        "counter": "Final nail-tip crushing kills where repeated severing did not.",
+        "later_event_ids": [
+          "gkr6-event-axe-heads-delusion",
+          "gkr6-event-virat-final-crush"
+        ],
+        "field_evidence": {
+          "recipient_id": [
+            "gkr6-e-narantaka-many-heads-axe61",
+            "gkr6-e-narantaka-day-night-identity-delusion61"
+          ],
+          "mechanism": [
+            "gkr6-e-narantaka-day-night-identity-delusion61",
+            "gkr6-e-virat-toenail-narantaka-death61",
+            "gkr6-e-narantaka-many-heads-axe61"
+          ],
+          "counter": [
+            "gkr6-e-narantaka-day-night-identity-delusion61",
+            "gkr6-e-virat-toenail-narantaka-death61"
+          ],
+          "later_event_ids": [
+            "gkr6-e-narantaka-day-night-identity-delusion61",
+            "gkr6-e-virat-toenail-narantaka-death61"
+          ]
+        }
+      },
+      "resolution_note": "Author retained the same ID, corrected deity POWER ownership and explicitly labeled Narāntaka as affected target before final freeze. Original sampled row/hash remain above."
+    }
+  ],
+  "limitations": "Narrow role correction; does not certify whole chapter, boon bypass explanation or print recension.",
+  "final_author_patch_sha256": "a2a13a0a4f8204588982030b4f008e70aeaa1ee2efcbd76b4039f6c520f54b67"
+}

@@ -1,0 +1,30 @@
+# Independent Upāsanā review
+
+Primary Sanskrit bodies read before comparison with latest gup4 patch. Whole57 and60 read; requested57.24–54 and60.1–46 claim fields compared. Optional59.9–17 reread. No gup4 mutation.
+
+Snapshot SHA256: 89fc9eadb452faf5af60af0191c348b8862a1e9272ad8bd091b6371b7b0ab19a
+
+[Primary Sanskrit witness](https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html)
+
+- mud4-review-up-name-teacher: SUPPORTED; Upāsanā57.23–29; 24–26 explicit name-japa alternative to prescribed-rite ineligibility;27–29 planted staff, return/sprout markers, morning/evening watering. The parenthetic protective-hand line is correctly labeled parenthetic; no print authenticity confirmation.
+- mud4-review-up-staff-tapas: SUPPORTED; Upāsanā57.30–40; 32 gives1000-year sprout;33–35 waiting/anthill/guru return has no new count;37 sprinkling,38 likeness,39 two hands,40 three-world eye-fire prevented by Mudgala.
+- mud4-review-up-guru-son-role: SUPPORTED; Upāsanā57.41–42; 41 own guru and father/son simile;42 honors anthill-reemerged one as son. Current ritual/source-qualified relation does not invent biological conception.
+- mud4-review-up-guru-grant-count: SUPPORTED; Upāsanā57.44–50; 44 one-syllable;45–47 grantor Mudgala and lifespan kalpa-lakṣa;48–50 gods/sages actually visit. Requested remains null rather than inventing a request for these enumerated grants. Event naming-anatomy clause separately unresolved below.
+- mud4-review-up-naming-raw: UNDETERMINED; Upāsanā57.43; Digital body reads भूमध्यान्निर्गता शुण्डा, rather than an unambiguous bhrū-madhya spelling. Name Bhṛśuṇḍi and Mudgala’s naming are explicit, but exact anatomical normalization requires lexical/edition support or a raw-reading caveat. Do not silently repair the witness.
+- mud4-review-up-subsequent-hundred: SUPPORTED; Upāsanā57.51–57; 51–52 installation/japa/daily16services;53 hundred years after this;54 life-end sāyujya is future, not narrated death.55–56 field effects follow.
+- mud4-review-up-bhrushundi-benefit-trigger: CORRECTION_NEEDED; Upāsanā57.55–56; 55 explicitly grants siddhis to observance practitioners;56 image-seeing removes rebirth and supplies sons/knowledge. Earlier51–52 narrates Bhṛśuṇḍi worship, but55–56 does not independently prescribe worship as user-benefit trigger. Narrow trigger to observance and image-seeing; retain worship as narrative practice.
+- mud4-review-up-mars-origin-age: SUPPORTED; Upāsanā60.1–10; 4–6 Apsaras causes desire, semen enters Earth hole;7 red boy raised by Earth;8 age seven and mother address;10 Earth explicitly explains father’s semen/birth/raising. No Earth/Apsaras intercourse claim is introduced.
+- mud4-review-up-mars-father-guru: SUPPORTED; Upāsanā60.11–17; 11–14 acceptance/lap/upanayana,15 Vedas/śāstras and unspecified Gaṇeśa mantra,16 Narmadā lotus posture,17 sense restraint/heart meditation/japa/wind sustenance. No count of mantra syllables supplied by author.
+- mud4-review-up-mars-tapas-manifestation: SUPPORTED; Upāsanā60.18–27; 18 exact count/time;19 digbhuja,20 form/radiance;21–25 hymn;26–27 boon offer pleased by tapas/devotion/hymn/childhood courage. No divine-year qualifier or computed1007-year age added.
+- mud4-review-up-mars-requests: SUPPORTED; Upāsanā60.28–31; 29 heaven/nectar,30 three-world auspicious-name fame,31 piety/distress removal/wishes for practitioners. Request distinct from subsequent grant/actual outcome.
+- mud4-review-up-mars-personal-grant: SUPPORTED; Upāsanā60.32–36; 32 nectar/Maṅgala fame,33 Aṅgāraka redness/Earth-son explanation,35 future Avantī king,36 grant/disappearance. No enacted royal accession narrated.
+- mud4-review-up-mars-vow-merit: SUPPORTED; Upāsanā60.33–35; 34 abda-sama merit of Saṅkaṣṭa, not year-long prerequisite for this particular observance;35 and following half-verse recitation/recounting effect.
+- mud4-review-up-mars-image: SUPPORTED; Upāsanā60.37–39; 37 explicitly daśabhuja (ten arms);38 temple/name;39 all-wish field and liberation through observance/worship/seeing.
+- mud4-review-up-mars-site-benefit-trigger: CORRECTION_NEEDED; Upāsanā60.39; Mechanism is supported. Trigger Visit/practice is broader than39, which names anuṣṭhāna, worship and seeing. Replace with these explicit practices at the installed site, rather than mere visit.
+- mud4-review-up-mars-body-transport-outcome: SUPPORTED; Upāsanā60.40–46; 40 sends Gaṇas/vimāna;41 same body to Gaṇeśa vicinity;43 explicitly heaven/nectar with gods attained.44 Cintāmaṇi name,45 west of Pārinera,46 current Siddha/Gandharva moonrise worship and progeny/prosperity grant. No universal postmortem liberation substituted for bodily transport.
+- mud4-review-up-mars-moonrise-trigger: CORRECTION_NEEDED; Upāsanā60.45–46; 46 describes current Siddha/Gandharva worship at moonrise, then deity’s desired gifts/progeny/prosperity. It does not say human beneficiaries must worship at moonrise to receive them. Preserve cult timing as separate description; set causal trigger null unless an explicit supporting passage is supplied.
+- mud4-review-up-old-rebirth-pronoun: UNDETERMINED; Upāsanā59.9–17; 8 promises current son’s prior-birth account;9 introduces Sāma;12 calls his own son Gaṇeśa;13 explicitly says his son died;14 saḥ heaven;16 merit remainder/current Kṛtavīrya sonhood. Referent cannot be harmonized confidently from this one witness. Existing NEEDS_REVIEW/PARTIAL remains correct; keep PENDING.
+
+Checked/unreviewed record counts: {"evidence": {"total": 62, "checked": 12, "unreviewed": 50}, "assertions": {"total": 64, "checked": 19, "unreviewed": 45}, "relationships": {"total": 54, "checked": 16, "unreviewed": 38}, "boons_and_powers": {"total": 35, "checked": 9, "unreviewed": 26}, "narrative_events": {"total": 62, "checked": 12, "unreviewed": 50}, "story_spines": {"total": 9, "checked": 2, "unreviewed": 7}, "entities": {"total": 116, "checked": 0, "unreviewed": 116}}
+
+Targeted evidence review, not approval of all62events/35powers or all GP chapters. Explicit unreviewed counts retain other records as unreviewed. No printed-edition check performed.

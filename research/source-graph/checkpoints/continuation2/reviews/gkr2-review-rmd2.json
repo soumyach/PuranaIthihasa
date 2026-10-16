@@ -1,0 +1,186 @@
+{
+  "reviewer": "Gaṇeśa Krīḍā continuation2 author, independently rereading root’s Mudgala extraction",
+  "review_kind": "SECOND_AUTHOR_SAME_DIGITAL_WITNESS_SAMPLE",
+  "limitations": "Direct Sanskrit electronic-body review. Not independent printed-edition collation or external Sanskrit expert certification. Samples below do not certify every root chapter or entire source exhaustiveness.",
+  "source_id": "gp-src-mudgala",
+  "witness_id": "gp-wit-sd-mudgala-1",
+  "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam1.html",
+  "actual_body_read": [
+    "Mudgala1.6.28–62",
+    "Mudgala1.8.64–72",
+    "Mudgala1.11.52–78",
+    "Supplemental field-locator check1.11.15–18"
+  ],
+  "record_ids_sampled": [
+    "rmd2-power-pair-devotion",
+    "rmd2-power-prakriti-creation",
+    "rmd2-power-purusha-creation",
+    "rmd2-power-pair-hymn-fruits",
+    "rmd2-power-gunesha-boon",
+    "rmd2-power-stutisaraka-fruits",
+    "rmd2-power-five-hymn-fruits",
+    "rmd2-power-five-grant-brahma",
+    "rmd2-power-five-grant-vishnu",
+    "rmd2-power-five-grant-hara",
+    "rmd2-power-five-grant-surya",
+    "rmd2-power-five-grant-shakti"
+  ],
+  "findings": [
+    {
+      "id": "gkr2-review-rmd2-pair",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "locators": [
+        "1.6.28",
+        "1.6.39–42",
+        "1.6.48–62"
+      ],
+      "description": "1,000divine-year tapas; requested permanent heart-presence/duty-direction/intense devotion and explicit unbound stable devotion, Prakṛti world creation and desireful/desireless devotees’ gifts, Puruṣa so’ham/gift-giving/yogic Brahmanhood and efficacy in Prakṛti, cosmic functions at proper times supported. No mortality immunity inferred."
+    },
+    {
+      "id": "gkr2-review-rmd2-pair-counts",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "record_ids": [
+        "rmd2-power-pair-hymn-fruits"
+      ],
+      "locators": [
+        "1.6.44–47"
+      ],
+      "description": "Fouraims/nourishment, jail release at100,000recitations (lakṣapāṭhataḥ), harmfulrite destruction,21recitations over21days for desiredfruit, desireless reading for Brahmanhood supported. This body does not give1,000recitations for jail release. Conditions correctly remain separate."
+    },
+    {
+      "id": "gkr2-review-rmd2-gunesha",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "record_ids": [
+        "rmd2-power-gunesha-boon",
+        "rmd2-power-stutisaraka-fruits"
+      ],
+      "locators": [
+        "1.8.64–72"
+      ],
+      "description": "Firm devotion/delusion destruction, creative ability/devotee wishes/unobstructed works requested; devotion/varied creation/unobstructedness/gift-giving/greattask appearance granted. Stutisāraka name, reader/hearer Brahmanhood and siddhis, desireful wishes/desireless liberation, three-times-daily reading attainability supported. No21day count stated for this hymn."
+    },
+    {
+      "id": "gkr2-review-rmd2-five-counts",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "record_ids": [
+        "rmd2-power-five-hymn-fruits"
+      ],
+      "locators": [
+        "1.11.53–58"
+      ],
+      "description": "Devotional fouraims/sons/grandsons/prosperity/finalSvānanda; jail sevenrecitations daily for21days; divinehonor once/twice/thrice daily; harmfulrite nofear at21recitations over21days; wealth/grain/health/cattle/desiredends supported. No100,000or1,000count imported."
+    },
+    {
+      "id": "gkr2-review-rmd2-five-duties",
+      "status": "SUPPORTED_WITH_MINOR_FIELD_AND_OMISSION_FIXES",
+      "record_ids": [
+        "rmd2-power-five-grant-brahma",
+        "rmd2-power-five-grant-vishnu",
+        "rmd2-power-five-grant-hara",
+        "rmd2-power-five-grant-surya",
+        "rmd2-power-five-grant-shakti"
+      ],
+      "locators": [
+        "1.11.60–78"
+      ],
+      "description": "Five shared request and individual body/guṇa/functions/realm/mount grants supported, including Hara third-eye destruction, Sūrya seasons/planetlord/rainroot and Śakti bhukti/mukti delusion. Greattask appearance, weapons/ornaments/powers/resolve fulfillment supported. Two source-discipline improvements below."
+    }
+  ],
+  "recommended_corrections": [
+    {
+      "id": "gkr2-review-rmd2-seed-field",
+      "severity": "LOCATOR_CORRECTION",
+      "table": "boons_and_powers",
+      "record_ids": [
+        "rmd2-power-five-grant-brahma",
+        "rmd2-power-five-grant-vishnu",
+        "rmd2-power-five-grant-hara",
+        "rmd2-power-five-grant-surya",
+        "rmd2-power-five-grant-shakti"
+      ],
+      "field": "field_evidence.austerity_or_circumstances",
+      "current": "Only rmd2-e-five-manifestation-hymn (1.11.18–51)",
+      "suggested": [
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn"
+      ],
+      "reason": "One-syllable inward seed-mantra reception/japa occurs11.15–17, while1,000divine-year appearance occurs18. Both supporting evidence IDs already overall but missing earlier from specific circumstance field."
+    },
+    {
+      "id": "gkr2-review-rmd2-equality",
+      "severity": "SOURCE_GRANT_OMISSION",
+      "table": "boons_and_powers",
+      "record_ids": [
+        "rmd2-power-five-grant-brahma",
+        "rmd2-power-five-grant-vishnu",
+        "rmd2-power-five-grant-hara",
+        "rmd2-power-five-grant-surya",
+        "rmd2-power-five-grant-shakti"
+      ],
+      "evidence_id": "rmd2-e-five-duties-boons",
+      "locator": "1.11.75",
+      "field": "granted and evidence.paraphrase",
+      "suggested": "Add attributed declaration that the five gods are made equal to Gaṇeśa in all respects (mattulyāḥ sarvabhāvena kṛtādevāḥ).",
+      "reason": "Explicit collective grant declaration omitted from sampled summaries. Preserve as this local theological speech; it is not an inferred mortal-war invulnerability clause."
+    },
+    {
+      "id": "gkr2-review-rmd2-editorial-restrictions",
+      "severity": "FIELD_DISCIPLINE_NOTE",
+      "table": "boons_and_powers",
+      "record_ids": [
+        "rmd2-power-prakriti-creation",
+        "rmd2-power-purusha-creation"
+      ],
+      "field": "restrictions",
+      "suggested": "Move nonmortalparentage/nonwarimmunity explanation to notes; leave restrictions null unless actual textual limitation identified.",
+      "reason": "Useful editorial scope caution is not an uttered boon restriction. Does not invalidate positively supported cosmological grants."
+    },
+    {
+      "id": "gkr2-review-rmd2-sadananda-term",
+      "severity": "TERMINOLOGY_NOTE",
+      "table": "boons_and_powers",
+      "record_ids": [
+        "rmd2-power-five-grant-brahma",
+        "rmd2-power-five-grant-vishnu",
+        "rmd2-power-five-grant-hara",
+        "rmd2-power-five-grant-surya",
+        "rmd2-power-five-grant-shakti"
+      ],
+      "locator": "1.11.62",
+      "field": "requested",
+      "suggested": "Retain printed term sthānaṃ sadānandanāma alongside perpetual-bliss-place paraphrase.",
+      "reason": "Requests name/place term should remain discoverable; no identity merge with the individually granted five realms inferred."
+    }
+  ],
+  "gkr2_checkpoint_central_resolution": {
+    "whole_bodies_read": "Krīḍā12–26",
+    "new_complete_chapters": [
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "partial_chapters": [
+      12,
+      15,
+      19,
+      21
+    ],
+    "complete_spines_after_parent_resolution": 8,
+    "partial_spines_after_parent_resolution": [
+      "gkr2-story-forest-weapon",
+      "gkr2-story-city-rescue",
+      "gkr2-story-well-pair",
+      "gkr2-story-false-mother"
+    ],
+    "notes": "Root will centrally downgrade these four spines with missingsections because command/counterallocation/boonrecipient/kinship are required complete-story fields. Frozen author patch retained unchanged for before/after provenance; major chronology still extracted."
+  },
+  "output_mutation": "Review-only; root patch, current outputs and frozen gkr2 patch not edited."
+}

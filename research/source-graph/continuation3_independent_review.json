@@ -1,0 +1,1220 @@
+{
+  "reports": [
+    {
+      "reviewer": "Gaṇeśa Krīḍā continuation4 author, independent source-body rereading",
+      "review_kind": "SECOND_AUTHOR_SAME_DIGITAL_WITNESS",
+      "source_id": "gp-src-ganesha",
+      "witness_id": "gp-wit-sd-upasana",
+      "url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "actual_body_read": [
+        "Upāsanā52.1–46, terminal colophon and running total",
+        "Supplemental Upāsanā51.74–79"
+      ],
+      "web_body_reference": "turn352view0",
+      "compared_patch": "work/continuation3/patches/gup4.json",
+      "patch_sha256": "75a094439442d97c3d4926c7ef03d145a5dab517a3f701dd06e5f342275aabe8",
+      "limitations": "Direct second-author reading of the same electronic Sanskrit witness. No print-edition collation or external expert certification. This does not certify all Upāsanā or every gup4 chapter.",
+      "findings": [
+        {
+          "id": "gkr4-review-gup4-family",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "record_ids": [
+            "gup4-e-013",
+            "gup4-a-012",
+            "gup4-rel-011",
+            "gup4-a-013",
+            "gup4-rel-012"
+          ],
+          "locators": [
+            "52.6–9"
+          ],
+          "description": "Damayantī is explicitly bhāryā, Nala’s wife. Padmahasta is explicitly amātya, minister, in52.9; he is not a named son. Former-life jāyā/apatya family is unnamed52.22 and distinct from current spouse. No Vīrasena, Bhīma, Indrasena/Indrasenā or other epic genealogy imported."
+        },
+        {
+          "id": "gkr4-review-gup4-damayanti-creation",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "record_ids": [
+            "gup4-a-014",
+            "gup4-rel-013",
+            "gup4-power-011"
+          ],
+          "locators": [
+            "52.6–8"
+          ],
+          "description": "Brahmā fashions Damayantī from selected essence and gives beauty of women in the three worlds. The graph correctly distinguishes this cosmological creation description from ordinary parenthood and from a personal boon request/grant scene."
+        },
+        {
+          "id": "gkr4-review-gup4-padmahasta-range",
+          "status": "LOCATOR_CORRECTION_REQUIRED",
+          "record_ids": [
+            "gup4-e-013",
+            "gup4-e-014",
+            "gup4-event-013",
+            "gup4-event-014",
+            "gup4-en-023"
+          ],
+          "locators": [
+            "52.9–10"
+          ],
+          "description": "The evidence and event limited to52.1–9 include Padmahasta tall like Meru/deep like ocean, but those words occur52.10. The role and Bṛhaspati/Aṅgiras comparisons are within9; only the final physical comparisons are out of range.",
+          "recommended_action": {
+            "preferred": "Move the Meru/ocean clause from gup4-e-013/event013 to gup4-e-014/event014 (existing10–20 span), and add e014 as additional support to Padmahasta entity if those traits are kept there.",
+            "alternative": "Extend both first passage and evidence to52.1–10, retaining existing IDs and an explicit locator change.",
+            "no_role_correction": "Padmahasta minister relation itself is supported at52.9."
+          }
+        },
+        {
+          "id": "gkr4-review-gup4-teachers-identities",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "record_ids": [
+            "gup4-e-014",
+            "gup4-e-015",
+            "gup4-e-016",
+            "gup4-a-015",
+            "gup4-a-017",
+            "gup4-rel-014",
+            "gup4-rel-016"
+          ],
+          "locators": [
+            "52.12–20",
+            "52.21–35",
+            "52.43–45"
+          ],
+          "description": "Current Nala honors Gautama, who explains the former life. The former poor/pure/knowledgeable kṣatriya is unnamed, in Pippala beyond Gauṇḍadeśa; he meets and is instructed by Kauśika/Kaushika. Current Gautama and prior Kauśika are kept distinct; Kauśika is not guessed to be another named sage. No named current or former parents/adventures added."
+        },
+        {
+          "id": "gkr4-review-gup4-rebirth-locator",
+          "status": "SUPPORT_REFINEMENT_RECOMMENDED",
+          "record_ids": [
+            "gup4-a-016",
+            "gup4-rel-015"
+          ],
+          "locators": [
+            "52.20–22",
+            "52.41"
+          ],
+          "description": "Existing e015 gives prior-birth identity to current Nala. The explicit death-and-birth-as-Nala statement occurs52.41 in e017; add e017 to make reborn_as trace directly to the narrated transition.",
+          "recommended_action": {
+            "add_evidence_ids": [
+              "gup4-e-017"
+            ],
+            "note": "Current assertion is supported contextually by the former-birth dialogue, so this is an exact-locator strengthening, not a claim reversal."
+          }
+        },
+        {
+          "id": "gkr4-review-gup4-prior-vow",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "record_ids": [
+            "gup4-e-015",
+            "gup4-e-016",
+            "gup4-power-012"
+          ],
+          "locators": [
+            "52.21–35"
+          ],
+          "description": "Wife/children/friends’ harsh words cause night departure without consulting them. Kaushika compassionately blesses Gaṇeśa’s auspiciousness. The sufferer asks wishes, poverty removal, enjoyment/liberation; teacher directs one MONTH of earthen-image worship by previously stated procedure and daily story hearing, promising siddhi. The graph does not claim an explicit personal Gaṇeśa boon here."
+        },
+        {
+          "id": "gkr4-review-gup4-poverty-field-range",
+          "status": "FIELD_EVIDENCE_CORRECTION_REQUIRED",
+          "record_ids": [
+            "gup4-power-012"
+          ],
+          "locators": [
+            "52.28–30"
+          ],
+          "description": "Power012 mechanism includes poverty relief, but sole e016 covers29–35, where teacher states vow/siddhi. Explicit poverty-removal context is the sufferer’s request in28/e015. Include that context or narrow the mechanism to the teacher’s stated success promise.",
+          "recommended_action": {
+            "add_to_record_evidence_ids": [
+              "gup4-e-015"
+            ],
+            "add_to_field_evidence_mechanism": [
+              "gup4-e-015"
+            ],
+            "alternative": "State promised siddhi through the month-long vow, with poverty relief retained as requested purpose/context rather than a separately quoted donor promise."
+          }
+        },
+        {
+          "id": "gkr4-review-gup4-wealth-temple-death-rebirth",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "record_ids": [
+            "gup4-e-017",
+            "gup4-a-018",
+            "gup4-rel-017",
+            "gup4-power-013",
+            "gup4-event-017"
+          ],
+          "locators": [
+            "52.36–42"
+          ],
+          "description": "With Kauśika permission, former self returns HOME and begins bright Śrāvaṇa fourth vow. Constant Gaṇeśa meditation during standing/speech/silence/movement/sleep/eating; wealth of elephants/chariots/horses/cattle/servants, donations, costly Gaṇeśa temple, pleasures, death, then Niṣadha birth as Nala. Temple belongs to unnamed prior self, not a newly invented construction by current Nala. No supernatural instantaneous house transformation from Kardama51 is inserted."
+        },
+        {
+          "id": "gkr4-review-gup4-current-repeated-vow",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "record_ids": [
+            "gup4-e-018",
+            "gup4-power-014",
+            "gup4-event-018",
+            "gup4-story-nala"
+          ],
+          "locators": [
+            "52.43–46"
+          ],
+          "description": "After Gautama leaves, Nala trusts his explanation, makes an image, performs vow, hears story and worships daily, obtaining all wishes. This is current-life repeated practice, not an automatic yearly renewal rule or an imported dice/exile episode. Chapter terminal46 and colophon seen. Whole bounded narrative can remain COMPLETE after range corrections; no unresolved narrative semantic omission found in this sample."
+        },
+        {
+          "id": "gkr4-review-gup4-mental-maidens",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "record_ids": [
+            "gup4-e-010",
+            "gup4-a-008",
+            "gup4-a-009",
+            "gup4-rel-007",
+            "gup4-rel-008",
+            "gup4-power-005",
+            "gup4-event-010"
+          ],
+          "locators": [
+            "51.74–77"
+          ],
+          "description": "Brahmā practices a full100years for creation, worships with services/gems/fruits and gives the two maidens Siddhi/Buddhi described as manasā kalpite. Mental-creation relationships and gift wording supported. No ordinary biological daughterhood or explicit marriage rite is stated here. Gaṇeśa gives one-syllable vidyā and Brahmā then creates; no seed string inferred."
+        },
+        {
+          "id": "gkr4-review-gup4-vishnu-precedent",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "record_ids": [
+            "gup4-e-010",
+            "gup4-power-006"
+          ],
+          "locators": [
+            "51.77–79"
+          ],
+          "description": "Viṣṇu’s six-akṣara worship and a complete ONE YEAR image-vow with rules are explicit. Receiving a boon then preserving the world is a retrospective divine precedent; it is separate from the poor kṣatriya’s one-month vow and Brahmā’s100years. No DIVINE-year qualification supplied in these verses."
+        }
+      ],
+      "summary": {
+        "whole_nala_body_read": true,
+        "core_family_teachers_chronology_supported": true,
+        "required_locator_corrections": 1,
+        "required_field_evidence_corrections": 1,
+        "recommended_evidence_strengthenings": 1,
+        "semantic_story_downgrade_required": false,
+        "mental_maiden_sample_supported": true,
+        "edits_to_target_patch": false
+      }
+    },
+    {
+      "id": "mud4-review-gup4",
+      "reviewer": "Independent Mudgala-track author",
+      "snapshot_path": "work/continuation3/patches/gup4.json",
+      "snapshot_sha256": "89fc9eadb452faf5af60af0191c348b8862a1e9272ad8bd091b6371b7b0ab19a",
+      "method": "Primary Sanskrit bodies read before comparison with latest gup4 patch. Whole57 and60 read; requested57.24–54 and60.1–46 claim fields compared. Optional59.9–17 reread. No gup4 mutation.",
+      "source_urls": [
+        "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html"
+      ],
+      "checked_ids": {
+        "evidence": [
+          "gup4-e-041",
+          "gup4-e-042",
+          "gup4-e-043",
+          "gup4-e-044",
+          "gup4-e-051",
+          "gup4-e-056",
+          "gup4-e-057",
+          "gup4-e-058",
+          "gup4-e-059",
+          "gup4-e-060",
+          "gup4-e-061",
+          "gup4-e-062"
+        ],
+        "assertions": [
+          "gup4-a-037",
+          "gup4-a-038",
+          "gup4-a-039",
+          "gup4-a-040",
+          "gup4-a-042",
+          "gup4-a-043",
+          "gup4-a-052",
+          "gup4-a-053",
+          "gup4-a-054",
+          "gup4-a-055",
+          "gup4-a-056",
+          "gup4-a-057",
+          "gup4-a-058",
+          "gup4-a-059",
+          "gup4-a-060",
+          "gup4-a-061",
+          "gup4-a-062",
+          "gup4-a-063",
+          "gup4-a-064"
+        ],
+        "relationships": [
+          "gup4-rel-031",
+          "gup4-rel-032",
+          "gup4-rel-033",
+          "gup4-rel-034",
+          "gup4-rel-036",
+          "gup4-rel-037",
+          "gup4-rel-045",
+          "gup4-rel-046",
+          "gup4-rel-047",
+          "gup4-rel-048",
+          "gup4-rel-049",
+          "gup4-rel-050",
+          "gup4-rel-051",
+          "gup4-rel-052",
+          "gup4-rel-053",
+          "gup4-rel-054"
+        ],
+        "boons_and_powers": [
+          "gup4-power-022",
+          "gup4-power-023",
+          "gup4-power-024",
+          "gup4-power-025",
+          "gup4-power-026",
+          "gup4-power-032",
+          "gup4-power-033",
+          "gup4-power-034",
+          "gup4-power-035"
+        ],
+        "narrative_events": [
+          "gup4-event-041",
+          "gup4-event-042",
+          "gup4-event-043",
+          "gup4-event-044",
+          "gup4-event-051",
+          "gup4-event-056",
+          "gup4-event-057",
+          "gup4-event-058",
+          "gup4-event-059",
+          "gup4-event-060",
+          "gup4-event-061",
+          "gup4-event-062"
+        ],
+        "story_spines": [
+          "gup4-story-angaraka",
+          "gup4-story-bhrushundi-origin"
+        ]
+      },
+      "counts": {
+        "evidence": {
+          "total": 62,
+          "checked": 12,
+          "unreviewed": 50
+        },
+        "assertions": {
+          "total": 64,
+          "checked": 19,
+          "unreviewed": 45
+        },
+        "relationships": {
+          "total": 54,
+          "checked": 16,
+          "unreviewed": 38
+        },
+        "boons_and_powers": {
+          "total": 35,
+          "checked": 9,
+          "unreviewed": 26
+        },
+        "narrative_events": {
+          "total": 62,
+          "checked": 12,
+          "unreviewed": 50
+        },
+        "story_spines": {
+          "total": 9,
+          "checked": 2,
+          "unreviewed": 7
+        },
+        "entities": {
+          "total": 116,
+          "checked": 0,
+          "unreviewed": 116
+        }
+      },
+      "checks": [
+        {
+          "id": "mud4-review-up-name-teacher",
+          "claim_ids": [
+            "gup4-e-041",
+            "gup4-event-041",
+            "gup4-a-037",
+            "gup4-a-038",
+            "gup4-rel-031",
+            "gup4-rel-032",
+            "gup4-power-022"
+          ],
+          "verdict": "SUPPORTED",
+          "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+          "locator": "Upāsanā57.23–29",
+          "claim_checked": "Mudgala teaches Gaṇeśāya namaḥ, with one seat, wind sustenance, concentration, staff watering and return/sprout markers.",
+          "support_or_problem": "24–26 explicit name-japa alternative to prescribed-rite ineligibility;27–29 planted staff, return/sprout markers, morning/evening watering. The parenthetic protective-hand line is correctly labeled parenthetic; no print authenticity confirmation.",
+          "fields": []
+        },
+        {
+          "id": "mud4-review-up-staff-tapas",
+          "claim_ids": [
+            "gup4-e-042",
+            "gup4-event-042",
+            "gup4-power-023"
+          ],
+          "verdict": "SUPPORTED",
+          "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+          "locator": "Upāsanā57.30–40",
+          "claim_checked": "1000 years is to sprouting; guru return/wait separately unspecified. Two hands, enchanted-water revival and eye-fire counter.",
+          "support_or_problem": "32 gives1000-year sprout;33–35 waiting/anthill/guru return has no new count;37 sprinkling,38 likeness,39 two hands,40 three-world eye-fire prevented by Mudgala.",
+          "fields": []
+        },
+        {
+          "id": "mud4-review-up-guru-son-role",
+          "claim_ids": [
+            "gup4-e-043",
+            "gup4-a-039",
+            "gup4-a-040",
+            "gup4-rel-033",
+            "gup4-rel-034"
+          ],
+          "verdict": "SUPPORTED",
+          "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+          "locator": "Upāsanā57.41–42",
+          "claim_checked": "Mudgala guru and sonlike honor, distinct from biological birth.",
+          "support_or_problem": "41 own guru and father/son simile;42 honors anthill-reemerged one as son. Current ritual/source-qualified relation does not invent biological conception.",
+          "fields": []
+        },
+        {
+          "id": "mud4-review-up-guru-grant-count",
+          "claim_ids": [
+            "gup4-power-024",
+            "gup4-event-043"
+          ],
+          "verdict": "SUPPORTED",
+          "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+          "locator": "Upāsanā57.44–50",
+          "claim_checked": "One-syllable teaching then Mudgala’s boons,100000kalpa lifespan, visitor efficacy/deity reverence.",
+          "support_or_problem": "44 one-syllable;45–47 grantor Mudgala and lifespan kalpa-lakṣa;48–50 gods/sages actually visit. Requested remains null rather than inventing a request for these enumerated grants. Event naming-anatomy clause separately unresolved below.",
+          "fields": [
+            "granted",
+            "duration",
+            "grantor_id"
+          ]
+        },
+        {
+          "id": "mud4-review-up-naming-raw",
+          "claim_ids": [
+            "gup4-e-043",
+            "gup4-event-043"
+          ],
+          "verdict": "UNDETERMINED",
+          "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+          "locator": "Upāsanā57.43",
+          "claim_checked": "Exact claim that trunk emerges from eyebrow-middle.",
+          "support_or_problem": "Digital body reads भूमध्यान्निर्गता शुण्डा, rather than an unambiguous bhrū-madhya spelling. Name Bhṛśuṇḍi and Mudgala’s naming are explicit, but exact anatomical normalization requires lexical/edition support or a raw-reading caveat. Do not silently repair the witness.",
+          "fields": [
+            "details:eyebrow-middle",
+            "paraphrase:eyebrow-middle"
+          ]
+        },
+        {
+          "id": "mud4-review-up-subsequent-hundred",
+          "claim_ids": [
+            "gup4-e-044",
+            "gup4-event-044",
+            "gup4-power-025",
+            "gup4-a-042",
+            "gup4-a-043",
+            "gup4-rel-036",
+            "gup4-rel-037"
+          ],
+          "verdict": "SUPPORTED",
+          "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+          "locator": "Upāsanā57.51–57",
+          "claim_checked": "Image installation, daily16services,100 further years, life-end sāyujya promise.",
+          "support_or_problem": "51–52 installation/japa/daily16services;53 hundred years after this;54 life-end sāyujya is future, not narrated death.55–56 field effects follow.",
+          "fields": [
+            "austerity_or_circumstances",
+            "granted",
+            "trigger"
+          ]
+        },
+        {
+          "id": "mud4-review-up-bhrushundi-benefit-trigger",
+          "claim_ids": [
+            "gup4-power-026"
+          ],
+          "verdict": "CORRECTION_NEEDED",
+          "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+          "locator": "Upāsanā57.55–56",
+          "claim_checked": "The benefit trigger adds worship to observance/image-seeing.",
+          "support_or_problem": "55 explicitly grants siddhis to observance practitioners;56 image-seeing removes rebirth and supplies sons/knowledge. Earlier51–52 narrates Bhṛśuṇḍi worship, but55–56 does not independently prescribe worship as user-benefit trigger. Narrow trigger to observance and image-seeing; retain worship as narrative practice.",
+          "fields": [
+            "trigger"
+          ]
+        },
+        {
+          "id": "mud4-review-up-mars-origin-age",
+          "claim_ids": [
+            "gup4-e-056",
+            "gup4-event-056",
+            "gup4-a-052",
+            "gup4-a-053",
+            "gup4-a-054",
+            "gup4-rel-045",
+            "gup4-rel-046",
+            "gup4-rel-047"
+          ],
+          "verdict": "SUPPORTED",
+          "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+          "locator": "Upāsanā60.1–10",
+          "claim_checked": "Bhāradvāja semen/Earth-hole origin, Earth raising/mother, seven-year inquiry.",
+          "support_or_problem": "4–6 Apsaras causes desire, semen enters Earth hole;7 red boy raised by Earth;8 age seven and mother address;10 Earth explicitly explains father’s semen/birth/raising. No Earth/Apsaras intercourse claim is introduced.",
+          "fields": []
+        },
+        {
+          "id": "mud4-review-up-mars-father-guru",
+          "claim_ids": [
+            "gup4-e-057",
+            "gup4-event-057",
+            "gup4-a-055",
+            "gup4-a-056",
+            "gup4-a-057",
+            "gup4-rel-048",
+            "gup4-rel-049",
+            "gup4-rel-050"
+          ],
+          "verdict": "SUPPORTED",
+          "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+          "locator": "Upāsanā60.11–17",
+          "claim_checked": "Earth brings son; Bhāradvāja accepts/initiation/teaching; Narmadā air-diet tapas.",
+          "support_or_problem": "11–14 acceptance/lap/upanayana,15 Vedas/śāstras and unspecified Gaṇeśa mantra,16 Narmadā lotus posture,17 sense restraint/heart meditation/japa/wind sustenance. No count of mantra syllables supplied by author.",
+          "fields": []
+        },
+        {
+          "id": "mud4-review-up-mars-tapas-manifestation",
+          "claim_ids": [
+            "gup4-e-058",
+            "gup4-event-058",
+            "gup4-a-058",
+            "gup4-power-032"
+          ],
+          "verdict": "SUPPORTED",
+          "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+          "locator": "Upāsanā60.18–27",
+          "claim_checked": "1000YEAR tapas, Māgha dark-fourth moonrise appearance; digbhuja retained.",
+          "support_or_problem": "18 exact count/time;19 digbhuja,20 form/radiance;21–25 hymn;26–27 boon offer pleased by tapas/devotion/hymn/childhood courage. No divine-year qualifier or computed1007-year age added.",
+          "fields": [
+            "austerity_or_circumstances"
+          ]
+        },
+        {
+          "id": "mud4-review-up-mars-requests",
+          "claim_ids": [
+            "gup4-e-059",
+            "gup4-event-059",
+            "gup4-power-032"
+          ],
+          "verdict": "SUPPORTED",
+          "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+          "locator": "Upāsanā60.28–31",
+          "claim_checked": "Heaven residence, nectar with gods, auspicious name and vow effects requested.",
+          "support_or_problem": "29 heaven/nectar,30 three-world auspicious-name fame,31 piety/distress removal/wishes for practitioners. Request distinct from subsequent grant/actual outcome.",
+          "fields": [
+            "requested"
+          ]
+        },
+        {
+          "id": "mud4-review-up-mars-personal-grant",
+          "claim_ids": [
+            "gup4-e-060",
+            "gup4-event-060",
+            "gup4-power-032"
+          ],
+          "verdict": "SUPPORTED",
+          "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+          "locator": "Upāsanā60.32–36",
+          "claim_checked": "Nectar/fame names, future Avantī kingship; future distinguished from actual accession.",
+          "support_or_problem": "32 nectar/Maṅgala fame,33 Aṅgāraka redness/Earth-son explanation,35 future Avantī king,36 grant/disappearance. No enacted royal accession narrated.",
+          "fields": [
+            "granted",
+            "grantor_id"
+          ]
+        },
+        {
+          "id": "mud4-review-up-mars-vow-merit",
+          "claim_ids": [
+            "gup4-power-033"
+          ],
+          "verdict": "SUPPORTED",
+          "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+          "locator": "Upāsanā60.33–35",
+          "claim_checked": "Aṅgāraka observance grants a year-equivalent merit and unobstructed acts; vow recounting wishes.",
+          "support_or_problem": "34 abda-sama merit of Saṅkaṣṭa, not year-long prerequisite for this particular observance;35 and following half-verse recitation/recounting effect.",
+          "fields": [
+            "granted",
+            "trigger"
+          ]
+        },
+        {
+          "id": "mud4-review-up-mars-image",
+          "claim_ids": [
+            "gup4-e-061",
+            "gup4-event-061",
+            "gup4-a-059",
+            "gup4-a-060",
+            "gup4-a-061",
+            "gup4-a-062",
+            "gup4-rel-051",
+            "gup4-rel-052",
+            "gup4-rel-053"
+          ],
+          "verdict": "SUPPORTED",
+          "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+          "locator": "Upāsanā60.37–39",
+          "claim_checked": "Installed ten-armed trunk-faced image, temple, Maṅgalamūrti name and efficacy.",
+          "support_or_problem": "37 explicitly daśabhuja (ten arms);38 temple/name;39 all-wish field and liberation through observance/worship/seeing.",
+          "fields": []
+        },
+        {
+          "id": "mud4-review-up-mars-site-benefit-trigger",
+          "claim_ids": [
+            "gup4-power-034"
+          ],
+          "verdict": "CORRECTION_NEEDED",
+          "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+          "locator": "Upāsanā60.39",
+          "claim_checked": "Visit/practice should track the three explicit practices.",
+          "support_or_problem": "Mechanism is supported. Trigger Visit/practice is broader than39, which names anuṣṭhāna, worship and seeing. Replace with these explicit practices at the installed site, rather than mere visit.",
+          "fields": [
+            "trigger"
+          ]
+        },
+        {
+          "id": "mud4-review-up-mars-body-transport-outcome",
+          "claim_ids": [
+            "gup4-e-062",
+            "gup4-event-062",
+            "gup4-a-063",
+            "gup4-a-064",
+            "gup4-rel-054"
+          ],
+          "verdict": "SUPPORTED",
+          "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+          "locator": "Upāsanā60.40–46",
+          "claim_checked": "Gaṇeśa Gaṇas bring him bodily by vimāna; heaven and nectar actual; Cintāmaṇi/local cult.",
+          "support_or_problem": "40 sends Gaṇas/vimāna;41 same body to Gaṇeśa vicinity;43 explicitly heaven/nectar with gods attained.44 Cintāmaṇi name,45 west of Pārinera,46 current Siddha/Gandharva moonrise worship and progeny/prosperity grant. No universal postmortem liberation substituted for bodily transport.",
+          "fields": []
+        },
+        {
+          "id": "mud4-review-up-mars-moonrise-trigger",
+          "claim_ids": [
+            "gup4-power-035"
+          ],
+          "verdict": "CORRECTION_NEEDED",
+          "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+          "locator": "Upāsanā60.45–46",
+          "claim_checked": "Moonrise worship made causal benefit trigger.",
+          "support_or_problem": "46 describes current Siddha/Gandharva worship at moonrise, then deity’s desired gifts/progeny/prosperity. It does not say human beneficiaries must worship at moonrise to receive them. Preserve cult timing as separate description; set causal trigger null unless an explicit supporting passage is supplied.",
+          "fields": [
+            "trigger"
+          ]
+        },
+        {
+          "id": "mud4-review-up-old-rebirth-pronoun",
+          "claim_ids": [
+            "gup4-e-051",
+            "gup4-event-051"
+          ],
+          "verdict": "UNDETERMINED",
+          "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+          "locator": "Upāsanā59.9–17",
+          "claim_checked": "Whether former-life Sāma or his son is reborn as Kṛtavīrya.",
+          "support_or_problem": "8 promises current son’s prior-birth account;9 introduces Sāma;12 calls his own son Gaṇeśa;13 explicitly says his son died;14 saḥ heaven;16 merit remainder/current Kṛtavīrya sonhood. Referent cannot be harmonized confidently from this one witness. Existing NEEDS_REVIEW/PARTIAL remains correct; keep PENDING.",
+          "fields": [
+            "identity",
+            "pronoun"
+          ]
+        }
+      ],
+      "spine_review": [
+        {
+          "id": "gup4-story-angaraka",
+          "verdict": "SUPPORTED",
+          "scope": "60.1–46",
+          "note": "All major birth/parent/guru/tapas/request/grant/image/transport/actual heaven-nectar/site-aftereffects transitions present. Narrow POWER trigger repairs above still required."
+        },
+        {
+          "id": "gup4-story-bhrushundi-origin",
+          "verdict": "UNDETERMINED",
+          "scope": "57.1–57",
+          "note": "Primary whole-body read found no major chronological gap, but naming-anatomy reading57.43 is unresolved; exact completed extraction should not receive blanket independent approval until caveated or independently settled."
+        }
+      ],
+      "limitations": "Targeted evidence review, not approval of all62events/35powers or all GP chapters. Explicit unreviewed counts retain other records as unreviewed. No printed-edition check performed."
+    },
+    {
+      "review_id": "continuation3-root-independent-review",
+      "reviewer": "Root, independently reading primary Sanskrit bodies after/alongside author extraction",
+      "method": "Same digital witness, direct bounded body reading and comparison. Source speech, observed event, future promise and editorial interpretation distinguished.",
+      "actual_read_spans": {
+        "gp-wit-sd-upasana": [
+          "51.1–96",
+          "53.1–55.47",
+          "57.43 naming clause"
+        ],
+        "gp-wit-sd-krida": [
+          "31.1–49",
+          "35.1–36",
+          "38.1–63",
+          "40.26–44",
+          "41.1–34",
+          "42.1–36",
+          "43.1–14"
+        ],
+        "gp-wit-sd-mudgala-2": [
+          "2.4.1–65",
+          "2.5.1–63",
+          "2.6.1–58",
+          "2.7.23–55",
+          "2.8.36–86",
+          "2.9.1–37",
+          "2.10.1–9"
+        ]
+      },
+      "review_units": [
+        {
+          "id": "root3-review-vamana-initiation",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "gkr4-e-vamana-guru-tapas"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-krida"
+          ],
+          "locators": [
+            "Krīḍā31.1–13"
+          ],
+          "finding": "Kaśyapa is Vedic teacher and six-syllable mantra initiator, gives permission; Vāmana’s Vidarbha tapas lasts one year with no divine-year qualifier, fasting and sense restraint. Ten-armed peacock-riding Gaṇeśa with Siddhi/Buddhi, gem garland and serpent at navel is the encountered form. No imported lion or enumerated ten-held-weapons.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-vamana-request-grant",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "gkr4-e-vamana-request-grant",
+            "gkr4-e-vamana-installation"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-krida"
+          ],
+          "locators": [
+            "Krīḍā31.14–27"
+          ],
+          "finding": "Sight initially sufficient, Vāmana nevertheless requests never-defeat/no-obstacles/all-work success and Indra’s purpose; Gaṇeśa grants through remembrance. Installed Kashmir-stone form is separately four-armed/three-eyed, with efficacy by remembrance/sight/meditation/worship, jeweled/golden shrine, unnamed Brahmin with village/wealth endowment and three-time worship. Permission to attend sacrifice is then sought from father. The observed manifestation and installed image are distinct descriptions.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-vamana-dialogue-steps",
+          "status": "SUPPORTED_WITH_RETAINED_GAPS",
+          "evidence_ids": [
+            "gkr4-e-bali-gift-warning",
+            "gkr4-e-water-steps-promises",
+            "gkr4-e-water-actor-review",
+            "gkr4-e-vamana-aftermath-image"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-krida"
+          ],
+          "locators": [
+            "Krīḍā31.28–49"
+          ],
+          "finding": "Vāmana’s orphan/forgotten-parent statement is character speech, not a narrator revision of Kaśyapa/Aditi lineage. Śukra/Kāvya warning and Bali’s devotion rationale precede grant. Printed Śakra water stopper and insertion agency remain pending. Head/heaven and feet/earth/nether/Bali-head mapping preserved literally; no standard reconstructed two-step mapping or Sutala substitution. dharaṇītala term retained, divine presence and future Indra-office promised, not immediate future office attainment.31.48 geography/ten-arm referent remains unresolved.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-madhu-origins-battle",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "mud4-e-manu-satarupa-kardama-origin",
+            "mud4-e-madhu-kaitabha-battle",
+            "mud4-e-visnu-six-syllable-tapas"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2"
+          ],
+          "locators": [
+            "Mudgala2.4.17–36"
+          ],
+          "finding": "Śatarūpā/Manu left/right body-origin and Kardama shadow-origin are creation contexts. Pair originates from Viṣṇu ear dirt, not invented biological parents. Brahmā praises Nidrā before Viṣṇu’s5,000-year wrestling failure and hidden escape to Śiva. Six-syllable initiation, Daṇḍakāraṇya and1,000-year tapas supported, without adding divine qualifier or detailed mantra syllables.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-madhu-death-mechanics",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "mud4-e-visnu-hymn-benefits",
+            "mud4-e-madhu-kaitabha-boon-counter",
+            "mud4-e-madhu-kaitabha-ending"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2"
+          ],
+          "locators": [
+            "Mudgala2.4.37–65"
+          ],
+          "finding": "Requests for devotion/knowledge/fame/capacity/defeat-method assented to. Gaṇeśa recalls Brahmā’s hidden-death boon: when the pair speaks their death, kill in that way. Māyā/heart-presence/subjection and remembered strategy are promised. Text closes with Gaṇeśa remembrance and cutting the pair; no actually spoken death dialogue, water-free thighs or cakra is narrated. Siddhikṣetra installation/residence with wife/entourage remains source-local; no guessed named spouse.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-kardama-grants",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "gup4-e-010"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-upasana"
+          ],
+          "locators": [
+            "Upāsanā51.74–80"
+          ],
+          "finding": "Saubhari’s reported examples explicitly give Brahmā100-year tapas, mentally created Siddhi/Buddhi maidens offered and one-syllable vidyā received, followed by creation. Viṣṇu’s six-syllable complete image/vow practice lasts one year and protection follows boon. Girlhood/mental creation is explicit only here; marriage or biological status is not retroactively imported into earlier dakṣiṇā or service scenes.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-kardama-past-present",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "gup4-e-011",
+            "gup4-e-012"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-upasana"
+          ],
+          "locators": [
+            "Upāsanā51.81–96"
+          ],
+          "finding": "Bhr̥gu recounts Saubhari-taught prior poor unnamed kṣatriya’s month vow, transformed house/unnamed wifechildren and recognition, relating this to present kingship. Present Kardama repeats practice, gains knowledge/dispassion, installs sons in office and reaches nonreturning Gaṇeśa abode. Past/current households and narrated teaching frames remain distinct. Damayantī/Nala/Candrāṅgada last-mentioned users do not count as new narrated episodes yet.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-candrangada-family-captivity",
+          "status": "SUPPORTED_WITH_RETAINED_GAPS",
+          "evidence_ids": [
+            "gup4-e-021",
+            "gup4-e-022",
+            "gup4-e-023",
+            "gup4-e-024"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-upasana"
+          ],
+          "locators": [
+            "Upāsanā53.1–42"
+          ],
+          "finding": "Candraṅgada identifies Hemāṅgada as father and Karṇa/Mālava home; wife Indumatī is distinct from another same-named source character. Escape from Rākṣasī into lake precedes Nāga-maiden abduction, attempted husband demand, his one-wife-vow refusal and separation curse with shackling. Curse says varied separation, not a declared12-year duration. Messenger reports submergence; queen’s grief is not confirmation of death.3power wording and15minister clause remain unresolved.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-indumati-vow-release",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "gup4-e-026",
+            "gup4-e-027",
+            "gup4-e-028",
+            "gup4-e-029"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-upasana"
+          ],
+          "locators": [
+            "Upāsanā54.13–36;55.1–8"
+          ],
+          "finding": "Twelve years of distress precede Nārada’s disclosure of living captivity, restoration of married marks, and vow prescription. Retain ekānna as the printed food-option term rather than a numeric one-grain ration; one meal or fasting alternatives, four-armed earthen image/16services and bright fourth-to-fourth month. Actual queen lives on one pala milk. At completion divine favour changes maidens’ mind; they release/honor king and provide mind-swift horse. No death/resurrection or fixed12-year curse imported.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-parvati-reunion",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "gup4-e-034",
+            "gup4-e-035"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-upasana"
+          ],
+          "locators": [
+            "Upāsanā55.33–47"
+          ],
+          "finding": "Pārvatī actually performs father-taught milk-only image vow; Śiva’s mind grows restless and he comes bull-mounted to her hermitage. She attributes reunion to Varada favour. Himavat places her hand in Śiva’s; worship, praise and flowers follow. Śiva places her on half-body, mounts bull and returns Kailāsa. Actual reunion resolves the earlier unread-ending gap but does not erase unrelated51/53/55 semantic uncertainties.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-prajapati-boons",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "mud4-e-nine-prajapati-grants"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2"
+          ],
+          "locators": [
+            "Mudgala2.5.1–24"
+          ],
+          "finding": "Nine Brahmā sons led by Dakṣa undergo1,000divine-year one-syllable, air-only tapas; mouse-mounted Gaṇeśa appears. Firm devotion removing delusion, incomparable creative capacity and desired-success requested and accepted. Hymn gives stated family/wealth/fertility/enjoyment/liberation benefits; no numeric recitation condition or recalled roster supplied.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-daksha-shakti-daughter",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "mud4-e-daksha-daughter-grant-recollection"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2"
+          ],
+          "locators": [
+            "Mudgala2.5.25–38"
+          ],
+          "finding": "Brahmā advises Śakti tapas;100years then goddess appears. Requested daughterhood granted in many forms populating the world with sons/daughters. Hymn identities remain attributed. Mudgala subsequently recounts Dakṣa’s later abandoned Gaṇeśa remembrance/mantra, insulted Satī and grief; this is retrospective nested framing, not a second newly observed sacrifice.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-manu-six-request-themes",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "mud4-e-manu-eight-syllable-tapas",
+            "mud4-e-manu-request-grant"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2"
+          ],
+          "locators": [
+            "Mudgala2.5.39–63"
+          ],
+          "finding": "Manu with wife practices eight-syllable worship1,000divineyears; hymn’s four arms/mouse/SiddhiBuddhi attributes kept source-local. Firm devotion free from delusion, creation-capacity, righteous rule, long protection of subjects, desired success and residence with devotees requested and assented to. No extra mortality immunity or unspoken son promise.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-manu-kardama-yajna-family",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "mud4-e-manu-family-kardama-kapila-yajna"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2"
+          ],
+          "locators": [
+            "Mudgala2.6.1–15"
+          ],
+          "finding": "Manu/Śatarūpā two named sons and three named daughters arise explicitly sexually; spouses assigned directly. Kardama pleases Viṣṇu100years and asks him as son; Kapila birth through Devahūti fulfills it. Ruci/Ākūti Yajña–Dakṣiṇā twins explicitly mental-origin; Yajña fathers12Yāmas through Dakṣiṇā. Four-armed jeweled image worship/yoga grant, Heramba japa and teaching disciples are explicit, without imported adoption.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-daksha-genealogy-distinct-contexts",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "mud4-e-dharma-daughter-lineage",
+            "mud4-e-remaining-daughters-marriages",
+            "mud4-e-marici-pulaha-atri-lines",
+            "mud4-e-pitrs-mena-mountain-lines"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2"
+          ],
+          "locators": [
+            "Mudgala2.6.16–23,29–34,37–42,53–58"
+          ],
+          "finding": "Twenty-four Prasūti/Dakṣa daughters split13Dharma wives and11other marriages. Satī/Rudra Kārttikeya, Khyāti/Bhṛgu Lakṣmī, Atri/Anasūyā divine sons and Pitṛ/Svadhā Menā/Dharaṇī are source-declared contexts, not normalized from familiar accounts. Menā/Himavat Ganga and Parvati both obtain Śiva as husband; Satī’s parent-tapas daughterhood is a separate rebirth motif.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-genealogy-ambiguities",
+          "status": "SUPPORTED_WITH_RETAINED_GAPS",
+          "evidence_ids": [
+            "mud4-e-meru-descendant-pair",
+            "mud4-e-ayoni-agastya-identity",
+            "mud4-e-angiras-pulastya-kratu-vasistha-lines",
+            "mud4-e-vedana-vena-reading"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2"
+          ],
+          "locators": [
+            "Mudgala2.6.26–27,35–36,43–48"
+          ],
+          "finding": "Vedanā/Venā spelling, individual A yati/Niyati→Dhātṛ/Vidhātṛ→Mṛkaṇḍa/Prāṇa allocation, Ayoni/Agastya/Devabāhu referents and Vasiṣṭha child-group naming remain uncertain. Verified pair/group statements do not license individual parent assignment, silent emendation or forced gender. Chapter6 and whole-genealogy arc remain PARTIAL.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-moksa-laksmi-counterfactual",
+          "status": "SUPPORTED_WITH_RETAINED_GAPS",
+          "evidence_ids": [
+            "mud4-e-datta-withdrawal",
+            "mud4-e-moksa-battle",
+            "mud4-e-moksa-arrival-reading",
+            "mud4-e-moksa-bhoga-explanation"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2"
+          ],
+          "locators": [
+            "Mudgala2.7.25–55"
+          ],
+          "finding": "Datta’s manifest Mokṣalakṣmī/wine withdrawal stratagem precedes battle. Printed surā arriving group remains uncertain; later demons explicitly seize/carry goddess on heads. Feet-position victory is counterfactual; radiance loss, gods’ pressure and Pātāla flight precede goddess disappearance. Moral/yogic explanation is attributed, not a universal physical contact rule or observed wholesale killing. Battle spine remains PARTIAL.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-datta-atrimantra-practice",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "mud4-e-atri-mind-siddhi-initiation",
+            "mud4-e-datta-ganga-vision-hymn"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2"
+          ],
+          "locators": [
+            "Mudgala2.8.37–65"
+          ],
+          "finding": "Atri’s fivefold mind/Siddhi/reflection and sovereignty teaching is an attributed doctrine. He gives son Datta a one-syllable mantra; Datta worships on Gaṅgā SOUTH bank, gains peace after ONE YEAR, then Gaṇeśa visits freely. Hymn and dance/embrace precede declaration. No north-bank reversal, divine-year unit or demanded physical immunity.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-datta-grants-installation",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "mud4-e-vijnana-ganesa-grants",
+            "mud4-e-datta-self-offering-installation"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2"
+          ],
+          "locators": [
+            "Mudgala2.8.66–86"
+          ],
+          "finding": "Gaṇeśa freely declares full peace/nondivision, perpetual local presence, Vijñānakṣetra/Vijñānagaṇapa, sight/residence benefits, Śiva friendship and hymn fruits; no separately spoken requested boon. Datta’s self-offering follows disappearance; Vijñāneśvara Śiva embraces him and leads installation with Brahmins on SOUTH Gaṅgā bank. Jyeṣṭha bright fourth is explicit. Spiritual nondifference is not a biographical actor-ID merger.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-durvasas-priyavrata-duty",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "mud4-e-durvasas-peace",
+            "mud4-e-priyavrata-duties",
+            "mud4-e-priyavrata-ganesa-initiation"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2"
+          ],
+          "locators": [
+            "Mudgala2.9.1–37"
+          ],
+          "finding": "Atri teaches Durvāsas peace; after Gaṇeśa meditation he is explicitly anger-free in this account. Elder son Priyavrata receives Nārada’s return-to-rule counsel: divine/ancestral/HUMAN debts through sacrifice/śrāddha/procreation, then sons’ installation before retirement. Do not replace human debt with remembered ṛṣi debt. Nārada’s Guṇeśa/five-deity/Brahmā genealogy remains cosmological attribution. One-syllable initiation and desired easiness are taught, not a newly observed unlimited-war boon.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-priyavrata-sons-appointments",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "mud4-e-priyavrata-sons-retirement"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2"
+          ],
+          "locators": [
+            "Mudgala2.10.1–9"
+          ],
+          "finding": "Ten named sons include Kavi/Savana/Vīra declining kingship. Other seven receive the seven explicitly matched islands; no alternate familiar ruler roster substituted. Priyavrata retires to forest and yoga through Nārada, ends Gaṇeśa-formed. Scoped succession arc excludes the unresolved later outer-island naming inventory.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-trees-petition-and-refusal",
+          "status": "SUPPORTED_WITH_RETAINED_GAPS",
+          "evidence_ids": [
+            "gkr4-e-sages-vision-hymn",
+            "gkr4-e-trees-request-alternative",
+            "gkr4-e-tree-benefits",
+            "gkr4-e-aurava-fire-saunaka",
+            "gkr4-e-aurava-review"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-krida"
+          ],
+          "locators": [
+            "Krīḍā35.1–36"
+          ],
+          "finding": "Lion-riding ten-arm vision and stated hymn practices are distinct from the Mandāra-root installed image. Śamikā/Aurava and Mandāra/Dhaumya relationships and Śaunaka discipleship are directly stated in recalled petition. Restoration is requested but refused because the devotee’s words must remain true; abiding at both plants and offering substitutions are granted instead.31 heaven/body abandonment and32 Śamīgarbha/fire description are retained without a guessed temporal repair.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-durasada-parent-guru-boon",
+          "status": "SUPPORTED_WITH_RETAINED_GAPS",
+          "evidence_ids": [
+            "gkr4-e-durasada-tapas-vision",
+            "gkr4-e-durasada-request-grant",
+            "gkr4-e-creation-number-review"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-krida"
+          ],
+          "locators": [
+            "Krīḍā38.23–26,41–63"
+          ],
+          "finding": "Bhasmāsura father, Śukra five-syllable initiation and1,000DIVINE-year severe tapas are explicit. Requested birth-class immunity is broader than the explicitly stated safety from gods except Śakti. Her radiance-born conqueror will keep the demon living beneath a foot; removal permits renewed three-world conquest. Devotion/remembrance granted.21,000 and84lakhs creation wording remains unresolved, and keeps the whole chapter PARTIAL.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-vakratunda-radiance-lion",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "gkr4-e-vakra-radiance-emergence"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-krida"
+          ],
+          "locators": [
+            "Krīḍā40.29–44"
+          ],
+          "finding": "Radiance is emitted from Pārvatī’s mouth, nose and eyes; ten arms/ten weapons are stated but this range does not enumerate the held weapons. Snake thread and ornaments are retained. She gives her own lion and names Vakratunda. Maternal/source embodiment language is not biological pregnancy. Her forecast of death is preserved as speech and does not override the eventual living restraint.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-durasada-first-combat",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "gkr4-e-vakra-accepts-mission",
+            "gkr4-e-axe-sword-wrestling"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-krida"
+          ],
+          "locators": [
+            "Krīḍā41.1–34"
+          ],
+          "finding": "Mission acceptance/lion march precede the surrender ultimatum. Axe fails against the demon’s heart, goad blocks sword and axe shatters it into100pieces. Many-day wrestling ends in a forehead punch, split face and2muhūrta unconscious interval; the demon revives. Vināyaka returns to his army at day end; neither demon death nor an unspoken boon-negating strategy is supplied.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-durasada-counters-surrender",
+          "status": "SUPPORTED_WITH_RETAINED_GAPS",
+          "evidence_ids": [
+            "gkr4-e-astra-counters",
+            "gkr4-e-fiftysix-army-counter",
+            "gkr4-e-durasada-restraint-surrender",
+            "gkr4-e-astra-agency-review"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-krida"
+          ],
+          "locators": [
+            "Krīḍā42.1–36"
+          ],
+          "finding": "Fire→rain→wind→mountain→Raudra/Brahmāstra sequence is explicit. Exact manorbalāt and keśābhyāṃ are retained for review; no guessed mantra string or named cessation actor.56forms have4/6/10arms and lion/peacock/mouse mounts without forced allocation. Host casualties/surrender/flight lead to demon’s remembered Śakti exception and flight. Vakratunda refuses to kill a fleeing foe and honors the no-death grant; Virāṭa capture/foot on head, stationary gateway duty and wicked torment are explicit. Demon asks permanent foot presence and receives assent. Battle spine remains PARTIAL because earlier in-scope intervention agency is unresolved.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        },
+        {
+          "id": "root3-review-dhundhiraja-aftermath",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "evidence_ids": [
+            "gkr4-e-dhundhiraja-name-aftermath"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-krida"
+          ],
+          "locators": [
+            "Krīḍā43.1–14"
+          ],
+          "finding": "Restored offices and worship follow the living defeat. Dhundhi/search plus rāja etymology is narrated;56Vināyakas occupy seven enclosures with one five-faced at Viśveśvara’s gate. The text does not enumerate all56names here. Divodāsa is introduced as the next account; no outcome from unread/unextracted later chapters is counted as finished.",
+          "limitation": "Only the stated claims sampled. Not every dependent record field, complete chapter extraction or another print witness is independently certified."
+        }
+      ],
+      "limitations": [
+        "No alternate print recension collation completed.",
+        "Reading a body is not certification that its entire graph extraction is complete.",
+        "Significant unresolved source meanings keep affected scope PARTIAL."
+      ]
+    }
+  ],
+  "limits": "Targeted sample review of primary witnesses, not independent certification of all assertions, doctrinal interpretation or print recensions. Earlier review files and resolutions remain intact."
+}

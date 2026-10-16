@@ -1,0 +1,89 @@
+{
+  "review_id": "continuation5-root-boon-duration-finding",
+  "reviewer": "Root; independently read wholeMudgala2.23.1–34",
+  "compared_patch_sha256": "da41addc535152e0763413ed2e8fceb7d028750ed86f3c0f0e8f4aa363598c63",
+  "findings": [
+    {
+      "id": "rfix5-finding-dhruva-tapas-duration",
+      "status": "CORRECTION_RECOMMENDED",
+      "record_ids": [
+        "mud6-power-dhruva-visnu-grant"
+      ],
+      "records": [
+        {
+          "id": "mud6-power-dhruva-visnu-grant",
+          "type": "BOON",
+          "recipient_id": "mud5-en-dhruva",
+          "grantor_id": "mud-en-vishnu",
+          "worshipped_id": "mud-en-vishnu",
+          "later_event_ids": [],
+          "evidence_ids": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ],
+          "field_evidence": {
+            "recipient_id": [
+              "mud6-e-dhruva-family-visnu-tapas"
+            ],
+            "grantor_id": [
+              "mud6-e-dhruva-family-visnu-tapas"
+            ],
+            "worshipped_id": [
+              "mud6-e-dhruva-family-visnu-tapas"
+            ],
+            "austerity_or_circumstances": [
+              "mud6-e-dhruva-family-visnu-tapas"
+            ],
+            "duration": [
+              "mud6-e-dhruva-family-visnu-tapas"
+            ],
+            "granted": [
+              "mud6-e-dhruva-family-visnu-tapas"
+            ],
+            "notes": [
+              "mud6-e-dhruva-family-visnu-tapas"
+            ]
+          },
+          "verification_status": "VERIFIED",
+          "notes": "Request words not narrated; grant is explicit. Future abode separated from earthly return and later actual end.",
+          "motive": null,
+          "austerity_or_circumstances": "Nārada twelve-syllable initiation; Mathurā meditation and severe tapas.",
+          "requested": null,
+          "granted": "Undivided Earth kingship; at end heavenly kingship/Viṣṇu Dhruva-form abode(10).",
+          "mechanism": null,
+          "trigger": null,
+          "restrictions": null,
+          "duration": "1000 years of Viṣṇu tapas(9).",
+          "counter": null
+        }
+      ],
+      "source_locator": "Mudgala2.23.9–10",
+      "finding": "1000years in9 describe severe tapas before Viṣṇu visits;10 states rule grants without their duration. Current duration field assigns ascetic span to BOON duration.",
+      "suggested": {
+        "duration": null,
+        "austerity_or_circumstances": "Nārada’s twelve-syllable initiation; meditation in Mathurā and severe Viṣṇu tapas for 1,000 years (verse 9).",
+        "field_evidence": {
+          "recipient_id": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ],
+          "grantor_id": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ],
+          "worshipped_id": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ],
+          "austerity_or_circumstances": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ],
+          "granted": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ],
+          "notes": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ]
+        },
+        "notes": "Request words not narrated; grant is explicit. Future abode separated from earthly return and later actual end. The 1,000-year span is ascetic practice before the appearance, not a stated duration of the granted sovereignty or abode; grant duration is unstated."
+      }
+    }
+  ],
+  "limitations": "Single field-placement correction; site direction29/duration31 remain unresolved; does not certify wholeDhruva chapter."
+}

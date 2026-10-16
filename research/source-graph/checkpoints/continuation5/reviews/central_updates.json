@@ -1,0 +1,283 @@
+[
+  {
+    "table": "boons_and_powers",
+    "id": "mud6-power-dhruva-visnu-grant",
+    "fields": {
+      "duration": null,
+      "austerity_or_circumstances": "Nārada’s twelve-syllable initiation; meditation in Mathurā and severe Viṣṇu tapas for 1,000 years (verse 9).",
+      "field_evidence": {
+        "recipient_id": [
+          "mud6-e-dhruva-family-visnu-tapas"
+        ],
+        "grantor_id": [
+          "mud6-e-dhruva-family-visnu-tapas"
+        ],
+        "worshipped_id": [
+          "mud6-e-dhruva-family-visnu-tapas"
+        ],
+        "austerity_or_circumstances": [
+          "mud6-e-dhruva-family-visnu-tapas"
+        ],
+        "granted": [
+          "mud6-e-dhruva-family-visnu-tapas"
+        ],
+        "notes": [
+          "mud6-e-dhruva-family-visnu-tapas"
+        ]
+      },
+      "notes": "Request words not narrated; grant is explicit. Future abode separated from earthly return and later actual end. The 1,000-year span is ascetic practice before the appearance, not a stated duration of the granted sovereignty or abode; grant duration is unstated."
+    },
+    "reason": "Independent source-role correction: move explicit tapas duration into austerity circumstances and leave unstated boon duration null. Source23.9 precedes grant23.10.",
+    "evidence_ids": [
+      "mud6-e-dhruva-family-visnu-tapas"
+    ]
+  },
+  {
+    "table": "queue",
+    "id": "gup6-queue-next",
+    "fields": {
+      "passage_target": "Upāsanā81.1 formal extraction resumes here. Root has read81.1–14 and15a without extraction;15b onward through92 remains unread. Extract the whole inherited read-only fragment before further source-order reading.",
+      "reason": "Author freeze stopped at80; root bounded reconnaissance extends the81 preview. The92-chapter witness remains unfinished."
+    },
+    "reason": "Reconcile the active handoff with independently read root81 fragment; retain task ID, no completeness claim.",
+    "evidence_ids": []
+  },
+  {
+    "table": "evidence",
+    "id": "mud6-e-prthu-peace-request",
+    "fields": {
+      "paraphrase": "Pleased by humility, Kumāras say they desire no task and are naked, have come because they heard king’s fame in heaven, and ask permission to return Brahmaloka. Pṛthu says he has enjoyed kingdom/varied pleasures and now asks yoga for peace. Recognizing qualification/disenchantment, they teach that full Gaṇeśa yoga-peace is to be worshipped with great devotion for peace. This is teacher exchange, not a direct new Gaṇeśa appearance."
+    },
+    "reason": "Independent whole2.25 review: nagnāḥ explicitly means naked; absence of all possessions was an unsupported expansion. Preserve dialogue and role context.",
+    "evidence_ids": [
+      "mud6-e-prthu-peace-request"
+    ]
+  },
+  {
+    "table": "narrative_events",
+    "id": "mud6-event-prthu-peace-request",
+    "fields": {
+      "details": "Pleased by humility, Kumāras say they desire no task and are naked, have come because they heard king’s fame in heaven, and ask permission to return Brahmaloka. Pṛthu says he has enjoyed kingdom/varied pleasures and now asks yoga for peace. Recognizing qualification/disenchantment, they teach that full Gaṇeśa yoga-peace is to be worshipped with great devotion for peace. This is teacher exchange, not a direct new Gaṇeśa appearance."
+    },
+    "reason": "Independent whole2.25 review: nagnāḥ explicitly means naked; absence of all possessions was an unsupported expansion. Preserve dialogue and role context.",
+    "evidence_ids": [
+      "mud6-e-prthu-peace-request"
+    ]
+  },
+  {
+    "table": "evidence",
+    "id": "mud6-e-child-hymn-promises-kumaras-return",
+    "fields": {
+      "paraphrase": "Kumāras fall silent/prostrate; devotion-bound child Vināyaka says hymn gives yoga-peace to readers/hearers and he will give the desired object while himself moved by the hymn; Kumāras will become Gaṇapatyas like Śiva. No request words or Pṛthu-directed boon here. Child then plays with children like ordinary child. Kumāras visit Kāśī king, are honored, eat and return to their place. They conclude Pṛthu should worship Gaṇeśa as full peace-knowledge."
+    },
+    "reason": "Independent whole2.25 review: first-person dāsyāmi stotrabhāvitaḥ describes Vināyaka as hymn-moved giver, not a reader eligibility condition.",
+    "evidence_ids": [
+      "mud6-e-child-hymn-promises-kumaras-return"
+    ]
+  },
+  {
+    "table": "narrative_events",
+    "id": "mud6-event-child-hymn-promises-kumaras-return",
+    "fields": {
+      "details": "Kumāras fall silent/prostrate; devotion-bound child Vināyaka says hymn gives yoga-peace to readers/hearers and he will give the desired object while himself moved by the hymn; Kumāras will become Gaṇapatyas like Śiva. No request words or Pṛthu-directed boon here. Child then plays with children like ordinary child. Kumāras visit Kāśī king, are honored, eat and return to their place. They conclude Pṛthu should worship Gaṇeśa as full peace-knowledge."
+    },
+    "reason": "Independent whole2.25 review: first-person dāsyāmi stotrabhāvitaḥ describes Vināyaka as hymn-moved giver, not a reader eligibility condition.",
+    "evidence_ids": [
+      "mud6-e-child-hymn-promises-kumaras-return"
+    ]
+  },
+  {
+    "table": "boons_and_powers",
+    "id": "mud6-power-kumaras-child-hymn-benefits",
+    "fields": {
+      "trigger": "Reading or hearing the hymn (verse 57).",
+      "mechanism": "Vināyaka promises the desired object while himself moved by the hymn (verse 58).",
+      "field_evidence": {
+        "recipient_id": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "grantor_id": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "trigger": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "granted": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "notes": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "mechanism": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ]
+      },
+      "notes": "Vināyaka speech in recollection, not Pṛthu request/new king apparition. The deity’s hymn-moved state is not an additional emotional requirement imposed on readers or hearers."
+    },
+    "reason": "Independent peer/root correction of giver versus reader attribution in2.25.57–58; remove unsupported reader emotional trigger.",
+    "evidence_ids": [
+      "mud6-e-child-hymn-promises-kumaras-return"
+    ]
+  },
+  {
+    "table": "boons_and_powers",
+    "id": "gup6-power-003",
+    "fields": {
+      "austerity_or_circumstances": "The boy repeats his guru’s mantra, meditates on Gaṇeśa with firm dedication, and performs twelve years of air-only, foodless tapas in a deserted forest before the deity offers a boon (73.1–6).",
+      "duration": null,
+      "evidence_ids": [
+        "gup6-e-008"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup6-e-009"
+        ],
+        "grantor_id": [
+          "gup6-e-009",
+          "gup6-e-008",
+          "gup6-e-010"
+        ],
+        "worshipped_id": [
+          "gup6-e-009"
+        ],
+        "motive": [
+          "gup6-e-009"
+        ],
+        "requested": [
+          "gup6-e-009"
+        ],
+        "granted": [
+          "gup6-e-010"
+        ],
+        "mechanism": [
+          "gup6-e-010"
+        ],
+        "austerity_or_circumstances": [
+          "gup6-e-008"
+        ],
+        "later_event_ids": [
+          "gup6-e-010"
+        ]
+      },
+      "notes": "Personal boon invitation and requests; the actual bodily response is separately evidenced at73.10–12. No explicit verbal assent to the devotion request is supplied. Twelve years describe austerity before the boon, not duration of its granted bodily form. The precise nirvāṇam condition at73.3 remains under review separately."
+    },
+    "reason": "Independent peer/root review: fill previously null circumstances from explicit73.1–6, preserve twelve-year datum as austerity rather than grant duration, and replace a stale prospective evidence note.",
+    "evidence_ids": [
+      "gup6-e-008",
+      "gup6-e-009",
+      "gup6-e-010"
+    ]
+  },
+  {
+    "table": "queue",
+    "id": "gup-queue-next",
+    "fields": {
+      "passage_target": "Upāsanā81.1 formal extraction resumes here. Root has read81.1–14 and15a without extraction;15b onward through92 remains unread. Extract the whole inherited read-only fragment before further source-order reading.",
+      "task": "Resume formal source-order extraction at81.1 using gup6-queue-next. Do not duplicate72–80 extracted units; retain every earlier semantic and print-collation gap.",
+      "dependency_ids": [
+        "gup6-queue-next"
+      ],
+      "reason": "Earlier broad forward queue coalesced to current81.1 handoff; the whole witness and all precise unresolved gaps remain unfinished."
+    },
+    "reason": "Reconcile retained legacy forward task with current81 read-only bounds; preserve ID/status/priority and all semantic queues.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gup2-queue-next",
+    "fields": {
+      "passage_target": "Upāsanā81.1 formal extraction resumes here. Root has read81.1–14 and15a without extraction;15b onward through92 remains unread. Extract the whole inherited read-only fragment before further source-order reading.",
+      "task": "Resume formal source-order extraction at81.1 using gup6-queue-next. Do not duplicate72–80 extracted units; retain every earlier semantic and print-collation gap.",
+      "dependency_ids": [
+        "gup6-queue-next"
+      ],
+      "reason": "Earlier broad forward queue coalesced to current81.1 handoff; the whole witness and all precise unresolved gaps remain unfinished."
+    },
+    "reason": "Reconcile retained legacy forward task with current81 read-only bounds; preserve ID/status/priority and all semantic queues.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gup3-queue-next",
+    "fields": {
+      "passage_target": "Upāsanā81.1 formal extraction resumes here. Root has read81.1–14 and15a without extraction;15b onward through92 remains unread. Extract the whole inherited read-only fragment before further source-order reading.",
+      "task": "Resume formal source-order extraction at81.1 using gup6-queue-next. Do not duplicate72–80 extracted units; retain every earlier semantic and print-collation gap.",
+      "dependency_ids": [
+        "gup6-queue-next"
+      ],
+      "reason": "Earlier broad forward queue coalesced to current81.1 handoff; the whole witness and all precise unresolved gaps remain unfinished."
+    },
+    "reason": "Reconcile retained legacy forward task with current81 read-only bounds; preserve ID/status/priority and all semantic queues.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gup4-queue-next",
+    "fields": {
+      "passage_target": "Upāsanā81.1 formal extraction resumes here. Root has read81.1–14 and15a without extraction;15b onward through92 remains unread. Extract the whole inherited read-only fragment before further source-order reading.",
+      "task": "Resume formal source-order extraction at81.1 using gup6-queue-next. Do not duplicate72–80 extracted units; retain every earlier semantic and print-collation gap.",
+      "dependency_ids": [
+        "gup6-queue-next"
+      ],
+      "reason": "Earlier broad forward queue coalesced to current81.1 handoff; the whole witness and all precise unresolved gaps remain unfinished."
+    },
+    "reason": "Reconcile retained legacy forward task with current81 read-only bounds; preserve ID/status/priority and all semantic queues.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gup5-queue-next",
+    "fields": {
+      "passage_target": "Upāsanā81.1 formal extraction resumes here. Root has read81.1–14 and15a without extraction;15b onward through92 remains unread. Extract the whole inherited read-only fragment before further source-order reading.",
+      "task": "Resume formal source-order extraction at81.1 using gup6-queue-next. Do not duplicate72–80 extracted units; retain every earlier semantic and print-collation gap.",
+      "dependency_ids": [
+        "gup6-queue-next"
+      ],
+      "reason": "Earlier broad forward queue coalesced to current81.1 handoff; the whole witness and all precise unresolved gaps remain unfinished."
+    },
+    "reason": "Reconcile retained legacy forward task with current81 read-only bounds; preserve ID/status/priority and all semantic queues.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "rmd2-q-next",
+    "fields": {
+      "passage_target": "2.27.1 onward; khanda2 remainder and khandas3–9 as current registry;2.27.1–11 root-read-only and unextracted. Earlier first/second-khaṇḍa semantic gaps retained.",
+      "task": "Resume formal source-order reading/extraction at2.27.1 via mud6-q-next; do not duplicate19–26. Retain first-khaṇḍa residual-language tasks and all other exact semantic queues.",
+      "dependency_ids": [
+        "mud6-q-next"
+      ],
+      "reason": "Earlier broad forward queue advanced beyond the now-read19–26 tranche without implying source completion."
+    },
+    "reason": "Reconcile retained legacy Mudgala handoff with current2.27 source order; no old gap erased or unread later khaṇḍa marked complete.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "mud2-queue-kh2-next",
+    "fields": {
+      "passage_target": "2.27.1 onward; khanda2 remainder and khandas3–9 as current registry;2.27.1–11 root-read-only and unextracted. Earlier first/second-khaṇḍa semantic gaps retained.",
+      "task": "Resume formal source-order reading/extraction at2.27.1 via mud6-q-next; do not duplicate19–26. Retain first-khaṇḍa residual-language tasks and all other exact semantic queues.",
+      "dependency_ids": [
+        "mud6-q-next"
+      ],
+      "reason": "Earlier broad forward queue advanced beyond the now-read19–26 tranche without implying source completion."
+    },
+    "reason": "Reconcile retained legacy Mudgala handoff with current2.27 source order; no old gap erased or unread later khaṇḍa marked complete.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "mud3-queue-forward-handoff",
+    "fields": {
+      "passage_target": "2.27.1 onward; khanda2 remainder and khandas3–9 as current registry;2.27.1–11 root-read-only and unextracted. Earlier first/second-khaṇḍa semantic gaps retained.",
+      "task": "Resume formal source-order reading/extraction at2.27.1 via mud6-q-next; do not duplicate19–26. Retain first-khaṇḍa residual-language tasks and all other exact semantic queues.",
+      "dependency_ids": [
+        "mud6-q-next"
+      ],
+      "reason": "Earlier broad forward queue advanced beyond the now-read19–26 tranche without implying source completion."
+    },
+    "reason": "Reconcile retained legacy Mudgala handoff with current2.27 source order; no old gap erased or unread later khaṇḍa marked complete.",
+    "evidence_ids": []
+  }
+]

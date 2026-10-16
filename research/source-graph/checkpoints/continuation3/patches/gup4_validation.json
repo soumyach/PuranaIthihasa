@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "scope": "Structural validation; does not establish textual truth or exhaustive extraction.",
+  "patch_counts": {
+    "passages": 63,
+    "evidence": 63,
+    "entities": 116,
+    "assertions": 66,
+    "relationships": 54,
+    "boons_and_powers": 35,
+    "narrative_events": 62,
+    "story_spines": 9,
+    "variants_and_conflicts": 7
+  },
+  "new_chapter_states": {
+    "PARTIAL": 5,
+    "COMPLETE": 5
+  }
+}

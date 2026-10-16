@@ -1,0 +1,296 @@
+{
+  "story": {
+    "id": "dbx-story-durgama",
+    "title": "Durgama, Śatākṣī and Śākambharī",
+    "source_id": "cat-devibhagavata",
+    "witness_id": "cat-devibhagavata-witness",
+    "scope": "Devī Bhāgavata7.28.1–83, drought through Vedas’ return",
+    "event_ids": [
+      "dbx-event-durgama-tapas",
+      "dbx-event-durgama-drought",
+      "dbx-event-sataksi-food",
+      "dbx-event-durgama-confront",
+      "dbx-event-durgama-defeat",
+      "dbx-event-durgama-return"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Bounded narrative chronology checked against whole cited English body; no exhaustive Sanskrit atomic completeness or other recension equivalence claimed.",
+    "missing_sections": [],
+    "editorial_notes": "Translation narrator statements and attributed dialogue distinguished. No remembered details added; unknown spouse/mother/guru fields remain unstated."
+  },
+  "events": [
+    {
+      "id": "dbx-event-durgama-tapas",
+      "source_id": "cat-devibhagavata",
+      "witness_id": "cat-devibhagavata-witness",
+      "supporting_witness_ids": [
+        "cat-devibhagavata-witness"
+      ],
+      "story_id": "dbx-story-durgama",
+      "sequence": 1,
+      "passage_ids": [
+        "dbx-p-durgama-origin"
+      ],
+      "participants": [
+        "dbx-ent-durgama",
+        "dbx-ent-ruru",
+        "dbx-ent-brahma",
+        "dbx-ent-vedas"
+      ],
+      "setting": null,
+      "cause": null,
+      "details": "Vyāsa answers Janamejaya: Ruru’s son Durgama, of Hiraṇyākṣa’s family, plans to obtain Vedas so gods lose offerings. He worships Brahmā in the Himalaya for1,000years on air. Brahmā offers a boon; Durgama requests all Vedic mantras of gods/Brahmins and conquering strength; Brahmā agrees.",
+      "outcome": "Brahmins forget Vedas and Vedic rites cease.",
+      "changed_relationship_ids": [],
+      "introduced_entity_ids": [],
+      "introduced_power_ids": [
+        "dbx-power-durgama"
+      ],
+      "consequences": [],
+      "evidence_ids": [
+        "dbx-e-durgama-origin"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "dbx-event-durgama-drought",
+      "source_id": "cat-devibhagavata",
+      "witness_id": "cat-devibhagavata-witness",
+      "supporting_witness_ids": [
+        "cat-devibhagavata-witness"
+      ],
+      "story_id": "dbx-story-durgama",
+      "sequence": 2,
+      "passage_ids": [
+        "dbx-p-durgama-origin"
+      ],
+      "participants": [
+        "dbx-ent-durgama",
+        "dbx-ent-gods",
+        "dbx-ent-brahmins"
+      ],
+      "setting": null,
+      "cause": null,
+      "details": "Without Vedic rites gods weaken. Durgama attacks Amarāvatī; gods flee into Sumeru caves. Rain ceases for100years, drying water and killing people and animals. Brahmins fast and pray to the Mother in the Himalaya.",
+      "outcome": "The Goddess answers the petition.",
+      "changed_relationship_ids": [],
+      "introduced_entity_ids": [],
+      "introduced_power_ids": [],
+      "consequences": [],
+      "evidence_ids": [
+        "dbx-e-durgama-origin"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "dbx-event-sataksi-food",
+      "source_id": "cat-devibhagavata",
+      "witness_id": "cat-devibhagavata-witness",
+      "supporting_witness_ids": [
+        "cat-devibhagavata-witness"
+      ],
+      "story_id": "dbx-story-durgama",
+      "sequence": 3,
+      "passage_ids": [
+        "dbx-p-durgama-origin",
+        "dbx-p-durgama-battle"
+      ],
+      "participants": [
+        "dbx-ent-goddess",
+        "dbx-ent-sataksi",
+        "dbx-ent-brahmins",
+        "dbx-ent-gods"
+      ],
+      "setting": null,
+      "cause": null,
+      "details": "The Goddess appears with innumerable eyes and four arms holding bow, arrows, lotus and food. She weeps for nine nights, restoring water; many-eyed Śatākṣī distributes vegetables, roots and fruits until crops return, and grass for animals, receiving the designation Śākambharī.",
+      "outcome": "Famine relief precedes the battle.",
+      "changed_relationship_ids": [],
+      "introduced_entity_ids": [],
+      "introduced_power_ids": [
+        "dbx-power-sataksi-rain"
+      ],
+      "consequences": [],
+      "evidence_ids": [
+        "dbx-e-durgama-origin",
+        "dbx-e-durgama-battle"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "dbx-event-durgama-confront",
+      "source_id": "cat-devibhagavata",
+      "witness_id": "cat-devibhagavata-witness",
+      "supporting_witness_ids": [
+        "cat-devibhagavata-witness"
+      ],
+      "story_id": "dbx-story-durgama",
+      "sequence": 4,
+      "passage_ids": [
+        "dbx-p-durgama-battle"
+      ],
+      "participants": [
+        "dbx-ent-durgama",
+        "dbx-ent-durgama-army",
+        "dbx-ent-goddess",
+        "dbx-ent-gods",
+        "dbx-ent-brahmins",
+        "dbx-ent-durgama-shakti-1",
+        "dbx-ent-durgama-shakti-2",
+        "dbx-ent-durgama-shakti-3",
+        "dbx-ent-durgama-shakti-4",
+        "dbx-ent-durgama-shakti-5",
+        "dbx-ent-durgama-shakti-6",
+        "dbx-ent-durgama-shakti-7",
+        "dbx-ent-durgama-shakti-8",
+        "dbx-ent-durgama-shakti-9",
+        "dbx-ent-durgama-shakti-10",
+        "dbx-ent-durgama-shakti-11",
+        "dbx-ent-durgama-shakti-12",
+        "dbx-ent-durgama-shakti-13",
+        "dbx-ent-durgama-shakti-14",
+        "dbx-ent-durgama-shakti-hosts"
+      ],
+      "setting": null,
+      "cause": null,
+      "details": "Messengers tell Durgama of the rescue; he surrounds the defenders with1,000akṣauhiṇīs. A luminous enclosure protects gods and Brahmins while the Goddess fights outside. Arrow clouds darken the sky; frictional fire illuminates it. Fourteen named Śaktis,10,000Guhya Kālikās, groups of32and64and innumerable others emerge and fight.",
+      "outcome": "After the Śaktis destroy100akṣauhiṇīs, instruments sound and Durgama first confronts them; ten days of fighting destroy all his troops.",
+      "changed_relationship_ids": [],
+      "introduced_entity_ids": [],
+      "introduced_power_ids": [
+        "dbx-power-luminous-defense"
+      ],
+      "consequences": [],
+      "evidence_ids": [
+        "dbx-e-durgama-battle"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "dbx-event-durgama-defeat",
+      "source_id": "cat-devibhagavata",
+      "witness_id": "cat-devibhagavata-witness",
+      "supporting_witness_ids": [
+        "cat-devibhagavata-witness"
+      ],
+      "story_id": "dbx-story-durgama",
+      "sequence": 5,
+      "passage_ids": [
+        "dbx-p-durgama-battle"
+      ],
+      "participants": [
+        "dbx-ent-durgama",
+        "dbx-ent-goddess",
+        "dbx-ent-durgama-shakti-1",
+        "dbx-ent-durgama-shakti-2",
+        "dbx-ent-durgama-shakti-3",
+        "dbx-ent-durgama-shakti-4",
+        "dbx-ent-durgama-shakti-5",
+        "dbx-ent-durgama-shakti-6",
+        "dbx-ent-durgama-shakti-7",
+        "dbx-ent-durgama-shakti-8",
+        "dbx-ent-durgama-shakti-9",
+        "dbx-ent-durgama-shakti-10",
+        "dbx-ent-durgama-shakti-11",
+        "dbx-ent-durgama-shakti-12",
+        "dbx-ent-durgama-shakti-13",
+        "dbx-ent-durgama-shakti-14"
+      ],
+      "setting": null,
+      "cause": null,
+      "details": "On day11 red-clothed Durgama advances in his chariot, overcomes Śaktis and faces the Goddess for two praharas. Her15arrows strike four horses, charioteer, two eyes, two arms, flag, and five strike his heart. He vomits blood and dies; his luminosity merges into the Goddess.",
+      "outcome": "Durgama dies; this is no surrender.",
+      "changed_relationship_ids": [],
+      "introduced_entity_ids": [],
+      "introduced_power_ids": [],
+      "consequences": [],
+      "evidence_ids": [
+        "dbx-e-durgama-battle"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "dbx-event-durgama-return",
+      "source_id": "cat-devibhagavata",
+      "witness_id": "cat-devibhagavata-witness",
+      "supporting_witness_ids": [
+        "cat-devibhagavata-witness"
+      ],
+      "story_id": "dbx-story-durgama",
+      "sequence": 6,
+      "passage_ids": [
+        "dbx-p-durgama-outcome",
+        "dbx-p-durgama-origin"
+      ],
+      "participants": [
+        "dbx-ent-goddess",
+        "dbx-ent-gods",
+        "dbx-ent-brahmins",
+        "dbx-ent-vedas"
+      ],
+      "setting": null,
+      "cause": null,
+      "details": "Gods including Brahmā, Viṣṇu and Śiva praise the victor. She hands the Vedas to the Brahmins and instructs that they be guarded as parts of her body. She connects Durgā with killing Durgama and names Durgā/Śatākṣī remembrance as liberating from Māyā; the many-eye naming explanation occurred earlier. She enjoins both Suras and Asuras to serve her alone and read her deeds, then disappears. Vyāsa directs secrecy for this mystery and promises daily devoted hearing fulfills wishes and ends in honor in Devī Loka.",
+      "outcome": "Vedic possession restored; story closes.",
+      "changed_relationship_ids": [],
+      "introduced_entity_ids": [],
+      "introduced_power_ids": [],
+      "consequences": [],
+      "evidence_ids": [
+        "dbx-e-durgama-outcome",
+        "dbx-e-durgama-origin"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "resume_queue": [
+    {
+      "id": "dbx-queue-durgama-collation",
+      "source_id": "cat-devibhagavata",
+      "passage_target": [
+        "7.28"
+      ],
+      "task": "Independent Sanskrit verification of Durgama boon mechanics,14manifestation spellings,15arrow arithmetic and Vedas return.",
+      "priority": "P1",
+      "status": "PENDING",
+      "dependency_ids": [],
+      "reason": "Targeted sections authorized by user; exact remaining scope retained."
+    },
+    {
+      "id": "dbx-queue-bhramari-collation",
+      "source_id": "cat-devibhagavata",
+      "passage_target": [
+        "10.13"
+      ],
+      "task": "Extract1–32six-Manu frame; collate revised boon categories and Gāyatrī cessation strategy in Sanskrit; review swarm outcome.",
+      "priority": "P1",
+      "status": "PENDING",
+      "dependency_ids": [],
+      "reason": "Targeted sections authorized by user; exact remaining scope retained."
+    },
+    {
+      "id": "dbx-queue-gita-resume",
+      "source_id": "cat-devibhagavata",
+      "passage_target": [
+        "7.31–40"
+      ],
+      "task": "Finish predicates31–32; next unread33then sequentially through40; no doctrine inferred from headings.",
+      "priority": "P1",
+      "status": "PENDING",
+      "dependency_ids": [],
+      "reason": "Targeted sections authorized by user; exact remaining scope retained."
+    },
+    {
+      "id": "dbx-queue-manidvipa-resume",
+      "source_id": "cat-devibhagavata",
+      "passage_target": [
+        "12.10–12"
+      ],
+      "task": "Extract read10.21–100before body reading11then12; distinguish seasonal spouses, śaktis and cosmic directional protectors.",
+      "priority": "P1",
+      "status": "PENDING",
+      "dependency_ids": [],
+      "reason": "Targeted sections authorized by user; exact remaining scope retained."
+    }
+  ]
+}

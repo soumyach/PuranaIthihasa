@@ -1,0 +1,1860 @@
+[
+  {
+    "id": "dm-variant-aruna",
+    "type": "EDITION_OR_TRANSLATION_VARIANT",
+    "description": "Pargiter main text Aruṇākṣa; its footnote gives Bombay Aruṇākhya. SanskritDocuments DM 11.52 reads Aruṇākhya, meaning named Aruṇa.",
+    "source_ids": [
+      "dm-source"
+    ],
+    "evidence_ids": [
+      "dm-evidence-056",
+      "dm-sanskrit-evidence-056"
+    ],
+    "status": "RETAINED_WITNESS_DIFFERENCE",
+    "resolution": null
+  },
+  {
+    "id": "dm-variant-chapter-map",
+    "type": "EDITION_OR_TRANSLATION_VARIANT",
+    "description": "Wisdomlib index prose labels DM as chapters 82–92; actual linked chapter heading and narrative boundaries are 81–93. Catalogue uses linked headings.",
+    "source_ids": [
+      "dm-source"
+    ],
+    "evidence_ids": [
+      "dm-evidence-001"
+    ],
+    "status": "RESOLVED_WITH_ACCESSIBLE_HEADINGS",
+    "resolution": null
+  },
+  {
+    "id": "dm-variant-ditija",
+    "type": "KINSHIP_INTERPRETATION",
+    "description": "DM9.30 calls Niśumbha ditija; record textual Diti-descendant descriptor, not an independently narrated biological mother–son genealogy.",
+    "source_ids": [
+      "dm-source"
+    ],
+    "evidence_ids": [
+      "dm-evidence-045",
+      "dm-sanskrit-evidence-045"
+    ],
+    "status": "RETAINED_ATTRIBUTED_DESCRIPTOR",
+    "resolution": null
+  },
+  {
+    "id": "dm-variant-drought",
+    "type": "EDITION_OR_TRANSLATION_VARIANT",
+    "description": "Wisdomlib Pargiter display has corrupted rain/failure text and says heavy rain in the nourishment sentence; Sanskrit DM 11.46–48 explicitly says drought and nourishment until rain.",
+    "source_ids": [
+      "dm-source"
+    ],
+    "evidence_ids": [
+      "dm-evidence-054",
+      "dm-sanskrit-evidence-054"
+    ],
+    "status": "SANSKRIT_READING_RECORDED",
+    "resolution": null
+  },
+  {
+    "id": "dm-variant-durga-name",
+    "type": "EDITION_OR_TRANSLATION_VARIANT",
+    "description": "Sanskrit DM 11.50 explicitly announces Durgādevī after Durgama’s killing; the displayed Pargiter paragraph omits the name-sentence.",
+    "source_ids": [
+      "dm-source"
+    ],
+    "evidence_ids": [
+      "dm-evidence-054",
+      "dm-sanskrit-evidence-054"
+    ],
+    "status": "RETAINED_WITNESS_DIFFERENCE",
+    "resolution": null
+  },
+  {
+    "id": "dm-variant-extra-chiefs",
+    "type": "EDITION_OR_TRANSLATION_VARIANT",
+    "description": "Pargiter canto 83 footnote 2 reports Bombay additions killing Kāla, Ugradarśana and Asiloman. These are footnote-attested variants, excluded from main event order pending edition inspection.",
+    "source_ids": [
+      "dm-source"
+    ],
+    "evidence_ids": [
+      "dm-evidence-018",
+      "dm-sanskrit-evidence-018"
+    ],
+    "status": "OPEN_UNDERLYING_EDITION",
+    "resolution": null
+  },
+  {
+    "id": "dm-variant-jaghane",
+    "type": "EDITION_OR_TRANSLATION_VARIANT",
+    "description": "Pargiter’s killing sentence says heads and buttocks; Sanskrit has jaghane. Conventional thigh-position is not imposed until another reliable witness is inspected.",
+    "source_ids": [
+      "dm-source"
+    ],
+    "evidence_ids": [
+      "dm-evidence-007",
+      "dm-sanskrit-evidence-007"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "dm-variant-kalika-kali",
+    "type": "ENTITY_IDENTITY_CAUTION",
+    "description": "Pārvatī becoming Kālikā in ch5 and Kālī emanating from Ambikā in ch7 are separate source-scoped manifestation nodes; sameness not established by those scenes alone.",
+    "source_ids": [
+      "dm-source"
+    ],
+    "evidence_ids": [
+      "dm-evidence-033",
+      "dm-sanskrit-evidence-033"
+    ],
+    "status": "RETAINED_DISTINCT_MANIFESTATIONS",
+    "resolution": null
+  },
+  {
+    "id": "dm-variant-kola",
+    "type": "EDITION_OR_TRANSLATION_VARIANT",
+    "description": "Pargiter interprets Kolāvidhvaṃsin as non-destroyers of Kolas; other common retellings translate destroyers. No etymological conclusion imposed.",
+    "source_ids": [
+      "dm-source"
+    ],
+    "evidence_ids": [
+      "dm-evidence-001"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "dm-variant-maurya",
+    "type": "EDITION_OR_TRANSLATION_VARIANT",
+    "description": "Pargiter has Mauryas; SanskritDocuments DM 8.6 has Maurvas. Manuscript/print collation needed before standardizing the group-name.",
+    "source_ids": [
+      "dm-source"
+    ],
+    "evidence_ids": [
+      "dm-evidence-036",
+      "dm-sanskrit-evidence-036"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "dm-variant-reabsorption-body",
+    "type": "EDITION_OR_TRANSLATION_VARIANT",
+    "description": "Pargiter ch10 translates absorption into breasts; Sanskrit 10.6 says tanau, body. Graph records only absorption into Devī.",
+    "source_ids": [
+      "dm-source"
+    ],
+    "evidence_ids": [
+      "dm-evidence-047",
+      "dm-sanskrit-evidence-047"
+    ],
+    "status": "SANSKRIT_READING_RECORDED",
+    "resolution": null
+  },
+  {
+    "id": "dm-variant-shivaduti",
+    "type": "ENTITY_IDENTITY_CAUTION",
+    "description": "Ch8 emits Caṇḍikā’s Śakti named Śivadūtī; Pargiter ch9 note identifies Śivadūtī with Caṇḍikā. Main graph retains emanation, avoids silently collapsing entities.",
+    "source_ids": [
+      "dm-source"
+    ],
+    "evidence_ids": [
+      "dm-evidence-038",
+      "dm-sanskrit-evidence-038"
+    ],
+    "status": "OPEN_THEOLOGICAL_IDENTIFICATION",
+    "resolution": null
+  },
+  {
+    "id": "dm-variant-ugradarshana",
+    "type": "EDITION_OR_TRANSLATION_VARIANT",
+    "description": "Pargiter adopts Ugradarśana as a name from Bombay reading; SanskritDocuments DM 2.43–44 has a participle and no such proper name.",
+    "source_ids": [
+      "dm-source"
+    ],
+    "evidence_ids": [
+      "dm-evidence-013",
+      "dm-sanskrit-evidence-013"
+    ],
+    "status": "RETAINED_WITNESS_DIFFERENCE",
+    "resolution": null
+  },
+  {
+    "id": "gp-var-gita-location",
+    "type": "LOCATOR_DISCREPANCY",
+    "description": "SD Krida contents listGita chapters138–148; publisher description of AITM74 says139–150. Both metadata signals observed, cause not established. Do not automatically renumber.",
+    "source_ids": [
+      "gp-src-ganesha",
+      "gp-src-gita"
+    ],
+    "evidence_ids": [
+      "gp-e-kr-gita-index",
+      "gp-e-publisher-gita"
+    ],
+    "status": "OPEN",
+    "resolution": null,
+    "metadata_urls": [
+      "https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+      "https://www.motilalbanarsidass.com/en-us/products/the-ganesa-purana-pt-1-upasana-khanda-aitm-vol-74-ancient-indian-tradition-and-mythology"
+    ]
+  },
+  {
+    "id": "gp-var-verse-count",
+    "type": "WITNESS_METADATA_DISCREPANCY",
+    "description": "SD colophons give4096+7021 verses; publisher The Ganesa Purana description gives4093+6986. These are witness/publication metadata, not a proven list of missing verses.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gp-e-up-count",
+      "gp-e-kr-count",
+      "gp-e-publisher-count"
+    ],
+    "status": "OPEN",
+    "resolution": null,
+    "metadata_urls": [
+      "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+      "https://www.motilalbanarsidass.com/products/the-ganesa-purana"
+    ]
+  },
+  {
+    "id": "lal-conflict-29-interpolation",
+    "type": "TRANSCRIPTION_OR_EDITORIAL_INSERTION",
+    "description": "Online chapter29 includes an unnumbered premature death synopsis after93 while numbered94–138 continue the fight; numbered139–144 establish the final death sequence. Treat as online-witness sequencing issue until scan collation.",
+    "source_ids": [
+      "lal-source"
+    ],
+    "evidence_ids": [
+      "lal-e-038",
+      "lal-e-040"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "lal-conflict-cavalry-alias",
+    "type": "ALIAS_IDENTIFICATION_PENDING",
+    "description": "Chapter16 names the noose-born cavalry leader Atitvaritavikrānti; chapter22 names its Aparājita-mounted combatant Caṇḍī, Turagānanā and Hayāsanā, while chapter28 names Aśvārūḍhā. Role and vehicle continuity suggest identification, but these local records are not automatically merged before Sanskrit collation.",
+    "source_ids": [
+      "lal-source"
+    ],
+    "evidence_ids": [
+      "lal-e-010",
+      "lal-e-017"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "lal-conflict-kama-promises",
+    "type": "INTERNAL_WITNESS_VARIANT",
+    "description": "The gods recollect Kāma’s invincibility from Viṣṇu in11.12–17, yet11.28 narrates his destruction by Śiva;30.58–60 explicitly adds protection against that burning. No unstated loophole supplied.",
+    "source_ids": [
+      "lal-source"
+    ],
+    "evidence_ids": [
+      "lal-e-001",
+      "lal-e-detail-052",
+      "lal-e-042"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "lal-conflict-kiricakra",
+    "type": "INTERNAL_WITNESS_VARIANT",
+    "description": "Chapter20.1 calls Kiricakra five-tiered, but20.34–36 refers to a sixth tier. No silent correction.",
+    "source_ids": [
+      "lal-source"
+    ],
+    "evidence_ids": [
+      "lal-e-014"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "lal-conflict-name-forms",
+    "type": "NAME_FORM_VARIANT",
+    "description": "Witness alternates Kaṇakolāhala/Raṇakolāhala for Sampatkarī’s elephant; Kālavāśita/Kākavāśita and Vajradanta/Vijradanta in general lists; Dūminī/Dhūminī; multiple rear-attack names. These have not been automatically collapsed into unique people or reconciled by memory.",
+    "source_ids": [
+      "lal-source"
+    ],
+    "evidence_ids": [
+      "lal-e-003",
+      "lal-e-010",
+      "lal-e-016",
+      "lal-e-018",
+      "lal-e-020",
+      "lal-e-032"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "lal-conflict-princes-count",
+    "type": "INTERNAL_WITNESS_VARIANT",
+    "description": "Chapter26.46 announces thirty sons;47–50 main text lists22. Translator footnote supplies8 from21, which remains commentary and not a substituted reading.",
+    "source_ids": [
+      "lal-source"
+    ],
+    "evidence_ids": [
+      "lal-e-025",
+      "lal-e-detail-058"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "lal-conflict-syamala-names-count",
+    "type": "COUNT_OR_TRANSCRIPTION_VARIANT",
+    "description": "Chapter17.33–35 calls the name series sixteen but the displayed series supplies fifteen recognizable entries. Sanskrit or scan check required. No sixteenth name invented.",
+    "source_ids": [
+      "lal-source"
+    ],
+    "evidence_ids": [
+      "lal-e-011",
+      "lal-e-detail-049"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "lal-conflict-tier-transcription",
+    "type": "TRANSCRIPTION_AND_ENUMERATION_UNCERTAINTY",
+    "description": "Chariot lists contain Gariraā, repeated Hākinī and Siddhalakṣmī, six Guptatarā entries, and a fifth-tier sixteen-deity heading whose displayed enumeration is ambiguous. These literal names are contextualized and queued for Sanskrit/scan resolution. No expansion from later standard Śrīcakra lists.",
+    "source_ids": [
+      "lal-source"
+    ],
+    "evidence_ids": [
+      "lal-e-013",
+      "lal-e-014"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "lal-conflict-visanga-weapon",
+    "type": "INTERNAL_WITNESS_VARIANT",
+    "description": "Chapter20.27–30 anticipates plough/pestle;25.103 predicts Daṇḍanāthā’s arrow;28.112–113 actually describes plough and iron-club killing. Retain actual duel and predicted versions.",
+    "source_ids": [
+      "lal-source"
+    ],
+    "evidence_ids": [
+      "lal-e-014",
+      "lal-e-023",
+      "lal-e-precise28-visanga"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "ls-var-killers",
+    "type": "WITHIN_WITNESS_ALTERNATIVE_READING",
+    "description": "Stotra29–30 main reading assigns Viṣaṅga to Mantriṇī and Viśukra to Vārāhī. Parenthetical alternatives exchange targets. Both readings remain visible; no silent harmonization.",
+    "source_ids": [
+      "cat-lalita-sahasranama"
+    ],
+    "evidence_ids": [
+      "ls-e-29",
+      "ls-e-30"
+    ],
+    "status": "OPEN_FOR_EDITION_COLLATION",
+    "resolution": null
+  },
+  {
+    "id": "review-lalita-killer-assignments",
+    "type": "CROSS_WITNESS_ACCOUNT_VARIATION",
+    "description": "Lalitopākhyāna28 assigns Viśukra to Mantriṇī/Śyāmalā and Viṣaṅga to Daṇḍanāthā. Lalitāsahasranāma29–30 main reading exchanges targets; parenthetical readings in the Sanskrit digital witness agree with the narrative assignment. Compare print/manuscript witnesses before preferring any reading.",
+    "source_ids": [
+      "lal-source",
+      "cat-lalita-sahasranama"
+    ],
+    "evidence_ids": [
+      "lal-e-precise28-visukra",
+      "lal-e-precise28-visanga",
+      "ls-e-29",
+      "ls-e-30"
+    ],
+    "status": "OPEN_FOR_EDITION_COLLATION",
+    "resolution": null
+  },
+  {
+    "id": "lvr-conflict-charioteer-editing",
+    "type": "EDITORIAL_REARRANGEMENT",
+    "source_ids": [
+      "lal-source"
+    ],
+    "evidence_ids": [
+      "lvr-e-chariot-roles"
+    ],
+    "description": "20.90–94a footnote says print lines are jumbled and translator follows textN. Hosted charioteer mapping remains witness-specific; print comparison pending.",
+    "status": "OPEN_FOR_EDITION_COLLATION",
+    "resolution": null
+  },
+  {
+    "id": "gup-var-daksa-recollection",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "Chapter20 explicitly defers personal boon to Mudgala;21 retrospectively narrates additional wishes, heavenly grant and different manifestation order. Both are attributed without forced harmonization.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup-e-055",
+      "gup-e-058"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup-var-ballala-rebirth",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "23.34–36 and45 named future Kalyāṇa/Vallabha and mother/son roles require Sanskrit collation; simultaneous roles not silently merged.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup-e-066",
+      "gup2-e-004"
+    ],
+    "status": "OPEN",
+    "resolution": "Direct reread confirms role tension; alternate accessible body not obtained. Remains OPEN; no biological/rebirth mapping promoted."
+  },
+  {
+    "id": "gup-var-daksa-duration",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "24.6 says twelve-year wording,24.8 then21days. Preserve both without inferred cumulative interval.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup-e-067",
+      "gup2-e-005"
+    ],
+    "status": "OPEN",
+    "resolution": "Direct reread confirms both expressions; no alternate body secured and no cumulative chronology asserted. Remains OPEN."
+  },
+  {
+    "id": "gup-var-generation-count",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "19.40 calls Vallabha seventh predecessor;26.27–28 explicit father-line through Dakṣa and six intermediate names to Bhīma needs counting-convention/edition check.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup-e-052",
+      "gup-e-072"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup-var-printed-numbering",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "Displayed numbering has18.41 printed14,23 last45/count46,27 duplicate2/missing4,30 labels56/32 and35 missing34. Locator strings preserve printed anomalies; no extra verse text invented.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup-e-049",
+      "gup-e-066",
+      "gup-e-073",
+      "gup-e-081",
+      "gup-e-094"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr-var-tapas-total",
+    "type": "INTERNAL_NUMERIC_DISCREPANCY",
+    "description": "Krīḍā2.6–8 gives1000years japa,2000air diet and1000leaf diet, then total10000. Specified phases total4000; missing6000 not reconstructed.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr-e-austerity"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr-var-siva-half-body",
+    "type": "LEXICAL_UNCERTAINTY",
+    "description": "Krīḍā2.12 digital half-body epithet requires Sanskrit/print collation. Iconographic inventory avoids deciding its intended compound.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr-e-siva-appearance"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr-var-aditi-tapas",
+    "type": "INTERNAL_NUMERIC_DISCREPANCY",
+    "description": "Krīḍā5.27 states100years of Aditi tapas; divine child recalls1000years at6.28. Both retained; no print collation or reconciliation.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr-e-aditi-tapas",
+      "gkr-e-vinayaka-birth"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr-var-number-7",
+    "type": "DIGITAL_VERSE_LABEL",
+    "description": "Krīḍā7 between29 and31 displays37; final colophon totals36. Locator uses7.30 with digital displayed37 noted; no content gap claimed.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr-e-viraja-aftermath"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr-var-number-11",
+    "type": "DIGITAL_VERSE_LABEL",
+    "description": "Krīḍā11 between20 and22 displays2; serial locator21 retained with digital label noted. No print correction inferred.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr-e-indra-cosmic"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr-var-gita-labels",
+    "type": "WITNESS_VARIANT",
+    "description": "Embedded141 duplicates20;143labels22before21(colophon21);145skips22;137final extra4. Preserve body labels, no guessed lost text.",
+    "source_ids": [
+      "gp-src-ganesha",
+      "gp-src-gita"
+    ],
+    "evidence_ids": [
+      "gkr-e-gita4-happiness",
+      "gkr-e-gita6-death",
+      "gkr-e-gita8-response",
+      "gkr-e-varenya-summary"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr-var-gita-lexical",
+    "type": "WITNESS_VARIANT",
+    "description": "Embedded147.6 dayā vs standalone10.6 adaya;148.30 pṛṣṭhapradarśanam vs standalone11.30 pṛṣṭhāpradarśanam. Opposite-looking moral/warrior readings require print collation, no silent harmonization.",
+    "source_ids": [
+      "gp-src-ganesha",
+      "gp-src-gita"
+    ],
+    "evidence_ids": [
+      "gkr-e-gita10-dispositions",
+      "gkr-e-gita11-duties",
+      "gkr-e-standalone-eleven"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr-var-gita-age",
+    "type": "WITNESS_VARIANT",
+    "description": "149.14 labels preceding tale Tretā;137.27–28 four-arm/mouse Gajānana resembles1.19 Dvāpara synopsis. Source-local narrative manifestation kept separate from synopsis identity pending edition review.",
+    "source_ids": [
+      "gp-src-ganesha",
+      "gp-src-gita"
+    ],
+    "evidence_ids": [
+      "gkr-e-postgita-variants",
+      "gkr-e-sindura-rites",
+      "gkr-e-ages"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr-var-gita-title",
+    "type": "WITNESS_VARIANT",
+    "description": "Standalone chapter3 heading Vijñānapratipādana vs embedded140 Brahmārpaṇayoga; standalone11 Trividhavastuvivekanirūpaṇa vs embedded148 Guṇatrayakṛtiyoga colophon. No printed edition chapter renumbering inferred.",
+    "source_ids": [
+      "gp-src-ganesha",
+      "gp-src-gita"
+    ],
+    "evidence_ids": [
+      "gkr-e-gita3-lineage",
+      "gkr-e-gita11-classifications",
+      "gkr-e-standalone-eleven",
+      "gkr-e-standalone-two",
+      "gkr-e-gita-colophons",
+      "gkr-e-standalone-3-heading"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr-var-gita-sourceword",
+    "type": "WITNESS_VARIANT",
+    "description": "Standalone1.2 tvayā vs embedded138.2 mayā; standalone11.37 Vyāsa speaker vs embedded148 Ka. Standalone11.38 forest/liberation separately numbered, embedded same content unnumbered before38hearing benefit; later allocation changes yet both terminate52. No global verse offset inferred.",
+    "source_ids": [
+      "gp-src-ganesha",
+      "gp-src-gita"
+    ],
+    "evidence_ids": [
+      "gkr-e-gita-frame",
+      "gkr-e-gita11-outcome",
+      "gkr-e-standalone-frame",
+      "gkr-e-standalone-eleven",
+      "gkr-e-standalone-ritual"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "mud-conflict-vijayapriya",
+    "type": "INTERNAL_NAME_DISCREPANCY",
+    "description": "1.24.33 and1.35.48/1.36 name Viṣayapriya;1.31.2 reads Vijayapriya for Matsara’s son assigned Vaikuṇṭha. Do not silently normalize or invent a third son. Exact identity/print-base reading needs review.",
+    "source_ids": [
+      "gp-src-mudgala"
+    ],
+    "evidence_ids": [
+      "mud-e-world-allocation",
+      "gp-e-matsara-grant"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "mud-conflict-city-name",
+    "type": "SOURCE_LOCAL_NAME_DISTINCTION",
+    "description": "1.31.4 names Matsarāvāsaka;1.33.21 and1.34.8 name Īrṣyā/Īrṣyāpura. Exact identity is not explicitly established in the read verses; no same_as edge imposed.",
+    "source_ids": [
+      "gp-src-mudgala"
+    ],
+    "evidence_ids": [
+      "mud-e-vak-army",
+      "mud-e-world-allocation"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "mud-variant-siddhi-buddhi-origins",
+    "type": "SOURCE_LOCAL_CONTEXT_DISTINCTION",
+    "description": "1.43.16 calls Siddhi/Buddhi daughters in Brahmā’s meditation-child scene;1.44.22 explains both māyās as created from Gaṇeśa’s own limb for play. Preserve both explicitly local descriptions; do not collapse to a single biological genealogy.",
+    "source_ids": [
+      "gp-src-mudgala"
+    ],
+    "evidence_ids": [
+      "mud-e-mental-son-manifestation",
+      "mud-e-sukra-siddhi-buddhi"
+    ],
+    "status": "RECORDED",
+    "resolution": "Local relational modes retained; no biological equivalence."
+  },
+  {
+    "id": "mud-identity-virocana-parent",
+    "type": "CROSS_EPISODE_IDENTITY_UNESTABLISHED",
+    "description": "Bali’s father Virocana is explicitly named in1.46.12. The read body does not explicitly identify him as the Virocana chief in the preceding Matsara campaign. Keep episode parent separately until direct identity evidence; no guessed same_as edge.",
+    "source_ids": [
+      "gp-src-mudgala"
+    ],
+    "evidence_ids": [
+      "mud-e-bali-ritual-plan",
+      "mud-e-coronation"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "mud-vamana-retrospective-naraka-term",
+    "type": "RETROSPECTIVE_GRANT_DETAIL",
+    "description": "46.55–57 explicitly requests/grants devotion, control of Bali, remembered manifestation and obstruction removal.47.57–58 retrospectively says a former promise was to put demon in Naraka by Viṣṇu’s hand. Retain later statement without inserting it into earlier explicit request list; later protection and ritual repair supersede threatened outcome.",
+    "source_ids": [
+      "gp-src-mudgala"
+    ],
+    "evidence_ids": [
+      "mud-e-vamana-hymn-boon",
+      "mud-e-bali-restored-future-office"
+    ],
+    "status": "RECORDED",
+    "resolution": "Before/after speech contents retained separately; no actual Naraka descent inferred."
+  },
+  {
+    "id": "gup2-var-chapter3-negative",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "3.25–27,33 remain malformed/ambiguous in the electronic witness; alternate chapter links were not accessible. Earlier NEEDS_REVIEW event remains unchanged.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup2-e-001"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup2-var-chapter11-recipient",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "Printed niranukrośe11.25 retained as an unresolved recipient criterion, without translating it into compassion or cruelty as authoritative policy.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup2-e-002"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup2-var-chapter13-gift-route",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "Electronic witness13.26 gift word and13.44–46 route attachment require an alternate transcription/scan; prior gift/vision records retain their qualified content.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup2-e-003"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup2-var-tripura-duration",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "Tripura direct practice38.21 says15,000years; Nārada’s40.25 retrospective says1,000divine years. Both witness statements retained as source-local discrepancy, not harmonized.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup2-e-029",
+      "gup2-e-017"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup2-var-siva-prebattle-worship",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "42.24–25 explicitly narrates Śiva worship/bow/circumambulation of Gaṇeśa before march;44.14/21–22 attributes defeat to omitted worship/recitation/remembrance.45.12–13 and46.2 repeat omission explanation. Source-local sequence conflict remains OPEN; no invented distinction between perfunctory/proper worship.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup2-e-045",
+      "gup2-e-036"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup2-var-chapter45-without-remembrance",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "45.10 printed without-remembrance clause lacks secure negative; retain clear positive remembrance efficacy9 and mandatory first-worship11, no conjectural translation10.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup2-e-048"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup2-var-chapter47-chariot",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "47.40 kurūpaṃ and yaṃtāramindīvarajaṃ are unresolved material/driver syntax. Secure moon/sun wheels, mountain bow, Viṣṇu arrow and Aśvin draft pair preserved; no remembered standard Tripura chariot supplied.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup2-e-064"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr2-var-king-chariot-command",
+    "type": "LEXICAL_UNCERTAINTY",
+    "description": "Krīḍā12.54 second pāda names Kāśī king’s chariot but lacks a clear additional verb in this digital text. Only capture-child/kill-if-fighting order positively extracted; do not infer distinct killing order for king.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr2-e-thousand-host"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr2-var-chapter13-total",
+    "type": "NUMERIC_TYPOGRAPHY",
+    "description": "Chapter13 contains51verses. Running total prints4618+51=4643 though correct sum4669; next chapter14 base4669 agrees arithmetic. Verse text retained without silent correction.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr2-e-palace-hospitality"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr2-var-siddhi-buddhi-gift",
+    "type": "RELATIONSHIP_SCOPE",
+    "description": "Krīḍā14.30 says Dharmadatta gives Siddhi/Buddhi as dakṣiṇā. Reuses existing named attendants, but immediate verse neither calls them his daughters nor narrates a marriage. No biological daughter/marriage assertion added.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr2-e-dharmadatta-offering"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr2-var-verse-label14",
+    "type": "NUMERIC_TYPOGRAPHY",
+    "description": "Digital14 labels sequential11 as1 and31 as3; chapter colophon and whole sequence contain52. Locators use source sequence with label anomaly retained.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr2-e-donkey-demons",
+      "gkr2-e-dharmadatta-offering",
+      "gkr2-e-dharmadatta-return"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr2-var-sons-retrospective",
+    "type": "INTERNAL_OUTCOME_CONFLICT",
+    "description": "King’s retrospective15.5 calls Jaghana/Manu killed, with sahasrārdha (five-hundred) phrase; direct12.49 explicitly finds both conscious after fall and12.53 sends1000host. Keep retrospective speech and direct scene distinct; do not overwrite survival or reconcile500/1000 by invention.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr2-e-sons-breath-return",
+      "gkr2-e-thousand-host",
+      "gkr2-e-wedding-postponement"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr2-var-fire-daruna-labels",
+    "type": "INTERNAL_ATTRIBUTION_VARIATION",
+    "description": "15.15–17 assigns city-burning Jvālāmukha, wind Dāruṇa and eating Vyāghramukha.15.19–23 mouth-flame narrative attaches to tiger-mouth setting;15.43 final footstroke calls figure Vidāraṇa alongside Jvālā. Plan, collective actions and outcomes retained; exact allocation/name collation pending.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr2-e-city-triple-attack",
+      "gkr2-e-city-rescue"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr2-var-bhrusundi-name-place",
+    "type": "DIGITAL_LEXICAL_VARIATION",
+    "description": "16–17 uses Bhṛśuṇḍī/Bhrūśuṇḍī/colophon Bhruśuṇḍī;16.10 city string nāmalasaṃjñake not normalized to remembered Amala.16.12 labels21. Textual identities/transitions preserved; city segmentation and spelling need printed collation.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr2-e-remote-offering",
+      "gkr2-e-second-embassy",
+      "gkr2-e-devotional-form"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr2-var-devotional-form-age",
+    "type": "FORM_CONTEXT_DISTINCTION",
+    "description": "17.25–29 meditation form has ten arms and peacock, whereas1.18 Tretā Mayūreśvara synopsis six arms/peacock.17 explicitly says child assumes devotee-desired form, so no manifestation identity merge inferred; Gajānana here is name of Kṛta Vināyaka, distinct from Dvāpara synopsis actor.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr2-e-devotional-form",
+      "gkr2-e-manifestation-purpose",
+      "gkr-e-ages"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr2-var-well-boon-allocation",
+    "type": "GRAMMATICAL_SCOPE",
+    "description": "19.1–4 names Kūpaka/Kandara pair;19.2 singular balinaṃ brahmalabdhavaram does not securely distribute boon to both. Collective reported-boon record preserves ambiguity and unstated terms rather than inferred invulnerability.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr2-e-well-conspiracy"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr2-var-flood-no-resurrection",
+    "type": "OUTCOME_SCOPE",
+    "description": "20.25 reports deaths from collapsing houses;20.53–60 restores ordinary environmental/city conditions but does not explicitly repeat15.44 resurrection. No20revives-all-dead assertion inferred.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr2-e-darkness-flood",
+      "gkr2-e-trio-aftermath"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr2-var-bhramari-generation",
+    "type": "INTERNAL_KINSHIP_CONFLICT",
+    "description": "21.3 prints pautraṃ (grandson) for Ambhāsura’s head; lament21.9suta and friend21.12putra call son. Both locators retained via scoped called-grandson/called-son relations; precise mother/grandmother identity unresolved.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr2-e-bhramari-grief"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr2-var-cushion22",
+    "type": "DIGITAL_LEXICAL_UNCERTAINTY",
+    "description": "22.53 digital cākāra kaśipū nāsau plus proposed cākārakaśipuñcāsau reading makes cushion/preparation syntax uncertain. Yard/darbha/banner/meditation retained without a verified specific cushion claim.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr2-e-poor-house-preparation"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr2-var-hunter-liberation-terms",
+    "type": "TERMINOLOGY_VARIATION",
+    "description": "25.31 and26frame call hunter sālokya;26.23 concrete outcome calls pair sārūpya and ownrealm residence until kalpa end. Preserve distinct wording; no doctrine equating terms added.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr2-e-shrine-and-bhakti",
+      "gkr2-e-hunter-demon-liberation"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "mud2-conflict-50-63-number",
+    "type": "VERSE_NUMBER_ANOMALY",
+    "description": "1.50 following62 is printed33 in digital witness, then64; referenced as sequential63 [printed33], not chapter33.",
+    "source_ids": [
+      "gp-src-mudgala"
+    ],
+    "evidence_ids": [
+      "mud2-e-divodasa-replaces-gods"
+    ],
+    "status": "DOCUMENTED",
+    "resolution": "Locator retains order63 and notes printed33; no narrative emendation."
+  },
+  {
+    "id": "mud2-conflict-dhundhi-distinction",
+    "type": "SOURCE_LOCAL_IDENTITY_DISTINCTION",
+    "description": "Dhundhi the body-produced astrologer Brahmin51.33–37 is narrated alongside Gaṇeśa52.9; retain distinct source-local entities. Dhundhirāja as deity52.15 refers to Vakratunda’s installed image. No silent merger.",
+    "source_ids": [
+      "gp-src-mudgala"
+    ],
+    "evidence_ids": [
+      "mud2-e-dhundhi-and-buddha"
+    ],
+    "status": "DOCUMENTED",
+    "resolution": "Separate actor ID for Brahmin; divine name remains source-local Vakratunda."
+  },
+  {
+    "id": "gkr3-var-hunter-priorbirth-identity",
+    "type": "IDENTITY_AMBIGUITY",
+    "description": "27.4 identifies hunter with unnamed righteous childless king; subsequent evil pair are Sāmba/Duṣṭabuddhi.28.36 final pair Piṅgākṣa/Durbuddhi differs from28.39 Bhīma and26namedhunter. Preserve accounts without inventing individual reincarnation or alias mapping.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr3-e-virtuous-king",
+      "gkr3-e-succession27",
+      "gkr3-e-samba-parents-friend",
+      "gkr3-e-hells-and-births",
+      "gkr3-e-prior-merit-release",
+      "gkr3-e-identity-review"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr3-var-hell-duration",
+    "type": "NUMERIC_VARIATION",
+    "description": "28.22 paṅkti-sahasra-parivatsarān order,28.26 sequential100years execution, duplicate28.30 thousands-of-years summary. Preserve three descriptions; no harmonized precise overall duration derived.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr3-e-hells-and-births"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr3-var-28-labels",
+    "type": "NUMBERING_VARIATION",
+    "description": "Digital chapter28 duplicates verse30; labels1–43 encompass44verse units and runningtotal+44. Locators use printed labels and specify first/second30 when relevant.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr3-e-hells-and-births",
+      "gkr3-e-prior-merit-release"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr3-var-realm-term28",
+    "type": "TERMINOLOGY_VARIATION",
+    "description": "26.23 ownGaṇeśa place untilkalpa/sārūpya vs28.41 recap svarloka; term variation recorded without asserting incompatible heavens or equivalence.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr2-e-hunter-demon-liberation",
+      "gkr3-e-prior-merit-release"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr3-var-virocana-parent",
+    "type": "KINSHIP_AMBIGUITY",
+    "description": "29.30 Virocana sonoftasya unresolved; Bali sonofVirocana explicit29.30/30.30. No remembered Prahlādaparentage filled.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr3-e-virocana-crown",
+      "gkr3-e-virocana-parent-review",
+      "gkr3-e-indra-vishnu"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr3-var-29-heading",
+    "type": "NUMBERING_VARIATION",
+    "description": "Digital heading/colophon descriptive text of29 says ekatriṃśa-style31 descriptor while explicit heading2.029/terminal29 and total37 locate the body as29. Do not map onto next31Vāmana tapas by title.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr3-e-kasyapa-creation",
+      "gkr3-e-virocana-counter"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr3-var-30-labels",
+    "type": "NUMBERING_VARIATION",
+    "description": "Chapter30 duplicates31 and lacks32; bodyends43 and runningtotal+43. Indra report31 first vs Viṣṇu response31 second preserved through spans30–34.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr3-e-indra-vishnu",
+      "gkr3-e-vamana-birth-rites"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup4-var-51-ritual-instruction-discrepancy",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "51.14praises attainment withoutyajña/dāna/japa/homa;51.29–30and43–44prescribejapa/homa/gifts. Both statements retained; no other-ritual or optional-ritual reconciliation invented.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup4-e-002",
+      "gup4-e-006"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup4-var-51-food-count",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "51.27caturthakāla and akṣaraṃ madhuraṃ food clause,28dvi-catur mantra class and30half/further-half attachment need exact semantic collation; count/food conditions not guessed.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup4-e-004"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup4-var-53-capacity",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "53.3 printed aṇimādiguṇāpeta has been read literally as free from aṇimā and analogous qualities. An alternate authorial reading or copying error is not established; no change to guṇopeta is made.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup4-e-019"
+    ],
+    "status": "OPEN",
+    "resolution": "Literal digital qualifier clarified independently; print/authorial variant question remains OPEN."
+  },
+  {
+    "id": "gup4-var-53-minister-clause",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "53.15tasyāmātyān bhage kṛtvā exact action/location withheld;embrace/kissandservantdevouringsecure.No silentreplacementwithbhaṅgeorotherclause.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup4-e-021"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup4-var-55-reunion-rite",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "55.16dvādaśābdadṛśairdvijaiḥ needs precise agent/rite analysis;12-yearseparationindependent54.13–15,secure auspicious/Gaṇeśa/Śiva/Brahminfee sequence retained. Noinventeduniversal12-yearrite.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup4-e-031"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup4-var-59-rebirth-referent",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "59.13tasyaputro’sau death/14saḥVaināyaka/16meritremainderKṛtavīrya followsSāmacallinghissonGaṇeśa12. Do notforceSāma→kingorchild→kingwithoutcontext/collation. Importantbiographygapkeepschapter/storyPARTIAL.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup4-e-051"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup4-var-57-naming-anatomy",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "The raw57.43 bhūmadhyān clause has an unresolved anatomical meaning. Guru naming and other chronology remain verified; exact anatomy is withheld.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup4-e-063"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr4-var-water-stopper",
+    "type": "LEXICAL_ACTOR_VARIATION",
+    "description": "31.37printsŚakra,notŚukra;31.31–33precedingcounselorKāvya/Śukra. Preserve printedlabel andbrokeneye/śalākāagency gap; no rememberedwater-vessel episode substituted.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr4-e-bali-gift-warning",
+      "gkr4-e-water-steps-promises",
+      "gkr4-e-water-actor-review"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr4-var-image-locus",
+    "type": "LOCATION_FORM_AMBIGUITY",
+    "description": "31.21–22fourarmedthreeeyeKashmir-stoneimage vs31.10tenarmedpeacockvision/31.48tenarmedLordatAdosha/devadakṣiṇabhāga; separateappearance/image and do notforceorientationoridentityofAdosha.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr4-e-vamana-guru-tapas",
+      "gkr4-e-vamana-installation",
+      "gkr4-e-vamana-aftermath-image"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr4-var-curse-release-alternative",
+    "type": "PROMISE_OUTCOME_VARIATION",
+    "description": "34.26–27 regainownformwhenLordpleased promised;35.17–22Godpleasedyetrefusesannuldevoteecurse,alternativerootindwelling. No inventedhumangainorharmonization.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr4-e-bhrusundi-curse",
+      "gkr4-e-trees-request-alternative"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr4-var-aurava-fire",
+    "type": "SEQUENCE_TRANSFORMATION_AMBIGUITY",
+    "description": "35.31heaven departurevs35.32śamīgarbha/firetransformation,precisesuccessionunresolved.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr4-e-aurava-fire-saunaka",
+      "gkr4-e-aurava-review"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr4-var-33-label43",
+    "type": "NUMBERING_VARIATION",
+    "description": "Digital33prints33 atposition43;previous42/next44 andtotal60preserved. Locator39–53includes anomalousprintedlabel.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr4-e-revival-merit-transfer"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr4-var-gods-river-pun",
+    "type": "LEXICAL_UNCERTAINTY",
+    "description": "36.12ḍalayoraikyataḥ letter-equivalencephraseunparsed;clearwaterrequest/Sāvitrīassent/riverseffectpreserved. Noemendationtoalternativecurseword.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr4-e-river-sacrifice-curse"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr4-var-vision-tusks",
+    "type": "CONTEXTUAL_FORM_VARIATION",
+    "description": "36.39GajānanaTWOtusks/fourarms/mouse vsotherone-tuskforms and35tenarms/lion;separatecontextualappearances,notforcedcanonicaluniformity.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr4-e-goddesses-worship-vision",
+      "gkr4-e-sages-vision-hymn"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr4-var-38-creation-count",
+    "type": "NUMERIC_AMBIGUITY",
+    "description": "38.23ekaviṃśatisāhasramfourclasslistvs38.26catūrāśītilakṣa,unreconciled.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr4-e-kasi-creation-phala",
+      "gkr4-e-creation-number-review"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr4-var-38-label61",
+    "type": "NUMBERING_VARIATION",
+    "description": "38.61printed6;runningbodythrough63 andchaptertotal63 retained.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr4-e-durasada-request-grant"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr4-var-40-total",
+    "type": "NUMBERING_VARIATION",
+    "description": "40bodylabels1–44,runningtotaladds45. Allactualbody/colophonread;noinvented45thverse.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr4-e-vakra-radiance-emergence"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr4-var-durasada-hato-preview",
+    "type": "LEXICAL_OUTCOME_VARIATION",
+    "description": "38.18previewhato/40deviwilldie-language retainedasattributedanticipation;Śivagrant38.59conquer/sañjīvayiṣyati predictsnonterminalcounter. Actualending41–43mustgovernoutcome,notpreviewalone.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr4-e-child-name-request",
+      "gkr4-e-durasada-request-grant",
+      "gkr4-e-vakra-radiance-emergence"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr4-var-42-dual-agency",
+    "type": "LEXICAL_ACTOR_UNCERTAINTY",
+    "description": "42.10 keśābhyāṃ vārite paired-weapon cessation agency unresolved after collateral fire. Exact dual word retained; no English hair-mechanism or remembered intervention assigned.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr4-e-astra-counters",
+      "gkr4-e-astra-agency-review"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr4-var-42-label21",
+    "type": "NUMBERING_VARIATION",
+    "description": "42.21prints2 between20/22,bodyends36,total36;wholebodyread.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr4-e-fiftysix-army-counter"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "mud4-v-vedana-vena",
+    "type": "WITNESS_READING",
+    "description": "2.6.26 Vedanā daughter vs27 Venā mother; contextual equation unverified.",
+    "source_ids": [
+      "gp-src-mudgala"
+    ],
+    "evidence_ids": [
+      "mud4-e-vedana-vena-reading"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup5-var-61-tapas-duration",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "61.35 literal daśadvādaśavarṣāṇi remains unresolved in exact numerical interpretation. No silent10/12/22-year chronology is promoted.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup5-e-006"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup5-var-61-retreat-clause",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "61.9 cintāmaye hṛde and adjacent epithets remain unresolved; preserve distressed Moon without inventing a physical hiding-place.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup5-e-011"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup5-var-63-strategy",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "Before: the gods were said to be told not to drive the child away. After: no negative or push direction is asserted; raw nodanīyo clause awaits grammatical/edition collation. This affects the full Analāsura narrative scope.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup5-e-028"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup5-var-67-scale-formulations",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "The failure-to-balance trial and26 versus samam equality wording40 require grammatical/edition review; narrative sequence and actual couple transport remain secure.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup5-e-044"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup5-var-68-dreamer-name",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "Kārtavīrya68.3 versus Kṛtavīrya68.13/18, within one dream/waking sequence. Stable Kṛtavīrya actor used where explicitly named; anomalous3 not silently emended.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup5-e-051"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup5-var-71-performer-name",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "Kārtavīrya71.19 performer naming versus Kṛtavīrya68 explicit king and later son-naming72.25; preserve source-local chronology conflict pending collation.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup5-e-068"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr5-var-wife-name44",
+    "type": "PROPER_NAME_AMBIGUITY",
+    "description": "44.20 clear wife/fidelity description, but suśīlā versus nāmnā nāma proper-name interpretation unresolved. No new personal name assigned.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr5-e-divodasa-rule",
+      "gkr5-e-wife-reading"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr5-var-kingdom-volition",
+    "type": "ATTRIBUTED_ACCOUNT_VARIATION",
+    "description": "44.17 narrates acceptance under gods’ exclusion;47.28/37 Divodāsa calls Brahmā’s kingdom forcibly given after his earlier renunciation. Both narrative and self-report preserved, without harmonizing voluntariness.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr5-e-divodasa-rule",
+      "gkr5-e-divodasa-surrender"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr5-var-47-label26",
+    "type": "NUMBERING_VARIATION",
+    "description": "47.26 label absent between four-armed revelation25 and27; terminal42 and running count42 retained.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr5-e-divodasa-surrender",
+      "gkr5-e-renunciation-message"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr5-var-speaker49",
+    "type": "SPEAKER_TRANSITION_AMBIGUITY",
+    "description": "49.19labels muni,49.20 says pūjyo’ham to mune; exact first-person speaker remains unresolved.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr5-e-devotion-kinds49",
+      "gkr5-e-speaker-review49"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr5-var-realm-duration49",
+    "type": "DURATION_BODY_AMBIGUITY",
+    "description": "49.29 Brāhma-kalpa/jyotirūpa transition unnormalized; do not equate to5000year reign or invent body conversion timing.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr5-e-realm-introduction49",
+      "gkr5-e-realm-duration-review49"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr5-var-realm-duration50",
+    "type": "DURATION_AMBIGUITY",
+    "description": "50.27 juxtaposes five thousand years and brahmakalpamayaṃ kālam.50.65 narrates five thousand YEARS of rule; no equation or omitted epoch is invented.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr5-e-king-same-body-request-grant",
+      "gkr5-e-realm-immunity-and-king-departure-preview"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr5-var-realm-cosmic-layout50",
+    "type": "SEMANTIC_LAYOUT_AMBIGUITY",
+    "description": "50.36 bhūmadhye,50.42 dharmabindu and50.31/44–51 platform/dimension allocation remain unnormalized. Literal counts and support descriptions retained, no recalled chakra corrections.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr5-e-realm-cosmic-yogic-body",
+      "gkr5-e-realm-supporting-saktis-layout",
+      "gkr5-e-kapila-realm-teaching-access"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr5-var-ocean-milk-sugar50",
+    "type": "INTRATEXTUAL_DESCRIPTOR_VARIATION",
+    "description": "50.13 locates Svānanda in the milk ocean, whereas50.32/51–53 describe the sugarcane ocean. Both witness descriptors retained without silent harmonization.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr5-e-king-separation-recap",
+      "gkr5-e-kapila-realm-teaching-access",
+      "gkr5-e-realm-lotus-bed-attendants"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr5-var-label50-23",
+    "type": "DIGITAL_VERSE_LABEL_ANOMALY",
+    "description": "50 labels successive units23 and23, with22 absent. Exact labels and whole terminal65 body preserved; no extra source verse fabricated.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr5-e-king-separation-recap"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr5-var-bhramika-bhramarika",
+    "type": "NAME_AND_SUPPORT_VARIATION",
+    "description": "50 prints Bhrāmikā,52 Bhrāmarikā/Bhrāmarī;52.52 mastake-position relation is not securely allocated. Distinct provisional nodes and exact clauses retained.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr5-e-realm-supporting-saktis-layout",
+      "gkr5-e-journey-dark-void-supporting-saktis"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr5-var-vaikuntha-bathing52",
+    "type": "RITUAL_TERM_AMBIGUITY",
+    "description": "52.39 ūrjasnāyī/jhaṣasnāyī/meṣasnāyī not assigned modern month/zodiac observance equivalents without collation.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr5-e-journey-vaikuntha"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr5-var-tejovati-tejini",
+    "type": "NAME_VARIATION",
+    "description": "50.60 names Tejovatī and Jvālinī;53.8 names Tejinī and Jvālinī. Preserve provisional Tejovatī/Tejinī nodes without an unsupported equation. No service role is omitted.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr5-e-realm-lotus-bed-attendants",
+      "gkr5-e-reunion-lotus-bed-attendants53"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr5-var-prathima53",
+    "type": "PRINTED_NAME_PRESERVED",
+    "description": "53.9 prints Mahimā Prathimā near the Lord with grouped service objects. Exact Prathimā is retained; no replacement by a standard siddhi name or individual object allocation inferred.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr5-e-reunion-lotus-bed-attendants53"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr5-var-running-total53",
+    "type": "DIGITAL_RUNNING_TOTAL_CONFLICT",
+    "description": "52 ends with running total6424;53 arithmetic begins6426+48=6472. Full53 body ends48; no two invented verses added.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr5-e-return-to-sukla-chronology-frame"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "mud5-v-samjna-origins",
+    "type": "SOURCE_CONTEXTUAL_ORIGIN",
+    "description": "1.17.51 Saṃjñā emerges from Śakti heart; 2.14.18 Sun creates Saṃjñā from left limb in solar-world play. Distinct cosmic origin contexts retained; no universal biological or chronological reconciliation.",
+    "source_ids": [
+      "gp-src-mudgala"
+    ],
+    "evidence_ids": [
+      "mud3-e-shakti-marriage-emanations",
+      "mud5-e-solar-world-samjna"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup6-var-73-lexical-benefits",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "Exact nirvāṇam condition and Rāvaṇa akhilājñatā need grammatical or edition support. Actual physical response/reunion and the named Śeṣa boons remain independently readable.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup6-e-016"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup6-var-76-death-utterance-speaker",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "76.24 Hareśvara utterance with so’vadat has an unresolved speaker in the father-death sequence; preserve the actual killings and later distinct name-hearing remedy.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup6-e-035"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gup6-var-79-80-visit-chronologies",
+    "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+    "description": "79 continuous post-battle visit versus80 recalled home-and-return before the killing are source-local chronology alternatives. Both utterances remain directly recorded; no harmonizing emendation.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gup6-e-055",
+      "gup6-e-051",
+      "gup6-e-053"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr6-var-sanaka-repeat25-54",
+    "type": "SOURCE_LOCAL_PARALLEL_REPORTS",
+    "description": "25 and54 report Sanaka/Sanandana’s universal sight and installation.54.59 prints vararado and names Gaṇeśatīrtha versus25 Varada/Gaṇeśakuṇḍa. Preserve source-order reports and do not assert a new physical identity or chronological equation.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr2-e-sages-knowledge-shrine",
+      "gkr6-e-sages-image-shrine-installation54"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr6-var-sukla-grant23-55",
+    "type": "SOURCE_LOCAL_REPEATED_GRANT_REPORT",
+    "description": "23 reports an explicit request/grant and wealth, but55.18 says the child had not yet given a pleasing boon and55.19 narrates a mental gift. Both report contexts retained without deleting or harmonizing the earlier grant.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr2-e-sukla-boon",
+      "gkr6-e-sukla-silent-wealth-gift55"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr6-var-capala-dead-alive",
+    "type": "SAME_NAME_LIFE_STATUS_CONFLICT",
+    "description": "The Capala of10.1–17 is explicitly killed by consecrated rice, whereas Capala55 is seized, released and reports back56. Distinct provisional source-local actors retained; no resurrection or identical-person equation invented.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr-e-upanayana-attack",
+      "gkr6-e-envoys-lightning-attack55",
+      "gkr6-e-envoys-abhaya-release55",
+      "gkr6-e-envoys-return-raudrapura56"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr6-var-recap-names56",
+    "type": "RECAP_NAME_ALLOCATION_AMBIGUITY",
+    "description": "56.9–16 printed prabala/kuṇḍiyāstuvaraḥ/Jṛmbhiṇī/Jvālāsura/Vyāghratuṇḍa/Vidāraṇa/Megha differ from earlier Kūṭa/Kuṇḍa/Jṛmbhā/Jvālāmukha/Vyāghramukha/Dāruṇa/Hemajjyotirvid. Source-specific forms/counters preserved; exact segmentation and identities need collation.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr6-e-envoys-earlier-demon-recap56-first"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr6-var-sons-ministers59",
+    "type": "COMPANION_ROLE_LABEL_SHIFT",
+    "description": "57.41–43/59.7/9 identifies two ministers’ sons captured with the king;59.39 calls the pair amātyau. Keep exact role labels without inventing a fathers’ return or silently changing the sons into ministers.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr6-e-royal-battle-success-and-capture57",
+      "gkr6-e-king-ministersons-narantaka-interior-cosmos59",
+      "gkr6-e-ministersons-versus-ministers-label59"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr6-var-boon-counter-not-normalized",
+    "type": "BOON_COUNTER_EXPLANATION_OPEN",
+    "description": "Old2 categorical/day-night grant remains.60.24 weakening by sin is the king’s speech;61.25 flickers day/night without saying twilight, and61.33–34 names Virāṭ nail-tip crushing. Exact bypass logic is not filled from lore.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr-e-twins-request",
+      "gkr-e-twins-grant",
+      "gkr6-e-king-warning-boon-pride60",
+      "gkr6-e-narantaka-day-night-identity-delusion61",
+      "gkr6-e-virat-toenail-narantaka-death61"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr6-var-duplicate-label61",
+    "type": "DIGITAL_VERSE_LABEL_ANOMALY",
+    "description": "61 prints31 twice then33. Both body units are retained; chapter terminal43 and source-order body govern coverage, with no omitted32 content invented.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr6-e-virat-toenail-narantaka-death61"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr6-var-delusion-power-owner-correction",
+    "type": "POWER_ROLE_CORRECTION",
+    "description": "gkr6-power-narantaka-delusion61 recipient corrected from Narāntaka to Vināyaka; Narāntaka is the affected target.61.24 explicitly mohayāmāsa ... māyayā. ID retained and historical004 preserved.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr6-e-narantaka-many-heads-axe61",
+      "gkr6-e-narantaka-day-night-identity-delusion61"
+    ],
+    "status": "RESOLVED",
+    "resolution": "Owner Vināyaka; affected enemy Narāntaka, no grantor."
+  },
+  {
+    "id": "gkr6-var-laghima-prathimna63",
+    "type": "FORMATION_CONTROLLER_CONFLICT",
+    "description": "63.15–17 summons Laghimā within eight powers;63.27 assigns Tālajaṅgha’s array to printed prathimnā. Preserve both labels without emending or equating to Prathimā53.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr6-e-siddhi-remembers-eight-powers63",
+      "gkr6-e-eight-formation-opponents63"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr6-var-siege-referents62",
+    "type": "SENT_SLAIN_ACTOR_AMBIGUITY",
+    "description": "62.54 parikhā/preṣitā/hatās tena exact actor and sent/slain party unresolved; siege and reporting55 are retained without an invented execution.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr6-e-siege-sent-slain-referents62"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  },
+  {
+    "id": "gkr6-var-sukra-containment63",
+    "type": "CONTAINMENT_GLOSS_REVIEW",
+    "description": "63.39 kṛtyā places Bhārgava in nije bhage, disappears and abandons in Bārbāra. Agency/genital-region containment and regional gloss require collation; no Śiva-belly/killing tale imported.",
+    "source_ids": [
+      "gp-src-ganesha"
+    ],
+    "evidence_ids": [
+      "gkr6-e-isita-krtya-sukra-removal63"
+    ],
+    "status": "OPEN",
+    "resolution": null
+  }
+]

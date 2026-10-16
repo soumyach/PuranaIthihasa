@@ -1,0 +1,448 @@
+{
+  "id": "mud4-review-gup4",
+  "reviewer": "Independent Mudgala-track author",
+  "snapshot_path": "work/continuation3/patches/gup4.json",
+  "snapshot_sha256": "89fc9eadb452faf5af60af0191c348b8862a1e9272ad8bd091b6371b7b0ab19a",
+  "method": "Primary Sanskrit bodies read before comparison with latest gup4 patch. Whole57 and60 read; requested57.24–54 and60.1–46 claim fields compared. Optional59.9–17 reread. No gup4 mutation.",
+  "source_urls": [
+    "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html"
+  ],
+  "checked_ids": {
+    "evidence": [
+      "gup4-e-041",
+      "gup4-e-042",
+      "gup4-e-043",
+      "gup4-e-044",
+      "gup4-e-051",
+      "gup4-e-056",
+      "gup4-e-057",
+      "gup4-e-058",
+      "gup4-e-059",
+      "gup4-e-060",
+      "gup4-e-061",
+      "gup4-e-062"
+    ],
+    "assertions": [
+      "gup4-a-037",
+      "gup4-a-038",
+      "gup4-a-039",
+      "gup4-a-040",
+      "gup4-a-042",
+      "gup4-a-043",
+      "gup4-a-052",
+      "gup4-a-053",
+      "gup4-a-054",
+      "gup4-a-055",
+      "gup4-a-056",
+      "gup4-a-057",
+      "gup4-a-058",
+      "gup4-a-059",
+      "gup4-a-060",
+      "gup4-a-061",
+      "gup4-a-062",
+      "gup4-a-063",
+      "gup4-a-064"
+    ],
+    "relationships": [
+      "gup4-rel-031",
+      "gup4-rel-032",
+      "gup4-rel-033",
+      "gup4-rel-034",
+      "gup4-rel-036",
+      "gup4-rel-037",
+      "gup4-rel-045",
+      "gup4-rel-046",
+      "gup4-rel-047",
+      "gup4-rel-048",
+      "gup4-rel-049",
+      "gup4-rel-050",
+      "gup4-rel-051",
+      "gup4-rel-052",
+      "gup4-rel-053",
+      "gup4-rel-054"
+    ],
+    "boons_and_powers": [
+      "gup4-power-022",
+      "gup4-power-023",
+      "gup4-power-024",
+      "gup4-power-025",
+      "gup4-power-026",
+      "gup4-power-032",
+      "gup4-power-033",
+      "gup4-power-034",
+      "gup4-power-035"
+    ],
+    "narrative_events": [
+      "gup4-event-041",
+      "gup4-event-042",
+      "gup4-event-043",
+      "gup4-event-044",
+      "gup4-event-051",
+      "gup4-event-056",
+      "gup4-event-057",
+      "gup4-event-058",
+      "gup4-event-059",
+      "gup4-event-060",
+      "gup4-event-061",
+      "gup4-event-062"
+    ],
+    "story_spines": [
+      "gup4-story-angaraka",
+      "gup4-story-bhrushundi-origin"
+    ]
+  },
+  "counts": {
+    "evidence": {
+      "total": 62,
+      "checked": 12,
+      "unreviewed": 50
+    },
+    "assertions": {
+      "total": 64,
+      "checked": 19,
+      "unreviewed": 45
+    },
+    "relationships": {
+      "total": 54,
+      "checked": 16,
+      "unreviewed": 38
+    },
+    "boons_and_powers": {
+      "total": 35,
+      "checked": 9,
+      "unreviewed": 26
+    },
+    "narrative_events": {
+      "total": 62,
+      "checked": 12,
+      "unreviewed": 50
+    },
+    "story_spines": {
+      "total": 9,
+      "checked": 2,
+      "unreviewed": 7
+    },
+    "entities": {
+      "total": 116,
+      "checked": 0,
+      "unreviewed": 116
+    }
+  },
+  "checks": [
+    {
+      "id": "mud4-review-up-name-teacher",
+      "claim_ids": [
+        "gup4-e-041",
+        "gup4-event-041",
+        "gup4-a-037",
+        "gup4-a-038",
+        "gup4-rel-031",
+        "gup4-rel-032",
+        "gup4-power-022"
+      ],
+      "verdict": "SUPPORTED",
+      "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā57.23–29",
+      "claim_checked": "Mudgala teaches Gaṇeśāya namaḥ, with one seat, wind sustenance, concentration, staff watering and return/sprout markers.",
+      "support_or_problem": "24–26 explicit name-japa alternative to prescribed-rite ineligibility;27–29 planted staff, return/sprout markers, morning/evening watering. The parenthetic protective-hand line is correctly labeled parenthetic; no print authenticity confirmation.",
+      "fields": []
+    },
+    {
+      "id": "mud4-review-up-staff-tapas",
+      "claim_ids": [
+        "gup4-e-042",
+        "gup4-event-042",
+        "gup4-power-023"
+      ],
+      "verdict": "SUPPORTED",
+      "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā57.30–40",
+      "claim_checked": "1000 years is to sprouting; guru return/wait separately unspecified. Two hands, enchanted-water revival and eye-fire counter.",
+      "support_or_problem": "32 gives1000-year sprout;33–35 waiting/anthill/guru return has no new count;37 sprinkling,38 likeness,39 two hands,40 three-world eye-fire prevented by Mudgala.",
+      "fields": []
+    },
+    {
+      "id": "mud4-review-up-guru-son-role",
+      "claim_ids": [
+        "gup4-e-043",
+        "gup4-a-039",
+        "gup4-a-040",
+        "gup4-rel-033",
+        "gup4-rel-034"
+      ],
+      "verdict": "SUPPORTED",
+      "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā57.41–42",
+      "claim_checked": "Mudgala guru and sonlike honor, distinct from biological birth.",
+      "support_or_problem": "41 own guru and father/son simile;42 honors anthill-reemerged one as son. Current ritual/source-qualified relation does not invent biological conception.",
+      "fields": []
+    },
+    {
+      "id": "mud4-review-up-guru-grant-count",
+      "claim_ids": [
+        "gup4-power-024",
+        "gup4-event-043"
+      ],
+      "verdict": "SUPPORTED",
+      "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā57.44–50",
+      "claim_checked": "One-syllable teaching then Mudgala’s boons,100000kalpa lifespan, visitor efficacy/deity reverence.",
+      "support_or_problem": "44 one-syllable;45–47 grantor Mudgala and lifespan kalpa-lakṣa;48–50 gods/sages actually visit. Requested remains null rather than inventing a request for these enumerated grants. Event naming-anatomy clause separately unresolved below.",
+      "fields": [
+        "granted",
+        "duration",
+        "grantor_id"
+      ]
+    },
+    {
+      "id": "mud4-review-up-naming-raw",
+      "claim_ids": [
+        "gup4-e-043",
+        "gup4-event-043"
+      ],
+      "verdict": "UNDETERMINED",
+      "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā57.43",
+      "claim_checked": "Exact claim that trunk emerges from eyebrow-middle.",
+      "support_or_problem": "Digital body reads भूमध्यान्निर्गता शुण्डा, rather than an unambiguous bhrū-madhya spelling. Name Bhṛśuṇḍi and Mudgala’s naming are explicit, but exact anatomical normalization requires lexical/edition support or a raw-reading caveat. Do not silently repair the witness.",
+      "fields": [
+        "details:eyebrow-middle",
+        "paraphrase:eyebrow-middle"
+      ]
+    },
+    {
+      "id": "mud4-review-up-subsequent-hundred",
+      "claim_ids": [
+        "gup4-e-044",
+        "gup4-event-044",
+        "gup4-power-025",
+        "gup4-a-042",
+        "gup4-a-043",
+        "gup4-rel-036",
+        "gup4-rel-037"
+      ],
+      "verdict": "SUPPORTED",
+      "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā57.51–57",
+      "claim_checked": "Image installation, daily16services,100 further years, life-end sāyujya promise.",
+      "support_or_problem": "51–52 installation/japa/daily16services;53 hundred years after this;54 life-end sāyujya is future, not narrated death.55–56 field effects follow.",
+      "fields": [
+        "austerity_or_circumstances",
+        "granted",
+        "trigger"
+      ]
+    },
+    {
+      "id": "mud4-review-up-bhrushundi-benefit-trigger",
+      "claim_ids": [
+        "gup4-power-026"
+      ],
+      "verdict": "CORRECTION_NEEDED",
+      "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā57.55–56",
+      "claim_checked": "The benefit trigger adds worship to observance/image-seeing.",
+      "support_or_problem": "55 explicitly grants siddhis to observance practitioners;56 image-seeing removes rebirth and supplies sons/knowledge. Earlier51–52 narrates Bhṛśuṇḍi worship, but55–56 does not independently prescribe worship as user-benefit trigger. Narrow trigger to observance and image-seeing; retain worship as narrative practice.",
+      "fields": [
+        "trigger"
+      ]
+    },
+    {
+      "id": "mud4-review-up-mars-origin-age",
+      "claim_ids": [
+        "gup4-e-056",
+        "gup4-event-056",
+        "gup4-a-052",
+        "gup4-a-053",
+        "gup4-a-054",
+        "gup4-rel-045",
+        "gup4-rel-046",
+        "gup4-rel-047"
+      ],
+      "verdict": "SUPPORTED",
+      "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā60.1–10",
+      "claim_checked": "Bhāradvāja semen/Earth-hole origin, Earth raising/mother, seven-year inquiry.",
+      "support_or_problem": "4–6 Apsaras causes desire, semen enters Earth hole;7 red boy raised by Earth;8 age seven and mother address;10 Earth explicitly explains father’s semen/birth/raising. No Earth/Apsaras intercourse claim is introduced.",
+      "fields": []
+    },
+    {
+      "id": "mud4-review-up-mars-father-guru",
+      "claim_ids": [
+        "gup4-e-057",
+        "gup4-event-057",
+        "gup4-a-055",
+        "gup4-a-056",
+        "gup4-a-057",
+        "gup4-rel-048",
+        "gup4-rel-049",
+        "gup4-rel-050"
+      ],
+      "verdict": "SUPPORTED",
+      "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā60.11–17",
+      "claim_checked": "Earth brings son; Bhāradvāja accepts/initiation/teaching; Narmadā air-diet tapas.",
+      "support_or_problem": "11–14 acceptance/lap/upanayana,15 Vedas/śāstras and unspecified Gaṇeśa mantra,16 Narmadā lotus posture,17 sense restraint/heart meditation/japa/wind sustenance. No count of mantra syllables supplied by author.",
+      "fields": []
+    },
+    {
+      "id": "mud4-review-up-mars-tapas-manifestation",
+      "claim_ids": [
+        "gup4-e-058",
+        "gup4-event-058",
+        "gup4-a-058",
+        "gup4-power-032"
+      ],
+      "verdict": "SUPPORTED",
+      "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā60.18–27",
+      "claim_checked": "1000YEAR tapas, Māgha dark-fourth moonrise appearance; digbhuja retained.",
+      "support_or_problem": "18 exact count/time;19 digbhuja,20 form/radiance;21–25 hymn;26–27 boon offer pleased by tapas/devotion/hymn/childhood courage. No divine-year qualifier or computed1007-year age added.",
+      "fields": [
+        "austerity_or_circumstances"
+      ]
+    },
+    {
+      "id": "mud4-review-up-mars-requests",
+      "claim_ids": [
+        "gup4-e-059",
+        "gup4-event-059",
+        "gup4-power-032"
+      ],
+      "verdict": "SUPPORTED",
+      "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā60.28–31",
+      "claim_checked": "Heaven residence, nectar with gods, auspicious name and vow effects requested.",
+      "support_or_problem": "29 heaven/nectar,30 three-world auspicious-name fame,31 piety/distress removal/wishes for practitioners. Request distinct from subsequent grant/actual outcome.",
+      "fields": [
+        "requested"
+      ]
+    },
+    {
+      "id": "mud4-review-up-mars-personal-grant",
+      "claim_ids": [
+        "gup4-e-060",
+        "gup4-event-060",
+        "gup4-power-032"
+      ],
+      "verdict": "SUPPORTED",
+      "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā60.32–36",
+      "claim_checked": "Nectar/fame names, future Avantī kingship; future distinguished from actual accession.",
+      "support_or_problem": "32 nectar/Maṅgala fame,33 Aṅgāraka redness/Earth-son explanation,35 future Avantī king,36 grant/disappearance. No enacted royal accession narrated.",
+      "fields": [
+        "granted",
+        "grantor_id"
+      ]
+    },
+    {
+      "id": "mud4-review-up-mars-vow-merit",
+      "claim_ids": [
+        "gup4-power-033"
+      ],
+      "verdict": "SUPPORTED",
+      "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā60.33–35",
+      "claim_checked": "Aṅgāraka observance grants a year-equivalent merit and unobstructed acts; vow recounting wishes.",
+      "support_or_problem": "34 abda-sama merit of Saṅkaṣṭa, not year-long prerequisite for this particular observance;35 and following half-verse recitation/recounting effect.",
+      "fields": [
+        "granted",
+        "trigger"
+      ]
+    },
+    {
+      "id": "mud4-review-up-mars-image",
+      "claim_ids": [
+        "gup4-e-061",
+        "gup4-event-061",
+        "gup4-a-059",
+        "gup4-a-060",
+        "gup4-a-061",
+        "gup4-a-062",
+        "gup4-rel-051",
+        "gup4-rel-052",
+        "gup4-rel-053"
+      ],
+      "verdict": "SUPPORTED",
+      "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā60.37–39",
+      "claim_checked": "Installed ten-armed trunk-faced image, temple, Maṅgalamūrti name and efficacy.",
+      "support_or_problem": "37 explicitly daśabhuja (ten arms);38 temple/name;39 all-wish field and liberation through observance/worship/seeing.",
+      "fields": []
+    },
+    {
+      "id": "mud4-review-up-mars-site-benefit-trigger",
+      "claim_ids": [
+        "gup4-power-034"
+      ],
+      "verdict": "CORRECTION_NEEDED",
+      "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā60.39",
+      "claim_checked": "Visit/practice should track the three explicit practices.",
+      "support_or_problem": "Mechanism is supported. Trigger Visit/practice is broader than39, which names anuṣṭhāna, worship and seeing. Replace with these explicit practices at the installed site, rather than mere visit.",
+      "fields": [
+        "trigger"
+      ]
+    },
+    {
+      "id": "mud4-review-up-mars-body-transport-outcome",
+      "claim_ids": [
+        "gup4-e-062",
+        "gup4-event-062",
+        "gup4-a-063",
+        "gup4-a-064",
+        "gup4-rel-054"
+      ],
+      "verdict": "SUPPORTED",
+      "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā60.40–46",
+      "claim_checked": "Gaṇeśa Gaṇas bring him bodily by vimāna; heaven and nectar actual; Cintāmaṇi/local cult.",
+      "support_or_problem": "40 sends Gaṇas/vimāna;41 same body to Gaṇeśa vicinity;43 explicitly heaven/nectar with gods attained.44 Cintāmaṇi name,45 west of Pārinera,46 current Siddha/Gandharva moonrise worship and progeny/prosperity grant. No universal postmortem liberation substituted for bodily transport.",
+      "fields": []
+    },
+    {
+      "id": "mud4-review-up-mars-moonrise-trigger",
+      "claim_ids": [
+        "gup4-power-035"
+      ],
+      "verdict": "CORRECTION_NEEDED",
+      "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā60.45–46",
+      "claim_checked": "Moonrise worship made causal benefit trigger.",
+      "support_or_problem": "46 describes current Siddha/Gandharva worship at moonrise, then deity’s desired gifts/progeny/prosperity. It does not say human beneficiaries must worship at moonrise to receive them. Preserve cult timing as separate description; set causal trigger null unless an explicit supporting passage is supplied.",
+      "fields": [
+        "trigger"
+      ]
+    },
+    {
+      "id": "mud4-review-up-old-rebirth-pronoun",
+      "claim_ids": [
+        "gup4-e-051",
+        "gup4-event-051"
+      ],
+      "verdict": "UNDETERMINED",
+      "source_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā59.9–17",
+      "claim_checked": "Whether former-life Sāma or his son is reborn as Kṛtavīrya.",
+      "support_or_problem": "8 promises current son’s prior-birth account;9 introduces Sāma;12 calls his own son Gaṇeśa;13 explicitly says his son died;14 saḥ heaven;16 merit remainder/current Kṛtavīrya sonhood. Referent cannot be harmonized confidently from this one witness. Existing NEEDS_REVIEW/PARTIAL remains correct; keep PENDING.",
+      "fields": [
+        "identity",
+        "pronoun"
+      ]
+    }
+  ],
+  "spine_review": [
+    {
+      "id": "gup4-story-angaraka",
+      "verdict": "SUPPORTED",
+      "scope": "60.1–46",
+      "note": "All major birth/parent/guru/tapas/request/grant/image/transport/actual heaven-nectar/site-aftereffects transitions present. Narrow POWER trigger repairs above still required."
+    },
+    {
+      "id": "gup4-story-bhrushundi-origin",
+      "verdict": "UNDETERMINED",
+      "scope": "57.1–57",
+      "note": "Primary whole-body read found no major chronological gap, but naming-anatomy reading57.43 is unresolved; exact completed extraction should not receive blanket independent approval until caveated or independently settled."
+    }
+  ],
+  "limitations": "Targeted evidence review, not approval of all62events/35powers or all GP chapters. Explicit unreviewed counts retain other records as unreviewed. No printed-edition check performed."
+}

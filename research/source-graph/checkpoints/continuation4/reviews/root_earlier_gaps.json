@@ -1,0 +1,44 @@
+{
+  "review_id": "root4-earlier-lexical-gap-review",
+  "kind": "DIRECT_PRIMARY_TEXT_AND_PRIMARY_LEXICON_WITH_SECOND_AUTHOR",
+  "source_urls": [
+    "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+    "https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+    "https://sanskrit.uohyd.ac.in/SKT/MW/12.html",
+    "https://sanskrit.uohyd.ac.in/SKT/MW/195.html"
+  ],
+  "actual_read_spans": [
+    "Upāsanā53.1–18",
+    "Krīḍā42.1–11",
+    "MW apeta compound sense",
+    "MW manu headword with multiple senses"
+  ],
+  "findings": [
+    {
+      "id": "root4-apeta-clarification",
+      "status": "CORRECTION_APPLIED",
+      "record_ids": [
+        "gup4-e-019",
+        "gup4-event-019",
+        "gup4-p-53-1-7",
+        "gup4-var-53-capacity",
+        "gup4-story-candrangada"
+      ],
+      "description": "Literal apeta absence qualifier resolved; print intent remains uncollated. Parent retained the old evidence/event IDs and documented updates. Upāsanā author independently agreed."
+    },
+    {
+      "id": "root4-manor-gloss",
+      "status": "PENDING_INTERPRETIVE_CONFIRMATION",
+      "record_ids": [
+        "rfix4-e-manor-context-gloss",
+        "rfix4-a-manor-context-gloss"
+      ],
+      "description": "Lexically supported contextual mantra-power gloss preserved as INFERENCE rather than exclusive direct-text certainty; Krīḍā author independently agreed.42.10 actor remains unresolved."
+    }
+  ],
+  "limitations": [
+    "Dictionary sense does not prove authorial manuscript reading or a universal exclusive interpretation.",
+    "No additional Purāṇa or wider source extraction introduced.",
+    "Attempted scan rendering unavailable; primary dictionary HTML read directly."
+  ]
+}

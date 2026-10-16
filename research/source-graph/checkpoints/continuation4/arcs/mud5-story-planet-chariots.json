@@ -1,0 +1,954 @@
+{
+  "checkpoint": "continuation4",
+  "completed_arc_id": "mud5-story-planet-chariots",
+  "graph_sha256": "d3e53f6fb2ee6852a3b4d4e6ee677a24abac85e4ede403205172dfa77aa4306a",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checks complete; independent review selective. All declared interpretation gaps remain explicit.",
+  "story": {
+    "id": "mud5-story-planet-chariots",
+    "title": "Moon nectar cycle and planet vehicles/Dhruva account",
+    "source_id": "gp-src-mudgala",
+    "witness_id": "gp-wit-sd-mudgala-2",
+    "scope": "2.13.28–43",
+    "event_ids": [
+      "mud5-event-moon-nectar-cycle",
+      "mud5-event-nine-planet-chariots"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Entire bounded cited Sanskrit arc read; significant named actors, relationships, boons/powers, dialogue and transition checks by author. Independent root review separate.",
+    "missing_sections": [],
+    "editorial_notes": "Source narration order. Embedded narratives have their own spines; parent records their framing transitions without duplicating events."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "mud5-event-moon-nectar-cycle",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-planet-chariots",
+        "sequence": 1,
+        "passage_ids": [
+          "mud5-p-moon-nectar-cycle"
+        ],
+        "participants": [
+          "mud-en-chandra",
+          "mud-en-surya",
+          "mud5-en-dhruva",
+          "mud5-en-moon-chariot",
+          "mud5-en-susumna-ray",
+          "mud4-en-pitrs"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Moon three-wheel chariot has 10 jasmine-white horses left/right; star pathways and Dhruva support with waxing/waning. Sun Suṣumna ray replenishes Moon nectar drunk by gods in sequence over half-month. With little fifteenth-part remaining, Pitṛs attend in afternoon and drink for 2 LAVAS; remaining kalā is svadhā nectar issued through rays at amāvāsyā, giving monthly satisfaction. Moon does not perish from nectar drinking; Sun causes waxing/waning. No lava-to-modern-time conversion.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-moon-nectar-cycle"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-moon-nectar-cycle",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-moon-nectar-cycle",
+          "locator": "Mudgala2.13.28–37",
+          "paraphrase": "Moon three-wheel chariot has 10 jasmine-white horses left/right; star pathways and Dhruva support with waxing/waning. Sun Suṣumna ray replenishes Moon nectar drunk by gods in sequence over half-month. With little fifteenth-part remaining, Pitṛs attend in afternoon and drink for 2 LAVAS; remaining kalā is svadhā nectar issued through rays at amāvāsyā, giving monthly satisfaction. Moon does not perish from nectar drinking; Sun causes waxing/waning. No lava-to-modern-time conversion.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud5-event-nine-planet-chariots",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-planet-chariots",
+        "sequence": 2,
+        "passage_ids": [
+          "mud5-p-nine-planet-chariots"
+        ],
+        "participants": [
+          "mud-en-chandra",
+          "mud5-en-budha",
+          "gp-m-en-sukra",
+          "mud5-en-bhauma",
+          "mud3-en-brihaspati",
+          "mud5-en-sani",
+          "mud5-en-rahu",
+          "mud5-en-ketu",
+          "mud5-en-dhruva",
+          "mud5-en-budha-car",
+          "mud5-en-sukra-car",
+          "mud5-en-bhauma-car",
+          "mud5-en-brihaspati-car",
+          "mud5-en-sani-car",
+          "mud5-en-rahu-car",
+          "mud5-en-ketu-car"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Budha/Soma-son chariot 4 wind-speed LIONS; Bhārgava golden 8 horses; Bhauma 8 RAMS; Bṛhaspati golden 8 REDhorses; Manda iron 8 BLUEvultures; Svarbhānu/Rāhu black lions and Ketu doves, counts unspecified. All 9 planet/star stations bind Dhruva by wind-rays; he revolves and moves them in every direction. No remembered horse substitutions.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-nine-planet-chariots"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-nine-planet-chariots",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-nine-planet-chariots",
+          "locator": "Mudgala2.13.38–43",
+          "paraphrase": "Budha/Soma-son chariot 4 wind-speed LIONS; Bhārgava golden 8 horses; Bhauma 8 RAMS; Bṛhaspati golden 8 REDhorses; Manda iron 8 BLUEvultures; Svarbhānu/Rāhu black lions and Ketu doves, counts unspecified. All 9 planet/star stations bind Dhruva by wind-rays; he revolves and moves them in every direction. No remembered horse substitutions.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gp-m-en-sukra",
+      "name": "Śukra",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [
+        {
+          "name": "Uśanas",
+          "evidence_ids": [
+            "mud-e-coronation"
+          ]
+        },
+        {
+          "name": "Kavi",
+          "evidence_ids": [
+            "mud-e-sukra-siddhi-buddhi"
+          ]
+        },
+        {
+          "name": "Kāvya",
+          "evidence_ids": [
+            "mud-e-sukra-siddhi-buddhi"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "gp-e-matsara-austerity",
+        "mud-e-coronation",
+        "mud-e-naga-battle",
+        "mud-e-varuna-conquest",
+        "mud-e-gana-intervention",
+        "mud-e-sukra-siddhi-buddhi",
+        "mud5-e-luminary-extents-eclipse"
+      ]
+    },
+    {
+      "id": "mud-en-chandra",
+      "name": "Candra",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-kailasa-battle",
+        "mud3-e-stotrottama-cosmic-forms",
+        "mud4-e-marici-pulaha-atri-lines",
+        "mud5-e-world-layers-winds-distances"
+      ]
+    },
+    {
+      "id": "mud-en-surya",
+      "name": "Sūrya / Bhānu / Savitṛ",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-kailasa-battle",
+        "rmd2-e-invocation",
+        "rmd2-e-senses-gods",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-priyavrata-ganesa-initiation",
+        "mud5-e-world-layers-winds-distances"
+      ]
+    },
+    {
+      "id": "mud3-en-brihaspati",
+      "name": "Bṛhaspati in Mudgala’s heavenly invitation",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud3-e-heaven-invitation",
+        "mud5-e-luminary-extents-eclipse"
+      ]
+    },
+    {
+      "id": "mud4-en-pitrs",
+      "name": "Pitṛs, husbands of Svadhā",
+      "type": "FAMILY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-remaining-daughters-marriages",
+        "mud5-e-moon-nectar-cycle"
+      ]
+    },
+    {
+      "id": "mud5-en-dhruva",
+      "name": "Dhruva, luminary-wheel axis in cosmography",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-world-layers-winds-distances"
+      ]
+    },
+    {
+      "id": "mud5-en-rahu",
+      "name": "Rāhu in eclipse cosmography",
+      "type": "ASURA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-luminary-extents-eclipse"
+      ]
+    },
+    {
+      "id": "mud5-en-bhauma",
+      "name": "Bhauma, planet in Mudgala cosmography",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-luminary-extents-eclipse"
+      ]
+    },
+    {
+      "id": "mud5-en-sani",
+      "name": "Saura / Śanaiścara, planet in Mudgala cosmography",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-luminary-extents-eclipse"
+      ]
+    },
+    {
+      "id": "mud5-en-budha",
+      "name": "Saumya / Budha, planet in Mudgala cosmography",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-luminary-extents-eclipse"
+      ]
+    },
+    {
+      "id": "mud5-en-moon-chariot",
+      "name": "Moon three-wheel 10-white-horse chariot",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-moon-nectar-cycle"
+      ]
+    },
+    {
+      "id": "mud5-en-susumna-ray",
+      "name": "Sun Suṣumna ray replenishing Moon",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-moon-nectar-cycle"
+      ]
+    },
+    {
+      "id": "mud5-en-ketu",
+      "name": "Ketu in nine-planet chariots",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ]
+    },
+    {
+      "id": "mud5-en-budha-car",
+      "name": "Budha lion chariot",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ]
+    },
+    {
+      "id": "mud5-en-sukra-car",
+      "name": "Bhārgava golden chariot",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ]
+    },
+    {
+      "id": "mud5-en-bhauma-car",
+      "name": "Bhauma ram chariot",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ]
+    },
+    {
+      "id": "mud5-en-brihaspati-car",
+      "name": "Bṛhaspati golden chariot",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ]
+    },
+    {
+      "id": "mud5-en-sani-car",
+      "name": "Manda iron chariot",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ]
+    },
+    {
+      "id": "mud5-en-rahu-car",
+      "name": "Svarbhānu black-lion chariot",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ]
+    },
+    {
+      "id": "mud5-en-ketu-car",
+      "name": "Ketu dove chariot",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "mud5-r-moon-chariot-holder",
+      "subject_id": "mud-en-chandra",
+      "predicate": "has_vehicle",
+      "object_id": "mud5-en-moon-chariot",
+      "evidence_ids": [
+        "mud5-e-moon-nectar-cycle"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-moon-chariot-holder"
+    },
+    {
+      "id": "mud5-r-susumna-sun",
+      "subject_id": "mud5-en-susumna-ray",
+      "predicate": "ray_of",
+      "object_id": "mud-en-surya",
+      "evidence_ids": [
+        "mud5-e-moon-nectar-cycle"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-susumna-sun"
+    },
+    {
+      "id": "mud5-r-budha-car-holder",
+      "subject_id": "mud5-en-budha",
+      "predicate": "has_vehicle",
+      "object_id": "mud5-en-budha-car",
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-budha-car-holder"
+    },
+    {
+      "id": "mud5-r-sukra-car-holder",
+      "subject_id": "gp-m-en-sukra",
+      "predicate": "has_vehicle",
+      "object_id": "mud5-en-sukra-car",
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-sukra-car-holder"
+    },
+    {
+      "id": "mud5-r-bhauma-car-holder",
+      "subject_id": "mud5-en-bhauma",
+      "predicate": "has_vehicle",
+      "object_id": "mud5-en-bhauma-car",
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-bhauma-car-holder"
+    },
+    {
+      "id": "mud5-r-brihaspati-car-holder",
+      "subject_id": "mud3-en-brihaspati",
+      "predicate": "has_vehicle",
+      "object_id": "mud5-en-brihaspati-car",
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-brihaspati-car-holder"
+    },
+    {
+      "id": "mud5-r-sani-car-holder",
+      "subject_id": "mud5-en-sani",
+      "predicate": "has_vehicle",
+      "object_id": "mud5-en-sani-car",
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-sani-car-holder"
+    },
+    {
+      "id": "mud5-r-rahu-car-holder",
+      "subject_id": "mud5-en-rahu",
+      "predicate": "has_vehicle",
+      "object_id": "mud5-en-rahu-car",
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-rahu-car-holder"
+    },
+    {
+      "id": "mud5-r-ketu-car-holder",
+      "subject_id": "mud5-en-ketu",
+      "predicate": "has_vehicle",
+      "object_id": "mud5-en-ketu-car",
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-ketu-car-holder"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "mud5-power-moon-nectar",
+      "type": "POWER",
+      "recipient_id": "mud-en-chandra",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud5-e-moon-nectar-cycle"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud5-e-moon-nectar-cycle"
+        ],
+        "mechanism": [
+          "mud5-e-moon-nectar-cycle"
+        ],
+        "duration": [
+          "mud5-e-moon-nectar-cycle"
+        ],
+        "restrictions": [
+          "mud5-e-moon-nectar-cycle"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "Suṣumna replenishment; gods drink half-month; Pitṛs final portion 2 lavas and amāvāsyā-ray svadhā nectar/monthly satisfaction.",
+      "trigger": null,
+      "restrictions": "Drinking does not destroy Moon; waxing/waning dependent on Sun.",
+      "duration": "Pitṛ drinking 2 lavas; satisfaction one month.",
+      "counter": null
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "mud5-a-moon-chariot-holder",
+      "subject_id": "mud-en-chandra",
+      "predicate": "has_vehicle",
+      "object_id": "mud5-en-moon-chariot",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-moon-nectar-cycle"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-susumna-sun",
+      "subject_id": "mud5-en-susumna-ray",
+      "predicate": "ray_of",
+      "object_id": "mud-en-surya",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-moon-nectar-cycle"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-moon-car-description",
+      "subject_id": "mud5-en-moon-chariot",
+      "predicate": "source_description",
+      "object_id": null,
+      "value": "Three wheels; 10 jasmine-white horses left/right",
+      "evidence_ids": [
+        "mud5-e-moon-nectar-cycle"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-budha-car-holder",
+      "subject_id": "mud5-en-budha",
+      "predicate": "has_vehicle",
+      "object_id": "mud5-en-budha-car",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-budha-car-description",
+      "subject_id": "mud5-en-budha-car",
+      "predicate": "source_description",
+      "object_id": null,
+      "value": "4 wind-speed lions",
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-sukra-car-holder",
+      "subject_id": "gp-m-en-sukra",
+      "predicate": "has_vehicle",
+      "object_id": "mud5-en-sukra-car",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-sukra-car-description",
+      "subject_id": "mud5-en-sukra-car",
+      "predicate": "source_description",
+      "object_id": null,
+      "value": "Golden; 8 horses",
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-bhauma-car-holder",
+      "subject_id": "mud5-en-bhauma",
+      "predicate": "has_vehicle",
+      "object_id": "mud5-en-bhauma-car",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-bhauma-car-description",
+      "subject_id": "mud5-en-bhauma-car",
+      "predicate": "source_description",
+      "object_id": null,
+      "value": "8 rams",
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-brihaspati-car-holder",
+      "subject_id": "mud3-en-brihaspati",
+      "predicate": "has_vehicle",
+      "object_id": "mud5-en-brihaspati-car",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-brihaspati-car-description",
+      "subject_id": "mud5-en-brihaspati-car",
+      "predicate": "source_description",
+      "object_id": null,
+      "value": "Golden; 8 redhorses",
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-sani-car-holder",
+      "subject_id": "mud5-en-sani",
+      "predicate": "has_vehicle",
+      "object_id": "mud5-en-sani-car",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-sani-car-description",
+      "subject_id": "mud5-en-sani-car",
+      "predicate": "source_description",
+      "object_id": null,
+      "value": "Iron; 8 bluevultures",
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-rahu-car-holder",
+      "subject_id": "mud5-en-rahu",
+      "predicate": "has_vehicle",
+      "object_id": "mud5-en-rahu-car",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-rahu-car-description",
+      "subject_id": "mud5-en-rahu-car",
+      "predicate": "source_description",
+      "object_id": null,
+      "value": "Black lions; count unstated",
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-ketu-car-holder",
+      "subject_id": "mud5-en-ketu",
+      "predicate": "has_vehicle",
+      "object_id": "mud5-en-ketu-car",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-ketu-car-description",
+      "subject_id": "mud5-en-ketu-car",
+      "predicate": "source_description",
+      "object_id": null,
+      "value": "Doves; count unstated",
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-dhruva-wind-bonds",
+      "subject_id": "mud5-en-dhruva",
+      "predicate": "source_mechanism",
+      "object_id": null,
+      "value": "9 planets/star stations wind-ray bound; Dhruva revolves/moves them",
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "linked_entities": [
+    {
+      "id": "gp-m-en-sukra",
+      "name": "Śukra",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [
+        {
+          "name": "Uśanas",
+          "evidence_ids": [
+            "mud-e-coronation"
+          ]
+        },
+        {
+          "name": "Kavi",
+          "evidence_ids": [
+            "mud-e-sukra-siddhi-buddhi"
+          ]
+        },
+        {
+          "name": "Kāvya",
+          "evidence_ids": [
+            "mud-e-sukra-siddhi-buddhi"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "gp-e-matsara-austerity",
+        "mud-e-coronation",
+        "mud-e-naga-battle",
+        "mud-e-varuna-conquest",
+        "mud-e-gana-intervention",
+        "mud-e-sukra-siddhi-buddhi",
+        "mud5-e-luminary-extents-eclipse"
+      ]
+    },
+    {
+      "id": "mud-en-chandra",
+      "name": "Candra",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-kailasa-battle",
+        "mud3-e-stotrottama-cosmic-forms",
+        "mud4-e-marici-pulaha-atri-lines",
+        "mud5-e-world-layers-winds-distances"
+      ]
+    },
+    {
+      "id": "mud-en-surya",
+      "name": "Sūrya / Bhānu / Savitṛ",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-kailasa-battle",
+        "rmd2-e-invocation",
+        "rmd2-e-senses-gods",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-priyavrata-ganesa-initiation",
+        "mud5-e-world-layers-winds-distances"
+      ]
+    },
+    {
+      "id": "mud3-en-brihaspati",
+      "name": "Bṛhaspati in Mudgala’s heavenly invitation",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud3-e-heaven-invitation",
+        "mud5-e-luminary-extents-eclipse"
+      ]
+    },
+    {
+      "id": "mud4-en-pitrs",
+      "name": "Pitṛs, husbands of Svadhā",
+      "type": "FAMILY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-remaining-daughters-marriages",
+        "mud5-e-moon-nectar-cycle"
+      ]
+    },
+    {
+      "id": "mud5-en-dhruva",
+      "name": "Dhruva, luminary-wheel axis in cosmography",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-world-layers-winds-distances"
+      ]
+    },
+    {
+      "id": "mud5-en-rahu",
+      "name": "Rāhu in eclipse cosmography",
+      "type": "ASURA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-luminary-extents-eclipse"
+      ]
+    },
+    {
+      "id": "mud5-en-bhauma",
+      "name": "Bhauma, planet in Mudgala cosmography",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-luminary-extents-eclipse"
+      ]
+    },
+    {
+      "id": "mud5-en-sani",
+      "name": "Saura / Śanaiścara, planet in Mudgala cosmography",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-luminary-extents-eclipse"
+      ]
+    },
+    {
+      "id": "mud5-en-budha",
+      "name": "Saumya / Budha, planet in Mudgala cosmography",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-luminary-extents-eclipse"
+      ]
+    },
+    {
+      "id": "mud5-en-moon-chariot",
+      "name": "Moon three-wheel 10-white-horse chariot",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-moon-nectar-cycle"
+      ]
+    },
+    {
+      "id": "mud5-en-susumna-ray",
+      "name": "Sun Suṣumna ray replenishing Moon",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-moon-nectar-cycle"
+      ]
+    },
+    {
+      "id": "mud5-en-ketu",
+      "name": "Ketu in nine-planet chariots",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ]
+    },
+    {
+      "id": "mud5-en-budha-car",
+      "name": "Budha lion chariot",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ]
+    },
+    {
+      "id": "mud5-en-sukra-car",
+      "name": "Bhārgava golden chariot",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ]
+    },
+    {
+      "id": "mud5-en-bhauma-car",
+      "name": "Bhauma ram chariot",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ]
+    },
+    {
+      "id": "mud5-en-brihaspati-car",
+      "name": "Bṛhaspati golden chariot",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ]
+    },
+    {
+      "id": "mud5-en-sani-car",
+      "name": "Manda iron chariot",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ]
+    },
+    {
+      "id": "mud5-en-rahu-car",
+      "name": "Svarbhānu black-lion chariot",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ]
+    },
+    {
+      "id": "mud5-en-ketu-car",
+      "name": "Ketu dove chariot",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-nine-planet-chariots"
+      ]
+    }
+  ],
+  "linked_entity_note": "Includes event participants and related claim endpoints. Entity metadata can cite other retained source passages; the complete graph carries those references."
+}

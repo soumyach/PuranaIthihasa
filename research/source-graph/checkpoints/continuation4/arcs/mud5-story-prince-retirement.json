@@ -1,0 +1,2378 @@
+{
+  "checkpoint": "continuation4",
+  "completed_arc_id": "mud5-story-prince-retirement",
+  "graph_sha256": "d3e53f6fb2ee6852a3b4d4e6ee677a24abac85e4ede403205172dfa77aa4306a",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checks complete; independent review selective. All declared interpretation gaps remain explicit.",
+  "story": {
+    "id": "mud5-story-prince-retirement",
+    "title": "Nine Jambū sons’ region assignments and seven Priyavrata sons’ retirement",
+    "source_id": "gp-src-mudgala",
+    "witness_id": "gp-wit-sd-mudgala-2",
+    "scope": "2.11.1–4 with explicit 2.10.4 father context",
+    "event_ids": [
+      "mud5-event-jambu-sons-retirement"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Entire bounded cited Sanskrit arc read; significant named actors, relationships, boons/powers, dialogue and transition checks by author. Independent root review separate.",
+    "missing_sections": [],
+    "editorial_notes": "Source narration order. Embedded narratives have their own spines; parent records their framing transitions without duplicating events."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "mud5-event-jambu-sons-retirement",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-prince-retirement",
+        "sequence": 1,
+        "passage_ids": [
+          "mud5-p-jambu-sons-retirement",
+          "mud4-p-priyavrata-sons-retirement"
+        ],
+        "participants": [
+          "mud-en-mudgala",
+          "mud-en-daksha",
+          "mud4-en-priyavrata",
+          "mud4-en-agnidhra",
+          "mud4-en-jambu",
+          "mud5-en-seven-retiring-princes",
+          "mud5-en-seven-ganesa-abode",
+          "mud-en-vakratunda",
+          "mud5-en-nabhi",
+          "mud5-en-kimpurusa",
+          "mud5-en-hari-prince",
+          "mud5-en-ilavrta",
+          "mud5-en-hiranmaya",
+          "mud5-en-kuru",
+          "mud5-en-ramya",
+          "mud5-en-bhadrasva",
+          "mud5-en-ketumala",
+          "mud5-en-nabhi-region",
+          "mud5-en-kimpurusa-region",
+          "mud5-en-hari-prince-region",
+          "mud5-en-ilavrta-region",
+          "mud5-en-hiranmaya-region",
+          "mud5-en-kuru-region",
+          "mud5-en-ramya-region",
+          "mud5-en-bhadrasva-region",
+          "mud5-en-ketumala-region"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Mudgala says Jambū’s ruler has nine sons Nābhi, Kimpuruṣa, Hari, Ilāvṛta, Hiraṇmaya, Kuru, Ramya, Bhadrāśva, Ketumāla; he gives each an eponymous region. Father is called Jambū ruler here, not named; prior 10.4 identifies him as Āgnīdhra. The SEVEN Priyavrata sons, distinct from these nine grandsons, then enter forest, perform tapas, become Gaṇapatyas/Brahman-knowers and at the end attain Gaṇeśa’s abode without return through yoga-nondifference.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-jambu-sons-retirement",
+          "mud4-e-priyavrata-sons-retirement"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-jambu-sons-retirement",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-jambu-sons-retirement",
+          "locator": "Mudgala2.11.1–4",
+          "paraphrase": "Mudgala says Jambū’s ruler has nine sons Nābhi, Kimpuruṣa, Hari, Ilāvṛta, Hiraṇmaya, Kuru, Ramya, Bhadrāśva, Ketumāla; he gives each an eponymous region. Father is called Jambū ruler here, not named; prior 10.4 identifies him as Āgnīdhra. The SEVEN Priyavrata sons, distinct from these nine grandsons, then enter forest, perform tapas, become Gaṇapatyas/Brahman-knowers and at the end attain Gaṇeśa’s abode without return through yoga-nondifference.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        },
+        {
+          "id": "mud4-e-priyavrata-sons-retirement",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-priyavrata-sons-retirement",
+          "locator": "Mudgala2.10.1–9",
+          "paraphrase": "Priyavrata has10 powerful dharmic sons: Āgnīdhra,Idhmajihva,Yajñabāhu,Vīra,Hiraṇyaretas,Savana,Ghṛtapṛṣṭha,Medhātithi,Vītihotra,Kavi. Kavi/Savana/Vīra do not desire rule; he appoints seven others to Jambū/Plakṣa/Śālmala/Kuśa/Krauñca/Śāka/Puṣkara respectively. He then goes to forest, receives yoga from Nārada, becomes Gaṇapatya and finally Gaṇeśa-formed through yoga; source calls no comparable king past/future. Mother not specified here.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "mud-en-daksha",
+      "name": "Dakṣa",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-five-emergence",
+        "mud2-e-field-benefits",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-mudgala",
+      "name": "Mudgala",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "rmd2-e-supremacy-question",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-five-emergence",
+        "mud2-e-field-benefits",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-vakratunda",
+      "name": "Vakratunda / Gaṇeśa / Gaṇanāyaka / Vighnapa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "rmd2-e-invocation",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-tattva-boon",
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-tapas",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "rmd2-e-five-request-hymn-fruits",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-priyavrata",
+      "name": "Priyavrata",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-agnidhra",
+      "name": "Āgnīdhra (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-jambu",
+      "name": "Jambūdvīpa",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-nabhi",
+      "name": "Nābhi (Jambū ruler’s son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-nabhi-region",
+      "name": "Nābhi eponymous region in Jambū",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-kimpurusa",
+      "name": "Kimpuruṣa (Jambū ruler’s son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-kimpurusa-region",
+      "name": "Kimpuruṣa eponymous region in Jambū",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-hari-prince",
+      "name": "Hari (Jambū ruler’s son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-hari-prince-region",
+      "name": "Hari eponymous region in Jambū",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-ilavrta",
+      "name": "Ilāvṛta (Jambū ruler’s son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-ilavrta-region",
+      "name": "Ilāvṛta eponymous region in Jambū",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-hiranmaya",
+      "name": "Hiraṇmaya (Jambū ruler’s son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-hiranmaya-region",
+      "name": "Hiraṇmaya eponymous region in Jambū",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-kuru",
+      "name": "Kuru (Jambū ruler’s son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-kuru-region",
+      "name": "Kuru eponymous region in Jambū",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-ramya",
+      "name": "Ramya (Jambū ruler’s son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-ramya-region",
+      "name": "Ramya eponymous region in Jambū",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-bhadrasva",
+      "name": "Bhadrāśva (Jambū ruler’s son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-bhadrasva-region",
+      "name": "Bhadrāśva eponymous region in Jambū",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-ketumala",
+      "name": "Ketumāla (Jambū ruler’s son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-ketumala-region",
+      "name": "Ketumāla eponymous region in Jambū",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-seven-retiring-princes",
+      "name": "Seven ruling Priyavrata sons retiring in 2.11",
+      "type": "FAMILY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-seven-ganesa-abode",
+      "name": "Gaṇeśa abode attained without return by seven princes",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "mud4-r-agnidhra-priyavrata",
+      "subject_id": "mud4-en-agnidhra",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-agnidhra-priyavrata"
+    },
+    {
+      "id": "mud4-r-idhmajihva-priyavrata",
+      "subject_id": "mud4-en-idhmajihva",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-idhmajihva-priyavrata"
+    },
+    {
+      "id": "mud4-r-yajnabahu-priyavrata",
+      "subject_id": "mud4-en-yajnabahu",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-yajnabahu-priyavrata"
+    },
+    {
+      "id": "mud4-r-vira-priyavrata",
+      "subject_id": "mud4-en-vira",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-vira-priyavrata"
+    },
+    {
+      "id": "mud4-r-hiranyaretas-priyavrata",
+      "subject_id": "mud4-en-hiranyaretas",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-hiranyaretas-priyavrata"
+    },
+    {
+      "id": "mud4-r-savana-priyavrata",
+      "subject_id": "mud4-en-savana",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-savana-priyavrata"
+    },
+    {
+      "id": "mud4-r-ghrtaprstha-priyavrata",
+      "subject_id": "mud4-en-ghrtaprstha",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-ghrtaprstha-priyavrata"
+    },
+    {
+      "id": "mud4-r-medhatithi-priyavrata",
+      "subject_id": "mud4-en-medhatithi",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-medhatithi-priyavrata"
+    },
+    {
+      "id": "mud4-r-vitihotra-priyavrata",
+      "subject_id": "mud4-en-vitihotra",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-vitihotra-priyavrata"
+    },
+    {
+      "id": "mud4-r-kavi-priyavrata",
+      "subject_id": "mud4-en-kavi",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-kavi-priyavrata"
+    },
+    {
+      "id": "mud4-r-agnidhra-island-rule",
+      "subject_id": "mud4-en-agnidhra",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-jambu",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-agnidhra-island-rule"
+    },
+    {
+      "id": "mud4-r-idhmajihva-island-rule",
+      "subject_id": "mud4-en-idhmajihva",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-plaksa",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-idhmajihva-island-rule"
+    },
+    {
+      "id": "mud4-r-yajnabahu-island-rule",
+      "subject_id": "mud4-en-yajnabahu",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-salmala",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-yajnabahu-island-rule"
+    },
+    {
+      "id": "mud4-r-hiranyaretas-island-rule",
+      "subject_id": "mud4-en-hiranyaretas",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-kusa",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-hiranyaretas-island-rule"
+    },
+    {
+      "id": "mud4-r-ghrtaprstha-island-rule",
+      "subject_id": "mud4-en-ghrtaprstha",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-kraunca-island",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-ghrtaprstha-island-rule"
+    },
+    {
+      "id": "mud4-r-medhatithi-island-rule",
+      "subject_id": "mud4-en-medhatithi",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-saka",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-medhatithi-island-rule"
+    },
+    {
+      "id": "mud4-r-vitihotra-island-rule",
+      "subject_id": "mud4-en-vitihotra",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-puskara",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-vitihotra-island-rule"
+    },
+    {
+      "id": "mud5-r-nabhi-agnidhra",
+      "subject_id": "mud5-en-nabhi",
+      "predicate": "child_of",
+      "object_id": "mud4-en-agnidhra",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-nabhi-agnidhra",
+      "kinship_kind": "EXPLICIT_PREVIOUS_CHAPTER_CONTEXT"
+    },
+    {
+      "id": "mud5-r-nabhi-region-name",
+      "subject_id": "mud5-en-nabhi-region",
+      "predicate": "named_after",
+      "object_id": "mud5-en-nabhi",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-nabhi-region-name"
+    },
+    {
+      "id": "mud5-r-nabhi-region-island",
+      "subject_id": "mud5-en-nabhi-region",
+      "predicate": "part_of",
+      "object_id": "mud4-en-jambu",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-nabhi-region-island"
+    },
+    {
+      "id": "mud5-r-nabhi-region-rule",
+      "subject_id": "mud5-en-nabhi",
+      "predicate": "receives",
+      "object_id": "mud5-en-nabhi-region",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-nabhi-region-rule"
+    },
+    {
+      "id": "mud5-r-kimpurusa-agnidhra",
+      "subject_id": "mud5-en-kimpurusa",
+      "predicate": "child_of",
+      "object_id": "mud4-en-agnidhra",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-kimpurusa-agnidhra",
+      "kinship_kind": "EXPLICIT_PREVIOUS_CHAPTER_CONTEXT"
+    },
+    {
+      "id": "mud5-r-kimpurusa-region-name",
+      "subject_id": "mud5-en-kimpurusa-region",
+      "predicate": "named_after",
+      "object_id": "mud5-en-kimpurusa",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-kimpurusa-region-name"
+    },
+    {
+      "id": "mud5-r-kimpurusa-region-island",
+      "subject_id": "mud5-en-kimpurusa-region",
+      "predicate": "part_of",
+      "object_id": "mud4-en-jambu",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-kimpurusa-region-island"
+    },
+    {
+      "id": "mud5-r-kimpurusa-region-rule",
+      "subject_id": "mud5-en-kimpurusa",
+      "predicate": "receives",
+      "object_id": "mud5-en-kimpurusa-region",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-kimpurusa-region-rule"
+    },
+    {
+      "id": "mud5-r-hari-prince-agnidhra",
+      "subject_id": "mud5-en-hari-prince",
+      "predicate": "child_of",
+      "object_id": "mud4-en-agnidhra",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-hari-prince-agnidhra",
+      "kinship_kind": "EXPLICIT_PREVIOUS_CHAPTER_CONTEXT"
+    },
+    {
+      "id": "mud5-r-hari-prince-region-name",
+      "subject_id": "mud5-en-hari-prince-region",
+      "predicate": "named_after",
+      "object_id": "mud5-en-hari-prince",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-hari-prince-region-name"
+    },
+    {
+      "id": "mud5-r-hari-prince-region-island",
+      "subject_id": "mud5-en-hari-prince-region",
+      "predicate": "part_of",
+      "object_id": "mud4-en-jambu",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-hari-prince-region-island"
+    },
+    {
+      "id": "mud5-r-hari-prince-region-rule",
+      "subject_id": "mud5-en-hari-prince",
+      "predicate": "receives",
+      "object_id": "mud5-en-hari-prince-region",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-hari-prince-region-rule"
+    },
+    {
+      "id": "mud5-r-ilavrta-agnidhra",
+      "subject_id": "mud5-en-ilavrta",
+      "predicate": "child_of",
+      "object_id": "mud4-en-agnidhra",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-ilavrta-agnidhra",
+      "kinship_kind": "EXPLICIT_PREVIOUS_CHAPTER_CONTEXT"
+    },
+    {
+      "id": "mud5-r-ilavrta-region-name",
+      "subject_id": "mud5-en-ilavrta-region",
+      "predicate": "named_after",
+      "object_id": "mud5-en-ilavrta",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-ilavrta-region-name"
+    },
+    {
+      "id": "mud5-r-ilavrta-region-island",
+      "subject_id": "mud5-en-ilavrta-region",
+      "predicate": "part_of",
+      "object_id": "mud4-en-jambu",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-ilavrta-region-island"
+    },
+    {
+      "id": "mud5-r-ilavrta-region-rule",
+      "subject_id": "mud5-en-ilavrta",
+      "predicate": "receives",
+      "object_id": "mud5-en-ilavrta-region",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-ilavrta-region-rule"
+    },
+    {
+      "id": "mud5-r-hiranmaya-agnidhra",
+      "subject_id": "mud5-en-hiranmaya",
+      "predicate": "child_of",
+      "object_id": "mud4-en-agnidhra",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-hiranmaya-agnidhra",
+      "kinship_kind": "EXPLICIT_PREVIOUS_CHAPTER_CONTEXT"
+    },
+    {
+      "id": "mud5-r-hiranmaya-region-name",
+      "subject_id": "mud5-en-hiranmaya-region",
+      "predicate": "named_after",
+      "object_id": "mud5-en-hiranmaya",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-hiranmaya-region-name"
+    },
+    {
+      "id": "mud5-r-hiranmaya-region-island",
+      "subject_id": "mud5-en-hiranmaya-region",
+      "predicate": "part_of",
+      "object_id": "mud4-en-jambu",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-hiranmaya-region-island"
+    },
+    {
+      "id": "mud5-r-hiranmaya-region-rule",
+      "subject_id": "mud5-en-hiranmaya",
+      "predicate": "receives",
+      "object_id": "mud5-en-hiranmaya-region",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-hiranmaya-region-rule"
+    },
+    {
+      "id": "mud5-r-kuru-agnidhra",
+      "subject_id": "mud5-en-kuru",
+      "predicate": "child_of",
+      "object_id": "mud4-en-agnidhra",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-kuru-agnidhra",
+      "kinship_kind": "EXPLICIT_PREVIOUS_CHAPTER_CONTEXT"
+    },
+    {
+      "id": "mud5-r-kuru-region-name",
+      "subject_id": "mud5-en-kuru-region",
+      "predicate": "named_after",
+      "object_id": "mud5-en-kuru",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-kuru-region-name"
+    },
+    {
+      "id": "mud5-r-kuru-region-island",
+      "subject_id": "mud5-en-kuru-region",
+      "predicate": "part_of",
+      "object_id": "mud4-en-jambu",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-kuru-region-island"
+    },
+    {
+      "id": "mud5-r-kuru-region-rule",
+      "subject_id": "mud5-en-kuru",
+      "predicate": "receives",
+      "object_id": "mud5-en-kuru-region",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-kuru-region-rule"
+    },
+    {
+      "id": "mud5-r-ramya-agnidhra",
+      "subject_id": "mud5-en-ramya",
+      "predicate": "child_of",
+      "object_id": "mud4-en-agnidhra",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-ramya-agnidhra",
+      "kinship_kind": "EXPLICIT_PREVIOUS_CHAPTER_CONTEXT"
+    },
+    {
+      "id": "mud5-r-ramya-region-name",
+      "subject_id": "mud5-en-ramya-region",
+      "predicate": "named_after",
+      "object_id": "mud5-en-ramya",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-ramya-region-name"
+    },
+    {
+      "id": "mud5-r-ramya-region-island",
+      "subject_id": "mud5-en-ramya-region",
+      "predicate": "part_of",
+      "object_id": "mud4-en-jambu",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-ramya-region-island"
+    },
+    {
+      "id": "mud5-r-ramya-region-rule",
+      "subject_id": "mud5-en-ramya",
+      "predicate": "receives",
+      "object_id": "mud5-en-ramya-region",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-ramya-region-rule"
+    },
+    {
+      "id": "mud5-r-bhadrasva-agnidhra",
+      "subject_id": "mud5-en-bhadrasva",
+      "predicate": "child_of",
+      "object_id": "mud4-en-agnidhra",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-bhadrasva-agnidhra",
+      "kinship_kind": "EXPLICIT_PREVIOUS_CHAPTER_CONTEXT"
+    },
+    {
+      "id": "mud5-r-bhadrasva-region-name",
+      "subject_id": "mud5-en-bhadrasva-region",
+      "predicate": "named_after",
+      "object_id": "mud5-en-bhadrasva",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-bhadrasva-region-name"
+    },
+    {
+      "id": "mud5-r-bhadrasva-region-island",
+      "subject_id": "mud5-en-bhadrasva-region",
+      "predicate": "part_of",
+      "object_id": "mud4-en-jambu",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-bhadrasva-region-island"
+    },
+    {
+      "id": "mud5-r-bhadrasva-region-rule",
+      "subject_id": "mud5-en-bhadrasva",
+      "predicate": "receives",
+      "object_id": "mud5-en-bhadrasva-region",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-bhadrasva-region-rule"
+    },
+    {
+      "id": "mud5-r-ketumala-agnidhra",
+      "subject_id": "mud5-en-ketumala",
+      "predicate": "child_of",
+      "object_id": "mud4-en-agnidhra",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-ketumala-agnidhra",
+      "kinship_kind": "EXPLICIT_PREVIOUS_CHAPTER_CONTEXT"
+    },
+    {
+      "id": "mud5-r-ketumala-region-name",
+      "subject_id": "mud5-en-ketumala-region",
+      "predicate": "named_after",
+      "object_id": "mud5-en-ketumala",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-ketumala-region-name"
+    },
+    {
+      "id": "mud5-r-ketumala-region-island",
+      "subject_id": "mud5-en-ketumala-region",
+      "predicate": "part_of",
+      "object_id": "mud4-en-jambu",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-ketumala-region-island"
+    },
+    {
+      "id": "mud5-r-ketumala-region-rule",
+      "subject_id": "mud5-en-ketumala",
+      "predicate": "receives",
+      "object_id": "mud5-en-ketumala-region",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-ketumala-region-rule"
+    },
+    {
+      "id": "mud5-r-agnidhra-retiring-family",
+      "subject_id": "mud4-en-agnidhra",
+      "predicate": "member_of",
+      "object_id": "mud5-en-seven-retiring-princes",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-agnidhra-retiring-family"
+    },
+    {
+      "id": "mud5-r-idhmajihva-retiring-family",
+      "subject_id": "mud4-en-idhmajihva",
+      "predicate": "member_of",
+      "object_id": "mud5-en-seven-retiring-princes",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-idhmajihva-retiring-family"
+    },
+    {
+      "id": "mud5-r-yajnabahu-retiring-family",
+      "subject_id": "mud4-en-yajnabahu",
+      "predicate": "member_of",
+      "object_id": "mud5-en-seven-retiring-princes",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-yajnabahu-retiring-family"
+    },
+    {
+      "id": "mud5-r-hiranyaretas-retiring-family",
+      "subject_id": "mud4-en-hiranyaretas",
+      "predicate": "member_of",
+      "object_id": "mud5-en-seven-retiring-princes",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-hiranyaretas-retiring-family"
+    },
+    {
+      "id": "mud5-r-ghrtaprstha-retiring-family",
+      "subject_id": "mud4-en-ghrtaprstha",
+      "predicate": "member_of",
+      "object_id": "mud5-en-seven-retiring-princes",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-ghrtaprstha-retiring-family"
+    },
+    {
+      "id": "mud5-r-medhatithi-retiring-family",
+      "subject_id": "mud4-en-medhatithi",
+      "predicate": "member_of",
+      "object_id": "mud5-en-seven-retiring-princes",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-medhatithi-retiring-family"
+    },
+    {
+      "id": "mud5-r-vitihotra-retiring-family",
+      "subject_id": "mud4-en-vitihotra",
+      "predicate": "member_of",
+      "object_id": "mud5-en-seven-retiring-princes",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-vitihotra-retiring-family"
+    },
+    {
+      "id": "mud5-r-seven-priyavrata",
+      "subject_id": "mud5-en-seven-retiring-princes",
+      "predicate": "collective_children_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-seven-priyavrata"
+    },
+    {
+      "id": "mud5-r-seven-final-abode",
+      "subject_id": "mud5-en-seven-retiring-princes",
+      "predicate": "attains",
+      "object_id": "mud5-en-seven-ganesa-abode",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-seven-final-abode"
+    }
+  ],
+  "event_evidence_boons_and_powers": [],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "mud4-a-agnidhra-priyavrata",
+      "subject_id": "mud4-en-agnidhra",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-idhmajihva-priyavrata",
+      "subject_id": "mud4-en-idhmajihva",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-yajnabahu-priyavrata",
+      "subject_id": "mud4-en-yajnabahu",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-vira-priyavrata",
+      "subject_id": "mud4-en-vira",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-hiranyaretas-priyavrata",
+      "subject_id": "mud4-en-hiranyaretas",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-savana-priyavrata",
+      "subject_id": "mud4-en-savana",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-ghrtaprstha-priyavrata",
+      "subject_id": "mud4-en-ghrtaprstha",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-medhatithi-priyavrata",
+      "subject_id": "mud4-en-medhatithi",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-vitihotra-priyavrata",
+      "subject_id": "mud4-en-vitihotra",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-kavi-priyavrata",
+      "subject_id": "mud4-en-kavi",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-agnidhra-island-rule",
+      "subject_id": "mud4-en-agnidhra",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-jambu",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-idhmajihva-island-rule",
+      "subject_id": "mud4-en-idhmajihva",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-plaksa",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-yajnabahu-island-rule",
+      "subject_id": "mud4-en-yajnabahu",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-salmala",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-hiranyaretas-island-rule",
+      "subject_id": "mud4-en-hiranyaretas",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-kusa",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-ghrtaprstha-island-rule",
+      "subject_id": "mud4-en-ghrtaprstha",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-kraunca-island",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-medhatithi-island-rule",
+      "subject_id": "mud4-en-medhatithi",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-saka",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-vitihotra-island-rule",
+      "subject_id": "mud4-en-vitihotra",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-puskara",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-kavi-rule-refusal",
+      "subject_id": "mud4-en-kavi",
+      "predicate": "disposition",
+      "object_id": null,
+      "value": "Does not desire kingdom",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-savana-rule-refusal",
+      "subject_id": "mud4-en-savana",
+      "predicate": "disposition",
+      "object_id": null,
+      "value": "Does not desire kingdom",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-vira-rule-refusal",
+      "subject_id": "mud4-en-vira",
+      "predicate": "disposition",
+      "object_id": null,
+      "value": "Does not desire kingdom",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-priyavrata-final-yoga",
+      "subject_id": "mud4-en-priyavrata",
+      "predicate": "outcome",
+      "object_id": null,
+      "value": "After appointing seven sons, forest yoga from Nārada, Gaṇapatya and finally Gaṇeśa-formed; no remembered road/ocean-creation episode inserted",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-nabhi-agnidhra",
+      "subject_id": "mud5-en-nabhi",
+      "predicate": "child_of",
+      "object_id": "mud4-en-agnidhra",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-nabhi-region-name",
+      "subject_id": "mud5-en-nabhi-region",
+      "predicate": "named_after",
+      "object_id": "mud5-en-nabhi",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-nabhi-region-island",
+      "subject_id": "mud5-en-nabhi-region",
+      "predicate": "part_of",
+      "object_id": "mud4-en-jambu",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-nabhi-region-rule",
+      "subject_id": "mud5-en-nabhi",
+      "predicate": "receives",
+      "object_id": "mud5-en-nabhi-region",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-kimpurusa-agnidhra",
+      "subject_id": "mud5-en-kimpurusa",
+      "predicate": "child_of",
+      "object_id": "mud4-en-agnidhra",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-kimpurusa-region-name",
+      "subject_id": "mud5-en-kimpurusa-region",
+      "predicate": "named_after",
+      "object_id": "mud5-en-kimpurusa",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-kimpurusa-region-island",
+      "subject_id": "mud5-en-kimpurusa-region",
+      "predicate": "part_of",
+      "object_id": "mud4-en-jambu",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-kimpurusa-region-rule",
+      "subject_id": "mud5-en-kimpurusa",
+      "predicate": "receives",
+      "object_id": "mud5-en-kimpurusa-region",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-hari-prince-agnidhra",
+      "subject_id": "mud5-en-hari-prince",
+      "predicate": "child_of",
+      "object_id": "mud4-en-agnidhra",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-hari-prince-region-name",
+      "subject_id": "mud5-en-hari-prince-region",
+      "predicate": "named_after",
+      "object_id": "mud5-en-hari-prince",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-hari-prince-region-island",
+      "subject_id": "mud5-en-hari-prince-region",
+      "predicate": "part_of",
+      "object_id": "mud4-en-jambu",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-hari-prince-region-rule",
+      "subject_id": "mud5-en-hari-prince",
+      "predicate": "receives",
+      "object_id": "mud5-en-hari-prince-region",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-ilavrta-agnidhra",
+      "subject_id": "mud5-en-ilavrta",
+      "predicate": "child_of",
+      "object_id": "mud4-en-agnidhra",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-ilavrta-region-name",
+      "subject_id": "mud5-en-ilavrta-region",
+      "predicate": "named_after",
+      "object_id": "mud5-en-ilavrta",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-ilavrta-region-island",
+      "subject_id": "mud5-en-ilavrta-region",
+      "predicate": "part_of",
+      "object_id": "mud4-en-jambu",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-ilavrta-region-rule",
+      "subject_id": "mud5-en-ilavrta",
+      "predicate": "receives",
+      "object_id": "mud5-en-ilavrta-region",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-hiranmaya-agnidhra",
+      "subject_id": "mud5-en-hiranmaya",
+      "predicate": "child_of",
+      "object_id": "mud4-en-agnidhra",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-hiranmaya-region-name",
+      "subject_id": "mud5-en-hiranmaya-region",
+      "predicate": "named_after",
+      "object_id": "mud5-en-hiranmaya",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-hiranmaya-region-island",
+      "subject_id": "mud5-en-hiranmaya-region",
+      "predicate": "part_of",
+      "object_id": "mud4-en-jambu",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-hiranmaya-region-rule",
+      "subject_id": "mud5-en-hiranmaya",
+      "predicate": "receives",
+      "object_id": "mud5-en-hiranmaya-region",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-kuru-agnidhra",
+      "subject_id": "mud5-en-kuru",
+      "predicate": "child_of",
+      "object_id": "mud4-en-agnidhra",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-kuru-region-name",
+      "subject_id": "mud5-en-kuru-region",
+      "predicate": "named_after",
+      "object_id": "mud5-en-kuru",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-kuru-region-island",
+      "subject_id": "mud5-en-kuru-region",
+      "predicate": "part_of",
+      "object_id": "mud4-en-jambu",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-kuru-region-rule",
+      "subject_id": "mud5-en-kuru",
+      "predicate": "receives",
+      "object_id": "mud5-en-kuru-region",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-ramya-agnidhra",
+      "subject_id": "mud5-en-ramya",
+      "predicate": "child_of",
+      "object_id": "mud4-en-agnidhra",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-ramya-region-name",
+      "subject_id": "mud5-en-ramya-region",
+      "predicate": "named_after",
+      "object_id": "mud5-en-ramya",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-ramya-region-island",
+      "subject_id": "mud5-en-ramya-region",
+      "predicate": "part_of",
+      "object_id": "mud4-en-jambu",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-ramya-region-rule",
+      "subject_id": "mud5-en-ramya",
+      "predicate": "receives",
+      "object_id": "mud5-en-ramya-region",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-bhadrasva-agnidhra",
+      "subject_id": "mud5-en-bhadrasva",
+      "predicate": "child_of",
+      "object_id": "mud4-en-agnidhra",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-bhadrasva-region-name",
+      "subject_id": "mud5-en-bhadrasva-region",
+      "predicate": "named_after",
+      "object_id": "mud5-en-bhadrasva",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-bhadrasva-region-island",
+      "subject_id": "mud5-en-bhadrasva-region",
+      "predicate": "part_of",
+      "object_id": "mud4-en-jambu",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-bhadrasva-region-rule",
+      "subject_id": "mud5-en-bhadrasva",
+      "predicate": "receives",
+      "object_id": "mud5-en-bhadrasva-region",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-ketumala-agnidhra",
+      "subject_id": "mud5-en-ketumala",
+      "predicate": "child_of",
+      "object_id": "mud4-en-agnidhra",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-ketumala-region-name",
+      "subject_id": "mud5-en-ketumala-region",
+      "predicate": "named_after",
+      "object_id": "mud5-en-ketumala",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-ketumala-region-island",
+      "subject_id": "mud5-en-ketumala-region",
+      "predicate": "part_of",
+      "object_id": "mud4-en-jambu",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-ketumala-region-rule",
+      "subject_id": "mud5-en-ketumala",
+      "predicate": "receives",
+      "object_id": "mud5-en-ketumala-region",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-agnidhra-retiring-family",
+      "subject_id": "mud4-en-agnidhra",
+      "predicate": "member_of",
+      "object_id": "mud5-en-seven-retiring-princes",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-idhmajihva-retiring-family",
+      "subject_id": "mud4-en-idhmajihva",
+      "predicate": "member_of",
+      "object_id": "mud5-en-seven-retiring-princes",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-yajnabahu-retiring-family",
+      "subject_id": "mud4-en-yajnabahu",
+      "predicate": "member_of",
+      "object_id": "mud5-en-seven-retiring-princes",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-hiranyaretas-retiring-family",
+      "subject_id": "mud4-en-hiranyaretas",
+      "predicate": "member_of",
+      "object_id": "mud5-en-seven-retiring-princes",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-ghrtaprstha-retiring-family",
+      "subject_id": "mud4-en-ghrtaprstha",
+      "predicate": "member_of",
+      "object_id": "mud5-en-seven-retiring-princes",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-medhatithi-retiring-family",
+      "subject_id": "mud4-en-medhatithi",
+      "predicate": "member_of",
+      "object_id": "mud5-en-seven-retiring-princes",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-vitihotra-retiring-family",
+      "subject_id": "mud4-en-vitihotra",
+      "predicate": "member_of",
+      "object_id": "mud5-en-seven-retiring-princes",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-seven-priyavrata",
+      "subject_id": "mud5-en-seven-retiring-princes",
+      "predicate": "collective_children_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement",
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-seven-final-abode",
+      "subject_id": "mud5-en-seven-retiring-princes",
+      "predicate": "attains",
+      "object_id": "mud5-en-seven-ganesa-abode",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-seven-returnless-yoga",
+      "subject_id": "mud5-en-seven-retiring-princes",
+      "predicate": "narrated_outcome",
+      "object_id": null,
+      "value": "Forest tapas, Gaṇapatya/Brahman knowledge, final returnless Gaṇeśa abode through yoga-nondifference",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "linked_entities": [
+    {
+      "id": "mud-en-daksha",
+      "name": "Dakṣa",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-five-emergence",
+        "mud2-e-field-benefits",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-mudgala",
+      "name": "Mudgala",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "rmd2-e-supremacy-question",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-five-emergence",
+        "mud2-e-field-benefits",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-vakratunda",
+      "name": "Vakratunda / Gaṇeśa / Gaṇanāyaka / Vighnapa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "rmd2-e-invocation",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-tattva-boon",
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-tapas",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "rmd2-e-five-request-hymn-fruits",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-priyavrata",
+      "name": "Priyavrata",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-agnidhra",
+      "name": "Āgnīdhra (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-idhmajihva",
+      "name": "Idhmajihva (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-yajnabahu",
+      "name": "Yajñabāhu (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-vira",
+      "name": "Vīra (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-hiranyaretas",
+      "name": "Hiraṇyaretas (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-savana",
+      "name": "Savana (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-ghrtaprstha",
+      "name": "Ghṛtapṛṣṭha (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-medhatithi",
+      "name": "Medhātithi (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-vitihotra",
+      "name": "Vītihotra (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-kavi",
+      "name": "Kavi (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-jambu",
+      "name": "Jambūdvīpa",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-plaksa",
+      "name": "Plakṣadvīpa",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-salmala",
+      "name": "Śālmaladvīpa",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-kusa",
+      "name": "Kuśadvīpa",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-kraunca-island",
+      "name": "Krauñcadvīpa",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-saka",
+      "name": "Śākadvīpa",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-puskara",
+      "name": "Puṣkaradvīpa",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-nabhi",
+      "name": "Nābhi (Jambū ruler’s son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-nabhi-region",
+      "name": "Nābhi eponymous region in Jambū",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-kimpurusa",
+      "name": "Kimpuruṣa (Jambū ruler’s son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-kimpurusa-region",
+      "name": "Kimpuruṣa eponymous region in Jambū",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-hari-prince",
+      "name": "Hari (Jambū ruler’s son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-hari-prince-region",
+      "name": "Hari eponymous region in Jambū",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-ilavrta",
+      "name": "Ilāvṛta (Jambū ruler’s son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-ilavrta-region",
+      "name": "Ilāvṛta eponymous region in Jambū",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-hiranmaya",
+      "name": "Hiraṇmaya (Jambū ruler’s son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-hiranmaya-region",
+      "name": "Hiraṇmaya eponymous region in Jambū",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-kuru",
+      "name": "Kuru (Jambū ruler’s son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-kuru-region",
+      "name": "Kuru eponymous region in Jambū",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-ramya",
+      "name": "Ramya (Jambū ruler’s son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-ramya-region",
+      "name": "Ramya eponymous region in Jambū",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-bhadrasva",
+      "name": "Bhadrāśva (Jambū ruler’s son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-bhadrasva-region",
+      "name": "Bhadrāśva eponymous region in Jambū",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-ketumala",
+      "name": "Ketumāla (Jambū ruler’s son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-ketumala-region",
+      "name": "Ketumāla eponymous region in Jambū",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-seven-retiring-princes",
+      "name": "Seven ruling Priyavrata sons retiring in 2.11",
+      "type": "FAMILY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-seven-ganesa-abode",
+      "name": "Gaṇeśa abode attained without return by seven princes",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ]
+    }
+  ],
+  "linked_entity_note": "Includes event participants and related claim endpoints. Entity metadata can cite other retained source passages; the complete graph carries those references."
+}

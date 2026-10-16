@@ -1,0 +1,2694 @@
+{
+  "checkpoint": "continuation4",
+  "completed_arc_id": "gup5-story-vow-exempla",
+  "graph_sha256": "d3e53f6fb2ee6852a3b4d4e6ee677a24abac85e4ede403205172dfa77aa4306a",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checks complete; independent review selective. All declared interpretation gaps remain explicit.",
+  "story": {
+    "id": "gup5-story-vow-exempla",
+    "title": "Brahmā’s brief earlier-practitioner reports and transmission rules",
+    "source_id": "gp-src-ganesha",
+    "witness_id": "gp-wit-sd-upasana",
+    "scope": "70.1–25",
+    "event_ids": [
+      "gup5-event-054",
+      "gup5-event-055",
+      "gup5-event-056",
+      "gup5-event-057"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "All bodies and named transitions in this bounded witness-local scope are read and extracted; its stated ending is present.",
+    "missing_sections": [],
+    "editorial_notes": "Source-order embedded narration remains distinct from chronology. Brief reports are complete only as bounded reports in this witness, not exhaustive biographies or other-corpus arcs. Ritual formula claims do not become new narrated births."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "gup5-event-054",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-vow-exempla",
+        "sequence": 54,
+        "passage_ids": [
+          "gup5-p-70-1-5"
+        ],
+        "participants": [
+          "gup4-en-083",
+          "gp-en-brahma",
+          "gkr-en-uma",
+          "gup-en-009",
+          "gup-en-064",
+          "gkr4-en-agastya38",
+          "gup4-en-021",
+          "gup4-en-020",
+          "gup4-en-079"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "The king asks who first practiced and disclosed the vow and what merit/results it gives. Brahmā says Pārvatī practiced at Śiva’s instruction for four months when Skanda was gone and saw Kārttikeya in the fifth. Agastya desiring to drink the ocean practiced and drank it through Vighneśa’s favour in three months. Damayantī searching for Nala practiced for six months and then saw him. These are brief source reports; no unprovided journeys or battle details are added.",
+        "outcome": "Three retrospective exempla give specific practice intervals and actual reported outcomes.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "gup5-power-040",
+          "gup5-power-041",
+          "gup5-power-042"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-059"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-059",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-70-1-5",
+          "locator": "Upāsanā 70.1–5",
+          "paraphrase": "The king asks who first practiced and disclosed the vow and what merit/results it gives. Brahmā says Pārvatī practiced at Śiva’s instruction for four months when Skanda was gone and saw Kārttikeya in the fifth. Agastya desiring to drink the ocean practiced and drank it through Vighneśa’s favour in three months. Damayantī searching for Nala practiced for six months and then saw him. These are brief source reports; no unprovided journeys or battle details are added.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-055",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-vow-exempla",
+        "sequence": 55,
+        "passage_ids": [
+          "gup5-p-70-5-12"
+        ],
+        "participants": [
+          "gup5-en-135",
+          "gup5-en-136",
+          "gup5-en-137",
+          "gup5-en-138",
+          "gp-en-lomasa",
+          "gp-en-ganesha"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Citralekhā had taken Pradyumna’s son away. Grieving and uncertain where or by whom he was taken, Pradyumna hears Rukmiṇī address him as her son. She recalls Śambara abducting him when he was six days old, many years of grief and comparisons with other women’s growing sons, then Lomaśa’s fortunate visit and instruction in Sankaṣṭa-caturthī. She practiced four times; through its favour Pradyumna returned after killing Śambara in battle. She urges him to practice the same vow so he will learn where his son is.",
+        "outcome": "Rukmiṇī’s retrospective rescue experience becomes explicit mother-to-son instruction for a new search.",
+        "changed_relationship_ids": [
+          "gup5-rel-061",
+          "gup5-rel-062",
+          "gup5-rel-063",
+          "gup5-rel-064",
+          "gup5-rel-069",
+          "gup5-rel-070"
+        ],
+        "introduced_entity_ids": [
+          "gup5-en-135",
+          "gup5-en-136",
+          "gup5-en-137",
+          "gup5-en-138"
+        ],
+        "introduced_power_ids": [
+          "gup5-power-043"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-060"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-060",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-70-5-12",
+          "locator": "Upāsanā 70.5–12",
+          "paraphrase": "Citralekhā had taken Pradyumna’s son away. Grieving and uncertain where or by whom he was taken, Pradyumna hears Rukmiṇī address him as her son. She recalls Śambara abducting him when he was six days old, many years of grief and comparisons with other women’s growing sons, then Lomaśa’s fortunate visit and instruction in Sankaṣṭa-caturthī. She practiced four times; through its favour Pradyumna returned after killing Śambara in battle. She urges him to practice the same vow so he will learn where his son is.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-056",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-vow-exempla",
+        "sequence": 56,
+        "passage_ids": [
+          "gup5-p-70-13-15"
+        ],
+        "participants": [
+          "gp-en-brahma",
+          "gup5-en-136",
+          "gup-en-005",
+          "gup5-en-139",
+          "gup2-en-059",
+          "gup5-en-140",
+          "gup5-en-141",
+          "gup5-en-142",
+          "gup5-en-143",
+          "gup5-en-135",
+          "gup5-en-154"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Brahmā says Pradyumna practices the pleasing vow and hears from Nārada that the son is detained in Bāṇāsura’s city. At Uddhava’s instruction Kṛṣṇa, fearing a battle with Īśvara, properly practices the vow once. He goes to Śoṇitapura, defeats Bāṇāsura in combat, and quickly brings Aniruddha with Uṣā.",
+        "outcome": "Nārada locates the detained son; one vow, actual combat victory and retrieval follow. No weapons or marriage ceremony are supplied here.",
+        "changed_relationship_ids": [
+          "gup5-rel-065",
+          "gup5-rel-066",
+          "gup5-rel-067",
+          "gup5-rel-068",
+          "gup5-rel-069",
+          "gup5-rel-070"
+        ],
+        "introduced_entity_ids": [
+          "gup5-en-139",
+          "gup5-en-140",
+          "gup5-en-141",
+          "gup5-en-142",
+          "gup5-en-143",
+          "gup5-en-154"
+        ],
+        "introduced_power_ids": [
+          "gup5-power-044",
+          "gup5-power-045"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-061"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-061",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-70-13-15",
+          "locator": "Upāsanā 70.13–15",
+          "paraphrase": "Brahmā says Pradyumna practices the pleasing vow and hears from Nārada that the son is detained in Bāṇāsura’s city. At Uddhava’s instruction Kṛṣṇa, fearing a battle with Īśvara, properly practices the vow once. He goes to Śoṇitapura, defeats Bāṇāsura in combat, and quickly brings Aniruddha with Uṣā.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-057",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-vow-exempla",
+        "sequence": 57,
+        "passage_ids": [
+          "gup5-p-70-16-25"
+        ],
+        "participants": [
+          "gp-en-brahma",
+          "gup4-en-083",
+          "gp-en-ganesha",
+          "gup-en-100",
+          "gup5-en-144",
+          "gup-en-117",
+          "gup-en-109",
+          "gup2-en-032",
+          "gup-en-115",
+          "gup-en-111",
+          "gup5-en-064",
+          "gup-en-110",
+          "gup4-en-079"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Brahmā says he too performed the vow desiring creation and produced varied creation through its power. Gods, asuras, humans, sages, Dānavas, Yakṣas, Kinnaras, Uragas and Rākṣasas also practiced to quell obstacles. He instructs practice during distress, hearing the story, silent eating with hands between knees while meditating Gaṇeśa, and sharing the Brahmins’ remainder with relatives. Tasks accomplish in few months. Teach neither non-devotees, atheists nor deceitful people, but a son, pupil or virtuous devotee. Calling the king dear, righteous and a worker for public good, Brahmā says to perform this before other vows; men and women should perform it before intended tasks.",
+        "outcome": "Reported creation and wider practitioners support instructions, timing and transmission restrictions.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [
+          "gup5-en-144"
+        ],
+        "introduced_power_ids": [
+          "gup5-power-046",
+          "gup5-power-047"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-062"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-062",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-70-16-25",
+          "locator": "Upāsanā 70.16–25",
+          "paraphrase": "Brahmā says he too performed the vow desiring creation and produced varied creation through its power. Gods, asuras, humans, sages, Dānavas, Yakṣas, Kinnaras, Uragas and Rākṣasas also practiced to quell obstacles. He instructs practice during distress, hearing the story, silent eating with hands between knees while meditating Gaṇeśa, and sharing the Brahmins’ remainder with relatives. Tasks accomplish in few months. Teach neither non-devotees, atheists nor deceitful people, but a son, pupil or virtuous devotee. Calling the king dear, righteous and a worker for public good, Brahmā says to perform this before other vows; men and women should perform it before intended tasks.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gp-en-brahma",
+      "name": "Brahmā",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-frame",
+        "gup-e-001",
+        "gup-e-024",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-036",
+        "gup-e-037",
+        "gup-e-038",
+        "gup-e-039",
+        "gup-e-040",
+        "gup-e-041",
+        "gup-e-042",
+        "gup-e-049",
+        "gup-e-050",
+        "gup-e-073",
+        "gup-e-084",
+        "gup-e-086",
+        "gup-e-089",
+        "gup-e-092",
+        "gup-e-094",
+        "gkr-e-frame",
+        "gup2-e-006",
+        "gup2-e-014",
+        "gup2-e-016",
+        "gup2-e-021",
+        "gup2-e-027",
+        "gup2-e-032",
+        "gup2-e-035",
+        "gup2-e-038",
+        "gup2-e-044",
+        "gup2-e-047",
+        "gup2-e-051",
+        "gup2-e-056",
+        "gup2-e-060",
+        "gup2-e-067",
+        "gkr2-e-remote-offering",
+        "gkr2-e-well-conspiracy",
+        "gkr2-e-trio-plan",
+        "gup3-e-005",
+        "gup3-e-008",
+        "gup3-e-012",
+        "gkr3-e-frame27",
+        "gkr3-e-virtuous-king",
+        "gkr3-e-succession27",
+        "gkr3-e-prior-merit-release",
+        "gkr3-e-kasyapa-creation",
+        "gkr3-e-indra-vishnu",
+        "gup4-e-010",
+        "gup4-e-013",
+        "gup4-e-014",
+        "gup4-e-016",
+        "gup4-e-035",
+        "gup4-e-036",
+        "gup4-e-050",
+        "gup4-e-051",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-055",
+        "gup4-e-056",
+        "gkr4-e-vamana-aftermath-image",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-durasada-conquest",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-dhundhiraja-name-aftermath",
+        "gup5-e-001",
+        "gup5-e-002",
+        "gup5-e-012",
+        "gup5-e-018",
+        "gup5-e-025",
+        "gup5-e-041",
+        "gup5-e-043",
+        "gup5-e-045",
+        "gup5-e-046",
+        "gup5-e-047",
+        "gup5-e-049",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-059",
+        "gup5-e-061",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066",
+        "gkr5-e-divodasa-rule",
+        "gkr5-e-marici-liberation",
+        "gkr5-e-realm-introduction49",
+        "gkr5-e-realm-cosmic-yogic-body",
+        "gkr5-e-king-final-worship",
+        "gkr5-e-king-reunion-hymn",
+        "gkr5-e-king-hymn-transmission-benefits",
+        "gkr5-e-return-to-sukla-chronology-frame"
+      ]
+    },
+    {
+      "id": "gp-en-ganesha",
+      "name": "Gaṇeśa",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-result",
+        "gup-e-001",
+        "gup-e-005",
+        "gup-e-008",
+        "gup-e-014",
+        "gup-e-021",
+        "gup-e-023",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-036",
+        "gup-e-037",
+        "gup-e-038",
+        "gup-e-039",
+        "gup-e-040",
+        "gup-e-042",
+        "gup-e-044",
+        "gup-e-045",
+        "gup-e-046",
+        "gup-e-047",
+        "gup-e-049",
+        "gup-e-051",
+        "gup-e-053",
+        "gup-e-054",
+        "gup-e-055",
+        "gup-e-056",
+        "gup-e-057",
+        "gup-e-058",
+        "gup-e-059",
+        "gup-e-060",
+        "gup-e-062",
+        "gup-e-063",
+        "gup-e-064",
+        "gup-e-065",
+        "gup-e-066",
+        "gup-e-067",
+        "gup-e-070",
+        "gup-e-071",
+        "gup-e-072",
+        "gup-e-073",
+        "gup-e-074",
+        "gup-e-075",
+        "gup-e-076",
+        "gup-e-085",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-088",
+        "gup-e-089",
+        "gup-e-090",
+        "gup-e-091",
+        "gup-e-092",
+        "gup-e-093",
+        "gup-e-094",
+        "gkr-e-ages",
+        "gup2-e-007",
+        "gup2-e-011",
+        "gup2-e-012",
+        "gup2-e-013",
+        "gup2-e-014",
+        "gup2-e-015",
+        "gup2-e-017",
+        "gup2-e-018",
+        "gup2-e-019",
+        "gup2-e-020",
+        "gup2-e-021",
+        "gup2-e-029",
+        "gup2-e-030",
+        "gup2-e-031",
+        "gup2-e-032",
+        "gup2-e-033",
+        "gup2-e-036",
+        "gup2-e-045",
+        "gup2-e-046",
+        "gup2-e-047",
+        "gup2-e-048",
+        "gup2-e-049",
+        "gup2-e-050",
+        "gup2-e-051",
+        "gup2-e-052",
+        "gup2-e-056",
+        "gup2-e-057",
+        "gup2-e-058",
+        "gup2-e-059",
+        "gup2-e-060",
+        "gup2-e-063",
+        "gup2-e-064",
+        "gup2-e-066",
+        "gkr2-e-leaf-and-vamana",
+        "gkr2-e-hunter-demon-liberation",
+        "gup3-e-004",
+        "gup3-e-005",
+        "gup3-e-006",
+        "gup3-e-007",
+        "gup3-e-008",
+        "gup3-e-009",
+        "gup3-e-010",
+        "gup3-e-011",
+        "gup3-e-012",
+        "gup3-e-013",
+        "gup3-e-014",
+        "gup3-e-015",
+        "gup3-e-016",
+        "gup3-e-017",
+        "gup3-e-018",
+        "gkr3-e-rama-father-varada",
+        "gkr3-e-incidental-worship",
+        "gkr3-e-prior-merit-release",
+        "gup4-e-002",
+        "gup4-e-003",
+        "gup4-e-005",
+        "gup4-e-009",
+        "gup4-e-010",
+        "gup4-e-011",
+        "gup4-e-012",
+        "gup4-e-015",
+        "gup4-e-016",
+        "gup4-e-017",
+        "gup4-e-018",
+        "gup4-e-027",
+        "gup4-e-028",
+        "gup4-e-029",
+        "gup4-e-031",
+        "gup4-e-033",
+        "gup4-e-034",
+        "gup4-e-035",
+        "gup4-e-038",
+        "gup4-e-040",
+        "gup4-e-042",
+        "gup4-e-044",
+        "gup4-e-048",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-057",
+        "gup4-e-058",
+        "gup4-e-059",
+        "gup4-e-060",
+        "gup4-e-061",
+        "gup4-e-062",
+        "gkr4-e-vamana-guru-tapas",
+        "gkr4-e-vamana-request-grant",
+        "gkr4-e-vamana-installation",
+        "gkr4-e-water-steps-promises",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-sages-vision-hymn",
+        "gkr4-e-trees-request-alternative",
+        "gkr4-e-tree-benefits",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-worship-vision",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-devi-ganesa-prayer",
+        "gup5-e-001",
+        "gup5-e-002",
+        "gup5-e-003",
+        "gup5-e-004",
+        "gup5-e-005",
+        "gup5-e-006",
+        "gup5-e-008",
+        "gup5-e-009",
+        "gup5-e-010",
+        "gup5-e-012",
+        "gup5-e-014",
+        "gup5-e-015",
+        "gup5-e-016",
+        "gup5-e-019",
+        "gup5-e-021",
+        "gup5-e-022",
+        "gup5-e-023",
+        "gup5-e-024",
+        "gup5-e-025",
+        "gup5-e-026",
+        "gup5-e-027",
+        "gup5-e-029",
+        "gup5-e-030",
+        "gup5-e-031",
+        "gup5-e-032",
+        "gup5-e-033",
+        "gup5-e-034",
+        "gup5-e-035",
+        "gup5-e-036",
+        "gup5-e-041",
+        "gup5-e-042",
+        "gup5-e-043",
+        "gup5-e-045",
+        "gup5-e-047",
+        "gup5-e-049",
+        "gup5-e-050",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-060",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066",
+        "gup5-e-067",
+        "gkr5-e-realm-introduction49"
+      ]
+    },
+    {
+      "id": "gp-en-lomasa",
+      "name": "Lomaśa",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-frame",
+        "gup5-e-060"
+      ]
+    },
+    {
+      "id": "gup-en-005",
+      "name": "Nārada",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-077",
+        "gup-e-078",
+        "gup-e-079",
+        "gup-e-082",
+        "gup-e-083",
+        "gup-e-084",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-091",
+        "gup-e-092",
+        "gup2-e-029",
+        "gup2-e-034",
+        "gup2-e-044",
+        "gup2-e-045",
+        "gup2-e-063",
+        "gup2-e-066",
+        "gup3-e-004",
+        "gup4-e-026",
+        "gup4-e-027",
+        "gup4-e-028",
+        "gup4-e-038",
+        "gup4-e-043",
+        "gup4-e-045",
+        "gup4-e-046",
+        "gup4-e-047",
+        "gup5-e-001",
+        "gup5-e-018",
+        "gup5-e-019",
+        "gup5-e-024",
+        "gup5-e-029",
+        "gup5-e-030",
+        "gup5-e-031",
+        "gup5-e-047",
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup-en-009",
+      "name": "Śiva",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-003",
+        "gup-e-005",
+        "gup-e-014",
+        "gup-e-025",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-044",
+        "gup-e-045",
+        "gup-e-049",
+        "gup-e-053",
+        "gup-e-055",
+        "gup-e-085",
+        "gup-e-086",
+        "gup2-e-014",
+        "gup2-e-020",
+        "gup2-e-027",
+        "gup2-e-029",
+        "gup2-e-033",
+        "gup2-e-034",
+        "gup2-e-035",
+        "gup2-e-036",
+        "gup2-e-037",
+        "gup2-e-038",
+        "gup2-e-041",
+        "gup2-e-042",
+        "gup2-e-043",
+        "gup2-e-044",
+        "gup2-e-045",
+        "gup2-e-046",
+        "gup2-e-047",
+        "gup2-e-048",
+        "gup2-e-049",
+        "gup2-e-050",
+        "gup2-e-051",
+        "gup2-e-056",
+        "gup2-e-058",
+        "gup2-e-060",
+        "gup2-e-061",
+        "gup2-e-062",
+        "gup2-e-063",
+        "gup2-e-064",
+        "gup2-e-065",
+        "gup2-e-066",
+        "gup2-e-067",
+        "gup3-e-001",
+        "gup3-e-003",
+        "gup3-e-004",
+        "gup3-e-005",
+        "gup3-e-006",
+        "gup3-e-008",
+        "gup3-e-012",
+        "gup3-e-013",
+        "gup3-e-014",
+        "gup3-e-015",
+        "gup4-e-001",
+        "gup4-e-002",
+        "gup4-e-003",
+        "gup4-e-004",
+        "gup4-e-005",
+        "gup4-e-006",
+        "gup4-e-007",
+        "gup4-e-012",
+        "gup4-e-014",
+        "gup4-e-016",
+        "gup4-e-031",
+        "gup4-e-034",
+        "gup4-e-035",
+        "gup5-e-001",
+        "gup5-e-018",
+        "gup5-e-025",
+        "gup5-e-040",
+        "gup5-e-041",
+        "gup5-e-043",
+        "gup5-e-059"
+      ]
+    },
+    {
+      "id": "gup-en-064",
+      "name": "Skanda",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-014",
+        "gup-e-044",
+        "gup4-e-001",
+        "gup4-e-002",
+        "gup4-e-003",
+        "gup4-e-004",
+        "gup4-e-005",
+        "gup4-e-006",
+        "gup4-e-007",
+        "gup4-e-012",
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala",
+        "gup5-e-001",
+        "gup5-e-059",
+        "gkr5-e-sinless-state-search",
+        "gkr5-e-dhundhi-mission"
+      ]
+    },
+    {
+      "id": "gup-en-100",
+      "name": "Gods",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-026",
+        "gup-e-030",
+        "gup-e-084",
+        "gup-e-085",
+        "gup-e-086",
+        "gup-e-087",
+        "gup2-e-011",
+        "gup2-e-019",
+        "gup2-e-026",
+        "gup2-e-029",
+        "gup2-e-030",
+        "gup2-e-031",
+        "gup2-e-034",
+        "gup2-e-044",
+        "gup2-e-050",
+        "gup2-e-062",
+        "gup2-e-063",
+        "gup2-e-065",
+        "gup2-e-066",
+        "gup3-e-004",
+        "gup4-e-001",
+        "gup4-e-007",
+        "gup4-e-035",
+        "gup4-e-037",
+        "gup4-e-043",
+        "gup5-e-003",
+        "gup5-e-004",
+        "gup5-e-005",
+        "gup5-e-006",
+        "gup5-e-010",
+        "gup5-e-020",
+        "gup5-e-021",
+        "gup5-e-022",
+        "gup5-e-023",
+        "gup5-e-026",
+        "gup5-e-027",
+        "gup5-e-041",
+        "gup5-e-058",
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gup-en-109",
+      "name": "Sages",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-030",
+        "gup2-e-019",
+        "gup2-e-050",
+        "gup2-e-065",
+        "gup2-e-066",
+        "gup3-e-004",
+        "gup3-e-008",
+        "gup4-e-001",
+        "gup4-e-008",
+        "gup4-e-014",
+        "gup5-e-010",
+        "gup5-e-020",
+        "gup5-e-021",
+        "gup5-e-022",
+        "gup5-e-023",
+        "gup5-e-026",
+        "gup5-e-027",
+        "gup5-e-058",
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gup-en-110",
+      "name": "Rākṣasas",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-030",
+        "gup2-e-019",
+        "gup2-e-029",
+        "gup2-e-054",
+        "gup4-e-020",
+        "gup4-e-021",
+        "gup5-e-020",
+        "gup5-e-062",
+        "gkr5-e-journey-asura52"
+      ]
+    },
+    {
+      "id": "gup-en-111",
+      "name": "Kinnaras",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-030",
+        "gup-e-093",
+        "gup2-e-019",
+        "gup2-e-026",
+        "gup2-e-060",
+        "gup2-e-066",
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gup-en-115",
+      "name": "Yakṣas",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-030",
+        "gup2-e-029",
+        "gup2-e-047",
+        "gup2-e-050",
+        "gup2-e-054",
+        "gup2-e-060",
+        "gup5-e-020",
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gup-en-117",
+      "name": "Humans",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-030",
+        "gup2-e-019",
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gkr-en-uma",
+      "name": "Umā",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [
+        {
+          "name": "Gaurī",
+          "evidence_ids": [
+            "gkr-e-postgita-variants"
+          ]
+        },
+        {
+          "name": "Pārvatī",
+          "evidence_ids": [
+            "gkr-e-postgita-residence"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "gkr-e-siva-appearance",
+        "gkr-e-postgita-variants",
+        "gkr-e-postgita-residence",
+        "gkr3-e-siva-hiranya-grant",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-durasada-tapas-vision",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-devi-ganesa-prayer",
+        "gkr4-e-vakra-radiance-emergence",
+        "gkr4-e-vakra-accepts-mission",
+        "gup5-e-059",
+        "gkr5-e-dhundhi-mission"
+      ]
+    },
+    {
+      "id": "gup2-en-032",
+      "name": "Dānavas",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup2-e-019",
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gup2-en-059",
+      "name": "Kṛṣṇa",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup2-e-025",
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup4-en-020",
+      "name": "Nala",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-012",
+        "gup4-e-013",
+        "gup4-e-014",
+        "gup4-e-015",
+        "gup4-e-017",
+        "gup4-e-018",
+        "gup5-e-059"
+      ]
+    },
+    {
+      "id": "gup4-en-021",
+      "name": "Damayantī",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-012",
+        "gup4-e-013",
+        "gup5-e-059"
+      ]
+    },
+    {
+      "id": "gup4-en-079",
+      "name": "Sankaṣṭa-caturthī practitioners",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-045",
+        "gup4-e-049",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-055",
+        "gup5-e-049",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-059",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065"
+      ]
+    },
+    {
+      "id": "gup4-en-083",
+      "name": "Kṛtavīrya unnamed father",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-046",
+        "gup4-e-050",
+        "gup4-e-051",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-055",
+        "gup4-e-056",
+        "gup5-e-012",
+        "gup5-e-046",
+        "gup5-e-047",
+        "gup5-e-048",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-059",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066"
+      ]
+    },
+    {
+      "id": "gkr4-en-agastya38",
+      "name": "Agastya, receiver of Skanda account",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala",
+        "gup5-e-059"
+      ]
+    },
+    {
+      "id": "gup5-en-064",
+      "name": "Uragas",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-041",
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gup5-en-135",
+      "name": "Citralekhā",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-060",
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup5-en-136",
+      "name": "Pradyumna",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-060",
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup5-en-137",
+      "name": "Rukmiṇī",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-060"
+      ]
+    },
+    {
+      "id": "gup5-en-138",
+      "name": "Śambara",
+      "type": "ASURA",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-060"
+      ]
+    },
+    {
+      "id": "gup5-en-139",
+      "name": "Uddhava",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup5-en-140",
+      "name": "Bāṇāsura",
+      "type": "ASURA",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup5-en-141",
+      "name": "Śoṇitapura",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup5-en-142",
+      "name": "Aniruddha",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup5-en-143",
+      "name": "Uṣā",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup5-en-144",
+      "name": "Asuras",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gup5-en-154",
+      "name": "Īśvara in70 battle reference",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-061"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "gup5-rel-061",
+      "subject_id": "gup5-en-137",
+      "predicate": "mother_of",
+      "object_id": "gup5-en-136",
+      "evidence_ids": [
+        "gup5-e-060"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-074",
+      "kinship_kind": "SOURCE_EXPLICIT_MOTHER_SON"
+    },
+    {
+      "id": "gup5-rel-062",
+      "subject_id": "gup5-en-138",
+      "predicate": "abducts",
+      "object_id": "gup5-en-136",
+      "evidence_ids": [
+        "gup5-e-060"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-075"
+    },
+    {
+      "id": "gup5-rel-063",
+      "subject_id": "gp-en-lomasa",
+      "predicate": "instructs",
+      "object_id": "gup5-en-137",
+      "evidence_ids": [
+        "gup5-e-060"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-076"
+    },
+    {
+      "id": "gup5-rel-064",
+      "subject_id": "gup5-en-137",
+      "predicate": "instructs",
+      "object_id": "gup5-en-136",
+      "evidence_ids": [
+        "gup5-e-060"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-077"
+    },
+    {
+      "id": "gup5-rel-065",
+      "subject_id": "gup-en-005",
+      "predicate": "informs",
+      "object_id": "gup5-en-136",
+      "evidence_ids": [
+        "gup5-e-061"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-079"
+    },
+    {
+      "id": "gup5-rel-066",
+      "subject_id": "gup5-en-139",
+      "predicate": "instructs",
+      "object_id": "gup2-en-059",
+      "evidence_ids": [
+        "gup5-e-061"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-080"
+    },
+    {
+      "id": "gup5-rel-067",
+      "subject_id": "gup2-en-059",
+      "predicate": "defeats",
+      "object_id": "gup5-en-140",
+      "evidence_ids": [
+        "gup5-e-061"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-081"
+    },
+    {
+      "id": "gup5-rel-068",
+      "subject_id": "gup2-en-059",
+      "predicate": "rescues",
+      "object_id": "gup5-en-142",
+      "evidence_ids": [
+        "gup5-e-061"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-082"
+    },
+    {
+      "id": "gup5-rel-069",
+      "subject_id": "gup5-en-136",
+      "predicate": "father_of",
+      "object_id": "gup5-en-142",
+      "evidence_ids": [
+        "gup5-e-061",
+        "gup5-e-060"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-083",
+      "kinship_kind": "SOURCE_CONTEXTUAL_SON_IDENTITY"
+    },
+    {
+      "id": "gup5-rel-070",
+      "subject_id": "gup5-en-135",
+      "predicate": "takes_away",
+      "object_id": "gup5-en-142",
+      "evidence_ids": [
+        "gup5-e-061",
+        "gup5-e-060"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-084"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "gup5-power-040",
+      "type": "POWER",
+      "recipient_id": "gkr-en-uma",
+      "grantor_id": "gp-en-ganesha",
+      "worshipped_id": null,
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "After four months of the prescribed vow, sees Kārttikeya in the fifth month.",
+      "trigger": "Vow practice at Śiva’s instruction.",
+      "restrictions": null,
+      "duration": "Four months of practice; sight in fifth.",
+      "counter": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "gup5-e-059"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup5-e-059"
+        ],
+        "grantor_id": [
+          "gup5-e-059"
+        ],
+        "mechanism": [
+          "gup5-e-059"
+        ],
+        "trigger": [
+          "gup5-e-059"
+        ],
+        "duration": [
+          "gup5-e-059"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Brief retrospective outcome, not a narrated boon invitation/request exchange."
+    },
+    {
+      "id": "gup5-power-041",
+      "type": "POWER",
+      "recipient_id": "gkr4-en-agastya38",
+      "grantor_id": "gp-en-ganesha",
+      "worshipped_id": null,
+      "motive": "Drink the ocean.",
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "Actually drinks the ocean through Vighneśa’s favour after three months of vow practice.",
+      "trigger": "The vow practice.",
+      "restrictions": null,
+      "duration": "Three months.",
+      "counter": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "gup5-e-059"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup5-e-059"
+        ],
+        "grantor_id": [
+          "gup5-e-059"
+        ],
+        "motive": [
+          "gup5-e-059"
+        ],
+        "mechanism": [
+          "gup5-e-059"
+        ],
+        "trigger": [
+          "gup5-e-059"
+        ],
+        "duration": [
+          "gup5-e-059"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null means unstated in examined passage, not independently proven absent from whole work. Reported efficacy is a POWER unless an explicit personal boon is narrated."
+    },
+    {
+      "id": "gup5-power-042",
+      "type": "POWER",
+      "recipient_id": "gup4-en-021",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "motive": "Find Nala.",
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "Sees Nala after the reported vow.",
+      "trigger": "Practice the vow while searching.",
+      "restrictions": null,
+      "duration": "Six months.",
+      "counter": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "gup5-e-059"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup5-e-059"
+        ],
+        "motive": [
+          "gup5-e-059"
+        ],
+        "mechanism": [
+          "gup5-e-059"
+        ],
+        "trigger": [
+          "gup5-e-059"
+        ],
+        "duration": [
+          "gup5-e-059"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "This brief reported finding is distinct from prior Varada-vow former-birth account; no extra reconciliation or journey added."
+    },
+    {
+      "id": "gup5-power-043",
+      "type": "POWER",
+      "recipient_id": "gup5-en-137",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "motive": "See her abducted son Pradyumna.",
+      "austerity_or_circumstances": "Many years of separation; Lomaśa teaches the vow.",
+      "requested": null,
+      "granted": null,
+      "mechanism": "She reports Pradyumna’s return after he kills Śambara in battle through vow favour.",
+      "trigger": "Practice Sankaṣṭa-caturthī four times.",
+      "restrictions": null,
+      "duration": "Four observances, not silently normalized to four months.",
+      "counter": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "gup5-e-060"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup5-e-060"
+        ],
+        "motive": [
+          "gup5-e-060"
+        ],
+        "austerity_or_circumstances": [
+          "gup5-e-060"
+        ],
+        "mechanism": [
+          "gup5-e-060"
+        ],
+        "trigger": [
+          "gup5-e-060"
+        ],
+        "duration": [
+          "gup5-e-060"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null means unstated in examined passage, not independently proven absent from whole work. Reported efficacy is a POWER unless an explicit personal boon is narrated."
+    },
+    {
+      "id": "gup5-power-044",
+      "type": "POWER",
+      "recipient_id": "gup5-en-136",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "motive": "Locate his abducted son.",
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "After practicing he hears from Nārada that the son is detained at Bāṇāsura’s city.",
+      "trigger": "Sankaṣṭa vow practice.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "gup5-e-061"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup5-e-061"
+        ],
+        "motive": [
+          "gup5-e-061"
+        ],
+        "mechanism": [
+          "gup5-e-061"
+        ],
+        "trigger": [
+          "gup5-e-061"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "The passage supplies no number of his observances."
+    },
+    {
+      "id": "gup5-power-045",
+      "type": "POWER",
+      "recipient_id": "gup2-en-059",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "motive": "Overcome feared Īśvara-associated battle and retrieve Aniruddha.",
+      "austerity_or_circumstances": "Uddhava instructs him.",
+      "requested": null,
+      "granted": null,
+      "mechanism": "Victory over Bāṇāsura and retrieval of Aniruddha with Uṣā.",
+      "trigger": "One properly performed vow.",
+      "restrictions": null,
+      "duration": "One observance.",
+      "counter": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "gup5-e-061"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup5-e-061"
+        ],
+        "motive": [
+          "gup5-e-061"
+        ],
+        "austerity_or_circumstances": [
+          "gup5-e-061"
+        ],
+        "mechanism": [
+          "gup5-e-061"
+        ],
+        "trigger": [
+          "gup5-e-061"
+        ],
+        "duration": [
+          "gup5-e-061"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null means unstated in examined passage, not independently proven absent from whole work. Reported efficacy is a POWER unless an explicit personal boon is narrated."
+    },
+    {
+      "id": "gup5-power-046",
+      "type": "POWER",
+      "recipient_id": "gp-en-brahma",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "motive": "Create.",
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "Varied creation is produced through the vow’s power.",
+      "trigger": "His actual past performance of the vow.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "gup5-e-062"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup5-e-062"
+        ],
+        "motive": [
+          "gup5-e-062"
+        ],
+        "mechanism": [
+          "gup5-e-062"
+        ],
+        "trigger": [
+          "gup5-e-062"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Brahmā’s attributed retrospective account70.16, not a new personal appearance/grant dialogue."
+    },
+    {
+      "id": "gup5-power-047",
+      "type": "POWER",
+      "recipient_id": "gup4-en-079",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "Obstacle-relief and desired task accomplishment in few months.",
+      "trigger": "Practice the vow during distress or before intended tasks.",
+      "restrictions": "Do not teach non-devotees, atheists or deceitful people; give instruction to son, pupil or virtuous devotee. Perform before other vows as prescribed.",
+      "duration": "Few months, without an exact number.",
+      "counter": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "gup5-e-062"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup5-e-062"
+        ],
+        "mechanism": [
+          "gup5-e-062"
+        ],
+        "trigger": [
+          "gup5-e-062"
+        ],
+        "restrictions": [
+          "gup5-e-062"
+        ],
+        "duration": [
+          "gup5-e-062"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null means unstated in examined passage, not independently proven absent from whole work. Reported efficacy is a POWER unless an explicit personal boon is narrated."
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "gup5-a-074",
+      "subject_id": "gup5-en-137",
+      "predicate": "mother_of",
+      "object_id": "gup5-en-136",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-060"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-075",
+      "subject_id": "gup5-en-138",
+      "predicate": "abducts",
+      "object_id": "gup5-en-136",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-060"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-076",
+      "subject_id": "gp-en-lomasa",
+      "predicate": "instructs",
+      "object_id": "gup5-en-137",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-060"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-077",
+      "subject_id": "gup5-en-137",
+      "predicate": "instructs",
+      "object_id": "gup5-en-136",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-060"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-078",
+      "subject_id": "gup5-en-136",
+      "predicate": "abduction_age",
+      "object_id": null,
+      "value": "Six days old at Śambara’s abduction70.7.",
+      "evidence_ids": [
+        "gup5-e-060"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-079",
+      "subject_id": "gup-en-005",
+      "predicate": "informs",
+      "object_id": "gup5-en-136",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-061"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-080",
+      "subject_id": "gup5-en-139",
+      "predicate": "instructs",
+      "object_id": "gup2-en-059",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-061"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-081",
+      "subject_id": "gup2-en-059",
+      "predicate": "defeats",
+      "object_id": "gup5-en-140",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-061"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-082",
+      "subject_id": "gup2-en-059",
+      "predicate": "rescues",
+      "object_id": "gup5-en-142",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-061"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-083",
+      "subject_id": "gup5-en-136",
+      "predicate": "father_of",
+      "object_id": "gup5-en-142",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-061",
+        "gup5-e-060"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-084",
+      "subject_id": "gup5-en-135",
+      "predicate": "takes_away",
+      "object_id": "gup5-en-142",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-061",
+        "gup5-e-060"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "linked_entities": [
+    {
+      "id": "gp-en-brahma",
+      "name": "Brahmā",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-frame",
+        "gup-e-001",
+        "gup-e-024",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-036",
+        "gup-e-037",
+        "gup-e-038",
+        "gup-e-039",
+        "gup-e-040",
+        "gup-e-041",
+        "gup-e-042",
+        "gup-e-049",
+        "gup-e-050",
+        "gup-e-073",
+        "gup-e-084",
+        "gup-e-086",
+        "gup-e-089",
+        "gup-e-092",
+        "gup-e-094",
+        "gkr-e-frame",
+        "gup2-e-006",
+        "gup2-e-014",
+        "gup2-e-016",
+        "gup2-e-021",
+        "gup2-e-027",
+        "gup2-e-032",
+        "gup2-e-035",
+        "gup2-e-038",
+        "gup2-e-044",
+        "gup2-e-047",
+        "gup2-e-051",
+        "gup2-e-056",
+        "gup2-e-060",
+        "gup2-e-067",
+        "gkr2-e-remote-offering",
+        "gkr2-e-well-conspiracy",
+        "gkr2-e-trio-plan",
+        "gup3-e-005",
+        "gup3-e-008",
+        "gup3-e-012",
+        "gkr3-e-frame27",
+        "gkr3-e-virtuous-king",
+        "gkr3-e-succession27",
+        "gkr3-e-prior-merit-release",
+        "gkr3-e-kasyapa-creation",
+        "gkr3-e-indra-vishnu",
+        "gup4-e-010",
+        "gup4-e-013",
+        "gup4-e-014",
+        "gup4-e-016",
+        "gup4-e-035",
+        "gup4-e-036",
+        "gup4-e-050",
+        "gup4-e-051",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-055",
+        "gup4-e-056",
+        "gkr4-e-vamana-aftermath-image",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-durasada-conquest",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-dhundhiraja-name-aftermath",
+        "gup5-e-001",
+        "gup5-e-002",
+        "gup5-e-012",
+        "gup5-e-018",
+        "gup5-e-025",
+        "gup5-e-041",
+        "gup5-e-043",
+        "gup5-e-045",
+        "gup5-e-046",
+        "gup5-e-047",
+        "gup5-e-049",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-059",
+        "gup5-e-061",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066",
+        "gkr5-e-divodasa-rule",
+        "gkr5-e-marici-liberation",
+        "gkr5-e-realm-introduction49",
+        "gkr5-e-realm-cosmic-yogic-body",
+        "gkr5-e-king-final-worship",
+        "gkr5-e-king-reunion-hymn",
+        "gkr5-e-king-hymn-transmission-benefits",
+        "gkr5-e-return-to-sukla-chronology-frame"
+      ]
+    },
+    {
+      "id": "gp-en-ganesha",
+      "name": "Gaṇeśa",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-result",
+        "gup-e-001",
+        "gup-e-005",
+        "gup-e-008",
+        "gup-e-014",
+        "gup-e-021",
+        "gup-e-023",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-036",
+        "gup-e-037",
+        "gup-e-038",
+        "gup-e-039",
+        "gup-e-040",
+        "gup-e-042",
+        "gup-e-044",
+        "gup-e-045",
+        "gup-e-046",
+        "gup-e-047",
+        "gup-e-049",
+        "gup-e-051",
+        "gup-e-053",
+        "gup-e-054",
+        "gup-e-055",
+        "gup-e-056",
+        "gup-e-057",
+        "gup-e-058",
+        "gup-e-059",
+        "gup-e-060",
+        "gup-e-062",
+        "gup-e-063",
+        "gup-e-064",
+        "gup-e-065",
+        "gup-e-066",
+        "gup-e-067",
+        "gup-e-070",
+        "gup-e-071",
+        "gup-e-072",
+        "gup-e-073",
+        "gup-e-074",
+        "gup-e-075",
+        "gup-e-076",
+        "gup-e-085",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-088",
+        "gup-e-089",
+        "gup-e-090",
+        "gup-e-091",
+        "gup-e-092",
+        "gup-e-093",
+        "gup-e-094",
+        "gkr-e-ages",
+        "gup2-e-007",
+        "gup2-e-011",
+        "gup2-e-012",
+        "gup2-e-013",
+        "gup2-e-014",
+        "gup2-e-015",
+        "gup2-e-017",
+        "gup2-e-018",
+        "gup2-e-019",
+        "gup2-e-020",
+        "gup2-e-021",
+        "gup2-e-029",
+        "gup2-e-030",
+        "gup2-e-031",
+        "gup2-e-032",
+        "gup2-e-033",
+        "gup2-e-036",
+        "gup2-e-045",
+        "gup2-e-046",
+        "gup2-e-047",
+        "gup2-e-048",
+        "gup2-e-049",
+        "gup2-e-050",
+        "gup2-e-051",
+        "gup2-e-052",
+        "gup2-e-056",
+        "gup2-e-057",
+        "gup2-e-058",
+        "gup2-e-059",
+        "gup2-e-060",
+        "gup2-e-063",
+        "gup2-e-064",
+        "gup2-e-066",
+        "gkr2-e-leaf-and-vamana",
+        "gkr2-e-hunter-demon-liberation",
+        "gup3-e-004",
+        "gup3-e-005",
+        "gup3-e-006",
+        "gup3-e-007",
+        "gup3-e-008",
+        "gup3-e-009",
+        "gup3-e-010",
+        "gup3-e-011",
+        "gup3-e-012",
+        "gup3-e-013",
+        "gup3-e-014",
+        "gup3-e-015",
+        "gup3-e-016",
+        "gup3-e-017",
+        "gup3-e-018",
+        "gkr3-e-rama-father-varada",
+        "gkr3-e-incidental-worship",
+        "gkr3-e-prior-merit-release",
+        "gup4-e-002",
+        "gup4-e-003",
+        "gup4-e-005",
+        "gup4-e-009",
+        "gup4-e-010",
+        "gup4-e-011",
+        "gup4-e-012",
+        "gup4-e-015",
+        "gup4-e-016",
+        "gup4-e-017",
+        "gup4-e-018",
+        "gup4-e-027",
+        "gup4-e-028",
+        "gup4-e-029",
+        "gup4-e-031",
+        "gup4-e-033",
+        "gup4-e-034",
+        "gup4-e-035",
+        "gup4-e-038",
+        "gup4-e-040",
+        "gup4-e-042",
+        "gup4-e-044",
+        "gup4-e-048",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-057",
+        "gup4-e-058",
+        "gup4-e-059",
+        "gup4-e-060",
+        "gup4-e-061",
+        "gup4-e-062",
+        "gkr4-e-vamana-guru-tapas",
+        "gkr4-e-vamana-request-grant",
+        "gkr4-e-vamana-installation",
+        "gkr4-e-water-steps-promises",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-sages-vision-hymn",
+        "gkr4-e-trees-request-alternative",
+        "gkr4-e-tree-benefits",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-worship-vision",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-devi-ganesa-prayer",
+        "gup5-e-001",
+        "gup5-e-002",
+        "gup5-e-003",
+        "gup5-e-004",
+        "gup5-e-005",
+        "gup5-e-006",
+        "gup5-e-008",
+        "gup5-e-009",
+        "gup5-e-010",
+        "gup5-e-012",
+        "gup5-e-014",
+        "gup5-e-015",
+        "gup5-e-016",
+        "gup5-e-019",
+        "gup5-e-021",
+        "gup5-e-022",
+        "gup5-e-023",
+        "gup5-e-024",
+        "gup5-e-025",
+        "gup5-e-026",
+        "gup5-e-027",
+        "gup5-e-029",
+        "gup5-e-030",
+        "gup5-e-031",
+        "gup5-e-032",
+        "gup5-e-033",
+        "gup5-e-034",
+        "gup5-e-035",
+        "gup5-e-036",
+        "gup5-e-041",
+        "gup5-e-042",
+        "gup5-e-043",
+        "gup5-e-045",
+        "gup5-e-047",
+        "gup5-e-049",
+        "gup5-e-050",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-060",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066",
+        "gup5-e-067",
+        "gkr5-e-realm-introduction49"
+      ]
+    },
+    {
+      "id": "gp-en-lomasa",
+      "name": "Lomaśa",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-frame",
+        "gup5-e-060"
+      ]
+    },
+    {
+      "id": "gup-en-005",
+      "name": "Nārada",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-077",
+        "gup-e-078",
+        "gup-e-079",
+        "gup-e-082",
+        "gup-e-083",
+        "gup-e-084",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-091",
+        "gup-e-092",
+        "gup2-e-029",
+        "gup2-e-034",
+        "gup2-e-044",
+        "gup2-e-045",
+        "gup2-e-063",
+        "gup2-e-066",
+        "gup3-e-004",
+        "gup4-e-026",
+        "gup4-e-027",
+        "gup4-e-028",
+        "gup4-e-038",
+        "gup4-e-043",
+        "gup4-e-045",
+        "gup4-e-046",
+        "gup4-e-047",
+        "gup5-e-001",
+        "gup5-e-018",
+        "gup5-e-019",
+        "gup5-e-024",
+        "gup5-e-029",
+        "gup5-e-030",
+        "gup5-e-031",
+        "gup5-e-047",
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup-en-009",
+      "name": "Śiva",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-003",
+        "gup-e-005",
+        "gup-e-014",
+        "gup-e-025",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-044",
+        "gup-e-045",
+        "gup-e-049",
+        "gup-e-053",
+        "gup-e-055",
+        "gup-e-085",
+        "gup-e-086",
+        "gup2-e-014",
+        "gup2-e-020",
+        "gup2-e-027",
+        "gup2-e-029",
+        "gup2-e-033",
+        "gup2-e-034",
+        "gup2-e-035",
+        "gup2-e-036",
+        "gup2-e-037",
+        "gup2-e-038",
+        "gup2-e-041",
+        "gup2-e-042",
+        "gup2-e-043",
+        "gup2-e-044",
+        "gup2-e-045",
+        "gup2-e-046",
+        "gup2-e-047",
+        "gup2-e-048",
+        "gup2-e-049",
+        "gup2-e-050",
+        "gup2-e-051",
+        "gup2-e-056",
+        "gup2-e-058",
+        "gup2-e-060",
+        "gup2-e-061",
+        "gup2-e-062",
+        "gup2-e-063",
+        "gup2-e-064",
+        "gup2-e-065",
+        "gup2-e-066",
+        "gup2-e-067",
+        "gup3-e-001",
+        "gup3-e-003",
+        "gup3-e-004",
+        "gup3-e-005",
+        "gup3-e-006",
+        "gup3-e-008",
+        "gup3-e-012",
+        "gup3-e-013",
+        "gup3-e-014",
+        "gup3-e-015",
+        "gup4-e-001",
+        "gup4-e-002",
+        "gup4-e-003",
+        "gup4-e-004",
+        "gup4-e-005",
+        "gup4-e-006",
+        "gup4-e-007",
+        "gup4-e-012",
+        "gup4-e-014",
+        "gup4-e-016",
+        "gup4-e-031",
+        "gup4-e-034",
+        "gup4-e-035",
+        "gup5-e-001",
+        "gup5-e-018",
+        "gup5-e-025",
+        "gup5-e-040",
+        "gup5-e-041",
+        "gup5-e-043",
+        "gup5-e-059"
+      ]
+    },
+    {
+      "id": "gup-en-064",
+      "name": "Skanda",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-014",
+        "gup-e-044",
+        "gup4-e-001",
+        "gup4-e-002",
+        "gup4-e-003",
+        "gup4-e-004",
+        "gup4-e-005",
+        "gup4-e-006",
+        "gup4-e-007",
+        "gup4-e-012",
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala",
+        "gup5-e-001",
+        "gup5-e-059",
+        "gkr5-e-sinless-state-search",
+        "gkr5-e-dhundhi-mission"
+      ]
+    },
+    {
+      "id": "gup-en-100",
+      "name": "Gods",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-026",
+        "gup-e-030",
+        "gup-e-084",
+        "gup-e-085",
+        "gup-e-086",
+        "gup-e-087",
+        "gup2-e-011",
+        "gup2-e-019",
+        "gup2-e-026",
+        "gup2-e-029",
+        "gup2-e-030",
+        "gup2-e-031",
+        "gup2-e-034",
+        "gup2-e-044",
+        "gup2-e-050",
+        "gup2-e-062",
+        "gup2-e-063",
+        "gup2-e-065",
+        "gup2-e-066",
+        "gup3-e-004",
+        "gup4-e-001",
+        "gup4-e-007",
+        "gup4-e-035",
+        "gup4-e-037",
+        "gup4-e-043",
+        "gup5-e-003",
+        "gup5-e-004",
+        "gup5-e-005",
+        "gup5-e-006",
+        "gup5-e-010",
+        "gup5-e-020",
+        "gup5-e-021",
+        "gup5-e-022",
+        "gup5-e-023",
+        "gup5-e-026",
+        "gup5-e-027",
+        "gup5-e-041",
+        "gup5-e-058",
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gup-en-109",
+      "name": "Sages",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-030",
+        "gup2-e-019",
+        "gup2-e-050",
+        "gup2-e-065",
+        "gup2-e-066",
+        "gup3-e-004",
+        "gup3-e-008",
+        "gup4-e-001",
+        "gup4-e-008",
+        "gup4-e-014",
+        "gup5-e-010",
+        "gup5-e-020",
+        "gup5-e-021",
+        "gup5-e-022",
+        "gup5-e-023",
+        "gup5-e-026",
+        "gup5-e-027",
+        "gup5-e-058",
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gup-en-110",
+      "name": "Rākṣasas",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-030",
+        "gup2-e-019",
+        "gup2-e-029",
+        "gup2-e-054",
+        "gup4-e-020",
+        "gup4-e-021",
+        "gup5-e-020",
+        "gup5-e-062",
+        "gkr5-e-journey-asura52"
+      ]
+    },
+    {
+      "id": "gup-en-111",
+      "name": "Kinnaras",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-030",
+        "gup-e-093",
+        "gup2-e-019",
+        "gup2-e-026",
+        "gup2-e-060",
+        "gup2-e-066",
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gup-en-115",
+      "name": "Yakṣas",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-030",
+        "gup2-e-029",
+        "gup2-e-047",
+        "gup2-e-050",
+        "gup2-e-054",
+        "gup2-e-060",
+        "gup5-e-020",
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gup-en-117",
+      "name": "Humans",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-030",
+        "gup2-e-019",
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gkr-en-uma",
+      "name": "Umā",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [
+        {
+          "name": "Gaurī",
+          "evidence_ids": [
+            "gkr-e-postgita-variants"
+          ]
+        },
+        {
+          "name": "Pārvatī",
+          "evidence_ids": [
+            "gkr-e-postgita-residence"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "gkr-e-siva-appearance",
+        "gkr-e-postgita-variants",
+        "gkr-e-postgita-residence",
+        "gkr3-e-siva-hiranya-grant",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-durasada-tapas-vision",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-devi-ganesa-prayer",
+        "gkr4-e-vakra-radiance-emergence",
+        "gkr4-e-vakra-accepts-mission",
+        "gup5-e-059",
+        "gkr5-e-dhundhi-mission"
+      ]
+    },
+    {
+      "id": "gup2-en-032",
+      "name": "Dānavas",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup2-e-019",
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gup2-en-059",
+      "name": "Kṛṣṇa",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup2-e-025",
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup4-en-020",
+      "name": "Nala",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-012",
+        "gup4-e-013",
+        "gup4-e-014",
+        "gup4-e-015",
+        "gup4-e-017",
+        "gup4-e-018",
+        "gup5-e-059"
+      ]
+    },
+    {
+      "id": "gup4-en-021",
+      "name": "Damayantī",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-012",
+        "gup4-e-013",
+        "gup5-e-059"
+      ]
+    },
+    {
+      "id": "gup4-en-079",
+      "name": "Sankaṣṭa-caturthī practitioners",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-045",
+        "gup4-e-049",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-055",
+        "gup5-e-049",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-059",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065"
+      ]
+    },
+    {
+      "id": "gup4-en-083",
+      "name": "Kṛtavīrya unnamed father",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-046",
+        "gup4-e-050",
+        "gup4-e-051",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-055",
+        "gup4-e-056",
+        "gup5-e-012",
+        "gup5-e-046",
+        "gup5-e-047",
+        "gup5-e-048",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-059",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066"
+      ]
+    },
+    {
+      "id": "gkr4-en-agastya38",
+      "name": "Agastya, receiver of Skanda account",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala",
+        "gup5-e-059"
+      ]
+    },
+    {
+      "id": "gup5-en-064",
+      "name": "Uragas",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-041",
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gup5-en-135",
+      "name": "Citralekhā",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-060",
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup5-en-136",
+      "name": "Pradyumna",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-060",
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup5-en-137",
+      "name": "Rukmiṇī",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-060"
+      ]
+    },
+    {
+      "id": "gup5-en-138",
+      "name": "Śambara",
+      "type": "ASURA",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-060"
+      ]
+    },
+    {
+      "id": "gup5-en-139",
+      "name": "Uddhava",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup5-en-140",
+      "name": "Bāṇāsura",
+      "type": "ASURA",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup5-en-141",
+      "name": "Śoṇitapura",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup5-en-142",
+      "name": "Aniruddha",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup5-en-143",
+      "name": "Uṣā",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup5-en-144",
+      "name": "Asuras",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gup5-en-154",
+      "name": "Īśvara in70 battle reference",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-061"
+      ]
+    }
+  ],
+  "linked_entity_note": "Includes event participants and related claim endpoints. Entity metadata can cite other retained source passages; the complete graph carries those references."
+}

@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "scope": "Structural validation; does not establish textual truth or exhaustive extraction.",
+  "counts": {
+    "sources_registered": 19,
+    "witnesses_registered": 34,
+    "sources_with_passage_reading": 9,
+    "passages_registered": 764,
+    "passages_fully_extracted": 347,
+    "passages_partially_extracted": 412,
+    "entities": 2821,
+    "entities_with_verified_evidence": 2771,
+    "assertions_verified_against_witness": 3641,
+    "relationships_verified_against_witness": 3349,
+    "kinship_relationships_verified": 469,
+    "boons_verified": 217,
+    "powers_verified": 351,
+    "events_with_records": 805,
+    "events_verified_against_witness": 798,
+    "story_spines": 102,
+    "story_spine_statuses": {
+      "COMPLETE": 69,
+      "PARTIAL": 33
+    },
+    "variant_records": 97,
+    "content_entities": 2532,
+    "documentary_entities": 289,
+    "content_assertions_verified_against_witness": 2368,
+    "content_relationships_verified_against_witness": 2076,
+    "source_examination_statuses": {
+      "PARTIALLY_READ": 8,
+      "INDEX_REVIEWED": 3,
+      "IDENTIFIED": 7,
+      "READ": 1
+    }
+  },
+  "core_chapter_states": {
+    "COMPLETE": 145,
+    "PARTIAL": 36,
+    "IN_PROGRESS": 7,
+    "NOT_STARTED": 487
+  },
+  "newly_completed_chapters": 18,
+  "newly_completed_arcs": 14,
+  "total_complete_arcs": 69,
+  "baseline_ids_preserved": true,
+  "integrity_tests": {
+    "command": "python3 -m unittest discover -s . -p test_integrity.py -v",
+    "tests_run": 15,
+    "passed": 15,
+    "failed": 0,
+    "log": "integrity_test_results.txt"
+  }
+}

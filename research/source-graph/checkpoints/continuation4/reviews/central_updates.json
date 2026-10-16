@@ -1,0 +1,242 @@
+[
+  {
+    "table": "entities",
+    "id": "gup5-en-052",
+    "fields": {
+      "type": "DEVOTEE"
+    },
+    "reason": "Independent whole65–66 review: Triśiras is a Brahmin/devotee; SAGE is not stated in the checked spans. Preserve ID and evidence.",
+    "evidence_ids": [
+      "gup5-e-033",
+      "gup5-e-034"
+    ]
+  },
+  {
+    "table": "assertions",
+    "id": "gup5-a-027",
+    "fields": {
+      "evidence_ids": [
+        "gup5-e-033"
+      ]
+    },
+    "reason": "Independent whole65–66 review strengthens named spouse linkage with65.44, retaining66 evidence.",
+    "evidence_ids": [
+      "gup5-e-033",
+      "gup5-e-034"
+    ]
+  },
+  {
+    "table": "relationships",
+    "id": "gup5-rel-023",
+    "fields": {
+      "evidence_ids": [
+        "gup5-e-033"
+      ]
+    },
+    "reason": "Independent whole65–66 review strengthens named spouse linkage with65.44, retaining66 evidence.",
+    "evidence_ids": [
+      "gup5-e-033",
+      "gup5-e-034"
+    ]
+  },
+  {
+    "table": "evidence",
+    "id": "gup5-e-047",
+    "fields": {
+      "paraphrase": "Śūrasena asks Indra what Kṛtavīrya’s father did next. Indra says the son-seeking king anxiously considers childlessness after hearing the Sankaṣṭa and dūrvā accounts. Verse3 calls the dreamer Kārtavīrya, while the waking king is explicitly Kṛtavīrya in13; the name variation is retained. He dreams of his father. They embrace, unable to speak through emotion. The father takes his hand, seats him and says Nārada reported his efforts for a son, prompting the father’s visit to Brahmā. Brahmā prescribed Sankaṣṭa-caturthī and promised offspring to the royal son once the vow removes sin. The father says the book was written according to Brahmā’s instructions, gives it, and tells him to practice for a year so Siddhivināyaka will be pleased and a son will result."
+    },
+    "reason": "Independent whole68 review:68.10 passive writing does not securely identify the father as writer; delivery11 retained.",
+    "evidence_ids": [
+      "gup5-e-047"
+    ]
+  },
+  {
+    "table": "narrative_events",
+    "id": "gup5-event-043",
+    "fields": {
+      "details": "Śūrasena asks Indra what Kṛtavīrya’s father did next. Indra says the son-seeking king anxiously considers childlessness after hearing the Sankaṣṭa and dūrvā accounts. Verse3 calls the dreamer Kārtavīrya, while the waking king is explicitly Kṛtavīrya in13; the name variation is retained. He dreams of his father. They embrace, unable to speak through emotion. The father takes his hand, seats him and says Nārada reported his efforts for a son, prompting the father’s visit to Brahmā. Brahmā prescribed Sankaṣṭa-caturthī and promised offspring to the royal son once the vow removes sin. The father says the book was written according to Brahmā’s instructions, gives it, and tells him to practice for a year so Siddhivināyaka will be pleased and a son will result."
+    },
+    "reason": "Independent whole68 review:68.10 passive writing does not securely identify the father as writer; delivery11 retained.",
+    "evidence_ids": [
+      "gup5-e-047"
+    ]
+  },
+  {
+    "table": "boons_and_powers",
+    "id": "mud5-power-pulaha-hymn-benefits",
+    "fields": {
+      "recipient_id": "rfix4-en-pulaha-hymn-audience"
+    },
+    "reason": "Independent2.18 review: hymn beneficiaries are mortal readers/hearers, not the existing cosmography audience. Benefit wording and triggers retained.",
+    "evidence_ids": [
+      "mud5-e-pulaha-devotion-boon"
+    ]
+  },
+  {
+    "table": "boons_and_powers",
+    "id": "mud5-power-vighnaraja-grace-reflection",
+    "fields": {
+      "recipient_id": "rfix4-en-vighnaraja-reflection-beneficiaries"
+    },
+    "reason": "Independent2.18 review: attributed reflection addresses Śiva/Viṣṇu and all beings; retain reflection status rather than creating a new personal boon.",
+    "evidence_ids": [
+      "mud5-e-bharata-deer-body-ending"
+    ]
+  },
+  {
+    "table": "queue",
+    "id": "gp-queue-1",
+    "fields": {
+      "passage_target": "Upāsanā72.1–30 read-only and unextracted;72.31–92 unread. New61/63/67/68/71 partials and all earlier chapter/print gaps remain separate.53.3 literal apeta resolved,53.15 still pending."
+    },
+    "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gup-queue-next",
+    "fields": {
+      "passage_target": "Upāsanā72.1–30 read-only and unextracted;72.31–92 unread. New61/63/67/68/71 partials and all earlier chapter/print gaps remain separate.53.3 literal apeta resolved,53.15 still pending.",
+      "task": "Resume formal source-order extraction at72.1; re-read/extract the fragment, preserve enclosing frames and all recorded semantic gaps."
+    },
+    "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gup2-queue-next",
+    "fields": {
+      "passage_target": "Upāsanā72.1–30 read-only and unextracted;72.31–92 unread. New61/63/67/68/71 partials and all earlier chapter/print gaps remain separate.53.3 literal apeta resolved,53.15 still pending.",
+      "task": "Resume formal source-order extraction at72.1; re-read/extract the fragment, preserve enclosing frames and all recorded semantic gaps."
+    },
+    "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gup3-queue-next",
+    "fields": {
+      "passage_target": "Upāsanā72.1–30 read-only and unextracted;72.31–92 unread. New61/63/67/68/71 partials and all earlier chapter/print gaps remain separate.53.3 literal apeta resolved,53.15 still pending.",
+      "task": "Resume formal source-order extraction at72.1; re-read/extract the fragment, preserve enclosing frames and all recorded semantic gaps."
+    },
+    "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gup4-queue-next",
+    "fields": {
+      "passage_target": "Upāsanā72.1–30 read-only and unextracted;72.31–92 unread. New61/63/67/68/71 partials and all earlier chapter/print gaps remain separate.53.3 literal apeta resolved,53.15 still pending.",
+      "task": "Resume formal source-order extraction at72.1; re-read/extract the fragment, preserve enclosing frames and all recorded semantic gaps."
+    },
+    "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gp-queue-2",
+    "fields": {
+      "passage_target": "Krīḍā54.1–64 read-only whole body;55.1–14 fragment,55.15 onward unread through136, then150–155. Keep44/49/50/52 and earlier partials; completed137–149/Gītā context retained."
+    },
+    "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gkr-queue-source-order",
+    "fields": {
+      "passage_target": "Krīḍā54.1–64 read-only whole body;55.1–14 fragment,55.15 onward unread through136, then150–155. Keep44/49/50/52 and earlier partials; completed137–149/Gītā context retained.",
+      "task": "Resume formal extraction at54.1; extract read-only54/55 before new source-order bodies. Preserve every existing ID, earlier uncertainty and completed Gītā context."
+    },
+    "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gkr2-queue-next-source-order",
+    "fields": {
+      "passage_target": "Krīḍā54.1–64 read-only whole body;55.1–14 fragment,55.15 onward unread through136, then150–155. Keep44/49/50/52 and earlier partials; completed137–149/Gītā context retained.",
+      "task": "Resume formal extraction at54.1; extract read-only54/55 before new source-order bodies. Preserve every existing ID, earlier uncertainty and completed Gītā context."
+    },
+    "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gkr3-queue-next-source-order",
+    "fields": {
+      "passage_target": "Krīḍā54.1–64 read-only whole body;55.1–14 fragment,55.15 onward unread through136, then150–155. Keep44/49/50/52 and earlier partials; completed137–149/Gītā context retained.",
+      "task": "Resume formal extraction at54.1; extract read-only54/55 before new source-order bodies. Preserve every existing ID, earlier uncertainty and completed Gītā context."
+    },
+    "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gkr4-queue-next-source-order",
+    "fields": {
+      "passage_target": "Krīḍā54.1–64 read-only whole body;55.1–14 fragment,55.15 onward unread through136, then150–155. Keep44/49/50/52 and earlier partials; completed137–149/Gītā context retained.",
+      "task": "Resume formal extraction at54.1; extract read-only54/55 before new source-order bodies. Preserve every existing ID, earlier uncertainty and completed Gītā context."
+    },
+    "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gkr-queue-read-unextracted",
+    "fields": {
+      "passage_target": "Krīḍā54.1–64 read-only whole body;55.1–14 fragment,55.15 onward unread through136, then150–155. Keep44/49/50/52 and earlier partials; completed137–149/Gītā context retained.",
+      "task": "Resume formal extraction at54.1; extract read-only54/55 before new source-order bodies. Preserve every existing ID, earlier uncertainty and completed Gītā context."
+    },
+    "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gp-queue-5",
+    "fields": {
+      "passage_target": "Mudgala2.19.1–23 root read-only,24a seen, author19.1–28 only displayed; no formal extraction. Continue2.19–74 then indexed3–9. New2.11/13/14/15/16/17 and earlier1/2 gaps remain."
+    },
+    "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "mud-queue-khandas2to9",
+    "fields": {
+      "passage_target": "Mudgala2.19.1–23 root read-only,24a seen, author19.1–28 only displayed; no formal extraction. Continue2.19–74 then indexed3–9. New2.11/13/14/15/16/17 and earlier1/2 gaps remain."
+    },
+    "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "mud2-queue-kh2-next",
+    "fields": {
+      "passage_target": "Mudgala2.19.1–23 root read-only,24a seen, author19.1–28 only displayed; no formal extraction. Continue2.19–74 then indexed3–9. New2.11/13/14/15/16/17 and earlier1/2 gaps remain.",
+      "task": "Resume formal extraction at2.19.1 while retaining targeted earlier gaps and all nine khaṇḍas. Do not duplicate11–18 extracted bodies."
+    },
+    "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "mud3-queue-forward-handoff",
+    "fields": {
+      "passage_target": "Mudgala2.19.1–23 root read-only,24a seen, author19.1–28 only displayed; no formal extraction. Continue2.19–74 then indexed3–9. New2.11/13/14/15/16/17 and earlier1/2 gaps remain.",
+      "task": "Resume formal extraction at2.19.1 while retaining targeted earlier gaps and all nine khaṇḍas. Do not duplicate11–18 extracted bodies."
+    },
+    "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "rmd2-q-next",
+    "fields": {
+      "passage_target": "Mudgala2.19.1–23 root read-only,24a seen, author19.1–28 only displayed; no formal extraction. Continue2.19–74 then indexed3–9. New2.11/13/14/15/16/17 and earlier1/2 gaps remain.",
+      "task": "Resolve targeted first-khaṇḍa residual language while resuming next source-order body at2.19.1."
+    },
+    "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+    "evidence_ids": []
+  }
+]

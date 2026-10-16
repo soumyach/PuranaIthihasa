@@ -1,0 +1,755 @@
+{
+  "checkpoint": "continuation3",
+  "completed_arc_id": "gup4-story-bhrushundi-rescue",
+  "graph_sha256": "cecbec8daa706000cb98923d6b48e16119667f17c4f6fce4acf05de2b7a7a376",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checking complete; selective independent review in separate bounded reports, not universal certification.",
+  "story": {
+    "id": "gup4-story-bhrushundi-rescue",
+    "title": "Bhṛśuṇḍi’s family and Kumbhīpāka inmate rescue",
+    "source_id": "gp-src-ganesha",
+    "witness_id": "gp-wit-sd-upasana",
+    "scope": "58.23–36",
+    "event_ids": [
+      "gup4-event-047",
+      "gup4-event-048"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Whole bounded body read/extracted with ended practice and outcome.",
+    "missing_sections": [],
+    "editorial_notes": "Source-order nested narration is retained. Former births, divine precedents and prospective efficacy remain distinct from enacted results. Kardama king is distinct from the Mudgala sage."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "gup4-event-047",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup4-story-bhrushundi-rescue",
+        "sequence": 47,
+        "passage_ids": [
+          "gup4-p-58-23-28"
+        ],
+        "participants": [
+          "gup-en-005",
+          "gup2-en-097",
+          "gup4-en-086",
+          "gup4-en-087",
+          "gup4-en-088",
+          "gup4-en-089",
+          "gup4-en-090",
+          "gup4-en-091",
+          "gup4-en-092",
+          "gup-en-010",
+          "gup-en-237"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Nārada sees Bhṛśuṇḍi’s parents, sons, wife and daughter(s) upside down in blazing Kumbhīpāka, beaten by Yama’s servants. He tells the sage that Indra and other gods and Kapila’s sages seek his Gaṇeśa-like presence, yet his parents, wife, sons, daughters and servants suffer here through his fault. He calls for ancestral rescue. Bhṛśuṇḍi burns with distress. Verse 23 has dual putrau and verse 26 the broader plural roster; names and additional counts are not invented.",
+        "outcome": "The explicit family roster and Nārada’s rebuke prompt a rescue.",
+        "changed_relationship_ids": [
+          "gup4-rel-040",
+          "gup4-rel-041",
+          "gup4-rel-042",
+          "gup4-rel-043"
+        ],
+        "introduced_entity_ids": [
+          "gup4-en-086",
+          "gup4-en-087",
+          "gup4-en-088",
+          "gup4-en-089",
+          "gup4-en-090",
+          "gup4-en-091",
+          "gup4-en-092"
+        ],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gup4-e-047"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup4-e-047",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup4-p-58-23-28",
+          "locator": "Upāsanā 58.23–28",
+          "paraphrase": "Nārada sees Bhṛśuṇḍi’s parents, sons, wife and daughter(s) upside down in blazing Kumbhīpāka, beaten by Yama’s servants. He tells the sage that Indra and other gods and Kapila’s sages seek his Gaṇeśa-like presence, yet his parents, wife, sons, daughters and servants suffer here through his fault. He calls for ancestral rescue. Bhṛśuṇḍi burns with distress. Verse 23 has dual putrau and verse 26 the broader plural roster; names and additional counts are not invented.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup4-event-048",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup4-story-bhrushundi-rescue",
+        "sequence": 48,
+        "passage_ids": [
+          "gup4-p-58-29-36"
+        ],
+        "participants": [
+          "gup2-en-097",
+          "gp-en-ganesha",
+          "gup4-en-086",
+          "gup4-en-087",
+          "gup4-en-088",
+          "gup4-en-089",
+          "gup4-en-090",
+          "gup4-en-093",
+          "gup-en-178",
+          "gup-en-113",
+          "gup-en-112",
+          "gup4-en-094"
+        ],
+        "setting": null,
+        "cause": "Bhṛśuṇḍi offers vow-merit through a conditional devotional prayer and water transfer.",
+        "details": "Bhṛśuṇḍi considers a rescue, offers Sankaṣṭa-caturthī merit, views his absent kin through concentration, meditates on Gaṇeśa and holds water. He prays that, if his vow was performed devotionally, its power quickly rescue the ancestors, then casts the water into Gaṇeśa’s hand. Immediately divine favour gives them divine forms and vimānas. Served by Apsarases, praised by Cāraṇas and sung to by Gandharvas, they reach Gaṇeśa’s station. All other wrongdoers in Kumbhīpāka also go to Gaṇeśa’s abode. Indra attributes their actual good destination to one day’s merit.",
+        "outcome": "Kin and other hell inmates actually reach Gaṇeśa’s abode through one day’s merit.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [
+          "gup4-en-093",
+          "gup4-en-094"
+        ],
+        "introduced_power_ids": [
+          "gup4-power-028"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "gup4-e-048"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup4-e-048",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup4-p-58-29-36",
+          "locator": "Upāsanā 58.29–36",
+          "paraphrase": "Bhṛśuṇḍi considers a rescue, offers Sankaṣṭa-caturthī merit, views his absent kin through concentration, meditates on Gaṇeśa and holds water. He prays that, if his vow was performed devotionally, its power quickly rescue the ancestors, then casts the water into Gaṇeśa’s hand. Immediately divine favour gives them divine forms and vimānas. Served by Apsarases, praised by Cāraṇas and sung to by Gandharvas, they reach Gaṇeśa’s station. All other wrongdoers in Kumbhīpāka also go to Gaṇeśa’s abode. Indra attributes their actual good destination to one day’s merit.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gp-en-ganesha",
+      "name": "Gaṇeśa",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-result",
+        "gup-e-001",
+        "gup-e-005",
+        "gup-e-008",
+        "gup-e-014",
+        "gup-e-021",
+        "gup-e-023",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-036",
+        "gup-e-037",
+        "gup-e-038",
+        "gup-e-039",
+        "gup-e-040",
+        "gup-e-042",
+        "gup-e-044",
+        "gup-e-045",
+        "gup-e-046",
+        "gup-e-047",
+        "gup-e-049",
+        "gup-e-051",
+        "gup-e-053",
+        "gup-e-054",
+        "gup-e-055",
+        "gup-e-056",
+        "gup-e-057",
+        "gup-e-058",
+        "gup-e-059",
+        "gup-e-060",
+        "gup-e-062",
+        "gup-e-063",
+        "gup-e-064",
+        "gup-e-065",
+        "gup-e-066",
+        "gup-e-067",
+        "gup-e-070",
+        "gup-e-071",
+        "gup-e-072",
+        "gup-e-073",
+        "gup-e-074",
+        "gup-e-075",
+        "gup-e-076",
+        "gup-e-085",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-088",
+        "gup-e-089",
+        "gup-e-090",
+        "gup-e-091",
+        "gup-e-092",
+        "gup-e-093",
+        "gup-e-094",
+        "gkr-e-ages",
+        "gup2-e-007",
+        "gup2-e-011",
+        "gup2-e-012",
+        "gup2-e-013",
+        "gup2-e-014",
+        "gup2-e-015",
+        "gup2-e-017",
+        "gup2-e-018",
+        "gup2-e-019",
+        "gup2-e-020",
+        "gup2-e-021",
+        "gup2-e-029",
+        "gup2-e-030",
+        "gup2-e-031",
+        "gup2-e-032",
+        "gup2-e-033",
+        "gup2-e-036",
+        "gup2-e-045",
+        "gup2-e-046",
+        "gup2-e-047",
+        "gup2-e-048",
+        "gup2-e-049",
+        "gup2-e-050",
+        "gup2-e-051",
+        "gup2-e-052",
+        "gup2-e-056",
+        "gup2-e-057",
+        "gup2-e-058",
+        "gup2-e-059",
+        "gup2-e-060",
+        "gup2-e-063",
+        "gup2-e-064",
+        "gup2-e-066",
+        "gkr2-e-leaf-and-vamana",
+        "gkr2-e-hunter-demon-liberation",
+        "gup3-e-004",
+        "gup3-e-005",
+        "gup3-e-006",
+        "gup3-e-007",
+        "gup3-e-008",
+        "gup3-e-009",
+        "gup3-e-010",
+        "gup3-e-011",
+        "gup3-e-012",
+        "gup3-e-013",
+        "gup3-e-014",
+        "gup3-e-015",
+        "gup3-e-016",
+        "gup3-e-017",
+        "gup3-e-018",
+        "gkr3-e-rama-father-varada",
+        "gkr3-e-incidental-worship",
+        "gkr3-e-prior-merit-release",
+        "gup4-e-002",
+        "gup4-e-003",
+        "gup4-e-005",
+        "gup4-e-009",
+        "gup4-e-010",
+        "gup4-e-011",
+        "gup4-e-012",
+        "gup4-e-015",
+        "gup4-e-016",
+        "gup4-e-017",
+        "gup4-e-018",
+        "gup4-e-027",
+        "gup4-e-028",
+        "gup4-e-029",
+        "gup4-e-031",
+        "gup4-e-033",
+        "gup4-e-034",
+        "gup4-e-035",
+        "gup4-e-038",
+        "gup4-e-040",
+        "gup4-e-042",
+        "gup4-e-044",
+        "gup4-e-048",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-057",
+        "gup4-e-058",
+        "gup4-e-059",
+        "gup4-e-060",
+        "gup4-e-061",
+        "gup4-e-062",
+        "gkr4-e-vamana-guru-tapas",
+        "gkr4-e-vamana-request-grant",
+        "gkr4-e-vamana-installation",
+        "gkr4-e-water-steps-promises",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-sages-vision-hymn",
+        "gkr4-e-trees-request-alternative",
+        "gkr4-e-tree-benefits",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-worship-vision",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-devi-ganesa-prayer"
+      ]
+    },
+    {
+      "id": "gup-en-005",
+      "name": "Nārada",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-077",
+        "gup-e-078",
+        "gup-e-079",
+        "gup-e-082",
+        "gup-e-083",
+        "gup-e-084",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-091",
+        "gup-e-092",
+        "gup2-e-029",
+        "gup2-e-034",
+        "gup2-e-044",
+        "gup2-e-045",
+        "gup2-e-063",
+        "gup2-e-066",
+        "gup3-e-004",
+        "gup4-e-026",
+        "gup4-e-027",
+        "gup4-e-028",
+        "gup4-e-038",
+        "gup4-e-043",
+        "gup4-e-045",
+        "gup4-e-046",
+        "gup4-e-047"
+      ]
+    },
+    {
+      "id": "gup-en-010",
+      "name": "Indra",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-005",
+        "gup-e-014",
+        "gup-e-027",
+        "gup-e-043",
+        "gup-e-055",
+        "gup-e-059",
+        "gup-e-079",
+        "gup-e-080",
+        "gup-e-081",
+        "gup-e-082",
+        "gup-e-083",
+        "gup-e-084",
+        "gup-e-085",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-088",
+        "gup-e-089",
+        "gup-e-090",
+        "gup-e-091",
+        "gup2-e-006",
+        "gup2-e-010",
+        "gup2-e-017",
+        "gup2-e-019",
+        "gup2-e-022",
+        "gup2-e-023",
+        "gup2-e-024",
+        "gup2-e-025",
+        "gup2-e-026",
+        "gup2-e-038",
+        "gup2-e-040",
+        "gup2-e-056",
+        "gup2-e-060",
+        "gup2-e-062",
+        "gup3-e-004",
+        "gup3-e-008",
+        "gup3-e-012",
+        "gup3-e-015",
+        "gup4-e-013",
+        "gup4-e-014",
+        "gup4-e-016",
+        "gup4-e-037",
+        "gup4-e-038",
+        "gup4-e-039",
+        "gup4-e-043",
+        "gup4-e-044",
+        "gup4-e-045",
+        "gup4-e-047",
+        "gup4-e-049",
+        "gup4-e-050"
+      ]
+    },
+    {
+      "id": "gup-en-112",
+      "name": "Gandharvas",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-030",
+        "gup-e-049",
+        "gup2-e-019",
+        "gup2-e-026",
+        "gup2-e-036",
+        "gup2-e-047",
+        "gup2-e-050",
+        "gup2-e-060",
+        "gup2-e-062",
+        "gup2-e-066",
+        "gup3-e-012",
+        "gup4-e-001",
+        "gup4-e-035",
+        "gup4-e-043",
+        "gup4-e-048",
+        "gup4-e-062"
+      ]
+    },
+    {
+      "id": "gup-en-113",
+      "name": "Cāraṇas",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-030",
+        "gup2-e-019",
+        "gup2-e-036",
+        "gup2-e-066",
+        "gup4-e-048"
+      ]
+    },
+    {
+      "id": "gup-en-178",
+      "name": "Apsarases",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-049",
+        "gup-e-093",
+        "gup2-e-026",
+        "gup2-e-036",
+        "gup2-e-066",
+        "gup4-e-014",
+        "gup4-e-048"
+      ]
+    },
+    {
+      "id": "gup-en-237",
+      "name": "Kapila",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-074",
+        "gup4-e-047",
+        "gkr4-e-river-sacrifice-curse"
+      ]
+    },
+    {
+      "id": "gup2-en-097",
+      "name": "Bhṛśuṇḍī",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [
+        {
+          "name": "Bhṛśuṇḍi",
+          "evidence_ids": [
+            "gup4-e-043"
+          ]
+        },
+        {
+          "name": "Nāmā (former name in57)",
+          "evidence_ids": [
+            "gup4-e-039"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "gup2-e-038",
+        "gup2-e-039",
+        "gup4-e-038",
+        "gup4-e-039",
+        "gup4-e-040",
+        "gup4-e-041",
+        "gup4-e-042",
+        "gup4-e-043",
+        "gup4-e-044",
+        "gup4-e-047",
+        "gup4-e-048"
+      ]
+    },
+    {
+      "id": "gup4-en-086",
+      "name": "Bhṛśuṇḍi parents",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-047",
+        "gup4-e-048"
+      ]
+    },
+    {
+      "id": "gup4-en-087",
+      "name": "Bhṛśuṇḍi sons",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-047",
+        "gup4-e-048"
+      ]
+    },
+    {
+      "id": "gup4-en-088",
+      "name": "Bhṛśuṇḍi wife",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-047",
+        "gup4-e-048"
+      ]
+    },
+    {
+      "id": "gup4-en-089",
+      "name": "Bhṛśuṇḍi daughters",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-047",
+        "gup4-e-048"
+      ]
+    },
+    {
+      "id": "gup4-en-090",
+      "name": "Bhṛśuṇḍi servants",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-047",
+        "gup4-e-048"
+      ]
+    },
+    {
+      "id": "gup4-en-091",
+      "name": "Yama servants",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-047"
+      ]
+    },
+    {
+      "id": "gup4-en-092",
+      "name": "Kumbhīpāka",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-047"
+      ]
+    },
+    {
+      "id": "gup4-en-093",
+      "name": "Other Kumbhīpāka wrongdoers",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-048"
+      ]
+    },
+    {
+      "id": "gup4-en-094",
+      "name": "Family-rescue vimānas",
+      "type": "VAHANA",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-048"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "gup4-rel-040",
+      "subject_id": "gup2-en-097",
+      "predicate": "child_of",
+      "object_id": "gup4-en-086",
+      "evidence_ids": [
+        "gup4-e-047"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup4-a-046",
+      "kinship_kind": "SOURCE_DECLARED_PARENTAGE"
+    },
+    {
+      "id": "gup4-rel-041",
+      "subject_id": "gup4-en-087",
+      "predicate": "children_of",
+      "object_id": "gup2-en-097",
+      "evidence_ids": [
+        "gup4-e-047"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup4-a-047",
+      "kinship_kind": "SOURCE_DECLARED_PARENTAGE"
+    },
+    {
+      "id": "gup4-rel-042",
+      "subject_id": "gup4-en-089",
+      "predicate": "children_of",
+      "object_id": "gup2-en-097",
+      "evidence_ids": [
+        "gup4-e-047"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup4-a-048",
+      "kinship_kind": "SOURCE_DECLARED_PARENTAGE"
+    },
+    {
+      "id": "gup4-rel-043",
+      "subject_id": "gup4-en-088",
+      "predicate": "spouse_of",
+      "object_id": "gup2-en-097",
+      "evidence_ids": [
+        "gup4-e-047"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup4-a-049",
+      "kinship_kind": "MARITAL"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "gup4-power-028",
+      "type": "POWER",
+      "recipient_id": "gup2-en-097",
+      "grantor_id": null,
+      "worshipped_id": "gp-en-ganesha",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": "If his vow was performed devotionally, its merit should quickly rescue his ancestors.",
+      "granted": null,
+      "mechanism": "One-day Sankaṣṭa-merit transfer and the water-cast prayer are followed by divine forms, vimānas and Gaṇeśa’s destination for kin and other hell inmates.",
+      "trigger": "Meditation, water held in hand, prayer and casting the water into Gaṇeśa’s hand.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "gup4-e-048"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup4-e-048"
+        ],
+        "worshipped_id": [
+          "gup4-e-048"
+        ],
+        "requested": [
+          "gup4-e-048"
+        ],
+        "mechanism": [
+          "gup4-e-048"
+        ],
+        "trigger": [
+          "gup4-e-048"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "An actual local rescue, not a universal physical transfer formula."
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "gup4-a-046",
+      "subject_id": "gup2-en-097",
+      "predicate": "child_of",
+      "object_id": "gup4-en-086",
+      "value": null,
+      "evidence_ids": [
+        "gup4-e-047"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup4-a-047",
+      "subject_id": "gup4-en-087",
+      "predicate": "children_of",
+      "object_id": "gup2-en-097",
+      "value": null,
+      "evidence_ids": [
+        "gup4-e-047"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup4-a-048",
+      "subject_id": "gup4-en-089",
+      "predicate": "children_of",
+      "object_id": "gup2-en-097",
+      "value": null,
+      "evidence_ids": [
+        "gup4-e-047"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup4-a-049",
+      "subject_id": "gup4-en-088",
+      "predicate": "spouse_of",
+      "object_id": "gup2-en-097",
+      "value": null,
+      "evidence_ids": [
+        "gup4-e-047"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Historical builders use work/continuation5/baseline/research. Frozen patches are already integrated. Do not replay them against later checkpoints. Current offline checks are validate_graph.py and test_integrity.py in research/.

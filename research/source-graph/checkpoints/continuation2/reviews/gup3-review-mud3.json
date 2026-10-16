@@ -1,0 +1,344 @@
+{
+  "review_id": "gup3-review-mud3",
+  "reviewer": "/root/lalitopakhyana",
+  "reviewed_patch": "work/continuation2/patches/mud3.json",
+  "reviewed_sha256": "0ef688a2f6b37104bb535911a20f61eab834be8d3c9d09f07fca7689c61a77fb",
+  "source_urls": [
+    "https://sanskritdocuments.org/doc_purana/mudgalapurANam1.html",
+    "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html"
+  ],
+  "read_spans": [
+    "1.13.26–51",
+    "1.14.1–6",
+    "1.17.10–56",
+    "2.1.21–31"
+  ],
+  "method": "Independent direct Sanskrit body reading and explicit record/field comparison; no target patch edited.",
+  "scope": "Requested highest-risk agency, manifestation, marriage, emanation and unresolved etymology; not all-chapter/all-name certification.",
+  "summary": {
+    "SUPPORTED": 6,
+    "CORRECTION_PENDING": 3,
+    "PENDING": 1
+  },
+  "findings": [
+    {
+      "id": "gup3-review-mud3-001",
+      "status": "SUPPORTED",
+      "source_id": "gp-src-mudgala",
+      "witness_ids": [
+        "gp-wit-sd-mudgala-1"
+      ],
+      "locators": [
+        "Mudgala 1.13.33–37"
+      ],
+      "evidence_ids": [
+        "mud3-e-siva-linga-son-boon"
+      ],
+      "records": [
+        {
+          "table": "boons_and_powers",
+          "id": "mud3-power-visnu-brahma-son"
+        },
+        {
+          "table": "assertions",
+          "id": "mud3-a-brahma-son-promise"
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud3-event-siva-linga-son-boon"
+        }
+      ],
+      "finding": "Viṣṇu first requests a boon from Brahmā, Brahmā offers it, Viṣṇu specifies Brahmā as his son, and Brahmā accepts because of his own offered promise. Brahmā explicitly promises yoga-created body from Viṣṇu’s navel-lotus at creation. Grantor Brahmā / recipient Viṣṇu is securely established here; no ordinary biological birth is implied.",
+      "requested_correction": null
+    },
+    {
+      "id": "gup3-review-mud3-002",
+      "status": "SUPPORTED",
+      "source_id": "gp-src-mudgala",
+      "witness_ids": [
+        "gp-wit-sd-mudgala-1"
+      ],
+      "locators": [
+        "Mudgala 1.14.2–5"
+      ],
+      "evidence_ids": [
+        "mud3-e-siva-son-promise"
+      ],
+      "records": [
+        {
+          "table": "boons_and_powers",
+          "id": "mud3-power-brahma-siva-son"
+        },
+        {
+          "table": "assertions",
+          "id": "mud3-a-siva-promised-grandson"
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud3-event-siva-son-promise"
+        }
+      ],
+      "finding": "Viṣṇu urges Brahmā’s request so Śiva will be his own grandson through Brahmā. Brahmā asks Śiva to become his son, Viṣṇu repeats, and Śiva promises a future partial Rudra manifestation from Brahmā’s forehead. The patch correctly treats this as future local manifestation/genealogy, not immediate ordinary biological birth.",
+      "requested_correction": null
+    },
+    {
+      "id": "gup3-review-mud3-003",
+      "status": "SUPPORTED",
+      "source_id": "gp-src-mudgala",
+      "witness_ids": [
+        "gp-wit-sd-mudgala-1"
+      ],
+      "locators": [
+        "Mudgala 1.17.39–49"
+      ],
+      "evidence_ids": [
+        "mud3-e-shakti-marriage-emanations"
+      ],
+      "records": [
+        {
+          "table": "boons_and_powers",
+          "id": "mud3-power-siva-shakti-spouse"
+        },
+        {
+          "table": "assertions",
+          "id": "mud3-a-shakti-spouse-siva"
+        },
+        {
+          "table": "relationships",
+          "id": "mud3-r-shakti-spouse-siva"
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud3-event-shakti-marriage-emanations"
+        }
+      ],
+      "finding": "Śiva retrospectively narrates the five-deity rivalry, following Gaṇeśa instruction/disappearance, great tapas to obtain her and her satisfaction after one hundred years. Śakti appears and invites a boon, Śiva bows/praises and asks her wifehood; she grants and disappears. Hundred years belongs to the austerity circumstances, not a marriage-expiry restriction or grant duration. Patch agency and field placement are supported.",
+      "requested_correction": null
+    },
+    {
+      "id": "gup3-review-mud3-004",
+      "status": "SUPPORTED",
+      "source_id": "gp-src-mudgala",
+      "witness_ids": [
+        "gp-wit-sd-mudgala-1"
+      ],
+      "locators": [
+        "Mudgala 1.17.50–51"
+      ],
+      "evidence_ids": [
+        "mud3-e-shakti-marriage-emanations"
+      ],
+      "records": [
+        {
+          "table": "assertions",
+          "id": "mud3-a-lakshmi-origin"
+        },
+        {
+          "table": "assertions",
+          "id": "mud3-a-savitri-origin"
+        },
+        {
+          "table": "assertions",
+          "id": "mud3-a-samjna-origin"
+        },
+        {
+          "table": "relationships",
+          "id": "mud3-r-lakshmi-origin"
+        },
+        {
+          "table": "relationships",
+          "id": "mud3-r-savitri-origin"
+        },
+        {
+          "table": "relationships",
+          "id": "mud3-r-samjna-origin"
+        }
+      ],
+      "finding": "Lakṣmī emerges from her left limb, Sāvitrī from right, Saṃjñā from heart. EMANATION labels preserve the locally stated origins without forcing a human birth mechanism.",
+      "requested_correction": null
+    },
+    {
+      "id": "gup3-review-mud3-005",
+      "status": "SUPPORTED",
+      "source_id": "gp-src-mudgala",
+      "witness_ids": [
+        "gp-wit-sd-mudgala-1"
+      ],
+      "locators": [
+        "Mudgala 1.17.50–51"
+      ],
+      "evidence_ids": [
+        "mud3-e-shakti-marriage-emanations"
+      ],
+      "records": [
+        {
+          "table": "assertions",
+          "id": "mud3-a-lakshmi-visnu"
+        },
+        {
+          "table": "assertions",
+          "id": "mud3-a-savitri-brahma"
+        },
+        {
+          "table": "assertions",
+          "id": "mud3-a-samjna-sun"
+        },
+        {
+          "table": "relationships",
+          "id": "mud3-r-lakshmi-visnu"
+        },
+        {
+          "table": "relationships",
+          "id": "mud3-r-savitri-brahma"
+        },
+        {
+          "table": "relationships",
+          "id": "mud3-r-samjna-sun"
+        }
+      ],
+      "finding": "The wording is Nārāyaṇa-priyā for Lakṣmī, Brahmā-priyā for Sāvitrī, and explicit wife of Ravi for Saṃjñā. The patch correctly preserves beloved_of versus spouse_of here rather than silently treating all three as identical marriage statements.",
+      "requested_correction": null
+    },
+    {
+      "id": "gup3-review-mud3-006",
+      "status": "SUPPORTED",
+      "source_id": "gp-src-mudgala",
+      "witness_ids": [
+        "gp-wit-sd-mudgala-1"
+      ],
+      "locators": [
+        "Mudgala 1.17.52–54"
+      ],
+      "evidence_ids": [
+        "mud3-e-shakti-marriage-emanations"
+      ],
+      "records": [
+        {
+          "table": "assertions",
+          "id": "mud3-a-parvati-yoga"
+        },
+        {
+          "table": "relationships",
+          "id": "mud3-r-parvati-yoga"
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud3-event-shakti-marriage-emanations"
+        }
+      ],
+      "finding": "Pārvatī follows renewed Gaṇeśa yoga privately, gains peace in a short time through prior impressions and goes to Śiva’s vicinity. No fixed number of years for her practice is supplied; the patch does not transfer Śiva’s hundred years to her.",
+      "requested_correction": null
+    },
+    {
+      "id": "gup3-review-mud3-007",
+      "status": "CORRECTION_PENDING",
+      "source_id": "gp-src-mudgala",
+      "witness_ids": [
+        "gp-wit-sd-mudgala-1"
+      ],
+      "locators": [
+        "Mudgala 1.13.33–35"
+      ],
+      "evidence_ids": [
+        "mud3-e-siva-linga-son-boon"
+      ],
+      "records": [
+        {
+          "table": "boons_and_powers",
+          "id": "mud3-power-visnu-brahma-son"
+        }
+      ],
+      "finding": "austerity_or_circumstances currently says Viṣṇu asks a boon after Brahmā offers. The actual order is generic request33, Brahmā invitation/promise34, specified son request35. Record evidence and event have the correct order.",
+      "requested_correction": "Revise circumstances to: Before the downward limit-search Viṣṇu asks Brahmā for a boon; Brahmā offers/promise, then Viṣṇu specifies that Brahmā become his son. Field evidence unchanged."
+    },
+    {
+      "id": "gup3-review-mud3-008",
+      "status": "CORRECTION_PENDING",
+      "source_id": "gp-src-mudgala",
+      "witness_ids": [
+        "gp-wit-sd-mudgala-1",
+        "gp-wit-sd-mudgala-2"
+      ],
+      "locators": [
+        "Mudgala 1.13.33–37",
+        "Mudgala 2.1.21–22"
+      ],
+      "evidence_ids": [
+        "mud3-e-siva-linga-son-boon",
+        "mud2-e-brahma-flood"
+      ],
+      "records": [
+        {
+          "table": "boons_and_powers",
+          "id": "mud2-power-brahma-navel-emergence"
+        }
+      ],
+      "finding": "The updated mechanism asserts actual emergence and fulfillment of the earlier promise but field_evidence.mechanism only cites 1.13’s future promise. Actual entry/year-later emergence is in 2.1.21–22. The identification of 2.1 as fulfillment of the exact1.13promise is a cross-locus correspondence, not explicitly stated in2.1.",
+      "requested_correction": "Add mud2-e-brahma-flood to mechanism field evidence. Qualify the exact earlier-promise fulfillment link as cross-locus inference, or state neutral actual emergence plus separate1.13promise. Retain POWER/null grantor correction rather than presenting2.1as independently explicit reversed boon dialogue."
+    },
+    {
+      "id": "gup3-review-mud3-009",
+      "status": "CORRECTION_PENDING",
+      "source_id": "gp-src-mudgala",
+      "witness_ids": [
+        "gp-wit-sd-mudgala-1",
+        "gp-wit-sd-mudgala-2"
+      ],
+      "locators": [
+        "Mudgala 1.13.33–37",
+        "Mudgala 2.1.21–22"
+      ],
+      "evidence_ids": [
+        "mud3-e-siva-linga-son-boon",
+        "mud2-e-brahma-flood"
+      ],
+      "records": [
+        {
+          "table": "evidence",
+          "id": "mud2-e-brahma-flood"
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud2-event-brahma-flood"
+        }
+      ],
+      "finding": "Latest mud3 updates the power record’s grantor but old verified evidence/event still say becoming son through Viṣṇu’s boon without explaining its ambiguous agency. Direct2.1.22 has the broad Viṣṇu genitive with sonhood/boon;1.13precisely supplies opposite requester/grantor roles. Leaving old prose unqualified makes the correction inconsistent to readers.",
+      "requested_correction": "Add explicit updates of old evidence paraphrase and event details to neutral boon associated with Viṣṇu wording. Add1.13 evidence/notes for corrected agency and preserve the textual genitive/source-local wording; do not erase the old record or claim2.1itself explicitly names Brahmā as grantor."
+    },
+    {
+      "id": "gup3-review-mud3-010",
+      "status": "PENDING",
+      "source_id": "gp-src-mudgala",
+      "witness_ids": [
+        "gp-wit-sd-mudgala-1"
+      ],
+      "locators": [
+        "Mudgala 1.17.14–18"
+      ],
+      "evidence_ids": [
+        "mud3-e-vak-second-etymology",
+        "mud3-e-remember-condition"
+      ],
+      "records": [
+        {
+          "table": "evidence",
+          "id": "mud3-e-vak-second-etymology"
+        },
+        {
+          "table": "passages",
+          "id": "mud3-p-vak-second-etymology"
+        },
+        {
+          "table": "queue",
+          "id": "mud3-queue-17-etymology"
+        }
+      ],
+      "finding": "Direct reread confirms the dense māyā-made-jīva / vakra Brahman-face / unmanas wording. Exact semantic direction and doctrinal etymology are not safely settled by this witness. NEEDS_REVIEW evidence, partial passage, open queue and chapter17PARTIAL correctly retain the gap; certain15–18are separately evidenced.",
+      "requested_correction": "Keep unresolved. Independent Sanskrit/printed commentary or alternate transcription is needed before upgrading this etymological meaning; no recalled doctrinal gloss substituted."
+    }
+  ],
+  "limitations": [
+    "Single Sanskrit Documents electronic witnesses; no alternate/print edition collated.",
+    "2.1genitive agency remains linguistically broader than explicit1.13dialogue; correspondence is distinguished from direct wording."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "authoritative_files": [
+    "graph.json",
+    "chapter_coverage.json",
+    "extraction_queue.json",
+    "continuation4_review_resolution.json"
+  ],
+  "frozen_author_patches": [
+    "patches/gup5.json",
+    "patches/gkr5.json",
+    "patches/mud5.json"
+  ],
+  "superseded_snapshots": [
+    {
+      "path": "checkpoints/gup5/durva-fire-counter-001.json",
+      "reason": "Contains withdrawn negative63.43 instruction;002 and frozen004 retain correction and unresolved strategy."
+    },
+    {
+      "path": "checkpoints/mud5/09-coherent-author-freeze-through18.json",
+      "reason": "Author reports formatting corrupted field_evidence IDs in snapshot09;10/11 restore valid IDs. Historical snapshot retained for audit, not integration."
+    }
+  ],
+  "policy": "Snapshots preserve drafting history. Their byte hashes do not certify textual truth or schema validity. Current integrated graph and explicit change/resolution records are authoritative."
+}

@@ -1,0 +1,517 @@
+{
+  "checkpoint": "continuation5",
+  "completed_arc_id": "gup6-story-sesa-pravala",
+  "graph_sha256": "c4af351fd8e2c786669610e2e9d56e1bb7f3e9b906dede60d84b0ae62ef3d7db",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checks complete; independent review selective. All declared interpretation gaps remain explicit.",
+  "story": {
+    "id": "gup6-story-sesa-pravala",
+    "title": "Śeṣa’s earlier grants and Dharaṇīdhara installation",
+    "source_id": "gp-src-ganesha",
+    "witness_id": "gp-wit-sd-upasana",
+    "scope": "73.23–26",
+    "event_ids": [
+      "gup6-event-013"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Full bounded body and important named dialogue, relationships, requests/grants/powers checked; actual ending present.",
+    "missing_sections": [],
+    "editorial_notes": "Source order is preserved.71 concise fulfilled-life summary precedes72 expanded sonbirth/remedy; local72 father/child naming does not harmonize anomalous68/71 performer names."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "gup6-event-013",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup6-story-sesa-pravala",
+        "sequence": 73023,
+        "passage_ids": [
+          "gup6-p-73-23-26"
+        ],
+        "participants": [
+          "gup-en-007",
+          "gp-en-ganesha",
+          "gup6-en-021",
+          "gup6-en-022",
+          "gup6-en-023",
+          "gup6-en-024"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "The place becomes famous as wish-accomplishing Pravāla-kṣetra. In a separate earlier account Śeṣa practices there desiring to bear earth and obtains many boons from Gaṇeśa: earth-bearing strength, omniscience, one thousand heads and supremacy among nine Nāga clans. With delighted mind he earlier installs the deity, bringing the second name Dharaṇīdhara, granting all wished fruits to those who remember or hear it.",
+        "outcome": "A source flashback explains the second site-name; Śeṣa’s boons are not assigned to Kārtavīrya.",
+        "changed_relationship_ids": [
+          "gup6-rel-008",
+          "gup6-rel-009"
+        ],
+        "introduced_entity_ids": [
+          "gup6-en-021",
+          "gup6-en-022",
+          "gup6-en-023",
+          "gup6-en-024"
+        ],
+        "introduced_power_ids": [
+          "gup6-power-006",
+          "gup6-power-007"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "gup6-e-013"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup6-e-013",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup6-p-73-23-26",
+          "locator": "Upāsanā 73.23–26",
+          "paraphrase": "The place becomes famous as wish-accomplishing Pravāla-kṣetra. In a separate earlier account Śeṣa practices there desiring to bear earth and obtains many boons from Gaṇeśa: earth-bearing strength, omniscience, one thousand heads and supremacy among nine Nāga clans. With delighted mind he earlier installs the deity, bringing the second name Dharaṇīdhara, granting all wished fruits to those who remember or hear it.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gp-en-ganesha",
+      "name": "Gaṇeśa",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-result",
+        "gup-e-001",
+        "gup-e-005",
+        "gup-e-008",
+        "gup-e-014",
+        "gup-e-021",
+        "gup-e-023",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-036",
+        "gup-e-037",
+        "gup-e-038",
+        "gup-e-039",
+        "gup-e-040",
+        "gup-e-042",
+        "gup-e-044",
+        "gup-e-045",
+        "gup-e-046",
+        "gup-e-047",
+        "gup-e-049",
+        "gup-e-051",
+        "gup-e-053",
+        "gup-e-054",
+        "gup-e-055",
+        "gup-e-056",
+        "gup-e-057",
+        "gup-e-058",
+        "gup-e-059",
+        "gup-e-060",
+        "gup-e-062",
+        "gup-e-063",
+        "gup-e-064",
+        "gup-e-065",
+        "gup-e-066",
+        "gup-e-067",
+        "gup-e-070",
+        "gup-e-071",
+        "gup-e-072",
+        "gup-e-073",
+        "gup-e-074",
+        "gup-e-075",
+        "gup-e-076",
+        "gup-e-085",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-088",
+        "gup-e-089",
+        "gup-e-090",
+        "gup-e-091",
+        "gup-e-092",
+        "gup-e-093",
+        "gup-e-094",
+        "gkr-e-ages",
+        "gup2-e-007",
+        "gup2-e-011",
+        "gup2-e-012",
+        "gup2-e-013",
+        "gup2-e-014",
+        "gup2-e-015",
+        "gup2-e-017",
+        "gup2-e-018",
+        "gup2-e-019",
+        "gup2-e-020",
+        "gup2-e-021",
+        "gup2-e-029",
+        "gup2-e-030",
+        "gup2-e-031",
+        "gup2-e-032",
+        "gup2-e-033",
+        "gup2-e-036",
+        "gup2-e-045",
+        "gup2-e-046",
+        "gup2-e-047",
+        "gup2-e-048",
+        "gup2-e-049",
+        "gup2-e-050",
+        "gup2-e-051",
+        "gup2-e-052",
+        "gup2-e-056",
+        "gup2-e-057",
+        "gup2-e-058",
+        "gup2-e-059",
+        "gup2-e-060",
+        "gup2-e-063",
+        "gup2-e-064",
+        "gup2-e-066",
+        "gkr2-e-leaf-and-vamana",
+        "gkr2-e-hunter-demon-liberation",
+        "gup3-e-004",
+        "gup3-e-005",
+        "gup3-e-006",
+        "gup3-e-007",
+        "gup3-e-008",
+        "gup3-e-009",
+        "gup3-e-010",
+        "gup3-e-011",
+        "gup3-e-012",
+        "gup3-e-013",
+        "gup3-e-014",
+        "gup3-e-015",
+        "gup3-e-016",
+        "gup3-e-017",
+        "gup3-e-018",
+        "gkr3-e-rama-father-varada",
+        "gkr3-e-incidental-worship",
+        "gkr3-e-prior-merit-release",
+        "gup4-e-002",
+        "gup4-e-003",
+        "gup4-e-005",
+        "gup4-e-009",
+        "gup4-e-010",
+        "gup4-e-011",
+        "gup4-e-012",
+        "gup4-e-015",
+        "gup4-e-016",
+        "gup4-e-017",
+        "gup4-e-018",
+        "gup4-e-027",
+        "gup4-e-028",
+        "gup4-e-029",
+        "gup4-e-031",
+        "gup4-e-033",
+        "gup4-e-034",
+        "gup4-e-035",
+        "gup4-e-038",
+        "gup4-e-040",
+        "gup4-e-042",
+        "gup4-e-044",
+        "gup4-e-048",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-057",
+        "gup4-e-058",
+        "gup4-e-059",
+        "gup4-e-060",
+        "gup4-e-061",
+        "gup4-e-062",
+        "gkr4-e-vamana-guru-tapas",
+        "gkr4-e-vamana-request-grant",
+        "gkr4-e-vamana-installation",
+        "gkr4-e-water-steps-promises",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-sages-vision-hymn",
+        "gkr4-e-trees-request-alternative",
+        "gkr4-e-tree-benefits",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-worship-vision",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-devi-ganesa-prayer",
+        "gup5-e-001",
+        "gup5-e-002",
+        "gup5-e-003",
+        "gup5-e-004",
+        "gup5-e-005",
+        "gup5-e-006",
+        "gup5-e-008",
+        "gup5-e-009",
+        "gup5-e-010",
+        "gup5-e-012",
+        "gup5-e-014",
+        "gup5-e-015",
+        "gup5-e-016",
+        "gup5-e-019",
+        "gup5-e-021",
+        "gup5-e-022",
+        "gup5-e-023",
+        "gup5-e-024",
+        "gup5-e-025",
+        "gup5-e-026",
+        "gup5-e-027",
+        "gup5-e-029",
+        "gup5-e-030",
+        "gup5-e-031",
+        "gup5-e-032",
+        "gup5-e-033",
+        "gup5-e-034",
+        "gup5-e-035",
+        "gup5-e-036",
+        "gup5-e-041",
+        "gup5-e-042",
+        "gup5-e-043",
+        "gup5-e-045",
+        "gup5-e-047",
+        "gup5-e-049",
+        "gup5-e-050",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-060",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066",
+        "gup5-e-067",
+        "gkr5-e-realm-introduction49",
+        "gup6-e-001",
+        "gup6-e-002",
+        "gup6-e-003",
+        "gup6-e-005",
+        "gup6-e-006",
+        "gup6-e-007",
+        "gup6-e-008",
+        "gup6-e-009",
+        "gup6-e-010",
+        "gup6-e-012",
+        "gup6-e-013",
+        "gup6-e-017",
+        "gup6-e-020",
+        "gup6-e-023",
+        "gup6-e-024",
+        "gup6-e-025",
+        "gup6-e-033",
+        "gup6-e-034"
+      ]
+    },
+    {
+      "id": "gup-en-007",
+      "name": "Śeṣa",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-025",
+        "gup-e-042",
+        "gup-e-043",
+        "gup-e-062",
+        "gup-e-078",
+        "gup2-e-022",
+        "gup2-e-028",
+        "gup2-e-064",
+        "gup3-e-005",
+        "gup3-e-012",
+        "gup4-e-013",
+        "gup4-e-049",
+        "gup5-e-018",
+        "gup5-e-041",
+        "gup5-e-043",
+        "gup5-e-053",
+        "gup6-e-013"
+      ]
+    },
+    {
+      "id": "gup6-en-021",
+      "name": "Pravāla-kṣetra / Dharaṇīdhara site",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup6-e-013"
+      ]
+    },
+    {
+      "id": "gup6-en-022",
+      "name": "Dharaṇīdhara image installed by Śeṣa",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup6-e-013"
+      ]
+    },
+    {
+      "id": "gup6-en-023",
+      "name": "Nine Nāga clans in73",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup6-e-013"
+      ]
+    },
+    {
+      "id": "gup6-en-024",
+      "name": "Dharaṇīdhara remembrance/hearing beneficiaries",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup6-e-013"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "gup6-rel-008",
+      "subject_id": "gup6-en-022",
+      "predicate": "installed_by",
+      "object_id": "gup-en-007",
+      "evidence_ids": [
+        "gup6-e-013"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup6-a-015"
+    },
+    {
+      "id": "gup6-rel-009",
+      "subject_id": "gup6-en-022",
+      "predicate": "installed_at",
+      "object_id": "gup6-en-021",
+      "evidence_ids": [
+        "gup6-e-013"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup6-a-016"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "gup6-power-006",
+      "type": "BOON",
+      "recipient_id": "gup-en-007",
+      "grantor_id": "gp-en-ganesha",
+      "worshipped_id": null,
+      "motive": "Bear earth.",
+      "austerity_or_circumstances": "Earlier observance at this site.",
+      "requested": null,
+      "granted": "Earth-bearing capacity, omniscience, one thousand heads, supremacy among nine Nāga clans.",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "gup6-e-013"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup6-e-013"
+        ],
+        "grantor_id": [
+          "gup6-e-013"
+        ],
+        "motive": [
+          "gup6-e-013"
+        ],
+        "austerity_or_circumstances": [
+          "gup6-e-013"
+        ],
+        "granted": [
+          "gup6-e-013"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Motive explicitly stated; the wording of a personal request is not given. Chronology is an embedded earlier practice/installation."
+    },
+    {
+      "id": "gup6-power-007",
+      "type": "POWER",
+      "recipient_id": "gup6-en-024",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "All desired fruits.",
+      "trigger": "Remember or hear the Dharaṇīdhara name/account73.26.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "gup6-e-013"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup6-e-013"
+        ],
+        "mechanism": [
+          "gup6-e-013"
+        ],
+        "trigger": [
+          "gup6-e-013"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "The precise formula speaks of remembering/hearing, without inventing a visit or separate practice requirement."
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "gup6-a-015",
+      "subject_id": "gup6-en-022",
+      "predicate": "installed_by",
+      "object_id": "gup-en-007",
+      "value": null,
+      "evidence_ids": [
+        "gup6-e-013"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup6-a-016",
+      "subject_id": "gup6-en-022",
+      "predicate": "installed_at",
+      "object_id": "gup6-en-021",
+      "value": null,
+      "evidence_ids": [
+        "gup6-e-013"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ]
+}

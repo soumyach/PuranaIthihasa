@@ -1,0 +1,3829 @@
+{
+  "checkpoint": "continuation4",
+  "completed_arc_id": "gup5-story-sankasta-procedure",
+  "graph_sha256": "d3e53f6fb2ee6852a3b4d4e6ee677a24abac85e4ede403205172dfa77aa4306a",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checks complete; independent review selective. All declared interpretation gaps remain explicit.",
+  "story": {
+    "id": "gup5-story-sankasta-procedure",
+    "title": "Prescribed Sankaṣṭa worship and its completion protocol",
+    "source_id": "gp-src-ganesha",
+    "witness_id": "gp-wit-sd-upasana",
+    "scope": "69.1–62;71.1–17",
+    "event_ids": [
+      "gup5-event-047",
+      "gup5-event-048",
+      "gup5-event-053",
+      "gup5-event-049",
+      "gup5-event-050",
+      "gup5-event-051",
+      "gup5-event-052",
+      "gup5-event-059",
+      "gup5-event-060"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "All bodies and named transitions in this bounded witness-local scope are read and extracted; its stated ending is present.",
+    "missing_sections": [],
+    "editorial_notes": "Source-order embedded narration remains distinct from chronology. Brief reports are complete only as bounded reports in this witness, not exhaustive biographies or other-corpus arcs. Ritual formula claims do not become new narrated births."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "gup5-event-047",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-sankasta-procedure",
+        "sequence": 47,
+        "passage_ids": [
+          "gup5-p-69-1-9"
+        ],
+        "participants": [
+          "gup4-en-062",
+          "gup-en-010",
+          "gup4-en-083",
+          "gup4-en-080",
+          "gp-en-brahma",
+          "gup-en-098",
+          "gp-en-ganesha",
+          "gup4-en-079"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Śūrasena asks Indra how Brahmā taught Kṛtavīrya the successful Sankaṣṭa vow. Indra recounts the father approaching Brahmā in Satyaloka and asking what people in distress, anxiety, separation from friends, difficult undertakings, or seeking wealth, sons and good fortune should do. Brahmā prescribes the wish-accomplishing vow: daytime bathing with herbs and white sesame, proper intention and Gaṇeśa meditation, and devotional worship with Āgama mantras on dark fourth at night’s moonrise. The king asks the exact worship method.",
+        "outcome": "Brahmā answers a general remedy request and specifies time, preparation and ritual authority.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "gup5-power-039"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-052"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-052",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-69-1-9",
+          "locator": "Upāsanā 69.1–9",
+          "paraphrase": "Śūrasena asks Indra how Brahmā taught Kṛtavīrya the successful Sankaṣṭa vow. Indra recounts the father approaching Brahmā in Satyaloka and asking what people in distress, anxiety, separation from friends, difficult undertakings, or seeking wealth, sons and good fortune should do. Brahmā prescribes the wish-accomplishing vow: daytime bathing with herbs and white sesame, proper intention and Gaṇeśa meditation, and devotional worship with Āgama mantras on dark fourth at night’s moonrise. The king asks the exact worship method.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-048",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-sankasta-procedure",
+        "sequence": 48,
+        "passage_ids": [
+          "gup5-p-69-10-17"
+        ],
+        "participants": [
+          "gp-en-brahma",
+          "gup4-en-083",
+          "gp-en-ganesha",
+          "gup5-en-079",
+          "gup5-en-080",
+          "gup-en-007",
+          "gup5-en-081",
+          "gup5-en-082",
+          "gup4-en-079"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "After daily rites at moonrise, prepare a clean cow-dung-coated place with a pavilion and honour Gaṇeśa’s seat with kuṅkuma and rice. Set a kalaśa with five gems and a gold vessel; silver, copper or bamboo is permitted when unavailable, and cloth according to ability. Draw the Āgama-prescribed yantra and install a well-formed gold image. Meditate one-tusked, huge, molten-gold-coloured, large-bellied, wide-eyed Gaṇeśa with fire-like eyes, riding a mouse, fanned by Gaṇas, with Śeṣa as sacred thread. Invoke him to remove distress and remain present until the vow ends.",
+        "outcome": "The image/mount/thread are meditation instructions; no actual travel or new birth is inferred.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [
+          "gup5-en-079",
+          "gup5-en-080",
+          "gup5-en-081",
+          "gup5-en-082"
+        ],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-053"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-053",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-69-10-17",
+          "locator": "Upāsanā 69.10–17",
+          "paraphrase": "After daily rites at moonrise, prepare a clean cow-dung-coated place with a pavilion and honour Gaṇeśa’s seat with kuṅkuma and rice. Set a kalaśa with five gems and a gold vessel; silver, copper or bamboo is permitted when unavailable, and cloth according to ability. Draw the Āgama-prescribed yantra and install a well-formed gold image. Meditate one-tusked, huge, molten-gold-coloured, large-bellied, wide-eyed Gaṇeśa with fire-like eyes, riding a mouse, fanned by Gaṇas, with Śeṣa as sacred thread. Invoke him to remove distress and remain present until the vow ends.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-053",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-sankasta-procedure",
+        "sequence": 49,
+        "passage_ids": [
+          "gup5-p-69-17-37"
+        ],
+        "participants": [
+          "gup5-en-085",
+          "gup5-en-098",
+          "gup5-en-131",
+          "gup-en-100",
+          "gup5-en-113",
+          "gup-en-109",
+          "gup5-en-132",
+          "gup5-en-133",
+          "gup5-en-134",
+          "gup-en-033",
+          "gup-en-011",
+          "gup5-en-112",
+          "gup-en-015",
+          "gup5-en-114",
+          "gup5-en-115",
+          "gup5-en-116",
+          "gup5-en-117",
+          "gup5-en-118",
+          "gup5-en-119",
+          "gup5-en-120"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "The parenthetical ritual alternatives recite Puruṣa as thousand-headed, thousand-eyed and thousand-footed, embracing what has been and will be; Virāj arises, and Puruṣa arises from Virāj. Gods perform sacrifice with Puruṣa as offering, spring as ghee, summer as fuel and autumn as offering-material; gods, Sādhyas and sages worship the primordial sacrificial Puruṣa. From the sacrifice arise the curd-ghee mixture and aerial, forest and village animals, Ṛc/Sāman/metres/Yajus, horses, creatures with teeth on both sides, cattle, goats and sheep. The bodily social formula assigns mouth to Brahmins, arms to Rājanyas, thighs to Vaiśyas and feet to Śūdras. The cosmic formula gives Moon from mind, Sun from eye, wind/breath from ear, Fire from mouth, interspace from navel, heaven from head, earth from feet and directions from ears. The gods bind Puruṣa as sacrificial animal with seven enclosures and twenty-one fuel-sticks; the closing alternative praises ancient Sādhyas in heaven. These are prescribed Vedic recitations, without a new narrated Gaṇeśa birth or universal biological identity assertion.",
+        "outcome": "All named cosmogonic formula roles remain source-attributed ritual assertions.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [
+          "gup5-en-085",
+          "gup5-en-098",
+          "gup5-en-131",
+          "gup5-en-113",
+          "gup5-en-132",
+          "gup5-en-133",
+          "gup5-en-134",
+          "gup5-en-112",
+          "gup5-en-114",
+          "gup5-en-115",
+          "gup5-en-116",
+          "gup5-en-117",
+          "gup5-en-118",
+          "gup5-en-119",
+          "gup5-en-120"
+        ],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-058"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-058",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-69-17-37",
+          "locator": "Upāsanā 69.17–37",
+          "paraphrase": "The parenthetical ritual alternatives recite Puruṣa as thousand-headed, thousand-eyed and thousand-footed, embracing what has been and will be; Virāj arises, and Puruṣa arises from Virāj. Gods perform sacrifice with Puruṣa as offering, spring as ghee, summer as fuel and autumn as offering-material; gods, Sādhyas and sages worship the primordial sacrificial Puruṣa. From the sacrifice arise the curd-ghee mixture and aerial, forest and village animals, Ṛc/Sāman/metres/Yajus, horses, creatures with teeth on both sides, cattle, goats and sheep. The bodily social formula assigns mouth to Brahmins, arms to Rājanyas, thighs to Vaiśyas and feet to Śūdras. The cosmic formula gives Moon from mind, Sun from eye, wind/breath from ear, Fire from mouth, interspace from navel, heaven from head, earth from feet and directions from ears. The gods bind Puruṣa as sacrificial animal with seven enclosures and twenty-one fuel-sticks; the closing alternative praises ancient Sādhyas in heaven. These are prescribed Vedic recitations, without a new narrated Gaṇeśa birth or universal biological identity assertion.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-049",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-sankasta-procedure",
+        "sequence": 50,
+        "passage_ids": [
+          "gup5-p-69-18-29"
+        ],
+        "participants": [
+          "gp-en-brahma",
+          "gup4-en-083",
+          "gp-en-ganesha",
+          "gup-en-271",
+          "gup5-en-083",
+          "gup5-en-084",
+          "gup-en-211",
+          "gup5-en-085",
+          "gup4-en-079"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "The prescribed offerings proceed through seat, foot-water, gem-and-fruit arghya, sipping water from Gaṅgā and other tīrthas, pañcāmṛta of milk/curd/ghee/sugar/honey, bathing with Narmadā, Candrabhāgā and Gaṅgā-confluence waters, two garments, sacred thread, sandal, ghee/kuṅkuma rice, campaka/mallikā/dūrvā and other flowers, and fragrant incense. The formulas repeatedly ask acceptance and distress-removal, addressing Gaṇeśa as Gaṇādhīśa, Umāputra, Modakapriya, Lambodara, Ibhavaktra, Gaṇādhyakṣa, Vināyaka, Paraśudhārin, Īśaputra, Mūṣakavāhana, Mahākāya and Dhūmraketu. Parenthetical Puruṣasūkta alternatives accompany many services.",
+        "outcome": "The service formulas supply petitions and source-specific epithets; they are not new narrated biological scenes.",
+        "changed_relationship_ids": [
+          "gup5-rel-031",
+          "gup5-rel-032",
+          "gup5-rel-033",
+          "gup5-rel-034",
+          "gup5-rel-035",
+          "gup5-rel-036",
+          "gup5-rel-037",
+          "gup5-rel-038",
+          "gup5-rel-039",
+          "gup5-rel-040",
+          "gup5-rel-041",
+          "gup5-rel-042"
+        ],
+        "introduced_entity_ids": [
+          "gup5-en-083",
+          "gup5-en-084"
+        ],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-054"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-054",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-69-18-29",
+          "locator": "Upāsanā 69.18–29",
+          "paraphrase": "The prescribed offerings proceed through seat, foot-water, gem-and-fruit arghya, sipping water from Gaṅgā and other tīrthas, pañcāmṛta of milk/curd/ghee/sugar/honey, bathing with Narmadā, Candrabhāgā and Gaṅgā-confluence waters, two garments, sacred thread, sandal, ghee/kuṅkuma rice, campaka/mallikā/dūrvā and other flowers, and fragrant incense. The formulas repeatedly ask acceptance and distress-removal, addressing Gaṇeśa as Gaṇādhīśa, Umāputra, Modakapriya, Lambodara, Ibhavaktra, Gaṇādhyakṣa, Vināyaka, Paraśudhārin, Īśaputra, Mūṣakavāhana, Mahākāya and Dhūmraketu. Parenthetical Puruṣasūkta alternatives accompany many services.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-050",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-sankasta-procedure",
+        "sequence": 51,
+        "passage_ids": [
+          "gup5-p-69-30-39"
+        ],
+        "participants": [
+          "gp-en-brahma",
+          "gup4-en-083",
+          "gp-en-ganesha",
+          "gup-en-211",
+          "gup5-en-085",
+          "gup5-en-098",
+          "gup4-en-079"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Continue with lamp, modaka/apūpa/laḍḍū/pāyasa with sugar and ghee-cooked food, coconut/grapes/mango/pomegranate, areca/cardamom/clove/betel leaves, gold dakṣiṇā, and twenty-one dūrvā with a twenty-one-name list. Offer camphor light and campaka/aśoka/bakula/pārijāta flower handfuls. The hymn attributes creation, protection, destruction and universal appearance to the elephant-faced deity; the bowing formula praises obstacle-removal, devotee relief, liberation, knowledge and Vedic foundation. Parenthetical Vedic alternatives include Puruṣa-body social and cosmic emanations.",
+        "outcome": "Offerings, names and cosmic praise remain explicitly within prescribed recitation.",
+        "changed_relationship_ids": [
+          "gup5-rel-043",
+          "gup5-rel-044",
+          "gup5-rel-045",
+          "gup5-rel-046",
+          "gup5-rel-047",
+          "gup5-rel-048",
+          "gup5-rel-049",
+          "gup5-rel-050",
+          "gup5-rel-051",
+          "gup5-rel-052",
+          "gup5-rel-053",
+          "gup5-rel-054",
+          "gup5-rel-055"
+        ],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-055"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-055",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-69-30-39",
+          "locator": "Upāsanā 69.30–39",
+          "paraphrase": "Continue with lamp, modaka/apūpa/laḍḍū/pāyasa with sugar and ghee-cooked food, coconut/grapes/mango/pomegranate, areca/cardamom/clove/betel leaves, gold dakṣiṇā, and twenty-one dūrvā with a twenty-one-name list. Offer camphor light and campaka/aśoka/bakula/pārijāta flower handfuls. The hymn attributes creation, protection, destruction and universal appearance to the elephant-faced deity; the bowing formula praises obstacle-removal, devotee relief, liberation, knowledge and Vedic foundation. Parenthetical Vedic alternatives include Puruṣa-body social and cosmic emanations.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-051",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-sankasta-procedure",
+        "sequence": 52,
+        "passage_ids": [
+          "gup5-p-69-40-50"
+        ],
+        "participants": [
+          "gp-en-brahma",
+          "gup4-en-083",
+          "gp-en-ganesha",
+          "gup-en-010",
+          "gup5-en-121",
+          "gup5-en-122",
+          "gup-en-211",
+          "gup4-en-079"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "After the hymn bow repeatedly and make twenty-one circumambulations according to ability. The prayer says those seeking tasks without worship of Gaṇeśa are ruined. Offer vāyana to the Brahmin teacher and special arghya with fruit, flowers, rice, water and dakṣiṇā. Invoke Heramba for distress-removal and honour Indra and the surrounding world guardians. Prepare ghee-cooked modakas with cooked mung and sesame and other foods/betel as able, then offer twenty-one dūrvā separately using the verse names. This second sequence includes Abhayaprada, Amareśvara, Gajavakra and Sarvavidyāpradāyaka alongside names shared with the earlier list; the distinct printed forms are retained.",
+        "outcome": "Circumambulation, teacher offering, guardian worship and separate sprout-name sequence extend the prescribed services.",
+        "changed_relationship_ids": [
+          "gup5-rel-056",
+          "gup5-rel-057",
+          "gup5-rel-058",
+          "gup5-rel-059",
+          "gup5-rel-060"
+        ],
+        "introduced_entity_ids": [
+          "gup5-en-121",
+          "gup5-en-122"
+        ],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-056"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-056",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-69-40-50",
+          "locator": "Upāsanā 69.40–50",
+          "paraphrase": "After the hymn bow repeatedly and make twenty-one circumambulations according to ability. The prayer says those seeking tasks without worship of Gaṇeśa are ruined. Offer vāyana to the Brahmin teacher and special arghya with fruit, flowers, rice, water and dakṣiṇā. Invoke Heramba for distress-removal and honour Indra and the surrounding world guardians. Prepare ghee-cooked modakas with cooked mung and sesame and other foods/betel as able, then offer twenty-one dūrvā separately using the verse names. This second sequence includes Abhayaprada, Amareśvara, Gajavakra and Sarvavidyāpradāyaka alongside names shared with the earlier list; the distinct printed forms are retained.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-052",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-sankasta-procedure",
+        "sequence": 53,
+        "passage_ids": [
+          "gup5-p-69-51-62"
+        ],
+        "participants": [
+          "gp-en-brahma",
+          "gup4-en-083",
+          "gp-en-ganesha",
+          "gup-en-033",
+          "gup2-en-008",
+          "gup5-en-128",
+          "gup5-en-129",
+          "gup5-en-122",
+          "gup5-en-130",
+          "gup4-en-079"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Request satisfaction with the properly directed worship, fulfillment of inner wishes, removal of obstacles and present enemies, destruction of enemies’ intelligence and prosperity of friends. Bow repeatedly and perform one hundred eight homa offerings. For vow-completion prepare vāyana of modakas or laḍḍū/vaṭaka and other foods with twenty-one fruits, wrap in red cloth and give to the teacher. Hear the sacred story and offer arghya to the tithi, then Gaṇeśa, then Moon seven times. The Moon formula calls him milk-ocean-born, arising in Atri’s lineage, accompanied by Rohiṇī. Ask the deity’s pardon, feed Brahmins, eat their offered remainder silently in seven mouthfuls according to ability and comfort, and perform this procedure in all four months.",
+        "outcome": "The detailed worship chapter ends with monthly repetition; the broader explanation and udyāpana continue.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [
+          "gup5-en-128",
+          "gup5-en-129",
+          "gup5-en-130"
+        ],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-057"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-057",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-69-51-62",
+          "locator": "Upāsanā 69.51–62",
+          "paraphrase": "Request satisfaction with the properly directed worship, fulfillment of inner wishes, removal of obstacles and present enemies, destruction of enemies’ intelligence and prosperity of friends. Bow repeatedly and perform one hundred eight homa offerings. For vow-completion prepare vāyana of modakas or laḍḍū/vaṭaka and other foods with twenty-one fruits, wrap in red cloth and give to the teacher. Hear the sacred story and offer arghya to the tithi, then Gaṇeśa, then Moon seven times. The Moon formula calls him milk-ocean-born, arising in Atri’s lineage, accompanied by Rohiṇī. Ask the deity’s pardon, feed Brahmins, eat their offered remainder silently in seven mouthfuls according to ability and comfort, and perform this procedure in all four months.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-059",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-sankasta-procedure",
+        "sequence": 59,
+        "passage_ids": [
+          "gup5-p-71-1-9"
+        ],
+        "participants": [
+          "gup4-en-083",
+          "gp-en-brahma",
+          "gp-en-ganesha",
+          "gup-en-033",
+          "gup2-en-008",
+          "gup5-en-128",
+          "gup5-en-129",
+          "gup4-en-079"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "The king asks Brahmā to explain udyāpana for public benefit. Brahmā prescribes vow-completion in the first, fifth or seventh month. Make a flower pavilion decorated with various fabrics and a multicoloured sarvatobhadra arrangement; worship on a kalaśa as before with sandal and flowers. Give coconut arghya to the tithi, Gaṇeśa and Moon. Their formulas ask distress-removal; the Moon formula again gives milk-ocean and Atri-lineage origin and Rohiṇī accompaniment. Offer edible, chewable, lickable, drinkable and suckable foods and many fruits.",
+        "outcome": "Exact alternative completion months and separate recipient sequence are prescribed.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-064"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-064",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-71-1-9",
+          "locator": "Upāsanā 71.1–9",
+          "paraphrase": "The king asks Brahmā to explain udyāpana for public benefit. Brahmā prescribes vow-completion in the first, fifth or seventh month. Make a flower pavilion decorated with various fabrics and a multicoloured sarvatobhadra arrangement; worship on a kalaśa as before with sandal and flowers. Give coconut arghya to the tithi, Gaṇeśa and Moon. Their formulas ask distress-removal; the Moon formula again gives milk-ocean and Atri-lineage origin and Rohiṇī accompaniment. Offer edible, chewable, lickable, drinkable and suckable foods and many fruits.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-060",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-sankasta-procedure",
+        "sequence": 60,
+        "passage_ids": [
+          "gup5-p-71-10-17"
+        ],
+        "participants": [
+          "gup4-en-083",
+          "gp-en-brahma",
+          "gup5-en-122",
+          "gup5-en-146",
+          "gup5-en-130",
+          "gp-en-ganesha",
+          "gup5-en-147",
+          "gup5-en-148",
+          "gup5-en-149",
+          "gup4-en-079"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Choose a teacher and twenty-one officiants. Perform ten thousand homa offerings with Gaṇānāṃ tvā, or use the root mantra for one thousand, half that, or one hundred eight offerings; then give bali, full offering and vasordhārā. Finish homa and feed Brahmins. Give paired garments, kalaśas, dakṣiṇā and seats according to capacity without deceit about means. Honour the fed teacher with clothes/ornaments and give fruit-vāyana, a winnowing basket filled with pāyasa wrapped in red cloth, the gold Gaṇeśa image with dakṣiṇā, an āḍhaka of sesame, and an adorned kapilā cow with calf. Request the Brahmins’ pardon, praying Vighneśa be pleased. Completing udyāpana gives horse-sacrifice merit.",
+        "outcome": "Completion protocol reaches its stated merit and closing pardon request.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [
+          "gup5-en-146",
+          "gup5-en-147",
+          "gup5-en-148",
+          "gup5-en-149"
+        ],
+        "introduced_power_ids": [
+          "gup5-power-049"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-065"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-065",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-71-10-17",
+          "locator": "Upāsanā 71.10–17",
+          "paraphrase": "Choose a teacher and twenty-one officiants. Perform ten thousand homa offerings with Gaṇānāṃ tvā, or use the root mantra for one thousand, half that, or one hundred eight offerings; then give bali, full offering and vasordhārā. Finish homa and feed Brahmins. Give paired garments, kalaśas, dakṣiṇā and seats according to capacity without deceit about means. Honour the fed teacher with clothes/ornaments and give fruit-vāyana, a winnowing basket filled with pāyasa wrapped in red cloth, the gold Gaṇeśa image with dakṣiṇā, an āḍhaka of sesame, and an adorned kapilā cow with calf. Request the Brahmins’ pardon, praying Vighneśa be pleased. Completing udyāpana gives horse-sacrifice merit.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gp-en-brahma",
+      "name": "Brahmā",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-frame",
+        "gup-e-001",
+        "gup-e-024",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-036",
+        "gup-e-037",
+        "gup-e-038",
+        "gup-e-039",
+        "gup-e-040",
+        "gup-e-041",
+        "gup-e-042",
+        "gup-e-049",
+        "gup-e-050",
+        "gup-e-073",
+        "gup-e-084",
+        "gup-e-086",
+        "gup-e-089",
+        "gup-e-092",
+        "gup-e-094",
+        "gkr-e-frame",
+        "gup2-e-006",
+        "gup2-e-014",
+        "gup2-e-016",
+        "gup2-e-021",
+        "gup2-e-027",
+        "gup2-e-032",
+        "gup2-e-035",
+        "gup2-e-038",
+        "gup2-e-044",
+        "gup2-e-047",
+        "gup2-e-051",
+        "gup2-e-056",
+        "gup2-e-060",
+        "gup2-e-067",
+        "gkr2-e-remote-offering",
+        "gkr2-e-well-conspiracy",
+        "gkr2-e-trio-plan",
+        "gup3-e-005",
+        "gup3-e-008",
+        "gup3-e-012",
+        "gkr3-e-frame27",
+        "gkr3-e-virtuous-king",
+        "gkr3-e-succession27",
+        "gkr3-e-prior-merit-release",
+        "gkr3-e-kasyapa-creation",
+        "gkr3-e-indra-vishnu",
+        "gup4-e-010",
+        "gup4-e-013",
+        "gup4-e-014",
+        "gup4-e-016",
+        "gup4-e-035",
+        "gup4-e-036",
+        "gup4-e-050",
+        "gup4-e-051",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-055",
+        "gup4-e-056",
+        "gkr4-e-vamana-aftermath-image",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-durasada-conquest",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-dhundhiraja-name-aftermath",
+        "gup5-e-001",
+        "gup5-e-002",
+        "gup5-e-012",
+        "gup5-e-018",
+        "gup5-e-025",
+        "gup5-e-041",
+        "gup5-e-043",
+        "gup5-e-045",
+        "gup5-e-046",
+        "gup5-e-047",
+        "gup5-e-049",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-059",
+        "gup5-e-061",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066",
+        "gkr5-e-divodasa-rule",
+        "gkr5-e-marici-liberation",
+        "gkr5-e-realm-introduction49",
+        "gkr5-e-realm-cosmic-yogic-body",
+        "gkr5-e-king-final-worship",
+        "gkr5-e-king-reunion-hymn",
+        "gkr5-e-king-hymn-transmission-benefits",
+        "gkr5-e-return-to-sukla-chronology-frame"
+      ]
+    },
+    {
+      "id": "gp-en-ganesha",
+      "name": "Gaṇeśa",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-result",
+        "gup-e-001",
+        "gup-e-005",
+        "gup-e-008",
+        "gup-e-014",
+        "gup-e-021",
+        "gup-e-023",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-036",
+        "gup-e-037",
+        "gup-e-038",
+        "gup-e-039",
+        "gup-e-040",
+        "gup-e-042",
+        "gup-e-044",
+        "gup-e-045",
+        "gup-e-046",
+        "gup-e-047",
+        "gup-e-049",
+        "gup-e-051",
+        "gup-e-053",
+        "gup-e-054",
+        "gup-e-055",
+        "gup-e-056",
+        "gup-e-057",
+        "gup-e-058",
+        "gup-e-059",
+        "gup-e-060",
+        "gup-e-062",
+        "gup-e-063",
+        "gup-e-064",
+        "gup-e-065",
+        "gup-e-066",
+        "gup-e-067",
+        "gup-e-070",
+        "gup-e-071",
+        "gup-e-072",
+        "gup-e-073",
+        "gup-e-074",
+        "gup-e-075",
+        "gup-e-076",
+        "gup-e-085",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-088",
+        "gup-e-089",
+        "gup-e-090",
+        "gup-e-091",
+        "gup-e-092",
+        "gup-e-093",
+        "gup-e-094",
+        "gkr-e-ages",
+        "gup2-e-007",
+        "gup2-e-011",
+        "gup2-e-012",
+        "gup2-e-013",
+        "gup2-e-014",
+        "gup2-e-015",
+        "gup2-e-017",
+        "gup2-e-018",
+        "gup2-e-019",
+        "gup2-e-020",
+        "gup2-e-021",
+        "gup2-e-029",
+        "gup2-e-030",
+        "gup2-e-031",
+        "gup2-e-032",
+        "gup2-e-033",
+        "gup2-e-036",
+        "gup2-e-045",
+        "gup2-e-046",
+        "gup2-e-047",
+        "gup2-e-048",
+        "gup2-e-049",
+        "gup2-e-050",
+        "gup2-e-051",
+        "gup2-e-052",
+        "gup2-e-056",
+        "gup2-e-057",
+        "gup2-e-058",
+        "gup2-e-059",
+        "gup2-e-060",
+        "gup2-e-063",
+        "gup2-e-064",
+        "gup2-e-066",
+        "gkr2-e-leaf-and-vamana",
+        "gkr2-e-hunter-demon-liberation",
+        "gup3-e-004",
+        "gup3-e-005",
+        "gup3-e-006",
+        "gup3-e-007",
+        "gup3-e-008",
+        "gup3-e-009",
+        "gup3-e-010",
+        "gup3-e-011",
+        "gup3-e-012",
+        "gup3-e-013",
+        "gup3-e-014",
+        "gup3-e-015",
+        "gup3-e-016",
+        "gup3-e-017",
+        "gup3-e-018",
+        "gkr3-e-rama-father-varada",
+        "gkr3-e-incidental-worship",
+        "gkr3-e-prior-merit-release",
+        "gup4-e-002",
+        "gup4-e-003",
+        "gup4-e-005",
+        "gup4-e-009",
+        "gup4-e-010",
+        "gup4-e-011",
+        "gup4-e-012",
+        "gup4-e-015",
+        "gup4-e-016",
+        "gup4-e-017",
+        "gup4-e-018",
+        "gup4-e-027",
+        "gup4-e-028",
+        "gup4-e-029",
+        "gup4-e-031",
+        "gup4-e-033",
+        "gup4-e-034",
+        "gup4-e-035",
+        "gup4-e-038",
+        "gup4-e-040",
+        "gup4-e-042",
+        "gup4-e-044",
+        "gup4-e-048",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-057",
+        "gup4-e-058",
+        "gup4-e-059",
+        "gup4-e-060",
+        "gup4-e-061",
+        "gup4-e-062",
+        "gkr4-e-vamana-guru-tapas",
+        "gkr4-e-vamana-request-grant",
+        "gkr4-e-vamana-installation",
+        "gkr4-e-water-steps-promises",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-sages-vision-hymn",
+        "gkr4-e-trees-request-alternative",
+        "gkr4-e-tree-benefits",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-worship-vision",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-devi-ganesa-prayer",
+        "gup5-e-001",
+        "gup5-e-002",
+        "gup5-e-003",
+        "gup5-e-004",
+        "gup5-e-005",
+        "gup5-e-006",
+        "gup5-e-008",
+        "gup5-e-009",
+        "gup5-e-010",
+        "gup5-e-012",
+        "gup5-e-014",
+        "gup5-e-015",
+        "gup5-e-016",
+        "gup5-e-019",
+        "gup5-e-021",
+        "gup5-e-022",
+        "gup5-e-023",
+        "gup5-e-024",
+        "gup5-e-025",
+        "gup5-e-026",
+        "gup5-e-027",
+        "gup5-e-029",
+        "gup5-e-030",
+        "gup5-e-031",
+        "gup5-e-032",
+        "gup5-e-033",
+        "gup5-e-034",
+        "gup5-e-035",
+        "gup5-e-036",
+        "gup5-e-041",
+        "gup5-e-042",
+        "gup5-e-043",
+        "gup5-e-045",
+        "gup5-e-047",
+        "gup5-e-049",
+        "gup5-e-050",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-060",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066",
+        "gup5-e-067",
+        "gkr5-e-realm-introduction49"
+      ]
+    },
+    {
+      "id": "gup-en-007",
+      "name": "Śeṣa",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-025",
+        "gup-e-042",
+        "gup-e-043",
+        "gup-e-062",
+        "gup-e-078",
+        "gup2-e-022",
+        "gup2-e-028",
+        "gup2-e-064",
+        "gup3-e-005",
+        "gup3-e-012",
+        "gup4-e-013",
+        "gup4-e-049",
+        "gup5-e-018",
+        "gup5-e-041",
+        "gup5-e-043",
+        "gup5-e-053"
+      ]
+    },
+    {
+      "id": "gup-en-010",
+      "name": "Indra",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-005",
+        "gup-e-014",
+        "gup-e-027",
+        "gup-e-043",
+        "gup-e-055",
+        "gup-e-059",
+        "gup-e-079",
+        "gup-e-080",
+        "gup-e-081",
+        "gup-e-082",
+        "gup-e-083",
+        "gup-e-084",
+        "gup-e-085",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-088",
+        "gup-e-089",
+        "gup-e-090",
+        "gup-e-091",
+        "gup2-e-006",
+        "gup2-e-010",
+        "gup2-e-017",
+        "gup2-e-019",
+        "gup2-e-022",
+        "gup2-e-023",
+        "gup2-e-024",
+        "gup2-e-025",
+        "gup2-e-026",
+        "gup2-e-038",
+        "gup2-e-040",
+        "gup2-e-056",
+        "gup2-e-060",
+        "gup2-e-062",
+        "gup3-e-004",
+        "gup3-e-008",
+        "gup3-e-012",
+        "gup3-e-015",
+        "gup4-e-013",
+        "gup4-e-014",
+        "gup4-e-016",
+        "gup4-e-037",
+        "gup4-e-038",
+        "gup4-e-039",
+        "gup4-e-043",
+        "gup4-e-044",
+        "gup4-e-045",
+        "gup4-e-047",
+        "gup4-e-049",
+        "gup4-e-050",
+        "gup5-e-003",
+        "gup5-e-006",
+        "gup5-e-018",
+        "gup5-e-024",
+        "gup5-e-025",
+        "gup5-e-038",
+        "gup5-e-039",
+        "gup5-e-040",
+        "gup5-e-041",
+        "gup5-e-046",
+        "gup5-e-047",
+        "gup5-e-052",
+        "gup5-e-056",
+        "gup5-e-066"
+      ]
+    },
+    {
+      "id": "gup-en-011",
+      "name": "Sun",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-005",
+        "gup-e-027",
+        "gup-e-041",
+        "gup-e-055",
+        "gup-e-062",
+        "gup-e-078",
+        "gup-e-079",
+        "gup2-e-056",
+        "gup2-e-064",
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup-en-015",
+      "name": "Fire",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-027",
+        "gup-e-041",
+        "gup-e-055",
+        "gup-e-062",
+        "gup2-e-060",
+        "gup3-e-015",
+        "gup5-e-003",
+        "gup5-e-041",
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup-en-033",
+      "name": "Moon",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-002",
+        "gup-e-033",
+        "gup-e-041",
+        "gup-e-055",
+        "gup-e-062",
+        "gup2-e-056",
+        "gup2-e-060",
+        "gup2-e-064",
+        "gup4-e-054",
+        "gup5-e-002",
+        "gup5-e-003",
+        "gup5-e-005",
+        "gup5-e-006",
+        "gup5-e-008",
+        "gup5-e-009",
+        "gup5-e-010",
+        "gup5-e-025",
+        "gup5-e-041",
+        "gup5-e-055",
+        "gup5-e-057",
+        "gup5-e-058",
+        "gup5-e-064"
+      ]
+    },
+    {
+      "id": "gup-en-098",
+      "name": "Satyaloka",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-026",
+        "gup5-e-052"
+      ]
+    },
+    {
+      "id": "gup-en-100",
+      "name": "Gods",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-026",
+        "gup-e-030",
+        "gup-e-084",
+        "gup-e-085",
+        "gup-e-086",
+        "gup-e-087",
+        "gup2-e-011",
+        "gup2-e-019",
+        "gup2-e-026",
+        "gup2-e-029",
+        "gup2-e-030",
+        "gup2-e-031",
+        "gup2-e-034",
+        "gup2-e-044",
+        "gup2-e-050",
+        "gup2-e-062",
+        "gup2-e-063",
+        "gup2-e-065",
+        "gup2-e-066",
+        "gup3-e-004",
+        "gup4-e-001",
+        "gup4-e-007",
+        "gup4-e-035",
+        "gup4-e-037",
+        "gup4-e-043",
+        "gup5-e-003",
+        "gup5-e-004",
+        "gup5-e-005",
+        "gup5-e-006",
+        "gup5-e-010",
+        "gup5-e-020",
+        "gup5-e-021",
+        "gup5-e-022",
+        "gup5-e-023",
+        "gup5-e-026",
+        "gup5-e-027",
+        "gup5-e-041",
+        "gup5-e-058",
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gup-en-109",
+      "name": "Sages",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-030",
+        "gup2-e-019",
+        "gup2-e-050",
+        "gup2-e-065",
+        "gup2-e-066",
+        "gup3-e-004",
+        "gup3-e-008",
+        "gup4-e-001",
+        "gup4-e-008",
+        "gup4-e-014",
+        "gup5-e-010",
+        "gup5-e-020",
+        "gup5-e-021",
+        "gup5-e-022",
+        "gup5-e-023",
+        "gup5-e-026",
+        "gup5-e-027",
+        "gup5-e-058",
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gup-en-211",
+      "name": "Dūrvā",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-060",
+        "gup2-e-057",
+        "gup3-e-007",
+        "gup5-e-012",
+        "gup5-e-014",
+        "gup5-e-015",
+        "gup5-e-018",
+        "gup5-e-019",
+        "gup5-e-026",
+        "gup5-e-035",
+        "gup5-e-037",
+        "gup5-e-038",
+        "gup5-e-039",
+        "gup5-e-040",
+        "gup5-e-042",
+        "gup5-e-043",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056"
+      ]
+    },
+    {
+      "id": "gup-en-271",
+      "name": "Gaṅgā",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-091",
+        "gup3-e-009",
+        "gup4-e-003",
+        "gkr4-e-kasi-creation-phala",
+        "gup5-e-006",
+        "gup5-e-054",
+        "gkr5-e-sinless-state-search"
+      ]
+    },
+    {
+      "id": "gup2-en-008",
+      "name": "Atri",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup2-e-008",
+        "gup5-e-050",
+        "gup5-e-057",
+        "gup5-e-064"
+      ]
+    },
+    {
+      "id": "gup4-en-062",
+      "name": "Śūrasena",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-036",
+        "gup4-e-037",
+        "gup4-e-038",
+        "gup4-e-039",
+        "gup4-e-044",
+        "gup4-e-045",
+        "gup4-e-049",
+        "gup4-e-050",
+        "gup5-e-047",
+        "gup5-e-052"
+      ]
+    },
+    {
+      "id": "gup4-en-079",
+      "name": "Sankaṣṭa-caturthī practitioners",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-045",
+        "gup4-e-049",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-055",
+        "gup5-e-049",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-059",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065"
+      ]
+    },
+    {
+      "id": "gup4-en-080",
+      "name": "Kṛtavīrya",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-045",
+        "gup4-e-046",
+        "gup4-e-050",
+        "gup4-e-051",
+        "gup4-e-053",
+        "gup5-e-047",
+        "gup5-e-048",
+        "gup5-e-049",
+        "gup5-e-050",
+        "gup5-e-052",
+        "gup5-e-063",
+        "gup5-e-066",
+        "gup5-e-067"
+      ]
+    },
+    {
+      "id": "gup4-en-083",
+      "name": "Kṛtavīrya unnamed father",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-046",
+        "gup4-e-050",
+        "gup4-e-051",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-055",
+        "gup4-e-056",
+        "gup5-e-012",
+        "gup5-e-046",
+        "gup5-e-047",
+        "gup5-e-048",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-059",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066"
+      ]
+    },
+    {
+      "id": "gup5-en-079",
+      "name": "Gaṇeśa ritual mouse in69",
+      "type": "VAHANA",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-053"
+      ]
+    },
+    {
+      "id": "gup5-en-080",
+      "name": "Gaṇas fanning ritual image in69",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-053"
+      ]
+    },
+    {
+      "id": "gup5-en-081",
+      "name": "Sankaṣṭa ritual Gaṇeśa image",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-053"
+      ]
+    },
+    {
+      "id": "gup5-en-082",
+      "name": "Sankaṣṭa ritual yantra",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-053"
+      ]
+    },
+    {
+      "id": "gup5-en-083",
+      "name": "Narmadā",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-054"
+      ]
+    },
+    {
+      "id": "gup5-en-084",
+      "name": "Candrabhāgā ritual-water river",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-054"
+      ]
+    },
+    {
+      "id": "gup5-en-085",
+      "name": "Puruṣasūkta ritual alternatives in69",
+      "type": "TEXT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-098",
+      "name": "Puruṣa in69 ritual alternative",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-112",
+      "name": "Wind in69 ritual alternative",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-113",
+      "name": "Sādhyas in69 ritual alternative",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-114",
+      "name": "Puruṣa formula Brahmins",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-115",
+      "name": "Puruṣa formula Rājanyas",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-116",
+      "name": "Puruṣa formula Vaiśyas",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-117",
+      "name": "Puruṣa formula Śūdras",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-118",
+      "name": "Heaven in69 ritual alternative",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-119",
+      "name": "Earth in69 ritual alternative",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-120",
+      "name": "Interspace in69 ritual alternative",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-121",
+      "name": "World guardians in69",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-056"
+      ]
+    },
+    {
+      "id": "gup5-en-122",
+      "name": "Sankaṣṭa ritual teacher",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-065"
+      ]
+    },
+    {
+      "id": "gup5-en-128",
+      "name": "Rohiṇī",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-057",
+        "gup5-e-064"
+      ]
+    },
+    {
+      "id": "gup5-en-129",
+      "name": "Sankaṣṭa caturthī tithi",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-057",
+        "gup5-e-064"
+      ]
+    },
+    {
+      "id": "gup5-en-130",
+      "name": "Sankaṣṭa fed Brahmins",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-057",
+        "gup5-e-065",
+        "gup5-e-066"
+      ]
+    },
+    {
+      "id": "gup5-en-131",
+      "name": "Virāj in69 ritual alternative",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-132",
+      "name": "Vasanta in69 sacrificial formula",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-133",
+      "name": "Grīṣma in69 sacrificial formula",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-134",
+      "name": "Śarad in69 sacrificial formula",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-146",
+      "name": "Twenty-one Sankaṣṭa officiants",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-065",
+        "gup5-e-067"
+      ]
+    },
+    {
+      "id": "gup5-en-147",
+      "name": "Gaṇānāṃ tvā mantra",
+      "type": "TEXT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-065"
+      ]
+    },
+    {
+      "id": "gup5-en-148",
+      "name": "Gaṇeśa root mantra in71",
+      "type": "TEXT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-065"
+      ]
+    },
+    {
+      "id": "gup5-en-149",
+      "name": "Kapilā cow and calf gift in71",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-065"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "gup5-rel-031",
+      "subject_id": "gup5-en-086",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-039"
+    },
+    {
+      "id": "gup5-rel-032",
+      "subject_id": "gup5-en-087",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-040"
+    },
+    {
+      "id": "gup5-rel-033",
+      "subject_id": "gup5-en-088",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-041"
+    },
+    {
+      "id": "gup5-rel-034",
+      "subject_id": "gup5-en-089",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-042"
+    },
+    {
+      "id": "gup5-rel-035",
+      "subject_id": "gup5-en-090",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-043"
+    },
+    {
+      "id": "gup5-rel-036",
+      "subject_id": "gup5-en-091",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-044"
+    },
+    {
+      "id": "gup5-rel-037",
+      "subject_id": "gup5-en-092",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-045"
+    },
+    {
+      "id": "gup5-rel-038",
+      "subject_id": "gup5-en-093",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-046"
+    },
+    {
+      "id": "gup5-rel-039",
+      "subject_id": "gup5-en-094",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-047"
+    },
+    {
+      "id": "gup5-rel-040",
+      "subject_id": "gup5-en-095",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-048"
+    },
+    {
+      "id": "gup5-rel-041",
+      "subject_id": "gup5-en-096",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-049"
+    },
+    {
+      "id": "gup5-rel-042",
+      "subject_id": "gup5-en-097",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-050"
+    },
+    {
+      "id": "gup5-rel-043",
+      "subject_id": "gup5-en-099",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-051"
+    },
+    {
+      "id": "gup5-rel-044",
+      "subject_id": "gup5-en-100",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-052"
+    },
+    {
+      "id": "gup5-rel-045",
+      "subject_id": "gup5-en-101",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-053"
+    },
+    {
+      "id": "gup5-rel-046",
+      "subject_id": "gup5-en-102",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-054"
+    },
+    {
+      "id": "gup5-rel-047",
+      "subject_id": "gup5-en-103",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-055"
+    },
+    {
+      "id": "gup5-rel-048",
+      "subject_id": "gup5-en-104",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-056"
+    },
+    {
+      "id": "gup5-rel-049",
+      "subject_id": "gup5-en-105",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-057"
+    },
+    {
+      "id": "gup5-rel-050",
+      "subject_id": "gup5-en-106",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-058"
+    },
+    {
+      "id": "gup5-rel-051",
+      "subject_id": "gup5-en-107",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-059"
+    },
+    {
+      "id": "gup5-rel-052",
+      "subject_id": "gup5-en-108",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-060"
+    },
+    {
+      "id": "gup5-rel-053",
+      "subject_id": "gup5-en-109",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-061"
+    },
+    {
+      "id": "gup5-rel-054",
+      "subject_id": "gup5-en-110",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-062"
+    },
+    {
+      "id": "gup5-rel-055",
+      "subject_id": "gup5-en-111",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-063"
+    },
+    {
+      "id": "gup5-rel-056",
+      "subject_id": "gup5-en-123",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-056"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-065"
+    },
+    {
+      "id": "gup5-rel-057",
+      "subject_id": "gup5-en-124",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-056"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-066"
+    },
+    {
+      "id": "gup5-rel-058",
+      "subject_id": "gup5-en-125",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-056"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-067"
+    },
+    {
+      "id": "gup5-rel-059",
+      "subject_id": "gup5-en-126",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-056"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-068"
+    },
+    {
+      "id": "gup5-rel-060",
+      "subject_id": "gup5-en-127",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-056"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-069"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "gup5-power-039",
+      "type": "POWER",
+      "recipient_id": "gup4-en-079",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "The prescribed vow gives intended accomplishment.",
+      "trigger": "Perform the described Sankaṣṭa vow with intention, meditation and devotional worship at dark-fourth moonrise.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "gup5-e-052"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup5-e-052"
+        ],
+        "mechanism": [
+          "gup5-e-052"
+        ],
+        "trigger": [
+          "gup5-e-052"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Prescriptive efficacy, not a personal boon granted after an appearance."
+    },
+    {
+      "id": "gup5-power-049",
+      "type": "POWER",
+      "recipient_id": "gup4-en-079",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "Horse-sacrifice merit.",
+      "trigger": "Perform the prescribed vow udyāpana.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "gup5-e-065"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup5-e-065"
+        ],
+        "mechanism": [
+          "gup5-e-065"
+        ],
+        "trigger": [
+          "gup5-e-065"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Prescribed result, not an actual horse sacrifice or personal boon scene; exact alternative homa counts preserved in the event."
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "gup5-a-038",
+      "subject_id": "gup5-en-081",
+      "predicate": "prescribed_form",
+      "object_id": null,
+      "value": "One tusk, huge gold-coloured form, large belly, broad fire-like eyes, mouse mount, Gaṇas fanning, Śeṣa sacred thread69.15–16.",
+      "evidence_ids": [
+        "gup5-e-053"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-039",
+      "subject_id": "gup5-en-086",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-040",
+      "subject_id": "gup5-en-087",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-041",
+      "subject_id": "gup5-en-088",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-042",
+      "subject_id": "gup5-en-089",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-043",
+      "subject_id": "gup5-en-090",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-044",
+      "subject_id": "gup5-en-091",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-045",
+      "subject_id": "gup5-en-092",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-046",
+      "subject_id": "gup5-en-093",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-047",
+      "subject_id": "gup5-en-094",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-048",
+      "subject_id": "gup5-en-095",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-049",
+      "subject_id": "gup5-en-096",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-050",
+      "subject_id": "gup5-en-097",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-054"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-051",
+      "subject_id": "gup5-en-099",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-052",
+      "subject_id": "gup5-en-100",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-053",
+      "subject_id": "gup5-en-101",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-054",
+      "subject_id": "gup5-en-102",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-055",
+      "subject_id": "gup5-en-103",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-056",
+      "subject_id": "gup5-en-104",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-057",
+      "subject_id": "gup5-en-105",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-058",
+      "subject_id": "gup5-en-106",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-059",
+      "subject_id": "gup5-en-107",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-060",
+      "subject_id": "gup5-en-108",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-061",
+      "subject_id": "gup5-en-109",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-062",
+      "subject_id": "gup5-en-110",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-063",
+      "subject_id": "gup5-en-111",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-064",
+      "subject_id": "gup5-en-085",
+      "predicate": "attributed_cosmic_biological_formulas",
+      "object_id": null,
+      "value": "Puruṣa’s mind→Moon; eye→Sun; ear→wind and breath; mouth→Fire; navel→interspace; head→heaven; feet→earth; ears→directions69.31–32 alternatives. These are recited Puruṣa formulas, not universally normalized biological relationships for Gaṇeśa.",
+      "evidence_ids": [
+        "gup5-e-055"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-065",
+      "subject_id": "gup5-en-123",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-056"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-066",
+      "subject_id": "gup5-en-124",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-056"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-067",
+      "subject_id": "gup5-en-125",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-056"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-068",
+      "subject_id": "gup5-en-126",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-056"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-069",
+      "subject_id": "gup5-en-127",
+      "predicate": "ritually_addresses",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-056"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-070",
+      "subject_id": "gup-en-033",
+      "predicate": "ritual_origin_claim_69",
+      "object_id": null,
+      "value": "Moon arghya calls him milk-ocean-born and Atri-lineage-born69.60; a source ritual assertion, not a narrated birth event.",
+      "evidence_ids": [
+        "gup5-e-057"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-071",
+      "subject_id": "gup-en-033",
+      "predicate": "ritual_accompaniment_69",
+      "object_id": null,
+      "value": "Arghya addresses Moon with Rohiṇī69.60; this passage does not narrate a marriage ceremony.",
+      "evidence_ids": [
+        "gup5-e-057"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-072",
+      "subject_id": "gup4-en-079",
+      "predicate": "prescribed_petitions_69",
+      "object_id": null,
+      "value": "Wish fulfillment, obstacle/enemy removal, destruction of enemies’ intelligence and prosperity of friends69.51–53.",
+      "evidence_ids": [
+        "gup5-e-057"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-073",
+      "subject_id": "gup5-en-085",
+      "predicate": "ritual_social_body_mapping",
+      "object_id": null,
+      "value": "Brahmins mouth; Rājanyas arms; Vaiśyas thighs; Śūdras feet in69.30 alternative.",
+      "evidence_ids": [
+        "gup5-e-058"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "linked_entities": [
+    {
+      "id": "gp-en-brahma",
+      "name": "Brahmā",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-frame",
+        "gup-e-001",
+        "gup-e-024",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-036",
+        "gup-e-037",
+        "gup-e-038",
+        "gup-e-039",
+        "gup-e-040",
+        "gup-e-041",
+        "gup-e-042",
+        "gup-e-049",
+        "gup-e-050",
+        "gup-e-073",
+        "gup-e-084",
+        "gup-e-086",
+        "gup-e-089",
+        "gup-e-092",
+        "gup-e-094",
+        "gkr-e-frame",
+        "gup2-e-006",
+        "gup2-e-014",
+        "gup2-e-016",
+        "gup2-e-021",
+        "gup2-e-027",
+        "gup2-e-032",
+        "gup2-e-035",
+        "gup2-e-038",
+        "gup2-e-044",
+        "gup2-e-047",
+        "gup2-e-051",
+        "gup2-e-056",
+        "gup2-e-060",
+        "gup2-e-067",
+        "gkr2-e-remote-offering",
+        "gkr2-e-well-conspiracy",
+        "gkr2-e-trio-plan",
+        "gup3-e-005",
+        "gup3-e-008",
+        "gup3-e-012",
+        "gkr3-e-frame27",
+        "gkr3-e-virtuous-king",
+        "gkr3-e-succession27",
+        "gkr3-e-prior-merit-release",
+        "gkr3-e-kasyapa-creation",
+        "gkr3-e-indra-vishnu",
+        "gup4-e-010",
+        "gup4-e-013",
+        "gup4-e-014",
+        "gup4-e-016",
+        "gup4-e-035",
+        "gup4-e-036",
+        "gup4-e-050",
+        "gup4-e-051",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-055",
+        "gup4-e-056",
+        "gkr4-e-vamana-aftermath-image",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-durasada-conquest",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-dhundhiraja-name-aftermath",
+        "gup5-e-001",
+        "gup5-e-002",
+        "gup5-e-012",
+        "gup5-e-018",
+        "gup5-e-025",
+        "gup5-e-041",
+        "gup5-e-043",
+        "gup5-e-045",
+        "gup5-e-046",
+        "gup5-e-047",
+        "gup5-e-049",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-059",
+        "gup5-e-061",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066",
+        "gkr5-e-divodasa-rule",
+        "gkr5-e-marici-liberation",
+        "gkr5-e-realm-introduction49",
+        "gkr5-e-realm-cosmic-yogic-body",
+        "gkr5-e-king-final-worship",
+        "gkr5-e-king-reunion-hymn",
+        "gkr5-e-king-hymn-transmission-benefits",
+        "gkr5-e-return-to-sukla-chronology-frame"
+      ]
+    },
+    {
+      "id": "gp-en-ganesha",
+      "name": "Gaṇeśa",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-result",
+        "gup-e-001",
+        "gup-e-005",
+        "gup-e-008",
+        "gup-e-014",
+        "gup-e-021",
+        "gup-e-023",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-036",
+        "gup-e-037",
+        "gup-e-038",
+        "gup-e-039",
+        "gup-e-040",
+        "gup-e-042",
+        "gup-e-044",
+        "gup-e-045",
+        "gup-e-046",
+        "gup-e-047",
+        "gup-e-049",
+        "gup-e-051",
+        "gup-e-053",
+        "gup-e-054",
+        "gup-e-055",
+        "gup-e-056",
+        "gup-e-057",
+        "gup-e-058",
+        "gup-e-059",
+        "gup-e-060",
+        "gup-e-062",
+        "gup-e-063",
+        "gup-e-064",
+        "gup-e-065",
+        "gup-e-066",
+        "gup-e-067",
+        "gup-e-070",
+        "gup-e-071",
+        "gup-e-072",
+        "gup-e-073",
+        "gup-e-074",
+        "gup-e-075",
+        "gup-e-076",
+        "gup-e-085",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-088",
+        "gup-e-089",
+        "gup-e-090",
+        "gup-e-091",
+        "gup-e-092",
+        "gup-e-093",
+        "gup-e-094",
+        "gkr-e-ages",
+        "gup2-e-007",
+        "gup2-e-011",
+        "gup2-e-012",
+        "gup2-e-013",
+        "gup2-e-014",
+        "gup2-e-015",
+        "gup2-e-017",
+        "gup2-e-018",
+        "gup2-e-019",
+        "gup2-e-020",
+        "gup2-e-021",
+        "gup2-e-029",
+        "gup2-e-030",
+        "gup2-e-031",
+        "gup2-e-032",
+        "gup2-e-033",
+        "gup2-e-036",
+        "gup2-e-045",
+        "gup2-e-046",
+        "gup2-e-047",
+        "gup2-e-048",
+        "gup2-e-049",
+        "gup2-e-050",
+        "gup2-e-051",
+        "gup2-e-052",
+        "gup2-e-056",
+        "gup2-e-057",
+        "gup2-e-058",
+        "gup2-e-059",
+        "gup2-e-060",
+        "gup2-e-063",
+        "gup2-e-064",
+        "gup2-e-066",
+        "gkr2-e-leaf-and-vamana",
+        "gkr2-e-hunter-demon-liberation",
+        "gup3-e-004",
+        "gup3-e-005",
+        "gup3-e-006",
+        "gup3-e-007",
+        "gup3-e-008",
+        "gup3-e-009",
+        "gup3-e-010",
+        "gup3-e-011",
+        "gup3-e-012",
+        "gup3-e-013",
+        "gup3-e-014",
+        "gup3-e-015",
+        "gup3-e-016",
+        "gup3-e-017",
+        "gup3-e-018",
+        "gkr3-e-rama-father-varada",
+        "gkr3-e-incidental-worship",
+        "gkr3-e-prior-merit-release",
+        "gup4-e-002",
+        "gup4-e-003",
+        "gup4-e-005",
+        "gup4-e-009",
+        "gup4-e-010",
+        "gup4-e-011",
+        "gup4-e-012",
+        "gup4-e-015",
+        "gup4-e-016",
+        "gup4-e-017",
+        "gup4-e-018",
+        "gup4-e-027",
+        "gup4-e-028",
+        "gup4-e-029",
+        "gup4-e-031",
+        "gup4-e-033",
+        "gup4-e-034",
+        "gup4-e-035",
+        "gup4-e-038",
+        "gup4-e-040",
+        "gup4-e-042",
+        "gup4-e-044",
+        "gup4-e-048",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-057",
+        "gup4-e-058",
+        "gup4-e-059",
+        "gup4-e-060",
+        "gup4-e-061",
+        "gup4-e-062",
+        "gkr4-e-vamana-guru-tapas",
+        "gkr4-e-vamana-request-grant",
+        "gkr4-e-vamana-installation",
+        "gkr4-e-water-steps-promises",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-sages-vision-hymn",
+        "gkr4-e-trees-request-alternative",
+        "gkr4-e-tree-benefits",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-worship-vision",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-devi-ganesa-prayer",
+        "gup5-e-001",
+        "gup5-e-002",
+        "gup5-e-003",
+        "gup5-e-004",
+        "gup5-e-005",
+        "gup5-e-006",
+        "gup5-e-008",
+        "gup5-e-009",
+        "gup5-e-010",
+        "gup5-e-012",
+        "gup5-e-014",
+        "gup5-e-015",
+        "gup5-e-016",
+        "gup5-e-019",
+        "gup5-e-021",
+        "gup5-e-022",
+        "gup5-e-023",
+        "gup5-e-024",
+        "gup5-e-025",
+        "gup5-e-026",
+        "gup5-e-027",
+        "gup5-e-029",
+        "gup5-e-030",
+        "gup5-e-031",
+        "gup5-e-032",
+        "gup5-e-033",
+        "gup5-e-034",
+        "gup5-e-035",
+        "gup5-e-036",
+        "gup5-e-041",
+        "gup5-e-042",
+        "gup5-e-043",
+        "gup5-e-045",
+        "gup5-e-047",
+        "gup5-e-049",
+        "gup5-e-050",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-060",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066",
+        "gup5-e-067",
+        "gkr5-e-realm-introduction49"
+      ]
+    },
+    {
+      "id": "gup-en-007",
+      "name": "Śeṣa",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-025",
+        "gup-e-042",
+        "gup-e-043",
+        "gup-e-062",
+        "gup-e-078",
+        "gup2-e-022",
+        "gup2-e-028",
+        "gup2-e-064",
+        "gup3-e-005",
+        "gup3-e-012",
+        "gup4-e-013",
+        "gup4-e-049",
+        "gup5-e-018",
+        "gup5-e-041",
+        "gup5-e-043",
+        "gup5-e-053"
+      ]
+    },
+    {
+      "id": "gup-en-010",
+      "name": "Indra",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-005",
+        "gup-e-014",
+        "gup-e-027",
+        "gup-e-043",
+        "gup-e-055",
+        "gup-e-059",
+        "gup-e-079",
+        "gup-e-080",
+        "gup-e-081",
+        "gup-e-082",
+        "gup-e-083",
+        "gup-e-084",
+        "gup-e-085",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-088",
+        "gup-e-089",
+        "gup-e-090",
+        "gup-e-091",
+        "gup2-e-006",
+        "gup2-e-010",
+        "gup2-e-017",
+        "gup2-e-019",
+        "gup2-e-022",
+        "gup2-e-023",
+        "gup2-e-024",
+        "gup2-e-025",
+        "gup2-e-026",
+        "gup2-e-038",
+        "gup2-e-040",
+        "gup2-e-056",
+        "gup2-e-060",
+        "gup2-e-062",
+        "gup3-e-004",
+        "gup3-e-008",
+        "gup3-e-012",
+        "gup3-e-015",
+        "gup4-e-013",
+        "gup4-e-014",
+        "gup4-e-016",
+        "gup4-e-037",
+        "gup4-e-038",
+        "gup4-e-039",
+        "gup4-e-043",
+        "gup4-e-044",
+        "gup4-e-045",
+        "gup4-e-047",
+        "gup4-e-049",
+        "gup4-e-050",
+        "gup5-e-003",
+        "gup5-e-006",
+        "gup5-e-018",
+        "gup5-e-024",
+        "gup5-e-025",
+        "gup5-e-038",
+        "gup5-e-039",
+        "gup5-e-040",
+        "gup5-e-041",
+        "gup5-e-046",
+        "gup5-e-047",
+        "gup5-e-052",
+        "gup5-e-056",
+        "gup5-e-066"
+      ]
+    },
+    {
+      "id": "gup-en-011",
+      "name": "Sun",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-005",
+        "gup-e-027",
+        "gup-e-041",
+        "gup-e-055",
+        "gup-e-062",
+        "gup-e-078",
+        "gup-e-079",
+        "gup2-e-056",
+        "gup2-e-064",
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup-en-015",
+      "name": "Fire",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-027",
+        "gup-e-041",
+        "gup-e-055",
+        "gup-e-062",
+        "gup2-e-060",
+        "gup3-e-015",
+        "gup5-e-003",
+        "gup5-e-041",
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup-en-033",
+      "name": "Moon",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-002",
+        "gup-e-033",
+        "gup-e-041",
+        "gup-e-055",
+        "gup-e-062",
+        "gup2-e-056",
+        "gup2-e-060",
+        "gup2-e-064",
+        "gup4-e-054",
+        "gup5-e-002",
+        "gup5-e-003",
+        "gup5-e-005",
+        "gup5-e-006",
+        "gup5-e-008",
+        "gup5-e-009",
+        "gup5-e-010",
+        "gup5-e-025",
+        "gup5-e-041",
+        "gup5-e-055",
+        "gup5-e-057",
+        "gup5-e-058",
+        "gup5-e-064"
+      ]
+    },
+    {
+      "id": "gup-en-098",
+      "name": "Satyaloka",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-026",
+        "gup5-e-052"
+      ]
+    },
+    {
+      "id": "gup-en-100",
+      "name": "Gods",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-026",
+        "gup-e-030",
+        "gup-e-084",
+        "gup-e-085",
+        "gup-e-086",
+        "gup-e-087",
+        "gup2-e-011",
+        "gup2-e-019",
+        "gup2-e-026",
+        "gup2-e-029",
+        "gup2-e-030",
+        "gup2-e-031",
+        "gup2-e-034",
+        "gup2-e-044",
+        "gup2-e-050",
+        "gup2-e-062",
+        "gup2-e-063",
+        "gup2-e-065",
+        "gup2-e-066",
+        "gup3-e-004",
+        "gup4-e-001",
+        "gup4-e-007",
+        "gup4-e-035",
+        "gup4-e-037",
+        "gup4-e-043",
+        "gup5-e-003",
+        "gup5-e-004",
+        "gup5-e-005",
+        "gup5-e-006",
+        "gup5-e-010",
+        "gup5-e-020",
+        "gup5-e-021",
+        "gup5-e-022",
+        "gup5-e-023",
+        "gup5-e-026",
+        "gup5-e-027",
+        "gup5-e-041",
+        "gup5-e-058",
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gup-en-109",
+      "name": "Sages",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-030",
+        "gup2-e-019",
+        "gup2-e-050",
+        "gup2-e-065",
+        "gup2-e-066",
+        "gup3-e-004",
+        "gup3-e-008",
+        "gup4-e-001",
+        "gup4-e-008",
+        "gup4-e-014",
+        "gup5-e-010",
+        "gup5-e-020",
+        "gup5-e-021",
+        "gup5-e-022",
+        "gup5-e-023",
+        "gup5-e-026",
+        "gup5-e-027",
+        "gup5-e-058",
+        "gup5-e-062"
+      ]
+    },
+    {
+      "id": "gup-en-211",
+      "name": "Dūrvā",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-060",
+        "gup2-e-057",
+        "gup3-e-007",
+        "gup5-e-012",
+        "gup5-e-014",
+        "gup5-e-015",
+        "gup5-e-018",
+        "gup5-e-019",
+        "gup5-e-026",
+        "gup5-e-035",
+        "gup5-e-037",
+        "gup5-e-038",
+        "gup5-e-039",
+        "gup5-e-040",
+        "gup5-e-042",
+        "gup5-e-043",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056"
+      ]
+    },
+    {
+      "id": "gup-en-271",
+      "name": "Gaṅgā",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-091",
+        "gup3-e-009",
+        "gup4-e-003",
+        "gkr4-e-kasi-creation-phala",
+        "gup5-e-006",
+        "gup5-e-054",
+        "gkr5-e-sinless-state-search"
+      ]
+    },
+    {
+      "id": "gup2-en-008",
+      "name": "Atri",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup2-e-008",
+        "gup5-e-050",
+        "gup5-e-057",
+        "gup5-e-064"
+      ]
+    },
+    {
+      "id": "gup4-en-062",
+      "name": "Śūrasena",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-036",
+        "gup4-e-037",
+        "gup4-e-038",
+        "gup4-e-039",
+        "gup4-e-044",
+        "gup4-e-045",
+        "gup4-e-049",
+        "gup4-e-050",
+        "gup5-e-047",
+        "gup5-e-052"
+      ]
+    },
+    {
+      "id": "gup4-en-079",
+      "name": "Sankaṣṭa-caturthī practitioners",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-045",
+        "gup4-e-049",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-055",
+        "gup5-e-049",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-059",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065"
+      ]
+    },
+    {
+      "id": "gup4-en-080",
+      "name": "Kṛtavīrya",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-045",
+        "gup4-e-046",
+        "gup4-e-050",
+        "gup4-e-051",
+        "gup4-e-053",
+        "gup5-e-047",
+        "gup5-e-048",
+        "gup5-e-049",
+        "gup5-e-050",
+        "gup5-e-052",
+        "gup5-e-063",
+        "gup5-e-066",
+        "gup5-e-067"
+      ]
+    },
+    {
+      "id": "gup4-en-083",
+      "name": "Kṛtavīrya unnamed father",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup4-e-046",
+        "gup4-e-050",
+        "gup4-e-051",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-055",
+        "gup4-e-056",
+        "gup5-e-012",
+        "gup5-e-046",
+        "gup5-e-047",
+        "gup5-e-048",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-059",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066"
+      ]
+    },
+    {
+      "id": "gup5-en-079",
+      "name": "Gaṇeśa ritual mouse in69",
+      "type": "VAHANA",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-053"
+      ]
+    },
+    {
+      "id": "gup5-en-080",
+      "name": "Gaṇas fanning ritual image in69",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-053"
+      ]
+    },
+    {
+      "id": "gup5-en-081",
+      "name": "Sankaṣṭa ritual Gaṇeśa image",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-053"
+      ]
+    },
+    {
+      "id": "gup5-en-082",
+      "name": "Sankaṣṭa ritual yantra",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-053"
+      ]
+    },
+    {
+      "id": "gup5-en-083",
+      "name": "Narmadā",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-054"
+      ]
+    },
+    {
+      "id": "gup5-en-084",
+      "name": "Candrabhāgā ritual-water river",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-054"
+      ]
+    },
+    {
+      "id": "gup5-en-085",
+      "name": "Puruṣasūkta ritual alternatives in69",
+      "type": "TEXT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-086",
+      "name": "Gaṇādhīśa ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-054"
+      ]
+    },
+    {
+      "id": "gup5-en-087",
+      "name": "Umāputra ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-054"
+      ]
+    },
+    {
+      "id": "gup5-en-088",
+      "name": "Modakapriya ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-054"
+      ]
+    },
+    {
+      "id": "gup5-en-089",
+      "name": "Lambodara ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-054"
+      ]
+    },
+    {
+      "id": "gup5-en-090",
+      "name": "Ibhavaktra ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-054"
+      ]
+    },
+    {
+      "id": "gup5-en-091",
+      "name": "Gaṇādhyakṣa ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-054"
+      ]
+    },
+    {
+      "id": "gup5-en-092",
+      "name": "Vināyaka ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-054"
+      ]
+    },
+    {
+      "id": "gup5-en-093",
+      "name": "Paraśudhārin ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-054"
+      ]
+    },
+    {
+      "id": "gup5-en-094",
+      "name": "Īśaputra ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-054"
+      ]
+    },
+    {
+      "id": "gup5-en-095",
+      "name": "Mūṣakavāhana ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-054"
+      ]
+    },
+    {
+      "id": "gup5-en-096",
+      "name": "Mahākāya ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-054"
+      ]
+    },
+    {
+      "id": "gup5-en-097",
+      "name": "Dhūmraketu ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-054"
+      ]
+    },
+    {
+      "id": "gup5-en-098",
+      "name": "Puruṣa in69 ritual alternative",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-099",
+      "name": "Gaṇādhipati ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055"
+      ]
+    },
+    {
+      "id": "gup5-en-100",
+      "name": "Aghanāśana ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055"
+      ]
+    },
+    {
+      "id": "gup5-en-101",
+      "name": "Ekadanta ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055"
+      ]
+    },
+    {
+      "id": "gup5-en-102",
+      "name": "Sarvasiddhiprada ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055"
+      ]
+    },
+    {
+      "id": "gup5-en-103",
+      "name": "Vakratunḍa ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055"
+      ]
+    },
+    {
+      "id": "gup5-en-104",
+      "name": "Vighnavidhvaṃsakartṛ ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055"
+      ]
+    },
+    {
+      "id": "gup5-en-105",
+      "name": "Viśvavandya ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055"
+      ]
+    },
+    {
+      "id": "gup5-en-106",
+      "name": "Amareśa ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055"
+      ]
+    },
+    {
+      "id": "gup5-en-107",
+      "name": "Gajakarṇa ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055"
+      ]
+    },
+    {
+      "id": "gup5-en-108",
+      "name": "Nāgayajñopavītin ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055"
+      ]
+    },
+    {
+      "id": "gup5-en-109",
+      "name": "Bhālacandra ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055"
+      ]
+    },
+    {
+      "id": "gup5-en-110",
+      "name": "Vighnādhipa ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055"
+      ]
+    },
+    {
+      "id": "gup5-en-111",
+      "name": "Vidyāprada ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055"
+      ]
+    },
+    {
+      "id": "gup5-en-112",
+      "name": "Wind in69 ritual alternative",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-113",
+      "name": "Sādhyas in69 ritual alternative",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-114",
+      "name": "Puruṣa formula Brahmins",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-115",
+      "name": "Puruṣa formula Rājanyas",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-116",
+      "name": "Puruṣa formula Vaiśyas",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-117",
+      "name": "Puruṣa formula Śūdras",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-118",
+      "name": "Heaven in69 ritual alternative",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-119",
+      "name": "Earth in69 ritual alternative",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-120",
+      "name": "Interspace in69 ritual alternative",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-055",
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-121",
+      "name": "World guardians in69",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-056"
+      ]
+    },
+    {
+      "id": "gup5-en-122",
+      "name": "Sankaṣṭa ritual teacher",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-065"
+      ]
+    },
+    {
+      "id": "gup5-en-123",
+      "name": "Heramba ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-056"
+      ]
+    },
+    {
+      "id": "gup5-en-124",
+      "name": "Abhayaprada ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-056"
+      ]
+    },
+    {
+      "id": "gup5-en-125",
+      "name": "Amareśvara ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-056"
+      ]
+    },
+    {
+      "id": "gup5-en-126",
+      "name": "Gajavakra ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-056"
+      ]
+    },
+    {
+      "id": "gup5-en-127",
+      "name": "Sarvavidyāpradāyaka ritual name in69",
+      "type": "EPITHET",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-056"
+      ]
+    },
+    {
+      "id": "gup5-en-128",
+      "name": "Rohiṇī",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-057",
+        "gup5-e-064"
+      ]
+    },
+    {
+      "id": "gup5-en-129",
+      "name": "Sankaṣṭa caturthī tithi",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-057",
+        "gup5-e-064"
+      ]
+    },
+    {
+      "id": "gup5-en-130",
+      "name": "Sankaṣṭa fed Brahmins",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-057",
+        "gup5-e-065",
+        "gup5-e-066"
+      ]
+    },
+    {
+      "id": "gup5-en-131",
+      "name": "Virāj in69 ritual alternative",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-132",
+      "name": "Vasanta in69 sacrificial formula",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-133",
+      "name": "Grīṣma in69 sacrificial formula",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-134",
+      "name": "Śarad in69 sacrificial formula",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-058"
+      ]
+    },
+    {
+      "id": "gup5-en-146",
+      "name": "Twenty-one Sankaṣṭa officiants",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-065",
+        "gup5-e-067"
+      ]
+    },
+    {
+      "id": "gup5-en-147",
+      "name": "Gaṇānāṃ tvā mantra",
+      "type": "TEXT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-065"
+      ]
+    },
+    {
+      "id": "gup5-en-148",
+      "name": "Gaṇeśa root mantra in71",
+      "type": "TEXT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-065"
+      ]
+    },
+    {
+      "id": "gup5-en-149",
+      "name": "Kapilā cow and calf gift in71",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-065"
+      ]
+    }
+  ],
+  "linked_entity_note": "Includes event participants and related claim endpoints. Entity metadata can cite other retained source passages; the complete graph carries those references."
+}

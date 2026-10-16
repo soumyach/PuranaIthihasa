@@ -1,0 +1,256 @@
+{
+  "checkpoint": "continuation3",
+  "completed_arc_id": "mud4-story-soma-grant",
+  "graph_sha256": "cecbec8daa706000cb98923d6b48e16119667f17c4f6fce4acf05de2b7a7a376",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checking complete; selective independent review in separate bounded reports, not universal certification.",
+  "story": {
+    "id": "mud4-story-soma-grant",
+    "title": "Candra’s Gaṇeśa tapas and nectar/nourishment grant",
+    "source_id": "gp-src-mudgala",
+    "witness_id": "gp-wit-sd-mudgala-2",
+    "scope": "2.7.22–24",
+    "event_ids": [
+      "mud4-event-soma-nourishing-grant"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Entire bounded cited Sanskrit arc read; significant named actors, relationships, boons/powers, dialogue and transition checks by author. Independent root review separate.",
+    "missing_sections": [],
+    "editorial_notes": "Source narration order. Embedded narratives have their own spines; parent records their framing transitions without duplicating events."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "mud4-event-soma-nourishing-grant",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-soma-grant",
+        "sequence": 1,
+        "passage_ids": [
+          "mud4-p-soma-nourishing-grant"
+        ],
+        "participants": [
+          "rmd2-en-shaunaka",
+          "rmd2-en-suta",
+          "mud-en-chandra",
+          "mud-en-brahma",
+          "mud-en-vakratunda"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Śaunaka requests detailed accounts of Atri’s deity-natured sons. Sūta says Candra arises as Brahmā portion, performs tapas and receives Gaṇeśa’s boon making him nectar-formed. His kalās nourish gods/people and rays increase food growth. Requested wording/duration are unstated.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-soma-nourishing-grant"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-soma-nourishing-grant",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-soma-nourishing-grant",
+          "locator": "Mudgala2.7.22–24",
+          "paraphrase": "Śaunaka requests detailed accounts of Atri’s deity-natured sons. Sūta says Candra arises as Brahmā portion, performs tapas and receives Gaṇeśa’s boon making him nectar-formed. His kalās nourish gods/people and rays increase food growth. Requested wording/duration are unstated.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "mud-en-brahma",
+      "name": "Brahmā",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-naimisha",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-assembly",
+        "mud2-e-yaj-arrives",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-chandra",
+      "name": "Candra",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-kailasa-battle",
+        "mud3-e-stotrottama-cosmic-forms",
+        "mud4-e-marici-pulaha-atri-lines"
+      ]
+    },
+    {
+      "id": "mud-en-vakratunda",
+      "name": "Vakratunda / Gaṇeśa / Gaṇanāyaka / Vighnapa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "rmd2-e-invocation",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-tattva-boon",
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-tapas",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "rmd2-e-five-request-hymn-fruits",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "rmd2-en-shaunaka",
+      "name": "Śaunaka",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "rmd2-e-naimisha",
+        "rmd2-e-vyasa-training",
+        "rmd2-e-supremacy-question",
+        "rmd2-e-daksha-origin",
+        "mud3-e-five-deity-frame",
+        "mud2-e-field-layout",
+        "mud2-e-ekadanta-frame",
+        "mud4-e-soma-nourishing-grant"
+      ],
+      "notes": "Recurring Mudgala frame actor; both continuation IDs retained with explicit same_source_frame_actor_as link. Use rmd2-en-shaunaka in later opening-frame extraction."
+    },
+    {
+      "id": "rmd2-en-suta",
+      "name": "Sūta Romaharṣaṇa / Lomaharṣaṇa",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "rmd2-e-naimisha",
+        "rmd2-e-vyasa-training",
+        "rmd2-e-supremacy-question",
+        "rmd2-e-daksha-origin",
+        "mud3-e-five-deity-frame",
+        "mud2-e-field-layout",
+        "mud2-e-ekadanta-frame",
+        "mud4-e-soma-nourishing-grant"
+      ],
+      "notes": "Recurring Mudgala frame actor; both continuation IDs retained with explicit same_source_frame_actor_as link. Use rmd2-en-suta in later opening-frame extraction."
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "mud4-r-soma-brahma-portion",
+      "subject_id": "mud-en-chandra",
+      "predicate": "portion_of",
+      "object_id": "mud-en-brahma",
+      "evidence_ids": [
+        "mud4-e-soma-nourishing-grant"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-soma-brahma-portion",
+      "kinship_kind": "DEITY_PORTION"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "mud4-power-soma-nectar-nourishment",
+      "type": "BOON",
+      "recipient_id": "mud-en-chandra",
+      "grantor_id": "mud-en-vakratunda",
+      "worshipped_id": "mud-en-vakratunda",
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-soma-nourishing-grant"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-soma-nourishing-grant"
+        ],
+        "grantor_id": [
+          "mud4-e-soma-nourishing-grant"
+        ],
+        "worshipped_id": [
+          "mud4-e-soma-nourishing-grant"
+        ],
+        "austerity_or_circumstances": [
+          "mud4-e-soma-nourishing-grant"
+        ],
+        "granted": [
+          "mud4-e-soma-nourishing-grant"
+        ],
+        "mechanism": [
+          "mud4-e-soma-nourishing-grant"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": "Tapas, unspecified duration/procedure.",
+      "requested": null,
+      "granted": "Nectar form, kalās nourishing gods/people and food growth by rays.",
+      "mechanism": "Nourishment through kalās; food growth through rays.",
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "mud4-a-soma-brahma-portion",
+      "subject_id": "mud-en-chandra",
+      "predicate": "portion_of",
+      "object_id": "mud-en-brahma",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-soma-nourishing-grant"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ]
+}

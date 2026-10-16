@@ -1,0 +1,1 @@
+Historical build helpers refer to work/continuation3/baseline/research. Frozen patches are already integrated. Do not execute these scripts against a later issued graph or append patches twice. Use outputs/research/validate_graph.py and test_integrity.py for current offline integrity checks.

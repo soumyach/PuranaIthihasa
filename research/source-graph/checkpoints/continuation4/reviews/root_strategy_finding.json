@@ -1,0 +1,143 @@
+{
+  "review_id": "root4-analasura-strategy-review",
+  "reviewer": "Root, independent complete63/64 primary-body reading",
+  "snapshot_path": "work/continuation4/checkpoints/gup5/durva-fire-counter-001.json",
+  "snapshot_sha256": "8efc9b1454fb0f822bc5ec53d1c820a14ae3441d3f7a845dbc4b3a3e19a853b9",
+  "actual_read_spans": [
+    "Upāsanā63.1–51",
+    "Upāsanā64.1–31"
+  ],
+  "source_urls": [
+    "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+    "https://sanskrit.uohyd.ac.in/SKT/MW/143.html"
+  ],
+  "findings": [
+    {
+      "id": "root4-nodaniya-instruction",
+      "status": "CORRECTION_APPLIED_WITH_RETAINED_GAP",
+      "records": [
+        {
+          "table": "evidence",
+          "id": "gup5-e-023",
+          "before": {
+            "id": "gup5-e-023",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "passage_id": "gup5-p-63-43-51",
+            "locator": "Upāsanā 63.43–51",
+            "paraphrase": "The child asks the gods not to drive him away by force when they see the demon, but to watch his and the demon’s remarkable encounter. They joyfully yet uncertainly discuss his capacity and bow. Analāsura approaches as dissolution-fire, burning ten directions and devouring humans. The people cry out and sages flee, warning the child to escape before the fire kills him, comparing it with a great predator. Gaṇeśa stands firm like Himavat; they retreat far away, leaving him there.",
+            "classification": "DIRECT_TEXT",
+            "verification_status": "VERIFIED",
+            "verifier": "Upāsanā continuation agent",
+            "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+          }
+        },
+        {
+          "table": "narrative_events",
+          "id": "gup5-event-021",
+          "before": {
+            "id": "gup5-event-021",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "supporting_witness_ids": [
+              "gp-wit-sd-upasana"
+            ],
+            "story_id": "gup5-story-analasura",
+            "sequence": 21,
+            "passage_ids": [
+              "gup5-p-63-43-51"
+            ],
+            "participants": [
+              "gp-en-ganesha",
+              "gup5-en-027",
+              "gup5-en-025",
+              "gup-en-100",
+              "gup-en-109",
+              "gup5-en-028"
+            ],
+            "setting": null,
+            "cause": null,
+            "details": "The child asks the gods not to drive him away by force when they see the demon, but to watch his and the demon’s remarkable encounter. They joyfully yet uncertainly discuss his capacity and bow. Analāsura approaches as dissolution-fire, burning ten directions and devouring humans. The people cry out and sages flee, warning the child to escape before the fire kills him, comparing it with a great predator. Gaṇeśa stands firm like Himavat; they retreat far away, leaving him there.",
+            "outcome": "The appointed encounter begins; the child remains after the rescuers flee.",
+            "changed_relationship_ids": [],
+            "introduced_entity_ids": [
+              "gup5-en-028"
+            ],
+            "introduced_power_ids": [],
+            "consequences": [],
+            "evidence_ids": [
+              "gup5-e-023"
+            ],
+            "verification_status": "VERIFIED"
+          }
+        }
+      ],
+      "locators": [
+        "Upāsanā63.43"
+      ],
+      "description": "Printed nodanīyo balād aham is a positive passive instruction, to be impelled/urged forcibly by all of you on seeing the demon. Draft introduces an unsupported negative. MW nud supports push/impel/urge senses. Do not supply an unstated push direction or claim gods actually carry out the instruction; their later retreat and deity’s māyā capture remain distinct.",
+      "recommended_action": "Correct the precise speech and dependent descriptions with traceable before/after values, or mark uncertain strategy and its containing chapter/spine PARTIAL until secure.",
+      "applied_before_author_freeze": true,
+      "author_checkpoint": "checkpoints/continuation4/checkpoints/gup5/durva-strategy-correction-002.json",
+      "semantic_remaining": "Exact intended force/action remains NEEDS_REVIEW; chapter63 and full Analāsura spine PARTIAL.",
+      "after_records": [
+        {
+          "table": "evidence",
+          "id": "gup5-e-023",
+          "after": {
+            "id": "gup5-e-023",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "passage_id": "gup5-p-63-43-51",
+            "locator": "Upāsanā 63.43–51",
+            "paraphrase": "The child announces a means of killing the demon and directs the gods to carry it out. The following strategy clause is preserved as sarvair bhavadbhis taṃ dṛṣṭvā nodanīyo balād aham; its exact intended action remains unresolved. He tells them to watch his and the demon’s remarkable encounter. They joyfully yet uncertainly discuss his capacity and bow. Analāsura approaches as dissolution-fire, burning ten directions and devouring humans. The people cry out and sages flee, warning the child to escape before the fire kills him, comparing it with a great predator. Gaṇeśa stands firm like Himavat; they retreat far away, leaving him there.",
+            "classification": "DIRECT_TEXT",
+            "verification_status": "VERIFIED",
+            "verifier": "Upāsanā continuation agent",
+            "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+          }
+        },
+        {
+          "table": "narrative_events",
+          "id": "gup5-event-021",
+          "after": {
+            "id": "gup5-event-021",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "supporting_witness_ids": [
+              "gp-wit-sd-upasana"
+            ],
+            "story_id": "gup5-story-analasura",
+            "sequence": 21,
+            "passage_ids": [
+              "gup5-p-63-43-51"
+            ],
+            "participants": [
+              "gp-en-ganesha",
+              "gup5-en-027",
+              "gup5-en-025",
+              "gup-en-100",
+              "gup-en-109",
+              "gup5-en-028"
+            ],
+            "setting": null,
+            "cause": null,
+            "details": "The child announces a means of killing the demon and directs the gods to carry it out. The following strategy clause is preserved as sarvair bhavadbhis taṃ dṛṣṭvā nodanīyo balād aham; its exact intended action remains unresolved. He tells them to watch his and the demon’s remarkable encounter. They joyfully yet uncertainly discuss his capacity and bow. Analāsura approaches as dissolution-fire, burning ten directions and devouring humans. The people cry out and sages flee, warning the child to escape before the fire kills him, comparing it with a great predator. Gaṇeśa stands firm like Himavat; they retreat far away, leaving him there.",
+            "outcome": "The appointed encounter begins; the child remains after the rescuers flee. The precise preceding strategy is withheld.",
+            "changed_relationship_ids": [],
+            "introduced_entity_ids": [
+              "gup5-en-028"
+            ],
+            "introduced_power_ids": [],
+            "consequences": [],
+            "evidence_ids": [
+              "gup5-e-023"
+            ],
+            "verification_status": "VERIFIED"
+          }
+        }
+      ]
+    }
+  ],
+  "limitations": "Same digital witness/primary dictionary; no alternate printed edition collated. No historical/other-tradition retelling used."
+}

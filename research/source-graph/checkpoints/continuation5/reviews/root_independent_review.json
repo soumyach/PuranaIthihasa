@@ -1,0 +1,706 @@
+{
+  "review_id": "continuation5-root-independent-review",
+  "reviewer": "Root; independent primary Sanskrit body reading and comparison against author patches",
+  "method": "Selective narrative propositions compared to the same primary digital witnesses. Narrative chronology, quoted doctrine, request/grant, prediction/actual event, attributed speech and interpretation kept distinct.",
+  "compared_patch_hashes": {
+    "gup6": "5fe8a75b42151e7946af43129d465f4e1dacf3568b048d95ae685b267d744e5b",
+    "gkr6": "a2a13a0a4f8204588982030b4f008e70aeaa1ee2efcbd76b4039f6c520f54b67",
+    "mud6": "da41addc535152e0763413ed2e8fceb7d028750ed86f3c0f0e8f4aa363598c63"
+  },
+  "actual_read_spans": {
+    "gp-wit-sd-upasana": [
+      "72.1–47 with colophon; printed11label1 retained",
+      "73.1–36 with colophon",
+      "74.1–45 with colophon; printed15/25labels5 retained",
+      "75.1–45 with colophon",
+      "76.1–75 with colophon",
+      "77.1–62 with colophon",
+      "78.1–38 with colophon",
+      "79.1–43 with colophon",
+      "80.1–27 with colophon",
+      "81.1–14 plus15a only, not whole body"
+    ],
+    "gp-wit-sd-krida": [
+      "54.1–64 with colophon",
+      "55.1–49 with colophon",
+      "56.1–53 with colophon",
+      "57.1–48 with colophon",
+      "58.1–54 with colophon",
+      "59.1–45 with colophon",
+      "60.1–55 with colophon",
+      "61.1–43 with colophon, duplicateprinted31retained",
+      "62.1–55 with colophon",
+      "63.1–43 with colophon",
+      "2.23–30 bounded earlier boon review",
+      "64.1–9 only, not whole body",
+      "2.1–11 bounded earlier tapas review"
+    ],
+    "gp-wit-sd-mudgala-2": [
+      "2.19.1–39 with colophon, including separately reread24b",
+      "2.20.1–35 with colophon",
+      "2.21.1–33 with colophon",
+      "2.22.1–26 with colophon",
+      "2.23.1–34 with colophon",
+      "2.24.1–54 with colophon",
+      "2.25.1–64 with colophon",
+      "2.26.1–45 with colophon",
+      "2.27.1–11 only, not whole body"
+    ]
+  },
+  "review_units": [
+    {
+      "id": "root5-review-royal-birth-family",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "gup6-e-001",
+        "gup6-e-002",
+        "gup6-e-003",
+        "gup6-e-004",
+        "gup6-e-005",
+        "gup6-e-006",
+        "gup6-e-007"
+      ],
+      "locators": [
+        "Upāsanā72.1–30"
+      ],
+      "finding": "Birth after nine months, absent arms/hands/thighs/knees/shins/feet, lament and ministers’ examples are explicit. Day11 child Kārtavīrya and named father Kṛtavīrya27 establish LOCAL identity; inherited68/71 conflicting names remain separate.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-child-mantra-prediction",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "gup6-e-001",
+        "gup6-e-002",
+        "gup6-e-003",
+        "gup6-e-004",
+        "gup6-e-005",
+        "gup6-e-006",
+        "gup6-e-007"
+      ],
+      "locators": [
+        "Upāsanā72.31–47"
+      ],
+      "finding": "Dattātreya attributes bodily condition to omitted ācamana after yawning during vigil; teaches ONE-syllable mantra to CHILD with observance and12-year predicted appearance/glance. Father later sends child by conveyance to leaf hut; no actual healing in72.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-healing-requests-mechanism",
+      "status": "SUPPORTED_WITH_RETAINED_GAPS",
+      "compared_evidence_record_ids": [
+        "gup6-e-008",
+        "gup6-e-009",
+        "gup6-e-010",
+        "gup6-e-011",
+        "gup6-e-012",
+        "gup6-e-013",
+        "gup6-e-014",
+        "gup6-e-015",
+        "gup6-e-016"
+      ],
+      "locators": [
+        "Upāsanā73.1–15"
+      ],
+      "finding": "Child’s twelve-year air-only tapas precedes coral manifestation. Devotion and bodily beauty requested; ACTUAL aṇimā entry into belly causes divine body,1000arms/two straight legs. Predicted glance is not silently substituted for actual mechanism. nirvāṇam3 remains raw uncertain.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-deity-group-vs-sesa-grants",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "gup6-e-008",
+        "gup6-e-009",
+        "gup6-e-010",
+        "gup6-e-011",
+        "gup6-e-012",
+        "gup6-e-013",
+        "gup6-e-014",
+        "gup6-e-015",
+        "gup6-e-016"
+      ],
+      "locators": [
+        "Upāsanā73.16–28"
+      ],
+      "finding": "Brahmā-led deity group speaks recovery/remembrance, illness-removal, Viṣṇu-form/Sahasrārjuna naming, fame/refuge/victory/rule grants separately from Gaṇeśa’s healing and Śeṣa’s Earth-bearing/omniscience/1000heads/Nāga primacy. Child actually reunites with parents. Devānām scope remains narrow.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-exempla-merit-request",
+      "status": "SUPPORTED_WITH_RETAINED_GAPS",
+      "compared_evidence_record_ids": [
+        "gup6-e-008",
+        "gup6-e-009",
+        "gup6-e-010",
+        "gup6-e-011",
+        "gup6-e-012",
+        "gup6-e-013",
+        "gup6-e-014",
+        "gup6-e-015",
+        "gup6-e-016"
+      ],
+      "locators": [
+        "Upāsanā73.29–36"
+      ],
+      "finding": "Rāvaṇa/Pāṇḍava examples are source-local brief claims, not new extracted life-stories. Printed akhilājñatā is not silently omniscience. Indra asks vow merit to move aircraft; no departure yet.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-sundari-origin-fate",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "gup6-e-017",
+        "gup6-e-018",
+        "gup6-e-019",
+        "gup6-e-020",
+        "gup6-e-021",
+        "gup6-e-022",
+        "gup6-e-039"
+      ],
+      "locators": [
+        "Upāsanā74.9–26"
+      ],
+      "finding": "Sundarī daughter of Bengal Kṣatriya Śāraṅgadhara, husband Citra; dagger murder, execution, hell and post-kalpa caṇḍālī rebirth precede intoxicated daytime sleep, food at moonrise and Gaṇeśa naming. No remembered named lover or deliberate full ritual imported.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-merit-transfer-refused",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "gup6-e-017",
+        "gup6-e-018",
+        "gup6-e-019",
+        "gup6-e-020",
+        "gup6-e-021",
+        "gup6-e-022",
+        "gup6-e-039"
+      ],
+      "locators": [
+        "Upāsanā74.27–45"
+      ],
+      "finding": "Royal emissaries PROPOSE merit transfer/double merit; divine attendants REFUSE without Gaṇeśa order. Actual divine-body transport, gaze onto Indra car and AIR contact lead to car departure; no actual merit gift.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-surasena-ritual-inclusion",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "gup6-e-023",
+        "gup6-e-024",
+        "gup6-e-025",
+        "gup6-e-026"
+      ],
+      "locators": [
+        "Upāsanā75.1–45"
+      ],
+      "finding": "Vasiṣṭha prescribes Māgha dark-fourth Tuesday; actual standing on one toe until sunset, offerings,10000cows, vigil, image gift and aircraft. King requests city inclusion/all four birth classes; attendants load all, aircraft stuck. King offers to be excluded or seeks history/remedy, never consents to abandoning diseased person.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-budha-family-crimes",
+      "status": "SUPPORTED_WITH_RETAINED_GAPS",
+      "compared_evidence_record_ids": [
+        "gup6-e-027",
+        "gup6-e-028",
+        "gup6-e-029",
+        "gup6-e-030",
+        "gup6-e-031",
+        "gup6-e-032",
+        "gup6-e-033",
+        "gup6-e-034",
+        "gup6-e-035"
+      ],
+      "locators": [
+        "Upāsanā76.1–60"
+      ],
+      "finding": "Dūrva father, Śākinī mother, Sāvitrī WIFE distinct. Budha kills parents/wife; Sāvitrī remembers Rāma as husband and attains heaven. Sulabhā is Kalabha’s wife, curses next-birth illness after assault. Unnamed prostitute is not Sundarī74. Printed invocation24 speaker stays unforced.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-name-remedy-actual-arrival",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "gup6-e-027",
+        "gup6-e-028",
+        "gup6-e-029",
+        "gup6-e-030",
+        "gup6-e-031",
+        "gup6-e-032",
+        "gup6-e-033",
+        "gup6-e-034",
+        "gup6-e-035"
+      ],
+      "locators": [
+        "Upāsanā76.61–75"
+      ],
+      "finding": "Attendants prescribe four-syllable name in ear; Śūrasena utters three times, hearing Gajānana gives divine body/removes sins, all actually transported to Gaṇeśa abode. No generic new ritual instruction or invented liberation dialogue.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-rama-parentage-hospitality",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "gup6-e-036",
+        "gup6-e-037",
+        "gup6-e-038",
+        "gup6-e-040",
+        "gup6-e-041",
+        "gup6-e-042"
+      ],
+      "locators": [
+        "Upāsanā77.1–62"
+      ],
+      "finding": "Jamadagni/Reṇukā parents; Rati source-local designation does not merge with Kāma wife. Rāma studies elsewhere, Kārtavīrya explicitly Kṛtavīrya son arrives; couple petition Kāmadhenu, she creates city/food. No Gaṇeśa boon supplying banquet.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-cow-demand-refusal",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "gup6-e-043",
+        "gup6-e-044",
+        "gup6-e-045",
+        "gup6-e-046"
+      ],
+      "locators": [
+        "Upāsanā78.1–38"
+      ],
+      "finding": "King and hosts eat, gifts given; sage names Kāmadhenu as actual agent. King’s demand/threat and sage’s anger are distinct from consenting transfer or actual theft.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-cow-battle-jamadagni-killer",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "gup6-e-047",
+        "gup6-e-048",
+        "gup6-e-049",
+        "gup6-e-050",
+        "gup6-e-051"
+      ],
+      "locators": [
+        "Upāsanā79.1–43"
+      ],
+      "finding": "Cow’s breath/fire and strike-born hosts, hair Śaka/Barbara and foot Paṭaccara allocations, failed conch/arrows, nonkilling pursuit and withdrawal precede KING HIMSELF killing Jamadagni by heart arrow. Reṇukā hit21arrows remains alive to speak; no royal sons as killers imported.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-renuka-last-commands",
+      "status": "SUPPORTED_WITH_RETAINED_GAPS",
+      "compared_evidence_record_ids": [
+        "gup6-e-052",
+        "gup6-e-053",
+        "gup6-e-054",
+        "gup6-e-055"
+      ],
+      "locators": [
+        "Upāsanā80.1–27"
+      ],
+      "finding": "Reṇukā’s recalled home/return sequence differs79 continuous narration; both retained. Commands21kṣatriya removals for21arrows, never-cremated funeral site, Dattātreya and13day rites are requests, not invented fulfilled campaigns. Actual death27 distinct from prior wounds.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-house-multiplication",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "gkr6-e-citizens-meal-requests54",
+        "gkr6-e-deity-and-king-many-house-visits54",
+        "gkr6-e-king-sees-own-many-house-forms54",
+        "gkr6-e-sanaka-sanandana-house-search54",
+        "gkr6-e-lion-tenarm-vision54",
+        "gkr6-e-sages-image-shrine-installation54",
+        "gkr6-e-sages-return-account-benefits54"
+      ],
+      "locators": [
+        "Krīḍā54.1–39"
+      ],
+      "finding": "Citizens’ responses and simultaneous visits preserve acts/offerings. King sees HIMSELF with Kaśyapa son in two/three houses; multiplicity includes king, not only deity.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-sages-lion-vision",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "gkr6-e-citizens-meal-requests54",
+        "gkr6-e-deity-and-king-many-house-visits54",
+        "gkr6-e-king-sees-own-many-house-forms54",
+        "gkr6-e-sanaka-sanandana-house-search54",
+        "gkr6-e-lion-tenarm-vision54",
+        "gkr6-e-sages-image-shrine-installation54",
+        "gkr6-e-sages-return-account-benefits54"
+      ],
+      "locators": [
+        "Krīḍā54.39–64"
+      ],
+      "finding": "Two sages Sanaka/Sanandana see all-pervasion then TENarm LION-mounted vision with Siddhi/Buddhi/serpent/crescent. Disappearance followed by image as seen, printed vararado name, site benefits and account-hearing fruits. No mouse/default iconography or new verbal boon inserted.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-king-form-sukla-gift",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "gkr6-e-king-horse-search-confrontation55",
+        "gkr6-e-king-meditative-form-restored55",
+        "gkr6-e-sukla-silent-wealth-gift55",
+        "gkr6-e-sukla-wife-wealth-discovery55",
+        "gkr6-e-envoys-lightning-attack55",
+        "gkr6-e-envoys-confession-five-fathers55",
+        "gkr6-e-envoys-abhaya-release55"
+      ],
+      "locators": [
+        "Krīḍā55.1–29"
+      ],
+      "finding": "Bull-mounted child compared to Śiva does not directly acquire three eyes. King temporarily gains Vināyaka form then distinct body; Śukla’s unsolicited silent wealth exceeds Kubera, wife remains her sourced identity. Temporary form is not final liberation.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-envoy-capture-mercy",
+      "status": "SUPPORTED_WITH_RETAINED_GAPS",
+      "compared_evidence_record_ids": [
+        "gkr6-e-king-horse-search-confrontation55",
+        "gkr6-e-king-meditative-form-restored55",
+        "gkr6-e-sukla-silent-wealth-gift55",
+        "gkr6-e-sukla-wife-wealth-discovery55",
+        "gkr6-e-envoys-lightning-attack55",
+        "gkr6-e-envoys-confession-five-fathers55",
+        "gkr6-e-envoys-abhaya-release55"
+      ],
+      "locators": [
+        "Krīḍā55.30–49"
+      ],
+      "finding": "Śūra/Chapala lightning attack, capture/spinning, admission of Narāntaka mission, five-father ROLE analogy, citizen warning and prior abhayā motivating actual release explicit. No biological fatherhood; Chapala alive/dead earlier conflict retained.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-envoy-recap-invasion",
+      "status": "SUPPORTED_WITH_RETAINED_GAPS",
+      "compared_evidence_record_ids": [
+        "gkr6-e-envoys-return-raudrapura56",
+        "gkr6-e-envoys-earlier-demon-recap56-first",
+        "gkr6-e-envoys-earlier-demon-recap56-second",
+        "gkr6-e-envoys-house-meal-report56",
+        "gkr6-e-narantaka-fury-war-order56",
+        "gkr6-e-narantaka-four-division-equipment56",
+        "gkr6-e-narantaka-chariot-host-departure56"
+      ],
+      "locators": [
+        "Krīḍā56.1–53"
+      ],
+      "finding": "Reports RETELL earlier demon attacks, not new second deaths. Printed recap-name segmentation conflicts retained. Narāntaka boasts/mobilizes and weapon/vehicle host description; no death or surrender of him here.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-king-capture-strategies",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "gkr6-e-royal-alarm-arms57",
+        "gkr6-e-minister-conditional-surrender-advice57",
+        "gkr6-e-city-burning-abductions-royal-choice57",
+        "gkr6-e-royal-battle-success-and-capture57",
+        "gkr6-e-narantaka-victory-inference57"
+      ],
+      "locators": [
+        "Krīḍā57.1–48"
+      ],
+      "finding": "Minister PROPOSES surrender and conditional handing over deity; no action follows it. Siege/fire/civilian violence prompts actual battle, initial king victory then capture with minister sons. Enemy conclusion child defeated is speech, not actual defeat of Vināyaka.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-kalapurusa-capture-reabsorption",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "gkr6-e-amba-captured-king-lament58",
+        "gkr6-e-vinayaka-roar-siddhi-army58",
+        "gkr6-e-created-leader-food-head-order58",
+        "gkr6-e-leader-devours-invasion-host58",
+        "gkr6-e-leader-swallowing-arrows-astras58",
+        "gkr6-e-kalapurusa-capture-refuge-advice58",
+        "gkr6-e-kalapurusa-rest-request-reabsorption58"
+      ],
+      "locators": [
+        "Krīḍā58.1–54"
+      ],
+      "finding": "Ambā’s widowhood lament is speech while king alive. Siddhi creates host, Vināyaka commands head but leader ACTUALLY captures Narāntaka alive. Weapons swallowed/depleted, hair seizure/refuge warning preserved. Request demon mukti unanswered here; leader’s rest in deity mouth/reabsorption actual.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-belly-cosmos-family",
+      "status": "SUPPORTED_WITH_RETAINED_GAPS",
+      "compared_evidence_record_ids": [
+        "gkr6-e-brahma-created-leader-explanation59",
+        "gkr6-e-king-ministersons-narantaka-interior-cosmos59",
+        "gkr6-e-king-rescue-recap-and-questions59",
+        "gkr6-e-king-head-touch-knowledge-remaya59",
+        "gkr6-e-king-unnamed-mother-reunion59",
+        "gkr6-e-ministersons-versus-ministers-label59",
+        "gkr6-e-king-amba-restored-population59"
+      ],
+      "locators": [
+        "Krīḍā59.1–45"
+      ],
+      "finding": "King, two minister sons and Narāntaka see belly cosmos; mental refuge→child-guided pore exit. Head-touch gives divine knowledge followed renewed delusion. Unnamed king MOTHER37–38 separate Ambā WIFE40; role label39 and restoration remain exact.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-duel-counter-regrowth",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "gkr6-e-narantaka-resolve-boasts60",
+        "gkr6-e-king-warning-boon-pride60",
+        "gkr6-e-axe-mountains-shapeshift-wrestling60",
+        "gkr6-e-tree-mountain-counters-and-king-false-death60",
+        "gkr6-e-pinaka-arrows-appearance-and-arm-cuts60"
+      ],
+      "locators": [
+        "Krīḍā60.1–55"
+      ],
+      "finding": "King’s sin-weakens-boon account attributed, not universal narrator law. Piṇāka/arrows appear with UNSPECIFIED donor. Cut arms reach separate doors, other arms remain, repeated māyā form/weapon/wrestling counters; no final death here.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-narantaka-final-defeat",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "gkr6-e-narantaka-leg-severance-regrowth61",
+        "gkr6-e-narantaka-head-arrow-regrowth61",
+        "gkr6-e-narantaka-many-heads-axe61",
+        "gkr6-e-narantaka-day-night-identity-delusion61",
+        "gkr6-e-virat-toenail-narantaka-death61",
+        "gkr6-e-earth-half-burden-after-narantaka61",
+        "gkr6-e-citizen-devotion-nonseparation-request61"
+      ],
+      "locators": [
+        "Krīḍā61.1–43; earlier2.23–30"
+      ],
+      "finding": "Day/night/category protections earlier read explicitly; final sequence regrown feet/heads→māyā confusion/daynight flicker→Virāṭ vision→great-toe nail crushing. No explicit twilight claim or new invented expiry. Narrated death confirmed39; no explicit demon mukti. Earth HALFburden/request and citizen devotion request retain no unspoken grant.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-parents-brother-wife-siege",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "gkr6-e-raudraketu-sarada-head-grief62",
+        "gkr6-e-elder-devantaka-younger-narantaka-grief62",
+        "gkr6-e-devantaka-consolation-revenge-request62",
+        "gkr6-e-parents-kasi-dhumraksa-recap62",
+        "gkr6-e-devantaka-vow-mobilization-siege62",
+        "gkr6-e-siege-sent-slain-referents62"
+      ],
+      "locators": [
+        "Krīḍā62.1–55"
+      ],
+      "finding": "Raudraketu/Śāradā parents, Devāntaka elder/Narāntaka younger, unnamed beautiful Narāntaka wife and father’s brother Dhūmrākṣa source relationships preserved. Severed head grief and vow to retaliate precede actual flight/siege; speech of heaven not final narrator liberation.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-siddhi-host-revival-removal",
+      "status": "SUPPORTED_WITH_RETAINED_GAPS",
+      "compared_evidence_record_ids": [
+        "gkr6-e-king-devantaka-alarm-prayer63",
+        "gkr6-e-siddhi-remembers-eight-powers63",
+        "gkr6-e-devantaka-commanders-victory-blessing63",
+        "gkr6-e-eight-formation-opponents63",
+        "gkr6-e-eight-formations-general-battle63",
+        "gkr6-e-isita-krtya-sukra-removal63",
+        "gkr6-e-sukra-removal-battle-continues63",
+        "gkr6-e-devantaka-eight-commanders-blessing-atomic63"
+      ],
+      "locators": [
+        "Krīḍā63.1–43"
+      ],
+      "finding": "Lion-mounted armed deity/Siddhi recall eight named siddhis and formations, printed Prathimā vs list Laghimā remains. Śukra REVIVES dead demons; Iśitā→kṛtyā abducts Bhārgava using raw bhaga clause then abandons in Barbara. No Śukra killing or Śiva-swallowing imported; mapping/removal wording stays flagged.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-bharata-later-family",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "mud6-e-bharata-angirasa-birth",
+        "mud6-e-bharata-dullness-education",
+        "mud6-e-bharata-later-family-mistreatment",
+        "mud6-e-bharata-labor-field",
+        "mud6-e-robber-conditional-pledge",
+        "mud6-e-mahakali-chief-sword-rescue"
+      ],
+      "locators": [
+        "Mudgala2.19.1–26"
+      ],
+      "finding": "Unnamed Āṅgirasa-family sage father distinct sage Aṅgiras. Dullness masks learning to avoid attachment/marriage; parents die, NINE half-brothers/co-wife lineage and wives mistreat, eating once2/3days deprivation. Not earlier Ṛṣabha sons or vow.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-robber-vow-mahakali-rescue",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "mud6-e-bharata-angirasa-birth",
+        "mud6-e-bharata-dullness-education",
+        "mud6-e-bharata-later-family-mistreatment",
+        "mud6-e-bharata-labor-field",
+        "mud6-e-robber-conditional-pledge",
+        "mud6-e-mahakali-chief-sword-rescue"
+      ],
+      "locators": [
+        "Mudgala2.19.27–39"
+      ],
+      "finding": "Chief conditional wealth pledge and wealth receipt not an explicit granted boon. Mahākālī Gaṇapatya emerges image, takes CHIEF’s sword, beheads chief/drinks and kills others; Bharata bows/wanders/alms with no new liberation event.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-rahugana-meeting-attribution",
+      "status": "SUPPORTED_WITH_RETAINED_GAPS",
+      "compared_evidence_record_ids": [
+        "mud6-e-rahugana-palanquin",
+        "mud6-e-rahugana-insult-yoga-reply",
+        "mud6-e-rahugana-sage-identity-question",
+        "mud6-e-rahugana-brahmin-praise",
+        "mud6-e-rahugana-mouth-clause"
+      ],
+      "locators": [
+        "Mudgala2.20.1–35"
+      ],
+      "finding": "Peace-seeking Sindhu king enlists Bharata, animal avoidance delays palanquin, insult→yoga response→bow/apology. Questioned sage identities not actual identity. Brahmin supremacy/mantra statements are king speech; printed yacchrutam25 is not silently offerings/yachhutam.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-rahugana-initiation-outcome",
+      "status": "SUPPORTED_WITH_RETAINED_GAPS",
+      "compared_evidence_record_ids": [
+        "mud6-e-bharata-pardon-rahugana-request",
+        "mud6-e-rahugana-body-self-doctrine",
+        "mud6-e-rahugana-doctrine-raw-referents",
+        "mud6-e-rahugana-union-ayoga-peace",
+        "mud6-e-rahugana-actual-peace"
+      ],
+      "locators": [
+        "Mudgala2.21.1–33"
+      ],
+      "finding": "Bharata identifies prior life, pardons ignorant body insult, king asks discipleship/peace. Dense fivefold/referent doctrine18–22 unforced, no deity apparition. King actually abandons realm/practices forest and obtains peace/Gāṇapatya.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-bharata-devotion-final-form",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "mud6-e-bharata-mayuresa-appearance",
+        "mud6-e-bharata-final-hymn",
+        "mud6-e-bharata-devotion-grant",
+        "mud6-e-bharata-final-form-site"
+      ],
+      "locators": [
+        "Mudgala2.22.1–26"
+      ],
+      "finding": "Mayūreśa arrival→ONEyear→mouse/SiddhiBuddhi appearance, FOURarms/Vakratunda hymn. ONLYfirmdevotion request/grant separate hymn fruits; actual final Gaṇeśa-form. Cave north/facing ONEkrośa; sight liberation is audience benefit, not fabricated specific modern location.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-dhruva-family-two-mantras",
+      "status": "SUPPORTED_WITH_RETAINED_GAPS",
+      "compared_evidence_record_ids": [
+        "mud6-e-dhruva-family-visnu-tapas",
+        "mud6-e-uttanapada-six-mantra-end",
+        "mud6-e-dhruva-visnu-message-one-mantra",
+        "mud6-e-dhruva-vinayaka-site-clear",
+        "mud6-e-dhruva-location-duration-raw",
+        "mud6-e-dhruva-actual-end-benefits"
+      ],
+      "locators": [
+        "Mudgala2.23.1–34"
+      ],
+      "finding": "Uttānapāda father, Sunīti/Suruci wives and separate sons; Nārada12syllableViṣṇu mantra/1000yearstapas, Viṣṇu rule grant. FATHER6syllableGaṇeśa mantra+actualsayujya distinct DhruvaONEsyllable/Viṣṇu instructions/pilgrimage/later Svānanda. Printed site/duration ambiguity retained.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-prthu-origin-earth-daughter",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "mud6-e-anga-vena-rule-death",
+        "mud6-e-vena-body-nisada-prthu-pair",
+        "mud6-e-prthu-earth-pursuit-terms",
+        "mud6-e-prthu-leveling-adoption-milking",
+        "mud6-e-cosmic-milking-role-table",
+        "mud6-e-prthu-rule-hundred-sacrifice",
+        "mud6-e-indra-six-thefts-reconciliation"
+      ],
+      "locators": [
+        "Mudgala2.24.1–44"
+      ],
+      "finding": "Aṅga descends Dhruva, wife Mṛtyu daughter unnamed, Vena curse death then LEFTbody Niṣāda, RIGHTbody COUPLE(unnamed wife)Viṣṇukalā. Cow Earth conditional food/measures/milking; putrītva ADOPTED daughter no biological Earth birth from Pṛthu.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-milk-mappings-indra-reconciliation",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "mud6-e-anga-vena-rule-death",
+        "mud6-e-vena-body-nisada-prthu-pair",
+        "mud6-e-prthu-earth-pursuit-terms",
+        "mud6-e-prthu-leveling-adoption-milking",
+        "mud6-e-cosmic-milking-role-table",
+        "mud6-e-prthu-rule-hundred-sacrifice",
+        "mud6-e-indra-six-thefts-reconciliation"
+      ],
+      "locators": [
+        "Mudgala2.24.34–54"
+      ],
+      "finding": "Calf/milker roles are explicit. Veda-form qualifies Brahmā calf; no separately stated Veda milk substance in36. Explicit products and later mappings distinguish Brahmā/Bṛhaspati, Rudra/Kālāgnirudra, Viṣṇu/yajamāna, Sun/Dhruva, Śeṣa/Vāsuki, Śiva/Nandikeśvara. Hundred sacrifice program→Indra SIX thefts→Brahmā restrains→actual99; king’s son unnamed, reconciliation not Indra death.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-prthu-recalled-teachers-ending",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "mud6-e-prthu-four-kumaras-welcome",
+        "mud6-e-prthu-peace-request",
+        "mud6-e-kumaras-recall-siva-meditation",
+        "mud6-e-siva-ganapati-group-doctrine",
+        "mud6-e-siva-mind-reflection-peace",
+        "mud6-e-kumaras-kasyapa-child-meeting",
+        "mud6-e-kumaras-child-hymn",
+        "mud6-e-child-hymn-promises-kumaras-return",
+        "mud6-e-prthu-wife-final-merger"
+      ],
+      "locators": [
+        "Mudgala2.25.1–64"
+      ],
+      "finding": "Four Brahmā sons tell prior Śiva teaching then Kaśyapa/Aditi child hymn and Vināyaka benefits, not a new encounter/grant to Pṛthu. Actual division to unnamed SONS, forest with unnamed WIFE and final Gaṇeśa merger; recalled group not merged with other source two sages.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-barhis-family-teaching-ending",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "compared_evidence_record_ids": [
+        "mud6-e-barhis-family-pracetas-tapas",
+        "mud6-e-narada-sacrifice-warning-request",
+        "mud6-e-narada-five-citta-definitions",
+        "mud6-e-narada-buddhi-siddhi-doctrine",
+        "mud6-e-barhis-own-state-raw",
+        "mud6-e-barhis-body-union-peace",
+        "mud6-e-barhis-arising-raw",
+        "mud6-e-barhis-ministers-forest-final"
+      ],
+      "locators": [
+        "Mudgala2.26.1–45"
+      ],
+      "finding": "Samudra daughter unnamed wife/TENsons Pracetas collective, progeny goal/Nārāyaṇa lake Viṣṇu worship. Nārada’s sacrificed animals wait as warning not enacted killing. Buddhi/Siddhi doctrinal exposition, five cittas; ministers receive kingdom; actual forest yoga/Gaṇeśa merger. No unspoken boon.",
+      "limitation": "Only the named propositions and bounded source readings are reviewed. Listed chapter evidence provides navigation; it does not certify every dependent assertion, boon field or another print witness."
+    },
+    {
+      "id": "root5-review-retained-twins-tapas-boon",
+      "status": "SUPPORTED_WITH_RETAINED_GAPS",
+      "compared_evidence_record_ids": [
+        "gkr-e-austerity",
+        "gkr-e-twins-request",
+        "gkr-e-twins-grant"
+      ],
+      "locators": [
+        "Krīḍā2.1–11;2.23–30"
+      ],
+      "finding": "Retained initiation/tapas and blanket categorical/day-night request/grant checked independently. Stages1000/2000/1000 and stated10000 aggregate both remain direct rival quantities; no arithmetic emendation. Śiva grants all requested benefits and protective hand touch, but no nail/limb-regrowth or twilight counter is enumerated here.",
+      "limitation": "Bounded earlier reread, not an additional fully processed chapter or new narrative arc. Earlier aggregate inconsistency remains open."
+    }
+  ],
+  "limitations": [
+    "No exhaustive second-author certification of all dependent records.",
+    "No alternate print recension collation.",
+    "Significant lexical gaps keep chapter and full-scope story PARTIAL; bounded completed excerpts are separate."
+  ]
+}

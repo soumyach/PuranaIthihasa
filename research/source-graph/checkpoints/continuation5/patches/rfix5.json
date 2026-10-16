@@ -1,0 +1,128 @@
+{
+  "passages": [
+    {
+      "id": "rfix5-p-readonly-upasana81",
+      "source_id": "gp-src-ganesha",
+      "witness_id": "gp-wit-sd-upasana",
+      "book": null,
+      "khanda": "Upāsanā",
+      "chapter": 81,
+      "verses": "1–14;15a incidentally read",
+      "url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā81.1–14;15a incidentally read",
+      "reading_status": "PARTIALLY_READ",
+      "extraction_status": "UNEXAMINED",
+      "limitations": "Root actually read only the bounded fragment. 81.1–14 and15a read-only; formal whole-chapter extraction must resume81.1.15b onward unread."
+    },
+    {
+      "id": "rfix5-p-readonly-mudgala2-27",
+      "source_id": "gp-src-mudgala",
+      "witness_id": "gp-wit-sd-mudgala-2",
+      "book": null,
+      "khanda": "2",
+      "chapter": 27,
+      "verses": "1–11",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "locator": "Mudgala2.27.1–11",
+      "reading_status": "PARTIALLY_READ",
+      "extraction_status": "UNEXAMINED",
+      "limitations": "Root actually read only the bounded fragment. 2.27.1–11 read-only; formal whole-chapter extraction must resume2.27.1.12 onward unread."
+    }
+  ],
+  "chapter_coverage": [
+    {
+      "source_id": "gp-src-ganesha",
+      "witness_id": "gp-wit-sd-upasana",
+      "book": null,
+      "khanda": "Upāsanā",
+      "chapter": 81,
+      "state": "IN_PROGRESS",
+      "read_entire_chapter": false,
+      "narrative_extracted": false,
+      "characters_extracted": false,
+      "relationships_extracted": false,
+      "boons_powers_extracted": false,
+      "checked": false,
+      "passage_ids": [
+        "rfix5-p-readonly-upasana81"
+      ],
+      "evidence_ids": [],
+      "omissions": [
+        "81.1–14 and15a read-only; formal whole-chapter extraction must resume81.1.15b onward unread.",
+        "Narrative events, character relations, boons and powers have not been formally extracted from this read-only span."
+      ],
+      "blocking_reason": null,
+      "independent_review_status": "PENDING",
+      "independent_review_notes": "Root bounded reconnaissance extends the author fragment where recorded; formal extraction remains unperformed."
+    },
+    {
+      "source_id": "gp-src-mudgala",
+      "witness_id": "gp-wit-sd-mudgala-2",
+      "book": null,
+      "khanda": "2",
+      "chapter": 27,
+      "state": "IN_PROGRESS",
+      "read_entire_chapter": false,
+      "narrative_extracted": false,
+      "characters_extracted": false,
+      "relationships_extracted": false,
+      "boons_powers_extracted": false,
+      "checked": false,
+      "passage_ids": [
+        "rfix5-p-readonly-mudgala2-27"
+      ],
+      "evidence_ids": [],
+      "omissions": [
+        "2.27.1–11 read-only; formal whole-chapter extraction must resume2.27.1.12 onward unread.",
+        "Narrative events, character relations, boons and powers have not been formally extracted from this read-only span."
+      ],
+      "blocking_reason": null,
+      "independent_review_notes": "Root bounded reconnaissance extends the author fragment where recorded; formal extraction remains unperformed."
+    },
+    {
+      "source_id": "gp-src-ganesha",
+      "witness_id": "gp-wit-sd-upasana",
+      "book": null,
+      "khanda": "Upāsanā",
+      "chapter": 71,
+      "state": "PARTIAL",
+      "read_entire_chapter": true,
+      "narrative_extracted": true,
+      "characters_extracted": false,
+      "relationships_extracted": false,
+      "boons_powers_extracted": false,
+      "checked": false,
+      "passage_ids": [
+        "gup5-p-71-1-9",
+        "gup5-p-71-10-17",
+        "gup5-p-71-18-25",
+        "gup5-p-71-26-29",
+        "gup5-p-review-71-68"
+      ],
+      "evidence_ids": [
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066",
+        "gup5-e-067",
+        "gup5-e-068"
+      ],
+      "omissions": [
+        "71.19 Kārtavīrya performer naming and exact named royal outcome recipients require collation. Local72 father/child naming and73 actual bodily remedy/reunion are now extracted; they do not settle the earlier71 named-performer/outcome conflict."
+      ],
+      "blocking_reason": "Important semantic clauses or exact actor mapping withheld.",
+      "independent_review_status": "PENDING",
+      "independent_review_notes": "Author whole-body checking; independent/root/edition review remains separate."
+    }
+  ],
+  "changes": [
+    "Registered read-only Upāsanā81.1–14;15a incidentally read; no completeness or extracted-claim inference.",
+    "Registered read-only Mudgala2.27.1–11; no completeness or extracted-claim inference.",
+    "Corrected stale chapter71 claim that72 is unextracted; retained PARTIAL performer/recipient uncertainty and exact earlier evidence."
+  ],
+  "updates": [],
+  "notes": "Root next-chapter fragments actually read during bounded independent review, but not formally extracted. No narrative claims or COMPLETE states created from reconnaissance.",
+  "inspected_urls": [
+    "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+    "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html"
+  ]
+}

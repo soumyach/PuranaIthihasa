@@ -1,0 +1,1111 @@
+{
+  "checkpoint": "continuation3",
+  "completed_arc_id": "mud4-story-madhu-kaitabha",
+  "graph_sha256": "cecbec8daa706000cb98923d6b48e16119667f17c4f6fce4acf05de2b7a7a376",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checking complete; selective independent review in separate bounded reports, not universal certification.",
+  "story": {
+    "id": "mud4-story-madhu-kaitabha",
+    "title": "Madhu/Kaiṭabha defeat Viṣṇu; Gaṇeśa’s remembered counter and their cutting",
+    "source_id": "gp-src-mudgala",
+    "witness_id": "gp-wit-sd-mudgala-2",
+    "scope": "2.4.24–65",
+    "event_ids": [
+      "mud4-event-madhu-kaitabha-battle",
+      "mud4-event-visnu-six-syllable-tapas",
+      "mud4-event-visnu-hymn-benefits",
+      "mud4-event-madhu-kaitabha-boon-counter",
+      "mud4-event-madhu-kaitabha-ending"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Entire bounded cited Sanskrit arc read; significant named actors, relationships, boons/powers, dialogue and transition checks by author. Independent root review separate.",
+    "missing_sections": [],
+    "editorial_notes": "Source narration order. Embedded narratives have their own spines; parent records their framing transitions without duplicating events."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "mud4-event-madhu-kaitabha-battle",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-madhu-kaitabha",
+        "sequence": 1,
+        "passage_ids": [
+          "mud4-p-madhu-kaitabha-battle"
+        ],
+        "participants": [
+          "mud4-en-madhu",
+          "mud4-en-kaitabha",
+          "mud-en-brahma",
+          "mud4-en-nidra",
+          "mud-en-vishnu",
+          "gp-m-en-siva",
+          "mud4-en-fleeing-gods"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "During this interval Madhu and Kaiṭabha arise from Viṣṇu’s ear dirt, conquer three worlds by arm strength and scatter terrified gods. They approach to eat Brahmā; Brahmā hymns Nidrā and she releases sleeping/unmanifest Viṣṇu, who rises. Viṣṇu wrestles them5000 years without defeating them; the powerful pair crushes him. He conceals himself, flees, takes Śaṅkara’s refuge, bows, narrates the battle and asks a victory method.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-madhu-kaitabha-battle"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-madhu-kaitabha-battle",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-madhu-kaitabha-battle",
+          "locator": "Mudgala2.4.24–30",
+          "paraphrase": "During this interval Madhu and Kaiṭabha arise from Viṣṇu’s ear dirt, conquer three worlds by arm strength and scatter terrified gods. They approach to eat Brahmā; Brahmā hymns Nidrā and she releases sleeping/unmanifest Viṣṇu, who rises. Viṣṇu wrestles them5000 years without defeating them; the powerful pair crushes him. He conceals himself, flees, takes Śaṅkara’s refuge, bows, narrates the battle and asks a victory method.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud4-event-visnu-six-syllable-tapas",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-madhu-kaitabha",
+        "sequence": 2,
+        "passage_ids": [
+          "mud4-p-visnu-six-syllable-tapas"
+        ],
+        "participants": [
+          "mud-en-vishnu",
+          "gp-m-en-siva",
+          "mud-en-vakratunda",
+          "mud4-en-six-syllable-mantra",
+          "mud4-en-dandakaranya"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Śiva says Viṣṇu forgot Gaṇeśa and should worship for siddhi. He gives the six-syllable great Gaṇeśa mantra. Viṣṇu goes to Daṇḍakāraṇya, sits in lotus posture, meditates on Gaṇeśa and performs intense tapas by the six-syllable procedure1000 years. Gaṇeśa comes to grant; Viṣṇu joyfully bows, worships and begins hymn. The chapter does not explicitly label these1000 years divine.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-visnu-six-syllable-tapas"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-visnu-six-syllable-tapas",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-visnu-six-syllable-tapas",
+          "locator": "Mudgala2.4.31–36",
+          "paraphrase": "Śiva says Viṣṇu forgot Gaṇeśa and should worship for siddhi. He gives the six-syllable great Gaṇeśa mantra. Viṣṇu goes to Daṇḍakāraṇya, sits in lotus posture, meditates on Gaṇeśa and performs intense tapas by the six-syllable procedure1000 years. Gaṇeśa comes to grant; Viṣṇu joyfully bows, worships and begins hymn. The chapter does not explicitly label these1000 years divine.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud4-event-visnu-hymn-benefits",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-madhu-kaitabha",
+        "sequence": 3,
+        "passage_ids": [
+          "mud4-p-visnu-hymn-benefits"
+        ],
+        "participants": [
+          "mud-en-vishnu",
+          "mud-en-vakratunda",
+          "mud4-en-visnu-ganesa-hymn",
+          "mud4-en-qualified-hymn-users"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Viṣṇu hymns Gaṇeśa as protector, Siddhi/Buddhi lord, remover of devotee obstacles and obstacle-giver to nondevotees, qualified/unqualified cosmic/acosmic Brahman, human-elephant form, cause/beyond cause, Jyeṣṭharāja, yoga giver in yogin hearts, māyā support and deluder of māyā-makers. He says grace gives intellect/praise, sight makes him Brahman-formed/yoga-giver; he dances with tears/raised hair. Gaṇeśa offers wishes pleased by tapas/devotion and promises hymn reciters/hearers all siddhis, four human aims and immediate desired ends through grace.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-visnu-hymn-benefits"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-visnu-hymn-benefits",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-visnu-hymn-benefits",
+          "locator": "Mudgala2.4.37–51",
+          "paraphrase": "Viṣṇu hymns Gaṇeśa as protector, Siddhi/Buddhi lord, remover of devotee obstacles and obstacle-giver to nondevotees, qualified/unqualified cosmic/acosmic Brahman, human-elephant form, cause/beyond cause, Jyeṣṭharāja, yoga giver in yogin hearts, māyā support and deluder of māyā-makers. He says grace gives intellect/praise, sight makes him Brahman-formed/yoga-giver; he dances with tears/raised hair. Gaṇeśa offers wishes pleased by tapas/devotion and promises hymn reciters/hearers all siddhis, four human aims and immediate desired ends through grace.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud4-event-madhu-kaitabha-boon-counter",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-madhu-kaitabha",
+        "sequence": 4,
+        "passage_ids": [
+          "mud4-p-madhu-kaitabha-boon-counter"
+        ],
+        "participants": [
+          "mud-en-vishnu",
+          "mud-en-vakratunda",
+          "mud-en-brahma",
+          "mud4-en-madhu",
+          "mud4-en-kaitabha"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Viṣṇu requests rare unwavering devotion, incomparable knowledge, universal fame and varied strength, destruction-method for Madhu/Kaiṭabha and strength against other demons. Gaṇeśa assents, sends him to battle promising victory by strength. He reveals Brahmā, pleased by the pair’s tapas, kept their death very secret at boon-granting: when they themselves speak death, kill them by that stated mode. He says taking māyā and residing in their and Viṣṇu’s hearts he will bring them under Viṣṇu’s control; when Viṣṇu remembers him he will know the victory-method. The original demons’ request/tapas details and exact death words are not narrated here.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud4-power-visnu-victory-grant"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-madhu-kaitabha-boon-counter"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-madhu-kaitabha-boon-counter",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-madhu-kaitabha-boon-counter",
+          "locator": "Mudgala2.4.52–60",
+          "paraphrase": "Viṣṇu requests rare unwavering devotion, incomparable knowledge, universal fame and varied strength, destruction-method for Madhu/Kaiṭabha and strength against other demons. Gaṇeśa assents, sends him to battle promising victory by strength. He reveals Brahmā, pleased by the pair’s tapas, kept their death very secret at boon-granting: when they themselves speak death, kill them by that stated mode. He says taking māyā and residing in their and Viṣṇu’s hearts he will bring them under Viṣṇu’s control; when Viṣṇu remembers him he will know the victory-method. The original demons’ request/tapas details and exact death words are not narrated here.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud4-event-madhu-kaitabha-ending",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-madhu-kaitabha",
+        "sequence": 5,
+        "passage_ids": [
+          "mud4-p-madhu-kaitabha-ending"
+        ],
+        "participants": [
+          "mud-en-vishnu",
+          "mud-en-vakratunda",
+          "mud4-en-madhu",
+          "mud4-en-kaitabha",
+          "mud4-en-siddhiksetra",
+          "mud4-en-siddhiksetra-image",
+          "mud4-en-siddhiksetra-brahmins",
+          "mud4-en-visnu-wife-four",
+          "mud4-en-qualified-hymn-users"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Gaṇeśa disappears. Viṣṇu establishes a great image with good Brahmins, worships richly; the place becomes Siddhikṣetra, renowned for siddhis through observance and served by siddhas. He resides/worships there devotedly with wife and entourage, then bows and hastens to battle. Meditating on Gaṇeśa he cuts the two powerful demons. No named cutting weapon, thighs/dry-place condition or final death dialogue is supplied in this chapter.",
+        "outcome": "Viṣṇu cuts both demons while meditating on Gaṇeśa; narrator does not give detailed final duel or death speech.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-madhu-kaitabha-ending"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-madhu-kaitabha-ending",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-madhu-kaitabha-ending",
+          "locator": "Mudgala2.4.61–65",
+          "paraphrase": "Gaṇeśa disappears. Viṣṇu establishes a great image with good Brahmins, worships richly; the place becomes Siddhikṣetra, renowned for siddhis through observance and served by siddhas. He resides/worships there devotedly with wife and entourage, then bows and hastens to battle. Meditating on Gaṇeśa he cuts the two powerful demons. No named cutting weapon, thighs/dry-place condition or final death dialogue is supplied in this chapter.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gp-m-en-siva",
+      "name": "Śiva / Śambhu / Sadāśiva / Śaṅkara",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-matsara-austerity",
+        "mud-e-divine-refuge",
+        "mud-e-andhaka-envoy",
+        "mud-e-matsara-karma-argument",
+        "mud-e-kailasa-battle",
+        "mud-e-matsara-captures-siva",
+        "mud-e-world-allocation",
+        "mud-e-datta-counsel",
+        "mud-e-vak-manifest",
+        "mud-e-siva-pasupata",
+        "mud-e-sons-fell-siva",
+        "mud-e-following-witness-previews",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-sati-request",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sati-death-rebirth",
+        "rmd2-e-shiva-grief",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-mahat-birth",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-body-worlds",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-brahma",
+      "name": "Brahmā",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-naimisha",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-assembly",
+        "mud2-e-yaj-arrives",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-vishnu",
+      "name": "Viṣṇu",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-senses-gods",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-vakratunda",
+      "name": "Vakratunda / Gaṇeśa / Gaṇanāyaka / Vighnapa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "rmd2-e-invocation",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-tattva-boon",
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-tapas",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "rmd2-e-five-request-hymn-fruits",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud4-en-madhu",
+      "name": "Madhu",
+      "type": "ASURA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-battle"
+      ]
+    },
+    {
+      "id": "mud4-en-kaitabha",
+      "name": "Kaiṭabha",
+      "type": "ASURA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-battle"
+      ]
+    },
+    {
+      "id": "mud4-en-nidra",
+      "name": "Nidrā hymned to awaken Viṣṇu",
+      "type": "DEVI_FORM",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-battle"
+      ]
+    },
+    {
+      "id": "mud4-en-fleeing-gods",
+      "name": "Gods fleeing Madhu/Kaiṭabha",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-battle"
+      ]
+    },
+    {
+      "id": "mud4-en-six-syllable-mantra",
+      "name": "Six-syllable great Gaṇeśa mantra given by Śiva",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-visnu-six-syllable-tapas"
+      ]
+    },
+    {
+      "id": "mud4-en-dandakaranya",
+      "name": "Daṇḍakāraṇya, Viṣṇu’s tapas place",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-visnu-six-syllable-tapas"
+      ]
+    },
+    {
+      "id": "mud4-en-visnu-ganesa-hymn",
+      "name": "Viṣṇu’s Gaṇeśa hymn in Madhu/Kaiṭabha episode",
+      "type": "TEXT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-visnu-hymn-benefits"
+      ]
+    },
+    {
+      "id": "mud4-en-qualified-hymn-users",
+      "name": "Qualified users of continuation4 hymns/accounts",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-visnu-hymn-benefits"
+      ]
+    },
+    {
+      "id": "mud4-en-siddhiksetra",
+      "name": "Siddhikṣetra established by Viṣṇu after Gaṇeśa grant",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-ending"
+      ]
+    },
+    {
+      "id": "mud4-en-siddhiksetra-image",
+      "name": "Great Gaṇeśa image installed by Viṣṇu",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-ending"
+      ]
+    },
+    {
+      "id": "mud4-en-siddhiksetra-brahmins",
+      "name": "Brahmins assisting Viṣṇu’s Gaṇeśa image installation",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-ending"
+      ]
+    },
+    {
+      "id": "mud4-en-visnu-wife-four",
+      "name": "Viṣṇu’s unnamed wife accompanying Siddhikṣetra worship",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-ending"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "mud4-r-madhu-origin",
+      "subject_id": "mud4-en-madhu",
+      "predicate": "arises_from_ear_dirt_of",
+      "object_id": "mud-en-vishnu",
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-battle"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-madhu-origin",
+      "kinship_kind": "MATERIAL_EMERGENCE"
+    },
+    {
+      "id": "mud4-r-kaitabha-origin",
+      "subject_id": "mud4-en-kaitabha",
+      "predicate": "arises_from_ear_dirt_of",
+      "object_id": "mud-en-vishnu",
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-battle"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-kaitabha-origin",
+      "kinship_kind": "MATERIAL_EMERGENCE"
+    },
+    {
+      "id": "mud4-r-six-mantra-teacher",
+      "subject_id": "mud4-en-six-syllable-mantra",
+      "predicate": "taught_by",
+      "object_id": "gp-m-en-siva",
+      "evidence_ids": [
+        "mud4-e-visnu-six-syllable-tapas"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-six-mantra-teacher"
+    },
+    {
+      "id": "mud4-r-visnu-six-initiation",
+      "subject_id": "mud-en-vishnu",
+      "predicate": "initiated_into",
+      "object_id": "mud4-en-six-syllable-mantra",
+      "evidence_ids": [
+        "mud4-e-visnu-six-syllable-tapas"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-visnu-six-initiation"
+    },
+    {
+      "id": "mud4-r-visnu-dandaka",
+      "subject_id": "mud-en-vishnu",
+      "predicate": "performs_tapas_in",
+      "object_id": "mud4-en-dandakaranya",
+      "evidence_ids": [
+        "mud4-e-visnu-six-syllable-tapas"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-visnu-dandaka"
+    },
+    {
+      "id": "mud4-r-visnu-hymn-author",
+      "subject_id": "mud4-en-visnu-ganesa-hymn",
+      "predicate": "hymned_by",
+      "object_id": "mud-en-vishnu",
+      "evidence_ids": [
+        "mud4-e-visnu-hymn-benefits"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-visnu-hymn-author"
+    },
+    {
+      "id": "mud4-r-visnu-hymn-deity",
+      "subject_id": "mud4-en-visnu-ganesa-hymn",
+      "predicate": "addresses",
+      "object_id": "mud-en-vakratunda",
+      "evidence_ids": [
+        "mud4-e-visnu-hymn-benefits"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-visnu-hymn-deity"
+    },
+    {
+      "id": "mud4-r-siddhi-image-installer",
+      "subject_id": "mud4-en-siddhiksetra-image",
+      "predicate": "installed_by",
+      "object_id": "mud-en-vishnu",
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-ending"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-siddhi-image-installer"
+    },
+    {
+      "id": "mud4-r-siddhi-image-place",
+      "subject_id": "mud4-en-siddhiksetra-image",
+      "predicate": "located_in",
+      "object_id": "mud4-en-siddhiksetra",
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-ending"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-siddhi-image-place"
+    },
+    {
+      "id": "mud4-r-visnu-wife-four",
+      "subject_id": "mud4-en-visnu-wife-four",
+      "predicate": "spouse_of",
+      "object_id": "mud-en-vishnu",
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-ending"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-visnu-wife-four"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "mud4-power-nidra-release",
+      "type": "POWER",
+      "recipient_id": "mud4-en-nidra",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-battle"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-madhu-kaitabha-battle"
+        ],
+        "austerity_or_circumstances": [
+          "mud4-e-madhu-kaitabha-battle"
+        ],
+        "mechanism": [
+          "mud4-e-madhu-kaitabha-battle"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": "Brahmā hymns Nidrā when demons approach to eat him.",
+      "requested": null,
+      "granted": null,
+      "mechanism": "Nidrā releases Viṣṇu; he rises and battles.",
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud4-power-madhu-strength",
+      "type": "POWER",
+      "recipient_id": "mud4-en-madhu",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-battle"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-madhu-kaitabha-battle"
+        ],
+        "mechanism": [
+          "mud4-e-madhu-kaitabha-battle"
+        ],
+        "notes": [
+          "mud4-e-madhu-kaitabha-battle"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "No invulnerability request or grant inferred from strength.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "Together with Kaiṭabha conquers three worlds by arms and crushes Viṣṇu after5000-year wrestling.",
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud4-power-kaitabha-strength",
+      "type": "POWER",
+      "recipient_id": "mud4-en-kaitabha",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-battle"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-madhu-kaitabha-battle"
+        ],
+        "mechanism": [
+          "mud4-e-madhu-kaitabha-battle"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "Together with Madhu conquers three worlds by arms and crushes Viṣṇu after5000-year wrestling.",
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud4-power-visnu-hymn-users",
+      "type": "BOON",
+      "recipient_id": "mud4-en-qualified-hymn-users",
+      "grantor_id": "mud-en-vakratunda",
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-visnu-hymn-benefits"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-visnu-hymn-benefits"
+        ],
+        "grantor_id": [
+          "mud4-e-visnu-hymn-benefits"
+        ],
+        "trigger": [
+          "mud4-e-visnu-hymn-benefits"
+        ],
+        "granted": [
+          "mud4-e-visnu-hymn-benefits"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "All siddhis, dharma/artha/kāma/mokṣa and immediate desired ends by grace.",
+      "mechanism": null,
+      "trigger": "Read/hear Viṣṇu’s hymn.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud4-power-visnu-victory-grant",
+      "type": "BOON",
+      "recipient_id": "mud-en-vishnu",
+      "grantor_id": "mud-en-vakratunda",
+      "worshipped_id": "mud-en-vakratunda",
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-boon-counter",
+        "mud4-e-visnu-six-syllable-tapas"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-madhu-kaitabha-boon-counter",
+          "mud4-e-visnu-six-syllable-tapas"
+        ],
+        "grantor_id": [
+          "mud4-e-madhu-kaitabha-boon-counter",
+          "mud4-e-visnu-six-syllable-tapas"
+        ],
+        "worshipped_id": [
+          "mud4-e-madhu-kaitabha-boon-counter",
+          "mud4-e-visnu-six-syllable-tapas"
+        ],
+        "austerity_or_circumstances": [
+          "mud4-e-madhu-kaitabha-boon-counter",
+          "mud4-e-visnu-six-syllable-tapas"
+        ],
+        "requested": [
+          "mud4-e-madhu-kaitabha-boon-counter",
+          "mud4-e-visnu-six-syllable-tapas"
+        ],
+        "granted": [
+          "mud4-e-madhu-kaitabha-boon-counter",
+          "mud4-e-visnu-six-syllable-tapas"
+        ],
+        "trigger": [
+          "mud4-e-madhu-kaitabha-boon-counter",
+          "mud4-e-visnu-six-syllable-tapas"
+        ],
+        "mechanism": [
+          "mud4-e-madhu-kaitabha-boon-counter",
+          "mud4-e-visnu-six-syllable-tapas"
+        ],
+        "restrictions": [
+          "mud4-e-madhu-kaitabha-boon-counter",
+          "mud4-e-visnu-six-syllable-tapas"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": "Six-syllable1000-year tapas and hymn.",
+      "requested": "Unwavering devotion; incomparable knowledge; fame everywhere; varied strength; Madhu/Kaiṭabha destruction-method and strength to kill other demons.",
+      "granted": "Assent to requests and victory by strength; remembered Gaṇeśa reveals death-method.",
+      "mechanism": "Gaṇeśa uses māyā, resides in pair’s and Viṣṇu’s hearts and makes pair subordinate; kill in mode pair states for their own death.",
+      "trigger": "Remember Gaṇeśa in mind to know victory-method.",
+      "restrictions": "Own-mouth death statement supplies mode; no exact wording given.",
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud4-power-madhu-secret-death",
+      "type": "BOON",
+      "recipient_id": "mud4-en-madhu",
+      "grantor_id": "mud-en-brahma",
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-boon-counter"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-madhu-kaitabha-boon-counter"
+        ],
+        "grantor_id": [
+          "mud4-e-madhu-kaitabha-boon-counter"
+        ],
+        "austerity_or_circumstances": [
+          "mud4-e-madhu-kaitabha-boon-counter"
+        ],
+        "granted": [
+          "mud4-e-madhu-kaitabha-boon-counter"
+        ],
+        "restrictions": [
+          "mud4-e-madhu-kaitabha-boon-counter"
+        ],
+        "counter": [
+          "mud4-e-madhu-kaitabha-boon-counter"
+        ],
+        "notes": [
+          "mud4-e-madhu-kaitabha-boon-counter"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Original requested words unknown; no remembered boon imported.",
+      "motive": null,
+      "austerity_or_circumstances": "Brahmā pleased by tapas; details/duration unreported here.",
+      "requested": null,
+      "granted": "Death very secret at boon-giving, as Gaṇeśa’s retrospective explanation.",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": "Their own mouths must state death; Viṣṇu instructed to kill by that mode.",
+      "duration": null,
+      "counter": "Gaṇeśa’s māyā/control plus Viṣṇu’s remembrance and compliance with stated mode."
+    },
+    {
+      "id": "mud4-power-kaitabha-secret-death",
+      "type": "BOON",
+      "recipient_id": "mud4-en-kaitabha",
+      "grantor_id": "mud-en-brahma",
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-boon-counter"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-madhu-kaitabha-boon-counter"
+        ],
+        "grantor_id": [
+          "mud4-e-madhu-kaitabha-boon-counter"
+        ],
+        "austerity_or_circumstances": [
+          "mud4-e-madhu-kaitabha-boon-counter"
+        ],
+        "granted": [
+          "mud4-e-madhu-kaitabha-boon-counter"
+        ],
+        "restrictions": [
+          "mud4-e-madhu-kaitabha-boon-counter"
+        ],
+        "counter": [
+          "mud4-e-madhu-kaitabha-boon-counter"
+        ],
+        "notes": [
+          "mud4-e-madhu-kaitabha-boon-counter"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Original requested words unknown; no remembered boon imported.",
+      "motive": null,
+      "austerity_or_circumstances": "Brahmā pleased by tapas; details/duration unreported here.",
+      "requested": null,
+      "granted": "Death very secret at boon-giving, as Gaṇeśa’s retrospective explanation.",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": "Their own mouths must state death; Viṣṇu instructed to kill by that mode.",
+      "duration": null,
+      "counter": "Gaṇeśa’s māyā/control plus Viṣṇu’s remembrance and compliance with stated mode."
+    },
+    {
+      "id": "mud4-power-siddhiksetra-observance",
+      "type": "POWER",
+      "recipient_id": "mud4-en-qualified-hymn-users",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-ending"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-madhu-kaitabha-ending"
+        ],
+        "mechanism": [
+          "mud4-e-madhu-kaitabha-ending"
+        ],
+        "trigger": [
+          "mud4-e-madhu-kaitabha-ending"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "Field’s observance produces many siddhis.",
+      "trigger": "Anuṣṭhāna at this Gaṇeśa field.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "mud4-a-madhu-origin",
+      "subject_id": "mud4-en-madhu",
+      "predicate": "arises_from_ear_dirt_of",
+      "object_id": "mud-en-vishnu",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-battle"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-kaitabha-origin",
+      "subject_id": "mud4-en-kaitabha",
+      "predicate": "arises_from_ear_dirt_of",
+      "object_id": "mud-en-vishnu",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-battle"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-madhu-kaitabha-battle-duration",
+      "subject_id": "mud-en-vishnu",
+      "predicate": "wrestling_duration",
+      "object_id": null,
+      "value": "5000 years, not explicitly divine in4.28",
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-battle"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-six-mantra-teacher",
+      "subject_id": "mud4-en-six-syllable-mantra",
+      "predicate": "taught_by",
+      "object_id": "gp-m-en-siva",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-visnu-six-syllable-tapas"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-visnu-six-initiation",
+      "subject_id": "mud-en-vishnu",
+      "predicate": "initiated_into",
+      "object_id": "mud4-en-six-syllable-mantra",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-visnu-six-syllable-tapas"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-visnu-dandaka",
+      "subject_id": "mud-en-vishnu",
+      "predicate": "performs_tapas_in",
+      "object_id": "mud4-en-dandakaranya",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-visnu-six-syllable-tapas"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-visnu-six-tapas-duration",
+      "subject_id": "mud-en-vishnu",
+      "predicate": "tapas_duration",
+      "object_id": null,
+      "value": "1000 years by six-syllable procedure; no explicit divine qualifier",
+      "evidence_ids": [
+        "mud4-e-visnu-six-syllable-tapas"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-visnu-hymn-author",
+      "subject_id": "mud4-en-visnu-ganesa-hymn",
+      "predicate": "hymned_by",
+      "object_id": "mud-en-vishnu",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-visnu-hymn-benefits"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-visnu-hymn-deity",
+      "subject_id": "mud4-en-visnu-ganesa-hymn",
+      "predicate": "addresses",
+      "object_id": "mud-en-vakratunda",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-visnu-hymn-benefits"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-visnu-hymn-capacities",
+      "subject_id": "mud4-en-visnu-ganesa-hymn",
+      "predicate": "attributed_deity_capacities",
+      "object_id": null,
+      "value": "Devotee obstacles removed/nondevotee obstacles given; yoga/Brahman/intellect bestowed; māyā support/delusion; cosmic and transcendent paired descriptions",
+      "evidence_ids": [
+        "mud4-e-visnu-hymn-benefits"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-siddhi-image-installer",
+      "subject_id": "mud4-en-siddhiksetra-image",
+      "predicate": "installed_by",
+      "object_id": "mud-en-vishnu",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-ending"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-siddhi-image-place",
+      "subject_id": "mud4-en-siddhiksetra-image",
+      "predicate": "located_in",
+      "object_id": "mud4-en-siddhiksetra",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-ending"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-visnu-wife-four",
+      "subject_id": "mud4-en-visnu-wife-four",
+      "predicate": "spouse_of",
+      "object_id": "mud-en-vishnu",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-madhu-kaitabha-ending"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ]
+}

@@ -1,0 +1,957 @@
+{
+  "reviewer": "Mudgala continuation6 independent checker",
+  "author_track": "gup6",
+  "frozen_author_patch": "/Users/vellankisriharsha/Documents/Codex/2026-10-11/t/work/continuation5/patches/gup6.json",
+  "frozen_author_sha256": "5fe8a75b42151e7946af43129d465f4e1dacf3568b048d95ae685b267d744e5b",
+  "reading_bounds": [
+    {
+      "locator": "Upāsanā73.1–36 and terminal colophon",
+      "status": "SYSTEMATIC_WHOLE_BODY",
+      "url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html"
+    },
+    {
+      "locator": "Upāsanā76.1–75 and terminal colophon",
+      "status": "SYSTEMATIC_WHOLE_BODY",
+      "url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html"
+    },
+    {
+      "locator": "Upāsanā72.25–47;74.34–43",
+      "status": "BOUNDED_PRIMARY_ONLY",
+      "url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html"
+    }
+  ],
+  "checks": [
+    {
+      "id": "mud6-review-gup6-local-father-child",
+      "record_ids": [
+        "gup6-en-001",
+        "gup6-a-002",
+        "gup6-a-003",
+        "gup6-a-004",
+        "gup6-rel-001",
+        "gup6-e-003",
+        "gup6-e-004",
+        "gup6-e-009",
+        "gup6-e-010"
+      ],
+      "checked_fields": [
+        "local name/father/age",
+        "no older variant harmonization"
+      ],
+      "locator": "72.25–27;73.7,11,13",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Child named Kārtavīrya on eleventh day, age 12 when Dattātreya comes; father explicitly Kṛtavīrya; child again Kṛtavīrya-son/Kārtavīrya in 73.",
+      "source_support": "72.25 naming; 26 twelve years and visit; 27 Kṛtavīrya bows; 73.7/11 son-label, 13 Kārtavīrya roars. This proves local sequence only; does not emend anomalous 68/71 performer names. Existing gup 5 queue 71 remains OPEN."
+    },
+    {
+      "id": "mud6-review-gup6-dattatreya-diagnosis",
+      "record_ids": [
+        "gup6-e-005",
+        "gup6-a-005",
+        "gup6-a-006",
+        "gup6-event-005"
+      ],
+      "checked_fields": [
+        "sage diagnosis",
+        "father remedy request",
+        "prediction vs enacted outcome"
+      ],
+      "locator": "72.31–39",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Dattātreya came to see child, diagnoses omitted ācamana after yawning at vigil; father requests limb-restoring method.",
+      "source_support": "33 visit purpose; 36 child shown; 37 sage meditation/prediction; 38 ritual lapse diagnosis; 39 father accepts/asks method. Diagnosis is attributed sage speech, not unsourced narrator/general ritual law."
+    },
+    {
+      "id": "mud6-review-gup6-guru-child-instruction",
+      "record_ids": [
+        "gup6-e-006",
+        "gup6-en-007",
+        "gup6-a-007",
+        "gup6-a-008",
+        "gup6-rel-002",
+        "gup6-rel-003",
+        "gup6-power-002",
+        "gup6-event-006"
+      ],
+      "checked_fields": [
+        "recipient/grantor",
+        "one-syllable auxiliaries",
+        "rules",
+        "predicted glance",
+        "duration null"
+      ],
+      "locator": "72.40–43",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Dattātreya teaches CHILD mantra, worship/fasting/one-meal rules; after 12 years predicts Gaṇeśa appearance/glance giving divine body.",
+      "source_support": "40 explicitly tasya sutāya; 41 one-syllable saṅga mantra; 42 rules/12-year appearance; 43 mere glance/divinebody prediction and sage disappears. Twelve years is prescribed practice/prediction time, not boon expiry. Exact bīja not supplied."
+    },
+    {
+      "id": "mud6-review-gup6-forest-transfer",
+      "record_ids": [
+        "gup6-e-007",
+        "gup6-a-009",
+        "gup6-rel-004",
+        "gup6-event-007"
+      ],
+      "checked_fields": [
+        "father/child roles",
+        "human conveyance",
+        "leaf hut"
+      ],
+      "locator": "72.44–47",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Footless son asks Kṛtavīrya for forest to practice; parents weep, father sends by human vehicle, servants leave him in leaf hut.",
+      "source_support": "44 explicit Kṛtavīrya addressed; 45 purpose and parents; 46 conveyance/hut/servants return; 47 resolves tapas. No sudden self-walking before transformation."
+    },
+    {
+      "id": "mud6-review-gup6-actual-tapas",
+      "record_ids": [
+        "gup6-e-008",
+        "gup6-event-008"
+      ],
+      "checked_fields": [
+        "actual12year discipline",
+        "appearance",
+        "boon invitation"
+      ],
+      "locator": "73.1–6",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Actual guru-mantra japa/Gaṇeśa meditation, air-fed/no-food tapas for 12 years precedes coral-form pond appearance/boon invitation.",
+      "source_support": "1 meditation/japa; 2 foodless/air-fed/12 years; 4 pond coral-form appearance; 5–6 deity repeats 12-year deserted forest and invites request.3 nirvāṇam not resolved by this check."
+    },
+    {
+      "id": "mud6-review-gup6-known-austerity-profile",
+      "record_ids": [
+        "gup6-power-003"
+      ],
+      "checked_fields": [
+        "austerity_or_circumstances null",
+        "record/field evidence",
+        "duration null"
+      ],
+      "locator": "73.1–6 before73.7–12",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "CORRECTION_NEEDED",
+      "checked_claim": "Personal boon profile leaves known austerity/circumstances null even though preceding cited narrative preserves it.",
+      "source_support": "Add:12-year guru-mantra japa/Gaṇeśa meditation, foodless/air-fed forest tapas before boon invitation. Add gup6-e-008 to record evidence and austerity field proof. Keep duration null:quantity is austerity time, not expiry of grant. This is a bounded data completeness correction; the actual narrative already records the facts.",
+      "proposed_field_update": {
+        "austerity_or_circumstances": "Twelve-year guru-mantra japa and Gaṇeśa meditation,foodless/air-fed forest tapas preceding boon invitation.",
+        "duration": null
+      },
+      "proposed_add_evidence_ids": [
+        "gup6-e-008"
+      ],
+      "ancillary_metadata_corrections": [
+        {
+          "field": "notes",
+          "before": "Subsequent physical response will be separately evidenced.",
+          "after": "Actual physical response at73.10–12 is supported by gup6-e-010. No explicit spoken assent to devotion is supplied.",
+          "evidence_ids": [
+            "gup6-e-010"
+          ]
+        },
+        {
+          "field": "field_evidence.later_event_ids",
+          "after": [
+            "gup6-e-010"
+          ],
+          "reason": "Explicit evidence for the populated actual transformation event reference."
+        }
+      ]
+    },
+    {
+      "id": "mud6-review-gup6-nirvana-and-ravana",
+      "record_ids": [
+        "gup6-e-016",
+        "gup6-power-010",
+        "gup6-var-73-lexical-benefits",
+        "chapter_coverage:73",
+        "gup6-story-kartavirya-recovery",
+        "gup6-story-surasena-merit-frame"
+      ],
+      "checked_fields": [
+        "exact nirvāṇam condition",
+        "akhilājñatā result",
+        "PARTIAL status"
+      ],
+      "locator": "73.3,31",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "UNDETERMINED",
+      "checked_claim": "Precise nirvāṇam condition and terse Rāvaṇa akhilājñatā benefit.",
+      "source_support": "Printed words confirmed; living child resumes bodily awareness and later physical grant/reunion, so no forced death narrative. Exact Rāvaṇa English benefit withheld. Current PARTIAL/open statuses appropriate; no canonical omniscience assumption."
+    },
+    {
+      "id": "mud6-review-gup6-child-request",
+      "record_ids": [
+        "gup6-e-009",
+        "gup6-power-003",
+        "gup6-event-009"
+      ],
+      "checked_fields": [
+        "motive",
+        "requested",
+        "no devotion assent invented"
+      ],
+      "locator": "73.7–9",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Child requests continual unwavering devotion, and additionally body-beauty to please parents.",
+      "source_support": "7 explicitly Kṛtavīrya-son before witnesses; 8 devotion/no eagerness forotherrequests; 9 nevertheless beauty forparents. Not a request for 1000 arms, earth sovereignty or Śeṣa head count; no separate spoken devotion assent in 10–12."
+    },
+    {
+      "id": "mud6-review-gup6-actual-anima-entry",
+      "record_ids": [
+        "gup6-e-010",
+        "gup6-a-011",
+        "gup6-power-003",
+        "gup6-event-010"
+      ],
+      "checked_fields": [
+        "granted physical result",
+        "mechanism",
+        "prediction distinct"
+      ],
+      "locator": "73.10–15",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Gaṇeśa uses aṇimā and enters belly; child becomes divine-bodied with 1000 arms/two straight legs.",
+      "source_support": "10 aṇimā entry; 11 actual divine body/1000 arms; 12 straight legs; 13 Kārtavīrya roar; 14–15 fear. This is the narrated actual mechanism, not proof that the previously predicted mere glance was enacted."
+    },
+    {
+      "id": "mud6-review-gup6-five-hundred-arrows",
+      "record_ids": [
+        "gup6-power-004",
+        "gup6-e-010"
+      ],
+      "checked_fields": [
+        "anticipated capacity,not actual volley"
+      ],
+      "locator": "73.15",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Kings anticipate 500 arrow combat capacity.",
+      "source_support": "15 future/anticipated release statement; no actual 500 arrow volley is narrated here. Later 77–79 combat fields not independently checked in this review."
+    },
+    {
+      "id": "mud6-review-gup6-deity-group-grant",
+      "record_ids": [
+        "gup6-e-011",
+        "gup6-en-016",
+        "gup6-power-005",
+        "gup6-a-012",
+        "gup6-a-013",
+        "gup6-rel-006",
+        "gup6-event-011"
+      ],
+      "checked_fields": [
+        "grantor_id",
+        "granted",
+        "duration only;counter/later79events unreviewed"
+      ],
+      "locator": "73.16–19",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Brahmā-led deity group grants separate lost-object/heart-affliction/fame/protection/victory/sovereignty benefits and Viṣṇu-form/Sahasrārjuna designation.",
+      "source_support": "16 Brahmā-led group descends and speaks, remembrance benefits specifically devas; 17 heart ā maya and identity/name; 18 kalpa qualifies three-world fame; 19 victory/earth rule andexplicit manyboons/groupdisappearance. Not personal request tothisgroup or Gaṇeśa’s earlier body response. No modern cardiac diagnosis. Counter field from 79 is outside this review."
+    },
+    {
+      "id": "mud6-review-gup6-installation-reunion",
+      "record_ids": [
+        "gup6-e-012",
+        "gup6-e-014",
+        "gup6-a-014",
+        "gup6-rel-007",
+        "gup6-event-012",
+        "gup6-event-014"
+      ],
+      "checked_fields": [
+        "king gifts",
+        "coral installation",
+        "actual parental reunion"
+      ],
+      "locator": "73.20–22,27–28",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Kings bring gifts; child installs coral Gaṇeśa/Brahmins name Pravālagaṇapa; villages support worship; returns to parents and gifts/rejoicing follow.",
+      "source_support": "20 gifts; 21 installation; 22 name/village support; 27 leave-taking/parents goal; 28 actual reunion. No unreported modern site coordinates or lifelong chronology added."
+    },
+    {
+      "id": "mud6-review-gup6-sesa-separate-grant",
+      "record_ids": [
+        "gup6-e-013",
+        "gup6-power-006",
+        "gup6-a-015",
+        "gup6-a-016",
+        "gup6-rel-008",
+        "gup6-rel-009",
+        "gup6-story-sesa-pravala",
+        "gup6-event-013"
+      ],
+      "checked_fields": [
+        "recipient/grantor",
+        "motive",
+        "requested null",
+        "granted",
+        "earlier installation"
+      ],
+      "locator": "73.23–26",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Śeṣa’s earlier Earth-bearing observance/grants/installation distinct from child’s 1000 arms.",
+      "source_support": "23 motive supportEarth; 24 Gaṇeśa grants supportstrength/omniscience; 25 thousand-head quantity andsupremacy among 9 Nāga clans; earlier installeddeity; 26 secondnameDharaṇīdhara. No verbatim personal request or fixedpractice duration provided. Keeps incarnation/installation contexts separate."
+    },
+    {
+      "id": "mud6-review-gup6-dharanidhara-benefit",
+      "record_ids": [
+        "gup6-power-007"
+      ],
+      "checked_fields": [
+        "trigger",
+        "mechanism"
+      ],
+      "locator": "73.26",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Dharaṇīdhara name/account rememberers/hearers receive all desired fruits.",
+      "source_support": "Explicit smaratāṃ/śṛṇvatāṃ benefit; no required visit, modern ritual schedule, or extra grantdialogue."
+    },
+    {
+      "id": "mud6-review-gup6-indras-merit-proposal",
+      "record_ids": [
+        "gup6-e-015",
+        "gup6-event-015",
+        "gup6-power-008"
+      ],
+      "checked_fields": [
+        "conditional merit request",
+        "no fulfilled transfer"
+      ],
+      "locator": "73.29–36",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Indra describes vow glory/remembrance result and conditionally requests merit for stalled craft; Śūrasena hears/praises/begins vow.",
+      "source_support": "30 remembrance accomplishment; 32 ifmeritgiven thenflight; 33–36 hearing/praise/practice. No actual gift or completedflight in 73.31 rawRāvaṇa result remains independentlyunresolved."
+    },
+    {
+      "id": "mud6-review-gup6-no-transfer74",
+      "record_ids": [
+        "gup6-a-020",
+        "gup6-e-021",
+        "gup6-event-020"
+      ],
+      "checked_fields": [
+        "proposal refusal,not actual merittransfer"
+      ],
+      "locator": "74.34–37",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Royal emissaries propose woman’s meritgift/doubledmerit; Gaṇeśa servants refuse for lack of order.",
+      "source_support": "34–36 proposal; 37 explicit refusal. No voluntary accepted transfer occurred. Earlier parts ofe 021(27–33)are not independently approved by this boundedcheck."
+    },
+    {
+      "id": "mud6-review-gup6-actual-flight74",
+      "record_ids": [
+        "gup6-e-039",
+        "gup6-event-037",
+        "gup6-power-013"
+      ],
+      "checked_fields": [
+        "gaze/vehicleair mechanism",
+        "actual Amarāvatī return"
+      ],
+      "locator": "74.40–43",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Woman’s passing radiant vehicle, gaze/contactair raise Indra’s craft and he actually goes Amarāvatī.",
+      "source_support": "40 passingvehicle; 41 gaze; 42 vehicleaircontactraises; 43 Indraactualdestination/womanVaināyaka abode. Actualflight distinct from refused merittransaction. This reviewdoesnot certifywhole 74 rescuebiography."
+    },
+    {
+      "id": "mud6-review-gup6-budha-family",
+      "record_ids": [
+        "gup6-en-052",
+        "gup6-en-053",
+        "gup6-en-054",
+        "gup6-en-055",
+        "gup6-e-027",
+        "gup6-e-028",
+        "gup6-a-026",
+        "gup6-a-027",
+        "gup6-a-028",
+        "gup6-a-029",
+        "gup6-rel-016",
+        "gup6-rel-017",
+        "gup6-rel-018",
+        "gup6-rel-019",
+        "gup6-event-026",
+        "gup6-event-027"
+      ],
+      "checked_fields": [
+        "fatherDūrva",
+        "motherŚākinī",
+        "wifeSāvitrī",
+        "localidentity"
+      ],
+      "locator": "76.1–18;32",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Budha is Dūrva and Śākinī’s son; Sāvitrī is his wife, distinct from his mother.",
+      "source_support": "76.1 introduces the father, son and Śākinī; 2 names the son’s wife Sāvitrī; 14 names searching father Dūrva; 16–18 Bhīma identifies Budha and Dūrva calls him his son.32 explicitly introduces Sāvitrī’s wife-to-husband speech. No planetary Budha, cosmic Sāvitrī or Pāṇḍava Bhīma identity is inferred."
+    },
+    {
+      "id": "mud6-review-gup6-family-killings",
+      "record_ids": [
+        "gup6-e-029",
+        "gup6-a-030",
+        "gup6-a-031",
+        "gup6-rel-020",
+        "gup6-rel-021",
+        "gup6-event-028"
+      ],
+      "checked_fields": [
+        "fatherkill/motherattack/cremation",
+        "ritualspeakerexcluded"
+      ],
+      "locator": "76.19–31",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Budha kills his father, attacks his mother and discards her; both parents are cremated.",
+      "source_support": "19 father rebukes; 21–23 son strikes and kills him; 25–30 mother embraces, counsels and is attacked; 31 both parents are cremated and the king’s nonpunishment is explained. This check excludes 24 invocation-speaker allocation."
+    },
+    {
+      "id": "mud6-review-gup6-invocation-speaker",
+      "record_ids": [
+        "gup6-e-035",
+        "gup6-var-76-death-utterance-speaker",
+        "gup6-story-budha-pastlife",
+        "chapter_coverage:76"
+      ],
+      "checked_fields": [
+        "hareśvareti so’vadat speaker",
+        "PARTIALscope"
+      ],
+      "locator": "76.24",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "UNDETERMINED",
+      "checked_claim": "The speaker of the Hareśvara utterance at the father’s death remains unresolved.",
+      "source_support": "Printed pitrā prāṇeṣu tyakteṣu ... so’vadat, followed by the rejoicing son, leaves the pronoun allocation unsafe. No chant is assigned to a dead father or Budha. Current chapter and past-life spine PARTIAL statuses are appropriate."
+    },
+    {
+      "id": "mud6-review-gup6-wife-conversation-death",
+      "record_ids": [
+        "gup6-e-030",
+        "gup6-e-031",
+        "gup6-a-032",
+        "gup6-rel-022",
+        "gup6-power-016",
+        "gup6-event-029",
+        "gup6-event-030"
+      ],
+      "checked_fields": [
+        "Sāvitrīcounsel",
+        "killer",
+        "prior-merit remembrance",
+        "actualheaven"
+      ],
+      "locator": "76.32–49",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Sāvitrī counsels lawful conduct; Budha kills her. She remembers Rāma in husband-form and actually gains a divine body in heaven.",
+      "source_support": "32–42 wife’s detailed counsel; 43–46 threat and beating; 47 remembrance through prior merit and death; 48 actual heavenly divine body; 49 Budha explains his crimes to the prostitute. POWER 016 correctly avoids a new personal boon or an asserted sole causal trigger."
+    },
+    {
+      "id": "mud6-review-gup6-sulabha-kalabha",
+      "record_ids": [
+        "gup6-en-064",
+        "gup6-en-065",
+        "gup6-e-032",
+        "gup6-a-033",
+        "gup6-a-034",
+        "gup6-rel-023",
+        "gup6-rel-024",
+        "gup6-power-017"
+      ],
+      "checked_fields": [
+        "spouse",
+        "assaultcurse",
+        "granted/trigger",
+        "futurebirthscope;finiteexpiryunasserted"
+      ],
+      "locator": "76.50–59",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Sulabhā is sage Kalabha’s wife. She curses Budha after assault during her husband’s absence; his later Vaiśya birth is leprous.",
+      "source_support": "50 Kalabha’s house and bathing absence; 52–53 Sulabhā names herself and her husband; 54 assault and future-birth curse/name avoidance; 57–58 death and hell until dissolution; 59 actual Vaiśya birth through her curse. Next-birth scope is explicit; no fixed year-count or lifetime expiry is asserted. Name-hearing counter is checked separately."
+    },
+    {
+      "id": "mud6-review-gup6-rebirth-identity",
+      "record_ids": [
+        "gup6-a-035",
+        "gup6-rel-025",
+        "gup6-e-032",
+        "gup6-event-031"
+      ],
+      "checked_fields": [
+        "source_rebirth_of",
+        "helltimevscurse"
+      ],
+      "locator": "76.57–62",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "The leprous Vaiśya man is Budha’s later birth; hell-stay timing remains distinct from curse application.",
+      "source_support": "57 death and Yama’s order; 58 hell until bhūtasamplava; 59 Vaiśya-home rebirth and the wife’s curse; 60–62 discourse on wrongdoing and proposed vehicle exclusion. Later actual exclusion is not narrated."
+    },
+    {
+      "id": "mud6-review-gup6-prescribed-name-remedy",
+      "record_ids": [
+        "gup6-e-033",
+        "gup6-event-032",
+        "gup6-en-067",
+        "gup6-power-018"
+      ],
+      "checked_fields": [
+        "kingmercy",
+        "four-syllablename",
+        "earjapa",
+        "restriction"
+      ],
+      "locator": "76.63–68",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Śūrasena asks for a remedy; messengers prescribe the four-syllable name into the Vaiśya’s ear and rule out other remedies for him.",
+      "source_support": "63–65 king asks removal of faults, rather than exclusion; 66–67 four-syllable ear-japa instruction; 68 name alone because other remedies are unauthorized. The restriction is the source’s formulation."
+    },
+    {
+      "id": "mud6-review-gup6-actual-name-hearing",
+      "record_ids": [
+        "gup6-e-034",
+        "gup6-power-018",
+        "gup6-event-033"
+      ],
+      "checked_fields": [
+        "mechanism",
+        "trigger",
+        "counts4/3",
+        "jayapūrvamraw"
+      ],
+      "locator": "76.69–71",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "The king utters the four-syllable name THREE times into the ear; merely hearing Gajānana gives divine body, removes all sin and permits boarding.",
+      "source_support": "69 king, three utterances, four syllables and jayapūrvam wording; 70 Gajānana hearing and divine body; 71 all-sin removal by name hearing alone and boarding. Neither Budha’s own japa, touch-only remedy nor an invented five-syllable mantra is asserted."
+    },
+    {
+      "id": "mud6-review-gup6-actual-collective-transport",
+      "record_ids": [
+        "gup6-e-034",
+        "gup6-power-019",
+        "gup6-event-033"
+      ],
+      "checked_fields": [
+        "grantorcommand",
+        "actualdestination",
+        "allbeings"
+      ],
+      "locator": "76.72",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Messengers actually take the vehicle with all beings to Vaināyaka’s abode by Vighnarāja’s command.",
+      "source_support": "76.72 explicitly gives the vehicle, all beings, immediate transport and Vighnarāja’s order. Earlier proposed exclusion and failed lift are not the ending. Whole 75 lies outside this independent review."
+    },
+    {
+      "id": "mud6-review-gup6-closing-auditory-phala",
+      "record_ids": [
+        "gup6-power-020",
+        "gup6-e-034"
+      ],
+      "checked_fields": [
+        "mechanism",
+        "trigger"
+      ],
+      "locator": "76.73–75",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "The closing account praises righteous, fame- and life-giving Sankaṣṭa benefits, hearing accomplishments, relief from suffering/obstacles and dūrvā/name power.",
+      "source_support": "73 closes answers; 74 hearing gives accomplishments; 75 suffering/obstacle relief and dūrvā/name glory. No new personal boon invitation or additional benefit trigger is inferred."
+    },
+    {
+      "id": "mud6-review-gup6-whole-local-review",
+      "record_ids": [
+        "gup6-p-73-1-6",
+        "gup6-p-review-73-16",
+        "gup6-p-review-76-35",
+        "chapter_coverage:73",
+        "chapter_coverage:76"
+      ],
+      "checked_fields": [
+        "wholeprimaryreading",
+        "significanttransitions",
+        "remainingsemanticgaps"
+      ],
+      "locator": "whole73.1–36/colophon;whole76.1–75/colophon",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "SUPPORTED",
+      "checked_claim": "Both whole bodies were read; major requests/grants, family, killings, curse, remedy and transport are preserved. Known semantic gaps remain PARTIAL.",
+      "source_support": "73 progresses from tapas through distinct deity-group and Śeṣa grants to reunion and merit frame.76 progresses from family downfall through curse, hell, rebirth, mercy, name hearing and transport. The personal-boon austerity-profile addition is documented separately. This is not complete-corpus certification."
+    },
+    {
+      "id": "mud6-review-gup6-wider-scope-completeness",
+      "record_ids": [
+        "gup6-story-kartavirya-recovery",
+        "gup6-story-surasena-city-rescue"
+      ],
+      "checked_fields": [
+        "independentexhaustivefullstoryscope"
+      ],
+      "locator": "72–73;75–76",
+      "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "verdict": "UNDETERMINED",
+      "checked_claim": "Independent exhaustive completeness of the broader 72 birth/recovery and 75 collective-vow scopes remains undetermined.",
+      "source_support": "Reviewed whole 73/76 and only bounded 72.25–47/74.34–43. Whole 72.1–24 and 75 were not systematically independently read; other Upāsanā chapters remain unreviewed. No all-Upāsanā certification."
+    }
+  ],
+  "summary": {
+    "SUPPORTED": 25,
+    "CORRECTION_NEEDED": 1,
+    "UNDETERMINED": 3
+  },
+  "distinct_checked_ids": 123,
+  "unreviewed_counts": {
+    "passages": 52,
+    "evidence": 30,
+    "entities": 95,
+    "assertions": 30,
+    "relationships": 23,
+    "boons_and_powers": 17,
+    "narrative_events": 31,
+    "story_spines": 2,
+    "variants_and_conflicts": 1
+  },
+  "unreviewed_record_ids": {
+    "passages": [
+      "gup6-p-72-1-10",
+      "gup6-p-72-11-20",
+      "gup6-p-72-21-26",
+      "gup6-p-72-27-30",
+      "gup6-p-72-31-39",
+      "gup6-p-72-40-43",
+      "gup6-p-72-44-47",
+      "gup6-p-73-7-9",
+      "gup6-p-73-10-15",
+      "gup6-p-73-16-19",
+      "gup6-p-73-20-22",
+      "gup6-p-73-23-26",
+      "gup6-p-73-27-28",
+      "gup6-p-73-29-36",
+      "gup6-p-74-1-8",
+      "gup6-p-74-9-14",
+      "gup6-p-74-15-23",
+      "gup6-p-74-24-26",
+      "gup6-p-74-27-37",
+      "gup6-p-74-38-45",
+      "gup6-p-75-1-8",
+      "gup6-p-75-9-21",
+      "gup6-p-75-22-33",
+      "gup6-p-75-34-45",
+      "gup6-p-76-1-8",
+      "gup6-p-76-9-18",
+      "gup6-p-76-19-31",
+      "gup6-p-76-32-42",
+      "gup6-p-76-43-49",
+      "gup6-p-76-50-62",
+      "gup6-p-76-63-68",
+      "gup6-p-76-69-75",
+      "gup6-p-77-1-2",
+      "gup6-p-77-3-12",
+      "gup6-p-77-13-23",
+      "gup6-p-74-40-43",
+      "gup6-p-77-24-33",
+      "gup6-p-77-34-48",
+      "gup6-p-77-49-62",
+      "gup6-p-78-1-8",
+      "gup6-p-78-9-21",
+      "gup6-p-78-22-32",
+      "gup6-p-78-33-38",
+      "gup6-p-79-1-8",
+      "gup6-p-79-9-18",
+      "gup6-p-79-19-28",
+      "gup6-p-79-29-34",
+      "gup6-p-79-35-43",
+      "gup6-p-80-1-14",
+      "gup6-p-80-15-22",
+      "gup6-p-80-23-27",
+      "gup6-p-review-80-55"
+    ],
+    "evidence": [
+      "gup6-e-001",
+      "gup6-e-002",
+      "gup6-e-017",
+      "gup6-e-018",
+      "gup6-e-019",
+      "gup6-e-020",
+      "gup6-e-022",
+      "gup6-e-023",
+      "gup6-e-024",
+      "gup6-e-025",
+      "gup6-e-026",
+      "gup6-e-036",
+      "gup6-e-037",
+      "gup6-e-038",
+      "gup6-e-040",
+      "gup6-e-041",
+      "gup6-e-042",
+      "gup6-e-043",
+      "gup6-e-044",
+      "gup6-e-045",
+      "gup6-e-046",
+      "gup6-e-047",
+      "gup6-e-048",
+      "gup6-e-049",
+      "gup6-e-050",
+      "gup6-e-051",
+      "gup6-e-052",
+      "gup6-e-053",
+      "gup6-e-054",
+      "gup6-e-055"
+    ],
+    "entities": [
+      "gup6-en-002",
+      "gup6-en-003",
+      "gup6-en-004",
+      "gup6-en-005",
+      "gup6-en-006",
+      "gup6-en-008",
+      "gup6-en-009",
+      "gup6-en-010",
+      "gup6-en-011",
+      "gup6-en-012",
+      "gup6-en-013",
+      "gup6-en-014",
+      "gup6-en-015",
+      "gup6-en-017",
+      "gup6-en-018",
+      "gup6-en-019",
+      "gup6-en-020",
+      "gup6-en-021",
+      "gup6-en-022",
+      "gup6-en-023",
+      "gup6-en-024",
+      "gup6-en-025",
+      "gup6-en-026",
+      "gup6-en-027",
+      "gup6-en-028",
+      "gup6-en-029",
+      "gup6-en-030",
+      "gup6-en-031",
+      "gup6-en-032",
+      "gup6-en-033",
+      "gup6-en-034",
+      "gup6-en-035",
+      "gup6-en-036",
+      "gup6-en-037",
+      "gup6-en-038",
+      "gup6-en-039",
+      "gup6-en-040",
+      "gup6-en-041",
+      "gup6-en-042",
+      "gup6-en-043",
+      "gup6-en-044",
+      "gup6-en-045",
+      "gup6-en-046",
+      "gup6-en-047",
+      "gup6-en-048",
+      "gup6-en-049",
+      "gup6-en-050",
+      "gup6-en-051",
+      "gup6-en-056",
+      "gup6-en-057",
+      "gup6-en-058",
+      "gup6-en-059",
+      "gup6-en-060",
+      "gup6-en-061",
+      "gup6-en-062",
+      "gup6-en-063",
+      "gup6-en-066",
+      "gup6-en-068",
+      "gup6-en-069",
+      "gup6-en-070",
+      "gup6-en-071",
+      "gup6-en-072",
+      "gup6-en-073",
+      "gup6-en-074",
+      "gup6-en-075",
+      "gup6-en-076",
+      "gup6-en-077",
+      "gup6-en-078",
+      "gup6-en-079",
+      "gup6-en-080",
+      "gup6-en-081",
+      "gup6-en-082",
+      "gup6-en-083",
+      "gup6-en-084",
+      "gup6-en-085",
+      "gup6-en-086",
+      "gup6-en-087",
+      "gup6-en-088",
+      "gup6-en-089",
+      "gup6-en-090",
+      "gup6-en-091",
+      "gup6-en-092",
+      "gup6-en-093",
+      "gup6-en-094",
+      "gup6-en-095",
+      "gup6-en-096",
+      "gup6-en-097",
+      "gup6-en-098",
+      "gup6-en-099",
+      "gup6-en-100",
+      "gup6-en-101",
+      "gup6-en-102",
+      "gup6-en-103",
+      "gup6-en-104",
+      "gup6-en-105"
+    ],
+    "assertions": [
+      "gup6-a-001",
+      "gup6-a-010",
+      "gup6-a-017",
+      "gup6-a-018",
+      "gup6-a-019",
+      "gup6-a-021",
+      "gup6-a-022",
+      "gup6-a-023",
+      "gup6-a-024",
+      "gup6-a-025",
+      "gup6-a-036",
+      "gup6-a-037",
+      "gup6-a-038",
+      "gup6-a-039",
+      "gup6-a-040",
+      "gup6-a-041",
+      "gup6-a-042",
+      "gup6-a-043",
+      "gup6-a-044",
+      "gup6-a-045",
+      "gup6-a-046",
+      "gup6-a-047",
+      "gup6-a-048",
+      "gup6-a-049",
+      "gup6-a-050",
+      "gup6-a-051",
+      "gup6-a-052",
+      "gup6-a-053",
+      "gup6-a-054",
+      "gup6-a-055"
+    ],
+    "relationships": [
+      "gup6-rel-005",
+      "gup6-rel-010",
+      "gup6-rel-011",
+      "gup6-rel-012",
+      "gup6-rel-013",
+      "gup6-rel-014",
+      "gup6-rel-015",
+      "gup6-rel-026",
+      "gup6-rel-027",
+      "gup6-rel-028",
+      "gup6-rel-029",
+      "gup6-rel-030",
+      "gup6-rel-031",
+      "gup6-rel-032",
+      "gup6-rel-033",
+      "gup6-rel-034",
+      "gup6-rel-035",
+      "gup6-rel-036",
+      "gup6-rel-037",
+      "gup6-rel-038",
+      "gup6-rel-039",
+      "gup6-rel-040",
+      "gup6-rel-041"
+    ],
+    "boons_and_powers": [
+      "gup6-power-001",
+      "gup6-power-009",
+      "gup6-power-011",
+      "gup6-power-012",
+      "gup6-power-014",
+      "gup6-power-015",
+      "gup6-power-021",
+      "gup6-power-022",
+      "gup6-power-023",
+      "gup6-power-024",
+      "gup6-power-025",
+      "gup6-power-026",
+      "gup6-power-027",
+      "gup6-power-028",
+      "gup6-power-029",
+      "gup6-power-030",
+      "gup6-power-031"
+    ],
+    "narrative_events": [
+      "gup6-event-001",
+      "gup6-event-002",
+      "gup6-event-003",
+      "gup6-event-004",
+      "gup6-event-016",
+      "gup6-event-017",
+      "gup6-event-018",
+      "gup6-event-019",
+      "gup6-event-021",
+      "gup6-event-022",
+      "gup6-event-023",
+      "gup6-event-024",
+      "gup6-event-025",
+      "gup6-event-034",
+      "gup6-event-035",
+      "gup6-event-036",
+      "gup6-event-038",
+      "gup6-event-039",
+      "gup6-event-040",
+      "gup6-event-041",
+      "gup6-event-042",
+      "gup6-event-043",
+      "gup6-event-044",
+      "gup6-event-045",
+      "gup6-event-046",
+      "gup6-event-047",
+      "gup6-event-048",
+      "gup6-event-049",
+      "gup6-event-050",
+      "gup6-event-051",
+      "gup6-event-052"
+    ],
+    "story_spines": [
+      "gup6-story-sundari-rescue",
+      "gup6-story-jamadagnya-origin-war"
+    ],
+    "variants_and_conflicts": [
+      "gup6-var-79-80-visit-chronologies"
+    ]
+  },
+  "limitations": "Direct digital Sanskrit witness only;no printed edition collation. Precise listed fields/spans checked,not all fields of referenced records. Known73.3/31 and76.24 unresolved. Personal boon003 known austerity profile needs narrow source-backed addition. Broader story/full-Upāsanā completeness UNDETERMINED.",
+  "author_patch_or_outputs_mutated": false,
+  "root_resolution_plan": "Central correction applied and independently checked in the integrated graph; original CORRECTION_NEEDED verdict above is preserved as the frozen-author audit.",
+  "correction_resolution": {
+    "finding_id": "mud6-review-gup6-known-austerity-profile",
+    "status": "RESOLVED",
+    "record_id": "gup6-power-003",
+    "root_change_id_reported": "continuation5-change-0164",
+    "integrated_graph_path": "outputs/research/graph.json",
+    "integrated_graph_sha256": "04e4bba2619787d2d710857c5c474080950c4f41579a16632d828fbc71b83c7b",
+    "checked_fields": [
+      "austerity_or_circumstances",
+      "duration",
+      "evidence_ids",
+      "field_evidence.austerity_or_circumstances",
+      "field_evidence.later_event_ids",
+      "notes"
+    ],
+    "source_locator": "Upāsanā 73.1–6 and 73.10–12",
+    "supporting_url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+    "verification": "Compared integrated record against prior direct whole-chapter reading. Twelve years remain austerity time, duration stays null, e008 supports circumstances, e010 supports actual bodily response/event, and unresolved nirvāṇam is retained. No chapter-completeness upgrade or original verdict replacement."
+  }
+}

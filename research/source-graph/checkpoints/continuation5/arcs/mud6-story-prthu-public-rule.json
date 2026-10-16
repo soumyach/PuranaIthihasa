@@ -1,0 +1,1828 @@
+{
+  "checkpoint": "continuation5",
+  "completed_arc_id": "mud6-story-prthu-public-rule",
+  "graph_sha256": "c4af351fd8e2c786669610e2e9d56e1bb7f3e9b906dede60d84b0ae62ef3d7db",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checks complete; independent review selective. All declared interpretation gaps remain explicit.",
+  "story": {
+    "id": "mud6-story-prthu-public-rule",
+    "title": "Aṅga/Vena crisis,Pṛthu emergence,Earth adoption/milking and sacrifice reconciliation",
+    "source_id": "gp-src-mudgala",
+    "witness_id": "gp-wit-sd-mudgala-2",
+    "scope": "2.24.1–54",
+    "event_ids": [
+      "mud6-event-anga-vena-rule-death",
+      "mud6-event-vena-body-nisada-prthu-pair",
+      "mud6-event-prthu-earth-pursuit-terms",
+      "mud6-event-prthu-leveling-adoption-milking",
+      "mud6-event-cosmic-milking-role-table",
+      "mud6-event-prthu-rule-hundred-sacrifice",
+      "mud6-event-indra-six-thefts-reconciliation"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Entire bounded cited Sanskrit arc read; significant named actors, relationships, boons/powers, dialogue and transition checks by author. Independent root review separate.",
+    "missing_sections": [],
+    "editorial_notes": "Source narration order. Embedded narratives have their own spines; parent records their framing transitions without duplicating events."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "mud6-event-anga-vena-rule-death",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-public-rule",
+        "sequence": 1,
+        "passage_ids": [
+          "mud6-p-anga-vena-rule-death"
+        ],
+        "participants": [
+          "mud6-en-anga",
+          "mud5-en-dhruva",
+          "mud-en-mrityu",
+          "mud6-en-mrtyu-unnamed-daughter",
+          "mud6-en-vena",
+          "mud6-en-vena-brahmin-sages",
+          "mud6-en-vena-prthu-subjects"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Aṅga, a descendant in Dhruva’s line, righteously protects people like father. His wife is Mṛtyu’s UNNAMED daughter; their son Vena is cruel. Exhausted by failed instruction, Aṅga abandons kingdom and goes forest sorrowfully. Robbers plunder rulerless land; frightened people seek Brahmins, who enthrone Vena in paternal realm. He kills robbers but abandons proper conduct, hurting varṇa/āśrama practitioners. Sages restrain him; he claims everyone should worship him as protector. Angry Brahmins kill him by curse.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud6-power-vena-curse-death"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-anga-vena-rule-death"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-anga-vena-rule-death",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-anga-vena-rule-death",
+          "locator": "Mudgala2.24.1–10",
+          "paraphrase": "Aṅga, a descendant in Dhruva’s line, righteously protects people like father. His wife is Mṛtyu’s UNNAMED daughter; their son Vena is cruel. Exhausted by failed instruction, Aṅga abandons kingdom and goes forest sorrowfully. Robbers plunder rulerless land; frightened people seek Brahmins, who enthrone Vena in paternal realm. He kills robbers but abandons proper conduct, hurting varṇa/āśrama practitioners. Sages restrain him; he claims everyone should worship him as protector. Angry Brahmins kill him by curse.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud6-event-vena-body-nisada-prthu-pair",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-public-rule",
+        "sequence": 2,
+        "passage_ids": [
+          "mud6-p-vena-body-nisada-prthu-pair"
+        ],
+        "participants": [
+          "mud6-en-vena",
+          "mud6-en-vena-brahmin-sages",
+          "mud6-en-nisada",
+          "mud6-en-nisada-descendants",
+          "mud6-en-prthu",
+          "mud6-en-prthu-unnamed-wife",
+          "mud-en-vishnu",
+          "mud6-en-vena-prthu-subjects"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Sages churn Vena’s LEFT aṅga/body-part seeking king; cruel sin-formed man arises, short, dusky, bearded and tawny-eyed. They say niṣīda; he becomes named Niṣāda, receives forest station and Niṣādas descend from him. They then churn RIGHT aṅga; an energetic COUPLE emerges, both Viṣṇu-kalā-associated. Couple bows to Brahmins; male is consecrated king and named Pṛthu, upholding royal dharma/prosperity. Neither left thigh/right arm specificity nor partner name Arci is supplied.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-vena-body-nisada-prthu-pair"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-vena-body-nisada-prthu-pair",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-vena-body-nisada-prthu-pair",
+          "locator": "Mudgala2.24.11–17",
+          "paraphrase": "Sages churn Vena’s LEFT aṅga/body-part seeking king; cruel sin-formed man arises, short, dusky, bearded and tawny-eyed. They say niṣīda; he becomes named Niṣāda, receives forest station and Niṣādas descend from him. They then churn RIGHT aṅga; an energetic COUPLE emerges, both Viṣṇu-kalā-associated. Couple bows to Brahmins; male is consecrated king and named Pṛthu, upholding royal dharma/prosperity. Neither left thigh/right arm specificity nor partner name Arci is supplied.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud6-event-prthu-earth-pursuit-terms",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-public-rule",
+        "sequence": 3,
+        "passage_ids": [
+          "mud6-p-prthu-earth-pursuit-terms"
+        ],
+        "participants": [
+          "mud6-en-prthu",
+          "gp-m-en-earth",
+          "mud6-en-prthu-earth-bow",
+          "mud6-en-prthu-earth-arrow",
+          "mud6-en-vena-prthu-subjects"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "After time people lack food and seek Pṛthu. Earth swallowed resources under Vena’s adharma and cannot return them under righteous king. Angry Pṛthu draws bow/arrow to kill Earth; she flees in cow form and he pursues like Yama. Finding no refuge, she seeks Pṛthu with folded hands, asks him not to kill woman/cow/Earth and protect surrendered one. He threatens death unless she manifests varied food always. Earth says plants already consumed cannot be directly returned; asks first leveling, then calf and milker so cow-form yields all plants as milk. Killing would be futile without these arrangements.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud6-power-earth-cow-food-terms"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-prthu-earth-pursuit-terms"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-prthu-earth-pursuit-terms",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-prthu-earth-pursuit-terms",
+          "locator": "Mudgala2.24.18–30",
+          "paraphrase": "After time people lack food and seek Pṛthu. Earth swallowed resources under Vena’s adharma and cannot return them under righteous king. Angry Pṛthu draws bow/arrow to kill Earth; she flees in cow form and he pursues like Yama. Finding no refuge, she seeks Pṛthu with folded hands, asks him not to kill woman/cow/Earth and protect surrendered one. He threatens death unless she manifests varied food always. Earth says plants already consumed cannot be directly returned; asks first leveling, then calf and milker so cow-form yields all plants as milk. Killing would be futile without these arrangements.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud6-event-prthu-leveling-adoption-milking",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-public-rule",
+        "sequence": 4,
+        "passage_ids": [
+          "mud6-p-prthu-leveling-adoption-milking"
+        ],
+        "participants": [
+          "mud6-en-prthu",
+          "gp-m-en-earth",
+          "mud4-en-svayambhuva",
+          "mud6-en-prthu-earth-bow"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Pṛthu crushes mountains with bow-tip, levels Earth and arranges towns/villages; source says this starts their arrangement. He makes Earth his DAUGHTER by adoption/putrītva, so she is called Pṛthvī. With Manu as CALF, Pṛthu himself MILKS six-taste food-milk. Beings of three worlds then obtain their own food-milk. Adoption and calf-role are not biological parentage.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud6-power-prthu-six-taste-milk"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-prthu-leveling-adoption-milking"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-prthu-leveling-adoption-milking",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-prthu-leveling-adoption-milking",
+          "locator": "Mudgala2.24.31–35",
+          "paraphrase": "Pṛthu crushes mountains with bow-tip, levels Earth and arranges towns/villages; source says this starts their arrangement. He makes Earth his DAUGHTER by adoption/putrītva, so she is called Pṛthvī. With Manu as CALF, Pṛthu himself MILKS six-taste food-milk. Beings of three worlds then obtain their own food-milk. Adoption and calf-role are not biological parentage.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud6-event-cosmic-milking-role-table",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-public-rule",
+        "sequence": 5,
+        "passage_ids": [
+          "mud6-p-cosmic-milking-role-table"
+        ],
+        "participants": [
+          "gp-m-en-earth",
+          "mud-en-brahma",
+          "mud3-en-brihaspati",
+          "mud6-en-rudra-milking-calf",
+          "mud-en-kalagni-rudra",
+          "mud-en-vishnu",
+          "mud6-en-yajamana-milker",
+          "mud-en-surya",
+          "mud5-en-dhruva",
+          "mud-en-shesha",
+          "mud-en-vasuki",
+          "gp-m-en-siva",
+          "mud-en-nandi"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Milking roles: Veda-form Brahmā CALF/Bṛhaspati MILKER takes milk; 36 does not separately name its substance. Rudra CALF/Kālāgnirudra MILKER yields flesh-form Hara-life milk. Viṣṇu CALF/Yajamāna MILKER yields act-born sacrifice-support milk. Sun CALF/Dhruva MILKER yields luminaries’ life. Śeṣa CALF/Vāsuki MILKER yields serpent food. Śiva CALF/Nandikeśvara MILKER yields knowledge/vidyā milk. These are source-specific cosmic milking roles, not parents/children; Rudra and Śiva labels retained separately in this table.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-cosmic-milking-role-table"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-cosmic-milking-role-table",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-cosmic-milking-role-table",
+          "locator": "Mudgala2.24.36–41",
+          "paraphrase": "Milking roles: Veda-form Brahmā CALF/Bṛhaspati MILKER takes milk; 36 does not separately name its substance. Rudra CALF/Kālāgnirudra MILKER yields flesh-form Hara-life milk. Viṣṇu CALF/Yajamāna MILKER yields act-born sacrifice-support milk. Sun CALF/Dhruva MILKER yields luminaries’ life. Śeṣa CALF/Vāsuki MILKER yields serpent food. Śiva CALF/Nandikeśvara MILKER yields knowledge/vidyā milk. These are source-specific cosmic milking roles, not parents/children; Rudra and Śiva labels retained separately in this table.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud6-event-prthu-rule-hundred-sacrifice",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-public-rule",
+        "sequence": 6,
+        "passage_ids": [
+          "mud6-p-prthu-rule-hundred-sacrifice"
+        ],
+        "participants": [
+          "mud6-en-prthu",
+          "mud6-en-prthu-unnamed-wife",
+          "gp-m-en-earth",
+          "mud-en-brahma",
+          "mud-en-vishnu",
+          "gp-m-en-siva",
+          "gp-m-en-indra",
+          "mud-en-kashyapa",
+          "mud-en-shesha",
+          "mud6-en-prthu-sacrifice-guests"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Mobile/immobile beings and lords milk Pṛthu-prepared Earth. He honors and joyfully protects her as daughter; she remains happy. He rules Earth as emperor and undertakes hundred horse sacrifices with great dakṣiṇā. Brahmā, Viṣṇu, Śaṅkara, Indra-led gods, Gandharvas, Kaśyapa-led sages, Śeṣa-led Nāgas and varied people with wives come. Hundred opening count is kept distinct from final NINETY-NINE completion at 52.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-prthu-rule-hundred-sacrifice"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-prthu-rule-hundred-sacrifice",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-prthu-rule-hundred-sacrifice",
+          "locator": "Mudgala2.24.42–47",
+          "paraphrase": "Mobile/immobile beings and lords milk Pṛthu-prepared Earth. He honors and joyfully protects her as daughter; she remains happy. He rules Earth as emperor and undertakes hundred horse sacrifices with great dakṣiṇā. Brahmā, Viṣṇu, Śaṅkara, Indra-led gods, Gandharvas, Kaśyapa-led sages, Śeṣa-led Nāgas and varied people with wives come. Hundred opening count is kept distinct from final NINETY-NINE completion at 52.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud6-event-indra-six-thefts-reconciliation",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-public-rule",
+        "sequence": 7,
+        "passage_ids": [
+          "mud6-p-indra-six-thefts-reconciliation"
+        ],
+        "participants": [
+          "mud6-en-prthu",
+          "mud6-en-prthu-unnamed-son",
+          "gp-m-en-indra",
+          "mud-en-brahma",
+          "mud6-en-prthu-sacrifice-horse",
+          "mud6-en-prthu-sacrifice-guests"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "As last sacrifice begins, worried Indra in matted hair/rags steals horse. Pṛthu’s UNNAMED son sees him but lets him go as ascetic; Indra leaves horse and disappears afraid. Next he uses bone-bearing/ash-smeared disguise and son does not strike him. Altogether Indra steals horse SIX TIMES. Pṛthu prepares to kill him; Brahmā consoles/restrains him, and Indra is not killed. Pṛthu completes NINETY-NINE sacrifices. Urged by Brahmā, Indra bows; Pṛthu renounces enmity and embraces him. Honored gods/guests depart; Pṛthu resumes righteous protection.",
+        "outcome": "99 sacrifices; Indra survives, bows and is embraced; Pṛthu resumes rule.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud6-power-indra-disguise-counter"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-indra-six-thefts-reconciliation"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-indra-six-thefts-reconciliation",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-indra-six-thefts-reconciliation",
+          "locator": "Mudgala2.24.48–54",
+          "paraphrase": "As last sacrifice begins, worried Indra in matted hair/rags steals horse. Pṛthu’s UNNAMED son sees him but lets him go as ascetic; Indra leaves horse and disappears afraid. Next he uses bone-bearing/ash-smeared disguise and son does not strike him. Altogether Indra steals horse SIX TIMES. Pṛthu prepares to kill him; Brahmā consoles/restrains him, and Indra is not killed. Pṛthu completes NINETY-NINE sacrifices. Urged by Brahmā, Indra bows; Pṛthu renounces enmity and embraces him. Honored gods/guests depart; Pṛthu resumes righteous protection.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gp-m-en-earth",
+      "name": "Earth / Pṛthvī",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-matsara-origin",
+        "mud5-e-kurma-varaha-support",
+        "mud6-e-prthu-earth-pursuit-terms"
+      ]
+    },
+    {
+      "id": "gp-m-en-indra",
+      "name": "Indra",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-matsara-origin",
+        "mud-e-indra-conquest",
+        "mud-e-divine-refuge",
+        "mud-e-andhaka-envoy",
+        "mud-e-chief-reversals",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-senses-gods",
+        "mud2-e-divodasa-replaces-gods",
+        "mud3-e-durvasas-test",
+        "mud5-e-sun-chariot-cities-time",
+        "mud6-e-prthu-rule-hundred-sacrifice"
+      ]
+    },
+    {
+      "id": "gp-m-en-siva",
+      "name": "Śiva / Śambhu / Sadāśiva / Śaṅkara",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-matsara-austerity",
+        "mud-e-divine-refuge",
+        "mud-e-andhaka-envoy",
+        "mud-e-matsara-karma-argument",
+        "mud-e-kailasa-battle",
+        "mud-e-matsara-captures-siva",
+        "mud-e-world-allocation",
+        "mud-e-datta-counsel",
+        "mud-e-vak-manifest",
+        "mud-e-siva-pasupata",
+        "mud-e-sons-fell-siva",
+        "mud-e-following-witness-previews",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-sati-request",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sati-death-rebirth",
+        "rmd2-e-shiva-grief",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-mahat-birth",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-body-worlds",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement",
+        "mud6-e-rahugana-brahmin-praise"
+      ]
+    },
+    {
+      "id": "mud-en-vasuki",
+      "name": "Vāsuki",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-naga-battle",
+        "mud5-e-solar-raksasas-nagas",
+        "mud5-e-lower-nether-rosters",
+        "mud6-e-cosmic-milking-role-table"
+      ]
+    },
+    {
+      "id": "mud-en-shesha",
+      "name": "Śeṣa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-naga-settlement",
+        "rmd2-e-invocation",
+        "mud2-e-field-assembly",
+        "mud3-e-inner-manifestation",
+        "mud5-e-lower-nether-rosters",
+        "mud6-e-cosmic-milking-role-table"
+      ]
+    },
+    {
+      "id": "mud-en-mrityu",
+      "name": "Mṛtyu (Death)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-yama-conquest",
+        "mud4-e-adharma-lineage",
+        "mud6-e-anga-vena-rule-death"
+      ]
+    },
+    {
+      "id": "mud-en-brahma",
+      "name": "Brahmā",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-naimisha",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-assembly",
+        "mud2-e-yaj-arrives",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement",
+        "mud6-e-cosmic-milking-role-table"
+      ]
+    },
+    {
+      "id": "mud-en-vishnu",
+      "name": "Viṣṇu",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-senses-gods",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders",
+        "mud5-e-visnu-world-laksmis",
+        "mud6-e-rahugana-brahmin-praise"
+      ]
+    },
+    {
+      "id": "mud-en-kashyapa",
+      "name": "Kaśyapa",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-sacrifice-duels",
+        "mud5-e-solar-sages-rein-holders",
+        "mud6-e-prthu-rule-hundred-sacrifice"
+      ]
+    },
+    {
+      "id": "mud-en-surya",
+      "name": "Sūrya / Bhānu / Savitṛ",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-kailasa-battle",
+        "rmd2-e-invocation",
+        "rmd2-e-senses-gods",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-priyavrata-ganesa-initiation",
+        "mud5-e-world-layers-winds-distances",
+        "mud6-e-cosmic-milking-role-table"
+      ]
+    },
+    {
+      "id": "mud-en-kalagni-rudra",
+      "name": "Kālāgni Rudra",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-kailasa-battle",
+        "mud6-e-cosmic-milking-role-table"
+      ]
+    },
+    {
+      "id": "mud-en-nandi",
+      "name": "Nandin",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-kailasa-battle",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-shiva-grief",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-assault",
+        "rmd2-e-sacrifice-duels",
+        "mud6-e-cosmic-milking-role-table"
+      ]
+    },
+    {
+      "id": "mud3-en-brihaspati",
+      "name": "Bṛhaspati in Mudgala’s heavenly invitation",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud3-e-heaven-invitation",
+        "mud5-e-luminary-extents-eclipse",
+        "mud6-e-cosmic-milking-role-table"
+      ]
+    },
+    {
+      "id": "mud4-en-svayambhuva",
+      "name": "Svāyambhuva Manu",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin",
+        "mud6-e-dhruva-family-visnu-tapas"
+      ]
+    },
+    {
+      "id": "mud5-en-dhruva",
+      "name": "Dhruva, luminary-wheel axis in cosmography",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-world-layers-winds-distances",
+        "mud6-e-dhruva-family-visnu-tapas"
+      ]
+    },
+    {
+      "id": "mud6-en-anga",
+      "name": "Aṅga, Dhruva-line king and Vena father",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ]
+    },
+    {
+      "id": "mud6-en-mrtyu-unnamed-daughter",
+      "name": "Unnamed Mṛtyu daughter, Aṅga wife",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ]
+    },
+    {
+      "id": "mud6-en-vena",
+      "name": "Vena, Aṅga and Mṛtyu-daughter son",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ]
+    },
+    {
+      "id": "mud6-en-vena-brahmin-sages",
+      "name": "Brahmins/sages enthroning, restraining and cursing Vena",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ]
+    },
+    {
+      "id": "mud6-en-vena-prthu-subjects",
+      "name": "Subjects suffering in Vena/Pṛthu narrative",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ]
+    },
+    {
+      "id": "mud6-en-nisada",
+      "name": "Niṣāda, sin-formed man from Vena left aṅga",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ]
+    },
+    {
+      "id": "mud6-en-nisada-descendants",
+      "name": "Niṣādas descended from Vena-body-born Niṣāda",
+      "type": "FAMILY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ]
+    },
+    {
+      "id": "mud6-en-prthu",
+      "name": "Pṛthu, Viṣṇu-kalā-associated king from Vena right aṅga",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ]
+    },
+    {
+      "id": "mud6-en-prthu-unnamed-wife",
+      "name": "Unnamed Pṛthu wife, co-emergent Viṣṇu-kalā-associated form",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ]
+    },
+    {
+      "id": "mud6-en-prthu-earth-bow",
+      "name": "Pṛthu bow used against Earth and to level land",
+      "type": "WEAPON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-prthu-earth-pursuit-terms"
+      ]
+    },
+    {
+      "id": "mud6-en-prthu-earth-arrow",
+      "name": "Pṛthu arrow threatening cow-form Earth",
+      "type": "WEAPON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-prthu-earth-pursuit-terms"
+      ]
+    },
+    {
+      "id": "mud6-en-rudra-milking-calf",
+      "name": "Rudra as calf in Pṛthu cosmic milking table",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ]
+    },
+    {
+      "id": "mud6-en-yajamana-milker",
+      "name": "Yajamāna, sacrifice-support milker with Viṣṇu calf",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ]
+    },
+    {
+      "id": "mud6-en-prthu-sacrifice-guests",
+      "name": "Named classes attending Pṛthu horse sacrifices",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-prthu-rule-hundred-sacrifice"
+      ]
+    },
+    {
+      "id": "mud6-en-prthu-unnamed-son",
+      "name": "Unnamed Pṛthu son encountering disguised Indra",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-indra-six-thefts-reconciliation"
+      ]
+    },
+    {
+      "id": "mud6-en-prthu-sacrifice-horse",
+      "name": "Pṛthu sacrifice horse stolen six times by Indra",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-indra-six-thefts-reconciliation"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "mud6-r-anga-dhruva-line",
+      "subject_id": "mud6-en-anga",
+      "predicate": "lineage_descendant_of",
+      "object_id": "mud5-en-dhruva",
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-anga-dhruva-line",
+      "kinship_kind": "DESCENDANT_NOT_DIRECT_SON"
+    },
+    {
+      "id": "mud6-r-mrtyu-daughter",
+      "subject_id": "mud6-en-mrtyu-unnamed-daughter",
+      "predicate": "daughter_of",
+      "object_id": "mud-en-mrityu",
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-mrtyu-daughter",
+      "kinship_kind": "PERSONIFIED_COSMIC_LINEAGE"
+    },
+    {
+      "id": "mud6-r-anga-wife",
+      "subject_id": "mud6-en-mrtyu-unnamed-daughter",
+      "predicate": "spouse_of",
+      "object_id": "mud6-en-anga",
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-anga-wife"
+    },
+    {
+      "id": "mud6-r-vena-anga",
+      "subject_id": "mud6-en-vena",
+      "predicate": "child_of",
+      "object_id": "mud6-en-anga",
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-vena-anga",
+      "kinship_kind": "EXPLICIT_PARENT"
+    },
+    {
+      "id": "mud6-r-vena-mother",
+      "subject_id": "mud6-en-vena",
+      "predicate": "child_of",
+      "object_id": "mud6-en-mrtyu-unnamed-daughter",
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-vena-mother",
+      "kinship_kind": "EXPLICIT_PARENT"
+    },
+    {
+      "id": "mud6-r-vena-sage-curse",
+      "subject_id": "mud6-en-vena-brahmin-sages",
+      "predicate": "kills_by_curse",
+      "object_id": "mud6-en-vena",
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-vena-sage-curse"
+    },
+    {
+      "id": "mud6-r-nisada-vena-body",
+      "subject_id": "mud6-en-nisada",
+      "predicate": "emerges_from_left_anga_of",
+      "object_id": "mud6-en-vena",
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-nisada-vena-body",
+      "kinship_kind": "BODY_EMANATION"
+    },
+    {
+      "id": "mud6-r-nisada-descendants",
+      "subject_id": "mud6-en-nisada-descendants",
+      "predicate": "collective_descendants_of",
+      "object_id": "mud6-en-nisada",
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-nisada-descendants",
+      "kinship_kind": "DESCENDANT_GROUP"
+    },
+    {
+      "id": "mud6-r-prthu-vena-body",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "emerges_from_right_anga_of",
+      "object_id": "mud6-en-vena",
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-prthu-vena-body",
+      "kinship_kind": "BODY_EMANATION"
+    },
+    {
+      "id": "mud6-r-prwife-vena-body",
+      "subject_id": "mud6-en-prthu-unnamed-wife",
+      "predicate": "emerges_from_right_anga_of",
+      "object_id": "mud6-en-vena",
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-prwife-vena-body",
+      "kinship_kind": "BODY_EMANATION"
+    },
+    {
+      "id": "mud6-r-prthu-visnu-kala",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "kala_associated_form_of",
+      "object_id": "mud-en-vishnu",
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-prthu-visnu-kala"
+    },
+    {
+      "id": "mud6-r-prwife-visnu-kala",
+      "subject_id": "mud6-en-prthu-unnamed-wife",
+      "predicate": "kala_associated_form_of",
+      "object_id": "mud-en-vishnu",
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-prwife-visnu-kala"
+    },
+    {
+      "id": "mud6-r-prthu-co-emergent-wife",
+      "subject_id": "mud6-en-prthu-unnamed-wife",
+      "predicate": "spouse_of",
+      "object_id": "mud6-en-prthu",
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-prthu-co-emergent-wife",
+      "kinship_kind": "CO_EMERGENT_COUPLE"
+    },
+    {
+      "id": "mud6-r-prthu-earth-threat",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "threatens",
+      "object_id": "gp-m-en-earth",
+      "evidence_ids": [
+        "mud6-e-prthu-earth-pursuit-terms"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-prthu-earth-threat"
+    },
+    {
+      "id": "mud6-r-prthu-earth-bow",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "holds",
+      "object_id": "mud6-en-prthu-earth-bow",
+      "evidence_ids": [
+        "mud6-e-prthu-earth-pursuit-terms"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-prthu-earth-bow"
+    },
+    {
+      "id": "mud6-r-prthu-earth-arrow",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "holds",
+      "object_id": "mud6-en-prthu-earth-arrow",
+      "evidence_ids": [
+        "mud6-e-prthu-earth-pursuit-terms"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-prthu-earth-arrow"
+    },
+    {
+      "id": "mud6-r-earth-prthu-refuge",
+      "subject_id": "gp-m-en-earth",
+      "predicate": "seeks_refuge_in",
+      "object_id": "mud6-en-prthu",
+      "evidence_ids": [
+        "mud6-e-prthu-earth-pursuit-terms"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-earth-prthu-refuge"
+    },
+    {
+      "id": "mud6-r-earth-prthu-adoption",
+      "subject_id": "gp-m-en-earth",
+      "predicate": "adopted_as_daughter_of",
+      "object_id": "mud6-en-prthu",
+      "evidence_ids": [
+        "mud6-e-prthu-leveling-adoption-milking"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-earth-prthu-adoption",
+      "kinship_kind": "ADOPTIVE_NOT_BIOLOGICAL"
+    },
+    {
+      "id": "mud6-r-prthu-food-calf",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "uses_as_milking_calf",
+      "object_id": "mud4-en-svayambhuva",
+      "evidence_ids": [
+        "mud6-e-prthu-leveling-adoption-milking"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-prthu-food-calf",
+      "kinship_kind": "RITUAL_TRANSFORMATIVE_CALF_ROLE"
+    },
+    {
+      "id": "mud6-r-cosmic-calf-brahma",
+      "subject_id": "mud3-en-brihaspati",
+      "predicate": "uses_as_milking_calf",
+      "object_id": "mud-en-brahma",
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-cosmic-calf-brahma",
+      "kinship_kind": "COSMIC_MILKING_ROLE"
+    },
+    {
+      "id": "mud6-r-cosmic-calf-rudra",
+      "subject_id": "mud-en-kalagni-rudra",
+      "predicate": "uses_as_milking_calf",
+      "object_id": "mud6-en-rudra-milking-calf",
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-cosmic-calf-rudra",
+      "kinship_kind": "COSMIC_MILKING_ROLE"
+    },
+    {
+      "id": "mud6-r-cosmic-calf-visnu",
+      "subject_id": "mud6-en-yajamana-milker",
+      "predicate": "uses_as_milking_calf",
+      "object_id": "mud-en-vishnu",
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-cosmic-calf-visnu",
+      "kinship_kind": "COSMIC_MILKING_ROLE"
+    },
+    {
+      "id": "mud6-r-cosmic-calf-surya",
+      "subject_id": "mud5-en-dhruva",
+      "predicate": "uses_as_milking_calf",
+      "object_id": "mud-en-surya",
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-cosmic-calf-surya",
+      "kinship_kind": "COSMIC_MILKING_ROLE"
+    },
+    {
+      "id": "mud6-r-cosmic-calf-sesa",
+      "subject_id": "mud-en-vasuki",
+      "predicate": "uses_as_milking_calf",
+      "object_id": "mud-en-shesha",
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-cosmic-calf-sesa",
+      "kinship_kind": "COSMIC_MILKING_ROLE"
+    },
+    {
+      "id": "mud6-r-cosmic-calf-siva",
+      "subject_id": "mud-en-nandi",
+      "predicate": "uses_as_milking_calf",
+      "object_id": "gp-m-en-siva",
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-cosmic-calf-siva",
+      "kinship_kind": "COSMIC_MILKING_ROLE"
+    },
+    {
+      "id": "mud6-r-prthu-earth-care",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "protects_as_adopted_daughter",
+      "object_id": "gp-m-en-earth",
+      "evidence_ids": [
+        "mud6-e-prthu-rule-hundred-sacrifice"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-prthu-earth-care",
+      "kinship_kind": "ADOPTIVE"
+    },
+    {
+      "id": "mud6-r-prthu-son-parent",
+      "subject_id": "mud6-en-prthu-unnamed-son",
+      "predicate": "child_of",
+      "object_id": "mud6-en-prthu",
+      "evidence_ids": [
+        "mud6-e-indra-six-thefts-reconciliation"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-prthu-son-parent",
+      "kinship_kind": "EXPLICIT_PARENT"
+    },
+    {
+      "id": "mud6-r-indra-sacrifice-horse",
+      "subject_id": "gp-m-en-indra",
+      "predicate": "steals",
+      "object_id": "mud6-en-prthu-sacrifice-horse",
+      "evidence_ids": [
+        "mud6-e-indra-six-thefts-reconciliation"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-indra-sacrifice-horse"
+    },
+    {
+      "id": "mud6-r-brahma-prthu-restraint",
+      "subject_id": "mud-en-brahma",
+      "predicate": "restrains_attack_by",
+      "object_id": "mud6-en-prthu",
+      "evidence_ids": [
+        "mud6-e-indra-six-thefts-reconciliation"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-brahma-prthu-restraint"
+    },
+    {
+      "id": "mud6-r-indra-prthu-bow",
+      "subject_id": "gp-m-en-indra",
+      "predicate": "bows_to",
+      "object_id": "mud6-en-prthu",
+      "evidence_ids": [
+        "mud6-e-indra-six-thefts-reconciliation"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-indra-prthu-bow"
+    },
+    {
+      "id": "mud6-r-prthu-indra-embrace",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "embraces_after_renouncing_enmity",
+      "object_id": "gp-m-en-indra",
+      "evidence_ids": [
+        "mud6-e-indra-six-thefts-reconciliation"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-prthu-indra-embrace"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "mud6-power-vena-curse-death",
+      "type": "POWER",
+      "recipient_id": "mud6-en-vena-brahmin-sages",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud6-e-anga-vena-rule-death"
+        ],
+        "motive": [
+          "mud6-e-anga-vena-rule-death"
+        ],
+        "mechanism": [
+          "mud6-e-anga-vena-rule-death"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": "Anger at Vena abandoning proper rule and demanding worship.",
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "Curse kills Vena; no physical weapon narrated.",
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud6-power-earth-cow-food-terms",
+      "type": "POWER",
+      "recipient_id": "gp-m-en-earth",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud6-e-prthu-earth-pursuit-terms"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud6-e-prthu-earth-pursuit-terms"
+        ],
+        "mechanism": [
+          "mud6-e-prthu-earth-pursuit-terms"
+        ],
+        "restrictions": [
+          "mud6-e-prthu-earth-pursuit-terms"
+        ],
+        "counter": [
+          "mud6-e-prthu-earth-pursuit-terms"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "Cow-form Earth offers swallowed plants as milk after leveling/calf/milker arrangement.",
+      "trigger": null,
+      "restrictions": "Already consumed plants cannot be simply returned; proper arrangements required.",
+      "duration": null,
+      "counter": "Negotiation redirects Pṛthu’s lethal threat into production/milking."
+    },
+    {
+      "id": "mud6-power-prthu-six-taste-milk",
+      "type": "POWER",
+      "recipient_id": "mud6-en-prthu",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud6-e-prthu-leveling-adoption-milking"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud6-e-prthu-leveling-adoption-milking"
+        ],
+        "mechanism": [
+          "mud6-e-prthu-leveling-adoption-milking"
+        ],
+        "notes": [
+          "mud6-e-prthu-leveling-adoption-milking"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Transformative milking roles, not biological lineage.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "Manu calf; Pṛthu milker; Earth cow yields six-taste food-milk.",
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud6-power-indra-disguise-counter",
+      "type": "POWER",
+      "recipient_id": "gp-m-en-indra",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud6-e-indra-six-thefts-reconciliation"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud6-e-indra-six-thefts-reconciliation"
+        ],
+        "motive": [
+          "mud6-e-indra-six-thefts-reconciliation"
+        ],
+        "mechanism": [
+          "mud6-e-indra-six-thefts-reconciliation"
+        ],
+        "counter": [
+          "mud6-e-indra-six-thefts-reconciliation"
+        ],
+        "notes": [
+          "mud6-e-indra-six-thefts-reconciliation"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "No remembered two/three theft count or son name supplied.",
+      "motive": "Worried at last sacrifice.",
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "Ascetic disguises prevent unnamed royal son striking; 6 horse thefts.",
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": "Pṛthu intends kill; Brahmā restrains and brings reconciliation."
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "mud6-a-anga-dhruva-line",
+      "subject_id": "mud6-en-anga",
+      "predicate": "lineage_descendant_of",
+      "object_id": "mud5-en-dhruva",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-mrtyu-daughter",
+      "subject_id": "mud6-en-mrtyu-unnamed-daughter",
+      "predicate": "daughter_of",
+      "object_id": "mud-en-mrityu",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-anga-wife",
+      "subject_id": "mud6-en-mrtyu-unnamed-daughter",
+      "predicate": "spouse_of",
+      "object_id": "mud6-en-anga",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-vena-anga",
+      "subject_id": "mud6-en-vena",
+      "predicate": "child_of",
+      "object_id": "mud6-en-anga",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-vena-mother",
+      "subject_id": "mud6-en-vena",
+      "predicate": "child_of",
+      "object_id": "mud6-en-mrtyu-unnamed-daughter",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-vena-sage-curse",
+      "subject_id": "mud6-en-vena-brahmin-sages",
+      "predicate": "kills_by_curse",
+      "object_id": "mud6-en-vena",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-vena-self-worship",
+      "subject_id": "mud6-en-vena",
+      "predicate": "source_claim",
+      "object_id": null,
+      "value": "Everyone should worship Vena as protector; sages kill him by curse.",
+      "evidence_ids": [
+        "mud6-e-anga-vena-rule-death"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-nisada-vena-body",
+      "subject_id": "mud6-en-nisada",
+      "predicate": "emerges_from_left_anga_of",
+      "object_id": "mud6-en-vena",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-nisada-descendants",
+      "subject_id": "mud6-en-nisada-descendants",
+      "predicate": "collective_descendants_of",
+      "object_id": "mud6-en-nisada",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-vena-body",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "emerges_from_right_anga_of",
+      "object_id": "mud6-en-vena",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prwife-vena-body",
+      "subject_id": "mud6-en-prthu-unnamed-wife",
+      "predicate": "emerges_from_right_anga_of",
+      "object_id": "mud6-en-vena",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-visnu-kala",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "kala_associated_form_of",
+      "object_id": "mud-en-vishnu",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prwife-visnu-kala",
+      "subject_id": "mud6-en-prthu-unnamed-wife",
+      "predicate": "kala_associated_form_of",
+      "object_id": "mud-en-vishnu",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-co-emergent-wife",
+      "subject_id": "mud6-en-prthu-unnamed-wife",
+      "predicate": "spouse_of",
+      "object_id": "mud6-en-prthu",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-nisada-description",
+      "subject_id": "mud6-en-nisada",
+      "predicate": "source_description",
+      "object_id": null,
+      "value": "Cruel/sin-formed, short, dusky, bearded, tawny-eyed; niṣīda utterance gives name and forest station.",
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-earth-threat",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "threatens",
+      "object_id": "gp-m-en-earth",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-prthu-earth-pursuit-terms"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-earth-bow",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "holds",
+      "object_id": "mud6-en-prthu-earth-bow",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-prthu-earth-pursuit-terms"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-earth-arrow",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "holds",
+      "object_id": "mud6-en-prthu-earth-arrow",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-prthu-earth-pursuit-terms"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-earth-prthu-refuge",
+      "subject_id": "gp-m-en-earth",
+      "predicate": "seeks_refuge_in",
+      "object_id": "mud6-en-prthu",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-prthu-earth-pursuit-terms"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-earth-food-counterterms",
+      "subject_id": "gp-m-en-earth",
+      "predicate": "source_negotiation",
+      "object_id": null,
+      "value": "Consumed plants cannot directly return; level Earth and arrange calf/milker for plants-as-milk. Pṛthu threatens death without food manifestation.",
+      "evidence_ids": [
+        "mud6-e-prthu-earth-pursuit-terms"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-earth-prthu-adoption",
+      "subject_id": "gp-m-en-earth",
+      "predicate": "adopted_as_daughter_of",
+      "object_id": "mud6-en-prthu",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-prthu-leveling-adoption-milking"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-food-calf",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "uses_as_milking_calf",
+      "object_id": "mud4-en-svayambhuva",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-prthu-leveling-adoption-milking"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-earth-prthvi-name",
+      "subject_id": "gp-m-en-earth",
+      "predicate": "source_name_explanation",
+      "object_id": null,
+      "value": "Called Pṛthvī after Pṛthu makes her daughter by putrītva.",
+      "evidence_ids": [
+        "mud6-e-prthu-leveling-adoption-milking"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-town-arrangement",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "narrated_work",
+      "object_id": null,
+      "value": "Crushes mountains by bow-tip, levels Earth, arranges towns/villages.",
+      "evidence_ids": [
+        "mud6-e-prthu-leveling-adoption-milking"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-cosmic-calf-brahma",
+      "subject_id": "mud3-en-brihaspati",
+      "predicate": "uses_as_milking_calf",
+      "object_id": "mud-en-brahma",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-cosmic-milk-brahma",
+      "subject_id": "mud3-en-brihaspati",
+      "predicate": "source_milk_result",
+      "object_id": null,
+      "value": "Veda-form Brahmā calf; milk substance not separately named in 36",
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-cosmic-calf-rudra",
+      "subject_id": "mud-en-kalagni-rudra",
+      "predicate": "uses_as_milking_calf",
+      "object_id": "mud6-en-rudra-milking-calf",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-cosmic-milk-rudra",
+      "subject_id": "mud-en-kalagni-rudra",
+      "predicate": "source_milk_result",
+      "object_id": null,
+      "value": "Flesh-form Hara-life milk",
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-cosmic-calf-visnu",
+      "subject_id": "mud6-en-yajamana-milker",
+      "predicate": "uses_as_milking_calf",
+      "object_id": "mud-en-vishnu",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-cosmic-milk-visnu",
+      "subject_id": "mud6-en-yajamana-milker",
+      "predicate": "source_milk_result",
+      "object_id": null,
+      "value": "Act-born sacrifice-support milk",
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-cosmic-calf-surya",
+      "subject_id": "mud5-en-dhruva",
+      "predicate": "uses_as_milking_calf",
+      "object_id": "mud-en-surya",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-cosmic-milk-surya",
+      "subject_id": "mud5-en-dhruva",
+      "predicate": "source_milk_result",
+      "object_id": null,
+      "value": "Life of luminaries milk",
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-cosmic-calf-sesa",
+      "subject_id": "mud-en-vasuki",
+      "predicate": "uses_as_milking_calf",
+      "object_id": "mud-en-shesha",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-cosmic-milk-sesa",
+      "subject_id": "mud-en-vasuki",
+      "predicate": "source_milk_result",
+      "object_id": null,
+      "value": "Serpent food milk",
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-cosmic-calf-siva",
+      "subject_id": "mud-en-nandi",
+      "predicate": "uses_as_milking_calf",
+      "object_id": "gp-m-en-siva",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-cosmic-milk-siva",
+      "subject_id": "mud-en-nandi",
+      "predicate": "source_milk_result",
+      "object_id": null,
+      "value": "Knowledge/vidyā milk",
+      "evidence_ids": [
+        "mud6-e-cosmic-milking-role-table"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-earth-care",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "protects_as_adopted_daughter",
+      "object_id": "gp-m-en-earth",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-prthu-rule-hundred-sacrifice"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-sacrifice-opening-count",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "source_announced_sacrifice_count",
+      "object_id": null,
+      "value": "100 horse sacrifices opening account; final completed count 99 at 52.",
+      "evidence_ids": [
+        "mud6-e-prthu-rule-hundred-sacrifice"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-son-parent",
+      "subject_id": "mud6-en-prthu-unnamed-son",
+      "predicate": "child_of",
+      "object_id": "mud6-en-prthu",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-indra-six-thefts-reconciliation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-indra-sacrifice-horse",
+      "subject_id": "gp-m-en-indra",
+      "predicate": "steals",
+      "object_id": "mud6-en-prthu-sacrifice-horse",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-indra-six-thefts-reconciliation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-brahma-prthu-restraint",
+      "subject_id": "mud-en-brahma",
+      "predicate": "restrains_attack_by",
+      "object_id": "mud6-en-prthu",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-indra-six-thefts-reconciliation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-indra-prthu-bow",
+      "subject_id": "gp-m-en-indra",
+      "predicate": "bows_to",
+      "object_id": "mud6-en-prthu",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-indra-six-thefts-reconciliation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-indra-embrace",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "embraces_after_renouncing_enmity",
+      "object_id": "gp-m-en-indra",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-indra-six-thefts-reconciliation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-indra-thefts-count",
+      "subject_id": "gp-m-en-indra",
+      "predicate": "source_count",
+      "object_id": null,
+      "value": "6 horse thefts; ascetic disguises include matted hair/rags and bones/ash.",
+      "evidence_ids": [
+        "mud6-e-indra-six-thefts-reconciliation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-final-sacrifice-count",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "source_completed_count",
+      "object_id": null,
+      "value": "99 horse sacrifices; Indra survives after Brahmā intervenes.",
+      "evidence_ids": [
+        "mud6-e-indra-six-thefts-reconciliation"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ]
+}
