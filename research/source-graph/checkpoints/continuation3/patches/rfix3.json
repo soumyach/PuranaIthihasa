@@ -1,0 +1,129 @@
+{
+  "sources": [],
+  "witnesses": [],
+  "passages": [
+    {
+      "id": "rfix3-p-readonly-gp-wit-sd-upasana-61",
+      "source_id": "gp-src-ganesha",
+      "witness_id": "gp-wit-sd-upasana",
+      "book": null,
+      "khanda": "Upāsanā",
+      "chapter": 61,
+      "verses": "1–19",
+      "url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā 61.1–19",
+      "reading_status": "PARTIALLY_READ",
+      "extraction_status": "UNEXAMINED",
+      "limitations": "Author read fragment61.1–19; no extraction.61.20 onward unread. Resume at61.1."
+    },
+    {
+      "id": "rfix3-p-readonly-gp-wit-sd-krida-46",
+      "source_id": "gp-src-ganesha",
+      "witness_id": "gp-wit-sd-krida",
+      "book": null,
+      "khanda": "Krīḍā",
+      "chapter": 46,
+      "verses": "1–8",
+      "url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+      "locator": "Krīḍā 46.1–8",
+      "reading_status": "PARTIALLY_READ",
+      "extraction_status": "UNEXAMINED",
+      "limitations": "Author read fragment46.1–8; no extraction.46.9 onward unread. Formal source-order extraction begins44.1."
+    },
+    {
+      "id": "rfix3-p-readonly-gp-wit-sd-mudgala-2-11",
+      "source_id": "gp-src-mudgala",
+      "witness_id": "gp-wit-sd-mudgala-2",
+      "book": null,
+      "khanda": "2",
+      "chapter": 11,
+      "verses": "1–4",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "locator": "2 11.1–4",
+      "reading_status": "PARTIALLY_READ",
+      "extraction_status": "UNEXAMINED",
+      "limitations": "Author closely inspected2.11.1–4;5–42 and terminal colophon only displayed/skimming, not systematic reading. No formal extraction. Resume2.11.1."
+    }
+  ],
+  "evidence": [],
+  "entities": [],
+  "assertions": [],
+  "relationships": [],
+  "boons_and_powers": [],
+  "narrative_events": [],
+  "story_spines": [],
+  "variants_and_conflicts": [],
+  "queue": [],
+  "updates": [],
+  "chapter_coverage": [
+    {
+      "source_id": "gp-src-ganesha",
+      "witness_id": "gp-wit-sd-upasana",
+      "book": null,
+      "khanda": "Upāsanā",
+      "chapter": 61,
+      "state": "IN_PROGRESS",
+      "read_entire_chapter": false,
+      "narrative_extracted": false,
+      "characters_extracted": false,
+      "relationships_extracted": false,
+      "boons_powers_extracted": false,
+      "checked": false,
+      "passage_ids": [
+        "rfix3-p-readonly-gp-wit-sd-upasana-61"
+      ],
+      "evidence_ids": [],
+      "omissions": [
+        "Author read fragment61.1–19; no extraction.61.20 onward unread. Resume at61.1."
+      ],
+      "blocking_reason": null
+    },
+    {
+      "source_id": "gp-src-ganesha",
+      "witness_id": "gp-wit-sd-krida",
+      "book": null,
+      "khanda": "Krīḍā",
+      "chapter": 46,
+      "state": "IN_PROGRESS",
+      "read_entire_chapter": false,
+      "narrative_extracted": false,
+      "characters_extracted": false,
+      "relationships_extracted": false,
+      "boons_powers_extracted": false,
+      "checked": false,
+      "passage_ids": [
+        "rfix3-p-readonly-gp-wit-sd-krida-46"
+      ],
+      "evidence_ids": [],
+      "omissions": [
+        "Author read fragment46.1–8; no extraction.46.9 onward unread. Formal source-order extraction begins44.1."
+      ],
+      "blocking_reason": null
+    },
+    {
+      "source_id": "gp-src-mudgala",
+      "witness_id": "gp-wit-sd-mudgala-2",
+      "book": null,
+      "khanda": "2",
+      "chapter": 11,
+      "state": "IN_PROGRESS",
+      "read_entire_chapter": false,
+      "narrative_extracted": false,
+      "characters_extracted": false,
+      "relationships_extracted": false,
+      "boons_powers_extracted": false,
+      "checked": false,
+      "passage_ids": [
+        "rfix3-p-readonly-gp-wit-sd-mudgala-2-11"
+      ],
+      "evidence_ids": [],
+      "omissions": [
+        "Author closely inspected2.11.1–4;5–42 and terminal colophon only displayed/skimming, not systematic reading. No formal extraction. Resume2.11.1."
+      ],
+      "blocking_reason": null
+    }
+  ],
+  "changes": [
+    "Root reconciliation registers three read-only fragments without narrative extraction, based on frozen author reports. Every such chapter stays IN_PROGRESS; no read-only body is skipped at resumption."
+  ]
+}

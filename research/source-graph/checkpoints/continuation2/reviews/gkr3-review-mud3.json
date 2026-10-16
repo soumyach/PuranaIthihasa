@@ -1,0 +1,216 @@
+{
+  "reviewer": "Gaṇeśa Krīḍā continuation3 author, independent Sanskrit body rereading",
+  "review_kind": "SECOND_AUTHOR_SAME_DIGITAL_WITNESS",
+  "source_id": "gp-src-mudgala",
+  "witness_id": "gp-wit-sd-mudgala-1",
+  "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam1.html",
+  "author_checkpoint": "work/continuation2/checkpoints/mud3/07-coherent-freeze-through22.json",
+  "checkpoint_sha256": "197d1adf681d00e96f95c85e2d9531b7259fc5a98d9a9d1275240dd7396ac93f",
+  "actual_body_read": [
+    "Mudgala1.20.1–42 including terminal colophon",
+    "Mudgala1.21.1–54 including terminal colophon",
+    "Mudgala1.22.1–54 including terminal colophon"
+  ],
+  "web_body_references": [
+    "turn295view0",
+    "turn296view0"
+  ],
+  "limitations": "Independent second-author reading of the same electronic witness. No independent print collation or external Sanskrit-expert certification; this does not certify unaudited1.12–19 or the whole source.",
+  "findings": [
+    {
+      "id": "gkr3-review-mud3-guru-duration-form",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "record_ids": [
+        "mud3-e-mudgala-initiation-vision",
+        "mud3-a-angiras-mantra-teacher",
+        "mud3-a-mudgala-mantra-initiation",
+        "mud3-a-mudgala-tapas-duration",
+        "mud3-a-mudgala-vision-form"
+      ],
+      "locators": [
+        "1.20.28–42"
+      ],
+      "description": "Aṅgiras ritually teaches the one-syllable great mantra and directs forest tapas; Mudgala bows and performs full exclusive procedure. Abdasahasreṇa divyena gives1000DIVINE years, not1000human years. Appearance is mouse-mounted/fourarms with Siddhi/Buddhi and Pramoda/Āmoda entourage, elephantface/largebelly/onetooth/threeeyes/fourweapons/heartCintāmaṇi. Fourweapon types are not individually named in20.34; no lion mount substituted from other Vakratunda passages. Boon invitation20.36 and joyful worship/praise20.37–42 supported."
+    },
+    {
+      "id": "gkr3-review-mud3-angiras-recollection",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "record_ids": [
+        "mud3-power-angiras-lineage-boon",
+        "mud3-power-mudgala-uplift-contact"
+      ],
+      "locators": [
+        "1.20.22–26"
+      ],
+      "description": "Aṅgiras recounts completed tapas and wished boon through devotion; lineage Gaṇapatyas/Mudgala unrivaled past/future, contact uplift by praṇāma/touch/speech/sight/wind supported. Initial request speech not separately supplied; requested=null is appropriate."
+    },
+    {
+      "id": "gkr3-review-mud3-hymn-counts",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "record_ids": [
+        "mud3-power-stotrottama-benefits",
+        "mud3-power-stotrottama-counter-spells",
+        "mud3-e-stotrottama-granted-benefits"
+      ],
+      "locators": [
+        "1.21.47–54"
+      ],
+      "description": "After prostration deity raises/embraces Mudgala, names Stotrottama. Its praising user receives enjoyment/liberation, firm devotion, absence of distress/disease, progeny, wealth/grain. Māraṇa/uccāṭana destruction has explicit21readings and same21days21.52. Prison afflictions end through reading21.53 without restating a separate numeric condition; desired ends follow. Do not derive an unstated1000jail count or universal21day condition for every benefit."
+    },
+    {
+      "id": "gkr3-review-mud3-hymn-name-contact",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "record_ids": [
+        "mud3-power-hymnal-name-once",
+        "mud3-power-hymnal-worshipper-contact"
+      ],
+      "locators": [
+        "1.21.45–46"
+      ],
+      "description": "Hearing three-syllable Gaṇeśa gives joy; once-uttering no birth/death. Worshippers Brahman-formed and convey Brahman by contact. These correctly remain hymn-attributed efficacy, not narrated tested episode."
+    },
+    {
+      "id": "gkr3-review-mud3-devotion-request-grant",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "record_ids": [
+        "mud3-power-mudgala-complete-devotion",
+        "mud3-e-mudgala-devotion-request"
+      ],
+      "locators": [
+        "1.22.1–8"
+      ],
+      "description": "Mudgala initially wants nothing, asks only to honor divine insistence; complete firm uninterrupted devotion everywhere requested. Gaṇeśa explicitly grants complete unwavering devotion and incomparable fortune. Nine forms and no tenth supported; dehanivedana enumeration retained rather than inventing extra form."
+    },
+    {
+      "id": "gkr3-review-mud3-devotion-field-locator",
+      "status": "FIELD_EVIDENCE_CORRECTION_REQUIRED",
+      "record_ids": [
+        "mud3-power-mudgala-complete-devotion"
+      ],
+      "locators": [
+        "1.20.29–42",
+        "1.21.1–48",
+        "1.22.1–8"
+      ],
+      "description": "Austerity_or_circumstances includes one-syllable tapas/vision AND hymn, but overall/field evidence contains only mud3-e-mudgala-devotion-request22.1–8. This cited range supports deity insistence and request, not the explicitly populated earlier tapas/mantra/hymn circumstances.",
+      "recommended_action": {
+        "add_to_record_evidence_ids": [
+          "mud3-e-mudgala-initiation-vision",
+          "mud3-e-stotrottama-frame"
+        ],
+        "add_to_field_evidence_austerity_or_circumstances": [
+          "mud3-e-mudgala-initiation-vision",
+          "mud3-e-stotrottama-frame"
+        ],
+        "alternative": "Narrow circumstances text to request after deity insists; preserve earlier context in separate linked narrative."
+      }
+    },
+    {
+      "id": "gkr3-review-mud3-ninefold-practice",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "record_ids": [
+        "mud3-power-bhakti-sravana",
+        "mud3-power-bhakti-kirtana",
+        "mud3-power-bhakti-smarana",
+        "mud3-power-bhakti-padasevana",
+        "mud3-power-bhakti-arcana",
+        "mud3-power-bhakti-vandana",
+        "mud3-power-bhakti-dasya",
+        "mud3-power-bhakti-sakhya",
+        "mud3-power-bhakti-nivedana",
+        "mud3-power-ganesa-inner-knowing",
+        "mud3-power-nine-bhakti-binding-protection"
+      ],
+      "locators": [
+        "1.22.9–38"
+      ],
+      "description": "Hearing/reflection/exclusive rasa→ears; chanting→tonguetip; dutymemory→memory; tireless footservice→body; complete arcana→its completeness; superior bowing→highestness; scriptural Gaṇapatya dāsya→nature; unhidden/hypocrisyfree friendship aware of omniscient knowing→friendship; ego/fivementalground relinquishment→nonseparation. Complete ninefold rasa binds deity to heart/presence/protection always, unable to abandon even moment. All conditional mechanisms adequately reflected;23vadanajā anomaly recorded conservatively with7vandana and22/24context."
+    },
+    {
+      "id": "gkr3-review-mud3-exemplars-outcome",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "record_ids": [
+        "mud3-e-nine-bhakti-exemplars",
+        "mud3-power-mudgala-devotee-sovereignty",
+        "mud3-power-mudgala-purifying-wind",
+        "mud3-power-mudgala-carita-benefits"
+      ],
+      "locators": [
+        "1.22.39–54"
+      ],
+      "description": "Exemplar list Kārttikeya/hearing,Sun/chant,Rāmacandra/memory,Pārvatī/feet,Mahāviṣṇu/arcana,Śaṅkara/bow,Jamadagni’sRāma/dāsya,Brahmā/friendship,ŚukaVaiyāsaki/selfoffering supported. Mudgala preeminent in allnine,unmatchedpast/present/future,deityunderhiscontrol; bodilywind/sight purification/Brahmanunderstanding. Deityvanishes andallhonorMudgala; faithfulaccount hearing/reading/telling confersallaims,pleasures/Brahman/devoteesovereignty."
+    },
+    {
+      "id": "gkr3-review-mud3-naraka",
+      "status": "PENDING_LANGUAGE_OR_EDITION_COLLATION",
+      "record_ids": [
+        "mud3-e-ganapatya-naraka-reading",
+        "mud3-p-ganapatya-naraka-reading"
+      ],
+      "locators": [
+        "1.20.27"
+      ],
+      "description": "Actual electronic witness reads jantūnāṃ nārakāḥ smṛtāḥ amid fortunate-lineage Gaṇapatya praise. Could require typographic/edition investigation, but same-witness second author cannot confirm replacement tārakāḥ. Existing NEEDS_REVIEW and PARTIAL20 appropriate; no hell-producing or salvific normalization justified here."
+    },
+    {
+      "id": "gkr3-review-mud3-dense-hymn",
+      "status": "PENDING_LANGUAGE_OR_EDITION_COLLATION",
+      "record_ids": [
+        "mud3-e-stotrottama-dense-terms",
+        "mud3-a-stotrottama-dense-terms"
+      ],
+      "locators": [
+        "1.21.43–44"
+      ],
+      "description": "Bhrāmarī/tvam-support Śakti, tat/Kāmadātrī, svasaṃvedya/place/head and undivided nectar/reddishwater/Ikṣu sea/nirādhāra drinking/na-puṃstrī-pradāya present, but precise referents/effect cannot be certified from same reading. Preserve named raw terms; do not invent bodily/sexchange consequence or merge DevīBhāgavata Bhrāmarī."
+    },
+    {
+      "id": "gkr3-review-mud3-other-partials",
+      "status": "PENDING_LANGUAGE_OR_EDITION_COLLATION",
+      "record_ids": [
+        "mud3-e-eight-forms-foes-vehicles",
+        "mud3-e-hymn-yoni-compound",
+        "mud3-e-stotrottama-patronymics"
+      ],
+      "locators": [
+        "1.20.8",
+        "1.21.7",
+        "1.21.36–37"
+      ],
+      "description": "Lomāsura spelling directly supported but Lobha identity not independently established; lakṣa-veda-aṣṭa-yoni numeric compound withheld appropriately; hymnKāśyapa/Kāpila/Pārāśara names not expanded to remembered births. Existing partial checks honest."
+    },
+    {
+      "id": "gkr3-review-mud3-story-completeness",
+      "status": "STATUS_CORRECTION_REQUIRED",
+      "record_ids": [
+        "mud3-story-mudgala-initiation-devotion"
+      ],
+      "locators": [
+        "1.19.21–67",
+        "1.20.1–42",
+        "1.21.1–54",
+        "1.22.1–54"
+      ],
+      "description": "Frozen author spine COMPLETE spans20/21explicit unresolved required relationship/power/hymn meanings. Under parent central rule critical story requirement ambiguity keeps whole-scene spine PARTIAL, even when major chronology is complete.",
+      "recommended_action": {
+        "status": "PARTIAL",
+        "missing_sections": [
+          "20.27 nārakāḥ exact clause",
+          "20.8 Lomāsura identity if claimed beyond literal name",
+          "21.7 yoni numeric decomposition",
+          "21.36 patronymic contextual identities where needed",
+          "21.43–44 divine referents/drinking effect"
+        ],
+        "retain": "Source-ordered narrative and22wholechapterCOMPLETE; do not erase supported extraction."
+      }
+    }
+  ],
+  "summary": {
+    "clear_numeric_conditions_supported": true,
+    "core_request_and_grant_supported": true,
+    "required_field_correction_count": 1,
+    "required_status_correction_count": 1,
+    "pending_print_language_groups": 3,
+    "author_freeze_read": true
+  }
+}

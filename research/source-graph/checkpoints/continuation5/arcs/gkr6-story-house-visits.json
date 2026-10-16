@@ -1,0 +1,808 @@
+{
+  "checkpoint": "continuation5",
+  "completed_arc_id": "gkr6-story-house-visits",
+  "graph_sha256": "c4af351fd8e2c786669610e2e9d56e1bb7f3e9b906dede60d84b0ae62ef3d7db",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checks complete; independent review selective. All declared interpretation gaps remain explicit.",
+  "story": {
+    "id": "gkr6-story-house-visits",
+    "title": "Simultaneous household visits and the Kāśī king’s recognition",
+    "source_id": "gp-src-ganesha",
+    "witness_id": "gp-wit-sd-krida",
+    "scope": "Krīḍā54.1–39;55.1–16.",
+    "event_ids": [
+      "gkr6-event-citizen-demands",
+      "gkr6-event-many-house-gifts",
+      "gkr6-event-king-own-forms",
+      "gkr6-event-king-search-witnesses",
+      "gkr6-event-king-form-palanquin"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Entire stated chapter bodies read; narration, significant dialogue, all named actors/family, worship/requests/grants, weapons/powers/counters and aftermath extracted.",
+    "missing_sections": [],
+    "editorial_notes": "Bounded scene completion only; larger Vināyaka cycle incomplete. Independent print/Sanskrit expert audit pending."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "gkr6-event-citizen-demands",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr6-story-house-visits",
+        "sequence": 1,
+        "passage_ids": [
+          "gkr6-p-054"
+        ],
+        "participants": [
+          "gkr6-en-householders54",
+          "gkr6-en-sattvika-guests54",
+          "gkr6-en-rajasika-guests54",
+          "gkr2-en-sukla",
+          "gkr-en-vinayaka",
+          "gkr2-en-kasiking"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Prepared-meal invitations and disparagement of Śukla bring citizens to the sleeping child. He declares the small devotional meal satisfying and refuses another mouthful.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr6-e-citizens-meal-requests54"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr6-e-citizens-meal-requests54",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr6-p-054",
+          "locator": "Krīḍā 54.1–16; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "After Śukla’s meal, Vināyaka plays outside and briefly sleeps. Citizens who prepared meals seek the sage’s son at the Kāśī king’s house; the king says he left while playing. Some disparage the choice of a poor man’s inferior meal over wealthy invitations and challenge the king’s deity claim. Devotees find him sleeping at Śukla’s house: sāttvika people wait silently, while rājasika people urge him to rise before the prepared food becomes stale and criticize Śukla’s poverty. The child, explicitly called Kaśyapa’s son, says the devotional meal fully satisfied him, leaving no strength to step or appetite for another mouthful. The people become disappointed.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation5 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr6-event-many-house-gifts",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr6-story-house-visits",
+        "sequence": 2,
+        "passage_ids": [
+          "gkr6-p-054"
+        ],
+        "participants": [
+          "gkr-en-vinayaka",
+          "gkr2-en-kasiking",
+          "gkr6-en-householders54",
+          "gkr6-en-king-house-forms54"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "The one Lord becomes many, visiting every home with the king, accepting elaborate hospitality, playing/teaching and fulfilling wishes. Drums and flowers mark the event; the king cannot explain simultaneous visits.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr6-e-deity-and-king-many-house-visits54"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr6-e-deity-and-king-many-house-visits54",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr6-p-054",
+          "locator": "Krīḍā 54.17–38; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "Seeing the citizens’ distress, the one Lord instantly becomes countless, compared to space in pots and reflected Suns. In each home he plays on stairs/swings/beds/terraces, laughs/eats with children, studies and teaches, and appears accompanied by the Kāśī king. Each householder rejoices. Oil massage, baths, footwashing, sixteen offerings, food, musk/sandal/flowers, clothing, service by wives/children/servants, sleep, Vedic recitation, song, sacred stories, Hari’s accounts, dance and lamps fill the visits. Some forms play with a noose. Purāṇa, dharmaśāstra and smṛti reading and each person’s wishes are fulfilled; Dīnanātha’s name is shown meaningful, with divine drums and flowers. The actual king cannot understand simultaneous royal/deity visits and dismisses the report before going to inspect.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation5 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr6-event-king-own-forms",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr6-story-house-visits",
+        "sequence": 3,
+        "passage_ids": [
+          "gkr6-p-054"
+        ],
+        "participants": [
+          "gkr2-en-kasiking",
+          "gkr-en-vinayaka",
+          "gkr6-en-king-house-forms54"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Inspecting two or three homes, the king sees himself and the child after each meal.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr6-e-king-sees-own-many-house-forms54"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr6-e-king-sees-own-many-house-forms54",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr6-p-054",
+          "locator": "Krīḍā 54.38–39; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "The king visits two or three houses and sees himself and Kaśyapa’s son after eating in every house. This is explicitly a vision of both royal and divine multiplicity, not only repeated images of Vināyaka.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation5 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr6-event-king-search-witnesses",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr6-story-house-visits",
+        "sequence": 7,
+        "passage_ids": [
+          "gkr6-p-055"
+        ],
+        "participants": [
+          "gkr2-en-kasiking",
+          "gkr-en-vinayaka",
+          "gkr6-en-householders54",
+          "gkr6-en-bull55"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "The king’s exhausted house search ends at Śukla’s. His reproach meets the child’s reply and citizens’ testimony; he recognizes the deluding māyā.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr6-e-king-horse-search-confrontation55"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr6-e-king-horse-search-confrontation55",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr6-p-055",
+          "locator": "Krīḍā 55.1–13; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "After the sages leave, the still-confused king rides from house to house seeking Vināyaka, alleging he ate alone. Residents say the deity just left with the Kāśī king; their replies intensify his exhaustion. Hearing he is at Śukla’s, he goes there and finds the child riding a bull, compared to another three-eyed deity. He bows but reproaches the child for leaving him. Vināyaka says the king ate wherever he ate, calls the accusation false and directs him to witnesses. Citizens confirm the king’s recent meal beside Vināyaka. Regaining understanding, he praises the māyā that deludes even yogins and the universally honored forms.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation5 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr6-event-king-form-palanquin",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr6-story-house-visits",
+        "sequence": 8,
+        "passage_ids": [
+          "gkr6-p-055"
+        ],
+        "participants": [
+          "gkr2-en-kasiking",
+          "gkr-en-vinayaka",
+          "gkr6-en-palanquin55"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Meditation brings Vināyaka-form; māyā restores royal distinction. The child is carried toward the palace in a palanquin.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr6-e-king-meditative-form-restored55"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr6-e-king-meditative-form-restored55",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr6-p-055",
+          "locator": "Krīḍā 55.14–16; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "With goosebumps, the king meditates and attains Vināyaka’s form, compared to water poured into water. Through māyā he again has a distinct form. He places the child in a palanquin and brings him toward his own palace amid music, dance and song. This enacted temporary form/return is distinct from the much later final realm outcome in53.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation5 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gkr-en-vinayaka",
+      "name": "Vināyaka (Kṛta manifestation)",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [
+        {
+          "name": "Mahotkaṭa",
+          "evidence_ids": [
+            "gkr-e-vinayaka-birth",
+            "gkr-e-mahotkata-rites"
+          ]
+        },
+        {
+          "name": "Kaśyapanandana",
+          "evidence_ids": [
+            "gkr-e-vinayaka-birth",
+            "gkr-e-mahotkata-rites"
+          ]
+        },
+        {
+          "name": "Brahmaṇaspati",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-one"
+          ]
+        },
+        {
+          "name": "Bhārabhūti",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-one"
+          ]
+        },
+        {
+          "name": "Surānanda",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-one"
+          ]
+        },
+        {
+          "name": "Sarvapriya",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-one"
+          ]
+        },
+        {
+          "name": "Virūpākṣa",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-one"
+          ]
+        },
+        {
+          "name": "Bhālacandra",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-one"
+          ]
+        },
+        {
+          "name": "Paraśuhasta",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-one"
+          ]
+        },
+        {
+          "name": "Siṃhavāhana",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-one"
+          ]
+        },
+        {
+          "name": "Mālādhara",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-two"
+          ]
+        },
+        {
+          "name": "Phaṇirājāsana",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-two"
+          ]
+        },
+        {
+          "name": "Dhanañjaya",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-two"
+          ]
+        },
+        {
+          "name": "Prabhañjana",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-two"
+          ]
+        },
+        {
+          "name": "Gajānana (Bhṛśuṇḍī encounter)",
+          "evidence_ids": [
+            "gkr2-e-second-embassy",
+            "gkr2-e-devotional-form"
+          ]
+        },
+        {
+          "name": "Āśāpūraka",
+          "evidence_ids": [
+            "gkr2-e-bhrusundi-boons"
+          ]
+        },
+        {
+          "name": "Dīnanātha",
+          "evidence_ids": [
+            "gkr2-e-poor-house-meal"
+          ]
+        },
+        {
+          "name": "Varada Vināyaka",
+          "evidence_ids": [
+            "gkr2-e-sages-knowledge-shrine"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "gkr-e-ages",
+        "gkr-e-aditi-boon",
+        "gkr-e-vinayaka-birth",
+        "gkr-e-mahotkata-rites",
+        "gkr-e-assembly-gifts-one",
+        "gkr-e-assembly-gifts-two",
+        "gkr-e-indra-gifts-boon",
+        "gkr2-e-seventh-year",
+        "gkr2-e-wedding-commission",
+        "gkr2-e-aditi-entrustment",
+        "gkr2-e-sun-weapon-seized",
+        "gkr2-e-sons-threat-king",
+        "gkr2-e-sons-breath-return",
+        "gkr2-e-thousand-host",
+        "gkr2-e-kasi-entry",
+        "gkr2-e-child-demons",
+        "gkr2-e-whirlwinds",
+        "gkr2-e-stone-demon",
+        "gkr2-e-palace-hospitality",
+        "gkr2-e-dharmadatta-invites",
+        "gkr2-e-donkey-demons",
+        "gkr2-e-elephant-demon",
+        "gkr2-e-dharmadatta-offering",
+        "gkr2-e-jrmbha-poison",
+        "gkr2-e-dharmadatta-return",
+        "gkr2-e-wedding-postponement",
+        "gkr2-e-king-flight",
+        "gkr2-e-city-rescue",
+        "gkr2-e-city-gratitude",
+        "gkr2-e-remote-offering",
+        "gkr2-e-first-embassy",
+        "gkr2-e-devotee-refusal",
+        "gkr2-e-first-return",
+        "gkr2-e-second-embassy",
+        "gkr2-e-devotional-form",
+        "gkr2-e-manifestation-purpose",
+        "gkr2-e-bhrusundi-boons",
+        "gkr2-e-meeting-aftermath",
+        "gkr2-e-astrologer-entry",
+        "gkr2-e-astrologer-advice",
+        "gkr2-e-astrologer-child-trap",
+        "gkr2-e-ring-death",
+        "gkr2-e-well-conspiracy",
+        "gkr2-e-well-struggle-rescue",
+        "gkr2-e-well-mutual-death",
+        "gkr2-e-well-aftermath",
+        "gkr2-e-trio-plan",
+        "gkr2-e-banyan-bird",
+        "gkr2-e-bird-defeat-trio",
+        "gkr2-e-trio-aftermath",
+        "gkr2-e-false-aditi-reception",
+        "gkr2-e-poisoned-laddu-weight",
+        "gkr2-e-bhramari-revealed",
+        "gkr2-e-bhramari-hymn-benefit",
+        "gkr2-e-citizen-invitation",
+        "gkr2-e-visit-assent",
+        "gkr2-e-sages-visit-judge",
+        "gkr2-e-poor-house-meal",
+        "gkr2-e-sukla-boon",
+        "gkr2-e-citizens-disappointment",
+        "gkr2-e-many-households",
+        "gkr2-e-sages-universal-vision",
+        "gkr2-e-sages-knowledge-shrine",
+        "gkr2-e-shrine-and-bhakti",
+        "gkr5-e-mudgala-first-realm-prediction",
+        "gkr5-e-king-separation-recap",
+        "gkr5-e-realm-lotus-bed-attendants",
+        "gkr5-e-pramoda-amoda-dispatch",
+        "gkr5-e-king-farewell-bodily-departure",
+        "gkr5-e-reunion-lotus-bed-attendants53",
+        "gkr5-e-king-vinayaka-reunion",
+        "gkr5-e-lord-recalls-royal-house-and-mudgala-dispatch",
+        "gkr5-e-king-reunion-hymn",
+        "gkr5-e-king-no-rebirth-request-grant",
+        "gkr5-e-king-hymn-transmission-benefits",
+        "gkr6-e-citizens-meal-requests54",
+        "gkr6-e-deity-and-king-many-house-visits54",
+        "gkr6-e-king-sees-own-many-house-forms54",
+        "gkr6-e-sanaka-sanandana-house-search54",
+        "gkr6-e-lion-tenarm-vision54",
+        "gkr6-e-sages-image-shrine-installation54",
+        "gkr6-e-sages-return-account-benefits54",
+        "gkr6-e-king-horse-search-confrontation55",
+        "gkr6-e-king-meditative-form-restored55",
+        "gkr6-e-sukla-silent-wealth-gift55",
+        "gkr6-e-sukla-wife-wealth-discovery55",
+        "gkr6-e-envoys-lightning-attack55",
+        "gkr6-e-envoys-confession-five-fathers55",
+        "gkr6-e-envoys-abhaya-release55",
+        "gkr6-e-envoys-earlier-demon-recap56-first",
+        "gkr6-e-envoys-earlier-demon-recap56-second",
+        "gkr6-e-envoys-house-meal-report56",
+        "gkr6-e-royal-alarm-arms57",
+        "gkr6-e-vinayaka-roar-siddhi-army58",
+        "gkr6-e-created-leader-food-head-order58",
+        "gkr6-e-kalapurusa-rest-request-reabsorption58",
+        "gkr6-e-brahma-created-leader-explanation59",
+        "gkr6-e-king-ministersons-narantaka-interior-cosmos59",
+        "gkr6-e-king-head-touch-knowledge-remaya59",
+        "gkr6-e-king-amba-restored-population59",
+        "gkr6-e-narantaka-resolve-boasts60",
+        "gkr6-e-king-warning-boon-pride60",
+        "gkr6-e-axe-mountains-shapeshift-wrestling60",
+        "gkr6-e-tree-mountain-counters-and-king-false-death60",
+        "gkr6-e-pinaka-arrows-appearance-and-arm-cuts60",
+        "gkr6-e-narantaka-leg-severance-regrowth61",
+        "gkr6-e-narantaka-head-arrow-regrowth61",
+        "gkr6-e-narantaka-many-heads-axe61",
+        "gkr6-e-narantaka-day-night-identity-delusion61",
+        "gkr6-e-virat-toenail-narantaka-death61",
+        "gkr6-e-earth-half-burden-after-narantaka61",
+        "gkr6-e-citizen-devotion-nonseparation-request61",
+        "gkr6-e-parents-kasi-dhumraksa-recap62",
+        "gkr6-e-king-devantaka-alarm-prayer63",
+        "gkr6-e-siddhi-remembers-eight-powers63"
+      ]
+    },
+    {
+      "id": "gkr2-en-kasiking",
+      "name": "Unnamed king of Kāśī",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr2-e-wedding-commission",
+        "gkr2-e-dharmadatta-invites",
+        "gkr2-e-dharmadatta-return",
+        "gkr2-e-wedding-postponement",
+        "gkr2-e-king-flight",
+        "gkr2-e-city-gratitude",
+        "gkr2-e-remote-offering",
+        "gkr2-e-first-embassy",
+        "gkr2-e-devotee-refusal",
+        "gkr2-e-first-return",
+        "gkr2-e-second-embassy",
+        "gkr2-e-devotional-form",
+        "gkr2-e-meeting-aftermath",
+        "gkr2-e-astrologer-entry",
+        "gkr2-e-astrologer-advice",
+        "gkr2-e-ring-death",
+        "gkr2-e-well-conspiracy",
+        "gkr2-e-well-struggle-rescue",
+        "gkr2-e-well-aftermath",
+        "gkr2-e-trio-aftermath",
+        "gkr2-e-false-aditi-reception",
+        "gkr2-e-poisoned-laddu-weight",
+        "gkr2-e-bhramari-revealed",
+        "gkr2-e-citizen-invitation",
+        "gkr2-e-sages-visit-judge",
+        "gkr2-e-many-households",
+        "gkr2-e-shrine-and-bhakti",
+        "gkr2-e-narantaka-plunder",
+        "gkr2-e-kasi-entry",
+        "gkr2-e-whirlwinds",
+        "gkr2-e-palace-hospitality",
+        "gkr5-e-realm-introduction49",
+        "gkr5-e-mudgala-first-realm-prediction",
+        "gkr5-e-king-separation-recap",
+        "gkr5-e-king-same-body-request-grant",
+        "gkr5-e-realm-immunity-and-king-departure-preview",
+        "gkr5-e-king-final-worship",
+        "gkr5-e-pramoda-amoda-dispatch",
+        "gkr5-e-king-farewell-bodily-departure",
+        "gkr5-e-journey-preta-first-view",
+        "gkr5-e-journey-dark-void-supporting-saktis",
+        "gkr5-e-journey-svananda-city-water-arrival",
+        "gkr5-e-reunion-lotus-bed-attendants53",
+        "gkr5-e-king-vinayaka-reunion",
+        "gkr5-e-lord-recalls-royal-house-and-mudgala-dispatch",
+        "gkr5-e-king-reunion-hymn",
+        "gkr5-e-king-no-rebirth-request-grant",
+        "gkr6-e-deity-and-king-many-house-visits54",
+        "gkr6-e-king-sees-own-many-house-forms54",
+        "gkr6-e-king-horse-search-confrontation55",
+        "gkr6-e-king-meditative-form-restored55",
+        "gkr6-e-envoys-abhaya-release55",
+        "gkr6-e-envoys-house-meal-report56",
+        "gkr6-e-narantaka-fury-war-order56",
+        "gkr6-e-royal-alarm-arms57",
+        "gkr6-e-minister-conditional-surrender-advice57",
+        "gkr6-e-royal-battle-success-and-capture57",
+        "gkr6-e-amba-captured-king-lament58",
+        "gkr6-e-king-ministersons-narantaka-interior-cosmos59",
+        "gkr6-e-king-rescue-recap-and-questions59",
+        "gkr6-e-king-head-touch-knowledge-remaya59",
+        "gkr6-e-king-unnamed-mother-reunion59",
+        "gkr6-e-king-amba-restored-population59",
+        "gkr6-e-king-warning-boon-pride60",
+        "gkr6-e-tree-mountain-counters-and-king-false-death60",
+        "gkr6-e-earth-half-burden-after-narantaka61",
+        "gkr6-e-citizen-devotion-nonseparation-request61",
+        "gkr6-e-parents-kasi-dhumraksa-recap62",
+        "gkr6-e-king-devantaka-alarm-prayer63"
+      ]
+    },
+    {
+      "id": "gkr2-en-sukla",
+      "name": "Śukla, poor Vedic householder",
+      "type": "DEVOTEE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr2-e-poor-house-preparation",
+        "gkr2-e-poor-house-meal",
+        "gkr2-e-sukla-boon",
+        "gkr2-e-leaf-devotion-recap",
+        "gkr5-e-mudgala-first-realm-prediction",
+        "gkr5-e-king-separation-recap",
+        "gkr5-e-return-to-sukla-chronology-frame",
+        "gkr6-e-citizens-meal-requests54",
+        "gkr6-e-sanaka-sanandana-house-search54",
+        "gkr6-e-sukla-silent-wealth-gift55",
+        "gkr6-e-sukla-wife-wealth-discovery55"
+      ]
+    },
+    {
+      "id": "gkr6-en-householders54",
+      "name": "Kāśī householders and meal-inviting citizens in54",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr6-e-citizens-meal-requests54",
+        "gkr6-e-deity-and-king-many-house-visits54",
+        "gkr6-e-envoys-abhaya-release55"
+      ]
+    },
+    {
+      "id": "gkr6-en-sattvika-guests54",
+      "name": "Sāttvika visitors waiting at Śukla’s house",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr6-e-citizens-meal-requests54"
+      ]
+    },
+    {
+      "id": "gkr6-en-rajasika-guests54",
+      "name": "Rājasika visitors pressing the sleeping child",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr6-e-citizens-meal-requests54"
+      ]
+    },
+    {
+      "id": "gkr6-en-king-house-forms54",
+      "name": "Simultaneous Kāśī king forms in every house",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr6-e-deity-and-king-many-house-visits54",
+        "gkr6-e-king-sees-own-many-house-forms54"
+      ],
+      "notes": "Reported royal multiplicity, not additional independent kings or new biological identities."
+    },
+    {
+      "id": "gkr6-en-bull55",
+      "name": "Bull ridden by the child at Śukla’s courtyard",
+      "type": "VAHANA",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr6-e-king-horse-search-confrontation55"
+      ]
+    },
+    {
+      "id": "gkr6-en-palanquin55",
+      "name": "Vināyaka’s royal palanquin55",
+      "type": "VAHANA",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr6-e-king-meditative-form-restored55",
+        "gkr6-e-envoys-lightning-attack55"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "gkr6-rel-bull-riding55",
+      "subject_id": "gkr-en-vinayaka",
+      "predicate": "rides",
+      "object_id": "gkr6-en-bull55",
+      "evidence_ids": [
+        "gkr6-e-king-horse-search-confrontation55"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr6-ass-bull-riding55"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "gkr6-power-house-multiplicity",
+      "type": "POWER",
+      "recipient_id": "gkr-en-vinayaka",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr6-e-deity-and-king-many-house-visits54",
+        "gkr6-e-king-sees-own-many-house-forms54"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "Enacted divine and royal multiplicity; comparison with pot-space/reflected Suns retained.",
+      "motive": null,
+      "austerity_or_circumstances": "Citizens are disappointed after the child refuses a second meal.",
+      "requested": null,
+      "granted": null,
+      "mechanism": "One becomes countless, visits each home simultaneously with royal forms and accepts meals/plays/teaching.",
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [
+        "gkr6-event-many-house-gifts",
+        "gkr6-event-king-own-forms"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr6-e-deity-and-king-many-house-visits54",
+          "gkr6-e-king-sees-own-many-house-forms54"
+        ],
+        "austerity_or_circumstances": [
+          "gkr6-e-deity-and-king-many-house-visits54",
+          "gkr6-e-king-sees-own-many-house-forms54"
+        ],
+        "mechanism": [
+          "gkr6-e-deity-and-king-many-house-visits54",
+          "gkr6-e-king-sees-own-many-house-forms54"
+        ],
+        "later_event_ids": [
+          "gkr6-e-deity-and-king-many-house-visits54",
+          "gkr6-e-king-sees-own-many-house-forms54"
+        ]
+      }
+    },
+    {
+      "id": "gkr6-power-house-wish-fulfillment",
+      "type": "POWER",
+      "recipient_id": "gkr6-en-householders54",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr6-e-deity-and-king-many-house-visits54"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "No individually unstated wish or blanket invulnerability inferred.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Each person’s desired wish is fulfilled during the simultaneous home visits.",
+      "mechanism": null,
+      "trigger": "The pleased Lord’s visits and devotional household service.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr6-e-deity-and-king-many-house-visits54"
+        ],
+        "granted": [
+          "gkr6-e-deity-and-king-many-house-visits54"
+        ],
+        "trigger": [
+          "gkr6-e-deity-and-king-many-house-visits54"
+        ]
+      }
+    },
+    {
+      "id": "gkr6-power-king-form55",
+      "type": "POWER",
+      "recipient_id": "gkr2-en-kasiking",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr6-e-king-meditative-form-restored55"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "Unstated terms remain null; no later counter inferred.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "Meditative Vināyaka-form attainment followed by restoration of a distinct royal form through māyā.",
+      "trigger": null,
+      "restrictions": null,
+      "duration": "Temporary in the narrated sequence.",
+      "counter": null,
+      "later_event_ids": [
+        "gkr6-event-king-form-palanquin"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr6-e-king-meditative-form-restored55"
+        ],
+        "mechanism": [
+          "gkr6-e-king-meditative-form-restored55"
+        ],
+        "duration": [
+          "gkr6-e-king-meditative-form-restored55"
+        ],
+        "later_event_ids": [
+          "gkr6-e-king-meditative-form-restored55"
+        ]
+      }
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "gkr6-ass-bull-riding55",
+      "subject_id": "gkr-en-vinayaka",
+      "predicate": "rides",
+      "object_id": "gkr6-en-bull55",
+      "value": null,
+      "evidence_ids": [
+        "gkr6-e-king-horse-search-confrontation55"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ]
+}

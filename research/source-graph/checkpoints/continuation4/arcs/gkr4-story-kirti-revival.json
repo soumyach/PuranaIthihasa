@@ -1,0 +1,3275 @@
+{
+  "checkpoint": "continuation4",
+  "completed_arc_id": "gkr4-story-kirti-revival",
+  "graph_sha256": "d3e53f6fb2ee6852a3b4d4e6ee677a24abac85e4ede403205172dfa77aa4306a",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checks complete; independent review selective. All declared interpretation gaps remain explicit.",
+  "story": {
+    "id": "gkr4-story-kirti-revival",
+    "title": "Kīrti’s worship, child revival, renewed divine grants and Paraśubāhu’s completed reign",
+    "source_id": "gp-src-ganesha",
+    "witness_id": "gp-wit-sd-krida",
+    "scope": "Main Kīrti frame: Krīḍā32–33;38.1–20;48.24–57;49.1–18. Embedded histories retain their separately audited spines.",
+    "event_ids": [
+      "gkr4-event-sami-frame",
+      "gkr4-event-royal-family",
+      "gkr4-event-kirti-refuge",
+      "gkr4-event-dream",
+      "gkr4-event-son-and-poison",
+      "gkr4-event-revival",
+      "gkr4-event-teaching",
+      "gkr5-event-kirti-easy-name38",
+      "gkr5-event-kirti-shrine",
+      "gkr5-event-kirti-request",
+      "gkr5-event-kirti-grant",
+      "gkr5-event-kirti-coronation",
+      "gkr5-event-kirti-rule-outcome"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Earlier worship/birth/poison/revival plus newly read renewed request/grant, actual coronation, thousand-year rule, succession and divine-form outcome. Future-outcome omission removed by48–49actual narration.",
+    "missing_sections": [],
+    "editorial_notes": "Main frame completion does not upgrade separately partial embedded histories or the whole Vināyaka cycle. Independent review remains separate."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "gkr4-event-sami-frame",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-kirti-revival",
+        "sequence": 1,
+        "passage_ids": [
+          "gkr4-p-032"
+        ],
+        "participants": [
+          "gp-en-brahma",
+          "gp-en-vyasa",
+          "gkr-en-siva",
+          "gkr-en-uma",
+          "gp-en-ganesha",
+          "gkr4-en-priyavrata32"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Brahmā reports the Lord’s śamī teaching to Priyavrata. Vyāsa asks the king’s identity; a nested Śiva–Pārvatī conversation opens his history.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr4-e-sami-frame32"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr4-e-sami-frame32",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr4-p-032",
+          "locator": "Krīḍā 32.1–10; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "Brahmā reports Gajānana’s teaching to Priyavrata: śamī leaves please him more than sacrifices, gifts, vows, recitation or other flowers. Uttering the name, remembering and touching remove verbal, mental and bodily sins respectively. Daily devotional worship, meditation and bowing give an unobstructed life, knowledge, sin removal, fulfilled desires and steadiness. Vyāsa asks who Priyavrata was and how this was taught. Brahmā introduces a Śiva–Pārvatī conversation in which Pārvatī asks why śamī is dear to Gajānana.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation4 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr4-event-royal-family",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-kirti-revival",
+        "sequence": 2,
+        "passage_ids": [
+          "gkr4-p-032"
+        ],
+        "participants": [
+          "gkr4-en-priyavrata32",
+          "gkr4-en-kirti32",
+          "gkr4-en-prabha32",
+          "gkr4-en-dhurta32",
+          "gkr4-en-kusala32",
+          "gkr4-en-padmanabhi32",
+          "gkr4-en-pancala-princess32"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Priyavrata’s wives and ministers are introduced. Prabhā wins his preference while Kīrti is rejected. Prabhā’s son receives rites, initiation and a princess’s marriage; the first wife is reduced to service and kicked down.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr4-e-priyavrata-family"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr4-e-priyavrata-family",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr4-p-032",
+          "locator": "Krīḍā 32.11–24; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "Śiva describes wise, righteous and generous Priyavrata, who treats his subjects as sons. His first wife is Kīrti, the other Prabhā; Dhūrta and Kuśala are his ministers, skilled in policy and compared to Ṣaḍānana in valor. Prabhā captivates him. He cannot bear separation from her, scorns Kīrti, ignores her words and gifts and even thinks of her death. Prabhā bears Padmanābhi; the king performs birth rites, names him, initiates him in his fifth year and arranges marriage to a Pañcāla princess. Priyavrata is called lord of Madra. Kīrti, reduced to a servant, comes to massage his feet and is kicked down by her co-wife.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation4 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr4-event-kirti-refuge",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-kirti-revival",
+        "sequence": 3,
+        "passage_ids": [
+          "gkr4-p-032"
+        ],
+        "participants": [
+          "gkr4-en-kirti32",
+          "gkr4-en-devala32",
+          "gkr4-en-kirti-image32",
+          "gkr4-en-kirti-hymn32",
+          "gp-en-ganesha"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Kīrti despairs and considers Hari’s aid to Draupadī. Devala teaches Gajānana worship. She worships the Mandāra image with sixteen services and a hymn framed by five-deity non-difference.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr4-e-kirti-worship-hymn"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr4-e-kirti-worship-hymn",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr4-p-032",
+          "locator": "Krīḍā 32.25–44; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "Ashamed and weeping, Kīrti returns home. She thinks of Hari’s rescue of Draupadī through remembrance and considers fasting to death, poison or drowning, but cannot decide. Priest Devala arrives and teaches Gajānana worship that ends distress and fulfills desires. She obtains a Mandāra-made image, bathes and worships. The passage teaches Gaṇeśa’s priority and the non-difference of five divine forms, one Supreme appearing for the world’s benefit; differentiating them brings hell. She performs sixteen services with dūrvā, flowers, gifts and bows. Her hymn identifies the Lord with the world’s cause, named gods, nature, pleasure and pain, sons and wealth, Prakṛti and Puruṣa, all times, refuge, ritual and knowledge, and all mantra and tantra procedures.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation4 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr4-event-dream",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-kirti-revival",
+        "sequence": 4,
+        "passage_ids": [
+          "gkr4-p-033"
+        ],
+        "participants": [
+          "gkr4-en-kirti32",
+          "gkr4-en-kirti-friends33",
+          "gkr4-en-kirti-image32",
+          "gkr4-en-ksipraprasadana33",
+          "gp-en-ganesha"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Unable to obtain dūrvā, her friends bring śamī. At year’s end a dream gives unsolicited marital and son grants, predicts fourth-year poison death and Gṛtsamada’s revival, and promises hymn-reading fruits.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr4-e-kirti-dream-boon"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr4-e-kirti-dream-boon",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr4-p-033",
+          "locator": "Krīḍā 33.1–16; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "Kīrti worships and sings the hymn daily. Her friends cannot find dūrvā in Śukra month and bring śamī leaves instead. She offers them with the full services and observes a fast under her vow without dūrvā. At year’s end the image speaks in a dream, pleased by the leaves. Kīrti says nothing, so the deity promises a submissive husband, pleasures and a strong son devoted to her, named Kṣipraprasādana. He predicts poison death in the fourth year, revival by Gṛtsamada, long life and righteous rule. Hymn reading gives influence over king and others, progeny, wealth, Vedic learning and stronger intelligence; reading three times daily gives desired ends, firm devotion and final liberation. The deity vanishes; Kīrti wakes tearful and grateful, regarding sight and speech themselves as the highest fruit.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation4 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr4-event-son-and-poison",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-kirti-revival",
+        "sequence": 5,
+        "passage_ids": [
+          "gkr4-p-033"
+        ],
+        "participants": [
+          "gkr4-en-kirti32",
+          "gkr4-en-prabha32",
+          "gkr4-en-priyavrata32",
+          "gkr4-en-ksipraprasadana33",
+          "gkr4-en-kirti-friends33"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "After completing her vow, Kīrti waits. Prabhā’s illness changes the king’s preference; Kīrti bears the promised son. Jealous Prabhā gives poison, physicians fail, she is expelled and the child dies as his mother takes him into the forest.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr4-e-kirti-son-poison"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr4-e-kirti-son-poison",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr4-p-033",
+          "locator": "Krīḍā 33.17–38; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "Next morning Kīrti bathes and worships, completes her vow, restores the image to its previous place, honors her priest and awaits the remembered grants while meditating and reciting names. Prabhā develops a bleeding illness through prārabdha and divine will; unsuccessful treatment and her appearance lead the king to reject her. Kīrti’s tapas and Gaṇeśa’s grace bring beauty and the king’s attachment. She bears Kṣipraprasādana; the king gives gifts, stations brāhmaṇas in five directions, performs birth rites and names him. Jealous Prabhā fears his royal priority—the text uses jyeṣṭhaputra—and gives poisoned curd rice. She herself cries the alarm. Physicians diagnose poisoning; medicines and mantras fail, and the king expels Prabhā. Kīrti and friends carry the child into the forest. One yojana from the city he dies. She mourns, faints, recovers and remembers the deity.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation4 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr4-event-revival",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-kirti-revival",
+        "sequence": 6,
+        "passage_ids": [
+          "gkr4-p-033"
+        ],
+        "participants": [
+          "gkr4-en-kirti32",
+          "gkr4-en-ksipraprasadana33",
+          "gup2-en-001",
+          "gp-en-ganesha"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Gṛtsamada hears the grieving mother’s refuge request. He orders transfer of the śamī-worship merit into the child’s hand, and the boy rises. Kīrti reports the messengers’ battle and asks how the sage knew and why the leaf has this power.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr4-e-revival-merit-transfer"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr4-e-revival-merit-transfer",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr4-p-033",
+          "locator": "Krīḍā 33.39–53; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "Gṛtsamada, an ascetic and foremost Gaṇeśa devotee, passes and stops compassionately. Kīrti bows and asks him to revive the child born through Gaṇeśa’s grant and named by divine command, explaining her co-wife’s poisoning. After brief meditation, the sage orders her to offer the merit of her unknowing śamī worship into the child’s hand: through that grace he will rise. She transfers the merit; he rises as if sprinkled with nectar and she bows again. Asking how the sage knew and about the leaf’s greatness, Kīrti reports that Gaṇanātha’s messengers fought and drove away Yama’s messengers, revived the child and returned to their Lord. These battle statements belong to her speech; they are not a separately observed narrator scene.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation4 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr4-event-teaching",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-kirti-revival",
+        "sequence": 7,
+        "passage_ids": [
+          "gkr4-p-033"
+        ],
+        "participants": [
+          "gkr4-en-kirti32",
+          "gup2-en-001",
+          "gkr-en-narada",
+          "gkr-en-indra",
+          "gkr4-en-sami-devotion32"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Gṛtsamada describes the leaf’s superior devotional merit and introduces Nārada’s conversation with Indra before continuing the frame.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr4-e-grtsamada-sami-teaching"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr4-e-grtsamada-sami-teaching",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr4-p-033",
+          "locator": "Krīḍā 33.54–60; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "Gṛtsamada says uttering śamī’s name destroys crores of sins, and its glory could not be fully told in a kalpa. Vows, gifts, tapas, pilgrimage, five fires and winter water dwelling do not equal its worship. Morning or three-times-daily remembrance, bowing or worship with devotion and meditation on Gajānana please the Lord, who gives desires and final liberation. He introduces an old Nārada–Indra conversation.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation4 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr5-event-kirti-easy-name38",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-kirti-revival",
+        "sequence": 8,
+        "passage_ids": [
+          "gkr4-p-038"
+        ],
+        "participants": [
+          "gkr4-en-kirti32",
+          "gkr4-en-ksipraprasadana33",
+          "gup2-en-001"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "The revived child cannot pronounce the six-syllable mantra already taught. Kīrti asks an easy, effective formula leading to rule. Gṛtsamada gives his own four-syllable Dhundhirāja name, explains śamī worship and its royal/enemy-destroying benefit, and answers her request for the deity’s identity and history by beginning Durāsada and Divodāsa accounts.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr4-e-child-name-request"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr4-e-child-name-request",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr4-p-038",
+          "locator": "Krīḍā 38.1–20; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "Kīrti is satisfied with the plant account, but the revived child cannot pronounce his already taught six-syllable mantra. She asks for an easy, quickly effective mantra leading to royal rule. Gṛtsamada promises his own happiness-giving mantra, the four-syllable name Dhundhirāja. He lists divine worshippers seeking their respective cosmic functions, including Janārdana, Brahmā, Śiva, Indra, Sun, Varuṇa, Moon, Yama, Agni, Vāyu, Bṛhaspati, Uśanas, Śeṣa and celestial groups. Devotional śamī worship will make her son a ruler and destroyer of enemies. She asks the deity’s birth, nature, deeds, name and earlier worship. The sage promises Durāsada’s defeat, the name’s origin and the later Divodāsa account, as heard from Skanda’s teaching to Agastya.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation4 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr5-event-kirti-shrine",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-kirti-revival",
+        "sequence": 9,
+        "passage_ids": [
+          "gkr5-p-048"
+        ],
+        "participants": [
+          "gkr4-en-kirti32",
+          "gkr4-en-ksipraprasadana33",
+          "gup2-en-001",
+          "gkr4-en-vakratunda40"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "The sage departs. Mother and son go to the Kāśī festival, offer roadside leaves/flowers, remain fasting and receive the ten-armed vision and boon invitation.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr5-e-kirti-pilgrimage"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr5-e-kirti-pilgrimage",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr5-p-048",
+          "locator": "Krīḍā 48.24–40; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "After Gṛtsamada finishes the Dhundhi account, he receives permission and returns to his āśrama. Kīrti takes her son to Dhundhi’s shrine at Vārāṇasī on a Tuesday Māgha fourth. The festival’s wealth, food, ornaments and offerings obscure the divine face. Thinking herself poor and unable to match these gifts, she offers dūrvā, śamī and Mandāra gathered on the road and asks her son’s advancement. The Lord values their devotion more than wealth. Others leave; mother and son remain fasting. Dhundhirāja appears from the image with ten arms, crown, yellow clothing, tusk and jewels. They are overwhelmed and forget even worship/bowing. He invites a boon and declares the leaves/flowers more pleasing than riches.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation5 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr5-event-kirti-request",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-kirti-revival",
+        "sequence": 10,
+        "passage_ids": [
+          "gkr5-p-048"
+        ],
+        "participants": [
+          "gkr4-en-kirti32",
+          "gkr4-en-ksipraprasadana33",
+          "gkr4-en-vakratunda40"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "After a hymn and revival recap, Kīrti asks her son’s devotion, fame, detached rule, long life, virtues, strength and victory.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr5-e-kirti-renewed-request"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr5-e-kirti-renewed-request",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr5-p-048",
+          "locator": "Krīḍā 48.41–52; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "Kīrti regains bodily awareness and reluctantly speaks because the all-knowing Lord directs her. Her hymn praises cosmic transcendence and all forms, and calls her eyes, birth, husband, son, parents, lineage, knowledge and tapas blessed. She recalls divine naming, poison death and Gṛtsamada’s revival through devotion. She requests devotion for her son, outstanding three-world fame, detachment in rule, long life, virtues, strength, renown, happiness, patience, victory in every battle and love for brāhmaṇas and gods.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation5 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr5-event-kirti-grant",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-kirti-revival",
+        "sequence": 11,
+        "passage_ids": [
+          "gkr5-p-048"
+        ],
+        "participants": [
+          "gkr4-en-kirti32",
+          "gkr4-en-ksipraprasadana33",
+          "gkr4-en-vakratunda40",
+          "gkr5-en-parasubahu-axe48"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "All requests granted, with thousand-year life/thousand sacrifices, end-remembrance/form promise; own axe given and Parśubāhu name assigned.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr5-e-son-grant-axe-name"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr5-e-son-grant-axe-name",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr5-p-048",
+          "locator": "Krīḍā 48.53–57; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "Dhundhi explicitly grants every requested boon. He adds a thousand sacrifices, a thousand-year life, peaceful self-control, devotional rule, mastery through the four means, constant meditation/name recitation and attainment of his form after remembering him at the end. He gives the son his own axe and names him Parśubāhu, then disappears. These future statements are distinct from the enacted rule and later outcome in49.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation5 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr5-event-kirti-coronation",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-kirti-revival",
+        "sequence": 12,
+        "passage_ids": [
+          "gkr5-p-049"
+        ],
+        "participants": [
+          "gkr4-en-kirti32",
+          "gkr4-en-ksipraprasadana33",
+          "gkr4-en-priyavrata32",
+          "gkr5-en-karna49"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Homecoming, parental embrace/report and coronation rites; father takes forest-dwelling initiation and son begins rule.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr5-e-kirti-home-coronation"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr5-e-kirti-home-coronation",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr5-p-049",
+          "locator": "Krīḍā 49.1–14; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "After receiving the boons, Kīrti spends the remaining night, bathes and worships at dawn, then leaves with her son, happy yet grieving separation. Both chant Dhundhi’s name. The king’s procession, army and music bring them to Karṇapura, decorated with flags, sprinkling and incense. He smells and embraces his son’s head, addresses Kṣipraprasādana affectionately, gives gifts and hears Kīrti’s full report; the couple reunite. After some days, recognizing the son’s virtues and policy knowledge, he summons brāhmaṇas, friends and kings for auspicious coronation, rites, consecrated waters, Vedic chants and gifts. He takes forest-dwelling initiation; Paraśubāhu then rules.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation5 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr5-event-kirti-rule-outcome",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-kirti-revival",
+        "sequence": 13,
+        "passage_ids": [
+          "gkr5-p-049"
+        ],
+        "participants": [
+          "gkr4-en-ksipraprasadana33",
+          "gkr5-en-neck-image49",
+          "gkr5-en-son-family49",
+          "gkr5-en-successor49"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "A thousand-year righteous reign, constant leaf worship, wives/sons and generosity; succession followed by heaven for many kalpas in Dhundhi’s form.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr5-e-parasubahu-rule-outcome"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr5-e-parasubahu-rule-outcome",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr5-p-049",
+          "locator": "Krīḍā 49.15–18; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "Paraśubāhu rules by dharma and policy, gains three-world fame and wears a Mandāra-made Dhundhi image on his neck. He never worships without śamī and dūrvā. He enjoys many pleasures and wives according to the text’s dharmic description, begets sons and gives gifts. After ruling a thousand YEARS, he places a son in his position and goes to heaven, where he remains for many kalpas with Dhundhi’s form. No specific named wife or successor is supplied.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation5 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gp-en-brahma",
+      "name": "Brahmā",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-frame",
+        "gup-e-001",
+        "gup-e-024",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-036",
+        "gup-e-037",
+        "gup-e-038",
+        "gup-e-039",
+        "gup-e-040",
+        "gup-e-041",
+        "gup-e-042",
+        "gup-e-049",
+        "gup-e-050",
+        "gup-e-073",
+        "gup-e-084",
+        "gup-e-086",
+        "gup-e-089",
+        "gup-e-092",
+        "gup-e-094",
+        "gkr-e-frame",
+        "gup2-e-006",
+        "gup2-e-014",
+        "gup2-e-016",
+        "gup2-e-021",
+        "gup2-e-027",
+        "gup2-e-032",
+        "gup2-e-035",
+        "gup2-e-038",
+        "gup2-e-044",
+        "gup2-e-047",
+        "gup2-e-051",
+        "gup2-e-056",
+        "gup2-e-060",
+        "gup2-e-067",
+        "gkr2-e-remote-offering",
+        "gkr2-e-well-conspiracy",
+        "gkr2-e-trio-plan",
+        "gup3-e-005",
+        "gup3-e-008",
+        "gup3-e-012",
+        "gkr3-e-frame27",
+        "gkr3-e-virtuous-king",
+        "gkr3-e-succession27",
+        "gkr3-e-prior-merit-release",
+        "gkr3-e-kasyapa-creation",
+        "gkr3-e-indra-vishnu",
+        "gup4-e-010",
+        "gup4-e-013",
+        "gup4-e-014",
+        "gup4-e-016",
+        "gup4-e-035",
+        "gup4-e-036",
+        "gup4-e-050",
+        "gup4-e-051",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-055",
+        "gup4-e-056",
+        "gkr4-e-vamana-aftermath-image",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-durasada-conquest",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-dhundhiraja-name-aftermath",
+        "gup5-e-001",
+        "gup5-e-002",
+        "gup5-e-012",
+        "gup5-e-018",
+        "gup5-e-025",
+        "gup5-e-041",
+        "gup5-e-043",
+        "gup5-e-045",
+        "gup5-e-046",
+        "gup5-e-047",
+        "gup5-e-049",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-059",
+        "gup5-e-061",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066",
+        "gkr5-e-divodasa-rule",
+        "gkr5-e-marici-liberation",
+        "gkr5-e-realm-introduction49",
+        "gkr5-e-realm-cosmic-yogic-body",
+        "gkr5-e-king-final-worship",
+        "gkr5-e-king-reunion-hymn",
+        "gkr5-e-king-hymn-transmission-benefits",
+        "gkr5-e-return-to-sukla-chronology-frame"
+      ]
+    },
+    {
+      "id": "gp-en-ganesha",
+      "name": "Gaṇeśa",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-result",
+        "gup-e-001",
+        "gup-e-005",
+        "gup-e-008",
+        "gup-e-014",
+        "gup-e-021",
+        "gup-e-023",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-036",
+        "gup-e-037",
+        "gup-e-038",
+        "gup-e-039",
+        "gup-e-040",
+        "gup-e-042",
+        "gup-e-044",
+        "gup-e-045",
+        "gup-e-046",
+        "gup-e-047",
+        "gup-e-049",
+        "gup-e-051",
+        "gup-e-053",
+        "gup-e-054",
+        "gup-e-055",
+        "gup-e-056",
+        "gup-e-057",
+        "gup-e-058",
+        "gup-e-059",
+        "gup-e-060",
+        "gup-e-062",
+        "gup-e-063",
+        "gup-e-064",
+        "gup-e-065",
+        "gup-e-066",
+        "gup-e-067",
+        "gup-e-070",
+        "gup-e-071",
+        "gup-e-072",
+        "gup-e-073",
+        "gup-e-074",
+        "gup-e-075",
+        "gup-e-076",
+        "gup-e-085",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-088",
+        "gup-e-089",
+        "gup-e-090",
+        "gup-e-091",
+        "gup-e-092",
+        "gup-e-093",
+        "gup-e-094",
+        "gkr-e-ages",
+        "gup2-e-007",
+        "gup2-e-011",
+        "gup2-e-012",
+        "gup2-e-013",
+        "gup2-e-014",
+        "gup2-e-015",
+        "gup2-e-017",
+        "gup2-e-018",
+        "gup2-e-019",
+        "gup2-e-020",
+        "gup2-e-021",
+        "gup2-e-029",
+        "gup2-e-030",
+        "gup2-e-031",
+        "gup2-e-032",
+        "gup2-e-033",
+        "gup2-e-036",
+        "gup2-e-045",
+        "gup2-e-046",
+        "gup2-e-047",
+        "gup2-e-048",
+        "gup2-e-049",
+        "gup2-e-050",
+        "gup2-e-051",
+        "gup2-e-052",
+        "gup2-e-056",
+        "gup2-e-057",
+        "gup2-e-058",
+        "gup2-e-059",
+        "gup2-e-060",
+        "gup2-e-063",
+        "gup2-e-064",
+        "gup2-e-066",
+        "gkr2-e-leaf-and-vamana",
+        "gkr2-e-hunter-demon-liberation",
+        "gup3-e-004",
+        "gup3-e-005",
+        "gup3-e-006",
+        "gup3-e-007",
+        "gup3-e-008",
+        "gup3-e-009",
+        "gup3-e-010",
+        "gup3-e-011",
+        "gup3-e-012",
+        "gup3-e-013",
+        "gup3-e-014",
+        "gup3-e-015",
+        "gup3-e-016",
+        "gup3-e-017",
+        "gup3-e-018",
+        "gkr3-e-rama-father-varada",
+        "gkr3-e-incidental-worship",
+        "gkr3-e-prior-merit-release",
+        "gup4-e-002",
+        "gup4-e-003",
+        "gup4-e-005",
+        "gup4-e-009",
+        "gup4-e-010",
+        "gup4-e-011",
+        "gup4-e-012",
+        "gup4-e-015",
+        "gup4-e-016",
+        "gup4-e-017",
+        "gup4-e-018",
+        "gup4-e-027",
+        "gup4-e-028",
+        "gup4-e-029",
+        "gup4-e-031",
+        "gup4-e-033",
+        "gup4-e-034",
+        "gup4-e-035",
+        "gup4-e-038",
+        "gup4-e-040",
+        "gup4-e-042",
+        "gup4-e-044",
+        "gup4-e-048",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-057",
+        "gup4-e-058",
+        "gup4-e-059",
+        "gup4-e-060",
+        "gup4-e-061",
+        "gup4-e-062",
+        "gkr4-e-vamana-guru-tapas",
+        "gkr4-e-vamana-request-grant",
+        "gkr4-e-vamana-installation",
+        "gkr4-e-water-steps-promises",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-sages-vision-hymn",
+        "gkr4-e-trees-request-alternative",
+        "gkr4-e-tree-benefits",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-worship-vision",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-devi-ganesa-prayer",
+        "gup5-e-001",
+        "gup5-e-002",
+        "gup5-e-003",
+        "gup5-e-004",
+        "gup5-e-005",
+        "gup5-e-006",
+        "gup5-e-008",
+        "gup5-e-009",
+        "gup5-e-010",
+        "gup5-e-012",
+        "gup5-e-014",
+        "gup5-e-015",
+        "gup5-e-016",
+        "gup5-e-019",
+        "gup5-e-021",
+        "gup5-e-022",
+        "gup5-e-023",
+        "gup5-e-024",
+        "gup5-e-025",
+        "gup5-e-026",
+        "gup5-e-027",
+        "gup5-e-029",
+        "gup5-e-030",
+        "gup5-e-031",
+        "gup5-e-032",
+        "gup5-e-033",
+        "gup5-e-034",
+        "gup5-e-035",
+        "gup5-e-036",
+        "gup5-e-041",
+        "gup5-e-042",
+        "gup5-e-043",
+        "gup5-e-045",
+        "gup5-e-047",
+        "gup5-e-049",
+        "gup5-e-050",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-060",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066",
+        "gup5-e-067",
+        "gkr5-e-realm-introduction49"
+      ]
+    },
+    {
+      "id": "gp-en-vyasa",
+      "name": "Vyāsa",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-frame",
+        "gup-e-001",
+        "gup-e-024",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-033",
+        "gup-e-050",
+        "gup-e-073",
+        "gup-e-092",
+        "gkr-e-frame",
+        "gup2-e-006",
+        "gup2-e-016",
+        "gup2-e-021",
+        "gup2-e-032",
+        "gup2-e-035",
+        "gup2-e-044",
+        "gup2-e-051",
+        "gup2-e-060",
+        "gup2-e-067",
+        "gkr3-e-frame27",
+        "gkr3-e-samba-birth",
+        "gup4-e-035",
+        "gup4-e-036",
+        "gkr4-e-sami-frame32",
+        "gkr5-e-realm-introduction49",
+        "gkr5-e-king-final-worship",
+        "gkr5-e-return-to-sukla-chronology-frame"
+      ]
+    },
+    {
+      "id": "gkr-en-narada",
+      "name": "Nārada",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr-e-boys-narada",
+        "gkr3-e-indra-vishnu",
+        "gkr4-e-grtsamada-sami-teaching",
+        "gkr4-e-samika-mandara-family",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr5-e-dhundhi-mission",
+        "gkr5-e-realm-introduction49",
+        "gkr5-e-king-hymn-transmission-benefits"
+      ]
+    },
+    {
+      "id": "gkr-en-siva",
+      "name": "Śiva",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr-e-narada-initiation",
+        "gkr2-e-remote-offering",
+        "gkr2-e-sages-universal-vision",
+        "gkr3-e-siva-hiranya-grant",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-durasada-tapas-vision",
+        "gkr4-e-durasada-request-grant",
+        "gkr4-e-durasada-conquest",
+        "gkr4-e-bhasmasura-counter",
+        "gkr4-e-durasada-kasi-oppression",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-vakra-accepts-mission",
+        "gkr4-e-astra-counters",
+        "gkr4-e-durasada-restraint-surrender",
+        "gkr5-e-marici-liberation",
+        "gkr5-e-sinless-state-search",
+        "gkr5-e-dhundhi-mission",
+        "gkr5-e-siva-return-hymn",
+        "gkr5-e-siva-prayer-install-mukti",
+        "gkr5-e-realm-cosmic-yogic-body",
+        "gkr5-e-journey-kailasa"
+      ]
+    },
+    {
+      "id": "gkr-en-uma",
+      "name": "Umā",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [
+        {
+          "name": "Gaurī",
+          "evidence_ids": [
+            "gkr-e-postgita-variants"
+          ]
+        },
+        {
+          "name": "Pārvatī",
+          "evidence_ids": [
+            "gkr-e-postgita-residence"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "gkr-e-siva-appearance",
+        "gkr-e-postgita-variants",
+        "gkr-e-postgita-residence",
+        "gkr3-e-siva-hiranya-grant",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-durasada-tapas-vision",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-devi-ganesa-prayer",
+        "gkr4-e-vakra-radiance-emergence",
+        "gkr4-e-vakra-accepts-mission",
+        "gup5-e-059",
+        "gkr5-e-dhundhi-mission"
+      ]
+    },
+    {
+      "id": "gkr-en-indra",
+      "name": "Indra",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr-e-devantaka-arrives",
+        "gkr2-e-manifestation-purpose",
+        "gkr3-e-bali-policy",
+        "gkr3-e-indra-vishnu",
+        "gkr4-e-grtsamada-sami-teaching",
+        "gkr4-e-samika-mandara-family",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-child-name-request",
+        "gkr4-e-durasada-conquest",
+        "gkr4-e-devas-counsel",
+        "gkr5-e-journey-indra52"
+      ]
+    },
+    {
+      "id": "gup2-en-001",
+      "name": "Gṛtsamada",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup2-e-006",
+        "gup2-e-007",
+        "gup2-e-008",
+        "gup2-e-009",
+        "gup2-e-010",
+        "gup2-e-011",
+        "gup2-e-012",
+        "gup2-e-013",
+        "gup2-e-014",
+        "gup2-e-015",
+        "gup2-e-016",
+        "gup2-e-017",
+        "gup2-e-018",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-grtsamada-sami-teaching",
+        "gkr4-e-aurava-fire-saunaka",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-kirti-frame-close",
+        "gkr4-e-child-name-request",
+        "gkr5-e-two-foot-answer",
+        "gkr5-e-siva-prayer-install-mukti",
+        "gkr5-e-kirti-pilgrimage",
+        "gkr5-e-kirti-renewed-request"
+      ]
+    },
+    {
+      "id": "gkr4-en-priyavrata32",
+      "name": "Priyavrata, Madra king in śamī account",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family",
+        "gkr4-e-kirti-son-poison",
+        "gkr5-e-kirti-home-coronation"
+      ]
+    },
+    {
+      "id": "gkr4-en-kirti32",
+      "name": "Kīrti, Priyavrata’s first wife",
+      "type": "DEVOTEE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family",
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-kirti-son-poison",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-kirti-frame-close",
+        "gkr4-e-child-name-request",
+        "gkr5-e-two-foot-answer",
+        "gkr5-e-kirti-pilgrimage",
+        "gkr5-e-kirti-renewed-request",
+        "gkr5-e-kirti-home-coronation"
+      ]
+    },
+    {
+      "id": "gkr4-en-prabha32",
+      "name": "Prabhā, Priyavrata’s other wife",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family",
+        "gkr4-e-kirti-son-poison"
+      ]
+    },
+    {
+      "id": "gkr4-en-dhurta32",
+      "name": "Dhūrta, Priyavrata’s minister",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ]
+    },
+    {
+      "id": "gkr4-en-kusala32",
+      "name": "Kuśala, Priyavrata’s minister",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ]
+    },
+    {
+      "id": "gkr4-en-padmanabhi32",
+      "name": "Padmanābhi, Prabhā/Priyavrata’s son",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ]
+    },
+    {
+      "id": "gkr4-en-pancala-princess32",
+      "name": "Unnamed Pañcāla princess, Padmanābhi’s wife",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ]
+    },
+    {
+      "id": "gkr4-en-devala32",
+      "name": "Devala, Kīrti’s priest",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-son-poison"
+      ]
+    },
+    {
+      "id": "gkr4-en-kirti-image32",
+      "name": "Mandāra-made Gajānana image worshipped by Kīrti",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-kirti-son-poison"
+      ]
+    },
+    {
+      "id": "gkr4-en-kirti-friends33",
+      "name": "Kīrti’s friends/attendants",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-kirti-son-poison"
+      ]
+    },
+    {
+      "id": "gkr4-en-ksipraprasadana33",
+      "name": "Kṣipraprasādana, Kīrti’s son",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [
+        {
+          "name": "Parśubāhu",
+          "evidence_ids": [
+            "gkr5-e-son-grant-axe-name"
+          ]
+        },
+        {
+          "name": "Paraśubāhu",
+          "evidence_ids": [
+            "gkr5-e-parasubahu-rule-outcome"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-kirti-son-poison",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-kirti-frame-close",
+        "gkr4-e-child-name-request",
+        "gkr5-e-kirti-pilgrimage",
+        "gkr5-e-son-grant-axe-name",
+        "gkr5-e-kirti-home-coronation",
+        "gkr5-e-parasubahu-rule-outcome"
+      ]
+    },
+    {
+      "id": "gkr4-en-kirti-hymn32",
+      "name": "Kīrti’s Gajānana hymn",
+      "type": "TEXT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon"
+      ]
+    },
+    {
+      "id": "gkr4-en-sami-devotion32",
+      "name": "Śamī name/remembrance/touch/worship",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-sami-frame32",
+        "gkr4-e-grtsamada-sami-teaching"
+      ]
+    },
+    {
+      "id": "gkr4-en-vakratunda40",
+      "name": "Vakratunda, Pārvatī-radiance manifestation against Durāsada",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [
+        {
+          "name": "Vināyaka",
+          "evidence_ids": [
+            "gkr4-e-vakra-radiance-emergence"
+          ]
+        },
+        {
+          "name": "Gajānana",
+          "evidence_ids": [
+            "gkr4-e-vakra-radiance-emergence"
+          ]
+        },
+        {
+          "name": "Dhundhirāja",
+          "evidence_ids": [
+            "gkr4-e-dhundhiraja-name-aftermath"
+          ]
+        },
+        {
+          "name": "Dhundhi",
+          "evidence_ids": [
+            "gkr4-e-dhundhiraja-name-aftermath"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "gkr4-e-vakra-radiance-emergence",
+        "gkr4-e-vakra-accepts-mission",
+        "gkr4-e-axe-sword-wrestling",
+        "gkr4-e-astra-counters",
+        "gkr4-e-fiftysix-army-counter",
+        "gkr4-e-durasada-restraint-surrender",
+        "gkr4-e-dhundhiraja-name-aftermath",
+        "gkr5-e-two-foot-answer",
+        "gkr5-e-dhundhi-mission",
+        "gkr5-e-astrologer-powers",
+        "gkr5-e-siva-return-hymn",
+        "gkr5-e-kirti-pilgrimage",
+        "gkr5-e-kirti-renewed-request",
+        "gkr5-e-son-grant-axe-name"
+      ],
+      "notes": "DistinctfromKaśyapa/AditichildVināyakaandTretāsynopsisMayūreśvara."
+    },
+    {
+      "id": "gkr5-en-karna49",
+      "name": "Karṇapura, Priyavrata’s city",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr5-e-kirti-home-coronation"
+      ],
+      "notes": "Not silently merged with the differently contextualized Malava Karṇa city of Upāsanā."
+    },
+    {
+      "id": "gkr5-en-parasubahu-axe48",
+      "name": "Dhundhi’s own axe given to Kṣipraprasādana",
+      "type": "WEAPON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr5-e-son-grant-axe-name"
+      ]
+    },
+    {
+      "id": "gkr5-en-neck-image49",
+      "name": "Paraśubāhu’s Mandāra Dhundhi neck-image",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr5-e-parasubahu-rule-outcome"
+      ]
+    },
+    {
+      "id": "gkr5-en-son-family49",
+      "name": "Paraśubāhu’s unnamed wives and sons",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr5-e-parasubahu-rule-outcome"
+      ]
+    },
+    {
+      "id": "gkr5-en-successor49",
+      "name": "Unnamed son succeeding Paraśubāhu",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr5-e-parasubahu-rule-outcome"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "gkr4-rel-king-wife1",
+      "subject_id": "gkr4-en-priyavrata32",
+      "predicate": "spouse_of",
+      "object_id": "gkr4-en-kirti32",
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-king-wife1"
+    },
+    {
+      "id": "gkr4-rel-king-wife2",
+      "subject_id": "gkr4-en-priyavrata32",
+      "predicate": "spouse_of",
+      "object_id": "gkr4-en-prabha32",
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-king-wife2"
+    },
+    {
+      "id": "gkr4-rel-king-minister1",
+      "subject_id": "gkr4-en-dhurta32",
+      "predicate": "minister_of",
+      "object_id": "gkr4-en-priyavrata32",
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-king-minister1"
+    },
+    {
+      "id": "gkr4-rel-king-minister2",
+      "subject_id": "gkr4-en-kusala32",
+      "predicate": "minister_of",
+      "object_id": "gkr4-en-priyavrata32",
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-king-minister2"
+    },
+    {
+      "id": "gkr4-rel-padma-father",
+      "subject_id": "gkr4-en-padmanabhi32",
+      "predicate": "child_of",
+      "object_id": "gkr4-en-priyavrata32",
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-padma-father"
+    },
+    {
+      "id": "gkr4-rel-padma-mother",
+      "subject_id": "gkr4-en-padmanabhi32",
+      "predicate": "child_of",
+      "object_id": "gkr4-en-prabha32",
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-padma-mother"
+    },
+    {
+      "id": "gkr4-rel-padma-wife",
+      "subject_id": "gkr4-en-padmanabhi32",
+      "predicate": "spouse_of",
+      "object_id": "gkr4-en-pancala-princess32",
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-padma-wife"
+    },
+    {
+      "id": "gkr4-rel-pancala-father",
+      "subject_id": "gkr4-en-pancala-princess32",
+      "predicate": "child_of",
+      "object_id": "gkr4-en-pancala-king32",
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-pancala-father"
+    },
+    {
+      "id": "gkr4-rel-kirti-priest",
+      "subject_id": "gkr4-en-devala32",
+      "predicate": "instructs",
+      "object_id": "gkr4-en-kirti32",
+      "evidence_ids": [
+        "gkr4-e-kirti-worship-hymn"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-kirti-priest"
+    },
+    {
+      "id": "gkr4-rel-kirti-worship",
+      "subject_id": "gkr4-en-kirti32",
+      "predicate": "worships",
+      "object_id": "gkr4-en-kirti-image32",
+      "evidence_ids": [
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-kirti-worship"
+    },
+    {
+      "id": "gkr4-rel-ksipra-father",
+      "subject_id": "gkr4-en-ksipraprasadana33",
+      "predicate": "child_of",
+      "object_id": "gkr4-en-priyavrata32",
+      "evidence_ids": [
+        "gkr4-e-kirti-son-poison"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-ksipra-father"
+    },
+    {
+      "id": "gkr4-rel-ksipra-mother",
+      "subject_id": "gkr4-en-ksipraprasadana33",
+      "predicate": "child_of",
+      "object_id": "gkr4-en-kirti32",
+      "evidence_ids": [
+        "gkr4-e-kirti-son-poison"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-ksipra-mother"
+    },
+    {
+      "id": "gkr4-rel-prabha-poison",
+      "subject_id": "gkr4-en-prabha32",
+      "predicate": "poisons",
+      "object_id": "gkr4-en-ksipraprasadana33",
+      "evidence_ids": [
+        "gkr4-e-kirti-son-poison"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-prabha-poison"
+    },
+    {
+      "id": "gkr4-rel-prabha-expel",
+      "subject_id": "gkr4-en-priyavrata32",
+      "predicate": "expels",
+      "object_id": "gkr4-en-prabha32",
+      "evidence_ids": [
+        "gkr4-e-kirti-son-poison"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-prabha-expel"
+    },
+    {
+      "id": "gkr4-rel-gritsama-revive",
+      "subject_id": "gup2-en-001",
+      "predicate": "instructs_revival_of",
+      "object_id": "gkr4-en-ksipraprasadana33",
+      "evidence_ids": [
+        "gkr4-e-revival-merit-transfer"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-gritsama-revive"
+    },
+    {
+      "id": "gkr4-rel-mother-merit",
+      "subject_id": "gkr4-en-kirti32",
+      "predicate": "transfers_merit_to",
+      "object_id": "gkr4-en-ksipraprasadana33",
+      "evidence_ids": [
+        "gkr4-e-revival-merit-transfer"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-mother-merit"
+    },
+    {
+      "id": "gkr4-rel-gritsama-name",
+      "subject_id": "gup2-en-001",
+      "predicate": "proposes_mantra_for",
+      "object_id": "gkr4-en-ksipraprasadana33",
+      "evidence_ids": [
+        "gkr4-e-child-name-request"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-gritsama-name"
+    },
+    {
+      "id": "gkr4-rel-mantra-child",
+      "subject_id": "gkr4-en-ksipraprasadana33",
+      "predicate": "proposed_recipient_of",
+      "object_id": "gkr4-en-dhundhi-name38",
+      "evidence_ids": [
+        "gkr4-e-child-name-request"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-mantra-child"
+    },
+    {
+      "id": "gkr4-rel-skanda-account",
+      "subject_id": "gup-en-064",
+      "predicate": "teaches_account_to",
+      "object_id": "gkr4-en-agastya38",
+      "evidence_ids": [
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-skanda-account"
+    },
+    {
+      "id": "gkr5-rel-son-axe",
+      "subject_id": "gkr4-en-ksipraprasadana33",
+      "predicate": "receives",
+      "object_id": "gkr5-en-parasubahu-axe48",
+      "evidence_ids": [
+        "gkr5-e-son-grant-axe-name"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr5-ass-son-axe"
+    },
+    {
+      "id": "gkr5-rel-axe-giver",
+      "subject_id": "gkr4-en-vakratunda40",
+      "predicate": "gives",
+      "object_id": "gkr5-en-parasubahu-axe48",
+      "evidence_ids": [
+        "gkr5-e-son-grant-axe-name"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr5-ass-axe-giver"
+    },
+    {
+      "id": "gkr5-rel-father-coronation",
+      "subject_id": "gkr4-en-priyavrata32",
+      "predicate": "coronates",
+      "object_id": "gkr4-en-ksipraprasadana33",
+      "evidence_ids": [
+        "gkr5-e-kirti-home-coronation"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr5-ass-father-coronation"
+    },
+    {
+      "id": "gkr5-rel-father-city",
+      "subject_id": "gkr4-en-priyavrata32",
+      "predicate": "rules_from",
+      "object_id": "gkr5-en-karna49",
+      "evidence_ids": [
+        "gkr5-e-kirti-home-coronation"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr5-ass-father-city"
+    },
+    {
+      "id": "gkr5-rel-son-image",
+      "subject_id": "gkr4-en-ksipraprasadana33",
+      "predicate": "wears",
+      "object_id": "gkr5-en-neck-image49",
+      "evidence_ids": [
+        "gkr5-e-parasubahu-rule-outcome"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr5-ass-son-image"
+    },
+    {
+      "id": "gkr5-rel-family-of",
+      "subject_id": "gkr5-en-son-family49",
+      "predicate": "family_of",
+      "object_id": "gkr4-en-ksipraprasadana33",
+      "evidence_ids": [
+        "gkr5-e-parasubahu-rule-outcome"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr5-ass-family-of"
+    },
+    {
+      "id": "gkr5-rel-successor-father",
+      "subject_id": "gkr5-en-successor49",
+      "predicate": "child_of",
+      "object_id": "gkr4-en-ksipraprasadana33",
+      "evidence_ids": [
+        "gkr5-e-parasubahu-rule-outcome"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr5-ass-successor-father"
+    },
+    {
+      "id": "gkr5-rel-successor-rule",
+      "subject_id": "gkr5-en-successor49",
+      "predicate": "succeeds",
+      "object_id": "gkr4-en-ksipraprasadana33",
+      "evidence_ids": [
+        "gkr5-e-parasubahu-rule-outcome"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr5-ass-successor-rule"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "gkr4-power-sami-devotion",
+      "type": "POWER",
+      "recipient_id": "gkr4-en-sami-devotion32",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr4-e-sami-frame32",
+        "gkr4-e-grtsamada-sami-teaching"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "AttributedLord/sageteaching;conditionsretaineddistinct,nottestedallreaders.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Removal of verbal, mental and bodily sin, unobstructed life, knowledge, desires, steadiness and final liberation.",
+      "mechanism": "Gaṇeśa’s satisfaction through śamī devotion.",
+      "trigger": "Name, remembrance and touch respectively; daily or morning/three-sandhyā devotional worship, meditation and bowing.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr4-e-sami-frame32",
+          "gkr4-e-grtsamada-sami-teaching"
+        ],
+        "granted": [
+          "gkr4-e-sami-frame32",
+          "gkr4-e-grtsamada-sami-teaching"
+        ],
+        "mechanism": [
+          "gkr4-e-sami-frame32",
+          "gkr4-e-grtsamada-sami-teaching"
+        ],
+        "trigger": [
+          "gkr4-e-sami-frame32",
+          "gkr4-e-grtsamada-sami-teaching"
+        ]
+      }
+    },
+    {
+      "id": "gkr4-power-kirti-dream",
+      "type": "BOON",
+      "recipient_id": "gkr4-en-kirti32",
+      "grantor_id": "gp-en-ganesha",
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-kirti-son-poison",
+        "gkr4-e-revival-merit-transfer"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "Unsolicited promises: Kīrti says nothing. Predicted future rule/long life are distinguished from the narrated birth, poisoning and revival. Actual later coronation/thousand-year reign/divine-form outcome now extracted in gkr5-e-kirti-home-coronation andgkr5-e-parasubahu-rule-outcome. The original dream promise remains a separate earlier attestation.",
+      "motive": null,
+      "austerity_or_circumstances": "Daily image worship and hymn; śamī replaces unavailable dūrvā, a fasting vow and a dream at year’s end.",
+      "requested": null,
+      "granted": "Husband’s submission, pleasures and a strong son devoted to his mother, named Kṣipraprasādana; fourth-year poison death, Gṛtsamada’s revival, long life and righteous rule.",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [
+        "gkr4-event-dream",
+        "gkr4-event-son-and-poison",
+        "gkr4-event-revival"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr4-e-kirti-dream-boon"
+        ],
+        "grantor_id": [
+          "gkr4-e-kirti-dream-boon"
+        ],
+        "austerity_or_circumstances": [
+          "gkr4-e-kirti-worship-hymn",
+          "gkr4-e-kirti-dream-boon"
+        ],
+        "granted": [
+          "gkr4-e-kirti-dream-boon"
+        ],
+        "later_event_ids": [
+          "gkr4-e-kirti-dream-boon",
+          "gkr4-e-kirti-son-poison",
+          "gkr4-e-revival-merit-transfer"
+        ]
+      }
+    },
+    {
+      "id": "gkr4-power-kirti-hymn-fruits",
+      "type": "POWER",
+      "recipient_id": "gkr4-en-qualified-users",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr4-e-kirti-dream-boon"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "Recipientdocumentaryhymnstandsforitsuser;sourcepromiseattributed. Beneficiaries are qualifying worshippers/readers; namedhymn/plant is efficacy locus.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Influence over king and others, progeny, wealth, Vedic learning, intellect, desired ends, firm devotion and final liberation.",
+      "mechanism": null,
+      "trigger": "Read the hymn; three-times-daily reading is explicit for desires, devotion and liberation.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr4-e-kirti-dream-boon"
+        ],
+        "granted": [
+          "gkr4-e-kirti-dream-boon"
+        ],
+        "trigger": [
+          "gkr4-e-kirti-dream-boon"
+        ]
+      }
+    },
+    {
+      "id": "gkr4-power-child-revival",
+      "type": "POWER",
+      "recipient_id": "gkr4-en-ksipraprasadana33",
+      "grantor_id": "gp-en-ganesha",
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr4-e-revival-merit-transfer"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "Sageinstructs;notdirectsageboongrant. Kīrti’smessengerbattleclaimretainedasattribution.",
+      "motive": null,
+      "austerity_or_circumstances": "Poison death, grieving mother’s refuge petition and the sage’s brief meditation.",
+      "requested": null,
+      "granted": "Revival, freedom from poison and health.",
+      "mechanism": "Mother transfers śamī-worship merit into the child’s hand at Gṛtsamada’s direction.",
+      "trigger": "Merit transfer and Gaṇeśa’s grace.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [
+        "gkr4-event-revival"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr4-e-revival-merit-transfer"
+        ],
+        "grantor_id": [
+          "gkr4-e-revival-merit-transfer"
+        ],
+        "austerity_or_circumstances": [
+          "gkr4-e-revival-merit-transfer"
+        ],
+        "granted": [
+          "gkr4-e-revival-merit-transfer"
+        ],
+        "mechanism": [
+          "gkr4-e-revival-merit-transfer"
+        ],
+        "trigger": [
+          "gkr4-e-revival-merit-transfer"
+        ],
+        "later_event_ids": [
+          "gkr4-e-revival-merit-transfer"
+        ]
+      }
+    },
+    {
+      "id": "gkr4-power-child-name-promises",
+      "type": "BOON",
+      "recipient_id": "gkr4-en-ksipraprasadana33",
+      "grantor_id": "gup2-en-001",
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr4-e-child-name-request"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "Instructionpromised/futurerealization;actualnewinitiation/ruleoutcomenotyetread.",
+      "motive": null,
+      "austerity_or_circumstances": "The child cannot recite six syllables; his mother asks a usable, quickly pleasing mantra for royal rule.",
+      "requested": "An easy mantra the child can recite.",
+      "granted": "The sage promises his four-syllable Dhundhirāja name; devotional śamī worship will bring rule and victory over enemies.",
+      "mechanism": null,
+      "trigger": "Devotional śamī worship of Gajānana/Dhundhirāja.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr4-e-child-name-request"
+        ],
+        "grantor_id": [
+          "gkr4-e-child-name-request"
+        ],
+        "austerity_or_circumstances": [
+          "gkr4-e-child-name-request"
+        ],
+        "requested": [
+          "gkr4-e-child-name-request"
+        ],
+        "granted": [
+          "gkr4-e-child-name-request"
+        ],
+        "trigger": [
+          "gkr4-e-child-name-request"
+        ]
+      }
+    },
+    {
+      "id": "gkr5-power-kirti-son-boons",
+      "type": "BOON",
+      "recipient_id": "gkr4-en-ksipraprasadana33",
+      "grantor_id": "gkr4-en-vakratunda40",
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr5-e-kirti-pilgrimage",
+        "gkr5-e-kirti-renewed-request",
+        "gkr5-e-son-grant-axe-name",
+        "gkr5-e-parasubahu-rule-outcome",
+        "gkr5-e-kirti-home-coronation"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "Source promises and actual reign distinguished. It does not narrate each of the thousand sacrifices separately.",
+      "motive": null,
+      "austerity_or_circumstances": "Mother/son roadside leaf/flower offerings, fasting devotional shrine vigil and vision.",
+      "requested": "Mother asks son’s devotion, fame, detached rule, long life, virtues, strength, happiness, patience, battle victory and love for brāhmaṇas/gods.",
+      "granted": "All requests; thousand sacrifices, thousand-year life, peaceful devotional rule, four means of mastery, constant meditation/name and final divine form after remembrance.",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": null,
+      "duration": "Thousand-year life promised; thousand-year reign narrated49.17–18.",
+      "counter": null,
+      "later_event_ids": [
+        "gkr5-event-kirti-request",
+        "gkr5-event-kirti-grant",
+        "gkr5-event-kirti-coronation",
+        "gkr5-event-kirti-rule-outcome"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr5-e-kirti-renewed-request",
+          "gkr5-e-son-grant-axe-name"
+        ],
+        "grantor_id": [
+          "gkr5-e-son-grant-axe-name"
+        ],
+        "austerity_or_circumstances": [
+          "gkr5-e-kirti-pilgrimage"
+        ],
+        "requested": [
+          "gkr5-e-kirti-renewed-request"
+        ],
+        "granted": [
+          "gkr5-e-son-grant-axe-name"
+        ],
+        "duration": [
+          "gkr5-e-son-grant-axe-name",
+          "gkr5-e-parasubahu-rule-outcome"
+        ],
+        "later_event_ids": [
+          "gkr5-e-kirti-renewed-request",
+          "gkr5-e-son-grant-axe-name",
+          "gkr5-e-kirti-home-coronation",
+          "gkr5-e-parasubahu-rule-outcome"
+        ]
+      }
+    },
+    {
+      "id": "gkr5-power-axe-and-name",
+      "type": "BOON",
+      "recipient_id": "gkr4-en-ksipraprasadana33",
+      "grantor_id": "gkr4-en-vakratunda40",
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr5-e-son-grant-axe-name"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "No unstated invulnerability or weapon capability inferred.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Dhundhi’s own axe and the Parśubāhu name.",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr5-e-son-grant-axe-name"
+        ],
+        "grantor_id": [
+          "gkr5-e-son-grant-axe-name"
+        ],
+        "granted": [
+          "gkr5-e-son-grant-axe-name"
+        ]
+      }
+    },
+    {
+      "id": "gkr5-power-parasubahu-form-outcome",
+      "type": "POWER",
+      "recipient_id": "gkr4-en-ksipraprasadana33",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr5-e-son-grant-axe-name",
+        "gkr5-e-parasubahu-rule-outcome"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "Grant and outcome retained; heaven is not silently equated with every later named Nijaloka description.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "After succession, heavenly residence in Dhundhi’s form for many kalpas.",
+      "mechanism": null,
+      "trigger": "Final remembrance promised48.55; narrated49outcome follows long devotional rule.",
+      "restrictions": null,
+      "duration": "Many kalpas, without an exact number.",
+      "counter": null,
+      "later_event_ids": [],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr5-e-parasubahu-rule-outcome"
+        ],
+        "granted": [
+          "gkr5-e-parasubahu-rule-outcome"
+        ],
+        "trigger": [
+          "gkr5-e-son-grant-axe-name",
+          "gkr5-e-parasubahu-rule-outcome"
+        ],
+        "duration": [
+          "gkr5-e-parasubahu-rule-outcome"
+        ]
+      }
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "gkr4-ass-king-wife1",
+      "subject_id": "gkr4-en-priyavrata32",
+      "predicate": "spouse_of",
+      "object_id": "gkr4-en-kirti32",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-king-wife2",
+      "subject_id": "gkr4-en-priyavrata32",
+      "predicate": "spouse_of",
+      "object_id": "gkr4-en-prabha32",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-king-minister1",
+      "subject_id": "gkr4-en-dhurta32",
+      "predicate": "minister_of",
+      "object_id": "gkr4-en-priyavrata32",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-king-minister2",
+      "subject_id": "gkr4-en-kusala32",
+      "predicate": "minister_of",
+      "object_id": "gkr4-en-priyavrata32",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-padma-father",
+      "subject_id": "gkr4-en-padmanabhi32",
+      "predicate": "child_of",
+      "object_id": "gkr4-en-priyavrata32",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-padma-mother",
+      "subject_id": "gkr4-en-padmanabhi32",
+      "predicate": "child_of",
+      "object_id": "gkr4-en-prabha32",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-padma-wife",
+      "subject_id": "gkr4-en-padmanabhi32",
+      "predicate": "spouse_of",
+      "object_id": "gkr4-en-pancala-princess32",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-pancala-father",
+      "subject_id": "gkr4-en-pancala-princess32",
+      "predicate": "child_of",
+      "object_id": "gkr4-en-pancala-king32",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-kirti-priest",
+      "subject_id": "gkr4-en-devala32",
+      "predicate": "instructs",
+      "object_id": "gkr4-en-kirti32",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-kirti-worship-hymn"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-kirti-worship",
+      "subject_id": "gkr4-en-kirti32",
+      "predicate": "worships",
+      "object_id": "gkr4-en-kirti-image32",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-ksipra-father",
+      "subject_id": "gkr4-en-ksipraprasadana33",
+      "predicate": "child_of",
+      "object_id": "gkr4-en-priyavrata32",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-kirti-son-poison"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-ksipra-mother",
+      "subject_id": "gkr4-en-ksipraprasadana33",
+      "predicate": "child_of",
+      "object_id": "gkr4-en-kirti32",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-kirti-son-poison"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-prabha-poison",
+      "subject_id": "gkr4-en-prabha32",
+      "predicate": "poisons",
+      "object_id": "gkr4-en-ksipraprasadana33",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-kirti-son-poison"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-prabha-expel",
+      "subject_id": "gkr4-en-priyavrata32",
+      "predicate": "expels",
+      "object_id": "gkr4-en-prabha32",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-kirti-son-poison"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-gritsama-revive",
+      "subject_id": "gup2-en-001",
+      "predicate": "instructs_revival_of",
+      "object_id": "gkr4-en-ksipraprasadana33",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-revival-merit-transfer"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-mother-merit",
+      "subject_id": "gkr4-en-kirti32",
+      "predicate": "transfers_merit_to",
+      "object_id": "gkr4-en-ksipraprasadana33",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-revival-merit-transfer"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-gritsama-name",
+      "subject_id": "gup2-en-001",
+      "predicate": "proposes_mantra_for",
+      "object_id": "gkr4-en-ksipraprasadana33",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-child-name-request"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-mantra-child",
+      "subject_id": "gkr4-en-ksipraprasadana33",
+      "predicate": "proposed_recipient_of",
+      "object_id": "gkr4-en-dhundhi-name38",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-child-name-request"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-skanda-account",
+      "subject_id": "gup-en-064",
+      "predicate": "teaches_account_to",
+      "object_id": "gkr4-en-agastya38",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr5-ass-son-axe",
+      "subject_id": "gkr4-en-ksipraprasadana33",
+      "predicate": "receives",
+      "object_id": "gkr5-en-parasubahu-axe48",
+      "value": null,
+      "evidence_ids": [
+        "gkr5-e-son-grant-axe-name"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr5-ass-axe-giver",
+      "subject_id": "gkr4-en-vakratunda40",
+      "predicate": "gives",
+      "object_id": "gkr5-en-parasubahu-axe48",
+      "value": null,
+      "evidence_ids": [
+        "gkr5-e-son-grant-axe-name"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr5-ass-father-coronation",
+      "subject_id": "gkr4-en-priyavrata32",
+      "predicate": "coronates",
+      "object_id": "gkr4-en-ksipraprasadana33",
+      "value": null,
+      "evidence_ids": [
+        "gkr5-e-kirti-home-coronation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr5-ass-father-city",
+      "subject_id": "gkr4-en-priyavrata32",
+      "predicate": "rules_from",
+      "object_id": "gkr5-en-karna49",
+      "value": null,
+      "evidence_ids": [
+        "gkr5-e-kirti-home-coronation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr5-ass-son-image",
+      "subject_id": "gkr4-en-ksipraprasadana33",
+      "predicate": "wears",
+      "object_id": "gkr5-en-neck-image49",
+      "value": null,
+      "evidence_ids": [
+        "gkr5-e-parasubahu-rule-outcome"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr5-ass-family-of",
+      "subject_id": "gkr5-en-son-family49",
+      "predicate": "family_of",
+      "object_id": "gkr4-en-ksipraprasadana33",
+      "value": null,
+      "evidence_ids": [
+        "gkr5-e-parasubahu-rule-outcome"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr5-ass-successor-father",
+      "subject_id": "gkr5-en-successor49",
+      "predicate": "child_of",
+      "object_id": "gkr4-en-ksipraprasadana33",
+      "value": null,
+      "evidence_ids": [
+        "gkr5-e-parasubahu-rule-outcome"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr5-ass-successor-rule",
+      "subject_id": "gkr5-en-successor49",
+      "predicate": "succeeds",
+      "object_id": "gkr4-en-ksipraprasadana33",
+      "value": null,
+      "evidence_ids": [
+        "gkr5-e-parasubahu-rule-outcome"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "linked_entities": [
+    {
+      "id": "gp-en-brahma",
+      "name": "Brahmā",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-frame",
+        "gup-e-001",
+        "gup-e-024",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-036",
+        "gup-e-037",
+        "gup-e-038",
+        "gup-e-039",
+        "gup-e-040",
+        "gup-e-041",
+        "gup-e-042",
+        "gup-e-049",
+        "gup-e-050",
+        "gup-e-073",
+        "gup-e-084",
+        "gup-e-086",
+        "gup-e-089",
+        "gup-e-092",
+        "gup-e-094",
+        "gkr-e-frame",
+        "gup2-e-006",
+        "gup2-e-014",
+        "gup2-e-016",
+        "gup2-e-021",
+        "gup2-e-027",
+        "gup2-e-032",
+        "gup2-e-035",
+        "gup2-e-038",
+        "gup2-e-044",
+        "gup2-e-047",
+        "gup2-e-051",
+        "gup2-e-056",
+        "gup2-e-060",
+        "gup2-e-067",
+        "gkr2-e-remote-offering",
+        "gkr2-e-well-conspiracy",
+        "gkr2-e-trio-plan",
+        "gup3-e-005",
+        "gup3-e-008",
+        "gup3-e-012",
+        "gkr3-e-frame27",
+        "gkr3-e-virtuous-king",
+        "gkr3-e-succession27",
+        "gkr3-e-prior-merit-release",
+        "gkr3-e-kasyapa-creation",
+        "gkr3-e-indra-vishnu",
+        "gup4-e-010",
+        "gup4-e-013",
+        "gup4-e-014",
+        "gup4-e-016",
+        "gup4-e-035",
+        "gup4-e-036",
+        "gup4-e-050",
+        "gup4-e-051",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-055",
+        "gup4-e-056",
+        "gkr4-e-vamana-aftermath-image",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-durasada-conquest",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-dhundhiraja-name-aftermath",
+        "gup5-e-001",
+        "gup5-e-002",
+        "gup5-e-012",
+        "gup5-e-018",
+        "gup5-e-025",
+        "gup5-e-041",
+        "gup5-e-043",
+        "gup5-e-045",
+        "gup5-e-046",
+        "gup5-e-047",
+        "gup5-e-049",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-059",
+        "gup5-e-061",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066",
+        "gkr5-e-divodasa-rule",
+        "gkr5-e-marici-liberation",
+        "gkr5-e-realm-introduction49",
+        "gkr5-e-realm-cosmic-yogic-body",
+        "gkr5-e-king-final-worship",
+        "gkr5-e-king-reunion-hymn",
+        "gkr5-e-king-hymn-transmission-benefits",
+        "gkr5-e-return-to-sukla-chronology-frame"
+      ]
+    },
+    {
+      "id": "gp-en-ganesha",
+      "name": "Gaṇeśa",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-result",
+        "gup-e-001",
+        "gup-e-005",
+        "gup-e-008",
+        "gup-e-014",
+        "gup-e-021",
+        "gup-e-023",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-036",
+        "gup-e-037",
+        "gup-e-038",
+        "gup-e-039",
+        "gup-e-040",
+        "gup-e-042",
+        "gup-e-044",
+        "gup-e-045",
+        "gup-e-046",
+        "gup-e-047",
+        "gup-e-049",
+        "gup-e-051",
+        "gup-e-053",
+        "gup-e-054",
+        "gup-e-055",
+        "gup-e-056",
+        "gup-e-057",
+        "gup-e-058",
+        "gup-e-059",
+        "gup-e-060",
+        "gup-e-062",
+        "gup-e-063",
+        "gup-e-064",
+        "gup-e-065",
+        "gup-e-066",
+        "gup-e-067",
+        "gup-e-070",
+        "gup-e-071",
+        "gup-e-072",
+        "gup-e-073",
+        "gup-e-074",
+        "gup-e-075",
+        "gup-e-076",
+        "gup-e-085",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-088",
+        "gup-e-089",
+        "gup-e-090",
+        "gup-e-091",
+        "gup-e-092",
+        "gup-e-093",
+        "gup-e-094",
+        "gkr-e-ages",
+        "gup2-e-007",
+        "gup2-e-011",
+        "gup2-e-012",
+        "gup2-e-013",
+        "gup2-e-014",
+        "gup2-e-015",
+        "gup2-e-017",
+        "gup2-e-018",
+        "gup2-e-019",
+        "gup2-e-020",
+        "gup2-e-021",
+        "gup2-e-029",
+        "gup2-e-030",
+        "gup2-e-031",
+        "gup2-e-032",
+        "gup2-e-033",
+        "gup2-e-036",
+        "gup2-e-045",
+        "gup2-e-046",
+        "gup2-e-047",
+        "gup2-e-048",
+        "gup2-e-049",
+        "gup2-e-050",
+        "gup2-e-051",
+        "gup2-e-052",
+        "gup2-e-056",
+        "gup2-e-057",
+        "gup2-e-058",
+        "gup2-e-059",
+        "gup2-e-060",
+        "gup2-e-063",
+        "gup2-e-064",
+        "gup2-e-066",
+        "gkr2-e-leaf-and-vamana",
+        "gkr2-e-hunter-demon-liberation",
+        "gup3-e-004",
+        "gup3-e-005",
+        "gup3-e-006",
+        "gup3-e-007",
+        "gup3-e-008",
+        "gup3-e-009",
+        "gup3-e-010",
+        "gup3-e-011",
+        "gup3-e-012",
+        "gup3-e-013",
+        "gup3-e-014",
+        "gup3-e-015",
+        "gup3-e-016",
+        "gup3-e-017",
+        "gup3-e-018",
+        "gkr3-e-rama-father-varada",
+        "gkr3-e-incidental-worship",
+        "gkr3-e-prior-merit-release",
+        "gup4-e-002",
+        "gup4-e-003",
+        "gup4-e-005",
+        "gup4-e-009",
+        "gup4-e-010",
+        "gup4-e-011",
+        "gup4-e-012",
+        "gup4-e-015",
+        "gup4-e-016",
+        "gup4-e-017",
+        "gup4-e-018",
+        "gup4-e-027",
+        "gup4-e-028",
+        "gup4-e-029",
+        "gup4-e-031",
+        "gup4-e-033",
+        "gup4-e-034",
+        "gup4-e-035",
+        "gup4-e-038",
+        "gup4-e-040",
+        "gup4-e-042",
+        "gup4-e-044",
+        "gup4-e-048",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-057",
+        "gup4-e-058",
+        "gup4-e-059",
+        "gup4-e-060",
+        "gup4-e-061",
+        "gup4-e-062",
+        "gkr4-e-vamana-guru-tapas",
+        "gkr4-e-vamana-request-grant",
+        "gkr4-e-vamana-installation",
+        "gkr4-e-water-steps-promises",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-sages-vision-hymn",
+        "gkr4-e-trees-request-alternative",
+        "gkr4-e-tree-benefits",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-worship-vision",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-devi-ganesa-prayer",
+        "gup5-e-001",
+        "gup5-e-002",
+        "gup5-e-003",
+        "gup5-e-004",
+        "gup5-e-005",
+        "gup5-e-006",
+        "gup5-e-008",
+        "gup5-e-009",
+        "gup5-e-010",
+        "gup5-e-012",
+        "gup5-e-014",
+        "gup5-e-015",
+        "gup5-e-016",
+        "gup5-e-019",
+        "gup5-e-021",
+        "gup5-e-022",
+        "gup5-e-023",
+        "gup5-e-024",
+        "gup5-e-025",
+        "gup5-e-026",
+        "gup5-e-027",
+        "gup5-e-029",
+        "gup5-e-030",
+        "gup5-e-031",
+        "gup5-e-032",
+        "gup5-e-033",
+        "gup5-e-034",
+        "gup5-e-035",
+        "gup5-e-036",
+        "gup5-e-041",
+        "gup5-e-042",
+        "gup5-e-043",
+        "gup5-e-045",
+        "gup5-e-047",
+        "gup5-e-049",
+        "gup5-e-050",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-060",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066",
+        "gup5-e-067",
+        "gkr5-e-realm-introduction49"
+      ]
+    },
+    {
+      "id": "gp-en-vyasa",
+      "name": "Vyāsa",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-frame",
+        "gup-e-001",
+        "gup-e-024",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-033",
+        "gup-e-050",
+        "gup-e-073",
+        "gup-e-092",
+        "gkr-e-frame",
+        "gup2-e-006",
+        "gup2-e-016",
+        "gup2-e-021",
+        "gup2-e-032",
+        "gup2-e-035",
+        "gup2-e-044",
+        "gup2-e-051",
+        "gup2-e-060",
+        "gup2-e-067",
+        "gkr3-e-frame27",
+        "gkr3-e-samba-birth",
+        "gup4-e-035",
+        "gup4-e-036",
+        "gkr4-e-sami-frame32",
+        "gkr5-e-realm-introduction49",
+        "gkr5-e-king-final-worship",
+        "gkr5-e-return-to-sukla-chronology-frame"
+      ]
+    },
+    {
+      "id": "gup-en-064",
+      "name": "Skanda",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-014",
+        "gup-e-044",
+        "gup4-e-001",
+        "gup4-e-002",
+        "gup4-e-003",
+        "gup4-e-004",
+        "gup4-e-005",
+        "gup4-e-006",
+        "gup4-e-007",
+        "gup4-e-012",
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala",
+        "gup5-e-001",
+        "gup5-e-059",
+        "gkr5-e-sinless-state-search",
+        "gkr5-e-dhundhi-mission"
+      ]
+    },
+    {
+      "id": "gkr-en-narada",
+      "name": "Nārada",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr-e-boys-narada",
+        "gkr3-e-indra-vishnu",
+        "gkr4-e-grtsamada-sami-teaching",
+        "gkr4-e-samika-mandara-family",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr5-e-dhundhi-mission",
+        "gkr5-e-realm-introduction49",
+        "gkr5-e-king-hymn-transmission-benefits"
+      ]
+    },
+    {
+      "id": "gkr-en-siva",
+      "name": "Śiva",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr-e-narada-initiation",
+        "gkr2-e-remote-offering",
+        "gkr2-e-sages-universal-vision",
+        "gkr3-e-siva-hiranya-grant",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-durasada-tapas-vision",
+        "gkr4-e-durasada-request-grant",
+        "gkr4-e-durasada-conquest",
+        "gkr4-e-bhasmasura-counter",
+        "gkr4-e-durasada-kasi-oppression",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-vakra-accepts-mission",
+        "gkr4-e-astra-counters",
+        "gkr4-e-durasada-restraint-surrender",
+        "gkr5-e-marici-liberation",
+        "gkr5-e-sinless-state-search",
+        "gkr5-e-dhundhi-mission",
+        "gkr5-e-siva-return-hymn",
+        "gkr5-e-siva-prayer-install-mukti",
+        "gkr5-e-realm-cosmic-yogic-body",
+        "gkr5-e-journey-kailasa"
+      ]
+    },
+    {
+      "id": "gkr-en-uma",
+      "name": "Umā",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [
+        {
+          "name": "Gaurī",
+          "evidence_ids": [
+            "gkr-e-postgita-variants"
+          ]
+        },
+        {
+          "name": "Pārvatī",
+          "evidence_ids": [
+            "gkr-e-postgita-residence"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "gkr-e-siva-appearance",
+        "gkr-e-postgita-variants",
+        "gkr-e-postgita-residence",
+        "gkr3-e-siva-hiranya-grant",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-durasada-tapas-vision",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-devi-ganesa-prayer",
+        "gkr4-e-vakra-radiance-emergence",
+        "gkr4-e-vakra-accepts-mission",
+        "gup5-e-059",
+        "gkr5-e-dhundhi-mission"
+      ]
+    },
+    {
+      "id": "gkr-en-indra",
+      "name": "Indra",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr-e-devantaka-arrives",
+        "gkr2-e-manifestation-purpose",
+        "gkr3-e-bali-policy",
+        "gkr3-e-indra-vishnu",
+        "gkr4-e-grtsamada-sami-teaching",
+        "gkr4-e-samika-mandara-family",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-child-name-request",
+        "gkr4-e-durasada-conquest",
+        "gkr4-e-devas-counsel",
+        "gkr5-e-journey-indra52"
+      ]
+    },
+    {
+      "id": "gup2-en-001",
+      "name": "Gṛtsamada",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup2-e-006",
+        "gup2-e-007",
+        "gup2-e-008",
+        "gup2-e-009",
+        "gup2-e-010",
+        "gup2-e-011",
+        "gup2-e-012",
+        "gup2-e-013",
+        "gup2-e-014",
+        "gup2-e-015",
+        "gup2-e-016",
+        "gup2-e-017",
+        "gup2-e-018",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-grtsamada-sami-teaching",
+        "gkr4-e-aurava-fire-saunaka",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-kirti-frame-close",
+        "gkr4-e-child-name-request",
+        "gkr5-e-two-foot-answer",
+        "gkr5-e-siva-prayer-install-mukti",
+        "gkr5-e-kirti-pilgrimage",
+        "gkr5-e-kirti-renewed-request"
+      ]
+    },
+    {
+      "id": "gkr4-en-priyavrata32",
+      "name": "Priyavrata, Madra king in śamī account",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family",
+        "gkr4-e-kirti-son-poison",
+        "gkr5-e-kirti-home-coronation"
+      ]
+    },
+    {
+      "id": "gkr4-en-kirti32",
+      "name": "Kīrti, Priyavrata’s first wife",
+      "type": "DEVOTEE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family",
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-kirti-son-poison",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-kirti-frame-close",
+        "gkr4-e-child-name-request",
+        "gkr5-e-two-foot-answer",
+        "gkr5-e-kirti-pilgrimage",
+        "gkr5-e-kirti-renewed-request",
+        "gkr5-e-kirti-home-coronation"
+      ]
+    },
+    {
+      "id": "gkr4-en-prabha32",
+      "name": "Prabhā, Priyavrata’s other wife",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family",
+        "gkr4-e-kirti-son-poison"
+      ]
+    },
+    {
+      "id": "gkr4-en-dhurta32",
+      "name": "Dhūrta, Priyavrata’s minister",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ]
+    },
+    {
+      "id": "gkr4-en-kusala32",
+      "name": "Kuśala, Priyavrata’s minister",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ]
+    },
+    {
+      "id": "gkr4-en-padmanabhi32",
+      "name": "Padmanābhi, Prabhā/Priyavrata’s son",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ]
+    },
+    {
+      "id": "gkr4-en-pancala-princess32",
+      "name": "Unnamed Pañcāla princess, Padmanābhi’s wife",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ]
+    },
+    {
+      "id": "gkr4-en-pancala-king32",
+      "name": "Unnamed father of Pañcāla princess",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family"
+      ]
+    },
+    {
+      "id": "gkr4-en-devala32",
+      "name": "Devala, Kīrti’s priest",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-son-poison"
+      ]
+    },
+    {
+      "id": "gkr4-en-kirti-image32",
+      "name": "Mandāra-made Gajānana image worshipped by Kīrti",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-kirti-son-poison"
+      ]
+    },
+    {
+      "id": "gkr4-en-kirti-friends33",
+      "name": "Kīrti’s friends/attendants",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-kirti-son-poison"
+      ]
+    },
+    {
+      "id": "gkr4-en-ksipraprasadana33",
+      "name": "Kṣipraprasādana, Kīrti’s son",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [
+        {
+          "name": "Parśubāhu",
+          "evidence_ids": [
+            "gkr5-e-son-grant-axe-name"
+          ]
+        },
+        {
+          "name": "Paraśubāhu",
+          "evidence_ids": [
+            "gkr5-e-parasubahu-rule-outcome"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-kirti-son-poison",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-kirti-frame-close",
+        "gkr4-e-child-name-request",
+        "gkr5-e-kirti-pilgrimage",
+        "gkr5-e-son-grant-axe-name",
+        "gkr5-e-kirti-home-coronation",
+        "gkr5-e-parasubahu-rule-outcome"
+      ]
+    },
+    {
+      "id": "gkr4-en-kirti-hymn32",
+      "name": "Kīrti’s Gajānana hymn",
+      "type": "TEXT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon"
+      ]
+    },
+    {
+      "id": "gkr4-en-sami-devotion32",
+      "name": "Śamī name/remembrance/touch/worship",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-sami-frame32",
+        "gkr4-e-grtsamada-sami-teaching"
+      ]
+    },
+    {
+      "id": "gkr4-en-qualified-users",
+      "name": "Qualifying devotional hearers/readers/worshippers",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-sages-vision-hymn",
+        "gkr4-e-tree-benefits",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-kirti-frame-close",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-durasada-request-grant",
+        "gkr4-e-bhasmasura-counter",
+        "gkr4-e-axe-sword-wrestling",
+        "gkr4-e-durasada-restraint-surrender",
+        "gkr4-e-dhundhiraja-name-aftermath",
+        "gkr5-e-renunciation-message",
+        "gkr5-e-siva-prayer-install-mukti",
+        "gkr5-e-devotion-kinds49",
+        "gkr5-e-realm-introduction49",
+        "gkr5-e-kapila-realm-teaching-access",
+        "gkr5-e-realm-immunity-and-king-departure-preview",
+        "gkr5-e-journey-svananda-city-water-arrival",
+        "gkr5-e-king-hymn-transmission-benefits"
+      ]
+    },
+    {
+      "id": "gkr4-en-dhundhi-name38",
+      "name": "Dhundhirāja four-syllable name/mantra proposed for child",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-child-name-request"
+      ],
+      "notes": "Formalchildinitiation/actualruleoutcomeawaitslaterframe;notcompletedhere."
+    },
+    {
+      "id": "gkr4-en-agastya38",
+      "name": "Agastya, receiver of Skanda account",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala",
+        "gup5-e-059"
+      ]
+    },
+    {
+      "id": "gkr4-en-vakratunda40",
+      "name": "Vakratunda, Pārvatī-radiance manifestation against Durāsada",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [
+        {
+          "name": "Vināyaka",
+          "evidence_ids": [
+            "gkr4-e-vakra-radiance-emergence"
+          ]
+        },
+        {
+          "name": "Gajānana",
+          "evidence_ids": [
+            "gkr4-e-vakra-radiance-emergence"
+          ]
+        },
+        {
+          "name": "Dhundhirāja",
+          "evidence_ids": [
+            "gkr4-e-dhundhiraja-name-aftermath"
+          ]
+        },
+        {
+          "name": "Dhundhi",
+          "evidence_ids": [
+            "gkr4-e-dhundhiraja-name-aftermath"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "gkr4-e-vakra-radiance-emergence",
+        "gkr4-e-vakra-accepts-mission",
+        "gkr4-e-axe-sword-wrestling",
+        "gkr4-e-astra-counters",
+        "gkr4-e-fiftysix-army-counter",
+        "gkr4-e-durasada-restraint-surrender",
+        "gkr4-e-dhundhiraja-name-aftermath",
+        "gkr5-e-two-foot-answer",
+        "gkr5-e-dhundhi-mission",
+        "gkr5-e-astrologer-powers",
+        "gkr5-e-siva-return-hymn",
+        "gkr5-e-kirti-pilgrimage",
+        "gkr5-e-kirti-renewed-request",
+        "gkr5-e-son-grant-axe-name"
+      ],
+      "notes": "DistinctfromKaśyapa/AditichildVināyakaandTretāsynopsisMayūreśvara."
+    },
+    {
+      "id": "gkr5-en-karna49",
+      "name": "Karṇapura, Priyavrata’s city",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr5-e-kirti-home-coronation"
+      ],
+      "notes": "Not silently merged with the differently contextualized Malava Karṇa city of Upāsanā."
+    },
+    {
+      "id": "gkr5-en-parasubahu-axe48",
+      "name": "Dhundhi’s own axe given to Kṣipraprasādana",
+      "type": "WEAPON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr5-e-son-grant-axe-name"
+      ]
+    },
+    {
+      "id": "gkr5-en-neck-image49",
+      "name": "Paraśubāhu’s Mandāra Dhundhi neck-image",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr5-e-parasubahu-rule-outcome"
+      ]
+    },
+    {
+      "id": "gkr5-en-son-family49",
+      "name": "Paraśubāhu’s unnamed wives and sons",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr5-e-parasubahu-rule-outcome"
+      ]
+    },
+    {
+      "id": "gkr5-en-successor49",
+      "name": "Unnamed son succeeding Paraśubāhu",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr5-e-parasubahu-rule-outcome"
+      ]
+    }
+  ],
+  "linked_entity_note": "Includes event participants and related claim endpoints. Entity metadata can cite other retained source passages; the complete graph carries those references."
+}

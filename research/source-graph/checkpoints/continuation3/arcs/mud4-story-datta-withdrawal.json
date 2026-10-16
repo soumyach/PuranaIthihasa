@@ -1,0 +1,229 @@
+{
+  "checkpoint": "continuation3",
+  "completed_arc_id": "mud4-story-datta-withdrawal",
+  "graph_sha256": "cecbec8daa706000cb98923d6b48e16119667f17c4f6fce4acf05de2b7a7a376",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checking complete; selective independent review in separate bounded reports, not universal certification.",
+  "story": {
+    "id": "mud4-story-datta-withdrawal",
+    "title": "Datta’s siddhi display dismisses incessant attendants",
+    "source_id": "gp-src-mudgala",
+    "witness_id": "gp-wit-sd-mudgala-2",
+    "scope": "2.7.25–32",
+    "event_ids": [
+      "mud4-event-datta-withdrawal"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Entire bounded cited Sanskrit arc read; significant named actors, relationships, boons/powers, dialogue and transition checks by author. Independent root review separate.",
+    "missing_sections": [],
+    "editorial_notes": "Source narration order. Embedded narratives have their own spines; parent records their framing transitions without duplicating events."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "mud4-event-datta-withdrawal",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-datta-withdrawal",
+        "sequence": 1,
+        "passage_ids": [
+          "mud4-p-datta-withdrawal"
+        ],
+        "participants": [
+          "mud-en-dattatreya",
+          "mud-en-vishnu",
+          "mud4-en-moksalaksmi",
+          "mud4-en-datta-attendants",
+          "mud4-en-datta-wine-pot"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Datta, Viṣṇu kalāṃśa, attains successive Brahman/yoga states such as inert/mad/piśāca/child-joy states. People of all varṇas/āśramas serve him, leaving no rest; distressed he submerges by yoga while they wait at shore. By siddhi he manifests Mokṣalakṣmī, rises holding her at left and wine-pot in right, drinks/enjoys with her. They judge him fallen and abandon him, allowing peaceful yoga. This is a narrated withdrawal stratagem; Mokṣalakṣmī is not silently identified with Viṣṇu’s ordinary spouse.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-datta-withdrawal"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-datta-withdrawal",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-datta-withdrawal",
+          "locator": "Mudgala2.7.25–32",
+          "paraphrase": "Datta, Viṣṇu kalāṃśa, attains successive Brahman/yoga states such as inert/mad/piśāca/child-joy states. People of all varṇas/āśramas serve him, leaving no rest; distressed he submerges by yoga while they wait at shore. By siddhi he manifests Mokṣalakṣmī, rises holding her at left and wine-pot in right, drinks/enjoys with her. They judge him fallen and abandon him, allowing peaceful yoga. This is a narrated withdrawal stratagem; Mokṣalakṣmī is not silently identified with Viṣṇu’s ordinary spouse.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "mud-en-vishnu",
+      "name": "Viṣṇu",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-senses-gods",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-dattatreya",
+      "name": "Dattātreya / Ātreya",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "mud4-e-marici-pulaha-atri-lines"
+      ]
+    },
+    {
+      "id": "mud4-en-moksalaksmi",
+      "name": "Mokṣalakṣmī manifested by Datta’s siddhi",
+      "type": "DEVI_FORM",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-datta-withdrawal"
+      ]
+    },
+    {
+      "id": "mud4-en-datta-attendants",
+      "name": "All-varṇa/āśrama attendants who judge Datta fallen",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-datta-withdrawal"
+      ]
+    },
+    {
+      "id": "mud4-en-datta-wine-pot",
+      "name": "Wine-pot held by Datta during withdrawal display",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-datta-withdrawal"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "mud4-r-datta-visnu-portion",
+      "subject_id": "mud-en-dattatreya",
+      "predicate": "portion_of",
+      "object_id": "mud-en-vishnu",
+      "evidence_ids": [
+        "mud4-e-datta-withdrawal"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-datta-visnu-portion",
+      "kinship_kind": "DEITY_PORTION"
+    },
+    {
+      "id": "mud4-r-moksa-datta-origin",
+      "subject_id": "mud4-en-moksalaksmi",
+      "predicate": "manifested_by",
+      "object_id": "mud-en-dattatreya",
+      "evidence_ids": [
+        "mud4-e-datta-withdrawal"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-moksa-datta-origin"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "mud4-power-datta-moksa-display",
+      "type": "POWER",
+      "recipient_id": "mud-en-dattatreya",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-datta-withdrawal"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-datta-withdrawal"
+        ],
+        "mechanism": [
+          "mud4-e-datta-withdrawal"
+        ],
+        "motive": [
+          "mud4-e-datta-withdrawal"
+        ],
+        "trigger": [
+          "mud4-e-datta-withdrawal"
+        ],
+        "counter": [
+          "mud4-e-datta-withdrawal"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": "Escape relentless service, regain quiet yoga.",
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "Yoga submersion followed by siddhi manifestation of Mokṣalakṣmī and apparent woman/wine enjoyment.",
+      "trigger": "No rest because attendants constantly serve.",
+      "restrictions": null,
+      "duration": null,
+      "counter": "On judging him fallen, attendants abandon him."
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "mud4-a-datta-visnu-portion",
+      "subject_id": "mud-en-dattatreya",
+      "predicate": "portion_of",
+      "object_id": "mud-en-vishnu",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-datta-withdrawal"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-moksa-datta-origin",
+      "subject_id": "mud4-en-moksalaksmi",
+      "predicate": "manifested_by",
+      "object_id": "mud-en-dattatreya",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-datta-withdrawal"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ]
+}

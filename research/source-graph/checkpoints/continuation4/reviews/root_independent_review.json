@@ -1,0 +1,589 @@
+{
+  "review_id": "continuation4-root-independent-review",
+  "reviewer": "Root independently reading primary Sanskrit bodies and comparing author extraction",
+  "method": "Same digital witnesses; direct body reading. Narrated speech, recalled event, future promise, source-local cosmology and interpretation kept separate.",
+  "compared_patch_hashes": {
+    "gup5": "7ff7be0c770d696d6d571f708977a34db52107eea1fad8a0c8977e86bdfa69cf",
+    "gkr5": "1de4c4cdffa7554014e04c3e17bf2fd93302c19ac28e3abafb704729373c0234",
+    "mud5": "833fae2d48baf888fa339c16660f142e02a421236f8a4735967c93b06a142f3b",
+    "rfix4": "2d3d69f4e60b53eebe802043cb7134b9ab029af857843c0e6d2c47d0aaed0dff"
+  },
+  "actual_read_spans": {
+    "gp-wit-sd-upasana": [
+      "61.1–56 with colophon",
+      "62.1–49 with colophon",
+      "63.1–51 with colophon",
+      "64.1–31 with colophon",
+      "53.1–18 lexical/capture review"
+    ],
+    "gp-wit-sd-krida": [
+      "44.1–26 with colophon",
+      "45.1–39 with colophon",
+      "46.1–42 with colophon",
+      "47.1–42 with colophon, missing26 numbering retained",
+      "48.1–57 with colophon",
+      "49.1–26 only",
+      "53.1–48 with colophon",
+      "42.1–11 lexical review"
+    ],
+    "gp-wit-sd-mudgala-2": [
+      "2.11.1–42 with colophon",
+      "2.12.1–42 with colophon"
+    ]
+  },
+  "review_units": [
+    {
+      "id": "root4-review-moon-intercession",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "gup5-e-005"
+      ],
+      "source_ids": [
+        "gp-src-ganesha"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-upasana"
+      ],
+      "locators": [
+        "Upāsanā61.20–27"
+      ],
+      "finding": "The proposed unseen periods of year/half/half-again are separate from the accepted final Bhādra bright-fourth sight condition. Cosmic impossibility speech and refuge compassion motivate narrowing, rather than erasure, of the curse.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-moon-guru-tapas",
+      "status": "SUPPORTED_WITH_RETAINED_GAPS",
+      "evidence_ids": [
+        "gup5-e-006",
+        "gup5-e-007",
+        "gup5-e-008"
+      ],
+      "source_ids": [
+        "gp-src-ganesha"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-upasana"
+      ],
+      "locators": [
+        "Upāsanā61.28–44"
+      ],
+      "finding": "Indra teaches a one-syllable mantra; SOUTH Gaṅgā bank, severe tapas and four-arm red vision explicit. Printed daśadvādaśavarṣāṇi is retained without choosing10/12/22. Moon asks pardon and non-abandonment of the refuge seeker.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-moon-final-grants",
+      "status": "SUPPORTED_WITH_RETAINED_GAPS",
+      "evidence_ids": [
+        "gup5-e-009",
+        "gup5-e-010"
+      ],
+      "source_ids": [
+        "gp-src-ganesha"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-upasana"
+      ],
+      "locators": [
+        "Upāsanā61.45–56"
+      ],
+      "finding": "Former appearance restored, harmful bright-fourth sight retained; dark-fourth observance requires moonrise worship and deliberate Moon sight. Forehead digit is a personal grant. Monthly-second nabhasyaśca remains unresolved. Installed Bhālacandra and gods/sages’ site-siddhi grant are distinct from Gaṇeśa’s personal grant.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-trio-family-curses",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "gup5-e-012",
+        "gup5-e-013"
+      ],
+      "source_ids": [
+        "gp-src-ganesha"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-upasana"
+      ],
+      "locators": [
+        "Upāsanā62.1–19"
+      ],
+      "finding": "Sulabha/Sumudrā spouses; poor Madhusūdana is a Brahmin visitor, distinct from Viṣṇu. Mocking laugh and mutual curses precede actual bull/donkey/caṇḍālī rebirth. Printed cakrivān curse label is kept separate from explicitly narrated donkey outcome; no new named relatives or teacher guessed.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-trio-accidental-offering",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "gup5-e-014",
+        "gup5-e-015",
+        "gup5-e-016"
+      ],
+      "source_ids": [
+        "gp-src-ganesha"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-upasana"
+      ],
+      "locators": [
+        "Upāsanā62.20–44"
+      ],
+      "finding": "Storm/festival shelter, wind-blown dūrvā to head and animal-mouth sprouts on trunk/feet precede renewed deity worship caused by crowd’s fear of contact. Trio beaten and forced to circle; deity attributes merit to these actual accidental acts and sends attendants/vimāna. Divine-body transport to his abode is actual, not an invented future boon or generic death liberation.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-analasura-origin",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "gup5-e-020",
+        "gup5-e-021",
+        "gup5-e-022"
+      ],
+      "source_ids": [
+        "gp-src-ganesha"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-upasana"
+      ],
+      "locators": [
+        "Upāsanā63.16–42"
+      ],
+      "finding": "Yama’s desire upon Tilottamā’s dance precedes semen falling on ground and flame-being arising. No narrated intercourse, Tilottamā motherhood or named wife/children/teacher/tapas/boon imported. Child manifestation is explicitly TWO-armed; divine/sage refuge through Viṣṇu precedes it.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-analasura-capture-cooling",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "gup5-e-024",
+        "gup5-e-025"
+      ],
+      "source_ids": [
+        "gp-src-ganesha"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-upasana"
+      ],
+      "locators": [
+        "Upāsanā64.1–16"
+      ],
+      "finding": "Māyā capture/swallowing, concern that entry to belly would burn three worlds, and continuing THROAT fire distinguish intended risk from enacted location. Indra Moon, Brahmā mental Siddhi/Buddhi maidens/embrace slight relief, Viṣṇu lotus, Varuṇa water and Śiva thousand-hood serpent are different cooling donors. No marriage rite or total success of an earlier attempt asserted.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-durva-final-counter",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "gup5-e-026",
+        "gup5-e-027"
+      ],
+      "source_ids": [
+        "gp-src-ganesha"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-upasana"
+      ],
+      "locators": [
+        "Upāsanā64.17–31"
+      ],
+      "finding": "88,000sages EACH21sprouts finally extinguish heat. One OR21at dawn is a subsequent benefit prescription, not the number of participants or a computed total. Many unspecified boons stay unspecified; Vighnahara installation/Vijaya city and site bathing/giving/tapas/observance benefits precede new-history introduction.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-jambu-succession",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "mud5-e-jambu-sons-retirement"
+      ],
+      "source_ids": [
+        "gp-src-mudgala"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-mudgala-2"
+      ],
+      "locators": [
+        "Mudgala2.11.1–4;2.10.1–9"
+      ],
+      "finding": "Nine sons of Jambū’s ruler receive own-named regions, with prior10 evidence for Āgnīdhra context. Seven Priyavrata sons collectively retire, practice tapas/yoga and attain non-returning Gaṇeśa abode; these are not the nine grandchildren.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-jambu-measures-regions",
+      "status": "SUPPORTED_WITH_RETAINED_GAPS",
+      "evidence_ids": [
+        "mud5-e-meru-dimensions-raw",
+        "mud5-e-boundary-mountain-measures",
+        "mud5-e-jambu-lifespans-raw",
+        "mud5-e-ajanabha-karma-yoga",
+        "mud5-e-bharata-rivers-phala"
+      ],
+      "source_ids": [
+        "gp-src-mudgala"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-mudgala-2"
+      ],
+      "locators": [
+        "Mudgala2.11.8–9,20–21,27–42"
+      ],
+      "finding": "Meru dimensions, boundary-mountain count/measure and region lifespans remain exact unresolved numbers. Nābhi’s Ajanābha region is karmic, with fruits/return from enjoyment realms and hell; Bhārata bearing-karma etymology is explicitly given. No familiar Bharata king genealogy or modern geographical assignment imported.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-solar-distances-eclipse",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "mud5-e-world-layers-winds-distances",
+        "mud5-e-luminary-extents-eclipse"
+      ],
+      "source_ids": [
+        "gp-src-mudgala"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-mudgala-2"
+      ],
+      "locators": [
+        "Mudgala2.12.1–20"
+      ],
+      "finding": "Seven worlds/eight named Vāyu divisions and stepwise distances retained as source cosmography. Rāhu shadow eclipse and luminary maṇḍala extents/fractions are source descriptions; fractions are not replaced by computed absolute measures or modern astronomy.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-solar-chariot-parentage",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "mud5-e-planet-speeds-order",
+        "mud5-e-sun-chariot-cities-time"
+      ],
+      "source_ids": [
+        "gp-src-mudgala"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-mudgala-2"
+      ],
+      "locators": [
+        "Mudgala2.12.21–36"
+      ],
+      "finding": "Slow/fast groups and upward planet order both retained. Som asuta supports Budha relation only; Bhārgava/Aṅgirā labels do not create unstated parents. Sun chariot9,000, doubled shaft, axle1lakh, twelve spokes/seven metre-horses, four directional cities/time cycle all directly stated without assigning other planet vehicles to Sun.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-solar-cosmological-status",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "mud5-e-solar-cosmic-support"
+      ],
+      "source_ids": [
+        "gp-src-mudgala"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-mudgala-2"
+      ],
+      "locators": [
+        "Mudgala2.12.37–42"
+      ],
+      "finding": "Attributed support/radiance/origin exposition and Prabhākara as Gaṇeśa portion are cosmic description, not biological descent of every named being or universal physical truth.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-divodasa-origin-grant",
+      "status": "SUPPORTED_WITH_RETAINED_GAPS",
+      "evidence_ids": [
+        "gkr5-e-two-foot-answer",
+        "gkr5-e-divodasa-rule",
+        "gkr5-e-wife-reading"
+      ],
+      "source_ids": [
+        "gp-src-ganesha"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-krida"
+      ],
+      "locators": [
+        "Krīḍā44.1–26"
+      ],
+      "finding": "Two-foot question answered by cosmic pervasion, not by inventing a third physical foot. Divodāsa solar lineage, Brahmā pleased by tapas/kingdom grant, all-god exclusion condition, ruler performing divine functions and rainfall through tapas explicit. Wife description/name clause remains unresolved; no remembered Suśīlā proper name forced.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-marici-and-failed-agents",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "gkr5-e-marici-liberation",
+        "gkr5-e-sinless-state-search"
+      ],
+      "source_ids": [
+        "gp-src-ganesha"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-krida"
+      ],
+      "locators": [
+        "Krīḍā45.1–39"
+      ],
+      "finding": "Twelve-year drought and Marīci ten-thousand-year tapas are distinct counts. Śiva grants his form/abode through vimāna, rather than a named new weapon. Eight Bhairavas, Ādityas,64Yoginīs, Durgā, direction lords, sages and gods fail to find the king’s sin and remain near Kāśī; no successful forcible expulsion before the later strategy.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-dhundhi-astrologer-strategy",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "gkr5-e-dhundhi-mission",
+        "gkr5-e-astrologer-powers",
+        "gkr5-e-court-prediction"
+      ],
+      "source_ids": [
+        "gp-src-ganesha"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-krida"
+      ],
+      "locators": [
+        "Krīḍā46.1–42"
+      ],
+      "finding": "Śiva requests deluding citizens to erode ruler’s merit. Dhundhi’s astrologer form predicts thought/dream/objects and cures leprosy, grants children, predicts wealth in three days; news reaches king after two/three months. Seventeenth-DAY future visitor instruction is separate. Refusal of villages/wealth/grain accompanies advice; no actual physical killing or invented promise of seventeen-year rule.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-bauddha-kamala-and-surrender",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "gkr5-e-bauddha-kamala-strategy",
+        "gkr5-e-divodasa-surrender",
+        "gkr5-e-renunciation-message"
+      ],
+      "source_ids": [
+        "gp-src-ganesha"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-krida"
+      ],
+      "locators": [
+        "Krīḍā47.1–42"
+      ],
+      "finding": "Source-narrated Bauddha Viṣṇu and named wife Kamalā cause decline of ritual conduct. Character speech/doctrine is attributed, not universal historical claim. King’s prior tapas, kingdom forcibly given by Brahmā, request for liberation, royal seal handover, Viṣṇu’s promise of Śiva’s liberation and final renamed-linga tapas are explicit. Repeated four-arm revelations retained in source order, not collapsed into a fabricated second actor.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-siva-actual-liberation",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "gkr5-e-siva-return-hymn",
+        "gkr5-e-siva-prayer-install-mukti"
+      ],
+      "source_ids": [
+        "gp-src-ganesha"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-krida"
+      ],
+      "locators": [
+        "Krīḍā48.1–23"
+      ],
+      "finding": "Śiva arrives bull-mounted, favors fasting Jaigīṣavya, praises and petitions Dhundhi. Māgha fourth/Tuesday/moonrise ritual and hymn practices are petitioned benefits in Śiva’s speech. Gaṇḍakī-stone installation and Śiva’s ACTUAL liberation grant to Divodāsa are narrated. No separate unspoken Gaṇeśa assent to every petition inserted.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-kirti-boons-name",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "gkr5-e-kirti-pilgrimage",
+        "gkr5-e-kirti-renewed-request",
+        "gkr5-e-son-grant-axe-name"
+      ],
+      "source_ids": [
+        "gp-src-ganesha"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-krida"
+      ],
+      "locators": [
+        "Krīḍā48.24–57"
+      ],
+      "finding": "Kīrti’s poor plant offerings and mother/son fasting precede ten-arm appearance from image. Devotion, world fame, detached rule, long life, virtues/strength/health/forbearance, all-battle victory and devotion to deities/Brahmins requested. All requests expressly assented to;1,000sacrifices and1,000-year life/rule promise added. Personal axe and Paraśubāhu naming direct; no unnamed warfare or fulfilled sacrifice-count assumed.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-kirti-actual-rule-outcome",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "gkr5-e-kirti-home-coronation",
+        "gkr5-e-parasubahu-rule-outcome"
+      ],
+      "source_ids": [
+        "gp-src-ganesha"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-krida"
+      ],
+      "locators": [
+        "Krīḍā49.1–18"
+      ],
+      "finding": "Kīrti and child return to Karṇapura, king reunites with them, coronates son and retires. Paraśubāhu’s Mandāra image at neck, śamī/dūrvā worship, unnamed wives/sons, ACTUAL1,000-year reign, son’s succession and many-kalpa heavenly Dhundhi-form outcome fulfill the previously unread ending. No automatic nonreturning abode or named offspring inferred.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-planet-mounts",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "mud5-e-moon-nectar-cycle",
+        "mud5-e-nine-planet-chariots"
+      ],
+      "source_ids": [
+        "gp-src-mudgala"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-mudgala-2"
+      ],
+      "locators": [
+        "Mudgala2.13.28–43"
+      ],
+      "finding": "Moon ten white horses/three-wheel chariot and nectar cycle retained. Two lava ancestral drinking interval and month satisfaction separate. Budha/Soma-son FOUR LIONS; Bhārgava eight horses/gold chariot; Mars eight rams; Jupiter eight red horses/gold; Saturn eight BLUE VULTURES/iron; Svarbhānu black lions and Ketu pigeons. No standard remembered planet-mount list substituted.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-rsabha-origin-family",
+      "status": "SUPPORTED_WITH_RETAINED_GAPS",
+      "evidence_ids": [
+        "mud5-e-rsabha-nabhi-origin",
+        "mud5-e-rsabha-sons-counts",
+        "mud5-e-rsabha-count-allocation-open"
+      ],
+      "source_ids": [
+        "gp-src-mudgala"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-mudgala-2"
+      ],
+      "locators": [
+        "Mudgala2.16.1–8"
+      ],
+      "finding": "Priyavrata→Āgnīdhra→Nābhi chain and son through sacrifice/Yajña-form Viṣṇu portion explicit. One hundred sons led by Bharata,81tapas-Brahmins,nine named Gāṇapatya yogins and nine kings/Bharata emperor-of-nine-brothers statements retained separately. Individual category membership/count harmonization remains unconfirmed; no named mother imported.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-rsabha-guru-peace",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "mud5-e-rsabha-siva-search",
+        "mud5-e-rsabha-santi-request",
+        "mud5-e-rsabha-ga-na-teaching",
+        "mud5-e-rsabha-peace-before-appearance"
+      ],
+      "source_ids": [
+        "gp-src-mudgala"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-mudgala-2"
+      ],
+      "locators": [
+        "Mudgala2.16.9–41"
+      ],
+      "finding": "Avadhūta/yoga progression and dissatisfaction with independent Śiva-Brahman status motivate Śiva disciple request for śāntiyoga. Ga/ṇa metaphysical teaching and five-mind-ground abandonment are attributed doctrines. Forest practice actually yields peace BEFORE Gaṇeśa visits; no boon causes retroactive first peace. No unstated mantra syllable or tapas year count.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-rsabha-devotion-outcome",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "mud5-e-rsabha-ganesa-hymn",
+        "mud5-e-rsabha-devotion-grant",
+        "mud5-e-rsabha-account-phala"
+      ],
+      "source_ids": [
+        "gp-src-mudgala"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-mudgala-2"
+      ],
+      "locators": [
+        "Mudgala2.16.42–58"
+      ],
+      "finding": "Request is firm unwavering devotion51. Gaṇeśa grants immovable devotion54 and hymn peace/desire-fruits through reading/hearing55. Actual final peaceful Gāṇeśatā follows disappearance56. Whole-account hearing/reading benefits57–58 are a separate prescription. Śiva-disciple/Viṣṇu designation53 preserves source ontology, not an ID merge.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-king-reunion-and-source-order",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "gkr5-e-reunion-lotus-bed-attendants53",
+        "gkr5-e-king-vinayaka-reunion",
+        "gkr5-e-lord-recalls-royal-house-and-mudgala-dispatch",
+        "gkr5-e-return-to-sukla-chronology-frame"
+      ],
+      "source_ids": [
+        "gp-src-ganesha"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-krida"
+      ],
+      "locators": [
+        "Krīḍā53.1–25,44–48"
+      ],
+      "finding": "Siddhi/Buddhi service and Aṇimā/Garimā/Jvālinī/Tejinī/Mahimā/printed Prathimā attendants preserved. Two-arm child and fatherlike embrace do not create biological parentage. Demon defeats, royal-house play, Kaśyapa return and Mudgala dispatch are RECALLED by Lord. Vyāsa then asks to resume earlier child chronology after Śukla, not events after this final divine residence.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-king-final-grant-transmission",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "gkr5-e-king-reunion-hymn",
+        "gkr5-e-king-no-rebirth-request-grant",
+        "gkr5-e-king-hymn-transmission-benefits"
+      ],
+      "source_ids": [
+        "gp-src-ganesha"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-krida"
+      ],
+      "locators": [
+        "Krīḍā53.26–43"
+      ],
+      "finding": "No further birth/death requested and tathā assent given; literal kalpakoṭiyugāvadhi stay-near duration not converted to years/infinity. Brahmā→Nārada→Gautama→sages is hymn transmission, not biological parentage or a universal teacher chain. Three-sandhyā learning prescription is not silently imposed on every other benefit.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-pulaha-visit-and-grants",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "mud5-e-pulaha-heart-form-appearance",
+        "mud5-e-pulaha-ganesa-hymn",
+        "mud5-e-pulaha-devotion-boon"
+      ],
+      "source_ids": [
+        "gp-src-mudgala"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-mudgala-2"
+      ],
+      "locators": [
+        "Mudgala2.18.1–26"
+      ],
+      "finding": "Pulaha’s achieved peace/practice precedes visit after an UNSPECIFIED interval. Inner form is withdrawn so he notices external Gaṇeśa. Four arms/mouse/noose/goad are hymn attributes. Firm unwavering devotion requested20 and granted22; remembered deity appears near him23. Human hymn reading/hearing benefits24–25 are separate from personal appearance trigger. No new tapas year count or requested immunity. Recipient-class correction is documented separately.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    },
+    {
+      "id": "root4-review-bharata-deer-ending",
+      "status": "SUPPORTED_IN_SAMPLE",
+      "evidence_ids": [
+        "mud5-e-bharata-heard-brahma-teaching",
+        "mud5-e-bharata-deer-body-ending"
+      ],
+      "source_ids": [
+        "gp-src-mudgala"
+      ],
+      "witness_ids": [
+        "gp-wit-sd-mudgala-2"
+      ],
+      "locators": [
+        "Mudgala2.18.27–37"
+      ],
+      "finding": "Deer-bodied Bharata hears and retains Brahmā’s teaching to Pulaha; recollects prior Hari devotion and deer attachment. Śiva/Viṣṇu/all-beings obstacle victory is an attributed reflection, not an observed new grant. Last act is deer-body abandonment while meditating Gaṇeśa. No later human rebirth or final nonreturning liberation inferred from this chapter.",
+      "limitation": "Only the stated claims sampled, not certification of every dependent field or another print witness."
+    }
+  ],
+  "limitations": [
+    "Comparative review units only added when target author evidence exists.",
+    "No alternate print recension collation completed.",
+    "Whole body reading does not certify exhaustive graph extraction.",
+    "Separate root_strategy_finding.json preserves an original reversed-instruction draft and its resolution."
+  ]
+}

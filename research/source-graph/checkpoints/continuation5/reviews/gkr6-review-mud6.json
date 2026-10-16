@@ -1,0 +1,2194 @@
+{
+  "review_id": "gkr6-review-mud6",
+  "reviewer": "/root/devi_mahatmya",
+  "review_type": "Independent second-author primary digital Sanskrit review",
+  "target_snapshot": {
+    "path": "/Users/vellankisriharsha/Documents/Codex/2026-10-11/t/work/continuation5/patches/mud6.json",
+    "sha256": "da41addc535152e0763413ed2e8fceb7d028750ed86f3c0f0e8f4aa363598c63",
+    "expected_sha256": "da41addc535152e0763413ed2e8fceb7d028750ed86f3c0f0e8f4aa363598c63",
+    "matched_expected_hash": true
+  },
+  "source_id": "gp-src-mudgala",
+  "witness_id": "gp-wit-sd-mudgala-2",
+  "reading_log": [
+    {
+      "scope": "Mudgala2.23.1–34",
+      "whole_body_read": true,
+      "terminal_confirmed": "Dhruvacaritra chapter23 colophon after34",
+      "method": "Direct primary web body turn536view1, confirmed contextual reread turn537view0."
+    },
+    {
+      "scope": "Mudgala2.24.1–54",
+      "whole_body_read": true,
+      "terminal_confirmed": "Pṛthuyaśovarṇana chapter24 colophon after54",
+      "method": "Direct primary web body turn536view1 first1–18 plus turn537view0 through54."
+    },
+    {
+      "scope": "Mudgala2.25.44–64",
+      "whole_body_read": false,
+      "terminal_confirmed": "Bounded ending through64 and chapter25 colophon",
+      "method": "Direct target body turn537view0 44–55 and turn538view0 through64; preceding context visible but no whole25 review certification."
+    },
+    {
+      "scope": "Mudgala2.26.1–5;42–45",
+      "whole_body_read": false,
+      "terminal_confirmed": "Bounded final excerpt ends45 with chapter26 colophon",
+      "method": "Direct target body turn538view0; intervening doctrine not exhaustively compared or certified."
+    }
+  ],
+  "root_correction_review": {
+    "path": "/Users/vellankisriharsha/Documents/Codex/2026-10-11/t/work/continuation5/reviews/root_boon_duration_finding.json",
+    "target_record_id": "mud6-power-dhruva-visnu-grant",
+    "assessment": "SUPPORTED_PROPOSED_CORRECTION",
+    "proposal": {
+      "duration": null,
+      "austerity_or_circumstances": "Nārada’s twelve-syllable initiation; meditation in Mathurā and severe Viṣṇu tapas for 1,000 years (verse 9).",
+      "field_evidence": {
+        "recipient_id": [
+          "mud6-e-dhruva-family-visnu-tapas"
+        ],
+        "grantor_id": [
+          "mud6-e-dhruva-family-visnu-tapas"
+        ],
+        "worshipped_id": [
+          "mud6-e-dhruva-family-visnu-tapas"
+        ],
+        "austerity_or_circumstances": [
+          "mud6-e-dhruva-family-visnu-tapas"
+        ],
+        "granted": [
+          "mud6-e-dhruva-family-visnu-tapas"
+        ],
+        "notes": [
+          "mud6-e-dhruva-family-visnu-tapas"
+        ]
+      },
+      "notes": "Request words not narrated; grant is explicit. Future abode separated from earthly return and later actual end. The 1,000-year span is ascetic practice before the appearance, not a stated duration of the granted sovereignty or abode; grant duration is unstated."
+    }
+  },
+  "findings": [
+    {
+      "id": "gkr6-review-mud6-dhruva-family",
+      "status": "SUPPORTED",
+      "locator": "Mudgala2.23.1–6",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "affected_records": [
+        {
+          "table": "evidence",
+          "id": "mud6-e-dhruva-family-visnu-tapas",
+          "fields": [
+            "paraphrase"
+          ]
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud6-event-dhruva-family-visnu-tapas",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-uttana-manu",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-uttana-madhya",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-suniti-uttana",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-suruci-uttana",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-dhruva-suniti",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-dhruva-uttana",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-uttama-suruci",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-uttama-uttana",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-uttana-manu",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-uttana-madhya",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-suniti-uttana",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-suruci-uttana",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-dhruva-suniti",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-dhruva-uttana",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-uttama-suruci",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-uttama-uttana",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        }
+      ],
+      "claim_reviewed": "Uttānapāda’s ancestry/wives and the sons’ distinct mothers.",
+      "assessment": "Svāyambhuva Manu’s son Uttānapāda rules Madhyadeśa; Sunīti/Suruci are his two wives. Dhruva is Sunīti’s son and Uttama Suruci’s; both share the father. The relational paths establish their sibling relationship without importing a new named Dhruva spouse. Suruci controls the king, Sunīti is neglected and the lap humiliation motivates Dhruva’s forest departure.",
+      "proposed_action": null
+    },
+    {
+      "id": "gkr6-review-mud6-dhruva-initiation-and-visnu-grant",
+      "status": "SUPPORTED",
+      "locator": "Mudgala2.23.6–10",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "affected_records": [
+        {
+          "table": "relationships",
+          "id": "mud6-r-narada-dhruva-teacher",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-narada-dhruva-mantra",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-dhruva-mathura",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-narada-dhruva-teacher",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-narada-dhruva-mantra",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-dhruva-mathura",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "entities",
+          "id": "mud6-en-dhruva-visnu-twelve-mantra",
+          "fields": [
+            "name",
+            "type"
+          ]
+        },
+        {
+          "table": "boons_and_powers",
+          "id": "mud6-power-dhruva-visnu-grant",
+          "fields": [
+            "recipient_id",
+            "grantor_id",
+            "worshipped_id",
+            "requested",
+            "granted"
+          ]
+        }
+      ],
+      "claim_reviewed": "Nārada’s twelve-syllable Viṣṇu initiation, Mathurā tapas and explicit Viṣṇu grant.",
+      "assessment": "The mantra syllable count and teacher6–8 are direct.9 describes a thousand years of severe tapas before pleased Viṣṇu appears.10 grants undivided Earth kingship and final heavenly kingship/Viṣṇu-associated Dhruva station. The text does not quote Dhruva’s precise request or identify the mantra’s seed string; null requested is appropriate.",
+      "proposed_action": null
+    },
+    {
+      "id": "gkr6-review-mud6-dhruva-tapas-duration-placement",
+      "status": "CORRECTION_REQUIRED",
+      "locator": "Mudgala2.23.9–10",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "affected_records": [
+        {
+          "table": "boons_and_powers",
+          "id": "mud6-power-dhruva-visnu-grant",
+          "fields": [
+            "duration",
+            "austerity_or_circumstances",
+            "field_evidence",
+            "notes"
+          ]
+        }
+      ],
+      "claim_reviewed": "Frozen record stores1000years of tapas in BOON duration.",
+      "assessment": "Independent whole23 reading confirms root’s proposed correction. sahasravarṣam ... tatāpa describes ascetic practice before the visit, while the grant sentence gives no duration for kingship or abode. The original thousand-year datum must remain, relocated rather than erased.",
+      "proposed_action": "Accept root_boon_duration_finding.json proposal: duration=null; add thousand-year tapas to austerity_or_circumstances, remove duration field_evidence and retain grant duration as unstated in notes."
+    },
+    {
+      "id": "gkr6-review-mud6-father-six-sayujya",
+      "status": "SUPPORTED",
+      "locator": "Mudgala2.23.11–17",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "affected_records": [
+        {
+          "table": "evidence",
+          "id": "mud6-e-uttanapada-six-mantra-end",
+          "fields": [
+            "paraphrase"
+          ]
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud6-event-uttanapada-six-mantra-end",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-narada-uttana-initiation",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-uttana-six-mantra",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-narada-uttana-initiation",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-uttana-six-mantra",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "boons_and_powers",
+          "id": "mud6-power-uttanapada-ganapatya-sayujya",
+          "fields": [
+            "recipient_id",
+            "mechanism",
+            "trigger",
+            "notes"
+          ]
+        }
+      ],
+      "claim_reviewed": "Six-syllable Gaṇeśa initiation belongs to the retiring father and ends in actual sāyujya.",
+      "assessment": "Dhruva returns, father installs him king and goes to the forest. Nārada there gives six syllables; mantra power makes Uttānapāda Gaṇapatya. At death he remembers Gaṇanātha and actually attains sāyujya. No six-syllable transfer to Dhruva, father’s fixed tapas period or new deity boon dialogue is invented.",
+      "proposed_action": null
+    },
+    {
+      "id": "gkr6-review-mud6-dhruva-visnu-relay-one-syllable",
+      "status": "SUPPORTED",
+      "locator": "Mudgala2.23.18–28",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "affected_records": [
+        {
+          "table": "evidence",
+          "id": "mud6-e-dhruva-visnu-message-one-mantra",
+          "fields": [
+            "paraphrase"
+          ]
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud6-event-dhruva-visnu-message-one-mantra",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-dhruva-visnu-message",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-dhruva-one-mantra-guru",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-dhruva-mayuresa",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-dhruva-visnu-message",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-dhruva-one-mantra-guru",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-dhruva-mayuresa",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "entities",
+          "id": "mud6-en-dhruva-one-mantra",
+          "fields": [
+            "name"
+          ]
+        },
+        {
+          "table": "boons_and_powers",
+          "id": "mud6-power-dhruva-ganesa-peace-condition",
+          "fields": [
+            "austerity_or_circumstances",
+            "mechanism",
+            "restrictions",
+            "notes"
+          ]
+        }
+      ],
+      "claim_reviewed": "Viṣṇu sends Nārada with Mayūreśa pilgrimage and one-syllable Gaṇeśa-japa conditions.",
+      "assessment": "Nārada explicitly names Viṣṇu as sender21, instructs pilgrimage22–23 and relays another Viṣṇu instruction24. The lasting station versus obstacle/fall and Brahmā-day-end station dissolution/peace versus absence of yoga-peace are retained as conditions. Nārada actually gives ONE syllable27 and Dhruva performs pilgrimage28. The first-person madīyakam is held in this relayed-message context; no new Nārada-own-abode grant is established.",
+      "proposed_action": null
+    },
+    {
+      "id": "gkr6-review-mud6-dhruva-site-duration",
+      "status": "UNDETERMINED",
+      "locator": "Mudgala2.23.29–31",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "affected_records": [
+        {
+          "table": "evidence",
+          "id": "mud6-e-dhruva-vinayaka-site-clear",
+          "fields": [
+            "paraphrase"
+          ]
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud6-event-dhruva-vinayaka-site-clear",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "table": "evidence",
+          "id": "mud6-e-dhruva-location-duration-raw",
+          "fields": [
+            "paraphrase",
+            "verification_status"
+          ]
+        },
+        {
+          "table": "story_spines",
+          "id": "mud6-story-dhruva-journey",
+          "fields": [
+            "status",
+            "missing_sections"
+          ]
+        }
+      ],
+      "claim_reviewed": "Printed direction and residence duration remain under collation.",
+      "assessment": "nāpūrvadvārasamīpagam and varṣamāsaṃ are directly present. This digital witness alone does not securely decide the direction or a year/month duration. Installation, half-krośa distance, golden-pinnacled temple and Dhruvavināyaka name are clear, while whole23/spine PARTIAL is appropriate.",
+      "proposed_action": "Preserve exact raw clauses and PARTIAL; do not supply modern location or normalized residence duration."
+    },
+    {
+      "id": "gkr6-review-mud6-dhruva-enacted-ending",
+      "status": "SUPPORTED",
+      "locator": "Mudgala2.23.32–34",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "affected_records": [
+        {
+          "table": "evidence",
+          "id": "mud6-e-dhruva-actual-end-benefits",
+          "fields": [
+            "paraphrase"
+          ]
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud6-event-dhruva-actual-end-benefits",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "table": "boons_and_powers",
+          "id": "mud6-power-dhruvavinayaka-benefits",
+          "fields": [
+            "trigger",
+            "granted"
+          ]
+        }
+      ],
+      "claim_reviewed": "Actual return/rule, heavenly Dhruva station, meditation and later Svānanda.",
+      "assessment": "32 narrates city return and rule followed by the heavenly luminary-supporting station.33 expressly narrates Gaṇapati meditation there and Svānanda at its end/destruction.34 gives sight/account-hearing enjoyment and firm liberation. These enacted outcomes remain distinct from the earlier prospective grant and relay conditions.",
+      "proposed_action": null
+    },
+    {
+      "id": "gkr6-review-mud6-anga-vena-curse",
+      "status": "SUPPORTED",
+      "locator": "Mudgala2.24.1–10",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "affected_records": [
+        {
+          "table": "evidence",
+          "id": "mud6-e-anga-vena-rule-death",
+          "fields": [
+            "paraphrase"
+          ]
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud6-event-anga-vena-rule-death",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-anga-dhruva-line",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-mrtyu-daughter",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-anga-wife",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-vena-anga",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-vena-mother",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-vena-sage-curse",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-anga-dhruva-line",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-mrtyu-daughter",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-anga-wife",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-vena-anga",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-vena-mother",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-vena-sage-curse",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        }
+      ],
+      "claim_reviewed": "Dhruva-line descendant Aṅga, unnamed Mṛtyu daughter and cruel Vena.",
+      "assessment": "Descendant wording does not say direct son of Dhruva. The wife is Mṛtyu’s daughter but receives no personal name. Aṅga abandons failed paternal discipline, Vena is enthroned after robber terror, then cruel self-worship demands lead angry brāhmaṇas to kill by curse. No remembered Sunīthā name or alternative killing instrument is added.",
+      "proposed_action": null
+    },
+    {
+      "id": "gkr6-review-mud6-body-emergent-pair",
+      "status": "SUPPORTED",
+      "locator": "Mudgala2.24.11–17",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "affected_records": [
+        {
+          "table": "evidence",
+          "id": "mud6-e-vena-body-nisada-prthu-pair",
+          "fields": [
+            "paraphrase"
+          ]
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud6-event-vena-body-nisada-prthu-pair",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-nisada-vena-body",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-nisada-descendants",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-prthu-vena-body",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-prwife-vena-body",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-prthu-visnu-kala",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-prwife-visnu-kala",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-prthu-co-emergent-wife",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-nisada-vena-body",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-nisada-descendants",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-prthu-vena-body",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-prwife-vena-body",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-prthu-visnu-kala",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-prwife-visnu-kala",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-prthu-co-emergent-wife",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "entities",
+          "id": "mud6-en-prthu",
+          "fields": [
+            "name",
+            "type"
+          ]
+        },
+        {
+          "table": "entities",
+          "id": "mud6-en-prthu-unnamed-wife",
+          "fields": [
+            "name",
+            "type"
+          ]
+        }
+      ],
+      "claim_reviewed": "Left/right aṅga emergence and the unnamed Viṣṇu-kalā-associated couple.",
+      "assessment": "The body-word is aṅga: neither thigh nor arm is specified. Left produces the sin-formed Niṣāda and his named descendant group; right produces a couple, both Viṣṇu-kalā-associated. The male is Pṛthu and is consecrated king. Couple/emanation relations are correctly distinguished from ordinary biological parentage; Arci is not supplied.",
+      "proposed_action": null
+    },
+    {
+      "id": "gkr6-review-mud6-earth-refuge-conditions",
+      "status": "SUPPORTED",
+      "locator": "Mudgala2.24.18–30",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "affected_records": [
+        {
+          "table": "evidence",
+          "id": "mud6-e-prthu-earth-pursuit-terms",
+          "fields": [
+            "paraphrase"
+          ]
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud6-event-prthu-earth-pursuit-terms",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-prthu-earth-threat",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-prthu-earth-bow",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-prthu-earth-arrow",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-earth-prthu-refuge",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-prthu-earth-threat",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-prthu-earth-bow",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-prthu-earth-arrow",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-earth-prthu-refuge",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "boons_and_powers",
+          "id": "mud6-power-earth-cow-food-terms",
+          "fields": [
+            "mechanism",
+            "restrictions",
+            "counter"
+          ]
+        }
+      ],
+      "claim_reviewed": "Earth’s cow-form flight/surrender and the negotiated food production conditions.",
+      "assessment": "Vena’s adharma occasions withheld/consumed plants. Pṛthu threatens with bow/arrow; frightened cow-form Earth finds no other refuge and asks him to protect a surrendered woman/cow/Earth. He demands food; she requires leveling plus calf/milker arrangements because consumed plants cannot simply be returned. No actual killing or biological cow generation is added.",
+      "proposed_action": null
+    },
+    {
+      "id": "gkr6-review-mud6-earth-adoption-calf-milker",
+      "status": "SUPPORTED",
+      "locator": "Mudgala2.24.31–35/43",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "affected_records": [
+        {
+          "table": "evidence",
+          "id": "mud6-e-prthu-leveling-adoption-milking",
+          "fields": [
+            "paraphrase"
+          ]
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud6-event-prthu-leveling-adoption-milking",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-earth-prthu-adoption",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-prthu-food-calf",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-prthu-earth-care",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-earth-prthu-adoption",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-prthu-food-calf",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-prthu-earth-care",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "boons_and_powers",
+          "id": "mud6-power-prthu-six-taste-milk",
+          "fields": [
+            "mechanism",
+            "notes"
+          ]
+        }
+      ],
+      "claim_reviewed": "Pṛthu levels with bow-tip, makes Earth daughter and himself milks using Manu as calf.",
+      "assessment": "31 specifies bow-tip mountain crushing;33–34 putrītva and Manu calf/Pṛthu milker roles yield six-taste food-milk.43 reiterates daughter-like protection and happiness. Adoptive/transformative roles are appropriate; no ordinary biological lineage is inferred. The body says Manu in34; displayed prose correctly retains that name rather than adding a new calf-specific epithet.",
+      "proposed_action": null
+    },
+    {
+      "id": "gkr6-review-mud6-cosmic-milking-table",
+      "status": "SUPPORTED",
+      "locator": "Mudgala2.24.36–41",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "affected_records": [
+        {
+          "table": "evidence",
+          "id": "mud6-e-cosmic-milking-role-table",
+          "fields": [
+            "paraphrase"
+          ]
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud6-event-cosmic-milking-role-table",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-cosmic-calf-brahma",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-cosmic-calf-rudra",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-cosmic-calf-visnu",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-cosmic-calf-surya",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-cosmic-calf-sesa",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-cosmic-calf-siva",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-cosmic-calf-brahma",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-cosmic-calf-rudra",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-cosmic-calf-visnu",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-cosmic-calf-surya",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-cosmic-calf-sesa",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-cosmic-calf-siva",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        }
+      ],
+      "claim_reviewed": "All calf/milker/product rows and non-biological role kinds.",
+      "assessment": "Brahmā(Veda-form)/Bṛhaspati takes unnamed milk; Rudra/Kālāgnirudra yields flesh-form Hara-life; Viṣṇu/Yajamāna act-born sacrifice-support; Sun/Dhruva luminaries’ life; Śeṣa/Vāsuki serpent food; Śiva/Nandikeśvara vidyā. All six rows match actual wording, including36’s lack of a separately specified milk substance.",
+      "proposed_action": null
+    },
+    {
+      "id": "gkr6-review-mud6-sacrifice-count-reconciliation",
+      "status": "SUPPORTED",
+      "locator": "Mudgala2.24.42–54",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "affected_records": [
+        {
+          "table": "evidence",
+          "id": "mud6-e-prthu-rule-hundred-sacrifice",
+          "fields": [
+            "paraphrase"
+          ]
+        },
+        {
+          "table": "evidence",
+          "id": "mud6-e-indra-six-thefts-reconciliation",
+          "fields": [
+            "paraphrase"
+          ]
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud6-event-prthu-rule-hundred-sacrifice",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud6-event-indra-six-thefts-reconciliation",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-prthu-son-parent",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-indra-sacrifice-horse",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-brahma-prthu-restraint",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-indra-prthu-bow",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-prthu-indra-embrace",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-prthu-son-parent",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-indra-sacrifice-horse",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-brahma-prthu-restraint",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-indra-prthu-bow",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-prthu-indra-embrace",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "boons_and_powers",
+          "id": "mud6-power-indra-disguise-counter",
+          "fields": [
+            "motive",
+            "mechanism",
+            "counter",
+            "notes"
+          ]
+        },
+        {
+          "table": "story_spines",
+          "id": "mud6-story-prthu-public-rule",
+          "fields": [
+            "scope",
+            "status",
+            "event_ids"
+          ]
+        }
+      ],
+      "claim_reviewed": "Opening hundred-sacrifice program, six thefts, ninety-nine actual completion and reconciliation.",
+      "assessment": "45 says hundred sacrifices;48 starts the last, with Indra’s matted-rag and later bone/ash disguises exploiting the unnamed son’s ascetic regard.51 explicitly gives SIX thefts.52 explicitly gives99 sacrifices and no Indra death after Brahmā’s consolation.53 gives Brahmā-prompted bow and Pṛthu’s renounced enmity/embrace. Keeping opening100 distinct from final99 is justified; no universal hundredth completion or named son is invented. Whole24 was independently read; declared public-rule ending is present.",
+      "proposed_action": null
+    },
+    {
+      "id": "gkr6-review-mud6-child-incarnation-hymn",
+      "status": "SUPPORTED",
+      "locator": "Mudgala2.25.44–55",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "affected_records": [
+        {
+          "table": "evidence",
+          "id": "mud6-e-kumaras-kasyapa-child-meeting",
+          "fields": [
+            "paraphrase"
+          ]
+        },
+        {
+          "table": "evidence",
+          "id": "mud6-e-kumaras-child-hymn",
+          "fields": [
+            "paraphrase"
+          ]
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud6-event-kumaras-kasyapa-child-meeting",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud6-event-kumaras-child-hymn",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-kasychild-kasyapa",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-kasychild-kasi-house",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-kasiking-realm",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-kumaras-child-visit",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-kasychild-aditi-womb",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-kasychild-kasyapa",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-kasychild-kasi-house",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-kasiking-realm",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-kumaras-child-visit",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-kasychild-aditi-womb",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        }
+      ],
+      "claim_reviewed": "The Kumāras’ recollected child sight and hymn-specific parentage.",
+      "assessment": "Kaśyapa’s son at the unnamed Kāśī king’s house is explicit44–47, and48 hymns Aditi-womb birth. Brahmacārin/child guise, Heramba/devotion and cosmic praises are retained as this source’s remembered meeting/hymn. Pṛthu is the listener, not a present direct visitor; no GP Divodāsa or two-sage story identity is imported.",
+      "proposed_action": null
+    },
+    {
+      "id": "gkr6-review-mud6-child-hymn-promises",
+      "status": "SUPPORTED",
+      "locator": "Mudgala2.25.56–61",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "affected_records": [
+        {
+          "table": "evidence",
+          "id": "mud6-e-child-hymn-promises-kumaras-return",
+          "fields": [
+            "paraphrase"
+          ]
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud6-event-child-hymn-promises-kumaras-return",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "table": "boons_and_powers",
+          "id": "mud6-power-kumaras-child-hymn-benefits",
+          "fields": [
+            "recipient_id",
+            "grantor_id",
+            "requested",
+            "granted",
+            "trigger",
+            "notes"
+          ]
+        },
+        {
+          "table": "boons_and_powers",
+          "id": "mud6-power-kumaras-ganapatya-promise",
+          "fields": [
+            "recipient_id",
+            "grantor_id",
+            "requested",
+            "granted",
+            "trigger",
+            "notes"
+          ]
+        }
+      ],
+      "claim_reviewed": "Child’s reader/hearer benefits and Gaṇapatya promise go to the proper recipients.",
+      "assessment": "57–58 explicitly grant yoga-peace/desired benefits via the hymn and tell the Kumāras they will be Gaṇapatyas like Śiva. No additional personal request is quoted. The child resumes ordinary-looking play; the Kumāras visit the king, receive hospitality and return. These are not a new Pṛthu-directed apparition/grant.",
+      "proposed_action": null
+    },
+    {
+      "id": "gkr6-review-mud6-prthu-wife-final-merger",
+      "status": "SUPPORTED",
+      "locator": "Mudgala2.25.62–64",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "affected_records": [
+        {
+          "table": "evidence",
+          "id": "mud6-e-prthu-wife-final-merger",
+          "fields": [
+            "paraphrase"
+          ]
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud6-event-prthu-wife-final-merger",
+          "fields": [
+            "details"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-prthu-sons-group",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-prthu-kingdom-division",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-prwife-ganesa-merger",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-prthu-sons-group",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-prthu-kingdom-division",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-prwife-ganesa-merger",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "boons_and_powers",
+          "id": "mud6-power-prthu-account-benefits",
+          "fields": [
+            "trigger",
+            "granted"
+          ]
+        }
+      ],
+      "claim_reviewed": "Plural unnamed sons receive divided rule; forest practice ends in actual joint merger with wife.",
+      "assessment": "62 gives the Kumāras’ return to Brahmā’s world and Pṛthu’s kingdom division among sons;63 gives progressive yoga/Gaṇapatya state and actual end-merger with wife in Gaṇeśa. No wife name, specific son list or mere prospective substitute is introduced.64 hearing/reading benefits are separate. This bounded ending check does not independently certify every philosophical field in25.1–43.",
+      "proposed_action": null
+    },
+    {
+      "id": "gkr6-review-mud6-barhis-bounded-family",
+      "status": "SUPPORTED",
+      "locator": "Mudgala2.26.1–5",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "affected_records": [
+        {
+          "table": "evidence",
+          "id": "mud6-e-barhis-family-pracetas-tapas",
+          "fields": [
+            "paraphrase:family/tapas clauses1–5 only"
+          ]
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud6-event-barhis-family-pracetas-tapas",
+          "fields": [
+            "details:family/tapas clauses1–5 only"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-barhis-prthu-line",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-barhis-wife-samudra",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-barhis-wife",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-pracetas-barhis",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-pracetas-mother",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-pracetas-lake",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-pracetas-visnu",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-barhis-prthu-line",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-barhis-wife-samudra",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-barhis-wife",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-pracetas-barhis",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-pracetas-mother",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-pracetas-lake",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-pracetas-visnu",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        }
+      ],
+      "claim_reviewed": "Barhis lineage, unnamed ocean daughter, ten alike Pracetas and Viṣṇu worship by the lake.",
+      "assessment": "1 gives descent in Pṛthu’s lineage, not direct sonship;3 gives forest marriage to Samudra’s unnamed daughter and TEN sons.4 gives likeness of appearance/conduct/mind and collective Pracetas name;5 gives progeny tapas near ocean at Nārāyaṇa lake and Viṣṇu worship. No later spouse, individual sons, duration or borrowed Śiva hymn is read into this excerpt.",
+      "proposed_action": null
+    },
+    {
+      "id": "gkr6-review-mud6-barhis-bounded-actual-end",
+      "status": "SUPPORTED",
+      "locator": "Mudgala2.26.42–45",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "affected_records": [
+        {
+          "table": "evidence",
+          "id": "mud6-e-barhis-ministers-forest-final",
+          "fields": [
+            "paraphrase:42–45 outcome only"
+          ]
+        },
+        {
+          "table": "narrative_events",
+          "id": "mud6-event-barhis-ministers-forest-final",
+          "fields": [
+            "details/outcome:42–45 only"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-barhis-minister-handoff",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "relationships",
+          "id": "mud6-r-barhis-ganesa-merger",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-barhis-minister-handoff",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "assertions",
+          "id": "mud6-a-barhis-ganesa-merger",
+          "fields": [
+            "subject_id",
+            "predicate",
+            "object_id",
+            "evidence_ids"
+          ]
+        },
+        {
+          "table": "boons_and_powers",
+          "id": "mud6-power-barhis-account-benefits",
+          "fields": [
+            "trigger",
+            "granted"
+          ]
+        }
+      ],
+      "claim_reviewed": "Ministers receive kingdom and forest progression ends in actual Gaṇeśa merger.",
+      "assessment": "42 explicitly has amātyeṣu, not a sons’ handoff.43 describes progressive practice according to Nārada’s knowledge;44 actual merger in Brahman-form Gaṇeśa;45 sin destruction/all-giving hearing/reading benefit. This bounded verification is not a whole26 doctrine/extraction certificate.",
+      "proposed_action": null
+    }
+  ],
+  "checked_ids": {
+    "evidence": [
+      "mud6-e-anga-vena-rule-death",
+      "mud6-e-barhis-family-pracetas-tapas",
+      "mud6-e-barhis-ministers-forest-final",
+      "mud6-e-child-hymn-promises-kumaras-return",
+      "mud6-e-cosmic-milking-role-table",
+      "mud6-e-dhruva-actual-end-benefits",
+      "mud6-e-dhruva-family-visnu-tapas",
+      "mud6-e-dhruva-location-duration-raw",
+      "mud6-e-dhruva-vinayaka-site-clear",
+      "mud6-e-dhruva-visnu-message-one-mantra",
+      "mud6-e-indra-six-thefts-reconciliation",
+      "mud6-e-kumaras-child-hymn",
+      "mud6-e-kumaras-kasyapa-child-meeting",
+      "mud6-e-prthu-earth-pursuit-terms",
+      "mud6-e-prthu-leveling-adoption-milking",
+      "mud6-e-prthu-rule-hundred-sacrifice",
+      "mud6-e-prthu-wife-final-merger",
+      "mud6-e-uttanapada-six-mantra-end",
+      "mud6-e-vena-body-nisada-prthu-pair"
+    ],
+    "narrative_events": [
+      "mud6-event-anga-vena-rule-death",
+      "mud6-event-barhis-family-pracetas-tapas",
+      "mud6-event-barhis-ministers-forest-final",
+      "mud6-event-child-hymn-promises-kumaras-return",
+      "mud6-event-cosmic-milking-role-table",
+      "mud6-event-dhruva-actual-end-benefits",
+      "mud6-event-dhruva-family-visnu-tapas",
+      "mud6-event-dhruva-vinayaka-site-clear",
+      "mud6-event-dhruva-visnu-message-one-mantra",
+      "mud6-event-indra-six-thefts-reconciliation",
+      "mud6-event-kumaras-child-hymn",
+      "mud6-event-kumaras-kasyapa-child-meeting",
+      "mud6-event-prthu-earth-pursuit-terms",
+      "mud6-event-prthu-leveling-adoption-milking",
+      "mud6-event-prthu-rule-hundred-sacrifice",
+      "mud6-event-prthu-wife-final-merger",
+      "mud6-event-uttanapada-six-mantra-end",
+      "mud6-event-vena-body-nisada-prthu-pair"
+    ],
+    "relationships": [
+      "mud6-r-anga-dhruva-line",
+      "mud6-r-anga-wife",
+      "mud6-r-barhis-ganesa-merger",
+      "mud6-r-barhis-minister-handoff",
+      "mud6-r-barhis-prthu-line",
+      "mud6-r-barhis-wife",
+      "mud6-r-barhis-wife-samudra",
+      "mud6-r-brahma-prthu-restraint",
+      "mud6-r-cosmic-calf-brahma",
+      "mud6-r-cosmic-calf-rudra",
+      "mud6-r-cosmic-calf-sesa",
+      "mud6-r-cosmic-calf-siva",
+      "mud6-r-cosmic-calf-surya",
+      "mud6-r-cosmic-calf-visnu",
+      "mud6-r-dhruva-mathura",
+      "mud6-r-dhruva-mayuresa",
+      "mud6-r-dhruva-one-mantra-guru",
+      "mud6-r-dhruva-suniti",
+      "mud6-r-dhruva-uttana",
+      "mud6-r-dhruva-visnu-message",
+      "mud6-r-earth-prthu-adoption",
+      "mud6-r-earth-prthu-refuge",
+      "mud6-r-indra-prthu-bow",
+      "mud6-r-indra-sacrifice-horse",
+      "mud6-r-kasiking-realm",
+      "mud6-r-kasychild-aditi-womb",
+      "mud6-r-kasychild-kasi-house",
+      "mud6-r-kasychild-kasyapa",
+      "mud6-r-kumaras-child-visit",
+      "mud6-r-mrtyu-daughter",
+      "mud6-r-narada-dhruva-mantra",
+      "mud6-r-narada-dhruva-teacher",
+      "mud6-r-narada-uttana-initiation",
+      "mud6-r-nisada-descendants",
+      "mud6-r-nisada-vena-body",
+      "mud6-r-pracetas-barhis",
+      "mud6-r-pracetas-lake",
+      "mud6-r-pracetas-mother",
+      "mud6-r-pracetas-visnu",
+      "mud6-r-prthu-co-emergent-wife",
+      "mud6-r-prthu-earth-arrow",
+      "mud6-r-prthu-earth-bow",
+      "mud6-r-prthu-earth-care",
+      "mud6-r-prthu-earth-threat",
+      "mud6-r-prthu-food-calf",
+      "mud6-r-prthu-indra-embrace",
+      "mud6-r-prthu-kingdom-division",
+      "mud6-r-prthu-son-parent",
+      "mud6-r-prthu-sons-group",
+      "mud6-r-prthu-vena-body",
+      "mud6-r-prthu-visnu-kala",
+      "mud6-r-prwife-ganesa-merger",
+      "mud6-r-prwife-vena-body",
+      "mud6-r-prwife-visnu-kala",
+      "mud6-r-suniti-uttana",
+      "mud6-r-suruci-uttana",
+      "mud6-r-uttama-suruci",
+      "mud6-r-uttama-uttana",
+      "mud6-r-uttana-madhya",
+      "mud6-r-uttana-manu",
+      "mud6-r-uttana-six-mantra",
+      "mud6-r-vena-anga",
+      "mud6-r-vena-mother",
+      "mud6-r-vena-sage-curse"
+    ],
+    "assertions": [
+      "mud6-a-anga-dhruva-line",
+      "mud6-a-anga-wife",
+      "mud6-a-barhis-ganesa-merger",
+      "mud6-a-barhis-minister-handoff",
+      "mud6-a-barhis-prthu-line",
+      "mud6-a-barhis-wife",
+      "mud6-a-barhis-wife-samudra",
+      "mud6-a-brahma-prthu-restraint",
+      "mud6-a-cosmic-calf-brahma",
+      "mud6-a-cosmic-calf-rudra",
+      "mud6-a-cosmic-calf-sesa",
+      "mud6-a-cosmic-calf-siva",
+      "mud6-a-cosmic-calf-surya",
+      "mud6-a-cosmic-calf-visnu",
+      "mud6-a-dhruva-mathura",
+      "mud6-a-dhruva-mayuresa",
+      "mud6-a-dhruva-one-mantra-guru",
+      "mud6-a-dhruva-suniti",
+      "mud6-a-dhruva-uttana",
+      "mud6-a-dhruva-visnu-message",
+      "mud6-a-earth-prthu-adoption",
+      "mud6-a-earth-prthu-refuge",
+      "mud6-a-indra-prthu-bow",
+      "mud6-a-indra-sacrifice-horse",
+      "mud6-a-kasiking-realm",
+      "mud6-a-kasychild-aditi-womb",
+      "mud6-a-kasychild-kasi-house",
+      "mud6-a-kasychild-kasyapa",
+      "mud6-a-kumaras-child-visit",
+      "mud6-a-mrtyu-daughter",
+      "mud6-a-narada-dhruva-mantra",
+      "mud6-a-narada-dhruva-teacher",
+      "mud6-a-narada-uttana-initiation",
+      "mud6-a-nisada-descendants",
+      "mud6-a-nisada-vena-body",
+      "mud6-a-pracetas-barhis",
+      "mud6-a-pracetas-lake",
+      "mud6-a-pracetas-mother",
+      "mud6-a-pracetas-visnu",
+      "mud6-a-prthu-co-emergent-wife",
+      "mud6-a-prthu-earth-arrow",
+      "mud6-a-prthu-earth-bow",
+      "mud6-a-prthu-earth-care",
+      "mud6-a-prthu-earth-threat",
+      "mud6-a-prthu-food-calf",
+      "mud6-a-prthu-indra-embrace",
+      "mud6-a-prthu-kingdom-division",
+      "mud6-a-prthu-son-parent",
+      "mud6-a-prthu-sons-group",
+      "mud6-a-prthu-vena-body",
+      "mud6-a-prthu-visnu-kala",
+      "mud6-a-prwife-ganesa-merger",
+      "mud6-a-prwife-vena-body",
+      "mud6-a-prwife-visnu-kala",
+      "mud6-a-suniti-uttana",
+      "mud6-a-suruci-uttana",
+      "mud6-a-uttama-suruci",
+      "mud6-a-uttama-uttana",
+      "mud6-a-uttana-madhya",
+      "mud6-a-uttana-manu",
+      "mud6-a-uttana-six-mantra",
+      "mud6-a-vena-anga",
+      "mud6-a-vena-mother",
+      "mud6-a-vena-sage-curse"
+    ],
+    "entities": [
+      "mud6-en-dhruva-one-mantra",
+      "mud6-en-dhruva-visnu-twelve-mantra",
+      "mud6-en-prthu",
+      "mud6-en-prthu-unnamed-wife"
+    ],
+    "boons_and_powers": [
+      "mud6-power-barhis-account-benefits",
+      "mud6-power-dhruva-ganesa-peace-condition",
+      "mud6-power-dhruva-visnu-grant",
+      "mud6-power-dhruvavinayaka-benefits",
+      "mud6-power-earth-cow-food-terms",
+      "mud6-power-indra-disguise-counter",
+      "mud6-power-kumaras-child-hymn-benefits",
+      "mud6-power-kumaras-ganapatya-promise",
+      "mud6-power-prthu-account-benefits",
+      "mud6-power-prthu-six-taste-milk",
+      "mud6-power-uttanapada-ganapatya-sayujya"
+    ],
+    "story_spines": [
+      "mud6-story-dhruva-journey",
+      "mud6-story-prthu-public-rule"
+    ]
+  },
+  "checked_id_counts": {
+    "evidence": 19,
+    "narrative_events": 18,
+    "relationships": 64,
+    "assertions": 64,
+    "entities": 4,
+    "boons_and_powers": 11,
+    "story_spines": 2
+  },
+  "total_distinct_record_ids": 182,
+  "status_counts": {
+    "SUPPORTED": 16,
+    "CORRECTION_REQUIRED": 1,
+    "UNDETERMINED": 1
+  },
+  "limitations": [
+    "Independent reading of the same accessible digital witness, not independent print/Sanskrit-expert collation.",
+    "Whole23 and24 read; whole23 remains PARTIAL for site/duration raw clauses.",
+    "25 and26 checks are bounded by the assigned targets; no exhaustive whole26 or full25 philosophical certification.",
+    "The frozen author patch and all issued outputs were unchanged; root proposed correction assessed without applying it.",
+    "Checked-ID counts refer to specified fields/clauses in findings, not every unrelated field or evidence span attached to those IDs.",
+    "No exact mantra strings, additional kin names, imported slaughter instruments, Arci, Sunīthā or conventional theft/tapas counts inferred from other corpora."
+  ]
+}

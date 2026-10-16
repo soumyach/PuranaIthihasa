@@ -1,0 +1,134 @@
+{
+  "continuation": "continuation5",
+  "new_chapters_complete": 14,
+  "new_complete_arcs": 11,
+  "core_chapters_complete": 173,
+  "core_chapters_remaining": 502,
+  "core_chapter_states": {
+    "COMPLETE": 173,
+    "PARTIAL": 64,
+    "IN_PROGRESS": 6,
+    "NOT_STARTED": 432
+  },
+  "total_complete_arcs": 93,
+  "core_complete_arcs": 86,
+  "new_chapter_keys": [
+    {
+      "witness_id": "gp-wit-sd-upasana",
+      "chapter": 72
+    },
+    {
+      "witness_id": "gp-wit-sd-upasana",
+      "chapter": 74
+    },
+    {
+      "witness_id": "gp-wit-sd-upasana",
+      "chapter": 75
+    },
+    {
+      "witness_id": "gp-wit-sd-upasana",
+      "chapter": 77
+    },
+    {
+      "witness_id": "gp-wit-sd-upasana",
+      "chapter": 78
+    },
+    {
+      "witness_id": "gp-wit-sd-krida",
+      "chapter": 54
+    },
+    {
+      "witness_id": "gp-wit-sd-krida",
+      "chapter": 55
+    },
+    {
+      "witness_id": "gp-wit-sd-krida",
+      "chapter": 57
+    },
+    {
+      "witness_id": "gp-wit-sd-krida",
+      "chapter": 58
+    },
+    {
+      "witness_id": "gp-wit-sd-krida",
+      "chapter": 60
+    },
+    {
+      "witness_id": "gp-wit-sd-mudgala-2",
+      "chapter": 19
+    },
+    {
+      "witness_id": "gp-wit-sd-mudgala-2",
+      "chapter": 22
+    },
+    {
+      "witness_id": "gp-wit-sd-mudgala-2",
+      "chapter": 24
+    },
+    {
+      "witness_id": "gp-wit-sd-mudgala-2",
+      "chapter": 25
+    }
+  ],
+  "new_complete_arc_ids": [
+    "gup4-story-vimana-frame",
+    "gup6-story-sesa-pravala",
+    "gup6-story-sundari-rescue",
+    "gup6-story-surasena-city-rescue",
+    "gkr6-story-house-visits",
+    "gkr6-story-sage-vision54",
+    "gkr6-story-sukla-wealth55",
+    "mud6-story-bharata-robbers",
+    "mud6-story-bharata-final-devotion",
+    "mud6-story-prthu-public-rule",
+    "mud6-story-prthu-peace"
+  ],
+  "explicit_needs_review": {
+    "evidence": 66,
+    "assertions": 33,
+    "relationships": 10,
+    "boons_and_powers": 9,
+    "narrative_events": 17
+  },
+  "counts": {
+    "sources_registered": 19,
+    "witnesses_registered": 34,
+    "sources_with_passage_reading": 9,
+    "passages_registered": 1025,
+    "passages_fully_extracted": 570,
+    "passages_partially_extracted": 446,
+    "entities": 3515,
+    "entities_with_verified_evidence": 3415,
+    "assertions_verified_against_witness": 4384,
+    "relationships_verified_against_witness": 3928,
+    "kinship_relationships_verified": 520,
+    "boons_verified": 248,
+    "powers_verified": 527,
+    "events_with_records": 1118,
+    "events_verified_against_witness": 1101,
+    "story_spines": 149,
+    "story_spine_statuses": {
+      "COMPLETE": 93,
+      "PARTIAL": 56
+    },
+    "variant_records": 132,
+    "content_entities": 3226,
+    "documentary_entities": 289,
+    "content_assertions_verified_against_witness": 3111,
+    "content_relationships_verified_against_witness": 2655,
+    "source_examination_statuses": {
+      "PARTIALLY_READ": 8,
+      "INDEX_REVIEWED": 3,
+      "IDENTIFIED": 7,
+      "READ": 1
+    }
+  },
+  "whole_chapter_units_with_extraction_attempt_this_continuation": 27,
+  "those_units_remaining_partial": 13,
+  "formal_resume_targets": {
+    "Upāsanā": "81.1",
+    "Krīḍā": "64.1",
+    "Mudgala": "2.27.1"
+  },
+  "reading_note": "27 bounded whole chapter units received formal extraction attempts (including inherited read-only54);14 COMPLETE and13 PARTIAL. Krīḍā64 is whole-body read-only, not formally extracted. Next fragments remain separate."
+}

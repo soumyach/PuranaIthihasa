@@ -1,0 +1,1567 @@
+{
+  "checkpoint": "continuation3",
+  "completed_arc_id": "gkr4-story-river-curse-release",
+  "graph_sha256": "cecbec8daa706000cb98923d6b48e16119667f17c4f6fce4acf05de2b7a7a376",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checking complete; selective independent review in separate bounded reports, not universal certification.",
+  "story": {
+    "id": "gkr4-story-river-curse-release",
+    "title": "Sāvitrī river curse, goddess śamī tapas and restored gods with river aṃśas",
+    "source_id": "gp-src-ganesha",
+    "witness_id": "gp-wit-sd-krida",
+    "scope": "Krīḍā36.1–41;37.1–33",
+    "event_ids": [
+      "gkr4-event-neglect-curse",
+      "gkr4-event-refuge",
+      "gkr4-event-tapas-vision",
+      "gkr4-event-restoration",
+      "gkr4-event-install-aftermath",
+      "gkr4-event-frame-return"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Entire stated chapter bodies read; narration, significant dialogue, all named actors/family, worship/requests/grants, weapons/powers/counters and aftermath extracted.",
+    "missing_sections": [],
+    "editorial_notes": "Bounded scene completion only; larger Vināyaka cycle incomplete. Independent print/Sanskrit expert audit pending."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "gkr4-event-neglect-curse",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-river-curse-release",
+        "sequence": 1,
+        "passage_ids": [
+          "gkr4-p-036"
+        ],
+        "participants": [
+          "gup2-en-001",
+          "gkr-en-siva",
+          "gkr-en-uma",
+          "gp-en-brahma",
+          "gup-en-161",
+          "gkr4-en-gayatri36",
+          "gkr4-en-river-gods36",
+          "gkr4-en-ritual-sages36",
+          "gkr4-en-venya36",
+          "gkr4-en-krsna-river36"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "At Mahābala, the hurried sacrifice neglects Gaṇeśa and Sāvitrī and seats Gāyatrī. Sāvitrī’s curse becomes river forms at the petitioners’ request, including Śiva/Veṇyā and Kṛṣṇa/Kṛṣṇā.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr4-e-river-sacrifice-curse"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr4-e-river-sacrifice-curse",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr4-p-036",
+          "locator": "Krīḍā 36.1–15; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "Gṛtsamada describes Śiva, Girijā, gaṇas and sages at Mahābala in Sahyādri. Brahmā comes with two wives for a sacrifice; Śiva summons Jamadagni, Vasiṣṭha, Mārkaṇḍeya, Nārada, Kapila, Pulaha, Kaṇva, Viśvāmitra, Trita, Dvita and others. Hurrying at the chosen morning time, they forget Vināyaka worship and leave Sāvitrī occupied with household work. They seat Gāyatrī and begin the rites and fire. Angry Sāvitrī declares failure and curses gods and sages to become insentient for seating the unauthorized wife. They request water and river forms instead, with a letter-equivalence phrase, and she assents. Śiva becomes Veṇyā, Kṛṣṇa Kṛṣṇā and the others rivers bearing their names. The passage compares obstacles during Śiva’s destruction of Tripura when Gaṇeśa was neglected.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation4 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr4-event-refuge",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-river-curse-release",
+        "sequence": 2,
+        "passage_ids": [
+          "gkr4-p-036"
+        ],
+        "participants": [
+          "gp-en-brahma",
+          "gkr4-en-goddesses36",
+          "gkr4-en-pulomaja36",
+          "gkr-en-uma",
+          "gup-en-255",
+          "gkr-en-laksmi",
+          "gkr4-en-rama-vakra-image36",
+          "gkr-en-rama-analogy"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Brahmā and the goddesses acknowledge the neglected worship and plan devotion. The women go to the Rāma-established Vakratunda image in Karnāṭaka; his victory is recalled briefly.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr4-e-goddesses-refuge"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr4-e-goddesses-refuge",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr4-p-036",
+          "locator": "Krīḍā 36.16–29; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "Brahmā is distressed that his sacrifice caused the gods’ river forms and resolves to please Vighnahartā. Pulomajā, Girijā, Chāyā, Kamalā and other goddesses ask why the senior wife and Gaṇeśa were neglected and how to find relief. Brahmā reassures them and prescribes devotion, which he will also perform. They go to Karnāṭaka to a Mandāra-root image installed by Rāma as Vakratunda. The passage reports that its Lord’s boons made Rāma victorious over Rākṣasa leaders and Daśānana and brought him home with his wife. The goddesses begin severe tapas.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation4 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr4-event-tapas-vision",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-river-curse-release",
+        "sequence": 3,
+        "passage_ids": [
+          "gkr4-p-036"
+        ],
+        "participants": [
+          "gkr4-en-goddesses36",
+          "gp-en-ganesha",
+          "gkr4-en-mouse36",
+          "gkr-en-siddhi",
+          "gkr-en-buddhi"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Varied austerities initially fail. Following a sky instruction, all offer śamī leaves and receive the four-armed, TWO-TUSK, mouse-mounted vision with Siddhi and Buddhi.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr4-e-goddesses-worship-vision"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr4-e-goddesses-worship-vision",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr4-p-036",
+          "locator": "Krīḍā 36.30–41; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "The goddesses use name and mantra recitation, lotus and hero postures, fasting, sweeping, circumambulation, bows, standing on one great toe, meditation and hymns. After a long time the Lord is not pleased. They offer flowers, dūrvā, incense, lamps, food, gold, Mandāra and śamī in different ways. A sky voice says he will not be pleased without śamī, so all worship with its leaves. Gajānana appears compassionately: four arms, crown, armlets, necklaces and earrings, long ears, cheeks, TWO TUSKS, Siddhi and Buddhi, mouse mount and yellow garments. Radiant like crores of suns, he receives their joyful prostration and hymn.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation4 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr4-event-restoration",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-river-curse-release",
+        "sequence": 4,
+        "passage_ids": [
+          "gkr4-p-037"
+        ],
+        "participants": [
+          "gkr4-en-goddesses36",
+          "gkr4-en-river-gods36",
+          "gp-en-ganesha",
+          "gkr4-en-river-hymn37",
+          "gup-en-161"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "The goddess hymn requests original forms and constant remembrance. Gaṇeśa preserves Sāvitrī’s curse through river portions while restoring gods’ forms and offices. They apologize and worship.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr4-e-river-release-grant"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr4-e-river-release-grant",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr4-p-037",
+          "locator": "Krīḍā 37.1–17; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "At Kīrti’s request Gṛtsamada gives the goddesses’ hymn, praising the all-formed inner ruler, infinite power, refuge, many manifestations and weapons, world-protection and grants. They request the watery gods’ original forms and uninterrupted remembrance. Pleased, Gaṇeśa grants their wishes: Sāvitrī’s word cannot be made false, so gods recover original forms and offices while portions remain as rivers. He orders śamī worship, saying a leaf equals offering the world and gives the fruit of a hundred bhāras of gold. The gods actually regain their forms while river portions remain. They ask forgiveness for neglecting the elder wife and deity through delusion, rejoice and worship with leaves.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation4 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr4-event-install-aftermath",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-river-curse-release",
+        "sequence": 5,
+        "passage_ids": [
+          "gkr4-p-037"
+        ],
+        "participants": [
+          "gkr4-en-river-gods36",
+          "gkr4-en-heramba-image37",
+          "gkr4-en-heramba-temple37",
+          "gkr4-en-supattana37",
+          "gkr-en-indra",
+          "gkr4-en-rama-vakra-image36",
+          "gp-en-brahma"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Gods install the stone Heramba temple at Supattana; Indra takes the earlier Mandāra image. Divine offices and household joys return. Brahmā performs twelve YEARS of tapas and repeats the sacrifice.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr4-e-river-aftermath"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr4-e-river-aftermath",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr4-p-037",
+          "locator": "Krīḍā 37.18–27; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "The Lord accepts and disappears. Gods install a stone image with four arms, trunk and elephant face, called Heramba, and a temple at Supattana for the world’s benefit. They promise all desires through devotional worship, remembrance and bowing. Indra takes the earlier Mandāra image to his city and worships it with his wife. Gods return to their offices, make Mandāra images and worship with śamī, enjoying their spouses and fulfilled desires. After twelve YEARS of tapas, Brahmā pleases Vighneśa and repeats the sacrifice. He worships a Mandāra image with śamī, gold leaves, dūrvā, Mandāra, ketaka and white dūrvā.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation4 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr4-event-frame-return",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr4-story-river-curse-release",
+        "sequence": 6,
+        "passage_ids": [
+          "gkr4-p-037"
+        ],
+        "participants": [
+          "gup2-en-001",
+          "gkr4-en-kirti32",
+          "gkr4-en-ksipraprasadana33",
+          "gp-en-ganesha"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Gṛtsamada applies the plant account to the child’s revival and asks to leave. Kīrti bows and dismisses him; devotional hearing and morning remembrance fruits close the account, before another question in38.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr4-e-kirti-frame-close"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr4-e-kirti-frame-close",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr4-p-037",
+          "locator": "Krīḍā 37.28–33; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "Gṛtsamada tells Kīrti that hearing Mandāra and śamī’s glory removes sin, and her unknowing worship caused the child’s revival. He asks permission to go home. Hearing the account, she bows and dismisses her son’s reviver. The narrator promises no distress and fulfilled desires for hearing this story, and sinlessness and happiness through morning devotional remembrance of śamī, Mandāra and Gaṇeśa.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation4 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gp-en-brahma",
+      "name": "Brahmā",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-frame",
+        "gup-e-001",
+        "gup-e-024",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-036",
+        "gup-e-037",
+        "gup-e-038",
+        "gup-e-039",
+        "gup-e-040",
+        "gup-e-041",
+        "gup-e-042",
+        "gup-e-049",
+        "gup-e-050",
+        "gup-e-073",
+        "gup-e-084",
+        "gup-e-086",
+        "gup-e-089",
+        "gup-e-092",
+        "gup-e-094",
+        "gkr-e-frame",
+        "gup2-e-006",
+        "gup2-e-014",
+        "gup2-e-016",
+        "gup2-e-021",
+        "gup2-e-027",
+        "gup2-e-032",
+        "gup2-e-035",
+        "gup2-e-038",
+        "gup2-e-044",
+        "gup2-e-047",
+        "gup2-e-051",
+        "gup2-e-056",
+        "gup2-e-060",
+        "gup2-e-067",
+        "gkr2-e-remote-offering",
+        "gkr2-e-well-conspiracy",
+        "gkr2-e-trio-plan",
+        "gup3-e-005",
+        "gup3-e-008",
+        "gup3-e-012",
+        "gkr3-e-frame27",
+        "gkr3-e-virtuous-king",
+        "gkr3-e-succession27",
+        "gkr3-e-prior-merit-release",
+        "gkr3-e-kasyapa-creation",
+        "gkr3-e-indra-vishnu",
+        "gup4-e-010",
+        "gup4-e-013",
+        "gup4-e-014",
+        "gup4-e-016",
+        "gup4-e-035",
+        "gup4-e-036",
+        "gup4-e-050",
+        "gup4-e-051",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-055",
+        "gup4-e-056",
+        "gkr4-e-vamana-aftermath-image",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-durasada-conquest",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-dhundhiraja-name-aftermath"
+      ]
+    },
+    {
+      "id": "gp-en-ganesha",
+      "name": "Gaṇeśa",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-result",
+        "gup-e-001",
+        "gup-e-005",
+        "gup-e-008",
+        "gup-e-014",
+        "gup-e-021",
+        "gup-e-023",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-036",
+        "gup-e-037",
+        "gup-e-038",
+        "gup-e-039",
+        "gup-e-040",
+        "gup-e-042",
+        "gup-e-044",
+        "gup-e-045",
+        "gup-e-046",
+        "gup-e-047",
+        "gup-e-049",
+        "gup-e-051",
+        "gup-e-053",
+        "gup-e-054",
+        "gup-e-055",
+        "gup-e-056",
+        "gup-e-057",
+        "gup-e-058",
+        "gup-e-059",
+        "gup-e-060",
+        "gup-e-062",
+        "gup-e-063",
+        "gup-e-064",
+        "gup-e-065",
+        "gup-e-066",
+        "gup-e-067",
+        "gup-e-070",
+        "gup-e-071",
+        "gup-e-072",
+        "gup-e-073",
+        "gup-e-074",
+        "gup-e-075",
+        "gup-e-076",
+        "gup-e-085",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-088",
+        "gup-e-089",
+        "gup-e-090",
+        "gup-e-091",
+        "gup-e-092",
+        "gup-e-093",
+        "gup-e-094",
+        "gkr-e-ages",
+        "gup2-e-007",
+        "gup2-e-011",
+        "gup2-e-012",
+        "gup2-e-013",
+        "gup2-e-014",
+        "gup2-e-015",
+        "gup2-e-017",
+        "gup2-e-018",
+        "gup2-e-019",
+        "gup2-e-020",
+        "gup2-e-021",
+        "gup2-e-029",
+        "gup2-e-030",
+        "gup2-e-031",
+        "gup2-e-032",
+        "gup2-e-033",
+        "gup2-e-036",
+        "gup2-e-045",
+        "gup2-e-046",
+        "gup2-e-047",
+        "gup2-e-048",
+        "gup2-e-049",
+        "gup2-e-050",
+        "gup2-e-051",
+        "gup2-e-052",
+        "gup2-e-056",
+        "gup2-e-057",
+        "gup2-e-058",
+        "gup2-e-059",
+        "gup2-e-060",
+        "gup2-e-063",
+        "gup2-e-064",
+        "gup2-e-066",
+        "gkr2-e-leaf-and-vamana",
+        "gkr2-e-hunter-demon-liberation",
+        "gup3-e-004",
+        "gup3-e-005",
+        "gup3-e-006",
+        "gup3-e-007",
+        "gup3-e-008",
+        "gup3-e-009",
+        "gup3-e-010",
+        "gup3-e-011",
+        "gup3-e-012",
+        "gup3-e-013",
+        "gup3-e-014",
+        "gup3-e-015",
+        "gup3-e-016",
+        "gup3-e-017",
+        "gup3-e-018",
+        "gkr3-e-rama-father-varada",
+        "gkr3-e-incidental-worship",
+        "gkr3-e-prior-merit-release",
+        "gup4-e-002",
+        "gup4-e-003",
+        "gup4-e-005",
+        "gup4-e-009",
+        "gup4-e-010",
+        "gup4-e-011",
+        "gup4-e-012",
+        "gup4-e-015",
+        "gup4-e-016",
+        "gup4-e-017",
+        "gup4-e-018",
+        "gup4-e-027",
+        "gup4-e-028",
+        "gup4-e-029",
+        "gup4-e-031",
+        "gup4-e-033",
+        "gup4-e-034",
+        "gup4-e-035",
+        "gup4-e-038",
+        "gup4-e-040",
+        "gup4-e-042",
+        "gup4-e-044",
+        "gup4-e-048",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-057",
+        "gup4-e-058",
+        "gup4-e-059",
+        "gup4-e-060",
+        "gup4-e-061",
+        "gup4-e-062",
+        "gkr4-e-vamana-guru-tapas",
+        "gkr4-e-vamana-request-grant",
+        "gkr4-e-vamana-installation",
+        "gkr4-e-water-steps-promises",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-sages-vision-hymn",
+        "gkr4-e-trees-request-alternative",
+        "gkr4-e-tree-benefits",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-worship-vision",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-devi-ganesa-prayer"
+      ]
+    },
+    {
+      "id": "gup-en-161",
+      "name": "Sāvitrī",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-042",
+        "gup-e-079",
+        "gkr4-e-river-sacrifice-curse"
+      ]
+    },
+    {
+      "id": "gup-en-255",
+      "name": "Chāyā",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-079",
+        "gkr4-e-goddesses-refuge"
+      ]
+    },
+    {
+      "id": "gkr-en-siva",
+      "name": "Śiva",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr-e-narada-initiation",
+        "gkr2-e-remote-offering",
+        "gkr2-e-sages-universal-vision",
+        "gkr3-e-siva-hiranya-grant",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-durasada-tapas-vision",
+        "gkr4-e-durasada-request-grant",
+        "gkr4-e-durasada-conquest",
+        "gkr4-e-bhasmasura-counter",
+        "gkr4-e-durasada-kasi-oppression",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-vakra-accepts-mission",
+        "gkr4-e-astra-counters",
+        "gkr4-e-durasada-restraint-surrender"
+      ]
+    },
+    {
+      "id": "gkr-en-uma",
+      "name": "Umā",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [
+        {
+          "name": "Gaurī",
+          "evidence_ids": [
+            "gkr-e-postgita-variants"
+          ]
+        },
+        {
+          "name": "Pārvatī",
+          "evidence_ids": [
+            "gkr-e-postgita-residence"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "gkr-e-siva-appearance",
+        "gkr-e-postgita-variants",
+        "gkr-e-postgita-residence",
+        "gkr3-e-siva-hiranya-grant",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-durasada-tapas-vision",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-devi-ganesa-prayer",
+        "gkr4-e-vakra-radiance-emergence",
+        "gkr4-e-vakra-accepts-mission"
+      ]
+    },
+    {
+      "id": "gkr-en-indra",
+      "name": "Indra",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr-e-devantaka-arrives",
+        "gkr2-e-manifestation-purpose",
+        "gkr3-e-bali-policy",
+        "gkr3-e-indra-vishnu",
+        "gkr4-e-grtsamada-sami-teaching",
+        "gkr4-e-samika-mandara-family",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-child-name-request",
+        "gkr4-e-durasada-conquest",
+        "gkr4-e-devas-counsel"
+      ]
+    },
+    {
+      "id": "gkr-en-laksmi",
+      "name": "Lakṣmī",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr-e-devantaka-enthroned",
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-durasada-conquest"
+      ]
+    },
+    {
+      "id": "gkr-en-siddhi",
+      "name": "Siddhi attending Vināyaka",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr-e-aditi-tapas",
+        "gkr2-e-dharmadatta-offering",
+        "gkr2-e-dharmadatta-return",
+        "gkr2-e-devotional-form",
+        "gkr2-e-sages-universal-vision",
+        "gkr4-e-vamana-guru-tapas",
+        "gkr4-e-goddesses-worship-vision"
+      ]
+    },
+    {
+      "id": "gkr-en-buddhi",
+      "name": "Buddhi attending Vināyaka",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr-e-aditi-tapas",
+        "gkr2-e-dharmadatta-offering",
+        "gkr2-e-dharmadatta-return",
+        "gkr2-e-devotional-form",
+        "gkr2-e-sages-universal-vision",
+        "gkr4-e-vamana-guru-tapas",
+        "gkr4-e-goddesses-worship-vision"
+      ]
+    },
+    {
+      "id": "gkr-en-rama-analogy",
+      "name": "Rāma, referenced with Sugrīva in137",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr-e-sindura-challenge",
+        "gkr3-e-rama-father-varada",
+        "gkr4-e-goddesses-refuge"
+      ],
+      "notes": "Source-reported analogy/reference only. Referenced epic/Purāṇa account not independently read here; no expanded biography inferred."
+    },
+    {
+      "id": "gup2-en-001",
+      "name": "Gṛtsamada",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup2-e-006",
+        "gup2-e-007",
+        "gup2-e-008",
+        "gup2-e-009",
+        "gup2-e-010",
+        "gup2-e-011",
+        "gup2-e-012",
+        "gup2-e-013",
+        "gup2-e-014",
+        "gup2-e-015",
+        "gup2-e-016",
+        "gup2-e-017",
+        "gup2-e-018",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-grtsamada-sami-teaching",
+        "gkr4-e-aurava-fire-saunaka",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-kirti-frame-close",
+        "gkr4-e-child-name-request"
+      ]
+    },
+    {
+      "id": "gkr4-en-kirti32",
+      "name": "Kīrti, Priyavrata’s first wife",
+      "type": "DEVOTEE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family",
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-kirti-son-poison",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-kirti-frame-close",
+        "gkr4-e-child-name-request"
+      ]
+    },
+    {
+      "id": "gkr4-en-ksipraprasadana33",
+      "name": "Kṣipraprasādana, Kīrti’s son",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-kirti-son-poison",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-kirti-frame-close",
+        "gkr4-e-child-name-request"
+      ]
+    },
+    {
+      "id": "gkr4-en-river-gods36",
+      "name": "Gods/sages cursed at Mahābala rite",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-river-release-grant"
+      ]
+    },
+    {
+      "id": "gkr4-en-goddesses36",
+      "name": "Goddesses petitioning for river-gods",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-goddesses-worship-vision",
+        "gkr4-e-river-release-grant"
+      ]
+    },
+    {
+      "id": "gkr4-en-gayatri36",
+      "name": "Gāyatrī, seated ritual wife",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-river-sacrifice-curse"
+      ]
+    },
+    {
+      "id": "gkr4-en-pulomaja36",
+      "name": "Pulomajā in goddess petitioners",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge"
+      ],
+      "notes": "Epithetonly,notnewbiologicalgenealogy."
+    },
+    {
+      "id": "gkr4-en-venya36",
+      "name": "Veṇyā river-form of Śiva",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-river-sacrifice-curse"
+      ],
+      "notes": "DigitalVeṇyānamepreserved."
+    },
+    {
+      "id": "gkr4-en-krsna-river36",
+      "name": "Kṛṣṇā river-form of Kṛṣṇa",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-river-sacrifice-curse"
+      ]
+    },
+    {
+      "id": "gkr4-en-rama-vakra-image36",
+      "name": "Mandāra-root Vakratunda image installed by Rāma",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-river-aftermath"
+      ],
+      "notes": "DistinctfromMandāraKīrtiimage/Varada/Vāmanaimage;sourceinstallationreferencenotfullRāmaepisode."
+    },
+    {
+      "id": "gkr4-en-mouse36",
+      "name": "Mouse mount of goddess vision",
+      "type": "VAHANA",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-goddesses-worship-vision"
+      ]
+    },
+    {
+      "id": "gkr4-en-river-hymn37",
+      "name": "Goddesses’ hymn for river-form restoration",
+      "type": "TEXT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-river-release-grant"
+      ]
+    },
+    {
+      "id": "gkr4-en-heramba-image37",
+      "name": "Gods’ stone fourarm Heramba image",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-river-aftermath"
+      ]
+    },
+    {
+      "id": "gkr4-en-heramba-temple37",
+      "name": "Heramba temple in Supattana",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-river-aftermath"
+      ]
+    },
+    {
+      "id": "gkr4-en-supattana37",
+      "name": "Supattana named shrine settlement",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-river-aftermath"
+      ],
+      "notes": "ExactdigitalSupattana,nounderivedidentificationwithcurrenttown."
+    },
+    {
+      "id": "gkr4-en-ritual-sages36",
+      "name": "Jamadagni/Vasiṣṭha/Mārkaṇḍeya/Nārada/Kapila/Pulaha/Kaṇva/Viśvāmitra/Trita/Dvita summoned sages",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-river-sacrifice-curse"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "gkr4-rel-savitri-brahma",
+      "subject_id": "gup-en-161",
+      "predicate": "spouse_of",
+      "object_id": "gp-en-brahma",
+      "evidence_ids": [
+        "gkr4-e-river-sacrifice-curse"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-savitri-brahma"
+    },
+    {
+      "id": "gkr4-rel-gayatri-brahma",
+      "subject_id": "gkr4-en-gayatri36",
+      "predicate": "spouse_of",
+      "object_id": "gp-en-brahma",
+      "evidence_ids": [
+        "gkr4-e-river-sacrifice-curse"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-gayatri-brahma"
+    },
+    {
+      "id": "gkr4-rel-savitri-curse",
+      "subject_id": "gup-en-161",
+      "predicate": "curses",
+      "object_id": "gkr4-en-river-gods36",
+      "evidence_ids": [
+        "gkr4-e-river-sacrifice-curse"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-savitri-curse"
+    },
+    {
+      "id": "gkr4-rel-siva-river",
+      "subject_id": "gkr-en-siva",
+      "predicate": "takes_river_form",
+      "object_id": "gkr4-en-venya36",
+      "evidence_ids": [
+        "gkr4-e-river-sacrifice-curse"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-siva-river"
+    },
+    {
+      "id": "gkr4-rel-krsna-river",
+      "subject_id": "gkr2-en-krishna-reference",
+      "predicate": "takes_river_form",
+      "object_id": "gkr4-en-krsna-river36",
+      "evidence_ids": [
+        "gkr4-e-river-sacrifice-curse"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-krsna-river"
+    },
+    {
+      "id": "gkr4-rel-pulomaja-member",
+      "subject_id": "gkr4-en-pulomaja36",
+      "predicate": "member_of",
+      "object_id": "gkr4-en-goddesses36",
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-pulomaja-member"
+    },
+    {
+      "id": "gkr4-rel-girija-member",
+      "subject_id": "gkr-en-uma",
+      "predicate": "member_of",
+      "object_id": "gkr4-en-goddesses36",
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-girija-member"
+    },
+    {
+      "id": "gkr4-rel-chaya-member",
+      "subject_id": "gup-en-255",
+      "predicate": "member_of",
+      "object_id": "gkr4-en-goddesses36",
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-chaya-member"
+    },
+    {
+      "id": "gkr4-rel-kamala-member",
+      "subject_id": "gkr-en-laksmi",
+      "predicate": "member_of",
+      "object_id": "gkr4-en-goddesses36",
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-kamala-member"
+    },
+    {
+      "id": "gkr4-rel-goddesses-worship",
+      "subject_id": "gkr4-en-goddesses36",
+      "predicate": "worships",
+      "object_id": "gkr4-en-rama-vakra-image36",
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-goddesses-worship-vision"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-goddesses-worship"
+    },
+    {
+      "id": "gkr4-rel-image-region",
+      "subject_id": "gkr4-en-rama-vakra-image36",
+      "predicate": "situated_in",
+      "object_id": "gkr4-en-karnataka36",
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-image-region"
+    },
+    {
+      "id": "gkr4-rel-rama-image",
+      "subject_id": "gkr-en-rama-analogy",
+      "predicate": "establishes",
+      "object_id": "gkr4-en-rama-vakra-image36",
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-rama-image"
+    },
+    {
+      "id": "gkr4-rel-stone-install",
+      "subject_id": "gkr4-en-river-gods36",
+      "predicate": "establishes",
+      "object_id": "gkr4-en-heramba-image37",
+      "evidence_ids": [
+        "gkr4-e-river-aftermath"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-stone-install"
+    },
+    {
+      "id": "gkr4-rel-stone-temple",
+      "subject_id": "gkr4-en-heramba-image37",
+      "predicate": "situated_at",
+      "object_id": "gkr4-en-heramba-temple37",
+      "evidence_ids": [
+        "gkr4-e-river-aftermath"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-stone-temple"
+    },
+    {
+      "id": "gkr4-rel-temple-city",
+      "subject_id": "gkr4-en-heramba-temple37",
+      "predicate": "situated_in",
+      "object_id": "gkr4-en-supattana37",
+      "evidence_ids": [
+        "gkr4-e-river-aftermath"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-temple-city"
+    },
+    {
+      "id": "gkr4-rel-indra-takes",
+      "subject_id": "gkr-en-indra",
+      "predicate": "takes_for_own_worship",
+      "object_id": "gkr4-en-rama-vakra-image36",
+      "evidence_ids": [
+        "gkr4-e-river-aftermath"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-indra-takes"
+    },
+    {
+      "id": "gkr4-rel-sages-ritual",
+      "subject_id": "gkr4-en-ritual-sages36",
+      "predicate": "summoned_by",
+      "object_id": "gkr-en-siva",
+      "evidence_ids": [
+        "gkr4-e-river-sacrifice-curse"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr4-ass-sages-ritual"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "gkr4-power-savitri-river-curse",
+      "type": "POWER",
+      "recipient_id": "gkr4-en-river-gods36",
+      "grantor_id": "gup-en-161",
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-river-release-grant"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "CURSE_AND_RELEASE;letter-equivalenceḍala/yoraikya phraseunparsedwithoutchangingclearrequest/assent.",
+      "motive": null,
+      "austerity_or_circumstances": "Ritual neglect of elder Sāvitrī and Gaṇeśa, with Gāyatrī seated.",
+      "requested": "Let the cursed gods become water in river forms.",
+      "granted": "Insentience curse modified into requested water/river forms.",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": "Gaṇeśa restores original forms and offices while river portions preserve Sāvitrī’s word.",
+      "later_event_ids": [
+        "gkr4-event-neglect-curse",
+        "gkr4-event-restoration"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr4-e-river-sacrifice-curse"
+        ],
+        "grantor_id": [
+          "gkr4-e-river-sacrifice-curse"
+        ],
+        "austerity_or_circumstances": [
+          "gkr4-e-river-sacrifice-curse"
+        ],
+        "requested": [
+          "gkr4-e-river-sacrifice-curse"
+        ],
+        "granted": [
+          "gkr4-e-river-sacrifice-curse"
+        ],
+        "counter": [
+          "gkr4-e-river-release-grant"
+        ],
+        "later_event_ids": [
+          "gkr4-e-river-sacrifice-curse",
+          "gkr4-e-river-release-grant"
+        ]
+      }
+    },
+    {
+      "id": "gkr4-power-river-restoration",
+      "type": "BOON",
+      "recipient_id": "gkr4-en-river-gods36",
+      "grantor_id": "gp-en-ganesha",
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-goddesses-worship-vision",
+        "gkr4-e-river-release-grant"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "Unstated terms remain null; no later counter inferred.",
+      "motive": null,
+      "austerity_or_circumstances": "Goddesses perform varied long tapas, then śamī offerings and a hymn.",
+      "requested": "Restore the gods’ original forms and never forget Gaṇeśa.",
+      "granted": "Requested wishes; original forms and offices, with river portions remaining.",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": "Sāvitrī’s word is preserved through river portions.",
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [
+        "gkr4-event-tapas-vision",
+        "gkr4-event-restoration"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr4-e-river-release-grant"
+        ],
+        "grantor_id": [
+          "gkr4-e-river-release-grant"
+        ],
+        "austerity_or_circumstances": [
+          "gkr4-e-goddesses-refuge",
+          "gkr4-e-goddesses-worship-vision",
+          "gkr4-e-river-release-grant"
+        ],
+        "requested": [
+          "gkr4-e-river-release-grant"
+        ],
+        "granted": [
+          "gkr4-e-river-release-grant"
+        ],
+        "restrictions": [
+          "gkr4-e-river-release-grant"
+        ],
+        "later_event_ids": [
+          "gkr4-e-goddesses-worship-vision",
+          "gkr4-e-river-release-grant"
+        ]
+      }
+    },
+    {
+      "id": "gkr4-power-rama-victory-reference",
+      "type": "BOON",
+      "recipient_id": "gkr-en-rama-analogy",
+      "grantor_id": "gp-en-ganesha",
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "Source-reportedreference;originalRāmaboonrequest/count/battlebodyunexamined,notexpanded.",
+      "motive": null,
+      "austerity_or_circumstances": "Establishes a Mandāra-root Vakratunda image.",
+      "requested": null,
+      "granted": "Victorious through the Lord’s boons, kills Rākṣasa leaders and Daśānana and returns home with his wife.",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr4-e-goddesses-refuge"
+        ],
+        "grantor_id": [
+          "gkr4-e-goddesses-refuge"
+        ],
+        "austerity_or_circumstances": [
+          "gkr4-e-goddesses-refuge"
+        ],
+        "granted": [
+          "gkr4-e-goddesses-refuge"
+        ]
+      }
+    },
+    {
+      "id": "gkr4-power-leaf-offering-merit",
+      "type": "POWER",
+      "recipient_id": "gkr4-en-qualified-users",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr4-e-river-release-grant"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "Promiseequivalence,notmeasuredmaterialtransaction.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "A śamī leaf equals offering the world and the fruit of a hundred bhāras of gold.",
+      "mechanism": null,
+      "trigger": "Offer a śamī leaf.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr4-e-river-release-grant"
+        ],
+        "granted": [
+          "gkr4-e-river-release-grant"
+        ],
+        "trigger": [
+          "gkr4-e-river-release-grant"
+        ]
+      }
+    },
+    {
+      "id": "gkr4-power-heramba-efiicacy",
+      "type": "POWER",
+      "recipient_id": "gkr4-en-qualified-users",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr4-e-river-aftermath"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "Gods’establishmentpromise;nospecificprivateboongrant.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "All desires through Heramba worship, remembrance or bowing.",
+      "mechanism": null,
+      "trigger": "Devotional worship at Supattana, or remembrance and bowing.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr4-e-river-aftermath"
+        ],
+        "granted": [
+          "gkr4-e-river-aftermath"
+        ],
+        "trigger": [
+          "gkr4-e-river-aftermath"
+        ]
+      }
+    },
+    {
+      "id": "gkr4-power-sami-story-fruits",
+      "type": "POWER",
+      "recipient_id": "gkr4-en-qualified-users",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr4-e-kirti-frame-close"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "Narratorphalas,notcompletedrecipientepisode.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "No distress and all desires; sinlessness and happiness through morning remembrance.",
+      "mechanism": null,
+      "trigger": "Hear the story; remember śamī, Mandāra and Gaṇeśa devotionally in the morning.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr4-e-kirti-frame-close"
+        ],
+        "granted": [
+          "gkr4-e-kirti-frame-close"
+        ],
+        "trigger": [
+          "gkr4-e-kirti-frame-close"
+        ]
+      }
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "gkr4-ass-savitri-brahma",
+      "subject_id": "gup-en-161",
+      "predicate": "spouse_of",
+      "object_id": "gp-en-brahma",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-river-sacrifice-curse"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-gayatri-brahma",
+      "subject_id": "gkr4-en-gayatri36",
+      "predicate": "spouse_of",
+      "object_id": "gp-en-brahma",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-river-sacrifice-curse"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-savitri-curse",
+      "subject_id": "gup-en-161",
+      "predicate": "curses",
+      "object_id": "gkr4-en-river-gods36",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-river-sacrifice-curse"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-siva-river",
+      "subject_id": "gkr-en-siva",
+      "predicate": "takes_river_form",
+      "object_id": "gkr4-en-venya36",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-river-sacrifice-curse"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-krsna-river",
+      "subject_id": "gkr2-en-krishna-reference",
+      "predicate": "takes_river_form",
+      "object_id": "gkr4-en-krsna-river36",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-river-sacrifice-curse"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-pulomaja-member",
+      "subject_id": "gkr4-en-pulomaja36",
+      "predicate": "member_of",
+      "object_id": "gkr4-en-goddesses36",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-girija-member",
+      "subject_id": "gkr-en-uma",
+      "predicate": "member_of",
+      "object_id": "gkr4-en-goddesses36",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-chaya-member",
+      "subject_id": "gup-en-255",
+      "predicate": "member_of",
+      "object_id": "gkr4-en-goddesses36",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-kamala-member",
+      "subject_id": "gkr-en-laksmi",
+      "predicate": "member_of",
+      "object_id": "gkr4-en-goddesses36",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-goddesses-worship",
+      "subject_id": "gkr4-en-goddesses36",
+      "predicate": "worships",
+      "object_id": "gkr4-en-rama-vakra-image36",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge",
+        "gkr4-e-goddesses-worship-vision"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-image-region",
+      "subject_id": "gkr4-en-rama-vakra-image36",
+      "predicate": "situated_in",
+      "object_id": "gkr4-en-karnataka36",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-rama-image",
+      "subject_id": "gkr-en-rama-analogy",
+      "predicate": "establishes",
+      "object_id": "gkr4-en-rama-vakra-image36",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-goddesses-refuge"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-stone-install",
+      "subject_id": "gkr4-en-river-gods36",
+      "predicate": "establishes",
+      "object_id": "gkr4-en-heramba-image37",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-river-aftermath"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-stone-temple",
+      "subject_id": "gkr4-en-heramba-image37",
+      "predicate": "situated_at",
+      "object_id": "gkr4-en-heramba-temple37",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-river-aftermath"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-temple-city",
+      "subject_id": "gkr4-en-heramba-temple37",
+      "predicate": "situated_in",
+      "object_id": "gkr4-en-supattana37",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-river-aftermath"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-indra-takes",
+      "subject_id": "gkr-en-indra",
+      "predicate": "takes_for_own_worship",
+      "object_id": "gkr4-en-rama-vakra-image36",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-river-aftermath"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr4-ass-sages-ritual",
+      "subject_id": "gkr4-en-ritual-sages36",
+      "predicate": "summoned_by",
+      "object_id": "gkr-en-siva",
+      "value": null,
+      "evidence_ids": [
+        "gkr4-e-river-sacrifice-curse"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ]
+}

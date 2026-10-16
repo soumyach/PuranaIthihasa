@@ -1,0 +1,302 @@
+{
+  "story": {
+    "id": "dbx-story-bhramari",
+    "title": "Aruṇa and Bhrāmarī",
+    "source_id": "cat-devibhagavata",
+    "witness_id": "cat-devibhagavata-witness",
+    "scope": "Devī Bhāgavata10.13.33–127; opening six-Manu account excluded from this bounded arc",
+    "event_ids": [
+      "dbx-event-aruna-austerity",
+      "dbx-event-aruna-request",
+      "dbx-event-aruna-conquest",
+      "dbx-event-aruna-gayatri-loss",
+      "dbx-event-bhramari-appears",
+      "dbx-event-bhramari-defeat",
+      "dbx-event-bhramari-boons"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Bounded narrative chronology checked against whole cited English body; no exhaustive Sanskrit atomic completeness or other recension equivalence claimed.",
+    "missing_sections": [],
+    "editorial_notes": "Translation narrator statements and attributed dialogue distinguished. No remembered details added; unknown spouse/mother/guru fields remain unstated."
+  },
+  "events": [
+    {
+      "id": "dbx-event-aruna-austerity",
+      "source_id": "cat-devibhagavata",
+      "witness_id": "cat-devibhagavata-witness",
+      "supporting_witness_ids": [
+        "cat-devibhagavata-witness"
+      ],
+      "story_id": "dbx-story-bhramari",
+      "sequence": 1,
+      "passage_ids": [
+        "dbx-p-aruna-tapas"
+      ],
+      "participants": [
+        "dbx-ent-aruna",
+        "dbx-ent-brahma",
+        "dbx-ent-gayatri",
+        "dbx-ent-narayana",
+        "dbx-ent-narada"
+      ],
+      "setting": null,
+      "cause": null,
+      "details": "Aruṇa lives in a nether Daitya city, then undertakes Brahmā worship beside Ganges in Himalaya. Four successive10,000year stages use dry leaves, water drops, air and finally no food; he repeats Gāyatrī continuously. His ascetic heat threatens worlds; gods petition Brahmā. Brahmā appears with Gāyatrī and four Vedas.",
+      "outcome": "Brahmā offers a boon.",
+      "changed_relationship_ids": [],
+      "introduced_entity_ids": [],
+      "introduced_power_ids": [],
+      "consequences": [],
+      "evidence_ids": [
+        "dbx-e-aruna-tapas"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "dbx-event-aruna-request",
+      "source_id": "cat-devibhagavata",
+      "witness_id": "cat-devibhagavata-witness",
+      "supporting_witness_ids": [
+        "cat-devibhagavata-witness"
+      ],
+      "story_id": "dbx-story-bhramari",
+      "sequence": 2,
+      "passage_ids": [
+        "dbx-p-aruna-tapas"
+      ],
+      "participants": [
+        "dbx-ent-aruna",
+        "dbx-ent-brahma",
+        "dbx-ent-gayatri"
+      ],
+      "setting": null,
+      "cause": null,
+      "details": "Aruṇa first requests immortality. Brahmā refuses an impossible boon and says Brahmā, Viṣṇu and Śiva too are mortal. Aruṇa revises the request to the specified war/weapon/sex/limb-category death exclusions and strength to conquer gods. Brahmā assents.",
+      "outcome": "A qualified boon, not universal immortality, is granted.",
+      "changed_relationship_ids": [],
+      "introduced_entity_ids": [],
+      "introduced_power_ids": [
+        "dbx-power-aruna"
+      ],
+      "consequences": [],
+      "evidence_ids": [
+        "dbx-e-aruna-tapas"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "dbx-event-aruna-conquest",
+      "source_id": "cat-devibhagavata",
+      "witness_id": "cat-devibhagavata-witness",
+      "supporting_witness_ids": [
+        "cat-devibhagavata-witness"
+      ],
+      "story_id": "dbx-story-bhramari",
+      "sequence": 3,
+      "passage_ids": [
+        "dbx-p-aruna-strategy",
+        "dbx-p-aruna-tapas"
+      ],
+      "participants": [
+        "dbx-ent-aruna",
+        "dbx-ent-aruna-host",
+        "dbx-ent-gods",
+        "dbx-ent-indra"
+      ],
+      "setting": null,
+      "cause": null,
+      "details": "Aruṇa gathers nether Daityas, sends a messenger to Indra and conquers heaven, taking forms/offices of sun, moon, Yama, Agni and others through ascetic power. Gods seek counsel with Brahmā, Viṣṇu and Śiva at Kailāsa.",
+      "outcome": "Gods cannot readily defeat him.",
+      "changed_relationship_ids": [],
+      "introduced_entity_ids": [],
+      "introduced_power_ids": [],
+      "consequences": [],
+      "evidence_ids": [
+        "dbx-e-aruna-strategy",
+        "dbx-e-aruna-tapas"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "dbx-event-aruna-gayatri-loss",
+      "source_id": "cat-devibhagavata",
+      "witness_id": "cat-devibhagavata-witness",
+      "supporting_witness_ids": [
+        "cat-devibhagavata-witness"
+      ],
+      "story_id": "dbx-story-bhramari",
+      "sequence": 4,
+      "passage_ids": [
+        "dbx-p-aruna-strategy",
+        "dbx-p-bhramari-appearance"
+      ],
+      "participants": [
+        "dbx-ent-heavenly-voice",
+        "dbx-ent-gods",
+        "dbx-ent-indra",
+        "dbx-ent-brhaspati",
+        "dbx-ent-aruna"
+      ],
+      "setting": null,
+      "cause": null,
+      "details": "A heavenly voice directs worship of the world Queen and identifies cessation of Gāyatrī repetition as the condition making Aruṇa killable. Indra sends Bṛhaspati; gods perform Devī sacrifice and Māyā-bīja worship. Bṛhaspati approaches as a muni and argues that sharing the gods’ Goddess worship undermines Aruṇa’s hostility. Aruṇa abandons Gāyatrī through pride and loses strength; Bṛhaspati reports success.",
+      "outcome": "Gods continue worship; a long interval of unspecified duration follows.",
+      "changed_relationship_ids": [],
+      "introduced_entity_ids": [],
+      "introduced_power_ids": [],
+      "consequences": [],
+      "evidence_ids": [
+        "dbx-e-aruna-strategy",
+        "dbx-e-bhramari-appearance"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "dbx-event-bhramari-appears",
+      "source_id": "cat-devibhagavata",
+      "witness_id": "cat-devibhagavata-witness",
+      "supporting_witness_ids": [
+        "cat-devibhagavata-witness"
+      ],
+      "story_id": "dbx-story-bhramari",
+      "sequence": 5,
+      "passage_ids": [
+        "dbx-p-bhramari-appearance"
+      ],
+      "participants": [
+        "dbx-ent-bhramari",
+        "dbx-ent-bees",
+        "dbx-ent-gods"
+      ],
+      "setting": null,
+      "cause": null,
+      "details": "After continued worship Bhrāmarī appears with diverse garments and ornaments, bees in her fists and garland, and boon/fearlessness gestures. Bee sound is associated with Hrīm. Gods offer an extended hymn, then describe Aruṇa’s boon and injuries. Hymnic names are attributed praise, not separate narrated births.",
+      "outcome": "Bhrāmarī responds to their crisis.",
+      "changed_relationship_ids": [],
+      "introduced_entity_ids": [],
+      "introduced_power_ids": [],
+      "consequences": [],
+      "evidence_ids": [
+        "dbx-e-bhramari-appearance"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "dbx-event-bhramari-defeat",
+      "source_id": "cat-devibhagavata",
+      "witness_id": "cat-devibhagavata-witness",
+      "supporting_witness_ids": [
+        "cat-devibhagavata-witness"
+      ],
+      "story_id": "dbx-story-bhramari",
+      "sequence": 6,
+      "passage_ids": [
+        "dbx-p-bhramari-outcome",
+        "dbx-p-bhramari-appearance"
+      ],
+      "participants": [
+        "dbx-ent-bhramari",
+        "dbx-ent-bees",
+        "dbx-ent-aruna",
+        "dbx-ent-aruna-host",
+        "dbx-ent-gods"
+      ],
+      "setting": null,
+      "cause": null,
+      "details": "Bhrāmarī releases bees/hornets from every side. Their multitude covers the world and attacks the Daityas’ chests. The text denies the foes time or capacity to fight, wield weapons or speak; principal Daityas perish immediately. Bees return to the Goddess; gods rejoice with praise, music and dance.",
+      "outcome": "Aruṇa’s forces perish; no negotiated surrender.",
+      "changed_relationship_ids": [],
+      "introduced_entity_ids": [],
+      "introduced_power_ids": [
+        "dbx-power-bee-swarm"
+      ],
+      "consequences": [],
+      "evidence_ids": [
+        "dbx-e-bhramari-outcome",
+        "dbx-e-bhramari-appearance"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "dbx-event-bhramari-boons",
+      "source_id": "cat-devibhagavata",
+      "witness_id": "cat-devibhagavata-witness",
+      "supporting_witness_ids": [
+        "cat-devibhagavata-witness"
+      ],
+      "story_id": "dbx-story-bhramari",
+      "sequence": 7,
+      "passage_ids": [
+        "dbx-p-bhramari-outcome"
+      ],
+      "participants": [
+        "dbx-ent-bhramari",
+        "dbx-ent-gods"
+      ],
+      "setting": null,
+      "cause": null,
+      "details": "The Goddess grants separate boons to the gods, whose individual contents are not specified here, and grants their express request for unshakeable devotion. She disappears; Nārāyaṇa concludes with liberation promised for hearing the account.",
+      "outcome": "Narrative closes.",
+      "changed_relationship_ids": [],
+      "introduced_entity_ids": [],
+      "introduced_power_ids": [
+        "dbx-power-bhramari-devotion"
+      ],
+      "consequences": [],
+      "evidence_ids": [
+        "dbx-e-bhramari-outcome"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "resume_queue": [
+    {
+      "id": "dbx-queue-durgama-collation",
+      "source_id": "cat-devibhagavata",
+      "passage_target": [
+        "7.28"
+      ],
+      "task": "Independent Sanskrit verification of Durgama boon mechanics,14manifestation spellings,15arrow arithmetic and Vedas return.",
+      "priority": "P1",
+      "status": "PENDING",
+      "dependency_ids": [],
+      "reason": "Targeted sections authorized by user; exact remaining scope retained."
+    },
+    {
+      "id": "dbx-queue-bhramari-collation",
+      "source_id": "cat-devibhagavata",
+      "passage_target": [
+        "10.13"
+      ],
+      "task": "Extract1–32six-Manu frame; collate revised boon categories and Gāyatrī cessation strategy in Sanskrit; review swarm outcome.",
+      "priority": "P1",
+      "status": "PENDING",
+      "dependency_ids": [],
+      "reason": "Targeted sections authorized by user; exact remaining scope retained."
+    },
+    {
+      "id": "dbx-queue-gita-resume",
+      "source_id": "cat-devibhagavata",
+      "passage_target": [
+        "7.31–40"
+      ],
+      "task": "Finish predicates31–32; next unread33then sequentially through40; no doctrine inferred from headings.",
+      "priority": "P1",
+      "status": "PENDING",
+      "dependency_ids": [],
+      "reason": "Targeted sections authorized by user; exact remaining scope retained."
+    },
+    {
+      "id": "dbx-queue-manidvipa-resume",
+      "source_id": "cat-devibhagavata",
+      "passage_target": [
+        "12.10–12"
+      ],
+      "task": "Extract read10.21–100before body reading11then12; distinguish seasonal spouses, śaktis and cosmic directional protectors.",
+      "priority": "P1",
+      "status": "PENDING",
+      "dependency_ids": [],
+      "reason": "Targeted sections authorized by user; exact remaining scope retained."
+    }
+  ]
+}

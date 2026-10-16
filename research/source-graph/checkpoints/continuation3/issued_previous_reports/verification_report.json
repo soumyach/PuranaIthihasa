@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "scope": "Structural validation; does not establish textual truth or exhaustive extraction.",
+  "counts": {
+    "sources_registered": 19,
+    "witnesses_registered": 34,
+    "sources_with_passage_reading": 9,
+    "passages_registered": 634,
+    "passages_fully_extracted": 237,
+    "passages_partially_extracted": 395,
+    "entities": 2372,
+    "entities_with_verified_evidence": 2356,
+    "assertions_verified_against_witness": 2984,
+    "relationships_verified_against_witness": 2755,
+    "kinship_relationships_verified": 170,
+    "boons_verified": 178,
+    "powers_verified": 285,
+    "events_with_records": 656,
+    "events_verified_against_witness": 654,
+    "story_spines": 76,
+    "story_spine_statuses": {
+      "COMPLETE": 55,
+      "PARTIAL": 21
+    },
+    "variant_records": 76,
+    "content_entities": 2083,
+    "documentary_entities": 289,
+    "content_assertions_verified_against_witness": 1711,
+    "content_relationships_verified_against_witness": 1482,
+    "source_examination_statuses": {
+      "PARTIALLY_READ": 8,
+      "INDEX_REVIEWED": 3,
+      "IDENTIFIED": 7,
+      "READ": 1
+    }
+  },
+  "core_chapter_states": {
+    "COMPLETE": 127,
+    "PARTIAL": 24,
+    "NOT_STARTED": 520,
+    "IN_PROGRESS": 4
+  },
+  "newly_completed_chapters": 51,
+  "newly_completed_arcs": 29,
+  "total_complete_arcs": 55,
+  "baseline_ids_preserved": true
+}

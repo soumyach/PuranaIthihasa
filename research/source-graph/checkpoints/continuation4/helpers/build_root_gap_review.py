@@ -1,0 +1,53 @@
+import json,copy
+from pathlib import Path
+W=Path('work/continuation4');D=json.loads((W/'baseline/research/graph.json').read_text())
+X=dict(sources=[],witnesses=[],passages=[],evidence=[],entities=[],assertions=[],relationships=[],boons_and_powers=[],narrative_events=[],story_spines=[],variants_and_conflicts=[],queue=[],updates=[],chapter_coverage=[],changes=[])
+def row(t,i):return next(r for r in D[t] if r['id']==i)
+def upd(t,i,f,why,es):X['updates'].append(dict(table=t,id=i,fields=f,reason=why,evidence_ids=es))
+r=row('evidence','gup4-e-019')
+a='Verse 3 prints aṇimādiguṇāpeta; its capacity implication is withheld instead of silently changing it to guṇopeta.'
+b='Verse 3 prints aṇimādiguṇāpeta: literally free from qualities such as aṇimā. The printed negative qualifier is retained, without emending it to guṇopeta or attributing miraculous perfections.'
+assert a in r['paraphrase']
+notes=r['verification_notes']+' Root and a second author checked the printed qualifier53.3 and Monier-Williams apeta, free-from sense in compounds (https://sanskrit.uohyd.ac.in/SKT/MW/12.html). This verifies the limited literal digital reading; print authorial intent and a possible copying error remain uncollated.'
+upd('evidence',r['id'],dict(paraphrase=r['paraphrase'].replace(a,b),verification_status='VERIFIED',verification_notes=notes),'Independent literal lexical clarification of53.3; no silent emendation.',[r['id']])
+r=row('narrative_events','gup4-event-019')
+upd('narrative_events',r['id'],dict(details=r['details'].replace(a,b),outcome='Royal family and ministers’ warning introduced; printed absence qualifier preserved literally, with no supernatural perfection granted.',verification_status='VERIFIED'),'Same53.3 negative qualifier clarification; other chapter gaps remain.',['gup4-e-019'])
+X['assertions'].append(dict(id='rfix4-a-candra-negative-qualities',subject_id='gup4-en-022',predicate='described_without',object_id=None,value='Qualities such as aṇimā, according to printed aṇimādiguṇāpeta at53.3.',evidence_ids=['gup4-e-019'],verification_status='VERIFIED'))
+r=row('passages','gup4-p-53-1-7')
+upd('passages',r['id'],dict(extraction_status='COMPLETE',limitations='53.3 literal apeta qualifier checked; full chapter remains PARTIAL for53.15 minister clause. Alternate print authorial reading not established.'),'Bounded53.1–7 excerpt no longer has the withheld capacity qualifier.',['gup4-e-019'])
+upd('variants_and_conflicts','gup4-var-53-capacity',dict(description='53.3 printed aṇimādiguṇāpeta has been read literally as free from aṇimā and analogous qualities. An alternate authorial reading or copying error is not established; no change to guṇopeta is made.',resolution='Literal digital qualifier clarified independently; print/authorial variant question remains OPEN.'),'Separate literal lexical resolution from uncollated print intent.',['gup4-e-019'])
+r=row('story_spines','gup4-story-candrangada')
+upd('story_spines',r['id'],dict(missing_sections=['53.15 minister bhage clause and55.16 ritual wording remain unresolved.53.3 literal absence qualifier is now extracted; alternate print intent remains uncollated.']), 'Narrow the documented old omission while retaining PARTIAL for other source clauses.',['gup4-e-019'])
+c=copy.deepcopy(next(r for r in D['chapter_coverage'] if r['witness_id']=='gp-wit-sd-upasana' and r['chapter']==53))
+c.update(omissions=['53.15 minister clause bhage kṛtvā remains unresolved.53.3 literal apeta absence qualifier is now extracted; alternate print intent is uncollated.'],independent_review_notes='Root and Upāsanā second author confirmed the literal53.3 reading; other chapter semantics are not fully independently certified.')
+X['chapter_coverage'].append(c)
+# Preserve direct Sanskrit rather than promote a contextual gloss to universal certainty.
+X['evidence'].append(dict(id='rfix4-e-manor-context-gloss',source_id='gp-src-ganesha',witness_id='gp-wit-sd-krida',passage_id='gkr4-p-042',locator='Krīḍā42.6; contextual comparison31.3/5/8',paraphrase='Contextual lexical gloss of manor balāt: by mantra-power. The primary manu dictionary entry includes mantra/incantation as well as thought; the weapon context and31 mantra/mahāmanu/manu-japa support this choice. This is a bounded interpretation, not an explicit named mantra string or intervention actor.',classification='INFERENCE',verification_status='NEEDS_REVIEW',verifier='Root and independent Krīḍā author, lexical/context comparison',verification_notes='Monier-Williams headword manu, https://sanskrit.uohyd.ac.in/SKT/MW/195.html. No alternate print collation.42.10 keśābhyāṃ actor remains OPEN. The primary dictionary HTML was read; attempted PDF scan rendering failed and was not used for image-based certification.'))
+X['assertions'].append(dict(id='rfix4-a-manor-context-gloss',subject_id='gkr4-en-vakratunda40',predicate='contextually_glossed_weapon_mechanism',object_id=None,value='Parvatāstra by mantra-power, as a contextual reading of manor balāt; no named mantra supplied.',evidence_ids=['rfix4-e-manor-context-gloss'],verification_status='NEEDS_REVIEW'))
+for t,i in [('evidence','gkr4-e-astra-agency-review'),('boons_and_powers','gkr4-power-vakra-astra-counters')]:
+ r=row(t,i);k='verification_notes' if t=='evidence' else 'notes'
+ upd(t,i,{k:r[k]+' Contextual manu=mantra gloss is separately recorded as INFERENCE in rfix4-e-manor-context-gloss; raw direct clause and unresolved42.10 actor remain unchanged.'},'Keep a supported lexical interpretation explicitly separate from direct-text certainty.',['rfix4-e-manor-context-gloss'])
+X['changes']+=['Literal53.3 apeta absence qualifier extracted without emending the digital text; affected chapter/spine remains PARTIAL for other gaps.','42.6 contextual mantra-power gloss separated as INFERENCE/NEEDS_REVIEW; no intervention actor or seed string guessed.']
+# Root's bounded18 review also displayed19.1–23 and the first half of24.
+# Reading without extraction must stay visible, and formal resumption still starts19.1.
+pid='rfix4-p-readonly-mudgala2-19'
+X['passages'].append(dict(id=pid,source_id='gp-src-mudgala',witness_id='gp-wit-sd-mudgala-2',book=None,khanda='2',chapter=19,verses='1–23;24a incidentally seen',url='https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html',locator='Mudgala2.19.1–23;24a fragment',reading_status='PARTIALLY_READ',extraction_status='UNEXAMINED',limitations='Root read the displayed fragment during independent18 review; no formal narrative/actor/relationship/boon extraction. Resume19.1, do not skip the fragment.'))
+c=copy.deepcopy(next(r for r in D['chapter_coverage'] if r['witness_id']=='gp-wit-sd-mudgala-2' and r['chapter']==19))
+c.update(state='IN_PROGRESS',read_entire_chapter=False,narrative_extracted=False,characters_extracted=False,relationships_extracted=False,boons_powers_extracted=False,checked=False,passage_ids=[pid],evidence_ids=[],omissions=['Root read-only19.1–23 and first half24. All extraction pending; remaining body not read. Formal resume19.1.'],blocking_reason=None)
+X['chapter_coverage'].append(c)
+X['changes'].append('Read-only2.19 fragment registered without claiming extraction or whole-body reading.')
+pid='rfix4-p-readonly-upasana72'
+X['passages'].append(dict(id=pid,source_id='gp-src-ganesha',witness_id='gp-wit-sd-upasana',book=None,khanda='Upāsanā',chapter=72,verses='1–30',url='https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html',locator='Upāsanā72.1–30',reading_status='PARTIALLY_READ',extraction_status='UNEXAMINED',limitations='Author read-only fragment reported in frozen gup5. No formal narrative/actor/relationship/boon extraction;31 onward unread. Resume72.1.'))
+c=copy.deepcopy(next(r for r in D['chapter_coverage'] if r['witness_id']=='gp-wit-sd-upasana' and r['chapter']==72))
+c.update(state='IN_PROGRESS',read_entire_chapter=False,narrative_extracted=False,characters_extracted=False,relationships_extracted=False,boons_powers_extracted=False,checked=False,passage_ids=[pid],evidence_ids=[],omissions=['Author read-only72.1–30. All extraction pending;72.31 onward unread. Formal resume72.1.'],blocking_reason=None)
+X['chapter_coverage'].append(c)
+X['changes'].append('Frozen-author read-only72.1–30 is given an exact passage registration; no completion or narrative claim added.')
+X['entities'].extend([
+ dict(id='rfix4-en-pulaha-hymn-audience',name='Mortals reading or hearing Pulaha’s hymn',type='CONCEPT',source_scope='gp-src-mudgala',aliases=[],evidence_ids=['mud5-e-pulaha-devotion-boon']),
+ dict(id='rfix4-en-vighnaraja-reflection-beneficiaries',name='Śiva, Viṣṇu and all beings in Bharata’s Vighnarāja-grace reflection',type='CONCEPT',source_scope='gp-src-mudgala',aliases=[],evidence_ids=['mud5-e-bharata-deer-body-ending'])
+])
+X['changes'].append('Independent2.18 review separates hymn readers/hearers from the Śiva/Viṣṇu/all-beings reflection, using two source-supported beneficiary-class nodes; existing cosmography audience retained.')
+(W/'patches/rfix4.json').write_text(json.dumps(X,ensure_ascii=False,indent=2)+'\n')
+review=dict(review_id='root4-earlier-lexical-gap-review',kind='DIRECT_PRIMARY_TEXT_AND_PRIMARY_LEXICON_WITH_SECOND_AUTHOR',source_urls=['https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html','https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html','https://sanskrit.uohyd.ac.in/SKT/MW/12.html','https://sanskrit.uohyd.ac.in/SKT/MW/195.html'],actual_read_spans=['Upāsanā53.1–18','Krīḍā42.1–11','MW apeta compound sense','MW manu headword with multiple senses'],findings=[dict(id='root4-apeta-clarification',status='CORRECTION_APPLIED',record_ids=['gup4-e-019','gup4-event-019','gup4-p-53-1-7','gup4-var-53-capacity','gup4-story-candrangada'],description='Literal apeta absence qualifier resolved; print intent remains uncollated. Parent retained the old evidence/event IDs and documented updates. Upāsanā author independently agreed.'),dict(id='root4-manor-gloss',status='PENDING_INTERPRETIVE_CONFIRMATION',record_ids=['rfix4-e-manor-context-gloss','rfix4-a-manor-context-gloss'],description='Lexically supported contextual mantra-power gloss preserved as INFERENCE rather than exclusive direct-text certainty; Krīḍā author independently agreed.42.10 actor remains unresolved.')],limitations=['Dictionary sense does not prove authorial manuscript reading or a universal exclusive interpretation.','No additional Purāṇa or wider source extraction introduced.','Attempted scan rendering unavailable; primary dictionary HTML read directly.'])
+(W/'reviews/root_earlier_gaps.json').write_text(json.dumps(review,ensure_ascii=False,indent=2)+'\n')
+print('Prepared explicit root corrections and separate contextual interpretation; no output mutation')

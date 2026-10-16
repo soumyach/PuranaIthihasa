@@ -1,0 +1,811 @@
+{
+  "checkpoint": "continuation4",
+  "completed_arc_id": "mud5-story-pulaha-devotion-encounter",
+  "graph_sha256": "d3e53f6fb2ee6852a3b4d4e6ee677a24abac85e4ede403205172dfa77aa4306a",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checks complete; independent review selective. All declared interpretation gaps remain explicit.",
+  "story": {
+    "id": "mud5-story-pulaha-devotion-encounter",
+    "title": "Pulaha’s attained peace,heart-form withdrawal,hymn and devotion/appearance grants",
+    "source_id": "gp-src-mudgala",
+    "witness_id": "gp-wit-sd-mudgala-2",
+    "scope": "2.18.1–26",
+    "event_ids": [
+      "mud5-event-pulaha-heart-form-appearance",
+      "mud5-event-pulaha-ganesa-hymn",
+      "mud5-event-pulaha-devotion-boon"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Entire bounded cited Sanskrit arc read; significant named actors, relationships, boons/powers, dialogue and transition checks by author. Independent root review separate.",
+    "missing_sections": [],
+    "editorial_notes": "Source narration order. Embedded narratives have their own spines; parent records their framing transitions without duplicating events."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "mud5-event-pulaha-heart-form-appearance",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-pulaha-devotion-encounter",
+        "sequence": 1,
+        "passage_ids": [
+          "mud5-p-pulaha-heart-form-appearance"
+        ],
+        "participants": [
+          "mud2-en-pulaha",
+          "mud-en-vakratunda"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Pulaha gradually attains yoga-peace, daily devotedly worships Gaṇeśa image and meditates only on him. After unspecified time Gaṇeśa comes, but absorbed sage does not notice. Gaṇeśa makes heart-resident Dhuṇḍhi disappear; Pulaha cannot see inner form, looks as if bewildered and sees Gaṇeśa outside. He rises, bows, worships by rule and hymns with joy/gooseflesh. Divine removal of meditation-form, not destruction of the god or killing event.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud5-power-pulaha-heart-form-removal"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-pulaha-heart-form-appearance"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-pulaha-heart-form-appearance",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-pulaha-heart-form-appearance",
+          "locator": "Mudgala2.18.1–6",
+          "paraphrase": "Pulaha gradually attains yoga-peace, daily devotedly worships Gaṇeśa image and meditates only on him. After unspecified time Gaṇeśa comes, but absorbed sage does not notice. Gaṇeśa makes heart-resident Dhuṇḍhi disappear; Pulaha cannot see inner form, looks as if bewildered and sees Gaṇeśa outside. He rises, bows, worships by rule and hymns with joy/gooseflesh. Divine removal of meditation-form, not destruction of the god or killing event.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud5-event-pulaha-ganesa-hymn",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-pulaha-devotion-encounter",
+        "sequence": 2,
+        "passage_ids": [
+          "mud5-p-pulaha-ganesa-hymn"
+        ],
+        "participants": [
+          "mud2-en-pulaha",
+          "mud-en-vakratunda",
+          "gp-m-en-siva",
+          "mud-en-vishnu",
+          "mud2-en-mouse-vehicle",
+          "mud3-en-hymn-noose",
+          "mud5-en-pulaha-hymn-goad"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Pulaha hymns Vighnarāja as removing devotee obstacles/giving nondevotee obstacles, Brahman/formless/witness/eternal/beyond argument, Vakratunda/Heramba/Svānanda dweller, devotee protector, yoga/peace giver, many-avatar/world support, god/demon lord, all-origin/many-middle/single-end, beyond beginning/middle/end, creator/preserver/end-maker, Lambodara/elephant-face/ears, four-armed, four-aim/Brahman embodiment, mouse-banner/mouse-mounted and holding noose/goad. Vedas, yogins and Śiva/Viṣṇu-led gods cannot praise completely; he bows and asks lasting favor. Source hymn attribution, not universal physical assertion.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-pulaha-ganesa-hymn"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-pulaha-ganesa-hymn",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-pulaha-ganesa-hymn",
+          "locator": "Mudgala2.18.7–19",
+          "paraphrase": "Pulaha hymns Vighnarāja as removing devotee obstacles/giving nondevotee obstacles, Brahman/formless/witness/eternal/beyond argument, Vakratunda/Heramba/Svānanda dweller, devotee protector, yoga/peace giver, many-avatar/world support, god/demon lord, all-origin/many-middle/single-end, beyond beginning/middle/end, creator/preserver/end-maker, Lambodara/elephant-face/ears, four-armed, four-aim/Brahman embodiment, mouse-banner/mouse-mounted and holding noose/goad. Vedas, yogins and Śiva/Viṣṇu-led gods cannot praise completely; he bows and asks lasting favor. Source hymn attribution, not universal physical assertion.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud5-event-pulaha-devotion-boon",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-pulaha-devotion-encounter",
+        "sequence": 3,
+        "passage_ids": [
+          "mud5-p-pulaha-devotion-boon"
+        ],
+        "participants": [
+          "mud2-en-pulaha",
+          "mud-en-vakratunda",
+          "mud5-en-cosmography-users"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Pulaha requests firm unwavering devotion; overwhelmed by love he dances. Gaṇeśa grants firm unwavering joy-giving devotion, and promises appearance near him whenever he remembers. Hymn gives devotion, enjoyment/liberation and peace-yoga; human reciters/hearers gain all happiness and become like Pulaha. God disappears; Pulaha remains and worships. No fixed appearance-duration or immortality request.",
+        "outcome": "Gaṇeśa disappears; Pulaha remains worshipping.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud5-power-pulaha-devotion-boon",
+          "mud5-power-pulaha-remembrance-appearance",
+          "mud5-power-pulaha-hymn-benefits"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-pulaha-devotion-boon"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-pulaha-devotion-boon",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-pulaha-devotion-boon",
+          "locator": "Mudgala2.18.20–26",
+          "paraphrase": "Pulaha requests firm unwavering devotion; overwhelmed by love he dances. Gaṇeśa grants firm unwavering joy-giving devotion, and promises appearance near him whenever he remembers. Hymn gives devotion, enjoyment/liberation and peace-yoga; human reciters/hearers gain all happiness and become like Pulaha. God disappears; Pulaha remains and worships. No fixed appearance-duration or immortality request.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gp-m-en-siva",
+      "name": "Śiva / Śambhu / Sadāśiva / Śaṅkara",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-matsara-austerity",
+        "mud-e-divine-refuge",
+        "mud-e-andhaka-envoy",
+        "mud-e-matsara-karma-argument",
+        "mud-e-kailasa-battle",
+        "mud-e-matsara-captures-siva",
+        "mud-e-world-allocation",
+        "mud-e-datta-counsel",
+        "mud-e-vak-manifest",
+        "mud-e-siva-pasupata",
+        "mud-e-sons-fell-siva",
+        "mud-e-following-witness-previews",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-sati-request",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sati-death-rebirth",
+        "rmd2-e-shiva-grief",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-mahat-birth",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-body-worlds",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-vishnu",
+      "name": "Viṣṇu",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-senses-gods",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders",
+        "mud5-e-visnu-world-laksmis"
+      ]
+    },
+    {
+      "id": "mud-en-vakratunda",
+      "name": "Vakratunda / Gaṇeśa / Gaṇanāyaka / Vighnapa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "rmd2-e-invocation",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-tattva-boon",
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-tapas",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "rmd2-e-five-request-hymn-fruits",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud2-en-pulaha",
+      "name": "Pulaha",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud2-e-narada-mutual-curses",
+        "mud4-e-remaining-daughters-marriages",
+        "mud5-e-solar-sages-rein-holders",
+        "mud5-e-bharata-pulaha-arrival"
+      ]
+    },
+    {
+      "id": "mud2-en-mouse-vehicle",
+      "name": "Gaṇeśa’s mouse vehicle (Nārada hymn)",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud2-e-narada-tenyear-hymn",
+        "mud5-e-pulaha-ganesa-hymn"
+      ]
+    },
+    {
+      "id": "mud3-en-hymn-noose",
+      "name": "Pāśa held in Mudgala hymn",
+      "type": "WEAPON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud3-e-stotrottama-arms-pada",
+        "mud5-e-pulaha-ganesa-hymn"
+      ]
+    },
+    {
+      "id": "mud5-en-cosmography-users",
+      "name": "Readers/hearers or qualified practitioners in Mudgala cosmography benefits",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-rivers-phala"
+      ]
+    },
+    {
+      "id": "mud5-en-pulaha-hymn-goad",
+      "name": "Aṅkuśa held in Pulaha Gaṇeśa hymn",
+      "type": "WEAPON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-pulaha-ganesa-hymn"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "mud5-r-pulaha-ganesa-worship",
+      "subject_id": "mud2-en-pulaha",
+      "predicate": "worships",
+      "object_id": "mud-en-vakratunda",
+      "evidence_ids": [
+        "mud5-e-pulaha-heart-form-appearance"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-pulaha-ganesa-worship"
+    },
+    {
+      "id": "mud5-r-pulaha-hymn-mouse",
+      "subject_id": "mud-en-vakratunda",
+      "predicate": "hymned_as_mounted_on",
+      "object_id": "mud2-en-mouse-vehicle",
+      "evidence_ids": [
+        "mud5-e-pulaha-ganesa-hymn"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-pulaha-hymn-mouse"
+    },
+    {
+      "id": "mud5-r-pulaha-hymn-noose",
+      "subject_id": "mud-en-vakratunda",
+      "predicate": "hymned_as_holding",
+      "object_id": "mud3-en-hymn-noose",
+      "evidence_ids": [
+        "mud5-e-pulaha-ganesa-hymn"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-pulaha-hymn-noose"
+    },
+    {
+      "id": "mud5-r-pulaha-hymn-goad",
+      "subject_id": "mud-en-vakratunda",
+      "predicate": "hymned_as_holding",
+      "object_id": "mud5-en-pulaha-hymn-goad",
+      "evidence_ids": [
+        "mud5-e-pulaha-ganesa-hymn"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-pulaha-hymn-goad"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "mud5-power-pulaha-heart-form-removal",
+      "type": "POWER",
+      "recipient_id": "mud-en-vakratunda",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud5-e-pulaha-heart-form-appearance"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud5-e-pulaha-heart-form-appearance"
+        ],
+        "mechanism": [
+          "mud5-e-pulaha-heart-form-appearance"
+        ],
+        "austerity_or_circumstances": [
+          "mud5-e-pulaha-heart-form-appearance"
+        ],
+        "notes": [
+          "mud5-e-pulaha-heart-form-appearance"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Removal of internal meditation form; no god death.",
+      "motive": null,
+      "austerity_or_circumstances": "Pulaha absorbed in meditation fails to notice deity arrival.",
+      "requested": null,
+      "granted": null,
+      "mechanism": "Makes heart-resident Dhuṇḍhi form disappear so meditating Pulaha notices exterior Gaṇeśa.",
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud5-power-pulaha-devotion-boon",
+      "type": "BOON",
+      "recipient_id": "mud2-en-pulaha",
+      "grantor_id": "mud-en-vakratunda",
+      "worshipped_id": "mud-en-vakratunda",
+      "later_event_ids": [
+        "mud5-event-pulaha-devotion-boon"
+      ],
+      "evidence_ids": [
+        "mud5-e-pulaha-devotion-boon"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud5-e-pulaha-devotion-boon"
+        ],
+        "grantor_id": [
+          "mud5-e-pulaha-devotion-boon"
+        ],
+        "worshipped_id": [
+          "mud5-e-pulaha-devotion-boon"
+        ],
+        "requested": [
+          "mud5-e-pulaha-devotion-boon"
+        ],
+        "granted": [
+          "mud5-e-pulaha-devotion-boon"
+        ],
+        "austerity_or_circumstances": [
+          "mud5-e-pulaha-devotion-boon"
+        ],
+        "later_event_ids": [
+          "mud5-e-pulaha-devotion-boon"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": "Hymn andlove-overwhelmed dancing(21).",
+      "requested": "Firm unwavering devotion(20).",
+      "granted": "Firm unwavering joy-giving devotion(22).",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud5-power-pulaha-remembrance-appearance",
+      "type": "POWER",
+      "recipient_id": "mud2-en-pulaha",
+      "grantor_id": "mud-en-vakratunda",
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud5-e-pulaha-devotion-boon"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud5-e-pulaha-devotion-boon"
+        ],
+        "grantor_id": [
+          "mud5-e-pulaha-devotion-boon"
+        ],
+        "trigger": [
+          "mud5-e-pulaha-devotion-boon"
+        ],
+        "granted": [
+          "mud5-e-pulaha-devotion-boon"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Will see deity present near him(23).",
+      "mechanism": null,
+      "trigger": "Whenever Pulaha remembers Gaṇeśa.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud5-power-pulaha-hymn-benefits",
+      "type": "POWER",
+      "recipient_id": "rfix4-en-pulaha-hymn-audience",
+      "grantor_id": "mud-en-vakratunda",
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud5-e-pulaha-devotion-boon"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud5-e-pulaha-devotion-boon"
+        ],
+        "grantor_id": [
+          "mud5-e-pulaha-devotion-boon"
+        ],
+        "trigger": [
+          "mud5-e-pulaha-devotion-boon"
+        ],
+        "granted": [
+          "mud5-e-pulaha-devotion-boon"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Devotion, enjoyment/liberation, peace-yoga, all happiness; become like Pulaha(24–25).",
+      "mechanism": null,
+      "trigger": "Human recitation/hearingPulaha hymn.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "mud5-a-pulaha-ganesa-worship",
+      "subject_id": "mud2-en-pulaha",
+      "predicate": "worships",
+      "object_id": "mud-en-vakratunda",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-pulaha-heart-form-appearance"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-pulaha-attained-peace",
+      "subject_id": "mud2-en-pulaha",
+      "predicate": "narrated_outcome",
+      "object_id": null,
+      "value": "Gradual yoga-peace, daily image worship/meditation, then deity appearance",
+      "evidence_ids": [
+        "mud5-e-pulaha-heart-form-appearance"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-pulaha-hymn-mouse",
+      "subject_id": "mud-en-vakratunda",
+      "predicate": "hymned_as_mounted_on",
+      "object_id": "mud2-en-mouse-vehicle",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-pulaha-ganesa-hymn"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-pulaha-hymn-noose",
+      "subject_id": "mud-en-vakratunda",
+      "predicate": "hymned_as_holding",
+      "object_id": "mud3-en-hymn-noose",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-pulaha-ganesa-hymn"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-pulaha-hymn-goad",
+      "subject_id": "mud-en-vakratunda",
+      "predicate": "hymned_as_holding",
+      "object_id": "mud5-en-pulaha-hymn-goad",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-pulaha-ganesa-hymn"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-pulaha-hymn-iconography",
+      "subject_id": "mud-en-vakratunda",
+      "predicate": "pulaha_hymn_iconography",
+      "object_id": null,
+      "value": "Fourarms; elephant face/ears; Lambodara; mouse banner/mount; noose/goad",
+      "evidence_ids": [
+        "mud5-e-pulaha-ganesa-hymn"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-pulaha-hymn-ontology",
+      "subject_id": "mud-en-vakratunda",
+      "predicate": "pulaha_hymn_attribution",
+      "object_id": null,
+      "value": "Vighnarāja removesdevotee/givesnondevotee obstacles; Brahman/yoga/peace/world support; creator/preserver/end; many avatars; four aims/Brahman embodiment; inexpressible fully",
+      "evidence_ids": [
+        "mud5-e-pulaha-ganesa-hymn"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "linked_entities": [
+    {
+      "id": "gp-m-en-siva",
+      "name": "Śiva / Śambhu / Sadāśiva / Śaṅkara",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-matsara-austerity",
+        "mud-e-divine-refuge",
+        "mud-e-andhaka-envoy",
+        "mud-e-matsara-karma-argument",
+        "mud-e-kailasa-battle",
+        "mud-e-matsara-captures-siva",
+        "mud-e-world-allocation",
+        "mud-e-datta-counsel",
+        "mud-e-vak-manifest",
+        "mud-e-siva-pasupata",
+        "mud-e-sons-fell-siva",
+        "mud-e-following-witness-previews",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-sati-request",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sati-death-rebirth",
+        "rmd2-e-shiva-grief",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-mahat-birth",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-body-worlds",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-vishnu",
+      "name": "Viṣṇu",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-senses-gods",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders",
+        "mud5-e-visnu-world-laksmis"
+      ]
+    },
+    {
+      "id": "mud-en-vakratunda",
+      "name": "Vakratunda / Gaṇeśa / Gaṇanāyaka / Vighnapa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "rmd2-e-invocation",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-tattva-boon",
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-tapas",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "rmd2-e-five-request-hymn-fruits",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud2-en-pulaha",
+      "name": "Pulaha",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud2-e-narada-mutual-curses",
+        "mud4-e-remaining-daughters-marriages",
+        "mud5-e-solar-sages-rein-holders",
+        "mud5-e-bharata-pulaha-arrival"
+      ]
+    },
+    {
+      "id": "mud2-en-mouse-vehicle",
+      "name": "Gaṇeśa’s mouse vehicle (Nārada hymn)",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud2-e-narada-tenyear-hymn",
+        "mud5-e-pulaha-ganesa-hymn"
+      ]
+    },
+    {
+      "id": "mud3-en-hymn-noose",
+      "name": "Pāśa held in Mudgala hymn",
+      "type": "WEAPON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud3-e-stotrottama-arms-pada",
+        "mud5-e-pulaha-ganesa-hymn"
+      ]
+    },
+    {
+      "id": "mud5-en-cosmography-users",
+      "name": "Readers/hearers or qualified practitioners in Mudgala cosmography benefits",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-rivers-phala"
+      ]
+    },
+    {
+      "id": "mud5-en-pulaha-hymn-goad",
+      "name": "Aṅkuśa held in Pulaha Gaṇeśa hymn",
+      "type": "WEAPON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-pulaha-ganesa-hymn"
+      ]
+    },
+    {
+      "id": "rfix4-en-pulaha-hymn-audience",
+      "name": "Mortals reading or hearing Pulaha’s hymn",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-pulaha-devotion-boon"
+      ]
+    }
+  ],
+  "linked_entity_note": "Includes event participants and related claim endpoints. Entity metadata can cite other retained source passages; the complete graph carries those references."
+}

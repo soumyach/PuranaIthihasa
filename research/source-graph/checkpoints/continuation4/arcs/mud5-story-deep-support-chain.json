@@ -1,0 +1,1576 @@
+{
+  "checkpoint": "continuation4",
+  "completed_arc_id": "mud5-story-deep-support-chain",
+  "graph_sha256": "d3e53f6fb2ee6852a3b4d4e6ee677a24abac85e4ede403205172dfa77aa4306a",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checks complete; independent review selective. All declared interpretation gaps remain explicit.",
+  "story": {
+    "id": "mud5-story-deep-support-chain",
+    "title": "Śeṣa dissolution,Viṣṇu supports,hells and cosmic-form conclusion",
+    "source_id": "gp-src-mudgala",
+    "witness_id": "gp-wit-sd-mudgala-2",
+    "scope": "2.15.20–40",
+    "event_ids": [
+      "mud5-event-sesa-dissolution",
+      "mud5-event-kurma-varaha-support",
+      "mud5-event-hells-cosmic-conclusion"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Entire bounded cited Sanskrit arc read; significant named actors, relationships, boons/powers, dialogue and transition checks by author. Independent root review separate.",
+    "missing_sections": [],
+    "editorial_notes": "Source narration order. Embedded narratives have their own spines; parent records their framing transitions without duplicating events."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "mud5-event-sesa-dissolution",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-deep-support-chain",
+        "sequence": 1,
+        "passage_ids": [
+          "mud5-p-sesa-dissolution"
+        ],
+        "participants": [
+          "mud-en-shesha",
+          "mud-en-vakratunda",
+          "mud-en-vishnu",
+          "mud-en-prahlada",
+          "mud-en-vasuki",
+          "mud5-en-sesa-naga-women",
+          "rmd2-en-patala"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Śeṣa stands 30000 yojanas below Pātāla, Gaṇeśa devotee/portion, Viṣṇu kalāvatāra and called Kālarudra. Thousand-faced, powerful, poison-born flame burns entire world; deathless hence Ananta, he dissolves at Brahmā-day’s end and remains. Vāsuki-led Nāga kings, Prahlāda-led demons and Nāga women serve him; women worship for many desired successes, not a narrated grant of all requests.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-sesa-dissolution"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-sesa-dissolution",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-sesa-dissolution",
+          "locator": "Mudgala2.15.20–25",
+          "paraphrase": "Śeṣa stands 30000 yojanas below Pātāla, Gaṇeśa devotee/portion, Viṣṇu kalāvatāra and called Kālarudra. Thousand-faced, powerful, poison-born flame burns entire world; deathless hence Ananta, he dissolves at Brahmā-day’s end and remains. Vāsuki-led Nāga kings, Prahlāda-led demons and Nāga women serve him; women worship for many desired successes, not a narrated grant of all requests.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud5-event-kurma-varaha-support",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-deep-support-chain",
+        "sequence": 2,
+        "passage_ids": [
+          "mud5-p-kurma-varaha-support"
+        ],
+        "participants": [
+          "mud5-en-kurma",
+          "mud5-en-varaha",
+          "mud-en-vishnu",
+          "mud-en-varuna",
+          "gp-m-en-earth",
+          "mud-en-shesha",
+          "mud-en-vakratunda",
+          "mud5-en-cosmography-users"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "1000 yojanas below Śeṣa is Viṣṇu’s tortoise/Kūrma station, served by Varuṇa and others; 1000 further below is Viṣṇu’s Varāha, served by Earth and others, giving fearlessness to devotees. Whole structure rests on Śeṣa; Śeṣa rests on Kūrma, Kūrma on Varāha. Unsupported Varāha remembers Gaṇeśa in heart and by that power supports all. No battle or Earth-lifting episode supplied here.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-kurma-varaha-support"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-kurma-varaha-support",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-kurma-varaha-support",
+          "locator": "Mudgala2.15.26–31",
+          "paraphrase": "1000 yojanas below Śeṣa is Viṣṇu’s tortoise/Kūrma station, served by Varuṇa and others; 1000 further below is Viṣṇu’s Varāha, served by Earth and others, giving fearlessness to devotees. Whole structure rests on Śeṣa; Śeṣa rests on Kūrma, Kūrma on Varāha. Unsupported Varāha remembers Gaṇeśa in heart and by that power supports all. No battle or Earth-lifting episode supplied here.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud5-event-hells-cosmic-conclusion",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-deep-support-chain",
+        "sequence": 3,
+        "passage_ids": [
+          "mud5-p-hells-cosmic-conclusion"
+        ],
+        "participants": [
+          "mud-en-mudgala",
+          "mud-en-daksha",
+          "mud-en-vakratunda",
+          "mud5-en-varaha",
+          "rmd2-en-gunesha",
+          "mud5-en-cosmography-users",
+          "mud5-en-raurava",
+          "mud5-en-tamisra-hell",
+          "mud5-en-maharaurava",
+          "mud5-en-andhatamisra-hell",
+          "mud5-en-sucimukha",
+          "mud5-en-lohadanda",
+          "mud5-en-taptavaluka",
+          "mud5-en-khadgapatraka",
+          "mud5-en-lalasya",
+          "mud5-en-krmibhaksya"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Below Varāha are purifying/punishing hells Raurava, Tāmisra, Mahāraurava, Andhatāmisra, Sūcīmukha, Lohadaṇḍa, Taptavāluka, Khaḍgapatraka, Lālāsya, Kṛmibhakṣya and many others, where sinners are cooked. Mudgala says the cosmic sphere cannot be fully expanded here; Dakṣa’s curse-delusion will end by Gaṇeśa worship and he will know truly. All cosmic eggs alike have 8 envelopes and Guṇeśa support; this is Gaṇapati’s egg-form briefly told. Devoted hearing/reading gives all, siddhis, enjoyment/liberation and sin-cover destruction.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-hells-cosmic-conclusion"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-hells-cosmic-conclusion",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-hells-cosmic-conclusion",
+          "locator": "Mudgala2.15.32–40",
+          "paraphrase": "Below Varāha are purifying/punishing hells Raurava, Tāmisra, Mahāraurava, Andhatāmisra, Sūcīmukha, Lohadaṇḍa, Taptavāluka, Khaḍgapatraka, Lālāsya, Kṛmibhakṣya and many others, where sinners are cooked. Mudgala says the cosmic sphere cannot be fully expanded here; Dakṣa’s curse-delusion will end by Gaṇeśa worship and he will know truly. All cosmic eggs alike have 8 envelopes and Guṇeśa support; this is Gaṇapati’s egg-form briefly told. Devoted hearing/reading gives all, siddhis, enjoyment/liberation and sin-cover destruction.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gp-m-en-earth",
+      "name": "Earth / Pṛthvī",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-matsara-origin",
+        "mud5-e-kurma-varaha-support"
+      ]
+    },
+    {
+      "id": "mud-en-daksha",
+      "name": "Dakṣa",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-five-emergence",
+        "mud2-e-field-benefits",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-mudgala",
+      "name": "Mudgala",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "rmd2-e-supremacy-question",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-five-emergence",
+        "mud2-e-field-benefits",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-prahlada",
+      "name": "Prahlāda / Prahrāda",
+      "type": "ASURA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "mud2-e-ekadanta-frame",
+        "mud5-e-sesa-dissolution"
+      ]
+    },
+    {
+      "id": "mud-en-vasuki",
+      "name": "Vāsuki",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-naga-battle",
+        "mud5-e-solar-raksasas-nagas",
+        "mud5-e-lower-nether-rosters"
+      ]
+    },
+    {
+      "id": "mud-en-shesha",
+      "name": "Śeṣa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-naga-settlement",
+        "rmd2-e-invocation",
+        "mud2-e-field-assembly",
+        "mud3-e-inner-manifestation",
+        "mud5-e-lower-nether-rosters"
+      ]
+    },
+    {
+      "id": "mud-en-varuna",
+      "name": "Varuṇa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-varuna-conquest",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-senses-gods",
+        "mud2-e-rcika-marriage",
+        "mud3-e-stotrottama-cosmic-forms",
+        "mud5-e-sun-chariot-cities-time"
+      ]
+    },
+    {
+      "id": "mud-en-vishnu",
+      "name": "Viṣṇu",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-senses-gods",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders",
+        "mud5-e-visnu-world-laksmis"
+      ]
+    },
+    {
+      "id": "mud-en-vakratunda",
+      "name": "Vakratunda / Gaṇeśa / Gaṇanāyaka / Vighnapa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "rmd2-e-invocation",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-tattva-boon",
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-tapas",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "rmd2-e-five-request-hymn-fruits",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "rmd2-en-gunesha",
+      "name": "Guṇeśa, cosmic egg-born lord of guṇas",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-eight-envelope",
+        "mud3-e-vak-bindu-explanation",
+        "mud4-e-priyavrata-ganesa-initiation",
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "rmd2-en-patala",
+      "name": "Pātāla",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "rmd2-e-virat-body-worlds",
+        "mud4-e-moksa-battle",
+        "mud5-e-upper-nether-rosters"
+      ]
+    },
+    {
+      "id": "mud5-en-cosmography-users",
+      "name": "Readers/hearers or qualified practitioners in Mudgala cosmography benefits",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-rivers-phala"
+      ]
+    },
+    {
+      "id": "mud5-en-sesa-naga-women",
+      "name": "Nāga women worshipping Ananta for wishes",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-sesa-dissolution"
+      ]
+    },
+    {
+      "id": "mud5-en-kurma",
+      "name": "Kūrma/Nārāyaṇa tortoise cosmic support",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ]
+    },
+    {
+      "id": "mud5-en-varaha",
+      "name": "Varāha/Viṣṇu cosmic support",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ]
+    },
+    {
+      "id": "mud5-en-raurava",
+      "name": "Raurava hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "mud5-en-tamisra-hell",
+      "name": "Tāmisra hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "mud5-en-maharaurava",
+      "name": "Mahāraurava hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "mud5-en-andhatamisra-hell",
+      "name": "Andhatāmisra hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "mud5-en-sucimukha",
+      "name": "Sūcīmukha hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "mud5-en-lohadanda",
+      "name": "Lohadaṇḍa hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "mud5-en-taptavaluka",
+      "name": "Taptavāluka hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "mud5-en-khadgapatraka",
+      "name": "Khaḍgapatraka hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "mud5-en-lalasya",
+      "name": "Lālāsya hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "mud5-en-krmibhaksya",
+      "name": "Kṛmibhakṣya hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "mud5-r-sesa-ganesa-portion",
+      "subject_id": "mud-en-shesha",
+      "predicate": "portion_of",
+      "object_id": "mud-en-vakratunda",
+      "evidence_ids": [
+        "mud5-e-sesa-dissolution"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-sesa-ganesa-portion",
+      "kinship_kind": "DEITY_PORTION"
+    },
+    {
+      "id": "mud5-r-sesa-visnu-avatar",
+      "subject_id": "mud-en-shesha",
+      "predicate": "kalavatara_of",
+      "object_id": "mud-en-vishnu",
+      "evidence_ids": [
+        "mud5-e-sesa-dissolution"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-sesa-visnu-avatar"
+    },
+    {
+      "id": "mud5-r-vasuki-sesa-service",
+      "subject_id": "mud-en-vasuki",
+      "predicate": "serves",
+      "object_id": "mud-en-shesha",
+      "evidence_ids": [
+        "mud5-e-sesa-dissolution"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-vasuki-sesa-service"
+    },
+    {
+      "id": "mud5-r-prahlada-sesa-service",
+      "subject_id": "mud-en-prahlada",
+      "predicate": "serves",
+      "object_id": "mud-en-shesha",
+      "evidence_ids": [
+        "mud5-e-sesa-dissolution"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-prahlada-sesa-service"
+    },
+    {
+      "id": "mud5-r-naga-women-sesa",
+      "subject_id": "mud5-en-sesa-naga-women",
+      "predicate": "worships",
+      "object_id": "mud-en-shesha",
+      "evidence_ids": [
+        "mud5-e-sesa-dissolution"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-naga-women-sesa"
+    },
+    {
+      "id": "mud5-r-kurma-visnu",
+      "subject_id": "mud5-en-kurma",
+      "predicate": "manifestation_of",
+      "object_id": "mud-en-vishnu",
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-kurma-visnu"
+    },
+    {
+      "id": "mud5-r-varaha-visnu",
+      "subject_id": "mud5-en-varaha",
+      "predicate": "manifestation_of",
+      "object_id": "mud-en-vishnu",
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-varaha-visnu"
+    },
+    {
+      "id": "mud5-r-varuna-kurma-service",
+      "subject_id": "mud-en-varuna",
+      "predicate": "serves",
+      "object_id": "mud5-en-kurma",
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-varuna-kurma-service"
+    },
+    {
+      "id": "mud5-r-earth-varaha-service",
+      "subject_id": "gp-m-en-earth",
+      "predicate": "serves",
+      "object_id": "mud5-en-varaha",
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-earth-varaha-service"
+    },
+    {
+      "id": "mud5-r-sesa-kurma-support",
+      "subject_id": "mud-en-shesha",
+      "predicate": "supported_by",
+      "object_id": "mud5-en-kurma",
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-sesa-kurma-support"
+    },
+    {
+      "id": "mud5-r-kurma-varaha-support",
+      "subject_id": "mud5-en-kurma",
+      "predicate": "supported_by",
+      "object_id": "mud5-en-varaha",
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-kurma-varaha-support"
+    },
+    {
+      "id": "mud5-r-raurava-below-varaha",
+      "subject_id": "mud5-en-raurava",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-raurava-below-varaha"
+    },
+    {
+      "id": "mud5-r-tamisra-hell-below-varaha",
+      "subject_id": "mud5-en-tamisra-hell",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-tamisra-hell-below-varaha"
+    },
+    {
+      "id": "mud5-r-maharaurava-below-varaha",
+      "subject_id": "mud5-en-maharaurava",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-maharaurava-below-varaha"
+    },
+    {
+      "id": "mud5-r-andhatamisra-hell-below-varaha",
+      "subject_id": "mud5-en-andhatamisra-hell",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-andhatamisra-hell-below-varaha"
+    },
+    {
+      "id": "mud5-r-sucimukha-below-varaha",
+      "subject_id": "mud5-en-sucimukha",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-sucimukha-below-varaha"
+    },
+    {
+      "id": "mud5-r-lohadanda-below-varaha",
+      "subject_id": "mud5-en-lohadanda",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-lohadanda-below-varaha"
+    },
+    {
+      "id": "mud5-r-taptavaluka-below-varaha",
+      "subject_id": "mud5-en-taptavaluka",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-taptavaluka-below-varaha"
+    },
+    {
+      "id": "mud5-r-khadgapatraka-below-varaha",
+      "subject_id": "mud5-en-khadgapatraka",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-khadgapatraka-below-varaha"
+    },
+    {
+      "id": "mud5-r-lalasya-below-varaha",
+      "subject_id": "mud5-en-lalasya",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-lalasya-below-varaha"
+    },
+    {
+      "id": "mud5-r-krmibhaksya-below-varaha",
+      "subject_id": "mud5-en-krmibhaksya",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-krmibhaksya-below-varaha"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "mud5-power-sesa-world-dissolution",
+      "type": "POWER",
+      "recipient_id": "mud-en-shesha",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud5-e-sesa-dissolution"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud5-e-sesa-dissolution"
+        ],
+        "mechanism": [
+          "mud5-e-sesa-dissolution"
+        ],
+        "restrictions": [
+          "mud5-e-sesa-dissolution"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "Thousand-faced Śeṣa’s poison-flame burns world; at Brahmā-day end dissolves and himself remains.",
+      "trigger": null,
+      "restrictions": "Explicitly deathless/Ananta in this source passage.",
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud5-power-varaha-ganesa-support",
+      "type": "POWER",
+      "recipient_id": "mud5-en-varaha",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud5-e-kurma-varaha-support"
+        ],
+        "mechanism": [
+          "mud5-e-kurma-varaha-support"
+        ],
+        "trigger": [
+          "mud5-e-kurma-varaha-support"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "Unsupported Varāha remembers Gaṇeśa and by his power supports all.",
+      "trigger": "Heart-remembrance of Gaṇeśa.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud5-power-varaha-devotee-fearlessness",
+      "type": "POWER",
+      "recipient_id": "mud5-en-cosmography-users",
+      "grantor_id": "mud5-en-varaha",
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud5-e-kurma-varaha-support"
+        ],
+        "grantor_id": [
+          "mud5-e-kurma-varaha-support"
+        ],
+        "granted": [
+          "mud5-e-kurma-varaha-support"
+        ],
+        "notes": [
+          "mud5-e-kurma-varaha-support"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "General capacity in 29, no separate request/grant scene.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Fearlessness to devotees.",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud5-power-daksha-curse-delusion-counsel",
+      "type": "POWER",
+      "recipient_id": "mud-en-daksha",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud5-e-hells-cosmic-conclusion"
+        ],
+        "trigger": [
+          "mud5-e-hells-cosmic-conclusion"
+        ],
+        "granted": [
+          "mud5-e-hells-cosmic-conclusion"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Curse-delusion removal and true knowledge, as Mudgala’s counsel.",
+      "mechanism": null,
+      "trigger": "Gaṇeśa worship.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud5-power-cosmic-form-account-users",
+      "type": "POWER",
+      "recipient_id": "mud5-en-cosmography-users",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud5-e-hells-cosmic-conclusion"
+        ],
+        "trigger": [
+          "mud5-e-hells-cosmic-conclusion"
+        ],
+        "granted": [
+          "mud5-e-hells-cosmic-conclusion"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "All/siddhis, enjoyment/liberation, sin-cover destruction.",
+      "mechanism": null,
+      "trigger": "Devoted hearing/reading of brief Gaṇapati cosmic-egg form account.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "mud5-a-sesa-ganesa-portion",
+      "subject_id": "mud-en-shesha",
+      "predicate": "portion_of",
+      "object_id": "mud-en-vakratunda",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-sesa-dissolution"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-sesa-visnu-avatar",
+      "subject_id": "mud-en-shesha",
+      "predicate": "kalavatara_of",
+      "object_id": "mud-en-vishnu",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-sesa-dissolution"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-sesa-kalarudra",
+      "subject_id": "mud-en-shesha",
+      "predicate": "source_designation",
+      "object_id": null,
+      "value": "Kālarudra; deathless therefore Ananta",
+      "evidence_ids": [
+        "mud5-e-sesa-dissolution"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-sesa-depth",
+      "subject_id": "mud-en-shesha",
+      "predicate": "source_distance",
+      "object_id": null,
+      "value": "30000 yojanas below Pātāla",
+      "evidence_ids": [
+        "mud5-e-sesa-dissolution"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-vasuki-sesa-service",
+      "subject_id": "mud-en-vasuki",
+      "predicate": "serves",
+      "object_id": "mud-en-shesha",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-sesa-dissolution"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-prahlada-sesa-service",
+      "subject_id": "mud-en-prahlada",
+      "predicate": "serves",
+      "object_id": "mud-en-shesha",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-sesa-dissolution"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-naga-women-sesa",
+      "subject_id": "mud5-en-sesa-naga-women",
+      "predicate": "worships",
+      "object_id": "mud-en-shesha",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-sesa-dissolution"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-naga-women-motive",
+      "subject_id": "mud5-en-sesa-naga-women",
+      "predicate": "worship_aim",
+      "object_id": null,
+      "value": "Many desired successes; actual grant not stated",
+      "evidence_ids": [
+        "mud5-e-sesa-dissolution"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-kurma-visnu",
+      "subject_id": "mud5-en-kurma",
+      "predicate": "manifestation_of",
+      "object_id": "mud-en-vishnu",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-varaha-visnu",
+      "subject_id": "mud5-en-varaha",
+      "predicate": "manifestation_of",
+      "object_id": "mud-en-vishnu",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-varuna-kurma-service",
+      "subject_id": "mud-en-varuna",
+      "predicate": "serves",
+      "object_id": "mud5-en-kurma",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-earth-varaha-service",
+      "subject_id": "gp-m-en-earth",
+      "predicate": "serves",
+      "object_id": "mud5-en-varaha",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-sesa-kurma-support",
+      "subject_id": "mud-en-shesha",
+      "predicate": "supported_by",
+      "object_id": "mud5-en-kurma",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-kurma-varaha-support",
+      "subject_id": "mud5-en-kurma",
+      "predicate": "supported_by",
+      "object_id": "mud5-en-varaha",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-deep-support-depths",
+      "subject_id": "mud5-en-kurma",
+      "predicate": "source_distances",
+      "object_id": null,
+      "value": "Kūrma 1000 belowŚeṣa; Varāha 1000 furtherbelow, yojanas",
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-raurava-below-varaha",
+      "subject_id": "mud5-en-raurava",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-tamisra-hell-below-varaha",
+      "subject_id": "mud5-en-tamisra-hell",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-maharaurava-below-varaha",
+      "subject_id": "mud5-en-maharaurava",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-andhatamisra-hell-below-varaha",
+      "subject_id": "mud5-en-andhatamisra-hell",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-sucimukha-below-varaha",
+      "subject_id": "mud5-en-sucimukha",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-lohadanda-below-varaha",
+      "subject_id": "mud5-en-lohadanda",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-taptavaluka-below-varaha",
+      "subject_id": "mud5-en-taptavaluka",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-khadgapatraka-below-varaha",
+      "subject_id": "mud5-en-khadgapatraka",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-lalasya-below-varaha",
+      "subject_id": "mud5-en-lalasya",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-krmibhaksya-below-varaha",
+      "subject_id": "mud5-en-krmibhaksya",
+      "predicate": "below",
+      "object_id": "mud5-en-varaha",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-cosmic-eggs-model",
+      "subject_id": "rmd2-en-gunesha",
+      "predicate": "source_description",
+      "object_id": null,
+      "value": "Worlds alike in 8-envelope eggs supported byGuṇeśa; Gaṇapati cosmic-egg form",
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "linked_entities": [
+    {
+      "id": "gp-m-en-earth",
+      "name": "Earth / Pṛthvī",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-matsara-origin",
+        "mud5-e-kurma-varaha-support"
+      ]
+    },
+    {
+      "id": "mud-en-daksha",
+      "name": "Dakṣa",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-five-emergence",
+        "mud2-e-field-benefits",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-mudgala",
+      "name": "Mudgala",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "rmd2-e-supremacy-question",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-five-emergence",
+        "mud2-e-field-benefits",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-prahlada",
+      "name": "Prahlāda / Prahrāda",
+      "type": "ASURA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "mud2-e-ekadanta-frame",
+        "mud5-e-sesa-dissolution"
+      ]
+    },
+    {
+      "id": "mud-en-vasuki",
+      "name": "Vāsuki",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-naga-battle",
+        "mud5-e-solar-raksasas-nagas",
+        "mud5-e-lower-nether-rosters"
+      ]
+    },
+    {
+      "id": "mud-en-shesha",
+      "name": "Śeṣa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-naga-settlement",
+        "rmd2-e-invocation",
+        "mud2-e-field-assembly",
+        "mud3-e-inner-manifestation",
+        "mud5-e-lower-nether-rosters"
+      ]
+    },
+    {
+      "id": "mud-en-varuna",
+      "name": "Varuṇa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-varuna-conquest",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-senses-gods",
+        "mud2-e-rcika-marriage",
+        "mud3-e-stotrottama-cosmic-forms",
+        "mud5-e-sun-chariot-cities-time"
+      ]
+    },
+    {
+      "id": "mud-en-vishnu",
+      "name": "Viṣṇu",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-senses-gods",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders",
+        "mud5-e-visnu-world-laksmis"
+      ]
+    },
+    {
+      "id": "mud-en-vakratunda",
+      "name": "Vakratunda / Gaṇeśa / Gaṇanāyaka / Vighnapa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "rmd2-e-invocation",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-tattva-boon",
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-tapas",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "rmd2-e-five-request-hymn-fruits",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "rmd2-en-gunesha",
+      "name": "Guṇeśa, cosmic egg-born lord of guṇas",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-eight-envelope",
+        "mud3-e-vak-bindu-explanation",
+        "mud4-e-priyavrata-ganesa-initiation",
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "rmd2-en-patala",
+      "name": "Pātāla",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "rmd2-e-virat-body-worlds",
+        "mud4-e-moksa-battle",
+        "mud5-e-upper-nether-rosters"
+      ]
+    },
+    {
+      "id": "mud5-en-cosmography-users",
+      "name": "Readers/hearers or qualified practitioners in Mudgala cosmography benefits",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-rivers-phala"
+      ]
+    },
+    {
+      "id": "mud5-en-sesa-naga-women",
+      "name": "Nāga women worshipping Ananta for wishes",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-sesa-dissolution"
+      ]
+    },
+    {
+      "id": "mud5-en-kurma",
+      "name": "Kūrma/Nārāyaṇa tortoise cosmic support",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ]
+    },
+    {
+      "id": "mud5-en-varaha",
+      "name": "Varāha/Viṣṇu cosmic support",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-kurma-varaha-support"
+      ]
+    },
+    {
+      "id": "mud5-en-raurava",
+      "name": "Raurava hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "mud5-en-tamisra-hell",
+      "name": "Tāmisra hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "mud5-en-maharaurava",
+      "name": "Mahāraurava hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "mud5-en-andhatamisra-hell",
+      "name": "Andhatāmisra hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "mud5-en-sucimukha",
+      "name": "Sūcīmukha hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "mud5-en-lohadanda",
+      "name": "Lohadaṇḍa hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "mud5-en-taptavaluka",
+      "name": "Taptavāluka hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "mud5-en-khadgapatraka",
+      "name": "Khaḍgapatraka hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "mud5-en-lalasya",
+      "name": "Lālāsya hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    },
+    {
+      "id": "mud5-en-krmibhaksya",
+      "name": "Kṛmibhakṣya hell",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-hells-cosmic-conclusion"
+      ]
+    }
+  ],
+  "linked_entity_note": "Includes event participants and related claim endpoints. Entity metadata can cite other retained source passages; the complete graph carries those references."
+}

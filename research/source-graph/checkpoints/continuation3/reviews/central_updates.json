@@ -1,0 +1,210 @@
+[
+  {
+    "table": "evidence",
+    "id": "gup4-e-013",
+    "fields": {
+      "paraphrase": "Pārvatī asks why Nala performed the vow. Himavat describes Niṣadha’s king as Veda-knowing, brave, generous, wealthy and pure, skilled with chariot, sword, arrows, bow, quiver and armour, and able to travel the three worlds. His innumerable cavalry, elephants, chariots, bowmen and weapon/fire-weapon fighters frighten Indra and direction-lords. His wife Damayantī is beautiful, virtuous and adorned; Brahmā fashioned her from selected essence and gave her the beauty of women in the three worlds. Minister Padmahasta is valiant, intelligent like Bṛhaspati, skilled in policy like Aṅgiras."
+    },
+    "reason": "Independent Nala review: Meru/ocean comparisons occur52.10, outside52.1–9. Move their prose to the existing52.10–20 evidence.",
+    "evidence_ids": [
+      "gup4-e-013",
+      "gup4-e-014"
+    ]
+  },
+  {
+    "table": "narrative_events",
+    "id": "gup4-event-013",
+    "fields": {
+      "details": "Pārvatī asks why Nala performed the vow. Himavat describes Niṣadha’s king as Veda-knowing, brave, generous, wealthy and pure, skilled with chariot, sword, arrows, bow, quiver and armour, and able to travel the three worlds. His innumerable cavalry, elephants, chariots, bowmen and weapon/fire-weapon fighters frighten Indra and direction-lords. His wife Damayantī is beautiful, virtuous and adorned; Brahmā fashioned her from selected essence and gave her the beauty of women in the three worlds. Minister Padmahasta is valiant, intelligent like Bṛhaspati, skilled in policy like Aṅgiras."
+    },
+    "reason": "Align event013 with exact52.1–9 evidence;52.10 comparisons move to event014.",
+    "evidence_ids": [
+      "gup4-e-013",
+      "gup4-e-014"
+    ]
+  },
+  {
+    "table": "evidence",
+    "id": "gup4-e-014",
+    "fields": {
+      "paraphrase": "Padmahasta is compared to Meru in height and the ocean in depth. A court with Apsaras dancers, praisers and brahmarṣis receives Gautama. Nala honours and seats him, calling his own birth, kingship, parents, lineage and life fruitful through the visit. Gautama says he wanted to see the king’s wealth, reports praise by Brahmā, Indra, Hari and Śiva, then asks leave. Nala pleads that he stay to remove uncertainty; the sage agrees. The king asks which merit or tapas produced his extraordinary wealth and who he was in a former birth."
+    },
+    "reason": "Independent Nala review:52.10 physical comparisons belong in this source span.",
+    "evidence_ids": [
+      "gup4-e-014"
+    ]
+  },
+  {
+    "table": "narrative_events",
+    "id": "gup4-event-014",
+    "fields": {
+      "details": "Padmahasta is compared to Meru in height and the ocean in depth. A court with Apsaras dancers, praisers and brahmarṣis receives Gautama. Nala honours and seats him, calling his own birth, kingship, parents, lineage and life fruitful through the visit. Gautama says he wanted to see the king’s wealth, reports praise by Brahmā, Indra, Hari and Śiva, then asks leave. Nala pleads that he stay to remove uncertainty; the sage agrees. The king asks which merit or tapas produced his extraordinary wealth and who he was in a former birth.",
+      "participants": [
+        "gup4-en-020",
+        "gup-en-062",
+        "gup-en-178",
+        "gup-en-109",
+        "gp-en-brahma",
+        "gup-en-010",
+        "gup-en-008",
+        "gup-en-009",
+        "gup4-en-023"
+      ]
+    },
+    "reason": "Move52.10 minister comparisons into the supported event span.",
+    "evidence_ids": [
+      "gup4-e-014"
+    ]
+  },
+  {
+    "table": "entities",
+    "id": "gup4-en-023",
+    "fields": {
+      "evidence_ids": [
+        "gup4-e-014"
+      ]
+    },
+    "reason": "Add52.10 support for minister comparisons, retaining52.9 role evidence.",
+    "evidence_ids": [
+      "gup4-e-014"
+    ]
+  },
+  {
+    "table": "boons_and_powers",
+    "id": "gup4-power-012",
+    "fields": {
+      "mechanism": "Kauśika promises siddhi through the month-long Gaṇeśa vow; poverty relief is the sufferer’s requested purpose.",
+      "evidence_ids": [
+        "gup4-e-015"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup4-e-016"
+        ],
+        "worshipped_id": [
+          "gup4-e-016"
+        ],
+        "mechanism": [
+          "gup4-e-016",
+          "gup4-e-015"
+        ],
+        "trigger": [
+          "gup4-e-016"
+        ],
+        "duration": [
+          "gup4-e-016"
+        ]
+      }
+    },
+    "reason": "Independent Nala review: poverty request occurs52.28/e015; distinguish requested purpose from teacher’s explicit siddhi promise29–35/e016.",
+    "evidence_ids": [
+      "gup4-e-015",
+      "gup4-e-016"
+    ]
+  },
+  {
+    "table": "assertions",
+    "id": "gup4-a-016",
+    "fields": {
+      "evidence_ids": [
+        "gup4-e-017"
+      ]
+    },
+    "reason": "Independent Nala review strengthens reborn_as with explicit death-and-Nala-birth52.41, retaining earlier former-birth dialogue.",
+    "evidence_ids": [
+      "gup4-e-015",
+      "gup4-e-017"
+    ]
+  },
+  {
+    "table": "relationships",
+    "id": "gup4-rel-015",
+    "fields": {
+      "evidence_ids": [
+        "gup4-e-017"
+      ]
+    },
+    "reason": "Independent Nala review strengthens reborn_as with explicit death-and-Nala-birth52.41, retaining earlier former-birth dialogue.",
+    "evidence_ids": [
+      "gup4-e-015",
+      "gup4-e-017"
+    ]
+  },
+  {
+    "table": "boons_and_powers",
+    "id": "mud4-power-moksa-unwanted-capture",
+    "fields": {
+      "restrictions": "Sūta attributes the effect to these vicious, enjoyment-attached captors who do not desire liberation.",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported. The explanation is attributed spiritual teaching; no universal physical head/foot-contact law is inferred."
+    },
+    "reason": "Root direct2.7.40–55 review: restriction field records the source-stated qualification; editorial nonliteral caution belongs in notes.",
+    "evidence_ids": [
+      "mud4-e-moksa-bhoga-explanation"
+    ]
+  },
+  {
+    "table": "queue",
+    "id": "gp-queue-1",
+    "fields": {
+      "passage_target": "Upāsanā61.1–19 read fragment, unextracted;61.20–92 unread. Retain3/11/13/23/24/45–47 and new51/53/55/57/59 semantic gaps.",
+      "task": "Resume formal extraction at61.1, reread the unextracted fragment and continue source order. Preserve Somakānta/Vyāsa frames and all separately flagged Sanskrit gaps.",
+      "reason": "Bodies51–60 read;52/54/56/58/60 COMPLETE and51/53/55/57/59 PARTIAL. Whole92-chapter witness incomplete."
+    },
+    "reason": "Reconcile retained source-order queue with continuation3 checkpoint.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gup-queue-next",
+    "fields": {
+      "passage_target": "Upāsanā61.1–19 read fragment, unextracted;61.20–92 unread. Retain3/11/13/23/24/45–47 and new51/53/55/57/59 semantic gaps.",
+      "task": "Resume formal extraction at61.1, reread the unextracted fragment and continue source order. Preserve Somakānta/Vyāsa frames and all separately flagged Sanskrit gaps.",
+      "reason": "Bodies51–60 read;52/54/56/58/60 COMPLETE and51/53/55/57/59 PARTIAL. Whole92-chapter witness incomplete."
+    },
+    "reason": "Reconcile retained source-order queue with continuation3 checkpoint.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gup2-queue-next",
+    "fields": {
+      "passage_target": "Upāsanā61.1–19 read fragment, unextracted;61.20–92 unread. Retain3/11/13/23/24/45–47 and new51/53/55/57/59 semantic gaps.",
+      "task": "Resume formal extraction at61.1, reread the unextracted fragment and continue source order. Preserve Somakānta/Vyāsa frames and all separately flagged Sanskrit gaps.",
+      "reason": "Bodies51–60 read;52/54/56/58/60 COMPLETE and51/53/55/57/59 PARTIAL. Whole92-chapter witness incomplete."
+    },
+    "reason": "Reconcile retained source-order queue with continuation3 checkpoint.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gup3-queue-next",
+    "fields": {
+      "passage_target": "Upāsanā61.1–19 read fragment, unextracted;61.20–92 unread. Retain3/11/13/23/24/45–47 and new51/53/55/57/59 semantic gaps.",
+      "task": "Resume formal extraction at61.1, reread the unextracted fragment and continue source order. Preserve Somakānta/Vyāsa frames and all separately flagged Sanskrit gaps.",
+      "reason": "Bodies51–60 read;52/54/56/58/60 COMPLETE and51/53/55/57/59 PARTIAL. Whole92-chapter witness incomplete."
+    },
+    "reason": "Reconcile retained source-order queue with continuation3 checkpoint.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "gkr2-queue-next-source-order",
+    "fields": {
+      "passage_target": "Krīḍā44.1–26 and45.1–39 read-only whole bodies;46.1–8 fragment;46.9 onward unread through136, then150–155. Keep prior semantic gaps and completed137–149 context/Gītā.",
+      "task": "Resume extraction at44.1, then45 and46; do not skip read-only chapters. Complete later Kīrti/child frame outcomes before upgrading the encompassing spine.",
+      "reason": "Source-ordered extraction through43;31/35/38/42 remain PARTIAL. Read-only work is not extraction completion."
+    },
+    "reason": "Reconcile retained earlier queue with continuation3 checkpoint.",
+    "evidence_ids": []
+  },
+  {
+    "table": "queue",
+    "id": "rmd2-q-next",
+    "fields": {
+      "task": "Resolve retained1.17/20/21 exact language while resuming new source-order body at2.11.1; do not duplicate already extracted2.4–10.",
+      "reason": "All first-khaṇḍa bodies read; eight semantic/atomic chapter gaps remain.2.4/5/8/9 COMPLETE,2.6/7/10 PARTIAL."
+    },
+    "reason": "Reconcile stale next2.4 instruction, preserving targeted first-khaṇḍa gaps.",
+    "evidence_ids": []
+  }
+]

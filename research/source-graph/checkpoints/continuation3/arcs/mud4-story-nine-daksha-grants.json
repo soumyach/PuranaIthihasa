@@ -1,0 +1,576 @@
+{
+  "checkpoint": "continuation3",
+  "completed_arc_id": "mud4-story-nine-daksha-grants",
+  "graph_sha256": "cecbec8daa706000cb98923d6b48e16119667f17c4f6fce4acf05de2b7a7a376",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checking complete; selective independent review in separate bounded reports, not universal certification.",
+  "story": {
+    "id": "mud4-story-nine-daksha-grants",
+    "title": "Nine Prajāpatis’ creation grant and Dakṣa’s Śakti daughterhood recollection",
+    "source_id": "gp-src-mudgala",
+    "witness_id": "gp-wit-sd-mudgala-2",
+    "scope": "2.5.1–38",
+    "event_ids": [
+      "mud4-event-nine-prajapati-grants",
+      "mud4-event-daksha-daughter-grant-recollection"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Entire bounded cited Sanskrit arc read; significant named actors, relationships, boons/powers, dialogue and transition checks by author. Independent root review separate.",
+    "missing_sections": [],
+    "editorial_notes": "Source narration order. Embedded narratives have their own spines; parent records their framing transitions without duplicating events."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "mud4-event-nine-prajapati-grants",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-nine-daksha-grants",
+        "sequence": 1,
+        "passage_ids": [
+          "mud4-p-nine-prajapati-grants"
+        ],
+        "participants": [
+          "mud-en-brahma",
+          "mud4-en-nine-brahma-sons",
+          "mud-en-daksha",
+          "mud-en-vakratunda",
+          "mud4-en-nine-prajapati-hymn",
+          "rmd2-en-mouse-vehicle",
+          "mud4-en-qualified-hymn-users"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Nine Brahmā sons perform1000 DIVINE years of heart-Gaṇeśa tapas by one-syllable procedure, daily worship and wind alone as food. Mouse-mounted Gaṇeśa comes, luminous yet gentle. Led by Dakṣa they hymn him as witness/self/yoga/peace, creation-preservation-destruction, all gods, beings/elements/food, cit/bodha/videha/asat/sat/sama/Svānanda/ayoga/yoga and Cintāmaṇi of mental activities. He offers boons and promises faithful hymn users all siddhis, progeny/spouse, infertility removal, wealth/grain/cattle, enjoyment/liberation/Brahman and desired ends. They request unwavering devotion destroying delusion, incomparable creation capacity and success in whatever they wish; he assents, vanishes, and they return to their places meditating on him.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud4-power-nine-creation-grant"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-nine-prajapati-grants"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-nine-prajapati-grants",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-nine-prajapati-grants",
+          "locator": "Mudgala2.5.1–24",
+          "paraphrase": "Nine Brahmā sons perform1000 DIVINE years of heart-Gaṇeśa tapas by one-syllable procedure, daily worship and wind alone as food. Mouse-mounted Gaṇeśa comes, luminous yet gentle. Led by Dakṣa they hymn him as witness/self/yoga/peace, creation-preservation-destruction, all gods, beings/elements/food, cit/bodha/videha/asat/sat/sama/Svānanda/ayoga/yoga and Cintāmaṇi of mental activities. He offers boons and promises faithful hymn users all siddhis, progeny/spouse, infertility removal, wealth/grain/cattle, enjoyment/liberation/Brahman and desired ends. They request unwavering devotion destroying delusion, incomparable creation capacity and success in whatever they wish; he assents, vanishes, and they return to their places meditating on him.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud4-event-daksha-daughter-grant-recollection",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-nine-daksha-grants",
+        "sequence": 2,
+        "passage_ids": [
+          "mud4-p-daksha-daughter-grant-recollection"
+        ],
+        "participants": [
+          "mud-en-daksha",
+          "mud-en-brahma",
+          "mud-en-shakti",
+          "rmd2-en-sati",
+          "mud-en-mudgala",
+          "mud-en-vakratunda",
+          "mud4-en-daksha-sakti-hymn",
+          "mud4-en-qualified-hymn-users"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Brahmā directs Dakṣa to worship Śakti so she becomes his daughter. After100 years Śakti appears; Dakṣa hymns her as māyā/delusion, mother/life-giver, Pārvatī/Gāyatrī/Sāvitrī/Prakṛti/Puruṣa and guṇa support, requesting daughterhood. She grants future daughterhood in many forms and filling the world through offspring, promises her hymn’s readers/hearers all wishes, and vanishes. Mudgala then addresses current Dakṣa: he abandoned Gaṇeśa name/mantra, scorned Satī who became ash, was made sorrowful by Vighneśa, but prior impressions restored memory. Kingship prosperity induces proud blindness/destroys knowledge, so sages avoid it; hear the present account devotedly.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud4-power-daksha-shakti-daughters"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-daksha-daughter-grant-recollection"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-daksha-daughter-grant-recollection",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-daksha-daughter-grant-recollection",
+          "locator": "Mudgala2.5.25–38",
+          "paraphrase": "Brahmā directs Dakṣa to worship Śakti so she becomes his daughter. After100 years Śakti appears; Dakṣa hymns her as māyā/delusion, mother/life-giver, Pārvatī/Gāyatrī/Sāvitrī/Prakṛti/Puruṣa and guṇa support, requesting daughterhood. She grants future daughterhood in many forms and filling the world through offspring, promises her hymn’s readers/hearers all wishes, and vanishes. Mudgala then addresses current Dakṣa: he abandoned Gaṇeśa name/mantra, scorned Satī who became ash, was made sorrowful by Vighneśa, but prior impressions restored memory. Kingship prosperity induces proud blindness/destroys knowledge, so sages avoid it; hear the present account devotedly.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "mud-en-daksha",
+      "name": "Dakṣa",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-five-emergence",
+        "mud2-e-field-benefits",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-mudgala",
+      "name": "Mudgala",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "rmd2-e-supremacy-question",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-five-emergence",
+        "mud2-e-field-benefits",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-brahma",
+      "name": "Brahmā",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-naimisha",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-assembly",
+        "mud2-e-yaj-arrives",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-vakratunda",
+      "name": "Vakratunda / Gaṇeśa / Gaṇanāyaka / Vighnapa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "rmd2-e-invocation",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-tattva-boon",
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-tapas",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "rmd2-e-five-request-hymn-fruits",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-shakti",
+      "name": "Śakti (Brahmā’s pride speech)",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-brahma-pride",
+        "rmd2-e-invocation",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-daksha-daughter-grant-recollection"
+      ]
+    },
+    {
+      "id": "rmd2-en-sati",
+      "name": "Satī, Dakṣa’s daughter before the Pārvatī rebirth",
+      "type": "DEVI_FORM",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-sati-request",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sati-death-rebirth",
+        "rmd2-e-shiva-grief",
+        "mud4-e-daksha-daughter-grant-recollection"
+      ]
+    },
+    {
+      "id": "rmd2-en-mouse-vehicle",
+      "name": "Mouse vehicle in five-deity manifestation",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "rmd2-e-five-manifestation-hymn",
+        "mud3-e-eight-forms-foes-vehicles",
+        "mud4-e-nine-prajapati-grants"
+      ]
+    },
+    {
+      "id": "mud4-en-qualified-hymn-users",
+      "name": "Qualified users of continuation4 hymns/accounts",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-visnu-hymn-benefits"
+      ]
+    },
+    {
+      "id": "mud4-en-nine-brahma-sons",
+      "name": "Nine Brahmā sons, Dakṣa-led, seeking creation capacity",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-nine-prajapati-grants"
+      ]
+    },
+    {
+      "id": "mud4-en-nine-prajapati-hymn",
+      "name": "Dakṣa-led nine Prajāpatis’ Gaṇeśa hymn",
+      "type": "TEXT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-nine-prajapati-grants"
+      ]
+    },
+    {
+      "id": "mud4-en-daksha-sakti-hymn",
+      "name": "Dakṣa’s Śakti hymn requesting daughterhood",
+      "type": "TEXT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-daksha-daughter-grant-recollection"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "mud4-r-nine-brahma-parent",
+      "subject_id": "mud4-en-nine-brahma-sons",
+      "predicate": "collective_sons_of",
+      "object_id": "mud-en-brahma",
+      "evidence_ids": [
+        "mud4-e-nine-prajapati-grants"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-nine-brahma-parent",
+      "kinship_kind": "COSMOLOGICAL_SONSHIP"
+    },
+    {
+      "id": "mud4-r-nine-hymn-authors",
+      "subject_id": "mud4-en-nine-prajapati-hymn",
+      "predicate": "hymned_by",
+      "object_id": "mud4-en-nine-brahma-sons",
+      "evidence_ids": [
+        "mud4-e-nine-prajapati-grants"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-nine-hymn-authors"
+    },
+    {
+      "id": "mud4-r-daksha-shakti-hymn",
+      "subject_id": "mud4-en-daksha-sakti-hymn",
+      "predicate": "hymned_by",
+      "object_id": "mud-en-daksha",
+      "evidence_ids": [
+        "mud4-e-daksha-daughter-grant-recollection"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-daksha-shakti-hymn"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "mud4-power-nine-creation-grant",
+      "type": "BOON",
+      "recipient_id": "mud4-en-nine-brahma-sons",
+      "grantor_id": "mud-en-vakratunda",
+      "worshipped_id": "mud-en-vakratunda",
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-nine-prajapati-grants"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-nine-prajapati-grants"
+        ],
+        "grantor_id": [
+          "mud4-e-nine-prajapati-grants"
+        ],
+        "worshipped_id": [
+          "mud4-e-nine-prajapati-grants"
+        ],
+        "austerity_or_circumstances": [
+          "mud4-e-nine-prajapati-grants"
+        ],
+        "requested": [
+          "mud4-e-nine-prajapati-grants"
+        ],
+        "granted": [
+          "mud4-e-nine-prajapati-grants"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": "1000 DIVINE years, one-syllable full procedure, daily worship, wind-only sustenance; Dakṣa-led hymn.",
+      "requested": "Unwavering devotion destroying delusion; incomparable creation capacity; all wished actions succeed.",
+      "granted": "Assent to all requests.",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud4-power-nine-hymn-users",
+      "type": "BOON",
+      "recipient_id": "mud4-en-qualified-hymn-users",
+      "grantor_id": "mud-en-vakratunda",
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-nine-prajapati-grants"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-nine-prajapati-grants"
+        ],
+        "grantor_id": [
+          "mud4-e-nine-prajapati-grants"
+        ],
+        "trigger": [
+          "mud4-e-nine-prajapati-grants"
+        ],
+        "granted": [
+          "mud4-e-nine-prajapati-grants"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "All siddhis, progeny/spouse, infertility removal, wealth/grain/cattle, enjoyment/liberation/Brahman and desired ends.",
+      "mechanism": null,
+      "trigger": "Faithfully read/hear nine Prajāpati hymn.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud4-power-daksha-shakti-daughters",
+      "type": "BOON",
+      "recipient_id": "mud-en-daksha",
+      "grantor_id": "mud-en-shakti",
+      "worshipped_id": "mud-en-shakti",
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-daksha-daughter-grant-recollection"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-daksha-daughter-grant-recollection"
+        ],
+        "grantor_id": [
+          "mud4-e-daksha-daughter-grant-recollection"
+        ],
+        "worshipped_id": [
+          "mud4-e-daksha-daughter-grant-recollection"
+        ],
+        "austerity_or_circumstances": [
+          "mud4-e-daksha-daughter-grant-recollection"
+        ],
+        "requested": [
+          "mud4-e-daksha-daughter-grant-recollection"
+        ],
+        "granted": [
+          "mud4-e-daksha-daughter-grant-recollection"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": "Brahmā-directed100-year Śakti tapas and hymn.",
+      "requested": "Become his daughter.",
+      "granted": "Śakti will be daughter in many forms and populate world through daughters/sons.",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud4-power-daksha-shakti-hymn-users",
+      "type": "BOON",
+      "recipient_id": "mud4-en-qualified-hymn-users",
+      "grantor_id": "mud-en-shakti",
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-daksha-daughter-grant-recollection"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-daksha-daughter-grant-recollection"
+        ],
+        "grantor_id": [
+          "mud4-e-daksha-daughter-grant-recollection"
+        ],
+        "trigger": [
+          "mud4-e-daksha-daughter-grant-recollection"
+        ],
+        "granted": [
+          "mud4-e-daksha-daughter-grant-recollection"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "All wishes.",
+      "mechanism": null,
+      "trigger": "Read/hear Dakṣa’s Śakti hymn.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "mud4-a-nine-brahma-parent",
+      "subject_id": "mud4-en-nine-brahma-sons",
+      "predicate": "collective_sons_of",
+      "object_id": "mud-en-brahma",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-nine-prajapati-grants"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-nine-hymn-authors",
+      "subject_id": "mud4-en-nine-prajapati-hymn",
+      "predicate": "hymned_by",
+      "object_id": "mud4-en-nine-brahma-sons",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-nine-prajapati-grants"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-nine-hymn-capacities",
+      "subject_id": "mud4-en-nine-prajapati-hymn",
+      "predicate": "hymnal_correspondences",
+      "object_id": null,
+      "value": "All gods, beings/elements/food and named Brahman forms; creation/preservation/destruction, yoga peace and Cintāmaṇi of mind activities",
+      "evidence_ids": [
+        "mud4-e-nine-prajapati-grants"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-daksha-shakti-hymn",
+      "subject_id": "mud4-en-daksha-sakti-hymn",
+      "predicate": "hymned_by",
+      "object_id": "mud-en-daksha",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-daksha-daughter-grant-recollection"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-daksha-forgetting-recollection",
+      "subject_id": "mud-en-daksha",
+      "predicate": "mudgala_retrospective_cause",
+      "object_id": null,
+      "value": "Abandoned Gaṇeśa name/mantra; scorned Satī became ash; Gaṇeśa imposed sorrow; prior impressions restored memory",
+      "evidence_ids": [
+        "mud4-e-daksha-daughter-grant-recollection"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ]
+}

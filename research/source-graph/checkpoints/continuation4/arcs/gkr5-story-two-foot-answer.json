@@ -1,0 +1,341 @@
+{
+  "checkpoint": "continuation4",
+  "completed_arc_id": "gkr5-story-two-foot-answer",
+  "graph_sha256": "d3e53f6fb2ee6852a3b4d4e6ee677a24abac85e4ede403205172dfa77aa4306a",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checks complete; independent review selective. All declared interpretation gaps remain explicit.",
+  "story": {
+    "id": "gkr5-story-two-foot-answer",
+    "title": "Kīrti’s two-place foot question and cosmic answer",
+    "source_id": "gp-src-ganesha",
+    "witness_id": "gp-wit-sd-krida",
+    "scope": "Krīḍā44.1–12",
+    "event_ids": [
+      "gkr5-event-feet-answer"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Entire stated chapter bodies read; narration, significant dialogue, all named actors/family, worship/requests/grants, weapons/powers/counters and aftermath extracted.",
+    "missing_sections": [],
+    "editorial_notes": "Bounded scene completion only; larger Vināyaka cycle incomplete. Independent print/Sanskrit expert audit pending."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "gkr5-event-feet-answer",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr5-story-two-foot-answer",
+        "sequence": 1,
+        "passage_ids": [
+          "gkr5-p-044"
+        ],
+        "participants": [
+          "gkr4-en-kirti32",
+          "gup2-en-001",
+          "gkr4-en-vakratunda40",
+          "gkr4-en-ekapada42"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Kīrti asks about simultaneous feet at Tuṇḍana and Kāśī; the sage answers by cosmic omnipresence, unlimited forms and divine will.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr5-e-two-foot-answer"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr5-e-two-foot-answer",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr5-p-044",
+          "locator": "Krīḍā 44.1–12; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "Kīrti asks how the Śakti-born Dhundhirāja can stand with a foot at Tuṇḍana while holding the demon in Vārāṇasī. Gṛtsamada answers through the Lord’s unlimited cosmic form: feet through seven nether regions, head in heaven, hands/feet/eyes/ears everywhere, universes in the hair pores, beyond gods’ and sages’ complete knowledge. Even nectar and poison can exchange effects by his will. He urges abandoning doubt and hearing the sin-removing account. This is the source’s theological answer, not a modern geographical identification.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation5 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gup2-en-001",
+      "name": "Gṛtsamada",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup2-e-006",
+        "gup2-e-007",
+        "gup2-e-008",
+        "gup2-e-009",
+        "gup2-e-010",
+        "gup2-e-011",
+        "gup2-e-012",
+        "gup2-e-013",
+        "gup2-e-014",
+        "gup2-e-015",
+        "gup2-e-016",
+        "gup2-e-017",
+        "gup2-e-018",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-grtsamada-sami-teaching",
+        "gkr4-e-aurava-fire-saunaka",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-kirti-frame-close",
+        "gkr4-e-child-name-request",
+        "gkr5-e-two-foot-answer",
+        "gkr5-e-siva-prayer-install-mukti",
+        "gkr5-e-kirti-pilgrimage",
+        "gkr5-e-kirti-renewed-request"
+      ]
+    },
+    {
+      "id": "gkr4-en-kirti32",
+      "name": "Kīrti, Priyavrata’s first wife",
+      "type": "DEVOTEE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family",
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-kirti-son-poison",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-kirti-frame-close",
+        "gkr4-e-child-name-request",
+        "gkr5-e-two-foot-answer",
+        "gkr5-e-kirti-pilgrimage",
+        "gkr5-e-kirti-renewed-request",
+        "gkr5-e-kirti-home-coronation"
+      ]
+    },
+    {
+      "id": "gkr4-en-vakratunda40",
+      "name": "Vakratunda, Pārvatī-radiance manifestation against Durāsada",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [
+        {
+          "name": "Vināyaka",
+          "evidence_ids": [
+            "gkr4-e-vakra-radiance-emergence"
+          ]
+        },
+        {
+          "name": "Gajānana",
+          "evidence_ids": [
+            "gkr4-e-vakra-radiance-emergence"
+          ]
+        },
+        {
+          "name": "Dhundhirāja",
+          "evidence_ids": [
+            "gkr4-e-dhundhiraja-name-aftermath"
+          ]
+        },
+        {
+          "name": "Dhundhi",
+          "evidence_ids": [
+            "gkr4-e-dhundhiraja-name-aftermath"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "gkr4-e-vakra-radiance-emergence",
+        "gkr4-e-vakra-accepts-mission",
+        "gkr4-e-axe-sword-wrestling",
+        "gkr4-e-astra-counters",
+        "gkr4-e-fiftysix-army-counter",
+        "gkr4-e-durasada-restraint-surrender",
+        "gkr4-e-dhundhiraja-name-aftermath",
+        "gkr5-e-two-foot-answer",
+        "gkr5-e-dhundhi-mission",
+        "gkr5-e-astrologer-powers",
+        "gkr5-e-siva-return-hymn",
+        "gkr5-e-kirti-pilgrimage",
+        "gkr5-e-kirti-renewed-request",
+        "gkr5-e-son-grant-axe-name"
+      ],
+      "notes": "DistinctfromKaśyapa/AditichildVināyakaandTretāsynopsisMayūreśvara."
+    },
+    {
+      "id": "gkr4-en-ekapada42",
+      "name": "Eka-pāda Vināyaka at Tuṇḍana",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-durasada-restraint-surrender",
+        "gkr5-e-two-foot-answer"
+      ],
+      "notes": "42.35 manifestation designation; relation of two-place feet awaits44explanation."
+    }
+  ],
+  "event_evidence_relationships": [],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "gkr5-power-dhundhi-cosmic-capacity",
+      "type": "POWER",
+      "recipient_id": "gkr4-en-vakratunda40",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr5-e-two-foot-answer"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "Gṛtsamada’s attributed theological answer, not ordinary geographical or physical mechanics.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "Unlimited cosmic form permits presence at both places and alterations of nectar/poison effects.",
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr5-e-two-foot-answer"
+        ],
+        "mechanism": [
+          "gkr5-e-two-foot-answer"
+        ]
+      }
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [],
+  "linked_entities": [
+    {
+      "id": "gup2-en-001",
+      "name": "Gṛtsamada",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup2-e-006",
+        "gup2-e-007",
+        "gup2-e-008",
+        "gup2-e-009",
+        "gup2-e-010",
+        "gup2-e-011",
+        "gup2-e-012",
+        "gup2-e-013",
+        "gup2-e-014",
+        "gup2-e-015",
+        "gup2-e-016",
+        "gup2-e-017",
+        "gup2-e-018",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-grtsamada-sami-teaching",
+        "gkr4-e-aurava-fire-saunaka",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-kirti-frame-close",
+        "gkr4-e-child-name-request",
+        "gkr5-e-two-foot-answer",
+        "gkr5-e-siva-prayer-install-mukti",
+        "gkr5-e-kirti-pilgrimage",
+        "gkr5-e-kirti-renewed-request"
+      ]
+    },
+    {
+      "id": "gkr4-en-kirti32",
+      "name": "Kīrti, Priyavrata’s first wife",
+      "type": "DEVOTEE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-priyavrata-family",
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-kirti-son-poison",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-kirti-frame-close",
+        "gkr4-e-child-name-request",
+        "gkr5-e-two-foot-answer",
+        "gkr5-e-kirti-pilgrimage",
+        "gkr5-e-kirti-renewed-request",
+        "gkr5-e-kirti-home-coronation"
+      ]
+    },
+    {
+      "id": "gkr4-en-vakratunda40",
+      "name": "Vakratunda, Pārvatī-radiance manifestation against Durāsada",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [
+        {
+          "name": "Vināyaka",
+          "evidence_ids": [
+            "gkr4-e-vakra-radiance-emergence"
+          ]
+        },
+        {
+          "name": "Gajānana",
+          "evidence_ids": [
+            "gkr4-e-vakra-radiance-emergence"
+          ]
+        },
+        {
+          "name": "Dhundhirāja",
+          "evidence_ids": [
+            "gkr4-e-dhundhiraja-name-aftermath"
+          ]
+        },
+        {
+          "name": "Dhundhi",
+          "evidence_ids": [
+            "gkr4-e-dhundhiraja-name-aftermath"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "gkr4-e-vakra-radiance-emergence",
+        "gkr4-e-vakra-accepts-mission",
+        "gkr4-e-axe-sword-wrestling",
+        "gkr4-e-astra-counters",
+        "gkr4-e-fiftysix-army-counter",
+        "gkr4-e-durasada-restraint-surrender",
+        "gkr4-e-dhundhiraja-name-aftermath",
+        "gkr5-e-two-foot-answer",
+        "gkr5-e-dhundhi-mission",
+        "gkr5-e-astrologer-powers",
+        "gkr5-e-siva-return-hymn",
+        "gkr5-e-kirti-pilgrimage",
+        "gkr5-e-kirti-renewed-request",
+        "gkr5-e-son-grant-axe-name"
+      ],
+      "notes": "DistinctfromKaśyapa/AditichildVināyakaandTretāsynopsisMayūreśvara."
+    },
+    {
+      "id": "gkr4-en-ekapada42",
+      "name": "Eka-pāda Vināyaka at Tuṇḍana",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr4-e-durasada-restraint-surrender",
+        "gkr5-e-two-foot-answer"
+      ],
+      "notes": "42.35 manifestation designation; relation of two-place feet awaits44explanation."
+    }
+  ],
+  "linked_entity_note": "Includes event participants and related claim endpoints. Entity metadata can cite other retained source passages; the complete graph carries those references."
+}

@@ -1,0 +1,1434 @@
+{
+  "checkpoint": "continuation3",
+  "completed_arc_id": "mud4-story-priyavrata-rule-retirement",
+  "graph_sha256": "cecbec8daa706000cb98923d6b48e16119667f17c4f6fce4acf05de2b7a7a376",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checking complete; selective independent review in separate bounded reports, not universal certification.",
+  "story": {
+    "id": "mud4-story-priyavrata-rule-retirement",
+    "title": "Nārada instructs Priyavrata to rule before forest yoga",
+    "source_id": "gp-src-mudgala",
+    "witness_id": "gp-wit-sd-mudgala-2",
+    "scope": "2.9.6–44;2.10.1–9",
+    "event_ids": [
+      "mud4-event-priyavrata-duties",
+      "mud4-event-priyavrata-ganesa-initiation",
+      "mud4-event-manu-retirement-rule",
+      "mud4-event-priyavrata-sons-retirement"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Whole bounded9.6–10.9 narrative read and family/elder relation, Nārada duties and initiation, Manu retirement, Priyavrata rule/succession/retirement and final yoga outcome extracted. Further outer-island geography separate.",
+    "missing_sections": [],
+    "editorial_notes": "Source narration order. Embedded narratives have their own spines; parent records their framing transitions without duplicating events."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "mud4-event-priyavrata-duties",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-priyavrata-rule-retirement",
+        "sequence": 1,
+        "passage_ids": [
+          "mud4-p-priyavrata-duties"
+        ],
+        "participants": [
+          "rmd2-en-shaunaka",
+          "rmd2-en-suta",
+          "mud-en-daksha",
+          "mud-en-mudgala",
+          "mud4-en-svayambhuva",
+          "mud4-en-priyavrata",
+          "mud4-en-uttanapada",
+          "mud-en-narada"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Sūta resumes Manu offspring at Śaunaka’s request; Dakṣa asks their deeds. Manu’s fully dharmic sons are Priyavrata/Uttānapāda; ELDER Priyavrata sees bodily transience and goes to forest. Distressed Manu asks visiting Nārada to instruct him. Priyavrata rises/bows at Nārada’s arrival. Nārada affirms transience but says human body owes three debts and sustains world through dharmic acts: gods by yajña, ancestors by śrāddha, human debt by progeny. He urges rule first, discharge debts, establish sons in kingdom, then go to forest for yoga. Affectionate son address is teacher speech, not replacing Manu parentage.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-priyavrata-duties"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-priyavrata-duties",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-priyavrata-duties",
+          "locator": "Mudgala2.9.6–23",
+          "paraphrase": "Sūta resumes Manu offspring at Śaunaka’s request; Dakṣa asks their deeds. Manu’s fully dharmic sons are Priyavrata/Uttānapāda; ELDER Priyavrata sees bodily transience and goes to forest. Distressed Manu asks visiting Nārada to instruct him. Priyavrata rises/bows at Nārada’s arrival. Nārada affirms transience but says human body owes three debts and sustains world through dharmic acts: gods by yajña, ancestors by śrāddha, human debt by progeny. He urges rule first, discharge debts, establish sons in kingdom, then go to forest for yoga. Affectionate son address is teacher speech, not replacing Manu parentage.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud4-event-priyavrata-ganesa-initiation",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-priyavrata-rule-retirement",
+        "sequence": 2,
+        "passage_ids": [
+          "mud4-p-priyavrata-ganesa-initiation"
+        ],
+        "participants": [
+          "mud4-en-priyavrata",
+          "mud-en-narada",
+          "mud-en-vakratunda",
+          "rmd2-en-gunesha",
+          "mud-en-brahma",
+          "mud-en-vishnu",
+          "gp-m-en-siva",
+          "mud-en-surya",
+          "mud-en-shakti",
+          "mud3-en-ekaksara-mantra"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Priyavrata asks Nārada how one attains Brahman. Nārada teaches Gaṇeśa as yoga/lord of groups: outer/inner groups such as food are Brahman, their lord grants peace. He calls Gaṇeśa family deity, says ancestor Guṇeśa worshipped him to become Brahman; Brahmā/Viṣṇu/Śiva/Sun/Śakti are Guṇeśa sons who worshipped for peace; Brahmā’s sons including his speaking group became liberated/all-knowing yogins by worship. Priyavrata should worship too. He gives him one-syllable mantra and all Gaṇeśa worship instruction.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-priyavrata-ganesa-initiation"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-priyavrata-ganesa-initiation",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-priyavrata-ganesa-initiation",
+          "locator": "Mudgala2.9.24–37",
+          "paraphrase": "Priyavrata asks Nārada how one attains Brahman. Nārada teaches Gaṇeśa as yoga/lord of groups: outer/inner groups such as food are Brahman, their lord grants peace. He calls Gaṇeśa family deity, says ancestor Guṇeśa worshipped him to become Brahman; Brahmā/Viṣṇu/Śiva/Sun/Śakti are Guṇeśa sons who worshipped for peace; Brahmā’s sons including his speaking group became liberated/all-knowing yogins by worship. Priyavrata should worship too. He gives him one-syllable mantra and all Gaṇeśa worship instruction.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud4-event-manu-retirement-rule",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-priyavrata-rule-retirement",
+        "sequence": 3,
+        "passage_ids": [
+          "mud4-p-manu-retirement-rule"
+        ],
+        "participants": [
+          "mud-en-brahma",
+          "mud4-en-svayambhuva",
+          "mud4-en-priyavrata",
+          "mud4-en-uttanapada",
+          "mud-en-vakratunda",
+          "mud4-en-qualified-hymn-users"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Brahmā and Manu arrive, sons bow. Brahmā again instructs grandson Priyavrata, who returns with Manu to city. Manu establishes TWO sons in rule, goes to forest and worships Gaṇeśa by yoga. Beyond five mind-grounds, leaving mind he becomes Brahman, attains peace-yoga, goes to Brahmaloka and remains worshipping Gaṇeśa. Priyavrata rules earth dharmically with policy/dāna/renunciation, wins fame; varṇa/āśrama people are content, truthful and devoted to duties.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-manu-retirement-rule"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-manu-retirement-rule",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-manu-retirement-rule",
+          "locator": "Mudgala2.9.38–44",
+          "paraphrase": "Brahmā and Manu arrive, sons bow. Brahmā again instructs grandson Priyavrata, who returns with Manu to city. Manu establishes TWO sons in rule, goes to forest and worships Gaṇeśa by yoga. Beyond five mind-grounds, leaving mind he becomes Brahman, attains peace-yoga, goes to Brahmaloka and remains worshipping Gaṇeśa. Priyavrata rules earth dharmically with policy/dāna/renunciation, wins fame; varṇa/āśrama people are content, truthful and devoted to duties.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud4-event-priyavrata-sons-retirement",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-priyavrata-rule-retirement",
+        "sequence": 4,
+        "passage_ids": [
+          "mud4-p-priyavrata-sons-retirement"
+        ],
+        "participants": [
+          "mud4-en-priyavrata",
+          "mud-en-narada",
+          "mud-en-vakratunda",
+          "mud4-en-agnidhra",
+          "mud4-en-idhmajihva",
+          "mud4-en-yajnabahu",
+          "mud4-en-vira",
+          "mud4-en-hiranyaretas",
+          "mud4-en-savana",
+          "mud4-en-ghrtaprstha",
+          "mud4-en-medhatithi",
+          "mud4-en-vitihotra",
+          "mud4-en-kavi",
+          "mud4-en-jambu",
+          "mud4-en-plaksa",
+          "mud4-en-salmala",
+          "mud4-en-kusa",
+          "mud4-en-kraunca-island",
+          "mud4-en-saka",
+          "mud4-en-puskara"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Priyavrata has10 powerful dharmic sons: Āgnīdhra,Idhmajihva,Yajñabāhu,Vīra,Hiraṇyaretas,Savana,Ghṛtapṛṣṭha,Medhātithi,Vītihotra,Kavi. Kavi/Savana/Vīra do not desire rule; he appoints seven others to Jambū/Plakṣa/Śālmala/Kuśa/Krauñca/Śāka/Puṣkara respectively. He then goes to forest, receives yoga from Nārada, becomes Gaṇapatya and finally Gaṇeśa-formed through yoga; source calls no comparable king past/future. Mother not specified here.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-priyavrata-sons-retirement"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-priyavrata-sons-retirement",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-priyavrata-sons-retirement",
+          "locator": "Mudgala2.10.1–9",
+          "paraphrase": "Priyavrata has10 powerful dharmic sons: Āgnīdhra,Idhmajihva,Yajñabāhu,Vīra,Hiraṇyaretas,Savana,Ghṛtapṛṣṭha,Medhātithi,Vītihotra,Kavi. Kavi/Savana/Vīra do not desire rule; he appoints seven others to Jambū/Plakṣa/Śālmala/Kuśa/Krauñca/Śāka/Puṣkara respectively. He then goes to forest, receives yoga from Nārada, becomes Gaṇapatya and finally Gaṇeśa-formed through yoga; source calls no comparable king past/future. Mother not specified here.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gp-m-en-siva",
+      "name": "Śiva / Śambhu / Sadāśiva / Śaṅkara",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-matsara-austerity",
+        "mud-e-divine-refuge",
+        "mud-e-andhaka-envoy",
+        "mud-e-matsara-karma-argument",
+        "mud-e-kailasa-battle",
+        "mud-e-matsara-captures-siva",
+        "mud-e-world-allocation",
+        "mud-e-datta-counsel",
+        "mud-e-vak-manifest",
+        "mud-e-siva-pasupata",
+        "mud-e-sons-fell-siva",
+        "mud-e-following-witness-previews",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-sati-request",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sati-death-rebirth",
+        "rmd2-e-shiva-grief",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-mahat-birth",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-body-worlds",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-daksha",
+      "name": "Dakṣa",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-five-emergence",
+        "mud2-e-field-benefits",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-mudgala",
+      "name": "Mudgala",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "rmd2-e-supremacy-question",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-five-emergence",
+        "mud2-e-field-benefits",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-brahma",
+      "name": "Brahmā",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-naimisha",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-assembly",
+        "mud2-e-yaj-arrives",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-vishnu",
+      "name": "Viṣṇu",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-senses-gods",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-surya",
+      "name": "Sūrya / Bhānu / Savitṛ",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-kailasa-battle",
+        "rmd2-e-invocation",
+        "rmd2-e-senses-gods",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-priyavrata-ganesa-initiation"
+      ]
+    },
+    {
+      "id": "mud-en-vakratunda",
+      "name": "Vakratunda / Gaṇeśa / Gaṇanāyaka / Vighnapa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "rmd2-e-invocation",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-tattva-boon",
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-tapas",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "rmd2-e-five-request-hymn-fruits",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-narada",
+      "name": "Nārada",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-festival-roster",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-sati-request",
+        "rmd2-e-shiva-grief",
+        "mud2-e-narada-mutual-curses",
+        "mud4-e-priyavrata-duties"
+      ]
+    },
+    {
+      "id": "mud-en-shakti",
+      "name": "Śakti (Brahmā’s pride speech)",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-brahma-pride",
+        "rmd2-e-invocation",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-daksha-daughter-grant-recollection"
+      ]
+    },
+    {
+      "id": "rmd2-en-shaunaka",
+      "name": "Śaunaka",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "rmd2-e-naimisha",
+        "rmd2-e-vyasa-training",
+        "rmd2-e-supremacy-question",
+        "rmd2-e-daksha-origin",
+        "mud3-e-five-deity-frame",
+        "mud2-e-field-layout",
+        "mud2-e-ekadanta-frame",
+        "mud4-e-soma-nourishing-grant"
+      ],
+      "notes": "Recurring Mudgala frame actor; both continuation IDs retained with explicit same_source_frame_actor_as link. Use rmd2-en-shaunaka in later opening-frame extraction."
+    },
+    {
+      "id": "rmd2-en-suta",
+      "name": "Sūta Romaharṣaṇa / Lomaharṣaṇa",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "rmd2-e-naimisha",
+        "rmd2-e-vyasa-training",
+        "rmd2-e-supremacy-question",
+        "rmd2-e-daksha-origin",
+        "mud3-e-five-deity-frame",
+        "mud2-e-field-layout",
+        "mud2-e-ekadanta-frame",
+        "mud4-e-soma-nourishing-grant"
+      ],
+      "notes": "Recurring Mudgala frame actor; both continuation IDs retained with explicit same_source_frame_actor_as link. Use rmd2-en-suta in later opening-frame extraction."
+    },
+    {
+      "id": "rmd2-en-gunesha",
+      "name": "Guṇeśa, cosmic egg-born lord of guṇas",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-eight-envelope",
+        "mud3-e-vak-bindu-explanation",
+        "mud4-e-priyavrata-ganesa-initiation"
+      ]
+    },
+    {
+      "id": "mud3-en-ekaksara-mantra",
+      "name": "One-syllable great Gaṇeśa mantra taught to Mudgala",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud3-e-mudgala-initiation-vision",
+        "mud4-e-atri-mind-siddhi-initiation"
+      ]
+    },
+    {
+      "id": "mud4-en-svayambhuva",
+      "name": "Svāyambhuva Manu",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-satarupa-kardama-origin"
+      ]
+    },
+    {
+      "id": "mud4-en-qualified-hymn-users",
+      "name": "Qualified users of continuation4 hymns/accounts",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-visnu-hymn-benefits"
+      ]
+    },
+    {
+      "id": "mud4-en-priyavrata",
+      "name": "Priyavrata",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ]
+    },
+    {
+      "id": "mud4-en-uttanapada",
+      "name": "Uttānapāda",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna"
+      ]
+    },
+    {
+      "id": "mud4-en-agnidhra",
+      "name": "Āgnīdhra (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-idhmajihva",
+      "name": "Idhmajihva (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-yajnabahu",
+      "name": "Yajñabāhu (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-vira",
+      "name": "Vīra (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-hiranyaretas",
+      "name": "Hiraṇyaretas (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-savana",
+      "name": "Savana (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-ghrtaprstha",
+      "name": "Ghṛtapṛṣṭha (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-medhatithi",
+      "name": "Medhātithi (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-vitihotra",
+      "name": "Vītihotra (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-kavi",
+      "name": "Kavi (Priyavrata son)",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-jambu",
+      "name": "Jambūdvīpa",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-plaksa",
+      "name": "Plakṣadvīpa",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-salmala",
+      "name": "Śālmaladvīpa",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-kusa",
+      "name": "Kuśadvīpa",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-kraunca-island",
+      "name": "Krauñcadvīpa",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-saka",
+      "name": "Śākadvīpa",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud4-en-puskara",
+      "name": "Puṣkaradvīpa",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "mud4-r-priyavrata-elder",
+      "subject_id": "mud4-en-priyavrata",
+      "predicate": "elder_sibling_of",
+      "object_id": "mud4-en-uttanapada",
+      "evidence_ids": [
+        "mud4-e-priyavrata-duties"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-priyavrata-elder"
+    },
+    {
+      "id": "mud4-r-priyavrata-narada-teacher",
+      "subject_id": "mud4-en-priyavrata",
+      "predicate": "disciple_of",
+      "object_id": "mud-en-narada",
+      "evidence_ids": [
+        "mud4-e-priyavrata-duties"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-priyavrata-narada-teacher"
+    },
+    {
+      "id": "mud4-r-priyavrata-one-initiation",
+      "subject_id": "mud4-en-priyavrata",
+      "predicate": "initiated_into",
+      "object_id": "mud3-en-ekaksara-mantra",
+      "evidence_ids": [
+        "mud4-e-priyavrata-ganesa-initiation"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-priyavrata-one-initiation"
+    },
+    {
+      "id": "mud4-r-narada-one-teacher",
+      "subject_id": "mud3-en-ekaksara-mantra",
+      "predicate": "taught_by",
+      "object_id": "mud-en-narada",
+      "evidence_ids": [
+        "mud4-e-priyavrata-ganesa-initiation"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-narada-one-teacher"
+    },
+    {
+      "id": "mud4-r-priyavrata-brahma-grandson",
+      "subject_id": "mud4-en-priyavrata",
+      "predicate": "grandchild_of",
+      "object_id": "mud-en-brahma",
+      "evidence_ids": [
+        "mud4-e-manu-retirement-rule"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-priyavrata-brahma-grandson",
+      "kinship_kind": "SOURCE_LOCAL_COSMOLOGICAL_LINEAGE"
+    },
+    {
+      "id": "mud4-r-narada-brahma-gunesha",
+      "subject_id": "mud-en-brahma",
+      "predicate": "described_by_narada_as_son_of",
+      "object_id": "rmd2-en-gunesha",
+      "evidence_ids": [
+        "mud4-e-priyavrata-ganesa-initiation"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-narada-brahma-gunesha",
+      "kinship_kind": "COSMOLOGICAL_ATTRIBUTION"
+    },
+    {
+      "id": "mud4-r-narada-visnu-gunesha",
+      "subject_id": "mud-en-vishnu",
+      "predicate": "described_by_narada_as_son_of",
+      "object_id": "rmd2-en-gunesha",
+      "evidence_ids": [
+        "mud4-e-priyavrata-ganesa-initiation"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-narada-visnu-gunesha",
+      "kinship_kind": "COSMOLOGICAL_ATTRIBUTION"
+    },
+    {
+      "id": "mud4-r-narada-siva-gunesha",
+      "subject_id": "gp-m-en-siva",
+      "predicate": "described_by_narada_as_son_of",
+      "object_id": "rmd2-en-gunesha",
+      "evidence_ids": [
+        "mud4-e-priyavrata-ganesa-initiation"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-narada-siva-gunesha",
+      "kinship_kind": "COSMOLOGICAL_ATTRIBUTION"
+    },
+    {
+      "id": "mud4-r-narada-surya-gunesha",
+      "subject_id": "mud-en-surya",
+      "predicate": "described_by_narada_as_son_of",
+      "object_id": "rmd2-en-gunesha",
+      "evidence_ids": [
+        "mud4-e-priyavrata-ganesa-initiation"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-narada-surya-gunesha",
+      "kinship_kind": "COSMOLOGICAL_ATTRIBUTION"
+    },
+    {
+      "id": "mud4-r-narada-sakti-gunesha",
+      "subject_id": "mud-en-shakti",
+      "predicate": "described_by_narada_as_son_of",
+      "object_id": "rmd2-en-gunesha",
+      "evidence_ids": [
+        "mud4-e-priyavrata-ganesa-initiation"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-narada-sakti-gunesha",
+      "kinship_kind": "COSMOLOGICAL_ATTRIBUTION"
+    },
+    {
+      "id": "mud4-r-agnidhra-priyavrata",
+      "subject_id": "mud4-en-agnidhra",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-agnidhra-priyavrata"
+    },
+    {
+      "id": "mud4-r-idhmajihva-priyavrata",
+      "subject_id": "mud4-en-idhmajihva",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-idhmajihva-priyavrata"
+    },
+    {
+      "id": "mud4-r-yajnabahu-priyavrata",
+      "subject_id": "mud4-en-yajnabahu",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-yajnabahu-priyavrata"
+    },
+    {
+      "id": "mud4-r-vira-priyavrata",
+      "subject_id": "mud4-en-vira",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-vira-priyavrata"
+    },
+    {
+      "id": "mud4-r-hiranyaretas-priyavrata",
+      "subject_id": "mud4-en-hiranyaretas",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-hiranyaretas-priyavrata"
+    },
+    {
+      "id": "mud4-r-savana-priyavrata",
+      "subject_id": "mud4-en-savana",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-savana-priyavrata"
+    },
+    {
+      "id": "mud4-r-ghrtaprstha-priyavrata",
+      "subject_id": "mud4-en-ghrtaprstha",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-ghrtaprstha-priyavrata"
+    },
+    {
+      "id": "mud4-r-medhatithi-priyavrata",
+      "subject_id": "mud4-en-medhatithi",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-medhatithi-priyavrata"
+    },
+    {
+      "id": "mud4-r-vitihotra-priyavrata",
+      "subject_id": "mud4-en-vitihotra",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-vitihotra-priyavrata"
+    },
+    {
+      "id": "mud4-r-kavi-priyavrata",
+      "subject_id": "mud4-en-kavi",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-kavi-priyavrata"
+    },
+    {
+      "id": "mud4-r-agnidhra-island-rule",
+      "subject_id": "mud4-en-agnidhra",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-jambu",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-agnidhra-island-rule"
+    },
+    {
+      "id": "mud4-r-idhmajihva-island-rule",
+      "subject_id": "mud4-en-idhmajihva",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-plaksa",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-idhmajihva-island-rule"
+    },
+    {
+      "id": "mud4-r-yajnabahu-island-rule",
+      "subject_id": "mud4-en-yajnabahu",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-salmala",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-yajnabahu-island-rule"
+    },
+    {
+      "id": "mud4-r-hiranyaretas-island-rule",
+      "subject_id": "mud4-en-hiranyaretas",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-kusa",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-hiranyaretas-island-rule"
+    },
+    {
+      "id": "mud4-r-ghrtaprstha-island-rule",
+      "subject_id": "mud4-en-ghrtaprstha",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-kraunca-island",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-ghrtaprstha-island-rule"
+    },
+    {
+      "id": "mud4-r-medhatithi-island-rule",
+      "subject_id": "mud4-en-medhatithi",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-saka",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-medhatithi-island-rule"
+    },
+    {
+      "id": "mud4-r-vitihotra-island-rule",
+      "subject_id": "mud4-en-vitihotra",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-puskara",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-vitihotra-island-rule"
+    }
+  ],
+  "event_evidence_boons_and_powers": [],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "mud4-a-priyavrata-elder",
+      "subject_id": "mud4-en-priyavrata",
+      "predicate": "elder_sibling_of",
+      "object_id": "mud4-en-uttanapada",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-duties"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-priyavrata-narada-teacher",
+      "subject_id": "mud4-en-priyavrata",
+      "predicate": "disciple_of",
+      "object_id": "mud-en-narada",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-duties"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-narada-three-debts",
+      "subject_id": "mud-en-narada",
+      "predicate": "teaches",
+      "object_id": null,
+      "value": "Divine debt yajña; ancestral debt śrāddha; human debt progeny; rule then sons’ succession then forest yoga",
+      "evidence_ids": [
+        "mud4-e-priyavrata-duties"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-priyavrata-one-initiation",
+      "subject_id": "mud4-en-priyavrata",
+      "predicate": "initiated_into",
+      "object_id": "mud3-en-ekaksara-mantra",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-ganesa-initiation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-narada-one-teacher",
+      "subject_id": "mud3-en-ekaksara-mantra",
+      "predicate": "taught_by",
+      "object_id": "mud-en-narada",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-ganesa-initiation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-narada-cosmic-family",
+      "subject_id": "mud-en-narada",
+      "predicate": "attributed_teaching",
+      "object_id": null,
+      "value": "Guṇeśa ancestor worships Gaṇeśa; five gods Guṇeśa sons; Brahmā sons practice likewise. Cosmological teacher genealogy, not generic biological claims",
+      "evidence_ids": [
+        "mud4-e-priyavrata-ganesa-initiation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-priyavrata-brahma-grandson",
+      "subject_id": "mud4-en-priyavrata",
+      "predicate": "grandchild_of",
+      "object_id": "mud-en-brahma",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-manu-retirement-rule"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-manu-retirement",
+      "subject_id": "mud4-en-svayambhuva",
+      "predicate": "outcome",
+      "object_id": null,
+      "value": "Establishes both sons in rule, forest yoga beyond five grounds, Brahman/peace, Brahmaloka continuing worship",
+      "evidence_ids": [
+        "mud4-e-manu-retirement-rule"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-narada-brahma-gunesha",
+      "subject_id": "mud-en-brahma",
+      "predicate": "described_by_narada_as_son_of",
+      "object_id": "rmd2-en-gunesha",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-ganesa-initiation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-narada-visnu-gunesha",
+      "subject_id": "mud-en-vishnu",
+      "predicate": "described_by_narada_as_son_of",
+      "object_id": "rmd2-en-gunesha",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-ganesa-initiation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-narada-siva-gunesha",
+      "subject_id": "gp-m-en-siva",
+      "predicate": "described_by_narada_as_son_of",
+      "object_id": "rmd2-en-gunesha",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-ganesa-initiation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-narada-surya-gunesha",
+      "subject_id": "mud-en-surya",
+      "predicate": "described_by_narada_as_son_of",
+      "object_id": "rmd2-en-gunesha",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-ganesa-initiation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-narada-sakti-gunesha",
+      "subject_id": "mud-en-shakti",
+      "predicate": "described_by_narada_as_son_of",
+      "object_id": "rmd2-en-gunesha",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-ganesa-initiation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-agnidhra-priyavrata",
+      "subject_id": "mud4-en-agnidhra",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-idhmajihva-priyavrata",
+      "subject_id": "mud4-en-idhmajihva",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-yajnabahu-priyavrata",
+      "subject_id": "mud4-en-yajnabahu",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-vira-priyavrata",
+      "subject_id": "mud4-en-vira",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-hiranyaretas-priyavrata",
+      "subject_id": "mud4-en-hiranyaretas",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-savana-priyavrata",
+      "subject_id": "mud4-en-savana",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-ghrtaprstha-priyavrata",
+      "subject_id": "mud4-en-ghrtaprstha",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-medhatithi-priyavrata",
+      "subject_id": "mud4-en-medhatithi",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-vitihotra-priyavrata",
+      "subject_id": "mud4-en-vitihotra",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-kavi-priyavrata",
+      "subject_id": "mud4-en-kavi",
+      "predicate": "child_of",
+      "object_id": "mud4-en-priyavrata",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-agnidhra-island-rule",
+      "subject_id": "mud4-en-agnidhra",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-jambu",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-idhmajihva-island-rule",
+      "subject_id": "mud4-en-idhmajihva",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-plaksa",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-yajnabahu-island-rule",
+      "subject_id": "mud4-en-yajnabahu",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-salmala",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-hiranyaretas-island-rule",
+      "subject_id": "mud4-en-hiranyaretas",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-kusa",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-ghrtaprstha-island-rule",
+      "subject_id": "mud4-en-ghrtaprstha",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-kraunca-island",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-medhatithi-island-rule",
+      "subject_id": "mud4-en-medhatithi",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-saka",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-vitihotra-island-rule",
+      "subject_id": "mud4-en-vitihotra",
+      "predicate": "appointed_ruler_of",
+      "object_id": "mud4-en-puskara",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-kavi-rule-refusal",
+      "subject_id": "mud4-en-kavi",
+      "predicate": "disposition",
+      "object_id": null,
+      "value": "Does not desire kingdom",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-savana-rule-refusal",
+      "subject_id": "mud4-en-savana",
+      "predicate": "disposition",
+      "object_id": null,
+      "value": "Does not desire kingdom",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-vira-rule-refusal",
+      "subject_id": "mud4-en-vira",
+      "predicate": "disposition",
+      "object_id": null,
+      "value": "Does not desire kingdom",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-priyavrata-final-yoga",
+      "subject_id": "mud4-en-priyavrata",
+      "predicate": "outcome",
+      "object_id": null,
+      "value": "After appointing seven sons, forest yoga from Nārada, Gaṇapatya and finally Gaṇeśa-formed; no remembered road/ocean-creation episode inserted",
+      "evidence_ids": [
+        "mud4-e-priyavrata-sons-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ]
+}

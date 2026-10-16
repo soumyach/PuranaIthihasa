@@ -1,0 +1,1917 @@
+{
+  "record_update_ids": [
+    "continuation5-change-0157",
+    "continuation5-change-0158",
+    "continuation5-change-0159",
+    "continuation5-change-0160",
+    "continuation5-change-0161",
+    "continuation5-change-0162",
+    "continuation5-change-0163",
+    "continuation5-change-0164",
+    "continuation5-change-0165",
+    "continuation5-change-0166",
+    "continuation5-change-0167",
+    "continuation5-change-0168",
+    "continuation5-change-0169",
+    "continuation5-change-0170",
+    "continuation5-change-0171",
+    "continuation5-change-0172"
+  ],
+  "finding_resolutions": [
+    {
+      "finding_id": "gkr6-review-mud6-dhruva-tapas-duration-placement",
+      "author_status": "CORRECTION_REQUIRED",
+      "current_resolution": "APPLIED_WITH_DOCUMENTED_CHANGE",
+      "change_record_ids": [
+        "continuation5-change-0157"
+      ],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "boons_and_powers",
+          "record": {
+            "id": "mud6-power-dhruva-visnu-grant",
+            "type": "BOON",
+            "recipient_id": "mud5-en-dhruva",
+            "grantor_id": "mud-en-vishnu",
+            "worshipped_id": "mud-en-vishnu",
+            "later_event_ids": [],
+            "evidence_ids": [
+              "mud6-e-dhruva-family-visnu-tapas"
+            ],
+            "field_evidence": {
+              "recipient_id": [
+                "mud6-e-dhruva-family-visnu-tapas"
+              ],
+              "grantor_id": [
+                "mud6-e-dhruva-family-visnu-tapas"
+              ],
+              "worshipped_id": [
+                "mud6-e-dhruva-family-visnu-tapas"
+              ],
+              "austerity_or_circumstances": [
+                "mud6-e-dhruva-family-visnu-tapas"
+              ],
+              "granted": [
+                "mud6-e-dhruva-family-visnu-tapas"
+              ],
+              "notes": [
+                "mud6-e-dhruva-family-visnu-tapas"
+              ]
+            },
+            "verification_status": "VERIFIED",
+            "notes": "Request words not narrated; grant is explicit. Future abode separated from earthly return and later actual end. The 1,000-year span is ascetic practice before the appearance, not a stated duration of the granted sovereignty or abode; grant duration is unstated.",
+            "motive": null,
+            "austerity_or_circumstances": "Nārada’s twelve-syllable initiation; meditation in Mathurā and severe Viṣṇu tapas for 1,000 years (verse 9).",
+            "requested": null,
+            "granted": "Undivided Earth kingship; at end heavenly kingship/Viṣṇu Dhruva-form abode(10).",
+            "mechanism": null,
+            "trigger": null,
+            "restrictions": null,
+            "duration": null,
+            "counter": null
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "gkr6-review-mud6-dhruva-site-duration",
+      "author_status": "UNDETERMINED",
+      "current_resolution": "RETAINED_PENDING",
+      "change_record_ids": [],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "narrative_events",
+          "record": {
+            "id": "mud6-event-dhruva-vinayaka-site-clear",
+            "source_id": "gp-src-mudgala",
+            "witness_id": "gp-wit-sd-mudgala-2",
+            "supporting_witness_ids": [
+              "gp-wit-sd-mudgala-2"
+            ],
+            "story_id": "mud6-story-dhruva-journey",
+            "sequence": 4,
+            "passage_ids": [
+              "mud6-p-dhruva-vinayaka-site-clear"
+            ],
+            "participants": [
+              "mud5-en-dhruva",
+              "mud6-en-dhruvavinayaka",
+              "mud6-en-dhruvavinayaka-temple",
+              "mud6-en-dhruva-mantra-brahmins",
+              "mud4-en-mayuresa-field",
+              "mud-en-vakratunda"
+            ],
+            "setting": null,
+            "cause": null,
+            "details": "With mantra-knowing Brahmins Dhruva installs Gaṇeśa, builds extensive costly temple with golden pinnacle and worships devotedly. He names deity Dhruvavināyaka.29 gives half-krośa distance from Gaṇeśa but printed nāpūrvadvārasamīpagam direction clause unresolved.31 residence duration varṣamāsaṃ also not securely normalized.",
+            "outcome": null,
+            "changed_relationship_ids": [],
+            "introduced_entity_ids": [],
+            "introduced_power_ids": [],
+            "consequences": [],
+            "evidence_ids": [
+              "mud6-e-dhruva-vinayaka-site-clear"
+            ],
+            "verification_status": "VERIFIED"
+          }
+        },
+        {
+          "table": "story_spines",
+          "record": {
+            "id": "mud6-story-dhruva-journey",
+            "title": "Dhruva’s family,Viṣṇu tapas,kingship,Gaṇeśa conditions and final Svānanda",
+            "source_id": "gp-src-mudgala",
+            "witness_id": "gp-wit-sd-mudgala-2",
+            "scope": "2.23.1–34",
+            "event_ids": [
+              "mud6-event-dhruva-family-visnu-tapas",
+              "mud6-event-uttanapada-six-mantra-end",
+              "mud6-event-dhruva-visnu-message-one-mantra",
+              "mud6-event-dhruva-vinayaka-site-clear",
+              "mud6-event-dhruva-actual-end-benefits"
+            ],
+            "status": "PARTIAL",
+            "completeness_basis": "Partial source-order extraction; precise continuation recorded.",
+            "missing_sections": [
+              "29 precise installation direction; 31 exact residence duration."
+            ],
+            "editorial_notes": "Source narration order. Embedded narratives have their own spines; parent records their framing transitions without duplicating events."
+          }
+        },
+        {
+          "table": "evidence",
+          "record": {
+            "id": "mud6-e-dhruva-vinayaka-site-clear",
+            "source_id": "gp-src-mudgala",
+            "witness_id": "gp-wit-sd-mudgala-2",
+            "passage_id": "mud6-p-dhruva-vinayaka-site-clear",
+            "locator": "Mudgala2.23.29–31",
+            "paraphrase": "With mantra-knowing Brahmins Dhruva installs Gaṇeśa, builds extensive costly temple with golden pinnacle and worships devotedly. He names deity Dhruvavināyaka.29 gives half-krośa distance from Gaṇeśa but printed nāpūrvadvārasamīpagam direction clause unresolved.31 residence duration varṣamāsaṃ also not securely normalized.",
+            "classification": "DIRECT_TEXT",
+            "verification_status": "VERIFIED",
+            "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+            "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+          }
+        },
+        {
+          "table": "evidence",
+          "record": {
+            "id": "mud6-e-dhruva-location-duration-raw",
+            "source_id": "gp-src-mudgala",
+            "witness_id": "gp-wit-sd-mudgala-2",
+            "passage_id": "mud6-p-dhruva-location-duration-raw",
+            "locator": "Mudgala2.23.29–31",
+            "paraphrase": "Printed nāpūrvadvārasamīpagam in 29 and varṣamāsaṃ residence in 31 retained without emending direction or deciding year/month duration.",
+            "classification": "DIRECT_TEXT",
+            "verification_status": "NEEDS_REVIEW",
+            "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+            "verification_notes": "No modern location or imported conventional duration."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "gup6-review-mud6-02",
+      "author_status": "CORRECTION_NEEDED",
+      "current_resolution": "APPLIED_WITH_DOCUMENTED_CHANGE",
+      "change_record_ids": [
+        "continuation5-change-0159",
+        "continuation5-change-0160"
+      ],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "narrative_events",
+          "record": {
+            "id": "mud6-event-prthu-peace-request",
+            "source_id": "gp-src-mudgala",
+            "witness_id": "gp-wit-sd-mudgala-2",
+            "supporting_witness_ids": [
+              "gp-wit-sd-mudgala-2"
+            ],
+            "story_id": "mud6-story-prthu-peace",
+            "sequence": 2,
+            "passage_ids": [
+              "mud6-p-prthu-peace-request"
+            ],
+            "participants": [
+              "mud6-en-prthu",
+              "mud2-en-four-kumaras",
+              "mud-en-vakratunda"
+            ],
+            "setting": null,
+            "cause": null,
+            "details": "Pleased by humility, Kumāras say they desire no task and are naked, have come because they heard king’s fame in heaven, and ask permission to return Brahmaloka. Pṛthu says he has enjoyed kingdom/varied pleasures and now asks yoga for peace. Recognizing qualification/disenchantment, they teach that full Gaṇeśa yoga-peace is to be worshipped with great devotion for peace. This is teacher exchange, not a direct new Gaṇeśa appearance.",
+            "outcome": null,
+            "changed_relationship_ids": [],
+            "introduced_entity_ids": [],
+            "introduced_power_ids": [],
+            "consequences": [],
+            "evidence_ids": [
+              "mud6-e-prthu-peace-request"
+            ],
+            "verification_status": "VERIFIED"
+          }
+        },
+        {
+          "table": "evidence",
+          "record": {
+            "id": "mud6-e-prthu-peace-request",
+            "source_id": "gp-src-mudgala",
+            "witness_id": "gp-wit-sd-mudgala-2",
+            "passage_id": "mud6-p-prthu-peace-request",
+            "locator": "Mudgala2.25.13–21",
+            "paraphrase": "Pleased by humility, Kumāras say they desire no task and are naked, have come because they heard king’s fame in heaven, and ask permission to return Brahmaloka. Pṛthu says he has enjoyed kingdom/varied pleasures and now asks yoga for peace. Recognizing qualification/disenchantment, they teach that full Gaṇeśa yoga-peace is to be worshipped with great devotion for peace. This is teacher exchange, not a direct new Gaṇeśa appearance.",
+            "classification": "DIRECT_TEXT",
+            "verification_status": "VERIFIED",
+            "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+            "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "gup6-review-mud6-06",
+      "author_status": "CORRECTION_NEEDED",
+      "current_resolution": "APPLIED_WITH_DOCUMENTED_CHANGE",
+      "change_record_ids": [
+        "continuation5-change-0161",
+        "continuation5-change-0162",
+        "continuation5-change-0163"
+      ],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "boons_and_powers",
+          "record": {
+            "id": "mud6-power-kumaras-child-hymn-benefits",
+            "type": "POWER",
+            "recipient_id": "mud6-en-kumaras-hymn-users",
+            "grantor_id": "mud6-en-kasyapa-child-vinayaka",
+            "worshipped_id": null,
+            "later_event_ids": [],
+            "evidence_ids": [
+              "mud6-e-child-hymn-promises-kumaras-return"
+            ],
+            "field_evidence": {
+              "recipient_id": [
+                "mud6-e-child-hymn-promises-kumaras-return"
+              ],
+              "grantor_id": [
+                "mud6-e-child-hymn-promises-kumaras-return"
+              ],
+              "trigger": [
+                "mud6-e-child-hymn-promises-kumaras-return"
+              ],
+              "granted": [
+                "mud6-e-child-hymn-promises-kumaras-return"
+              ],
+              "notes": [
+                "mud6-e-child-hymn-promises-kumaras-return"
+              ],
+              "mechanism": [
+                "mud6-e-child-hymn-promises-kumaras-return"
+              ]
+            },
+            "verification_status": "VERIFIED",
+            "notes": "Vināyaka speech in recollection, not Pṛthu request/new king apparition. The deity’s hymn-moved state is not an additional emotional requirement imposed on readers or hearers.",
+            "motive": null,
+            "austerity_or_circumstances": null,
+            "requested": null,
+            "granted": "Yoga-peace and desired benefits(57–58).",
+            "mechanism": "Vināyaka promises the desired object while himself moved by the hymn (verse 58).",
+            "trigger": "Reading or hearing the hymn (verse 57).",
+            "restrictions": null,
+            "duration": null,
+            "counter": null
+          }
+        },
+        {
+          "table": "narrative_events",
+          "record": {
+            "id": "mud6-event-child-hymn-promises-kumaras-return",
+            "source_id": "gp-src-mudgala",
+            "witness_id": "gp-wit-sd-mudgala-2",
+            "supporting_witness_ids": [
+              "gp-wit-sd-mudgala-2"
+            ],
+            "story_id": "mud6-story-prthu-peace",
+            "sequence": 8,
+            "passage_ids": [
+              "mud6-p-child-hymn-promises-kumaras-return"
+            ],
+            "participants": [
+              "mud2-en-four-kumaras",
+              "mud6-en-kasyapa-child-vinayaka",
+              "mud6-en-kumaras-unnamed-kasi-king",
+              "mud6-en-vinayaka-child-companions",
+              "mud2-en-kashi",
+              "mud6-en-prthu",
+              "mud-en-vakratunda",
+              "mud6-en-kumaras-hymn-users"
+            ],
+            "setting": null,
+            "cause": null,
+            "details": "Kumāras fall silent/prostrate; devotion-bound child Vināyaka says hymn gives yoga-peace to readers/hearers and he will give the desired object while himself moved by the hymn; Kumāras will become Gaṇapatyas like Śiva. No request words or Pṛthu-directed boon here. Child then plays with children like ordinary child. Kumāras visit Kāśī king, are honored, eat and return to their place. They conclude Pṛthu should worship Gaṇeśa as full peace-knowledge.",
+            "outcome": null,
+            "changed_relationship_ids": [],
+            "introduced_entity_ids": [],
+            "introduced_power_ids": [
+              "mud6-power-kumaras-child-hymn-benefits",
+              "mud6-power-kumaras-ganapatya-promise"
+            ],
+            "consequences": [],
+            "evidence_ids": [
+              "mud6-e-child-hymn-promises-kumaras-return"
+            ],
+            "verification_status": "VERIFIED"
+          }
+        },
+        {
+          "table": "evidence",
+          "record": {
+            "id": "mud6-e-child-hymn-promises-kumaras-return",
+            "source_id": "gp-src-mudgala",
+            "witness_id": "gp-wit-sd-mudgala-2",
+            "passage_id": "mud6-p-child-hymn-promises-kumaras-return",
+            "locator": "Mudgala2.25.56–61",
+            "paraphrase": "Kumāras fall silent/prostrate; devotion-bound child Vināyaka says hymn gives yoga-peace to readers/hearers and he will give the desired object while himself moved by the hymn; Kumāras will become Gaṇapatyas like Śiva. No request words or Pṛthu-directed boon here. Child then plays with children like ordinary child. Kumāras visit Kāśī king, are honored, eat and return to their place. They conclude Pṛthu should worship Gaṇeśa as full peace-knowledge.",
+            "classification": "DIRECT_TEXT",
+            "verification_status": "VERIFIED",
+            "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+            "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "gup6-review-mud6-11",
+      "author_status": "UNDETERMINED",
+      "current_resolution": "RETAINED_PENDING",
+      "change_record_ids": [],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "assertions",
+          "record": {
+            "id": "mud6-a-barhis-own-state-raw",
+            "subject_id": "mud-en-narada",
+            "predicate": "unresolved_attributed_clause",
+            "object_id": null,
+            "value": "स्वस्वस्थानकरूपस्थैश्चर्यरूपो महीपते(25)",
+            "evidence_ids": [
+              "mud6-e-barhis-own-state-raw"
+            ],
+            "verification_status": "NEEDS_REVIEW"
+          }
+        },
+        {
+          "table": "evidence",
+          "record": {
+            "id": "mud6-e-barhis-own-state-raw",
+            "source_id": "gp-src-mudgala",
+            "witness_id": "gp-wit-sd-mudgala-2",
+            "passage_id": "mud6-p-barhis-own-state-raw",
+            "locator": "Mudgala2.26.25–25",
+            "paraphrase": "Own-state/sovereignty wording स्वस्वस्थानकरूपस्थैश्चर्यरूपो in 25 is retained raw; precise state-to-delusion-to-sovereignty relation not normalized.",
+            "classification": "DIRECT_TEXT",
+            "verification_status": "NEEDS_REVIEW",
+            "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+            "verification_notes": "Dense philosophical compound, not a character or biological family claim."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "gup6-review-mud6-13",
+      "author_status": "UNDETERMINED",
+      "current_resolution": "RETAINED_PENDING",
+      "change_record_ids": [],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "assertions",
+          "record": {
+            "id": "mud6-a-barhis-arising-raw",
+            "subject_id": "mud-en-narada",
+            "predicate": "unresolved_attributed_sequence",
+            "object_id": null,
+            "value": "तद्योगे स्वत उत्थानं ब्रह्म वेदे प्रतिष्ठितम् । सत्यं परत उत्थानरूपं सौख्यमयं परम्(33)",
+            "evidence_ids": [
+              "mud6-e-barhis-arising-raw"
+            ],
+            "verification_status": "NEEDS_REVIEW"
+          }
+        },
+        {
+          "table": "story_spines",
+          "record": {
+            "id": "mud6-story-barhis-teaching",
+            "title": "Prācīnabarhis family,karma warning,fivefold mind/yoga teaching and final merger",
+            "source_id": "gp-src-mudgala",
+            "witness_id": "gp-wit-sd-mudgala-2",
+            "scope": "2.26.1–45",
+            "event_ids": [
+              "mud6-event-barhis-family-pracetas-tapas",
+              "mud6-event-narada-sacrifice-warning-request",
+              "mud6-event-narada-five-citta-definitions",
+              "mud6-event-narada-buddhi-siddhi-doctrine",
+              "mud6-event-barhis-body-union-peace",
+              "mud6-event-barhis-ministers-forest-final"
+            ],
+            "status": "PARTIAL",
+            "completeness_basis": "Partial source-order extraction; precise continuation recorded.",
+            "missing_sections": [
+              "25 precise own-state/sovereignty compound; 33 satya/other-arising philosophical assignment."
+            ],
+            "editorial_notes": "Source narration order. Embedded narratives have their own spines; parent records their framing transitions without duplicating events."
+          }
+        },
+        {
+          "table": "evidence",
+          "record": {
+            "id": "mud6-e-barhis-arising-raw",
+            "source_id": "gp-src-mudgala",
+            "witness_id": "gp-wit-sd-mudgala-2",
+            "passage_id": "mud6-p-barhis-arising-raw",
+            "locator": "Mudgala2.26.33–34",
+            "paraphrase": "33–34 self-arising, other-arising, satya/happiness and fivefold self-experienced Brahman sequence retained; precise syntactic allocation of satyam parata utthānarūpam at 33 is not forced from earlier diagrams.",
+            "classification": "DIRECT_TEXT",
+            "verification_status": "NEEDS_REVIEW",
+            "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+            "verification_notes": "Important philosophical assignment needs grammar/edition support; full scope chapter/spine PARTIAL."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "gup6-review-mud6-15",
+      "author_status": "UNDETERMINED",
+      "current_resolution": "RETAINED_PENDING",
+      "change_record_ids": [],
+      "author_checkpoint": null,
+      "current_records": [],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "mud6-review-gkr6-companion-label",
+      "author_status": "UNDETERMINED",
+      "current_resolution": "RETAINED_PENDING",
+      "change_record_ids": [],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "narrative_events",
+          "record": {
+            "id": "gkr6-event-mother-wife-home",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-krida",
+            "supporting_witness_ids": [
+              "gp-wit-sd-krida"
+            ],
+            "story_id": "gkr6-story-narantaka-war",
+            "sequence": 15,
+            "passage_ids": [
+              "gkr6-p-059"
+            ],
+            "participants": [
+              "gkr2-en-kasiking",
+              "gkr6-en-king-mother59",
+              "gkr6-en-amba58",
+              "gkr6-en-ministers-address59",
+              "gkr6-en-restored-citizens59"
+            ],
+            "setting": null,
+            "cause": null,
+            "details": "The king reunites with his unnamed mother and then wife Ambā; the companion label shifts to ministers without secure identity allocation. The population is restored and families celebrate.",
+            "outcome": null,
+            "changed_relationship_ids": [],
+            "introduced_entity_ids": [],
+            "introduced_power_ids": [],
+            "consequences": [],
+            "evidence_ids": [
+              "gkr6-e-king-unnamed-mother-reunion59",
+              "gkr6-e-ministersons-versus-ministers-label59",
+              "gkr6-e-king-amba-restored-population59"
+            ],
+            "verification_status": "NEEDS_REVIEW"
+          }
+        },
+        {
+          "table": "evidence",
+          "record": {
+            "id": "gkr6-e-ministersons-versus-ministers-label59",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-krida",
+            "passage_id": "gkr6-p-059",
+            "locator": "Krīḍā 59.39–40; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+            "paraphrase": "The text now calls the two greeting the royal wife amātyau [two ministers], whereas57.41–43 and59.7/9 call the captured companions ministers’ sons. They say they were deluded and freed by Vināyaka’s māyā. The king then goes to his bhāryā Ambā. The role-label shift is preserved without inserting an unreported return of the fathers.",
+            "classification": "DIRECT_TEXT",
+            "verification_status": "NEEDS_REVIEW",
+            "verifier": "Krīḍā continuation5 author, direct digital body reading",
+            "verification_notes": "Required companion-role allocation remains unresolved; keep ministers’ sons capture and printed two-ministers address distinct."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "mud6-review-gkr6-bypass-interpretation",
+      "author_status": "UNDETERMINED",
+      "current_resolution": "RETAINED_PENDING",
+      "change_record_ids": [],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "boons_and_powers",
+          "record": {
+            "id": "gkr6-power-narantaka-delusion61",
+            "type": "POWER",
+            "recipient_id": "gkr-en-vinayaka",
+            "grantor_id": null,
+            "worshipped_id": null,
+            "evidence_ids": [
+              "gkr6-e-narantaka-day-night-identity-delusion61",
+              "gkr6-e-virat-toenail-narantaka-death61",
+              "gkr6-e-narantaka-many-heads-axe61"
+            ],
+            "verification_status": "VERIFIED",
+            "notes": "POWER owner is Vināyaka, who acts through māyā; affected target is Narāntaka. Before checkpoint004 recipient_id was Narāntaka, misleadingly reading the suffered condition as his owned power. Corrected after independent root audit. No asserted twilight exception or categorical-boon expiry formula.",
+            "motive": null,
+            "austerity_or_circumstances": null,
+            "requested": null,
+            "granted": null,
+            "mechanism": "Vināyaka’s māyā confounds time, cosmic place, consciousness-state and personal identity; Virāṭ then crushes him.",
+            "trigger": null,
+            "restrictions": null,
+            "duration": null,
+            "counter": "Final nail-tip crushing kills where repeated severing did not.",
+            "later_event_ids": [
+              "gkr6-event-axe-heads-delusion",
+              "gkr6-event-virat-final-crush"
+            ],
+            "field_evidence": {
+              "recipient_id": [
+                "gkr6-e-narantaka-many-heads-axe61",
+                "gkr6-e-narantaka-day-night-identity-delusion61"
+              ],
+              "mechanism": [
+                "gkr6-e-narantaka-day-night-identity-delusion61",
+                "gkr6-e-virat-toenail-narantaka-death61",
+                "gkr6-e-narantaka-many-heads-axe61"
+              ],
+              "counter": [
+                "gkr6-e-narantaka-day-night-identity-delusion61",
+                "gkr6-e-virat-toenail-narantaka-death61"
+              ],
+              "later_event_ids": [
+                "gkr6-e-narantaka-day-night-identity-delusion61",
+                "gkr6-e-virat-toenail-narantaka-death61"
+              ]
+            }
+          }
+        },
+        {
+          "table": "evidence",
+          "record": {
+            "id": "gkr6-e-narantaka-day-night-identity-delusion61",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-krida",
+            "passage_id": "gkr6-p-061",
+            "locator": "Krīḍā 61.25–30; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+            "paraphrase": "Narāntaka recognizes neither himself nor another. Moment by moment he sees night/day, heaven/Earth/netherworld, waking/deep sleep/turīya/dream, and Vināyaka as deity/woman/man/Guhyaka/Siddha/Yakṣa/Rākṣasa, own/other/father/mother/living/nonliving. He recalls Śiva’s granted boons and thinks his death is probably at hand. This shifting perception is not explicitly a new twilight window or a resolved legal exception to the old day/night protection.",
+            "classification": "DIRECT_TEXT",
+            "verification_status": "VERIFIED",
+            "verifier": "Krīḍā continuation5 author, direct digital body reading",
+            "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "mud6-review-gkr6-ekadase-clause",
+      "author_status": "UNDETERMINED",
+      "current_resolution": "RETAINED_PENDING",
+      "change_record_ids": [],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "evidence",
+          "record": {
+            "id": "gkr6-e-virat-toenail-narantaka-death61",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-krida",
+            "passage_id": "gkr6-p-061",
+            "locator": "Krīḍā 61.31–34 (two units labeled31); https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+            "paraphrase": "The demon sees Vināyaka’s Virāṭ form: head above the sky, feet filling netherworld, ears as directions, trees as hairs, universes in hair pores and ocean-like perspiration droplets. Thirty-three crore gods shine at the nails; fourteen worlds appear in the belly, with the printed ekadaśe clause left unnormalized. Vināyaka immediately crushes the demon with the tip of the great-toe nail, like a child crushing a bedbug. This final act kills him; the severing arrows/axe were earlier unsuccessful steps. The duplicate31 label is retained without inventing an absent verse.",
+            "classification": "DIRECT_TEXT",
+            "verification_status": "VERIFIED",
+            "verifier": "Krīḍā continuation5 author, direct digital body reading",
+            "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "mud6-review-gkr6-wider-spine-completeness",
+      "author_status": "UNDETERMINED",
+      "current_resolution": "RETAINED_PENDING",
+      "change_record_ids": [],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "story_spines",
+          "record": {
+            "id": "gkr6-story-narantaka-war",
+            "title": "Narāntaka’s invasion, royal captivity and Vināyaka’s counteraction",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-krida",
+            "scope": "Krīḍā56.27–53;57.1–48;58.1–54;59.1–45;60.1–55;61.1–43.",
+            "event_ids": [
+              "gkr6-event-narantaka-war-order",
+              "gkr6-event-narantaka-host-march",
+              "gkr6-event-royal-alarm",
+              "gkr6-event-city-assault-choice",
+              "gkr6-event-royal-capture",
+              "gkr6-event-queen-grief",
+              "gkr6-event-siddhi-host",
+              "gkr6-event-leader-food-order",
+              "gkr6-event-host-consumption",
+              "gkr6-event-narantaka-live-capture",
+              "gkr6-event-leader-rest",
+              "gkr6-event-creator-explanation",
+              "gkr6-event-interior-exit",
+              "gkr6-event-royal-rescue-questions",
+              "gkr6-event-mother-wife-home",
+              "gkr6-event-narantaka-resolve",
+              "gkr6-event-close-combat",
+              "gkr6-event-pinaka-arm-cuts",
+              "gkr6-event-legs-head-regrowth",
+              "gkr6-event-axe-heads-delusion",
+              "gkr6-event-virat-final-crush",
+              "gkr6-event-earth-partial-relief",
+              "gkr6-event-citizen-after-prayer"
+            ],
+            "status": "PARTIAL",
+            "completeness_basis": "All scoped bodies, combat/counters/requests/assents and enacted outcome read/extracted; required companion identity detail remains unresolved.",
+            "missing_sections": [
+              "Full war chronology, rescue, final death and aftermath are extracted.59.39 companion-role allocation and61.33 Virāṭ udare/ekadaśe construction remain unresolved."
+            ],
+            "editorial_notes": "Bounded scene completion only; larger Vināyaka cycle incomplete. Independent print/Sanskrit expert audit pending."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "mud6-review-gup6-known-austerity-profile",
+      "author_status": "CORRECTION_NEEDED",
+      "current_resolution": "APPLIED_WITH_DOCUMENTED_CHANGE",
+      "change_record_ids": [
+        "continuation5-change-0164"
+      ],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "boons_and_powers",
+          "record": {
+            "id": "gup6-power-003",
+            "type": "BOON",
+            "recipient_id": "gup6-en-001",
+            "grantor_id": "gp-en-ganesha",
+            "worshipped_id": "gp-en-ganesha",
+            "motive": "Please his parents through bodily beauty.",
+            "austerity_or_circumstances": "The boy repeats his guru’s mantra, meditates on Gaṇeśa with firm dedication, and performs twelve years of air-only, foodless tapas in a deserted forest before the deity offers a boon (73.1–6).",
+            "requested": "Continual nondeviating devotion; additionally bodily beauty pleasing to all for his parents’ happiness.",
+            "granted": "Actual divine body with one thousand arms and two straight legs.",
+            "mechanism": "Gaṇeśa adopts aṇimā and enters the boy’s belly.",
+            "trigger": null,
+            "restrictions": null,
+            "duration": null,
+            "counter": null,
+            "later_event_ids": [
+              "gup6-event-010"
+            ],
+            "evidence_ids": [
+              "gup6-e-009",
+              "gup6-e-010",
+              "gup6-e-008"
+            ],
+            "field_evidence": {
+              "recipient_id": [
+                "gup6-e-009"
+              ],
+              "grantor_id": [
+                "gup6-e-009",
+                "gup6-e-008",
+                "gup6-e-010"
+              ],
+              "worshipped_id": [
+                "gup6-e-009"
+              ],
+              "motive": [
+                "gup6-e-009"
+              ],
+              "requested": [
+                "gup6-e-009"
+              ],
+              "granted": [
+                "gup6-e-010"
+              ],
+              "mechanism": [
+                "gup6-e-010"
+              ],
+              "austerity_or_circumstances": [
+                "gup6-e-008"
+              ],
+              "later_event_ids": [
+                "gup6-e-010"
+              ]
+            },
+            "verification_status": "VERIFIED",
+            "notes": "Personal boon invitation and requests; the actual bodily response is separately evidenced at73.10–12. No explicit verbal assent to the devotion request is supplied. Twelve years describe austerity before the boon, not duration of its granted bodily form. The precise nirvāṇam condition at73.3 remains under review separately."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "mud6-review-gup6-nirvana-and-ravana",
+      "author_status": "UNDETERMINED",
+      "current_resolution": "RETAINED_PENDING",
+      "change_record_ids": [],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "boons_and_powers",
+          "record": {
+            "id": "gup6-power-010",
+            "type": "POWER",
+            "recipient_id": "gup6-en-025",
+            "grantor_id": null,
+            "worshipped_id": null,
+            "motive": null,
+            "austerity_or_circumstances": null,
+            "requested": null,
+            "granted": "Printed akhilājñatā73.31, exact interpretation pending.",
+            "mechanism": null,
+            "trigger": null,
+            "restrictions": null,
+            "duration": null,
+            "counter": null,
+            "later_event_ids": [],
+            "evidence_ids": [
+              "gup6-e-015"
+            ],
+            "field_evidence": {
+              "recipient_id": [
+                "gup6-e-015"
+              ],
+              "granted": [
+                "gup6-e-015"
+              ]
+            },
+            "verification_status": "NEEDS_REVIEW",
+            "notes": "The source’s terse efficacy claim is retained raw; no silent omniscience or other translated benefit."
+          }
+        },
+        {
+          "table": "story_spines",
+          "record": {
+            "id": "gup6-story-kartavirya-recovery",
+            "title": "Kārtavīrya’s birth, guru remedy, divine body and parental reunion",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "scope": "72.1–47;73.1–22,27–28",
+            "event_ids": [
+              "gup6-event-001",
+              "gup6-event-002",
+              "gup6-event-003",
+              "gup6-event-004",
+              "gup6-event-005",
+              "gup6-event-006",
+              "gup6-event-007",
+              "gup6-event-008",
+              "gup6-event-009",
+              "gup6-event-010",
+              "gup6-event-011",
+              "gup6-event-012",
+              "gup6-event-014"
+            ],
+            "status": "PARTIAL",
+            "completeness_basis": "Incomplete body or important semantic gap retained without guessed chronology.",
+            "missing_sections": [
+              "73.3 exact nirvāṇam condition unresolved."
+            ],
+            "editorial_notes": "Source order is preserved.71 concise fulfilled-life summary precedes72 expanded sonbirth/remedy; local72 father/child naming does not harmonize anomalous68/71 performer names."
+          }
+        },
+        {
+          "table": "story_spines",
+          "record": {
+            "id": "gup6-story-surasena-merit-frame",
+            "title": "Indra’s merit request and Śūrasena’s resumed vow frame",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "scope": "73.29–36",
+            "event_ids": [
+              "gup6-event-015"
+            ],
+            "status": "PARTIAL",
+            "completeness_basis": "Incomplete body or important semantic gap retained without guessed chronology.",
+            "missing_sections": [
+              "73.31 akhilājñatā interpretation unresolved; the actual Indra return belongs to the updated issued frame, not a second full frame count."
+            ],
+            "editorial_notes": "Source order is preserved.71 concise fulfilled-life summary precedes72 expanded sonbirth/remedy; local72 father/child naming does not harmonize anomalous68/71 performer names."
+          }
+        },
+        {
+          "table": "variants_and_conflicts",
+          "record": {
+            "id": "gup6-var-73-lexical-benefits",
+            "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+            "description": "Exact nirvāṇam condition and Rāvaṇa akhilājñatā need grammatical or edition support. Actual physical response/reunion and the named Śeṣa boons remain independently readable.",
+            "source_ids": [
+              "gp-src-ganesha"
+            ],
+            "evidence_ids": [
+              "gup6-e-016"
+            ],
+            "status": "OPEN",
+            "resolution": null
+          }
+        },
+        {
+          "table": "evidence",
+          "record": {
+            "id": "gup6-e-016",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "passage_id": "gup6-p-review-73-16",
+            "locator": "Upāsanā 73.3,31",
+            "paraphrase": "73.3 prints nirvāṇaṃ tasya before the living child’s boon encounter; its precise condition is not normalized to death.73.31 prints akhilājñatā for Rāvaṇa’s brief vow-result; an exact English benefit is withheld.",
+            "classification": "DIRECT_TEXT",
+            "verification_status": "NEEDS_REVIEW",
+            "verifier": "Upāsanā continuation6 author",
+            "verification_notes": "Direct reread; transcription observed, unresolved interpretation not asserted."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "mud6-review-gup6-invocation-speaker",
+      "author_status": "UNDETERMINED",
+      "current_resolution": "RETAINED_PENDING",
+      "change_record_ids": [],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "story_spines",
+          "record": {
+            "id": "gup6-story-budha-pastlife",
+            "title": "Budha’s family killings, rape-curse and leprous rebirth",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "scope": "76.1–62",
+            "event_ids": [
+              "gup6-event-026",
+              "gup6-event-027",
+              "gup6-event-028",
+              "gup6-event-029",
+              "gup6-event-030",
+              "gup6-event-031"
+            ],
+            "status": "PARTIAL",
+            "completeness_basis": "Incomplete body or important semantic gap retained without guessed chronology.",
+            "missing_sections": [
+              "76.24 invocation speaker unresolved; actual later purification is in the separate collective-rescue spine."
+            ],
+            "editorial_notes": "Source order is preserved.71 concise fulfilled-life summary precedes72 expanded sonbirth/remedy; local72 father/child naming does not harmonize anomalous68/71 performer names."
+          }
+        },
+        {
+          "table": "variants_and_conflicts",
+          "record": {
+            "id": "gup6-var-76-death-utterance-speaker",
+            "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+            "description": "76.24 Hareśvara utterance with so’vadat has an unresolved speaker in the father-death sequence; preserve the actual killings and later distinct name-hearing remedy.",
+            "source_ids": [
+              "gp-src-ganesha"
+            ],
+            "evidence_ids": [
+              "gup6-e-035"
+            ],
+            "status": "OPEN",
+            "resolution": null
+          }
+        },
+        {
+          "table": "evidence",
+          "record": {
+            "id": "gup6-e-035",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "passage_id": "gup6-p-review-76-35",
+            "locator": "Upāsanā 76.24",
+            "paraphrase": "The father has given up life;24 reports hareśvareti so’vadat, followed by rejoicing son. The exact utterance speaker is not securely selected; no chanting act is assigned to a dead father or to Budha without clarification.",
+            "classification": "DIRECT_TEXT",
+            "verification_status": "NEEDS_REVIEW",
+            "verifier": "Upāsanā continuation6 author",
+            "verification_notes": "Direct reread; transcription observed, unresolved interpretation not asserted."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "mud6-review-gup6-wider-scope-completeness",
+      "author_status": "UNDETERMINED",
+      "current_resolution": "RETAINED_PENDING",
+      "change_record_ids": [],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "story_spines",
+          "record": {
+            "id": "gup6-story-kartavirya-recovery",
+            "title": "Kārtavīrya’s birth, guru remedy, divine body and parental reunion",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "scope": "72.1–47;73.1–22,27–28",
+            "event_ids": [
+              "gup6-event-001",
+              "gup6-event-002",
+              "gup6-event-003",
+              "gup6-event-004",
+              "gup6-event-005",
+              "gup6-event-006",
+              "gup6-event-007",
+              "gup6-event-008",
+              "gup6-event-009",
+              "gup6-event-010",
+              "gup6-event-011",
+              "gup6-event-012",
+              "gup6-event-014"
+            ],
+            "status": "PARTIAL",
+            "completeness_basis": "Incomplete body or important semantic gap retained without guessed chronology.",
+            "missing_sections": [
+              "73.3 exact nirvāṇam condition unresolved."
+            ],
+            "editorial_notes": "Source order is preserved.71 concise fulfilled-life summary precedes72 expanded sonbirth/remedy; local72 father/child naming does not harmonize anomalous68/71 performer names."
+          }
+        },
+        {
+          "table": "story_spines",
+          "record": {
+            "id": "gup6-story-surasena-city-rescue",
+            "title": "Śūrasena’s actual vow, collective inclusion and name-hearing remedy",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "scope": "75.1–45;76.63–75",
+            "event_ids": [
+              "gup6-event-022",
+              "gup6-event-023",
+              "gup6-event-024",
+              "gup6-event-025",
+              "gup6-event-032",
+              "gup6-event-033"
+            ],
+            "status": "COMPLETE",
+            "completeness_basis": "Full bounded body and important named dialogue, relationships, requests/grants/powers checked; actual ending present.",
+            "missing_sections": [],
+            "editorial_notes": "Source order is preserved.71 concise fulfilled-life summary precedes72 expanded sonbirth/remedy; local72 father/child naming does not harmonize anomalous68/71 performer names."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "rfix5-finding-dhruva-tapas-duration",
+      "author_status": "CORRECTION_RECOMMENDED",
+      "current_resolution": "APPLIED_WITH_DOCUMENTED_CHANGE",
+      "change_record_ids": [
+        "continuation5-change-0157"
+      ],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "boons_and_powers",
+          "record": {
+            "id": "mud6-power-dhruva-visnu-grant",
+            "type": "BOON",
+            "recipient_id": "mud5-en-dhruva",
+            "grantor_id": "mud-en-vishnu",
+            "worshipped_id": "mud-en-vishnu",
+            "later_event_ids": [],
+            "evidence_ids": [
+              "mud6-e-dhruva-family-visnu-tapas"
+            ],
+            "field_evidence": {
+              "recipient_id": [
+                "mud6-e-dhruva-family-visnu-tapas"
+              ],
+              "grantor_id": [
+                "mud6-e-dhruva-family-visnu-tapas"
+              ],
+              "worshipped_id": [
+                "mud6-e-dhruva-family-visnu-tapas"
+              ],
+              "austerity_or_circumstances": [
+                "mud6-e-dhruva-family-visnu-tapas"
+              ],
+              "granted": [
+                "mud6-e-dhruva-family-visnu-tapas"
+              ],
+              "notes": [
+                "mud6-e-dhruva-family-visnu-tapas"
+              ]
+            },
+            "verification_status": "VERIFIED",
+            "notes": "Request words not narrated; grant is explicit. Future abode separated from earthly return and later actual end. The 1,000-year span is ascetic practice before the appearance, not a stated duration of the granted sovereignty or abode; grant duration is unstated.",
+            "motive": null,
+            "austerity_or_circumstances": "Nārada’s twelve-syllable initiation; meditation in Mathurā and severe Viṣṇu tapas for 1,000 years (verse 9).",
+            "requested": null,
+            "granted": "Undivided Earth kingship; at end heavenly kingship/Viṣṇu Dhruva-form abode(10).",
+            "mechanism": null,
+            "trigger": null,
+            "restrictions": null,
+            "duration": null,
+            "counter": null
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "rfix5-finding-delusion-power-owner",
+      "author_status": "CORRECTION_RECOMMENDED",
+      "current_resolution": "APPLIED_BEFORE_AUTHOR_FREEZE",
+      "change_record_ids": [],
+      "author_checkpoint": "checkpoints/gkr6/007-final-receipt.json",
+      "current_records": [
+        {
+          "table": "boons_and_powers",
+          "record": {
+            "id": "gkr6-power-narantaka-delusion61",
+            "type": "POWER",
+            "recipient_id": "gkr-en-vinayaka",
+            "grantor_id": null,
+            "worshipped_id": null,
+            "evidence_ids": [
+              "gkr6-e-narantaka-day-night-identity-delusion61",
+              "gkr6-e-virat-toenail-narantaka-death61",
+              "gkr6-e-narantaka-many-heads-axe61"
+            ],
+            "verification_status": "VERIFIED",
+            "notes": "POWER owner is Vināyaka, who acts through māyā; affected target is Narāntaka. Before checkpoint004 recipient_id was Narāntaka, misleadingly reading the suffered condition as his owned power. Corrected after independent root audit. No asserted twilight exception or categorical-boon expiry formula.",
+            "motive": null,
+            "austerity_or_circumstances": null,
+            "requested": null,
+            "granted": null,
+            "mechanism": "Vināyaka’s māyā confounds time, cosmic place, consciousness-state and personal identity; Virāṭ then crushes him.",
+            "trigger": null,
+            "restrictions": null,
+            "duration": null,
+            "counter": "Final nail-tip crushing kills where repeated severing did not.",
+            "later_event_ids": [
+              "gkr6-event-axe-heads-delusion",
+              "gkr6-event-virat-final-crush"
+            ],
+            "field_evidence": {
+              "recipient_id": [
+                "gkr6-e-narantaka-many-heads-axe61",
+                "gkr6-e-narantaka-day-night-identity-delusion61"
+              ],
+              "mechanism": [
+                "gkr6-e-narantaka-day-night-identity-delusion61",
+                "gkr6-e-virat-toenail-narantaka-death61",
+                "gkr6-e-narantaka-many-heads-axe61"
+              ],
+              "counter": [
+                "gkr6-e-narantaka-day-night-identity-delusion61",
+                "gkr6-e-virat-toenail-narantaka-death61"
+              ],
+              "later_event_ids": [
+                "gkr6-e-narantaka-day-night-identity-delusion61",
+                "gkr6-e-virat-toenail-narantaka-death61"
+              ]
+            }
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    }
+  ],
+  "details": [
+    {
+      "id": "continuation5-change-0157",
+      "track": "root-review-resolution",
+      "table": "boons_and_powers",
+      "record_id": "mud6-power-dhruva-visnu-grant",
+      "before": {
+        "id": "mud6-power-dhruva-visnu-grant",
+        "type": "BOON",
+        "recipient_id": "mud5-en-dhruva",
+        "grantor_id": "mud-en-vishnu",
+        "worshipped_id": "mud-en-vishnu",
+        "later_event_ids": [],
+        "evidence_ids": [
+          "mud6-e-dhruva-family-visnu-tapas"
+        ],
+        "field_evidence": {
+          "recipient_id": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ],
+          "grantor_id": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ],
+          "worshipped_id": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ],
+          "austerity_or_circumstances": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ],
+          "duration": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ],
+          "granted": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ],
+          "notes": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ]
+        },
+        "verification_status": "VERIFIED",
+        "notes": "Request words not narrated; grant is explicit. Future abode separated from earthly return and later actual end.",
+        "motive": null,
+        "austerity_or_circumstances": "Nārada twelve-syllable initiation; Mathurā meditation and severe tapas.",
+        "requested": null,
+        "granted": "Undivided Earth kingship; at end heavenly kingship/Viṣṇu Dhruva-form abode(10).",
+        "mechanism": null,
+        "trigger": null,
+        "restrictions": null,
+        "duration": "1000 years of Viṣṇu tapas(9).",
+        "counter": null
+      },
+      "after": {
+        "id": "mud6-power-dhruva-visnu-grant",
+        "type": "BOON",
+        "recipient_id": "mud5-en-dhruva",
+        "grantor_id": "mud-en-vishnu",
+        "worshipped_id": "mud-en-vishnu",
+        "later_event_ids": [],
+        "evidence_ids": [
+          "mud6-e-dhruva-family-visnu-tapas"
+        ],
+        "field_evidence": {
+          "recipient_id": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ],
+          "grantor_id": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ],
+          "worshipped_id": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ],
+          "austerity_or_circumstances": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ],
+          "granted": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ],
+          "notes": [
+            "mud6-e-dhruva-family-visnu-tapas"
+          ]
+        },
+        "verification_status": "VERIFIED",
+        "notes": "Request words not narrated; grant is explicit. Future abode separated from earthly return and later actual end. The 1,000-year span is ascetic practice before the appearance, not a stated duration of the granted sovereignty or abode; grant duration is unstated.",
+        "motive": null,
+        "austerity_or_circumstances": "Nārada’s twelve-syllable initiation; meditation in Mathurā and severe Viṣṇu tapas for 1,000 years (verse 9).",
+        "requested": null,
+        "granted": "Undivided Earth kingship; at end heavenly kingship/Viṣṇu Dhruva-form abode(10).",
+        "mechanism": null,
+        "trigger": null,
+        "restrictions": null,
+        "duration": null,
+        "counter": null
+      },
+      "reason": "Independent source-role correction: move explicit tapas duration into austerity circumstances and leave unstated boon duration null. Source23.9 precedes grant23.10.",
+      "evidence_ids": [
+        "mud6-e-dhruva-family-visnu-tapas"
+      ]
+    },
+    {
+      "id": "continuation5-change-0158",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "gup6-queue-next",
+      "before": {
+        "id": "gup6-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā81.1–9 formal extraction of read-only preview first;81.10 first line previewed only, complete reading resumes81.10, then through92.",
+        "task": "Continue source-order whole bodies and actual bounded endings; preserve unresolved earlier names and semantic gaps.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "The92-chapter witness remains unfinished."
+      },
+      "after": {
+        "id": "gup6-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā81.1 formal extraction resumes here. Root has read81.1–14 and15a without extraction;15b onward through92 remains unread. Extract the whole inherited read-only fragment before further source-order reading.",
+        "task": "Continue source-order whole bodies and actual bounded endings; preserve unresolved earlier names and semantic gaps.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "Author freeze stopped at80; root bounded reconnaissance extends the81 preview. The92-chapter witness remains unfinished."
+      },
+      "reason": "Reconcile the active handoff with independently read root81 fragment; retain task ID, no completeness claim.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation5-change-0159",
+      "track": "root-review-resolution",
+      "table": "evidence",
+      "record_id": "mud6-e-prthu-peace-request",
+      "before": {
+        "id": "mud6-e-prthu-peace-request",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "passage_id": "mud6-p-prthu-peace-request",
+        "locator": "Mudgala2.25.13–21",
+        "paraphrase": "Pleased by humility, Kumāras say they desire no task/carry no possessions, have come because they heard king’s fame in heaven, and ask permission to return Brahmaloka. Pṛthu says he has enjoyed kingdom/varied pleasures and now asks yoga for peace. Recognizing qualification/disenchantment, they teach that full Gaṇeśa yoga-peace is to be worshipped with great devotion for peace. This is teacher exchange, not a direct new Gaṇeśa appearance.",
+        "classification": "DIRECT_TEXT",
+        "verification_status": "VERIFIED",
+        "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+        "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+      },
+      "after": {
+        "id": "mud6-e-prthu-peace-request",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "passage_id": "mud6-p-prthu-peace-request",
+        "locator": "Mudgala2.25.13–21",
+        "paraphrase": "Pleased by humility, Kumāras say they desire no task and are naked, have come because they heard king’s fame in heaven, and ask permission to return Brahmaloka. Pṛthu says he has enjoyed kingdom/varied pleasures and now asks yoga for peace. Recognizing qualification/disenchantment, they teach that full Gaṇeśa yoga-peace is to be worshipped with great devotion for peace. This is teacher exchange, not a direct new Gaṇeśa appearance.",
+        "classification": "DIRECT_TEXT",
+        "verification_status": "VERIFIED",
+        "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+        "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+      },
+      "reason": "Independent whole2.25 review: nagnāḥ explicitly means naked; absence of all possessions was an unsupported expansion. Preserve dialogue and role context.",
+      "evidence_ids": [
+        "mud6-e-prthu-peace-request"
+      ]
+    },
+    {
+      "id": "continuation5-change-0160",
+      "track": "root-review-resolution",
+      "table": "narrative_events",
+      "record_id": "mud6-event-prthu-peace-request",
+      "before": {
+        "id": "mud6-event-prthu-peace-request",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-peace",
+        "sequence": 2,
+        "passage_ids": [
+          "mud6-p-prthu-peace-request"
+        ],
+        "participants": [
+          "mud6-en-prthu",
+          "mud2-en-four-kumaras",
+          "mud-en-vakratunda"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Pleased by humility, Kumāras say they desire no task/carry no possessions, have come because they heard king’s fame in heaven, and ask permission to return Brahmaloka. Pṛthu says he has enjoyed kingdom/varied pleasures and now asks yoga for peace. Recognizing qualification/disenchantment, they teach that full Gaṇeśa yoga-peace is to be worshipped with great devotion for peace. This is teacher exchange, not a direct new Gaṇeśa appearance.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-prthu-peace-request"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "after": {
+        "id": "mud6-event-prthu-peace-request",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-peace",
+        "sequence": 2,
+        "passage_ids": [
+          "mud6-p-prthu-peace-request"
+        ],
+        "participants": [
+          "mud6-en-prthu",
+          "mud2-en-four-kumaras",
+          "mud-en-vakratunda"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Pleased by humility, Kumāras say they desire no task and are naked, have come because they heard king’s fame in heaven, and ask permission to return Brahmaloka. Pṛthu says he has enjoyed kingdom/varied pleasures and now asks yoga for peace. Recognizing qualification/disenchantment, they teach that full Gaṇeśa yoga-peace is to be worshipped with great devotion for peace. This is teacher exchange, not a direct new Gaṇeśa appearance.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-prthu-peace-request"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "reason": "Independent whole2.25 review: nagnāḥ explicitly means naked; absence of all possessions was an unsupported expansion. Preserve dialogue and role context.",
+      "evidence_ids": [
+        "mud6-e-prthu-peace-request"
+      ]
+    },
+    {
+      "id": "continuation5-change-0161",
+      "track": "root-review-resolution",
+      "table": "evidence",
+      "record_id": "mud6-e-child-hymn-promises-kumaras-return",
+      "before": {
+        "id": "mud6-e-child-hymn-promises-kumaras-return",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "passage_id": "mud6-p-child-hymn-promises-kumaras-return",
+        "locator": "Mudgala2.25.56–61",
+        "paraphrase": "Kumāras fall silent/prostrate; devotion-bound child Vināyaka says hymn gives yoga-peace to readers/hearers and he will give whatever desired by hymn; Kumāras will become Gaṇapatyas like Śiva. No request words or Pṛthu-directed boon here. Child then plays with children like ordinary child. Kumāras visit Kāśī king, are honored, eat and return to their place. They conclude Pṛthu should worship Gaṇeśa as full peace-knowledge.",
+        "classification": "DIRECT_TEXT",
+        "verification_status": "VERIFIED",
+        "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+        "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+      },
+      "after": {
+        "id": "mud6-e-child-hymn-promises-kumaras-return",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "passage_id": "mud6-p-child-hymn-promises-kumaras-return",
+        "locator": "Mudgala2.25.56–61",
+        "paraphrase": "Kumāras fall silent/prostrate; devotion-bound child Vināyaka says hymn gives yoga-peace to readers/hearers and he will give the desired object while himself moved by the hymn; Kumāras will become Gaṇapatyas like Śiva. No request words or Pṛthu-directed boon here. Child then plays with children like ordinary child. Kumāras visit Kāśī king, are honored, eat and return to their place. They conclude Pṛthu should worship Gaṇeśa as full peace-knowledge.",
+        "classification": "DIRECT_TEXT",
+        "verification_status": "VERIFIED",
+        "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+        "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+      },
+      "reason": "Independent whole2.25 review: first-person dāsyāmi stotrabhāvitaḥ describes Vināyaka as hymn-moved giver, not a reader eligibility condition.",
+      "evidence_ids": [
+        "mud6-e-child-hymn-promises-kumaras-return"
+      ]
+    },
+    {
+      "id": "continuation5-change-0162",
+      "track": "root-review-resolution",
+      "table": "narrative_events",
+      "record_id": "mud6-event-child-hymn-promises-kumaras-return",
+      "before": {
+        "id": "mud6-event-child-hymn-promises-kumaras-return",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-peace",
+        "sequence": 8,
+        "passage_ids": [
+          "mud6-p-child-hymn-promises-kumaras-return"
+        ],
+        "participants": [
+          "mud2-en-four-kumaras",
+          "mud6-en-kasyapa-child-vinayaka",
+          "mud6-en-kumaras-unnamed-kasi-king",
+          "mud6-en-vinayaka-child-companions",
+          "mud2-en-kashi",
+          "mud6-en-prthu",
+          "mud-en-vakratunda",
+          "mud6-en-kumaras-hymn-users"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Kumāras fall silent/prostrate; devotion-bound child Vināyaka says hymn gives yoga-peace to readers/hearers and he will give whatever desired by hymn; Kumāras will become Gaṇapatyas like Śiva. No request words or Pṛthu-directed boon here. Child then plays with children like ordinary child. Kumāras visit Kāśī king, are honored, eat and return to their place. They conclude Pṛthu should worship Gaṇeśa as full peace-knowledge.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud6-power-kumaras-child-hymn-benefits",
+          "mud6-power-kumaras-ganapatya-promise"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "after": {
+        "id": "mud6-event-child-hymn-promises-kumaras-return",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-peace",
+        "sequence": 8,
+        "passage_ids": [
+          "mud6-p-child-hymn-promises-kumaras-return"
+        ],
+        "participants": [
+          "mud2-en-four-kumaras",
+          "mud6-en-kasyapa-child-vinayaka",
+          "mud6-en-kumaras-unnamed-kasi-king",
+          "mud6-en-vinayaka-child-companions",
+          "mud2-en-kashi",
+          "mud6-en-prthu",
+          "mud-en-vakratunda",
+          "mud6-en-kumaras-hymn-users"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Kumāras fall silent/prostrate; devotion-bound child Vināyaka says hymn gives yoga-peace to readers/hearers and he will give the desired object while himself moved by the hymn; Kumāras will become Gaṇapatyas like Śiva. No request words or Pṛthu-directed boon here. Child then plays with children like ordinary child. Kumāras visit Kāśī king, are honored, eat and return to their place. They conclude Pṛthu should worship Gaṇeśa as full peace-knowledge.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud6-power-kumaras-child-hymn-benefits",
+          "mud6-power-kumaras-ganapatya-promise"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "reason": "Independent whole2.25 review: first-person dāsyāmi stotrabhāvitaḥ describes Vināyaka as hymn-moved giver, not a reader eligibility condition.",
+      "evidence_ids": [
+        "mud6-e-child-hymn-promises-kumaras-return"
+      ]
+    },
+    {
+      "id": "continuation5-change-0163",
+      "track": "root-review-resolution",
+      "table": "boons_and_powers",
+      "record_id": "mud6-power-kumaras-child-hymn-benefits",
+      "before": {
+        "id": "mud6-power-kumaras-child-hymn-benefits",
+        "type": "POWER",
+        "recipient_id": "mud6-en-kumaras-hymn-users",
+        "grantor_id": "mud6-en-kasyapa-child-vinayaka",
+        "worshipped_id": null,
+        "later_event_ids": [],
+        "evidence_ids": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "field_evidence": {
+          "recipient_id": [
+            "mud6-e-child-hymn-promises-kumaras-return"
+          ],
+          "grantor_id": [
+            "mud6-e-child-hymn-promises-kumaras-return"
+          ],
+          "trigger": [
+            "mud6-e-child-hymn-promises-kumaras-return"
+          ],
+          "granted": [
+            "mud6-e-child-hymn-promises-kumaras-return"
+          ],
+          "notes": [
+            "mud6-e-child-hymn-promises-kumaras-return"
+          ]
+        },
+        "verification_status": "VERIFIED",
+        "notes": "Vināyaka speech in recollection, not Pṛthu request/new king apparition.",
+        "motive": null,
+        "austerity_or_circumstances": null,
+        "requested": null,
+        "granted": "Yoga-peace and desired benefits(57–58).",
+        "mechanism": null,
+        "trigger": "Read/hear hymn and be affected by hymn.",
+        "restrictions": null,
+        "duration": null,
+        "counter": null
+      },
+      "after": {
+        "id": "mud6-power-kumaras-child-hymn-benefits",
+        "type": "POWER",
+        "recipient_id": "mud6-en-kumaras-hymn-users",
+        "grantor_id": "mud6-en-kasyapa-child-vinayaka",
+        "worshipped_id": null,
+        "later_event_ids": [],
+        "evidence_ids": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "field_evidence": {
+          "recipient_id": [
+            "mud6-e-child-hymn-promises-kumaras-return"
+          ],
+          "grantor_id": [
+            "mud6-e-child-hymn-promises-kumaras-return"
+          ],
+          "trigger": [
+            "mud6-e-child-hymn-promises-kumaras-return"
+          ],
+          "granted": [
+            "mud6-e-child-hymn-promises-kumaras-return"
+          ],
+          "notes": [
+            "mud6-e-child-hymn-promises-kumaras-return"
+          ],
+          "mechanism": [
+            "mud6-e-child-hymn-promises-kumaras-return"
+          ]
+        },
+        "verification_status": "VERIFIED",
+        "notes": "Vināyaka speech in recollection, not Pṛthu request/new king apparition. The deity’s hymn-moved state is not an additional emotional requirement imposed on readers or hearers.",
+        "motive": null,
+        "austerity_or_circumstances": null,
+        "requested": null,
+        "granted": "Yoga-peace and desired benefits(57–58).",
+        "mechanism": "Vināyaka promises the desired object while himself moved by the hymn (verse 58).",
+        "trigger": "Reading or hearing the hymn (verse 57).",
+        "restrictions": null,
+        "duration": null,
+        "counter": null
+      },
+      "reason": "Independent peer/root correction of giver versus reader attribution in2.25.57–58; remove unsupported reader emotional trigger.",
+      "evidence_ids": [
+        "mud6-e-child-hymn-promises-kumaras-return"
+      ]
+    },
+    {
+      "id": "continuation5-change-0164",
+      "track": "root-review-resolution",
+      "table": "boons_and_powers",
+      "record_id": "gup6-power-003",
+      "before": {
+        "id": "gup6-power-003",
+        "type": "BOON",
+        "recipient_id": "gup6-en-001",
+        "grantor_id": "gp-en-ganesha",
+        "worshipped_id": "gp-en-ganesha",
+        "motive": "Please his parents through bodily beauty.",
+        "austerity_or_circumstances": null,
+        "requested": "Continual nondeviating devotion; additionally bodily beauty pleasing to all for his parents’ happiness.",
+        "granted": "Actual divine body with one thousand arms and two straight legs.",
+        "mechanism": "Gaṇeśa adopts aṇimā and enters the boy’s belly.",
+        "trigger": null,
+        "restrictions": null,
+        "duration": null,
+        "counter": null,
+        "later_event_ids": [
+          "gup6-event-010"
+        ],
+        "evidence_ids": [
+          "gup6-e-009",
+          "gup6-e-010"
+        ],
+        "field_evidence": {
+          "recipient_id": [
+            "gup6-e-009"
+          ],
+          "grantor_id": [
+            "gup6-e-009"
+          ],
+          "worshipped_id": [
+            "gup6-e-009"
+          ],
+          "motive": [
+            "gup6-e-009"
+          ],
+          "requested": [
+            "gup6-e-009"
+          ],
+          "granted": [
+            "gup6-e-010"
+          ],
+          "mechanism": [
+            "gup6-e-010"
+          ]
+        },
+        "verification_status": "VERIFIED",
+        "notes": "Personal boon invitation and requests. Subsequent physical response will be separately evidenced; no explicit verbal assent to the devotion request is supplied."
+      },
+      "after": {
+        "id": "gup6-power-003",
+        "type": "BOON",
+        "recipient_id": "gup6-en-001",
+        "grantor_id": "gp-en-ganesha",
+        "worshipped_id": "gp-en-ganesha",
+        "motive": "Please his parents through bodily beauty.",
+        "austerity_or_circumstances": "The boy repeats his guru’s mantra, meditates on Gaṇeśa with firm dedication, and performs twelve years of air-only, foodless tapas in a deserted forest before the deity offers a boon (73.1–6).",
+        "requested": "Continual nondeviating devotion; additionally bodily beauty pleasing to all for his parents’ happiness.",
+        "granted": "Actual divine body with one thousand arms and two straight legs.",
+        "mechanism": "Gaṇeśa adopts aṇimā and enters the boy’s belly.",
+        "trigger": null,
+        "restrictions": null,
+        "duration": null,
+        "counter": null,
+        "later_event_ids": [
+          "gup6-event-010"
+        ],
+        "evidence_ids": [
+          "gup6-e-009",
+          "gup6-e-010",
+          "gup6-e-008"
+        ],
+        "field_evidence": {
+          "recipient_id": [
+            "gup6-e-009"
+          ],
+          "grantor_id": [
+            "gup6-e-009",
+            "gup6-e-008",
+            "gup6-e-010"
+          ],
+          "worshipped_id": [
+            "gup6-e-009"
+          ],
+          "motive": [
+            "gup6-e-009"
+          ],
+          "requested": [
+            "gup6-e-009"
+          ],
+          "granted": [
+            "gup6-e-010"
+          ],
+          "mechanism": [
+            "gup6-e-010"
+          ],
+          "austerity_or_circumstances": [
+            "gup6-e-008"
+          ],
+          "later_event_ids": [
+            "gup6-e-010"
+          ]
+        },
+        "verification_status": "VERIFIED",
+        "notes": "Personal boon invitation and requests; the actual bodily response is separately evidenced at73.10–12. No explicit verbal assent to the devotion request is supplied. Twelve years describe austerity before the boon, not duration of its granted bodily form. The precise nirvāṇam condition at73.3 remains under review separately."
+      },
+      "reason": "Independent peer/root review: fill previously null circumstances from explicit73.1–6, preserve twelve-year datum as austerity rather than grant duration, and replace a stale prospective evidence note.",
+      "evidence_ids": [
+        "gup6-e-008",
+        "gup6-e-009",
+        "gup6-e-010"
+      ]
+    },
+    {
+      "id": "continuation5-change-0165",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "gup-queue-next",
+      "before": {
+        "id": "gup-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā72.1–30 read-only and unextracted;72.31–92 unread. New61/63/67/68/71 partials and all earlier chapter/print gaps remain separate.53.3 literal apeta resolved,53.15 still pending.",
+        "task": "Resume formal source-order extraction at72.1; re-read/extract the fragment, preserve enclosing frames and all recorded semantic gaps.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [],
+        "reason": "Bodies51–60 read;52/54/56/58/60 COMPLETE and51/53/55/57/59 PARTIAL. Whole92-chapter witness incomplete."
+      },
+      "after": {
+        "id": "gup-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā81.1 formal extraction resumes here. Root has read81.1–14 and15a without extraction;15b onward through92 remains unread. Extract the whole inherited read-only fragment before further source-order reading.",
+        "task": "Resume formal source-order extraction at81.1 using gup6-queue-next. Do not duplicate72–80 extracted units; retain every earlier semantic and print-collation gap.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [
+          "gup6-queue-next"
+        ],
+        "reason": "Earlier broad forward queue coalesced to current81.1 handoff; the whole witness and all precise unresolved gaps remain unfinished."
+      },
+      "reason": "Reconcile retained legacy forward task with current81 read-only bounds; preserve ID/status/priority and all semantic queues.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation5-change-0166",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "gup2-queue-next",
+      "before": {
+        "id": "gup2-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā72.1–30 read-only and unextracted;72.31–92 unread. New61/63/67/68/71 partials and all earlier chapter/print gaps remain separate.53.3 literal apeta resolved,53.15 still pending.",
+        "task": "Resume formal source-order extraction at72.1; re-read/extract the fragment, preserve enclosing frames and all recorded semantic gaps.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [],
+        "reason": "Bodies51–60 read;52/54/56/58/60 COMPLETE and51/53/55/57/59 PARTIAL. Whole92-chapter witness incomplete."
+      },
+      "after": {
+        "id": "gup2-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā81.1 formal extraction resumes here. Root has read81.1–14 and15a without extraction;15b onward through92 remains unread. Extract the whole inherited read-only fragment before further source-order reading.",
+        "task": "Resume formal source-order extraction at81.1 using gup6-queue-next. Do not duplicate72–80 extracted units; retain every earlier semantic and print-collation gap.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [
+          "gup6-queue-next"
+        ],
+        "reason": "Earlier broad forward queue coalesced to current81.1 handoff; the whole witness and all precise unresolved gaps remain unfinished."
+      },
+      "reason": "Reconcile retained legacy forward task with current81 read-only bounds; preserve ID/status/priority and all semantic queues.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation5-change-0167",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "gup3-queue-next",
+      "before": {
+        "id": "gup3-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā72.1–30 read-only and unextracted;72.31–92 unread. New61/63/67/68/71 partials and all earlier chapter/print gaps remain separate.53.3 literal apeta resolved,53.15 still pending.",
+        "task": "Resume formal source-order extraction at72.1; re-read/extract the fragment, preserve enclosing frames and all recorded semantic gaps.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [],
+        "reason": "Bodies51–60 read;52/54/56/58/60 COMPLETE and51/53/55/57/59 PARTIAL. Whole92-chapter witness incomplete."
+      },
+      "after": {
+        "id": "gup3-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā81.1 formal extraction resumes here. Root has read81.1–14 and15a without extraction;15b onward through92 remains unread. Extract the whole inherited read-only fragment before further source-order reading.",
+        "task": "Resume formal source-order extraction at81.1 using gup6-queue-next. Do not duplicate72–80 extracted units; retain every earlier semantic and print-collation gap.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [
+          "gup6-queue-next"
+        ],
+        "reason": "Earlier broad forward queue coalesced to current81.1 handoff; the whole witness and all precise unresolved gaps remain unfinished."
+      },
+      "reason": "Reconcile retained legacy forward task with current81 read-only bounds; preserve ID/status/priority and all semantic queues.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation5-change-0168",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "gup4-queue-next",
+      "before": {
+        "id": "gup4-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā72.1–30 read-only and unextracted;72.31–92 unread. New61/63/67/68/71 partials and all earlier chapter/print gaps remain separate.53.3 literal apeta resolved,53.15 still pending.",
+        "task": "Resume formal source-order extraction at72.1; re-read/extract the fragment, preserve enclosing frames and all recorded semantic gaps.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [],
+        "reason": "The92-chapter witness remains unfinished; important semantic gaps preserve PARTIAL."
+      },
+      "after": {
+        "id": "gup4-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā81.1 formal extraction resumes here. Root has read81.1–14 and15a without extraction;15b onward through92 remains unread. Extract the whole inherited read-only fragment before further source-order reading.",
+        "task": "Resume formal source-order extraction at81.1 using gup6-queue-next. Do not duplicate72–80 extracted units; retain every earlier semantic and print-collation gap.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [
+          "gup6-queue-next"
+        ],
+        "reason": "Earlier broad forward queue coalesced to current81.1 handoff; the whole witness and all precise unresolved gaps remain unfinished."
+      },
+      "reason": "Reconcile retained legacy forward task with current81 read-only bounds; preserve ID/status/priority and all semantic queues.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation5-change-0169",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "gup5-queue-next",
+      "before": {
+        "id": "gup5-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā81.1–9 formal extraction of read-only preview first;81.10 first line previewed only, complete reading resumes81.10, then through92.",
+        "task": "Extract the read-only fragment before reading onward; complete the fuller Kṛtavīrya/son narrative and subsequent bounded endings.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [],
+        "reason": "The92-chapter witness and fuller family arc remain incomplete."
+      },
+      "after": {
+        "id": "gup5-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā81.1 formal extraction resumes here. Root has read81.1–14 and15a without extraction;15b onward through92 remains unread. Extract the whole inherited read-only fragment before further source-order reading.",
+        "task": "Resume formal source-order extraction at81.1 using gup6-queue-next. Do not duplicate72–80 extracted units; retain every earlier semantic and print-collation gap.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [
+          "gup6-queue-next"
+        ],
+        "reason": "Earlier broad forward queue coalesced to current81.1 handoff; the whole witness and all precise unresolved gaps remain unfinished."
+      },
+      "reason": "Reconcile retained legacy forward task with current81 read-only bounds; preserve ID/status/priority and all semantic queues.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation5-change-0170",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "rmd2-q-next",
+      "before": {
+        "id": "rmd2-q-next",
+        "source_id": "gp-src-mudgala",
+        "passage_target": "Mudgala2.19.1–23 root read-only,24a seen, author19.1–28 only displayed; no formal extraction. Continue2.19–74 then indexed3–9. New2.11/13/14/15/16/17 and earlier1/2 gaps remain.",
+        "task": "Resolve targeted first-khaṇḍa residual language while resuming next source-order body at2.19.1.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "All first-khaṇḍa bodies read; eight semantic/atomic chapter gaps remain.2.4/5/8/9 COMPLETE,2.6/7/10 PARTIAL."
+      },
+      "after": {
+        "id": "rmd2-q-next",
+        "source_id": "gp-src-mudgala",
+        "passage_target": "2.27.1 onward; khanda2 remainder and khandas3–9 as current registry;2.27.1–11 root-read-only and unextracted. Earlier first/second-khaṇḍa semantic gaps retained.",
+        "task": "Resume formal source-order reading/extraction at2.27.1 via mud6-q-next; do not duplicate19–26. Retain first-khaṇḍa residual-language tasks and all other exact semantic queues.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [
+          "mud6-q-next"
+        ],
+        "reason": "Earlier broad forward queue advanced beyond the now-read19–26 tranche without implying source completion."
+      },
+      "reason": "Reconcile retained legacy Mudgala handoff with current2.27 source order; no old gap erased or unread later khaṇḍa marked complete.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation5-change-0171",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "mud2-queue-kh2-next",
+      "before": {
+        "id": "mud2-queue-kh2-next",
+        "source_id": "gp-src-mudgala",
+        "passage_target": "Mudgala2.19.1–23 root read-only,24a seen, author19.1–28 only displayed; no formal extraction. Continue2.19–74 then indexed3–9. New2.11/13/14/15/16/17 and earlier1/2 gaps remain.",
+        "task": "Resume formal extraction at2.19.1 while retaining targeted earlier gaps and all nine khaṇḍas. Do not duplicate11–18 extracted bodies.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "New4,5,8,9 complete;6,7,10 precise partials; all other earlier grammar flags remain open."
+      },
+      "after": {
+        "id": "mud2-queue-kh2-next",
+        "source_id": "gp-src-mudgala",
+        "passage_target": "2.27.1 onward; khanda2 remainder and khandas3–9 as current registry;2.27.1–11 root-read-only and unextracted. Earlier first/second-khaṇḍa semantic gaps retained.",
+        "task": "Resume formal source-order reading/extraction at2.27.1 via mud6-q-next; do not duplicate19–26. Retain first-khaṇḍa residual-language tasks and all other exact semantic queues.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [
+          "mud6-q-next"
+        ],
+        "reason": "Earlier broad forward queue advanced beyond the now-read19–26 tranche without implying source completion."
+      },
+      "reason": "Reconcile retained legacy Mudgala handoff with current2.27 source order; no old gap erased or unread later khaṇḍa marked complete.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation5-change-0172",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "mud3-queue-forward-handoff",
+      "before": {
+        "id": "mud3-queue-forward-handoff",
+        "source_id": "gp-src-mudgala",
+        "passage_target": "Mudgala2.19.1–23 root read-only,24a seen, author19.1–28 only displayed; no formal extraction. Continue2.19–74 then indexed3–9. New2.11/13/14/15/16/17 and earlier1/2 gaps remain.",
+        "task": "Resume formal extraction at2.19.1 while retaining targeted earlier gaps and all nine khaṇḍas. Do not duplicate11–18 extracted bodies.",
+        "priority": "P1",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "New4,5,8,9 complete;6,7,10 precise partials; all other earlier grammar flags remain open."
+      },
+      "after": {
+        "id": "mud3-queue-forward-handoff",
+        "source_id": "gp-src-mudgala",
+        "passage_target": "2.27.1 onward; khanda2 remainder and khandas3–9 as current registry;2.27.1–11 root-read-only and unextracted. Earlier first/second-khaṇḍa semantic gaps retained.",
+        "task": "Resume formal source-order reading/extraction at2.27.1 via mud6-q-next; do not duplicate19–26. Retain first-khaṇḍa residual-language tasks and all other exact semantic queues.",
+        "priority": "P1",
+        "status": "OPEN",
+        "dependency_ids": [
+          "mud6-q-next"
+        ],
+        "reason": "Earlier broad forward queue advanced beyond the now-read19–26 tranche without implying source completion."
+      },
+      "reason": "Reconcile retained legacy Mudgala handoff with current2.27 source order; no old gap erased or unread later khaṇḍa marked complete.",
+      "evidence_ids": []
+    }
+  ],
+  "unresolved": "Exact remaining chapter omissions, open variants and NEEDS_REVIEW records are retained. All affected whole-scene story spines remain PARTIAL. Selective independent checks do not certify every new row."
+}

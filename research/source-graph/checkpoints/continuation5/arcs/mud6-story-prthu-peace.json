@@ -1,0 +1,1341 @@
+{
+  "checkpoint": "continuation5",
+  "completed_arc_id": "mud6-story-prthu-peace",
+  "graph_sha256": "c4af351fd8e2c786669610e2e9d56e1bb7f3e9b906dede60d84b0ae62ef3d7db",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checks complete; independent review selective. All declared interpretation gaps remain explicit.",
+  "story": {
+    "id": "mud6-story-prthu-peace",
+    "title": "Pṛthu seeks peace;Kumāras recall Śiva teaching and child Vināyaka;king/wife final merger",
+    "source_id": "gp-src-mudgala",
+    "witness_id": "gp-wit-sd-mudgala-2",
+    "scope": "2.25.1–64",
+    "event_ids": [
+      "mud6-event-prthu-four-kumaras-welcome",
+      "mud6-event-prthu-peace-request",
+      "mud6-event-kumaras-recall-siva-meditation",
+      "mud6-event-siva-ganapati-group-doctrine",
+      "mud6-event-siva-mind-reflection-peace",
+      "mud6-event-kumaras-kasyapa-child-meeting",
+      "mud6-event-kumaras-child-hymn",
+      "mud6-event-child-hymn-promises-kumaras-return",
+      "mud6-event-prthu-wife-final-merger"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Entire bounded cited Sanskrit arc read; significant named actors, relationships, boons/powers, dialogue and transition checks by author. Independent root review separate.",
+    "missing_sections": [],
+    "editorial_notes": "Source narration order. Embedded narratives have their own spines; parent records their framing transitions without duplicating events."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "mud6-event-prthu-four-kumaras-welcome",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-peace",
+        "sequence": 1,
+        "passage_ids": [
+          "mud6-p-prthu-four-kumaras-welcome"
+        ],
+        "participants": [
+          "mud6-en-prthu",
+          "mud-en-vishnu",
+          "mud2-en-four-kumaras",
+          "mud2-en-sanaka",
+          "mud-en-brahma"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Pṛthu teaches dharma and rules happily, described as Viṣṇu-form/equal prowess. Four Sanaka-led sons of Brahmā, ever child-aged, radiant and delusion-free, visit. Pṛthu rises, prostrates head at feet, worships with footwater/arghya/seats and massages their feet. He praises land/city/home/lineage/parents/learning/tapas as fortunate through visit, attributes sight to earlier merit, and asks their instructions. No guessed new parental genealogy from his praise.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-prthu-four-kumaras-welcome"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-prthu-four-kumaras-welcome",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-prthu-four-kumaras-welcome",
+          "locator": "Mudgala2.25.1–12",
+          "paraphrase": "Pṛthu teaches dharma and rules happily, described as Viṣṇu-form/equal prowess. Four Sanaka-led sons of Brahmā, ever child-aged, radiant and delusion-free, visit. Pṛthu rises, prostrates head at feet, worships with footwater/arghya/seats and massages their feet. He praises land/city/home/lineage/parents/learning/tapas as fortunate through visit, attributes sight to earlier merit, and asks their instructions. No guessed new parental genealogy from his praise.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud6-event-prthu-peace-request",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-peace",
+        "sequence": 2,
+        "passage_ids": [
+          "mud6-p-prthu-peace-request"
+        ],
+        "participants": [
+          "mud6-en-prthu",
+          "mud2-en-four-kumaras",
+          "mud-en-vakratunda"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Pleased by humility, Kumāras say they desire no task and are naked, have come because they heard king’s fame in heaven, and ask permission to return Brahmaloka. Pṛthu says he has enjoyed kingdom/varied pleasures and now asks yoga for peace. Recognizing qualification/disenchantment, they teach that full Gaṇeśa yoga-peace is to be worshipped with great devotion for peace. This is teacher exchange, not a direct new Gaṇeśa appearance.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-prthu-peace-request"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-prthu-peace-request",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-prthu-peace-request",
+          "locator": "Mudgala2.25.13–21",
+          "paraphrase": "Pleased by humility, Kumāras say they desire no task and are naked, have come because they heard king’s fame in heaven, and ask permission to return Brahmaloka. Pṛthu says he has enjoyed kingdom/varied pleasures and now asks yoga for peace. Recognizing qualification/disenchantment, they teach that full Gaṇeśa yoga-peace is to be worshipped with great devotion for peace. This is teacher exchange, not a direct new Gaṇeśa appearance.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud6-event-kumaras-recall-siva-meditation",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-peace",
+        "sequence": 3,
+        "passage_ids": [
+          "mud6-p-kumaras-recall-siva-meditation"
+        ],
+        "participants": [
+          "mud6-en-prthu",
+          "mud2-en-four-kumaras",
+          "gp-m-en-siva",
+          "mud-en-vakratunda"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Kumāras recount earlier visiting Śiva seated meditating beneath banyan at his abode. They bow and awaken him with hymns; ending meditation he says salutation to Gaṇeśa. Astonished, they ask who Gaṇādhipa is and why supposedly independent sahaja Śiva bows. Śiva joyfully explains primordial Gaṇapatya peace-knowledge. These are recollection inside Pṛthu teaching, not simultaneous Śiva visit to king.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-kumaras-recall-siva-meditation"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-kumaras-recall-siva-meditation",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-kumaras-recall-siva-meditation",
+          "locator": "Mudgala2.25.22–26",
+          "paraphrase": "Kumāras recount earlier visiting Śiva seated meditating beneath banyan at his abode. They bow and awaken him with hymns; ending meditation he says salutation to Gaṇeśa. Astonished, they ask who Gaṇādhipa is and why supposedly independent sahaja Śiva bows. Śiva joyfully explains primordial Gaṇapatya peace-knowledge. These are recollection inside Pṛthu teaching, not simultaneous Śiva visit to king.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud6-event-siva-ganapati-group-doctrine",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-peace",
+        "sequence": 4,
+        "passage_ids": [
+          "mud6-p-siva-ganapati-group-doctrine"
+        ],
+        "participants": [
+          "mud2-en-four-kumaras",
+          "gp-m-en-siva",
+          "mud-en-vakratunda",
+          "mud6-en-prthu"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "In recollection Śiva questions independent sahaja versus dependent threefold categories in Veda-described Brahman, and calls varied karma/yoga/knowledge forms māyā-associated. Union of actions is action-Brahman, similarly knowledge-Brahman. Gaṇa means group, union of external/internal differences; food/prāṇa and other Brahman-denoting words are gaṇas and Gaṇeśvara their lord. He is yoga of union/ayoga and all yogas; Śiva and others are his yoga-form gaṇas and bow. Māyā is obstacle/reflection-delusion, overcome by Vighnarāja service; Gaṇapatya yogins become Brahman. Śiva declares Gaṇeśa-form identity and difference as māyā. Claims attributed to recalled Śiva speech.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-siva-ganapati-group-doctrine"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-siva-ganapati-group-doctrine",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-siva-ganapati-group-doctrine",
+          "locator": "Mudgala2.25.27–35",
+          "paraphrase": "In recollection Śiva questions independent sahaja versus dependent threefold categories in Veda-described Brahman, and calls varied karma/yoga/knowledge forms māyā-associated. Union of actions is action-Brahman, similarly knowledge-Brahman. Gaṇa means group, union of external/internal differences; food/prāṇa and other Brahman-denoting words are gaṇas and Gaṇeśvara their lord. He is yoga of union/ayoga and all yogas; Śiva and others are his yoga-form gaṇas and bow. Māyā is obstacle/reflection-delusion, overcome by Vighnarāja service; Gaṇapatya yogins become Brahman. Śiva declares Gaṇeśa-form identity and difference as māyā. Claims attributed to recalled Śiva speech.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud6-event-siva-mind-reflection-peace",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-peace",
+        "sequence": 5,
+        "passage_ids": [
+          "mud6-p-siva-mind-reflection-peace"
+        ],
+        "participants": [
+          "mud2-en-four-kumaras",
+          "gp-m-en-siva",
+          "mud-en-vakratunda",
+          "mud-en-buddhi",
+          "mud-en-siddhi",
+          "mud6-en-prthu"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Śiva identifies fivefold mind as varied Buddhi, and sovereignty there as Siddhi. Gaṇeśa reflection amid two māyās is deluded; abandon reflected state/fivefold mind through Gaṇeśa service to become Cintāmaṇi. He questions operation of union and yoga in Gaṇeśa-identity, affirms nondifference and yoga-peace/Brahman attainment, and calls this his secret meditation, why he is Gaṇeśa’s servant and bows. Kumāras say doubt ended; they now wander Earth/heavens/nether hollows as Gaṇapatya yogins. Buddhi/Siddhi here are philosophical personifications, not new biological spouses or marriage scene.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-siva-mind-reflection-peace"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-siva-mind-reflection-peace",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-siva-mind-reflection-peace",
+          "locator": "Mudgala2.25.36–43",
+          "paraphrase": "Śiva identifies fivefold mind as varied Buddhi, and sovereignty there as Siddhi. Gaṇeśa reflection amid two māyās is deluded; abandon reflected state/fivefold mind through Gaṇeśa service to become Cintāmaṇi. He questions operation of union and yoga in Gaṇeśa-identity, affirms nondifference and yoga-peace/Brahman attainment, and calls this his secret meditation, why he is Gaṇeśa’s servant and bows. Kumāras say doubt ended; they now wander Earth/heavens/nether hollows as Gaṇapatya yogins. Buddhi/Siddhi here are philosophical personifications, not new biological spouses or marriage scene.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud6-event-kumaras-kasyapa-child-meeting",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-peace",
+        "sequence": 6,
+        "passage_ids": [
+          "mud6-p-kumaras-kasyapa-child-meeting"
+        ],
+        "participants": [
+          "mud6-en-prthu",
+          "mud2-en-four-kumaras",
+          "mud6-en-kasyapa-child-vinayaka",
+          "mud-en-kashyapa",
+          "mud6-en-kumaras-unnamed-kasi-king",
+          "mud2-en-kashi",
+          "mud6-en-vinayaka-child-companions"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Kumāras continue recollection:desiring Gaṇeśa sight, they learn deity has become Kaśyapa’s son and gone to devoted unnamed Kāśī king’s house for his work. They go Kāśī and see brahmacārin child-form Gaṇeśa among children, bow and hymn. This is source-local child manifestation; not merged with other-source two-sage Kāśī episodes or Divodāsa story.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-kumaras-kasyapa-child-meeting"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-kumaras-kasyapa-child-meeting",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-kumaras-kasyapa-child-meeting",
+          "locator": "Mudgala2.25.44–47",
+          "paraphrase": "Kumāras continue recollection:desiring Gaṇeśa sight, they learn deity has become Kaśyapa’s son and gone to devoted unnamed Kāśī king’s house for his work. They go Kāśī and see brahmacārin child-form Gaṇeśa among children, bow and hymn. This is source-local child manifestation; not merged with other-source two-sage Kāśī episodes or Divodāsa story.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud6-event-kumaras-child-hymn",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-peace",
+        "sequence": 7,
+        "passage_ids": [
+          "mud6-p-kumaras-child-hymn"
+        ],
+        "participants": [
+          "mud2-en-four-kumaras",
+          "mud6-en-kasyapa-child-vinayaka",
+          "mud-en-kashyapa",
+          "mud-en-aditi",
+          "mud-en-prakriti",
+          "mud-en-purusha",
+          "gp-m-en-siva",
+          "mud6-en-prthu"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Kumāras hymn Vināyaka as Kaśyapa beloved son, BORN FROM ADITI’S WOMB/brahmacārin, māyā-support/transcendent, devotion-bound/Heramba, eternal Brahman/lord of Brahmans playing yoga/ayoga, beginning/middle/end, Prakṛti/Puruṣa, nāda/anāda/subtle/gross, god/demon/human/Nāga/water/land forms and beyond māyā. Vedas/Śambhu cannot fully praise him; they are fortunate to see their yogin-family deity. Hymn womb-parentage attributed precisely to incarnation, not generic universal biological descent of Gaṇeśa.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-kumaras-child-hymn"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-kumaras-child-hymn",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-kumaras-child-hymn",
+          "locator": "Mudgala2.25.48–55",
+          "paraphrase": "Kumāras hymn Vināyaka as Kaśyapa beloved son, BORN FROM ADITI’S WOMB/brahmacārin, māyā-support/transcendent, devotion-bound/Heramba, eternal Brahman/lord of Brahmans playing yoga/ayoga, beginning/middle/end, Prakṛti/Puruṣa, nāda/anāda/subtle/gross, god/demon/human/Nāga/water/land forms and beyond māyā. Vedas/Śambhu cannot fully praise him; they are fortunate to see their yogin-family deity. Hymn womb-parentage attributed precisely to incarnation, not generic universal biological descent of Gaṇeśa.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud6-event-child-hymn-promises-kumaras-return",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-peace",
+        "sequence": 8,
+        "passage_ids": [
+          "mud6-p-child-hymn-promises-kumaras-return"
+        ],
+        "participants": [
+          "mud2-en-four-kumaras",
+          "mud6-en-kasyapa-child-vinayaka",
+          "mud6-en-kumaras-unnamed-kasi-king",
+          "mud6-en-vinayaka-child-companions",
+          "mud2-en-kashi",
+          "mud6-en-prthu",
+          "mud-en-vakratunda",
+          "mud6-en-kumaras-hymn-users"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Kumāras fall silent/prostrate; devotion-bound child Vināyaka says hymn gives yoga-peace to readers/hearers and he will give the desired object while himself moved by the hymn; Kumāras will become Gaṇapatyas like Śiva. No request words or Pṛthu-directed boon here. Child then plays with children like ordinary child. Kumāras visit Kāśī king, are honored, eat and return to their place. They conclude Pṛthu should worship Gaṇeśa as full peace-knowledge.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud6-power-kumaras-child-hymn-benefits",
+          "mud6-power-kumaras-ganapatya-promise"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-child-hymn-promises-kumaras-return",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-child-hymn-promises-kumaras-return",
+          "locator": "Mudgala2.25.56–61",
+          "paraphrase": "Kumāras fall silent/prostrate; devotion-bound child Vināyaka says hymn gives yoga-peace to readers/hearers and he will give the desired object while himself moved by the hymn; Kumāras will become Gaṇapatyas like Śiva. No request words or Pṛthu-directed boon here. Child then plays with children like ordinary child. Kumāras visit Kāśī king, are honored, eat and return to their place. They conclude Pṛthu should worship Gaṇeśa as full peace-knowledge.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud6-event-prthu-wife-final-merger",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-prthu-peace",
+        "sequence": 9,
+        "passage_ids": [
+          "mud6-p-prthu-wife-final-merger"
+        ],
+        "participants": [
+          "mud6-en-prthu",
+          "mud6-en-prthu-unnamed-wife",
+          "mud6-en-prthu-unnamed-sons",
+          "mud2-en-four-kumaras",
+          "mud-en-brahma",
+          "mud-en-vakratunda",
+          "mud6-en-prthu-account-users"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Kumāras return Brahmā’s world. Pṛthu divides kingdom among UNNAMED SONS(plural) and goes forest. Following yoga progression he becomes Gaṇapatya; at end humble king WITH WIFE merges in Gaṇeśa. The wife is unnamed, not remembered Arci. Hearing/reading Pṛthu account gives all. Actual merger is distinct from embedded Vināyaka promise to Kumāras.",
+        "outcome": "Pṛthu and wife actually merge in Gaṇeśa after forest practice.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud6-power-prthu-account-benefits"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-prthu-wife-final-merger"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-prthu-wife-final-merger",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-prthu-wife-final-merger",
+          "locator": "Mudgala2.25.62–64",
+          "paraphrase": "Kumāras return Brahmā’s world. Pṛthu divides kingdom among UNNAMED SONS(plural) and goes forest. Following yoga progression he becomes Gaṇapatya; at end humble king WITH WIFE merges in Gaṇeśa. The wife is unnamed, not remembered Arci. Hearing/reading Pṛthu account gives all. Actual merger is distinct from embedded Vināyaka promise to Kumāras.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gp-m-en-siva",
+      "name": "Śiva / Śambhu / Sadāśiva / Śaṅkara",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-matsara-austerity",
+        "mud-e-divine-refuge",
+        "mud-e-andhaka-envoy",
+        "mud-e-matsara-karma-argument",
+        "mud-e-kailasa-battle",
+        "mud-e-matsara-captures-siva",
+        "mud-e-world-allocation",
+        "mud-e-datta-counsel",
+        "mud-e-vak-manifest",
+        "mud-e-siva-pasupata",
+        "mud-e-sons-fell-siva",
+        "mud-e-following-witness-previews",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-sati-request",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sati-death-rebirth",
+        "rmd2-e-shiva-grief",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-mahat-birth",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-body-worlds",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement",
+        "mud6-e-rahugana-brahmin-praise"
+      ]
+    },
+    {
+      "id": "mud-en-brahma",
+      "name": "Brahmā",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-naimisha",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-assembly",
+        "mud2-e-yaj-arrives",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement",
+        "mud6-e-cosmic-milking-role-table"
+      ]
+    },
+    {
+      "id": "mud-en-vishnu",
+      "name": "Viṣṇu",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-senses-gods",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders",
+        "mud5-e-visnu-world-laksmis",
+        "mud6-e-rahugana-brahmin-praise"
+      ]
+    },
+    {
+      "id": "mud-en-kashyapa",
+      "name": "Kaśyapa",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-sacrifice-duels",
+        "mud5-e-solar-sages-rein-holders",
+        "mud6-e-prthu-rule-hundred-sacrifice"
+      ]
+    },
+    {
+      "id": "mud-en-vakratunda",
+      "name": "Vakratunda / Gaṇeśa / Gaṇanāyaka / Vighnapa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "rmd2-e-invocation",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-tattva-boon",
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-tapas",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "rmd2-e-five-request-hymn-fruits",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement",
+        "mud6-e-bharata-angirasa-birth"
+      ]
+    },
+    {
+      "id": "mud-en-siddhi",
+      "name": "Siddhi",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-vak-manifest",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "mud2-e-field-layout",
+        "mud3-e-inner-manifestation",
+        "mud4-e-atri-mind-siddhi-initiation",
+        "mud6-e-bharata-mayuresa-appearance"
+      ]
+    },
+    {
+      "id": "mud-en-buddhi",
+      "name": "Buddhi",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-vak-manifest",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "mud2-e-field-layout",
+        "mud3-e-inner-manifestation",
+        "mud4-e-atri-mind-siddhi-initiation",
+        "mud6-e-bharata-mayuresa-appearance"
+      ]
+    },
+    {
+      "id": "mud-en-purusha",
+      "name": "Puruṣa (in Vakratunda’s explanation)",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-vak-impartiality-explanation",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-mahat-birth",
+        "rmd2-e-tattva-teachers",
+        "mud5-e-siva-world-androgyny",
+        "mud6-e-kumaras-child-hymn"
+      ]
+    },
+    {
+      "id": "mud-en-prakriti",
+      "name": "Prakṛti (in Vakratunda’s explanation)",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-vak-impartiality-explanation",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-mahat-birth",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-eight-envelope",
+        "mud5-e-siva-world-androgyny",
+        "mud6-e-kumaras-child-hymn"
+      ]
+    },
+    {
+      "id": "mud-en-aditi",
+      "name": "Aditi",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-bali-ritual-plan",
+        "mud6-e-kumaras-child-hymn"
+      ]
+    },
+    {
+      "id": "mud2-en-kashi",
+      "name": "Kāśī / Avimukta (personified field)",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud2-e-field-assembly",
+        "mud6-e-kumaras-kasyapa-child-meeting"
+      ]
+    },
+    {
+      "id": "mud2-en-sanaka",
+      "name": "Sanaka",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud2-e-kumara-creation",
+        "mud5-e-higher-egg-worlds",
+        "mud6-e-prthu-four-kumaras-welcome"
+      ]
+    },
+    {
+      "id": "mud2-en-four-kumaras",
+      "name": "Four body-born Kumāras, sons of Brahmā",
+      "type": "FAMILY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud2-e-kumara-creation",
+        "mud6-e-prthu-four-kumaras-welcome"
+      ]
+    },
+    {
+      "id": "mud6-en-prthu",
+      "name": "Pṛthu, Viṣṇu-kalā-associated king from Vena right aṅga",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ]
+    },
+    {
+      "id": "mud6-en-prthu-unnamed-wife",
+      "name": "Unnamed Pṛthu wife, co-emergent Viṣṇu-kalā-associated form",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-vena-body-nisada-prthu-pair"
+      ]
+    },
+    {
+      "id": "mud6-en-kasyapa-child-vinayaka",
+      "name": "Vināyaka child, Kaśyapa-son seen by Kumāras at Kāśī",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-kumaras-kasyapa-child-meeting"
+      ]
+    },
+    {
+      "id": "mud6-en-kumaras-unnamed-kasi-king",
+      "name": "Unnamed Kāśī king hosting Kaśyapa-child Vināyaka",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-kumaras-kasyapa-child-meeting"
+      ]
+    },
+    {
+      "id": "mud6-en-vinayaka-child-companions",
+      "name": "Children playing with Kaśyapa-child Vināyaka",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-kumaras-kasyapa-child-meeting"
+      ]
+    },
+    {
+      "id": "mud6-en-kumaras-hymn-users",
+      "name": "Readers/hearers in Kumāra-child hymn benefits",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-child-hymn-promises-kumaras-return"
+      ]
+    },
+    {
+      "id": "mud6-en-prthu-unnamed-sons",
+      "name": "Unnamed Pṛthu sons receiving divided kingdom",
+      "type": "FAMILY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-prthu-wife-final-merger"
+      ]
+    },
+    {
+      "id": "mud6-en-prthu-account-users",
+      "name": "Hearers/readers of Pṛthu account",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-prthu-wife-final-merger"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "mud6-r-kumaras-prthu-visit",
+      "subject_id": "mud2-en-four-kumaras",
+      "predicate": "visits",
+      "object_id": "mud6-en-prthu",
+      "evidence_ids": [
+        "mud6-e-prthu-four-kumaras-welcome"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-kumaras-prthu-visit"
+    },
+    {
+      "id": "mud6-r-prthu-kumaras-welcome",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "worships_and_massages_feet_of",
+      "object_id": "mud2-en-four-kumaras",
+      "evidence_ids": [
+        "mud6-e-prthu-four-kumaras-welcome"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-prthu-kumaras-welcome"
+    },
+    {
+      "id": "mud6-r-prthu-kumaras-teaching",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "receives_yoga_teaching_from",
+      "object_id": "mud2-en-four-kumaras",
+      "evidence_ids": [
+        "mud6-e-prthu-peace-request"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-prthu-kumaras-teaching",
+      "kinship_kind": "GURU"
+    },
+    {
+      "id": "mud6-r-kumaras-siva-teacher",
+      "subject_id": "mud2-en-four-kumaras",
+      "predicate": "receives_recalled_teaching_from",
+      "object_id": "gp-m-en-siva",
+      "evidence_ids": [
+        "mud6-e-kumaras-recall-siva-meditation"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-kumaras-siva-teacher",
+      "kinship_kind": "RECOLLECTED_GURU"
+    },
+    {
+      "id": "mud6-r-kasychild-ganesa-form",
+      "subject_id": "mud6-en-kasyapa-child-vinayaka",
+      "predicate": "manifestation_of",
+      "object_id": "mud-en-vakratunda",
+      "evidence_ids": [
+        "mud6-e-kumaras-kasyapa-child-meeting"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-kasychild-ganesa-form"
+    },
+    {
+      "id": "mud6-r-kasychild-kasyapa",
+      "subject_id": "mud6-en-kasyapa-child-vinayaka",
+      "predicate": "incarnate_son_of",
+      "object_id": "mud-en-kashyapa",
+      "evidence_ids": [
+        "mud6-e-kumaras-kasyapa-child-meeting"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-kasychild-kasyapa",
+      "kinship_kind": "CONTEXTUAL_INCARNATION_PARENT"
+    },
+    {
+      "id": "mud6-r-kasychild-kasi-house",
+      "subject_id": "mud6-en-kasyapa-child-vinayaka",
+      "predicate": "stays_with",
+      "object_id": "mud6-en-kumaras-unnamed-kasi-king",
+      "evidence_ids": [
+        "mud6-e-kumaras-kasyapa-child-meeting"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-kasychild-kasi-house"
+    },
+    {
+      "id": "mud6-r-kasiking-realm",
+      "subject_id": "mud6-en-kumaras-unnamed-kasi-king",
+      "predicate": "rules",
+      "object_id": "mud2-en-kashi",
+      "evidence_ids": [
+        "mud6-e-kumaras-kasyapa-child-meeting"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-kasiking-realm"
+    },
+    {
+      "id": "mud6-r-kumaras-child-visit",
+      "subject_id": "mud2-en-four-kumaras",
+      "predicate": "visits",
+      "object_id": "mud6-en-kasyapa-child-vinayaka",
+      "evidence_ids": [
+        "mud6-e-kumaras-kasyapa-child-meeting"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-kumaras-child-visit"
+    },
+    {
+      "id": "mud6-r-kasychild-aditi-womb",
+      "subject_id": "mud6-en-kasyapa-child-vinayaka",
+      "predicate": "hymned_as_womb_born_of",
+      "object_id": "mud-en-aditi",
+      "evidence_ids": [
+        "mud6-e-kumaras-child-hymn"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-kasychild-aditi-womb",
+      "kinship_kind": "HYMN_INCARNATION_PARENT"
+    },
+    {
+      "id": "mud6-r-prthu-sons-group",
+      "subject_id": "mud6-en-prthu-unnamed-sons",
+      "predicate": "collective_children_of",
+      "object_id": "mud6-en-prthu",
+      "evidence_ids": [
+        "mud6-e-prthu-wife-final-merger"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-prthu-sons-group",
+      "kinship_kind": "EXPLICIT_PARENT_GROUP"
+    },
+    {
+      "id": "mud6-r-prthu-kingdom-division",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "divides_kingdom_among",
+      "object_id": "mud6-en-prthu-unnamed-sons",
+      "evidence_ids": [
+        "mud6-e-prthu-wife-final-merger"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-prthu-kingdom-division"
+    },
+    {
+      "id": "mud6-r-prwife-ganesa-merger",
+      "subject_id": "mud6-en-prthu-unnamed-wife",
+      "predicate": "merges_in",
+      "object_id": "mud-en-vakratunda",
+      "evidence_ids": [
+        "mud6-e-prthu-wife-final-merger"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-prwife-ganesa-merger"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "mud6-power-kumaras-child-hymn-benefits",
+      "type": "POWER",
+      "recipient_id": "mud6-en-kumaras-hymn-users",
+      "grantor_id": "mud6-en-kasyapa-child-vinayaka",
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud6-e-child-hymn-promises-kumaras-return"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "grantor_id": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "trigger": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "granted": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "notes": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "mechanism": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Vināyaka speech in recollection, not Pṛthu request/new king apparition. The deity’s hymn-moved state is not an additional emotional requirement imposed on readers or hearers.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Yoga-peace and desired benefits(57–58).",
+      "mechanism": "Vināyaka promises the desired object while himself moved by the hymn (verse 58).",
+      "trigger": "Reading or hearing the hymn (verse 57).",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud6-power-kumaras-ganapatya-promise",
+      "type": "BOON",
+      "recipient_id": "mud2-en-four-kumaras",
+      "grantor_id": "mud6-en-kasyapa-child-vinayaka",
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud6-e-child-hymn-promises-kumaras-return"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "grantor_id": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "granted": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "austerity_or_circumstances": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ],
+        "notes": [
+          "mud6-e-child-hymn-promises-kumaras-return"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "No additional request stated.",
+      "motive": null,
+      "austerity_or_circumstances": "Devoted hymn/prostration.",
+      "requested": null,
+      "granted": "Become Gaṇapatyas like Śiva(58).",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud6-power-prthu-account-benefits",
+      "type": "POWER",
+      "recipient_id": "mud6-en-prthu-account-users",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud6-e-prthu-wife-final-merger"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud6-e-prthu-wife-final-merger"
+        ],
+        "trigger": [
+          "mud6-e-prthu-wife-final-merger"
+        ],
+        "granted": [
+          "mud6-e-prthu-wife-final-merger"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "All benefits(64).",
+      "mechanism": null,
+      "trigger": "Hear/read Pṛthu account.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "mud6-a-kumaras-prthu-visit",
+      "subject_id": "mud2-en-four-kumaras",
+      "predicate": "visits",
+      "object_id": "mud6-en-prthu",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-prthu-four-kumaras-welcome"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-kumaras-welcome",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "worships_and_massages_feet_of",
+      "object_id": "mud2-en-four-kumaras",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-prthu-four-kumaras-welcome"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-kumaras-prthu-description",
+      "subject_id": "mud2-en-four-kumaras",
+      "predicate": "source_description",
+      "object_id": null,
+      "value": "Four Brahmā sons, Sanaka-led, ever child-aged, radiant/delusion-free.",
+      "evidence_ids": [
+        "mud6-e-prthu-four-kumaras-welcome"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-kumaras-teaching",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "receives_yoga_teaching_from",
+      "object_id": "mud2-en-four-kumaras",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-prthu-peace-request"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-peace-request",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "asks_teaching",
+      "object_id": null,
+      "value": "After enjoying kingdom/pleasures, asks yoga for peace.",
+      "evidence_ids": [
+        "mud6-e-prthu-peace-request"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-kumaras-siva-teacher",
+      "subject_id": "mud2-en-four-kumaras",
+      "predicate": "receives_recalled_teaching_from",
+      "object_id": "gp-m-en-siva",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-kumaras-recall-siva-meditation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-siva-meditation-salutation",
+      "subject_id": "gp-m-en-siva",
+      "predicate": "recalled_action",
+      "object_id": null,
+      "value": "Meditates beneath banyan; on awakening says salutation to Gaṇeśa; Kumāras question supposed independent sahaja status.",
+      "evidence_ids": [
+        "mud6-e-kumaras-recall-siva-meditation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-siva-group-word-teaching",
+      "subject_id": "gp-m-en-siva",
+      "predicate": "recalled_attributed_teaching",
+      "object_id": null,
+      "value": "Gaṇa means group/union of internal-external distinctions; food/prāṇa Brahman words as gaṇas; Gaṇeśa lord/yoga of all yogas; Vighnarāja service overcomes māyā.",
+      "evidence_ids": [
+        "mud6-e-siva-ganapati-group-doctrine"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-siva-reflection-teaching",
+      "subject_id": "gp-m-en-siva",
+      "predicate": "recalled_attributed_teaching",
+      "object_id": null,
+      "value": "Fivefold mind=Buddhi; sovereignty=Siddhi; reflection amid māyās; discard reflected mind through service; Gaṇeśa identity, peace and servant devotion.",
+      "evidence_ids": [
+        "mud6-e-siva-mind-reflection-peace"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-kumaras-siva-teaching-result",
+      "subject_id": "mud2-en-four-kumaras",
+      "predicate": "recalled_outcome",
+      "object_id": null,
+      "value": "Doubts ended; wander Earth, heavens, nether hollows as Gaṇapatya yogins.",
+      "evidence_ids": [
+        "mud6-e-siva-mind-reflection-peace"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-kasychild-ganesa-form",
+      "subject_id": "mud6-en-kasyapa-child-vinayaka",
+      "predicate": "manifestation_of",
+      "object_id": "mud-en-vakratunda",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-kumaras-kasyapa-child-meeting"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-kasychild-kasyapa",
+      "subject_id": "mud6-en-kasyapa-child-vinayaka",
+      "predicate": "incarnate_son_of",
+      "object_id": "mud-en-kashyapa",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-kumaras-kasyapa-child-meeting"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-kasychild-kasi-house",
+      "subject_id": "mud6-en-kasyapa-child-vinayaka",
+      "predicate": "stays_with",
+      "object_id": "mud6-en-kumaras-unnamed-kasi-king",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-kumaras-kasyapa-child-meeting"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-kasiking-realm",
+      "subject_id": "mud6-en-kumaras-unnamed-kasi-king",
+      "predicate": "rules",
+      "object_id": "mud2-en-kashi",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-kumaras-kasyapa-child-meeting"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-kumaras-child-visit",
+      "subject_id": "mud2-en-four-kumaras",
+      "predicate": "visits",
+      "object_id": "mud6-en-kasyapa-child-vinayaka",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-kumaras-kasyapa-child-meeting"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-kasychild-narrator-form",
+      "subject_id": "mud6-en-kasyapa-child-vinayaka",
+      "predicate": "recalled_narrator_description",
+      "object_id": null,
+      "value": "Brahmacārin/child-form among children; Kaśyapa-son manifestation.",
+      "evidence_ids": [
+        "mud6-e-kumaras-kasyapa-child-meeting"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-kasychild-aditi-womb",
+      "subject_id": "mud6-en-kasyapa-child-vinayaka",
+      "predicate": "hymned_as_womb_born_of",
+      "object_id": "mud-en-aditi",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-kumaras-child-hymn"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-kumaras-child-hymn-ontology",
+      "subject_id": "mud6-en-kasyapa-child-vinayaka",
+      "predicate": "source_hymn_attribution",
+      "object_id": null,
+      "value": "Kaśyapa-son/Aditi-womb; brahmacārin; māyā support/transcendence; Brahman/yoga; Prakṛti/Puruṣa and diverse forms; family deity.",
+      "evidence_ids": [
+        "mud6-e-kumaras-child-hymn"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-sons-group",
+      "subject_id": "mud6-en-prthu-unnamed-sons",
+      "predicate": "collective_children_of",
+      "object_id": "mud6-en-prthu",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-prthu-wife-final-merger"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-kingdom-division",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "divides_kingdom_among",
+      "object_id": "mud6-en-prthu-unnamed-sons",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-prthu-wife-final-merger"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prthu-wife-final-merger",
+      "subject_id": "mud6-en-prthu",
+      "predicate": "narrated_outcome",
+      "object_id": null,
+      "value": "Forest yoga→Gaṇapatya status→at end Gaṇeśa merger WITH unnamed wife.",
+      "evidence_ids": [
+        "mud6-e-prthu-wife-final-merger"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-prwife-ganesa-merger",
+      "subject_id": "mud6-en-prthu-unnamed-wife",
+      "predicate": "merges_in",
+      "object_id": "mud-en-vakratunda",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-prthu-wife-final-merger"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "sources": [],
+  "witnesses": [],
+  "passages": [
+    {
+      "id": "rfix4-p-readonly-mudgala2-19",
+      "source_id": "gp-src-mudgala",
+      "witness_id": "gp-wit-sd-mudgala-2",
+      "book": null,
+      "khanda": "2",
+      "chapter": 19,
+      "verses": "1–23;24a incidentally seen",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "locator": "Mudgala2.19.1–23;24a fragment",
+      "reading_status": "PARTIALLY_READ",
+      "extraction_status": "UNEXAMINED",
+      "limitations": "Root read the displayed fragment during independent18 review; no formal narrative/actor/relationship/boon extraction. Resume19.1, do not skip the fragment."
+    },
+    {
+      "id": "rfix4-p-readonly-upasana72",
+      "source_id": "gp-src-ganesha",
+      "witness_id": "gp-wit-sd-upasana",
+      "book": null,
+      "khanda": "Upāsanā",
+      "chapter": 72,
+      "verses": "1–30",
+      "url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "locator": "Upāsanā72.1–30",
+      "reading_status": "PARTIALLY_READ",
+      "extraction_status": "UNEXAMINED",
+      "limitations": "Author read-only fragment reported in frozen gup5. No formal narrative/actor/relationship/boon extraction;31 onward unread. Resume72.1."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "rfix4-e-manor-context-gloss",
+      "source_id": "gp-src-ganesha",
+      "witness_id": "gp-wit-sd-krida",
+      "passage_id": "gkr4-p-042",
+      "locator": "Krīḍā42.6; contextual comparison31.3/5/8",
+      "paraphrase": "Contextual lexical gloss of manor balāt: by mantra-power. The primary manu dictionary entry includes mantra/incantation as well as thought; the weapon context and31 mantra/mahāmanu/manu-japa support this choice. This is a bounded interpretation, not an explicit named mantra string or intervention actor.",
+      "classification": "INFERENCE",
+      "verification_status": "NEEDS_REVIEW",
+      "verifier": "Root and independent Krīḍā author, lexical/context comparison",
+      "verification_notes": "Monier-Williams headword manu, https://sanskrit.uohyd.ac.in/SKT/MW/195.html. No alternate print collation.42.10 keśābhyāṃ actor remains OPEN. The primary dictionary HTML was read; attempted PDF scan rendering failed and was not used for image-based certification."
+    }
+  ],
+  "entities": [
+    {
+      "id": "rfix4-en-pulaha-hymn-audience",
+      "name": "Mortals reading or hearing Pulaha’s hymn",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-pulaha-devotion-boon"
+      ]
+    },
+    {
+      "id": "rfix4-en-vighnaraja-reflection-beneficiaries",
+      "name": "Śiva, Viṣṇu and all beings in Bharata’s Vighnarāja-grace reflection",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-deer-body-ending"
+      ]
+    }
+  ],
+  "assertions": [
+    {
+      "id": "rfix4-a-candra-negative-qualities",
+      "subject_id": "gup4-en-022",
+      "predicate": "described_without",
+      "object_id": null,
+      "value": "Qualities such as aṇimā, according to printed aṇimādiguṇāpeta at53.3.",
+      "evidence_ids": [
+        "gup4-e-019"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "rfix4-a-manor-context-gloss",
+      "subject_id": "gkr4-en-vakratunda40",
+      "predicate": "contextually_glossed_weapon_mechanism",
+      "object_id": null,
+      "value": "Parvatāstra by mantra-power, as a contextual reading of manor balāt; no named mantra supplied.",
+      "evidence_ids": [
+        "rfix4-e-manor-context-gloss"
+      ],
+      "verification_status": "NEEDS_REVIEW"
+    }
+  ],
+  "relationships": [],
+  "boons_and_powers": [],
+  "narrative_events": [],
+  "story_spines": [],
+  "variants_and_conflicts": [],
+  "queue": [],
+  "updates": [
+    {
+      "table": "evidence",
+      "id": "gup4-e-019",
+      "fields": {
+        "paraphrase": "Himavat tells Pārvatī of the vow practiced by Candraṅgada and his wife Indumatī. The king rules Karṇa city in Mālava, knows Vedas and śāstras, sacrifices and gives generously, and has a brilliant court. Verse 3 prints aṇimādiguṇāpeta: literally free from qualities such as aṇimā. The printed negative qualifier is retained, without emending it to guṇopeta or attributing miraculous perfections. Indumatī is virtuous, serves her husband and parents-in-law, handles household duties and worships gods and guests. Ministers strongly urge the king to abandon the grievously sinful killing involved in hunting.",
+        "verification_status": "VERIFIED",
+        "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately. Root and a second author checked the printed qualifier53.3 and Monier-Williams apeta, free-from sense in compounds (https://sanskrit.uohyd.ac.in/SKT/MW/12.html). This verifies the limited literal digital reading; print authorial intent and a possible copying error remain uncollated."
+      },
+      "reason": "Independent literal lexical clarification of53.3; no silent emendation.",
+      "evidence_ids": [
+        "gup4-e-019"
+      ]
+    },
+    {
+      "table": "narrative_events",
+      "id": "gup4-event-019",
+      "fields": {
+        "details": "Himavat tells Pārvatī of the vow practiced by Candraṅgada and his wife Indumatī. The king rules Karṇa city in Mālava, knows Vedas and śāstras, sacrifices and gives generously, and has a brilliant court. Verse 3 prints aṇimādiguṇāpeta: literally free from qualities such as aṇimā. The printed negative qualifier is retained, without emending it to guṇopeta or attributing miraculous perfections. Indumatī is virtuous, serves her husband and parents-in-law, handles household duties and worships gods and guests. Ministers strongly urge the king to abandon the grievously sinful killing involved in hunting.",
+        "outcome": "Royal family and ministers’ warning introduced; printed absence qualifier preserved literally, with no supernatural perfection granted.",
+        "verification_status": "VERIFIED"
+      },
+      "reason": "Same53.3 negative qualifier clarification; other chapter gaps remain.",
+      "evidence_ids": [
+        "gup4-e-019"
+      ]
+    },
+    {
+      "table": "passages",
+      "id": "gup4-p-53-1-7",
+      "fields": {
+        "extraction_status": "COMPLETE",
+        "limitations": "53.3 literal apeta qualifier checked; full chapter remains PARTIAL for53.15 minister clause. Alternate print authorial reading not established."
+      },
+      "reason": "Bounded53.1–7 excerpt no longer has the withheld capacity qualifier.",
+      "evidence_ids": [
+        "gup4-e-019"
+      ]
+    },
+    {
+      "table": "variants_and_conflicts",
+      "id": "gup4-var-53-capacity",
+      "fields": {
+        "description": "53.3 printed aṇimādiguṇāpeta has been read literally as free from aṇimā and analogous qualities. An alternate authorial reading or copying error is not established; no change to guṇopeta is made.",
+        "resolution": "Literal digital qualifier clarified independently; print/authorial variant question remains OPEN."
+      },
+      "reason": "Separate literal lexical resolution from uncollated print intent.",
+      "evidence_ids": [
+        "gup4-e-019"
+      ]
+    },
+    {
+      "table": "story_spines",
+      "id": "gup4-story-candrangada",
+      "fields": {
+        "missing_sections": [
+          "53.15 minister bhage clause and55.16 ritual wording remain unresolved.53.3 literal absence qualifier is now extracted; alternate print intent remains uncollated."
+        ]
+      },
+      "reason": "Narrow the documented old omission while retaining PARTIAL for other source clauses.",
+      "evidence_ids": [
+        "gup4-e-019"
+      ]
+    },
+    {
+      "table": "evidence",
+      "id": "gkr4-e-astra-agency-review",
+      "fields": {
+        "verification_notes": "Preserve the two literal clauses; do not substitute remembered weapon diagrams or interpret keśābhyām as hair. Exact intervention agency unresolved. Contextual manu=mantra gloss is separately recorded as INFERENCE in rfix4-e-manor-context-gloss; raw direct clause and unresolved42.10 actor remain unchanged."
+      },
+      "reason": "Keep a supported lexical interpretation explicitly separate from direct-text certainty.",
+      "evidence_ids": [
+        "rfix4-e-manor-context-gloss"
+      ]
+    },
+    {
+      "table": "boons_and_powers",
+      "id": "gkr4-power-vakra-astra-counters",
+      "fields": {
+        "notes": "Exact agency ending the pair’s collateral fire unresolved; do not attribute that clause to this recipient. Contextual manu=mantra gloss is separately recorded as INFERENCE in rfix4-e-manor-context-gloss; raw direct clause and unresolved42.10 actor remain unchanged."
+      },
+      "reason": "Keep a supported lexical interpretation explicitly separate from direct-text certainty.",
+      "evidence_ids": [
+        "rfix4-e-manor-context-gloss"
+      ]
+    }
+  ],
+  "chapter_coverage": [
+    {
+      "source_id": "gp-src-ganesha",
+      "witness_id": "gp-wit-sd-upasana",
+      "book": null,
+      "khanda": "Upāsanā",
+      "chapter": 53,
+      "state": "PARTIAL",
+      "read_entire_chapter": true,
+      "narrative_extracted": true,
+      "characters_extracted": false,
+      "relationships_extracted": true,
+      "boons_powers_extracted": false,
+      "checked": false,
+      "passage_ids": [
+        "gup4-p-53-1-7",
+        "gup4-p-53-6-11",
+        "gup4-p-53-12-16",
+        "gup4-p-53-17-24",
+        "gup4-p-53-25-31",
+        "gup4-p-53-32-42"
+      ],
+      "evidence_ids": [
+        "gup4-e-019",
+        "gup4-e-020",
+        "gup4-e-021",
+        "gup4-e-022",
+        "gup4-e-023",
+        "gup4-e-024"
+      ],
+      "omissions": [
+        "53.15 minister clause bhage kṛtvā remains unresolved.53.3 literal apeta absence qualifier is now extracted; alternate print intent is uncollated."
+      ],
+      "blocking_reason": "Important source-word semantics withheld.",
+      "independent_review_status": "PENDING",
+      "independent_review_notes": "Root and Upāsanā second author confirmed the literal53.3 reading; other chapter semantics are not fully independently certified."
+    },
+    {
+      "source_id": "gp-src-mudgala",
+      "witness_id": "gp-wit-sd-mudgala-2",
+      "book": null,
+      "khanda": "2",
+      "chapter": 19,
+      "state": "IN_PROGRESS",
+      "read_entire_chapter": false,
+      "narrative_extracted": false,
+      "characters_extracted": false,
+      "relationships_extracted": false,
+      "boons_powers_extracted": false,
+      "checked": false,
+      "passage_ids": [
+        "rfix4-p-readonly-mudgala2-19"
+      ],
+      "evidence_ids": [],
+      "omissions": [
+        "Root read-only19.1–23 and first half24. All extraction pending; remaining body not read. Formal resume19.1."
+      ],
+      "blocking_reason": null
+    },
+    {
+      "source_id": "gp-src-ganesha",
+      "witness_id": "gp-wit-sd-upasana",
+      "book": null,
+      "khanda": "Upāsanā",
+      "chapter": 72,
+      "state": "IN_PROGRESS",
+      "read_entire_chapter": false,
+      "narrative_extracted": false,
+      "characters_extracted": false,
+      "relationships_extracted": false,
+      "boons_powers_extracted": false,
+      "checked": false,
+      "passage_ids": [
+        "rfix4-p-readonly-upasana72"
+      ],
+      "evidence_ids": [],
+      "omissions": [
+        "Author read-only72.1–30. All extraction pending;72.31 onward unread. Formal resume72.1."
+      ],
+      "blocking_reason": null
+    }
+  ],
+  "changes": [
+    "Literal53.3 apeta absence qualifier extracted without emending the digital text; affected chapter/spine remains PARTIAL for other gaps.",
+    "42.6 contextual mantra-power gloss separated as INFERENCE/NEEDS_REVIEW; no intervention actor or seed string guessed.",
+    "Read-only2.19 fragment registered without claiming extraction or whole-body reading.",
+    "Frozen-author read-only72.1–30 is given an exact passage registration; no completion or narrative claim added.",
+    "Independent2.18 review separates hymn readers/hearers from the Śiva/Viṣṇu/all-beings reflection, using two source-supported beneficiary-class nodes; existing cosmography audience retained."
+  ]
+}

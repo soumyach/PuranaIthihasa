@@ -1,0 +1,3754 @@
+{
+  "schema_version": "0.1.0",
+  "generated_at": "2026-10-11T08:40:55+05:30",
+  "scope": "Prompt-listed Devī/Gaṇeśa sources first; full expanded corpus deferred by user.",
+  "sources": [
+    {
+      "id": "cat-agni",
+      "title_sanskrit": "Agnipurāṇa",
+      "title_variants": [
+        "Agni Purana"
+      ],
+      "category": "PURANA",
+      "traditions": [
+        "Encyclopedic Purāṇic traditions"
+      ],
+      "classification_notes": "Category is an inventory label; traditional list and recension classification must be independently sourced.",
+      "urls": [
+        "https://www.wisdomlib.org/hinduism/book/the-agni-purana"
+      ],
+      "structure": {
+        "chapter_inventory": "Online chapter contents; inventory not exhaustively transcribed"
+      },
+      "access_status": "ONLINE_TEXT",
+      "examination_status": "PARTIALLY_READ",
+      "relevant_sections": [
+        "50: goddess image",
+        "52: goddess forms/Mātṛkā iconography",
+        "71: Gaṇeśa worship"
+      ],
+      "uncertainties": [
+        "Read iconographic text as prescriptions, not events or biological genealogy. Sanskrit text links and print edition must be collated."
+      ],
+      "bibliographic_provenance": [
+        {
+          "url": "https://www.wisdomlib.org/hinduism/book/the-agni-purana",
+          "locator": "Title, attribution and contents or catalogue record",
+          "status": "PARTIALLY_READ"
+        }
+      ]
+    },
+    {
+      "id": "cat-brahmanda",
+      "title_sanskrit": "Brahmāṇḍapurāṇa",
+      "title_variants": [
+        "Brahmanda Purana"
+      ],
+      "category": "PURANA",
+      "traditions": [
+        "Purāṇic traditions"
+      ],
+      "classification_notes": "Category is an inventory label; traditional list and recension classification must be independently sourced.",
+      "urls": [
+        "https://www.wisdomlib.org/hinduism/book/the-brahmanda-purana&lang=en"
+      ],
+      "structure": {
+        "chapter_inventory": "Online main book index reviewed; Lalitopākhyāna separately registered by lal track"
+      },
+      "access_status": "ONLINE_TEXT",
+      "examination_status": "INDEX_REVIEWED",
+      "relevant_sections": [
+        "Lalitopākhyāna (separate track)",
+        "Embedding and appendices to collate"
+      ],
+      "uncertainties": [
+        "Parent work and separately circulating supplements require edition-level collation. Site1958 attribution is not established publication history."
+      ],
+      "bibliographic_provenance": [
+        {
+          "url": "https://www.wisdomlib.org/hinduism/book/the-brahmanda-purana&lang=en",
+          "locator": "Title, attribution and contents or catalogue record",
+          "status": "INDEX_REVIEWED"
+        }
+      ]
+    },
+    {
+      "id": "cat-brihaddharma",
+      "title_sanskrit": "Bṛhaddharmapurāṇa",
+      "title_variants": [
+        "Brihaddharma Purana"
+      ],
+      "category": "PURANA",
+      "traditions": [
+        "Regional textual context to establish"
+      ],
+      "classification_notes": "Category is an inventory label; traditional list and recension classification must be independently sourced.",
+      "urls": [
+        "https://ci.nii.ac.jp/ncid/BA17778722.amp"
+      ],
+      "structure": {
+        "chapter_inventory": null
+      },
+      "access_status": "LIBRARY_RECORD_IDENTIFIED",
+      "examination_status": "IDENTIFIED",
+      "relevant_sections": [
+        "Devī, Śiva and regional accounts; exact locators pending"
+      ],
+      "uncertainties": [
+        "Haraprasad Shastri edition identified in catalogue search; full catalogue retrieval failed. Wisdomlib English is labelled abridged, not full-text evidence."
+      ],
+      "bibliographic_provenance": [
+        {
+          "url": "https://ci.nii.ac.jp/ncid/BA17778722.amp",
+          "locator": "Title, attribution and contents or catalogue record",
+          "status": "IDENTIFIED"
+        }
+      ],
+      "additional_candidates": [
+        {
+          "url": "https://www.wisdomlib.org/hinduism/book/brihaddharma-purana-abridged",
+          "description": "Syama Charan Banerji abridgment; repeated fetch timeout",
+          "status": "IDENTIFIED_NOT_READ"
+        }
+      ]
+    },
+    {
+      "id": "cat-devibhagavata",
+      "title_sanskrit": "Devībhāgavatapurāṇa",
+      "title_variants": [
+        "Devī Bhāgavata",
+        "Śrīmad Devī Bhāgavatam"
+      ],
+      "category": "PURANA",
+      "traditions": [
+        "Śākta"
+      ],
+      "classification_notes": "Category is an inventory label; traditional list and recension classification must be independently sourced.",
+      "urls": [
+        "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana"
+      ],
+      "structure": {
+        "books": 12,
+        "chapter_inventory": "Online contents reviewed; complete per-book chapter enumeration pending"
+      },
+      "access_status": "ONLINE_TEXT",
+      "examination_status": "PARTIALLY_READ",
+      "relevant_sections": [
+        "5: battles with Mahiṣa and Śumbha cycle",
+        "7.28: Śatākṣī/Śākambharī and Durgama",
+        "7.30: seats of Devī",
+        "7.31–40: teaching context to verify for Devī Gītā",
+        "12.10–12: Maṇidvīpa",
+        "3.29–30: Rāma and Navarātra"
+      ],
+      "uncertainties": [
+        "Translation has interpretive asides; distinguish them from root Sanskrit. Full Sanskrit collation and classification lists pending."
+      ],
+      "bibliographic_provenance": [
+        {
+          "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana",
+          "locator": "Title, attribution and contents or catalogue record",
+          "status": "PARTIALLY_READ"
+        }
+      ]
+    },
+    {
+      "id": "cat-kalika",
+      "title_sanskrit": "Kālikāpurāṇa",
+      "title_variants": [
+        "Kalika Puranam"
+      ],
+      "category": "PURANA",
+      "traditions": [
+        "Śākta",
+        "Eastern Indian iconographic traditions"
+      ],
+      "classification_notes": "Category is an inventory label; traditional list and recension classification must be independently sourced.",
+      "urls": [
+        "https://ignca.gov.in/kalikapurane-murtivinirdesah/"
+      ],
+      "structure": {
+        "witness": "Kālikāpurāṇe Mūrtivinirdeśaḥ; selection of 550 verses, not complete Purāṇa"
+      },
+      "access_status": "PUBLISHER_RECORD",
+      "examination_status": "IDENTIFIED",
+      "relevant_sections": [
+        "Devī iconographic and ritual descriptions; Kāmākhyā/Kāmeśvarī; exact verses pending"
+      ],
+      "uncertainties": [
+        "IGNCA publication record read; actual book not obtained. Full Kālikā edition must be a separate witness."
+      ],
+      "bibliographic_provenance": [
+        {
+          "url": "https://ignca.gov.in/kalikapurane-murtivinirdesah/",
+          "locator": "Title, attribution and contents or catalogue record",
+          "status": "IDENTIFIED"
+        }
+      ],
+      "additional_candidates": [
+        {
+          "url": "https://opac.sanskrit.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=151323",
+          "description": "Full Kālikāpurāṇa: text, introduction and English translation; B. N. Shastri",
+          "status": "CATALOGUE_IDENTIFIED; edition metadata incomplete"
+        }
+      ]
+    },
+    {
+      "id": "cat-lalita-sahasranama",
+      "title_sanskrit": "Lalitāsahasranāma",
+      "title_variants": [
+        "Śrī Lalitā Sahasranāma"
+      ],
+      "category": "STOTRA",
+      "traditions": [
+        "Śrīvidyā",
+        "Śākta"
+      ],
+      "classification_notes": "Category is an inventory label; traditional list and recension classification must be independently sourced.",
+      "urls": [
+        "https://sa.wikisource.org/wiki/श्रीललितासहस्रनाम_(सौभाग्यभास्करभाष्यम्)",
+        "https://sanskritdocuments.org/doc_devii/lalitacomplete.html"
+      ],
+      "structure": {
+        "witness": "1985 TTD edition with Bhāskararāya commentary; exact Purāṇic embedding to collate"
+      },
+      "access_status": "DIGITAL_EDITION_IDENTIFIED",
+      "examination_status": "PARTIALLY_READ",
+      "relevant_sections": [
+        "Names and commentarial contextual meanings; all 1000 name assignments pending",
+        "Stotra verses29–31: split adversary-killer readings and Gaṇeśa/yantra epithet"
+      ],
+      "uncertainties": [
+        "Search locates S. B. Raghunathacharya edited TTD1985 witness. Name semantics cannot be treated as battle events; commentary distinct from root stotra."
+      ],
+      "bibliographic_provenance": [
+        {
+          "url": "https://sa.wikisource.org/wiki/श्रीललितासहस्रनाम_(सौभाग्यभास्करभाष्यम्)",
+          "locator": "Title, attribution and contents or catalogue record",
+          "status": "IDENTIFIED"
+        }
+      ]
+    },
+    {
+      "id": "cat-linga",
+      "title_sanskrit": "Liṅgapurāṇa",
+      "title_variants": [
+        "Liṅgamahāpurāṇa"
+      ],
+      "category": "PURANA",
+      "traditions": [
+        "Śaiva"
+      ],
+      "classification_notes": "Category is an inventory label; traditional list and recension classification must be independently sourced.",
+      "urls": [
+        "https://www.wisdomlib.org/purana/book/the-linga-purana"
+      ],
+      "structure": {
+        "site_sections": [
+          {
+            "label": "Section1 Uttarabhāga",
+            "chapters": 108
+          },
+          {
+            "label": "Section2 Pūrvabhāga",
+            "chapters": 55
+          }
+        ],
+        "warning": "Keep site labels as witness-specific; conventional labels require collation"
+      },
+      "access_status": "ONLINE_TEXT",
+      "examination_status": "PARTIALLY_READ",
+      "relevant_sections": [
+        "Section1 chapter105: origin of Vināyaka",
+        "Mātṛkā/Andhaka and other Devī passages to locate"
+      ],
+      "uncertainties": [
+        "Site section labels may be reversed relative to conventional first/second parts; do not silently correct. Root text vs translator footnote in105.7 must remain separate."
+      ],
+      "bibliographic_provenance": [
+        {
+          "url": "https://www.wisdomlib.org/purana/book/the-linga-purana",
+          "locator": "Title, attribution and contents or catalogue record",
+          "status": "PARTIALLY_READ"
+        }
+      ]
+    },
+    {
+      "id": "cat-mahabhagavata",
+      "title_sanskrit": "Mahābhāgavatapurāṇa",
+      "title_variants": [
+        "Śrīmahābhāgavatapurāṇam: Śāktasāmpradāyikam"
+      ],
+      "category": "PURANA",
+      "traditions": [
+        "Śākta"
+      ],
+      "classification_notes": "Category is an inventory label; traditional list and recension classification must be independently sourced.",
+      "urls": [
+        "https://ci.nii.ac.jp/ncid/BA25230401"
+      ],
+      "structure": {
+        "printed_extent": "36, 400 pages; chapter inventory not examined"
+      },
+      "access_status": "LIBRARY_RECORD",
+      "examination_status": "IDENTIFIED",
+      "relevant_sections": [
+        "Devī narratives; exact sections not yet located"
+      ],
+      "uncertainties": [
+        "Catalogue confirms Pushpendra Kumar critical edition, Eastern Book Linkers, Delhi, 1983. Do not conflate with Vaiṣṇava Bhāgavata or Devī Bhāgavata."
+      ],
+      "bibliographic_provenance": [
+        {
+          "url": "https://ci.nii.ac.jp/ncid/BA25230401",
+          "locator": "Title, attribution and contents or catalogue record",
+          "status": "IDENTIFIED"
+        }
+      ],
+      "library_references": [
+        "CiNii BA25230401",
+        "Kyoto B||635 02062850",
+        "Tokyo Institute of Oriental Culture K17:391 6420551233"
+      ],
+      "additional_candidates": [
+        {
+          "url": "https://opac.ssus.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=63558",
+          "description": "Shanti Lal Nagar text/English translation/index",
+          "status": "SEARCH_RESULT_IDENTIFIED; catalogue fetch unavailable"
+        }
+      ]
+    },
+    {
+      "id": "cat-matsya",
+      "title_sanskrit": "Matsyapurāṇa",
+      "title_variants": [
+        "The Matsya Puranam"
+      ],
+      "category": "PURANA",
+      "traditions": [
+        "Purāṇic traditions"
+      ],
+      "classification_notes": "Category is an inventory label; traditional list and recension classification must be independently sourced.",
+      "urls": [
+        "https://onlinebooks.library.upenn.edu/webbin/book/lookupname?key=Vasu%2C+Srisa+Chandra%2C+1861-1918%3F"
+      ],
+      "structure": {
+        "witness": "1916–1917 translation; section inventory unexamined"
+      },
+      "access_status": "LIBRARY_RECORD_IDENTIFIED",
+      "examination_status": "IDENTIFIED",
+      "relevant_sections": [
+        "Mātṛkās, Andhaka, Umā and iconographic passages: locators pending"
+      ],
+      "uncertainties": [
+        "UPenn search record identifies translation by A Taluqdar of Oudh; browser retrieval failed. HathiTrust record notes US-only access; do not bypass restriction."
+      ],
+      "bibliographic_provenance": [
+        {
+          "url": "https://onlinebooks.library.upenn.edu/webbin/book/lookupname?key=Vasu%2C+Srisa+Chandra%2C+1861-1918%3F",
+          "locator": "Title, attribution and contents or catalogue record",
+          "status": "IDENTIFIED"
+        }
+      ]
+    },
+    {
+      "id": "cat-shaktapramoda",
+      "title_sanskrit": "Śāktapramoda",
+      "title_variants": [
+        "Śāktapramodaḥ of Raja Deva Nandan Singh"
+      ],
+      "category": "TANTRIC_COMPILATION",
+      "traditions": [
+        "Śākta"
+      ],
+      "classification_notes": "Category is an inventory label; traditional list and recension classification must be independently sourced.",
+      "urls": [
+        "https://search.worldcat.org/title/Saktapramoda-Saktapramoda-of-Raja-Deva-Nandan-Singh/oclc/856997274"
+      ],
+      "structure": {
+        "chapter_inventory": null
+      },
+      "access_status": "LIBRARY_RECORD_IDENTIFIED",
+      "examination_status": "IDENTIFIED",
+      "relevant_sections": [
+        "Mahāvidyā textual corpora: exact inventory pending"
+      ],
+      "uncertainties": [
+        "WorldCat search identifies Rājadevanandana Siṃha / Madhu Khanna; record body requires JavaScript. Edition and passage access unexamined."
+      ],
+      "bibliographic_provenance": [
+        {
+          "url": "https://search.worldcat.org/title/Saktapramoda-Saktapramoda-of-Raja-Deva-Nandan-Singh/oclc/856997274",
+          "locator": "Title, attribution and contents or catalogue record",
+          "status": "IDENTIFIED"
+        }
+      ]
+    },
+    {
+      "id": "cat-shiva",
+      "title_sanskrit": "Śivapurāṇa",
+      "title_variants": [
+        "Śivamahāpurāṇa"
+      ],
+      "category": "PURANA",
+      "traditions": [
+        "Śaiva"
+      ],
+      "classification_notes": "Category is an inventory label; traditional list and recension classification must be independently sourced.",
+      "urls": [
+        "https://www.wisdomlib.org/hinduism/book/shiva-purana-english"
+      ],
+      "structure": {
+        "samhitas": "Seven in this site description; Rudra and Vāyavīya have subdivisions",
+        "chapter_count_claim": 457,
+        "count_basis": "Site description; not independently counted"
+      },
+      "access_status": "ONLINE_TEXT",
+      "examination_status": "INDEX_REVIEWED",
+      "relevant_sections": [
+        "2.4 Kumārakhaṇḍa: Gaṇeśa birth, revival and marriages",
+        "2.2 Satīkhaṇḍa",
+        "2.3 Pārvatīkhaṇḍa"
+      ],
+      "uncertainties": [
+        "Site date 1950 is not independently verified publication history; title in Sanskrit index Book1 differs from English section1. Collate editions before equivalence."
+      ],
+      "bibliographic_provenance": [
+        {
+          "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english",
+          "locator": "Title, attribution and contents or catalogue record",
+          "status": "INDEX_REVIEWED"
+        }
+      ],
+      "additional_candidates": [
+        {
+          "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-sanskrit",
+          "description": "Sanskrit digitization; underlying edition not fully established",
+          "status": "INDEX_REVIEWED"
+        }
+      ]
+    },
+    {
+      "id": "cat-skanda",
+      "title_sanskrit": "Skandapurāṇa",
+      "title_variants": [
+        "Skanda Purana"
+      ],
+      "category": "PURANA",
+      "traditions": [
+        "Śaiva",
+        "Regional māhātmya traditions"
+      ],
+      "classification_notes": "Category is an inventory label; traditional list and recension classification must be independently sourced.",
+      "urls": [
+        "https://www.wisdomlib.org/hinduism/book/the-skanda-purana"
+      ],
+      "structure": {
+        "sections": "Online index of regional khaṇḍas; underlying textual families not collated"
+      },
+      "access_status": "ONLINE_TEXT",
+      "examination_status": "INDEX_REVIEWED",
+      "relevant_sections": [
+        "Devī battles, Mātṛkās, Gaṇeśa and tīrtha narratives: precise passages pending"
+      ],
+      "uncertainties": [
+        "Do not identify the later khaṇḍa compilation with the early Skandapurāṇa critical edition. Chapter locators must include full section hierarchy."
+      ],
+      "bibliographic_provenance": [
+        {
+          "url": "https://www.wisdomlib.org/hinduism/book/the-skanda-purana",
+          "locator": "Title, attribution and contents or catalogue record",
+          "status": "INDEX_REVIEWED"
+        }
+      ]
+    },
+    {
+      "id": "cat-yogini-tantra",
+      "title_sanskrit": "Yoginītantra",
+      "title_variants": [
+        "Yogini Tantra"
+      ],
+      "category": "TANTRA",
+      "traditions": [
+        "Regional context to verify"
+      ],
+      "classification_notes": "Category is an inventory label; traditional list and recension classification must be independently sourced.",
+      "urls": [
+        "https://find.uoc.ac.in/Record/395333"
+      ],
+      "structure": {
+        "chapter_inventory": null
+      },
+      "access_status": "LIBRARY_RECORD_IDENTIFIED",
+      "examination_status": "IDENTIFIED",
+      "relevant_sections": [
+        "Relevant Devī regional/pīṭha passages to determine"
+      ],
+      "uncertainties": [
+        "Library search identifies1982 first-edition Sanskrit book; page retrieval failed. Do not confuse with Yoginīhṛdaya."
+      ],
+      "bibliographic_provenance": [
+        {
+          "url": "https://find.uoc.ac.in/Record/395333",
+          "locator": "Title, attribution and contents or catalogue record",
+          "status": "IDENTIFIED"
+        }
+      ]
+    },
+    {
+      "id": "cat-yoginihridaya",
+      "title_sanskrit": "Yoginīhṛdayatantra",
+      "title_variants": [
+        "Yoginīhṛdaya",
+        "Sundarīhṛdayatantra"
+      ],
+      "category": "TANTRA",
+      "traditions": [
+        "Śrīvidyā"
+      ],
+      "classification_notes": "Category is an inventory label; traditional list and recension classification must be independently sourced.",
+      "urls": [
+        "https://catalogue.bnf.fr/ark:/12148/cb12532632p"
+      ],
+      "structure": {
+        "patalas": 3,
+        "basis": "BnF authority record; often treated as chapters7–9 of Vāmakeśvara"
+      },
+      "access_status": "LIBRARY_RECORD",
+      "examination_status": "IDENTIFIED",
+      "relevant_sections": [
+        "Tripurasundarī/Śiva teachings; exact relevant deity/yantra passages pending"
+      ],
+      "uncertainties": [
+        "Authority catalogue read only; no ritual or narrative facts extracted. Printed witness and commentary must be acquired separately."
+      ],
+      "bibliographic_provenance": [
+        {
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb12532632p",
+          "locator": "Title, attribution and contents or catalogue record",
+          "status": "IDENTIFIED"
+        }
+      ]
+    },
+    {
+      "id": "dm-source",
+      "title_sanskrit": "Devī Māhātmya",
+      "title_variants": [
+        "Durgā Saptaśatī",
+        "Caṇḍī",
+        "Devīmāhātmyam"
+      ],
+      "category": "EMBEDDED_PURANIC_TEXT",
+      "traditions": [
+        "Śākta"
+      ],
+      "classification_notes": "13-chapter unit embedded in Mārkaṇḍeya Purāṇa; traditional liturgical count is 700 mantra units, not 700 ordinary full metrical verses.",
+      "urls": [
+        "https://sanskritdocuments.org/doc_devii/durga700.html",
+        "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana"
+      ],
+      "structure": {
+        "chapters": 13,
+        "Pargiter_Markandeya_mapping": {
+          "1": 81,
+          "2": 82,
+          "3": 83,
+          "4": 84,
+          "5": 85,
+          "6": 86,
+          "7": 87,
+          "8": 88,
+          "9": 89,
+          "10": 90,
+          "11": 91,
+          "12": 92,
+          "13": 93
+        },
+        "narrative_cycles": [
+          "Madhu–Kaiṭabha",
+          "Mahiṣāsura",
+          "Śumbha–Niśumbha"
+        ],
+        "frame": "Suratha and Samādhi receive instruction from Medhas; Mārkaṇḍeya narrates the frame."
+      },
+      "access_status": "COMPLETE_ACCESSIBLE",
+      "examination_status": "READ",
+      "relevant_sections": "All 13 narrative chapters; ancillary kavaca, argalā, kīlaka, dhyāna and nyāsa outside this bounded pass.",
+      "uncertainties": [
+        "Wisdomlib index description says 82–92 but linked content demonstrably runs 81–93.",
+        "Pargiter translates a Calcutta text with Bombay-edition readings discussed in footnotes. Verse/mantra numbering differs from SanskritDocuments.",
+        "Digital Sanskrit witness is not a critical edition; selected comparison, not complete collation."
+      ]
+    },
+    {
+      "id": "gp-src-ganesha",
+      "title_sanskrit": "गणेशपुराणम्",
+      "title_variants": [
+        "Gaṇeśa Purāṇa",
+        "Gaṇeśamahāpurāṇa",
+        "Ganesha Purana"
+      ],
+      "category": "PURANA",
+      "traditions": [
+        "Ganapatya"
+      ],
+      "classification_notes": "Upasana 1.1.8 includes Ganesa among Upapuranas; terminal colophons call the work Mahapurana. These are retained as source-local designations, not resolved into a universal canonical list.",
+      "urls": [
+        "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+        "https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+        "https://www.wisdomlib.org/hinduism/book/the-ganesha-purana"
+      ],
+      "structure": {
+        "khandas": [
+          {
+            "number": 1,
+            "name": "Upāsanākhaṇḍa / Pūrvakhaṇḍa",
+            "chapter_count": 92,
+            "chapter_inventory": [
+              {
+                "chapter": 1,
+                "title_as_indexed": "राजासोमकान्तस्य कथा",
+                "locator": "Web text line 38",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 2,
+                "title_as_indexed": "सोमकान्तस्य अङ्गेभ्य गलितकुष्ठरोगस्य उद्भवः, वन गन्तुं च विचारः",
+                "locator": "Web text line 39",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 3,
+                "title_as_indexed": "सोमकान्तस्य पुत्रेभ्य उपदेशः, आचारादि निरूपणम्",
+                "locator": "Web text line 40",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 4,
+                "title_as_indexed": "राजा वनं प्रविष्टः",
+                "locator": "Web text line 41",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 5,
+                "title_as_indexed": "भृगुपुत्रच्यवनेन सहसमीपगमनम्",
+                "locator": "Web text line 42",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 6,
+                "title_as_indexed": "भृगो आश्रमे सोमकान्तस्य निवासः",
+                "locator": "Web text line 43",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 7,
+                "title_as_indexed": "सोमकान्तस्य पूर्वजन्मनः कथा",
+                "locator": "Web text line 44",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 8,
+                "title_as_indexed": "भृगोर्हुङ्कारेण नानाशङ्कानां निवारणम्",
+                "locator": "Web text line 45",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 9,
+                "title_as_indexed": "भृगोर्राजानं प्रति उपदेशः",
+                "locator": "Web text line 46",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 10,
+                "title_as_indexed": "गणेशमङ्गलाभावे व्यासस्य भ्रान्तिः, ब्रह्मदेवसमीपगमनञ्च",
+                "locator": "Web text line 47",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 11,
+                "title_as_indexed": "ब्रह्मदेवेन व्यासाय गणेशमन्त्रोपदेशः",
+                "locator": "Web text line 48",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 12,
+                "title_as_indexed": "देवैर्गजाननस्य दर्शनम्",
+                "locator": "Web text line 49",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 13,
+                "title_as_indexed": "गजाननस्योदरात् सृष्टिप्रभवाय ब्रह्मदेवेनं स्तुतिः",
+                "locator": "Web text line 50",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 14,
+                "title_as_indexed": "विघ्नैर्व्याकुलो ब्रह्मदेव ``तपः कुरु'' इति आकाशवाणीं श‍ृणोति",
+                "locator": "Web text line 51",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 15,
+                "title_as_indexed": "ब्रह्मदेवस्य तपः, गणेशदर्शनं, तस्य पूजाविधिश्च",
+                "locator": "Web text line 52",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 16,
+                "title_as_indexed": "मधुकैटभदैत्ययोरूत्पत्तिः, ब्रह्मदेवो देवीं प्रार्थयते",
+                "locator": "Web text line 53",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 17,
+                "title_as_indexed": "महाविष्णुना शङ्करं प्रति गजाननस्य षडक्षरीमन्त्रोपदेशः",
+                "locator": "Web text line 54",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 18,
+                "title_as_indexed": "महाविष्णुना गणेशाय दर्शनं वरप्रदानञ्च, सिद्धक्षेत्रस्योत्पत्तिः",
+                "locator": "Web text line 55",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 19,
+                "title_as_indexed": "राजाभीमस्य राज्ञ्याकमलया पुत्रप्राप्तिः, पुत्रस्य वर्णनम्",
+                "locator": "Web text line 56",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 20,
+                "title_as_indexed": "कमलापुत्रेण दक्षेण गणेशदर्शनम्",
+                "locator": "Web text line 57",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 21,
+                "title_as_indexed": "मुद्गलदक्षेण गणेशमन्त्रस्य जापः",
+                "locator": "Web text line 58",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 22,
+                "title_as_indexed": "गणेशभक्तबल्लालेन गणेशदर्शनम्",
+                "locator": "Web text line 59",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 23,
+                "title_as_indexed": "वैश्यकल्याणस्य अवस्था",
+                "locator": "Web text line 60",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 24,
+                "title_as_indexed": "दक्षेन कृतमनुष्ठानं शुभस्वपनञ्च",
+                "locator": "Web text line 61",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 25,
+                "title_as_indexed": "राजा चन्द्रसेनस्य मृत्युः, राज्ञ्यः सुलभायाः शोकः",
+                "locator": "Web text line 62",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 26,
+                "title_as_indexed": "दक्षस्य राज्यप्राप्तिः, वंशविस्तारश्च",
+                "locator": "Web text line 63",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 27,
+                "title_as_indexed": "रुक्मागदाभिषेक वर्णनम्",
+                "locator": "Web text line 64",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 28,
+                "title_as_indexed": "मुकुन्देन रुक्माङ्गदं प्रतिशापः नारददर्शनञ्च",
+                "locator": "Web text line 65",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 29,
+                "title_as_indexed": "रुक्माङ्गदं प्रति नारदकृतोपदेशः",
+                "locator": "Web text line 66",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 30,
+                "title_as_indexed": "अहिल्यायाः पातिव्रत्यभङ्गम्",
+                "locator": "Web text line 67",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 31,
+                "title_as_indexed": "गौतमेन इन्द्रं प्रति शापः",
+                "locator": "Web text line 68",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 32,
+                "title_as_indexed": "गौतमेन षडाक्षरीमन्त्रेण देवानां स्तुतिः",
+                "locator": "Web text line 69",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 33,
+                "title_as_indexed": "षडक्षरमन्त्रप्रभावात् इन्द्रस्य दिव्यदेहधारणम्",
+                "locator": "Web text line 70",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 34,
+                "title_as_indexed": "इन्द्रेण तपः गणेशदर्शनम्, चिन्तामणितीर्थस्यवर्णनम्",
+                "locator": "Web text line 71",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 35,
+                "title_as_indexed": "रुक्माङ्गदेन दिव्यदेहप्राप्तिः, गजाननस्य लोकं प्रतिप्रयाणञ्च",
+                "locator": "Web text line 72",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 36,
+                "title_as_indexed": "मुकुन्दाइन्द्रसंयोगेन गृत्समदस्योत्पत्तिः तस्य गर्वमानयोश्च खण्डनम्, मात्रा पुत्रेण च परस्परं शापः",
+                "locator": "Web text line 73",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 37,
+                "title_as_indexed": "गृत्समदो तपस्तपति गजाननदर्शनं वरप्राप्तिश्च",
+                "locator": "Web text line 74",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 38,
+                "title_as_indexed": "गृत्समदस्याद्भुत (त्रिपुरासुरस्य) त्रिपुरस्य तपः, गणेशेन दत्तं वरदानञ्च",
+                "locator": "Web text line 75",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 39,
+                "title_as_indexed": "त्रिपुरासुरेण इन्द्रस्य पराभवः",
+                "locator": "Web text line 76",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 40,
+                "title_as_indexed": "त्रिपुरासुरेण ब्रह्मदेवस्य पराजयः, देवैश्च तपः",
+                "locator": "Web text line 77",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 41,
+                "title_as_indexed": "गजाननेन ब्राह्मणरूपेण त्रिपुरं पुरतः समर्पणम्",
+                "locator": "Web text line 78",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 42,
+                "title_as_indexed": "शङ्करत्रिपुरयोर्युद्धम्",
+                "locator": "Web text line 79",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 43,
+                "title_as_indexed": "शङ्करस्य पराजय, पार्वत्याश्च हिमालयसमीप गमनम्",
+                "locator": "Web text line 80",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 44,
+                "title_as_indexed": "शङ्करेण तपः, गजाननेन दर्शनम्, शङ्करेण वरप्राप्तिः",
+                "locator": "Web text line 81",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 45,
+                "title_as_indexed": "शङ्कराय गणेशेन ``गणेशसहस्रनाम'' स्तुतिं कर्त्तुमुपदशेयः",
+                "locator": "Web text line 82",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 46,
+                "title_as_indexed": "गणेशसहस्रनाम",
+                "locator": "Web text line 83",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 47,
+                "title_as_indexed": "शङ्करत्रिपुरयोर्युद्धम्, त्रिपुरदहनञ्च",
+                "locator": "Web text line 84",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 48,
+                "title_as_indexed": "पार्वत्यारागमनम्, पार्थिवपूजा (भाद्रपदस्य शुद्धचतुर्थीपर्यन्तम्) महात्म्यम्",
+                "locator": "Web text line 85",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 49,
+                "title_as_indexed": "गणेशस्य पार्थिवपूजायां वर्णनम्",
+                "locator": "Web text line 86",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 50,
+                "title_as_indexed": "पार्थिवपूजा, पार्वतीहिमालययोर्सम्वादः",
+                "locator": "Web text line 87",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 51,
+                "title_as_indexed": "पार्थिव गणेश व्रते हिमालयस्यपार्वत्याश्च सहागमनम्",
+                "locator": "Web text line 88",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 52,
+                "title_as_indexed": "पार्थिव गणेश व्रते नृपचन्द्राङ्गदस्य कथा",
+                "locator": "Web text line 89",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 53,
+                "title_as_indexed": "पार्थिव गणेश व्रते नृपचन्द्राङ्गदस्य कथा",
+                "locator": "Web text line 90",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 54,
+                "title_as_indexed": "पार्थिव गणेश व्रते राज्ञीन्दुमत्यै नारदेन व्रतं कर्त्तुमुपदेशः पकोटा",
+                "locator": "Web text line 91",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 55,
+                "title_as_indexed": "पार्थिव गणेश व्रते पूजाव्रतप्रभावात् पार्वतीशङ्करयोर्मेलनम्",
+                "locator": "Web text line 92",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 56,
+                "title_as_indexed": "गणेशनामस्मरणप्रभावेण पापात्मना तन्तुवायेन भ्रुशुण्डीरूपधारणम्",
+                "locator": "Web text line 93",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 57,
+                "title_as_indexed": "सङ्कष्टचतुर्थीव्रतेन कृतवीर्यस्योपलब्धिः",
+                "locator": "Web text line 94",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 58,
+                "title_as_indexed": "शूरसेनस्य राजधान्यां इन्द्रविमानस्य पतनम्",
+                "locator": "Web text line 95",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 59,
+                "title_as_indexed": "सङ्कष्टचतुर्थीव्रतमहिमा, कृतवीर्यस्य कथा",
+                "locator": "Web text line 96",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 60,
+                "title_as_indexed": "अङ्गारकचतुर्थ्याः व्रतस्य माहात्म्यम्",
+                "locator": "Web text line 97",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 61,
+                "title_as_indexed": "सङ्कष्टचतुर्थीव्रतमहिमा, चन्द्रस्य शापोऽनुग्रहश्च, दूर्वायार्माहात्म्यम्",
+                "locator": "Web text line 98",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 62,
+                "title_as_indexed": "सुलभक्षत्रियपत्नीसमुद्रया ब्राह्मणेन मधुसूदनेन च अन्योऽन्यं प्रतिशापः",
+                "locator": "Web text line 99",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 63,
+                "title_as_indexed": "दूर्वायाः प्रशस्तिः, कालानसासुरस्य कथा",
+                "locator": "Web text line 100",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 64,
+                "title_as_indexed": "कौण्डिन्यमुनेराख्यानम्",
+                "locator": "Web text line 101",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 65,
+                "title_as_indexed": "राजा जनकस्य सत्वहरणम्",
+                "locator": "Web text line 102",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 66,
+                "title_as_indexed": "विरोचना त्रिशिराभ्यां प्रदत्तयार्वया गजाननस्य तृप्तिः",
+                "locator": "Web text line 103",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 67,
+                "title_as_indexed": "एकस्यापि दूर्वाङ्कुरस्य कौण्डिन्यपत्न्यै आश्रयप्रदाने सामर्थ्यम्",
+                "locator": "Web text line 104",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 68,
+                "title_as_indexed": "कृतवीर्येण सङ्कष्टचतुर्थीव्रताचरणम्",
+                "locator": "Web text line 105",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 69,
+                "title_as_indexed": "सङ्कष्टचतुर्थीव्रतस्य साङ्गोपाङ्गमहिमा",
+                "locator": "Web text line 106",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 70,
+                "title_as_indexed": "पूर्वकाले सङ्कष्टचतुर्थीव्रतं केन केन कृतम्",
+                "locator": "Web text line 107",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 71,
+                "title_as_indexed": "सङ्कष्टचतुर्थीव्रतोद्यापनाविधिः",
+                "locator": "Web text line 108",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 72,
+                "title_as_indexed": "कृतवीर्येणाङ्गहीनस्य पुत्रस्य प्राप्तिः",
+                "locator": "Web text line 109",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 73,
+                "title_as_indexed": "कृतवीर्यपुत्राय प्रवालक्षेत्रानुष्ठानं गणेशदर्शनं, (कृतवीर्येण) सहस्रभुजानां च प्राप्तिः",
+                "locator": "Web text line 110",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 74,
+                "title_as_indexed": "सङ्कष्टचतुर्थीव्रतबोधकस्य चाण्डालस्य कथा",
+                "locator": "Web text line 111",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 75,
+                "title_as_indexed": "राजा शूरसेनेन चतुर्थीव्रताचरणं तत्फलञ्च",
+                "locator": "Web text line 112",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 76,
+                "title_as_indexed": "दूर्वापुत्रषुधस्य कथा, चतुर्थीव्रतस्य दूर्वानाम्नश्च महिमा",
+                "locator": "Web text line 113",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 77,
+                "title_as_indexed": "सहस्रार्जुनस्य जमदग्नेराश्रममागमनम्, भोजन प्रसङ्गश्च",
+                "locator": "Web text line 114",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 78,
+                "title_as_indexed": "कार्तवीर्येण (सहस्रार्जुनेन) कामधेनुं नेतुं प्रयत्नः",
+                "locator": "Web text line 115",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 79,
+                "title_as_indexed": "कामधेनुनोत्पन्नेन सैन्येन कार्तवीर्यस्य पराभवः जमदग्नेश्च हत्या",
+                "locator": "Web text line 116",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 80,
+                "title_as_indexed": "रेणुकया देहत्यागः",
+                "locator": "Web text line 117",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 81,
+                "title_as_indexed": "दत्तात्रेयस्य स्तुत्या पितराणामौद्ध्र्वदैहिकम्",
+                "locator": "Web text line 118",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 82,
+                "title_as_indexed": "रामेण मयूरेशक्षेत्रे तपः, मयूरेशेदर्शनम्, परशुप्राप्तिश्च",
+                "locator": "Web text line 119",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 83,
+                "title_as_indexed": "तारकासुरोत्पत्तिः",
+                "locator": "Web text line 120",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 84,
+                "title_as_indexed": "शङ्करस्य समीपं कामदेवस्य भस्मीभवनम्",
+                "locator": "Web text line 121",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 85,
+                "title_as_indexed": "स्कन्दोपत्तेरितिहासः",
+                "locator": "Web text line 122",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 86,
+                "title_as_indexed": "शङ्करेण स्कन्दाय गणेशव्रतकथनम्",
+                "locator": "Web text line 123",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 87,
+                "title_as_indexed": "एलापुरक्षेत्रे स्कन्देन तपः, लक्षविनायकप्रभुना वरदानम् तारकासुर वधश्च",
+                "locator": "Web text line 124",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 88,
+                "title_as_indexed": "नारदस्योपदेशानुसारं शेषेन कृतं तपः, गणेशप्रसादनञ्च",
+                "locator": "Web text line 125",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 89,
+                "title_as_indexed": "कामेन कृतं तपः, गणेशेन वरप्रदानम्",
+                "locator": "Web text line 126",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 90,
+                "title_as_indexed": "कामस्य पुनर्जन्म, शेषस्य कथा",
+                "locator": "Web text line 127",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 91,
+                "title_as_indexed": "गजाननस्य स्तुतिः",
+                "locator": "Web text line 128",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 92,
+                "title_as_indexed": "गजाननस्य सुमुखे त्यादिद्वादशनाम्नां महत्त्वम्",
+                "locator": "Web text line 129",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              }
+            ],
+            "count_basis": "Final colophon 1.92, web line13892"
+          },
+          {
+            "number": 2,
+            "name": "Krīḍākhaṇḍa / Uttarakhaṇḍa",
+            "chapter_count": 155,
+            "chapter_inventory": [
+              {
+                "chapter": 1,
+                "title_as_indexed": "नारदस्योपदेशः",
+                "locator": "Web text line 36",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 2,
+                "title_as_indexed": "नरान्तकदेवान्तकाभ्यां वरप्राप्तिः",
+                "locator": "Web text line 37",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 3,
+                "title_as_indexed": "देवान्तकस्य विजयः",
+                "locator": "Web text line 38",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 4,
+                "title_as_indexed": "नरान्तकस्य विजयः",
+                "locator": "Web text line 39",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 5,
+                "title_as_indexed": "आदित्या वरप्राप्तिः",
+                "locator": "Web text line 40",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 6,
+                "title_as_indexed": "विनायकावतारः",
+                "locator": "Web text line 41",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 7,
+                "title_as_indexed": "विरजायाः राक्षस्याः विजयः",
+                "locator": "Web text line 42",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 8,
+                "title_as_indexed": "नक्रस्य शापमुक्तिः",
+                "locator": "Web text line 43",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 9,
+                "title_as_indexed": "हाहाहूहोर्भ्रमनिरासः",
+                "locator": "Web text line 44",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 10,
+                "title_as_indexed": "नानानामनिरूपणम्",
+                "locator": "Web text line 45",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 11,
+                "title_as_indexed": "इन्द्रस्य गर्वभञ्जनम्",
+                "locator": "Web text line 46",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 12,
+                "title_as_indexed": "निशाचरस्य वधः",
+                "locator": "Web text line 47",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 13,
+                "title_as_indexed": "विघण्टदन्तुरयोर्वधः",
+                "locator": "Web text line 48",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 14,
+                "title_as_indexed": "राक्षसीजृम्भावधः",
+                "locator": "Web text line 49",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 15,
+                "title_as_indexed": "नगरस्य वर्णनम्",
+                "locator": "Web text line 50",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 16,
+                "title_as_indexed": "काशीराज्ञः भृशुण्डोराश्रमे गमनम्",
+                "locator": "Web text line 51",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 17,
+                "title_as_indexed": "देवः भक्तमीलनः",
+                "locator": "Web text line 52",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 18,
+                "title_as_indexed": "कपटीदैतस्य वधः",
+                "locator": "Web text line 53",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 19,
+                "title_as_indexed": "कूपकन्दरयोर्वधः",
+                "locator": "Web text line 54",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 20,
+                "title_as_indexed": "अन्धकाम्भासुरतुंगानान्धः वधः",
+                "locator": "Web text line 55",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 21,
+                "title_as_indexed": "राक्षसीभ्रमर्या",
+                "locator": "Web text line 56",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 22,
+                "title_as_indexed": "शुक्लविद्रुमसंवाद",
+                "locator": "Web text line 57",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 23,
+                "title_as_indexed": "शुक्लस्य गृहे विनायकस्य भोजनम्",
+                "locator": "Web text line 58",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 24,
+                "title_as_indexed": "सनकसनन्दयोर्बोधः",
+                "locator": "Web text line 59",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 25,
+                "title_as_indexed": "भक्तिप्रशंसा",
+                "locator": "Web text line 60",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 26,
+                "title_as_indexed": "राक्षसीभीमायारूद्धारः",
+                "locator": "Web text line 61",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 27,
+                "title_as_indexed": "साम्बस्य दुराचरणम्",
+                "locator": "Web text line 62",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 28,
+                "title_as_indexed": "भीमस्यपूर्ववृत्तान्तः",
+                "locator": "Web text line 63",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 29,
+                "title_as_indexed": "विरोचनवधः",
+                "locator": "Web text line 64",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 30,
+                "title_as_indexed": "वामनावतारकथा",
+                "locator": "Web text line 65",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 31,
+                "title_as_indexed": "बलेः पातालगमनम्",
+                "locator": "Web text line 66",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 32,
+                "title_as_indexed": "शमीमहात्म्यम् कीर्त्याः कथा",
+                "locator": "Web text line 67",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 33,
+                "title_as_indexed": "कीर्त्तेः मृत्शरीरात् युवकोत्पत्तिः",
+                "locator": "Web text line 68",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 34,
+                "title_as_indexed": "और्वशौनकयोर्कथा",
+                "locator": "Web text line 69",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 35,
+                "title_as_indexed": "शमीमन्दारयोर्प्रशंसा",
+                "locator": "Web text line 70",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 36,
+                "title_as_indexed": "देवाङ्गनाभिः वरप्रदानम्",
+                "locator": "Web text line 71",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 37,
+                "title_as_indexed": "शमीमन्दारमाहात्म्यम्",
+                "locator": "Web text line 72",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 38,
+                "title_as_indexed": "दुरासदचरित्रम्",
+                "locator": "Web text line 73",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 39,
+                "title_as_indexed": "शिवस्य काश्याः प्रयाणम्",
+                "locator": "Web text line 74",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 40,
+                "title_as_indexed": "दुरासदस्य पराजयः",
+                "locator": "Web text line 75",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 41,
+                "title_as_indexed": "पार्वत्या तेजात् सुतोत्पत्तिः",
+                "locator": "Web text line 76",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 42,
+                "title_as_indexed": "काशीस्थ षटपञ्चाशत् विनायकाः",
+                "locator": "Web text line 77",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 43,
+                "title_as_indexed": "ढुण्डीराजमाहात्म्यम्",
+                "locator": "Web text line 78",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 44,
+                "title_as_indexed": "दिवोदास कथा",
+                "locator": "Web text line 79",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 45,
+                "title_as_indexed": "दिवोदास कथा",
+                "locator": "Web text line 80",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 46,
+                "title_as_indexed": "ढुण्डीराज्ञः ज्योतिषीरूपं ध",
+                "locator": "Web text line 81",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 47,
+                "title_as_indexed": "दिवोदासस्य राजपरित्यागः",
+                "locator": "Web text line 82",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 48,
+                "title_as_indexed": "कीर्त्तिप्राप्तं वरदानम्",
+                "locator": "Web text line 83",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 49,
+                "title_as_indexed": "शमीमन्दारप्रभाववर्णनम्",
+                "locator": "Web text line 84",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 50,
+                "title_as_indexed": "गणेशलोकवर्णनम्",
+                "locator": "Web text line 85",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 51,
+                "title_as_indexed": "काशिराजस्य विमानारोहणम्",
+                "locator": "Web text line 86",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 52,
+                "title_as_indexed": "काशिराजस्य स्वानन्द भुवने आगमनम्",
+                "locator": "Web text line 87",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 53,
+                "title_as_indexed": "काशिराजेन स्वानन्दप्राप्तिः",
+                "locator": "Web text line 88",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 54,
+                "title_as_indexed": "बालचरितम्",
+                "locator": "Web text line 89",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 55,
+                "title_as_indexed": "दूतस्य प्रेषणम्",
+                "locator": "Web text line 90",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 56,
+                "title_as_indexed": "नरान्तकस्य यात्रा",
+                "locator": "Web text line 91",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 57,
+                "title_as_indexed": "काशिराजस्य बन्धनम्",
+                "locator": "Web text line 92",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 58,
+                "title_as_indexed": "नरान्तकेन कालपुरुषरूपधारणम्",
+                "locator": "Web text line 93",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 59,
+                "title_as_indexed": "राज्ञो वर्णनम्",
+                "locator": "Web text line 94",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 60,
+                "title_as_indexed": "विनायकनरान्तकयोर्युद्धम्",
+                "locator": "Web text line 95",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 61,
+                "title_as_indexed": "दैत्यदमनं विराटरूपदर्शनञ्च",
+                "locator": "Web text line 96",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 62,
+                "title_as_indexed": "देवान्तकस्य नगराद् पलायनम्",
+                "locator": "Web text line 97",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 63,
+                "title_as_indexed": "शुकस्य दूरदेशगमनम्",
+                "locator": "Web text line 98",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 64,
+                "title_as_indexed": "अष्टसिद्धीनां पराजयः",
+                "locator": "Web text line 99",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 65,
+                "title_as_indexed": "बुद्धेर्विजयः",
+                "locator": "Web text line 100",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 66,
+                "title_as_indexed": "सिद्धीनां पराभवः",
+                "locator": "Web text line 101",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 67,
+                "title_as_indexed": "अस्त्रयुद्धम्",
+                "locator": "Web text line 102",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 68,
+                "title_as_indexed": "अस्त्रयुद्धम्",
+                "locator": "Web text line 103",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 69,
+                "title_as_indexed": "देवदैत्ययुद्धम्",
+                "locator": "Web text line 104",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 70,
+                "title_as_indexed": "देवान्तकस्य वधः पुरप्रवेशनञ्च",
+                "locator": "Web text line 105",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 71,
+                "title_as_indexed": "विनायकस्याऽऽश्रमेऽऽगमनम्",
+                "locator": "Web text line 106",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 72,
+                "title_as_indexed": "विनायकस्य स्वलोकगमनम्",
+                "locator": "Web text line 107",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 73,
+                "title_as_indexed": "दैत्यसिन्धोरुत्पत्तिः",
+                "locator": "Web text line 108",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 74,
+                "title_as_indexed": "सिन्धवे सूर्येण वरप्रदानम्",
+                "locator": "Web text line 109",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 75,
+                "title_as_indexed": "देवानां पराजयः",
+                "locator": "Web text line 110",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 76,
+                "title_as_indexed": "विष्णोः पराक्रमः",
+                "locator": "Web text line 111",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 77,
+                "title_as_indexed": "सिन्धोरनन्वितकृत्याणि",
+                "locator": "Web text line 112",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 78,
+                "title_as_indexed": "देवैः वरप्राप्तिः",
+                "locator": "Web text line 113",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 79,
+                "title_as_indexed": "गौय्र्य्या मन्त्रप्रदानम्",
+                "locator": "Web text line 114",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 80,
+                "title_as_indexed": "पार्वत्यास्तपो वरदानञ्च",
+                "locator": "Web text line 115",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 81,
+                "title_as_indexed": "गणेशस्यावतारः",
+                "locator": "Web text line 116",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 82,
+                "title_as_indexed": "सिन्धुदैत्येनेश्वराराधनम्",
+                "locator": "Web text line 117",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 83,
+                "title_as_indexed": "गृध्रासुरस्य वधः",
+                "locator": "Web text line 118",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 84,
+                "title_as_indexed": "बालासुरस्य वधः",
+                "locator": "Web text line 119",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 85,
+                "title_as_indexed": "गणेशकवचेन रक्षणम्",
+                "locator": "Web text line 120",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 86,
+                "title_as_indexed": "व्योमासुरस्य वधः",
+                "locator": "Web text line 121",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 87,
+                "title_as_indexed": "कमठासुरस्य वधः",
+                "locator": "Web text line 122",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 88,
+                "title_as_indexed": "दैत्यानां वधः",
+                "locator": "Web text line 123",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 89,
+                "title_as_indexed": "शलभासुरस्य वधः",
+                "locator": "Web text line 124",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 90,
+                "title_as_indexed": "अविजयस्य वधः",
+                "locator": "Web text line 125",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 91,
+                "title_as_indexed": "शैलासुरस्य वधः",
+                "locator": "Web text line 126",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 92,
+                "title_as_indexed": "पार्वत्या विश्वरूपदर्शनम्",
+                "locator": "Web text line 127",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 93,
+                "title_as_indexed": "चञ्चलदैत्यस्य वधः",
+                "locator": "Web text line 128",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 94,
+                "title_as_indexed": "गौतमस्य मोहनिवारणम्",
+                "locator": "Web text line 129",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 95,
+                "title_as_indexed": "वृकासुरस्य वधः",
+                "locator": "Web text line 130",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 96,
+                "title_as_indexed": "गौर्य्यादित्योश्च संवादः",
+                "locator": "Web text line 131",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 97,
+                "title_as_indexed": "पक्षानां बन्धनम्",
+                "locator": "Web text line 132",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 98,
+                "title_as_indexed": "शिखण्डिने वरदानम्",
+                "locator": "Web text line 133",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 99,
+                "title_as_indexed": "मयूरेशस्य नागलोकगमनम्",
+                "locator": "Web text line 134",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 100,
+                "title_as_indexed": "भगासुरस्य वधः",
+                "locator": "Web text line 135",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 101,
+                "title_as_indexed": "दैत्यसैन्यस्य वधः",
+                "locator": "Web text line 136",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 102,
+                "title_as_indexed": "कमलासुरेण सङ्ग्रामः",
+                "locator": "Web text line 137",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 103,
+                "title_as_indexed": "कमलासुरस्य वधः",
+                "locator": "Web text line 138",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 104,
+                "title_as_indexed": "ब्रह्मदेवस्य गर्वहरणम्",
+                "locator": "Web text line 139",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 105,
+                "title_as_indexed": "विश्वदेवानां भेदबुद्धेर्नैराश्यम्",
+                "locator": "Web text line 140",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 106,
+                "title_as_indexed": "मयूरेशस्य विनोदः",
+                "locator": "Web text line 141",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 107,
+                "title_as_indexed": "इन्द्रगर्वहरणम्",
+                "locator": "Web text line 142",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 108,
+                "title_as_indexed": "यमस्य गर्वहरणम्",
+                "locator": "Web text line 143",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 109,
+                "title_as_indexed": "मुनिबालकैर्दैत्यवधः",
+                "locator": "Web text line 144",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 110,
+                "title_as_indexed": "युद्धायाहूतो नन्दी सिन्धोः समीम गमनम्",
+                "locator": "Web text line 145",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 111,
+                "title_as_indexed": "मयूरेशस्य युद्धाय निश्चयः",
+                "locator": "Web text line 146",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 112,
+                "title_as_indexed": "सिन्धोर्युद्धप्रारम्भः",
+                "locator": "Web text line 147",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 113,
+                "title_as_indexed": "मित्रकौस्तुभयोर्वधः",
+                "locator": "Web text line 148",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 114,
+                "title_as_indexed": "युद्धवर्णनम्",
+                "locator": "Web text line 149",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 115,
+                "title_as_indexed": "सिन्धुदैत्येन विद्रूपरूपधारणम्",
+                "locator": "Web text line 150",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 116,
+                "title_as_indexed": "मयूरेशस्याधिपत्ये देवैराव्रमणम्",
+                "locator": "Web text line 151",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 117,
+                "title_as_indexed": "दुर्गायाः सिन्धवेरुपदेशः",
+                "locator": "Web text line 152",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 118,
+                "title_as_indexed": "कलविकलयोर्वधः",
+                "locator": "Web text line 153",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 119,
+                "title_as_indexed": "सिन्धोः पुत्राणां वधः",
+                "locator": "Web text line 154",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 120,
+                "title_as_indexed": "सिन्धोः पित्रा सह संवादः",
+                "locator": "Web text line 155",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 121,
+                "title_as_indexed": "सिन्धोः पराभवः",
+                "locator": "Web text line 156",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 122,
+                "title_as_indexed": "दैत्यसेनायाः वधः",
+                "locator": "Web text line 157",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 123,
+                "title_as_indexed": "सिन्धोर्वधः",
+                "locator": "Web text line 158",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 124,
+                "title_as_indexed": "गणेशस्य गण्डकनगर्यां प्रवेशः",
+                "locator": "Web text line 159",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 125,
+                "title_as_indexed": "मयूरेशस्य विवाहः",
+                "locator": "Web text line 160",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 126,
+                "title_as_indexed": "मयूरेशचरित्रस्य फलश्रुतिः, द्वापरयुगे गजाननस्यावतारः",
+                "locator": "Web text line 161",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 127,
+                "title_as_indexed": "सिन्दुरासुरस्योत्पत्तिः",
+                "locator": "Web text line 162",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 128,
+                "title_as_indexed": "सिन्दुरस्य पराजयः",
+                "locator": "Web text line 163",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 129,
+                "title_as_indexed": "गौरीकथा",
+                "locator": "Web text line 164",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 130,
+                "title_as_indexed": "गजाननस्याविर्भावः",
+                "locator": "Web text line 165",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 131,
+                "title_as_indexed": "गन्धर्वानां पराजयः",
+                "locator": "Web text line 166",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 132,
+                "title_as_indexed": "कैलाशपर्वते गमनम्",
+                "locator": "Web text line 167",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 133,
+                "title_as_indexed": "पराशरदर्शनम्",
+                "locator": "Web text line 168",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 134,
+                "title_as_indexed": "मूषकवाहनम्",
+                "locator": "Web text line 169",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 135,
+                "title_as_indexed": "क्रौञ्चेन गन्धर्वाय शापः",
+                "locator": "Web text line 170",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 136,
+                "title_as_indexed": "सिन्दूरेण सह युद्धम् (श्रीमद्गणेश गीता)",
+                "locator": "Web text line 171",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 137,
+                "title_as_indexed": "सिन्दूरासुरस्य वधः",
+                "locator": "Web text line 172",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 138,
+                "title_as_indexed": "श्रीगणेशगीतायां साङ्ख्ययोगसारार्थयोगः",
+                "locator": "Web text line 173",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 139,
+                "title_as_indexed": "श्रीगणेशगीतायां कर्मयोगः",
+                "locator": "Web text line 174",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 140,
+                "title_as_indexed": "श्रीगणेशगीतायां ब्रह्मार्पणयोगः",
+                "locator": "Web text line 175",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 141,
+                "title_as_indexed": "श्रीगणेशगीतायां कर्मसन्यासयोगः",
+                "locator": "Web text line 176",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 142,
+                "title_as_indexed": "श्रीगणेशगीतायां योगावृत्तिप्रशंसा",
+                "locator": "Web text line 177",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 143,
+                "title_as_indexed": "श्रीगणेशगीतायां योगावृत्तिबुद्धियोगः",
+                "locator": "Web text line 178",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 144,
+                "title_as_indexed": "श्रीगणेशगीतायामुपासनायोगः",
+                "locator": "Web text line 179",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 145,
+                "title_as_indexed": "श्रीगणेशगीतायां विश्ववीपरूक्षणयोगः",
+                "locator": "Web text line 180",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 146,
+                "title_as_indexed": "श्रीगणेशगीतायां क्षेत्र क्षेत्रज्ञविवेकयोगः",
+                "locator": "Web text line 181",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 147,
+                "title_as_indexed": "श्रीगणेशगीतायामुपदेशयोगः",
+                "locator": "Web text line 182",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 148,
+                "title_as_indexed": "श्रीगणेशगीतायां गुणत्रयकृतियोगः",
+                "locator": "Web text line 183",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 149,
+                "title_as_indexed": "व्यासेन गणेशस्य दर्शनम्",
+                "locator": "Web text line 184",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 150,
+                "title_as_indexed": "व्यासाय वरप्रदानम्",
+                "locator": "Web text line 185",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 151,
+                "title_as_indexed": "सोमकन्तस्य विमानप्राप्तिः",
+                "locator": "Web text line 186",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 152,
+                "title_as_indexed": "सोमकान्तेन देवनगराय गमनम्",
+                "locator": "Web text line 187",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 153,
+                "title_as_indexed": "सोमकान्तस्य देवपदप्राप्तिः",
+                "locator": "Web text line 188",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 154,
+                "title_as_indexed": "वाराणस्यां विनायकः",
+                "locator": "Web text line 189",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              },
+              {
+                "chapter": 155,
+                "title_as_indexed": "फलश्रुतिः",
+                "locator": "Web text line 190",
+                "reading_status": "INDEX_ONLY",
+                "extraction_status": "UNEXAMINED"
+              }
+            ],
+            "count_basis": "Final colophon 2.155, web line23309"
+          }
+        ]
+      },
+      "access_status": "Sanskrit HTML, ITX and generated PDFs available for both khandas. Wisdomlib English witness explicitly abridged, index only chapters1–10. A complete English commercial publication is identified separately; no complete English text read.",
+      "examination_status": "PARTIALLY_READ",
+      "relevant_sections": [
+        "Entire two-khanda corpus",
+        "Upasana46 Sahasranama index",
+        "Krida138–148 Ganesa Gita index",
+        "Krida155 illustrative hearing narratives"
+      ],
+      "uncertainties": [
+        "Base print edition of SD transcription not established from footer.",
+        "Footers give 4096+7021 verses for SD witness; publisher product description gives4093+6986. No verse collation performed.",
+        "Publisher AITM74 description locates Gita139–150; SD index138–148. Cause of discrepancy unestablished."
+      ]
+    },
+    {
+      "id": "gp-src-gita",
+      "title_sanskrit": "गणेशगीता",
+      "title_variants": [
+        "Gaṇeśa Gītā",
+        "Śrīmadgaṇeśagītā"
+      ],
+      "category": "EMBEDDED_GITA",
+      "traditions": [
+        "Ganapatya"
+      ],
+      "classification_notes": "Standalone electronic witness explicitly identifies itself in colophons as embedded in Ganesa Purana Uttarakhaṇḍa, Gajānana–Vareṇya dialogue.",
+      "urls": [
+        "https://sanskritdocuments.org/doc_giitaa/ganeshagita.html",
+        "https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html"
+      ],
+      "structure": {
+        "chapter_count": 11,
+        "verse_counts_as_indexed": [
+          69,
+          43,
+          50,
+          37,
+          27,
+          21,
+          25,
+          26,
+          41,
+          23,
+          52
+        ],
+        "total_verses_as_indexed": 414,
+        "chapters": [
+          {
+            "number": 1,
+            "title": "Sāṅkhyasārārthayoga",
+            "reading_status": "INDEX_ONLY"
+          },
+          {
+            "number": 2,
+            "title": "Karmayoga",
+            "reading_status": "INDEX_ONLY"
+          },
+          {
+            "number": 3,
+            "title": "Vijñānapratipādana",
+            "reading_status": "INDEX_ONLY"
+          },
+          {
+            "number": 4,
+            "title": "Vaidhasaṃnyāsayoga",
+            "reading_status": "INDEX_ONLY"
+          },
+          {
+            "number": 5,
+            "title": "Yogāvṛttipraśaṃsana",
+            "reading_status": "INDEX_ONLY"
+          },
+          {
+            "number": 6,
+            "title": "Buddhiyoga",
+            "reading_status": "INDEX_ONLY"
+          },
+          {
+            "number": 7,
+            "title": "Upāsanāyoga",
+            "reading_status": "INDEX_ONLY"
+          },
+          {
+            "number": 8,
+            "title": "Viśvarūpadarśana",
+            "reading_status": "INDEX_ONLY"
+          },
+          {
+            "number": 9,
+            "title": "Kṣetrajñātṛjñeyavivekayoga",
+            "reading_status": "INDEX_ONLY"
+          },
+          {
+            "number": 10,
+            "title": "Upadeśayoga",
+            "reading_status": "INDEX_ONLY"
+          },
+          {
+            "number": 11,
+            "title": "Trividhavastuvivekanirūpaṇa",
+            "reading_status": "INDEX_ONLY"
+          }
+        ]
+      },
+      "access_status": "Complete standalone Sanskrit electronic witness accessible.",
+      "examination_status": "PARTIALLY_READ",
+      "relevant_sections": [
+        "Dialogue frame1.1–6",
+        "Doctrinal identifications1.21–24 (read; extraction queued)"
+      ],
+      "uncertainties": [
+        "Standalone chapter titles differ from embedded SD GP contents. Collate text before creating automatic chapter equivalences."
+      ]
+    },
+    {
+      "id": "gp-src-mudgala",
+      "title_sanskrit": "मुद्गलपुराणम्",
+      "title_variants": [
+        "Maudgala Purāṇa",
+        "Mudgala Purāṇa",
+        "Śrīmanmaudgala Mahāpurāṇa"
+      ],
+      "category": "PURANA",
+      "traditions": [
+        "Ganapatya"
+      ],
+      "classification_notes": "Digital witness colophons designate Mahapurana and Purānopaniṣad. Canonical rank beyond these source-local labels is unexamined.",
+      "urls": [
+        "https://sanskritdocuments.org/purana/",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam1.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam3.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam4.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam5.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam6.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam7.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam8.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam9.html"
+      ],
+      "structure": {
+        "khandas": [
+          {
+            "number": 1,
+            "name": "Vakratundacaritam",
+            "chapter_count": 54,
+            "chapter_numbers": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54
+            ],
+            "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam1.html",
+            "count_basis": "Terminal colophon 1.54, web line 9032",
+            "chapter_titles_inventory_complete": false
+          },
+          {
+            "number": 2,
+            "name": "Ekadantacaritam",
+            "chapter_count": 74,
+            "chapter_numbers": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              67,
+              68,
+              69,
+              70,
+              71,
+              72,
+              73,
+              74
+            ],
+            "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+            "count_basis": "Terminal colophon 2.74, web line 11608",
+            "chapter_titles_inventory_complete": false
+          },
+          {
+            "number": 3,
+            "name": "Mahodaracaritam",
+            "chapter_count": 51,
+            "chapter_numbers": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam3.html",
+            "count_basis": "Terminal colophon 3.51, web line 8485",
+            "chapter_titles_inventory_complete": false
+          },
+          {
+            "number": 4,
+            "name": "Gajananacaritam",
+            "chapter_count": 52,
+            "chapter_numbers": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51,
+              52
+            ],
+            "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam4.html",
+            "count_basis": "Terminal colophon 4.52, web line 9720",
+            "chapter_titles_inventory_complete": false
+          },
+          {
+            "number": 5,
+            "name": "Lambodaracaritam",
+            "chapter_count": 45,
+            "chapter_numbers": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45
+            ],
+            "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam5.html",
+            "count_basis": "Terminal colophon 5.45, web line 8042",
+            "chapter_titles_inventory_complete": false
+          },
+          {
+            "number": 6,
+            "name": "Vikatacaritam",
+            "chapter_count": 45,
+            "chapter_numbers": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45
+            ],
+            "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam6.html",
+            "count_basis": "Terminal colophon 6.45, web line 9382",
+            "chapter_titles_inventory_complete": false
+          },
+          {
+            "number": 7,
+            "name": "Vighnarajacaritam",
+            "chapter_count": 16,
+            "chapter_numbers": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam7.html",
+            "count_basis": "Terminal colophon 7.16, web line 2727",
+            "chapter_titles_inventory_complete": false
+          },
+          {
+            "number": 8,
+            "name": "Dhumravarnacaritam",
+            "chapter_count": 50,
+            "chapter_numbers": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50
+            ],
+            "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam8.html",
+            "count_basis": "Terminal colophon 8.50, web line 8717",
+            "chapter_titles_inventory_complete": false
+          },
+          {
+            "number": 9,
+            "name": "Yogacaritam",
+            "chapter_count": 41,
+            "chapter_numbers": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam9.html",
+            "count_basis": "Terminal colophon 9.41, web line 6646",
+            "chapter_titles_inventory_complete": false
+          }
+        ],
+        "total_chapters": 428,
+        "total_basis": "Sum of nine witnessed terminal colophons; 9.41.58 independently states428 chapters and9 khandas."
+      },
+      "access_status": "Nine Sanskrit HTML/ITX/PDF files available; archive scans linked. Full translation not established.",
+      "examination_status": "PARTIALLY_READ",
+      "relevant_sections": [
+        "All9 khandas, including ninth Yogacarita",
+        "1.23–24 Matsara origin/austerity/boon/family",
+        "1.54.14–32 Visvamitra encounter (read, extraction queued)"
+      ],
+      "uncertainties": [
+        "Base edition for digital transcription not established.",
+        "Inventory counts verified from terminal colophons; all individual chapter titles not yet registered.",
+        "All adversary defeats and final outcomes remain unexamined except queued material."
+      ]
+    },
+    {
+      "id": "lal-source",
+      "title_sanskrit": "Lalitopākhyāna / Lalitāmāhātmya",
+      "title_variants": [
+        "Lalitā-Māhātmya",
+        "Lalita Mahatmya"
+      ],
+      "category": "EMBEDDED_PURANA_NARRATIVE",
+      "traditions": [
+        "Śākta",
+        "Śrīvidyā"
+      ],
+      "classification_notes": "Embedded in final portion of Brahmāṇḍa Purāṇa fourth section; independent online subsection is not a separate universally agreed canon.",
+      "urls": [
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya"
+      ],
+      "structure": {
+        "online_chapters": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44
+        ],
+        "priority_arc": "11–30"
+      },
+      "access_status": "PUBLIC_ONLINE_READING",
+      "examination_status": "PARTIALLY_READ",
+      "relevant_sections": [
+        "11–30 Bhaṇḍāsura arc",
+        "31–44 subsequent city, ritual and Kāmākṣī material"
+      ],
+      "uncertainties": [
+        "Online index begins at chapter5; underlying edition numbering requires collation.",
+        "No Sanskrit or second edition collation completed.",
+        "Metadata year1958 is displayed by host and not independently bibliographically verified."
+      ]
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "cat-agni-witness",
+      "source_id": "cat-agni",
+      "editor": null,
+      "translator": "N. Gangadharan (site attribution)",
+      "publisher": null,
+      "date": "1954 (site metadata)",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-agni-purana",
+      "language": "English",
+      "edition_notes": "Read iconographic text as prescriptions, not events or biological genealogy. Sanskrit text links and print edition must be collated.",
+      "rights_status": "NOT_ESTABLISHED: public readability does not establish reuse permission",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "PARTIALLY_READ"
+    },
+    {
+      "id": "cat-brahmanda-witness",
+      "source_id": "cat-brahmanda",
+      "editor": null,
+      "translator": "G. V. Tagare (site attribution)",
+      "publisher": null,
+      "date": "1958 (site metadata)",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-brahmanda-purana&lang=en",
+      "language": "English",
+      "edition_notes": "Parent work and separately circulating supplements require edition-level collation. Site1958 attribution is not established publication history.",
+      "rights_status": "NOT_ESTABLISHED: public readability does not establish reuse permission",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "INDEX_REVIEWED"
+    },
+    {
+      "id": "cat-brihaddharma-witness",
+      "source_id": "cat-brihaddharma",
+      "editor": "Haraprasad Shastri",
+      "translator": null,
+      "publisher": null,
+      "date": null,
+      "url": "https://ci.nii.ac.jp/ncid/BA17778722.amp",
+      "language": "Sanskrit",
+      "edition_notes": "Haraprasad Shastri edition identified in catalogue search; full catalogue retrieval failed. Wisdomlib English is labelled abridged, not full-text evidence.",
+      "rights_status": "NOT_ESTABLISHED: public readability does not establish reuse permission",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "IDENTIFIED"
+    },
+    {
+      "id": "cat-devibhagavata-witness",
+      "source_id": "cat-devibhagavata",
+      "editor": null,
+      "translator": "Swami Vijñānānanda",
+      "publisher": null,
+      "date": "1921",
+      "url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana",
+      "language": "English",
+      "edition_notes": "Translation has interpretive asides; distinguish them from root Sanskrit. Full Sanskrit collation and classification lists pending.",
+      "rights_status": "NOT_ESTABLISHED: public readability does not establish reuse permission",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "PARTIALLY_READ"
+    },
+    {
+      "id": "cat-kalika-witness",
+      "source_id": "cat-kalika",
+      "editor": "Biswanarayana Shastri",
+      "translator": "Biswanarayana Shastri",
+      "publisher": null,
+      "date": "1994",
+      "url": "https://ignca.gov.in/kalikapurane-murtivinirdesah/",
+      "language": "Sanskrit and English",
+      "edition_notes": "IGNCA publication record read; actual book not obtained. Full Kālikā edition must be a separate witness.",
+      "rights_status": "NOT_ESTABLISHED: public readability does not establish reuse permission",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "IDENTIFIED"
+    },
+    {
+      "id": "cat-lalita-sahasranama-sd",
+      "source_id": "cat-lalita-sahasranama",
+      "editor": "M. Giridhar; volunteer proofreading team listed in footer",
+      "translator": null,
+      "publisher": "Sanskrit Documents digital witness",
+      "date": "2024 update in footer",
+      "url": "https://sanskritdocuments.org/doc_devii/lalitacomplete.html",
+      "language": "Sanskrit with separate English editorial notes",
+      "edition_notes": "Contains pūrvapīṭhikā, stotra and phalaśruti; parenthetical alternative readings. Underlying print witnesses not fully collated.",
+      "rights_status": "Personal study/research; commercial copying or reposting requires permission per footer. No full text stored.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "PARTIALLY_READ"
+    },
+    {
+      "id": "cat-lalita-sahasranama-witness",
+      "source_id": "cat-lalita-sahasranama",
+      "editor": "S. B. Raghunathacharya",
+      "translator": null,
+      "publisher": null,
+      "date": "1985",
+      "url": "https://sa.wikisource.org/wiki/श्रीललितासहस्रनाम_(सौभाग्यभास्करभाष्यम्)",
+      "language": "Sanskrit",
+      "edition_notes": "Search locates S. B. Raghunathacharya edited TTD1985 witness. Name semantics cannot be treated as battle events; commentary distinct from root stotra.",
+      "rights_status": "NOT_ESTABLISHED: public readability does not establish reuse permission",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "IDENTIFIED"
+    },
+    {
+      "id": "cat-linga-witness",
+      "source_id": "cat-linga",
+      "editor": null,
+      "translator": "J. L. Shastri (site attribution)",
+      "publisher": null,
+      "date": "1951 (site metadata)",
+      "url": "https://www.wisdomlib.org/purana/book/the-linga-purana",
+      "language": "English",
+      "edition_notes": "Site section labels may be reversed relative to conventional first/second parts; do not silently correct. Root text vs translator footnote in105.7 must remain separate.",
+      "rights_status": "NOT_ESTABLISHED: public readability does not establish reuse permission",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "PARTIALLY_READ"
+    },
+    {
+      "id": "cat-mahabhagavata-witness",
+      "source_id": "cat-mahabhagavata",
+      "editor": "Pushpendra Kumar",
+      "translator": null,
+      "publisher": null,
+      "date": "1983",
+      "url": "https://ci.nii.ac.jp/ncid/BA25230401",
+      "language": "Sanskrit; English introductory matter",
+      "edition_notes": "Catalogue confirms Pushpendra Kumar critical edition, Eastern Book Linkers, Delhi, 1983. Do not conflate with Vaiṣṇava Bhāgavata or Devī Bhāgavata.",
+      "rights_status": "NOT_ESTABLISHED: public readability does not establish reuse permission",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "IDENTIFIED"
+    },
+    {
+      "id": "cat-matsya-witness",
+      "source_id": "cat-matsya",
+      "editor": null,
+      "translator": "A Taluqdar of Oudh",
+      "publisher": null,
+      "date": "1916–1917",
+      "url": "https://onlinebooks.library.upenn.edu/webbin/book/lookupname?key=Vasu%2C+Srisa+Chandra%2C+1861-1918%3F",
+      "language": "English",
+      "edition_notes": "UPenn search record identifies translation by A Taluqdar of Oudh; browser retrieval failed. HathiTrust record notes US-only access; do not bypass restriction.",
+      "rights_status": "NOT_ESTABLISHED: public readability does not establish reuse permission",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "IDENTIFIED"
+    },
+    {
+      "id": "cat-shaktapramoda-witness",
+      "source_id": "cat-shaktapramoda",
+      "editor": null,
+      "translator": null,
+      "publisher": null,
+      "date": null,
+      "url": "https://search.worldcat.org/title/Saktapramoda-Saktapramoda-of-Raja-Deva-Nandan-Singh/oclc/856997274",
+      "language": "Sanskrit",
+      "edition_notes": "WorldCat search identifies Rājadevanandana Siṃha / Madhu Khanna; record body requires JavaScript. Edition and passage access unexamined.",
+      "rights_status": "NOT_ESTABLISHED: public readability does not establish reuse permission",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "IDENTIFIED"
+    },
+    {
+      "id": "cat-shiva-witness",
+      "source_id": "cat-shiva",
+      "editor": null,
+      "translator": "J. L. Shastri (site attribution)",
+      "publisher": null,
+      "date": "1950 (site metadata)",
+      "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english",
+      "language": "English",
+      "edition_notes": "Site date 1950 is not independently verified publication history; title in Sanskrit index Book1 differs from English section1. Collate editions before equivalence.",
+      "rights_status": "NOT_ESTABLISHED: public readability does not establish reuse permission",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "INDEX_REVIEWED"
+    },
+    {
+      "id": "cat-skanda-witness",
+      "source_id": "cat-skanda",
+      "editor": null,
+      "translator": "G. V. Tagare (site attribution)",
+      "publisher": null,
+      "date": "1950 (site metadata; edition history unverified)",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-skanda-purana",
+      "language": "English",
+      "edition_notes": "Do not identify the later khaṇḍa compilation with the early Skandapurāṇa critical edition. Chapter locators must include full section hierarchy.",
+      "rights_status": "NOT_ESTABLISHED: public readability does not establish reuse permission",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "INDEX_REVIEWED"
+    },
+    {
+      "id": "cat-yogini-tantra-witness",
+      "source_id": "cat-yogini-tantra",
+      "editor": null,
+      "translator": null,
+      "publisher": null,
+      "date": "1982 (search metadata)",
+      "url": "https://find.uoc.ac.in/Record/395333",
+      "language": "Sanskrit",
+      "edition_notes": "Library search identifies1982 first-edition Sanskrit book; page retrieval failed. Do not confuse with Yoginīhṛdaya.",
+      "rights_status": "NOT_ESTABLISHED: public readability does not establish reuse permission",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "IDENTIFIED"
+    },
+    {
+      "id": "cat-yoginihridaya-witness",
+      "source_id": "cat-yoginihridaya",
+      "editor": null,
+      "translator": null,
+      "publisher": null,
+      "date": null,
+      "url": "https://catalogue.bnf.fr/ark:/12148/cb12532632p",
+      "language": "Sanskrit",
+      "edition_notes": "Authority catalogue read only; no ritual or narrative facts extracted. Printed witness and commentary must be acquired separately.",
+      "rights_status": "NOT_ESTABLISHED: public readability does not establish reuse permission",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "IDENTIFIED"
+    },
+    {
+      "id": "dm-pargiter",
+      "source_id": "dm-source",
+      "editor": null,
+      "translator": "Frederick Eden Pargiter",
+      "publisher": "Asiatic Society; digital presentation Wisdomlib",
+      "date": "1904",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana",
+      "language": "English",
+      "edition_notes": "Linked cantos 81–93 directly read. Variant notes identify Calcutta and Bombay editions; scans of underlying editions not collated.",
+      "rights_status": "1904 translation is historical public-domain material; website presentation rights not independently established. Only paraphrases and references retained.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "READ"
+    },
+    {
+      "id": "dm-sanskritdocuments",
+      "source_id": "dm-source",
+      "editor": "SanskritDocuments volunteer transcription; specific editor not established",
+      "translator": null,
+      "publisher": "SanskritDocuments",
+      "date": null,
+      "url": "https://sanskritdocuments.org/doc_devii/durga700.html",
+      "language": "Sanskrit",
+      "edition_notes": "Devanāgarī HTML contains DM chapters and liturgical adjuncts. Explicit chapter.mantra labels; speakers and half verses contribute to Saptaśatī count. Selected passages directly checked.",
+      "rights_status": "Ancient Sanskrit composition; volunteer digital transcription terms not independently audited. Raw text not redistributed.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "PARTIALLY_READ"
+    },
+    {
+      "id": "gp-wit-archive-ganesha-scan",
+      "source_id": "gp-src-ganesha",
+      "editor": null,
+      "translator": null,
+      "publisher": "Internet Archive item; underlying edition unestablished",
+      "date": null,
+      "url": "https://archive.org/details/ganesha-mahapuran",
+      "language": null,
+      "edition_notes": "Linked scan landing page examined; actual scan not read. Metadata creditsVedbyasa.",
+      "rights_status": "Not established",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "IDENTIFIED"
+    },
+    {
+      "id": "gp-wit-bailey-aitm74",
+      "source_id": "gp-src-ganesha",
+      "editor": null,
+      "translator": "Greg Bailey",
+      "publisher": "Motilal Banarsidass",
+      "date": null,
+      "url": "https://www.motilalbanarsidass.com/en-us/products/the-ganesa-purana-pt-1-upasana-khanda-aitm-vol-74-ancient-indian-tradition-and-mythology",
+      "language": "English",
+      "edition_notes": "Publisher metadata identifiesPart1 Upasana, AITM74,408pages. Book text not accessed.",
+      "rights_status": "Commercial copyrighted translation; do not bulk copy.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "IDENTIFIED"
+    },
+    {
+      "id": "gp-wit-publisher-count",
+      "source_id": "gp-src-ganesha",
+      "editor": null,
+      "translator": null,
+      "publisher": "Motilal Banarsidass retail description",
+      "date": null,
+      "url": "https://www.motilalbanarsidass.com/products/the-ganesa-purana",
+      "language": "English",
+      "edition_notes": "Retail description metadata read; underlying book not read.",
+      "rights_status": "Publisher web description; concise paraphrase only.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "PARTIALLY_READ"
+    },
+    {
+      "id": "gp-wit-sd-gita",
+      "source_id": "gp-src-gita",
+      "editor": null,
+      "translator": null,
+      "publisher": "Sanskrit Documents",
+      "date": null,
+      "url": "https://sanskritdocuments.org/doc_giitaa/ganeshagita.html",
+      "language": "Sanskrit",
+      "edition_notes": "Encoded and proofread by Sunder Hattangadi; footerJuly4,2008; proofreader Sunder Hattangadi",
+      "rights_status": "Research/study permitted; copying or reposting for promotion/commercial purposes requires permission. Automated bulk extraction permission not established; only metadata and concise paraphrases retained.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "PARTIALLY_READ"
+    },
+    {
+      "id": "gp-wit-sd-krida",
+      "source_id": "gp-src-ganesha",
+      "editor": null,
+      "translator": null,
+      "publisher": "Sanskrit Documents",
+      "date": null,
+      "url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+      "language": "Sanskrit",
+      "edition_notes": "Electronic Sanskrit Krida text; terminal155 chapters; proofreader Manish Gavkar",
+      "rights_status": "Research/study permitted; copying or reposting for promotion/commercial purposes requires permission. Automated bulk extraction permission not established; only metadata and concise paraphrases retained.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "PARTIALLY_READ"
+    },
+    {
+      "id": "gp-wit-sd-mudgala-1",
+      "source_id": "gp-src-mudgala",
+      "editor": null,
+      "translator": null,
+      "publisher": "Sanskrit Documents",
+      "date": null,
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam1.html",
+      "language": "Sanskrit",
+      "edition_notes": "Footer latest updateSeptember18–19,2023; print base unestablished; proofreader Yash Khasbage",
+      "rights_status": "Research/study permitted; copying or reposting for promotion/commercial purposes requires permission. Automated bulk extraction permission not established; only metadata and concise paraphrases retained.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "READ"
+    },
+    {
+      "id": "gp-wit-sd-mudgala-2",
+      "source_id": "gp-src-mudgala",
+      "editor": null,
+      "translator": null,
+      "publisher": "Sanskrit Documents",
+      "date": null,
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+      "language": "Sanskrit",
+      "edition_notes": "Footer latest updateSeptember18–19,2023; print base unestablished; proofreader Yash Khasbage",
+      "rights_status": "Research/study permitted; copying or reposting for promotion/commercial purposes requires permission. Automated bulk extraction permission not established; only metadata and concise paraphrases retained.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "PARTIALLY_READ"
+    },
+    {
+      "id": "gp-wit-sd-mudgala-3",
+      "source_id": "gp-src-mudgala",
+      "editor": null,
+      "translator": null,
+      "publisher": "Sanskrit Documents",
+      "date": null,
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam3.html",
+      "language": "Sanskrit",
+      "edition_notes": "Footer latest updateSeptember18–19,2023; print base unestablished; proofreader Yash Khasbage",
+      "rights_status": "Research/study permitted; copying or reposting for promotion/commercial purposes requires permission. Automated bulk extraction permission not established; only metadata and concise paraphrases retained.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "INDEX_REVIEWED"
+    },
+    {
+      "id": "gp-wit-sd-mudgala-4",
+      "source_id": "gp-src-mudgala",
+      "editor": null,
+      "translator": null,
+      "publisher": "Sanskrit Documents",
+      "date": null,
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam4.html",
+      "language": "Sanskrit",
+      "edition_notes": "Footer latest updateSeptember18–19,2023; print base unestablished; proofreader Yash Khasbage",
+      "rights_status": "Research/study permitted; copying or reposting for promotion/commercial purposes requires permission. Automated bulk extraction permission not established; only metadata and concise paraphrases retained.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "INDEX_REVIEWED"
+    },
+    {
+      "id": "gp-wit-sd-mudgala-5",
+      "source_id": "gp-src-mudgala",
+      "editor": null,
+      "translator": null,
+      "publisher": "Sanskrit Documents",
+      "date": null,
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam5.html",
+      "language": "Sanskrit",
+      "edition_notes": "Footer latest updateSeptember18–19,2023; print base unestablished; proofreader Yash Khasbage",
+      "rights_status": "Research/study permitted; copying or reposting for promotion/commercial purposes requires permission. Automated bulk extraction permission not established; only metadata and concise paraphrases retained.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "INDEX_REVIEWED"
+    },
+    {
+      "id": "gp-wit-sd-mudgala-6",
+      "source_id": "gp-src-mudgala",
+      "editor": null,
+      "translator": null,
+      "publisher": "Sanskrit Documents",
+      "date": null,
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam6.html",
+      "language": "Sanskrit",
+      "edition_notes": "Footer latest updateSeptember18–19,2023; print base unestablished; proofreader Yash Khasbage",
+      "rights_status": "Research/study permitted; copying or reposting for promotion/commercial purposes requires permission. Automated bulk extraction permission not established; only metadata and concise paraphrases retained.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "INDEX_REVIEWED"
+    },
+    {
+      "id": "gp-wit-sd-mudgala-7",
+      "source_id": "gp-src-mudgala",
+      "editor": null,
+      "translator": null,
+      "publisher": "Sanskrit Documents",
+      "date": null,
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam7.html",
+      "language": "Sanskrit",
+      "edition_notes": "Footer latest updateSeptember18–19,2023; print base unestablished; proofreader Yash Khasbage",
+      "rights_status": "Research/study permitted; copying or reposting for promotion/commercial purposes requires permission. Automated bulk extraction permission not established; only metadata and concise paraphrases retained.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "INDEX_REVIEWED"
+    },
+    {
+      "id": "gp-wit-sd-mudgala-8",
+      "source_id": "gp-src-mudgala",
+      "editor": null,
+      "translator": null,
+      "publisher": "Sanskrit Documents",
+      "date": null,
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam8.html",
+      "language": "Sanskrit",
+      "edition_notes": "Footer latest updateSeptember18–19,2023; print base unestablished; proofreader Yash Khasbage",
+      "rights_status": "Research/study permitted; copying or reposting for promotion/commercial purposes requires permission. Automated bulk extraction permission not established; only metadata and concise paraphrases retained.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "INDEX_REVIEWED"
+    },
+    {
+      "id": "gp-wit-sd-mudgala-9",
+      "source_id": "gp-src-mudgala",
+      "editor": null,
+      "translator": null,
+      "publisher": "Sanskrit Documents",
+      "date": null,
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam9.html",
+      "language": "Sanskrit",
+      "edition_notes": "Footer latest updateSeptember18–19,2023; print base unestablished; proofreader Yash Khasbage",
+      "rights_status": "Research/study permitted; copying or reposting for promotion/commercial purposes requires permission. Automated bulk extraction permission not established; only metadata and concise paraphrases retained.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "PARTIALLY_READ"
+    },
+    {
+      "id": "gp-wit-sd-upasana",
+      "source_id": "gp-src-ganesha",
+      "editor": null,
+      "translator": null,
+      "publisher": "Sanskrit Documents",
+      "date": null,
+      "url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+      "language": "Sanskrit",
+      "edition_notes": "Electronic Sanskrit Upasana text; terminal92 chapters; proofreader Manish Gavkar",
+      "rights_status": "Research/study permitted; copying or reposting for promotion/commercial purposes requires permission. Automated bulk extraction permission not established; only metadata and concise paraphrases retained.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "PARTIALLY_READ"
+    },
+    {
+      "id": "gp-wit-wisdomlib-abridged",
+      "source_id": "gp-src-ganesha",
+      "editor": "C. Devadas",
+      "translator": "Gregory Baily (spelling used on website)",
+      "publisher": "Wisdomlib / Astrojyoti",
+      "date": null,
+      "url": "https://www.wisdomlib.org/hinduism/book/the-ganesha-purana",
+      "language": "English",
+      "edition_notes": "Landing page11149 words, indexIntroduction+chapters1–10. Explicitly abridged.",
+      "rights_status": "Landing page says Astrojyoti granted Wisdomlib permission to duplicate; permission to reuse elsewhere not established.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "INDEX_REVIEWED"
+    },
+    {
+      "id": "lal-witness",
+      "source_id": "lal-source",
+      "editor": null,
+      "translator": "G. V. Tagare (host attribution)",
+      "publisher": "Motilal Banarsidass (host source link); Wisdomlib online transcription",
+      "date": "1958 (host metadata; bibliographic verification pending)",
+      "url": "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya",
+      "language": "English",
+      "edition_notes": "Verse numbers retained from hosted translation. Translation and translator footnotes kept distinct.",
+      "rights_status": "Publicly readable; reuse license not established; only original concise factual paraphrases stored.",
+      "automated_extraction": "NOT_ESTABLISHED",
+      "read_status": "PARTIALLY_READ"
+    }
+  ],
+  "discovery_targets": [
+    {
+      "id": "target-mahavidya-tantras",
+      "titles": [
+        "Muṇḍamālā Tantra",
+        "Toḍala Tantra",
+        "Śāktapramoda"
+      ],
+      "task": "Locate catalogued editions and exact enumeration/origin passages; preserve divergent lists; no narrative claims from remembered lists.",
+      "priority": "P1"
+    },
+    {
+      "id": "target-pitha",
+      "titles": [
+        "Pīṭhanirṇaya",
+        "Tantracūḍāmaṇi"
+      ],
+      "task": "Find identifiable witness, then compare lists with Kālikā/Devī Bhāgavata; verify relationship of titles before merging.",
+      "priority": "P1"
+    },
+    {
+      "id": "target-matrka-tantras",
+      "titles": [],
+      "task": "Identify Mātṛkā-specific primary Tantric passages and editions, using verified scholarship and library catalogues; enumeration not yet exhaustive.",
+      "priority": "P1"
+    },
+    {
+      "id": "target-stotras",
+      "titles": [
+        "Gaṇapatyatharvaśīrṣa",
+        "Durgāsaptaśatī auxiliary texts"
+      ],
+      "task": "Identify primary witnesses and distinguish stotra/ritual ancillary texts from narrative chapters.",
+      "priority": "P1"
+    },
+    {
+      "id": "target-silpa",
+      "titles": [
+        "Bṛhatsaṃhitā",
+        "Rūpamaṇḍana",
+        "Śilparatna"
+      ],
+      "task": "Find edition-specific Devī/Gaṇeśa iconography passages; Agni52 and IGNCA Kālikā selection already provide entry points.",
+      "priority": "P1"
+    },
+    {
+      "id": "target-epic-passages",
+      "titles": [
+        "Mahābhārata",
+        "Vālmīki Rāmāyaṇa"
+      ],
+      "task": "Only Devī/Gaṇeśa-relevant passages named in original brief after core tracks; compare critical edition appendices and recensions, especially scribal Gaṇeśa passage. Whole-epic work deferred by user.",
+      "priority": "P1_AFTER_CORE"
+    },
+    {
+      "id": "target-regional-commentaries",
+      "titles": [],
+      "task": "Source-led discovery of commentaries and regional witnesses; no universal completeness claim.",
+      "priority": "P1"
+    },
+    {
+      "id": "target-full-expanded-corpus",
+      "titles": [
+        "18 Mahāpurāṇas",
+        "all Upapurāṇas",
+        "complete Mahābhārata",
+        "complete Rāmāyaṇa"
+      ],
+      "task": "Explicitly deferred by user until prompt-listed sources covered.",
+      "priority": "DEFERRED",
+      "status": "DEFERRED_BY_USER"
+    }
+  ],
+  "tracks": [
+    {
+      "track": "catalogue",
+      "notes": "Root catalogue discovery; no narrative claims from indices. Core sources are registered in the independent lal/dm/gp tracks. Broader full-corpus inventory deferred per user steering.",
+      "inspected_urls": [
+        "https://catalogue.bnf.fr/ark:/12148/cb12532632p",
+        "https://ci.nii.ac.jp/ncid/BA17778722.amp",
+        "https://ci.nii.ac.jp/ncid/BA25230401",
+        "https://find.uoc.ac.in/Record/395333",
+        "https://ignca.gov.in/kalikapurane-murtivinirdesah/",
+        "https://onlinebooks.library.upenn.edu/webbin/book/lookupname?key=Vasu%2C+Srisa+Chandra%2C+1861-1918%3F",
+        "https://sa.wikisource.org/wiki/श्रीललितासहस्रनाम_(सौभाग्यभास्करभाष्यम्)",
+        "https://sanskritdocuments.org/doc_devii/lalitacomplete.html",
+        "https://search.worldcat.org/title/Saktapramoda-Saktapramoda-of-Raja-Deva-Nandan-Singh/oclc/856997274",
+        "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana",
+        "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57285.html",
+        "https://www.wisdomlib.org/hinduism/book/shiva-purana-english",
+        "https://www.wisdomlib.org/hinduism/book/the-agni-purana",
+        "https://www.wisdomlib.org/hinduism/book/the-agni-purana/d/doc1083140.html",
+        "https://www.wisdomlib.org/hinduism/book/the-brahmanda-purana&lang=en",
+        "https://www.wisdomlib.org/hinduism/book/the-linga-purana/d/doc1196085.html",
+        "https://www.wisdomlib.org/hinduism/book/the-skanda-purana",
+        "https://www.wisdomlib.org/purana/book/the-linga-purana"
+      ]
+    },
+    {
+      "track": "lal",
+      "notes": "Finished original paraphrase-only transition chain, with all chapter extractions explicitly PARTIAL. Names, relationships and powers are witness-scoped. Unknown boon fields distinguish unstated examined facts from queued wider examination. No full translation text stored. Source ordering recovered by numeric chapter and verse; temporal_relation marks previews and flashbacks.",
+      "inspected_urls": [
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362945.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362946.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362947.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362948.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362949.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362950.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362951.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362952.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362953.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362954.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362957.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362959.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362960.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362961.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362962.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362963.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362964.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362965.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362966.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362967.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362969.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362970.html",
+        "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362968.html"
+      ]
+    },
+    {
+      "track": "dm",
+      "notes": "Direct web reading of all 13 Pargiter DM narrative bodies, plus selected Sanskrit passages. Complete bounded source-ordered narrative arcs; 0 chapters claimed fully atomized/exhaustive. Every entity is source-scoped; chapter5 Kālikā differs from chapter7 Kālī node, future Śumbha/Niśumbha differ from battle-cycle opponents. Boon grantors, unknown backstories and future modality preserved. No raw copyrighted translation stored. Web-line locators identify accessible paragraphs; verses only supplied for actually inspected Sanskrit labels. Integrity audit passed: globally unique IDs, entity endpoints, evidence/passages, power parties, later events, spine references and source sequence 1–64. Independent QA corrections applied: Suratha intermediate return/local rule/renewed attack restored; blood-replication counter now cites DM8.53–63 rather than mechanism-only passage.",
+      "inspected_urls": [
+        "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana",
+        "https://sanskritdocuments.org/doc_devii/durga700.html",
+        "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117155.html",
+        "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117157.html",
+        "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117158.html",
+        "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117161.html",
+        "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117163.html",
+        "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117165.html",
+        "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117166.html",
+        "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117167.html",
+        "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117169.html",
+        "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117170.html",
+        "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117171.html",
+        "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117173.html",
+        "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117175.html"
+      ]
+    },
+    {
+      "track": "gp",
+      "notes": "Source-scoped seed extraction. Sanskrit passages were directly read; no print scan collation or independent Sanskrit expert verification has occurred. VERIFIED means checked against the accessible digital witness, not a critical-edition claim. Chapter inventories do not establish narrative facts. Full-corpus and full-chapter narrative extraction remain incomplete. Sanskrit Documents permits study and research but restricts copying/reposting/commercial reuse; no full-text source copies retained.",
+      "inspected_urls": [
+        "https://sanskritdocuments.org/purana/",
+        "https://www.wisdomlib.org/hinduism/book/the-ganesha-purana",
+        "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+        "https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+        "https://sanskritdocuments.org/doc_giitaa/ganeshagita.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam1.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam3.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam4.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam5.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam6.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam7.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam8.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam9.html",
+        "https://archive.org/details/ganesha-mahapuran",
+        "https://www.motilalbanarsidass.com/en-us/products/the-ganesa-purana-pt-1-upasana-khanda-aitm-vol-74-ancient-indian-tradition-and-mythology",
+        "https://www.motilalbanarsidass.com/products/the-ganesa-purana"
+      ]
+    }
+  ],
+  "completeness_claim": "NONE: expanding catalogue of distinct works/embedded works, not a universal canon.",
+  "continued_at": "2026-10-13T05:04:54.616646+00:00",
+  "continuation_scope": "Fifth incremental checkpoint: source-order Upāsanā72, Krīḍā54 and Mudgala2.19 onward; wider registrations retained without expansion."
+}

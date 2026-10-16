@@ -1,0 +1,1250 @@
+{
+  "checkpoint": "continuation4",
+  "completed_arc_id": "mud5-story-bharata-deer-life",
+  "graph_sha256": "d3e53f6fb2ee6852a3b4d4e6ee677a24abac85e4ede403205172dfa77aa4306a",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checks complete; independent review selective. All declared interpretation gaps remain explicit.",
+  "story": {
+    "id": "mud5-story-bharata-deer-life",
+    "title": "Bharata’s retirement,fawn attachment,deer rebirth and Gaṇeśa devotion before deer-body abandonment",
+    "source_id": "gp-src-mudgala",
+    "witness_id": "gp-wit-sd-mudgala-2",
+    "scope": "2.17.6–24; 2.18.27–37; embeddedPulahateaching/encounterrecordedseparately",
+    "event_ids": [
+      "mud5-event-bharata-retirement",
+      "mud5-event-bharata-fawn-rescue",
+      "mud5-event-bharata-deer-rebirth",
+      "mud5-event-bharata-pulaha-arrival",
+      "mud5-event-bharata-heard-brahma-teaching",
+      "mud5-event-bharata-deer-body-ending"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Entire bounded cited Sanskrit arc read; significant named actors, relationships, boons/powers, dialogue and transition checks by author. Independent root review separate.",
+    "missing_sections": [],
+    "editorial_notes": "Complete deer-life chronological arc only. Embedded Brahmā/Pulaha teaching has a separate PARTIAL spine at 17.42–43; this records Bharata hearing/retaining it without claiming full philosophical normalization. Later human rebirth starts 19 and remains queued."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "mud5-event-bharata-retirement",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-bharata-deer-life",
+        "sequence": 1,
+        "passage_ids": [
+          "mud5-p-bharata-retirement"
+        ],
+        "participants": [
+          "mud5-en-bharata",
+          "mud5-en-bharata-unnamed-son",
+          "mud5-en-rsabha",
+          "mud-en-vishnu",
+          "mud5-en-salagrama-asrama"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Ṛṣabha’s eldest son Bharata rules righteously, pleasing subjects, then entrusts kingdom to unnamed son and goes forest. At Śālagrāma āśrama he performs fierce tapas, weakens body gradually and meditates on Viṣṇu. No son-name or fixed duration stated.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-bharata-retirement"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-bharata-retirement",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-bharata-retirement",
+          "locator": "Mudgala2.17.6–8",
+          "paraphrase": "Ṛṣabha’s eldest son Bharata rules righteously, pleasing subjects, then entrusts kingdom to unnamed son and goes forest. At Śālagrāma āśrama he performs fierce tapas, weakens body gradually and meditates on Viṣṇu. No son-name or fixed duration stated.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud5-event-bharata-fawn-rescue",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-bharata-deer-life",
+        "sequence": 2,
+        "passage_ids": [
+          "mud5-p-bharata-fawn-rescue"
+        ],
+        "participants": [
+          "mud5-en-bharata",
+          "mud5-en-frightened-doe",
+          "mud5-en-rescued-fawn",
+          "mud5-en-roaring-lion",
+          "mud4-en-pitrs"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "While Bharata makes Pitṛ offerings at river, a lion’s sudden roar frightens a pregnant doe. She leaps into river fleeing; fetus falls into water and she dies farther away from distress. Bharata compassionately rescues and carefully raises fawn; fondling/playing becomes attachment and his tapas-related acts gradually depart, as he fails to see attachment fault.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-bharata-fawn-rescue"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-bharata-fawn-rescue",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-bharata-fawn-rescue",
+          "locator": "Mudgala2.17.9–14",
+          "paraphrase": "While Bharata makes Pitṛ offerings at river, a lion’s sudden roar frightens a pregnant doe. She leaps into river fleeing; fetus falls into water and she dies farther away from distress. Bharata compassionately rescues and carefully raises fawn; fondling/playing becomes attachment and his tapas-related acts gradually depart, as he fails to see attachment fault.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud5-event-bharata-deer-rebirth",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-bharata-deer-life",
+        "sequence": 3,
+        "passage_ids": [
+          "mud5-p-bharata-deer-rebirth"
+        ],
+        "participants": [
+          "mud5-en-bharata",
+          "mud5-en-bharata-deer-body",
+          "mud5-en-rescued-fawn",
+          "mud-en-vishnu",
+          "mud5-en-salagrama-asrama"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Fawn goes with other deer into unknown forest. Bharata searches forest after forest, laments and dies in continued grief; at death he sees deer nearby. Because of attachment fault he is born as deer. Earlier tapas grants previous-birth memory, so he fears attachment, abandons deer company, returns former āśrama, practices nonviolence/turns from dualities, eats dry grass, remembers Viṣṇu, bathes in tīrthas and desires saintly company. This is narrated rebirth/memory mechanism, not a deity boon scene.",
+        "outcome": "Deer rebirth with former-life memory; avoids attachment.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-bharata-deer-rebirth"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-bharata-deer-rebirth",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-bharata-deer-rebirth",
+          "locator": "Mudgala2.17.15–21",
+          "paraphrase": "Fawn goes with other deer into unknown forest. Bharata searches forest after forest, laments and dies in continued grief; at death he sees deer nearby. Because of attachment fault he is born as deer. Earlier tapas grants previous-birth memory, so he fears attachment, abandons deer company, returns former āśrama, practices nonviolence/turns from dualities, eats dry grass, remembers Viṣṇu, bathes in tīrthas and desires saintly company. This is narrated rebirth/memory mechanism, not a deity boon scene.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud5-event-bharata-pulaha-arrival",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-bharata-deer-life",
+        "sequence": 4,
+        "passage_ids": [
+          "mud5-p-bharata-pulaha-arrival"
+        ],
+        "participants": [
+          "mud5-en-bharata",
+          "mud5-en-bharata-deer-body",
+          "mud2-en-pulaha",
+          "mud5-en-pulaha-asrama",
+          "mud5-en-pulaha-asrama-sages",
+          "mud-en-vakratunda"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Wandering in forest by earlier merit, deer-bodied Bharata sees Pulaha āśrama. Sages there perform tapas and Gaṇeśa worship; he joyfully dwells near them, devoted to saintly company.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-bharata-pulaha-arrival"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-bharata-pulaha-arrival",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-bharata-pulaha-arrival",
+          "locator": "Mudgala2.17.22–24",
+          "paraphrase": "Wandering in forest by earlier merit, deer-bodied Bharata sees Pulaha āśrama. Sages there perform tapas and Gaṇeśa worship; he joyfully dwells near them, devoted to saintly company.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud5-event-bharata-heard-brahma-teaching",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-bharata-deer-life",
+        "sequence": 5,
+        "passage_ids": [
+          "mud5-p-bharata-heard-brahma-teaching"
+        ],
+        "participants": [
+          "mud5-en-bharata",
+          "mud5-en-bharata-deer-body",
+          "mud-en-brahma",
+          "mud2-en-pulaha",
+          "mud-en-vakratunda",
+          "mud5-en-pulaha-asrama"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Deer-bodied Bharata dwelling there hears full knowledge, holds Brahmā’s instruction to Pulaha continually in heart, and joyfully meditates on Gaṇeśa while staying there. Narrator says full knowledge; this records reception, not independent resolution of 17.42–43 dense teaching grammar.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-bharata-heard-brahma-teaching"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-bharata-heard-brahma-teaching",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-bharata-heard-brahma-teaching",
+          "locator": "Mudgala2.18.27–29",
+          "paraphrase": "Deer-bodied Bharata dwelling there hears full knowledge, holds Brahmā’s instruction to Pulaha continually in heart, and joyfully meditates on Gaṇeśa while staying there. Narrator says full knowledge; this records reception, not independent resolution of 17.42–43 dense teaching grammar.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud5-event-bharata-deer-body-ending",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-bharata-deer-life",
+        "sequence": 6,
+        "passage_ids": [
+          "mud5-p-bharata-deer-body-ending"
+        ],
+        "participants": [
+          "mud5-en-bharata",
+          "mud5-en-bharata-deer-body",
+          "mud-en-vishnu",
+          "gp-m-en-siva",
+          "mud-en-vakratunda",
+          "mud2-en-pulaha"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Bharata reflects that after leaving kingdom and remembering Hari, attachment to deer nevertheless made him deer-bodied. He attributes victory over difficult obstacles by Śiva/Viṣṇu-led gods/all beings to Vighnarāja grace. He praises earlier Vaiṣṇava devotion for saṃskāra leading to excellent knowledge, and fortunate meeting Gaṇapatya yogin Pulaha/ongoing saint company, now worshipping Gaṇeśa without obstruction. In time, devoted to Gaṇeśa and meditating on him, he abandons deer body. No new birth narrated within 18 and no express new liberation grant.",
+        "outcome": "Meditating on Gaṇeśa, Bharata abandons deer body; next life outside bounded arc.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-bharata-deer-body-ending"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-bharata-deer-body-ending",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-bharata-deer-body-ending",
+          "locator": "Mudgala2.18.30–37",
+          "paraphrase": "Bharata reflects that after leaving kingdom and remembering Hari, attachment to deer nevertheless made him deer-bodied. He attributes victory over difficult obstacles by Śiva/Viṣṇu-led gods/all beings to Vighnarāja grace. He praises earlier Vaiṣṇava devotion for saṃskāra leading to excellent knowledge, and fortunate meeting Gaṇapatya yogin Pulaha/ongoing saint company, now worshipping Gaṇeśa without obstruction. In time, devoted to Gaṇeśa and meditating on him, he abandons deer body. No new birth narrated within 18 and no express new liberation grant.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gp-m-en-siva",
+      "name": "Śiva / Śambhu / Sadāśiva / Śaṅkara",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-matsara-austerity",
+        "mud-e-divine-refuge",
+        "mud-e-andhaka-envoy",
+        "mud-e-matsara-karma-argument",
+        "mud-e-kailasa-battle",
+        "mud-e-matsara-captures-siva",
+        "mud-e-world-allocation",
+        "mud-e-datta-counsel",
+        "mud-e-vak-manifest",
+        "mud-e-siva-pasupata",
+        "mud-e-sons-fell-siva",
+        "mud-e-following-witness-previews",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-sati-request",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sati-death-rebirth",
+        "rmd2-e-shiva-grief",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-mahat-birth",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-body-worlds",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-brahma",
+      "name": "Brahmā",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-naimisha",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-assembly",
+        "mud2-e-yaj-arrives",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-vishnu",
+      "name": "Viṣṇu",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-senses-gods",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders",
+        "mud5-e-visnu-world-laksmis"
+      ]
+    },
+    {
+      "id": "mud-en-vakratunda",
+      "name": "Vakratunda / Gaṇeśa / Gaṇanāyaka / Vighnapa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "rmd2-e-invocation",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-tattva-boon",
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-tapas",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "rmd2-e-five-request-hymn-fruits",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud2-en-pulaha",
+      "name": "Pulaha",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud2-e-narada-mutual-curses",
+        "mud4-e-remaining-daughters-marriages",
+        "mud5-e-solar-sages-rein-holders",
+        "mud5-e-bharata-pulaha-arrival"
+      ]
+    },
+    {
+      "id": "mud4-en-pitrs",
+      "name": "Pitṛs, husbands of Svadhā",
+      "type": "FAMILY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-remaining-daughters-marriages",
+        "mud5-e-moon-nectar-cycle"
+      ]
+    },
+    {
+      "id": "mud5-en-rsabha",
+      "name": "Ṛṣabha, Nābhi’s sacrifice-born son",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-rsabha-nabhi-origin",
+        "mud5-e-rsabha-sons-counts"
+      ]
+    },
+    {
+      "id": "mud5-en-bharata",
+      "name": "Bharata, eldest son of Ṛṣabha",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-rsabha-sons-counts"
+      ]
+    },
+    {
+      "id": "mud5-en-bharata-unnamed-son",
+      "name": "Unnamed Bharata son receiving kingdom",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-salagrama-asrama",
+      "name": "Śālagrāma āśrama in Bharata forest retreat",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-frightened-doe",
+      "name": "Pregnant doe frightened by lion in Bharata account",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-fawn-rescue"
+      ]
+    },
+    {
+      "id": "mud5-en-rescued-fawn",
+      "name": "Fawn rescued/raised by Bharata",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-fawn-rescue"
+      ]
+    },
+    {
+      "id": "mud5-en-roaring-lion",
+      "name": "Lion whose roar frightens doe in Bharata account",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-fawn-rescue"
+      ]
+    },
+    {
+      "id": "mud5-en-bharata-deer-body",
+      "name": "Bharata’s deer-body rebirth",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-deer-rebirth"
+      ]
+    },
+    {
+      "id": "mud5-en-pulaha-asrama",
+      "name": "Pulaha āśrama visited by deer-bodied Bharata",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-pulaha-arrival"
+      ]
+    },
+    {
+      "id": "mud5-en-pulaha-asrama-sages",
+      "name": "Gaṇeśa-worshipping tapas sages at Pulaha āśrama",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-pulaha-arrival"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "mud5-r-bharata-son",
+      "subject_id": "mud5-en-bharata-unnamed-son",
+      "predicate": "child_of",
+      "object_id": "mud5-en-bharata",
+      "evidence_ids": [
+        "mud5-e-bharata-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-bharata-son",
+      "kinship_kind": "EXPLICIT_PARENT"
+    },
+    {
+      "id": "mud5-r-bharata-succession",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "entrusts_kingdom_to",
+      "object_id": "mud5-en-bharata-unnamed-son",
+      "evidence_ids": [
+        "mud5-e-bharata-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-bharata-succession"
+    },
+    {
+      "id": "mud5-r-bharata-retreat",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "resides_in",
+      "object_id": "mud5-en-salagrama-asrama",
+      "evidence_ids": [
+        "mud5-e-bharata-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-bharata-retreat"
+    },
+    {
+      "id": "mud5-r-bharata-visnu-devotion",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "meditates_on",
+      "object_id": "mud-en-vishnu",
+      "evidence_ids": [
+        "mud5-e-bharata-retirement"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-bharata-visnu-devotion"
+    },
+    {
+      "id": "mud5-r-fawn-doe",
+      "subject_id": "mud5-en-rescued-fawn",
+      "predicate": "offspring_of",
+      "object_id": "mud5-en-frightened-doe",
+      "evidence_ids": [
+        "mud5-e-bharata-fawn-rescue"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-fawn-doe",
+      "kinship_kind": "EXPLICIT_ANIMAL_PARENT"
+    },
+    {
+      "id": "mud5-r-bharata-fawn-care",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "rescues_and_raises",
+      "object_id": "mud5-en-rescued-fawn",
+      "evidence_ids": [
+        "mud5-e-bharata-fawn-rescue"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-bharata-fawn-care"
+    },
+    {
+      "id": "mud5-r-bharata-deer-embodiment",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "reborn_in",
+      "object_id": "mud5-en-bharata-deer-body",
+      "evidence_ids": [
+        "mud5-e-bharata-deer-rebirth"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-bharata-deer-embodiment",
+      "kinship_kind": "REBIRTH"
+    },
+    {
+      "id": "mud5-r-pulaha-asrama",
+      "subject_id": "mud5-en-pulaha-asrama",
+      "predicate": "associated_with",
+      "object_id": "mud2-en-pulaha",
+      "evidence_ids": [
+        "mud5-e-bharata-pulaha-arrival"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-pulaha-asrama"
+    },
+    {
+      "id": "mud5-r-pulaha-sages-residence",
+      "subject_id": "mud5-en-pulaha-asrama-sages",
+      "predicate": "resides_in",
+      "object_id": "mud5-en-pulaha-asrama",
+      "evidence_ids": [
+        "mud5-e-bharata-pulaha-arrival"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-pulaha-sages-residence"
+    },
+    {
+      "id": "mud5-r-bharata-pulaha-residence",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "resides_in",
+      "object_id": "mud5-en-pulaha-asrama",
+      "evidence_ids": [
+        "mud5-e-bharata-pulaha-arrival"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-bharata-pulaha-residence"
+    },
+    {
+      "id": "mud5-r-bharata-hears-brahma",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "hears_teaching_of",
+      "object_id": "mud-en-brahma",
+      "evidence_ids": [
+        "mud5-e-bharata-heard-brahma-teaching"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-bharata-hears-brahma"
+    },
+    {
+      "id": "mud5-r-bharata-ganesa-meditation",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "meditates_on",
+      "object_id": "mud-en-vakratunda",
+      "evidence_ids": [
+        "mud5-e-bharata-heard-brahma-teaching"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-bharata-ganesa-meditation"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "mud5-power-bharata-attachment-rebirth",
+      "type": "POWER",
+      "recipient_id": "mud5-en-bharata",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud5-e-bharata-deer-rebirth"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud5-e-bharata-deer-rebirth"
+        ],
+        "trigger": [
+          "mud5-e-bharata-deer-rebirth"
+        ],
+        "mechanism": [
+          "mud5-e-bharata-deer-rebirth"
+        ],
+        "granted": [
+          "mud5-e-bharata-deer-rebirth"
+        ],
+        "counter": [
+          "mud5-e-bharata-deer-rebirth"
+        ],
+        "notes": [
+          "mud5-e-bharata-deer-rebirth"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Narrative consequence, not solicited or deity-granted boon.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Previous-birth memory in deer embodiment, as attained consequence.",
+      "mechanism": "Attachment fault causes deer birth; earlier tapas causes previous-birth memory.",
+      "trigger": "Death while attached to deer/seeing deer nearby.",
+      "restrictions": null,
+      "duration": null,
+      "counter": "Fear of attachment; abandons deer company, nonviolence/Viṣṇu remembrance/holy bathing/saint company."
+    },
+    {
+      "id": "mud5-power-vighnaraja-grace-reflection",
+      "type": "POWER",
+      "recipient_id": "rfix4-en-vighnaraja-reflection-beneficiaries",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud5-e-bharata-deer-body-ending"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud5-e-bharata-deer-body-ending"
+        ],
+        "trigger": [
+          "mud5-e-bharata-deer-body-ending"
+        ],
+        "granted": [
+          "mud5-e-bharata-deer-body-ending"
+        ],
+        "notes": [
+          "mud5-e-bharata-deer-body-ending"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Attributed reflection 32–33, not independent new boon.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Victory over difficult obstacles, as Bharata reflects Śiva/Viṣṇu and all beings do.",
+      "mechanism": null,
+      "trigger": "Vighnarāja grace.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "mud5-a-bharata-son",
+      "subject_id": "mud5-en-bharata-unnamed-son",
+      "predicate": "child_of",
+      "object_id": "mud5-en-bharata",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-bharata-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-bharata-succession",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "entrusts_kingdom_to",
+      "object_id": "mud5-en-bharata-unnamed-son",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-bharata-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-bharata-retreat",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "resides_in",
+      "object_id": "mud5-en-salagrama-asrama",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-bharata-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-bharata-visnu-devotion",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "meditates_on",
+      "object_id": "mud-en-vishnu",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-bharata-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-bharata-tapas",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "austerity",
+      "object_id": null,
+      "value": "Fierce forest tapas, gradual body weakening; duration unstated",
+      "evidence_ids": [
+        "mud5-e-bharata-retirement"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-fawn-doe",
+      "subject_id": "mud5-en-rescued-fawn",
+      "predicate": "offspring_of",
+      "object_id": "mud5-en-frightened-doe",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-bharata-fawn-rescue"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-bharata-fawn-care",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "rescues_and_raises",
+      "object_id": "mud5-en-rescued-fawn",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-bharata-fawn-rescue"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-bharata-tapas-interruption",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "narrated_causal_mechanism",
+      "object_id": null,
+      "value": "Compassionate rescue→fondness/play→attachment unnoticed→tapas-related actions gradually depart",
+      "evidence_ids": [
+        "mud5-e-bharata-fawn-rescue"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-bharata-deer-embodiment",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "reborn_in",
+      "object_id": "mud5-en-bharata-deer-body",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-bharata-deer-rebirth"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-pulaha-asrama",
+      "subject_id": "mud5-en-pulaha-asrama",
+      "predicate": "associated_with",
+      "object_id": "mud2-en-pulaha",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-bharata-pulaha-arrival"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-pulaha-sages-residence",
+      "subject_id": "mud5-en-pulaha-asrama-sages",
+      "predicate": "resides_in",
+      "object_id": "mud5-en-pulaha-asrama",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-bharata-pulaha-arrival"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-bharata-pulaha-residence",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "resides_in",
+      "object_id": "mud5-en-pulaha-asrama",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-bharata-pulaha-arrival"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-bharata-hears-brahma",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "hears_teaching_of",
+      "object_id": "mud-en-brahma",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-bharata-heard-brahma-teaching"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-bharata-ganesa-meditation",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "meditates_on",
+      "object_id": "mud-en-vakratunda",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-bharata-heard-brahma-teaching"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-bharata-attachment-reflection",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "source_reflection",
+      "object_id": null,
+      "value": "Kingdom renunciation/Hari remembrance did not preventdeer attachment; Vaiṣṇava devotion→saṃskāra/knowledge; Pulaha/Gaṇapatyacompany→Gaṇeśa worship",
+      "evidence_ids": [
+        "mud5-e-bharata-deer-body-ending"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "linked_entities": [
+    {
+      "id": "gp-m-en-siva",
+      "name": "Śiva / Śambhu / Sadāśiva / Śaṅkara",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-matsara-austerity",
+        "mud-e-divine-refuge",
+        "mud-e-andhaka-envoy",
+        "mud-e-matsara-karma-argument",
+        "mud-e-kailasa-battle",
+        "mud-e-matsara-captures-siva",
+        "mud-e-world-allocation",
+        "mud-e-datta-counsel",
+        "mud-e-vak-manifest",
+        "mud-e-siva-pasupata",
+        "mud-e-sons-fell-siva",
+        "mud-e-following-witness-previews",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-sati-request",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sati-death-rebirth",
+        "rmd2-e-shiva-grief",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-mahat-birth",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-body-worlds",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-brahma",
+      "name": "Brahmā",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-naimisha",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-assembly",
+        "mud2-e-yaj-arrives",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-vishnu",
+      "name": "Viṣṇu",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-senses-gods",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders",
+        "mud5-e-visnu-world-laksmis"
+      ]
+    },
+    {
+      "id": "mud-en-vakratunda",
+      "name": "Vakratunda / Gaṇeśa / Gaṇanāyaka / Vighnapa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "rmd2-e-invocation",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-tattva-boon",
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-tapas",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "rmd2-e-five-request-hymn-fruits",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud2-en-pulaha",
+      "name": "Pulaha",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud2-e-narada-mutual-curses",
+        "mud4-e-remaining-daughters-marriages",
+        "mud5-e-solar-sages-rein-holders",
+        "mud5-e-bharata-pulaha-arrival"
+      ]
+    },
+    {
+      "id": "mud4-en-pitrs",
+      "name": "Pitṛs, husbands of Svadhā",
+      "type": "FAMILY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-remaining-daughters-marriages",
+        "mud5-e-moon-nectar-cycle"
+      ]
+    },
+    {
+      "id": "mud5-en-rsabha",
+      "name": "Ṛṣabha, Nābhi’s sacrifice-born son",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-rsabha-nabhi-origin",
+        "mud5-e-rsabha-sons-counts"
+      ]
+    },
+    {
+      "id": "mud5-en-bharata",
+      "name": "Bharata, eldest son of Ṛṣabha",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-rsabha-sons-counts"
+      ]
+    },
+    {
+      "id": "mud5-en-bharata-unnamed-son",
+      "name": "Unnamed Bharata son receiving kingdom",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-salagrama-asrama",
+      "name": "Śālagrāma āśrama in Bharata forest retreat",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-frightened-doe",
+      "name": "Pregnant doe frightened by lion in Bharata account",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-fawn-rescue"
+      ]
+    },
+    {
+      "id": "mud5-en-rescued-fawn",
+      "name": "Fawn rescued/raised by Bharata",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-fawn-rescue"
+      ]
+    },
+    {
+      "id": "mud5-en-roaring-lion",
+      "name": "Lion whose roar frightens doe in Bharata account",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-fawn-rescue"
+      ]
+    },
+    {
+      "id": "mud5-en-bharata-deer-body",
+      "name": "Bharata’s deer-body rebirth",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-deer-rebirth"
+      ]
+    },
+    {
+      "id": "mud5-en-pulaha-asrama",
+      "name": "Pulaha āśrama visited by deer-bodied Bharata",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-pulaha-arrival"
+      ]
+    },
+    {
+      "id": "mud5-en-pulaha-asrama-sages",
+      "name": "Gaṇeśa-worshipping tapas sages at Pulaha āśrama",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-pulaha-arrival"
+      ]
+    },
+    {
+      "id": "rfix4-en-vighnaraja-reflection-beneficiaries",
+      "name": "Śiva, Viṣṇu and all beings in Bharata’s Vighnarāja-grace reflection",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-deer-body-ending"
+      ]
+    }
+  ],
+  "linked_entity_note": "Includes event participants and related claim endpoints. Entity metadata can cite other retained source passages; the complete graph carries those references."
+}

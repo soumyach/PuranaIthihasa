@@ -1,0 +1,1986 @@
+{
+  "reports": [
+    {
+      "reviewer": "Gaṇeśa Krīḍā continuation2 author, independently rereading root’s Mudgala extraction",
+      "review_kind": "SECOND_AUTHOR_SAME_DIGITAL_WITNESS_SAMPLE",
+      "limitations": "Direct Sanskrit electronic-body review. Not independent printed-edition collation or external Sanskrit expert certification. Samples below do not certify every root chapter or entire source exhaustiveness.",
+      "source_id": "gp-src-mudgala",
+      "witness_id": "gp-wit-sd-mudgala-1",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam1.html",
+      "actual_body_read": [
+        "Mudgala1.6.28–62",
+        "Mudgala1.8.64–72",
+        "Mudgala1.11.52–78",
+        "Supplemental field-locator check1.11.15–18"
+      ],
+      "record_ids_sampled": [
+        "rmd2-power-pair-devotion",
+        "rmd2-power-prakriti-creation",
+        "rmd2-power-purusha-creation",
+        "rmd2-power-pair-hymn-fruits",
+        "rmd2-power-gunesha-boon",
+        "rmd2-power-stutisaraka-fruits",
+        "rmd2-power-five-hymn-fruits",
+        "rmd2-power-five-grant-brahma",
+        "rmd2-power-five-grant-vishnu",
+        "rmd2-power-five-grant-hara",
+        "rmd2-power-five-grant-surya",
+        "rmd2-power-five-grant-shakti"
+      ],
+      "findings": [
+        {
+          "id": "gkr2-review-rmd2-pair",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "1.6.28",
+            "1.6.39–42",
+            "1.6.48–62"
+          ],
+          "description": "1,000divine-year tapas; requested permanent heart-presence/duty-direction/intense devotion and explicit unbound stable devotion, Prakṛti world creation and desireful/desireless devotees’ gifts, Puruṣa so’ham/gift-giving/yogic Brahmanhood and efficacy in Prakṛti, cosmic functions at proper times supported. No mortality immunity inferred."
+        },
+        {
+          "id": "gkr2-review-rmd2-pair-counts",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "record_ids": [
+            "rmd2-power-pair-hymn-fruits"
+          ],
+          "locators": [
+            "1.6.44–47"
+          ],
+          "description": "Fouraims/nourishment, jail release at100,000recitations (lakṣapāṭhataḥ), harmfulrite destruction,21recitations over21days for desiredfruit, desireless reading for Brahmanhood supported. This body does not give1,000recitations for jail release. Conditions correctly remain separate."
+        },
+        {
+          "id": "gkr2-review-rmd2-gunesha",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "record_ids": [
+            "rmd2-power-gunesha-boon",
+            "rmd2-power-stutisaraka-fruits"
+          ],
+          "locators": [
+            "1.8.64–72"
+          ],
+          "description": "Firm devotion/delusion destruction, creative ability/devotee wishes/unobstructed works requested; devotion/varied creation/unobstructedness/gift-giving/greattask appearance granted. Stutisāraka name, reader/hearer Brahmanhood and siddhis, desireful wishes/desireless liberation, three-times-daily reading attainability supported. No21day count stated for this hymn."
+        },
+        {
+          "id": "gkr2-review-rmd2-five-counts",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "record_ids": [
+            "rmd2-power-five-hymn-fruits"
+          ],
+          "locators": [
+            "1.11.53–58"
+          ],
+          "description": "Devotional fouraims/sons/grandsons/prosperity/finalSvānanda; jail sevenrecitations daily for21days; divinehonor once/twice/thrice daily; harmfulrite nofear at21recitations over21days; wealth/grain/health/cattle/desiredends supported. No100,000or1,000count imported."
+        },
+        {
+          "id": "gkr2-review-rmd2-five-duties",
+          "status": "SUPPORTED_WITH_MINOR_FIELD_AND_OMISSION_FIXES",
+          "record_ids": [
+            "rmd2-power-five-grant-brahma",
+            "rmd2-power-five-grant-vishnu",
+            "rmd2-power-five-grant-hara",
+            "rmd2-power-five-grant-surya",
+            "rmd2-power-five-grant-shakti"
+          ],
+          "locators": [
+            "1.11.60–78"
+          ],
+          "description": "Five shared request and individual body/guṇa/functions/realm/mount grants supported, including Hara third-eye destruction, Sūrya seasons/planetlord/rainroot and Śakti bhukti/mukti delusion. Greattask appearance, weapons/ornaments/powers/resolve fulfillment supported. Two source-discipline improvements below."
+        }
+      ],
+      "recommended_corrections": [
+        {
+          "id": "gkr2-review-rmd2-seed-field",
+          "severity": "LOCATOR_CORRECTION",
+          "table": "boons_and_powers",
+          "record_ids": [
+            "rmd2-power-five-grant-brahma",
+            "rmd2-power-five-grant-vishnu",
+            "rmd2-power-five-grant-hara",
+            "rmd2-power-five-grant-surya",
+            "rmd2-power-five-grant-shakti"
+          ],
+          "field": "field_evidence.austerity_or_circumstances",
+          "current": "Only rmd2-e-five-manifestation-hymn (1.11.18–51)",
+          "suggested": [
+            "rmd2-e-five-emergence",
+            "rmd2-e-five-manifestation-hymn"
+          ],
+          "reason": "One-syllable inward seed-mantra reception/japa occurs11.15–17, while1,000divine-year appearance occurs18. Both supporting evidence IDs already overall but missing earlier from specific circumstance field."
+        },
+        {
+          "id": "gkr2-review-rmd2-equality",
+          "severity": "SOURCE_GRANT_OMISSION",
+          "table": "boons_and_powers",
+          "record_ids": [
+            "rmd2-power-five-grant-brahma",
+            "rmd2-power-five-grant-vishnu",
+            "rmd2-power-five-grant-hara",
+            "rmd2-power-five-grant-surya",
+            "rmd2-power-five-grant-shakti"
+          ],
+          "evidence_id": "rmd2-e-five-duties-boons",
+          "locator": "1.11.75",
+          "field": "granted and evidence.paraphrase",
+          "suggested": "Add attributed declaration that the five gods are made equal to Gaṇeśa in all respects (mattulyāḥ sarvabhāvena kṛtādevāḥ).",
+          "reason": "Explicit collective grant declaration omitted from sampled summaries. Preserve as this local theological speech; it is not an inferred mortal-war invulnerability clause."
+        },
+        {
+          "id": "gkr2-review-rmd2-editorial-restrictions",
+          "severity": "FIELD_DISCIPLINE_NOTE",
+          "table": "boons_and_powers",
+          "record_ids": [
+            "rmd2-power-prakriti-creation",
+            "rmd2-power-purusha-creation"
+          ],
+          "field": "restrictions",
+          "suggested": "Move nonmortalparentage/nonwarimmunity explanation to notes; leave restrictions null unless actual textual limitation identified.",
+          "reason": "Useful editorial scope caution is not an uttered boon restriction. Does not invalidate positively supported cosmological grants."
+        },
+        {
+          "id": "gkr2-review-rmd2-sadananda-term",
+          "severity": "TERMINOLOGY_NOTE",
+          "table": "boons_and_powers",
+          "record_ids": [
+            "rmd2-power-five-grant-brahma",
+            "rmd2-power-five-grant-vishnu",
+            "rmd2-power-five-grant-hara",
+            "rmd2-power-five-grant-surya",
+            "rmd2-power-five-grant-shakti"
+          ],
+          "locator": "1.11.62",
+          "field": "requested",
+          "suggested": "Retain printed term sthānaṃ sadānandanāma alongside perpetual-bliss-place paraphrase.",
+          "reason": "Requests name/place term should remain discoverable; no identity merge with the individually granted five realms inferred."
+        }
+      ],
+      "gkr2_checkpoint_central_resolution": {
+        "whole_bodies_read": "Krīḍā12–26",
+        "new_complete_chapters": [
+          13,
+          14,
+          16,
+          17,
+          18,
+          20,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "partial_chapters": [
+          12,
+          15,
+          19,
+          21
+        ],
+        "complete_spines_after_parent_resolution": 8,
+        "partial_spines_after_parent_resolution": [
+          "gkr2-story-forest-weapon",
+          "gkr2-story-city-rescue",
+          "gkr2-story-well-pair",
+          "gkr2-story-false-mother"
+        ],
+        "notes": "Root will centrally downgrade these four spines with missingsections because command/counterallocation/boonrecipient/kinship are required complete-story fields. Frozen author patch retained unchanged for before/after provenance; major chronology still extracted."
+      },
+      "output_mutation": "Review-only; root patch, current outputs and frozen gkr2 patch not edited."
+    },
+    {
+      "reviewer": "Gaṇeśa Krīḍā continuation3 author, independent Sanskrit body rereading",
+      "review_kind": "SECOND_AUTHOR_SAME_DIGITAL_WITNESS",
+      "source_id": "gp-src-mudgala",
+      "witness_id": "gp-wit-sd-mudgala-1",
+      "url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam1.html",
+      "author_checkpoint": "work/continuation2/checkpoints/mud3/07-coherent-freeze-through22.json",
+      "checkpoint_sha256": "197d1adf681d00e96f95c85e2d9531b7259fc5a98d9a9d1275240dd7396ac93f",
+      "actual_body_read": [
+        "Mudgala1.20.1–42 including terminal colophon",
+        "Mudgala1.21.1–54 including terminal colophon",
+        "Mudgala1.22.1–54 including terminal colophon"
+      ],
+      "web_body_references": [
+        "turn295view0",
+        "turn296view0"
+      ],
+      "limitations": "Independent second-author reading of the same electronic witness. No independent print collation or external Sanskrit-expert certification; this does not certify unaudited1.12–19 or the whole source.",
+      "findings": [
+        {
+          "id": "gkr3-review-mud3-guru-duration-form",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "record_ids": [
+            "mud3-e-mudgala-initiation-vision",
+            "mud3-a-angiras-mantra-teacher",
+            "mud3-a-mudgala-mantra-initiation",
+            "mud3-a-mudgala-tapas-duration",
+            "mud3-a-mudgala-vision-form"
+          ],
+          "locators": [
+            "1.20.28–42"
+          ],
+          "description": "Aṅgiras ritually teaches the one-syllable great mantra and directs forest tapas; Mudgala bows and performs full exclusive procedure. Abdasahasreṇa divyena gives1000DIVINE years, not1000human years. Appearance is mouse-mounted/fourarms with Siddhi/Buddhi and Pramoda/Āmoda entourage, elephantface/largebelly/onetooth/threeeyes/fourweapons/heartCintāmaṇi. Fourweapon types are not individually named in20.34; no lion mount substituted from other Vakratunda passages. Boon invitation20.36 and joyful worship/praise20.37–42 supported."
+        },
+        {
+          "id": "gkr3-review-mud3-angiras-recollection",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "record_ids": [
+            "mud3-power-angiras-lineage-boon",
+            "mud3-power-mudgala-uplift-contact"
+          ],
+          "locators": [
+            "1.20.22–26"
+          ],
+          "description": "Aṅgiras recounts completed tapas and wished boon through devotion; lineage Gaṇapatyas/Mudgala unrivaled past/future, contact uplift by praṇāma/touch/speech/sight/wind supported. Initial request speech not separately supplied; requested=null is appropriate."
+        },
+        {
+          "id": "gkr3-review-mud3-hymn-counts",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "record_ids": [
+            "mud3-power-stotrottama-benefits",
+            "mud3-power-stotrottama-counter-spells",
+            "mud3-e-stotrottama-granted-benefits"
+          ],
+          "locators": [
+            "1.21.47–54"
+          ],
+          "description": "After prostration deity raises/embraces Mudgala, names Stotrottama. Its praising user receives enjoyment/liberation, firm devotion, absence of distress/disease, progeny, wealth/grain. Māraṇa/uccāṭana destruction has explicit21readings and same21days21.52. Prison afflictions end through reading21.53 without restating a separate numeric condition; desired ends follow. Do not derive an unstated1000jail count or universal21day condition for every benefit."
+        },
+        {
+          "id": "gkr3-review-mud3-hymn-name-contact",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "record_ids": [
+            "mud3-power-hymnal-name-once",
+            "mud3-power-hymnal-worshipper-contact"
+          ],
+          "locators": [
+            "1.21.45–46"
+          ],
+          "description": "Hearing three-syllable Gaṇeśa gives joy; once-uttering no birth/death. Worshippers Brahman-formed and convey Brahman by contact. These correctly remain hymn-attributed efficacy, not narrated tested episode."
+        },
+        {
+          "id": "gkr3-review-mud3-devotion-request-grant",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "record_ids": [
+            "mud3-power-mudgala-complete-devotion",
+            "mud3-e-mudgala-devotion-request"
+          ],
+          "locators": [
+            "1.22.1–8"
+          ],
+          "description": "Mudgala initially wants nothing, asks only to honor divine insistence; complete firm uninterrupted devotion everywhere requested. Gaṇeśa explicitly grants complete unwavering devotion and incomparable fortune. Nine forms and no tenth supported; dehanivedana enumeration retained rather than inventing extra form."
+        },
+        {
+          "id": "gkr3-review-mud3-devotion-field-locator",
+          "status": "FIELD_EVIDENCE_CORRECTION_REQUIRED",
+          "record_ids": [
+            "mud3-power-mudgala-complete-devotion"
+          ],
+          "locators": [
+            "1.20.29–42",
+            "1.21.1–48",
+            "1.22.1–8"
+          ],
+          "description": "Austerity_or_circumstances includes one-syllable tapas/vision AND hymn, but overall/field evidence contains only mud3-e-mudgala-devotion-request22.1–8. This cited range supports deity insistence and request, not the explicitly populated earlier tapas/mantra/hymn circumstances.",
+          "recommended_action": {
+            "add_to_record_evidence_ids": [
+              "mud3-e-mudgala-initiation-vision",
+              "mud3-e-stotrottama-frame"
+            ],
+            "add_to_field_evidence_austerity_or_circumstances": [
+              "mud3-e-mudgala-initiation-vision",
+              "mud3-e-stotrottama-frame"
+            ],
+            "alternative": "Narrow circumstances text to request after deity insists; preserve earlier context in separate linked narrative."
+          }
+        },
+        {
+          "id": "gkr3-review-mud3-ninefold-practice",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "record_ids": [
+            "mud3-power-bhakti-sravana",
+            "mud3-power-bhakti-kirtana",
+            "mud3-power-bhakti-smarana",
+            "mud3-power-bhakti-padasevana",
+            "mud3-power-bhakti-arcana",
+            "mud3-power-bhakti-vandana",
+            "mud3-power-bhakti-dasya",
+            "mud3-power-bhakti-sakhya",
+            "mud3-power-bhakti-nivedana",
+            "mud3-power-ganesa-inner-knowing",
+            "mud3-power-nine-bhakti-binding-protection"
+          ],
+          "locators": [
+            "1.22.9–38"
+          ],
+          "description": "Hearing/reflection/exclusive rasa→ears; chanting→tonguetip; dutymemory→memory; tireless footservice→body; complete arcana→its completeness; superior bowing→highestness; scriptural Gaṇapatya dāsya→nature; unhidden/hypocrisyfree friendship aware of omniscient knowing→friendship; ego/fivementalground relinquishment→nonseparation. Complete ninefold rasa binds deity to heart/presence/protection always, unable to abandon even moment. All conditional mechanisms adequately reflected;23vadanajā anomaly recorded conservatively with7vandana and22/24context."
+        },
+        {
+          "id": "gkr3-review-mud3-exemplars-outcome",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "record_ids": [
+            "mud3-e-nine-bhakti-exemplars",
+            "mud3-power-mudgala-devotee-sovereignty",
+            "mud3-power-mudgala-purifying-wind",
+            "mud3-power-mudgala-carita-benefits"
+          ],
+          "locators": [
+            "1.22.39–54"
+          ],
+          "description": "Exemplar list Kārttikeya/hearing,Sun/chant,Rāmacandra/memory,Pārvatī/feet,Mahāviṣṇu/arcana,Śaṅkara/bow,Jamadagni’sRāma/dāsya,Brahmā/friendship,ŚukaVaiyāsaki/selfoffering supported. Mudgala preeminent in allnine,unmatchedpast/present/future,deityunderhiscontrol; bodilywind/sight purification/Brahmanunderstanding. Deityvanishes andallhonorMudgala; faithfulaccount hearing/reading/telling confersallaims,pleasures/Brahman/devoteesovereignty."
+        },
+        {
+          "id": "gkr3-review-mud3-naraka",
+          "status": "PENDING_LANGUAGE_OR_EDITION_COLLATION",
+          "record_ids": [
+            "mud3-e-ganapatya-naraka-reading",
+            "mud3-p-ganapatya-naraka-reading"
+          ],
+          "locators": [
+            "1.20.27"
+          ],
+          "description": "Actual electronic witness reads jantūnāṃ nārakāḥ smṛtāḥ amid fortunate-lineage Gaṇapatya praise. Could require typographic/edition investigation, but same-witness second author cannot confirm replacement tārakāḥ. Existing NEEDS_REVIEW and PARTIAL20 appropriate; no hell-producing or salvific normalization justified here."
+        },
+        {
+          "id": "gkr3-review-mud3-dense-hymn",
+          "status": "PENDING_LANGUAGE_OR_EDITION_COLLATION",
+          "record_ids": [
+            "mud3-e-stotrottama-dense-terms",
+            "mud3-a-stotrottama-dense-terms"
+          ],
+          "locators": [
+            "1.21.43–44"
+          ],
+          "description": "Bhrāmarī/tvam-support Śakti, tat/Kāmadātrī, svasaṃvedya/place/head and undivided nectar/reddishwater/Ikṣu sea/nirādhāra drinking/na-puṃstrī-pradāya present, but precise referents/effect cannot be certified from same reading. Preserve named raw terms; do not invent bodily/sexchange consequence or merge DevīBhāgavata Bhrāmarī."
+        },
+        {
+          "id": "gkr3-review-mud3-other-partials",
+          "status": "PENDING_LANGUAGE_OR_EDITION_COLLATION",
+          "record_ids": [
+            "mud3-e-eight-forms-foes-vehicles",
+            "mud3-e-hymn-yoni-compound",
+            "mud3-e-stotrottama-patronymics"
+          ],
+          "locators": [
+            "1.20.8",
+            "1.21.7",
+            "1.21.36–37"
+          ],
+          "description": "Lomāsura spelling directly supported but Lobha identity not independently established; lakṣa-veda-aṣṭa-yoni numeric compound withheld appropriately; hymnKāśyapa/Kāpila/Pārāśara names not expanded to remembered births. Existing partial checks honest."
+        },
+        {
+          "id": "gkr3-review-mud3-story-completeness",
+          "status": "STATUS_CORRECTION_REQUIRED",
+          "record_ids": [
+            "mud3-story-mudgala-initiation-devotion"
+          ],
+          "locators": [
+            "1.19.21–67",
+            "1.20.1–42",
+            "1.21.1–54",
+            "1.22.1–54"
+          ],
+          "description": "Frozen author spine COMPLETE spans20/21explicit unresolved required relationship/power/hymn meanings. Under parent central rule critical story requirement ambiguity keeps whole-scene spine PARTIAL, even when major chronology is complete.",
+          "recommended_action": {
+            "status": "PARTIAL",
+            "missing_sections": [
+              "20.27 nārakāḥ exact clause",
+              "20.8 Lomāsura identity if claimed beyond literal name",
+              "21.7 yoni numeric decomposition",
+              "21.36 patronymic contextual identities where needed",
+              "21.43–44 divine referents/drinking effect"
+            ],
+            "retain": "Source-ordered narrative and22wholechapterCOMPLETE; do not erase supported extraction."
+          }
+        }
+      ],
+      "summary": {
+        "clear_numeric_conditions_supported": true,
+        "core_request_and_grant_supported": true,
+        "required_field_correction_count": 1,
+        "required_status_correction_count": 1,
+        "pending_print_language_groups": 3,
+        "author_freeze_read": true
+      }
+    },
+    {
+      "review_id": "gup2-review-rmd2",
+      "reviewer": "Upāsanā continuation agent /root/lalitopakhyana",
+      "reviewed_patch": "work/continuation2/patches/rmd2.json",
+      "reviewed_sha256": "f01cd5557da4a14a9641ef409708a8c13a410b5f8d9fa0aa6a89699217bb1b42",
+      "source_url": "https://sanskritdocuments.org/doc_purana/mudgalapurANam1.html",
+      "method": "Independent direct Sanskrit body reading, then comparison with concrete patch rows. No root file edited.",
+      "read_spans": [
+        "1.3.61–63",
+        "1.4.1–110",
+        "1.11.1–78"
+      ],
+      "scope": "Requested critical facts and associated citations only; does not certify all names/all chapters or another edition.",
+      "summary": {
+        "SUPPORTED": 10,
+        "CORRECTION_PENDING": 4,
+        "PENDING": 0
+      },
+      "findings": [
+        {
+          "id": "gup2-review-rmd2-001",
+          "status": "SUPPORTED",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-1",
+          "locator": "Mudgala 1.3.61–63",
+          "evidence_ids": [
+            "rmd2-e-sati-death-rebirth"
+          ],
+          "records": [
+            {
+              "table": "evidence",
+              "id": "rmd2-e-sati-death-rebirth"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-sati-rebirth"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-parvati-father"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-parvati-spouse"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-parvati-meditates"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-sati-rebirth"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-parvati-father"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-parvati-spouse"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-parvati-meditates"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-sati-yoga-fire"
+            },
+            {
+              "table": "narrative_events",
+              "id": "rmd2-event-sati-death-rebirth"
+            }
+          ],
+          "finding": "Yoga-fire body abandonment, own-māyā reappearance as Himācala’s daughter, Śiva meditation, severe tapas and renewed husband relationship are explicit. Daughter relation and rebirth must retain their distinct source contexts.",
+          "requested_correction": null
+        },
+        {
+          "id": "gup2-review-rmd2-002",
+          "status": "SUPPORTED",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-1",
+          "locator": "Mudgala 1.4.41–47",
+          "evidence_ids": [
+            "rmd2-e-virabhadra-origin"
+          ],
+          "records": [
+            {
+              "table": "evidence",
+              "id": "rmd2-e-virabhadra-origin"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-virabhadra-origin"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-rudra-origin"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-virabhadra-icon"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-virabhadra-origin"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-rudra-origin"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-virabhadra-rudra-host"
+            },
+            {
+              "table": "narrative_events",
+              "id": "rmd2-event-virabhadra-origin"
+            }
+          ],
+          "finding": "The source explicitly gives three heads, three feet and trident, arising from Śiva’s struck matted hair while Gaṇeśa is remembered. Servant declaration, command against Dakṣa with sacrifice, world-shaking laugh, body-generated Rudras and following Gaṇas are supported; this is manifestation rather than ordinary biological birth.",
+          "requested_correction": null
+        },
+        {
+          "id": "gup2-review-rmd2-003",
+          "status": "SUPPORTED",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-1",
+          "locator": "Mudgala 1.4.56–64",
+          "evidence_ids": [
+            "rmd2-e-sacrifice-duels"
+          ],
+          "records": [
+            {
+              "table": "evidence",
+              "id": "rmd2-e-sacrifice-duels"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-pushan-teeth"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-bhaga-eyes"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-nandi-dharma"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-bhringi-kashyapa"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-pushpadanta-varuna"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-bhairava-indra"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-shiva-vishnu"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-pushan-teeth"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-bhaga-eyes"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-nandi-dharma"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-bhringi-kashyapa"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-pushpadanta-varuna"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-bhairava-indra"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-shiva-vishnu"
+            },
+            {
+              "table": "narrative_events",
+              "id": "rmd2-event-sacrifice-duels"
+            }
+          ],
+          "finding": "The named duel assignments and actions match the Sanskrit. Bhairava makes Indra unconscious; Śiva, rather than Vīrabhadra, breaks Pūṣan’s teeth and removes Bhaga’s eyes. Nandin seizes Dharma, Bhṛṅgin Kaśyapa, Puṣpadanta strikes Varuṇa, Vīrabhadra fells Dakṣa, and Śiva fells Viṣṇu with heart-directed arrows after Gaṇeśa contemplation.",
+          "requested_correction": null
+        },
+        {
+          "id": "gup2-review-rmd2-004",
+          "status": "SUPPORTED",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-1",
+          "locator": "Mudgala 1.4.65–72",
+          "evidence_ids": [
+            "rmd2-e-missile-counter-beheading"
+          ],
+          "records": [
+            {
+              "table": "evidence",
+              "id": "rmd2-e-missile-counter-beheading"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-daksha-beheaded"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-daksha-beheaded"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-missile-collision"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-cakra-stops"
+            },
+            {
+              "table": "narrative_events",
+              "id": "rmd2-event-missile-counter-beheading"
+            }
+          ],
+          "finding": "Nārāyaṇa and Pāśupata missiles fight in the sky; their fire and frightened worlds, Dakṣa’s head offered into fire by Vīrabhadra, and cakra bowing and stopping before Śiva are supported. The beast comparison is locally ritual framing, not a goat-head precondition.",
+          "requested_correction": null
+        },
+        {
+          "id": "gup2-review-rmd2-005",
+          "status": "SUPPORTED",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-1",
+          "locator": "Mudgala 1.4.73–85",
+          "evidence_ids": [
+            "rmd2-e-battle-halted"
+          ],
+          "records": [
+            {
+              "table": "evidence",
+              "id": "rmd2-e-battle-halted"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-voice-stops-shiva"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-voice-stops-shiva"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-shiva-restores-attendees"
+            },
+            {
+              "table": "narrative_events",
+              "id": "rmd2-event-battle-halted"
+            }
+          ],
+          "finding": "Heavenly voice remains unidentified. Viṣṇu survives the intended trident attack; Brahmā pacifies Śiva, assigns remaining offerings and requests restoration. Bhaga gets eyes, Pūṣan becomes a ground-food eater, and other attendees regain their former forms/radiance.",
+          "requested_correction": null
+        },
+        {
+          "id": "gup2-review-rmd2-006",
+          "status": "SUPPORTED",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-1",
+          "locator": "Mudgala 1.4.86–90",
+          "evidence_ids": [
+            "rmd2-e-daksha-goat-revival"
+          ],
+          "records": [
+            {
+              "table": "evidence",
+              "id": "rmd2-e-daksha-goat-revival"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-bhringi-goat"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-bhringi-goat"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-daksha-goat-revival"
+            },
+            {
+              "table": "narrative_events",
+              "id": "rmd2-event-daksha-goat-revival"
+            }
+          ],
+          "finding": "The burnt head causes the first-seen-being head instruction. Bhṛṅgin kills the seen goat, Śiva attaches the head and revives Dakṣa, and Brahmā prompts the hymn. Goat-head revival is an intermediate event.",
+          "requested_correction": null
+        },
+        {
+          "id": "gup2-review-rmd2-007",
+          "status": "SUPPORTED",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-1",
+          "locator": "Mudgala 1.4.97,101–107",
+          "evidence_ids": [
+            "rmd2-e-daksha-human-head-restored"
+          ],
+          "records": [
+            {
+              "table": "evidence",
+              "id": "rmd2-e-daksha-human-head-restored"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-daksha-human-restoration"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-daksha-shiva-hymn-reward"
+            },
+            {
+              "table": "narrative_events",
+              "id": "rmd2-event-daksha-human-head-restored"
+            }
+          ],
+          "finding": "The pardon request, goat-like voiced praise, subsequent human-head restoration, announced Prajāpati chiefship and separate hymn/sound benefits are explicit. The witness does not leave Dakṣa permanently goat-headed. Once qualifies the goat-like sound before Śiva; no numerical repetition restriction is given for the hymn here.",
+          "requested_correction": null
+        },
+        {
+          "id": "gup2-review-rmd2-008",
+          "status": "SUPPORTED",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-1",
+          "locator": "Mudgala 1.11.7–9",
+          "evidence_ids": [
+            "rmd2-e-five-emergence"
+          ],
+          "records": [
+            {
+              "table": "evidence",
+              "id": "rmd2-e-five-emergence"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-origin-brahma"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-origin-part-brahma"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-origin-vishnu"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-origin-part-vishnu"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-origin-hara"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-origin-part-hara"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-origin-shakti"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-origin-part-shakti"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-origin-surya"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-origin-part-surya"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-shakti-parvati-address"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-origin-brahma"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-origin-vishnu"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-origin-hara"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-origin-shakti"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-origin-surya"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-brahma"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-vishnu"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-hara"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-surya"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-shakti"
+            },
+            {
+              "table": "narrative_events",
+              "id": "rmd2-event-five-emergence"
+            }
+          ],
+          "finding": "All five emanation sites are supported: navel, mouth, eye, left side and right side. Śiva explicitly addresses Pārvatī as Śakti in this cosmic narrative. COSMOLOGICAL_EMANATION and the local speech qualifier correctly preserve this without replacing the Himācala daughter/rebirth account.",
+          "requested_correction": null
+        },
+        {
+          "id": "gup2-review-rmd2-009",
+          "status": "SUPPORTED",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-1",
+          "locator": "Mudgala 1.11.63–68",
+          "evidence_ids": [
+            "rmd2-e-five-duties-boons"
+          ],
+          "records": [
+            {
+              "table": "evidence",
+              "id": "rmd2-e-five-duties-boons"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-mount-brahma"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-station-brahma"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-mount-vishnu"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-station-vishnu"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-mount-hara"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-station-hara"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-mount-surya"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-station-surya"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-mount-shakti"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-station-shakti"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-mount-brahma"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-station-brahma"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-mount-vishnu"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-station-vishnu"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-mount-hara"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-station-hara"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-mount-surya"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-station-surya"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-mount-shakti"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-station-shakti"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-brahma"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-vishnu"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-hara"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-surya"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-shakti"
+            },
+            {
+              "table": "narrative_events",
+              "id": "rmd2-event-five-duties-boons"
+            }
+          ],
+          "finding": "Brahmā’s haṃsa, Viṣṇu’s Garuḍa and Hara’s bull, together with their named stations/functions and four-face/four-arm/five-face qualifications, are supported. Third-eye burning is explicitly assigned to Hara.",
+          "requested_correction": null
+        },
+        {
+          "id": "gup2-review-rmd2-010",
+          "status": "SUPPORTED",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-1",
+          "locator": "Mudgala 1.11.69–76",
+          "evidence_ids": [
+            "rmd2-e-five-duties-boons"
+          ],
+          "records": [
+            {
+              "table": "evidence",
+              "id": "rmd2-e-five-duties-boons"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-mount-brahma"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-station-brahma"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-mount-vishnu"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-station-vishnu"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-mount-hara"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-station-hara"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-mount-surya"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-station-surya"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-mount-shakti"
+            },
+            {
+              "table": "assertions",
+              "id": "rmd2-a-five-station-shakti"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-mount-brahma"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-station-brahma"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-mount-vishnu"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-station-vishnu"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-mount-hara"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-station-hara"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-mount-surya"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-station-surya"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-mount-shakti"
+            },
+            {
+              "table": "relationships",
+              "id": "rmd2-r-five-station-shakti"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-brahma"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-vishnu"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-hara"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-surya"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-shakti"
+            },
+            {
+              "table": "narrative_events",
+              "id": "rmd2-event-five-duties-boons"
+            }
+          ],
+          "finding": "Sūrya’s horse-adorned chariot and Śakti’s lion match this text; no horse number is supplied. Thousand rays, six seasons, rain source, Sauraloka and Śaktiloka are explicit. Weapons, ornaments, varied powers and fulfilled resolve are a collective final grant.",
+          "requested_correction": null
+        },
+        {
+          "id": "gup2-review-rmd2-011",
+          "status": "CORRECTION_PENDING",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-1",
+          "locator": "Mudgala 1.11.15–18",
+          "evidence_ids": [
+            "rmd2-e-five-emergence",
+            "rmd2-e-five-manifestation-hymn"
+          ],
+          "records": [
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-brahma"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-vishnu"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-hara"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-surya"
+            },
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-five-grant-shakti"
+            }
+          ],
+          "finding": "All five grant records include the inwardly revealed seed-mantra in austerity_or_circumstances, but its field citation only points to 1.11.18–51, excluding 15–17. Record-level evidence already includes the needed passage.",
+          "requested_correction": "Add rmd2-e-five-emergence to field_evidence.austerity_or_circumstances on all five rmd2-power-five-grant-* records; retain manifestation-hymn for 1,000 divine years and hymn."
+        },
+        {
+          "id": "gup2-review-rmd2-012",
+          "status": "CORRECTION_PENDING",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-1",
+          "locator": "Mudgala 1.4.64–65",
+          "evidence_ids": [
+            "rmd2-e-sacrifice-duels",
+            "rmd2-e-missile-counter-beheading"
+          ],
+          "records": [
+            {
+              "table": "narrative_events",
+              "id": "rmd2-event-sacrifice-duels"
+            }
+          ],
+          "finding": "The sacrifice-duels event outcome says Viṣṇu then regains awareness; that occurs in verse65, beyond its cited 56–64 span.",
+          "requested_correction": "Add rmd2-e-missile-counter-beheading and its passage to rmd2-event-sacrifice-duels, or keep this event outcome at being felled and place recovery exclusively in the next event."
+        },
+        {
+          "id": "gup2-review-rmd2-013",
+          "status": "CORRECTION_PENDING",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-1",
+          "locator": "Mudgala 1.3.61–63;1.4.1–14,38",
+          "evidence_ids": [
+            "rmd2-e-sati-death-rebirth"
+          ],
+          "records": [
+            {
+              "table": "narrative_events",
+              "id": "rmd2-event-sati-death-rebirth"
+            }
+          ],
+          "finding": "Chapter3 anticipates the Pārvatī rebirth/remarriage in a compact narrator summary; chapter4 returns to Śiva responding to Satī’s death and explicitly predicts the Himācala birth. The current outcome calls the rebirth a retrospective summary without identifying this source-order rewind.",
+          "requested_correction": "Revise outcome to identify the chapter3 advance summary and chapter4 return to the earlier death-aftermath, keeping source sequence distinct from reconstructed chronology."
+        },
+        {
+          "id": "gup2-review-rmd2-014",
+          "status": "CORRECTION_PENDING",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-1",
+          "locator": "Mudgala 1.4.104–107",
+          "evidence_ids": [
+            "rmd2-e-daksha-human-head-restored"
+          ],
+          "records": [
+            {
+              "table": "boons_and_powers",
+              "id": "rmd2-power-daksha-shiva-hymn-reward"
+            }
+          ],
+          "finding": "The restrictions field currently contains an editorial caution, while the actual once/before Śiva requirement is accurately present in trigger.",
+          "requested_correction": "Set restrictions to null, move the editorial caution into notes, and retain the explicit sound condition in trigger. Alternatively restrict this field to the explicit local ritual condition only."
+        }
+      ],
+      "limitations": [
+        "Single Sanskrit Documents witness only; no alternate/print witness independently collated.",
+        "No whole-patch or whole-Mudgala extraction-completeness certification.",
+        "1.11 web numbering repeats verse32 in the hymn; outside critical requested loci, not silently normalized."
+      ]
+    },
+    {
+      "review_id": "gup3-review-mud3",
+      "reviewer": "/root/lalitopakhyana",
+      "reviewed_patch": "work/continuation2/patches/mud3.json",
+      "reviewed_sha256": "0ef688a2f6b37104bb535911a20f61eab834be8d3c9d09f07fca7689c61a77fb",
+      "source_urls": [
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam1.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html"
+      ],
+      "read_spans": [
+        "1.13.26–51",
+        "1.14.1–6",
+        "1.17.10–56",
+        "2.1.21–31"
+      ],
+      "method": "Independent direct Sanskrit body reading and explicit record/field comparison; no target patch edited.",
+      "scope": "Requested highest-risk agency, manifestation, marriage, emanation and unresolved etymology; not all-chapter/all-name certification.",
+      "summary": {
+        "SUPPORTED": 6,
+        "CORRECTION_PENDING": 3,
+        "PENDING": 1
+      },
+      "findings": [
+        {
+          "id": "gup3-review-mud3-001",
+          "status": "SUPPORTED",
+          "source_id": "gp-src-mudgala",
+          "witness_ids": [
+            "gp-wit-sd-mudgala-1"
+          ],
+          "locators": [
+            "Mudgala 1.13.33–37"
+          ],
+          "evidence_ids": [
+            "mud3-e-siva-linga-son-boon"
+          ],
+          "records": [
+            {
+              "table": "boons_and_powers",
+              "id": "mud3-power-visnu-brahma-son"
+            },
+            {
+              "table": "assertions",
+              "id": "mud3-a-brahma-son-promise"
+            },
+            {
+              "table": "narrative_events",
+              "id": "mud3-event-siva-linga-son-boon"
+            }
+          ],
+          "finding": "Viṣṇu first requests a boon from Brahmā, Brahmā offers it, Viṣṇu specifies Brahmā as his son, and Brahmā accepts because of his own offered promise. Brahmā explicitly promises yoga-created body from Viṣṇu’s navel-lotus at creation. Grantor Brahmā / recipient Viṣṇu is securely established here; no ordinary biological birth is implied.",
+          "requested_correction": null
+        },
+        {
+          "id": "gup3-review-mud3-002",
+          "status": "SUPPORTED",
+          "source_id": "gp-src-mudgala",
+          "witness_ids": [
+            "gp-wit-sd-mudgala-1"
+          ],
+          "locators": [
+            "Mudgala 1.14.2–5"
+          ],
+          "evidence_ids": [
+            "mud3-e-siva-son-promise"
+          ],
+          "records": [
+            {
+              "table": "boons_and_powers",
+              "id": "mud3-power-brahma-siva-son"
+            },
+            {
+              "table": "assertions",
+              "id": "mud3-a-siva-promised-grandson"
+            },
+            {
+              "table": "narrative_events",
+              "id": "mud3-event-siva-son-promise"
+            }
+          ],
+          "finding": "Viṣṇu urges Brahmā’s request so Śiva will be his own grandson through Brahmā. Brahmā asks Śiva to become his son, Viṣṇu repeats, and Śiva promises a future partial Rudra manifestation from Brahmā’s forehead. The patch correctly treats this as future local manifestation/genealogy, not immediate ordinary biological birth.",
+          "requested_correction": null
+        },
+        {
+          "id": "gup3-review-mud3-003",
+          "status": "SUPPORTED",
+          "source_id": "gp-src-mudgala",
+          "witness_ids": [
+            "gp-wit-sd-mudgala-1"
+          ],
+          "locators": [
+            "Mudgala 1.17.39–49"
+          ],
+          "evidence_ids": [
+            "mud3-e-shakti-marriage-emanations"
+          ],
+          "records": [
+            {
+              "table": "boons_and_powers",
+              "id": "mud3-power-siva-shakti-spouse"
+            },
+            {
+              "table": "assertions",
+              "id": "mud3-a-shakti-spouse-siva"
+            },
+            {
+              "table": "relationships",
+              "id": "mud3-r-shakti-spouse-siva"
+            },
+            {
+              "table": "narrative_events",
+              "id": "mud3-event-shakti-marriage-emanations"
+            }
+          ],
+          "finding": "Śiva retrospectively narrates the five-deity rivalry, following Gaṇeśa instruction/disappearance, great tapas to obtain her and her satisfaction after one hundred years. Śakti appears and invites a boon, Śiva bows/praises and asks her wifehood; she grants and disappears. Hundred years belongs to the austerity circumstances, not a marriage-expiry restriction or grant duration. Patch agency and field placement are supported.",
+          "requested_correction": null
+        },
+        {
+          "id": "gup3-review-mud3-004",
+          "status": "SUPPORTED",
+          "source_id": "gp-src-mudgala",
+          "witness_ids": [
+            "gp-wit-sd-mudgala-1"
+          ],
+          "locators": [
+            "Mudgala 1.17.50–51"
+          ],
+          "evidence_ids": [
+            "mud3-e-shakti-marriage-emanations"
+          ],
+          "records": [
+            {
+              "table": "assertions",
+              "id": "mud3-a-lakshmi-origin"
+            },
+            {
+              "table": "assertions",
+              "id": "mud3-a-savitri-origin"
+            },
+            {
+              "table": "assertions",
+              "id": "mud3-a-samjna-origin"
+            },
+            {
+              "table": "relationships",
+              "id": "mud3-r-lakshmi-origin"
+            },
+            {
+              "table": "relationships",
+              "id": "mud3-r-savitri-origin"
+            },
+            {
+              "table": "relationships",
+              "id": "mud3-r-samjna-origin"
+            }
+          ],
+          "finding": "Lakṣmī emerges from her left limb, Sāvitrī from right, Saṃjñā from heart. EMANATION labels preserve the locally stated origins without forcing a human birth mechanism.",
+          "requested_correction": null
+        },
+        {
+          "id": "gup3-review-mud3-005",
+          "status": "SUPPORTED",
+          "source_id": "gp-src-mudgala",
+          "witness_ids": [
+            "gp-wit-sd-mudgala-1"
+          ],
+          "locators": [
+            "Mudgala 1.17.50–51"
+          ],
+          "evidence_ids": [
+            "mud3-e-shakti-marriage-emanations"
+          ],
+          "records": [
+            {
+              "table": "assertions",
+              "id": "mud3-a-lakshmi-visnu"
+            },
+            {
+              "table": "assertions",
+              "id": "mud3-a-savitri-brahma"
+            },
+            {
+              "table": "assertions",
+              "id": "mud3-a-samjna-sun"
+            },
+            {
+              "table": "relationships",
+              "id": "mud3-r-lakshmi-visnu"
+            },
+            {
+              "table": "relationships",
+              "id": "mud3-r-savitri-brahma"
+            },
+            {
+              "table": "relationships",
+              "id": "mud3-r-samjna-sun"
+            }
+          ],
+          "finding": "The wording is Nārāyaṇa-priyā for Lakṣmī, Brahmā-priyā for Sāvitrī, and explicit wife of Ravi for Saṃjñā. The patch correctly preserves beloved_of versus spouse_of here rather than silently treating all three as identical marriage statements.",
+          "requested_correction": null
+        },
+        {
+          "id": "gup3-review-mud3-006",
+          "status": "SUPPORTED",
+          "source_id": "gp-src-mudgala",
+          "witness_ids": [
+            "gp-wit-sd-mudgala-1"
+          ],
+          "locators": [
+            "Mudgala 1.17.52–54"
+          ],
+          "evidence_ids": [
+            "mud3-e-shakti-marriage-emanations"
+          ],
+          "records": [
+            {
+              "table": "assertions",
+              "id": "mud3-a-parvati-yoga"
+            },
+            {
+              "table": "relationships",
+              "id": "mud3-r-parvati-yoga"
+            },
+            {
+              "table": "narrative_events",
+              "id": "mud3-event-shakti-marriage-emanations"
+            }
+          ],
+          "finding": "Pārvatī follows renewed Gaṇeśa yoga privately, gains peace in a short time through prior impressions and goes to Śiva’s vicinity. No fixed number of years for her practice is supplied; the patch does not transfer Śiva’s hundred years to her.",
+          "requested_correction": null
+        },
+        {
+          "id": "gup3-review-mud3-007",
+          "status": "CORRECTION_PENDING",
+          "source_id": "gp-src-mudgala",
+          "witness_ids": [
+            "gp-wit-sd-mudgala-1"
+          ],
+          "locators": [
+            "Mudgala 1.13.33–35"
+          ],
+          "evidence_ids": [
+            "mud3-e-siva-linga-son-boon"
+          ],
+          "records": [
+            {
+              "table": "boons_and_powers",
+              "id": "mud3-power-visnu-brahma-son"
+            }
+          ],
+          "finding": "austerity_or_circumstances currently says Viṣṇu asks a boon after Brahmā offers. The actual order is generic request33, Brahmā invitation/promise34, specified son request35. Record evidence and event have the correct order.",
+          "requested_correction": "Revise circumstances to: Before the downward limit-search Viṣṇu asks Brahmā for a boon; Brahmā offers/promise, then Viṣṇu specifies that Brahmā become his son. Field evidence unchanged."
+        },
+        {
+          "id": "gup3-review-mud3-008",
+          "status": "CORRECTION_PENDING",
+          "source_id": "gp-src-mudgala",
+          "witness_ids": [
+            "gp-wit-sd-mudgala-1",
+            "gp-wit-sd-mudgala-2"
+          ],
+          "locators": [
+            "Mudgala 1.13.33–37",
+            "Mudgala 2.1.21–22"
+          ],
+          "evidence_ids": [
+            "mud3-e-siva-linga-son-boon",
+            "mud2-e-brahma-flood"
+          ],
+          "records": [
+            {
+              "table": "boons_and_powers",
+              "id": "mud2-power-brahma-navel-emergence"
+            }
+          ],
+          "finding": "The updated mechanism asserts actual emergence and fulfillment of the earlier promise but field_evidence.mechanism only cites 1.13’s future promise. Actual entry/year-later emergence is in 2.1.21–22. The identification of 2.1 as fulfillment of the exact1.13promise is a cross-locus correspondence, not explicitly stated in2.1.",
+          "requested_correction": "Add mud2-e-brahma-flood to mechanism field evidence. Qualify the exact earlier-promise fulfillment link as cross-locus inference, or state neutral actual emergence plus separate1.13promise. Retain POWER/null grantor correction rather than presenting2.1as independently explicit reversed boon dialogue."
+        },
+        {
+          "id": "gup3-review-mud3-009",
+          "status": "CORRECTION_PENDING",
+          "source_id": "gp-src-mudgala",
+          "witness_ids": [
+            "gp-wit-sd-mudgala-1",
+            "gp-wit-sd-mudgala-2"
+          ],
+          "locators": [
+            "Mudgala 1.13.33–37",
+            "Mudgala 2.1.21–22"
+          ],
+          "evidence_ids": [
+            "mud3-e-siva-linga-son-boon",
+            "mud2-e-brahma-flood"
+          ],
+          "records": [
+            {
+              "table": "evidence",
+              "id": "mud2-e-brahma-flood"
+            },
+            {
+              "table": "narrative_events",
+              "id": "mud2-event-brahma-flood"
+            }
+          ],
+          "finding": "Latest mud3 updates the power record’s grantor but old verified evidence/event still say becoming son through Viṣṇu’s boon without explaining its ambiguous agency. Direct2.1.22 has the broad Viṣṇu genitive with sonhood/boon;1.13precisely supplies opposite requester/grantor roles. Leaving old prose unqualified makes the correction inconsistent to readers.",
+          "requested_correction": "Add explicit updates of old evidence paraphrase and event details to neutral boon associated with Viṣṇu wording. Add1.13 evidence/notes for corrected agency and preserve the textual genitive/source-local wording; do not erase the old record or claim2.1itself explicitly names Brahmā as grantor."
+        },
+        {
+          "id": "gup3-review-mud3-010",
+          "status": "PENDING",
+          "source_id": "gp-src-mudgala",
+          "witness_ids": [
+            "gp-wit-sd-mudgala-1"
+          ],
+          "locators": [
+            "Mudgala 1.17.14–18"
+          ],
+          "evidence_ids": [
+            "mud3-e-vak-second-etymology",
+            "mud3-e-remember-condition"
+          ],
+          "records": [
+            {
+              "table": "evidence",
+              "id": "mud3-e-vak-second-etymology"
+            },
+            {
+              "table": "passages",
+              "id": "mud3-p-vak-second-etymology"
+            },
+            {
+              "table": "queue",
+              "id": "mud3-queue-17-etymology"
+            }
+          ],
+          "finding": "Direct reread confirms the dense māyā-made-jīva / vakra Brahman-face / unmanas wording. Exact semantic direction and doctrinal etymology are not safely settled by this witness. NEEDS_REVIEW evidence, partial passage, open queue and chapter17PARTIAL correctly retain the gap; certain15–18are separately evidenced.",
+          "requested_correction": "Keep unresolved. Independent Sanskrit/printed commentary or alternate transcription is needed before upgrading this etymological meaning; no recalled doctrinal gloss substituted."
+        }
+      ],
+      "limitations": [
+        "Single Sanskrit Documents electronic witnesses; no alternate/print edition collated.",
+        "2.1genitive agency remains linguistically broader than explicit1.13dialogue; correspondence is distinguished from direct wording."
+      ]
+    },
+    {
+      "review_id": "root-continuation2-independent-review",
+      "reviewer": "Root; independently reread primary Sanskrit bodies after author extraction",
+      "method": "Direct primary witness passage reading and comparison against frozen subagent evidence. Each unit has bounded scope; neither all-assertion review nor alternate-print recension certification.",
+      "sources": [
+        "https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam1.html",
+        "https://sanskritdocuments.org/doc_purana/mudgalapurANam2.html",
+        "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html"
+      ],
+      "review_units": [
+        {
+          "id": "root2-review-grtsamada-family",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Upāsanā36.1–45"
+          ],
+          "evidence_ids": [
+            "gup2-e-006",
+            "gup2-e-007",
+            "gup2-e-008",
+            "gup2-e-009",
+            "gup2-e-010"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-upasana"
+          ],
+          "finding": "Indra’s disguised union and the narrator/heavenly voice establish biological father Indra; Vācaknavi is the social/ritual father and teacher. The Rukmāṅgada father claims are attributed character speech. Mother/son curses, badarī outcome and future terrifying-daitya child kept distinct. No false biological Vācaknavi or harmonized character speech.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-grtsamada-boons",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Upāsanā37.1–48"
+          ],
+          "evidence_ids": [
+            "gup2-e-011",
+            "gup2-e-012",
+            "gup2-e-013",
+            "gup2-e-014",
+            "gup2-e-015"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-upasana"
+          ],
+          "finding": "1,000 divine years followed by15,000 years of further tapas, lion-mounted ten-armed moon/serpent/lotus-adorned form with Siddhi/Buddhi present, all-requests grant, Brahmin/ṛṣi standing, unconquerable son except Rudra, and success through remembering Gṛtsamada first then Gaṇeśa supported. No implied Siddhi/Buddhi marriage or unspoken weapons.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-dhumraksa-weapon",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Krīḍā12.23–59"
+          ],
+          "evidence_ids": [
+            "gkr2-e-dhumraksa-tapas",
+            "gkr2-e-sun-weapon-seized",
+            "gkr2-e-sons-breath-return",
+            "gkr2-e-thousand-host"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-krida"
+          ],
+          "finding": "Dhūmrākṣa’s10,000-year Sun tapas and weapon grant, weapon interception and returned blow, Jaghana/Manu blown away but found conscious, thousand-Rākṣasa retaliation and breath-counter supported.12.54 trailing king/chariot branch requires collation; the positively supported capture-child/kill-if-fighting order does not resolve it.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-sons-survival-conflict",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Krīḍā12.49;15.5"
+          ],
+          "evidence_ids": [
+            "gkr2-e-sons-breath-return"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-krida"
+          ],
+          "finding": "12.49 explicitly conscious sons contrast with the king’s15.5 statement that Jaghana and Manu were killed. Preserve report versus scene and unresolved contradiction; no fabricated reconciliation.15.5 separately read directly although this unit’s listed evidence anchors the earlier scene.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-bhrusundi-body-offering",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Krīḍā16.10–14"
+          ],
+          "evidence_ids": [
+            "gkr2-e-remote-offering"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-krida"
+          ],
+          "finding": "Trunk in place of nose and Cintāmaṇi-dependent remote mental offerings and speech as described are supported; exact text print repeats a verse label in this neighborhood, not a new scene.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-bhrusundi-form-boon",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Krīḍā17.23–47"
+          ],
+          "evidence_ids": [
+            "gkr2-e-devotional-form",
+            "gkr2-e-manifestation-purpose",
+            "gkr2-e-bhrusundi-boons"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-krida"
+          ],
+          "finding": "Vināyaka displays Bhṛśuṇḍī’s meditated ten-armed peacock form in this Kṛta narrative. Purpose dialogue, appearance on meditation, Āśāpūraka renown, wish fulfillment and constant remembrance are supported; no forced Dvāpara-only identity or imported ten-weapon list.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-divodasa-rule",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Mudgala1.50.13–34"
+          ],
+          "evidence_ids": [
+            "mud2-e-divodasa-rule",
+            "mud2-e-siva-leaves-kashi"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-1"
+          ],
+          "finding": "60 rainless years, liberation-directed king, compassion and separated-domain earthly-rule condition, Śiva’s departure and Marīci’s liberation/likeness outcome supported. King’s continued Śambhu worship is distinct from ban on divine terrestrial sovereignty.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-divodasa-functions",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Mudgala1.50.53–67"
+          ],
+          "evidence_ids": [
+            "mud2-e-divodasa-replaces-gods"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-1"
+          ],
+          "finding": "Divodāsa assumes withdrawn Agni/Vāyu and other functions through tapas, then restores gods’ offices and remains one human body. This is functional replacement and later relinquishment; no new permanent deity identity. Sequential63 has printed33 label.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-kashi-restoration",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Mudgala1.51.1–61;1.52.1–16"
+          ],
+          "evidence_ids": [
+            "mud2-e-dhundhi-and-buddha",
+            "mud2-e-kashi-boon",
+            "mud2-e-kashi-restored",
+            "mud2-e-dhundhiraja-installation"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-1"
+          ],
+          "finding": "Dhundhi astrologer is created from Gaṇeśa’s body; earlier son-promise is recalled speech, not an observed biological birth. Viṣṇu’s Buddha form, city/king delusion strategy, personified Kāśī’s1,000-year tapas and lion form, promised return, Divodāsa’s liberation, Gaṇeśa’s first-entry and departure with astrologer, and image-installation/Dhundhi-first worship condition supported. Polemical religious judgments remain attributed source statements.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-khanda1-close",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Mudgala1.54.36–55"
+          ],
+          "evidence_ids": [
+            "mud2-e-khanda-hearing-restrictions"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-1"
+          ],
+          "finding": "General hearing recipients/warnings and benefits are supported;49 penalty subject/referral and53 vikuntham comparative force remain unresolved. Whole chapter and close arc stay PARTIAL; no false exact genealogical penalty attribution.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-cosmic-child",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Mudgala2.1.21–55"
+          ],
+          "evidence_ids": [
+            "mud2-e-brahma-flood",
+            "mud2-e-brahma-cosmic-belly",
+            "mud2-e-brahma-creation-instruction"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2"
+          ],
+          "finding": "One-year entry/lotus emergence, body-origin waters, thumb-sized child with three eyes/four arms, mouth/belly cosmic eggs and hair-pore exit, forgetting/renewing initial remembrance and mental Siddhi/Buddhi dakṣiṇā supported. Dakṣiṇā is not an observed wedding or explicit daughter declaration.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-navel-boon-agency",
+          "status": "SUPPORTED_CORRECTION",
+          "locators": [
+            "Mudgala2.1.22;1.13.1–51 independently read"
+          ],
+          "evidence_ids": [
+            "mud2-e-brahma-flood",
+            "mud3-e-siva-linga-son-boon"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2",
+            "gp-wit-sd-mudgala-1"
+          ],
+          "finding": "2.1.22 genitive alone did not safely establish Viṣṇu as grantor. Independent full1.13 reread confirms33–37 Viṣṇu requests Brahmā as son, Brahmā grants and promises yoga/body emergence from navel-lotus. mud3 explicitly corrects old row to emergence POWER and adds properly directed original BOON without deleting the ID.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-created-family",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Mudgala2.2.12–40"
+          ],
+          "evidence_ids": [
+            "mud2-e-kumara-creation",
+            "mud2-e-rudra-creation",
+            "mud2-e-scripture-sacrifice-creation"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2"
+          ],
+          "finding": "Body-born Kumāras with Vidyā mother-form, Rudra forehead origin and five faces/three eyes/ten arms, immortal Rudra creations/refusal of birth-and-death creation, and sacrificial Yajña-form Viṣṇu as son are distinct cosmological family contexts. Eight stations and eleven unnamed names do not authorize filling remembered name lists.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-narada-curse",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Mudgala2.2.41–61"
+          ],
+          "evidence_ids": [
+            "mud2-e-narada-mutual-curses",
+            "mud2-e-narada-curse-mitigation"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2"
+          ],
+          "finding": "Ten named sons, reciprocal curses,100 divine years of one-syllable tapas, requested cancellation versus refusal to falsify Brahmā’s truth-boon, and Gandharva→Śūdra→reborn Nārada/Śiva-devotee→Nārāyaṇa-taught Gāṇapatya path supported. Protective knowledge mitigates the curse instead of erasing births; prediction and narrator’s compressed outcome remain separate.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-narada-teaching",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Mudgala2.3.1–36"
+          ],
+          "evidence_ids": [
+            "mud2-e-narada-questions",
+            "mud2-e-siva-yoga-teaching-reported"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2"
+          ],
+          "finding": "Śiva’s jewel Cintāmaṇi-image worship motivates Nārada’s question; Viṣṇu recounts his own earlier Śiva instruction. Siddhi/Buddhi, fivefold mind, ga/ṇa and bhava/upāya-pratyaya explanations remain attributed doctrinal speech and nested narration, without unrelated biological identity assertions.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-narada-final-boon",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Mudgala2.3.37–57"
+          ],
+          "evidence_ids": [
+            "mud2-e-narada-tenyear-hymn",
+            "mud2-e-narada-final-boon"
+          ],
+          "source_ids": [
+            "gp-src-mudgala"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-mudgala-2"
+          ],
+          "finding": "Later ten years of yoga/mental meditation/mantra are distinct from100 divine years in2.2. Mouse vehicle/banner appears in hymn; request for loving Gāṇapatya devotion answered by unwavering devotion, yoga stability, universal/yogin honor and hymn benefits. Gaṇeśa enters the sage’s heart, where he is continually seen. Account explicitly closes.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-girija-family",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Upāsanā48.9–39"
+          ],
+          "evidence_ids": [
+            "gup3-e-001",
+            "gup3-e-002",
+            "gup3-e-003",
+            "gup3-e-004",
+            "gup3-e-005"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-upasana"
+          ],
+          "finding": "Cave reappearance after learning daitya’s death, source speech asking to be treated as newly born from father’s belly, unnamed dhīvara report, Himavat’s console/promise, Menā with unnamed sons and advice to worship Gaṇeśa are supported. Reappearance is not an independently observed new biological delivery, and eventual reunion is still prospective.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-earthen-meditation",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Upāsanā49.10–23"
+          ],
+          "evidence_ids": [
+            "gup3-e-007",
+            "gup3-e-008"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-upasana"
+          ],
+          "finding": "Four-armed image with axe/other own weapons and separate meditated noose/goad/modaka form,108dūrvā with3/5/7leaves, Siddhi/Buddhi serving and stated benefits supported. No inferred wives or imported vehicle. Other materials and procedures outside10–23 not independently certified by this unit.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-month-vow-counts",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Upāsanā50.1–33 whole body"
+          ],
+          "evidence_ids": [
+            "gup3-e-013",
+            "gup3-e-014",
+            "gup3-e-015",
+            "gup3-e-016",
+            "gup3-e-017",
+            "gup3-e-018",
+            "gup3-e-019"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-upasana"
+          ],
+          "finding": "One-/six-syllable and other mantra counts retained with niyuta/ayuta source terms; month from Nabhas bright fourth to Bhādrapada fourth;1–12image/108/lakh scales,5images for3×7night jail release,7daily5years sin removal, lifelong1image devotee claim and3images9day disease relief supported as Himavat’s attributed promises. Printed ten Rudras at eleven worship retained. Homa/tarpana/feeding successively one-tenth, festival/vigil and later immersion chronology supported; no actual Pārvatī reunion claimed.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-hiranya-nondeath",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Krīḍā29.1–37 whole body"
+          ],
+          "evidence_ids": [
+            "gkr3-e-siva-hiranya-grant"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-krida"
+          ],
+          "finding": "Śiva grants the twins’ enumerated nondeath exclusions, including literal antarāla/uṣas. Bull,tenarms,crescent,snakes,threeeyes,trident,Girīndra’s daughter/tigerhide are hymn attributes. This local donor is Śiva; no imported Brahmā-boon version or guessed doorway/twilight strategy. Later Nṛsiṃha-claw and Varāha-tusk outcomes are stated without explanation of every bypass.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-virocana-condition",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Krīḍā29.30–37"
+          ],
+          "evidence_ids": [
+            "gkr3-e-virocana-crown",
+            "gkr3-e-virocana-counter",
+            "gkr3-e-virocana-parent-review"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-krida"
+          ],
+          "finding": "Virocana’s unresolved parent pronoun retained while Bali sonship explicit. Sun’s actual promise concerns crown destruction on another hand’s touch, not an explicit wearer-death immunity. Viṣṇu’s unnamed female form obtains massage consent, removes crown/oils head, then Virocana becomes100fragments/attains sārūpya without a specified likeness deity. No invented Mohinī name.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        },
+        {
+          "id": "root2-review-bali-vamana-birth",
+          "status": "SUPPORTED_IN_SAMPLE",
+          "locators": [
+            "Krīḍā30.1–43 whole body"
+          ],
+          "evidence_ids": [
+            "gkr3-e-bali-policy",
+            "gkr3-e-bali-sacrifices",
+            "gkr3-e-indra-vishnu",
+            "gkr3-e-vamana-birth-rites"
+          ],
+          "source_ids": [
+            "gp-src-ganesha"
+          ],
+          "witness_ids": [
+            "gp-wit-sd-krida"
+          ],
+          "finding": "Hari-devotee Bali follows Śukra’s100-sacrifice counsel,99complete then100thunderway; unnamed wife and birth-brother rationale kept source-local. Indra calls Viṣṇu younger brother; Viṣṇu upholds Bali’s deserved tapas fruit yet promises Indra’s purpose. Ninth-month Aditi birth, Kaśyapa rites, four-armed divine child then ordinary nursing baby, third-year tonsure and fifth-year initiation supported. Later vow/boon remains chapter31, not claimed here.",
+          "limit": "Only stated facts and bounded evidence paraphrases sampled; no certification of every dependent record field or entire chapter."
+        }
+      ]
+    }
+  ],
+  "limits": "Targeted sample review of primary witnesses, not independent certification of all assertions, doctrinal interpretation or print recensions. Earlier review files and resolutions remain intact."
+}

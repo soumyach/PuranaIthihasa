@@ -1,0 +1,2024 @@
+{
+  "record_update_ids": [
+    "continuation4-change-0208",
+    "continuation4-change-0209",
+    "continuation4-change-0210",
+    "continuation4-change-0211",
+    "continuation4-change-0212",
+    "continuation4-change-0213",
+    "continuation4-change-0214",
+    "continuation4-change-0215",
+    "continuation4-change-0216",
+    "continuation4-change-0217",
+    "continuation4-change-0218",
+    "continuation4-change-0219",
+    "continuation4-change-0220",
+    "continuation4-change-0221",
+    "continuation4-change-0222",
+    "continuation4-change-0223",
+    "continuation4-change-0224",
+    "continuation4-change-0225",
+    "continuation4-change-0226",
+    "continuation4-change-0227",
+    "continuation4-change-0228",
+    "continuation4-change-0229",
+    "continuation4-change-0230",
+    "continuation4-change-0231",
+    "continuation4-change-0232",
+    "continuation4-change-0233",
+    "continuation4-change-0234",
+    "continuation4-change-0235",
+    "continuation4-change-0236",
+    "continuation4-change-0237"
+  ],
+  "finding_resolutions": [
+    {
+      "finding_id": "gkr5-review-gup5-spouse-evidence-strengthen",
+      "author_status": "CORRECTION_REQUIRED",
+      "current_resolution": "APPLIED_WITH_DOCUMENTED_CHANGE",
+      "change_record_ids": [
+        "continuation4-change-0216",
+        "continuation4-change-0217"
+      ],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "assertions",
+          "record": {
+            "id": "gup5-a-027",
+            "subject_id": "gup5-en-051",
+            "predicate": "spouse_of",
+            "object_id": "gup5-en-052",
+            "value": null,
+            "evidence_ids": [
+              "gup5-e-034",
+              "gup5-e-033"
+            ],
+            "verification_status": "VERIFIED"
+          }
+        },
+        {
+          "table": "relationships",
+          "record": {
+            "id": "gup5-rel-023",
+            "subject_id": "gup5-en-051",
+            "predicate": "spouse_of",
+            "object_id": "gup5-en-052",
+            "evidence_ids": [
+              "gup5-e-034",
+              "gup5-e-033"
+            ],
+            "verification_status": "VERIFIED",
+            "assertion_id": "gup5-a-027",
+            "kinship_kind": "MARITAL"
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "gkr5-review-gup5-trishiras-role",
+      "author_status": "CORRECTION_REQUIRED",
+      "current_resolution": "APPLIED_WITH_DOCUMENTED_CHANGE",
+      "change_record_ids": [
+        "continuation4-change-0215"
+      ],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "entities",
+          "record": {
+            "id": "gup5-en-052",
+            "name": "Triśiras (poor Brahmin in65–66)",
+            "type": "DEVOTEE",
+            "source_scope": "gp-src-ganesha",
+            "aliases": [],
+            "evidence_ids": [
+              "gup5-e-033",
+              "gup5-e-034",
+              "gup5-e-035",
+              "gup5-e-036"
+            ]
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "gkr5-review-gup5-scale-conflict",
+      "author_status": "UNDETERMINED",
+      "current_resolution": "RETAINED_PENDING",
+      "change_record_ids": [],
+      "author_checkpoint": null,
+      "current_records": [],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "gup5-review-mud5-09",
+      "author_status": "CORRECTION_NEEDED",
+      "current_resolution": "APPLIED_WITH_DOCUMENTED_CHANGE",
+      "change_record_ids": [
+        "continuation4-change-0220",
+        "continuation4-change-0221"
+      ],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "entities",
+          "record": {
+            "id": "mud5-en-cosmography-users",
+            "name": "Readers/hearers or qualified practitioners in Mudgala cosmography benefits",
+            "type": "CONCEPT",
+            "source_scope": "gp-src-mudgala",
+            "aliases": [],
+            "evidence_ids": [
+              "mud5-e-bharata-rivers-phala"
+            ]
+          }
+        },
+        {
+          "table": "boons_and_powers",
+          "record": {
+            "id": "mud5-power-pulaha-hymn-benefits",
+            "type": "POWER",
+            "recipient_id": "rfix4-en-pulaha-hymn-audience",
+            "grantor_id": "mud-en-vakratunda",
+            "worshipped_id": null,
+            "later_event_ids": [],
+            "evidence_ids": [
+              "mud5-e-pulaha-devotion-boon"
+            ],
+            "field_evidence": {
+              "recipient_id": [
+                "mud5-e-pulaha-devotion-boon"
+              ],
+              "grantor_id": [
+                "mud5-e-pulaha-devotion-boon"
+              ],
+              "trigger": [
+                "mud5-e-pulaha-devotion-boon"
+              ],
+              "granted": [
+                "mud5-e-pulaha-devotion-boon"
+              ]
+            },
+            "verification_status": "VERIFIED",
+            "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+            "motive": null,
+            "austerity_or_circumstances": null,
+            "requested": null,
+            "granted": "Devotion, enjoyment/liberation, peace-yoga, all happiness; become like Pulaha(24–25).",
+            "mechanism": null,
+            "trigger": "Human recitation/hearingPulaha hymn.",
+            "restrictions": null,
+            "duration": null,
+            "counter": null
+          }
+        },
+        {
+          "table": "boons_and_powers",
+          "record": {
+            "id": "mud5-power-vighnaraja-grace-reflection",
+            "type": "POWER",
+            "recipient_id": "rfix4-en-vighnaraja-reflection-beneficiaries",
+            "grantor_id": null,
+            "worshipped_id": null,
+            "later_event_ids": [],
+            "evidence_ids": [
+              "mud5-e-bharata-deer-body-ending"
+            ],
+            "field_evidence": {
+              "recipient_id": [
+                "mud5-e-bharata-deer-body-ending"
+              ],
+              "trigger": [
+                "mud5-e-bharata-deer-body-ending"
+              ],
+              "granted": [
+                "mud5-e-bharata-deer-body-ending"
+              ],
+              "notes": [
+                "mud5-e-bharata-deer-body-ending"
+              ]
+            },
+            "verification_status": "VERIFIED",
+            "notes": "Attributed reflection 32–33, not independent new boon.",
+            "motive": null,
+            "austerity_or_circumstances": null,
+            "requested": null,
+            "granted": "Victory over difficult obstacles, as Bharata reflects Śiva/Viṣṇu and all beings do.",
+            "mechanism": null,
+            "trigger": "Vighnarāja grace.",
+            "restrictions": null,
+            "duration": null,
+            "counter": null
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "gup5-review-mud5-10",
+      "author_status": "UNDETERMINED",
+      "current_resolution": "RETAINED_PENDING",
+      "change_record_ids": [],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "story_spines",
+          "record": {
+            "id": "mud5-story-pulaha-teaching",
+            "title": "Brahmā’s instruction to Pulaha on suffering,liberation and complete peace",
+            "source_id": "gp-src-mudgala",
+            "witness_id": "gp-wit-sd-mudgala-2",
+            "scope": "2.17.25–59",
+            "event_ids": [
+              "mud5-event-pulaha-brahma-question",
+              "mud5-event-pulaha-wighna-teaching",
+              "mud5-event-pulaha-sankhya-raw",
+              "mud5-event-pulaha-peace-beyond-union",
+              "mud5-event-pulaha-family-deity-instruction"
+            ],
+            "status": "PARTIAL",
+            "completeness_basis": "Partial source-order extraction; precise continuation recorded.",
+            "missing_sections": [
+              "42–43 precise philosophical causal relation; preserved raw."
+            ],
+            "editorial_notes": "Source narration order. Embedded narratives have their own spines; parent records their framing transitions without duplicating events."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "mud5-review-gup5-printed-names",
+      "author_status": "UNDETERMINED",
+      "current_resolution": "RETAINED_PENDING",
+      "change_record_ids": [],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "assertions",
+          "record": {
+            "id": "gup5-a-085",
+            "subject_id": "gup5-en-152",
+            "predicate": "source_royal_son_of",
+            "object_id": "gup4-en-080",
+            "value": null,
+            "evidence_ids": [
+              "gup5-e-067",
+              "gup5-e-068",
+              "gup4-e-046"
+            ],
+            "verification_status": "NEEDS_REVIEW"
+          }
+        },
+        {
+          "table": "assertions",
+          "record": {
+            "id": "gup5-a-086",
+            "subject_id": "gup4-en-081",
+            "predicate": "source_royal_mother_of",
+            "object_id": "gup5-en-152",
+            "value": null,
+            "evidence_ids": [
+              "gup5-e-067",
+              "gup5-e-068",
+              "gup4-e-046"
+            ],
+            "verification_status": "NEEDS_REVIEW"
+          }
+        },
+        {
+          "table": "relationships",
+          "record": {
+            "id": "gup5-rel-071",
+            "subject_id": "gup5-en-152",
+            "predicate": "source_royal_son_of",
+            "object_id": "gup4-en-080",
+            "evidence_ids": [
+              "gup5-e-067",
+              "gup5-e-068",
+              "gup4-e-046"
+            ],
+            "verification_status": "NEEDS_REVIEW",
+            "assertion_id": "gup5-a-085",
+            "kinship_kind": "SOURCE_CONTEXTUAL_ROYAL_SON"
+          }
+        },
+        {
+          "table": "relationships",
+          "record": {
+            "id": "gup5-rel-072",
+            "subject_id": "gup4-en-081",
+            "predicate": "source_royal_mother_of",
+            "object_id": "gup5-en-152",
+            "evidence_ids": [
+              "gup5-e-067",
+              "gup5-e-068",
+              "gup4-e-046"
+            ],
+            "verification_status": "NEEDS_REVIEW",
+            "assertion_id": "gup5-a-086",
+            "kinship_kind": "SOURCE_CONTEXTUAL_ROYAL_MOTHER"
+          }
+        },
+        {
+          "table": "boons_and_powers",
+          "record": {
+            "id": "gup5-power-050",
+            "type": "POWER",
+            "recipient_id": "gup4-en-081",
+            "grantor_id": null,
+            "worshipped_id": null,
+            "motive": null,
+            "austerity_or_circumstances": null,
+            "requested": null,
+            "granted": null,
+            "mechanism": "Pregnancy soon and birth at an auspicious time through Brahmin blessings.",
+            "trigger": "Truthful ascetic Brahmins’ blessings after the royal vow.",
+            "restrictions": null,
+            "duration": null,
+            "counter": null,
+            "later_event_ids": [],
+            "evidence_ids": [
+              "gup5-e-067",
+              "gup5-e-068"
+            ],
+            "field_evidence": {
+              "recipient_id": [
+                "gup5-e-067",
+                "gup5-e-068"
+              ],
+              "mechanism": [
+                "gup5-e-067"
+              ],
+              "trigger": [
+                "gup5-e-067"
+              ]
+            },
+            "verification_status": "NEEDS_REVIEW",
+            "notes": "The quoted cause is Brahmin blessings; do not replace their agency with a newly invented Gaṇeśa boon dialogue. Exact named recipient mapping is under review because71.19 performer naming conflicts with the earlier explicit king name."
+          }
+        },
+        {
+          "table": "boons_and_powers",
+          "record": {
+            "id": "gup5-power-051",
+            "type": "POWER",
+            "recipient_id": "gup4-en-080",
+            "grantor_id": null,
+            "worshipped_id": null,
+            "motive": null,
+            "austerity_or_circumstances": null,
+            "requested": null,
+            "granted": null,
+            "mechanism": "Reaches the Lord’s state at the end after son’s rites and succession.",
+            "trigger": null,
+            "restrictions": null,
+            "duration": null,
+            "counter": null,
+            "later_event_ids": [],
+            "evidence_ids": [
+              "gup5-e-067",
+              "gup5-e-068"
+            ],
+            "field_evidence": {
+              "recipient_id": [
+                "gup5-e-067",
+                "gup5-e-068"
+              ],
+              "mechanism": [
+                "gup5-e-067"
+              ]
+            },
+            "verification_status": "NEEDS_REVIEW",
+            "notes": "Chapter71 concise outcome; no exact death date or final form is supplied. Exact named recipient mapping is under review because71.19 performer naming conflicts with the earlier explicit king name. The end-of-life timing is retained in the event, not treated as a causal trigger."
+          }
+        },
+        {
+          "table": "variants_and_conflicts",
+          "record": {
+            "id": "gup5-var-68-dreamer-name",
+            "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+            "description": "Kārtavīrya68.3 versus Kṛtavīrya68.13/18, within one dream/waking sequence. Stable Kṛtavīrya actor used where explicitly named; anomalous3 not silently emended.",
+            "source_ids": [
+              "gp-src-ganesha"
+            ],
+            "evidence_ids": [
+              "gup5-e-051"
+            ],
+            "status": "OPEN",
+            "resolution": null
+          }
+        },
+        {
+          "table": "variants_and_conflicts",
+          "record": {
+            "id": "gup5-var-71-performer-name",
+            "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+            "description": "Kārtavīrya71.19 performer naming versus Kṛtavīrya68 explicit king and later son-naming72.25; preserve source-local chronology conflict pending collation.",
+            "source_ids": [
+              "gp-src-ganesha"
+            ],
+            "evidence_ids": [
+              "gup5-e-068"
+            ],
+            "status": "OPEN",
+            "resolution": null
+          }
+        },
+        {
+          "table": "evidence",
+          "record": {
+            "id": "gup5-e-051",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "passage_id": "gup5-p-review-68-51",
+            "locator": "Upāsanā 68.3,13,18",
+            "paraphrase": "The son-seeking dreamer is printed kārtavīryaḥ in68.3; the waking and speaking king is kṛtavīryaḥ in13 and18. Exact intended consistency of these forms awaits collation; no separate father/son actor mapping is forced from the variant.",
+            "classification": "DIRECT_TEXT",
+            "verification_status": "NEEDS_REVIEW",
+            "verifier": "Upāsanā continuation5 author",
+            "verification_notes": "Direct reread; transcription observed, unresolved interpretation not asserted."
+          }
+        },
+        {
+          "table": "evidence",
+          "record": {
+            "id": "gup5-e-068",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "passage_id": "gup5-p-review-71-68",
+            "locator": "Upāsanā 71.18–29",
+            "paraphrase": "Father18 urges his son to practice for offspring; Indra19 calls the intelligent performer kārtavīrya, whereas68.13/18 explicitly calls the dreamer kṛtavīrya. A concise birth/succession/abode account follows71.26–29, and the next fuller chapter72 names the child Kārtavīrya in25. The anomalous performer naming must not silently establish a different father/son generation or be emended.",
+            "classification": "DIRECT_TEXT",
+            "verification_status": "NEEDS_REVIEW",
+            "verifier": "Upāsanā continuation5 author",
+            "verification_notes": "Direct reread; transcription observed, unresolved interpretation not asserted."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "mud5-review-gup5-writer-agency",
+      "author_status": "CORRECTION_NEEDED",
+      "current_resolution": "APPLIED_WITH_DOCUMENTED_CHANGE",
+      "change_record_ids": [
+        "continuation4-change-0218",
+        "continuation4-change-0219"
+      ],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "narrative_events",
+          "record": {
+            "id": "gup5-event-043",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "supporting_witness_ids": [
+              "gp-wit-sd-upasana"
+            ],
+            "story_id": "gup5-story-krtavirya-dream",
+            "sequence": 43,
+            "passage_ids": [
+              "gup5-p-68-1-12"
+            ],
+            "participants": [
+              "gup4-en-062",
+              "gup-en-010",
+              "gup4-en-080",
+              "gup4-en-083",
+              "gup-en-005",
+              "gp-en-brahma",
+              "gp-en-ganesha",
+              "gup5-en-075"
+            ],
+            "setting": null,
+            "cause": null,
+            "details": "Śūrasena asks Indra what Kṛtavīrya’s father did next. Indra says the son-seeking king anxiously considers childlessness after hearing the Sankaṣṭa and dūrvā accounts. Verse3 calls the dreamer Kārtavīrya, while the waking king is explicitly Kṛtavīrya in13; the name variation is retained. He dreams of his father. They embrace, unable to speak through emotion. The father takes his hand, seats him and says Nārada reported his efforts for a son, prompting the father’s visit to Brahmā. Brahmā prescribed Sankaṣṭa-caturthī and promised offspring to the royal son once the vow removes sin. The father says the book was written according to Brahmā’s instructions, gives it, and tells him to practice for a year so Siddhivināyaka will be pleased and a son will result.",
+            "outcome": "The father delivers a book and prospective remedy in the dream; the printed dreamer name remains under review.",
+            "changed_relationship_ids": [],
+            "introduced_entity_ids": [
+              "gup5-en-075"
+            ],
+            "introduced_power_ids": [
+              "gup5-power-037"
+            ],
+            "consequences": [],
+            "evidence_ids": [
+              "gup5-e-047"
+            ],
+            "verification_status": "VERIFIED"
+          }
+        },
+        {
+          "table": "evidence",
+          "record": {
+            "id": "gup5-e-047",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "passage_id": "gup5-p-68-1-12",
+            "locator": "Upāsanā 68.1–12",
+            "paraphrase": "Śūrasena asks Indra what Kṛtavīrya’s father did next. Indra says the son-seeking king anxiously considers childlessness after hearing the Sankaṣṭa and dūrvā accounts. Verse3 calls the dreamer Kārtavīrya, while the waking king is explicitly Kṛtavīrya in13; the name variation is retained. He dreams of his father. They embrace, unable to speak through emotion. The father takes his hand, seats him and says Nārada reported his efforts for a son, prompting the father’s visit to Brahmā. Brahmā prescribed Sankaṣṭa-caturthī and promised offspring to the royal son once the vow removes sin. The father says the book was written according to Brahmā’s instructions, gives it, and tells him to practice for a year so Siddhivināyaka will be pleased and a son will result.",
+            "classification": "DIRECT_TEXT",
+            "verification_status": "VERIFIED",
+            "verifier": "Upāsanā continuation agent",
+            "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "mud5-review-gup5-full-procedure-completeness",
+      "author_status": "UNDETERMINED",
+      "current_resolution": "RETAINED_PENDING",
+      "change_record_ids": [],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "story_spines",
+          "record": {
+            "id": "gup5-story-sankasta-procedure",
+            "title": "Prescribed Sankaṣṭa worship and its completion protocol",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "scope": "69.1–62;71.1–17",
+            "event_ids": [
+              "gup5-event-047",
+              "gup5-event-048",
+              "gup5-event-053",
+              "gup5-event-049",
+              "gup5-event-050",
+              "gup5-event-051",
+              "gup5-event-052",
+              "gup5-event-059",
+              "gup5-event-060"
+            ],
+            "status": "COMPLETE",
+            "completeness_basis": "All bodies and named transitions in this bounded witness-local scope are read and extracted; its stated ending is present.",
+            "missing_sections": [],
+            "editorial_notes": "Source-order embedded narration remains distinct from chronology. Brief reports are complete only as bounded reports in this witness, not exhaustive biographies or other-corpus arcs. Ritual formula claims do not become new narrated births."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "root4-apeta-clarification",
+      "author_status": "CORRECTION_APPLIED",
+      "current_resolution": "APPLIED_WITH_DOCUMENTED_CHANGE",
+      "change_record_ids": [
+        "continuation4-change-0208",
+        "continuation4-change-0209",
+        "continuation4-change-0210",
+        "continuation4-change-0211",
+        "continuation4-change-0212"
+      ],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "narrative_events",
+          "record": {
+            "id": "gup4-event-019",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "supporting_witness_ids": [
+              "gp-wit-sd-upasana"
+            ],
+            "story_id": "gup4-story-candrangada",
+            "sequence": 19,
+            "passage_ids": [
+              "gup4-p-53-1-7"
+            ],
+            "participants": [
+              "gup2-en-113",
+              "gup2-en-182",
+              "gup4-en-022",
+              "gup4-en-035",
+              "gup4-en-036",
+              "gup4-en-037",
+              "gup4-en-038",
+              "gup4-en-039"
+            ],
+            "setting": null,
+            "cause": null,
+            "details": "Himavat tells Pārvatī of the vow practiced by Candraṅgada and his wife Indumatī. The king rules Karṇa city in Mālava, knows Vedas and śāstras, sacrifices and gives generously, and has a brilliant court. Verse 3 prints aṇimādiguṇāpeta: literally free from qualities such as aṇimā. The printed negative qualifier is retained, without emending it to guṇopeta or attributing miraculous perfections. Indumatī is virtuous, serves her husband and parents-in-law, handles household duties and worships gods and guests. Ministers strongly urge the king to abandon the grievously sinful killing involved in hunting.",
+            "outcome": "Royal family and ministers’ warning introduced; printed absence qualifier preserved literally, with no supernatural perfection granted.",
+            "changed_relationship_ids": [],
+            "introduced_entity_ids": [
+              "gup4-en-035",
+              "gup4-en-036",
+              "gup4-en-037",
+              "gup4-en-038",
+              "gup4-en-039"
+            ],
+            "introduced_power_ids": [],
+            "consequences": [],
+            "evidence_ids": [
+              "gup4-e-019"
+            ],
+            "verification_status": "VERIFIED"
+          }
+        },
+        {
+          "table": "story_spines",
+          "record": {
+            "id": "gup4-story-candrangada",
+            "title": "Candraṅgada capture, Indumatī vow, release and reunion",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "scope": "53.1–55.32",
+            "event_ids": [
+              "gup4-event-019",
+              "gup4-event-020",
+              "gup4-event-021",
+              "gup4-event-022",
+              "gup4-event-023",
+              "gup4-event-024",
+              "gup4-event-025",
+              "gup4-event-026",
+              "gup4-event-027",
+              "gup4-event-028",
+              "gup4-event-029",
+              "gup4-event-030",
+              "gup4-event-031",
+              "gup4-event-032",
+              "gup4-event-033"
+            ],
+            "status": "PARTIAL",
+            "completeness_basis": "Main transitions extracted where read; important semantic omissions prevent COMPLETE.",
+            "missing_sections": [
+              "53.15 minister bhage clause and55.16 ritual wording remain unresolved.53.3 literal absence qualifier is now extracted; alternate print intent remains uncollated."
+            ],
+            "editorial_notes": "Source-order nested narration is retained. Former births, divine precedents and prospective efficacy remain distinct from enacted results. Kardama king is distinct from the Mudgala sage."
+          }
+        },
+        {
+          "table": "variants_and_conflicts",
+          "record": {
+            "id": "gup4-var-53-capacity",
+            "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+            "description": "53.3 printed aṇimādiguṇāpeta has been read literally as free from aṇimā and analogous qualities. An alternate authorial reading or copying error is not established; no change to guṇopeta is made.",
+            "source_ids": [
+              "gp-src-ganesha"
+            ],
+            "evidence_ids": [
+              "gup4-e-019"
+            ],
+            "status": "OPEN",
+            "resolution": "Literal digital qualifier clarified independently; print/authorial variant question remains OPEN."
+          }
+        },
+        {
+          "table": "evidence",
+          "record": {
+            "id": "gup4-e-019",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "passage_id": "gup4-p-53-1-7",
+            "locator": "Upāsanā 53.1–7",
+            "paraphrase": "Himavat tells Pārvatī of the vow practiced by Candraṅgada and his wife Indumatī. The king rules Karṇa city in Mālava, knows Vedas and śāstras, sacrifices and gives generously, and has a brilliant court. Verse 3 prints aṇimādiguṇāpeta: literally free from qualities such as aṇimā. The printed negative qualifier is retained, without emending it to guṇopeta or attributing miraculous perfections. Indumatī is virtuous, serves her husband and parents-in-law, handles household duties and worships gods and guests. Ministers strongly urge the king to abandon the grievously sinful killing involved in hunting.",
+            "classification": "DIRECT_TEXT",
+            "verification_status": "VERIFIED",
+            "verifier": "Upāsanā continuation agent",
+            "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately. Root and a second author checked the printed qualifier53.3 and Monier-Williams apeta, free-from sense in compounds (https://sanskrit.uohyd.ac.in/SKT/MW/12.html). This verifies the limited literal digital reading; print authorial intent and a possible copying error remain uncollated."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "root4-manor-gloss",
+      "author_status": "PENDING_INTERPRETIVE_CONFIRMATION",
+      "current_resolution": "RETAINED_PENDING",
+      "change_record_ids": [],
+      "author_checkpoint": null,
+      "current_records": [
+        {
+          "table": "assertions",
+          "record": {
+            "id": "rfix4-a-manor-context-gloss",
+            "subject_id": "gkr4-en-vakratunda40",
+            "predicate": "contextually_glossed_weapon_mechanism",
+            "object_id": null,
+            "value": "Parvatāstra by mantra-power, as a contextual reading of manor balāt; no named mantra supplied.",
+            "evidence_ids": [
+              "rfix4-e-manor-context-gloss"
+            ],
+            "verification_status": "NEEDS_REVIEW"
+          }
+        },
+        {
+          "table": "evidence",
+          "record": {
+            "id": "rfix4-e-manor-context-gloss",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-krida",
+            "passage_id": "gkr4-p-042",
+            "locator": "Krīḍā42.6; contextual comparison31.3/5/8",
+            "paraphrase": "Contextual lexical gloss of manor balāt: by mantra-power. The primary manu dictionary entry includes mantra/incantation as well as thought; the weapon context and31 mantra/mahāmanu/manu-japa support this choice. This is a bounded interpretation, not an explicit named mantra string or intervention actor.",
+            "classification": "INFERENCE",
+            "verification_status": "NEEDS_REVIEW",
+            "verifier": "Root and independent Krīḍā author, lexical/context comparison",
+            "verification_notes": "Monier-Williams headword manu, https://sanskrit.uohyd.ac.in/SKT/MW/195.html. No alternate print collation.42.10 keśābhyāṃ actor remains OPEN. The primary dictionary HTML was read; attempted PDF scan rendering failed and was not used for image-based certification."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    },
+    {
+      "finding_id": "root4-nodaniya-instruction",
+      "author_status": "CORRECTION_APPLIED_WITH_RETAINED_GAP",
+      "current_resolution": "APPLIED_BEFORE_AUTHOR_FREEZE",
+      "change_record_ids": [],
+      "author_checkpoint": "checkpoints/continuation4/checkpoints/gup5/durva-strategy-correction-002.json",
+      "current_records": [
+        {
+          "table": "narrative_events",
+          "record": {
+            "id": "gup5-event-021",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "supporting_witness_ids": [
+              "gp-wit-sd-upasana"
+            ],
+            "story_id": "gup5-story-analasura",
+            "sequence": 21,
+            "passage_ids": [
+              "gup5-p-63-43-51"
+            ],
+            "participants": [
+              "gp-en-ganesha",
+              "gup5-en-027",
+              "gup5-en-025",
+              "gup-en-100",
+              "gup-en-109",
+              "gup5-en-028"
+            ],
+            "setting": null,
+            "cause": null,
+            "details": "The child announces a means of killing the demon and directs the gods to carry it out. The following strategy clause is preserved as sarvair bhavadbhis taṃ dṛṣṭvā nodanīyo balād aham; its exact intended action remains unresolved. He tells them to watch his and the demon’s remarkable encounter. They joyfully yet uncertainly discuss his capacity and bow. Analāsura approaches as dissolution-fire, burning ten directions and devouring humans. The people cry out and sages flee, warning the child to escape before the fire kills him, comparing it with a great predator. Gaṇeśa stands firm like Himavat; they retreat far away, leaving him there.",
+            "outcome": "The appointed encounter begins; the child remains after the rescuers flee. The precise preceding strategy is withheld.",
+            "changed_relationship_ids": [],
+            "introduced_entity_ids": [
+              "gup5-en-028"
+            ],
+            "introduced_power_ids": [],
+            "consequences": [],
+            "evidence_ids": [
+              "gup5-e-023"
+            ],
+            "verification_status": "VERIFIED"
+          }
+        },
+        {
+          "table": "evidence",
+          "record": {
+            "id": "gup5-e-023",
+            "source_id": "gp-src-ganesha",
+            "witness_id": "gp-wit-sd-upasana",
+            "passage_id": "gup5-p-63-43-51",
+            "locator": "Upāsanā 63.43–51",
+            "paraphrase": "The child announces a means of killing the demon and directs the gods to carry it out. The following strategy clause is preserved as sarvair bhavadbhis taṃ dṛṣṭvā nodanīyo balād aham; its exact intended action remains unresolved. He tells them to watch his and the demon’s remarkable encounter. They joyfully yet uncertainly discuss his capacity and bow. Analāsura approaches as dissolution-fire, burning ten directions and devouring humans. The people cry out and sages flee, warning the child to escape before the fire kills him, comparing it with a great predator. Gaṇeśa stands firm like Himavat; they retreat far away, leaving him there.",
+            "classification": "DIRECT_TEXT",
+            "verification_status": "VERIFIED",
+            "verifier": "Upāsanā continuation agent",
+            "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+          }
+        }
+      ],
+      "notes": "The original bounded review and its compared hash remain preserved; this resolution records the current integrated values. Existing and newly flagged unresolved claims retain their exact statuses."
+    }
+  ],
+  "details": [
+    {
+      "id": "continuation4-change-0208",
+      "track": "rfix4",
+      "table": "evidence",
+      "record_id": "gup4-e-019",
+      "before": {
+        "id": "gup4-e-019",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "passage_id": "gup4-p-53-1-7",
+        "locator": "Upāsanā 53.1–7",
+        "paraphrase": "Himavat tells Pārvatī of the vow practiced by Candraṅgada and his wife Indumatī. The king rules Karṇa city in Mālava, knows Vedas and śāstras, sacrifices and gives generously, and has a brilliant court. Verse 3 prints aṇimādiguṇāpeta; its capacity implication is withheld instead of silently changing it to guṇopeta. Indumatī is virtuous, serves her husband and parents-in-law, handles household duties and worships gods and guests. Ministers strongly urge the king to abandon the grievously sinful killing involved in hunting.",
+        "classification": "DIRECT_TEXT",
+        "verification_status": "NEEDS_REVIEW",
+        "verifier": "Upāsanā continuation agent",
+        "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+      },
+      "after": {
+        "id": "gup4-e-019",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "passage_id": "gup4-p-53-1-7",
+        "locator": "Upāsanā 53.1–7",
+        "paraphrase": "Himavat tells Pārvatī of the vow practiced by Candraṅgada and his wife Indumatī. The king rules Karṇa city in Mālava, knows Vedas and śāstras, sacrifices and gives generously, and has a brilliant court. Verse 3 prints aṇimādiguṇāpeta: literally free from qualities such as aṇimā. The printed negative qualifier is retained, without emending it to guṇopeta or attributing miraculous perfections. Indumatī is virtuous, serves her husband and parents-in-law, handles household duties and worships gods and guests. Ministers strongly urge the king to abandon the grievously sinful killing involved in hunting.",
+        "classification": "DIRECT_TEXT",
+        "verification_status": "VERIFIED",
+        "verifier": "Upāsanā continuation agent",
+        "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately. Root and a second author checked the printed qualifier53.3 and Monier-Williams apeta, free-from sense in compounds (https://sanskrit.uohyd.ac.in/SKT/MW/12.html). This verifies the limited literal digital reading; print authorial intent and a possible copying error remain uncollated."
+      },
+      "reason": "Independent literal lexical clarification of53.3; no silent emendation.",
+      "evidence_ids": [
+        "gup4-e-019"
+      ]
+    },
+    {
+      "id": "continuation4-change-0209",
+      "track": "rfix4",
+      "table": "narrative_events",
+      "record_id": "gup4-event-019",
+      "before": {
+        "id": "gup4-event-019",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup4-story-candrangada",
+        "sequence": 19,
+        "passage_ids": [
+          "gup4-p-53-1-7"
+        ],
+        "participants": [
+          "gup2-en-113",
+          "gup2-en-182",
+          "gup4-en-022",
+          "gup4-en-035",
+          "gup4-en-036",
+          "gup4-en-037",
+          "gup4-en-038",
+          "gup4-en-039"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Himavat tells Pārvatī of the vow practiced by Candraṅgada and his wife Indumatī. The king rules Karṇa city in Mālava, knows Vedas and śāstras, sacrifices and gives generously, and has a brilliant court. Verse 3 prints aṇimādiguṇāpeta; its capacity implication is withheld instead of silently changing it to guṇopeta. Indumatī is virtuous, serves her husband and parents-in-law, handles household duties and worships gods and guests. Ministers strongly urge the king to abandon the grievously sinful killing involved in hunting.",
+        "outcome": "Royal family and the ministers’ warning are introduced; the capacity word remains unresolved.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [
+          "gup4-en-035",
+          "gup4-en-036",
+          "gup4-en-037",
+          "gup4-en-038",
+          "gup4-en-039"
+        ],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gup4-e-019"
+        ],
+        "verification_status": "NEEDS_REVIEW"
+      },
+      "after": {
+        "id": "gup4-event-019",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup4-story-candrangada",
+        "sequence": 19,
+        "passage_ids": [
+          "gup4-p-53-1-7"
+        ],
+        "participants": [
+          "gup2-en-113",
+          "gup2-en-182",
+          "gup4-en-022",
+          "gup4-en-035",
+          "gup4-en-036",
+          "gup4-en-037",
+          "gup4-en-038",
+          "gup4-en-039"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Himavat tells Pārvatī of the vow practiced by Candraṅgada and his wife Indumatī. The king rules Karṇa city in Mālava, knows Vedas and śāstras, sacrifices and gives generously, and has a brilliant court. Verse 3 prints aṇimādiguṇāpeta: literally free from qualities such as aṇimā. The printed negative qualifier is retained, without emending it to guṇopeta or attributing miraculous perfections. Indumatī is virtuous, serves her husband and parents-in-law, handles household duties and worships gods and guests. Ministers strongly urge the king to abandon the grievously sinful killing involved in hunting.",
+        "outcome": "Royal family and ministers’ warning introduced; printed absence qualifier preserved literally, with no supernatural perfection granted.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [
+          "gup4-en-035",
+          "gup4-en-036",
+          "gup4-en-037",
+          "gup4-en-038",
+          "gup4-en-039"
+        ],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gup4-e-019"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "reason": "Same53.3 negative qualifier clarification; other chapter gaps remain.",
+      "evidence_ids": [
+        "gup4-e-019"
+      ]
+    },
+    {
+      "id": "continuation4-change-0210",
+      "track": "rfix4",
+      "table": "passages",
+      "record_id": "gup4-p-53-1-7",
+      "before": {
+        "id": "gup4-p-53-1-7",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "book": "Gaṇeśa Purāṇa",
+        "khanda": "Upāsanākhaṇḍa",
+        "chapter": 53,
+        "verses": "1–7",
+        "url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+        "locator": "Upāsanā 53.1–7",
+        "reading_status": "READ",
+        "extraction_status": "PARTIAL",
+        "limitations": "Witness-level bounded extraction; chapter completeness separately checked."
+      },
+      "after": {
+        "id": "gup4-p-53-1-7",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "book": "Gaṇeśa Purāṇa",
+        "khanda": "Upāsanākhaṇḍa",
+        "chapter": 53,
+        "verses": "1–7",
+        "url": "https://sanskritdocuments.org/doc_purana/gaNeshapurANam1.html",
+        "locator": "Upāsanā 53.1–7",
+        "reading_status": "READ",
+        "extraction_status": "COMPLETE",
+        "limitations": "53.3 literal apeta qualifier checked; full chapter remains PARTIAL for53.15 minister clause. Alternate print authorial reading not established."
+      },
+      "reason": "Bounded53.1–7 excerpt no longer has the withheld capacity qualifier.",
+      "evidence_ids": [
+        "gup4-e-019"
+      ]
+    },
+    {
+      "id": "continuation4-change-0211",
+      "track": "rfix4",
+      "table": "variants_and_conflicts",
+      "record_id": "gup4-var-53-capacity",
+      "before": {
+        "id": "gup4-var-53-capacity",
+        "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+        "description": "53.3printed aṇimādiguṇāpeta capacity qualifier retained; no recalled/expectedguṇopetaor miraculousperfectionsclaim inserted.",
+        "source_ids": [
+          "gp-src-ganesha"
+        ],
+        "evidence_ids": [
+          "gup4-e-019"
+        ],
+        "status": "OPEN",
+        "resolution": null
+      },
+      "after": {
+        "id": "gup4-var-53-capacity",
+        "type": "SOURCE_LOCAL_READING_UNCERTAINTY",
+        "description": "53.3 printed aṇimādiguṇāpeta has been read literally as free from aṇimā and analogous qualities. An alternate authorial reading or copying error is not established; no change to guṇopeta is made.",
+        "source_ids": [
+          "gp-src-ganesha"
+        ],
+        "evidence_ids": [
+          "gup4-e-019"
+        ],
+        "status": "OPEN",
+        "resolution": "Literal digital qualifier clarified independently; print/authorial variant question remains OPEN."
+      },
+      "reason": "Separate literal lexical resolution from uncollated print intent.",
+      "evidence_ids": [
+        "gup4-e-019"
+      ]
+    },
+    {
+      "id": "continuation4-change-0212",
+      "track": "rfix4",
+      "table": "story_spines",
+      "record_id": "gup4-story-candrangada",
+      "before": {
+        "id": "gup4-story-candrangada",
+        "title": "Candraṅgada capture, Indumatī vow, release and reunion",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "scope": "53.1–55.32",
+        "event_ids": [
+          "gup4-event-019",
+          "gup4-event-020",
+          "gup4-event-021",
+          "gup4-event-022",
+          "gup4-event-023",
+          "gup4-event-024",
+          "gup4-event-025",
+          "gup4-event-026",
+          "gup4-event-027",
+          "gup4-event-028",
+          "gup4-event-029",
+          "gup4-event-030",
+          "gup4-event-031",
+          "gup4-event-032",
+          "gup4-event-033"
+        ],
+        "status": "PARTIAL",
+        "completeness_basis": "Main transitions extracted where read; important semantic omissions prevent COMPLETE.",
+        "missing_sections": [
+          "53.3 aṇimādiguṇāpeta and53.15 minister bhage clause, plus55.16 twelve-year ritual wording, remain unresolved."
+        ],
+        "editorial_notes": "Source-order nested narration is retained. Former births, divine precedents and prospective efficacy remain distinct from enacted results. Kardama king is distinct from the Mudgala sage."
+      },
+      "after": {
+        "id": "gup4-story-candrangada",
+        "title": "Candraṅgada capture, Indumatī vow, release and reunion",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "scope": "53.1–55.32",
+        "event_ids": [
+          "gup4-event-019",
+          "gup4-event-020",
+          "gup4-event-021",
+          "gup4-event-022",
+          "gup4-event-023",
+          "gup4-event-024",
+          "gup4-event-025",
+          "gup4-event-026",
+          "gup4-event-027",
+          "gup4-event-028",
+          "gup4-event-029",
+          "gup4-event-030",
+          "gup4-event-031",
+          "gup4-event-032",
+          "gup4-event-033"
+        ],
+        "status": "PARTIAL",
+        "completeness_basis": "Main transitions extracted where read; important semantic omissions prevent COMPLETE.",
+        "missing_sections": [
+          "53.15 minister bhage clause and55.16 ritual wording remain unresolved.53.3 literal absence qualifier is now extracted; alternate print intent remains uncollated."
+        ],
+        "editorial_notes": "Source-order nested narration is retained. Former births, divine precedents and prospective efficacy remain distinct from enacted results. Kardama king is distinct from the Mudgala sage."
+      },
+      "reason": "Narrow the documented old omission while retaining PARTIAL for other source clauses.",
+      "evidence_ids": [
+        "gup4-e-019"
+      ]
+    },
+    {
+      "id": "continuation4-change-0213",
+      "track": "rfix4",
+      "table": "evidence",
+      "record_id": "gkr4-e-astra-agency-review",
+      "before": {
+        "id": "gkr4-e-astra-agency-review",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "passage_id": "gkr4-p-042",
+        "locator": "Krīḍā 42.6–10; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+        "paraphrase": "Exact manor balāt accompanies Parvatāstra manifestation; after collision burns people, keśābhyāṃ vārite describes the paired weapons stopped. The dual agent is not securely identified in this reading.",
+        "classification": "DIRECT_TEXT",
+        "verification_status": "NEEDS_REVIEW",
+        "verifier": "Krīḍā continuation4 author, direct digital body reading",
+        "verification_notes": "Preserve the two literal clauses; do not substitute remembered weapon diagrams or interpret keśābhyām as hair. Exact intervention agency unresolved."
+      },
+      "after": {
+        "id": "gkr4-e-astra-agency-review",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "passage_id": "gkr4-p-042",
+        "locator": "Krīḍā 42.6–10; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+        "paraphrase": "Exact manor balāt accompanies Parvatāstra manifestation; after collision burns people, keśābhyāṃ vārite describes the paired weapons stopped. The dual agent is not securely identified in this reading.",
+        "classification": "DIRECT_TEXT",
+        "verification_status": "NEEDS_REVIEW",
+        "verifier": "Krīḍā continuation4 author, direct digital body reading",
+        "verification_notes": "Preserve the two literal clauses; do not substitute remembered weapon diagrams or interpret keśābhyām as hair. Exact intervention agency unresolved. Contextual manu=mantra gloss is separately recorded as INFERENCE in rfix4-e-manor-context-gloss; raw direct clause and unresolved42.10 actor remain unchanged."
+      },
+      "reason": "Keep a supported lexical interpretation explicitly separate from direct-text certainty.",
+      "evidence_ids": [
+        "rfix4-e-manor-context-gloss"
+      ]
+    },
+    {
+      "id": "continuation4-change-0214",
+      "track": "rfix4",
+      "table": "boons_and_powers",
+      "record_id": "gkr4-power-vakra-astra-counters",
+      "before": {
+        "id": "gkr4-power-vakra-astra-counters",
+        "type": "POWER",
+        "recipient_id": "gkr4-en-vakratunda40",
+        "grantor_id": null,
+        "worshipped_id": null,
+        "evidence_ids": [
+          "gkr4-e-astra-counters"
+        ],
+        "verification_status": "VERIFIED",
+        "notes": "Exact agency ending the pair’s collateral fire unresolved; do not attribute that clause to this recipient.",
+        "motive": null,
+        "austerity_or_circumstances": null,
+        "requested": null,
+        "granted": "Counters the successive fire, wind and Raudra weapons.",
+        "mechanism": "Parjanya rain, Parvata mountains by manor balāt and Brahmāstra against Raudra.",
+        "trigger": null,
+        "restrictions": null,
+        "duration": null,
+        "counter": null,
+        "later_event_ids": [],
+        "field_evidence": {
+          "recipient_id": [
+            "gkr4-e-astra-counters"
+          ],
+          "granted": [
+            "gkr4-e-astra-counters"
+          ],
+          "mechanism": [
+            "gkr4-e-astra-counters"
+          ]
+        }
+      },
+      "after": {
+        "id": "gkr4-power-vakra-astra-counters",
+        "type": "POWER",
+        "recipient_id": "gkr4-en-vakratunda40",
+        "grantor_id": null,
+        "worshipped_id": null,
+        "evidence_ids": [
+          "gkr4-e-astra-counters"
+        ],
+        "verification_status": "VERIFIED",
+        "notes": "Exact agency ending the pair’s collateral fire unresolved; do not attribute that clause to this recipient. Contextual manu=mantra gloss is separately recorded as INFERENCE in rfix4-e-manor-context-gloss; raw direct clause and unresolved42.10 actor remain unchanged.",
+        "motive": null,
+        "austerity_or_circumstances": null,
+        "requested": null,
+        "granted": "Counters the successive fire, wind and Raudra weapons.",
+        "mechanism": "Parjanya rain, Parvata mountains by manor balāt and Brahmāstra against Raudra.",
+        "trigger": null,
+        "restrictions": null,
+        "duration": null,
+        "counter": null,
+        "later_event_ids": [],
+        "field_evidence": {
+          "recipient_id": [
+            "gkr4-e-astra-counters"
+          ],
+          "granted": [
+            "gkr4-e-astra-counters"
+          ],
+          "mechanism": [
+            "gkr4-e-astra-counters"
+          ]
+        }
+      },
+      "reason": "Keep a supported lexical interpretation explicitly separate from direct-text certainty.",
+      "evidence_ids": [
+        "rfix4-e-manor-context-gloss"
+      ]
+    },
+    {
+      "id": "continuation4-change-0215",
+      "track": "root-review-resolution",
+      "table": "entities",
+      "record_id": "gup5-en-052",
+      "before": {
+        "id": "gup5-en-052",
+        "name": "Triśiras (poor Brahmin in65–66)",
+        "type": "SAGE",
+        "source_scope": "gp-src-ganesha",
+        "aliases": [],
+        "evidence_ids": [
+          "gup5-e-033",
+          "gup5-e-034",
+          "gup5-e-035",
+          "gup5-e-036"
+        ]
+      },
+      "after": {
+        "id": "gup5-en-052",
+        "name": "Triśiras (poor Brahmin in65–66)",
+        "type": "DEVOTEE",
+        "source_scope": "gp-src-ganesha",
+        "aliases": [],
+        "evidence_ids": [
+          "gup5-e-033",
+          "gup5-e-034",
+          "gup5-e-035",
+          "gup5-e-036"
+        ]
+      },
+      "reason": "Independent whole65–66 review: Triśiras is a Brahmin/devotee; SAGE is not stated in the checked spans. Preserve ID and evidence.",
+      "evidence_ids": [
+        "gup5-e-033",
+        "gup5-e-034"
+      ]
+    },
+    {
+      "id": "continuation4-change-0216",
+      "track": "root-review-resolution",
+      "table": "assertions",
+      "record_id": "gup5-a-027",
+      "before": {
+        "id": "gup5-a-027",
+        "subject_id": "gup5-en-051",
+        "predicate": "spouse_of",
+        "object_id": "gup5-en-052",
+        "value": null,
+        "evidence_ids": [
+          "gup5-e-034"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "after": {
+        "id": "gup5-a-027",
+        "subject_id": "gup5-en-051",
+        "predicate": "spouse_of",
+        "object_id": "gup5-en-052",
+        "value": null,
+        "evidence_ids": [
+          "gup5-e-034",
+          "gup5-e-033"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "reason": "Independent whole65–66 review strengthens named spouse linkage with65.44, retaining66 evidence.",
+      "evidence_ids": [
+        "gup5-e-033",
+        "gup5-e-034"
+      ]
+    },
+    {
+      "id": "continuation4-change-0217",
+      "track": "root-review-resolution",
+      "table": "relationships",
+      "record_id": "gup5-rel-023",
+      "before": {
+        "id": "gup5-rel-023",
+        "subject_id": "gup5-en-051",
+        "predicate": "spouse_of",
+        "object_id": "gup5-en-052",
+        "evidence_ids": [
+          "gup5-e-034"
+        ],
+        "verification_status": "VERIFIED",
+        "assertion_id": "gup5-a-027",
+        "kinship_kind": "MARITAL"
+      },
+      "after": {
+        "id": "gup5-rel-023",
+        "subject_id": "gup5-en-051",
+        "predicate": "spouse_of",
+        "object_id": "gup5-en-052",
+        "evidence_ids": [
+          "gup5-e-034",
+          "gup5-e-033"
+        ],
+        "verification_status": "VERIFIED",
+        "assertion_id": "gup5-a-027",
+        "kinship_kind": "MARITAL"
+      },
+      "reason": "Independent whole65–66 review strengthens named spouse linkage with65.44, retaining66 evidence.",
+      "evidence_ids": [
+        "gup5-e-033",
+        "gup5-e-034"
+      ]
+    },
+    {
+      "id": "continuation4-change-0218",
+      "track": "root-review-resolution",
+      "table": "evidence",
+      "record_id": "gup5-e-047",
+      "before": {
+        "id": "gup5-e-047",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "passage_id": "gup5-p-68-1-12",
+        "locator": "Upāsanā 68.1–12",
+        "paraphrase": "Śūrasena asks Indra what Kṛtavīrya’s father did next. Indra says the son-seeking king anxiously considers childlessness after hearing the Sankaṣṭa and dūrvā accounts. Verse3 calls the dreamer Kārtavīrya, while the waking king is explicitly Kṛtavīrya in13; the name variation is retained. He dreams of his father. They embrace, unable to speak through emotion. The father takes his hand, seats him and says Nārada reported his efforts for a son, prompting the father’s visit to Brahmā. Brahmā prescribed Sankaṣṭa-caturthī and promised offspring to the royal son once the vow removes sin. The father says he recorded the instructions, gives the book, and tells him to practice for a year so Siddhivināyaka will be pleased and a son will result.",
+        "classification": "DIRECT_TEXT",
+        "verification_status": "VERIFIED",
+        "verifier": "Upāsanā continuation agent",
+        "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+      },
+      "after": {
+        "id": "gup5-e-047",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "passage_id": "gup5-p-68-1-12",
+        "locator": "Upāsanā 68.1–12",
+        "paraphrase": "Śūrasena asks Indra what Kṛtavīrya’s father did next. Indra says the son-seeking king anxiously considers childlessness after hearing the Sankaṣṭa and dūrvā accounts. Verse3 calls the dreamer Kārtavīrya, while the waking king is explicitly Kṛtavīrya in13; the name variation is retained. He dreams of his father. They embrace, unable to speak through emotion. The father takes his hand, seats him and says Nārada reported his efforts for a son, prompting the father’s visit to Brahmā. Brahmā prescribed Sankaṣṭa-caturthī and promised offspring to the royal son once the vow removes sin. The father says the book was written according to Brahmā’s instructions, gives it, and tells him to practice for a year so Siddhivināyaka will be pleased and a son will result.",
+        "classification": "DIRECT_TEXT",
+        "verification_status": "VERIFIED",
+        "verifier": "Upāsanā continuation agent",
+        "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+      },
+      "reason": "Independent whole68 review:68.10 passive writing does not securely identify the father as writer; delivery11 retained.",
+      "evidence_ids": [
+        "gup5-e-047"
+      ]
+    },
+    {
+      "id": "continuation4-change-0219",
+      "track": "root-review-resolution",
+      "table": "narrative_events",
+      "record_id": "gup5-event-043",
+      "before": {
+        "id": "gup5-event-043",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-krtavirya-dream",
+        "sequence": 43,
+        "passage_ids": [
+          "gup5-p-68-1-12"
+        ],
+        "participants": [
+          "gup4-en-062",
+          "gup-en-010",
+          "gup4-en-080",
+          "gup4-en-083",
+          "gup-en-005",
+          "gp-en-brahma",
+          "gp-en-ganesha",
+          "gup5-en-075"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Śūrasena asks Indra what Kṛtavīrya’s father did next. Indra says the son-seeking king anxiously considers childlessness after hearing the Sankaṣṭa and dūrvā accounts. Verse3 calls the dreamer Kārtavīrya, while the waking king is explicitly Kṛtavīrya in13; the name variation is retained. He dreams of his father. They embrace, unable to speak through emotion. The father takes his hand, seats him and says Nārada reported his efforts for a son, prompting the father’s visit to Brahmā. Brahmā prescribed Sankaṣṭa-caturthī and promised offspring to the royal son once the vow removes sin. The father says he recorded the instructions, gives the book, and tells him to practice for a year so Siddhivināyaka will be pleased and a son will result.",
+        "outcome": "The father delivers a book and prospective remedy in the dream; the printed dreamer name remains under review.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [
+          "gup5-en-075"
+        ],
+        "introduced_power_ids": [
+          "gup5-power-037"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-047"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "after": {
+        "id": "gup5-event-043",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-krtavirya-dream",
+        "sequence": 43,
+        "passage_ids": [
+          "gup5-p-68-1-12"
+        ],
+        "participants": [
+          "gup4-en-062",
+          "gup-en-010",
+          "gup4-en-080",
+          "gup4-en-083",
+          "gup-en-005",
+          "gp-en-brahma",
+          "gp-en-ganesha",
+          "gup5-en-075"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Śūrasena asks Indra what Kṛtavīrya’s father did next. Indra says the son-seeking king anxiously considers childlessness after hearing the Sankaṣṭa and dūrvā accounts. Verse3 calls the dreamer Kārtavīrya, while the waking king is explicitly Kṛtavīrya in13; the name variation is retained. He dreams of his father. They embrace, unable to speak through emotion. The father takes his hand, seats him and says Nārada reported his efforts for a son, prompting the father’s visit to Brahmā. Brahmā prescribed Sankaṣṭa-caturthī and promised offspring to the royal son once the vow removes sin. The father says the book was written according to Brahmā’s instructions, gives it, and tells him to practice for a year so Siddhivināyaka will be pleased and a son will result.",
+        "outcome": "The father delivers a book and prospective remedy in the dream; the printed dreamer name remains under review.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [
+          "gup5-en-075"
+        ],
+        "introduced_power_ids": [
+          "gup5-power-037"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-047"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "reason": "Independent whole68 review:68.10 passive writing does not securely identify the father as writer; delivery11 retained.",
+      "evidence_ids": [
+        "gup5-e-047"
+      ]
+    },
+    {
+      "id": "continuation4-change-0220",
+      "track": "root-review-resolution",
+      "table": "boons_and_powers",
+      "record_id": "mud5-power-pulaha-hymn-benefits",
+      "before": {
+        "id": "mud5-power-pulaha-hymn-benefits",
+        "type": "POWER",
+        "recipient_id": "mud5-en-cosmography-users",
+        "grantor_id": "mud-en-vakratunda",
+        "worshipped_id": null,
+        "later_event_ids": [],
+        "evidence_ids": [
+          "mud5-e-pulaha-devotion-boon"
+        ],
+        "field_evidence": {
+          "recipient_id": [
+            "mud5-e-pulaha-devotion-boon"
+          ],
+          "grantor_id": [
+            "mud5-e-pulaha-devotion-boon"
+          ],
+          "trigger": [
+            "mud5-e-pulaha-devotion-boon"
+          ],
+          "granted": [
+            "mud5-e-pulaha-devotion-boon"
+          ]
+        },
+        "verification_status": "VERIFIED",
+        "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+        "motive": null,
+        "austerity_or_circumstances": null,
+        "requested": null,
+        "granted": "Devotion, enjoyment/liberation, peace-yoga, all happiness; become like Pulaha(24–25).",
+        "mechanism": null,
+        "trigger": "Human recitation/hearingPulaha hymn.",
+        "restrictions": null,
+        "duration": null,
+        "counter": null
+      },
+      "after": {
+        "id": "mud5-power-pulaha-hymn-benefits",
+        "type": "POWER",
+        "recipient_id": "rfix4-en-pulaha-hymn-audience",
+        "grantor_id": "mud-en-vakratunda",
+        "worshipped_id": null,
+        "later_event_ids": [],
+        "evidence_ids": [
+          "mud5-e-pulaha-devotion-boon"
+        ],
+        "field_evidence": {
+          "recipient_id": [
+            "mud5-e-pulaha-devotion-boon"
+          ],
+          "grantor_id": [
+            "mud5-e-pulaha-devotion-boon"
+          ],
+          "trigger": [
+            "mud5-e-pulaha-devotion-boon"
+          ],
+          "granted": [
+            "mud5-e-pulaha-devotion-boon"
+          ]
+        },
+        "verification_status": "VERIFIED",
+        "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+        "motive": null,
+        "austerity_or_circumstances": null,
+        "requested": null,
+        "granted": "Devotion, enjoyment/liberation, peace-yoga, all happiness; become like Pulaha(24–25).",
+        "mechanism": null,
+        "trigger": "Human recitation/hearingPulaha hymn.",
+        "restrictions": null,
+        "duration": null,
+        "counter": null
+      },
+      "reason": "Independent2.18 review: hymn beneficiaries are mortal readers/hearers, not the existing cosmography audience. Benefit wording and triggers retained.",
+      "evidence_ids": [
+        "mud5-e-pulaha-devotion-boon"
+      ]
+    },
+    {
+      "id": "continuation4-change-0221",
+      "track": "root-review-resolution",
+      "table": "boons_and_powers",
+      "record_id": "mud5-power-vighnaraja-grace-reflection",
+      "before": {
+        "id": "mud5-power-vighnaraja-grace-reflection",
+        "type": "POWER",
+        "recipient_id": "mud5-en-cosmography-users",
+        "grantor_id": null,
+        "worshipped_id": null,
+        "later_event_ids": [],
+        "evidence_ids": [
+          "mud5-e-bharata-deer-body-ending"
+        ],
+        "field_evidence": {
+          "recipient_id": [
+            "mud5-e-bharata-deer-body-ending"
+          ],
+          "trigger": [
+            "mud5-e-bharata-deer-body-ending"
+          ],
+          "granted": [
+            "mud5-e-bharata-deer-body-ending"
+          ],
+          "notes": [
+            "mud5-e-bharata-deer-body-ending"
+          ]
+        },
+        "verification_status": "VERIFIED",
+        "notes": "Attributed reflection 32–33, not independent new boon.",
+        "motive": null,
+        "austerity_or_circumstances": null,
+        "requested": null,
+        "granted": "Victory over difficult obstacles, as Bharata reflects Śiva/Viṣṇu and all beings do.",
+        "mechanism": null,
+        "trigger": "Vighnarāja grace.",
+        "restrictions": null,
+        "duration": null,
+        "counter": null
+      },
+      "after": {
+        "id": "mud5-power-vighnaraja-grace-reflection",
+        "type": "POWER",
+        "recipient_id": "rfix4-en-vighnaraja-reflection-beneficiaries",
+        "grantor_id": null,
+        "worshipped_id": null,
+        "later_event_ids": [],
+        "evidence_ids": [
+          "mud5-e-bharata-deer-body-ending"
+        ],
+        "field_evidence": {
+          "recipient_id": [
+            "mud5-e-bharata-deer-body-ending"
+          ],
+          "trigger": [
+            "mud5-e-bharata-deer-body-ending"
+          ],
+          "granted": [
+            "mud5-e-bharata-deer-body-ending"
+          ],
+          "notes": [
+            "mud5-e-bharata-deer-body-ending"
+          ]
+        },
+        "verification_status": "VERIFIED",
+        "notes": "Attributed reflection 32–33, not independent new boon.",
+        "motive": null,
+        "austerity_or_circumstances": null,
+        "requested": null,
+        "granted": "Victory over difficult obstacles, as Bharata reflects Śiva/Viṣṇu and all beings do.",
+        "mechanism": null,
+        "trigger": "Vighnarāja grace.",
+        "restrictions": null,
+        "duration": null,
+        "counter": null
+      },
+      "reason": "Independent2.18 review: attributed reflection addresses Śiva/Viṣṇu and all beings; retain reflection status rather than creating a new personal boon.",
+      "evidence_ids": [
+        "mud5-e-bharata-deer-body-ending"
+      ]
+    },
+    {
+      "id": "continuation4-change-0222",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "gp-queue-1",
+      "before": {
+        "id": "gp-queue-1",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā61.1–19 read fragment, unextracted;61.20–92 unread. Retain3/11/13/23/24/45–47 and new51/53/55/57/59 semantic gaps.",
+        "task": "Resume formal extraction at61.1, reread the unextracted fragment and continue source order. Preserve Somakānta/Vyāsa frames and all separately flagged Sanskrit gaps.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [],
+        "reason": "Bodies51–60 read;52/54/56/58/60 COMPLETE and51/53/55/57/59 PARTIAL. Whole92-chapter witness incomplete."
+      },
+      "after": {
+        "id": "gp-queue-1",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā72.1–30 read-only and unextracted;72.31–92 unread. New61/63/67/68/71 partials and all earlier chapter/print gaps remain separate.53.3 literal apeta resolved,53.15 still pending.",
+        "task": "Resume formal extraction at61.1, reread the unextracted fragment and continue source order. Preserve Somakānta/Vyāsa frames and all separately flagged Sanskrit gaps.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [],
+        "reason": "Bodies51–60 read;52/54/56/58/60 COMPLETE and51/53/55/57/59 PARTIAL. Whole92-chapter witness incomplete."
+      },
+      "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation4-change-0223",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "gup-queue-next",
+      "before": {
+        "id": "gup-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā61.1–19 read fragment, unextracted;61.20–92 unread. Retain3/11/13/23/24/45–47 and new51/53/55/57/59 semantic gaps.",
+        "task": "Resume formal extraction at61.1, reread the unextracted fragment and continue source order. Preserve Somakānta/Vyāsa frames and all separately flagged Sanskrit gaps.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [],
+        "reason": "Bodies51–60 read;52/54/56/58/60 COMPLETE and51/53/55/57/59 PARTIAL. Whole92-chapter witness incomplete."
+      },
+      "after": {
+        "id": "gup-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā72.1–30 read-only and unextracted;72.31–92 unread. New61/63/67/68/71 partials and all earlier chapter/print gaps remain separate.53.3 literal apeta resolved,53.15 still pending.",
+        "task": "Resume formal source-order extraction at72.1; re-read/extract the fragment, preserve enclosing frames and all recorded semantic gaps.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [],
+        "reason": "Bodies51–60 read;52/54/56/58/60 COMPLETE and51/53/55/57/59 PARTIAL. Whole92-chapter witness incomplete."
+      },
+      "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation4-change-0224",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "gup2-queue-next",
+      "before": {
+        "id": "gup2-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā61.1–19 read fragment, unextracted;61.20–92 unread. Retain3/11/13/23/24/45–47 and new51/53/55/57/59 semantic gaps.",
+        "task": "Resume formal extraction at61.1, reread the unextracted fragment and continue source order. Preserve Somakānta/Vyāsa frames and all separately flagged Sanskrit gaps.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [],
+        "reason": "Bodies51–60 read;52/54/56/58/60 COMPLETE and51/53/55/57/59 PARTIAL. Whole92-chapter witness incomplete."
+      },
+      "after": {
+        "id": "gup2-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā72.1–30 read-only and unextracted;72.31–92 unread. New61/63/67/68/71 partials and all earlier chapter/print gaps remain separate.53.3 literal apeta resolved,53.15 still pending.",
+        "task": "Resume formal source-order extraction at72.1; re-read/extract the fragment, preserve enclosing frames and all recorded semantic gaps.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [],
+        "reason": "Bodies51–60 read;52/54/56/58/60 COMPLETE and51/53/55/57/59 PARTIAL. Whole92-chapter witness incomplete."
+      },
+      "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation4-change-0225",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "gup3-queue-next",
+      "before": {
+        "id": "gup3-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā61.1–19 read fragment, unextracted;61.20–92 unread. Retain3/11/13/23/24/45–47 and new51/53/55/57/59 semantic gaps.",
+        "task": "Resume formal extraction at61.1, reread the unextracted fragment and continue source order. Preserve Somakānta/Vyāsa frames and all separately flagged Sanskrit gaps.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [],
+        "reason": "Bodies51–60 read;52/54/56/58/60 COMPLETE and51/53/55/57/59 PARTIAL. Whole92-chapter witness incomplete."
+      },
+      "after": {
+        "id": "gup3-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā72.1–30 read-only and unextracted;72.31–92 unread. New61/63/67/68/71 partials and all earlier chapter/print gaps remain separate.53.3 literal apeta resolved,53.15 still pending.",
+        "task": "Resume formal source-order extraction at72.1; re-read/extract the fragment, preserve enclosing frames and all recorded semantic gaps.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [],
+        "reason": "Bodies51–60 read;52/54/56/58/60 COMPLETE and51/53/55/57/59 PARTIAL. Whole92-chapter witness incomplete."
+      },
+      "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation4-change-0226",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "gup4-queue-next",
+      "before": {
+        "id": "gup4-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā72.1–30 formal extraction first; unread primary body resumes72.31, then source order through92.",
+        "task": "Continue source-order bodies and bounded endings; important uncertainties require actual new evidence.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [],
+        "reason": "The92-chapter witness remains unfinished; important semantic gaps preserve PARTIAL."
+      },
+      "after": {
+        "id": "gup4-queue-next",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Upāsanā72.1–30 read-only and unextracted;72.31–92 unread. New61/63/67/68/71 partials and all earlier chapter/print gaps remain separate.53.3 literal apeta resolved,53.15 still pending.",
+        "task": "Resume formal source-order extraction at72.1; re-read/extract the fragment, preserve enclosing frames and all recorded semantic gaps.",
+        "priority": "P0-C",
+        "status": "IN_PROGRESS",
+        "dependency_ids": [],
+        "reason": "The92-chapter witness remains unfinished; important semantic gaps preserve PARTIAL."
+      },
+      "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation4-change-0227",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "gp-queue-2",
+      "before": {
+        "id": "gp-queue-2",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Krīḍā54.1–64 whole-body read-only;55.1–14 fragment read-only; formal extraction resumes54.1.55.15 onward unread, then56–136 and150–155;150.1–26/151.1–21 earlier reconnaissance retained. Partial44/49/50/52 and prior semantic gaps retained;137–149 intact.",
+        "task": "Continue formal Krīḍā extraction at54.1 in source order; read-only bodies must be extracted before COMPLETE. Preserve partial semantic cases, completed Kīrti frame and prior Gītā context.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "44–53 now formally extracted with declared partials;54whole/55fragment reconnaissance remains unextracted."
+      },
+      "after": {
+        "id": "gp-queue-2",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Krīḍā54.1–64 read-only whole body;55.1–14 fragment,55.15 onward unread through136, then150–155. Keep44/49/50/52 and earlier partials; completed137–149/Gītā context retained.",
+        "task": "Continue formal Krīḍā extraction at54.1 in source order; read-only bodies must be extracted before COMPLETE. Preserve partial semantic cases, completed Kīrti frame and prior Gītā context.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "44–53 now formally extracted with declared partials;54whole/55fragment reconnaissance remains unextracted."
+      },
+      "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation4-change-0228",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "gkr-queue-source-order",
+      "before": {
+        "id": "gkr-queue-source-order",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Krīḍā54.1–64 whole-body read-only;55.1–14 fragment read-only; formal extraction resumes54.1.55.15 onward unread, then56–136 and150–155;150.1–26/151.1–21 earlier reconnaissance retained. Partial44/49/50/52 and prior semantic gaps retained;137–149 intact.",
+        "task": "Continue formal Krīḍā extraction at54.1 in source order; read-only bodies must be extracted before COMPLETE. Preserve partial semantic cases, completed Kīrti frame and prior Gītā context.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "44–53 now formally extracted with declared partials;54whole/55fragment reconnaissance remains unextracted."
+      },
+      "after": {
+        "id": "gkr-queue-source-order",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Krīḍā54.1–64 read-only whole body;55.1–14 fragment,55.15 onward unread through136, then150–155. Keep44/49/50/52 and earlier partials; completed137–149/Gītā context retained.",
+        "task": "Resume formal extraction at54.1; extract read-only54/55 before new source-order bodies. Preserve every existing ID, earlier uncertainty and completed Gītā context.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "44–53 now formally extracted with declared partials;54whole/55fragment reconnaissance remains unextracted."
+      },
+      "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation4-change-0229",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "gkr2-queue-next-source-order",
+      "before": {
+        "id": "gkr2-queue-next-source-order",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Krīḍā54.1–64 whole-body read-only;55.1–14 fragment read-only; formal extraction resumes54.1.55.15 onward unread, then56–136 and150–155;150.1–26/151.1–21 earlier reconnaissance retained. Partial44/49/50/52 and prior semantic gaps retained;137–149 intact.",
+        "task": "Continue formal Krīḍā extraction at54.1 in source order; read-only bodies must be extracted before COMPLETE. Preserve partial semantic cases, completed Kīrti frame and prior Gītā context.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "44–53 now formally extracted with declared partials;54whole/55fragment reconnaissance remains unextracted."
+      },
+      "after": {
+        "id": "gkr2-queue-next-source-order",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Krīḍā54.1–64 read-only whole body;55.1–14 fragment,55.15 onward unread through136, then150–155. Keep44/49/50/52 and earlier partials; completed137–149/Gītā context retained.",
+        "task": "Resume formal extraction at54.1; extract read-only54/55 before new source-order bodies. Preserve every existing ID, earlier uncertainty and completed Gītā context.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "44–53 now formally extracted with declared partials;54whole/55fragment reconnaissance remains unextracted."
+      },
+      "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation4-change-0230",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "gkr3-queue-next-source-order",
+      "before": {
+        "id": "gkr3-queue-next-source-order",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Krīḍā54.1–64 whole-body read-only;55.1–14 fragment read-only; formal extraction resumes54.1.55.15 onward unread, then56–136 and150–155;150.1–26/151.1–21 earlier reconnaissance retained. Partial44/49/50/52 and prior semantic gaps retained;137–149 intact.",
+        "task": "Continue formal Krīḍā extraction at54.1 in source order; read-only bodies must be extracted before COMPLETE. Preserve partial semantic cases, completed Kīrti frame and prior Gītā context.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "44–53 now formally extracted with declared partials;54whole/55fragment reconnaissance remains unextracted."
+      },
+      "after": {
+        "id": "gkr3-queue-next-source-order",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Krīḍā54.1–64 read-only whole body;55.1–14 fragment,55.15 onward unread through136, then150–155. Keep44/49/50/52 and earlier partials; completed137–149/Gītā context retained.",
+        "task": "Resume formal extraction at54.1; extract read-only54/55 before new source-order bodies. Preserve every existing ID, earlier uncertainty and completed Gītā context.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "44–53 now formally extracted with declared partials;54whole/55fragment reconnaissance remains unextracted."
+      },
+      "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation4-change-0231",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "gkr4-queue-next-source-order",
+      "before": {
+        "id": "gkr4-queue-next-source-order",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Krīḍā54.1–64 whole-body read-only;55.1–14 fragment read-only; formal extraction resumes54.1.55.15 onward unread, then56–136 and150–155;150.1–26/151.1–21 earlier reconnaissance retained. Partial44/49/50/52 and prior semantic gaps retained;137–149 intact.",
+        "task": "Continue formal Krīḍā extraction at54.1 in source order; read-only bodies must be extracted before COMPLETE. Preserve partial semantic cases, completed Kīrti frame and prior Gītā context.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "44–53 now formally extracted with declared partials;54whole/55fragment reconnaissance remains unextracted."
+      },
+      "after": {
+        "id": "gkr4-queue-next-source-order",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Krīḍā54.1–64 read-only whole body;55.1–14 fragment,55.15 onward unread through136, then150–155. Keep44/49/50/52 and earlier partials; completed137–149/Gītā context retained.",
+        "task": "Resume formal extraction at54.1; extract read-only54/55 before new source-order bodies. Preserve every existing ID, earlier uncertainty and completed Gītā context.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "44–53 now formally extracted with declared partials;54whole/55fragment reconnaissance remains unextracted."
+      },
+      "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation4-change-0232",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "gkr-queue-read-unextracted",
+      "before": {
+        "id": "gkr-queue-read-unextracted",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Krīḍā54.1–64 whole-body read-only;55.1–14 fragment read-only; formal extraction resumes54.1.55.15 onward unread, then56–136 and150–155;150.1–26/151.1–21 earlier reconnaissance retained. Partial44/49/50/52 and prior semantic gaps retained;137–149 intact.",
+        "task": "Continue formal Krīḍā extraction at54.1 in source order; read-only bodies must be extracted before COMPLETE. Preserve partial semantic cases, completed Kīrti frame and prior Gītā context.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "44–53 now formally extracted with declared partials;54whole/55fragment reconnaissance remains unextracted."
+      },
+      "after": {
+        "id": "gkr-queue-read-unextracted",
+        "source_id": "gp-src-ganesha",
+        "passage_target": "Krīḍā54.1–64 read-only whole body;55.1–14 fragment,55.15 onward unread through136, then150–155. Keep44/49/50/52 and earlier partials; completed137–149/Gītā context retained.",
+        "task": "Resume formal extraction at54.1; extract read-only54/55 before new source-order bodies. Preserve every existing ID, earlier uncertainty and completed Gītā context.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "44–53 now formally extracted with declared partials;54whole/55fragment reconnaissance remains unextracted."
+      },
+      "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation4-change-0233",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "gp-queue-5",
+      "before": {
+        "id": "gp-queue-5",
+        "source_id": "gp-src-mudgala",
+        "passage_target": "Mudgala2.6.26–27,35–36,40,44–45,47–48;2.7.35;2.10.31;2.11–74;3.1–51;4.1–52;5.1–45;6.1–45;7.1–16;8.1–50;9.1–41; earlierkhanda1semanticqueues retained.",
+        "task": "Resume after4–10 actual-body extraction; address precise partial semantic loci and continue2.11 in source order, then remaining khandas.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "New4,5,8,9 complete;6,7,10 precise partials; all other earlier grammar flags remain open."
+      },
+      "after": {
+        "id": "gp-queue-5",
+        "source_id": "gp-src-mudgala",
+        "passage_target": "Mudgala2.19.1–23 root read-only,24a seen, author19.1–28 only displayed; no formal extraction. Continue2.19–74 then indexed3–9. New2.11/13/14/15/16/17 and earlier1/2 gaps remain.",
+        "task": "Resume after4–10 actual-body extraction; address precise partial semantic loci and continue2.11 in source order, then remaining khandas.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "New4,5,8,9 complete;6,7,10 precise partials; all other earlier grammar flags remain open."
+      },
+      "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation4-change-0234",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "mud-queue-khandas2to9",
+      "before": {
+        "id": "mud-queue-khandas2to9",
+        "source_id": "gp-src-mudgala",
+        "passage_target": "Mudgala2.6.26–27,35–36,40,44–45,47–48;2.7.35;2.10.31;2.11–74;3.1–51;4.1–52;5.1–45;6.1–45;7.1–16;8.1–50;9.1–41; earlierkhanda1semanticqueues retained.",
+        "task": "Resume after4–10 actual-body extraction; address precise partial semantic loci and continue2.11 in source order, then remaining khandas.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [
+          "mud-queue-khanda1-later"
+        ],
+        "reason": "New4,5,8,9 complete;6,7,10 precise partials; all other earlier grammar flags remain open."
+      },
+      "after": {
+        "id": "mud-queue-khandas2to9",
+        "source_id": "gp-src-mudgala",
+        "passage_target": "Mudgala2.19.1–23 root read-only,24a seen, author19.1–28 only displayed; no formal extraction. Continue2.19–74 then indexed3–9. New2.11/13/14/15/16/17 and earlier1/2 gaps remain.",
+        "task": "Resume after4–10 actual-body extraction; address precise partial semantic loci and continue2.11 in source order, then remaining khandas.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [
+          "mud-queue-khanda1-later"
+        ],
+        "reason": "New4,5,8,9 complete;6,7,10 precise partials; all other earlier grammar flags remain open."
+      },
+      "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation4-change-0235",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "mud2-queue-kh2-next",
+      "before": {
+        "id": "mud2-queue-kh2-next",
+        "source_id": "gp-src-mudgala",
+        "passage_target": "Mudgala2.6.26–27,35–36,40,44–45,47–48;2.7.35;2.10.31;2.11–74;3.1–51;4.1–52;5.1–45;6.1–45;7.1–16;8.1–50;9.1–41; earlierkhanda1semanticqueues retained.",
+        "task": "Resume after4–10 actual-body extraction; address precise partial semantic loci and continue2.11 in source order, then remaining khandas.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "New4,5,8,9 complete;6,7,10 precise partials; all other earlier grammar flags remain open."
+      },
+      "after": {
+        "id": "mud2-queue-kh2-next",
+        "source_id": "gp-src-mudgala",
+        "passage_target": "Mudgala2.19.1–23 root read-only,24a seen, author19.1–28 only displayed; no formal extraction. Continue2.19–74 then indexed3–9. New2.11/13/14/15/16/17 and earlier1/2 gaps remain.",
+        "task": "Resume formal extraction at2.19.1 while retaining targeted earlier gaps and all nine khaṇḍas. Do not duplicate11–18 extracted bodies.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "New4,5,8,9 complete;6,7,10 precise partials; all other earlier grammar flags remain open."
+      },
+      "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation4-change-0236",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "mud3-queue-forward-handoff",
+      "before": {
+        "id": "mud3-queue-forward-handoff",
+        "source_id": "gp-src-mudgala",
+        "passage_target": "Mudgala2.6.26–27,35–36,40,44–45,47–48;2.7.35;2.10.31;2.11–74;3.1–51;4.1–52;5.1–45;6.1–45;7.1–16;8.1–50;9.1–41; earlierkhanda1semanticqueues retained.",
+        "task": "Resume after4–10 actual-body extraction; address precise partial semantic loci and continue2.11 in source order, then remaining khandas.",
+        "priority": "P1",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "New4,5,8,9 complete;6,7,10 precise partials; all other earlier grammar flags remain open."
+      },
+      "after": {
+        "id": "mud3-queue-forward-handoff",
+        "source_id": "gp-src-mudgala",
+        "passage_target": "Mudgala2.19.1–23 root read-only,24a seen, author19.1–28 only displayed; no formal extraction. Continue2.19–74 then indexed3–9. New2.11/13/14/15/16/17 and earlier1/2 gaps remain.",
+        "task": "Resume formal extraction at2.19.1 while retaining targeted earlier gaps and all nine khaṇḍas. Do not duplicate11–18 extracted bodies.",
+        "priority": "P1",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "New4,5,8,9 complete;6,7,10 precise partials; all other earlier grammar flags remain open."
+      },
+      "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+      "evidence_ids": []
+    },
+    {
+      "id": "continuation4-change-0237",
+      "track": "root-review-resolution",
+      "table": "queue",
+      "record_id": "rmd2-q-next",
+      "before": {
+        "id": "rmd2-q-next",
+        "source_id": "gp-src-mudgala",
+        "passage_target": "Mudgala1.17.14;1.20.27;1.21.7,43–44",
+        "task": "Resolve retained1.17/20/21 exact language while resuming new source-order body at2.11.1; do not duplicate already extracted2.4–10.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "All first-khaṇḍa bodies read; eight semantic/atomic chapter gaps remain.2.4/5/8/9 COMPLETE,2.6/7/10 PARTIAL."
+      },
+      "after": {
+        "id": "rmd2-q-next",
+        "source_id": "gp-src-mudgala",
+        "passage_target": "Mudgala2.19.1–23 root read-only,24a seen, author19.1–28 only displayed; no formal extraction. Continue2.19–74 then indexed3–9. New2.11/13/14/15/16/17 and earlier1/2 gaps remain.",
+        "task": "Resolve targeted first-khaṇḍa residual language while resuming next source-order body at2.19.1.",
+        "priority": "P0-C",
+        "status": "OPEN",
+        "dependency_ids": [],
+        "reason": "All first-khaṇḍa bodies read; eight semantic/atomic chapter gaps remain.2.4/5/8/9 COMPLETE,2.6/7/10 PARTIAL."
+      },
+      "reason": "Reconcile preserved source-order queue with continuation4 frozen tracks. Read-only work is not extraction completion.",
+      "evidence_ids": []
+    }
+  ],
+  "unresolved": "Exact remaining chapter omissions, open variants and NEEDS_REVIEW records are retained. All affected whole-scene story spines remain PARTIAL. Selective independent checks do not certify every new row."
+}

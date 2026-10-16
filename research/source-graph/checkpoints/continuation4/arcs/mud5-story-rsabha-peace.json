@@ -1,0 +1,1141 @@
+{
+  "checkpoint": "continuation4",
+  "completed_arc_id": "mud5-story-rsabha-peace",
+  "graph_sha256": "d3e53f6fb2ee6852a3b4d4e6ee677a24abac85e4ede403205172dfa77aa4306a",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checks complete; independent review selective. All declared interpretation gaps remain explicit.",
+  "story": {
+    "id": "mud5-story-rsabha-peace",
+    "title": "Ṛṣabha’s lost peace,Śiva instruction,attained peace and Gaṇeśa devotion boon",
+    "source_id": "gp-src-mudgala",
+    "witness_id": "gp-wit-sd-mudgala-2",
+    "scope": "2.16.9–58",
+    "event_ids": [
+      "mud5-event-rsabha-siva-search",
+      "mud5-event-rsabha-santi-request",
+      "mud5-event-rsabha-ga-na-teaching",
+      "mud5-event-rsabha-peace-before-appearance",
+      "mud5-event-rsabha-ganesa-hymn",
+      "mud5-event-rsabha-devotion-grant",
+      "mud5-event-rsabha-account-phala"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Entire bounded cited Sanskrit arc read; significant named actors, relationships, boons/powers, dialogue and transition checks by author. Independent root review separate.",
+    "missing_sections": [],
+    "editorial_notes": "Source narration order. Embedded narratives have their own spines; parent records their framing transitions without duplicating events."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "mud5-event-rsabha-siva-search",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-rsabha-peace",
+        "sequence": 1,
+        "passage_ids": [
+          "mud5-p-rsabha-siva-search"
+        ],
+        "participants": [
+          "mud5-en-rsabha",
+          "gp-m-en-siva",
+          "mud5-en-siva-ganapatya-disciples",
+          "mud-en-kailasa"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Forest Ṛṣabha performs various tapas and yoga, becomes avadhūta, passes jada/unmatta/piśāca and sahaja states. He follows fourth, unmanifest, neti, delusion-free, independent Śaṅkara Brahman and teaches Śiva wherever he goes. Yoga reveals independence as defect, since Brahman neither depends nor is independent; loses peace, visits Śiva’s abode, receives honor, and is astonished by Gaṇapatya yogins who are Śiva disciples. No austerity duration stated.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-rsabha-siva-search"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-rsabha-siva-search",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-rsabha-siva-search",
+          "locator": "Mudgala2.16.9–17",
+          "paraphrase": "Forest Ṛṣabha performs various tapas and yoga, becomes avadhūta, passes jada/unmatta/piśāca and sahaja states. He follows fourth, unmanifest, neti, delusion-free, independent Śaṅkara Brahman and teaches Śiva wherever he goes. Yoga reveals independence as defect, since Brahman neither depends nor is independent; loses peace, visits Śiva’s abode, receives honor, and is astonished by Gaṇapatya yogins who are Śiva disciples. No austerity duration stated.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud5-event-rsabha-santi-request",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-rsabha-peace",
+        "sequence": 2,
+        "passage_ids": [
+          "mud5-p-rsabha-santi-request"
+        ],
+        "participants": [
+          "mud5-en-rsabha",
+          "gp-m-en-siva",
+          "mud-en-vakratunda"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Ṛṣabha hymns Śiva as yoga/world-support/Brahman lord, asks full peace-giving śāntiyoga, declares servant and disciple. He explains that sahaja was highest he knew but independence took peace away. Śiva joyfully teaches that Gaṇeśa is peace-yoga, origin/support/end of all, and promises peace through a secret he ATTRIBUTES to Sāmaveda. This witness’s Sāmaveda attribution is not independent quotation verification.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-rsabha-santi-request"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-rsabha-santi-request",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-rsabha-santi-request",
+          "locator": "Mudgala2.16.18–25",
+          "paraphrase": "Ṛṣabha hymns Śiva as yoga/world-support/Brahman lord, asks full peace-giving śāntiyoga, declares servant and disciple. He explains that sahaja was highest he knew but independence took peace away. Śiva joyfully teaches that Gaṇeśa is peace-yoga, origin/support/end of all, and promises peace through a secret he ATTRIBUTES to Sāmaveda. This witness’s Sāmaveda attribution is not independent quotation verification.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud5-event-rsabha-ga-na-teaching",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-rsabha-peace",
+        "sequence": 3,
+        "passage_ids": [
+          "mud5-p-rsabha-ga-na-teaching"
+        ],
+        "participants": [
+          "gp-m-en-siva",
+          "mud5-en-rsabha",
+          "mud-en-vakratunda",
+          "mud5-en-ga-name-principle",
+          "mud5-en-na-name-principle"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Śiva teaches ga as all visible/invisible mind-and-speech forms, ṇa as mind/speech-free saṃyoga/ayoga; their Brahmans are principles and nirodha. Both letters are Brahman-forms in Gaṇapati name, and Gaṇeśa their lord. Contemplate mind/speech and their beyond as Gaṇeśa and māyā. He illumines five mind-grounds, hence Cintāmaṇi; worship him as yoga and relinquish grounds for peace. Gaṇeśa transcends saṃyoga/ayoga; abandon māyā-born delusion for happiness. All statements are attributed instruction.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-rsabha-ga-na-teaching"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-rsabha-ga-na-teaching",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-rsabha-ga-na-teaching",
+          "locator": "Mudgala2.16.26–36",
+          "paraphrase": "Śiva teaches ga as all visible/invisible mind-and-speech forms, ṇa as mind/speech-free saṃyoga/ayoga; their Brahmans are principles and nirodha. Both letters are Brahman-forms in Gaṇapati name, and Gaṇeśa their lord. Contemplate mind/speech and their beyond as Gaṇeśa and māyā. He illumines five mind-grounds, hence Cintāmaṇi; worship him as yoga and relinquish grounds for peace. Gaṇeśa transcends saṃyoga/ayoga; abandon māyā-born delusion for happiness. All statements are attributed instruction.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud5-event-rsabha-peace-before-appearance",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-rsabha-peace",
+        "sequence": 4,
+        "passage_ids": [
+          "mud5-p-rsabha-peace-before-appearance"
+        ],
+        "participants": [
+          "gp-m-en-siva",
+          "mud5-en-rsabha",
+          "mud-en-vakratunda"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Śiva stops teaching; Ṛṣabha bows and returns forest. Practicing taught yoga he gradually attains peace. He still never abandons Gaṇapati, so Gaṇeśa comes near him. Ṛṣabha prostrates in joy, with tears/gooseflesh and folded hands, hymns. Actual peace precedes divine appearance and later devotion boon.",
+        "outcome": "Ṛṣabha attains peace BEFORE Gaṇeśa appears.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-rsabha-peace-before-appearance"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-rsabha-peace-before-appearance",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-rsabha-peace-before-appearance",
+          "locator": "Mudgala2.16.37–41",
+          "paraphrase": "Śiva stops teaching; Ṛṣabha bows and returns forest. Practicing taught yoga he gradually attains peace. He still never abandons Gaṇapati, so Gaṇeśa comes near him. Ṛṣabha prostrates in joy, with tears/gooseflesh and folded hands, hymns. Actual peace precedes divine appearance and later devotion boon.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud5-event-rsabha-ganesa-hymn",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-rsabha-peace",
+        "sequence": 5,
+        "passage_ids": [
+          "mud5-p-rsabha-ganesa-hymn"
+        ],
+        "participants": [
+          "mud5-en-rsabha",
+          "mud-en-vakratunda",
+          "gp-m-en-siva"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Ṛṣabha hymns Gaṇeśa as Brahman beyond difference/nondifference, formless eternal world-form, infinite, beyond beginning/middle/end, Guṇeśa creator/preserver/destroyer, many-avatar protector of devotees, god/demon forms and worshipped by them, yoga-giver and lord of yogas/Brahmans, all-origin and final survivor, Heramba in nijānanda, Siddhi/Buddhi lord, giver of four aims and Brahman attainment. Vedas and Śiva-led gods cannot fully praise him. Hymn ontology is attributed to Ṛṣabha.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-rsabha-ganesa-hymn"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-rsabha-ganesa-hymn",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-rsabha-ganesa-hymn",
+          "locator": "Mudgala2.16.42–50",
+          "paraphrase": "Ṛṣabha hymns Gaṇeśa as Brahman beyond difference/nondifference, formless eternal world-form, infinite, beyond beginning/middle/end, Guṇeśa creator/preserver/destroyer, many-avatar protector of devotees, god/demon forms and worshipped by them, yoga-giver and lord of yogas/Brahmans, all-origin and final survivor, Heramba in nijānanda, Siddhi/Buddhi lord, giver of four aims and Brahman attainment. Vedas and Śiva-led gods cannot fully praise him. Hymn ontology is attributed to Ṛṣabha.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud5-event-rsabha-devotion-grant",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-rsabha-peace",
+        "sequence": 6,
+        "passage_ids": [
+          "mud5-p-rsabha-devotion-grant"
+        ],
+        "participants": [
+          "mud5-en-rsabha",
+          "mud-en-vakratunda"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Ṛṣabha requests firm unwavering devotion, falls holding Gaṇeśa’s foot and is respectfully raised. Narrator calls him Śiva disciple/Śiva-wise and eternal Viṣṇu. Gaṇeśa promises immovable devotion and peace-giving hymn; whatever wished he grants through reciting/hearing it. God disappears; Ṛṣabha remains peaceful yogin and actually attains Gāṇeśatā. No extra immortality/wife/power request, or substitution of Gāṇeśatā for requested devotion.",
+        "outcome": "Immovable devotion granted; Gaṇeśa disappears; Ṛṣabha attains Gāṇeśatā.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud5-power-rsabha-devotion-boon",
+          "mud5-power-rsabha-hymn-benefits"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-rsabha-devotion-grant"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-rsabha-devotion-grant",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-rsabha-devotion-grant",
+          "locator": "Mudgala2.16.51–56",
+          "paraphrase": "Ṛṣabha requests firm unwavering devotion, falls holding Gaṇeśa’s foot and is respectfully raised. Narrator calls him Śiva disciple/Śiva-wise and eternal Viṣṇu. Gaṇeśa promises immovable devotion and peace-giving hymn; whatever wished he grants through reciting/hearing it. God disappears; Ṛṣabha remains peaceful yogin and actually attains Gāṇeśatā. No extra immortality/wife/power request, or substitution of Gāṇeśatā for requested devotion.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud5-event-rsabha-account-phala",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud5-story-rsabha-peace",
+        "sequence": 7,
+        "passage_ids": [
+          "mud5-p-rsabha-account-phala"
+        ],
+        "participants": [
+          "mud-en-mudgala",
+          "mud-en-daksha",
+          "mud5-en-rsabha",
+          "mud5-en-cosmography-users"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Devoted hearing/reading of Ṛṣabha’s account gives all, Brahman attainment and peace for peaceful minds. Account phala kept separate from hymn grant.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud5-e-rsabha-account-phala"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud5-e-rsabha-account-phala",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud5-p-rsabha-account-phala",
+          "locator": "Mudgala2.16.57–58",
+          "paraphrase": "Devoted hearing/reading of Ṛṣabha’s account gives all, Brahman attainment and peace for peaceful minds. Account phala kept separate from hymn grant.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation5 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gp-m-en-siva",
+      "name": "Śiva / Śambhu / Sadāśiva / Śaṅkara",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-matsara-austerity",
+        "mud-e-divine-refuge",
+        "mud-e-andhaka-envoy",
+        "mud-e-matsara-karma-argument",
+        "mud-e-kailasa-battle",
+        "mud-e-matsara-captures-siva",
+        "mud-e-world-allocation",
+        "mud-e-datta-counsel",
+        "mud-e-vak-manifest",
+        "mud-e-siva-pasupata",
+        "mud-e-sons-fell-siva",
+        "mud-e-following-witness-previews",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-sati-request",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sati-death-rebirth",
+        "rmd2-e-shiva-grief",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-mahat-birth",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-body-worlds",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-daksha",
+      "name": "Dakṣa",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-five-emergence",
+        "mud2-e-field-benefits",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-mudgala",
+      "name": "Mudgala",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "rmd2-e-supremacy-question",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-five-emergence",
+        "mud2-e-field-benefits",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-kailasa",
+      "name": "Kailāsa",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-world-allocation",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-siva-leaves-kashi",
+        "mud3-e-brahma-visnu-pride",
+        "mud5-e-meru-dwellings-layout"
+      ]
+    },
+    {
+      "id": "mud-en-vakratunda",
+      "name": "Vakratunda / Gaṇeśa / Gaṇanāyaka / Vighnapa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "rmd2-e-invocation",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-tattva-boon",
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-tapas",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "rmd2-e-five-request-hymn-fruits",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-cosmography-users",
+      "name": "Readers/hearers or qualified practitioners in Mudgala cosmography benefits",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-rivers-phala"
+      ]
+    },
+    {
+      "id": "mud5-en-rsabha",
+      "name": "Ṛṣabha, Nābhi’s sacrifice-born son",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-rsabha-nabhi-origin",
+        "mud5-e-rsabha-sons-counts"
+      ]
+    },
+    {
+      "id": "mud5-en-siva-ganapatya-disciples",
+      "name": "Gaṇapatya yogins, Śiva’s disciples seen by Ṛṣabha",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-rsabha-siva-search"
+      ]
+    },
+    {
+      "id": "mud5-en-ga-name-principle",
+      "name": "Ga principle in Śiva’s Gaṇapati-name teaching",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-rsabha-ga-na-teaching"
+      ]
+    },
+    {
+      "id": "mud5-en-na-name-principle",
+      "name": "Ṇa principle in Śiva’s Gaṇapati-name teaching",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-rsabha-ga-na-teaching"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "mud5-r-siva-ganapatya-teacher",
+      "subject_id": "mud5-en-siva-ganapatya-disciples",
+      "predicate": "disciples_of",
+      "object_id": "gp-m-en-siva",
+      "evidence_ids": [
+        "mud5-e-rsabha-siva-search"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-siva-ganapatya-teacher",
+      "kinship_kind": "GURU"
+    },
+    {
+      "id": "mud5-r-rsabha-siva-disciple",
+      "subject_id": "mud5-en-rsabha",
+      "predicate": "disciple_of",
+      "object_id": "gp-m-en-siva",
+      "evidence_ids": [
+        "mud5-e-rsabha-santi-request"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-rsabha-siva-disciple",
+      "kinship_kind": "GURU"
+    },
+    {
+      "id": "mud5-r-ga-lord",
+      "subject_id": "mud5-en-ga-name-principle",
+      "predicate": "has_lord",
+      "object_id": "mud-en-vakratunda",
+      "evidence_ids": [
+        "mud5-e-rsabha-ga-na-teaching"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-ga-lord"
+    },
+    {
+      "id": "mud5-r-na-lord",
+      "subject_id": "mud5-en-na-name-principle",
+      "predicate": "has_lord",
+      "object_id": "mud-en-vakratunda",
+      "evidence_ids": [
+        "mud5-e-rsabha-ga-na-teaching"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud5-a-na-lord"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "mud5-power-rsabha-peace-instruction",
+      "type": "POWER",
+      "recipient_id": "mud5-en-rsabha",
+      "grantor_id": "gp-m-en-siva",
+      "worshipped_id": "mud-en-vakratunda",
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud5-e-rsabha-ga-na-teaching"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud5-e-rsabha-ga-na-teaching"
+        ],
+        "grantor_id": [
+          "mud5-e-rsabha-ga-na-teaching"
+        ],
+        "worshipped_id": [
+          "mud5-e-rsabha-ga-na-teaching"
+        ],
+        "mechanism": [
+          "mud5-e-rsabha-ga-na-teaching"
+        ],
+        "granted": [
+          "mud5-e-rsabha-ga-na-teaching"
+        ],
+        "notes": [
+          "mud5-e-rsabha-ga-na-teaching"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Instruction, not deity boon encounter; outcome later 16.38.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Peace/happiness promised as teaching result.",
+      "mechanism": "Worship Gaṇeśa in yoga form; relinquish mind-grounds and māyā-born delusion.",
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud5-power-rsabha-devotion-boon",
+      "type": "BOON",
+      "recipient_id": "mud5-en-rsabha",
+      "grantor_id": "mud-en-vakratunda",
+      "worshipped_id": "mud-en-vakratunda",
+      "later_event_ids": [
+        "mud5-event-rsabha-devotion-grant"
+      ],
+      "evidence_ids": [
+        "mud5-e-rsabha-devotion-grant"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud5-e-rsabha-devotion-grant"
+        ],
+        "grantor_id": [
+          "mud5-e-rsabha-devotion-grant"
+        ],
+        "worshipped_id": [
+          "mud5-e-rsabha-devotion-grant"
+        ],
+        "requested": [
+          "mud5-e-rsabha-devotion-grant"
+        ],
+        "granted": [
+          "mud5-e-rsabha-devotion-grant"
+        ],
+        "austerity_or_circumstances": [
+          "mud5-e-rsabha-devotion-grant"
+        ],
+        "later_event_ids": [
+          "mud5-e-rsabha-devotion-grant"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": "Continued devotion after attaining peace; hymn, prostration, holding deity foot.",
+      "requested": "Firm unwavering devotion to Gaṇeśa(51).",
+      "granted": "Immovable devotion(54).",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud5-power-rsabha-hymn-benefits",
+      "type": "POWER",
+      "recipient_id": "mud5-en-cosmography-users",
+      "grantor_id": "mud-en-vakratunda",
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud5-e-rsabha-devotion-grant"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud5-e-rsabha-devotion-grant"
+        ],
+        "grantor_id": [
+          "mud5-e-rsabha-devotion-grant"
+        ],
+        "trigger": [
+          "mud5-e-rsabha-devotion-grant"
+        ],
+        "granted": [
+          "mud5-e-rsabha-devotion-grant"
+        ],
+        "notes": [
+          "mud5-e-rsabha-devotion-grant"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Peace-giving 54; wished benefits by recitation/hearing 55; distinct from Ṛṣabha devotion request.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Peace and whatever wished.",
+      "mechanism": null,
+      "trigger": "Recite/hear Ṛṣabha’s hymn.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud5-power-rsabha-account-phala",
+      "type": "POWER",
+      "recipient_id": "mud5-en-cosmography-users",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud5-e-rsabha-account-phala"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud5-e-rsabha-account-phala"
+        ],
+        "trigger": [
+          "mud5-e-rsabha-account-phala"
+        ],
+        "granted": [
+          "mud5-e-rsabha-account-phala"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "All/Brahman attainment; peace for peaceful minds.",
+      "mechanism": null,
+      "trigger": "Devoted hearing/reading Ṛṣabha account.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "mud5-a-siva-ganapatya-teacher",
+      "subject_id": "mud5-en-siva-ganapatya-disciples",
+      "predicate": "disciples_of",
+      "object_id": "gp-m-en-siva",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-rsabha-siva-search"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-rsabha-first-yoga",
+      "subject_id": "mud5-en-rsabha",
+      "predicate": "prior_yoga_sequence",
+      "object_id": null,
+      "value": "Forest tapas/avadhūta; jada/unmatta/piśāca→sahaja; Śiva following/teaching; independence defect and peace loss",
+      "evidence_ids": [
+        "mud5-e-rsabha-siva-search"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-rsabha-siva-disciple",
+      "subject_id": "mud5-en-rsabha",
+      "predicate": "disciple_of",
+      "object_id": "gp-m-en-siva",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-rsabha-santi-request"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-rsabha-santi-request",
+      "subject_id": "mud5-en-rsabha",
+      "predicate": "requests_teaching",
+      "object_id": null,
+      "value": "Full peace-giving śāntiyoga; servant/disciple after sahaja independence destroyed peace",
+      "evidence_ids": [
+        "mud5-e-rsabha-santi-request"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-siva-samaveda-attribution",
+      "subject_id": "gp-m-en-siva",
+      "predicate": "attributes_following_teaching_to",
+      "object_id": null,
+      "value": "Sāmaveda secret; external Sāmaveda locator not supplied",
+      "evidence_ids": [
+        "mud5-e-rsabha-santi-request"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-ga-doctrine",
+      "subject_id": "mud5-en-ga-name-principle",
+      "predicate": "attributed_meaning",
+      "object_id": null,
+      "value": "Visible/invisible mind-and-speech forms; principle Brahmans",
+      "evidence_ids": [
+        "mud5-e-rsabha-ga-na-teaching"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-na-doctrine",
+      "subject_id": "mud5-en-na-name-principle",
+      "predicate": "attributed_meaning",
+      "object_id": null,
+      "value": "Mind/speech-free saṃyoga/ayoga; nirodha Brahmans",
+      "evidence_ids": [
+        "mud5-e-rsabha-ga-na-teaching"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-ga-lord",
+      "subject_id": "mud5-en-ga-name-principle",
+      "predicate": "has_lord",
+      "object_id": "mud-en-vakratunda",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-rsabha-ga-na-teaching"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-na-lord",
+      "subject_id": "mud5-en-na-name-principle",
+      "predicate": "has_lord",
+      "object_id": "mud-en-vakratunda",
+      "value": null,
+      "evidence_ids": [
+        "mud5-e-rsabha-ga-na-teaching"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-rsabha-cintamani-teaching",
+      "subject_id": "mud-en-vakratunda",
+      "predicate": "attributed_name_explanation",
+      "object_id": null,
+      "value": "Cintāmaṇi because illuminating 5 mind-grounds; transcends saṃyoga/ayoga",
+      "evidence_ids": [
+        "mud5-e-rsabha-ga-na-teaching"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-rsabha-attained-peace",
+      "subject_id": "mud5-en-rsabha",
+      "predicate": "narrated_outcome",
+      "object_id": null,
+      "value": "Practices Śiva’s yoga→gradual peace(38)→continuedGaṇeśa devotion→appearance(39)",
+      "evidence_ids": [
+        "mud5-e-rsabha-peace-before-appearance"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-rsabha-hymn-ontology",
+      "subject_id": "mud-en-vakratunda",
+      "predicate": "rsabha_hymn_attribution",
+      "object_id": null,
+      "value": "Brahman/world-form; creator/preserver/destroyer; devotee-protecting avatars; yoga lord/giver; final survivor; Heramba, nijānanda, Siddhi/Buddhi lord; four aims/Brahman giver",
+      "evidence_ids": [
+        "mud5-e-rsabha-ganesa-hymn"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-rsabha-siva-visnu-attribution",
+      "subject_id": "mud5-en-rsabha",
+      "predicate": "narrator_designations",
+      "object_id": null,
+      "value": "Śiva disciple/Śiva-wise, eternal Viṣṇu at 53; source ontology retained without merging human manifestation actor with generic Viṣṇu",
+      "evidence_ids": [
+        "mud5-e-rsabha-devotion-grant"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud5-a-rsabha-ganesata-outcome",
+      "subject_id": "mud5-en-rsabha",
+      "predicate": "narrated_outcome",
+      "object_id": null,
+      "value": "After deity disappears, peaceful yogin attains Gāṇeśatā(56)",
+      "evidence_ids": [
+        "mud5-e-rsabha-devotion-grant"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "linked_entities": [
+    {
+      "id": "gp-m-en-siva",
+      "name": "Śiva / Śambhu / Sadāśiva / Śaṅkara",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-matsara-austerity",
+        "mud-e-divine-refuge",
+        "mud-e-andhaka-envoy",
+        "mud-e-matsara-karma-argument",
+        "mud-e-kailasa-battle",
+        "mud-e-matsara-captures-siva",
+        "mud-e-world-allocation",
+        "mud-e-datta-counsel",
+        "mud-e-vak-manifest",
+        "mud-e-siva-pasupata",
+        "mud-e-sons-fell-siva",
+        "mud-e-following-witness-previews",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-sati-request",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sati-death-rebirth",
+        "rmd2-e-shiva-grief",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-mahat-birth",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-body-worlds",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-daksha",
+      "name": "Dakṣa",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-five-emergence",
+        "mud2-e-field-benefits",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-mudgala",
+      "name": "Mudgala",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-coronation",
+        "rmd2-e-supremacy-question",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-five-emergence",
+        "mud2-e-field-benefits",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud-en-kailasa",
+      "name": "Kailāsa",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-world-allocation",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-siva-leaves-kashi",
+        "mud3-e-brahma-visnu-pride",
+        "mud5-e-meru-dwellings-layout"
+      ]
+    },
+    {
+      "id": "mud-en-vakratunda",
+      "name": "Vakratunda / Gaṇeśa / Gaṇanāyaka / Vighnapa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "rmd2-e-invocation",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-tattva-boon",
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-tapas",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "rmd2-e-five-request-hymn-fruits",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement"
+      ]
+    },
+    {
+      "id": "mud5-en-cosmography-users",
+      "name": "Readers/hearers or qualified practitioners in Mudgala cosmography benefits",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-bharata-rivers-phala"
+      ]
+    },
+    {
+      "id": "mud5-en-rsabha",
+      "name": "Ṛṣabha, Nābhi’s sacrifice-born son",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-rsabha-nabhi-origin",
+        "mud5-e-rsabha-sons-counts"
+      ]
+    },
+    {
+      "id": "mud5-en-siva-ganapatya-disciples",
+      "name": "Gaṇapatya yogins, Śiva’s disciples seen by Ṛṣabha",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-rsabha-siva-search"
+      ]
+    },
+    {
+      "id": "mud5-en-ga-name-principle",
+      "name": "Ga principle in Śiva’s Gaṇapati-name teaching",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-rsabha-ga-na-teaching"
+      ]
+    },
+    {
+      "id": "mud5-en-na-name-principle",
+      "name": "Ṇa principle in Śiva’s Gaṇapati-name teaching",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-rsabha-ga-na-teaching"
+      ]
+    }
+  ],
+  "linked_entity_note": "Includes event participants and related claim endpoints. Entity metadata can cite other retained source passages; the complete graph carries those references."
+}

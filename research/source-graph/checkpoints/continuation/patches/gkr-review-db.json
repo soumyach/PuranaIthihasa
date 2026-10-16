@@ -1,0 +1,66 @@
+{
+  "reviewer": "Krīḍā continuation subagent, independent second-author reading",
+  "target": "work/continuation/patches/dbx.json",
+  "scope": "Devī Bhāgavata10.13.33–127, hosted Vijñanananda body read in full",
+  "source_url": "https://www.wisdomlib.org/hinduism/book/devi-bhagavata-purana/d/doc57377.html",
+  "does_not_modify_reviewed_patch": true,
+  "checks": [
+    {
+      "claim": "Aruṇa family identity",
+      "result": "SUPPORTED_SCOPE_CAUTION",
+      "locator": "10.13.33–41",
+      "finding": "Aruṇa identified as powerful Daitya in nether Daitya city. No parent, spouse or child genealogy in33–127; do not merge with Sun charioteer Aruṇa. Source-level reviewed graph makes no such merge."
+    },
+    {
+      "claim": "Tapas and revised Brahmā boon",
+      "result": "SUPPORTED",
+      "locator": "10.13.33–59",
+      "finding": "Four successive10000year stages: fallen dry leaves, water drops, air, nothing; Gāyatrī repetition. Brahmā refuses immortality, grants revised war/weapon/man/woman/biped/quadruped/combination exclusion and conquest capacity. English combination wording preserved pending Sanskrit."
+    },
+    {
+      "claim": "Gāyatrī cessation strategy",
+      "result": "SUPPORTED",
+      "locator": "10.13.60–77",
+      "finding": "Heavenly voice links death to abandoning Gāyatrī; Indra sends Bṛhaspati; shared-devotion argument causes abandonment through pride and loss of holy energy."
+    },
+    {
+      "claim": "Bhrāmarī appearance, swarm, devotion grant",
+      "result": "SUPPORTED",
+      "locator": "10.13.78–127",
+      "finding": "Appearance with bees; release after gods report crisis; further swarms join, prevent combat/weapons/speech, tear chests and kill principal Daityas, then return. Goddess grants separate unspecified boons plus express devotion request. No negotiated surrender."
+    }
+  ],
+  "corrections": [
+    {
+      "target_ids": [
+        "dbx-event-aruna-conquest"
+      ],
+      "severity": "LOCATOR",
+      "finding": "Troop gathering, envoy and Indra/Brahmā/Viṣṇu approach occur within50–59, prior to60–77. Add dbx-p-aruna-tapas/dbx-e-aruna-tapas to this event supporting its opening and council transition; preserve strategy evidence for office seizure."
+    },
+    {
+      "target_ids": [
+        "dbx-event-aruna-gayatri-loss"
+      ],
+      "severity": "LOCATOR",
+      "finding": "Bṛhaspati return/report is78–85, not60–77. Add appearance passage/evidence and extend appearance evidence paraphrase to mention report, or split report into next event. Source says a long interval passed, so replace interval unspecified with long interval of unspecified duration."
+    },
+    {
+      "target_ids": [
+        "dbx-power-bee-swarm",
+        "dbx-event-bhramari-defeat",
+        "dbx-e-bhramari-outcome"
+      ],
+      "severity": "LOCATOR",
+      "finding": "Gods describing boon/crisis and initial goddess release occurs97–109. Add dbx-e-bhramari-appearance to swarm circumstances and defeat event; field_evidence.austerity_or_circumstances should cite appearance evidence.110–120 supports swarms joining/killing/return, not initial gods report."
+    },
+    {
+      "target_ids": [
+        "dbx-power-aruna"
+      ],
+      "severity": "COMPLETENESS",
+      "finding": "Read later narrative supplies operative counter: stopping Gāyatrī renders killable and swarm destroys forces. Consider explicit counter with dbx-e-aruna-strategy and dbx-e-bhramari-outcome, without inventing six-leg logical exception from English witness. Fill later_event_ids with loss/defeat events, evidence accordingly."
+    }
+  ],
+  "limitations": "Independent reread of same hosted English witness; not Sanskrit or independent printed-witness verification. Paragraph verse ranges retained without invented per-verse segmentation."
+}

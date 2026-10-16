@@ -1,0 +1,779 @@
+{
+  "checkpoint": "continuation5",
+  "completed_arc_id": "gkr6-story-sage-vision54",
+  "graph_sha256": "c4af351fd8e2c786669610e2e9d56e1bb7f3e9b906dede60d84b0ae62ef3d7db",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checks complete; independent review selective. All declared interpretation gaps remain explicit.",
+  "story": {
+    "id": "gkr6-story-sage-vision54",
+    "title": "Sanaka/Sanandana’s universal vision and shrine report in54",
+    "source_id": "gp-src-ganesha",
+    "witness_id": "gp-wit-sd-krida",
+    "scope": "Krīḍā54.39–64.",
+    "event_ids": [
+      "gkr6-event-sage-hunger-search",
+      "gkr6-event-sage-lion-vision",
+      "gkr6-event-sage-install-return"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Entire stated chapter bodies read; narration, significant dialogue, all named actors/family, worship/requests/grants, weapons/powers/counters and aftermath extracted.",
+    "missing_sections": [],
+    "editorial_notes": "Bounded scene completion only; larger Vināyaka cycle incomplete. Independent print/Sanskrit expert audit pending."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "gkr6-event-sage-hunger-search",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr6-story-sage-vision54",
+        "sequence": 4,
+        "passage_ids": [
+          "gkr6-p-054"
+        ],
+        "participants": [
+          "gkr-en-sanaka",
+          "gkr2-en-sanandana",
+          "gkr-en-vinayaka",
+          "gkr2-en-sukla"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Sanaka/Sanandana find the deity everywhere, cannot find a pure meal place and leave hungry. Meditation reveals Vināyaka within, around and in each other.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr6-e-sanaka-sanandana-house-search54"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr6-e-sanaka-sanandana-house-search54",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr6-p-054",
+          "locator": "Krīḍā 54.39–48; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "Sanaka and Sanandana arrive after bathing, seeking food in the festive Vināyaka-filled city. In every house they see him eating, having eaten, sleeping, playing, reciting and teaching, and leave outside again. They find no pure eating place, try Śukla for hospitality, but see Kaśyapa’s son there too. Hungry and downcast, they leave the city; the divine form appears within the heart and in every direction, with eyes shut or open. After meditation they even see each other in Vināyaka’s form.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation5 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr6-event-sage-lion-vision",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr6-story-sage-vision54",
+        "sequence": 5,
+        "passage_ids": [
+          "gkr6-p-054"
+        ],
+        "participants": [
+          "gkr-en-sanaka",
+          "gkr2-en-sanandana",
+          "gkr-en-vinayaka",
+          "gkr6-en-lion54",
+          "gkr-en-siddhi",
+          "gkr-en-buddhi"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "The ten-armed lion-mounted vision appears. The pair bow and praise, saying their wish is already fulfilled; no fresh personal grant is spoken.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr6-e-lion-tenarm-vision54"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr6-e-lion-tenarm-vision54",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr6-p-054",
+          "locator": "Krīḍā 54.49–56; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "The all-pervading, all-formed Lord appears before the sages with TEN arms, riding a LION, with Siddhi and Buddhi. Crown, earrings, armlets, fragrance, garland, serpent, crescent, musk mark, divine clothes and radiant tusk adorn him. He is gentle to good people and difficult for wicked people to behold. The sages abandon confusion, bow and hymn eternal nondual Brahman, five elements, all forms and countless universes in his hair pores. They say he knew and fulfilled their wish and acknowledge the Kaśyapa-child manifestation for relieving the Earth’s burden. No new spoken personal request or grant follows this hymn.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation5 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gkr6-event-sage-install-return",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-krida",
+        "supporting_witness_ids": [
+          "gp-wit-sd-krida"
+        ],
+        "story_id": "gkr6-story-sage-vision54",
+        "sequence": 6,
+        "passage_ids": [
+          "gkr6-p-054"
+        ],
+        "participants": [
+          "gkr-en-sanaka",
+          "gkr2-en-sanandana",
+          "gkr6-en-image54",
+          "gkr6-en-temple54",
+          "gkr6-en-ganesatirtha54",
+          "gkr6-en-account-hearers54"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "After disappearance, the relieved pair install the as-seen image and name the shrine and lake. Visitors worship and depart; the sages return, followed by conditional account-hearing benefits.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gkr6-e-sages-image-shrine-installation54",
+          "gkr6-e-sages-return-account-benefits54"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gkr6-e-sages-image-shrine-installation54",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr6-p-054",
+          "locator": "Krīḍā 54.57–62; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "The form disappears while they praise. Relieved of fatigue, the pair build a great temple and an image as seen, install it on an auspicious day amid sacred recitation/music and name it printed vararado’yaṃ vināyakaḥ. They name the excellent lake Gaṇeśatīrtha. Bathing, gifts and Gaṇeśa worship there remove old sin and grant all desires. Sages, gods and direction-lords arrive, worship, praise, bow and return. The chapter then says the two had come to see the child’s glory.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation5 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        },
+        {
+          "id": "gkr6-e-sages-return-account-benefits54",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-krida",
+          "passage_id": "gkr6-p-054",
+          "locator": "Krīḍā 54.63–64; https://sanskritdocuments.org/doc_purana/gaNeshapurANam2.html",
+          "paraphrase": "Having seen the glory, the satisfied sages return to their own place. Devoted hearing of the child’s account grants all desires, Brahman-state after death, freedom from child-spirit affliction and victory everywhere. These are attributed account-hearing effects, distinct from the pair’s narrated vision and return.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Krīḍā continuation5 author, direct digital body reading",
+          "verification_notes": "Author witness-level Sanskrit reading checked; independent Sanskrit expert/printed-edition verification pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gkr-en-vinayaka",
+      "name": "Vināyaka (Kṛta manifestation)",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [
+        {
+          "name": "Mahotkaṭa",
+          "evidence_ids": [
+            "gkr-e-vinayaka-birth",
+            "gkr-e-mahotkata-rites"
+          ]
+        },
+        {
+          "name": "Kaśyapanandana",
+          "evidence_ids": [
+            "gkr-e-vinayaka-birth",
+            "gkr-e-mahotkata-rites"
+          ]
+        },
+        {
+          "name": "Brahmaṇaspati",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-one"
+          ]
+        },
+        {
+          "name": "Bhārabhūti",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-one"
+          ]
+        },
+        {
+          "name": "Surānanda",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-one"
+          ]
+        },
+        {
+          "name": "Sarvapriya",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-one"
+          ]
+        },
+        {
+          "name": "Virūpākṣa",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-one"
+          ]
+        },
+        {
+          "name": "Bhālacandra",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-one"
+          ]
+        },
+        {
+          "name": "Paraśuhasta",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-one"
+          ]
+        },
+        {
+          "name": "Siṃhavāhana",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-one"
+          ]
+        },
+        {
+          "name": "Mālādhara",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-two"
+          ]
+        },
+        {
+          "name": "Phaṇirājāsana",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-two"
+          ]
+        },
+        {
+          "name": "Dhanañjaya",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-two"
+          ]
+        },
+        {
+          "name": "Prabhañjana",
+          "evidence_ids": [
+            "gkr-e-assembly-gifts-two"
+          ]
+        },
+        {
+          "name": "Gajānana (Bhṛśuṇḍī encounter)",
+          "evidence_ids": [
+            "gkr2-e-second-embassy",
+            "gkr2-e-devotional-form"
+          ]
+        },
+        {
+          "name": "Āśāpūraka",
+          "evidence_ids": [
+            "gkr2-e-bhrusundi-boons"
+          ]
+        },
+        {
+          "name": "Dīnanātha",
+          "evidence_ids": [
+            "gkr2-e-poor-house-meal"
+          ]
+        },
+        {
+          "name": "Varada Vināyaka",
+          "evidence_ids": [
+            "gkr2-e-sages-knowledge-shrine"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "gkr-e-ages",
+        "gkr-e-aditi-boon",
+        "gkr-e-vinayaka-birth",
+        "gkr-e-mahotkata-rites",
+        "gkr-e-assembly-gifts-one",
+        "gkr-e-assembly-gifts-two",
+        "gkr-e-indra-gifts-boon",
+        "gkr2-e-seventh-year",
+        "gkr2-e-wedding-commission",
+        "gkr2-e-aditi-entrustment",
+        "gkr2-e-sun-weapon-seized",
+        "gkr2-e-sons-threat-king",
+        "gkr2-e-sons-breath-return",
+        "gkr2-e-thousand-host",
+        "gkr2-e-kasi-entry",
+        "gkr2-e-child-demons",
+        "gkr2-e-whirlwinds",
+        "gkr2-e-stone-demon",
+        "gkr2-e-palace-hospitality",
+        "gkr2-e-dharmadatta-invites",
+        "gkr2-e-donkey-demons",
+        "gkr2-e-elephant-demon",
+        "gkr2-e-dharmadatta-offering",
+        "gkr2-e-jrmbha-poison",
+        "gkr2-e-dharmadatta-return",
+        "gkr2-e-wedding-postponement",
+        "gkr2-e-king-flight",
+        "gkr2-e-city-rescue",
+        "gkr2-e-city-gratitude",
+        "gkr2-e-remote-offering",
+        "gkr2-e-first-embassy",
+        "gkr2-e-devotee-refusal",
+        "gkr2-e-first-return",
+        "gkr2-e-second-embassy",
+        "gkr2-e-devotional-form",
+        "gkr2-e-manifestation-purpose",
+        "gkr2-e-bhrusundi-boons",
+        "gkr2-e-meeting-aftermath",
+        "gkr2-e-astrologer-entry",
+        "gkr2-e-astrologer-advice",
+        "gkr2-e-astrologer-child-trap",
+        "gkr2-e-ring-death",
+        "gkr2-e-well-conspiracy",
+        "gkr2-e-well-struggle-rescue",
+        "gkr2-e-well-mutual-death",
+        "gkr2-e-well-aftermath",
+        "gkr2-e-trio-plan",
+        "gkr2-e-banyan-bird",
+        "gkr2-e-bird-defeat-trio",
+        "gkr2-e-trio-aftermath",
+        "gkr2-e-false-aditi-reception",
+        "gkr2-e-poisoned-laddu-weight",
+        "gkr2-e-bhramari-revealed",
+        "gkr2-e-bhramari-hymn-benefit",
+        "gkr2-e-citizen-invitation",
+        "gkr2-e-visit-assent",
+        "gkr2-e-sages-visit-judge",
+        "gkr2-e-poor-house-meal",
+        "gkr2-e-sukla-boon",
+        "gkr2-e-citizens-disappointment",
+        "gkr2-e-many-households",
+        "gkr2-e-sages-universal-vision",
+        "gkr2-e-sages-knowledge-shrine",
+        "gkr2-e-shrine-and-bhakti",
+        "gkr5-e-mudgala-first-realm-prediction",
+        "gkr5-e-king-separation-recap",
+        "gkr5-e-realm-lotus-bed-attendants",
+        "gkr5-e-pramoda-amoda-dispatch",
+        "gkr5-e-king-farewell-bodily-departure",
+        "gkr5-e-reunion-lotus-bed-attendants53",
+        "gkr5-e-king-vinayaka-reunion",
+        "gkr5-e-lord-recalls-royal-house-and-mudgala-dispatch",
+        "gkr5-e-king-reunion-hymn",
+        "gkr5-e-king-no-rebirth-request-grant",
+        "gkr5-e-king-hymn-transmission-benefits",
+        "gkr6-e-citizens-meal-requests54",
+        "gkr6-e-deity-and-king-many-house-visits54",
+        "gkr6-e-king-sees-own-many-house-forms54",
+        "gkr6-e-sanaka-sanandana-house-search54",
+        "gkr6-e-lion-tenarm-vision54",
+        "gkr6-e-sages-image-shrine-installation54",
+        "gkr6-e-sages-return-account-benefits54",
+        "gkr6-e-king-horse-search-confrontation55",
+        "gkr6-e-king-meditative-form-restored55",
+        "gkr6-e-sukla-silent-wealth-gift55",
+        "gkr6-e-sukla-wife-wealth-discovery55",
+        "gkr6-e-envoys-lightning-attack55",
+        "gkr6-e-envoys-confession-five-fathers55",
+        "gkr6-e-envoys-abhaya-release55",
+        "gkr6-e-envoys-earlier-demon-recap56-first",
+        "gkr6-e-envoys-earlier-demon-recap56-second",
+        "gkr6-e-envoys-house-meal-report56",
+        "gkr6-e-royal-alarm-arms57",
+        "gkr6-e-vinayaka-roar-siddhi-army58",
+        "gkr6-e-created-leader-food-head-order58",
+        "gkr6-e-kalapurusa-rest-request-reabsorption58",
+        "gkr6-e-brahma-created-leader-explanation59",
+        "gkr6-e-king-ministersons-narantaka-interior-cosmos59",
+        "gkr6-e-king-head-touch-knowledge-remaya59",
+        "gkr6-e-king-amba-restored-population59",
+        "gkr6-e-narantaka-resolve-boasts60",
+        "gkr6-e-king-warning-boon-pride60",
+        "gkr6-e-axe-mountains-shapeshift-wrestling60",
+        "gkr6-e-tree-mountain-counters-and-king-false-death60",
+        "gkr6-e-pinaka-arrows-appearance-and-arm-cuts60",
+        "gkr6-e-narantaka-leg-severance-regrowth61",
+        "gkr6-e-narantaka-head-arrow-regrowth61",
+        "gkr6-e-narantaka-many-heads-axe61",
+        "gkr6-e-narantaka-day-night-identity-delusion61",
+        "gkr6-e-virat-toenail-narantaka-death61",
+        "gkr6-e-earth-half-burden-after-narantaka61",
+        "gkr6-e-citizen-devotion-nonseparation-request61",
+        "gkr6-e-parents-kasi-dhumraksa-recap62",
+        "gkr6-e-king-devantaka-alarm-prayer63",
+        "gkr6-e-siddhi-remembers-eight-powers63"
+      ]
+    },
+    {
+      "id": "gkr-en-siddhi",
+      "name": "Siddhi attending Vināyaka",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr-e-aditi-tapas",
+        "gkr2-e-dharmadatta-offering",
+        "gkr2-e-dharmadatta-return",
+        "gkr2-e-devotional-form",
+        "gkr2-e-sages-universal-vision",
+        "gkr4-e-vamana-guru-tapas",
+        "gkr4-e-goddesses-worship-vision",
+        "gkr5-e-realm-introduction49",
+        "gkr5-e-realm-lotus-bed-attendants",
+        "gkr5-e-reunion-lotus-bed-attendants53",
+        "gkr6-e-lion-tenarm-vision54",
+        "gkr6-e-vinayaka-roar-siddhi-army58",
+        "gkr6-e-king-devantaka-alarm-prayer63",
+        "gkr6-e-siddhi-remembers-eight-powers63"
+      ]
+    },
+    {
+      "id": "gkr-en-buddhi",
+      "name": "Buddhi attending Vināyaka",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr-e-aditi-tapas",
+        "gkr2-e-dharmadatta-offering",
+        "gkr2-e-dharmadatta-return",
+        "gkr2-e-devotional-form",
+        "gkr2-e-sages-universal-vision",
+        "gkr4-e-vamana-guru-tapas",
+        "gkr4-e-goddesses-worship-vision",
+        "gkr5-e-realm-introduction49",
+        "gkr5-e-realm-lotus-bed-attendants",
+        "gkr5-e-reunion-lotus-bed-attendants53",
+        "gkr6-e-lion-tenarm-vision54",
+        "gkr6-e-king-devantaka-alarm-prayer63"
+      ]
+    },
+    {
+      "id": "gkr-en-sanaka",
+      "name": "Sanaka in Gītā teaching",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr-e-gita8-response",
+        "gkr2-e-sages-visit-judge",
+        "gkr2-e-sages-universal-vision",
+        "gkr2-e-sages-knowledge-shrine",
+        "gkr6-e-sanaka-sanandana-house-search54",
+        "gkr6-e-lion-tenarm-vision54",
+        "gkr6-e-sages-image-shrine-installation54",
+        "gkr6-e-sages-return-account-benefits54"
+      ]
+    },
+    {
+      "id": "gkr2-en-sukla",
+      "name": "Śukla, poor Vedic householder",
+      "type": "DEVOTEE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr2-e-poor-house-preparation",
+        "gkr2-e-poor-house-meal",
+        "gkr2-e-sukla-boon",
+        "gkr2-e-leaf-devotion-recap",
+        "gkr5-e-mudgala-first-realm-prediction",
+        "gkr5-e-king-separation-recap",
+        "gkr5-e-return-to-sukla-chronology-frame",
+        "gkr6-e-citizens-meal-requests54",
+        "gkr6-e-sanaka-sanandana-house-search54",
+        "gkr6-e-sukla-silent-wealth-gift55",
+        "gkr6-e-sukla-wife-wealth-discovery55"
+      ]
+    },
+    {
+      "id": "gkr2-en-sanandana",
+      "name": "Sanandana",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr2-e-sages-visit-judge",
+        "gkr2-e-sages-knowledge-shrine",
+        "gkr6-e-sanaka-sanandana-house-search54",
+        "gkr6-e-lion-tenarm-vision54",
+        "gkr6-e-sages-image-shrine-installation54",
+        "gkr6-e-sages-return-account-benefits54"
+      ]
+    },
+    {
+      "id": "gkr6-en-lion54",
+      "name": "Lion mount in the Sanaka/Sanandana vision54",
+      "type": "VAHANA",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr6-e-lion-tenarm-vision54"
+      ]
+    },
+    {
+      "id": "gkr6-en-image54",
+      "name": "Sanaka/Sanandana’s as-seen Vināyaka image in54",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr6-e-sages-image-shrine-installation54"
+      ],
+      "notes": "Parallel25 image account retained; exact physical identity not imposed."
+    },
+    {
+      "id": "gkr6-en-temple54",
+      "name": "Sanaka/Sanandana temple reported in54",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr6-e-sages-image-shrine-installation54"
+      ]
+    },
+    {
+      "id": "gkr6-en-ganesatirtha54",
+      "name": "Gaṇeśatīrtha, lake named in54",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr6-e-sages-image-shrine-installation54"
+      ],
+      "notes": "Not silently substituted by25 Gaṇeśakuṇḍa name."
+    },
+    {
+      "id": "gkr6-en-account-hearers54",
+      "name": "Devoted hearers of the child’s54 account",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr6-e-sages-return-account-benefits54"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "gkr6-rel-sanaka-installs54",
+      "subject_id": "gkr-en-sanaka",
+      "predicate": "installs",
+      "object_id": "gkr6-en-image54",
+      "evidence_ids": [
+        "gkr6-e-sages-image-shrine-installation54"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr6-ass-sanaka-installs54"
+    },
+    {
+      "id": "gkr6-rel-sanandana-installs54",
+      "subject_id": "gkr2-en-sanandana",
+      "predicate": "installs",
+      "object_id": "gkr6-en-image54",
+      "evidence_ids": [
+        "gkr6-e-sages-image-shrine-installation54"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr6-ass-sanandana-installs54"
+    },
+    {
+      "id": "gkr6-rel-temple-image54",
+      "subject_id": "gkr6-en-image54",
+      "predicate": "installed_at",
+      "object_id": "gkr6-en-temple54",
+      "evidence_ids": [
+        "gkr6-e-sages-image-shrine-installation54"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr6-ass-temple-image54"
+    },
+    {
+      "id": "gkr6-rel-vision-lion54",
+      "subject_id": "gkr-en-vinayaka",
+      "predicate": "rides_in_vision",
+      "object_id": "gkr6-en-lion54",
+      "evidence_ids": [
+        "gkr6-e-lion-tenarm-vision54"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gkr6-ass-vision-lion54"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "gkr6-power-pair-universal-vision54",
+      "type": "POWER",
+      "recipient_id": "gkr2-en-sage-pair",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr6-e-sanaka-sanandana-house-search54",
+        "gkr6-e-lion-tenarm-vision54",
+        "gkr6-e-sages-image-shrine-installation54"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "Sages’ declaration of fulfilled wish; no new explicit personal boon-grant speech.",
+      "motive": null,
+      "austerity_or_circumstances": "Hungry search, no pure meal place, departure and meditation.",
+      "requested": null,
+      "granted": "Universal and mutual Vināyaka vision, fulfilled desired sight and relief from fatigue.",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [
+        "gkr6-event-sage-hunger-search",
+        "gkr6-event-sage-lion-vision",
+        "gkr6-event-sage-install-return"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr6-e-sanaka-sanandana-house-search54",
+          "gkr6-e-lion-tenarm-vision54",
+          "gkr6-e-sages-image-shrine-installation54"
+        ],
+        "austerity_or_circumstances": [
+          "gkr6-e-sanaka-sanandana-house-search54"
+        ],
+        "granted": [
+          "gkr6-e-sanaka-sanandana-house-search54",
+          "gkr6-e-lion-tenarm-vision54",
+          "gkr6-e-sages-image-shrine-installation54"
+        ],
+        "later_event_ids": [
+          "gkr6-e-sanaka-sanandana-house-search54",
+          "gkr6-e-lion-tenarm-vision54",
+          "gkr6-e-sages-image-shrine-installation54"
+        ]
+      }
+    },
+    {
+      "id": "gkr6-power-shrine-effects54",
+      "type": "POWER",
+      "recipient_id": "gkr6-en-site-users54",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr6-e-sages-image-shrine-installation54"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "Unstated terms remain null; no later counter inferred.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "All desires and removal of old sin.",
+      "mechanism": null,
+      "trigger": "Bathing, giving and Gaṇeśa worship at the described shrine.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr6-e-sages-image-shrine-installation54"
+        ],
+        "granted": [
+          "gkr6-e-sages-image-shrine-installation54"
+        ],
+        "trigger": [
+          "gkr6-e-sages-image-shrine-installation54"
+        ]
+      }
+    },
+    {
+      "id": "gkr6-power-account-benefits54",
+      "type": "POWER",
+      "recipient_id": "gkr6-en-account-hearers54",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "evidence_ids": [
+        "gkr6-e-sages-return-account-benefits54"
+      ],
+      "verification_status": "VERIFIED",
+      "notes": "Attributed hearing doctrine separate from the pair’s actual events.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "All desires, Brahman-state after death, no child-spirit affliction and victory everywhere.",
+      "mechanism": null,
+      "trigger": "Devoted hearing of the child’s account.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "field_evidence": {
+        "recipient_id": [
+          "gkr6-e-sages-return-account-benefits54"
+        ],
+        "granted": [
+          "gkr6-e-sages-return-account-benefits54"
+        ],
+        "trigger": [
+          "gkr6-e-sages-return-account-benefits54"
+        ]
+      }
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "gkr6-ass-sanaka-installs54",
+      "subject_id": "gkr-en-sanaka",
+      "predicate": "installs",
+      "object_id": "gkr6-en-image54",
+      "value": null,
+      "evidence_ids": [
+        "gkr6-e-sages-image-shrine-installation54"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr6-ass-sanandana-installs54",
+      "subject_id": "gkr2-en-sanandana",
+      "predicate": "installs",
+      "object_id": "gkr6-en-image54",
+      "value": null,
+      "evidence_ids": [
+        "gkr6-e-sages-image-shrine-installation54"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr6-ass-temple-image54",
+      "subject_id": "gkr6-en-image54",
+      "predicate": "installed_at",
+      "object_id": "gkr6-en-temple54",
+      "value": null,
+      "evidence_ids": [
+        "gkr6-e-sages-image-shrine-installation54"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gkr6-ass-vision-lion54",
+      "subject_id": "gkr-en-vinayaka",
+      "predicate": "rides_in_vision",
+      "object_id": "gkr6-en-lion54",
+      "value": null,
+      "evidence_ids": [
+        "gkr6-e-lion-tenarm-vision54"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ]
+}

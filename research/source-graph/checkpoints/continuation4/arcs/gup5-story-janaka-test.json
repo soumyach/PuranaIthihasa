@@ -1,0 +1,1978 @@
+{
+  "checkpoint": "continuation4",
+  "completed_arc_id": "gup5-story-janaka-test",
+  "graph_sha256": "d3e53f6fb2ee6852a3b4d4e6ee677a24abac85e4ede403205172dfa77aa4306a",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checks complete; independent review selective. All declared interpretation gaps remain explicit.",
+  "story": {
+    "id": "gup5-story-janaka-test",
+    "title": "Janaka’s feeding test and the poor couple’s devotional gift",
+    "source_id": "gp-src-ganesha",
+    "witness_id": "gp-wit-sd-upasana",
+    "scope": "65.1–45;66.1–25",
+    "event_ids": [
+      "gup5-event-026",
+      "gup5-event-027",
+      "gup5-event-028",
+      "gup5-event-029",
+      "gup5-event-030",
+      "gup5-event-031",
+      "gup5-event-032",
+      "gup5-event-033",
+      "gup5-event-034"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "All bodies and named transitions in this bounded witness-local scope are read and extracted; its stated ending is present.",
+    "missing_sections": [],
+    "editorial_notes": "Source-order embedded narration remains distinct from chronology. Brief reports are complete only as bounded reports in this witness, not exhaustive biographies or other-corpus arcs. Ritual formula claims do not become new narrated births."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "gup5-event-026",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-janaka-test",
+        "sequence": 26,
+        "passage_ids": [
+          "gup5-p-65-1-6"
+        ],
+        "participants": [
+          "gup5-en-021",
+          "gup5-en-022",
+          "gup-en-005",
+          "gp-en-ganesha"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Kauṇḍinya recounts Nārada visiting Gaṇeśa after many days. The sage bows, praises the fruitful sight and stands with joined hands. Gaṇeśa holds his hand and seats him. Nārada says he came to report an astonishing matter and would depart after bowing. Gaṇeśa asks him to describe everything before returning to his hermitage.",
+        "outcome": "Nārada receives an explicit invitation to tell the report.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-029"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-029",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-65-1-6",
+          "locator": "Upāsanā 65.1–6",
+          "paraphrase": "Kauṇḍinya recounts Nārada visiting Gaṇeśa after many days. The sage bows, praises the fruitful sight and stands with joined hands. Gaṇeśa holds his hand and seats him. Nārada says he came to report an astonishing matter and would depart after bowing. Gaṇeśa asks him to describe everything before returning to his hermitage.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-027",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-janaka-test",
+        "sequence": 27,
+        "passage_ids": [
+          "gup5-p-65-7-16"
+        ],
+        "participants": [
+          "gup-en-005",
+          "gp-en-ganesha",
+          "gup5-en-042",
+          "gup5-en-043",
+          "gup5-en-044",
+          "gup5-en-045"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Nārada reports Janaka of Mithilā as proud, generous and learned in Vedas and Vedāṅgas: he continually feeds and honours Brahmins with ornaments, clothing and gifts, gives wealth to poor, blind and destitute people, and grants petitions. Nārada wonders whether Gaṇeśa’s satisfaction accounts for undiminished wealth. On visiting, Janaka mocks him through pride in Brahman knowledge. Nārada praises Gaṇeśa as giver of the king’s devotional desires, but Janaka claims to be lord, giver, enjoyer, protector, maker, cause and instrument, with none other in three worlds. Angered, Nārada says God alone makes the world, challenges the king’s apparent religious display, and promises evidence soon.",
+        "outcome": "The king’s attributed claims and Nārada’s challenge motivate the later test.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [
+          "gup5-en-042",
+          "gup5-en-043",
+          "gup5-en-044",
+          "gup5-en-045"
+        ],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-030"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-030",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-65-7-16",
+          "locator": "Upāsanā 65.7–16",
+          "paraphrase": "Nārada reports Janaka of Mithilā as proud, generous and learned in Vedas and Vedāṅgas: he continually feeds and honours Brahmins with ornaments, clothing and gifts, gives wealth to poor, blind and destitute people, and grants petitions. Nārada wonders whether Gaṇeśa’s satisfaction accounts for undiminished wealth. On visiting, Janaka mocks him through pride in Brahman knowledge. Nārada praises Gaṇeśa as giver of the king’s devotional desires, but Janaka claims to be lord, giver, enjoyer, protector, maker, cause and instrument, with none other in three worlds. Angered, Nārada says God alone makes the world, challenges the king’s apparent religious display, and promises evidence soon.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-028",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-janaka-test",
+        "sequence": 28,
+        "passage_ids": [
+          "gup5-p-65-17-28"
+        ],
+        "participants": [
+          "gp-en-ganesha",
+          "gup-en-005",
+          "gup-en-008",
+          "gkr-en-vaikuntha",
+          "gup5-en-043",
+          "gup5-en-042",
+          "gup5-en-046",
+          "gup5-en-047",
+          "gup5-en-048"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Having heard the report, Gaṇeśa honours Nārada with arghya, ornaments, flowers and sandal. With permission Nārada goes to Viṣṇu in Vaikuṇṭha. Gaṇeśa comes to Mithilā to test the king’s devotion, wearing a repulsive old Brahmin form with bleeding wounds, flies and missing teeth. He stumbles, faints and falls amid children; people cover their noses and spit. At the royal gate he asks to be announced as an old, hungry Brahmin guest desiring a meal. Janaka orders his admission, observes his filthy clothes, trembling, bleeding and exhaustion, suspects a divine test, and resolves to satisfy him if merit allows.",
+        "outcome": "The narrator identifies the disguised deity; Janaka separately conjectures a divine guest.",
+        "changed_relationship_ids": [
+          "gup5-rel-022"
+        ],
+        "introduced_entity_ids": [
+          "gup5-en-046",
+          "gup5-en-047",
+          "gup5-en-048"
+        ],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-031"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-031",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-65-17-28",
+          "locator": "Upāsanā 65.17–28",
+          "paraphrase": "Having heard the report, Gaṇeśa honours Nārada with arghya, ornaments, flowers and sandal. With permission Nārada goes to Viṣṇu in Vaikuṇṭha. Gaṇeśa comes to Mithilā to test the king’s devotion, wearing a repulsive old Brahmin form with bleeding wounds, flies and missing teeth. He stumbles, faints and falls amid children; people cover their noses and spit. At the royal gate he asks to be announced as an old, hungry Brahmin guest desiring a meal. Janaka orders his admission, observes his filthy clothes, trembling, bleeding and exhaustion, suspects a divine test, and resolves to satisfy him if merit allows.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-029",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-janaka-test",
+        "sequence": 29,
+        "passage_ids": [
+          "gup5-p-65-29-35"
+        ],
+        "participants": [
+          "gup5-en-046",
+          "gp-en-ganesha",
+          "gup5-en-042"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "The guest says he came after hearing Janaka’s fame and asks food until fully satisfied, promising the merit of one hundred sacrifices. Janaka takes him inside, honours him and serves tasty food. The guest consumes the entire portion in one mouthful, then a mountain-sized portion in one mouthful, then prepared food sufficient for ten thousand. Rice is put to cook in innumerable vessels and he eats every finished batch.",
+        "outcome": "Successive immense servings fail to satisfy the guest.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "gup5-power-024",
+          "gup5-power-025"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-032"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-032",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-65-29-35",
+          "locator": "Upāsanā 65.29–35",
+          "paraphrase": "The guest says he came after hearing Janaka’s fame and asks food until fully satisfied, promising the merit of one hundred sacrifices. Janaka takes him inside, honours him and serves tasty food. The guest consumes the entire portion in one mouthful, then a mountain-sized portion in one mouthful, then prepared food sufficient for ten thousand. Rice is put to cook in innumerable vessels and he eats every finished batch.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-030",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-janaka-test",
+        "sequence": 30,
+        "passage_ids": [
+          "gup5-p-65-36-45"
+        ],
+        "participants": [
+          "gup5-en-046",
+          "gp-en-ganesha",
+          "gup5-en-042",
+          "gup5-en-049",
+          "gup5-en-050",
+          "gup5-en-048",
+          "gup5-en-051",
+          "gup5-en-052",
+          "gup5-en-053"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Some advisers conjecture that the guest is a Rākṣasa and gifts to such beings give no merit; others say even the three worlds could not satisfy him and urge offering grain. All palace, city and village grain is gathered and consumed, still without satisfaction. Messengers report none remains; Janaka lowers his head. The guest departs house to house asking food. Residents explain their grain was collected by the king and already eaten by him. He questions how he can leave unsatisfied after hearing Janaka’s unparalleled giving fame. Amid silence he finds the Brahmin home of Virocanā and Triśiras, enters like its owner, and sees no equipment or metal vessels.",
+        "outcome": "Janaka’s resources are exhausted; the test continues in a poor couple’s home.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [
+          "gup5-en-049",
+          "gup5-en-050",
+          "gup5-en-051",
+          "gup5-en-052",
+          "gup5-en-053"
+        ],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-033"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-033",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-65-36-45",
+          "locator": "Upāsanā 65.36–45",
+          "paraphrase": "Some advisers conjecture that the guest is a Rākṣasa and gifts to such beings give no merit; others say even the three worlds could not satisfy him and urge offering grain. All palace, city and village grain is gathered and consumed, still without satisfaction. Messengers report none remains; Janaka lowers his head. The guest departs house to house asking food. Residents explain their grain was collected by the king and already eaten by him. He questions how he can leave unsatisfied after hearing Janaka’s unparalleled giving fame. Amid silence he finds the Brahmin home of Virocanā and Triśiras, enters like its owner, and sees no equipment or metal vessels.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-031",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-janaka-test",
+        "sequence": 31,
+        "passage_ids": [
+          "gup5-p-66-1-9"
+        ],
+        "participants": [
+          "gup5-en-051",
+          "gup5-en-052",
+          "gup5-en-046",
+          "gp-en-ganesha",
+          "gup5-en-042",
+          "gup5-en-053"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "The couple sits on bare earth, with sky as covering, avoiding contact with metals. They eat unasked food, use water for their rites and maintain purity. Amid flies and mosquitoes their Gaṇeśa image is worshipped with flowers and leaves in exclusive devotion. The disguised guest says Janaka did not satisfy him and ostentatious action cannot preserve sattva; he asks anything in their house that could satisfy him. The couple wonders how they, poor people, can feed one whom an emperor could not, comparing a drop with rivers unable to fill the ocean. He says even a small devotional gift greatly satisfies him; abundant gifts without devotion or given for display are fruitless.",
+        "outcome": "The guest explains why devotional giving differs from abundance without devotion.",
+        "changed_relationship_ids": [
+          "gup5-rel-023",
+          "gup5-rel-024",
+          "gup5-rel-025"
+        ],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-034"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-034",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-66-1-9",
+          "locator": "Upāsanā 66.1–9",
+          "paraphrase": "The couple sits on bare earth, with sky as covering, avoiding contact with metals. They eat unasked food, use water for their rites and maintain purity. Amid flies and mosquitoes their Gaṇeśa image is worshipped with flowers and leaves in exclusive devotion. The disguised guest says Janaka did not satisfy him and ostentatious action cannot preserve sattva; he asks anything in their house that could satisfy him. The couple wonders how they, poor people, can feed one whom an emperor could not, comparing a drop with rivers unable to fill the ocean. He says even a small devotional gift greatly satisfies him; abundant gifts without devotion or given for display are fruitless.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-032",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-janaka-test",
+        "sequence": 32,
+        "passage_ids": [
+          "gup5-p-66-10-16"
+        ],
+        "participants": [
+          "gup5-en-051",
+          "gup5-en-052",
+          "gup5-en-046",
+          "gp-en-ganesha",
+          "gup-en-211"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "The couple swears nothing remains except one dūrvā sprout left from the morning Gaṇeśa worship. At the guest’s request Virocanā offers that single sprout with devotion, imagining rice, pāyasa, varied cooked dishes, accompaniments and lickable or suckable foods upon it. He joyfully eats it; his stomach-fire immediately subsides, he gains complete satisfaction and embraces Triśiras.",
+        "outcome": "One actually offered sprout accompanied by imagined foods satisfies the guest whom abundant actual food did not satisfy.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "gup5-power-026"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-035"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-035",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-66-10-16",
+          "locator": "Upāsanā 66.10–16",
+          "paraphrase": "The couple swears nothing remains except one dūrvā sprout left from the morning Gaṇeśa worship. At the guest’s request Virocanā offers that single sprout with devotion, imagining rice, pāyasa, varied cooked dishes, accompaniments and lickable or suckable foods upon it. He joyfully eats it; his stomach-fire immediately subsides, he gains complete satisfaction and embraces Triśiras.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-033",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-janaka-test",
+        "sequence": 33,
+        "passage_ids": [
+          "gup5-p-66-17-22"
+        ],
+        "participants": [
+          "gp-en-ganesha",
+          "gup5-en-051",
+          "gup5-en-052",
+          "gup5-en-054",
+          "gup5-en-055",
+          "gup5-en-056",
+          "gup5-en-057",
+          "gup5-en-058"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Gaṇeśa abandons the repulsive disguise and appears four-armed, lotus-eyed and trunk-bearing, holding lotus, axe, rosary and tusk, wearing costly crown, earrings, divine clothing and scents. He invites the couple to choose their desired boon. They ask for firm devotion wherever they are born, or liberation from the difficult ocean of transmigration, wanting nothing else. He assents with tathā, joyfully embraces Triśiras again and vanishes.",
+        "outcome": "The deity explicitly assents and withdraws; no later death or selected alternative is invented.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [
+          "gup5-en-054",
+          "gup5-en-055",
+          "gup5-en-056",
+          "gup5-en-057",
+          "gup5-en-058"
+        ],
+        "introduced_power_ids": [
+          "gup5-power-027"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-036"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-036",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-66-17-22",
+          "locator": "Upāsanā 66.17–22",
+          "paraphrase": "Gaṇeśa abandons the repulsive disguise and appears four-armed, lotus-eyed and trunk-bearing, holding lotus, axe, rosary and tusk, wearing costly crown, earrings, divine clothing and scents. He invites the couple to choose their desired boon. They ask for firm devotion wherever they are born, or liberation from the difficult ocean of transmigration, wanting nothing else. He assents with tathā, joyfully embraces Triśiras again and vanishes.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "gup5-event-034",
+        "source_id": "gp-src-ganesha",
+        "witness_id": "gp-wit-sd-upasana",
+        "supporting_witness_ids": [
+          "gp-wit-sd-upasana"
+        ],
+        "story_id": "gup5-story-janaka-test",
+        "sequence": 34,
+        "passage_ids": [
+          "gup5-p-66-23-25"
+        ],
+        "participants": [
+          "gup5-en-021",
+          "gup5-en-022",
+          "gup-en-211",
+          "gup5-en-041"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Kauṇḍinya tells Aśrayā that this is why he offers dūrvā: the deity who remained unsatisfied by innumerable foods gained full satisfaction through one sprout. He states that hearing the offering’s greatness gives all wishes; devoted hearing or telling brings sons, wealth and enjoyment here and hereafter, Gaṇeśa devotion, and liberation for a desireless person.",
+        "outcome": "Kauṇḍinya applies the completed test account to his own practice.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "gup5-power-028"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "gup5-e-037"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "gup5-e-037",
+          "source_id": "gp-src-ganesha",
+          "witness_id": "gp-wit-sd-upasana",
+          "passage_id": "gup5-p-66-23-25",
+          "locator": "Upāsanā 66.23–25",
+          "paraphrase": "Kauṇḍinya tells Aśrayā that this is why he offers dūrvā: the deity who remained unsatisfied by innumerable foods gained full satisfaction through one sprout. He states that hearing the offering’s greatness gives all wishes; devoted hearing or telling brings sons, wealth and enjoyment here and hereafter, Gaṇeśa devotion, and liberation for a desireless person.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Upāsanā continuation agent",
+          "verification_notes": "Direct Sanskrit body reading; not independent edition verification. Uncertain Sanskrit clauses identified separately."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gp-en-ganesha",
+      "name": "Gaṇeśa",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-result",
+        "gup-e-001",
+        "gup-e-005",
+        "gup-e-008",
+        "gup-e-014",
+        "gup-e-021",
+        "gup-e-023",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-036",
+        "gup-e-037",
+        "gup-e-038",
+        "gup-e-039",
+        "gup-e-040",
+        "gup-e-042",
+        "gup-e-044",
+        "gup-e-045",
+        "gup-e-046",
+        "gup-e-047",
+        "gup-e-049",
+        "gup-e-051",
+        "gup-e-053",
+        "gup-e-054",
+        "gup-e-055",
+        "gup-e-056",
+        "gup-e-057",
+        "gup-e-058",
+        "gup-e-059",
+        "gup-e-060",
+        "gup-e-062",
+        "gup-e-063",
+        "gup-e-064",
+        "gup-e-065",
+        "gup-e-066",
+        "gup-e-067",
+        "gup-e-070",
+        "gup-e-071",
+        "gup-e-072",
+        "gup-e-073",
+        "gup-e-074",
+        "gup-e-075",
+        "gup-e-076",
+        "gup-e-085",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-088",
+        "gup-e-089",
+        "gup-e-090",
+        "gup-e-091",
+        "gup-e-092",
+        "gup-e-093",
+        "gup-e-094",
+        "gkr-e-ages",
+        "gup2-e-007",
+        "gup2-e-011",
+        "gup2-e-012",
+        "gup2-e-013",
+        "gup2-e-014",
+        "gup2-e-015",
+        "gup2-e-017",
+        "gup2-e-018",
+        "gup2-e-019",
+        "gup2-e-020",
+        "gup2-e-021",
+        "gup2-e-029",
+        "gup2-e-030",
+        "gup2-e-031",
+        "gup2-e-032",
+        "gup2-e-033",
+        "gup2-e-036",
+        "gup2-e-045",
+        "gup2-e-046",
+        "gup2-e-047",
+        "gup2-e-048",
+        "gup2-e-049",
+        "gup2-e-050",
+        "gup2-e-051",
+        "gup2-e-052",
+        "gup2-e-056",
+        "gup2-e-057",
+        "gup2-e-058",
+        "gup2-e-059",
+        "gup2-e-060",
+        "gup2-e-063",
+        "gup2-e-064",
+        "gup2-e-066",
+        "gkr2-e-leaf-and-vamana",
+        "gkr2-e-hunter-demon-liberation",
+        "gup3-e-004",
+        "gup3-e-005",
+        "gup3-e-006",
+        "gup3-e-007",
+        "gup3-e-008",
+        "gup3-e-009",
+        "gup3-e-010",
+        "gup3-e-011",
+        "gup3-e-012",
+        "gup3-e-013",
+        "gup3-e-014",
+        "gup3-e-015",
+        "gup3-e-016",
+        "gup3-e-017",
+        "gup3-e-018",
+        "gkr3-e-rama-father-varada",
+        "gkr3-e-incidental-worship",
+        "gkr3-e-prior-merit-release",
+        "gup4-e-002",
+        "gup4-e-003",
+        "gup4-e-005",
+        "gup4-e-009",
+        "gup4-e-010",
+        "gup4-e-011",
+        "gup4-e-012",
+        "gup4-e-015",
+        "gup4-e-016",
+        "gup4-e-017",
+        "gup4-e-018",
+        "gup4-e-027",
+        "gup4-e-028",
+        "gup4-e-029",
+        "gup4-e-031",
+        "gup4-e-033",
+        "gup4-e-034",
+        "gup4-e-035",
+        "gup4-e-038",
+        "gup4-e-040",
+        "gup4-e-042",
+        "gup4-e-044",
+        "gup4-e-048",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-057",
+        "gup4-e-058",
+        "gup4-e-059",
+        "gup4-e-060",
+        "gup4-e-061",
+        "gup4-e-062",
+        "gkr4-e-vamana-guru-tapas",
+        "gkr4-e-vamana-request-grant",
+        "gkr4-e-vamana-installation",
+        "gkr4-e-water-steps-promises",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-sages-vision-hymn",
+        "gkr4-e-trees-request-alternative",
+        "gkr4-e-tree-benefits",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-worship-vision",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-devi-ganesa-prayer",
+        "gup5-e-001",
+        "gup5-e-002",
+        "gup5-e-003",
+        "gup5-e-004",
+        "gup5-e-005",
+        "gup5-e-006",
+        "gup5-e-008",
+        "gup5-e-009",
+        "gup5-e-010",
+        "gup5-e-012",
+        "gup5-e-014",
+        "gup5-e-015",
+        "gup5-e-016",
+        "gup5-e-019",
+        "gup5-e-021",
+        "gup5-e-022",
+        "gup5-e-023",
+        "gup5-e-024",
+        "gup5-e-025",
+        "gup5-e-026",
+        "gup5-e-027",
+        "gup5-e-029",
+        "gup5-e-030",
+        "gup5-e-031",
+        "gup5-e-032",
+        "gup5-e-033",
+        "gup5-e-034",
+        "gup5-e-035",
+        "gup5-e-036",
+        "gup5-e-041",
+        "gup5-e-042",
+        "gup5-e-043",
+        "gup5-e-045",
+        "gup5-e-047",
+        "gup5-e-049",
+        "gup5-e-050",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-060",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066",
+        "gup5-e-067",
+        "gkr5-e-realm-introduction49"
+      ]
+    },
+    {
+      "id": "gup-en-005",
+      "name": "Nārada",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-077",
+        "gup-e-078",
+        "gup-e-079",
+        "gup-e-082",
+        "gup-e-083",
+        "gup-e-084",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-091",
+        "gup-e-092",
+        "gup2-e-029",
+        "gup2-e-034",
+        "gup2-e-044",
+        "gup2-e-045",
+        "gup2-e-063",
+        "gup2-e-066",
+        "gup3-e-004",
+        "gup4-e-026",
+        "gup4-e-027",
+        "gup4-e-028",
+        "gup4-e-038",
+        "gup4-e-043",
+        "gup4-e-045",
+        "gup4-e-046",
+        "gup4-e-047",
+        "gup5-e-001",
+        "gup5-e-018",
+        "gup5-e-019",
+        "gup5-e-024",
+        "gup5-e-029",
+        "gup5-e-030",
+        "gup5-e-031",
+        "gup5-e-047",
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup-en-008",
+      "name": "Viṣṇu",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-005",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-042",
+        "gup-e-043",
+        "gup-e-044",
+        "gup-e-045",
+        "gup-e-046",
+        "gup-e-047",
+        "gup-e-048",
+        "gup-e-049",
+        "gup-e-055",
+        "gup2-e-027",
+        "gup2-e-064",
+        "gup3-e-005",
+        "gup3-e-008",
+        "gup3-e-015",
+        "gup4-e-010",
+        "gup4-e-014",
+        "gup4-e-016",
+        "gup5-e-021",
+        "gup5-e-025",
+        "gup5-e-031",
+        "gup5-e-040",
+        "gup5-e-041",
+        "gup5-e-043"
+      ]
+    },
+    {
+      "id": "gup-en-211",
+      "name": "Dūrvā",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-060",
+        "gup2-e-057",
+        "gup3-e-007",
+        "gup5-e-012",
+        "gup5-e-014",
+        "gup5-e-015",
+        "gup5-e-018",
+        "gup5-e-019",
+        "gup5-e-026",
+        "gup5-e-035",
+        "gup5-e-037",
+        "gup5-e-038",
+        "gup5-e-039",
+        "gup5-e-040",
+        "gup5-e-042",
+        "gup5-e-043",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056"
+      ]
+    },
+    {
+      "id": "gkr-en-vaikuntha",
+      "name": "Vaikuṇṭha",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr-e-devantaka-enthroned",
+        "gup2-e-027",
+        "gup2-e-032",
+        "gup5-e-031",
+        "gkr5-e-journey-vaikuntha",
+        "gkr5-e-vaikuntha-palace-makers-atomic"
+      ]
+    },
+    {
+      "id": "gup5-en-021",
+      "name": "Kauṇḍinya (dūrvā teacher)",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-019",
+        "gup5-e-020",
+        "gup5-e-024",
+        "gup5-e-027",
+        "gup5-e-029",
+        "gup5-e-037",
+        "gup5-e-038",
+        "gup5-e-039",
+        "gup5-e-041",
+        "gup5-e-042"
+      ]
+    },
+    {
+      "id": "gup5-en-022",
+      "name": "Aśrayā (Kauṇḍinya wife)",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-019",
+        "gup5-e-020",
+        "gup5-e-024",
+        "gup5-e-027",
+        "gup5-e-029",
+        "gup5-e-037",
+        "gup5-e-038",
+        "gup5-e-039",
+        "gup5-e-041",
+        "gup5-e-042"
+      ]
+    },
+    {
+      "id": "gup5-en-041",
+      "name": "Dūrvā-account readers/hearers",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-027",
+        "gup5-e-037",
+        "gup5-e-046"
+      ]
+    },
+    {
+      "id": "gup5-en-042",
+      "name": "Janaka (Mithilā king in65)",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-030",
+        "gup5-e-031",
+        "gup5-e-032",
+        "gup5-e-033",
+        "gup5-e-034"
+      ]
+    },
+    {
+      "id": "gup5-en-043",
+      "name": "Mithilā",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-030",
+        "gup5-e-031"
+      ]
+    },
+    {
+      "id": "gup5-en-044",
+      "name": "Brahmins honoured by Janaka",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-030"
+      ]
+    },
+    {
+      "id": "gup5-en-045",
+      "name": "Janaka petitioners",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-030"
+      ]
+    },
+    {
+      "id": "gup5-en-046",
+      "name": "Gaṇeśa old Brahmin form in65–66",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-031",
+        "gup5-e-032",
+        "gup5-e-033",
+        "gup5-e-034",
+        "gup5-e-035"
+      ]
+    },
+    {
+      "id": "gup5-en-047",
+      "name": "Janaka gatekeepers",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-031"
+      ]
+    },
+    {
+      "id": "gup5-en-048",
+      "name": "Mithilā townspeople",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-031",
+        "gup5-e-033"
+      ]
+    },
+    {
+      "id": "gup5-en-049",
+      "name": "Janaka advisers",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-033"
+      ]
+    },
+    {
+      "id": "gup5-en-050",
+      "name": "Janaka messengers",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-033"
+      ]
+    },
+    {
+      "id": "gup5-en-051",
+      "name": "Virocanā (Triśiras wife in65–66)",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-033",
+        "gup5-e-034",
+        "gup5-e-035",
+        "gup5-e-036"
+      ]
+    },
+    {
+      "id": "gup5-en-052",
+      "name": "Triśiras (poor Brahmin in65–66)",
+      "type": "DEVOTEE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-033",
+        "gup5-e-034",
+        "gup5-e-035",
+        "gup5-e-036"
+      ]
+    },
+    {
+      "id": "gup5-en-053",
+      "name": "Virocanā–Triśiras home",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-033",
+        "gup5-e-034"
+      ]
+    },
+    {
+      "id": "gup5-en-054",
+      "name": "Lotus held in66",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-036"
+      ]
+    },
+    {
+      "id": "gup5-en-055",
+      "name": "Gaṇeśa axe in66",
+      "type": "WEAPON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-036"
+      ]
+    },
+    {
+      "id": "gup5-en-056",
+      "name": "Gaṇeśa rosary in66",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-036"
+      ]
+    },
+    {
+      "id": "gup5-en-057",
+      "name": "Gaṇeśa tusk held in66",
+      "type": "WEAPON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-036"
+      ]
+    },
+    {
+      "id": "gup5-en-058",
+      "name": "Virocanā–Triśiras couple",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-036"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "gup5-rel-022",
+      "subject_id": "gup5-en-046",
+      "predicate": "manifestation_of",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-031"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-026"
+    },
+    {
+      "id": "gup5-rel-023",
+      "subject_id": "gup5-en-051",
+      "predicate": "spouse_of",
+      "object_id": "gup5-en-052",
+      "evidence_ids": [
+        "gup5-e-034",
+        "gup5-e-033"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-027",
+      "kinship_kind": "MARITAL"
+    },
+    {
+      "id": "gup5-rel-024",
+      "subject_id": "gup5-en-052",
+      "predicate": "worships",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-034"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-028"
+    },
+    {
+      "id": "gup5-rel-025",
+      "subject_id": "gup5-en-051",
+      "predicate": "worships",
+      "object_id": "gp-en-ganesha",
+      "evidence_ids": [
+        "gup5-e-034"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "gup5-a-029"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "gup5-power-024",
+      "type": "POWER",
+      "recipient_id": "gup5-en-042",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "The guest promises merit equal to one hundred sacrifices.",
+      "trigger": "Feed the guest until he is satisfied.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "gup5-e-032"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup5-e-032"
+        ],
+        "mechanism": [
+          "gup5-e-032"
+        ],
+        "trigger": [
+          "gup5-e-032"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "A conditional promise spoken by the disguised deity; Janaka does not accomplish its stated satisfaction condition in this account."
+    },
+    {
+      "id": "gup5-power-025",
+      "type": "POWER",
+      "recipient_id": "gp-en-ganesha",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "The old Brahmin manifestation consumes whole and mountain-sized portions in one mouthful and food sufficient for ten thousand without satisfaction.",
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "gup5-e-032"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup5-e-032"
+        ],
+        "mechanism": [
+          "gup5-e-032"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Specific test action; no remembered universal appetite claim added."
+    },
+    {
+      "id": "gup5-power-026",
+      "type": "POWER",
+      "recipient_id": "gp-en-ganesha",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "The single devoted dūrvā offering immediately quiets the guest’s stomach-fire and fully satisfies him.",
+      "trigger": "Virocanā’s actual one-sprout offering with devotional imagined foods.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "gup5-e-035"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup5-e-035"
+        ],
+        "mechanism": [
+          "gup5-e-035"
+        ],
+        "trigger": [
+          "gup5-e-035"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "The imagined dishes are not falsely counted as physical food supplied by the couple."
+    },
+    {
+      "id": "gup5-power-027",
+      "type": "BOON",
+      "recipient_id": "gup5-en-058",
+      "grantor_id": "gp-en-ganesha",
+      "worshipped_id": null,
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": "Firm devotion to Gaṇeśa wherever they are born, OR liberation from transmigration; no other desire.",
+      "granted": "Explicit assent tathā to the couple’s request.",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "gup5-e-036"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup5-e-036"
+        ],
+        "grantor_id": [
+          "gup5-e-036"
+        ],
+        "requested": [
+          "gup5-e-036"
+        ],
+        "granted": [
+          "gup5-e-036"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "The text does not select between the alternatives or narrate their subsequent death/transport; assent and withdrawal close this bounded test."
+    },
+    {
+      "id": "gup5-power-028",
+      "type": "POWER",
+      "recipient_id": "gup5-en-041",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": null,
+      "mechanism": "All wishes, sons, wealth, enjoyment here and hereafter, and Gaṇeśa devotion; liberation for a desireless person.",
+      "trigger": "Devotionally hear or tell this history.",
+      "restrictions": "The liberation promise specifically describes a desireless person.",
+      "duration": null,
+      "counter": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "gup5-e-037"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "gup5-e-037"
+        ],
+        "mechanism": [
+          "gup5-e-037"
+        ],
+        "trigger": [
+          "gup5-e-037"
+        ],
+        "restrictions": [
+          "gup5-e-037"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null means unstated in examined passage, not independently proven absent from whole work. Reported efficacy is a POWER unless an explicit personal boon is narrated."
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "gup5-a-025",
+      "subject_id": "gup5-en-042",
+      "predicate": "attributed_self_claim",
+      "object_id": null,
+      "value": "Lord, giver, enjoyer, protector, maker, cause and instrument of the three worlds65.13–14; a claim by Janaka, not narrator certification.",
+      "evidence_ids": [
+        "gup5-e-030"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-026",
+      "subject_id": "gup5-en-046",
+      "predicate": "manifestation_of",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-031"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-027",
+      "subject_id": "gup5-en-051",
+      "predicate": "spouse_of",
+      "object_id": "gup5-en-052",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-034",
+        "gup5-e-033"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-028",
+      "subject_id": "gup5-en-052",
+      "predicate": "worships",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-034"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-029",
+      "subject_id": "gup5-en-051",
+      "predicate": "worships",
+      "object_id": "gp-en-ganesha",
+      "value": null,
+      "evidence_ids": [
+        "gup5-e-034"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "gup5-a-030",
+      "subject_id": "gp-en-ganesha",
+      "predicate": "manifest_form_66",
+      "object_id": null,
+      "value": "Four arms holding lotus, axe, rosary and tusk66.17–18.",
+      "evidence_ids": [
+        "gup5-e-036"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "linked_entities": [
+    {
+      "id": "gp-en-ganesha",
+      "name": "Gaṇeśa",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-muka-result",
+        "gup-e-001",
+        "gup-e-005",
+        "gup-e-008",
+        "gup-e-014",
+        "gup-e-021",
+        "gup-e-023",
+        "gup-e-025",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-028",
+        "gup-e-029",
+        "gup-e-030",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-036",
+        "gup-e-037",
+        "gup-e-038",
+        "gup-e-039",
+        "gup-e-040",
+        "gup-e-042",
+        "gup-e-044",
+        "gup-e-045",
+        "gup-e-046",
+        "gup-e-047",
+        "gup-e-049",
+        "gup-e-051",
+        "gup-e-053",
+        "gup-e-054",
+        "gup-e-055",
+        "gup-e-056",
+        "gup-e-057",
+        "gup-e-058",
+        "gup-e-059",
+        "gup-e-060",
+        "gup-e-062",
+        "gup-e-063",
+        "gup-e-064",
+        "gup-e-065",
+        "gup-e-066",
+        "gup-e-067",
+        "gup-e-070",
+        "gup-e-071",
+        "gup-e-072",
+        "gup-e-073",
+        "gup-e-074",
+        "gup-e-075",
+        "gup-e-076",
+        "gup-e-085",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-088",
+        "gup-e-089",
+        "gup-e-090",
+        "gup-e-091",
+        "gup-e-092",
+        "gup-e-093",
+        "gup-e-094",
+        "gkr-e-ages",
+        "gup2-e-007",
+        "gup2-e-011",
+        "gup2-e-012",
+        "gup2-e-013",
+        "gup2-e-014",
+        "gup2-e-015",
+        "gup2-e-017",
+        "gup2-e-018",
+        "gup2-e-019",
+        "gup2-e-020",
+        "gup2-e-021",
+        "gup2-e-029",
+        "gup2-e-030",
+        "gup2-e-031",
+        "gup2-e-032",
+        "gup2-e-033",
+        "gup2-e-036",
+        "gup2-e-045",
+        "gup2-e-046",
+        "gup2-e-047",
+        "gup2-e-048",
+        "gup2-e-049",
+        "gup2-e-050",
+        "gup2-e-051",
+        "gup2-e-052",
+        "gup2-e-056",
+        "gup2-e-057",
+        "gup2-e-058",
+        "gup2-e-059",
+        "gup2-e-060",
+        "gup2-e-063",
+        "gup2-e-064",
+        "gup2-e-066",
+        "gkr2-e-leaf-and-vamana",
+        "gkr2-e-hunter-demon-liberation",
+        "gup3-e-004",
+        "gup3-e-005",
+        "gup3-e-006",
+        "gup3-e-007",
+        "gup3-e-008",
+        "gup3-e-009",
+        "gup3-e-010",
+        "gup3-e-011",
+        "gup3-e-012",
+        "gup3-e-013",
+        "gup3-e-014",
+        "gup3-e-015",
+        "gup3-e-016",
+        "gup3-e-017",
+        "gup3-e-018",
+        "gkr3-e-rama-father-varada",
+        "gkr3-e-incidental-worship",
+        "gkr3-e-prior-merit-release",
+        "gup4-e-002",
+        "gup4-e-003",
+        "gup4-e-005",
+        "gup4-e-009",
+        "gup4-e-010",
+        "gup4-e-011",
+        "gup4-e-012",
+        "gup4-e-015",
+        "gup4-e-016",
+        "gup4-e-017",
+        "gup4-e-018",
+        "gup4-e-027",
+        "gup4-e-028",
+        "gup4-e-029",
+        "gup4-e-031",
+        "gup4-e-033",
+        "gup4-e-034",
+        "gup4-e-035",
+        "gup4-e-038",
+        "gup4-e-040",
+        "gup4-e-042",
+        "gup4-e-044",
+        "gup4-e-048",
+        "gup4-e-053",
+        "gup4-e-054",
+        "gup4-e-057",
+        "gup4-e-058",
+        "gup4-e-059",
+        "gup4-e-060",
+        "gup4-e-061",
+        "gup4-e-062",
+        "gkr4-e-vamana-guru-tapas",
+        "gkr4-e-vamana-request-grant",
+        "gkr4-e-vamana-installation",
+        "gkr4-e-water-steps-promises",
+        "gkr4-e-sami-frame32",
+        "gkr4-e-kirti-worship-hymn",
+        "gkr4-e-kirti-dream-boon",
+        "gkr4-e-revival-merit-transfer",
+        "gkr4-e-sages-vision-hymn",
+        "gkr4-e-trees-request-alternative",
+        "gkr4-e-tree-benefits",
+        "gkr4-e-river-sacrifice-curse",
+        "gkr4-e-goddesses-worship-vision",
+        "gkr4-e-river-release-grant",
+        "gkr4-e-river-aftermath",
+        "gkr4-e-child-name-request",
+        "gkr4-e-kasi-creation-phala",
+        "gkr4-e-devas-counsel",
+        "gkr4-e-devi-ganesa-prayer",
+        "gup5-e-001",
+        "gup5-e-002",
+        "gup5-e-003",
+        "gup5-e-004",
+        "gup5-e-005",
+        "gup5-e-006",
+        "gup5-e-008",
+        "gup5-e-009",
+        "gup5-e-010",
+        "gup5-e-012",
+        "gup5-e-014",
+        "gup5-e-015",
+        "gup5-e-016",
+        "gup5-e-019",
+        "gup5-e-021",
+        "gup5-e-022",
+        "gup5-e-023",
+        "gup5-e-024",
+        "gup5-e-025",
+        "gup5-e-026",
+        "gup5-e-027",
+        "gup5-e-029",
+        "gup5-e-030",
+        "gup5-e-031",
+        "gup5-e-032",
+        "gup5-e-033",
+        "gup5-e-034",
+        "gup5-e-035",
+        "gup5-e-036",
+        "gup5-e-041",
+        "gup5-e-042",
+        "gup5-e-043",
+        "gup5-e-045",
+        "gup5-e-047",
+        "gup5-e-049",
+        "gup5-e-050",
+        "gup5-e-052",
+        "gup5-e-053",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056",
+        "gup5-e-057",
+        "gup5-e-060",
+        "gup5-e-062",
+        "gup5-e-064",
+        "gup5-e-065",
+        "gup5-e-066",
+        "gup5-e-067",
+        "gkr5-e-realm-introduction49"
+      ]
+    },
+    {
+      "id": "gup-en-005",
+      "name": "Nārada",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-077",
+        "gup-e-078",
+        "gup-e-079",
+        "gup-e-082",
+        "gup-e-083",
+        "gup-e-084",
+        "gup-e-086",
+        "gup-e-087",
+        "gup-e-091",
+        "gup-e-092",
+        "gup2-e-029",
+        "gup2-e-034",
+        "gup2-e-044",
+        "gup2-e-045",
+        "gup2-e-063",
+        "gup2-e-066",
+        "gup3-e-004",
+        "gup4-e-026",
+        "gup4-e-027",
+        "gup4-e-028",
+        "gup4-e-038",
+        "gup4-e-043",
+        "gup4-e-045",
+        "gup4-e-046",
+        "gup4-e-047",
+        "gup5-e-001",
+        "gup5-e-018",
+        "gup5-e-019",
+        "gup5-e-024",
+        "gup5-e-029",
+        "gup5-e-030",
+        "gup5-e-031",
+        "gup5-e-047",
+        "gup5-e-061"
+      ]
+    },
+    {
+      "id": "gup-en-008",
+      "name": "Viṣṇu",
+      "type": "DEITY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-001",
+        "gup-e-005",
+        "gup-e-026",
+        "gup-e-027",
+        "gup-e-031",
+        "gup-e-032",
+        "gup-e-033",
+        "gup-e-034",
+        "gup-e-035",
+        "gup-e-042",
+        "gup-e-043",
+        "gup-e-044",
+        "gup-e-045",
+        "gup-e-046",
+        "gup-e-047",
+        "gup-e-048",
+        "gup-e-049",
+        "gup-e-055",
+        "gup2-e-027",
+        "gup2-e-064",
+        "gup3-e-005",
+        "gup3-e-008",
+        "gup3-e-015",
+        "gup4-e-010",
+        "gup4-e-014",
+        "gup4-e-016",
+        "gup5-e-021",
+        "gup5-e-025",
+        "gup5-e-031",
+        "gup5-e-040",
+        "gup5-e-041",
+        "gup5-e-043"
+      ]
+    },
+    {
+      "id": "gup-en-211",
+      "name": "Dūrvā",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup-e-060",
+        "gup2-e-057",
+        "gup3-e-007",
+        "gup5-e-012",
+        "gup5-e-014",
+        "gup5-e-015",
+        "gup5-e-018",
+        "gup5-e-019",
+        "gup5-e-026",
+        "gup5-e-035",
+        "gup5-e-037",
+        "gup5-e-038",
+        "gup5-e-039",
+        "gup5-e-040",
+        "gup5-e-042",
+        "gup5-e-043",
+        "gup5-e-054",
+        "gup5-e-055",
+        "gup5-e-056"
+      ]
+    },
+    {
+      "id": "gkr-en-vaikuntha",
+      "name": "Vaikuṇṭha",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gkr-e-devantaka-enthroned",
+        "gup2-e-027",
+        "gup2-e-032",
+        "gup5-e-031",
+        "gkr5-e-journey-vaikuntha",
+        "gkr5-e-vaikuntha-palace-makers-atomic"
+      ]
+    },
+    {
+      "id": "gup5-en-021",
+      "name": "Kauṇḍinya (dūrvā teacher)",
+      "type": "SAGE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-019",
+        "gup5-e-020",
+        "gup5-e-024",
+        "gup5-e-027",
+        "gup5-e-029",
+        "gup5-e-037",
+        "gup5-e-038",
+        "gup5-e-039",
+        "gup5-e-041",
+        "gup5-e-042"
+      ]
+    },
+    {
+      "id": "gup5-en-022",
+      "name": "Aśrayā (Kauṇḍinya wife)",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-019",
+        "gup5-e-020",
+        "gup5-e-024",
+        "gup5-e-027",
+        "gup5-e-029",
+        "gup5-e-037",
+        "gup5-e-038",
+        "gup5-e-039",
+        "gup5-e-041",
+        "gup5-e-042"
+      ]
+    },
+    {
+      "id": "gup5-en-041",
+      "name": "Dūrvā-account readers/hearers",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-027",
+        "gup5-e-037",
+        "gup5-e-046"
+      ]
+    },
+    {
+      "id": "gup5-en-042",
+      "name": "Janaka (Mithilā king in65)",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-030",
+        "gup5-e-031",
+        "gup5-e-032",
+        "gup5-e-033",
+        "gup5-e-034"
+      ]
+    },
+    {
+      "id": "gup5-en-043",
+      "name": "Mithilā",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-030",
+        "gup5-e-031"
+      ]
+    },
+    {
+      "id": "gup5-en-044",
+      "name": "Brahmins honoured by Janaka",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-030"
+      ]
+    },
+    {
+      "id": "gup5-en-045",
+      "name": "Janaka petitioners",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-030"
+      ]
+    },
+    {
+      "id": "gup5-en-046",
+      "name": "Gaṇeśa old Brahmin form in65–66",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-031",
+        "gup5-e-032",
+        "gup5-e-033",
+        "gup5-e-034",
+        "gup5-e-035"
+      ]
+    },
+    {
+      "id": "gup5-en-047",
+      "name": "Janaka gatekeepers",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-031"
+      ]
+    },
+    {
+      "id": "gup5-en-048",
+      "name": "Mithilā townspeople",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-031",
+        "gup5-e-033"
+      ]
+    },
+    {
+      "id": "gup5-en-049",
+      "name": "Janaka advisers",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-033"
+      ]
+    },
+    {
+      "id": "gup5-en-050",
+      "name": "Janaka messengers",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-033"
+      ]
+    },
+    {
+      "id": "gup5-en-051",
+      "name": "Virocanā (Triśiras wife in65–66)",
+      "type": "PERSON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-033",
+        "gup5-e-034",
+        "gup5-e-035",
+        "gup5-e-036"
+      ]
+    },
+    {
+      "id": "gup5-en-052",
+      "name": "Triśiras (poor Brahmin in65–66)",
+      "type": "DEVOTEE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-033",
+        "gup5-e-034",
+        "gup5-e-035",
+        "gup5-e-036"
+      ]
+    },
+    {
+      "id": "gup5-en-053",
+      "name": "Virocanā–Triśiras home",
+      "type": "PLACE",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-033",
+        "gup5-e-034"
+      ]
+    },
+    {
+      "id": "gup5-en-054",
+      "name": "Lotus held in66",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-036"
+      ]
+    },
+    {
+      "id": "gup5-en-055",
+      "name": "Gaṇeśa axe in66",
+      "type": "WEAPON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-036"
+      ]
+    },
+    {
+      "id": "gup5-en-056",
+      "name": "Gaṇeśa rosary in66",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-036"
+      ]
+    },
+    {
+      "id": "gup5-en-057",
+      "name": "Gaṇeśa tusk held in66",
+      "type": "WEAPON",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-036"
+      ]
+    },
+    {
+      "id": "gup5-en-058",
+      "name": "Virocanā–Triśiras couple",
+      "type": "FAMILY",
+      "source_scope": "gp-src-ganesha",
+      "aliases": [],
+      "evidence_ids": [
+        "gup5-e-036"
+      ]
+    }
+  ],
+  "linked_entity_note": "Includes event participants and related claim endpoints. Entity metadata can cite other retained source passages; the complete graph carries those references."
+}

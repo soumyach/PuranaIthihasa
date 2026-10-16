@@ -1,0 +1,717 @@
+{
+  "checkpoint": "continuation5",
+  "completed_arc_id": "mud6-story-bharata-final-devotion",
+  "graph_sha256": "c4af351fd8e2c786669610e2e9d56e1bb7f3e9b906dede60d84b0ae62ef3d7db",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checks complete; independent review selective. All declared interpretation gaps remain explicit.",
+  "story": {
+    "id": "mud6-story-bharata-final-devotion",
+    "title": "Bharata’s Mayūreśa meditation,Gaṇeśa appearance,devotion boon and final form",
+    "source_id": "gp-src-mudgala",
+    "witness_id": "gp-wit-sd-mudgala-2",
+    "scope": "2.22.1–26",
+    "event_ids": [
+      "mud6-event-bharata-mayuresa-appearance",
+      "mud6-event-bharata-final-hymn",
+      "mud6-event-bharata-devotion-grant",
+      "mud6-event-bharata-final-form-site"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Entire bounded cited Sanskrit arc read; significant named actors, relationships, boons/powers, dialogue and transition checks by author. Independent root review separate.",
+    "missing_sections": [],
+    "editorial_notes": "Source narration order. Embedded narratives have their own spines; parent records their framing transitions without duplicating events."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "mud6-event-bharata-mayuresa-appearance",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-bharata-final-devotion",
+        "sequence": 1,
+        "passage_ids": [
+          "mud6-p-bharata-mayuresa-appearance"
+        ],
+        "participants": [
+          "mud5-en-bharata",
+          "mud-en-vakratunda",
+          "mud4-en-mayuresa-field",
+          "mud-en-siddhi",
+          "mud-en-buddhi",
+          "mud2-en-mouse-vehicle"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Āṅgirasa Bharata wanders Earth, arrives by fate at Mayūreśa field, recognizes previous Gaṇeśa manifestation and stays meditating in one place as if dull. After one year Gaṇeśa actually comes to see him, mounted on mouse and accompanied by Siddhi/Buddhi. Bharata bows and hymns with tears/gooseflesh and devotion. The one-year interval belongs to this field arrival/meditation, not all prior lives.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-bharata-mayuresa-appearance"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-bharata-mayuresa-appearance",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-bharata-mayuresa-appearance",
+          "locator": "Mudgala2.22.1–4",
+          "paraphrase": "Āṅgirasa Bharata wanders Earth, arrives by fate at Mayūreśa field, recognizes previous Gaṇeśa manifestation and stays meditating in one place as if dull. After one year Gaṇeśa actually comes to see him, mounted on mouse and accompanied by Siddhi/Buddhi. Bharata bows and hymns with tears/gooseflesh and devotion. The one-year interval belongs to this field arrival/meditation, not all prior lives.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud6-event-bharata-final-hymn",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-bharata-final-devotion",
+        "sequence": 2,
+        "passage_ids": [
+          "mud6-p-bharata-final-hymn"
+        ],
+        "participants": [
+          "mud5-en-bharata",
+          "mud-en-vakratunda",
+          "mud-en-siddhi",
+          "mud-en-buddhi",
+          "mud2-en-mouse-vehicle",
+          "rmd2-en-svananda"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Bharata hymns peace-form/giver, Vighneśa/Heramba, Siddhi/Buddhi lord and giver, devotee-fear remover, devotion-loving/yoga-peace Gaṇeśa, mouse-mounted/four-armed/Svānanda/Vakratunda, infinite forms/play. He is fulfilled by sight inaccessible even in Vedic reach, says devotion alone drew deity to him, and asks what gift can please the source of all portions. Four arms and Vakratunda here are hymn attributes, distinct from narrator’s actual mouse/Siddhi/Buddhi appearance.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-bharata-final-hymn"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-bharata-final-hymn",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-bharata-final-hymn",
+          "locator": "Mudgala2.22.5–14",
+          "paraphrase": "Bharata hymns peace-form/giver, Vighneśa/Heramba, Siddhi/Buddhi lord and giver, devotee-fear remover, devotion-loving/yoga-peace Gaṇeśa, mouse-mounted/four-armed/Svānanda/Vakratunda, infinite forms/play. He is fulfilled by sight inaccessible even in Vedic reach, says devotion alone drew deity to him, and asks what gift can please the source of all portions. Four arms and Vakratunda here are hymn attributes, distinct from narrator’s actual mouse/Siddhi/Buddhi appearance.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud6-event-bharata-devotion-grant",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-bharata-final-devotion",
+        "sequence": 3,
+        "passage_ids": [
+          "mud6-p-bharata-devotion-grant"
+        ],
+        "participants": [
+          "mud5-en-bharata",
+          "mud-en-vakratunda",
+          "mud6-en-bharata-benefit-users"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Bharata offers his body, bows and requests ONLY firm unwavering devotion to deity’s feet. Repeatedly bowing, he dances with love. Gaṇeśa grants firm unwavering devotion; hymn will give yoga-peace and please him. Whatever a reciter desires he will give, and hearers obtain likewise. God disappears; Bharata remains devoted there. Neither requested liberation nor a new bodily transformation boon is added.",
+        "outcome": "Firm devotion granted; deity disappears and Bharata remains there.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud6-power-bharata-firm-devotion",
+          "mud6-power-bharata-hymn-benefits"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-bharata-devotion-grant"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-bharata-devotion-grant",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-bharata-devotion-grant",
+          "locator": "Mudgala2.22.15–21",
+          "paraphrase": "Bharata offers his body, bows and requests ONLY firm unwavering devotion to deity’s feet. Repeatedly bowing, he dances with love. Gaṇeśa grants firm unwavering devotion; hymn will give yoga-peace and please him. Whatever a reciter desires he will give, and hearers obtain likewise. God disappears; Bharata remains devoted there. Neither requested liberation nor a new bodily transformation boon is added.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud6-event-bharata-final-form-site",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud6-story-bharata-final-devotion",
+        "sequence": 4,
+        "passage_ids": [
+          "mud6-p-bharata-final-form-site"
+        ],
+        "participants": [
+          "mud5-en-bharata",
+          "mud-en-vakratunda",
+          "mud6-en-bharata-mayuresa-cave",
+          "mud4-en-mayuresa-field",
+          "mud4-en-priyavrata",
+          "mud6-en-bharata-benefit-users"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "At the end Bharata actually becomes Gaṇeśa-form. Narrator locates the famous sage’s cave/place north of Gaṇeśa and facing him at one krośa. People who see that place attain permanent liberation. Devoted hearers/readers of Bharata account obtain enjoyment/liberation. Mudgala closes Priyavrata-family righteous kings devoted to various gods. Site not assigned a modern location; site-view benefit not retroactively substituted for king’s actual outcome.",
+        "outcome": "Bharata becomes Gaṇeśa-form; site position and separate audience benefits stated.",
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud6-power-bharata-site-sight",
+          "mud6-power-bharata-account-phala"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud6-e-bharata-final-form-site"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud6-e-bharata-final-form-site",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud6-p-bharata-final-form-site",
+          "locator": "Mudgala2.22.22–26",
+          "paraphrase": "At the end Bharata actually becomes Gaṇeśa-form. Narrator locates the famous sage’s cave/place north of Gaṇeśa and facing him at one krośa. People who see that place attain permanent liberation. Devoted hearers/readers of Bharata account obtain enjoyment/liberation. Mudgala closes Priyavrata-family righteous kings devoted to various gods. Site not assigned a modern location; site-view benefit not retroactively substituted for king’s actual outcome.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation6 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "mud-en-vakratunda",
+      "name": "Vakratunda / Gaṇeśa / Gaṇanāyaka / Vighnapa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "rmd2-e-invocation",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-tattva-boon",
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-tapas",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "rmd2-e-five-request-hymn-fruits",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders",
+        "mud5-e-jambu-sons-retirement",
+        "mud6-e-bharata-angirasa-birth"
+      ]
+    },
+    {
+      "id": "mud-en-siddhi",
+      "name": "Siddhi",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-vak-manifest",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "mud2-e-field-layout",
+        "mud3-e-inner-manifestation",
+        "mud4-e-atri-mind-siddhi-initiation",
+        "mud6-e-bharata-mayuresa-appearance"
+      ]
+    },
+    {
+      "id": "mud-en-buddhi",
+      "name": "Buddhi",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-vak-manifest",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "mud2-e-field-layout",
+        "mud3-e-inner-manifestation",
+        "mud4-e-atri-mind-siddhi-initiation",
+        "mud6-e-bharata-mayuresa-appearance"
+      ]
+    },
+    {
+      "id": "rmd2-en-svananda",
+      "name": "Svānanda",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "rmd2-e-mudgala-ganesha-explanation",
+        "mud3-e-gitasara-brahman-mappings",
+        "mud5-e-svananda-world-doctrine",
+        "mud6-e-rahugana-body-self-doctrine"
+      ]
+    },
+    {
+      "id": "mud2-en-mouse-vehicle",
+      "name": "Gaṇeśa’s mouse vehicle (Nārada hymn)",
+      "type": "VAHANA",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud2-e-narada-tenyear-hymn",
+        "mud5-e-pulaha-ganesa-hymn",
+        "mud6-e-bharata-mayuresa-appearance"
+      ]
+    },
+    {
+      "id": "mud4-en-priyavrata",
+      "name": "Priyavrata",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-manu-family-kardama-kapila-yajna",
+        "mud5-e-jambu-sons-retirement",
+        "mud6-e-bharata-final-form-site"
+      ]
+    },
+    {
+      "id": "mud4-en-mayuresa-field",
+      "name": "Mayūreśa field where Durvāsas gains peace",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-durvasas-peace",
+        "mud6-e-bharata-mayuresa-appearance"
+      ]
+    },
+    {
+      "id": "mud5-en-bharata",
+      "name": "Bharata, eldest son of Ṛṣabha",
+      "type": "PERSON",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud5-e-rsabha-sons-counts",
+        "mud6-e-bharata-angirasa-birth"
+      ]
+    },
+    {
+      "id": "mud6-en-bharata-benefit-users",
+      "name": "Hearers, reciters and site visitors in Bharata benefit promises",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-bharata-devotion-grant",
+        "mud6-e-bharata-final-form-site"
+      ]
+    },
+    {
+      "id": "mud6-en-bharata-mayuresa-cave",
+      "name": "Jaḍa Bharata cave/place north of Gaṇeśa at Mayūreśa field",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud6-e-bharata-final-form-site"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "mud6-r-bharata-mayuresa-residence",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "resides_in",
+      "object_id": "mud4-en-mayuresa-field",
+      "evidence_ids": [
+        "mud6-e-bharata-mayuresa-appearance"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-bharata-mayuresa-residence"
+    },
+    {
+      "id": "mud6-r-ganesa-bharata-mouse",
+      "subject_id": "mud-en-vakratunda",
+      "predicate": "appears_mounted_on",
+      "object_id": "mud2-en-mouse-vehicle",
+      "evidence_ids": [
+        "mud6-e-bharata-mayuresa-appearance"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-ganesa-bharata-mouse"
+    },
+    {
+      "id": "mud6-r-ganesa-bharata-siddhi",
+      "subject_id": "mud-en-vakratunda",
+      "predicate": "appears_accompanied_by",
+      "object_id": "mud-en-siddhi",
+      "evidence_ids": [
+        "mud6-e-bharata-mayuresa-appearance"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-ganesa-bharata-siddhi"
+    },
+    {
+      "id": "mud6-r-ganesa-bharata-buddhi",
+      "subject_id": "mud-en-vakratunda",
+      "predicate": "appears_accompanied_by",
+      "object_id": "mud-en-buddhi",
+      "evidence_ids": [
+        "mud6-e-bharata-mayuresa-appearance"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-ganesa-bharata-buddhi"
+    },
+    {
+      "id": "mud6-r-bharata-cave-site",
+      "subject_id": "mud6-en-bharata-mayuresa-cave",
+      "predicate": "associated_with",
+      "object_id": "mud5-en-bharata",
+      "evidence_ids": [
+        "mud6-e-bharata-final-form-site"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-bharata-cave-site"
+    },
+    {
+      "id": "mud6-r-bharata-cave-mayuresa",
+      "subject_id": "mud6-en-bharata-mayuresa-cave",
+      "predicate": "within_named_field_context",
+      "object_id": "mud4-en-mayuresa-field",
+      "evidence_ids": [
+        "mud6-e-bharata-final-form-site"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud6-a-bharata-cave-mayuresa"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "mud6-power-bharata-firm-devotion",
+      "type": "BOON",
+      "recipient_id": "mud5-en-bharata",
+      "grantor_id": "mud-en-vakratunda",
+      "worshipped_id": "mud-en-vakratunda",
+      "later_event_ids": [
+        "mud6-event-bharata-devotion-grant"
+      ],
+      "evidence_ids": [
+        "mud6-e-bharata-devotion-grant"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud6-e-bharata-devotion-grant"
+        ],
+        "grantor_id": [
+          "mud6-e-bharata-devotion-grant"
+        ],
+        "worshipped_id": [
+          "mud6-e-bharata-devotion-grant"
+        ],
+        "requested": [
+          "mud6-e-bharata-devotion-grant"
+        ],
+        "granted": [
+          "mud6-e-bharata-devotion-grant"
+        ],
+        "austerity_or_circumstances": [
+          "mud6-e-bharata-devotion-grant"
+        ],
+        "later_event_ids": [
+          "mud6-e-bharata-devotion-grant"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": "Offers body, bows repeatedly and dances with love.",
+      "requested": "Only firm unwavering devotion to Gaṇeśa’s feet(16).",
+      "granted": "Firm unwavering devotion(18).",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud6-power-bharata-hymn-benefits",
+      "type": "POWER",
+      "recipient_id": "mud6-en-bharata-benefit-users",
+      "grantor_id": "mud-en-vakratunda",
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud6-e-bharata-devotion-grant"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud6-e-bharata-devotion-grant"
+        ],
+        "grantor_id": [
+          "mud6-e-bharata-devotion-grant"
+        ],
+        "trigger": [
+          "mud6-e-bharata-devotion-grant"
+        ],
+        "granted": [
+          "mud6-e-bharata-devotion-grant"
+        ],
+        "notes": [
+          "mud6-e-bharata-devotion-grant"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "General hymn benefit promise, distinct from Bharata’s only devotion request.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Yoga-peace and desired benefits(19–20).",
+      "mechanism": null,
+      "trigger": "Recite/hear Bharata’s hymn.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud6-power-bharata-site-sight",
+      "type": "POWER",
+      "recipient_id": "mud6-en-bharata-benefit-users",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud6-e-bharata-final-form-site"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud6-e-bharata-final-form-site"
+        ],
+        "trigger": [
+          "mud6-e-bharata-final-form-site"
+        ],
+        "granted": [
+          "mud6-e-bharata-final-form-site"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Permanent liberation(24).",
+      "mechanism": null,
+      "trigger": "See the sage’s place there.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud6-power-bharata-account-phala",
+      "type": "POWER",
+      "recipient_id": "mud6-en-bharata-benefit-users",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud6-e-bharata-final-form-site"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud6-e-bharata-final-form-site"
+        ],
+        "trigger": [
+          "mud6-e-bharata-final-form-site"
+        ],
+        "granted": [
+          "mud6-e-bharata-final-form-site"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Enjoyment/liberation(25).",
+      "mechanism": null,
+      "trigger": "Devoted hearing/reading Bharata account.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "mud6-a-bharata-mayuresa-residence",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "resides_in",
+      "object_id": "mud4-en-mayuresa-field",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-bharata-mayuresa-appearance"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-ganesa-bharata-mouse",
+      "subject_id": "mud-en-vakratunda",
+      "predicate": "appears_mounted_on",
+      "object_id": "mud2-en-mouse-vehicle",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-bharata-mayuresa-appearance"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-ganesa-bharata-siddhi",
+      "subject_id": "mud-en-vakratunda",
+      "predicate": "appears_accompanied_by",
+      "object_id": "mud-en-siddhi",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-bharata-mayuresa-appearance"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-ganesa-bharata-buddhi",
+      "subject_id": "mud-en-vakratunda",
+      "predicate": "appears_accompanied_by",
+      "object_id": "mud-en-buddhi",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-bharata-mayuresa-appearance"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-bharata-appearance-year",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "narrated_interval",
+      "object_id": null,
+      "value": "One year after Mayūreśa field arrival/meditation before Gaṇeśa’s appearance.",
+      "evidence_ids": [
+        "mud6-e-bharata-mayuresa-appearance"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-bharata-final-hymn-attributes",
+      "subject_id": "mud-en-vakratunda",
+      "predicate": "bharata_hymn_attribution",
+      "object_id": null,
+      "value": "Peace/Siddhi/Buddhi/yoga/devotion; mouse-mounted, four arms, Svānanda, Vakratunda, infinite forms; devotion brings deity near.",
+      "evidence_ids": [
+        "mud6-e-bharata-final-hymn"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-bharata-cave-site",
+      "subject_id": "mud6-en-bharata-mayuresa-cave",
+      "predicate": "associated_with",
+      "object_id": "mud5-en-bharata",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-bharata-final-form-site"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-bharata-cave-mayuresa",
+      "subject_id": "mud6-en-bharata-mayuresa-cave",
+      "predicate": "within_named_field_context",
+      "object_id": "mud4-en-mayuresa-field",
+      "value": null,
+      "evidence_ids": [
+        "mud6-e-bharata-final-form-site"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-bharata-cave-position",
+      "subject_id": "mud6-en-bharata-mayuresa-cave",
+      "predicate": "source_position",
+      "object_id": null,
+      "value": "North of Gaṇeśa, facing him, one krośa distant; no modern site identification.",
+      "evidence_ids": [
+        "mud6-e-bharata-final-form-site"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud6-a-bharata-final-form",
+      "subject_id": "mud5-en-bharata",
+      "predicate": "narrated_final_outcome",
+      "object_id": null,
+      "value": "At end becomes Gaṇeśa-form(22), distinct from devotion grant.",
+      "evidence_ids": [
+        "mud6-e-bharata-final-form-site"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ]
+}

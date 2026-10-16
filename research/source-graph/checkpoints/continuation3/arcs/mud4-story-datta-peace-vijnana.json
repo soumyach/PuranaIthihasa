@@ -1,0 +1,1194 @@
+{
+  "checkpoint": "continuation3",
+  "completed_arc_id": "mud4-story-datta-peace-vijnana",
+  "graph_sha256": "cecbec8daa706000cb98923d6b48e16119667f17c4f6fce4acf05de2b7a7a376",
+  "scope_status": "COMPLETE_BOUNDED_ARC",
+  "independent_review_limit": "Source-local author checking complete; selective independent review in separate bounded reports, not universal certification.",
+  "story": {
+    "id": "mud4-story-datta-peace-vijnana",
+    "title": "Atri’s peace-yoga instruction, Datta’s realization and Vijñāna installation",
+    "source_id": "gp-src-mudgala",
+    "witness_id": "gp-wit-sd-mudgala-2",
+    "scope": "2.8.1–86",
+    "event_ids": [
+      "mud4-event-datta-peace-question",
+      "mud4-event-atri-peace-doctrine",
+      "mud4-event-atri-mind-siddhi-initiation",
+      "mud4-event-datta-ganga-vision-hymn",
+      "mud4-event-vijnana-ganesa-grants",
+      "mud4-event-datta-self-offering-installation"
+    ],
+    "status": "COMPLETE",
+    "completeness_basis": "Entire bounded cited Sanskrit arc read; significant named actors, relationships, boons/powers, dialogue and transition checks by author. Independent root review separate.",
+    "missing_sections": [],
+    "editorial_notes": "Source narration order. Embedded narratives have their own spines; parent records their framing transitions without duplicating events."
+  },
+  "newly_completed_this_continuation": true,
+  "events": [
+    {
+      "event": {
+        "id": "mud4-event-datta-peace-question",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-datta-peace-vijnana",
+        "sequence": 1,
+        "passage_ids": [
+          "mud4-p-datta-peace-question"
+        ],
+        "participants": [
+          "mud-en-dattatreya",
+          "mud2-en-atri",
+          "mud-en-brahma",
+          "mud-en-vakratunda",
+          "gp-m-en-siva"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Datta moves through varied avadhūta yoga conduct, sometimes eating/body behavior like cattle/beasts/birds. Reaching sahaja and inward-controller independence yet lacking peace despite manifest/unmanifest Brahman practice, he approaches father Atri, bows and is seated respectfully among yogins. He asks peace-yoga beyond qualified/unqualified/equanimity/turya/sahaja states he has practiced, troubled by independence still remaining. Atri promises eternal peace-yoga learned from Brahmā, says Gaṇapati is their and Śiva/gods’ family deity, origin/support of all; worship him to gain peace as other gods did.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-datta-peace-question"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-datta-peace-question",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-datta-peace-question",
+          "locator": "Mudgala2.8.1–15",
+          "paraphrase": "Datta moves through varied avadhūta yoga conduct, sometimes eating/body behavior like cattle/beasts/birds. Reaching sahaja and inward-controller independence yet lacking peace despite manifest/unmanifest Brahman practice, he approaches father Atri, bows and is seated respectfully among yogins. He asks peace-yoga beyond qualified/unqualified/equanimity/turya/sahaja states he has practiced, troubled by independence still remaining. Atri promises eternal peace-yoga learned from Brahmā, says Gaṇapati is their and Śiva/gods’ family deity, origin/support of all; worship him to gain peace as other gods did.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud4-event-atri-peace-doctrine",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-datta-peace-vijnana",
+        "sequence": 2,
+        "passage_ids": [
+          "mud4-p-atri-peace-doctrine"
+        ],
+        "participants": [
+          "mud2-en-atri",
+          "mud-en-dattatreya",
+          "mud-en-vakratunda",
+          "mud4-en-atri-peace-teaching",
+          "mud-en-shakti",
+          "mud-en-vishnu",
+          "gp-m-en-siva"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Atri maps name/form to Śakti/asat, immortal self to Solar/sat, their unity to Viṣṇu/sadasat, distinct fourth/neti/nirmoha/independence to Śiva, and fourfold union to māyā-Svānanda Gaṇeśa. Karma yoga joins acts; knowledge yoga joins knowledge; their nonduality gives sama/ānanda; freely adopting/rejecting these is independent sahaja. Svānanda union joins worlds/Brahmans in nondifference; ayoga excludes union/entry and māyā, described as nirvṛtti. He distinguishes Svānanda-residing Gaṇeśa from mere Svānanda identity, play/union from playless yoga; dissolution of both saṃyoga/ayoga is Gaṇeśa’s peace/full yoga, where with/without māyā distinction is delusion. Terms remain this teacher’s doctrinal maps, not cross-school equivalences.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-atri-peace-doctrine"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-atri-peace-doctrine",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-atri-peace-doctrine",
+          "locator": "Mudgala2.8.16–36",
+          "paraphrase": "Atri maps name/form to Śakti/asat, immortal self to Solar/sat, their unity to Viṣṇu/sadasat, distinct fourth/neti/nirmoha/independence to Śiva, and fourfold union to māyā-Svānanda Gaṇeśa. Karma yoga joins acts; knowledge yoga joins knowledge; their nonduality gives sama/ānanda; freely adopting/rejecting these is independent sahaja. Svānanda union joins worlds/Brahmans in nondifference; ayoga excludes union/entry and māyā, described as nirvṛtti. He distinguishes Svānanda-residing Gaṇeśa from mere Svānanda identity, play/union from playless yoga; dissolution of both saṃyoga/ayoga is Gaṇeśa’s peace/full yoga, where with/without māyā distinction is delusion. Terms remain this teacher’s doctrinal maps, not cross-school equivalences.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud4-event-atri-mind-siddhi-initiation",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-datta-peace-vijnana",
+        "sequence": 3,
+        "passage_ids": [
+          "mud4-p-atri-mind-siddhi-initiation"
+        ],
+        "participants": [
+          "mud2-en-atri",
+          "mud-en-dattatreya",
+          "mud-en-vakratunda",
+          "mud4-en-atri-peace-teaching",
+          "mud-en-siddhi",
+          "mud-en-buddhi",
+          "mud3-en-ekaksara-mantra"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Atri calls Buddhi fivefold mind and Siddhi deluding accomplishment, distinguishing dharma/artha/kāma/mokṣa and Brahman-state siddhis. Reflections in five mental activities and five desired sovereignties are described as Gaṇarāja form and jīva respectively; desire circles in their wealth. With fivefold mind destroyed and sovereignties dissolved Datta will become Gaṇarāja in peace-yoga. Atri urges leaving prior avadhūta path to become chief avadhūta by casting off great mind/sovereignty, offers prescribed Gaṇeśa mantra and ritually gives one-syllable mantra to his son; Datta bows and leaves.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-atri-mind-siddhi-initiation"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-atri-mind-siddhi-initiation",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-atri-mind-siddhi-initiation",
+          "locator": "Mudgala2.8.37–45",
+          "paraphrase": "Atri calls Buddhi fivefold mind and Siddhi deluding accomplishment, distinguishing dharma/artha/kāma/mokṣa and Brahman-state siddhis. Reflections in five mental activities and five desired sovereignties are described as Gaṇarāja form and jīva respectively; desire circles in their wealth. With fivefold mind destroyed and sovereignties dissolved Datta will become Gaṇarāja in peace-yoga. Atri urges leaving prior avadhūta path to become chief avadhūta by casting off great mind/sovereignty, offers prescribed Gaṇeśa mantra and ritually gives one-syllable mantra to his son; Datta bows and leaves.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud4-event-datta-ganga-vision-hymn",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-datta-peace-vijnana",
+        "sequence": 4,
+        "passage_ids": [
+          "mud4-p-datta-ganga-vision-hymn"
+        ],
+        "participants": [
+          "mud-en-dattatreya",
+          "mud-en-vakratunda",
+          "mud2-en-ganga",
+          "mud4-en-ganga-south-datta",
+          "mud4-en-datta-hymn",
+          "mud-en-siddhi",
+          "mud-en-buddhi",
+          "mud-en-vishnu",
+          "gp-m-en-siva",
+          "mud-en-brahma",
+          "mud-en-shakti"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Datta, explicitly Viṣṇu-form, worships Gaṇeśa on Gaṅgā’s SOUTH bank, relinquishes previous grounds and practices heart meditation/peace. After ONE YEAR he attains peace and becomes Gaṇapatya. Gaṇeśa freely visits his hermitage; Datta rises/bows/hymns family deity as yoga-peace, Siddhi/Buddhi and fivefold mind, sovereignty/delusion-maker/destroyer, Svānanda/saṃyoga, Sāṃkhya/videha/bodha/deha-dehī, ahaṃkāra/mahat/bindu/nāda/Guṇeśa and creator/preserver/destroyer/Sun/Śakti/all beings. He says sight blesses body/parents/lineage/learning/yoga/tapas; dances with tears/raised hair. Gaṇeśa takes him by hand and embraces.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-datta-ganga-vision-hymn"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-datta-ganga-vision-hymn",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-datta-ganga-vision-hymn",
+          "locator": "Mudgala2.8.46–65",
+          "paraphrase": "Datta, explicitly Viṣṇu-form, worships Gaṇeśa on Gaṅgā’s SOUTH bank, relinquishes previous grounds and practices heart meditation/peace. After ONE YEAR he attains peace and becomes Gaṇapatya. Gaṇeśa freely visits his hermitage; Datta rises/bows/hymns family deity as yoga-peace, Siddhi/Buddhi and fivefold mind, sovereignty/delusion-maker/destroyer, Svānanda/saṃyoga, Sāṃkhya/videha/bodha/deha-dehī, ahaṃkāra/mahat/bindu/nāda/Guṇeśa and creator/preserver/destroyer/Sun/Śakti/all beings. He says sight blesses body/parents/lineage/learning/yoga/tapas; dances with tears/raised hair. Gaṇeśa takes him by hand and embraces.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud4-event-vijnana-ganesa-grants",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-datta-peace-vijnana",
+        "sequence": 5,
+        "passage_ids": [
+          "mud4-p-vijnana-ganesa-grants"
+        ],
+        "participants": [
+          "mud-en-dattatreya",
+          "mud-en-vakratunda",
+          "mud2-en-atri",
+          "gp-m-en-siva",
+          "mud4-en-vijnanaksetra",
+          "mud4-en-vijnanaganapa",
+          "mud4-en-datta-hymn",
+          "mud4-en-qualified-hymn-users"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Gaṇeśa declares Datta a yogin through his grace, with full unwavering peace and no future distinction; to deepen love he will stay here. Atri’s Gaṇeśa knowledge becomes direct realization here, so he calls it Vijñānakṣetra and himself Vijñānagaṇapa; sight gives peace and devoted residents receive peace-yoga near Datta. Śiva formerly realized knowledge here and was named Vijñāneśvara by him; Datta’s practice near Śiva gives friendship through grace. Datta’s hymn gives users yoga-peace/Brahman, four aims, all siddhis and knowledge. No separate desired-boon request is narrated before this declaration.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [
+          "mud4-power-datta-full-peace"
+        ],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-vijnana-ganesa-grants"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-vijnana-ganesa-grants",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-vijnana-ganesa-grants",
+          "locator": "Mudgala2.8.66–74",
+          "paraphrase": "Gaṇeśa declares Datta a yogin through his grace, with full unwavering peace and no future distinction; to deepen love he will stay here. Atri’s Gaṇeśa knowledge becomes direct realization here, so he calls it Vijñānakṣetra and himself Vijñānagaṇapa; sight gives peace and devoted residents receive peace-yoga near Datta. Śiva formerly realized knowledge here and was named Vijñāneśvara by him; Datta’s practice near Śiva gives friendship through grace. Datta’s hymn gives users yoga-peace/Brahman, four aims, all siddhis and knowledge. No separate desired-boon request is narrated before this declaration.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "mud4-event-datta-self-offering-installation",
+        "source_id": "gp-src-mudgala",
+        "witness_id": "gp-wit-sd-mudgala-2",
+        "supporting_witness_ids": [
+          "gp-wit-sd-mudgala-2"
+        ],
+        "story_id": "mud4-story-datta-peace-vijnana",
+        "sequence": 6,
+        "passage_ids": [
+          "mud4-p-datta-self-offering-installation"
+        ],
+        "participants": [
+          "mud-en-dattatreya",
+          "mud-en-vakratunda",
+          "gp-m-en-siva",
+          "mud4-en-vijnanaksetra",
+          "mud4-en-vijnanaganapa",
+          "mud2-en-ganga",
+          "mud4-en-ganga-south-datta",
+          "mud4-en-qualified-hymn-users"
+        ],
+        "setting": null,
+        "cause": null,
+        "details": "Gaṇeśa vanishes; saddened Datta meditates and by grace offers self in yoga-nondifference. Devotee Datta/master Gaṇeśa separation ceases, with servant established in master-form: ātmānivedana devotion through peace-yoga. Vijñāneśvara Śiva appears, embraces his new friend, says he meditated on this same Gaṇeśa here. Placing Datta foremost, Śiva/Brahmins install Gaṇeśa on Gaṅgā south bank and sages name Vijñānagaṇarāja. The Vijñāna field gives travelers peace-yoga/all siddhis; installation is JYEṢṬHA bright Caturthī, annually celebrated then. Gods/yogins/Gandharvas/siddhas/nāgas/people serve; hearing/reading Datta account gives all siddhis.",
+        "outcome": null,
+        "changed_relationship_ids": [],
+        "introduced_entity_ids": [],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "mud4-e-datta-self-offering-installation"
+        ],
+        "verification_status": "VERIFIED"
+      },
+      "evidence": [
+        {
+          "id": "mud4-e-datta-self-offering-installation",
+          "source_id": "gp-src-mudgala",
+          "witness_id": "gp-wit-sd-mudgala-2",
+          "passage_id": "mud4-p-datta-self-offering-installation",
+          "locator": "Mudgala2.8.75–86",
+          "paraphrase": "Gaṇeśa vanishes; saddened Datta meditates and by grace offers self in yoga-nondifference. Devotee Datta/master Gaṇeśa separation ceases, with servant established in master-form: ātmānivedana devotion through peace-yoga. Vijñāneśvara Śiva appears, embraces his new friend, says he meditated on this same Gaṇeśa here. Placing Datta foremost, Śiva/Brahmins install Gaṇeśa on Gaṅgā south bank and sages name Vijñānagaṇarāja. The Vijñāna field gives travelers peace-yoga/all siddhis; installation is JYEṢṬHA bright Caturthī, annually celebrated then. Gods/yogins/Gandharvas/siddhas/nāgas/people serve; hearing/reading Datta account gives all siddhis.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "Mudgala continuation4 author, direct Sanskrit body",
+          "verification_notes": "Read actual cited body; attributed dialogue kept distinct from narrator fact. Independent root review pending."
+        }
+      ]
+    }
+  ],
+  "participant_entities": [
+    {
+      "id": "gp-m-en-siva",
+      "name": "Śiva / Śambhu / Sadāśiva / Śaṅkara",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "gp-e-matsara-austerity",
+        "mud-e-divine-refuge",
+        "mud-e-andhaka-envoy",
+        "mud-e-matsara-karma-argument",
+        "mud-e-kailasa-battle",
+        "mud-e-matsara-captures-siva",
+        "mud-e-world-allocation",
+        "mud-e-datta-counsel",
+        "mud-e-vak-manifest",
+        "mud-e-siva-pasupata",
+        "mud-e-sons-fell-siva",
+        "mud-e-following-witness-previews",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-nandi-curse",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-sati-request",
+        "rmd2-e-sati-arrival",
+        "rmd2-e-sati-death-rebirth",
+        "rmd2-e-shiva-grief",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-daksha-human-head-restored",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-mahat-birth",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-body-worlds",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-brahma",
+      "name": "Brahmā",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-naimisha",
+        "rmd2-e-daksha-aftermath-frame",
+        "rmd2-e-daksha-origin",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-daksha-countercurse",
+        "rmd2-e-battle-halted",
+        "rmd2-e-daksha-goat-revival",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-assembly",
+        "mud2-e-yaj-arrives",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-vishnu",
+      "name": "Viṣṇu",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-divine-refuge",
+        "rmd2-e-invocation",
+        "rmd2-e-daksha-insult",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-dadhichi-curse",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-missile-counter-beheading",
+        "rmd2-e-battle-halted",
+        "rmd2-e-senses-gods",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-dattatreya",
+      "name": "Dattātreya / Ātreya",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "mud4-e-marici-pulaha-atri-lines"
+      ]
+    },
+    {
+      "id": "mud-en-vakratunda",
+      "name": "Vakratunda / Gaṇeśa / Gaṇanāyaka / Vighnapa",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-datta-counsel",
+        "rmd2-e-invocation",
+        "rmd2-e-sacrifice-plan",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-shiva-restoration-boon",
+        "rmd2-e-virabhadra-origin",
+        "rmd2-e-sacrifice-duels",
+        "rmd2-e-mudgala-ganesha-explanation",
+        "rmd2-e-parvati-disciple-question",
+        "rmd2-e-nondual-meditation-teaching",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-pair-tapas-hymn",
+        "rmd2-e-pair-boons-duties",
+        "rmd2-e-tattva-teachers",
+        "rmd2-e-tattva-boon",
+        "rmd2-e-gunesha-emergence",
+        "rmd2-e-gunesha-hymn-request",
+        "rmd2-e-gunesha-boon-outcome",
+        "rmd2-e-pradhana-vedas",
+        "rmd2-e-dream-waking-creation",
+        "rmd2-e-virat-tapas",
+        "rmd2-e-virat-grants",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "rmd2-e-five-request-hymn-fruits",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-five-deity-frame",
+        "mud4-e-creation-body-orders"
+      ]
+    },
+    {
+      "id": "mud-en-siddhi",
+      "name": "Siddhi",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-vak-manifest",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "mud2-e-field-layout",
+        "mud3-e-inner-manifestation",
+        "mud4-e-atri-mind-siddhi-initiation"
+      ]
+    },
+    {
+      "id": "mud-en-buddhi",
+      "name": "Buddhi",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-vak-manifest",
+        "rmd2-e-shiva-ganesha-prayer",
+        "rmd2-e-cosmic-pair-emergence",
+        "rmd2-e-five-manifestation-hymn",
+        "mud2-e-field-layout",
+        "mud3-e-inner-manifestation",
+        "mud4-e-atri-mind-siddhi-initiation"
+      ]
+    },
+    {
+      "id": "mud-en-shakti",
+      "name": "Śakti (Brahmā’s pride speech)",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud-e-brahma-pride",
+        "rmd2-e-invocation",
+        "rmd2-e-five-emergence",
+        "rmd2-e-five-duties-boons",
+        "mud2-e-field-layout",
+        "mud3-e-brahma-visnu-pride",
+        "mud4-e-daksha-daughter-grant-recollection"
+      ]
+    },
+    {
+      "id": "mud2-en-ganga",
+      "name": "Gaṅgā / Bhāgīrathī",
+      "type": "DEITY",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud2-e-field-assembly",
+        "mud4-e-pitrs-mena-mountain-lines"
+      ]
+    },
+    {
+      "id": "mud2-en-atri",
+      "name": "Atri",
+      "type": "SAGE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud2-e-narada-mutual-curses",
+        "mud4-e-remaining-daughters-marriages"
+      ]
+    },
+    {
+      "id": "mud3-en-ekaksara-mantra",
+      "name": "One-syllable great Gaṇeśa mantra taught to Mudgala",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud3-e-mudgala-initiation-vision",
+        "mud4-e-atri-mind-siddhi-initiation"
+      ]
+    },
+    {
+      "id": "mud4-en-qualified-hymn-users",
+      "name": "Qualified users of continuation4 hymns/accounts",
+      "type": "CONCEPT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-visnu-hymn-benefits"
+      ]
+    },
+    {
+      "id": "mud4-en-atri-peace-teaching",
+      "name": "Atri’s Gaṇeśa peace-yoga teaching to Datta",
+      "type": "TEXT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-atri-peace-doctrine"
+      ]
+    },
+    {
+      "id": "mud4-en-datta-hymn",
+      "name": "Datta’s Gaṇeśa yoga-peace hymn",
+      "type": "TEXT",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-datta-ganga-vision-hymn"
+      ]
+    },
+    {
+      "id": "mud4-en-ganga-south-datta",
+      "name": "Gaṅgā SOUTH-bank Datta hermitage/realization site",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-datta-ganga-vision-hymn"
+      ]
+    },
+    {
+      "id": "mud4-en-vijnanaksetra",
+      "name": "Vijñānakṣetra on Gaṅgā south bank",
+      "type": "PLACE",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-vijnana-ganesa-grants"
+      ]
+    },
+    {
+      "id": "mud4-en-vijnanaganapa",
+      "name": "Vijñānagaṇapa / Vijñānagaṇarāja at Datta site",
+      "type": "MANIFESTATION",
+      "source_scope": "gp-src-mudgala",
+      "aliases": [],
+      "evidence_ids": [
+        "mud4-e-vijnana-ganesa-grants"
+      ]
+    }
+  ],
+  "event_evidence_relationships": [
+    {
+      "id": "mud4-r-atri-brahma-peace-teacher",
+      "subject_id": "mud2-en-atri",
+      "predicate": "taught_peace_yoga_by",
+      "object_id": "mud-en-brahma",
+      "evidence_ids": [
+        "mud4-e-datta-peace-question"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-atri-brahma-peace-teacher"
+    },
+    {
+      "id": "mud4-r-datta-atri-peace-teacher",
+      "subject_id": "mud-en-dattatreya",
+      "predicate": "taught_peace_yoga_by",
+      "object_id": "mud2-en-atri",
+      "evidence_ids": [
+        "mud4-e-datta-peace-question"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-datta-atri-peace-teacher"
+    },
+    {
+      "id": "mud4-r-atri-family-deity",
+      "subject_id": "mud2-en-atri",
+      "predicate": "has_family_deity",
+      "object_id": "mud-en-vakratunda",
+      "evidence_ids": [
+        "mud4-e-datta-peace-question"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-atri-family-deity"
+    },
+    {
+      "id": "mud4-r-datta-family-deity",
+      "subject_id": "mud-en-dattatreya",
+      "predicate": "has_family_deity",
+      "object_id": "mud-en-vakratunda",
+      "evidence_ids": [
+        "mud4-e-datta-peace-question"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-datta-family-deity"
+    },
+    {
+      "id": "mud4-r-atri-teaching-author",
+      "subject_id": "mud4-en-atri-peace-teaching",
+      "predicate": "taught_by",
+      "object_id": "mud2-en-atri",
+      "evidence_ids": [
+        "mud4-e-atri-peace-doctrine"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-atri-teaching-author"
+    },
+    {
+      "id": "mud4-r-datta-one-initiation",
+      "subject_id": "mud-en-dattatreya",
+      "predicate": "initiated_into",
+      "object_id": "mud3-en-ekaksara-mantra",
+      "evidence_ids": [
+        "mud4-e-atri-mind-siddhi-initiation"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-datta-one-initiation"
+    },
+    {
+      "id": "mud4-r-atri-one-teacher",
+      "subject_id": "mud3-en-ekaksara-mantra",
+      "predicate": "taught_by",
+      "object_id": "mud2-en-atri",
+      "evidence_ids": [
+        "mud4-e-atri-mind-siddhi-initiation"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-atri-one-teacher"
+    },
+    {
+      "id": "mud4-r-datta-tapas-south",
+      "subject_id": "mud-en-dattatreya",
+      "predicate": "worships_at",
+      "object_id": "mud4-en-ganga-south-datta",
+      "evidence_ids": [
+        "mud4-e-datta-ganga-vision-hymn"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-datta-tapas-south"
+    },
+    {
+      "id": "mud4-r-south-ganga",
+      "subject_id": "mud4-en-ganga-south-datta",
+      "predicate": "south_bank_of",
+      "object_id": "mud2-en-ganga",
+      "evidence_ids": [
+        "mud4-e-datta-ganga-vision-hymn"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-south-ganga"
+    },
+    {
+      "id": "mud4-r-datta-hymn-author",
+      "subject_id": "mud4-en-datta-hymn",
+      "predicate": "hymned_by",
+      "object_id": "mud-en-dattatreya",
+      "evidence_ids": [
+        "mud4-e-datta-ganga-vision-hymn"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-datta-hymn-author"
+    },
+    {
+      "id": "mud4-r-vijn-form-ganesa",
+      "subject_id": "mud4-en-vijnanaganapa",
+      "predicate": "local_form_of",
+      "object_id": "mud-en-vakratunda",
+      "evidence_ids": [
+        "mud4-e-vijnana-ganesa-grants"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-vijn-form-ganesa"
+    },
+    {
+      "id": "mud4-r-vijn-form-place",
+      "subject_id": "mud4-en-vijnanaganapa",
+      "predicate": "abides_in",
+      "object_id": "mud4-en-vijnanaksetra",
+      "evidence_ids": [
+        "mud4-e-vijnana-ganesa-grants"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-vijn-form-place"
+    },
+    {
+      "id": "mud4-r-datta-siva-friendship",
+      "subject_id": "mud-en-dattatreya",
+      "predicate": "friend_of",
+      "object_id": "gp-m-en-siva",
+      "evidence_ids": [
+        "mud4-e-vijnana-ganesa-grants"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-datta-siva-friendship"
+    },
+    {
+      "id": "mud4-r-vijn-field-south",
+      "subject_id": "mud4-en-vijnanaksetra",
+      "predicate": "corresponds_to_site",
+      "object_id": "mud4-en-ganga-south-datta",
+      "evidence_ids": [
+        "mud4-e-datta-self-offering-installation"
+      ],
+      "verification_status": "VERIFIED",
+      "assertion_id": "mud4-a-vijn-field-south"
+    }
+  ],
+  "event_evidence_boons_and_powers": [
+    {
+      "id": "mud4-power-datta-full-peace",
+      "type": "BOON",
+      "recipient_id": "mud-en-dattatreya",
+      "grantor_id": "mud-en-vakratunda",
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-vijnana-ganesa-grants"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-vijnana-ganesa-grants"
+        ],
+        "grantor_id": [
+          "mud4-e-vijnana-ganesa-grants"
+        ],
+        "granted": [
+          "mud4-e-vijnana-ganesa-grants"
+        ],
+        "duration": [
+          "mud4-e-vijnana-ganesa-grants"
+        ],
+        "notes": [
+          "mud4-e-vijnana-ganesa-grants"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Declaration after hymn; no separately quoted requested boon.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Full unwavering peace and no future distinction; Gaṇeśa stays for love; friendship with Śiva through grace.",
+      "mechanism": null,
+      "trigger": null,
+      "restrictions": null,
+      "duration": "Always/unwavering, no future distinction.",
+      "counter": null
+    },
+    {
+      "id": "mud4-power-vijnana-resident-benefits",
+      "type": "BOON",
+      "recipient_id": "mud4-en-qualified-hymn-users",
+      "grantor_id": "mud-en-vakratunda",
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-vijnana-ganesa-grants"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-vijnana-ganesa-grants"
+        ],
+        "grantor_id": [
+          "mud4-e-vijnana-ganesa-grants"
+        ],
+        "trigger": [
+          "mud4-e-vijnana-ganesa-grants"
+        ],
+        "granted": [
+          "mud4-e-vijnana-ganesa-grants"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Peace by sight; peace-yoga near Datta for devoted residents.",
+      "mechanism": null,
+      "trigger": "Sight here gives peace; devotionally reside here for Gaṇeśa.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud4-power-datta-hymn-users",
+      "type": "BOON",
+      "recipient_id": "mud4-en-qualified-hymn-users",
+      "grantor_id": "mud-en-vakratunda",
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-vijnana-ganesa-grants"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-vijnana-ganesa-grants"
+        ],
+        "grantor_id": [
+          "mud4-e-vijnana-ganesa-grants"
+        ],
+        "trigger": [
+          "mud4-e-vijnana-ganesa-grants"
+        ],
+        "granted": [
+          "mud4-e-vijnana-ganesa-grants"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Yoga-peace, Brahman, four aims, all siddhis and knowledge.",
+      "mechanism": null,
+      "trigger": "Read/hear Datta’s hymn.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud4-power-vijnana-pilgrimage",
+      "type": "POWER",
+      "recipient_id": "mud4-en-qualified-hymn-users",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-datta-self-offering-installation"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-datta-self-offering-installation"
+        ],
+        "trigger": [
+          "mud4-e-datta-self-offering-installation"
+        ],
+        "granted": [
+          "mud4-e-datta-self-offering-installation"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "Peace-yoga and all siddhis.",
+      "mechanism": null,
+      "trigger": "Pilgrimage to Vijñāna field.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    },
+    {
+      "id": "mud4-power-datta-account-users",
+      "type": "POWER",
+      "recipient_id": "mud4-en-qualified-hymn-users",
+      "grantor_id": null,
+      "worshipped_id": null,
+      "later_event_ids": [],
+      "evidence_ids": [
+        "mud4-e-datta-self-offering-installation"
+      ],
+      "field_evidence": {
+        "recipient_id": [
+          "mud4-e-datta-self-offering-installation"
+        ],
+        "trigger": [
+          "mud4-e-datta-self-offering-installation"
+        ],
+        "granted": [
+          "mud4-e-datta-self-offering-installation"
+        ]
+      },
+      "verification_status": "VERIFIED",
+      "notes": "Null fields unstated in the cited body; no remembered grant/condition imported.",
+      "motive": null,
+      "austerity_or_circumstances": null,
+      "requested": null,
+      "granted": "All siddhis.",
+      "mechanism": null,
+      "trigger": "Read/hear Datta account.",
+      "restrictions": null,
+      "duration": null,
+      "counter": null
+    }
+  ],
+  "navigation_note": "Related-row subset uses shared event evidence. Graph tables retain narrower iconographic/ritual passages and all other source-local rows.",
+  "associated_assertions": [
+    {
+      "id": "mud4-a-atri-brahma-peace-teacher",
+      "subject_id": "mud2-en-atri",
+      "predicate": "taught_peace_yoga_by",
+      "object_id": "mud-en-brahma",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-datta-peace-question"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-datta-atri-peace-teacher",
+      "subject_id": "mud-en-dattatreya",
+      "predicate": "taught_peace_yoga_by",
+      "object_id": "mud2-en-atri",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-datta-peace-question"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-atri-family-deity",
+      "subject_id": "mud2-en-atri",
+      "predicate": "has_family_deity",
+      "object_id": "mud-en-vakratunda",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-datta-peace-question"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-datta-family-deity",
+      "subject_id": "mud-en-dattatreya",
+      "predicate": "has_family_deity",
+      "object_id": "mud-en-vakratunda",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-datta-peace-question"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-atri-teaching-author",
+      "subject_id": "mud4-en-atri-peace-teaching",
+      "predicate": "taught_by",
+      "object_id": "mud2-en-atri",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-atri-peace-doctrine"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-atri-peace-map",
+      "subject_id": "mud4-en-atri-peace-teaching",
+      "predicate": "doctrinal_mapping",
+      "object_id": null,
+      "value": "Atri maps name/form to Śakti/asat, immortal self to Solar/sat, their unity to Viṣṇu/sadasat, distinct fourth/neti/nirmoha/independence to Śiva, and fourfold union to māyā-Svānanda Gaṇeśa. Karma yoga joins acts; knowledge yoga joins knowledge; their nonduality gives sama/ānanda; freely adopting/rejecting these is independent sahaja. Svānanda union joins worlds/Brahmans in nondifference; ayoga excludes union/entry and māyā, described as nirvṛtti. He distinguishes Svānanda-residing Gaṇeśa from mere Svānanda identity, play/union from playless yoga; dissolution of both saṃyoga/ayoga is Gaṇeśa’s peace/full yoga, where with/without māyā distinction is delusion. Terms remain this teacher’s doctrinal maps, not cross-school equivalences.",
+      "evidence_ids": [
+        "mud4-e-atri-peace-doctrine"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-atri-fivefold-reflections",
+      "subject_id": "mud4-en-atri-peace-teaching",
+      "predicate": "teaches",
+      "object_id": null,
+      "value": "Buddhi=fivefold mind; Siddhi=deluding accomplishment; mental-activity reflection=Gaṇarāja-form; five sovereignty reflection=jīva; dissolution gives Gaṇarāja identity by peace-yoga",
+      "evidence_ids": [
+        "mud4-e-atri-mind-siddhi-initiation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-datta-one-initiation",
+      "subject_id": "mud-en-dattatreya",
+      "predicate": "initiated_into",
+      "object_id": "mud3-en-ekaksara-mantra",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-atri-mind-siddhi-initiation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-atri-one-teacher",
+      "subject_id": "mud3-en-ekaksara-mantra",
+      "predicate": "taught_by",
+      "object_id": "mud2-en-atri",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-atri-mind-siddhi-initiation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-datta-tapas-south",
+      "subject_id": "mud-en-dattatreya",
+      "predicate": "worships_at",
+      "object_id": "mud4-en-ganga-south-datta",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-datta-ganga-vision-hymn"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-south-ganga",
+      "subject_id": "mud4-en-ganga-south-datta",
+      "predicate": "south_bank_of",
+      "object_id": "mud2-en-ganga",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-datta-ganga-vision-hymn"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-datta-hymn-author",
+      "subject_id": "mud4-en-datta-hymn",
+      "predicate": "hymned_by",
+      "object_id": "mud-en-dattatreya",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-datta-ganga-vision-hymn"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-datta-one-year",
+      "subject_id": "mud-en-dattatreya",
+      "predicate": "peace_attainment_duration",
+      "object_id": null,
+      "value": "ONE YEAR, no divine qualifier",
+      "evidence_ids": [
+        "mud4-e-datta-ganga-vision-hymn"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-datta-hymn-doctrine",
+      "subject_id": "mud4-en-datta-hymn",
+      "predicate": "hymnal_correspondences",
+      "object_id": null,
+      "value": "Yoga-peace; Siddhi/Buddhi mind/sovereignty; saṃyoga/Svānanda; Sāṃkhya/videha/bodha/deha-dehī; ahaṃkāra/mahat/bindu/nāda/Guṇeśa; five gods/all beings",
+      "evidence_ids": [
+        "mud4-e-datta-ganga-vision-hymn"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-vijn-form-ganesa",
+      "subject_id": "mud4-en-vijnanaganapa",
+      "predicate": "local_form_of",
+      "object_id": "mud-en-vakratunda",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-vijnana-ganesa-grants"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-vijn-form-place",
+      "subject_id": "mud4-en-vijnanaganapa",
+      "predicate": "abides_in",
+      "object_id": "mud4-en-vijnanaksetra",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-vijnana-ganesa-grants"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-siva-vijnanesvara",
+      "subject_id": "gp-m-en-siva",
+      "predicate": "contextual_title",
+      "object_id": null,
+      "value": "Vijñāneśvara, named after earlier realization at this site",
+      "evidence_ids": [
+        "mud4-e-vijnana-ganesa-grants"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-datta-siva-friendship",
+      "subject_id": "mud-en-dattatreya",
+      "predicate": "friend_of",
+      "object_id": "gp-m-en-siva",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-vijnana-ganesa-grants"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-vijn-field-south",
+      "subject_id": "mud4-en-vijnanaksetra",
+      "predicate": "corresponds_to_site",
+      "object_id": "mud4-en-ganga-south-datta",
+      "value": null,
+      "evidence_ids": [
+        "mud4-e-datta-self-offering-installation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-vijn-installation-date",
+      "subject_id": "mud4-en-vijnanaksetra",
+      "predicate": "source_ritual_date",
+      "object_id": null,
+      "value": "Jyeṣṭha śukla Caturthī; annual celebration then",
+      "evidence_ids": [
+        "mud4-e-datta-self-offering-installation"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "id": "mud4-a-datta-atmanivedana",
+      "subject_id": "mud-en-dattatreya",
+      "predicate": "attained_devotion",
+      "object_id": null,
+      "value": "Ātmānivedana: source states devotee/master distinction ceases through yoga-nondifference; servant in master-form",
+      "evidence_ids": [
+        "mud4-e-datta-self-offering-installation"
+      ],
+      "verification_status": "VERIFIED"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "checkpoint": "continuation5",
+  "tracks": [
+    {
+      "track": "gup6",
+      "author_patch_sha256": "5fe8a75b42151e7946af43129d465f4e1dacf3568b048d95ae685b267d744e5b",
+      "final_snapshot": "checkpoints/gup6/hospitality-parent-loss-freeze-003.json",
+      "status": "FINAL_FROZEN_STRUCTURALLY_VALIDATED",
+      "earlier_snapshots": "Append-only earlier draft checkpoints retained for history; current graph merges only the final author patch plus documented root updates."
+    },
+    {
+      "track": "gkr6",
+      "author_patch_sha256": "a2a13a0a4f8204588982030b4f008e70aeaa1ee2efcbd76b4039f6c520f54b67",
+      "final_snapshot": "checkpoints/gkr6/007-final-receipt.json",
+      "status": "FINAL_FROZEN_STRUCTURALLY_VALIDATED",
+      "earlier_snapshots": "Append-only earlier draft checkpoints retained for history; current graph merges only the final author patch plus documented root updates."
+    },
+    {
+      "track": "mud6",
+      "author_patch_sha256": "da41addc535152e0763413ed2e8fceb7d028750ed86f3c0f0e8f4aa363598c63",
+      "final_snapshot": "checkpoints/mud6/12-final-validated-freeze-through26.json",
+      "status": "FINAL_FROZEN_STRUCTURALLY_VALIDATED",
+      "earlier_snapshots": "Append-only earlier draft checkpoints retained for history; current graph merges only the final author patch plus documented root updates."
+    }
+  ],
+  "post_freeze_root_updates": "reviews/central_updates.json; original author bytes remain immutable",
+  "root_review": "Source-local author checking and selective root/peer verification are separate."
+}

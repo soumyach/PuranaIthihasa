@@ -1,0 +1,438 @@
+{
+  "date": "2026-10-11",
+  "reviewer": "Independent Ganapatya subagent; author of original sampled audit, not Lal/DM tracks",
+  "method": "Compared final records, field evidence, linked evidence and passage ranges against prior direct source reads. This is correction closure only; original audit verdicts are unchanged.",
+  "current_snapshot_hashes": {
+    "lal": {
+      "path": "/Users/vellankisriharsha/Documents/Codex/2026-10-11/t/work/tracks/lal.json",
+      "sha256": "05d4a4a65de82cc66660c898d63c88ae230158c6a7ebb8dc83b84377331f2899",
+      "size_bytes": 531245
+    },
+    "dm": {
+      "path": "/Users/vellankisriharsha/Documents/Codex/2026-10-11/t/work/tracks/dm.json",
+      "sha256": "9e1ac380f12a950f4cc3d57571d7a4aff0eae315e60ab66a008090b6627574d0",
+      "size_bytes": 477290
+    }
+  },
+  "original_audit_sha256": "84685aa03c60afa3ce998834a0fc55af867f9a4e61ba43f77aa436ac796d7e65",
+  "original_audit_path": "/Users/vellankisriharsha/Documents/Codex/2026-10-11/t/work/tracks/independent_review.json",
+  "corrections": [
+    {
+      "correction_id": "jayavighna-counter-locator",
+      "track": "lal",
+      "claim_id": "lal-power-005",
+      "status": "RESOLVED",
+      "checked_field": "counter",
+      "required_evidence_ids": [
+        "lal-e-030"
+      ],
+      "current_record": {
+        "id": "lal-power-005",
+        "type": "POWER",
+        "recipient_id": "lal-ent-094",
+        "grantor_id": null,
+        "worshipped_id": null,
+        "motive": null,
+        "austerity_or_circumstances": null,
+        "requested": null,
+        "granted": null,
+        "mechanism": "Consecrated Jayavighna induces lethargy and disaffection after landing inside camp.",
+        "trigger": null,
+        "restrictions": "Mantriṇī and Daṇḍanāthā are explicitly unaffected.",
+        "duration": null,
+        "counter": "Gaṇanātha pulverizes the slab and its presiding powers with his tusks.",
+        "later_event_ids": [],
+        "evidence_ids": [
+          "lal-e-029",
+          "lal-e-030"
+        ],
+        "field_evidence": {
+          "mechanism": [
+            "lal-e-029"
+          ],
+          "restrictions": [
+            "lal-e-029"
+          ],
+          "counter": [
+            "lal-e-029",
+            "lal-e-030"
+          ],
+          "recipient_id": [
+            "lal-e-029"
+          ]
+        },
+        "verification_status": "VERIFIED",
+        "notes": "Null fields are unstated in the cited examined passage unless otherwise noted; full corpus examination may add information."
+      },
+      "checked_evidence_records": [
+        {
+          "id": "lal-e-030",
+          "source_id": "lal-source",
+          "witness_id": "lal-witness",
+          "passage_id": "lal-p-27-67-83",
+          "locator": "Chapter 27, verses 67–83",
+          "paraphrase": "Lalitā looks at Kāmeśvara and laughs; elephant-faced Gaṇanātha appears in her smile’s radiance, embraced by Siddhilakṣmī. He pulverizes Jayavighna with tusks, restoring readiness, then creates elephant-faced allies under six Vighnanāyakas.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "lalitopakhyana research agent",
+          "verification_notes": "Directly read accessible English witness; VERIFIED means witness check, not Sanskrit or cross-edition confirmation."
+        }
+      ],
+      "checked_passage_records": [
+        {
+          "id": "lal-p-27-67-83",
+          "source_id": "lal-source",
+          "witness_id": "lal-witness",
+          "book": "Brahmāṇḍa Purāṇa, fourth section (host description)",
+          "khanda": "Lalitopākhyāna",
+          "chapter": 27,
+          "verses": "67–83",
+          "url": "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362965.html",
+          "locator": "Chapter 27, verses 67–83",
+          "reading_status": "READ",
+          "extraction_status": "PARTIAL",
+          "limitations": "Bounded narrative and selected entity/power extraction; not exhaustive verse-by-verse inventory."
+        }
+      ],
+      "source_url": "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362965.html",
+      "source_locator": "27.74–76 within67–83",
+      "resolution_notes": "Record and counter field now include the destruction passage; verse74–75 directly supports tusks and presiding powers."
+    },
+    {
+      "correction_id": "kama-hair-pore-locator",
+      "track": "lal",
+      "claim_id": "lal-power-009",
+      "status": "RESOLVED",
+      "checked_field": "mechanism",
+      "required_evidence_ids": [
+        "lal-e-043"
+      ],
+      "current_record": {
+        "id": "lal-power-009",
+        "type": "BOON",
+        "recipient_id": "lal-ent-004",
+        "grantor_id": "lal-ent-037",
+        "worshipped_id": null,
+        "motive": null,
+        "austerity_or_circumstances": "Restoration through compassionate glance; Kāma devoutly offers service.",
+        "requested": "Employment in her service; no explicit request for immunity.",
+        "granted": "Unhindered arrows, many Kāmas, protection from Śiva’s burning, invisible operation.",
+        "mechanism": "Kāmas emerge from hair pores; arrows stir desire even in Śiva.",
+        "trigger": "Lalitā’s favour and subsequent deployment of arrows.",
+        "restrictions": "Separate instructions discriminate between her respected devotees and those harassing them.",
+        "duration": null,
+        "counter": "Śiva’s former burning explicitly no longer effective; other counters unstated.",
+        "later_event_ids": [],
+        "evidence_ids": [
+          "lal-e-042",
+          "lal-e-043"
+        ],
+        "field_evidence": {
+          "austerity_or_circumstances": [
+            "lal-e-042"
+          ],
+          "requested": [
+            "lal-e-042"
+          ],
+          "granted": [
+            "lal-e-042"
+          ],
+          "mechanism": [
+            "lal-e-042",
+            "lal-e-043"
+          ],
+          "trigger": [
+            "lal-e-042"
+          ],
+          "restrictions": [
+            "lal-e-042"
+          ],
+          "counter": [
+            "lal-e-042"
+          ],
+          "recipient_id": [
+            "lal-e-042"
+          ],
+          "grantor_id": [
+            "lal-e-042"
+          ]
+        },
+        "verification_status": "VERIFIED",
+        "notes": "Null fields are unstated in the cited examined passage unless otherwise noted; full corpus examination may add information."
+      },
+      "checked_evidence_records": [
+        {
+          "id": "lal-e-043",
+          "source_id": "lal-source",
+          "witness_id": "lal-witness",
+          "passage_id": "lal-p-30-65-97",
+          "locator": "Chapter 30, verses 65–97",
+          "paraphrase": "Kāma’s emanations spread; with Rati, Vasanta, moon and breeze he shoots Śiva, then Pārvatī. Mutual longing grows. Her father prescribes penance: winter immersion and summer fires under the sun. Śiva is pleased; formal marriage and residence at Kailāsa follow.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "lalitopakhyana research agent",
+          "verification_notes": "Directly read accessible English witness; VERIFIED means witness check, not Sanskrit or cross-edition confirmation."
+        }
+      ],
+      "checked_passage_records": [
+        {
+          "id": "lal-p-30-65-97",
+          "source_id": "lal-source",
+          "witness_id": "lal-witness",
+          "book": "Brahmāṇḍa Purāṇa, fourth section (host description)",
+          "khanda": "Lalitopākhyāna",
+          "chapter": 30,
+          "verses": "65–97",
+          "url": "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362969.html",
+          "locator": "Chapter 30, verses 65–97",
+          "reading_status": "READ",
+          "extraction_status": "PARTIAL",
+          "limitations": "Bounded narrative and selected entity/power extraction; not exhaustive verse-by-verse inventory."
+        }
+      ],
+      "source_url": "https://www.wisdomlib.org/hinduism/book/lalitopakhyana-lalita-mahatmya/d/doc362969.html",
+      "source_locator": "30.66 within65–97",
+      "resolution_notes": "Record and mechanism field now include65–97, encompassing explicit hair-pore emergence in66. The evidence paraphrase is compressed; the linked passage contains the precise statement."
+    },
+    {
+      "correction_id": "raktabija-counter-locator",
+      "track": "dm",
+      "claim_id": "dm-power-blood-replication",
+      "status": "RESOLVED",
+      "checked_field": "counter",
+      "required_evidence_ids": [
+        "dm-evidence-041",
+        "dm-sanskrit-evidence-041"
+      ],
+      "current_record": {
+        "id": "dm-power-blood-replication",
+        "type": "POWER",
+        "recipient_id": "dm-raktabija",
+        "grantor_id": null,
+        "worshipped_id": null,
+        "motive": null,
+        "austerity_or_circumstances": null,
+        "requested": null,
+        "granted": null,
+        "mechanism": "A blood-drop falling to the earth generates a fighter equal in stature, strength, valor and prowess.",
+        "trigger": "His blood falls from weapon wounds to the ground.",
+        "restrictions": null,
+        "duration": null,
+        "counter": "Cāmuṇḍā catches/drinks blood and eats generated fighters while Devī continues attacking.",
+        "later_event_ids": [
+          "dm-event-041"
+        ],
+        "evidence_ids": [
+          "dm-evidence-040",
+          "dm-sanskrit-evidence-040",
+          "dm-evidence-041",
+          "dm-sanskrit-evidence-041"
+        ],
+        "field_evidence": {
+          "mechanism": [
+            "dm-evidence-040",
+            "dm-sanskrit-evidence-040"
+          ],
+          "trigger": [
+            "dm-evidence-040",
+            "dm-sanskrit-evidence-040"
+          ],
+          "counter": [
+            "dm-evidence-041",
+            "dm-sanskrit-evidence-041"
+          ],
+          "recipient_id": [
+            "dm-evidence-040",
+            "dm-sanskrit-evidence-040"
+          ]
+        },
+        "verification_status": "VERIFIED",
+        "notes": "DM narrates the mechanism but no grantor, worship or austerity; therefore POWER, not an inferred boon from Brahmā or Śiva."
+      },
+      "checked_evidence_records": [
+        {
+          "id": "dm-evidence-041",
+          "source_id": "dm-source",
+          "witness_id": "dm-pargiter",
+          "passage_id": "dm-ch08",
+          "locator": "DM 8 / Pargiter canto 88, web lines 73–76",
+          "paraphrase": "Caṇḍikā directs Cāmuṇḍā to catch the blood and devour generated Asuras. As Devī wounds Raktabīja, Kālī drinks every flow, including fighters generated in her mouth. His club causes Devī no pain; multi-weapon blows drain him bloodless. Gods rejoice and Mothers dance.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "DM research agent; direct reading",
+          "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation."
+        },
+        {
+          "id": "dm-sanskrit-evidence-041",
+          "source_id": "dm-source",
+          "witness_id": "dm-sanskritdocuments",
+          "passage_id": "dm-sanskrit-041",
+          "locator": "DM 8.53–63",
+          "paraphrase": "Caṇḍikā directs Cāmuṇḍā to catch the blood and devour generated Asuras. As Devī wounds Raktabīja, Kālī drinks every flow, including fighters generated in her mouth. His club causes Devī no pain; multi-weapon blows drain him bloodless. Gods rejoice and Mothers dance.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "DM research agent; selected Sanskrit reading",
+          "verification_notes": "Selected displayed Sanskrit range checked for local names, sequence and stated mechanisms. Cross-witness comparisons in paraphrase rely jointly on linked English evidence; this is not full independent translation or edition collation."
+        }
+      ],
+      "checked_passage_records": [
+        {
+          "id": "dm-ch08",
+          "source_id": "dm-source",
+          "witness_id": "dm-pargiter",
+          "book": "Mārkaṇḍeya Purāṇa",
+          "khanda": null,
+          "chapter": 88,
+          "verses": null,
+          "url": "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117167.html",
+          "locator": "Pargiter canto 88; Devī Māhātmya chapter 8; narrative body from speaker heading through final narrative paragraph, excluding website synopsis.",
+          "reading_status": "READ",
+          "extraction_status": "PARTIAL",
+          "limitations": "Complete source-ordered narrative transitions extracted; atomic hymn assertions, every anonymous actor and accessory, every numerical army total and every grammatical variant are not exhaustively graphed. No Pargiter verse numbers inferred from Sanskrit mantra numbering."
+        },
+        {
+          "id": "dm-sanskrit-041",
+          "source_id": "dm-source",
+          "witness_id": "dm-sanskritdocuments",
+          "book": "Devī Māhātmya",
+          "khanda": null,
+          "chapter": 8,
+          "verses": "53–63",
+          "url": "https://sanskritdocuments.org/doc_devii/durga700.html",
+          "locator": "DM 8.53–63, SanskritDocuments displayed mantra numbering",
+          "reading_status": "READ",
+          "extraction_status": "COMPLETE",
+          "limitations": "Only this bounded cited Sanskrit passage checked; not chapter-level Sanskrit completeness."
+        }
+      ],
+      "source_url": "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117167.html",
+      "source_locator": "Canto88 lines73–76; Sanskrit8.53–63",
+      "resolution_notes": "Both record and counter field now cite interception, consumption and continued wounding. The former mechanism range is retained for mechanism only."
+    },
+    {
+      "correction_id": "suratha-intermediate-transition",
+      "track": "dm",
+      "claim_id": "dm-event-001",
+      "status": "RESOLVED",
+      "checked_field": "details and linked evidence paraphrase",
+      "current_record": {
+        "id": "dm-event-001",
+        "source_id": "dm-source",
+        "witness_id": "dm-pargiter",
+        "story_id": "dm-story-frame",
+        "sequence": 1,
+        "passage_ids": [
+          "dm-ch01"
+        ],
+        "participants": [
+          "dm-markandeya",
+          "dm-suratha",
+          "dm-caitra-lineage",
+          "dm-kola-enemies",
+          "dm-suratha-ministers",
+          "dm-suratha-elephant",
+          "dm-medhas",
+          "dm-savarni",
+          "dm-surya",
+          "dm-svarocisha-period"
+        ],
+        "setting": "Medhas’s forest hermitage",
+        "cause": null,
+        "details": "Mārkaṇḍeya introduces the future eighth Manu. Suratha of Caitra’s line loses to hostile kings, returns to his own city and resumes ruling his own territory, then suffers renewed enemy attack. His powerful corrupt ministers seize treasury and army even in his city. Riding away under a hunting pretext, he reaches Medhas’s hermitage yet worries about kingdom, elephant, servants and treasure.",
+        "outcome": "Suratha remains attached after dispossession.",
+        "changed_relationship_ids": [
+          "dm-rel-001"
+        ],
+        "introduced_entity_ids": [
+          "dm-markandeya",
+          "dm-suratha",
+          "dm-caitra-lineage",
+          "dm-kola-enemies",
+          "dm-suratha-ministers",
+          "dm-suratha-elephant",
+          "dm-medhas",
+          "dm-savarni",
+          "dm-surya",
+          "dm-svarocisha-period"
+        ],
+        "introduced_power_ids": [],
+        "consequences": [],
+        "evidence_ids": [
+          "dm-evidence-001"
+        ],
+        "verification_status": "VERIFIED",
+        "title": "Suratha remains attached after dispossession."
+      },
+      "checked_evidence_records": [
+        {
+          "id": "dm-evidence-001",
+          "source_id": "dm-source",
+          "witness_id": "dm-pargiter",
+          "passage_id": "dm-ch01",
+          "locator": "DM 1 / Pargiter canto 81, web lines 57–61",
+          "paraphrase": "Mārkaṇḍeya introduces the future eighth Manu. Suratha of Caitra’s line loses to hostile kings, returns to his own city and resumes ruling his own territory, then suffers renewed enemy attack. His powerful corrupt ministers seize treasury and army even in his city. Riding away under a hunting pretext, he reaches Medhas’s hermitage yet worries about kingdom, elephant, servants and treasure.",
+          "classification": "DIRECT_TEXT",
+          "verification_status": "VERIFIED",
+          "verifier": "DM research agent; direct reading",
+          "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation. Independent QA confirmed the intermediate return and renewed attack in canto81 web lines58–59."
+        }
+      ],
+      "checked_passage_records": [
+        {
+          "id": "dm-ch01",
+          "source_id": "dm-source",
+          "witness_id": "dm-pargiter",
+          "book": "Mārkaṇḍeya Purāṇa",
+          "khanda": null,
+          "chapter": 81,
+          "verses": null,
+          "url": "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117155.html",
+          "locator": "Pargiter canto 81; Devī Māhātmya chapter 1; narrative body from speaker heading through final narrative paragraph, excluding website synopsis.",
+          "reading_status": "READ",
+          "extraction_status": "PARTIAL",
+          "limitations": "Complete source-ordered narrative transitions extracted; atomic hymn assertions, every anonymous actor and accessory, every numerical army total and every grammatical variant are not exhaustively graphed. No Pargiter verse numbers inferred from Sanskrit mantra numbering."
+        }
+      ],
+      "source_url": "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117155.html",
+      "source_locator": "Canto81 lines58–59 within57–61",
+      "resolution_notes": "Both event and evidence now preserve resumed city rule, renewed attack and ministerial dispossession in source order; the intermediate transition matches the prior direct reading."
+    }
+  ],
+  "summary": {
+    "resolved": 4,
+    "unresolved": 0
+  },
+  "full_arc_completeness": [
+    {
+      "track": "lal",
+      "story_spine_id": "lal-story-bhanda",
+      "independent_full_arc_completeness": "UNDETERMINED",
+      "reason": "Correction closure adds no whole-arc source reread or blanket independent approval."
+    },
+    {
+      "track": "dm",
+      "story_spine_id": "dm-story-frame",
+      "independent_full_arc_completeness": "UNDETERMINED",
+      "reason": "Correction closure adds no whole-arc source reread or blanket independent approval."
+    },
+    {
+      "track": "dm",
+      "story_spine_id": "dm-story-madhu-kaitabha",
+      "independent_full_arc_completeness": "UNDETERMINED",
+      "reason": "Correction closure adds no whole-arc source reread or blanket independent approval."
+    },
+    {
+      "track": "dm",
+      "story_spine_id": "dm-story-mahisha",
+      "independent_full_arc_completeness": "UNDETERMINED",
+      "reason": "Correction closure adds no whole-arc source reread or blanket independent approval."
+    },
+    {
+      "track": "dm",
+      "story_spine_id": "dm-story-shumbha",
+      "independent_full_arc_completeness": "UNDETERMINED",
+      "reason": "Correction closure adds no whole-arc source reread or blanket independent approval."
+    }
+  ],
+  "remaining_review_scope": "All original unreviewed counts/IDs remain unreviewed except that these four corrected records have been rechecked. No new assertions, source chapters or complete story spines receive independent blanket approval."
+}
