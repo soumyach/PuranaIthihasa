@@ -5,6 +5,7 @@
   "properties": {
     "books": {"items": {"$ref": "book-manifest.schema.json"}, "type": "array"},
     "collections": {"items": {"additionalProperties": true, "properties": {"id": {"type": "string"}, "title": {"type": "string"}}, "required": ["id", "title"], "type": "object"}, "type": "array"},
+    "metadata": {"type": "object"},
     "schema_version": {"const": "1.0", "type": "string"}
   },
   "required": ["schema_version", "collections", "books"],

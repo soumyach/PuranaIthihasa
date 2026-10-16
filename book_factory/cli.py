@@ -9,7 +9,7 @@ from .errors import FactoryError
 
 
 def build_parser():
-    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory Foundation PR2")
+    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory Foundation PR3")
     parser.add_argument("--root", default=".", help="repository root (default: current directory)")
     parser.add_argument("--catalogue", help="explicit catalogue path (intended for offline fixtures and validation)")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -28,6 +28,15 @@ def build_parser():
     dossier.add_argument("--write", action="store_true", help="persist an immutable dossier version")
     packet = subparsers.add_parser("story-packet", help="build a story packet from one graph spine")
     packet.add_argument("--spine-id", required=True)
+    evaluate = subparsers.add_parser("evaluate-catalogue", help="reconcile mappings and rank controlled-pilot candidates")
+    evaluate.add_argument("--write", action="store_true")
+    prepare = subparsers.add_parser("prepare-pilot", help="store the source dossier and Story Packet only")
+    prepare.add_argument("--book-id", required=True)
+    draft = subparsers.add_parser("draft-manuscript", help="build a provider request without using the interactive model")
+    draft.add_argument("--book-id", required=True)
+    draft.add_argument("--dry-run", action="store_true")
+    review = subparsers.add_parser("review-manuscript", help="check independent editorial-review capability")
+    review.add_argument("--book-id", required=True)
     subparsers.add_parser("next", help="alias for a dry-run next-book selection")
     return parser
 
@@ -52,6 +61,14 @@ def run(args):
         return director.source_dossier(args.book_id, args.write)
     if args.command == "story-packet":
         return director.story_packet(args.spine_id)
+    if args.command == "evaluate-catalogue":
+        return director.evaluate_catalogue(args.write)
+    if args.command == "prepare-pilot":
+        return director.prepare_pilot(args.book_id)
+    if args.command == "draft-manuscript":
+        return director.draft_manuscript(args.book_id, args.dry_run)
+    if args.command == "review-manuscript":
+        return director.review_manuscript(args.book_id)
     if args.command == "next":
         return director.produce_next(True)
     raise AssertionError("unreachable")

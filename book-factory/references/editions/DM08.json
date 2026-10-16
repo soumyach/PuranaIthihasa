@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM08",
+  "title": "The Enemy Who Multiplied",
+  "edition_status": "EXISTING_EDITION",
+  "production_provenance": "PRE_EXISTING_IMPORT",
+  "automatic_production_eligible": false,
+  "newly_produced_by_factory": false,
+  "publication_readiness_status": "PENDING_INDEPENDENT_REVIEW",
+  "source_verification_status": "PENDING_SCOPE_RECONCILIATION",
+  "editorial_certification_status": "NOT_CERTIFIED_BY_BOOK_FACTORY",
+  "scope_reconciliation": {
+    "catalogue_scope": "Devi Mahatmya chapter 8: Raktabija's bloodborne multiplication, counter-strategy, Kali's intervention and outcome",
+    "manuscript_scope": "Family-reading edition drawing on Devi Mahatmya chapters 1, 4, 5, 6, 7, 8, 9, 12, and 13",
+    "status": "MISMATCH_REQUIRES_INDEPENDENT_SOURCE_VERIFICATION"
+  },
+  "assets": [
+    {
+      "asset_id": "dm08-existing-illustrated-edition-v1",
+      "kind": "ILLUSTRATED_PDF",
+      "version": "1.0",
+      "path": "book-factory/references/visual-benchmarks/The_Enemy_Who_Multiplied_Original_Size_Combined.pdf",
+      "sha256": "3867fccdd8c8755d27ff06c7543d8002cefb7531c1d4f39c743a43bff9c4a29f",
+      "bytes": 122897487,
+      "pages": 30,
+      "storage_mode": "LOCAL_UNTRACKED_REFERENCE",
+      "role": "PRESENTATION_REFERENCE_ONLY"
+    },
+    {
+      "asset_id": "dm08-manuscript-v2",
+      "kind": "MANUSCRIPT_MARKDOWN",
+      "version": "2.0",
+      "path": "book-factory/references/literary-benchmarks/The_Enemy_Who_Multiplied_Manuscript_v2.md",
+      "sha256": "6684d61e7c8f58a3fc3d851d7e8cbc7d13eb1e42105dbb9d011c1e7453791865",
+      "storage_mode": "GIT_IMMUTABLE_REFERENCE",
+      "role": "LITERARY_QUALITY_BENCHMARK"
+    }
+  ],
+  "source_bindings": [
+    {"story_spine_id": "dm-story-frame", "reason": "manuscript framing and conclusion"},
+    {"story_spine_id": "dm-story-mahisha", "reason": "manuscript recalls the Mahisha cycle"},
+    {"story_spine_id": "dm-story-shumbha", "reason": "Raktabija and surrounding battle chronology"}
+  ],
+  "constraints": [
+    "Do not regenerate, rewrite, reillustrate, or reproduce this edition.",
+    "Do not use either asset as source-fact authority.",
+    "Do not infer publication clearance or Book Factory editorial approval from asset existence."
+  ]
+}

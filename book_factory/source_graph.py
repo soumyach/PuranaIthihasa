@@ -21,6 +21,7 @@ TABLES = {
     "variants": "variants_and_conflicts.json",
     "source_registry": "source_registry.json",
     "chapter_coverage": "chapter_coverage.json",
+    "source_coverage": "source_coverage.json",
 }
 
 
@@ -81,6 +82,29 @@ class ReadOnlySourceGraph:
         records = registry.get("sources", []) if isinstance(registry, dict) else registry
         return next((item for item in records if item.get("id") == source_id), None)
 
+    def witness_record(self, witness_id):
+        registry = self._load("source_registry")
+        return next((item for item in registry.get("witnesses", []) if item.get("id") == witness_id), None)
+
+    def source_coverage_records(self, source_id, witness_id=None):
+        coverage = self._load("source_coverage")
+        return [
+            item for item in coverage.get("records", [])
+            if item.get("source_id") == source_id
+            and (witness_id is None or item.get("witness_id") == witness_id)
+        ]
+
+    def full_arc_review(self, spine_id):
+        path = self.root / "review_resolution.json"
+        if not path.is_file():
+            return {"story_spine_id": spine_id, "independent_full_arc_completeness": "UNDETERMINED", "reason": "No review-resolution record is available."}
+        with path.open("r", encoding="utf-8") as handle:
+            records = json.load(handle).get("full_arc_completeness", [])
+        return next(
+            (item for item in records if item.get("story_spine_id") == spine_id),
+            {"story_spine_id": spine_id, "independent_full_arc_completeness": "UNDETERMINED", "reason": "No blanket independent full-arc determination is recorded."},
+        )
+
     @staticmethod
     def _review_records(value):
         records = []
@@ -95,10 +119,14 @@ class ReadOnlySourceGraph:
                 records.extend(ReadOnlySourceGraph._review_records(child))
         return records
 
-    def story_packet(self, spine_id):
+    def story_packet(self, spine_id, event_ids=None):
         spine = self.story_spine(spine_id)
         event_index = {item["id"]: item for item in self._load("events")}
-        events = [event_index[event_id] for event_id in spine["event_ids"]]
+        selected_ids = list(event_ids) if event_ids else list(spine["event_ids"])
+        unknown = set(selected_ids) - set(spine["event_ids"])
+        if unknown:
+            raise ContractError("event scope is outside story spine", {"spine_id": spine_id, "event_ids": sorted(unknown)})
+        events = [event_index[event_id] for event_id in selected_ids]
         events.sort(key=lambda item: item["sequence"])
         passage_ids = {value for event in events for value in event.get("passage_ids", [])}
         evidence_ids = {value for event in events for value in event.get("evidence_ids", [])}
@@ -122,7 +150,7 @@ class ReadOnlySourceGraph:
             if item["id"] in power_ids
             or item.get("recipient_id") in entity_ids
             or item.get("grantor_id") in entity_ids
-            or set(item.get("later_event_ids", [])).intersection(spine["event_ids"])
+            or set(item.get("later_event_ids", [])).intersection(selected_ids)
         ]
         variants = [item for item in self._load("variants") if spine["source_id"] in item.get("source_ids", [])]
         with (self.root / "claims_needing_review.json").open("r", encoding="utf-8") as handle:
@@ -141,6 +169,8 @@ class ReadOnlySourceGraph:
             and (not item.get("witness_id") or item.get("witness_id") == spine.get("witness_id"))
             and passage_ids.intersection(item.get("passage_ids", []))
         ]
+        source_coverage = self.source_coverage_records(spine["source_id"], spine.get("witness_id"))
+        narrative_complete = any(item.get("narrative_extraction_complete") for item in source_coverage)
         return {
             "graph_hash": self.graph_hash(),
             "spine": spine,
@@ -153,14 +183,20 @@ class ReadOnlySourceGraph:
             "variants_and_conflicts": variants,
             "unresolved_review_flags": unresolved,
             "source": self.source_record(spine["source_id"]),
+            "witness": self.witness_record(spine.get("witness_id")),
+            "source_coverage": source_coverage,
+            "independent_full_arc_review": self.full_arc_review(spine_id),
+            "selected_event_ids": selected_ids,
             "chapter_coverage": coverage,
             "completeness": {
                 "bounded_spine_status": spine["status"],
                 "basis": spine.get("completeness_basis"),
-                "chapter_extraction_status": "COMPLETE" if coverage and all(
-                    item.get("state") == "COMPLETE" and item.get("read_entire_chapter")
-                    for item in coverage
-                ) else "INCOMPLETE",
+                "chapter_extraction_status": (
+                    "COMPLETE" if coverage and all(
+                        item.get("state") == "COMPLETE" and item.get("read_entire_chapter")
+                        for item in coverage
+                    ) else "NARRATIVE_COMPLETE_ATOMIC_PARTIAL" if narrative_complete else "INCOMPLETE"
+                ),
                 "not_exhaustive_scripture_verification": True,
             },
         }

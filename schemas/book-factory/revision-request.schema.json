@@ -1,0 +1,18 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/revision-request.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "1.0", "type": "string"},
+    "book_id": {"type": "string"},
+    "review_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "finding_ids": {"items": {"type": "string"}, "type": "array"},
+    "affected_sections": {"items": {"type": "string"}, "type": "array"},
+    "bounded_excerpts": {"items": {"type": "string"}, "type": "array"},
+    "constraint": {"type": "string"},
+    "request_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
+  },
+  "required": ["schema_version", "book_id", "review_hash", "finding_ids", "affected_sections", "bounded_excerpts", "constraint", "request_hash"],
+  "title": "Targeted revision request",
+  "type": "object"
+}

@@ -42,6 +42,8 @@ def validate_catalogue(catalogue):
             raise ContractError("%s has invalid product line" % book_id)
         if book.get("line") == "ORIGINALS_KALPANA" and book.get("source_class") != "KALPANA":
             raise ContractError("%s must be explicitly classified KALPANA" % book_id)
+        if book.get("edition_status") == "EXISTING_EDITION" and book.get("automatic_production_eligible") is not False:
+            raise ContractError("%s existing edition must be excluded from automatic production" % book_id)
     if len(book_ids) != len(set(book_ids)):
         raise ContractError("book ids must be unique")
     return catalogue
@@ -71,6 +73,7 @@ class CatalogueStore:
             books[item["id"]] = deepcopy(item)
         merged = {
             "schema_version": "1.0",
+            **({"metadata": deepcopy(incoming["metadata"])} if "metadata" in incoming else {}),
             "collections": sorted(collections.values(), key=lambda item: item["id"]),
             "books": sorted(books.values(), key=lambda item: item["id"]),
         }
@@ -90,7 +93,10 @@ class CatalogueStore:
         ready = [
             book
             for book in self.load()["books"]
-            if book["readiness"] == "READY" and book["id"] not in excluded
+            if book["readiness"] == "READY"
+            and book["id"] not in excluded
+            and book.get("edition_status") != "EXISTING_EDITION"
+            and book.get("automatic_production_eligible", True)
         ]
         ready.sort(key=lambda item: (item.get("priority", 1000), item["id"]))
         return ready[0] if ready else None

@@ -1,0 +1,122 @@
+{
+  "candidates": [
+    {
+      "blockers": [
+        {
+          "code": "RIGHTS_NOT_CLEARED",
+          "rights_status": "UNKNOWN"
+        }
+      ],
+      "book_id": "DM04",
+      "controlled_pilot_eligibility": "CONDITIONAL_RIGHTS_AND_INDEPENDENT_REVIEW",
+      "evidence": {
+        "characters": 63,
+        "citations": 26,
+        "events": 16,
+        "powers": 9
+      },
+      "mapping_outcome": "VERIFIED_EXACT",
+      "publication_readiness": "NOT_CERTIFIED",
+      "rank": 1,
+      "reason": "A complete sixteen-event arc with dispossession, divine manifestation, weapon gifts, battle escalation, transformation duel, victory, hymn, and aftermath.",
+      "scope_score": 5,
+      "source_limitations": [
+        {
+          "code": "CHAPTER_EXTRACTION_INCOMPLETE",
+          "spine_id": "dm-story-mahisha",
+          "status": "NARRATIVE_COMPLETE_ATOMIC_PARTIAL"
+        },
+        {
+          "code": "INDEPENDENT_FULL_ARC_REVIEW_UNDETERMINED",
+          "reason": "Correction closure adds no whole-arc source reread or blanket independent approval.",
+          "spine_id": "dm-story-mahisha",
+          "status": "UNDETERMINED"
+        }
+      ],
+      "source_readiness": "BLOCKED",
+      "title": "The Buffalo King",
+      "visual_score": 5
+    },
+    {
+      "blockers": [
+        {
+          "code": "RIGHTS_NOT_CLEARED",
+          "rights_status": "UNKNOWN"
+        }
+      ],
+      "book_id": "DM02",
+      "controlled_pilot_eligibility": "CONDITIONAL_RIGHTS_AND_INDEPENDENT_REVIEW",
+      "evidence": {
+        "characters": 16,
+        "citations": 7,
+        "events": 4,
+        "powers": 3
+      },
+      "mapping_outcome": "VERIFIED_EXACT",
+      "publication_readiness": "NOT_CERTIFIED",
+      "rank": 2,
+      "reason": "A compact exact four-event cosmic arc with a clear reversal and modest first-run complexity.",
+      "scope_score": 5,
+      "source_limitations": [
+        {
+          "code": "CHAPTER_EXTRACTION_INCOMPLETE",
+          "spine_id": "dm-story-madhu-kaitabha",
+          "status": "NARRATIVE_COMPLETE_ATOMIC_PARTIAL"
+        },
+        {
+          "code": "INDEPENDENT_FULL_ARC_REVIEW_UNDETERMINED",
+          "reason": "Correction closure adds no whole-arc source reread or blanket independent approval.",
+          "spine_id": "dm-story-madhu-kaitabha",
+          "status": "UNDETERMINED"
+        }
+      ],
+      "source_readiness": "BLOCKED",
+      "title": "The Sleep That Held Vishnu",
+      "visual_score": 4
+    },
+    {
+      "blockers": [
+        {
+          "code": "RIGHTS_NOT_CLEARED",
+          "rights_status": "UNKNOWN"
+        }
+      ],
+      "book_id": "DM01",
+      "controlled_pilot_eligibility": "CONDITIONAL_RIGHTS_AND_INDEPENDENT_REVIEW",
+      "evidence": {
+        "characters": 15,
+        "citations": 9,
+        "events": 6,
+        "powers": 8
+      },
+      "mapping_outcome": "VERIFIED_EXACT",
+      "publication_readiness": "NOT_CERTIFIED",
+      "rank": 3,
+      "reason": "A self-contained framed human story with a resolved return, although less visually varied than the battle narratives.",
+      "scope_score": 5,
+      "source_limitations": [
+        {
+          "code": "CHAPTER_EXTRACTION_INCOMPLETE",
+          "spine_id": "dm-story-frame",
+          "status": "NARRATIVE_COMPLETE_ATOMIC_PARTIAL"
+        },
+        {
+          "code": "INDEPENDENT_FULL_ARC_REVIEW_UNDETERMINED",
+          "reason": "Correction closure adds no whole-arc source reread or blanket independent approval.",
+          "spine_id": "dm-story-frame",
+          "status": "UNDETERMINED"
+        }
+      ],
+      "source_readiness": "BLOCKED",
+      "title": "The King Who Could Not Let Go",
+      "visual_score": 3
+    }
+  ],
+  "eligibility_note": "No finalist is publication/source certified. These are conditional controlled-production finalists.",
+  "recommendation": {
+    "book_id": "DM04",
+    "title": "The Buffalo King"
+  },
+  "schema_version": "1.0",
+  "strictly_eligible_count": 0
+}

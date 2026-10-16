@@ -187,6 +187,14 @@ class StateStore:
         new_state["current_stage"] = target
         new_state["blocked"] = recovery.get("reason") if recovery and target == "BLOCKED" else None
         new_state["recovery"] = deepcopy(recovery) if target in RECOVERY_STATES else None
+        artifacts = new_state.setdefault("artifacts", [])
+        for digest in sorted(output_hashes or []):
+            if digest not in artifacts:
+                artifacts.append(digest)
+        locked_inputs = new_state.setdefault("locked_input_hashes", [])
+        for digest in sorted(input_hashes or []):
+            if digest not in locked_inputs:
+                locked_inputs.append(digest)
         new_state["version"] += 1
         new_state["updated_at"] = utc_now()
         new_state["last_event_id"] = stable_id("event", self.book_id, new_state["version"], operation_key)

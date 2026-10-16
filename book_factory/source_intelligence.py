@@ -24,7 +24,7 @@ class StoryPacketBuilder:
     """Transform a raw graph packet without filling source gaps."""
 
     @staticmethod
-    def build(raw):
+    def build(raw, book_id=None):
         spine = raw["spine"]
         ordered_events = sorted(raw.get("events", []), key=lambda item: (item.get("sequence", 0), item.get("id", "")))
         claims = []
@@ -58,6 +58,17 @@ class StoryPacketBuilder:
             "source_id": spine["source_id"],
             "witness_id": spine.get("witness_id"),
             "source": raw.get("source"),
+            "witness": raw.get("witness"),
+            "rights_evidence": {
+                "witness_status": (raw.get("witness") or {}).get("rights_status", "UNSPECIFIED"),
+                "reuse_boundary": "Use graph paraphrases and locators only; do not reproduce third-party website presentation.",
+                "project_clearance": "NOT_GRANTED_BY_SOURCE_GRAPH",
+            },
+            "source_coverage": raw.get("source_coverage", []),
+            "independent_full_arc_review": raw.get("independent_full_arc_review", {
+                "independent_full_arc_completeness": "UNDETERMINED"
+            }),
+            "selected_event_ids": raw.get("selected_event_ids", [event["id"] for event in ordered_events]),
             "tradition": (
                 (raw.get("source") or {}).get("tradition")
                 or (raw.get("source") or {}).get("traditions")
@@ -111,6 +122,8 @@ class StoryPacketBuilder:
             ],
             "graph_hash": raw["graph_hash"],
         }
+        if book_id:
+            packet["book_id"] = book_id
         packet["packet_hash"] = content_hash(packet)
         packet["id"] = stable_id("story-packet", packet["spine_id"], packet["packet_hash"])
         return packet
@@ -122,14 +135,19 @@ class SourceReadinessAssessor:
         self.root = Path(repository_root)
         self.packet_loader = packet_loader or graph.story_packet
 
-    def assess(self, manifest):
+    def assess(self, manifest, mappings=None):
         book_id = manifest.get("id")
         if not book_id:
             raise ContractError("source readiness requires a book id")
         standard = rules_status(self.root)
         blockers = []
         warnings = []
-        spine_ids = manifest.get("story_spine_ids", [])
+        mapping = mappings or manifest.get("source_mapping") or {
+            "outcome": "LEGACY_SPINE_LIST",
+            "segments": [{"story_spine_id": item, "event_ids": []} for item in manifest.get("story_spine_ids", [])],
+        }
+        segments = mapping.get("segments", [])
+        spine_ids = [item["story_spine_id"] for item in segments]
         rights_status = manifest.get("rights_status", "UNKNOWN")
         if standard["status"] != "AVAILABLE":
             blockers.append({"code": "RULES_UNAVAILABLE", "status": standard["status"]})
@@ -138,9 +156,14 @@ class SourceReadinessAssessor:
         if not spine_ids:
             blockers.append({"code": "NO_LINKED_STORY_SPINE"})
         packets = []
-        for spine_id in spine_ids:
+        for segment in segments:
+            spine_id = segment["story_spine_id"]
             try:
-                packet = self.packet_loader(spine_id)
+                event_ids = segment.get("event_ids") or None
+                try:
+                    packet = self.packet_loader(spine_id, event_ids)
+                except TypeError:
+                    packet = self.packet_loader(spine_id)
             except ContractError as exc:
                 blockers.append({"code": "UNKNOWN_STORY_SPINE", "spine_id": spine_id, "message": str(exc)})
                 continue
@@ -149,25 +172,37 @@ class SourceReadinessAssessor:
             if completeness.get("bounded_spine_status") != "COMPLETE":
                 warnings.append({"code": "BOUNDED_ARC_INCOMPLETE", "spine_id": spine_id})
             if completeness.get("chapter_extraction_status") != "COMPLETE":
-                warnings.append({"code": "CHAPTER_EXTRACTION_INCOMPLETE", "spine_id": spine_id})
+                warnings.append({
+                    "code": "CHAPTER_EXTRACTION_INCOMPLETE",
+                    "spine_id": spine_id,
+                    "status": completeness.get("chapter_extraction_status", "INCOMPLETE"),
+                })
             critical = _critical(packet.get("unresolved_review_flags", []))
             if critical:
                 warnings.append({"code": "CRITICAL_REVIEW_FLAGS", "spine_id": spine_id, "flag_ids": [item.get("id") for item in critical]})
+            arc_review = packet.get("independent_full_arc_review", {})
+            if arc_review.get("independent_full_arc_completeness") != "APPROVED":
+                warnings.append({
+                    "code": "INDEPENDENT_FULL_ARC_REVIEW_UNDETERMINED",
+                    "spine_id": spine_id,
+                    "status": arc_review.get("independent_full_arc_completeness", "UNDETERMINED"),
+                    "reason": arc_review.get("reason", "No blanket independent approval is recorded."),
+                })
             unsupported = [
-                claim["id"] for claim in StoryPacketBuilder.build(packet)["claims"]
+                claim["id"] for claim in StoryPacketBuilder.build(packet, book_id=book_id)["claims"]
                 if claim["classification"] == "UNSUPPORTED_SOURCE_GAP"
             ]
             if unsupported:
                 warnings.append({"code": "UNSUPPORTED_CRITICAL_CLAIMS", "spine_id": spine_id, "claim_ids": unsupported})
 
-        declared_examination = manifest.get("source_examination_status")
         graph_examinations = sorted({
             (packet.get("source") or {}).get("examination_status", "UNSPECIFIED")
             for packet in packets
         })
-        if declared_examination not in EXAMINATION_ALLOWED and (
-            not graph_examinations or any(status not in EXAMINATION_ALLOWED for status in graph_examinations)
-        ):
+        declared_examination = manifest.get("source_examination_status")
+        graph_unspecified = not graph_examinations or set(graph_examinations) == {"UNSPECIFIED"}
+        effective_examinations = [declared_examination] if graph_unspecified and declared_examination in EXAMINATION_ALLOWED else graph_examinations
+        if not effective_examinations or any(status not in EXAMINATION_ALLOWED for status in effective_examinations):
             warnings.append({
                 "code": "SOURCE_EXAMINATION_INCOMPLETE",
                 "declared_status": declared_examination or "UNSPECIFIED",
@@ -192,17 +227,34 @@ class SourceReadinessAssessor:
             "rights": {"status": rights_status, "notes": manifest.get("rights_notes", [])},
             "dimensions": {
                 "bounded_arc": "INCOMPLETE" if any(item["code"] == "BOUNDED_ARC_INCOMPLETE" for item in warnings) else ("COMPLETE" if packets else "UNAVAILABLE"),
-                "chapter_extraction": "INCOMPLETE" if any(item["code"] == "CHAPTER_EXTRACTION_INCOMPLETE" for item in warnings) else ("COMPLETE" if packets else "UNAVAILABLE"),
-                "source_examination": declared_examination or (graph_examinations if graph_examinations else "UNSPECIFIED"),
+                "chapter_extraction": (
+                    "NARRATIVE_COMPLETE_ATOMIC_PARTIAL"
+                    if packets and all(packet.get("completeness", {}).get("chapter_extraction_status") == "NARRATIVE_COMPLETE_ATOMIC_PARTIAL" for packet in packets)
+                    else "INCOMPLETE" if any(item["code"] == "CHAPTER_EXTRACTION_INCOMPLETE" for item in warnings)
+                    else "COMPLETE" if packets else "UNAVAILABLE"
+                ),
+                "source_examination": effective_examinations if effective_examinations else "UNSPECIFIED",
                 "critical_flags": "UNRESOLVED" if any(item["code"] in {"CRITICAL_REVIEW_FLAGS", "UNSUPPORTED_CRITICAL_CLAIMS"} for item in warnings) else "CLEAR",
+                "independent_full_arc_review": "UNDETERMINED" if any(item["code"] == "INDEPENDENT_FULL_ARC_REVIEW_UNDETERMINED" for item in warnings) else "APPROVED",
                 "rights": "CLEARED" if rights_status in RIGHTS_ALLOWED else "BLOCKED",
             },
             "claim_mappings": [
-                claim for packet in packets for claim in StoryPacketBuilder.build(packet)["claims"]
+                claim for packet in packets for claim in StoryPacketBuilder.build(packet, book_id=book_id)["claims"]
             ],
-            "story_packets": [StoryPacketBuilder.build(packet) for packet in packets],
+            "story_packets": [StoryPacketBuilder.build(packet, book_id=book_id) for packet in packets],
             "blockers": blockers,
             "unresolved_flags": warnings,
+            "mapping_outcome": mapping.get("outcome", "UNMAPPED"),
+            "controlled_pilot_eligibility": (
+                "CONDITIONAL_RIGHTS_AND_INDEPENDENT_REVIEW"
+                if mapping.get("outcome") == "VERIFIED_EXACT"
+                and packets
+                and all(packet.get("completeness", {}).get("bounded_spine_status") == "COMPLETE" for packet in packets)
+                and effective_examinations
+                and all(status in EXAMINATION_ALLOWED for status in effective_examinations)
+                else "NOT_ELIGIBLE"
+            ),
+            "publication_readiness": "NOT_CERTIFIED",
             "not_exhaustive_scripture_verification": True,
         }
         dossier["dossier_hash"] = content_hash(dossier)
@@ -217,7 +269,10 @@ class DossierStore:
         self.books_root = Path(books_root)
 
     def put(self, dossier):
-        digest = dossier.get("dossier_hash") or content_hash(dossier)
+        unsigned = {key: value for key, value in dossier.items() if key not in {"dossier_hash", "id", "stored_at"}}
+        digest = content_hash(unsigned)
+        if dossier.get("dossier_hash") != digest:
+            raise ContractError("dossier hash does not match content")
         path = self.books_root / dossier["book_id"] / "source-readiness" / (digest + ".json")
         if path.exists() and load_json(path) != dossier:
             raise ContractError("dossier hash collision")
@@ -233,7 +288,10 @@ class StoryPacketStore:
         self.books_root = Path(books_root)
 
     def put(self, book_id, packet):
-        digest = packet.get("packet_hash") or content_hash(packet)
+        unsigned = {key: value for key, value in packet.items() if key not in {"packet_hash", "id", "stored_at"}}
+        digest = content_hash(unsigned)
+        if packet.get("packet_hash") != digest:
+            raise ContractError("story packet hash does not match content")
         path = self.books_root / book_id / "story-packets" / (digest + ".json")
         if path.exists() and load_json(path) != packet:
             raise ContractError("story packet hash collision")

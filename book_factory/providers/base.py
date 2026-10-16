@@ -5,7 +5,14 @@ from abc import ABC, abstractmethod
 from ..errors import ProviderUnavailableError
 
 
-PROVIDER_KINDS = ("language_model", "image", "pdf", "visual_evaluation")
+PROVIDER_KINDS = (
+    "language_model",
+    "manuscript_generation",
+    "editorial_review",
+    "image",
+    "pdf",
+    "visual_evaluation",
+)
 
 
 class Provider(ABC):

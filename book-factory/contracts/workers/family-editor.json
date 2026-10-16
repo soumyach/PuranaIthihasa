@@ -5,5 +5,5 @@
   "outputs": ["editorial QA report", "specific beat-level findings", "bounded repair requests"],
   "responsibilities": ["review clarity pacing dignity age suitability identity distinctness and source fidelity", "remain independent of manuscript authorship", "never mutate the reviewed version", "escalate rather than fake unavailable semantic review"],
   "schema_version": "1.0",
-  "validation_rules": ["findings identify exact beats or claims", "critical failures cannot average to PASS", "reviewer differs from creator", "all semantic dimensions are attested before PASS"]
+  "validation_rules": ["findings identify exact beats or claims", "critical failures cannot average to PASS", "reviewer differs from creator", "reviewer capability and reviewed input hashes are attested", "all semantic dimensions are attested before PASS"]
 }

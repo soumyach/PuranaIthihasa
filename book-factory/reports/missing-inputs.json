@@ -1,39 +1,17 @@
 {
   "found": [
-    {
-      "destination": "MYTHOLOGY_COMIC_RULES.md",
-      "filename": "MYTHOLOGY_COMIC_RULES.md",
-      "sha256": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070"
-    },
-    {
-      "destination": "book-factory/references/visual-benchmarks/Satyanarayana_Vrata_Katha_Complete_Illustrated_Storybook.pdf",
-      "filename": "Satyanarayana_Vrata_Katha_Complete_Illustrated_Storybook.pdf",
-      "sha256": "82ae125d099ef2608adad705922567df6b553db40dd39af64b77c5de28dcadd2"
-    },
-    {
-      "destination": "book-factory/references/visual-benchmarks/The_Enemy_Who_Multiplied_Original_Size_Combined.pdf",
-      "filename": "The_Enemy_Who_Multiplied_Original_Size_Combined.pdf",
-      "sha256": "3867fccdd8c8755d27ff06c7543d8002cefb7531c1d4f39c743a43bff9c4a29f"
-    }
+    {"destination": "MYTHOLOGY_COMIC_RULES.md", "filename": "MYTHOLOGY_COMIC_RULES.md", "sha256": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070"},
+    {"destination": "book-factory/inputs/catalogues/Khatakshetra_Illustrated_Library_Catalogue_v0.1.json", "filename": "Khatakshetra_Illustrated_Library_Catalogue_v0.1.json", "sha256": "e80483a0c77e8453616868b85ce883407e7c5bfaa81fae5d6c605266764c2f5b"},
+    {"destination": "book-factory/references/literary-benchmarks/The_Enemy_Who_Multiplied_Manuscript_v2.md", "filename": "The_Enemy_Who_Multiplied_Manuscript_v2.md", "sha256": "6684d61e7c8f58a3fc3d851d7e8cbc7d13eb1e42105dbb9d011c1e7453791865"},
+    {"destination": "book-factory/references/visual-benchmarks/Satyanarayana_Vrata_Katha_Complete_Illustrated_Storybook.pdf", "filename": "Satyanarayana_Vrata_Katha_Complete_Illustrated_Storybook.pdf", "sha256": "82ae125d099ef2608adad705922567df6b553db40dd39af64b77c5de28dcadd2", "storage_mode": "LOCAL_UNTRACKED_REFERENCE"},
+    {"destination": "book-factory/references/visual-benchmarks/The_Enemy_Who_Multiplied_Original_Size_Combined.pdf", "filename": "The_Enemy_Who_Multiplied_Original_Size_Combined.pdf", "sha256": "3867fccdd8c8755d27ff06c7543d8002cefb7531c1d4f39c743a43bff9c4a29f", "storage_mode": "LOCAL_UNTRACKED_REFERENCE"}
   ],
-  "missing": [
-    {
-      "expected_destination": "books/catalogue.json",
-      "filename": "Khatakshetra_Illustrated_Library_Catalogue_v0.1.json",
-      "impact": "The authoritative 78-book, 12-collection catalogue cannot be reconciled or assessed. The production catalogue remains empty."
-    },
-    {
-      "expected_destination": "book-factory/inputs/manuscripts/The_Enemy_Who_Multiplied_Manuscript_v2.md",
-      "filename": "The_Enemy_Who_Multiplied_Manuscript_v2.md",
-      "impact": "DM08 manuscript import and editorial evaluation cannot run. No DM08 production record is created."
-    }
+  "missing": [],
+  "operational_blockers": [
+    "No approved manuscript-generation provider is configured.",
+    "No verified independent editorial-review provider is configured.",
+    "Candidate rights clearance and independent full-arc review are unresolved.",
+    "No illustration, visual-evaluation, or PDF production provider is configured."
   ],
-  "search_scope": [
-    "/Users/vellankisriharsha/Documents/Codex",
-    "/Users/vellankisriharsha/Desktop",
-    "/Users/vellankisriharsha/Downloads",
-    "/Users/vellankisriharsha/.codex/attachments",
-    "macOS Spotlight exact-name search"
-  ],
-  "status": "INCOMPLETE_INPUT_SET"
+  "status": "AUTHORITATIVE_INPUTS_REGISTERED_OPERATIONALLY_BLOCKED"
 }

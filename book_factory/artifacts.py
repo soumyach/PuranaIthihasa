@@ -3,7 +3,7 @@
 from pathlib import Path
 
 from .errors import ContractError
-from .util import atomic_json_write, atomic_write, sha256_bytes, stable_id, utc_now
+from .util import atomic_json_write, atomic_write, content_hash, sha256_bytes, stable_id, utc_now
 
 
 class ArtifactStore:
@@ -22,14 +22,22 @@ class ArtifactStore:
             raise ContractError("artifact version must be a positive integer")
         directory = self.root / digest[:2]
         artifact_path = directory / (digest + "." + safe_extension)
-        metadata_path = directory / (digest + ".artifact.json")
+        identity_hash = content_hash({
+            "sha256": digest,
+            "logical_id": logical_id,
+            "version": version,
+            "media_type": media_type,
+            "extension": safe_extension,
+            "input_hashes": sorted(input_hashes or []),
+        })[:16]
+        metadata_path = directory / (digest + "." + identity_hash + ".artifact.json")
         if artifact_path.exists() and artifact_path.read_bytes() != payload:
             raise ContractError("content hash collision")
         if not artifact_path.exists():
             atomic_write(artifact_path, payload)
         metadata = {
             "schema_version": "1.0",
-            "id": stable_id("artifact", digest),
+            "id": stable_id("artifact", digest, identity_hash),
             "sha256": digest,
             "media_type": media_type,
             "extension": safe_extension,

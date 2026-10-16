@@ -4,6 +4,9 @@
   "additionalProperties": true,
   "properties": {
     "collection_ids": {"items": {"type": "string"}, "type": "array"},
+    "automatic_production_eligible": {"type": "boolean"},
+    "edition_status": {"enum": ["PLANNED", "EXISTING_EDITION"], "type": "string"},
+    "factory": {"type": "object"},
     "id": {"minLength": 1, "type": "string"},
     "line": {"enum": ["KATHAS", "ORIGINALS_KALPANA"], "type": "string"},
     "priority": {"minimum": 0, "type": "integer"},

@@ -755,11 +755,13 @@ Rules:
 - Implement manuscript, family-editorial, character/location/iconography bible, and approval-inheritance contracts.
 - Migrate one synthetic fixture through source/editorial states; do not use DM08.
 
-### PR3 — Page planning, provider abstraction, and cost safety
+### PR3 — Authoritative catalogue, DM08 reference registration, and new-book pilot
 
-- Implement page/panel scripts, dependency invalidation, prompt packages, provider capability negotiation, cost reservation/reconciliation, and external-call recovery.
-- Exercise only the deterministic fixture provider in CI.
-- Add Git LFS configuration only after quota/billing approval.
+- Import the exact 78-book catalogue and retain its original bytes/fields.
+- Register DM08 PDF and Manuscript v2 as an existing reference edition; never remake it or select it automatically.
+- Reconcile reviewed source mappings, rank non-DM08 conditional finalists, and prepare only the recommended new book's dossier and Story Packet.
+- Add honest manuscript/editorial provider boundaries without generating prose, art, or PDFs.
+- Keep oversized reference PDFs outside ordinary Git history with exact hash metadata.
 
 ### PR4 — Lettering, deterministic rendering, and independent QA
 
@@ -773,11 +775,11 @@ Rules:
 - Run a small non-DM08 canary only after explicit authorization.
 - Record quality, cost, recovery, rights, and benchmark results; do not publish.
 
-### PR6 — DM08 end-to-end acceptance
+### PR6 — New-book end-to-end acceptance
 
-- Only after the authoritative rules, benchmark assets, DM08 Manuscript v2, storage, font, provider, and source-readiness prerequisites are present.
-- Import, do not rewrite, Manuscript v2 unless separately authorized.
-- Produce one complete reviewed book with page-level recovery, independent QA, and a final PDF.
+- Use a selected new-book pilot, not DM08, after storage, font, provider, rights, source-readiness, and reviewer prerequisites are present.
+- Keep DM08 immutable as a literary/presentation reference unless the user explicitly requests separate work on it.
+- Produce one complete reviewed new book with page-level recovery, independent QA, and a final PDF.
 - Stop at `FINAL_PDF_READY`; do not deploy or publish.
 
 ## 12. Acceptance criteria for PR1

@@ -1,5 +1,4791 @@
 {
-  "books": [],
-  "collections": [],
+  "books": [
+    {
+      "automatic_production_eligible": true,
+      "collection": "DM",
+      "collection_ids": [
+        "DM"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-36",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_EXACT",
+          "segments": [
+            {
+              "event_ids": [
+                "dm-event-001",
+                "dm-event-002",
+                "dm-event-003",
+                "dm-event-062",
+                "dm-event-063",
+                "dm-event-064"
+              ],
+              "story_spine_id": "dm-story-frame"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "DM01",
+      "line": "KATHAS",
+      "original": {
+        "collection": "DM",
+        "estimated_pages": "24-36",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "DM01",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Suratha loses his throne; merchant Samadhi loses his family; both ask Medhas why attachment survives knowledge; return to their divergent boons at the end",
+        "source_anchor": "Devi Mahatmya 1 and 13",
+        "title": "The King Who Could Not Let Go"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Suratha loses his throne; merchant Samadhi loses his family; both ask Medhas why attachment survives knowledge; return to their divergent boons at the end",
+      "source_anchor": "Devi Mahatmya 1 and 13",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_EXACT",
+        "segments": [
+          {
+            "event_ids": [
+              "dm-event-001",
+              "dm-event-002",
+              "dm-event-003",
+              "dm-event-062",
+              "dm-event-063",
+              "dm-event-064"
+            ],
+            "story_spine_id": "dm-story-frame"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "dm-story-frame"
+      ],
+      "title": "The King Who Could Not Let Go"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "DM",
+      "collection_ids": [
+        "DM"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "20-32",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_EXACT",
+          "segments": [
+            {
+              "event_ids": [
+                "dm-event-004",
+                "dm-event-005",
+                "dm-event-006",
+                "dm-event-007"
+              ],
+              "story_spine_id": "dm-story-madhu-kaitabha"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "DM02",
+      "line": "KATHAS",
+      "original": {
+        "collection": "DM",
+        "estimated_pages": "20-32",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "DM02",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Brahma, Vishnu's cosmic sleep, Madhu and Kaitabha, Goddess Yogamaya, boon negotiation and defeat",
+        "source_anchor": "Devi Mahatmya 1",
+        "title": "The Sleep That Held Vishnu"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Brahma, Vishnu's cosmic sleep, Madhu and Kaitabha, Goddess Yogamaya, boon negotiation and defeat",
+      "source_anchor": "Devi Mahatmya 1",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_EXACT",
+        "segments": [
+          {
+            "event_ids": [
+              "dm-event-004",
+              "dm-event-005",
+              "dm-event-006",
+              "dm-event-007"
+            ],
+            "story_spine_id": "dm-story-madhu-kaitabha"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "dm-story-madhu-kaitabha"
+      ],
+      "title": "The Sleep That Held Vishnu"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "DM",
+      "collection_ids": [
+        "DM"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-36",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_SUBSET",
+          "segments": [
+            {
+              "event_ids": [
+                "dm-event-008",
+                "dm-event-009",
+                "dm-event-010",
+                "dm-event-011",
+                "dm-event-012"
+              ],
+              "story_spine_id": "dm-story-mahisha"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "DM03",
+      "line": "KATHAS",
+      "original": {
+        "collection": "DM",
+        "estimated_pages": "24-36",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "DM03",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Gods are dispossessed; their radiances appear as Devi; her weapons and lion arrive; army gathers",
+        "source_anchor": "Devi Mahatmya 2",
+        "title": "The Light of Every God"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Gods are dispossessed; their radiances appear as Devi; her weapons and lion arrive; army gathers",
+      "source_anchor": "Devi Mahatmya 2",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_SUBSET",
+        "segments": [
+          {
+            "event_ids": [
+              "dm-event-008",
+              "dm-event-009",
+              "dm-event-010",
+              "dm-event-011",
+              "dm-event-012"
+            ],
+            "story_spine_id": "dm-story-mahisha"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "dm-story-mahisha"
+      ],
+      "title": "The Light of Every God"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "DM",
+      "collection_ids": [
+        "DM"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "32-48",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_EXACT",
+          "segments": [
+            {
+              "event_ids": [
+                "dm-event-008",
+                "dm-event-009",
+                "dm-event-010",
+                "dm-event-011",
+                "dm-event-012",
+                "dm-event-013",
+                "dm-event-014",
+                "dm-event-015",
+                "dm-event-016",
+                "dm-event-017",
+                "dm-event-018",
+                "dm-event-019",
+                "dm-event-020",
+                "dm-event-021",
+                "dm-event-022",
+                "dm-event-023"
+              ],
+              "story_spine_id": "dm-story-mahisha"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "DM04",
+      "line": "KATHAS",
+      "original": {
+        "collection": "DM",
+        "estimated_pages": "32-48",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "DM04",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Mahishasura's generals, transformation battle, death and the gods' hymn, in one complete arc",
+        "source_anchor": "Devi Mahatmya 2-4",
+        "title": "The Buffalo King"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Mahishasura's generals, transformation battle, death and the gods' hymn, in one complete arc",
+      "source_anchor": "Devi Mahatmya 2-4",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_EXACT",
+        "segments": [
+          {
+            "event_ids": [
+              "dm-event-008",
+              "dm-event-009",
+              "dm-event-010",
+              "dm-event-011",
+              "dm-event-012",
+              "dm-event-013",
+              "dm-event-014",
+              "dm-event-015",
+              "dm-event-016",
+              "dm-event-017",
+              "dm-event-018",
+              "dm-event-019",
+              "dm-event-020",
+              "dm-event-021",
+              "dm-event-022",
+              "dm-event-023"
+            ],
+            "story_spine_id": "dm-story-mahisha"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "dm-story-mahisha"
+      ],
+      "title": "The Buffalo King"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "DM",
+      "collection_ids": [
+        "DM"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-40",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_SUBSET",
+          "segments": [
+            {
+              "event_ids": [
+                "dm-event-024",
+                "dm-event-025",
+                "dm-event-026",
+                "dm-event-027",
+                "dm-event-028",
+                "dm-event-029",
+                "dm-event-030",
+                "dm-event-031",
+                "dm-event-032"
+              ],
+              "story_spine_id": "dm-story-shumbha"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "DM05",
+      "line": "KATHAS",
+      "original": {
+        "collection": "DM",
+        "estimated_pages": "24-40",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "DM05",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Himalayan invocation, emergence of Kaushiki, Chanda/Munda discovery, messenger Sugriva, vow and Dhumralochana",
+        "source_anchor": "Devi Mahatmya 5-6",
+        "title": "The Goddess Who Refused the King"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Himalayan invocation, emergence of Kaushiki, Chanda/Munda discovery, messenger Sugriva, vow and Dhumralochana",
+      "source_anchor": "Devi Mahatmya 5-6",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_SUBSET",
+        "segments": [
+          {
+            "event_ids": [
+              "dm-event-024",
+              "dm-event-025",
+              "dm-event-026",
+              "dm-event-027",
+              "dm-event-028",
+              "dm-event-029",
+              "dm-event-030",
+              "dm-event-031",
+              "dm-event-032"
+            ],
+            "story_spine_id": "dm-story-shumbha"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "dm-story-shumbha"
+      ],
+      "title": "The Goddess Who Refused the King"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "DM",
+      "collection_ids": [
+        "DM"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "20-32",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_SUBSET",
+          "segments": [
+            {
+              "event_ids": [
+                "dm-event-033",
+                "dm-event-034",
+                "dm-event-035"
+              ],
+              "story_spine_id": "dm-story-shumbha"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "DM06",
+      "line": "KATHAS",
+      "original": {
+        "collection": "DM",
+        "estimated_pages": "20-32",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "DM06",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Chanda and Munda's attack, Kali's emergence, defeat and naming by Chandika",
+        "source_anchor": "Devi Mahatmya 7",
+        "title": "How Kali Became Chamunda"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Chanda and Munda's attack, Kali's emergence, defeat and naming by Chandika",
+      "source_anchor": "Devi Mahatmya 7",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_SUBSET",
+        "segments": [
+          {
+            "event_ids": [
+              "dm-event-033",
+              "dm-event-034",
+              "dm-event-035"
+            ],
+            "story_spine_id": "dm-story-shumbha"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "dm-story-shumbha"
+      ],
+      "title": "How Kali Became Chamunda"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "DM",
+      "collection_ids": [
+        "DM"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-40",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_SUBSET",
+          "segments": [
+            {
+              "event_ids": [
+                "dm-event-036",
+                "dm-event-037",
+                "dm-event-038",
+                "dm-event-039"
+              ],
+              "story_spine_id": "dm-story-shumbha"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "DM07",
+      "line": "KATHAS",
+      "original": {
+        "collection": "DM",
+        "estimated_pages": "24-40",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "DM07",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Divine Shaktis and Shivaduti arrive, their roles and battle actions; preserve roster of this witness",
+        "source_anchor": "Devi Mahatmya 8",
+        "title": "The Mothers Who Went to War"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Divine Shaktis and Shivaduti arrive, their roles and battle actions; preserve roster of this witness",
+      "source_anchor": "Devi Mahatmya 8",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_SUBSET",
+        "segments": [
+          {
+            "event_ids": [
+              "dm-event-036",
+              "dm-event-037",
+              "dm-event-038",
+              "dm-event-039"
+            ],
+            "story_spine_id": "dm-story-shumbha"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "dm-story-shumbha"
+      ],
+      "title": "The Mothers Who Went to War"
+    },
+    {
+      "automatic_production_eligible": false,
+      "collection": "DM",
+      "collection_ids": [
+        "DM"
+      ],
+      "edition_status": "EXISTING_EDITION",
+      "estimated_pages": "24-36",
+      "factory": {
+        "automatic_production_eligible": false,
+        "edition_status": "EXISTING_EDITION",
+        "mapping": {
+          "outcome": "VERIFIED_SUBSET",
+          "reference_only": true,
+          "segments": [
+            {
+              "event_ids": [
+                "dm-event-040",
+                "dm-event-041"
+              ],
+              "story_spine_id": "dm-story-shumbha"
+            }
+          ]
+        },
+        "publication_readiness_status": "PENDING_INDEPENDENT_REVIEW",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "PENDING_SCOPE_RECONCILIATION"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "DM08",
+      "line": "KATHAS",
+      "original": {
+        "collection": "DM",
+        "estimated_pages": "24-36",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "DM08",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Raktabija's bloodborne multiplication, failed tactics, Chandika's counter-strategy, Kali's intervention and outcome",
+        "source_anchor": "Devi Mahatmya 8",
+        "title": "The Enemy Who Multiplied"
+      },
+      "priority": 10,
+      "publication_readiness_status": "PENDING_INDEPENDENT_REVIEW",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Raktabija's bloodborne multiplication, failed tactics, Chandika's counter-strategy, Kali's intervention and outcome",
+      "source_anchor": "Devi Mahatmya 8",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_SUBSET",
+        "reference_only": true,
+        "segments": [
+          {
+            "event_ids": [
+              "dm-event-040",
+              "dm-event-041"
+            ],
+            "story_spine_id": "dm-story-shumbha"
+          }
+        ]
+      },
+      "source_verification_status": "PENDING_SCOPE_RECONCILIATION",
+      "story_spine_ids": [
+        "dm-story-shumbha"
+      ],
+      "title": "The Enemy Who Multiplied"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "DM",
+      "collection_ids": [
+        "DM"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "40-60",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_SUBSET",
+          "segments": [
+            {
+              "event_ids": [
+                "dm-event-042",
+                "dm-event-043",
+                "dm-event-044",
+                "dm-event-045",
+                "dm-event-046",
+                "dm-event-047",
+                "dm-event-048",
+                "dm-event-049",
+                "dm-event-050",
+                "dm-event-051",
+                "dm-event-052",
+                "dm-event-053",
+                "dm-event-054",
+                "dm-event-055",
+                "dm-event-056",
+                "dm-event-057",
+                "dm-event-058",
+                "dm-event-059",
+                "dm-event-060",
+                "dm-event-061"
+              ],
+              "story_spine_id": "dm-story-shumbha"
+            },
+            {
+              "event_ids": [
+                "dm-event-062",
+                "dm-event-063",
+                "dm-event-064"
+              ],
+              "story_spine_id": "dm-story-frame"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "DM09",
+      "line": "KATHAS",
+      "original": {
+        "collection": "DM",
+        "estimated_pages": "40-60",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "DM09",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Nishumbha's fall, Shumbha's accusation, reabsorption of Shaktis, final duel, hymns, future promises and return to frame",
+        "source_anchor": "Devi Mahatmya 9-13",
+        "title": "When the Goddess Stood Alone"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Nishumbha's fall, Shumbha's accusation, reabsorption of Shaktis, final duel, hymns, future promises and return to frame",
+      "source_anchor": "Devi Mahatmya 9-13",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_SUBSET",
+        "segments": [
+          {
+            "event_ids": [
+              "dm-event-042",
+              "dm-event-043",
+              "dm-event-044",
+              "dm-event-045",
+              "dm-event-046",
+              "dm-event-047",
+              "dm-event-048",
+              "dm-event-049",
+              "dm-event-050",
+              "dm-event-051",
+              "dm-event-052",
+              "dm-event-053",
+              "dm-event-054",
+              "dm-event-055",
+              "dm-event-056",
+              "dm-event-057",
+              "dm-event-058",
+              "dm-event-059",
+              "dm-event-060",
+              "dm-event-061"
+            ],
+            "story_spine_id": "dm-story-shumbha"
+          },
+          {
+            "event_ids": [
+              "dm-event-062",
+              "dm-event-063",
+              "dm-event-064"
+            ],
+            "story_spine_id": "dm-story-frame"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "dm-story-shumbha",
+        "dm-story-frame"
+      ],
+      "title": "When the Goddess Stood Alone"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "FEST",
+      "collection_ids": [
+        "FEST"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "20-32",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "tradition_companion",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "FEST01",
+      "line": "KATHAS",
+      "original": {
+        "collection": "FEST",
+        "estimated_pages": "20-32",
+        "format": "tradition_companion",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "FEST01",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Compare Navadurga order, three-charita Mahakali/Mahalakshmi/Mahasaraswati frameworks and temple alankaram calendars without inventing a universal sequence",
+        "source_anchor": "Devi Kavacha, Devi Mahatmya, temple calendars and sampradaya references",
+        "title": "Nine Nights, Many Traditions"
+      },
+      "priority": 20,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Compare Navadurga order, three-charita Mahakali/Mahalakshmi/Mahasaraswati frameworks and temple alankaram calendars without inventing a universal sequence",
+      "source_anchor": "Devi Kavacha, Devi Mahatmya, temple calendars and sampradaya references",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Nine Nights, Many Traditions"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "FEST",
+      "collection_ids": [
+        "FEST"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "36-60",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "tradition_companion",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "FEST02",
+      "line": "KATHAS",
+      "original": {
+        "collection": "FEST",
+        "estimated_pages": "36-60",
+        "format": "tradition_companion",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "FEST02",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Nine forms, names, iconography and separately sourced expanded biographies; clearly identify tradition behind each association",
+        "source_anchor": "Devi Kavacha; Navadurga stotra; selected later traditions",
+        "title": "Nine Forms of Navadurga"
+      },
+      "priority": 20,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Nine forms, names, iconography and separately sourced expanded biographies; clearly identify tradition behind each association",
+      "source_anchor": "Devi Kavacha; Navadurga stotra; selected later traditions",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Nine Forms of Navadurga"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "FEST",
+      "collection_ids": [
+        "FEST"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-40",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "tradition_companion",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "FEST03",
+      "line": "KATHAS",
+      "original": {
+        "collection": "FEST",
+        "estimated_pages": "24-40",
+        "format": "tradition_companion",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "FEST03",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Devi's victories, Rama/Ravana traditions, regional observances and distinctions between celebrations",
+        "source_anchor": "Devi Mahatmya; Ramayana traditions; regional temple sources",
+        "title": "The Many Vijayas of Dussehra"
+      },
+      "priority": 20,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Devi's victories, Rama/Ravana traditions, regional observances and distinctions between celebrations",
+      "source_anchor": "Devi Mahatmya; Ramayana traditions; regional temple sources",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "The Many Vijayas of Dussehra"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "FEST",
+      "collection_ids": [
+        "FEST"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-48",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "tradition_companion",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "FEST04",
+      "line": "KATHAS",
+      "original": {
+        "collection": "FEST",
+        "estimated_pages": "24-48",
+        "format": "tradition_companion",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "FEST04",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Bathukamma, Durga Puja, Mysuru Dasara, Golu, Ayudha Puja, Bastar, Kullu and other communities in their own voices",
+        "source_anchor": "Regional historical and living-tradition sources",
+        "title": "How India Celebrates the Mother"
+      },
+      "priority": 20,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Bathukamma, Durga Puja, Mysuru Dasara, Golu, Ayudha Puja, Bastar, Kullu and other communities in their own voices",
+      "source_anchor": "Regional historical and living-tradition sources",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "How India Celebrates the Mother"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MAT",
+      "collection_ids": [
+        "MAT"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-36",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_SUBSET",
+          "segments": [
+            {
+              "event_ids": [
+                "dm-event-037",
+                "dm-event-038",
+                "dm-event-039"
+              ],
+              "story_spine_id": "dm-story-shumbha"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "tradition_companion",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "MAT01",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MAT",
+        "estimated_pages": "24-36",
+        "format": "tradition_companion",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "MAT01",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Matrika emergence and divine correspondences from Devi Mahatmya 8, keeping independent battlefield roster",
+        "source_anchor": "Devi Mahatmya 8",
+        "title": "Who Are the Mothers?"
+      },
+      "priority": 30,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Matrika emergence and divine correspondences from Devi Mahatmya 8, keeping independent battlefield roster",
+      "source_anchor": "Devi Mahatmya 8",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_SUBSET",
+        "segments": [
+          {
+            "event_ids": [
+              "dm-event-037",
+              "dm-event-038",
+              "dm-event-039"
+            ],
+            "story_spine_id": "dm-story-shumbha"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "dm-story-shumbha"
+      ],
+      "title": "Who Are the Mothers?"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MAT",
+      "collection_ids": [
+        "MAT"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "20-36",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "tradition_companion",
+      "graph_readiness": "PARTIAL_GRAPH",
+      "id": "MAT02",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MAT",
+        "estimated_pages": "20-36",
+        "format": "tradition_companion",
+        "graph_readiness": "PARTIAL_GRAPH",
+        "id": "MAT02",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Compare Devi Mahatmya Shaktis with common Sapta Matrika and Lalitopakhyana Ashtamatrika lists; do not erase Narasimhi/Chamunda differences",
+        "source_anchor": "Devi Mahatmya 8; Agni Purana; Lalitopakhyana 19",
+        "title": "Seven, Eight or More?"
+      },
+      "priority": 30,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Compare Devi Mahatmya Shaktis with common Sapta Matrika and Lalitopakhyana Ashtamatrika lists; do not erase Narasimhi/Chamunda differences",
+      "source_anchor": "Devi Mahatmya 8; Agni Purana; Lalitopakhyana 19",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Seven, Eight or More?"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MAT",
+      "collection_ids": [
+        "MAT"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "28-44",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "tradition_companion",
+      "graph_readiness": "PARTIAL_GRAPH",
+      "id": "MAT03",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MAT",
+        "estimated_pages": "28-44",
+        "format": "tradition_companion",
+        "graph_readiness": "PARTIAL_GRAPH",
+        "id": "MAT03",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Separate Vārāhī as Matrika, Lalita's Dandanatha and later traditions, with supported identity links only",
+        "source_anchor": "Devi Mahatmya 8; Lalitopakhyana 17-20; iconographic and lineage sources",
+        "title": "Varahi Across the Worlds"
+      },
+      "priority": 30,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Separate Vārāhī as Matrika, Lalita's Dandanatha and later traditions, with supported identity links only",
+      "source_anchor": "Devi Mahatmya 8; Lalitopakhyana 17-20; iconographic and lineage sources",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Varahi Across the Worlds"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "LAL",
+      "collection_ids": [
+        "LAL"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "28-44",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_SUBSET",
+          "segments": [
+            {
+              "event_ids": [
+                "lal-event-001",
+                "lal-event-002"
+              ],
+              "story_spine_id": "lal-story-bhanda"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "LAL01",
+      "line": "KATHAS",
+      "original": {
+        "collection": "LAL",
+        "estimated_pages": "28-44",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "LAL01",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Sati/Parvati/Skanda crisis, Kama's burning, Citrakarma's creation of Bhanda, Shiva worship and boon",
+        "source_anchor": "Lalitopakhyana 11",
+        "title": "From Kama's Ashes"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Sati/Parvati/Skanda crisis, Kama's burning, Citrakarma's creation of Bhanda, Shiva worship and boon",
+      "source_anchor": "Lalitopakhyana 11",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_SUBSET",
+        "segments": [
+          {
+            "event_ids": [
+              "lal-event-001",
+              "lal-event-002"
+            ],
+            "story_spine_id": "lal-story-bhanda"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "lal-story-bhanda"
+      ],
+      "title": "From Kama's Ashes"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "LAL",
+      "collection_ids": [
+        "LAL"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "28-44",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_SUBSET",
+          "segments": [
+            {
+              "event_ids": [
+                "lal-event-020",
+                "lal-event-003",
+                "lal-event-004"
+              ],
+              "story_spine_id": "lal-story-bhanda"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "LAL02",
+      "line": "KATHAS",
+      "original": {
+        "collection": "LAL",
+        "estimated_pages": "28-44",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "LAL02",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Bhanda's coronation, family, brothers, worship, Maya's influence, advice of Shukra and court decisions",
+        "source_anchor": "Lalitopakhyana 10-12",
+        "title": "The King of Shonitapura"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Bhanda's coronation, family, brothers, worship, Maya's influence, advice of Shukra and court decisions",
+      "source_anchor": "Lalitopakhyana 10-12",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_SUBSET",
+        "segments": [
+          {
+            "event_ids": [
+              "lal-event-020",
+              "lal-event-003",
+              "lal-event-004"
+            ],
+            "story_spine_id": "lal-story-bhanda"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "lal-story-bhanda"
+      ],
+      "title": "The King of Shonitapura"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "LAL",
+      "collection_ids": [
+        "LAL"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "32-48",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_SUBSET",
+          "segments": [
+            {
+              "event_ids": [
+                "lal-event-005",
+                "lal-event-006",
+                "lal-event-007",
+                "lal-event-008",
+                "lal-event-009"
+              ],
+              "story_spine_id": "lal-story-bhanda"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "LAL03",
+      "line": "KATHAS",
+      "original": {
+        "collection": "LAL",
+        "estimated_pages": "32-48",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "LAL03",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Deva sacrifice, manifestation, vow to defend worlds, Kameshvara, coronation and marriage",
+        "source_anchor": "Lalitopakhyana 12-15",
+        "title": "The Birth of Lalita"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Deva sacrifice, manifestation, vow to defend worlds, Kameshvara, coronation and marriage",
+      "source_anchor": "Lalitopakhyana 12-15",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_SUBSET",
+        "segments": [
+          {
+            "event_ids": [
+              "lal-event-005",
+              "lal-event-006",
+              "lal-event-007",
+              "lal-event-008",
+              "lal-event-009"
+            ],
+            "story_spine_id": "lal-story-bhanda"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "lal-story-bhanda"
+      ],
+      "title": "The Birth of Lalita"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "LAL",
+      "collection_ids": [
+        "LAL"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "36-56",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_SUBSET",
+          "segments": [
+            {
+              "event_ids": [
+                "lal-event-010",
+                "lal-event-011",
+                "lal-event-012",
+                "lal-event-013",
+                "lal-event-014",
+                "lal-event-015"
+              ],
+              "story_spine_id": "lal-story-bhanda"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "LAL04",
+      "line": "KATHAS",
+      "original": {
+        "collection": "LAL",
+        "estimated_pages": "36-56",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "LAL04",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Sampatkari, horse armies, Shyamala, Varahi, chariots, Nityas and battle preparations",
+        "source_anchor": "Lalitopakhyana 16-21",
+        "title": "The Army of Shakti"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Sampatkari, horse armies, Shyamala, Varahi, chariots, Nityas and battle preparations",
+      "source_anchor": "Lalitopakhyana 16-21",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_SUBSET",
+        "segments": [
+          {
+            "event_ids": [
+              "lal-event-010",
+              "lal-event-011",
+              "lal-event-012",
+              "lal-event-013",
+              "lal-event-014",
+              "lal-event-015"
+            ],
+            "story_spine_id": "lal-story-bhanda"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "lal-story-bhanda"
+      ],
+      "title": "The Army of Shakti"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "LAL",
+      "collection_ids": [
+        "LAL"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "36-56",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_SUBSET",
+          "segments": [
+            {
+              "event_ids": [
+                "lal-event-016",
+                "lal-event-017",
+                "lal-event-018",
+                "lal-event-019"
+              ],
+              "story_spine_id": "lal-story-bhanda"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "LAL05",
+      "line": "KATHAS",
+      "original": {
+        "collection": "LAL",
+        "estimated_pages": "36-56",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "LAL05",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Durmada and Kuranda; serpentine regenerative weapon and Nakuli; sun-boon eyes and counter",
+        "source_anchor": "Lalitopakhyana 22-24",
+        "title": "The First Defeats of Bhanda"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Durmada and Kuranda; serpentine regenerative weapon and Nakuli; sun-boon eyes and counter",
+      "source_anchor": "Lalitopakhyana 22-24",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_SUBSET",
+        "segments": [
+          {
+            "event_ids": [
+              "lal-event-016",
+              "lal-event-017",
+              "lal-event-018",
+              "lal-event-019"
+            ],
+            "story_spine_id": "lal-story-bhanda"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "lal-story-bhanda"
+      ],
+      "title": "The First Defeats of Bhanda"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "LAL",
+      "collection_ids": [
+        "LAL"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "28-44",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_SUBSET",
+          "segments": [
+            {
+              "event_ids": [
+                "lal-event-021",
+                "lal-event-022",
+                "lal-event-023",
+                "lal-event-024"
+              ],
+              "story_spine_id": "lal-story-bhanda"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "LAL06",
+      "line": "KATHAS",
+      "original": {
+        "collection": "LAL",
+        "estimated_pages": "28-44",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "LAL06",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Vishanga's attack, damaged defenses, Nityas' intervention and fortified fire enclosure",
+        "source_anchor": "Lalitopakhyana 25-26",
+        "title": "The Assault in Darkness"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Vishanga's attack, damaged defenses, Nityas' intervention and fortified fire enclosure",
+      "source_anchor": "Lalitopakhyana 25-26",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_SUBSET",
+        "segments": [
+          {
+            "event_ids": [
+              "lal-event-021",
+              "lal-event-022",
+              "lal-event-023",
+              "lal-event-024"
+            ],
+            "story_spine_id": "lal-story-bhanda"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "lal-story-bhanda"
+      ],
+      "title": "The Assault in Darkness"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "LAL",
+      "collection_ids": [
+        "LAL"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-40",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_SUBSET",
+          "segments": [
+            {
+              "event_ids": [
+                "lal-event-025",
+                "lal-event-026",
+                "lal-event-027"
+              ],
+              "story_spine_id": "lal-story-bhanda"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "LAL07",
+      "line": "KATHAS",
+      "original": {
+        "collection": "LAL",
+        "estimated_pages": "24-40",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "LAL07",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Bala's relationship with Lalita, her plea to enter war, conflict and tragic effect on Bhanda's family; treat names uncertainty accurately",
+        "source_anchor": "Lalitopakhyana 26",
+        "title": "Bala and the Thirty Princes"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Bala's relationship with Lalita, her plea to enter war, conflict and tragic effect on Bhanda's family; treat names uncertainty accurately",
+      "source_anchor": "Lalitopakhyana 26",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_SUBSET",
+        "segments": [
+          {
+            "event_ids": [
+              "lal-event-025",
+              "lal-event-026",
+              "lal-event-027"
+            ],
+            "story_spine_id": "lal-story-bhanda"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "lal-story-bhanda"
+      ],
+      "title": "Bala and the Thirty Princes"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "LAL",
+      "collection_ids": [
+        "LAL"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "28-44",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_SUBSET",
+          "segments": [
+            {
+              "event_ids": [
+                "lal-event-028",
+                "lal-event-029",
+                "lal-event-030",
+                "lal-event-031"
+              ],
+              "story_spine_id": "lal-story-bhanda"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "LAL08",
+      "line": "KATHAS",
+      "original": {
+        "collection": "LAL",
+        "estimated_pages": "28-44",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "LAL08",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Bhanda's grief, Vishukra's Jayavighna slab, collapsing morale, Lalita's smile, Mahaganapati, Gajasura",
+        "source_anchor": "Lalitopakhyana 27",
+        "title": "The Weapon That Stole Courage"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Bhanda's grief, Vishukra's Jayavighna slab, collapsing morale, Lalita's smile, Mahaganapati, Gajasura",
+      "source_anchor": "Lalitopakhyana 27",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_SUBSET",
+        "segments": [
+          {
+            "event_ids": [
+              "lal-event-028",
+              "lal-event-029",
+              "lal-event-030",
+              "lal-event-031"
+            ],
+            "story_spine_id": "lal-story-bhanda"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "lal-story-bhanda"
+      ],
+      "title": "The Weapon That Stole Courage"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "LAL",
+      "collection_ids": [
+        "LAL"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "28-44",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_SUBSET",
+          "segments": [
+            {
+              "event_ids": [
+                "lal-event-032",
+                "lal-event-033",
+                "lal-event-034"
+              ],
+              "story_spine_id": "lal-story-bhanda"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "LAL09",
+      "line": "KATHAS",
+      "original": {
+        "collection": "LAL",
+        "estimated_pages": "28-44",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "LAL09",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Vishukra's thirst attack, Shyamala and Dandanatha, contrasting battle outcomes and textual variants",
+        "source_anchor": "Lalitopakhyana 28; Lalita Sahasranama related names",
+        "title": "The Fall of Two Brothers"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Vishukra's thirst attack, Shyamala and Dandanatha, contrasting battle outcomes and textual variants",
+      "source_anchor": "Lalitopakhyana 28; Lalita Sahasranama related names",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_SUBSET",
+        "segments": [
+          {
+            "event_ids": [
+              "lal-event-032",
+              "lal-event-033",
+              "lal-event-034"
+            ],
+            "story_spine_id": "lal-story-bhanda"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "lal-story-bhanda"
+      ],
+      "title": "The Fall of Two Brothers"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "LAL",
+      "collection_ids": [
+        "LAL"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "40-64",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_SUBSET",
+          "segments": [
+            {
+              "event_ids": [
+                "lal-event-035",
+                "lal-event-036",
+                "lal-event-037",
+                "lal-event-038",
+                "lal-event-039",
+                "lal-event-040"
+              ],
+              "story_spine_id": "lal-story-bhanda"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "LAL10",
+      "line": "KATHAS",
+      "original": {
+        "collection": "LAL",
+        "estimated_pages": "40-64",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "LAL10",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Bhanda's final weapons, generated opponents from other sacred narratives, Lalita's counter-manifestations and death of Bhanda",
+        "source_anchor": "Lalitopakhyana 29",
+        "title": "The War of Returning Enemies"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Bhanda's final weapons, generated opponents from other sacred narratives, Lalita's counter-manifestations and death of Bhanda",
+      "source_anchor": "Lalitopakhyana 29",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_SUBSET",
+        "segments": [
+          {
+            "event_ids": [
+              "lal-event-035",
+              "lal-event-036",
+              "lal-event-037",
+              "lal-event-038",
+              "lal-event-039",
+              "lal-event-040"
+            ],
+            "story_spine_id": "lal-story-bhanda"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "lal-story-bhanda"
+      ],
+      "title": "The War of Returning Enemies"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "LAL",
+      "collection_ids": [
+        "LAL"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "28-44",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_SUBSET",
+          "segments": [
+            {
+              "event_ids": [
+                "lal-event-041",
+                "lal-event-042",
+                "lal-event-043",
+                "lal-event-044"
+              ],
+              "story_spine_id": "lal-story-bhanda"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "LAL11",
+      "line": "KATHAS",
+      "original": {
+        "collection": "LAL",
+        "estimated_pages": "28-44",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "LAL11",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Rati's appeal, Kama restored, Shiva-Parvati marriage, Skanda's birth and defeat of Taraka",
+        "source_anchor": "Lalitopakhyana 30",
+        "title": "Desire Restored"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Rati's appeal, Kama restored, Shiva-Parvati marriage, Skanda's birth and defeat of Taraka",
+      "source_anchor": "Lalitopakhyana 30",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_SUBSET",
+        "segments": [
+          {
+            "event_ids": [
+              "lal-event-041",
+              "lal-event-042",
+              "lal-event-043",
+              "lal-event-044"
+            ],
+            "story_spine_id": "lal-story-bhanda"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "lal-story-bhanda"
+      ],
+      "title": "Desire Restored"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "LAL",
+      "collection_ids": [
+        "LAL"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "36-60",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "cosmology_companion",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "LAL12",
+      "line": "KATHAS",
+      "original": {
+        "collection": "LAL",
+        "estimated_pages": "36-60",
+        "format": "cosmology_companion",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "LAL12",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Text-grounded tour of the subsequent palace/city narrative without conflating Sri Pura with Devi Bhagavata Manidvipa",
+        "source_anchor": "Lalitopakhyana 31-44",
+        "title": "The City of Sri Pura"
+      },
+      "priority": 10,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Text-grounded tour of the subsequent palace/city narrative without conflating Sri Pura with Devi Bhagavata Manidvipa",
+      "source_anchor": "Lalitopakhyana 31-44",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "The City of Sri Pura"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MUD",
+      "collection_ids": [
+        "MUD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "32-52",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "VERIFIED_EXACT",
+          "segments": [
+            {
+              "event_ids": [],
+              "story_spine_id": "gp-story-matsara"
+            }
+          ]
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "INCOMPLETE_SOURCE"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_SPINE_READY",
+      "id": "MUD01",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MUD",
+        "estimated_pages": "32-52",
+        "format": "story",
+        "graph_readiness": "SOURCE_SPINE_READY",
+        "id": "MUD01",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Matsara's lineage, mother Earth, spouse/children, Shiva tapas/boon, conquest, meeting Vakratunda and surrender",
+        "source_anchor": "Mudgala Purana Vakratunda khanda 1",
+        "title": "Vakratunda and Matsarasura"
+      },
+      "priority": 40,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "INCOMPLETE_SOURCE",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Matsara's lineage, mother Earth, spouse/children, Shiva tapas/boon, conquest, meeting Vakratunda and surrender",
+      "source_anchor": "Mudgala Purana Vakratunda khanda 1",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "VERIFIED_EXACT",
+        "segments": [
+          {
+            "event_ids": [],
+            "story_spine_id": "gp-story-matsara"
+          }
+        ]
+      },
+      "source_verification_status": "INCOMPLETE_SOURCE",
+      "story_spine_ids": [
+        "gp-story-matsara"
+      ],
+      "title": "Vakratunda and Matsarasura"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MUD",
+      "collection_ids": [
+        "MUD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "32-52",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "MUD02",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MUD",
+        "estimated_pages": "32-52",
+        "format": "story",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "MUD02",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Complete source-led origin, parents, worship, boon, confrontation and resolution; only after full extraction",
+        "source_anchor": "Mudgala Purana Ekadanta khanda",
+        "title": "Ekadanta and Madasura"
+      },
+      "priority": 40,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Complete source-led origin, parents, worship, boon, confrontation and resolution; only after full extraction",
+      "source_anchor": "Mudgala Purana Ekadanta khanda",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Ekadanta and Madasura"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MUD",
+      "collection_ids": [
+        "MUD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "32-52",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "MUD03",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MUD",
+        "estimated_pages": "32-52",
+        "format": "story",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "MUD03",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Complete source-led origin and conflict; no invented psychological allegory passed as text",
+        "source_anchor": "Mudgala Purana Mahodara khanda",
+        "title": "Mahodara and Mohasura"
+      },
+      "priority": 40,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Complete source-led origin and conflict; no invented psychological allegory passed as text",
+      "source_anchor": "Mudgala Purana Mahodara khanda",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Mahodara and Mohasura"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MUD",
+      "collection_ids": [
+        "MUD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "32-52",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "MUD04",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MUD",
+        "estimated_pages": "32-52",
+        "format": "story",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "MUD04",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Complete source-led narrative, boon, allies, enemies and resolution",
+        "source_anchor": "Mudgala Purana relevant khanda",
+        "title": "Gajavaktra and Lobhasura"
+      },
+      "priority": 40,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Complete source-led narrative, boon, allies, enemies and resolution",
+      "source_anchor": "Mudgala Purana relevant khanda",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Gajavaktra and Lobhasura"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MUD",
+      "collection_ids": [
+        "MUD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "32-52",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "MUD05",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MUD",
+        "estimated_pages": "32-52",
+        "format": "story",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "MUD05",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Complete source-led narrative, avoiding conflation with other Gaṇeśa appearances",
+        "source_anchor": "Mudgala Purana relevant khanda",
+        "title": "Lambodara and Krodhasura"
+      },
+      "priority": 40,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Complete source-led narrative, avoiding conflation with other Gaṇeśa appearances",
+      "source_anchor": "Mudgala Purana relevant khanda",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Lambodara and Krodhasura"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MUD",
+      "collection_ids": [
+        "MUD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "32-52",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "MUD06",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MUD",
+        "estimated_pages": "32-52",
+        "format": "story",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "MUD06",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Source-led incarnation story and opponent history with textual variants",
+        "source_anchor": "Mudgala Purana relevant khanda",
+        "title": "Vikata and Kamasura"
+      },
+      "priority": 40,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Source-led incarnation story and opponent history with textual variants",
+      "source_anchor": "Mudgala Purana relevant khanda",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Vikata and Kamasura"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MUD",
+      "collection_ids": [
+        "MUD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "32-52",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "MUD07",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MUD",
+        "estimated_pages": "32-52",
+        "format": "story",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "MUD07",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Source-led narrative and possessiveness theme only where supported",
+        "source_anchor": "Mudgala Purana relevant khanda",
+        "title": "Vighnaraja and Mamasura"
+      },
+      "priority": 40,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Source-led narrative and possessiveness theme only where supported",
+      "source_anchor": "Mudgala Purana relevant khanda",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Vighnaraja and Mamasura"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MUD",
+      "collection_ids": [
+        "MUD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "32-52",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "MUD08",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MUD",
+        "estimated_pages": "32-52",
+        "format": "story",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "MUD08",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Source-led final celebrated manifestation narrative; distinguish from the ninth Yogacarita khanda",
+        "source_anchor": "Mudgala Purana relevant khanda",
+        "title": "Dhumravarna and Abhiman(a)sura"
+      },
+      "priority": 40,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Source-led final celebrated manifestation narrative; distinguish from the ninth Yogacarita khanda",
+      "source_anchor": "Mudgala Purana relevant khanda",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Dhumravarna and Abhiman(a)sura"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "GAN",
+      "collection_ids": [
+        "GAN"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "28-44",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "tradition_companion",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "GAN01",
+      "line": "KATHAS",
+      "original": {
+        "collection": "GAN",
+        "estimated_pages": "28-44",
+        "format": "tradition_companion",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "GAN01",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Compare Shiva Purana and other birth traditions; avoid collapsing independent accounts into one biography",
+        "source_anchor": "Shiva Purana; other identified witnesses",
+        "title": "The Many Births of Ganesha"
+      },
+      "priority": 40,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Compare Shiva Purana and other birth traditions; avoid collapsing independent accounts into one biography",
+      "source_anchor": "Shiva Purana; other identified witnesses",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "The Many Births of Ganesha"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "GAN",
+      "collection_ids": [
+        "GAN"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "36-60",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "story",
+      "graph_readiness": "PARTIAL_GRAPH",
+      "id": "GAN02",
+      "line": "KATHAS",
+      "original": {
+        "collection": "GAN",
+        "estimated_pages": "36-60",
+        "format": "story",
+        "graph_readiness": "PARTIAL_GRAPH",
+        "id": "GAN02",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Complete childhood and confrontations including Devantaka and Narantaka where supported",
+        "source_anchor": "Ganesha Purana Krida khanda",
+        "title": "Mahotkata Vinayaka"
+      },
+      "priority": 40,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Complete childhood and confrontations including Devantaka and Narantaka where supported",
+      "source_anchor": "Ganesha Purana Krida khanda",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Mahotkata Vinayaka"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "GAN",
+      "collection_ids": [
+        "GAN"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "36-60",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "GAN03",
+      "line": "KATHAS",
+      "original": {
+        "collection": "GAN",
+        "estimated_pages": "36-60",
+        "format": "story",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "GAN03",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Full Tretayuga incarnation narrative with opponents, mount and end as text provides",
+        "source_anchor": "Ganesha Purana Krida khanda",
+        "title": "Mayureshvara"
+      },
+      "priority": 40,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Full Tretayuga incarnation narrative with opponents, mount and end as text provides",
+      "source_anchor": "Ganesha Purana Krida khanda",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Mayureshvara"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "GAN",
+      "collection_ids": [
+        "GAN"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "36-56",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "story",
+      "graph_readiness": "PARTIAL_GRAPH",
+      "id": "GAN04",
+      "line": "KATHAS",
+      "original": {
+        "collection": "GAN",
+        "estimated_pages": "36-56",
+        "format": "story",
+        "graph_readiness": "PARTIAL_GRAPH",
+        "id": "GAN04",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Source-led Dvapara manifestation and Ganesha Gita narrative frame",
+        "source_anchor": "Ganesha Purana Krida khanda and embedded Ganesha Gita",
+        "title": "Gajanana and King Varenya"
+      },
+      "priority": 40,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Source-led Dvapara manifestation and Ganesha Gita narrative frame",
+      "source_anchor": "Ganesha Purana Krida khanda and embedded Ganesha Gita",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Gajanana and King Varenya"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "GAN",
+      "collection_ids": [
+        "GAN"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-36",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "tradition_companion",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "GAN05",
+      "line": "KATHAS",
+      "original": {
+        "collection": "GAN",
+        "estimated_pages": "24-36",
+        "format": "tradition_companion",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "GAN05",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Distinguish prophecies and future manifestations from events already narrated",
+        "source_anchor": "Ganesha Purana relevant sections",
+        "title": "Dhumraketu: A Future Promise"
+      },
+      "priority": 40,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Distinguish prophecies and future manifestations from events already narrated",
+      "source_anchor": "Ganesha Purana relevant sections",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Dhumraketu: A Future Promise"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "GAN",
+      "collection_ids": [
+        "GAN"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "36-60",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "philosophical_dialogue",
+      "graph_readiness": "PARTIAL_GRAPH",
+      "id": "GAN06",
+      "line": "KATHAS",
+      "original": {
+        "collection": "GAN",
+        "estimated_pages": "36-60",
+        "format": "philosophical_dialogue",
+        "graph_readiness": "PARTIAL_GRAPH",
+        "id": "GAN06",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Complete king-teacher dialogue, yoga, action, knowledge, devotion and cosmological revelation",
+        "source_anchor": "Ganesha Gita in Ganesha Purana",
+        "title": "Ganesha Gita"
+      },
+      "priority": 40,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Complete king-teacher dialogue, yoga, action, knowledge, devotion and cosmological revelation",
+      "source_anchor": "Ganesha Gita in Ganesha Purana",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Ganesha Gita"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "GAN",
+      "collection_ids": [
+        "GAN"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "20-36",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "textual_comparison",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "GAN07",
+      "line": "KATHAS",
+      "original": {
+        "collection": "GAN",
+        "estimated_pages": "20-36",
+        "format": "textual_comparison",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "GAN07",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Scribe account, manuscript recensions, later traditions and narrative significance without fabricated episodes",
+        "source_anchor": "Mahabharata textual witnesses and scholarship",
+        "title": "Ganesha in the Mahabharata?"
+      },
+      "priority": 40,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Scribe account, manuscript recensions, later traditions and narrative significance without fabricated episodes",
+      "source_anchor": "Mahabharata textual witnesses and scholarship",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Ganesha in the Mahabharata?"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "GAN",
+      "collection_ids": [
+        "GAN"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "36-56",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "tradition_companion",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "GAN08",
+      "line": "KATHAS",
+      "original": {
+        "collection": "GAN",
+        "estimated_pages": "36-56",
+        "format": "tradition_companion",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "GAN08",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Mahaganapati, Heramba, Haridra, Ucchista and Sri Vidya context; iconography and tradition, not DIY ritual",
+        "source_anchor": "Relevant Ganapatya and Tantric works; Lalitopakhyana 27",
+        "title": "The Hidden Forms of Ganapati"
+      },
+      "priority": 40,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Mahaganapati, Heramba, Haridra, Ucchista and Sri Vidya context; iconography and tradition, not DIY ritual",
+      "source_anchor": "Relevant Ganapatya and Tantric works; Lalitopakhyana 27",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "The Hidden Forms of Ganapati"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MHD",
+      "collection_ids": [
+        "MHD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "28-44",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "tradition_companion",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "MHD00",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MHD",
+        "estimated_pages": "28-44",
+        "format": "tradition_companion",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "MHD00",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Multiple group-origin stories including Sati ten directions and textual variants, without claiming one universal source",
+        "source_anchor": "Mahabhagavata Purana; Brihaddharma Purana; Tantric witnesses",
+        "title": "Why Ten Mahavidyas?"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Multiple group-origin stories including Sati ten directions and textual variants, without claiming one universal source",
+      "source_anchor": "Mahabhagavata Purana; Brihaddharma Purana; Tantric witnesses",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Why Ten Mahavidyas?"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MHD",
+      "collection_ids": [
+        "MHD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-40",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "form_profile",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "MHD01",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MHD",
+        "estimated_pages": "24-40",
+        "format": "form_profile",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "MHD01",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Actual Kali narratives, iconography and tradition-specific interpretation, not invented single biography",
+        "source_anchor": "Shakta scriptures, Tantras and scholarly sources",
+        "title": "Kali: The Edge of Time"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Actual Kali narratives, iconography and tradition-specific interpretation, not invented single biography",
+      "source_anchor": "Shakta scriptures, Tantras and scholarly sources",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Kali: The Edge of Time"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MHD",
+      "collection_ids": [
+        "MHD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-40",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "form_profile",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "MHD02",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MHD",
+        "estimated_pages": "24-40",
+        "format": "form_profile",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "MHD02",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Tar(a) traditions, iconographic and theological stories; do not equate all Tara traditions",
+        "source_anchor": "Tantric and regional textual sources",
+        "title": "Tara: Across the Dangerous Crossing"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Tar(a) traditions, iconographic and theological stories; do not equate all Tara traditions",
+      "source_anchor": "Tantric and regional textual sources",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Tara: Across the Dangerous Crossing"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MHD",
+      "collection_ids": [
+        "MHD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-40",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "form_profile",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "MHD03",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MHD",
+        "estimated_pages": "24-40",
+        "format": "form_profile",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "MHD03",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Tripurasundari/Shodashi, Lalita and Sri Vidya sources, identifications and differences",
+        "source_anchor": "Lalitopakhyana; Sri Vidya texts",
+        "title": "Shodashi: The Beauty of the Three Worlds"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Tripurasundari/Shodashi, Lalita and Sri Vidya sources, identifications and differences",
+      "source_anchor": "Lalitopakhyana; Sri Vidya texts",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Shodashi: The Beauty of the Three Worlds"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MHD",
+      "collection_ids": [
+        "MHD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-40",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "form_profile",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "MHD04",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MHD",
+        "estimated_pages": "24-40",
+        "format": "form_profile",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "MHD04",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Cosmological themes and textual portrayals; no fabricated battles",
+        "source_anchor": "Shakta Tantric and Puranic sources",
+        "title": "Bhuvaneshvari: The World as Her Body"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Cosmological themes and textual portrayals; no fabricated battles",
+      "source_anchor": "Shakta Tantric and Puranic sources",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Bhuvaneshvari: The World as Her Body"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MHD",
+      "collection_ids": [
+        "MHD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-40",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "form_profile",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "MHD05",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MHD",
+        "estimated_pages": "24-40",
+        "format": "form_profile",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "MHD05",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Bhairavi textual identities, iconography and interpretations",
+        "source_anchor": "Tantras and Shakta sources",
+        "title": "Bhairavi: The Fearsome Power"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Bhairavi textual identities, iconography and interpretations",
+      "source_anchor": "Tantras and Shakta sources",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Bhairavi: The Fearsome Power"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MHD",
+      "collection_ids": [
+        "MHD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-40",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "form_profile",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "MHD06",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MHD",
+        "estimated_pages": "24-40",
+        "format": "form_profile",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "MHD06",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Origin traditions, self-decapitation image, companions and the competing interpretive lenses",
+        "source_anchor": "Tantric and Shakta sources",
+        "title": "Chinnamasta: The Severed Self"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Origin traditions, self-decapitation image, companions and the competing interpretive lenses",
+      "source_anchor": "Tantric and Shakta sources",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Chinnamasta: The Severed Self"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MHD",
+      "collection_ids": [
+        "MHD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-40",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "form_profile",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "MHD07",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MHD",
+        "estimated_pages": "24-40",
+        "format": "form_profile",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "MHD07",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Widow goddess traditions, absence, misfortune and liberation themes with nuance",
+        "source_anchor": "Tantric and Shakta sources",
+        "title": "Dhumavati: The Unwanted Presence"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Widow goddess traditions, absence, misfortune and liberation themes with nuance",
+      "source_anchor": "Tantric and Shakta sources",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Dhumavati: The Unwanted Presence"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MHD",
+      "collection_ids": [
+        "MHD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-40",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "form_profile",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "MHD08",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MHD",
+        "estimated_pages": "24-40",
+        "format": "form_profile",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "MHD08",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Stambhana traditions, meanings and source context; no instructional esoteric procedures",
+        "source_anchor": "Tantric and Shakta sources",
+        "title": "Bagalamukhi: The Power to Stop"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Stambhana traditions, meanings and source context; no instructional esoteric procedures",
+      "source_anchor": "Tantric and Shakta sources",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Bagalamukhi: The Power to Stop"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MHD",
+      "collection_ids": [
+        "MHD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-40",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "form_profile",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "MHD09",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MHD",
+        "estimated_pages": "24-40",
+        "format": "form_profile",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "MHD09",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Outsider status, music, speech and textual traditions; avoid collapsing into Shyamala without evidence",
+        "source_anchor": "Shakta and Sri Vidya sources",
+        "title": "Matangi: The Knowledge Outside"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Outsider status, music, speech and textual traditions; avoid collapsing into Shyamala without evidence",
+      "source_anchor": "Shakta and Sri Vidya sources",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Matangi: The Knowledge Outside"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "MHD",
+      "collection_ids": [
+        "MHD"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-40",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "form_profile",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "MHD10",
+      "line": "KATHAS",
+      "original": {
+        "collection": "MHD",
+        "estimated_pages": "24-40",
+        "format": "form_profile",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "MHD10",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Lotus goddess, prosperity and connections to Lakshmi across traditions",
+        "source_anchor": "Shakta texts and iconography",
+        "title": "Kamala: Abundance and the Lotus"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Lotus goddess, prosperity and connections to Lakshmi across traditions",
+      "source_anchor": "Shakta texts and iconography",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Kamala: Abundance and the Lotus"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "COS",
+      "collection_ids": [
+        "COS"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "28-44",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "story",
+      "graph_readiness": "PARTIAL_GRAPH",
+      "id": "COS01",
+      "line": "KATHAS",
+      "original": {
+        "collection": "COS",
+        "estimated_pages": "28-44",
+        "format": "story",
+        "graph_readiness": "PARTIAL_GRAPH",
+        "id": "COS01",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Durgama's deprivation, Satakshi/Shakambhari manifestation, nourishment and battle",
+        "source_anchor": "Devi Bhagavata 7.28; Devi Mahatmya 11 predictions",
+        "title": "When the Mother Fed the World"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Durgama's deprivation, Satakshi/Shakambhari manifestation, nourishment and battle",
+      "source_anchor": "Devi Bhagavata 7.28; Devi Mahatmya 11 predictions",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "When the Mother Fed the World"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "COS",
+      "collection_ids": [
+        "COS"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-40",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "story",
+      "graph_readiness": "PARTIAL_GRAPH",
+      "id": "COS02",
+      "line": "KATHAS",
+      "original": {
+        "collection": "COS",
+        "estimated_pages": "24-40",
+        "format": "story",
+        "graph_readiness": "PARTIAL_GRAPH",
+        "id": "COS02",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Aruna/Bhramari source narration and relation to Devi Mahatmya predictions",
+        "source_anchor": "Devi Bhagavata 10.13; Devi Mahatmya 11",
+        "title": "The Goddess of Innumerable Bees"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Aruna/Bhramari source narration and relation to Devi Mahatmya predictions",
+      "source_anchor": "Devi Bhagavata 10.13; Devi Mahatmya 11",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "The Goddess of Innumerable Bees"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "COS",
+      "collection_ids": [
+        "COS"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "40-72",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "philosophical_dialogue",
+      "graph_readiness": "PARTIAL_GRAPH",
+      "id": "COS03",
+      "line": "KATHAS",
+      "original": {
+        "collection": "COS",
+        "estimated_pages": "40-72",
+        "format": "philosophical_dialogue",
+        "graph_readiness": "PARTIAL_GRAPH",
+        "id": "COS03",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Narrative framing and Bhagavati's teaching; develop complete dialogue without invented philosophy",
+        "source_anchor": "Devi Bhagavata 7.31-40",
+        "title": "The Devi Gita"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Narrative framing and Bhagavati's teaching; develop complete dialogue without invented philosophy",
+      "source_anchor": "Devi Bhagavata 7.31-40",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "The Devi Gita"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "COS",
+      "collection_ids": [
+        "COS"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "20-32",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "cosmology_companion",
+      "graph_readiness": "PARTIAL_GRAPH",
+      "id": "COS04",
+      "line": "KATHAS",
+      "original": {
+        "collection": "COS",
+        "estimated_pages": "20-32",
+        "format": "cosmology_companion",
+        "graph_readiness": "PARTIAL_GRAPH",
+        "id": "COS04",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "The narrator, addressee and theological status of Manidvipa in Book 12",
+        "source_anchor": "Devi Bhagavata 12.10",
+        "title": "Beyond the Familiar Lokas"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "The narrator, addressee and theological status of Manidvipa in Book 12",
+      "source_anchor": "Devi Bhagavata 12.10",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Beyond the Familiar Lokas"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "COS",
+      "collection_ids": [
+        "COS"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "32-52",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "cosmology_companion",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "COS05",
+      "line": "KATHAS",
+      "original": {
+        "collection": "COS",
+        "estimated_pages": "32-52",
+        "format": "cosmology_companion",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "COS05",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Textual concentric enclosures, guardians, palaces and symbolism in their actual source order",
+        "source_anchor": "Devi Bhagavata 12.10-12",
+        "title": "The Enclosures of Manidvipa"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Textual concentric enclosures, guardians, palaces and symbolism in their actual source order",
+      "source_anchor": "Devi Bhagavata 12.10-12",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "The Enclosures of Manidvipa"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "COS",
+      "collection_ids": [
+        "COS"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-44",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "cosmology_companion",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "COS06",
+      "line": "KATHAS",
+      "original": {
+        "collection": "COS",
+        "estimated_pages": "24-44",
+        "format": "cosmology_companion",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "COS06",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Interior/central sanctuary and Devis' sovereignty; distinguish guided-tour device if fictionalized",
+        "source_anchor": "Devi Bhagavata 12.11-12",
+        "title": "The Chintamani Residence"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Interior/central sanctuary and Devis' sovereignty; distinguish guided-tour device if fictionalized",
+      "source_anchor": "Devi Bhagavata 12.11-12",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "The Chintamani Residence"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "NAM",
+      "collection_ids": [
+        "NAM"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-36",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "name_companion",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "NAM01",
+      "line": "KATHAS",
+      "original": {
+        "collection": "NAM",
+        "estimated_pages": "24-36",
+        "format": "name_companion",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "NAM01",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Start Sri Mata to early epithets with meanings and story-links, NOT 25 invented stories",
+        "source_anchor": "Lalita Sahasranama and commentaries",
+        "title": "The First Twenty-Five Names"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Start Sri Mata to early epithets with meanings and story-links, NOT 25 invented stories",
+      "source_anchor": "Lalita Sahasranama and commentaries",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "The First Twenty-Five Names"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "NAM",
+      "collection_ids": [
+        "NAM"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-36",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "name_companion",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "NAM02",
+      "line": "KATHAS",
+      "original": {
+        "collection": "NAM",
+        "estimated_pages": "24-36",
+        "format": "name_companion",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "NAM02",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Names concerning iconography, kingship and divine power; preserve sequence and attested interpretation",
+        "source_anchor": "Lalita Sahasranama and commentaries",
+        "title": "Names of the Divine Queen"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Names concerning iconography, kingship and divine power; preserve sequence and attested interpretation",
+      "source_anchor": "Lalita Sahasranama and commentaries",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Names of the Divine Queen"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "NAM",
+      "collection_ids": [
+        "NAM"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-40",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "name_companion",
+      "graph_readiness": "PARTIAL_GRAPH",
+      "id": "NAM03",
+      "line": "KATHAS",
+      "original": {
+        "collection": "NAM",
+        "estimated_pages": "24-40",
+        "format": "name_companion",
+        "graph_readiness": "PARTIAL_GRAPH",
+        "id": "NAM03",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Bhandasura and his army in names, linked to Lalitopakhyana events and textual disagreements",
+        "source_anchor": "Lalita Sahasranama; Lalitopakhyana 20-30",
+        "title": "Names That Remember a War"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Bhandasura and his army in names, linked to Lalitopakhyana events and textual disagreements",
+      "source_anchor": "Lalita Sahasranama; Lalitopakhyana 20-30",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Names That Remember a War"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "NAM",
+      "collection_ids": [
+        "NAM"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "28-44",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "name_companion",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "NAM04",
+      "line": "KATHAS",
+      "original": {
+        "collection": "NAM",
+        "estimated_pages": "28-44",
+        "format": "name_companion",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "NAM04",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Names relating to Sri Chakra, cosmology and metaphysical roles, with referenced commentary",
+        "source_anchor": "Lalita Sahasranama, Sri Vidya commentaries",
+        "title": "The Sri Chakra in a Thousand Names"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Names relating to Sri Chakra, cosmology and metaphysical roles, with referenced commentary",
+      "source_anchor": "Lalita Sahasranama, Sri Vidya commentaries",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "The Sri Chakra in a Thousand Names"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "PIT",
+      "collection_ids": [
+        "PIT"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "28-48",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "story",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "PIT01",
+      "line": "KATHAS",
+      "original": {
+        "collection": "PIT",
+        "estimated_pages": "28-48",
+        "format": "story",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "PIT01",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Source-separated Sati/Daksha accounts and emergence of sacred geography",
+        "source_anchor": "Shiva and Shakta Purana accounts",
+        "title": "Sati, Daksha and the Origins of the Pithas"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Source-separated Sati/Daksha accounts and emergence of sacred geography",
+      "source_anchor": "Shiva and Shakta Purana accounts",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Sati, Daksha and the Origins of the Pithas"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "PIT",
+      "collection_ids": [
+        "PIT"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-44",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "textual_comparison",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "PIT02",
+      "line": "KATHAS",
+      "original": {
+        "collection": "PIT",
+        "estimated_pages": "24-44",
+        "format": "textual_comparison",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "PIT02",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Compare textual Shakti Pitha enumerations and locational differences, including Mahabhagavata prominence of Kamarupa without inventing an exhaustive 51-site table from that text",
+        "source_anchor": "Mahabhagavata; Pithanirnaya; Devi Bhagavata; other lists",
+        "title": "51? 52? 108?"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Compare textual Shakti Pitha enumerations and locational differences, including Mahabhagavata prominence of Kamarupa without inventing an exhaustive 51-site table from that text",
+      "source_anchor": "Mahabhagavata; Pithanirnaya; Devi Bhagavata; other lists",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "51? 52? 108?"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "PIT",
+      "collection_ids": [
+        "PIT"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "32-64",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "atlas_companion",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "PIT03",
+      "line": "KATHAS",
+      "original": {
+        "collection": "PIT",
+        "estimated_pages": "32-64",
+        "format": "atlas_companion",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "PIT03",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Travel/history/temple traditions as separate place-based entries with corroborated geographic data",
+        "source_anchor": "Temple and regional records plus Shakta textual lists",
+        "title": "Journeys to the Shakti Pithas"
+      },
+      "priority": 50,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Travel/history/temple traditions as separate place-based entries with corroborated geographic data",
+      "source_anchor": "Temple and regional records plus Shakta textual lists",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Journeys to the Shakti Pithas"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "GITA",
+      "collection_ids": [
+        "GITA"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "20-36",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "textual_comparison",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "GITA01",
+      "line": "KATHAS",
+      "original": {
+        "collection": "GITA",
+        "estimated_pages": "20-36",
+        "format": "textual_comparison",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "GITA01",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Textual categories and how dialogue literature is named; no universal fixed list",
+        "source_anchor": "Indexed Sanskrit corpus and selected translations",
+        "title": "How Many Gitas Are There?"
+      },
+      "priority": 80,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Textual categories and how dialogue literature is named; no universal fixed list",
+      "source_anchor": "Indexed Sanskrit corpus and selected translations",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "How Many Gitas Are There?"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "GITA",
+      "collection_ids": [
+        "GITA"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "36-60",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "philosophical_dialogue",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "GITA02",
+      "line": "KATHAS",
+      "original": {
+        "collection": "GITA",
+        "estimated_pages": "36-60",
+        "format": "philosophical_dialogue",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "GITA02",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "The war context versus later dialogue and their differences",
+        "source_anchor": "Mahabharata textual witnesses",
+        "title": "The Bhagavad Gita and the Anugita"
+      },
+      "priority": 80,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "The war context versus later dialogue and their differences",
+      "source_anchor": "Mahabharata textual witnesses",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "The Bhagavad Gita and the Anugita"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "GITA",
+      "collection_ids": [
+        "GITA"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "32-52",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "textual_comparison",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "GITA03",
+      "line": "KATHAS",
+      "original": {
+        "collection": "GITA",
+        "estimated_pages": "32-52",
+        "format": "textual_comparison",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "GITA03",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Varenya and Arjuna settings, philosophical parallels and distinctions",
+        "source_anchor": "Ganesha Gita; Bhagavad Gita",
+        "title": "The Ganesha Gita and Bhagavad Gita"
+      },
+      "priority": 80,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Varenya and Arjuna settings, philosophical parallels and distinctions",
+      "source_anchor": "Ganesha Gita; Bhagavad Gita",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "The Ganesha Gita and Bhagavad Gita"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "GITA",
+      "collection_ids": [
+        "GITA"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "36-60",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "textual_comparison",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "GITA04",
+      "line": "KATHAS",
+      "original": {
+        "collection": "GITA",
+        "estimated_pages": "36-60",
+        "format": "textual_comparison",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "GITA04",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Theological and narrative differences without flattening them into one message",
+        "source_anchor": "Devi Bhagavata; Bhagavata Purana",
+        "title": "The Devi Gita and the Uddhava Gita"
+      },
+      "priority": 80,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Theological and narrative differences without flattening them into one message",
+      "source_anchor": "Devi Bhagavata; Bhagavata Purana",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "The Devi Gita and the Uddhava Gita"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "GITA",
+      "collection_ids": [
+        "GITA"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "32-52",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "philosophical_dialogue",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "GITA05",
+      "line": "KATHAS",
+      "original": {
+        "collection": "GITA",
+        "estimated_pages": "32-52",
+        "format": "philosophical_dialogue",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "GITA05",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Complete dialogic narrative and nondual teaching as attested",
+        "source_anchor": "Ashtavakra Gita textual witness",
+        "title": "Ashtavakra and Janaka"
+      },
+      "priority": 80,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Complete dialogic narrative and nondual teaching as attested",
+      "source_anchor": "Ashtavakra Gita textual witness",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "Ashtavakra and Janaka"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "GITA",
+      "collection_ids": [
+        "GITA"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "32-52",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "philosophical_dialogue",
+      "graph_readiness": "SOURCE_WORK_NEEDED",
+      "id": "GITA06",
+      "line": "KATHAS",
+      "original": {
+        "collection": "GITA",
+        "estimated_pages": "32-52",
+        "format": "philosophical_dialogue",
+        "graph_readiness": "SOURCE_WORK_NEEDED",
+        "id": "GITA06",
+        "publication_status": "PLANNED",
+        "requires_source_check": true,
+        "scope": "Explore Dattatreya/Avadhuta traditions with work-level distinction",
+        "source_anchor": "Avadhuta Gita and related texts",
+        "title": "The Avadhuta and the Many Teachers"
+      },
+      "priority": 80,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": true,
+      "rights_status": "UNKNOWN",
+      "scope": "Explore Dattatreya/Avadhuta traditions with work-level distinction",
+      "source_anchor": "Avadhuta Gita and related texts",
+      "source_class": "MULA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "The Avadhuta and the Many Teachers"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "KAL",
+      "collection_ids": [
+        "KAL"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "24-40",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "fiction",
+      "graph_readiness": "ORIGINAL_FICTION",
+      "id": "KAL01",
+      "line": "ORIGINALS_KALPANA",
+      "original": {
+        "collection": "KAL",
+        "estimated_pages": "24-40",
+        "format": "fiction",
+        "graph_readiness": "ORIGINAL_FICTION",
+        "id": "KAL01",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Original future civilization experiences ten seemingly disconnected impossible events; no scripture masquerade",
+        "source_anchor": "KHATAKSHETRA ORIGINAL; background Mahavidya study",
+        "title": "TEN DIRECTIONS: Prologue"
+      },
+      "priority": 90,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Original future civilization experiences ten seemingly disconnected impossible events; no scripture masquerade",
+      "source_anchor": "KHATAKSHETRA ORIGINAL; background Mahavidya study",
+      "source_class": "KALPANA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "TEN DIRECTIONS: Prologue"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "KAL",
+      "collection_ids": [
+        "KAL"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "8-12 chapters",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "fiction_series",
+      "graph_readiness": "ORIGINAL_FICTION",
+      "id": "KAL02",
+      "line": "ORIGINALS_KALPANA",
+      "original": {
+        "collection": "KAL",
+        "estimated_pages": "8-12 chapters",
+        "format": "fiction_series",
+        "graph_readiness": "ORIGINAL_FICTION",
+        "id": "KAL02",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "A serialized mystery about future AI, memory, time, worlds, civilization and ten interpretive motifs; character bible and plot first",
+        "source_anchor": "KHATAKSHETRA ORIGINAL; background Mahavidya study",
+        "title": "TEN DIRECTIONS: Season One"
+      },
+      "priority": 90,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "A serialized mystery about future AI, memory, time, worlds, civilization and ten interpretive motifs; character bible and plot first",
+      "source_anchor": "KHATAKSHETRA ORIGINAL; background Mahavidya study",
+      "source_class": "KALPANA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "TEN DIRECTIONS: Season One"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "KAL",
+      "collection_ids": [
+        "KAL"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "6-10 chapters",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "fiction_series",
+      "graph_readiness": "ORIGINAL_FICTION",
+      "id": "KAL03",
+      "line": "ORIGINALS_KALPANA",
+      "original": {
+        "collection": "KAL",
+        "estimated_pages": "6-10 chapters",
+        "format": "fiction_series",
+        "graph_readiness": "ORIGINAL_FICTION",
+        "id": "KAL03",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Alternative Jaya/Vijaya choice and consequences across Yugas, rigorously separated from received traditions",
+        "source_anchor": "KHATAKSHETRA ORIGINAL; Bhagavata crossreferences",
+        "title": "SEVEN LIVES"
+      },
+      "priority": 90,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Alternative Jaya/Vijaya choice and consequences across Yugas, rigorously separated from received traditions",
+      "source_anchor": "KHATAKSHETRA ORIGINAL; Bhagavata crossreferences",
+      "source_class": "KALPANA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "SEVEN LIVES"
+    },
+    {
+      "automatic_production_eligible": true,
+      "collection": "KAL",
+      "collection_ids": [
+        "KAL"
+      ],
+      "edition_status": "PLANNED",
+      "estimated_pages": "6-10 chapters",
+      "factory": {
+        "automatic_production_eligible": true,
+        "edition_status": "PLANNED",
+        "mapping": {
+          "outcome": "UNMAPPED",
+          "segments": []
+        },
+        "publication_readiness_status": "NOT_ASSESSED",
+        "rights_status": "UNKNOWN",
+        "source_verification_status": "NEEDS_SOURCE_REVIEW"
+      },
+      "format": "fiction_series",
+      "graph_readiness": "ORIGINAL_FICTION",
+      "id": "KAL04",
+      "line": "ORIGINALS_KALPANA",
+      "original": {
+        "collection": "KAL",
+        "estimated_pages": "6-10 chapters",
+        "format": "fiction_series",
+        "graph_readiness": "ORIGINAL_FICTION",
+        "id": "KAL04",
+        "publication_status": "PLANNED",
+        "requires_source_check": false,
+        "scope": "Explore dharma when adversarial forces are distributed rather than concentrated in one antagonist",
+        "source_anchor": "KHATAKSHETRA ORIGINAL; Ramayana tradition",
+        "title": "A RAMAYANA WITHOUT RAVANA"
+      },
+      "priority": 90,
+      "publication_readiness_status": "NOT_ASSESSED",
+      "publication_status": "PLANNED",
+      "readiness": "NEEDS_SOURCE_REVIEW",
+      "requires_source_check": false,
+      "rights_status": "UNKNOWN",
+      "scope": "Explore dharma when adversarial forces are distributed rather than concentrated in one antagonist",
+      "source_anchor": "KHATAKSHETRA ORIGINAL; Ramayana tradition",
+      "source_class": "KALPANA",
+      "source_mapping": {
+        "outcome": "UNMAPPED",
+        "segments": []
+      },
+      "source_verification_status": "NEEDS_SOURCE_REVIEW",
+      "story_spine_ids": [],
+      "title": "A RAMAYANA WITHOUT RAVANA"
+    }
+  ],
+  "collections": [
+    {
+      "code": "DM",
+      "description": "A connected illustrated narrative of the 13-chapter Devi Mahatmya, preserving Suratha/Samadhi/Medhas framing and its three great battle cycles.",
+      "id": "DM",
+      "original": {
+        "description": "A connected illustrated narrative of the 13-chapter Devi Mahatmya, preserving Suratha/Samadhi/Medhas framing and its three great battle cycles.",
+        "priority": "P0",
+        "title": "THE DEVI MAHATMYA SAGA"
+      },
+      "priority": "P0",
+      "title": "THE DEVI MAHATMYA SAGA"
+    },
+    {
+      "code": "FEST",
+      "description": "Named tradition and temple calendars, not a fabricated universal nine-form daily sequence.",
+      "id": "FEST",
+      "original": {
+        "description": "Named tradition and temple calendars, not a fabricated universal nine-form daily sequence.",
+        "priority": "P0-COMPANION",
+        "title": "NAVARATRI & DUSSEHRA READER"
+      },
+      "priority": "P0-COMPANION",
+      "title": "NAVARATRI & DUSSEHRA READER"
+    },
+    {
+      "code": "MAT",
+      "description": "Source-scoped goddess roster and battlefield story, with comparative iconography and identities kept distinct.",
+      "id": "MAT",
+      "original": {
+        "description": "Source-scoped goddess roster and battlefield story, with comparative iconography and identities kept distinct.",
+        "priority": "P0/P1",
+        "title": "THE MATRIKAS"
+      },
+      "priority": "P0/P1",
+      "title": "THE MATRIKAS"
+    },
+    {
+      "code": "LAL",
+      "description": "The chapter-ordered Bhandasura saga, from the ash-origin through battles and Kama’s restoration.",
+      "id": "LAL",
+      "original": {
+        "description": "The chapter-ordered Bhandasura saga, from the ash-origin through battles and Kama’s restoration.",
+        "priority": "P0",
+        "title": "LALITA’S WAR"
+      },
+      "priority": "P0",
+      "title": "LALITA’S WAR"
+    },
+    {
+      "code": "MUD",
+      "description": "Eight individually sourced full opponent arcs, not eight one-page summaries.",
+      "id": "MUD",
+      "original": {
+        "description": "Eight individually sourced full opponent arcs, not eight one-page summaries.",
+        "priority": "P1",
+        "title": "THE EIGHT MUDGALA MANIFESTATIONS"
+      },
+      "priority": "P1",
+      "title": "THE EIGHT MUDGALA MANIFESTATIONS"
+    },
+    {
+      "code": "GAN",
+      "description": "Yuga manifestation stories, Ganesha Gita and carefully separated other Ganapati traditions.",
+      "id": "GAN",
+      "original": {
+        "description": "Yuga manifestation stories, Ganesha Gita and carefully separated other Ganapati traditions.",
+        "priority": "P1",
+        "title": "GANESHA PURANA & GANAPATYA WORLDS"
+      },
+      "priority": "P1",
+      "title": "GANESHA PURANA & GANAPATYA WORLDS"
+    },
+    {
+      "code": "MHD",
+      "description": "One grouped origin volume plus ten textual/iconographic form profiles; do not invent a standard battle biography per goddess.",
+      "id": "MHD",
+      "original": {
+        "description": "One grouped origin volume plus ten textual/iconographic form profiles; do not invent a standard battle biography per goddess.",
+        "priority": "P1-RESEARCH",
+        "title": "TEN MAHAVIDYAS"
+      },
+      "priority": "P1-RESEARCH",
+      "title": "TEN MAHAVIDYAS"
+    },
+    {
+      "code": "COS",
+      "description": "Complete battles, teaching dialogue and source-ordered cosmological journey.",
+      "id": "COS",
+      "original": {
+        "description": "Complete battles, teaching dialogue and source-ordered cosmological journey.",
+        "priority": "P1-RESEARCH",
+        "title": "DEVI BHAGAVATA & MANIDVIPA"
+      },
+      "priority": "P1-RESEARCH",
+      "title": "DEVI BHAGAVATA & MANIDVIPA"
+    },
+    {
+      "code": "NAM",
+      "description": "Thematically grouped illustrated name companions plus future searchable 1000-name reference, not 1000 fake stories.",
+      "id": "NAM",
+      "original": {
+        "description": "Thematically grouped illustrated name companions plus future searchable 1000-name reference, not 1000 fake stories.",
+        "priority": "P1-RESEARCH",
+        "title": "THE THOUSAND NAMES OF LALITA"
+      },
+      "priority": "P1-RESEARCH",
+      "title": "THE THOUSAND NAMES OF LALITA"
+    },
+    {
+      "code": "PIT",
+      "description": "Narrative origin, competing enumerations and geographically grounded living traditions.",
+      "id": "PIT",
+      "original": {
+        "description": "Narrative origin, competing enumerations and geographically grounded living traditions.",
+        "priority": "P1-RESEARCH",
+        "title": "SHAKTI PITHA ATLAS"
+      },
+      "priority": "P1-RESEARCH",
+      "title": "SHAKTI PITHA ATLAS"
+    },
+    {
+      "code": "GITA",
+      "description": "Distinct complete dialogues and careful comparisons, after initial collection builds readership.",
+      "id": "GITA",
+      "original": {
+        "description": "Distinct complete dialogues and careful comparisons, after initial collection builds readership.",
+        "priority": "FUTURE",
+        "title": "THE MANY GITAS"
+      },
+      "priority": "FUTURE",
+      "title": "THE MANY GITAS"
+    },
+    {
+      "code": "KAL",
+      "description": "Explicit fictional Kalpana: futuristic Dashamahavidya TEN DIRECTIONS and alternative-Itihasa worlds.",
+      "id": "KAL",
+      "original": {
+        "description": "Explicit fictional Kalpana: futuristic Dashamahavidya TEN DIRECTIONS and alternative-Itihasa worlds.",
+        "priority": "FUTURE-IP",
+        "title": "KHATAKSHETRA ORIGINALS"
+      },
+      "priority": "FUTURE-IP",
+      "title": "KHATAKSHETRA ORIGINALS"
+    }
+  ],
+  "metadata": {
+    "counts": {
+      "by_collection": {
+        "COS": 6,
+        "DM": 9,
+        "FEST": 4,
+        "GAN": 8,
+        "GITA": 6,
+        "KAL": 4,
+        "LAL": 12,
+        "MAT": 3,
+        "MHD": 11,
+        "MUD": 8,
+        "NAM": 4,
+        "PIT": 3
+      },
+      "total": 78
+    },
+    "created": "2026-10-11",
+    "method": "Source graph -> corpus-specific complete narrative -> book bible -> dialogue and art references -> print production",
+    "normalization": "LOSSLESS_V01_WITH_NAMESPACED_FACTORY_DERIVATIONS",
+    "reference_book": "Satyanarayana_Vrata_Katha_Complete_Illustrated_Storybook.pdf",
+    "source_path": "Khatakshetra_Illustrated_Library_Catalogue_v0.1.json",
+    "source_sha256": "e80483a0c77e8453616868b85ce883407e7c5bfaa81fae5d6c605266764c2f5b",
+    "status": "Editorial roadmap, not a set of completed or verified book manuscripts",
+    "title": "Khatakshetra Illustrated Library — Proposed Master Catalogue v0.1"
+  },
   "schema_version": "1.0"
 }

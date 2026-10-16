@@ -1,0 +1,17 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/editorial-review.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {"const": "1.0", "type": "string"},
+    "book_id": {"type": "string"},
+    "reviewed_manuscript_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "reviewed_packet_hashes": {"items": {"pattern": "^[0-9a-f]{64}$", "type": "string"}, "minItems": 1, "type": "array"},
+    "result": {"enum": ["PASS", "FIX", "ESCALATE"], "type": "string"},
+    "findings": {"items": {"type": "object"}, "type": "array"},
+    "review_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
+  },
+  "required": ["schema_version", "book_id", "reviewed_manuscript_hash", "reviewed_packet_hashes", "result", "findings", "review_hash"],
+  "title": "Independent editorial review",
+  "type": "object"
+}

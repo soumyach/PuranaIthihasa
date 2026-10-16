@@ -18,8 +18,16 @@ def editorial_review(manuscript, required_event_ids=None, reviewer=None):
     if not reviewer:
         findings.append({"code": "INDEPENDENT_SEMANTIC_REVIEW_REQUIRED"})
         return report("EDITORIAL_INDEPENDENT_QA", "ESCALATE", findings, manuscript.get("book_id"))
-    if reviewer.get("id") == manuscript.get("creator", {}).get("id") or not reviewer.get("independent"):
+    if (
+        reviewer.get("id") == manuscript.get("creator", {}).get("id")
+        or not reviewer.get("independent")
+        or not reviewer.get("capability_verified")
+        or reviewer.get("provider_kind") != "editorial_review"
+    ):
         findings.append({"code": "REVIEWER_NOT_INDEPENDENT", "reviewer_id": reviewer.get("id")})
+        return report("EDITORIAL_INDEPENDENT_QA", "ESCALATE", findings, manuscript.get("book_id"))
+    if not reviewer.get("reviewed_manuscript_hash") or not reviewer.get("reviewed_packet_hashes"):
+        findings.append({"code": "REVIEW_INPUT_HASH_ATTESTATION_MISSING"})
         return report("EDITORIAL_INDEPENDENT_QA", "ESCALATE", findings, manuscript.get("book_id"))
     missing = sorted(REQUIRED_SEMANTIC_DIMENSIONS - set(reviewer.get("reviewed_dimensions", [])))
     if missing:

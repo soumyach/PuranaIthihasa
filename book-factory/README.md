@@ -1,6 +1,6 @@
-# Khatakshetra Book Factory — Foundation PR2
+# Khatakshetra Book Factory — Foundation PR3
 
-This milestone extends the offline control plane with evidence-grounded source dossiers, Story Packets, narrative contracts, separate character/location bible contracts, independent editorial gates, and scope-safe approvals. It does not generate a manuscript, image, page, PDF, pull request, deployment, or public release. See `docs/BOOK_FACTORY_FOUNDATION_PR2.md` for the complete execution report.
+This milestone imports the authoritative 78-book catalogue, registers DM08 as an existing reference edition, ranks non-DM08 candidates, and prepares only DM04's source dossier and Story Packet. It does not generate a manuscript, image, page, PDF, pull request, deployment, or public release. See `docs/BOOK_FACTORY_FOUNDATION_PR3.md` for the execution report.
 
 ## Command interface
 
@@ -13,6 +13,10 @@ From the repository root, use the checked-in launcher:
 ./factory missing-inputs
 ./factory source-dossier --book-id ID
 ./factory story-packet --spine-id SPINE_ID
+./factory evaluate-catalogue
+./factory prepare-pilot --book-id DM04
+./factory draft-manuscript --book-id DM04 --dry-run
+./factory review-manuscript --book-id DM04
 ./factory produce-next --dry-run
 ./factory resume --book-id ID
 ```
@@ -29,7 +33,10 @@ All commands are repository-local and make no network or provider calls. `produc
 
 ## Implemented
 
-- Empty authoritative catalogue plus schema/import support that preserves original book and collection IDs.
+- Lossless authoritative catalogue import preserving all 78 book IDs, 12 collection codes, original fields, counts, metadata, and exact source hash.
+- Explicit graph mapping outcomes for every catalogue entry, including event-scoped bindings for books that share broad story spines.
+- DM08 reference-edition registration with immutable PDF/manuscript hashes, automatic-production exclusion, and independent source/publication statuses.
+- Evidence-backed pilot ranking and immutable DM04 dossier/Story Packet preparation with no manuscript generation.
 - Readiness values `READY`, `NEEDS_SOURCE_REVIEW`, `INCOMPLETE_SOURCE`, `BLOCKED`, and `COMPLETED`; selection is by ascending priority then stable book ID, and considers only `READY` entries.
 - Read-only access to complete graph spines, ordered events, passages, evidence, related entities/relationships/boons/powers, variants, review flags, and bounded-completeness metadata.
 - Invocation of the existing graph validator with a before/after byte-hash guard.
@@ -57,9 +64,9 @@ All commands are repository-local and make no network or provider calls. `produc
 
 ## Catalogue and readiness
 
-No 78-book production catalogue is present in the audited checkout. Existing story-pack, launch-library, and collection JSON files are useful editorial inputs but are not silently promoted to production manifests. `books/catalogue.json` therefore remains empty. Importers accept only explicit records, retain their IDs and `collection_ids`, reject conflicting redefinitions, and never infer source mappings.
+The exact catalogue v0.1 bytes are retained under `book-factory/inputs/catalogues/`; `books/catalogue.json` is a deterministic, lossless normalization with derived factory decisions kept separate from the original fields. The roadmap labels are preserved but are not treated as verified readiness. Current reconciliation has four exact mappings, 18 subset mappings, and 56 explicit unmapped entries.
 
-A catalogue value of `READY` is only an eligibility input. Production readiness also requires the source graph validator, the exact authoritative rules hash, source/rights review, and applicable approvals. A graph spine with `status: COMPLETE` means its bounded event sequence is complete; it does not establish exhaustive scripture coverage.
+Strictly ready books are currently zero because rights clearance and independent review remain unresolved. DM04, DM02, and DM01 are conditional controlled-pilot finalists. That status permits only pre-production source packaging; it never means publication ready, source certified, rights cleared, or editorially approved.
 
 The synthetic catalogue under `book-factory/fixtures/` exists only for tests and is never read by the normal CLI.
 
@@ -97,9 +104,10 @@ Implement `Provider.capabilities()`, `estimate_minor_units()`, and `execute()` f
 
 - `MYTHOLOGY_COMIC_RULES.md` is imported unchanged and exact-hash registered.
 - Both named visual benchmark PDFs are imported unchanged as presentation-only references; rights remain unresolved.
-- The authoritative 78-book catalogue is absent, so `books/catalogue.json` remains empty.
-- DM08 Manuscript v2 is absent and no DM08 production record was created.
-- The 122,897,487-byte Enemy benchmark requires an approved large-file policy before a GitHub push.
+- The authoritative 78-book catalogue and DM08 Manuscript v2 are registered with their exact hashes.
+- DM08 is an `EXISTING_EDITION`, not a newly produced or certified factory output.
+- Both reference PDFs remain local, hash-verified, ignored presentation references; no oversized PDF exists in ordinary Git history.
+- DM04's source dossier remains blocked on rights and independent review.
 - No approved image/LLM/visual-evaluation provider, credential, quota, or price is configured.
 - No licensed pinned font family or approved Git LFS quota/storage policy exists.
 - Human theological/iconographic reviewer identities are not configured.

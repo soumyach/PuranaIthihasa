@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "policy": {
+    "unlisted_outcome": "UNMAPPED",
+    "rights_default": "UNKNOWN",
+    "note": "Mappings are reviewed graph bindings. Catalogue labels alone never create a mapping or clear rights."
+  },
+  "mappings": {
+    "DM01": {"outcome": "VERIFIED_EXACT", "segments": [{"story_spine_id": "dm-story-frame", "event_ids": ["dm-event-001", "dm-event-002", "dm-event-003", "dm-event-062", "dm-event-063", "dm-event-064"]}]},
+    "DM02": {"outcome": "VERIFIED_EXACT", "segments": [{"story_spine_id": "dm-story-madhu-kaitabha", "event_ids": ["dm-event-004", "dm-event-005", "dm-event-006", "dm-event-007"]}]},
+    "DM03": {"outcome": "VERIFIED_SUBSET", "segments": [{"story_spine_id": "dm-story-mahisha", "event_ids": ["dm-event-008", "dm-event-009", "dm-event-010", "dm-event-011", "dm-event-012"]}]},
+    "DM04": {"outcome": "VERIFIED_EXACT", "segments": [{"story_spine_id": "dm-story-mahisha", "event_ids": ["dm-event-008", "dm-event-009", "dm-event-010", "dm-event-011", "dm-event-012", "dm-event-013", "dm-event-014", "dm-event-015", "dm-event-016", "dm-event-017", "dm-event-018", "dm-event-019", "dm-event-020", "dm-event-021", "dm-event-022", "dm-event-023"]}]},
+    "DM05": {"outcome": "VERIFIED_SUBSET", "segments": [{"story_spine_id": "dm-story-shumbha", "event_ids": ["dm-event-024", "dm-event-025", "dm-event-026", "dm-event-027", "dm-event-028", "dm-event-029", "dm-event-030", "dm-event-031", "dm-event-032"]}]},
+    "DM06": {"outcome": "VERIFIED_SUBSET", "segments": [{"story_spine_id": "dm-story-shumbha", "event_ids": ["dm-event-033", "dm-event-034", "dm-event-035"]}]},
+    "DM07": {"outcome": "VERIFIED_SUBSET", "segments": [{"story_spine_id": "dm-story-shumbha", "event_ids": ["dm-event-036", "dm-event-037", "dm-event-038", "dm-event-039"]}]},
+    "DM08": {"outcome": "VERIFIED_SUBSET", "segments": [{"story_spine_id": "dm-story-shumbha", "event_ids": ["dm-event-040", "dm-event-041"]}], "reference_only": true},
+    "DM09": {"outcome": "VERIFIED_SUBSET", "segments": [{"story_spine_id": "dm-story-shumbha", "event_ids": ["dm-event-042", "dm-event-043", "dm-event-044", "dm-event-045", "dm-event-046", "dm-event-047", "dm-event-048", "dm-event-049", "dm-event-050", "dm-event-051", "dm-event-052", "dm-event-053", "dm-event-054", "dm-event-055", "dm-event-056", "dm-event-057", "dm-event-058", "dm-event-059", "dm-event-060", "dm-event-061"]}, {"story_spine_id": "dm-story-frame", "event_ids": ["dm-event-062", "dm-event-063", "dm-event-064"]}]},
+    "MAT01": {"outcome": "VERIFIED_SUBSET", "segments": [{"story_spine_id": "dm-story-shumbha", "event_ids": ["dm-event-037", "dm-event-038", "dm-event-039"]}]},
+    "LAL01": {"outcome": "VERIFIED_SUBSET", "segments": [{"story_spine_id": "lal-story-bhanda", "event_ids": ["lal-event-001", "lal-event-002"]}]},
+    "LAL02": {"outcome": "VERIFIED_SUBSET", "segments": [{"story_spine_id": "lal-story-bhanda", "event_ids": ["lal-event-020", "lal-event-003", "lal-event-004"]}]},
+    "LAL03": {"outcome": "VERIFIED_SUBSET", "segments": [{"story_spine_id": "lal-story-bhanda", "event_ids": ["lal-event-005", "lal-event-006", "lal-event-007", "lal-event-008", "lal-event-009"]}]},
+    "LAL04": {"outcome": "VERIFIED_SUBSET", "segments": [{"story_spine_id": "lal-story-bhanda", "event_ids": ["lal-event-010", "lal-event-011", "lal-event-012", "lal-event-013", "lal-event-014", "lal-event-015"]}]},
+    "LAL05": {"outcome": "VERIFIED_SUBSET", "segments": [{"story_spine_id": "lal-story-bhanda", "event_ids": ["lal-event-016", "lal-event-017", "lal-event-018", "lal-event-019"]}]},
+    "LAL06": {"outcome": "VERIFIED_SUBSET", "segments": [{"story_spine_id": "lal-story-bhanda", "event_ids": ["lal-event-021", "lal-event-022", "lal-event-023", "lal-event-024"]}]},
+    "LAL07": {"outcome": "VERIFIED_SUBSET", "segments": [{"story_spine_id": "lal-story-bhanda", "event_ids": ["lal-event-025", "lal-event-026", "lal-event-027"]}]},
+    "LAL08": {"outcome": "VERIFIED_SUBSET", "segments": [{"story_spine_id": "lal-story-bhanda", "event_ids": ["lal-event-028", "lal-event-029", "lal-event-030", "lal-event-031"]}]},
+    "LAL09": {"outcome": "VERIFIED_SUBSET", "segments": [{"story_spine_id": "lal-story-bhanda", "event_ids": ["lal-event-032", "lal-event-033", "lal-event-034"]}]},
+    "LAL10": {"outcome": "VERIFIED_SUBSET", "segments": [{"story_spine_id": "lal-story-bhanda", "event_ids": ["lal-event-035", "lal-event-036", "lal-event-037", "lal-event-038", "lal-event-039", "lal-event-040"]}]},
+    "LAL11": {"outcome": "VERIFIED_SUBSET", "segments": [{"story_spine_id": "lal-story-bhanda", "event_ids": ["lal-event-041", "lal-event-042", "lal-event-043", "lal-event-044"]}]},
+    "MUD01": {"outcome": "VERIFIED_EXACT", "segments": [{"story_spine_id": "gp-story-matsara", "event_ids": []}]}
+  },
+  "pilot_ranking": [
+    {"book_id": "DM04", "rank": 1, "visual_score": 5, "scope_score": 5, "reason": "A complete sixteen-event arc with dispossession, divine manifestation, weapon gifts, battle escalation, transformation duel, victory, hymn, and aftermath."},
+    {"book_id": "DM02", "rank": 2, "visual_score": 4, "scope_score": 5, "reason": "A compact exact four-event cosmic arc with a clear reversal and modest first-run complexity."},
+    {"book_id": "DM01", "rank": 3, "visual_score": 3, "scope_score": 5, "reason": "A self-contained framed human story with a resolved return, although less visually varied than the battle narratives."}
+  ]
+}
