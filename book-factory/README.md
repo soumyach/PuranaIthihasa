@@ -1,6 +1,6 @@
-# Khatakshetra Book Factory — Foundation PR3
+# Khatakshetra Book Factory — Foundation PR4
 
-This milestone imports the authoritative 78-book catalogue, registers DM08 as an existing reference edition, ranks non-DM08 candidates, and prepares only DM04's source dossier and Story Packet. It does not generate a manuscript, image, page, PDF, pull request, deployment, or public release. See `docs/BOOK_FACTORY_FOUNDATION_PR3.md` for the execution report.
+This milestone adds executable, evidence-grounded manuscript production and independent editorial review through an auditable Codex specialist-agent handoff. DM04 is the first new private editorial draft. DM08 remains an existing reference edition and is never regenerated. Illustration, page, PDF, publishing, deployment, and public release are outside PR4. See `docs/BOOK_FACTORY_FOUNDATION_PR4.md` for the execution report.
 
 ## Command interface
 
@@ -17,6 +17,12 @@ From the repository root, use the checked-in launcher:
 ./factory prepare-pilot --book-id DM04
 ./factory draft-manuscript --book-id DM04 --dry-run
 ./factory review-manuscript --book-id DM04
+./factory import-source-clearance --book-id DM04 --record PATH
+./factory prepare-manuscript-handoff --book-id DM04
+./factory import-manuscript-handoff --book-id DM04 --handoff PATH --response PATH
+./factory prepare-review-handoff --book-id DM04
+./factory import-review-handoff --book-id DM04 --handoff PATH --response PATH
+./factory manuscript-status --book-id DM04
 ./factory produce-next --dry-run
 ./factory resume --book-id ID
 ```
@@ -29,14 +35,31 @@ The synthetic command path is explicit and never changes the authoritative catal
 ./factory --catalogue book-factory/fixtures/synthetic-book/catalogue.json produce-next --dry-run
 ```
 
-All commands are repository-local and make no network or provider calls. `produce-next` still requires `--dry-run`. `source-dossier` writes only with explicit `--write`; otherwise it and `story-packet` are read-only. `resume` reads durable state but never advances an unsupported stage.
+All commands are repository-local and make no paid provider calls. `produce-next` still requires `--dry-run`. `source-dossier` writes only with explicit `--write`; otherwise it and `story-packet` are read-only. The handoff commands prepare and import exact JSON files; the repository does not pretend that it can spawn a Codex agent programmatically. The current Codex session performs that orchestration and records a session-scoped, non-cryptographic execution attestation.
+
+## PR4 private-draft workflow
+
+The Director enforces the following sequence:
+
+1. Store a source-rights clearance bound to the exact dossier, Story Packet, graph, and rules hashes.
+2. Open only `PRIVATE_DRAFT_PERMITTED_PUBLICATION_BLOCKED`; do not change source readiness or publication readiness.
+3. Prepare a locked manuscript handoff for a `manuscript-story` specialist.
+4. Import the structured response, validate every required event and evidence reference, and store immutable JSON, Markdown, coverage, provenance, and execution records.
+5. Prepare a review handoff bound to that immutable manuscript hash.
+6. Require a different `family-editor` agent, all semantic dimensions, exact hash attestations, and evidence-linked findings.
+7. On `FIX`, produce a targeted revision request and preserve the rejected draft; on `PASS`, record editorial completion without opening publication.
+
+The direct `manuscript_generation` and `editorial_review` adapters remain unavailable. This is intentional: the verified equivalent is the explicit Codex session handoff, not an undeclared use of the interactive model.
 
 ## Implemented
 
 - Lossless authoritative catalogue import preserving all 78 book IDs, 12 collection codes, original fields, counts, metadata, and exact source hash.
 - Explicit graph mapping outcomes for every catalogue entry, including event-scoped bindings for books that share broad story spines.
 - DM08 reference-edition registration with immutable PDF/manuscript hashes, automatic-production exclusion, and independent source/publication statuses.
-- Evidence-backed pilot ranking and immutable DM04 dossier/Story Packet preparation with no manuscript generation.
+- Retained PR3's evidence-backed pilot ranking and immutable DM04 dossier/Story Packet preparation as the locked input to PR4 manuscript generation.
+- Evidence-backed DM04 private-draft clearance that distinguishes the ancient narrative, Pargiter's 1904 translation, modern web presentation, and publication rights.
+- Zero-cost Codex manuscript and independent-review handoffs with locked inputs, exact execution receipts, and honest identity-assurance limits.
+- Immutable manuscript/review versions, literary Markdown, event coverage, claim provenance, deterministic validation, targeted revision requests, and a separated production-status record.
 - Readiness values `READY`, `NEEDS_SOURCE_REVIEW`, `INCOMPLETE_SOURCE`, `BLOCKED`, and `COMPLETED`; selection is by ascending priority then stable book ID, and considers only `READY` entries.
 - Read-only access to complete graph spines, ordered events, passages, evidence, related entities/relationships/boons/powers, variants, review flags, and bounded-completeness metadata.
 - Invocation of the existing graph validator with a before/after byte-hash guard.
@@ -55,7 +78,7 @@ All commands are repository-local and make no network or provider calls. `produc
 
 ## Scaffolded, not implemented
 
-- Manuscript generation or rewriting.
+- Direct programmatic manuscript-generation and editorial-review provider adapters. PR4 uses the verified Codex session handoff instead.
 - Illustration generation/editing, including the test fixture execution backend. The fixture provider is only a capability seam and cannot claim success.
 - Page composition, editable SVG lettering, PDF assembly, font embedding, rendered-page inspection, or pixel comparison.
 - Image-based visual evaluation. Its deterministic result is `ESCALATE` with `VISUAL_BACKEND_NOT_IMPLEMENTED`.
@@ -107,7 +130,8 @@ Implement `Provider.capabilities()`, `estimate_minor_units()`, and `execute()` f
 - The authoritative 78-book catalogue and DM08 Manuscript v2 are registered with their exact hashes.
 - DM08 is an `EXISTING_EDITION`, not a newly produced or certified factory output.
 - Both reference PDFs remain local, hash-verified, ignored presentation references; no oversized PDF exists in ordinary Git history.
-- DM04's source dossier remains blocked on rights and independent review.
+- DM04's source dossier remains `BLOCKED`; a separate private-draft clearance permits only an original editorial adaptation from graph paraphrases and locators.
+- DM04 publication remains blocked on target-market legal review, atomically partial source extraction, lack of blanket full-arc source/theological approval, and all visual production.
 - No approved image/LLM/visual-evaluation provider, credential, quota, or price is configured.
 - No licensed pinned font family or approved Git LFS quota/storage policy exists.
 - Human theological/iconographic reviewer identities are not configured.

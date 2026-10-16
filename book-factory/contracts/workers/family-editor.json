@@ -1,7 +1,7 @@
 {
   "escalation_conditions": ["a repair would change approved theology or outcome", "violence or age suitability needs a human decision", "three repeated QA failures"],
   "id": "family-editor",
-  "inputs": ["immutable manuscript version", "audience contract", "source-readiness dossier"],
+  "inputs": ["immutable manuscript version and content hash", "locked Story Packet hashes", "audience contract", "source-readiness dossier", "independent reviewer capability or explicit Codex session handoff"],
   "outputs": ["editorial QA report", "specific beat-level findings", "bounded repair requests"],
   "responsibilities": ["review clarity pacing dignity age suitability identity distinctness and source fidelity", "remain independent of manuscript authorship", "never mutate the reviewed version", "escalate rather than fake unavailable semantic review"],
   "schema_version": "1.0",

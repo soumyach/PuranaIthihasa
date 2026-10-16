@@ -16,7 +16,26 @@ class ImmutableVersionStore:
 
     def versions(self, book_id):
         root = self._root(book_id)
-        return sorted((load_json(path) for path in root.glob("v*.json")), key=lambda item: item["version"])
+        records = sorted(
+            (load_json(path) for path in root.glob("v[0-9][0-9][0-9][0-9].json")),
+            key=lambda item: item["version"],
+        )
+        parent_hash = None
+        for expected_version, record in enumerate(records, 1):
+            if record.get("version") != expected_version:
+                raise ContractError("immutable version sequence is not contiguous")
+            if record.get("book_id") != book_id or record.get("kind") != self.kind:
+                raise ContractError("immutable version identity does not match its store")
+            if record.get("parent_hash") != parent_hash:
+                raise ContractError("immutable version parent chain is broken")
+            unsigned = {key: value for key, value in record.items() if key not in {"content_hash", "id"}}
+            digest = content_hash(unsigned)
+            if record.get("content_hash") != digest:
+                raise ContractError("immutable version content hash is invalid")
+            if record.get("id") != stable_id(self.kind, book_id, digest):
+                raise ContractError("immutable version id is invalid")
+            parent_hash = digest
+        return records
 
     def put(self, book_id, payload, parent_hash=None):
         current = self.versions(book_id)

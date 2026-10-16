@@ -9,7 +9,7 @@ from .errors import FactoryError
 
 
 def build_parser():
-    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory Foundation PR3")
+    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory Foundation PR4")
     parser.add_argument("--root", default=".", help="repository root (default: current directory)")
     parser.add_argument("--catalogue", help="explicit catalogue path (intended for offline fixtures and validation)")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -37,6 +37,24 @@ def build_parser():
     draft.add_argument("--dry-run", action="store_true")
     review = subparsers.add_parser("review-manuscript", help="check independent editorial-review capability")
     review.add_argument("--book-id", required=True)
+    clearance = subparsers.add_parser("import-source-clearance", help="validate and store a private-draft source clearance")
+    clearance.add_argument("--book-id", required=True)
+    clearance.add_argument("--record", required=True)
+    manuscript_handoff = subparsers.add_parser("prepare-manuscript-handoff", help="prepare a locked Codex manuscript-agent request")
+    manuscript_handoff.add_argument("--book-id", required=True)
+    manuscript_handoff.add_argument("--revision-review-hash")
+    import_manuscript = subparsers.add_parser("import-manuscript-handoff", help="validate and store a Codex manuscript-agent response")
+    import_manuscript.add_argument("--book-id", required=True)
+    import_manuscript.add_argument("--handoff", required=True)
+    import_manuscript.add_argument("--response", required=True)
+    review_handoff = subparsers.add_parser("prepare-review-handoff", help="prepare a locked independent-review request")
+    review_handoff.add_argument("--book-id", required=True)
+    import_review = subparsers.add_parser("import-review-handoff", help="validate and store an independent-review response")
+    import_review.add_argument("--book-id", required=True)
+    import_review.add_argument("--handoff", required=True)
+    import_review.add_argument("--response", required=True)
+    manuscript_status = subparsers.add_parser("manuscript-status", help="show separated DM04 production dimensions")
+    manuscript_status.add_argument("--book-id", required=True)
     subparsers.add_parser("next", help="alias for a dry-run next-book selection")
     return parser
 
@@ -69,6 +87,18 @@ def run(args):
         return director.draft_manuscript(args.book_id, args.dry_run)
     if args.command == "review-manuscript":
         return director.review_manuscript(args.book_id)
+    if args.command == "import-source-clearance":
+        return director.import_source_clearance(args.book_id, args.record)
+    if args.command == "prepare-manuscript-handoff":
+        return director.prepare_manuscript_handoff(args.book_id, args.revision_review_hash)
+    if args.command == "import-manuscript-handoff":
+        return director.import_manuscript_handoff(args.book_id, args.handoff, args.response)
+    if args.command == "prepare-review-handoff":
+        return director.prepare_review_handoff(args.book_id)
+    if args.command == "import-review-handoff":
+        return director.import_review_handoff(args.book_id, args.handoff, args.response)
+    if args.command == "manuscript-status":
+        return director.manuscript_status(args.book_id)
     if args.command == "next":
         return director.produce_next(True)
     raise AssertionError("unreachable")

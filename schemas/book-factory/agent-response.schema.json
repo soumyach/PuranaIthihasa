@@ -1,0 +1,16 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/agent-response.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {"const": "1.0", "type": "string"},
+    "handoff_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "request_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "orchestrator_attested": {"const": true, "type": "boolean"},
+    "execution": {"type": "object"},
+    "result": {"type": "object"}
+  },
+  "required": ["schema_version", "handoff_hash", "request_hash", "orchestrator_attested", "execution", "result"],
+  "title": "Codex specialist-agent response",
+  "type": "object"
+}

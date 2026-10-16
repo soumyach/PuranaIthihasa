@@ -1,9 +1,9 @@
 {
   "escalation_conditions": ["requested adaptation changes doctrine", "source choice is ambiguous", "required rules or approved dossier is absent"],
   "id": "manuscript-story",
-  "inputs": ["approved source-readiness dossier", "book-bound Story Packet hashes", "book manifest", "rules hash", "verified manuscript-generation provider capability"],
+  "inputs": ["approved private-draft source clearance", "source-readiness dossier", "book-bound Story Packet hashes", "book manifest", "rules hash", "verified manuscript-generation provider or explicit Codex session handoff"],
   "outputs": ["versioned manuscript", "claim map", "event coverage map", "structured dialogue", "page beats"],
   "responsibilities": ["label claims MULA SAMPRADAYA DRISHTI or KALPANA", "preserve approved source choices", "keep narration and dialogue structured", "complete the story ending before an optional next-book hook"],
   "schema_version": "1.0",
-  "validation_rules": ["provider capability is verified before drafting", "manuscript completeness passes", "all required source events are mapped", "all material claims have provenance", "verbatim quotations are attributed", "Drishti and Kalpana are visibly labeled", "versions are immutable and parent-linked"]
+  "validation_rules": ["generation capability or explicit session handoff is verified before drafting", "request binds clearance dossier packet graph and rules hashes", "manuscript completeness passes", "all required source events are mapped", "all material claims have provenance", "verbatim quotations are attributed", "Drishti and Kalpana are visibly labeled", "versions are immutable and parent-linked", "paid calls and cost are zero for the PR4 Codex handoff"]
 }

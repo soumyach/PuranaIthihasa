@@ -1,0 +1,34 @@
+{
+  "artifacts": [
+    "d43a5f725e4ea595f49a55411eb88af1c65c3d0ca6bf397fdef0d6b7c54f7c7c",
+    "4faeac7fb70cefc1aa0aab7a63831d2189cf579b3d1482505475d5ead8b2db97",
+    "4fe604dd3090acd917dfe5ceb461a15364e8131daad5e0e30078a2f5eb6bda14",
+    "7979c89ca4d7f227bfab91c42c9191b269502e457bdeb3dd08e4ccee2827c4ba"
+  ],
+  "attempts": {
+    "MANUSCRIPT": 1,
+    "QUEUED": 1,
+    "SOURCE_CHECK": 1
+  },
+  "blocked": null,
+  "book_id": "DM04",
+  "completed_stages": [
+    "QUEUED",
+    "SOURCE_CHECK",
+    "MANUSCRIPT"
+  ],
+  "current_stage": "EDITORIAL_QA",
+  "last_event_id": "event-312998e51918d186d1b016a9",
+  "locked_input_hashes": [
+    "75a6d7223209feb8850b482d9e0876cd323991652b436ac139470cadc95041d3",
+    "b784b365d9c921312285f453b4f6a4a15a7be935e2f0fdda6cfa8eba12797744",
+    "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070",
+    "d43a5f725e4ea595f49a55411eb88af1c65c3d0ca6bf397fdef0d6b7c54f7c7c",
+    "f3a02b5eebbe4b11035240f64ede32fcf889ff7b85f481dfe11b13744a0fc6b1"
+  ],
+  "outstanding_jobs": [],
+  "recovery": null,
+  "schema_version": "1.0",
+  "updated_at": "2026-10-16T14:08:43Z",
+  "version": 4
+}

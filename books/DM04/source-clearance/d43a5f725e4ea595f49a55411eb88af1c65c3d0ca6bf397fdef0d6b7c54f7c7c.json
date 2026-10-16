@@ -1,0 +1,237 @@
+{
+  "authoring_constraints": [
+    "Use only locked graph paraphrases, event ordering, evidence ids and locators as factual inputs.",
+    "Write fresh prose; copy no modern website wording, OCR, synopsis or Sanskrit transcription.",
+    "Do not use Ugradarshana or Bombay-only extra-chief claims in the main narrative.",
+    "Treat the chapter 4 cosmic assertions as praise spoken by the gods.",
+    "Keep the remembrance and prosperity boon narrow; do not create a universal guarantee.",
+    "Do not turn the later Gauri and Shumbha-Nishumbha transition into this volume's resolution.",
+    "Do not invent motives for Devi drinking from the cup.",
+    "Render the battle and Mahisha's death non-graphically while preserving causality and outcome.",
+    "Do not infer unsourced divine origins, family ties, identities or power mechanics."
+  ],
+  "book_id": "DM04",
+  "clearance_hash": "d43a5f725e4ea595f49a55411eb88af1c65c3d0ca6bf397fdef0d6b7c54f7c7c",
+  "dossier_hash": "75a6d7223209feb8850b482d9e0876cd323991652b436ac139470cadc95041d3",
+  "graph_hash": "f3a02b5eebbe4b11035240f64ede32fcf889ff7b85f481dfe11b13744a0fc6b1",
+  "id": "source-clearance-4884c63a20cf60296b5b38b7",
+  "independent_source_review": {
+    "critical_edition_collation": "NOT_PERFORMED",
+    "direct_witness_urls": [
+      "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117157.html",
+      "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117158.html",
+      "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117161.html"
+    ],
+    "executed": true,
+    "independent_of_manuscript_writer": true,
+    "pivotal_claim_checks": [
+      {
+        "claim": "Mahisha displaces the gods after a hundred-year conflict and they seek a means to kill him.",
+        "event_ids": [
+          "dm-event-008"
+        ],
+        "evidence_ids": [
+          "dm-evidence-008",
+          "dm-sanskrit-evidence-008"
+        ],
+        "result": "SUPPORTED_CROSS_WITNESS"
+      },
+      {
+        "claim": "The gods' radiances converge as Devi, followed by source-specified divine gifts.",
+        "event_ids": [
+          "dm-event-009",
+          "dm-event-010",
+          "dm-event-011"
+        ],
+        "evidence_ids": [
+          "dm-evidence-009",
+          "dm-evidence-010",
+          "dm-evidence-011",
+          "dm-sanskrit-evidence-009",
+          "dm-sanskrit-evidence-010",
+          "dm-sanskrit-evidence-011"
+        ],
+        "result": "SUPPORTED_CROSS_WITNESS"
+      },
+      {
+        "claim": "Devi's roar draws Mahisha's army; her lion and breath-born troops fight it.",
+        "event_ids": [
+          "dm-event-012",
+          "dm-event-013",
+          "dm-event-014",
+          "dm-event-015"
+        ],
+        "evidence_ids": [
+          "dm-evidence-012",
+          "dm-evidence-013",
+          "dm-evidence-014",
+          "dm-evidence-015",
+          "dm-sanskrit-evidence-012",
+          "dm-sanskrit-evidence-013"
+        ],
+        "result": "SUPPORTED_WITH_SINGLE_ENGLISH_WITNESS_FOR_EVENTS_014_015"
+      },
+      {
+        "claim": "Cikshura, Chamara and the remaining named chiefs are defeated before Mahisha enters directly.",
+        "event_ids": [
+          "dm-event-016",
+          "dm-event-017",
+          "dm-event-018"
+        ],
+        "evidence_ids": [
+          "dm-evidence-016",
+          "dm-evidence-017",
+          "dm-evidence-018",
+          "dm-sanskrit-evidence-016",
+          "dm-sanskrit-evidence-017",
+          "dm-sanskrit-evidence-018"
+        ],
+        "result": "SUPPORTED_CROSS_WITNESS_WITH_VARIANT_NAMES_EXCLUDED"
+      },
+      {
+        "claim": "Mahisha attacks in buffalo form and shifts through lion, armed man, elephant and buffalo forms.",
+        "event_ids": [
+          "dm-event-019",
+          "dm-event-020"
+        ],
+        "evidence_ids": [
+          "dm-evidence-019",
+          "dm-sanskrit-evidence-019",
+          "dm-evidence-020"
+        ],
+        "result": "SUPPORTED_WITH_SINGLE_ENGLISH_WITNESS_FOR_EVENT_020"
+      },
+      {
+        "claim": "Devi restrains and kills Mahisha after he partly emerges from the buffalo form.",
+        "event_ids": [
+          "dm-event-021"
+        ],
+        "evidence_ids": [
+          "dm-evidence-021"
+        ],
+        "result": "SUPPORTED_SINGLE_ENGLISH_WITNESS"
+      },
+      {
+        "claim": "The gods praise Devi and request protection; their cosmic assertions are praise, not neutral narrator declarations.",
+        "event_ids": [
+          "dm-event-022"
+        ],
+        "evidence_ids": [
+          "dm-evidence-022"
+        ],
+        "result": "SUPPORTED_AS_ATTRIBUTED_PRAISE_SINGLE_ENGLISH_WITNESS"
+      },
+      {
+        "claim": "Devi grants aid on remembrance in calamity and prosperity to mortal hymn-singers, then disappears.",
+        "event_ids": [
+          "dm-event-023"
+        ],
+        "evidence_ids": [
+          "dm-evidence-023"
+        ],
+        "result": "SUPPORTED_NARROWLY_SINGLE_ENGLISH_WITNESS"
+      }
+    ],
+    "result": "PASS_WITH_LIMITATIONS",
+    "review_scope": "DM04 bounded arc only; dm-event-008 through dm-event-023; Pargiter cantos 82-84",
+    "reviewed_event_ids": [
+      "dm-event-008",
+      "dm-event-009",
+      "dm-event-010",
+      "dm-event-011",
+      "dm-event-012",
+      "dm-event-013",
+      "dm-event-014",
+      "dm-event-015",
+      "dm-event-016",
+      "dm-event-017",
+      "dm-event-018",
+      "dm-event-019",
+      "dm-event-020",
+      "dm-event-021",
+      "dm-event-022",
+      "dm-event-023"
+    ],
+    "reviewer_capability": "SOURCE_PROVENANCE_AND_RIGHTS_REVIEW",
+    "reviewer_id": "codex-subagent:/root/pr4_source_rights"
+  },
+  "limitations": [
+    "This is operational evidence review, not legal advice.",
+    "Permission is limited to a private original editorial draft.",
+    "Publication, illustration, PDF generation and distribution remain blocked.",
+    "The source graph remains read-only and its readiness status is not overridden."
+  ],
+  "packet_hashes": [
+    "b784b365d9c921312285f453b4f6a4a15a7be935e2f0fdda6cfa8eba12797744"
+  ],
+  "private_draft_gate": "PRIVATE_DRAFT_PERMITTED_PUBLICATION_BLOCKED",
+  "publication_gate": "BLOCKED",
+  "rights_determination": {
+    "assessed_jurisdictions": [
+      "IN",
+      "US"
+    ],
+    "evidence": [
+      {
+        "authority": "Internet Archive/Open Library bibliographic record",
+        "id": "rights-evidence-punctuation-1904",
+        "supports": "Pargiter translation published in Calcutta by the Asiatic Society of Bengal in 1904.",
+        "url": "https://archive.org/details/cu31924022991974"
+      },
+      {
+        "authority": "Journal of the Royal Asiatic Society obituary",
+        "id": "rights-evidence-pargiter-death",
+        "supports": "F. E. Pargiter died on 18 February 1927.",
+        "url": "https://doi.org/10.1017/S0035869X00058019"
+      },
+      {
+        "authority": "India Code, Copyright Act 1957, section 22",
+        "id": "rights-evidence-india-section-22",
+        "supports": "Published literary works receive life plus sixty years measured from the next calendar year; the assessed Indian term ended 31 December 1987.",
+        "url": "https://www.indiacode.nic.in/bitstream/123456789/1367/1/a195714.pdf"
+      },
+      {
+        "authority": "United States Copyright Office Circular 38B",
+        "id": "rights-evidence-us-uraa",
+        "supports": "URAA restoration requires the work not be public domain in the source country; restored pre-1978 works generally receive 95 years from publication.",
+        "url": "https://www.copyright.gov/circs/circ38b.pdf"
+      },
+      {
+        "authority": "SanskritDocuments FAQ and copying policy",
+        "id": "rights-evidence-sanskritdocuments-boundary",
+        "supports": "The volunteer digital transcription is reference-only for this project and is excluded from reproduction.",
+        "url": "https://www.sanskritdocuments.org/faq/"
+      }
+    ],
+    "legal_opinion": false,
+    "modern_web_presentation_reuse": "PROHIBITED",
+    "pargiter_1904_translation": "PUBLIC_DOMAIN_TERM_EXPIRED_IN_ASSESSED_JURISDICTIONS",
+    "public_distribution_clearance": "NOT_ASSESSED_OR_GRANTED",
+    "sanskritdocuments_transcription_reuse": "PROHIBITED",
+    "status": "PASS_WITH_LIMITATIONS",
+    "underlying_ancient_narrative": "PUBLIC_DOMAIN_OR_UNPROTECTABLE_IDEA_FACT_BASIS",
+    "use": "ORIGINAL_ENGLISH_ADAPTATION_FROM_EVIDENCE_PARAPHRASES"
+  },
+  "schema_version": "1.0",
+  "source_edition": {
+    "bibliographic_record": "https://archive.org/details/cu31924022991974",
+    "dm_scope": "Pargiter cantos 82-84; Devi Mahatmyam chapters 2-4",
+    "internet_archive_identifier": "cu31924022991974",
+    "oclc": "6429109",
+    "place": "Calcutta",
+    "publisher": "Asiatic Society of Bengal",
+    "source_id": "dm-source",
+    "title": "The Markandeya Purana, translated with notes",
+    "translator": "F. Eden Pargiter",
+    "witness_id": "dm-pargiter",
+    "year": 1904
+  },
+  "unresolved_contradictions_and_limits": [
+    "Events 014-015 and 020-023 lack an independent Sanskrit cross-witness record in the locked packet.",
+    "The Pargiter display uses Calcutta text with Bombay readings in notes; underlying editions were not critically collated.",
+    "Ugradarshana and extra-chief Bombay readings remain excluded from the main narrative.",
+    "Chapter extraction is narratively complete for the bounded arc but atomically partial.",
+    "No blanket independent full-arc scripture approval or theological approval exists.",
+    "No worldwide or target-market publication rights opinion has been obtained."
+  ]
+}

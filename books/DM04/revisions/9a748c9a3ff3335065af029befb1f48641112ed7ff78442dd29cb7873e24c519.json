@@ -1,0 +1,36 @@
+{
+  "affected_sections": [
+    "beat-008",
+    "beat-012",
+    "beat-014",
+    "beat-019",
+    "beat-020",
+    "beat-021",
+    "ch-01",
+    "ch-02",
+    "ch-03",
+    "ch-04",
+    "ch-05",
+    "ch-06",
+    "ch-07",
+    "ch-08"
+  ],
+  "book_id": "DM04",
+  "bounded_excerpts": [
+    "Lines that had advanced together turned against one another or stopped in confusion",
+    "For the first time since he entered the field, Mahishasura paused. Around him lay the end of the army he had trusted.",
+    "No promise was spoken for the reader to mistake as a quotation. No history was added to explain what the source leaves unstated.",
+    "Family readers; exact age band awaits editorial confirmation"
+  ],
+  "constraint": "Repair only listed findings and affected sections; preserve all approved source choices and unrelated text.",
+  "finding_ids": [
+    "SOURCE_BELL_EFFECT_EXCEEDS_LOCKED_EVIDENCE",
+    "UNSUPPORTED_INTERIORITY_STRATEGY_AND_ADDED_ACTION",
+    "IN_STORY_EDITORIAL_DISCLAIMERS_BREAK_IMMERSION",
+    "TARGET_AGE_BAND_UNRESOLVED_FOR_BATTLE_CONTENT"
+  ],
+  "request_hash": "9a748c9a3ff3335065af029befb1f48641112ed7ff78442dd29cb7873e24c519",
+  "review_hash": "7bc5d05d5d3e2ae0d7f6593dc0bd4ceac4d0df96feee321fae41815a7641ae32",
+  "reviewed_manuscript_hash": "7979c89ca4d7f227bfab91c42c9191b269502e457bdeb3dd08e4ccee2827c4ba",
+  "schema_version": "1.0"
+}

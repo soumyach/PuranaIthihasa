@@ -1,0 +1,500 @@
+{
+  "book_id": "DM04",
+  "content_hash": "024a89c5f46e11f0b34dc3090ab05cbeacbc57179bffd4bdb04d324aa20e6880",
+  "id": "editorial-reviews-a3e958ec257863af7e8adac1",
+  "kind": "editorial-reviews",
+  "parent_hash": "b21ed106d12a2616302d17aa58a0db1ef4c99de24dda461b7ac9d452f2ca4de9",
+  "payload": {
+    "book_id": "DM04",
+    "certification_scope": "INDEPENDENT_MANUSCRIPT_EDITORIAL_REVIEW_ONLY",
+    "dimension_assessments": [
+      {
+        "dimension": "complete_source_event_coverage",
+        "result": "PASS",
+        "summary": "All sixteen required events, dm-event-008 through dm-event-023, remain present once each in the correct bounded chronology. The revision removed only unsupported or editorially intrusive wording and did not remove any required event, transition, consequence or ending beat."
+      },
+      {
+        "dimension": "factual_and_theological_accuracy",
+        "result": "PASS",
+        "summary": "The revised prose stays within the locked event and evidence boundaries. The bell now only confounds the enemy, unsourced motives and extra actions are removed, divine gifts and identities remain accurate, the hymn stays attributed to the gods, and the boon remains narrow."
+      },
+      {
+        "dimension": "character_and_divine_identity_accuracy",
+        "result": "PASS",
+        "summary": "Devi, Mahishasura, the gods, the lion and named commanders remain distinct and consistently identified. No unsupported genealogy, identity collapse, boon origin or disputed Ugradarshana/Bombay-only chief is introduced."
+      },
+      {
+        "dimension": "causal_sequence",
+        "result": "PASS",
+        "summary": "The sequence now follows the packet without local inventions: displacement, manifestation, arming, roar, army battle, commanders, buffalo attack, successive forms, restraint and death, celebration, praise, boon and disappearance."
+      },
+      {
+        "dimension": "framing_and_background",
+        "result": "PASS",
+        "summary": "The Medhas forest frame remains clearly literary adaptation, the Mahishasura arc remains the complete central story, and the later Gauri episode is introduced only after the resolved ending and labeled reflection."
+      },
+      {
+        "dimension": "family_readability",
+        "result": "PASS",
+        "summary": "The audience is now explicit as shared family reading and independent reading for ages ten and up. The prose is accessible, the battle preserves necessary causality without dwelling on gore, and the earlier production-language interruptions are gone."
+      },
+      {
+        "dimension": "dialogue_and_emotional_progression",
+        "result": "PASS",
+        "summary": "Dialogue remains brief, attributed and distinct from narration. The emotional movement from exile and uncertainty through manifestation, escalating danger, victory, gratitude and quiet closure is clear without unsourced interior states."
+      },
+      {
+        "dimension": "action_narration_reflection_balance",
+        "result": "PASS",
+        "summary": "The action is paced across discrete chapters, the gift and commander catalogues receive narrative context, and the modern reflection is explicitly labeled and placed after the complete source ending rather than interrupting it."
+      },
+      {
+        "dimension": "quotation_and_source_notes",
+        "result": "PASS",
+        "summary": "Every structured dialogue record remains marked non-verbatim, the gods' hymn is visibly their speech, the editorial reflection is labeled modern, and the source note preserves witness, rights, collation and publication limits without intruding into the story body."
+      },
+      {
+        "dimension": "ending",
+        "result": "PASS",
+        "summary": "Mahishasura is slain, celebration and worship follow, the gods make the narrow request, Devi grants it and disappears, and Medhas closes the present story before any future-volume hook."
+      },
+      {
+        "dimension": "collection_continuity",
+        "result": "PASS",
+        "summary": "The title remains catalogue-aligned, the manuscript preserves the Khatakshetra family-reading voice without borrowing DM08's plot, and the future hook remains a separate story. This assessment is manuscript-only and does not cover visual continuity."
+      }
+    ],
+    "evidence_checks": [
+      {
+        "claim_ids": [
+          "claim-014-b"
+        ],
+        "event_ids": [
+          "dm-event-014"
+        ],
+        "evidence_ids": [
+          "dm-evidence-014"
+        ],
+        "finding_code": "SOURCE_BELL_EFFECT_EXCEEDS_LOCKED_EVIDENCE",
+        "kind": "PRIOR_FINDING_RESOLUTION",
+        "note": "The unsupported statement that the Asuras turned against one another is absent. The replacement is limited to the packet's confounding and broken-coordination consequence.",
+        "resolution_excerpt": "When she sounded Indra's bell, its great voice rolled over the field and confounded the enemy. Their movement faltered and their formations broke apart",
+        "result": "RESOLVED",
+        "section_ids": [
+          "ch-04",
+          "beat-014"
+        ]
+      },
+      {
+        "additional_resolution_checks": [
+          "The missile barrage from Mahishasura's army broke before Devi.",
+          "The lion struck where resistance remained.",
+          "Devi cast Varuna's noose and bound him.",
+          "Devi lifted Kubera's cup, drank and laughed.",
+          "She leaped, came down upon him and pressed his neck beneath her foot."
+        ],
+        "claim_ids": [
+          "claim-008-b",
+          "claim-012-b",
+          "claim-014-b",
+          "claim-019-a",
+          "claim-020-c",
+          "claim-021-a",
+          "claim-021-b"
+        ],
+        "event_ids": [
+          "dm-event-008",
+          "dm-event-012",
+          "dm-event-014",
+          "dm-event-019",
+          "dm-event-020",
+          "dm-event-021"
+        ],
+        "evidence_ids": [
+          "dm-evidence-008",
+          "dm-sanskrit-evidence-008",
+          "dm-evidence-012",
+          "dm-sanskrit-evidence-012",
+          "dm-evidence-014",
+          "dm-evidence-019",
+          "dm-sanskrit-evidence-019",
+          "dm-evidence-020",
+          "dm-evidence-021"
+        ],
+        "finding_code": "UNSUPPORTED_INTERIORITY_STRATEGY_AND_ADDED_ACTION",
+        "kind": "PRIOR_FINDING_RESOLUTION",
+        "note": "All previously identified claims about moral motive, enemy plan, anti-spectacle motive, Devi's private tactical reasoning, Mahishasura's pause or trust, and a final charge are absent. The transformation bridge now states only the source-ordered forms and counters.",
+        "resolution_excerpt": "Anger rose in Shiva and Vishnu. From their faces blazed a fierce radiance.",
+        "result": "RESOLVED",
+        "section_ids": [
+          "ch-01",
+          "ch-03",
+          "ch-04",
+          "ch-06",
+          "ch-07",
+          "beat-008",
+          "beat-012",
+          "beat-014",
+          "beat-019",
+          "beat-020",
+          "beat-021"
+        ]
+      },
+      {
+        "finding_code": "IN_STORY_EDITORIAL_DISCLAIMERS_BREAK_IMMERSION",
+        "kind": "PRIOR_FINDING_RESOLUTION",
+        "note": "All bounded production-language phrases from the v0001 finding are absent from the story body. Adaptation and attribution safeguards remain in structured dialogue metadata, the labeled reflection and the editorial source note.",
+        "resolution_excerpt": "The battlefield quieted. The gods stood before Devi and spoke a hymn of praise.",
+        "result": "RESOLVED",
+        "section_ids": [
+          "ch-02",
+          "ch-04",
+          "ch-06",
+          "ch-07",
+          "ch-08"
+        ]
+      },
+      {
+        "finding_code": "TARGET_AGE_BAND_UNRESOLVED_FOR_BATTLE_CONTENT",
+        "kind": "PRIOR_FINDING_RESOLUTION",
+        "note": "The audience contract is now explicit. At that band, the manuscript's brief blood image and source-required beheading outcomes are sober, non-lingering and editorially suitable, while younger readers remain within a shared-reading context.",
+        "resolution_excerpt": "Shared family reading; independent reading for ages 10 and up",
+        "result": "RESOLVED",
+        "section_ids": [
+          "ch-04",
+          "ch-05",
+          "ch-07"
+        ]
+      },
+      {
+        "event_id": "dm-event-008",
+        "evidence_ids": [
+          "dm-evidence-008",
+          "dm-sanskrit-evidence-008"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-008-a",
+          "claim-008-b"
+        ],
+        "note": "The hundred-year war, Mahishasura's seizure of divine offices, the gods' displacement and their Brahma-led appeal to Shiva and Vishnu are present; the revision leaves the anger motive unspecified.",
+        "packet_claim_ids": [
+          "packet-claim-5fd2b43bbc33cc4475667d8a",
+          "packet-claim-bb6c68f9f9e7c6dc920128ba"
+        ],
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-009",
+        "evidence_ids": [
+          "dm-evidence-009",
+          "dm-sanskrit-evidence-009"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-009-a",
+          "claim-009-b"
+        ],
+        "note": "The radiances converge as Devi and the source-specified body correspondences remain intact without added genealogy.",
+        "packet_claim_ids": [
+          "packet-claim-ad08a847ac18469c93f12495",
+          "packet-claim-b1c3252d917c2513b3f232bd"
+        ],
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-010",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-010-a",
+          "claim-010-b"
+        ],
+        "note": "The divine weapons and equipment are correctly assigned, and the functional bridge adds no unsupported power.",
+        "packet_claim_ids": [
+          "packet-claim-2146f6e705e497836c78a082",
+          "packet-claim-e4bed48f9526acd09b13d567"
+        ],
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-011",
+        "evidence_ids": [
+          "dm-evidence-011",
+          "dm-sanskrit-evidence-011"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-011-a",
+          "claim-011-b"
+        ],
+        "note": "Garments, ornaments, armor, lotus gifts, lion, cup and serpent necklace are present and correctly attributed.",
+        "packet_claim_ids": [
+          "packet-claim-fa36ab97234c2610071a1f44",
+          "packet-claim-e9355d9cc8bd86e3ab6e8ff5"
+        ],
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-012",
+        "evidence_ids": [
+          "dm-evidence-012",
+          "dm-sanskrit-evidence-012"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-012-a",
+          "claim-012-b"
+        ],
+        "note": "Devi's roar, the world's response, Mahishasura's approach, and Devi's cosmic scale are preserved; no enemy interior plan remains.",
+        "packet_claim_ids": [
+          "packet-claim-4e4074d1663e5619b9bb588b",
+          "packet-claim-c05526b1fd26924cbe0d11d6"
+        ],
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-013",
+        "evidence_ids": [
+          "dm-evidence-013",
+          "dm-sanskrit-evidence-013"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-013-a",
+          "claim-013-b"
+        ],
+        "note": "Supported commanders and vast contingents are present, while Ugradarshana and Bombay-only additions remain excluded.",
+        "packet_claim_ids": [
+          "packet-claim-e0ff3ce24c773266107792c9",
+          "packet-claim-faeee0e41b381429cf6a3e77"
+        ],
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-014",
+        "evidence_ids": [
+          "dm-evidence-014"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-014-a",
+          "claim-014-b"
+        ],
+        "note": "Missile-cutting, the lion, breath-born troops, their weapons and music, the noose and the bell's confounding effect are accurately covered.",
+        "packet_claim_ids": [
+          "packet-claim-2cf7c7b072b38212693becb7",
+          "packet-claim-3b4d7ba7dbc7b3c82bdf891f"
+        ],
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-015",
+        "evidence_ids": [
+          "dm-evidence-015"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-015-a",
+          "claim-015-b",
+          "claim-015-c"
+        ],
+        "note": "The obstructed field, grave cost, host's destruction and gods' flower shower remain clear; graphic specifics are compressed consistently with the explicit age band.",
+        "packet_claim_ids": [
+          "packet-claim-23fe5322893c30ad0064873b",
+          "packet-claim-3724daa18de2a4f8496f30de"
+        ],
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-016",
+        "evidence_ids": [
+          "dm-evidence-016",
+          "dm-sanskrit-evidence-016"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-016-a",
+          "claim-016-b"
+        ],
+        "note": "Cikshura's ranged assault, disabled chariot, broken sword, shattered spear and defeat remain complete and ordered.",
+        "packet_claim_ids": [
+          "packet-claim-a68adc9391c8cf2f1b5c5c48",
+          "packet-claim-d5fa4d6442339665c9a5309a"
+        ],
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-017",
+        "evidence_ids": [
+          "dm-evidence-017",
+          "dm-sanskrit-evidence-017"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-017-a",
+          "claim-017-b"
+        ],
+        "note": "Chamara's two failed spear attacks and the lion's elephant-back and ground struggle ending in the paw-blow are preserved.",
+        "packet_claim_ids": [
+          "packet-claim-9990e053677bcbfb9ee70d55",
+          "packet-claim-3fdbcdb61a0b5ed2aa673caa"
+        ],
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-018",
+        "evidence_ids": [
+          "dm-evidence-018",
+          "dm-sanskrit-evidence-018"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-018-a",
+          "claim-018-b"
+        ],
+        "note": "All retained named chiefs are defeated by the packet-specified means, arranged as an acceptable readable wave.",
+        "packet_claim_ids": [
+          "packet-claim-60e0e49bc1efec0e6a36e727",
+          "packet-claim-8dd4948d50afc60ea953bc19"
+        ],
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-019",
+        "evidence_ids": [
+          "dm-evidence-019",
+          "dm-sanskrit-evidence-019"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-019-a",
+          "claim-019-b"
+        ],
+        "note": "Mahishasura's buffalo-form attack on the troops and lion and the disturbance of earth, sea, clouds and mountains are complete without invented tactical thought.",
+        "packet_claim_ids": [
+          "packet-claim-cab6e5e3f39829bc0dece468",
+          "packet-claim-129faad7145402e08b7a583b"
+        ],
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-020",
+        "evidence_ids": [
+          "dm-evidence-020"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-020-a",
+          "claim-020-b",
+          "claim-020-c"
+        ],
+        "note": "Binding, buffalo-to-lion-to-man-to-elephant-to-buffalo changes, and each counter are presented in source order without assigning motive or interior state.",
+        "packet_claim_ids": [
+          "packet-claim-142145595d42cdd9f5b71f97",
+          "packet-claim-f02c812a33859b147e4c8a2a"
+        ],
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-021",
+        "evidence_ids": [
+          "dm-evidence-021"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-021-a",
+          "claim-021-b",
+          "claim-021-c"
+        ],
+        "note": "Drinking, laughter, hurled mountains, warning, leap, restraint, trident strike, half-emergence, beheading and celestial celebration are all covered with no added final charge.",
+        "packet_claim_ids": [
+          "packet-claim-3efdf17c30d8132951773dab",
+          "packet-claim-5e7aa367e7b38fcb2a6c592b"
+        ],
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-022",
+        "evidence_ids": [
+          "dm-evidence-022"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-022-a",
+          "claim-022-b",
+          "claim-022-c"
+        ],
+        "note": "Cosmic power, knowledge, prosperity, protection, mercy, heaven for the slain enemies and directional protection remain explicitly inside the gods' hymn.",
+        "packet_claim_ids": [
+          "packet-claim-d1785f8c8ee284a3c1673b83",
+          "packet-claim-e5e54d6811c41d30616a4ede"
+        ],
+        "result": "PASS"
+      },
+      {
+        "event_id": "dm-event-023",
+        "evidence_ids": [
+          "dm-evidence-023"
+        ],
+        "kind": "SOURCE_EVENT_CHECK",
+        "manuscript_claim_ids": [
+          "claim-023-a",
+          "claim-023-b",
+          "claim-023-c"
+        ],
+        "note": "Flowers, perfume and incense, the narrow remembrance and prosperity request, Devi's agreement and disappearance, and the later Gauri transition are correctly bounded.",
+        "packet_claim_ids": [
+          "packet-claim-36bb35d0d4d2bad175e8176e",
+          "packet-claim-22c5693d562c0e82bf451b16"
+        ],
+        "result": "PASS"
+      }
+    ],
+    "findings": [],
+    "id": "editorial-review-eb4dc9ca35a619cd60c83f67",
+    "limitations": [
+      "This PASS certifies only the independent editorial quality of immutable manuscript v0002 at hash 40d02a77dedf68f8b9e216822293b8a5911ba9be8c644fe8ca6d434efbdba1fa against the locked Story Packet hash b784b365d9c921312285f453b4f6a4a15a7be935e2f0fdda6cfa8eba12797744.",
+      "Editorial PASS does not certify or override source readiness, rights clearance, theological authority, iconographic accuracy, visual quality, PDF quality or publication readiness.",
+      "Events 014-015 and 020-023 remain limited to the single English witness recorded in the locked packet; this review adds no Sanskrit collation, critical-edition judgment or blanket full-arc source approval.",
+      "The source-clearance record permits only a private original editorial draft and keeps publication, illustration, PDF generation and distribution blocked.",
+      "No character bible, location bible, page script, artwork or typeset proof is reviewed here; manuscript-level collection continuity must not be read as visual or production approval."
+    ],
+    "publication_readiness_certified": false,
+    "result": "PASS",
+    "review_hash": "d75c3da76b645f037cb7ab68413370c65ecb614ee43f336723ec46cc4b68117f",
+    "reviewed_dimensions": [
+      "action_narration_reflection_balance",
+      "causal_sequence",
+      "character_and_divine_identity_accuracy",
+      "collection_continuity",
+      "complete_source_event_coverage",
+      "dialogue_and_emotional_progression",
+      "ending",
+      "factual_and_theological_accuracy",
+      "family_readability",
+      "framing_and_background",
+      "quotation_and_source_notes"
+    ],
+    "reviewed_manuscript_hash": "40d02a77dedf68f8b9e216822293b8a5911ba9be8c644fe8ca6d434efbdba1fa",
+    "reviewed_packet_hashes": [
+      "b784b365d9c921312285f453b4f6a4a15a7be935e2f0fdda6cfa8eba12797744"
+    ],
+    "reviewer": {
+      "attestation_scope": "ORCHESTRATOR_SESSION_RECORD_NOT_CRYPTOGRAPHIC_IDENTITY",
+      "capability_verified": true,
+      "execution_mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+      "id": "codex-subagent:/root/dm04_family_editor",
+      "independent": true,
+      "provider_kind": "editorial_review",
+      "role": "family-editor"
+    },
+    "schema_version": "1.0",
+    "source_readiness_overridden": false
+  },
+  "schema_version": "1.0",
+  "version": 2
+}

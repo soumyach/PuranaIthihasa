@@ -1,4 +1,4 @@
-"""Single user-facing orchestration facade for Foundation PR3."""
+"""Single user-facing orchestration facade for Foundation PR4."""
 
 import json
 from pathlib import Path
@@ -7,16 +7,26 @@ from . import __version__
 from .catalogue import CatalogueStore
 from .catalogue_v01 import SourceMappingRegistry
 from .contracts import load_schema, validate_named
-from .drafting import build_manuscript_request
+from .drafting import (
+    build_manuscript_request,
+    build_review_request,
+    render_manuscript_markdown,
+    targeted_revision_request,
+)
+from .editorial import editorial_review, finalize_review
 from .errors import ContractError, NotImplementedStageError
+from .handoffs import SessionHandoffStore, finalize_handoff, validate_execution
+from .narrative import validate_manuscript
 from .pilot import PilotSelector, catalogue_readiness_report
 from .providers.base import FixtureImageProviderContract, ProviderRegistry
 from .references import ReferenceEditionRegistry
 from .rules import rules_status
 from .source_graph import ReadOnlySourceGraph
 from .source_intelligence import DossierStore, SourceReadinessAssessor, StoryPacketBuilder, StoryPacketStore
+from .source_clearance import SourceClearanceStore, finalize_clearance, validate_private_draft_clearance
 from .state import StateStore, next_stage
-from .util import atomic_json_write, atomic_write, load_json, sha256_bytes
+from .util import atomic_json_write, atomic_write, content_hash, load_json, sha256_bytes
+from .versioning import EditorialReviewStore, ManuscriptVersionStore
 
 
 class FactoryDirector:
@@ -29,6 +39,8 @@ class FactoryDirector:
         self.providers = ProviderRegistry({"image": FixtureImageProviderContract()})
         self.mappings = SourceMappingRegistry(self.root / "book-factory" / "config" / "catalogue-source-mappings.json")
         self.reference_editions = ReferenceEditionRegistry(self.root)
+        self.clearances = SourceClearanceStore(self.books_root)
+        self.handoffs = SessionHandoffStore(self.books_root)
 
     def _configuration(self):
         config = load_json(self.root / "book-factory" / "config" / "defaults.json")
@@ -53,12 +65,19 @@ class FactoryDirector:
                 states.append({"book_id": book_id, "status": "INVALID", "message": str(exc)})
         return {
             "factory_version": __version__,
-            "implementation": "FOUNDATION_PR3",
+            "implementation": "FOUNDATION_PR4",
             "catalogue_books": len(books),
             "readiness_counts": {state: sum(book["readiness"] == state for book in books) for state in sorted({book["readiness"] for book in books})},
             "active_runs": states,
             "rules": rules_status(self.root),
             "providers": self.providers.capabilities(),
+            "codex_session_handoff": {
+                "supported": True,
+                "programmatic_repository_spawn": False,
+                "mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+                "identity_assurance": "ORCHESTRATOR_SESSION_ATTESTATION_NOT_CRYPTOGRAPHIC",
+                "paid_api_calls": 0,
+            },
             "configuration": self._configuration(),
             "publishing": "NOT_IMPLEMENTED",
             "inputs": self.input_report(),
@@ -207,12 +226,419 @@ class FactoryDirector:
             "generated_manuscript": False,
         }
 
-    def draft_manuscript(self, book_id, dry_run=False):
+    def _production_inputs(self, book_id):
         manifest = self.catalogue.get(book_id)
         if manifest is None:
             raise ContractError("book %s is not in the catalogue" % book_id)
+        if manifest.get("edition_status") == "EXISTING_EDITION" or not manifest.get("automatic_production_eligible", True):
+            raise ContractError("existing/reference editions cannot enter manuscript production")
         dossier = self.source_intelligence.assess(manifest, self.mappings.resolve(book_id))
-        request = build_manuscript_request(manifest, dossier, dossier["story_packets"], dossier["rules_hash"])
+        packets = dossier["story_packets"]
+        return manifest, dossier, packets
+
+    def import_source_clearance(self, book_id, record_path):
+        _, dossier, packets = self._production_inputs(book_id)
+        record = finalize_clearance(load_json(Path(record_path)))
+        validate_named(record, self.root / "schemas" / "book-factory", "source-clearance")
+        validate_private_draft_clearance(record, dossier, packets)
+        stored, path = self.clearances.put(record)
+        return {
+            "status": stored["private_draft_gate"],
+            "book_id": book_id,
+            "clearance_hash": stored["clearance_hash"],
+            "path": str(path),
+            "publication_gate": stored["publication_gate"],
+            "source_readiness_unchanged": dossier["status"],
+        }
+
+    def prepare_manuscript_handoff(self, book_id, revision_review_hash=None):
+        manifest, dossier, packets = self._production_inputs(book_id)
+        clearance = self.clearances.latest(book_id)
+        validate_private_draft_clearance(clearance, dossier, packets)
+        versions = ManuscriptVersionStore(self.books_root).versions(book_id)
+        parent = versions[-1] if versions else None
+        revision = None
+        kind = "MANUSCRIPT_GENERATION"
+        if revision_review_hash:
+            reviews = EditorialReviewStore(self.books_root).versions(book_id)
+            matching = [item for item in reviews if item["payload"].get("review_hash") == revision_review_hash]
+            if not matching:
+                raise ContractError("revision review hash is not an immutable review version")
+            if matching[-1]["payload"].get("result") != "FIX":
+                raise ContractError("only a FIX review can authorize manuscript revision")
+            if len(versions) - 1 >= self._configuration()["retry_limits"]["qa_repair"]:
+                raise ContractError("manuscript revision retry cap reached")
+            revision = targeted_revision_request(matching[-1]["payload"])
+            validate_named(revision, self.root / "schemas" / "book-factory", "revision-request")
+            kind = "MANUSCRIPT_REVISION"
+        elif versions:
+            raise ContractError("a manuscript already exists; revision requires an exact FIX review hash")
+        request = build_manuscript_request(
+            manifest,
+            dossier,
+            packets,
+            dossier["rules_hash"],
+            clearance=clearance,
+            parent_manuscript=parent,
+            revision_request=revision,
+        )
+        validate_named(request, self.root / "schemas" / "book-factory", "manuscript-request")
+        locked = [
+            dossier["dossier_hash"], dossier["graph_hash"], dossier["rules_hash"], clearance["clearance_hash"],
+            *[packet["packet_hash"] for packet in packets],
+        ]
+        if parent:
+            locked.append(parent["content_hash"])
+        handoff, path = self.handoffs.prepare(book_id, kind, request, "manuscript-story", locked)
+        store = StateStore(self.books_root, book_id, self._configuration()["retry_limits"]["stage"])
+        state = store.initialize()
+        if state["current_stage"] == "QUEUED":
+            state = store.transition(
+                "SOURCE_CHECK",
+                "source-check-%s" % clearance["clearance_hash"],
+                input_hashes=[dossier["dossier_hash"], *request["packet_hashes"]],
+                output_hashes=[clearance["clearance_hash"]],
+                policy_hashes=[dossier["rules_hash"]],
+            )
+        if state["current_stage"] == "SOURCE_CHECK":
+            state = store.transition(
+                "MANUSCRIPT",
+                "manuscript-handoff-%s" % handoff["handoff_hash"],
+                input_hashes=locked,
+                output_hashes=[handoff["handoff_hash"]],
+                policy_hashes=[dossier["rules_hash"]],
+            )
+        return {
+            "status": handoff["status"],
+            "book_id": book_id,
+            "kind": kind,
+            "handoff_hash": handoff["handoff_hash"],
+            "request_hash": request["request_hash"],
+            "path": str(path),
+            "run_stage": state["current_stage"],
+            "publication_gate": "BLOCKED",
+        }
+
+    def import_manuscript_handoff(self, book_id, handoff_path, response_path):
+        _, dossier, packets = self._production_inputs(book_id)
+        clearance = self.clearances.latest(book_id)
+        validate_private_draft_clearance(clearance, dossier, packets)
+        handoff = load_json(Path(handoff_path))
+        response = load_json(Path(response_path))
+        validate_named(handoff, self.root / "schemas" / "book-factory", "agent-handoff")
+        validate_named(response, self.root / "schemas" / "book-factory", "agent-response")
+        if handoff.get("book_id") != book_id or handoff.get("kind") not in {"MANUSCRIPT_GENERATION", "MANUSCRIPT_REVISION"}:
+            raise ContractError("wrong manuscript handoff")
+        if finalize_handoff(handoff) != handoff:
+            raise ContractError("manuscript handoff content hash is invalid")
+        active_hashes = {
+            "dossier_hash": dossier["dossier_hash"],
+            "graph_hash": dossier["graph_hash"],
+            "rules_hash": dossier["rules_hash"],
+            "source_clearance_hash": clearance["clearance_hash"],
+        }
+        for field, expected in active_hashes.items():
+            if handoff["request"].get(field) != expected:
+                raise ContractError("manuscript handoff has stale %s" % field)
+        if sorted(handoff["request"].get("packet_hashes", [])) != sorted(packet["packet_hash"] for packet in packets):
+            raise ContractError("manuscript handoff has stale Story Packet hashes")
+        execution = validate_execution(handoff, response, "manuscript_generation")
+        manuscript = response.get("result", {}).get("manuscript")
+        if not isinstance(manuscript, dict):
+            raise ContractError("agent response has no structured manuscript")
+        manuscript = dict(manuscript)
+        versions = ManuscriptVersionStore(self.books_root).versions(book_id)
+        prior = [
+            item for item in versions
+            if item["payload"].get("creator", {}).get("request_hash") == handoff["request_hash"]
+        ]
+        if prior:
+            record = prior[-1]
+            version_label = "v%04d" % record["version"]
+            return {
+                "status": "MANUSCRIPT_DRAFT_COMPLETE",
+                "book_id": book_id,
+                "version": record["version"],
+                "manuscript_hash": record["content_hash"],
+                "structured_path": str(self.books_root / book_id / "manuscripts" / (version_label + ".json")),
+                "markdown_path": str(self.books_root / book_id / "manuscripts" / (version_label + ".md")),
+                "idempotent_replay": True,
+                "publication_gate": "BLOCKED",
+            }
+        expected_version = len(versions) + 1
+        manuscript["version"] = expected_version
+        manuscript["book_id"] = book_id
+        manuscript["source_packet_hashes"] = sorted(handoff["request"]["packet_hashes"])
+        manuscript["source_clearance_hash"] = clearance["clearance_hash"]
+        creator = dict(manuscript.get("creator", {}))
+        creator.update({
+            "id": execution["agent_id"],
+            "role": execution.get("role", "manuscript-story"),
+            "capability": "manuscript_generation",
+            "capability_verified": True,
+            "execution_mechanism": execution["mechanism"],
+            "request_hash": handoff["request_hash"],
+            "attestation_scope": execution["attestation_scope"],
+        })
+        manuscript["creator"] = creator
+        validate_named(manuscript, self.root / "schemas" / "book-factory", "manuscript")
+        check = validate_manuscript(
+            manuscript,
+            handoff["request"]["required_event_ids"],
+            allowed_evidence_ids=handoff["request"]["allowed_evidence_ids"],
+            expected_packet_hashes=handoff["request"]["packet_hashes"],
+            event_evidence_map={
+                item["event_id"]: item.get("evidence_ids", [])
+                for item in handoff["request"]["event_requirements"]
+            },
+        )
+        if check["result"] != "PASS":
+            raise ContractError("manuscript failed deterministic validation", {"findings": check["findings"]})
+        parent_hash = versions[-1]["content_hash"] if versions else None
+        if handoff["kind"] == "MANUSCRIPT_REVISION" and handoff["request"].get("parent_manuscript_hash") != parent_hash:
+            raise ContractError("revision handoff does not bind the latest manuscript parent")
+        record = ManuscriptVersionStore(self.books_root).put(book_id, manuscript, parent_hash=parent_hash)
+        version_label = "v%04d" % record["version"]
+        manuscript_root = self.books_root / book_id / "manuscripts"
+        markdown_path = manuscript_root / (version_label + ".md")
+        coverage_path = manuscript_root / (version_label + ".event-coverage.json")
+        provenance_path = manuscript_root / (version_label + ".claim-provenance.json")
+        markdown = render_manuscript_markdown(manuscript).encode("utf-8")
+        if markdown_path.exists() and markdown_path.read_bytes() != markdown:
+            raise ContractError("immutable manuscript Markdown already differs")
+        if not markdown_path.exists():
+            atomic_write(markdown_path, markdown)
+        coverage_payload = {
+            "schema_version": "1.0", "book_id": book_id, "manuscript_hash": record["content_hash"],
+            "required_event_ids": handoff["request"]["required_event_ids"], "coverage": manuscript["event_coverage"],
+        }
+        provenance_payload = {
+            "schema_version": "1.0", "book_id": book_id, "manuscript_hash": record["content_hash"],
+            "allowed_evidence_ids": handoff["request"]["allowed_evidence_ids"], "claims": manuscript["claim_map"],
+        }
+        for sidecar_path, payload in ((coverage_path, coverage_payload), (provenance_path, provenance_payload)):
+            if sidecar_path.exists() and load_json(sidecar_path) != payload:
+                raise ContractError("immutable manuscript sidecar already differs", {"path": str(sidecar_path)})
+            if not sidecar_path.exists():
+                atomic_json_write(sidecar_path, payload)
+        response_record, response_store_path = self.handoffs.store_response(handoff, response)
+        state_store = StateStore(self.books_root, book_id, self._configuration()["retry_limits"]["stage"])
+        state = state_store.load()
+        if state["current_stage"] == "MANUSCRIPT":
+            state = state_store.transition(
+                "EDITORIAL_QA",
+                "import-manuscript-%s" % record["content_hash"],
+                actor=execution["agent_id"],
+                input_hashes=handoff["locked_input_hashes"],
+                output_hashes=[record["content_hash"], response_record["response_hash"]],
+                policy_hashes=[dossier["rules_hash"]],
+            )
+        awaiting_review_status = {
+            "schema_version": "1.0",
+            "book_id": book_id,
+            "source_readiness": dossier["status"],
+            "private_draft_gate": clearance["private_draft_gate"],
+            "manuscript_draft_completion": "COMPLETE",
+            "independent_editorial_review": "AWAITING_REVIEW",
+            "visual_production": "NOT_STARTED_PR4_BOUNDARY",
+            "publication_readiness": "BLOCKED",
+            "latest_manuscript_hash": record["content_hash"],
+            "revision_required": False,
+            "exact_result": (
+                "PRIVATE_MANUSCRIPT_REVISION_COMPLETE_AWAITING_INDEPENDENT_REREVIEW_PUBLICATION_BLOCKED"
+                if record["version"] > 1
+                else "PRIVATE_MANUSCRIPT_COMPLETE_AWAITING_INDEPENDENT_REVIEW_PUBLICATION_BLOCKED"
+            ),
+        }
+        awaiting_review_status["status_hash"] = content_hash(awaiting_review_status)
+        atomic_json_write(self.books_root / book_id / "production-status.json", awaiting_review_status)
+        return {
+            "status": "MANUSCRIPT_DRAFT_COMPLETE",
+            "book_id": book_id,
+            "version": record["version"],
+            "manuscript_hash": record["content_hash"],
+            "structured_path": str(manuscript_root / (version_label + ".json")),
+            "markdown_path": str(markdown_path),
+            "coverage_path": str(coverage_path),
+            "provenance_path": str(provenance_path),
+            "response_path": str(response_store_path),
+            "deterministic_check": check,
+            "next_stage": "EDITORIAL_QA",
+            "publication_gate": "BLOCKED",
+        }
+
+    def prepare_review_handoff(self, book_id):
+        _, dossier, packets = self._production_inputs(book_id)
+        clearance = self.clearances.latest(book_id)
+        validate_private_draft_clearance(clearance, dossier, packets)
+        manuscripts = ManuscriptVersionStore(self.books_root).versions(book_id)
+        if not manuscripts:
+            raise ContractError("no immutable manuscript exists to review")
+        manuscript = manuscripts[-1]
+        required_events = [event["id"] for packet in packets for event in packet.get("events", [])]
+        packet_hashes = [packet["packet_hash"] for packet in packets]
+        request = build_review_request(
+            manuscript,
+            packet_hashes,
+            required_events,
+            dossier["dossier_hash"],
+            clearance["clearance_hash"],
+            packets=packets,
+        )
+        handoff, path = self.handoffs.prepare(
+            book_id,
+            "EDITORIAL_REVIEW",
+            request,
+            "family-editor",
+            [manuscript["content_hash"], dossier["dossier_hash"], clearance["clearance_hash"], *packet_hashes],
+            writer_id=request["writer_id"],
+        )
+        return {
+            "status": handoff["status"],
+            "book_id": book_id,
+            "handoff_hash": handoff["handoff_hash"],
+            "request_hash": request["request_hash"],
+            "path": str(path),
+            "writer_id": request["writer_id"],
+            "required_independence": True,
+        }
+
+    def import_review_handoff(self, book_id, handoff_path, response_path):
+        _, dossier, packets = self._production_inputs(book_id)
+        clearance = self.clearances.latest(book_id)
+        validate_private_draft_clearance(clearance, dossier, packets)
+        handoff = load_json(Path(handoff_path))
+        response = load_json(Path(response_path))
+        validate_named(handoff, self.root / "schemas" / "book-factory", "agent-handoff")
+        validate_named(response, self.root / "schemas" / "book-factory", "agent-response")
+        if handoff.get("book_id") != book_id or handoff.get("kind") != "EDITORIAL_REVIEW":
+            raise ContractError("wrong editorial-review handoff")
+        if finalize_handoff(handoff) != handoff:
+            raise ContractError("editorial-review handoff content hash is invalid")
+        if handoff["request"].get("dossier_hash") != dossier["dossier_hash"]:
+            raise ContractError("editorial-review handoff has a stale dossier hash")
+        if handoff["request"].get("source_clearance_hash") != clearance["clearance_hash"]:
+            raise ContractError("editorial-review handoff has a stale clearance hash")
+        if sorted(handoff["request"].get("reviewed_packet_hashes", [])) != sorted(packet["packet_hash"] for packet in packets):
+            raise ContractError("editorial-review handoff has stale Story Packet hashes")
+        execution = validate_execution(
+            handoff, response, "editorial_review", writer_id=handoff.get("required_independence_from_writer_id")
+        )
+        review_input = response.get("result", {}).get("review")
+        if not isinstance(review_input, dict):
+            raise ContractError("agent response has no structured editorial review")
+        reviewer = dict(review_input)
+        reviewer.update({
+            "id": execution["agent_id"],
+            "independent": True,
+            "capability_verified": True,
+            "provider_kind": "editorial_review",
+        })
+        manuscripts = ManuscriptVersionStore(self.books_root).versions(book_id)
+        current = manuscripts[-1]
+        if handoff["request"].get("reviewed_manuscript_hash") != current["content_hash"]:
+            raise ContractError("editorial-review handoff does not bind the latest manuscript")
+        allowed_evidence = sorted({citation["id"] for packet in packets for citation in packet.get("citations", [])})
+        gate = editorial_review(
+            current["payload"],
+            handoff["request"]["required_event_ids"],
+            reviewer,
+            manuscript_hash=current["content_hash"],
+            packet_hashes=handoff["request"]["reviewed_packet_hashes"],
+            allowed_evidence_ids=allowed_evidence,
+            event_evidence_map={
+                event["id"]: event.get("evidence_ids", [])
+                for packet in packets for event in packet.get("events", [])
+            },
+        )
+        finalized = finalize_review(book_id, review_input, gate, execution)
+        validate_named(finalized, self.root / "schemas" / "book-factory", "editorial-review")
+        prior_reviews = EditorialReviewStore(self.books_root).versions(book_id)
+        matching_reviews = [
+            item for item in prior_reviews
+            if item["payload"].get("review_hash") == finalized["review_hash"]
+        ]
+        if matching_reviews:
+            record = matching_reviews[-1]
+            status_path = self.books_root / book_id / "production-status.json"
+            return {
+                "status": load_json(status_path)["exact_result"] if status_path.exists() else "EDITORIAL_REVIEW_COMPLETE",
+                "book_id": book_id,
+                "review_result": finalized["result"],
+                "review_hash": finalized["review_hash"],
+                "review_version_hash": record["content_hash"],
+                "idempotent_replay": True,
+                "publication_gate": "BLOCKED",
+            }
+        parent_hash = prior_reviews[-1]["content_hash"] if prior_reviews else None
+        record = EditorialReviewStore(self.books_root).put(book_id, finalized, parent_hash=parent_hash)
+        response_record, stored_response_path = self.handoffs.store_response(handoff, response)
+        revision = None
+        if finalized["result"] == "FIX":
+            revision = targeted_revision_request(finalized)
+            validate_named(revision, self.root / "schemas" / "book-factory", "revision-request")
+            revision_path = self.books_root / book_id / "revisions" / (revision["request_hash"] + ".json")
+            atomic_json_write(revision_path, revision)
+        status = {
+            "schema_version": "1.0",
+            "book_id": book_id,
+            "source_readiness": dossier["status"],
+            "private_draft_gate": clearance["private_draft_gate"],
+            "manuscript_draft_completion": "COMPLETE",
+            "independent_editorial_review": finalized["result"],
+            "visual_production": "NOT_STARTED_PR4_BOUNDARY",
+            "publication_readiness": "BLOCKED",
+            "publication_blockers": [
+                "WORLDWIDE_OR_TARGET_MARKET_PUBLICATION_RIGHTS_NOT_CLEARED",
+                "CHAPTER_EXTRACTION_ATOMICALLY_PARTIAL",
+                "INDEPENDENT_FULL_ARC_SOURCE_APPROVAL_NOT_ESTABLISHED",
+                "VISUAL_PRODUCTION_NOT_STARTED",
+            ],
+            "latest_manuscript_hash": current["content_hash"],
+            "latest_review_hash": finalized["review_hash"],
+            "revision_required": finalized["result"] == "FIX",
+            "exact_result": (
+                "PRIVATE_MANUSCRIPT_REQUIRES_REVISION_PUBLICATION_BLOCKED"
+                if finalized["result"] == "FIX"
+                else "PRIVATE_MANUSCRIPT_EDITORIALLY_REVIEWED_PUBLICATION_BLOCKED"
+                if finalized["result"] == "PASS"
+                else "PRIVATE_MANUSCRIPT_ESCALATED_PUBLICATION_BLOCKED"
+            ),
+        }
+        status["status_hash"] = content_hash(status)
+        atomic_json_write(self.books_root / book_id / "production-status.json", status)
+        return {
+            "status": status["exact_result"],
+            "book_id": book_id,
+            "review_result": finalized["result"],
+            "review_hash": finalized["review_hash"],
+            "review_version_hash": record["content_hash"],
+            "review_path": str(self.books_root / book_id / "editorial-reviews" / ("v%04d.json" % record["version"])),
+            "response_path": str(stored_response_path),
+            "revision_request": revision,
+            "production_status": status,
+        }
+
+    def manuscript_status(self, book_id):
+        manifests = ManuscriptVersionStore(self.books_root).versions(book_id)
+        reviews = EditorialReviewStore(self.books_root).versions(book_id)
+        path = self.books_root / book_id / "production-status.json"
+        return {
+            "book_id": book_id,
+            "manuscript_versions": len(manifests),
+            "review_versions": len(reviews),
+            "latest_manuscript_hash": manifests[-1]["content_hash"] if manifests else None,
+            "latest_review_hash": reviews[-1]["payload"].get("review_hash") if reviews else None,
+            "production_status": load_json(path) if path.exists() else "NOT_RECORDED",
+        }
+
+    def draft_manuscript(self, book_id, dry_run=False):
+        manifest, dossier, packets = self._production_inputs(book_id)
+        clearance = self.clearances.latest(book_id)
+        validate_private_draft_clearance(clearance, dossier, packets)
+        request = build_manuscript_request(
+            manifest, dossier, packets, dossier["rules_hash"], clearance=clearance
+        )
         validate_named(request, self.root / "schemas" / "book-factory", "manuscript-request")
         capability = self.providers.capabilities()["manuscript_generation"]
         if not capability["available"]:
@@ -305,6 +731,63 @@ class FactoryDirector:
                 "mutated": False,
             }
         state = store.load()
+        if state["current_stage"] == "MANUSCRIPT":
+            requests = sorted((self.books_root / book_id / "handoffs" / "manuscript-generation").glob("*.request.json"))
+            if requests:
+                handoff = load_json(requests[-1])
+                if finalize_handoff(handoff) != handoff:
+                    raise ContractError("stored manuscript handoff failed hash revalidation")
+                return {
+                    "status": "AWAITING_CODEX_SPECIALIST_AGENT",
+                    "book_id": book_id,
+                    "current_stage": "MANUSCRIPT",
+                    "handoff_hash": handoff["handoff_hash"],
+                    "request_path": str(requests[-1]),
+                    "message": "resume from the existing locked handoff; source work was not repeated",
+                    "mutated": False,
+                }
+        if state["current_stage"] == "EDITORIAL_QA":
+            revision_requests = sorted((self.books_root / book_id / "handoffs" / "manuscript-revision").glob("*.request.json"))
+            if revision_requests:
+                revision_handoff = load_json(revision_requests[-1])
+                imported_request_hashes = {
+                    item["payload"].get("creator", {}).get("request_hash")
+                    for item in ManuscriptVersionStore(self.books_root).versions(book_id)
+                }
+                if revision_handoff["request_hash"] not in imported_request_hashes:
+                    return {
+                        "status": "AWAITING_CODEX_REVISION_AGENT",
+                        "book_id": book_id,
+                        "current_stage": "EDITORIAL_QA",
+                        "handoff_hash": revision_handoff["handoff_hash"],
+                        "request_path": str(revision_requests[-1]),
+                        "message": "resume from the bounded revision handoff; the rejected manuscript remains immutable",
+                        "mutated": False,
+                    }
+            status_path = self.books_root / book_id / "production-status.json"
+            if status_path.exists():
+                status = load_json(status_path)
+                return {
+                    "status": status["exact_result"],
+                    "book_id": book_id,
+                    "current_stage": "EDITORIAL_QA",
+                    "production_status": status,
+                    "mutated": False,
+                }
+            requests = sorted((self.books_root / book_id / "handoffs" / "editorial-review").glob("*.request.json"))
+            if requests:
+                handoff = load_json(requests[-1])
+                if finalize_handoff(handoff) != handoff:
+                    raise ContractError("stored editorial handoff failed hash revalidation")
+                return {
+                    "status": "AWAITING_INDEPENDENT_EDITOR",
+                    "book_id": book_id,
+                    "current_stage": "EDITORIAL_QA",
+                    "handoff_hash": handoff["handoff_hash"],
+                    "request_path": str(requests[-1]),
+                    "message": "resume from the existing locked review handoff; the manuscript was not regenerated",
+                    "mutated": False,
+                }
         target = state.get("recovery", {}).get("resume_stage") if state["current_stage"] in {"BLOCKED", "FAILED"} else next_stage(state["current_stage"])
         required_provider = {"MANUSCRIPT": "manuscript_generation", "EDITORIAL_QA": "editorial_review"}.get(target)
         if required_provider:
@@ -374,6 +857,45 @@ class FactoryDirector:
                 "availability": "AVAILABLE_LOCAL_REFERENCE",
             })
         dm08 = self.reference_editions.verify("DM08")
+        source_clearances = []
+        for path in sorted(self.books_root.glob("*/source-clearance/*.json")):
+            record = load_json(path)
+            validate_named(record, schema_root, "source-clearance")
+            finalized = finalize_clearance(record)
+            if finalized != record:
+                raise ContractError("source clearance content hash is invalid", {"path": str(path)})
+            source_clearances.append({"book_id": record["book_id"], "clearance_hash": record["clearance_hash"]})
+        agent_handoffs = []
+        for path in sorted(self.books_root.glob("*/handoffs/**/*.request.json")):
+            record = load_json(path)
+            validate_named(record, schema_root, "agent-handoff")
+            if finalize_handoff(record) != record:
+                raise ContractError("agent handoff content hash is invalid", {"path": str(path)})
+            agent_handoffs.append({"book_id": record["book_id"], "kind": record["kind"], "handoff_hash": record["handoff_hash"]})
+        agent_responses = []
+        for path in sorted(self.books_root.glob("*/handoffs/**/*.response.json")):
+            record = load_json(path)
+            validate_named(record, schema_root, "agent-response")
+            unsigned_response = {
+                key: value for key, value in record.items()
+                if key not in {"response_hash", "id", "stored_at"}
+            }
+            if record.get("response_hash") != content_hash(unsigned_response):
+                raise ContractError("agent response content hash is invalid", {"path": str(path)})
+            agent_responses.append({
+                "agent_id": record["execution"].get("agent_id"),
+                "capability": record["execution"].get("capability"),
+                "response_hash": record.get("response_hash"),
+            })
+        manuscript_versions = []
+        editorial_review_versions = []
+        for book_root in sorted(path for path in self.books_root.iterdir() if path.is_dir() and path.name != "_artifacts"):
+            for record in ManuscriptVersionStore(self.books_root).versions(book_root.name):
+                validate_named(record["payload"], schema_root, "manuscript")
+                manuscript_versions.append({"book_id": book_root.name, "content_hash": record["content_hash"]})
+            for record in EditorialReviewStore(self.books_root).versions(book_root.name):
+                validate_named(record["payload"], schema_root, "editorial-review")
+                editorial_review_versions.append({"book_id": book_root.name, "content_hash": record["content_hash"]})
         return {
             "status": "PASS",
             "schemas": schemas,
@@ -382,7 +904,12 @@ class FactoryDirector:
             "rules": rules_status(self.root),
             "reference_assets": reference_assets,
             "reference_editions": [dm08],
+            "source_clearances": source_clearances,
+            "agent_handoffs": agent_handoffs,
+            "agent_responses": agent_responses,
+            "manuscript_versions": manuscript_versions,
+            "editorial_review_versions": editorial_review_versions,
             "catalogue_mapping_validation": mapping_validation,
             "input_report": self.input_report(),
-            "note": "Foundation PR3 prepares a source-controlled pilot packet but does not generate a manuscript, illustrations, or PDF",
+            "note": "Foundation PR4 supports audited Codex session handoffs for manuscripts and independent review; illustration and PDF production remain out of scope",
         }

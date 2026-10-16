@@ -1,0 +1,21 @@
+{
+  "book_id": "DM04",
+  "exact_result": "PRIVATE_MANUSCRIPT_EDITORIALLY_REVIEWED_PUBLICATION_BLOCKED",
+  "independent_editorial_review": "PASS",
+  "latest_manuscript_hash": "40d02a77dedf68f8b9e216822293b8a5911ba9be8c644fe8ca6d434efbdba1fa",
+  "latest_review_hash": "d75c3da76b645f037cb7ab68413370c65ecb614ee43f336723ec46cc4b68117f",
+  "manuscript_draft_completion": "COMPLETE",
+  "private_draft_gate": "PRIVATE_DRAFT_PERMITTED_PUBLICATION_BLOCKED",
+  "publication_blockers": [
+    "WORLDWIDE_OR_TARGET_MARKET_PUBLICATION_RIGHTS_NOT_CLEARED",
+    "CHAPTER_EXTRACTION_ATOMICALLY_PARTIAL",
+    "INDEPENDENT_FULL_ARC_SOURCE_APPROVAL_NOT_ESTABLISHED",
+    "VISUAL_PRODUCTION_NOT_STARTED"
+  ],
+  "publication_readiness": "BLOCKED",
+  "revision_required": false,
+  "schema_version": "1.0",
+  "source_readiness": "BLOCKED",
+  "status_hash": "909d68e1c79a6a0a728f7ce5b698f3d46306d06a258b20bee884d5c0bddbf134",
+  "visual_production": "NOT_STARTED_PR4_BOUNDARY"
+}

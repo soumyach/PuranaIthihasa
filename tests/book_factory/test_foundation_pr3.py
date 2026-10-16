@@ -98,13 +98,14 @@ class FoundationPR3Tests(unittest.TestCase):
         self.assertEqual(report["selected_pilot"], "DM04")
 
     def test_pilot_contains_only_dossier_and_scoped_story_packet(self):
+        manuscript_count = len(ManuscriptVersionStore(ROOT / "books").versions("DM04"))
         result = FactoryDirector(ROOT).prepare_pilot("DM04")
         self.assertEqual(result["status"], "PREPARED_CONDITIONAL")
         self.assertFalse(result["generated_manuscript"])
         packet = load_json(Path(result["story_packet_paths"][0]))
         self.assertEqual(packet["book_id"], "DM04")
         self.assertEqual(len(packet["selected_event_ids"]), 16)
-        self.assertFalse((ROOT / "books" / "DM04" / "manuscripts").exists())
+        self.assertEqual(len(ManuscriptVersionStore(ROOT / "books").versions("DM04")), manuscript_count)
 
     def test_draft_and_review_fail_honestly_without_provider(self):
         director = FactoryDirector(ROOT)

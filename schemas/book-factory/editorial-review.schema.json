@@ -9,9 +9,15 @@
     "reviewed_packet_hashes": {"items": {"pattern": "^[0-9a-f]{64}$", "type": "string"}, "minItems": 1, "type": "array"},
     "result": {"enum": ["PASS", "FIX", "ESCALATE"], "type": "string"},
     "findings": {"items": {"type": "object"}, "type": "array"},
+    "reviewed_dimensions": {"items": {"type": "string"}, "minItems": 1, "type": "array"},
+    "reviewer": {"type": "object"},
+    "dimension_assessments": {"items": {"type": "object"}, "type": "array"},
+    "evidence_checks": {"items": {"type": "object"}, "type": "array"},
+    "publication_readiness_certified": {"const": false, "type": "boolean"},
+    "source_readiness_overridden": {"const": false, "type": "boolean"},
     "review_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
   },
-  "required": ["schema_version", "book_id", "reviewed_manuscript_hash", "reviewed_packet_hashes", "result", "findings", "review_hash"],
+  "required": ["schema_version", "book_id", "reviewer", "reviewed_manuscript_hash", "reviewed_packet_hashes", "reviewed_dimensions", "result", "findings", "review_hash", "publication_readiness_certified", "source_readiness_overridden"],
   "title": "Independent editorial review",
   "type": "object"
 }

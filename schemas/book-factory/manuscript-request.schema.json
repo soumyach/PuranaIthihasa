@@ -5,13 +5,16 @@
   "properties": {
     "schema_version": {"const": "1.0", "type": "string"},
     "book_id": {"type": "string"},
+    "source_clearance_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "private_draft_gate": {"const": "PRIVATE_DRAFT_PERMITTED_PUBLICATION_BLOCKED", "type": "string"},
+    "publication_gate": {"const": "BLOCKED", "type": "string"},
     "dossier_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
     "packet_hashes": {"items": {"pattern": "^[0-9a-f]{64}$", "type": "string"}, "minItems": 1, "type": "array"},
     "required_event_ids": {"items": {"type": "string"}, "minItems": 1, "type": "array"},
     "request_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
     "operation_key": {"type": "string"}
   },
-  "required": ["schema_version", "book_id", "dossier_hash", "packet_hashes", "required_event_ids", "request_hash", "operation_key"],
+  "required": ["schema_version", "book_id", "dossier_hash", "packet_hashes", "source_clearance_hash", "private_draft_gate", "publication_gate", "required_event_ids", "request_hash", "operation_key"],
   "title": "Provider-bound manuscript request",
   "type": "object"
 }
