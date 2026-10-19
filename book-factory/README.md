@@ -1,4 +1,8 @@
-# Khatakshetra Book Factory — Foundation PR8
+# Khatakshetra Book Factory — Foundation PR9
+
+PR9 adds the durable autonomous Director over the existing PR1-PR8 components. One command selects or resumes a book and advances every repository-executable stage until an exact Codex-specialist, external-provider or human-authorization boundary. Each stage records a stable job ID, hash-bound inputs and outputs, worker identity, execution receipt, attempt, timestamps, cost, PASS/FIX/ESCALATE result and recovery instructions. The queue prefers resumable work, skips blocked titles when another is eligible, respects dependencies, excludes DM08, and never equates private-production eligibility with public-publication clearance.
+
+Repository code does not claim to spawn Codex specialists. It persists an exact handoff and stops honestly when the active Codex runtime, an approved image provider, an independent image-capable reviewer or a human decision is required. Synthetic outcomes are accepted only through the isolated PR9 fixture catalogue and remain publication-ineligible.
 
 PR8 preserves the complete PR7 record and adds a deterministic page-composition, editable-lettering and digital-PDF engine. Ten reusable layout families, exact-text hashes, speaker anchors, aspect-preserving crop records, licensed-font resolution, page-local repair, PDF pixel inspection, production lifecycle gates and an isolated four-page technical fixture are executable through the existing `factory` interface. PR8 generated no story art or manuscript, did not alter DM08 or the source graph, and made no publication or semantic visual-approval claim. See `docs/BOOK_FACTORY_FOUNDATION_PR8.md` for the execution report.
 
@@ -37,6 +41,10 @@ From the repository root, use the checked-in launcher:
 
 ```sh
 ./factory status
+./factory queue
+./factory blocked
+./factory approvals
+./factory costs
 ./factory list-books
 ./factory check-readiness
 ./factory missing-inputs
@@ -68,20 +76,34 @@ From the repository root, use the checked-in launcher:
 ./factory inspect-pdf --pdf BOOK.pdf --manifest COMPOSED.json
 ./factory resume-layout --book-id ID --page-id PAGE_ID
 ./factory produce-next --dry-run
+./factory produce-book --book-id ID
+./factory resume-book --book-id ID
 ./factory resume --book-id ID
 ```
 
-`python3 -m book_factory ...` is equivalent. Installing the local package exposes the `factory` console script declared in `pyproject.toml`. `./factory validate` runs schema/config checks and the existing graph validator; `./factory next` is an alias for dry-run selection.
+`python3 -m book_factory ...` is equivalent. Installing the local package exposes the `factory` console script declared in `pyproject.toml`. `./factory validate` runs schema/config checks and the existing graph validator; `./factory next` is an alias for dry-run selection. The legacy `resume` command remains available; `resume-book` is the PR9 lifecycle entry point.
 
 The synthetic command path is explicit and never changes the authoritative catalogue:
 
 ```sh
 ./factory --catalogue book-factory/fixtures/synthetic-book/catalogue.json produce-next --dry-run
+./factory --catalogue book-factory/fixtures/autonomous-orchestration/catalogue.json produce-next --fixture-mode --fixture-plan book-factory/fixtures/autonomous-orchestration/lifecycle-plan.json
+./factory --catalogue book-factory/fixtures/autonomous-orchestration/catalogue.json resume-book --book-id FX-001 --fixture-mode --fixture-plan book-factory/fixtures/autonomous-orchestration/lifecycle-plan.json
 ./factory compose-book --manifest book-factory/fixtures/page-engine/demo-book.json --output-dir output/page-engine-demo --fixture-mode
 ./factory export-pdf --manifest output/page-engine-demo/composed-book-manifest.json --output output/pdf/khatakshetra-book-factory-non-production-renderer-test.pdf --fixture-mode
 ```
 
-All commands are repository-local and make no paid provider calls. `produce-next` still requires `--dry-run`. `source-dossier` writes only with explicit `--write`; otherwise it and `story-packet` are read-only. The handoff commands prepare and import exact JSON files; the repository does not pretend that it can spawn a Codex agent programmatically. The current Codex session performs that orchestration and records a session-scoped, non-cryptographic execution attestation.
+All commands are repository-local and make no paid provider calls under the checked-in zero-spend policy. Production `produce-next`, `produce-book` and `resume-book` stop at the first unmet execution boundary and persist its handoff; `--dry-run` selects without mutation. `source-dossier` writes only with explicit `--write`; otherwise it and `story-packet` are read-only. The handoff commands prepare and import exact JSON files; the repository does not pretend that it can spawn a Codex agent programmatically. The active Codex session performs that orchestration and records a session-scoped, non-cryptographic execution attestation.
+
+## PR9 execution and quality boundaries
+
+- Repository-executable: catalogue queueing, graph/readiness checks, exact-text and mechanical QA, content-addressed storage, lettering composition, PDF assembly and deterministic inspection.
+- Active Codex orchestration: manuscript, independent editorial/source review, storyboard/bible work and independent image-capable composed-page review.
+- External provider: art proofs, illustration and provider-side local edits, always behind capability, approval, attempt and budget gates.
+- Human authorization: new visual direction, disputed source/theology/iconography, repeated critical failure, budget overrun and public-publication clearance.
+- Composed-page QA separates mechanical checks from semantic and PR7 artistic comparison. Geometry can never emit semantic PASS.
+- Page failures route to lettering repair, crop adjustment, local image edit, regeneration, page-PDF re-export or reapproval without resetting counters or regenerating unaffected pages.
+- Fixture pages remain PR8 renderer geometry only. They are not approved artistic direction and cannot certify a Khatakshetra publication.
 
 ## PR4 private-draft workflow
 
@@ -132,7 +154,7 @@ The direct `manuscript_generation` and `editorial_review` adapters remain unavai
 
 - Direct programmatic manuscript-generation and editorial-review provider adapters. PR4 uses the verified Codex session handoff instead.
 - A reusable credential-backed image service. PR6's real Codex-native adapter is host-injected and session-scoped; a plain repository process fails closed without that executor.
-- Editable SVG lettering, PDF assembly, font embedding, or final composed-page inspection. PR7 specifies exact geometry but does not typeset a page.
+- Production-ready font embedding, print trim/bleed/export profiles and real-book composed-page inspection. PR8 supplies editable composition JSON and digital PDF assembly; PR9 still requires independent actual-pixel review before artifact readiness.
 - Automatic visual acceptance. PR7 validates comparison records deterministically, but aesthetics, complex iconography, and cultural meaning still require an independent image-capable reviewer.
 - A paid provider credential, pinned external pricing model, or provider-side recovery API. PR6 made no paid call.
 - Git LFS enablement, publishing, deployment, PR creation, merging, sales, or email.
@@ -186,7 +208,7 @@ Implement `Provider.capabilities()`, `estimate_minor_units()`, and `execute()` f
 - DM04 publication remains blocked on target-market legal review, atomically partial source extraction, lack of blanket full-arc source/theological approval, and all visual production.
 - The Codex built-in image tool worked for this PR6 session, but no reusable repository credential, quota, or external price is configured.
 - All four latest DM04 proofs remain `FIX` after attempt two; the hard retry ceiling is exhausted and style approval is unopened.
-- PR7 recovery requests are prepared but not authorized. A future PR8 requires an explicit campaign decision, fresh backend capability evidence, exact reference-input receipts, and a fresh price/spend decision.
+- PR7 recovery requests are prepared but not authorized. Any future recovery campaign requires an explicit decision, fresh backend capability evidence, exact reference-input receipts, and a fresh price/spend decision.
 - No human-approved exact character reference exists for the DM04 subjects; role C is deliberately recorded as unavailable rather than filled with a rejected proof.
 - No licensed pinned font family or approved Git LFS quota/storage policy exists.
 - Human theological/iconographic reviewer identities are not configured.

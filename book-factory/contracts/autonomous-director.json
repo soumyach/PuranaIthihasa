@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "khatakshetra-autonomous-director-pr9",
+  "control_interface": ["produce-next", "produce-book", "resume-book", "status", "queue", "blocked", "approvals", "costs"],
+  "execution_boundaries": {
+    "repository_executable": ["source validation", "lettering validation", "page composition", "PDF export", "mechanical QA", "artifact storage", "queue selection"],
+    "active_codex_orchestration": ["manuscript creation", "independent editorial review", "storyboard and bible authorship", "independent actual-pixel visual review"],
+    "external_provider": ["art proof generation", "production illustration", "provider-side image editing"],
+    "human_authorization": ["new style direction", "source or theological dispute", "budget overrun", "repeated critical failure", "publication clearance"]
+  },
+  "fail_closed_rule": "Persist the exact hash-bound handoff and blocker whenever the required executor is unavailable.",
+  "fixture_boundary": "Only explicit isolated fixtures may supply synthetic outcomes; they remain publication-ineligible and cannot enter production state.",
+  "publication_boundary": "READY_FOR_PUBLICATION records artifact readiness only and never publishes, deploys or clears unresolved rights."
+}

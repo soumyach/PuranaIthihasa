@@ -1,0 +1,19 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/orchestration-run.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Autonomous Book Factory run",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {"type": "string"},
+    "book_id": {"type": "string", "minLength": 1},
+    "fixture_mode": {"type": "boolean"},
+    "publication_eligible": {"type": "boolean"},
+    "current_stage": {"type": "string"},
+    "completed_stages": {"type": "array", "items": {"type": "string"}},
+    "dimensions": {"type": "object"},
+    "blocked": {"type": "array", "items": {"type": "object"}},
+    "updated_at": {"type": "string"}
+  },
+  "required": ["schema_version", "book_id", "fixture_mode", "publication_eligible", "current_stage", "completed_stages", "dimensions", "blocked", "updated_at"]
+}

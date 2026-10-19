@@ -1,0 +1,26 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/orchestration-job.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Durable orchestration job",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {"type": "string"},
+    "job_id": {"type": "string", "minLength": 1},
+    "book_id": {"type": "string", "minLength": 1},
+    "stage": {"enum": ["SOURCE_CHECK", "MANUSCRIPT", "EDITORIAL_QA", "STORYBOARD", "CHARACTER_BIBLE", "ART_PROOFS", "AWAITING_STYLE_APPROVAL", "ILLUSTRATION", "LETTERING", "PDF_LAYOUT", "VISUAL_QA", "READY_FOR_PUBLICATION"], "type": "string"},
+    "status": {"enum": ["RUNNING", "COMPLETED", "BLOCKED", "INTERRUPTED", "INVALIDATED"], "type": "string"},
+    "result": {"enum": ["PASS", "FIX", "ESCALATE", null]},
+    "input_hashes": {"type": "array", "items": {"type": "string"}},
+    "output_hashes": {"type": "array", "items": {"type": "string"}},
+    "policy_hashes": {"type": "array", "items": {"type": "string"}},
+    "worker_identity": {"type": "object"},
+    "execution_receipt": {},
+    "attempt_number": {"type": "integer", "minimum": 1},
+    "cost": {"type": "object"},
+    "started_at": {"type": "string"},
+    "completed_at": {},
+    "recovery_instructions": {}
+  },
+  "required": ["schema_version", "job_id", "book_id", "stage", "status", "result", "input_hashes", "output_hashes", "policy_hashes", "worker_identity", "execution_receipt", "attempt_number", "cost", "started_at", "completed_at", "recovery_instructions"]
+}

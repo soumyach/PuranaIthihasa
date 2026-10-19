@@ -8,8 +8,13 @@ from .director import FactoryDirector
 from .errors import FactoryError
 
 
+def _fixture_arguments(parser):
+    parser.add_argument("--fixture-mode", action="store_true", help="use isolated, publication-ineligible acceptance fixtures")
+    parser.add_argument("--fixture-plan", help="explicit synthetic lifecycle plan (requires --fixture-mode)")
+
+
 def build_parser():
-    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory Foundation PR8")
+    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory Foundation PR9")
     parser.add_argument("--root", default=".", help="repository root (default: current directory)")
     parser.add_argument("--catalogue", help="explicit catalogue path (intended for offline fixtures and validation)")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -19,6 +24,21 @@ def build_parser():
     readiness.add_argument("--book-id")
     produce = subparsers.add_parser("produce-next", help="select the next eligible book")
     produce.add_argument("--dry-run", action="store_true")
+    _fixture_arguments(produce)
+    produce_book = subparsers.add_parser("produce-book", help="start or continue the supported workflow for one exact book")
+    produce_book.add_argument("--book-id", required=True)
+    _fixture_arguments(produce_book)
+    resume_book = subparsers.add_parser("resume-book", help="idempotently resume one durable orchestration run")
+    resume_book.add_argument("--book-id", required=True)
+    _fixture_arguments(resume_book)
+    for command, help_text in (
+        ("queue", "show deterministic queue selection and skip reasons"),
+        ("blocked", "show exact blocked and excluded catalogue entries"),
+        ("approvals", "show persisted and pending approvals"),
+        ("costs", "show estimated and actual orchestration costs"),
+    ):
+        control = subparsers.add_parser(command, help=help_text)
+        control.add_argument("--fixture-mode", action="store_true")
     resume = subparsers.add_parser("resume", help="inspect resumable state without fabricating work")
     resume.add_argument("--book-id", required=True)
     subparsers.add_parser("validate", help="validate foundation contracts and the source graph")
@@ -124,7 +144,25 @@ def run(args):
     if args.command == "check-readiness":
         return director.check_readiness(args.book_id)
     if args.command == "produce-next":
-        return director.produce_next(args.dry_run)
+        if args.fixture_plan and not args.fixture_mode:
+            raise FactoryError("--fixture-plan requires --fixture-mode")
+        return director.produce_next(args.dry_run, args.fixture_mode, args.fixture_plan)
+    if args.command == "produce-book":
+        if args.fixture_plan and not args.fixture_mode:
+            raise FactoryError("--fixture-plan requires --fixture-mode")
+        return director.produce_book(args.book_id, args.fixture_mode, args.fixture_plan)
+    if args.command == "resume-book":
+        if args.fixture_plan and not args.fixture_mode:
+            raise FactoryError("--fixture-plan requires --fixture-mode")
+        return director.resume_book(args.book_id, args.fixture_mode, args.fixture_plan)
+    if args.command == "queue":
+        return director.factory_queue(args.fixture_mode)
+    if args.command == "blocked":
+        return director.factory_blocked(args.fixture_mode)
+    if args.command == "approvals":
+        return director.factory_approvals(args.fixture_mode)
+    if args.command == "costs":
+        return director.factory_costs(args.fixture_mode)
     if args.command == "resume":
         return director.resume(args.book_id)
     if args.command == "validate":

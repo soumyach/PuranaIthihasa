@@ -1,4 +1,4 @@
-"""Single user-facing orchestration facade for Foundation PR8."""
+"""Single user-facing orchestration facade for Foundation PR9."""
 
 import json
 from copy import deepcopy
@@ -32,6 +32,7 @@ from .illustration_production import (
     visual_review_request,
 )
 from .narrative import validate_manuscript
+from .orchestration import AutonomousFactoryDirector
 from .pilot import PilotSelector, catalogue_readiness_report
 from .page_engine import (
     FontResolver,
@@ -72,7 +73,7 @@ from .versioning import (
 
 
 class FactoryDirector:
-    def __init__(self, repository_root, catalogue_path=None):
+    def __init__(self, repository_root, catalogue_path=None, orchestration_runtime_root=None):
         self.root = Path(repository_root).resolve()
         self.books_root = self.root / "books"
         self.catalogue = CatalogueStore(Path(catalogue_path).resolve() if catalogue_path else self.books_root / "catalogue.json")
@@ -83,6 +84,7 @@ class FactoryDirector:
         self.reference_editions = ReferenceEditionRegistry(self.root)
         self.clearances = SourceClearanceStore(self.books_root)
         self.handoffs = SessionHandoffStore(self.books_root)
+        self.orchestrator = AutonomousFactoryDirector(self, orchestration_runtime_root)
 
     def _configuration(self):
         config = load_json(self.root / "book-factory" / "config" / "defaults.json")
@@ -107,7 +109,7 @@ class FactoryDirector:
                 states.append({"book_id": book_id, "status": "INVALID", "message": str(exc)})
         return {
             "factory_version": __version__,
-            "implementation": "FOUNDATION_PR8",
+            "implementation": "FOUNDATION_PR9",
             "catalogue_books": len(books),
             "readiness_counts": {state: sum(book["readiness"] == state for book in books) for state in sorted({book["readiness"] for book in books})},
             "active_runs": states,
@@ -133,6 +135,7 @@ class FactoryDirector:
                 "fixture_mode": "ISOLATED_PUBLICATION_INELIGIBLE",
                 "semantic_visual_approval": "REQUIRES_INDEPENDENT_ACTUAL_PIXEL_REVIEW",
             },
+            "autonomous_orchestration": self.orchestrator.status(),
         }
 
     def input_report(self):
@@ -1528,49 +1531,35 @@ class FactoryDirector:
             }
         raise NotImplementedStageError("an approved independent editorial-review adapter is required before execution")
 
-    def produce_next(self, dry_run=False):
-        if not dry_run:
-            raise NotImplementedStageError("Foundation PR3 supports produce-next only with --dry-run")
-        active_ids = {
-            path.parents[1].name
-            for path in self.books_root.glob("*/run/state.json")
-            if StateStore(self.books_root, path.parents[1].name).load()["current_stage"] not in {"READY_FOR_PUBLICATION", "BLOCKED", "FAILED"}
-        }
-        candidates = [
-            item for item in self.catalogue.list_books()
-            if item["id"] not in active_ids
-            and item.get("edition_status") != "EXISTING_EDITION"
-            and item.get("automatic_production_eligible", True)
-            and item.get("readiness") == "READY"
-        ]
-        candidates.sort(key=lambda item: (item.get("priority", 1000), item["id"]))
-        selected = None
-        for candidate in candidates:
-            dossier = self.source_intelligence.assess(candidate, self.mappings.resolve(candidate["id"]))
-            if dossier["status"] == "READY":
-                selected = candidate
-                break
-        standards = rules_status(self.root)
-        if selected is None:
-            return {
-                "status": "NO_READY_BOOKS",
-                "selected_book": None,
-                "standards": standards,
-                "mutated": False,
-            }
-        if standards["status"] != "AVAILABLE":
-            return {
-                "status": "BLOCKED_STANDARD",
-                "selected_book": selected["id"],
-                "standards": standards,
-                "mutated": False,
-            }
-        return {
-            "status": "DRY_RUN",
-            "selected_book": selected["id"],
-            "next_stage": "SOURCE_CHECK",
-            "mutated": False,
-        }
+    def produce_next(self, dry_run=False, fixture_mode=False, fixture_plan_path=None):
+        result = self.orchestrator.produce_next(
+            fixture_mode=fixture_mode,
+            fixture_plan_path=fixture_plan_path,
+            select_only=bool(dry_run),
+        )
+        if result["status"] == "NO_ELIGIBLE_BOOKS" and dry_run:
+            result["status"] = "NO_READY_BOOKS"
+            result["selected_book"] = None
+            result["standards"] = rules_status(self.root)
+        return result
+
+    def produce_book(self, book_id, fixture_mode=False, fixture_plan_path=None):
+        return self.orchestrator.produce_book(book_id, fixture_mode, fixture_plan_path)
+
+    def resume_book(self, book_id, fixture_mode=False, fixture_plan_path=None):
+        return self.orchestrator.resume_book(book_id, fixture_mode, fixture_plan_path)
+
+    def factory_queue(self, fixture_mode=False):
+        return self.orchestrator.queue(fixture_mode)
+
+    def factory_blocked(self, fixture_mode=False):
+        return self.orchestrator.blocked(fixture_mode)
+
+    def factory_approvals(self, fixture_mode=False):
+        return self.orchestrator.approvals(fixture_mode)
+
+    def factory_costs(self, fixture_mode=False):
+        return self.orchestrator.costs(fixture_mode)
 
     def resume(self, book_id):
         book = self.catalogue.get(book_id)
@@ -1868,6 +1857,20 @@ class FactoryDirector:
             raise ContractError("PR6 capability record must select the executed Codex native backend")
         fixture = load_json(self.root / "book-factory" / "fixtures" / "synthetic-book" / "catalogue.json")
         validate_named(fixture, schema_root, "catalogue")
+        pr9_fixture_root = self.root / "book-factory" / "fixtures" / "autonomous-orchestration"
+        pr9_fixture_catalogue = load_json(pr9_fixture_root / "catalogue.json")
+        validate_named(pr9_fixture_catalogue, schema_root, "catalogue")
+        pr9_fixture_plan = load_json(pr9_fixture_root / "lifecycle-plan.json")
+        if pr9_fixture_plan.get("fixture") is not True or pr9_fixture_plan.get("publication_eligible") is not False:
+            raise ContractError("PR9 fixture boundary is invalid")
+        if set(pr9_fixture_plan.get("stages", {})) != set(self.orchestrator._fixture_plan(pr9_fixture_root / "lifecycle-plan.json")["stages"]):
+            raise ContractError("PR9 fixture stage plan is incomplete")
+        pr9_contracts = []
+        for name in ("autonomous-director.json", "composed-page-visual-review.json", "page-local-recovery.json"):
+            payload = load_json(self.root / "book-factory" / "contracts" / name)
+            if payload.get("schema_version") != "1.0" or not payload.get("contract_id"):
+                raise ContractError("PR9 contract is invalid", {"path": name})
+            pr9_contracts.append(name)
         graph_report = self.graph.verify()
         mapping_validation = PilotSelector(self.graph, self.mappings).validate_mappings(catalogue["books"])
         reference_registry = load_json(self.root / "book-factory" / "references" / "reference-assets.json")
@@ -2025,5 +2028,13 @@ class FactoryDirector:
                 "publication_eligible": False,
                 "semantic_visual_review": "NOT_APPLICABLE_TO_SYNTHETIC_FIXTURE_AND_NOT_CLAIMED_FOR_PRODUCTION",
             },
-            "note": "Foundation PR8 adds deterministic page composition, editable lettering, PDF assembly and isolated technical fixtures. It generated no story art or manuscript, did not modify DM08 or the source graph, and did not certify publication or semantic visual quality.",
+            "pr9": {
+                "contracts": pr9_contracts,
+                "fixture_catalogue_books": len(pr9_fixture_catalogue["books"]),
+                "fixture_stages": list(pr9_fixture_plan["stages"]),
+                "queue_catalogue_books": self.orchestrator.queue(False)["catalogue_count"],
+                "production_fixture_isolation": "ENFORCED",
+                "publication_eligible": False,
+            },
+            "note": "Foundation PR9 adds durable end-to-end orchestration, queueing, exact execution boundaries, localized recovery and independent composed-page review contracts. It generated no story art or manuscript, did not modify DM08 or the source graph, and did not certify publication or semantic visual quality.",
         }
