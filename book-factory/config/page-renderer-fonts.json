@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "policy": "FONT_PRESENCE_IS_NOT_LICENSE_CLEARANCE",
+  "selection": "first fully available candidate; requested family may narrow selection",
+  "repository_bundles_font_binaries": false,
+  "candidates": [
+    {
+      "family": "STIXGeneral",
+      "classification": "serif",
+      "regular": "/System/Library/Fonts/Supplemental/STIXGeneral.otf",
+      "bold": "/System/Library/Fonts/Supplemental/STIXGeneralBol.otf",
+      "license_status": "SYSTEM_FONT_LICENSE_REVIEWED_NOT_REDISTRIBUTED",
+      "license_evidence": "The installed font metadata identifies the STIX license, derived from the SIL Open Font License. The renderer records hashes but does not copy these system files into the repository.",
+      "legal_installation": "Install the STIX Fonts project from its official distribution, then update paths if the operating system stores it elsewhere. Confirm the specific distribution's license before publication."
+    },
+    {
+      "family": "Bitstream Vera",
+      "classification": "sans-serif-fallback",
+      "regular": "REPORTLAB:Vera.ttf",
+      "bold": "REPORTLAB:VeraBd.ttf",
+      "license_status": "REDISTRIBUTABLE_REPORTLAB_DEPENDENCY",
+      "license_evidence": "ReportLab distributes these files with bitstream-vera-license.txt. The renderer refers to the installed dependency and does not copy the font into this repository.",
+      "legal_installation": "Install ReportLab from its official Python distribution and retain its bundled Bitstream Vera license."
+    }
+  ],
+  "publication_note": "STIXGeneral is the preferred serif. Bitstream Vera is an operational fallback, not the preferred devotional typography. A target-market production release still requires a pinned font package and legal review."
+}

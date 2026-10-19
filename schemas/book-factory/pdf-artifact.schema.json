@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pdf-artifact.schema.json",
+  "type": "object",
+  "required": ["schema_version", "engine_version", "result", "pdf_sha256", "page_count", "pages", "digital_reader_profile"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "engine_version": {"type": "string"},
+    "result": {"type": "string", "enum": ["PASS", "FIX", "ESCALATE"]},
+    "pdf_sha256": {"type": "string", "minLength": 64},
+    "page_count": {"type": "integer", "minimum": 1},
+    "pages": {"type": "array", "minItems": 1, "items": {"type": "object"}},
+    "digital_reader_profile": {"type": "string"}
+  }
+}

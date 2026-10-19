@@ -1,0 +1,48 @@
+{
+  "book_id": "DM04-RENDERER-FIXTURE",
+  "engine_version": "0.8.0",
+  "fixture": true,
+  "label": "KHATAKSHETRA BOOK FACTORY — NON-PRODUCTION RENDERER TEST",
+  "manifest_hash": "4d2b3ba54190c463c0bf4c082f478b134f09800e9f91b72b23614f91a5b8ea34",
+  "pages": [
+    {
+      "composition_path": "output/page-engine-demo/0001-dm04-renderer-fixture-page-01.composition.json",
+      "page_id": "dm04-renderer-fixture-page-01",
+      "page_number": 1,
+      "png_path": "output/page-engine-demo/0001-dm04-renderer-fixture-page-01.png",
+      "png_sha256": "a13aac9627176336bd095b75afcd89710afaab478f072a4174a53bc1fad48757",
+      "reading_order": 1,
+      "validation_path": "output/page-engine-demo/0001-dm04-renderer-fixture-page-01.validation.json"
+    },
+    {
+      "composition_path": "output/page-engine-demo/0002-dm04-renderer-fixture-page-02.composition.json",
+      "page_id": "dm04-renderer-fixture-page-02",
+      "page_number": 2,
+      "png_path": "output/page-engine-demo/0002-dm04-renderer-fixture-page-02.png",
+      "png_sha256": "aa676700ef8f0b493a1287ab440bed3e7840e74c7a67830708731059c42b0fa3",
+      "reading_order": 2,
+      "validation_path": "output/page-engine-demo/0002-dm04-renderer-fixture-page-02.validation.json"
+    },
+    {
+      "composition_path": "output/page-engine-demo/0003-dm04-renderer-fixture-page-03.composition.json",
+      "page_id": "dm04-renderer-fixture-page-03",
+      "page_number": 3,
+      "png_path": "output/page-engine-demo/0003-dm04-renderer-fixture-page-03.png",
+      "png_sha256": "503444a1f03327469a83f1862b45cf6758d12a6094bd1a86dbf1c94cb0b96089",
+      "reading_order": 3,
+      "validation_path": "output/page-engine-demo/0003-dm04-renderer-fixture-page-03.validation.json"
+    },
+    {
+      "composition_path": "output/page-engine-demo/0004-dm04-renderer-fixture-page-04.composition.json",
+      "page_id": "dm04-renderer-fixture-page-04",
+      "page_number": 4,
+      "png_path": "output/page-engine-demo/0004-dm04-renderer-fixture-page-04.png",
+      "png_sha256": "b3936582dfc0ed66481a512cc69751d634b516898a7b961e772eed047ae4bbc9",
+      "reading_order": 4,
+      "validation_path": "output/page-engine-demo/0004-dm04-renderer-fixture-page-04.validation.json"
+    }
+  ],
+  "publication_eligible": false,
+  "schema_version": "1.0",
+  "title": "KHATAKSHETRA BOOK FACTORY — NON-PRODUCTION RENDERER TEST"
+}

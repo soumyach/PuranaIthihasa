@@ -1,0 +1,332 @@
+{
+  "approvals": {
+    "manuscript": {
+      "status": "FIXTURE_ONLY"
+    },
+    "series_standard": {
+      "status": "FIXTURE_ONLY"
+    },
+    "storyboard": {
+      "status": "FIXTURE_ONLY"
+    }
+  },
+  "book_id": "DM04-RENDERER-FIXTURE",
+  "book_version": "PR8-TECHNICAL-DEMO",
+  "canvas": {
+    "aspect_ratio": "3:4",
+    "height": 1448,
+    "width": 1086
+  },
+  "chapter_masthead": "PR8 TECHNICAL FIXTURE",
+  "composition_hash": "7007ca867be6866afc71a9c6bd720d8c9f052081e39f677c017d58a3abf3c1c6",
+  "engine_version": "0.8.0",
+  "fixture": true,
+  "fixture_mode": true,
+  "font_config_sha256": "ba6cd2c0c4d716aa550059148339642da7fb2f1af1bfaad2e5d6ab838fb1e0aa",
+  "layout_type": "MIXED_WIDE_NARROW",
+  "lettering": [
+    {
+      "badge_number": 1,
+      "box": {
+        "height": 0.1,
+        "width": 0.45,
+        "x": 0.07,
+        "y": 0.13
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 26
+      },
+      "lettering_id": "fixture-p02-n01",
+      "panel_id": "fixture-p02-panel-01",
+      "reading_order": 1,
+      "source_script_hash": "74948c765138b4b046dbf8b54ba2029bb01387e37ca7b524fe468e724d743a5d",
+      "speaker_id": "narrator",
+      "text": "A wide opening beat gives way to two asymmetric reaction panels."
+    },
+    {
+      "box": {
+        "height": 0.12,
+        "width": 0.35,
+        "x": 0.1,
+        "y": 0.6
+      },
+      "channel": "DIALOGUE",
+      "font": {
+        "minimum_size": 22,
+        "size": 27
+      },
+      "lettering_id": "fixture-p02-d01",
+      "panel_id": "fixture-p02-panel-02",
+      "reading_order": 2,
+      "source_script_hash": "2db350822390a469fde73539d2b05c7c3b3a23c7e0ad9b4c487877cbcc2bbbff",
+      "speaker_id": "fixture-actor",
+      "text": "The reading order remains explicit."
+    }
+  ],
+  "manuscript_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+  "non_production_label": "KHATAKSHETRA BOOK FACTORY — NON-PRODUCTION RENDERER TEST",
+  "page_id": "dm04-renderer-fixture-page-02",
+  "page_number": 2,
+  "page_title": "MIXED-PANEL ACTION TEST",
+  "panels": [
+    {
+      "asset": {
+        "approval": {
+          "status": "NOT_APPLICABLE_FIXTURE",
+          "subject_hash": "dbf5c3cd31da740ec009aaf5cef077d0e70ee58b977a29000d483c1fd8480569"
+        },
+        "path": "book-factory/fixtures/page-engine/assets/action-geometry.png",
+        "sha256": "dbf5c3cd31da740ec009aaf5cef077d0e70ee58b977a29000d483c1fd8480569",
+        "usage": "SYNTHETIC_TEST_ONLY"
+      },
+      "crop": {
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "mode": "COVER",
+        "protected_subjects": [
+          [
+            "fixture-actor",
+            0.5,
+            0.44999999999999996
+          ]
+        ]
+      },
+      "panel_id": "fixture-p02-panel-01",
+      "reading_order": 1,
+      "speaker_anchors": [
+        {
+          "speaker_id": "fixture-actor",
+          "x": 0.5,
+          "y": 0.44999999999999996
+        }
+      ]
+    },
+    {
+      "asset": {
+        "approval": {
+          "status": "NOT_APPLICABLE_FIXTURE",
+          "subject_hash": "dbf5c3cd31da740ec009aaf5cef077d0e70ee58b977a29000d483c1fd8480569"
+        },
+        "path": "book-factory/fixtures/page-engine/assets/action-geometry.png",
+        "sha256": "dbf5c3cd31da740ec009aaf5cef077d0e70ee58b977a29000d483c1fd8480569",
+        "usage": "SYNTHETIC_TEST_ONLY"
+      },
+      "crop": {
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "mode": "COVER",
+        "protected_subjects": [
+          [
+            "fixture-actor",
+            0.5,
+            0.61
+          ]
+        ]
+      },
+      "panel_id": "fixture-p02-panel-02",
+      "reading_order": 2,
+      "speaker_anchors": [
+        {
+          "speaker_id": "fixture-actor",
+          "x": 0.5,
+          "y": 0.61
+        }
+      ]
+    },
+    {
+      "asset": {
+        "approval": {
+          "status": "NOT_APPLICABLE_FIXTURE",
+          "subject_hash": "dbf5c3cd31da740ec009aaf5cef077d0e70ee58b977a29000d483c1fd8480569"
+        },
+        "path": "book-factory/fixtures/page-engine/assets/action-geometry.png",
+        "sha256": "dbf5c3cd31da740ec009aaf5cef077d0e70ee58b977a29000d483c1fd8480569",
+        "usage": "SYNTHETIC_TEST_ONLY"
+      },
+      "crop": {
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "mode": "COVER",
+        "protected_subjects": [
+          [
+            "fixture-actor",
+            0.5,
+            0.77
+          ]
+        ]
+      },
+      "panel_id": "fixture-p02-panel-03",
+      "reading_order": 3,
+      "speaker_anchors": [
+        {
+          "speaker_id": "fixture-actor",
+          "x": 0.5,
+          "y": 0.77
+        }
+      ]
+    }
+  ],
+  "publication_eligible": false,
+  "reading_order": 2,
+  "renderer_source_sha256": "d4bac587d35d277ed850c07003b17629ffcbb2bec312b812587d7be739e93096",
+  "required_lettering_ids": [
+    "fixture-p02-n01",
+    "fixture-p02-d01"
+  ],
+  "resolved_font": {
+    "bold": "/System/Library/Fonts/Supplemental/STIXGeneralBol.otf",
+    "bold_sha256": "7e4dfb4979e9bb79a0bdedc56f055eab615fb9a3dff8788a52992ae65e8f572d",
+    "classification": "serif",
+    "family": "STIXGeneral",
+    "font_binary_bundled_in_repository": false,
+    "legal_installation": "Install the STIX Fonts project from its official distribution, then update paths if the operating system stores it elsewhere. Confirm the specific distribution's license before publication.",
+    "license_evidence": "The installed font metadata identifies the STIX license, derived from the SIL Open Font License. The renderer records hashes but does not copy these system files into the repository.",
+    "license_status": "SYSTEM_FONT_LICENSE_REVIEWED_NOT_REDISTRIBUTED",
+    "regular": "/System/Library/Fonts/Supplemental/STIXGeneral.otf",
+    "regular_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7"
+  },
+  "resolved_lettering": [
+    {
+      "box": [
+        76,
+        188,
+        565,
+        333
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "fixture-p02-n01",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "rendered_font_size": 26,
+      "requested_font_size": 26,
+      "source_script_hash": "74948c765138b4b046dbf8b54ba2029bb01387e37ca7b524fe468e724d743a5d",
+      "text_sha256": "5b493d5c22ca4d4d9530e7eaa3151a9406a5f36f254f54aa782f6f15bfe23886"
+    },
+    {
+      "box": [
+        109,
+        869,
+        489,
+        1043
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "fixture-p02-d01",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "rendered_font_size": 27,
+      "requested_font_size": 27,
+      "source_script_hash": "2db350822390a469fde73539d2b05c7c3b3a23c7e0ad9b4c487877cbcc2bbbff",
+      "text_sha256": "fa5a7b6481413d5171e519859e0464dd9e65595f9f25b2f87ff69e39a8c57a29"
+    }
+  ],
+  "resolved_panels": [
+    {
+      "asset_path": "book-factory/fixtures/page-engine/assets/action-geometry.png",
+      "asset_sha256": "dbf5c3cd31da740ec009aaf5cef077d0e70ee58b977a29000d483c1fd8480569",
+      "box": [
+        49,
+        152,
+        1037,
+        674
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "panel_id": "fixture-p02-panel-01",
+      "scale_mode": "ASPECT_PRESERVING_COVER",
+      "semantic_crop_review": "NOT_APPLICABLE_SYNTHETIC_FIXTURE",
+      "source_crop": [
+        0,
+        440,
+        1086,
+        1008
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "asset_path": "book-factory/fixtures/page-engine/assets/action-geometry.png",
+      "asset_sha256": "dbf5c3cd31da740ec009aaf5cef077d0e70ee58b977a29000d483c1fd8480569",
+      "box": [
+        49,
+        701,
+        622,
+        1339
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "panel_id": "fixture-p02-panel-02",
+      "scale_mode": "ASPECT_PRESERVING_COVER",
+      "semantic_crop_review": "NOT_APPLICABLE_SYNTHETIC_FIXTURE",
+      "source_crop": [
+        0,
+        118,
+        1086,
+        1330
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "asset_path": "book-factory/fixtures/page-engine/assets/action-geometry.png",
+      "asset_sha256": "dbf5c3cd31da740ec009aaf5cef077d0e70ee58b977a29000d483c1fd8480569",
+      "box": [
+        642,
+        701,
+        1037,
+        1339
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "panel_id": "fixture-p02-panel-03",
+      "scale_mode": "ASPECT_PRESERVING_COVER",
+      "semantic_crop_review": "NOT_APPLICABLE_SYNTHETIC_FIXTURE",
+      "source_crop": [
+        99,
+        0,
+        987,
+        1448
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ]
+    }
+  ],
+  "schema_version": "1.0",
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "storyboard_hash": "25cc8bed5368e78c36a3bec43ad03efb7fe2ddc4dd41124ca9ce02bcdcc18185",
+  "typography": {
+    "body_size": 28,
+    "family": null,
+    "title_size": 34
+  }
+}

@@ -1,10 +1,11 @@
-"""Single user-facing orchestration facade for Foundation PR7."""
+"""Single user-facing orchestration facade for Foundation PR8."""
 
 import json
 from copy import deepcopy
 from pathlib import Path
 
 from . import __version__
+from .artifacts import ArtifactStore
 from .catalogue import CatalogueStore
 from .catalogue_v01 import SourceMappingRegistry
 from .contracts import load_schema, validate_named
@@ -32,6 +33,14 @@ from .illustration_production import (
 )
 from .narrative import validate_manuscript
 from .pilot import PilotSelector, catalogue_readiness_report
+from .page_engine import (
+    FontResolver,
+    compose_book as render_book,
+    compose_page as render_page,
+    export_pdf as build_reader_pdf,
+    inspect_pdf as inspect_reader_pdf,
+    validate_composition_file,
+)
 from .preproduction import build_semantic_visual_review_request, validate_preproduction_package
 from .providers import CodexNativeImageProvider
 from .providers.base import ProviderRegistry
@@ -57,6 +66,8 @@ from .versioning import (
     StyleApprovalRequestVersionStore,
     TypographyVersionStore,
     VisualReviewVersionStore,
+    PageCompositionVersionStore,
+    PdfArtifactVersionStore,
 )
 
 
@@ -96,7 +107,7 @@ class FactoryDirector:
                 states.append({"book_id": book_id, "status": "INVALID", "message": str(exc)})
         return {
             "factory_version": __version__,
-            "implementation": "FOUNDATION_PR7",
+            "implementation": "FOUNDATION_PR8",
             "catalogue_books": len(books),
             "readiness_counts": {state: sum(book["readiness"] == state for book in books) for state in sorted({book["readiness"] for book in books})},
             "active_runs": states,
@@ -116,6 +127,12 @@ class FactoryDirector:
             "dm08_reference_edition": self.reference_editions.verify("DM08"),
             "visual_gold_standard": validate_gold_standard(self.root),
             "proof_recovery": "PREPARED_NOT_AUTHORIZED_NOT_EXECUTED",
+            "page_engine": {
+                "version": __version__,
+                "production_stage_gates": ["LETTERING", "PDF_LAYOUT", "VISUAL_QA"],
+                "fixture_mode": "ISOLATED_PUBLICATION_INELIGIBLE",
+                "semantic_visual_approval": "REQUIRES_INDEPENDENT_ACTUAL_PIXEL_REVIEW",
+            },
         }
 
     def input_report(self):
@@ -1666,6 +1683,152 @@ class FactoryDirector:
             "mutated": False,
         }
 
+    def _page_engine_gate(self, book_id, required_stage, fixture_mode):
+        if fixture_mode:
+            return {"mode": "ISOLATED_FIXTURE", "publication_eligible": False, "state_mutation_allowed": False}
+        book = self.catalogue.get(book_id)
+        if book is None:
+            raise ContractError("book is not in the authoritative catalogue", {"book_id": book_id})
+        if book_id == "DM08" or book.get("edition_status") == "EXISTING_EDITION":
+            raise ContractError("existing reference editions cannot enter page production", {"book_id": book_id})
+        store = StateStore(self.books_root, book_id, self._configuration()["retry_limits"]["stage"])
+        if not store.events_path.is_file():
+            raise ContractError("page production requires durable book state", {"book_id": book_id})
+        state = store.load()
+        required_stages = (required_stage,) if isinstance(required_stage, str) else tuple(required_stage)
+        if state["current_stage"] not in required_stages:
+            raise ContractError(
+                "page-engine lifecycle gate is closed",
+                {"book_id": book_id, "required_stages": list(required_stages), "current_stage": state["current_stage"]},
+            )
+        return {"mode": "PRODUCTION", "publication_eligible": False, "state_mutation_allowed": True, "state": state}
+
+    def compose_page(self, spec_path, output_dir, fixture_mode=False):
+        spec = load_json(Path(spec_path))
+        gate = self._page_engine_gate(spec.get("book_id"), ("LETTERING", "PDF_LAYOUT", "VISUAL_QA"), fixture_mode)
+        result = render_page(
+            spec, self.root, Path(output_dir), fixture_mode,
+            self.root / "book-factory" / "config" / "page-renderer-fonts.json",
+        )
+        if not fixture_mode:
+            composition = load_json(Path(result["composition"]))
+            store = PageCompositionVersionStore(self.books_root)
+            prior = store.versions(spec["book_id"], spec["page_id"])
+            record = store.put(spec["book_id"], spec["page_id"], composition, prior[-1]["content_hash"] if prior else None)
+            result["version_record_hash"] = record["content_hash"]
+            result["artifact"] = ArtifactStore(self.books_root).put(
+                Path(result["rendered_png"]).read_bytes(), media_type="image/png", extension="png",
+                logical_id=spec["page_id"], input_hashes=[composition["composition_hash"]], version=record["version"],
+            )
+        result["gate"] = gate
+        return result
+
+    def validate_page(self, composition_path, fixture_mode=False):
+        return validate_composition_file(composition_path, self.root, fixture_mode)
+
+    def compose_book(self, manifest_path, output_dir, fixture_mode=False):
+        manifest = load_json(Path(manifest_path))
+        gate = self._page_engine_gate(manifest.get("book_id"), ("LETTERING", "PDF_LAYOUT", "VISUAL_QA"), fixture_mode)
+        result = render_book(
+            manifest, self.root, Path(output_dir), fixture_mode,
+            self.root / "book-factory" / "config" / "page-renderer-fonts.json",
+        )
+        if not fixture_mode:
+            page_store = PageCompositionVersionStore(self.books_root)
+            artifact_store = ArtifactStore(self.books_root)
+            for page_result in result["pages"]:
+                composition = load_json(Path(page_result["composition"]))
+                page_id = composition["page_id"]
+                prior = page_store.versions(manifest["book_id"], page_id)
+                record = page_store.put(
+                    manifest["book_id"], page_id, composition,
+                    prior[-1]["content_hash"] if prior else None,
+                )
+                page_result["version_record_hash"] = record["content_hash"]
+                page_result["artifact"] = artifact_store.put(
+                    Path(page_result["rendered_png"]).read_bytes(), media_type="image/png", extension="png",
+                    logical_id=page_id, input_hashes=[composition["composition_hash"]], version=record["version"],
+                )
+        if not fixture_mode and gate["state"]["current_stage"] == "LETTERING":
+            state_store = StateStore(self.books_root, manifest["book_id"], self._configuration()["retry_limits"]["stage"])
+            state = state_store.transition(
+                "PDF_LAYOUT", "pr8-compose-book-%s" % load_json(Path(result["manifest"]))["manifest_hash"],
+                actor="page-composition-engine", input_hashes=[page["storyboard_hash"] for page in manifest["pages"]],
+                output_hashes=[load_json(Path(result["manifest"]))["manifest_hash"]],
+            )
+            result["run_stage"] = state["current_stage"]
+        elif not fixture_mode:
+            result["run_stage"] = gate["state"]["current_stage"]
+            result["page_local_rebuild"] = True
+        result["gate"] = gate
+        return result
+
+    def export_pdf(self, manifest_path, output_path, fixture_mode=False):
+        manifest = load_json(Path(manifest_path))
+        gate = self._page_engine_gate(manifest.get("book_id"), ("PDF_LAYOUT", "VISUAL_QA"), fixture_mode)
+        result = build_reader_pdf(manifest, Path(output_path), fixture_mode)
+        if not fixture_mode:
+            record_payload = {
+                "book_id": manifest["book_id"], "manifest_hash": manifest["manifest_hash"],
+                "pdf_sha256": result["pdf_sha256"], "inspection": load_json(Path(result["inspection_path"])),
+                "publication_eligible": False,
+            }
+            store = PdfArtifactVersionStore(self.books_root)
+            prior = store.versions(manifest["book_id"])
+            record = store.put(manifest["book_id"], record_payload, prior[-1]["content_hash"] if prior else None)
+            result["version_record_hash"] = record["content_hash"]
+            result["artifact"] = ArtifactStore(self.books_root).put(
+                Path(result["pdf_path"]).read_bytes(), media_type="application/pdf", extension="pdf",
+                logical_id="%s-digital-reader" % manifest["book_id"],
+                input_hashes=[manifest["manifest_hash"]], version=record["version"],
+            )
+            if gate["state"]["current_stage"] == "PDF_LAYOUT":
+                state_store = StateStore(self.books_root, manifest["book_id"], self._configuration()["retry_limits"]["stage"])
+                state = state_store.transition(
+                    "VISUAL_QA", "pr8-export-pdf-%s" % result["pdf_sha256"], actor="pdf-layout-engine",
+                    input_hashes=[manifest["manifest_hash"]], output_hashes=[result["pdf_sha256"]],
+                )
+                result["run_stage"] = state["current_stage"]
+            else:
+                result["run_stage"] = "VISUAL_QA"
+                result["page_local_rebuild"] = True
+        result["gate"] = gate
+        return result
+
+    def inspect_pdf(self, pdf_path, manifest_path=None, fixture_mode=False):
+        manifest = load_json(Path(manifest_path)) if manifest_path else None
+        if manifest:
+            self._page_engine_gate(manifest.get("book_id"), "VISUAL_QA", fixture_mode)
+        result = inspect_reader_pdf(Path(pdf_path), manifest)
+        result["semantic_visual_review"] = {
+            "result": "NOT_APPLICABLE_SYNTHETIC_FIXTURE" if fixture_mode else "ESCALATE",
+            "reason": "deterministic PDF inspection cannot certify iconography, composition, character continuity, crop safety or reading-size visual quality",
+        }
+        result["publication_state_transition"] = "PROHIBITED_FIXTURE" if fixture_mode else "BLOCKED_PENDING_INDEPENDENT_SEMANTIC_REVIEW"
+        return result
+
+    def resume_layout(self, book_id, composition_path=None, page_id=None, fixture_mode=False):
+        if fixture_mode:
+            if not composition_path:
+                raise ContractError("fixture resume requires an explicit composition path")
+            report = validate_composition_file(composition_path, self.root, True)
+            return {
+                "status": "RESUMED_IDEMPOTENTLY" if report["result"] == "PASS" else "FIX",
+                "book_id": book_id, "composition_path": str(Path(composition_path)),
+                "validation": report, "mutated": False, "publication_eligible": False,
+            }
+        self._page_engine_gate(book_id, ("LETTERING", "PDF_LAYOUT", "VISUAL_QA"), False)
+        if not page_id:
+            raise ContractError("production resume requires a stable page ID")
+        versions = PageCompositionVersionStore(self.books_root).versions(book_id, page_id)
+        if not versions:
+            return {"status": "BLOCKED", "code": "NO_PAGE_COMPOSITION", "book_id": book_id, "mutated": False}
+        return {
+            "status": "RESUMED_IDEMPOTENTLY", "book_id": book_id, "page_id": page_id,
+            "version": versions[-1]["version"], "composition_hash": versions[-1]["content_hash"],
+            "mutated": False,
+        }
+
     def validate(self):
         self._configuration()
         catalogue = self.catalogue.load()
@@ -1809,6 +1972,32 @@ class FactoryDirector:
                     "result": proof_gate["result"],
                 })
         pr7_validation = validate_pr7(self.root)
+        font_resolution = FontResolver(
+            self.root / "book-factory" / "config" / "page-renderer-fonts.json"
+        ).resolve()
+        demo_input = load_json(
+            self.root / "book-factory" / "fixtures" / "page-engine" / "demo-book.json"
+        )
+        supplied_fixture_hash = demo_input.get("fixture_manifest_hash")
+        if supplied_fixture_hash != content_hash({key: value for key, value in demo_input.items() if key != "fixture_manifest_hash"}):
+            raise ContractError("PR8 fixture manifest hash is invalid")
+        demo_pages = []
+        for path in sorted((self.root / "output" / "page-engine-demo").glob("*.composition.json")):
+            composition = load_json(path)
+            validate_named(composition, schema_root, "page-composition")
+            report = validate_composition_file(path, self.root, True)
+            validate_named(report, schema_root, "page-render-report")
+            if report["result"] != "PASS":
+                raise ContractError("PR8 fixture page failed deterministic validation", {"path": str(path), "findings": report["findings"]})
+            demo_pages.append({"page_id": composition["page_id"], "composition_hash": composition["composition_hash"]})
+        if len(demo_pages) != 4:
+            raise ContractError("PR8 requires exactly four committed technical demonstration pages")
+        pdf_path = self.root / "output" / "pdf" / "khatakshetra-book-factory-non-production-renderer-test.pdf"
+        composed_manifest = load_json(self.root / "output" / "page-engine-demo" / "composed-book-manifest.json")
+        pdf_validation = inspect_reader_pdf(pdf_path, composed_manifest)
+        validate_named(pdf_validation, schema_root, "pdf-artifact")
+        if pdf_validation["result"] != "PASS":
+            raise ContractError("PR8 technical demonstration PDF failed deterministic validation", {"findings": pdf_validation["findings"]})
         return {
             "status": "PASS",
             "schemas": schemas,
@@ -1828,5 +2017,13 @@ class FactoryDirector:
             "input_report": self.input_report(),
             "image_capabilities": image_capabilities,
             "pr7": pr7_validation,
-            "note": "Foundation PR7 adds an actual-page Visual Gold Standard, evidence-based PR6 diagnosis, comparative pixel review, cultural-authenticity and reference-first contracts, and four non-executable DM04 recovery requests. No PR7 image generation, PDF production, publication, or DM08 production occurred.",
+            "pr8": {
+                "fixture_manifest_hash": demo_input["fixture_manifest_hash"],
+                "technical_pages": demo_pages,
+                "pdf": pdf_validation,
+                "font": font_resolution,
+                "publication_eligible": False,
+                "semantic_visual_review": "NOT_APPLICABLE_TO_SYNTHETIC_FIXTURE_AND_NOT_CLAIMED_FOR_PRODUCTION",
+            },
+            "note": "Foundation PR8 adds deterministic page composition, editable lettering, PDF assembly and isolated technical fixtures. It generated no story art or manuscript, did not modify DM08 or the source graph, and did not certify publication or semantic visual quality.",
         }

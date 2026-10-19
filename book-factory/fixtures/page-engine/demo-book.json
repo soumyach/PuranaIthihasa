@@ -1,0 +1,642 @@
+{
+  "book_id": "DM04-RENDERER-FIXTURE",
+  "fixture": true,
+  "fixture_manifest_hash": "920ed75b25f8fd0b204b6c48566e5cdbe1993e89ed44dc80f78c004249625398",
+  "pages": [
+    {
+      "approvals": {
+        "manuscript": {
+          "status": "FIXTURE_ONLY"
+        },
+        "series_standard": {
+          "status": "FIXTURE_ONLY"
+        },
+        "storyboard": {
+          "status": "FIXTURE_ONLY"
+        }
+      },
+      "book_id": "DM04-RENDERER-FIXTURE",
+      "book_version": "PR8-TECHNICAL-DEMO",
+      "chapter_masthead": "PR8 TECHNICAL FIXTURE",
+      "fixture": true,
+      "layout_type": "TWO_PANEL_SEQUENTIAL",
+      "lettering": [
+        {
+          "badge_number": 1,
+          "box": {
+            "height": 0.11,
+            "width": 0.42,
+            "x": 0.07,
+            "y": 0.13
+          },
+          "channel": "NARRATION",
+          "font": {
+            "minimum_size": 22,
+            "size": 26
+          },
+          "lettering_id": "fixture-p01-n01",
+          "panel_id": "fixture-p01-panel-01",
+          "reading_order": 1,
+          "source_script_hash": "e1d5635d690e4b3b79a50b72404df3db71157f5165e1864c560a823bdb0331f9",
+          "speaker_id": "narrator",
+          "text": "A compact narration plaque establishes the technical scene without repeating the dialogue."
+        },
+        {
+          "box": {
+            "height": 0.13,
+            "width": 0.34,
+            "x": 0.54,
+            "y": 0.25
+          },
+          "channel": "DIALOGUE",
+          "font": {
+            "minimum_size": 22,
+            "size": 28
+          },
+          "lettering_id": "fixture-p01-d01",
+          "panel_id": "fixture-p01-panel-01",
+          "reading_order": 2,
+          "source_script_hash": "7fdbffab038984281d839c30124c8078b66586aee59a5b89bd2257885b9d120f",
+          "speaker_id": "fixture-speaker-b",
+          "text": "Does every word remain editable after the art is placed?"
+        },
+        {
+          "box": {
+            "height": 0.15,
+            "width": 0.38,
+            "x": 0.08,
+            "y": 0.58
+          },
+          "channel": "DIALOGUE",
+          "font": {
+            "minimum_size": 22,
+            "size": 27
+          },
+          "lettering_id": "fixture-p01-d02",
+          "panel_id": "fixture-p01-panel-02",
+          "reading_order": 3,
+          "source_script_hash": "995c21fbd050144566376fbef1864364bd82d5495ecda5d806090df63547e220",
+          "speaker_id": "fixture-speaker-a",
+          "text": "Yes. The script, geometry, font and tail anchor remain separate records."
+        },
+        {
+          "box": {
+            "height": 0.14,
+            "width": 0.34,
+            "x": 0.55,
+            "y": 0.58
+          },
+          "channel": "DIALOGUE",
+          "font": {
+            "minimum_size": 22,
+            "size": 27
+          },
+          "lettering_id": "fixture-p01-d03",
+          "panel_id": "fixture-p01-panel-02",
+          "reading_order": 4,
+          "source_script_hash": "471c3ebd9b3b921e42794410bda6a0a69d48dafabc50ea70a532607229821cf2",
+          "speaker_id": "fixture-speaker-b",
+          "text": "Then a layout repair does not regenerate the illustration."
+        }
+      ],
+      "manuscript_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+      "non_production_label": "KHATAKSHETRA BOOK FACTORY — NON-PRODUCTION RENDERER TEST",
+      "page_id": "dm04-renderer-fixture-page-01",
+      "page_number": 1,
+      "page_title": "DIALOGUE-HEAVY PAGE TEST",
+      "panels": [
+        {
+          "asset": {
+            "approval": {
+              "status": "NOT_APPLICABLE_FIXTURE",
+              "subject_hash": "96999b0d0d82bf00e2089c64718a5814fdd00b5c5ae82a6afed9ee7b517f718d"
+            },
+            "path": "book-factory/fixtures/page-engine/assets/dialogue-geometry.png",
+            "sha256": "96999b0d0d82bf00e2089c64718a5814fdd00b5c5ae82a6afed9ee7b517f718d",
+            "usage": "SYNTHETIC_TEST_ONLY"
+          },
+          "crop": {
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "mode": "COVER",
+            "protected_subjects": [
+              [
+                "fixture-speaker-a",
+                0.28,
+                0.38
+              ],
+              [
+                "fixture-speaker-b",
+                0.72,
+                0.42
+              ]
+            ]
+          },
+          "panel_id": "fixture-p01-panel-01",
+          "reading_order": 1,
+          "speaker_anchors": [
+            {
+              "speaker_id": "fixture-speaker-a",
+              "x": 0.28,
+              "y": 0.38
+            },
+            {
+              "speaker_id": "fixture-speaker-b",
+              "x": 0.72,
+              "y": 0.42
+            }
+          ]
+        },
+        {
+          "asset": {
+            "approval": {
+              "status": "NOT_APPLICABLE_FIXTURE",
+              "subject_hash": "96999b0d0d82bf00e2089c64718a5814fdd00b5c5ae82a6afed9ee7b517f718d"
+            },
+            "path": "book-factory/fixtures/page-engine/assets/dialogue-geometry.png",
+            "sha256": "96999b0d0d82bf00e2089c64718a5814fdd00b5c5ae82a6afed9ee7b517f718d",
+            "usage": "SYNTHETIC_TEST_ONLY"
+          },
+          "crop": {
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "mode": "COVER",
+            "protected_subjects": [
+              [
+                "fixture-speaker-a",
+                0.28,
+                0.76
+              ],
+              [
+                "fixture-speaker-b",
+                0.72,
+                0.8
+              ]
+            ]
+          },
+          "panel_id": "fixture-p01-panel-02",
+          "reading_order": 2,
+          "speaker_anchors": [
+            {
+              "speaker_id": "fixture-speaker-a",
+              "x": 0.28,
+              "y": 0.76
+            },
+            {
+              "speaker_id": "fixture-speaker-b",
+              "x": 0.72,
+              "y": 0.8
+            }
+          ]
+        }
+      ],
+      "publication_eligible": false,
+      "reading_order": 1,
+      "required_lettering_ids": [
+        "fixture-p01-n01",
+        "fixture-p01-d01",
+        "fixture-p01-d02",
+        "fixture-p01-d03"
+      ],
+      "schema_version": "1.0",
+      "series_standard": {
+        "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+        "palette": [
+          "#071F35",
+          "#D8AC4E",
+          "#F0CF76",
+          "#F6E8C6",
+          "#FFF9EF",
+          "#251C18",
+          "#692019"
+        ]
+      },
+      "storyboard_hash": "25cc8bed5368e78c36a3bec43ad03efb7fe2ddc4dd41124ca9ce02bcdcc18185",
+      "typography": {
+        "body_size": 28,
+        "family": null,
+        "title_size": 34
+      }
+    },
+    {
+      "approvals": {
+        "manuscript": {
+          "status": "FIXTURE_ONLY"
+        },
+        "series_standard": {
+          "status": "FIXTURE_ONLY"
+        },
+        "storyboard": {
+          "status": "FIXTURE_ONLY"
+        }
+      },
+      "book_id": "DM04-RENDERER-FIXTURE",
+      "book_version": "PR8-TECHNICAL-DEMO",
+      "chapter_masthead": "PR8 TECHNICAL FIXTURE",
+      "fixture": true,
+      "layout_type": "MIXED_WIDE_NARROW",
+      "lettering": [
+        {
+          "badge_number": 1,
+          "box": {
+            "height": 0.1,
+            "width": 0.45,
+            "x": 0.07,
+            "y": 0.13
+          },
+          "channel": "NARRATION",
+          "font": {
+            "minimum_size": 22,
+            "size": 26
+          },
+          "lettering_id": "fixture-p02-n01",
+          "panel_id": "fixture-p02-panel-01",
+          "reading_order": 1,
+          "source_script_hash": "74948c765138b4b046dbf8b54ba2029bb01387e37ca7b524fe468e724d743a5d",
+          "speaker_id": "narrator",
+          "text": "A wide opening beat gives way to two asymmetric reaction panels."
+        },
+        {
+          "box": {
+            "height": 0.12,
+            "width": 0.35,
+            "x": 0.1,
+            "y": 0.6
+          },
+          "channel": "DIALOGUE",
+          "font": {
+            "minimum_size": 22,
+            "size": 27
+          },
+          "lettering_id": "fixture-p02-d01",
+          "panel_id": "fixture-p02-panel-02",
+          "reading_order": 2,
+          "source_script_hash": "2db350822390a469fde73539d2b05c7c3b3a23c7e0ad9b4c487877cbcc2bbbff",
+          "speaker_id": "fixture-actor",
+          "text": "The reading order remains explicit."
+        }
+      ],
+      "manuscript_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+      "non_production_label": "KHATAKSHETRA BOOK FACTORY — NON-PRODUCTION RENDERER TEST",
+      "page_id": "dm04-renderer-fixture-page-02",
+      "page_number": 2,
+      "page_title": "MIXED-PANEL ACTION TEST",
+      "panels": [
+        {
+          "asset": {
+            "approval": {
+              "status": "NOT_APPLICABLE_FIXTURE",
+              "subject_hash": "dbf5c3cd31da740ec009aaf5cef077d0e70ee58b977a29000d483c1fd8480569"
+            },
+            "path": "book-factory/fixtures/page-engine/assets/action-geometry.png",
+            "sha256": "dbf5c3cd31da740ec009aaf5cef077d0e70ee58b977a29000d483c1fd8480569",
+            "usage": "SYNTHETIC_TEST_ONLY"
+          },
+          "crop": {
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "mode": "COVER",
+            "protected_subjects": [
+              [
+                "fixture-actor",
+                0.5,
+                0.44999999999999996
+              ]
+            ]
+          },
+          "panel_id": "fixture-p02-panel-01",
+          "reading_order": 1,
+          "speaker_anchors": [
+            {
+              "speaker_id": "fixture-actor",
+              "x": 0.5,
+              "y": 0.44999999999999996
+            }
+          ]
+        },
+        {
+          "asset": {
+            "approval": {
+              "status": "NOT_APPLICABLE_FIXTURE",
+              "subject_hash": "dbf5c3cd31da740ec009aaf5cef077d0e70ee58b977a29000d483c1fd8480569"
+            },
+            "path": "book-factory/fixtures/page-engine/assets/action-geometry.png",
+            "sha256": "dbf5c3cd31da740ec009aaf5cef077d0e70ee58b977a29000d483c1fd8480569",
+            "usage": "SYNTHETIC_TEST_ONLY"
+          },
+          "crop": {
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "mode": "COVER",
+            "protected_subjects": [
+              [
+                "fixture-actor",
+                0.5,
+                0.61
+              ]
+            ]
+          },
+          "panel_id": "fixture-p02-panel-02",
+          "reading_order": 2,
+          "speaker_anchors": [
+            {
+              "speaker_id": "fixture-actor",
+              "x": 0.5,
+              "y": 0.61
+            }
+          ]
+        },
+        {
+          "asset": {
+            "approval": {
+              "status": "NOT_APPLICABLE_FIXTURE",
+              "subject_hash": "dbf5c3cd31da740ec009aaf5cef077d0e70ee58b977a29000d483c1fd8480569"
+            },
+            "path": "book-factory/fixtures/page-engine/assets/action-geometry.png",
+            "sha256": "dbf5c3cd31da740ec009aaf5cef077d0e70ee58b977a29000d483c1fd8480569",
+            "usage": "SYNTHETIC_TEST_ONLY"
+          },
+          "crop": {
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "mode": "COVER",
+            "protected_subjects": [
+              [
+                "fixture-actor",
+                0.5,
+                0.77
+              ]
+            ]
+          },
+          "panel_id": "fixture-p02-panel-03",
+          "reading_order": 3,
+          "speaker_anchors": [
+            {
+              "speaker_id": "fixture-actor",
+              "x": 0.5,
+              "y": 0.77
+            }
+          ]
+        }
+      ],
+      "publication_eligible": false,
+      "reading_order": 2,
+      "required_lettering_ids": [
+        "fixture-p02-n01",
+        "fixture-p02-d01"
+      ],
+      "schema_version": "1.0",
+      "series_standard": {
+        "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+        "palette": [
+          "#071F35",
+          "#D8AC4E",
+          "#F0CF76",
+          "#F6E8C6",
+          "#FFF9EF",
+          "#251C18",
+          "#692019"
+        ]
+      },
+      "storyboard_hash": "25cc8bed5368e78c36a3bec43ad03efb7fe2ddc4dd41124ca9ce02bcdcc18185",
+      "typography": {
+        "body_size": 28,
+        "family": null,
+        "title_size": 34
+      }
+    },
+    {
+      "approvals": {
+        "manuscript": {
+          "status": "FIXTURE_ONLY"
+        },
+        "series_standard": {
+          "status": "FIXTURE_ONLY"
+        },
+        "storyboard": {
+          "status": "FIXTURE_ONLY"
+        }
+      },
+      "book_id": "DM04-RENDERER-FIXTURE",
+      "book_version": "PR8-TECHNICAL-DEMO",
+      "chapter_masthead": "PR8 TECHNICAL FIXTURE",
+      "fixture": true,
+      "layout_type": "SINGLE_PANEL_IMMERSIVE",
+      "lettering": [
+        {
+          "badge_number": 1,
+          "box": {
+            "height": 0.1,
+            "width": 0.45,
+            "x": 0.08,
+            "y": 0.77
+          },
+          "channel": "NARRATION",
+          "font": {
+            "minimum_size": 22,
+            "size": 26
+          },
+          "lettering_id": "fixture-p03-n01",
+          "panel_id": "fixture-p03-panel-01",
+          "reading_order": 1,
+          "source_script_hash": "d5b289cde8a3c67e9358e1b77e832b5889db725a574f781275e98601cc91ead5",
+          "speaker_id": "narrator",
+          "text": "The immersive template protects a large uninterrupted image field."
+        }
+      ],
+      "manuscript_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+      "non_production_label": "KHATAKSHETRA BOOK FACTORY — NON-PRODUCTION RENDERER TEST",
+      "page_id": "dm04-renderer-fixture-page-03",
+      "page_number": 3,
+      "page_title": "FULL-PAGE IMMERSIVE TEST",
+      "panels": [
+        {
+          "asset": {
+            "approval": {
+              "status": "NOT_APPLICABLE_FIXTURE",
+              "subject_hash": "c28be9e50154f2e7c1f1e011229c1a8e757733173599824a2f23a2ca0f8b4663"
+            },
+            "path": "book-factory/fixtures/page-engine/assets/immersive-geometry.png",
+            "sha256": "c28be9e50154f2e7c1f1e011229c1a8e757733173599824a2f23a2ca0f8b4663",
+            "usage": "SYNTHETIC_TEST_ONLY"
+          },
+          "crop": {
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "mode": "COVER",
+            "protected_subjects": [
+              [
+                "fixture-observer",
+                0.5,
+                0.63
+              ]
+            ]
+          },
+          "panel_id": "fixture-p03-panel-01",
+          "reading_order": 1,
+          "speaker_anchors": [
+            {
+              "speaker_id": "fixture-observer",
+              "x": 0.5,
+              "y": 0.63
+            }
+          ]
+        }
+      ],
+      "publication_eligible": false,
+      "reading_order": 3,
+      "required_lettering_ids": [
+        "fixture-p03-n01"
+      ],
+      "schema_version": "1.0",
+      "series_standard": {
+        "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+        "palette": [
+          "#071F35",
+          "#D8AC4E",
+          "#F0CF76",
+          "#F6E8C6",
+          "#FFF9EF",
+          "#251C18",
+          "#692019"
+        ]
+      },
+      "storyboard_hash": "25cc8bed5368e78c36a3bec43ad03efb7fe2ddc4dd41124ca9ce02bcdcc18185",
+      "typography": {
+        "body_size": 28,
+        "family": null,
+        "title_size": 34
+      }
+    },
+    {
+      "approvals": {
+        "manuscript": {
+          "status": "FIXTURE_ONLY"
+        },
+        "series_standard": {
+          "status": "FIXTURE_ONLY"
+        },
+        "storyboard": {
+          "status": "FIXTURE_ONLY"
+        }
+      },
+      "book_id": "DM04-RENDERER-FIXTURE",
+      "book_version": "PR8-TECHNICAL-DEMO",
+      "chapter_masthead": "PR8 TECHNICAL FIXTURE",
+      "fixture": true,
+      "layout_type": "REFLECTION_SOURCE_NOTE",
+      "lettering": [
+        {
+          "box": {
+            "height": 0.27,
+            "width": 0.8,
+            "x": 0.1,
+            "y": 0.2
+          },
+          "channel": "INSET_EXPLANATION",
+          "font": {
+            "minimum_size": 22,
+            "size": 29,
+            "weight": "bold"
+          },
+          "lettering_id": "fixture-p04-i01",
+          "panel_id": "fixture-p04-panel-01",
+          "reading_order": 1,
+          "source_script_hash": "2a3752afeae4bdd204c5306b32a386b3bd57166ccfa4df762e4a73bc2a5ae644",
+          "speaker_id": "editorial-inset",
+          "text": "TECHNICAL SOURCE NOTE\nThis page demonstrates a distinct expository channel. Its wording is fixture text, not scripture and not an editorial claim about DM04."
+        },
+        {
+          "badge_number": 1,
+          "box": {
+            "height": 0.13,
+            "width": 0.68,
+            "x": 0.16,
+            "y": 0.58
+          },
+          "channel": "NARRATION",
+          "font": {
+            "minimum_size": 22,
+            "size": 27
+          },
+          "lettering_id": "fixture-p04-n01",
+          "panel_id": "fixture-p04-panel-01",
+          "reading_order": 2,
+          "source_script_hash": "439e80e7162a5137962011f556c04c71681c5725e749ee9ced1d25c42e8c1971",
+          "speaker_id": "narrator",
+          "text": "Reflection pages remain readable, restrained and separately editable."
+        }
+      ],
+      "manuscript_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+      "non_production_label": "KHATAKSHETRA BOOK FACTORY — NON-PRODUCTION RENDERER TEST",
+      "page_id": "dm04-renderer-fixture-page-04",
+      "page_number": 4,
+      "page_title": "REFLECTION / SOURCE-NOTE TEST",
+      "panels": [
+        {
+          "asset": {
+            "approval": {
+              "status": "NOT_APPLICABLE_FIXTURE",
+              "subject_hash": "515d285a63a9d3bb975b77182e8755197f82c0f39207cdc90f96b1b8c54bdf2c"
+            },
+            "path": "book-factory/fixtures/page-engine/assets/source-note-geometry.png",
+            "sha256": "515d285a63a9d3bb975b77182e8755197f82c0f39207cdc90f96b1b8c54bdf2c",
+            "usage": "SYNTHETIC_TEST_ONLY"
+          },
+          "crop": {
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "mode": "COVER",
+            "protected_subjects": []
+          },
+          "panel_id": "fixture-p04-panel-01",
+          "reading_order": 1,
+          "speaker_anchors": []
+        }
+      ],
+      "publication_eligible": false,
+      "reading_order": 4,
+      "required_lettering_ids": [
+        "fixture-p04-i01",
+        "fixture-p04-n01"
+      ],
+      "schema_version": "1.0",
+      "series_standard": {
+        "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+        "palette": [
+          "#071F35",
+          "#D8AC4E",
+          "#F0CF76",
+          "#F6E8C6",
+          "#FFF9EF",
+          "#251C18",
+          "#692019"
+        ]
+      },
+      "storyboard_hash": "25cc8bed5368e78c36a3bec43ad03efb7fe2ddc4dd41124ca9ce02bcdcc18185",
+      "typography": {
+        "body_size": 28,
+        "family": null,
+        "title_size": 34
+      }
+    }
+  ],
+  "provenance": "Deterministic synthetic geometry generated locally; no AI image service and no reference-page reproduction.",
+  "publication_eligible": false,
+  "schema_version": "1.0",
+  "title": "KHATAKSHETRA BOOK FACTORY — NON-PRODUCTION RENDERER TEST"
+}

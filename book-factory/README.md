@@ -1,6 +1,15 @@
-# Khatakshetra Book Factory — Foundation PR7
+# Khatakshetra Book Factory — Foundation PR8
 
-PR7 preserves the complete PR6 execution record and adds an eight-page, hash-bound Visual Gold Standard extracted from the two registered reference PDFs; evidence-classified diagnosis of the PR6 quality gap; actual-pixel comparison of all eight PR6 attempts; reference-first prompt, cultural-authenticity, source-iconography, production-unit, lettering, and comparative-review contracts; and exactly four immutable, non-executable DM04 recovery requests. No image generation, paid call, manuscript rewrite, PDF assembly, DM08 production, source-graph change, publication, or deployment occurred. See `docs/BOOK_FACTORY_FOUNDATION_PR7.md` for the execution report.
+PR8 preserves the complete PR7 record and adds a deterministic page-composition, editable-lettering and digital-PDF engine. Ten reusable layout families, exact-text hashes, speaker anchors, aspect-preserving crop records, licensed-font resolution, page-local repair, PDF pixel inspection, production lifecycle gates and an isolated four-page technical fixture are executable through the existing `factory` interface. PR8 generated no story art or manuscript, did not alter DM08 or the source graph, and made no publication or semantic visual-approval claim. See `docs/BOOK_FACTORY_FOUNDATION_PR8.md` for the execution report.
+
+## PR8 page engine
+
+1. Editable `.composition.json` is the page authority; PNG and PDF are deterministic derivatives.
+2. Production composition requires `LETTERING`, exact asset approvals and approved manuscript/storyboard/series gates. Successful book composition advances only to `PDF_LAYOUT`; successful PDF export advances only to `VISUAL_QA`.
+3. Deterministic PDF inspection cannot advance to publication. Independent actual-pixel review remains required for crop safety, iconography, culture, action, composition, character continuity and reading-size quality.
+4. `--fixture-mode` accepts only explicitly synthetic test assets, writes publication-ineligible artifacts and cannot mutate production state.
+5. STIXGeneral is the preferred installed serif. Bitstream Vera is the documented operational fallback. No font binary is bundled in this repository, and installation is not represented as blanket publication clearance.
+6. The committed four-page fixture and PDF are labeled `KHATAKSHETRA BOOK FACTORY — NON-PRODUCTION RENDERER TEST`.
 
 ## PR7 benchmark and recovery workflow
 
@@ -52,6 +61,12 @@ From the repository root, use the checked-in launcher:
 ./factory import-visual-review --book-id DM04 --handoff HANDOFF --response RESPONSE
 ./factory build-proof-contact-sheet --book-id DM04
 ./factory prepare-style-approval --book-id DM04
+./factory compose-page --spec PAGE.json --output-dir OUTPUT
+./factory validate-page --source PAGE.composition.json
+./factory compose-book --manifest BOOK.json --output-dir OUTPUT
+./factory export-pdf --manifest COMPOSED.json --output BOOK.pdf
+./factory inspect-pdf --pdf BOOK.pdf --manifest COMPOSED.json
+./factory resume-layout --book-id ID --page-id PAGE_ID
 ./factory produce-next --dry-run
 ./factory resume --book-id ID
 ```
@@ -62,6 +77,8 @@ The synthetic command path is explicit and never changes the authoritative catal
 
 ```sh
 ./factory --catalogue book-factory/fixtures/synthetic-book/catalogue.json produce-next --dry-run
+./factory compose-book --manifest book-factory/fixtures/page-engine/demo-book.json --output-dir output/page-engine-demo --fixture-mode
+./factory export-pdf --manifest output/page-engine-demo/composed-book-manifest.json --output output/pdf/khatakshetra-book-factory-non-production-renderer-test.pdf --fixture-mode
 ```
 
 All commands are repository-local and make no paid provider calls. `produce-next` still requires `--dry-run`. `source-dossier` writes only with explicit `--write`; otherwise it and `story-packet` are read-only. The handoff commands prepare and import exact JSON files; the repository does not pretend that it can spawn a Codex agent programmatically. The current Codex session performs that orchestration and records a session-scoped, non-cryptographic execution attestation.

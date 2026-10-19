@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "0.8.0",
+  "authority": "editable composition JSON",
+  "derivatives": ["PNG", "digital reader PDF"],
+  "content_layout_asset_separation": true,
+  "layouts": ["TWO_PANEL_SEQUENTIAL", "THREE_PANEL", "FOUR_PANEL_GRID", "MIXED_WIDE_NARROW", "CINEMATIC_HERO", "SINGLE_PANEL_IMMERSIVE", "QUIET_NEAR_SILENT", "COVER", "REFLECTION_SOURCE_NOTE", "TWO_PAGE_SPREAD"],
+  "lettering_channels": ["NARRATION", "DIALOGUE", "THOUGHT", "INSET_EXPLANATION"],
+  "production_gates": ["locked manuscript", "locked storyboard", "exact asset hashes", "exact approvals", "LETTERING lifecycle stage"],
+  "fixture_boundary": "Explicit fixture mode is publication-ineligible and cannot transition production state.",
+  "semantic_boundary": "Crop safety, action, iconography, cultural authenticity, character continuity, composition and illustration artifacts require actual-pixel independent review.",
+  "print_ready": false
+}

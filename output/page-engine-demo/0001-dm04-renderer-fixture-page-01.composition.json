@@ -1,0 +1,363 @@
+{
+  "approvals": {
+    "manuscript": {
+      "status": "FIXTURE_ONLY"
+    },
+    "series_standard": {
+      "status": "FIXTURE_ONLY"
+    },
+    "storyboard": {
+      "status": "FIXTURE_ONLY"
+    }
+  },
+  "book_id": "DM04-RENDERER-FIXTURE",
+  "book_version": "PR8-TECHNICAL-DEMO",
+  "canvas": {
+    "aspect_ratio": "3:4",
+    "height": 1448,
+    "width": 1086
+  },
+  "chapter_masthead": "PR8 TECHNICAL FIXTURE",
+  "composition_hash": "02440c8c7a804e9daae42b5ece99d7682cce181f43ee85bd6d2efe77405e321d",
+  "engine_version": "0.8.0",
+  "fixture": true,
+  "fixture_mode": true,
+  "font_config_sha256": "ba6cd2c0c4d716aa550059148339642da7fb2f1af1bfaad2e5d6ab838fb1e0aa",
+  "layout_type": "TWO_PANEL_SEQUENTIAL",
+  "lettering": [
+    {
+      "badge_number": 1,
+      "box": {
+        "height": 0.11,
+        "width": 0.42,
+        "x": 0.07,
+        "y": 0.13
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 26
+      },
+      "lettering_id": "fixture-p01-n01",
+      "panel_id": "fixture-p01-panel-01",
+      "reading_order": 1,
+      "source_script_hash": "e1d5635d690e4b3b79a50b72404df3db71157f5165e1864c560a823bdb0331f9",
+      "speaker_id": "narrator",
+      "text": "A compact narration plaque establishes the technical scene without repeating the dialogue."
+    },
+    {
+      "box": {
+        "height": 0.13,
+        "width": 0.34,
+        "x": 0.54,
+        "y": 0.25
+      },
+      "channel": "DIALOGUE",
+      "font": {
+        "minimum_size": 22,
+        "size": 28
+      },
+      "lettering_id": "fixture-p01-d01",
+      "panel_id": "fixture-p01-panel-01",
+      "reading_order": 2,
+      "source_script_hash": "7fdbffab038984281d839c30124c8078b66586aee59a5b89bd2257885b9d120f",
+      "speaker_id": "fixture-speaker-b",
+      "text": "Does every word remain editable after the art is placed?"
+    },
+    {
+      "box": {
+        "height": 0.15,
+        "width": 0.38,
+        "x": 0.08,
+        "y": 0.58
+      },
+      "channel": "DIALOGUE",
+      "font": {
+        "minimum_size": 22,
+        "size": 27
+      },
+      "lettering_id": "fixture-p01-d02",
+      "panel_id": "fixture-p01-panel-02",
+      "reading_order": 3,
+      "source_script_hash": "995c21fbd050144566376fbef1864364bd82d5495ecda5d806090df63547e220",
+      "speaker_id": "fixture-speaker-a",
+      "text": "Yes. The script, geometry, font and tail anchor remain separate records."
+    },
+    {
+      "box": {
+        "height": 0.14,
+        "width": 0.34,
+        "x": 0.55,
+        "y": 0.58
+      },
+      "channel": "DIALOGUE",
+      "font": {
+        "minimum_size": 22,
+        "size": 27
+      },
+      "lettering_id": "fixture-p01-d03",
+      "panel_id": "fixture-p01-panel-02",
+      "reading_order": 4,
+      "source_script_hash": "471c3ebd9b3b921e42794410bda6a0a69d48dafabc50ea70a532607229821cf2",
+      "speaker_id": "fixture-speaker-b",
+      "text": "Then a layout repair does not regenerate the illustration."
+    }
+  ],
+  "manuscript_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+  "non_production_label": "KHATAKSHETRA BOOK FACTORY — NON-PRODUCTION RENDERER TEST",
+  "page_id": "dm04-renderer-fixture-page-01",
+  "page_number": 1,
+  "page_title": "DIALOGUE-HEAVY PAGE TEST",
+  "panels": [
+    {
+      "asset": {
+        "approval": {
+          "status": "NOT_APPLICABLE_FIXTURE",
+          "subject_hash": "96999b0d0d82bf00e2089c64718a5814fdd00b5c5ae82a6afed9ee7b517f718d"
+        },
+        "path": "book-factory/fixtures/page-engine/assets/dialogue-geometry.png",
+        "sha256": "96999b0d0d82bf00e2089c64718a5814fdd00b5c5ae82a6afed9ee7b517f718d",
+        "usage": "SYNTHETIC_TEST_ONLY"
+      },
+      "crop": {
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "mode": "COVER",
+        "protected_subjects": [
+          [
+            "fixture-speaker-a",
+            0.28,
+            0.38
+          ],
+          [
+            "fixture-speaker-b",
+            0.72,
+            0.42
+          ]
+        ]
+      },
+      "panel_id": "fixture-p01-panel-01",
+      "reading_order": 1,
+      "speaker_anchors": [
+        {
+          "speaker_id": "fixture-speaker-a",
+          "x": 0.28,
+          "y": 0.38
+        },
+        {
+          "speaker_id": "fixture-speaker-b",
+          "x": 0.72,
+          "y": 0.42
+        }
+      ]
+    },
+    {
+      "asset": {
+        "approval": {
+          "status": "NOT_APPLICABLE_FIXTURE",
+          "subject_hash": "96999b0d0d82bf00e2089c64718a5814fdd00b5c5ae82a6afed9ee7b517f718d"
+        },
+        "path": "book-factory/fixtures/page-engine/assets/dialogue-geometry.png",
+        "sha256": "96999b0d0d82bf00e2089c64718a5814fdd00b5c5ae82a6afed9ee7b517f718d",
+        "usage": "SYNTHETIC_TEST_ONLY"
+      },
+      "crop": {
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "mode": "COVER",
+        "protected_subjects": [
+          [
+            "fixture-speaker-a",
+            0.28,
+            0.76
+          ],
+          [
+            "fixture-speaker-b",
+            0.72,
+            0.8
+          ]
+        ]
+      },
+      "panel_id": "fixture-p01-panel-02",
+      "reading_order": 2,
+      "speaker_anchors": [
+        {
+          "speaker_id": "fixture-speaker-a",
+          "x": 0.28,
+          "y": 0.76
+        },
+        {
+          "speaker_id": "fixture-speaker-b",
+          "x": 0.72,
+          "y": 0.8
+        }
+      ]
+    }
+  ],
+  "publication_eligible": false,
+  "reading_order": 1,
+  "renderer_source_sha256": "d4bac587d35d277ed850c07003b17629ffcbb2bec312b812587d7be739e93096",
+  "required_lettering_ids": [
+    "fixture-p01-n01",
+    "fixture-p01-d01",
+    "fixture-p01-d02",
+    "fixture-p01-d03"
+  ],
+  "resolved_font": {
+    "bold": "/System/Library/Fonts/Supplemental/STIXGeneralBol.otf",
+    "bold_sha256": "7e4dfb4979e9bb79a0bdedc56f055eab615fb9a3dff8788a52992ae65e8f572d",
+    "classification": "serif",
+    "family": "STIXGeneral",
+    "font_binary_bundled_in_repository": false,
+    "legal_installation": "Install the STIX Fonts project from its official distribution, then update paths if the operating system stores it elsewhere. Confirm the specific distribution's license before publication.",
+    "license_evidence": "The installed font metadata identifies the STIX license, derived from the SIL Open Font License. The renderer records hashes but does not copy these system files into the repository.",
+    "license_status": "SYSTEM_FONT_LICENSE_REVIEWED_NOT_REDISTRIBUTED",
+    "regular": "/System/Library/Fonts/Supplemental/STIXGeneral.otf",
+    "regular_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7"
+  },
+  "resolved_lettering": [
+    {
+      "box": [
+        76,
+        188,
+        532,
+        348
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "fixture-p01-n01",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "rendered_font_size": 26,
+      "requested_font_size": 26,
+      "source_script_hash": "e1d5635d690e4b3b79a50b72404df3db71157f5165e1864c560a823bdb0331f9",
+      "text_sha256": "7cd5a789ca798a87007d406775ae407863ac8255674a8840448ec711dc86d3f4"
+    },
+    {
+      "box": [
+        586,
+        362,
+        956,
+        550
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "fixture-p01-d01",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "rendered_font_size": 28,
+      "requested_font_size": 28,
+      "source_script_hash": "7fdbffab038984281d839c30124c8078b66586aee59a5b89bd2257885b9d120f",
+      "text_sha256": "5363b14b0050e17249305615af3349a230c26d60829699c86aa57fcbb272e6d3"
+    },
+    {
+      "box": [
+        87,
+        840,
+        500,
+        1057
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "fixture-p01-d02",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "rendered_font_size": 27,
+      "requested_font_size": 27,
+      "source_script_hash": "995c21fbd050144566376fbef1864364bd82d5495ecda5d806090df63547e220",
+      "text_sha256": "af600ed18ff6a7c31ec3f73cc30cfd1358d98a19e41ffd6e6c2bb4b209e992ea"
+    },
+    {
+      "box": [
+        597,
+        840,
+        967,
+        1043
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "fixture-p01-d03",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "rendered_font_size": 27,
+      "requested_font_size": 27,
+      "source_script_hash": "471c3ebd9b3b921e42794410bda6a0a69d48dafabc50ea70a532607229821cf2",
+      "text_sha256": "cf7d5caef87b2e5287613f6589d2b29f2fc036f19ab62a8fc364c77a85da77f3"
+    }
+  ],
+  "resolved_panels": [
+    {
+      "asset_path": "book-factory/fixtures/page-engine/assets/dialogue-geometry.png",
+      "asset_sha256": "96999b0d0d82bf00e2089c64718a5814fdd00b5c5ae82a6afed9ee7b517f718d",
+      "box": [
+        49,
+        152,
+        1037,
+        733
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "panel_id": "fixture-p01-panel-01",
+      "scale_mode": "ASPECT_PRESERVING_COVER",
+      "semantic_crop_review": "NOT_APPLICABLE_SYNTHETIC_FIXTURE",
+      "source_crop": [
+        0,
+        407,
+        1086,
+        1041
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "asset_path": "book-factory/fixtures/page-engine/assets/dialogue-geometry.png",
+      "asset_sha256": "96999b0d0d82bf00e2089c64718a5814fdd00b5c5ae82a6afed9ee7b517f718d",
+      "box": [
+        49,
+        759,
+        1037,
+        1339
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "panel_id": "fixture-p01-panel-02",
+      "scale_mode": "ASPECT_PRESERVING_COVER",
+      "semantic_crop_review": "NOT_APPLICABLE_SYNTHETIC_FIXTURE",
+      "source_crop": [
+        0,
+        408,
+        1086,
+        1040
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ]
+    }
+  ],
+  "schema_version": "1.0",
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "storyboard_hash": "25cc8bed5368e78c36a3bec43ad03efb7fe2ddc4dd41124ca9ce02bcdcc18185",
+  "typography": {
+    "body_size": 28,
+    "family": null,
+    "title_size": 34
+  }
+}

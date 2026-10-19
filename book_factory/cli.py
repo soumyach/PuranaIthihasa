@@ -9,7 +9,7 @@ from .errors import FactoryError
 
 
 def build_parser():
-    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory Foundation PR7")
+    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory Foundation PR8")
     parser.add_argument("--root", default=".", help="repository root (default: current directory)")
     parser.add_argument("--catalogue", help="explicit catalogue path (intended for offline fixtures and validation)")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -87,6 +87,30 @@ def build_parser():
     contact_sheet.add_argument("--book-id", required=True)
     style_approval = subparsers.add_parser("prepare-style-approval", help="freeze the proof package for human style approval")
     style_approval.add_argument("--book-id", required=True)
+    compose_page = subparsers.add_parser("compose-page", help="render one approved page composition")
+    compose_page.add_argument("--spec", required=True)
+    compose_page.add_argument("--output-dir", required=True)
+    compose_page.add_argument("--fixture-mode", action="store_true")
+    validate_page = subparsers.add_parser("validate-page", help="validate an editable or rendered page composition")
+    validate_page.add_argument("--source", required=True)
+    validate_page.add_argument("--fixture-mode", action="store_true")
+    compose_book = subparsers.add_parser("compose-book", help="compose an explicitly ordered set of pages")
+    compose_book.add_argument("--manifest", required=True)
+    compose_book.add_argument("--output-dir", required=True)
+    compose_book.add_argument("--fixture-mode", action="store_true")
+    export_pdf = subparsers.add_parser("export-pdf", help="export one native page raster per PDF page")
+    export_pdf.add_argument("--manifest", required=True)
+    export_pdf.add_argument("--output", required=True)
+    export_pdf.add_argument("--fixture-mode", action="store_true")
+    inspect_pdf = subparsers.add_parser("inspect-pdf", help="inspect page count, order, dimensions and embedded pixels")
+    inspect_pdf.add_argument("--pdf", required=True)
+    inspect_pdf.add_argument("--manifest")
+    inspect_pdf.add_argument("--fixture-mode", action="store_true")
+    resume_layout = subparsers.add_parser("resume-layout", help="resume from the latest immutable composition without re-rendering")
+    resume_layout.add_argument("--book-id", required=True)
+    resume_layout.add_argument("--composition")
+    resume_layout.add_argument("--page-id")
+    resume_layout.add_argument("--fixture-mode", action="store_true")
     subparsers.add_parser("next", help="alias for a dry-run next-book selection")
     return parser
 
@@ -155,6 +179,18 @@ def run(args):
         return director.build_proof_contact_sheet(args.book_id)
     if args.command == "prepare-style-approval":
         return director.prepare_style_approval(args.book_id)
+    if args.command == "compose-page":
+        return director.compose_page(args.spec, args.output_dir, args.fixture_mode)
+    if args.command == "validate-page":
+        return director.validate_page(args.source, args.fixture_mode)
+    if args.command == "compose-book":
+        return director.compose_book(args.manifest, args.output_dir, args.fixture_mode)
+    if args.command == "export-pdf":
+        return director.export_pdf(args.manifest, args.output, args.fixture_mode)
+    if args.command == "inspect-pdf":
+        return director.inspect_pdf(args.pdf, args.manifest, args.fixture_mode)
+    if args.command == "resume-layout":
+        return director.resume_layout(args.book_id, args.composition, args.page_id, args.fixture_mode)
     if args.command == "next":
         return director.produce_next(True)
     raise AssertionError("unreachable")

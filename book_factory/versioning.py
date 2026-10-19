@@ -130,3 +130,30 @@ class StyleApprovalRequestVersionStore(ImmutableVersionStore):
 class ProofRecoveryRequestVersionStore(ImmutableVersionStore):
     def __init__(self, books_root):
         super().__init__(books_root, "proof-recovery-requests")
+
+
+class PageCompositionVersionStore:
+    """Immutable, parent-linked editable versions scoped to one stable page ID."""
+
+    def __init__(self, books_root):
+        self.books_root = Path(books_root)
+
+    def _store(self, page_id):
+        if not page_id or "/" in page_id or "\\" in page_id or page_id in {".", ".."}:
+            raise ContractError("page composition store requires a safe stable page ID")
+        return ImmutableVersionStore(self.books_root, "page-compositions/%s" % page_id)
+
+    def versions(self, book_id, page_id):
+        return self._store(page_id).versions(book_id)
+
+    def put(self, book_id, page_id, payload, parent_hash=None):
+        if payload.get("page_id") != page_id:
+            raise ContractError("page composition payload does not match its page store")
+        return self._store(page_id).put(book_id, payload, parent_hash)
+
+
+class PdfArtifactVersionStore(ImmutableVersionStore):
+    """Immutable PDF manifests and inspection records (never the source pages)."""
+
+    def __init__(self, books_root):
+        super().__init__(books_root, "pdf-artifacts")
