@@ -1,0 +1,66 @@
+{
+  "actual_execution": {
+    "composed_pages_created": 0,
+    "independent_pixel_reviews_completed": 0,
+    "paid_calls": 0,
+    "pdfs_created": 0,
+    "real_illustrations_generated": 0,
+    "real_input_assets_validated": true,
+    "repository_image_operations": 0,
+    "total_cost_minor_units": 0
+  },
+  "book_id": "DM04",
+  "campaign_id": "dm04-pr10-real-production-slice-01",
+  "current_boundary": {
+    "approval_request_record_hash": "a71faccbc68256f6ebf202648fcbeabacfa31892de0ae0f4ac595d07f085f535",
+    "authorization_subject_hash": "5a5b7c2a606f47a9b72ef001f19ef9c8736f4b328d2434dae08c5d0b08c061d7",
+    "code": "PR10_CAMPAIGN_AUTHORIZATION_REQUIRED",
+    "existing_clearance": "PRIVATE_DRAFT_PERMITTED_PUBLICATION_BLOCKED",
+    "private_illustration_testing": "NOT_AUTHORIZED_BY_EXISTING_CLEARANCE",
+    "status": "AWAITING_CAMPAIGN_AUTHORIZATION"
+  },
+  "execution_classes": {
+    "active_codex_host_after_authorization": [
+      "one reference-conditioned edit for page-27d143ae995bf60742b65c5b",
+      "one reference-conditioned generation for page-5316f7271234e4ab31991528"
+    ],
+    "automatic_repository_code": [
+      "real input and file-hash validation",
+      "two-page storyboard selection",
+      "exact event, lettering and character binding",
+      "permission and publication-boundary evaluation",
+      "A/B/C/D reference resolution",
+      "zero-spend and per-page operation-ceiling validation",
+      "campaign request persistence",
+      "queue, locking, recovery and artifact-gate evaluation"
+    ],
+    "human_authority": [
+      "exact PR10 private internal visual-testing campaign authorization",
+      "exact-asset style approval after independent actual-pixel PASS"
+    ],
+    "independent_specialist_after_images": [
+      "source-illustration actual-pixel review",
+      "composed-page actual-reading-size review"
+    ],
+    "unavailable_inside_repository": [
+      "programmatic invocation of the session-only image host tool",
+      "programmatic spawning or authentication of an independent Codex visual specialist",
+      "publication"
+    ]
+  },
+  "fully_autonomous": false,
+  "manual_interventions": {
+    "completed_during_pr10": 0,
+    "currently_required_to_continue": 1,
+    "minimum_human_decisions_to_reach_an_internal_two_page_proof": 2
+  },
+  "minimum_changes_for_unattended_production": [
+    "a durable authorized campaign token scoped to exact pages, hashes, backend and zero-spend policy",
+    "a repository-callable reference-conditioned image adapter with durable provider receipts",
+    "an authenticated independent image-review capability that can inspect exact pixels at reading size",
+    "approved reusable character and setting reference images",
+    "a scoped human style-approval policy or preapproved inheritance path",
+    "resolved publication rights, source/theological review, font and print-profile blockers"
+  ],
+  "schema_version": "1.0"
+}

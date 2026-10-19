@@ -9,10 +9,11 @@
     "COLLECTION_STYLE",
     "CHARACTER_FAMILY",
     "BOOK_THEOLOGICAL_EXCEPTION",
-    "MANUSCRIPT_SOURCE_DISPUTE"
+    "MANUSCRIPT_SOURCE_DISPUTE",
+    "PRODUCTION_CAMPAIGN"
   ],
   "inheritance_boundaries": ["source_scope", "tradition_id", "edition_id", "evidence_hash", "expiry"],
-  "non_inheritable_subjects": ["SOURCE_READINESS", "MANUSCRIPT", "PAGE_COMPOSITION", "THEOLOGICAL_RESOLUTION"],
+  "non_inheritable_subjects": ["SOURCE_READINESS", "MANUSCRIPT", "PAGE_COMPOSITION", "THEOLOGICAL_RESOLUTION", "PRODUCTION_CAMPAIGN"],
   "routine_page_repair_requires_approval": false,
   "schema_version": "1.0",
   "self_approval_allowed": false

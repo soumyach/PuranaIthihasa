@@ -1,0 +1,19 @@
+{
+  "expected_route": {
+    "invalidate_scope": "PAGE_LOCAL",
+    "preserve_other_pages": true,
+    "repair_type": "LETTERING_REPAIR",
+    "reset_retry_counter": false,
+    "restart_stage": "LETTERING"
+  },
+  "finding": {
+    "code": "TEXT_OVERFLOW",
+    "page_id": "fixture-pr10-page-dialogue",
+    "panel_id": "fixture-panel-02"
+  },
+  "fixture": true,
+  "label": "ISOLATED PR10 RECOVERY ROUTING FIXTURE — NOT DM04 ART OR A PRODUCTION PAGE",
+  "publication_eligible": false,
+  "reason": "No genuine PR10 page-level failure could occur because generation stopped at the required authorization gate.",
+  "schema_version": "1.0"
+}

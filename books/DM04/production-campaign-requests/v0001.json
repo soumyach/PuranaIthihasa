@@ -1,0 +1,51 @@
+{
+  "book_id": "DM04",
+  "content_hash": "a71faccbc68256f6ebf202648fcbeabacfa31892de0ae0f4ac595d07f085f535",
+  "id": "production-campaign-requests-60beccb3f6055442bc9c4d6d",
+  "kind": "production-campaign-requests",
+  "parent_hash": null,
+  "payload": {
+    "approval_not_implied_by_this_request": true,
+    "approval_type": "PRODUCTION_CAMPAIGN",
+    "book_id": "DM04",
+    "campaign_id": "dm04-pr10-real-production-slice-01",
+    "conditions_required": [
+      "PRIVATE_INTERNAL_ONLY",
+      "PUBLICATION_REMAINS_BLOCKED",
+      "ZERO_ADDITIONAL_COST_ONLY",
+      "ONE_OPERATION_PER_SELECTED_PAGE",
+      "NO_RETRY_WITHOUT_NEW_APPROVAL",
+      "PR6_COUNTERS_REMAIN_EXHAUSTED",
+      "REFERENCE_INPUT_RECEIPT_REQUIRED",
+      "INDEPENDENT_ACTUAL_PIXEL_REVIEW_REQUIRED"
+    ],
+    "currency": "USD",
+    "instructions": "An authorized human must supply a separate exact-hash approval record. The Director will not infer consent from this milestone or from the two-operation ceiling.",
+    "maximum_paid_spend_minor_units": 0,
+    "plan_record_hash": "43f6761b1789e8763c11c4016a646e66c37e07cb408db23a3539bfcc889055e0",
+    "request_hash": "dd1895d4211bf7d0bd4171d67baaff0b64160ecfc1657ff0009878b281376225",
+    "request_type": "PRODUCTION_CAMPAIGN_AUTHORIZATION",
+    "requested_authority": "PRIVATE_INTERNAL_VISUAL_TESTING_ONLY",
+    "requested_operations": [
+      {
+        "maximum_operations": 1,
+        "operation": "edit",
+        "page_id": "page-27d143ae995bf60742b65c5b"
+      },
+      {
+        "maximum_operations": 1,
+        "operation": "generate",
+        "page_id": "page-5316f7271234e4ab31991528"
+      }
+    ],
+    "schema_version": "1.0",
+    "scope": {
+      "id": "DM04",
+      "type": "book"
+    },
+    "subject_hash": "5a5b7c2a606f47a9b72ef001f19ef9c8736f4b328d2434dae08c5d0b08c061d7",
+    "subject_type": "PRODUCTION_CAMPAIGN"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

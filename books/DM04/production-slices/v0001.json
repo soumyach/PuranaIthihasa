@@ -1,0 +1,813 @@
+{
+  "book_id": "DM04",
+  "content_hash": "43f6761b1789e8763c11c4016a646e66c37e07cb408db23a3539bfcc889055e0",
+  "id": "production-slices-d3df41dcd96e247ce95f96ff",
+  "kind": "production-slices",
+  "parent_hash": null,
+  "payload": {
+    "actual_execution": {
+      "actual_cost_minor_units": 0,
+      "composed_pages_created": 0,
+      "image_operations_executed": 0,
+      "independent_pixel_reviews_completed": 0,
+      "paid_calls": 0,
+      "pdfs_created": 0,
+      "real_illustrations_generated": 0,
+      "real_input_assets_validated": true
+    },
+    "artifact_gates": {
+      "composition": "BLOCKED_NO_NEW_INDEPENDENTLY_REVIEWED_IMAGES",
+      "generation": "BLOCKED_PENDING_SEPARATE_CAMPAIGN_AUTHORIZATION",
+      "human_style_approval": "NOT_REACHED",
+      "independent_visual_review": "NOT_EXECUTED_NO_NEW_PIXELS",
+      "pdf": "NOT_CREATED_ART_AND_REVIEW_GATES_BLOCKED"
+    },
+    "authorization": {
+      "approval_type": "PRODUCTION_CAMPAIGN",
+      "proposed_operation_ceiling_is_authorization": false,
+      "required": true,
+      "status": "NOT_GRANTED"
+    },
+    "authorization_subject": {
+      "book_id": "DM04",
+      "campaign_id": "dm04-pr10-real-production-slice-01",
+      "currency": "USD",
+      "locked_input_sha256": [
+        "0775af9ff8dacfdcbecece946b781e2187574883f148bb9a6327603f1ffdae3f",
+        "08c26eee5a9a2370ccfd673b54181266dd0df66a3960710c971838358e2ea6da",
+        "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070",
+        "3350c42d2463a2d27247ee7debbdbf62f0942af9d546da11399ca5e9c23db447",
+        "3a74a4fc9abd3767d52c57464abeea1a8871db7ffe8c4dd74cec06420e8e6259",
+        "5af228856ef0a6b4d32d1ac5d2cd476f1563040dfa4d25bb2e31155fcf55c3cd",
+        "6439498a4bc9b60090572301f0e78dca685079db1eb4acfc318bfefd4aa77f16",
+        "74e48879d389a64e12af8b3f97f6434018c3afc02c23f92cea65d7fe9b4e3dcb",
+        "7b825487144f63e1ec193085738449967a36990581bc8d462c4c1c647045d180",
+        "94033e951e0b5b716ecf240f486732f4312b1d1fb924746d0cbf4a63415bc296",
+        "ce2e49f47dc4c505774ecf3f719225668d3700600b1d088ae59ae9a3f3b44b8f",
+        "ee7c71abbec65f4a4a0e7aa38245ce715e7fc929cdd2f1190171820ec00b873e"
+      ],
+      "maximum_paid_spend_minor_units": 0,
+      "operation_ceiling_per_page": 1,
+      "operation_ceiling_total": 2,
+      "page_ids": [
+        "page-27d143ae995bf60742b65c5b",
+        "page-5316f7271234e4ab31991528"
+      ],
+      "page_script_sha256": [
+        "4509f47443c27b55dd6d8914def8119393fcc16f23b56a0c328c094c0a042cc0",
+        "f7322c12dd28c43c0c9172f2d06fde902a2916c7a082403cb3d365e707bab487"
+      ],
+      "pr6_counter_reset": false,
+      "publication_authorized": false,
+      "purpose": "PRIVATE_INTERNAL_TWO_PAGE_VISUAL_PRODUCTION_TEST",
+      "reference_package_hashes": [
+        "6f9456831a297d24eb86b22b3b7e34ee0db6d0ac7deab3c377ec3f16ebb73650",
+        "2caf9be6c6a1d09faeba196011693674169573cbebc7c8b8486b6fec8f6be5d2"
+      ]
+    },
+    "authorization_subject_hash": "5a5b7c2a606f47a9b72ef001f19ef9c8736f4b328d2434dae08c5d0b08c061d7",
+    "autonomy": {
+      "active_codex_host_after_authorization": [
+        "two bounded image operations"
+      ],
+      "external_or_unavailable": [
+        "repository-native image invocation",
+        "repository-native specialist spawning",
+        "publication"
+      ],
+      "fully_autonomous_claim": false,
+      "human_authority": [
+        "PR10 campaign authorization",
+        "exact-asset style approval after independent PASS"
+      ],
+      "independent_specialist_after_images": [
+        "actual-pixel source-image and composed-page review"
+      ],
+      "manual_interventions_completed_in_this_run": 0,
+      "manual_interventions_currently_required": 1,
+      "minimum_human_decisions_to_internal_proof": 2,
+      "one_director_invocation_completed": [
+        "real input and hash validation",
+        "two-page selection",
+        "permission evaluation",
+        "backend-interface inspection binding",
+        "reference-package resolution",
+        "campaign approval request preparation"
+      ]
+    },
+    "backend": {
+      "current_session_availability": "AVAILABLE_TO_ACTIVE_CODEX_HOST_ONLY",
+      "direct_monetary_cost": "NO_DIRECT_PRICE_EXPOSED_TO_REPOSITORY",
+      "host_tool": "image_gen.imagegen",
+      "model": "NOT_SURFACED_BY_HOST_TOOL",
+      "operations": [
+        "generate",
+        "edit",
+        "reference_conditioning"
+      ],
+      "provider_id": "codex-built-in-image-gen",
+      "record": {
+        "bytes": 669,
+        "path": "book-factory/config/pr10-session-image-capability.json",
+        "role": "CURRENT_SESSION_CAPABILITY_INSPECTION",
+        "sha256": "cbb91c1a848df7509c925c426cb43d4c77e402e355a14d92f08081769e8a099a"
+      },
+      "reference_conditioning": true,
+      "reference_input_interface": "referenced_image_paths",
+      "repository_programmatic_invocation": false
+    },
+    "book_id": "DM04",
+    "campaign_id": "dm04-pr10-real-production-slice-01",
+    "continuous_book_readiness": {
+      "blocked_candidate_skipping": "IMPLEMENTED",
+      "book_level_locking": "IMPLEMENTED_MAX_ONE_ACTIVE_BOOK",
+      "budget_limits": "IMPLEMENTED_ZERO_SPEND",
+      "character_reference_reuse": "SUPPORTED_BUT_NO_HUMAN_APPROVED_DM04_CHARACTER_IMAGE",
+      "interruption_recovery": "IMPLEMENTED_STABLE_JOBS_AND_IMPORT_BOUNDARY",
+      "next_book_started": false,
+      "per_book_quality_gates": "IMPLEMENTED_FAIL_CLOSED",
+      "persistent_results": "IMPLEMENTED_CONTENT_ADDRESSED_AND_IMMUTABLE",
+      "queue_continuation": "IMPLEMENTED_PR9_BUT_NO_AUTHORITATIVE_PRODUCTION_READY_NEXT_BOOK",
+      "style_approval_reuse": "SCOPED_HASH_BOUND_ONLY_NO_REAL_REUSABLE_APPROVAL_PRESENT"
+    },
+    "cost_policy": {
+      "actual_spend_minor_units": 0,
+      "currency": "USD",
+      "maximum_paid_spend_minor_units": 0,
+      "no_cost_capability_still_requires_campaign_authorization": true,
+      "paid_calls_enabled": false
+    },
+    "locked_inputs": [
+      {
+        "bytes": 9596,
+        "logical_hash": "d43a5f725e4ea595f49a55411eb88af1c65c3d0ca6bf397fdef0d6b7c54f7c7c",
+        "path": "books/DM04/source-clearance/d43a5f725e4ea595f49a55411eb88af1c65c3d0ca6bf397fdef0d6b7c54f7c7c.json",
+        "role": "PRIVATE_DRAFT_CLEARANCE",
+        "sha256": "ce2e49f47dc4c505774ecf3f719225668d3700600b1d088ae59ae9a3f3b44b8f"
+      },
+      {
+        "bytes": 347410,
+        "logical_hash": "75a6d7223209feb8850b482d9e0876cd323991652b436ac139470cadc95041d3",
+        "path": "books/DM04/source-readiness/75a6d7223209feb8850b482d9e0876cd323991652b436ac139470cadc95041d3.json",
+        "role": "SOURCE_DOSSIER",
+        "sha256": "3350c42d2463a2d27247ee7debbdbf62f0942af9d546da11399ca5e9c23db447"
+      },
+      {
+        "bytes": 295965,
+        "logical_hash": "b784b365d9c921312285f453b4f6a4a15a7be935e2f0fdda6cfa8eba12797744",
+        "path": "books/DM04/story-packets/b784b365d9c921312285f453b4f6a4a15a7be935e2f0fdda6cfa8eba12797744.json",
+        "role": "STORY_PACKET",
+        "sha256": "6439498a4bc9b60090572301f0e78dca685079db1eb4acfc318bfefd4aa77f16"
+      },
+      {
+        "bytes": 54359,
+        "logical_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+        "path": "books/DM04/manuscripts/v0005.json",
+        "role": "MANUSCRIPT_V5",
+        "sha256": "94033e951e0b5b716ecf240f486732f4312b1d1fb924746d0cbf4a63415bc296"
+      },
+      {
+        "bytes": 244298,
+        "logical_hash": "25cc8bed5368e78c36a3bec43ad03efb7fe2ddc4dd41124ca9ce02bcdcc18185",
+        "path": "books/DM04/storyboards/v0003.json",
+        "role": "STORYBOARD_V3",
+        "sha256": "08c26eee5a9a2370ccfd673b54181266dd0df66a3960710c971838358e2ea6da"
+      },
+      {
+        "bytes": 115015,
+        "logical_hash": "a0f22e1c57a8ba8bb4ed39b4840dd85f13aef5e3caec0806986e59bba8410914",
+        "path": "books/DM04/character-bibles/v0004.json",
+        "role": "CHARACTER_BIBLE",
+        "sha256": "74e48879d389a64e12af8b3f97f6434018c3afc02c23f92cea65d7fe9b4e3dcb"
+      },
+      {
+        "bytes": 18176,
+        "logical_hash": "85d6ef6982daf75cf18c9ebc34c8857715f23db060ae94a726e8a1fcab709189",
+        "path": "books/DM04/location-bibles/v0002.json",
+        "role": "LOCATION_BIBLE",
+        "sha256": "7b825487144f63e1ec193085738449967a36990581bc8d462c4c1c647045d180"
+      },
+      {
+        "bytes": 3783,
+        "logical_hash": "605f269acb50053132a7a313374456ad707c48c2c4dde0b31c075cabfae7b835",
+        "path": "books/DM04/typography/v0003.json",
+        "role": "TYPOGRAPHY",
+        "sha256": "ee7c71abbec65f4a4a0e7aa38245ce715e7fc929cdd2f1190171820ec00b873e"
+      },
+      {
+        "bytes": 22447,
+        "path": "MYTHOLOGY_COMIC_RULES.md",
+        "role": "SERIES_RULES",
+        "sha256": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070"
+      },
+      {
+        "bytes": 20996,
+        "path": "book-factory/references/visual-gold-standard/manifest.json",
+        "role": "VISUAL_GOLD_STANDARD",
+        "sha256": "0775af9ff8dacfdcbecece946b781e2187574883f148bb9a6327603f1ffdae3f"
+      },
+      {
+        "bytes": 28021,
+        "path": "books/DM04/proof-recovery-requests/v0001.json",
+        "role": "PR7_RECOVERY_HISTORY",
+        "sha256": "3a74a4fc9abd3767d52c57464abeea1a8871db7ffe8c4dd74cec06420e8e6259"
+      },
+      {
+        "bytes": 3094,
+        "logical_hash": "b9002f60e9585ae681eb66077ce7892ba7a0add92956f124db3bd6764d855d95",
+        "path": "books/DM04/production-status.json",
+        "role": "PR6_PRODUCTION_STATUS",
+        "sha256": "5af228856ef0a6b4d32d1ac5d2cd476f1563040dfa4d25bb2e31155fcf55c3cd"
+      }
+    ],
+    "milestone": "PR10",
+    "permission_state": {
+      "evidence": {
+        "clearance_hash": "d43a5f725e4ea595f49a55411eb88af1c65c3d0ca6bf397fdef0d6b7c54f7c7c",
+        "limitations": [
+          "This is operational evidence review, not legal advice.",
+          "Permission is limited to a private original editorial draft.",
+          "Publication, illustration, PDF generation and distribution remain blocked.",
+          "The source graph remains read-only and its readiness status is not overridden."
+        ]
+      },
+      "private_illustration_testing": "NOT_AUTHORIZED_BY_EXISTING_CLEARANCE",
+      "private_manuscript_draft": "PERMITTED_WITH_LIMITATIONS",
+      "publication": "BLOCKED",
+      "source_readiness": "BLOCKED",
+      "theological_or_full_arc_publication_review": {
+        "independent_full_arc_completeness": "UNDETERMINED",
+        "reason": "Correction closure adds no whole-arc source reread or blanket independent approval.",
+        "story_spine_id": "dm-story-mahisha",
+        "track": "dm"
+      },
+      "unresolved_source_flags_preserved": [
+        {
+          "code": "CHAPTER_EXTRACTION_INCOMPLETE",
+          "spine_id": "dm-story-mahisha",
+          "status": "NARRATIVE_COMPLETE_ATOMIC_PARTIAL"
+        },
+        {
+          "code": "INDEPENDENT_FULL_ARC_REVIEW_UNDETERMINED",
+          "reason": "Correction closure adds no whole-arc source reread or blanket independent approval.",
+          "spine_id": "dm-story-mahisha",
+          "status": "UNDETERMINED"
+        }
+      ]
+    },
+    "pr6_history": {
+      "attempts_allowed_per_proof": 2,
+      "attempts_allowed_total": 8,
+      "attempts_used_per_proof": 2,
+      "attempts_used_total": 8,
+      "counter_reset": false,
+      "ledger_path": "books/DM04/illustration-proofs/generation-ledger.jsonl",
+      "retry_ceiling_exhausted": true
+    },
+    "production_scope": "PRIVATE_INTERNAL_ONLY",
+    "publication_eligible": false,
+    "purpose": "REAL_TWO_PAGE_PRODUCTION_INTEGRATION_SLICE",
+    "recovery_demonstration": {
+      "fixture_path": "book-factory/fixtures/real-production-integration/page-local-recovery.json",
+      "mode": "ISOLATED_FIXTURE_BECAUSE_NO_REAL_PR10_PAGE_FAILURE_COULD_OCCUR_BEFORE_AUTHORIZATION",
+      "production_assets_modified": false
+    },
+    "schema_version": "1.0",
+    "selected_pages": [
+      {
+        "base_image": {
+          "path": "books/DM04/illustration-proofs/images/dm04-proof-quiet-conversation/attempt-02-578e0fcdb4dcf016.png",
+          "sha256": "578e0fcdb4dcf016b7b85a50736e498859528560f569885ddf0f8060003f32fc",
+          "status": "REJECTED_PR6_EDIT_SOURCE_ONLY_NOT_PAGE_ASSET"
+        },
+        "character_ids": [
+          "dm-medhas",
+          "dm-suratha",
+          "dm-samadhi"
+        ],
+        "continuity_requirements": [
+          {
+            "character_id": "dm-medhas",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-suratha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-samadhi",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "cultural_authenticity_constraints": [
+          "Indian sage and listener garments without invented rank insignia",
+          "no imported fantasy armor or weapon",
+          "no modern object",
+          "forest-hermitage proposals remain source-silent"
+        ],
+        "delivery_mode": "TWO_PANEL_CLEAN_ART_SHEET_WITH_SEPARATELY_REVIEWABLE_PANEL_REGIONS",
+        "event_ids": [
+          "dm-event-008"
+        ],
+        "layout": {
+          "rhythm": "measured progression",
+          "type": "TWO_PANEL"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p01-narration",
+            "placement": "caption-safe-region",
+            "text": "Night settles around the hermitage fire. Suratha and Samādhi turn toward Medhas as he begins."
+          },
+          {
+            "channel": "DIALOGUE",
+            "id": "p01-dialogue",
+            "placement": "speaker-anchored-balloon",
+            "speaker_id": "dm-medhas",
+            "text": "What remains of a kingdom when every gate still stands, every throne is occupied—and yet none of its rightful guardians can return?"
+          }
+        ],
+        "lettering_hash": "92e0ae2d99ae66868eb0482aabd25f4e479b4e9136badbb0ef3f37ccd266a892",
+        "location_id": "forest-hermitage",
+        "operation": "edit",
+        "operation_ceiling": 1,
+        "page_id": "page-27d143ae995bf60742b65c5b",
+        "page_number": 1,
+        "page_script": {
+          "bytes": 5740,
+          "path": "books/DM04/page-scripts/page-0001.v0003.json",
+          "role": "LOCKED_PAGE_SCRIPT",
+          "sha256": "4509f47443c27b55dd6d8914def8119393fcc16f23b56a0c328c094c0a042cc0"
+        },
+        "panel_count": 2,
+        "panel_ids": [
+          "p01-panel-01",
+          "p01-panel-02"
+        ],
+        "parent_pr6": {
+          "attempts_used": 2,
+          "image_hash": "578e0fcdb4dcf016b7b85a50736e498859528560f569885ddf0f8060003f32fc",
+          "request_hash": "7da8964edd9880663e4847cca045736273f3eed543a10b4c7a588ba3006c576b",
+          "review_hash": "b561d06259a14dad40b40844dc2013ddb65e4d946cd7a4d8905859e8ae1f804e"
+        },
+        "pr6_attempts_preserved": 2,
+        "principal_action": "Medhas raises one open hand as he asks the locked question; Suratha and Samādhi turn toward him and listen.",
+        "prohibited_transfers": [
+          "Vishnu",
+          "Narada",
+          "Sugriva",
+          "DM08 Goddess",
+          "lion",
+          "Himalayan palace",
+          "benchmark dialogue",
+          "benchmark plot"
+        ],
+        "prompt": "PANEL_ILLUSTRATION for DM04 p01-panel-02. Preserve the current attempt-2 hermitage, three identities and quiet dusk/firelight, but recompose closer: Medhas raises one open hand while asking his question; Suratha and Samādhi turn and listen. Keep all figures unarmed. Use reference A only for Khatakshetra finish, B only for speaker/listener rhythm, and D only for forest depth. Clean art, no text. Reserve the exact dialogue geometry and Medhas tail anchor. Do not copy any benchmark person, deity, lion, palace, dialogue or plot.",
+        "reference_package_hash": "6f9456831a297d24eb86b22b3b7e34ee0db6d0ac7deab3c377ec3f16ebb73650",
+        "references": [
+          {
+            "available": true,
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+            "reference_id": "kgs-satya-p01",
+            "role": "REFERENCE_A_SERIES_VISUAL_IDENTITY",
+            "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+            "use": "navy/gold/cream hierarchy and painterly dignity only"
+          },
+          {
+            "available": true,
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+            "reference_id": "kgs-dm08-p09",
+            "role": "REFERENCE_B_PAGE_COMPOSITION",
+            "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d",
+            "use": "speaker/listener staging, gaze direction and reaction scale only"
+          },
+          {
+            "available": false,
+            "content_transfer": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+            "path": null,
+            "reference_id": null,
+            "role": "REFERENCE_C_CHARACTER_IDENTITY",
+            "sha256": null,
+            "use": "locked text registry only"
+          },
+          {
+            "available": true,
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p02.png",
+            "reference_id": "kgs-satya-p02",
+            "role": "REFERENCE_D_SETTING_ENVIRONMENT",
+            "sha256": "a0fa07b60d1b8b128b541300f3fb5e26358863e3153c719e2d0aacb0fd7858dd",
+            "use": "forest assembly depth and warm conversational environment only"
+          }
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p01-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "selection_role": "DIALOGUE_SEQUENTIAL",
+        "source_claim_ids": [
+          "claim-008-a",
+          "claim-008-b"
+        ],
+        "source_iconography_constraints": [
+          "Suratha and Samādhi carry no weapon",
+          "no boon, deity or doctrine is introduced",
+          "only the three frame characters appear"
+        ],
+        "title": "A Question Beneath the Trees"
+      },
+      {
+        "base_image": null,
+        "character_ids": [
+          "dm-devi",
+          "dm-gods",
+          "dm-shiva",
+          "dm-yama",
+          "dm-vishnu",
+          "dm-soma",
+          "dm-indra",
+          "dm-varuna",
+          "dm-earth",
+          "dm-brahma",
+          "dm-surya",
+          "dm-vasus",
+          "dm-kubera",
+          "dm-prajapati",
+          "dm-agni",
+          "dm-twilights",
+          "dm-vayu"
+        ],
+        "continuity_requirements": [
+          {
+            "character_id": "dm-devi",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-gods",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-shiva",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-yama",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-soma",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-indra",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-varuna",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-earth",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-brahma",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-surya",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-vasus",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-kubera",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-prajapati",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-agni",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-twilights",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-vayu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "cultural_authenticity_constraints": [
+          "Indian devotional visual language",
+          "donor identities and garments must not become invented universal canon",
+          "no foreign armor or architecture",
+          "source-silent details explicitly remain proposals"
+        ],
+        "delivery_mode": "FULL_PAGE_CLEAN_ART",
+        "event_ids": [
+          "dm-event-009"
+        ],
+        "layout": {
+          "rhythm": "immersive hold",
+          "type": "FULL_PAGE"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p04-narration",
+            "placement": "caption-safe-region",
+            "text": "Śiva's radiance forms her face; Yama's her hair; Viṣṇu's her arms; the Moon's her breast; Indra's her waist; Varuṇa's her thighs and legs; Earth's her hips; Brahmā's her feet; sunlight her toes; the Vasus her fingers; Kubera her nose; Prajāpati her teeth; Agni her eyes; the twilights her brows; Vāyu her ears."
+          }
+        ],
+        "lettering_hash": "54f2c1b525456c1d0c573601ec8aa178e17f815fcf0488e0ab74ae8d5d82df2e",
+        "location_id": "manifestation-space",
+        "operation": "generate",
+        "operation_ceiling": 1,
+        "page_id": "page-5316f7271234e4ab31991528",
+        "page_number": 4,
+        "page_script": {
+          "bytes": 8716,
+          "path": "books/DM04/page-scripts/page-0004.v0003.json",
+          "role": "LOCKED_PAGE_SCRIPT",
+          "sha256": "f7322c12dd28c43c0c9172f2d06fde902a2916c7a082403cb3d365e707bab487"
+        },
+        "panel_count": 1,
+        "panel_ids": [
+          "p04-panel-01"
+        ],
+        "parent_pr6": {
+          "attempts_used": 2,
+          "image_hash": "21af6bf894e1abc6d63f6d797ccebebda569e65f372658ff4cc126164f3a7139",
+          "request_hash": "f7e211a59c41278462847ba60fc3553f70d36981ea162f88b75764c2e340c43b",
+          "review_hash": "7b40da0afef3e8aa65d6b84ae7f7a284960bf76a1fed212131f3e245c40c22d6"
+        },
+        "pr6_attempts_preserved": 2,
+        "principal_action": "Distinct radiances from the named divine donors converge into the corresponding regions of one fully revealed Devī form.",
+        "prohibited_transfers": [
+          "Vishnu cover pose",
+          "Kali or Chamunda",
+          "skull garland",
+          "Raktabija",
+          "seven Mothers",
+          "DM08 weapons",
+          "DM08 mounts",
+          "DM08 battle flags",
+          "benchmark theology or plot"
+        ],
+        "prompt": "FULL_PAGE_IMMERSIVE DM04 manifestation. One action only: the named gods' distinct radiances form the corresponding regions of one complete Devī body. Keep a coherent many-armed divine identity, all arm attachments anatomical, donors secondary and fully inside frame. Body formation only—no weapons, gifts, lion, mounts, chariot or halo disks. Reference A supplies series finish only; B supplies manifestation rhythm only. Clean art, no text; honor the p04 narration geometry. Never copy Kali, Chamunda, Raktabija, the Mothers, Vishnu's cover pose, or any benchmark story content.",
+        "reference_package_hash": "2caf9be6c6a1d09faeba196011693674169573cbebc7c8b8486b6fec8f6be5d2",
+        "references": [
+          {
+            "available": true,
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+            "reference_id": "kgs-satya-p01",
+            "role": "REFERENCE_A_SERIES_VISUAL_IDENTITY",
+            "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+            "use": "devotional central hierarchy and premium series finish only"
+          },
+          {
+            "available": true,
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+            "reference_id": "kgs-dm08-p12",
+            "role": "REFERENCE_B_PAGE_COMPOSITION",
+            "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4",
+            "use": "manifestation staging, scale change and directed energy only"
+          },
+          {
+            "available": false,
+            "content_transfer": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+            "path": null,
+            "reference_id": null,
+            "role": "REFERENCE_C_CHARACTER_IDENTITY",
+            "sha256": null,
+            "use": "locked dm-devi and dm-gods text registry only"
+          },
+          {
+            "available": false,
+            "content_transfer": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+            "path": null,
+            "reference_id": null,
+            "role": "REFERENCE_D_SETTING_ENVIRONMENT",
+            "sha256": null,
+            "use": "manifestation-space location bible only; no approved exact image"
+          }
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p04-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "selection_role": "DIVINE_MANIFESTATION_IMMERSIVE",
+        "source_claim_ids": [
+          "claim-009-a",
+          "claim-009-b",
+          "claim-manifestation-rhythm"
+        ],
+        "source_iconography_constraints": [
+          "body formation only",
+          "many-armed identity implied coherently",
+          "no weapons, gifts, lion, mounts, chariot or halo disks",
+          "radiance origins and body destinations remain distinguishable"
+        ],
+        "title": "One Form, Fully Revealed"
+      }
+    ],
+    "selection_evidence": {
+      "exact_existing_page_ids": [
+        "page-27d143ae995bf60742b65c5b",
+        "page-5316f7271234e4ab31991528"
+      ],
+      "replacement_scenes_invented": false,
+      "selection_count": 2,
+      "storyboard_page_count": 32
+    }
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

@@ -1,4 +1,18 @@
-# Khatakshetra Book Factory — Foundation PR9
+# Khatakshetra Book Factory — Foundation PR10
+
+PR10 binds the autonomous pipeline to a real, narrowly bounded DM04 production slice: page 1, the Medhas/Suratha/Samadhi dialogue scene, and page 4, the Devi manifestation. It verifies the exact manuscript, page-script, storyboard, character-bible, iconography, and A/B/C/D reference inputs; preserves the exhausted PR6 attempts; and creates a separate, hash-bound production-campaign authorization request.
+
+The current DM04 source-rights clearance permits private manuscript work but explicitly does not authorize illustration or PDF production. Consequently, PR10 stops at `AWAITING_CAMPAIGN_AUTHORIZATION` with zero image operations, zero new art, zero composed pages, zero PDFs, and USD 0.00 spent. This is the intended fail-closed result, not a simulated production success. See `docs/BOOK_FACTORY_FOUNDATION_PR10.md` for the evidence and execution report.
+
+## PR10 real-production integration
+
+1. `prepare-production-slice --book-id DM04` selects and hash-locks exactly two real pages; reruns are idempotent.
+2. A `PRODUCTION_CAMPAIGN` approval is book-specific, non-inheritable, and valid only for the exact request and subject hashes. It does not reset or extend PR6's exhausted retry counters.
+3. `prepare-production-generation` remains blocked until that exact approval is imported. After approval, it may prepare at most one operation per selected page and two operations for the campaign, under the zero-additional-cost policy.
+4. Every generation request must prove which exact A/B/C/D reference inputs the backend received. Missing roles remain explicitly unavailable; rejected proofs are never substituted as approved character references.
+5. Real image acceptance requires a reviewer distinct from the producer, actual-pixel and reading-size attestations, and all nine required visual dimensions. Deterministic validation cannot manufacture semantic approval.
+6. Composition and PDF assembly remain downstream of those visual gates. No production artifact is emitted while the campaign is unauthorized or a selected page has not passed independent review.
+7. Page-local recovery is exercised only through an isolated, publication-ineligible fixture in this milestone.
 
 PR9 adds the durable autonomous Director over the existing PR1-PR8 components. One command selects or resumes a book and advances every repository-executable stage until an exact Codex-specialist, external-provider or human-authorization boundary. Each stage records a stable job ID, hash-bound inputs and outputs, worker identity, execution receipt, attempt, timestamps, cost, PASS/FIX/ESCALATE result and recovery instructions. The queue prefers resumable work, skips blocked titles when another is eligible, respects dependencies, excludes DM08, and never equates private-production eligibility with public-publication clearance.
 
@@ -69,6 +83,10 @@ From the repository root, use the checked-in launcher:
 ./factory import-visual-review --book-id DM04 --handoff HANDOFF --response RESPONSE
 ./factory build-proof-contact-sheet --book-id DM04
 ./factory prepare-style-approval --book-id DM04
+./factory prepare-production-slice --book-id DM04
+./factory production-slice-status --book-id DM04
+./factory import-production-campaign-approval --book-id DM04 --approval PATH
+./factory prepare-production-generation --book-id DM04 --page-id PAGE_ID
 ./factory compose-page --spec PAGE.json --output-dir OUTPUT
 ./factory validate-page --source PAGE.composition.json
 ./factory compose-book --manifest BOOK.json --output-dir OUTPUT
@@ -148,6 +166,7 @@ The direct `manuscript_generation` and `editorial_review` adapters remain unavai
 - Distinct `CHARACTER_REFERENCE`, `PANEL_ILLUSTRATION`, and `FULL_PAGE_IMMERSIVE` units plus exact DM04 recovery lettering geometry.
 - An independent eleven-dimension comparative review of all eight real PR6 images and a side-by-side evidence artifact.
 - Exactly four versioned recovery requests with preserved PR6 parents, locked hashes, a recommended four-operation PR8 cap, and generation authorization set to false.
+- A hash-bound two-page DM04 real-production plan, separate production-campaign authorization, exact A/B/C/D reference receipt contract, independent nine-dimension actual-pixel review gate, and isolated page-local recovery fixture.
 - Offline unit tests, existing graph tests, dependency-free baseline Node tests, source-path/binary boundary checks, and GitHub Actions CI.
 
 ## Scaffolded or still blocked
@@ -156,6 +175,7 @@ The direct `manuscript_generation` and `editorial_review` adapters remain unavai
 - A reusable credential-backed image service. PR6's real Codex-native adapter is host-injected and session-scoped; a plain repository process fails closed without that executor.
 - Production-ready font embedding, print trim/bleed/export profiles and real-book composed-page inspection. PR8 supplies editable composition JSON and digital PDF assembly; PR9 still requires independent actual-pixel review before artifact readiness.
 - Automatic visual acceptance. PR7 validates comparison records deterministically, but aesthetics, complex iconography, and cultural meaning still require an independent image-capable reviewer.
+- The PR10 DM04 illustration campaign. The exact authorization request is pending because the current private-draft clearance explicitly excludes illustration and PDF production.
 - A paid provider credential, pinned external pricing model, or provider-side recovery API. PR6 made no paid call.
 - Git LFS enablement, publishing, deployment, PR creation, merging, sales, or email.
 
@@ -189,9 +209,9 @@ Any active stage can enter `BLOCKED` or `FAILED` with a reason and exact `resume
 
 ## Approvals
 
-Approval records bind a decision to the exact subject hash, scope, approver identity, evidence, conditions, and invalidators. Artifact creators cannot issue their own independent approval. Routine page repair stays inside its retry/QA loop and needs no user approval. New style families, unresolved theology, significant iconography deviations, budget overruns, and repeated failures require an explicit persisted decision.
+Approval records bind a decision to the exact subject hash, scope, approver identity, evidence, conditions, and invalidators. Artifact creators cannot issue their own independent approval. Routine page repair stays inside its retry/QA loop and needs no user approval. New style families, unresolved theology, significant iconography deviations, budget overruns, repeated failures, and a new real-production campaign require an explicit persisted decision.
 
-Reusable approvals must opt into inheritance, keep the identical approved hash, target a descendant scope, retain the same source scope/tradition/edition/evidence hash, remain unexpired, and have no changed invalidator. Source-readiness, manuscript, page-composition, book-specific theological exceptions, and manuscript source disputes are never inheritable.
+Reusable approvals must opt into inheritance, keep the identical approved hash, target a descendant scope, retain the same source scope/tradition/edition/evidence hash, remain unexpired, and have no changed invalidator. Source-readiness, manuscript, page-composition, production-campaign, book-specific theological exceptions, and manuscript source disputes are never inheritable.
 
 ## Adding a provider later
 
@@ -209,6 +229,7 @@ Implement `Provider.capabilities()`, `estimate_minor_units()`, and `execute()` f
 - The Codex built-in image tool worked for this PR6 session, but no reusable repository credential, quota, or external price is configured.
 - All four latest DM04 proofs remain `FIX` after attempt two; the hard retry ceiling is exhausted and style approval is unopened.
 - PR7 recovery requests are prepared but not authorized. Any future recovery campaign requires an explicit decision, fresh backend capability evidence, exact reference-input receipts, and a fresh price/spend decision.
+- PR10 has prepared that separate request for the exact two-page campaign, but no approval has been imported; status is `AWAITING_CAMPAIGN_AUTHORIZATION` and generation remains disabled.
 - No human-approved exact character reference exists for the DM04 subjects; role C is deliberately recorded as unavailable rather than filled with a rejected proof.
 - No licensed pinned font family or approved Git LFS quota/storage policy exists.
 - Human theological/iconographic reviewer identities are not configured.

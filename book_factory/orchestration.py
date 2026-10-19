@@ -407,6 +407,10 @@ class ProductionQueue:
         path = self.books_root / book_id / "production-status.json"
         return load_json(path) if path.is_file() else None
 
+    def _production_integration_status(self, book_id):
+        path = self.books_root / book_id / "production-integration-status.json"
+        return load_json(path) if path.is_file() else None
+
     def evaluate(self):
         books = self.catalogue.list_books()
         completed = {
@@ -419,6 +423,7 @@ class ProductionQueue:
             run = self._run(book_id)
             state = self._legacy_state(book_id)
             status = self._production_status(book_id)
+            integration_status = self._production_integration_status(book_id)
             dependencies = sorted(book.get("dependencies", []))
             missing_dependencies = [item for item in dependencies if item not in completed]
             collection_style_hash = book.get("required_collection_style_hash")
@@ -457,6 +462,8 @@ class ProductionQueue:
                 if status and "RETRY_EXHAUSTED" in status.get("exact_result", ""):
                     queue_status = "BLOCKED"
                     reasons.extend(["ATTEMPT_BUDGET_EXHAUSTED", "STYLE_APPROVAL_UNAVAILABLE"])
+                    if integration_status:
+                        reasons.extend(item["code"] for item in integration_status.get("blockers", []))
                 else:
                     queue_status = "ELIGIBLE_RESUME"
                     reasons.append("PARTIAL_RUN_HAS_DURABLE_STATE")
@@ -603,6 +610,22 @@ class AutonomousFactoryDirector:
         for row in self.queue(fixture_mode)["entries"]:
             if row["current_stage"] == "AWAITING_STYLE_APPROVAL" or "STYLE_APPROVAL_UNAVAILABLE" in row["reasons"]:
                 pending.append({"book_id": row["book_id"], "approval_type": "BOOK_OR_COLLECTION_STYLE", "status": "PENDING"})
+        if not fixture_mode:
+            for path in sorted(Path(books_root).glob("*/production-integration-status.json")):
+                status = load_json(path)
+                if status.get("generation_authorized") is False:
+                    blocker = next(
+                        (item for item in status.get("blockers", []) if item.get("code") == "PR10_CAMPAIGN_AUTHORIZATION_REQUIRED"),
+                        {},
+                    )
+                    pending.append({
+                        "book_id": status["book_id"],
+                        "approval_type": "PRODUCTION_CAMPAIGN",
+                        "campaign_id": status["campaign_id"],
+                        "subject_hash": blocker.get("subject_hash"),
+                        "request_record_hash": blocker.get("request_record_hash"),
+                        "status": "PENDING",
+                    })
         return {"schema_version": "1.0", "records": records, "pending": pending, "fixture_mode": bool(fixture_mode)}
 
     def costs(self, fixture_mode=False):
@@ -612,11 +635,22 @@ class AutonomousFactoryDirector:
             jobs.append(load_json(path))
         estimated = sum(item.get("cost", {}).get("estimated_minor_units") or 0 for item in jobs)
         actual = sum(item.get("cost", {}).get("actual_minor_units") or 0 for item in jobs)
+        production_slices = []
+        if not fixture_mode:
+            for path in sorted(Path(books_root).glob("*/production-integration-status.json")):
+                status = load_json(path)
+                production_slices.append({
+                    "book_id": status["book_id"], "campaign_id": status["campaign_id"],
+                    "actual_minor_units": status.get("actual_cost_minor_units", 0),
+                    "actual_image_operations": status.get("actual_image_operations", 0),
+                })
         return {
             "schema_version": "1.0", "currency": "USD", "fixture_mode": bool(fixture_mode),
-            "estimated_minor_units": estimated, "actual_minor_units": actual,
+            "estimated_minor_units": estimated,
+            "actual_minor_units": actual + sum(item["actual_minor_units"] for item in production_slices),
             "paid_calls_executed": sum(bool(item.get("cost", {}).get("paid_call_executed")) for item in jobs),
             "jobs": [{"job_id": item["job_id"], "book_id": item["book_id"], "stage": item["stage"], "cost": item["cost"]} for item in jobs],
+            "production_slices": production_slices,
         }
 
     def status(self):
@@ -901,6 +935,12 @@ class AutonomousFactoryDirector:
         if not fixture_mode:
             blockers = self._production_blockers(book_id, run)
             if blockers and run["current_stage"] == "ART_PROOFS":
+                if book_id == "DM04":
+                    integration = self.host.prepare_production_slice(book_id)
+                    integration["legacy_run"] = run
+                    integration["jobs"] = ledger.jobs()
+                    integration["blocker_source"] = integration["approval_request_path"]
+                    return integration
                 run["blocked"] = blockers
                 return {
                     "status": "ESCALATE", "book_id": book_id, "run": run, "jobs": ledger.jobs(),

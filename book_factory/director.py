@@ -43,6 +43,7 @@ from .page_engine import (
     validate_composition_file,
 )
 from .preproduction import build_semantic_visual_review_request, validate_preproduction_package
+from .production_integration import RealProductionSlice
 from .providers import CodexNativeImageProvider
 from .providers.base import ProviderRegistry
 from .references import ReferenceEditionRegistry
@@ -84,6 +85,7 @@ class FactoryDirector:
         self.reference_editions = ReferenceEditionRegistry(self.root)
         self.clearances = SourceClearanceStore(self.books_root)
         self.handoffs = SessionHandoffStore(self.books_root)
+        self.real_production = RealProductionSlice(self.root)
         self.orchestrator = AutonomousFactoryDirector(self, orchestration_runtime_root)
 
     def _configuration(self):
@@ -109,7 +111,7 @@ class FactoryDirector:
                 states.append({"book_id": book_id, "status": "INVALID", "message": str(exc)})
         return {
             "factory_version": __version__,
-            "implementation": "FOUNDATION_PR9",
+            "implementation": "REAL_PRODUCTION_INTEGRATION_PR10",
             "catalogue_books": len(books),
             "readiness_counts": {state: sum(book["readiness"] == state for book in books) for state in sorted({book["readiness"] for book in books})},
             "active_runs": states,
@@ -136,6 +138,11 @@ class FactoryDirector:
                 "semantic_visual_approval": "REQUIRES_INDEPENDENT_ACTUAL_PIXEL_REVIEW",
             },
             "autonomous_orchestration": self.orchestrator.status(),
+            "real_production_slice": (
+                self.real_production.status()
+                if (self.books_root / "DM04" / "production-slices" / "v0001.json").is_file()
+                else {"status": "NOT_PREPARED"}
+            ),
         }
 
     def input_report(self):
@@ -1549,6 +1556,26 @@ class FactoryDirector:
     def resume_book(self, book_id, fixture_mode=False, fixture_plan_path=None):
         return self.orchestrator.resume_book(book_id, fixture_mode, fixture_plan_path)
 
+    def prepare_production_slice(self, book_id):
+        if book_id != "DM04":
+            raise ContractError("PR10 real-production slice is locked to DM04", {"book_id": book_id})
+        return self.real_production.prepare()
+
+    def production_slice_status(self, book_id):
+        if book_id != "DM04":
+            raise ContractError("PR10 real-production slice is locked to DM04", {"book_id": book_id})
+        return self.real_production.status()
+
+    def import_production_campaign_approval(self, book_id, approval_path):
+        if book_id != "DM04":
+            raise ContractError("PR10 campaign approval is locked to DM04", {"book_id": book_id})
+        return self.real_production.import_campaign_approval(approval_path)
+
+    def prepare_production_generation(self, book_id, page_id):
+        if book_id != "DM04":
+            raise ContractError("PR10 generation is locked to DM04", {"book_id": book_id})
+        return self.real_production.prepare_generation(page_id)
+
     def factory_queue(self, fixture_mode=False):
         return self.orchestrator.queue(fixture_mode)
 
@@ -2001,6 +2028,9 @@ class FactoryDirector:
         validate_named(pdf_validation, schema_root, "pdf-artifact")
         if pdf_validation["result"] != "PASS":
             raise ContractError("PR8 technical demonstration PDF failed deterministic validation", {"findings": pdf_validation["findings"]})
+        pr10 = None
+        if (self.books_root / "DM04" / "production-slices" / "v0001.json").is_file():
+            pr10 = self.real_production.validate()
         return {
             "status": "PASS",
             "schemas": schemas,
@@ -2036,5 +2066,6 @@ class FactoryDirector:
                 "production_fixture_isolation": "ENFORCED",
                 "publication_eligible": False,
             },
-            "note": "Foundation PR9 adds durable end-to-end orchestration, queueing, exact execution boundaries, localized recovery and independent composed-page review contracts. It generated no story art or manuscript, did not modify DM08 or the source graph, and did not certify publication or semantic visual quality.",
+            "pr10": pr10,
+            "note": "PR10 binds a real two-page DM04 slice and stops at the separately required campaign authorization. It generated no new art or PDF, did not modify DM08 or the source graph, and did not fabricate semantic visual approval.",
         }

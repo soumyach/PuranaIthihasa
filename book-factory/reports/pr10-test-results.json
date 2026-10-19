@@ -1,0 +1,62 @@
+{
+  "environment": {
+    "node": "bundled Codex workspace runtime with existing /private/tmp PR9 jsdom dependency",
+    "python": "bundled Codex workspace runtime 26.1013.11914"
+  },
+  "results": [
+    {
+      "assertions_or_tests": 20,
+      "result": "PASS",
+      "suite": "PR10 targeted Python acceptance tests"
+    },
+    {
+      "assertions_or_tests": 171,
+      "result": "PASS",
+      "suite": "complete Book Factory Python regression suite, including PR10"
+    },
+    {
+      "assertions_or_tests": 15,
+      "result": "PASS",
+      "suite": "source-graph integrity tests"
+    },
+    {
+      "assertions_or_tests": 1,
+      "result": "PASS_NO_WARNINGS",
+      "suite": "standalone source-graph structural validator"
+    },
+    {
+      "assertions_or_tests": 1,
+      "result": "PASS",
+      "suite": "factory validate"
+    },
+    {
+      "assertions_or_tests": 293,
+      "result": "PASS",
+      "suite": "all 10 repository Node test files"
+    },
+    {
+      "assertions_or_tests": 1,
+      "result": "PASS",
+      "suite": "git diff --check"
+    }
+  ],
+  "schema_version": "1.0",
+  "tested_categories": [
+    "real input asset hashing",
+    "reference-image receipts",
+    "generation authorization",
+    "two-page production selection",
+    "exact lettering preservation",
+    "image-review independence",
+    "no false semantic PASS",
+    "page-local recovery",
+    "preview versus production artifact isolation",
+    "PDF gate",
+    "persisted execution state",
+    "queue continuation",
+    "cost accounting",
+    "no DM08 regeneration",
+    "source-graph immutability",
+    "existing Book Factory behavior"
+  ]
+}

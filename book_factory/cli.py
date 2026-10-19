@@ -14,7 +14,7 @@ def _fixture_arguments(parser):
 
 
 def build_parser():
-    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory Foundation PR9")
+    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory real-production integration PR10")
     parser.add_argument("--root", default=".", help="repository root (default: current directory)")
     parser.add_argument("--catalogue", help="explicit catalogue path (intended for offline fixtures and validation)")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -31,6 +31,16 @@ def build_parser():
     resume_book = subparsers.add_parser("resume-book", help="idempotently resume one durable orchestration run")
     resume_book.add_argument("--book-id", required=True)
     _fixture_arguments(resume_book)
+    production_slice = subparsers.add_parser("prepare-production-slice", help="prepare the locked DM04 PR10 two-page campaign")
+    production_slice.add_argument("--book-id", required=True)
+    production_status = subparsers.add_parser("production-slice-status", help="inspect the real DM04 PR10 slice without executing art")
+    production_status.add_argument("--book-id", required=True)
+    campaign_approval = subparsers.add_parser("import-production-campaign-approval", help="import a separate exact-hash PR10 human authorization")
+    campaign_approval.add_argument("--book-id", required=True)
+    campaign_approval.add_argument("--approval", required=True)
+    production_generation = subparsers.add_parser("prepare-production-generation", help="prepare one authorized reference-conditioned host request")
+    production_generation.add_argument("--book-id", required=True)
+    production_generation.add_argument("--page-id", required=True)
     for command, help_text in (
         ("queue", "show deterministic queue selection and skip reasons"),
         ("blocked", "show exact blocked and excluded catalogue entries"),
@@ -155,6 +165,14 @@ def run(args):
         if args.fixture_plan and not args.fixture_mode:
             raise FactoryError("--fixture-plan requires --fixture-mode")
         return director.resume_book(args.book_id, args.fixture_mode, args.fixture_plan)
+    if args.command == "prepare-production-slice":
+        return director.prepare_production_slice(args.book_id)
+    if args.command == "production-slice-status":
+        return director.production_slice_status(args.book_id)
+    if args.command == "import-production-campaign-approval":
+        return director.import_production_campaign_approval(args.book_id, args.approval)
+    if args.command == "prepare-production-generation":
+        return director.prepare_production_generation(args.book_id, args.page_id)
     if args.command == "queue":
         return director.factory_queue(args.fixture_mode)
     if args.command == "blocked":
