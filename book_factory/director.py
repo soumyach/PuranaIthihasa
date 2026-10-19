@@ -1,4 +1,4 @@
-"""Single user-facing orchestration facade for Foundation PR6."""
+"""Single user-facing orchestration facade for Foundation PR7."""
 
 import json
 from copy import deepcopy
@@ -42,6 +42,7 @@ from .source_intelligence import DossierStore, SourceReadinessAssessor, StoryPac
 from .source_clearance import SourceClearanceStore, finalize_clearance, validate_private_draft_clearance
 from .state import StateStore, next_stage
 from .util import atomic_json_write, atomic_write, content_hash, load_json, sha256_bytes
+from .visual_benchmark import prepare_recovery_requests, validate_gold_standard, validate_pr7
 from .versioning import (
     CharacterBibleVersionStore,
     CharacterReferenceVersionStore,
@@ -50,6 +51,7 @@ from .versioning import (
     LocationBibleVersionStore,
     ManuscriptVersionStore,
     PreproductionReviewVersionStore,
+    ProofRecoveryRequestVersionStore,
     ProofSpecVersionStore,
     StoryboardVersionStore,
     StyleApprovalRequestVersionStore,
@@ -94,7 +96,7 @@ class FactoryDirector:
                 states.append({"book_id": book_id, "status": "INVALID", "message": str(exc)})
         return {
             "factory_version": __version__,
-            "implementation": "FOUNDATION_PR6",
+            "implementation": "FOUNDATION_PR7",
             "catalogue_books": len(books),
             "readiness_counts": {state: sum(book["readiness"] == state for book in books) for state in sorted({book["readiness"] for book in books})},
             "active_runs": states,
@@ -112,6 +114,8 @@ class FactoryDirector:
             "publishing": "NOT_IMPLEMENTED",
             "inputs": self.input_report(),
             "dm08_reference_edition": self.reference_editions.verify("DM08"),
+            "visual_gold_standard": validate_gold_standard(self.root),
+            "proof_recovery": "PREPARED_NOT_AUTHORIZED_NOT_EXECUTED",
         }
 
     def input_report(self):
@@ -1023,6 +1027,14 @@ class FactoryDirector:
             return report
         return discover_image_backends(builtin_available=False)
 
+    def visual_gold_standard(self, require_source_assets=False):
+        """Verify actual curated pages; never reconstruct a missing benchmark."""
+        return validate_gold_standard(self.root, require_source_assets=require_source_assets)
+
+    def prepare_proof_recovery(self, book_id):
+        """Persist four non-executable, parent-linked PR8 recovery requests."""
+        return prepare_recovery_requests(self.root, book_id)
+
     def _pr6_components(self, book_id):
         if book_id == "DM08":
             raise ContractError("DM08 is an immutable existing edition and cannot enter proof generation")
@@ -1676,6 +1688,18 @@ class FactoryDirector:
             validate_named(load_json(path), schema_root, "worker-contract")
             worker_contracts.append(path.name)
         validate_named(load_json(self.root / "book-factory" / "policies" / "spending-policy.json"), schema_root, "budget")
+        validate_named(
+            load_json(self.root / "book-factory" / "references" / "visual-gold-standard" / "manifest.json"),
+            schema_root, "visual-gold-standard",
+        )
+        validate_named(
+            load_json(self.root / "book-factory" / "policies" / "indian-cultural-authenticity.json"),
+            schema_root, "cultural-authenticity",
+        )
+        validate_named(
+            load_json(self.root / "books" / "DM04" / "visual-comparisons" / "pr7-comparison.json"),
+            schema_root, "visual-comparison",
+        )
         image_capabilities = self.image_capabilities()
         if image_capabilities.get("selected_provider_id") != "codex-built-in-image-gen":
             raise ContractError("PR6 capability record must select the executed Codex native backend")
@@ -1740,6 +1764,7 @@ class FactoryDirector:
             "typography": [], "proof_specs": [], "preproduction_reviews": [],
             "character_references": [], "illustration_proof_records": [],
             "visual_reviews": [], "style_approval_requests": [],
+            "proof_recovery_requests": [],
         }
         proof_execution_validation = []
         for book_root in sorted(path for path in self.books_root.iterdir() if path.is_dir() and path.name != "_artifacts"):
@@ -1760,6 +1785,7 @@ class FactoryDirector:
                 ("illustration_proof_records", IllustrationProofVersionStore(self.books_root), "illustration-proof-record"),
                 ("visual_reviews", VisualReviewVersionStore(self.books_root), "visual-review"),
                 ("style_approval_requests", StyleApprovalRequestVersionStore(self.books_root), "style-approval-request"),
+                ("proof_recovery_requests", ProofRecoveryRequestVersionStore(self.books_root), "proof-recovery-campaign"),
             )
             for label, store, schema_name in component_stores:
                 for record in store.versions(book_root.name):
@@ -1782,6 +1808,7 @@ class FactoryDirector:
                     "actual_cost_minor_units": sum(item.get("actual_cost_minor_units", 0) for item in receipts),
                     "result": proof_gate["result"],
                 })
+        pr7_validation = validate_pr7(self.root)
         return {
             "status": "PASS",
             "schemas": schemas,
@@ -1800,5 +1827,6 @@ class FactoryDirector:
             "catalogue_mapping_validation": mapping_validation,
             "input_report": self.input_report(),
             "image_capabilities": image_capabilities,
-            "note": "Foundation PR6 adds real four-proof generation through an auditable Codex native-tool bridge, exact pixel validation, independent visual review, and a fail-closed human style-approval request gate; full-book illustration and PDF production remain blocked.",
+            "pr7": pr7_validation,
+            "note": "Foundation PR7 adds an actual-page Visual Gold Standard, evidence-based PR6 diagnosis, comparative pixel review, cultural-authenticity and reference-first contracts, and four non-executable DM04 recovery requests. No PR7 image generation, PDF production, publication, or DM08 production occurred.",
         }

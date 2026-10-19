@@ -9,7 +9,7 @@ from .errors import FactoryError
 
 
 def build_parser():
-    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory Foundation PR6")
+    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory Foundation PR7")
     parser.add_argument("--root", default=".", help="repository root (default: current directory)")
     parser.add_argument("--catalogue", help="explicit catalogue path (intended for offline fixtures and validation)")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -64,6 +64,10 @@ def build_parser():
     import_preproduction.add_argument("--handoff", required=True)
     import_preproduction.add_argument("--response", required=True)
     subparsers.add_parser("image-capabilities", help="report discovered and authorized image backends")
+    gold = subparsers.add_parser("visual-gold-standard", help="verify the curated actual-page visual benchmark")
+    gold.add_argument("--require-source-assets", action="store_true", help="fail unless both exact local benchmark PDFs are present")
+    recovery = subparsers.add_parser("prepare-proof-recovery", help="persist four non-executable PR8 recovery requests")
+    recovery.add_argument("--book-id", required=True)
     prepare_proof = subparsers.add_parser("prepare-proof-generation", help="persist a locked zero-cost proof-generation intent")
     prepare_proof.add_argument("--book-id", required=True)
     prepare_proof.add_argument("--proof-id", required=True)
@@ -135,6 +139,10 @@ def run(args):
         return director.import_preproduction_handoff(args.book_id, args.handoff, args.response)
     if args.command == "image-capabilities":
         return director.image_capabilities()
+    if args.command == "visual-gold-standard":
+        return director.visual_gold_standard(args.require_source_assets)
+    if args.command == "prepare-proof-recovery":
+        return director.prepare_proof_recovery(args.book_id)
     if args.command == "prepare-proof-generation":
         return director.prepare_proof_generation(args.book_id, args.proof_id)
     if args.command == "import-proof-image":

@@ -56,6 +56,8 @@ def validate_instance(instance, schema, path="$ ", resolver=None):
     if isinstance(instance, list) and "items" in schema:
         if len(instance) < schema.get("minItems", 0):
             raise ContractError("%s has fewer items than required" % path)
+        if "maxItems" in schema and len(instance) > schema["maxItems"]:
+            raise ContractError("%s has more items than allowed" % path)
         for index, child in enumerate(instance):
             validate_instance(child, schema["items"], "%s[%d]" % (path, index), resolver)
     return instance

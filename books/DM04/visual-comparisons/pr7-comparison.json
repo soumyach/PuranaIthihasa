@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "comparison_id": "dm04-pr7-all-eight-versus-gold-standard",
+  "book_id": "DM04",
+  "actual_pixels_inspected": true,
+  "reviewer": {
+    "id": "codex-pr7-image-capable-reviewer",
+    "role": "independent-comparative-visual-review",
+    "image_capable": true,
+    "execution_mechanism": "PRIMARY_CODEX_ACTUAL_PIXEL_INSPECTION",
+    "independent_from_pr6_producer": true,
+    "pr6_producer_id": "codex-native-image-tool"
+  },
+  "review_contract": "book-factory/contracts/comparative-visual-review.json",
+  "gold_standard_manifest": "book-factory/references/visual-gold-standard/manifest.json",
+  "side_by_side": {
+    "path": "books/DM04/visual-comparisons/pr7-side-by-side.jpg",
+    "sha256": "ddd18b0d86be82f5843efea40ae501050b0a1e614256fd446fa9398d4939319e",
+    "bytes": 700579,
+    "contents": "Four rows: relevant Gold Standard page, PR6 attempt 1 and PR6 attempt 2."
+  },
+  "dimension_order": [
+    "SOURCE_FIDELITY",
+    "RELIGIOUS_ICONOGRAPHY",
+    "CULTURAL_AUTHENTICITY",
+    "CHARACTER_CONTINUITY",
+    "NARRATIVE_SPECIFICITY",
+    "COMPOSITION",
+    "EMOTIONAL_EXPRESSIVENESS",
+    "VISUAL_REFERENCE_ALIGNMENT",
+    "PAGE_DESIGN_COMPATIBILITY",
+    "ANATOMY",
+    "LETTERING_READINESS"
+  ],
+  "records": [
+    {
+      "proof_id": "dm04-proof-quiet-conversation",
+      "attempt_number": 1,
+      "image_path": "books/DM04/illustration-proofs/images/dm04-proof-quiet-conversation/attempt-01-f90ca2afd035933a.png",
+      "image_sha256": "f90ca2afd035933a462275ad0cd770f8fdac8fcf4fd91952ebe7dd7927d39a19",
+      "gold_reference_ids": ["kgs-satya-p02", "kgs-dm08-p09"],
+      "overall": "FIX",
+      "dimensions": [
+        {"dimension": "SOURCE_FIDELITY", "result": "FIX", "evidence": "Suratha has a prominent sheathed sword even though the locked page and character record authorize no weapon.", "corrective_guidance": "Remove the weapon and bind only Medhas, Suratha, Samādhi, the fire and hermitage action."},
+        {"dimension": "RELIGIOUS_ICONOGRAPHY", "result": "PASS", "evidence": "No deity or sacred attribute is asserted in this frame scene.", "corrective_guidance": null},
+        {"dimension": "CULTURAL_AUTHENTICITY", "result": "PASS", "evidence": "Garments, hermitage materials, fire, water vessels and forest staging read as an Indian sage setting without obvious imported armor or architecture.", "corrective_guidance": null},
+        {"dimension": "CHARACTER_CONTINUITY", "result": "FIX", "evidence": "The text-bound roles are differentiated, but no human-approved exact character images conditioned the faces and Suratha's unauthorized sword alters identity.", "corrective_guidance": "Use the stable registry IDs and do not promote this rejected image as a character reference."},
+        {"dimension": "NARRATIVE_SPECIFICITY", "result": "FIX", "evidence": "It shows listening around a fire but not the scripted second-panel over-shoulder question and attentive reaction that create the page turn.", "corrective_guidance": "Generate p01-panel-02 as one speaking action with Medhas' gesture and both listeners' directed attention."},
+        {"dimension": "COMPOSITION", "result": "PASS", "evidence": "A calm triangular grouping, fire focal point and layered river/forest depth are visually coherent.", "corrective_guidance": null},
+        {"dimension": "EMOTIONAL_EXPRESSIVENESS", "result": "PASS", "evidence": "Medhas reads as composed and explanatory; Suratha reads as intent; Samādhi listens quietly.", "corrective_guidance": null},
+        {"dimension": "VISUAL_REFERENCE_ALIGNMENT", "result": "FIX", "evidence": "It matches ornate painterly finish but lacks the benchmark pages' change of scale, reaction beat and panel-based conversation rhythm.", "corrective_guidance": "Use kgs-dm08-p09 for speaker/listener and reaction hierarchy, not for its characters or terrace."},
+        {"dimension": "PAGE_DESIGN_COMPATIBILITY", "result": "FIX", "evidence": "A complete portrait tableau does not correspond to page 1's two-panel layout.", "corrective_guidance": "Treat this as a panel crop target, not a finished full-page poster."},
+        {"dimension": "ANATOMY", "result": "PASS", "evidence": "Visible faces, hands and seated bodies are coherent at inspected resolution.", "corrective_guidance": null},
+        {"dimension": "LETTERING_READINESS", "result": "FIX", "evidence": "Tree trunks, canopy, moon and branches occupy much of the normalized top lettering rectangle.", "corrective_guidance": "Use exact panel/balloon geometry and reserve the dialogue area around Medhas' speaker tail instead of a generic whole-page top mask."}
+      ]
+    },
+    {
+      "proof_id": "dm04-proof-quiet-conversation",
+      "attempt_number": 2,
+      "image_path": "books/DM04/illustration-proofs/images/dm04-proof-quiet-conversation/attempt-02-578e0fcdb4dcf016.png",
+      "image_sha256": "578e0fcdb4dcf016b7b85a50736e498859528560f569885ddf0f8060003f32fc",
+      "gold_reference_ids": ["kgs-satya-p02", "kgs-dm08-p09"],
+      "overall": "FIX",
+      "dimensions": [
+        {"dimension": "SOURCE_FIDELITY", "result": "PASS", "evidence": "The three correct frame characters listen around the fire and the prior unauthorized sword is gone.", "corrective_guidance": null},
+        {"dimension": "RELIGIOUS_ICONOGRAPHY", "result": "PASS", "evidence": "No sacred identity or attribute conflict is visible.", "corrective_guidance": null},
+        {"dimension": "CULTURAL_AUTHENTICITY", "result": "PASS", "evidence": "The simple garments, thatched shelter, fire, water vessel and forest setting avoid imported fantasy conventions.", "corrective_guidance": null},
+        {"dimension": "CHARACTER_CONTINUITY", "result": "FIX", "evidence": "Textual roles remain distinct, but faces and exact identity are still unapproved and cannot become reusable references.", "corrective_guidance": "Use this only as a local-edit candidate; an accepted result must receive exact-asset approval before identity reuse."},
+        {"dimension": "NARRATIVE_SPECIFICITY", "result": "FIX", "evidence": "The scene remains one evenly posed tableau and does not isolate Medhas' question or the listeners' reaction as the second scripted panel.", "corrective_guidance": "Crop/recompose to p01-panel-02 with Medhas visibly speaking and the two listeners oriented toward him."},
+        {"dimension": "COMPOSITION", "result": "FIX", "evidence": "The open sky dominates almost half the canvas while the story action is compressed low in the frame.", "corrective_guidance": "Use the panel geometry to give faces and gestures more scale; retain only the specific balloon area."},
+        {"dimension": "EMOTIONAL_EXPRESSIVENESS", "result": "PASS", "evidence": "All three figures show attentive, quiet engagement and Medhas' raised hand reads as teaching.", "corrective_guidance": null},
+        {"dimension": "VISUAL_REFERENCE_ALIGNMENT", "result": "FIX", "evidence": "Color and ornament align, but the benchmark's close-ups, reaction rhythm and integrated page lettering hierarchy are absent.", "corrective_guidance": "Use kgs-dm08-p09 as composition-only reference and keep DM08 characters forbidden."},
+        {"dimension": "PAGE_DESIGN_COMPATIBILITY", "result": "FIX", "evidence": "It is still a full portrait illustration for a two-panel scripted page.", "corrective_guidance": "Use a PANEL_ILLUSTRATION output and leave the page frame to deterministic composition."},
+        {"dimension": "ANATOMY", "result": "PASS", "evidence": "Faces, hands, feet and seated postures are coherent at inspected resolution.", "corrective_guidance": null},
+        {"dimension": "LETTERING_READINESS", "result": "FIX", "evidence": "The center sky is open, but tree crowns intrude into the exact top rectangle and no speaker-tail geometry was planned.", "corrective_guidance": "Apply the p01-panel-02 dialogue box and tail-anchor geometry from the lettering contract."}
+      ]
+    },
+    {
+      "proof_id": "dm04-proof-divine-reveal",
+      "attempt_number": 1,
+      "image_path": "books/DM04/illustration-proofs/images/dm04-proof-divine-reveal/attempt-01-19b0b1f7ff0d0e4f.png",
+      "image_sha256": "19b0b1f7ff0d0e4f8b9b4087ccb35a875ef490c2980fd43292c3764d31266a54",
+      "gold_reference_ids": ["kgs-satya-p01", "kgs-dm08-p12"],
+      "overall": "FIX",
+      "dimensions": [
+        {"dimension": "SOURCE_FIDELITY", "result": "FIX", "evidence": "The event-009 body-formation scene is mixed with later weapons, lion and assembled worshippers; donor-to-body correspondences are not readable.", "corrective_guidance": "Show only distinguishable radiance streams forming the named body regions; omit event-010 and event-011 gifts."},
+        {"dimension": "RELIGIOUS_ICONOGRAPHY", "result": "FIX", "evidence": "Devī is many-armed, but unsourced halo disks, weapons and lion collapse later iconography into the manifestation event.", "corrective_guidance": "Preserve coherent many-armed identity without gifts, mounts or unrelated donor attributes."},
+        {"dimension": "CULTURAL_AUTHENTICITY", "result": "FIX", "evidence": "The visual language is Indian devotional, yet multiple unsourced emblems and generalized divine portraits are presented as if authoritative.", "corrective_guidance": "Label source-silent design proposals and remove every unbound emblem or item."},
+        {"dimension": "CHARACTER_CONTINUITY", "result": "FIX", "evidence": "Devī's blue complexion, face and very large arm array differ substantially from attempt 2; neither image is approved as identity.", "corrective_guidance": "Bind the exact dm-devi text registry and require later exact-asset approval before reuse."},
+        {"dimension": "NARRATIVE_SPECIFICITY", "result": "FIX", "evidence": "It reads as a generic cosmic goddess poster rather than the exact body-correspondence event.", "corrective_guidance": "Make the donor-to-body map the single visual action."},
+        {"dimension": "COMPOSITION", "result": "FIX", "evidence": "A symmetrical emblematic poster is attractive but does not guide the eye through distinct radiance origins and destination regions.", "corrective_guidance": "Use one complete central silhouette with clearly separated, labeled-in-metadata radiance paths."},
+        {"dimension": "EMOTIONAL_EXPRESSIVENESS", "result": "FIX", "evidence": "Most donors and worshippers are static portraits; the event's anger, convergence and awe are not staged as change.", "corrective_guidance": "Use directed gazes, differentiated donor action and a visible convergence climax."},
+        {"dimension": "VISUAL_REFERENCE_ALIGNMENT", "result": "FIX", "evidence": "Painterly polish aligns, but kgs-dm08-p12 uses sequential causality and close emotional focus that this emblematic poster lacks.", "corrective_guidance": "Borrow hierarchy and emotional progression only; do not transfer Kali, Chamunda or DM08 weapons."},
+        {"dimension": "PAGE_DESIGN_COMPATIBILITY", "result": "FIX", "evidence": "The full-page unit is appropriate, but the result contains no plan for the very long exact narration and gives later-stage content visual priority.", "corrective_guidance": "Use p04 full-page geometry and a designed source inset for exact narration."},
+        {"dimension": "ANATOMY", "result": "FIX", "evidence": "The dense fan of arms and repeated weapons makes shoulder attachment, hand ownership and item identity difficult to verify.", "corrective_guidance": "Reduce visible foreground arms to a coherent arrangement while implying the authorized many-armed identity."},
+        {"dimension": "LETTERING_READINESS", "result": "FIX", "evidence": "Divine portraits and radiant streams fill the top safe region.", "corrective_guidance": "Design the exact narration inset first rather than asking for generic blank sky."}
+      ]
+    },
+    {
+      "proof_id": "dm04-proof-divine-reveal",
+      "attempt_number": 2,
+      "image_path": "books/DM04/illustration-proofs/images/dm04-proof-divine-reveal/attempt-02-21af6bf894e1abc6.png",
+      "image_sha256": "21af6bf894e1abc6d63f6d797ccebebda569e65f372658ff4cc126164f3a7139",
+      "gold_reference_ids": ["kgs-satya-p01", "kgs-dm08-p12"],
+      "overall": "FIX",
+      "dimensions": [
+        {"dimension": "SOURCE_FIDELITY", "result": "FIX", "evidence": "Radiance-to-body mapping is clearer, but later equipment and mounts remain and several required donors are incomplete or cropped.", "corrective_guidance": "Retain the successful stream map; remove rods, elephant, horse chariot and all post-formation gifts."},
+        {"dimension": "RELIGIOUS_ICONOGRAPHY", "result": "FIX", "evidence": "Devī is reduced to a fixed ordinary two-arm form, while large portrait disks read as unsourced halos.", "corrective_guidance": "Imply the locked many-armed identity and use source-bounded radiance without halo disks."},
+        {"dimension": "CULTURAL_AUTHENTICITY", "result": "FIX", "evidence": "Indian clothing and divine figures are present, but unbound mounts and equipment falsely imply source authority.", "corrective_guidance": "Apply SOURCE_REQUIRED/SOURCE_SILENT labels and include only event-009 content."},
+        {"dimension": "CHARACTER_CONTINUITY", "result": "FIX", "evidence": "Devī changes from blue, many-armed and weapon-bearing in attempt 1 to fair, two-armed and unarmed in attempt 2.", "corrective_guidance": "Lock face, silhouette, palette proposal and many-arm policy before any PR8 execution."},
+        {"dimension": "NARRATIVE_SPECIFICITY", "result": "FIX", "evidence": "The formation concept is visible, yet the exact named body correspondences cannot be reliably followed and later-stage symbols distract.", "corrective_guidance": "Use one principal action: distinct radiances complete Devī's source-specified body."},
+        {"dimension": "COMPOSITION", "result": "PASS", "evidence": "Central full-body hierarchy and curved streams create a clear visual focus.", "corrective_guidance": null},
+        {"dimension": "EMOTIONAL_EXPRESSIVENESS", "result": "FIX", "evidence": "The central figure is serene but donor urgency and awe are flattened into medallion portraits.", "corrective_guidance": "Use fewer, source-necessary donor figures with directed action and expressions."},
+        {"dimension": "VISUAL_REFERENCE_ALIGNMENT", "result": "FIX", "evidence": "Luminous finish aligns with devotional benchmarks, but the image remains a celestial poster rather than a specific Khatakshetra story page.", "corrective_guidance": "Reference kgs-dm08-p12 for staged manifestation and kgs-satya-p01 only for devotional hierarchy."},
+        {"dimension": "PAGE_DESIGN_COMPATIBILITY", "result": "FIX", "evidence": "It suits an immersive canvas, but cropped donors and top content leave no reliable exact-narration design.", "corrective_guidance": "Use the p04 full-page panel and narration-inset geometry."},
+        {"dimension": "ANATOMY", "result": "PASS", "evidence": "The central two-arm body and visible hands are coherent, though the arm-count decision is iconographically wrong.", "corrective_guidance": null},
+        {"dimension": "LETTERING_READINESS", "result": "FIX", "evidence": "Portraits, clouds and radiance occupy the normalized top rectangle.", "corrective_guidance": "Reserve the actual p04 narration box, not a generic safe-region request."}
+      ]
+    },
+    {
+      "proof_id": "dm04-proof-battle",
+      "attempt_number": 1,
+      "image_path": "books/DM04/illustration-proofs/images/dm04-proof-battle/attempt-01-42cfdd660d064fdd.png",
+      "image_sha256": "42cfdd660d064fddb289c38f7f404ab0232ed1234f66ffa66dfdd8ae8c47ddef",
+      "gold_reference_ids": ["kgs-dm08-p12", "kgs-dm08-p21"],
+      "overall": "FIX",
+      "dimensions": [
+        {"dimension": "SOURCE_FIDELITY", "result": "FIX", "evidence": "Counter-arrows, the ordered loss of horses/driver/bow/banner and Cikṣura's on-foot sword-and-shield continuation are compressed or missing in one contradictory tableau.", "corrective_guidance": "Generate only p17-panel-01's opposing arrow vectors; reserve the equipment-loss state for panel 2."},
+        {"dimension": "RELIGIOUS_ICONOGRAPHY", "result": "FIX", "evidence": "Devī carries a dense generic armory with repeated bows rather than a readable action-specific bow-and-arrow foreground.", "corrective_guidance": "Keep her many-armed identity coherent while foregrounding only the bow and counter-arrow action."},
+        {"dimension": "CULTURAL_AUTHENTICITY", "result": "FIX", "evidence": "Cikṣura/Asura equipment includes a red-crested Greco-Roman-looking helmet and a demonic-face flag emblem with no source support.", "corrective_guidance": "Forbid Roman/Hellenistic/Trojan/Spartan headgear and all unsupported faction emblems; do not invent a replacement canonical Asura uniform."},
+        {"dimension": "CHARACTER_CONTINUITY", "result": "FIX", "evidence": "Devī is blue and highly multi-armed here but fair and two-armed in attempt 2; Cikṣura's identity is obscured in a flying partial silhouette.", "corrective_guidance": "Bind dm-devi and dm-chikshura identities and keep both complete in-frame."},
+        {"dimension": "NARRATIVE_SPECIFICITY", "result": "FIX", "evidence": "The image reads as generic goddess-versus-army spectacle; the exact Cikṣura volley and counter are not the dominant action.", "corrective_guidance": "State one principal action: Cikṣura's arrow cloud meets Devī's counter-arrows in midair."},
+        {"dimension": "COMPOSITION", "result": "FIX", "evidence": "The thrown commander, broken chariot, lion, many weapons and army compete for focus.", "corrective_guidance": "Use a fast horizontal panel with two shooters and the meeting arrow vectors as the focal axis."},
+        {"dimension": "EMOTIONAL_EXPRESSIVENESS", "result": "FIX", "evidence": "Spectacle dominates; neither Devī's controlled resolve nor Cikṣura's aggressive intent receives readable facial scale.", "corrective_guidance": "Keep both faces and directional body language legible inside the panel."},
+        {"dimension": "VISUAL_REFERENCE_ALIGNMENT", "result": "FIX", "evidence": "Detail and scale align superficially, but the Gold Standard separates action stages and embeds reactions rather than collapsing them into a poster.", "corrective_guidance": "Use kgs-dm08-p21 for sequential battle clarity only; forbid Raktabija, Aindri, elephants and DM08 flags."},
+        {"dimension": "PAGE_DESIGN_COMPATIBILITY", "result": "FIX", "evidence": "A portrait poster cannot occupy page 17's first horizontal panel without losing subjects and action.", "corrective_guidance": "Generate a PANEL_ILLUSTRATION to the p17-panel-01 rectangle."},
+        {"dimension": "ANATOMY", "result": "FIX", "evidence": "Many arms, hands and repeated weapons overlap densely; Cikṣura is partly clipped and airborne in an unclear body state.", "corrective_guidance": "Use coherent shoulder attachment, complete silhouettes and fewer foreground limbs."},
+        {"dimension": "LETTERING_READINESS", "result": "FIX", "evidence": "Weapons, sky arrows and figures cross the generic top safe region, and no page-17 panel geometry was honored.", "corrective_guidance": "Use the exact page narration box and panel crop plan."}
+      ]
+    },
+    {
+      "proof_id": "dm04-proof-battle",
+      "attempt_number": 2,
+      "image_path": "books/DM04/illustration-proofs/images/dm04-proof-battle/attempt-02-016faa6b34b5c1ad.png",
+      "image_sha256": "016faa6b34b5c1addeffd634554015033c1dbacd0ba6718dba1c767a17f3a619",
+      "gold_reference_ids": ["kgs-dm08-p12", "kgs-dm08-p21"],
+      "overall": "FIX",
+      "dimensions": [
+        {"dimension": "SOURCE_FIDELITY", "result": "FIX", "evidence": "Fallen horses/driver and on-foot Cikṣura appear, but the bow is intact, the banner remains upright and no opposing Cikṣura arrows meet Devī's volley.", "corrective_guidance": "Do not combine the two panels; regenerate only the counter-arrow panel now."},
+        {"dimension": "RELIGIOUS_ICONOGRAPHY", "result": "FIX", "evidence": "Devī is shown as fixed two-armed with a disk halo, losing her locked many-armed identity and adding unsourced halo symbolism.", "corrective_guidance": "Imply coherent many-armed identity without unrelated items; remove the disk halo."},
+        {"dimension": "CULTURAL_AUTHENTICITY", "result": "FIX", "evidence": "The red-crested helmet and demonic face are gone, but Cikṣura's exact headgear, shield pattern and sun-like flag emblem remain source-silent and unapproved.", "corrective_guidance": "Use restrained, documented Indian conventions and no emblem until one is separately approved."},
+        {"dimension": "CHARACTER_CONTINUITY", "result": "FIX", "evidence": "Devī's complexion, face and arm count drift from attempt 1; Cikṣura's rear foot is clipped.", "corrective_guidance": "Lock text-based identity and keep both complete silhouettes inside the panel."},
+        {"dimension": "NARRATIVE_SPECIFICITY", "result": "FIX", "evidence": "The result shows Devī shooting toward an already-defeated chariot state, combining cause and later consequence without the opponent's volley.", "corrective_guidance": "Use one moment only: two opposed arrow clouds meeting."},
+        {"dimension": "COMPOSITION", "result": "FIX", "evidence": "The large empty sky and central wreck separate the two figures instead of emphasizing an active counter-vector.", "corrective_guidance": "Use a horizontal action axis and bring both shooters into readable relational scale."},
+        {"dimension": "EMOTIONAL_EXPRESSIVENESS", "result": "FIX", "evidence": "Faces are readable but emotionally generic; the missing attack vector weakens confrontation and urgency.", "corrective_guidance": "Show Cikṣura actively releasing his volley and Devī answering with controlled focus."},
+        {"dimension": "VISUAL_REFERENCE_ALIGNMENT", "result": "FIX", "evidence": "Painterly Indian styling improved, but it still lacks the benchmark's panel-specific causality, reaction and page hierarchy.", "corrective_guidance": "Use kgs-dm08-p21 for action scale and kgs-dm08-p12 for vector clarity, content-transfer forbidden."},
+        {"dimension": "PAGE_DESIGN_COMPATIBILITY", "result": "FIX", "evidence": "The portrait canvas does not match p17-panel-01's fast horizontal slot.", "corrective_guidance": "Generate only the horizontal panel artwork and compose the page afterward."},
+        {"dimension": "ANATOMY", "result": "PASS", "evidence": "Visible hands, faces and bodies are coherent; the rear-foot clipping is a crop issue.", "corrective_guidance": null},
+        {"dimension": "LETTERING_READINESS", "result": "FIX", "evidence": "The mountain summit intrudes into the specified top region and the generic blank sky is not tied to actual panel lettering.", "corrective_guidance": "Bind p17 narration geometry at page composition; do not distort panel action for arbitrary sky."}
+      ]
+    },
+    {
+      "proof_id": "dm04-proof-full-page",
+      "attempt_number": 1,
+      "image_path": "books/DM04/illustration-proofs/images/dm04-proof-full-page/attempt-01-3d5b13effd92448c.png",
+      "image_sha256": "3d5b13effd92448c4f1f93b14d1772c1eb2c3463cbd1984d41ff9f02ac9ffd2a",
+      "gold_reference_ids": ["kgs-satya-p01", "kgs-dm08-p28"],
+      "overall": "FIX",
+      "dimensions": [
+        {"dimension": "SOURCE_FIDELITY", "result": "FIX", "evidence": "Buffalo and human forms merge unclearly; the neck pin, trident strike and great-sword beheading are not unambiguous, while lion and foreground combatants add unrelated focus.", "corrective_guidance": "Show the half-emerged Asura from the buffalo mouth with a clear neck pin, trident contact and non-graphic sword-at-neck culmination."},
+        {"dimension": "RELIGIOUS_ICONOGRAPHY", "result": "FIX", "evidence": "Devī's multi-arm silhouette is plausible but the dense armory and unrelated participants make the exact event-bound attributes unclear.", "corrective_guidance": "Use only the trident and great sword as foreground action tools; keep other arms coherent and subordinate."},
+        {"dimension": "CULTURAL_AUTHENTICITY", "result": "FIX", "evidence": "The clothing and ornaments read as Indian, but background soldiers, flags and equipment are generalized and unapproved.", "corrective_guidance": "Remove nonessential army detail or bind every visible symbol to the authenticity policy."},
+        {"dimension": "CHARACTER_CONTINUITY", "result": "FIX", "evidence": "Devī's blue face and numerous arms shift drastically in attempt 2; the half-emerged identity is not cleanly separated from the buffalo form.", "corrective_guidance": "Lock Devī's face/silhouette and Mahiṣāsura's partial-emergence manifestation before recovery."},
+        {"dimension": "NARRATIVE_SPECIFICITY", "result": "FIX", "evidence": "The composition communicates generic divine victory but not the source's exact decisive mechanism.", "corrective_guidance": "Make the one climax action mechanically readable before decorative spectacle."},
+        {"dimension": "COMPOSITION", "result": "FIX", "evidence": "Lion, gods, troops, many weapons, buffalo and human figure compete; the decisive contact points are obscured.", "corrective_guidance": "Use a dominant triangular line from neck pin to trident to sword-at-neck; move only rejoicing gods to high distance."},
+        {"dimension": "EMOTIONAL_EXPRESSIVENESS", "result": "FIX", "evidence": "The scene is intense, but expressions read as generalized ferocity rather than controlled divine resolve and the antagonist's final emergence.", "corrective_guidance": "Prioritize face, body resistance and decisive calm at readable scale."},
+        {"dimension": "VISUAL_REFERENCE_ALIGNMENT", "result": "FIX", "evidence": "It has cinematic detail but not the benchmark's clean before/after storytelling and page-level hierarchy.", "corrective_guidance": "Use kgs-dm08-p28 only for climax hierarchy and aftermath logic; do not transfer its Mothers, Raktabija or blood mechanism."},
+        {"dimension": "PAGE_DESIGN_COMPATIBILITY", "result": "FIX", "evidence": "A full-page unit is appropriate, but the crowded edges and unrelated actors leave no controlled place for the exact narration.", "corrective_guidance": "Use the p29 full-page geometry with one top narration box and prioritized central action."},
+        {"dimension": "ANATOMY", "result": "FIX", "evidence": "The many-arm fan and overlapping body/buffalo forms make limb ownership and hand action difficult to verify.", "corrective_guidance": "Reduce visible action hands and make every arm attachment and held object readable."},
+        {"dimension": "LETTERING_READINESS", "result": "FIX", "evidence": "Weapons, hair, gods and storm clouds occupy the top safe region.", "corrective_guidance": "Design the exact p29 narration region before recovery and place nonessential high-distance detail around it."}
+      ]
+    },
+    {
+      "proof_id": "dm04-proof-full-page",
+      "attempt_number": 2,
+      "image_path": "books/DM04/illustration-proofs/images/dm04-proof-full-page/attempt-02-18f850fb0ba3acca.png",
+      "image_sha256": "18f850fb0ba3accaf956cc7d74cec34af610e174b8f68890e1ebdf87e9b54d32",
+      "gold_reference_ids": ["kgs-satya-p01", "kgs-dm08-p28"],
+      "overall": "FIX",
+      "dimensions": [
+        {"dimension": "SOURCE_FIDELITY", "result": "FIX", "evidence": "Half-emergence and trident contact are clearer, but the sword enters the mouth rather than making the sourced neck stroke, the foot pins the head rather than clearly the neck, and rejoicing gods are absent.", "corrective_guidance": "Place the foot at the buffalo neck, the great sword at the half-emerged Asura's neck and the authorized gods only in high distance."},
+        {"dimension": "RELIGIOUS_ICONOGRAPHY", "result": "FIX", "evidence": "Devī has a large unsourced disk halo and a reduced arm presentation without a stable approved identity.", "corrective_guidance": "Remove the disk halo and preserve the locked many-armed identity coherently without clutter."},
+        {"dimension": "CULTURAL_AUTHENTICITY", "result": "PASS", "evidence": "Principal clothing, jewelry, crown, trident, sword and buffalo staging read within Indian devotional visual culture and show no obvious foreign armor.", "corrective_guidance": null},
+        {"dimension": "CHARACTER_CONTINUITY", "result": "FIX", "evidence": "Devī's complexion, face, arm count and costume differ from attempt 1; no approved exact character reference exists.", "corrective_guidance": "Bind the text registry and secure exact-asset approval only after a passing result."},
+        {"dimension": "NARRATIVE_SPECIFICITY", "result": "FIX", "evidence": "The image is recognizably the final Mahiṣāsura encounter, but the decisive sword action and neck pin remain wrong.", "corrective_guidance": "Make the exact source mechanism, not a generic sword threat, the visual center."},
+        {"dimension": "COMPOSITION", "result": "FIX", "evidence": "The dominant diagonal is strong, but the key pin/trident/sword relationship is mechanically ambiguous and the stable ridge anchor is absent.", "corrective_guidance": "Stage the three contact points in one readable triangle and retain the battlefield ridge in distant continuity."},
+        {"dimension": "EMOTIONAL_EXPRESSIVENESS", "result": "PASS", "evidence": "Devī's controlled downward focus and the half-emerged antagonist's fear are legible.", "corrective_guidance": null},
+        {"dimension": "VISUAL_REFERENCE_ALIGNMENT", "result": "FIX", "evidence": "The painterly climax has strong focal scale, but it lacks the benchmark's page frame, action-to-aftermath context and family-readable restraint.", "corrective_guidance": "Use kgs-dm08-p28 for hierarchy only and reduce graphic red detail; use kgs-satya-p01 for dignified central focus."},
+        {"dimension": "PAGE_DESIGN_COMPATIBILITY", "result": "FIX", "evidence": "It fits an immersive page, but the gold empty top is not aligned with the exact narration box and the missing gods remove the scripted distant closure.", "corrective_guidance": "Use the p29 deterministic full-page and narration geometry."},
+        {"dimension": "ANATOMY", "result": "PASS", "evidence": "Visible principal limbs, hands and figures are coherent at inspected resolution.", "corrective_guidance": null},
+        {"dimension": "LETTERING_READINESS", "result": "FIX", "evidence": "Crown, halo, trident, hair and clouds cross the exact top rectangle despite a broad gold field above.", "corrective_guidance": "Place the exact narration region first; do not reserve more blank area than the script requires."}
+      ]
+    }
+  ],
+  "cross_image_findings": [
+    "All eight images achieve painterly surface polish, navy/gold ornament cues and cinematic lighting, but none reproduces the benchmarks' page-level storytelling method.",
+    "Six non-quiet images favor emblematic portrait posters over source-specific panel causality.",
+    "No PR6 image was conditioned on an actual benchmark page, approved character image or approved location image.",
+    "Devī's complexion, face, arm count, halo and equipment drift materially between attempts.",
+    "The battle attempt-1 red-crested Greco-Roman-looking helmet and unsupported demonic-face flag are explicit cultural-authenticity failures.",
+    "The generic top safe-region requirement distorted composition without guaranteeing lettering readiness; exact script-driven geometry is required instead."
+  ]
+}

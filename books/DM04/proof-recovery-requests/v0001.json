@@ -1,0 +1,579 @@
+{
+  "book_id": "DM04",
+  "content_hash": "25e9886bd8400cd2ac2fcaad4679309e3b5ee0cb57a41af92f98256956318bec",
+  "id": "proof-recovery-requests-c80ad5e4ae85cbb21f198fd4",
+  "kind": "proof-recovery-requests",
+  "parent_hash": null,
+  "payload": {
+    "book_id": "DM04",
+    "campaign_hash": "7fa551bdf686cfe142ad67790c322a553c0982955cf6a9c4627abe7b8f8c1fbf",
+    "campaign_id": "dm04-pr8-proof-recovery-campaign-01",
+    "execution_milestone": "PR8_IF_SEPARATELY_AUTHORIZED",
+    "generation_authorized": false,
+    "locked_hashes": {
+      "character_bible": "a0f22e1c57a8ba8bb4ed39b4840dd85f13aef5e3caec0806986e59bba8410914",
+      "character_registry": "55c2baf60d34188a547c72752683b575ecebaece3bbd751ff376ebdad6fab31f",
+      "location_bible": "85d6ef6982daf75cf18c9ebc34c8857715f23db060ae94a726e8a1fcab709189",
+      "manuscript": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+      "proof_package": "718b4bc0352c652403a1ca429be5acb170896cbf4cf93e23665e862490276c20",
+      "rules": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070",
+      "source_dossier": "75a6d7223209feb8850b482d9e0876cd323991652b436ac139470cadc95041d3",
+      "source_graph": "f3a02b5eebbe4b11035240f64ede32fcf889ff7b85f481dfe11b13744a0fc6b1",
+      "story_packet": "b784b365d9c921312285f453b4f6a4a15a7be935e2f0fdda6cfa8eba12797744",
+      "storyboard": "25cc8bed5368e78c36a3bec43ad03efb7fe2ddc4dd41124ca9ce02bcdcc18185"
+    },
+    "pr6_history": {
+      "attempts_allowed_per_proof": 2,
+      "attempts_allowed_total": 8,
+      "attempts_used_per_proof": 2,
+      "attempts_used_total": 8,
+      "counter_reset": false,
+      "ledger_path": "books/DM04/illustration-proofs/generation-ledger.jsonl",
+      "retry_ceiling_exhausted": true
+    },
+    "prepared_in_milestone": "PR7",
+    "recommended_pr8_budget": {
+      "approval_required": [
+        "explicit PR8 recovery-campaign approval",
+        "fresh provider capability and availability record",
+        "exact request and reference-asset hash approval",
+        "fresh priced budget approval before any billable provider call"
+      ],
+      "authorization_status": "NOT_AUTHORIZED",
+      "currency": "USD",
+      "expected_cost": "UNKNOWN_UNTIL_PR8_PROVIDER_CAPABILITY_AND_PRICE_RECHECK",
+      "historical_context": "The PR6 session-scoped Codex backend reported USD 0.00 direct cost, but that does not prove future availability or price.",
+      "maximum_full_regenerations": 3,
+      "maximum_local_edits": 1,
+      "maximum_operations_per_proof": 1,
+      "maximum_paid_spend_minor_units": 0,
+      "maximum_total_image_operations": 4,
+      "paid_calls_enabled": false,
+      "stop_conditions": [
+        "any request cannot provide role-labeled reference inputs to the selected backend",
+        "provider receipt cannot prove which exact reference images were submitted",
+        "a recovered proof receives FIX or ESCALATE on source fidelity, religious iconography or cultural authenticity",
+        "a recovered proof contains a forbidden foreign-style element or prohibited benchmark content transfer",
+        "one authorized recovery operation for that proof has been used",
+        "any hash, identity, approval or source binding is stale"
+      ]
+    },
+    "request_count": 4,
+    "requests": [
+      {
+        "campaign_id": "dm04-pr8-proof-recovery-campaign-01",
+        "character_references": [
+          {
+            "character_id": "dm-medhas",
+            "image_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+            "reference_id": "character-reference-f09730949546d503802d744f"
+          },
+          {
+            "character_id": "dm-suratha",
+            "image_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+            "reference_id": "character-reference-8646894fdce34425822771a5"
+          },
+          {
+            "character_id": "dm-samadhi",
+            "image_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+            "reference_id": "character-reference-0c154da6e212e1b63ce29019"
+          }
+        ],
+        "composition_goal": "Intimate over-shoulder medium panel from behind the two listeners; Medhas occupies the speaking third, faces and open hand readable, no generic poster symmetry.",
+        "concise_prompt": "PANEL_ILLUSTRATION for DM04 p01-panel-02. Preserve the current attempt-2 hermitage, three identities and quiet dusk/firelight, but recompose closer: Medhas raises one open hand while asking his question; Suratha and Samādhi turn and listen. Keep all figures unarmed. Use reference A only for Khatakshetra finish, B only for speaker/listener rhythm, and D only for forest depth. Clean art, no text. Reserve the exact dialogue geometry and Medhas tail anchor. Do not copy any benchmark person, deity, lion, palace, dialogue or plot.",
+        "cultural_authenticity_constraints": [
+          "Indian sage and listener garments without invented rank insignia",
+          "no imported fantasy armor or weapon",
+          "no modern object",
+          "forest-hermitage proposals remain source-silent"
+        ],
+        "event_ids": [
+          "dm-event-008"
+        ],
+        "generation_authorized": false,
+        "lettering_strategy": {
+          "artwork_contains_text": false,
+          "geometry_key": "page-1-panel-2",
+          "speaker_tail_anchor_required": true
+        },
+        "page_id": "page-27d143ae995bf60742b65c5b",
+        "page_number": 1,
+        "page_script_path": "books/DM04/page-scripts/page-0001.v0003.json",
+        "page_script_sha256": "4509f47443c27b55dd6d8914def8119393fcc16f23b56a0c328c094c0a042cc0",
+        "panel_id": "p01-panel-02",
+        "parent_pr6": {
+          "attempts_used": 2,
+          "image_hash": "578e0fcdb4dcf016b7b85a50736e498859528560f569885ddf0f8060003f32fc",
+          "request_hash": "7da8964edd9880663e4847cca045736273f3eed543a10b4c7a588ba3006c576b",
+          "review_hash": "b561d06259a14dad40b40844dc2013ddb65e4d946cd7a4d8905859e8ae1f804e"
+        },
+        "pr6_attempts_preserved": 2,
+        "principal_action": "Medhas raises one open hand as he asks the locked question; Suratha and Samādhi turn toward him and listen.",
+        "production_unit": "PANEL_ILLUSTRATION",
+        "prohibited_transfers": [
+          "Vishnu",
+          "Narada",
+          "Sugriva",
+          "DM08 Goddess",
+          "lion",
+          "Himalayan palace",
+          "benchmark dialogue",
+          "benchmark plot"
+        ],
+        "proof_id": "dm04-proof-quiet-conversation",
+        "proof_spec_hash": "9cebfb2575456dc1986f11c1feb6ce3de65c0d18706571ab4b787ccc464223ac",
+        "recommendation": "LOCAL_EDIT",
+        "recovery_operation_number": 1,
+        "recovery_request_id": "dm04-recovery-quiet-conversation-pr7",
+        "reference_package": [
+          {
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+            "reference_id": "kgs-satya-p01",
+            "role": "REFERENCE_A_SERIES_VISUAL_IDENTITY",
+            "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+            "use": "navy/gold/cream hierarchy and painterly dignity only"
+          },
+          {
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+            "reference_id": "kgs-dm08-p09",
+            "role": "REFERENCE_B_PAGE_COMPOSITION",
+            "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d",
+            "use": "speaker/listener staging, gaze direction and reaction scale only"
+          },
+          {
+            "content_transfer": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+            "path": null,
+            "reference_id": null,
+            "role": "REFERENCE_C_CHARACTER_IDENTITY",
+            "sha256": null,
+            "use": "locked text registry only"
+          },
+          {
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p02.png",
+            "reference_id": "kgs-satya-p02",
+            "role": "REFERENCE_D_SETTING_ENVIRONMENT",
+            "sha256": "a0fa07b60d1b8b128b541300f3fb5e26358863e3153c719e2d0aacb0fd7858dd",
+            "use": "forest assembly depth and warm conversational environment only"
+          }
+        ],
+        "request_hash": "ebecbcca2f6e176b482e1ccff0ef503b56563a2570132a67ae998c9a0b767b01",
+        "required_character_ids": [
+          "dm-medhas",
+          "dm-suratha",
+          "dm-samadhi"
+        ],
+        "review_checklist": [
+          "SOURCE_FIDELITY",
+          "RELIGIOUS_ICONOGRAPHY",
+          "CULTURAL_AUTHENTICITY",
+          "CHARACTER_CONTINUITY",
+          "NARRATIVE_SPECIFICITY",
+          "COMPOSITION",
+          "EMOTIONAL_EXPRESSIVENESS",
+          "VISUAL_REFERENCE_ALIGNMENT",
+          "PAGE_DESIGN_COMPATIBILITY",
+          "ANATOMY",
+          "LETTERING_READINESS"
+        ],
+        "source_iconography_constraints": [
+          "Suratha and Samādhi carry no weapon",
+          "no boon, deity or doctrine is introduced",
+          "only the three frame characters appear"
+        ]
+      },
+      {
+        "campaign_id": "dm04-pr8-proof-recovery-campaign-01",
+        "character_references": [
+          {
+            "character_id": "dm-devi",
+            "image_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+            "reference_id": "character-reference-ad0dad819048c3e2fb5e86b0"
+          },
+          {
+            "character_id": "dm-gods",
+            "image_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+            "reference_id": "character-reference-8e0b68d3157fc2c393f440e5"
+          }
+        ],
+        "composition_goal": "One central complete Devī silhouette with a readable many-armed implication; donor radiance paths curve from distinct origins to exact body regions, with donors secondary and uncropped.",
+        "concise_prompt": "FULL_PAGE_IMMERSIVE DM04 manifestation. One action only: the named gods' distinct radiances form the corresponding regions of one complete Devī body. Keep a coherent many-armed divine identity, all arm attachments anatomical, donors secondary and fully inside frame. Body formation only—no weapons, gifts, lion, mounts, chariot or halo disks. Reference A supplies series finish only; B supplies manifestation rhythm only. Clean art, no text; honor the p04 narration geometry. Never copy Kali, Chamunda, Raktabija, the Mothers, Vishnu's cover pose, or any benchmark story content.",
+        "cultural_authenticity_constraints": [
+          "Indian devotional visual language",
+          "donor identities and garments must not become invented universal canon",
+          "no foreign armor or architecture",
+          "source-silent details explicitly remain proposals"
+        ],
+        "event_ids": [
+          "dm-event-009"
+        ],
+        "generation_authorized": false,
+        "lettering_strategy": {
+          "artwork_contains_text": false,
+          "geometry_key": "page-4-full",
+          "speaker_tail_anchor_required": false
+        },
+        "page_id": "page-5316f7271234e4ab31991528",
+        "page_number": 4,
+        "page_script_path": "books/DM04/page-scripts/page-0004.v0003.json",
+        "page_script_sha256": "f7322c12dd28c43c0c9172f2d06fde902a2916c7a082403cb3d365e707bab487",
+        "panel_id": "p04-panel-01",
+        "parent_pr6": {
+          "attempts_used": 2,
+          "image_hash": "21af6bf894e1abc6d63f6d797ccebebda569e65f372658ff4cc126164f3a7139",
+          "request_hash": "f7e211a59c41278462847ba60fc3553f70d36981ea162f88b75764c2e340c43b",
+          "review_hash": "7b40da0afef3e8aa65d6b84ae7f7a284960bf76a1fed212131f3e245c40c22d6"
+        },
+        "pr6_attempts_preserved": 2,
+        "principal_action": "Distinct radiances from the named divine donors converge into the corresponding regions of one fully revealed Devī form.",
+        "production_unit": "FULL_PAGE_IMMERSIVE",
+        "prohibited_transfers": [
+          "Vishnu cover pose",
+          "Kali or Chamunda",
+          "skull garland",
+          "Raktabija",
+          "seven Mothers",
+          "DM08 weapons",
+          "DM08 mounts",
+          "DM08 battle flags",
+          "benchmark theology or plot"
+        ],
+        "proof_id": "dm04-proof-divine-reveal",
+        "proof_spec_hash": "3d882c732da466ab49daadfe1e4c15b14d422fbe7dd742c4b39f36cc3a07f323",
+        "recommendation": "REGENERATE",
+        "recovery_operation_number": 1,
+        "recovery_request_id": "dm04-recovery-divine-reveal-pr7",
+        "reference_package": [
+          {
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+            "reference_id": "kgs-satya-p01",
+            "role": "REFERENCE_A_SERIES_VISUAL_IDENTITY",
+            "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+            "use": "devotional central hierarchy and premium series finish only"
+          },
+          {
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+            "reference_id": "kgs-dm08-p12",
+            "role": "REFERENCE_B_PAGE_COMPOSITION",
+            "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4",
+            "use": "manifestation staging, scale change and directed energy only"
+          },
+          {
+            "content_transfer": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+            "path": null,
+            "reference_id": null,
+            "role": "REFERENCE_C_CHARACTER_IDENTITY",
+            "sha256": null,
+            "use": "locked dm-devi and dm-gods text registry only"
+          },
+          {
+            "content_transfer": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+            "path": null,
+            "reference_id": null,
+            "role": "REFERENCE_D_SETTING_ENVIRONMENT",
+            "sha256": null,
+            "use": "manifestation-space location bible only; no approved exact image"
+          }
+        ],
+        "request_hash": "b241977c3460edf78032a04990282ad103180ab3e573c94c1482584b155063e9",
+        "required_character_ids": [
+          "dm-devi",
+          "dm-gods",
+          "dm-shiva",
+          "dm-yama",
+          "dm-vishnu",
+          "dm-soma",
+          "dm-indra",
+          "dm-varuna",
+          "dm-earth",
+          "dm-brahma",
+          "dm-surya",
+          "dm-vasus",
+          "dm-kubera",
+          "dm-prajapati",
+          "dm-agni",
+          "dm-twilights",
+          "dm-vayu"
+        ],
+        "review_checklist": [
+          "SOURCE_FIDELITY",
+          "RELIGIOUS_ICONOGRAPHY",
+          "CULTURAL_AUTHENTICITY",
+          "CHARACTER_CONTINUITY",
+          "NARRATIVE_SPECIFICITY",
+          "COMPOSITION",
+          "EMOTIONAL_EXPRESSIVENESS",
+          "VISUAL_REFERENCE_ALIGNMENT",
+          "PAGE_DESIGN_COMPATIBILITY",
+          "ANATOMY",
+          "LETTERING_READINESS"
+        ],
+        "source_iconography_constraints": [
+          "body formation only",
+          "many-armed identity implied coherently",
+          "no weapons, gifts, lion, mounts, chariot or halo disks",
+          "radiance origins and body destinations remain distinguishable"
+        ]
+      },
+      {
+        "campaign_id": "dm04-pr8-proof-recovery-campaign-01",
+        "character_references": [
+          {
+            "character_id": "dm-devi",
+            "image_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+            "reference_id": "character-reference-ad0dad819048c3e2fb5e86b0"
+          },
+          {
+            "character_id": "dm-lion",
+            "image_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+            "reference_id": "character-reference-ca1ec2443310e1930975812e"
+          },
+          {
+            "character_id": "dm-chikshura",
+            "image_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+            "reference_id": "character-reference-73412409c4f1b2c61395a6db"
+          }
+        ],
+        "composition_goal": "Fast horizontal panel: Devī at left and Cikṣura at right, both complete in frame; arrow clouds meet on a clear central axis; stable ridge behind; no already-fallen chariot state.",
+        "concise_prompt": "PANEL_ILLUSTRATION for DM04 p17-panel-01, horizontal action. One action only: Cikṣura's arrow cloud meets Devī's counter-arrows in midair. Devī left, Cikṣura right, both complete and expressive; her many-armed identity remains coherent but only bow and counter-arrow are foregrounded; lion secondary. Stable ridge and Indian battlefield depth. Do not show fallen horses, driver, broken bow/banner or sword/shield yet. No text. No Greco-Roman red crest, Western armor, RPG demonic armor, or flag emblem. References A/B/D control finish, action scale and depth only; copy no DM08 person, deity, mount, weapon, flag or plot.",
+        "cultural_authenticity_constraints": [
+          "restrained Indian battle equipment only when source- or tradition-supported",
+          "no canonical Asura uniform invented",
+          "source-silent headgear has no foreign crest",
+          "no unsupported flag emblem"
+        ],
+        "event_ids": [
+          "dm-event-016"
+        ],
+        "generation_authorized": false,
+        "lettering_strategy": {
+          "artwork_contains_text": false,
+          "geometry_key": "page-17-panel-1",
+          "speaker_tail_anchor_required": false
+        },
+        "page_id": "page-354711e6abadf0d5b67a0147",
+        "page_number": 17,
+        "page_script_path": "books/DM04/page-scripts/page-0017.v0003.json",
+        "page_script_sha256": "9a6217a1ed8e2d4cca7fea5d1fd074eeac3a8877dee19b987b1aab37114fd358",
+        "panel_id": "p17-panel-01",
+        "parent_pr6": {
+          "attempts_used": 2,
+          "image_hash": "016faa6b34b5c1addeffd634554015033c1dbacd0ba6718dba1c767a17f3a619",
+          "request_hash": "381f280d563eef7eac1c982d4b01aaa70e06c83c79ac445cbeb8fee8a8e23c6c",
+          "review_hash": "14027187d4222aedfd3abbc966939bdf554cc2901efea95ba20ebbca54a43104"
+        },
+        "pr6_attempts_preserved": 2,
+        "principal_action": "Cikṣura's arrow cloud meets Devī's counter-arrows in midair as two readable opposing vectors.",
+        "production_unit": "PANEL_ILLUSTRATION",
+        "prohibited_transfers": [
+          "Raktabija",
+          "Aindri",
+          "elephant mount",
+          "Kali or Chamunda",
+          "seven Mothers",
+          "blood multiplication",
+          "demonic-face flag",
+          "red-crested Greco-Roman helmet",
+          "Roman or Hellenistic armor",
+          "benchmark plot"
+        ],
+        "proof_id": "dm04-proof-battle",
+        "proof_spec_hash": "ff7b1f1d55c0d3e8f37a9e796eef85688a33df00a65ba6c7c579314b8796b218",
+        "recommendation": "REGENERATE",
+        "recovery_operation_number": 1,
+        "recovery_request_id": "dm04-recovery-battle-pr7",
+        "reference_package": [
+          {
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+            "reference_id": "kgs-satya-p01",
+            "role": "REFERENCE_A_SERIES_VISUAL_IDENTITY",
+            "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+            "use": "series finish and dignified hierarchy only"
+          },
+          {
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p21.png",
+            "reference_id": "kgs-dm08-p21",
+            "role": "REFERENCE_B_PAGE_COMPOSITION",
+            "sha256": "332b208d14df3d94139a3ab598e7e7e327e49bc9d4bbf5f41ddf20d8260291af",
+            "use": "large battle scale and clear source mechanism only"
+          },
+          {
+            "content_transfer": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+            "path": null,
+            "reference_id": null,
+            "role": "REFERENCE_C_CHARACTER_IDENTITY",
+            "sha256": null,
+            "use": "locked text registry for Devī, lion and Cikṣura only"
+          },
+          {
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+            "reference_id": "kgs-dm08-p12",
+            "role": "REFERENCE_D_SETTING_ENVIRONMENT",
+            "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4",
+            "use": "mountain battlefield depth and opposing action lanes only"
+          }
+        ],
+        "request_hash": "d4a1bd243d569c67dfffa4252a8e94e4a767a9c837798d628018e51b6023d46f",
+        "required_character_ids": [
+          "dm-devi",
+          "dm-lion",
+          "dm-chikshura"
+        ],
+        "review_checklist": [
+          "SOURCE_FIDELITY",
+          "RELIGIOUS_ICONOGRAPHY",
+          "CULTURAL_AUTHENTICITY",
+          "CHARACTER_CONTINUITY",
+          "NARRATIVE_SPECIFICITY",
+          "COMPOSITION",
+          "EMOTIONAL_EXPRESSIVENESS",
+          "VISUAL_REFERENCE_ALIGNMENT",
+          "PAGE_DESIGN_COMPATIBILITY",
+          "ANATOMY",
+          "LETTERING_READINESS"
+        ],
+        "source_iconography_constraints": [
+          "Devī's coherent many-armed identity remains legible while only bow and counter-arrow are foregrounded",
+          "Cikṣura uses bow and arrows in this panel",
+          "lion is secondary and does not attack",
+          "equipment losses and on-foot sword/shield belong only to panel 2"
+        ]
+      },
+      {
+        "campaign_id": "dm04-pr8-proof-recovery-campaign-01",
+        "character_references": [
+          {
+            "character_id": "dm-devi",
+            "image_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+            "reference_id": "character-reference-ad0dad819048c3e2fb5e86b0"
+          },
+          {
+            "character_id": "dm-mahisha",
+            "image_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+            "reference_id": "character-reference-3d6085dacbd59c85f095ad47"
+          }
+        ],
+        "composition_goal": "Vertical immersive climax with a single triangular action line through neck pin, trident contact and sword-at-neck; stable ridge in distant continuity and small rejoicing gods high beyond the action.",
+        "concise_prompt": "FULL_PAGE_IMMERSIVE DM04 p29 climax. One decisive culmination: Devī pins the buffalo's neck; trident contact holds the form while her great sword reaches the neck of the half-emerged Asura emerging from the buffalo mouth. Keep Devī's many-armed identity coherent, contact points anatomically clear, stable ridge behind and only small rejoicing gods high in the distance. Family-appropriate: no blood spray, severed-neck emphasis, lion, foreground troops or disk halo. Clean art, no text; honor p29 narration geometry. References A/B/D provide hierarchy, climax clarity and terrain only. Copy no Raktabija, Chamunda, Mothers, blood mechanism, weapons, flags, dialogue or plot.",
+        "cultural_authenticity_constraints": [
+          "Indian divine and battle visual language",
+          "no imported fantasy armor or unsupported emblem",
+          "nonessential soldiers minimized",
+          "source-silent costume details remain proposals"
+        ],
+        "event_ids": [
+          "dm-event-021"
+        ],
+        "generation_authorized": false,
+        "lettering_strategy": {
+          "artwork_contains_text": false,
+          "geometry_key": "page-29-full",
+          "speaker_tail_anchor_required": false
+        },
+        "page_id": "page-ee247aeaffc829b0c7a69d76",
+        "page_number": 29,
+        "page_script_path": "books/DM04/page-scripts/page-0029.v0003.json",
+        "page_script_sha256": "45d7a6bce1ca841b6e134e965150d99bc08830743316a6d137f4a6b8c2e989f6",
+        "panel_id": "p29-panel-01",
+        "parent_pr6": {
+          "attempts_used": 2,
+          "image_hash": "18f850fb0ba3accaf956cc7d74cec34af610e174b8f68890e1ebdf87e9b54d32",
+          "request_hash": "cfec57a5b1c1c15991179a006c8f8dda7529491a3610078ba87bcd7c467521e3",
+          "review_hash": "5a3bf531147662ee0872a27f6ff5254c92f6642b8e64cc999ba345a9a64bd798"
+        },
+        "pr6_attempts_preserved": 2,
+        "principal_action": "Devī completes the decisive defeat while pinning the buffalo's neck: trident contact holds the form and the great sword reaches the neck of the half-emerged Asura.",
+        "production_unit": "FULL_PAGE_IMMERSIVE",
+        "prohibited_transfers": [
+          "Raktabija",
+          "Kali or Chamunda",
+          "seven Mothers",
+          "blood-drinking mechanism",
+          "DM08 weapons",
+          "DM08 lion",
+          "DM08 flags",
+          "benchmark captions or dialogue",
+          "benchmark plot"
+        ],
+        "proof_id": "dm04-proof-full-page",
+        "proof_spec_hash": "7ecb6152abc177a396e1abceaa352279573c6b9b272549a12081b1c7639496f0",
+        "recommendation": "REGENERATE",
+        "recovery_operation_number": 1,
+        "recovery_request_id": "dm04-recovery-full-page-pr7",
+        "reference_package": [
+          {
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+            "reference_id": "kgs-satya-p01",
+            "role": "REFERENCE_A_SERIES_VISUAL_IDENTITY",
+            "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+            "use": "dignified central sacred hierarchy and premium series finish only"
+          },
+          {
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+            "reference_id": "kgs-dm08-p28",
+            "role": "REFERENCE_B_PAGE_COMPOSITION",
+            "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5",
+            "use": "climax hierarchy, consequence clarity and emotional release only"
+          },
+          {
+            "content_transfer": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+            "path": null,
+            "reference_id": null,
+            "role": "REFERENCE_C_CHARACTER_IDENTITY",
+            "sha256": null,
+            "use": "locked dm-devi and dm-mahisha text registry only"
+          },
+          {
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p21.png",
+            "reference_id": "kgs-dm08-p21",
+            "role": "REFERENCE_D_SETTING_ENVIRONMENT",
+            "sha256": "332b208d14df3d94139a3ab598e7e7e327e49bc9d4bbf5f41ddf20d8260291af",
+            "use": "mountain battlefield depth and high-distance scale only"
+          }
+        ],
+        "request_hash": "b17c7e52a06596a80ef2f4eacbba0ca3dea09a7852036ef0c06a7b1eee664104",
+        "required_character_ids": [
+          "dm-devi",
+          "dm-mahisha",
+          "dm-gods"
+        ],
+        "review_checklist": [
+          "SOURCE_FIDELITY",
+          "RELIGIOUS_ICONOGRAPHY",
+          "CULTURAL_AUTHENTICITY",
+          "CHARACTER_CONTINUITY",
+          "NARRATIVE_SPECIFICITY",
+          "COMPOSITION",
+          "EMOTIONAL_EXPRESSIVENESS",
+          "VISUAL_REFERENCE_ALIGNMENT",
+          "PAGE_DESIGN_COMPATIBILITY",
+          "ANATOMY",
+          "LETTERING_READINESS"
+        ],
+        "source_iconography_constraints": [
+          "half-emerged Asura comes from the buffalo mouth",
+          "Devī pins the buffalo neck rather than the crown of its head",
+          "trident contact and great sword at the Asura neck are both unambiguous",
+          "many-armed identity remains coherent",
+          "only rejoicing gods in high distance",
+          "no lion in the focal action",
+          "no graphic blood spray or severed-neck emphasis",
+          "no disk halo"
+        ]
+      }
+    ],
+    "schema_version": "1.0"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

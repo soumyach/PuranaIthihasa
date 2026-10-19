@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "khatakshetra-scene-specific-prompt-workflow-v1",
+  "ordered_steps": [
+    "Resolve source and iconography constraints before prompt construction.",
+    "Select only the relevant reference assets and assign an explicit A, B, C or D role.",
+    "State one principal visual action.",
+    "State only the participating characters and event-correct manifestations.",
+    "Describe shot scale, staging, environment and narrative focus.",
+    "State essential Indian cultural conventions and current-story evidence status.",
+    "State critical exclusions, including forbidden content transfer.",
+    "Supply exact reference images when the provider supports it.",
+    "Keep source provenance, hashes and broader evidence in structured metadata rather than dumping it into the visual prompt."
+  ],
+  "prompt_sections": [
+    "PRODUCTION_UNIT",
+    "ONE_PRINCIPAL_ACTION",
+    "SUBJECTS_AND_IDENTITY",
+    "COMPOSITION",
+    "SETTING_AND_LIGHT",
+    "SERIES_VISUAL_LANGUAGE",
+    "CULTURAL_AND_ICONOGRAPHIC_CONSTRAINTS",
+    "LETTERING_GEOMETRY",
+    "DO_NOT_TRANSFER_OR_INTRODUCE"
+  ],
+  "conciseness_rule": "Do not include the complete source graph, entire character bible or complete rules document. Bind those hashes in metadata and include only resolved constraints relevant to this scene.",
+  "artwork_rule": "Generate clean artwork without permanent captions, dialogue, page numbers or watermarks unless a separately approved lettering experiment explicitly says otherwise.",
+  "failure_rule": "When one still would require mutually sequential or contradictory actions, return to the storyboard and use separate panels; never rewrite the source to fit a model limitation."
+}

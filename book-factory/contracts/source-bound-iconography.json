@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "dm04-source-bound-iconography-pr7",
+  "book_id": "DM04",
+  "locked_character_bible_hash": "a0f22e1c57a8ba8bb4ed39b4840dd85f13aef5e3caec0806986e59bba8410914",
+  "requirements": {
+    "devi": {
+      "character_id": "dm-devi",
+      "identity": "Devī / Caṇḍikā",
+      "must_preserve": [
+        "authorized divine identity",
+        "many-armed identity where the locked event or visual bible requires it",
+        "anatomically coherent shoulders, arms, hands and fingers",
+        "recognizable and correctly held authorized weapons",
+        "Indian clothing and ornamentation recorded as source facts or labeled proposals",
+        "stable relationship to the tawny-gold lion when the event includes him"
+      ],
+      "must_not_introduce": [
+        "unrelated goddess attributes",
+        "unsourced halo symbolism",
+        "duplicated or unsupported weapons",
+        "fixed ordinary two-arm identity where a many-armed depiction is required",
+        "attributes copied from Vishnu, Narada, Kali, Chamunda, Raktabija or the seven Mothers"
+      ]
+    },
+    "mahishasura": {
+      "character_id": "dm-mahisha",
+      "event_sequence": [
+        {"order": 1, "event_id": "dm-event-019", "manifestation_id": "dm-mahisha-buffalo"},
+        {"order": 2, "event_id": "dm-event-020", "manifestation_id": "dm-mahisha-lion"},
+        {"order": 3, "event_id": "dm-event-020", "manifestation_id": "dm-mahisha-armed-man"},
+        {"order": 4, "event_id": "dm-event-020", "manifestation_id": "dm-mahisha-elephant"},
+        {"order": 5, "event_id": "dm-event-020", "manifestation_id": "dm-mahisha-buffalo"},
+        {"order": 6, "event_id": "dm-event-021", "manifestation_id": "dm-mahisha-partial-emergence"}
+      ],
+      "must_preserve": [
+        "correct event-bound form",
+        "recognizable antagonist identity where applicable",
+        "final half-emergence from the buffalo mouth",
+        "clear neck pin, trident strike and great-sword beheading mechanism",
+        "family-appropriate non-graphic treatment"
+      ],
+      "sequence_rule": "Do not combine buffalo, lion, armed-man, elephant and returning-buffalo actions into one contradictory still. Use the separate locked panels on pages 25, 26 and 27.",
+      "must_not_introduce": ["merged form", "unsourced weapon", "graphic gore", "alternate defeat mechanism"]
+    },
+    "devi_lion": {
+      "character_id": "dm-lion",
+      "must_preserve": ["tawny-gold coat", "dark mane", "broad triangular head", "visual distinction from Mahiṣāsura's lion form", "event-correct presence"]
+    },
+    "cikshura": {
+      "character_id": "dm-chikshura",
+      "must_preserve": ["bow and arrow exchange", "subsequent loss of horses, driver, bow and banner", "continuation on foot with sword and shield"],
+      "panel_rule": "Page 17 panel 1 depicts only the counter-arrow exchange. Page 17 panel 2 depicts its ordered consequence."
+    }
+  },
+  "validation_rule": "Every generation request binds the exact event IDs, page-script hash, character IDs and manifestation IDs before prompt construction."
+}

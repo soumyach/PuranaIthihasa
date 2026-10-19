@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "khatakshetra-comparative-visual-review-v1",
+  "dimensions": [
+    "SOURCE_FIDELITY",
+    "RELIGIOUS_ICONOGRAPHY",
+    "CULTURAL_AUTHENTICITY",
+    "CHARACTER_CONTINUITY",
+    "NARRATIVE_SPECIFICITY",
+    "COMPOSITION",
+    "EMOTIONAL_EXPRESSIVENESS",
+    "VISUAL_REFERENCE_ALIGNMENT",
+    "PAGE_DESIGN_COMPATIBILITY",
+    "ANATOMY",
+    "LETTERING_READINESS"
+  ],
+  "outcomes": ["PASS", "FIX", "ESCALATE"],
+  "assessment_requirements": [
+    "exact reviewed image path and SHA-256",
+    "actual_pixels_inspected true",
+    "one assessment for every dimension",
+    "specific visible evidence",
+    "corrective guidance for every FIX or ESCALATE",
+    "exact Gold Standard reference IDs used for comparison",
+    "reviewer identity different from producer identity"
+  ],
+  "semantic_boundary": "Deterministic code validates bindings, completeness and hashes. Only an image-capable independent reviewer evaluates aesthetics, iconography, expressions and cultural authenticity from pixels.",
+  "pass_rules": [
+    "A visual-attractiveness PASS cannot override SOURCE_FIDELITY, RELIGIOUS_ICONOGRAPHY or CULTURAL_AUTHENTICITY failure.",
+    "Source accuracy alone does not satisfy NARRATIVE_SPECIFICITY, EMOTIONAL_EXPRESSIVENESS, VISUAL_REFERENCE_ALIGNMENT or PAGE_DESIGN_COMPATIBILITY.",
+    "Similarity to a benchmark is not success when benchmark story content has transferred."
+  ]
+}

@@ -125,3 +125,8 @@ class VisualReviewVersionStore(ImmutableVersionStore):
 class StyleApprovalRequestVersionStore(ImmutableVersionStore):
     def __init__(self, books_root):
         super().__init__(books_root, "style-approval-requests")
+
+
+class ProofRecoveryRequestVersionStore(ImmutableVersionStore):
+    def __init__(self, books_root):
+        super().__init__(books_root, "proof-recovery-requests")

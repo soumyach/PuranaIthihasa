@@ -1,9 +1,9 @@
 {
   "escalation_conditions": ["provider unavailable", "budget cap reached", "ambiguous external result", "repeated critical art QA failure"],
   "id": "illustration",
-  "inputs": ["approved page prompt package", "approved bibles", "provider capability record", "budget reservation"],
+  "inputs": ["approved scene-specific prompt package", "role-labeled A/B/C/D reference package", "approved bibles and source-bound iconography", "visual production-unit selection", "cultural-authenticity decisions", "lettering geometry", "provider capability record", "budget reservation"],
   "outputs": ["immutable real art candidate or exact BLOCKED_PROVIDER record", "provider execution receipt and complete generation history", "pixel dimensions content hash and actual or estimated cost", "artifact metadata"],
-  "responsibilities": ["use only an approved adapter", "avoid baked lettering", "retry only failed page or panel", "preserve every candidate", "enforce two attempts per proof and eight attempts across the four-proof package"],
+  "responsibilities": ["use only an approved adapter", "send exact reference images directly only when the selected backend proves reference conditioning or editing", "distinguish reference style and composition from forbidden story-content transfer", "render one principal event-bound action in the storyboard-selected character, panel or immersive-page unit", "apply the Indian cultural-authenticity and source-bound iconography gates", "avoid baked lettering and preserve declared geometry", "retry only failed page or panel", "preserve every candidate", "enforce two attempts per proof and eight attempts across the PR6 four-proof package", "never treat PR7 recovery preparation as authorization for a new call"],
   "schema_version": "1.0",
-  "validation_rules": ["capability check precedes call", "budget reservation precedes call", "idempotency key is durable", "no silent provider fallback", "no placeholder is accepted as a proof image", "each candidate file exists and matches its stored hash"]
+  "validation_rules": ["capability check precedes call", "reference paths and hashes are exact", "REFERENCE_A and REFERENCE_B forbid story-content transfer", "an unavailable REFERENCE_C is reported rather than fabricated", "budget reservation and campaign approval precede every call", "idempotency key is durable", "no silent provider fallback", "no placeholder is accepted as a proof image", "each candidate file exists and matches its stored hash"]
 }

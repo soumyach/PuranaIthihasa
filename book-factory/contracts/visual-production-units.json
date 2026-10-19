@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "khatakshetra-visual-production-units-v1",
+  "units": [
+    {
+      "type": "CHARACTER_REFERENCE",
+      "purpose": "A controlled identity image used only to maintain one approved character or manifestation across later scenes.",
+      "required": ["canonical character ID", "manifestation ID when applicable", "exact asset hash", "human approval ID", "source scope", "fixed features", "permitted variation", "forbidden transfers"],
+      "not_for": ["telling a complete story beat", "automatic approval of a scene", "transferring identity to another deity"]
+    },
+    {
+      "type": "PANEL_ILLUSTRATION",
+      "purpose": "One principal narrative moment designed for placement in a multi-panel page with known reading order and lettering geometry.",
+      "required": ["page and panel ID", "one principal action", "shot scale", "reading order", "character IDs", "setting ID", "panel geometry", "text-safe regions", "speaker-tail anchors when dialogue exists"],
+      "not_for": ["compressing an entire action sequence", "adding embedded permanent lettering", "turning every scene into a poster"]
+    },
+    {
+      "type": "FULL_PAGE_IMMERSIVE",
+      "purpose": "One uninterrupted composition reserved for a major emotional, divine or climactic moment selected by the locked storyboard.",
+      "required": ["page ID", "storyboard FULL_PAGE selection", "single dominant visual hierarchy", "event-bound action", "actual page lettering requirements", "edge and crop plan"],
+      "not_for": ["arbitrary negative-space masks", "dialogue-heavy scenes better served by panels", "unreviewed poster art"]
+    }
+  ],
+  "selection_rule": "The locked storyboard selects the unit. A source scene is never promoted to FULL_PAGE_IMMERSIVE merely because a generator prefers a portrait poster.",
+  "dm04_recovery_mapping": {
+    "dm04-proof-quiet-conversation": "PANEL_ILLUSTRATION",
+    "dm04-proof-divine-reveal": "FULL_PAGE_IMMERSIVE",
+    "dm04-proof-battle": "PANEL_ILLUSTRATION",
+    "dm04-proof-full-page": "FULL_PAGE_IMMERSIVE"
+  }
+}

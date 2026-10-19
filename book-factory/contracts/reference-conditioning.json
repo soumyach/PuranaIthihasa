@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "khatakshetra-reference-first-generation-v1",
+  "roles": [
+    {
+      "role": "REFERENCE_A_SERIES_VISUAL_IDENTITY",
+      "required": true,
+      "meaning": "One actual Gold Standard page establishes navy/gold/cream series presentation, painterly finish and page-level dignity.",
+      "content_transfer": "FORBIDDEN"
+    },
+    {
+      "role": "REFERENCE_B_PAGE_COMPOSITION",
+      "required": true,
+      "meaning": "One actual Gold Standard page or reviewed crop demonstrates the intended panel rhythm, camera hierarchy or immersive structure.",
+      "content_transfer": "FORBIDDEN"
+    },
+    {
+      "role": "REFERENCE_C_CHARACTER_IDENTITY",
+      "required": false,
+      "meaning": "An exact, human-approved character asset conditions identity only.",
+      "content_transfer": "ONLY_THE_BOUND_CHARACTER_ID",
+      "fail_closed": "If no human-approved exact asset exists, record UNAVAILABLE_NO_HUMAN_APPROVED_ASSET and use the locked text registry; never promote a PR6 FIX image into a character reference."
+    },
+    {
+      "role": "REFERENCE_D_SETTING_ENVIRONMENT",
+      "required": false,
+      "meaning": "An approved location reference controls recurring geography, light and spatial anchors.",
+      "content_transfer": "ONLY_THE_BOUND_LOCATION_ID",
+      "fail_closed": "If no approved exact setting image exists, bind the location-bible record and report image conditioning as unavailable."
+    }
+  ],
+  "new_story_specification": "Contains only the current DM04 page/panel, locked source events, character IDs, location ID, one principal action and approved visual proposals.",
+  "style_content_separation": {
+    "style_may_transfer": ["page hierarchy", "ornamental system", "palette relationship", "painterly finish", "camera and panel principles", "emotional clarity"],
+    "content_must_not_transfer": ["Vishnu", "Narada", "Raktabija", "Kali or Chamunda", "the seven Mothers", "Aindri", "benchmark weapons", "benchmark mounts", "benchmark flags", "benchmark theology", "benchmark plot"]
+  },
+  "execution_evidence": [
+    "provider operation declares reference conditioning or edit support",
+    "request contains each exact reference path, hash and role",
+    "provider receipt attests the references actually submitted",
+    "independent review checks both alignment and forbidden content transfer"
+  ],
+  "unsupported_behavior": "Capability metadata alone does not prove conditioning executed. If the provider receipt cannot evidence direct inputs, mark REFERENCE_CONDITIONING_EXECUTION_UNKNOWN."
+}

@@ -780,11 +780,16 @@ Rules:
 - Enforce zero unauthorized spend, durable intent-before-call logging, exact image hashes, two attempts per proof, and independent actual-pixel review.
 - Build a review contact sheet, but open style approval only when every latest proof independently passes.
 
-### PR7 — Proof repair strategy and style decision
+### PR7 — Visual Gold Standard, diagnosis, and recovery preparation
 
-- Do not add a third attempt under the PR6 policy. First obtain a human decision on whether to revise the proof specifications, change the provider/model, or explicitly authorize a new bounded proof run.
-- Add machine-checkable safe-region overlays and stronger scene-specific composition controls before any new generation.
-- Keep full-book illustration, lettering, PDF assembly, deployment, and publication out of scope until a representative proof set passes and receives exact-asset human style approval.
+- Verify both registered benchmark PDFs, visually inspect their actual pages, and extract a small hash-bound Gold Standard with exact provenance and reproducible Poppler extraction.
+- Diagnose PR6 from its eight persisted requests, receipts, images, reviews, provider metadata, budget, and ledger. Classify every conclusion as `VERIFIED`, `LIKELY_CAUSE`, `UNKNOWN`, or `UNSUPPORTED_CAPABILITY`.
+- Compare all eight exact PR6 images against relevant Gold Standard pages through an independent image-capable review. Deterministic code validates only hashes, geometry, record completeness, and policy bindings.
+- Replace page-level poster prompting with a reference-first package: A series identity, B page composition, C approved character identity when available, D setting, one new-story action, and explicit no-transfer rules.
+- Gate every request through Indian cultural authenticity and source-bound iconography. The PR6 red-crested Greco-Roman-looking helmet and unsupported demonic-face flag are forbidden unless separate reviewed evidence authorizes them.
+- Distinguish character references, narrative panels, and full-page immersive scenes. Bind exact panel/text geometry before generation rather than imposing a generic blank-area mask.
+- Prepare exactly four parent-linked DM04 recovery requests without executing them. Preserve the PR6 2×4 retry exhaustion and recommend a separate PR8 ceiling of one local edit plus three regenerations, one operation per proof, with zero paid spend authorized in PR7.
+- Keep full-book illustration, lettering, PDF assembly, deployment, publication, DM08 production, and source-graph changes out of scope.
 
 ## 12. Acceptance criteria for PR1
 

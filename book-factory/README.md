@@ -1,6 +1,15 @@
-# Khatakshetra Book Factory — Foundation PR6
+# Khatakshetra Book Factory — Foundation PR7
 
-PR6 preserves the complete PR5 literary and visual-preproduction package and adds a real-image execution boundary, durable cost/idempotency ledger, character-reference registry, strict two-attempt proof loop, independent pixel review, and a self-contained contact sheet. Eight genuine DM04 proof attempts were generated at zero direct monetary cost. Both attempts for every locked proof received independent `FIX`, so DM04 correctly remains at `ART_PROOFS`; no style approval is claimed. DM08 remains an immutable existing reference edition. See `docs/BOOK_FACTORY_FOUNDATION_PR6.md` for the execution report.
+PR7 preserves the complete PR6 execution record and adds an eight-page, hash-bound Visual Gold Standard extracted from the two registered reference PDFs; evidence-classified diagnosis of the PR6 quality gap; actual-pixel comparison of all eight PR6 attempts; reference-first prompt, cultural-authenticity, source-iconography, production-unit, lettering, and comparative-review contracts; and exactly four immutable, non-executable DM04 recovery requests. No image generation, paid call, manuscript rewrite, PDF assembly, DM08 production, source-graph change, publication, or deployment occurred. See `docs/BOOK_FACTORY_FOUNDATION_PR7.md` for the execution report.
+
+## PR7 benchmark and recovery workflow
+
+1. `scripts/extract_visual_gold_standard.py` verifies both exact local PDFs and the eight extracted page hashes; `--extract` reproducibly recreates them with Poppler at 72 dpi.
+2. `visual-gold-standard --require-source-assets` validates provenance, all A–H reference categories, source-PDF hashes, page hashes, dimensions, and curation fields.
+3. The reference package assigns separate roles A (series identity), B (page composition), C (approved character identity), and D (setting). Style/composition never authorize benchmark story-content transfer.
+4. Recovery prompts resolve source, iconography, culture, production unit, composition, and exact lettering geometry before one concise scene instruction is built.
+5. Comparative review examines actual pixels against exact reference pages across eleven dimensions. Deterministic code verifies bindings and completeness; an independent image-capable reviewer supplies semantic visual judgments.
+6. `prepare-proof-recovery --book-id DM04` is idempotent and stores exactly four requests for a separately authorized PR8. It never invokes a provider or resets PR6's exhausted counters.
 
 ## PR6 illustration-proof workflow
 
@@ -35,6 +44,8 @@ From the repository root, use the checked-in launcher:
 ./factory import-review-handoff --book-id DM04 --handoff PATH --response PATH
 ./factory manuscript-status --book-id DM04
 ./factory image-capabilities
+./factory visual-gold-standard --require-source-assets
+./factory prepare-proof-recovery --book-id DM04
 ./factory prepare-proof-generation --book-id DM04 --proof-id PROOF_ID
 ./factory import-proof-image --book-id DM04 --request REQUEST --image PNG --provider-receipt RECEIPT
 ./factory prepare-visual-review --book-id DM04 --proof-id PROOF_ID
@@ -92,14 +103,20 @@ The direct `manuscript_generation` and `editorial_review` adapters remain unavai
 - Hard budget reservation before provider execution. The checked-in policy permits zero paid spend.
 - Deterministic `PASS` / `FIX` / `ESCALATE` reports for source-event coverage, claim provenance, manuscript completeness, character/iconography fields, scene continuity, caption/dialogue duplication, page order, and PDF 3:4 geometry/duplicate render metadata.
 - Machine-readable contracts and reusable skills for the Director and six specialist roles.
+- Eight real reference pages with exact PDF/page provenance, known-good qualities, known shortcomings, and an offline extraction verifier.
+- A reference-first A/B/C/D conditioning architecture that separates visual guidance from prohibited benchmark characters, theology, equipment, and plot.
+- Reusable Indian cultural-authenticity and DM04 source-iconography gates, including explicit prohibition of the PR6 Greco-Roman red-crested helmet and unsupported demonic-face flag.
+- Distinct `CHARACTER_REFERENCE`, `PANEL_ILLUSTRATION`, and `FULL_PAGE_IMMERSIVE` units plus exact DM04 recovery lettering geometry.
+- An independent eleven-dimension comparative review of all eight real PR6 images and a side-by-side evidence artifact.
+- Exactly four versioned recovery requests with preserved PR6 parents, locked hashes, a recommended four-operation PR8 cap, and generation authorization set to false.
 - Offline unit tests, existing graph tests, dependency-free baseline Node tests, source-path/binary boundary checks, and GitHub Actions CI.
 
 ## Scaffolded or still blocked
 
 - Direct programmatic manuscript-generation and editorial-review provider adapters. PR4 uses the verified Codex session handoff instead.
 - A reusable credential-backed image service. PR6's real Codex-native adapter is host-injected and session-scoped; a plain repository process fails closed without that executor.
-- Page composition, editable SVG lettering, PDF assembly, font embedding, rendered-page inspection, or pixel comparison.
-- Automatic visual acceptance. PR6 uses an explicit independent Codex specialist handoff and preserves its actual-pixel `FIX` decisions.
+- Editable SVG lettering, PDF assembly, font embedding, or final composed-page inspection. PR7 specifies exact geometry but does not typeset a page.
+- Automatic visual acceptance. PR7 validates comparison records deterministically, but aesthetics, complex iconography, and cultural meaning still require an independent image-capable reviewer.
 - A paid provider credential, pinned external pricing model, or provider-side recovery API. PR6 made no paid call.
 - Git LFS enablement, publishing, deployment, PR creation, merging, sales, or email.
 
@@ -152,6 +169,8 @@ Implement `Provider.capabilities()`, `estimate_minor_units()`, and `execute()` f
 - DM04 publication remains blocked on target-market legal review, atomically partial source extraction, lack of blanket full-arc source/theological approval, and all visual production.
 - The Codex built-in image tool worked for this PR6 session, but no reusable repository credential, quota, or external price is configured.
 - All four latest DM04 proofs remain `FIX` after attempt two; the hard retry ceiling is exhausted and style approval is unopened.
+- PR7 recovery requests are prepared but not authorized. A future PR8 requires an explicit campaign decision, fresh backend capability evidence, exact reference-input receipts, and a fresh price/spend decision.
+- No human-approved exact character reference exists for the DM04 subjects; role C is deliberately recorded as unavailable rather than filled with a rejected proof.
 - No licensed pinned font family or approved Git LFS quota/storage policy exists.
 - Human theological/iconographic reviewer identities are not configured.
 
