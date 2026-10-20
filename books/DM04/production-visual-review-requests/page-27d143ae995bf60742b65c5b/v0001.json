@@ -1,0 +1,61 @@
+{
+  "book_id": "DM04",
+  "content_hash": "1e470f5053023e07a7b86df25a4324bda5c716f8ab98a631c8e1b2d8a02cfe2e",
+  "id": "production-visual-review-requests/page-27d143ae995bf60742b65c5b-deac3b62be81a74ea87a6f52",
+  "kind": "production-visual-review-requests/page-27d143ae995bf60742b65c5b",
+  "parent_hash": null,
+  "payload": {
+    "actual_pixels_required": true,
+    "actual_reading_size_required": true,
+    "book_id": "DM04",
+    "campaign_subject_hash": "5a5b7c2a606f47a9b72ef001f19ef9c8736f4b328d2434dae08c5d0b08c061d7",
+    "comparison_references": [
+      {
+        "input_index": 2,
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+        "role": "REFERENCE_A_SERIES_VISUAL_IDENTITY",
+        "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+      },
+      {
+        "input_index": 3,
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+        "role": "REFERENCE_B_PAGE_COMPOSITION",
+        "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+      },
+      {
+        "input_index": 4,
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p02.png",
+        "role": "REFERENCE_D_SETTING_ENVIRONMENT",
+        "sha256": "a0fa07b60d1b8b128b541300f3fb5e26358863e3153c719e2d0aacb0fd7858dd"
+      }
+    ],
+    "image_path": "books/DM04/production-pilot/images/page-27d143ae995bf60742b65c5b/v0001.png",
+    "image_sha256": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+    "independent_reviewer_required": true,
+    "milestone": "PR11",
+    "page_id": "page-27d143ae995bf60742b65c5b",
+    "producer_ids": [
+      "/root"
+    ],
+    "request_hash": "7a04342a41026798ac8165592961d5cc8107543783154a5b291bcc59611a2784",
+    "required_dimensions": [
+      "SOURCE_FIDELITY",
+      "RELIGIOUS_ICONOGRAPHY",
+      "CULTURAL_AUTHENTICITY",
+      "CHARACTER_CONTINUITY",
+      "NARRATIVE_CLARITY",
+      "ARTISTIC_QUALITY",
+      "LETTERING_READABILITY",
+      "COMPOSITION",
+      "REFERENCE_ALIGNMENT"
+    ],
+    "result_values": [
+      "PASS",
+      "FIX",
+      "ESCALATE"
+    ],
+    "schema_version": "1.0"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

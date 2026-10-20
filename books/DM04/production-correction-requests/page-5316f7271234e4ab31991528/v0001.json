@@ -1,0 +1,71 @@
+{
+  "book_id": "DM04",
+  "content_hash": "31ae2c8196f7a91f21478039a9656f9f102d02ad15786c5896adba334e00eb44",
+  "id": "production-correction-requests/page-5316f7271234e4ab31991528-5e264c3ce26338c26c97fa20",
+  "kind": "production-correction-requests/page-5316f7271234e4ab31991528",
+  "parent_hash": null,
+  "payload": {
+    "book_id": "DM04",
+    "failed_image_sha256": "cfac6ab6666e84fcd79d1fccd1aa5273adf4e28185d823cd92847131b7802819",
+    "generation_retry_authorized": false,
+    "localized_findings": [
+      {
+        "code": "PAGE04_DONOR_TO_BODY_MAP_NOT_AUDITABLE",
+        "dimension": "SOURCE_FIDELITY",
+        "discrepancy": "The image does not provide an auditable one-to-one map from each named donor to the required body region.",
+        "evidence": "At original resolution, several radiance ribbons overlap, pass behind hair and clothing, or terminate without a uniquely identifiable body-region endpoint.",
+        "message": "The general convergence is clear, but the exact named radiance-to-body-region map cannot be verified from the pixels.",
+        "page_id": "page-5316f7271234e4ab31991528",
+        "repair_type": "SOURCE_MAPPING_RECOMPOSITION",
+        "severity": "BLOCKING"
+      },
+      {
+        "code": "PAGE04_ICONOGRAPHY_REQUIRES_EXPERT_REVIEW",
+        "dimension": "RELIGIOUS_ICONOGRAPHY",
+        "discrepancy": "Named donor identities and several sacred visual attributes cannot be positively certified from the pixels.",
+        "evidence": "Multiple crowned donors repeat similar faces and clothing, the Moon, Sun, Vasus and twilights are not unambiguously distinguishable, and bright circular disks appear directly behind donor heads despite the no-halo-disk constraint.",
+        "message": "Ambiguous or repeated donor identities, uncertain gender presentation and prohibited halo-like disks require qualified religious-iconography review.",
+        "page_id": "page-5316f7271234e4ab31991528",
+        "repair_type": "RELIGIOUS_ICONOGRAPHY_EXPERT_REVIEW",
+        "severity": "BLOCKING"
+      },
+      {
+        "code": "PAGE04_ARBITRARY_CELESTIAL_ARCHITECTURE",
+        "dimension": "CULTURAL_AUTHENTICITY",
+        "discrepancy": "The setting uses elaborate fantasy-celestial palaces instead of the locked abstract luminous manifestation space.",
+        "evidence": "Original-resolution pixels show repeated towered palaces and cloud citadels across the top, sides and background, although the location bible explicitly excludes an arbitrary temple setting.",
+        "message": "Floating palace architecture conflicts with the locked abstract luminous manifestation-space treatment.",
+        "page_id": "page-5316f7271234e4ab31991528",
+        "repair_type": "ENVIRONMENT_RECOMPOSITION",
+        "severity": "BLOCKING"
+      },
+      {
+        "code": "PAGE04_LETTERING_SAFE_REGION_OCCUPIED",
+        "dimension": "LETTERING_READABILITY",
+        "discrepancy": "The locked top narration safe region is not protected.",
+        "evidence": "Shiva, another donor, cloud palaces, stars, hair and luminous streams occupy the full upper region where the long narration must be composed.",
+        "message": "The top safe region is filled by donors, architecture and energy, leaving no protected space for the long narration.",
+        "page_id": "page-5316f7271234e4ab31991528",
+        "repair_type": "LETTERING_REGION_REPAIR",
+        "severity": "BLOCKING"
+      }
+    ],
+    "milestone": "PR11",
+    "page_id": "page-5316f7271234e4ab31991528",
+    "pr6_counter_reset": false,
+    "preserve_other_page": true,
+    "publication_eligible": false,
+    "remaining_campaign_image_operations": 0,
+    "result": "ESCALATE",
+    "schema_version": "1.0",
+    "targeted_correction_instructions": [
+      "For a future separately authorized correction only, remove all floating palace architecture and literal halo disks; use an abstract navy-gold luminous field with a deliberately clear top narration zone.",
+      "Use a human-approved identity map or iconography sheet for every named donor, make each donor individually recognizable and fully inside frame, and route one visually distinct radiance stream from each donor to its exact specified body region.",
+      "Keep all Devi hands empty on this body-formation page, retain the absence of weapons, gifts, lion, mounts and chariots, and reveal every arm root clearly enough for anatomical review.",
+      "Do not retry under the current campaign authorization."
+    ],
+    "visual_review_hash": "c6bc6f6c6dd3a64bed96be6cb2b60f66602562f2b5e968860ecee54972a923e2"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

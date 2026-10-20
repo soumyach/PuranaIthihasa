@@ -1,0 +1,126 @@
+{
+  "book_id": "DM04",
+  "content_hash": "b666dd73ae79b3f5017107518b5f21ee86a2ba0e8b61fd5818fc58e1baba6900",
+  "id": "production-image-receipts/page-27d143ae995bf60742b65c5b-d90b0b9d79fb64c39b814c72",
+  "kind": "production-image-receipts/page-27d143ae995bf60742b65c5b",
+  "parent_hash": null,
+  "payload": {
+    "actual_cost_minor_units": null,
+    "actual_cost_status": "UNKNOWN_TOOL_INTERFACE_DOES_NOT_EXPOSE_INCREMENTAL_USD",
+    "book_id": "DM04",
+    "campaign_id": "dm04-pr10-real-production-slice-01",
+    "campaign_subject_hash": "5a5b7c2a606f47a9b72ef001f19ef9c8736f4b328d2434dae08c5d0b08c061d7",
+    "generation_request_record_hash": "f8fa09ea2e53eb4ef04810e42eb9c53ba13f3a74e27febc7d8ce837fbffdd153",
+    "image": {
+      "aspect_ratio": "3:4",
+      "bytes": 3088759,
+      "format": "PNG",
+      "height": 1448,
+      "integrity": "PASS_CRC_AND_PIXEL_STREAM",
+      "path": "books/DM04/production-pilot/images/page-27d143ae995bf60742b65c5b/v0001.png",
+      "readable": true,
+      "sha256": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+      "width": 1086
+    },
+    "imported_at": "2026-10-20T12:24:55Z",
+    "milestone": "PR11",
+    "operation": "edit",
+    "page_id": "page-27d143ae995bf60742b65c5b",
+    "producer_ids": [
+      "/root"
+    ],
+    "provider": {
+      "actual_incremental_usd": "UNKNOWN_NOT_EXPOSED",
+      "api_key_supplied": false,
+      "automatic_credit_purchase_requested": false,
+      "campaign_subject_hash": "5a5b7c2a606f47a9b72ef001f19ef9c8736f4b328d2434dae08c5d0b08c061d7",
+      "external_provider_authorization_requested": false,
+      "host_tool": "image_gen.imagegen",
+      "included_allowance_policy": "CURRENT_INCLUDED_ALLOWANCE_FIRST",
+      "operation": "edit",
+      "output_sha256": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+      "page_id": "page-27d143ae995bf60742b65c5b",
+      "paid_billing_requested": false,
+      "producer": {
+        "id": "/root",
+        "role": "illustration-producer"
+      },
+      "provider_capabilities": {
+        "host_session_scoped": true,
+        "reference_images": true,
+        "repository_programmatic_invocation": false
+      },
+      "provider_id": "codex-built-in-image-gen",
+      "provider_interface": "referenced_image_paths",
+      "provider_request_id": "exec-42d1a61c-40b1-4363-9430-59af4cca859d",
+      "purchased_credit_consumption": "NOT_REPORTED_NO_BALANCE",
+      "request_hash": "cf5610b02700837ef6bee853d645df6b66f1743c28e2ac8de581f401345c81e5",
+      "schema_version": "1.0",
+      "source_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-42d1a61c-40b1-4363-9430-59af4cca859d.png",
+      "submitted_edit_target": {
+        "input_index": 1,
+        "path": "books/DM04/illustration-proofs/images/dm04-proof-quiet-conversation/attempt-02-578e0fcdb4dcf016.png",
+        "role": "EDIT_TARGET_REJECTED_PR6_SOURCE_ONLY",
+        "sha256": "578e0fcdb4dcf016b7b85a50736e498859528560f569885ddf0f8060003f32fc"
+      },
+      "submitted_prompt": "Use case: illustration-story\nAsset type: private internal Khatakshetra DM04 clean comic-page artwork for page page-27d143ae995bf60742b65c5b, “A Question Beneath the Trees”\nOperation: edit Image 1; produce exactly one new image.\n\nInput images:\n- Image 1: EDIT TARGET. Preserve the forest-hermitage setting, quiet dusk firelight, and the recognizable identities of the three existing men. It is rejected prior art and may only be used as the edit source.\n- Image 2: REFERENCE A — series visual identity only. Use its premium Indian devotional-storybook finish and painterly dignity; do not copy its deity, people, title, lettering, objects, or plot.\n- Image 3: REFERENCE B — comic conversation composition only. Use speaker/listener rhythm, gaze direction, expressive faces, and reaction scale; do not copy any person, Goddess, lion, palace, clothing identity, dialogue, border text, or plot.\n- Image 4: REFERENCE D — forest environment only. Use layered forest depth and warm conversational atmosphere; do not copy sages, deities, story content, dialogue, or panel lettering.\n\nPrimary request: Preserve the same Medhas, Suratha, and Samadhi from Image 1, but recompose the conversation closer and more dramatically. Medhas, the elderly white-haired sage, raises one open hand while asking a serious question. Suratha, the royal listener in restrained blue-and-gold Indian garments, and Samadhi, the plainly dressed merchant, turn naturally toward him and listen with distinct attentive expressions.\n\nScene/backdrop: source-silent Indian forest hermitage at nightfall, low firelight, natural trees and modest thatched shelter; no palace.\nStyle/medium: richly painted Indian devotional storybook illustration matching Khatakshetra’s dignified navy, gold, cream, and warm-earth visual language.\nComposition/framing: portrait 3:4 clean art; intimate speaker/listener composition suitable for a two-panel comic page. Keep important faces and gestures unobstructed. Reserve a calm, low-detail upper region for a narration plaque and a clear open region near Medhas for a later editable dialogue balloon with a tail pointing to him.\nLighting/mood: quiet dusk, warm firelight on expressive faces, contemplative and intimate.\nText: no text, letters, numbers, speech balloons, captions, logos, signatures, or watermark.\nConstraints: exactly three human characters; Medhas is visibly speaking; Suratha and Samadhi are visibly listening; all figures unarmed; Indian garments without invented rank insignia; preserve natural anatomy and hands; clean finished artwork.\nAvoid: weapons, armor, fantasy equipment, crowns added to the merchant, deities, boons, lions, imported Western fantasy iconography, modern objects, extra people, copied benchmark characters, copied benchmark story content, graphic violence.",
+      "submitted_prompt_sha256": "392a72abc4fc9c9a4b36a77c48f5dce72ce0dace35f1bd0e757f6bab7e6c1d45",
+      "submitted_references": [
+        {
+          "input_index": 2,
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "role": "REFERENCE_A_SERIES_VISUAL_IDENTITY",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 3,
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+          "role": "REFERENCE_B_PAGE_COMPOSITION",
+          "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+        },
+        {
+          "input_index": 4,
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p02.png",
+          "role": "REFERENCE_D_SETTING_ENVIRONMENT",
+          "sha256": "a0fa07b60d1b8b128b541300f3fb5e26358863e3153c719e2d0aacb0fd7858dd"
+        }
+      ],
+      "usage_after": {
+        "free_rate_limit_resets_available": 3,
+        "ordinary_usage_allowed": true,
+        "plan_type": "prolite",
+        "purchased_credit_balance": "0",
+        "purchased_credits_present": false,
+        "resets_at": 1793101834,
+        "spend_control_reached": false,
+        "weekly_used_percent": 0
+      },
+      "usage_before": {
+        "free_rate_limit_resets_available": 3,
+        "ordinary_usage_allowed": true,
+        "plan_type": "prolite",
+        "purchased_credit_balance": "0",
+        "purchased_credits_present": false,
+        "resets_at": 1793101833,
+        "spend_control_reached": false,
+        "weekly_used_percent": 0
+      }
+    },
+    "publication_eligible": false,
+    "reference_validation": {
+      "receipt_hash": "a43742471dfbaf4d5987a39130ce7b6356805e4c3c67eb3f767aad947522f513",
+      "reference_conditioned": true,
+      "result": "PASS",
+      "submitted_reference_hashes": [
+        "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+        "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d",
+        "a0fa07b60d1b8b128b541300f3fb5e26358863e3153c719e2d0aacb0fd7858dd"
+      ]
+    },
+    "request_hash": "cf5610b02700837ef6bee853d645df6b66f1743c28e2ac8de581f401345c81e5",
+    "schema_version": "1.0",
+    "status": "GENERATED_AWAITING_INDEPENDENT_VISUAL_REVIEW"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

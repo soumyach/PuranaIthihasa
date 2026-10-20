@@ -14,7 +14,7 @@ def _fixture_arguments(parser):
 
 
 def build_parser():
-    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory real-production integration PR10")
+    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory controlled visual pilot PR11")
     parser.add_argument("--root", default=".", help="repository root (default: current directory)")
     parser.add_argument("--catalogue", help="explicit catalogue path (intended for offline fixtures and validation)")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -41,6 +41,20 @@ def build_parser():
     production_generation = subparsers.add_parser("prepare-production-generation", help="prepare one authorized reference-conditioned host request")
     production_generation.add_argument("--book-id", required=True)
     production_generation.add_argument("--page-id", required=True)
+    production_image = subparsers.add_parser("import-production-image", help="import one exact authorized PR11 host image and execution receipt")
+    production_image.add_argument("--book-id", required=True)
+    production_image.add_argument("--page-id", required=True)
+    production_image.add_argument("--request", required=True)
+    production_image.add_argument("--image", required=True)
+    production_image.add_argument("--provider-receipt", required=True)
+    production_review = subparsers.add_parser("prepare-production-visual-review", help="prepare independent actual-pixel review for one PR11 image")
+    production_review.add_argument("--book-id", required=True)
+    production_review.add_argument("--page-id", required=True)
+    import_production_review = subparsers.add_parser("import-production-visual-review", help="import one independent PR11 actual-pixel review")
+    import_production_review.add_argument("--book-id", required=True)
+    import_production_review.add_argument("--page-id", required=True)
+    import_production_review.add_argument("--request", required=True)
+    import_production_review.add_argument("--response", required=True)
     for command, help_text in (
         ("queue", "show deterministic queue selection and skip reasons"),
         ("blocked", "show exact blocked and excluded catalogue entries"),
@@ -173,6 +187,16 @@ def run(args):
         return director.import_production_campaign_approval(args.book_id, args.approval)
     if args.command == "prepare-production-generation":
         return director.prepare_production_generation(args.book_id, args.page_id)
+    if args.command == "import-production-image":
+        return director.import_production_image(
+            args.book_id, args.page_id, args.request, args.image, args.provider_receipt
+        )
+    if args.command == "prepare-production-visual-review":
+        return director.prepare_production_visual_review(args.book_id, args.page_id)
+    if args.command == "import-production-visual-review":
+        return director.import_production_visual_review(
+            args.book_id, args.page_id, args.request, args.response
+        )
     if args.command == "queue":
         return director.factory_queue(args.fixture_mode)
     if args.command == "blocked":

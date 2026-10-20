@@ -273,15 +273,16 @@ class PR9EndToEndTests(unittest.TestCase):
             self.assertEqual(art_job["result"], "ESCALATE")
             self.assertFalse(art_job["execution_receipt"]["real_provider_call"])
 
-    def test_17_actual_dm04_reports_exhaustion_without_new_art(self):
+    def test_17_actual_dm04_reports_completed_pr11_without_mutating_pr6_art(self):
         with tempfile.TemporaryDirectory() as temporary:
             before = tree_snapshot(ROOT / "books" / "DM04" / "illustration-proofs")
             director = FactoryDirector(ROOT, orchestration_runtime_root=Path(temporary) / "runtime")
             result = director.produce_book("DM04")
             codes = {item["code"] for item in result["run"]["blocked"]}
-            self.assertEqual(result["status"], "ESCALATE")
-            self.assertIn("PR6_IMAGE_ATTEMPT_BUDGET_EXHAUSTED", codes)
-            self.assertIn("PR7_RECOVERY_NOT_AUTHORIZED", codes)
+            self.assertEqual(result["status"], "REVIEWED_FIX_REQUIRED_CAMPAIGN_COMPLETE_NO_RETRY")
+            self.assertIn("PR11_INDEPENDENT_VISUAL_REVIEW_FIX", codes)
+            self.assertIn("PR11_INDEPENDENT_VISUAL_REVIEW_ESCALATE", codes)
+            self.assertEqual(result["run"]["actual_image_operations"], 2)
             self.assertFalse(result["mutated_art"])
             self.assertEqual(before, tree_snapshot(ROOT / "books" / "DM04" / "illustration-proofs"))
 

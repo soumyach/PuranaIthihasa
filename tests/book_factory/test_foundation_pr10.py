@@ -75,11 +75,18 @@ class PR10RealProductionIntegrationTests(unittest.TestCase):
                 if item["available"]:
                     self.assertEqual(sha256_bytes((ROOT / item["path"]).read_bytes()), item["sha256"])
 
-    def test_07_missing_campaign_authorization_blocks_generation(self):
+    def test_07_plan_never_self_authorizes_and_later_approval_is_exact(self):
         self.assertEqual(self.plan["authorization"]["status"], "NOT_GRANTED")
-        self.assertFalse(self.manager.status()["run"]["generation_authorized"])
-        with self.assertRaises(ContractError):
-            self.manager.prepare_generation(SELECTED_PAGE_IDS[0])
+        status = self.manager.status()["run"]
+        self.assertTrue(status["generation_authorized"])
+        approval = next(
+            item for item in ApprovalStore(ROOT / "books" / BOOK_ID / "approvals").list()
+            if item["id"] == status["approval_id"]
+        )
+        self.assertEqual(approval["subject_hash"], self.plan["authorization_subject_hash"])
+        for page_id in SELECTED_PAGE_IDS:
+            with self.assertRaises(ContractError):
+                self.manager.prepare_generation(page_id)
 
     def test_08_operation_ceiling_and_zero_cost_do_not_imply_authorization(self):
         subject = self.plan["authorization_subject"]
@@ -151,17 +158,22 @@ class PR10RealProductionIntegrationTests(unittest.TestCase):
     def test_15_persisted_execution_state_is_idempotent(self):
         repeated = self.manager.prepare()
         self.assertFalse(repeated["mutated"])
-        self.assertEqual(repeated["run"]["actual_image_operations"], 0)
-        self.assertEqual(repeated["run"]["actual_cost_minor_units"], 0)
+        self.assertEqual(repeated["run"]["actual_image_operations"], 2)
+        self.assertIsNone(repeated["run"]["actual_cost_minor_units"])
+        self.assertEqual(
+            repeated["run"]["actual_cost_status"],
+            "UNKNOWN_TOOL_INTERFACE_DOES_NOT_EXPOSE_INCREMENTAL_USD",
+        )
         self.assertEqual(len(list((ROOT / "books" / BOOK_ID / "production-slices").glob("v*.json"))), 1)
         self.assertEqual(len(list((ROOT / "books" / BOOK_ID / "production-campaign-requests").glob("v*.json"))), 1)
 
-    def test_16_one_director_invocation_stops_at_exact_real_blocker(self):
+    def test_16_one_director_invocation_reports_the_completed_no_retry_campaign(self):
         result = FactoryDirector(ROOT).produce_book(BOOK_ID)
-        self.assertEqual(result["status"], "ESCALATE")
+        self.assertEqual(result["status"], "REVIEWED_FIX_REQUIRED_CAMPAIGN_COMPLETE_NO_RETRY")
         self.assertFalse(result["mutated_art"])
-        self.assertEqual(result["run"]["status"], "AWAITING_CAMPAIGN_AUTHORIZATION")
-        self.assertEqual(result["run"]["manual_interventions_currently_required"], 1)
+        self.assertEqual(result["run"]["actual_image_operations"], 2)
+        self.assertEqual(result["run"]["independent_visual_review"], "2_OF_2_COMPLETE")
+        self.assertEqual(result["run"]["manual_interventions_currently_required"], 0)
 
     def test_17_queue_continuation_and_dm08_exclusion_are_preserved(self):
         queue = FactoryDirector(ROOT).factory_queue()

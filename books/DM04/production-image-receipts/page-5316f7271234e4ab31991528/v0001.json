@@ -1,0 +1,114 @@
+{
+  "book_id": "DM04",
+  "content_hash": "a71161c00cb5b3b83154117035fecb8e0a5e7c8a1a9b76848d7cb8d4d43c9e12",
+  "id": "production-image-receipts/page-5316f7271234e4ab31991528-29f830d0e301f6db2eafff20",
+  "kind": "production-image-receipts/page-5316f7271234e4ab31991528",
+  "parent_hash": null,
+  "payload": {
+    "actual_cost_minor_units": null,
+    "actual_cost_status": "UNKNOWN_TOOL_INTERFACE_DOES_NOT_EXPOSE_INCREMENTAL_USD",
+    "book_id": "DM04",
+    "campaign_id": "dm04-pr10-real-production-slice-01",
+    "campaign_subject_hash": "5a5b7c2a606f47a9b72ef001f19ef9c8736f4b328d2434dae08c5d0b08c061d7",
+    "generation_request_record_hash": "0bc362f57b74cacbf570c4ef8f94b9cda05799efce8c140d64c45816671327df",
+    "image": {
+      "aspect_ratio": "3:4",
+      "bytes": 3597811,
+      "format": "PNG",
+      "height": 1448,
+      "integrity": "PASS_CRC_AND_PIXEL_STREAM",
+      "path": "books/DM04/production-pilot/images/page-5316f7271234e4ab31991528/v0001.png",
+      "readable": true,
+      "sha256": "cfac6ab6666e84fcd79d1fccd1aa5273adf4e28185d823cd92847131b7802819",
+      "width": 1086
+    },
+    "imported_at": "2026-10-20T12:25:03Z",
+    "milestone": "PR11",
+    "operation": "generate",
+    "page_id": "page-5316f7271234e4ab31991528",
+    "producer_ids": [
+      "/root"
+    ],
+    "provider": {
+      "actual_incremental_usd": "UNKNOWN_NOT_EXPOSED",
+      "api_key_supplied": false,
+      "automatic_credit_purchase_requested": false,
+      "campaign_subject_hash": "5a5b7c2a606f47a9b72ef001f19ef9c8736f4b328d2434dae08c5d0b08c061d7",
+      "external_provider_authorization_requested": false,
+      "host_tool": "image_gen.imagegen",
+      "included_allowance_policy": "CURRENT_INCLUDED_ALLOWANCE_FIRST",
+      "operation": "generate",
+      "output_sha256": "cfac6ab6666e84fcd79d1fccd1aa5273adf4e28185d823cd92847131b7802819",
+      "page_id": "page-5316f7271234e4ab31991528",
+      "paid_billing_requested": false,
+      "producer": {
+        "id": "/root",
+        "role": "illustration-producer"
+      },
+      "provider_capabilities": {
+        "host_session_scoped": true,
+        "reference_images": true,
+        "repository_programmatic_invocation": false
+      },
+      "provider_id": "codex-built-in-image-gen",
+      "provider_interface": "referenced_image_paths",
+      "provider_request_id": "exec-7a51cc79-5480-4ffc-af95-464924aba1cb",
+      "purchased_credit_consumption": "NOT_REPORTED_NO_BALANCE",
+      "request_hash": "7e24e70043a86cf13a3be457c4c1c095fa2821d852c2e82ff970fafea6f065f3",
+      "schema_version": "1.0",
+      "source_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-7a51cc79-5480-4ffc-af95-464924aba1cb.png",
+      "submitted_edit_target": null,
+      "submitted_prompt": "Use case: illustration-story\nAsset type: private internal Khatakshetra DM04 full-page clean artwork for page page-5316f7271234e4ab31991528, “One Form, Fully Revealed”\nOperation: generate exactly one new image. This is a one-shot request; do not produce variants.\n\nInput images:\n- Image 1: REFERENCE A — series visual identity only. Use its premium Indian devotional-storybook finish, central sacred hierarchy, painterly dignity, deep navy, gold, cream, and warm-earth color discipline. Do not copy Vishnu, Lakshmi, Garuda, title lettering, frame, poses, faces, objects, garments, or plot.\n- Image 2: REFERENCE B — page-composition reference only. Use its large-scale central manifestation, directed energy, readable hierarchy, and dramatic change of scale. Do not copy Kali, Chamunda, Raktabija, skulls, sword, staff, lion, battlefield, flags, army, weapons, people, dialogue, lettering, or plot.\n\nPrimary request: Show one continuous sacred action: the named gods’ distinct radiances converge and become the corresponding regions of one complete Devī body. Śiva’s radiance forms her luminous face; Yama’s becomes her long dark hair; Viṣṇu’s becomes her coherent many arms; the Moon’s cool radiance forms her breast; Indra’s her waist; Varuṇa’s her thighs and legs; Earth’s strength her hips; Brahmā’s radiance her feet; sunlight shines in her toes; the Vasus’ radiance forms her fingers; Kubera’s her nose; Prajāpati’s her teeth; Agni’s her eyes; the two twilights form her brows; and Vāyu’s power forms her ears. Convey these correspondences through distinct colored streams joining the appropriate body regions without labels or diagram text.\n\nCharacter and action: Devī is one fully coherent, dignified Indian divine woman emerging upright from gathered light, serene and powerful. Her multiple arms are empty, graceful, symmetrical enough to read clearly, and anatomically joined at the shoulders and upper torso; hands and fingers are natural. The gods who contribute radiance remain secondary, smaller, reverent, culturally recognizable, fully inside the frame, and visually subordinate to Devī. They are donors of light, not a portrait gallery and not combatants.\n\nScene/backdrop: a vast sacred manifestation space with layered luminous atmosphere, faint celestial depth, and grounded Indian visual vocabulary; no battlefield and no palace scene.\nStyle/medium: richly painted Indian devotional storybook illustration matching the Khatakshetra series’ premium painterly finish; respectful religious iconography; luminous but not photorealistic.\nComposition/framing: portrait 3:4 full-page clean art. Devī occupies the commanding central vertical. Colored radiance streams travel clearly from the surrounding secondary gods into the matching regions of her body. Keep every donor fully within trim. Reserve a calm, lower-detail upper band for a later editable narration plaque without placing text or a box.\nLighting/mood: sacred grandeur, awe, revelation, warm gold balanced with cool moonlight and distinct radiant colors.\nText: no text, letters, numbers, labels, captions, speech balloons, logos, signatures, or watermark.\nHard constraints: body formation only; no weapons, gifts, lion, animal mount, chariot, armor, shield, halo disks, battlefield, army, demons, severed heads, skull ornaments, blood, or combat. Do not transfer characters or story content from either reference. Do not depict Kali, Chamunda, Raktabija, the Mothers, Vishnu’s cover pose, or any benchmark-story character. Classical modest Indian clothing and restrained divine jewelry are allowed, but no object may be held in any hand.\nAvoid: extra limbs detached from the body, duplicated fingers, malformed hands, cropped donors, copied reference faces, Western fantasy iconography, modern objects, graphic violence, typographic marks, and invented narrative events.",
+      "submitted_prompt_sha256": "49b9638ac65644f6b6f34d6ab38df324a9d16fde19372d79477376f1cf40b80c",
+      "submitted_references": [
+        {
+          "input_index": 1,
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "role": "REFERENCE_A_SERIES_VISUAL_IDENTITY",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+          "role": "REFERENCE_B_PAGE_COMPOSITION",
+          "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+        }
+      ],
+      "usage_after": {
+        "free_rate_limit_resets_available": 3,
+        "ordinary_usage_allowed": true,
+        "plan_type": "prolite",
+        "purchased_credit_balance": "0",
+        "purchased_credits_present": false,
+        "resets_at": 1793101834,
+        "spend_control_reached": false,
+        "weekly_used_percent": 0
+      },
+      "usage_before": {
+        "free_rate_limit_resets_available": 3,
+        "ordinary_usage_allowed": true,
+        "plan_type": "prolite",
+        "purchased_credit_balance": "0",
+        "purchased_credits_present": false,
+        "resets_at": 1793101834,
+        "spend_control_reached": false,
+        "weekly_used_percent": 0
+      }
+    },
+    "publication_eligible": false,
+    "reference_validation": {
+      "receipt_hash": "c1d749843a8e80acacb50b8abe79a549319fc939df1c7b02b0eae79b5bc78d8e",
+      "reference_conditioned": true,
+      "result": "PASS",
+      "submitted_reference_hashes": [
+        "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+        "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+      ]
+    },
+    "request_hash": "7e24e70043a86cf13a3be457c4c1c095fa2821d852c2e82ff970fafea6f065f3",
+    "schema_version": "1.0",
+    "status": "GENERATED_AWAITING_INDEPENDENT_VISUAL_REVIEW"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

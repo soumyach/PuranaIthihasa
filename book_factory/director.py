@@ -1,4 +1,4 @@
-"""Single user-facing orchestration facade for Foundation PR9."""
+"""Single user-facing orchestration facade for the Khatakshetra Book Factory."""
 
 import json
 from copy import deepcopy
@@ -111,7 +111,7 @@ class FactoryDirector:
                 states.append({"book_id": book_id, "status": "INVALID", "message": str(exc)})
         return {
             "factory_version": __version__,
-            "implementation": "REAL_PRODUCTION_INTEGRATION_PR10",
+            "implementation": "CONTROLLED_VISUAL_PRODUCTION_PILOT_PR11",
             "catalogue_books": len(books),
             "readiness_counts": {state: sum(book["readiness"] == state for book in books) for state in sorted({book["readiness"] for book in books})},
             "active_runs": states,
@@ -1576,6 +1576,23 @@ class FactoryDirector:
             raise ContractError("PR10 generation is locked to DM04", {"book_id": book_id})
         return self.real_production.prepare_generation(page_id)
 
+    def import_production_image(self, book_id, page_id, request_path, image_path, provider_receipt_path):
+        if book_id != "DM04":
+            raise ContractError("PR11 image import is locked to DM04", {"book_id": book_id})
+        return self.real_production.import_image(
+            page_id, request_path, image_path, provider_receipt_path
+        )
+
+    def prepare_production_visual_review(self, book_id, page_id):
+        if book_id != "DM04":
+            raise ContractError("PR11 visual review is locked to DM04", {"book_id": book_id})
+        return self.real_production.prepare_visual_review(page_id)
+
+    def import_production_visual_review(self, book_id, page_id, request_path, response_path):
+        if book_id != "DM04":
+            raise ContractError("PR11 visual review import is locked to DM04", {"book_id": book_id})
+        return self.real_production.import_visual_review(page_id, request_path, response_path)
+
     def factory_queue(self, fixture_mode=False):
         return self.orchestrator.queue(fixture_mode)
 
@@ -2067,5 +2084,11 @@ class FactoryDirector:
                 "publication_eligible": False,
             },
             "pr10": pr10,
-            "note": "PR10 binds a real two-page DM04 slice and stops at the separately required campaign authorization. It generated no new art or PDF, did not modify DM08 or the source graph, and did not fabricate semantic visual approval.",
+            "pr11": ({
+                "status": pr10["status"],
+                "actual_image_operations": pr10["actual_image_operations"],
+                "actual_cost_minor_units": pr10["actual_cost_minor_units"],
+                "publication_eligible": False,
+            } if pr10 and pr10["actual_image_operations"] else None),
+            "note": "PR11 executed the exact two-operation private DM04 pilot, imported independent actual-pixel FIX/ESCALATE reviews, and stopped without composition, PDF, publication, DM08 changes or source-graph mutation.",
         }

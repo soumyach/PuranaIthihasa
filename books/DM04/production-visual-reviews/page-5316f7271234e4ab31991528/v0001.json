@@ -1,0 +1,129 @@
+{
+  "book_id": "DM04",
+  "content_hash": "9b02bff2d4d4d626a822243673e97fba00063701626f749e98d4935ac6fb4917",
+  "id": "production-visual-reviews/page-5316f7271234e4ab31991528-b508a8c26a9a4f653b51801a",
+  "kind": "production-visual-reviews/page-5316f7271234e4ab31991528",
+  "parent_hash": null,
+  "payload": {
+    "assessments": [
+      {
+        "dimension": "SOURCE_FIDELITY",
+        "evidence": "The central action is recognizable: multiple colored radiance streams converge on one complete many-armed Devi while donor figures remain around her, and no gifts, weapons, lion, mount or chariot appears. The precise source correspondence from each named donor to face, hair, arms, breast, waist, thighs and legs, hips, feet, toes, fingers, nose, teeth, eyes, brows and ears is not independently legible from the pixels; streams overlap, pass behind hair and clothing, or terminate ambiguously. The locked manifestation-space record calls for abstract luminous space with no arbitrary temple setting, but extensive floating palace and tower architecture fills the cloud background.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "RELIGIOUS_ICONOGRAPHY",
+        "evidence": "Several donor identities cannot be positively distinguished from pixels alone: multiple crowned male donors repeat similar faces and dress, and the Moon, Sun, Vasus, twilights and other contributors are not unambiguously separable without labels or a locked identity reference. Bright circular disks sit directly behind multiple donor heads despite the request's explicit prohibition on halo disks and the character bible's prohibition on unsourced halo symbolism. A qualified religious-iconography reviewer must confirm the donor identities, gender presentations and radiance-to-body correspondences before this can be treated as source-certified sacred imagery.",
+        "result": "ESCALATE"
+      },
+      {
+        "dimension": "CULTURAL_AUTHENTICITY",
+        "evidence": "The clothing, crowns, jewelry and devotional central hierarchy are recognizably Indian in visual vocabulary. The repeated floating palaces, cloud citadels and nearly interchangeable crowned donor figures introduce a generic fantasy-celestial treatment that weakens the source-bounded abstract manifestation space.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "CHARACTER_CONTINUITY",
+        "evidence": "There is no human-approved exact character-identity image for Devi or the donor gods in the generation request, so the central face, arm count and individual donor identities cannot be certified against a visual lock. The central Devi is internally dominant and coherent, but the donor roster includes repeated and crowded crowned faces whose one-to-one identity continuity is not visually auditable.",
+        "result": "ESCALATE"
+      },
+      {
+        "dimension": "NARRATIVE_CLARITY",
+        "evidence": "At thumbnail and original size the viewer immediately reads divine energies forming a single central Goddess. The required one-to-one formation map is not readable: colored ribbons provide general convergence but do not clearly communicate which donor forms each specified body region.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "ARTISTIC_QUALITY",
+        "evidence": "The 1086 by 1448 render has strong central hierarchy, luminous color control, polished fabric and jewelry rendering, and a premium painterly finish comparable in surface resolution to the PR7 references. No decisive missing digit, fused face, detached hand or impossible joint is visible at original resolution, although several rear arm roots are occluded by hair and luminous ribbons and therefore cannot be fully audited.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "LETTERING_READABILITY",
+        "evidence": "No raster text, pseudo-lettering, logo, signature or watermark is present. The required normalized top safe rectangle is occupied by Shiva, another donor, cloud palaces, stars, hair and luminous streams; the long locked narration cannot be placed there without obscuring sacred figures or action.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "COMPOSITION",
+        "evidence": "The central Devi is clearly dominant and the vertical full-page reading is immediate. The donor ring is over-dense, several donors are presented as partial busts or crowded edge groups rather than fully contained secondary figures, and the energy ribbons cross faces and arm roots. The upper lettering zone has no protected negative space, so the composition is not page-assembly ready.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "REFERENCE_ALIGNMENT",
+        "evidence": "The image uses Reference A's premium devotional hierarchy and navy-gold luminous finish and Reference B's scale shift and directed-energy rhythm. No Kali, skull garland, sword, staff, lion, battlefield, army, flags, gore or copied benchmark plot action is visible.",
+        "result": "PASS"
+      }
+    ],
+    "book_id": "DM04",
+    "campaign_subject_hash": "5a5b7c2a606f47a9b72ef001f19ef9c8736f4b328d2434dae08c5d0b08c061d7",
+    "correction_instructions": [
+      "For a future separately authorized correction only, remove all floating palace architecture and literal halo disks; use an abstract navy-gold luminous field with a deliberately clear top narration zone.",
+      "Use a human-approved identity map or iconography sheet for every named donor, make each donor individually recognizable and fully inside frame, and route one visually distinct radiance stream from each donor to its exact specified body region.",
+      "Keep all Devi hands empty on this body-formation page, retain the absence of weapons, gifts, lion, mounts and chariots, and reveal every arm root clearly enough for anatomical review.",
+      "Do not retry under the current campaign authorization."
+    ],
+    "findings": [
+      {
+        "code": "PAGE04_DONOR_TO_BODY_MAP_NOT_AUDITABLE",
+        "dimension": "SOURCE_FIDELITY",
+        "discrepancy": "The image does not provide an auditable one-to-one map from each named donor to the required body region.",
+        "evidence": "At original resolution, several radiance ribbons overlap, pass behind hair and clothing, or terminate without a uniquely identifiable body-region endpoint.",
+        "message": "The general convergence is clear, but the exact named radiance-to-body-region map cannot be verified from the pixels.",
+        "page_id": "page-5316f7271234e4ab31991528",
+        "repair_type": "SOURCE_MAPPING_RECOMPOSITION",
+        "severity": "BLOCKING"
+      },
+      {
+        "code": "PAGE04_ICONOGRAPHY_REQUIRES_EXPERT_REVIEW",
+        "dimension": "RELIGIOUS_ICONOGRAPHY",
+        "discrepancy": "Named donor identities and several sacred visual attributes cannot be positively certified from the pixels.",
+        "evidence": "Multiple crowned donors repeat similar faces and clothing, the Moon, Sun, Vasus and twilights are not unambiguously distinguishable, and bright circular disks appear directly behind donor heads despite the no-halo-disk constraint.",
+        "message": "Ambiguous or repeated donor identities, uncertain gender presentation and prohibited halo-like disks require qualified religious-iconography review.",
+        "page_id": "page-5316f7271234e4ab31991528",
+        "repair_type": "RELIGIOUS_ICONOGRAPHY_EXPERT_REVIEW",
+        "severity": "BLOCKING"
+      },
+      {
+        "code": "PAGE04_ARBITRARY_CELESTIAL_ARCHITECTURE",
+        "dimension": "CULTURAL_AUTHENTICITY",
+        "discrepancy": "The setting uses elaborate fantasy-celestial palaces instead of the locked abstract luminous manifestation space.",
+        "evidence": "Original-resolution pixels show repeated towered palaces and cloud citadels across the top, sides and background, although the location bible explicitly excludes an arbitrary temple setting.",
+        "message": "Floating palace architecture conflicts with the locked abstract luminous manifestation-space treatment.",
+        "page_id": "page-5316f7271234e4ab31991528",
+        "repair_type": "ENVIRONMENT_RECOMPOSITION",
+        "severity": "BLOCKING"
+      },
+      {
+        "code": "PAGE04_LETTERING_SAFE_REGION_OCCUPIED",
+        "dimension": "LETTERING_READABILITY",
+        "discrepancy": "The locked top narration safe region is not protected.",
+        "evidence": "Shiva, another donor, cloud palaces, stars, hair and luminous streams occupy the full upper region where the long narration must be composed.",
+        "message": "The top safe region is filled by donors, architecture and energy, leaving no protected space for the long narration.",
+        "page_id": "page-5316f7271234e4ab31991528",
+        "repair_type": "LETTERING_REGION_REPAIR",
+        "severity": "BLOCKING"
+      }
+    ],
+    "image_path": "books/DM04/production-pilot/images/page-5316f7271234e4ab31991528/v0001.png",
+    "image_sha256": "cfac6ab6666e84fcd79d1fccd1aa5273adf4e28185d823cd92847131b7802819",
+    "independent_actual_pixel_review": true,
+    "milestone": "PR11",
+    "page_id": "page-5316f7271234e4ab31991528",
+    "preview_eligible": false,
+    "publication_eligible": false,
+    "request_hash": "74a757a644a729764f658aef375235f92eb4f25b3c0999ad78baec8e1864f2d9",
+    "request_record_hash": "a64ae14c962dc57e2743e852d72cc667e2800c5c312d758614d9559a985302b0",
+    "result": "ESCALATE",
+    "review_hash": "c6bc6f6c6dd3a64bed96be6cb2b60f66602562f2b5e968860ecee54972a923e2",
+    "reviewed_at": "2026-10-20T12:28:50Z",
+    "reviewer": {
+      "id": "/root/pr11_visual_reviewer",
+      "image_capable": true,
+      "inspected_actual_pixels": true,
+      "produced_image": false,
+      "reading_size": "ACTUAL_READING_SIZE",
+      "role": "INDEPENDENT_ACTUAL_PIXEL_VISUAL_REVIEWER"
+    },
+    "schema_version": "1.0"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

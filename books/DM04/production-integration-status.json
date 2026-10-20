@@ -1,79 +1,74 @@
 {
-  "actual_cost_minor_units": 0,
-  "actual_image_operations": 0,
-  "approval_id": null,
+  "actual_cost_minor_units": null,
+  "actual_cost_status": "UNKNOWN_TOOL_INTERFACE_DOES_NOT_EXPOSE_INCREMENTAL_USD",
+  "actual_image_operations": 2,
+  "approval_id": "approval-9ac3c1c3bc2a352021552a8d",
   "approval_request_hash": "dd1895d4211bf7d0bd4171d67baaff0b64160ecfc1657ff0009878b281376225",
   "approval_request_record_hash": "a71faccbc68256f6ebf202648fcbeabacfa31892de0ae0f4ac595d07f085f535",
+  "authorized_image_operation_ceiling": 2,
   "blocked": [
     {
-      "code": "PR10_CAMPAIGN_AUTHORIZATION_REQUIRED",
-      "owner": "authorized-human-approver",
-      "request_record_hash": "a71faccbc68256f6ebf202648fcbeabacfa31892de0ae0f4ac595d07f085f535",
-      "subject_hash": "5a5b7c2a606f47a9b72ef001f19ef9c8736f4b328d2434dae08c5d0b08c061d7"
-    },
-    {
-      "code": "PRIVATE_ILLUSTRATION_TESTING_NOT_GRANTED_BY_EXISTING_CLEARANCE",
-      "owner": "source-rights-authority"
-    },
-    {
-      "code": "PR6_IMAGE_ATTEMPT_BUDGET_EXHAUSTED",
+      "code": "PR11_INDEPENDENT_VISUAL_REVIEW_FIX",
       "owner": "illustration-producer",
-      "reset_allowed": false
+      "page_id": "page-27d143ae995bf60742b65c5b",
+      "retry_allowed": false
     },
     {
-      "code": "PR7_RECOVERY_NOT_AUTHORIZED",
-      "owner": "authorized-human-approver"
-    },
-    {
-      "code": "HUMAN_STYLE_APPROVAL_UNAVAILABLE",
-      "owner": "authorized-human-approver"
+      "code": "PR11_INDEPENDENT_VISUAL_REVIEW_ESCALATE",
+      "owner": "illustration-producer",
+      "page_id": "page-5316f7271234e4ab31991528",
+      "retry_allowed": false
     }
   ],
   "blockers": [
     {
-      "code": "PR10_CAMPAIGN_AUTHORIZATION_REQUIRED",
-      "owner": "authorized-human-approver",
-      "request_record_hash": "a71faccbc68256f6ebf202648fcbeabacfa31892de0ae0f4ac595d07f085f535",
-      "subject_hash": "5a5b7c2a606f47a9b72ef001f19ef9c8736f4b328d2434dae08c5d0b08c061d7"
-    },
-    {
-      "code": "PRIVATE_ILLUSTRATION_TESTING_NOT_GRANTED_BY_EXISTING_CLEARANCE",
-      "owner": "source-rights-authority"
-    },
-    {
-      "code": "PR6_IMAGE_ATTEMPT_BUDGET_EXHAUSTED",
+      "code": "PR11_INDEPENDENT_VISUAL_REVIEW_FIX",
       "owner": "illustration-producer",
-      "reset_allowed": false
+      "page_id": "page-27d143ae995bf60742b65c5b",
+      "retry_allowed": false
     },
     {
-      "code": "PR7_RECOVERY_NOT_AUTHORIZED",
-      "owner": "authorized-human-approver"
-    },
-    {
-      "code": "HUMAN_STYLE_APPROVAL_UNAVAILABLE",
-      "owner": "authorized-human-approver"
+      "code": "PR11_INDEPENDENT_VISUAL_REVIEW_ESCALATE",
+      "owner": "illustration-producer",
+      "page_id": "page-5316f7271234e4ab31991528",
+      "retry_allowed": false
     }
   ],
   "book_id": "DM04",
   "campaign_id": "dm04-pr10-real-production-slice-01",
   "composition": "NOT_CREATED",
   "currency": "USD",
-  "generation_authorized": false,
-  "illustrations": "NOT_GENERATED",
-  "independent_visual_review": "NOT_EXECUTED",
-  "localized_recovery": "ISOLATED_FIXTURE_ONLY",
-  "manual_interventions_currently_required": 1,
-  "next_required_action": "AUTHORIZED_HUMAN_MUST_APPROVE_EXACT_PR10_CAMPAIGN_SUBJECT_HASH",
+  "generation_authorized": true,
+  "human_interventions_required_for_future_correction": [
+    "QUALIFIED_RELIGIOUS_ICONOGRAPHY_REVIEW_AND_APPROVED_DONOR_IDENTITY_MAP",
+    "SEPARATE_NEW_EXACT_CAMPAIGN_AUTHORIZATION"
+  ],
+  "illustrations": "2_REAL_IMAGES_IMPORTED",
+  "image_hashes": {
+    "page-27d143ae995bf60742b65c5b": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+    "page-5316f7271234e4ab31991528": "cfac6ab6666e84fcd79d1fccd1aa5273adf4e28185d823cd92847131b7802819"
+  },
+  "independent_visual_review": "2_OF_2_COMPLETE",
+  "localized_recovery": "REAL_PAGE_LOCAL_CORRECTION_REQUESTS_PERSISTED_NO_RETRY",
+  "manual_interventions_currently_required": 0,
+  "next_required_action": "STOP_CAMPAIGN_REVIEW_TARGETED_CORRECTION_REQUESTS",
   "pdf": "NOT_CREATED_ART_AND_REVIEW_GATES_BLOCKED",
   "plan_record_hash": "43f6761b1789e8763c11c4016a646e66c37e07cb408db23a3539bfcc889055e0",
   "publication_eligible": false,
   "publication_status_preserved": "BLOCKED",
+  "purchased_credit_balance_observed": "0",
+  "purchased_credit_consumption": "NOT_REQUESTED_OR_REPORTED",
   "real_input_assets_validated": true,
   "schema_version": "1.0",
   "selected_page_ids": [
     "page-27d143ae995bf60742b65c5b",
     "page-5316f7271234e4ab31991528"
   ],
-  "status": "AWAITING_CAMPAIGN_AUTHORIZATION",
-  "status_hash": "78afb3e519b7856057f4dade8a490f819ef40bbcbefcbdb6f6c4b824703756c2"
+  "separately_billed_provider_calls": 0,
+  "status": "REVIEWED_FIX_REQUIRED_CAMPAIGN_COMPLETE_NO_RETRY",
+  "status_hash": "df1edcae344ee1fe4e5266c49adc36a3bba52965a960d0bc76ffee8fd1391cdf",
+  "visual_review_results": {
+    "page-27d143ae995bf60742b65c5b": "FIX",
+    "page-5316f7271234e4ab31991528": "ESCALATE"
+  }
 }

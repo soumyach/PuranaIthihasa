@@ -1,4 +1,4 @@
-"""PR10 real-production slice integration and fail-closed execution gates.
+"""PR10/PR11 real-production slice integration and fail-closed execution gates.
 
 The repository can select and bind real DM04 inputs, persist a campaign request,
 validate authorization, prepare exact reference-conditioned provider requests,
@@ -13,8 +13,9 @@ from pathlib import Path
 
 from .approvals import ApprovalStore
 from .errors import ContractError
-from .orchestration import route_page_repair
-from .util import atomic_json_write, content_hash, load_json, sha256_bytes
+from .illustration_production import inspect_png
+from .orchestration import route_page_repair, validate_reference_receipt
+from .util import atomic_json_write, content_hash, load_json, sha256_bytes, utc_now
 from .versioning import ImmutableVersionStore
 
 
@@ -110,7 +111,7 @@ def validate_real_image_review(request, response):
 
 
 class RealProductionSlice:
-    """Prepare and validate the bounded two-page DM04 PR10 production slice."""
+    """Prepare, execute through the host boundary, and review the bounded DM04 slice."""
 
     def __init__(self, repository_root):
         self.root = Path(repository_root).resolve()
@@ -120,6 +121,21 @@ class RealProductionSlice:
         self.request_store = ImmutableVersionStore(self.books_root, "production-campaign-requests")
         self.approvals = ApprovalStore(self.book_root / "approvals")
         self.status_path = self.book_root / "production-integration-status.json"
+
+    def _store(self, kind, page_id):
+        return ImmutableVersionStore(self.books_root, "%s/%s" % (kind, page_id))
+
+    def _latest_by_page(self, kind):
+        result = {}
+        for page_id in SELECTED_PAGE_IDS:
+            versions = self._store(kind, page_id).versions(BOOK_ID)
+            if len(versions) > 1:
+                raise ContractError("PR11 one-operation ceiling was exceeded", {
+                    "kind": kind, "page_id": page_id, "versions": len(versions),
+                })
+            if versions:
+                result[page_id] = versions[-1]
+        return result
 
     def _asset(self, relative_path, logical_hash=None, role=None):
         path = self.root / relative_path
@@ -483,6 +499,26 @@ class RealProductionSlice:
     def _status(self, plan_record, request_record):
         plan = plan_record["payload"]
         approval = self._approval(plan)
+        image_records = self._latest_by_page("production-image-receipts")
+        review_records = self._latest_by_page("production-visual-reviews")
+        review_results = {
+            page_id: record["payload"]["result"] for page_id, record in review_records.items()
+        }
+        if not approval:
+            lifecycle_status = "AWAITING_CAMPAIGN_AUTHORIZATION"
+            next_action = "AUTHORIZED_HUMAN_MUST_APPROVE_EXACT_PR10_CAMPAIGN_SUBJECT_HASH"
+        elif len(image_records) < len(SELECTED_PAGE_IDS):
+            lifecycle_status = "AUTHORIZED_AWAITING_GENERATION"
+            next_action = "IMPORT_ONLY_THE_REMAINING_AUTHORIZED_HOST_IMAGE_RESULT"
+        elif len(review_records) < len(SELECTED_PAGE_IDS):
+            lifecycle_status = "GENERATED_AWAITING_INDEPENDENT_VISUAL_REVIEW"
+            next_action = "RUN_INDEPENDENT_ACTUAL_PIXEL_REVIEW"
+        elif all(value == "PASS" for value in review_results.values()):
+            lifecycle_status = "REVIEWED_PASS_PRIVATE_PREVIEW_ONLY"
+            next_action = "HUMAN_STYLE_APPROVAL_REQUIRED_BEFORE_PRODUCTION_ASSET_PROMOTION"
+        else:
+            lifecycle_status = "REVIEWED_FIX_REQUIRED_CAMPAIGN_COMPLETE_NO_RETRY"
+            next_action = "STOP_CAMPAIGN_REVIEW_TARGETED_CORRECTION_REQUESTS"
         blockers = [] if approval else [
             {
                 "code": "PR10_CAMPAIGN_AUTHORIZATION_REQUIRED",
@@ -495,11 +531,25 @@ class RealProductionSlice:
             {"code": "PR7_RECOVERY_NOT_AUTHORIZED", "owner": "authorized-human-approver"},
             {"code": "HUMAN_STYLE_APPROVAL_UNAVAILABLE", "owner": "authorized-human-approver"},
         ]
+        if approval and review_records and any(value != "PASS" for value in review_results.values()):
+            blockers.extend({
+                "code": "PR11_INDEPENDENT_VISUAL_REVIEW_%s" % record["payload"]["result"],
+                "owner": "illustration-producer",
+                "page_id": page_id,
+                "retry_allowed": False,
+            } for page_id, record in review_records.items() if record["payload"]["result"] != "PASS")
+        if approval and review_records and all(value == "PASS" for value in review_results.values()):
+            blockers.append({
+                "code": "HUMAN_STYLE_APPROVAL_UNAVAILABLE",
+                "owner": "authorized-human-approver",
+                "preview_only_permitted": True,
+            })
+        unknown_cost = bool(image_records)
         status = {
             "schema_version": "1.0",
             "book_id": BOOK_ID,
             "campaign_id": CAMPAIGN_ID,
-            "status": "AUTHORIZED_AWAITING_GENERATION" if approval else "AWAITING_CAMPAIGN_AUTHORIZATION",
+            "status": lifecycle_status,
             "plan_record_hash": plan_record["content_hash"],
             "approval_request_record_hash": request_record["content_hash"],
             "approval_request_hash": request_record["payload"]["request_hash"],
@@ -507,21 +557,40 @@ class RealProductionSlice:
             "generation_authorized": bool(approval),
             "selected_page_ids": list(SELECTED_PAGE_IDS),
             "real_input_assets_validated": True,
-            "actual_image_operations": 0,
-            "actual_cost_minor_units": 0,
+            "actual_image_operations": len(image_records),
+            "authorized_image_operation_ceiling": len(SELECTED_PAGE_IDS),
+            "actual_cost_minor_units": None if unknown_cost else 0,
+            "actual_cost_status": "UNKNOWN_TOOL_INTERFACE_DOES_NOT_EXPOSE_INCREMENTAL_USD" if unknown_cost else "NOT_INCURRED_NO_OPERATIONS",
             "currency": "USD",
-            "illustrations": "NOT_GENERATED",
+            "purchased_credit_balance_observed": "0",
+            "purchased_credit_consumption": "NOT_REQUESTED_OR_REPORTED",
+            "separately_billed_provider_calls": 0,
+            "illustrations": "%d_REAL_IMAGES_IMPORTED" % len(image_records) if image_records else "NOT_GENERATED",
+            "image_hashes": {
+                page_id: record["payload"]["image"]["sha256"] for page_id, record in image_records.items()
+            },
             "composition": "NOT_CREATED",
-            "independent_visual_review": "NOT_EXECUTED",
-            "localized_recovery": "ISOLATED_FIXTURE_ONLY",
+            "independent_visual_review": (
+                "NOT_EXECUTED" if not review_records else
+                "%d_OF_%d_COMPLETE" % (len(review_records), len(SELECTED_PAGE_IDS))
+            ),
+            "visual_review_results": review_results,
+            "localized_recovery": (
+                "REAL_PAGE_LOCAL_CORRECTION_REQUESTS_PERSISTED_NO_RETRY"
+                if review_records and any(value != "PASS" for value in review_results.values())
+                else "ISOLATED_FIXTURE_ONLY"
+            ),
             "pdf": "NOT_CREATED_ART_AND_REVIEW_GATES_BLOCKED",
             "publication_eligible": False,
             "publication_status_preserved": "BLOCKED",
-            "manual_interventions_currently_required": 0 if approval else 1,
-            "next_required_action": (
-                "PREPARE_TWO_BOUNDED_REFERENCE_CONDITIONED_IMAGE_REQUESTS"
-                if approval else "AUTHORIZED_HUMAN_MUST_APPROVE_EXACT_PR10_CAMPAIGN_SUBJECT_HASH"
+            "manual_interventions_currently_required": 0 if lifecycle_status == "REVIEWED_FIX_REQUIRED_CAMPAIGN_COMPLETE_NO_RETRY" else 1,
+            "human_interventions_required_for_future_correction": (
+                [
+                    "QUALIFIED_RELIGIOUS_ICONOGRAPHY_REVIEW_AND_APPROVED_DONOR_IDENTITY_MAP",
+                    "SEPARATE_NEW_EXACT_CAMPAIGN_AUTHORIZATION",
+                ] if lifecycle_status == "REVIEWED_FIX_REQUIRED_CAMPAIGN_COMPLETE_NO_RETRY" else []
             ),
+            "next_required_action": next_action,
             "blockers": blockers,
             "blocked": deepcopy(blockers),
         }
@@ -555,7 +624,7 @@ class RealProductionSlice:
             or status_changed
         )
         return {
-            "status": "ESCALATE" if not status["generation_authorized"] else "AUTHORIZED_AWAITING_GENERATION",
+            "status": "ESCALATE" if not status["generation_authorized"] else status["status"],
             "book_id": BOOK_ID,
             "campaign_id": CAMPAIGN_ID,
             "selected_pages": [
@@ -657,6 +726,242 @@ class RealProductionSlice:
         record = store.put(BOOK_ID, request)
         return {"status": "READY_FOR_HOST_IMAGE_OPERATION", "request": request, "record": record, "mutated_art": False}
 
+    def _generation_request_record(self, page_id):
+        if page_id not in SELECTED_PAGE_IDS:
+            raise ContractError("page is outside the authorized PR11 campaign", {"page_id": page_id})
+        versions = self._store("production-generation-requests", page_id).versions(BOOK_ID)
+        if len(versions) != 1:
+            raise ContractError("PR11 image import requires exactly one prepared operation", {
+                "page_id": page_id, "prepared_operations": len(versions),
+            })
+        record = versions[0]
+        request = record["payload"]
+        if request.get("request_hash") != _unsigned_hash(request, "request_hash"):
+            raise ContractError("PR11 generation request hash is invalid")
+        return record
+
+    def import_image(self, page_id, request_path, image_path, provider_receipt_path):
+        plan_record, request_record = self._validate_stored()
+        plan = plan_record["payload"]
+        if not self._approval(plan):
+            raise ContractError("PR11 image import requires the exact campaign approval")
+        generation_record = self._generation_request_record(page_id)
+        supplied_request = load_json(Path(request_path))
+        if supplied_request != generation_record:
+            raise ContractError("PR11 image import does not bind the immutable prepared request")
+        store = self._store("production-image-receipts", page_id)
+        existing = store.versions(BOOK_ID)
+        if existing:
+            return {
+                "status": existing[-1]["payload"]["status"],
+                "record": existing[-1],
+                "idempotent_replay": True,
+                "run": self._status(plan_record, request_record),
+            }
+        if len(self._latest_by_page("production-image-receipts")) >= len(SELECTED_PAGE_IDS):
+            raise ContractError("PR11 total two-operation ceiling is exhausted")
+        request = generation_record["payload"]
+        provider = load_json(Path(provider_receipt_path))
+        exact = {
+            "provider_id": request["provider_id"],
+            "page_id": page_id,
+            "operation": request["operation"],
+            "request_hash": request["request_hash"],
+            "campaign_subject_hash": plan["authorization_subject_hash"],
+        }
+        for key, expected in exact.items():
+            if provider.get(key) != expected:
+                raise ContractError("PR11 provider receipt does not bind the authorized operation", {"field": key})
+        forbidden = {
+            "api_key_supplied": provider.get("api_key_supplied"),
+            "external_provider_authorization_requested": provider.get("external_provider_authorization_requested"),
+            "paid_billing_requested": provider.get("paid_billing_requested"),
+            "automatic_credit_purchase_requested": provider.get("automatic_credit_purchase_requested"),
+        }
+        if any(forbidden.values()):
+            raise ContractError("PR11 receipt reports a forbidden billing or provider path", forbidden)
+        if provider.get("purchased_credit_consumption") not in {"NOT_REQUESTED", "NOT_REPORTED_NO_BALANCE"}:
+            raise ContractError("PR11 receipt does not preserve the purchased-credit prohibition")
+        if provider.get("actual_incremental_usd") != "UNKNOWN_NOT_EXPOSED":
+            raise ContractError("PR11 must not invent a zero-dollar result the tool did not expose")
+        if provider.get("included_allowance_policy") != "CURRENT_INCLUDED_ALLOWANCE_FIRST":
+            raise ContractError("PR11 receipt omits the approved allowance-first policy")
+        reference_validation = validate_reference_receipt(request, provider)
+        submitted = provider.get("submitted_references", [])
+        first_reference_index = 1 + (1 if request["base_image"] else 0)
+        expected_indexes = list(range(first_reference_index, first_reference_index + len(submitted)))
+        if [item.get("input_index") for item in submitted] != expected_indexes:
+            raise ContractError("PR11 submitted reference input order is not explicit and contiguous")
+        edit_target = provider.get("submitted_edit_target")
+        if request["base_image"]:
+            expected_target = {
+                "role": "EDIT_TARGET_REJECTED_PR6_SOURCE_ONLY",
+                "path": request["base_image"]["path"],
+                "sha256": request["base_image"]["sha256"],
+                "input_index": 1,
+            }
+            if edit_target != expected_target:
+                raise ContractError("PR11 edit receipt does not bind the exact rejected PR6 source")
+        elif edit_target is not None:
+            raise ContractError("PR11 generation receipt unexpectedly claims an edit target")
+        prompt = provider.get("submitted_prompt")
+        if not isinstance(prompt, str) or not prompt.strip():
+            raise ContractError("PR11 provider receipt requires the exact submitted prompt")
+        if provider.get("submitted_prompt_sha256") != sha256_bytes(prompt.encode("utf-8")):
+            raise ContractError("PR11 submitted prompt hash is invalid")
+        image_path = Path(image_path).resolve()
+        try:
+            relative_image = image_path.relative_to(self.root).as_posix()
+        except ValueError as exc:
+            raise ContractError("PR11 imported image must be preserved inside the repository") from exc
+        expected_prefix = "books/DM04/production-pilot/images/%s/" % page_id
+        if not relative_image.startswith(expected_prefix):
+            raise ContractError("PR11 image is outside its page-specific pilot directory")
+        image = inspect_png(image_path)
+        if (image["width"], image["height"]) != (1086, 1448):
+            raise ContractError("PR11 image does not match the locked 3:4 pixel canvas")
+        if image["sha256"] != provider.get("output_sha256"):
+            raise ContractError("PR11 provider receipt output hash does not match the actual pixels")
+        payload = {
+            "schema_version": "1.0",
+            "milestone": "PR11",
+            "book_id": BOOK_ID,
+            "campaign_id": CAMPAIGN_ID,
+            "campaign_subject_hash": plan["authorization_subject_hash"],
+            "page_id": page_id,
+            "operation": request["operation"],
+            "generation_request_record_hash": generation_record["content_hash"],
+            "request_hash": request["request_hash"],
+            "provider": deepcopy(provider),
+            "reference_validation": reference_validation,
+            "image": dict(image, path=relative_image),
+            "producer_ids": [provider["producer"]["id"]],
+            "actual_cost_minor_units": None,
+            "actual_cost_status": "UNKNOWN_TOOL_INTERFACE_DOES_NOT_EXPOSE_INCREMENTAL_USD",
+            "status": "GENERATED_AWAITING_INDEPENDENT_VISUAL_REVIEW",
+            "publication_eligible": False,
+            "imported_at": utc_now(),
+        }
+        record = store.put(BOOK_ID, payload)
+        status = self._status(plan_record, request_record)
+        _write_if_changed(self.status_path, status)
+        return {
+            "status": payload["status"], "record": record, "image": payload["image"],
+            "reference_validation": reference_validation, "idempotent_replay": False,
+            "run": status,
+        }
+
+    def prepare_visual_review(self, page_id):
+        plan_record, request_record = self._validate_stored()
+        receipts = self._latest_by_page("production-image-receipts")
+        if page_id not in receipts:
+            raise ContractError("PR11 visual review requires imported real pixels", {"page_id": page_id})
+        receipt = receipts[page_id]["payload"]
+        store = self._store("production-visual-review-requests", page_id)
+        existing = store.versions(BOOK_ID)
+        if existing:
+            record = existing[-1]
+        else:
+            request = {
+                "schema_version": "1.0",
+                "milestone": "PR11",
+                "book_id": BOOK_ID,
+                "campaign_subject_hash": plan_record["payload"]["authorization_subject_hash"],
+                "page_id": page_id,
+                "image_path": receipt["image"]["path"],
+                "image_sha256": receipt["image"]["sha256"],
+                "producer_ids": deepcopy(receipt["producer_ids"]),
+                "comparison_references": deepcopy(receipt["provider"]["submitted_references"]),
+                "required_dimensions": list(REVIEW_DIMENSIONS),
+                "actual_pixels_required": True,
+                "actual_reading_size_required": True,
+                "independent_reviewer_required": True,
+                "result_values": ["PASS", "FIX", "ESCALATE"],
+            }
+            request["request_hash"] = _unsigned_hash(request, "request_hash")
+            record = store.put(BOOK_ID, request)
+        status = self._status(plan_record, request_record)
+        return {"status": "AWAITING_INDEPENDENT_ACTUAL_PIXEL_REVIEW", "record": record, "run": status}
+
+    def import_visual_review(self, page_id, request_path, response_path):
+        plan_record, campaign_request = self._validate_stored()
+        requests = self._store("production-visual-review-requests", page_id).versions(BOOK_ID)
+        if len(requests) != 1:
+            raise ContractError("PR11 review import requires one immutable review request")
+        supplied_request = load_json(Path(request_path))
+        if supplied_request != requests[0]:
+            raise ContractError("PR11 review response does not bind the immutable request record")
+        request = requests[0]["payload"]
+        response = load_json(Path(response_path))
+        if response.get("request_hash") != request["request_hash"]:
+            raise ContractError("PR11 visual review response request hash is stale")
+        validation = validate_real_image_review(request, response)
+        if response.get("overall_verdict") != validation["result"]:
+            raise ContractError("PR11 review overall verdict conflicts with its dimension results")
+        store = self._store("production-visual-reviews", page_id)
+        existing = store.versions(BOOK_ID)
+        payload = {
+            "schema_version": "1.0",
+            "milestone": "PR11",
+            "book_id": BOOK_ID,
+            "campaign_subject_hash": plan_record["payload"]["authorization_subject_hash"],
+            "page_id": page_id,
+            "request_record_hash": requests[0]["content_hash"],
+            "request_hash": request["request_hash"],
+            "image_path": request["image_path"],
+            "image_sha256": request["image_sha256"],
+            "reviewer": deepcopy(response["reviewer"]),
+            "assessments": deepcopy(response["assessments"]),
+            "findings": deepcopy(response.get("findings", [])),
+            "correction_instructions": deepcopy(response.get("correction_instructions", [])),
+            "preview_eligible": bool(response.get("preview_eligible")) and validation["result"] == "PASS",
+            "result": validation["result"],
+            "review_hash": validation["review_hash"],
+            "independent_actual_pixel_review": True,
+            "publication_eligible": False,
+            "reviewed_at": utc_now(),
+        }
+        if existing:
+            comparable = {key: value for key, value in payload.items() if key != "reviewed_at"}
+            prior = {key: value for key, value in existing[-1]["payload"].items() if key != "reviewed_at"}
+            if comparable != prior:
+                raise ContractError("PR11 page already has a different immutable visual review")
+            record = existing[-1]
+        else:
+            record = store.put(BOOK_ID, payload)
+        correction_record = None
+        if payload["result"] != "PASS":
+            correction_store = self._store("production-correction-requests", page_id)
+            corrections = correction_store.versions(BOOK_ID)
+            correction = {
+                "schema_version": "1.0",
+                "milestone": "PR11",
+                "book_id": BOOK_ID,
+                "page_id": page_id,
+                "failed_image_sha256": request["image_sha256"],
+                "visual_review_hash": validation["review_hash"],
+                "result": payload["result"],
+                "localized_findings": deepcopy(payload["findings"]),
+                "targeted_correction_instructions": deepcopy(payload["correction_instructions"]),
+                "generation_retry_authorized": False,
+                "remaining_campaign_image_operations": 0,
+                "pr6_counter_reset": False,
+                "preserve_other_page": True,
+                "publication_eligible": False,
+            }
+            if corrections:
+                if corrections[-1]["payload"] != correction:
+                    raise ContractError("PR11 correction request already differs")
+                correction_record = corrections[-1]
+            else:
+                correction_record = correction_store.put(BOOK_ID, correction)
+        status = self._status(plan_record, campaign_request)
+        _write_if_changed(self.status_path, status)
+        return {
+            "status": status["status"], "review": record,
+            "correction_request": correction_record, "run": status,
+        }
+
     def validate(self):
         plan_record, request_record = self._validate_stored()
         status = self._status(plan_record, request_record)
@@ -666,8 +971,10 @@ class RealProductionSlice:
         route = route_page_repair(recovery_fixture["finding"])
         if route["invalidate_scope"] != "PAGE_LOCAL" or not route["preserve_other_pages"] or route["reset_retry_counter"]:
             raise ContractError("PR10 isolated recovery did not preserve unaffected pages and attempt history")
-        if status["actual_image_operations"] != 0 or status["actual_cost_minor_units"] != 0:
-            raise ContractError("PR10 blocked run cannot claim image execution or cost")
+        if status["actual_image_operations"] > 2:
+            raise ContractError("PR11 campaign exceeded its two-operation ceiling")
+        if status["actual_image_operations"] and status["actual_cost_status"] != "UNKNOWN_TOOL_INTERFACE_DOES_NOT_EXPOSE_INCREMENTAL_USD":
+            raise ContractError("PR11 must preserve the unknown direct-cost observation")
         return {
             "status": "PASS",
             "plan_hash": plan_record["content_hash"],

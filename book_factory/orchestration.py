@@ -642,12 +642,23 @@ class AutonomousFactoryDirector:
                 production_slices.append({
                     "book_id": status["book_id"], "campaign_id": status["campaign_id"],
                     "actual_minor_units": status.get("actual_cost_minor_units", 0),
+                    "actual_cost_status": status.get("actual_cost_status", "KNOWN"),
                     "actual_image_operations": status.get("actual_image_operations", 0),
                 })
+        unknown_slice_cost = any(item["actual_minor_units"] is None for item in production_slices)
+        known_slice_cost = sum(
+            item["actual_minor_units"] for item in production_slices
+            if isinstance(item["actual_minor_units"], int)
+        )
         return {
             "schema_version": "1.0", "currency": "USD", "fixture_mode": bool(fixture_mode),
             "estimated_minor_units": estimated,
-            "actual_minor_units": actual + sum(item["actual_minor_units"] for item in production_slices),
+            "actual_minor_units": None if unknown_slice_cost else actual + known_slice_cost,
+            "known_actual_minor_units": actual + known_slice_cost,
+            "actual_cost_status": (
+                "UNKNOWN_ONE_OR_MORE_HOST_TOOL_INTERFACES_DID_NOT_EXPOSE_INCREMENTAL_COST"
+                if unknown_slice_cost else "KNOWN"
+            ),
             "paid_calls_executed": sum(bool(item.get("cost", {}).get("paid_call_executed")) for item in jobs),
             "jobs": [{"job_id": item["job_id"], "book_id": item["book_id"], "stage": item["stage"], "cost": item["cost"]} for item in jobs],
             "production_slices": production_slices,
