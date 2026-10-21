@@ -15,7 +15,7 @@ from .errors import BlockedError, ContractError
 from .util import atomic_json_write, content_hash, load_json, sha256_bytes
 
 
-ENGINE_VERSION = "0.8.0"
+ENGINE_VERSION = "0.8.1"
 CANVAS = {"width": 1086, "height": 1448, "aspect_ratio": "3:4"}
 SPREAD_CANVAS = {"width": 2172, "height": 1448, "aspect_ratio": "3:2"}
 PALETTE = {
@@ -41,6 +41,7 @@ LAYOUT_TYPES = (
 )
 TEXT_CHANNELS = ("NARRATION", "DIALOGUE", "THOUGHT", "INSET_EXPLANATION")
 FIXTURE_LABEL = "KHATAKSHETRA BOOK FACTORY — NON-PRODUCTION RENDERER TEST"
+PRIVATE_PREVIEW_LABEL = "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION"
 MIN_BODY_FONT_SIZE = 22
 MIN_TITLE_FONT_SIZE = 28
 
@@ -236,7 +237,7 @@ def _add_finding(findings, code, reason, page_id=None, panel_id=None, element_id
     })
 
 
-def validate_page_spec(spec, repository_root, fixture_mode=False, font_config=None):
+def validate_page_spec(spec, repository_root, fixture_mode=False, font_config=None, private_preview=False):
     findings = []
     page_id = spec.get("page_id")
     required = (
@@ -295,10 +296,16 @@ def validate_page_spec(spec, repository_root, fixture_mode=False, font_config=No
         focal = crop.get("focal_point", {"x": 0.5, "y": 0.5})
         if not all(isinstance(focal.get(key), (int, float)) and 0 <= focal[key] <= 1 for key in ("x", "y")):
             _add_finding(findings, "CROP_BOUNDS", "focal point must stay inside the source image", page_id, panel_id)
+        zoom = crop.get("zoom", 1.0)
+        if not isinstance(zoom, (int, float)) or isinstance(zoom, bool) or not 1.0 <= zoom <= 3.0:
+            _add_finding(findings, "CROP_ZOOM", "crop zoom must be a number from 1.0 through 3.0", page_id, panel_id)
         approval = asset.get("approval", {})
         if fixture_mode:
             if not spec.get("fixture", False) or asset.get("usage") != "SYNTHETIC_TEST_ONLY":
                 _add_finding(findings, "FIXTURE_ISOLATION", "fixture mode accepts only explicitly synthetic test assets", page_id, panel_id)
+        elif private_preview:
+            if approval.get("status") not in {"FIX", "PRIVATE_PREVIEW_AUTHORIZED"} or approval.get("subject_hash") != digest:
+                _add_finding(findings, "MISSING_PREVIEW_AUTHORITY", "private preview image requires an exact hash-bound FIX review or preview authorization", page_id, panel_id)
         elif approval.get("status") != "APPROVED" or approval.get("subject_hash") != digest:
             _add_finding(findings, "MISSING_APPROVAL", "production image requires an exact hash-bound approval", page_id, panel_id)
     lettering = spec.get("lettering", [])
@@ -374,8 +381,17 @@ def validate_page_spec(spec, repository_root, fixture_mode=False, font_config=No
         FontResolver(font_config).resolve(spec.get("typography", {}).get("family"))
     except BlockedError as exc:
         _add_finding(findings, "MISSING_FONT", str(exc), page_id)
+    if fixture_mode and private_preview:
+        _add_finding(findings, "PREVIEW_ISOLATION", "private preview mode and fixture mode are mutually exclusive", page_id)
     if fixture_mode and spec.get("publication_eligible") is not False:
         _add_finding(findings, "FIXTURE_PROMOTION", "fixture compositions must be explicitly publication-ineligible", page_id)
+    if private_preview:
+        if spec.get("private_preview") is not True:
+            _add_finding(findings, "PREVIEW_ISOLATION", "private preview mode requires private_preview=true", page_id)
+        if spec.get("publication_eligible") is not False:
+            _add_finding(findings, "PREVIEW_PROMOTION", "private previews must be explicitly publication-ineligible", page_id)
+        if spec.get("non_production_label") != PRIVATE_PREVIEW_LABEL:
+            _add_finding(findings, "PREVIEW_LABEL", "private preview requires the exact visible non-production label", page_id)
     if not fixture_mode:
         approval_subjects = {
             "manuscript": spec.get("manuscript_hash"),
@@ -384,8 +400,12 @@ def validate_page_spec(spec, repository_root, fixture_mode=False, font_config=No
         }
         for gate in ("manuscript", "storyboard", "series_standard"):
             approval = spec.get("approvals", {}).get(gate, {})
-            if approval.get("status") != "APPROVED" or approval.get("subject_hash") != approval_subjects[gate]:
-                _add_finding(findings, "MISSING_APPROVAL", "production gate %s lacks an exact hash-bound approval" % gate, page_id, element_id=gate)
+            expected_status = "LOCKED_FOR_PRIVATE_PREVIEW" if private_preview else "APPROVED"
+            if approval.get("status") != expected_status or approval.get("subject_hash") != approval_subjects[gate]:
+                code = "MISSING_PREVIEW_AUTHORITY" if private_preview else "MISSING_APPROVAL"
+                _add_finding(findings, code, "%s gate %s lacks an exact hash-bound %s record" % (
+                    "private preview" if private_preview else "production", gate, expected_status,
+                ), page_id, element_id=gate)
     result = "FIX" if any(item["severity"] == "FIX" for item in findings) else "PASS"
     return {
         "schema_version": "1.0", "engine_version": ENGINE_VERSION,
@@ -433,11 +453,11 @@ def _fit_text(draw, text, font_path, requested_size, min_size, box, padding):
     return font, lines, int(min_size), measured, max(4, min_size // 5)
 
 
-def _cover_crop(source_size, target_size, focal):
+def _cover_crop(source_size, target_size, focal, zoom=1.0):
     source_w, source_h = source_size
     target_w, target_h = target_size
     scale = max(target_w / source_w, target_h / source_h)
-    crop_w, crop_h = target_w / scale, target_h / scale
+    crop_w, crop_h = target_w / scale / zoom, target_h / scale / zoom
     center_x, center_y = focal["x"] * source_w, focal["y"] * source_h
     left = min(max(0, center_x - crop_w / 2), source_w - crop_w)
     top = min(max(0, center_y - crop_h / 2), source_h - crop_h)
@@ -451,8 +471,27 @@ def _draw_lotus(draw, x, y, sx, sy):
     draw.arc((min(x, x + sx * 50), min(y, y + sy * 32), max(x, x + sx * 50), max(y, y + sy * 32)), 180, 360, fill=gold, width=2)
 
 
-def compose_page(spec, repository_root, output_dir, fixture_mode=False, font_config=None):
-    report = validate_page_spec(spec, repository_root, fixture_mode, font_config)
+def _dialogue_tail(box, point):
+    """Attach a dialogue tail to the nearest balloon edge without crossing its text field."""
+    left, top, right, bottom = box
+    distances = {
+        "left": abs(point[0] - left), "right": abs(point[0] - right),
+        "top": abs(point[1] - top), "bottom": abs(point[1] - bottom),
+    }
+    edge = min(distances, key=distances.get)
+    if edge in {"top", "bottom"}:
+        x = max(left + 25, min(point[0], right - 25))
+        y = top if edge == "top" else bottom
+        base = ((x - 10, y), (x + 10, y))
+    else:
+        x = left if edge == "left" else right
+        y = max(top + 25, min(point[1], bottom - 25))
+        base = ((x, y - 10), (x, y + 10))
+    return base + (point,)
+
+
+def compose_page(spec, repository_root, output_dir, fixture_mode=False, font_config=None, private_preview=False):
+    report = validate_page_spec(spec, repository_root, fixture_mode, font_config, private_preview)
     if report["result"] != "PASS":
         raise ContractError("page specification failed deterministic validation", {"findings": report["findings"]})
     if fixture_mode is not bool(spec.get("fixture")):
@@ -493,7 +532,8 @@ def compose_page(spec, repository_root, output_dir, fixture_mode=False, font_con
         with Image.open(path) as source:
             source = source.convert("RGB")
             focal = panel.get("crop", {}).get("focal_point", {"x": 0.5, "y": 0.5})
-            crop = _cover_crop(source.size, (inner[2] - inner[0], inner[3] - inner[1]), focal)
+            zoom = panel.get("crop", {}).get("zoom", 1.0)
+            crop = _cover_crop(source.size, (inner[2] - inner[0], inner[3] - inner[1]), focal, zoom)
             cropped = source.crop(crop)
             rendered = cropped.resize((inner[2] - inner[0], inner[3] - inner[1]), Image.Resampling.LANCZOS)
             page.paste(rendered, inner[:2])
@@ -501,7 +541,8 @@ def compose_page(spec, repository_root, output_dir, fixture_mode=False, font_con
                 "panel_id": panel["panel_id"], "box": list(box), "asset_path": panel["asset"]["path"],
                 "asset_sha256": panel["asset"]["sha256"], "source_dimensions": list(source.size),
                 "source_crop": list(crop), "scale_mode": "ASPECT_PRESERVING_COVER",
-                "focal_point": focal, "semantic_crop_review": "NOT_APPLICABLE_SYNTHETIC_FIXTURE" if fixture_mode else "PENDING_IMAGE_CAPABLE_REVIEW",
+                "focal_point": focal, "zoom": zoom,
+                "semantic_crop_review": "NOT_APPLICABLE_SYNTHETIC_FIXTURE" if fixture_mode else "PENDING_IMAGE_CAPABLE_REVIEW",
             })
     lettering_metadata = []
     overflow_findings = []
@@ -520,8 +561,7 @@ def compose_page(spec, repository_root, output_dir, fixture_mode=False, font_con
             panel = next(value for value in spec["panels"] if value["panel_id"] == item["panel_id"])
             anchor = next(value for value in panel["speaker_anchors"] if value["speaker_id"] == item["speaker_id"])
             point = (int(anchor["x"] * width), int(anchor["y"] * height))
-            base = (max(box[0] + 25, min(point[0], box[2] - 25)), box[3])
-            draw.polygon((base, (base[0] + 18, base[1]), point), fill=_hex(PALETTE["speech_white"]), outline=_hex(PALETTE["ink"]))
+            draw.polygon(_dialogue_tail(box, point), fill=_hex(PALETTE["speech_white"]), outline=_hex(PALETTE["ink"]))
             padding, text_box = 22, box
         elif channel == "THOUGHT":
             draw.ellipse(box, fill=_hex(PALETTE["speech_white"]), outline=_hex(PALETTE["ink"]), width=3)
@@ -560,9 +600,11 @@ def compose_page(spec, repository_root, output_dir, fixture_mode=False, font_con
         })
     _, _, footer_font = _imaging()
     footer = footer_font.truetype(resolved_font["bold"], 24)
-    if fixture_mode:
+    if fixture_mode or private_preview:
         draw.rectangle((40, height - 91, width - 40, height - 50), fill=_hex(PALETTE["burgundy"]), outline=_hex(PALETTE["antique_gold"]), width=2)
-        draw.text((width // 2, height - 70), "NON-PRODUCTION RENDERER TEST", font=footer, fill=_hex(PALETTE["speech_white"]), anchor="mm")
+        label = "NON-PRODUCTION RENDERER TEST" if fixture_mode else PRIVATE_PREVIEW_LABEL
+        label_font = footer_font.truetype(resolved_font["bold"], 20 if private_preview else 24)
+        draw.text((width // 2, height - 70), label, font=label_font, fill=_hex(PALETTE["speech_white"]), anchor="mm")
     draw.text((width - 62, height - 37), str(spec["page_number"]), font=footer, fill=_hex(PALETTE["bright_gold"]), anchor="rm")
     if overflow_findings:
         raise ContractError("page lettering overflowed at the minimum readable size", {"findings": overflow_findings})
@@ -583,8 +625,9 @@ def compose_page(spec, repository_root, output_dir, fixture_mode=False, font_con
         "resolved_panels": panel_metadata, "resolved_lettering": lettering_metadata,
         "resolved_font": resolved_font, "fixture_mode": fixture_mode,
         "font_config_sha256": _sha256_file(font_config) if font_config and Path(font_config).is_file() else None,
-        "publication_eligible": False if fixture_mode else spec.get("publication_eligible", False),
-        "non_production_label": FIXTURE_LABEL if fixture_mode else None,
+        "publication_eligible": False if (fixture_mode or private_preview) else spec.get("publication_eligible", False),
+        "private_preview": private_preview,
+        "non_production_label": FIXTURE_LABEL if fixture_mode else (PRIVATE_PREVIEW_LABEL if private_preview else None),
     })
     composition["composition_hash"] = content_hash(composition)
     atomic_json_write(source_path, composition)
@@ -597,11 +640,12 @@ def compose_page(spec, repository_root, output_dir, fixture_mode=False, font_con
         "composition_path": str(source_path), "composition_hash": composition["composition_hash"],
         "rendered_png_path": str(png_path), "rendered_png_sha256": png_hash,
         "rendered_pixel_sha256": _pixel_hash(png_path), "dimensions": [width, height],
-        "fixture_mode": fixture_mode, "publication_eligible": False if fixture_mode else spec.get("publication_eligible", False),
+        "fixture_mode": fixture_mode, "private_preview": private_preview,
+        "publication_eligible": False if (fixture_mode or private_preview) else spec.get("publication_eligible", False),
     }
     metadata["metadata_hash"] = content_hash(metadata)
     atomic_json_write(metadata_path, metadata)
-    final_report = validate_rendered_page(composition, metadata, repository_root, fixture_mode)
+    final_report = validate_rendered_page(composition, metadata, repository_root, fixture_mode, private_preview)
     atomic_json_write(validation_path, final_report)
     if final_report["result"] != "PASS":
         raise ContractError("rendered page failed deterministic validation", {"findings": final_report["findings"]})
@@ -610,12 +654,12 @@ def compose_page(spec, repository_root, output_dir, fixture_mode=False, font_con
         "rendered_png": str(png_path), "metadata": str(metadata_path), "validation": str(validation_path),
         "composition_hash": composition["composition_hash"], "rendered_png_sha256": png_hash,
         "semantic_visual_review": final_report["semantic_visual_review"],
-        "publication_eligible": False if fixture_mode else spec.get("publication_eligible", False),
+        "publication_eligible": False if (fixture_mode or private_preview) else spec.get("publication_eligible", False),
     }
 
 
-def validate_rendered_page(composition, metadata, repository_root, fixture_mode=False):
-    report = validate_page_spec(composition, repository_root, fixture_mode, None)
+def validate_rendered_page(composition, metadata, repository_root, fixture_mode=False, private_preview=False):
+    report = validate_page_spec(composition, repository_root, fixture_mode, None, private_preview)
     findings = list(report["findings"])
     unsigned_composition = {key: value for key, value in composition.items() if key != "composition_hash"}
     if composition.get("composition_hash") != content_hash(unsigned_composition):
@@ -647,12 +691,12 @@ def validate_rendered_page(composition, metadata, repository_root, fixture_mode=
     }
 
 
-def validate_composition_file(path, repository_root, fixture_mode=False):
+def validate_composition_file(path, repository_root, fixture_mode=False, private_preview=False):
     composition = load_json(Path(path))
     metadata_path = Path(path).with_name(Path(path).name.replace(".composition.json", ".render.json"))
     if metadata_path.is_file():
-        return validate_rendered_page(composition, load_json(metadata_path), repository_root, fixture_mode)
-    return validate_page_spec(composition, repository_root, fixture_mode)
+        return validate_rendered_page(composition, load_json(metadata_path), repository_root, fixture_mode, private_preview)
+    return validate_page_spec(composition, repository_root, fixture_mode, private_preview=private_preview)
 
 
 def compose_book(manifest, repository_root, output_dir, fixture_mode=False, font_config=None):

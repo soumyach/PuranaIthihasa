@@ -1716,7 +1716,7 @@ class FactoryDirector:
             "mutated": False,
         }
 
-    def _page_engine_gate(self, book_id, required_stage, fixture_mode):
+    def _page_engine_gate(self, book_id, required_stage, fixture_mode, private_preview=False):
         if fixture_mode:
             return {"mode": "ISOLATED_FIXTURE", "publication_eligible": False, "state_mutation_allowed": False}
         book = self.catalogue.get(book_id)
@@ -1724,6 +1724,8 @@ class FactoryDirector:
             raise ContractError("book is not in the authoritative catalogue", {"book_id": book_id})
         if book_id == "DM08" or book.get("edition_status") == "EXISTING_EDITION":
             raise ContractError("existing reference editions cannot enter page production", {"book_id": book_id})
+        if private_preview:
+            return {"mode": "PRIVATE_PREVIEW", "publication_eligible": False, "state_mutation_allowed": False}
         store = StateStore(self.books_root, book_id, self._configuration()["retry_limits"]["stage"])
         if not store.events_path.is_file():
             raise ContractError("page production requires durable book state", {"book_id": book_id})
@@ -1736,14 +1738,15 @@ class FactoryDirector:
             )
         return {"mode": "PRODUCTION", "publication_eligible": False, "state_mutation_allowed": True, "state": state}
 
-    def compose_page(self, spec_path, output_dir, fixture_mode=False):
+    def compose_page(self, spec_path, output_dir, fixture_mode=False, private_preview=False):
         spec = load_json(Path(spec_path))
-        gate = self._page_engine_gate(spec.get("book_id"), ("LETTERING", "PDF_LAYOUT", "VISUAL_QA"), fixture_mode)
+        gate = self._page_engine_gate(spec.get("book_id"), ("LETTERING", "PDF_LAYOUT", "VISUAL_QA"), fixture_mode, private_preview)
         result = render_page(
             spec, self.root, Path(output_dir), fixture_mode,
             self.root / "book-factory" / "config" / "page-renderer-fonts.json",
+            private_preview,
         )
-        if not fixture_mode:
+        if not fixture_mode and not private_preview:
             composition = load_json(Path(result["composition"]))
             store = PageCompositionVersionStore(self.books_root)
             prior = store.versions(spec["book_id"], spec["page_id"])
@@ -1756,8 +1759,8 @@ class FactoryDirector:
         result["gate"] = gate
         return result
 
-    def validate_page(self, composition_path, fixture_mode=False):
-        return validate_composition_file(composition_path, self.root, fixture_mode)
+    def validate_page(self, composition_path, fixture_mode=False, private_preview=False):
+        return validate_composition_file(composition_path, self.root, fixture_mode, private_preview)
 
     def compose_book(self, manifest_path, output_dir, fixture_mode=False):
         manifest = load_json(Path(manifest_path))

@@ -152,6 +152,13 @@ class PageEnginePR8Tests(unittest.TestCase):
         spec["panels"][0]["crop"]["focal_point"]["x"] = 2
         self.assertIn("CROP_BOUNDS", self.codes(validate_page_spec(spec, ROOT, True, FONT_CONFIG)))
 
+    def test_12b_crop_zoom_is_bounded_and_preserves_aspect(self):
+        base = _cover_crop((800, 600), (400, 200), {"x": 0.75, "y": 0.5})
+        zoomed = _cover_crop((800, 600), (400, 200), {"x": 0.75, "y": 0.5}, 2.0)
+        self.assertLess(zoomed[2] - zoomed[0], base[2] - base[0])
+        self.assertLess(zoomed[3] - zoomed[1], base[3] - base[1])
+        self.assertAlmostEqual((zoomed[2] - zoomed[0]) / (zoomed[3] - zoomed[1]), 2.0, places=2)
+
     def test_13_layout_collision_detection(self):
         spec = self.page()
         spec["lettering"][1]["box"] = deepcopy(spec["lettering"][0]["box"])
@@ -241,6 +248,28 @@ class PageEnginePR8Tests(unittest.TestCase):
         self.assertEqual(second["parent_hash"], first["content_hash"])
         with self.assertRaises(ContractError):
             repair_page(composition, {"manuscript_hash": "changed"})
+
+    def test_25_private_preview_is_labeled_and_not_production_approved(self):
+        spec = self.page()
+        spec["fixture"] = False
+        spec["private_preview"] = True
+        spec["publication_eligible"] = False
+        spec["non_production_label"] = "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION"
+        for panel in spec["panels"]:
+            panel["asset"]["usage"] = "PRIVATE_INTERNAL_DIAGNOSTIC"
+            panel["asset"]["approval"] = {"status": "FIX", "subject_hash": panel["asset"]["sha256"]}
+        subjects = {
+            "manuscript": spec["manuscript_hash"],
+            "storyboard": spec["storyboard_hash"],
+            "series_standard": content_hash(spec["series_standard"]),
+        }
+        spec["approvals"] = {
+            key: {"status": "LOCKED_FOR_PRIVATE_PREVIEW", "subject_hash": value}
+            for key, value in subjects.items()
+        }
+        preview = validate_page_spec(spec, ROOT, False, FONT_CONFIG, True)
+        self.assertEqual(preview["result"], "PASS")
+        self.assertIn("MISSING_APPROVAL", self.codes(validate_page_spec(spec, ROOT, False, FONT_CONFIG)))
 
     def test_25_idempotent_resume(self):
         director = FactoryDirector(ROOT)

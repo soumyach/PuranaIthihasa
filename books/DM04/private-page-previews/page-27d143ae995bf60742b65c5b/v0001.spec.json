@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM04",
+  "book_version": "DM04-PRIVATE-PREVIEW-PR11-PAGE01-V1",
+  "manuscript_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+  "storyboard_hash": "25cc8bed5368e78c36a3bec43ad03efb7fe2ddc4dd41124ca9ce02bcdcc18185",
+  "page_script_hash": "4509f47443c27b55dd6d8914def8119393fcc16f23b56a0c328c094c0a042cc0",
+  "page_id": "page-27d143ae995bf60742b65c5b",
+  "page_number": 1,
+  "reading_order": 1,
+  "page_title": "A QUESTION BENEATH THE TREES",
+  "chapter_masthead": "DM04 — THE BUFFALO KING",
+  "layout_type": "TWO_PANEL_SEQUENTIAL",
+  "fixture": false,
+  "private_preview": true,
+  "publication_eligible": false,
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "preview_authority": {
+    "scope": "ONE_LOCAL_DM04_PAGE_COMPOSITION",
+    "basis": "Explicit user request in the current Codex thread",
+    "image_generation_authorized": false,
+    "publication_authorized": false,
+    "paid_provider_calls_authorized": false
+  },
+  "storyboard_conformance": {
+    "status": "PARTIAL_DIAGNOSTIC_NOT_STORYBOARD_COMPLETE",
+    "reason": "One portrait source illustration supports an establishing crop and a distinct Medhas close crop, but cannot truthfully create the locked over-shoulder listener camera angle."
+  },
+  "reference_comparison": [
+    {
+      "role": "PRESENTATION_REFERENCE_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "role": "COMIC_PAGE_RHYTHM_REFERENCE_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+    },
+    {
+      "role": "READING_SIZE_DENSITY_REFERENCE_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p02.png",
+      "sha256": "a0fa07b60d1b8b128b541300f3fb5e26358863e3153c719e2d0aacb0fd7858dd"
+    }
+  ],
+  "panels": [
+    {
+      "panel_id": "p01-panel-01",
+      "reading_order": 1,
+      "diagnostic_beat": "Establish the hermitage, all three figures and the fire before Medhas speaks.",
+      "asset": {
+        "path": "books/DM04/production-pilot/images/page-27d143ae995bf60742b65c5b/v0001.png",
+        "sha256": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+        "usage": "PRIVATE_INTERNAL_DIAGNOSTIC",
+        "approval": {
+          "status": "FIX",
+          "subject_hash": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+          "review_path": "books/DM04/production-visual-reviews/page-27d143ae995bf60742b65c5b/v0001.json"
+        }
+      },
+      "crop": {
+        "mode": "COVER",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "zoom": 1.0,
+        "crop_intent": "Wide establishing crop retaining all three figures, the hermitage context and the fire."
+      },
+      "speaker_anchors": []
+    },
+    {
+      "panel_id": "p01-panel-02",
+      "reading_order": 2,
+      "diagnostic_beat": "Move into Medhas's speaking presence for the exact opening question.",
+      "asset": {
+        "path": "books/DM04/production-pilot/images/page-27d143ae995bf60742b65c5b/v0001.png",
+        "sha256": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+        "usage": "PRIVATE_INTERNAL_DIAGNOSTIC",
+        "approval": {
+          "status": "FIX",
+          "subject_hash": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+          "review_path": "books/DM04/production-visual-reviews/page-27d143ae995bf60742b65c5b/v0001.json"
+        }
+      },
+      "crop": {
+        "mode": "COVER",
+        "focal_point": {
+          "x": 0.78,
+          "y": 0.46
+        },
+        "zoom": 1.55,
+        "crop_intent": "Distinct close crop on Medhas; not represented as the storyboard's unavailable over-shoulder angle."
+      },
+      "speaker_anchors": [
+        {
+          "speaker_id": "dm-medhas",
+          "x": 0.6,
+          "y": 0.66,
+          "target_feature": "Medhas lower speaking face"
+        }
+      ]
+    }
+  ],
+  "lettering": [
+    {
+      "lettering_id": "p01-narration",
+      "panel_id": "p01-panel-01",
+      "reading_order": 1,
+      "channel": "NARRATION",
+      "speaker_id": "narrator",
+      "badge_number": 1,
+      "text": "Night settles around the hermitage fire. Suratha and Samādhi turn toward Medhas as he begins.",
+      "source_script_hash": "fdc0e1483eb0ea38c7b5e9755e01bffab4bc10509317a00c3cc934fc5103160d",
+      "box": {
+        "x": 0.065,
+        "y": 0.115,
+        "width": 0.87,
+        "height": 0.09
+      },
+      "font": {
+        "size": 24,
+        "minimum_size": 22
+      }
+    },
+    {
+      "lettering_id": "p01-dialogue",
+      "panel_id": "p01-panel-02",
+      "reading_order": 2,
+      "channel": "DIALOGUE",
+      "speaker_id": "dm-medhas",
+      "text": "What remains of a kingdom when every gate still stands, every throne is occupied—and yet none of its rightful guardians can return?",
+      "source_script_hash": "f303dfbab5f74ed2422b8822f66a9a18df9bc08a063584965c65e25df8a7abd4",
+      "box": {
+        "x": 0.065,
+        "y": 0.745,
+        "width": 0.43,
+        "height": 0.17
+      },
+      "font": {
+        "size": 26,
+        "minimum_size": 22
+      }
+    }
+  ],
+  "required_lettering_ids": [
+    "p01-narration",
+    "p01-dialogue"
+  ],
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "typography": {
+    "family": "STIXGeneral",
+    "body_size": 26,
+    "title_size": 30
+  },
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "25cc8bed5368e78c36a3bec43ad03efb7fe2ddc4dd41124ca9ce02bcdcc18185"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    }
+  }
+}

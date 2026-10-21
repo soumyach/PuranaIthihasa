@@ -135,9 +135,11 @@ def build_parser():
     compose_page.add_argument("--spec", required=True)
     compose_page.add_argument("--output-dir", required=True)
     compose_page.add_argument("--fixture-mode", action="store_true")
+    compose_page.add_argument("--private-preview", action="store_true")
     validate_page = subparsers.add_parser("validate-page", help="validate an editable or rendered page composition")
     validate_page.add_argument("--source", required=True)
     validate_page.add_argument("--fixture-mode", action="store_true")
+    validate_page.add_argument("--private-preview", action="store_true")
     compose_book = subparsers.add_parser("compose-book", help="compose an explicitly ordered set of pages")
     compose_book.add_argument("--manifest", required=True)
     compose_book.add_argument("--output-dir", required=True)
@@ -260,9 +262,9 @@ def run(args):
     if args.command == "prepare-style-approval":
         return director.prepare_style_approval(args.book_id)
     if args.command == "compose-page":
-        return director.compose_page(args.spec, args.output_dir, args.fixture_mode)
+        return director.compose_page(args.spec, args.output_dir, args.fixture_mode, args.private_preview)
     if args.command == "validate-page":
-        return director.validate_page(args.source, args.fixture_mode)
+        return director.validate_page(args.source, args.fixture_mode, args.private_preview)
     if args.command == "compose-book":
         return director.compose_book(args.manifest, args.output_dir, args.fixture_mode)
     if args.command == "export-pdf":
