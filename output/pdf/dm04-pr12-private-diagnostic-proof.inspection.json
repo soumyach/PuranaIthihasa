@@ -1,0 +1,31 @@
+{
+  "digital_reader_profile": "ONE_NATIVE_1086_X_1448_RASTER_PER_PAGE_NO_PRINT_CLAIM",
+  "engine_version": "0.8.1",
+  "findings": [],
+  "page_count": 1,
+  "page_order": [
+    "page-27d143ae995bf60742b65c5b"
+  ],
+  "pages": [
+    {
+      "height": 1448.0,
+      "images": [
+        {
+          "dimensions": [
+            1086,
+            1448
+          ],
+          "name": "FormXob.c69468b656c59387067c3025c145b5ed.png",
+          "pixel_sha256": "e61662c4d607c6d5e676e602b5fe6425b6f695f89c53e15d93820ef467b9e221"
+        }
+      ],
+      "orientation": "PORTRAIT",
+      "page_number": 1,
+      "width": 1086.0
+    }
+  ],
+  "pdf_path": "output/pdf/dm04-pr12-private-diagnostic-proof.pdf",
+  "pdf_sha256": "4d70cf465bbca45a8de1e61b669d38634249157c2f89cdd9acb6bc82eb7f32da",
+  "result": "PASS",
+  "schema_version": "1.0"
+}

@@ -1,0 +1,298 @@
+{
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "25cc8bed5368e78c36a3bec43ad03efb7fe2ddc4dd41124ca9ce02bcdcc18185"
+    }
+  },
+  "book_id": "DM04",
+  "book_version": "DM04-PRIVATE-PREVIEW-PR12-PAGE01-V1",
+  "canvas": {
+    "aspect_ratio": "3:4",
+    "height": 1448,
+    "width": 1086
+  },
+  "chapter_masthead": "DM04 — THE BUFFALO KING",
+  "composition_hash": "659ba78e1b78c18ff5a5cee7e21cdb5bf9bc0c7ccf638d668465f2708dfd0733",
+  "engine_version": "0.8.1",
+  "fixture": false,
+  "fixture_mode": false,
+  "font_config_sha256": "ba6cd2c0c4d716aa550059148339642da7fb2f1af1bfaad2e5d6ab838fb1e0aa",
+  "layout_type": "TWO_PANEL_SEQUENTIAL",
+  "lettering": [
+    {
+      "badge_number": 1,
+      "box": {
+        "height": 0.09,
+        "width": 0.87,
+        "x": 0.065,
+        "y": 0.115
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 24
+      },
+      "lettering_id": "p01-narration",
+      "panel_id": "p01-panel-01",
+      "reading_order": 1,
+      "source_script_hash": "fdc0e1483eb0ea38c7b5e9755e01bffab4bc10509317a00c3cc934fc5103160d",
+      "speaker_id": "narrator",
+      "text": "Night settles around the hermitage fire. Suratha and Samādhi turn toward Medhas as he begins."
+    },
+    {
+      "box": {
+        "height": 0.17,
+        "width": 0.48,
+        "x": 0.055,
+        "y": 0.735
+      },
+      "channel": "DIALOGUE",
+      "font": {
+        "minimum_size": 22,
+        "size": 25
+      },
+      "lettering_id": "p01-dialogue",
+      "panel_id": "p01-panel-02",
+      "reading_order": 2,
+      "source_script_hash": "f303dfbab5f74ed2422b8822f66a9a18df9bc08a063584965c65e25df8a7abd4",
+      "speaker_id": "dm-medhas",
+      "text": "What remains of a kingdom when every gate still stands, every throne is occupied—and yet none of its rightful guardians can return?"
+    }
+  ],
+  "manuscript_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+  "mechanical_repair": {
+    "image_operation_consumed": false,
+    "image_pixels_modified": false,
+    "repair_goal": "Place exact editable lettering without covering faces or hands.",
+    "source_review_path": "books/DM04/autonomous-pilot-visual-reviews/page-27d143ae995bf60742b65c5b--p01-panel-02/v0001.json",
+    "source_review_result": "FIX",
+    "type": "LETTERING_REPOSITIONING_ONLY"
+  },
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "page_id": "page-27d143ae995bf60742b65c5b",
+  "page_number": 1,
+  "page_script_hash": "4509f47443c27b55dd6d8914def8119393fcc16f23b56a0c328c094c0a042cc0",
+  "page_title": "A QUESTION BENEATH THE TREES",
+  "panels": [
+    {
+      "asset": {
+        "approval": {
+          "review_path": "books/DM04/production-visual-reviews/page-27d143ae995bf60742b65c5b/v0001.json",
+          "status": "FIX",
+          "subject_hash": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7"
+        },
+        "path": "books/DM04/production-pilot/images/page-27d143ae995bf60742b65c5b/v0001.png",
+        "sha256": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+        "usage": "PRIVATE_INTERNAL_LIMITED_BEAT_REUSE"
+      },
+      "crop": {
+        "crop_intent": "Retain all three figures, hermitage context and fire for the locked establishing beat.",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "mode": "COVER",
+        "zoom": 1.0
+      },
+      "diagnostic_beat": "Wide eye-level frame: low fire at center, Medhas seated beyond it, Suratha left and Samādhi right turning toward him.",
+      "panel_id": "p01-panel-01",
+      "reading_order": 1,
+      "speaker_anchors": []
+    },
+    {
+      "asset": {
+        "approval": {
+          "review_path": "books/DM04/autonomous-pilot-visual-reviews/page-27d143ae995bf60742b65c5b--p01-panel-02/v0001.json",
+          "status": "FIX",
+          "subject_hash": "3fc146fd6d5afc5a512537ace1e23b132c769b6fbc5bcff99f2fbb7d39f93ea9"
+        },
+        "path": "books/DM04/autonomous-pilot/images/page-27d143ae995bf60742b65c5b--p01-panel-02/v0001.png",
+        "sha256": "3fc146fd6d5afc5a512537ace1e23b132c769b6fbc5bcff99f2fbb7d39f93ea9",
+        "usage": "PRIVATE_INTERNAL_MECHANICAL_REPAIR_REVIEW"
+      },
+      "crop": {
+        "crop_intent": "Preserve both foreground listener shoulders, Medhas's face and hand, and the fire as a distinct second beat.",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.52
+        },
+        "mode": "COVER",
+        "zoom": 1.0
+      },
+      "diagnostic_beat": "Intimate over-shoulder from behind both listeners as Medhas asks the exact opening question.",
+      "panel_id": "p01-panel-02",
+      "reading_order": 2,
+      "speaker_anchors": [
+        {
+          "speaker_id": "dm-medhas",
+          "target_feature": "Medhas lower speaking face",
+          "x": 0.65,
+          "y": 0.64
+        }
+      ]
+    }
+  ],
+  "preview_authority": {
+    "campaign_subject_hash": "fd9864465aebf8e0c121f72ce8a4249d08af372a48829ab926b0a223e6956b21",
+    "image_generation_authorized": false,
+    "paid_provider_calls_authorized": false,
+    "publication_authorized": false,
+    "scope": "ONE_LOCAL_DM04_PAGE_COMPOSITION"
+  },
+  "private_preview": true,
+  "publication_eligible": false,
+  "reading_order": 1,
+  "reference_comparison": [
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "role": "A_SERIES_VISUAL_IDENTITY",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "role": "B_PAGE_PANEL_COMPOSITION",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+    }
+  ],
+  "renderer_source_sha256": "a81c7c537a5f6c08cbbdb792409586222b250d2bc82e38eae62422dd719a9dca",
+  "required_lettering_ids": [
+    "p01-narration",
+    "p01-dialogue"
+  ],
+  "resolved_font": {
+    "bold": "/System/Library/Fonts/Supplemental/STIXGeneralBol.otf",
+    "bold_sha256": "7e4dfb4979e9bb79a0bdedc56f055eab615fb9a3dff8788a52992ae65e8f572d",
+    "classification": "serif",
+    "family": "STIXGeneral",
+    "font_binary_bundled_in_repository": false,
+    "legal_installation": "Install the STIX Fonts project from its official distribution, then update paths if the operating system stores it elsewhere. Confirm the specific distribution's license before publication.",
+    "license_evidence": "The installed font metadata identifies the STIX license, derived from the SIL Open Font License. The renderer records hashes but does not copy these system files into the repository.",
+    "license_status": "SYSTEM_FONT_LICENSE_REVIEWED_NOT_REDISTRIBUTED",
+    "regular": "/System/Library/Fonts/Supplemental/STIXGeneral.otf",
+    "regular_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7"
+  },
+  "resolved_lettering": [
+    {
+      "box": [
+        71,
+        167,
+        1015,
+        297
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p01-narration",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "rendered_font_size": 24,
+      "requested_font_size": 24,
+      "source_script_hash": "fdc0e1483eb0ea38c7b5e9755e01bffab4bc10509317a00c3cc934fc5103160d",
+      "text_sha256": "d3403dfa2f41f630b2e9adb257b2b173e762ea3aabc3a6466a86d26be34de6b1"
+    },
+    {
+      "box": [
+        60,
+        1064,
+        581,
+        1310
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p01-dialogue",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "rendered_font_size": 25,
+      "requested_font_size": 25,
+      "source_script_hash": "f303dfbab5f74ed2422b8822f66a9a18df9bc08a063584965c65e25df8a7abd4",
+      "text_sha256": "1f5e8a2929f6346d436474118222d8242fcf086b3c2afb2deb4c4cedb9c670a2"
+    }
+  ],
+  "resolved_panels": [
+    {
+      "asset_path": "books/DM04/production-pilot/images/page-27d143ae995bf60742b65c5b/v0001.png",
+      "asset_sha256": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+      "box": [
+        49,
+        152,
+        1037,
+        733
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "panel_id": "p01-panel-01",
+      "scale_mode": "ASPECT_PRESERVING_COVER",
+      "semantic_crop_review": "PENDING_IMAGE_CAPABLE_REVIEW",
+      "source_crop": [
+        0,
+        335,
+        1086,
+        969
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "zoom": 1.0
+    },
+    {
+      "asset_path": "books/DM04/autonomous-pilot/images/page-27d143ae995bf60742b65c5b--p01-panel-02/v0001.png",
+      "asset_sha256": "3fc146fd6d5afc5a512537ace1e23b132c769b6fbc5bcff99f2fbb7d39f93ea9",
+      "box": [
+        49,
+        759,
+        1037,
+        1339
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.52
+      },
+      "panel_id": "p01-panel-02",
+      "scale_mode": "ASPECT_PRESERVING_COVER",
+      "semantic_crop_review": "PENDING_IMAGE_CAPABLE_REVIEW",
+      "source_crop": [
+        0,
+        85,
+        1536,
+        980
+      ],
+      "source_dimensions": [
+        1536,
+        1024
+      ],
+      "zoom": 1.0
+    }
+  ],
+  "schema_version": "1.0",
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "storyboard_conformance": {
+    "reason": "Panel 1 reuses the existing establishing art only for its matching locked beat; panel 2 is a separately generated genuine over-shoulder scene. No duplicate crop substitutes for narrative progression.",
+    "status": "COMPLETE_LOCKED_TWO_PANEL_SEQUENCE_FOR_PRIVATE_REVIEW"
+  },
+  "storyboard_hash": "25cc8bed5368e78c36a3bec43ad03efb7fe2ddc4dd41124ca9ce02bcdcc18185",
+  "typography": {
+    "body_size": 25,
+    "family": "STIXGeneral",
+    "title_size": 30
+  }
+}

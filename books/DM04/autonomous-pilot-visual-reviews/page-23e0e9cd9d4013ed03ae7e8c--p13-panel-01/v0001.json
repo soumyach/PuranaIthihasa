@@ -1,0 +1,120 @@
+{
+  "book_id": "DM04",
+  "content_hash": "1b20c6ef6b6fc9cfb73c0a606d116c7638ffa23a6975a2700f30aedc9f746f88",
+  "id": "autonomous-pilot-visual-reviews/page-23e0e9cd9d4013ed03ae7e8c--p13-panel-01-f29e6a3d3bc2ecc8b2d55286",
+  "kind": "autonomous-pilot-visual-reviews/page-23e0e9cd9d4013ed03ae7e8c--p13-panel-01",
+  "parent_hash": null,
+  "payload": {
+    "assessments": [
+      {
+        "dimension": "SOURCE_FIDELITY",
+        "evidence": "The pixels clearly show arrows, spears and mace-like heavy missiles breaking before reaching Devi, with fragments falling over the front ranks. However, Devi is stopping them with an empty raised palm and a luminous circular force arc; no sourced weapon visibly cuts the missiles as required by event 014 and the locked panel action.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "RELIGIOUS_ICONOGRAPHY",
+        "evidence": "Devi has a radiant crown, classical dress and a readable multi-arm silhouette, but the large sun-disk directly behind her head and the weaponless palm-generated force barrier are not authorized by the character bible. This is a concrete source-contract violation rather than a theological approval: qualified religious approval has not been inferred.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "CULTURAL_AUTHENTICITY",
+        "evidence": "Devi's sari-like dress, jewelry and crown and the enemy ranks' simple shields, spears and cloth wraps remain within a broadly classical Indian visual vocabulary. No Greco-Roman helmet, Western plate armor, modern object or invented flag emblem is visible.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "CHARACTER_CONTINUITY",
+        "evidence": "Compared with the adjacent generated panel 2 and page 14, this Devi has fewer readable arms, no held sourced equipment, a different all-white garland treatment and a materially different sacred silhouette. The face, blue-and-ivory palette and crown family recur, but the arm/equipment identity does not remain stable across the contiguous sequence.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "NARRATIVE_CLARITY",
+        "evidence": "At original and reading size, the diagonal missiles, bright impact line and broken shafts make the attack-and-deflection cause immediately legible, and the intact enemy ranks establish scale without gore.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "ARTISTIC_QUALITY",
+        "evidence": "The 1672x940 render is crisp, energetic and spatially layered. Devi's face, visible hands, fabric and crown remain coherent; the weapon trajectories have strong depth, and no decisive fused limb, malformed digit or raster artifact is visible.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "LETTERING_READABILITY",
+        "evidence": "No embedded text or watermark is present, but the requested upper-left lettering zone is filled by incoming spear shafts, mace heads, arrows, bright impact streaks and dense splinters. A narration plaque there would obscure the action mechanism.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "COMPOSITION",
+        "evidence": "The skyward diagonal is strong and readable: enemy weapons travel left-to-right toward Devi, the interception line is centered, and the distant ridge stabilizes the battlefield. Broken shafts remain in front of the ranks rather than piercing bodies.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "REFERENCE_ALIGNMENT",
+        "evidence": "The image takes Reference A's premium devotional finish and Reference B's army depth and readable large-scale action. It does not copy Raktabija, blood multiplication, flags, armor identities or DM08 theology.",
+        "result": "PASS"
+      }
+    ],
+    "book_id": "DM04",
+    "campaign_subject_hash": "fd9864465aebf8e0c121f72ce8a4249d08af372a48829ab926b0a223e6956b21",
+    "correction_instructions": [
+      "For a future separately authorized correction only, replace the palm force barrier with a clearly visible authorized weapon cutting the missiles before impact.",
+      "Remove the sun-disk halo, lock Devi's face, crown, garland, arm-field and sourced equipment to the adjacent panel, and reserve a genuinely low-detail upper-left narration area.",
+      "Do not retry automatically."
+    ],
+    "findings": [
+      {
+        "dimension": "SOURCE_FIDELITY",
+        "discrepancy": "The missiles are broken by an unsourced palm force barrier rather than visibly cut by sourced equipment.",
+        "evidence": "The open foreground palm intersects a luminous circular arc; all shafts fragment at that arc, while no sword, discus, spear, arrows or other authorized implement performs the cut.",
+        "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+        "repair_type": "SOURCE_ACTION_RECOMPOSITION"
+      },
+      {
+        "dimension": "RELIGIOUS_ICONOGRAPHY",
+        "discrepancy": "The image introduces an unsourced head halo and weaponless force-field power.",
+        "evidence": "A complete radiating sun-disk sits behind Devi's crown, and a luminous barrier emerges from her empty palm despite the bible's prohibition on unsourced halo symbolism and attributes.",
+        "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+        "repair_type": "ICONOGRAPHY_CONTRACT_REPAIR"
+      },
+      {
+        "dimension": "CHARACTER_CONTINUITY",
+        "discrepancy": "Devi's arm/equipment and garland identity changes materially between the two page-13 panels.",
+        "evidence": "Panel 1 shows a sparse weaponless multi-arm silhouette and white garland; panel 2 shows eight explicit weapon-bearing arms and a pink-white garland, with different crown and halo construction.",
+        "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+        "repair_type": "CHARACTER_CONTINUITY_REPAIR"
+      },
+      {
+        "dimension": "LETTERING_READABILITY",
+        "discrepancy": "The upper-left narration-safe area is occupied by essential action pixels.",
+        "evidence": "Large projectile shafts, weapon heads, fragments and bright interception streaks cross the entire upper-left at original resolution.",
+        "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+        "repair_type": "LETTERING_REGION_REPAIR"
+      }
+    ],
+    "generation_retry_authorized": false,
+    "image_path": "books/DM04/autonomous-pilot/images/page-23e0e9cd9d4013ed03ae7e8c--p13-panel-01/v0001.png",
+    "image_sha256": "c0a0d15ea531ba00bee1c1c3ccac1bb795dc84f59e0a25d96dd08eca1b6a09b4",
+    "independent_actual_pixel_review": true,
+    "milestone": "PR12",
+    "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+    "panel_id": "p13-panel-01",
+    "preview_eligible": false,
+    "publication_eligible": false,
+    "request_hash": "b076d926aa3f021f7bc41e64a45224aada02048076f88c9ab65cbff5d0842a98",
+    "request_record_hash": "e9fac90dccb4c3ca5b9ad0aee8b94925ab93421f5c52f1aa8871ddea1fedc9a0",
+    "result": "FIX",
+    "review_hash": "168f12dccdd707cdee90d137b776d0bef2627daf8107a752fc8ecba3d1dc3401",
+    "reviewed_at": "2026-10-21T16:38:55Z",
+    "reviewer": {
+      "id": "/root/pr12_visual_reviewer",
+      "image_capable": true,
+      "inspected_actual_pixels": true,
+      "produced_image": false,
+      "producer_independence": "Independent of codex-root-image-producer-pr12",
+      "reading_size": "ACTUAL_READING_SIZE",
+      "role": "INDEPENDENT_ACTUAL_PIXEL_VISUAL_REVIEWER"
+    },
+    "schema_version": "1.0",
+    "unit_id": "page-23e0e9cd9d4013ed03ae7e8c--p13-panel-01"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

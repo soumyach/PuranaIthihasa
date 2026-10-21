@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "milestone": "PR12",
+  "provider_id": "codex-built-in-image-gen",
+  "provider_interface": "image_gen.imagegen",
+  "unit_id": "page-54d61ef5bfcb1159088ac489--p23-panel-01",
+  "page_id": "page-54d61ef5bfcb1159088ac489",
+  "panel_id": "p23-panel-01",
+  "operation": "generate",
+  "operation_sequence": 5,
+  "request_hash": "4d355deb4b28ce765c714a646875dcd325dbd6cc0e0caa07d313dc583efb2d1f",
+  "campaign_subject_hash": "fd9864465aebf8e0c121f72ce8a4249d08af372a48829ab926b0a223e6956b21",
+  "producer": {
+    "id": "codex-root-image-producer-pr12",
+    "host_session_only": true
+  },
+  "submitted_edit_target": null,
+  "submitted_references": [
+    {
+      "role": "A_SERIES_VISUAL_IDENTITY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+      "input_index": 1,
+      "content_transfer": "FORBIDDEN"
+    },
+    {
+      "role": "B_PAGE_PANEL_COMPOSITION",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+      "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5",
+      "input_index": 2,
+      "content_transfer": "FORBIDDEN"
+    }
+  ],
+  "unavailable_reference_roles": [
+    "C_APPROVED_CHARACTER_REFERENCE",
+    "D_APPROVED_SETTING_REFERENCE"
+  ],
+  "submitted_prompt": "Create one clean portrait 3:4 immersive full-page illustration for DM04 page 23, a single exact reversal. Mahiṣāsura appears only in massive dark-umber buffalo form, surging from the near foreground; his muzzle, hooves, tail and horns scatter the warm ivory-gold breath-born troops. Do not show a human, lion or elephant antagonist form. At the top of the vertical field, Devī/Chandikā and her distinct tawny-gold dark-maned lion hold a small but unbroken opposing line. Devī wears classical modest Indian dress in deep blue, warm ivory and antique gold, with radiant crown and sourced equipment only. Use storm-dark edge light against her gold, readable depth, stable ridge and an uncluttered upper-left lettering area. REFERENCE A supplies premium Khatakshetra devotional painterly identity and focal hierarchy. REFERENCE B supplies only immersive climax depth and before/after visual force; omit its characters, blood, flags, skulls, armor, weapons and theology. No text, balloons, border, watermark, gore, Western fantasy armor, Greco-Roman helmets, invented emblems or unrelated divine iconography. Family-reading appropriate.",
+  "submitted_prompt_sha256": "ff22f170c3c9da52534da3f9bc4a48dd08efdebd91bc5d10d3a7141ea2f79afd",
+  "output_path": "books/DM04/autonomous-pilot/images/page-54d61ef5bfcb1159088ac489--p23-panel-01/v0001.png",
+  "output_sha256": "6d41a3604423dfab3e1f31e6fc00c034fa40325173fbfcf26e70826548891e07",
+  "output_width": 1086,
+  "output_height": 1448,
+  "source_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-4489704e-a9db-4794-9593-f6fc4c14bf5f.png",
+  "included_allowance_policy": "CURRENT_INCLUDED_ALLOWANCE_FIRST",
+  "api_key_supplied": false,
+  "external_provider_authorization_requested": false,
+  "paid_billing_requested": false,
+  "automatic_credit_purchase_requested": false,
+  "purchased_credit_consumption": "NOT_REPORTED_NO_BALANCE",
+  "actual_incremental_usd": "UNKNOWN_NOT_EXPOSED",
+  "retry": false
+}

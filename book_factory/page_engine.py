@@ -771,7 +771,11 @@ def export_pdf(manifest, output_path, fixture_mode=False):
     pdf = canvas.Canvas(str(output), pagesize=(CANVAS["width"], CANVAS["height"]), pageCompression=1, invariant=1)
     pdf.setTitle(FIXTURE_LABEL if fixture_mode else manifest.get("title", manifest.get("book_id", "Khatakshetra Book")))
     pdf.setAuthor("Khatakshetra Autonomous Book Factory")
-    pdf.setSubject("Technical renderer fixture; not a finished mythology book" if fixture_mode else "Digital reader edition")
+    pdf.setSubject(
+        "Technical renderer fixture; not a finished mythology book" if fixture_mode else
+        "Private diagnostic proof; not approved for publication" if manifest.get("private_preview") else
+        "Digital reader edition"
+    )
     pdf.setCreator("Khatakshetra Book Factory page engine %s" % ENGINE_VERSION)
     for page in pages:
         pdf.setPageSize((CANVAS["width"], CANVAS["height"]))

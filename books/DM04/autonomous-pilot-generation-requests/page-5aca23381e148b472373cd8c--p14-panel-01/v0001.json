@@ -1,0 +1,63 @@
+{
+  "book_id": "DM04",
+  "content_hash": "003e9d2d1da03c458041403376d8d171c61b4e985e08cac6178e2d09e8513464",
+  "id": "autonomous-pilot-generation-requests/page-5aca23381e148b472373cd8c--p14-panel-01-2e8b55e32e370209fc1a5b13",
+  "kind": "autonomous-pilot-generation-requests/page-5aca23381e148b472373cd8c--p14-panel-01",
+  "parent_hash": null,
+  "payload": {
+    "automatic_retry_authorized": false,
+    "base_image": null,
+    "book_id": "DM04",
+    "campaign_approval_id": "approval-10d8e25958b7ae7dbb00eb57",
+    "campaign_id": "dm04-pr12-autonomous-multi-page-pilot-01",
+    "campaign_subject_hash": "fd9864465aebf8e0c121f72ce8a4249d08af372a48829ab926b0a223e6956b21",
+    "maximum_operations_for_unit": 1,
+    "maximum_paid_spend_minor_units": 0,
+    "milestone": "PR12",
+    "operation": "generate",
+    "page_id": "page-5aca23381e148b472373cd8c",
+    "panel_id": "p14-panel-01",
+    "prompt": "Create one clean portrait 3:4 immersive full-page illustration for DM04 page 14. Devī/Chandikā is at the top center, serene and commanding in classical modest Indian dress, deep blue, warm ivory and antique gold, radiant crown, readable many-armed identity using sourced equipment only. A luminous battle breath visibly leaves her and resolves in layered stages into disciplined warm ivory-gold troops below, carrying exactly axes, javelins, swords and halberds. Drums and conches answer; subtle concentric bell waves confound the charcoal-and-oxblood asura formation along the lower edge as it breaks before the advance. Make emergence, instruments and consequence legible without compressing unrelated actions. Preserve a stable distant ridge and a calm upper-left parchment-safe area. REFERENCE A supplies premium Khatakshetra devotional painterly identity and focal hierarchy. REFERENCE B supplies only transformation sequencing, battlefield depth and cinematic reveal; do not transfer Kali/Chamunda, skulls, blood, flags, opponents, weapons or theology. No text, balloons, border, watermark, gore, Western fantasy armor, Greco-Roman helmets, invented emblems or unrelated divine iconography. Family-reading appropriate.",
+    "prompt_sha256": "3409b198a4208f00d61a1bafd6e6df76779f4351a2f1564ff9dc2e52ba52e2e4",
+    "provider_id": "codex-built-in-image-gen",
+    "provider_interface": "referenced_image_paths",
+    "references": [
+      {
+        "approval_status": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY",
+        "available": true,
+        "content_transfer": "FORBIDDEN",
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+        "reference_id": "kgs-satya-p01",
+        "role": "A_SERIES_VISUAL_IDENTITY",
+        "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+      },
+      {
+        "approval_status": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY",
+        "available": true,
+        "content_transfer": "FORBIDDEN",
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+        "reference_id": "kgs-dm08-p12",
+        "role": "B_PAGE_PANEL_COMPOSITION",
+        "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+      },
+      {
+        "approval_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_DM04_CHARACTER_ASSET",
+        "available": false,
+        "content_transfer": "NOT_APPLICABLE",
+        "role": "C_APPROVED_CHARACTER_REFERENCE"
+      },
+      {
+        "approval_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_DM04_SETTING_ASSET",
+        "available": false,
+        "content_transfer": "NOT_APPLICABLE",
+        "role": "D_APPROVED_SETTING_REFERENCE"
+      }
+    ],
+    "request_hash": "30d8a6653423636584edffc9e70f98b9f090a7b38a9bcc5c9db8dc803a3e0d9c",
+    "schema_version": "1.0",
+    "text_in_image": false,
+    "unit_id": "page-5aca23381e148b472373cd8c--p14-panel-01"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

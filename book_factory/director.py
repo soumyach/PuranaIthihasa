@@ -6,6 +6,7 @@ from pathlib import Path
 
 from . import __version__
 from .artifacts import ArtifactStore
+from .autonomous_pilot import AutonomousMultiPagePilot
 from .catalogue import CatalogueStore
 from .catalogue_v01 import SourceMappingRegistry
 from .contracts import load_schema, validate_named
@@ -86,6 +87,7 @@ class FactoryDirector:
         self.clearances = SourceClearanceStore(self.books_root)
         self.handoffs = SessionHandoffStore(self.books_root)
         self.real_production = RealProductionSlice(self.root)
+        self.autonomous_pilot = AutonomousMultiPagePilot(self.root)
         self.orchestrator = AutonomousFactoryDirector(self, orchestration_runtime_root)
 
     def _configuration(self):
@@ -1593,6 +1595,41 @@ class FactoryDirector:
             raise ContractError("PR11 visual review import is locked to DM04", {"book_id": book_id})
         return self.real_production.import_visual_review(page_id, request_path, response_path)
 
+    def prepare_autonomous_pilot(self, book_id):
+        if book_id != "DM04":
+            raise ContractError("PR12 autonomous pilot is locked to DM04", {"book_id": book_id})
+        return self.autonomous_pilot.prepare()
+
+    def autonomous_pilot_status(self, book_id):
+        if book_id != "DM04":
+            raise ContractError("PR12 autonomous pilot is locked to DM04", {"book_id": book_id})
+        return self.autonomous_pilot.status()
+
+    def import_autonomous_pilot_approval(self, book_id, approval_path):
+        if book_id != "DM04":
+            raise ContractError("PR12 autonomous pilot is locked to DM04", {"book_id": book_id})
+        return self.autonomous_pilot.import_approval(approval_path)
+
+    def prepare_autonomous_pilot_generation(self, book_id, unit_id):
+        if book_id != "DM04":
+            raise ContractError("PR12 autonomous pilot is locked to DM04", {"book_id": book_id})
+        return self.autonomous_pilot.prepare_generation(unit_id)
+
+    def import_autonomous_pilot_image(self, book_id, unit_id, request_path, image_path, provider_receipt_path):
+        if book_id != "DM04":
+            raise ContractError("PR12 autonomous pilot is locked to DM04", {"book_id": book_id})
+        return self.autonomous_pilot.import_image(unit_id, request_path, image_path, provider_receipt_path)
+
+    def prepare_autonomous_pilot_visual_review(self, book_id, unit_id):
+        if book_id != "DM04":
+            raise ContractError("PR12 autonomous pilot is locked to DM04", {"book_id": book_id})
+        return self.autonomous_pilot.prepare_visual_review(unit_id)
+
+    def import_autonomous_pilot_visual_review(self, book_id, unit_id, request_path, response_path):
+        if book_id != "DM04":
+            raise ContractError("PR12 autonomous pilot is locked to DM04", {"book_id": book_id})
+        return self.autonomous_pilot.import_visual_review(unit_id, request_path, response_path)
+
     def factory_queue(self, fixture_mode=False):
         return self.orchestrator.queue(fixture_mode)
 
@@ -1799,11 +1836,29 @@ class FactoryDirector:
         result["gate"] = gate
         return result
 
-    def export_pdf(self, manifest_path, output_path, fixture_mode=False):
+    def export_pdf(self, manifest_path, output_path, fixture_mode=False, private_preview=False):
         manifest = load_json(Path(manifest_path))
-        gate = self._page_engine_gate(manifest.get("book_id"), ("PDF_LAYOUT", "VISUAL_QA"), fixture_mode)
+        if fixture_mode and private_preview:
+            raise ContractError("fixture mode and private preview mode are mutually exclusive")
+        gate = self._page_engine_gate(
+            manifest.get("book_id"), ("PDF_LAYOUT", "VISUAL_QA"), fixture_mode, private_preview,
+        )
+        if private_preview:
+            if manifest.get("private_preview") is not True or manifest.get("publication_eligible") is not False:
+                raise ContractError("private preview PDF manifest must be explicitly isolated and publication-ineligible")
+            if manifest.get("label") != "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION":
+                raise ContractError("private preview PDF manifest requires the exact visible non-production label")
+            review_path = manifest.get("composed_page_review")
+            if not review_path or not (self.root / review_path).is_file():
+                raise ContractError("private preview PDF requires a persisted independent composed-page review")
+            review = load_json(self.root / review_path)
+            if review.get("overall_verdict") != "PASS" or review.get("private_pdf_proof_eligible") is not True:
+                raise ContractError("private preview PDF requires independent page-level PASS eligibility")
+            pages = manifest.get("pages", [])
+            if len(pages) != 1 or review.get("composed_png", {}).get("sha256") != pages[0].get("png_sha256"):
+                raise ContractError("private preview PDF page differs from its independent review")
         result = build_reader_pdf(manifest, Path(output_path), fixture_mode)
-        if not fixture_mode:
+        if not fixture_mode and not private_preview:
             record_payload = {
                 "book_id": manifest["book_id"], "manifest_hash": manifest["manifest_hash"],
                 "pdf_sha256": result["pdf_sha256"], "inspection": load_json(Path(result["inspection_path"])),
@@ -1828,19 +1883,33 @@ class FactoryDirector:
             else:
                 result["run_stage"] = "VISUAL_QA"
                 result["page_local_rebuild"] = True
+        elif private_preview:
+            result["private_preview"] = True
+            result["publication_state_transition"] = "PROHIBITED_PRIVATE_PREVIEW"
         result["gate"] = gate
         return result
 
-    def inspect_pdf(self, pdf_path, manifest_path=None, fixture_mode=False):
+    def inspect_pdf(self, pdf_path, manifest_path=None, fixture_mode=False, private_preview=False):
         manifest = load_json(Path(manifest_path)) if manifest_path else None
         if manifest:
-            self._page_engine_gate(manifest.get("book_id"), "VISUAL_QA", fixture_mode)
+            self._page_engine_gate(manifest.get("book_id"), "VISUAL_QA", fixture_mode, private_preview)
         result = inspect_reader_pdf(Path(pdf_path), manifest)
         result["semantic_visual_review"] = {
-            "result": "NOT_APPLICABLE_SYNTHETIC_FIXTURE" if fixture_mode else "ESCALATE",
-            "reason": "deterministic PDF inspection cannot certify iconography, composition, character continuity, crop safety or reading-size visual quality",
+            "result": (
+                "NOT_APPLICABLE_SYNTHETIC_FIXTURE" if fixture_mode else
+                "BOUND_TO_INDEPENDENT_PAGE_REVIEW" if private_preview else "ESCALATE"
+            ),
+            "reason": (
+                "private preview PDF pixels are bound to the persisted independent composed-page review"
+                if private_preview else
+                "deterministic PDF inspection cannot certify iconography, composition, character continuity, crop safety or reading-size visual quality"
+            ),
         }
-        result["publication_state_transition"] = "PROHIBITED_FIXTURE" if fixture_mode else "BLOCKED_PENDING_INDEPENDENT_SEMANTIC_REVIEW"
+        result["publication_state_transition"] = (
+            "PROHIBITED_FIXTURE" if fixture_mode else
+            "PROHIBITED_PRIVATE_PREVIEW" if private_preview else
+            "BLOCKED_PENDING_INDEPENDENT_SEMANTIC_REVIEW"
+        )
         return result
 
     def resume_layout(self, book_id, composition_path=None, page_id=None, fixture_mode=False):
@@ -2051,6 +2120,28 @@ class FactoryDirector:
         pr10 = None
         if (self.books_root / "DM04" / "production-slices" / "v0001.json").is_file():
             pr10 = self.real_production.validate()
+        pr12 = None
+        pr12_report_path = self.root / "book-factory" / "reports" / "pr12-autonomous-multi-page-pilot.json"
+        if (self.books_root / "DM04" / "autonomous-pilot-status.json").is_file() and pr12_report_path.is_file():
+            pr12_status = self.autonomous_pilot.status()["run"]
+            pr12_report = load_json(pr12_report_path)
+            pr12_pdf = inspect_reader_pdf(
+                self.root / pr12_report["pdf_proof"]["path"],
+                load_json(self.books_root / "DM04" / "autonomous-pilot" / "pdf-proof" / "pr12-private-diagnostic-proof.manifest.json"),
+            )
+            if pr12_pdf["result"] != "PASS" or pr12_pdf["pdf_sha256"] != pr12_report["pdf_proof"]["sha256"]:
+                raise ContractError("PR12 private diagnostic PDF failed deterministic validation")
+            pr12 = {
+                "status": pr12_status["status"],
+                "image_operations": pr12_status["image_operations_executed"],
+                "remaining_image_operations": pr12_status["remaining_image_operations"],
+                "independent_image_reviews": pr12_status["independent_reviews_completed"],
+                "complete_private_preview_pages": pr12_report["quality"]["complete_private_preview_pages"],
+                "incomplete_pages": pr12_report["quality"]["incomplete_pages"],
+                "pdf": pr12_pdf,
+                "actual_incremental_usd": pr12_status["actual_incremental_usd"],
+                "publication_eligible": False,
+            }
         return {
             "status": "PASS",
             "schemas": schemas,
@@ -2093,5 +2184,6 @@ class FactoryDirector:
                 "actual_cost_minor_units": pr10["actual_cost_minor_units"],
                 "publication_eligible": False,
             } if pr10 and pr10["actual_image_operations"] else None),
-            "note": "PR11 executed the exact two-operation private DM04 pilot, imported independent actual-pixel FIX/ESCALATE reviews, and stopped without composition, PDF, publication, DM08 changes or source-graph mutation.",
+            "pr12": pr12,
+            "note": "PR12 exhausted its exact five-operation private DM04 ceiling, independently reviewed all five images, composed one private-preview page, created a one-page diagnostic PDF, and stopped without publication, DM08 changes or source-graph mutation.",
         }

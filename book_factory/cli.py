@@ -14,7 +14,7 @@ def _fixture_arguments(parser):
 
 
 def build_parser():
-    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory controlled visual pilot PR11")
+    parser = argparse.ArgumentParser(prog="factory", description="Khatakshetra Book Factory autonomous multi-page pilot PR12")
     parser.add_argument("--root", default=".", help="repository root (default: current directory)")
     parser.add_argument("--catalogue", help="explicit catalogue path (intended for offline fixtures and validation)")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -55,6 +55,30 @@ def build_parser():
     import_production_review.add_argument("--page-id", required=True)
     import_production_review.add_argument("--request", required=True)
     import_production_review.add_argument("--response", required=True)
+    autonomous_pilot = subparsers.add_parser("prepare-autonomous-pilot", help="prepare the exact bounded DM04 PR12 five-operation campaign")
+    autonomous_pilot.add_argument("--book-id", required=True)
+    autonomous_status = subparsers.add_parser("autonomous-pilot-status", help="inspect the exact DM04 PR12 campaign")
+    autonomous_status.add_argument("--book-id", required=True)
+    autonomous_approval = subparsers.add_parser("import-autonomous-pilot-approval", help="import exact current-session PR12 authorization")
+    autonomous_approval.add_argument("--book-id", required=True)
+    autonomous_approval.add_argument("--approval", required=True)
+    autonomous_generation = subparsers.add_parser("prepare-autonomous-pilot-generation", help="prepare one PR12 one-shot image operation")
+    autonomous_generation.add_argument("--book-id", required=True)
+    autonomous_generation.add_argument("--unit-id", required=True)
+    autonomous_image = subparsers.add_parser("import-autonomous-pilot-image", help="import one exact PR12 host image and receipt")
+    autonomous_image.add_argument("--book-id", required=True)
+    autonomous_image.add_argument("--unit-id", required=True)
+    autonomous_image.add_argument("--request", required=True)
+    autonomous_image.add_argument("--image", required=True)
+    autonomous_image.add_argument("--provider-receipt", required=True)
+    autonomous_review = subparsers.add_parser("prepare-autonomous-pilot-visual-review", help="prepare independent pixel review for one PR12 unit")
+    autonomous_review.add_argument("--book-id", required=True)
+    autonomous_review.add_argument("--unit-id", required=True)
+    import_autonomous_review = subparsers.add_parser("import-autonomous-pilot-visual-review", help="import one independent PR12 unit review")
+    import_autonomous_review.add_argument("--book-id", required=True)
+    import_autonomous_review.add_argument("--unit-id", required=True)
+    import_autonomous_review.add_argument("--request", required=True)
+    import_autonomous_review.add_argument("--response", required=True)
     for command, help_text in (
         ("queue", "show deterministic queue selection and skip reasons"),
         ("blocked", "show exact blocked and excluded catalogue entries"),
@@ -148,10 +172,12 @@ def build_parser():
     export_pdf.add_argument("--manifest", required=True)
     export_pdf.add_argument("--output", required=True)
     export_pdf.add_argument("--fixture-mode", action="store_true")
+    export_pdf.add_argument("--private-preview", action="store_true")
     inspect_pdf = subparsers.add_parser("inspect-pdf", help="inspect page count, order, dimensions and embedded pixels")
     inspect_pdf.add_argument("--pdf", required=True)
     inspect_pdf.add_argument("--manifest")
     inspect_pdf.add_argument("--fixture-mode", action="store_true")
+    inspect_pdf.add_argument("--private-preview", action="store_true")
     resume_layout = subparsers.add_parser("resume-layout", help="resume from the latest immutable composition without re-rendering")
     resume_layout.add_argument("--book-id", required=True)
     resume_layout.add_argument("--composition")
@@ -198,6 +224,24 @@ def run(args):
     if args.command == "import-production-visual-review":
         return director.import_production_visual_review(
             args.book_id, args.page_id, args.request, args.response
+        )
+    if args.command == "prepare-autonomous-pilot":
+        return director.prepare_autonomous_pilot(args.book_id)
+    if args.command == "autonomous-pilot-status":
+        return director.autonomous_pilot_status(args.book_id)
+    if args.command == "import-autonomous-pilot-approval":
+        return director.import_autonomous_pilot_approval(args.book_id, args.approval)
+    if args.command == "prepare-autonomous-pilot-generation":
+        return director.prepare_autonomous_pilot_generation(args.book_id, args.unit_id)
+    if args.command == "import-autonomous-pilot-image":
+        return director.import_autonomous_pilot_image(
+            args.book_id, args.unit_id, args.request, args.image, args.provider_receipt
+        )
+    if args.command == "prepare-autonomous-pilot-visual-review":
+        return director.prepare_autonomous_pilot_visual_review(args.book_id, args.unit_id)
+    if args.command == "import-autonomous-pilot-visual-review":
+        return director.import_autonomous_pilot_visual_review(
+            args.book_id, args.unit_id, args.request, args.response
         )
     if args.command == "queue":
         return director.factory_queue(args.fixture_mode)
@@ -268,9 +312,9 @@ def run(args):
     if args.command == "compose-book":
         return director.compose_book(args.manifest, args.output_dir, args.fixture_mode)
     if args.command == "export-pdf":
-        return director.export_pdf(args.manifest, args.output, args.fixture_mode)
+        return director.export_pdf(args.manifest, args.output, args.fixture_mode, args.private_preview)
     if args.command == "inspect-pdf":
-        return director.inspect_pdf(args.pdf, args.manifest, args.fixture_mode)
+        return director.inspect_pdf(args.pdf, args.manifest, args.fixture_mode, args.private_preview)
     if args.command == "resume-layout":
         return director.resume_layout(args.book_id, args.composition, args.page_id, args.fixture_mode)
     if args.command == "next":

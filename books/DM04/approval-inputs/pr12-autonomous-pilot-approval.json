@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "approval_type": "PRODUCTION_CAMPAIGN",
+  "subject_type": "PRODUCTION_CAMPAIGN",
+  "subject_hash": "fd9864465aebf8e0c121f72ce8a4249d08af372a48829ab926b0a223e6956b21",
+  "scope": {
+    "type": "book",
+    "id": "DM04"
+  },
+  "decision": "PASS",
+  "approver": {
+    "id": "human-user-current-session-pr12",
+    "identity_claim": "The human user directly authorized this bounded PR12 campaign in the current Codex thread.",
+    "authority": [
+      "PRIVATE_INTERNAL_VISUAL_TESTING"
+    ],
+    "signature_claimed": false
+  },
+  "creator": {
+    "id": "autonomous-director-pr12"
+  },
+  "conditions": [
+    "PRIVATE_INTERNAL_ONLY",
+    "PUBLICATION_REMAINS_BLOCKED",
+    "BUILT_IN_CODEX_IMAGE_TOOL_ONLY",
+    "INCLUDED_ALLOWANCE_FIRST",
+    "NO_SEPARATELY_BILLED_API_OR_EXTERNAL_PROVIDER",
+    "NO_PURCHASED_CREDIT_CONSUMPTION_INTENDED",
+    "FIVE_OPERATIONS_TOTAL_CEILING",
+    "ONE_OPERATION_PER_UNIT_NO_AUTOMATIC_RETRY",
+    "PR6_AND_PR11_COUNTERS_UNCHANGED",
+    "EXACT_REFERENCE_RECEIPTS_REQUIRED",
+    "INDEPENDENT_ACTUAL_PIXEL_REVIEW_REQUIRED"
+  ],
+  "maximum_paid_spend_minor_units": 0,
+  "currency": "USD",
+  "evidence_note": "Direct current-session user authorization; no cryptographic signature or external identity verification is claimed."
+}

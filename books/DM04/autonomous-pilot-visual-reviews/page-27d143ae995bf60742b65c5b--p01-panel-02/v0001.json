@@ -1,0 +1,99 @@
+{
+  "book_id": "DM04",
+  "content_hash": "b64dde36142538504a1018bc58d1a68d1b4c9c96b96fdfdcb1d0a59292ed45ad",
+  "id": "autonomous-pilot-visual-reviews/page-27d143ae995bf60742b65c5b--p01-panel-02-cefddc0e48feea8b7b2dce94",
+  "kind": "autonomous-pilot-visual-reviews/page-27d143ae995bf60742b65c5b--p01-panel-02",
+  "parent_hash": null,
+  "payload": {
+    "assessments": [
+      {
+        "dimension": "SOURCE_FIDELITY",
+        "evidence": "Original-resolution pixels show exactly Medhas, Suratha and Samadhi at the dusk forest-hermitage fire. Medhas is seated, white-bearded and visibly speaking with one calm open-hand gesture; the two listeners face him in silence, with no unrelated character, weapon, miracle or modern object.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "RELIGIOUS_ICONOGRAPHY",
+        "evidence": "This frame contains no deity or divine manifestation. Medhas retains the restrained beads, forehead mark and bark-and-ivory clothing already present in the supplied DM04 edit target; no halo, sacred weapon, merged identity or new supernatural attribute has been added.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "CULTURAL_AUTHENTICITY",
+        "evidence": "The floor-seated teacher-listener arrangement, classical garments, low fire, thatched shelter and natural forest materials form a coherent Indian hermitage vocabulary without Western-fantasy armor, modern furniture or imported architecture.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "CHARACTER_CONTINUITY",
+        "evidence": "Against the inspected edit target, Medhas preserves the white topknot, long white beard, ivory wrap, brown bark-textured shoulder cloth and beads; Suratha preserves the blue-and-gold royal clothing, crown and dark hair; Samadhi preserves the curly dark hair and plain earth-toned wrap. The camera changes to behind the listeners without merging or duplicating identities.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "NARRATIVE_CLARITY",
+        "evidence": "The genuine over-shoulder arrangement is immediately readable: Suratha anchors the left foreground, Samadhi anchors the right, and both sightlines converge on Medhas across the fire. Medhas's mouth, eye line and raised hand clearly identify him as speaker.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "ARTISTIC_QUALITY",
+        "evidence": "At 1536x1024 and reading size, faces, hands, fabric borders, firelight and dusk depth remain crisp and coherent. No malformed hand, fused limb, duplicated person, broken perspective or raster artifact is visible.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "LETTERING_READABILITY",
+        "evidence": "No raster text or watermark is present, but the locked upper safe rectangle is crossed by the large left trunk, dense hanging branches and the hut roof, while the prompt's requested lower-left lettering space is occupied edge-to-edge by Suratha's blue shoulder and cloak. Only a narrow central sky gap remains, insufficient for the narration plus Medhas's exact speaker-anchored dialogue without covering story pixels.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "COMPOSITION",
+        "evidence": "The requested intimate over-shoulder camera is achieved with the two listeners as distinct foreground silhouettes and Medhas as the unobstructed speaking focus. The fire forms a stable lower-center anchor and the scene contains one moment only.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "REFERENCE_ALIGNMENT",
+        "evidence": "The panel follows Reference A's premium navy, gold and warm-ivory painterly finish and Reference B's speaker-listener staging and gaze-led intimacy. It does not transfer Vishnu, the DM08 Goddess, lion, terrace, dialogue text, border, architecture or plot content.",
+        "result": "PASS"
+      }
+    ],
+    "book_id": "DM04",
+    "campaign_subject_hash": "fd9864465aebf8e0c121f72ce8a4249d08af372a48829ab926b0a223e6956b21",
+    "correction_instructions": [
+      "For a future separately authorized correction only, preserve the exact three identities, over-shoulder sightlines, fire position and dusk palette while simplifying the locked upper safe rectangle into low-detail sky or foliage.",
+      "Shift or crop Suratha's foreground shoulder enough to create the requested lower-left lettering area without exposing his face or losing the over-shoulder camera.",
+      "Do not retry automatically."
+    ],
+    "findings": [
+      {
+        "dimension": "LETTERING_READABILITY",
+        "discrepancy": "The locked top safe region and requested lower-left lettering zone are not protected.",
+        "evidence": "At original resolution, trunk and canopy detail occupy the upper-left, branches and leaves cross the top, the hut roof occupies the upper-right, and Suratha's blue shoulder fills the lower-left.",
+        "page_id": "page-27d143ae995bf60742b65c5b",
+        "repair_type": "LETTERING_REGION_REPAIR"
+      }
+    ],
+    "generation_retry_authorized": false,
+    "image_path": "books/DM04/autonomous-pilot/images/page-27d143ae995bf60742b65c5b--p01-panel-02/v0001.png",
+    "image_sha256": "3fc146fd6d5afc5a512537ace1e23b132c769b6fbc5bcff99f2fbb7d39f93ea9",
+    "independent_actual_pixel_review": true,
+    "milestone": "PR12",
+    "page_id": "page-27d143ae995bf60742b65c5b",
+    "panel_id": "p01-panel-02",
+    "preview_eligible": false,
+    "publication_eligible": false,
+    "request_hash": "91167289651ca28bb3257631099333569414ba9b9e54afaea0a05f319bac9086",
+    "request_record_hash": "802fdeb7e8aa96aa47b8d960987c6ebba2a4d8c53cff164eab3cff874d9d8b39",
+    "result": "FIX",
+    "review_hash": "a4f70a3028a69da47c8fb109ae96c2a9db76c793f70a870d8fe3f25e907d985b",
+    "reviewed_at": "2026-10-21T16:38:55Z",
+    "reviewer": {
+      "id": "/root/pr12_visual_reviewer",
+      "image_capable": true,
+      "inspected_actual_pixels": true,
+      "produced_image": false,
+      "producer_independence": "Independent of codex-root-image-producer-pr12",
+      "reading_size": "ACTUAL_READING_SIZE",
+      "role": "INDEPENDENT_ACTUAL_PIXEL_VISUAL_REVIEWER"
+    },
+    "schema_version": "1.0",
+    "unit_id": "page-27d143ae995bf60742b65c5b--p01-panel-02"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

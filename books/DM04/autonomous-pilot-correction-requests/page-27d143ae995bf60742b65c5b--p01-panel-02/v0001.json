@@ -1,0 +1,39 @@
+{
+  "book_id": "DM04",
+  "content_hash": "ff2288a1b87809a0a196dfba78afb92c6710fa44aac32d7da422a230c4f2fa81",
+  "id": "autonomous-pilot-correction-requests/page-27d143ae995bf60742b65c5b--p01-panel-02-96d8564f01c0b64663c6efbd",
+  "kind": "autonomous-pilot-correction-requests/page-27d143ae995bf60742b65c5b--p01-panel-02",
+  "parent_hash": null,
+  "payload": {
+    "book_id": "DM04",
+    "failed_image_sha256": "3fc146fd6d5afc5a512537ace1e23b132c769b6fbc5bcff99f2fbb7d39f93ea9",
+    "generation_retry_authorized": false,
+    "localized_findings": [
+      {
+        "dimension": "LETTERING_READABILITY",
+        "discrepancy": "The locked top safe region and requested lower-left lettering zone are not protected.",
+        "evidence": "At original resolution, trunk and canopy detail occupy the upper-left, branches and leaves cross the top, the hut roof occupies the upper-right, and Suratha's blue shoulder fills the lower-left.",
+        "page_id": "page-27d143ae995bf60742b65c5b",
+        "repair_type": "LETTERING_REGION_REPAIR"
+      }
+    ],
+    "milestone": "PR12",
+    "page_id": "page-27d143ae995bf60742b65c5b",
+    "pr11_counter_reset": false,
+    "pr6_counter_reset": false,
+    "preserve_other_units": true,
+    "publication_eligible": false,
+    "remaining_campaign_image_operations": 0,
+    "result": "FIX",
+    "schema_version": "1.0",
+    "targeted_correction_instructions": [
+      "For a future separately authorized correction only, preserve the exact three identities, over-shoulder sightlines, fire position and dusk palette while simplifying the locked upper safe rectangle into low-detail sky or foliage.",
+      "Shift or crop Suratha's foreground shoulder enough to create the requested lower-left lettering area without exposing his face or losing the over-shoulder camera.",
+      "Do not retry automatically."
+    ],
+    "unit_id": "page-27d143ae995bf60742b65c5b--p01-panel-02",
+    "visual_review_hash": "a4f70a3028a69da47c8fb109ae96c2a9db76c793f70a870d8fe3f25e907d985b"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

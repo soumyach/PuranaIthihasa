@@ -1,0 +1,113 @@
+{
+  "book_id": "DM04",
+  "content_hash": "9126cc41d5ec58a3c116acfeeeef6e384873319b866ff6c57da510f11d178406",
+  "id": "autonomous-pilot-visual-reviews/page-5aca23381e148b472373cd8c--p14-panel-01-ea590b81d7d84562fb4a5d7b",
+  "kind": "autonomous-pilot-visual-reviews/page-5aca23381e148b472373cd8c--p14-panel-01",
+  "parent_hash": null,
+  "payload": {
+    "assessments": [
+      {
+        "dimension": "SOURCE_FIDELITY",
+        "evidence": "The luminous breath visibly leaves Devi and resolves through layered stages into a large advancing army; axes, javelins, swords, halberds, drums and conches are all visible, and the lower enemy rank breaks before concentric waves. Several breath-born troops also carry round shields and mace/club forms, equipment outside the locked exact list, while no visible bell anchors the purported bell waves.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "RELIGIOUS_ICONOGRAPHY",
+        "evidence": "Devi's many-armed identity, radiant crown and visible discus, conch, spear, axe, lotus and bow are source-authorized, but a complete concentric sun-disk appears directly behind her head. The character bible prohibits unsourced halo symbolism, and no theological approval is inferred from the polished rendering.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "CULTURAL_AUTHENTICITY",
+        "evidence": "Classical garments, turbans, drums, conches and source-listed weapons create a coherent Indian martial vocabulary. The armies avoid Greco-Roman helmets, Western plate armor, invented emblems and modern objects.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "CHARACTER_CONTINUITY",
+        "evidence": "Against the immediately preceding panel 2, Devi retains the same pale complexion, dark flowing hair, blue-ivory-gold dress, jeweled crown, pink-white garland and explicit eight-arm silhouette. Her scale changes for the immersive reveal, but the recognition cues remain stable.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "NARRATIVE_CLARITY",
+        "evidence": "At page and reading size, the cause-effect chain reads top to bottom: breath leaves Devi, luminous figures resolve into troops, musicians sound, the army advances, and the dark lower ranks recoil. The three depth layers remain distinct despite the crowd.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "ARTISTIC_QUALITY",
+        "evidence": "The 1086x1448 image has disciplined vertical hierarchy, controlled warm-gold illumination and readable figure layering. Devi's face and visible hands are coherent, the principal foreground soldiers remain legible, and no decisive fused face, missing limb or raster artifact is visible at original resolution.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "LETTERING_READABILITY",
+        "evidence": "No embedded text or watermark is present, but the locked normalized top safe rectangle is occupied by Devi's crown, halo, hair and multiple weapon-bearing arms. The far upper-left sky is too narrow for the full narration plaque without covering the spear/arm field or mountain detail.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "COMPOSITION",
+        "evidence": "The full-page layered emergence is immediately readable: Devi anchors the top, the breath creates a luminous S-curve, troops resolve in the middle, and the dark enemy mass closes the lower edge. The stable mountain ridge frames rather than interrupts the transition.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "REFERENCE_ALIGNMENT",
+        "evidence": "The piece uses Reference A's sacred focal hierarchy and premium finish and Reference B's transformation sequencing and battlefield depth. It does not transfer Kali/Chamunda, skulls, blood, flags, opponent identities or DM08 theology.",
+        "result": "PASS"
+      }
+    ],
+    "book_id": "DM04",
+    "campaign_subject_hash": "fd9864465aebf8e0c121f72ce8a4249d08af372a48829ab926b0a223e6956b21",
+    "correction_instructions": [
+      "For a future separately authorized correction only, keep the breath-emergence hierarchy but restrict breath-born troop equipment to axes, javelins, swords and halberds, retaining drums and conches as instruments.",
+      "Show the sourced bell clearly if concentric bell waves remain, remove the halo disk, and move the sacred focal group far enough right or down to protect the locked top narration area.",
+      "Do not retry automatically."
+    ],
+    "findings": [
+      {
+        "dimension": "SOURCE_FIDELITY",
+        "discrepancy": "Breath-born troops carry unsourced shields and mace/club forms, and the bell effect lacks a visible bell source.",
+        "evidence": "Original-resolution pixels show round shields and several mace/club heads among the ivory-gold troops in addition to the exact axes, javelins, swords and halberds; Devi's visible hands hold no bell although concentric waves cross the lower field.",
+        "page_id": "page-5aca23381e148b472373cd8c",
+        "repair_type": "EQUIPMENT_AND_ACTION_REPAIR"
+      },
+      {
+        "dimension": "RELIGIOUS_ICONOGRAPHY",
+        "discrepancy": "An unsourced halo disk has been added behind Devi's crown.",
+        "evidence": "A complete multi-ring radiant disk is centered on Devi's head despite the character bible's prohibition on unsourced halo symbolism.",
+        "page_id": "page-5aca23381e148b472373cd8c",
+        "repair_type": "ICONOGRAPHY_CONTRACT_REPAIR"
+      },
+      {
+        "dimension": "LETTERING_READABILITY",
+        "discrepancy": "The locked top narration-safe region is not protected.",
+        "evidence": "Devi's crown, halo, hair, discus, conch, spear and raised arms occupy the top-center safe rectangle; the remaining upper-left sky cannot contain the narration without covering image detail.",
+        "page_id": "page-5aca23381e148b472373cd8c",
+        "repair_type": "LETTERING_REGION_REPAIR"
+      }
+    ],
+    "generation_retry_authorized": false,
+    "image_path": "books/DM04/autonomous-pilot/images/page-5aca23381e148b472373cd8c--p14-panel-01/v0001.png",
+    "image_sha256": "6f4740c453c6d6429c9bcc1f32eaee0bb3023d6892d3e58a10281f947927ca45",
+    "independent_actual_pixel_review": true,
+    "milestone": "PR12",
+    "page_id": "page-5aca23381e148b472373cd8c",
+    "panel_id": "p14-panel-01",
+    "preview_eligible": false,
+    "publication_eligible": false,
+    "request_hash": "d66717a151696360c6c25688e38d8034bd0c7a47179dee3b97d2bd7b702ff15c",
+    "request_record_hash": "c8feb3c406981a85c01891e46c05b38b041cb41c0fddc96f2ce700d31c909c24",
+    "result": "FIX",
+    "review_hash": "86abc0c347eefb2fad06d05e03d05436cff0d1b58930c72f0d328839518923a8",
+    "reviewed_at": "2026-10-21T16:38:56Z",
+    "reviewer": {
+      "id": "/root/pr12_visual_reviewer",
+      "image_capable": true,
+      "inspected_actual_pixels": true,
+      "produced_image": false,
+      "producer_independence": "Independent of codex-root-image-producer-pr12",
+      "reading_size": "ACTUAL_READING_SIZE",
+      "role": "INDEPENDENT_ACTUAL_PIXEL_VISUAL_REVIEWER"
+    },
+    "schema_version": "1.0",
+    "unit_id": "page-5aca23381e148b472373cd8c--p14-panel-01"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

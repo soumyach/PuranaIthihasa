@@ -164,8 +164,14 @@ class PR10RealProductionIntegrationTests(unittest.TestCase):
             repeated["run"]["actual_cost_status"],
             "UNKNOWN_TOOL_INTERFACE_DOES_NOT_EXPOSE_INCREMENTAL_USD",
         )
-        self.assertEqual(len(list((ROOT / "books" / BOOK_ID / "production-slices").glob("v*.json"))), 1)
-        self.assertEqual(len(list((ROOT / "books" / BOOK_ID / "production-campaign-requests").glob("v*.json"))), 1)
+        slice_records = [
+            load_json(path) for path in (ROOT / "books" / BOOK_ID / "production-slices").glob("v*.json")
+        ]
+        request_records = [
+            load_json(path) for path in (ROOT / "books" / BOOK_ID / "production-campaign-requests").glob("v*.json")
+        ]
+        self.assertEqual(sum(record["payload"].get("campaign_id") == self.plan["campaign_id"] for record in slice_records), 1)
+        self.assertEqual(sum(record["payload"].get("campaign_id") == self.plan["campaign_id"] for record in request_records), 1)
 
     def test_16_one_director_invocation_reports_the_completed_no_retry_campaign(self):
         result = FactoryDirector(ROOT).produce_book(BOOK_ID)

@@ -1,0 +1,60 @@
+{
+  "book_id": "DM04",
+  "content_hash": "fb9585ab027a48fc284145f8672a5085e9a87714ceb41fa11fe424f4744f71cf",
+  "id": "autonomous-pilot-correction-requests/page-23e0e9cd9d4013ed03ae7e8c--p13-panel-01-8800cef35a69f63ad274092e",
+  "kind": "autonomous-pilot-correction-requests/page-23e0e9cd9d4013ed03ae7e8c--p13-panel-01",
+  "parent_hash": null,
+  "payload": {
+    "book_id": "DM04",
+    "failed_image_sha256": "c0a0d15ea531ba00bee1c1c3ccac1bb795dc84f59e0a25d96dd08eca1b6a09b4",
+    "generation_retry_authorized": false,
+    "localized_findings": [
+      {
+        "dimension": "SOURCE_FIDELITY",
+        "discrepancy": "The missiles are broken by an unsourced palm force barrier rather than visibly cut by sourced equipment.",
+        "evidence": "The open foreground palm intersects a luminous circular arc; all shafts fragment at that arc, while no sword, discus, spear, arrows or other authorized implement performs the cut.",
+        "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+        "repair_type": "SOURCE_ACTION_RECOMPOSITION"
+      },
+      {
+        "dimension": "RELIGIOUS_ICONOGRAPHY",
+        "discrepancy": "The image introduces an unsourced head halo and weaponless force-field power.",
+        "evidence": "A complete radiating sun-disk sits behind Devi's crown, and a luminous barrier emerges from her empty palm despite the bible's prohibition on unsourced halo symbolism and attributes.",
+        "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+        "repair_type": "ICONOGRAPHY_CONTRACT_REPAIR"
+      },
+      {
+        "dimension": "CHARACTER_CONTINUITY",
+        "discrepancy": "Devi's arm/equipment and garland identity changes materially between the two page-13 panels.",
+        "evidence": "Panel 1 shows a sparse weaponless multi-arm silhouette and white garland; panel 2 shows eight explicit weapon-bearing arms and a pink-white garland, with different crown and halo construction.",
+        "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+        "repair_type": "CHARACTER_CONTINUITY_REPAIR"
+      },
+      {
+        "dimension": "LETTERING_READABILITY",
+        "discrepancy": "The upper-left narration-safe area is occupied by essential action pixels.",
+        "evidence": "Large projectile shafts, weapon heads, fragments and bright interception streaks cross the entire upper-left at original resolution.",
+        "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+        "repair_type": "LETTERING_REGION_REPAIR"
+      }
+    ],
+    "milestone": "PR12",
+    "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+    "pr11_counter_reset": false,
+    "pr6_counter_reset": false,
+    "preserve_other_units": true,
+    "publication_eligible": false,
+    "remaining_campaign_image_operations": 0,
+    "result": "FIX",
+    "schema_version": "1.0",
+    "targeted_correction_instructions": [
+      "For a future separately authorized correction only, replace the palm force barrier with a clearly visible authorized weapon cutting the missiles before impact.",
+      "Remove the sun-disk halo, lock Devi's face, crown, garland, arm-field and sourced equipment to the adjacent panel, and reserve a genuinely low-detail upper-left narration area.",
+      "Do not retry automatically."
+    ],
+    "unit_id": "page-23e0e9cd9d4013ed03ae7e8c--p13-panel-01",
+    "visual_review_hash": "168f12dccdd707cdee90d137b776d0bef2627daf8107a752fc8ecba3d1dc3401"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

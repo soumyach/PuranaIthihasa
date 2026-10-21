@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "milestone": "PR12",
+  "provider_id": "codex-built-in-image-gen",
+  "provider_interface": "image_gen.imagegen",
+  "unit_id": "page-27d143ae995bf60742b65c5b--p01-panel-02",
+  "page_id": "page-27d143ae995bf60742b65c5b",
+  "panel_id": "p01-panel-02",
+  "operation": "edit",
+  "operation_sequence": 1,
+  "request_hash": "682a1a5b97ddbbabaa73e157fd4e6818b040fc0f531dcd03750e54666055f2ec",
+  "campaign_subject_hash": "fd9864465aebf8e0c121f72ce8a4249d08af372a48829ab926b0a223e6956b21",
+  "producer": {
+    "id": "codex-root-image-producer-pr12",
+    "host_session_only": true
+  },
+  "submitted_edit_target": {
+    "role": "EDIT_TARGET_EXISTING_FIX_ART_REFERENCE_ONLY",
+    "path": "books/DM04/production-pilot/images/page-27d143ae995bf60742b65c5b/v0001.png",
+    "sha256": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+    "input_index": 1
+  },
+  "submitted_references": [
+    {
+      "role": "A_SERIES_VISUAL_IDENTITY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+      "input_index": 2,
+      "content_transfer": "FORBIDDEN"
+    },
+    {
+      "role": "B_PAGE_PANEL_COMPOSITION",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d",
+      "input_index": 3,
+      "content_transfer": "FORBIDDEN"
+    }
+  ],
+  "unavailable_reference_roles": [
+    "C_APPROVED_CHARACTER_REFERENCE",
+    "D_APPROVED_SETTING_REFERENCE"
+  ],
+  "submitted_prompt": "Create one clean landscape comic-panel illustration for DM04 page 1 panel 2. EDIT TARGET: preserve the exact three established people, clothing, dusk forest-hermitage, firelight and painterly finish from the supplied DM04 image, but change the camera to a genuine intimate over-shoulder view from behind both listeners: Suratha's muted-blue royal shoulder at left foreground and Samadhi's plain earth-toned shoulder at right foreground, both facing Sage Medhas. Medhas is the clearly readable speaking focus, aged, white-bearded, seated and gesturing calmly across the low fire. Their attentive silence must read in posture. Reserve uncluttered upper branches and lower-left space for later editable lettering. REFERENCE A supplies only Khatakshetra premium devotional painterly identity and navy-gold sensibility. REFERENCE B supplies only intimate speaker-listener staging and clear reaction-driven comic storytelling. Do not transfer any deity, lion, architecture, clothing identity or story content from the references. No embedded text, balloons, border, watermark, modern objects, Western fantasy armor, helmets or emblems. Family-reading appropriate. One moment only; no duplicated figures.",
+  "submitted_prompt_sha256": "2d3b212bc6c195041df9ded22e7918a89ac10c9d4301ef0f440b7d98c89670d2",
+  "output_path": "books/DM04/autonomous-pilot/images/page-27d143ae995bf60742b65c5b--p01-panel-02/v0001.png",
+  "output_sha256": "3fc146fd6d5afc5a512537ace1e23b132c769b6fbc5bcff99f2fbb7d39f93ea9",
+  "output_width": 1536,
+  "output_height": 1024,
+  "source_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-91fd1aac-c383-466c-adf3-bca865045ece.png",
+  "included_allowance_policy": "CURRENT_INCLUDED_ALLOWANCE_FIRST",
+  "api_key_supplied": false,
+  "external_provider_authorization_requested": false,
+  "paid_billing_requested": false,
+  "automatic_credit_purchase_requested": false,
+  "purchased_credit_consumption": "NOT_REPORTED_NO_BALANCE",
+  "actual_incremental_usd": "UNKNOWN_NOT_EXPOSED",
+  "retry": false
+}

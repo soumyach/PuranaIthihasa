@@ -1,0 +1,53 @@
+{
+  "book_id": "DM04",
+  "content_hash": "fe9b293a0342fc2609519c2e3b3d68ecb4bdb92e8a43d1a2219e5dc053e3abfd",
+  "id": "autonomous-pilot-correction-requests/page-5aca23381e148b472373cd8c--p14-panel-01-4c96bb2b9659082f6d121a6d",
+  "kind": "autonomous-pilot-correction-requests/page-5aca23381e148b472373cd8c--p14-panel-01",
+  "parent_hash": null,
+  "payload": {
+    "book_id": "DM04",
+    "failed_image_sha256": "6f4740c453c6d6429c9bcc1f32eaee0bb3023d6892d3e58a10281f947927ca45",
+    "generation_retry_authorized": false,
+    "localized_findings": [
+      {
+        "dimension": "SOURCE_FIDELITY",
+        "discrepancy": "Breath-born troops carry unsourced shields and mace/club forms, and the bell effect lacks a visible bell source.",
+        "evidence": "Original-resolution pixels show round shields and several mace/club heads among the ivory-gold troops in addition to the exact axes, javelins, swords and halberds; Devi's visible hands hold no bell although concentric waves cross the lower field.",
+        "page_id": "page-5aca23381e148b472373cd8c",
+        "repair_type": "EQUIPMENT_AND_ACTION_REPAIR"
+      },
+      {
+        "dimension": "RELIGIOUS_ICONOGRAPHY",
+        "discrepancy": "An unsourced halo disk has been added behind Devi's crown.",
+        "evidence": "A complete multi-ring radiant disk is centered on Devi's head despite the character bible's prohibition on unsourced halo symbolism.",
+        "page_id": "page-5aca23381e148b472373cd8c",
+        "repair_type": "ICONOGRAPHY_CONTRACT_REPAIR"
+      },
+      {
+        "dimension": "LETTERING_READABILITY",
+        "discrepancy": "The locked top narration-safe region is not protected.",
+        "evidence": "Devi's crown, halo, hair, discus, conch, spear and raised arms occupy the top-center safe rectangle; the remaining upper-left sky cannot contain the narration without covering image detail.",
+        "page_id": "page-5aca23381e148b472373cd8c",
+        "repair_type": "LETTERING_REGION_REPAIR"
+      }
+    ],
+    "milestone": "PR12",
+    "page_id": "page-5aca23381e148b472373cd8c",
+    "pr11_counter_reset": false,
+    "pr6_counter_reset": false,
+    "preserve_other_units": true,
+    "publication_eligible": false,
+    "remaining_campaign_image_operations": 0,
+    "result": "FIX",
+    "schema_version": "1.0",
+    "targeted_correction_instructions": [
+      "For a future separately authorized correction only, keep the breath-emergence hierarchy but restrict breath-born troop equipment to axes, javelins, swords and halberds, retaining drums and conches as instruments.",
+      "Show the sourced bell clearly if concentric bell waves remain, remove the halo disk, and move the sacred focal group far enough right or down to protect the locked top narration area.",
+      "Do not retry automatically."
+    ],
+    "unit_id": "page-5aca23381e148b472373cd8c--p14-panel-01",
+    "visual_review_hash": "86abc0c347eefb2fad06d05e03d05436cff0d1b58930c72f0d328839518923a8"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

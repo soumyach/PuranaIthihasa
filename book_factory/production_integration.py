@@ -486,14 +486,16 @@ class RealProductionSlice:
         requests = self.request_store.versions(BOOK_ID)
         if not plans or not requests:
             raise ContractError("PR10 production slice has not been prepared")
-        plan_record = plans[-1]
-        request_record = requests[-1]
         expected_plan = self._build_plan()
-        if plan_record["payload"] != expected_plan:
+        matching_plans = [record for record in plans if record["payload"] == expected_plan]
+        if not matching_plans:
             raise ContractError("stored PR10 production slice is stale")
+        plan_record = matching_plans[-1]
         expected_request = self._approval_request(plan_record)
-        if request_record["payload"] != expected_request:
+        matching_requests = [record for record in requests if record["payload"] == expected_request]
+        if not matching_requests:
             raise ContractError("stored PR10 campaign request is stale")
+        request_record = matching_requests[-1]
         return plan_record, request_record
 
     def _status(self, plan_record, request_record):
@@ -603,15 +605,17 @@ class RealProductionSlice:
         before_plans = len(existing_plans)
         before_requests = len(existing_requests)
         plan = self._build_plan()
-        if existing_plans and existing_plans[-1]["payload"] == plan:
-            plan_record = existing_plans[-1]
+        matching_plans = [record for record in existing_plans if record["payload"] == plan]
+        if matching_plans:
+            plan_record = matching_plans[-1]
         else:
             plan_record = self.slice_store.put(
                 BOOK_ID, plan, existing_plans[-1]["content_hash"] if existing_plans else None,
             )
         request = self._approval_request(plan_record)
-        if existing_requests and existing_requests[-1]["payload"] == request:
-            request_record = existing_requests[-1]
+        matching_requests = [record for record in existing_requests if record["payload"] == request]
+        if matching_requests:
+            request_record = matching_requests[-1]
         else:
             request_record = self.request_store.put(
                 BOOK_ID, request, existing_requests[-1]["content_hash"] if existing_requests else None,
