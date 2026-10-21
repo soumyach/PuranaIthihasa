@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM04",
+  "book_version": "DM04-PRIVATE-PREVIEW-PR13-PAGE01-V1",
+  "manuscript_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+  "storyboard_hash": "25cc8bed5368e78c36a3bec43ad03efb7fe2ddc4dd41124ca9ce02bcdcc18185",
+  "page_script_hash": "4509f47443c27b55dd6d8914def8119393fcc16f23b56a0c328c094c0a042cc0",
+  "page_id": "page-27d143ae995bf60742b65c5b",
+  "page_number": 1,
+  "reading_order": 1,
+  "page_title": "A QUESTION BENEATH THE TREES",
+  "chapter_masthead": "DM04 — THE BUFFALO KING",
+  "layout_type": "TWO_PANEL_SEQUENTIAL",
+  "fixture": false,
+  "private_preview": true,
+  "publication_eligible": false,
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "preview_authority": {
+    "scope": "PR13_DETERMINISTIC_LAYOUT_REPAIR_ONLY",
+    "request_sha256": "5a04443ae36e36b959ceedb84a865348d6465ae7f76ea00d65a5de742e0745e8",
+    "image_generation_authorized": false,
+    "image_edit_authorized": false,
+    "publication_authorized": false,
+    "paid_provider_calls_authorized": false
+  },
+  "storyboard_conformance": {
+    "status": "COMPLETE_LOCKED_TWO_PANEL_SEQUENCE_FOR_PRIVATE_REVIEW",
+    "reason": "Panel 1 reuses the existing establishing art for its matching locked beat; panel 2 reuses the existing genuine over-shoulder scene. The only PR13 change is deterministic dialogue-balloon geometry."
+  },
+  "mechanical_repair": {
+    "type": "DIALOGUE_BALLOON_HEIGHT_AND_POSITION_ONLY",
+    "source_spec": "books/DM04/autonomous-pilot/page-previews/page-27d143ae995bf60742b65c5b/v0001.spec.json",
+    "source_review_result": "PASS_PRIVATE_DIAGNOSTIC_PDF_PROOF_ONLY",
+    "source_review_path": "work/pr12/composed-page-reviews/page-27d143ae995bf60742b65c5b-v0001.json",
+    "image_pixels_modified": false,
+    "image_operation_consumed": false,
+    "dialogue_text_modified": false,
+    "font_size_modified": false,
+    "repair_goal": "Reduce unnecessary blank space, recover artwork, and preserve exact readable lettering and Medhas attribution."
+  },
+  "reference_comparison": [
+    {
+      "role": "A_SERIES_VISUAL_IDENTITY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "role": "B_PAGE_PANEL_COMPOSITION",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+    }
+  ],
+  "panels": [
+    {
+      "panel_id": "p01-panel-01",
+      "reading_order": 1,
+      "diagnostic_beat": "Wide eye-level frame: low fire at center, Medhas seated beyond it, Suratha left and Samādhi right turning toward him.",
+      "asset": {
+        "path": "books/DM04/production-pilot/images/page-27d143ae995bf60742b65c5b/v0001.png",
+        "sha256": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+        "usage": "PRIVATE_INTERNAL_LIMITED_BEAT_REUSE",
+        "approval": {
+          "status": "FIX",
+          "subject_hash": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+          "review_path": "books/DM04/production-visual-reviews/page-27d143ae995bf60742b65c5b/v0001.json"
+        }
+      },
+      "crop": {
+        "mode": "COVER",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.45
+        },
+        "zoom": 1.0,
+        "crop_intent": "Retain all three figures, hermitage context and fire for the locked establishing beat."
+      },
+      "speaker_anchors": []
+    },
+    {
+      "panel_id": "p01-panel-02",
+      "reading_order": 2,
+      "diagnostic_beat": "Intimate over-shoulder from behind both listeners as Medhas asks the exact opening question.",
+      "asset": {
+        "path": "books/DM04/autonomous-pilot/images/page-27d143ae995bf60742b65c5b--p01-panel-02/v0001.png",
+        "sha256": "3fc146fd6d5afc5a512537ace1e23b132c769b6fbc5bcff99f2fbb7d39f93ea9",
+        "usage": "PRIVATE_INTERNAL_MECHANICAL_REPAIR_REVIEW",
+        "approval": {
+          "status": "FIX",
+          "subject_hash": "3fc146fd6d5afc5a512537ace1e23b132c769b6fbc5bcff99f2fbb7d39f93ea9",
+          "review_path": "books/DM04/autonomous-pilot-visual-reviews/page-27d143ae995bf60742b65c5b--p01-panel-02/v0001.json"
+        }
+      },
+      "crop": {
+        "mode": "COVER",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.52
+        },
+        "zoom": 1.0,
+        "crop_intent": "Preserve both foreground listener shoulders, Medhas's face and hand, and the fire as a distinct second beat."
+      },
+      "speaker_anchors": [
+        {
+          "speaker_id": "dm-medhas",
+          "x": 0.65,
+          "y": 0.64,
+          "target_feature": "Medhas lower speaking face"
+        }
+      ]
+    }
+  ],
+  "lettering": [
+    {
+      "lettering_id": "p01-narration",
+      "panel_id": "p01-panel-01",
+      "reading_order": 1,
+      "channel": "NARRATION",
+      "speaker_id": "narrator",
+      "badge_number": 1,
+      "text": "Night settles around the hermitage fire. Suratha and Samādhi turn toward Medhas as he begins.",
+      "source_script_hash": "fdc0e1483eb0ea38c7b5e9755e01bffab4bc10509317a00c3cc934fc5103160d",
+      "box": {
+        "x": 0.065,
+        "y": 0.115,
+        "width": 0.87,
+        "height": 0.09
+      },
+      "font": {
+        "size": 24,
+        "minimum_size": 22
+      }
+    },
+    {
+      "lettering_id": "p01-dialogue",
+      "panel_id": "p01-panel-02",
+      "reading_order": 2,
+      "channel": "DIALOGUE",
+      "speaker_id": "dm-medhas",
+      "text": "What remains of a kingdom when every gate still stands, every throne is occupied—and yet none of its rightful guardians can return?",
+      "source_script_hash": "f303dfbab5f74ed2422b8822f66a9a18df9bc08a063584965c65e25df8a7abd4",
+      "box": {
+        "x": 0.055,
+        "y": 0.805,
+        "width": 0.48,
+        "height": 0.1
+      },
+      "font": {
+        "size": 25,
+        "minimum_size": 22
+      }
+    }
+  ],
+  "required_lettering_ids": [
+    "p01-narration",
+    "p01-dialogue"
+  ],
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "typography": {
+    "family": "STIXGeneral",
+    "body_size": 25,
+    "title_size": 30
+  },
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "25cc8bed5368e78c36a3bec43ad03efb7fe2ddc4dd41124ca9ce02bcdcc18185"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    }
+  }
+}

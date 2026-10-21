@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "milestone": "PR13",
+  "book_id": "DM04",
+  "page_id": "page-27d143ae995bf60742b65c5b",
+  "page_number": 1,
+  "reviewed_at": "2026-10-21T17:23:10Z",
+  "reviewer": {
+    "id": "/root/pr12_visual_reviewer",
+    "role": "INDEPENDENT_PR13_PAGE_LEVEL_ACTUAL_PIXEL_REVIEWER",
+    "image_capable": true,
+    "inspected_actual_pixels": true,
+    "inspection_scales": ["ORIGINAL_RESOLUTION", "NORMAL_READING_SIZE"],
+    "generated_edited_cropped_or_composed_image": false,
+    "production_or_campaign_state_modified": false,
+    "independent_of_producer_and_composer": true
+  },
+  "actual_pixel_attestation": "The reviewer inspected the bound 1086x1448 PNG itself at original resolution and normal reading size, compared it directly with both hash-bound PR7 references, and did not generate, edit, crop, compose or otherwise modify any image or production/campaign state.",
+  "composed_png": {
+    "path": "books/DM04/three-page-acceptance/page-previews/page-27d143ae995bf60742b65c5b/v0001/0001-page-27d143ae995bf60742b65c5b.png",
+    "sha256": "cb2f0843e01ae2b81d5a2d34c2e2f25e3bdb21eaae8973ea16fa18c2fa3564e9",
+    "width": 1086,
+    "height": 1448
+  },
+  "bound_records": {
+    "page_script": {
+      "path": "books/DM04/page-scripts/page-0001.v0003.json",
+      "sha256": "4509f47443c27b55dd6d8914def8119393fcc16f23b56a0c328c094c0a042cc0"
+    },
+    "spec": {
+      "path": "books/DM04/three-page-acceptance/page-previews/page-27d143ae995bf60742b65c5b/v0001.spec.json",
+      "sha256": "07508eb321a4cc0f5c56c51fcc54593fe474773bad819fad62a90cc896133ce9"
+    },
+    "composition": {
+      "path": "books/DM04/three-page-acceptance/page-previews/page-27d143ae995bf60742b65c5b/v0001/0001-page-27d143ae995bf60742b65c5b.composition.json",
+      "sha256": "23ecd7707bfcd910f0933dce2fea8674fdb674ae8bbce0650573c48e770ec0b4"
+    },
+    "render": {
+      "path": "books/DM04/three-page-acceptance/page-previews/page-27d143ae995bf60742b65c5b/v0001/0001-page-27d143ae995bf60742b65c5b.render.json",
+      "sha256": "5c638846f0a17061dd9efb20e08fea51f38be148ead5d7cbfbda54316b1ab4e1"
+    },
+    "validation": {
+      "path": "books/DM04/three-page-acceptance/page-previews/page-27d143ae995bf60742b65c5b/v0001/0001-page-27d143ae995bf60742b65c5b.validation.json",
+      "sha256": "e62e254b09db2a0ddc6cd27a5aecb1598871ec927a2ccf6aee74890677538cc8"
+    }
+  },
+  "gold_standard_references": [
+    {
+      "role": "A_SERIES_VISUAL_IDENTITY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "role": "B_PAGE_PANEL_COMPOSITION",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+    }
+  ],
+  "underlying_source_image_statuses": [
+    {
+      "panel_id": "p01-panel-01",
+      "image_sha256": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+      "preserved_status": "FIX",
+      "promoted": false
+    },
+    {
+      "panel_id": "p01-panel-02",
+      "image_sha256": "3fc146fd6d5afc5a512537ace1e23b132c769b6fbc5bcff99f2fbb7d39f93ea9",
+      "preserved_status": "FIX",
+      "promoted": false
+    }
+  ],
+  "balloon_repair_assessment": {
+    "result": "PASS",
+    "dialogue_text_modified": false,
+    "exact_text_observed": true,
+    "normalized_box": {"x": 0.055, "y": 0.805, "width": 0.48, "height": 0.1},
+    "resolved_pixel_box": [60, 1166, 581, 1310],
+    "rendered_font_size": 25,
+    "minimum_font_size": 22,
+    "overflow": false,
+    "blank_space": "Four lines occupy the box with balanced padding; the former excessive empty lower half is removed.",
+    "speaker_tail_endpoint": "The tail terminates at Medhas's lower speaking face/beard line, not at either listener.",
+    "face_hand_occlusion": "All three heads and Medhas's raised hand remain unobscured; no eyes, nose, mouth or hand anatomy are covered."
+  },
+  "assessments": [
+    {
+      "dimension": "source fidelity",
+      "result": "PASS",
+      "evidence": "Exact locked narration and dialogue, forest-hermitage frame and three named figures are preserved; no unscripted action or claim is added."
+    },
+    {
+      "dimension": "correct event depiction",
+      "result": "PASS",
+      "evidence": "The event-008 framing beat shows night at the hermitage, both listeners turning to Medhas, and his question leading into heaven's loss without prematurely showing the celestial event."
+    },
+    {
+      "dimension": "character and iconography accuracy",
+      "result": "PASS",
+      "evidence": "Medhas, Suratha and Samādhi retain their locked identities; no deity, halo, weapon or sacred-identity merger appears."
+    },
+    {
+      "dimension": "Indian cultural authenticity",
+      "result": "PASS",
+      "evidence": "Classical garments, floor-seated teaching, low fire, beads, thatched shelter and forest materials form a coherent Indian hermitage without modern or Western-fantasy elements."
+    },
+    {
+      "dimension": "visual storytelling",
+      "result": "PASS",
+      "evidence": "Panel 1 establishes people and place; panel 2 moves behind both listeners so gaze and gesture identify Medhas as speaker before the text is read."
+    },
+    {
+      "dimension": "panel progression",
+      "result": "PASS",
+      "evidence": "The sequence changes genuinely from a wide group view to an intimate over-shoulder view; top-to-bottom order is unambiguous."
+    },
+    {
+      "dimension": "character consistency",
+      "result": "PASS",
+      "evidence": "Hair, clothing, beard, beads and listener identities remain stable across the camera reversal."
+    },
+    {
+      "dimension": "dialogue readability",
+      "result": "PASS",
+      "evidence": "The exact four-line question, em dash and question mark render at 25 px over cream with a 22 px minimum, no overflow or clipping, and a tail ending at Medhas."
+    },
+    {
+      "dimension": "caption/dialogue complementarity",
+      "result": "PASS",
+      "evidence": "The caption establishes time, place and attention; the dialogue supplies the thematic question, with no duplicated information."
+    },
+    {
+      "dimension": "artwork prominence",
+      "result": "PASS",
+      "evidence": "Both large panels dominate the page; the shortened balloon recovers more figure and fire detail and covers no face or hand."
+    },
+    {
+      "dimension": "Khatakshetra visual identity",
+      "result": "PASS",
+      "evidence": "Navy/gold framing, cream text surfaces, serif hierarchy, warm devotional palette and painterly imagery align with the PR7 identity, with lesser ornament retained as an advisory."
+    },
+    {
+      "dimension": "overall comic-reading experience",
+      "result": "PASS",
+      "evidence": "At normal size the title, caption, wide beat, intimate beat, dialogue and private-use warning read clearly in sequence."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "ADVISORY",
+      "panel_id": "p01-panel-02",
+      "dimension": "Khatakshetra visual identity",
+      "discrepancy": "The rectangular balloon and long narrow tail remain more mechanical than the PR7 conversation reference.",
+      "impact": "Acceptable for private diagnostic proof; publication polish would use a more organic speaker-proximate treatment."
+    },
+    {
+      "severity": "ADVISORY",
+      "panel_id": "p01-panel-02",
+      "dimension": "artwork prominence",
+      "discrepancy": "The shortened balloon still covers some lower-left blue cloak and fire/ground detail.",
+      "impact": "No private-proof blocker; recover more art in any future publication-authorized redesign."
+    },
+    {
+      "severity": "ADVISORY",
+      "panel_id": "PAGE",
+      "dimension": "source fidelity",
+      "discrepancy": "Both bound source images retain independent FIX statuses.",
+      "impact": "Page-level PASS is private-proof-only and does not promote either image."
+    }
+  ],
+  "result": "PASS",
+  "overall_verdict": "PASS",
+  "private_pdf_proof_eligible": true,
+  "private_diagnostic_pdf_proof_eligible": true,
+  "publication_eligible": false,
+  "source_images_promoted": false,
+  "eligibility_scope": "PRIVATE_DIAGNOSTIC_PDF_PROOF_ONLY",
+  "restriction": "This PASS does not alter either underlying FIX status and does not authorize publication, distribution, deployment, push, merge or additional image operations."
+}
