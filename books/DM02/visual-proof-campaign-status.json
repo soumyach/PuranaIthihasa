@@ -1,0 +1,38 @@
+{
+  "actual_incremental_usd": "UNKNOWN_NOT_EXPOSED",
+  "approval_id": "approval-596c63278bfe668f490c86ab",
+  "authorized_panel_ids": [
+    "p01-panel-01",
+    "p11-panel-01",
+    "p14-panel-01",
+    "p21-panel-01"
+  ],
+  "automatic_retries_authorized": false,
+  "book_id": "DM02",
+  "campaign_id": "dm02-visual-proof-campaign-01",
+  "campaign_subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+  "full_book_generation_authorized": false,
+  "generation_authorized": true,
+  "image_operations_executed": 4,
+  "independent_reviews_completed": 4,
+  "operation_ceiling": 4,
+  "pdf_authorized": false,
+  "preserved_complete_book_campaign_hash": "0465f0111d3fac1729014bb95ac5247e417aaf3429672ebc5f69e79f18fdac1e",
+  "private_illustration_clearance_record_hash": "3983a90dc72dedcc8510290357dccdfc3d562b2d622b3a09680fc19f38745653",
+  "publication_eligible": false,
+  "purchased_credit_consumption": "NOT_REQUESTED_OR_REPORTED",
+  "remaining_authorized_operations": 0,
+  "remaining_complete_book_initial_operations_authorized": 0,
+  "review_results": {
+    "p01-panel-01": "FIX",
+    "p11-panel-01": "ESCALATE",
+    "p14-panel-01": "FIX",
+    "p21-panel-01": "FIX"
+  },
+  "schema_version": "1.0",
+  "separately_billed_provider_calls": 0,
+  "status": "FOUR_PROOFS_REVIEWED_WITH_BLOCKERS_CAMPAIGN_COMPLETE_NO_RETRY",
+  "status_hash": "8aab58e06908f772d6f7cd84e44b0e4b68448dc46859f6335268f042427a8254",
+  "usage_after_record_hash": "c595e8aa657e09cf1e7b15c71e1445f36d129875fc097a34a626909af8d76d7c",
+  "usage_before_record_hash": "d0846261da03b9ce93984353dafc88c317bb8ec3523740dd3d6c7aba1ff9c1a7"
+}

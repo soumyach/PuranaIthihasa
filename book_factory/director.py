@@ -17,6 +17,7 @@ from .drafting import (
     render_manuscript_markdown,
     targeted_revision_request,
 )
+from .dm02_visual_proof import DM02VisualProofCampaign
 from .editorial import PR5_REVIEW_PERSPECTIVES, editorial_review, finalize_review
 from .errors import ContractError, NotImplementedStageError
 from .handoffs import SessionHandoffStore, finalize_handoff, validate_execution
@@ -88,6 +89,7 @@ class FactoryDirector:
         self.handoffs = SessionHandoffStore(self.books_root)
         self.real_production = RealProductionSlice(self.root)
         self.autonomous_pilot = AutonomousMultiPagePilot(self.root)
+        self.dm02_visual_proof = DM02VisualProofCampaign(self.root)
         self.orchestrator = AutonomousFactoryDirector(self, orchestration_runtime_root)
 
     def _configuration(self):
@@ -2013,6 +2015,46 @@ class FactoryDirector:
         if book_id != "DM04":
             raise ContractError("PR12 autonomous pilot is locked to DM04", {"book_id": book_id})
         return self.autonomous_pilot.import_approval(approval_path)
+
+    def import_dm02_visual_proof_authorization(self, book_id, authorization_path):
+        if book_id != "DM02":
+            raise ContractError("the DM02 visual-proof campaign is locked to DM02", {"book_id": book_id})
+        return self.dm02_visual_proof.import_authorization(authorization_path)
+
+    def record_dm02_visual_proof_usage(self, book_id, phase, observation_path):
+        if book_id != "DM02":
+            raise ContractError("the DM02 visual-proof campaign is locked to DM02", {"book_id": book_id})
+        return self.dm02_visual_proof.record_usage_observation(phase, observation_path)
+
+    def prepare_dm02_visual_proof_generation(self, book_id, panel_id):
+        if book_id != "DM02":
+            raise ContractError("the DM02 visual-proof campaign is locked to DM02", {"book_id": book_id})
+        return self.dm02_visual_proof.prepare_generation(panel_id)
+
+    def import_dm02_visual_proof_image(self, book_id, panel_id, request_path, image_path, provider_receipt_path):
+        if book_id != "DM02":
+            raise ContractError("the DM02 visual-proof campaign is locked to DM02", {"book_id": book_id})
+        return self.dm02_visual_proof.import_image(panel_id, request_path, image_path, provider_receipt_path)
+
+    def prepare_dm02_visual_proof_review(self, book_id, panel_id):
+        if book_id != "DM02":
+            raise ContractError("the DM02 visual-proof campaign is locked to DM02", {"book_id": book_id})
+        return self.dm02_visual_proof.prepare_visual_review(panel_id)
+
+    def import_dm02_visual_proof_review(self, book_id, panel_id, request_path, response_path):
+        if book_id != "DM02":
+            raise ContractError("the DM02 visual-proof campaign is locked to DM02", {"book_id": book_id})
+        return self.dm02_visual_proof.import_visual_review(panel_id, request_path, response_path)
+
+    def build_dm02_visual_proof_contact_sheet(self, book_id):
+        if book_id != "DM02":
+            raise ContractError("the DM02 visual-proof campaign is locked to DM02", {"book_id": book_id})
+        return self.dm02_visual_proof.build_contact_sheet()
+
+    def dm02_visual_proof_status(self, book_id):
+        if book_id != "DM02":
+            raise ContractError("the DM02 visual-proof campaign is locked to DM02", {"book_id": book_id})
+        return self.dm02_visual_proof.status()
 
     def prepare_autonomous_pilot_generation(self, book_id, unit_id):
         if book_id != "DM04":

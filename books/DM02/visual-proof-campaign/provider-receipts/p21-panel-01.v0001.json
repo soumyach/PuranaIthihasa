@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "provider_id": "codex-built-in-image-gen",
+  "provider_interface": "image_gen.imagegen",
+  "unit_id": "page-8619f3db280abbfd867eefe4--p21-panel-01",
+  "page_id": "page-8619f3db280abbfd867eefe4",
+  "panel_id": "p21-panel-01",
+  "operation": "generate",
+  "operation_sequence": 4,
+  "request_hash": "c35b20c30a28b84b03e770401738fc3709ac17a6ba020fd432029f862022429f",
+  "campaign_subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+  "producer": {
+    "id": "codex-root-image-producer-dm02-visual-proof",
+    "host_session_only": true
+  },
+  "submitted_references": [
+    {
+      "role": "A_SERIES_VISUAL_IDENTITY",
+      "reference_id": "kgs-satya-p01",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+      "input_index": 1,
+      "content_transfer": "FORBIDDEN"
+    },
+    {
+      "role": "B_PAGE_PANEL_COMPOSITION",
+      "reference_id": "kgs-dm08-p28",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+      "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5",
+      "input_index": 2,
+      "content_transfer": "FORBIDDEN"
+    }
+  ],
+  "unavailable_reference_roles": [
+    "C_APPROVED_CHARACTER_REFERENCE",
+    "D_APPROVED_SETTING_REFERENCE"
+  ],
+  "submitted_prompt": "Create one decisive full-page portrait 3:4 illustration for DM02 p21-panel-01, without any page border or text. The prior page has already established that the demons' condition is satisfied. Show a source-neutral unflooded-earth field that remains wholly separate from every body and visibly interrupts the surrounding cosmic flood. Its size, mechanism and cosmography remain unspecified; it is not an invented island. Vishnu raises the one source-authorized discus, and its swift luminous circle ends the threat through silhouettes and motion only. Madhu and Kaitabha remain distinct. Show no wound, anatomical impact point, thigh, lap, buttocks or other bodily platform, and no graphic gore. Vishnu uses only scene-required arms; add no other weapons or attributes. Use restrained gold edge light over midnight water and a clear before-to-consequence visual flow, while reserving the complete upper 18 percent for later editable lettering. REFERENCE A supplies only premium Khatakshetra devotional painterly finish and cinematic sacred focus. REFERENCE B supplies only climactic visual hierarchy and resolution energy; copy none of its Chandika/Chamunda/Mothers/Raktabija identities, lion, blood, weapons, flags, army, text, frame or theology. No embedded lettering, balloons, watermark, halo, Western fantasy armor, invented emblems or unrelated figures.",
+  "submitted_prompt_sha256": "00c750317601e6bfcb828467809d8451239fe182c66b6d3aa2f0f1258ac74690",
+  "output_path": "books/DM02/visual-proof-campaign/images/p21-panel-01/v0001.png",
+  "output_sha256": "e7de39593aa71644f4c2a57fd577855a8611b2a0c8015b78497d84ecb759dbee",
+  "output_width": 1086,
+  "output_height": 1448,
+  "source_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-e6dee32d-c692-42eb-aea6-c1c087e7caee.png",
+  "included_allowance_policy": "CURRENT_INCLUDED_ALLOWANCE_FIRST",
+  "api_key_supplied": false,
+  "external_provider_authorization_requested": false,
+  "paid_billing_requested": false,
+  "automatic_credit_purchase_requested": false,
+  "purchased_credit_consumption": "NOT_REPORTED_NO_BALANCE",
+  "actual_incremental_usd": "UNKNOWN_NOT_EXPOSED",
+  "retry": false
+}

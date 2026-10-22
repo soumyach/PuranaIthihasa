@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "request_hash": "72115025d9eb3acb26d9c6900c22088eb72489489de525d056ac2ac811e96f11",
+  "unit_id": "page-8619f3db280abbfd867eefe4--p21-panel-01",
+  "page_id": "page-8619f3db280abbfd867eefe4",
+  "panel_id": "p21-panel-01",
+  "image_sha256": "e7de39593aa71644f4c2a57fd577855a8611b2a0c8015b78497d84ecb759dbee",
+  "reviewer": {
+    "id": "/root/pr11_visual_reviewer-dm02",
+    "image_capable": true,
+    "inspected_actual_pixels": true,
+    "reading_size": "ACTUAL_READING_SIZE",
+    "independent_of_producer": true
+  },
+  "assessments": [
+    {
+      "dimension": "SOURCE_FIDELITY",
+      "result": "FIX",
+      "evidence": "The proof shows Vishnu using the authorized discus against distinct Madhu and Kaitabha on dry ground surrounded by flood, but turns the source-neutral dry field into a highly specific raised island with sheer cliffs and waterfalls, inventing the geography, size and mechanism that the lock requires to remain unspecified."
+    },
+    {
+      "dimension": "THEOLOGICAL_ACCURACY",
+      "result": "FIX",
+      "evidence": "The dry ground remains separate from every body and does not assert Vishnu's thigh, lap or another body platform, but the invented island cosmography presents a source-silent defeat locus as fixed sacred geography."
+    },
+    {
+      "dimension": "CULTURAL_AUTHENTICITY",
+      "result": "PASS",
+      "evidence": "The clothing, crowns, jewelry and discus use a coherent Indian epic visual language without modern artifacts or Western fantasy armor."
+    },
+    {
+      "dimension": "CHARACTER_IDENTITY",
+      "result": "FIX",
+      "evidence": "Vishnu remains visually stable, but Kaitabha's costume changes to a prominent royal-blue lower garment and sash, weakening the locked charcoal-and-deep-crimson identity and continuity with the reviewed p14 proof."
+    },
+    {
+      "dimension": "EVENT_ACTION_DEPICTION",
+      "result": "FIX",
+      "evidence": "The discus action is clear, but broad luminous bands visibly cross both demons' torsos and red impact-like marks appear on their chests, creating precise bodily strike readings instead of the required silhouettes-and-motion-only defeat with no wound or anatomical impact point."
+    },
+    {
+      "dimension": "ANATOMY",
+      "result": "PASS",
+      "evidence": "Visible hands, arms, faces, torsos and Vishnu's stance are anatomically coherent at original resolution; no extra limbs or fused fingers are apparent."
+    },
+    {
+      "dimension": "NARRATIVE_CLARITY",
+      "result": "PASS",
+      "evidence": "The central dry ground, surrounding flood, raised discus and two recoiling adversaries clearly communicate condition followed by decisive consequence."
+    },
+    {
+      "dimension": "EMOTIONAL_EXPRESSIVENESS",
+      "result": "PASS",
+      "evidence": "Vishnu's controlled focus and the demons' recoil make the climax immediately legible, though the bodily impact treatment must be corrected separately."
+    },
+    {
+      "dimension": "VISUAL_COMPOSITION",
+      "result": "PASS",
+      "evidence": "Vishnu forms a stable central axis while the two demons and luminous discus path create a strong symmetrical climax over the surrounding waves."
+    },
+    {
+      "dimension": "GOLD_STANDARD_ALIGNMENT",
+      "result": "PASS",
+      "evidence": "The proof matches the references' premium resolution hierarchy and climactic painterly energy without copying Chandika, Chamunda, the Mothers, Raktabija, lion, army, flags, benchmark weapons, text or theology."
+    },
+    {
+      "dimension": "LETTERING_COMPATIBILITY",
+      "result": "FIX",
+      "evidence": "No raster lettering is present, but gold cloud and energy detail enters both sides of the required x=0.08..0.92, y=0.06..0.24 top safe rectangle; the full locked band is not uniformly quiet."
+    }
+  ],
+  "overall_verdict": "FIX",
+  "findings": [
+    {
+      "dimension": "SOURCE_FIDELITY",
+      "discrepancy": "The source-neutral dry field is rendered as a specific invented island cosmography.",
+      "evidence": "Original pixels show a bounded elevated landmass with vertical rock walls, greenery and waterfalls on every side, although exact geography, size and exposure mechanism must remain unspecified and the prompt expressly forbids an invented island.",
+      "repair_type": "SOURCE_BOUNDED_ENVIRONMENT_RECOMPOSITION",
+      "page_id": "page-8619f3db280abbfd867eefe4",
+      "panel_id": "p21-panel-01"
+    },
+    {
+      "dimension": "EVENT_ACTION_DEPICTION",
+      "discrepancy": "The decisive action creates anatomical strike and wound-like readings.",
+      "evidence": "The luminous rings cross both demons at torso level and visible red marks sit on the chest areas, contrary to the no-wound, no-anatomical-impact-point, silhouettes-and-motion-only requirement.",
+      "repair_type": "NON_GRAPHIC_ACTION_RECOMPOSITION",
+      "page_id": "page-8619f3db280abbfd867eefe4",
+      "panel_id": "p21-panel-01"
+    },
+    {
+      "dimension": "CHARACTER_IDENTITY",
+      "discrepancy": "Kaitabha's proposal palette drifts from deep crimson to royal blue.",
+      "evidence": "The right-side asura wears a dominant blue garment in this proof, whereas the locked identity and p14 proof establish Kaitabha as charcoal and deep crimson.",
+      "repair_type": "CHARACTER_CONTINUITY_CORRECTION",
+      "page_id": "page-8619f3db280abbfd867eefe4",
+      "panel_id": "p21-panel-01"
+    },
+    {
+      "dimension": "LETTERING_COMPATIBILITY",
+      "discrepancy": "The complete top safe rectangle is not uniformly clear.",
+      "evidence": "Gold cloud and energy textures enter the left and right portions of the locked upper band, narrowing the usable caption area.",
+      "repair_type": "LETTERING_REGION_RECOMPOSITION",
+      "page_id": "page-8619f3db280abbfd867eefe4",
+      "panel_id": "p21-panel-01"
+    }
+  ],
+  "correction_instructions": [
+    "For a future separately authorized correction, replace the cliff-edged island with a visually separate but source-neutral dry-earth plane whose geography, size and exposure mechanism remain unspecified.",
+    "Keep the discus action outside the demons' bodies, remove all red impact-like marks and convey defeat only through silhouettes, motion and non-contact consequence.",
+    "Restore Kaitabha's charcoal-and-deep-crimson identity and protect the complete top lettering-safe rectangle.",
+    "No retry is authorized by this review."
+  ],
+  "preview_eligible": false
+}

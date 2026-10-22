@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "request_hash": "1febdad098e8c5cd328fb033043ca706faf9e6f51dcdc8a597e02cecee4116a4",
+  "unit_id": "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-01",
+  "page_id": "page-b3c2c7ea03e4d1259ccbea7b",
+  "panel_id": "p14-panel-01",
+  "image_sha256": "c3cf653e36e0d03a0d9b126ffeab56bee0b655ba752d8d988d9d057f8354170c",
+  "reviewer": {
+    "id": "/root/pr11_visual_reviewer-dm02",
+    "image_capable": true,
+    "inspected_actual_pixels": true,
+    "reading_size": "ACTUAL_READING_SIZE",
+    "independent_of_producer": true
+  },
+  "assessments": [
+    {
+      "dimension": "SOURCE_FIDELITY",
+      "result": "PASS",
+      "evidence": "Only Vishnu, Madhu and Kaitabha appear on the cosmic water; they use arm-to-arm combat with no weapon, army, chariot, injury, ordinary shoreline or literal repetition of five thousand years."
+    },
+    {
+      "dimension": "THEOLOGICAL_ACCURACY",
+      "result": "FIX",
+      "evidence": "A bright circular gold radiance directly behind Vishnu's head and crown reads as a halo, although unsourced halo symbolism is prohibited by the character bible and prompt. No unsupported weapon or body-locus claim is present."
+    },
+    {
+      "dimension": "CULTURAL_AUTHENTICITY",
+      "result": "PASS",
+      "evidence": "Classical draped garments, restrained crowns and ornaments, and the Indian epic painterly language remain coherent without modern props or Western fantasy armor."
+    },
+    {
+      "dimension": "CHARACTER_IDENTITY",
+      "result": "PASS",
+      "evidence": "Vishnu retains the blue, antique-gold and warm-ivory proposal palette; broad low Madhu remains visually distinct from taller angular Kaitabha, and neither asura is merged or armed."
+    },
+    {
+      "dimension": "EVENT_ACTION_DEPICTION",
+      "result": "PASS",
+      "evidence": "Madhu drives from the left while Vishnu checks him with a readable head-and-forearm grappling hold; Kaitabha remains a separate flank threat closing from the right."
+    },
+    {
+      "dimension": "ANATOMY",
+      "result": "PASS",
+      "evidence": "The grappling hold, forearm contacts, fists, open hand, torsos and planted legs remain anatomically coherent at original resolution with no extra limbs or fused fingers."
+    },
+    {
+      "dimension": "NARRATIVE_CLARITY",
+      "result": "PASS",
+      "evidence": "The three silhouettes and contact points make the current attacker, Vishnu's defensive check and the pending flank pressure legible without text."
+    },
+    {
+      "dimension": "EMOTIONAL_EXPRESSIVENESS",
+      "result": "PASS",
+      "evidence": "Madhu's forward strain, Vishnu's controlled concentration and Kaitabha's active threat create distinct, readable emotional roles without graphic cruelty."
+    },
+    {
+      "dimension": "VISUAL_COMPOSITION",
+      "result": "PASS",
+      "evidence": "The compact three-figure triangle, opposing diagonals and luminous wave rings produce strong cause-and-effect action and keep all three participants readable."
+    },
+    {
+      "dimension": "GOLD_STANDARD_ALIGNMENT",
+      "result": "PASS",
+      "evidence": "The proof reaches the references' premium detail, jewel-toned lighting and large-action clarity while avoiding Raktabija, blood multiplication, army, elephant, weapons, flags, lettering and benchmark theology."
+    },
+    {
+      "dimension": "LETTERING_COMPATIBILITY",
+      "result": "FIX",
+      "evidence": "No raster lettering is present, but Kaitabha's hair and crown and the gold nebular flare enter the lower part of the required x=0.08..0.92, y=0.06..0.24 safe rectangle; the full region is not protected."
+    }
+  ],
+  "overall_verdict": "FIX",
+  "findings": [
+    {
+      "dimension": "THEOLOGICAL_ACCURACY",
+      "discrepancy": "An unsourced halo-like disk is introduced behind Vishnu.",
+      "evidence": "At original resolution a concentrated circular gold flare is centered directly behind Vishnu's crowned head, creating the forbidden halo reading rather than general edge light.",
+      "repair_type": "ICONOGRAPHY_LOCAL_CORRECTION",
+      "page_id": "page-b3c2c7ea03e4d1259ccbea7b",
+      "panel_id": "p14-panel-01"
+    },
+    {
+      "dimension": "LETTERING_COMPATIBILITY",
+      "discrepancy": "The complete upper lettering-safe rectangle is not clear.",
+      "evidence": "Kaitabha's hair and crown rise into the safe band and gold cloud detail crosses its lower edge, preventing use of the full locked rectangle.",
+      "repair_type": "LETTERING_REGION_RECOMPOSITION",
+      "page_id": "page-b3c2c7ea03e4d1259ccbea7b",
+      "panel_id": "p14-panel-01"
+    }
+  ],
+  "correction_instructions": [
+    "For a future separately authorized correction, preserve the current grappling action and identities but replace the head-centered circular flare with non-symbolic directional edge light.",
+    "Lower the figures and nebular detail enough to protect the complete normalized top safe rectangle.",
+    "No retry is authorized by this review."
+  ],
+  "preview_eligible": false
+}

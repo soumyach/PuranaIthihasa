@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "provider_id": "codex-built-in-image-gen",
+  "provider_interface": "image_gen.imagegen",
+  "unit_id": "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-01",
+  "page_id": "page-b3c2c7ea03e4d1259ccbea7b",
+  "panel_id": "p14-panel-01",
+  "operation": "generate",
+  "operation_sequence": 3,
+  "request_hash": "b86e616868f6f3bec31e85561c417888bf47069dc1a9e5bca2c529b07ce61e73",
+  "campaign_subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+  "producer": {
+    "id": "codex-root-image-producer-dm02-visual-proof",
+    "host_session_only": true
+  },
+  "submitted_references": [
+    {
+      "role": "A_SERIES_VISUAL_IDENTITY",
+      "reference_id": "kgs-satya-p01",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+      "input_index": 1,
+      "content_transfer": "FORBIDDEN"
+    },
+    {
+      "role": "B_PAGE_PANEL_COMPOSITION",
+      "reference_id": "kgs-dm08-p21",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p21.png",
+      "sha256": "332b208d14df3d94139a3ab598e7e7e327e49bc9d4bbf5f41ddf20d8260291af",
+      "input_index": 2,
+      "content_transfer": "FORBIDDEN"
+    }
+  ],
+  "unavailable_reference_roles": [
+    "C_APPROVED_CHARACTER_REFERENCE",
+    "D_APPROVED_SETTING_REFERENCE"
+  ],
+  "submitted_prompt": "Create one clean portrait 3:4 action illustration for DM02 p14-panel-01, without any page border or text. On an unbounded midnight cosmic-water expanse, stage a readable three-figure arm-to-arm action triangle. Madhu, broad and low with an oxblood-and-charcoal silhouette, drives forward. Vishnu, in the stable midnight-blue, antique-gold and warm-ivory proposal palette, checks Madhu with one anatomically coherent grappling hold. Kaitabha, taller and angular in charcoal and deep crimson, stays a separate flank threat and does not merge with Madhu. Use humanlike combat anatomy and only scene-required arms. No one carries a weapon; show no army, chariot, injury or ordinary shoreline. Hard gold edge light and wave rings make the cause-and-effect action clear without depicting five thousand literal repetitions. Keep the complete upper 18 percent uncluttered for later editable lettering. REFERENCE A supplies only premium Khatakshetra Indian devotional painterly finish and cinematic depth. REFERENCE B supplies only large-scale action clarity and foreground-to-background energy; copy none of its Raktabija identity, blood mechanism, army, elephant, weapons, flags, helmets, text, frame or theology. No embedded lettering, balloons, watermark, gore, halo, Western fantasy armor, invented emblems or extra figures.",
+  "submitted_prompt_sha256": "8a9ba81bbf64417b9acab77b3c6b2d8c0e53072c3d2b1291717a5f0b554446de",
+  "output_path": "books/DM02/visual-proof-campaign/images/p14-panel-01/v0001.png",
+  "output_sha256": "c3cf653e36e0d03a0d9b126ffeab56bee0b655ba752d8d988d9d057f8354170c",
+  "output_width": 1086,
+  "output_height": 1448,
+  "source_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-f88122a6-2f03-4114-a319-55b7de7182d5.png",
+  "included_allowance_policy": "CURRENT_INCLUDED_ALLOWANCE_FIRST",
+  "api_key_supplied": false,
+  "external_provider_authorization_requested": false,
+  "paid_billing_requested": false,
+  "automatic_credit_purchase_requested": false,
+  "purchased_credit_consumption": "NOT_REPORTED_NO_BALANCE",
+  "actual_incremental_usd": "UNKNOWN_NOT_EXPOSED",
+  "retry": false
+}

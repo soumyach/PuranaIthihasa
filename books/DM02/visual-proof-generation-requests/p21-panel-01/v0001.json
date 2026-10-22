@@ -1,0 +1,82 @@
+{
+  "book_id": "DM02",
+  "content_hash": "a6b2964704971570cd774025c01012ccb471292b464cd17f5ff0d5658ec2fbac",
+  "id": "visual-proof-generation-requests/p21-panel-01-1863bffc80de11efa4a2f403",
+  "kind": "visual-proof-generation-requests/p21-panel-01",
+  "parent_hash": null,
+  "payload": {
+    "automatic_retry_authorized": false,
+    "book_id": "DM02",
+    "campaign_approval_id": "approval-596c63278bfe668f490c86ab",
+    "campaign_id": "dm02-visual-proof-campaign-01",
+    "campaign_subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+    "character_consistency_certified": false,
+    "character_ids": [
+      "dm-vishnu",
+      "dm-madhu",
+      "dm-kaitabha"
+    ],
+    "location_id": "dm02-unflooded-defeat-locus",
+    "maximum_operations_for_unit": 1,
+    "maximum_paid_spend_minor_units": 0,
+    "operation": "generate",
+    "page_id": "page-8619f3db280abbfd867eefe4",
+    "page_number": 21,
+    "panel_id": "p21-panel-01",
+    "preserved_complete_book_campaign_hash": "0465f0111d3fac1729014bb95ac5247e417aaf3429672ebc5f69e79f18fdac1e",
+    "private_illustration_clearance_record_hash": "3983a90dc72dedcc8510290357dccdfc3d562b2d622b3a09680fc19f38745653",
+    "prompt": "Create one decisive full-page portrait 3:4 illustration for DM02 p21-panel-01, without any page border or text. The prior page has already established that the demons' condition is satisfied. Show a source-neutral unflooded-earth field that remains wholly separate from every body and visibly interrupts the surrounding cosmic flood. Its size, mechanism and cosmography remain unspecified; it is not an invented island. Vishnu raises the one source-authorized discus, and its swift luminous circle ends the threat through silhouettes and motion only. Madhu and Kaitabha remain distinct. Show no wound, anatomical impact point, thigh, lap, buttocks or other bodily platform, and no graphic gore. Vishnu uses only scene-required arms; add no other weapons or attributes. Use restrained gold edge light over midnight water and a clear before-to-consequence visual flow, while reserving the complete upper 18 percent for later editable lettering. REFERENCE A supplies only premium Khatakshetra devotional painterly finish and cinematic sacred focus. REFERENCE B supplies only climactic visual hierarchy and resolution energy; copy none of its Chandika/Chamunda/Mothers/Raktabija identities, lion, blood, weapons, flags, army, text, frame or theology. No embedded lettering, balloons, watermark, halo, Western fantasy armor, invented emblems or unrelated figures.",
+    "prompt_sha256": "00c750317601e6bfcb828467809d8451239fe182c66b6d3aa2f0f1258ac74690",
+    "provider_id": "codex-built-in-image-gen",
+    "provider_interface": "referenced_image_paths",
+    "references": [
+      {
+        "approval_status": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY",
+        "available": true,
+        "content_transfer": "FORBIDDEN",
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+        "reference_id": "kgs-satya-p01",
+        "role": "A_SERIES_VISUAL_IDENTITY",
+        "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+      },
+      {
+        "approval_status": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY",
+        "available": true,
+        "content_transfer": "FORBIDDEN",
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+        "reference_id": "kgs-dm08-p28",
+        "role": "B_PAGE_PANEL_COMPOSITION",
+        "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5"
+      },
+      {
+        "approval_status": "UNAVAILABLE_NO_INDEPENDENTLY_APPROVED_DM02_CHARACTER_PIXELS",
+        "available": false,
+        "content_transfer": "NOT_APPLICABLE",
+        "role": "C_APPROVED_CHARACTER_REFERENCE"
+      },
+      {
+        "approval_status": "UNAVAILABLE_NO_INDEPENDENTLY_APPROVED_DM02_SETTING_PIXELS",
+        "available": false,
+        "content_transfer": "NOT_APPLICABLE",
+        "role": "D_APPROVED_SETTING_REFERENCE"
+      }
+    ],
+    "request_hash": "c35b20c30a28b84b03e770401738fc3709ac17a6ba020fd432029f862022429f",
+    "required_action": "Full-page decisive composition after the condition-satisfied page: a source-neutral unflooded-earth field remains wholly separate from every body while Viṣṇu raises the sourced discus and its swift luminous circle ends the threat through silhouettes and motion only. The field's size, mechanism and cosmography stay unspecified; show no wound, anatomical impact point, thigh, lap, buttocks or other bodily platform.",
+    "safe_regions": [
+      {
+        "height": 0.18,
+        "id": "p21-panel-01-safe",
+        "purpose": "lettering separation",
+        "width": 0.84,
+        "x": 0.08,
+        "y": 0.06
+      }
+    ],
+    "schema_version": "1.0",
+    "text_in_image": false,
+    "unit_id": "page-8619f3db280abbfd867eefe4--p21-panel-01"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

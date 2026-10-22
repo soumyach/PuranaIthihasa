@@ -1,0 +1,63 @@
+{
+  "book_id": "DM02",
+  "content_hash": "de7e2c96158d70df11d48c6d0fc110d2ab5914f2ae8503e4c62d654f07de8ebf",
+  "id": "visual-proof-review-requests/p01-panel-01-420a1eed4653bf1210932e45",
+  "kind": "visual-proof-review-requests/p01-panel-01",
+  "parent_hash": null,
+  "payload": {
+    "actual_pixels_required": true,
+    "actual_reading_size_required": true,
+    "book_id": "DM02",
+    "campaign_id": "dm02-visual-proof-campaign-01",
+    "campaign_subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+    "comparison_references": [
+      {
+        "content_transfer": "FORBIDDEN",
+        "input_index": 1,
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+        "reference_id": "kgs-satya-p01",
+        "role": "A_SERIES_VISUAL_IDENTITY",
+        "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+      },
+      {
+        "content_transfer": "FORBIDDEN",
+        "input_index": 2,
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+        "reference_id": "kgs-dm08-p09",
+        "role": "B_PAGE_PANEL_COMPOSITION",
+        "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+      }
+    ],
+    "image_path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+    "image_sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+    "independent_reviewer_required": true,
+    "page_id": "page-71e9de766bf786cb9499a31b",
+    "panel_id": "p01-panel-01",
+    "producer_ids": [
+      "codex-root-image-producer-dm02-visual-proof"
+    ],
+    "request_hash": "0a247af0c30ff76ff7786a2d4ce92fdb38e00b9fb3fdd5d033fd1f77fb5c2cb0",
+    "required_dimensions": [
+      "SOURCE_FIDELITY",
+      "THEOLOGICAL_ACCURACY",
+      "CULTURAL_AUTHENTICITY",
+      "CHARACTER_IDENTITY",
+      "EVENT_ACTION_DEPICTION",
+      "ANATOMY",
+      "NARRATIVE_CLARITY",
+      "EMOTIONAL_EXPRESSIVENESS",
+      "VISUAL_COMPOSITION",
+      "GOLD_STANDARD_ALIGNMENT",
+      "LETTERING_COMPATIBILITY"
+    ],
+    "result_values": [
+      "PASS",
+      "FIX",
+      "ESCALATE"
+    ],
+    "schema_version": "1.0",
+    "unit_id": "page-71e9de766bf786cb9499a31b--p01-panel-01"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

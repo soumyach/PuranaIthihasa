@@ -1,0 +1,80 @@
+{
+  "observedAt": "2026-10-22T12:01:04Z",
+  "ordinaryUsageAllowed": true,
+  "rateLimits": {
+    "limitId": "codex",
+    "limitName": null,
+    "normalModelSlug": null,
+    "primary": {
+      "usedPercent": 29,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793101834
+    },
+    "secondary": null,
+    "credits": {
+      "hasCredits": false,
+      "unlimited": false,
+      "balance": "0"
+    },
+    "individualLimit": null,
+    "spendControlReached": false,
+    "planType": "prolite",
+    "rateLimitReachedType": null
+  },
+  "rateLimitsByLimitId": {
+    "codex": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+        "usedPercent": 29,
+        "windowDurationMins": 10080,
+        "resetsAt": 1793101834
+      },
+      "secondary": null,
+      "credits": {
+        "hasCredits": false,
+        "unlimited": false,
+        "balance": "0"
+      },
+      "individualLimit": null,
+      "spendControlReached": false,
+      "planType": "prolite",
+      "rateLimitReachedType": null
+    }
+  },
+  "rateLimitResetCredits": {
+    "availableCount": 3,
+    "credits": [
+      {
+        "id": "RateLimitResetCredit_7dcb2673d7a08191bc922010d426285b",
+        "resetType": "codexRateLimits",
+        "status": "available",
+        "grantedAt": 1790109524,
+        "expiresAt": 1792701524,
+        "title": "Full reset",
+        "description": "Thanks for using Codex! You've been granted one free rate limit reset."
+      },
+      {
+        "id": "RateLimitResetCredit_4ad525610af08191ab4045e7fcf47298",
+        "resetType": "codexRateLimits",
+        "status": "available",
+        "grantedAt": 1790708774,
+        "expiresAt": 1793300774,
+        "title": "Full reset",
+        "description": "Thanks for using Codex! You've been granted one free rate limit reset."
+      },
+      {
+        "id": "RateLimitResetCredit_f36683bd33b88191b4fa52588230ddbb",
+        "resetType": "codexRateLimits",
+        "status": "available",
+        "grantedAt": 1791416011,
+        "expiresAt": 1794008011,
+        "title": "Full reset",
+        "description": "Thanks for using Codex! You've been granted one free rate limit reset."
+      }
+    ]
+  },
+  "accountId": "dc42d701-74cc-4fb9-a9ba-275d4cd5eece",
+  "rateLimitUpsell": null
+}

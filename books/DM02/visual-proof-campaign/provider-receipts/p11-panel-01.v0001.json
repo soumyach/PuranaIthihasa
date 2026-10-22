@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "provider_id": "codex-built-in-image-gen",
+  "provider_interface": "image_gen.imagegen",
+  "unit_id": "page-b85332e92940926f67e6dd9d--p11-panel-01",
+  "page_id": "page-b85332e92940926f67e6dd9d",
+  "panel_id": "p11-panel-01",
+  "operation": "generate",
+  "operation_sequence": 2,
+  "request_hash": "2eb9e2b87a2998cdddd2af9c04469d90dc9c0f01d2f0e67c18abc91b35628cab",
+  "campaign_subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+  "producer": {
+    "id": "codex-root-image-producer-dm02-visual-proof",
+    "host_session_only": true
+  },
+  "submitted_references": [
+    {
+      "role": "A_SERIES_VISUAL_IDENTITY",
+      "reference_id": "kgs-satya-p01",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+      "input_index": 1,
+      "content_transfer": "FORBIDDEN"
+    },
+    {
+      "role": "B_PAGE_PANEL_COMPOSITION",
+      "reference_id": "kgs-dm08-p12",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+      "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4",
+      "input_index": 2,
+      "content_transfer": "FORBIDDEN"
+    }
+  ],
+  "unavailable_reference_roles": [
+    "C_APPROVED_CHARACTER_REFERENCE",
+    "D_APPROVED_SETTING_REFERENCE"
+  ],
+  "submitted_prompt": "Create one immersive portrait 3:4 illustration for DM02 p11-panel-01, without any page border or text. On the unchanged cosmic flood, sleeping Vishnu remains supported above the waters by Shesha while Brahma remains seated on the lotus and Madhu and Kaitabha remain visibly separate and nearby. Render one exact, source-grounded withdrawal event: six distinct, modest, non-anatomical streams of radiance leave Vishnu's eyes, mouth, nose, arms, heart and breast, then gather as Yoganidra/Mahamaya, a separate dignified radiant presence appearing before Brahma. Make all six named locus groups visually readable without labels, cutaway anatomy, a seventh locus, or any suggestion of permanent bodily residence. Yoganidra has a restrained indigo-and-warm-gold presence with source-neutral anatomy, no fixed conventional arm count, no halo and no weapon array. Keep Shesha's exact hood count unspecified and unobtrusive. Reserve the complete upper 18 percent as quiet negative space for later editable lettering. REFERENCE A supplies only premium devotional painterly finish and cinematic depth. REFERENCE B supplies only the clarity and scale of a divine reveal; copy none of its Kali/Chamunda identity, skulls, tongue, weapons, army, flags, gore, text, frame or plot. No embedded lettering, balloons, watermark, modern objects, Western fantasy armor or invented divine symbols.",
+  "submitted_prompt_sha256": "da678c1bfe4da99f4f00a7925b04329a22e62deb009f7f380a547364e6462163",
+  "output_path": "books/DM02/visual-proof-campaign/images/p11-panel-01/v0001.png",
+  "output_sha256": "aa2104618b9f4395c1f62cdba279974f5be3a38b4ff78242182cc9d13438fa6c",
+  "output_width": 1086,
+  "output_height": 1448,
+  "source_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-f3d6abf0-77fe-42b3-99b6-22d098fca565.png",
+  "included_allowance_policy": "CURRENT_INCLUDED_ALLOWANCE_FIRST",
+  "api_key_supplied": false,
+  "external_provider_authorization_requested": false,
+  "paid_billing_requested": false,
+  "automatic_credit_purchase_requested": false,
+  "purchased_credit_consumption": "NOT_REPORTED_NO_BALANCE",
+  "actual_incremental_usd": "UNKNOWN_NOT_EXPOSED",
+  "retry": false
+}

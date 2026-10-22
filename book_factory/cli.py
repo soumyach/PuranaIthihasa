@@ -79,6 +79,58 @@ def build_parser():
     import_autonomous_review.add_argument("--unit-id", required=True)
     import_autonomous_review.add_argument("--request", required=True)
     import_autonomous_review.add_argument("--response", required=True)
+    dm02_authorization = subparsers.add_parser(
+        "import-dm02-visual-proof-authorization",
+        help="import the exact four-operation DM02 private visual-proof authorization",
+    )
+    dm02_authorization.add_argument("--book-id", required=True)
+    dm02_authorization.add_argument("--authorization", required=True)
+    dm02_usage = subparsers.add_parser(
+        "record-dm02-visual-proof-usage",
+        help="record a before or after read-only Codex allowance observation",
+    )
+    dm02_usage.add_argument("--book-id", required=True)
+    dm02_usage.add_argument("--phase", choices=["BEFORE", "AFTER"], required=True)
+    dm02_usage.add_argument("--observation", required=True)
+    dm02_generation = subparsers.add_parser(
+        "prepare-dm02-visual-proof-generation",
+        help="prepare one no-retry DM02 proof-first image operation",
+    )
+    dm02_generation.add_argument("--book-id", required=True)
+    dm02_generation.add_argument("--panel-id", required=True)
+    dm02_image = subparsers.add_parser(
+        "import-dm02-visual-proof-image",
+        help="import one exact DM02 host-generated PNG and provider receipt",
+    )
+    dm02_image.add_argument("--book-id", required=True)
+    dm02_image.add_argument("--panel-id", required=True)
+    dm02_image.add_argument("--request", required=True)
+    dm02_image.add_argument("--image", required=True)
+    dm02_image.add_argument("--provider-receipt", required=True)
+    dm02_review = subparsers.add_parser(
+        "prepare-dm02-visual-proof-review",
+        help="prepare independent actual-pixel review for one DM02 proof",
+    )
+    dm02_review.add_argument("--book-id", required=True)
+    dm02_review.add_argument("--panel-id", required=True)
+    import_dm02_review = subparsers.add_parser(
+        "import-dm02-visual-proof-review",
+        help="import one independent DM02 actual-pixel review",
+    )
+    import_dm02_review.add_argument("--book-id", required=True)
+    import_dm02_review.add_argument("--panel-id", required=True)
+    import_dm02_review.add_argument("--request", required=True)
+    import_dm02_review.add_argument("--response", required=True)
+    dm02_contact = subparsers.add_parser(
+        "build-dm02-visual-proof-contact-sheet",
+        help="build the four-proof private DM02 contact sheet",
+    )
+    dm02_contact.add_argument("--book-id", required=True)
+    dm02_status = subparsers.add_parser(
+        "dm02-visual-proof-status",
+        help="inspect the bounded four-operation DM02 visual-proof campaign",
+    )
+    dm02_status.add_argument("--book-id", required=True)
     for command, help_text in (
         ("queue", "show deterministic queue selection and skip reasons"),
         ("blocked", "show exact blocked and excluded catalogue entries"),
@@ -249,6 +301,26 @@ def run(args):
         return director.import_autonomous_pilot_visual_review(
             args.book_id, args.unit_id, args.request, args.response
         )
+    if args.command == "import-dm02-visual-proof-authorization":
+        return director.import_dm02_visual_proof_authorization(args.book_id, args.authorization)
+    if args.command == "record-dm02-visual-proof-usage":
+        return director.record_dm02_visual_proof_usage(args.book_id, args.phase, args.observation)
+    if args.command == "prepare-dm02-visual-proof-generation":
+        return director.prepare_dm02_visual_proof_generation(args.book_id, args.panel_id)
+    if args.command == "import-dm02-visual-proof-image":
+        return director.import_dm02_visual_proof_image(
+            args.book_id, args.panel_id, args.request, args.image, args.provider_receipt
+        )
+    if args.command == "prepare-dm02-visual-proof-review":
+        return director.prepare_dm02_visual_proof_review(args.book_id, args.panel_id)
+    if args.command == "import-dm02-visual-proof-review":
+        return director.import_dm02_visual_proof_review(
+            args.book_id, args.panel_id, args.request, args.response
+        )
+    if args.command == "build-dm02-visual-proof-contact-sheet":
+        return director.build_dm02_visual_proof_contact_sheet(args.book_id)
+    if args.command == "dm02-visual-proof-status":
+        return director.dm02_visual_proof_status(args.book_id)
     if args.command == "queue":
         return director.factory_queue(args.fixture_mode)
     if args.command == "blocked":

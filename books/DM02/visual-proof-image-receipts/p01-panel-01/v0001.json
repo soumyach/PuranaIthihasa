@@ -1,0 +1,93 @@
+{
+  "book_id": "DM02",
+  "content_hash": "b62ac365082f88a2cece9f08f7073d30e9e64ead95e6c3b6651b24fdc9d4befd",
+  "id": "visual-proof-image-receipts/p01-panel-01-1c2e4e1e3981a3403ce2cb41",
+  "kind": "visual-proof-image-receipts/p01-panel-01",
+  "parent_hash": null,
+  "payload": {
+    "book_id": "DM02",
+    "campaign_id": "dm02-visual-proof-campaign-01",
+    "campaign_subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+    "character_consistency_certified": false,
+    "generation_request_record_hash": "74cf33d9916a8bdeb9a5b1c5e11d84ee4da16603287f06e3c381d846039c2d78",
+    "image": {
+      "aspect_ratio": "3:4",
+      "bytes": 2637064,
+      "format": "PNG",
+      "height": 1448,
+      "integrity": "PASS_CRC_AND_PIXEL_STREAM",
+      "path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+      "readable": true,
+      "sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+      "width": 1086
+    },
+    "imported_at": "2026-10-22T12:13:45Z",
+    "operation": "generate",
+    "page_id": "page-71e9de766bf786cb9499a31b",
+    "page_number": 1,
+    "panel_id": "p01-panel-01",
+    "producer_ids": [
+      "codex-root-image-producer-dm02-visual-proof"
+    ],
+    "provider": {
+      "actual_incremental_usd": "UNKNOWN_NOT_EXPOSED",
+      "api_key_supplied": false,
+      "automatic_credit_purchase_requested": false,
+      "campaign_subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+      "external_provider_authorization_requested": false,
+      "included_allowance_policy": "CURRENT_INCLUDED_ALLOWANCE_FIRST",
+      "operation": "generate",
+      "operation_sequence": 1,
+      "output_height": 1448,
+      "output_path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+      "output_sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+      "output_width": 1086,
+      "page_id": "page-71e9de766bf786cb9499a31b",
+      "paid_billing_requested": false,
+      "panel_id": "p01-panel-01",
+      "producer": {
+        "host_session_only": true,
+        "id": "codex-root-image-producer-dm02-visual-proof"
+      },
+      "provider_id": "codex-built-in-image-gen",
+      "provider_interface": "image_gen.imagegen",
+      "purchased_credit_consumption": "NOT_REPORTED_NO_BALANCE",
+      "request_hash": "0da71e72a75d00026dd2288f3383e06d18fb4fca11391094db44881f0b9a9829",
+      "retry": false,
+      "schema_version": "1.0",
+      "source_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-b23d9791-05f5-4dd6-b0de-be46598ba087.png",
+      "submitted_prompt": "Create one clean portrait 3:4 illustration for DM02 p01-panel-01, without any page border or text. Show a wide eye-level listening triangle in a quiet forest-hermitage clearing at dusk: Sage Medhas faces Suratha and Samadhi across a low fire. Medhas is the speaking focus, an aged sage in modest bark-brown and warm-ivory clothing, seated with one measured open-hand narration gesture. Suratha has travel-worn royal bearing and a muted peacock-blue cloak but no crown, status weapon or regalia. Samadhi wears plain earth-toned clothing with no status ornament or weapon. Both listeners show neutral, attentive posture only—no invented emotion or motive. Frame the clearing with two tree trunks and warm firelight, with the complete upper 18 percent calm and uncluttered for later editable lettering. REFERENCE A supplies only premium Khatakshetra devotional painterly finish, jewel-toned Indian visual language and cinematic depth. REFERENCE B supplies only speaker-listener staging and expressive comic clarity. Do not copy any benchmark deity, lion, architecture, costume identity, plot content, text, frame or ornament. No embedded lettering, speech balloons, watermark, modern object, halo, weapon, Western fantasy armor or extra figures.",
+      "submitted_prompt_sha256": "630c09a4e34dd1f2d411ef57958f5f40d93a1bd0acbd053882429500f3d706bc",
+      "submitted_references": [
+        {
+          "content_transfer": "FORBIDDEN",
+          "input_index": 1,
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "reference_id": "kgs-satya-p01",
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "content_transfer": "FORBIDDEN",
+          "input_index": 2,
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+          "reference_id": "kgs-dm08-p09",
+          "role": "B_PAGE_PANEL_COMPOSITION",
+          "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+        }
+      ],
+      "unavailable_reference_roles": [
+        "C_APPROVED_CHARACTER_REFERENCE",
+        "D_APPROVED_SETTING_REFERENCE"
+      ],
+      "unit_id": "page-71e9de766bf786cb9499a31b--p01-panel-01"
+    },
+    "publication_eligible": false,
+    "request_hash": "0da71e72a75d00026dd2288f3383e06d18fb4fca11391094db44881f0b9a9829",
+    "schema_version": "1.0",
+    "status": "GENERATED_AWAITING_INDEPENDENT_VISUAL_REVIEW",
+    "unit_id": "page-71e9de766bf786cb9499a31b--p01-panel-01"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

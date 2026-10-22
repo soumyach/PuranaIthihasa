@@ -1,0 +1,152 @@
+{
+  "book_id": "DM02",
+  "content_hash": "036e33c3e40285d1cf95c6e439ee60428622608cff4b2f180e67ab12659a7167",
+  "id": "visual-proof-reviews/p21-panel-01-fb48c3cad4f2fa3985c7e768",
+  "kind": "visual-proof-reviews/p21-panel-01",
+  "parent_hash": null,
+  "payload": {
+    "assessments": [
+      {
+        "dimension": "SOURCE_FIDELITY",
+        "evidence": "The proof shows Vishnu using the authorized discus against distinct Madhu and Kaitabha on dry ground surrounded by flood, but turns the source-neutral dry field into a highly specific raised island with sheer cliffs and waterfalls, inventing the geography, size and mechanism that the lock requires to remain unspecified.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "THEOLOGICAL_ACCURACY",
+        "evidence": "The dry ground remains separate from every body and does not assert Vishnu's thigh, lap or another body platform, but the invented island cosmography presents a source-silent defeat locus as fixed sacred geography.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "CULTURAL_AUTHENTICITY",
+        "evidence": "The clothing, crowns, jewelry and discus use a coherent Indian epic visual language without modern artifacts or Western fantasy armor.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "CHARACTER_IDENTITY",
+        "evidence": "Vishnu remains visually stable, but Kaitabha's costume changes to a prominent royal-blue lower garment and sash, weakening the locked charcoal-and-deep-crimson identity and continuity with the reviewed p14 proof.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "EVENT_ACTION_DEPICTION",
+        "evidence": "The discus action is clear, but broad luminous bands visibly cross both demons' torsos and red impact-like marks appear on their chests, creating precise bodily strike readings instead of the required silhouettes-and-motion-only defeat with no wound or anatomical impact point.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "ANATOMY",
+        "evidence": "Visible hands, arms, faces, torsos and Vishnu's stance are anatomically coherent at original resolution; no extra limbs or fused fingers are apparent.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "NARRATIVE_CLARITY",
+        "evidence": "The central dry ground, surrounding flood, raised discus and two recoiling adversaries clearly communicate condition followed by decisive consequence.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "EMOTIONAL_EXPRESSIVENESS",
+        "evidence": "Vishnu's controlled focus and the demons' recoil make the climax immediately legible, though the bodily impact treatment must be corrected separately.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "VISUAL_COMPOSITION",
+        "evidence": "Vishnu forms a stable central axis while the two demons and luminous discus path create a strong symmetrical climax over the surrounding waves.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "GOLD_STANDARD_ALIGNMENT",
+        "evidence": "The proof matches the references' premium resolution hierarchy and climactic painterly energy without copying Chandika, Chamunda, the Mothers, Raktabija, lion, army, flags, benchmark weapons, text or theology.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "LETTERING_COMPATIBILITY",
+        "evidence": "No raster lettering is present, but gold cloud and energy detail enters both sides of the required x=0.08..0.92, y=0.06..0.24 top safe rectangle; the full locked band is not uniformly quiet.",
+        "result": "FIX"
+      }
+    ],
+    "book_id": "DM02",
+    "campaign_id": "dm02-visual-proof-campaign-01",
+    "campaign_subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+    "character_reference_promoted": false,
+    "comparison_references": [
+      {
+        "content_transfer": "FORBIDDEN",
+        "input_index": 1,
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+        "reference_id": "kgs-satya-p01",
+        "role": "A_SERIES_VISUAL_IDENTITY",
+        "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+      },
+      {
+        "content_transfer": "FORBIDDEN",
+        "input_index": 2,
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+        "reference_id": "kgs-dm08-p28",
+        "role": "B_PAGE_PANEL_COMPOSITION",
+        "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5"
+      }
+    ],
+    "correction_instructions": [
+      "For a future separately authorized correction, replace the cliff-edged island with a visually separate but source-neutral dry-earth plane whose geography, size and exposure mechanism remain unspecified.",
+      "Keep the discus action outside the demons' bodies, remove all red impact-like marks and convey defeat only through silhouettes, motion and non-contact consequence.",
+      "Restore Kaitabha's charcoal-and-deep-crimson identity and protect the complete top lettering-safe rectangle.",
+      "No retry is authorized by this review."
+    ],
+    "findings": [
+      {
+        "dimension": "SOURCE_FIDELITY",
+        "discrepancy": "The source-neutral dry field is rendered as a specific invented island cosmography.",
+        "evidence": "Original pixels show a bounded elevated landmass with vertical rock walls, greenery and waterfalls on every side, although exact geography, size and exposure mechanism must remain unspecified and the prompt expressly forbids an invented island.",
+        "page_id": "page-8619f3db280abbfd867eefe4",
+        "panel_id": "p21-panel-01",
+        "repair_type": "SOURCE_BOUNDED_ENVIRONMENT_RECOMPOSITION"
+      },
+      {
+        "dimension": "EVENT_ACTION_DEPICTION",
+        "discrepancy": "The decisive action creates anatomical strike and wound-like readings.",
+        "evidence": "The luminous rings cross both demons at torso level and visible red marks sit on the chest areas, contrary to the no-wound, no-anatomical-impact-point, silhouettes-and-motion-only requirement.",
+        "page_id": "page-8619f3db280abbfd867eefe4",
+        "panel_id": "p21-panel-01",
+        "repair_type": "NON_GRAPHIC_ACTION_RECOMPOSITION"
+      },
+      {
+        "dimension": "CHARACTER_IDENTITY",
+        "discrepancy": "Kaitabha's proposal palette drifts from deep crimson to royal blue.",
+        "evidence": "The right-side asura wears a dominant blue garment in this proof, whereas the locked identity and p14 proof establish Kaitabha as charcoal and deep crimson.",
+        "page_id": "page-8619f3db280abbfd867eefe4",
+        "panel_id": "p21-panel-01",
+        "repair_type": "CHARACTER_CONTINUITY_CORRECTION"
+      },
+      {
+        "dimension": "LETTERING_COMPATIBILITY",
+        "discrepancy": "The complete top safe rectangle is not uniformly clear.",
+        "evidence": "Gold cloud and energy textures enter the left and right portions of the locked upper band, narrowing the usable caption area.",
+        "page_id": "page-8619f3db280abbfd867eefe4",
+        "panel_id": "p21-panel-01",
+        "repair_type": "LETTERING_REGION_RECOMPOSITION"
+      }
+    ],
+    "generation_retry_authorized": false,
+    "image_path": "books/DM02/visual-proof-campaign/images/p21-panel-01/v0001.png",
+    "image_sha256": "e7de39593aa71644f4c2a57fd577855a8611b2a0c8015b78497d84ecb759dbee",
+    "independent_actual_pixel_review": true,
+    "page_id": "page-8619f3db280abbfd867eefe4",
+    "panel_id": "p21-panel-01",
+    "publication_eligible": false,
+    "request_hash": "72115025d9eb3acb26d9c6900c22088eb72489489de525d056ac2ac811e96f11",
+    "request_record_hash": "6886187b5dca7d213692287d353b63f69bbcab69df24f776e18a31ee3e366446",
+    "result": "FIX",
+    "review_hash": "9cd89002b75be88f887b9d692d0ec3524f52885c60e05abf6a45ea10c91ce18f",
+    "reviewed_at": "2026-10-22T12:24:20Z",
+    "reviewer": {
+      "id": "/root/pr11_visual_reviewer-dm02",
+      "image_capable": true,
+      "independent_of_producer": true,
+      "inspected_actual_pixels": true,
+      "reading_size": "ACTUAL_READING_SIZE"
+    },
+    "schema_version": "1.0",
+    "setting_reference_promoted": false,
+    "unit_id": "page-8619f3db280abbfd867eefe4--p21-panel-01"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

@@ -1,0 +1,56 @@
+{
+  "approval_type": "PRODUCTION_CAMPAIGN",
+  "approver": {
+    "authority": [
+      "PRIVATE_INTERNAL_VISUAL_TESTING"
+    ],
+    "id": "human-user-current-session-dm02-visual-proof",
+    "identity_claim": "The human user directly authorized exactly four private DM02 visual-proof operations in the current Codex thread.",
+    "signature_claimed": false
+  },
+  "conditions": [
+    "BUILT_IN_CODEX_IMAGE_TOOL_ONLY",
+    "EXACT_REFERENCE_RECEIPTS_REQUIRED",
+    "FOUR_OPERATIONS_TOTAL_CEILING",
+    "INCLUDED_ALLOWANCE_FIRST",
+    "INDEPENDENT_ACTUAL_PIXEL_REVIEW_REQUIRED",
+    "NO_PURCHASED_CREDIT_CONSUMPTION_INTENDED",
+    "NO_SEPARATELY_BILLED_API_OR_EXTERNAL_PROVIDER",
+    "ONE_OPERATION_PER_UNIT_NO_AUTOMATIC_RETRY",
+    "PRIVATE_ILLUSTRATION_CLEARANCE_EXPLICIT",
+    "PRIVATE_INTERNAL_ONLY",
+    "PUBLICATION_REMAINS_BLOCKED",
+    "REMAINING_THIRTY_ONE_INITIAL_OPERATIONS_NOT_AUTHORIZED"
+  ],
+  "created_at": "2026-10-22T12:06:40Z",
+  "creator": {
+    "id": "dm02-visual-proof-director"
+  },
+  "decision": "PASS",
+  "edition_id": "pargiter-1904",
+  "evidence_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+  "evidence_refs": [
+    "0465f0111d3fac1729014bb95ac5247e417aaf3429672ebc5f69e79f18fdac1e",
+    "3983a90dc72dedcc8510290357dccdfc3d562b2d622b3a09680fc19f38745653",
+    "69f90da6f42b70ee277fb77d70a07ecfc8d244246c86bf3f02660f075b7f22f5"
+  ],
+  "expires_at": null,
+  "id": "approval-596c63278bfe668f490c86ab",
+  "inheritance_allowed": false,
+  "invalidators": [
+    "campaign_hash",
+    "cost_policy",
+    "provider",
+    "reference_hash",
+    "unit_prompt_hash"
+  ],
+  "schema_version": "1.0",
+  "scope": {
+    "id": "DM02",
+    "type": "book"
+  },
+  "source_scope": "dm-source",
+  "subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+  "subject_type": "PRODUCTION_CAMPAIGN",
+  "tradition_id": "devi-mahatmyam"
+}

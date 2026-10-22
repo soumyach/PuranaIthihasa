@@ -1,0 +1,93 @@
+{
+  "book_id": "DM02",
+  "content_hash": "6129478109bc4bac6315abafeb565797a2051e9a85bcdacc9e763fe7ed028aa3",
+  "id": "visual-proof-image-receipts/p11-panel-01-3f12341965a8b42c4c2f7f2b",
+  "kind": "visual-proof-image-receipts/p11-panel-01",
+  "parent_hash": null,
+  "payload": {
+    "book_id": "DM02",
+    "campaign_id": "dm02-visual-proof-campaign-01",
+    "campaign_subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+    "character_consistency_certified": false,
+    "generation_request_record_hash": "c928bb8a7b99479d822ff41d223e5563031d4e61c8c6c1631a52c6ecdaba83a2",
+    "image": {
+      "aspect_ratio": "3:4",
+      "bytes": 3244393,
+      "format": "PNG",
+      "height": 1448,
+      "integrity": "PASS_CRC_AND_PIXEL_STREAM",
+      "path": "books/DM02/visual-proof-campaign/images/p11-panel-01/v0001.png",
+      "readable": true,
+      "sha256": "aa2104618b9f4395c1f62cdba279974f5be3a38b4ff78242182cc9d13438fa6c",
+      "width": 1086
+    },
+    "imported_at": "2026-10-22T12:13:45Z",
+    "operation": "generate",
+    "page_id": "page-b85332e92940926f67e6dd9d",
+    "page_number": 11,
+    "panel_id": "p11-panel-01",
+    "producer_ids": [
+      "codex-root-image-producer-dm02-visual-proof"
+    ],
+    "provider": {
+      "actual_incremental_usd": "UNKNOWN_NOT_EXPOSED",
+      "api_key_supplied": false,
+      "automatic_credit_purchase_requested": false,
+      "campaign_subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+      "external_provider_authorization_requested": false,
+      "included_allowance_policy": "CURRENT_INCLUDED_ALLOWANCE_FIRST",
+      "operation": "generate",
+      "operation_sequence": 2,
+      "output_height": 1448,
+      "output_path": "books/DM02/visual-proof-campaign/images/p11-panel-01/v0001.png",
+      "output_sha256": "aa2104618b9f4395c1f62cdba279974f5be3a38b4ff78242182cc9d13438fa6c",
+      "output_width": 1086,
+      "page_id": "page-b85332e92940926f67e6dd9d",
+      "paid_billing_requested": false,
+      "panel_id": "p11-panel-01",
+      "producer": {
+        "host_session_only": true,
+        "id": "codex-root-image-producer-dm02-visual-proof"
+      },
+      "provider_id": "codex-built-in-image-gen",
+      "provider_interface": "image_gen.imagegen",
+      "purchased_credit_consumption": "NOT_REPORTED_NO_BALANCE",
+      "request_hash": "2eb9e2b87a2998cdddd2af9c04469d90dc9c0f01d2f0e67c18abc91b35628cab",
+      "retry": false,
+      "schema_version": "1.0",
+      "source_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-f3d6abf0-77fe-42b3-99b6-22d098fca565.png",
+      "submitted_prompt": "Create one immersive portrait 3:4 illustration for DM02 p11-panel-01, without any page border or text. On the unchanged cosmic flood, sleeping Vishnu remains supported above the waters by Shesha while Brahma remains seated on the lotus and Madhu and Kaitabha remain visibly separate and nearby. Render one exact, source-grounded withdrawal event: six distinct, modest, non-anatomical streams of radiance leave Vishnu's eyes, mouth, nose, arms, heart and breast, then gather as Yoganidra/Mahamaya, a separate dignified radiant presence appearing before Brahma. Make all six named locus groups visually readable without labels, cutaway anatomy, a seventh locus, or any suggestion of permanent bodily residence. Yoganidra has a restrained indigo-and-warm-gold presence with source-neutral anatomy, no fixed conventional arm count, no halo and no weapon array. Keep Shesha's exact hood count unspecified and unobtrusive. Reserve the complete upper 18 percent as quiet negative space for later editable lettering. REFERENCE A supplies only premium devotional painterly finish and cinematic depth. REFERENCE B supplies only the clarity and scale of a divine reveal; copy none of its Kali/Chamunda identity, skulls, tongue, weapons, army, flags, gore, text, frame or plot. No embedded lettering, balloons, watermark, modern objects, Western fantasy armor or invented divine symbols.",
+      "submitted_prompt_sha256": "da678c1bfe4da99f4f00a7925b04329a22e62deb009f7f380a547364e6462163",
+      "submitted_references": [
+        {
+          "content_transfer": "FORBIDDEN",
+          "input_index": 1,
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "reference_id": "kgs-satya-p01",
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "content_transfer": "FORBIDDEN",
+          "input_index": 2,
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+          "reference_id": "kgs-dm08-p12",
+          "role": "B_PAGE_PANEL_COMPOSITION",
+          "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+        }
+      ],
+      "unavailable_reference_roles": [
+        "C_APPROVED_CHARACTER_REFERENCE",
+        "D_APPROVED_SETTING_REFERENCE"
+      ],
+      "unit_id": "page-b85332e92940926f67e6dd9d--p11-panel-01"
+    },
+    "publication_eligible": false,
+    "request_hash": "2eb9e2b87a2998cdddd2af9c04469d90dc9c0f01d2f0e67c18abc91b35628cab",
+    "schema_version": "1.0",
+    "status": "GENERATED_AWAITING_INDEPENDENT_VISUAL_REVIEW",
+    "unit_id": "page-b85332e92940926f67e6dd9d--p11-panel-01"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}
