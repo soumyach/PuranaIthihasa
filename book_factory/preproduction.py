@@ -65,7 +65,7 @@ def _safe_region_findings(regions, owner):
 
 
 def validate_storyboard(storyboard, required_event_ids, manuscript, character_bible, location_bible,
-                        expected_manuscript_hash=None):
+                        expected_manuscript_hash=None, required_moment_ids=None):
     findings = []
     findings.extend(_missing(storyboard, (
         "schema_version", "book_id", "version", "manuscript_hash", "canvas", "pages",
@@ -77,8 +77,9 @@ def validate_storyboard(storyboard, required_event_ids, manuscript, character_bi
         findings.append({"code": "STORYBOARD_MANUSCRIPT_HASH_MISMATCH"})
     if set(storyboard.get("text_channels", [])) != TEXT_CHANNELS:
         findings.append({"code": "TEXT_CHANNEL_CONTRACT_INCOMPLETE", "required": sorted(TEXT_CHANNELS)})
+    required_moments = set(REQUIRED_MOMENTS if required_moment_ids is None else required_moment_ids)
     moment_ids = [item.get("id") for item in storyboard.get("required_moments", [])]
-    missing_moments = sorted(REQUIRED_MOMENTS - set(moment_ids))
+    missing_moments = sorted(required_moments - set(moment_ids))
     if missing_moments:
         findings.append({"code": "REQUIRED_MOMENTS_MISSING", "moment_ids": missing_moments})
 
@@ -202,7 +203,7 @@ def validate_storyboard(storyboard, required_event_ids, manuscript, character_bi
     extra_events = sorted(covered_events - set(required_event_ids))
     if extra_events:
         findings.append({"code": "STORYBOARD_USES_UNLOCKED_EVENTS", "event_ids": extra_events})
-    missing_moment_placements = sorted(REQUIRED_MOMENTS - covered_moments)
+    missing_moment_placements = sorted(required_moments - covered_moments)
     if missing_moment_placements:
         findings.append({"code": "REQUIRED_MOMENTS_NOT_PLACED", "moment_ids": missing_moment_placements})
     if full_page_count < 1:
@@ -299,7 +300,8 @@ def validate_proof_specs(package):
     return report("PROOF_SPECS", "FIX" if findings else "PASS", findings, package.get("book_id"))
 
 
-def validate_preproduction_package(package, required_event_ids, manuscript, expected_manuscript_hash=None):
+def validate_preproduction_package(package, required_event_ids, manuscript, expected_manuscript_hash=None,
+                                   required_moment_ids=None):
     findings = []
     required = ("character_bible", "location_bible", "storyboard", "typography", "proof_package")
     findings.extend(_missing(package, required, "PREPRODUCTION_COMPONENT_MISSING", package.get("book_id")))
@@ -313,6 +315,7 @@ def validate_preproduction_package(package, required_event_ids, manuscript, expe
     storyboard = validate_storyboard(
         package["storyboard"], required_event_ids, manuscript,
         package["character_bible"], package["location_bible"], expected_manuscript_hash,
+        required_moment_ids,
     )
     typography = validate_typography(package["typography"])
     proofs = validate_proof_specs(package["proof_package"])

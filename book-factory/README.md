@@ -74,6 +74,7 @@ From the repository root, use the checked-in launcher:
 ./factory prepare-review-handoff --book-id DM04
 ./factory import-review-handoff --book-id DM04 --handoff PATH --response PATH
 ./factory manuscript-status --book-id DM04
+./factory prepare-complete-book-image-campaign --book-id DM02 --usage-observation PATH
 ./factory image-capabilities
 ./factory visual-gold-standard --require-source-assets
 ./factory prepare-proof-recovery --book-id DM04
@@ -112,6 +113,8 @@ The synthetic command path is explicit and never changes the authoritative catal
 ```
 
 All commands are repository-local and make no paid provider calls under the checked-in zero-spend policy. Production `produce-next`, `produce-book` and `resume-book` stop at the first unmet execution boundary and persist its handoff; `--dry-run` selects without mutation. `source-dossier` writes only with explicit `--write`; otherwise it and `story-packet` are read-only. The handoff commands prepare and import exact JSON files; the repository does not pretend that it can spawn a Codex agent programmatically. The active Codex session performs that orchestration and records a session-scoped, non-cryptographic execution attestation.
+
+`prepare-complete-book-image-campaign` derives one visual unit per storyboard panel, binds the immutable preproduction package and a read-only Codex usage observation, proposes the existing two-attempt ceiling without authorizing it, and stops at `AWAITING_CAMPAIGN_AUTHORIZATION`. It never creates an approval or invokes an image provider.
 
 ## PR9 execution and quality boundaries
 

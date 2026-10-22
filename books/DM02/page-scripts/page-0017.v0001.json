@@ -1,0 +1,238 @@
+{
+  "character_ids": [
+    "dm-vishnu",
+    "dm-madhu",
+    "dm-kaitabha"
+  ],
+  "continuity_in": "after-page-16",
+  "continuity_out": "after-page-17",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-vishnu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-madhu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-kaitabha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-006"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "TWO_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p17-narration-a",
+      "placement": "caption-safe-region",
+      "text": "Madhu drew back."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p17-dialogue-madhu",
+      "placement": "speaker-anchored-balloon",
+      "speaker_id": "dm-madhu",
+      "text": "Ask a boon of us."
+    },
+    {
+      "channel": "NARRATION",
+      "id": "p17-narration-b",
+      "placement": "caption-safe-region",
+      "text": "Kaitabha stood beside him."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p17-dialogue-kaitabha",
+      "placement": "speaker-anchored-balloon",
+      "speaker_id": "dm-kaitabha",
+      "text": "Yes. Choose what we shall give."
+    },
+    {
+      "channel": "NARRATION",
+      "id": "p17-narration-c",
+      "placement": "caption-safe-region",
+      "text": "After an age of combat, the strangest moment in the battle was not another blow. It was the offer made by the two who had come as enemies.\n\nThey had become the boon-givers.\n\nVishnu answered them."
+    }
+  ],
+  "location_id": "dm02-flooded-combat-expanse",
+  "moment_ids": [
+    "demons_offer_unusual_boon"
+  ],
+  "narrative_beats": [
+    "Madhu drew back.",
+    "Kaitabha stood beside him.",
+    "After an age of combat, the strangest moment in the battle was not another blow. It was the offer made by the two who had come as enemies.",
+    "They had become the boon-givers.",
+    "Vishnu answered them."
+  ],
+  "page_id": "page-e738c476c98efb28ec475cdd",
+  "page_number": 17,
+  "panel_count": 2,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "composition": "The three combatants stand apart after the long struggle; Madhu and Kaiṭabha occupy equal boon-giver positions without a victory throne or invented ritual.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p17-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "The three combatants stand apart after the long struggle; Madhu and Kaiṭabha occupy equal boon-giver positions without a victory throne or invented ritual.",
+        "shot_scale": "wide"
+      },
+      "location_id": "dm02-flooded-combat-expanse",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p17-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "The three combatants stand apart after the long struggle; Madhu and Kaiṭabha occupy equal boon-giver positions without a victory throne or invented ritual."
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "composition": "Quiet reaction hold on Viṣṇu receiving the joint offer; no thought text, weapon or added motive.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p17-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Quiet reaction hold on Viṣṇu receiving the joint offer; no thought text, weapon or added motive.",
+        "shot_scale": "medium"
+      },
+      "location_id": "dm02-flooded-combat-expanse",
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p17-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Quiet reaction hold on Viṣṇu receiving the joint offer; no thought text, weapon or added motive."
+    }
+  ],
+  "reading_order": [
+    "p17-panel-01",
+    "p17-panel-02"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p17-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-006-c",
+    "claim-006-d"
+  ],
+  "title": "The Unusual Offer",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation",
+    "no unsupported iconography",
+    "no unsupported body-locus claim"
+  ],
+  "version": 1,
+  "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+}

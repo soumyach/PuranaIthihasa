@@ -1,0 +1,203 @@
+{
+  "character_ids": [
+    "dm-medhas",
+    "dm-suratha",
+    "dm-samadhi"
+  ],
+  "continuity_in": "after-page-01",
+  "continuity_out": "after-page-02",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-medhas",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-suratha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-samadhi",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-004"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "TWO_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p02-narration",
+      "placement": "caption-safe-region",
+      "text": "Then his story moved beyond kingdoms, roads and remembered seasons, to the dissolution of a world."
+    }
+  ],
+  "location_id": "dm02-forest-hermitage-frame",
+  "moment_ids": [],
+  "narrative_beats": [
+    "Then his story moved beyond kingdoms, roads and remembered seasons, to the dissolution of a world."
+  ],
+  "page_id": "page-88792a15dcd25b30d3982d7c",
+  "page_number": 2,
+  "panel_count": 2,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-medhas"
+      ],
+      "composition": "Close view of Medhas's open hand above the low fire; smoke and navy negative space begin the transition without becoming a supernatural source claim.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p02-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Close view of Medhas's open hand above the low fire; smoke and navy negative space begin the transition without becoming a supernatural source claim.",
+        "shot_scale": "close"
+      },
+      "location_id": "dm02-forest-hermitage-frame",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p02-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Close view of Medhas's open hand above the low fire; smoke and navy negative space begin the transition without becoming a supernatural source claim."
+    },
+    {
+      "character_ids": [
+        "dm-medhas",
+        "dm-suratha",
+        "dm-samadhi"
+      ],
+      "composition": "Wide frame of the three listeners reduced to silhouettes as the dark upper field opens toward the dissolution sequence; no invented listener reaction.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p02-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Wide frame of the three listeners reduced to silhouettes as the dark upper field opens toward the dissolution sequence; no invented listener reaction.",
+        "shot_scale": "wide"
+      },
+      "location_id": "dm02-forest-hermitage-frame",
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p02-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Wide frame of the three listeners reduced to silhouettes as the dark upper field opens toward the dissolution sequence; no invented listener reaction."
+    }
+  ],
+  "reading_order": [
+    "p02-panel-01",
+    "p02-panel-02"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p02-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-004-d"
+  ],
+  "title": "Beyond Remembered Seasons",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation",
+    "no unsupported iconography",
+    "no unsupported body-locus claim"
+  ],
+  "version": 1,
+  "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+}

@@ -1,0 +1,308 @@
+{
+  "character_ids": [
+    "dm-vishnu",
+    "dm-shesha",
+    "dm-brahma",
+    "dm-yoganidra",
+    "dm-madhu",
+    "dm-kaitabha"
+  ],
+  "continuity_in": "after-page-06",
+  "continuity_out": "after-page-07",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-vishnu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-shesha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "manifestation_id": "dm-shesha-supporting-form",
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-brahma",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-yoganidra",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "manifestation_id": "dm-yoganidra-cosmic-sleep",
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-madhu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-kaitabha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-004"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "THREE_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p07-narration-a",
+      "placement": "caption-safe-region",
+      "text": "Brahma looked from the approaching figures to Vishnu. The preserver still rested upon Shesha, held in the depth of Yoganidra. No call from the lotus had yet broken that sleep.\n\nMadhu and Kaitabha came nearer."
+    },
+    {
+      "channel": "NARRATION",
+      "id": "p07-narration-b",
+      "placement": "caption-safe-region",
+      "text": "There was nowhere for Brahma to flee. Around the lotus lay the same endless flood. Below it slept the one who could face the threat. Yet the sleep upon Vishnu was itself divine power, not an ordinary weariness that Brahma could simply shake away.\n\nThe danger and the answer stood almost together: the threatening Asuras upon the waters, Vishnu beneath the lotus, and the power of sleep holding him still."
+    }
+  ],
+  "location_id": "dm02-brahma-lotus",
+  "moment_ids": [],
+  "narrative_beats": [
+    "Brahma looked from the approaching figures to Vishnu. The preserver still rested upon Shesha, held in the depth of Yoganidra. No call from the lotus had yet broken that sleep.",
+    "Madhu and Kaitabha came nearer.",
+    "There was nowhere for Brahma to flee. Around the lotus lay the same endless flood. Below it slept the one who could face the threat. Yet the sleep upon Vishnu was itself divine power, not an ordinary weariness that Brahma could simply shake away.",
+    "The danger and the answer stood almost together: the threatening Asuras upon the waters, Vishnu beneath the lotus, and the power of sleep holding him still."
+  ],
+  "page_id": "page-2eff3830302e6bb1ce973d73",
+  "page_number": 7,
+  "panel_count": 3,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-shesha",
+        "dm-brahma",
+        "dm-yoganidra",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "composition": "Brahmā's sightline connects the approaching pair to sleeping Viṣṇu below; keep lotus, sleepers and threat in one stable vertical geography.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p07-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Brahmā's sightline connects the approaching pair to sleeping Viṣṇu below; keep lotus, sleepers and threat in one stable vertical geography.",
+        "shot_scale": "wide"
+      },
+      "location_id": "dm02-brahma-lotus",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p07-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Brahmā's sightline connects the approaching pair to sleeping Viṣṇu below; keep lotus, sleepers and threat in one stable vertical geography."
+    },
+    {
+      "character_ids": [
+        "dm-madhu",
+        "dm-kaitabha",
+        "dm-brahma"
+      ],
+      "composition": "Tight panel on the narrowing water gap between the demons and lotus, with no invented weapon or attack contact.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p07-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Tight panel on the narrowing water gap between the demons and lotus, with no invented weapon or attack contact.",
+        "shot_scale": "medium"
+      },
+      "location_id": "dm02-brahma-lotus",
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p07-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Tight panel on the narrowing water gap between the demons and lotus, with no invented weapon or attack contact."
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-shesha",
+        "dm-brahma",
+        "dm-yoganidra",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "composition": "Wide three-level hold: demons on water, Viṣṇu on Śeṣa, Brahmā above; Yoganidrā remains a sleep field, not a body-locus figure.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p07-panel-03",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Wide three-level hold: demons on water, Viṣṇu on Śeṣa, Brahmā above; Yoganidrā remains a sleep field, not a body-locus figure.",
+        "shot_scale": "wide"
+      },
+      "location_id": "dm02-brahma-lotus",
+      "reading_order": 3,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p07-panel-03-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Wide three-level hold: demons on water, Viṣṇu on Śeṣa, Brahmā above; Yoganidrā remains a sleep field, not a body-locus figure."
+    }
+  ],
+  "reading_order": [
+    "p07-panel-01",
+    "p07-panel-02",
+    "p07-panel-03"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p07-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-004-b",
+    "claim-004-c",
+    "claim-004-d"
+  ],
+  "title": "Danger and Answer Together",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation",
+    "no unsupported iconography",
+    "no unsupported body-locus claim"
+  ],
+  "version": 1,
+  "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+}

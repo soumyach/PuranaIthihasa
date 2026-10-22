@@ -1,0 +1,730 @@
+{
+  "book_id": "DM02",
+  "content_hash": "b469d78e327da2b41082dfbb48ad51a5a98e47112eea311157b2fd7ab979a1f7",
+  "id": "character-bibles-15d00711033d45bf7b0632dc",
+  "kind": "character-bibles",
+  "parent_hash": null,
+  "payload": {
+    "book_id": "DM02",
+    "entries": [
+      {
+        "allowed_artistic_choices": [
+          "restrained textile pattern",
+          "camera angle",
+          "source-neutral expression",
+          "source-neutral background detail"
+        ],
+        "arm_count_policy": "The bounded account says he fights with his arms but does not fix their count. Foreground only the anatomically coherent arms required by the scene; never assert a conventional four-arm count as source fact.",
+        "authoritative_source_record": {
+          "source_facts": "At dissolution Viṣṇu sleeps on Śeṣa under Yoganidrā, awakens after her withdrawal, fights Madhu and Kaiṭabha with his arms for five thousand years, accepts their condition and defeats them with his discus."
+        },
+        "authorized_weapon_ids": [
+          "dm-discus"
+        ],
+        "clothing_policy": "Classical, modest, movement-readable clothing is a production proposal; exact garments and textiles remain UNSPECIFIED unless stated in the source record.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "spatial relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-004",
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006",
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-007"
+        ],
+        "forbidden_iconographic_assumptions": [
+          "treating an unspecified detail as textual fact",
+          "borrowing attributes from another deity or tradition",
+          "adding genealogy, boon history or motive absent from the bounded evidence"
+        ],
+        "id": "dm-vishnu",
+        "identity": {
+          "aliases": [
+            "Vishnu"
+          ],
+          "group": "deity",
+          "id": "dm-vishnu",
+          "label": "Viṣṇu"
+        },
+        "manifestation_rules": [],
+        "name": "Viṣṇu",
+        "ornament_policy": "No ornament is mandatory unless source-given; proposal-only ornaments must remain restrained, consistent and free of borrowed deity attributes.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity",
+          "unsupported body-locus claim"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "midnight-blue, antique-gold and warm-ivory value structure; calm sleeping profile, alert combat silhouette and the same face across both states",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable scene-readable identity",
+          "source-bounded role",
+          "no attributes presented as textual fact when the source is silent"
+        ],
+        "silhouette_policy": "Maintain a unique, readable silhouette without relying on unsupported sacred attributes.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact crown",
+          "exact arm count",
+          "exact garments",
+          "exact ornaments",
+          "exact pose at the unresolved defeat locus"
+        ],
+        "visual_constants": {
+          "palette_family": "midnight-blue, antique-gold and warm-ivory value structure; calm sleeping profile, alert combat silhouette and the same face across both states",
+          "recognition_rule": "Preserve the approved proposal consistently while keeping every source-silent feature visibly non-authoritative."
+        }
+      },
+      {
+        "allowed_artistic_choices": [
+          "restrained textile pattern",
+          "camera angle",
+          "source-neutral expression",
+          "source-neutral background detail"
+        ],
+        "arm_count_policy": "Exact arm, head and face counts are UNSPECIFIED in the bounded evidence; do not import a multi-head or multi-arm convention without separate approval.",
+        "authoritative_source_record": {
+          "source_facts": "Brahmā sits upon the lotus above the flood, is threatened by Madhu and Kaiṭabha, praises Yoganidrā and asks her to delude them and awaken Viṣṇu."
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing is a production proposal; exact garments and textiles remain UNSPECIFIED unless stated in the source record.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "spatial relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-004",
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn",
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006"
+        ],
+        "forbidden_iconographic_assumptions": [
+          "treating an unspecified detail as textual fact",
+          "borrowing attributes from another deity or tradition",
+          "adding genealogy, boon history or motive absent from the bounded evidence"
+        ],
+        "id": "dm-brahma",
+        "identity": {
+          "aliases": [
+            "Brahma"
+          ],
+          "group": "deity",
+          "id": "dm-brahma",
+          "label": "Brahmā"
+        },
+        "manifestation_rules": [],
+        "name": "Brahmā",
+        "ornament_policy": "No ornament is mandatory unless source-given; proposal-only ornaments must remain restrained, consistent and free of borrowed deity attributes.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity",
+          "unsupported body-locus claim"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "upright lotus-seated silhouette in ivory, pale gold and restrained crimson; attention directed toward Yoganidrā rather than outward spectacle",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable scene-readable identity",
+          "source-bounded role",
+          "no attributes presented as textual fact when the source is silent"
+        ],
+        "silhouette_policy": "Maintain a unique, readable silhouette without relying on unsupported sacred attributes.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact age",
+          "exact head or face count",
+          "exact arm count",
+          "exact crown",
+          "exact garments",
+          "exact ornaments"
+        ],
+        "visual_constants": {
+          "palette_family": "upright lotus-seated silhouette in ivory, pale gold and restrained crimson; attention directed toward Yoganidrā rather than outward spectacle",
+          "recognition_rule": "Preserve the approved proposal consistently while keeping every source-silent feature visibly non-authoritative."
+        }
+      },
+      {
+        "allowed_artistic_choices": [
+          "restrained textile pattern",
+          "camera angle",
+          "source-neutral expression",
+          "source-neutral background detail"
+        ],
+        "arm_count_policy": "Humanlike combat anatomy only; exact arm count is UNSPECIFIED and no extra limbs may be invented.",
+        "authoritative_source_record": {
+          "source_facts": "Madhu arises with Kaiṭabha from Viṣṇu's ear-region, threatens Brahmā, fights Viṣṇu with his companion, jointly offers a boon, states part of the condition and is defeated by the discus."
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing is a production proposal; exact garments and textiles remain UNSPECIFIED unless stated in the source record.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "spatial relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-004",
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006",
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-007"
+        ],
+        "forbidden_iconographic_assumptions": [
+          "treating an unspecified detail as textual fact",
+          "borrowing attributes from another deity or tradition",
+          "adding genealogy, boon history or motive absent from the bounded evidence"
+        ],
+        "id": "dm-madhu",
+        "identity": {
+          "aliases": [
+            "Madhu"
+          ],
+          "group": "asura",
+          "id": "dm-madhu",
+          "label": "Madhu"
+        },
+        "manifestation_rules": [],
+        "name": "Madhu",
+        "ornament_policy": "No ornament is mandatory unless source-given; proposal-only ornaments must remain restrained, consistent and free of borrowed deity attributes.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity",
+          "unsupported body-locus claim"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "broad asymmetrical oxblood-and-charcoal silhouette with a low forward center of gravity; visually distinct from Kaiṭabha without invented genealogy or armor lore",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable scene-readable identity",
+          "source-bounded role",
+          "no attributes presented as textual fact when the source is silent"
+        ],
+        "silhouette_policy": "Maintain a unique, readable silhouette without relying on unsupported sacred attributes.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact anatomy beyond humanlike combat readability",
+          "exact garments",
+          "exact ornaments",
+          "exact weapon",
+          "motive beyond the stated threat"
+        ],
+        "visual_constants": {
+          "palette_family": "broad asymmetrical oxblood-and-charcoal silhouette with a low forward center of gravity; visually distinct from Kaiṭabha without invented genealogy or armor lore",
+          "recognition_rule": "Preserve the approved proposal consistently while keeping every source-silent feature visibly non-authoritative."
+        }
+      },
+      {
+        "allowed_artistic_choices": [
+          "restrained textile pattern",
+          "camera angle",
+          "source-neutral expression",
+          "source-neutral background detail"
+        ],
+        "arm_count_policy": "Humanlike combat anatomy only; exact arm count is UNSPECIFIED and no extra limbs may be invented.",
+        "authoritative_source_record": {
+          "source_facts": "Kaiṭabha arises with Madhu from Viṣṇu's ear-region, threatens Brahmā, fights Viṣṇu with his companion, jointly offers a boon, states part of the condition and is defeated by the discus."
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing is a production proposal; exact garments and textiles remain UNSPECIFIED unless stated in the source record.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "spatial relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-004",
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006",
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-007"
+        ],
+        "forbidden_iconographic_assumptions": [
+          "treating an unspecified detail as textual fact",
+          "borrowing attributes from another deity or tradition",
+          "adding genealogy, boon history or motive absent from the bounded evidence"
+        ],
+        "id": "dm-kaitabha",
+        "identity": {
+          "aliases": [
+            "Kaitabha",
+            "Kaiṭabha"
+          ],
+          "group": "asura",
+          "id": "dm-kaitabha",
+          "label": "Kaiṭabha"
+        },
+        "manifestation_rules": [],
+        "name": "Kaiṭabha",
+        "ornament_policy": "No ornament is mandatory unless source-given; proposal-only ornaments must remain restrained, consistent and free of borrowed deity attributes.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity",
+          "unsupported body-locus claim"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "taller angular charcoal-and-deep-crimson silhouette with a distinct shoulder line; paired with but never merged into Madhu",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable scene-readable identity",
+          "source-bounded role",
+          "no attributes presented as textual fact when the source is silent"
+        ],
+        "silhouette_policy": "Maintain a unique, readable silhouette without relying on unsupported sacred attributes.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact anatomy beyond humanlike combat readability",
+          "exact garments",
+          "exact ornaments",
+          "exact weapon",
+          "motive beyond the stated threat"
+        ],
+        "visual_constants": {
+          "palette_family": "taller angular charcoal-and-deep-crimson silhouette with a distinct shoulder line; paired with but never merged into Madhu",
+          "recognition_rule": "Preserve the approved proposal consistently while keeping every source-silent feature visibly non-authoritative."
+        }
+      },
+      {
+        "allowed_artistic_choices": [
+          "restrained textile pattern",
+          "camera angle",
+          "source-neutral expression",
+          "source-neutral background detail"
+        ],
+        "arm_count_policy": "Exact arm count is UNSPECIFIED; her appeared form must not be reduced to or expanded into a conventional count presented as source fact.",
+        "authoritative_source_record": {
+          "source_facts": "Yoganidrā is the divine power of cosmic sleep holding Viṣṇu. Brahmā praises her in attributed language. She withdraws from Viṣṇu's eyes, mouth, nose, arms, heart and breast, appears before Brahmā, and deludes Madhu and Kaiṭabha."
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing is a production proposal; exact garments and textiles remain UNSPECIFIED unless stated in the source record.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "spatial relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-004",
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn",
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006"
+        ],
+        "forbidden_iconographic_assumptions": [
+          "treating an unspecified detail as textual fact",
+          "borrowing attributes from another deity or tradition",
+          "adding genealogy, boon history or motive absent from the bounded evidence"
+        ],
+        "id": "dm-yoganidra",
+        "identity": {
+          "aliases": [
+            "Yoganidra",
+            "Mahamaya",
+            "Mahāmāyā"
+          ],
+          "group": "devi-form",
+          "id": "dm-yoganidra",
+          "label": "Yoganidrā / Mahāmāyā"
+        },
+        "manifestation_rules": [
+          {
+            "manifestation_id": "dm-yoganidra-cosmic-sleep",
+            "name": "cosmic sleep power",
+            "required_attributes": [
+              "holds Viṣṇu in profound sleep",
+              "non-anatomical sleep field",
+              "no claim of residence at a body locus"
+            ],
+            "source_scope": "dm-source"
+          },
+          {
+            "manifestation_id": "dm-yoganidra-before-brahma",
+            "name": "appeared before Brahmā",
+            "required_attributes": [
+              "appears after withdrawal from all six source-named locus groups",
+              "form details remain source-silent"
+            ],
+            "source_scope": "dm-source"
+          }
+        ],
+        "name": "Yoganidrā / Mahāmāyā",
+        "ornament_policy": "No ornament is mandatory unless source-given; proposal-only ornaments must remain restrained, consistent and free of borrowed deity attributes.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity",
+          "unsupported body-locus claim"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "a restrained indigo-and-warm-gold sleep field before withdrawal and a dignified source-neutral radiant presence after withdrawal; no fixed halo, weapon array or unsupported bodily residence",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable scene-readable identity",
+          "source-bounded role",
+          "no attributes presented as textual fact when the source is silent"
+        ],
+        "silhouette_policy": "Maintain a unique, readable silhouette without relying on unsupported sacred attributes.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact face",
+          "exact arm count",
+          "exact clothing",
+          "exact ornaments",
+          "exact weapons",
+          "exact pre-withdrawal body or location within Viṣṇu"
+        ],
+        "visual_constants": {
+          "palette_family": "a restrained indigo-and-warm-gold sleep field before withdrawal and a dignified source-neutral radiant presence after withdrawal; no fixed halo, weapon array or unsupported bodily residence",
+          "recognition_rule": "Preserve the approved proposal consistently while keeping every source-silent feature visibly non-authoritative."
+        }
+      },
+      {
+        "allowed_artistic_choices": [
+          "restrained textile pattern",
+          "camera angle",
+          "source-neutral expression",
+          "source-neutral background detail"
+        ],
+        "arm_count_policy": "Nonhuman supporting form is proposed for visual readability; exact limb or hood count is UNSPECIFIED and must not be presented as source fact.",
+        "authoritative_source_record": {
+          "source_facts": "Śeṣa supports the sleeping Viṣṇu above the flood at cosmic dissolution."
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing is a production proposal; exact garments and textiles remain UNSPECIFIED unless stated in the source record.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "spatial relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-004"
+        ],
+        "forbidden_iconographic_assumptions": [
+          "treating an unspecified detail as textual fact",
+          "borrowing attributes from another deity or tradition",
+          "adding genealogy, boon history or motive absent from the bounded evidence"
+        ],
+        "id": "dm-shesha",
+        "identity": {
+          "aliases": [
+            "Shesha",
+            "Śeṣa"
+          ],
+          "group": "deity",
+          "id": "dm-shesha",
+          "label": "Śeṣa"
+        },
+        "manifestation_rules": [
+          {
+            "manifestation_id": "dm-shesha-supporting-form",
+            "name": "support beneath sleeping Viṣṇu",
+            "required_attributes": [
+              "clearly supports Viṣṇu",
+              "remains distinct from the cosmic ocean"
+            ],
+            "source_scope": "dm-source"
+          }
+        ],
+        "name": "Śeṣa",
+        "ornament_policy": "No ornament is mandatory unless source-given; proposal-only ornaments must remain restrained, consistent and free of borrowed deity attributes.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity",
+          "unsupported body-locus claim"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "a monumental coiled supporting silhouette in charcoal, peacock-blue and antique gold; any serpentine anatomy or hood treatment remains an explicit proposal",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable scene-readable identity",
+          "source-bounded role",
+          "no attributes presented as textual fact when the source is silent"
+        ],
+        "silhouette_policy": "Maintain a unique, readable silhouette without relying on unsupported sacred attributes.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact body form",
+          "exact scale",
+          "exact hood count",
+          "exact color",
+          "exact ornaments",
+          "speech or motive"
+        ],
+        "visual_constants": {
+          "palette_family": "a monumental coiled supporting silhouette in charcoal, peacock-blue and antique gold; any serpentine anatomy or hood treatment remains an explicit proposal",
+          "recognition_rule": "Preserve the approved proposal consistently while keeping every source-silent feature visibly non-authoritative."
+        }
+      },
+      {
+        "allowed_artistic_choices": [
+          "restrained textile pattern",
+          "camera angle",
+          "source-neutral expression",
+          "source-neutral background detail"
+        ],
+        "arm_count_policy": "Exact arm count is UNSPECIFIED in the bounded evidence; depict only scene-required anatomy and do not import a conventional count as source fact.",
+        "authoritative_source_record": {
+          "source_facts": "Medhas narrates the bounded primordial account and distinguishes eternal Devī from her purposeful appearances."
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing is a production proposal; exact garments and textiles remain UNSPECIFIED unless stated in the source record.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "spatial relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-001",
+          "dm-evidence-003",
+          "dm-evidence-004"
+        ],
+        "forbidden_iconographic_assumptions": [
+          "treating an unspecified detail as textual fact",
+          "borrowing attributes from another deity or tradition",
+          "adding genealogy, boon history or motive absent from the bounded evidence"
+        ],
+        "id": "dm-medhas",
+        "identity": {
+          "aliases": [
+            "Sage Medhas",
+            "Medhas"
+          ],
+          "group": "frame",
+          "id": "dm-medhas",
+          "label": "Medhas"
+        },
+        "manifestation_rules": [],
+        "name": "Medhas",
+        "ornament_policy": "No ornament is mandatory unless source-given; proposal-only ornaments must remain restrained, consistent and free of borrowed deity attributes.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity",
+          "unsupported body-locus claim"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "aged sage in bark-brown and warm ivory, composed seated silhouette and measured open-hand narration gesture",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable scene-readable identity",
+          "source-bounded role",
+          "no attributes presented as textual fact when the source is silent"
+        ],
+        "silhouette_policy": "Maintain a unique, readable silhouette without relying on unsupported sacred attributes.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact age presentation",
+          "exact garment weave",
+          "exact ornaments"
+        ],
+        "visual_constants": {
+          "palette_family": "aged sage in bark-brown and warm ivory, composed seated silhouette and measured open-hand narration gesture",
+          "recognition_rule": "Preserve the approved proposal consistently while keeping every source-silent feature visibly non-authoritative."
+        }
+      },
+      {
+        "allowed_artistic_choices": [
+          "restrained textile pattern",
+          "camera angle",
+          "source-neutral expression",
+          "source-neutral background detail"
+        ],
+        "arm_count_policy": "Exact arm count is UNSPECIFIED in the bounded evidence; depict only scene-required anatomy and do not import a conventional count as source fact.",
+        "authoritative_source_record": {
+          "source_facts": "Suratha may appear only as a listener in the permitted forest frame context; new reactions are literary adaptation, not source fact for this book."
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing is a production proposal; exact garments and textiles remain UNSPECIFIED unless stated in the source record.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "spatial relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-001",
+          "dm-evidence-002",
+          "dm-evidence-003"
+        ],
+        "forbidden_iconographic_assumptions": [
+          "treating an unspecified detail as textual fact",
+          "borrowing attributes from another deity or tradition",
+          "adding genealogy, boon history or motive absent from the bounded evidence"
+        ],
+        "id": "dm-suratha",
+        "identity": {
+          "aliases": [
+            "King Suratha",
+            "Suratha"
+          ],
+          "group": "frame",
+          "id": "dm-suratha",
+          "label": "Suratha"
+        },
+        "manifestation_rules": [],
+        "name": "Suratha",
+        "ornament_policy": "No ornament is mandatory unless source-given; proposal-only ornaments must remain restrained, consistent and free of borrowed deity attributes.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity",
+          "unsupported body-locus claim"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "travel-worn royal bearing, muted peacock-blue cloak and neutral attentive posture; no weapon",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable scene-readable identity",
+          "source-bounded role",
+          "no attributes presented as textual fact when the source is silent"
+        ],
+        "silhouette_policy": "Maintain a unique, readable silhouette without relying on unsupported sacred attributes.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact age",
+          "exact garment weave",
+          "exact crown or regalia",
+          "exact reaction"
+        ],
+        "visual_constants": {
+          "palette_family": "travel-worn royal bearing, muted peacock-blue cloak and neutral attentive posture; no weapon",
+          "recognition_rule": "Preserve the approved proposal consistently while keeping every source-silent feature visibly non-authoritative."
+        }
+      },
+      {
+        "allowed_artistic_choices": [
+          "restrained textile pattern",
+          "camera angle",
+          "source-neutral expression",
+          "source-neutral background detail"
+        ],
+        "arm_count_policy": "Exact arm count is UNSPECIFIED in the bounded evidence; depict only scene-required anatomy and do not import a conventional count as source fact.",
+        "authoritative_source_record": {
+          "source_facts": "Samādhi may appear only as a listener in the permitted forest frame context; new reactions are literary adaptation, not source fact for this book."
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing is a production proposal; exact garments and textiles remain UNSPECIFIED unless stated in the source record.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "spatial relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-001",
+          "dm-evidence-002",
+          "dm-evidence-003"
+        ],
+        "forbidden_iconographic_assumptions": [
+          "treating an unspecified detail as textual fact",
+          "borrowing attributes from another deity or tradition",
+          "adding genealogy, boon history or motive absent from the bounded evidence"
+        ],
+        "id": "dm-samadhi",
+        "identity": {
+          "aliases": [
+            "Samadhi",
+            "Samādhi"
+          ],
+          "group": "frame",
+          "id": "dm-samadhi",
+          "label": "Samādhi"
+        },
+        "manifestation_rules": [],
+        "name": "Samādhi",
+        "ornament_policy": "No ornament is mandatory unless source-given; proposal-only ornaments must remain restrained, consistent and free of borrowed deity attributes.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity",
+          "unsupported body-locus claim"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "plain earth-toned garments, open neutral listening posture and no status ornament or weapon",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable scene-readable identity",
+          "source-bounded role",
+          "no attributes presented as textual fact when the source is silent"
+        ],
+        "silhouette_policy": "Maintain a unique, readable silhouette without relying on unsupported sacred attributes.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact age",
+          "exact garment weave",
+          "exact ornaments",
+          "exact reaction"
+        ],
+        "visual_constants": {
+          "palette_family": "plain earth-toned garments, open neutral listening posture and no status ornament or weapon",
+          "recognition_rule": "Preserve the approved proposal consistently while keeping every source-silent feature visibly non-authoritative."
+        }
+      }
+    ],
+    "kind": "CHARACTER",
+    "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+    "schema_version": "1.0",
+    "source_and_proposal_separation": "Authoritative source records and production proposals use disjoint keys; source silence remains explicit in unspecified_fields.",
+    "version": 1
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

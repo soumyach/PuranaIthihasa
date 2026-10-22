@@ -131,6 +131,12 @@ def build_parser():
     import_preproduction.add_argument("--book-id", required=True)
     import_preproduction.add_argument("--handoff", required=True)
     import_preproduction.add_argument("--response", required=True)
+    complete_campaign = subparsers.add_parser(
+        "prepare-complete-book-image-campaign",
+        help="freeze a complete-book image scope and stop for exact authorization",
+    )
+    complete_campaign.add_argument("--book-id", required=True)
+    complete_campaign.add_argument("--usage-observation", required=True)
     subparsers.add_parser("image-capabilities", help="report discovered and authorized image backends")
     gold = subparsers.add_parser("visual-gold-standard", help="verify the curated actual-page visual benchmark")
     gold.add_argument("--require-source-assets", action="store_true", help="fail unless both exact local benchmark PDFs are present")
@@ -287,6 +293,8 @@ def run(args):
         return director.prepare_preproduction_handoff(args.book_id)
     if args.command == "import-preproduction-handoff":
         return director.import_preproduction_handoff(args.book_id, args.handoff, args.response)
+    if args.command == "prepare-complete-book-image-campaign":
+        return director.prepare_complete_book_image_campaign(args.book_id, args.usage_observation)
     if args.command == "image-capabilities":
         return director.image_capabilities()
     if args.command == "visual-gold-standard":

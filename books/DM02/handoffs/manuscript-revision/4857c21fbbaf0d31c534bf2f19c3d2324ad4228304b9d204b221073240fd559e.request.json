@@ -1,0 +1,3006 @@
+{
+  "book_id": "DM02",
+  "execution_boundary": {
+    "identity_assurance": "SESSION_ATTESTATION_ONLY_NOT_CRYPTOGRAPHIC",
+    "mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+    "orchestrated_by_current_codex_session": true,
+    "paid_api_calls_allowed": 0,
+    "programmatic_spawn_available_inside_repository": false
+  },
+  "handoff_hash": "4857c21fbbaf0d31c534bf2f19c3d2324ad4228304b9d204b221073240fd559e",
+  "id": "agent-handoff-c46c11a0c038bde3724fbab9",
+  "kind": "MANUSCRIPT_REVISION",
+  "locked_input_hashes": [
+    "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070",
+    "483cc82d41b142878778e107deabd090ec623ccf4a48410b28d80a3c95f1213e",
+    "601fc63f99cb9ad7d7feb14b45216c573568c4afe395f192e9d97fb83b211457",
+    "8b7dc126012186ada26df3b6acb16e46fcc72a600ad151de49f6aaf3c06d2c44",
+    "b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd",
+    "f3a02b5eebbe4b11035240f64ede32fcf889ff7b85f481dfe11b13744a0fc6b1"
+  ],
+  "request": {
+    "allowed_evidence_ids": [
+      "dm-evidence-004",
+      "dm-evidence-005",
+      "dm-evidence-006",
+      "dm-evidence-007",
+      "dm-sanskrit-evidence-006",
+      "dm-sanskrit-evidence-007",
+      "dm-supp-evidence-brahma-hymn"
+    ],
+    "audience": "family readers; exact age band requires editorial confirmation",
+    "book_id": "DM02",
+    "characters": [
+      {
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-evidence-010",
+          "dm-evidence-014",
+          "dm-evidence-016",
+          "dm-evidence-017",
+          "dm-evidence-018",
+          "dm-evidence-020",
+          "dm-evidence-021",
+          "dm-evidence-035",
+          "dm-evidence-039",
+          "dm-evidence-041",
+          "dm-evidence-043",
+          "dm-evidence-045",
+          "dm-evidence-048",
+          "dm-sanskrit-evidence-010",
+          "dm-sanskrit-evidence-016",
+          "dm-sanskrit-evidence-017",
+          "dm-sanskrit-evidence-018",
+          "dm-sanskrit-evidence-039",
+          "dm-sanskrit-evidence-041",
+          "dm-sanskrit-evidence-043",
+          "dm-sanskrit-evidence-045"
+        ],
+        "id": "dm-arrows",
+        "motivation": "UNSPECIFIED",
+        "name": "Arrows",
+        "source_scope": "dm-source",
+        "type": "WEAPON"
+      },
+      {
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-bhushundi",
+        "motivation": "UNSPECIFIED",
+        "name": "Bhuśuṇḍī, weapon of uncertain identification",
+        "source_scope": "dm-source",
+        "type": "WEAPON"
+      },
+      {
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-evidence-010",
+          "dm-evidence-022",
+          "dm-evidence-036",
+          "dm-evidence-044",
+          "dm-evidence-045",
+          "dm-evidence-048",
+          "dm-sanskrit-evidence-010",
+          "dm-sanskrit-evidence-036",
+          "dm-sanskrit-evidence-044",
+          "dm-sanskrit-evidence-045"
+        ],
+        "id": "dm-bow",
+        "motivation": "UNSPECIFIED",
+        "name": "Bow",
+        "source_scope": "dm-source",
+        "type": "WEAPON"
+      },
+      {
+        "evidence_ids": [
+          "dm-evidence-004",
+          "dm-evidence-005",
+          "dm-evidence-006",
+          "dm-evidence-008",
+          "dm-evidence-009",
+          "dm-evidence-010",
+          "dm-evidence-022",
+          "dm-evidence-027",
+          "dm-evidence-037",
+          "dm-evidence-059",
+          "dm-sanskrit-evidence-006",
+          "dm-sanskrit-evidence-008",
+          "dm-sanskrit-evidence-009",
+          "dm-sanskrit-evidence-010",
+          "dm-sanskrit-evidence-027",
+          "dm-sanskrit-evidence-037"
+        ],
+        "id": "dm-brahma",
+        "motivation": "UNSPECIFIED",
+        "name": "Brahmā",
+        "source_scope": "dm-source",
+        "type": "DEITY"
+      },
+      {
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-evidence-014",
+          "dm-evidence-018",
+          "dm-evidence-037",
+          "dm-evidence-040",
+          "dm-evidence-043",
+          "dm-evidence-045",
+          "dm-evidence-048",
+          "dm-sanskrit-evidence-018",
+          "dm-sanskrit-evidence-037",
+          "dm-sanskrit-evidence-040",
+          "dm-sanskrit-evidence-043",
+          "dm-sanskrit-evidence-045"
+        ],
+        "id": "dm-club",
+        "motivation": "UNSPECIFIED",
+        "name": "Gadā",
+        "source_scope": "dm-source",
+        "type": "WEAPON"
+      },
+      {
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-evidence-010",
+          "dm-evidence-037",
+          "dm-evidence-044",
+          "dm-sanskrit-evidence-010",
+          "dm-sanskrit-evidence-037",
+          "dm-sanskrit-evidence-044"
+        ],
+        "id": "dm-conch",
+        "motivation": "UNSPECIFIED",
+        "name": "Śaṅkha",
+        "source_scope": "dm-source",
+        "type": "WEAPON"
+      },
+      {
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-evidence-007",
+          "dm-evidence-010",
+          "dm-evidence-035",
+          "dm-evidence-037",
+          "dm-evidence-039",
+          "dm-evidence-040",
+          "dm-evidence-043",
+          "dm-evidence-045",
+          "dm-evidence-048",
+          "dm-sanskrit-evidence-007",
+          "dm-sanskrit-evidence-010",
+          "dm-sanskrit-evidence-037",
+          "dm-sanskrit-evidence-039",
+          "dm-sanskrit-evidence-040",
+          "dm-sanskrit-evidence-043",
+          "dm-sanskrit-evidence-045"
+        ],
+        "id": "dm-discus",
+        "motivation": "UNSPECIFIED",
+        "name": "Cakra",
+        "source_scope": "dm-source",
+        "type": "WEAPON"
+      },
+      {
+        "evidence_ids": [
+          "dm-evidence-004",
+          "dm-evidence-005",
+          "dm-evidence-006",
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-006",
+          "dm-sanskrit-evidence-007"
+        ],
+        "id": "dm-kaitabha",
+        "motivation": "UNSPECIFIED",
+        "name": "Kaiṭabha",
+        "source_scope": "dm-source",
+        "type": "ASURA"
+      },
+      {
+        "evidence_ids": [
+          "dm-evidence-004",
+          "dm-evidence-005",
+          "dm-evidence-006",
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-006",
+          "dm-sanskrit-evidence-007"
+        ],
+        "id": "dm-madhu",
+        "motivation": "UNSPECIFIED",
+        "name": "Madhu",
+        "source_scope": "dm-source",
+        "type": "ASURA"
+      },
+      {
+        "evidence_ids": [
+          "dm-evidence-001",
+          "dm-evidence-003",
+          "dm-evidence-004",
+          "dm-evidence-042",
+          "dm-evidence-061",
+          "dm-evidence-062",
+          "dm-sanskrit-evidence-042",
+          "dm-sanskrit-evidence-061",
+          "dm-sanskrit-evidence-062"
+        ],
+        "id": "dm-medhas",
+        "motivation": "UNSPECIFIED",
+        "name": "Medhas",
+        "source_scope": "dm-source",
+        "type": "SAGE"
+      },
+      {
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-parigha",
+        "motivation": "UNSPECIFIED",
+        "name": "Parigha, iron bludgeon",
+        "source_scope": "dm-source",
+        "type": "WEAPON"
+      },
+      {
+        "evidence_ids": [
+          "dm-evidence-004",
+          "dm-evidence-011",
+          "dm-sanskrit-evidence-011"
+        ],
+        "id": "dm-shesha",
+        "motivation": "UNSPECIFIED",
+        "name": "Śeṣa",
+        "source_scope": "dm-source",
+        "type": "DEITY"
+      },
+      {
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-evidence-010",
+          "dm-evidence-013",
+          "dm-evidence-014",
+          "dm-evidence-016",
+          "dm-evidence-018",
+          "dm-evidence-020",
+          "dm-evidence-021",
+          "dm-evidence-022",
+          "dm-evidence-033",
+          "dm-evidence-034",
+          "dm-evidence-035",
+          "dm-evidence-037",
+          "dm-evidence-040",
+          "dm-evidence-041",
+          "dm-evidence-043",
+          "dm-evidence-045",
+          "dm-evidence-048",
+          "dm-evidence-051",
+          "dm-sanskrit-evidence-010",
+          "dm-sanskrit-evidence-013",
+          "dm-sanskrit-evidence-016",
+          "dm-sanskrit-evidence-018",
+          "dm-sanskrit-evidence-033",
+          "dm-sanskrit-evidence-034",
+          "dm-sanskrit-evidence-037",
+          "dm-sanskrit-evidence-040",
+          "dm-sanskrit-evidence-041",
+          "dm-sanskrit-evidence-043",
+          "dm-sanskrit-evidence-045"
+        ],
+        "id": "dm-sword",
+        "motivation": "UNSPECIFIED",
+        "name": "Khaḍga",
+        "source_scope": "dm-source",
+        "type": "WEAPON"
+      },
+      {
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-evidence-010",
+          "dm-evidence-014",
+          "dm-evidence-016",
+          "dm-evidence-017",
+          "dm-evidence-018",
+          "dm-evidence-022",
+          "dm-evidence-037",
+          "dm-evidence-039",
+          "dm-evidence-040",
+          "dm-evidence-041",
+          "dm-evidence-043",
+          "dm-evidence-044",
+          "dm-evidence-045",
+          "dm-evidence-049",
+          "dm-evidence-051",
+          "dm-sanskrit-evidence-010",
+          "dm-sanskrit-evidence-016",
+          "dm-sanskrit-evidence-017",
+          "dm-sanskrit-evidence-018",
+          "dm-sanskrit-evidence-037",
+          "dm-sanskrit-evidence-039",
+          "dm-sanskrit-evidence-040",
+          "dm-sanskrit-evidence-041",
+          "dm-sanskrit-evidence-043",
+          "dm-sanskrit-evidence-044",
+          "dm-sanskrit-evidence-045"
+        ],
+        "id": "dm-trident",
+        "motivation": "UNSPECIFIED",
+        "name": "Triśūla / śūla",
+        "source_scope": "dm-source",
+        "type": "WEAPON"
+      },
+      {
+        "evidence_ids": [
+          "dm-evidence-004",
+          "dm-evidence-005",
+          "dm-evidence-006",
+          "dm-evidence-007",
+          "dm-evidence-008",
+          "dm-evidence-009",
+          "dm-evidence-010",
+          "dm-evidence-022",
+          "dm-evidence-037",
+          "dm-sanskrit-evidence-006",
+          "dm-sanskrit-evidence-007",
+          "dm-sanskrit-evidence-008",
+          "dm-sanskrit-evidence-009",
+          "dm-sanskrit-evidence-010",
+          "dm-sanskrit-evidence-037"
+        ],
+        "id": "dm-vishnu",
+        "motivation": "UNSPECIFIED",
+        "name": "Viṣṇu",
+        "source_scope": "dm-source",
+        "type": "DEITY"
+      },
+      {
+        "evidence_ids": [
+          "dm-evidence-003",
+          "dm-evidence-004",
+          "dm-evidence-005",
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006"
+        ],
+        "id": "dm-yoganidra",
+        "motivation": "UNSPECIFIED",
+        "name": "Yoganidrā / Mahāmāyā",
+        "source_scope": "dm-source",
+        "type": "DEVI_FORM"
+      }
+    ],
+    "continuity_references": {
+      "character_bible_hash": null,
+      "location_bible_hash": null,
+      "status": "NOT_PREPARED_IN_THIS_MILESTONE"
+    },
+    "dossier_hash": "601fc63f99cb9ad7d7feb14b45216c573568c4afe395f192e9d97fb83b211457",
+    "event_requirements": [
+      {
+        "cause": null,
+        "consequences": [],
+        "details": "Medhas distinguishes eternal Devī from births described when she appears for divine purposes. At cosmic dissolution Viṣṇu sleeps on Śeṣa; Madhu and Kaiṭabha arise from his ear-region and threaten lotus-seated Brahmā.",
+        "event_id": "dm-event-004",
+        "evidence_ids": [
+          "dm-evidence-004"
+        ],
+        "outcome": "Brahmā seeks awakening of Viṣṇu.",
+        "sequence": 4,
+        "summary": null
+      },
+      {
+        "cause": null,
+        "consequences": [],
+        "details": "Brahmā praises the goddess as sacrificial utterance, cosmic creation, preservation and dissolution, knowledge, illusion, nature and armed power. He asks her to delude the demons and awaken Viṣṇu to kill them.",
+        "event_id": "dm-event-005",
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "outcome": "Brahmā’s invocation addresses cosmic sleep.",
+        "sequence": 5,
+        "summary": null
+      },
+      {
+        "cause": null,
+        "consequences": [],
+        "details": "Yoganidrā leaves Viṣṇu’s eyes, mouth, nose, arms, heart and breast and appears before Brahmā. Viṣṇu awakens and fights the demons with his arms for five thousand years; deluded and intoxicated with strength, they offer him a boon.",
+        "event_id": "dm-event-006",
+        "evidence_ids": [
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006"
+        ],
+        "outcome": "Demons become boon-offerers.",
+        "sequence": 6,
+        "summary": null
+      },
+      {
+        "cause": null,
+        "consequences": [],
+        "details": "Viṣṇu chooses their death at his hands. They stipulate a place where earth is not flooded; he accepts and kills them with his discus. The Sanskrit says jaghane, while Pargiter renders the bodily locus ambiguously; a precise thigh-position is reserved for review.",
+        "event_id": "dm-event-007",
+        "evidence_ids": [
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-007"
+        ],
+        "outcome": "Madhu and Kaiṭabha are slain under their stated condition.",
+        "sequence": 7,
+        "summary": null
+      }
+    ],
+    "evidence": [
+      {
+        "classification": "DIRECT_TEXT",
+        "id": "dm-evidence-004",
+        "locator": "DM 1 / Pargiter canto 81, web lines 87–89",
+        "paraphrase": "Medhas distinguishes eternal Devī from births described when she appears for divine purposes. At cosmic dissolution Viṣṇu sleeps on Śeṣa; Madhu and Kaiṭabha arise from his ear-region and threaten lotus-seated Brahmā.",
+        "passage_id": "dm-ch01",
+        "source_id": "dm-source",
+        "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+        "verification_status": "VERIFIED",
+        "verifier": "DM research agent; direct reading",
+        "witness_id": "dm-pargiter"
+      },
+      {
+        "classification": "DIRECT_TEXT",
+        "id": "dm-evidence-005",
+        "locator": "DM 1 / Pargiter canto 81, web lines 90–96",
+        "paraphrase": "Brahmā praises the goddess as sacrificial utterance, cosmic creation, preservation and dissolution, knowledge, illusion, nature and armed power. He asks her to delude the demons and awaken Viṣṇu to kill them.",
+        "passage_id": "dm-ch01",
+        "source_id": "dm-source",
+        "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+        "verification_status": "VERIFIED",
+        "verifier": "DM research agent; direct reading",
+        "witness_id": "dm-pargiter"
+      },
+      {
+        "classification": "DIRECT_TEXT",
+        "id": "dm-evidence-006",
+        "locator": "DM 1 / Pargiter canto 81, web lines 98–99",
+        "paraphrase": "Yoganidrā leaves Viṣṇu’s eyes, mouth, nose, arms, heart and breast and appears before Brahmā. Viṣṇu awakens and fights the demons with his arms for five thousand years; deluded and intoxicated with strength, they offer him a boon.",
+        "passage_id": "dm-ch01",
+        "source_id": "dm-source",
+        "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+        "verification_status": "VERIFIED",
+        "verifier": "DM research agent; direct reading",
+        "witness_id": "dm-pargiter"
+      },
+      {
+        "classification": "DIRECT_TEXT",
+        "id": "dm-evidence-007",
+        "locator": "DM 1 / Pargiter canto 81, web lines 100–109",
+        "paraphrase": "Viṣṇu chooses their death at his hands. They stipulate a place where earth is not flooded; he accepts and kills them with his discus. The Sanskrit says jaghane, while Pargiter renders the bodily locus ambiguously; a precise thigh-position is reserved for review.",
+        "passage_id": "dm-ch01",
+        "source_id": "dm-source",
+        "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+        "verification_status": "VERIFIED",
+        "verifier": "DM research agent; direct reading",
+        "witness_id": "dm-pargiter"
+      },
+      {
+        "classification": "DIRECT_TEXT",
+        "id": "dm-sanskrit-evidence-006",
+        "locator": "DM 1.89–95",
+        "paraphrase": "Yoganidrā leaves Viṣṇu’s eyes, mouth, nose, arms, heart and breast and appears before Brahmā. Viṣṇu awakens and fights the demons with his arms for five thousand years; deluded and intoxicated with strength, they offer him a boon.",
+        "passage_id": "dm-sanskrit-006",
+        "source_id": "dm-source",
+        "verification_notes": "Selected displayed Sanskrit range checked for local names, sequence and stated mechanisms. Cross-witness comparisons in paraphrase rely jointly on linked English evidence; this is not full independent translation or edition collation.",
+        "verification_status": "VERIFIED",
+        "verifier": "DM research agent; selected Sanskrit reading",
+        "witness_id": "dm-sanskritdocuments"
+      },
+      {
+        "classification": "DIRECT_TEXT",
+        "id": "dm-sanskrit-evidence-007",
+        "locator": "DM 1.96–104",
+        "paraphrase": "Viṣṇu chooses their death at his hands. They stipulate a place where earth is not flooded; he accepts and kills them with his discus. The Sanskrit says jaghane, while Pargiter renders the bodily locus ambiguously; a precise thigh-position is reserved for review.",
+        "passage_id": "dm-sanskrit-007",
+        "source_id": "dm-source",
+        "verification_notes": "Selected displayed Sanskrit range checked for local names, sequence and stated mechanisms. Cross-witness comparisons in paraphrase rely jointly on linked English evidence; this is not full independent translation or edition collation.",
+        "verification_status": "VERIFIED",
+        "verifier": "DM research agent; selected Sanskrit reading",
+        "witness_id": "dm-sanskritdocuments"
+      },
+      {
+        "classification": "DIRECT_TEXT",
+        "id": "dm-supp-evidence-brahma-hymn",
+        "locator": "DM 1.73–87",
+        "paraphrase": "Brahmā addresses Yoganidrā as sacrificial utterances and as cosmic, intellectual, nocturnal and nourishing names; he describes bhuśuṇḍī and parigha among weapons and asks for demon-delusion and Viṣṇu’s awakening.",
+        "passage_id": "dm-supp-passage-brahma-hymn",
+        "source_id": "dm-source",
+        "verification_notes": "Only bounded displayed Sanskrit checked. Hymnic identification is attributed to its speaker.",
+        "verification_status": "VERIFIED",
+        "verifier": "DM agent direct Sanskrit inspection",
+        "witness_id": "dm-sanskritdocuments"
+      }
+    ],
+    "family_reading_constraints": [
+      "Use accessible English without academic diacritics in the literary text.",
+      "Make battle consequences clear without lingering graphic detail.",
+      "Avoid contextless catalogues of divine names and weapons.",
+      "Give the story quiet moments, reversals, emotional progression, and a resolved ending."
+    ],
+    "graph_hash": "f3a02b5eebbe4b11035240f64ede32fcf889ff7b85f481dfe11b13744a0fc6b1",
+    "literary_benchmark": {
+      "path": "book-factory/references/literary-benchmarks/The_Enemy_Who_Multiplied_Manuscript_v2.md",
+      "sha256": "6684d61e7c8f58a3fc3d851d7e8cbc7d13eb1e42105dbb9d011c1e7453791865",
+      "use": "quality benchmark only; do not copy or reproduce"
+    },
+    "literary_completeness": [
+      "Build a complete narrative arc rather than caption expansion.",
+      "Include cause, escalation, reversals, climax, aftermath, and a resolved ending.",
+      "Keep narration and dialogue structured and non-duplicative.",
+      "Place any next-book hook only after the present story has fully ended."
+    ],
+    "manifestations_boons_powers": [
+      {
+        "austerity_or_circumstances": null,
+        "counter": "Her propitiation can grant liberating knowledge.",
+        "duration": null,
+        "evidence_ids": [
+          "dm-evidence-003"
+        ],
+        "field_evidence": {
+          "counter": [
+            "dm-evidence-003"
+          ],
+          "mechanism": [
+            "dm-evidence-003"
+          ],
+          "recipient_id": [
+            "dm-evidence-003"
+          ]
+        },
+        "granted": null,
+        "grantor_id": null,
+        "id": "dm-power-delusion",
+        "later_event_ids": [
+          "dm-event-006",
+          "dm-event-062",
+          "dm-event-064"
+        ],
+        "mechanism": "Mahāmāyā forcibly draws even discriminating minds into attachment.",
+        "motive": null,
+        "notes": "Null fields are not stated in this bounded evidence unless otherwise specified; no external boon backstory imported.",
+        "recipient_id": "dm-yoganidra",
+        "requested": null,
+        "restrictions": null,
+        "trigger": null,
+        "type": "POWER",
+        "verification_status": "VERIFIED",
+        "worshipped_id": null
+      },
+      {
+        "austerity_or_circumstances": "After five thousand years of fighting, both demons offer a boon while deluded by Mahāmāyā.",
+        "counter": null,
+        "duration": null,
+        "evidence_ids": [
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-007"
+        ],
+        "field_evidence": {
+          "austerity_or_circumstances": [
+            "dm-evidence-007",
+            "dm-sanskrit-evidence-007"
+          ],
+          "granted": [
+            "dm-evidence-007",
+            "dm-sanskrit-evidence-007"
+          ],
+          "grantor_id": [
+            "dm-evidence-007",
+            "dm-sanskrit-evidence-007"
+          ],
+          "mechanism": [
+            "dm-evidence-007",
+            "dm-sanskrit-evidence-007"
+          ],
+          "motive": [
+            "dm-evidence-007",
+            "dm-sanskrit-evidence-007"
+          ],
+          "recipient_id": [
+            "dm-evidence-007",
+            "dm-sanskrit-evidence-007"
+          ],
+          "requested": [
+            "dm-evidence-007",
+            "dm-sanskrit-evidence-007"
+          ],
+          "restrictions": [
+            "dm-evidence-007",
+            "dm-sanskrit-evidence-007"
+          ]
+        },
+        "granted": "Joint permission conditioned on a place where earth is not inundated.",
+        "grantor_id": "dm-madhu",
+        "grantor_ids": [
+          "dm-madhu",
+          "dm-kaitabha"
+        ],
+        "id": "dm-power-demon-offer",
+        "later_event_ids": [],
+        "mechanism": "Viṣṇu accepts and uses his discus.",
+        "motive": "Kill the threatening demons.",
+        "notes": "Grantors are Madhu and Kaiṭabha jointly; schema has one grantor_id, and joint grantors recorded in grantor_ids. No ascetic immunity boon is narrated here.",
+        "recipient_id": "dm-vishnu",
+        "requested": "Both Madhu and Kaiṭabha must be killable by Viṣṇu.",
+        "restrictions": "Death-place condition stated by both grantors.",
+        "trigger": null,
+        "type": "BOON",
+        "verification_status": "VERIFIED",
+        "worshipped_id": null
+      },
+      {
+        "austerity_or_circumstances": "Brahmā’s hymn requests awakening and demon delusion.",
+        "counter": null,
+        "duration": null,
+        "evidence_ids": [
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006"
+        ],
+        "field_evidence": {
+          "austerity_or_circumstances": [
+            "dm-evidence-006",
+            "dm-sanskrit-evidence-006"
+          ],
+          "mechanism": [
+            "dm-evidence-006",
+            "dm-sanskrit-evidence-006"
+          ],
+          "recipient_id": [
+            "dm-evidence-006",
+            "dm-sanskrit-evidence-006"
+          ]
+        },
+        "granted": null,
+        "grantor_id": null,
+        "id": "dm-power-sleep",
+        "later_event_ids": [
+          "dm-event-007"
+        ],
+        "mechanism": "Presence in Viṣṇu maintains cosmic yogic sleep; departure enables awakening.",
+        "motive": null,
+        "notes": "Null fields are not stated in this bounded evidence unless otherwise specified; no external boon backstory imported.",
+        "recipient_id": "dm-yoganidra",
+        "requested": null,
+        "restrictions": null,
+        "trigger": null,
+        "type": "POWER",
+        "verification_status": "VERIFIED",
+        "worshipped_id": null
+      }
+    ],
+    "milestone_contract": null,
+    "operation_key": "draft-manuscript-2494573cc1cd0efce4047846",
+    "packet_hashes": [
+      "b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd"
+    ],
+    "parent_manuscript_hash": "8b7dc126012186ada26df3b6acb16e46fcc72a600ad151de49f6aaf3c06d2c44",
+    "private_draft_gate": "PRIVATE_DRAFT_PERMITTED_PUBLICATION_BLOCKED",
+    "publication_gate": "BLOCKED",
+    "relationships": [
+      {
+        "assertion_id": "dm-assert-003",
+        "evidence_ids": [
+          "dm-evidence-003"
+        ],
+        "id": "dm-rel-003",
+        "object_id": "dm-suratha",
+        "predicate": "instructs",
+        "subject_id": "dm-medhas",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-004",
+        "evidence_ids": [
+          "dm-evidence-003"
+        ],
+        "id": "dm-rel-004",
+        "object_id": "dm-samadhi",
+        "predicate": "instructs",
+        "subject_id": "dm-medhas",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-005",
+        "evidence_ids": [
+          "dm-evidence-004"
+        ],
+        "id": "dm-rel-005",
+        "kinship_kind": "EMANATION",
+        "object_id": "dm-vishnu",
+        "predicate": "emerges_from",
+        "subject_id": "dm-madhu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-006",
+        "evidence_ids": [
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-007"
+        ],
+        "id": "dm-rel-006",
+        "object_id": "dm-madhu",
+        "predicate": "kills",
+        "subject_id": "dm-vishnu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-007",
+        "evidence_ids": [
+          "dm-evidence-004"
+        ],
+        "id": "dm-rel-007",
+        "kinship_kind": "EMANATION",
+        "object_id": "dm-vishnu",
+        "predicate": "emerges_from",
+        "subject_id": "dm-kaitabha",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-008",
+        "evidence_ids": [
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-007"
+        ],
+        "id": "dm-rel-008",
+        "object_id": "dm-kaitabha",
+        "predicate": "kills",
+        "subject_id": "dm-vishnu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-009",
+        "evidence_ids": [
+          "dm-evidence-005"
+        ],
+        "id": "dm-rel-009",
+        "object_id": "dm-yoganidra",
+        "predicate": "invokes",
+        "subject_id": "dm-brahma",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-010",
+        "evidence_ids": [
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006"
+        ],
+        "id": "dm-rel-010",
+        "object_id": "dm-madhu",
+        "predicate": "deludes",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-011",
+        "evidence_ids": [
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006"
+        ],
+        "id": "dm-rel-011",
+        "object_id": "dm-kaitabha",
+        "predicate": "deludes",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-015",
+        "evidence_ids": [
+          "dm-evidence-009",
+          "dm-sanskrit-evidence-009"
+        ],
+        "id": "dm-rel-015",
+        "kinship_kind": "DIVINE_EMANATION",
+        "object_id": "dm-vishnu",
+        "predicate": "manifested_from_energy_of",
+        "subject_id": "dm-devi",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-020",
+        "evidence_ids": [
+          "dm-evidence-009",
+          "dm-sanskrit-evidence-009"
+        ],
+        "id": "dm-rel-020",
+        "kinship_kind": "DIVINE_EMANATION",
+        "object_id": "dm-brahma",
+        "predicate": "manifested_from_energy_of",
+        "subject_id": "dm-devi",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-028",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "dm-rel-028",
+        "object_id": "dm-trident",
+        "predicate": "gives",
+        "subject_id": "dm-shiva",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-029",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "dm-rel-029",
+        "object_id": "dm-trident",
+        "predicate": "receives",
+        "subject_id": "dm-devi",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-030",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "dm-rel-030",
+        "object_id": "dm-discus",
+        "predicate": "gives",
+        "subject_id": "dm-vishnu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-031",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "dm-rel-031",
+        "object_id": "dm-discus",
+        "predicate": "receives",
+        "subject_id": "dm-devi",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-032",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "dm-rel-032",
+        "object_id": "dm-conch",
+        "predicate": "gives",
+        "subject_id": "dm-varuna",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-033",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "dm-rel-033",
+        "object_id": "dm-conch",
+        "predicate": "receives",
+        "subject_id": "dm-devi",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-038",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "dm-rel-038",
+        "object_id": "dm-bow",
+        "predicate": "gives",
+        "subject_id": "dm-vayu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-039",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "dm-rel-039",
+        "object_id": "dm-bow",
+        "predicate": "receives",
+        "subject_id": "dm-devi",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-040",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "dm-rel-040",
+        "object_id": "dm-arrows",
+        "predicate": "gives",
+        "subject_id": "dm-vayu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-041",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "dm-rel-041",
+        "object_id": "dm-arrows",
+        "predicate": "receives",
+        "subject_id": "dm-devi",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-050",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "dm-rel-050",
+        "object_id": "dm-waterpot",
+        "predicate": "gives",
+        "subject_id": "dm-brahma",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-052",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "dm-rel-052",
+        "object_id": "dm-sword",
+        "predicate": "gives",
+        "subject_id": "dm-kala",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-053",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "dm-rel-053",
+        "object_id": "dm-sword",
+        "predicate": "receives",
+        "subject_id": "dm-devi",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-105",
+        "evidence_ids": [
+          "dm-evidence-037",
+          "dm-sanskrit-evidence-037"
+        ],
+        "id": "dm-rel-105",
+        "kinship_kind": "DIVINE_EMANATION",
+        "object_id": "dm-brahma",
+        "predicate": "emerges_from_energy_of",
+        "subject_id": "dm-brahmani",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-112",
+        "evidence_ids": [
+          "dm-evidence-037",
+          "dm-sanskrit-evidence-037"
+        ],
+        "id": "dm-rel-112",
+        "object_id": "dm-trident",
+        "predicate": "uses",
+        "subject_id": "dm-maheshvari",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-117",
+        "evidence_ids": [
+          "dm-evidence-037",
+          "dm-sanskrit-evidence-037"
+        ],
+        "id": "dm-rel-117",
+        "kinship_kind": "DIVINE_EMANATION",
+        "object_id": "dm-vishnu",
+        "predicate": "emerges_from_energy_of",
+        "subject_id": "dm-vaishnavi",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-120",
+        "evidence_ids": [
+          "dm-evidence-037",
+          "dm-sanskrit-evidence-037"
+        ],
+        "id": "dm-rel-120",
+        "object_id": "dm-discus",
+        "predicate": "uses",
+        "subject_id": "dm-vaishnavi",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-123",
+        "evidence_ids": [
+          "dm-evidence-037",
+          "dm-sanskrit-evidence-037"
+        ],
+        "id": "dm-rel-123",
+        "object_id": "dm-discus",
+        "predicate": "uses",
+        "subject_id": "dm-varahi",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-157",
+        "evidence_ids": [
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-007"
+        ],
+        "id": "dm-rel-157",
+        "object_id": "dm-madhu",
+        "predicate": "receives_boon_from",
+        "subject_id": "dm-vishnu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-170",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-162",
+        "object_id": "dm-svaha",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-171",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-163",
+        "object_id": "dm-svadha",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-172",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-164",
+        "object_id": "dm-vashatkara",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-173",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-165",
+        "object_id": "dm-sudha",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-174",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-166",
+        "object_id": "dm-sandhya-name",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-175",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-167",
+        "object_id": "dm-savitri",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-176",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-168",
+        "object_id": "dm-mahavidya",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-177",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-169",
+        "object_id": "dm-mahamedha",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-178",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-170",
+        "object_id": "dm-mahasmriti",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-179",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-171",
+        "object_id": "dm-mahamoha",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-180",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-172",
+        "object_id": "dm-mahadevi-name",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-181",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-173",
+        "object_id": "dm-maheshvari-name",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-182",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-174",
+        "object_id": "dm-prakriti",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-183",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-175",
+        "object_id": "dm-kalaratri",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-184",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-176",
+        "object_id": "dm-maharatri",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-185",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-177",
+        "object_id": "dm-moharatri",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-186",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-178",
+        "object_id": "dm-shri",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-187",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-179",
+        "object_id": "dm-ishvari",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-188",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-180",
+        "object_id": "dm-hri",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-189",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-181",
+        "object_id": "dm-buddhi",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-190",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-182",
+        "object_id": "dm-lajja",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-191",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-183",
+        "object_id": "dm-pushti",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-192",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-184",
+        "object_id": "dm-tushti",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-193",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-185",
+        "object_id": "dm-shanti",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-194",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-186",
+        "object_id": "dm-kshanti",
+        "predicate": "praised_as",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-195",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-187",
+        "object_id": "dm-bhushundi",
+        "predicate": "praised_as_bearer_of",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-196",
+        "evidence_ids": [
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm-rel-188",
+        "object_id": "dm-parigha",
+        "predicate": "praised_as_bearer_of",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-235",
+        "evidence_ids": [
+          "dm-evidence-016",
+          "dm-sanskrit-evidence-016"
+        ],
+        "id": "dm-rel-227",
+        "object_id": "dm-trident",
+        "predicate": "uses",
+        "subject_id": "dm-devi",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-238",
+        "evidence_ids": [
+          "dm-evidence-021"
+        ],
+        "id": "dm-rel-230",
+        "object_id": "dm-sword",
+        "predicate": "uses",
+        "subject_id": "dm-devi",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-239",
+        "evidence_ids": [
+          "dm-evidence-035"
+        ],
+        "id": "dm-rel-231",
+        "object_id": "dm-sword",
+        "predicate": "uses",
+        "subject_id": "dm-kali",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-242",
+        "evidence_ids": [
+          "dm-evidence-045",
+          "dm-sanskrit-evidence-045"
+        ],
+        "id": "dm-rel-234",
+        "object_id": "dm-club",
+        "predicate": "uses",
+        "subject_id": "dm-nishumbha",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "dm-assert-243",
+        "evidence_ids": [
+          "dm-evidence-049"
+        ],
+        "id": "dm-rel-235",
+        "object_id": "dm-trident",
+        "predicate": "uses",
+        "subject_id": "dm-kaushiki",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-001-participant-6",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-001"
+        ],
+        "id": "graph-rel-dm-event-001-participant-6",
+        "object_id": "graph-event-dm-event-001",
+        "predicate": "participates_in",
+        "subject_id": "dm-medhas",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-003-participant-2",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-003"
+        ],
+        "id": "graph-rel-dm-event-003-participant-2",
+        "object_id": "graph-event-dm-event-003",
+        "predicate": "participates_in",
+        "subject_id": "dm-medhas",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-003-participant-3",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-003"
+        ],
+        "id": "graph-rel-dm-event-003-participant-3",
+        "object_id": "graph-event-dm-event-003",
+        "predicate": "participates_in",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-004-participant-0",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-004"
+        ],
+        "id": "graph-rel-dm-event-004-participant-0",
+        "object_id": "graph-event-dm-event-004",
+        "predicate": "participates_in",
+        "subject_id": "dm-medhas",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-004-participant-1",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-004"
+        ],
+        "id": "graph-rel-dm-event-004-participant-1",
+        "object_id": "graph-event-dm-event-004",
+        "predicate": "participates_in",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-004-participant-2",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-004"
+        ],
+        "id": "graph-rel-dm-event-004-participant-2",
+        "object_id": "graph-event-dm-event-004",
+        "predicate": "participates_in",
+        "subject_id": "dm-vishnu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-004-participant-3",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-004"
+        ],
+        "id": "graph-rel-dm-event-004-participant-3",
+        "object_id": "graph-event-dm-event-004",
+        "predicate": "participates_in",
+        "subject_id": "dm-shesha",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-004-participant-4",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-004"
+        ],
+        "id": "graph-rel-dm-event-004-participant-4",
+        "object_id": "graph-event-dm-event-004",
+        "predicate": "participates_in",
+        "subject_id": "dm-brahma",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-004-participant-5",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-004"
+        ],
+        "id": "graph-rel-dm-event-004-participant-5",
+        "object_id": "graph-event-dm-event-004",
+        "predicate": "participates_in",
+        "subject_id": "dm-madhu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-004-participant-6",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-004"
+        ],
+        "id": "graph-rel-dm-event-004-participant-6",
+        "object_id": "graph-event-dm-event-004",
+        "predicate": "participates_in",
+        "subject_id": "dm-kaitabha",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-005-participant-0",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "graph-rel-dm-event-005-participant-0",
+        "object_id": "graph-event-dm-event-005",
+        "predicate": "participates_in",
+        "subject_id": "dm-brahma",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-005-participant-1",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "graph-rel-dm-event-005-participant-1",
+        "object_id": "graph-event-dm-event-005",
+        "predicate": "participates_in",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-005-participant-10",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "graph-rel-dm-event-005-participant-10",
+        "object_id": "graph-event-dm-event-005",
+        "predicate": "participates_in",
+        "subject_id": "dm-bow",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-005-participant-11",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "graph-rel-dm-event-005-participant-11",
+        "object_id": "graph-event-dm-event-005",
+        "predicate": "participates_in",
+        "subject_id": "dm-arrows",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-005-participant-12",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "graph-rel-dm-event-005-participant-12",
+        "object_id": "graph-event-dm-event-005",
+        "predicate": "participates_in",
+        "subject_id": "dm-bhushundi",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-005-participant-13",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "graph-rel-dm-event-005-participant-13",
+        "object_id": "graph-event-dm-event-005",
+        "predicate": "participates_in",
+        "subject_id": "dm-parigha",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-005-participant-2",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "graph-rel-dm-event-005-participant-2",
+        "object_id": "graph-event-dm-event-005",
+        "predicate": "participates_in",
+        "subject_id": "dm-vishnu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-005-participant-3",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "graph-rel-dm-event-005-participant-3",
+        "object_id": "graph-event-dm-event-005",
+        "predicate": "participates_in",
+        "subject_id": "dm-madhu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-005-participant-4",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "graph-rel-dm-event-005-participant-4",
+        "object_id": "graph-event-dm-event-005",
+        "predicate": "participates_in",
+        "subject_id": "dm-kaitabha",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-005-participant-5",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "graph-rel-dm-event-005-participant-5",
+        "object_id": "graph-event-dm-event-005",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-005-participant-6",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "graph-rel-dm-event-005-participant-6",
+        "object_id": "graph-event-dm-event-005",
+        "predicate": "participates_in",
+        "subject_id": "dm-trident",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-005-participant-7",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "graph-rel-dm-event-005-participant-7",
+        "object_id": "graph-event-dm-event-005",
+        "predicate": "participates_in",
+        "subject_id": "dm-club",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-005-participant-8",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "graph-rel-dm-event-005-participant-8",
+        "object_id": "graph-event-dm-event-005",
+        "predicate": "participates_in",
+        "subject_id": "dm-discus",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-005-participant-9",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "graph-rel-dm-event-005-participant-9",
+        "object_id": "graph-event-dm-event-005",
+        "predicate": "participates_in",
+        "subject_id": "dm-conch",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-006-participant-0",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006"
+        ],
+        "id": "graph-rel-dm-event-006-participant-0",
+        "object_id": "graph-event-dm-event-006",
+        "predicate": "participates_in",
+        "subject_id": "dm-yoganidra",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-006-participant-1",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006"
+        ],
+        "id": "graph-rel-dm-event-006-participant-1",
+        "object_id": "graph-event-dm-event-006",
+        "predicate": "participates_in",
+        "subject_id": "dm-vishnu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-006-participant-2",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006"
+        ],
+        "id": "graph-rel-dm-event-006-participant-2",
+        "object_id": "graph-event-dm-event-006",
+        "predicate": "participates_in",
+        "subject_id": "dm-brahma",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-006-participant-3",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006"
+        ],
+        "id": "graph-rel-dm-event-006-participant-3",
+        "object_id": "graph-event-dm-event-006",
+        "predicate": "participates_in",
+        "subject_id": "dm-madhu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-006-participant-4",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006"
+        ],
+        "id": "graph-rel-dm-event-006-participant-4",
+        "object_id": "graph-event-dm-event-006",
+        "predicate": "participates_in",
+        "subject_id": "dm-kaitabha",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-007-participant-0",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-007"
+        ],
+        "id": "graph-rel-dm-event-007-participant-0",
+        "object_id": "graph-event-dm-event-007",
+        "predicate": "participates_in",
+        "subject_id": "dm-vishnu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-007-participant-1",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-007"
+        ],
+        "id": "graph-rel-dm-event-007-participant-1",
+        "object_id": "graph-event-dm-event-007",
+        "predicate": "participates_in",
+        "subject_id": "dm-madhu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-007-participant-2",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-007"
+        ],
+        "id": "graph-rel-dm-event-007-participant-2",
+        "object_id": "graph-event-dm-event-007",
+        "predicate": "participates_in",
+        "subject_id": "dm-kaitabha",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-007-participant-3",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-007"
+        ],
+        "id": "graph-rel-dm-event-007-participant-3",
+        "object_id": "graph-event-dm-event-007",
+        "predicate": "participates_in",
+        "subject_id": "dm-discus",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-008-participant-3",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-008",
+          "dm-sanskrit-evidence-008"
+        ],
+        "id": "graph-rel-dm-event-008-participant-3",
+        "object_id": "graph-event-dm-event-008",
+        "predicate": "participates_in",
+        "subject_id": "dm-brahma",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-008-participant-4",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-008",
+          "dm-sanskrit-evidence-008"
+        ],
+        "id": "graph-rel-dm-event-008-participant-4",
+        "object_id": "graph-event-dm-event-008",
+        "predicate": "participates_in",
+        "subject_id": "dm-vishnu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-009-participant-3",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-009",
+          "dm-sanskrit-evidence-009"
+        ],
+        "id": "graph-rel-dm-event-009-participant-3",
+        "object_id": "graph-event-dm-event-009",
+        "predicate": "participates_in",
+        "subject_id": "dm-vishnu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-009-participant-4",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-009",
+          "dm-sanskrit-evidence-009"
+        ],
+        "id": "graph-rel-dm-event-009-participant-4",
+        "object_id": "graph-event-dm-event-009",
+        "predicate": "participates_in",
+        "subject_id": "dm-brahma",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-010-participant-10",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "graph-rel-dm-event-010-participant-10",
+        "object_id": "graph-event-dm-event-010",
+        "predicate": "participates_in",
+        "subject_id": "dm-brahma",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-010-participant-13",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "graph-rel-dm-event-010-participant-13",
+        "object_id": "graph-event-dm-event-010",
+        "predicate": "participates_in",
+        "subject_id": "dm-trident",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-010-participant-14",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "graph-rel-dm-event-010-participant-14",
+        "object_id": "graph-event-dm-event-010",
+        "predicate": "participates_in",
+        "subject_id": "dm-discus",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-010-participant-15",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "graph-rel-dm-event-010-participant-15",
+        "object_id": "graph-event-dm-event-010",
+        "predicate": "participates_in",
+        "subject_id": "dm-conch",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-010-participant-17",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "graph-rel-dm-event-010-participant-17",
+        "object_id": "graph-event-dm-event-010",
+        "predicate": "participates_in",
+        "subject_id": "dm-bow",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-010-participant-18",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "graph-rel-dm-event-010-participant-18",
+        "object_id": "graph-event-dm-event-010",
+        "predicate": "participates_in",
+        "subject_id": "dm-arrows",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-010-participant-2",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "graph-rel-dm-event-010-participant-2",
+        "object_id": "graph-event-dm-event-010",
+        "predicate": "participates_in",
+        "subject_id": "dm-vishnu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-010-participant-25",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010"
+        ],
+        "id": "graph-rel-dm-event-010-participant-25",
+        "object_id": "graph-event-dm-event-010",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-011-participant-8",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-011",
+          "dm-sanskrit-evidence-011"
+        ],
+        "id": "graph-rel-dm-event-011-participant-8",
+        "object_id": "graph-event-dm-event-011",
+        "predicate": "participates_in",
+        "subject_id": "dm-shesha",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-013-participant-11",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-013",
+          "dm-sanskrit-evidence-013"
+        ],
+        "id": "graph-rel-dm-event-013-participant-11",
+        "object_id": "graph-event-dm-event-013",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-014-participant-10",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-014"
+        ],
+        "id": "graph-rel-dm-event-014-participant-10",
+        "object_id": "graph-event-dm-event-014",
+        "predicate": "participates_in",
+        "subject_id": "dm-arrows",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-014-participant-4",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-014"
+        ],
+        "id": "graph-rel-dm-event-014-participant-4",
+        "object_id": "graph-event-dm-event-014",
+        "predicate": "participates_in",
+        "subject_id": "dm-trident",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-014-participant-5",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-014"
+        ],
+        "id": "graph-rel-dm-event-014-participant-5",
+        "object_id": "graph-event-dm-event-014",
+        "predicate": "participates_in",
+        "subject_id": "dm-club",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-014-participant-7",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-014"
+        ],
+        "id": "graph-rel-dm-event-014-participant-7",
+        "object_id": "graph-event-dm-event-014",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-016-participant-3",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-016",
+          "dm-sanskrit-evidence-016"
+        ],
+        "id": "graph-rel-dm-event-016-participant-3",
+        "object_id": "graph-event-dm-event-016",
+        "predicate": "participates_in",
+        "subject_id": "dm-arrows",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-016-participant-4",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-016",
+          "dm-sanskrit-evidence-016"
+        ],
+        "id": "graph-rel-dm-event-016-participant-4",
+        "object_id": "graph-event-dm-event-016",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-016-participant-6",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-016",
+          "dm-sanskrit-evidence-016"
+        ],
+        "id": "graph-rel-dm-event-016-participant-6",
+        "object_id": "graph-event-dm-event-016",
+        "predicate": "participates_in",
+        "subject_id": "dm-trident",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-017-participant-4",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-017",
+          "dm-sanskrit-evidence-017"
+        ],
+        "id": "graph-rel-dm-event-017-participant-4",
+        "object_id": "graph-event-dm-event-017",
+        "predicate": "participates_in",
+        "subject_id": "dm-trident",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-017-participant-5",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-017",
+          "dm-sanskrit-evidence-017"
+        ],
+        "id": "graph-rel-dm-event-017-participant-5",
+        "object_id": "graph-event-dm-event-017",
+        "predicate": "participates_in",
+        "subject_id": "dm-arrows",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-018-participant-13",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-018",
+          "dm-sanskrit-evidence-018"
+        ],
+        "id": "graph-rel-dm-event-018-participant-13",
+        "object_id": "graph-event-dm-event-018",
+        "predicate": "participates_in",
+        "subject_id": "dm-club",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-018-participant-15",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-018",
+          "dm-sanskrit-evidence-018"
+        ],
+        "id": "graph-rel-dm-event-018-participant-15",
+        "object_id": "graph-event-dm-event-018",
+        "predicate": "participates_in",
+        "subject_id": "dm-arrows",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-018-participant-16",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-018",
+          "dm-sanskrit-evidence-018"
+        ],
+        "id": "graph-rel-dm-event-018-participant-16",
+        "object_id": "graph-event-dm-event-018",
+        "predicate": "participates_in",
+        "subject_id": "dm-trident",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-018-participant-17",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-018",
+          "dm-sanskrit-evidence-018"
+        ],
+        "id": "graph-rel-dm-event-018-participant-17",
+        "object_id": "graph-event-dm-event-018",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-020-participant-4",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-020"
+        ],
+        "id": "graph-rel-dm-event-020-participant-4",
+        "object_id": "graph-event-dm-event-020",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-020-participant-5",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-020"
+        ],
+        "id": "graph-rel-dm-event-020-participant-5",
+        "object_id": "graph-event-dm-event-020",
+        "predicate": "participates_in",
+        "subject_id": "dm-arrows",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-021-participant-3",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-021"
+        ],
+        "id": "graph-rel-dm-event-021-participant-3",
+        "object_id": "graph-event-dm-event-021",
+        "predicate": "participates_in",
+        "subject_id": "dm-arrows",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-021-participant-5",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-021"
+        ],
+        "id": "graph-rel-dm-event-021-participant-5",
+        "object_id": "graph-event-dm-event-021",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-022-participant-2",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-022"
+        ],
+        "id": "graph-rel-dm-event-022-participant-2",
+        "object_id": "graph-event-dm-event-022",
+        "predicate": "participates_in",
+        "subject_id": "dm-vishnu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-022-participant-3",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-022"
+        ],
+        "id": "graph-rel-dm-event-022-participant-3",
+        "object_id": "graph-event-dm-event-022",
+        "predicate": "participates_in",
+        "subject_id": "dm-brahma",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-022-participant-5",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-022"
+        ],
+        "id": "graph-rel-dm-event-022-participant-5",
+        "object_id": "graph-event-dm-event-022",
+        "predicate": "participates_in",
+        "subject_id": "dm-trident",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-022-participant-6",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-022"
+        ],
+        "id": "graph-rel-dm-event-022-participant-6",
+        "object_id": "graph-event-dm-event-022",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-022-participant-8",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-022"
+        ],
+        "id": "graph-rel-dm-event-022-participant-8",
+        "object_id": "graph-event-dm-event-022",
+        "predicate": "participates_in",
+        "subject_id": "dm-bow",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-027-participant-8",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-027",
+          "dm-sanskrit-evidence-027"
+        ],
+        "id": "graph-rel-dm-event-027-participant-8",
+        "object_id": "graph-event-dm-event-027",
+        "predicate": "participates_in",
+        "subject_id": "dm-brahma",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-031-participant-3",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-031",
+          "dm-supp-evidence-dhumralocana-response"
+        ],
+        "id": "graph-rel-dm-event-031-participant-3",
+        "object_id": "graph-event-dm-event-031",
+        "predicate": "participates_in",
+        "subject_id": "dm-arrows",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-033-participant-5",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-033",
+          "dm-sanskrit-evidence-033"
+        ],
+        "id": "graph-rel-dm-event-033-participant-5",
+        "object_id": "graph-event-dm-event-033",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-034-participant-1",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-034",
+          "dm-sanskrit-evidence-034"
+        ],
+        "id": "graph-rel-dm-event-034-participant-1",
+        "object_id": "graph-event-dm-event-034",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-035-participant-5",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-035"
+        ],
+        "id": "graph-rel-dm-event-035-participant-5",
+        "object_id": "graph-event-dm-event-035",
+        "predicate": "participates_in",
+        "subject_id": "dm-arrows",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-035-participant-6",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-035"
+        ],
+        "id": "graph-rel-dm-event-035-participant-6",
+        "object_id": "graph-event-dm-event-035",
+        "predicate": "participates_in",
+        "subject_id": "dm-discus",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-035-participant-7",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-035"
+        ],
+        "id": "graph-rel-dm-event-035-participant-7",
+        "object_id": "graph-event-dm-event-035",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-036-participant-10",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-036",
+          "dm-sanskrit-evidence-036"
+        ],
+        "id": "graph-rel-dm-event-036-participant-10",
+        "object_id": "graph-event-dm-event-036",
+        "predicate": "participates_in",
+        "subject_id": "dm-bow",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-037-participant-0",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-037",
+          "dm-sanskrit-evidence-037"
+        ],
+        "id": "graph-rel-dm-event-037-participant-0",
+        "object_id": "graph-event-dm-event-037",
+        "predicate": "participates_in",
+        "subject_id": "dm-brahma",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-037-participant-19",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-037",
+          "dm-sanskrit-evidence-037"
+        ],
+        "id": "graph-rel-dm-event-037-participant-19",
+        "object_id": "graph-event-dm-event-037",
+        "predicate": "participates_in",
+        "subject_id": "dm-trident",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-037-participant-20",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-037",
+          "dm-sanskrit-evidence-037"
+        ],
+        "id": "graph-rel-dm-event-037-participant-20",
+        "object_id": "graph-event-dm-event-037",
+        "predicate": "participates_in",
+        "subject_id": "dm-discus",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-037-participant-23",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-037",
+          "dm-sanskrit-evidence-037"
+        ],
+        "id": "graph-rel-dm-event-037-participant-23",
+        "object_id": "graph-event-dm-event-037",
+        "predicate": "participates_in",
+        "subject_id": "dm-conch",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-037-participant-24",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-037",
+          "dm-sanskrit-evidence-037"
+        ],
+        "id": "graph-rel-dm-event-037-participant-24",
+        "object_id": "graph-event-dm-event-037",
+        "predicate": "participates_in",
+        "subject_id": "dm-club",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-037-participant-25",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-037",
+          "dm-sanskrit-evidence-037"
+        ],
+        "id": "graph-rel-dm-event-037-participant-25",
+        "object_id": "graph-event-dm-event-037",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-037-participant-3",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-037",
+          "dm-sanskrit-evidence-037"
+        ],
+        "id": "graph-rel-dm-event-037-participant-3",
+        "object_id": "graph-event-dm-event-037",
+        "predicate": "participates_in",
+        "subject_id": "dm-vishnu",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-039-participant-11",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-039",
+          "dm-sanskrit-evidence-039"
+        ],
+        "id": "graph-rel-dm-event-039-participant-11",
+        "object_id": "graph-event-dm-event-039",
+        "predicate": "participates_in",
+        "subject_id": "dm-arrows",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-039-participant-12",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-039",
+          "dm-sanskrit-evidence-039"
+        ],
+        "id": "graph-rel-dm-event-039-participant-12",
+        "object_id": "graph-event-dm-event-039",
+        "predicate": "participates_in",
+        "subject_id": "dm-trident",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-039-participant-13",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-039",
+          "dm-sanskrit-evidence-039"
+        ],
+        "id": "graph-rel-dm-event-039-participant-13",
+        "object_id": "graph-event-dm-event-039",
+        "predicate": "participates_in",
+        "subject_id": "dm-discus",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-040-participant-11",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-040",
+          "dm-sanskrit-evidence-040"
+        ],
+        "id": "graph-rel-dm-event-040-participant-11",
+        "object_id": "graph-event-dm-event-040",
+        "predicate": "participates_in",
+        "subject_id": "dm-discus",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-040-participant-13",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-040",
+          "dm-sanskrit-evidence-040"
+        ],
+        "id": "graph-rel-dm-event-040-participant-13",
+        "object_id": "graph-event-dm-event-040",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-040-participant-14",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-040",
+          "dm-sanskrit-evidence-040"
+        ],
+        "id": "graph-rel-dm-event-040-participant-14",
+        "object_id": "graph-event-dm-event-040",
+        "predicate": "participates_in",
+        "subject_id": "dm-trident",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-040-participant-9",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-040",
+          "dm-sanskrit-evidence-040"
+        ],
+        "id": "graph-rel-dm-event-040-participant-9",
+        "object_id": "graph-event-dm-event-040",
+        "predicate": "participates_in",
+        "subject_id": "dm-club",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-041-participant-6",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-041",
+          "dm-sanskrit-evidence-041"
+        ],
+        "id": "graph-rel-dm-event-041-participant-6",
+        "object_id": "graph-event-dm-event-041",
+        "predicate": "participates_in",
+        "subject_id": "dm-trident",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-041-participant-8",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-041",
+          "dm-sanskrit-evidence-041"
+        ],
+        "id": "graph-rel-dm-event-041-participant-8",
+        "object_id": "graph-event-dm-event-041",
+        "predicate": "participates_in",
+        "subject_id": "dm-arrows",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-041-participant-9",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-041",
+          "dm-sanskrit-evidence-041"
+        ],
+        "id": "graph-rel-dm-event-041-participant-9",
+        "object_id": "graph-event-dm-event-041",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-042-participant-1",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-042",
+          "dm-sanskrit-evidence-042"
+        ],
+        "id": "graph-rel-dm-event-042-participant-1",
+        "object_id": "graph-event-dm-event-042",
+        "predicate": "participates_in",
+        "subject_id": "dm-medhas",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-043-participant-10",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-043",
+          "dm-sanskrit-evidence-043"
+        ],
+        "id": "graph-rel-dm-event-043-participant-10",
+        "object_id": "graph-event-dm-event-043",
+        "predicate": "participates_in",
+        "subject_id": "dm-discus",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-043-participant-11",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-043",
+          "dm-sanskrit-evidence-043"
+        ],
+        "id": "graph-rel-dm-event-043-participant-11",
+        "object_id": "graph-event-dm-event-043",
+        "predicate": "participates_in",
+        "subject_id": "dm-arrows",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-043-participant-3",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-043",
+          "dm-sanskrit-evidence-043"
+        ],
+        "id": "graph-rel-dm-event-043-participant-3",
+        "object_id": "graph-event-dm-event-043",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-043-participant-6",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-043",
+          "dm-sanskrit-evidence-043"
+        ],
+        "id": "graph-rel-dm-event-043-participant-6",
+        "object_id": "graph-event-dm-event-043",
+        "predicate": "participates_in",
+        "subject_id": "dm-trident",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-043-participant-7",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-043",
+          "dm-sanskrit-evidence-043"
+        ],
+        "id": "graph-rel-dm-event-043-participant-7",
+        "object_id": "graph-event-dm-event-043",
+        "predicate": "participates_in",
+        "subject_id": "dm-club",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-044-participant-11",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-044",
+          "dm-sanskrit-evidence-044"
+        ],
+        "id": "graph-rel-dm-event-044-participant-11",
+        "object_id": "graph-event-dm-event-044",
+        "predicate": "participates_in",
+        "subject_id": "dm-trident",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-044-participant-6",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-044",
+          "dm-sanskrit-evidence-044"
+        ],
+        "id": "graph-rel-dm-event-044-participant-6",
+        "object_id": "graph-event-dm-event-044",
+        "predicate": "participates_in",
+        "subject_id": "dm-conch",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-044-participant-7",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-044",
+          "dm-sanskrit-evidence-044"
+        ],
+        "id": "graph-rel-dm-event-044-participant-7",
+        "object_id": "graph-event-dm-event-044",
+        "predicate": "participates_in",
+        "subject_id": "dm-bow",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-045-participant-10",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-045",
+          "dm-sanskrit-evidence-045"
+        ],
+        "id": "graph-rel-dm-event-045-participant-10",
+        "object_id": "graph-event-dm-event-045",
+        "predicate": "participates_in",
+        "subject_id": "dm-trident",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-045-participant-5",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-045",
+          "dm-sanskrit-evidence-045"
+        ],
+        "id": "graph-rel-dm-event-045-participant-5",
+        "object_id": "graph-event-dm-event-045",
+        "predicate": "participates_in",
+        "subject_id": "dm-bow",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-045-participant-6",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-045",
+          "dm-sanskrit-evidence-045"
+        ],
+        "id": "graph-rel-dm-event-045-participant-6",
+        "object_id": "graph-event-dm-event-045",
+        "predicate": "participates_in",
+        "subject_id": "dm-arrows",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-045-participant-7",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-045",
+          "dm-sanskrit-evidence-045"
+        ],
+        "id": "graph-rel-dm-event-045-participant-7",
+        "object_id": "graph-event-dm-event-045",
+        "predicate": "participates_in",
+        "subject_id": "dm-discus",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-045-participant-8",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-045",
+          "dm-sanskrit-evidence-045"
+        ],
+        "id": "graph-rel-dm-event-045-participant-8",
+        "object_id": "graph-event-dm-event-045",
+        "predicate": "participates_in",
+        "subject_id": "dm-club",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-045-participant-9",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-045",
+          "dm-sanskrit-evidence-045"
+        ],
+        "id": "graph-rel-dm-event-045-participant-9",
+        "object_id": "graph-event-dm-event-045",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-048-participant-2",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-048",
+          "dm-supp-evidence-mudgara"
+        ],
+        "id": "graph-rel-dm-event-048-participant-2",
+        "object_id": "graph-event-dm-event-048",
+        "predicate": "participates_in",
+        "subject_id": "dm-arrows",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-048-participant-3",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-048",
+          "dm-supp-evidence-mudgara"
+        ],
+        "id": "graph-rel-dm-event-048-participant-3",
+        "object_id": "graph-event-dm-event-048",
+        "predicate": "participates_in",
+        "subject_id": "dm-bow",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-048-participant-5",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-048",
+          "dm-supp-evidence-mudgara"
+        ],
+        "id": "graph-rel-dm-event-048-participant-5",
+        "object_id": "graph-event-dm-event-048",
+        "predicate": "participates_in",
+        "subject_id": "dm-discus",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-048-participant-6",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-048",
+          "dm-supp-evidence-mudgara"
+        ],
+        "id": "graph-rel-dm-event-048-participant-6",
+        "object_id": "graph-event-dm-event-048",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-048-participant-8",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-048",
+          "dm-supp-evidence-mudgara"
+        ],
+        "id": "graph-rel-dm-event-048-participant-8",
+        "object_id": "graph-event-dm-event-048",
+        "predicate": "participates_in",
+        "subject_id": "dm-club",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-049-participant-2",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-049"
+        ],
+        "id": "graph-rel-dm-event-049-participant-2",
+        "object_id": "graph-event-dm-event-049",
+        "predicate": "participates_in",
+        "subject_id": "dm-trident",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-051-participant-14",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-051",
+          "dm-supp-evidence-narayani-names"
+        ],
+        "id": "graph-rel-dm-event-051-participant-14",
+        "object_id": "graph-event-dm-event-051",
+        "predicate": "participates_in",
+        "subject_id": "dm-trident",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-051-participant-16",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-051",
+          "dm-supp-evidence-narayani-names"
+        ],
+        "id": "graph-rel-dm-event-051-participant-16",
+        "object_id": "graph-event-dm-event-051",
+        "predicate": "participates_in",
+        "subject_id": "dm-sword",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-059-participant-2",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-059"
+        ],
+        "id": "graph-rel-dm-event-059-participant-2",
+        "object_id": "graph-event-dm-event-059",
+        "predicate": "participates_in",
+        "subject_id": "dm-brahma",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-061-participant-0",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-061",
+          "dm-sanskrit-evidence-061"
+        ],
+        "id": "graph-rel-dm-event-061-participant-0",
+        "object_id": "graph-event-dm-event-061",
+        "predicate": "participates_in",
+        "subject_id": "dm-medhas",
+        "verification_status": "VERIFIED"
+      },
+      {
+        "assertion_id": "graph-assert-dm-event-062-participant-0",
+        "claim_kind": "DOCUMENTARY_GRAPH_LINK",
+        "evidence_ids": [
+          "dm-evidence-062",
+          "dm-sanskrit-evidence-062"
+        ],
+        "id": "graph-rel-dm-event-062-participant-0",
+        "object_id": "graph-event-dm-event-062",
+        "predicate": "participates_in",
+        "subject_id": "dm-medhas",
+        "verification_status": "VERIFIED"
+      }
+    ],
+    "request_hash": "5d6d4863d9251cb801a991cbbb989eaea8a4cac75e91bcb1b0dd93e05f0b63f9",
+    "required_event_ids": [
+      "dm-event-004",
+      "dm-event-005",
+      "dm-event-006",
+      "dm-event-007"
+    ],
+    "required_sections": [
+      "opening",
+      "context",
+      "beats",
+      "climax",
+      "aftermath",
+      "ending",
+      "claim_map",
+      "dialogue"
+    ],
+    "revision_request": {
+      "affected_sections": [
+        "ch-02",
+        "ch-03",
+        "ch-04",
+        "ch-06",
+        "ch-07",
+        "ch-08"
+      ],
+      "book_id": "DM02",
+      "bounded_excerpts": [
+        "The exact bodily place associated with the final act is uncertain across the bounded witnesses used for this book. The story therefore keeps only what the cleared evidence establishes",
+        "The account gives no childhood for them, no family history and no earlier boon.",
+        "they were not a list invented by the storyteller, nor a declaration added by this book.",
+        "The source tells of a combat fought with his arms, close and unrelenting.",
+        "The account does not bring in another deity to grant it, nor does it tell of an older ascetic bargain that made the demons invulnerable.",
+        "The telling does not linger over the violence. It is enough to know",
+        "After five thousand years of struggle, there was no third attacker and no further condition. The unusual boon had been offered, chosen, limited and fulfilled.",
+        "Yoganidra’s part in the episode was complete: she had held the cosmic sleep, withdrawn when Brahma invoked her, appeared before him, and deluded the two Asuras until their confidence turned the battle.",
+        "This bounded tale does not claim when they receded or what came next.",
+        "Sage Medhas brought the episode to its close where the source-bounded action closes: the threat to Brahma ended, Madhu and Kaitabha defeated under their own condition, and the power behind sleep revealed through what she had done.",
+        "The story was complete.",
+        "The episode asks readers to notice how its turning points differ from one another.",
+        "The story does not treat sleep, strength and wisdom as if they were the same thing. Each has a different place in the sequence.",
+        "This is a modern editorial reflection, not a quotation from the Devi Mahatmya and not an additional event in the sacred story.",
+        "Those questions are offered for conversation. They are not presented as words spoken by Medhas, Brahma, Vishnu, Madhu, Kaitabha or the Goddess."
+      ],
+      "constraint": "Repair only listed findings and affected sections; preserve all approved source choices and unrelated text.",
+      "finding_ids": [
+        "MAIN_NARRATIVE_EDITORIAL_AUDIT_INTRUSIONS",
+        "ENDING_CLOSURE_RECAP_STACK",
+        "FAMILY_REFLECTION_REPEATS_ANALYSIS_AND_DISCLOSURE"
+      ],
+      "request_hash": "febe91bfff1cbdc3a9454bf89d7bffd3a176d6e46852b28ea895735396356eb8",
+      "review_hash": "02fb9ac76532a9d409faac2ded74e90f155598ae17c8228997b6e9615b95b3af",
+      "reviewed_manuscript_hash": "8b7dc126012186ada26df3b6acb16e46fcc72a600ad151de49f6aaf3c06d2c44",
+      "schema_version": "1.0"
+    },
+    "rights_constraints": [
+      "Write fresh original English prose from evidence paraphrases and locators.",
+      "Do not reproduce Wisdomlib presentation, OCR, synopsis, or another modern translation.",
+      "Do not reproduce the SanskritDocuments transcription.",
+      "Do not present created dialogue as a direct scripture quotation.",
+      "This is a private editorial draft; publication remains blocked."
+    ],
+    "rules_hash": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070",
+    "schema_version": "1.0",
+    "scope": "Brahma, Vishnu's cosmic sleep, Madhu and Kaitabha, Goddess Yogamaya, boon negotiation and defeat",
+    "source_classification_rules": [
+      "Source claims must be MULA or SAMPRADAYA and cite evidence.",
+      "Narrative bridges must be DRISHTI and visibly labelled in the claim map.",
+      "Invented material must be KALPANA and may not change doctrine, identity, causality, or outcome."
+    ],
+    "source_clearance_hash": "483cc82d41b142878778e107deabd090ec623ccf4a48410b28d80a3c95f1213e",
+    "title": "The Sleep That Held Vishnu"
+  },
+  "request_hash": "5d6d4863d9251cb801a991cbbb989eaea8a4cac75e91bcb1b0dd93e05f0b63f9",
+  "required_capability": "manuscript_generation",
+  "required_independence_from_writer_id": null,
+  "required_role": "manuscript-story",
+  "schema_version": "1.0",
+  "status": "AWAITING_CODEX_SPECIALIST_AGENT"
+}

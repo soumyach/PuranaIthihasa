@@ -1,0 +1,170 @@
+{
+  "authoring_constraints": [
+    "Use only the locked graph paraphrases, source order, evidence ids and locators for dm-event-004 through dm-event-007 as factual inputs.",
+    "Write fresh original English prose; copy no wording, OCR, synopsis, typography, HTML presentation or other expressive presentation from Wisdomlib, and copy no SanskritDocuments transcription or presentation.",
+    "Preserve the nested framing: Medhas narrates this primordial episode, and the cosmic and theological descriptions in dm-event-005 are Brahma's attributed praise rather than an independent theological certification by the project.",
+    "Keep Mahamaya or Yoganidra's delusion of Madhu and Kaitabha, Vishnu's awakening, the five-thousand-year combat, the demons' joint boon offer, Vishnu's requested boon, the dry-place condition and the discus killing in source order.",
+    "Treat Madhu and Kaitabha as joint boon grantors; do not import an ascetic, invulnerability or other boon backstory absent from this bounded evidence.",
+    "Do not assert a precise thigh, lap, buttocks or other bodily locus for the killing. State only that the water condition is met and Vishnu kills them with the discus, because dm-variant-jaghane remains open.",
+    "Do not expand the hymn into an exhaustive list or silently resolve uncertain weapon terminology such as bhushundi; keep any unneeded detail out and any retained identification within the packet wording.",
+    "Do not invent source facts, motives, iconography, chronology, family relations, identities, power mechanics or causal links. Any necessary connective prose or dialogue must be clearly treated as adaptation and must not alter a locked claim.",
+    "Keep the manuscript an internal private editorial draft. Do not commission or generate illustrations, compose pages, export a PDF, publish, distribute or publicly share it under this clearance."
+  ],
+  "book_id": "DM02",
+  "dossier_hash": "601fc63f99cb9ad7d7feb14b45216c573568c4afe395f192e9d97fb83b211457",
+  "graph_hash": "f3a02b5eebbe4b11035240f64ede32fcf889ff7b85f481dfe11b13744a0fc6b1",
+  "independent_source_review": {
+    "critical_edition_collation": "NOT_PERFORMED",
+    "direct_witness_urls": [
+      "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117155.html",
+      "https://sanskritdocuments.org/doc_devii/durga700.html"
+    ],
+    "executed": true,
+    "independent_of_manuscript_writer": true,
+    "pivotal_claim_checks": [
+      {
+        "claim": "Medhas distinguishes eternal Devi from her narrated appearances; at cosmic dissolution Vishnu sleeps on Shesha while Madhu and Kaitabha arise from his ear-region and threaten lotus-seated Brahma, who seeks Vishnu's awakening.",
+        "event_ids": [
+          "dm-event-004"
+        ],
+        "evidence_ids": [
+          "dm-evidence-004"
+        ],
+        "result": "SUPPORTED_SINGLE_ENGLISH_WITNESS"
+      },
+      {
+        "claim": "Brahma's hymn attributes sacrificial, cosmic, intellectual and armed-power predicates to the goddess and asks her to delude the demons and awaken Vishnu; these predicates remain attributed praise.",
+        "event_ids": [
+          "dm-event-005"
+        ],
+        "evidence_ids": [
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "result": "SUPPORTED_CROSS_WITNESS_AS_ATTRIBUTED_PRAISE"
+      },
+      {
+        "claim": "Yoganidra leaves Vishnu's eyes, mouth, nose, arms, heart and breast; Vishnu awakens, fights for five thousand years, and the deluded demons jointly offer him a boon.",
+        "event_ids": [
+          "dm-event-006"
+        ],
+        "evidence_ids": [
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006"
+        ],
+        "result": "SUPPORTED_CROSS_WITNESS"
+      },
+      {
+        "claim": "Vishnu requests that both demons be killable by him; they condition death on a place where earth is not inundated; he accepts and kills them with his discus, while the exact bodily locus remains unresolved.",
+        "event_ids": [
+          "dm-event-007"
+        ],
+        "evidence_ids": [
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-007"
+        ],
+        "result": "SUPPORTED_CROSS_WITNESS_WITH_BODILY_LOCUS_RESERVED"
+      }
+    ],
+    "result": "PASS_WITH_LIMITATIONS",
+    "review_scope": "DM02 bounded arc only; dm-event-004 through dm-event-007; Pargiter canto 81 and the locked bounded SanskritDocuments ranges for Devi Mahatmya chapter 1",
+    "reviewed_event_ids": [
+      "dm-event-004",
+      "dm-event-005",
+      "dm-event-006",
+      "dm-event-007"
+    ],
+    "reviewer_capability": "SOURCE_PROVENANCE_AND_RIGHTS_REVIEW",
+    "reviewer_id": "/root/pr4_source_rights",
+    "theological_certification": "NOT_PERFORMED"
+  },
+  "limitations": [
+    "This is an operational evidence and provenance review, not legal advice.",
+    "Permission is limited to a private original English editorial manuscript draft bound to the exact dossier, packet and graph hashes in this record.",
+    "Illustration, visual development, page composition, PDF generation, publication, public sharing and distribution remain blocked.",
+    "Critical-edition collation and independent translation of the Sanskrit witness were not performed.",
+    "No theological, sectarian, cultural-authority or iconographic certification is granted.",
+    "The source graph remains read-only, and this candidate does not change the dossier's BLOCKED source-readiness status, UNKNOWN rights dimension, UNDETERMINED independent-full-arc dimension or NOT_CERTIFIED publication readiness.",
+    "The arc is complete only as a four-event bounded chronology; chapter extraction remains NARRATIVE_COMPLETE_ATOMIC_PARTIAL and is not exhaustive scripture verification.",
+    "The Pargiter witness translates a Calcutta text and notes Bombay readings; the underlying print editions and manuscript variants have not been critically collated.",
+    "The SanskritDocuments witness is a modern volunteer digital transcription used for bounded comparison only; its transcription and presentation may not be reproduced.",
+    "dm-event-004 has one locked English witness in the packet; events dm-event-005 through dm-event-007 have only the specific bounded Sanskrit cross-witness support identified in their evidence records.",
+    "Pargiter's killing sentence and Sanskrit jaghane are not reconciled by a critical witness; no precise bodily-locus claim is cleared.",
+    "No worldwide or target-market publication rights opinion has been obtained."
+  ],
+  "packet_hashes": [
+    "b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd"
+  ],
+  "private_draft_gate": "PRIVATE_DRAFT_PERMITTED_PUBLICATION_BLOCKED",
+  "publication_gate": "BLOCKED",
+  "rights_determination": {
+    "assessed_jurisdictions": [
+      "IN",
+      "US"
+    ],
+    "evidence": [
+      {
+        "authority": "Internet Archive/Open Library bibliographic record",
+        "id": "rights-evidence-pargiter-1904",
+        "supports": "Pargiter's English translation was published in Calcutta by the Asiatic Society of Bengal in 1904.",
+        "url": "https://archive.org/details/cu31924022991974"
+      },
+      {
+        "authority": "Journal of the Royal Asiatic Society obituary",
+        "id": "rights-evidence-pargiter-death",
+        "supports": "F. E. Pargiter died on 18 February 1927.",
+        "url": "https://doi.org/10.1017/S0035869X00058019"
+      },
+      {
+        "authority": "India Code, Copyright Act 1957, section 22",
+        "id": "rights-evidence-india-section-22",
+        "supports": "Published literary works receive life plus sixty years measured from the next calendar year; the assessed Indian term ended 31 December 1987.",
+        "url": "https://www.indiacode.nic.in/bitstream/123456789/1367/1/a195714.pdf"
+      },
+      {
+        "authority": "United States Copyright Office Circular 38B",
+        "id": "rights-evidence-us-uraa",
+        "supports": "URAA restoration requires that a work not be in the public domain through term expiration in its source country; the project grants no broader distribution conclusion from this rule.",
+        "url": "https://www.copyright.gov/circs/circ38b.pdf"
+      },
+      {
+        "authority": "SanskritDocuments FAQ and copying policy",
+        "id": "rights-evidence-sanskritdocuments-boundary",
+        "supports": "The volunteer digital transcription is reference-only for this project and is excluded from reproduction.",
+        "url": "https://www.sanskritdocuments.org/faq/"
+      }
+    ],
+    "legal_opinion": false,
+    "modern_web_presentation_reuse": "PROHIBITED",
+    "pargiter_1904_translation": "PUBLIC_DOMAIN_TERM_EXPIRED_IN_ASSESSED_JURISDICTIONS",
+    "public_distribution_clearance": "NOT_ASSESSED_OR_GRANTED",
+    "sanskritdocuments_transcription_reuse": "PROHIBITED",
+    "status": "PASS_WITH_LIMITATIONS",
+    "underlying_ancient_narrative": "PUBLIC_DOMAIN_OR_UNPROTECTABLE_IDEA_FACT_BASIS",
+    "use": "ORIGINAL_ENGLISH_ADAPTATION_FROM_EVIDENCE_PARAPHRASES"
+  },
+  "rules_hash": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070",
+  "schema_version": "1.0",
+  "source_edition": {
+    "bibliographic_record": "https://archive.org/details/cu31924022991974",
+    "dm_scope": "Pargiter canto 81; Devi Mahatmyam chapter 1; locked dm-event-004 through dm-event-007 only",
+    "internet_archive_identifier": "cu31924022991974",
+    "oclc": "6429109",
+    "place": "Calcutta",
+    "publisher": "Asiatic Society of Bengal",
+    "source_id": "dm-source",
+    "title": "The Markandeya Purana, translated with notes",
+    "translator": "F. Eden Pargiter",
+    "witness_id": "dm-pargiter",
+    "year": 1904
+  },
+  "unresolved_contradictions_and_limits": [
+    "The source-readiness dossier records independent full-arc review as UNDETERMINED; this separate review clears only the bounded private-draft gate and does not rewrite that dossier dimension.",
+    "The arc is narratively complete for dm-event-004 through dm-event-007 but the chapter is not exhaustively atomized.",
+    "Pargiter's Calcutta-based translation, its Bombay-reading notes and the SanskritDocuments display have not been critically collated against underlying editions or manuscripts.",
+    "The exact bodily locus in dm-event-007 remains open because Pargiter's rendering and Sanskrit jaghane are not resolved by a critical witness.",
+    "Theological statements in dm-event-005 are speaker-attributed hymn claims, not project-certified doctrine.",
+    "Modern Wisdomlib presentation and SanskritDocuments transcription rights are not cleared for reproduction.",
+    "No illustration, PDF, publication, distribution, worldwide-rights or target-market clearance is granted."
+  ]
+}

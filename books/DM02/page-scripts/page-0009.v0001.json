@@ -1,0 +1,203 @@
+{
+  "character_ids": [
+    "dm-brahma",
+    "dm-yoganidra",
+    "dm-vishnu",
+    "dm-madhu",
+    "dm-kaitabha"
+  ],
+  "continuity_in": "after-page-08",
+  "continuity_out": "after-page-09",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-brahma",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-yoganidra",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-vishnu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-madhu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-kaitabha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-005"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "immersive hold",
+    "type": "FULL_PAGE"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p09-narration",
+      "placement": "caption-safe-region",
+      "text": "Brahma gathered his attention and praised the Goddess who held Vishnu in sleep."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p09-dialogue",
+      "placement": "speaker-anchored-balloon",
+      "speaker_id": "dm-brahma",
+      "text": "You are the sacred utterance by which offerings are made. You are the power by which creation arises, by which it is preserved, and by which it is drawn again into dissolution. You are knowledge, and you are the great illusion that can veil knowledge. You are nature, nourishment and peace. You are also power armed against danger."
+    }
+  ],
+  "location_id": "dm02-brahma-lotus",
+  "moment_ids": [
+    "brahma_invokes_goddess"
+  ],
+  "narrative_beats": [
+    "Brahma gathered his attention and praised the Goddess who held Vishnu in sleep."
+  ],
+  "page_id": "page-ca28c1486ed14e92ca7c6c89",
+  "page_number": 9,
+  "panel_count": 1,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-brahma",
+        "dm-yoganidra",
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "composition": "Full-page devotional address from Brahmā toward the source-neutral field of Yoganidrā; keep the hymn attributed to its speaker and do not literalize its cosmic names as independent project facts or add a weapon array.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p09-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Full-page devotional address from Brahmā toward the source-neutral field of Yoganidrā; keep the hymn attributed to its speaker and do not literalize its cosmic names as independent project facts or add a weapon array.",
+        "shot_scale": "wide"
+      },
+      "location_id": "dm02-brahma-lotus",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p09-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Full-page devotional address from Brahmā toward the source-neutral field of Yoganidrā; keep the hymn attributed to its speaker and do not literalize its cosmic names as independent project facts or add a weapon array."
+    }
+  ],
+  "reading_order": [
+    "p09-panel-01"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p09-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-005-a",
+    "claim-005-c"
+  ],
+  "title": "Brahma's Hymn",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation",
+    "no unsupported iconography",
+    "no unsupported body-locus claim"
+  ],
+  "version": 1,
+  "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+}

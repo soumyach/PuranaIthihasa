@@ -1,0 +1,273 @@
+{
+  "character_ids": [
+    "dm-vishnu",
+    "dm-madhu",
+    "dm-kaitabha"
+  ],
+  "continuity_in": "after-page-18",
+  "continuity_out": "after-page-19",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-vishnu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-madhu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-kaitabha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-007"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "THREE_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p19-narration-a",
+      "placement": "caption-safe-region",
+      "text": "Across the scene lay only the flood of dissolution."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p19-dialogue-madhu",
+      "placement": "speaker-anchored-balloon",
+      "speaker_id": "dm-madhu",
+      "text": "Only where earth is not flooded."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p19-dialogue-kaitabha",
+      "placement": "speaker-anchored-balloon",
+      "speaker_id": "dm-kaitabha",
+      "text": "On that condition, we grant it."
+    },
+    {
+      "channel": "NARRATION",
+      "id": "p19-narration-b",
+      "placement": "caption-safe-region",
+      "text": "It was a condition attached by both demons to the boon they had offered."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p19-dialogue-vishnu",
+      "placement": "speaker-anchored-balloon",
+      "speaker_id": "dm-vishnu",
+      "text": "I accept."
+    }
+  ],
+  "location_id": "dm02-flooded-combat-expanse",
+  "moment_ids": [],
+  "narrative_beats": [
+    "Across the scene lay only the flood of dissolution.",
+    "It was a condition attached by both demons to the boon they had offered."
+  ],
+  "page_id": "page-0a7e5fc37740e64356580b94",
+  "page_number": 19,
+  "panel_count": 3,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "composition": "Wide panel of flood in every direction as Madhu states the first half of the joint condition; no dry place is yet shown.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p19-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Wide panel of flood in every direction as Madhu states the first half of the joint condition; no dry place is yet shown.",
+        "shot_scale": "wide"
+      },
+      "location_id": "dm02-flooded-combat-expanse",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p19-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Wide panel of flood in every direction as Madhu states the first half of the joint condition; no dry place is yet shown."
+    },
+    {
+      "character_ids": [
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "composition": "Balanced two-shot of Madhu and Kaiṭabha completing the condition jointly, with neither replaced by an outside boon-giver.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p19-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Balanced two-shot of Madhu and Kaiṭabha completing the condition jointly, with neither replaced by an outside boon-giver.",
+        "shot_scale": "medium"
+      },
+      "location_id": "dm02-flooded-combat-expanse",
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p19-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Balanced two-shot of Madhu and Kaiṭabha completing the condition jointly, with neither replaced by an outside boon-giver."
+    },
+    {
+      "character_ids": [
+        "dm-vishnu"
+      ],
+      "composition": "Close dialogue hold on Viṣṇu's acceptance; do not preview any thigh, lap, buttocks or other anatomical solution.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p19-panel-03",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Close dialogue hold on Viṣṇu's acceptance; do not preview any thigh, lap, buttocks or other anatomical solution.",
+        "shot_scale": "close"
+      },
+      "location_id": "dm02-flooded-combat-expanse",
+      "reading_order": 3,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p19-panel-03-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Close dialogue hold on Viṣṇu's acceptance; do not preview any thigh, lap, buttocks or other anatomical solution."
+    }
+  ],
+  "reading_order": [
+    "p19-panel-01",
+    "p19-panel-02",
+    "p19-panel-03"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p19-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-007-b",
+    "claim-007-e"
+  ],
+  "title": "The Condition",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation",
+    "no unsupported iconography",
+    "no unsupported body-locus claim"
+  ],
+  "version": 1,
+  "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+}

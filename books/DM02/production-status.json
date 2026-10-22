@@ -1,0 +1,48 @@
+{
+  "book_id": "DM02",
+  "component_hashes": {
+    "character_bible": "b469d78e327da2b41082dfbb48ad51a5a98e47112eea311157b2fd7ab979a1f7",
+    "location_bible": "33a8a7d20973eba40580261f7f274375593db356d81564dd0a55cb9c2f0a592f",
+    "proof_specs": "38ccd93cfe00915a978c27e6be701ce481236c0f6fdb37010781a0e67a97044c",
+    "storyboard": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+    "typography": "1715e23bd5df85a61d1f93741e4d22c2230d31e300081247f455a28ded31d676"
+  },
+  "exact_result": "VISUAL_PREPRODUCTION_REVIEWED_PUBLICATION_BLOCKED",
+  "full_page_immersive_scenes": [
+    3,
+    4,
+    6,
+    9,
+    11,
+    15,
+    21
+  ],
+  "independent_editorial_review": "PASS_DUAL_PERSPECTIVE",
+  "latest_manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+  "latest_manuscript_version": 2,
+  "manuscript_draft_completion": "COMPLETE_PR5_LATEST_REVISION",
+  "manuscript_v3_hash": null,
+  "preproduction_review_hash": "60c90cd042c3502d442b31cc5885fd20a541653361486ef1df895157194df205",
+  "private_draft_gate": "PRIVATE_DRAFT_PERMITTED_PUBLICATION_BLOCKED",
+  "proof_specs": 4,
+  "publication_blockers": [
+    "WORLDWIDE_OR_TARGET_MARKET_PUBLICATION_RIGHTS_NOT_CLEARED",
+    "CHAPTER_EXTRACTION_ATOMICALLY_PARTIAL",
+    "INDEPENDENT_FULL_ARC_SOURCE_APPROVAL_NOT_ESTABLISHED",
+    "IMAGE_PROVIDER_NOT_CONFIGURED",
+    "VISUAL_SEMANTIC_REVIEW_NOT_EXECUTED",
+    "TYPOGRAPHY_FONT_LICENSE_SELECTION_PENDING",
+    "TRIM_BLEED_AND_EXPORT_PROFILE_NOT_SPECIFIED",
+    "FULL_ILLUSTRATION_PDF_AND_PUBLICATION_OUTSIDE_PR5"
+  ],
+  "publication_readiness": "BLOCKED",
+  "run_stage": "ART_PROOFS",
+  "schema_version": "1.0",
+  "scripted_pages": 24,
+  "semantic_visual_review": "NOT_EXECUTED_NO_IMAGES_OR_BACKEND",
+  "source_readiness": "BLOCKED",
+  "status_hash": "6bb877e5f109b5c3604ed3e22036af49a63e1066bc2b575cb79a8b7c70b83fb3",
+  "visual_preproduction": "PASS_DETERMINISTIC_SPECIFICATION_REVIEW",
+  "visual_production": "NOT_STARTED_PR5_BOUNDARY",
+  "visual_proof_generation": "BLOCKED_PROVIDER"
+}

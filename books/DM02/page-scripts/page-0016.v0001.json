@@ -1,0 +1,224 @@
+{
+  "character_ids": [
+    "dm-vishnu",
+    "dm-madhu",
+    "dm-kaitabha",
+    "dm-yoganidra"
+  ],
+  "continuity_in": "after-page-15",
+  "continuity_out": "after-page-16",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-vishnu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-madhu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-kaitabha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-yoganidra",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-006"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "TWO_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p16-narration",
+      "placement": "caption-safe-region",
+      "text": "The story’s measure of time is immense, but its problem is easy to understand: strength met strength, and still the danger remained. Whenever one attacker was forced back, the other pressed in. Whenever both were driven away, they returned to the struggle.\n\nThen Yoganidra’s power brought the reversal Brahma had requested.\n\nMadhu and Kaitabha became deluded. Intoxicated with their own strength, they no longer saw the contest clearly. They had fought Vishnu for five thousand years, and pride made them speak as if the advantage were theirs to give."
+    }
+  ],
+  "location_id": "dm02-flooded-combat-expanse",
+  "moment_ids": [],
+  "narrative_beats": [
+    "The story’s measure of time is immense, but its problem is easy to understand: strength met strength, and still the danger remained. Whenever one attacker was forced back, the other pressed in. Whenever both were driven away, they returned to the struggle.",
+    "Then Yoganidra’s power brought the reversal Brahma had requested.",
+    "Madhu and Kaitabha became deluded. Intoxicated with their own strength, they no longer saw the contest clearly. They had fought Vishnu for five thousand years, and pride made them speak as if the advantage were theirs to give."
+  ],
+  "page_id": "page-a77b8959a9dbfa9b247f6eed",
+  "page_number": 16,
+  "panel_count": 2,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "composition": "A repeated struggle rhythm shows one Asura pressing whenever the other falls back; use only arm-to-arm action and no invented strategy.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p16-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "A repeated struggle rhythm shows one Asura pressing whenever the other falls back; use only arm-to-arm action and no invented strategy.",
+        "shot_scale": "wide"
+      },
+      "location_id": "dm02-flooded-combat-expanse",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p16-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "A repeated struggle rhythm shows one Asura pressing whenever the other falls back; use only arm-to-arm action and no invented strategy."
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha",
+        "dm-yoganidra"
+      ],
+      "composition": "The struggle pauses as Madhu and Kaiṭabha's posture shifts to pride under Yoganidrā's deluding power; render the influence as source-neutral spatial distortion, not mind-control anatomy or a new motive.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p16-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "The struggle pauses as Madhu and Kaiṭabha's posture shifts to pride under Yoganidrā's deluding power; render the influence as source-neutral spatial distortion, not mind-control anatomy or a new motive.",
+        "shot_scale": "medium"
+      },
+      "location_id": "dm02-flooded-combat-expanse",
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p16-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "The struggle pauses as Madhu and Kaiṭabha's posture shifts to pride under Yoganidrā's deluding power; render the influence as source-neutral spatial distortion, not mind-control anatomy or a new motive."
+    }
+  ],
+  "reading_order": [
+    "p16-panel-01",
+    "p16-panel-02"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p16-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-006-b",
+    "claim-006-c",
+    "claim-006-d"
+  ],
+  "title": "The Reversal",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation",
+    "no unsupported iconography",
+    "no unsupported body-locus claim"
+  ],
+  "version": 1,
+  "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+}

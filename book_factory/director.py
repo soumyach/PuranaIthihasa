@@ -101,6 +101,11 @@ class FactoryDirector:
             raise ContractError("max_image_requests must be between 1 and 2")
         return config
 
+    @staticmethod
+    def _requires_dual_editorial_review(book_id):
+        """DM02 is the first new complete-book pilot and requires both specialists."""
+        return book_id == "DM02"
+
     def status(self):
         books = self.catalogue.list_books()
         states = []
@@ -326,15 +331,22 @@ class FactoryDirector:
         if pr5_quality_revision:
             if revision_review_hash:
                 raise ContractError("PR5 quality revision and FIX-review revision are mutually exclusive")
-            if not parent or parent["version"] != 2:
-                raise ContractError("PR5 quality revision requires immutable DM04 manuscript v2 as latest parent")
+            expected_parent_version = 1 if self._requires_dual_editorial_review(book_id) else 2
+            if not parent or parent["version"] != expected_parent_version:
+                raise ContractError("literary-quality revision requires the expected immutable latest manuscript parent")
             reviews = EditorialReviewStore(self.books_root).versions(book_id)
             passed = [
                 item for item in reviews
                 if item["payload"].get("result") == "PASS"
                 and item["payload"].get("reviewed_manuscript_hash") == parent["content_hash"]
             ]
-            if not passed:
+            passed_perspectives = {
+                item["payload"].get("review_perspective", "LEGACY_COMBINED") for item in passed
+            }
+            if self._requires_dual_editorial_review(book_id):
+                if not PR5_REVIEW_PERSPECTIVES.issubset(passed_perspectives):
+                    raise ContractError("literary-quality revision requires both independent PASS reviews")
+            elif not passed:
                 raise ContractError("PR5 quality revision requires the independent PASS review bound to v2")
             revision = pr5_quality_revision_request(parent, passed[-1])
             milestone_contract = revision
@@ -528,7 +540,9 @@ class FactoryDirector:
             "manuscript_draft_completion": "COMPLETE",
             "independent_editorial_review": "AWAITING_REVIEW",
             "required_review_perspectives": (
-                sorted(PR5_REVIEW_PERSPECTIVES) if record["version"] >= 3 else ["LEGACY_COMBINED"]
+                sorted(PR5_REVIEW_PERSPECTIVES)
+                if record["version"] >= 3 or self._requires_dual_editorial_review(book_id)
+                else ["LEGACY_COMBINED"]
             ),
             "completed_review_perspectives": [],
             "visual_production": "NOT_STARTED",
@@ -570,7 +584,7 @@ class FactoryDirector:
         if not manuscripts:
             raise ContractError("no immutable manuscript exists to review")
         manuscript = manuscripts[-1]
-        if manuscript["version"] >= 3:
+        if manuscript["version"] >= 3 or self._requires_dual_editorial_review(book_id):
             if perspective not in PR5_REVIEW_PERSPECTIVES:
                 raise ContractError("PR5 review requires SOURCE_FIDELITY or LITERARY_EXPERIENCE perspective")
         else:
@@ -706,7 +720,7 @@ class FactoryDirector:
         pr5_dual_pass = all(perspective_results.get(name) == "PASS" for name in PR5_REVIEW_PERSPECTIVES)
         any_fix = any(value == "FIX" for value in perspective_results.values())
         any_escalate = any(value == "ESCALATE" for value in perspective_results.values())
-        if current["version"] >= 3:
+        if current["version"] >= 3 or self._requires_dual_editorial_review(book_id):
             pr5_label = "MANUSCRIPT_V3" if current["version"] == 3 else "MANUSCRIPT_PR5_LATEST_REVISION"
             exact_result = (
                 "%s_REQUIRES_REVISION_PUBLICATION_BLOCKED" % pr5_label if any_fix else
@@ -732,7 +746,9 @@ class FactoryDirector:
             "manuscript_draft_completion": "COMPLETE",
             "independent_editorial_review": editorial_summary,
             "required_review_perspectives": (
-                sorted(PR5_REVIEW_PERSPECTIVES) if current["version"] >= 3 else ["LEGACY_COMBINED"]
+                sorted(PR5_REVIEW_PERSPECTIVES)
+                if current["version"] >= 3 or self._requires_dual_editorial_review(book_id)
+                else ["LEGACY_COMBINED"]
             ),
             "completed_review_perspectives": sorted(perspective_results),
             "review_results_by_perspective": perspective_results,
@@ -746,7 +762,11 @@ class FactoryDirector:
             ],
             "latest_manuscript_hash": current["content_hash"],
             "latest_review_hash": finalized["review_hash"],
-            "revision_required": any_fix if current["version"] >= 3 else finalized["result"] == "FIX",
+            "revision_required": (
+                any_fix
+                if current["version"] >= 3 or self._requires_dual_editorial_review(book_id)
+                else finalized["result"] == "FIX"
+            ),
             "exact_result": exact_result,
         }
         status["status_hash"] = content_hash(status)
@@ -765,8 +785,11 @@ class FactoryDirector:
 
     def _pr5_review_gate(self, book_id):
         manuscripts = ManuscriptVersionStore(self.books_root).versions(book_id)
-        if not manuscripts or manuscripts[-1]["version"] < 3:
-            raise ContractError("visual preproduction requires immutable manuscript v3")
+        if not manuscripts or (
+            not self._requires_dual_editorial_review(book_id)
+            and manuscripts[-1]["version"] < 3
+        ):
+            raise ContractError("visual preproduction requires an immutable reviewed manuscript")
         current = manuscripts[-1]
         reviews = EditorialReviewStore(self.books_root).versions(book_id)
         results = {
@@ -787,6 +810,47 @@ class FactoryDirector:
             if item["payload"].get("reviewed_manuscript_hash") == current["content_hash"]
             and item["payload"].get("review_perspective") in PR5_REVIEW_PERSPECTIVES
         ]
+        dm02_complete_book = self._requires_dual_editorial_review(book_id)
+        required_character_groups = (
+            [
+                "Vishnu", "Brahma", "Madhu", "Kaitabha", "Yoganidra / Mahamaya",
+                "Shesha", "Medhas", "Suratha", "Samadhi",
+            ]
+            if dm02_complete_book else
+            [
+                "Devi", "Mahishasura and each sourced form", "Devi's lion", "principal gods",
+                "principal commanders", "Medhas", "Suratha", "Samadhi",
+            ]
+        )
+        required_locations = (
+            [
+                "forest hermitage frame", "cosmic ocean at dissolution", "Vishnu on Shesha",
+                "Brahma's lotus", "Yoganidra manifestation space", "flooded combat expanse",
+                "unflooded defeat locus",
+            ]
+            if dm02_complete_book else
+            [
+                "forest hermitage", "gods' gathering", "manifestation space", "battlefield",
+                "Mahishasura arrival", "thanksgiving",
+            ]
+        )
+        required_visual_moments = (
+            [
+                {"id": "medhas_opens_cosmic_tale", "event_ids": ["dm-event-004"]},
+                {"id": "vishnu_sleeps_on_shesha", "event_ids": ["dm-event-004"]},
+                {"id": "madhu_kaitabha_threaten_brahma", "event_ids": ["dm-event-004"]},
+                {"id": "brahma_invokes_goddess", "event_ids": ["dm-event-005"]},
+                {"id": "yoganidra_leaves_vishnu", "event_ids": ["dm-event-006"]},
+                {"id": "vishnu_awakens", "event_ids": ["dm-event-006"]},
+                {"id": "long_combat_shown_nonliterally", "event_ids": ["dm-event-006"]},
+                {"id": "demons_offer_unusual_boon", "event_ids": ["dm-event-006"]},
+                {"id": "vishnu_names_their_death", "event_ids": ["dm-event-007"]},
+                {"id": "unflooded_condition_and_defeat", "event_ids": ["dm-event-007"]},
+                {"id": "resolved_return_to_frame", "event_ids": ["dm-event-007"]},
+                {"id": "source_and_adaptation_notes", "event_ids": []},
+            ]
+            if dm02_complete_book else None
+        )
         request = {
             "schema_version": "1.0",
             "book_id": book_id,
@@ -813,14 +877,8 @@ class FactoryDirector:
                 "rule": "Suratha, Samadhi and Medhas may support the frame, but new listener reactions remain explicitly labelled literary adaptation.",
                 "source_graph_mutation_allowed": False,
             },
-            "required_character_groups": [
-                "Devi", "Mahishasura and each sourced form", "Devi's lion", "principal gods",
-                "principal commanders", "Medhas", "Suratha", "Samadhi",
-            ],
-            "required_locations": [
-                "forest hermitage", "gods' gathering", "manifestation space", "battlefield",
-                "Mahishasura arrival", "thanksgiving",
-            ],
+            "required_character_groups": required_character_groups,
+            "required_locations": required_locations,
             "canvas": {"aspect_ratio": "3:4", "pixel_width": 1086, "pixel_height": 1448},
             "palette": ["#071F35", "#D8AC4E", "#F0CF76", "#F6E8C6", "#FFF9EF", "#251C18", "#692019"],
             "text_channels": ["NARRATION", "DIALOGUE", "THOUGHT", "INSET_EXPLANATION"],
@@ -837,6 +895,8 @@ class FactoryDirector:
             "dossier_hash": dossier["dossier_hash"],
             "rules_hash": dossier["rules_hash"],
         }
+        if required_visual_moments is not None:
+            request["required_visual_moments"] = required_visual_moments
         request["request_hash"] = content_hash(request)
         handoff, path = self.handoffs.prepare(
             book_id,
@@ -883,8 +943,10 @@ class FactoryDirector:
         if package.get("proof_package", {}).get("storyboard_hash") != content_hash(package.get("storyboard")):
             raise ContractError("proof specifications do not bind the storyboard payload")
         required_events = [event["id"] for packet in packets for event in packet.get("events", [])]
+        locked_moments = handoff["request"].get("required_visual_moments")
         qa = validate_preproduction_package(
-            package, required_events, current["payload"], current["content_hash"]
+            package, required_events, current["payload"], current["content_hash"],
+            [item["id"] for item in locked_moments] if locked_moments is not None else None,
         )
         if qa["result"] != "PASS":
             raise ContractError("visual-preproduction package failed deterministic validation", {"findings": qa["findings"]})
@@ -992,13 +1054,16 @@ class FactoryDirector:
                     output_hashes=[output_hash],
                     policy_hashes=[dossier["rules_hash"]],
                 )
+        manuscript_versions = ManuscriptVersionStore(self.books_root).versions(book_id)
         status = {
             "schema_version": "1.0",
             "book_id": book_id,
             "source_readiness": dossier["status"],
             "private_draft_gate": self.clearances.latest(book_id)["private_draft_gate"],
             "manuscript_draft_completion": "COMPLETE_PR5_LATEST_REVISION",
-            "manuscript_v3_hash": ManuscriptVersionStore(self.books_root).versions(book_id)[2]["content_hash"],
+            "manuscript_v3_hash": (
+                manuscript_versions[2]["content_hash"] if len(manuscript_versions) >= 3 else None
+            ),
             "latest_manuscript_version": current["version"],
             "independent_editorial_review": "PASS_DUAL_PERSPECTIVE",
             "visual_preproduction": "PASS_DETERMINISTIC_SPECIFICATION_REVIEW",
@@ -1042,6 +1107,223 @@ class FactoryDirector:
             "images_generated": False,
             "pdf_generated": False,
             "publication_gate": "BLOCKED",
+        }
+
+    def prepare_complete_book_image_campaign(self, book_id, usage_observation_path):
+        """Freeze a complete-book art scope without authorizing or executing any image work."""
+        if book_id != "DM02":
+            raise ContractError("the complete-book campaign planner is currently scoped to the DM02 pilot")
+        manifest = self.catalogue.get(book_id)
+        if manifest is None:
+            raise ContractError("book %s is not in the catalogue" % book_id)
+        if manifest.get("edition_status") == "EXISTING_EDITION" or not manifest.get("automatic_production_eligible", True):
+            raise ContractError("existing/reference editions cannot enter image production")
+        status_path = self.books_root / book_id / "production-status.json"
+        if not status_path.is_file():
+            raise ContractError("complete-book image planning requires reviewed visual preproduction")
+        production_status = load_json(status_path)
+        if production_status.get("exact_result") != "VISUAL_PREPRODUCTION_REVIEWED_PUBLICATION_BLOCKED":
+            raise ContractError("complete-book image planning requires passing visual preproduction")
+
+        component_stores = {
+            "MANUSCRIPT": ManuscriptVersionStore(self.books_root).versions(book_id),
+            "STORYBOARD": StoryboardVersionStore(self.books_root).versions(book_id),
+            "CHARACTER_BIBLE": CharacterBibleVersionStore(self.books_root).versions(book_id),
+            "LOCATION_BIBLE": LocationBibleVersionStore(self.books_root).versions(book_id),
+            "TYPOGRAPHY": TypographyVersionStore(self.books_root).versions(book_id),
+            "PROOF_SPECS": ProofSpecVersionStore(self.books_root).versions(book_id),
+        }
+        if not all(component_stores.values()):
+            raise ContractError("complete-book image planning requires all immutable preproduction components")
+        latest = {role: records[-1] for role, records in component_stores.items()}
+        storyboard = latest["STORYBOARD"]["payload"]
+
+        usage_path = Path(usage_observation_path)
+        if not usage_path.is_absolute():
+            usage_path = self.root / usage_path
+        try:
+            usage_relative_path = usage_path.resolve().relative_to(self.root.resolve())
+        except ValueError as exc:
+            raise ContractError("usage observation must be stored inside the repository") from exc
+        if usage_relative_path.parts[:3] != ("books", book_id, "usage-observations"):
+            raise ContractError("usage observation must belong to the requested book")
+        usage = load_json(usage_path)
+        required_usage_fields = {
+            "observed_at", "source", "ordinary_usage_allowed", "codex_used_percent",
+            "codex_remaining_percent", "purchased_credit_balance", "has_purchased_credits",
+        }
+        missing_usage = sorted(required_usage_fields - set(usage))
+        if missing_usage:
+            raise ContractError("usage observation is incomplete", {"missing": missing_usage})
+        if usage.get("source") != "CODEX_APP_GET_USAGE_LIMITS_READ_ONLY":
+            raise ContractError("usage observation source is not the read-only Codex account control")
+
+        units = []
+        for page in storyboard.get("pages", []):
+            for panel in page.get("panels", []):
+                units.append({
+                    "unit_id": "%s--%s" % (page["page_id"], panel["id"]),
+                    "page_id": page["page_id"],
+                    "page_number": page["page_number"],
+                    "panel_id": panel["id"],
+                    "operation": "generate",
+                    "existing_usable_asset": None,
+                    "required_action": panel.get("image_instructions", {}).get("required_action"),
+                    "character_ids": panel.get("character_ids", []),
+                    "location_id": panel.get("location_id"),
+                    "safe_regions": panel.get("safe_regions", []),
+                    "reference_roles": {
+                        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+                        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+                        "C": "UNAVAILABLE_NO_APPROVED_DM02_CHARACTER_PIXELS",
+                        "D": "UNAVAILABLE_NO_APPROVED_DM02_ENVIRONMENT_PIXELS",
+                    },
+                })
+        if not units:
+            raise ContractError("storyboard has no visual units")
+
+        directory_by_role = {
+            "MANUSCRIPT": "manuscripts",
+            "STORYBOARD": "storyboards",
+            "CHARACTER_BIBLE": "character-bibles",
+            "LOCATION_BIBLE": "location-bibles",
+            "TYPOGRAPHY": "typography",
+            "PROOF_SPECS": "proof-specs",
+        }
+        locked_inputs = []
+        for role, record in latest.items():
+            path = self.books_root / book_id / directory_by_role[role] / ("v%04d.json" % record["version"])
+            locked_inputs.append({
+                "role": role,
+                "path": str(path.relative_to(self.root)),
+                "version": record["version"],
+                "content_hash": record["content_hash"],
+                "file_sha256": sha256_bytes(path.read_bytes()),
+            })
+        gold_path = self.root / "book-factory" / "references" / "visual-gold-standard" / "manifest.json"
+        locked_inputs.append({
+            "role": "PR7_VISUAL_GOLD_STANDARD",
+            "path": str(gold_path.relative_to(self.root)),
+            "file_sha256": sha256_bytes(gold_path.read_bytes()),
+        })
+        locked_inputs.append({
+            "role": "CODEX_USAGE_OBSERVATION",
+            "path": str(usage_relative_path),
+            "file_sha256": sha256_bytes(usage_path.read_bytes()),
+        })
+        for role, directory in (
+            ("SOURCE_READINESS_DOSSIER", "source-readiness"),
+            ("SOURCE_CLEARANCE", "source-clearance"),
+            ("STORY_PACKET", "story-packets"),
+        ):
+            candidates = sorted((self.books_root / book_id / directory).glob("*.json"))
+            if len(candidates) != 1:
+                raise ContractError("complete-book campaign requires one immutable %s input" % role)
+            path = candidates[0]
+            locked_inputs.append({
+                "role": role,
+                "path": str(path.relative_to(self.root)),
+                "file_sha256": sha256_bytes(path.read_bytes()),
+            })
+
+        initial_operations = len(units)
+        authorization_subject = {
+            "book_id": book_id,
+            "purpose": "PRIVATE_INTERNAL_COMPLETE_BOOK_ART_CAMPAIGN",
+            "provider_id": "codex-built-in-image-gen",
+            "api_key_authorized": False,
+            "external_provider_authorized": False,
+            "purchased_credits_authorized": False,
+            "automatic_credit_purchase_authorized": False,
+            "workspace_overage_authorized": False,
+            "maximum_paid_spend_minor_units": 0,
+            "currency": "USD",
+            "included_allowance_first": True,
+            "private_illustration_clearance_present": False,
+            "private_illustration_clearance_required_before_execution": True,
+            "unit_ids": [unit["unit_id"] for unit in units],
+            "initial_operation_count": initial_operations,
+            "retry_operation_ceiling": initial_operations,
+            "operation_ceiling_per_unit": 2,
+            "operation_ceiling_total": initial_operations * 2,
+            "publication_authorized": False,
+            "scope_inheritance_allowed": False,
+            "locked_input_hashes": sorted(item["file_sha256"] for item in locked_inputs),
+        }
+        subject_hash = content_hash(authorization_subject)
+        campaign = {
+            "schema_version": "1.0",
+            "book_id": book_id,
+            "campaign_id": "%s-complete-book-image-campaign-v1" % book_id.lower(),
+            "status": "AWAITING_CAMPAIGN_AUTHORIZATION",
+            "authorization_subject": authorization_subject,
+            "authorization_subject_hash": subject_hash,
+            "approval_record_created": False,
+            "image_operations_executed": 0,
+            "actual_incremental_usd": 0,
+            "actual_incremental_usd_verification": "NO_IMAGE_OPERATION_EXECUTED_HOST_MONETARY_LEDGER_UNAVAILABLE",
+            "actual_purchased_credits_consumed": 0,
+            "units": units,
+            "counts": {
+                "storyboard_pages": len(storyboard.get("pages", [])),
+                "storyboard_panels": len(units),
+                "panels_needing_new_art": len(units),
+                "existing_usable_assets": 0,
+                "image_edit_opportunities": 0,
+                "initial_generation_operations": initial_operations,
+                "maximum_retry_operations": initial_operations,
+                "maximum_total_operations": initial_operations * 2,
+            },
+            "allowance_observation": usage,
+            "cost_and_credit_boundary": {
+                "built_in_images_count_against_general_codex_usage": True,
+                "included_usage_estimate_per_image_available": False,
+                "zero_incremental_usd_enforceable_by_repository": False,
+                "reason": "The host image tool exposes no reservation or per-operation monetary estimate; exact-hash human authorization and a fresh preflight are required before every operation.",
+                "stop_if": [
+                    "PURCHASED_CREDIT_USE_REQUESTED",
+                    "PAID_BILLING_REQUESTED",
+                    "EXTERNAL_PROVIDER_OR_API_KEY_REQUIRED",
+                    "INCLUDED_ALLOWANCE_UNAVAILABLE",
+                    "PRIVATE_ILLUSTRATION_CLEARANCE_NOT_RECORDED",
+                    "OPERATION_CEILING_REACHED",
+                ],
+            },
+            "locked_inputs": locked_inputs,
+            "preservation": {
+                "dm04_mutation_authorized": False,
+                "dm08_mutation_authorized": False,
+                "source_graph_mutation_authorized": False,
+            },
+            "next_action": "Record explicit private-illustration clearance for the bounded adaptation and obtain one non-inheritable PRODUCTION_CAMPAIGN approval bound to authorization_subject_hash; do not generate images before both gates pass.",
+        }
+        campaign["campaign_hash"] = content_hash(campaign)
+        campaign_root = self.books_root / book_id / "image-campaigns"
+        campaign_path = campaign_root / (campaign["campaign_hash"] + ".request.json")
+        if campaign_path.exists() and load_json(campaign_path) != campaign:
+            raise ContractError("complete-book image campaign hash collision")
+        if not campaign_path.exists():
+            atomic_json_write(campaign_path, campaign)
+        status_record = {
+            "schema_version": "1.0",
+            "book_id": book_id,
+            "status": "AWAITING_CAMPAIGN_AUTHORIZATION",
+            "campaign_hash": campaign["campaign_hash"],
+            "authorization_subject_hash": subject_hash,
+            "image_operations_executed": 0,
+            "actual_incremental_usd": 0,
+            "actual_incremental_usd_verification": "NO_IMAGE_OPERATION_EXECUTED_HOST_MONETARY_LEDGER_UNAVAILABLE",
+            "publication_gate": "BLOCKED",
+            "resumable_from": str(campaign_path.relative_to(self.root)),
+        }
+        status_record["status_hash"] = content_hash(status_record)
+        atomic_json_write(self.books_root / book_id / "image-campaign-status.json", status_record)
+        return {
+            **status_record,
+            "campaign_path": str(campaign_path),
+            "counts": campaign["counts"],
+            "allowance_observation": usage,
+            "approval_record_created": False,
         }
 
     def image_capabilities(self):

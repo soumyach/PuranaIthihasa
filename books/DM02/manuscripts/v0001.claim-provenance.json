@@ -1,0 +1,185 @@
+{
+  "allowed_evidence_ids": [
+    "dm-evidence-004",
+    "dm-evidence-005",
+    "dm-evidence-006",
+    "dm-evidence-007",
+    "dm-sanskrit-evidence-006",
+    "dm-sanskrit-evidence-007",
+    "dm-supp-evidence-brahma-hymn"
+  ],
+  "book_id": "DM02",
+  "claims": [
+    {
+      "beat_id": "beat-004",
+      "claim": "Medhas distinguishes eternal Devi from the appearances described when she becomes manifest for divine purposes.",
+      "event_id": "dm-event-004",
+      "evidence_ids": [
+        "dm-evidence-004"
+      ],
+      "id": "claim-004-a",
+      "source_class": "MULA"
+    },
+    {
+      "beat_id": "beat-004",
+      "claim": "At cosmic dissolution Vishnu sleeps upon Shesha under Yoganidra while lotus-seated Brahma is present above the flood.",
+      "event_id": "dm-event-004",
+      "evidence_ids": [
+        "dm-evidence-004"
+      ],
+      "id": "claim-004-b",
+      "source_class": "MULA"
+    },
+    {
+      "beat_id": "beat-004",
+      "claim": "Madhu and Kaitabha arise from Vishnu’s ear-region and threaten to kill Brahma.",
+      "event_id": "dm-event-004",
+      "evidence_ids": [
+        "dm-evidence-004"
+      ],
+      "id": "claim-004-c",
+      "source_class": "MULA"
+    },
+    {
+      "adaptation_note": "Fresh scenic connective prose for readability; it adds no event, motive, genealogy, iconography or doctrinal claim.",
+      "beat_id": "beat-004",
+      "claim": "The quiet staging, contrast between the lotus and flood, and transition from stillness to danger are original narrative bridges.",
+      "evidence_ids": [],
+      "id": "claim-004-d",
+      "source_class": "DRISHTI"
+    },
+    {
+      "beat_id": "beat-005",
+      "claim": "Brahma praises Yoganidra as sacrificial utterance, creation, preservation and dissolution, knowledge and illusion, nature, nourishment, peace and armed power.",
+      "event_id": "dm-event-005",
+      "evidence_ids": [
+        "dm-evidence-005",
+        "dm-supp-evidence-brahma-hymn"
+      ],
+      "id": "claim-005-a",
+      "source_class": "MULA"
+    },
+    {
+      "beat_id": "beat-005",
+      "claim": "Brahma asks Yoganidra to delude Madhu and Kaitabha and awaken Vishnu so their threat can be ended.",
+      "event_id": "dm-event-005",
+      "evidence_ids": [
+        "dm-evidence-005",
+        "dm-supp-evidence-brahma-hymn"
+      ],
+      "id": "claim-005-b",
+      "source_class": "MULA"
+    },
+    {
+      "adaptation_note": "Rights-safe literary compression mandated by the clearance; the hymn remains explicitly attributed to Brahma.",
+      "beat_id": "beat-005",
+      "claim": "The manuscript compresses Brahma’s hymn into accessible attributed praise rather than reproducing or exhaustively listing the source presentation.",
+      "evidence_ids": [],
+      "id": "claim-005-c",
+      "source_class": "DRISHTI"
+    },
+    {
+      "beat_id": "beat-006",
+      "claim": "Yoganidra leaves Vishnu’s eyes, mouth, nose, arms, heart and breast and appears before Brahma.",
+      "event_id": "dm-event-006",
+      "evidence_ids": [
+        "dm-evidence-006",
+        "dm-sanskrit-evidence-006"
+      ],
+      "id": "claim-006-a",
+      "source_class": "MULA"
+    },
+    {
+      "beat_id": "beat-006",
+      "claim": "Vishnu awakens and fights Madhu and Kaitabha with his arms for five thousand years.",
+      "event_id": "dm-event-006",
+      "evidence_ids": [
+        "dm-evidence-006",
+        "dm-sanskrit-evidence-006"
+      ],
+      "id": "claim-006-b",
+      "source_class": "MULA"
+    },
+    {
+      "beat_id": "beat-006",
+      "claim": "Deluded by Yoganidra and intoxicated with their strength, Madhu and Kaitabha jointly offer Vishnu a boon.",
+      "event_id": "dm-event-006",
+      "evidence_ids": [
+        "dm-evidence-006",
+        "dm-sanskrit-evidence-006"
+      ],
+      "id": "claim-006-c",
+      "source_class": "MULA"
+    },
+    {
+      "adaptation_note": "The adaptation does not add weapons, injuries, strategy, genealogy or motive and preserves the joint boon offer.",
+      "beat_id": "beat-006",
+      "claim": "The physical rhythms used to compress the long arm-to-arm combat and the allocation of short non-verbatim lines between Madhu and Kaitabha are literary adaptations.",
+      "evidence_ids": [],
+      "id": "claim-006-d",
+      "source_class": "KALPANA"
+    },
+    {
+      "beat_id": "beat-007",
+      "claim": "Vishnu chooses as his boon that both Madhu and Kaitabha be killed by him.",
+      "event_id": "dm-event-007",
+      "evidence_ids": [
+        "dm-evidence-007",
+        "dm-sanskrit-evidence-007"
+      ],
+      "id": "claim-007-a",
+      "source_class": "MULA"
+    },
+    {
+      "beat_id": "beat-007",
+      "claim": "The demons jointly require that their deaths occur where earth is not flooded, and Vishnu accepts their condition.",
+      "event_id": "dm-event-007",
+      "evidence_ids": [
+        "dm-evidence-007",
+        "dm-sanskrit-evidence-007"
+      ],
+      "id": "claim-007-b",
+      "source_class": "MULA"
+    },
+    {
+      "beat_id": "beat-007",
+      "claim": "After the water condition is met, Vishnu kills Madhu and Kaitabha with his discus.",
+      "event_id": "dm-event-007",
+      "evidence_ids": [
+        "dm-evidence-007",
+        "dm-sanskrit-evidence-007"
+      ],
+      "id": "claim-007-c",
+      "source_class": "MULA"
+    },
+    {
+      "beat_id": "beat-007",
+      "claim": "The exact bodily locus of the killing is unresolved in the bounded witnesses and is therefore not asserted.",
+      "event_id": "dm-event-007",
+      "evidence_ids": [
+        "dm-evidence-007",
+        "dm-sanskrit-evidence-007"
+      ],
+      "id": "claim-007-d",
+      "source_class": "MULA"
+    },
+    {
+      "adaptation_note": "These choices preserve the source order, joint grantors, condition, weapon and outcome while avoiding an unsupported precise bodily locus.",
+      "beat_id": "beat-007",
+      "claim": "The pauses, short dialogue distribution and non-graphic description of the final action are literary presentation choices.",
+      "evidence_ids": [],
+      "id": "claim-007-e",
+      "source_class": "KALPANA"
+    },
+    {
+      "adaptation_note": "Clearly labeled post-story reflection; not scripture, not character dialogue and not part of the locked event chronology.",
+      "beat_id": "beat-editorial",
+      "claim": "The family discussion about sleep, strength, conditions and problem-solving is a modern editorial reflection.",
+      "evidence_ids": [],
+      "id": "claim-editorial-a",
+      "source_class": "KALPANA"
+    }
+  ],
+  "manuscript_hash": "8b7dc126012186ada26df3b6acb16e46fcc72a600ad151de49f6aaf3c06d2c44",
+  "schema_version": "1.0"
+}

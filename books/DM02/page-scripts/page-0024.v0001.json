@@ -1,0 +1,127 @@
+{
+  "character_ids": [],
+  "continuity_in": "after-page-23",
+  "continuity_out": "story-complete",
+  "continuity_requirements": [],
+  "event_ids": [],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "BACK_MATTER"
+  },
+  "lettering": [
+    {
+      "channel": "INSET_EXPLANATION",
+      "id": "p24-editorial-a",
+      "placement": "editable-editorial-label",
+      "text": "This is a modern editorial reflection, not a quotation from scripture."
+    },
+    {
+      "channel": "INSET_EXPLANATION",
+      "id": "p24-editorial-b",
+      "placement": "editable-editorial-body",
+      "text": "Sleep, sustained strength and the boon condition each change the story in a different way: Yoganidra’s withdrawal makes awakening possible, Vishnu endures the long struggle, and the demons’ own condition opens the way to its end."
+    },
+    {
+      "channel": "INSET_EXPLANATION",
+      "id": "p24-editorial-c",
+      "placement": "editable-family-prompt",
+      "text": "For family conversation: When a problem will not yield to force, what condition might be holding it in place? What can change when that condition is understood?"
+    }
+  ],
+  "location_id": "dm02-forest-hermitage-frame",
+  "moment_ids": [],
+  "narrative_beats": [
+    "This is a modern editorial reflection, not a quotation from scripture.",
+    "Sleep, sustained strength and the boon condition each change the story in a different way: Yoganidra’s withdrawal makes awakening possible, Vishnu endures the long struggle, and the demons’ own condition opens the way to its end.",
+    "For family conversation: When a problem will not yield to force, what condition might be holding it in place? What can change when that condition is understood?"
+  ],
+  "page_id": "page-83f106e1acc55e4a61e6fdc0",
+  "page_number": 24,
+  "panel_count": 1,
+  "panels": [
+    {
+      "character_ids": [],
+      "composition": "Text-led family-reflection page with a quiet fire-and-tree ornamental border only; no character speech balloon, sacred quotation styling or implied scriptural status.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p24-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Text-led family-reflection page with a quiet fire-and-tree ornamental border only; no character speech balloon, sacred quotation styling or implied scriptural status.",
+        "shot_scale": "flat"
+      },
+      "location_id": "dm02-forest-hermitage-frame",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p24-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Text-led family-reflection page with a quiet fire-and-tree ornamental border only; no character speech balloon, sacred quotation styling or implied scriptural status."
+    }
+  ],
+  "reading_order": [
+    "p24-panel-01"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p24-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-editorial-a"
+  ],
+  "title": "Editorial Reflection — A Thought for Families",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation",
+    "no unsupported iconography",
+    "no unsupported body-locus claim"
+  ],
+  "version": 1,
+  "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+}
