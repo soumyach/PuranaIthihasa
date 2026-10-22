@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "dm02-corrective-proof-campaign-01",
+  "book_id": "DM02",
+  "reviewed_at": "2026-10-22T15:01:22Z",
+  "reviewer": {
+    "id": "/root/dm02_iconography_clearance",
+    "role": "INDEPENDENT_SOURCE_AND_ICONOGRAPHY_CLEARANCE_SPECIALIST",
+    "independent_of_image_producer": true,
+    "capability": "Repository evidence, source-boundary and production-policy analysis",
+    "capability_limits": [
+      "Not a qualified human religious-iconography authority",
+      "Not a theological certifier",
+      "No critical-edition collation or independent Sanskrit translation performed",
+      "No approval or campaign authorization created"
+    ]
+  },
+  "theological_certification": "NOT_PERFORMED_AND_NOT_CLAIMED",
+  "evidence": [
+    {
+      "path": "research/source-graph/evidence.json",
+      "ids": ["dm-evidence-006", "dm-evidence-007"],
+      "locators": ["DM 1 / Pargiter canto 81, web lines 98-99", "DM 1 / Pargiter canto 81, web lines 100-109"]
+    },
+    {
+      "path": "books/DM02/source-readiness/601fc63f99cb9ad7d7feb14b45216c573568c4afe395f192e9d97fb83b211457.json",
+      "ids": ["dm-sanskrit-evidence-006", "dm-sanskrit-evidence-007"],
+      "locators": ["DM 1.89-95", "DM 1.96-104"],
+      "limitations": "Bounded selected Sanskrit reading only; not an independent translation or critical collation."
+    },
+    {
+      "path": "books/DM02/source-clearance/483cc82d41b142878778e107deabd090ec623ccf4a48410b28d80a3c95f1213e.json",
+      "result": "PASS_WITH_LIMITATIONS",
+      "theological_certification": "NOT_PERFORMED",
+      "iconographic_certification": "NOT_GRANTED",
+      "publication_gate": "BLOCKED"
+    },
+    {
+      "path": "books/DM02/storyboards/v0002.json",
+      "sha256": "2ffc82651274e049bf8b20c270f5abde63841fb2abc40137d935b956990069f6"
+    },
+    {
+      "path": "books/DM02/character-bibles/v0001.json",
+      "sha256": "e15e42cb62fd2c17715d1acfcf95b09d7210bebb1afe4b7a06e0fb41b4cdc791"
+    },
+    {
+      "path": "books/DM02/location-bibles/v0001.json",
+      "sha256": "65a6da806ac3669b321745b561e134117ce5a9aa258d405c6ef79c45fd8e4e35"
+    },
+    {
+      "path": "MYTHOLOGY_COMIC_RULES.md",
+      "sha256": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070"
+    },
+    {
+      "path": "book-factory/contracts/workers/art-iconography.json",
+      "sha256": "fb87d04a248779d3c6316b79b397661ad7af06cff49acd15fbcbe90bccc3e969"
+    }
+  ],
+  "page_11": {
+    "existing_asset_gate": "ESCALATE",
+    "corrective_generation_gate": "ESCALATE_BEFORE_GENERATION",
+    "operation_must_not_run": true,
+    "source_backed_facts": [
+      "Vishnu sleeps supported by Shesha above the dissolution flood.",
+      "Brahma is lotus-seated.",
+      "Madhu and Kaitabha remain nearby as distinct figures.",
+      "Yoganidra withdraws from six named locus groups: eyes, mouth, nose, arms, heart and breast.",
+      "Yoganidra then appears separately before Brahma."
+    ],
+    "source_silent_or_unresolved": [
+      "Brahma head, face and arm counts; crown, clothing and ornaments",
+      "Shesha exact anatomy, scale and hood count",
+      "Vishnu exact arm count, crown, complexion, clothing and ornaments",
+      "Yoganidra exact face, anatomy, arm count, clothing, ornaments, weapons and radiance form",
+      "Exact withdrawal path, temporal order and any pre-withdrawal bodily location"
+    ],
+    "source_vs_artistic_convention": [
+      "The six named locus groups and subsequent separate appearance are source-backed.",
+      "Radiance, light streams, their route, number, color and timing are visual proposals, not source facts.",
+      "The source does not require exactly six literal rays, although each named group must be independently auditable.",
+      "Paired eyes and paired arms may read as grouped origins."
+    ],
+    "qualified_review_requirement": {
+      "required": true,
+      "available_in_repository": false,
+      "reason": "Existing policy and the recovery report require genuine qualified religious-iconography guidance for this sacred-character uncertainty.",
+      "minimum_record_needed": "An independent qualified religious-iconography reviewer must review the exact locked source, bibles, storyboard, and proposed prompt hashes and approve or revise the source-neutral treatment without claiming unsupported theological certification."
+    }
+  },
+  "page_21": {
+    "existing_asset_gate": "FIX",
+    "corrective_generation_source_gate": "PASS_WITH_LOCKED_CONSTRAINTS",
+    "operation_may_run_after_separate_authorization": true,
+    "qualified_religious_iconography_review_required_before_generation": false,
+    "source_backed_facts": [
+      "Madhu and Kaitabha jointly condition their defeat on earth not under the flood.",
+      "Vishnu accepts.",
+      "The condition is satisfied before the decisive action.",
+      "Vishnu kills both demons with the discus.",
+      "The exact bodily locus remains unresolved."
+    ],
+    "required_sequence": [
+      "Page 19 states and accepts the condition.",
+      "Page 20 establishes the condition-satisfied state without an anatomical solution.",
+      "Page 21 depicts the discus consequence."
+    ],
+    "locked_prompt_constraints": [
+      "Show a low, open, edge-indeterminate unflooded-earth plane with flood visible beyond; keep every edge, size, and exposure mechanism indeterminate.",
+      "Do not show a bounded island, cliffs, waterfalls, shoreline mythology, mountains, or an invented exposure mechanism.",
+      "Show Vishnu using only the sourced discus.",
+      "Keep the discus and its luminous motion path outside both demons' torsos.",
+      "Communicate defeat non-graphically through recoil, collapsing stance, silhouette and motion; no wounds, red impact marks, dismemberment or precise contact point.",
+      "Do not use Vishnu's thigh, lap, buttocks or any body as the platform or condition solution.",
+      "Use only scene-required coherent arms; no halo, extra weapon or source-silent sacred emblem.",
+      "Maintain the Page 14 continuity proposal: Vishnu stable; Madhu broad in oxblood/charcoal; Kaitabha taller/angular in charcoal/deep-crimson.",
+      "Reserve usable upper negative space for the exact Page 21 narration without sacrificing the source action."
+    ],
+    "post_generation_gate": "Independent actual-pixel review remains mandatory; any anatomical impact, invented geography, identity drift, or unusable lettering region returns FIX or ESCALATE."
+  },
+  "decision": "PAGE_11_ESCALATE_PAGE_21_PASS_WITH_LOCKED_CONSTRAINTS"
+}

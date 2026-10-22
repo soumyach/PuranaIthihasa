@@ -1,0 +1,51 @@
+{
+  "book_id": "DM02",
+  "content_hash": "cff831872e35fb2a9ce72bf4c112560f41167aa1ad2f6c5f4e62424036fb3005",
+  "id": "visual-proof-image-receipts/p21-panel-01-0fb5b2543996b9f787c96e96",
+  "kind": "visual-proof-image-receipts/p21-panel-01",
+  "parent_hash": "c7b1845aec11617e4fc1063e5351eb21ed13b9a673c5940107d377abdc2b5aa1",
+  "payload": {
+    "book_id": "DM02",
+    "campaign_approval_id": "approval-e7619062088034622bbd2ca5",
+    "campaign_id": "dm02-corrective-proof-campaign-01",
+    "campaign_subject_hash": "dc0d0d1bdccde821f94fce4b6a614c7dcbea7562cb66cf6ec4f72d0751120679",
+    "character_consistency_certified": false,
+    "character_reference_promoted": false,
+    "generation_request_record_hash": "8305bf4128952aa51ccbef1d8014d35987ffabaeb1bc6788b47fc2761d0d6f80",
+    "image": {
+      "aspect_ratio": "3:4",
+      "bytes": 3097076,
+      "format": "PNG",
+      "height": 1448,
+      "path": "books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png",
+      "readable": true,
+      "sha256": "c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d",
+      "width": 1086
+    },
+    "imported_at": "2026-10-22T15:05:12Z",
+    "location_reference_promoted": false,
+    "operation": "edit",
+    "page_id": "page-8619f3db280abbfd867eefe4",
+    "page_number": 21,
+    "panel_id": "p21-panel-01",
+    "parent_lineage": {
+      "image_path": "books/DM02/visual-proof-campaign/images/p21-panel-01/v0001.png",
+      "image_receipt_content_hash": "c7b1845aec11617e4fc1063e5351eb21ed13b9a673c5940107d377abdc2b5aa1",
+      "image_sha256": "e7de39593aa71644f4c2a57fd577855a8611b2a0c8015b78497d84ecb759dbee",
+      "review_content_hash": "036e33c3e40285d1cf95c6e439ee60428622608cff4b2f180e67ab12659a7167"
+    },
+    "producer_ids": [
+      "codex-root-dm02-corrective-proof-producer"
+    ],
+    "provider_receipt_path": "books/DM02/corrective-proof-campaign/provider-receipts/p21-panel-01.v0002.json",
+    "provider_receipt_sha256": "00cfc16f4b11e634c0d2cd56b10e698d95d7d87bd20a1ab6b08164bee44c5070",
+    "publication_eligible": false,
+    "request_hash": "552a899520c3be5c50a6c6f035d91f3cc5ceaf8b8a397213cefd0924e2bd60f0",
+    "retry": false,
+    "schema_version": "1.0",
+    "status": "GENERATED_AWAITING_INDEPENDENT_VISUAL_REVIEW",
+    "unit_id": "page-8619f3db280abbfd867eefe4--p21-panel-01"
+  },
+  "schema_version": "1.0",
+  "version": 2
+}

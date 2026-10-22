@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "dm02-corrective-proof-campaign-01",
+  "observation_phase": "AFTER_SINGLE_IMAGE_EDIT",
+  "observed_at": "2026-10-22T15:06:17Z",
+  "source": "CODEX_APP_GET_USAGE_LIMITS_READ_ONLY",
+  "ordinary_usage_allowed": true,
+  "plan_type_reported_by_control": "prolite",
+  "codex_limit_id": "codex",
+  "codex_used_percent": 37,
+  "codex_remaining_percent": 63,
+  "window_duration_minutes": 10080,
+  "resets_at_unix_seconds": 1793101833,
+  "has_purchased_credits": false,
+  "purchased_credit_balance": "0",
+  "spend_control_reached": false,
+  "rate_limit_reached_type": null,
+  "free_rate_limit_reset_credits_available": 3,
+  "image_operations_executed_between_observations": 1,
+  "page_11_operations_executed": 0,
+  "page_21_operations_executed": 1,
+  "api_key_supplied": false,
+  "external_provider_authorization_requested": false,
+  "paid_authorization_requested_by_tool": false,
+  "automatic_credit_purchase_requested": false,
+  "purchased_credit_consumption": "NOT_REPORTED_NO_BALANCE",
+  "per_image_credit_estimate_available": false,
+  "incremental_usd_amount_available": false,
+  "actual_incremental_usd": "UNKNOWN_NOT_EXPOSED",
+  "zero_incremental_usd_positively_verified": false,
+  "comparison_to_before": {
+    "before_used_percent": 37,
+    "after_used_percent": 37,
+    "reported_percentage_point_change": 0,
+    "before_purchased_credit_balance": "0",
+    "after_purchased_credit_balance": "0",
+    "note": "The coarse shared usage percentage did not change, but this does not prove zero image-specific usage or zero incremental USD."
+  },
+  "official_documentation": [
+    "https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan",
+    "https://help.openai.com/en/articles/20001478-reviewing-work-and-codex-usage-and-using-personal-analytics-in-chatgpt-desktop"
+  ]
+}

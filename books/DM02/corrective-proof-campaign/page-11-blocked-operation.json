@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "dm02-corrective-proof-campaign-01",
+  "book_id": "DM02",
+  "unit_id": "page-b85332e92940926f67e6dd9d--p11-panel-01",
+  "page_id": "page-b85332e92940926f67e6dd9d",
+  "page_number": 11,
+  "panel_id": "p11-panel-01",
+  "authorized_operation_ceiling": 1,
+  "operations_executed": 0,
+  "operation_status": "WITHHELD_BEFORE_GENERATION",
+  "gate": "ESCALATE_BEFORE_GENERATION",
+  "reason": "No genuine qualified religious-iconography reviewer is available to approve or revise a source-neutral treatment of unresolved sacred-character attributes.",
+  "required_source_information": {
+    "withdrawal_loci": ["eyes", "mouth", "nose", "arms", "heart", "breast"],
+    "subsequent_state": "Yoganidra appears separately before Brahma"
+  },
+  "must_not_invent": [
+    "Brahma head, face or arm count",
+    "Shesha hood count or exact anatomy",
+    "Vishnu arm count, crown or sacred emblems",
+    "Yoganidra face, limbs, crown, weapons, emblems or fixed radiance anatomy",
+    "withdrawal route, temporal order or pre-withdrawal bodily residence"
+  ],
+  "parent_image": {
+    "path": "books/DM02/visual-proof-campaign/images/p11-panel-01/v0001.png",
+    "sha256": "aa2104618b9f4395c1f62cdba279974f5be3a38b4ff78242182cc9d13438fa6c",
+    "preserved": true
+  },
+  "parent_review": {
+    "path": "books/DM02/visual-proof-reviews/p11-panel-01/v0001.json",
+    "sha256": "601d4031e92d93b919dfa0acac24eceb32094fbdd09bd96788d12d7ef675e037",
+    "result": "ESCALATE"
+  },
+  "qualified_review_needed": true,
+  "theological_certification": "NOT_PERFORMED_AND_NOT_CLAIMED",
+  "recorded_at": "2026-10-22T15:01:22Z"
+}

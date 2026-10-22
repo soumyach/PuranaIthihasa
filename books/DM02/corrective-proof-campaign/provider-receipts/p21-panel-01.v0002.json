@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "dm02-corrective-proof-campaign-01",
+  "campaign_subject_hash": "dc0d0d1bdccde821f94fce4b6a614c7dcbea7562cb66cf6ec4f72d0751120679",
+  "campaign_approval_id": "approval-e7619062088034622bbd2ca5",
+  "unit_id": "page-8619f3db280abbfd867eefe4--p21-panel-01",
+  "page_id": "page-8619f3db280abbfd867eefe4",
+  "panel_id": "p21-panel-01",
+  "operation": "edit",
+  "operation_sequence": 1,
+  "retry": false,
+  "request_record_hash": "8305bf4128952aa51ccbef1d8014d35987ffabaeb1bc6788b47fc2761d0d6f80",
+  "request_hash": "552a899520c3be5c50a6c6f035d91f3cc5ceaf8b8a397213cefd0924e2bd60f0",
+  "provider_id": "codex-built-in-image-gen",
+  "provider_interface": "image_gen.imagegen",
+  "producer": {
+    "id": "codex-root-dm02-corrective-proof-producer",
+    "host_session_only": true
+  },
+  "submitted_prompt_sha256": "fa06d8ec4b273c462b23939b3ec1848fe690bfb7924559815616784da07ed69f",
+  "submitted_prompt": "EDIT REFERENCE 1, the existing DM02 Page 21 proof, into one corrected full-page portrait 3:4 illustration. Preserve its premium Indian devotional painterly finish and the recognizable identities of Vishnu, broad Madhu, and taller angular Kaitabha, but replace the source-critical errors. The prior Page 19 acceptance and Page 20 condition-satisfied state have already occurred. Show the decisive Page 21 consequence on a low, open, edge-indeterminate plane of unflooded earth with the cosmic flood visible beyond. Keep every edge, exact size, exposure mechanism, shoreline, and larger geography outside the frame or visually indeterminate: no island, cliff, waterfall, mountain, bounded platform, or invented cosmography. The earth plane must be geologically separate from every body; no thigh, lap, buttocks, anatomy, or body may serve as the platform or condition solution. Vishnu uses only the single sourced discus. Keep the discus and its luminous motion path wholly outside both demons' torsos. Show their defeat non-graphically through recoil, collapsing stance, separated silhouettes, and motion only: no wound, blood, red impact mark, severing, bodily contact point, or precise strike locus. Preserve Madhu as broad in oxblood and charcoal and Kaitabha as taller/angular in charcoal and deep crimson, treating those colors only as project continuity proposals. Use only scene-required coherent visible arms. No halo, extra weapon, sacred emblem, flag, army, temple, Western fantasy armor, unrelated figure, text, page border, speech balloon, or watermark. Keep the complete upper caption-safe rectangle (approximately x 7%-93%, y 5%-25%) quiet enough for the exact two-paragraph Page 21 narration without covering faces, the discus, the demons' readable recoil, or the earth/flood distinction. REFERENCE 2 is PR7 role A and supplies only premium Khatakshetra finish, warm devotional lighting, painterly detail, and cinematic sacred focus; copy none of its character anatomy, arm count, halo, emblems, scene, or theology. REFERENCE 3 is PR7 role B and supplies only climactic hierarchy, depth, and resolution energy; copy none of its Chandika/Chamunda/Mothers/Raktabija identities, lion, skulls, blood, weapons, flags, army, text, frame, or theology. REFERENCE 4 is the previously reviewed DM02 Page 14 continuity candidate, not a canonical approved character reference; use it only to keep Vishnu stable, Madhu broad/oxblood-charcoal, and Kaitabha tall-angular/charcoal-deep-crimson. Do not transfer its battle pose, geography, weapons, effects, or approve it by implication.",
+  "submitted_references": [
+    {
+      "input_index": 1,
+      "role": "EDIT_TARGET_AND_PARENT_ART",
+      "path": "books/DM02/visual-proof-campaign/images/p21-panel-01/v0001.png",
+      "absolute_submitted_path": "/Users/vellankisriharsha/Documents/Codex/2026-10-16/files-pasted-by-the-user-you/work/PuranaIthihasa/books/DM02/visual-proof-campaign/images/p21-panel-01/v0001.png",
+      "sha256": "e7de39593aa71644f4c2a57fd577855a8611b2a0c8015b78497d84ecb759dbee",
+      "content_transfer": "PRESERVE_IDENTITIES_AND_PREMIUM_FINISH_CORRECT_LOCKED_ERRORS"
+    },
+    {
+      "input_index": 2,
+      "role": "A_SERIES_VISUAL_IDENTITY",
+      "reference_id": "kgs-satya-p01",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "absolute_submitted_path": "/Users/vellankisriharsha/Documents/Codex/2026-10-16/files-pasted-by-the-user-you/work/PuranaIthihasa/book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+      "content_transfer": "STYLE_ONLY_CONTENT_FORBIDDEN"
+    },
+    {
+      "input_index": 3,
+      "role": "B_PAGE_PANEL_COMPOSITION",
+      "reference_id": "kgs-dm08-p28",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+      "absolute_submitted_path": "/Users/vellankisriharsha/Documents/Codex/2026-10-16/files-pasted-by-the-user-you/work/PuranaIthihasa/book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+      "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5",
+      "content_transfer": "STYLE_AND_HIERARCHY_ONLY_CONTENT_FORBIDDEN"
+    },
+    {
+      "input_index": 4,
+      "role": "SUPPORTING_CONTINUITY_CANDIDATE_NOT_ROLE_C",
+      "path": "books/DM02/visual-proof-campaign/images/p14-panel-01/v0001.png",
+      "absolute_submitted_path": "/Users/vellankisriharsha/Documents/Codex/2026-10-16/files-pasted-by-the-user-you/work/PuranaIthihasa/books/DM02/visual-proof-campaign/images/p14-panel-01/v0001.png",
+      "sha256": "c3cf653e36e0d03a0d9b126ffeab56bee0b655ba752d8d988d9d057f8354170c",
+      "content_transfer": "IDENTITY_PROPOSAL_ONLY"
+    }
+  ],
+  "unavailable_reference_roles": [
+    "C_APPROVED_CHARACTER_REFERENCE",
+    "D_APPROVED_SETTING_REFERENCE"
+  ],
+  "output": {
+    "source_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-faefe1bc-eaf6-4c47-86a9-dc9de55b068a.png",
+    "stored_path": "books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png",
+    "sha256": "c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d",
+    "bytes": 3097076,
+    "width": 1086,
+    "height": 1448,
+    "format": "PNG"
+  },
+  "included_allowance_policy": "CURRENT_INCLUDED_ALLOWANCE_FIRST",
+  "api_key_supplied": false,
+  "external_provider_authorization_requested": false,
+  "paid_billing_requested": false,
+  "automatic_credit_purchase_requested": false,
+  "purchased_credit_consumption": "NOT_REPORTED_NO_BALANCE",
+  "actual_incremental_usd": "UNKNOWN_NOT_EXPOSED",
+  "executed_at": "2026-10-22T15:05:12Z"
+}

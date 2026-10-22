@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "report_id": "dm02-corrective-proof-campaign-execution-report",
+  "book_id": "DM02",
+  "branch": "feature/book-factory-dm02-corrective-proofs",
+  "baseline_commit": "5db8b5f1fb24c9c4e3dba349ef207ac6440d25a7",
+  "outcome": "ONE_OF_TWO_AUTHORIZED_UNITS_EXECUTED_PAGE_21_PASS_PAGE_11_ESCALATE",
+  "authorization_and_clearance": {
+    "campaign_subject_hash": "dc0d0d1bdccde821f94fce4b6a614c7dcbea7562cb66cf6ec4f72d0751120679",
+    "approval_id": "approval-e7619062088034622bbd2ca5",
+    "approval_decision": "PASS_WITH_CONDITIONS",
+    "approval_record_path": "books/DM02/approvals/approval-e7619062088034622bbd2ca5.json",
+    "approval_record_sha256": "56071be146e8b715d3a7fcb2abdc4efb9e5cc2c0e194347b1f56102f8254741c",
+    "source_iconography_clearance_path": "books/DM02/corrective-proof-campaign/source-iconography-clearance.json",
+    "source_iconography_clearance_sha256": "b80b470d873bca8f6c1b78c7a983bdc4e3101ca427d5abe821f4c167d685eb05",
+    "theological_certification": "NOT_PERFORMED_AND_NOT_CLAIMED"
+  },
+  "operations": [
+    {
+      "page_number": 11,
+      "panel_id": "p11-panel-01",
+      "operation": "edit",
+      "executed": false,
+      "result": "ESCALATE_BEFORE_GENERATION",
+      "reason": "Qualified religious-iconography review required by existing policy was unavailable.",
+      "blocked_record_path": "books/DM02/corrective-proof-campaign/page-11-blocked-operation.json"
+    },
+    {
+      "page_number": 21,
+      "panel_id": "p21-panel-01",
+      "operation": "edit",
+      "executed": true,
+      "retry": false,
+      "result": "PASS_PRIVATE_REUSE_ONLY",
+      "image_path": "books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png",
+      "image_sha256": "c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d",
+      "parent_image_path": "books/DM02/visual-proof-campaign/images/p21-panel-01/v0001.png",
+      "parent_image_sha256": "e7de39593aa71644f4c2a57fd577855a8611b2a0c8015b78497d84ecb759dbee"
+    }
+  ],
+  "reference_receipt": {
+    "path": "books/DM02/corrective-proof-campaign/provider-receipts/p21-panel-01.v0002.json",
+    "sha256": "00cfc16f4b11e634c0d2cd56b10e698d95d7d87bd20a1ab6b08164bee44c5070",
+    "roles": [
+      {
+        "input_index": 1,
+        "role": "EDIT_TARGET_AND_PARENT_ART",
+        "sha256": "e7de39593aa71644f4c2a57fd577855a8611b2a0c8015b78497d84ecb759dbee"
+      },
+      {
+        "input_index": 2,
+        "role": "A_SERIES_VISUAL_IDENTITY",
+        "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+      },
+      {
+        "input_index": 3,
+        "role": "B_PAGE_PANEL_COMPOSITION",
+        "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5"
+      },
+      {
+        "input_index": 4,
+        "role": "SUPPORTING_CONTINUITY_CANDIDATE_NOT_ROLE_C",
+        "sha256": "c3cf653e36e0d03a0d9b126ffeab56bee0b655ba752d8d988d9d057f8354170c"
+      }
+    ],
+    "unavailable_reference_roles": [
+      "C_APPROVED_CHARACTER_REFERENCE",
+      "D_APPROVED_SETTING_REFERENCE"
+    ]
+  },
+  "independent_reviews": {
+    "source_iconography": {
+      "reviewer": "/root/dm02_iconography_clearance",
+      "page_11": "ESCALATE_BEFORE_GENERATION",
+      "page_21": "PASS_WITH_LOCKED_CONSTRAINTS"
+    },
+    "actual_pixels": {
+      "reviewer": "/root/dm02_corrective_pixel_reviewer",
+      "inspected_actual_pixels": true,
+      "inspection_resolution": "1086x1448 ORIGINAL",
+      "result": "PASS",
+      "review_path": "books/DM02/visual-proof-reviews/p21-panel-01/v0002.json",
+      "review_content_hash": "fab8154397d2160d78cabe2196cb85d38947bbe29e21010c211df78517af7908",
+      "review_hash": "3dbb725a4bd8a839b1c3990b5e980aebe7b0f4b824efa02a25ee5e027db6b5df"
+    }
+  },
+  "reuse_decisions": {
+    "page_11": "NOT_REUSABLE_ESCALATE_QUALIFIED_REVIEW_AND_NEW_PIXELS_STILL_REQUIRED",
+    "page_21": "REUSABLE_FOR_PRIVATE_PAGE_COMPOSITION",
+    "publication": "BLOCKED"
+  },
+  "remaining_character_reference_approvals": [
+    "No exact DM02 pixel asset is promoted as C_APPROVED_CHARACTER_REFERENCE.",
+    "Page 14 remains a noncanonical continuity candidate.",
+    "Page 21 v0002 passes scene-level reuse only; facial and ornamental specifics remain proposal-level.",
+    "A separate exact-hash character-reference approval is required before canonical promotion."
+  ],
+  "usage_and_cost_observations": {
+    "before_path": "books/DM02/corrective-proof-campaign/usage-before.json",
+    "after_path": "books/DM02/corrective-proof-campaign/usage-after.json",
+    "before_used_percent": 37,
+    "after_used_percent": 37,
+    "purchased_credit_balance_before": "0",
+    "purchased_credit_balance_after": "0",
+    "api_key_supplied": false,
+    "external_provider_used": false,
+    "paid_authorization_requested": false,
+    "actual_incremental_usd": "UNKNOWN_NOT_EXPOSED",
+    "zero_incremental_usd_verified": false,
+    "interpretation": "The observable allowance percentage and purchased-credit balance did not change, but the controls expose neither per-image usage nor a monetary ledger; zero incremental USD is therefore not positively verified."
+  },
+  "larger_batch_assessment": {
+    "can_proceed_now": false,
+    "reason": "Page 21 correction passes, but Page 11 remains source/iconography-blocked, no canonical DM02 character reference exists, publication clearance remains blocked, and this campaign grants no larger-batch authorization.",
+    "minimum_next_steps": [
+      "Obtain genuine qualified religious-iconography review for the exact Page 11 source-neutral prompt proposal.",
+      "Create a new explicit campaign authorization before any Page 11 operation or larger batch.",
+      "Separately approve exact character-reference pixels if canonical reuse is desired."
+    ]
+  },
+  "prohibited_outputs_confirmed": {
+    "remaining_book_illustrations_generated": false,
+    "final_pdf_created": false,
+    "published": false,
+    "deployed": false,
+    "pushed": false,
+    "merged": false
+  },
+  "validation": {
+    "factory_validate": "PASS",
+    "source_graph_structural_validation": "PASS_0_ERRORS_0_WARNINGS",
+    "source_graph_integrity_tests": "PASS_15_OF_15",
+    "book_factory_tests": "PASS_227_OF_227",
+    "runtime_note": "Validation used the Codex bundled Python runtime because the system Python lacked Pillow; no dependency was installed and no paid call was made."
+  },
+  "reported_at": "2026-10-22T15:09:10Z"
+}

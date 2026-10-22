@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "dm02-corrective-proof-campaign-01",
+  "campaign_subject_hash": "dc0d0d1bdccde821f94fce4b6a614c7dcbea7562cb66cf6ec4f72d0751120679",
+  "unit_id": "page-8619f3db280abbfd867eefe4--p21-panel-01",
+  "page_id": "page-8619f3db280abbfd867eefe4",
+  "panel_id": "p21-panel-01",
+  "request_record_hash": "5e4bdbf21c1427db08dc7f4fa83b1a448351839fdc11734390974758088da322",
+  "request_hash": "cc4a4ca46ae7e2a6491839d5aac89ea88c22c11f28cc812497e4bf9791d38015",
+  "reviewer": {
+    "id": "/root/dm02_corrective_pixel_reviewer",
+    "role": "INDEPENDENT_ACTUAL_PIXEL_VISUAL_REVIEWER",
+    "image_capable": true,
+    "independent_of_producer": true,
+    "capability_limits": [
+      "No theological certification performed",
+      "No campaign authorization granted",
+      "No character reference promoted"
+    ]
+  },
+  "asset": {
+    "path": "books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png",
+    "sha256": "c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d",
+    "actual_pixels_inspected": true,
+    "inspection_resolution": "1086x1448 ORIGINAL"
+  },
+  "result": "PASS",
+  "reusable_for_private_page_composition": true,
+  "publication_eligible": false,
+  "assessments": [
+    {
+      "dimension": "SOURCE_ACCURACY",
+      "result": "PASS",
+      "evidence": "The foreground is a low, open earth plane whose edges, extent and exposure mechanism remain outside the frame; the cosmic flood is visible beyond it. No island, cliff, waterfall, mountain, shoreline mechanism or invented cosmography is shown. The ground remains separate from every body."
+    },
+    {
+      "dimension": "RELIGIOUS_ICONOGRAPHY",
+      "result": "PASS_WITH_SCOPE_LIMIT",
+      "evidence": "Vishnu uses one visible discus and two coherent scene-required arms. No halo, extra weapon, borrowed sacred emblem or anatomical condition-solution appears. This is a pixel-level compliance finding under the locked source-neutral clearance, not theological certification."
+    },
+    {
+      "dimension": "CULTURAL_AUTHENTICITY",
+      "result": "PASS",
+      "evidence": "Classical draped garments, crowns, jewelry and the devotional Indian painterly treatment remain coherent. No modern object or Western fantasy armor is visible."
+    },
+    {
+      "dimension": "CHARACTER_IDENTITY",
+      "result": "PASS",
+      "evidence": "Vishnu remains visually stable. Madhu reads as the broad left figure in oxblood and charcoal; Kaitabha reads as the taller, more angular right figure in charcoal and deep crimson. They remain distinct and are not merged."
+    },
+    {
+      "dimension": "ACTION_CLARITY",
+      "result": "PASS",
+      "evidence": "The raised discus, broad luminous orbit and two separated recoiling silhouettes clearly communicate the decisive consequence. The luminous path reads outside both torsos; there is no wound, red impact mark, precise strike locus, bodily contact point or gore."
+    },
+    {
+      "dimension": "ANATOMICAL_COHERENCE",
+      "result": "PASS",
+      "evidence": "Visible hands, arms, faces, torsos and planted or recoiling legs are coherent at original resolution. No extra limbs, fused anatomy or body platform is apparent."
+    },
+    {
+      "dimension": "VISUAL_CONTINUITY",
+      "result": "PASS",
+      "evidence": "The three-person hierarchy, Vishnu palette, broad Madhu silhouette and taller/angular Kaitabha silhouette preserve the proposal-level distinctions from Page 14. Exact facial and ornamental details remain noncanonical and must not be promoted from this proof."
+    },
+    {
+      "dimension": "PR7_GOLD_STANDARD_ALIGNMENT",
+      "result": "PASS",
+      "evidence": "The image reaches the references' premium detail, warm devotional lighting, cinematic hierarchy and climactic energy without transferring their characters, anatomy, weapons, blood, army, frames, lettering or theology."
+    },
+    {
+      "dimension": "LETTERING_COMPATIBILITY",
+      "result": "PASS",
+      "evidence": "The normalized x=0.07..0.93, y=0.05..0.25 region corresponds to approximately x=76..1010, y=72..362. It contains predominantly quiet starfield; cloud texture enters only near the lower sides. The exact two-paragraph narration can be placed there in a separate caption treatment without covering faces, the discus, readable recoil, or the earth/flood distinction."
+    }
+  ],
+  "critical_pixel_issues": [],
+  "remaining_limits": [
+    "No theological or publication certification is implied.",
+    "The Page 14 image remains a noncanonical continuity candidate.",
+    "This PASS does not promote Page 21 as a canonical character reference."
+  ],
+  "decision": "PAGE_21_V0002_REUSABLE_FOR_PRIVATE_COMPOSITION",
+  "reviewed_at": "2026-10-22T15:08:26Z"
+}
