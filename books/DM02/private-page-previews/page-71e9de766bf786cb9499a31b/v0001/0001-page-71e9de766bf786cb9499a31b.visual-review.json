@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "page_id": "page-71e9de766bf786cb9499a31b",
+  "page_title": "The Tale Opens",
+  "reviewed_at": "2026-10-22T14:27:45Z",
+  "reviewer": {
+    "id": "/root",
+    "role": "DM02_RECOVERY_ACTUAL_PIXEL_REVIEWER",
+    "inspected_actual_pixels": true,
+    "reading_size_inspection": true,
+    "independent_of_original_image_producer": true,
+    "generated_or_edited_source_art": false
+  },
+  "inputs": {
+    "page_script": {
+      "path": "books/DM02/page-scripts/page-0001.v0002.json",
+      "sha256": "7404b4f9f54ee2b9deea6e8f74230d438e36474d031fa421c3b013f292eb6395",
+      "content_hash": "f5767c345c8bd76643b3d86a2e823fb5ced8e8460fb0440ace884b89e3c434ef"
+    },
+    "reused_art": {
+      "path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+      "sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+      "review_status_at_input": "FIX",
+      "review_path": "books/DM02/visual-proof-reviews/p01-panel-01/v0001.json"
+    },
+    "visual_references": [
+      {
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+        "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+        "role": "PRESENTATION_REFERENCE_ONLY"
+      },
+      {
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+        "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d",
+        "role": "COMIC_PAGE_RHYTHM_REFERENCE_ONLY"
+      }
+    ]
+  },
+  "output": {
+    "path": "books/DM02/private-page-previews/page-71e9de766bf786cb9499a31b/v0001/0001-page-71e9de766bf786cb9499a31b.png",
+    "sha256": "da3909b9ad7ca851ef8ae836f74812cd6f5c5a5dddc12e2b70e0bd703d361a19",
+    "pixel_sha256": "6f8983fa82adc96e40f09570e0a28ad63fcf7e5e4cb69bfef3c464ea5f42b5f8",
+    "dimensions": [
+      1086,
+      1448
+    ],
+    "composition_hash": "2c32583337754500168c3acd137976324e5f2cd9e094678f85dc03bfc4850d25",
+    "publication_eligible": false,
+    "visible_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION"
+  },
+  "crop_review": [
+    {
+      "panel_id": "p01-panel-01",
+      "source_crop_pixels": [
+        0,
+        624,
+        1086,
+        1258
+      ],
+      "result": "PASS",
+      "evidence": "The crop retains Medhas, Suratha, Samadhi, the low fire and the three-person listening triangle. The exact short caption overlaps foliage and a non-speaking listener's rear hair silhouette but covers no face, speaking gesture or story-critical action."
+    },
+    {
+      "panel_id": "p01-panel-02",
+      "source_crop_pixels": [
+        58,
+        427,
+        1028,
+        992
+      ],
+      "result": "PASS_WITH_LIMITATION",
+      "evidence": "The tighter crop makes Medhas the speaking focus and retains both listeners at the edges. It is an honest crop of the same moment, not the locked over-shoulder camera angle and not a substitute approval for a separately illustrated panel-2 master."
+    }
+  ],
+  "assessments": [
+    {
+      "dimension": "DETERMINISTIC_TECHNICAL_VALIDATION",
+      "result": "PASS",
+      "evidence": "Page engine 0.8.1 reports no geometry, hash, font-size, collision or overflow findings. The rendered output is 1086 by 1448 pixels."
+    },
+    {
+      "dimension": "EXACT_EDITABLE_LETTERING",
+      "result": "PASS",
+      "evidence": "The required caption and Medhas dialogue match their source-script hashes. They render at 22 px and 25 px respectively, meet the 22 px floor and remain editable in the JSON composition rather than being baked into the source raster."
+    },
+    {
+      "dimension": "READING_SIZE_LEGIBILITY",
+      "result": "PASS",
+      "evidence": "At actual reading size, the masthead, title, caption and dialogue are legible with strong contrast. The dialogue tail points to Medhas without covering his face or speaking hand."
+    },
+    {
+      "dimension": "SOURCE_AND_CHARACTER_FIDELITY",
+      "result": "PASS",
+      "evidence": "The composition only crops reviewed pixels and adds the exact locked script. It adds no character, action, iconography, doctrine, object or new raster art."
+    },
+    {
+      "dimension": "GENERIC_TOP_BAND_REPAIR",
+      "result": "PASS",
+      "evidence": "The original review's generic full-width top-safe-band objection is not a reason to regenerate this art: the actual short caption fits in a smaller upper-left plaque while the listening triangle, all three identities and Medhas's speaking gesture remain legible."
+    },
+    {
+      "dimension": "LOCKED_TWO_PANEL_STORYBOARD_CONFORMANCE",
+      "result": "PASS_WITH_LIMITATION",
+      "evidence": "The two crops create a valid private establishing-to-speaker reading sequence, but one source raster cannot create the separately locked over-shoulder second camera angle. This preview demonstrates reuse and composition feasibility only."
+    },
+    {
+      "dimension": "PR7_REFERENCE_ALIGNMENT",
+      "result": "PASS_WITH_LIMITATION",
+      "evidence": "The navy-gold frame, cream text surfaces, numbered narration and clear hierarchy align with the inspected PR7 presentation references. Camera and pose variation remain weaker because both beats derive from one source illustration."
+    },
+    {
+      "dimension": "PRIVATE_PREVIEW_ISOLATION",
+      "result": "PASS",
+      "evidence": "The visible internal-preview label is present, publication_eligible is false and the validation record permits no production-state mutation."
+    }
+  ],
+  "verdict": "PASS_FOR_PRIVATE_REUSE_PREVIEW_WITH_LIMITATION",
+  "verdict_reason": "The page truthfully demonstrates that the Page 1 proof can support exact-script lettering and two readable crops without new pixels. It is not a completed or publication-approved rendering of the locked two-master storyboard.",
+  "production_boundary": {
+    "character_reference_promoted": false,
+    "storyboard_panel_02_satisfied": false,
+    "pdf_created": false,
+    "publication_authorized": false
+  },
+  "cost": {
+    "image_generation_operations": 0,
+    "image_edit_operations": 0,
+    "external_provider_calls": 0,
+    "paid_api_calls": 0,
+    "additional_monetary_cost_usd": 0.0,
+    "basis": "Local deterministic composition, validation and actual-pixel inspection only."
+  }
+}

@@ -1,0 +1,446 @@
+{
+  "schema_version": "1.0",
+  "report_id": "dm02-visual-proof-reuse-recovery",
+  "book_id": "DM02",
+  "prepared_at": "2026-10-22T14:27:45Z",
+  "baseline_commit": "79d123df113fdc3fa48221c3af252b248b61fa4d",
+  "scope": "READ_ONLY_ART_RECOVERY_WITH_ONE_LOCAL_PRIVATE_COMPOSITION",
+  "classification_definitions": {
+    "CRITICAL_SOURCE_OR_ICONOGRAPHY": "The finding needs correction or qualified source/iconography review before the pixels can be promoted.",
+    "COMPOSITION_REPAIRABLE": "The exact locked text can be placed or the page can be cropped/laid out without changing source art or hiding essential imagery.",
+    "ACCEPTABLE_ARTISTIC_VARIATION": "The pixels remain source-compatible; the variation is not a rejection ground and is not promoted as a source fact.",
+    "NEW_PIXELS_REQUIRED": "The depicted source/action problem cannot be truthfully removed through lettering, layout or cropping."
+  },
+  "classification_counts": {
+    "CRITICAL_SOURCE_OR_ICONOGRAPHY": 2,
+    "COMPOSITION_REPAIRABLE": 4,
+    "ACCEPTABLE_ARTISTIC_VARIATION": 2,
+    "NEW_PIXELS_REQUIRED": 3,
+    "total_original_findings_classified": 11
+  },
+  "preserved_inputs": {
+    "campaign_id": "dm02-visual-proof-campaign-01",
+    "campaign_subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+    "campaign_status": "FOUR_PROOFS_REVIEWED_WITH_BLOCKERS_CAMPAIGN_COMPLETE_NO_RETRY",
+    "image_operations_executed": 4,
+    "operation_ceiling": 4,
+    "remaining_authorized_operations": 0,
+    "full_book_generation_authorized": false,
+    "full_book_campaign_status": "AWAITING_CAMPAIGN_AUTHORIZATION",
+    "full_book_campaign_hash": "0465f0111d3fac1729014bb95ac5247e417aaf3429672ebc5f69e79f18fdac1e",
+    "full_book_campaign_budget": {
+      "initial_generation_operations": 35,
+      "maximum_retry_operations": 9,
+      "maximum_total_operations": 44,
+      "image_operations_executed": 0,
+      "authorization_status": "AWAITING_CAMPAIGN_AUTHORIZATION"
+    },
+    "publication_eligible": false,
+    "actual_incremental_usd_for_original_proof_campaign": "UNKNOWN_NOT_EXPOSED",
+    "source_graph_snapshot": {
+      "path": "research/source-graph/SHA256SUMS.txt",
+      "sha256": "49d3e44643d028b64250656cfda4fd76b4d667184548737832380bf6a9e6870c",
+      "modified_by_recovery": false
+    },
+    "source_packet": {
+      "path": "books/DM02/story-packets/b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd.json",
+      "sha256": "63195c77c26e324af9809f1cfde80131108d655b550ce137115e3337b3f84e84"
+    },
+    "source_clearance": {
+      "path": "books/DM02/source-clearance/483cc82d41b142878778e107deabd090ec623ccf4a48410b28d80a3c95f1213e.json",
+      "sha256": "ddbbe4485c890408bb4a8f4a51c5e5490ebcf5e6e7b8a412ac5af6c11b539763"
+    },
+    "storyboard": {
+      "path": "books/DM02/storyboards/v0002.json",
+      "sha256": "2ffc82651274e049bf8b20c270f5abde63841fb2abc40137d935b956990069f6"
+    },
+    "character_bible": {
+      "path": "books/DM02/character-bibles/v0001.json",
+      "sha256": "e15e42cb62fd2c17715d1acfcf95b09d7210bebb1afe4b7a06e0fb41b4cdc791"
+    },
+    "location_bible": {
+      "path": "books/DM02/location-bibles/v0001.json",
+      "sha256": "65a6da806ac3669b321745b561e134117ce5a9aa258d405c6ef79c45fd8e4e35"
+    }
+  },
+  "visual_gold_standard": [
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+      "role": "SERIES_VISUAL_IDENTITY_REFERENCE_ONLY"
+    },
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d",
+      "role": "PAGE_COMPOSITION_REFERENCE_ONLY"
+    },
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+      "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4",
+      "role": "DIVINE_REVEAL_COMPOSITION_REFERENCE_ONLY"
+    },
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p21.png",
+      "sha256": "332b208d14df3d94139a3ab598e7e7e327e49bc9d4bbf5f41ddf20d8260291af",
+      "role": "COMBAT_COMPOSITION_REFERENCE_ONLY"
+    },
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+      "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5",
+      "role": "CLIMAX_COMPOSITION_REFERENCE_ONLY"
+    }
+  ],
+  "four_image_decisions": [
+    {
+      "page_number": 1,
+      "page_id": "page-71e9de766bf786cb9499a31b",
+      "panel_id": "p01-panel-01",
+      "image_path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+      "image_sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+      "original_review_path": "books/DM02/visual-proof-reviews/p01-panel-01/v0001.json",
+      "original_review_result": "FIX",
+      "reuse_decision": "REUSE_NOW_FOR_PRIVATE_COMPOSITION",
+      "findings": [
+        {
+          "original_dimension": "LETTERING_COMPATIBILITY",
+          "original_discrepancy": "The full upper lettering-safe rectangle is not protected.",
+          "classification": "COMPOSITION_REPAIRABLE",
+          "recovery_evidence": "The actual Page 1 script needs only the 39-character caption 'Sage Medhas began with a distinction.' plus Medhas dialogue. The committed two-panel preview places the caption in a smaller upper-left plaque and the dialogue over open sky without hiding any face, the fire or Medhas's speaking gesture. Both strings fit at or above the 22 px floor with no overflow."
+        }
+      ],
+      "new_pixels_required": false,
+      "qualified_source_review_required": false
+    },
+    {
+      "page_number": 11,
+      "page_id": "page-b85332e92940926f67e6dd9d",
+      "panel_id": "p11-panel-01",
+      "image_path": "books/DM02/visual-proof-campaign/images/p11-panel-01/v0001.png",
+      "image_sha256": "aa2104618b9f4395c1f62cdba279974f5be3a38b4ff78242182cc9d13438fa6c",
+      "original_review_path": "books/DM02/visual-proof-reviews/p11-panel-01/v0001.json",
+      "original_review_result": "ESCALATE",
+      "reuse_decision": "DO_NOT_PROMOTE_OR_COMPOSE_AS_SOURCE-VALID_MASTER",
+      "findings": [
+        {
+          "original_dimension": "THEOLOGICAL_ACCURACY",
+          "original_discrepancy": "The proof fixes multiple source-unspecified sacred attributes and requires qualified iconographic review.",
+          "classification": "CRITICAL_SOURCE_OR_ICONOGRAPHY",
+          "recovery_evidence": "The pixels prominently commit to four visible Brahma heads, five prominent Shesha hoods, a conventional multi-arm-looking Vishnu treatment with a peacock-feather crown, and fixed crown/halo-like radiance for Yoganidra. The bounded source does not establish those counts or symbols, and the bible does not authorize this recovery reviewer to certify them."
+        },
+        {
+          "original_dimension": "EVENT_ACTION_DEPICTION",
+          "original_discrepancy": "The six named withdrawal locus groups are not separately auditable.",
+          "classification": "NEW_PIXELS_REQUIRED",
+          "recovery_evidence": "The required source-named groups are eyes, mouth, nose, arms, heart and breast. Paired eyes or arms may be grouped visually, so the lock does not demand exactly six literal single rays; it does demand that each named origin remain auditable. In the current pixels, multiple ribbons merge and their face/chest/hand origins cannot establish all six groups. Lettering, crop or layout cannot make absent origins visible."
+        },
+        {
+          "original_dimension": "CHARACTER_IDENTITY",
+          "original_discrepancy": "Character identity cannot be continuity-certified against the text-only locks.",
+          "classification": "CRITICAL_SOURCE_OR_ICONOGRAPHY",
+          "recovery_evidence": "There is no approved exact raster reference for Brahma, Shesha, Vishnu or Yoganidra, and the depicted head, hood, arm, crown and radiance choices remain unresolved proposals. No theological or identity certification is created by this recovery."
+        },
+        {
+          "original_dimension": "LETTERING_COMPATIBILITY",
+          "original_discrepancy": "The complete upper lettering-safe rectangle is occupied.",
+          "classification": "COMPOSITION_REPAIRABLE",
+          "recovery_evidence": "The exact 362-character Page 11 narration was measured with the existing composer and STIXGeneral. It fits without overflow at 22 px in a normalized x=0.055, y=0.105, width=0.54, height=0.245 plaque over the upper-left dark sky/cloud field, ending before the central withdrawal action. This proves lettering feasibility only; it does not cure the source and iconography defects."
+        }
+      ],
+      "new_pixels_required": true,
+      "qualified_source_review_required": true
+    },
+    {
+      "page_number": 14,
+      "page_id": "page-b3c2c7ea03e4d1259ccbea7b",
+      "panel_id": "p14-panel-01",
+      "image_path": "books/DM02/visual-proof-campaign/images/p14-panel-01/v0001.png",
+      "image_sha256": "c3cf653e36e0d03a0d9b126ffeab56bee0b655ba752d8d988d9d057f8354170c",
+      "original_review_path": "books/DM02/visual-proof-reviews/p14-panel-01/v0001.json",
+      "original_review_result": "FIX",
+      "reuse_decision": "REUSE_AS_COMBAT_CHARACTER_AND_ACTION_REFERENCE_WITH_LIGHTING_CAVEAT",
+      "findings": [
+        {
+          "original_dimension": "THEOLOGICAL_ACCURACY",
+          "original_discrepancy": "An unsourced halo-like disk is introduced behind Vishnu.",
+          "classification": "ACCEPTABLE_ARTISTIC_VARIATION",
+          "recovery_evidence": "At original pixels, the gold light is diffuse, irregular and continuous with the cosmic-water rings and nebular edge light; it does not form a separate outlined sacred disk or attribute. Treat it as environmental combat backlight, never as an approved Vishnu halo or reusable sacred trait. If a qualified reviewer reads it as fixed halo symbolism, this classification must reopen before promotion."
+        },
+        {
+          "original_dimension": "LETTERING_COMPATIBILITY",
+          "original_discrepancy": "The complete upper lettering-safe rectangle is not clear.",
+          "classification": "COMPOSITION_REPAIRABLE",
+          "recovery_evidence": "The exact 239-character Page 14 narration fits the existing composer at 25 px with no overflow in a normalized width=0.87, height=0.14 plaque. It can be moved to foreground water/negative space rather than forced into the generic top band, preserving all faces and hand-to-hand contact points. The remaining Page 14 panels still need separate future masters."
+        }
+      ],
+      "new_pixels_required": false,
+      "qualified_source_review_required": false
+    },
+    {
+      "page_number": 21,
+      "page_id": "page-8619f3db280abbfd867eefe4",
+      "panel_id": "p21-panel-01",
+      "image_path": "books/DM02/visual-proof-campaign/images/p21-panel-01/v0001.png",
+      "image_sha256": "e7de39593aa71644f4c2a57fd577855a8611b2a0c8015b78497d84ecb759dbee",
+      "original_review_path": "books/DM02/visual-proof-reviews/p21-panel-01/v0001.json",
+      "original_review_result": "FIX",
+      "reuse_decision": "DO_NOT_PROMOTE_OR_COMPOSE_AS_SOURCE_VALID_MASTER",
+      "findings": [
+        {
+          "original_dimension": "SOURCE_FIDELITY",
+          "original_discrepancy": "The source-neutral dry field is rendered as a specific invented island cosmography.",
+          "classification": "NEW_PIXELS_REQUIRED",
+          "recovery_evidence": "The bounded source establishes earth not under the flood, but the pixels invent a raised, bounded cliff island with greenery and waterfalls. Cropping out the cliffs would also remove the visible evidence of the condition."
+        },
+        {
+          "original_dimension": "EVENT_ACTION_DEPICTION",
+          "original_discrepancy": "The decisive action creates anatomical strike and wound-like readings.",
+          "classification": "NEW_PIXELS_REQUIRED",
+          "recovery_evidence": "Luminous bands cross both torsos and red chest marks imply precise bodily impacts. The unresolved jaghane locus forbids asserting thigh, lap, buttocks or another exact anatomical locus. Lettering cannot truthfully remove these depicted impact claims."
+        },
+        {
+          "original_dimension": "CHARACTER_IDENTITY",
+          "original_discrepancy": "Kaitabha's proposal palette drifts from deep crimson to royal blue.",
+          "classification": "ACCEPTABLE_ARTISTIC_VARIATION",
+          "recovery_evidence": "The source does not prescribe Kaitabha's garment colour; charcoal/deep crimson is a production proposal, not a source fact. The blue garment is therefore not a source-fidelity rejection by itself. For series continuity, a future corrected master should return to the p14 charcoal/deep-crimson proposal rather than promote the blue pixels as a reference."
+        },
+        {
+          "original_dimension": "LETTERING_COMPATIBILITY",
+          "original_discrepancy": "The complete top safe rectangle is not uniformly clear.",
+          "classification": "COMPOSITION_REPAIRABLE",
+          "recovery_evidence": "The exact 215-character Page 21 narration fits without overflow at 25 px in a normalized x=0.18, y=0.115, width=0.64, height=0.17 plaque over the central dark sky, clear of all faces and the action. This does not rescue the invented geography or body-impact pixels."
+        }
+      ],
+      "new_pixels_required": true,
+      "qualified_source_review_required": false
+    }
+  ],
+  "page_11_source_recheck": {
+    "certification": "SOURCE_MAPPING_ONLY_NOT_THEOLOGICAL_CERTIFICATION",
+    "evidence": [
+      {
+        "evidence_id": "dm-evidence-006",
+        "locator": "DM 1 / Pargiter canto 81, web lines 98–99",
+        "supported_sequence": "Yoganidra leaves Vishnu's eyes, mouth, nose, arms, heart and breast and appears before Brahma."
+      },
+      {
+        "evidence_id": "dm-sanskrit-evidence-006",
+        "locator": "DM 1.89–95",
+        "supported_sequence": "The same six named locus groups precede Yoganidra's separate appearance before Brahma."
+      }
+    ],
+    "required_withdrawal_locus_groups": [
+      "eyes",
+      "mouth",
+      "nose",
+      "arms",
+      "heart",
+      "breast"
+    ],
+    "visual_rule": "Show each named origin as independently auditable, non-anatomical light or sleep-field withdrawal. Paired organs may read as a grouped origin; do not add a seventh locus, body cutaway, permanent bodily residence or unsupported sequence.",
+    "unresolved_iconography": [
+      "Brahma head/face/arm count",
+      "Shesha hood count and exact anatomy",
+      "Vishnu arm count, crown and ornaments",
+      "Yoganidra face, arm count, clothing, ornaments and exact radiance treatment"
+    ],
+    "required_next_step": "Obtain a qualified religious-iconography decision on neutral permissible treatments, then authorize at most one corrected image operation that makes the six source-named groups auditable."
+  },
+  "page_21_source_sequence_recheck": {
+    "evidence": [
+      {
+        "evidence_id": "dm-evidence-007",
+        "locator": "DM 1 / Pargiter canto 81, web lines 100–109"
+      },
+      {
+        "evidence_id": "dm-sanskrit-evidence-007",
+        "locator": "DM 1.96–104"
+      }
+    ],
+    "required_sequence": [
+      "Page 19 states the demons' condition: death only where earth is not flooded; Vishnu accepts.",
+      "Page 20 must first establish a dry-earth field wholly separate from every body, with flood visible beyond and geography, size and exposure mechanism left unspecified.",
+      "Page 21 then shows Vishnu's discus and the non-graphic defeat consequence."
+    ],
+    "truthful_visualization": "Use a low, unbounded or edge-indeterminate dry-earth plane with flood beyond it; no island cliffs, waterfalls or invented cosmography. Keep one discus motion arc outside both torsos and show defeat through recoil, silhouette and non-contact consequence. Do not show red wounds or name a thigh, lap, buttocks or other strike locus.",
+    "variant_status": "The Sanskrit jaghane and the English bodily-locus rendering remain unresolved; this report does not settle them."
+  },
+  "lettering_fit_tests": {
+    "method": "Existing book_factory.page_engine._fit_text with the configured STIXGeneral font, 1086x1448 canvas and the exact locked script strings; no images were generated or edited.",
+    "results": [
+      {
+        "page_number": 1,
+        "result": "PASS_RENDERED",
+        "caption_rendered_font_size": 22,
+        "dialogue_rendered_font_size": 25,
+        "minimum_font_size": 22,
+        "overflow": false,
+        "evidence_path": "books/DM02/private-page-previews/page-71e9de766bf786cb9499a31b/v0001/0001-page-71e9de766bf786cb9499a31b.composition.json"
+      },
+      {
+        "page_number": 11,
+        "result": "PASS_MEASURED_SOURCE_BLOCKERS_REMAIN",
+        "characters": 362,
+        "proposed_box": {
+          "x": 0.055,
+          "y": 0.105,
+          "width": 0.54,
+          "height": 0.245
+        },
+        "rendered_font_size": 22,
+        "minimum_font_size": 22,
+        "line_count": 11,
+        "overflow": false
+      },
+      {
+        "page_number": 14,
+        "result": "PASS_MEASURED",
+        "characters": 239,
+        "proposed_box": {
+          "x": 0.065,
+          "y": 0.77,
+          "width": 0.87,
+          "height": 0.14
+        },
+        "rendered_font_size": 25,
+        "minimum_font_size": 22,
+        "line_count": 5,
+        "overflow": false
+      },
+      {
+        "page_number": 21,
+        "result": "PASS_MEASURED_SOURCE_BLOCKERS_REMAIN",
+        "characters": 215,
+        "proposed_box": {
+          "x": 0.18,
+          "y": 0.115,
+          "width": 0.64,
+          "height": 0.17
+        },
+        "rendered_font_size": 25,
+        "minimum_font_size": 22,
+        "line_count": 6,
+        "overflow": false
+      }
+    ]
+  },
+  "private_composed_preview": {
+    "status": "CREATED_AND_ACTUAL_PIXEL_REVIEWED",
+    "page_number": 1,
+    "path": "books/DM02/private-page-previews/page-71e9de766bf786cb9499a31b/v0001/0001-page-71e9de766bf786cb9499a31b.png",
+    "sha256": "da3909b9ad7ca851ef8ae836f74812cd6f5c5a5dddc12e2b70e0bd703d361a19",
+    "pixel_sha256": "6f8983fa82adc96e40f09570e0a28ad63fcf7e5e4cb69bfef3c464ea5f42b5f8",
+    "review_path": "books/DM02/private-page-previews/page-71e9de766bf786cb9499a31b/v0001/0001-page-71e9de766bf786cb9499a31b.visual-review.json",
+    "verdict": "PASS_FOR_PRIVATE_REUSE_PREVIEW_WITH_LIMITATION",
+    "image_generation_operations": 0,
+    "image_edit_operations": 0,
+    "pdf_created": false
+  },
+  "critical_issues": [
+    {
+      "page_number": 11,
+      "issue": "Source-unspecified Brahma, Shesha, Vishnu and Yoganidra iconography is fixed in pixels.",
+      "required_resolution": "QUALIFIED_RELIGIOUS_ICONOGRAPHY_REVIEW_BEFORE_CORRECTION_OR_PROMOTION"
+    },
+    {
+      "page_number": 11,
+      "issue": "The six source-named withdrawal locus groups are not separately auditable.",
+      "required_resolution": "ONE_NEW_CORRECTED_PIXEL_MASTER_AFTER_QUALIFIED_REVIEW"
+    },
+    {
+      "page_number": 21,
+      "issue": "A bounded cliff island with waterfalls invents source-silent geography.",
+      "required_resolution": "ONE_NEW_CORRECTED_PIXEL_MASTER"
+    },
+    {
+      "page_number": 21,
+      "issue": "Torso-crossing rings and red chest marks imply exact anatomical impacts despite the unresolved bodily locus.",
+      "required_resolution": "SAME_SINGLE_PAGE_21_CORRECTION_OPERATION"
+    }
+  ],
+  "minimal_corrective_image_operation_budget": {
+    "total_operations": 2,
+    "automatic_retries": 0,
+    "authorization_status": "NOT_AUTHORIZED_BY_THIS_RECOVERY",
+    "operations": [
+      {
+        "page_number": 11,
+        "operations": 1,
+        "precondition": "Qualified religious-iconography review supplies a neutral permitted treatment.",
+        "scope": "Correct the six auditable source-named withdrawal groups and resolve unapproved sacred attributes in one controlled master."
+      },
+      {
+        "page_number": 21,
+        "operations": 1,
+        "precondition": "Keep the Page 19-to-20-to-21 source sequence and unresolved jaghane constraint locked.",
+        "scope": "Replace invented island geography and anatomical impact marks in one controlled master."
+      }
+    ],
+    "zero_operation_pages": [
+      {
+        "page_number": 1,
+        "reason": "Existing pixels support an honest private composition."
+      },
+      {
+        "page_number": 14,
+        "reason": "Existing pixels support action/character reuse and exact-script composition; environmental backlight is not promoted as halo iconography."
+      }
+    ],
+    "excluded_from_budget": "Unproduced second/third storyboard panels and the remaining complete-book operation plan are future initial masters, not corrective retries for these four proofs.",
+    "campaign_preservation": "The exhausted four-operation proof campaign remains complete with zero retries available. The separate complete-book campaign remains awaiting authorization with 35 planned initial generations, up to 9 retries and a 44-operation hard ceiling."
+  },
+  "reusable_character_reference_proposal": {
+    "status": "PROPOSAL_NOT_PIXEL_APPROVAL",
+    "promotion_performed": false,
+    "principle": "Only locked textual traits are authoritative. Existing rasters may be crop candidates after human approval; unresolved pixels are never converted into source facts.",
+    "characters": [
+      {
+        "character_ids": [
+          "dm-medhas",
+          "dm-suratha",
+          "dm-samadhi"
+        ],
+        "locked_traits": "Medhas is an aged, restrained sage and speaker; Suratha has travel-worn royal bearing without crown, regalia or weapon; Samadhi remains plainly dressed and unarmed; all three form a neutral listening triangle.",
+        "candidate_pixels": "Page 1 proof may supply private face, garment and seated-pose crops because its source, identity and anatomy checks passed.",
+        "unresolved_pixels": "No exact crop is human-approved as a durable character reference, and the Page 1 raster does not provide the separate over-shoulder panel-2 camera angle."
+      },
+      {
+        "character_ids": [
+          "dm-vishnu",
+          "dm-madhu",
+          "dm-kaitabha"
+        ],
+        "locked_traits": "Vishnu is distinct, blue-toned in the proposal and uses only scene-required coherent arms; Madhu is broad/low in oxblood-charcoal; Kaitabha is taller/angular in charcoal-deep-crimson; the asuras remain distinct and unarmed during the grapple.",
+        "candidate_pixels": "Page 14 may supply private combat-face, silhouette, clothing and grapple-reference crops; exclude its lighting flare from the trait set.",
+        "unresolved_pixels": "No exact crown, arm count or ornament is source-mandated; Page 21's blue Kaitabha garment is not the continuity baseline, and Page 21 action/environment pixels are rejected."
+      },
+      {
+        "character_ids": [
+          "dm-brahma",
+          "dm-yoganidra",
+          "dm-shesha"
+        ],
+        "locked_traits": "Brahma is lotus-seated in the source sequence; Yoganidra withdraws non-anatomically from six named groups and then appears separately; Shesha supports sleeping Vishnu.",
+        "candidate_pixels": "NONE",
+        "unresolved_pixels": "Head, face, arm and hood counts; crowns, ornaments, halo/radiance form and exact anatomy remain unresolved. The Page 11 raster must not be promoted before qualified review and corrected pixels."
+      }
+    ]
+  },
+  "larger_production_assessment": {
+    "decision": "NOT_READY_FOR_LARGER_IMAGE_PRODUCTION_YET",
+    "reason": "The painterly quality, character separation and local composition engine are strong enough to justify recovery, and Pages 1 and 14 demonstrate reuse potential. Scaling now would risk repeating Page 11 iconography ambiguity and Page 21 invented geography/anatomical-impact errors.",
+    "minimum_gate_to_proceed": [
+      "Qualified Page 11 iconography guidance is recorded without theological overclaim.",
+      "One corrected Page 11 master and one corrected Page 21 master pass independent actual-pixel review.",
+      "A human approves the proposed character-reference crops and explicitly excludes unresolved attributes.",
+      "A new, separately bounded campaign authorization is granted; no old counters are reset."
+    ],
+    "publication_status": "BLOCKED_UNCHANGED"
+  },
+  "recovery_cost": {
+    "new_image_operations": 0,
+    "image_edits": 0,
+    "paid_provider_calls": 0,
+    "additional_monetary_cost_usd": 0.0,
+    "basis": "Only repository reads, local deterministic page composition, local text-fit measurement and actual-pixel inspection were performed."
+  }
+}

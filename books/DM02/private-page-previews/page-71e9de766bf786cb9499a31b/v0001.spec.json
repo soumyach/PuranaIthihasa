@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "book_version": "DM02-PRIVATE-REUSE-PREVIEW-PAGE01-V1",
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "page_script_hash": "f5767c345c8bd76643b3d86a2e823fb5ced8e8460fb0440ace884b89e3c434ef",
+  "page_id": "page-71e9de766bf786cb9499a31b",
+  "page_number": 1,
+  "reading_order": 1,
+  "page_title": "THE TALE OPENS",
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "layout_type": "TWO_PANEL_SEQUENTIAL",
+  "fixture": false,
+  "private_preview": true,
+  "publication_eligible": false,
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "preview_authority": {
+    "scope": "ONE_LOCAL_DM02_EXISTING_ART_REUSE_PREVIEW",
+    "basis": "Explicit user request in the current Codex thread",
+    "image_generation_authorized": false,
+    "publication_authorized": false,
+    "paid_provider_calls_authorized": false
+  },
+  "storyboard_conformance": {
+    "status": "PARTIAL_DIAGNOSTIC_NOT_ARTWORK_COMPLETE",
+    "reason": "The reviewed p01-panel-01 raster truthfully supplies the locked wide listening triangle and also supports a distinct Medhas-centered crop for testing the exact p01-panel-02 dialogue, but the crop is not a replacement approval for a separately illustrated second master."
+  },
+  "reference_comparison": [
+    {
+      "role": "PRESENTATION_REFERENCE_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "role": "COMIC_PAGE_RHYTHM_REFERENCE_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+    }
+  ],
+  "panels": [
+    {
+      "panel_id": "p01-panel-01",
+      "reading_order": 1,
+      "diagnostic_beat": "Establish Medhas, Suratha and Samadhi in the locked listening triangle across the low fire.",
+      "asset": {
+        "path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+        "sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+        "usage": "PRIVATE_INTERNAL_DIAGNOSTIC",
+        "approval": {
+          "status": "FIX",
+          "subject_hash": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+          "review_path": "books/DM02/visual-proof-reviews/p01-panel-01/v0001.json"
+        }
+      },
+      "crop": {
+        "mode": "COVER",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.65
+        },
+        "zoom": 1.0,
+        "crop_intent": "Wide landscape crop retaining all three figures, the low fire and their spatial relationship."
+      },
+      "speaker_anchors": []
+    },
+    {
+      "panel_id": "p01-panel-02",
+      "reading_order": 2,
+      "diagnostic_beat": "Use a distinct crop of the same locked moment to test Medhas's exact speaker-attributed dialogue without altering pixels.",
+      "asset": {
+        "path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+        "sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+        "usage": "PRIVATE_INTERNAL_DIAGNOSTIC",
+        "approval": {
+          "status": "FIX",
+          "subject_hash": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+          "review_path": "books/DM02/visual-proof-reviews/p01-panel-01/v0001.json"
+        }
+      },
+      "crop": {
+        "mode": "COVER",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.49
+        },
+        "zoom": 1.12,
+        "crop_intent": "Medhas-centered speaking crop retaining both listeners at the lateral edges and leaving sky behind the dialogue balloon."
+      },
+      "speaker_anchors": [
+        {
+          "speaker_id": "dm-medhas",
+          "x": 0.5,
+          "y": 0.76,
+          "target_feature": "Medhas speaking face"
+        }
+      ]
+    }
+  ],
+  "lettering": [
+    {
+      "lettering_id": "p01-narration",
+      "panel_id": "p01-panel-01",
+      "reading_order": 1,
+      "channel": "NARRATION",
+      "speaker_id": "narrator",
+      "badge_number": 1,
+      "text": "Sage Medhas began with a distinction.",
+      "source_script_hash": "5ccc0d412c7d9fd9ed6138e21f941e83bf865bbe331dd6f36fa7a85dfb275d80",
+      "box": {
+        "x": 0.065,
+        "y": 0.12,
+        "width": 0.36,
+        "height": 0.07
+      },
+      "font": {
+        "size": 25,
+        "minimum_size": 22
+      }
+    },
+    {
+      "lettering_id": "p01-dialogue",
+      "panel_id": "p01-panel-02",
+      "reading_order": 2,
+      "channel": "DIALOGUE",
+      "speaker_id": "dm-medhas",
+      "text": "The Goddess is eternal. When the sacred account speaks of her appearing, it tells of the forms by which she becomes known for divine purposes.",
+      "source_script_hash": "0f4366c192f2df1b1e45d401e8fe48787299b8eb40a9ff518252d27ccc23c629",
+      "box": {
+        "x": 0.18,
+        "y": 0.55,
+        "width": 0.64,
+        "height": 0.14
+      },
+      "font": {
+        "size": 25,
+        "minimum_size": 22
+      }
+    }
+  ],
+  "required_lettering_ids": [
+    "p01-narration",
+    "p01-dialogue"
+  ],
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "typography": {
+    "family": "STIXGeneral",
+    "body_size": 25,
+    "title_size": 30
+  },
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    }
+  }
+}
