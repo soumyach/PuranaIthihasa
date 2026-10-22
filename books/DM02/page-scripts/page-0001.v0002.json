@@ -1,0 +1,253 @@
+{
+  "character_ids": [
+    "dm-medhas",
+    "dm-suratha",
+    "dm-samadhi"
+  ],
+  "continuity_in": "story-open",
+  "continuity_out": "after-page-01",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-medhas",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-suratha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-samadhi",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-004"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "TWO_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p01-narration",
+      "placement": "caption-safe-region",
+      "text": "Sage Medhas began with a distinction."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p01-dialogue",
+      "placement": "speaker-anchored-balloon",
+      "speaker_id": "dm-medhas",
+      "text": "The Goddess is eternal. When the sacred account speaks of her appearing, it tells of the forms by which she becomes known for divine purposes."
+    }
+  ],
+  "lineage": {
+    "original_page_id": "page-71e9de766bf786cb9499a31b",
+    "original_page_number": 1,
+    "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+    "transformation": "PAGE_RECORD_RETAINED"
+  },
+  "location_id": "dm02-forest-hermitage-frame",
+  "moment_ids": [
+    "medhas_opens_cosmic_tale"
+  ],
+  "narrative_beats": [
+    "Sage Medhas began with a distinction."
+  ],
+  "page_id": "page-71e9de766bf786cb9499a31b",
+  "page_number": 1,
+  "panel_count": 2,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-medhas",
+        "dm-suratha",
+        "dm-samadhi"
+      ],
+      "composition": "Wide eye-level listening triangle: Medhas faces Suratha and Samādhi across a low fire; their neutral attention is labeled visual adaptation and adds no reaction or motive.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p01-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Wide eye-level listening triangle: Medhas faces Suratha and Samādhi across a low fire; their neutral attention is labeled visual adaptation and adds no reaction or motive.",
+        "shot_scale": "wide"
+      },
+      "lineage": {
+        "original_panel_ids": [
+          "p01-panel-01"
+        ],
+        "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+        "transformation": "RETAINED_PANEL_SPECIFICATION"
+      },
+      "location_id": "dm02-forest-hermitage-frame",
+      "production_plan": {
+        "asset_source": "NEW_RASTER_MASTER",
+        "classification": "ESSENTIAL_NEW_ART",
+        "existing_approved_pixel_asset": null,
+        "independent_pixel_review_required": true,
+        "master_panel_id": "p01-panel-01",
+        "rationale": "A distinct master is required for the retained narrative state or safe reusable framing.",
+        "requires_new_raster_generation": true
+      },
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p01-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Wide eye-level listening triangle: Medhas faces Suratha and Samādhi across a low fire; their neutral attention is labeled visual adaptation and adds no reaction or motive."
+    },
+    {
+      "character_ids": [
+        "dm-medhas",
+        "dm-suratha",
+        "dm-samadhi"
+      ],
+      "composition": "Medium speaker-anchored view of Medhas beginning the distinction, with both listeners present in quiet profile and the upper field reserved for lettering.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p01-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Medium speaker-anchored view of Medhas beginning the distinction, with both listeners present in quiet profile and the upper field reserved for lettering.",
+        "shot_scale": "medium"
+      },
+      "lineage": {
+        "original_panel_ids": [
+          "p01-panel-02"
+        ],
+        "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+        "transformation": "RETAINED_PANEL_SPECIFICATION"
+      },
+      "location_id": "dm02-forest-hermitage-frame",
+      "production_plan": {
+        "asset_source": "NEW_RASTER_MASTER",
+        "classification": "ESSENTIAL_NEW_ART",
+        "existing_approved_pixel_asset": null,
+        "independent_pixel_review_required": true,
+        "master_panel_id": "p01-panel-02",
+        "rationale": "A distinct master is required for the retained narrative state or safe reusable framing.",
+        "requires_new_raster_generation": true
+      },
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p01-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Medium speaker-anchored view of Medhas beginning the distinction, with both listeners present in quiet profile and the upper field reserved for lettering."
+    }
+  ],
+  "reading_order": [
+    "p01-panel-01",
+    "p01-panel-02"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p01-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-004-a",
+    "claim-004-d"
+  ],
+  "title": "The Tale Opens",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation",
+    "no unsupported iconography",
+    "no unsupported body-locus claim"
+  ],
+  "version": 1,
+  "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+}

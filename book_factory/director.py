@@ -1137,6 +1137,8 @@ class FactoryDirector:
             raise ContractError("complete-book image planning requires all immutable preproduction components")
         latest = {role: records[-1] for role, records in component_stores.items()}
         storyboard = latest["STORYBOARD"]["payload"]
+        if latest["PROOF_SPECS"]["payload"].get("storyboard_hash") != content_hash(storyboard):
+            raise ContractError("latest proof specifications do not bind the latest storyboard payload")
 
         usage_path = Path(usage_observation_path)
         if not usage_path.is_absolute():
@@ -1158,27 +1160,63 @@ class FactoryDirector:
         if usage.get("source") != "CODEX_APP_GET_USAGE_LIMITS_READ_ONLY":
             raise ContractError("usage observation source is not the read-only Codex account control")
 
+        optimization = storyboard.get("optimization_plan", {})
+        panel_records = [
+            (page, panel)
+            for page in storyboard.get("pages", [])
+            for panel in page.get("panels", [])
+        ]
+        panel_by_id = {panel["id"]: (page, panel) for page, panel in panel_records}
+        if len(panel_by_id) != len(panel_records):
+            raise ContractError("optimized campaign requires unique panel ids")
+        requires_new_art = {
+            panel["id"]: panel.get("production_plan", {}).get("requires_new_raster_generation", True)
+            for _, panel in panel_records
+        }
+        for _, panel in panel_records:
+            master_panel_id = panel.get("production_plan", {}).get("master_panel_id")
+            if not requires_new_art[panel["id"]] and master_panel_id:
+                if master_panel_id not in panel_by_id or not requires_new_art.get(master_panel_id):
+                    raise ContractError("shared-master target does not resolve to a generated panel")
+        proof_first = optimization.get("proof_first_panel_ids", [])
+        ordered_master_ids = [
+            panel_id for panel_id in proof_first
+            if panel_id in panel_by_id and requires_new_art[panel_id]
+        ]
+        ordered_master_ids.extend(
+            panel["id"] for _, panel in panel_records
+            if requires_new_art[panel["id"]] and panel["id"] not in set(ordered_master_ids)
+        )
+
         units = []
-        for page in storyboard.get("pages", []):
-            for panel in page.get("panels", []):
-                units.append({
-                    "unit_id": "%s--%s" % (page["page_id"], panel["id"]),
-                    "page_id": page["page_id"],
-                    "page_number": page["page_number"],
-                    "panel_id": panel["id"],
-                    "operation": "generate",
-                    "existing_usable_asset": None,
-                    "required_action": panel.get("image_instructions", {}).get("required_action"),
-                    "character_ids": panel.get("character_ids", []),
-                    "location_id": panel.get("location_id"),
-                    "safe_regions": panel.get("safe_regions", []),
-                    "reference_roles": {
-                        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
-                        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
-                        "C": "UNAVAILABLE_NO_APPROVED_DM02_CHARACTER_PIXELS",
-                        "D": "UNAVAILABLE_NO_APPROVED_DM02_ENVIRONMENT_PIXELS",
-                    },
-                })
+        for operation_order, panel_id in enumerate(ordered_master_ids, 1):
+            page, panel = panel_by_id[panel_id]
+            served_panel_ids = [panel_id]
+            served_panel_ids.extend(
+                candidate["id"] for _, candidate in panel_records
+                if candidate.get("production_plan", {}).get("master_panel_id") == panel_id
+                and candidate["id"] != panel_id
+            )
+            units.append({
+                "unit_id": "%s--%s" % (page["page_id"], panel["id"]),
+                "page_id": page["page_id"],
+                "page_number": page["page_number"],
+                "panel_id": panel["id"],
+                "operation": "generate",
+                "operation_order": operation_order,
+                "served_panel_ids": served_panel_ids,
+                "existing_usable_asset": None,
+                "required_action": panel.get("image_instructions", {}).get("required_action"),
+                "character_ids": panel.get("character_ids", []),
+                "location_id": panel.get("location_id"),
+                "safe_regions": panel.get("safe_regions", []),
+                "reference_roles": {
+                    "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+                    "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+                    "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+                    "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES",
+                },
+            })
         if not units:
             raise ContractError("storyboard has no visual units")
 
@@ -1226,7 +1264,57 @@ class FactoryDirector:
                 "file_sha256": sha256_bytes(path.read_bytes()),
             })
 
+        if optimization:
+            review_inputs = (
+                (
+                    "STORYBOARD_V2_SOURCE_STORYTELLING_REVIEW",
+                    self.root / "book-factory" / "reports" / "dm02-storyboard-v2-source-storytelling-review.json",
+                    "exact_input_bindings",
+                    "record_hash",
+                ),
+                (
+                    "STORYBOARD_V2_VISUAL_PRODUCTION_REVIEW",
+                    self.root / "book-factory" / "reports" / "dm02-storyboard-v2-visual-production-review.json",
+                    "input_bindings",
+                    "record_content_hash",
+                ),
+            )
+            for role, path, binding_key, hash_key in review_inputs:
+                if not path.is_file():
+                    raise ContractError("optimized campaign requires both exact-v2 independent reviews")
+                review = load_json(path)
+                binding = review.get(binding_key, {}).get("storyboard_v2", {})
+                if review.get("result") != "PASS" or binding.get(hash_key) != latest["STORYBOARD"]["content_hash"]:
+                    raise ContractError("optimized campaign review does not pass or bind the latest storyboard")
+                locked_inputs.append({
+                    "role": role,
+                    "path": str(path.relative_to(self.root)),
+                    "file_sha256": sha256_bytes(path.read_bytes()),
+                })
+
         initial_operations = len(units)
+        retry_operations = optimization.get("maximum_retry_operations", initial_operations)
+        maximum_total_operations = initial_operations + retry_operations
+        batch_size = optimization.get("suggested_batch_size", 1)
+        if not isinstance(retry_operations, int) or retry_operations < 0 or retry_operations > initial_operations:
+            raise ContractError("campaign retry reserve must be an integer between zero and the master count")
+        if not isinstance(batch_size, int) or batch_size < 1:
+            raise ContractError("campaign batch size must be a positive integer")
+        expected_masters = optimization.get("distinct_new_raster_masters")
+        if expected_masters is not None and expected_masters != initial_operations:
+            raise ContractError("optimized campaign master count does not match the storyboard plan")
+        non_generation_panels = [
+            {
+                "page_id": page["page_id"],
+                "page_number": page["page_number"],
+                "panel_id": panel["id"],
+                "classification": panel.get("production_plan", {}).get("classification"),
+                "asset_source": panel.get("production_plan", {}).get("asset_source"),
+                "master_panel_id": panel.get("production_plan", {}).get("master_panel_id"),
+                "fallback": panel.get("production_plan", {}).get("fallback"),
+            }
+            for page, panel in panel_records if not requires_new_art[panel["id"]]
+        ]
         authorization_subject = {
             "book_id": book_id,
             "purpose": "PRIVATE_INTERNAL_COMPLETE_BOOK_ART_CAMPAIGN",
@@ -1243,9 +1331,9 @@ class FactoryDirector:
             "private_illustration_clearance_required_before_execution": True,
             "unit_ids": [unit["unit_id"] for unit in units],
             "initial_operation_count": initial_operations,
-            "retry_operation_ceiling": initial_operations,
+            "retry_operation_ceiling": retry_operations,
             "operation_ceiling_per_unit": 2,
-            "operation_ceiling_total": initial_operations * 2,
+            "operation_ceiling_total": maximum_total_operations,
             "publication_authorized": False,
             "scope_inheritance_allowed": False,
             "locked_input_hashes": sorted(item["file_sha256"] for item in locked_inputs),
@@ -1254,7 +1342,9 @@ class FactoryDirector:
         campaign = {
             "schema_version": "1.0",
             "book_id": book_id,
-            "campaign_id": "%s-complete-book-image-campaign-v1" % book_id.lower(),
+            "campaign_id": "%s-complete-book-image-campaign-v%d" % (
+                book_id.lower(), storyboard.get("version", 1)
+            ),
             "status": "AWAITING_CAMPAIGN_AUTHORIZATION",
             "authorization_subject": authorization_subject,
             "authorization_subject_hash": subject_hash,
@@ -1264,22 +1354,54 @@ class FactoryDirector:
             "actual_incremental_usd_verification": "NO_IMAGE_OPERATION_EXECUTED_HOST_MONETARY_LEDGER_UNAVAILABLE",
             "actual_purchased_credits_consumed": 0,
             "units": units,
+            "non_generation_panels": non_generation_panels,
+            "generation_plan": {
+                "ordering_policy": "PROOF_FIRST_THEN_STORY_ORDER",
+                "exact_panel_order": ordered_master_ids,
+                "proof_first_panel_ids": proof_first,
+                "suggested_batch_size": batch_size,
+                "human_approval_checkpoints": [
+                    "Before any operation: fresh read-only usage and billing preflight plus exact non-inheritable campaign authorization.",
+                    "After the proof-first units: independent actual-pixel review; stop unless all required identity, iconography, composition and safe-region gates pass.",
+                    "After every later bounded batch: independent review of every exact output and a fresh allowance check before continuing.",
+                    "Before any retry: document the failed exact pixel hash and authorize only the bounded repair without changing the total ceiling.",
+                ],
+                "reference_promotion_policy": "Only exact DM02 outputs that pass independent pixel review may become role C or D references; approval and reference status never transfer by resemblance.",
+            },
             "counts": {
                 "storyboard_pages": len(storyboard.get("pages", [])),
-                "storyboard_panels": len(units),
+                "storyboard_panels": len(panel_records),
+                "illustrated_panel_slots": sum(
+                    1 for _, panel in panel_records
+                    if panel.get("production_plan", {}).get("asset_source") != "DETERMINISTIC_TYPOGRAPHY_AND_SERIES_ORNAMENT_RULES"
+                ),
                 "panels_needing_new_art": len(units),
                 "existing_usable_assets": 0,
                 "image_edit_opportunities": 0,
+                "shared_master_reframe_targets": sum(
+                    1 for _, panel in panel_records
+                    if panel.get("production_plan", {}).get("classification") == "REFRAME_EXISTING_ART"
+                ),
+                "deterministic_layout_only_panels": sum(
+                    1 for _, panel in panel_records
+                    if panel.get("production_plan", {}).get("asset_source") == "DETERMINISTIC_TYPOGRAPHY_AND_SERIES_ORNAMENT_RULES"
+                ),
                 "initial_generation_operations": initial_operations,
-                "maximum_retry_operations": initial_operations,
-                "maximum_total_operations": initial_operations * 2,
+                "maximum_retry_operations": retry_operations,
+                "maximum_total_operations": maximum_total_operations,
             },
             "allowance_observation": usage,
             "cost_and_credit_boundary": {
-                "built_in_images_count_against_general_codex_usage": True,
+                "codex_task_activity_counts_against_codex_usage": True,
+                "built_in_image_operation_allowance_bucket": "NOT_EXPOSED_BY_HOST_TOOL_OR_READ_ONLY_USAGE_CONTROL",
+                "image_usage_may_be_absent_from_thread_level_usage": True,
                 "included_usage_estimate_per_image_available": False,
                 "zero_incremental_usd_enforceable_by_repository": False,
-                "reason": "The host image tool exposes no reservation or per-operation monetary estimate; exact-hash human authorization and a fresh preflight are required before every operation.",
+                "reason": "The host image tool exposes no allowance reservation, per-operation credit estimate or monetary quote. Official OpenAI guidance also warns that image/tool activity may be absent from thread-level usage; exact-hash human authorization, workspace billing inspection and a fresh preflight remain required.",
+                "official_documentation": [
+                    "https://developers.openai.com/siwc/ui-ux-guidelines",
+                    "https://developers.openai.com/api/docs/pricing",
+                ],
                 "stop_if": [
                     "PURCHASED_CREDIT_USE_REQUESTED",
                     "PAID_BILLING_REQUESTED",

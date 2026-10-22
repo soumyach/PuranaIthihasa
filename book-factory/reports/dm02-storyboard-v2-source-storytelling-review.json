@@ -1,0 +1,267 @@
+{
+  "schema_version": "1.0",
+  "kind": "DM02_STORYBOARD_SOURCE_STORYTELLING_REVIEW",
+  "book_id": "DM02",
+  "review_perspective": "SOURCE_STORYTELLING",
+  "result": "PASS",
+  "reviewed_storyboard_version": 2,
+  "advisory_only": false,
+  "reviewer": {
+    "id": "/root/pr4_source_rights",
+    "role": "source-evidence",
+    "capability": "SOURCE_STORYBOARD_SEMANTIC_REVIEW",
+    "independent": true,
+    "independent_of_manuscript_creator": true,
+    "independent_of_storyboard_authoring_process": true,
+    "manuscript_creator_id": "/root/dm04_manuscript_writer",
+    "storyboard_creator_identity_in_record": null,
+    "attestation_scope": "ORCHESTRATOR_SESSION_RECORD_NOT_CRYPTOGRAPHIC_IDENTITY"
+  },
+  "execution": {
+    "mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+    "executed": true,
+    "agent_id": "/root/pr4_source_rights",
+    "role": "source-evidence",
+    "orchestrator_attested": true,
+    "attestation_scope": "ORCHESTRATOR_SESSION_RECORD_NOT_CRYPTOGRAPHIC_IDENTITY"
+  },
+  "exact_input_bindings": {
+    "storyboard_v2": {
+      "path": "books/DM02/storyboards/v0002.json",
+      "record_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+      "payload_hash": "e50ba7af25ce1c1091e83e52ddabab3568982705c0d38b87ef07dac0604971c2",
+      "file_sha256": "2ffc82651274e049bf8b20c270f5abde63841fb2abc40137d935b956990069f6",
+      "parent_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6"
+    },
+    "proof_specs_v2": {
+      "path": "books/DM02/proof-specs/v0002.json",
+      "record_hash": "9515ff2b1de2b35a7cb81c027d287db7d88f6000e71bf12c407ed0b20a16c8e2",
+      "payload_hash": "0ea4695758b55c70286f361fc53c6c03b09dc9ab92fedf485911a7800a39f974",
+      "file_sha256": "547b3d89985fdf809b5a2aa44d2002cdd812d443e399a685da2dd99053259d3e",
+      "bound_storyboard_payload_hash": "e50ba7af25ce1c1091e83e52ddabab3568982705c0d38b87ef07dac0604971c2",
+      "parent_proof_spec_record_hash": "38ccd93cfe00915a978c27e6be701ce481236c0f6fdb37010781a0e67a97044c"
+    },
+    "storyboard_v1_parent": {
+      "path": "books/DM02/storyboards/v0001.json",
+      "record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+      "payload_hash": "cf124d53f851ebe4d6265b596e187b1f03b8b64c0eaf493f425a0a7242d58249",
+      "file_sha256": "c1b548799c8cfdd01c94f2f463bcb0219aa086f531089873f51894fce456f9bb"
+    },
+    "manuscript_v2": {
+      "path": "books/DM02/manuscripts/v0002.json",
+      "record_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+      "file_sha256": "988853aadfbde1b09f080ea409b7e23772712f97e0eed42946bf7930ffe7c3a9"
+    },
+    "story_packet": {
+      "path": "books/DM02/story-packets/b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd.json",
+      "packet_hash": "b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd",
+      "file_sha256": "63195c77c26e324af9809f1cfde80131108d655b550ce137115e3337b3f84e84"
+    },
+    "source_clearance": {
+      "path": "books/DM02/source-clearance/483cc82d41b142878778e107deabd090ec623ccf4a48410b28d80a3c95f1213e.json",
+      "clearance_hash": "483cc82d41b142878778e107deabd090ec623ccf4a48410b28d80a3c95f1213e",
+      "file_sha256": "ddbbe4485c890408bb4a8f4a51c5e5490ebcf5e6e7b8a412ac5af6c11b539763"
+    },
+    "rules": {
+      "path": "MYTHOLOGY_COMIC_RULES.md",
+      "sha256": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070"
+    },
+    "source_graph": {
+      "graph_hash": "f3a02b5eebbe4b11035240f64ede32fcf889ff7b85f481dfe11b13744a0fc6b1",
+      "validation_before_review": "PASS",
+      "validation_after_review": "PASS",
+      "unchanged_during_review": true
+    }
+  },
+  "integrity_and_lineage_checks": {
+    "storyboard_record_hash_recomputed": "PASS",
+    "storyboard_payload_hash_recomputed": "PASS",
+    "proof_spec_record_hash_recomputed": "PASS",
+    "proof_spec_payload_hash_recomputed": "PASS",
+    "proof_spec_binds_exact_storyboard_payload_hash": "PASS",
+    "storyboard_parent_hash_matches_v1_record": "PASS",
+    "payload_parent_storyboard_hash_matches_v1_record": "PASS",
+    "all_24_page_lineage_records_bind_v1_record": "PASS",
+    "all_44_panel_lineage_records_bind_v1_record": "PASS",
+    "page_ids_and_numbers_preserved": "PASS",
+    "panel_ids_and_reading_order_preserved": "PASS",
+    "summary": "Storyboard v2 is a valid immutable child of storyboard v1. Every page and panel retains its original identity and binds the same v1 record hash; the proof specification binds the exact v2 payload hash rather than a stale or unrelated record."
+  },
+  "exact_semantic_preservation_checks": {
+    "lettering_result": "UNCHANGED_EXACT",
+    "lettering_items": 44,
+    "lettering_channels": {
+      "DIALOGUE": 9,
+      "INSET_EXPLANATION": 4,
+      "NARRATION": 31
+    },
+    "lettering_comparison_hash_v1": "8628d0da9abf4d31f9b5e797244db4a065dd0a6e573adb92c10fc11e04884bcc",
+    "lettering_comparison_hash_v2": "8628d0da9abf4d31f9b5e797244db4a065dd0a6e573adb92c10fc11e04884bcc",
+    "narrative_beats_result": "UNCHANGED_EXACT",
+    "narrative_beats_comparison_hash": "e2c5c7518fbe60919737182d41030b52781af30d2b4152cfda8a26d1d48c0dc0",
+    "event_mapping_result": "UNCHANGED_EXACT",
+    "event_mapping_comparison_hash": "53759213fbc4e0b96bfe0cc24a21eb8ea7fee7ec3e69ce9af3e9f681374c1d69",
+    "claim_mapping_result": "UNCHANGED_EXACT",
+    "claim_mapping_comparison_hash": "f960d0bf3ecd799142d8864ec203dd7c2e174550ab9e960517ce488a702a4ec3",
+    "required_moments_result": "COMPLETE_EXACT",
+    "required_moments_count": 12,
+    "missing_required_moments": [],
+    "extra_required_moments": [],
+    "summary": "The optimization changes no reader-facing lettering, narrative beat, event assignment, claim assignment or required moment. All 24 pages and 44 panel slots retain their storytelling order."
+  },
+  "dimension_assessments": [
+    {
+      "dimension": "complete_source_event_coverage",
+      "result": "PASS",
+      "assessment": "All four required events remain fully represented across the same page ranges and claim ids as storyboard v1: dm-event-004 on pages 1-7, dm-event-005 on pages 8-10, dm-event-006 on pages 11-17 and dm-event-007 on pages 18-22. All twelve required moments are placed, and the source/adaptation note and modern reflection remain separate back matter."
+    },
+    {
+      "dimension": "causal_sequence_and_condition_before_action",
+      "result": "PASS",
+      "assessment": "The locked causal order is unchanged. Yoganidra's six-group withdrawal and appearance precede Vishnu's awakening; arm-to-arm combat and its five-thousand-year duration precede delusion and the joint boon offer; Vishnu's requested boon precedes the demons' joint condition; Vishnu accepts; page 20 establishes the condition-satisfied state; and only then does page 21 stage the discus action."
+    },
+    {
+      "dimension": "character_identity_and_joint_agency",
+      "result": "PASS",
+      "assessment": "Medhas, Yoganidra, Vishnu, Shesha, Brahma, Madhu and Kaitabha retain their locked identities and roles. The v2 master-and-reframe language preserves both demons as equal boon offerers and joint condition setters, keeps Vishnu as boon recipient and final combatant, and introduces no outside boon-giver, genealogy, army, weapon before the final discus or new divine motive."
+    },
+    {
+      "dimension": "theological_attribution_and_source_silence",
+      "result": "PASS",
+      "assessment": "Brahma's cosmic language remains exact speaker-anchored hymn dialogue and is not converted into narrator-certified doctrine or a literal weapon array. Yoganidra remains a source-neutral sleep power before withdrawal and an appeared presence afterward. Source-silent head, arm, hood, clothing, ornament, halo and weapon details remain prohibited or proposal-only."
+    },
+    {
+      "dimension": "body_locus_and_proposal_only_geography",
+      "result": "PASS",
+      "assessment": "The p20 and p21 specifications improve the boundary rather than resolve it. The unflooded-earth field is repeatedly labeled a source-neutral proposal with unspecified size, mechanism and cosmography, explicitly not a source-fixed island or anatomical platform. The panels prohibit thigh, lap, buttocks, bodily platform and precise strike locus, preserving the open jaghane witness difference."
+    },
+    {
+      "dimension": "shared_master_and_reframe_storytelling_integrity",
+      "result": "PASS",
+      "assessment": "The seven proposed reframes are limited to adjacent same-moment focus changes: Brahma and still-water details on page 5, Brahma's invocation close view on page 8, Vishnu's reaction on page 17, a wider hold after his reply on page 18, the two demons' joint condition on page 19 and the quiet fire close on page 22. Each is conditional on exact-pixel review, grants no inherited approval and has an explicit fallback to a separately authorized new generation. No source event or temporal transition depends on pretending that one image depicts two different actions."
+    },
+    {
+      "dimension": "proof_spec_alignment",
+      "result": "PASS",
+      "assessment": "Proof specs v2 bind the exact storyboard payload hash and retain source boundaries for the frame, six-group withdrawal, arm-to-arm combat and final action. The full-page proof expressly requires the condition-satisfied state to have been established on the preceding page and labels the dry-earth field as a proposal rather than fixed geography. All proof attempts and approvals remain empty or provider-blocked in the reviewed specification; this review grants no visual approval."
+    },
+    {
+      "dimension": "complete_resolution_and_back_matter",
+      "result": "PASS",
+      "assessment": "Page 21 retains the discus ending and page 22 states that Yoganidra's power turned the demons' pride toward the boon that ended them, that Brahma is safe, Vishnu is awake and Medhas closes the episode. The fatal source outcome is therefore not softened into retreat or temporary incapacity. The source note retains non-verbatim, excluded-backstory, unresolved-locus and private-draft boundaries; the family reflection remains explicitly modern and non-scriptural."
+    }
+  ],
+  "event_checks": [
+    {
+      "event_id": "dm-event-004",
+      "pages": [1, 2, 3, 4, 5, 6, 7],
+      "claim_ids": [
+        "claim-004-a",
+        "claim-004-b",
+        "claim-004-c",
+        "claim-004-d"
+      ],
+      "result": "PASS",
+      "assessment": "Medhas's attributed distinction, dissolution ocean, Vishnu asleep on Shesha under Yoganidra, lotus-seated Brahma, the demons' ear-region origin and their threat remain intact. Page 5's shared master changes only crop planning; page 6 still supplies the distinct origin-and-threat image and page 7 retains the causal geography."
+    },
+    {
+      "event_id": "dm-event-005",
+      "pages": [8, 9, 10],
+      "claim_ids": [
+        "claim-005-a",
+        "claim-005-b",
+        "claim-005-c"
+      ],
+      "result": "PASS",
+      "assessment": "Brahma remains the visible and named speaker of both the compressed hymn and direct appeal. The precise requests to delude the demons, withdraw sleep and awaken Vishnu remain unchanged. The page-8 reframe is only a same-moment close crop and adds no theology or action."
+    },
+    {
+      "event_id": "dm-event-006",
+      "pages": [11, 12, 13, 14, 15, 16, 17],
+      "claim_ids": [
+        "claim-006-a",
+        "claim-006-b",
+        "claim-006-c",
+        "claim-006-d"
+      ],
+      "result": "PASS",
+      "assessment": "All six source-named withdrawal groups and appearance before Brahma precede awakening. Vishnu then fights both demons with his arms for five thousand years; Yoganidra's delusion and their intoxication with strength cause the reversal; Madhu and Kaitabha jointly offer the boon. The page-17 reaction crop preserves the same moment and does not replace either joint offerer."
+    },
+    {
+      "event_id": "dm-event-007",
+      "pages": [18, 19, 20, 21, 22],
+      "claim_ids": [
+        "claim-007-a",
+        "claim-007-b",
+        "claim-007-c",
+        "claim-007-d",
+        "claim-007-e"
+      ],
+      "result": "PASS",
+      "assessment": "Vishnu requests that both demons be overcome by him; both demons state and grant the unflooded-earth condition; Vishnu accepts. Page 20 then shows only a proposal-labeled condition-satisfied state, and page 21 follows with the sourced discus action. Page 22 preserves the fatal completion and return to Medhas. No precise bodily locus, strike anatomy, outside grantor or extra condition appears."
+    }
+  ],
+  "reframe_checks": [
+    {
+      "target_panel_id": "p05-panel-02",
+      "master_panel_id": "p05-panel-01",
+      "result": "PASS_CONDITIONAL",
+      "reason": "A Brahma crop from the same lotus-establishing moment preserves identity and geography; exact-pixel review must confirm the crop remains readable."
+    },
+    {
+      "target_panel_id": "p05-panel-03",
+      "master_panel_id": "p05-panel-01",
+      "result": "PASS_CONDITIONAL",
+      "reason": "The still-water danger interval is the same establishing moment. Exact-pixel review must confirm the crop supplies a distinct atmospheric beat without revealing invented action or losing the scripted danger transition."
+    },
+    {
+      "target_panel_id": "p08-panel-02",
+      "master_panel_id": "p08-panel-01",
+      "result": "PASS_CONDITIONAL",
+      "reason": "The close Brahma focus remains the same invocation moment and preserves his speaker role."
+    },
+    {
+      "target_panel_id": "p17-panel-02",
+      "master_panel_id": "p17-panel-01",
+      "result": "PASS_CONDITIONAL",
+      "reason": "Vishnu's quiet reaction crop follows the two demons' joint offer within the same paused combat state and adds no thought or motive."
+    },
+    {
+      "target_panel_id": "p18-panel-02",
+      "master_panel_id": "p18-panel-01",
+      "result": "PASS_CONDITIONAL",
+      "reason": "The wider still-water hold is the immediate consequence of Vishnu's same dialogue moment; the master expressly includes all three figures and unbroken flood."
+    },
+    {
+      "target_panel_id": "p19-panel-02",
+      "master_panel_id": "p19-panel-01",
+      "result": "PASS_CONDITIONAL",
+      "reason": "The balanced two-demon crop preserves their joint agency within the same condition statement; no dry place or outside grantor is introduced."
+    },
+    {
+      "target_panel_id": "p22-panel-02",
+      "master_panel_id": "p22-panel-01",
+      "result": "PASS_CONDITIONAL",
+      "reason": "The closing fire crop is the same return-to-frame moment and contains no new speaker, action or doctrinal symbol."
+    }
+  ],
+  "findings": [],
+  "downstream_conditions": [
+    "Any rendered shared-master crop must receive its own exact-pixel semantic review; approval of the master never transfers to the crop.",
+    "If a proposed crop fails to preserve its distinct scripted beat, identity, lettering-safe area or source boundary, use the declared fallback under a new exact authorization rather than forcing reuse.",
+    "Page 20 must remain visibly earlier than page 21: condition satisfaction first, decisive discus action second.",
+    "The p20/p21 unflooded-earth field must remain proposal-only and wholly non-anatomical in every generated or composed asset.",
+    "The p21/p22 sequence must continue to communicate that both demons are killed, not merely repelled or temporarily disabled.",
+    "All exact lettering must remain editable and unchanged unless a new manuscript revision and independent review authorize a change."
+  ],
+  "limitations": [
+    "This PASS applies only to storyboard v2 record hash b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28, payload hash e50ba7af25ce1c1091e83e52ddabab3568982705c0d38b87ef07dac0604971c2 and proof-spec v2 record hash 9515ff2b1de2b35a7cb81c027d287db7d88f6000e71bf12c407ed0b20a16c8e2. It does not transfer to a later storyboard, proof spec, page script, campaign or derivative.",
+    "This is a semantic review of source and storytelling specifications. It is not a review or approval of rendered pixels, crops, compositions, lettering fit, visual quality, provider capability or production execution.",
+    "No budget, price, allowance, billing or cost determination is made by this review.",
+    "PASS means fidelity to the locked four-event bounded chronology and claim map. It does not certify exhaustive extraction of Devi Mahatmya chapter 1 or the wider tradition.",
+    "dm-event-004 retains its locked single-English-witness boundary. The bounded Sanskrit comparisons for later events are not a new translation, critical-edition collation or theological adjudication.",
+    "The jaghane or bodily-locus difference remains unresolved. PASS is based on explicit non-assertion and proposal labeling, not on settlement of the variant.",
+    "This review does not certify or change source readiness, private-draft rights, private-illustration clearance, legal or territorial rights, theological or cultural authority, publication readiness or distribution eligibility.",
+    "The source-clearance record remains limited to a private original English manuscript draft and does not itself authorize illustration, PDF production, publication, public sharing or distribution."
+  ]
+}

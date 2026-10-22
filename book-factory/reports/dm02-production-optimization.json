@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "kind": "DM02_PRODUCTION_OPTIMIZATION_REPORT",
+  "book_id": "DM02",
+  "title": "The Sleep That Held Vishnu",
+  "baseline_commit": "36d3c4db86f0c1d0fbbf489e74f6498048c4d9e8",
+  "branch": "feature/book-factory-dm02-production-optimization",
+  "decision": "ADOPT_BALANCED_24_PAGE_SHARED_MASTER_EDITION",
+  "manuscript": {
+    "version": 2,
+    "record_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+    "story_words": 1202,
+    "verdict": "PASS_KEEP_IMMUTABLE",
+    "missing_essential_substance_count": 0,
+    "presentation_findings_count": 3,
+    "storyboard_or_campaign_efficiency_findings_count": 3,
+    "rewrite_recommended": false,
+    "assessment_path": "book-factory/reports/dm02-manuscript-quality-assessment.json"
+  },
+  "measured_original": {
+    "storyboard_version": 1,
+    "pages": 24,
+    "panel_records": 44,
+    "initial_image_operations": 44,
+    "maximum_retry_operations": 44,
+    "maximum_total_image_operations": 88,
+    "campaign_hash": "5afc3beed39e3a79a40e768f172c188691ef6cbf5d5938eca229c49aabb0fcf4",
+    "campaign_status": "AWAITING_CAMPAIGN_AUTHORIZATION_DO_NOT_USE_FOR_V2"
+  },
+  "approach_comparison": [
+    {
+      "approach": "A_ORIGINAL",
+      "measurement_status": "MEASURED",
+      "pages": 24,
+      "panel_records": 44,
+      "distinct_raster_masters": 44,
+      "initial_image_operations": 44,
+      "maximum_total_image_operations": 88,
+      "cinematic_quality": "Generous pacing and seven immersive pages.",
+      "editorial_and_production_risk": "Unnecessarily large continuity and review surface; text-only back matter is incorrectly treated as raster generation."
+    },
+    {
+      "approach": "B_EDITORIALLY_OPTIMIZED",
+      "measurement_status": "IMPLEMENTED_AND_INDEPENDENTLY_REVIEWED",
+      "pages": 24,
+      "panel_records": 44,
+      "illustrated_panel_slots": 42,
+      "distinct_raster_masters": 35,
+      "shared_master_reframe_targets": 7,
+      "deterministic_layout_only_panels": 2,
+      "initial_image_operations": 35,
+      "maximum_retry_operations": 9,
+      "maximum_total_image_operations": 44,
+      "cinematic_quality": "Preserves every page turn, scripted beat and all seven immersive pages while reducing new raster masters by 20.45%.",
+      "editorial_and_production_risk": "Shared reframes are conditional on usable source pixels and must receive separate exact-pixel review; failed reframes require new authorization, not automatic retries.",
+      "recommended": true
+    },
+    {
+      "approach": "C_LEAN_COMPLETE",
+      "measurement_status": "ESTIMATE_NOT_IMPLEMENTED",
+      "pages": 24,
+      "panel_records": 42,
+      "illustrated_panel_slots": 40,
+      "distinct_raster_masters": 30,
+      "initial_image_operations": 30,
+      "maximum_retry_operations": 7,
+      "maximum_total_image_operations": 37,
+      "cinematic_quality": "Still complete in principle, but removes two geography/witness holds and compresses three high-density same-page transitions.",
+      "editorial_and_production_risk": "Higher omission, lettering, source-order and safe-region risk; not recommended before DM02 identities and environments have approved pixels.",
+      "recommended": false
+    }
+  ],
+  "adjudication_note": "The independent source advisory also modeled more aggressive 18-page/36-panel and 14-page/28-panel structures. Those are retained as advisory estimates, not selected: the visual-production audit found that preserving the 24-page reading rhythm while sharing raster masters gives a safer quality-to-effort tradeoff after the documented DM04 composition and continuity failures.",
+  "implemented_storyboard": {
+    "version": 2,
+    "record_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+    "payload_hash": "e50ba7af25ce1c1091e83e52ddabab3568982705c0d38b87ef07dac0604971c2",
+    "parent_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+    "pages": 24,
+    "panel_records": 44,
+    "dialogue_or_lettering_changed": false,
+    "source_events_preserved": [
+      "dm-event-004",
+      "dm-event-005",
+      "dm-event-006",
+      "dm-event-007"
+    ],
+    "panels_removed": [],
+    "panels_combined_as_story_records": [],
+    "shared_master_reframes": {
+      "p05-panel-01": ["p05-panel-02", "p05-panel-03"],
+      "p08-panel-01": ["p08-panel-02"],
+      "p17-panel-01": ["p17-panel-02"],
+      "p18-panel-01": ["p18-panel-02"],
+      "p19-panel-01": ["p19-panel-02"],
+      "p22-panel-01": ["p22-panel-02"]
+    },
+    "deterministic_layout_only_panels": [
+      "p23-panel-01",
+      "p24-panel-01"
+    ],
+    "source_safe_visual_revision": "Pages 20 and 21 retain condition-before-action and label the non-anatomical unflooded-earth treatment as a production proposal whose size, mechanism and cosmography remain unspecified."
+  },
+  "immersive_pages_retained": [
+    {"page": 3, "title": "Water Without Shore", "reason": "Sets dissolution scale and the opening page turn without continuity risk."},
+    {"page": 4, "title": "Sleep Beyond the World", "reason": "Establishes Vishnu, Shesha and Yoganidra in the story's central stillness."},
+    {"page": 6, "title": "The Threat at the Lotus", "reason": "Holds origin, threat direction and lotus geography in one readable event."},
+    {"page": 9, "title": "Brahma's Hymn", "reason": "Gives the attributed invocation devotional scale; requires expanded lettering planning."},
+    {"page": 11, "title": "When Sleep Stood Apart", "reason": "Keeps all six source-named withdrawal groups and the separate appeared presence legible."},
+    {"page": 15, "title": "Five Thousand Years", "reason": "Carries immense duration in one nonliteral image instead of repeated combat bodies."},
+    {"page": 21, "title": "Where the Earth Was Not Flooded", "reason": "Provides a non-graphic climax after the prior page establishes condition satisfaction."}
+  ],
+  "independent_reviews": {
+    "manuscript_quality": {"result": "PASS", "path": "book-factory/reports/dm02-manuscript-quality-assessment.json"},
+    "panel_and_immersive_efficiency": {"result": "PASS", "path": "book-factory/reports/dm02-visual-efficiency-review.json"},
+    "source_advisory": {"result": "PASS_WITH_CONDITIONS", "path": "book-factory/reports/dm02-source-storyboard-review.json"},
+    "exact_v2_source_storytelling": {"result": "PASS", "path": "book-factory/reports/dm02-storyboard-v2-source-storytelling-review.json"},
+    "exact_v2_visual_production": {"result": "PASS", "path": "book-factory/reports/dm02-storyboard-v2-visual-production-review.json"}
+  },
+  "replacement_campaign": {
+    "campaign_hash": "0465f0111d3fac1729014bb95ac5247e417aaf3429672ebc5f69e79f18fdac1e",
+    "authorization_subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+    "status": "AWAITING_CAMPAIGN_AUTHORIZATION",
+    "approval_record_created": false,
+    "image_operations_executed": 0,
+    "proof_first_panel_ids": ["p01-panel-01", "p11-panel-01", "p14-panel-01", "p21-panel-01"],
+    "suggested_batch_size": 4,
+    "initial_generation_operations": 35,
+    "maximum_retry_operations": 9,
+    "maximum_total_image_operations": 44,
+    "current_authorization_required": true,
+    "prior_campaign_authority_inherits": false,
+    "private_illustration_clearance_present": false
+  },
+  "allowance_observation": {
+    "observed_at": "2026-10-22T07:30:59Z",
+    "ordinary_usage_allowed": true,
+    "codex_used_percent": 26,
+    "codex_remaining_percent": 74,
+    "purchased_credit_balance": "0",
+    "has_purchased_credits": false,
+    "per_image_estimate_available": false,
+    "zero_incremental_usd_enforceable": false,
+    "image_operations_during_optimization": 0,
+    "official_documentation": [
+      "https://developers.openai.com/siwc/ui-ux-guidelines",
+      "https://developers.openai.com/api/docs/pricing"
+    ]
+  },
+  "remaining_blockers": [
+    "The Source Readiness Dossier remains BLOCKED; source verification and publication readiness are not certified.",
+    "Rights and public-distribution clearance remain unresolved.",
+    "Private illustration clearance is absent.",
+    "The replacement campaign has no exact human authorization.",
+    "No approved DM02 character or environment pixels exist for continuity reference roles C or D.",
+    "The image provider remains blocked/unverified for execution, and the repository cannot reserve included allowance or guarantee zero incremental USD.",
+    "Every generated master and every derived reframe still requires independent actual-pixel review."
+  ],
+  "private_campaign_readiness": "READY_TO_REQUEST_CLEARANCE_AND_EXACT_AUTHORIZATION_NOT_READY_TO_EXECUTE",
+  "exact_next_action": "Record explicit private-illustration clearance, perform a fresh account/workspace billing preflight, and obtain one non-inheritable human authorization bound to subject hash 022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69. If those gates pass, execute only the four proof-first units, then stop for independent actual-pixel review before any later batch.",
+  "prohibited_automatic_next_actions": [
+    "IMAGE_GENERATION",
+    "PDF_GENERATION",
+    "PUBLICATION",
+    "DEPLOYMENT",
+    "PUSH",
+    "MERGE"
+  ]
+}

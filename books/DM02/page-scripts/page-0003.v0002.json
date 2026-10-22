@@ -1,0 +1,138 @@
+{
+  "character_ids": [],
+  "continuity_in": "after-page-02",
+  "continuity_out": "after-page-03",
+  "continuity_requirements": [],
+  "event_ids": [
+    "dm-event-004"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "immersive hold",
+    "type": "FULL_PAGE"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p03-narration",
+      "placement": "caption-safe-region",
+      "text": "Water stretched through the vastness. No shore divided one direction from another. There was no field to cross, no mountain path to climb, no city lamp to mark a home. The flood of dissolution held the scene in a silence deeper than ordinary night."
+    }
+  ],
+  "lineage": {
+    "original_page_id": "page-a694d4c3702975edfdceb0c5",
+    "original_page_number": 3,
+    "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+    "transformation": "PAGE_RECORD_RETAINED"
+  },
+  "location_id": "dm02-cosmic-ocean-dissolution",
+  "moment_ids": [],
+  "narrative_beats": [
+    "Water stretched through the vastness. No shore divided one direction from another. There was no field to cross, no mountain path to climb, no city lamp to mark a home. The flood of dissolution held the scene in a silence deeper than ordinary night."
+  ],
+  "page_id": "page-a694d4c3702975edfdceb0c5",
+  "page_number": 3,
+  "panel_count": 1,
+  "panels": [
+    {
+      "character_ids": [],
+      "composition": "Full-page horizonless dissolution water: no shore, mountain, city, temple, star map or ordinary landmark; scale comes only from sparse gold reflections and layered darkness.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p03-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Full-page horizonless dissolution water: no shore, mountain, city, temple, star map or ordinary landmark; scale comes only from sparse gold reflections and layered darkness.",
+        "shot_scale": "extreme-wide"
+      },
+      "lineage": {
+        "original_panel_ids": [
+          "p03-panel-01"
+        ],
+        "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+        "transformation": "RETAINED_PANEL_SPECIFICATION"
+      },
+      "location_id": "dm02-cosmic-ocean-dissolution",
+      "production_plan": {
+        "asset_source": "NEW_RASTER_MASTER",
+        "classification": "ESSENTIAL_NEW_ART",
+        "existing_approved_pixel_asset": null,
+        "independent_pixel_review_required": true,
+        "master_panel_id": "p03-panel-01",
+        "rationale": "A distinct master is required for the retained narrative state or safe reusable framing.",
+        "requires_new_raster_generation": true
+      },
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p03-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Full-page horizonless dissolution water: no shore, mountain, city, temple, star map or ordinary landmark; scale comes only from sparse gold reflections and layered darkness."
+    }
+  ],
+  "reading_order": [
+    "p03-panel-01"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p03-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-004-b",
+    "claim-004-d"
+  ],
+  "title": "Water Without Shore",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation",
+    "no unsupported iconography",
+    "no unsupported body-locus claim"
+  ],
+  "version": 1,
+  "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+}

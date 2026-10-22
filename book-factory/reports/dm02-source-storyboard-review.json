@@ -1,0 +1,514 @@
+{
+  "schema_version": "1.0",
+  "kind": "DM02_SOURCE_STORYBOARD_OPTIMIZATION_ADVISORY",
+  "book_id": "DM02",
+  "review_status": "PASS_WITH_CONDITIONS",
+  "advisory_only": true,
+  "baseline_commit": "36d3c4db86f0c1d0fbbf489e74f6498048c4d9e8",
+  "decision": {
+    "optimization_feasible_without_manuscript_revision": true,
+    "genuinely_missing_manuscript_content": false,
+    "recommended_approach": "B_BALANCED",
+    "reason": "The locked manuscript already covers dm-event-004 through dm-event-007 and has independent SOURCE_FIDELITY and LITERARY_EXPERIENCE PASS reviews. The 24-page storyboard repeats several framing, geography and combat states that may be consolidated while keeping every source-bearing causal turn and every ambiguity boundary legible.",
+    "not_authorized_by_this_review": [
+      "storyboard v2 approval",
+      "illustration generation or editing",
+      "page composition",
+      "PDF generation",
+      "publication",
+      "public sharing",
+      "distribution"
+    ]
+  },
+  "reviewer": {
+    "id": "/root/pr4_source_rights",
+    "role": "source-evidence",
+    "capability": "SOURCE_STORYBOARD_OPTIMIZATION_REVIEW",
+    "independent": true,
+    "independent_of_manuscript_creator": true,
+    "independent_of_storyboard_creator": true,
+    "manuscript_creator_id": "/root/dm04_manuscript_writer",
+    "attestation_scope": "ORCHESTRATOR_SESSION_RECORD_NOT_CRYPTOGRAPHIC_IDENTITY"
+  },
+  "execution": {
+    "mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+    "executed": true,
+    "agent_id": "/root/pr4_source_rights",
+    "role": "source-evidence",
+    "paid_api_calls": 0,
+    "cost_minor_units": 0,
+    "currency": "USD",
+    "image_operations_executed": 0,
+    "orchestrator_attested": true,
+    "attestation_scope": "ORCHESTRATOR_SESSION_RECORD_NOT_CRYPTOGRAPHIC_IDENTITY"
+  },
+  "input_bindings": {
+    "source_graph": {
+      "graph_hash": "f3a02b5eebbe4b11035240f64ede32fcf889ff7b85f481dfe11b13744a0fc6b1",
+      "validation_before_review": "PASS",
+      "validation_after_review": "PASS",
+      "unchanged_during_review": true
+    },
+    "rules": {
+      "path": "MYTHOLOGY_COMIC_RULES.md",
+      "sha256": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070"
+    },
+    "source_evidence_skill": {
+      "path": "skills/book-factory-source-evidence/SKILL.md",
+      "sha256": "4f7c3469e91397e50d8711de7b5de18f3dca1ca877f15b888548101c63b324f1"
+    },
+    "source_evidence_contract": {
+      "path": "book-factory/contracts/workers/source-evidence.json",
+      "sha256": "9bef9ff4c963e7ab7c8e05ac486faf02be2fec199b7c7795d6931402f60a8690"
+    },
+    "dossier": {
+      "path": "books/DM02/source-readiness/601fc63f99cb9ad7d7feb14b45216c573568c4afe395f192e9d97fb83b211457.json",
+      "dossier_hash": "601fc63f99cb9ad7d7feb14b45216c573568c4afe395f192e9d97fb83b211457",
+      "file_sha256": "97731f8c9a37b233e06e9e61181d7c0c4a62bd5a5ecaaa08b65aec4f43602951"
+    },
+    "story_packet": {
+      "path": "books/DM02/story-packets/b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd.json",
+      "packet_hash": "b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd",
+      "file_sha256": "63195c77c26e324af9809f1cfde80131108d655b550ce137115e3337b3f84e84"
+    },
+    "source_clearance": {
+      "path": "books/DM02/source-clearance/483cc82d41b142878778e107deabd090ec623ccf4a48410b28d80a3c95f1213e.json",
+      "clearance_hash": "483cc82d41b142878778e107deabd090ec623ccf4a48410b28d80a3c95f1213e",
+      "file_sha256": "ddbbe4485c890408bb4a8f4a51c5e5490ebcf5e6e7b8a412ac5af6c11b539763"
+    },
+    "manuscript_v2": {
+      "path": "books/DM02/manuscripts/v0002.json",
+      "content_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+      "file_sha256": "988853aadfbde1b09f080ea409b7e23772712f97e0eed42946bf7930ffe7c3a9",
+      "version": 2
+    },
+    "prior_reviews": [
+      {
+        "path": "books/DM02/editorial-reviews/v0001.json",
+        "content_hash": "633610b1aa1af8806e5f2a2fb79a7e4f61b9aa7923cfc0fcf2930a0b26f3a14f",
+        "file_sha256": "33c3f8f94d9859495ca142f29d8bc7c6f7211a9af0f65740ba4bb6c02ef37d89",
+        "perspective": "SOURCE_FIDELITY",
+        "result": "PASS",
+        "reviewed_manuscript_version": 1
+      },
+      {
+        "path": "books/DM02/editorial-reviews/v0002.json",
+        "content_hash": "1697fc85dc79dcef7e5437cf9791b9b4a85653521e37ac0e048c638acacd96f0",
+        "file_sha256": "9b5d91fd2eb5a5245cb172ca45b52f672b5038d8d5551b417eabe03444628e2f",
+        "perspective": "LITERARY_EXPERIENCE",
+        "result": "FIX",
+        "reviewed_manuscript_version": 1
+      },
+      {
+        "path": "books/DM02/editorial-reviews/v0003.json",
+        "content_hash": "45248bb619591db02c569db864ff2105714e35c947df4e353da14d33c8f503b6",
+        "file_sha256": "a255090176c9e31fc23f966e9fe8e7e608d9bd2173d2f1e1d08be530e78c5002",
+        "perspective": "SOURCE_FIDELITY",
+        "result": "PASS",
+        "reviewed_manuscript_version": 2
+      },
+      {
+        "path": "books/DM02/editorial-reviews/v0004.json",
+        "content_hash": "b8cfd3d95e966d14f23c70e8b3cfeff9f2937f88b612c5aece4475a97f4a4f43",
+        "file_sha256": "40e1d79b2ca901c813f5c1c203af4b063cfa7ca7bfd63c70d1fcc9fb0c65c545",
+        "perspective": "LITERARY_EXPERIENCE",
+        "result": "PASS",
+        "reviewed_manuscript_version": 2
+      }
+    ],
+    "character_bible": {
+      "path": "books/DM02/character-bibles/v0001.json",
+      "content_hash": "b469d78e327da2b41082dfbb48ad51a5a98e47112eea311157b2fd7ab979a1f7",
+      "file_sha256": "e15e42cb62fd2c17715d1acfcf95b09d7210bebb1afe4b7a06e0fb41b4cdc791"
+    },
+    "location_bible": {
+      "path": "books/DM02/location-bibles/v0001.json",
+      "content_hash": "33a8a7d20973eba40580261f7f274375593db356d81564dd0a55cb9c2f0a592f",
+      "file_sha256": "65a6da806ac3669b321745b561e134117ce5a9aa258d405c6ef79c45fd8e4e35"
+    },
+    "storyboard_v1": {
+      "path": "books/DM02/storyboards/v0001.json",
+      "content_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+      "file_sha256": "c1b548799c8cfdd01c94f2f463bcb0219aa086f531089873f51894fce456f9bb",
+      "version": 1
+    },
+    "current_campaign": {
+      "path": "books/DM02/image-campaigns/5afc3beed39e3a79a40e768f172c188691ef6cbf5d5938eca229c49aabb0fcf4.request.json",
+      "campaign_hash": "5afc3beed39e3a79a40e768f172c188691ef6cbf5d5938eca229c49aabb0fcf4",
+      "authorization_subject_hash": "e9c4635fdafaca4b1a4db2c9ae9bc09b494e5a2142ab67340889a0e3f32994fc",
+      "file_sha256": "8e3a3d5ee5437f0d7e9f44a3b228ac6674f2250216a7e335f3a0173a30247c7d",
+      "status": "AWAITING_CAMPAIGN_AUTHORIZATION"
+    },
+    "campaign_status": {
+      "path": "books/DM02/image-campaign-status.json",
+      "status_hash": "2034443e221c9217b5fdbe9ced4354cee8be4a7daafcc4c5dd4b6455e2d2ea31",
+      "file_sha256": "d544cab2717f28c6ae18938c2662003b10893343a95e00b1f6b0ba4e5bbf8b26",
+      "image_operations_executed": 0
+    }
+  },
+  "review_scope": {
+    "source_id": "dm-source",
+    "story_spine_id": "dm-story-madhu-kaitabha",
+    "tradition": [
+      "Śākta"
+    ],
+    "event_ids": [
+      "dm-event-004",
+      "dm-event-005",
+      "dm-event-006",
+      "dm-event-007"
+    ],
+    "bounded_only": true,
+    "not_exhaustive_scripture_verification": true
+  },
+  "measured_baseline": {
+    "source": "storyboard_v1_and_current_campaign",
+    "storyboard_pages": 24,
+    "story_pages": 22,
+    "back_matter_pages": 2,
+    "storyboard_panels": 44,
+    "initial_generation_operations": 44,
+    "maximum_retry_operations": 44,
+    "maximum_total_operations": 88,
+    "existing_usable_assets": 0,
+    "image_operations_already_executed": 0,
+    "measurement_note": "These are durable baseline counts. Counts for approaches B and C are evidence-derived proposals, not existing artifacts or approved campaigns."
+  },
+  "event_assessments": [
+    {
+      "event_id": "dm-event-004",
+      "result": "COMPRESSIBLE_WITH_DISTINCT_PANELS",
+      "required_content": [
+        "Medhas frames the account and distinguishes eternal Devi from purposeful appearances",
+        "cosmic dissolution and unfathomable flood",
+        "Vishnu sleeps on Shesha under Yoganidra",
+        "lotus-seated Brahma is present above the flood",
+        "Madhu and Kaitabha arise from Vishnu's ear-region and threaten Brahma"
+      ],
+      "safe_compression": "Repeated hermitage transition shots, empty-water establishment, repeated lotus geography and repeated approach-distance shots may be consolidated. The frame, sleep geography, ear-region origin and threat must remain readable as separate visual or lettering units.",
+      "source_risk": "If the lotus, sleeper and approaching demons are collapsed into one overloaded tableau, the ear-region origin or causal reason for Brahma's appeal may disappear."
+    },
+    {
+      "event_id": "dm-event-005",
+      "result": "COMPRESSIBLE_WITH_ATTRIBUTION_GUARD",
+      "required_content": [
+        "Brahma addresses Yoganidra",
+        "the cosmic and theological predicates remain Brahma's attributed praise",
+        "Brahma asks her to delude Madhu and Kaitabha",
+        "Brahma asks her to withdraw sleep and awaken Vishnu"
+      ],
+      "safe_compression": "Invocation setup, hymn and direct appeal may occupy one or two pages, but the speaker anchor must remain Brahma and the request must not be reduced to an unspoken visual implication.",
+      "source_risk": "A symbolic montage of creation, preservation, dissolution or weapons would literalize attributed praise as project-certified cosmology or iconography."
+    },
+    {
+      "event_id": "dm-event-006",
+      "result": "COMPRESSIBLE_WITH_CAUSAL_SEPARATION",
+      "required_content": [
+        "Yoganidra withdraws from Vishnu's eyes, mouth, nose, arms, heart and breast",
+        "Yoganidra appears before Brahma",
+        "Vishnu awakens after the withdrawal",
+        "Vishnu fights both demons with his arms for five thousand years",
+        "Yoganidra deludes the demons and their confidence becomes intoxication with strength",
+        "Madhu and Kaitabha jointly offer Vishnu a boon"
+      ],
+      "safe_compression": "Repeated grappling poses and separate transition pages may be reduced. Withdrawal, awakening, immense duration, delusion and the joint offer must remain separate readable moments in that order.",
+      "source_risk": "Combining withdrawal and awakening into an undifferentiated burst can erase causality; combining combat, delusion and offer can make the boon seem voluntary strategy rather than the stated reversal under Yoganidra's power."
+    },
+    {
+      "event_id": "dm-event-007",
+      "result": "LIMITED_COMPRESSION_ONLY",
+      "required_content": [
+        "Vishnu asks that both demons be overcome by him",
+        "Madhu and Kaitabha jointly condition the boon on a place where earth is not flooded",
+        "Vishnu accepts",
+        "the condition is met",
+        "Vishnu kills Madhu and Kaitabha with the discus",
+        "no precise bodily locus is asserted"
+      ],
+      "safe_compression": "Speech turns may share pages, and condition fulfillment plus defeat may share a page only as separate panels. The transaction and fatal outcome may not become a single caption or decorative image.",
+      "source_risk": "This is the highest-risk compression zone. Omission of either demon's joint agency, Vishnu's acceptance, the condition-fulfilled state, the discus or the fatal outcome changes the locked event; any anatomical platform silently resolves dm-variant-jaghane."
+    }
+  ],
+  "safe_combination_groups": [
+    {
+      "original_pages": [
+        1,
+        2
+      ],
+      "disposition": "COMBINE",
+      "reason": "The second page is a transition derived from claim-004-d. One page can retain Medhas, his attributed distinction and the move into cosmic time with two or three distinct panels."
+    },
+    {
+      "original_pages": [
+        3,
+        4
+      ],
+      "disposition": "COMBINE_AS_TWO_PANELS",
+      "reason": "The empty dissolution-ocean hold and Vishnu-on-Shesha repose establish one geography. Retain a wide ocean panel and a distinct sleeper panel so Yoganidra's role remains legible."
+    },
+    {
+      "original_pages": [
+        5,
+        6,
+        7
+      ],
+      "disposition": "CONSOLIDATE_TO_ONE_OR_TWO_PAGES",
+      "reason": "The baseline repeats the same lotus-sleeper-threat geography. A lotus establishment, a distinct ear-region emergence/threat panel and one causal orientation panel preserve event 004 without seven panels."
+    },
+    {
+      "original_pages": [
+        8,
+        9,
+        10
+      ],
+      "disposition": "CONSOLIDATE_TO_TWO_PAGES",
+      "reason": "Invocation preparation, Brahma's hymn and his direct appeal form one continuous address. Preserve speaker attribution and keep praise and request in separately readable units."
+    },
+    {
+      "original_pages": [
+        12,
+        13,
+        14
+      ],
+      "disposition": "CONSOLIDATE_TO_TWO_PAGES",
+      "reason": "Awakening, turning toward the threat and initial arm-to-arm combat can be staged in a short cause-effect sequence. Repeated grappling poses need not each receive a separate page."
+    },
+    {
+      "original_pages": [
+        13,
+        14
+      ],
+      "disposition": "COMBINE",
+      "reason": "The initial engagement and one readable combat cycle are sufficient before the distinct five-thousand-year duration image."
+    },
+    {
+      "original_pages": [
+        17,
+        18
+      ],
+      "disposition": "COMBINE_WITH_THREE_SPEECH_UNITS",
+      "reason": "The demons' joint offer and Vishnu's response are one verbal reversal, provided Madhu and Kaitabha remain joint offerers and Vishnu's requested boon is separately readable."
+    },
+    {
+      "original_pages": [
+        20,
+        21
+      ],
+      "disposition": "LEAN_ONLY_COMBINATION_AS_SEPARATE_PANELS",
+      "reason": "A lean storyboard may show the condition fulfilled and then the discus defeat on one page, but never in one merged image and never with an anatomical platform or precise strike locus."
+    }
+  ],
+  "must_remain_distinct": [
+    {
+      "id": "frame_vs_primordial_episode",
+      "minimum_separation": "DISTINCT_PANEL_OR_CLEAR_PAGE_TRANSITION",
+      "requirement": "Medhas's frame and speech must not become anonymous narrator doctrine or be visually confused with the primordial scene."
+    },
+    {
+      "id": "sleep_geography_vs_threat",
+      "minimum_separation": "DISTINCT_VISUAL_UNITS",
+      "requirement": "Vishnu on Shesha under Yoganidra, Brahma on the lotus, and the demons' ear-region origin and threat must all remain readable."
+    },
+    {
+      "id": "hymn_praise_vs_project_claim",
+      "minimum_separation": "SPEAKER_ANCHORED_DIALOGUE",
+      "requirement": "Brahma's hymn must remain attributed praise. Do not turn its predicates or weapon language into narrator-certified facts or literal iconographic arrays."
+    },
+    {
+      "id": "withdrawal_and_appearance_before_awakening",
+      "minimum_separation": "SEQUENTIAL_PANELS",
+      "requirement": "Show all six source-named withdrawal groups and appearance before Brahma before Vishnu opens his eyes. Do not imply permanent residence in any body part."
+    },
+    {
+      "id": "combat_duration_delusion_offer",
+      "minimum_separation": "THREE_READABLE_MOMENTS",
+      "requirement": "Arm-to-arm combat for five thousand years, Yoganidra's delusion and the demons' joint boon offer must remain causally ordered."
+    },
+    {
+      "id": "boon_transaction",
+      "minimum_separation": "DISTINCT_SPEECH_OR_ACTION_UNITS",
+      "requirement": "Joint offer, Vishnu's requested boon, joint unflooded-earth condition and Vishnu's acceptance must each remain explicit and in order."
+    },
+    {
+      "id": "condition_fulfilled_before_discus_killing",
+      "minimum_separation": "SEQUENTIAL_PANELS",
+      "requirement": "The state satisfying the condition must be readable before the discus action; the outcome must remain the death of both demons, presented non-graphically if desired."
+    },
+    {
+      "id": "source_note_vs_editorial_reflection",
+      "minimum_separation": "SEPARATE_BACK_MATTER_PAGES",
+      "requirement": "The source/adaptation note and modern family reflection have different functions and must not be merged into a theological or scriptural-looking text block."
+    }
+  ],
+  "source_theology_and_body_locus_constraints": [
+    "Keep the event subset exactly dm-event-004 through dm-event-007 and preserve source order.",
+    "Treat the four-event spine as bounded chronology, not exhaustive chapter or scripture verification.",
+    "Keep Medhas as the frame narrator and the eternal-Devi distinction as his attributed statement.",
+    "Keep Brahma's hymn language attributed to Brahma; it is not independent theological certification by the project.",
+    "Depict Yoganidra first as a source-neutral sleep power and after withdrawal as a source-neutral appeared presence; exact form, arm count, clothing, ornaments, weapons and bodily residence remain unspecified.",
+    "Retain the six named withdrawal groups exactly: eyes, mouth, nose, arms, heart and breast. Add no seventh locus and imply no permanent bodily residence.",
+    "Exact head, face, arm and hood counts for Brahma, Vishnu, Yoganidra and Shesha remain source-silent within this boundary; production proposals must not be labeled textual fact.",
+    "Use no combat weapon before the final sourced discus. Event 006 is arm-to-arm combat; add no army, injury mechanism or invented strategy.",
+    "Madhu and Kaitabha are joint boon offerers and joint condition setters. Add no ascetic boon, invulnerability bargain, outside boon-giver, genealogy or unstated motive.",
+    "Keep the exact five-thousand-year duration and Yoganidra's delusion before the boon offer.",
+    "The condition is a place where earth is not flooded. Its exact geography, size and mechanism are unspecified.",
+    "dm-variant-jaghane remains open. Show no thigh, lap, buttocks or other bodily platform and no precise anatomical strike location.",
+    "A separate dry-earth plane may be used only as an explicit source-neutral production proposal. It must not become an invented island, cosmography or claim that the source fixes that geometry.",
+    "Vishnu kills both Madhu and Kaitabha with the discus after the condition is met. Compression may be non-graphic but may not soften the result into mere retreat or temporary incapacity.",
+    "All dialogue remains non-verbatim adaptation. No speech balloon or ornamental treatment may imply a verbatim scriptural quotation.",
+    "Keep the modern family reflection explicitly labeled and outside the sacred event chronology."
+  ],
+  "manuscript_content_assessment": {
+    "result": "NO_GENUINE_SOURCE_CONTENT_GAP",
+    "explanation": "Manuscript v2 contains every material locked fact needed for the bounded comic: the Medhas frame, dissolution geography, Vishnu on Shesha under Yoganidra, lotus-seated Brahma, ear-region origin and threat, attributed hymn and request, exact withdrawal groups and appearance, awakening, arm-to-arm combat for five thousand years, delusion, joint boon offer, Vishnu's requested boon, joint condition, acceptance, condition fulfillment and discus outcome. Its source note correctly preserves the non-verbatim, body-locus, excluded-backstory and benchmark-only boundaries.",
+    "do_not_add": [
+      "new exposition to justify compression",
+      "a demon childhood or genealogy",
+      "an earlier ascetic or invulnerability boon",
+      "an outside boon-giver",
+      "a motive for Yoganidra beyond the locked sequence",
+      "a precise bodily defeat locus",
+      "a literalized hymn cosmology",
+      "a next-book hook"
+    ],
+    "storyboard_only_attention": "The final visual sequence must preserve the existing fatal outcome through the discus action and the aftermath wording that the boon ended the demons; do not omit the aftermath line if the climax caption remains euphemistic."
+  },
+  "approaches": [
+    {
+      "id": "A_ORIGINAL_BASELINE",
+      "measurement_status": "MEASURED_EXISTING",
+      "pages": 24,
+      "panels_or_initial_operations": 44,
+      "maximum_total_operations": 88,
+      "source_fidelity_risk": "LOW_FROM_COMPRESSION_HIGHER_FROM_REPETITION",
+      "advantages": [
+        "Every causal turn has generous visual space.",
+        "The six-locus withdrawal, five-thousand-year duration and defeat each receive a full-page hold.",
+        "Dialogue and back matter have the lowest lettering-density pressure."
+      ],
+      "independent_risks": [
+        "Repeated lotus, approach and combat panels invite near-duplicate generations, character drift and accidental invention of unsourced micro-actions.",
+        "Forty-four new assets and up to forty-four retries enlarge the review surface and continuity burden without adding source content.",
+        "The current campaign is hash-bound to storyboard v1 and remains unauthorized; its scale is not evidence that all panels are narratively necessary.",
+        "The source clearance permits only a private manuscript draft and explicitly blocks illustration until a separate gate is recorded."
+      ]
+    },
+    {
+      "id": "B_BALANCED",
+      "measurement_status": "PROPOSED_ESTIMATE_FROM_PANEL_AUDIT",
+      "recommended": true,
+      "proposed_pages": 18,
+      "proposed_panels_or_initial_operations": 36,
+      "proposed_maximum_retry_operations": 36,
+      "proposed_maximum_total_operations": 72,
+      "reduction_from_baseline": {
+        "pages": 6,
+        "initial_operations": 8,
+        "maximum_total_operations": 16
+      },
+      "source_fidelity_risk": "LOW_TO_MODERATE_WITH_GUARDS",
+      "advantages": [
+        "Removes repeated staging while preserving a separate page for withdrawal, the five-thousand-year time image, condition fulfillment and the discus climax.",
+        "Keeps source-dense dialogue and the event-007 transaction readable.",
+        "Reduces operation and continuity exposure without requiring new manuscript material."
+      ],
+      "independent_risks": [
+        "The consolidated hymn-and-appeal page may become text-heavy unless praise and request receive separate speaker-anchored panels.",
+        "The consolidated lotus-threat sequence must not lose the ear-region origin or make the demons appear from a generic horizon.",
+        "The shortened combat sequence must still name arm-to-arm combat, five thousand years and Yoganidra's delusion in the correct order.",
+        "All page ids, page scripts, campaign unit ids, authorization subject and approval hashes must be regenerated; v1 campaign authority cannot transfer."
+      ],
+      "proposed_page_groups": [
+        {"new_page": 1, "original_pages": [1, 2], "proposed_panels": 3},
+        {"new_page": 2, "original_pages": [3, 4], "proposed_panels": 2},
+        {"new_page": 3, "original_pages": [5, 6], "proposed_panels": 3},
+        {"new_page": 4, "original_pages": [7, 8], "proposed_panels": 2},
+        {"new_page": 5, "original_pages": [9, 10], "proposed_panels": 3},
+        {"new_page": 6, "original_pages": [11], "proposed_panels": 1},
+        {"new_page": 7, "original_pages": [12], "proposed_panels": 2},
+        {"new_page": 8, "original_pages": [13, 14], "proposed_panels": 3},
+        {"new_page": 9, "original_pages": [15], "proposed_panels": 1},
+        {"new_page": 10, "original_pages": [16], "proposed_panels": 2},
+        {"new_page": 11, "original_pages": [17], "proposed_panels": 2},
+        {"new_page": 12, "original_pages": [18], "proposed_panels": 2},
+        {"new_page": 13, "original_pages": [19], "proposed_panels": 3},
+        {"new_page": 14, "original_pages": [20], "proposed_panels": 2},
+        {"new_page": 15, "original_pages": [21], "proposed_panels": 1},
+        {"new_page": 16, "original_pages": [22], "proposed_panels": 2},
+        {"new_page": 17, "original_pages": [23], "proposed_panels": 1},
+        {"new_page": 18, "original_pages": [24], "proposed_panels": 1}
+      ]
+    },
+    {
+      "id": "C_LEAN",
+      "measurement_status": "PROPOSED_ESTIMATE_FROM_PANEL_AUDIT",
+      "recommended": false,
+      "proposed_pages": 14,
+      "proposed_panels_or_initial_operations": 28,
+      "proposed_maximum_retry_operations": 28,
+      "proposed_maximum_total_operations": 56,
+      "reduction_from_baseline": {
+        "pages": 10,
+        "initial_operations": 16,
+        "maximum_total_operations": 32
+      },
+      "source_fidelity_risk": "MODERATE_TO_HIGH",
+      "advantages": [
+        "Provides the largest operation reduction while retaining all four events in principle.",
+        "Forces each panel to carry a genuine causal or speaker change rather than repeated atmosphere."
+      ],
+      "independent_risks": [
+        "Combining ocean, sleep and lotus geography can overload a page and obscure which facts are source-backed versus production staging.",
+        "Combining invocation, hymn and appeal increases the risk that Brahma's attributed praise reads as narrator doctrine or becomes illegibly dense.",
+        "Combining withdrawal and awakening is unsafe unless the six groups, appearance before Brahma and later opened eyes remain sequential panels.",
+        "Combining combat duration with delusion may erase either the exact five-thousand-year duration or Yoganidra's causal role.",
+        "The boon transaction is vulnerable to loss of joint agency, acceptance or condition order.",
+        "Condition fulfillment and defeat must still occupy separate panels; further compression would risk resolving the body-locus variant or making the outcome non-fatal.",
+        "A lean v2 would require especially strict lettering-size and caption-versus-dialogue review under MYTHOLOGY_COMIC_RULES.md."
+      ],
+      "proposed_page_groups": [
+        {"new_page": 1, "original_pages": [1, 2], "proposed_panels": 2},
+        {"new_page": 2, "original_pages": [3, 4, 5], "proposed_panels": 3},
+        {"new_page": 3, "original_pages": [6, 7, 8], "proposed_panels": 2},
+        {"new_page": 4, "original_pages": [9, 10], "proposed_panels": 2},
+        {"new_page": 5, "original_pages": [11, 12], "proposed_panels": 2},
+        {"new_page": 6, "original_pages": [13, 14], "proposed_panels": 3},
+        {"new_page": 7, "original_pages": [15, 16], "proposed_panels": 2},
+        {"new_page": 8, "original_pages": [17, 18], "proposed_panels": 2},
+        {"new_page": 9, "original_pages": [19], "proposed_panels": 3},
+        {"new_page": 10, "original_pages": [20], "proposed_panels": 2},
+        {"new_page": 11, "original_pages": [21], "proposed_panels": 1},
+        {"new_page": 12, "original_pages": [22], "proposed_panels": 2},
+        {"new_page": 13, "original_pages": [23], "proposed_panels": 1},
+        {"new_page": 14, "original_pages": [24], "proposed_panels": 1}
+      ]
+    }
+  ],
+  "campaign_implications": {
+    "current_campaign_disposition": "DO_NOT_EXECUTE_OR_MUTATE",
+    "reason": "The current campaign is immutably bound to storyboard v1, 44 unit ids and authorization_subject_hash e9c4635fdafaca4b1a4db2c9ae9bc09b494e5a2142ab67340889a0e3f32994fc. Any optimized storyboard creates different page and unit identities.",
+    "required_if_storyboard_v2_is_created": [
+      "Create an immutable storyboard v2 with a new content hash and parent binding to storyboard v1.",
+      "Run a fresh exact SOURCE_STORYBOARD or SOURCE_FIDELITY semantic review against storyboard v2.",
+      "Regenerate all page scripts and deterministic visual-preproduction records from storyboard v2.",
+      "Create a new campaign, campaign hash, unit ids and non-inheritable authorization subject bound to the v2 inputs.",
+      "Record separate private-illustration clearance before any image operation.",
+      "Obtain explicit campaign authorization; do not inherit authorization from the v1 campaign.",
+      "Keep publication authorization false and publication readiness blocked."
+    ],
+    "rights_gate": "BLOCKED_PRIVATE_MANUSCRIPT_CLEARANCE_ONLY",
+    "private_illustration_clearance_present": false,
+    "publication_gate": "BLOCKED"
+  },
+  "limitations": [
+    "This is an advisory source/storyboard optimization review of storyboard v1 and the current campaign, not a semantic approval of a nonexistent storyboard v2.",
+    "The proposed B and C counts are reviewer estimates derived from the page and panel audit; only the 24-page, 44-panel baseline is a measured durable artifact.",
+    "This review does not modify or override the dossier's BLOCKED source-readiness status, UNKNOWN rights dimension, NARRATIVE_COMPLETE_ATOMIC_PARTIAL chapter extraction, UNDETERMINED independent-full-arc status or NOT_CERTIFIED publication readiness.",
+    "The private-draft clearance does not permit illustration, PDF generation, public sharing, distribution or publication. A separate immutable private-illustration clearance is required before visual production.",
+    "No critical-edition collation, independent Sanskrit translation, theological certification, iconographic certification, legal opinion or target-market publication-rights opinion was performed.",
+    "dm-event-004 remains supported by the single locked English witness; the Sanskrit support for later events is limited to the packet's bounded displayed ranges.",
+    "The jaghane or bodily-locus difference remains unresolved. All approaches pass only if they preserve the omission rather than silently choosing a conventional location.",
+    "No actual v2 page geometry, lettering fit, safe region, generated image or composed page was reviewed. A later exact-hash review must assess any created storyboard v2 rather than relying on this advisory.",
+    "DM08 and the existing visual references are presentation benchmarks only and supply no DM02 facts, iconography, theology, characters or plot."
+  ]
+}

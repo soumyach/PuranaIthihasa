@@ -1,0 +1,303 @@
+{
+  "character_ids": [
+    "dm-vishnu",
+    "dm-madhu",
+    "dm-kaitabha"
+  ],
+  "continuity_in": "after-page-13",
+  "continuity_out": "after-page-14",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-vishnu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-madhu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-kaitabha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-006"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "THREE_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p14-narration",
+      "placement": "caption-safe-region",
+      "text": "Vishnu grappled with Madhu and Kaitabha upon the cosmic waters.\n\nA hold was made and broken. One Asura drove forward; Vishnu checked him. The other closed from the side; Vishnu turned to meet him. Again they joined, separated and returned."
+    }
+  ],
+  "lineage": {
+    "original_page_id": "page-b3c2c7ea03e4d1259ccbea7b",
+    "original_page_number": 14,
+    "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+    "transformation": "PAGE_RECORD_RETAINED"
+  },
+  "location_id": "dm02-flooded-combat-expanse",
+  "moment_ids": [],
+  "narrative_beats": [
+    "Vishnu grappled with Madhu and Kaitabha upon the cosmic waters.",
+    "A hold was made and broken. One Asura drove forward; Vishnu checked him. The other closed from the side; Vishnu turned to meet him. Again they joined, separated and returned."
+  ],
+  "page_id": "page-b3c2c7ea03e4d1259ccbea7b",
+  "page_number": 14,
+  "panel_count": 3,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "composition": "Madhu drives forward and Viṣṇu checks him with an anatomically coherent grappling hold; Kaiṭabha remains a separate flank threat.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p14-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Madhu drives forward and Viṣṇu checks him with an anatomically coherent grappling hold; Kaiṭabha remains a separate flank threat.",
+        "shot_scale": "medium"
+      },
+      "lineage": {
+        "original_panel_ids": [
+          "p14-panel-01"
+        ],
+        "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+        "transformation": "RETAINED_PANEL_SPECIFICATION"
+      },
+      "location_id": "dm02-flooded-combat-expanse",
+      "production_plan": {
+        "asset_source": "NEW_RASTER_MASTER",
+        "classification": "ESSENTIAL_NEW_ART",
+        "existing_approved_pixel_asset": null,
+        "independent_pixel_review_required": true,
+        "master_panel_id": "p14-panel-01",
+        "rationale": "A distinct master is required for the retained narrative state or safe reusable framing.",
+        "requires_new_raster_generation": true
+      },
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p14-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Madhu drives forward and Viṣṇu checks him with an anatomically coherent grappling hold; Kaiṭabha remains a separate flank threat."
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "composition": "Kaiṭabha closes from the side as Viṣṇu turns; preserve all three silhouettes and show no weapon or injury.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p14-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Kaiṭabha closes from the side as Viṣṇu turns; preserve all three silhouettes and show no weapon or injury.",
+        "shot_scale": "medium"
+      },
+      "lineage": {
+        "original_panel_ids": [
+          "p14-panel-02"
+        ],
+        "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+        "transformation": "RETAINED_PANEL_SPECIFICATION"
+      },
+      "location_id": "dm02-flooded-combat-expanse",
+      "production_plan": {
+        "asset_source": "NEW_RASTER_MASTER",
+        "classification": "ESSENTIAL_NEW_ART",
+        "existing_approved_pixel_asset": null,
+        "independent_pixel_review_required": true,
+        "master_panel_id": "p14-panel-02",
+        "rationale": "A distinct master is required for the retained narrative state or safe reusable framing.",
+        "requires_new_raster_generation": true
+      },
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p14-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Kaiṭabha closes from the side as Viṣṇu turns; preserve all three silhouettes and show no weapon or injury."
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "composition": "The trio separates into a readable triangle that can cycle again, with wave direction carrying the eye back to panel one.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p14-panel-03",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "The trio separates into a readable triangle that can cycle again, with wave direction carrying the eye back to panel one.",
+        "shot_scale": "wide"
+      },
+      "lineage": {
+        "original_panel_ids": [
+          "p14-panel-03"
+        ],
+        "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+        "transformation": "RETAINED_PANEL_SPECIFICATION"
+      },
+      "location_id": "dm02-flooded-combat-expanse",
+      "production_plan": {
+        "asset_source": "NEW_RASTER_MASTER",
+        "classification": "ESSENTIAL_NEW_ART",
+        "existing_approved_pixel_asset": null,
+        "independent_pixel_review_required": true,
+        "master_panel_id": "p14-panel-03",
+        "rationale": "A distinct master is required for the retained narrative state or safe reusable framing.",
+        "requires_new_raster_generation": true
+      },
+      "reading_order": 3,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p14-panel-03-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "The trio separates into a readable triangle that can cycle again, with wave direction carrying the eye back to panel one."
+    }
+  ],
+  "reading_order": [
+    "p14-panel-01",
+    "p14-panel-02",
+    "p14-panel-03"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p14-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-006-b",
+    "claim-006-d"
+  ],
+  "title": "Strength Against Strength",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation",
+    "no unsupported iconography",
+    "no unsupported body-locus claim"
+  ],
+  "version": 1,
+  "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+}

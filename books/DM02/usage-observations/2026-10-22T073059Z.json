@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-10-22T07:30:59Z",
+  "source": "CODEX_APP_GET_USAGE_LIMITS_READ_ONLY",
+  "ordinary_usage_allowed": true,
+  "codex_limit_id": "codex",
+  "codex_used_percent": 26,
+  "codex_remaining_percent": 74,
+  "window_duration_minutes": 10080,
+  "resets_at_unix_seconds": 1793101834,
+  "plan_type_reported_by_control": "prolite",
+  "purchased_credit_balance": "0",
+  "has_purchased_credits": false,
+  "spend_control_reached": false,
+  "rate_limit_reached_type": null,
+  "free_rate_limit_reset_credits_available": 3,
+  "image_operations_executed_during_observation": 0,
+  "per_image_allowance_estimate_available": false,
+  "incremental_usd_amount_available": false,
+  "notes": [
+    "This read-only control reports the shared Codex allowance and purchased-credit balance, not a reservation or per-image quote.",
+    "No image generation or image edit was invoked while taking this observation.",
+    "The repository cannot positively guarantee zero incremental USD at the host-tool boundary; exact campaign authorization and a fresh preflight remain required before any image operation.",
+    "Official OpenAI documentation distinguishes ChatGPT-plan usage from separately billed API usage; this proposal authorizes neither an API key nor an external provider.",
+    "The observed control does not expose image-operation credit estimates or complete workspace invoice data."
+  ]
+}

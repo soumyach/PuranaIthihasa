@@ -1,0 +1,251 @@
+{
+  "character_ids": [
+    "dm-vishnu",
+    "dm-madhu",
+    "dm-kaitabha"
+  ],
+  "continuity_in": "after-page-19",
+  "continuity_out": "after-page-20",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-vishnu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-madhu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-kaitabha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-007"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "TWO_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p20-narration",
+      "placement": "caption-safe-region",
+      "text": "The combat had lasted five thousand years. The exchange took only a few words. Yet those words did what force alone had not done: they fixed a condition under which the struggle could end.\n\nThe waters were still everywhere around them.\n\nVishnu met the condition."
+    }
+  ],
+  "lineage": {
+    "original_page_id": "page-f64eb6d498aa51d874a3ff79",
+    "original_page_number": 20,
+    "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+    "transformation": "PAGE_RECORD_RETAINED"
+  },
+  "location_id": "dm02-unflooded-defeat-locus",
+  "moment_ids": [],
+  "narrative_beats": [
+    "The combat had lasted five thousand years. The exchange took only a few words. Yet those words did what force alone had not done: they fixed a condition under which the struggle could end.",
+    "The waters were still everywhere around them.",
+    "Vishnu met the condition."
+  ],
+  "page_id": "page-f64eb6d498aa51d874a3ff79",
+  "page_number": 20,
+  "panel_count": 2,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "composition": "Source-neutral proposal for the condition-satisfied state: flood remains visible around the three figures while an unflooded-earth field is staged wholly apart from every body. Its size, mechanism and cosmography remain unspecified; it is not a source-fixed island or anatomical platform.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p20-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Source-neutral proposal for the condition-satisfied state: flood remains visible around the three figures while an unflooded-earth field is staged wholly apart from every body. Its size, mechanism and cosmography remain unspecified; it is not a source-fixed island or anatomical platform.",
+        "shot_scale": "wide"
+      },
+      "lineage": {
+        "original_panel_ids": [
+          "p20-panel-01"
+        ],
+        "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+        "transformation": "RETAINED_PANEL_SPECIFICATION"
+      },
+      "location_id": "dm02-unflooded-defeat-locus",
+      "production_plan": {
+        "asset_source": "NEW_RASTER_MASTER",
+        "classification": "ESSENTIAL_NEW_ART",
+        "existing_approved_pixel_asset": null,
+        "independent_pixel_review_required": true,
+        "master_panel_id": "p20-panel-01",
+        "rationale": "A distinct master is required for the retained narrative state or safe reusable framing.",
+        "requires_new_raster_generation": true,
+        "source_interpretation_status": "PROPOSAL_NOT_SOURCE_FACT",
+        "source_review_condition": "Condition-satisfied state must precede the non-graphic discus defeat and remain wholly non-anatomical."
+      },
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p20-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Source-neutral proposal for the condition-satisfied state: flood remains visible around the three figures while an unflooded-earth field is staged wholly apart from every body. Its size, mechanism and cosmography remain unspecified; it is not a source-fixed island or anatomical platform."
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "composition": "A second source-neutral view verifies only that the condition is satisfied before the decisive action. Keep the unflooded-earth field wholly non-anatomical and leave its exact geography, size and mechanism unresolved; show no thigh, lap, buttocks or strike locus.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p20-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "A second source-neutral view verifies only that the condition is satisfied before the decisive action. Keep the unflooded-earth field wholly non-anatomical and leave its exact geography, size and mechanism unresolved; show no thigh, lap, buttocks or strike locus.",
+        "shot_scale": "overhead-wide"
+      },
+      "lineage": {
+        "original_panel_ids": [
+          "p20-panel-02"
+        ],
+        "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+        "transformation": "RETAINED_PANEL_SPECIFICATION"
+      },
+      "location_id": "dm02-unflooded-defeat-locus",
+      "production_plan": {
+        "asset_source": "NEW_RASTER_MASTER",
+        "classification": "ESSENTIAL_NEW_ART",
+        "existing_approved_pixel_asset": null,
+        "independent_pixel_review_required": true,
+        "master_panel_id": "p20-panel-02",
+        "rationale": "A distinct master is required for the retained narrative state or safe reusable framing.",
+        "requires_new_raster_generation": true,
+        "source_interpretation_status": "PROPOSAL_NOT_SOURCE_FACT",
+        "source_review_condition": "Condition-satisfied state must precede the non-graphic discus defeat and remain wholly non-anatomical."
+      },
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p20-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "A second source-neutral view verifies only that the condition is satisfied before the decisive action. Keep the unflooded-earth field wholly non-anatomical and leave its exact geography, size and mechanism unresolved; show no thigh, lap, buttocks or strike locus."
+    }
+  ],
+  "reading_order": [
+    "p20-panel-01",
+    "p20-panel-02"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p20-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-007-b",
+    "claim-007-d",
+    "claim-007-e"
+  ],
+  "title": "A Condition Force Could Not Make",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation",
+    "no unsupported iconography",
+    "no unsupported body-locus claim"
+  ],
+  "version": 1,
+  "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+}

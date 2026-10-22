@@ -1,0 +1,1617 @@
+{
+  "actual_incremental_usd": 0,
+  "actual_incremental_usd_verification": "NO_IMAGE_OPERATION_EXECUTED_HOST_MONETARY_LEDGER_UNAVAILABLE",
+  "actual_purchased_credits_consumed": 0,
+  "allowance_observation": {
+    "codex_limit_id": "codex",
+    "codex_remaining_percent": 74,
+    "codex_used_percent": 26,
+    "free_rate_limit_reset_credits_available": 3,
+    "has_purchased_credits": false,
+    "image_operations_executed_during_observation": 0,
+    "incremental_usd_amount_available": false,
+    "notes": [
+      "This read-only control reports the shared Codex allowance and purchased-credit balance, not a reservation or per-image quote.",
+      "No image generation or image edit was invoked while taking this observation.",
+      "The repository cannot positively guarantee zero incremental USD at the host-tool boundary; exact campaign authorization and a fresh preflight remain required before any image operation.",
+      "Official OpenAI documentation distinguishes ChatGPT-plan usage from separately billed API usage; this proposal authorizes neither an API key nor an external provider.",
+      "The observed control does not expose image-operation credit estimates or complete workspace invoice data."
+    ],
+    "observed_at": "2026-10-22T07:30:59Z",
+    "ordinary_usage_allowed": true,
+    "per_image_allowance_estimate_available": false,
+    "plan_type_reported_by_control": "prolite",
+    "purchased_credit_balance": "0",
+    "rate_limit_reached_type": null,
+    "resets_at_unix_seconds": 1793101834,
+    "schema_version": "1.0",
+    "source": "CODEX_APP_GET_USAGE_LIMITS_READ_ONLY",
+    "spend_control_reached": false,
+    "window_duration_minutes": 10080
+  },
+  "approval_record_created": false,
+  "authorization_subject": {
+    "api_key_authorized": false,
+    "automatic_credit_purchase_authorized": false,
+    "book_id": "DM02",
+    "currency": "USD",
+    "external_provider_authorized": false,
+    "included_allowance_first": true,
+    "initial_operation_count": 35,
+    "locked_input_hashes": [
+      "0775af9ff8dacfdcbecece946b781e2187574883f148bb9a6327603f1ffdae3f",
+      "2a2bd15c10261a0fde5171f66f10ffc6c3a50afbfa6cb21c02c7a5238d01e1f8",
+      "2ffc82651274e049bf8b20c270f5abde63841fb2abc40137d935b956990069f6",
+      "547b3d89985fdf809b5a2aa44d2002cdd812d443e399a685da2dd99053259d3e",
+      "55190b5c3864604bdd58d88176a5c02ce422accadd24e4f38fb65c90d3dfe83a",
+      "63195c77c26e324af9809f1cfde80131108d655b550ce137115e3337b3f84e84",
+      "65a6da806ac3669b321745b561e134117ce5a9aa258d405c6ef79c45fd8e4e35",
+      "6c7828240559051074e75e4f35bb02c1b00984cf0e716e383c9ab74671a98875",
+      "97731f8c9a37b233e06e9e61181d7c0c4a62bd5a5ecaaa08b65aec4f43602951",
+      "988853aadfbde1b09f080ea409b7e23772712f97e0eed42946bf7930ffe7c3a9",
+      "ddbbe4485c890408bb4a8f4a51c5e5490ebcf5e6e7b8a412ac5af6c11b539763",
+      "e15e42cb62fd2c17715d1acfcf95b09d7210bebb1afe4b7a06e0fb41b4cdc791",
+      "ffd094286adff8088ed9f8d242c077b377c763a65adc1171754223fc21433b87"
+    ],
+    "maximum_paid_spend_minor_units": 0,
+    "operation_ceiling_per_unit": 2,
+    "operation_ceiling_total": 44,
+    "private_illustration_clearance_present": false,
+    "private_illustration_clearance_required_before_execution": true,
+    "provider_id": "codex-built-in-image-gen",
+    "publication_authorized": false,
+    "purchased_credits_authorized": false,
+    "purpose": "PRIVATE_INTERNAL_COMPLETE_BOOK_ART_CAMPAIGN",
+    "retry_operation_ceiling": 9,
+    "scope_inheritance_allowed": false,
+    "unit_ids": [
+      "page-71e9de766bf786cb9499a31b--p01-panel-01",
+      "page-b85332e92940926f67e6dd9d--p11-panel-01",
+      "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-01",
+      "page-8619f3db280abbfd867eefe4--p21-panel-01",
+      "page-71e9de766bf786cb9499a31b--p01-panel-02",
+      "page-88792a15dcd25b30d3982d7c--p02-panel-01",
+      "page-88792a15dcd25b30d3982d7c--p02-panel-02",
+      "page-a694d4c3702975edfdceb0c5--p03-panel-01",
+      "page-d20c0821bca7f13784a34630--p04-panel-01",
+      "page-2e96a0bca25ea33924a24fde--p05-panel-01",
+      "page-6f5b1e3391910b496a7194d0--p06-panel-01",
+      "page-2eff3830302e6bb1ce973d73--p07-panel-01",
+      "page-2eff3830302e6bb1ce973d73--p07-panel-02",
+      "page-2eff3830302e6bb1ce973d73--p07-panel-03",
+      "page-050fb795d8c0bba26d6fc934--p08-panel-01",
+      "page-ca28c1486ed14e92ca7c6c89--p09-panel-01",
+      "page-29ea6f05a380ac8e4598753f--p10-panel-01",
+      "page-29ea6f05a380ac8e4598753f--p10-panel-02",
+      "page-5d55c9f3f53bac24d1f44238--p12-panel-01",
+      "page-5d55c9f3f53bac24d1f44238--p12-panel-02",
+      "page-4adc33689921626f8d0b1f8d--p13-panel-01",
+      "page-4adc33689921626f8d0b1f8d--p13-panel-02",
+      "page-4adc33689921626f8d0b1f8d--p13-panel-03",
+      "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-02",
+      "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-03",
+      "page-25f617b853e82ff066d97844--p15-panel-01",
+      "page-a77b8959a9dbfa9b247f6eed--p16-panel-01",
+      "page-a77b8959a9dbfa9b247f6eed--p16-panel-02",
+      "page-e738c476c98efb28ec475cdd--p17-panel-01",
+      "page-52288832b81caa0075cc9f6b--p18-panel-01",
+      "page-0a7e5fc37740e64356580b94--p19-panel-01",
+      "page-0a7e5fc37740e64356580b94--p19-panel-03",
+      "page-f64eb6d498aa51d874a3ff79--p20-panel-01",
+      "page-f64eb6d498aa51d874a3ff79--p20-panel-02",
+      "page-d22f4a199dc41892b93a95e8--p22-panel-01"
+    ],
+    "workspace_overage_authorized": false
+  },
+  "authorization_subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+  "book_id": "DM02",
+  "campaign_hash": "0465f0111d3fac1729014bb95ac5247e417aaf3429672ebc5f69e79f18fdac1e",
+  "campaign_id": "dm02-complete-book-image-campaign-v2",
+  "cost_and_credit_boundary": {
+    "built_in_image_operation_allowance_bucket": "NOT_EXPOSED_BY_HOST_TOOL_OR_READ_ONLY_USAGE_CONTROL",
+    "codex_task_activity_counts_against_codex_usage": true,
+    "image_usage_may_be_absent_from_thread_level_usage": true,
+    "included_usage_estimate_per_image_available": false,
+    "official_documentation": [
+      "https://developers.openai.com/siwc/ui-ux-guidelines",
+      "https://developers.openai.com/api/docs/pricing"
+    ],
+    "reason": "The host image tool exposes no allowance reservation, per-operation credit estimate or monetary quote. Official OpenAI guidance also warns that image/tool activity may be absent from thread-level usage; exact-hash human authorization, workspace billing inspection and a fresh preflight remain required.",
+    "stop_if": [
+      "PURCHASED_CREDIT_USE_REQUESTED",
+      "PAID_BILLING_REQUESTED",
+      "EXTERNAL_PROVIDER_OR_API_KEY_REQUIRED",
+      "INCLUDED_ALLOWANCE_UNAVAILABLE",
+      "PRIVATE_ILLUSTRATION_CLEARANCE_NOT_RECORDED",
+      "OPERATION_CEILING_REACHED"
+    ],
+    "zero_incremental_usd_enforceable_by_repository": false
+  },
+  "counts": {
+    "deterministic_layout_only_panels": 2,
+    "existing_usable_assets": 0,
+    "illustrated_panel_slots": 42,
+    "image_edit_opportunities": 0,
+    "initial_generation_operations": 35,
+    "maximum_retry_operations": 9,
+    "maximum_total_operations": 44,
+    "panels_needing_new_art": 35,
+    "shared_master_reframe_targets": 7,
+    "storyboard_pages": 24,
+    "storyboard_panels": 44
+  },
+  "generation_plan": {
+    "exact_panel_order": [
+      "p01-panel-01",
+      "p11-panel-01",
+      "p14-panel-01",
+      "p21-panel-01",
+      "p01-panel-02",
+      "p02-panel-01",
+      "p02-panel-02",
+      "p03-panel-01",
+      "p04-panel-01",
+      "p05-panel-01",
+      "p06-panel-01",
+      "p07-panel-01",
+      "p07-panel-02",
+      "p07-panel-03",
+      "p08-panel-01",
+      "p09-panel-01",
+      "p10-panel-01",
+      "p10-panel-02",
+      "p12-panel-01",
+      "p12-panel-02",
+      "p13-panel-01",
+      "p13-panel-02",
+      "p13-panel-03",
+      "p14-panel-02",
+      "p14-panel-03",
+      "p15-panel-01",
+      "p16-panel-01",
+      "p16-panel-02",
+      "p17-panel-01",
+      "p18-panel-01",
+      "p19-panel-01",
+      "p19-panel-03",
+      "p20-panel-01",
+      "p20-panel-02",
+      "p22-panel-01"
+    ],
+    "human_approval_checkpoints": [
+      "Before any operation: fresh read-only usage and billing preflight plus exact non-inheritable campaign authorization.",
+      "After the proof-first units: independent actual-pixel review; stop unless all required identity, iconography, composition and safe-region gates pass.",
+      "After every later bounded batch: independent review of every exact output and a fresh allowance check before continuing.",
+      "Before any retry: document the failed exact pixel hash and authorize only the bounded repair without changing the total ceiling."
+    ],
+    "ordering_policy": "PROOF_FIRST_THEN_STORY_ORDER",
+    "proof_first_panel_ids": [
+      "p01-panel-01",
+      "p11-panel-01",
+      "p14-panel-01",
+      "p21-panel-01"
+    ],
+    "reference_promotion_policy": "Only exact DM02 outputs that pass independent pixel review may become role C or D references; approval and reference status never transfer by resemblance.",
+    "suggested_batch_size": 4
+  },
+  "image_operations_executed": 0,
+  "locked_inputs": [
+    {
+      "content_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+      "file_sha256": "988853aadfbde1b09f080ea409b7e23772712f97e0eed42946bf7930ffe7c3a9",
+      "path": "books/DM02/manuscripts/v0002.json",
+      "role": "MANUSCRIPT",
+      "version": 2
+    },
+    {
+      "content_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+      "file_sha256": "2ffc82651274e049bf8b20c270f5abde63841fb2abc40137d935b956990069f6",
+      "path": "books/DM02/storyboards/v0002.json",
+      "role": "STORYBOARD",
+      "version": 2
+    },
+    {
+      "content_hash": "b469d78e327da2b41082dfbb48ad51a5a98e47112eea311157b2fd7ab979a1f7",
+      "file_sha256": "e15e42cb62fd2c17715d1acfcf95b09d7210bebb1afe4b7a06e0fb41b4cdc791",
+      "path": "books/DM02/character-bibles/v0001.json",
+      "role": "CHARACTER_BIBLE",
+      "version": 1
+    },
+    {
+      "content_hash": "33a8a7d20973eba40580261f7f274375593db356d81564dd0a55cb9c2f0a592f",
+      "file_sha256": "65a6da806ac3669b321745b561e134117ce5a9aa258d405c6ef79c45fd8e4e35",
+      "path": "books/DM02/location-bibles/v0001.json",
+      "role": "LOCATION_BIBLE",
+      "version": 1
+    },
+    {
+      "content_hash": "1715e23bd5df85a61d1f93741e4d22c2230d31e300081247f455a28ded31d676",
+      "file_sha256": "2a2bd15c10261a0fde5171f66f10ffc6c3a50afbfa6cb21c02c7a5238d01e1f8",
+      "path": "books/DM02/typography/v0001.json",
+      "role": "TYPOGRAPHY",
+      "version": 1
+    },
+    {
+      "content_hash": "9515ff2b1de2b35a7cb81c027d287db7d88f6000e71bf12c407ed0b20a16c8e2",
+      "file_sha256": "547b3d89985fdf809b5a2aa44d2002cdd812d443e399a685da2dd99053259d3e",
+      "path": "books/DM02/proof-specs/v0002.json",
+      "role": "PROOF_SPECS",
+      "version": 2
+    },
+    {
+      "file_sha256": "0775af9ff8dacfdcbecece946b781e2187574883f148bb9a6327603f1ffdae3f",
+      "path": "book-factory/references/visual-gold-standard/manifest.json",
+      "role": "PR7_VISUAL_GOLD_STANDARD"
+    },
+    {
+      "file_sha256": "ffd094286adff8088ed9f8d242c077b377c763a65adc1171754223fc21433b87",
+      "path": "books/DM02/usage-observations/2026-10-22T073059Z.json",
+      "role": "CODEX_USAGE_OBSERVATION"
+    },
+    {
+      "file_sha256": "97731f8c9a37b233e06e9e61181d7c0c4a62bd5a5ecaaa08b65aec4f43602951",
+      "path": "books/DM02/source-readiness/601fc63f99cb9ad7d7feb14b45216c573568c4afe395f192e9d97fb83b211457.json",
+      "role": "SOURCE_READINESS_DOSSIER"
+    },
+    {
+      "file_sha256": "ddbbe4485c890408bb4a8f4a51c5e5490ebcf5e6e7b8a412ac5af6c11b539763",
+      "path": "books/DM02/source-clearance/483cc82d41b142878778e107deabd090ec623ccf4a48410b28d80a3c95f1213e.json",
+      "role": "SOURCE_CLEARANCE"
+    },
+    {
+      "file_sha256": "63195c77c26e324af9809f1cfde80131108d655b550ce137115e3337b3f84e84",
+      "path": "books/DM02/story-packets/b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd.json",
+      "role": "STORY_PACKET"
+    },
+    {
+      "file_sha256": "6c7828240559051074e75e4f35bb02c1b00984cf0e716e383c9ab74671a98875",
+      "path": "book-factory/reports/dm02-storyboard-v2-source-storytelling-review.json",
+      "role": "STORYBOARD_V2_SOURCE_STORYTELLING_REVIEW"
+    },
+    {
+      "file_sha256": "55190b5c3864604bdd58d88176a5c02ce422accadd24e4f38fb65c90d3dfe83a",
+      "path": "book-factory/reports/dm02-storyboard-v2-visual-production-review.json",
+      "role": "STORYBOARD_V2_VISUAL_PRODUCTION_REVIEW"
+    }
+  ],
+  "next_action": "Record explicit private-illustration clearance for the bounded adaptation and obtain one non-inheritable PRODUCTION_CAMPAIGN approval bound to authorization_subject_hash; do not generate images before both gates pass.",
+  "non_generation_panels": [
+    {
+      "asset_source": "FUTURE_SHARED_MASTER_IF_EXACT_PIXEL_REVIEW_PASSES",
+      "classification": "REFRAME_EXISTING_ART",
+      "fallback": "PROMOTE_TO_NEW_GENERATION_ONLY_UNDER_NEW_EXACT_AUTHORIZATION",
+      "master_panel_id": "p05-panel-01",
+      "page_id": "page-2e96a0bca25ea33924a24fde",
+      "page_number": 5,
+      "panel_id": "p05-panel-02"
+    },
+    {
+      "asset_source": "FUTURE_SHARED_MASTER_IF_EXACT_PIXEL_REVIEW_PASSES",
+      "classification": "REFRAME_EXISTING_ART",
+      "fallback": "PROMOTE_TO_NEW_GENERATION_ONLY_UNDER_NEW_EXACT_AUTHORIZATION",
+      "master_panel_id": "p05-panel-01",
+      "page_id": "page-2e96a0bca25ea33924a24fde",
+      "page_number": 5,
+      "panel_id": "p05-panel-03"
+    },
+    {
+      "asset_source": "FUTURE_SHARED_MASTER_IF_EXACT_PIXEL_REVIEW_PASSES",
+      "classification": "REFRAME_EXISTING_ART",
+      "fallback": "PROMOTE_TO_NEW_GENERATION_ONLY_UNDER_NEW_EXACT_AUTHORIZATION",
+      "master_panel_id": "p08-panel-01",
+      "page_id": "page-050fb795d8c0bba26d6fc934",
+      "page_number": 8,
+      "panel_id": "p08-panel-02"
+    },
+    {
+      "asset_source": "FUTURE_SHARED_MASTER_IF_EXACT_PIXEL_REVIEW_PASSES",
+      "classification": "REFRAME_EXISTING_ART",
+      "fallback": "PROMOTE_TO_NEW_GENERATION_ONLY_UNDER_NEW_EXACT_AUTHORIZATION",
+      "master_panel_id": "p17-panel-01",
+      "page_id": "page-e738c476c98efb28ec475cdd",
+      "page_number": 17,
+      "panel_id": "p17-panel-02"
+    },
+    {
+      "asset_source": "FUTURE_SHARED_MASTER_IF_EXACT_PIXEL_REVIEW_PASSES",
+      "classification": "REFRAME_EXISTING_ART",
+      "fallback": "PROMOTE_TO_NEW_GENERATION_ONLY_UNDER_NEW_EXACT_AUTHORIZATION",
+      "master_panel_id": "p18-panel-01",
+      "page_id": "page-52288832b81caa0075cc9f6b",
+      "page_number": 18,
+      "panel_id": "p18-panel-02"
+    },
+    {
+      "asset_source": "FUTURE_SHARED_MASTER_IF_EXACT_PIXEL_REVIEW_PASSES",
+      "classification": "REFRAME_EXISTING_ART",
+      "fallback": "PROMOTE_TO_NEW_GENERATION_ONLY_UNDER_NEW_EXACT_AUTHORIZATION",
+      "master_panel_id": "p19-panel-01",
+      "page_id": "page-0a7e5fc37740e64356580b94",
+      "page_number": 19,
+      "panel_id": "p19-panel-02"
+    },
+    {
+      "asset_source": "FUTURE_SHARED_MASTER_IF_EXACT_PIXEL_REVIEW_PASSES",
+      "classification": "REFRAME_EXISTING_ART",
+      "fallback": "PROMOTE_TO_NEW_GENERATION_ONLY_UNDER_NEW_EXACT_AUTHORIZATION",
+      "master_panel_id": "p22-panel-01",
+      "page_id": "page-d22f4a199dc41892b93a95e8",
+      "page_number": 22,
+      "panel_id": "p22-panel-02"
+    },
+    {
+      "asset_source": "DETERMINISTIC_TYPOGRAPHY_AND_SERIES_ORNAMENT_RULES",
+      "classification": "REUSE_EXISTING_ART",
+      "fallback": null,
+      "master_panel_id": null,
+      "page_id": "page-0de736c5ac791f2e0c546fd3",
+      "page_number": 23,
+      "panel_id": "p23-panel-01"
+    },
+    {
+      "asset_source": "DETERMINISTIC_TYPOGRAPHY_AND_SERIES_ORNAMENT_RULES",
+      "classification": "REUSE_EXISTING_ART",
+      "fallback": null,
+      "master_panel_id": null,
+      "page_id": "page-83f106e1acc55e4a61e6fdc0",
+      "page_number": 24,
+      "panel_id": "p24-panel-01"
+    }
+  ],
+  "preservation": {
+    "dm04_mutation_authorized": false,
+    "dm08_mutation_authorized": false,
+    "source_graph_mutation_authorized": false
+  },
+  "schema_version": "1.0",
+  "status": "AWAITING_CAMPAIGN_AUTHORIZATION",
+  "units": [
+    {
+      "character_ids": [
+        "dm-medhas",
+        "dm-suratha",
+        "dm-samadhi"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-forest-hermitage-frame",
+      "operation": "generate",
+      "operation_order": 1,
+      "page_id": "page-71e9de766bf786cb9499a31b",
+      "page_number": 1,
+      "panel_id": "p01-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Wide eye-level listening triangle: Medhas faces Suratha and Samādhi across a low fire; their neutral attention is labeled visual adaptation and adds no reaction or motive.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p01-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p01-panel-01"
+      ],
+      "unit_id": "page-71e9de766bf786cb9499a31b--p01-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-yoganidra",
+        "dm-vishnu",
+        "dm-brahma",
+        "dm-shesha",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-yoganidra-manifestation-space",
+      "operation": "generate",
+      "operation_order": 2,
+      "page_id": "page-b85332e92940926f67e6dd9d",
+      "page_number": 11,
+      "panel_id": "p11-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Full-page exact-locus withdrawal map: distinct radiance leaves Viṣṇu's eyes, mouth, nose, arms, heart and breast, then gathers as a separate appeared presence before Brahmā; keep all six groups readable, modest and non-anatomical, with no seventh locus or permanent-residence implication.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p11-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p11-panel-01"
+      ],
+      "unit_id": "page-b85332e92940926f67e6dd9d--p11-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "operation": "generate",
+      "operation_order": 3,
+      "page_id": "page-b3c2c7ea03e4d1259ccbea7b",
+      "page_number": 14,
+      "panel_id": "p14-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Madhu drives forward and Viṣṇu checks him with an anatomically coherent grappling hold; Kaiṭabha remains a separate flank threat.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p14-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p14-panel-01"
+      ],
+      "unit_id": "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-unflooded-defeat-locus",
+      "operation": "generate",
+      "operation_order": 4,
+      "page_id": "page-8619f3db280abbfd867eefe4",
+      "page_number": 21,
+      "panel_id": "p21-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Full-page decisive composition after the condition-satisfied page: a source-neutral unflooded-earth field remains wholly separate from every body while Viṣṇu raises the sourced discus and its swift luminous circle ends the threat through silhouettes and motion only. The field's size, mechanism and cosmography stay unspecified; show no wound, anatomical impact point, thigh, lap, buttocks or other bodily platform.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p21-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p21-panel-01"
+      ],
+      "unit_id": "page-8619f3db280abbfd867eefe4--p21-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-medhas",
+        "dm-suratha",
+        "dm-samadhi"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-forest-hermitage-frame",
+      "operation": "generate",
+      "operation_order": 5,
+      "page_id": "page-71e9de766bf786cb9499a31b",
+      "page_number": 1,
+      "panel_id": "p01-panel-02",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Medium speaker-anchored view of Medhas beginning the distinction, with both listeners present in quiet profile and the upper field reserved for lettering.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p01-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p01-panel-02"
+      ],
+      "unit_id": "page-71e9de766bf786cb9499a31b--p01-panel-02"
+    },
+    {
+      "character_ids": [
+        "dm-medhas"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-forest-hermitage-frame",
+      "operation": "generate",
+      "operation_order": 6,
+      "page_id": "page-88792a15dcd25b30d3982d7c",
+      "page_number": 2,
+      "panel_id": "p02-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Close view of Medhas's open hand above the low fire; smoke and navy negative space begin the transition without becoming a supernatural source claim.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p02-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p02-panel-01"
+      ],
+      "unit_id": "page-88792a15dcd25b30d3982d7c--p02-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-medhas",
+        "dm-suratha",
+        "dm-samadhi"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-forest-hermitage-frame",
+      "operation": "generate",
+      "operation_order": 7,
+      "page_id": "page-88792a15dcd25b30d3982d7c",
+      "page_number": 2,
+      "panel_id": "p02-panel-02",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Wide frame of the three listeners reduced to silhouettes as the dark upper field opens toward the dissolution sequence; no invented listener reaction.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p02-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p02-panel-02"
+      ],
+      "unit_id": "page-88792a15dcd25b30d3982d7c--p02-panel-02"
+    },
+    {
+      "character_ids": [],
+      "existing_usable_asset": null,
+      "location_id": "dm02-cosmic-ocean-dissolution",
+      "operation": "generate",
+      "operation_order": 8,
+      "page_id": "page-a694d4c3702975edfdceb0c5",
+      "page_number": 3,
+      "panel_id": "p03-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Full-page horizonless dissolution water: no shore, mountain, city, temple, star map or ordinary landmark; scale comes only from sparse gold reflections and layered darkness.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p03-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p03-panel-01"
+      ],
+      "unit_id": "page-a694d4c3702975edfdceb0c5--p03-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-shesha",
+        "dm-yoganidra"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-vishnu-on-shesha",
+      "operation": "generate",
+      "operation_order": 9,
+      "page_id": "page-d20c0821bca7f13784a34630",
+      "page_number": 4,
+      "panel_id": "p04-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Low horizontal full-page repose: sleeping Viṣṇu is clearly supported by Śeṣa above the flood; Yoganidrā is a non-anatomical sleep field, with no fixed halo, weapon, body residence or conventional arm/hood count.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p04-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p04-panel-01"
+      ],
+      "unit_id": "page-d20c0821bca7f13784a34630--p04-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-shesha",
+        "dm-brahma",
+        "dm-yoganidra"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-brahma-lotus",
+      "operation": "generate",
+      "operation_order": 10,
+      "page_id": "page-2e96a0bca25ea33924a24fde",
+      "page_number": 5,
+      "panel_id": "p05-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "High-resolution vertical establishing master: the lotus rises from Viṣṇu to lotus-seated Brahmā while Śeṣa remains visibly below; Brahmā must remain readable in a medium crop, and an unoccupied still-water interval must support the closing danger crop. Do not add a temple, throne room or invented island.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p05-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p05-panel-01",
+        "p05-panel-02",
+        "p05-panel-03"
+      ],
+      "unit_id": "page-2e96a0bca25ea33924a24fde--p05-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-shesha",
+        "dm-brahma",
+        "dm-yoganidra",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-brahma-lotus",
+      "operation": "generate",
+      "operation_order": 11,
+      "page_id": "page-6f5b1e3391910b496a7194d0",
+      "page_number": 6,
+      "panel_id": "p06-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Full-page opposing depth: Madhu and Kaiṭabha emerge into the water near Viṣṇu's ear-region and advance toward Brahmā's lotus; show no anatomical gore, genealogy, weapons, army or motive beyond the threat.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p06-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p06-panel-01"
+      ],
+      "unit_id": "page-6f5b1e3391910b496a7194d0--p06-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-shesha",
+        "dm-brahma",
+        "dm-yoganidra",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-brahma-lotus",
+      "operation": "generate",
+      "operation_order": 12,
+      "page_id": "page-2eff3830302e6bb1ce973d73",
+      "page_number": 7,
+      "panel_id": "p07-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Brahmā's sightline connects the approaching pair to sleeping Viṣṇu below; keep lotus, sleepers and threat in one stable vertical geography.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p07-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p07-panel-01"
+      ],
+      "unit_id": "page-2eff3830302e6bb1ce973d73--p07-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-madhu",
+        "dm-kaitabha",
+        "dm-brahma"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-brahma-lotus",
+      "operation": "generate",
+      "operation_order": 13,
+      "page_id": "page-2eff3830302e6bb1ce973d73",
+      "page_number": 7,
+      "panel_id": "p07-panel-02",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Tight panel on the narrowing water gap between the demons and lotus, with no invented weapon or attack contact.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p07-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p07-panel-02"
+      ],
+      "unit_id": "page-2eff3830302e6bb1ce973d73--p07-panel-02"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-shesha",
+        "dm-brahma",
+        "dm-yoganidra",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-brahma-lotus",
+      "operation": "generate",
+      "operation_order": 14,
+      "page_id": "page-2eff3830302e6bb1ce973d73",
+      "page_number": 7,
+      "panel_id": "p07-panel-03",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Wide three-level hold: demons on water, Viṣṇu on Śeṣa, Brahmā above; Yoganidrā remains a sleep field, not a body-locus figure.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p07-panel-03-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p07-panel-03"
+      ],
+      "unit_id": "page-2eff3830302e6bb1ce973d73--p07-panel-03"
+    },
+    {
+      "character_ids": [
+        "dm-brahma",
+        "dm-yoganidra",
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-brahma-lotus",
+      "operation": "generate",
+      "operation_order": 15,
+      "page_id": "page-050fb795d8c0bba26d6fc934",
+      "page_number": 8,
+      "panel_id": "p08-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "High-resolution lotus-level master: Brahmā turns his gathered attention toward Yoganidrā rather than shouting at Viṣṇu; preserve a close crop of Brahmā and a separate protected lettering field while the demons remain distant but advancing.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p08-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p08-panel-01",
+        "p08-panel-02"
+      ],
+      "unit_id": "page-050fb795d8c0bba26d6fc934--p08-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-brahma",
+        "dm-yoganidra",
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-brahma-lotus",
+      "operation": "generate",
+      "operation_order": 16,
+      "page_id": "page-ca28c1486ed14e92ca7c6c89",
+      "page_number": 9,
+      "panel_id": "p09-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Full-page devotional address from Brahmā toward the source-neutral field of Yoganidrā; keep the hymn attributed to its speaker and do not literalize its cosmic names as independent project facts or add a weapon array.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p09-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p09-panel-01"
+      ],
+      "unit_id": "page-ca28c1486ed14e92ca7c6c89--p09-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-brahma",
+        "dm-yoganidra",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-brahma-lotus",
+      "operation": "generate",
+      "operation_order": 17,
+      "page_id": "page-29ea6f05a380ac8e4598753f",
+      "page_number": 10,
+      "panel_id": "p10-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Brahmā's appeal is directed toward Yoganidrā while the advancing pair remains in the same spatial lane; no escape route is invented.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p10-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p10-panel-01"
+      ],
+      "unit_id": "page-29ea6f05a380ac8e4598753f--p10-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-yoganidra",
+        "dm-vishnu"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-brahma-lotus",
+      "operation": "generate",
+      "operation_order": 18,
+      "page_id": "page-29ea6f05a380ac8e4598753f",
+      "page_number": 10,
+      "panel_id": "p10-panel-02",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Closing stillness around Viṣṇu: six subtle source-named locus groups prepare for withdrawal without implying that Yoganidrā permanently resides inside any body part.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p10-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p10-panel-02"
+      ],
+      "unit_id": "page-29ea6f05a380ac8e4598753f--p10-panel-02"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-yoganidra"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-vishnu-on-shesha",
+      "operation": "generate",
+      "operation_order": 19,
+      "page_id": "page-5d55c9f3f53bac24d1f44238",
+      "page_number": 12,
+      "panel_id": "p12-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Close view of Viṣṇu's eyes opening after the withdrawal; the same sleeping identity shifts to alertness without an invented transformation.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p12-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p12-panel-01"
+      ],
+      "unit_id": "page-5d55c9f3f53bac24d1f44238--p12-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-yoganidra",
+        "dm-vishnu",
+        "dm-brahma",
+        "dm-shesha",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-vishnu-on-shesha",
+      "operation": "generate",
+      "operation_order": 20,
+      "page_id": "page-5d55c9f3f53bac24d1f44238",
+      "page_number": 12,
+      "panel_id": "p12-panel-02",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Wide re-establishing view: awake Viṣṇu sees Brahmā and both Asuras while Śeṣa remains the stable support and Yoganidrā stands apart before Brahmā.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p12-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p12-panel-02"
+      ],
+      "unit_id": "page-5d55c9f3f53bac24d1f44238--p12-panel-02"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha",
+        "dm-brahma"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "operation": "generate",
+      "operation_order": 21,
+      "page_id": "page-4adc33689921626f8d0b1f8d",
+      "page_number": 13,
+      "panel_id": "p13-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Viṣṇu rises into the water action lane while Madhu and Kaiṭabha turn from the lotus; maintain left-to-right approach continuity.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p13-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p13-panel-01"
+      ],
+      "unit_id": "page-4adc33689921626f8d0b1f8d--p13-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "operation": "generate",
+      "operation_order": 22,
+      "page_id": "page-4adc33689921626f8d0b1f8d",
+      "page_number": 13,
+      "panel_id": "p13-panel-02",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Arm-to-arm engagement begins with three coherent humanlike silhouettes; no army, weapon, wound or unsupported arm count.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p13-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p13-panel-02"
+      ],
+      "unit_id": "page-4adc33689921626f8d0b1f8d--p13-panel-02"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha",
+        "dm-yoganidra",
+        "dm-brahma"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "operation": "generate",
+      "operation_order": 23,
+      "page_id": "page-4adc33689921626f8d0b1f8d",
+      "page_number": 13,
+      "panel_id": "p13-panel-03",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Wide hold on the three combatants against the unbounded flood; Yoganidrā and Brahmā remain distant witnesses, not combatants.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p13-panel-03-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p13-panel-03"
+      ],
+      "unit_id": "page-4adc33689921626f8d0b1f8d--p13-panel-03"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "operation": "generate",
+      "operation_order": 24,
+      "page_id": "page-b3c2c7ea03e4d1259ccbea7b",
+      "page_number": 14,
+      "panel_id": "p14-panel-02",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Kaiṭabha closes from the side as Viṣṇu turns; preserve all three silhouettes and show no weapon or injury.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p14-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p14-panel-02"
+      ],
+      "unit_id": "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-02"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "operation": "generate",
+      "operation_order": 25,
+      "page_id": "page-b3c2c7ea03e4d1259ccbea7b",
+      "page_number": 14,
+      "panel_id": "p14-panel-03",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "The trio separates into a readable triangle that can cycle again, with wave direction carrying the eye back to panel one.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p14-panel-03-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p14-panel-03"
+      ],
+      "unit_id": "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-03"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "operation": "generate",
+      "operation_order": 26,
+      "page_id": "page-25f617b853e82ff066d97844",
+      "page_number": 15,
+      "panel_id": "p15-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Full-page nonliteral time image: one central arm-to-arm tableau is surrounded by repeated wave-rings and changing light bands rather than duplicate bodies, clocks or a literal count of years; no weapons, army or injury.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p15-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p15-panel-01"
+      ],
+      "unit_id": "page-25f617b853e82ff066d97844--p15-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "operation": "generate",
+      "operation_order": 27,
+      "page_id": "page-a77b8959a9dbfa9b247f6eed",
+      "page_number": 16,
+      "panel_id": "p16-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "A repeated struggle rhythm shows one Asura pressing whenever the other falls back; use only arm-to-arm action and no invented strategy.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p16-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p16-panel-01"
+      ],
+      "unit_id": "page-a77b8959a9dbfa9b247f6eed--p16-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha",
+        "dm-yoganidra"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "operation": "generate",
+      "operation_order": 28,
+      "page_id": "page-a77b8959a9dbfa9b247f6eed",
+      "page_number": 16,
+      "panel_id": "p16-panel-02",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "The struggle pauses as Madhu and Kaiṭabha's posture shifts to pride under Yoganidrā's deluding power; render the influence as source-neutral spatial distortion, not mind-control anatomy or a new motive.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p16-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p16-panel-02"
+      ],
+      "unit_id": "page-a77b8959a9dbfa9b247f6eed--p16-panel-02"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "operation": "generate",
+      "operation_order": 29,
+      "page_id": "page-e738c476c98efb28ec475cdd",
+      "page_number": 17,
+      "panel_id": "p17-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "High-resolution three-person master after the long struggle: Madhu and Kaiṭabha occupy equal boon-giver positions, while Viṣṇu remains fully readable for a quiet reaction crop; include no victory throne, weapon or invented ritual.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p17-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p17-panel-01",
+        "p17-panel-02"
+      ],
+      "unit_id": "page-e738c476c98efb28ec475cdd--p17-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "operation": "generate",
+      "operation_order": 30,
+      "page_id": "page-52288832b81caa0075cc9f6b",
+      "page_number": 18,
+      "panel_id": "p18-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "High-resolution triangular dialogue master: Viṣṇu answers both joint boon-givers directly, with all three figures and unbroken flood visible so a wider still-water reframe remains honest; no discus is raised and no defeat locus is implied.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p18-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p18-panel-01",
+        "p18-panel-02"
+      ],
+      "unit_id": "page-52288832b81caa0075cc9f6b--p18-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "operation": "generate",
+      "operation_order": 31,
+      "page_id": "page-0a7e5fc37740e64356580b94",
+      "page_number": 19,
+      "panel_id": "p19-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "High-resolution wide condition master: flood fills every direction while Madhu and Kaiṭabha remain jointly readable for a balanced two-shot crop; no dry place, outside boon-giver or bodily solution is shown yet.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p19-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p19-panel-01",
+        "p19-panel-02"
+      ],
+      "unit_id": "page-0a7e5fc37740e64356580b94--p19-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "operation": "generate",
+      "operation_order": 32,
+      "page_id": "page-0a7e5fc37740e64356580b94",
+      "page_number": 19,
+      "panel_id": "p19-panel-03",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Close dialogue hold on Viṣṇu's acceptance; do not preview any thigh, lap, buttocks or other anatomical solution.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p19-panel-03-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p19-panel-03"
+      ],
+      "unit_id": "page-0a7e5fc37740e64356580b94--p19-panel-03"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-unflooded-defeat-locus",
+      "operation": "generate",
+      "operation_order": 33,
+      "page_id": "page-f64eb6d498aa51d874a3ff79",
+      "page_number": 20,
+      "panel_id": "p20-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "Source-neutral proposal for the condition-satisfied state: flood remains visible around the three figures while an unflooded-earth field is staged wholly apart from every body. Its size, mechanism and cosmography remain unspecified; it is not a source-fixed island or anatomical platform.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p20-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p20-panel-01"
+      ],
+      "unit_id": "page-f64eb6d498aa51d874a3ff79--p20-panel-01"
+    },
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-unflooded-defeat-locus",
+      "operation": "generate",
+      "operation_order": 34,
+      "page_id": "page-f64eb6d498aa51d874a3ff79",
+      "page_number": 20,
+      "panel_id": "p20-panel-02",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "A second source-neutral view verifies only that the condition is satisfied before the decisive action. Keep the unflooded-earth field wholly non-anatomical and leave its exact geography, size and mechanism unresolved; show no thigh, lap, buttocks or strike locus.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p20-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p20-panel-02"
+      ],
+      "unit_id": "page-f64eb6d498aa51d874a3ff79--p20-panel-02"
+    },
+    {
+      "character_ids": [
+        "dm-medhas",
+        "dm-suratha",
+        "dm-samadhi"
+      ],
+      "existing_usable_asset": null,
+      "location_id": "dm02-forest-hermitage-frame",
+      "operation": "generate",
+      "operation_order": 35,
+      "page_id": "page-d22f4a199dc41892b93a95e8",
+      "page_number": 22,
+      "panel_id": "p22-panel-01",
+      "reference_roles": {
+        "A": "PR7_CURATED_SERIES_AESTHETIC_ONLY",
+        "B": "PR7_CURATED_PAGE_COMPOSITION_ONLY",
+        "C": "UNAVAILABLE_UNTIL_EXACT_DM02_CHARACTER_PIXEL_REVIEW_PASSES",
+        "D": "UNAVAILABLE_UNTIL_EXACT_DM02_ENVIRONMENT_PIXEL_REVIEW_PASSES"
+      },
+      "required_action": "High-resolution return-to-frame master: restore the same hermitage geometry as Medhas lets the account rest, keep Suratha and Samādhi neutral, and retain sufficient fire-and-tree detail for a quiet closing crop without a new doctrinal symbol.",
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p22-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "served_panel_ids": [
+        "p22-panel-01",
+        "p22-panel-02"
+      ],
+      "unit_id": "page-d22f4a199dc41892b93a95e8--p22-panel-01"
+    }
+  ]
+}

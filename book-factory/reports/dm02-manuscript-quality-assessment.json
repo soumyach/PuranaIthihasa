@@ -1,0 +1,319 @@
+{
+  "schema_version": "1.0",
+  "review_type": "MANUSCRIPT_QUALITY_FOR_STORYBOARD_OPTIMIZATION",
+  "book_id": "DM02",
+  "title": "The Sleep That Held Vishnu",
+  "review_date": "2026-10-22",
+  "repository_state": {
+    "branch": "feature/book-factory-dm02-production-optimization",
+    "baseline_commit": "36d3c4db86f0c1d0fbbf489e74f6498048c4d9e8"
+  },
+  "reviewer": {
+    "agent_id": "/root/dm04_family_editor",
+    "role": "family-editor",
+    "capability": "editorial_review",
+    "perspective": "LITERARY_EXPERIENCE_AND_FAMILY_READERSHIP",
+    "independent": true,
+    "independence_statement": "The reviewer did not write or revise DM02 manuscript v2, did not create storyboard v1, and did not create the current image campaign. The manuscript and durable production artifacts were treated as immutable during this review.",
+    "mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+    "orchestrator_attested": true,
+    "attestation_scope": "ORCHESTRATOR_SESSION_RECORD_NOT_CRYPTOGRAPHIC_IDENTITY",
+    "external_calls": 0,
+    "paid_api_calls": 0,
+    "cost_minor_units": 0
+  },
+  "bound_inputs": {
+    "manuscript": {
+      "path": "books/DM02/manuscripts/v0002.json",
+      "version": 2,
+      "content_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+      "file_sha256": "988853aadfbde1b09f080ea409b7e23772712f97e0eed42946bf7930ffe7c3a9"
+    },
+    "source_readiness_dossier": {
+      "path": "books/DM02/source-readiness/601fc63f99cb9ad7d7feb14b45216c573568c4afe395f192e9d97fb83b211457.json",
+      "dossier_hash": "601fc63f99cb9ad7d7feb14b45216c573568c4afe395f192e9d97fb83b211457",
+      "file_sha256": "97731f8c9a37b233e06e9e61181d7c0c4a62bd5a5ecaaa08b65aec4f43602951"
+    },
+    "story_packet": {
+      "path": "books/DM02/story-packets/b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd.json",
+      "packet_hash": "b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd",
+      "file_sha256": "63195c77c26e324af9809f1cfde80131108d655b550ce137115e3337b3f84e84"
+    },
+    "storyboard": {
+      "path": "books/DM02/storyboards/v0001.json",
+      "version": 1,
+      "content_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+      "file_sha256": "c1b548799c8cfdd01c94f2f463bcb0219aa086f531089873f51894fce456f9bb",
+      "measured_pages": 24,
+      "measured_panels": 44
+    },
+    "image_campaign": {
+      "path": "books/DM02/image-campaigns/5afc3beed39e3a79a40e768f172c188691ef6cbf5d5938eca229c49aabb0fcf4.request.json",
+      "campaign_hash": "5afc3beed39e3a79a40e768f172c188691ef6cbf5d5938eca229c49aabb0fcf4",
+      "file_sha256": "8e3a3d5ee5437f0d7e9f44a3b228ac6674f2250216a7e335f3a0173a30247c7d",
+      "status": "AWAITING_CAMPAIGN_AUTHORIZATION",
+      "measured_initial_generation_operations": 44,
+      "measured_maximum_total_operations_including_retries": 88,
+      "image_operations_executed": 0
+    }
+  },
+  "prior_review_reconciliation": [
+    {
+      "path": "books/DM02/editorial-reviews/v0001.json",
+      "content_hash": "633610b1aa1af8806e5f2a2fb79a7e4f61b9aa7923cfc0fcf2930a0b26f3a14f",
+      "reviewed_manuscript_hash": "8b7dc126012186ada26df3b6acb16e46fcc72a600ad151de49f6aaf3c06d2c44",
+      "perspective": "SOURCE_FIDELITY",
+      "result": "PASS",
+      "relevance": "Source review of superseded manuscript v1; not inherited as a literary verdict."
+    },
+    {
+      "path": "books/DM02/editorial-reviews/v0002.json",
+      "content_hash": "1697fc85dc79dcef7e5437cf9791b9b4a85653521e37ac0e048c638acacd96f0",
+      "reviewed_manuscript_hash": "8b7dc126012186ada26df3b6acb16e46fcc72a600ad151de49f6aaf3c06d2c44",
+      "perspective": "LITERARY_EXPERIENCE",
+      "result": "FIX",
+      "relevance": "The v1 findings concerned editorial-audit intrusions, stacked ending recap, and an over-repetitive family reflection. The present reading confirms those issues are absent from v2."
+    },
+    {
+      "path": "books/DM02/editorial-reviews/v0003.json",
+      "content_hash": "45248bb619591db02c569db864ff2105714e35c947df4e353da14d33c8f503b6",
+      "reviewed_manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+      "perspective": "SOURCE_FIDELITY",
+      "result": "PASS",
+      "relevance": "Exact-v2 source-fidelity evidence relied upon for the source/theology dimension; it does not certify literary quality or publication."
+    },
+    {
+      "path": "books/DM02/editorial-reviews/v0004.json",
+      "content_hash": "b8cfd3d95e966d14f23c70e8b3cfeff9f2937f88b612c5aece4475a97f4a4f43",
+      "reviewed_manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+      "perspective": "LITERARY_EXPERIENCE",
+      "result": "PASS",
+      "relevance": "Exact-v2 independent literary evidence. This optimization review freshly re-read the text and did not merely inherit that verdict."
+    }
+  ],
+  "classification_legend": {
+    "A": "Missing essential narrative substance. A manuscript rewrite is warranted only when bounded evidence identifies the missing substance.",
+    "B": "The event or idea is adequately present in the manuscript but requires stronger, clearer, or more economical presentation in adaptation.",
+    "C": "Unnecessary repetition or filler. Remove or combine only when comprehension, emotional movement, and distinct source events remain intact."
+  },
+  "dimension_assessments": [
+    {
+      "dimension": "strength_of_the_opening",
+      "result": "PASS",
+      "assessment": "The opening establishes Medhas as narrator, distinguishes the eternal Goddess from her purposeful appearances, then moves rapidly into an image-rich dissolution. The short sequence 'Vishnu slept. The waters waited. And in that stillness, danger appeared.' creates an effective page-turn hook without manufacturing action.",
+      "evidence": [{"section_ids": ["ch-01"], "excerpt": "Vishnu slept. The waters waited. And in that stillness, danger appeared."}],
+      "classification_if_actionable": "B",
+      "action_boundary": "Preserve the prose. Strengthen the transition and page turn visually; do not add a new prologue or action scene."
+    },
+    {
+      "dimension": "background_and_cosmic_setting",
+      "result": "PASS",
+      "assessment": "The dissolution waters, Shesha, sleeping Vishnu, the lotus, and Brahma are introduced in a coherent spatial hierarchy. A reader can understand the setting without an earlier volume. The setting is complete in prose but visually complex enough that storyboard composition, rather than more exposition, must carry the spatial clarification.",
+      "evidence": [{"section_ids": ["ch-01"], "excerpt": "Brahma had no ground beneath him—only the lotus, Vishnu below, and the unbroken flood beyond."}],
+      "classification_if_actionable": "B"
+    },
+    {
+      "dimension": "brahma_vulnerability_and_the_danger_posed_by_madhu_and_kaitabha",
+      "result": "PASS",
+      "assessment": "Brahma's physical vulnerability is concrete: he is isolated on the lotus, surrounded by flood, while the only defender sleeps. The demons' intent is explicit and their approach progressively tightens the scene.",
+      "evidence": [{"section_ids": ["ch-02"], "excerpt": "There was nowhere for Brahma to flee. Around the lotus lay the same endless flood. Below it slept the one who could face the threat."}],
+      "classification_if_actionable": null
+    },
+    {
+      "dimension": "role_of_yoganidra_or_mahamaya",
+      "result": "PASS",
+      "assessment": "Yoganidra is causal rather than decorative: she holds Vishnu in cosmic sleep, receives Brahma's attributed praise and appeal, withdraws and appears, enables awakening, and later deludes the demons. The prose avoids inventing a separate motive for her.",
+      "evidence": [
+        {"section_ids": ["ch-03"], "excerpt": "Great Goddess, delude these two Asuras. Withdraw your sleep from Vishnu and awaken him, so that their threat may be ended."},
+        {"section_ids": ["ch-04"], "excerpt": "Yoganidra withdrew from Vishnu’s eyes, mouth and nose; from his arms, heart and breast."}
+      ],
+      "classification_if_actionable": null
+    },
+    {
+      "dimension": "vishnu_awakening",
+      "result": "PASS",
+      "assessment": "The awakening has a legible change of state—sleep withdraws, Vishnu sees the endangered Brahma and the two Asuras, then rises to meet them. It is compact but dramatically earned by the invocation sequence.",
+      "evidence": [{"section_ids": ["ch-04"], "excerpt": "Vishnu’s eyes opened. Stillness gave way to attention. Rest gave way to readiness."}],
+      "classification_if_actionable": null
+    },
+    {
+      "dimension": "confrontation_and_five_thousand_year_struggle",
+      "result": "PASS",
+      "assessment": "The prose makes the two-against-one action understandable, states arm-to-arm combat, conveys cycling pressure, and gives the five-thousand-year duration narrative weight without bloating a sparse source event. The action is dignified and non-graphic. Its compression creates a presentation challenge, not missing substance.",
+      "evidence": [{"section_ids": ["ch-05"], "excerpt": "Whenever one attacker was forced back, the other pressed in. Whenever both were driven away, they returned to the struggle."}],
+      "classification_if_actionable": "B",
+      "action_boundary": "Use a small number of genuinely distinct visual phases or a time-passage composition. Do not pad the manuscript or generate repeated generic grappling shots."
+    },
+    {
+      "dimension": "unusual_boon_reversal",
+      "result": "PASS",
+      "assessment": "The reversal is the manuscript's strongest dramatic turn. The demons' pride, joint offer, and Vishnu's choice are clear, surprising, and easy for a family audience to follow.",
+      "evidence": [{"section_ids": ["ch-05", "ch-06"], "excerpt": "They had become the boon-givers. ... 'Then let the boon be this,' Vishnu said. 'Let both of you be overcome by me.'"}],
+      "classification_if_actionable": null
+    },
+    {
+      "dimension": "condition_that_makes_defeat_possible",
+      "result": "PASS",
+      "assessment": "The demons jointly attach the unflooded-earth condition, Vishnu accepts it, and the narration states that he meets it. The manuscript appropriately leaves the precise mechanism and bodily locus unresolved because the locked witnesses do not settle them. This is sufficient narrative substance, but visual adaptation must preserve the uncertainty.",
+      "evidence": [
+        {"section_ids": ["ch-06"], "excerpt": "Madhu answered, 'Only where earth is not flooded.' Kaitabha added, 'On that condition, we grant it.'"},
+        {"section_ids": ["ch-07"], "excerpt": "The place of their defeat met the demons’ condition: the earth there was not under the flood."}
+      ],
+      "classification_if_actionable": "B",
+      "source_bindings": {"event_ids": ["dm-event-007"], "claim_ids": ["claim-007-b", "claim-007-d", "claim-007-e"]}
+    },
+    {
+      "dimension": "complete_resolution",
+      "result": "PASS",
+      "assessment": "The discus ends the contest, Brahma is explicitly safe, Vishnu is awake, Yoganidra's causal role is recalled once, and Medhas closes the frame. There is no dependency on a sequel for resolution.",
+      "evidence": [{"section_ids": ["ch-07"], "excerpt": "Brahma was safe. Vishnu stood awake above the cosmic waters. ... The danger at the lotus was over."}],
+      "classification_if_actionable": null
+    },
+    {
+      "dimension": "emotional_highs_and_lows",
+      "result": "PASS",
+      "assessment": "The manuscript moves through wonder and stillness, isolation and approaching danger, focused appeal, awakening, exhausting stalemate, ironic pride, intellectual reversal, and quiet safety. The emotional rhythm is restrained rather than psychologically expansive, which suits the bounded cosmic episode.",
+      "evidence": [{"section_ids": ["ch-01", "ch-02", "ch-04", "ch-05", "ch-06", "ch-07"], "excerpt": "The danger and the answer stood almost together ... Stillness gave way to attention ... They had become the boon-givers ... The danger at the lotus was over."}],
+      "classification_if_actionable": null
+    },
+    {
+      "dimension": "natural_family_readable_conversations",
+      "result": "PASS",
+      "assessment": "Dialogue is sparse, attributed, and purposeful: Medhas frames the theology, Brahma praises and asks, the demons jointly offer and condition the boon, and Vishnu answers. The elevated register remains readable aloud, and no arbitrary dialogue quota is needed.",
+      "evidence": [{"section_ids": ["ch-03", "ch-05", "ch-06"], "excerpt": "'Ask a boon of us,' he said. Kaitabha stood beside him. 'Yes. Choose what we shall give.'"}],
+      "classification_if_actionable": null
+    },
+    {
+      "dimension": "source_fidelity_and_theological_accuracy",
+      "result": "PASS_WITH_SPECIALIST_RELIANCE",
+      "assessment": "No contradiction with the locked packet's four events was found in this family-reading pass. Brahma's theological statements remain attributed hymn-praise; the manuscript avoids unsupported genealogy, boon history, divine motive, quotation claims, and a precise defeat locus. This assessment relies on the exact-v2 SOURCE_FIDELITY PASS and is not an independent theological certification.",
+      "evidence": [{"section_ids": ["ch-03", "ch-07", "source-note"], "excerpt": "Brahma gathered his attention and praised the Goddess ... the manuscript states only that the water condition is met and omits any ... precise locus."}],
+      "source_bindings": {"event_ids": ["dm-event-004", "dm-event-005", "dm-event-006", "dm-event-007"]},
+      "classification_if_actionable": null
+    },
+    {
+      "dimension": "narrator_framing",
+      "result": "PASS",
+      "assessment": "Medhas opens with the required distinction and returns only to let the struggle rest. The frame does not interrupt the action with audit language. The modern reflection and source note are explicitly separated from scripture and story.",
+      "evidence": [{"section_ids": ["ch-01", "ch-07", "ch-08", "source-note"], "excerpt": "Sage Medhas began with a distinction. ... Sage Medhas let the struggle come to rest."}],
+      "classification_if_actionable": null
+    },
+    {
+      "dimension": "reader_comprehension_without_earlier_volumes",
+      "result": "PASS",
+      "assessment": "Every person, power, threat, causal intervention, reversal, and outcome needed for this bounded story is introduced in the book. The reader does not need DM01, DM04, DM08, or outside genealogy to follow it.",
+      "evidence": [{"section_ids": ["ch-01", "ch-02", "ch-03", "ch-04", "ch-05", "ch-06", "ch-07"], "excerpt": "Yoganidra, the divine power of cosmic sleep, held him in profound stillness."}],
+      "classification_if_actionable": null
+    }
+  ],
+  "event_coverage": [
+    {"event_id": "dm-event-004", "status": "PRESERVED", "manuscript_sections": ["ch-01", "ch-02"]},
+    {"event_id": "dm-event-005", "status": "PRESERVED", "manuscript_sections": ["ch-02", "ch-03"]},
+    {"event_id": "dm-event-006", "status": "PRESERVED", "manuscript_sections": ["ch-04", "ch-05"]},
+    {"event_id": "dm-event-007", "status": "PRESERVED", "manuscript_sections": ["ch-06", "ch-07"]}
+  ],
+  "findings": [
+    {
+      "code": "DM02-MQ-B-COSMIC-SPATIAL-PRESENTATION",
+      "classification": "B",
+      "severity": "ADVISORY",
+      "artifact_scope": "STORYBOARD_PRESENTATION_OF_ADEQUATE_MANUSCRIPT_CONTENT",
+      "section_ids": ["ch-01"],
+      "storyboard_page_numbers": [1, 2, 3, 4, 5],
+      "bounded_excerpt": "Brahma had no ground beneath him—only the lotus, Vishnu below, and the unbroken flood beyond.",
+      "finding": "The cosmic hierarchy is complete in prose, but storyboard v1 distributes the opening across five pages and nine panels, several of which change mood or camera rather than story state. The adaptation needs a clearer and more economical spatial establishment, not new manuscript exposition.",
+      "action": "During the 44-panel audit, test combining adjacent framing/transition panels while preserving Medhas's distinction, dissolution, Vishnu on Shesha, Brahma on the lotus, and the danger page turn. No manuscript rewrite recommended."
+    },
+    {
+      "code": "DM02-MQ-B-COMBAT-DURATION-PRESENTATION",
+      "classification": "B",
+      "severity": "ADVISORY",
+      "artifact_scope": "STORYBOARD_PRESENTATION_OF_ADEQUATE_MANUSCRIPT_CONTENT",
+      "section_ids": ["ch-04", "ch-05"],
+      "storyboard_page_numbers": [13, 14, 15, 16],
+      "bounded_excerpt": "Again they joined, separated and returned. Years passed, yet the struggle did not end. Hundreds became thousands.",
+      "finding": "The manuscript provides enough action logic and duration for the bounded event. Repeated generic combat images would add cost without new story information.",
+      "action": "Keep the awakening, first engagement, immense-duration beat, and delusion reversal distinct; combine or reframe any panel whose only change is another interchangeable grapple. No manuscript expansion recommended."
+    },
+    {
+      "code": "DM02-MQ-B-DEFEAT-CONDITION-VISUAL-RESTRAINT",
+      "classification": "B",
+      "severity": "MATERIAL_DOWNSTREAM_REVIEW",
+      "artifact_scope": "STORYBOARD_SOURCE_INTERPRETATION_NOT_MANUSCRIPT_DEFICIENCY",
+      "section_ids": ["ch-06", "ch-07", "source-note"],
+      "storyboard_page_numbers": [19, 20, 21],
+      "storyboard_panel_ids": ["p20-panel-01", "p20-panel-02"],
+      "bounded_excerpt": "Vishnu met the condition. The place of their defeat met the demons’ condition: the earth there was not under the flood.",
+      "event_ids": ["dm-event-007"],
+      "claim_ids": ["claim-007-b", "claim-007-d", "claim-007-e"],
+      "finding": "The manuscript deliberately preserves the source witness's unresolved defeat locus. Storyboard v1 goes further by specifying a 'distinct dry-earth plane' and a 'separate unflooded earth area.' That visual resolution requires source/storyboard review; it is not evidence of missing manuscript substance.",
+      "action": "Revise or independently clear the visual treatment so the condition is intelligible without asserting an unsupported mechanism, geography, size, or bodily locus. Do not rewrite the manuscript to match the current storyboard."
+    },
+    {
+      "code": "DM02-MQ-C-OPENING-PANEL_SPREAD",
+      "classification": "C",
+      "severity": "EFFICIENCY_CANDIDATE",
+      "artifact_scope": "STORYBOARD_ONLY",
+      "section_ids": ["ch-01"],
+      "storyboard_page_numbers": [1, 2, 3, 4, 5],
+      "finding": "The manuscript's meditative repetition is rhythmic and purposeful, but assigning nearly every sentence transition its own panel turns prose cadence into potential production filler. The panel audit should distinguish changes in story state from camera-only restatement.",
+      "action": "Combine only panels that repeat the same narrative state; retain at least the narrator frame, dissolution scale, sleeping Vishnu, lotus/Brahma hierarchy, and danger turn."
+    },
+    {
+      "code": "DM02-MQ-C-CLOSURE-IMAGE_RESTATEMENT",
+      "classification": "C",
+      "severity": "EFFICIENCY_CANDIDATE",
+      "artifact_scope": "STORYBOARD_ONLY",
+      "section_ids": ["ch-07"],
+      "storyboard_page_numbers": [21, 22],
+      "bounded_excerpt": "Brahma was safe. Vishnu stood awake above the cosmic waters. ... The danger at the lotus was over.",
+      "finding": "The manuscript's brief causal recap gives emotional closure. In storyboard form, a defeat full page followed by two more resolved-state panels risks visually restating the same outcome.",
+      "action": "Preserve the non-graphic discus climax and one unmistakable safety/rest frame; test whether the remaining resolved-state panel can be combined without losing Medhas's closing frame."
+    },
+    {
+      "code": "DM02-MQ-C-BACK_MATTER-GENERATION_OPS",
+      "classification": "C",
+      "severity": "CLEAR_PRODUCTION_INEFFICIENCY",
+      "artifact_scope": "IMAGE_CAMPAIGN_ONLY",
+      "section_ids": ["ch-08", "source-note"],
+      "storyboard_page_numbers": [23, 24],
+      "storyboard_panel_ids": ["p23-panel-01", "p24-panel-01"],
+      "finding": "Both back-matter pages are specified as text-led layouts with restrained ornamental borders and no character scene, yet the current campaign counts all 44 panels as new image generations. These two pages do not require scene illustration to fulfill their narrative or editorial purpose.",
+      "action": "Use typography/layout and an approved reusable ornamental treatment for the source note and family reflection unless a later visual review identifies a specific essential illustration. Do not spend two new scene-generation operations by default."
+    }
+  ],
+  "classification_summary": {
+    "A_missing_essential_substance": {
+      "count": 0,
+      "conclusion": "No essential narrative substance is missing from manuscript v2."
+    },
+    "B_adequate_content_needing_stronger_presentation": {
+      "count": 3,
+      "conclusion": "The cosmic spatial setup, long-combat compression, and intentionally unresolved defeat locus require disciplined visual presentation, not manuscript expansion."
+    },
+    "C_repetition_or_filler": {
+      "count": 3,
+      "conclusion": "No material filler requires manuscript revision. The identified repetition/inefficiency arises when compact prose is spread across storyboard panels or when text-only back matter is counted as new scene art."
+    }
+  },
+  "rewrite_recommendation": {
+    "result": "NOT_RECOMMENDED",
+    "basis": "A fresh semantic reading found no A-class deficiency and confirmed that all four locked events, their causal links, family-readable dramatic movement, and complete resolution are already present. Rewriting would introduce needless source and editorial risk while failing to address the actual cost driver: storyboard allocation.",
+    "future_boundary": "If storyboard optimization proposes new or changed dialogue, new causal explanation, a resolved defeat mechanism, or substantial shortening of reader-facing prose, that exact changed text must return through independent literary and source-fidelity review."
+  },
+  "storyboard_basis_decision": {
+    "manuscript_suitable_as_basis": true,
+    "verdict": "PASS",
+    "reason": "The manuscript is a compelling, coherent, standalone, source-bounded family story. Its length is not evidence of incompleteness. Production optimization should proceed at storyboard and campaign layers while keeping v2 immutable.",
+    "storyboard_v1_ready_for_unmodified_campaign": false,
+    "reason_storyboard_not_ready": "The 44-panel plan contains evidence-based efficiency candidates and at least one material visual-source question around the unflooded defeat locus. The existing 44-generation campaign should remain unauthorized until panel optimization and independent storyboard/source review are complete.",
+    "recommended_next_action": "Complete the panel-by-panel audit, preserve every distinct source event, develop an editorially optimized storyboard proposal with stable lineage, and submit the proposed condition/defeat visualization plus any changed lettering to the required independent review gates before preparing a new authorization subject."
+  },
+  "limitations_and_non_certifications": [
+    "This review certifies only manuscript suitability as a literary basis for storyboard optimization.",
+    "It does not certify source readiness, theological authority, rights or permissions, legal clearance, publication readiness, public distribution, illustration quality, visual continuity, image-provider capability, budget sufficiency, or campaign authorization.",
+    "The source-fidelity and theological-accuracy dimension relies on the locked Story Packet and the exact-v2 specialist SOURCE_FIDELITY PASS; this family editor did not independently establish scriptural authority.",
+    "The Source Readiness Dossier continues to record rights and publication blockers; this PASS does not change them.",
+    "No illustration, PDF, image generation, source-graph change, manuscript edit, storyboard edit, approval, publication, deployment, push, or merge was performed."
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "book_id": "DM02",
+  "content_hash": "9515ff2b1de2b35a7cb81c027d287db7d88f6000e71bf12c407ed0b20a16c8e2",
+  "id": "proof-specs-7ceafd74d070b7d7a393c19d",
+  "kind": "proof-specs",
+  "parent_hash": "38ccd93cfe00915a978c27e6be701ce481236c0f6fdb37010781a0e67a97044c",
+  "payload": {
+    "approval_policy": "Every rendered attempt requires independent exact-image semantic review. Approval binds the exact proof id, proof-spec hash, package version and image hash and never transfers to another character, manifestation, location or related identity.",
+    "approval_records": [],
+    "book_id": "DM02",
+    "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+    "parent_proof_spec_record_hash": "38ccd93cfe00915a978c27e6be701ce481236c0f6fdb37010781a0e67a97044c",
+    "provider_status": "BLOCKED_PROVIDER",
+    "retry_limit": 2,
+    "schema_version": "1.0",
+    "specs": [
+      {
+        "attempts": [],
+        "canvas": {
+          "aspect_ratio": "3:4",
+          "pixel_height": 1448,
+          "pixel_width": 1086
+        },
+        "character_ids": [
+          "dm-medhas",
+          "dm-suratha",
+          "dm-samadhi"
+        ],
+        "composition": "Three-person hermitage listening triangle with Medhas speaking and Suratha and Samādhi in neutral adaptation-labeled attention; reserve the complete top lettering-safe rectangle.",
+        "exclusions": [
+          "embedded lettering",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsourced weapon",
+          "unsupported arm/head/hood count",
+          "unsupported body-locus claim",
+          "invented boon history"
+        ],
+        "iconography": "Bind every figure to the DM02 character bible; use no unsupported arm, head, hood, halo, weapon, genealogy, motive or body-locus claim.",
+        "id": "dm02-proof-quiet-conversation",
+        "kind": "QUIET_CONVERSATION",
+        "review_requirements": [
+          "iconographic_accuracy",
+          "hands_and_anatomy",
+          "character_continuity",
+          "facial_consistency",
+          "scene_correctness",
+          "clipped_artwork",
+          "lettering_readability",
+          "body_locus_nonassertion"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.18,
+            "id": "dm02-proof-quiet-conversation-safe",
+            "purpose": "editable lettering",
+            "width": 0.84,
+            "x": 0.08,
+            "y": 0.06
+          }
+        ],
+        "setting": "dm02-forest-hermitage-frame",
+        "source_boundaries": [
+          "No invented genealogy, motive, boon history or sacred quotation.",
+          "Source silence stays UNSPECIFIED and visually proposal-labeled.",
+          "The defeat locus must never be represented as Viṣṇu's thigh, lap, buttocks or another body part."
+        ],
+        "source_support": [
+          "dm-evidence-001",
+          "dm-evidence-002",
+          "dm-evidence-003",
+          "dm-evidence-004"
+        ],
+        "status": "SPEC_READY_PROVIDER_BLOCKED",
+        "style": "cinematic Indian epic storybook with traditional miniature and Kalamkari influence; exact seven-color palette; source-silent attributes remain proposals",
+        "title": "Medhas opens the cosmic tale"
+      },
+      {
+        "attempts": [],
+        "canvas": {
+          "aspect_ratio": "3:4",
+          "pixel_height": 1448,
+          "pixel_width": 1086
+        },
+        "character_ids": [
+          "dm-yoganidra",
+          "dm-vishnu",
+          "dm-brahma"
+        ],
+        "composition": "Full-body source-neutral appeared presence before Brahmā after six distinct withdrawal streams leave Viṣṇu's eyes, mouth, nose, arms, heart and breast; no permanent residence, weapon array or fixed conventional arm count.",
+        "exclusions": [
+          "embedded lettering",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsourced weapon",
+          "unsupported arm/head/hood count",
+          "unsupported body-locus claim",
+          "invented boon history"
+        ],
+        "iconography": "Bind every figure to the DM02 character bible; use no unsupported arm, head, hood, halo, weapon, genealogy, motive or body-locus claim.",
+        "id": "dm02-proof-divine-reveal",
+        "kind": "DIVINE_REVEAL",
+        "review_requirements": [
+          "iconographic_accuracy",
+          "hands_and_anatomy",
+          "character_continuity",
+          "facial_consistency",
+          "scene_correctness",
+          "clipped_artwork",
+          "lettering_readability",
+          "body_locus_nonassertion"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.18,
+            "id": "dm02-proof-divine-reveal-safe",
+            "purpose": "editable lettering",
+            "width": 0.84,
+            "x": 0.08,
+            "y": 0.06
+          }
+        ],
+        "setting": "dm02-yoganidra-manifestation-space",
+        "source_boundaries": [
+          "No invented genealogy, motive, boon history or sacred quotation.",
+          "Source silence stays UNSPECIFIED and visually proposal-labeled.",
+          "The defeat locus must never be represented as Viṣṇu's thigh, lap, buttocks or another body part."
+        ],
+        "source_support": [
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006"
+        ],
+        "status": "SPEC_READY_PROVIDER_BLOCKED",
+        "style": "cinematic Indian epic storybook with traditional miniature and Kalamkari influence; exact seven-color palette; source-silent attributes remain proposals",
+        "title": "Yoganidra stands apart"
+      },
+      {
+        "attempts": [],
+        "canvas": {
+          "aspect_ratio": "3:4",
+          "pixel_height": 1448,
+          "pixel_width": 1086
+        },
+        "character_ids": [
+          "dm-vishnu",
+          "dm-madhu",
+          "dm-kaitabha"
+        ],
+        "composition": "Readable three-figure arm-to-arm action triangle on the flooded expanse, with Madhu and Kaiṭabha alternating pressure against Viṣṇu; no weapons, army, injury or literal five-thousand-year duplication.",
+        "exclusions": [
+          "embedded lettering",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsourced weapon",
+          "unsupported arm/head/hood count",
+          "unsupported body-locus claim",
+          "invented boon history"
+        ],
+        "iconography": "Bind every figure to the DM02 character bible; use no unsupported arm, head, hood, halo, weapon, genealogy, motive or body-locus claim.",
+        "id": "dm02-proof-battle",
+        "kind": "BATTLE",
+        "review_requirements": [
+          "iconographic_accuracy",
+          "hands_and_anatomy",
+          "character_continuity",
+          "facial_consistency",
+          "scene_correctness",
+          "clipped_artwork",
+          "lettering_readability",
+          "body_locus_nonassertion"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.18,
+            "id": "dm02-proof-battle-safe",
+            "purpose": "editable lettering",
+            "width": 0.84,
+            "x": 0.08,
+            "y": 0.06
+          }
+        ],
+        "setting": "dm02-flooded-combat-expanse",
+        "source_boundaries": [
+          "No invented genealogy, motive, boon history or sacred quotation.",
+          "Source silence stays UNSPECIFIED and visually proposal-labeled.",
+          "The defeat locus must never be represented as Viṣṇu's thigh, lap, buttocks or another body part."
+        ],
+        "source_support": [
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006"
+        ],
+        "status": "SPEC_READY_PROVIDER_BLOCKED",
+        "style": "cinematic Indian epic storybook with traditional miniature and Kalamkari influence; exact seven-color palette; source-silent attributes remain proposals",
+        "title": "The long arm-to-arm struggle"
+      },
+      {
+        "attempts": [],
+        "canvas": {
+          "aspect_ratio": "3:4",
+          "pixel_height": 1448,
+          "pixel_width": 1086
+        },
+        "character_ids": [
+          "dm-vishnu",
+          "dm-madhu",
+          "dm-kaitabha"
+        ],
+        "composition": "Condition-satisfied state has already been established on the preceding page. Use a source-neutral, wholly non-anatomical unflooded-earth field with unspecified size, mechanism and cosmography; Viṣṇu's discus ends the threat through motion and silhouettes without gore or a precise strike locus.",
+        "exclusions": [
+          "embedded lettering",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsourced weapon",
+          "unsupported arm/head/hood count",
+          "unsupported body-locus claim",
+          "invented boon history"
+        ],
+        "iconography": "Bind every figure to the DM02 character bible; use no unsupported arm, head, hood, halo, weapon, genealogy, motive or body-locus claim.",
+        "id": "dm02-proof-full-page",
+        "kind": "FULL_PAGE_IMMERSION",
+        "review_requirements": [
+          "iconographic_accuracy",
+          "hands_and_anatomy",
+          "character_continuity",
+          "facial_consistency",
+          "scene_correctness",
+          "clipped_artwork",
+          "lettering_readability",
+          "body_locus_nonassertion"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.18,
+            "id": "dm02-proof-full-page-safe",
+            "purpose": "editable lettering",
+            "width": 0.84,
+            "x": 0.08,
+            "y": 0.06
+          }
+        ],
+        "setting": "dm02-unflooded-defeat-locus",
+        "source_boundaries": [
+          "No invented genealogy, motive, boon history or sacred quotation.",
+          "Source silence stays UNSPECIFIED and visually proposal-labeled.",
+          "The defeat locus must never be represented as Viṣṇu's thigh, lap, buttocks or another body part.",
+          "The dry-earth field is a production proposal, not source-fixed geography or an invented island.",
+          "Condition satisfaction must read before decisive discus action; do not collapse both into an ambiguous bodily tableau."
+        ],
+        "source_support": [
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-007"
+        ],
+        "status": "SPEC_READY_PROVIDER_BLOCKED",
+        "style": "cinematic Indian epic storybook with traditional miniature and Kalamkari influence; exact seven-color palette; source-silent attributes remain proposals",
+        "title": "The condition is met"
+      }
+    ],
+    "storyboard_hash": "e50ba7af25ce1c1091e83e52ddabab3568982705c0d38b87ef07dac0604971c2",
+    "version": 2
+  },
+  "schema_version": "1.0",
+  "version": 2
+}

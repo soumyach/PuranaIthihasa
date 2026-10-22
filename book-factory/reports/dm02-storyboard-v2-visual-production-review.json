@@ -1,0 +1,390 @@
+{
+  "schema_version": "1.0",
+  "kind": "DM02_STORYBOARD_V2_VISUAL_PRODUCTION_REVIEW",
+  "book_id": "DM02",
+  "result": "PASS",
+  "review_hash": "a8b2d3e54fc98b2996a9733bad2b9adf76a9c03cb0352a5fcf066a60d04f5109",
+  "reviewed_at": "2026-10-22T07:37:35Z",
+  "reviewer": {
+    "agent_id": "/root/dm04_visual_preproduction",
+    "role": "art-iconography-independent-visual-production-reviewer",
+    "independent_from_storyboard_author": true,
+    "independent_from_image_producer": true,
+    "actual_pixels_reviewed": false,
+    "scope": "Exact DM02 storyboard v2 and proof-spec v2 production-planning review; no image approval is implied."
+  },
+  "execution": {
+    "mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+    "executed": true,
+    "capability": "visual_production_review",
+    "paid_api_calls": 0,
+    "cost_minor_units": 0,
+    "image_operations_executed": 0,
+    "pdf_operations_executed": 0,
+    "external_calls_executed": 0,
+    "attestation_scope": "ORCHESTRATOR_SESSION_RECORD_NOT_CRYPTOGRAPHIC_IDENTITY"
+  },
+  "baseline": {
+    "branch": "feature/book-factory-dm02-production-optimization",
+    "commit": "36d3c4db86f0c1d0fbbf489e74f6498048c4d9e8"
+  },
+  "input_bindings": {
+    "storyboard_v2": {
+      "path": "books/DM02/storyboards/v0002.json",
+      "file_sha256": "2ffc82651274e049bf8b20c270f5abde63841fb2abc40137d935b956990069f6",
+      "record_content_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+      "payload_hash": "e50ba7af25ce1c1091e83e52ddabab3568982705c0d38b87ef07dac0604971c2",
+      "version": 2,
+      "record_id": "storyboards-230ea9bee406befd9e97b8d4"
+    },
+    "proof_specs_v2": {
+      "path": "books/DM02/proof-specs/v0002.json",
+      "file_sha256": "547b3d89985fdf809b5a2aa44d2002cdd812d443e399a685da2dd99053259d3e",
+      "record_content_hash": "9515ff2b1de2b35a7cb81c027d287db7d88f6000e71bf12c407ed0b20a16c8e2",
+      "payload_hash": "0ea4695758b55c70286f361fc53c6c03b09dc9ab92fedf485911a7800a39f974",
+      "version": 2,
+      "record_id": "proof-specs-7ceafd74d070b7d7a393c19d"
+    },
+    "manuscript_v2": {
+      "path": "books/DM02/manuscripts/v0002.json",
+      "file_sha256": "988853aadfbde1b09f080ea409b7e23772712f97e0eed42946bf7930ffe7c3a9",
+      "record_content_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"
+    },
+    "character_bible_v1": {
+      "path": "books/DM02/character-bibles/v0001.json",
+      "file_sha256": "e15e42cb62fd2c17715d1acfcf95b09d7210bebb1afe4b7a06e0fb41b4cdc791",
+      "record_content_hash": "b469d78e327da2b41082dfbb48ad51a5a98e47112eea311157b2fd7ab979a1f7"
+    },
+    "location_bible_v1": {
+      "path": "books/DM02/location-bibles/v0001.json",
+      "file_sha256": "65a6da806ac3669b321745b561e134117ce5a9aa258d405c6ef79c45fd8e4e35",
+      "record_content_hash": "33a8a7d20973eba40580261f7f274375593db356d81564dd0a55cb9c2f0a592f"
+    }
+  },
+  "validation_evidence": {
+    "immutable_storyboard_version_chain": "PASS",
+    "immutable_proof_spec_version_chain": "PASS",
+    "validate_storyboard": {
+      "result": "PASS",
+      "findings": []
+    },
+    "validate_proof_specs": {
+      "result": "PASS",
+      "findings": []
+    },
+    "storyboard_payload_hash_recomputed": "e50ba7af25ce1c1091e83e52ddabab3568982705c0d38b87ef07dac0604971c2",
+    "proof_payload_hash_recomputed": "0ea4695758b55c70286f361fc53c6c03b09dc9ab92fedf485911a7800a39f974"
+  },
+  "arithmetic_review": {
+    "result": "PASS",
+    "page_records": 24,
+    "panel_records": 44,
+    "illustrated_panel_slots": 42,
+    "distinct_new_raster_masters": 35,
+    "reframe_targets": 7,
+    "unique_reframe_master_panels": 6,
+    "deterministic_layout_only_panels": 2,
+    "maximum_retry_operations": 9,
+    "maximum_total_image_operations": 44,
+    "equations": [
+      "44 panel records = 35 new raster masters + 7 reframe targets + 2 deterministic layout-only panels",
+      "42 illustrated panel slots = 35 new raster masters + 7 reframe targets",
+      "44 maximum image operations = 35 initial master operations + 9 retry reserve"
+    ],
+    "classification_counts": {
+      "ESSENTIAL_NEW_ART": 35,
+      "REFRAME_EXISTING_ART": 7,
+      "REUSE_EXISTING_ART": 2
+    },
+    "consistency": "The optimization_plan fields and all 44 panel production_plan records agree with these counts."
+  },
+  "reframe_review": {
+    "result": "PASS",
+    "conditionality": "Every target is a proposed future crop or reframe. No existing approved pixel asset is claimed, approval does not inherit from a master, and each target has an explicit fallback to a separately authorized new generation if actual pixels do not support the crop.",
+    "unique_master_panel_ids": [
+      "p05-panel-01",
+      "p08-panel-01",
+      "p17-panel-01",
+      "p18-panel-01",
+      "p19-panel-01",
+      "p22-panel-01"
+    ],
+    "targets": [
+      {
+        "target_panel_id": "p05-panel-02",
+        "master_panel_id": "p05-panel-01",
+        "result": "PASS",
+        "support": "The high-resolution vertical master explicitly requires Brahma to remain readable in a medium lotus-level crop; target and master share the Brahma-lotus location and the same instant.",
+        "pixel_gate": "Confirm exact Brahma identity, face and source-silent arm/head treatment at crop resolution."
+      },
+      {
+        "target_panel_id": "p05-panel-03",
+        "master_panel_id": "p05-panel-01",
+        "result": "PASS",
+        "support": "The master explicitly preserves an unoccupied still-water interval for the narrow danger crop; the target adds no character or later action.",
+        "pixel_gate": "Reject the crop if the water interval is too detailed for lettering or implies an invented island or attacker form."
+      },
+      {
+        "target_panel_id": "p08-panel-02",
+        "master_panel_id": "p08-panel-01",
+        "result": "PASS",
+        "support": "The master explicitly preserves a close crop of Brahma in gathered attention and a separate protected lettering field in the same invocation instant.",
+        "pixel_gate": "Confirm the crop excludes the distant figures without creating unsupported halo, weapon or multiplicity detail."
+      },
+      {
+        "target_panel_id": "p17-panel-02",
+        "master_panel_id": "p17-panel-01",
+        "result": "PASS",
+        "support": "The wide three-person boon-offer master keeps Vishnu fully readable for the quieter reaction hold while retaining both joint boon-givers.",
+        "pixel_gate": "Confirm all three required identities remain readable and the reframe does not invent motive or a victory ritual."
+      },
+      {
+        "target_panel_id": "p18-panel-02",
+        "master_panel_id": "p18-panel-01",
+        "result": "PASS",
+        "support": "The master specification deliberately keeps all three figures and unbroken flood visible beyond the tighter dialogue use, allowing the target to use the wider extent of the same high-resolution canvas after the words.",
+        "pixel_gate": "Because the displayed master slot is described as medium and the target as wide, actual pixels must prove that the uncropped master includes sufficient surrounding flood; otherwise promote the target to separately authorized new art."
+      },
+      {
+        "target_panel_id": "p19-panel-02",
+        "master_panel_id": "p19-panel-01",
+        "result": "PASS",
+        "support": "The wide condition master explicitly keeps Madhu and Kaitabha jointly readable for the balanced two-shot crop, before any dry place or bodily solution is shown.",
+        "pixel_gate": "Confirm neither demon is lost, merged or replaced and the crop retains their joint condition rather than an outside boon-giver."
+      },
+      {
+        "target_panel_id": "p22-panel-02",
+        "master_panel_id": "p22-panel-01",
+        "result": "PASS",
+        "support": "The return-to-frame master explicitly retains sufficient fire-and-tree detail for the character-free closing crop in the same hermitage instant.",
+        "pixel_gate": "Confirm the close crop contains no residual figure fragment, new doctrinal symbol or next-book hook."
+      }
+    ]
+  },
+  "layout_only_review": {
+    "result": "PASS",
+    "panels": [
+      {
+        "page_number": 23,
+        "panel_id": "p23-panel-01",
+        "classification": "REUSE_EXISTING_ART",
+        "asset_source": "DETERMINISTIC_TYPOGRAPHY_AND_SERIES_ORNAMENT_RULES",
+        "requires_new_raster_generation": false,
+        "existing_approved_pixel_asset": null,
+        "assessment": "Source-note back matter is text-led deterministic layout with a restrained forest-frame border, not a scene image or inherited character/location approval."
+      },
+      {
+        "page_number": 24,
+        "panel_id": "p24-panel-01",
+        "classification": "REUSE_EXISTING_ART",
+        "asset_source": "DETERMINISTIC_TYPOGRAPHY_AND_SERIES_ORNAMENT_RULES",
+        "requires_new_raster_generation": false,
+        "existing_approved_pixel_asset": null,
+        "assessment": "Editorial family reflection is text-led deterministic layout with fire-and-tree ornament only and no implied scriptural status."
+      }
+    ],
+    "campaign_rule": "Neither panel may become an image-generation unit. Their long editable text uses full-page back-matter layout; the image safe strip is not a claim that all back-matter text fits inside the strip."
+  },
+  "safe_region_review": {
+    "result": "PASS",
+    "storyboard_page_regions": {
+      "count": 24,
+      "geometry": {
+        "x": 0.07,
+        "y": 0.05,
+        "width": 0.86,
+        "height": 0.2
+      },
+      "purpose": "primary lettering"
+    },
+    "storyboard_panel_regions": {
+      "count": 44,
+      "geometry": {
+        "x": 0.08,
+        "y": 0.06,
+        "width": 0.84,
+        "height": 0.18
+      },
+      "purpose": "lettering separation"
+    },
+    "proof_regions": {
+      "count": 4,
+      "geometry": {
+        "x": 0.08,
+        "y": 0.06,
+        "width": 0.84,
+        "height": 0.18
+      },
+      "purpose": "editable lettering"
+    },
+    "bounds_check": "All 72 declared rectangles have positive area and remain inside normalized canvas bounds.",
+    "production_condition": "Prompted geometry is specification evidence, not pixel evidence. Every one of the 42 illustrated slots must be independently inspected for an actually empty, low-detail top region before lettering; dense pages 7, 9, 10, 11 and 16 require page-specific typesetting fit checks."
+  },
+  "immersive_page_review": {
+    "result": "PASS",
+    "declared_full_page_numbers": [3, 4, 6, 9, 11, 15, 21],
+    "actual_full_page_numbers": [3, 4, 6, 9, 11, 15, 21],
+    "pages": [
+      {
+        "page_number": 3,
+        "panel_id": "p03-panel-01",
+        "title": "Water Without Shore",
+        "assessment": "Unique new master preserves scale and shoreless dissolution without unsourced landmarks."
+      },
+      {
+        "page_number": 4,
+        "panel_id": "p04-panel-01",
+        "title": "Sleep Beyond the World",
+        "assessment": "Unique new master locks Vishnu, Shesha and Yoganidra's non-anatomical sleep field without fixed source-silent counts."
+      },
+      {
+        "page_number": 6,
+        "panel_id": "p06-panel-01",
+        "title": "The Threat at the Lotus",
+        "assessment": "Unique new master carries origin, threat direction and lotus geography without anatomical gore or invented armies."
+      },
+      {
+        "page_number": 9,
+        "panel_id": "p09-panel-01",
+        "title": "Brahma's Hymn",
+        "assessment": "Unique new master preserves attributed hymn-praise and requires actual-pixel plus dense-lettering review."
+      },
+      {
+        "page_number": 11,
+        "panel_id": "p11-panel-01",
+        "title": "When Sleep Stood Apart",
+        "assessment": "Unique new master and proof-first gate preserve the six exact withdrawal groups and separate appeared presence without permanent-residence implication."
+      },
+      {
+        "page_number": 15,
+        "panel_id": "p15-panel-01",
+        "title": "Five Thousand Years",
+        "assessment": "Unique new master carries duration nonliterally without duplicated bodies, clocks, armies or injury."
+      },
+      {
+        "page_number": 21,
+        "panel_id": "p21-panel-01",
+        "title": "Where the Earth Was Not Flooded",
+        "assessment": "Unique new master and proof-first gate separate condition satisfaction from the non-graphic sourced discus action and leave the bodily locus unresolved."
+      }
+    ]
+  },
+  "p20_p21_sequence_review": {
+    "result": "PASS",
+    "page_20": {
+      "role": "Establish and verify the condition-satisfied state before decisive action.",
+      "panels": ["p20-panel-01", "p20-panel-02"],
+      "guards": [
+        "The unflooded-earth field remains wholly separate from every body.",
+        "Size, mechanism and cosmography remain unspecified and proposal-labeled.",
+        "No discus strike, anatomical platform, thigh, lap, buttocks or precise locus is shown."
+      ]
+    },
+    "page_21": {
+      "role": "Show the sourced discus ending the threat only after the condition is visibly established.",
+      "panel": "p21-panel-01",
+      "guards": [
+        "The dry field remains wholly separate from every body.",
+        "Motion and silhouettes carry the non-graphic defeat.",
+        "No wound, impact point or bodily defeat locus is asserted."
+      ]
+    },
+    "continuity": "Page 20 continuity_out is after-page-20 and page 21 continuity_in is after-page-20; the full-page proof spec explicitly requires the preceding condition-satisfied page."
+  },
+  "proof_first_review": {
+    "result": "PASS",
+    "ordered_panel_ids": [
+      "p01-panel-01",
+      "p11-panel-01",
+      "p14-panel-01",
+      "p21-panel-01"
+    ],
+    "ordered_proof_alignment": [
+      {
+        "panel_id": "p01-panel-01",
+        "proof_id": "dm02-proof-quiet-conversation",
+        "kind": "QUIET_CONVERSATION"
+      },
+      {
+        "panel_id": "p11-panel-01",
+        "proof_id": "dm02-proof-divine-reveal",
+        "kind": "DIVINE_REVEAL"
+      },
+      {
+        "panel_id": "p14-panel-01",
+        "proof_id": "dm02-proof-battle",
+        "kind": "BATTLE"
+      },
+      {
+        "panel_id": "p21-panel-01",
+        "proof_id": "dm02-proof-full-page",
+        "kind": "FULL_PAGE_IMMERSION"
+      }
+    ],
+    "proof_package_state": {
+      "provider_status": "BLOCKED_PROVIDER",
+      "spec_count": 4,
+      "attempt_count": 0,
+      "approval_count": 0,
+      "storyboard_hash": "e50ba7af25ce1c1091e83e52ddabab3568982705c0d38b87ef07dac0604971c2"
+    },
+    "execution_rule": "Run and independently review these four proof-first units in this order before authorizing later masters. No proof or style approval exists yet."
+  },
+  "lineage_review": {
+    "result": "PASS",
+    "storyboard_parent_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+    "storyboard_v1_file_sha256": "c1b548799c8cfdd01c94f2f463bcb0219aa086f531089873f51894fce456f9bb",
+    "page_lineage": "All 24 pages identify the v1 storyboard record hash and PAGE_RECORD_RETAINED.",
+    "panel_lineage": "All 44 panels identify the v1 storyboard record hash, their exact original panel id and RETAINED_PANEL_SPECIFICATION.",
+    "proof_parent_record_hash": "38ccd93cfe00915a978c27e6be701ce481236c0f6fdb37010781a0e67a97044c",
+    "proof_v1_file_sha256": "7152d9e53a0a7468b62e71b6afbaaca00693c609626520f99daf266599337b80",
+    "proof_storyboard_binding": "Proof-spec v2 binds the exact storyboard-v2 payload hash e50ba7af25ce1c1091e83e52ddabab3568982705c0d38b87ef07dac0604971c2."
+  },
+  "campaign_readiness": {
+    "result": "PASS",
+    "status": "READY_TO_FREEZE_NEW_V2_CAMPAIGN_NOT_READY_TO_EXECUTE",
+    "current_campaign_assessment": {
+      "campaign_hash": "5afc3beed39e3a79a40e768f172c188691ef6cbf5d5938eca229c49aabb0fcf4",
+      "file_sha256": "8e3a3d5ee5437f0d7e9f44a3b228ac6674f2250216a7e335f3a0173a30247c7d",
+      "status": "AWAITING_CAMPAIGN_AUTHORIZATION",
+      "counts": "44 initial generations and 88 maximum operations",
+      "decision": "DO_NOT_AUTHORIZE_OR_RESUME_FOR_V2",
+      "reason": "It predates the optimized v2 records, does not bind the v2 storyboard or proof-spec hashes, treats all 44 panels as generation units and includes the two deterministic back-matter pages."
+    },
+    "new_campaign_contract": {
+      "storyboard_record_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+      "storyboard_payload_hash": "e50ba7af25ce1c1091e83e52ddabab3568982705c0d38b87ef07dac0604971c2",
+      "proof_spec_record_hash": "9515ff2b1de2b35a7cb81c027d287db7d88f6000e71bf12c407ed0b20a16c8e2",
+      "new_master_units": 35,
+      "conditional_reframe_targets": 7,
+      "layout_only_panels": 2,
+      "retry_reserve": 9,
+      "maximum_image_operations": 44,
+      "suggested_batch_size": 4,
+      "proof_first_panel_ids": [
+        "p01-panel-01",
+        "p11-panel-01",
+        "p14-panel-01",
+        "p21-panel-01"
+      ]
+    },
+    "execution_gates": [
+      "Persist a new campaign that binds the exact v2 record and payload hashes and excludes p23-panel-01 and p24-panel-01 from image operations.",
+      "Obtain exact current-session campaign authorization; this review is not authorization.",
+      "Resolve the BLOCKED_PROVIDER state before any proof or image operation.",
+      "Generate and independently inspect the four proof-first units before scaling beyond them.",
+      "Treat every reframe as conditional on actual master pixels; promote a failed crop only under new exact authorization.",
+      "Run actual-pixel safe-region, identity, anatomy, source and continuity review on every illustrated slot.",
+      "Do not claim character, location, proof or style approval: all existing_approved_pixel_asset fields are null and approval_records is empty."
+    ]
+  },
+  "non_blocking_observations": [
+    "The uniform safe rectangles are valid planning geometry but cannot guarantee that a generated image leaves them empty; actual-pixel review remains mandatory.",
+    "The p18-panel-02 wider reframe is acceptable only because the p18-panel-01 master specification explicitly asks the underlying high-resolution canvas to retain the surrounding flood; this is the most crop-sensitive of the seven targets.",
+    "Pages 7, 9, 10, 11 and 16 have relatively dense lettering and need page-specific fit checks after art placement; pages 23 and 24 instead use full-page editable back-matter layout.",
+    "PASS means the exact v2 planning records are coherent and ready to freeze into a new campaign. It does not mean the stale v1 campaign is usable, a provider is available, a spend is authorized, pixels exist or publication is ready."
+  ],
+  "findings": [],
+  "authoritative_inputs_modified": false,
+  "media_generated": false
+}

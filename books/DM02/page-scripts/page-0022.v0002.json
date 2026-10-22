@@ -1,0 +1,246 @@
+{
+  "character_ids": [
+    "dm-medhas",
+    "dm-suratha",
+    "dm-samadhi"
+  ],
+  "continuity_in": "after-page-21",
+  "continuity_out": "after-page-22",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-medhas",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-suratha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-samadhi",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-007"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "TWO_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p22-narration",
+      "placement": "caption-safe-region",
+      "text": "Brahma was safe. Vishnu stood awake above the cosmic waters. Yoganidra’s withdrawal had made his awakening possible, and her power had turned the demons’ pride toward the boon that ended them.\n\nSage Medhas let the struggle come to rest.\n\nThe danger at the lotus was over."
+    }
+  ],
+  "lineage": {
+    "original_page_id": "page-d22f4a199dc41892b93a95e8",
+    "original_page_number": 22,
+    "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+    "transformation": "PAGE_RECORD_RETAINED"
+  },
+  "location_id": "dm02-forest-hermitage-frame",
+  "moment_ids": [
+    "resolved_return_to_frame"
+  ],
+  "narrative_beats": [
+    "Brahma was safe. Vishnu stood awake above the cosmic waters. Yoganidra’s withdrawal had made his awakening possible, and her power had turned the demons’ pride toward the boon that ended them.",
+    "Sage Medhas let the struggle come to rest.",
+    "The danger at the lotus was over."
+  ],
+  "page_id": "page-d22f4a199dc41892b93a95e8",
+  "page_number": 22,
+  "panel_count": 2,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-medhas",
+        "dm-suratha",
+        "dm-samadhi"
+      ],
+      "composition": "High-resolution return-to-frame master: restore the same hermitage geometry as Medhas lets the account rest, keep Suratha and Samādhi neutral, and retain sufficient fire-and-tree detail for a quiet closing crop without a new doctrinal symbol.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p22-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "High-resolution return-to-frame master: restore the same hermitage geometry as Medhas lets the account rest, keep Suratha and Samādhi neutral, and retain sufficient fire-and-tree detail for a quiet closing crop without a new doctrinal symbol.",
+        "shot_scale": "wide"
+      },
+      "lineage": {
+        "original_panel_ids": [
+          "p22-panel-01"
+        ],
+        "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+        "transformation": "RETAINED_PANEL_SPECIFICATION"
+      },
+      "location_id": "dm02-forest-hermitage-frame",
+      "production_plan": {
+        "asset_source": "NEW_RASTER_MASTER",
+        "classification": "ESSENTIAL_NEW_ART",
+        "existing_approved_pixel_asset": null,
+        "independent_pixel_review_required": true,
+        "master_panel_id": "p22-panel-01",
+        "rationale": "A distinct master is required for the retained narrative state or safe reusable framing.",
+        "requires_new_raster_generation": true
+      },
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p22-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "High-resolution return-to-frame master: restore the same hermitage geometry as Medhas lets the account rest, keep Suratha and Samādhi neutral, and retain sufficient fire-and-tree detail for a quiet closing crop without a new doctrinal symbol."
+    },
+    {
+      "character_ids": [],
+      "composition": "Close on the low fire settling beneath a protected final caption field; no next-book hook or new doctrinal symbol.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p22-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Close on the low fire settling beneath a protected final caption field; no next-book hook or new doctrinal symbol.",
+        "shot_scale": "close"
+      },
+      "lineage": {
+        "original_panel_ids": [
+          "p22-panel-02"
+        ],
+        "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+        "transformation": "RETAINED_PANEL_SPECIFICATION"
+      },
+      "location_id": "dm02-forest-hermitage-frame",
+      "production_plan": {
+        "asset_source": "FUTURE_SHARED_MASTER_IF_EXACT_PIXEL_REVIEW_PASSES",
+        "classification": "REFRAME_EXISTING_ART",
+        "existing_approved_pixel_asset": null,
+        "fallback": "PROMOTE_TO_NEW_GENERATION_ONLY_UNDER_NEW_EXACT_AUTHORIZATION",
+        "independent_pixel_review_required": true,
+        "master_panel_id": "p22-panel-01",
+        "rationale": "The adjacent slot is a crop/reframe of the same moment; approval never inherits from the master.",
+        "requires_new_raster_generation": false
+      },
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p22-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Close on the low fire settling beneath a protected final caption field; no next-book hook or new doctrinal symbol."
+    }
+  ],
+  "reading_order": [
+    "p22-panel-01",
+    "p22-panel-02"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p22-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-007-c",
+    "claim-007-d",
+    "claim-007-e"
+  ],
+  "title": "The Danger Ends",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation",
+    "no unsupported iconography",
+    "no unsupported body-locus claim"
+  ],
+  "version": 1,
+  "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+}
