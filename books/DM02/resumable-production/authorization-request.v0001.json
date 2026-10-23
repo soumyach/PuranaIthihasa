@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "request_type": "PRODUCTION_CAMPAIGN_AUTHORIZATION",
+  "status": "AWAITING_CAMPAIGN_AUTHORIZATION",
+  "approval_type": "PRODUCTION_CAMPAIGN",
+  "subject_type": "PRODUCTION_CAMPAIGN",
+  "subject_hash": "820c1d0371f19ec0e44a5000c3012f29aab1e05501802ef324078841657211cd",
+  "scope": {
+    "type": "book",
+    "id": "DM02"
+  },
+  "campaign_id": "dm02-resumable-production-batch-01",
+  "campaign_request_path": "books/DM02/resumable-production/campaign-request.v0001.json",
+  "authorization_not_yet_received": true,
+  "approval_record_created": false,
+  "exact_authorization_requested": "I authorize the private DM02 campaign subject 820c1d0371f19ec0e44a5000c3012f29aab1e05501802ef324078841657211cd for exactly the four listed operations, at most one operation per unit, no retries, using only built-in Codex image generation under the included-allowance-first and zero-authorized-paid-spend conditions recorded in the campaign request. I do not authorize Page 11, any additional unit, publication, deployment, push or merge.",
+  "conditions": [
+    "BUILT_IN_CODEX_IMAGE_TOOL_ONLY",
+    "EXACT_SUBMITTED_REFERENCE_RECEIPTS_REQUIRED",
+    "FOUR_OPERATIONS_TOTAL_CEILING",
+    "INCLUDED_ALLOWANCE_FIRST",
+    "INDEPENDENT_ACTUAL_PIXEL_REVIEW_REQUIRED",
+    "NO_API_KEY",
+    "NO_AUTOMATIC_CREDIT_PURCHASE",
+    "NO_INTENTIONAL_PURCHASED_CREDIT_CONSUMPTION",
+    "NO_RETRIES",
+    "NO_SEPARATELY_BILLED_EXTERNAL_PROVIDER",
+    "NO_WORKSPACE_OVERAGE_AUTHORIZED",
+    "PAGE_11_EXCLUDED_AND_ESCALATED",
+    "PRIOR_CAMPAIGN_COUNTERS_UNCHANGED",
+    "PRIVATE_INTERNAL_ONLY",
+    "PUBLICATION_PUSH_MERGE_DEPLOY_REMAIN_BLOCKED",
+    "STOP_IF_PAID_AUTHORIZATION_REQUESTED",
+    "ZERO_INCREMENTAL_USD_NOT_TECHNICALLY_GUARANTEED"
+  ],
+  "units": [
+    "page-71e9de766bf786cb9499a31b--p01-panel-02",
+    "page-88792a15dcd25b30d3982d7c--p02-panel-01",
+    "page-88792a15dcd25b30d3982d7c--p02-panel-02",
+    "page-a694d4c3702975edfdceb0c5--p03-panel-01"
+  ],
+  "integrity_note": "This is an authorization request, not an approval record. It must not be imported or treated as PASS until the authorized human user explicitly approves the exact subject hash."
+}

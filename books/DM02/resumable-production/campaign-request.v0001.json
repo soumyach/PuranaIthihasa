@@ -1,0 +1,295 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "dm02-resumable-production-batch-01",
+  "book_id": "DM02",
+  "purpose": "PRIVATE_INTERNAL_CONTIGUOUS_PAGES_1_TO_3_PRODUCTION_BATCH",
+  "status": "AWAITING_CAMPAIGN_AUTHORIZATION",
+  "created_at": "2026-10-23T00:00:00Z",
+  "baseline": {
+    "branch": "feature/book-factory-dm02-corrective-proofs",
+    "commit": "7335973fa9f7e3a3104d388b060ec565807a57d1"
+  },
+  "locked_inputs": {
+    "manuscript": {
+      "path": "books/DM02/manuscripts/v0002.json",
+      "content_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+      "sha256": "988853aadfbde1b09f080ea409b7e23772712f97e0eed42946bf7930ffe7c3a9"
+    },
+    "storyboard": {
+      "path": "books/DM02/storyboards/v0002.json",
+      "content_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+      "sha256": "2ffc82651274e049bf8b20c270f5abde63841fb2abc40137d935b956990069f6"
+    },
+    "story_packet": {
+      "path": "books/DM02/story-packets/b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd.json",
+      "sha256": "63195c77c26e324af9809f1cfde80131108d655b550ce137115e3337b3f84e84"
+    },
+    "rules": {
+      "path": "MYTHOLOGY_COMIC_RULES.md",
+      "sha256": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070"
+    },
+    "character_bible": {
+      "path": "books/DM02/character-bibles/v0001.json",
+      "sha256": "e15e42cb62fd2c17715d1acfcf95b09d7210bebb1afe4b7a06e0fb41b4cdc791",
+      "status": "TEXTUAL_PROPOSALS_NOT_CANONICAL_PIXEL_REFERENCES"
+    },
+    "location_bible": {
+      "path": "books/DM02/location-bibles/v0001.json",
+      "sha256": "65a6da806ac3669b321745b561e134117ce5a9aa258d405c6ef79c45fd8e4e35",
+      "status": "TEXTUAL_PROPOSALS_NOT_CANONICAL_PIXEL_REFERENCES"
+    },
+    "unit_readiness": {
+      "path": "books/DM02/resumable-production/unit-readiness.v0001.json",
+      "sha256": "44e3cda1c604d716fe862271f3a40cc0247bf00cb3d885de96e76e2d3c3cc507"
+    }
+  },
+  "authorization_subject": {
+    "schema_version": "1.0",
+    "book_id": "DM02",
+    "campaign_id": "dm02-resumable-production-batch-01",
+    "purpose": "PRIVATE_INTERNAL_CONTIGUOUS_PAGES_1_TO_3_PRODUCTION_BATCH",
+    "provider_id": "codex-built-in-image-gen",
+    "included_allowance_first": true,
+    "api_key_authorized": false,
+    "external_provider_authorized": false,
+    "purchased_credits_authorized": false,
+    "automatic_credit_purchase_authorized": false,
+    "workspace_overage_authorized": false,
+    "maximum_paid_spend_minor_units": 0,
+    "currency": "USD",
+    "zero_incremental_usd_guaranteed": false,
+    "maximum_image_operations": 4,
+    "maximum_operations_per_unit": 1,
+    "retries_authorized": false,
+    "publication_authorized": false,
+    "push_merge_deploy_authorized": false,
+    "independent_actual_pixel_review_required": true,
+    "page_11_excluded": true,
+    "stop_if": [
+      "PAID_BILLING_AUTHORIZATION_REQUESTED",
+      "PURCHASED_CREDIT_USE_REQUESTED",
+      "EXTERNAL_PROVIDER_OR_API_KEY_REQUIRED",
+      "INCLUDED_ALLOWANCE_UNAVAILABLE",
+      "EXACT_REFERENCE_INPUT_CANNOT_BE_SUBMITTED",
+      "SOURCE_OR_PRIVATE_PRODUCTION_CLEARANCE_MISSING",
+      "OPERATION_CEILING_REACHED"
+    ],
+    "units": [
+      {
+        "unit_id": "page-71e9de766bf786cb9499a31b--p01-panel-02",
+        "page_script_hash": "f5767c345c8bd76643b3d86a2e823fb5ced8e8460fb0440ace884b89e3c434ef",
+        "prompt_sha256": "75e5e8d0d962461709d0cc009f587d372d62bfd09d2b2ec247f9acec985dc23c",
+        "reference_sha256": [
+          "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+          "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d",
+          "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27"
+        ],
+        "operation": "generate_with_reference_conditioning",
+        "operation_ceiling": 1,
+        "retry_ceiling": 0,
+        "expected_dimensions": [1086, 1448]
+      },
+      {
+        "unit_id": "page-88792a15dcd25b30d3982d7c--p02-panel-01",
+        "page_script_hash": "016c09bf6a7eda2fa9e6942891f20fc3489643390a548935855056912d121d84",
+        "prompt_sha256": "a02f1b4ff8c4fac06d958a4e1d56f3d66363fdfd1ed90f2191ac33b3d62d9cef",
+        "reference_sha256": [
+          "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+          "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d",
+          "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27"
+        ],
+        "operation": "generate_with_reference_conditioning",
+        "operation_ceiling": 1,
+        "retry_ceiling": 0,
+        "expected_dimensions": [1086, 1448]
+      },
+      {
+        "unit_id": "page-88792a15dcd25b30d3982d7c--p02-panel-02",
+        "page_script_hash": "016c09bf6a7eda2fa9e6942891f20fc3489643390a548935855056912d121d84",
+        "prompt_sha256": "ba414169a8543eed0b2113b261a67ba375445c0cebd360896241b28860301472",
+        "reference_sha256": [
+          "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+          "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d",
+          "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27"
+        ],
+        "operation": "generate_with_reference_conditioning",
+        "operation_ceiling": 1,
+        "retry_ceiling": 0,
+        "expected_dimensions": [1086, 1448]
+      },
+      {
+        "unit_id": "page-a694d4c3702975edfdceb0c5--p03-panel-01",
+        "page_script_hash": "3792be0fdd214746bab437f1c636b55c24812e1144896b707dc4d05078ee0135",
+        "prompt_sha256": "8e9d002758a71631fd841d24bb22d801b0adde3580cd8953d1a198e7de6d2b11",
+        "reference_sha256": [
+          "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+          "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+        ],
+        "operation": "generate_with_reference_conditioning",
+        "operation_ceiling": 1,
+        "retry_ceiling": 0,
+        "expected_dimensions": [1086, 1448]
+      }
+    ]
+  },
+  "authorization_subject_hash": "820c1d0371f19ec0e44a5000c3012f29aab1e05501802ef324078841657211cd",
+  "operations": [
+    {
+      "operation_order": 1,
+      "unit_id": "page-71e9de766bf786cb9499a31b--p01-panel-02",
+      "page_number": 1,
+      "page_id": "page-71e9de766bf786cb9499a31b",
+      "panel_id": "p01-panel-02",
+      "source_event": {
+        "event_id": "dm-event-004",
+        "bounded_action": "Medhas opens the primordial account and distinguishes the eternal Goddess from her purposeful appearances."
+      },
+      "required_visual_action": "Medium speaker-anchored view of Medhas beginning the distinction, with Suratha and Samadhi present in quiet profile and the upper field reserved for separate lettering.",
+      "method": "GENERATE_NEW_RASTER_MASTER_WITH_REFERENCE_CONDITIONING",
+      "expected_output": {"width": 1086, "height": 1448, "aspect_ratio": "3:4", "text_in_image": false},
+      "prompt": "Generate one new portrait 3:4 raster master for DM02 Page 1 panel p01-panel-02. Show a medium, speaker-anchored view of aged Sage Medhas in bark-brown and warm ivory beginning the account, with Suratha in a muted peacock-blue travel cloak and Samadhi in plain earth-toned garments present in quiet profile. Preserve neutral attentive expressions, modest classical Indian clothing, coherent anatomy, the low forest-hermitage fire and the established dusk lighting. Leave the complete normalized upper safe region x 0.08 to 0.92 and y 0.06 to 0.24 calm for later editable lettering. Do not render text, a halo, a crown or weapon, a modern object, an invented reaction, a doctrinal symbol, a supernatural event, or a watermark. REFERENCE A supplies only premium Khatakshetra painterly finish, warm devotional lighting and series polish; transfer no characters, plot, theology or text. REFERENCE B supplies only printed-page cinematic hierarchy and panel readability; transfer no DM08 character, weapon, event or lettering. REFERENCE C is the existing DM02 Page 1 proof and is a reviewed proposal-level continuity candidate, not a promoted canonical character or setting reference; preserve only Medhas, Suratha, Samadhi, the low fire, tree-frame relationship and palette already visible there. Do not copy its wide camera or obstructed lettering band. Produce exactly one image and no variant.",
+      "prompt_sha256": "75e5e8d0d962461709d0cc009f587d372d62bfd09d2b2ec247f9acec985dc23c",
+      "references": [
+        {"input_index": 1, "role": "A_SERIES_VISUAL_IDENTITY", "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png", "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b", "content_transfer": "STYLE_ONLY_CONTENT_FORBIDDEN"},
+        {"input_index": 2, "role": "B_PAGE_PANEL_COMPOSITION", "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png", "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d", "content_transfer": "HIERARCHY_ONLY_CONTENT_FORBIDDEN"},
+        {"input_index": 3, "role": "C_SUPPORTING_CHARACTER_AND_SETTING_CONTINUITY_CANDIDATE_NOT_CANONICAL", "path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png", "sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27", "review_path": "books/DM02/visual-proof-reviews/p01-panel-01/v0001.json", "approval_status": "REVIEWED_FIX_FOR_LETTERING_NOT_PROMOTED", "content_transfer": "IDENTITY_AND_FOREST_FRAME_PROPOSAL_ONLY"}
+      ],
+      "unavailable_reference_roles": ["D_APPROVED_ENVIRONMENT_REFERENCE"],
+      "character_references": ["dm-medhas", "dm-suratha", "dm-samadhi"],
+      "environment_reference": "dm02-forest-hermitage-frame",
+      "private_production_clearance": "SOURCE_BOUNDED_PRIVATE_DRAFT_ONLY_PUBLICATION_BLOCKED",
+      "retry_budget": 0,
+      "independent_review_criteria": ["source fidelity", "character identity continuity without canonical promotion", "neutral listener affect", "cultural authenticity", "anatomical coherence", "forest-frame continuity", "Gold Standard alignment", "complete lettering-safe region", "no embedded text or watermark"]
+    },
+    {
+      "operation_order": 2,
+      "unit_id": "page-88792a15dcd25b30d3982d7c--p02-panel-01",
+      "page_number": 2,
+      "page_id": "page-88792a15dcd25b30d3982d7c",
+      "panel_id": "p02-panel-01",
+      "source_event": {"event_id": "dm-event-004", "bounded_action": "Medhas's account transitions from the forest frame to the dissolution of the world."},
+      "required_visual_action": "Close view of Medhas's open hand above the low fire; smoke and navy negative space begin the transition without becoming a supernatural source claim.",
+      "method": "GENERATE_NEW_RASTER_MASTER_WITH_REFERENCE_CONDITIONING",
+      "expected_output": {"width": 1086, "height": 1448, "aspect_ratio": "3:4", "text_in_image": false},
+      "prompt": "Generate one new portrait 3:4 raster master for DM02 Page 2 panel p02-panel-01. Show a close, anatomically coherent view of Sage Medhas's open narration hand above the same low hermitage fire. Let ordinary smoke and deep navy negative space create a visual transition toward the coming dissolution story, but do not make the smoke a deity, portal, vision, magical emission or source claim. Preserve the Page 1 proposal-level bark-brown and warm-ivory clothing, fire direction and dusk forest palette. Leave the complete normalized upper safe region x 0.08 to 0.92 and y 0.06 to 0.24 calm for later editable lettering. Do not render text, faces not required by the crop, extra fingers, sacred emblems, supernatural figures, modern objects or a watermark. REFERENCE A supplies only premium Khatakshetra painterly finish and series polish. REFERENCE B supplies only cinematic close-view hierarchy and readable negative space. REFERENCE C is the existing DM02 Page 1 proof, a reviewed proposal-level continuity candidate rather than an approved canonical reference; preserve only Medhas's clothing palette, the low fire and forest lighting. Produce exactly one image and no variant.",
+      "prompt_sha256": "a02f1b4ff8c4fac06d958a4e1d56f3d66363fdfd1ed90f2191ac33b3d62d9cef",
+      "references": [
+        {"input_index": 1, "role": "A_SERIES_VISUAL_IDENTITY", "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png", "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b", "content_transfer": "STYLE_ONLY_CONTENT_FORBIDDEN"},
+        {"input_index": 2, "role": "B_PAGE_PANEL_COMPOSITION", "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png", "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d", "content_transfer": "HIERARCHY_ONLY_CONTENT_FORBIDDEN"},
+        {"input_index": 3, "role": "C_SUPPORTING_CHARACTER_AND_SETTING_CONTINUITY_CANDIDATE_NOT_CANONICAL", "path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png", "sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27", "review_path": "books/DM02/visual-proof-reviews/p01-panel-01/v0001.json", "approval_status": "REVIEWED_FIX_FOR_LETTERING_NOT_PROMOTED", "content_transfer": "CLOTHING_FIRE_AND_LIGHT_PROPOSAL_ONLY"}
+      ],
+      "unavailable_reference_roles": ["D_APPROVED_ENVIRONMENT_REFERENCE"],
+      "character_references": ["dm-medhas"],
+      "environment_reference": "dm02-forest-hermitage-frame",
+      "private_production_clearance": "SOURCE_BOUNDED_PRIVATE_DRAFT_ONLY_PUBLICATION_BLOCKED",
+      "retry_budget": 0,
+      "independent_review_criteria": ["source-neutral transition", "Medhas continuity without canonical promotion", "hand anatomy", "ordinary smoke rather than supernatural claim", "forest fire and light continuity", "Gold Standard alignment", "complete lettering-safe region", "no embedded text or watermark"]
+    },
+    {
+      "operation_order": 3,
+      "unit_id": "page-88792a15dcd25b30d3982d7c--p02-panel-02",
+      "page_number": 2,
+      "page_id": "page-88792a15dcd25b30d3982d7c",
+      "panel_id": "p02-panel-02",
+      "source_event": {"event_id": "dm-event-004", "bounded_action": "The narrative leaves the remembered world and enters the dissolution account."},
+      "required_visual_action": "Wide frame of the three listeners reduced to silhouettes as the dark upper field opens toward the dissolution sequence; no invented listener reaction.",
+      "method": "GENERATE_NEW_RASTER_MASTER_WITH_REFERENCE_CONDITIONING",
+      "expected_output": {"width": 1086, "height": 1448, "aspect_ratio": "3:4", "text_in_image": false},
+      "prompt": "Generate one new portrait 3:4 raster master for DM02 Page 2 panel p02-panel-02. Show the established forest-hermitage listening triangle in a wide, quiet transition: Medhas, Suratha and Samadhi reduce to clearly separated silhouettes around the low fire while the dark upper field opens visually toward the next dissolution sequence. Keep all three postures neutral and attentive, preserve the existing proposal-level left-right identities and low-fire geometry, and do not depict a portal, deity, vision, dramatic reaction or invented event. Leave the complete normalized upper safe region x 0.08 to 0.92 and y 0.06 to 0.24 calm for later editable lettering. Do not render text, weapons, crowns, halos, modern objects, doctrinal symbols or a watermark. REFERENCE A supplies only premium Khatakshetra painterly finish and series polish. REFERENCE B supplies only wide-panel hierarchy and transition rhythm. REFERENCE C is the existing DM02 Page 1 proof, a reviewed proposal-level continuity candidate rather than an approved canonical reference; preserve only the three identities' relative positions, low fire, tree frame and dusk palette. Produce exactly one image and no variant.",
+      "prompt_sha256": "ba414169a8543eed0b2113b261a67ba375445c0cebd360896241b28860301472",
+      "references": [
+        {"input_index": 1, "role": "A_SERIES_VISUAL_IDENTITY", "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png", "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b", "content_transfer": "STYLE_ONLY_CONTENT_FORBIDDEN"},
+        {"input_index": 2, "role": "B_PAGE_PANEL_COMPOSITION", "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png", "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d", "content_transfer": "HIERARCHY_ONLY_CONTENT_FORBIDDEN"},
+        {"input_index": 3, "role": "C_SUPPORTING_CHARACTER_AND_SETTING_CONTINUITY_CANDIDATE_NOT_CANONICAL", "path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png", "sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27", "review_path": "books/DM02/visual-proof-reviews/p01-panel-01/v0001.json", "approval_status": "REVIEWED_FIX_FOR_LETTERING_NOT_PROMOTED", "content_transfer": "RELATIVE_IDENTITIES_FIRE_AND_TREE_FRAME_PROPOSAL_ONLY"}
+      ],
+      "unavailable_reference_roles": ["D_APPROVED_ENVIRONMENT_REFERENCE"],
+      "character_references": ["dm-medhas", "dm-suratha", "dm-samadhi"],
+      "environment_reference": "dm02-forest-hermitage-frame",
+      "private_production_clearance": "SOURCE_BOUNDED_PRIVATE_DRAFT_ONLY_PUBLICATION_BLOCKED",
+      "retry_budget": 0,
+      "independent_review_criteria": ["source-neutral transition", "three distinct proposal-level identities", "neutral affect", "silhouette readability", "forest-frame continuity", "Gold Standard alignment", "complete lettering-safe region", "no embedded text or watermark"]
+    },
+    {
+      "operation_order": 4,
+      "unit_id": "page-a694d4c3702975edfdceb0c5--p03-panel-01",
+      "page_number": 3,
+      "page_id": "page-a694d4c3702975edfdceb0c5",
+      "panel_id": "p03-panel-01",
+      "source_event": {"event_id": "dm-event-004", "bounded_action": "At world dissolution, water extends without shore or ordinary landmark."},
+      "required_visual_action": "Full-page horizonless dissolution water with no shore, mountain, city, temple, star map or ordinary landmark; scale comes only from sparse gold reflections and layered darkness.",
+      "method": "GENERATE_NEW_RASTER_MASTER_WITH_REFERENCE_CONDITIONING",
+      "expected_output": {"width": 1086, "height": 1448, "aspect_ratio": "3:4", "text_in_image": false},
+      "prompt": "Generate one new portrait 3:4 full-page environment master for DM02 Page 3 panel p03-panel-01. Depict the flood of cosmic dissolution as horizonless midnight water and layered darkness, with no shore dividing one direction from another and no field, mountain, city, temple, lamp, boat, person, deity, serpent, lotus, animal, star map or ordinary landmark. Establish immense scale only through sparse restrained gold reflections, subtle water depth and source-less dim cosmic light. Keep the complete normalized upper safe region x 0.08 to 0.92 and y 0.06 to 0.24 calm enough for the exact long narration to be lettered separately. Do not render text, symbols, a portal, a conventional outer-space planet scene, an invented cosmography or a watermark. REFERENCE A supplies only premium Khatakshetra painterly finish, navy-gold harmony and print-quality polish. REFERENCE B supplies only full-page atmospheric depth and cinematic visual hierarchy; transfer no DM08 deity, character, weapon, event, blood, text or theology. No character reference applies, and no approved environment raster reference exists; follow the locked location bible instead. Produce exactly one image and no variant.",
+      "prompt_sha256": "8e9d002758a71631fd841d24bb22d801b0adde3580cd8953d1a198e7de6d2b11",
+      "references": [
+        {"input_index": 1, "role": "A_SERIES_VISUAL_IDENTITY", "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png", "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b", "content_transfer": "STYLE_ONLY_CONTENT_FORBIDDEN"},
+        {"input_index": 2, "role": "B_FULL_PAGE_ATMOSPHERIC_COMPOSITION", "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png", "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4", "content_transfer": "ATMOSPHERIC_DEPTH_ONLY_CONTENT_FORBIDDEN"}
+      ],
+      "unavailable_reference_roles": ["C_NOT_APPLICABLE_NO_CHARACTERS", "D_APPROVED_ENVIRONMENT_REFERENCE"],
+      "character_references": [],
+      "environment_reference": "dm02-cosmic-ocean-dissolution",
+      "private_production_clearance": "SOURCE_BOUNDED_PRIVATE_DRAFT_ONLY_PUBLICATION_BLOCKED",
+      "retry_budget": 0,
+      "independent_review_criteria": ["source fidelity", "absence of shore and ordinary landmarks", "no invented cosmography", "environmental coherence", "premium painterly finish", "Gold Standard alignment", "complete lettering-safe region", "no embedded text or watermark"]
+    }
+  ],
+  "budget": {
+    "selected_operations": 4,
+    "maximum_operations": 4,
+    "maximum_operations_per_unit": 1,
+    "retry_operations": 0,
+    "image_operations_executed": 0,
+    "remaining_authorized_operations": 0,
+    "generation_authorized": false
+  },
+  "cost_and_allowance_policy": {
+    "policy": "INCLUDED_ALLOWANCE_FIRST",
+    "provider": "Codex built-in image generation only",
+    "api_key_authorized": false,
+    "external_provider_authorized": false,
+    "purchased_credit_use_authorized": false,
+    "automatic_credit_purchase_authorized": false,
+    "workspace_overage_authorized": false,
+    "maximum_paid_spend_minor_units": 0,
+    "actual_incremental_usd": "UNKNOWN_NOT_EXPOSED",
+    "zero_incremental_usd_verified": false,
+    "latest_observable_codex_allowance": {
+      "observed_on": "2026-10-23",
+      "ordinary_usage_allowed": true,
+      "primary_used_percent": 3,
+      "window_duration_minutes": 10080,
+      "purchased_credit_balance": "0",
+      "has_purchased_credits": false,
+      "spend_control_reached": false,
+      "image_operation_specific_deduction": "NOT_EXPOSED"
+    }
+  },
+  "page_11_preservation": {
+    "page_id": "page-b85332e92940926f67e6dd9d",
+    "panel_id": "p11-panel-01",
+    "status": "ESCALATE_BEFORE_GENERATION",
+    "qualified_review_form": "UNSIGNED",
+    "proposed_visual_conventions": "PROPOSED_UNAPPROVED",
+    "included_in_campaign": false,
+    "image_operation_authorized": false
+  },
+  "preservation": {
+    "prior_visual_proof_campaign": {"status": "FOUR_PROOFS_REVIEWED_WITH_BLOCKERS_CAMPAIGN_COMPLETE_NO_RETRY", "operations_executed": 4, "operation_ceiling": 4, "remaining_operations": 0, "status_sha256": "a5314681eadbde70331f092244bc476e72c1062531e7882682cb230d6eb415c6"},
+    "corrective_proof_campaign": {"status": "COMPLETE_WITH_PAGE_11_SOURCE_BLOCK_AND_PAGE_21_PASS", "operations_executed": 1, "maximum_operations": 2, "remaining_operations_carry_forward": false, "status_sha256": "7e23c57cc1e45d22ac3a5b6dc45ca3d1324893b0097670ae1ce153c364bb7f6a"},
+    "complete_book_campaign": {"status": "AWAITING_CAMPAIGN_AUTHORIZATION", "operations_executed": 0, "authorization_subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69", "status_sha256": "d777721321fb0469a5f0a526a113fc80a90bd606d917e42f95f3a07ed87a8421"},
+    "prior_counters_reset": false,
+    "existing_art_modified": false,
+    "source_graph_modified": false,
+    "dm04_or_dm08_modified": false
+  },
+  "approval": {
+    "approval_record_created": false,
+    "existing_approval_inherited": false,
+    "required_approval_type": "PRODUCTION_CAMPAIGN",
+    "required_subject_type": "PRODUCTION_CAMPAIGN",
+    "required_scope": {"type": "book", "id": "DM02"},
+    "required_subject_hash": "820c1d0371f19ec0e44a5000c3012f29aab1e05501802ef324078841657211cd",
+    "inheritance_allowed": false
+  },
+  "next_action": "Obtain explicit human authorization for the exact authorization_subject_hash through the existing authenticated approval mechanism; do not execute an image operation before a matching non-inheritable approval record exists."
+}

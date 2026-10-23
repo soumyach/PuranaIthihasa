@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "status": "AWAITING_CAMPAIGN_AUTHORIZATION",
+  "baseline": {
+    "branch": "feature/book-factory-dm02-corrective-proofs",
+    "commit": "7335973fa9f7e3a3104d388b060ec565807a57d1"
+  },
+  "factory_checkpoint": {
+    "current_stage": "ART_PROOFS",
+    "director_resume_result": "ESCALATE",
+    "director_mutated": false,
+    "outstanding_director_blocker": "APPROVED_EXTERNAL_IMAGE_PROVIDER_REQUIRED",
+    "note": "The repository provider adapter is unavailable; any later approved operation must execute through the host-injected built-in Codex image tool and be imported with an exact receipt."
+  },
+  "page_11": {
+    "page_id": "page-b85332e92940926f67e6dd9d",
+    "panel_id": "p11-panel-01",
+    "status": "ESCALATE_BEFORE_GENERATION",
+    "qualified_review_form_signed": false,
+    "proposed_visual_conventions_status": "PROPOSED",
+    "image_generated_or_modified_in_this_task": false,
+    "included_in_next_campaign": false,
+    "minimum_resume_gate": "A genuine qualified religious-iconography reviewer must sign an exact-scope decision; Page 11 then requires a separate fresh hash-bound image authorization."
+  },
+  "unit_readiness": {
+    "path": "books/DM02/resumable-production/unit-readiness.v0001.json",
+    "sha256": "44e3cda1c604d716fe862271f3a40cc0247bf00cb3d885de96e76e2d3c3cc507",
+    "total_units": 44,
+    "eligible_or_campaign_ready": 7,
+    "blocked_before_new_image_execution": 37,
+    "counts": {
+      "ELIGIBLE_FOR_PRIVATE_ILLUSTRATION": 0,
+      "ELIGIBLE_FOR_COMPOSITION_WITH_EXISTING_ART": 3,
+      "REQUIRES_NEW_CHARACTER_REFERENCE": 15,
+      "REQUIRES_SOURCE_OR_ICONOGRAPHY_REVIEW": 13,
+      "REQUIRES_CAMPAIGN_AUTHORIZATION": 4,
+      "BLOCKED_OTHER": 9
+    }
+  },
+  "selected_batch": {
+    "campaign_id": "dm02-resumable-production-batch-01",
+    "campaign_request_path": "books/DM02/resumable-production/campaign-request.v0001.json",
+    "campaign_request_sha256": "d85931ab82993bae74c2feafa5ed772f9ddc6253e3109d6b703d4a31e8205d19",
+    "authorization_request_path": "books/DM02/resumable-production/authorization-request.v0001.json",
+    "authorization_request_sha256": "22af24fc85170a900c005cc6cb3b9e8d8111b9b2805584595c82b093b7b28f41",
+    "authorization_subject_hash": "820c1d0371f19ec0e44a5000c3012f29aab1e05501802ef324078841657211cd",
+    "operation_count": 4,
+    "retry_count": 0,
+    "units": [
+      "page-71e9de766bf786cb9499a31b--p01-panel-02",
+      "page-88792a15dcd25b30d3982d7c--p02-panel-01",
+      "page-88792a15dcd25b30d3982d7c--p02-panel-02",
+      "page-a694d4c3702975edfdceb0c5--p03-panel-01"
+    ],
+    "generation_authorized": false,
+    "image_operations_executed": 0,
+    "approval_record_created": false
+  },
+  "composed_existing_pages": [
+    {
+      "page_number": 1,
+      "page_id": "page-71e9de766bf786cb9499a31b",
+      "status": "PREEXISTING_PARTIAL_PRIVATE_DIAGNOSTIC_PREVIEW",
+      "path": "books/DM02/private-page-previews/page-71e9de766bf786cb9499a31b/v0001/0001-page-71e9de766bf786cb9499a31b.png",
+      "limitation": "The second crop is not a replacement for the locked distinct p01-panel-02 master."
+    },
+    {
+      "page_number": 21,
+      "page_id": "page-8619f3db280abbfd867eefe4",
+      "status": "NEW_PRIVATE_PREVIEW_RENDERED_FROM_PASS_REVIEWED_EXISTING_ART",
+      "path": "books/DM02/private-page-previews/page-8619f3db280abbfd867eefe4/v0001/0021-page-8619f3db280abbfd867eefe4.png",
+      "sha256": "868041b7cffb9fb9daf11f439bafc5af5ac74f2df0425d165630a58373341534",
+      "deterministic_validation": "PASS",
+      "composition_pixel_qa": "PASS_TECHNICAL_PENDING_INDEPENDENT_COMPOSITION_SEMANTIC_REVIEW",
+      "publication_eligible": false
+    }
+  ],
+  "private_book_progress": {
+    "total_pages": 24,
+    "total_storyboard_units": 44,
+    "fully_rendered_private_page_candidates_from_reusable_art": 1,
+    "partial_diagnostic_private_pages": 1,
+    "existing_art_units_eligible_for_private_composition": 3,
+    "new_units_ready_once_exact_campaign_is_authorized": 4,
+    "publication_ready_pages": 0,
+    "final_pdf_allowed": false,
+    "interpretation": "Page 21 is the only complete rendered page candidate in this checkpoint. Page 1 remains partial, Page 14 has only one of three masters, and all pages remain private and publication-ineligible."
+  },
+  "character_reference_state": {
+    "approved_canonical_exact_pixel_references": 0,
+    "proposal_level_continuity_candidates": [
+      {
+        "asset": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+        "scope": "Medhas, Suratha, Samadhi and forest-frame proposal continuity only",
+        "status": "REVIEWED_FIX_FOR_LETTERING_NOT_PROMOTED"
+      },
+      {
+        "asset": "books/DM02/visual-proof-campaign/images/p14-panel-01/v0001.png",
+        "scope": "Vishnu, Madhu and Kaitabha combat proposal continuity only",
+        "status": "RECOVERY-REVIEWED_NONCANONICAL_CANDIDATE_NOT_PROMOTED"
+      },
+      {
+        "asset": "books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png",
+        "scope": "Page 21 private reuse only",
+        "status": "PASS_NOT_PROMOTED"
+      }
+    ]
+  },
+  "cost_and_allowance": {
+    "image_operations_in_this_task": 0,
+    "paid_provider_calls_in_this_task": 0,
+    "current_observable_codex_used_percent": 3,
+    "current_observable_purchased_credit_balance": "0",
+    "ordinary_usage_allowed": true,
+    "actual_incremental_usd": "NOT_APPLICABLE_NO_IMAGE_OPERATION",
+    "future_image_operation_specific_deduction": "UNKNOWN_NOT_EXPOSED",
+    "zero_incremental_usd_for_future_campaign_verified": false
+  },
+  "preservation": {
+    "original_art_modified": false,
+    "page_11_modified": false,
+    "source_graph_modified": false,
+    "prior_attempt_counters_reset": false,
+    "dm04_modified": false,
+    "dm08_modified": false,
+    "publication_push_merge_deploy_performed": false
+  },
+  "next_resumable_checkpoint": {
+    "state": "AWAITING_CAMPAIGN_AUTHORIZATION",
+    "required_action": "The authorized human user must explicitly approve subject 820c1d0371f19ec0e44a5000c3012f29aab1e05501802ef324078841657211cd. Only after a matching non-inheritable approval record is imported may the four listed one-shot image operations execute.",
+    "page_11_parallel_gate": "Obtain the separate qualified signed iconography review; it does not authorize image generation by itself."
+  }
+}
