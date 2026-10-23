@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "page_number": 2,
+  "page_id": "page-88792a15dcd25b30d3982d7c",
+  "panel_id": "p02-panel-01",
+  "status": "AWAITING_BOOK_LEVEL_CAMPAIGN_AUTHORIZATION",
+  "operation_type": "REFERENCE_CONDITIONED_TARGETED_LOCAL_EDIT",
+  "parent_image": {
+    "path": "books/DM02/pages-1-3-production/images/p02-panel-01/v0001.png",
+    "sha256": "7702fbc90c1d03295ccb7628281e5f3026d634a714daba1c00cea73db85cede4",
+    "dimensions": [1086, 1448],
+    "preserve_immutably": true
+  },
+  "locked_panel_spec_sha256": "aea83683eb62e1786f03539111d91e88660c59c33a046810632c15d208953de5",
+  "defect": {
+    "classification": "ANATOMY_DEFECT_NEW_PIXELS_REQUIRED",
+    "finding": "The focal hand visibly contains one thumb plus five non-thumb digit tips.",
+    "crop_or_lettering_repair_truthful": false
+  },
+  "edit_instruction": "Correct only the focal hand to anatomically coherent five-digit anatomy while preserving the original gesture toward the fire, prayer beads, sleeve, fire, smoke, characters, environment, lighting, palette, framing and all unaffected pixels. Add no text, watermark, sacred attribute or narrative event.",
+  "independent_review_required": [
+    "exactly five coherent digits on the repaired hand",
+    "gesture and hand-to-fire action remain clear",
+    "beads and sleeve remain coherent",
+    "identity, source action and surrounding composition remain unchanged",
+    "no embedded text or watermark",
+    "no collateral pixel drift beyond the minimum repair region"
+  ],
+  "budget": {"necessary_operations": 1, "maximum_repair_retries_within_proposed_book_campaign": 1},
+  "authorization_inherited_from_prior_campaign": false,
+  "image_operation_executed": false
+}

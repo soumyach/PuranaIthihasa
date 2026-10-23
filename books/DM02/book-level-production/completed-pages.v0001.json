@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "total_pages": 24,
+  "complete_private_preview_pages": 2,
+  "incomplete_pages": 22,
+  "complete": [
+    {"page_number": 3, "page_id": "page-a694d4c3702975edfdceb0c5", "path": "books/DM02/private-page-previews/page-a694d4c3702975edfdceb0c5/v0002/0003-page-a694d4c3702975edfdceb0c5.png", "sha256": "e2f4eb52be5d3579f4a8dfc3658a75f9b1abcfdbbc98d5e097228ec6062f636d", "deterministic_validation": "PASS", "independent_actual_pixel_review": "PASS"},
+    {"page_number": 21, "page_id": "page-8619f3db280abbfd867eefe4", "path": "books/DM02/private-page-previews/page-8619f3db280abbfd867eefe4/v0004/0021-page-8619f3db280abbfd867eefe4.png", "sha256": "33658c7df3f95991d573919045902ee33032f930529433ca276379fec40e4f6f", "deterministic_validation": "PASS", "independent_actual_pixel_review": "PASS"}
+  ],
+  "incomplete_page_numbers": [1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 23, 24],
+  "special_cases": {
+    "page_1": "Requires targeted p01-panel-02 edit, then composition and independent page review.",
+    "page_2": "Requires targeted p02-panel-01 anatomy edit, then composition and independent page review.",
+    "page_11": "ESCALATE_BEFORE_GENERATION; excluded from campaign.",
+    "pages_23_24": "No image operation required; deterministic assetless back-matter composition awaits minimal composer support."
+  },
+  "complete_private_pdf_eligible": false,
+  "publication_eligible": false
+}

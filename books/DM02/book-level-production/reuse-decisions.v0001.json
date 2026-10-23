@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "decision_scope": "PRIVATE_BOOK_LEVEL_PRODUCTION_ONLY",
+  "parent": {
+    "path": "books/DM02/production-unblocking/reuse-decisions.v0001.json",
+    "sha256": "47138bc1b18d8f2f23eee73793b551d248ee054bf1f94d8dcc68a32bb8a645b2"
+  },
+  "publication_eligible": false,
+  "canonical_character_reference_promotions": 0,
+  "reusable_raster_masters": [
+    {"panel_id": "p01-panel-01", "path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png", "sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27", "scope": "PRIVATE_COMPOSITION_AND_PROPOSAL_CONTINUITY"},
+    {"panel_id": "p02-panel-02", "path": "books/DM02/pages-1-3-production/images/p02-panel-02/v0001.png", "sha256": "6a74cd64078d324d3d6e6abfdb8b573034f8d9a829b6d0b227bb02eeada5fa17", "scope": "PRIVATE_COMPOSITION"},
+    {"panel_id": "p03-panel-01", "path": "books/DM02/pages-1-3-production/images/p03-panel-01/v0001.png", "sha256": "8c5e72bf52d71d13997af976c3f7d43917802b8bcd91506d35495031bdf3e86a", "scope": "PRIVATE_COMPOSITION"},
+    {"panel_id": "p14-panel-01", "path": "books/DM02/visual-proof-campaign/images/p14-panel-01/v0001.png", "sha256": "c3cf653e36e0d03a0d9b126ffeab56bee0b655ba752d8d988d9d057f8354170c", "scope": "PRIVATE_COMPOSITION_AND_PROPOSAL_CONTINUITY_WITH_LIGHTING_CAVEAT"},
+    {"panel_id": "p21-panel-01", "path": "books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png", "sha256": "c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d", "scope": "PRIVATE_COMPOSITION_AND_PROPOSAL_CONTINUITY"}
+  ],
+  "targeted_edits_required": [
+    {"panel_id": "p01-panel-02", "parent_sha256": "582196a26f1dafa22a669ccfc2f126af1edeb53f3f7c8c01ba47a6702e4972c2", "reason": "Source-silent mark is not a theological violation or continuity discrepancy, but violates the exact locked operation specification.", "request": "books/DM02/book-level-production/page-01-tilak-review.v0001.json"},
+    {"panel_id": "p02-panel-01", "parent_sha256": "7702fbc90c1d03295ccb7628281e5f3026d634a714daba1c00cea73db85cede4", "reason": "Focal hand has six visible digits and cannot be truthfully repaired by crop or layout.", "request": "books/DM02/book-level-production/page-02-repair-request.v0001.json"}
+  ],
+  "preserved_but_forbidden": [
+    {"panel_id": "p11-panel-01", "path": "books/DM02/visual-proof-campaign/images/p11-panel-01/v0001.png", "sha256": "aa2104618b9f4395c1f62cdba279974f5be3a38b4ff78242182cc9d13438fa6c", "reason": "Unsigned qualified iconography review; existing pixels fail six-locus auditability."},
+    {"panel_id": "p21-panel-01", "path": "books/DM02/visual-proof-campaign/images/p21-panel-01/v0001.png", "sha256": "e7de39593aa71644f4c2a57fd577855a8611b2a0c8015b78497d84ecb759dbee", "reason": "Superseded source-critical proof with invented geography and unsupported anatomical implications."}
+  ]
+}

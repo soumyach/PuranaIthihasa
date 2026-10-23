@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "page_number": 1,
+  "page_id": "page-71e9de766bf786cb9499a31b",
+  "panel_id": "p01-panel-02",
+  "review_scope": "INDEPENDENT_ACTUAL_PIXEL_REASSESSMENT_FOR_PRIVATE_REUSE",
+  "image": {
+    "path": "books/DM02/pages-1-3-production/images/p01-panel-02/v0001.png",
+    "sha256": "582196a26f1dafa22a669ccfc2f126af1edeb53f3f7c8c01ba47a6702e4972c2",
+    "dimensions": [1086, 1448]
+  },
+  "comparison_image": {
+    "path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+    "sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+    "role": "SAME_PAGE_MEDHAS_CONTINUITY_COMPARISON"
+  },
+  "locked_inputs": [
+    {"path": "books/DM02/storyboards/v0002.json", "sha256": "2ffc82651274e049bf8b20c270f5abde63841fb2abc40137d935b956990069f6"},
+    {"path": "books/DM02/character-bibles/v0001.json", "sha256": "e15e42cb62fd2c17715d1acfcf95b09d7210bebb1afe4b7a06e0fb41b4cdc791"},
+    {"path": "books/DM02/pages-1-3-production/independent-visual-review.v0001.json", "sha256": "03bbc0ef48118bc789b14728ed1a57c4d1dbec66cadc8498b0ae47355bf62403"}
+  ],
+  "findings": {
+    "actual_pixel_description": "Medhas bears a prominent white-and-orange vertical forehead mark. The same visible treatment occurs in the existing Page 1 panel 1 comparison image.",
+    "continuity_discrepancy": false,
+    "source_or_theological_violation": false,
+    "source_classification": "SOURCE_SILENT_ARTISTIC_CONVENTION_WITH_SCOPE_LIMITS",
+    "locked_operation_specification_compliance": false,
+    "specification_conflict": "The authorized p01-panel-02 prompt explicitly prohibited a doctrinal symbol, and the locked storyboard prohibits adding source-silent iconography.",
+    "religious_certification_claimed": false
+  },
+  "dimension_results": {
+    "source_fidelity": "PASS",
+    "character_identity": "PASS_WITH_NONCANONICAL_SCOPE",
+    "required_action": "PASS",
+    "anatomical_coherence": "PASS",
+    "cultural_authenticity": "PASS_WITH_SCOPE_LIMIT",
+    "lettering_compatibility": "COMPOSITION_REPAIRABLE_WITH_NOTE",
+    "embedded_text_or_watermark": "PASS",
+    "gold_standard_alignment": "PASS"
+  },
+  "decision": "FIX",
+  "primary_classification": "SPECIFICATION_DEVIATION_REQUIRING_NEW_PIXELS",
+  "private_composition_eligible": false,
+  "canonical_character_reference_eligible": false,
+  "publication_eligible": false,
+  "minimum_corrective_action": "Targeted local image edit removing only the white-and-orange forehead mark and restoring natural forehead skin; preserve identity, pose, expressions, clothing, fire, environment, lighting, framing and all other pixels.",
+  "operation_budget": {"necessary_operations": 1, "method": "REFERENCE_CONDITIONED_TARGETED_LOCAL_EDIT", "retry_limit_within_proposed_book_campaign": 1},
+  "independence_record": {
+    "reviewer_role": "INDEPENDENT_ACTUAL_PIXEL_SPECIALIST",
+    "reviewer_task": "/root/dm02_corrective_pixel_reviewer",
+    "distinct_from_original_image_producer": true,
+    "qualified_theological_reviewer": false
+  }
+}

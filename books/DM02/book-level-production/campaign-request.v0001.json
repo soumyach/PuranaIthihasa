@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "dm02-book-level-private-production-v0001",
+  "book_id": "DM02",
+  "status": "AWAITING_CAMPAIGN_AUTHORIZATION",
+  "authorization_subject_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+  "authorization_received": false,
+  "approval_record_created": false,
+  "image_operations_executed": 0,
+  "authorization_subject": {
+    "schema_version": "1.0",
+    "subject_type": "DM02_BOOK_LEVEL_PRIVATE_IMAGE_CAMPAIGN",
+    "campaign_id": "dm02-book-level-private-production-v0001",
+    "book_id": "DM02",
+    "baseline_commit": "dc2d3f502881577a111f111ffa5e8795154cd25d",
+    "locked_inputs": [
+      {"path":"books/DM02/manuscripts/v0002.json","sha256":"988853aadfbde1b09f080ea409b7e23772712f97e0eed42946bf7930ffe7c3a9"},
+      {"path":"books/DM02/storyboards/v0002.json","sha256":"2ffc82651274e049bf8b20c270f5abde63841fb2abc40137d935b956990069f6"},
+      {"path":"books/DM02/story-packets/b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd.json","sha256":"63195c77c26e324af9809f1cfde80131108d655b550ce137115e3337b3f84e84"},
+      {"path":"books/DM02/character-bibles/v0001.json","sha256":"e15e42cb62fd2c17715d1acfcf95b09d7210bebb1afe4b7a06e0fb41b4cdc791"},
+      {"path":"books/DM02/location-bibles/v0001.json","sha256":"65a6da806ac3669b321745b561e134117ce5a9aa258d405c6ef79c45fd8e4e35"},
+      {"path":"MYTHOLOGY_COMIC_RULES.md","sha256":"0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070"},
+      {"path":"book-factory/references/visual-gold-standard/manifest.json","sha256":"0775af9ff8dacfdcbecece946b781e2187574883f148bb9a6327603f1ffdae3f"},
+      {"path":"books/DM02/book-level-production/remaining-work-inventory.v0001.json","sha256":"d9f555422256947f27a22b0a3e4e1b868505b7326749f4c27dc8a65beef32bdf"},
+      {"path":"books/DM02/book-level-production/page-01-tilak-review.v0001.json","sha256":"a56596b63912a77a7a0ba3701102bd311f2f5898a7b35e73b72d0ee59460bd89"},
+      {"path":"books/DM02/book-level-production/page-02-repair-request.v0001.json","sha256":"cc21f346e791ce7df970a72790f2a88ad57546a69d159feedd45fdc6ae689207"}
+    ],
+    "necessary_operations": [
+      {"unit_id":"page-71e9de766bf786cb9499a31b--p01-panel-02","panel_spec_sha256":"7507f36190976845de16f4f3f09b181b151327256bf86e9d37d92a0ba5e91d80","method":"TARGETED_EDIT_REMOVE_FOREHEAD_MARK_ONLY","parent_sha256":"582196a26f1dafa22a669ccfc2f126af1edeb53f3f7c8c01ba47a6702e4972c2"},
+      {"unit_id":"page-88792a15dcd25b30d3982d7c--p02-panel-01","panel_spec_sha256":"aea83683eb62e1786f03539111d91e88660c59c33a046810632c15d208953de5","method":"TARGETED_EDIT_REPAIR_FOCAL_HAND_ONLY","parent_sha256":"7702fbc90c1d03295ccb7628281e5f3026d634a714daba1c00cea73db85cede4"},
+      {"unit_id":"page-d20c0821bca7f13784a34630--p04-panel-01","panel_spec_sha256":"2ed5dd861c1c6e7fe0f5213cefddf72c6312918a2855410c18493a86b97b870a","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-2e96a0bca25ea33924a24fde--p05-panel-01","panel_spec_sha256":"6004464079fd5e33239838cad637022ded337d51022f0d84a0c973786975d550","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-6f5b1e3391910b496a7194d0--p06-panel-01","panel_spec_sha256":"50271673c04f5d2a7456eda60f883f08d586da6c66df085d2c511952169aa316","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-2eff3830302e6bb1ce973d73--p07-panel-01","panel_spec_sha256":"4a410afb84cc25030e8a6e13b5ede458cb95fc274123eb86d87f356c81c89626","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-2eff3830302e6bb1ce973d73--p07-panel-02","panel_spec_sha256":"c95ee0fc9c8bfd6d34aea09604dc9bdfae49ec003e2443cac4d00fcb01a54cb0","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-2eff3830302e6bb1ce973d73--p07-panel-03","panel_spec_sha256":"e5b7fac59e9031ff17b92537d1bfe2f32b4d18e3d6ecc31feec62a36bda786e0","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-050fb795d8c0bba26d6fc934--p08-panel-01","panel_spec_sha256":"3df851c4b2c704fd39744947a89e5ab4d9f9a35e094ed786539cf882a07adfdf","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-ca28c1486ed14e92ca7c6c89--p09-panel-01","panel_spec_sha256":"9cad6927522eef19836a4443fb0e23d732ddfee409619b9eb1f6a8eee393f66b","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-29ea6f05a380ac8e4598753f--p10-panel-01","panel_spec_sha256":"edcb6dac4c1a0b3113fcd102e04e9fce602ca892fbdab89532a4ed73fa8af98b","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-29ea6f05a380ac8e4598753f--p10-panel-02","panel_spec_sha256":"a056e0f99c0230fbd356e21ac8d014e83b40b5d83ea6793d7d3e7ab9230a7274","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-5d55c9f3f53bac24d1f44238--p12-panel-01","panel_spec_sha256":"c2261c81ea4dff6f19d6ad5b37c16126d6721de891e182a7142d5445fff123b5","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-5d55c9f3f53bac24d1f44238--p12-panel-02","panel_spec_sha256":"8fdc6cfe7db58ec721fce86b865cdb60760e72d8f69bd71d803ac9b325d9e5fc","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-4adc33689921626f8d0b1f8d--p13-panel-01","panel_spec_sha256":"f7e6863c94a38571cabb3b3513cb5dfaa44b8582810ae901c2048aa086e16e6c","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-4adc33689921626f8d0b1f8d--p13-panel-02","panel_spec_sha256":"2a3f402cb1b8cbc72685b5fd18f034eac578a40f960c98bc4742c31b80900db7","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-4adc33689921626f8d0b1f8d--p13-panel-03","panel_spec_sha256":"22866e3a991962f9253c19a7760cc9a2ea6f7c956b5f2583b7369992bc4c16e4","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-b3c2c7ea03e4d1259ccbea7b--p14-panel-02","panel_spec_sha256":"7d36f8fbe1e7fa9c10c624c174de8059b7f9d01582919d7f9fc9eb38a4a19da6","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-b3c2c7ea03e4d1259ccbea7b--p14-panel-03","panel_spec_sha256":"1aab03e7b8bcaff6b249697605401a568954972a4f3a734f45d4e2e69b2ee213","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-25f617b853e82ff066d97844--p15-panel-01","panel_spec_sha256":"b26d372b8f042dceebac5e2a9d96f1734dc8305932e92b6d95730c739d51d192","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-a77b8959a9dbfa9b247f6eed--p16-panel-01","panel_spec_sha256":"8b9f5fcfe7b4bf2f59a8344f3788e21554c7b181930fdd3ff9c1eaf020c219b6","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-a77b8959a9dbfa9b247f6eed--p16-panel-02","panel_spec_sha256":"eb91365c38f349e5783173206747ed7e10819e53004691f34addc0d45ff6e1f3","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-e738c476c98efb28ec475cdd--p17-panel-01","panel_spec_sha256":"b0319445b08e1e35933332c414c490ecd9d230c335369e3a9e9f8c18d2c50375","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-52288832b81caa0075cc9f6b--p18-panel-01","panel_spec_sha256":"719180e1df70bb3ce609b13c7f03ef17706e28368d61e76e2f5f8289cc910309","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-0a7e5fc37740e64356580b94--p19-panel-01","panel_spec_sha256":"2c6df751836f8b0d65c92d30fd1884623d533fdaf5ebd2637d2c0e1f4fcf0bc7","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-0a7e5fc37740e64356580b94--p19-panel-03","panel_spec_sha256":"9eb86f062da2a8b78f0a8b368b697de6d7e6aec2aecad35cb5abce30cc995efd","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-f64eb6d498aa51d874a3ff79--p20-panel-01","panel_spec_sha256":"929f7109b33423e9072d0728aa42c8a0ff2d7333e8006f6e52de930b290f7560","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-f64eb6d498aa51d874a3ff79--p20-panel-02","panel_spec_sha256":"4919da46e04b131fbcb4a5f1ca9927e63333cdf0abe0e0c909886215bbdca485","method":"GENERATE_NEW_MASTER"},
+      {"unit_id":"page-d22f4a199dc41892b93a95e8--p22-panel-01","panel_spec_sha256":"ef116cacb358ec9d93872dd966e4d73a17e01af59ca8f23f0d2ce0585f213ac7","method":"GENERATE_NEW_MASTER"}
+    ],
+    "conditional_derived_fallback_operations": [
+      {"unit_id":"page-2e96a0bca25ea33924a24fde--p05-panel-02","panel_spec_sha256":"919c5581b247807899a19bdf25fd90fb6bcfcd9870e19a83c27813b2bb370475","master_panel":"p05-panel-01"},
+      {"unit_id":"page-2e96a0bca25ea33924a24fde--p05-panel-03","panel_spec_sha256":"9510a18fc6a9c4f6c933210971e47ef54e92fba161969c17fe92b8ece5904c5c","master_panel":"p05-panel-01"},
+      {"unit_id":"page-050fb795d8c0bba26d6fc934--p08-panel-02","panel_spec_sha256":"757d1703553c41e15f48f6bdce17ee990768c5b60c5dfe519cae072df9ce308f","master_panel":"p08-panel-01"},
+      {"unit_id":"page-e738c476c98efb28ec475cdd--p17-panel-02","panel_spec_sha256":"22b6496e8de5787db565e2d653468e8eee511aa4d7bb4b7cd63358228e11c09e","master_panel":"p17-panel-01"},
+      {"unit_id":"page-52288832b81caa0075cc9f6b--p18-panel-02","panel_spec_sha256":"db1436026d3ff582ac508576e0eafed4d73c6781f39479116b04df9253d3cb3c","master_panel":"p18-panel-01"},
+      {"unit_id":"page-0a7e5fc37740e64356580b94--p19-panel-02","panel_spec_sha256":"e2eb3d6a1d15888ec5caa5bc47af1c45a33bef3d1b88b1efa18108940ed01438","master_panel":"p19-panel-01"},
+      {"unit_id":"page-d22f4a199dc41892b93a95e8--p22-panel-02","panel_spec_sha256":"94381b78e52447aec331d2266d35b1ed10eebea21f01a49fb65e597879c3ebe5","master_panel":"p22-panel-01"}
+    ],
+    "reference_policy": {
+      "gold_standard_status": "PRESENTATION_REFERENCE_ONLY_NOT_SOURCE_OR_THEOLOGY_AUTHORITY",
+      "allowed_gold_standard_inputs": [
+        {"reference_id":"kgs-satya-p01","path":"book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png","sha256":"15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"},
+        {"reference_id":"kgs-satya-p02","path":"book-factory/references/visual-gold-standard/pages/kgs-satya-p02.png","sha256":"a0fa07b60d1b8b128b541300f3fb5e26358863e3153c719e2d0aacb0fd7858dd"},
+        {"reference_id":"kgs-satya-p04","path":"book-factory/references/visual-gold-standard/pages/kgs-satya-p04.png","sha256":"9b15d37505c7fcbecac144d031af2e52ed09c95d7e5e4f637abb800f2a66da2a"},
+        {"reference_id":"kgs-satya-p06","path":"book-factory/references/visual-gold-standard/pages/kgs-satya-p06.png","sha256":"5f04b00c646e5c15d42b86cfd05ce36716b0bc6b2bf4c63be3b243118f64d985"},
+        {"reference_id":"kgs-dm08-p09","path":"book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png","sha256":"26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"},
+        {"reference_id":"kgs-dm08-p12","path":"book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png","sha256":"d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"},
+        {"reference_id":"kgs-dm08-p21","path":"book-factory/references/visual-gold-standard/pages/kgs-dm08-p21.png","sha256":"332b208d14df3d94139a3ab598e7e7e327e49bc9d4bbf5f41ddf20d8260291af"},
+        {"reference_id":"kgs-dm08-p28","path":"book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png","sha256":"7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5"}
+      ],
+      "required_receipt_roles": {
+        "A": "selected Gold Standard series visual identity",
+        "B": "selected Gold Standard scene or composition reference",
+        "C": "exact DM02 character-continuity pixels when available, always proposal/noncanonical unless separately approved",
+        "D": "exact DM02 environment pixels when available"
+      },
+      "receipt_rule": "For every operation, store the exact submitted path, SHA-256 and role for each supplied A/B/C/D input. Record NOT_SUPPLIED for any unsupported or inapplicable role; never claim reference conditioning without an actual input."
+    },
+    "budget": {
+      "necessary_operation_count": 29,
+      "conditional_derived_fallback_ceiling": 7,
+      "independent_review_directed_repair_retry_ceiling": 7,
+      "total_image_operation_ceiling": 43,
+      "maximum_total_operations_per_unit": 2,
+      "maximum_repair_or_retry_operations_per_unit": 1,
+      "automatic_retry": false,
+      "unused_reserve_must_not_be_spent": true
+    },
+    "execution_policy": {
+      "provider": "CODEX_BUILT_IN_IMAGE_GENERATION_ONLY",
+      "included_allowance_first": true,
+      "api_key_authorized": false,
+      "external_paid_provider_authorized": false,
+      "purchased_credit_use_authorized": false,
+      "automatic_credit_purchase_authorized": false,
+      "workspace_overage_authorized": false,
+      "paid_spend_authorized_usd": 0,
+      "stop_if_explicit_payment_or_credit_authorization_requested": true,
+      "zero_incremental_usd_technically_guaranteed": false,
+      "recheck_available_allowance_before_every_internal_batch": true,
+      "exact_reference_receipts_required": true,
+      "independent_source_and_actual_pixel_review_required": true,
+      "preserve_pass_assets": true,
+      "preserve_prior_campaign_counters": true,
+      "durable_pause_resume_required": true
+    },
+    "internal_batch_policy": {
+      "default_maximum_operations_per_batch": 4,
+      "priority_order": ["repair-p01-panel-02", "repair-p02-panel-01", "complete-page-14", "remaining-storyboard-order"],
+      "compose_and_independently_review_each_complete_page": true,
+      "continue_without_additional_per_batch_user_authorization": true,
+      "condition": "The action remains inside this exact unit list, operation ceiling, per-unit limit, source gates, provider policy and private-production scope."
+    },
+    "pause_conditions": [
+      "UNRESOLVED_SOURCE_OR_RELIGIOUS_ICONOGRAPHY",
+      "GENUINELY_NEW_VISUAL_STYLE",
+      "TOTAL_OR_PER_UNIT_OPERATION_BUDGET_EXHAUSTED",
+      "EXPLICIT_PAYMENT_CREDIT_OR_OVERAGE_REQUEST",
+      "PERSISTENT_FAILURE_AFTER_ONE_BOUNDED_REPAIR",
+      "PROVIDER_OR_EXECUTION_ENVIRONMENT_UNAVAILABLE"
+    ],
+    "excluded": {
+      "page_11": {"page_id":"page-b85332e92940926f67e6dd9d","panel_id":"p11-panel-01","status":"ESCALATE_BEFORE_GENERATION","qualified_review_signed":false},
+      "operations": ["optional_enhancements", "unlisted_units", "new_visual_style", "manuscript_rewrite", "source_graph_modification"],
+      "external_actions": ["publication", "deployment", "push", "merge", "automatic_next_book"]
+    }
+  },
+  "current_checkpoint": {
+    "next_unit": "page-71e9de766bf786cb9499a31b--p01-panel-02",
+    "next_batch_maximum_operations": 4,
+    "resume_rule": "Load this campaign, approval record, immutable operation ledger, latest allowance observation and per-unit review status; never infer unused budget from chat history.",
+    "before_generation": ["verify exact authorization subject hash", "verify campaign counters", "recheck allowance", "verify source gate", "verify exact A/B/C/D references"],
+    "after_each_operation": ["store immutable output and provider receipt", "record exact reference paths hashes and roles", "independent actual-pixel review", "atomically update durable ledger"]
+  }
+}

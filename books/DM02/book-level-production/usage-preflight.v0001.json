@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "observed_on": "2026-10-23",
+  "source": "Codex account usage-limits interface",
+  "ordinary_usage_allowed": true,
+  "plan_type_observed": "prolite",
+  "primary_window": {"duration_minutes": 10080, "used_percent": 23, "remaining_percent": 77, "reset_timestamp": 1793332727},
+  "purchased_credits": {"has_credits": false, "balance": "0", "unlimited": false},
+  "free_rate_limit_reset_credits": {"available_count": 2, "campaign_use_authorized": false, "automatic_use": false},
+  "spend_control_reached": false,
+  "campaign_estimate": {
+    "exact_per_image_deduction_available": false,
+    "expected_effect": "Built-in image generation consumes the same general Codex included usage and can consume it roughly three to five times faster on average than ordinary Codex work.",
+    "after_included_limits": "Built-in image generation may draw purchased credits if credits exist; this campaign does not authorize that path.",
+    "incremental_usd": "UNKNOWN_NOT_EXPOSED",
+    "zero_incremental_usd_positively_verified": false
+  },
+  "execution_controls": {
+    "included_allowance_first": true,
+    "api_key_authorized": false,
+    "external_provider_authorized": false,
+    "purchased_credit_use_authorized": false,
+    "automatic_credit_purchase_authorized": false,
+    "workspace_overage_authorized": false,
+    "paid_spend_authorized_usd": 0,
+    "stop_if_payment_or_credit_authorization_requested": true,
+    "recheck_allowance_before_each_internal_batch": true
+  },
+  "official_documentation": "https://learn.chatgpt.com/docs/pricing?codex-pricing-plans=individual",
+  "note": "The usage meter is account-wide and exposes neither a guaranteed per-operation deduction nor positive proof of zero incremental USD. Dashboard/account billing remains authoritative."
+}
