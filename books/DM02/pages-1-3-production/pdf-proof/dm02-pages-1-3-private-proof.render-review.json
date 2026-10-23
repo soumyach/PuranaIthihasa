@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "pdf_path": "books/DM02/pages-1-3-production/pdf-proof/dm02-pages-1-3-private-proof.pdf",
+  "pdf_sha256": "805e857b3d2ee9afe185401eff1ff2009036dfa6159fe46cb1f0f3b2ff51295e",
+  "render_method": "pdftoppm 72 DPI",
+  "rendered_dimensions": [1086, 1448],
+  "rendered_png_sha256": "48e96c694318f6a32e9a675867ab0243976b89a5c5a986093853200880b03802",
+  "actual_pixels_inspected": true,
+  "result": "PASS",
+  "findings": [],
+  "checks": {
+    "text_clipping_or_overlap": "PASS",
+    "malformed_glyphs": "PASS",
+    "frame_and_border_collisions": "PASS",
+    "image_scaling_or_distortion": "PASS",
+    "private_preview_label": "PASS",
+    "page_number": "PASS"
+  },
+  "scope": "Private Page-3-only proof; not a complete Pages 1-3 or full-book proof and not approved for publication."
+}

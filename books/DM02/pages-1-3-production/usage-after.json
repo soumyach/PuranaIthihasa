@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-10-23T12:08:30Z",
+  "observation_source": "Codex app account usage-limits interface",
+  "campaign_subject_hash": "820c1d0371f19ec0e44a5000c3012f29aab1e05501802ef324078841657211cd",
+  "ordinary_usage_allowed": true,
+  "plan_type": "prolite",
+  "primary_window": {
+    "window_duration_minutes": 10080,
+    "used_percent": 16,
+    "remaining_percent_computed": 84,
+    "resets_at_unix_seconds": 1793332727
+  },
+  "credits": {
+    "has_credits": false,
+    "unlimited": false,
+    "balance": "0"
+  },
+  "spend_control_reached": false,
+  "rate_limit_reached_type": null,
+  "campaign_observation": {
+    "before_used_percent": 14,
+    "after_used_percent": 16,
+    "observed_percentage_point_change": 2,
+    "attribution_limit": "The meter is account-wide aggregate usage and does not expose a per-image deduction, so the two-point change cannot be attributed exclusively or evenly to the four image operations.",
+    "explicit_payment_requested": false,
+    "api_key_used": false,
+    "external_provider_used": false,
+    "purchased_credit_balance_before": "0",
+    "purchased_credit_balance_after": "0",
+    "incremental_usd": "UNKNOWN_NOT_EXPOSED",
+    "zero_incremental_usd_positively_verified": false
+  }
+}

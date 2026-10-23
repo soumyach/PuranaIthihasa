@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-10-23T12:03:06Z",
+  "observation_source": "Codex app account usage-limits interface",
+  "campaign_subject_hash": "820c1d0371f19ec0e44a5000c3012f29aab1e05501802ef324078841657211cd",
+  "ordinary_usage_allowed": true,
+  "plan_type": "prolite",
+  "primary_window": {
+    "window_duration_minutes": 10080,
+    "used_percent": 14,
+    "remaining_percent_computed": 86,
+    "resets_at_unix_seconds": 1793332727
+  },
+  "credits": {
+    "has_credits": false,
+    "unlimited": false,
+    "balance": "0"
+  },
+  "spend_control_reached": false,
+  "rate_limit_reached_type": null,
+  "billing_observations": {
+    "api_key_used": false,
+    "external_provider_used": false,
+    "purchased_credit_use_authorized": false,
+    "workspace_overage_authorized": false,
+    "per_operation_allowance_deduction_available": false,
+    "zero_incremental_usd_technically_guaranteed": false
+  },
+  "note": "Official OpenAI documentation states that Codex image generation shares general usage limits, typically draws included allowance 3-5x faster than similar non-image turns, and can draw credits after included limits are exhausted. This account observation reports no purchased-credit balance; per-image deduction and incremental USD are not exposed before execution."
+}

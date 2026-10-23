@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "campaign_subject_hash": "820c1d0371f19ec0e44a5000c3012f29aab1e05501802ef324078841657211cd",
+  "approval_id": "approval-d50a10509141390a31d41cdb",
+  "operation_order": 2,
+  "unit_id": "page-88792a15dcd25b30d3982d7c--p02-panel-01",
+  "panel_id": "p02-panel-01",
+  "provider": "codex-built-in-image-gen",
+  "provider_operation": "generate_with_reference_conditioning",
+  "executed_at": "2026-10-23T12:05:58Z",
+  "attempt": 1,
+  "retry": false,
+  "prompt_sha256": "a02f1b4ff8c4fac06d958a4e1d56f3d66363fdfd1ed90f2191ac33b3d62d9cef",
+  "submitted_references": [
+    {
+      "input_index": 1,
+      "role": "A_SERIES_VISUAL_IDENTITY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+      "content_transfer": "STYLE_ONLY_CONTENT_FORBIDDEN"
+    },
+    {
+      "input_index": 2,
+      "role": "B_PAGE_PANEL_COMPOSITION",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d",
+      "content_transfer": "HIERARCHY_ONLY_CONTENT_FORBIDDEN"
+    },
+    {
+      "input_index": 3,
+      "role": "C_SUPPORTING_CHARACTER_AND_SETTING_CONTINUITY_CANDIDATE_NOT_CANONICAL",
+      "path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+      "sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+      "content_transfer": "CLOTHING_FIRE_AND_LIGHT_PROPOSAL_ONLY"
+    }
+  ],
+  "built_in_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-6bf5a408-30fd-4d17-bd88-eaa237a2c2fd.png",
+  "workspace_output_path": "books/DM02/pages-1-3-production/images/p02-panel-01/v0001.png",
+  "output_sha256": "7702fbc90c1d03295ccb7628281e5f3026d634a714daba1c00cea73db85cede4",
+  "output_dimensions": [1086, 1448],
+  "explicit_payment_requested": false,
+  "api_key_used": false,
+  "external_provider_used": false,
+  "incremental_usd": "UNKNOWN_NOT_EXPOSED"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "campaign_subject_hash": "820c1d0371f19ec0e44a5000c3012f29aab1e05501802ef324078841657211cd",
+  "approval_id": "approval-d50a10509141390a31d41cdb",
+  "operation_order": 1,
+  "unit_id": "page-71e9de766bf786cb9499a31b--p01-panel-02",
+  "panel_id": "p01-panel-02",
+  "provider": "codex-built-in-image-gen",
+  "provider_operation": "generate_with_reference_conditioning",
+  "executed_at": "2026-10-23T12:05:04Z",
+  "attempt": 1,
+  "retry": false,
+  "prompt_sha256": "75e5e8d0d962461709d0cc009f587d372d62bfd09d2b2ec247f9acec985dc23c",
+  "submitted_references": [
+    {
+      "input_index": 1,
+      "role": "A_SERIES_VISUAL_IDENTITY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+      "content_transfer": "STYLE_ONLY_CONTENT_FORBIDDEN"
+    },
+    {
+      "input_index": 2,
+      "role": "B_PAGE_PANEL_COMPOSITION",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d",
+      "content_transfer": "HIERARCHY_ONLY_CONTENT_FORBIDDEN"
+    },
+    {
+      "input_index": 3,
+      "role": "C_SUPPORTING_CHARACTER_AND_SETTING_CONTINUITY_CANDIDATE_NOT_CANONICAL",
+      "path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+      "sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+      "content_transfer": "IDENTITY_AND_FOREST_FRAME_PROPOSAL_ONLY"
+    }
+  ],
+  "built_in_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-883c1299-1b9f-4136-b5d5-7a950833221c.png",
+  "workspace_output_path": "books/DM02/pages-1-3-production/images/p01-panel-02/v0001.png",
+  "output_sha256": "582196a26f1dafa22a669ccfc2f126af1edeb53f3f7c8c01ba47a6702e4972c2",
+  "output_dimensions": [1086, 1448],
+  "explicit_payment_requested": false,
+  "api_key_used": false,
+  "external_provider_used": false,
+  "incremental_usd": "UNKNOWN_NOT_EXPOSED"
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-10-23T12:30:17Z",
+  "reviewer": {
+    "id": "/root/dm02_corrective_pixel_reviewer",
+    "role": "INDEPENDENT_COMPOSED_PAGE_PIXEL_REVIEWER",
+    "actual_pixels_inspected": true,
+    "inspection_resolution": "1086x1448 ORIGINAL",
+    "independent_of_composer": true
+  },
+  "asset": {
+    "path": "books/DM02/private-page-previews/page-a694d4c3702975edfdceb0c5/v0002/0003-page-a694d4c3702975edfdceb0c5.png",
+    "sha256": "e2f4eb52be5d3579f4a8dfc3658a75f9b1abcfdbbc98d5e097228ec6062f636d"
+  },
+  "composed_png": {
+    "path": "books/DM02/private-page-previews/page-a694d4c3702975edfdceb0c5/v0002/0003-page-a694d4c3702975edfdceb0c5.png",
+    "sha256": "e2f4eb52be5d3579f4a8dfc3658a75f9b1abcfdbbc98d5e097228ec6062f636d"
+  },
+  "result": "PASS",
+  "overall_verdict": "PASS",
+  "repair_class": "NOT_REQUIRED",
+  "new_art_required": false,
+  "private_page_3_pdf_eligible": true,
+  "private_pdf_proof_eligible": true,
+  "publication_eligible": false,
+  "assessments": [
+    {
+      "dimension": "EXACT_NARRATION_AND_LEGIBILITY",
+      "result": "PASS",
+      "evidence": "The complete locked narration and punctuation are visibly exact, crisp at 22 px, and free of overflow, clipping, truncation or malformed glyphs."
+    },
+    {
+      "dimension": "PLAQUE_PROPORTIONALITY",
+      "result": "PASS",
+      "evidence": "The 890x152 px plaque fixes v0001's excessive height, retains comfortable padding and exposes materially more source artwork."
+    },
+    {
+      "dimension": "BADGE_TEXT_CLEARANCE",
+      "result": "PASS",
+      "evidence": "Badge 1 is centered and remains clearly separated from the first glyph."
+    },
+    {
+      "dimension": "FRAME_TITLE_AND_NUMBERING",
+      "result": "PASS",
+      "evidence": "The navy-and-gold frame, DM02 masthead, WATER WITHOUT SHORE title and page number 3 are crisp, aligned and unobstructed."
+    },
+    {
+      "dimension": "HORIZONLESS_WATER_NARRATIVE",
+      "result": "PASS",
+      "evidence": "The crop preserves horizonless dissolution water, mist and gold reflections without shore, island, mountain, city, structure, vessel, figure or directional landmark."
+    },
+    {
+      "dimension": "RENDER_ARTIFACTS",
+      "result": "PASS",
+      "evidence": "No visible seams, crop discontinuities, aspect distortion, border collisions or composition artifacts."
+    },
+    {
+      "dimension": "PRIVATE_PREVIEW_LABEL",
+      "result": "PASS",
+      "evidence": "The footer exactly reads INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION and is clearly legible."
+    }
+  ],
+  "scope_limits": [
+    "Eligible only for a Page-3-only private PDF proof carrying the same internal/not-approved labeling.",
+    "No publication approval or theological certification.",
+    "No canonical status or character/environment reference promotion."
+  ]
+}

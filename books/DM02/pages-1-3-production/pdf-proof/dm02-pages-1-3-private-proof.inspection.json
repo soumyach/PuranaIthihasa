@@ -1,0 +1,31 @@
+{
+  "digital_reader_profile": "ONE_NATIVE_1086_X_1448_RASTER_PER_PAGE_NO_PRINT_CLAIM",
+  "engine_version": "0.8.2",
+  "findings": [],
+  "page_count": 1,
+  "page_order": [
+    "page-a694d4c3702975edfdceb0c5"
+  ],
+  "pages": [
+    {
+      "height": 1448.0,
+      "images": [
+        {
+          "dimensions": [
+            1086,
+            1448
+          ],
+          "name": "FormXob.ac191489643e4e81cccae072cbec10fb.png",
+          "pixel_sha256": "98acce14cf154e1282431f8a7add4c2d5e18360852f4441546d2d4189511b050"
+        }
+      ],
+      "orientation": "PORTRAIT",
+      "page_number": 1,
+      "width": 1086.0
+    }
+  ],
+  "pdf_path": "books/DM02/pages-1-3-production/pdf-proof/dm02-pages-1-3-private-proof.pdf",
+  "pdf_sha256": "805e857b3d2ee9afe185401eff1ff2009036dfa6159fe46cb1f0f3b2ff51295e",
+  "result": "PASS",
+  "schema_version": "1.0"
+}
