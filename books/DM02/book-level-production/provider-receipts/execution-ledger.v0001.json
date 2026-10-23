@@ -1,0 +1,1821 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "campaign_id": "dm02-book-level-private-production-v0001",
+  "authorization_subject_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+  "approval_id": "approval-3174e958372faf8a1e6f380f",
+  "provider": "CODEX_BUILT_IN_IMAGE_GENERATION_ONLY",
+  "api_key_used": false,
+  "external_provider_used": false,
+  "explicit_payment_requested": false,
+  "purchased_credit_use_intended_or_authorized": false,
+  "automatic_retry": false,
+  "operation_counts": {
+    "necessary": 29,
+    "conditional_derived_fallback": 3,
+    "review_directed_repair": 7,
+    "total": 39,
+    "ceiling": 43,
+    "unspent_conditional_reserve": 4
+  },
+  "reference_receipt_scope": "Exact paths, SHA-256 hashes, submitted order and roles reconstructed from the local Codex execution transcript and verified against repository bytes.",
+  "operations": [
+    {
+      "operation_index": 1,
+      "unit_id": "p01-panel-02",
+      "operation_class": "NECESSARY_TARGETED_EDIT",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-33f433ef-f5ca-48d0-a500-c2226f2e69c4",
+      "output_path": "books/DM02/book-level-production/images/p01-panel-02/v0002.png",
+      "output_sha256": "501164e2e9351693277abf1c3731f95a0763fd222de5c33bbf440480698b57e0",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "9735a2404ebfee6a8851c8f31d8abe7d82f1fdb3f6a111fdfd84df68773964d3",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "EDIT_TARGET",
+          "path": "books/DM02/pages-1-3-production/images/p01-panel-02/v0001.png",
+          "sha256": "582196a26f1dafa22a669ccfc2f126af1edeb53f3f7c8c01ba47a6702e4972c2"
+        },
+        {
+          "input_index": 2,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 3,
+          "role": "B_CONVERSATIONAL_VISUAL_HIERARCHY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p02.png",
+          "sha256": "a0fa07b60d1b8b128b541300f3fb5e26358863e3153c719e2d0aacb0fd7858dd"
+        },
+        {
+          "input_index": 4,
+          "role": "C_D_CHARACTER_ENVIRONMENT_PROPOSAL_CONTINUITY",
+          "path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+          "sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "FIX_FOR_PRIVATE_PAGE_COMPOSITION"
+    },
+    {
+      "operation_index": 2,
+      "unit_id": "p02-panel-01",
+      "operation_class": "NECESSARY_TARGETED_EDIT",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-e6878bd1-a0d0-4b9e-b8ad-1d2f56ca9b2a",
+      "output_path": "books/DM02/book-level-production/images/p02-panel-01/v0002.png",
+      "output_sha256": "8e2a798a58cdcefd29329ee1d7001c3f01b40207544ef272dbd9ad0efb3d91b8",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "96e5d01f400005fd5cba9adf3fe11aabb3ea083e97b8be67238d3cd1a46f588e",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "EDIT_TARGET",
+          "path": "books/DM02/pages-1-3-production/images/p02-panel-01/v0001.png",
+          "sha256": "7702fbc90c1d03295ccb7628281e5f3026d634a714daba1c00cea73db85cede4"
+        },
+        {
+          "input_index": 2,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 3,
+          "role": "B_CONVERSATIONAL_VISUAL_HIERARCHY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p02.png",
+          "sha256": "a0fa07b60d1b8b128b541300f3fb5e26358863e3153c719e2d0aacb0fd7858dd"
+        },
+        {
+          "input_index": 4,
+          "role": "D_ENVIRONMENT_PROPOSAL_CONTINUITY",
+          "path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+          "sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 3,
+      "unit_id": "p14-panel-02",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-ce2546f7-0265-422d-807d-eb05e17d2504",
+      "output_path": "books/DM02/book-level-production/images/p14-panel-02/v0001.png",
+      "output_sha256": "285d37d4ce2f506f1c5483e7a80aa7b5c6b90ed251ff97e6a8babf846ac48900",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "83113f15d808115cbe0605f537feaf93b6b438f48a257086b263005d622e63c7",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "B_PAGE_PANEL_COMPOSITION",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p21.png",
+          "sha256": "332b208d14df3d94139a3ab598e7e7e327e49bc9d4bbf5f41ddf20d8260291af"
+        },
+        {
+          "input_index": 3,
+          "role": "C_CHARACTER_PROPOSAL_CONTINUITY",
+          "path": "books/DM02/visual-proof-campaign/images/p14-panel-01/v0001.png",
+          "sha256": "c3cf653e36e0d03a0d9b126ffeab56bee0b655ba752d8d988d9d057f8354170c"
+        },
+        {
+          "input_index": 4,
+          "role": "D_ENVIRONMENT_CHARACTER_PROPOSAL_CONTINUITY",
+          "path": "books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png",
+          "sha256": "c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "FIX"
+    },
+    {
+      "operation_index": 4,
+      "unit_id": "p14-panel-03",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-49beb6d7-e95d-465b-9f13-64b3ad562623",
+      "output_path": "books/DM02/book-level-production/images/p14-panel-03/v0001.png",
+      "output_sha256": "ebfc7493442791f0a5d0043f931bd62bbbc652b45fd414b0a97a7365fba19de4",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "d133afcd73ecc1a0c44404307447da22a5b4f6ae2b8cb856505eec5862767236",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "B_PAGE_PANEL_COMPOSITION",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p21.png",
+          "sha256": "332b208d14df3d94139a3ab598e7e7e327e49bc9d4bbf5f41ddf20d8260291af"
+        },
+        {
+          "input_index": 3,
+          "role": "C_CHARACTER_PROPOSAL_CONTINUITY",
+          "path": "books/DM02/visual-proof-campaign/images/p14-panel-01/v0001.png",
+          "sha256": "c3cf653e36e0d03a0d9b126ffeab56bee0b655ba752d8d988d9d057f8354170c"
+        },
+        {
+          "input_index": 4,
+          "role": "D_ENVIRONMENT_CHARACTER_PROPOSAL_CONTINUITY",
+          "path": "books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png",
+          "sha256": "c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 5,
+      "unit_id": "p14-panel-02",
+      "operation_class": "REVIEW_DIRECTED_REPAIR",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-e87e1485-24d8-4b19-b867-5bfa1c810eb9",
+      "output_path": "books/DM02/book-level-production/images/p14-panel-02/v0002.png",
+      "output_sha256": "0c8dd39c7473bd934b005e6342cd1e859b116a31cd7fd76e9ba054fc7f8af125",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "3d1cc03774419c9a38ba0f4f6a751f349149c93ba378c00fadc2bfe10569d9f9",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "EDIT_TARGET",
+          "path": "books/DM02/book-level-production/images/p14-panel-02/v0001.png",
+          "sha256": "285d37d4ce2f506f1c5483e7a80aa7b5c6b90ed251ff97e6a8babf846ac48900"
+        },
+        {
+          "input_index": 2,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 3,
+          "role": "B_PAGE_PANEL_COMPOSITION",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p21.png",
+          "sha256": "332b208d14df3d94139a3ab598e7e7e327e49bc9d4bbf5f41ddf20d8260291af"
+        },
+        {
+          "input_index": 4,
+          "role": "C_D_CHARACTER_ENVIRONMENT_PROPOSAL_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p14-panel-03/v0001.png",
+          "sha256": "ebfc7493442791f0a5d0043f931bd62bbbc652b45fd414b0a97a7365fba19de4"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 6,
+      "unit_id": "p04-panel-01",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-ca8f1a17-276d-44af-abd1-168166cf019b",
+      "output_path": "books/DM02/book-level-production/images/p04-panel-01/v0001.png",
+      "output_sha256": "ab5b99c90bf4de4fa85a24c3d6032135fbbad8942ab5e4514f38e191c4f239cf",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "fb27e5611d49f21c34889db1accf36dbb515945d4223cf932a2369ddbb4b3cc6",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "B_QUIET_FULL_PAGE_COMPOSITION",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+          "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+        },
+        {
+          "input_index": 3,
+          "role": "C_VISHNU_PROPOSAL_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p14-panel-02/v0002.png",
+          "sha256": "0c8dd39c7473bd934b005e6342cd1e859b116a31cd7fd76e9ba054fc7f8af125"
+        },
+        {
+          "input_index": 4,
+          "role": "D_COSMIC_OCEAN_ENVIRONMENT_CONTINUITY",
+          "path": "books/DM02/pages-1-3-production/images/p03-panel-01/v0001.png",
+          "sha256": "8c5e72bf52d71d13997af976c3f7d43917802b8bcd91506d35495031bdf3e86a"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "FIX"
+    },
+    {
+      "operation_index": 7,
+      "unit_id": "p04-panel-01",
+      "operation_class": "REVIEW_DIRECTED_REPAIR",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-8f06fc45-088d-4b88-bab3-fd8b7913b27d",
+      "output_path": "books/DM02/book-level-production/images/p04-panel-01/v0002.png",
+      "output_sha256": "4aeb45297b21d2805326328e05ad91e1233a59c88e709c10ae58618c6c327cef",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "b3025b404cad6a28710b30ad7d70f2552e75fe2e96a96f7a57f7173473b252ac",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "EDIT_TARGET",
+          "path": "books/DM02/book-level-production/images/p04-panel-01/v0001.png",
+          "sha256": "ab5b99c90bf4de4fa85a24c3d6032135fbbad8942ab5e4514f38e191c4f239cf"
+        },
+        {
+          "input_index": 2,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 3,
+          "role": "B_QUIET_FULL_PAGE_COMPOSITION",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+          "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+        },
+        {
+          "input_index": 4,
+          "role": "D_COSMIC_OCEAN_ENVIRONMENT_CONTINUITY",
+          "path": "books/DM02/pages-1-3-production/images/p03-panel-01/v0001.png",
+          "sha256": "8c5e72bf52d71d13997af976c3f7d43917802b8bcd91506d35495031bdf3e86a"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "FIX_NEW_PIXELS_REQUIRED_OPERATION_CEILING_EXHAUSTED"
+    },
+    {
+      "operation_index": 8,
+      "unit_id": "p05-panel-01",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-e9bdd2f1-d8af-44e1-9f5d-9c7338dc82df",
+      "output_path": "books/DM02/book-level-production/images/p05-panel-01/v0001.png",
+      "output_sha256": "f9d3ab7a6c056f32c732728afed2895ee6cddc5bfb20bbcdd0b1954e639a06fa",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "2cc00bdae5ddddeaef2df027d415144b05073e9fa66163495d38c67312c8918f",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "B_QUIET_FULL_PAGE_COMPOSITION",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+          "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+        },
+        {
+          "input_index": 3,
+          "role": "C_VISHNU_PROPOSAL_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p14-panel-02/v0002.png",
+          "sha256": "0c8dd39c7473bd934b005e6342cd1e859b116a31cd7fd76e9ba054fc7f8af125"
+        },
+        {
+          "input_index": 4,
+          "role": "D_COSMIC_OCEAN_ENVIRONMENT_CONTINUITY",
+          "path": "books/DM02/pages-1-3-production/images/p03-panel-01/v0001.png",
+          "sha256": "8c5e72bf52d71d13997af976c3f7d43917802b8bcd91506d35495031bdf3e86a"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "FIX"
+    },
+    {
+      "operation_index": 9,
+      "unit_id": "p05-panel-01",
+      "operation_class": "REVIEW_DIRECTED_REPAIR",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-8408569f-adc8-49b8-b08f-2ee7e9c24f1f",
+      "output_path": "books/DM02/book-level-production/images/p05-panel-01/v0002.png",
+      "output_sha256": "2838d33a4de0132e1810792842b830ad3a6e131a12869564cfe818661daac79f",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "e3a5656801188e9575d560aa2470bae6b553814e94c08ec2148322c4fe3f5d96",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "EDIT_TARGET",
+          "path": "books/DM02/book-level-production/images/p05-panel-01/v0001.png",
+          "sha256": "f9d3ab7a6c056f32c732728afed2895ee6cddc5bfb20bbcdd0b1954e639a06fa"
+        },
+        {
+          "input_index": 2,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 3,
+          "role": "B_QUIET_FULL_PAGE_COMPOSITION",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+          "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+        },
+        {
+          "input_index": 4,
+          "role": "D_CALM_WATER_ENVIRONMENT",
+          "path": "books/DM02/pages-1-3-production/images/p03-panel-01/v0001.png",
+          "sha256": "8c5e72bf52d71d13997af976c3f7d43917802b8bcd91506d35495031bdf3e86a"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "FIX_NEW_PIXELS_REQUIRED_OPERATION_CEILING_EXHAUSTED"
+    },
+    {
+      "operation_index": 10,
+      "unit_id": "p06-panel-01",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-c033edab-79f5-4f1c-b17b-2fc1b4d4940f",
+      "output_path": "books/DM02/book-level-production/images/p06-panel-01/v0001.png",
+      "output_sha256": "814125d77de018725a309998287eeae4ec2f57b2bc4c686848d820ecfedc8fe8",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "f1c1170bcf9ba0899de9e1c252a0767077665078204263f57361db4e8fd19190",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "C_SLEEPING_SACRED_ENSEMBLE_PROPOSAL",
+          "path": "books/DM02/book-level-production/images/p05-panel-01/v0002.png",
+          "sha256": "2838d33a4de0132e1810792842b830ad3a6e131a12869564cfe818661daac79f"
+        },
+        {
+          "input_index": 3,
+          "role": "C_COMBAT_IDENTITY_PROPOSAL",
+          "path": "books/DM02/book-level-production/images/p14-panel-02/v0002.png",
+          "sha256": "0c8dd39c7473bd934b005e6342cd1e859b116a31cd7fd76e9ba054fc7f8af125"
+        },
+        {
+          "input_index": 4,
+          "role": "D_CORRECTED_COMBAT_IDENTITY_PROPOSAL",
+          "path": "books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png",
+          "sha256": "c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "FIX"
+    },
+    {
+      "operation_index": 11,
+      "unit_id": "p06-panel-01",
+      "operation_class": "REVIEW_DIRECTED_REPAIR",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-38992034-ae14-40db-a060-cc75bf18f4c3",
+      "output_path": "books/DM02/book-level-production/images/p06-panel-01/v0002.png",
+      "output_sha256": "769148e073276638fc592549fb6dedf2761d89e30de0c1a24ccf044407967695",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "6bfe8ce6876ecb6df7a03f660a74d201a0660083afeec1f5d35a55c05af8ed91",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "EDIT_TARGET",
+          "path": "books/DM02/book-level-production/images/p06-panel-01/v0001.png",
+          "sha256": "814125d77de018725a309998287eeae4ec2f57b2bc4c686848d820ecfedc8fe8"
+        },
+        {
+          "input_index": 2,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 3,
+          "role": "C_SLEEPING_SACRED_ENSEMBLE_PROPOSAL",
+          "path": "books/DM02/book-level-production/images/p05-panel-01/v0002.png",
+          "sha256": "2838d33a4de0132e1810792842b830ad3a6e131a12869564cfe818661daac79f"
+        },
+        {
+          "input_index": 4,
+          "role": "C_COMBAT_IDENTITY_PROPOSAL",
+          "path": "books/DM02/book-level-production/images/p14-panel-02/v0002.png",
+          "sha256": "0c8dd39c7473bd934b005e6342cd1e859b116a31cd7fd76e9ba054fc7f8af125"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "FIX_NEW_PIXELS_REQUIRED_OPERATION_CEILING_EXHAUSTED"
+    },
+    {
+      "operation_index": 12,
+      "unit_id": "p07-panel-01",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-edf468c6-72f7-4b97-9e6e-c5585a281011",
+      "output_path": "books/DM02/book-level-production/images/p07-panel-01/v0001.png",
+      "output_sha256": "405b82d1ce07ac2582ab279ad3183e7ef9f7acad0ea22d88b6112ac22d1d17c2",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "81c5bb39e5e41e295c7370914b6946a468e1af8f4ac9734cf109c2340fa8b289",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "C_SOURCE_GEOGRAPHY_PROPOSAL",
+          "path": "books/DM02/book-level-production/images/p06-panel-01/v0002.png",
+          "sha256": "769148e073276638fc592549fb6dedf2761d89e30de0c1a24ccf044407967695"
+        },
+        {
+          "input_index": 3,
+          "role": "C_COMBAT_IDENTITIES_PROPOSAL",
+          "path": "books/DM02/book-level-production/images/p14-panel-02/v0002.png",
+          "sha256": "0c8dd39c7473bd934b005e6342cd1e859b116a31cd7fd76e9ba054fc7f8af125"
+        },
+        {
+          "input_index": 4,
+          "role": "C_SLEEPING_ENSEMBLE_PROPOSAL",
+          "path": "books/DM02/book-level-production/images/p05-panel-01/v0002.png",
+          "sha256": "2838d33a4de0132e1810792842b830ad3a6e131a12869564cfe818661daac79f"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "FIX"
+    },
+    {
+      "operation_index": 13,
+      "unit_id": "p07-panel-02",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-069ebb26-9056-43fd-90ed-514fb904d7ad",
+      "output_path": "books/DM02/book-level-production/images/p07-panel-02/v0001.png",
+      "output_sha256": "eb60186532b962dbd7d40708f97ea37af49b9442a4580bc126219c88183021f7",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "ff9859fd535e0f4303eec877a63c39497cc48020ecc5657a9f9fded60ad5ead5",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "C_SOURCE_GEOGRAPHY_PROPOSAL",
+          "path": "books/DM02/book-level-production/images/p06-panel-01/v0002.png",
+          "sha256": "769148e073276638fc592549fb6dedf2761d89e30de0c1a24ccf044407967695"
+        },
+        {
+          "input_index": 3,
+          "role": "C_COMBAT_IDENTITIES_PROPOSAL",
+          "path": "books/DM02/book-level-production/images/p14-panel-02/v0002.png",
+          "sha256": "0c8dd39c7473bd934b005e6342cd1e859b116a31cd7fd76e9ba054fc7f8af125"
+        },
+        {
+          "input_index": 4,
+          "role": "D_CORRECTED_COMBAT_IDENTITIES_PROPOSAL",
+          "path": "books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png",
+          "sha256": "c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 14,
+      "unit_id": "p07-panel-03",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-2f3b26ee-cc39-457b-93e7-b0934d1bf7ba",
+      "output_path": "books/DM02/book-level-production/images/p07-panel-03/v0001.png",
+      "output_sha256": "26a6924dd30ccf09f5e4a72910cbfdf22a6a3fb8f830b30a199809a0f814c0d1",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "0f6c00c67aaac1cb9cf1fa17bf20f2696f1d534d0479e40acd3b54682787c80e",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "C_SOURCE_GEOGRAPHY_PROPOSAL",
+          "path": "books/DM02/book-level-production/images/p06-panel-01/v0002.png",
+          "sha256": "769148e073276638fc592549fb6dedf2761d89e30de0c1a24ccf044407967695"
+        },
+        {
+          "input_index": 3,
+          "role": "C_SLEEPING_ENSEMBLE_PROPOSAL",
+          "path": "books/DM02/book-level-production/images/p05-panel-01/v0002.png",
+          "sha256": "2838d33a4de0132e1810792842b830ad3a6e131a12869564cfe818661daac79f"
+        },
+        {
+          "input_index": 4,
+          "role": "C_COMBAT_IDENTITIES_PROPOSAL",
+          "path": "books/DM02/book-level-production/images/p14-panel-03/v0001.png",
+          "sha256": "ebfc7493442791f0a5d0043f931bd62bbbc652b45fd414b0a97a7365fba19de4"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 15,
+      "unit_id": "p07-panel-01",
+      "operation_class": "REVIEW_DIRECTED_REPAIR",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-c9dfc085-37a8-4f0f-975a-50278ac2c845",
+      "output_path": "books/DM02/book-level-production/images/p07-panel-01/v0002.png",
+      "output_sha256": "65ef35282c8a4ea1038bf6dd30a6ad2ad969692feb4f5387adbf38c50ca6e2f5",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "f02040380623703a0732f069f6288b5017afcc195d493f6ba551755ce2648ba2",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "EDIT_TARGET",
+          "path": "books/DM02/book-level-production/images/p07-panel-01/v0001.png",
+          "sha256": "405b82d1ce07ac2582ab279ad3183e7ef9f7acad0ea22d88b6112ac22d1d17c2"
+        },
+        {
+          "input_index": 2,
+          "role": "C_ADJACENT_PANEL_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p07-panel-03/v0001.png",
+          "sha256": "26a6924dd30ccf09f5e4a72910cbfdf22a6a3fb8f830b30a199809a0f814c0d1"
+        },
+        {
+          "input_index": 3,
+          "role": "C_ADJACENT_PANEL_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p07-panel-02/v0001.png",
+          "sha256": "eb60186532b962dbd7d40708f97ea37af49b9442a4580bc126219c88183021f7"
+        },
+        {
+          "input_index": 4,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 16,
+      "unit_id": "p08-panel-01",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-5ed73c7a-c71e-4319-a0c9-57b28f2b35f6",
+      "output_path": "books/DM02/book-level-production/images/p08-panel-01/v0001.png",
+      "output_sha256": "cce8805857a1557bb1ba4ce0d60784ad4eb5907af352b453887914e41c5d7726",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "7298e17b9f475b1a14ee2682a48bd39055936bf6d60ae8f8f9a0c13c2b6af50b",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "C_PAGE07_IDENTITIES_GEOGRAPHY",
+          "path": "books/DM02/book-level-production/images/p07-panel-02/v0001.png",
+          "sha256": "eb60186532b962dbd7d40708f97ea37af49b9442a4580bc126219c88183021f7"
+        },
+        {
+          "input_index": 3,
+          "role": "C_PAGE07_IDENTITIES_GEOGRAPHY",
+          "path": "books/DM02/book-level-production/images/p07-panel-03/v0001.png",
+          "sha256": "26a6924dd30ccf09f5e4a72910cbfdf22a6a3fb8f830b30a199809a0f814c0d1"
+        },
+        {
+          "input_index": 4,
+          "role": "C_BRAHMA_VISHNU_LOTUS_DETAIL",
+          "path": "books/DM02/book-level-production/images/p05-panel-01/v0002.png",
+          "sha256": "2838d33a4de0132e1810792842b830ad3a6e131a12869564cfe818661daac79f"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 17,
+      "unit_id": "p09-panel-01",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-48cb919d-6bfc-4116-82c7-e3e90df57ede",
+      "output_path": "books/DM02/book-level-production/images/p09-panel-01/v0001.png",
+      "output_sha256": "a316b6ae9ba2f8415c7ad52fcdcb0199a1b761c899ab4bd187c2f459c4e4b0d3",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "3aae2ae9b24adb7328bfa8e4ae6df085ab3e57e158e64e250b7340efd7beb8b3",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "C_PAGE07_IDENTITIES_GEOGRAPHY",
+          "path": "books/DM02/book-level-production/images/p07-panel-03/v0001.png",
+          "sha256": "26a6924dd30ccf09f5e4a72910cbfdf22a6a3fb8f830b30a199809a0f814c0d1"
+        },
+        {
+          "input_index": 3,
+          "role": "C_PAGE07_IDENTITIES_GEOGRAPHY",
+          "path": "books/DM02/book-level-production/images/p07-panel-02/v0001.png",
+          "sha256": "eb60186532b962dbd7d40708f97ea37af49b9442a4580bc126219c88183021f7"
+        },
+        {
+          "input_index": 4,
+          "role": "B_QUIET_DEVOTIONAL_HIERARCHY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+          "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 18,
+      "unit_id": "p10-panel-01",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-a80317c0-5c56-4a60-a55f-a34c6712e154",
+      "output_path": "books/DM02/book-level-production/images/p10-panel-01/v0001.png",
+      "output_sha256": "caba0b24af28693d2ca59d935abeba183bd6652967f0f6bf71f5e8ffb2bca03b",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "d3d7388f8b12ce310053cfc1c06e8d05ad3b8cfd8559061f85af5d87f260a129",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "C_PAGE07_IDENTITIES_GEOGRAPHY",
+          "path": "books/DM02/book-level-production/images/p07-panel-02/v0001.png",
+          "sha256": "eb60186532b962dbd7d40708f97ea37af49b9442a4580bc126219c88183021f7"
+        },
+        {
+          "input_index": 3,
+          "role": "C_PAGE07_IDENTITIES_GEOGRAPHY",
+          "path": "books/DM02/book-level-production/images/p07-panel-03/v0001.png",
+          "sha256": "26a6924dd30ccf09f5e4a72910cbfdf22a6a3fb8f830b30a199809a0f814c0d1"
+        },
+        {
+          "input_index": 4,
+          "role": "C_IDENTITY_SEPARATION",
+          "path": "books/DM02/book-level-production/images/p14-panel-02/v0002.png",
+          "sha256": "0c8dd39c7473bd934b005e6342cd1e859b116a31cd7fd76e9ba054fc7f8af125"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "FIX"
+    },
+    {
+      "operation_index": 19,
+      "unit_id": "p10-panel-02",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-ec58c430-5a4b-43f6-9bbe-377fd0f5abb2",
+      "output_path": "books/DM02/book-level-production/images/p10-panel-02/v0001.png",
+      "output_sha256": "4050cf5b1e9187e0ed9639cc0c9aec5e894d96781c6189bc52fd0892d282e5df",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "8869b9674b6b0f181312738fb8bb0c562f72bf02fc81750a5f7add82f7c6daa7",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "C_SLEEPING_IDENTITY_GEOGRAPHY",
+          "path": "books/DM02/book-level-production/images/p07-panel-03/v0001.png",
+          "sha256": "26a6924dd30ccf09f5e4a72910cbfdf22a6a3fb8f830b30a199809a0f814c0d1"
+        },
+        {
+          "input_index": 3,
+          "role": "C_SLEEPING_DETAIL_PROPOSAL",
+          "path": "books/DM02/book-level-production/images/p05-panel-01/v0002.png",
+          "sha256": "2838d33a4de0132e1810792842b830ad3a6e131a12869564cfe818661daac79f"
+        },
+        {
+          "input_index": 4,
+          "role": "D_COSMIC_OCEAN_ENVIRONMENT",
+          "path": "books/DM02/pages-1-3-production/images/p03-panel-01/v0001.png",
+          "sha256": "8c5e72bf52d71d13997af976c3f7d43917802b8bcd91506d35495031bdf3e86a"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "FIX"
+    },
+    {
+      "operation_index": 20,
+      "unit_id": "p12-panel-01",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-7c5a5329-8c94-46a9-b426-b90230dcc9aa",
+      "output_path": "books/DM02/book-level-production/images/p12-panel-01/v0001.png",
+      "output_sha256": "261a71e1748f8daf193be1b1c643be64a1fc87f1d54e18add9c9b98b30d2e01f",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "1d44e2c7c6668f2e0dda23cd2ef10edaad9d60a928e1119fb552988d17e94608",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "C_SLEEPING_IDENTITY_ENVIRONMENT",
+          "path": "books/DM02/book-level-production/images/p07-panel-03/v0001.png",
+          "sha256": "26a6924dd30ccf09f5e4a72910cbfdf22a6a3fb8f830b30a199809a0f814c0d1"
+        },
+        {
+          "input_index": 3,
+          "role": "C_AWAKE_VISHNU_PROPOSAL",
+          "path": "books/DM02/book-level-production/images/p14-panel-02/v0002.png",
+          "sha256": "0c8dd39c7473bd934b005e6342cd1e859b116a31cd7fd76e9ba054fc7f8af125"
+        },
+        {
+          "input_index": 4,
+          "role": "C_SLEEPING_FACE_HAIR_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p05-panel-01/v0002.png",
+          "sha256": "2838d33a4de0132e1810792842b830ad3a6e131a12869564cfe818661daac79f"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "FIX"
+    },
+    {
+      "operation_index": 21,
+      "unit_id": "p12-panel-02",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-95aae82a-62e5-4f31-8a70-3879a1975515",
+      "output_path": "books/DM02/book-level-production/images/p12-panel-02/v0001.png",
+      "output_sha256": "3bd39e07ea8602d978abae17d356371a32cb4ed9b53c7e51befaaef7862e4fe1",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "e15727bfbeef93c50a82b70d4736164b5514aad6ebb3acbf3a56c3cb8feb9806",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "C_SOURCE_GEOGRAPHY_IDENTITIES",
+          "path": "books/DM02/book-level-production/images/p07-panel-03/v0001.png",
+          "sha256": "26a6924dd30ccf09f5e4a72910cbfdf22a6a3fb8f830b30a199809a0f814c0d1"
+        },
+        {
+          "input_index": 3,
+          "role": "C_AWAKE_COMBAT_IDENTITIES",
+          "path": "books/DM02/book-level-production/images/p14-panel-02/v0002.png",
+          "sha256": "0c8dd39c7473bd934b005e6342cd1e859b116a31cd7fd76e9ba054fc7f8af125"
+        },
+        {
+          "input_index": 4,
+          "role": "C_BRAHMA_LOTUS_SHESHA_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p05-panel-01/v0002.png",
+          "sha256": "2838d33a4de0132e1810792842b830ad3a6e131a12869564cfe818661daac79f"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS_WITH_SCOPE_LIMIT"
+    },
+    {
+      "operation_index": 22,
+      "unit_id": "p13-panel-01",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-69b58501-85e5-4c7a-b47a-a8bc9b5143b2",
+      "output_path": "books/DM02/book-level-production/images/p13-panel-01/v0001.png",
+      "output_sha256": "aa4758c6df522018629794a33fbf6eeb06a90e4939f5c404118da33c60069b56",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "c309ff0d8a020cefb612d7213186a76e15b88ac0384ddb08cf87580c3beab052",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "C_COMBAT_IDENTITIES_ACTION_PALETTE",
+          "path": "books/DM02/book-level-production/images/p14-panel-02/v0002.png",
+          "sha256": "0c8dd39c7473bd934b005e6342cd1e859b116a31cd7fd76e9ba054fc7f8af125"
+        },
+        {
+          "input_index": 3,
+          "role": "C_COMBAT_IDENTITIES_ACTION_PALETTE",
+          "path": "books/DM02/book-level-production/images/p14-panel-03/v0001.png",
+          "sha256": "ebfc7493442791f0a5d0043f931bd62bbbc652b45fd414b0a97a7365fba19de4"
+        },
+        {
+          "input_index": 4,
+          "role": "C_SOURCE_APPROACH_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p07-panel-02/v0001.png",
+          "sha256": "eb60186532b962dbd7d40708f97ea37af49b9442a4580bc126219c88183021f7"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 23,
+      "unit_id": "p13-panel-02",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-49ab7a4f-97e9-4391-b3a7-43c6da1710b0",
+      "output_path": "books/DM02/book-level-production/images/p13-panel-02/v0001.png",
+      "output_sha256": "f0f7ac73ffa16d826f9c2bb999174188df10e50f48dd8a676505d30bfe2e0efb",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "61334533927e6f817878eead3d0b2b243463260f17f0df0dbf1578fcbe8ff035",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "C_COMBAT_IDENTITIES_ACTION_PALETTE",
+          "path": "books/DM02/book-level-production/images/p14-panel-02/v0002.png",
+          "sha256": "0c8dd39c7473bd934b005e6342cd1e859b116a31cd7fd76e9ba054fc7f8af125"
+        },
+        {
+          "input_index": 3,
+          "role": "C_COMBAT_IDENTITIES_ACTION_PALETTE",
+          "path": "books/DM02/book-level-production/images/p14-panel-03/v0001.png",
+          "sha256": "ebfc7493442791f0a5d0043f931bd62bbbc652b45fd414b0a97a7365fba19de4"
+        },
+        {
+          "input_index": 4,
+          "role": "C_PRECOMBAT_IDENTITY_SEPARATION",
+          "path": "books/DM02/book-level-production/images/p07-panel-02/v0001.png",
+          "sha256": "eb60186532b962dbd7d40708f97ea37af49b9442a4580bc126219c88183021f7"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 24,
+      "unit_id": "p10-panel-01",
+      "operation_class": "REVIEW_DIRECTED_REPAIR",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-586fd462-f1b8-4ece-b950-42fa135d7758",
+      "output_path": "books/DM02/book-level-production/images/p10-panel-01/v0002.png",
+      "output_sha256": "dc812acc21afd5aa48e45c32da374f40837631d2e0f298b0b36589651251f2fd",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "bd60813ee38b13777b9e21c6e0fa0f4414af71e2956749644d91b632e22a2356",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "EDIT_TARGET",
+          "path": "books/DM02/book-level-production/images/p10-panel-01/v0001.png",
+          "sha256": "caba0b24af28693d2ca59d935abeba183bd6652967f0f6bf71f5e8ffb2bca03b"
+        },
+        {
+          "input_index": 2,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 3,
+          "role": "B_QUIET_DEVOTIONAL_HIERARCHY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+          "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 25,
+      "unit_id": "p10-panel-02",
+      "operation_class": "REVIEW_DIRECTED_REPAIR",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-f46bf578-9e67-4781-93a9-039497307fa8",
+      "output_path": "books/DM02/book-level-production/images/p10-panel-02/v0002.png",
+      "output_sha256": "0e6de7876ba1694629a63e8c4f7d0c45faa415b2b6e895dfa2006c827a36fd4d",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "c8dbc4b488f989d4127e1a6b09e0e537d6ba18d0810d26fa6cf0a5ec22b964f3",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "EDIT_TARGET",
+          "path": "books/DM02/book-level-production/images/p10-panel-02/v0001.png",
+          "sha256": "4050cf5b1e9187e0ed9639cc0c9aec5e894d96781c6189bc52fd0892d282e5df"
+        },
+        {
+          "input_index": 2,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 3,
+          "role": "B_QUIET_DEVOTIONAL_HIERARCHY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+          "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "FIX_NEW_PIXELS_REQUIRED_REPAIR_BUDGET_EXHAUSTED"
+    },
+    {
+      "operation_index": 26,
+      "unit_id": "p13-panel-03",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-0f6de6b7-d47f-477c-9c93-17d387b52aa9",
+      "output_path": "books/DM02/book-level-production/images/p13-panel-03/v0001.png",
+      "output_sha256": "cd1b7c05130ae71fbfba4fa03c2550174994e9bd42fa2d011a75501e99b264a1",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "82ee4ab3c97b9f4ca62caed11f7f2dea4eee7c98f6031ba2db3fb3d2d8492e1b",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "B_WIDE_ACTION_HIERARCHY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p21.png",
+          "sha256": "332b208d14df3d94139a3ab598e7e7e327e49bc9d4bbf5f41ddf20d8260291af"
+        },
+        {
+          "input_index": 3,
+          "role": "C_COMBATANT_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p13-panel-02/v0001.png",
+          "sha256": "f0f7ac73ffa16d826f9c2bb999174188df10e50f48dd8a676505d30bfe2e0efb"
+        },
+        {
+          "input_index": 4,
+          "role": "D_BRAHMA_YOGANIDRA_PROPOSAL_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p12-panel-02/v0001.png",
+          "sha256": "3bd39e07ea8602d978abae17d356371a32cb4ed9b53c7e51befaaef7862e4fe1"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS_WITH_SCOPE_LIMIT"
+    },
+    {
+      "operation_index": 27,
+      "unit_id": "p15-panel-01",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-501d31b6-9b85-4e87-ab98-d99cfeda6733",
+      "output_path": "books/DM02/book-level-production/images/p15-panel-01/v0001.png",
+      "output_sha256": "9be5d97f9b996304b2da555b370b3ad3b04bf1bd36bc780720c382845e624820",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "4131fe4ca3db5d632f746d5d96a0ce5f27994407608b8e72ae4576ab7c818c2b",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "B_CLIMACTIC_HIERARCHY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p21.png",
+          "sha256": "332b208d14df3d94139a3ab598e7e7e327e49bc9d4bbf5f41ddf20d8260291af"
+        },
+        {
+          "input_index": 3,
+          "role": "C_COMBATANT_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p13-panel-02/v0001.png",
+          "sha256": "f0f7ac73ffa16d826f9c2bb999174188df10e50f48dd8a676505d30bfe2e0efb"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 28,
+      "unit_id": "p16-panel-01",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-ad8d7921-56be-4fef-a32e-acc468234c48",
+      "output_path": "books/DM02/book-level-production/images/p16-panel-01/v0001.png",
+      "output_sha256": "2519766e96643103954685d96ce75143a2b5ee71a2342797cbdf630fbe9b6285",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "679137222dd6ca3aff5f990479d87208963e75df76b972b71a61bbdfa180c8d1",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "B_ACTION_HIERARCHY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p21.png",
+          "sha256": "332b208d14df3d94139a3ab598e7e7e327e49bc9d4bbf5f41ddf20d8260291af"
+        },
+        {
+          "input_index": 3,
+          "role": "C_COMBATANT_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p13-panel-02/v0001.png",
+          "sha256": "f0f7ac73ffa16d826f9c2bb999174188df10e50f48dd8a676505d30bfe2e0efb"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 29,
+      "unit_id": "p16-panel-02",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-b2d527ea-b334-4817-b1cf-a09c2b8ef31c",
+      "output_path": "books/DM02/book-level-production/images/p16-panel-02/v0001.png",
+      "output_sha256": "7fcfe88c2c1dcfccac6dba6cc0d176f053ab89b0d823c60e0b2ee2576cf8341d",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "9ce17b6f731a3e51dbdc890c2a88b7f7087632c052dd01ef5ddfd66358ad3dba",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "B_VISUAL_HIERARCHY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p21.png",
+          "sha256": "332b208d14df3d94139a3ab598e7e7e327e49bc9d4bbf5f41ddf20d8260291af"
+        },
+        {
+          "input_index": 3,
+          "role": "C_COMBATANT_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p13-panel-02/v0001.png",
+          "sha256": "f0f7ac73ffa16d826f9c2bb999174188df10e50f48dd8a676505d30bfe2e0efb"
+        },
+        {
+          "input_index": 4,
+          "role": "D_YOGANIDRA_PALETTE_PROPOSAL_ONLY",
+          "path": "books/DM02/book-level-production/images/p12-panel-02/v0001.png",
+          "sha256": "3bd39e07ea8602d978abae17d356371a32cb4ed9b53c7e51befaaef7862e4fe1"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS_WITH_SCOPE_LIMIT"
+    },
+    {
+      "operation_index": 30,
+      "unit_id": "p17-panel-01",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-c04b5473-4b7f-49c7-8650-fc905fe991ca",
+      "output_path": "books/DM02/book-level-production/images/p17-panel-01/v0001.png",
+      "output_sha256": "5db03290a41116d6fbc43c24b87e6a8ef5efb6e03b8a4ad7eae723f5fd30fe97",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "7a130da2829a98ce73aeb9cf0ac78d877c62c7838065b80e76b69ee7f46def0d",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "B_BALANCED_NARRATIVE_HIERARCHY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+          "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5"
+        },
+        {
+          "input_index": 3,
+          "role": "C_COMBATANT_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p13-panel-02/v0001.png",
+          "sha256": "f0f7ac73ffa16d826f9c2bb999174188df10e50f48dd8a676505d30bfe2e0efb"
+        },
+        {
+          "input_index": 4,
+          "role": "D_COMBATANT_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p13-panel-01/v0001.png",
+          "sha256": "aa4758c6df522018629794a33fbf6eeb06a90e4939f5c404118da33c60069b56"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 31,
+      "unit_id": "p18-panel-01",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-ebd3ccec-7324-4d1b-adc8-2bc7d8901233",
+      "output_path": "books/DM02/book-level-production/images/p18-panel-01/v0001.png",
+      "output_sha256": "924118f3afbc9776c7600b667bfd4de5ac0fa4b3e18672ad7edd3db981821936",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "bec677beef6b672d38f39382ea63c8aa1bbac492680a6af3bff5acf8364db05d",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "B_DIALOGUE_HIERARCHY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+          "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5"
+        },
+        {
+          "input_index": 3,
+          "role": "C_COMBATANT_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p13-panel-02/v0001.png",
+          "sha256": "f0f7ac73ffa16d826f9c2bb999174188df10e50f48dd8a676505d30bfe2e0efb"
+        },
+        {
+          "input_index": 4,
+          "role": "D_COMBATANT_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p13-panel-01/v0001.png",
+          "sha256": "aa4758c6df522018629794a33fbf6eeb06a90e4939f5c404118da33c60069b56"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 32,
+      "unit_id": "p19-panel-01",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-aad88989-8f06-4a36-a10e-0f3ba92e994a",
+      "output_path": "books/DM02/book-level-production/images/p19-panel-01/v0001.png",
+      "output_sha256": "546cb28e21e15d803d5277e88b312d00dc1482f3979f1adaca7a9a0e934e89b7",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "ca4913685e737d71e27ae19bd23c594582a5f764f45bb2487d894438b5d35a37",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "B_BALANCED_NARRATIVE_SCALE",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+          "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5"
+        },
+        {
+          "input_index": 3,
+          "role": "C_COMBATANT_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p13-panel-02/v0001.png",
+          "sha256": "f0f7ac73ffa16d826f9c2bb999174188df10e50f48dd8a676505d30bfe2e0efb"
+        },
+        {
+          "input_index": 4,
+          "role": "D_COMBATANT_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p13-panel-01/v0001.png",
+          "sha256": "aa4758c6df522018629794a33fbf6eeb06a90e4939f5c404118da33c60069b56"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "FIX_NEW_PIXELS_REQUIRED_REPAIR_BUDGET_EXHAUSTED"
+    },
+    {
+      "operation_index": 33,
+      "unit_id": "p19-panel-03",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-549291a8-b954-4c9b-801d-e17ca4184da6",
+      "output_path": "books/DM02/book-level-production/images/p19-panel-03/v0001.png",
+      "output_sha256": "404f2bcae67fabb6b311d197f20cfa8df091a082516539f21ac078540f5f5283",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "fd9c4d6c4a60e3fc143f303dadc9ea2925bb99ce6b406fdb9accc1ac7c4a7aea",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "B_PORTRAIT_HIERARCHY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+          "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5"
+        },
+        {
+          "input_index": 3,
+          "role": "C_VISHNU_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p13-panel-02/v0001.png",
+          "sha256": "f0f7ac73ffa16d826f9c2bb999174188df10e50f48dd8a676505d30bfe2e0efb"
+        },
+        {
+          "input_index": 4,
+          "role": "D_VISHNU_WATER_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p13-panel-01/v0001.png",
+          "sha256": "aa4758c6df522018629794a33fbf6eeb06a90e4939f5c404118da33c60069b56"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "FIX_NEW_PIXELS_REQUIRED_REPAIR_BUDGET_EXHAUSTED"
+    },
+    {
+      "operation_index": 34,
+      "unit_id": "p20-panel-01",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-02c99ba4-6e6e-4ff6-992b-84a4cd22b1b0",
+      "output_path": "books/DM02/book-level-production/images/p20-panel-01/v0001.png",
+      "output_sha256": "20c88f2c55c01d74e174bfa4d9f11610a1e520170d7b95616eb5137eb316aaa0",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "f24e7a20a720575c8fb9f7387eed1f0ddaac8a10b24b9cd85443be444e2a3e0f",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "B_RESTRAINED_CLIMACTIC_HIERARCHY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+          "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5"
+        },
+        {
+          "input_index": 3,
+          "role": "C_COMBATANT_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p13-panel-01/v0001.png",
+          "sha256": "aa4758c6df522018629794a33fbf6eeb06a90e4939f5c404118da33c60069b56"
+        },
+        {
+          "input_index": 4,
+          "role": "D_COMBATANT_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p13-panel-02/v0001.png",
+          "sha256": "f0f7ac73ffa16d826f9c2bb999174188df10e50f48dd8a676505d30bfe2e0efb"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "FIX_NEW_PIXELS_REQUIRED_REPAIR_BUDGET_EXHAUSTED"
+    },
+    {
+      "operation_index": 35,
+      "unit_id": "p20-panel-02",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-b0f4b122-3678-41ad-acd8-8be81fb7a07d",
+      "output_path": "books/DM02/book-level-production/images/p20-panel-02/v0001.png",
+      "output_sha256": "756b07556f0b8fa8999a2876c20ceeef3602f07b6095312f80f5315818f16603",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "6000ac28a731dc96bc9d59e14ef198f4da54df4edc7780c1c39c89ad232aff14",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "B_RESTRAINED_RESOLUTION_HIERARCHY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+          "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5"
+        },
+        {
+          "input_index": 3,
+          "role": "C_COMBATANT_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p13-panel-01/v0001.png",
+          "sha256": "aa4758c6df522018629794a33fbf6eeb06a90e4939f5c404118da33c60069b56"
+        },
+        {
+          "input_index": 4,
+          "role": "D_COMBATANT_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p13-panel-02/v0001.png",
+          "sha256": "f0f7ac73ffa16d826f9c2bb999174188df10e50f48dd8a676505d30bfe2e0efb"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "FIX_NEW_PIXELS_REQUIRED_REPAIR_BUDGET_EXHAUSTED"
+    },
+    {
+      "operation_index": 36,
+      "unit_id": "p22-panel-01",
+      "operation_class": "NECESSARY_NEW_MASTER",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-e00f1856-9c45-474b-9242-1b868bdc88fa",
+      "output_path": "books/DM02/book-level-production/images/p22-panel-01/v0001.png",
+      "output_sha256": "684fd2405f5959719a3727ba56e9ae46c0fb41e3da574ecc9c685e2ec3417e93",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "c995c4245b4c982e5754308d5408471f39851ef90b7f88258f061351309ac659",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "B_INTIMATE_PAGE_HIERARCHY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+          "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+        },
+        {
+          "input_index": 3,
+          "role": "C_HERMITAGE_GEOMETRY_PROPOSAL",
+          "path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+          "sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27"
+        },
+        {
+          "input_index": 4,
+          "role": "D_FRAME_CHARACTER_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p01-panel-02/v0002.png",
+          "sha256": "501164e2e9351693277abf1c3731f95a0763fd222de5c33bbf440480698b57e0"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 37,
+      "unit_id": "p05-panel-02",
+      "operation_class": "CONDITIONAL_DERIVED_PANEL_FALLBACK",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-4874df32-4de6-4fd8-a784-f06bdb8b7d01",
+      "output_path": "books/DM02/book-level-production/images/p05-panel-02/v0001.png",
+      "output_sha256": "4ded6766202923f6f9ddd9f74eab40c3336258c3713c199e7f1c74959716560a",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "0bf033ec411d0863fb4d7da973e2012a36cf5be33a6a5eb2f979292f3414a7e3",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "B_QUIET_SACRED_HIERARCHY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+          "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+        },
+        {
+          "input_index": 3,
+          "role": "C_BRAHMA_FACE_PALETTE_LOTUS_PROPOSAL",
+          "path": "books/DM02/book-level-production/images/p05-panel-01/v0002.png",
+          "sha256": "2838d33a4de0132e1810792842b830ad3a6e131a12869564cfe818661daac79f"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 38,
+      "unit_id": "p18-panel-02",
+      "operation_class": "CONDITIONAL_DERIVED_PANEL_FALLBACK",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-1e70d347-f733-4ddc-886a-6d117e15fd97",
+      "output_path": "books/DM02/book-level-production/images/p18-panel-02/v0001.png",
+      "output_sha256": "cc57fb64b066df1e182bfb567773fc230e86bb62179dc82eb22c4798e8619a2d",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "7372deff572c1bfe7aacf409ca444fe1a4249d6d84b9b15a703826d9a97c496e",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "B_BALANCED_DIALOGUE_HIERARCHY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+          "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5"
+        },
+        {
+          "input_index": 3,
+          "role": "C_COMBATANT_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p17-panel-01/v0001.png",
+          "sha256": "5db03290a41116d6fbc43c24b87e6a8ef5efb6e03b8a4ad7eae723f5fd30fe97"
+        },
+        {
+          "input_index": 4,
+          "role": "D_COMBATANT_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p18-panel-01/v0001.png",
+          "sha256": "924118f3afbc9776c7600b667bfd4de5ac0fa4b3e18672ad7edd3db981821936"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 39,
+      "unit_id": "p19-panel-02",
+      "operation_class": "CONDITIONAL_DERIVED_PANEL_FALLBACK",
+      "provider": "Codex built-in image generation",
+      "provider_operation_identifier": "exec-fcc92565-c21f-452c-aad2-ab9b52c5184b",
+      "output_path": "books/DM02/book-level-production/images/p19-panel-02/v0001.png",
+      "output_sha256": "a2021ffb1495fcabf73bb6b71aac225d010ff33bc0483c56ae419e38e363ec28",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "tool_revised_prompt_sha256": "0caaa1b9455cc7c77a2edf39a1ab9e17cadf2e1c65646086b7db18cd2bb8361e",
+      "references": [
+        {
+          "input_index": 1,
+          "role": "A_SERIES_VISUAL_IDENTITY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+          "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+        },
+        {
+          "input_index": 2,
+          "role": "B_BALANCED_DIALOGUE_HIERARCHY",
+          "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+          "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5"
+        },
+        {
+          "input_index": 3,
+          "role": "C_MADHU_KAITABHA_CONTINUITY",
+          "path": "books/DM02/book-level-production/images/p17-panel-01/v0001.png",
+          "sha256": "5db03290a41116d6fbc43c24b87e6a8ef5efb6e03b8a4ad7eae723f5fd30fe97"
+        }
+      ],
+      "billing_observation": {
+        "api_key_used": false,
+        "external_provider_used": false,
+        "explicit_payment_requested": false,
+        "purchased_credit_use_authorized": false
+      },
+      "independent_review_result": "PASS"
+    }
+  ]
+}

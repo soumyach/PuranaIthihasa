@@ -4,7 +4,7 @@ import unittest
 from copy import deepcopy
 from pathlib import Path
 
-from book_factory.director import FactoryDirector
+from book_factory.director import FactoryDirector, _validate_private_pdf_review_bindings
 from book_factory.errors import BlockedError, ContractError
 from book_factory.page_engine import (
     CANVAS,
@@ -159,6 +159,76 @@ class PageEnginePR8Tests(unittest.TestCase):
         self.assertLess(zoomed[3] - zoomed[1], base[3] - base[1])
         self.assertAlmostEqual((zoomed[2] - zoomed[0]) / (zoomed[3] - zoomed[1]), 2.0, places=2)
 
+    def test_12c_contain_mode_preserves_complete_source(self):
+        spec = self.page(2)
+        spec["panels"][0]["crop"] = {
+            "mode": "CONTAIN",
+            "focal_point": {"x": 0.5, "y": 0.5},
+            "zoom": 1.0,
+        }
+        rendered = compose_page(spec, ROOT, self.output / "contain", True, FONT_CONFIG)
+        composition = load_json(Path(rendered["composition"]))
+        panel = composition["resolved_panels"][0]
+        self.assertEqual(panel["scale_mode"], "ASPECT_PRESERVING_CONTAIN")
+        self.assertEqual(panel["source_crop"], [0, 0] + panel["source_dimensions"])
+        self.assertLessEqual(panel["rendered_size"][0], panel["box"][2] - panel["box"][0])
+        self.assertLessEqual(panel["rendered_size"][1], panel["box"][3] - panel["box"][1])
+
+        spec["panels"][0]["crop"]["mode"] = "STRETCH"
+        self.assertIn("CROP_MODE", self.codes(validate_page_spec(spec, ROOT, True, FONT_CONFIG)))
+
+    def test_12d_assetless_back_matter_is_narrowly_scoped(self):
+        spec = self.page(2)
+        spec["layout_type"] = "REFLECTION_SOURCE_NOTE"
+        spec["panels"] = [{
+            "panel_id": "source-note-panel",
+            "reading_order": 1,
+            "assetless": {"kind": "DETERMINISTIC_DECORATIVE_TEXT_BACKGROUND"},
+            "speaker_anchors": [],
+        }]
+        spec["lettering"] = []
+        spec["required_lettering_ids"] = []
+        rendered = compose_page(spec, ROOT, self.output / "assetless-back-matter", True, FONT_CONFIG)
+        composition = load_json(Path(rendered["composition"]))
+        self.assertEqual(
+            composition["resolved_panels"][0]["scale_mode"],
+            "DETERMINISTIC_DECORATIVE_TEXT_BACKGROUND",
+        )
+
+        spec["layout_type"] = "SINGLE_PANEL_IMMERSIVE"
+        self.assertIn("ASSETLESS_PANEL_SCOPE", self.codes(validate_page_spec(spec, ROOT, True, FONT_CONFIG)))
+
+    def test_12e_private_preview_narration_may_use_a_collision_free_page_band(self):
+        spec = self.page()
+        spec["fixture"] = False
+        spec["private_preview"] = True
+        spec["publication_eligible"] = False
+        spec["non_production_label"] = "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION"
+        spec["approvals"] = {
+            "manuscript": {"status": "LOCKED_FOR_PRIVATE_PREVIEW", "subject_hash": spec["manuscript_hash"]},
+            "storyboard": {"status": "LOCKED_FOR_PRIVATE_PREVIEW", "subject_hash": spec["storyboard_hash"]},
+            "series_standard": {"status": "LOCKED_FOR_PRIVATE_PREVIEW", "subject_hash": content_hash(spec["series_standard"])},
+        }
+        for panel in spec["panels"]:
+            panel["asset"]["usage"] = "PRIVATE_INTERNAL_PRODUCTION_PREVIEW"
+            panel["asset"]["approval"] = {
+                "status": "PRIVATE_PREVIEW_AUTHORIZED",
+                "subject_hash": panel["asset"]["sha256"],
+            }
+        spec["panels"][0]["box"] = {"x": 0.045, "y": 0.105, "width": 0.91, "height": 0.32}
+        spec["panels"][1]["box"] = {"x": 0.045, "y": 0.56, "width": 0.91, "height": 0.365}
+        narration = next(item for item in spec["lettering"] if item["channel"] == "NARRATION")
+        narration["placement_scope"] = "PAGE_BAND"
+        narration["box"] = {"x": 0.08, "y": 0.44, "width": 0.84, "height": 0.10}
+        report = validate_page_spec(spec, ROOT, False, FONT_CONFIG, private_preview=True)
+        self.assertNotIn("LETTERING_PANEL_BOUNDARY", self.codes(report))
+        self.assertNotIn("PAGE_BAND_PANEL_COLLISION", self.codes(report))
+        narration["box"]["y"] = 0.40
+        self.assertIn(
+            "PAGE_BAND_PANEL_COLLISION",
+            self.codes(validate_page_spec(spec, ROOT, False, FONT_CONFIG, private_preview=True)),
+        )
+
     def test_13_layout_collision_detection(self):
         spec = self.page()
         spec["lettering"][1]["box"] = deepcopy(spec["lettering"][0]["box"])
@@ -193,6 +263,28 @@ class PageEnginePR8Tests(unittest.TestCase):
     def test_16_pdf_page_ordering(self):
         report = inspect_pdf(self.pdf["pdf_path"], self.composed_manifest)
         self.assertEqual(report["page_order"], [item["page_id"] for item in self.composed_manifest["pages"]])
+
+    def test_16b_private_pdf_binds_each_page_to_its_own_review(self):
+        pages = deepcopy(self.composed_manifest["pages"][:2])
+        review_paths = []
+        for index, page in enumerate(pages, 1):
+            review = {
+                "page_id": page["page_id"],
+                "overall_verdict": "PASS",
+                "private_pdf_proof_eligible": True,
+                "composed_png": {"sha256": page["png_sha256"]},
+            }
+            path = self.output / ("private-review-%d.json" % index)
+            path.write_text(json.dumps(review), encoding="utf-8")
+            review_paths.append(str(path.relative_to(self.output)))
+        manifest = {"pages": pages, "composed_page_reviews": review_paths}
+        self.assertEqual(
+            _validate_private_pdf_review_bindings(self.output, manifest),
+            review_paths,
+        )
+        manifest["composed_page_reviews"] = review_paths[:1]
+        with self.assertRaisesRegex(ContractError, "one persisted independent review per page"):
+            _validate_private_pdf_review_bindings(self.output, manifest)
 
     def test_17_pdf_page_count(self):
         report = inspect_pdf(self.pdf["pdf_path"], self.composed_manifest)

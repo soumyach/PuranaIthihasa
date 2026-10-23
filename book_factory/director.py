@@ -75,6 +75,28 @@ from .versioning import (
 )
 
 
+def _validate_private_pdf_review_bindings(root, manifest):
+    """Bind every private-preview PDF page to an independent pixel review."""
+    pages = manifest.get("pages", [])
+    review_paths = manifest.get("composed_page_reviews")
+    if review_paths is None:
+        legacy = manifest.get("composed_page_review")
+        review_paths = [legacy] if legacy else []
+    if not isinstance(review_paths, list) or len(review_paths) != len(pages):
+        raise ContractError("private preview PDF requires one persisted independent review per page")
+    for page, review_path in zip(pages, review_paths):
+        if not isinstance(review_path, str) or not (Path(root) / review_path).is_file():
+            raise ContractError("private preview PDF requires a persisted independent composed-page review")
+        review = load_json(Path(root) / review_path)
+        if review.get("overall_verdict") != "PASS" or review.get("private_pdf_proof_eligible") is not True:
+            raise ContractError("private preview PDF requires independent page-level PASS eligibility")
+        if review.get("page_id") not in {None, page.get("page_id")}:
+            raise ContractError("private preview PDF page ID differs from its independent review")
+        if review.get("composed_png", {}).get("sha256") != page.get("png_sha256"):
+            raise ContractError("private preview PDF page differs from its independent review")
+    return review_paths
+
+
 class FactoryDirector:
     def __init__(self, repository_root, catalogue_path=None, orchestration_runtime_root=None):
         self.root = Path(repository_root).resolve()
@@ -2294,15 +2316,7 @@ class FactoryDirector:
                 raise ContractError("private preview PDF manifest must be explicitly isolated and publication-ineligible")
             if manifest.get("label") != "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION":
                 raise ContractError("private preview PDF manifest requires the exact visible non-production label")
-            review_path = manifest.get("composed_page_review")
-            if not review_path or not (self.root / review_path).is_file():
-                raise ContractError("private preview PDF requires a persisted independent composed-page review")
-            review = load_json(self.root / review_path)
-            if review.get("overall_verdict") != "PASS" or review.get("private_pdf_proof_eligible") is not True:
-                raise ContractError("private preview PDF requires independent page-level PASS eligibility")
-            pages = manifest.get("pages", [])
-            if len(pages) != 1 or review.get("composed_png", {}).get("sha256") != pages[0].get("png_sha256"):
-                raise ContractError("private preview PDF page differs from its independent review")
+            _validate_private_pdf_review_bindings(self.root, manifest)
         result = build_reader_pdf(manifest, Path(output_path), fixture_mode)
         if not fixture_mode and not private_preview:
             record_payload = {

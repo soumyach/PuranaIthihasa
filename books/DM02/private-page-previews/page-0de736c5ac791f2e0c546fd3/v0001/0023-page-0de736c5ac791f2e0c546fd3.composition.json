@@ -1,0 +1,163 @@
+{
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"
+    }
+  },
+  "book_id": "DM02",
+  "book_version": "DM02-BOOK-LEVEL-PRODUCTION-PAGE23-V1",
+  "canvas": {
+    "aspect_ratio": "3:4",
+    "height": 1448,
+    "width": 1086
+  },
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "composition_hash": "15503c1049d873331594e86ec011ec7f57ee93d9fb20a75fc998e1f1c323b78c",
+  "engine_version": "0.8.2",
+  "fixture": false,
+  "fixture_mode": false,
+  "font_config_sha256": "ba6cd2c0c4d716aa550059148339642da7fb2f1af1bfaad2e5d6ab838fb1e0aa",
+  "layout_type": "REFLECTION_SOURCE_NOTE",
+  "lettering": [
+    {
+      "box": {
+        "height": 0.72,
+        "width": 0.83,
+        "x": 0.085,
+        "y": 0.135
+      },
+      "channel": "INSET_EXPLANATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 22
+      },
+      "lettering_id": "p23-source-note",
+      "padding": 22,
+      "panel_id": "p23-panel-01",
+      "reading_order": 1,
+      "source_script_hash": "c6cfe394c3ee6e923ef19331dfe2b337d3d6ff5639e3c5738ef259df1fd10c49",
+      "speaker_id": "editorial",
+      "text": "This private editorial draft is fresh original English prose based only on the locked paraphrases and locators for Devi Mahatmya 1 in dm-event-004 through dm-event-007. Brahma’s cosmic and theological descriptions are presented as his attributed hymn-praise, not as independent project certification. All dialogue is non-verbatim adaptation. The five-thousand-year combat, joint boon offer by Madhu and Kaitabha, Vishnu’s requested boon, the unflooded-earth condition and the discus defeat remain in source order. No demon genealogy, earlier ascetic or invulnerability boon, outside boon-giver, divine motive or sacred quotation has been added. Because the bounded English and Sanskrit witnesses leave the final bodily locus unresolved, the manuscript states only that the water condition is met and omits any thigh, lap, buttocks or other precise locus. The DM08 manuscript was consulted only as a literary-quality benchmark and was neither copied nor treated as evidence. This clearance permits only a private manuscript draft; illustration, PDF production, publication, public sharing and distribution remain blocked."
+    }
+  ],
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "page_id": "page-0de736c5ac791f2e0c546fd3",
+  "page_number": 23,
+  "page_script_hash": "c0d372543a0a7fad475851e9d3df8c2f212c41f1cdf4a4f719c090cac2cfd615",
+  "page_title": "SOURCE AND ADAPTATION NOTE",
+  "panels": [
+    {
+      "assetless": {
+        "kind": "DETERMINISTIC_DECORATIVE_TEXT_BACKGROUND"
+      },
+      "panel_id": "p23-panel-01",
+      "reading_order": 1,
+      "speaker_anchors": []
+    }
+  ],
+  "preview_authority": {
+    "basis": "Locked storyboard v2 exact wording; no image operation",
+    "image_generation_authorized": false,
+    "paid_provider_calls_authorized": false,
+    "publication_authorized": false,
+    "scope": "DM02_DETERMINISTIC_TEXT_ONLY_BACK_MATTER"
+  },
+  "private_preview": true,
+  "publication_eligible": false,
+  "reading_order": 23,
+  "renderer_source_sha256": "b01cc62cb51709f21ab4aea0ade48e41712d04e919fae6893c732c8ee239eeeb",
+  "required_lettering_ids": [
+    "p23-source-note"
+  ],
+  "resolved_font": {
+    "bold": "/System/Library/Fonts/Supplemental/STIXGeneralBol.otf",
+    "bold_sha256": "7e4dfb4979e9bb79a0bdedc56f055eab615fb9a3dff8788a52992ae65e8f572d",
+    "classification": "serif",
+    "family": "STIXGeneral",
+    "font_binary_bundled_in_repository": false,
+    "legal_installation": "Install the STIX Fonts project from its official distribution, then update paths if the operating system stores it elsewhere. Confirm the specific distribution's license before publication.",
+    "license_evidence": "The installed font metadata identifies the STIX license, derived from the SIL Open Font License. The renderer records hashes but does not copy these system files into the repository.",
+    "license_status": "SYSTEM_FONT_LICENSE_REVIEWED_NOT_REDISTRIBUTED",
+    "regular": "/System/Library/Fonts/Supplemental/STIXGeneral.otf",
+    "regular_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7"
+  },
+  "resolved_lettering": [
+    {
+      "box": [
+        92,
+        195,
+        994,
+        1238
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p23-source-note",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 22,
+      "rendered_font_size": 22,
+      "requested_font_size": 22,
+      "source_script_hash": "c6cfe394c3ee6e923ef19331dfe2b337d3d6ff5639e3c5738ef259df1fd10c49",
+      "text_sha256": "fc8ccee6c1aa4e95d844b2a20f516c09e9b75eb02b0be410cf1153ea2f2c7beb"
+    }
+  ],
+  "resolved_panels": [
+    {
+      "asset_path": null,
+      "asset_sha256": null,
+      "box": [
+        49,
+        152,
+        1037,
+        1339
+      ],
+      "focal_point": null,
+      "panel_id": "p23-panel-01",
+      "paste_at": [
+        54,
+        157
+      ],
+      "rendered_size": [
+        978,
+        1177
+      ],
+      "scale_mode": "DETERMINISTIC_DECORATIVE_TEXT_BACKGROUND",
+      "semantic_crop_review": "NOT_APPLICABLE_ASSETLESS_BACK_MATTER",
+      "source_crop": null,
+      "source_dimensions": null,
+      "zoom": null
+    }
+  ],
+  "schema_version": "1.0",
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "storyboard_conformance": {
+    "reason": "Exact locked back-matter wording on a deterministic navy/gold ornamental field with no mythic reenactment or iconographic claim.",
+    "status": "PRIVATE_TEXT_ONLY_PREVIEW"
+  },
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "typography": {
+    "body_size": 22,
+    "family": "STIXGeneral",
+    "title_size": 30
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "page_id": "page-e738c476c98efb28ec475cdd",
+  "page_number": 17,
+  "review_scope": "COMPOSED_PRIVATE_PREVIEW_ONLY",
+  "reviewer": {
+    "id": "/root/dm02_corrective_pixel_reviewer",
+    "role": "INDEPENDENT_ACTUAL_PIXEL_VISUAL_REVIEWER",
+    "image_capable": true,
+    "independent_of_composer": true,
+    "actual_pixels_inspected": true,
+    "inspection_resolution": "1086x1448 ORIGINAL",
+    "files_modified": false
+  },
+  "composed_png": {
+    "path": "books/DM02/private-page-previews/page-e738c476c98efb28ec475cdd/v0001/0017-page-e738c476c98efb28ec475cdd.png",
+    "sha256": "180fa2a23ab76e7cb4836180f6fc9b8e88e6b0bf7eeb627e2a5e65668aa7b10d",
+    "dimensions": [
+      1086,
+      1448
+    ]
+  },
+  "overall_verdict": "PASS",
+  "private_pdf_proof_eligible": true,
+  "publication_eligible": false,
+  "new_pixels_required": false,
+  "blocking_findings": [],
+  "evidence": "All five exact text blocks are legible, both speech tails identify separate speakers, and Vishnu's reaction remains visible.",
+  "scope_limitations": [
+    "PRIVATE_PREVIEW_COMPOSITION_ONLY",
+    "NO_PUBLICATION_APPROVAL",
+    "NO_CANONICAL_REFERENCE_PROMOTION",
+    "NO_PAGE_11_OR_THEOLOGICAL_APPROVAL"
+  ]
+}

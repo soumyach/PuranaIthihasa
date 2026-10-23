@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "book_version": "DM02-BOOK-LEVEL-PRODUCTION-PAGE24-V1",
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "page_script_hash": "6eca2fcc6bbbbe9196a3cdc7d51d477e4cfec266254f3556468f454c4b61321a",
+  "page_id": "page-83f106e1acc55e4a61e6fdc0",
+  "page_number": 24,
+  "reading_order": 24,
+  "page_title": "EDITORIAL REFLECTION — A THOUGHT FOR FAMILIES",
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "layout_type": "REFLECTION_SOURCE_NOTE",
+  "fixture": false,
+  "private_preview": true,
+  "publication_eligible": false,
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "preview_authority": {
+    "scope": "DM02_DETERMINISTIC_TEXT_ONLY_BACK_MATTER",
+    "basis": "Locked storyboard v2 exact wording; no image operation",
+    "image_generation_authorized": false,
+    "publication_authorized": false,
+    "paid_provider_calls_authorized": false
+  },
+  "storyboard_conformance": {
+    "status": "PRIVATE_TEXT_ONLY_PREVIEW",
+    "reason": "Exact locked back-matter wording on a deterministic navy/gold ornamental field with no mythic reenactment or iconographic claim."
+  },
+  "panels": [
+    {
+      "panel_id": "p24-panel-01",
+      "reading_order": 1,
+      "assetless": {
+        "kind": "DETERMINISTIC_DECORATIVE_TEXT_BACKGROUND"
+      },
+      "speaker_anchors": []
+    }
+  ],
+  "lettering": [
+    {
+      "lettering_id": "p24-editorial-a",
+      "panel_id": "p24-panel-01",
+      "reading_order": 1,
+      "channel": "INSET_EXPLANATION",
+      "speaker_id": "editorial",
+      "text": "This is a modern editorial reflection, not a quotation from scripture.",
+      "box": {
+        "x": 0.1,
+        "y": 0.145,
+        "width": 0.8,
+        "height": 0.09
+      },
+      "padding": 22,
+      "font": {
+        "size": 24,
+        "minimum_size": 22
+      },
+      "source_script_hash": "44d5f862cfc45ce90b62e32e28f153165cf632a9a5b4c93db8968cbc1789563f"
+    },
+    {
+      "lettering_id": "p24-editorial-b",
+      "panel_id": "p24-panel-01",
+      "reading_order": 2,
+      "channel": "INSET_EXPLANATION",
+      "speaker_id": "editorial",
+      "text": "Sleep, sustained strength and the boon condition each change the story in a different way: Yoganidra’s withdrawal makes awakening possible, Vishnu endures the long struggle, and the demons’ own condition opens the way to its end.",
+      "box": {
+        "x": 0.1,
+        "y": 0.27,
+        "width": 0.8,
+        "height": 0.31
+      },
+      "padding": 22,
+      "font": {
+        "size": 22,
+        "minimum_size": 22
+      },
+      "source_script_hash": "cd510b0386448e0854d6d9bd32e1f2dc647433cc6f6b33995e707c1ac684ff9d"
+    },
+    {
+      "lettering_id": "p24-editorial-c",
+      "panel_id": "p24-panel-01",
+      "reading_order": 3,
+      "channel": "INSET_EXPLANATION",
+      "speaker_id": "editorial",
+      "text": "For family conversation: When a problem will not yield to force, what condition might be holding it in place? What can change when that condition is understood?",
+      "box": {
+        "x": 0.1,
+        "y": 0.62,
+        "width": 0.8,
+        "height": 0.22
+      },
+      "padding": 22,
+      "font": {
+        "size": 22,
+        "minimum_size": 22
+      },
+      "source_script_hash": "f43cd888268cdb206c3efc6332ab99336e12ae5a3cf5cc97f477320451906655"
+    }
+  ],
+  "required_lettering_ids": [
+    "p24-editorial-a",
+    "p24-editorial-b",
+    "p24-editorial-c"
+  ],
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "typography": {
+    "family": "STIXGeneral",
+    "body_size": 22,
+    "title_size": 30
+  },
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    }
+  }
+}

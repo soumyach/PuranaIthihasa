@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "campaign_id": "dm02-book-level-private-production-v0001",
+  "authorization_subject_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+  "approval_id": "approval-3174e958372faf8a1e6f380f",
+  "batch_id": "dm02-book-level-batch-01-repair",
+  "request_path": "books/DM02/book-level-production/generation-requests/batch-01-repair.v0001.json",
+  "provider": "Codex built-in image generation",
+  "api_key_used": false,
+  "external_provider_used": false,
+  "explicit_payment_requested": false,
+  "purchased_credit_use_intended_or_authorized": false,
+  "automatic_retry": false,
+  "operation": {
+    "operation_index": 5,
+    "unit_id": "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-02",
+    "operation_class": "INDEPENDENT_REVIEW_DIRECTED_REPAIR",
+    "provider_operation_identifier": "exec-e87e1485-24d8-4b19-b867-5bfa1c810eb9",
+    "default_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-e87e1485-24d8-4b19-b867-5bfa1c810eb9.png",
+    "repository_output_path": "books/DM02/book-level-production/images/p14-panel-02/v0002.png",
+    "sha256": "0c8dd39c7473bd934b005e6342cd1e859b116a31cd7fd76e9ba054fc7f8af125",
+    "dimensions": [1086, 1448],
+    "mode": "RGB",
+    "result": "OUTPUT_STORED_PENDING_INDEPENDENT_REVIEW"
+  },
+  "operations_counted_against_campaign": 1,
+  "campaign_operations_executed_after_batch": 5,
+  "necessary_operations_executed_after_batch": 4,
+  "derived_panel_fallback_operations_executed_after_batch": 0,
+  "review_directed_repair_operations_executed_after_batch": 1,
+  "campaign_remaining_ceiling_after_batch": 38,
+  "unit_operation_count_after_batch": 2,
+  "unit_operation_limit_reached": true,
+  "usage_observation_after_batch": {
+    "used_percent": 27,
+    "remaining_percent": 73,
+    "purchased_credit_balance": "0",
+    "incremental_usd": "UNKNOWN_NOT_EXPOSED",
+    "exclusive_batch_attribution_available": false
+  }
+}

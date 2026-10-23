@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "page_id": "page-0de736c5ac791f2e0c546fd3",
+  "page_number": 23,
+  "review_scope": "COMPOSED_PRIVATE_PREVIEW_ONLY",
+  "reviewer": {
+    "id": "/root/dm02_corrective_pixel_reviewer",
+    "role": "INDEPENDENT_ACTUAL_PIXEL_VISUAL_REVIEWER",
+    "image_capable": true,
+    "independent_of_composer": true,
+    "actual_pixels_inspected": true,
+    "inspection_resolution": "1086x1448 ORIGINAL",
+    "files_modified": false
+  },
+  "composed_png": {
+    "path": "books/DM02/private-page-previews/page-0de736c5ac791f2e0c546fd3/v0001/0023-page-0de736c5ac791f2e0c546fd3.png",
+    "sha256": "8d44d6fe385f5b732f7a3445c3483d90a1a97793594f931393e543115348cc0f",
+    "dimensions": [
+      1086,
+      1448
+    ]
+  },
+  "overall_verdict": "PASS",
+  "private_pdf_proof_eligible": true,
+  "publication_eligible": false,
+  "new_pixels_required": false,
+  "blocking_findings": [],
+  "evidence": "The exact source/adaptation note is legible and explicitly disclaims verbatim scripture, independent certification and publication readiness.",
+  "scope_limitations": [
+    "PRIVATE_PREVIEW_COMPOSITION_ONLY",
+    "NO_PUBLICATION_APPROVAL",
+    "NO_CANONICAL_REFERENCE_PROMOTION",
+    "NO_PAGE_11_OR_THEOLOGICAL_APPROVAL"
+  ]
+}

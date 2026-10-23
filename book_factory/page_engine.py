@@ -27,6 +27,7 @@ PALETTE = {
     "ink": "#251C18",
     "burgundy": "#692019",
 }
+CROP_MODES = ("COVER", "CONTAIN")
 LAYOUT_TYPES = (
     "TWO_PANEL_SEQUENTIAL",
     "THREE_PANEL",
@@ -269,6 +270,21 @@ def validate_page_spec(spec, repository_root, fixture_mode=False, font_config=No
     root = Path(repository_root)
     for panel in panels:
         panel_id = panel.get("panel_id")
+        assetless = panel.get("assetless")
+        if assetless is not None:
+            if (
+                layout_type != "REFLECTION_SOURCE_NOTE"
+                or not isinstance(assetless, dict)
+                or assetless.get("kind") != "DETERMINISTIC_DECORATIVE_TEXT_BACKGROUND"
+            ):
+                _add_finding(
+                    findings,
+                    "ASSETLESS_PANEL_SCOPE",
+                    "assetless panels are permitted only for deterministic reflection/source-note back matter",
+                    page_id,
+                    panel_id,
+                )
+            continue
         asset = panel.get("asset")
         if not isinstance(asset, dict):
             _add_finding(findings, "MISSING_IMAGE", "panel has no immutable image reference", page_id, panel_id)
@@ -293,12 +309,17 @@ def validate_page_spec(spec, repository_root, fixture_mode=False, font_config=No
         except (OSError, BlockedError) as exc:
             _add_finding(findings, "UNREADABLE_IMAGE", str(exc), page_id, panel_id)
         crop = panel.get("crop", {})
+        crop_mode = crop.get("mode", "COVER")
+        if crop_mode not in CROP_MODES:
+            _add_finding(findings, "CROP_MODE", "crop mode must be COVER or CONTAIN", page_id, panel_id)
         focal = crop.get("focal_point", {"x": 0.5, "y": 0.5})
         if not all(isinstance(focal.get(key), (int, float)) and 0 <= focal[key] <= 1 for key in ("x", "y")):
             _add_finding(findings, "CROP_BOUNDS", "focal point must stay inside the source image", page_id, panel_id)
         zoom = crop.get("zoom", 1.0)
         if not isinstance(zoom, (int, float)) or isinstance(zoom, bool) or not 1.0 <= zoom <= 3.0:
             _add_finding(findings, "CROP_ZOOM", "crop zoom must be a number from 1.0 through 3.0", page_id, panel_id)
+        elif crop_mode == "CONTAIN" and zoom != 1.0:
+            _add_finding(findings, "CROP_ZOOM", "CONTAIN mode requires zoom 1.0", page_id, panel_id)
         approval = asset.get("approval", {})
         if fixture_mode:
             if not spec.get("fixture", False) or asset.get("usage") != "SYNTHETIC_TEST_ONLY":
@@ -346,6 +367,22 @@ def validate_page_spec(spec, repository_root, fixture_mode=False, font_config=No
                 panel_id,
                 item_id,
             )
+        tail_max_length = item.get("tail_max_length")
+        if tail_max_length is not None and (
+            item.get("channel") != "DIALOGUE"
+            or not private_preview
+            or not isinstance(tail_max_length, int)
+            or isinstance(tail_max_length, bool)
+            or not 20 <= tail_max_length <= 160
+        ):
+            _add_finding(
+                findings,
+                "DIALOGUE_TAIL_LENGTH",
+                "optional shortened dialogue tails are limited to 20-160 pixels in private previews",
+                page_id,
+                panel_id,
+                item_id,
+            )
         if panel_id not in panel_by_id:
             _add_finding(findings, "LETTERING_PANEL", "lettering refers to a missing panel", page_id, panel_id, item_id)
         if item.get("channel") in {"DIALOGUE", "THOUGHT"}:
@@ -371,7 +408,26 @@ def validate_page_spec(spec, repository_root, fixture_mode=False, font_config=No
         try:
             item_box = _normal_box(item.get("box"), canvas["width"], canvas["height"])
             resolved_boxes.append((item_id, item_box))
-            if panel_id in panel_geometry and not _inside(item_box, panel_geometry[panel_id]):
+            page_band = item.get("placement_scope") == "PAGE_BAND"
+            if page_band and (not private_preview or item.get("channel") not in {"NARRATION", "DIALOGUE"}):
+                _add_finding(
+                    findings,
+                    "PAGE_BAND_SCOPE",
+                    "page-level text bands are limited to private-preview narration or attributed dialogue",
+                    page_id,
+                    panel_id,
+                    item_id,
+                )
+            if page_band and any(_intersects(item_box, box, 0) for box in panel_geometry.values()):
+                _add_finding(
+                    findings,
+                    "PAGE_BAND_PANEL_COLLISION",
+                    "a page-level narration band must remain outside every art panel",
+                    page_id,
+                    panel_id,
+                    item_id,
+                )
+            if not page_band and panel_id in panel_geometry and not _inside(item_box, panel_geometry[panel_id]):
                 _add_finding(findings, "LETTERING_PANEL_BOUNDARY", "lettering crosses its panel boundary", page_id, panel_id, item_id)
             safe_top, safe_bottom = int(0.095 * canvas["height"]), int(0.93 * canvas["height"])
             if item_box[1] < safe_top or item_box[3] > safe_bottom:
@@ -485,7 +541,7 @@ def _draw_lotus(draw, x, y, sx, sy):
     draw.arc((min(x, x + sx * 50), min(y, y + sy * 32), max(x, x + sx * 50), max(y, y + sy * 32)), 180, 360, fill=gold, width=2)
 
 
-def _dialogue_tail(box, point):
+def _dialogue_tail(box, point, max_length=None):
     """Attach a dialogue tail to the nearest balloon edge without crossing its text field."""
     left, top, right, bottom = box
     distances = {
@@ -501,6 +557,13 @@ def _dialogue_tail(box, point):
         x = left if edge == "left" else right
         y = max(top + 25, min(point[1], bottom - 25))
         base = ((x, y - 10), (x, y + 10))
+    if max_length is not None:
+        center = ((base[0][0] + base[1][0]) / 2, (base[0][1] + base[1][1]) / 2)
+        delta_x, delta_y = point[0] - center[0], point[1] - center[1]
+        distance = (delta_x ** 2 + delta_y ** 2) ** 0.5
+        if distance > max_length:
+            scale = max_length / distance
+            point = (int(round(center[0] + delta_x * scale)), int(round(center[1] + delta_y * scale)))
     return base + (point,)
 
 
@@ -542,19 +605,61 @@ def compose_page(spec, repository_root, output_dir, fixture_mode=False, font_con
         box = _normal_box(panel.get("box", normalized), width, height)
         draw.rounded_rectangle(box, radius=7, fill=_hex(PALETTE["ink"]), outline=_hex(PALETTE["antique_gold"]), width=5)
         inner = (box[0] + 5, box[1] + 5, box[2] - 5, box[3] - 5)
+        if panel.get("assetless", {}).get("kind") == "DETERMINISTIC_DECORATIVE_TEXT_BACKGROUND":
+            draw.rounded_rectangle(inner, radius=5, fill=_hex(PALETTE["midnight_navy"]))
+            inset = 18
+            draw.rounded_rectangle(
+                (inner[0] + inset, inner[1] + inset, inner[2] - inset, inner[3] - inset),
+                radius=12,
+                outline=_hex(PALETTE["antique_gold"]),
+                width=2,
+            )
+            _draw_lotus(draw, inner[0] + 30, inner[1] + 30, 0.7, 0.7)
+            _draw_lotus(draw, inner[2] - 30, inner[3] - 30, -0.7, -0.7)
+            panel_metadata.append({
+                "panel_id": panel["panel_id"], "box": list(box), "asset_path": None,
+                "asset_sha256": None, "source_dimensions": None, "source_crop": None,
+                "scale_mode": "DETERMINISTIC_DECORATIVE_TEXT_BACKGROUND",
+                "rendered_size": [inner[2] - inner[0], inner[3] - inner[1]],
+                "paste_at": list(inner[:2]), "focal_point": None, "zoom": None,
+                "semantic_crop_review": "NOT_APPLICABLE_ASSETLESS_BACK_MATTER",
+            })
+            continue
         path = _repository_asset_path(root, panel["asset"]["path"])
         with Image.open(path) as source:
             source = source.convert("RGB")
-            focal = panel.get("crop", {}).get("focal_point", {"x": 0.5, "y": 0.5})
-            zoom = panel.get("crop", {}).get("zoom", 1.0)
-            crop = _cover_crop(source.size, (inner[2] - inner[0], inner[3] - inner[1]), focal, zoom)
-            cropped = source.crop(crop)
-            rendered = cropped.resize((inner[2] - inner[0], inner[3] - inner[1]), Image.Resampling.LANCZOS)
-            page.paste(rendered, inner[:2])
+            crop_spec = panel.get("crop", {})
+            mode = crop_spec.get("mode", "COVER")
+            focal = crop_spec.get("focal_point", {"x": 0.5, "y": 0.5})
+            zoom = crop_spec.get("zoom", 1.0)
+            target_w, target_h = inner[2] - inner[0], inner[3] - inner[1]
+            if mode == "CONTAIN":
+                scale = min(target_w / source.width, target_h / source.height)
+                rendered_size = (
+                    max(1, int(round(source.width * scale))),
+                    max(1, int(round(source.height * scale))),
+                )
+                rendered = source.resize(rendered_size, Image.Resampling.LANCZOS)
+                paste_at = (
+                    inner[0] + (target_w - rendered_size[0]) // 2,
+                    inner[1] + (target_h - rendered_size[1]) // 2,
+                )
+                page.paste(rendered, paste_at)
+                crop = (0, 0, source.width, source.height)
+                scale_mode = "ASPECT_PRESERVING_CONTAIN"
+            else:
+                crop = _cover_crop(source.size, (target_w, target_h), focal, zoom)
+                cropped = source.crop(crop)
+                rendered = cropped.resize((target_w, target_h), Image.Resampling.LANCZOS)
+                page.paste(rendered, inner[:2])
+                rendered_size = (target_w, target_h)
+                paste_at = inner[:2]
+                scale_mode = "ASPECT_PRESERVING_COVER"
             panel_metadata.append({
                 "panel_id": panel["panel_id"], "box": list(box), "asset_path": panel["asset"]["path"],
                 "asset_sha256": panel["asset"]["sha256"], "source_dimensions": list(source.size),
-                "source_crop": list(crop), "scale_mode": "ASPECT_PRESERVING_COVER",
+                "source_crop": list(crop), "scale_mode": scale_mode,
+                "rendered_size": list(rendered_size), "paste_at": list(paste_at),
                 "focal_point": focal, "zoom": zoom,
                 "semantic_crop_review": "NOT_APPLICABLE_SYNTHETIC_FIXTURE" if fixture_mode else "PENDING_IMAGE_CAPABLE_REVIEW",
             })
@@ -575,7 +680,11 @@ def compose_page(spec, repository_root, output_dir, fixture_mode=False, font_con
             panel = next(value for value in spec["panels"] if value["panel_id"] == item["panel_id"])
             anchor = next(value for value in panel["speaker_anchors"] if value["speaker_id"] == item["speaker_id"])
             point = (int(anchor["x"] * width), int(anchor["y"] * height))
-            draw.polygon(_dialogue_tail(box, point), fill=_hex(PALETTE["speech_white"]), outline=_hex(PALETTE["ink"]))
+            draw.polygon(
+                _dialogue_tail(box, point, item.get("tail_max_length")),
+                fill=_hex(PALETTE["speech_white"]),
+                outline=_hex(PALETTE["ink"]),
+            )
             padding, text_box = int(item.get("padding", 22)), box
         elif channel == "THOUGHT":
             draw.ellipse(box, fill=_hex(PALETTE["speech_white"]), outline=_hex(PALETTE["ink"]), width=3)

@@ -1,0 +1,17 @@
+{
+  "schema_version":"1.0",
+  "reviewer":{"id":"/root/dm02_corrective_pixel_reviewer","image_capable":true,"independent_of_composer":true,"actual_pixels_inspected":true,"files_modified":false},
+  "composed_png":{"path":"books/DM02/private-page-previews/page-88792a15dcd25b30d3982d7c/v0002/0002-page-88792a15dcd25b30d3982d7c.png","sha256":"47f664db0be2ce1d9f68d32dffebca07efc3812b1def0f5f1b86536b92cedd8f","dimensions":[1086,1448]},
+  "result":"PASS_PRIVATE_PREVIEW_ONLY",
+  "assessments": {
+    "panel_01":"PASS — ASPECT_PRESERVING_CONTAIN shows all five coherent digits, complete wrist beads, rising smoke and full low fire/logs.",
+    "panel_02":"PASS — all three seated silhouettes and complete low fire remain visible.",
+    "lettering":"PASS — exact locked narration at 24 px in two clean lines with no clipping or overflow; plaque covers only nonessential upper sky.",
+    "layout":"PASS_FOR_PRIVATE_PREVIEW — symmetrical ink-brown side mattes are bounded by gold frames, visually recede and preserve complete portrait pixels; sparser than DM08 but not unfinished placeholders.",
+    "technical":"PASS — correct frame, gutters, order, footer, page number and no distortion, seam, stray text or artifact.",
+    "gold_standard_alignment":"PASS_FOR_PRIVATE_PREVIEW — palette, frame, type hierarchy and luminous finish align; density difference is not a publication-layout endorsement."
+  },
+  "new_pixels_required":false,
+  "further_composition_repair_required":false,
+  "scope_limitations":["No publication approval","No theological certification","No canonical character-reference promotion"]
+}

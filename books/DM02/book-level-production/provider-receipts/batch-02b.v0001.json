@@ -1,0 +1,17 @@
+{
+  "schema_version":"1.0",
+  "book_id":"DM02",
+  "campaign_id":"dm02-book-level-private-production-v0001",
+  "batch_id":"dm02-book-level-batch-02b",
+  "provider":"Codex built-in image generation",
+  "api_key_used":false,
+  "external_provider_used":false,
+  "explicit_payment_requested":false,
+  "purchased_credit_use_intended_or_authorized":false,
+  "operation":{"operation_index":8,"unit_id":"page-2e96a0bca25ea33924a24fde--p05-panel-01","provider_operation_identifier":"exec-e9bdd2f1-d8af-44e1-9f5d-9c7338dc82df","repository_output_path":"books/DM02/book-level-production/images/p05-panel-01/v0001.png","sha256":"f9d3ab7a6c056f32c732728afed2895ee6cddc5bfb20bbcdd0b1954e639a06fa","dimensions":[1086,1448],"mode":"RGB","result":"OUTPUT_STORED_PENDING_INDEPENDENT_REVIEW"},
+  "campaign_operations_executed_after_batch":8,
+  "necessary_operations_executed_after_batch":6,
+  "review_directed_repair_operations_executed_after_batch":2,
+  "campaign_remaining_ceiling_after_batch":35,
+  "usage_observation_after_batch":{"used_percent":28,"remaining_percent":72,"purchased_credit_balance":"0","incremental_usd":"UNKNOWN_NOT_EXPOSED","exclusive_batch_attribution_available":false}
+}

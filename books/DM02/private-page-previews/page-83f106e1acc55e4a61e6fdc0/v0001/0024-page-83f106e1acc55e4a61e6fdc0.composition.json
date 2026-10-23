@@ -1,0 +1,239 @@
+{
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"
+    }
+  },
+  "book_id": "DM02",
+  "book_version": "DM02-BOOK-LEVEL-PRODUCTION-PAGE24-V1",
+  "canvas": {
+    "aspect_ratio": "3:4",
+    "height": 1448,
+    "width": 1086
+  },
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "composition_hash": "5bb67c9f87005eace19a3b21fdcde10608c3a702a748d6b089e8dbdb85796e71",
+  "engine_version": "0.8.2",
+  "fixture": false,
+  "fixture_mode": false,
+  "font_config_sha256": "ba6cd2c0c4d716aa550059148339642da7fb2f1af1bfaad2e5d6ab838fb1e0aa",
+  "layout_type": "REFLECTION_SOURCE_NOTE",
+  "lettering": [
+    {
+      "box": {
+        "height": 0.09,
+        "width": 0.8,
+        "x": 0.1,
+        "y": 0.145
+      },
+      "channel": "INSET_EXPLANATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 24
+      },
+      "lettering_id": "p24-editorial-a",
+      "padding": 22,
+      "panel_id": "p24-panel-01",
+      "reading_order": 1,
+      "source_script_hash": "44d5f862cfc45ce90b62e32e28f153165cf632a9a5b4c93db8968cbc1789563f",
+      "speaker_id": "editorial",
+      "text": "This is a modern editorial reflection, not a quotation from scripture."
+    },
+    {
+      "box": {
+        "height": 0.31,
+        "width": 0.8,
+        "x": 0.1,
+        "y": 0.27
+      },
+      "channel": "INSET_EXPLANATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 22
+      },
+      "lettering_id": "p24-editorial-b",
+      "padding": 22,
+      "panel_id": "p24-panel-01",
+      "reading_order": 2,
+      "source_script_hash": "cd510b0386448e0854d6d9bd32e1f2dc647433cc6f6b33995e707c1ac684ff9d",
+      "speaker_id": "editorial",
+      "text": "Sleep, sustained strength and the boon condition each change the story in a different way: Yoganidra’s withdrawal makes awakening possible, Vishnu endures the long struggle, and the demons’ own condition opens the way to its end."
+    },
+    {
+      "box": {
+        "height": 0.22,
+        "width": 0.8,
+        "x": 0.1,
+        "y": 0.62
+      },
+      "channel": "INSET_EXPLANATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 22
+      },
+      "lettering_id": "p24-editorial-c",
+      "padding": 22,
+      "panel_id": "p24-panel-01",
+      "reading_order": 3,
+      "source_script_hash": "f43cd888268cdb206c3efc6332ab99336e12ae5a3cf5cc97f477320451906655",
+      "speaker_id": "editorial",
+      "text": "For family conversation: When a problem will not yield to force, what condition might be holding it in place? What can change when that condition is understood?"
+    }
+  ],
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "page_id": "page-83f106e1acc55e4a61e6fdc0",
+  "page_number": 24,
+  "page_script_hash": "6eca2fcc6bbbbe9196a3cdc7d51d477e4cfec266254f3556468f454c4b61321a",
+  "page_title": "EDITORIAL REFLECTION — A THOUGHT FOR FAMILIES",
+  "panels": [
+    {
+      "assetless": {
+        "kind": "DETERMINISTIC_DECORATIVE_TEXT_BACKGROUND"
+      },
+      "panel_id": "p24-panel-01",
+      "reading_order": 1,
+      "speaker_anchors": []
+    }
+  ],
+  "preview_authority": {
+    "basis": "Locked storyboard v2 exact wording; no image operation",
+    "image_generation_authorized": false,
+    "paid_provider_calls_authorized": false,
+    "publication_authorized": false,
+    "scope": "DM02_DETERMINISTIC_TEXT_ONLY_BACK_MATTER"
+  },
+  "private_preview": true,
+  "publication_eligible": false,
+  "reading_order": 24,
+  "renderer_source_sha256": "b01cc62cb51709f21ab4aea0ade48e41712d04e919fae6893c732c8ee239eeeb",
+  "required_lettering_ids": [
+    "p24-editorial-a",
+    "p24-editorial-b",
+    "p24-editorial-c"
+  ],
+  "resolved_font": {
+    "bold": "/System/Library/Fonts/Supplemental/STIXGeneralBol.otf",
+    "bold_sha256": "7e4dfb4979e9bb79a0bdedc56f055eab615fb9a3dff8788a52992ae65e8f572d",
+    "classification": "serif",
+    "family": "STIXGeneral",
+    "font_binary_bundled_in_repository": false,
+    "legal_installation": "Install the STIX Fonts project from its official distribution, then update paths if the operating system stores it elsewhere. Confirm the specific distribution's license before publication.",
+    "license_evidence": "The installed font metadata identifies the STIX license, derived from the SIL Open Font License. The renderer records hashes but does not copy these system files into the repository.",
+    "license_status": "SYSTEM_FONT_LICENSE_REVIEWED_NOT_REDISTRIBUTED",
+    "regular": "/System/Library/Fonts/Supplemental/STIXGeneral.otf",
+    "regular_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7"
+  },
+  "resolved_lettering": [
+    {
+      "box": [
+        109,
+        210,
+        977,
+        340
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p24-editorial-a",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 22,
+      "rendered_font_size": 24,
+      "requested_font_size": 24,
+      "source_script_hash": "44d5f862cfc45ce90b62e32e28f153165cf632a9a5b4c93db8968cbc1789563f",
+      "text_sha256": "702baa5f92a6522c51c8dcacae96f1529dccaa3a4be6493de806019c175489b5"
+    },
+    {
+      "box": [
+        109,
+        391,
+        977,
+        840
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p24-editorial-b",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 22,
+      "rendered_font_size": 22,
+      "requested_font_size": 22,
+      "source_script_hash": "cd510b0386448e0854d6d9bd32e1f2dc647433cc6f6b33995e707c1ac684ff9d",
+      "text_sha256": "137ccf013aebdc323f3d8759f88ba92f47d5ab544cb04a5fb4783c32db183285"
+    },
+    {
+      "box": [
+        109,
+        898,
+        977,
+        1216
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p24-editorial-c",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 22,
+      "rendered_font_size": 22,
+      "requested_font_size": 22,
+      "source_script_hash": "f43cd888268cdb206c3efc6332ab99336e12ae5a3cf5cc97f477320451906655",
+      "text_sha256": "1b1af9c8eede0183d1c92d0b281b9795723807e20dc174422dbcb61d9b50c6fe"
+    }
+  ],
+  "resolved_panels": [
+    {
+      "asset_path": null,
+      "asset_sha256": null,
+      "box": [
+        49,
+        152,
+        1037,
+        1339
+      ],
+      "focal_point": null,
+      "panel_id": "p24-panel-01",
+      "paste_at": [
+        54,
+        157
+      ],
+      "rendered_size": [
+        978,
+        1177
+      ],
+      "scale_mode": "DETERMINISTIC_DECORATIVE_TEXT_BACKGROUND",
+      "semantic_crop_review": "NOT_APPLICABLE_ASSETLESS_BACK_MATTER",
+      "source_crop": null,
+      "source_dimensions": null,
+      "zoom": null
+    }
+  ],
+  "schema_version": "1.0",
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "storyboard_conformance": {
+    "reason": "Exact locked back-matter wording on a deterministic navy/gold ornamental field with no mythic reenactment or iconographic claim.",
+    "status": "PRIVATE_TEXT_ONLY_PREVIEW"
+  },
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "typography": {
+    "body_size": 22,
+    "family": "STIXGeneral",
+    "title_size": 30
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version":"1.0",
+  "reviewer":{"id":"/root/dm02_corrective_pixel_reviewer","image_capable":true,"independent_of_composer":true,"files_modified":false},
+  "composed_png":{"path":"books/DM02/private-page-previews/page-88792a15dcd25b30d3982d7c/v0001/0002-page-88792a15dcd25b30d3982d7c.png","sha256":"5f766e2df3e8980035ad5f51021f005cf5d852ffdbc3946486d73c959a449968","dimensions":[1086,1448]},
+  "result":"FIX_COMPOSITION_ONLY",
+  "new_pixels_required":false,
+  "pass_findings":["Exact locked narration, punctuation and readability pass.","Panel 2, source/iconography/culture, navy-gold hierarchy, footer and technical cleanliness pass."],
+  "blocking_finding":"The landscape COVER crop and oversized plaque obscure the corrected hand's thumb and upper fingers and omit the lower fire-ring, preventing verification of the complete five-digit repair.",
+  "required_repair":"Preserve both raster hashes; use non-destructive contained geometry and a smaller narration plaque that covers no digit, palm, beads, smoke, flame or fire base.",
+  "scope":"PRIVATE_INTERNAL_ONLY_NO_PUBLICATION_THEOLOGICAL_OR_CANONICAL_APPROVAL"
+}

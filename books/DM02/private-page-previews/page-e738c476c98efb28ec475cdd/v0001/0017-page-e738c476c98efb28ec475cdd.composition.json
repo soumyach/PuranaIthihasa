@@ -1,0 +1,430 @@
+{
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"
+    }
+  },
+  "book_id": "DM02",
+  "book_version": "DM02-BOOK-LEVEL-PRODUCTION-PAGE17-V1",
+  "canvas": {
+    "aspect_ratio": "3:4",
+    "height": 1448,
+    "width": 1086
+  },
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "composition_hash": "4dd973b417ab0be1f05f386656f7eb09394f5ad06a9fb8ddda12d97f34ab307f",
+  "engine_version": "0.8.2",
+  "fixture": false,
+  "fixture_mode": false,
+  "font_config_sha256": "ba6cd2c0c4d716aa550059148339642da7fb2f1af1bfaad2e5d6ab838fb1e0aa",
+  "layout_type": "TWO_PANEL_SEQUENTIAL",
+  "lettering": [
+    {
+      "badge_number": 1,
+      "box": {
+        "height": 0.06,
+        "width": 0.24,
+        "x": 0.08,
+        "y": 0.115
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 22
+      },
+      "lettering_id": "p17-narration-a",
+      "padding": 12,
+      "panel_id": "p17-panel-01",
+      "reading_order": 1,
+      "source_script_hash": "0128ae2c02251b1c9e7fadc1dea9ca8a16707757afdb85916f670f271162250b",
+      "speaker_id": "narrator",
+      "text": "Madhu drew back."
+    },
+    {
+      "box": {
+        "height": 0.075,
+        "width": 0.36,
+        "x": 0.08,
+        "y": 0.18
+      },
+      "channel": "DIALOGUE",
+      "font": {
+        "minimum_size": 22,
+        "size": 22
+      },
+      "lettering_id": "p17-dialogue-madhu",
+      "padding": 12,
+      "panel_id": "p17-panel-01",
+      "reading_order": 2,
+      "source_script_hash": "f2a8e24d70ae86ff40974278cc3d0f6673aebfad114327b5df3f39a9a00125c5",
+      "speaker_id": "dm-madhu",
+      "text": "Ask a boon of us."
+    },
+    {
+      "badge_number": 2,
+      "box": {
+        "height": 0.06,
+        "width": 0.23,
+        "x": 0.69,
+        "y": 0.115
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 22
+      },
+      "lettering_id": "p17-narration-b",
+      "padding": 12,
+      "panel_id": "p17-panel-01",
+      "reading_order": 3,
+      "source_script_hash": "70cfa622f26b39f9f8e24438d4122c2ef5e3a07fec1055e6e3ca8157f354e582",
+      "speaker_id": "narrator",
+      "text": "Kaitabha stood beside him."
+    },
+    {
+      "box": {
+        "height": 0.075,
+        "width": 0.36,
+        "x": 0.56,
+        "y": 0.18
+      },
+      "channel": "DIALOGUE",
+      "font": {
+        "minimum_size": 22,
+        "size": 22
+      },
+      "lettering_id": "p17-dialogue-kaitabha",
+      "padding": 12,
+      "panel_id": "p17-panel-01",
+      "reading_order": 4,
+      "source_script_hash": "a4aaba4469b67ec55bc3e37f852e3ada21158c18489f30f6c7b1f4e63c61b0f0",
+      "speaker_id": "dm-kaitabha",
+      "text": "Yes. Choose what we shall give."
+    },
+    {
+      "badge_number": 3,
+      "box": {
+        "height": 0.18,
+        "width": 0.84,
+        "x": 0.08,
+        "y": 0.555
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 22
+      },
+      "lettering_id": "p17-narration-c",
+      "padding": 12,
+      "panel_id": "p17-panel-02",
+      "reading_order": 5,
+      "source_script_hash": "77b38e52eec5b3503fb36f06105cab53381356b6cf7b7f6681d0865b22f4f702",
+      "speaker_id": "narrator",
+      "text": "After an age of combat, the strangest moment in the battle was not another blow. It was the offer made by the two who had come as enemies.\n\nThey had become the boon-givers.\n\nVishnu answered them."
+    }
+  ],
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "page_id": "page-e738c476c98efb28ec475cdd",
+  "page_number": 17,
+  "page_script_hash": "877d50d7852138ab4aa2f7cdc62725130ba57284787e0908e0762fb24218d237",
+  "page_title": "THE UNUSUAL OFFER",
+  "panels": [
+    {
+      "asset": {
+        "approval": {
+          "review_path": "books/DM02/book-level-production/reviews/campaign-image-reviews.v0001.json",
+          "review_result": "PASS",
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "5db03290a41116d6fbc43c24b87e6a8ef5efb6e03b8a4ad7eae723f5fd30fe97"
+        },
+        "path": "books/DM02/book-level-production/images/p17-panel-01/v0001.png",
+        "sha256": "5db03290a41116d6fbc43c24b87e6a8ef5efb6e03b8a4ad7eae723f5fd30fe97",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW"
+      },
+      "crop": {
+        "crop_intent": "Preserve the complete reviewed portrait master, including the protected lettering field and all source-critical relationships.",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "mode": "CONTAIN",
+        "zoom": 1.0
+      },
+      "panel_id": "p17-panel-01",
+      "reading_order": 1,
+      "speaker_anchors": [
+        {
+          "speaker_id": "dm-madhu",
+          "x": 0.31,
+          "y": 0.42
+        },
+        {
+          "speaker_id": "dm-kaitabha",
+          "x": 0.69,
+          "y": 0.42
+        }
+      ]
+    },
+    {
+      "asset": {
+        "approval": {
+          "review_path": "books/DM02/book-level-production/reviews/campaign-image-reviews.v0001.json",
+          "review_result": "PASS",
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "8c1ce1509cf2a94d1790f1b5110976d97c62c5e53bfcd830ad01b76c051ab74d"
+        },
+        "path": "books/DM02/book-level-production/images/p17-panel-02/v0001.png",
+        "sha256": "8c1ce1509cf2a94d1790f1b5110976d97c62c5e53bfcd830ad01b76c051ab74d",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW"
+      },
+      "crop": {
+        "crop_intent": "Preserve the complete reviewed portrait master, including the protected lettering field and all source-critical relationships.",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "mode": "CONTAIN",
+        "zoom": 1.0
+      },
+      "panel_id": "p17-panel-02",
+      "reading_order": 2,
+      "speaker_anchors": []
+    }
+  ],
+  "preview_authority": {
+    "basis": "Exact approval approval-3174e958372faf8a1e6f380f and independent actual-pixel review",
+    "image_generation_authorized": true,
+    "paid_provider_calls_authorized": false,
+    "publication_authorized": false,
+    "scope": "DM02_BOOK_LEVEL_PRIVATE_CAMPAIGN_PASS_REVIEWED_ASSETS"
+  },
+  "private_preview": true,
+  "publication_eligible": false,
+  "reading_order": 17,
+  "reference_comparison": [
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "role": "PRESENTATION_REFERENCE_ONLY",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "role": "COMIC_PAGE_RHYTHM_REFERENCE_ONLY",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+    }
+  ],
+  "renderer_source_sha256": "a80f84b2d30b37f402cc08323eb534e92c91641a72185e5c63319b1f284fa469",
+  "required_lettering_ids": [
+    "p17-narration-a",
+    "p17-dialogue-madhu",
+    "p17-narration-b",
+    "p17-dialogue-kaitabha",
+    "p17-narration-c"
+  ],
+  "resolved_font": {
+    "bold": "/System/Library/Fonts/Supplemental/STIXGeneralBol.otf",
+    "bold_sha256": "7e4dfb4979e9bb79a0bdedc56f055eab615fb9a3dff8788a52992ae65e8f572d",
+    "classification": "serif",
+    "family": "STIXGeneral",
+    "font_binary_bundled_in_repository": false,
+    "legal_installation": "Install the STIX Fonts project from its official distribution, then update paths if the operating system stores it elsewhere. Confirm the specific distribution's license before publication.",
+    "license_evidence": "The installed font metadata identifies the STIX license, derived from the SIL Open Font License. The renderer records hashes but does not copy these system files into the repository.",
+    "license_status": "SYSTEM_FONT_LICENSE_REVIEWED_NOT_REDISTRIBUTED",
+    "regular": "/System/Library/Fonts/Supplemental/STIXGeneral.otf",
+    "regular_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7"
+  },
+  "resolved_lettering": [
+    {
+      "box": [
+        87,
+        167,
+        348,
+        253
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p17-narration-a",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 12,
+      "rendered_font_size": 22,
+      "requested_font_size": 22,
+      "source_script_hash": "0128ae2c02251b1c9e7fadc1dea9ca8a16707757afdb85916f670f271162250b",
+      "text_sha256": "d1f5cc9a8fc29adb2ff24867639a3038987282c86b7f4cfafad18730a3db977d"
+    },
+    {
+      "box": [
+        87,
+        261,
+        478,
+        369
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p17-dialogue-madhu",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 12,
+      "rendered_font_size": 22,
+      "requested_font_size": 22,
+      "source_script_hash": "f2a8e24d70ae86ff40974278cc3d0f6673aebfad114327b5df3f39a9a00125c5",
+      "text_sha256": "92ab9b7aee397ea86591824b67ff8878c694a77b4eb3b5bcfee228b35d9c8a69"
+    },
+    {
+      "box": [
+        749,
+        167,
+        999,
+        253
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p17-narration-b",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 12,
+      "rendered_font_size": 22,
+      "requested_font_size": 22,
+      "source_script_hash": "70cfa622f26b39f9f8e24438d4122c2ef5e3a07fec1055e6e3ca8157f354e582",
+      "text_sha256": "832a65d5304f1bef85189bdea3e7142428a2d5bce128e1058593e93ab212e837"
+    },
+    {
+      "box": [
+        608,
+        261,
+        999,
+        369
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p17-dialogue-kaitabha",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 12,
+      "rendered_font_size": 22,
+      "requested_font_size": 22,
+      "source_script_hash": "a4aaba4469b67ec55bc3e37f852e3ada21158c18489f30f6c7b1f4e63c61b0f0",
+      "text_sha256": "1c037ec93938492a50c06120698d7e9261feb6adff53baae14ad0375d305ea00"
+    },
+    {
+      "box": [
+        87,
+        804,
+        999,
+        1064
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p17-narration-c",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 12,
+      "rendered_font_size": 22,
+      "requested_font_size": 22,
+      "source_script_hash": "77b38e52eec5b3503fb36f06105cab53381356b6cf7b7f6681d0865b22f4f702",
+      "text_sha256": "bba0a82265d2a546366a67d07be74f29f7065f05b2667aee3b9458c2a5c3f8aa"
+    }
+  ],
+  "resolved_panels": [
+    {
+      "asset_path": "books/DM02/book-level-production/images/p17-panel-01/v0001.png",
+      "asset_sha256": "5db03290a41116d6fbc43c24b87e6a8ef5efb6e03b8a4ad7eae723f5fd30fe97",
+      "box": [
+        49,
+        152,
+        1037,
+        733
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "panel_id": "p17-panel-01",
+      "paste_at": [
+        329,
+        157
+      ],
+      "rendered_size": [
+        428,
+        571
+      ],
+      "scale_mode": "ASPECT_PRESERVING_CONTAIN",
+      "semantic_crop_review": "PENDING_IMAGE_CAPABLE_REVIEW",
+      "source_crop": [
+        0,
+        0,
+        1086,
+        1448
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "zoom": 1.0
+    },
+    {
+      "asset_path": "books/DM02/book-level-production/images/p17-panel-02/v0001.png",
+      "asset_sha256": "8c1ce1509cf2a94d1790f1b5110976d97c62c5e53bfcd830ad01b76c051ab74d",
+      "box": [
+        49,
+        759,
+        1037,
+        1339
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "panel_id": "p17-panel-02",
+      "paste_at": [
+        329,
+        764
+      ],
+      "rendered_size": [
+        428,
+        570
+      ],
+      "scale_mode": "ASPECT_PRESERVING_CONTAIN",
+      "semantic_crop_review": "PENDING_IMAGE_CAPABLE_REVIEW",
+      "source_crop": [
+        0,
+        0,
+        1086,
+        1448
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "zoom": 1.0
+    }
+  ],
+  "schema_version": "1.0",
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "storyboard_conformance": {
+    "reason": "All required panel assets passed independent private-use review; lettering is exact from locked storyboard v2.",
+    "status": "PRIVATE_PREVIEW_FROM_PASS_REVIEWED_ASSETS"
+  },
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "typography": {
+    "body_size": 22,
+    "family": "STIXGeneral",
+    "title_size": 30
+  }
+}

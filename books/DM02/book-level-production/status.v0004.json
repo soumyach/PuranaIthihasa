@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "campaign_id": "dm02-book-level-private-production-v0001",
+  "subject_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+  "approval_id": "approval-3174e958372faf8a1e6f380f",
+  "status": "PAUSED_AFTER_AUTHORIZED_SCOPE_EXECUTION_WITH_BLOCKED_PAGES",
+  "operations": {
+    "necessary_executed": 29,
+    "conditional_fallback_executed": 3,
+    "review_directed_repairs_executed": 7,
+    "total_executed": 39,
+    "total_ceiling": 43,
+    "unspent_conditional_reserve": 4,
+    "additional_operations_planned": 0
+  },
+  "pages": {
+    "total": 24,
+    "complete_private_preview": 15,
+    "blocked": 9,
+    "complete_page_numbers": [
+      2,
+      3,
+      7,
+      8,
+      9,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      21,
+      22,
+      23,
+      24
+    ],
+    "blocked_page_numbers": [
+      1,
+      4,
+      5,
+      6,
+      10,
+      11,
+      12,
+      19,
+      20
+    ]
+  },
+  "page_11": {
+    "status": "ESCALATE_BEFORE_GENERATION",
+    "generated": false,
+    "qualified_review_signed": false
+  },
+  "partial_pdf": {
+    "path": "output/pdf/DM02-private-partial-proof-v0001.pdf",
+    "sha256": "d51e586753c35c41a8e25065af6e3f80dd62727dad21cf26ad833e98b9adb3db",
+    "page_count": 15,
+    "validated": true,
+    "complete_book_claim": false
+  },
+  "allowance_observation_path": "books/DM02/book-level-production/usage-after.v0001.json",
+  "incremental_usd": "UNKNOWN_NOT_EXPOSED",
+  "character_reference_state": "PROPOSED_ONLY_NO_CANONICAL_PROMOTION",
+  "source_graph_modified": false,
+  "publication_state": "BLOCKED_PRIVATE_INTERNAL_ONLY",
+  "next_checkpoint": "Qualified Page 11 review plus a new exact corrective campaign for blocked pages; current authorization cannot be repurposed."
+}

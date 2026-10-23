@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "book_version": "DM02-BOOK-LEVEL-PRODUCTION-PAGE09-V4",
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "page_script_hash": "b193f33b6b9c23857424399a98d7fc966318ee35fc7ec05293baeb24aa36ea01",
+  "page_id": "page-ca28c1486ed14e92ca7c6c89",
+  "page_number": 9,
+  "reading_order": 9,
+  "page_title": "BRAHMA'S HYMN",
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "layout_type": "SINGLE_PANEL_IMMERSIVE",
+  "fixture": false,
+  "private_preview": true,
+  "publication_eligible": false,
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "preview_authority": {
+    "scope": "DM02_BOOK_LEVEL_PRIVATE_CAMPAIGN_PASS_REVIEWED_ASSETS",
+    "basis": "Exact approval approval-3174e958372faf8a1e6f380f and independent actual-pixel review",
+    "image_generation_authorized": true,
+    "publication_authorized": false,
+    "paid_provider_calls_authorized": false
+  },
+  "storyboard_conformance": {
+    "status": "PRIVATE_PREVIEW_FROM_PASS_REVIEWED_ASSETS",
+    "reason": "All required panel assets passed independent private-use review; lettering is exact from locked storyboard v2."
+  },
+  "reference_comparison": [
+    {
+      "role": "PRESENTATION_REFERENCE_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "role": "COMIC_PAGE_RHYTHM_REFERENCE_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+    }
+  ],
+  "panels": [
+    {
+      "panel_id": "p09-panel-01",
+      "reading_order": 1,
+      "asset": {
+        "path": "books/DM02/book-level-production/images/p09-panel-01/v0001.png",
+        "sha256": "a316b6ae9ba2f8415c7ad52fcdcb0199a1b761c899ab4bd187c2f459c4e4b0d3",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW",
+        "approval": {
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "a316b6ae9ba2f8415c7ad52fcdcb0199a1b761c899ab4bd187c2f459c4e4b0d3",
+          "review_path": "books/DM02/book-level-production/reviews/campaign-image-reviews.v0001.json",
+          "review_result": "PASS"
+        }
+      },
+      "crop": {
+        "mode": "CONTAIN",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "zoom": 1.0,
+        "crop_intent": "Preserve the complete reviewed portrait master, including the protected lettering field and all source-critical relationships."
+      },
+      "speaker_anchors": [
+        {
+          "speaker_id": "dm-brahma",
+          "x": 0.4,
+          "y": 0.53
+        }
+      ],
+      "box": {
+        "x": 0.045,
+        "y": 0.365,
+        "width": 0.91,
+        "height": 0.56
+      }
+    }
+  ],
+  "lettering": [
+    {
+      "lettering_id": "p09-narration",
+      "panel_id": "p09-panel-01",
+      "reading_order": 1,
+      "channel": "NARRATION",
+      "speaker_id": "narrator",
+      "text": "Brahma gathered his attention and praised the Goddess who held Vishnu in sleep.",
+      "box": {
+        "x": 0.08,
+        "y": 0.115,
+        "width": 0.84,
+        "height": 0.055
+      },
+      "padding": 12,
+      "font": {
+        "size": 22,
+        "minimum_size": 22
+      },
+      "badge_number": 1,
+      "source_script_hash": "5f4a47dde38ab0d8ea717ddba26a4a5f1102da28f6f7feff486192ff10e7a823",
+      "placement_scope": "PAGE_BAND"
+    },
+    {
+      "lettering_id": "p09-dialogue",
+      "panel_id": "p09-panel-01",
+      "reading_order": 2,
+      "channel": "DIALOGUE",
+      "speaker_id": "dm-brahma",
+      "text": "You are the sacred utterance by which offerings are made. You are the power by which creation arises, by which it is preserved, and by which it is drawn again into dissolution. You are knowledge, and you are the great illusion that can veil knowledge. You are nature, nourishment and peace. You are also power armed against danger.",
+      "box": {
+        "x": 0.08,
+        "y": 0.185,
+        "width": 0.84,
+        "height": 0.16
+      },
+      "padding": 12,
+      "font": {
+        "size": 22,
+        "minimum_size": 22
+      },
+      "tail_max_length": 60,
+      "source_script_hash": "c2c0022f007ea0b4dc4f4110a13ec947bf9b08b9bb3b9aa7fe1e1a31c0b7eefd",
+      "placement_scope": "PAGE_BAND"
+    }
+  ],
+  "required_lettering_ids": [
+    "p09-narration",
+    "p09-dialogue"
+  ],
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "typography": {
+    "family": "STIXGeneral",
+    "body_size": 22,
+    "title_size": 30
+  },
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    }
+  },
+  "composition_repair": {
+    "parent_version": "v0003",
+    "reason": "INDEPENDENT_REVIEW_DIRECTED_BRAHMA_CALLOUT_DIRECTION",
+    "new_pixels_required": false,
+    "artwork_hashes_changed": false
+  }
+}

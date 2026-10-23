@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "page_id": "page-8619f3db280abbfd867eefe4",
+  "page_number": 21,
+  "review_scope": "PRIVATE_PDF_ELIGIBILITY_BINDING_FOR_PRIOR_ACTUAL_PIXEL_PASS",
+  "reviewer": {
+    "id": "/root/dm02_corrective_pixel_reviewer",
+    "independent_of_composer": true,
+    "actual_pixels_inspected": true
+  },
+  "prior_review": {
+    "path": "books/DM02/private-page-previews/page-8619f3db280abbfd867eefe4/v0004/0021-page-8619f3db280abbfd867eefe4.independent-visual-review.json",
+    "sha256": "20be4b3cc079107e35b857b30b7df420831fc7b7d0e90207fcddf2ded7b2e04b"
+  },
+  "composed_png": {
+    "path": "books/DM02/private-page-previews/page-8619f3db280abbfd867eefe4/v0004/0021-page-8619f3db280abbfd867eefe4.png",
+    "sha256": "33658c7df3f95991d573919045902ee33032f930529433ca276379fec40e4f6f",
+    "dimensions": [
+      1086,
+      1448
+    ]
+  },
+  "overall_verdict": "PASS",
+  "private_pdf_proof_eligible": true,
+  "publication_eligible": false,
+  "evidence": "The prior original-resolution review passed exact script, crop, source action, legibility and private-preview isolation.",
+  "scope_limitations": [
+    "PRIVATE_PREVIEW_ONLY",
+    "NO_PUBLICATION_APPROVAL",
+    "NO_THEOLOGICAL_CERTIFICATION"
+  ]
+}

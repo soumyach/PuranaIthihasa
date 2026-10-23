@@ -1,0 +1,24 @@
+{
+  "schema_version":"1.0",
+  "book_id":"DM02",
+  "campaign_id":"dm02-book-level-private-production-v0001",
+  "authorization_subject_hash":"75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+  "approval_id":"approval-3174e958372faf8a1e6f380f",
+  "batch_id":"dm02-book-level-batch-02a-repair",
+  "operation_count":1,
+  "retry":true,
+  "retry_class":"INDEPENDENT_REVIEW_DIRECTED_REPAIR",
+  "requests":[{
+    "operation_index":7,
+    "unit_id":"page-d20c0821bca7f13784a34630--p04-panel-01",
+    "panel_spec_sha256":"2ed5dd861c1c6e7fe0f5213cefddf72c6312918a2855410c18493a86b97b870a",
+    "method":"REFERENCE_CONDITIONED_TARGETED_MULTI_REGION_EDIT",
+    "submitted_prompt":"Use case: precise-object-edit\nAsset type: DM02 children's devotional comic full-page master for Page 4 p04-panel-01, portrait 3:4, no lettering\nInput images: Image 1 is the sole edit target p04-panel-01 v0001; Image 2 is PR7 Gold Standard A for series finish only; Image 3 is PR7 Gold Standard B for quiet full-page atmosphere only; Image 4 is the passed DM02 cosmic-ocean reference for calm midnight negative space only.\nPrimary request: Apply exactly three bounded corrections to Image 1 while preserving every unaffected area as closely as possible.\nCorrection 1 — forehead: remove only Vishnu's pale U-shaped vertical forehead mark and red/orange central stroke. Restore smooth natural blue forehead skin matching the surrounding complexion, anatomy, light and texture. Add no replacement mark or symbol.\nCorrection 2 — Shesha canopy: make the total number of hooded heads genuinely uncountable without replacing five with any other countable total. Preserve the serpent couch, coils, support relationship and partial canopy, but use natural overlap, deep shadow and edge cropping so only fragments/overlapping suggestions of multiple hoods remain and an observer cannot audit an exact number. Do not add more full heads, merge anatomy grotesquely or remove Shesha's recognizable serpent identity.\nCorrection 3 — lettering safe band: inside only the complete normalized rectangle x=0.08..0.92, y=0.06..0.24, darken and simplify the amber high-contrast cloud flare into calm midnight/indigo atmospheric cloud and sparse low-contrast texture. The entire band must contain no head, hood, limb, coil, wave, bright flare, symbol or action-critical feature and must support an opaque editable narration plaque.\nPreserve: Vishnu's exact sleeping pose, face, hair, coherent two visible arms and hands, garments, garland and restrained ornaments; Shesha's coils and physical support relation; unbounded flood; diffuse non-anatomical Yoganidra sleep field; lighting outside the edited safe band; framing, painterly style, dimensions and all non-target pixels. The sleep field must remain diffuse, non-circular and atmospheric, with no body, face, limbs, fixed halo or locus.\nProhibitions: no new figure, lotus, Brahma, weapon, sacred emblem, exact hood count, extra limb, shore, island, cliff, mountain, city, temple, throne, embedded text or watermark. Do not transfer characters, scene or theology from reference Images 2–3. Produce exactly one edited image, no variant.",
+    "references":[
+      {"input_index":1,"role":"EDIT_TARGET","path":"books/DM02/book-level-production/images/p04-panel-01/v0001.png","sha256":"ab5b99c90bf4de4fa85a24c3d6032135fbbad8942ab5e4514f38e191c4f239cf"},
+      {"input_index":2,"role":"A_SERIES_VISUAL_IDENTITY","path":"book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png","sha256":"15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"},
+      {"input_index":3,"role":"B_QUIET_FULL_PAGE_COMPOSITION","path":"book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png","sha256":"d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"},
+      {"input_index":4,"role":"D_COSMIC_OCEAN_ENVIRONMENT_CONTINUITY","path":"books/DM02/pages-1-3-production/images/p03-panel-01/v0001.png","sha256":"8c5e72bf52d71d13997af976c3f7d43917802b8bcd91506d35495031bdf3e86a"}
+    ]
+  }]
+}

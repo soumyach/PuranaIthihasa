@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "book_version": "DM02-BOOK-LEVEL-PRODUCTION-PAGE14-V1",
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "page_script_hash": "f89830e67f6e8c5a29e3337cef938bb29b96214bfd2de42c6a44e3d1bb26a038",
+  "page_id": "page-b3c2c7ea03e4d1259ccbea7b",
+  "page_number": 14,
+  "reading_order": 14,
+  "page_title": "STRENGTH AGAINST STRENGTH",
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "layout_type": "THREE_PANEL",
+  "fixture": false,
+  "private_preview": true,
+  "publication_eligible": false,
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "preview_authority": {
+    "scope": "DM02_BOOK_LEVEL_PRIVATE_CAMPAIGN_PASS_REVIEWED_ASSETS",
+    "basis": "Exact approval approval-3174e958372faf8a1e6f380f and independent actual-pixel review",
+    "image_generation_authorized": true,
+    "publication_authorized": false,
+    "paid_provider_calls_authorized": false
+  },
+  "storyboard_conformance": {
+    "status": "PRIVATE_PREVIEW_FROM_PASS_REVIEWED_ASSETS",
+    "reason": "All required panel assets passed independent private-use review; lettering is exact from locked storyboard v2."
+  },
+  "reference_comparison": [
+    {
+      "role": "PRESENTATION_REFERENCE_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "role": "COMIC_PAGE_RHYTHM_REFERENCE_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+    }
+  ],
+  "panels": [
+    {
+      "panel_id": "p14-panel-01",
+      "reading_order": 1,
+      "asset": {
+        "path": "books/DM02/visual-proof-campaign/images/p14-panel-01/v0001.png",
+        "sha256": "c3cf653e36e0d03a0d9b126ffeab56bee0b655ba752d8d988d9d057f8354170c",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW",
+        "approval": {
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "c3cf653e36e0d03a0d9b126ffeab56bee0b655ba752d8d988d9d057f8354170c",
+          "review_path": "books/DM02/book-level-production/reviews/campaign-image-reviews.v0001.json",
+          "review_result": "PASS"
+        }
+      },
+      "crop": {
+        "mode": "CONTAIN",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "zoom": 1.0,
+        "crop_intent": "Preserve the complete reviewed portrait master, including the protected lettering field and all source-critical relationships."
+      },
+      "speaker_anchors": []
+    },
+    {
+      "panel_id": "p14-panel-02",
+      "reading_order": 2,
+      "asset": {
+        "path": "books/DM02/book-level-production/images/p14-panel-02/v0002.png",
+        "sha256": "0c8dd39c7473bd934b005e6342cd1e859b116a31cd7fd76e9ba054fc7f8af125",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW",
+        "approval": {
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "0c8dd39c7473bd934b005e6342cd1e859b116a31cd7fd76e9ba054fc7f8af125",
+          "review_path": "books/DM02/book-level-production/reviews/campaign-image-reviews.v0001.json",
+          "review_result": "PASS"
+        }
+      },
+      "crop": {
+        "mode": "CONTAIN",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "zoom": 1.0,
+        "crop_intent": "Preserve the complete reviewed portrait master, including the protected lettering field and all source-critical relationships."
+      },
+      "speaker_anchors": []
+    },
+    {
+      "panel_id": "p14-panel-03",
+      "reading_order": 3,
+      "asset": {
+        "path": "books/DM02/book-level-production/images/p14-panel-03/v0001.png",
+        "sha256": "ebfc7493442791f0a5d0043f931bd62bbbc652b45fd414b0a97a7365fba19de4",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW",
+        "approval": {
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "ebfc7493442791f0a5d0043f931bd62bbbc652b45fd414b0a97a7365fba19de4",
+          "review_path": "books/DM02/book-level-production/reviews/campaign-image-reviews.v0001.json",
+          "review_result": "PASS"
+        }
+      },
+      "crop": {
+        "mode": "CONTAIN",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "zoom": 1.0,
+        "crop_intent": "Preserve the complete reviewed portrait master, including the protected lettering field and all source-critical relationships."
+      },
+      "speaker_anchors": []
+    }
+  ],
+  "lettering": [
+    {
+      "lettering_id": "p14-narration",
+      "panel_id": "p14-panel-01",
+      "reading_order": 1,
+      "channel": "NARRATION",
+      "speaker_id": "narrator",
+      "text": "Vishnu grappled with Madhu and Kaitabha upon the cosmic waters.\n\nA hold was made and broken. One Asura drove forward; Vishnu checked him. The other closed from the side; Vishnu turned to meet him. Again they joined, separated and returned.",
+      "box": {
+        "x": 0.08,
+        "y": 0.115,
+        "width": 0.84,
+        "height": 0.13
+      },
+      "padding": 12,
+      "font": {
+        "size": 22,
+        "minimum_size": 22
+      },
+      "badge_number": 1,
+      "source_script_hash": "435f4d89fe2c7f2e320ffaaa83c8082b5340f72827bd4264fbecd2117c834043"
+    }
+  ],
+  "required_lettering_ids": [
+    "p14-narration"
+  ],
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "typography": {
+    "family": "STIXGeneral",
+    "body_size": 22,
+    "title_size": 30
+  },
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    }
+  }
+}
