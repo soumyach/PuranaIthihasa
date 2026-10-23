@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0",
+  "package_id": "dm02-page-0011-iconography-review-v0001",
+  "book_id": "DM02",
+  "page_number": 11,
+  "page_id": "page-b85332e92940926f67e6dd9d",
+  "panel_id": "p11-panel-01",
+  "baseline": {
+    "branch": "feature/book-factory-dm02-corrective-proofs",
+    "commit": "8909cd86760d4c714af5f50a9bf630ad145a878c"
+  },
+  "scope": "Evidence-grounded iconography review package for the Page 11 Yoganidra withdrawal scene only.",
+  "repository_inputs": [
+    {
+      "path": "books/DM02/story-packets/b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd.json",
+      "sha256": "63195c77c26e324af9809f1cfde80131108d655b550ce137115e3337b3f84e84",
+      "record_id": "story-packet-0c625c5a7c03d354a1e77649",
+      "role": "LOCKED_STORY_PACKET"
+    },
+    {
+      "path": "books/DM02/source-clearance/483cc82d41b142878778e107deabd090ec623ccf4a48410b28d80a3c95f1213e.json",
+      "sha256": "ddbbe4485c890408bb4a8f4a51c5e5490ebcf5e6e7b8a412ac5af6c11b539763",
+      "record_id": "source-clearance-6d055a66422f119d4022d522",
+      "role": "SOURCE_CLEARANCE"
+    },
+    {
+      "path": "books/DM02/corrective-proof-campaign/source-iconography-clearance.json",
+      "sha256": "b80b470d873bca8f6c1b78c7a983bdc4e3101ca427d5abe821f4c167d685eb05",
+      "role": "CURRENT_BLOCKING_GATE"
+    },
+    {
+      "path": "books/DM02/character-bibles/v0001.json",
+      "sha256": "e15e42cb62fd2c17715d1acfcf95b09d7210bebb1afe4b7a06e0fb41b4cdc791",
+      "record_id": "character-bibles-15d00711033d45bf7b0632dc",
+      "record_content_hash": "b469d78e327da2b41082dfbb48ad51a5a98e47112eea311157b2fd7ab979a1f7",
+      "role": "LOCKED_CHARACTER_BIBLES"
+    },
+    {
+      "path": "books/DM02/location-bibles/v0001.json",
+      "sha256": "65a6da806ac3669b321745b561e134117ce5a9aa258d405c6ef79c45fd8e4e35",
+      "record_id": "location-bibles-de5776fee697b83b4e59a141",
+      "record_content_hash": "33a8a7d20973eba40580261f7f274375593db356d81564dd0a55cb9c2f0a592f",
+      "role": "LOCKED_LOCATION_BIBLES"
+    },
+    {
+      "path": "books/DM02/storyboards/v0002.json",
+      "sha256": "2ffc82651274e049bf8b20c270f5abde63841fb2abc40137d935b956990069f6",
+      "record_id": "storyboards-230ea9bee406befd9e97b8d4",
+      "record_content_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+      "role": "LOCKED_STORYBOARD_V2"
+    },
+    {
+      "path": "books/DM02/page-scripts/page-0011.v0002.json",
+      "sha256": "da1ec359b5fe82cad4e7021679d68e682f64dc1682466ca0c98cae407433170f",
+      "role": "LOCKED_PAGE_SCRIPT_V2"
+    },
+    {
+      "path": "books/DM02/proof-specs/v0002.json",
+      "sha256": "547b3d89985fdf809b5a2aa44d2002cdd812d443e399a685da2dd99053259d3e",
+      "record_id": "proof-specs-7ceafd74d070b7d7a393c19d",
+      "record_content_hash": "9515ff2b1de2b35a7cb81c027d287db7d88f6000e71bf12c407ed0b20a16c8e2",
+      "role": "LOCKED_PROOF_SPEC_V2"
+    },
+    {
+      "path": "books/DM02/visual-proof-reviews/p11-panel-01/v0001.json",
+      "sha256": "601d4031e92d93b919dfa0acac24eceb32094fbdd09bd96788d12d7ef675e037",
+      "record_id": "visual-proof-reviews/p11-panel-01-300233b55ec2585a92ff213f",
+      "role": "INDEPENDENT_ACTUAL_PIXEL_REVIEW"
+    },
+    {
+      "path": "books/DM02/visual-proof-campaign/images/p11-panel-01/v0001.png",
+      "sha256": "aa2104618b9f4395c1f62cdba279974f5be3a38b4ff78242182cc9d13438fa6c",
+      "role": "EXISTING_IMMUTABLE_PROOF_IMAGE"
+    },
+    {
+      "path": "MYTHOLOGY_COMIC_RULES.md",
+      "sha256": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070",
+      "role": "GOVERNING_POLICY"
+    },
+    {
+      "path": "research/source-graph/graph.json",
+      "sha256": "c4af351fd8e2c786669610e2e9d56e1bb7f3e9b906dede60d84b0ae62ef3d7db",
+      "role": "READ_ONLY_SOURCE_GRAPH"
+    },
+    {
+      "path": "research/source-graph/entities.json",
+      "sha256": "c8afda2ed2840c7a31cc6e4e11e40bb84dcd6be01600f633a126e8f605a7b31a",
+      "role": "READ_ONLY_ENTITY_RECORDS"
+    },
+    {
+      "path": "research/source-graph/narrative_events.json",
+      "sha256": "1ff2346a6a301729479dd56a4539c09dc05540689c24f658481346e30cbf8190",
+      "role": "READ_ONLY_EVENT_RECORDS"
+    },
+    {
+      "path": "research/source-graph/evidence.json",
+      "sha256": "08bb75775565525ba4fb034f0222af75c81fe9e53eca12ad72881fc1a11cd538",
+      "role": "READ_ONLY_EVIDENCE_RECORDS"
+    }
+  ],
+  "locked_source_ids": [
+    "dm-source",
+    "dm-pargiter",
+    "dm-sanskritdocuments",
+    "dm-ch01",
+    "dm-sanskrit-006",
+    "dm-evidence-004",
+    "dm-evidence-005",
+    "dm-evidence-006",
+    "dm-sanskrit-evidence-006",
+    "dm-event-004",
+    "dm-event-005",
+    "dm-event-006",
+    "dm-brahma",
+    "dm-vishnu",
+    "dm-shesha",
+    "dm-yoganidra"
+  ],
+  "external_references": [
+    {
+      "id": "primary-sanskrit-dm-1-89-91",
+      "title": "Devi Mahatmyam or Durga Saptashati",
+      "institution_or_host": "SanskritDocuments.org",
+      "url": "https://sanskritdocuments.org/doc_devii/durga700.html",
+      "locator": "Devi Mahatmyam 1.89-91",
+      "role": "PRIMARY_TEXT_DISPLAY",
+      "use_limit": "Supports named withdrawal loci, appearance before Brahma, and subsequent awakening; it does not establish sacred visual counts."
+    },
+    {
+      "id": "pargiter-dm-canto-81",
+      "title": "Commencement of the Devi-Mahatmya, Canto LXXXI",
+      "institution_or_host": "Wisdom Library display of Pargiter translation",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-markandeya-purana/d/doc117155.html",
+      "locator": "web lines 87-99",
+      "role": "LOCKED_ENGLISH_WITNESS_DISPLAY",
+      "use_limit": "Supports the bounded narrative and setting; not a critical-edition collation."
+    },
+    {
+      "id": "asi-cave-temples-anantasayin",
+      "title": "The Cave-Temples of the Pallavas",
+      "institution_or_host": "Archaeological Survey of India scan hosted by IGNCA",
+      "url": "https://ignca.gov.in/Asi_data/58405.pdf",
+      "role": "SCHOLARLY_TEMPLE_SCULPTURE_WITNESS",
+      "use_limit": "Documents an Indian sculptural reading of Yoganidra withdrawing as a feminine form; an artistic witness, not a textual mandate for anatomy or counts."
+    },
+    {
+      "id": "lacma-m842295",
+      "title": "Vishnu Vanquishing the Demons Madhu and Kaitabha; Folio from a Devimahatmya",
+      "institution_or_host": "Los Angeles County Museum of Art",
+      "url": "https://collections.lacma.org/object/48218",
+      "locator": "M.84.229.5, Bundelkhand/Chhatarpur, circa 1775",
+      "role": "LATER_DEVI_MAHATMYA_PAINTING_WITNESS",
+      "use_limit": "Documents a regional multi-armed Yoganidra convention; it must not be converted into a Chapter 1 textual requirement."
+    },
+    {
+      "id": "cma-197446",
+      "title": "Vishnu Battles Madhu and Kaitabha, from a Markandeya Purana",
+      "institution_or_host": "Cleveland Museum of Art",
+      "url": "https://www.clevelandart.org/art/1974.46",
+      "locator": "1974.46, Pahari kingdoms, circa 1760",
+      "role": "REGIONAL_PAINTING_WITNESS",
+      "use_limit": "Documents a four-armed Vishnu and multiheaded serpent in one Pahari treatment, not a universal requirement."
+    },
+    {
+      "id": "cma-2018155",
+      "title": "Vishnu on Ananta, the Endless Serpent",
+      "institution_or_host": "Cleveland Museum of Art",
+      "url": "https://www.clevelandart.org/art/2018.155",
+      "locator": "2018.155, Chamba/Pahari region, circa 1700",
+      "role": "REGIONAL_PAINTING_WITNESS",
+      "use_limit": "Documents a seven-headed serpent, four-headed Brahma, and Vaishnava attributes in another narrative setting; evidence of convention and variation only."
+    },
+    {
+      "id": "met-2021216",
+      "title": "Shri Sheshanarayana",
+      "institution_or_host": "The Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/art/collection/search/849519",
+      "locator": "2021.216, Calcutta, 1880-85",
+      "role": "DEVOTIONAL_PRINT_WITNESS",
+      "use_limit": "Documents ten Shesha hoods and pointed crowns in a late Calcutta print; evidence that fixed counts and dress are tradition-specific."
+    },
+    {
+      "id": "met-lost-kingdoms-yogasayana",
+      "title": "Lost Kingdoms: Hindu-Buddhist Sculpture of Early Southeast Asia",
+      "institution_or_host": "The Metropolitan Museum of Art",
+      "url": "https://resources.metmuseum.org/resources/metpublications/pdf/Lost_Kingdoms_Hindu_Buddhist_Sculpture_of_Early_Southeast_Asia.pdf",
+      "locator": "p. 152 discussion of a two-armed Yogasayana under the Vaikhanasagama typology",
+      "role": "SCHOLARLY_ICONOGRAPHY_REFERENCE",
+      "use_limit": "Documents that two-armed reclining Vishnu also has textual/iconographic precedent; not authority to impose that form on DM02."
+    },
+    {
+      "id": "met-38265-brahma",
+      "title": "Brahma",
+      "institution_or_host": "The Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/art/collection/search/38265",
+      "locator": "36.96.3, Cambodia, first quarter of 10th century",
+      "role": "SCULPTURAL_ICONOGRAPHY_WITNESS",
+      "use_limit": "Documents a four-face, four-arm Brahma convention in one regional and historical setting; not a Devi Mahatmyam scene requirement."
+    }
+  ],
+  "integrity_statement": {
+    "source_graph_modified": false,
+    "existing_artwork_modified": false,
+    "image_generation_performed": false,
+    "approval_created": false,
+    "theological_certification_claimed": false
+  }
+}

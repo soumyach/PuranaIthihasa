@@ -1,0 +1,233 @@
+{
+  "schema_version": "1.0",
+  "package_id": "dm02-page-0011-iconography-review-v0001",
+  "book_id": "DM02",
+  "page_number": 11,
+  "classification_vocabulary": [
+    "DIRECT_TEXT_REQUIREMENT",
+    "TEXTUALLY_COMPATIBLE_TRADITION",
+    "ARTISTIC_PROPOSAL",
+    "SOURCE_SILENT",
+    "UNRESOLVED_CONFLICT",
+    "FORBIDDEN_BY_LOCKED_SOURCE"
+  ],
+  "classification_note": "Each row has one primary classification. A documented convention remains nonbinding when the locked Devi Mahatmyam passage is silent.",
+  "attributes": [
+    {
+      "id": "brahma-lotus-seat",
+      "entity_id": "dm-brahma",
+      "attribute": "Brahma is seated on a lotus that grows from Vishnu's navel in the cosmic-ocean scene.",
+      "classification": "DIRECT_TEXT_REQUIREMENT",
+      "evidence_ids": ["dm-evidence-004"],
+      "uncertainty": "The exact stalk curvature, thickness, scale and placement are artistic choices; the cited Pargiter witness line 89 establishes the navel origin."
+    },
+    {
+      "id": "brahma-visible-head-count",
+      "entity_id": "dm-brahma",
+      "attribute": "Exact number of Brahma heads or faces visible in the Page 11 frame.",
+      "classification": "SOURCE_SILENT",
+      "evidence_ids": ["dm-evidence-004", "dm-evidence-006", "dm-sanskrit-evidence-006"],
+      "external_context_ids": ["met-38265-brahma", "cma-2018155"],
+      "uncertainty": "Four-faced Brahma is a documented convention, but the locked passage does not state a count or require all faces to be visible."
+    },
+    {
+      "id": "brahma-four-face-convention",
+      "entity_id": "dm-brahma",
+      "attribute": "Use of a four-faced Brahma as an identity convention.",
+      "classification": "TEXTUALLY_COMPATIBLE_TRADITION",
+      "evidence_ids": [],
+      "external_context_ids": ["met-38265-brahma", "cma-2018155"],
+      "uncertainty": "Compatible but neither required nor approved for this scene."
+    },
+    {
+      "id": "brahma-crown-and-ornaments",
+      "entity_id": "dm-brahma",
+      "attribute": "Brahma's crown, diadem, hair treatment, clothing and ornaments.",
+      "classification": "SOURCE_SILENT",
+      "evidence_ids": ["dm-evidence-004", "dm-evidence-006"],
+      "external_context_ids": ["met-38265-brahma", "met-2021216"],
+      "uncertainty": "Museum records document multiple regional treatments. The locked source specifies none."
+    },
+    {
+      "id": "brahma-extra-attributes",
+      "entity_id": "dm-brahma",
+      "attribute": "Adding a goose, Vedas, rosary, water vessel, kusa grass, or other attributes not needed for Page 11.",
+      "classification": "FORBIDDEN_BY_LOCKED_SOURCE",
+      "evidence_ids": [],
+      "uncertainty": "These may be valid elsewhere, but the locked page forbids source-silent iconography and unrelated events or objects."
+    },
+    {
+      "id": "shesha-support",
+      "entity_id": "dm-shesha",
+      "attribute": "Shesha bears sleeping Vishnu above the dissolution flood.",
+      "classification": "DIRECT_TEXT_REQUIREMENT",
+      "evidence_ids": ["dm-evidence-004"],
+      "uncertainty": "None within the locked scene relation."
+    },
+    {
+      "id": "shesha-exact-hood-count",
+      "entity_id": "dm-shesha",
+      "attribute": "Exact number and arrangement of Shesha's visible hoods.",
+      "classification": "SOURCE_SILENT",
+      "evidence_ids": ["dm-evidence-004"],
+      "external_context_ids": ["cma-2018155", "met-2021216", "cma-197446"],
+      "uncertainty": "Documented works use seven, ten, or an unspecified multiple; the locked passage authorizes no fixed count."
+    },
+    {
+      "id": "shesha-serpent-couch-convention",
+      "entity_id": "dm-shesha",
+      "attribute": "A coiled serpent couch with a partially visible protective hood canopy.",
+      "classification": "TEXTUALLY_COMPATIBLE_TRADITION",
+      "evidence_ids": ["dm-evidence-004"],
+      "external_context_ids": ["cma-2018155", "met-2021216", "cma-197446"],
+      "uncertainty": "The support relation is direct text; the coil and canopy design are conventional choices."
+    },
+    {
+      "id": "vishnu-sleep-and-awakening",
+      "entity_id": "dm-vishnu",
+      "attribute": "Vishnu sleeps on Shesha, is released after Yoganidra withdraws and appears, then rises awake.",
+      "classification": "DIRECT_TEXT_REQUIREMENT",
+      "evidence_ids": ["dm-evidence-004", "dm-evidence-006", "dm-sanskrit-evidence-006"],
+      "uncertainty": "A still image must not reverse the order by showing fully active Vishnu before Yoganidra is separate."
+    },
+    {
+      "id": "vishnu-visible-arm-count",
+      "entity_id": "dm-vishnu",
+      "attribute": "Exact total or visible arm count for reclining Vishnu.",
+      "classification": "SOURCE_SILENT",
+      "evidence_ids": ["dm-evidence-004", "dm-evidence-006", "dm-sanskrit-evidence-006"],
+      "external_context_ids": ["cma-197446", "met-lost-kingdoms-yogasayana"],
+      "uncertainty": "Four-armed and two-armed reclining forms are both documented; neither count is fixed by the locked passage."
+    },
+    {
+      "id": "vishnu-two-visible-arms",
+      "entity_id": "dm-vishnu",
+      "attribute": "Show only two scene-required arms while leaving total divine arm count unstated.",
+      "classification": "ARTISTIC_PROPOSAL",
+      "evidence_ids": ["dm-evidence-004", "dm-evidence-006"],
+      "external_context_ids": ["met-lost-kingdoms-yogasayana"],
+      "uncertainty": "Proposed solely to avoid an unsupported numerical claim; requires human acceptance for this adaptation."
+    },
+    {
+      "id": "vishnu-crown-ornaments-and-complexion",
+      "entity_id": "dm-vishnu",
+      "attribute": "Vishnu's crown, ornaments, complexion and garments.",
+      "classification": "SOURCE_SILENT",
+      "evidence_ids": ["dm-evidence-004", "dm-evidence-006"],
+      "external_context_ids": ["cma-197446", "cma-2018155", "met-2021216"],
+      "uncertainty": "Recognizable Vaishnava treatments are documented but vary by region and period."
+    },
+    {
+      "id": "vishnu-peacock-feather-crown",
+      "entity_id": "dm-vishnu",
+      "attribute": "Peacock-feather crown as a fixed identity marker in Page 11.",
+      "classification": "FORBIDDEN_BY_LOCKED_SOURCE",
+      "evidence_ids": [],
+      "uncertainty": "The existing review identifies it as an unsupported marker; it is not authorized by the locked scene or character bible."
+    },
+    {
+      "id": "vishnu-weapons-emblems",
+      "entity_id": "dm-vishnu",
+      "attribute": "Visible conch, discus, mace, lotus, or other sacred emblems in the Page 11 withdrawal moment.",
+      "classification": "FORBIDDEN_BY_LOCKED_SOURCE",
+      "evidence_ids": [],
+      "uncertainty": "The broader hymn names weapons, but the locked Page 11 action does not place them on Vishnu; adding them would conflate attributed praise or later scenes with this moment."
+    },
+    {
+      "id": "yoganidra-feminine-manifestation",
+      "entity_id": "dm-yoganidra",
+      "attribute": "Yoganidra appears as a distinct feminine divine presence before Brahma.",
+      "classification": "DIRECT_TEXT_REQUIREMENT",
+      "evidence_ids": ["dm-evidence-005", "dm-evidence-006", "dm-sanskrit-evidence-006"],
+      "external_context_ids": ["asi-cave-temples-anantasayin", "lacma-m842295"],
+      "uncertainty": "The source establishes the goddess and separate appearance, not a fixed body type, limb count, dress, or weapon array."
+    },
+    {
+      "id": "yoganidra-radiance-treatment",
+      "entity_id": "dm-yoganidra",
+      "attribute": "Soft indigo-gold radiance and flowing light used to make the manifestation readable.",
+      "classification": "ARTISTIC_PROPOSAL",
+      "evidence_ids": [],
+      "external_context_ids": ["asi-cave-temples-anantasayin", "lacma-m842295"],
+      "uncertainty": "Radiance color, form, route and intensity are not fixed by the passage."
+    },
+    {
+      "id": "yoganidra-fixed-halo-weapons-limb-array",
+      "entity_id": "dm-yoganidra",
+      "attribute": "A circular halo, fixed weapon array, or count-readable multi-arm anatomy.",
+      "classification": "FORBIDDEN_BY_LOCKED_SOURCE",
+      "evidence_ids": [],
+      "uncertainty": "The locked Page 11 bibles and proof specification exclude unsourced halo, weapons and fixed sacred counts."
+    },
+    {
+      "id": "six-withdrawal-loci",
+      "entity_id": "dm-yoganidra",
+      "attribute": "Six named locus groups: eyes, mouth, nose, arms, heart and breast.",
+      "classification": "DIRECT_TEXT_REQUIREMENT",
+      "evidence_ids": ["dm-evidence-006", "dm-sanskrit-evidence-006"],
+      "uncertainty": "Eyes and arms are plural but may each read as one paired semantic group; all six named groups must remain independently auditable."
+    },
+    {
+      "id": "exactly-six-literal-rays",
+      "entity_id": "dm-yoganidra",
+      "attribute": "Exactly six literal, continuous light rays from Vishnu to Yoganidra.",
+      "classification": "SOURCE_SILENT",
+      "evidence_ids": ["dm-evidence-006", "dm-sanskrit-evidence-006"],
+      "uncertainty": "The text names bodily origin groups, not ray count, shape, color, path, or duration."
+    },
+    {
+      "id": "six-readable-surface-cues",
+      "entity_id": "dm-yoganidra",
+      "attribute": "Six modest surface-origin cues, each with a short separate trace that converges only after leaving the body.",
+      "classification": "ARTISTIC_PROPOSAL",
+      "evidence_ids": ["dm-evidence-006", "dm-sanskrit-evidence-006"],
+      "uncertainty": "Designed for auditability without literal organ depiction or a permanent-residence claim."
+    },
+    {
+      "id": "literal-anatomical-cutaway",
+      "entity_id": "dm-yoganidra",
+      "attribute": "Anatomical organs, exposed breast anatomy, body cutaway, or a seventh locus.",
+      "classification": "FORBIDDEN_BY_LOCKED_SOURCE",
+      "evidence_ids": ["dm-evidence-006", "dm-sanskrit-evidence-006"],
+      "uncertainty": "Contradicts the locked modest, non-anatomical page treatment."
+    },
+    {
+      "id": "withdrawal-path-order-and-residence",
+      "entity_id": "dm-yoganidra",
+      "attribute": "Exact path, internal bodily residence, or a fixed temporal order among the six loci.",
+      "classification": "SOURCE_SILENT",
+      "evidence_ids": ["dm-evidence-006", "dm-sanskrit-evidence-006"],
+      "uncertainty": "The text gives the named sources and subsequent appearance, not a medical pathway or internal residence model."
+    },
+    {
+      "id": "cosmic-ocean-setting",
+      "entity_id": null,
+      "attribute": "The universe has become an ocean; Vishnu and Shesha are above the dissolution flood.",
+      "classification": "DIRECT_TEXT_REQUIREMENT",
+      "evidence_ids": ["dm-evidence-004", "dm-evidence-006"],
+      "uncertainty": "Water style and palette remain artistic choices."
+    },
+    {
+      "id": "lotus-navel-connection",
+      "entity_id": "dm-brahma",
+      "attribute": "A visibly continuous lotus stalk entering Vishnu's navel in Page 11.",
+      "classification": "DIRECT_TEXT_REQUIREMENT",
+      "evidence_ids": ["dm-evidence-004"],
+      "external_context_ids": ["cma-2018155", "met-2021216"],
+      "uncertainty": "The locked graph paraphrase is abbreviated, but its cited English witness at web line 89 states that the lotus grew from Vishnu's navel. Exact rendering remains open."
+    },
+    {
+      "id": "madhu-kaitabha-nearby-distinct",
+      "entity_id": null,
+      "attribute": "Madhu and Kaitabha remain nearby as two distinct figures while Brahma is threatened.",
+      "classification": "DIRECT_TEXT_REQUIREMENT",
+      "evidence_ids": ["dm-evidence-004", "dm-evidence-006"],
+      "uncertainty": "They must not already be defeated or merged into one figure."
+    }
+  ],
+  "conflict_assessment": {
+    "unresolved_conflict_rows": 0,
+    "finding": "No contradiction was found among the locked Page 11 witnesses. The open issues are source silence and selection among regional conventions, not a textual conflict.",
+    "theological_certification": "NOT_PERFORMED_AND_NOT_CLAIMED"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "template_status": "AWAITING_AUTHORIZED_HUMAN_REVIEW",
+  "package_id": "dm02-page-0011-iconography-review-v0001",
+  "review_scope": {
+    "book_id": "DM02",
+    "page_number": 11,
+    "page_id": "page-b85332e92940926f67e6dd9d",
+    "panel_id": "p11-panel-01",
+    "scene": "Yoganidra withdraws from the six named locus groups, appears before Brahma, and Vishnu begins to awaken.",
+    "source_ids": ["dm-evidence-004", "dm-evidence-005", "dm-evidence-006", "dm-sanskrit-evidence-006"],
+    "input_manifest_path": "books/DM02/iconography-review/page-0011/input-manifest.v0001.json",
+    "attribute_matrix_path": "books/DM02/iconography-review/page-0011/attribute-matrix.v0001.json",
+    "proposed_conventions_path": "books/DM02/iconography-review/page-0011/proposed-visual-conventions.v0001.json"
+  },
+  "reviewer": {
+    "name": null,
+    "authority_or_qualification": null,
+    "affiliation": null,
+    "independent_of_image_producer": null,
+    "reviewed_exact_input_hashes": null
+  },
+  "questions": [
+    {
+      "id": "Q1_COUNT_NEUTRALITY",
+      "question": "May Page 11 use a count-neutral composition: partly occluded Brahma, cropped or shadowed Shesha hoods, two visible scene-required Vishnu arms without a total-count claim, and drapery that leaves Yoganidra's arm count unreadable?",
+      "decision": null,
+      "allowed_values": ["APPROVE", "REVISE", "REJECT"],
+      "required_revision": null
+    },
+    {
+      "id": "Q2_IDENTITY_CUES",
+      "question": "May Vishnu use a restrained indigo-blue complexion, ivory/yellow drape and simple low crown, and may Brahma use a restrained sage-like hair or low-diadem treatment, with no peacock feather, weapon array or extra attributes?",
+      "decision": null,
+      "allowed_values": ["APPROVE", "REVISE", "REJECT"],
+      "required_revision": null
+    },
+    {
+      "id": "Q3_YOGANIDRA_FORM",
+      "question": "May Yoganidra appear as a distinct dignified feminine draped presence with soft indigo-gold ambient radiance, no circular halo, no weapons and no count-readable limb array?",
+      "decision": null,
+      "allowed_values": ["APPROVE", "REVISE", "REJECT"],
+      "required_revision": null
+    },
+    {
+      "id": "Q4_SIX_LOCUS_GRAMMAR",
+      "question": "May the six loci be shown as modest surface-origin cues—paired eyes, mouth, nose, paired arms, heart and breast—with short separate traces that converge only outside Vishnu's body, without literal organs or a claim of exactly six rays?",
+      "decision": null,
+      "allowed_values": ["APPROVE", "REVISE", "REJECT"],
+      "required_revision": null
+    },
+    {
+      "id": "Q5_SEQUENCE",
+      "question": "May the single still show Yoganidra already separate before Brahma while Vishnu's eyelids and posture only begin to shift toward waking, with no combat action yet?",
+      "decision": null,
+      "allowed_values": ["APPROVE", "REVISE", "REJECT"],
+      "required_revision": null
+    },
+    {
+      "id": "Q6_EXCLUSIONS",
+      "question": "Does the proposed implementation correctly preserve a clear but discreet lotus-stalk connection from Vishnu's navel to Brahma's seat while excluding Lakshmi, extra deities, goose, Vedas, rosary, sacred weapons/emblems, fixed sacred counts, anatomical cutaways and any event after Vishnu's awakening?",
+      "decision": null,
+      "allowed_values": ["APPROVE", "REVISE", "REJECT"],
+      "required_revision": null
+    }
+  ],
+  "overall_decision": null,
+  "overall_allowed_values": ["APPROVE_FOR_PRIVATE_PAGE11_PROMPT_PREPARATION", "REVISE_AND_RESUBMIT", "REJECT"],
+  "review_notes": null,
+  "signed_at": null,
+  "scope_effect": {
+    "approval_would_permit": [
+      "Creation of an exact-scope Page 11 iconography-clearance record bound to these input hashes.",
+      "Preparation of a Page 11 corrective prompt under a separate, fresh authenticated image-operation authorization."
+    ],
+    "approval_would_not_permit": [
+      "Image generation by itself.",
+      "A retry, additional page, full-book batch, PDF, publication, deployment, push or merge.",
+      "Theological certification.",
+      "Approval or character-reference promotion of the existing Page 11 proof.",
+      "Source-graph modification or transfer of these choices to another tradition or book."
+    ]
+  },
+  "integrity_note": "This is an unsigned decision template, not an approval record."
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "package_id": "dm02-page-0011-iconography-review-v0001",
+  "status": "PROPOSED",
+  "approval_status": "UNAPPROVED",
+  "theological_certification": "NOT_PERFORMED_AND_NOT_CLAIMED",
+  "tradition_scope": "Devi Mahatmyam chapter 1, DM02 private adaptation, Page 11 withdrawal-and-awakening moment only",
+  "source_scope": {
+    "source_id": "dm-source",
+    "event_ids": ["dm-event-004", "dm-event-005", "dm-event-006"],
+    "evidence_ids": ["dm-evidence-004", "dm-evidence-005", "dm-evidence-006", "dm-sanskrit-evidence-006"],
+    "limitations": [
+      "No critical-edition collation was performed.",
+      "Museum and temple records document conventions, not locked textual requirements.",
+      "These proposals do not transfer automatically to other books, traditions, pages, or moments."
+    ]
+  },
+  "records": [
+    {
+      "id": "proposed-dm02-page11-brahma-v0001",
+      "entity_id": "dm-brahma",
+      "status": "PROPOSED",
+      "direct_requirements": [
+        "Remain seated on a lotus visibly connected by its stalk to Vishnu's navel.",
+        "Remain present before the separately appeared Yoganidra.",
+        "Remain threatened by nearby Madhu and Kaitabha; do not show a later victory state."
+      ],
+      "proposed_treatment": [
+        "Use a three-quarter or partly occluded view so total head and arm counts are not asserted.",
+        "Use a restrained sage-like hair or low diadem treatment only if the reviewer accepts it.",
+        "Keep hands free of count-driving attributes not required by the page."
+      ],
+      "forbidden_or_withheld": [
+        "Do not require four visible heads or four visible arms.",
+        "Do not add goose, Vedas, rosary, water vessel, kusa grass, weapons, or unrelated ritual objects.",
+        "Do not promote the existing proof's four-headed depiction as canonical."
+      ],
+      "supporting_external_reference_ids": ["met-38265-brahma", "cma-2018155", "met-2021216"],
+      "approval_needed": "Human reviewer must accept or revise the count-neutral composition and crown/hair treatment."
+    },
+    {
+      "id": "proposed-dm02-page11-vishnu-v0001",
+      "entity_id": "dm-vishnu",
+      "status": "PROPOSED",
+      "direct_requirements": [
+        "Begin in sleep on Shesha and read as awakening only after Yoganidra is separate.",
+        "Expose the six named surface-origin groups sufficiently for visual audit.",
+        "Remain above the cosmic flood.",
+        "Preserve the lotus stalk growing from Vishnu's navel to Brahma's seat."
+      ],
+      "proposed_treatment": [
+        "Show only two scene-required arms, without claiming that the divine form has only two arms.",
+        "Use a calm reclining profile with eyelids just beginning to open after separation.",
+        "Use restrained indigo-blue complexion, warm ivory or yellow drape, and a simple low crown only if accepted as adaptation conventions."
+      ],
+      "forbidden_or_withheld": [
+        "No peacock feather.",
+        "No conch, discus, mace, lotus, weapon array, fixed halo, or count-readable additional arms in this frame.",
+        "No combat posture before the withdrawal is complete."
+      ],
+      "supporting_external_reference_ids": ["cma-197446", "met-lost-kingdoms-yogasayana", "cma-2018155"],
+      "approval_needed": "Human reviewer must accept or revise the two-visible-arm strategy and restrained identity cues."
+    },
+    {
+      "id": "proposed-dm02-page11-shesha-v0001",
+      "entity_id": "dm-shesha",
+      "status": "PROPOSED",
+      "direct_requirements": [
+        "Physically support Vishnu above the dissolution flood."
+      ],
+      "proposed_treatment": [
+        "Make the coiled serpent couch unambiguous.",
+        "Crop, overlap, shadow, or partially frame the hood canopy so no exact total hood count is asserted.",
+        "Keep the canopy subordinate to the six-locus action."
+      ],
+      "forbidden_or_withheld": [
+        "No fixed five-, seven-, ten-, thousand-, or other numbered hood claim.",
+        "Do not promote the existing five-hood proof as canonical."
+      ],
+      "supporting_external_reference_ids": ["cma-197446", "cma-2018155", "met-2021216"],
+      "approval_needed": "Human reviewer must accept or revise the count-obscuring hood treatment."
+    },
+    {
+      "id": "proposed-dm02-page11-yoganidra-v0001",
+      "entity_id": "dm-yoganidra",
+      "status": "PROPOSED",
+      "direct_requirements": [
+        "Withdraw from eyes, mouth, nose, arms, heart and breast as six independently readable semantic groups.",
+        "Appear as a distinct feminine divine presence before Brahma.",
+        "Read as the released power of cosmic sleep, not as a seventh bodily locus or permanent resident."
+      ],
+      "proposed_treatment": [
+        "Use a dignified, fully formed feminine silhouette with flowing drapery that does not expose a count-readable arm array.",
+        "Use soft indigo-gold ambient radiance without a circular halo disk.",
+        "Use six modest surface-origin cues with short separate traces; merge them only after they have cleared Vishnu's silhouette.",
+        "Group the paired eyes as one semantic origin and the paired arms as one semantic origin."
+      ],
+      "forbidden_or_withheld": [
+        "No weapons, fixed halo, anatomical cutaway, exposed breast anatomy, fixed limb count, or literal organ extraction.",
+        "No statement of exact internal residence, withdrawal route, ray count, or order among loci.",
+        "Do not promote the existing crowned, halo-like Yoganidra depiction as canonical."
+      ],
+      "supporting_external_reference_ids": ["asi-cave-temples-anantasayin", "lacma-m842295"],
+      "approval_needed": "Human reviewer must accept or revise the count-neutral feminine manifestation and six-cue visual grammar."
+    }
+  ],
+  "reuse_boundary": {
+    "permitted_if_approved": "The approved choices may be reused only for the same bounded DM02 Chapter 1 scene family and only with the approved tradition/scope metadata attached.",
+    "not_permitted": [
+      "No retroactive approval of existing images.",
+      "No automatic character-reference promotion.",
+      "No inference that a proposal is a scriptural requirement.",
+      "No transfer to DM04, DM08, another Purana, another regional tradition, or publication without a separate gate."
+    ]
+  }
+}
