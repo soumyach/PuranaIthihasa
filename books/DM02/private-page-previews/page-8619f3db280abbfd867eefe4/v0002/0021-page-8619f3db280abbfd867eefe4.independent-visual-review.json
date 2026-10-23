@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "page_id": "page-8619f3db280abbfd867eefe4",
+  "page_number": 21,
+  "review_scope": "COMPOSED_PRIVATE_PREVIEW_ONLY",
+  "actual_pixels_inspected": true,
+  "inspection_resolution": "1086x1448 ORIGINAL",
+  "reviewer": {
+    "id": "/root/dm02_corrective_pixel_reviewer",
+    "role": "INDEPENDENT_ACTUAL_PIXEL_VISUAL_REVIEWER",
+    "image_capable": true,
+    "independent_of_composer": true,
+    "capability_limits": ["No theological certification", "No publication approval", "No character-reference promotion"]
+  },
+  "inputs": {
+    "source_master_path": "books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png",
+    "source_master_sha256": "c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d",
+    "parent_preview_path": "books/DM02/private-page-previews/page-8619f3db280abbfd867eefe4/v0001/0021-page-8619f3db280abbfd867eefe4.png",
+    "parent_preview_sha256": "868041b7cffb9fb9daf11f439bafc5af5ac74f2df0425d165630a58373341534",
+    "reviewed_preview_path": "books/DM02/private-page-previews/page-8619f3db280abbfd867eefe4/v0002/0021-page-8619f3db280abbfd867eefe4.png",
+    "reviewed_preview_sha256": "c1efabb6651a2a5939dbaaec824873741161ebfc128b0851af566b39546539eb"
+  },
+  "result": "FIX",
+  "findings": [
+    {"dimension":"EXACT_SCRIPT","result":"PASS","evidence":"The locked two-paragraph narration and punctuation are exact."},
+    {"dimension":"LEGIBILITY","result":"PASS","evidence":"STIX text is legible with no overflow and remains above the 22 px floor."},
+    {"dimension":"ESSENTIAL_IMAGERY_OCCLUSION","result":"PASS","evidence":"All faces, the discus, readable recoil/action and the earth/flood distinction remain visible."},
+    {"dimension":"CROP_INTEGRITY","result":"PASS","evidence":"The source crop [0,71,1086,1377] removes only nonessential outer sky and foreground; there is no stretch."},
+    {"dimension":"RENDER_ARTIFACTS","result":"PASS","evidence":"No seams or layout artifacts are visible."},
+    {"dimension":"PRIVATE_PREVIEW_ISOLATION","result":"PASS","evidence":"The visible label exactly reads INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION."},
+    {"dimension":"PLAQUE_DOMINANCE","result":"FIX","evidence":"v0001 plaque [195,167,891,413] is 696x246 = 171216 px². v0002 plaque [87,167,999,355] is 912x188 = 171456 px²: 23.6% shorter but 31.0% wider and 0.14% larger in area. The revision reveals more upper art but shifts dominance to a near-full-width banner rather than materially shrinking the opaque footprint."}
+  ],
+  "repair_instruction": "Reduce opaque plaque area by roughly 10–15% while keeping exact text, exact paragraph break, font at least 22 px, and the lower edge above the discus.",
+  "new_art_required": false,
+  "source_or_theological_escalation_required": false,
+  "publication_eligible": false
+}

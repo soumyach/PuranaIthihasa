@@ -173,6 +173,17 @@ class PageEnginePR8Tests(unittest.TestCase):
         with self.assertRaisesRegex(ContractError, "overflowed"):
             compose_page(spec, ROOT, self.output / "overflow", True, FONT_CONFIG)
 
+    def test_14b_optional_lettering_padding_is_bounded_and_recorded(self):
+        spec = self.page(2)
+        spec["lettering"][0]["padding"] = 16
+        rendered = compose_page(spec, ROOT, self.output / "compact-padding", True, FONT_CONFIG)
+        composition = load_json(Path(rendered["composition"]))
+        self.assertEqual(composition["resolved_lettering"][0]["padding"], 16)
+        spec["lettering"][0]["padding"] = 0
+        self.assertIn("LETTERING_PADDING", self.codes(validate_page_spec(spec, ROOT, True, FONT_CONFIG)))
+        spec["lettering"][0]["padding"] = 16.5
+        self.assertIn("LETTERING_PADDING", self.codes(validate_page_spec(spec, ROOT, True, FONT_CONFIG)))
+
     def test_15_page_id_uniqueness(self):
         manifest = deepcopy(self.manifest)
         manifest["pages"][1]["page_id"] = manifest["pages"][0]["page_id"]

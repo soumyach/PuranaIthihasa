@@ -15,7 +15,7 @@ from .errors import BlockedError, ContractError
 from .util import atomic_json_write, content_hash, load_json, sha256_bytes
 
 
-ENGINE_VERSION = "0.8.1"
+ENGINE_VERSION = "0.8.2"
 CANVAS = {"width": 1086, "height": 1448, "aspect_ratio": "3:4"}
 SPREAD_CANVAS = {"width": 2172, "height": 1448, "aspect_ratio": "3:2"}
 PALETTE = {
@@ -332,6 +332,20 @@ def validate_page_spec(spec, repository_root, fixture_mode=False, font_config=No
             _add_finding(findings, "MISSING_TEXT", "lettering text is empty", page_id, panel_id, item_id)
         if item.get("source_script_hash") != lettering_source_hash(item):
             _add_finding(findings, "LETTERING_HASH", "lettering differs from its exact script hash", page_id, panel_id, item_id)
+        padding = item.get("padding")
+        if padding is not None and (
+            not isinstance(padding, int)
+            or isinstance(padding, bool)
+            or not 8 <= padding <= 60
+        ):
+            _add_finding(
+                findings,
+                "LETTERING_PADDING",
+                "optional lettering padding must be an integer from 8 through 60 pixels",
+                page_id,
+                panel_id,
+                item_id,
+            )
         if panel_id not in panel_by_id:
             _add_finding(findings, "LETTERING_PANEL", "lettering refers to a missing panel", page_id, panel_id, item_id)
         if item.get("channel") in {"DIALOGUE", "THOUGHT"}:
@@ -554,7 +568,7 @@ def compose_page(spec, repository_root, output_dir, fixture_mode=False, font_con
             badge_r = 25
             badge_center = (box[0] + 24, box[1] + 24)
             draw.ellipse((badge_center[0] - badge_r, badge_center[1] - badge_r, badge_center[0] + badge_r, badge_center[1] + badge_r), fill=_hex(PALETTE["burgundy"]), outline=_hex(PALETTE["bright_gold"]), width=3)
-            padding = 28
+            padding = int(item.get("padding", 28))
             text_box = (box[0] + 34, box[1], box[2], box[3])
         elif channel == "DIALOGUE":
             draw.rounded_rectangle(box, radius=32, fill=_hex(PALETTE["speech_white"]), outline=_hex(PALETTE["ink"]), width=3)
@@ -562,7 +576,7 @@ def compose_page(spec, repository_root, output_dir, fixture_mode=False, font_con
             anchor = next(value for value in panel["speaker_anchors"] if value["speaker_id"] == item["speaker_id"])
             point = (int(anchor["x"] * width), int(anchor["y"] * height))
             draw.polygon(_dialogue_tail(box, point), fill=_hex(PALETTE["speech_white"]), outline=_hex(PALETTE["ink"]))
-            padding, text_box = 22, box
+            padding, text_box = int(item.get("padding", 22)), box
         elif channel == "THOUGHT":
             draw.ellipse(box, fill=_hex(PALETTE["speech_white"]), outline=_hex(PALETTE["ink"]), width=3)
             panel = next(value for value in spec["panels"] if value["panel_id"] == item["panel_id"])
@@ -572,11 +586,11 @@ def compose_page(spec, repository_root, output_dir, fixture_mode=False, font_con
                 cx = int(box[0] + (point[0] - box[0]) * step)
                 cy = int(box[3] + (point[1] - box[3]) * step)
                 draw.ellipse((cx - radius, cy - radius, cx + radius, cy + radius), fill=_hex(PALETTE["speech_white"]), outline=_hex(PALETTE["ink"]), width=2)
-            padding, text_box = 28, box
+            padding, text_box = int(item.get("padding", 28)), box
         else:
             draw.rounded_rectangle(box, radius=10, fill=_hex(PALETTE["parchment"]), outline=_hex(PALETTE["bright_gold"]), width=4)
             draw.line((box[0] + 14, box[1] + 12, box[0] + 14, box[3] - 12), fill=_hex(PALETTE["burgundy"]), width=5)
-            padding, text_box = 30, (box[0] + 12, box[1], box[2], box[3])
+            padding, text_box = int(item.get("padding", 30)), (box[0] + 12, box[1], box[2], box[3])
         requested = item.get("font", {}).get("size", spec.get("typography", {}).get("body_size", 28))
         minimum = item.get("font", {}).get("minimum_size", MIN_BODY_FONT_SIZE)
         font_path = resolved_font["bold"] if item.get("font", {}).get("weight") == "bold" else resolved_font["regular"]
@@ -595,7 +609,7 @@ def compose_page(spec, repository_root, output_dir, fixture_mode=False, font_con
         lettering_metadata.append({
             "lettering_id": item["lettering_id"], "source_script_hash": item["source_script_hash"],
             "box": list(box), "requested_font_size": requested, "rendered_font_size": actual_size,
-            "minimum_font_size": minimum, "font_sha256": _sha256_file(font_path),
+            "minimum_font_size": minimum, "padding": padding, "font_sha256": _sha256_file(font_path),
             "text_sha256": content_hash(item["text"]), "overflow": overflow,
         })
     _, _, footer_font = _imaging()

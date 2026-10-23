@@ -1,0 +1,24 @@
+{
+  "schema_version":"1.0",
+  "book_id":"DM02",
+  "page_id":"page-8619f3db280abbfd867eefe4",
+  "page_number":21,
+  "review_scope":"COMPOSED_PRIVATE_PREVIEW_ONLY",
+  "actual_pixels_inspected":true,
+  "inspection_resolution":"1086x1448 ORIGINAL",
+  "reviewer":{"id":"/root/dm02_corrective_pixel_reviewer","role":"INDEPENDENT_ACTUAL_PIXEL_VISUAL_REVIEWER","image_capable":true,"independent_of_composer":true,"capability_limits":["No theological certification","No publication approval","No character-reference promotion"]},
+  "inputs":{"source_master_path":"books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png","source_master_sha256":"c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d","reviewed_preview_path":"books/DM02/private-page-previews/page-8619f3db280abbfd867eefe4/v0003/0021-page-8619f3db280abbfd867eefe4.png","reviewed_preview_sha256":"944fa75bd69cb8fa87ecaba774869adccde8446cf427637bb7b735fab81f151f"},
+  "result":"FIX",
+  "findings":[
+    {"dimension":"EXACT_SCRIPT","result":"PASS","evidence":"Exact locked two-paragraph narration and paragraph break are preserved."},
+    {"dimension":"LEGIBILITY","result":"PASS_WITH_LOCAL_FIX","evidence":"Rendered text is crisp at the 22 px minimum, but the badge edge touches the first glyph."},
+    {"dimension":"PLAQUE_DOMINANCE","result":"PASS","evidence":"Resolved plaque [119,167,967,348] is 848x181 = 153488 px², 10.354% smaller than v0001's 171216 px²; its bottom stays above the discus."},
+    {"dimension":"ESSENTIAL_IMAGERY_AND_CROP","result":"PASS","evidence":"Faces, full discus and action, earth/flood distinction and source crop [0,71,1086,1377] remain intact."},
+    {"dimension":"RENDER_ARTIFACTS_AND_LABEL","result":"PASS","evidence":"No art distortion or seams; the private label is exact and page 21 is visible."},
+    {"dimension":"BADGE_TEXT_CLEARANCE","result":"FIX","evidence":"At original resolution the badge's right gold edge touches or overlaps the first glyph of ‘The’; the T's left serif is visibly occluded/tangent."}
+  ],
+  "repair_instruction":"Preserve plaque footprint and font; add a clear 8–12 px gap between badge edge and first glyph by increasing the text inset.",
+  "new_art_required":false,
+  "source_or_theological_escalation_required":false,
+  "publication_eligible":false
+}

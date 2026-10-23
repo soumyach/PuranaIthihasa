@@ -1,0 +1,203 @@
+{
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"
+    }
+  },
+  "book_id": "DM02",
+  "book_version": "DM02-PRIVATE-REUSE-PREVIEW-PAGE21-V2",
+  "canvas": {
+    "aspect_ratio": "3:4",
+    "height": 1448,
+    "width": 1086
+  },
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "composition_hash": "c9f1bc992817bafe829693de072d1c8625e6924092f8c7dc9072e88e4467de42",
+  "engine_version": "0.8.2",
+  "fixture": false,
+  "fixture_mode": false,
+  "font_config_sha256": "ba6cd2c0c4d716aa550059148339642da7fb2f1af1bfaad2e5d6ab838fb1e0aa",
+  "layout_type": "SINGLE_PANEL_IMMERSIVE",
+  "lettering": [
+    {
+      "badge_number": 1,
+      "box": {
+        "height": 0.13,
+        "width": 0.84,
+        "x": 0.08,
+        "y": 0.115
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 23
+      },
+      "lettering_id": "p21-narration",
+      "padding": 16,
+      "panel_id": "p21-panel-01",
+      "reading_order": 1,
+      "source_script_hash": "e6666eca2936dc4985508cbbc0e89624fd52bf00e1875ff40e3e83a123ce8575",
+      "speaker_id": "narrator",
+      "text": "The place of their defeat met the demons’ condition: the earth there was not under the flood.\n\nVishnu raised his discus. Its swift circle ended the contest, and Madhu and Kaitabha could no longer threaten the lotus."
+    }
+  ],
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "page_id": "page-8619f3db280abbfd867eefe4",
+  "page_number": 21,
+  "page_script_hash": "ba1620eab42f55b0e79e36722ea5fe5cba6147b5b102602dc423c96b2bd889ec",
+  "page_title": "WHERE THE EARTH WAS NOT FLOODED",
+  "panels": [
+    {
+      "asset": {
+        "approval": {
+          "review_path": "books/DM02/visual-proof-reviews/p21-panel-01/v0002.json",
+          "review_result": "PASS",
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d"
+        },
+        "path": "books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png",
+        "sha256": "c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d",
+        "usage": "PRIVATE_INTERNAL_REUSE_PREVIEW"
+      },
+      "crop": {
+        "crop_intent": "Preserve the full source-reviewed 3:4 decisive composition with all three identities, the discus arc, earth plane and flood distinction.",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "mode": "COVER",
+        "zoom": 1.0
+      },
+      "diagnostic_beat": "Show the source-neutral unflooded-earth condition and non-graphic discus consequence without inventing geography or an anatomical defeat locus.",
+      "panel_id": "p21-panel-01",
+      "reading_order": 1,
+      "speaker_anchors": []
+    }
+  ],
+  "parent_preview": {
+    "change_scope": "LETTERING_BOX_ONLY_NO_SOURCE_ART_PIXEL_CHANGE",
+    "rendered_png_path": "books/DM02/private-page-previews/page-8619f3db280abbfd867eefe4/v0001/0021-page-8619f3db280abbfd867eefe4.png",
+    "rendered_png_sha256": "868041b7cffb9fb9daf11f439bafc5af5ac74f2df0425d165630a58373341534",
+    "spec_path": "books/DM02/private-page-previews/page-8619f3db280abbfd867eefe4/v0001.spec.json"
+  },
+  "preview_authority": {
+    "basis": "Explicit user request in the current Codex thread and exact-pixel PASS review of the existing corrected Page 21 image",
+    "image_generation_authorized": false,
+    "paid_provider_calls_authorized": false,
+    "publication_authorized": false,
+    "scope": "ONE_LOCAL_DM02_PASS_REVIEWED_EXISTING_ART_REUSE_PREVIEW_LAYOUT_REPAIR"
+  },
+  "private_preview": true,
+  "publication_eligible": false,
+  "reading_order": 21,
+  "reference_comparison": [
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "role": "PRESENTATION_REFERENCE_ONLY",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+      "role": "CLIMACTIC_PAGE_COMPOSITION_REFERENCE_ONLY",
+      "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5"
+    }
+  ],
+  "renderer_source_sha256": "e40387b5d423bba208596e4c96a55e30c59973b3dc55e06ef12af2f22853d361",
+  "required_lettering_ids": [
+    "p21-narration"
+  ],
+  "resolved_font": {
+    "bold": "/System/Library/Fonts/Supplemental/STIXGeneralBol.otf",
+    "bold_sha256": "7e4dfb4979e9bb79a0bdedc56f055eab615fb9a3dff8788a52992ae65e8f572d",
+    "classification": "serif",
+    "family": "STIXGeneral",
+    "font_binary_bundled_in_repository": false,
+    "legal_installation": "Install the STIX Fonts project from its official distribution, then update paths if the operating system stores it elsewhere. Confirm the specific distribution's license before publication.",
+    "license_evidence": "The installed font metadata identifies the STIX license, derived from the SIL Open Font License. The renderer records hashes but does not copy these system files into the repository.",
+    "license_status": "SYSTEM_FONT_LICENSE_REVIEWED_NOT_REDISTRIBUTED",
+    "regular": "/System/Library/Fonts/Supplemental/STIXGeneral.otf",
+    "regular_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7"
+  },
+  "resolved_lettering": [
+    {
+      "box": [
+        87,
+        167,
+        999,
+        355
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p21-narration",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 16,
+      "rendered_font_size": 23,
+      "requested_font_size": 23,
+      "source_script_hash": "e6666eca2936dc4985508cbbc0e89624fd52bf00e1875ff40e3e83a123ce8575",
+      "text_sha256": "6a40097608ad6a6b3ab305e9d89d971c075b22cafbe9f0d80d542747e2de9262"
+    }
+  ],
+  "resolved_panels": [
+    {
+      "asset_path": "books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png",
+      "asset_sha256": "c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d",
+      "box": [
+        49,
+        152,
+        1037,
+        1339
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "panel_id": "p21-panel-01",
+      "scale_mode": "ASPECT_PRESERVING_COVER",
+      "semantic_crop_review": "PENDING_IMAGE_CAPABLE_REVIEW",
+      "source_crop": [
+        0,
+        71,
+        1086,
+        1377
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "zoom": 1.0
+    }
+  ],
+  "schema_version": "1.0",
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "storyboard_conformance": {
+    "reason": "The independently reviewed Page 21 v0002 raster supplies the locked decisive composition; this revision changes only deterministic lettering geometry to reduce plaque dominance while preserving exact text and essential pixels.",
+    "status": "PRIVATE_PREVIEW_FROM_PASS_REVIEWED_EXISTING_MASTER"
+  },
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "typography": {
+    "body_size": 23,
+    "family": "STIXGeneral",
+    "title_size": 30
+  }
+}

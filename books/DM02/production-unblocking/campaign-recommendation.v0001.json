@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "evaluated_campaign": {
+    "path": "books/DM02/resumable-production/campaign-request.v0001.json",
+    "sha256": "d85931ab82993bae74c2feafa5ed772f9ddc6253e3109d6b703d4a31e8205d19",
+    "authorization_request_path": "books/DM02/resumable-production/authorization-request.v0001.json",
+    "authorization_request_sha256": "22af24fc85170a900c005cc6cb3b9e8d8111b9b2805584595c82b093b7b28f41",
+    "authorization_subject_hash": "820c1d0371f19ec0e44a5000c3012f29aab1e05501802ef324078841657211cd",
+    "status": "AWAITING_CAMPAIGN_AUTHORIZATION",
+    "image_operations_executed": 0,
+    "retries": 0
+  },
+  "decision": "KEEP_EXISTING_CAMPAIGN_AS_BEST_NEXT_BATCH",
+  "new_campaign_request_created": false,
+  "immutable_request_modified": false,
+  "reasons": [
+    "The four units are contiguous Pages 1–3 and would complete three private page candidates if their outputs independently pass.",
+    "None of the four units depends on the unsigned Page 11 qualified review or on a disputed sacred iconography convention.",
+    "The batch exercises character continuity, a close action crop, a silhouette transition and an environment-only master without claiming final character-reference approval.",
+    "The existing Page 1 pixels can be submitted only as a proposal-level supporting reference, which the frozen request already states accurately.",
+    "Page 3 provides an independent environment master and therefore does not turn the whole batch into a character-reference experiment.",
+    "Replacing the exact request would add no source or production advantage and would invalidate a fully hashed, zero-retry, four-operation request that remains internally consistent."
+  ],
+  "units": [
+    {"page_number":1,"panel_id":"p01-panel-02","stage":"PRODUCTION_IMAGE_ELIGIBLE","purpose":"Complete Page 1 and test the forest-frame ensemble proposal"},
+    {"page_number":2,"panel_id":"p02-panel-01","stage":"PRODUCTION_IMAGE_ELIGIBLE","purpose":"Test close continuity and hand anatomy without a supernatural claim"},
+    {"page_number":2,"panel_id":"p02-panel-02","stage":"PRODUCTION_IMAGE_ELIGIBLE","purpose":"Complete Page 2 with a source-neutral transition"},
+    {"page_number":3,"panel_id":"p03-panel-01","stage":"PRODUCTION_IMAGE_ELIGIBLE","purpose":"Complete an environment-only dissolution page"}
+  ],
+  "authorization_boundary": {
+    "approval_record_exists": false,
+    "generation_authorized": false,
+    "maximum_operations": 4,
+    "maximum_operations_per_unit": 1,
+    "retries_authorized": false,
+    "provider": "Codex built-in image generation only",
+    "included_allowance_first": true,
+    "api_key_or_external_provider_authorized": false,
+    "purchased_credits_or_overage_authorized": false,
+    "zero_incremental_usd_verified": false,
+    "publication_authorized": false
+  },
+  "next_action": "If the user wishes to execute images later, explicitly authorize subject 820c1d0371f19ec0e44a5000c3012f29aab1e05501802ef324078841657211cd through the existing authenticated approval mechanism. This report does not supply that authorization."
+}
