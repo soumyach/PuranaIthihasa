@@ -1,0 +1,46 @@
+{
+  "book_id": "DM02",
+  "execution_boundary": {
+    "identity_assurance": "SESSION_ATTESTATION_ONLY_NOT_CRYPTOGRAPHIC",
+    "mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+    "orchestrated_by_current_codex_session": true,
+    "paid_api_calls_allowed": 0,
+    "programmatic_spawn_available_inside_repository": false
+  },
+  "handoff_hash": "53aeabe7246b225151f49b7b3116a29c686ffb05feb5d7a8dc6e77d12677abfb",
+  "id": "agent-handoff-2ac1affc017b506216a9a81b",
+  "kind": "DIRECTOR_DIAGNOSTIC",
+  "locked_input_hashes": [
+    "16ea56cb45944d86a6691eaaa69ab2fd28bf232698067f2c48397f7da2454367",
+    "2f718a04137b4de23792d3b4e99570bdb909220b8f0073c4d1c507ffb3914f83"
+  ],
+  "request": {
+    "book_id": "DM02",
+    "effective_state_file_sha256": "16ea56cb45944d86a6691eaaa69ab2fd28bf232698067f2c48397f7da2454367",
+    "effective_state_hash": "2f718a04137b4de23792d3b4e99570bdb909220b8f0073c4d1c507ffb3914f83",
+    "effective_state_path": "books/DM02/orchestration/effective-state.json",
+    "execution_limits": {
+      "image_generation_allowed": false,
+      "paid_calls_allowed": 0,
+      "publication_allowed": false,
+      "read_only": true,
+      "source_graph_mutation_allowed": false
+    },
+    "request_hash": "828550c949ca3ae8c1bd4abf6cd80125c12340709119bbf74489edfad9c25c2f",
+    "required_checks": [
+      "current stage and blocker truth",
+      "39-operation ledger and preserved per-unit attempts",
+      "accepted, invalidated and blocked page inventory",
+      "Page 11 qualified-review gate",
+      "zero currently authorized image operations and duplicate-work prevention"
+    ],
+    "schema_version": "1.0",
+    "task_type": "PRODUCTION_STATE_DIAGNOSTIC"
+  },
+  "request_hash": "828550c949ca3ae8c1bd4abf6cd80125c12340709119bbf74489edfad9c25c2f",
+  "required_capability": "orchestration_diagnostic",
+  "required_independence_from_writer_id": null,
+  "required_role": "production-state-reconciliation-specialist",
+  "schema_version": "1.0",
+  "status": "AWAITING_CODEX_SPECIALIST_AGENT"
+}

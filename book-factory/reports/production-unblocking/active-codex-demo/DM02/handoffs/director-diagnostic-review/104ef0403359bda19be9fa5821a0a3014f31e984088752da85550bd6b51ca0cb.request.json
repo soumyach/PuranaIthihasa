@@ -1,0 +1,48 @@
+{
+  "book_id": "DM02",
+  "execution_boundary": {
+    "identity_assurance": "SESSION_ATTESTATION_ONLY_NOT_CRYPTOGRAPHIC",
+    "mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+    "orchestrated_by_current_codex_session": true,
+    "paid_api_calls_allowed": 0,
+    "programmatic_spawn_available_inside_repository": false
+  },
+  "handoff_hash": "104ef0403359bda19be9fa5821a0a3014f31e984088752da85550bd6b51ca0cb",
+  "id": "agent-handoff-c1da1b985c701f6a6c230279",
+  "kind": "DIRECTOR_DIAGNOSTIC_REVIEW",
+  "locked_input_hashes": [
+    "2f718a04137b4de23792d3b4e99570bdb909220b8f0073c4d1c507ffb3914f83",
+    "6a5ff2f653d73906ff2e3dbb932947a99c4d606fd2eb93f191d24e0d269dd810",
+    "cb715bc83748f2233708c89144c90ca2169616bd06f362aee84c5687c811a4a2"
+  ],
+  "request": {
+    "book_id": "DM02",
+    "creator_agent_id": "/root/production_state_diagnostic",
+    "effective_state_hash": "2f718a04137b4de23792d3b4e99570bdb909220b8f0073c4d1c507ffb3914f83",
+    "effective_state_path": "books/DM02/orchestration/effective-state.json",
+    "execution_limits": {
+      "image_generation_allowed": false,
+      "paid_calls_allowed": 0,
+      "publication_allowed": false,
+      "read_only": true
+    },
+    "request_hash": "2924efdfb555d7fd9862dfac8327469196da52fa23dc5dd4e6237cd5f71e72d8",
+    "required_checks": [
+      "independent recomputation of specialist claims",
+      "reviewer identity differs from specialist",
+      "no unauthorized state or asset mutation",
+      "correct next-action and approval boundary"
+    ],
+    "schema_version": "1.0",
+    "specialist_response_file_sha256": "6a5ff2f653d73906ff2e3dbb932947a99c4d606fd2eb93f191d24e0d269dd810",
+    "specialist_response_hash": "cb715bc83748f2233708c89144c90ca2169616bd06f362aee84c5687c811a4a2",
+    "specialist_response_path": "book-factory/reports/production-unblocking/active-codex-demo/DM02/handoffs/director-diagnostic/cb715bc83748f2233708c89144c90ca2169616bd06f362aee84c5687c811a4a2.response.json",
+    "task_type": "INDEPENDENT_PRODUCTION_STATE_DIAGNOSTIC_REVIEW"
+  },
+  "request_hash": "2924efdfb555d7fd9862dfac8327469196da52fa23dc5dd4e6237cd5f71e72d8",
+  "required_capability": "orchestration_diagnostic_review",
+  "required_independence_from_writer_id": "/root/production_state_diagnostic",
+  "required_role": "independent-production-orchestration-reviewer",
+  "schema_version": "1.0",
+  "status": "AWAITING_CODEX_SPECIALIST_AGENT"
+}

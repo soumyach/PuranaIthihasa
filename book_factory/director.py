@@ -48,6 +48,7 @@ from .preproduction import build_semantic_visual_review_request, validate_prepro
 from .production_integration import RealProductionSlice
 from .providers import CodexNativeImageProvider
 from .providers.base import ProviderRegistry
+from .reconciliation import ProductionStateReconciler
 from .references import ReferenceEditionRegistry
 from .rules import rules_status
 from .source_graph import ReadOnlySourceGraph
@@ -112,6 +113,7 @@ class FactoryDirector:
         self.real_production = RealProductionSlice(self.root)
         self.autonomous_pilot = AutonomousMultiPagePilot(self.root)
         self.dm02_visual_proof = DM02VisualProofCampaign(self.root)
+        self.reconciler = ProductionStateReconciler(self.root, self.books_root)
         self.orchestrator = AutonomousFactoryDirector(self, orchestration_runtime_root)
 
     def _configuration(self):
@@ -136,8 +138,18 @@ class FactoryDirector:
         for path in sorted(self.books_root.glob("*/run/state.json")):
             book_id = path.parents[1].name
             try:
-                state = StateStore(self.books_root, book_id).load()
-                states.append({"book_id": book_id, "stage": state["current_stage"], "version": state["version"]})
+                if self.reconciler.has_evidence(book_id):
+                    state = self.reconciler.reconcile(book_id, persist=False)
+                    states.append({
+                        "book_id": book_id,
+                        "stage": state["current_stage"],
+                        "status": state["effective_status"],
+                        "effective_state_hash": state["effective_state_hash"],
+                        "historical_stage": state["historical_state"]["current_stage"],
+                    })
+                else:
+                    state = StateStore(self.books_root, book_id).load()
+                    states.append({"book_id": book_id, "stage": state["current_stage"], "version": state["version"]})
             except ContractError as exc:
                 states.append({"book_id": book_id, "status": "INVALID", "message": str(exc)})
         return {
@@ -1986,6 +1998,9 @@ class FactoryDirector:
     def resume_book(self, book_id, fixture_mode=False, fixture_plan_path=None):
         return self.orchestrator.resume_book(book_id, fixture_mode, fixture_plan_path)
 
+    def reconcile_book(self, book_id, persist=False):
+        return self.orchestrator.reconcile_book(book_id, persist)
+
     def prepare_production_slice(self, book_id):
         if book_id != "DM04":
             raise ContractError("PR10 real-production slice is locked to DM04", {"book_id": book_id})
@@ -2118,6 +2133,16 @@ class FactoryDirector:
                 "code": "BOOK_NOT_FOUND",
                 "book_id": book_id,
                 "message": "import the authoritative catalogue entry before resuming",
+                "mutated": False,
+            }
+        if self.reconciler.has_evidence(book_id):
+            state = self.reconciler.reconcile(book_id, persist=False)
+            return {
+                "status": "ESCALATE" if state["blocked"] else "RESUMABLE",
+                "book_id": book_id,
+                "current_stage": state["current_stage"],
+                "effective_state": state,
+                "message": "resume from the reconciled evidence projection; historical state remains immutable",
                 "mutated": False,
             }
         store = StateStore(self.books_root, book_id, self._configuration()["retry_limits"]["stage"])

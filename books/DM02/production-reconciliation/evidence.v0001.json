@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "record_type": "PRODUCTION_RECONCILIATION_EVIDENCE",
+  "book_id": "DM02",
+  "sequence": 1,
+  "supersedes_sha256": null,
+  "campaign": {
+    "campaign_id": "dm02-book-level-private-production-v0001",
+    "subject_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269"
+  },
+  "evidence": [
+    {
+      "role": "historical_events",
+      "path": "books/DM02/run/events.jsonl",
+      "sha256": "1917e9bb04b56b331c0a39b88af6a36439e4010fe700b7b07a2af32adfe9759c"
+    },
+    {
+      "role": "historical_state",
+      "path": "books/DM02/run/state.json",
+      "sha256": "3dd99b1c9f62503b47dd6b7d5352b1204caf5e41bf88af6b52cd56be2d705c8a"
+    },
+    {
+      "role": "campaign_request",
+      "path": "books/DM02/book-level-production/campaign-request.v0001.json",
+      "sha256": "c097d6a890a9bcceef573e67ddc4dd5f981735f4b811b83d8e7b89e9a5335495"
+    },
+    {
+      "role": "campaign_status",
+      "path": "books/DM02/book-level-production/status.v0004.json",
+      "sha256": "69b952f2c7604a2dfed65decee4e4c04681422e97e92cf1a4804fc19cc938f30"
+    },
+    {
+      "role": "execution_ledger",
+      "path": "books/DM02/book-level-production/provider-receipts/execution-ledger.v0001.json",
+      "sha256": "d1897976469a5db2859241aeaef4b26ddb5acb5a1c5f6912a2e8b5f524039103"
+    },
+    {
+      "role": "completed_pages",
+      "path": "books/DM02/book-level-production/completed-pages.v0002.json",
+      "sha256": "4983af154dbb4bab04ba968cea71148be75343112d45e17b1d0ad18eda1c092e"
+    },
+    {
+      "role": "campaign_image_reviews",
+      "path": "books/DM02/book-level-production/reviews/campaign-image-reviews.v0001.json",
+      "sha256": "efb24d2ecdbe176e22324d4e9cfe7bbce13fe3b3adada0796c55385a49bb2dbf"
+    },
+    {
+      "role": "composed_page_reviews",
+      "path": "books/DM02/book-level-production/reviews/composed-page-reviews.v0001.json",
+      "sha256": "e636cd3535d04022b93c354ba07b2b1bd8bacd6d6356fc39274f2191e7dff4da"
+    },
+    {
+      "role": "campaign_approval",
+      "path": "books/DM02/approvals/approval-3174e958372faf8a1e6f380f.json",
+      "sha256": "195b45d3582db6628554219aa6bcf1546755a29d2b3f2cdfb3a615da914a98c7"
+    },
+    {
+      "role": "invalidation_source",
+      "path": "books/DM02/iconography-review/series-character-identity-v0001/affected-illustration-inventory.v0001.md",
+      "sha256": "fdffebc6918fe0fa6d25e5f489d97c0a9c317ff02e42657d87c7e5675ffaabb0"
+    },
+    {
+      "role": "brahma_reference_proposal",
+      "path": "books/DM02/iconography-review/series-character-identity-v0001/brahma-character-reference-approval-sheet.v0001.md",
+      "sha256": "0ec0a174b42e76452beb8bcf7a94e781ab532eefa261d8201e5257e83a7b808a"
+    },
+    {
+      "role": "vishnu_reference_proposal",
+      "path": "books/DM02/iconography-review/series-character-identity-v0001/vishnu-character-reference-approval-sheet.v0001.md",
+      "sha256": "eead7d4e0379d3cf82037238ebe6c521e9d8daa9f500743ccfe86eb6b4fbd9e1"
+    }
+  ],
+  "invalidations": [
+    {
+      "id": "dm02-brahma-vishnu-series-identity-v0001",
+      "status": "ACTIVE",
+      "reason": "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels.",
+      "page_numbers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "unit_ids": [
+        "p04-panel-01",
+        "p05-panel-01",
+        "p05-panel-02",
+        "p06-panel-01",
+        "p07-panel-01",
+        "p07-panel-02",
+        "p07-panel-03",
+        "p08-panel-01",
+        "p08-panel-02",
+        "p09-panel-01",
+        "p10-panel-01",
+        "p10-panel-02",
+        "p11-panel-01",
+        "p12-panel-01",
+        "p12-panel-02",
+        "p13-panel-01",
+        "p13-panel-02",
+        "p13-panel-03",
+        "p14-panel-01",
+        "p14-panel-02",
+        "p14-panel-03",
+        "p15-panel-01",
+        "p16-panel-01",
+        "p16-panel-02",
+        "p17-panel-01",
+        "p17-panel-02",
+        "p18-panel-01",
+        "p18-panel-02",
+        "p19-panel-01",
+        "p19-panel-03",
+        "p20-panel-01",
+        "p20-panel-02",
+        "p21-panel-01"
+      ],
+      "localized_character_replacement_candidates": [
+        "p05-panel-02",
+        "p07-panel-02",
+        "p08-panel-02",
+        "p10-panel-01",
+        "p12-panel-01",
+        "p13-panel-01",
+        "p13-panel-02",
+        "p13-panel-03",
+        "p14-panel-01",
+        "p14-panel-02",
+        "p14-panel-03",
+        "p15-panel-01",
+        "p16-panel-01",
+        "p16-panel-02",
+        "p17-panel-01",
+        "p17-panel-02",
+        "p18-panel-01",
+        "p18-panel-02",
+        "p19-panel-03",
+        "p21-panel-01"
+      ],
+      "full_regeneration_required": [
+        "p04-panel-01",
+        "p05-panel-01",
+        "p06-panel-01",
+        "p07-panel-01",
+        "p07-panel-03",
+        "p08-panel-01",
+        "p09-panel-01",
+        "p10-panel-02",
+        "p12-panel-02",
+        "p19-panel-01",
+        "p20-panel-01",
+        "p20-panel-02"
+      ],
+      "qualified_review_then_regeneration": [
+        "p11-panel-01"
+      ],
+      "requires_new_campaign": true
+    }
+  ],
+  "additional_resume_candidate_unit_ids": [
+    "p01-panel-01"
+  ],
+  "effective_blockers": [
+    {
+      "code": "CAMPAIGN_SCOPE_CLOSED",
+      "owner": "autonomous-director",
+      "detail": "The 39-operation campaign is complete and cannot spend its four unspent conditional reserve operations on a changed identity/reference scope."
+    },
+    {
+      "code": "NEW_CAMPAIGN_AUTHORIZATION_REQUIRED",
+      "owner": "authorized-human-approver",
+      "detail": "Any corrective pixels require a new exact hash-bound campaign; no prior approval is inherited."
+    },
+    {
+      "code": "CHARACTER_REFERENCE_APPROVAL_REQUIRED",
+      "owner": "authorized-human-approver",
+      "detail": "The proposed Brahma and Vishnu series identities remain unapproved."
+    },
+    {
+      "code": "PAGE_11_QUALIFIED_REVIEW_REQUIRED",
+      "owner": "qualified-source-iconography-reviewer",
+      "detail": "Page 11 remains ESCALATE_BEFORE_GENERATION and outside every current campaign scope."
+    }
+  ]
+}

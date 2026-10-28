@@ -18,6 +18,7 @@ from .budgets import BudgetGuard
 from .errors import BudgetExceededError, ContractError
 from .locks import BookLease
 from .page_engine import compose_book, export_pdf, inspect_pdf
+from .reconciliation import ProductionStateReconciler
 from .rules import rules_status
 from .source_clearance import validate_private_draft_clearance
 from .state import STAGES, StateStore, job_key
@@ -388,12 +389,17 @@ def validate_composed_page_review(request, response):
 class ProductionQueue:
     """Deterministic queue policy with explicit selection and skip evidence."""
 
-    def __init__(self, catalogue, books_root, fixture_mode=False):
+    def __init__(self, catalogue, books_root, fixture_mode=False, repository_root=None):
         self.catalogue = catalogue
         self.books_root = Path(books_root)
         self.fixture_mode = bool(fixture_mode)
+        self.repository_root = Path(repository_root) if repository_root else self.books_root.parent
 
     def _run(self, book_id):
+        if not self.fixture_mode:
+            reconciler = ProductionStateReconciler(self.repository_root, self.books_root)
+            if reconciler.has_evidence(book_id):
+                return reconciler.reconcile(book_id, persist=False)
         path = self.books_root / book_id / "orchestration" / "run.json"
         return load_json(path) if path.is_file() else None
 
@@ -525,6 +531,7 @@ class AutonomousFactoryDirector:
         self.production_books_root = host.books_root
         configured = host._configuration()["runtime_directory"]
         self.runtime_root = Path(runtime_root) if runtime_root else self.root / configured / "orchestration-pr9"
+        self.reconciler = ProductionStateReconciler(self.root, self.production_books_root)
 
     def _books_root(self, fixture_mode):
         return self.runtime_root / "fixture-books" if fixture_mode else self.production_books_root
@@ -553,6 +560,8 @@ class AutonomousFactoryDirector:
         }
 
     def _load_run(self, books_root, book_id, fixture_mode):
+        if not fixture_mode and self.reconciler.has_evidence(book_id):
+            return self.reconciler.reconcile(book_id, persist=True)
         path = self._run_path(books_root, book_id)
         if path.is_file():
             run = load_json(path)
@@ -590,7 +599,30 @@ class AutonomousFactoryDirector:
         return run
 
     def queue(self, fixture_mode=False):
-        return ProductionQueue(self.host.catalogue, self._books_root(fixture_mode), fixture_mode).evaluate()
+        return ProductionQueue(
+            self.host.catalogue,
+            self._books_root(fixture_mode),
+            fixture_mode,
+            repository_root=self.root,
+        ).evaluate()
+
+    def reconcile_book(self, book_id, persist=False):
+        if self.host.catalogue.get(book_id) is None:
+            raise ContractError("book is not in the selected catalogue", {"book_id": book_id})
+        state = self.reconciler.reconcile(book_id, persist=persist)
+        if state is None:
+            return {
+                "status": "NO_RECONCILIATION_EVIDENCE",
+                "book_id": book_id,
+                "mutated": False,
+            }
+        return {
+            "status": "RECONCILED_BLOCKED" if state["blocked"] else "RECONCILED",
+            "book_id": book_id,
+            "effective_state": state,
+            "materialized": bool(persist),
+            "mutated_art": False,
+        }
 
     def blocked(self, fixture_mode=False):
         queue = self.queue(fixture_mode)
@@ -797,6 +829,8 @@ class AutonomousFactoryDirector:
         return completed, False
 
     def _production_blockers(self, book_id, run):
+        if run.get("reconciliation", {}).get("effective"):
+            return deepcopy(run.get("blocked", []))
         book = self.host.catalogue.get(book_id)
         if book_id == "DM08" or book.get("edition_status") == "EXISTING_EDITION":
             return [{"code": "EXISTING_EDITION_AUTOMATIC_PRODUCTION_EXCLUDED", "owner": "catalogue"}]
@@ -945,6 +979,20 @@ class AutonomousFactoryDirector:
         ledger = JobLedger(books_root, book_id, fixture_mode)
         if not fixture_mode:
             blockers = self._production_blockers(book_id, run)
+            if run.get("reconciliation", {}).get("effective") and blockers:
+                return {
+                    "status": "ESCALATE",
+                    "book_id": book_id,
+                    "current_stage": run["current_stage"],
+                    "run": run,
+                    "effective_state_hash": run["effective_state_hash"],
+                    "campaign_operations_executed": run["campaign"]["total_executed"],
+                    "campaign_operations_authorized_for_resume": run["campaign"]["operations_authorized_for_resume"],
+                    "jobs": ledger.jobs(),
+                    "mutated": False,
+                    "mutated_art": False,
+                    "blocker_source": run["reconciliation"]["manifest_path"],
+                }
             if blockers and run["current_stage"] == "ART_PROOFS":
                 if book_id == "DM04":
                     integration = self.host.prepare_production_slice(book_id)

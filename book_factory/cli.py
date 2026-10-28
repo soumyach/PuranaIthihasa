@@ -31,6 +31,9 @@ def build_parser():
     resume_book = subparsers.add_parser("resume-book", help="idempotently resume one durable orchestration run")
     resume_book.add_argument("--book-id", required=True)
     _fixture_arguments(resume_book)
+    reconcile_book = subparsers.add_parser("reconcile-book", help="project hash-bound production evidence into one effective state")
+    reconcile_book.add_argument("--book-id", required=True)
+    reconcile_book.add_argument("--write", action="store_true", help="materialize the deterministic effective state")
     production_slice = subparsers.add_parser("prepare-production-slice", help="prepare the locked DM04 PR10 two-page campaign")
     production_slice.add_argument("--book-id", required=True)
     production_status = subparsers.add_parser("production-slice-status", help="inspect the real DM04 PR10 slice without executing art")
@@ -265,6 +268,8 @@ def run(args):
         if args.fixture_plan and not args.fixture_mode:
             raise FactoryError("--fixture-plan requires --fixture-mode")
         return director.resume_book(args.book_id, args.fixture_mode, args.fixture_plan)
+    if args.command == "reconcile-book":
+        return director.reconcile_book(args.book_id, args.write)
     if args.command == "prepare-production-slice":
         return director.prepare_production_slice(args.book_id)
     if args.command == "production-slice-status":
