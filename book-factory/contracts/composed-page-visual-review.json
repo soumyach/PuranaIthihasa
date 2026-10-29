@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "khatakshetra-composed-page-visual-review-pr9",
+  "required_review_groups": {
+    "mechanical": ["dimensions", "panel order", "legibility", "clipping and overflow", "speech-tail placement", "source text", "page numbering", "asset hashes", "missing or duplicated pages"],
+    "semantic": ["scripted action", "character and divine form", "Indian cultural authenticity", "narrative emphasis", "artwork obstruction", "emotional expression", "continuity", "Khatakshetra visual language", "prohibited unrelated motifs", "cinematic divine moments"],
+    "artistic_comparison": ["actual composed page compared with exact PR7 Gold Standard role A and B pages at actual reading size"]
+  },
+  "reviewer_requirements": ["image capable", "independent from illustration and composition creators", "inspected exact rendered pixels", "inspected at actual reading size"],
+  "outcomes": ["PASS", "FIX", "ESCALATE"],
+  "failure_evidence": ["book id", "page id", "panel id", "actual discrepancy", "supporting scene script or visual standard", "severity", "lettering repair, crop adjustment, local image edit or regeneration"],
+  "prohibition": "Geometry-only validation can never emit semantic or artistic PASS."
+}

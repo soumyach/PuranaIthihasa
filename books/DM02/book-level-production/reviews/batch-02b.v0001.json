@@ -1,0 +1,8 @@
+{
+  "schema_version":"1.0","book_id":"DM02","campaign_id":"dm02-book-level-private-production-v0001","batch_id":"dm02-book-level-batch-02b",
+  "reviewer":{"id":"/root/dm02_corrective_pixel_reviewer","image_capable":true,"independent_of_producer":true,"actual_pixels_inspected":true,"files_modified":false},
+  "unit_id":"page-2e96a0bca25ea33924a24fde--p05-panel-01","path":"books/DM02/book-level-production/images/p05-panel-01/v0001.png","sha256":"f9d3ab7a6c056f32c732728afed2895ee6cddc5bfb20bbcdd0b1954e639a06fa","result":"FIX",
+  "pass_findings":["Single lotus rises from sleeping Vishnu to seated Brahma.","Shesha appears only as cropped coils; Yoganidra is non-anthropomorphic; flood is unbounded.","Count-nonassertive view, anatomy, family suitability and PR7-adjacent finish pass."],
+  "fix_findings":["Both figures wear expressly prohibited crowns and Vishnu has a prohibited forehead emblem.","Safe band contains Brahma crown and bright flares.","No calm water-only interval supports p05-panel-03 derivation."],
+  "authorized_single_edit":"Remove both crowns and Vishnu emblem, clear full safe band, and create a bounded unoccupied still-water interval while preserving all source geometry and identities.","private_composition_eligible":false,"theological_certification_claimed":false
+}

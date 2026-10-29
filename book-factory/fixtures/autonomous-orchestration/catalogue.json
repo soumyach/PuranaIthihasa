@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "collections": [
+    {
+      "id": "synthetic-pr9",
+      "title": "Synthetic PR9 Orchestration Fixtures"
+    }
+  ],
+  "books": [
+    {
+      "id": "FX-BLOCKED",
+      "title": "Blocked Synthetic Candidate",
+      "line": "ORIGINALS_KALPANA",
+      "source_class": "KALPANA",
+      "readiness": "BLOCKED",
+      "priority": 1,
+      "collection_ids": ["synthetic-pr9"],
+      "fixture_private_production_eligible": false
+    },
+    {
+      "id": "FX-001",
+      "title": "Synthetic Lifecycle Candidate One",
+      "line": "ORIGINALS_KALPANA",
+      "source_class": "KALPANA",
+      "readiness": "READY",
+      "priority": 2,
+      "collection_ids": ["synthetic-pr9"],
+      "fixture_private_production_eligible": true
+    },
+    {
+      "id": "FX-002",
+      "title": "Synthetic Lifecycle Candidate Two",
+      "line": "ORIGINALS_KALPANA",
+      "source_class": "KALPANA",
+      "readiness": "READY",
+      "priority": 3,
+      "collection_ids": ["synthetic-pr9"],
+      "dependencies": ["FX-001"],
+      "fixture_private_production_eligible": true
+    },
+    {
+      "id": "DM08",
+      "title": "Synthetic Queue Record for Existing Edition Exclusion",
+      "line": "KATHAS",
+      "readiness": "READY",
+      "priority": 0,
+      "collection_ids": ["synthetic-pr9"],
+      "edition_status": "EXISTING_EDITION",
+      "automatic_production_eligible": false,
+      "fixture_private_production_eligible": false
+    }
+  ]
+}

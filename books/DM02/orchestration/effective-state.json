@@ -1,0 +1,677 @@
+{
+  "active_invalidations": [
+    {
+      "full_regeneration_required": [
+        "p04-panel-01",
+        "p05-panel-01",
+        "p06-panel-01",
+        "p07-panel-01",
+        "p07-panel-03",
+        "p08-panel-01",
+        "p09-panel-01",
+        "p10-panel-02",
+        "p12-panel-02",
+        "p19-panel-01",
+        "p20-panel-01",
+        "p20-panel-02"
+      ],
+      "id": "dm02-brahma-vishnu-series-identity-v0001",
+      "localized_character_replacement_candidates": [
+        "p05-panel-02",
+        "p07-panel-02",
+        "p08-panel-02",
+        "p10-panel-01",
+        "p12-panel-01",
+        "p13-panel-01",
+        "p13-panel-02",
+        "p13-panel-03",
+        "p14-panel-01",
+        "p14-panel-02",
+        "p14-panel-03",
+        "p15-panel-01",
+        "p16-panel-01",
+        "p16-panel-02",
+        "p17-panel-01",
+        "p17-panel-02",
+        "p18-panel-01",
+        "p18-panel-02",
+        "p19-panel-03",
+        "p21-panel-01"
+      ],
+      "page_numbers": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "qualified_review_then_regeneration": [
+        "p11-panel-01"
+      ],
+      "reason": "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels.",
+      "requires_new_campaign": true,
+      "status": "ACTIVE",
+      "unit_ids": [
+        "p04-panel-01",
+        "p05-panel-01",
+        "p05-panel-02",
+        "p06-panel-01",
+        "p07-panel-01",
+        "p07-panel-02",
+        "p07-panel-03",
+        "p08-panel-01",
+        "p08-panel-02",
+        "p09-panel-01",
+        "p10-panel-01",
+        "p10-panel-02",
+        "p11-panel-01",
+        "p12-panel-01",
+        "p12-panel-02",
+        "p13-panel-01",
+        "p13-panel-02",
+        "p13-panel-03",
+        "p14-panel-01",
+        "p14-panel-02",
+        "p14-panel-03",
+        "p15-panel-01",
+        "p16-panel-01",
+        "p16-panel-02",
+        "p17-panel-01",
+        "p17-panel-02",
+        "p18-panel-01",
+        "p18-panel-02",
+        "p19-panel-01",
+        "p19-panel-03",
+        "p20-panel-01",
+        "p20-panel-02",
+        "p21-panel-01"
+      ]
+    }
+  ],
+  "blocked": [
+    {
+      "code": "CAMPAIGN_SCOPE_CLOSED",
+      "detail": "The 39-operation campaign is complete and cannot spend its four unspent conditional reserve operations on a changed identity/reference scope.",
+      "owner": "autonomous-director"
+    },
+    {
+      "code": "NEW_CAMPAIGN_AUTHORIZATION_REQUIRED",
+      "detail": "Any corrective pixels require a new exact hash-bound campaign; no prior approval is inherited.",
+      "owner": "authorized-human-approver"
+    },
+    {
+      "code": "CHARACTER_REFERENCE_APPROVAL_REQUIRED",
+      "detail": "The proposed Brahma and Vishnu series identities remain unapproved.",
+      "owner": "authorized-human-approver"
+    },
+    {
+      "code": "PAGE_11_QUALIFIED_REVIEW_REQUIRED",
+      "detail": "Page 11 remains ESCALATE_BEFORE_GENERATION and outside every current campaign scope.",
+      "owner": "qualified-source-iconography-reviewer"
+    }
+  ],
+  "book_id": "DM02",
+  "campaign": {
+    "allowed_unit_ids": [
+      "p01-panel-02",
+      "p02-panel-01",
+      "p04-panel-01",
+      "p05-panel-01",
+      "p05-panel-02",
+      "p05-panel-03",
+      "p06-panel-01",
+      "p07-panel-01",
+      "p07-panel-02",
+      "p07-panel-03",
+      "p08-panel-01",
+      "p08-panel-02",
+      "p09-panel-01",
+      "p10-panel-01",
+      "p10-panel-02",
+      "p12-panel-01",
+      "p12-panel-02",
+      "p13-panel-01",
+      "p13-panel-02",
+      "p13-panel-03",
+      "p14-panel-02",
+      "p14-panel-03",
+      "p15-panel-01",
+      "p16-panel-01",
+      "p16-panel-02",
+      "p17-panel-01",
+      "p17-panel-02",
+      "p18-panel-01",
+      "p18-panel-02",
+      "p19-panel-01",
+      "p19-panel-02",
+      "p19-panel-03",
+      "p20-panel-01",
+      "p20-panel-02",
+      "p22-panel-01",
+      "p22-panel-02"
+    ],
+    "approval_id": "approval-3174e958372faf8a1e6f380f",
+    "attempts_by_unit": {
+      "p01-panel-02": 1,
+      "p02-panel-01": 1,
+      "p04-panel-01": 2,
+      "p05-panel-01": 2,
+      "p05-panel-02": 1,
+      "p06-panel-01": 2,
+      "p07-panel-01": 2,
+      "p07-panel-02": 1,
+      "p07-panel-03": 1,
+      "p08-panel-01": 1,
+      "p09-panel-01": 1,
+      "p10-panel-01": 2,
+      "p10-panel-02": 2,
+      "p12-panel-01": 1,
+      "p12-panel-02": 1,
+      "p13-panel-01": 1,
+      "p13-panel-02": 1,
+      "p13-panel-03": 1,
+      "p14-panel-02": 2,
+      "p14-panel-03": 1,
+      "p15-panel-01": 1,
+      "p16-panel-01": 1,
+      "p16-panel-02": 1,
+      "p17-panel-01": 1,
+      "p18-panel-01": 1,
+      "p18-panel-02": 1,
+      "p19-panel-01": 1,
+      "p19-panel-02": 1,
+      "p19-panel-03": 1,
+      "p20-panel-01": 1,
+      "p20-panel-02": 1,
+      "p22-panel-01": 1
+    },
+    "campaign_id": "dm02-book-level-private-production-v0001",
+    "executed_output_hashes": [
+      "501164e2e9351693277abf1c3731f95a0763fd222de5c33bbf440480698b57e0",
+      "8e2a798a58cdcefd29329ee1d7001c3f01b40207544ef272dbd9ad0efb3d91b8",
+      "285d37d4ce2f506f1c5483e7a80aa7b5c6b90ed251ff97e6a8babf846ac48900",
+      "ebfc7493442791f0a5d0043f931bd62bbbc652b45fd414b0a97a7365fba19de4",
+      "0c8dd39c7473bd934b005e6342cd1e859b116a31cd7fd76e9ba054fc7f8af125",
+      "ab5b99c90bf4de4fa85a24c3d6032135fbbad8942ab5e4514f38e191c4f239cf",
+      "4aeb45297b21d2805326328e05ad91e1233a59c88e709c10ae58618c6c327cef",
+      "f9d3ab7a6c056f32c732728afed2895ee6cddc5bfb20bbcdd0b1954e639a06fa",
+      "2838d33a4de0132e1810792842b830ad3a6e131a12869564cfe818661daac79f",
+      "814125d77de018725a309998287eeae4ec2f57b2bc4c686848d820ecfedc8fe8",
+      "769148e073276638fc592549fb6dedf2761d89e30de0c1a24ccf044407967695",
+      "405b82d1ce07ac2582ab279ad3183e7ef9f7acad0ea22d88b6112ac22d1d17c2",
+      "eb60186532b962dbd7d40708f97ea37af49b9442a4580bc126219c88183021f7",
+      "26a6924dd30ccf09f5e4a72910cbfdf22a6a3fb8f830b30a199809a0f814c0d1",
+      "65ef35282c8a4ea1038bf6dd30a6ad2ad969692feb4f5387adbf38c50ca6e2f5",
+      "cce8805857a1557bb1ba4ce0d60784ad4eb5907af352b453887914e41c5d7726",
+      "a316b6ae9ba2f8415c7ad52fcdcb0199a1b761c899ab4bd187c2f459c4e4b0d3",
+      "caba0b24af28693d2ca59d935abeba183bd6652967f0f6bf71f5e8ffb2bca03b",
+      "4050cf5b1e9187e0ed9639cc0c9aec5e894d96781c6189bc52fd0892d282e5df",
+      "261a71e1748f8daf193be1b1c643be64a1fc87f1d54e18add9c9b98b30d2e01f",
+      "3bd39e07ea8602d978abae17d356371a32cb4ed9b53c7e51befaaef7862e4fe1",
+      "aa4758c6df522018629794a33fbf6eeb06a90e4939f5c404118da33c60069b56",
+      "f0f7ac73ffa16d826f9c2bb999174188df10e50f48dd8a676505d30bfe2e0efb",
+      "dc812acc21afd5aa48e45c32da374f40837631d2e0f298b0b36589651251f2fd",
+      "0e6de7876ba1694629a63e8c4f7d0c45faa415b2b6e895dfa2006c827a36fd4d",
+      "cd1b7c05130ae71fbfba4fa03c2550174994e9bd42fa2d011a75501e99b264a1",
+      "9be5d97f9b996304b2da555b370b3ad3b04bf1bd36bc780720c382845e624820",
+      "2519766e96643103954685d96ce75143a2b5ee71a2342797cbdf630fbe9b6285",
+      "7fcfe88c2c1dcfccac6dba6cc0d176f053ab89b0d823c60e0b2ee2576cf8341d",
+      "5db03290a41116d6fbc43c24b87e6a8ef5efb6e03b8a4ad7eae723f5fd30fe97",
+      "924118f3afbc9776c7600b667bfd4de5ac0fa4b3e18672ad7edd3db981821936",
+      "546cb28e21e15d803d5277e88b312d00dc1482f3979f1adaca7a9a0e934e89b7",
+      "404f2bcae67fabb6b311d197f20cfa8df091a082516539f21ac078540f5f5283",
+      "20c88f2c55c01d74e174bfa4d9f11610a1e520170d7b95616eb5137eb316aaa0",
+      "756b07556f0b8fa8999a2876c20ceeef3602f07b6095312f80f5315818f16603",
+      "684fd2405f5959719a3727ba56e9ae46c0fb41e3da574ecc9c685e2ec3417e93",
+      "4ded6766202923f6f9ddd9f74eab40c3336258c3713c199e7f1c74959716560a",
+      "cc57fb64b066df1e182bfb567773fc230e86bb62179dc82eb22c4798e8619a2d",
+      "a2021ffb1495fcabf73bb6b71aac225d010ff33bc0483c56ae419e38e363ec28"
+    ],
+    "operations_authorized_for_resume": 0,
+    "repair_attempts_by_unit": {
+      "p04-panel-01": 1,
+      "p05-panel-01": 1,
+      "p06-panel-01": 1,
+      "p07-panel-01": 1,
+      "p10-panel-01": 1,
+      "p10-panel-02": 1,
+      "p14-panel-02": 1
+    },
+    "scope_closed": true,
+    "subject_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+    "total_ceiling": 43,
+    "total_executed": 39,
+    "unspent_conditional_reserve": 4
+  },
+  "completed_stages": [
+    "SOURCE_CHECK",
+    "MANUSCRIPT",
+    "EDITORIAL_QA",
+    "STORYBOARD",
+    "CHARACTER_BIBLE",
+    "ART_PROOFS",
+    "AWAITING_STYLE_APPROVAL"
+  ],
+  "current_stage": "ILLUSTRATION",
+  "dimensions": {
+    "editorial_certification": "PASS_DUAL_PERSPECTIVE_PRIVATE_SCOPE",
+    "private_production_clearance": "PRIOR_CAMPAIGN_SCOPE_CLOSED",
+    "publication_artifact_readiness": "NOT_READY",
+    "publication_clearance": "BLOCKED",
+    "source_readiness": "BLOCKED_CONTROLLED_PRIVATE_SCOPE_ONLY",
+    "visual_completion": "PARTIAL_WITH_ACTIVE_INVALIDATIONS"
+  },
+  "effective_state_hash": "2f718a04137b4de23792d3b4e99570bdb909220b8f0073c4d1c507ffb3914f83",
+  "effective_status": "BLOCKED",
+  "fixture_mode": false,
+  "historical_state": {
+    "current_stage": "ART_PROOFS",
+    "last_event_id": "event-9fca7d067f335e7bf7e1da6c",
+    "preserved": true,
+    "version": 7
+  },
+  "invalidated_unit_ids": [
+    "p04-panel-01",
+    "p05-panel-01",
+    "p05-panel-02",
+    "p06-panel-01",
+    "p07-panel-01",
+    "p07-panel-02",
+    "p07-panel-03",
+    "p08-panel-01",
+    "p08-panel-02",
+    "p09-panel-01",
+    "p10-panel-01",
+    "p10-panel-02",
+    "p11-panel-01",
+    "p12-panel-01",
+    "p12-panel-02",
+    "p13-panel-01",
+    "p13-panel-02",
+    "p13-panel-03",
+    "p14-panel-01",
+    "p14-panel-02",
+    "p14-panel-03",
+    "p15-panel-01",
+    "p16-panel-01",
+    "p16-panel-02",
+    "p17-panel-01",
+    "p17-panel-02",
+    "p18-panel-01",
+    "p18-panel-02",
+    "p19-panel-01",
+    "p19-panel-03",
+    "p20-panel-01",
+    "p20-panel-02",
+    "p21-panel-01"
+  ],
+  "page_11": {
+    "generated": false,
+    "qualified_review_signed": false,
+    "status": "ESCALATE_BEFORE_GENERATION"
+  },
+  "pages": {
+    "accepted_artifacts_preserved": [
+      {
+        "page_id": "page-88792a15dcd25b30d3982d7c",
+        "page_number": 2,
+        "path": "books/DM02/private-page-previews/page-88792a15dcd25b30d3982d7c/v0002/0002-page-88792a15dcd25b30d3982d7c.png",
+        "sha256": "47f664db0be2ce1d9f68d32dffebca07efc3812b1def0f5f1b86536b92cedd8f"
+      },
+      {
+        "page_id": "page-a694d4c3702975edfdceb0c5",
+        "page_number": 3,
+        "path": "books/DM02/private-page-previews/page-a694d4c3702975edfdceb0c5/v0002/0003-page-a694d4c3702975edfdceb0c5.png",
+        "sha256": "e2f4eb52be5d3579f4a8dfc3658a75f9b1abcfdbbc98d5e097228ec6062f636d"
+      },
+      {
+        "page_id": "page-2eff3830302e6bb1ce973d73",
+        "page_number": 7,
+        "path": "books/DM02/private-page-previews/page-2eff3830302e6bb1ce973d73/v0002/0007-page-2eff3830302e6bb1ce973d73.png",
+        "sha256": "8e3e4b4bde8b68e8b428b9e15e8a876c976f4dfdf98a4e53d6ce021e27e03619"
+      },
+      {
+        "page_id": "page-050fb795d8c0bba26d6fc934",
+        "page_number": 8,
+        "path": "books/DM02/private-page-previews/page-050fb795d8c0bba26d6fc934/v0002/0008-page-050fb795d8c0bba26d6fc934.png",
+        "sha256": "42ebabe4629998d7257b954af6d80e945753f68c21f8c93f9c87ce95b115a949"
+      },
+      {
+        "page_id": "page-ca28c1486ed14e92ca7c6c89",
+        "page_number": 9,
+        "path": "books/DM02/private-page-previews/page-ca28c1486ed14e92ca7c6c89/v0004/0009-page-ca28c1486ed14e92ca7c6c89.png",
+        "sha256": "a10d28a18ab88257cb1fbb095e8a705b72f246106adedeeebc8837383a3f6a3b"
+      },
+      {
+        "page_id": "page-4adc33689921626f8d0b1f8d",
+        "page_number": 13,
+        "path": "books/DM02/private-page-previews/page-4adc33689921626f8d0b1f8d/v0002/0013-page-4adc33689921626f8d0b1f8d.png",
+        "sha256": "34307fe33bcab84f544fc5f8516aa9b2439b4648a157f8d3b1647bff1c33645a"
+      },
+      {
+        "page_id": "page-b3c2c7ea03e4d1259ccbea7b",
+        "page_number": 14,
+        "path": "books/DM02/private-page-previews/page-b3c2c7ea03e4d1259ccbea7b/v0001/0014-page-b3c2c7ea03e4d1259ccbea7b.png",
+        "sha256": "1a5498eb4bda21e7fbb5fed0d0e044474eb818d97e677e6d13d69fae409f1be5"
+      },
+      {
+        "page_id": "page-25f617b853e82ff066d97844",
+        "page_number": 15,
+        "path": "books/DM02/private-page-previews/page-25f617b853e82ff066d97844/v0001/0015-page-25f617b853e82ff066d97844.png",
+        "sha256": "35f0c54f5cd0d9322e944612d74c6e3d638229a43f97f21aaf5c7db8921b5224"
+      },
+      {
+        "page_id": "page-a77b8959a9dbfa9b247f6eed",
+        "page_number": 16,
+        "path": "books/DM02/private-page-previews/page-a77b8959a9dbfa9b247f6eed/v0002/0016-page-a77b8959a9dbfa9b247f6eed.png",
+        "sha256": "49d83e04121a31f2beaaee0bf7aa7e7cb21b41e62c8fc11196cf0a1dd515e7cb"
+      },
+      {
+        "page_id": "page-e738c476c98efb28ec475cdd",
+        "page_number": 17,
+        "path": "books/DM02/private-page-previews/page-e738c476c98efb28ec475cdd/v0001/0017-page-e738c476c98efb28ec475cdd.png",
+        "sha256": "180fa2a23ab76e7cb4836180f6fc9b8e88e6b0bf7eeb627e2a5e65668aa7b10d"
+      },
+      {
+        "page_id": "page-52288832b81caa0075cc9f6b",
+        "page_number": 18,
+        "path": "books/DM02/private-page-previews/page-52288832b81caa0075cc9f6b/v0003/0018-page-52288832b81caa0075cc9f6b.png",
+        "sha256": "65abbc6f5ac60014b1de7835a187850b2c0cf2e32c065af63a65dd1f10763088"
+      },
+      {
+        "page_id": "page-8619f3db280abbfd867eefe4",
+        "page_number": 21,
+        "path": "books/DM02/private-page-previews/page-8619f3db280abbfd867eefe4/v0004/0021-page-8619f3db280abbfd867eefe4.png",
+        "sha256": "33658c7df3f95991d573919045902ee33032f930529433ca276379fec40e4f6f"
+      },
+      {
+        "page_id": "page-d22f4a199dc41892b93a95e8",
+        "page_number": 22,
+        "path": "books/DM02/private-page-previews/page-d22f4a199dc41892b93a95e8/v0001/0022-page-d22f4a199dc41892b93a95e8.png",
+        "sha256": "01c29ebf5e7e63ab25590ce62b2d80afd3cc36cae7d4ce9e898e560fe053a700"
+      },
+      {
+        "page_id": "page-0de736c5ac791f2e0c546fd3",
+        "page_number": 23,
+        "path": "books/DM02/private-page-previews/page-0de736c5ac791f2e0c546fd3/v0001/0023-page-0de736c5ac791f2e0c546fd3.png",
+        "sha256": "8d44d6fe385f5b732f7a3445c3483d90a1a97793594f931393e543115348cc0f"
+      },
+      {
+        "page_id": "page-83f106e1acc55e4a61e6fdc0",
+        "page_number": 24,
+        "path": "books/DM02/private-page-previews/page-83f106e1acc55e4a61e6fdc0/v0001/0024-page-83f106e1acc55e4a61e6fdc0.png",
+        "sha256": "c28f652921d7f687d98ee8129139f8c0ac886aac926beff9af03506ee99d1eec"
+      }
+    ],
+    "blocked": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "effective_complete": [
+      2,
+      3,
+      22,
+      23,
+      24
+    ],
+    "invalidated_after_campaign": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "recorded_complete_before_invalidation": [
+      2,
+      3,
+      7,
+      8,
+      9,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      21,
+      22,
+      23,
+      24
+    ],
+    "recovery_requirements": [
+      {
+        "page_number": 1,
+        "requirements": [
+          "p01-panel-02 passes, but unlisted p01-panel-01 retains a same-page forehead-mark continuity mismatch; no operation on that unit was authorized."
+        ]
+      },
+      {
+        "page_number": 4,
+        "requirements": [
+          "p04-panel-01 exhausted its two-operation unit ceiling with count-readable Shesha hoods and a bright safe-band seam still present.",
+          "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels."
+        ]
+      },
+      {
+        "page_number": 5,
+        "requirements": [
+          "p05-panel-01 exhausted its two-operation unit ceiling with Brahma hair/flare still occupying the required safe region; the other two panels pass.",
+          "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels."
+        ]
+      },
+      {
+        "page_number": 6,
+        "requirements": [
+          "p06-panel-01 exhausted its two-operation unit ceiling with the sleep effect and safe region still unresolved.",
+          "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels."
+        ]
+      },
+      {
+        "page_number": 7,
+        "requirements": [
+          "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels."
+        ]
+      },
+      {
+        "page_number": 8,
+        "requirements": [
+          "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels."
+        ]
+      },
+      {
+        "page_number": 9,
+        "requirements": [
+          "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels."
+        ]
+      },
+      {
+        "page_number": 10,
+        "requirements": [
+          "p10-panel-02 exhausted its two-operation unit ceiling; the six withdrawal-locus groups remain unauditable and floral/extra-marker ambiguity remains.",
+          "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels."
+        ]
+      },
+      {
+        "page_number": 11,
+        "requirements": [
+          "ESCALATE_BEFORE_GENERATION remains in force; qualified iconography review is unsigned and no Page 11 operation was authorized.",
+          "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels."
+        ]
+      },
+      {
+        "page_number": 12,
+        "requirements": [
+          "p12-panel-01 contains an unsupported Vishnu forehead emblem; no review-directed repair budget remains.",
+          "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels."
+        ]
+      },
+      {
+        "page_number": 13,
+        "requirements": [
+          "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels."
+        ]
+      },
+      {
+        "page_number": 14,
+        "requirements": [
+          "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels."
+        ]
+      },
+      {
+        "page_number": 15,
+        "requirements": [
+          "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels."
+        ]
+      },
+      {
+        "page_number": 16,
+        "requirements": [
+          "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels."
+        ]
+      },
+      {
+        "page_number": 17,
+        "requirements": [
+          "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels."
+        ]
+      },
+      {
+        "page_number": 18,
+        "requirements": [
+          "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels."
+        ]
+      },
+      {
+        "page_number": 19,
+        "requirements": [
+          "p19-panel-01 depicts combat rather than the joint condition dialogue and p19-panel-03 adds unsupported crown/forehead/identity changes; p19-panel-02 passes.",
+          "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels."
+        ]
+      },
+      {
+        "page_number": 20,
+        "requirements": [
+          "p20-panel-01 fixes the scene to ordinary agrarian geography and p20-panel-02 invents rocky cliff/island geography and renewed combat.",
+          "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels."
+        ]
+      },
+      {
+        "page_number": 21,
+        "requirements": [
+          "The later user-directed series-identity review rejects unchanged canonical reuse of every current Brahma/Vishnu raster and requires approved coherent character references before corrective pixels."
+        ]
+      }
+    ],
+    "total": 24
+  },
+  "publication_eligible": false,
+  "reconciliation": {
+    "conflicts_detected": false,
+    "effective": true,
+    "evidence_sha256": {
+      "brahma_reference_proposal": "0ec0a174b42e76452beb8bcf7a94e781ab532eefa261d8201e5257e83a7b808a",
+      "campaign_approval": "195b45d3582db6628554219aa6bcf1546755a29d2b3f2cdfb3a615da914a98c7",
+      "campaign_image_reviews": "efb24d2ecdbe176e22324d4e9cfe7bbce13fe3b3adada0796c55385a49bb2dbf",
+      "campaign_request": "c097d6a890a9bcceef573e67ddc4dd5f981735f4b811b83d8e7b89e9a5335495",
+      "campaign_status": "69b952f2c7604a2dfed65decee4e4c04681422e97e92cf1a4804fc19cc938f30",
+      "completed_pages": "4983af154dbb4bab04ba968cea71148be75343112d45e17b1d0ad18eda1c092e",
+      "composed_page_reviews": "e636cd3535d04022b93c354ba07b2b1bd8bacd6d6356fc39274f2191e7dff4da",
+      "execution_ledger": "d1897976469a5db2859241aeaef4b26ddb5acb5a1c5f6912a2e8b5f524039103",
+      "historical_events": "1917e9bb04b56b331c0a39b88af6a36439e4010fe700b7b07a2af32adfe9759c",
+      "historical_state": "3dd99b1c9f62503b47dd6b7d5352b1204caf5e41bf88af6b52cd56be2d705c8a",
+      "invalidation_source": "fdffebc6918fe0fa6d25e5f489d97c0a9c317ff02e42657d87c7e5675ffaabb0",
+      "vishnu_reference_proposal": "eead7d4e0379d3cf82037238ebe6c521e9d8daa9f500743ccfe86eb6b4fbd9e1"
+    },
+    "historical_state_overwritten": false,
+    "manifest_path": "books/DM02/production-reconciliation/evidence.v0001.json",
+    "manifest_sha256": "17df181803d3ca534163f36f530b175caeb5163796acd856543fbfa445534d85"
+  },
+  "resume_policy": {
+    "candidate_unit_ids_after_required_approvals": [
+      "p01-panel-01",
+      "p04-panel-01",
+      "p05-panel-01",
+      "p05-panel-02",
+      "p06-panel-01",
+      "p07-panel-01",
+      "p07-panel-02",
+      "p07-panel-03",
+      "p08-panel-01",
+      "p08-panel-02",
+      "p09-panel-01",
+      "p10-panel-01",
+      "p10-panel-02",
+      "p12-panel-01",
+      "p12-panel-02",
+      "p13-panel-01",
+      "p13-panel-02",
+      "p13-panel-03",
+      "p14-panel-01",
+      "p14-panel-02",
+      "p14-panel-03",
+      "p15-panel-01",
+      "p16-panel-01",
+      "p16-panel-02",
+      "p17-panel-01",
+      "p17-panel-02",
+      "p18-panel-01",
+      "p18-panel-02",
+      "p19-panel-01",
+      "p19-panel-03",
+      "p20-panel-01",
+      "p20-panel-02",
+      "p21-panel-01"
+    ],
+    "currently_eligible_unit_ids": [],
+    "duplicate_generation_prohibited": true,
+    "new_campaign_required": true,
+    "prior_campaign_reusable": false,
+    "separately_gated_unit_ids": [
+      "p11-panel-01"
+    ]
+  },
+  "schema_version": "1.0"
+}

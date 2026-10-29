@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "milestone": "PR12",
+  "title": "DM04 Autonomous Multi-Page Production Pilot",
+  "branch": "feature/book-factory-autonomous-pilot-pr12",
+  "baseline_commit": "49b5e78b84359302312749003ab1c9f49e1ff4d5",
+  "book_id": "DM04",
+  "campaign_id": "dm04-pr12-autonomous-multi-page-pilot-01",
+  "campaign_subject_hash": "fd9864465aebf8e0c121f72ce8a4249d08af372a48829ab926b0a223e6956b21",
+  "status": "CAMPAIGN_COMPLETE_FIVE_OPERATION_CEILING_EXHAUSTED_PRIVATE_DIAGNOSTIC_PROOF_CREATED",
+  "execution_window": {
+    "started_at": "2026-10-21T21:33:55+05:30",
+    "reported_at": "2026-10-21T22:19:01+05:30",
+    "elapsed_seconds": 2706
+  },
+  "selected_units": [
+    {"page_number": 1, "page_id": "page-27d143ae995bf60742b65c5b", "panel_id": "p01-panel-02", "operation": "edit", "role": "INTIMATE_CONVERSATION"},
+    {"page_number": 13, "page_id": "page-23e0e9cd9d4013ed03ae7e8c", "panel_id": "p13-panel-01", "operation": "generate", "role": "ACTION_MISSILE_COUNTER"},
+    {"page_number": 13, "page_id": "page-23e0e9cd9d4013ed03ae7e8c", "panel_id": "p13-panel-02", "operation": "generate", "role": "ACTION_GROUND_COUNTER"},
+    {"page_number": 14, "page_id": "page-5aca23381e148b472373cd8c", "panel_id": "p14-panel-01", "operation": "generate", "role": "DRAMATIC_REVELATION_IMMERSIVE"},
+    {"page_number": 23, "page_id": "page-54d61ef5bfcb1159088ac489", "panel_id": "p23-panel-01", "operation": "generate", "role": "ACTION_IMMERSIVE_REVERSAL"}
+  ],
+  "images": [
+    {"unit_id": "page-27d143ae995bf60742b65c5b--p01-panel-02", "path": "books/DM04/autonomous-pilot/images/page-27d143ae995bf60742b65c5b--p01-panel-02/v0001.png", "sha256": "3fc146fd6d5afc5a512537ace1e23b132c769b6fbc5bcff99f2fbb7d39f93ea9", "dimensions": [1536, 1024], "review": "FIX_LETTERING_REGION"},
+    {"unit_id": "page-23e0e9cd9d4013ed03ae7e8c--p13-panel-01", "path": "books/DM04/autonomous-pilot/images/page-23e0e9cd9d4013ed03ae7e8c--p13-panel-01/v0001.png", "sha256": "c0a0d15ea531ba00bee1c1c3ccac1bb795dc84f59e0a25d96dd08eca1b6a09b4", "dimensions": [1672, 940], "review": "FIX_SOURCE_ACTION_ICONOGRAPHY_CONTINUITY_LETTERING"},
+    {"unit_id": "page-23e0e9cd9d4013ed03ae7e8c--p13-panel-02", "path": "books/DM04/autonomous-pilot/images/page-23e0e9cd9d4013ed03ae7e8c--p13-panel-02/v0001.png", "sha256": "e303a5c2cd40c5c9b59ed7e4fd4b3a77c11c9f838ab43b095311d1677746105d", "dimensions": [1536, 1024], "review": "FIX_MISSING_BREATH_ICONOGRAPHY_SETTING_CONTINUITY"},
+    {"unit_id": "page-5aca23381e148b472373cd8c--p14-panel-01", "path": "books/DM04/autonomous-pilot/images/page-5aca23381e148b472373cd8c--p14-panel-01/v0001.png", "sha256": "6f4740c453c6d6429c9bcc1f32eaee0bb3023d6892d3e58a10281f947927ca45", "dimensions": [1086, 1448], "review": "FIX_UNSOURCED_EQUIPMENT_HALO_BELL_SOURCE_LETTERING"},
+    {"unit_id": "page-54d61ef5bfcb1159088ac489--p23-panel-01", "path": "books/DM04/autonomous-pilot/images/page-54d61ef5bfcb1159088ac489--p23-panel-01/v0001.png", "sha256": "6d41a3604423dfab3e1f31e6fc00c034fa40325173fbfcf26e70826548891e07", "dimensions": [1086, 1448], "review": "FIX_TWO_ARM_DEVI_HALO_CONTINUITY_LETTERING"}
+  ],
+  "quality": {
+    "image_reviews": 5,
+    "image_review_results": {"PASS": 0, "FIX": 5, "ESCALATE": 0},
+    "composed_page_reviews": 1,
+    "composed_page_result": "PASS_PRIVATE_DIAGNOSTIC_ONLY",
+    "complete_private_preview_pages": 1,
+    "incomplete_pages": 3,
+    "publication_ready_pages": 0,
+    "automatic_repairs": 1,
+    "automatic_retries": 0
+  },
+  "composed_page": {
+    "path": "books/DM04/autonomous-pilot/page-previews/page-27d143ae995bf60742b65c5b/v0001/0001-page-27d143ae995bf60742b65c5b.png",
+    "sha256": "bab574a77ee2630d1eeef2145f82eb08968c086013bb8e63b3db78dc1424fb34",
+    "review_path": "books/DM04/autonomous-pilot/page-previews/page-27d143ae995bf60742b65c5b/v0001/0001-page-27d143ae995bf60742b65c5b.visual-review.json",
+    "publication_eligible": false
+  },
+  "pdf_proof": {
+    "path": "output/pdf/dm04-pr12-private-diagnostic-proof.pdf",
+    "sha256": "4d70cf465bbca45a8de1e61b669d38634249157c2f89cdd9acb6bc82eb7f32da",
+    "page_count": 1,
+    "page_dimensions": [1086, 1448],
+    "inspection_result": "PASS",
+    "publication_eligible": false,
+    "scope": "PRIVATE_DIAGNOSTIC_PDF_PROOF_ONLY"
+  },
+  "usage_and_cost_report": "book-factory/reports/pr12-campaign-usage-and-cost.json",
+  "autonomy_assessment": "book-factory/reports/pr12-autonomous-production-assessment.json",
+  "preservation": {
+    "catalogue_entries": 78,
+    "dm08": "UNCHANGED_EXISTING_EDITION_EXCLUDED",
+    "source_graph": "UNCHANGED",
+    "pr6_attempt_counters": "UNCHANGED_EXHAUSTED",
+    "pr11_operations": "UNCHANGED_TWO",
+    "publication_blockers": "PRESERVED",
+    "push_or_merge": false,
+    "public_deployment": false
+  },
+  "next_action": "STOP_PR12_NO_ADDITIONAL_IMAGE_OPERATIONS"
+}

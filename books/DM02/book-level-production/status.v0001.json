@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "branch": "feature/book-factory-dm02-production-unblocking",
+  "verified_baseline_commit": "dc2d3f502881577a111f111ffa5e8795154cd25d",
+  "status": "AWAITING_CAMPAIGN_AUTHORIZATION",
+  "campaign": {
+    "subject_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+    "necessary_operations": 29,
+    "conditional_derived_fallback_ceiling": 7,
+    "review_directed_repair_ceiling": 7,
+    "total_ceiling": 43,
+    "maximum_total_operations_per_unit": 2,
+    "maximum_repair_or_retry_per_unit": 1,
+    "authorized": false,
+    "executed": 0
+  },
+  "pages": {"complete_private_previews": [3, 21], "complete_count": 2, "incomplete_count": 22, "complete_private_pdf_eligible": false},
+  "page_1_tilak": {"source_violation": false, "continuity_discrepancy": false, "locked_specification_deviation": true, "decision": "TARGETED_EDIT_REQUIRED_BEFORE_PRIVATE_COMPOSITION"},
+  "page_2_hand": {"anatomy_defect": true, "decision": "TARGETED_EDIT_REQUIRED_BEFORE_PRIVATE_COMPOSITION"},
+  "page_11": {"status": "ESCALATE_BEFORE_GENERATION", "qualified_review_signed": false, "included_in_campaign": false},
+  "billing": {"plan_type_observed": "prolite", "used_percent": 23, "remaining_percent": 77, "purchased_credit_balance": "0", "incremental_usd": "UNKNOWN_NOT_EXPOSED", "zero_incremental_usd_verified": false},
+  "preservation": {"new_image_operations": 0, "original_images_modified": false, "campaign_counters_reset": false, "source_graph_modified": false, "dm04_modified": false, "dm08_modified": false, "publication_deployment_push_merge_performed": false},
+  "validation": {"json_parse": "PASS", "inventory_integrity": "PASS_44_OF_44_PANEL_HASHES_AND_SUBJECT_HASH", "factory_validate": "PASS", "source_graph": "PASS_0_ERRORS_0_WARNINGS", "source_graph_integrity_tests": "PASS_15_OF_15", "book_factory_boundary_check": "PASS_WITH_EXPECTED_LOCAL_REFERENCE_SIZE_WARNING", "book_factory_tests": "PASS_228_OF_228"},
+  "next_checkpoint": "Obtain exact authorization for the recorded subject hash; then begin the first internal batch with the Page 1 and Page 2 targeted edits."
+}

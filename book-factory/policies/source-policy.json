@@ -1,0 +1,15 @@
+{
+  "bounded_complete_is_exhaustive_scripture_verification": false,
+  "controlled_pilot_policy": "A verified exact COMPLETE bounded arc with examined source material may be prepared for controlled pre-production while chapter atomization, rights, and independent review remain explicit blockers.",
+  "controlled_pilot_is_publication_ready": false,
+  "private_draft_clearance": "May permit fresh private editorial prose after edition-rights evidence and independent pivotal-claim review are recorded; it never changes the dossier or opens publication.",
+  "private_draft_status": "PRIVATE_DRAFT_PERMITTED_PUBLICATION_BLOCKED",
+  "modern_digital_presentation_reuse_without_permission": "PROHIBITED",
+  "graph_access": "READ_ONLY",
+  "partial_spines_selected_by_default": false,
+  "readiness_dimensions": ["bounded_arc", "chapter_extraction", "source_examination", "critical_flags", "independent_full_arc_review", "rights"],
+  "rights_statuses_allowed_for_ready": ["PERMITTED", "LICENSED", "PUBLIC_DOMAIN_VERIFIED", "OWNED"],
+  "schema_version": "1.0",
+  "source_classes": ["MULA", "SAMPRADAYA", "DRISHTI", "KALPANA"],
+  "unsupported_critical_claims": "BLOCKED"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "approval_type": "PRODUCTION_CAMPAIGN",
+  "subject_type": "PRODUCTION_CAMPAIGN",
+  "subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+  "scope": {
+    "type": "book",
+    "id": "DM02"
+  },
+  "decision": "PASS",
+  "approver": {
+    "id": "human-user-current-session-dm02-visual-proof",
+    "identity_claim": "The human user directly authorized exactly four private DM02 visual-proof operations in the current Codex thread.",
+    "authority": [
+      "PRIVATE_INTERNAL_VISUAL_TESTING"
+    ],
+    "signature_claimed": false
+  },
+  "creator": {
+    "id": "dm02-visual-proof-director"
+  },
+  "conditions": [
+    "BUILT_IN_CODEX_IMAGE_TOOL_ONLY",
+    "EXACT_REFERENCE_RECEIPTS_REQUIRED",
+    "FOUR_OPERATIONS_TOTAL_CEILING",
+    "INCLUDED_ALLOWANCE_FIRST",
+    "INDEPENDENT_ACTUAL_PIXEL_REVIEW_REQUIRED",
+    "NO_PURCHASED_CREDIT_CONSUMPTION_INTENDED",
+    "NO_SEPARATELY_BILLED_API_OR_EXTERNAL_PROVIDER",
+    "ONE_OPERATION_PER_UNIT_NO_AUTOMATIC_RETRY",
+    "PRIVATE_ILLUSTRATION_CLEARANCE_EXPLICIT",
+    "PRIVATE_INTERNAL_ONLY",
+    "PUBLICATION_REMAINS_BLOCKED",
+    "REMAINING_THIRTY_ONE_INITIAL_OPERATIONS_NOT_AUTHORIZED"
+  ],
+  "maximum_paid_spend_minor_units": 0,
+  "currency": "USD",
+  "private_illustration_clearance": {
+    "decision": "PASS",
+    "authorized_panel_ids": [
+      "p01-panel-01",
+      "p11-panel-01",
+      "p14-panel-01",
+      "p21-panel-01"
+    ],
+    "maximum_image_operations": 4,
+    "retries_authorized": false,
+    "publication_authorized": false,
+    "user_authorization_evidence_path": "/Users/vellankisriharsha/.codex/attachments/cda938d5-3e77-440b-82cd-f900d40cba18/Pasted text.txt",
+    "user_authorization_evidence_sha256": "69f90da6f42b70ee277fb77d70a07ecfc8d244246c86bf3f02660f075b7f22f5"
+  },
+  "evidence_note": "Direct current-session user authorization; no cryptographic signature or external identity verification is claimed. The existing manuscript-only source clearance remains publication-blocking; this record grants only the bounded private visual test."
+}

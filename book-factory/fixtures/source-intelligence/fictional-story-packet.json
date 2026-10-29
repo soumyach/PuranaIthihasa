@@ -1,0 +1,75 @@
+{
+  "chapter_coverage": [
+    {
+      "passage_ids": ["moon-archive-passage-1"],
+      "read_entire_chapter": true,
+      "state": "COMPLETE"
+    }
+  ],
+  "completeness": {
+    "bounded_spine_status": "COMPLETE",
+    "chapter_extraction_status": "COMPLETE",
+    "not_exhaustive_scripture_verification": true
+  },
+  "entities": [
+    {
+      "evidence_ids": ["moon-archive-evidence-1"],
+      "id": "moon-archive-captain-eli",
+      "name": "Captain Eli of the Paper Moon",
+      "source_scope": "fictional-moon-archive",
+      "type": "FICTIONAL_PERSON"
+    }
+  ],
+  "events": [
+    {
+      "cause": "A map begins to glow.",
+      "details": "Captain Eli follows the silver path.",
+      "evidence_ids": ["moon-archive-evidence-2"],
+      "id": "moon-archive-event-2",
+      "outcome": "The hidden observatory is found.",
+      "participants": ["moon-archive-captain-eli"],
+      "sequence": 2
+    },
+    {
+      "cause": null,
+      "details": "Captain Eli opens a folded sky-map.",
+      "evidence_ids": ["moon-archive-evidence-1"],
+      "id": "moon-archive-event-1",
+      "outcome": "A silver path appears.",
+      "participants": ["moon-archive-captain-eli"],
+      "sequence": 1
+    }
+  ],
+  "evidence": [
+    {
+      "id": "moon-archive-evidence-1",
+      "locator": "Fictional Moon Archive 1.1",
+      "paraphrase": "Eli opens the sky-map."
+    },
+    {
+      "id": "moon-archive-evidence-2",
+      "locator": "Fictional Moon Archive 1.2",
+      "paraphrase": "Eli follows the path to the observatory."
+    }
+  ],
+  "graph_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "passages": [
+    {
+      "id": "moon-archive-passage-1",
+      "source_id": "fictional-moon-archive"
+    }
+  ],
+  "relationships": [],
+  "boons_and_powers": [],
+  "spine": {
+    "completeness_basis": "All two events in this fictional bounded fixture.",
+    "event_ids": ["moon-archive-event-1", "moon-archive-event-2"],
+    "id": "moon-archive-spine",
+    "scope": "Fictional Moon Archive chapter 1",
+    "source_id": "fictional-moon-archive",
+    "status": "COMPLETE",
+    "witness_id": "fictional-moon-archive-witness"
+  },
+  "unresolved_review_flags": [],
+  "variants_and_conflicts": []
+}

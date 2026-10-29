@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "campaign_subject_hash": "820c1d0371f19ec0e44a5000c3012f29aab1e05501802ef324078841657211cd",
+  "reviewer": {
+    "id": "/root/dm02_corrective_pixel_reviewer",
+    "role": "INDEPENDENT_ACTUAL_PIXEL_SPECIALIST",
+    "independent_of_producer": true,
+    "actual_pixels_inspected": true,
+    "inspection_resolution": "1086x1448 ORIGINAL",
+    "files_modified": false
+  },
+  "results": [
+    {
+      "unit_id": "page-71e9de766bf786cb9499a31b--p01-panel-02",
+      "path": "books/DM02/pages-1-3-production/images/p01-panel-02/v0001.png",
+      "sha256": "582196a26f1dafa22a669ccfc2f126af1edeb53f3f7c8c01ba47a6702e4972c2",
+      "result": "FIX",
+      "private_page_composition_permitted": false,
+      "assessments": {
+        "source_fidelity": "PASS — Medhas begins the account while Suratha and Samadhi remain neutral listeners; no new event, reaction, motive or supernatural occurrence is introduced.",
+        "character_identity_and_continuity": "PASS_WITH_NONCANONICAL_SCOPE — Bark-brown/warm-ivory Medhas, peacock-blue Suratha and earth-toned Samadhi preserve proposal continuity without promotion.",
+        "required_visual_action": "PASS — Medium speaker-anchored hierarchy clearly identifies Medhas while both listeners remain present in profile.",
+        "religious_iconography": "FIX — Medhas bears a prominent vertical white/orange forehead tilak or sectarian mark. The exact operation forbids doctrinal symbols, and neither source nor character bible authorizes it.",
+        "cultural_authenticity": "PASS — The modest forest teaching scene contains no modern or Western-fantasy object.",
+        "anatomy": "PASS — Faces, seated bodies and visible hands are coherent.",
+        "composition_and_gold_standard": "PASS — Firelit triangle, painterly finish and cinematic depth align with the benchmark without transferring its cast or theology.",
+        "lettering_safe_region": "PASS_WITH_NOTE — Perimeter foliage leaves a broad calm central sky suitable for the exact editable dialogue without covering faces, gesture or fire.",
+        "embedded_text_or_watermark": "PASS — None visible."
+      },
+      "exact_correction_if_later_authorized": "Remove only the unsupported forehead mark to natural skin while preserving Medhas's face, hair, expression, lighting, gesture, clothing and every other scene element."
+    },
+    {
+      "unit_id": "page-88792a15dcd25b30d3982d7c--p02-panel-01",
+      "path": "books/DM02/pages-1-3-production/images/p02-panel-01/v0001.png",
+      "sha256": "7702fbc90c1d03295ccb7628281e5f3026d634a714daba1c00cea73db85cede4",
+      "result": "FIX",
+      "private_page_composition_permitted": false,
+      "assessments": {
+        "source_fidelity": "PASS — Ordinary fire smoke and navy space create only a transition; no deity, portal, vision or supernatural source claim appears.",
+        "character_identity_and_continuity": "PASS_WITH_NONCANONICAL_SCOPE — Sleeve, warm-ivory garment, beads, fire direction and dusk environment preserve proposal continuity.",
+        "required_visual_action": "PASS — The open narration hand is the clear close-view subject above the low fire.",
+        "religious_iconography": "PASS — No halo, sacred emblem, supernatural figure or doctrinal apparition appears.",
+        "cultural_authenticity": "PASS — Garment, restrained beads and firelit forest context remain coherent.",
+        "anatomy": "FIX — The focal hand visibly has a thumb plus five non-thumb digit tips, including an extra central palm-emerging finger; honest composition cannot hide it.",
+        "composition_and_gold_standard": "PASS — Close crop, firelight and negative space create polished cinematic hierarchy.",
+        "lettering_safe_region": "PASS — The 912x261 upper region is predominantly uninterrupted navy and fits the exact narration without covering hand or fire.",
+        "embedded_text_or_watermark": "PASS — None visible."
+      },
+      "exact_correction_if_later_authorized": "Reconstruct the focal hand with one thumb and four anatomically coherent fingers, preserving its gesture, wrist beads, sleeve, fire, smoke, lighting and framing."
+    },
+    {
+      "unit_id": "page-88792a15dcd25b30d3982d7c--p02-panel-02",
+      "path": "books/DM02/pages-1-3-production/images/p02-panel-02/v0001.png",
+      "sha256": "6a74cd64078d324d3d6e6abfdb8b573034f8d9a829b6d0b227bb02eeada5fa17",
+      "result": "PASS",
+      "private_page_composition_permitted": true,
+      "assessments": {
+        "source_fidelity": "PASS — Quiet transition adds no portal, vision, deity, dramatic reaction or event.",
+        "character_identity_and_continuity": "PASS_WITH_NONCANONICAL_SCOPE — Medhas remains central, Suratha left in peacock blue and Samadhi right in earth tones.",
+        "required_visual_action": "PASS — Three figures form a quiet wide-shot triangle around the low fire while the upper field opens toward the next sequence.",
+        "religious_iconography": "PASS — No halo, crown, weapon, sacred emblem or supernatural manifestation appears.",
+        "cultural_authenticity": "PASS — Modest garments and seated listening postures remain coherent.",
+        "anatomy": "PASS — No duplicated limbs or malformed visible extremities.",
+        "composition_and_gold_standard": "PASS — Framed vista, dusk palette, low fire and depth achieve premium cinematic polish.",
+        "lettering_safe_region": "PASS_WITH_NOTE — Foliage touches outer corners but the broad central navy field is calm and nonessential.",
+        "embedded_text_or_watermark": "PASS — None visible."
+      }
+    },
+    {
+      "unit_id": "page-a694d4c3702975edfdceb0c5--p03-panel-01",
+      "path": "books/DM02/pages-1-3-production/images/p03-panel-01/v0001.png",
+      "sha256": "8c5e72bf52d71d13997af976c3f7d43917802b8bcd91506d35495031bdf3e86a",
+      "result": "PASS",
+      "private_page_composition_permitted": true,
+      "assessments": {
+        "source_fidelity": "PASS — Midnight water extends into mist and layered darkness without shore, field, mountain, city, temple, lamp, boat or other landmark.",
+        "character_identity_and_continuity": "NOT_APPLICABLE — No character appears, as required.",
+        "required_visual_action": "PASS — Immense scale is carried by receding water, restrained gold reflections and source-less light; the distance merges into mist, not coast.",
+        "religious_iconography": "PASS — No person, deity, serpent, lotus, sacred symbol, star map, portal or invented cosmographic object appears.",
+        "cultural_authenticity": "PASS — The environment remains dignified and devotional without generic fantasy structures or modern objects.",
+        "anatomy": "NOT_APPLICABLE — No figures appear.",
+        "composition_and_gold_standard": "PASS — Navy-black water, antique-gold highlights and painterly depth align with the series without transferring DM08 content.",
+        "lettering_safe_region": "PASS — The 912x261 upper rectangle contains only nonessential cloud texture and subdued light; the exact narration can fit in an opaque editable plaque.",
+        "embedded_text_or_watermark": "PASS — None visible."
+      }
+    }
+  ],
+  "campaign_summary": {
+    "pass_count": 2,
+    "fix_count": 2,
+    "escalate_count": 0,
+    "retries_requested_or_performed": 0,
+    "private_composition_eligible_units": [
+      "page-88792a15dcd25b30d3982d7c--p02-panel-02",
+      "page-a694d4c3702975edfdceb0c5--p03-panel-01"
+    ],
+    "complete_pages_1_to_3_eligible_before_composition": [3]
+  },
+  "scope_limits": [
+    "No proposal pixels are promoted to canonical character or setting references.",
+    "No publication approval is granted.",
+    "No theological certification is performed.",
+    "No image retry, edit or generation is authorized or performed."
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "milestone": "PR11",
+  "book_id": "DM04",
+  "campaign_id": "dm04-pr10-real-production-slice-01",
+  "campaign_subject_hash": "5a5b7c2a606f47a9b72ef001f19ef9c8736f4b328d2434dae08c5d0b08c061d7",
+  "status": "REVIEWED_FIX_REQUIRED_CAMPAIGN_COMPLETE_NO_RETRY",
+  "branch": "feature/book-factory-controlled-visual-pilot-pr11",
+  "baseline_commit": "4c28c2524838582eb471cf9f620655805ac6bc72",
+  "approval": {
+    "id": "approval-9ac3c1c3bc2a352021552a8d",
+    "scope": "PRIVATE_INTERNAL_VISUAL_TESTING_ONLY",
+    "inheritance_allowed": false,
+    "maximum_operations_total": 2,
+    "maximum_operations_per_page": 1,
+    "maximum_paid_spend_minor_units": 0
+  },
+  "execution": {
+    "provider_id": "codex-built-in-image-gen",
+    "host_tool": "image_gen.imagegen",
+    "operations_executed": 2,
+    "retries_executed": 0,
+    "operation_ceiling_exhausted": true,
+    "pr6_counter_reset": false,
+    "images": [
+      {
+        "page_id": "page-27d143ae995bf60742b65c5b",
+        "operation": "edit",
+        "request_hash": "cf5610b02700837ef6bee853d645df6b66f1743c28e2ac8de581f401345c81e5",
+        "prompt_sha256": "392a72abc4fc9c9a4b36a77c48f5dce72ce0dace35f1bd0e757f6bab7e6c1d45",
+        "path": "books/DM04/production-pilot/images/page-27d143ae995bf60742b65c5b/v0001.png",
+        "sha256": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+        "width": 1086,
+        "height": 1448,
+        "receipt_record_hash": "b666dd73ae79b3f5017107518b5f21ee86a2ba0e8b61fd5818fc58e1baba6900",
+        "submitted_reference_hashes": [
+          "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+          "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d",
+          "a0fa07b60d1b8b128b541300f3fb5e26358863e3153c719e2d0aacb0fd7858dd"
+        ]
+      },
+      {
+        "page_id": "page-5316f7271234e4ab31991528",
+        "operation": "generate",
+        "request_hash": "7e24e70043a86cf13a3be457c4c1c095fa2821d852c2e82ff970fafea6f065f3",
+        "prompt_sha256": "49b9638ac65644f6b6f34d6ab38df324a9d16fde19372d79477376f1cf40b80c",
+        "path": "books/DM04/production-pilot/images/page-5316f7271234e4ab31991528/v0001.png",
+        "sha256": "cfac6ab6666e84fcd79d1fccd1aa5273adf4e28185d823cd92847131b7802819",
+        "width": 1086,
+        "height": 1448,
+        "receipt_record_hash": "a71161c00cb5b3b83154117035fecb8e0a5e7c8a1a9b76848d7cb8d4d43c9e12",
+        "submitted_reference_hashes": [
+          "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+          "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+        ]
+      }
+    ]
+  },
+  "independent_reviews": [
+    {
+      "page_id": "page-27d143ae995bf60742b65c5b",
+      "reviewer_id": "/root/pr11_visual_reviewer",
+      "result": "FIX",
+      "review_hash": "29605df38b5d27ed16cadde25db723731b5ae1f07c28ed9c863a9dee54fca7c4",
+      "review_record_hash": "b0f1761a495d94ec01f991d248332a20cba20093bce509ce5a0bd66f0a02af22",
+      "preview_eligible": false,
+      "blocking_codes": [
+        "PAGE01_SINGLE_SCENE_NOT_TWO_PANEL_UNIT",
+        "PAGE01_LETTERING_SAFE_REGIONS_NOT_PROTECTED"
+      ]
+    },
+    {
+      "page_id": "page-5316f7271234e4ab31991528",
+      "reviewer_id": "/root/pr11_visual_reviewer",
+      "result": "ESCALATE",
+      "review_hash": "c6bc6f6c6dd3a64bed96be6cb2b60f66602562f2b5e968860ecee54972a923e2",
+      "review_record_hash": "9b02bff2d4d4d626a822243673e97fba00063701626f749e98d4935ac6fb4917",
+      "preview_eligible": false,
+      "blocking_codes": [
+        "PAGE04_DONOR_TO_BODY_MAP_NOT_AUDITABLE",
+        "PAGE04_ICONOGRAPHY_REQUIRES_EXPERT_REVIEW",
+        "PAGE04_ARBITRARY_CELESTIAL_ARCHITECTURE",
+        "PAGE04_LETTERING_SAFE_REGION_OCCUPIED"
+      ]
+    }
+  ],
+  "artifacts": {
+    "composed_preview_pages": 0,
+    "preview_pdf_created": false,
+    "publication_eligible": false,
+    "reason": "BOTH_IMAGES_FAILED_INDEPENDENT_REVIEW_GATES"
+  },
+  "billing_observation": {
+    "included_allowance_policy": "CURRENT_INCLUDED_ALLOWANCE_FIRST",
+    "api_key_supplied": false,
+    "external_provider_authorization_requested": false,
+    "paid_billing_requested": false,
+    "automatic_credit_purchase_requested": false,
+    "purchased_credit_balance_before_between_after": "0",
+    "weekly_codex_used_percent_before_between_after": 0,
+    "separately_billed_provider_calls": 0,
+    "actual_incremental_usd": "UNKNOWN_NOT_EXPOSED",
+    "zero_incremental_usd_positively_verified": false
+  },
+  "preservation": {
+    "source_graph_mutated": false,
+    "dm08_mutated": false,
+    "next_book_started": false,
+    "published": false,
+    "deployed": false,
+    "pushed": false,
+    "merged": false
+  },
+  "verification": {
+    "targeted_pr10_pr11_tests_passed": 32,
+    "targeted_pr10_pr11_tests_total": 32,
+    "book_factory_tests_passed": 183,
+    "book_factory_tests_total": 183,
+    "factory_validate": "PASS_WITH_BUNDLED_CODEX_PYTHON_RUNTIME",
+    "boundary_checks": "PASS",
+    "source_graph_clean": true,
+    "git_diff_check": "PASS"
+  }
+}

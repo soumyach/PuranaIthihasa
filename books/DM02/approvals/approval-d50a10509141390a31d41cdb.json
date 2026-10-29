@@ -1,0 +1,63 @@
+{
+  "approval_type": "PRODUCTION_CAMPAIGN",
+  "approver": {
+    "authority": [
+      "PRIVATE_INTERNAL_VISUAL_PRODUCTION"
+    ],
+    "id": "human-user-current-session-dm02-pages-1-3",
+    "identity_claim": "The human user directly authorized the exact four-operation private DM02 Pages 1-3 production campaign in the current Codex thread.",
+    "signature_claimed": false
+  },
+  "conditions": [
+    "BUILT_IN_CODEX_IMAGE_TOOL_ONLY",
+    "EXACT_SUBMITTED_REFERENCE_RECEIPTS_REQUIRED",
+    "FOUR_OPERATIONS_TOTAL_CEILING",
+    "INCLUDED_ALLOWANCE_FIRST",
+    "INDEPENDENT_ACTUAL_PIXEL_REVIEW_REQUIRED",
+    "MAXIMUM_ONE_OPERATION_PER_UNIT",
+    "NO_API_KEY",
+    "NO_AUTOMATIC_CREDIT_PURCHASE",
+    "NO_INTENTIONAL_PURCHASED_CREDIT_CONSUMPTION",
+    "NO_RETRIES",
+    "NO_SEPARATELY_BILLED_EXTERNAL_PROVIDER",
+    "NO_WORKSPACE_OVERAGE_AUTHORIZED",
+    "PAGE_11_EXCLUDED_AND_ESCALATED",
+    "PRIOR_CAMPAIGN_COUNTERS_UNCHANGED",
+    "PRIVATE_INTERNAL_ONLY",
+    "PUBLICATION_PUSH_MERGE_DEPLOY_REMAIN_BLOCKED",
+    "STOP_IF_PAID_AUTHORIZATION_REQUESTED",
+    "ZERO_INCREMENTAL_USD_NOT_TECHNICALLY_GUARANTEED"
+  ],
+  "created_at": "2026-10-23T12:03:06Z",
+  "creator": {
+    "id": "codex-root-dm02-pages-1-3-producer"
+  },
+  "decision": "PASS_WITH_CONDITIONS",
+  "edition_id": "pargiter-1904",
+  "evidence_hash": "820c1d0371f19ec0e44a5000c3012f29aab1e05501802ef324078841657211cd",
+  "evidence_refs": [
+    "22af24fc85170a900c005cc6cb3b9e8d8111b9b2805584595c82b093b7b28f41",
+    "CURRENT_USER_MESSAGE_DM02_PAGES_1_TO_3_AUTHORIZATION_2026-10-23",
+    "d85931ab82993bae74c2feafa5ed772f9ddc6253e3109d6b703d4a31e8205d19"
+  ],
+  "expires_at": null,
+  "id": "approval-d50a10509141390a31d41cdb",
+  "inheritance_allowed": false,
+  "invalidators": [
+    "campaign_hash",
+    "cost_policy",
+    "provider",
+    "reference_hash",
+    "source_clearance",
+    "unit_prompt_hash"
+  ],
+  "schema_version": "1.0",
+  "scope": {
+    "id": "DM02",
+    "type": "book"
+  },
+  "source_scope": "dm-source",
+  "subject_hash": "820c1d0371f19ec0e44a5000c3012f29aab1e05501802ef324078841657211cd",
+  "subject_type": "PRODUCTION_CAMPAIGN",
+  "tradition_id": "devi-mahatmyam"
+}

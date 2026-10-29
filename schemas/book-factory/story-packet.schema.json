@@ -1,0 +1,19 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/story-packet.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "adaptation_boundaries": {"items": {"type": "object"}, "minItems": 1, "type": "array"},
+    "bounded_completeness": {"type": "object"},
+    "claims": {"items": {"type": "object"}, "type": "array"},
+    "events": {"items": {"type": "object"}, "type": "array"},
+    "graph_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "id": {"type": "string"},
+    "packet_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "source_id": {"type": "string"},
+    "spine_id": {"type": "string"}
+  },
+  "required": ["id", "spine_id", "source_id", "events", "claims", "bounded_completeness", "adaptation_boundaries", "graph_hash", "packet_hash"],
+  "title": "Source-grounded story packet",
+  "type": "object"
+}

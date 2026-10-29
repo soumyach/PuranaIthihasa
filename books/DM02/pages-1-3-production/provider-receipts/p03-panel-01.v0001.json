@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "campaign_subject_hash": "820c1d0371f19ec0e44a5000c3012f29aab1e05501802ef324078841657211cd",
+  "approval_id": "approval-d50a10509141390a31d41cdb",
+  "operation_order": 4,
+  "unit_id": "page-a694d4c3702975edfdceb0c5--p03-panel-01",
+  "panel_id": "p03-panel-01",
+  "provider": "codex-built-in-image-gen",
+  "provider_operation": "generate_with_reference_conditioning",
+  "executed_at": "2026-10-23T12:07:46Z",
+  "attempt": 1,
+  "retry": false,
+  "prompt_sha256": "8e9d002758a71631fd841d24bb22d801b0adde3580cd8953d1a198e7de6d2b11",
+  "submitted_references": [
+    {
+      "input_index": 1,
+      "role": "A_SERIES_VISUAL_IDENTITY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+      "content_transfer": "STYLE_ONLY_CONTENT_FORBIDDEN"
+    },
+    {
+      "input_index": 2,
+      "role": "B_FULL_PAGE_ATMOSPHERIC_COMPOSITION",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+      "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4",
+      "content_transfer": "ATMOSPHERIC_DEPTH_ONLY_CONTENT_FORBIDDEN"
+    }
+  ],
+  "built_in_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-809f14fa-0449-4ed2-b3c1-8b83c411bc5e.png",
+  "workspace_output_path": "books/DM02/pages-1-3-production/images/p03-panel-01/v0001.png",
+  "output_sha256": "8c5e72bf52d71d13997af976c3f7d43917802b8bcd91506d35495031bdf3e86a",
+  "output_dimensions": [1086, 1448],
+  "explicit_payment_requested": false,
+  "api_key_used": false,
+  "external_provider_used": false,
+  "incremental_usd": "UNKNOWN_NOT_EXPOSED"
+}

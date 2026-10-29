@@ -1,0 +1,2330 @@
+{
+  "book_id": "DM04",
+  "execution_boundary": {
+    "identity_assurance": "SESSION_ATTESTATION_ONLY_NOT_CRYPTOGRAPHIC",
+    "mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+    "orchestrated_by_current_codex_session": true,
+    "paid_api_calls_allowed": 0,
+    "programmatic_spawn_available_inside_repository": false
+  },
+  "handoff_hash": "664b8c09523d6f451adf7b2c1151b51a7ba459310434af2eadaab86fb2c278ff",
+  "id": "agent-handoff-f0cd403e7fcac944303e23c6",
+  "kind": "EDITORIAL_REVIEW",
+  "locked_input_hashes": [
+    "40d02a77dedf68f8b9e216822293b8a5911ba9be8c644fe8ca6d434efbdba1fa",
+    "75a6d7223209feb8850b482d9e0876cd323991652b436ac139470cadc95041d3",
+    "b784b365d9c921312285f453b4f6a4a15a7be935e2f0fdda6cfa8eba12797744",
+    "d43a5f725e4ea595f49a55411eb88af1c65c3d0ca6bf397fdef0d6b7c54f7c7c"
+  ],
+  "request": {
+    "book_id": "DM04",
+    "constraints": [
+      "Review the immutable version; do not rewrite it in place.",
+      "Tie source-fidelity findings to event, claim, and evidence ids.",
+      "Return PASS, FIX, or ESCALATE; critical findings cannot average to PASS.",
+      "Do not certify publication readiness, legal clearance, or theological authority."
+    ],
+    "dossier_hash": "75a6d7223209feb8850b482d9e0876cd323991652b436ac139470cadc95041d3",
+    "locked_source_evidence": [
+      {
+        "adaptation_boundaries": [
+          {
+            "code": "NO_UNSOURCED_FACTS",
+            "rule": "Every critical factual claim must cite evidence or be explicitly classified as adaptation."
+          },
+          {
+            "code": "UNSPECIFIED_STAYS_UNSPECIFIED",
+            "rule": "Missing motivation, iconography, dialogue, chronology, or causality must not be invented."
+          },
+          {
+            "code": "BOUNDED_NOT_EXHAUSTIVE",
+            "rule": "A COMPLETE spine covers only its declared bounded chronology."
+          }
+        ],
+        "citations": [
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-008",
+            "locator": "DM 2 / Pargiter canto 82, web lines 55–57",
+            "paraphrase": "After a hundred-year war Mahiṣa wins Indra’s office and divine jurisdictions; displaced gods roam earth. Led by Brahmā, they tell Śiva and Viṣṇu their defeat and seek a plan to kill him.",
+            "passage_id": "dm-ch02",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-009",
+            "locator": "DM 2 / Pargiter canto 82, web lines 58–60",
+            "paraphrase": "Divine energies converge as Devī: Śiva’s face, Yama’s hair, Viṣṇu’s arms, Moon’s breasts, Indra’s waist, Varuṇa’s legs/thighs, Earth’s hips, Brahmā’s feet, Sun’s toes, Vasus’ fingers, Kubera’s nose, Prajāpati’s teeth, Agni’s eyes, twilights’ brows and wind’s ears.",
+            "passage_id": "dm-ch02",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-010",
+            "locator": "DM 2 / Pargiter canto 82, web lines 61–62",
+            "paraphrase": "Śiva gives a trident; Viṣṇu a discus; Varuṇa a conch and noose; Agni a spear; wind a bow and full quivers; Indra a vajra and Airāvata’s bell; Yama a rod; Prajāpati a rosary; Brahmā a water-pot; Sun rays; Kāla sword and shield.",
+            "passage_id": "dm-ch02",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-011",
+            "locator": "DM 2 / Pargiter canto 82, web lines 62–64",
+            "paraphrase": "Milk Ocean supplies pearl necklace and imperishable garments; ornaments adorn Devī. Viśvakarman gives axe, diverse weapons and impenetrable armor; Ocean lotus garlands and lotus; Himavat lion and gems; Kubera a wine cup; Śeṣa a jeweled serpent necklace.",
+            "passage_id": "dm-ch02",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-012",
+            "locator": "DM 2 / Pargiter canto 82, web lines 64–68",
+            "paraphrase": "Devī’s roar shakes worlds, sea, earth and mountains; gods and sages praise her. Mahiṣa musters armies and approaches its source. Her light, crown, bow sound and thousand arms fill the worlds; Cikṣura and Cāmara enter battle.",
+            "passage_id": "dm-ch02",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-013",
+            "locator": "DM 2 / Pargiter canto 82, web lines 69–71",
+            "paraphrase": "Udagra, Mahāhanu, Asiloman, Bāṣkala, Biḍāla and huge contingents fight with missile and close weapons; Pargiter inserts Ugradarśana from Bombay’s reading where the displayed Sanskrit has no proper name. Mahiṣa leads enormous chariot, elephant and horse forces.",
+            "passage_id": "dm-ch02",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-014",
+            "locator": "DM 2 / Pargiter canto 82, web lines 72–75",
+            "paraphrase": "Devī cuts enemy missiles effortlessly. Her lion attacks; her breaths create energized troops carrying axes, javelins, swords and halberds, with drums and conchs. Her weapons kill and bind enemies; bell sound confounds them.",
+            "passage_id": "dm-ch02",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-015",
+            "locator": "DM 2 / Pargiter canto 82, web lines 76–79",
+            "paraphrase": "Mutilated demons and armed headless bodies continue fighting or dance to martial music. Fallen forces obstruct the field and blood forms rivers. Devī, lion and emanated troops destroy the host; gods shower flowers.",
+            "passage_id": "dm-ch02",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-016",
+            "locator": "DM 3 / Pargiter canto 83, web lines 55–58",
+            "paraphrase": "Cikṣura shoots arrows; Devī cuts them, kills horses and driver, breaks bow and banner and wounds him. His sword strikes lion and Devī’s arm, then breaks. His thrown śūla and his body are shattered by hers.",
+            "passage_id": "dm-ch03",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-017",
+            "locator": "DM 3 / Pargiter canto 83, web lines 59–60",
+            "paraphrase": "Elephant-mounted Cāmara hurls a spear; Devī’s huṃ renders it powerless, and arrows cut his next śūla. Lion leaps onto elephant, wrestles Cāmara on the ground, then springs and severs his head with a paw-blow.",
+            "passage_id": "dm-ch03",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-018",
+            "locator": "DM 3 / Pargiter canto 83, web lines 61–62",
+            "paraphrase": "Devī kills Udagra with stones/trees, Karāla with bodily blows, Uddhata with club, Bāṣkala with bhindipāla, Tāmra/Andhaka with arrows, Ugrāsya/Ugravīrya/Mahāhanu with trident, Biḍāla with sword and Durdhara/Durmukha with arrows.",
+            "passage_id": "dm-ch03",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-019",
+            "locator": "DM 3 / Pargiter canto 83, web lines 63–65",
+            "paraphrase": "Buffalo-shaped Mahiṣa attacks troops with muzzle, hooves, tail, horns, rush, roar, circling and breath, then attacks lion. His movements shake earth, sea, clouds and mountains.",
+            "passage_id": "dm-ch03",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-020",
+            "locator": "DM 3 / Pargiter canto 83, web lines 66–67",
+            "paraphrase": "Devī binds Mahiṣa. He changes buffalo to lion, then armed man as she cuts at him; arrows strike man, sword and shield. Elephant-form seizes lion; she cuts its trunk. He becomes buffalo again.",
+            "passage_id": "dm-ch03",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-021",
+            "locator": "DM 3 / Pargiter canto 83, web lines 67–73",
+            "paraphrase": "Devī drinks and laughs; arrows break hurled mountains. She tells Mahiṣa his roaring is brief, leaps, presses his neck and strikes with śūla. As he emerges halfway from the buffalo mouth, she beheads him. Gods rejoice; celestial singers and dancers celebrate.",
+            "passage_id": "dm-ch03",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-022",
+            "locator": "DM 4 / Pargiter canto 84, web lines 56–152",
+            "paraphrase": "Gods praise Devī’s cosmic power, knowledge, prosperity, protection and mercy in battle, including the claim that slain enemies reach heaven. They ask her gentle and fearsome forms and her weapons to protect every direction.",
+            "passage_id": "dm-ch04",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-023",
+            "locator": "DM 4 / Pargiter canto 84, web lines 155–167",
+            "paraphrase": "Gods offer flowers, perfumes and incense. Invited to choose a boon, they ask relief whenever they remember her in calamity and prosperity for mortals singing this hymn. She agrees and disappears; Medhas introduces her later emergence from Gaurī.",
+            "passage_id": "dm-ch04",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-sanskrit-evidence-008",
+            "locator": "DM 2.2–8",
+            "paraphrase": "After a hundred-year war Mahiṣa wins Indra’s office and divine jurisdictions; displaced gods roam earth. Led by Brahmā, they tell Śiva and Viṣṇu their defeat and seek a plan to kill him.",
+            "passage_id": "dm-sanskrit-008",
+            "source_id": "dm-source",
+            "verification_notes": "Selected displayed Sanskrit range checked for local names, sequence and stated mechanisms. Cross-witness comparisons in paraphrase rely jointly on linked English evidence; this is not full independent translation or edition collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; selected Sanskrit reading",
+            "witness_id": "dm-sanskritdocuments"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-sanskrit-evidence-009",
+            "locator": "DM 2.9–19",
+            "paraphrase": "Divine energies converge as Devī: Śiva’s face, Yama’s hair, Viṣṇu’s arms, Moon’s breasts, Indra’s waist, Varuṇa’s legs/thighs, Earth’s hips, Brahmā’s feet, Sun’s toes, Vasus’ fingers, Kubera’s nose, Prajāpati’s teeth, Agni’s eyes, twilights’ brows and wind’s ears.",
+            "passage_id": "dm-sanskrit-009",
+            "source_id": "dm-source",
+            "verification_notes": "Selected displayed Sanskrit range checked for local names, sequence and stated mechanisms. Cross-witness comparisons in paraphrase rely jointly on linked English evidence; this is not full independent translation or edition collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; selected Sanskrit reading",
+            "witness_id": "dm-sanskritdocuments"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-sanskrit-evidence-010",
+            "locator": "DM 2.20–24",
+            "paraphrase": "Śiva gives a trident; Viṣṇu a discus; Varuṇa a conch and noose; Agni a spear; wind a bow and full quivers; Indra a vajra and Airāvata’s bell; Yama a rod; Prajāpati a rosary; Brahmā a water-pot; Sun rays; Kāla sword and shield.",
+            "passage_id": "dm-sanskrit-010",
+            "source_id": "dm-source",
+            "verification_notes": "Selected displayed Sanskrit range checked for local names, sequence and stated mechanisms. Cross-witness comparisons in paraphrase rely jointly on linked English evidence; this is not full independent translation or edition collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; selected Sanskrit reading",
+            "witness_id": "dm-sanskritdocuments"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-sanskrit-evidence-011",
+            "locator": "DM 2.25–31",
+            "paraphrase": "Milk Ocean supplies pearl necklace and imperishable garments; ornaments adorn Devī. Viśvakarman gives axe, diverse weapons and impenetrable armor; Ocean lotus garlands and lotus; Himavat lion and gems; Kubera a wine cup; Śeṣa a jeweled serpent necklace.",
+            "passage_id": "dm-sanskrit-011",
+            "source_id": "dm-source",
+            "verification_notes": "Selected displayed Sanskrit range checked for local names, sequence and stated mechanisms. Cross-witness comparisons in paraphrase rely jointly on linked English evidence; this is not full independent translation or edition collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; selected Sanskrit reading",
+            "witness_id": "dm-sanskritdocuments"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-sanskrit-evidence-012",
+            "locator": "DM 2.32–41",
+            "paraphrase": "Devī’s roar shakes worlds, sea, earth and mountains; gods and sages praise her. Mahiṣa musters armies and approaches its source. Her light, crown, bow sound and thousand arms fill the worlds; Cikṣura and Cāmara enter battle.",
+            "passage_id": "dm-sanskrit-012",
+            "source_id": "dm-source",
+            "verification_notes": "Selected displayed Sanskrit range checked for local names, sequence and stated mechanisms. Cross-witness comparisons in paraphrase rely jointly on linked English evidence; this is not full independent translation or edition collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; selected Sanskrit reading",
+            "witness_id": "dm-sanskritdocuments"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-sanskrit-evidence-013",
+            "locator": "DM 2.41–48",
+            "paraphrase": "Udagra, Mahāhanu, Asiloman, Bāṣkala, Biḍāla and huge contingents fight with missile and close weapons; Pargiter inserts Ugradarśana from Bombay’s reading where the displayed Sanskrit has no proper name. Mahiṣa leads enormous chariot, elephant and horse forces.",
+            "passage_id": "dm-sanskrit-013",
+            "source_id": "dm-source",
+            "verification_notes": "Selected displayed Sanskrit range checked for local names, sequence and stated mechanisms. Cross-witness comparisons in paraphrase rely jointly on linked English evidence; this is not full independent translation or edition collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; selected Sanskrit reading",
+            "witness_id": "dm-sanskritdocuments"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-sanskrit-evidence-016",
+            "locator": "DM 3.2–10",
+            "paraphrase": "Cikṣura shoots arrows; Devī cuts them, kills horses and driver, breaks bow and banner and wounds him. His sword strikes lion and Devī’s arm, then breaks. His thrown śūla and his body are shattered by hers.",
+            "passage_id": "dm-sanskrit-016",
+            "source_id": "dm-source",
+            "verification_notes": "Selected displayed Sanskrit range checked for local names, sequence and stated mechanisms. Cross-witness comparisons in paraphrase rely jointly on linked English evidence; this is not full independent translation or edition collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; selected Sanskrit reading",
+            "witness_id": "dm-sanskritdocuments"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-sanskrit-evidence-017",
+            "locator": "DM 3.11–16",
+            "paraphrase": "Elephant-mounted Cāmara hurls a spear; Devī’s huṃ renders it powerless, and arrows cut his next śūla. Lion leaps onto elephant, wrestles Cāmara on the ground, then springs and severs his head with a paw-blow.",
+            "passage_id": "dm-sanskrit-017",
+            "source_id": "dm-source",
+            "verification_notes": "Selected displayed Sanskrit range checked for local names, sequence and stated mechanisms. Cross-witness comparisons in paraphrase rely jointly on linked English evidence; this is not full independent translation or edition collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; selected Sanskrit reading",
+            "witness_id": "dm-sanskritdocuments"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-sanskrit-evidence-018",
+            "locator": "DM 3.17–20",
+            "paraphrase": "Devī kills Udagra with stones/trees, Karāla with bodily blows, Uddhata with club, Bāṣkala with bhindipāla, Tāmra/Andhaka with arrows, Ugrāsya/Ugravīrya/Mahāhanu with trident, Biḍāla with sword and Durdhara/Durmukha with arrows.",
+            "passage_id": "dm-sanskrit-018",
+            "source_id": "dm-source",
+            "verification_notes": "Selected displayed Sanskrit range checked for local names, sequence and stated mechanisms. Cross-witness comparisons in paraphrase rely jointly on linked English evidence; this is not full independent translation or edition collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; selected Sanskrit reading",
+            "witness_id": "dm-sanskritdocuments"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-sanskrit-evidence-019",
+            "locator": "DM 3.21–23",
+            "paraphrase": "Buffalo-shaped Mahiṣa attacks troops with muzzle, hooves, tail, horns, rush, roar, circling and breath, then attacks lion. His movements shake earth, sea, clouds and mountains.",
+            "passage_id": "dm-sanskrit-019",
+            "source_id": "dm-source",
+            "verification_notes": "Selected displayed Sanskrit range checked for local names, sequence and stated mechanisms. Cross-witness comparisons in paraphrase rely jointly on linked English evidence; this is not full independent translation or edition collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; selected Sanskrit reading",
+            "witness_id": "dm-sanskritdocuments"
+          }
+        ],
+        "events": [
+          {
+            "cause": null,
+            "changed_relationship_ids": [
+              "dm-rel-012"
+            ],
+            "consequences": [],
+            "details": "After a hundred-year war Mahiṣa wins Indra’s office and divine jurisdictions; displaced gods roam earth. Led by Brahmā, they tell Śiva and Viṣṇu their defeat and seek a plan to kill him.",
+            "evidence_ids": [
+              "dm-evidence-008",
+              "dm-sanskrit-evidence-008"
+            ],
+            "id": "dm-event-008",
+            "introduced_entity_ids": [
+              "dm-mahisha",
+              "dm-indra",
+              "dm-gods",
+              "dm-shiva",
+              "dm-agni",
+              "dm-vayu",
+              "dm-soma",
+              "dm-yama",
+              "dm-varuna"
+            ],
+            "introduced_power_ids": [],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Displaced gods seek deliverance.",
+            "participants": [
+              "dm-mahisha",
+              "dm-indra",
+              "dm-gods",
+              "dm-brahma",
+              "dm-vishnu",
+              "dm-shiva",
+              "dm-surya",
+              "dm-agni",
+              "dm-vayu",
+              "dm-soma",
+              "dm-yama",
+              "dm-varuna"
+            ],
+            "passage_ids": [
+              "dm-ch02",
+              "dm-sanskrit-008"
+            ],
+            "sequence": 8,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-mahisha",
+            "supporting_witness_ids": [
+              "dm-pargiter",
+              "dm-sanskritdocuments"
+            ],
+            "title": "Displaced gods seek deliverance.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "cause": null,
+            "changed_relationship_ids": [
+              "dm-rel-013",
+              "dm-rel-014",
+              "dm-rel-015",
+              "dm-rel-016",
+              "dm-rel-017",
+              "dm-rel-018",
+              "dm-rel-019",
+              "dm-rel-020",
+              "dm-rel-021",
+              "dm-rel-022",
+              "dm-rel-023",
+              "dm-rel-024",
+              "dm-rel-025",
+              "dm-rel-026",
+              "dm-rel-027"
+            ],
+            "consequences": [],
+            "details": "Divine energies converge as Devī: Śiva’s face, Yama’s hair, Viṣṇu’s arms, Moon’s breasts, Indra’s waist, Varuṇa’s legs/thighs, Earth’s hips, Brahmā’s feet, Sun’s toes, Vasus’ fingers, Kubera’s nose, Prajāpati’s teeth, Agni’s eyes, twilights’ brows and wind’s ears.",
+            "evidence_ids": [
+              "dm-evidence-009",
+              "dm-sanskrit-evidence-009"
+            ],
+            "id": "dm-event-009",
+            "introduced_entity_ids": [
+              "dm-devi",
+              "dm-earth",
+              "dm-vasus",
+              "dm-kubera",
+              "dm-prajapati",
+              "dm-twilights"
+            ],
+            "introduced_power_ids": [],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Gods’ energies manifest as a woman.",
+            "participants": [
+              "dm-devi",
+              "dm-gods",
+              "dm-shiva",
+              "dm-vishnu",
+              "dm-brahma",
+              "dm-yama",
+              "dm-soma",
+              "dm-indra",
+              "dm-varuna",
+              "dm-earth",
+              "dm-surya",
+              "dm-vasus",
+              "dm-kubera",
+              "dm-prajapati",
+              "dm-agni",
+              "dm-twilights",
+              "dm-vayu"
+            ],
+            "passage_ids": [
+              "dm-ch02",
+              "dm-sanskrit-009"
+            ],
+            "sequence": 9,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-mahisha",
+            "supporting_witness_ids": [
+              "dm-pargiter",
+              "dm-sanskritdocuments"
+            ],
+            "title": "Gods’ energies manifest as a woman.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "cause": null,
+            "changed_relationship_ids": [
+              "dm-rel-028",
+              "dm-rel-029",
+              "dm-rel-030",
+              "dm-rel-031",
+              "dm-rel-032",
+              "dm-rel-033",
+              "dm-rel-034",
+              "dm-rel-035",
+              "dm-rel-036",
+              "dm-rel-037",
+              "dm-rel-038",
+              "dm-rel-039",
+              "dm-rel-040",
+              "dm-rel-041",
+              "dm-rel-042",
+              "dm-rel-043",
+              "dm-rel-044",
+              "dm-rel-045",
+              "dm-rel-046",
+              "dm-rel-047",
+              "dm-rel-048",
+              "dm-rel-049",
+              "dm-rel-050",
+              "dm-rel-051",
+              "dm-rel-052",
+              "dm-rel-053",
+              "dm-rel-054",
+              "dm-rel-055"
+            ],
+            "consequences": [],
+            "details": "Śiva gives a trident; Viṣṇu a discus; Varuṇa a conch and noose; Agni a spear; wind a bow and full quivers; Indra a vajra and Airāvata’s bell; Yama a rod; Prajāpati a rosary; Brahmā a water-pot; Sun rays; Kāla sword and shield.",
+            "evidence_ids": [
+              "dm-evidence-010",
+              "dm-sanskrit-evidence-010"
+            ],
+            "id": "dm-event-010",
+            "introduced_entity_ids": [
+              "dm-airavata",
+              "dm-kala",
+              "dm-spear",
+              "dm-vajra",
+              "dm-bell",
+              "dm-rod",
+              "dm-noose",
+              "dm-rosary",
+              "dm-waterpot",
+              "dm-shield"
+            ],
+            "introduced_power_ids": [],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Devī receives divine equipment.",
+            "participants": [
+              "dm-devi",
+              "dm-shiva",
+              "dm-vishnu",
+              "dm-varuna",
+              "dm-agni",
+              "dm-vayu",
+              "dm-indra",
+              "dm-airavata",
+              "dm-yama",
+              "dm-prajapati",
+              "dm-brahma",
+              "dm-surya",
+              "dm-kala",
+              "dm-trident",
+              "dm-discus",
+              "dm-conch",
+              "dm-spear",
+              "dm-bow",
+              "dm-arrows",
+              "dm-vajra",
+              "dm-bell",
+              "dm-rod",
+              "dm-noose",
+              "dm-rosary",
+              "dm-waterpot",
+              "dm-sword",
+              "dm-shield"
+            ],
+            "passage_ids": [
+              "dm-ch02",
+              "dm-sanskrit-010"
+            ],
+            "sequence": 10,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-mahisha",
+            "supporting_witness_ids": [
+              "dm-pargiter",
+              "dm-sanskritdocuments"
+            ],
+            "title": "Devī receives divine equipment.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "cause": null,
+            "changed_relationship_ids": [
+              "dm-rel-056",
+              "dm-rel-057",
+              "dm-rel-058",
+              "dm-rel-059",
+              "dm-rel-060",
+              "dm-rel-061",
+              "dm-rel-062",
+              "dm-rel-063"
+            ],
+            "consequences": [],
+            "details": "Milk Ocean supplies pearl necklace and imperishable garments; ornaments adorn Devī. Viśvakarman gives axe, diverse weapons and impenetrable armor; Ocean lotus garlands and lotus; Himavat lion and gems; Kubera a wine cup; Śeṣa a jeweled serpent necklace.",
+            "evidence_ids": [
+              "dm-evidence-011",
+              "dm-sanskrit-evidence-011"
+            ],
+            "id": "dm-event-011",
+            "introduced_entity_ids": [
+              "dm-milk-ocean",
+              "dm-vishvakarman",
+              "dm-ocean",
+              "dm-himavat",
+              "dm-lion",
+              "dm-winecup",
+              "dm-axe",
+              "dm-armor"
+            ],
+            "introduced_power_ids": [
+              "dm-power-impenetrable-armor"
+            ],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Devī is adorned and mounted.",
+            "participants": [
+              "dm-devi",
+              "dm-milk-ocean",
+              "dm-vishvakarman",
+              "dm-ocean",
+              "dm-himavat",
+              "dm-lion",
+              "dm-kubera",
+              "dm-winecup",
+              "dm-shesha",
+              "dm-axe",
+              "dm-armor"
+            ],
+            "passage_ids": [
+              "dm-ch02",
+              "dm-sanskrit-011"
+            ],
+            "sequence": 11,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-mahisha",
+            "supporting_witness_ids": [
+              "dm-pargiter",
+              "dm-sanskritdocuments"
+            ],
+            "title": "Devī is adorned and mounted.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "cause": null,
+            "changed_relationship_ids": [
+              "dm-rel-064",
+              "dm-rel-065"
+            ],
+            "consequences": [],
+            "details": "Devī’s roar shakes worlds, sea, earth and mountains; gods and sages praise her. Mahiṣa musters armies and approaches its source. Her light, crown, bow sound and thousand arms fill the worlds; Cikṣura and Cāmara enter battle.",
+            "evidence_ids": [
+              "dm-evidence-012",
+              "dm-sanskrit-evidence-012"
+            ],
+            "id": "dm-event-012",
+            "introduced_entity_ids": [
+              "dm-asura-army",
+              "dm-chikshura",
+              "dm-chamara"
+            ],
+            "introduced_power_ids": [],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "The battle begins.",
+            "participants": [
+              "dm-devi",
+              "dm-lion",
+              "dm-gods",
+              "dm-mahisha",
+              "dm-asura-army",
+              "dm-chikshura",
+              "dm-chamara"
+            ],
+            "passage_ids": [
+              "dm-ch02",
+              "dm-sanskrit-012"
+            ],
+            "sequence": 12,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-mahisha",
+            "supporting_witness_ids": [
+              "dm-pargiter",
+              "dm-sanskritdocuments"
+            ],
+            "title": "The battle begins.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "cause": null,
+            "changed_relationship_ids": [
+              "dm-rel-066",
+              "dm-rel-067",
+              "dm-rel-068",
+              "dm-rel-069",
+              "dm-rel-070"
+            ],
+            "consequences": [],
+            "details": "Udagra, Mahāhanu, Asiloman, Bāṣkala, Biḍāla and huge contingents fight with missile and close weapons; Pargiter inserts Ugradarśana from Bombay’s reading where the displayed Sanskrit has no proper name. Mahiṣa leads enormous chariot, elephant and horse forces.",
+            "evidence_ids": [
+              "dm-evidence-013",
+              "dm-sanskrit-evidence-013"
+            ],
+            "id": "dm-event-013",
+            "introduced_entity_ids": [
+              "dm-udagra",
+              "dm-mahahanu",
+              "dm-asiloman",
+              "dm-bashkala",
+              "dm-ugradarshana",
+              "dm-bidala"
+            ],
+            "introduced_power_ids": [],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Named and collective contingents engage.",
+            "participants": [
+              "dm-udagra",
+              "dm-mahahanu",
+              "dm-asiloman",
+              "dm-bashkala",
+              "dm-ugradarshana",
+              "dm-bidala",
+              "dm-mahisha",
+              "dm-asura-army",
+              "dm-devi",
+              "dm-noose",
+              "dm-spear",
+              "dm-sword",
+              "dm-axe"
+            ],
+            "passage_ids": [
+              "dm-ch02",
+              "dm-sanskrit-013"
+            ],
+            "sequence": 13,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-mahisha",
+            "supporting_witness_ids": [
+              "dm-pargiter",
+              "dm-sanskritdocuments"
+            ],
+            "title": "Named and collective contingents engage.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "cause": null,
+            "changed_relationship_ids": [
+              "dm-rel-071"
+            ],
+            "consequences": [],
+            "details": "Devī cuts enemy missiles effortlessly. Her lion attacks; her breaths create energized troops carrying axes, javelins, swords and halberds, with drums and conchs. Her weapons kill and bind enemies; bell sound confounds them.",
+            "evidence_ids": [
+              "dm-evidence-014"
+            ],
+            "id": "dm-event-014",
+            "introduced_entity_ids": [
+              "dm-devi-troops"
+            ],
+            "introduced_power_ids": [
+              "dm-power-breath-troops"
+            ],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Devī’s breath-born army joins combat.",
+            "participants": [
+              "dm-devi",
+              "dm-lion",
+              "dm-devi-troops",
+              "dm-asura-army",
+              "dm-trident",
+              "dm-club",
+              "dm-spear",
+              "dm-sword",
+              "dm-bell",
+              "dm-noose",
+              "dm-arrows"
+            ],
+            "passage_ids": [
+              "dm-ch02"
+            ],
+            "sequence": 14,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-mahisha",
+            "supporting_witness_ids": [
+              "dm-pargiter"
+            ],
+            "title": "Devī’s breath-born army joins combat.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "cause": null,
+            "changed_relationship_ids": [],
+            "consequences": [],
+            "details": "Mutilated demons and armed headless bodies continue fighting or dance to martial music. Fallen forces obstruct the field and blood forms rivers. Devī, lion and emanated troops destroy the host; gods shower flowers.",
+            "evidence_ids": [
+              "dm-evidence-015"
+            ],
+            "id": "dm-event-015",
+            "introduced_entity_ids": [],
+            "introduced_power_ids": [],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Mahiṣa’s army is destroyed.",
+            "participants": [
+              "dm-devi",
+              "dm-lion",
+              "dm-devi-troops",
+              "dm-asura-army",
+              "dm-gods"
+            ],
+            "passage_ids": [
+              "dm-ch02"
+            ],
+            "sequence": 15,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-mahisha",
+            "supporting_witness_ids": [
+              "dm-pargiter"
+            ],
+            "title": "Mahiṣa’s army is destroyed.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "cause": null,
+            "changed_relationship_ids": [
+              "dm-rel-072"
+            ],
+            "consequences": [],
+            "details": "Cikṣura shoots arrows; Devī cuts them, kills horses and driver, breaks bow and banner and wounds him. His sword strikes lion and Devī’s arm, then breaks. His thrown śūla and his body are shattered by hers.",
+            "evidence_ids": [
+              "dm-evidence-016",
+              "dm-sanskrit-evidence-016"
+            ],
+            "id": "dm-event-016",
+            "introduced_entity_ids": [],
+            "introduced_power_ids": [],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Cikṣura is slain.",
+            "participants": [
+              "dm-devi",
+              "dm-chikshura",
+              "dm-lion",
+              "dm-arrows",
+              "dm-sword",
+              "dm-shield",
+              "dm-trident"
+            ],
+            "passage_ids": [
+              "dm-ch03",
+              "dm-sanskrit-016"
+            ],
+            "sequence": 16,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-mahisha",
+            "supporting_witness_ids": [
+              "dm-pargiter",
+              "dm-sanskritdocuments"
+            ],
+            "title": "Cikṣura is slain.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "cause": null,
+            "changed_relationship_ids": [
+              "dm-rel-073"
+            ],
+            "consequences": [],
+            "details": "Elephant-mounted Cāmara hurls a spear; Devī’s huṃ renders it powerless, and arrows cut his next śūla. Lion leaps onto elephant, wrestles Cāmara on the ground, then springs and severs his head with a paw-blow.",
+            "evidence_ids": [
+              "dm-evidence-017",
+              "dm-sanskrit-evidence-017"
+            ],
+            "id": "dm-event-017",
+            "introduced_entity_ids": [],
+            "introduced_power_ids": [],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Cāmara is slain.",
+            "participants": [
+              "dm-devi",
+              "dm-chamara",
+              "dm-lion",
+              "dm-spear",
+              "dm-trident",
+              "dm-arrows"
+            ],
+            "passage_ids": [
+              "dm-ch03",
+              "dm-sanskrit-017"
+            ],
+            "sequence": 17,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-mahisha",
+            "supporting_witness_ids": [
+              "dm-pargiter",
+              "dm-sanskritdocuments"
+            ],
+            "title": "Cāmara is slain.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "cause": null,
+            "changed_relationship_ids": [
+              "dm-rel-074",
+              "dm-rel-075",
+              "dm-rel-076",
+              "dm-rel-077",
+              "dm-rel-078",
+              "dm-rel-079",
+              "dm-rel-080",
+              "dm-rel-081",
+              "dm-rel-082",
+              "dm-rel-083",
+              "dm-rel-084",
+              "dm-rel-085"
+            ],
+            "consequences": [],
+            "details": "Devī kills Udagra with stones/trees, Karāla with bodily blows, Uddhata with club, Bāṣkala with bhindipāla, Tāmra/Andhaka with arrows, Ugrāsya/Ugravīrya/Mahāhanu with trident, Biḍāla with sword and Durdhara/Durmukha with arrows.",
+            "evidence_ids": [
+              "dm-evidence-018",
+              "dm-sanskrit-evidence-018"
+            ],
+            "id": "dm-event-018",
+            "introduced_entity_ids": [
+              "dm-karala",
+              "dm-uddhata",
+              "dm-tamra",
+              "dm-andhaka",
+              "dm-ugrasya",
+              "dm-ugravirya",
+              "dm-durdhara",
+              "dm-durmukha",
+              "dm-bhindipala"
+            ],
+            "introduced_power_ids": [],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Named chiefs are slain.",
+            "participants": [
+              "dm-devi",
+              "dm-udagra",
+              "dm-karala",
+              "dm-uddhata",
+              "dm-bashkala",
+              "dm-tamra",
+              "dm-andhaka",
+              "dm-ugrasya",
+              "dm-ugravirya",
+              "dm-mahahanu",
+              "dm-bidala",
+              "dm-durdhara",
+              "dm-durmukha",
+              "dm-club",
+              "dm-bhindipala",
+              "dm-arrows",
+              "dm-trident",
+              "dm-sword"
+            ],
+            "passage_ids": [
+              "dm-ch03",
+              "dm-sanskrit-018"
+            ],
+            "sequence": 18,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-mahisha",
+            "supporting_witness_ids": [
+              "dm-pargiter",
+              "dm-sanskritdocuments"
+            ],
+            "title": "Named chiefs are slain.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "cause": null,
+            "changed_relationship_ids": [],
+            "consequences": [],
+            "details": "Buffalo-shaped Mahiṣa attacks troops with muzzle, hooves, tail, horns, rush, roar, circling and breath, then attacks lion. His movements shake earth, sea, clouds and mountains.",
+            "evidence_ids": [
+              "dm-evidence-019",
+              "dm-sanskrit-evidence-019"
+            ],
+            "id": "dm-event-019",
+            "introduced_entity_ids": [],
+            "introduced_power_ids": [],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Mahiṣa confronts Devī directly.",
+            "participants": [
+              "dm-mahisha",
+              "dm-devi-troops",
+              "dm-lion",
+              "dm-devi"
+            ],
+            "passage_ids": [
+              "dm-ch03",
+              "dm-sanskrit-019"
+            ],
+            "sequence": 19,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-mahisha",
+            "supporting_witness_ids": [
+              "dm-pargiter",
+              "dm-sanskritdocuments"
+            ],
+            "title": "Mahiṣa confronts Devī directly.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "cause": null,
+            "changed_relationship_ids": [],
+            "consequences": [],
+            "details": "Devī binds Mahiṣa. He changes buffalo to lion, then armed man as she cuts at him; arrows strike man, sword and shield. Elephant-form seizes lion; she cuts its trunk. He becomes buffalo again.",
+            "evidence_ids": [
+              "dm-evidence-020"
+            ],
+            "id": "dm-event-020",
+            "introduced_entity_ids": [],
+            "introduced_power_ids": [
+              "dm-power-mahisha-shapeshift"
+            ],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Mahiṣa’s successive forms are countered.",
+            "participants": [
+              "dm-mahisha",
+              "dm-devi",
+              "dm-lion",
+              "dm-noose",
+              "dm-sword",
+              "dm-arrows"
+            ],
+            "passage_ids": [
+              "dm-ch03"
+            ],
+            "sequence": 20,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-mahisha",
+            "supporting_witness_ids": [
+              "dm-pargiter"
+            ],
+            "title": "Mahiṣa’s successive forms are countered.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "cause": null,
+            "changed_relationship_ids": [
+              "dm-rel-086"
+            ],
+            "consequences": [],
+            "details": "Devī drinks and laughs; arrows break hurled mountains. She tells Mahiṣa his roaring is brief, leaps, presses his neck and strikes with śūla. As he emerges halfway from the buffalo mouth, she beheads him. Gods rejoice; celestial singers and dancers celebrate.",
+            "evidence_ids": [
+              "dm-evidence-021"
+            ],
+            "id": "dm-event-021",
+            "introduced_entity_ids": [],
+            "introduced_power_ids": [],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Mahiṣāsura is slain.",
+            "participants": [
+              "dm-mahisha",
+              "dm-devi",
+              "dm-gods",
+              "dm-arrows",
+              "dm-spear",
+              "dm-sword"
+            ],
+            "passage_ids": [
+              "dm-ch03"
+            ],
+            "sequence": 21,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-mahisha",
+            "supporting_witness_ids": [
+              "dm-pargiter"
+            ],
+            "title": "Mahiṣāsura is slain.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "cause": null,
+            "changed_relationship_ids": [
+              "dm-rel-087"
+            ],
+            "consequences": [],
+            "details": "Gods praise Devī’s cosmic power, knowledge, prosperity, protection and mercy in battle, including the claim that slain enemies reach heaven. They ask her gentle and fearsome forms and her weapons to protect every direction.",
+            "evidence_ids": [
+              "dm-evidence-022"
+            ],
+            "id": "dm-event-022",
+            "introduced_entity_ids": [],
+            "introduced_power_ids": [],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Gods worship the victorious Devī.",
+            "participants": [
+              "dm-gods",
+              "dm-devi",
+              "dm-vishnu",
+              "dm-brahma",
+              "dm-shiva",
+              "dm-trident",
+              "dm-sword",
+              "dm-bell",
+              "dm-bow"
+            ],
+            "passage_ids": [
+              "dm-ch04"
+            ],
+            "sequence": 22,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-mahisha",
+            "supporting_witness_ids": [
+              "dm-pargiter"
+            ],
+            "title": "Gods worship the victorious Devī.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "cause": null,
+            "changed_relationship_ids": [
+              "dm-rel-158"
+            ],
+            "consequences": [],
+            "details": "Gods offer flowers, perfumes and incense. Invited to choose a boon, they ask relief whenever they remember her in calamity and prosperity for mortals singing this hymn. She agrees and disappears; Medhas introduces her later emergence from Gaurī.",
+            "evidence_ids": [
+              "dm-evidence-023"
+            ],
+            "id": "dm-event-023",
+            "introduced_entity_ids": [],
+            "introduced_power_ids": [
+              "dm-power-gods-remembrance"
+            ],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Devī grants remembrance-based protection.",
+            "participants": [
+              "dm-gods",
+              "dm-devi"
+            ],
+            "passage_ids": [
+              "dm-ch04"
+            ],
+            "sequence": 23,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-mahisha",
+            "supporting_witness_ids": [
+              "dm-pargiter"
+            ],
+            "title": "Devī grants remembrance-based protection.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          }
+        ],
+        "packet_hash": "b784b365d9c921312285f453b4f6a4a15a7be935e2f0fdda6cfa8eba12797744",
+        "variants_and_conflicts": [
+          {
+            "description": "Pargiter main text Aruṇākṣa; its footnote gives Bombay Aruṇākhya. SanskritDocuments DM 11.52 reads Aruṇākhya, meaning named Aruṇa.",
+            "evidence_ids": [
+              "dm-evidence-056",
+              "dm-sanskrit-evidence-056"
+            ],
+            "id": "dm-variant-aruna",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "RETAINED_WITNESS_DIFFERENCE",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          },
+          {
+            "description": "Wisdomlib index prose labels DM as chapters 82–92; actual linked chapter heading and narrative boundaries are 81–93. Catalogue uses linked headings.",
+            "evidence_ids": [
+              "dm-evidence-001"
+            ],
+            "id": "dm-variant-chapter-map",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "RESOLVED_WITH_ACCESSIBLE_HEADINGS",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          },
+          {
+            "description": "DM9.30 calls Niśumbha ditija; record textual Diti-descendant descriptor, not an independently narrated biological mother–son genealogy.",
+            "evidence_ids": [
+              "dm-evidence-045",
+              "dm-sanskrit-evidence-045"
+            ],
+            "id": "dm-variant-ditija",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "RETAINED_ATTRIBUTED_DESCRIPTOR",
+            "type": "KINSHIP_INTERPRETATION"
+          },
+          {
+            "description": "Wisdomlib Pargiter display has corrupted rain/failure text and says heavy rain in the nourishment sentence; Sanskrit DM 11.46–48 explicitly says drought and nourishment until rain.",
+            "evidence_ids": [
+              "dm-evidence-054",
+              "dm-sanskrit-evidence-054"
+            ],
+            "id": "dm-variant-drought",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "SANSKRIT_READING_RECORDED",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          },
+          {
+            "description": "Sanskrit DM 11.50 explicitly announces Durgādevī after Durgama’s killing; the displayed Pargiter paragraph omits the name-sentence.",
+            "evidence_ids": [
+              "dm-evidence-054",
+              "dm-sanskrit-evidence-054"
+            ],
+            "id": "dm-variant-durga-name",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "RETAINED_WITNESS_DIFFERENCE",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          },
+          {
+            "description": "Pargiter canto 83 footnote 2 reports Bombay additions killing Kāla, Ugradarśana and Asiloman. These are footnote-attested variants, excluded from main event order pending edition inspection.",
+            "evidence_ids": [
+              "dm-evidence-018",
+              "dm-sanskrit-evidence-018"
+            ],
+            "id": "dm-variant-extra-chiefs",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "OPEN_UNDERLYING_EDITION",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          },
+          {
+            "description": "Pargiter’s killing sentence says heads and buttocks; Sanskrit has jaghane. Conventional thigh-position is not imposed until another reliable witness is inspected.",
+            "evidence_ids": [
+              "dm-evidence-007",
+              "dm-sanskrit-evidence-007"
+            ],
+            "id": "dm-variant-jaghane",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "OPEN",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          },
+          {
+            "description": "Pārvatī becoming Kālikā in ch5 and Kālī emanating from Ambikā in ch7 are separate source-scoped manifestation nodes; sameness not established by those scenes alone.",
+            "evidence_ids": [
+              "dm-evidence-033",
+              "dm-sanskrit-evidence-033"
+            ],
+            "id": "dm-variant-kalika-kali",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "RETAINED_DISTINCT_MANIFESTATIONS",
+            "type": "ENTITY_IDENTITY_CAUTION"
+          },
+          {
+            "description": "Pargiter interprets Kolāvidhvaṃsin as non-destroyers of Kolas; other common retellings translate destroyers. No etymological conclusion imposed.",
+            "evidence_ids": [
+              "dm-evidence-001"
+            ],
+            "id": "dm-variant-kola",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "OPEN",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          },
+          {
+            "description": "Pargiter has Mauryas; SanskritDocuments DM 8.6 has Maurvas. Manuscript/print collation needed before standardizing the group-name.",
+            "evidence_ids": [
+              "dm-evidence-036",
+              "dm-sanskrit-evidence-036"
+            ],
+            "id": "dm-variant-maurya",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "OPEN",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          },
+          {
+            "description": "Pargiter ch10 translates absorption into breasts; Sanskrit 10.6 says tanau, body. Graph records only absorption into Devī.",
+            "evidence_ids": [
+              "dm-evidence-047",
+              "dm-sanskrit-evidence-047"
+            ],
+            "id": "dm-variant-reabsorption-body",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "SANSKRIT_READING_RECORDED",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          },
+          {
+            "description": "Ch8 emits Caṇḍikā’s Śakti named Śivadūtī; Pargiter ch9 note identifies Śivadūtī with Caṇḍikā. Main graph retains emanation, avoids silently collapsing entities.",
+            "evidence_ids": [
+              "dm-evidence-038",
+              "dm-sanskrit-evidence-038"
+            ],
+            "id": "dm-variant-shivaduti",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "OPEN_THEOLOGICAL_IDENTIFICATION",
+            "type": "ENTITY_IDENTITY_CAUTION"
+          },
+          {
+            "description": "Pargiter adopts Ugradarśana as a name from Bombay reading; SanskritDocuments DM 2.43–44 has a participle and no such proper name.",
+            "evidence_ids": [
+              "dm-evidence-013",
+              "dm-sanskrit-evidence-013"
+            ],
+            "id": "dm-variant-ugradarshana",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "RETAINED_WITNESS_DIFFERENCE",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          }
+        ]
+      }
+    ],
+    "manuscript": {
+      "aftermath": "The gods and celestial beings celebrate, then offer an attributed hymn, flowers, perfume and incense. Devi grants their precise request for aid on remembrance in calamity and prosperity for mortal hymn-singers before disappearing.",
+      "audience": "Shared family reading; independent reading for ages 10 and up",
+      "beats": [
+        {
+          "chapter_ids": [
+            "ch-01"
+          ],
+          "event_ids": [
+            "dm-event-008"
+          ],
+          "id": "beat-008",
+          "summary": "Mahishasura displaces the gods after a hundred-year war; led by Brahma, they seek Shiva and Vishnu's aid."
+        },
+        {
+          "chapter_ids": [
+            "ch-01",
+            "ch-02"
+          ],
+          "event_ids": [
+            "dm-event-009"
+          ],
+          "id": "beat-009",
+          "summary": "The radiances of the gods converge and take the form of Devi."
+        },
+        {
+          "chapter_ids": [
+            "ch-02"
+          ],
+          "event_ids": [
+            "dm-event-010"
+          ],
+          "id": "beat-010",
+          "summary": "The gods give Devi their specified weapons and sacred equipment."
+        },
+        {
+          "chapter_ids": [
+            "ch-02"
+          ],
+          "event_ids": [
+            "dm-event-011"
+          ],
+          "id": "beat-011",
+          "summary": "Devi receives garments, ornaments, armor, lotus gifts, lion, cup and serpent necklace."
+        },
+        {
+          "chapter_ids": [
+            "ch-02",
+            "ch-03"
+          ],
+          "event_ids": [
+            "dm-event-012"
+          ],
+          "id": "beat-012",
+          "summary": "Devi's roar shakes the worlds and draws Mahishasura's army into battle."
+        },
+        {
+          "chapter_ids": [
+            "ch-03"
+          ],
+          "event_ids": [
+            "dm-event-013"
+          ],
+          "id": "beat-013",
+          "summary": "The named commanders and Mahishasura's enormous combined forces engage."
+        },
+        {
+          "chapter_ids": [
+            "ch-03",
+            "ch-04"
+          ],
+          "event_ids": [
+            "dm-event-014"
+          ],
+          "id": "beat-014",
+          "summary": "Devi cuts missiles, her lion attacks, breath-born troops arise and the bell confounds the enemy."
+        },
+        {
+          "chapter_ids": [
+            "ch-04"
+          ],
+          "event_ids": [
+            "dm-event-015"
+          ],
+          "id": "beat-015",
+          "summary": "Mahishasura's massed host is destroyed, with its grave consequences rendered non-graphically."
+        },
+        {
+          "chapter_ids": [
+            "ch-04",
+            "ch-05"
+          ],
+          "event_ids": [
+            "dm-event-016"
+          ],
+          "id": "beat-016",
+          "summary": "Cikshura's ranged and close attacks are successively countered and he is slain."
+        },
+        {
+          "chapter_ids": [
+            "ch-05"
+          ],
+          "event_ids": [
+            "dm-event-017"
+          ],
+          "id": "beat-017",
+          "summary": "Chamara's spears fail, and Devi's lion defeats him after an elephant-back struggle."
+        },
+        {
+          "chapter_ids": [
+            "ch-05"
+          ],
+          "event_ids": [
+            "dm-event-018"
+          ],
+          "id": "beat-018",
+          "summary": "The remaining named chiefs are defeated by the source-specified means."
+        },
+        {
+          "chapter_ids": [
+            "ch-05",
+            "ch-06"
+          ],
+          "event_ids": [
+            "dm-event-019"
+          ],
+          "id": "beat-019",
+          "summary": "Mahishasura enters in buffalo form and attacks Devi's troops and lion with world-shaking force."
+        },
+        {
+          "chapter_ids": [
+            "ch-06"
+          ],
+          "event_ids": [
+            "dm-event-020"
+          ],
+          "id": "beat-020",
+          "summary": "Bound by Devi, Mahishasura changes through lion, armed man, elephant and buffalo forms, each countered."
+        },
+        {
+          "chapter_ids": [
+            "ch-06",
+            "ch-07"
+          ],
+          "event_ids": [
+            "dm-event-021"
+          ],
+          "id": "beat-021",
+          "summary": "Devi breaks the hurled mountains, restrains the buffalo, stops the half-completed emergence and kills Mahishasura."
+        },
+        {
+          "chapter_ids": [
+            "ch-07",
+            "ch-08"
+          ],
+          "event_ids": [
+            "dm-event-022"
+          ],
+          "id": "beat-022",
+          "summary": "The gods praise Devi's power, knowledge, protection and mercy and ask her forms and weapons to guard the directions."
+        },
+        {
+          "chapter_ids": [
+            "ch-08",
+            "ch-09"
+          ],
+          "event_ids": [
+            "dm-event-023"
+          ],
+          "id": "beat-023",
+          "summary": "After worship, Devi grants the gods' narrow boon and disappears; only then Medhas points toward the later Gauri episode."
+        }
+      ],
+      "book_id": "DM04",
+      "chapters": [
+        {
+          "id": "ch-01",
+          "text": "In the forest hermitage, evening arrived without hurry. Light rested on the leaves, and the last birds crossed the sky above Sage Medhas. The sage waited until the listening world had grown still.\n\n\"A kingdom is not lost only when its gates are broken,\" he began. \"Sometimes it is lost when every rightful place has been taken. Listen, and I will tell you of a time when even the heavens stood empty.\"\n\nFor one hundred years, the gods had fought the armies of Mahishasura. The struggle had stretched beyond a single campaign, beyond the memory of one season following another. At last the buffalo-shaped Asura king prevailed. He took the office of Indra and claimed the powers and duties that belonged to the rulers of the sky, fire, wind, moon and waters. The gods who had once held their stations wandered upon the earth with no place to return to.\n\nDefeat had done more than scatter an army. It had broken the order by which each divine power served the worlds. They gathered, and Brahma led them to Shiva and Vishnu.\n\n\"Mahishasura holds our places,\" the gods said. \"He commands where we once served. Our strength has not been enough. Help us find the means by which he can be stopped.\"\n\nAnger rose in Shiva and Vishnu. From their faces blazed a fierce radiance. Light streamed from Brahma, Indra and the other gods as well.\n\nEach brightness was distinct as it left its source. But none remained separate. Above the gathered gods, the many radiances moved toward one another. They joined, intensified and became too brilliant to look upon directly. What the gods could not accomplish as a defeated host was taking a new form before them.\n\nMedhas lowered his voice.\n\n\"Their loss was not the end of the story,\" he said. \"It was the moment when scattered power began to become one.\"",
+          "title": "1. The Empty Thrones"
+        },
+        {
+          "id": "ch-02",
+          "text": "The gathered brilliance rose like a mountain of flame. Then its outline changed. Within the light appeared a face, hair, arms, hands and feet. The radiance of Shiva formed her face; Yama's became her hair; Vishnu's became her arms. The moon's light formed her breast, Indra's her waist, and Varuna's her thighs and legs. The Earth's power formed her hips, and Brahma's her feet. Sunlight shone in her toes, the Vasus' radiance in her fingers. Kubera's became her nose, Prajapati's her teeth and Agni's her eyes. The two twilights formed her brows, and the wind's power formed her ears.\n\nWhere many lights had met, Devi now stood. She was not an ornament for the gods' despair. She was its answer.\n\nThe gods looked upon her with joy, and one by one they placed in her hands the means of battle. Shiva drew a trident from his own. Vishnu gave a discus. Varuna offered a conch and a noose; Agni, a spear. Vayu brought a bow and two quivers filled with arrows. Indra gave his thunderbolt and a bell from Airavata, his great elephant. Yama gave a rod. Prajapati placed prayer beads in her hand, and Brahma gave a water-pot. The Sun poured his rays into every pore of her skin. Kala gave a sword and shield.\n\nStill the gifts continued. The Ocean of Milk brought a necklace of pearls and garments that would not fade. Ornaments shone at her crown, ears, wrists, arms, ankles and fingers. Vishvakarman gave her an axe, other weapons and armor described as impenetrable. The Ocean offered unfading lotus garlands and a lotus for her hand. Himavat, lord of the mountains, brought jewels and a lion to carry her. Kubera offered a cup filled with drink, and Shesha, lord of serpents, gave a necklace set with gems.\n\nThe moment was solemn, but it was not still. Each gift changed what could happen next. The bow gave reach; the noose could restrain; the bell could bewilder an oncoming force. Sword, shield, spear, discus, thunderbolt and trident waited for different turns in the struggle. The lion crouched beneath Devi, strength gathered in every limb.\n\nThe gods had not placed their hopes in a stranger. The same powers by which they acted in the worlds now shone together before them, held without confusion in Devi's many hands.\n\nThe gods had asked for a way to end Mahishasura's rule. Before them, the warrior born from their radiance stood armed and ready.\n\nDevi lifted her head and roared.",
+          "title": "2. Light Becomes a Warrior"
+        },
+        {
+          "id": "ch-03",
+          "text": "Her roar did not end at the edge of the gathering. It rolled through the worlds. The sea heaved. The earth shook, and mountains trembled as the sound passed through them. The gods answered with cries of victory, while sages bowed in praise.\n\nFar away, Mahishasura heard the disturbance.\n\nHe called his forces and moved toward its source. Chariots crowded the roads. Elephants advanced beside cavalry, and ranks of foot soldiers filled the ground between them. At their head came his commanders. Cikshura led one great division; Chamara came with another. Udagra, Mahahanu, Asiloman, Bashkala and Bidala brought immense contingents armed for both distant and close combat. The movement of so vast a host sounded like a storm building upon itself.\n\nThen the Asura army saw Devi.\n\nHer radiance filled the three worlds. Her crown touched the sky. When she drew her bow, its string rang through the depths below and the heights above. Her countless arms held the gods' gifts without strain. Beneath her, the lion watched the approaching army.\n\nFor a breath, the two forces faced one another. The Asuras had driven the gods from heaven; now they stood before Devi.\n\nCikshura raised his weapon and signaled the first attack. The sky darkened beneath a flight of missiles. Spears, arrows and other weapons rushed toward Devi from so many directions that they seemed to weave a roof above the field.\n\nDevi answered at once. Her own weapons moved in bright, exact paths. Arrow met arrow. Blade turned missile. What had been launched as an overwhelming storm fell broken before it could reach her.\n\nThe missile barrage from Mahishasura's army broke before Devi. Broken weapons fell before the front ranks. But the commanders pressed them onward, and the distance between the armies vanished.\n\nDevi's lion sprang.",
+          "title": "3. The Roar Across the Worlds"
+        },
+        {
+          "id": "ch-04",
+          "text": "The lion struck the Asura ranks with the force of a forest fire driven by wind. Where soldiers closed around him, he broke their formation. Where the line opened, he drove through it. Devi remained at the center of the battle, cutting down each new rain of weapons before it could gather strength.\n\nThen every breath she released became a warrior. They sprang into being already charged with her power. Some carried axes, some javelins, some swords and some halberds. Drums sounded among them; conches answered. An army no commander had counted now stood beside the lion.\n\nThe Asura ranks closed again. Devi's noose caught those who rushed too near, and her other weapons struck through the massed force. When she sounded Indra's bell, its great voice rolled over the field and confounded the enemy. Their movement faltered and their formations broke apart while the breath-born troops pressed forward.\n\nThe field grew crowded with the fallen, with some terrible figures still moving as if the rhythm of combat carried them on. The way became blocked, and streams ran red across the churned ground. Mahishasura's vast host was being destroyed.\n\nThe lion struck where resistance remained. The bell confounded the enemy; the noose held them; arrows and blades ended their attacks. The Asura host could no longer move as one.\n\nAt last, the massed army that had covered the field could no longer stand. Devi, her lion and the troops born from her breath had broken it. From above, the gods showered flowers upon her.\n\nBut the commanders were not all gone. Through the wreck of his army, Cikshura came forward. His bow was ready, and this time every arrow was aimed at Devi herself.\n\nThe field grew quiet enough to hear the first string snap.",
+          "title": "4. An Army from Breath"
+        },
+        {
+          "id": "ch-05",
+          "text": "Cikshura fired with the speed of a storm. Devi cut his arrows in flight. He sent more; she answered again, not allowing a single volley to change her position. Then she turned from defense to decision. Her arrows brought down his horses and charioteer, broke his bow, split his banner and wounded him. In moments, the chariot from which he had commanded an army was useless.\n\nCikshura seized a sword and shield and charged on foot. He struck the lion, then swung at Devi's arm. The sword broke against her. Still he did not withdraw. He hurled his spear with all the force he had left. Devi cast her own spear to meet it. His weapon shattered, and the same answering force ended his attack. Cikshura fell.\n\nChamara came next, mounted upon an elephant. From that height he threw a spear down at Devi. She met it with a single powerful sound, and the weapon lost its force before it reached her. Chamara snatched up another spear, but Devi's arrows cut it apart.\n\nHer lion leaped onto the elephant. Lion and Asura struggled from its back to the ground, neither giving room. Chamara recovered and turned to meet him. The lion sprang upward, and one final blow of his paw struck off Chamara's head. The elephant stood without its rider; another commander was gone.\n\nElsewhere on the field, the remaining chiefs attacked in waves rather than waiting for single combat. Devi met each according to the danger before her. Udagra advanced through a storm of stones and trees, and there he was overcome. Karala came close enough to fight hand to hand; Devi stopped him with the force of her own limbs. Uddhata fell beneath her club, and Bashkala beneath the heavy bhindipala. Her arrows ended the attacks of Tamra and Andhaka.\n\nThree more—Ugrasya, Ugravirya and Mahahanu—drove forward together. The trident answered them. Bidala charged after them and met Devi's sword. Durdhara and Durmukha tried to hold their distance, but her arrows found them before theirs could turn the battle.\n\nName after name had once meant another division entering the field. Now each name marked a command that could no longer be given. The long list of Mahishasura's forces had narrowed to one remaining power.\n\nThe ground shuddered. It was not the tread of another army.\n\nMahishasura himself had entered the fight.",
+          "title": "5. The Last Commanders"
+        },
+        {
+          "id": "ch-06",
+          "text": "He came in buffalo form, vast and furious. His muzzle swept warriors from their feet. His hooves struck the ground; his tail lashed; his horns drove through every attempt to surround him. When the troops born from Devi's breath closed in, he wheeled among them, scattering them with his rush and the force of his breath. His roar shook the field.\n\nThe lion moved to intercept him. Mahishasura turned upon the great beast, and the clash between them made the earth tremble. With his horns the buffalo tossed mountains. The sea was troubled, clouds were scattered and the peaks themselves shook beneath the force of his movement. This was no commander fighting after his army. It was the Asura king using his own body as a battlefield.\n\nDevi cast Varuna's noose and bound him.\n\nThe bound buffalo vanished. A lion tore free in its place.\n\nDevi raised her sword to cut down the new form. Before the blade completed its path, the lion became a man holding sword and shield. Her arrows struck the man and broke his weapons. He changed again.\n\nAn elephant towered over the field. Its trunk caught Devi's lion and pulled him close. She cut the trunk, releasing her mount. Before the elephant could fall, its shape surged outward and Mahishasura stood once more as the buffalo.\n\nThe noose held a buffalo; a lion appeared. As Devi raised her sword against the lion, an armed man rose. Her arrows broke the man's defense; an elephant seized her lion. When Devi cut the elephant's trunk, the buffalo returned.\n\nDevi lifted Kubera's cup, drank and laughed.\n\nMahishasura tore mountains from the earth and hurled them at her. Devi's arrows shattered them in the sky. Stone burst into harmless fragments before it could reach her.",
+          "title": "6. The Buffalo Enters"
+        },
+        {
+          "id": "ch-07",
+          "text": "The buffalo king roared and thundered across the field.\n\nDevi did not step back.\n\n\"Roar while you can, Mahishasura,\" she said. \"When this battle is ended, the gods will raise their voices.\"\n\nShe leaped, came down upon him and pressed his neck beneath her foot. The force that had shaken earth and mountain was held against the ground.\n\nDevi struck him with the trident. Mahishasura began to leave the buffalo form, pushing halfway out through its mouth. Before he could emerge fully, she cut off his head with one stroke and ended the struggle.\n\nThe enormous buffalo shape went still. The roar that had driven the worlds into confusion ceased.\n\nSilence held the field for one breath. Then the heavens answered. The gods cried out in joy. Celestial singers filled the air with song, and dancers moved in celebration. Flowers fell through the clear space where weapons had crossed moments before.\n\nThe last stroke completed a long chain of battles: an army had given way to commanders, commanders to a king, and the king had shifted from buffalo to lion, man and elephant before returning to buffalo again. Devi had cut missiles, broken the army, defeated its commanders, restrained the changing king and stopped his final emergence.\n\nThe gods' places had not been restored by another century of the same failed war. The gathered radiance they had witnessed at the beginning had moved through every gift, every counter and every turn of the battle to this ending.\n\nMahishasura was dead. His army no longer held the heavens. The story's central conflict was complete.\n\nBut victory left the gods with something more to say than a cheer. They approached Devi together, their heads bowed.",
+          "title": "7. The Shape That Could Not Escape"
+        },
+        {
+          "id": "ch-08",
+          "text": "The battlefield quieted. The gods stood before Devi and spoke a hymn of praise.\n\n\"You are the power present through the worlds,\" they said. \"You are knowledge and the fortune that sustains a household. You protect those who seek refuge. Your greatness is beyond the measure of our speech.\"\n\nTheir hymn also praised mercy within the battle.\n\n\"Even those struck down by you have reached heaven through meeting you in battle,\" they said. \"Guard us with your gentle form and with your fearsome form. Let your trident, sword, bell and bow protect the directions around us.\"\n\nThe field still bore the cost of the war. The gods offered flowers, fragrant perfumes and incense.\n\nDevi received their worship and invited them to name a boon. They made one request.\n\n\"When calamity comes and we remember you, relieve us,\" they asked. \"And may mortals who sing this hymn with devotion receive prosperity.\"\n\nDevi answered, \"What you have asked shall be granted.\"\n\nThen she disappeared from their sight.\n\nThe gods remained beneath a sky no longer crowded by Mahishasura's weapons. They had begun as exiles, wandering after their places were taken. They had sought help, witnessed their powers gather as Devi, armed her, watched the defeat of the army that had driven them out and bowed after its king had fallen. Now the roar of war was gone. Incense rose where dust had covered the air.\n\nSage Medhas let the forest silence return around his own listeners.\n\n\"That is how Mahishasura's rule was broken,\" he said. \"The gods asked for aid in calamity, Devi granted their request, and she vanished from their sight.\"\n\nThe buffalo king's story was finished.",
+          "title": "8. After the Thunder"
+        },
+        {
+          "id": "ch-09",
+          "text": "EDITORIAL REFLECTION\n\nA threat may change its shape without changing the harm it causes. In this story, strength matters, but so do attention and right response. Devi does not answer every danger in the same way: she cuts missiles, breaks an army's coordination, meets commanders one by one, binds the charging buffalo and counters each new form. This is a modern Khatakshetra reflection on the narrative, not a quotation from the Devi Mahatmya and not a new doctrine added to it.\n\nA ROAD BEYOND THIS VOLUME\n\nOnly after the victory, praise, boon and disappearance were complete did Sage Medhas turn toward another episode. He spoke of a later time when the Goddess would emerge from Gauri and another danger would confront the gods. That belongs to a different story. The forest listeners settled closer, ready to hear it when the sage began again.",
+          "title": "After the Story"
+        }
+      ],
+      "claim_map": [
+        {
+          "beat_id": "beat-008",
+          "claim": "After a hundred-year war, Mahishasura takes Indra's office and the gods' jurisdictions, leaving the gods displaced.",
+          "event_id": "dm-event-008",
+          "evidence_ids": [
+            "dm-evidence-008",
+            "dm-sanskrit-evidence-008"
+          ],
+          "id": "claim-008-a",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-008",
+          "claim": "Led by Brahma, the gods report their defeat to Shiva and Vishnu and seek a means to kill Mahishasura.",
+          "event_id": "dm-event-008",
+          "evidence_ids": [
+            "dm-evidence-008",
+            "dm-sanskrit-evidence-008"
+          ],
+          "id": "claim-008-b",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-009",
+          "claim": "Radiances from Shiva, Vishnu, Brahma, Indra and the other gods converge as Devi.",
+          "event_id": "dm-event-009",
+          "evidence_ids": [
+            "dm-evidence-009",
+            "dm-sanskrit-evidence-009"
+          ],
+          "id": "claim-009-a",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-009",
+          "claim": "The manuscript preserves the source-specified correspondence of divine radiances to Devi's body without adding an origin genealogy.",
+          "event_id": "dm-event-009",
+          "evidence_ids": [
+            "dm-evidence-009",
+            "dm-sanskrit-evidence-009"
+          ],
+          "id": "claim-009-b",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-010",
+          "claim": "Shiva, Vishnu, Varuna, Agni, Vayu, Indra, Yama, Prajapati, Brahma, the Sun and Kala give Devi the listed battle equipment and powers.",
+          "event_id": "dm-event-010",
+          "evidence_ids": [
+            "dm-evidence-010",
+            "dm-sanskrit-evidence-010"
+          ],
+          "id": "claim-010-a",
+          "source_class": "MULA"
+        },
+        {
+          "adaptation_note": "Narrative bridge about function; it asserts no new power, origin or outcome.",
+          "beat_id": "beat-010",
+          "claim": "The prose briefly explains the tactical variety of the gifts to prevent the list from reading as a contextless catalogue.",
+          "event_id": "dm-event-010",
+          "evidence_ids": [],
+          "id": "claim-010-b",
+          "source_class": "DRISHTI"
+        },
+        {
+          "beat_id": "beat-011",
+          "claim": "The Ocean of Milk, Vishvakarman, the Ocean, Himavat, Kubera and Shesha provide the listed adornments, armor, lion, cup and necklace.",
+          "event_id": "dm-event-011",
+          "evidence_ids": [
+            "dm-evidence-011",
+            "dm-sanskrit-evidence-011"
+          ],
+          "id": "claim-011-a",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-011",
+          "claim": "Vishvakarman's armor is described as impenetrable, and Himavat provides Devi's lion.",
+          "event_id": "dm-event-011",
+          "evidence_ids": [
+            "dm-evidence-011",
+            "dm-sanskrit-evidence-011"
+          ],
+          "id": "claim-011-b",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-012",
+          "claim": "Devi's roar shakes the worlds, sea, earth and mountains while gods and sages praise her.",
+          "event_id": "dm-event-012",
+          "evidence_ids": [
+            "dm-evidence-012",
+            "dm-sanskrit-evidence-012"
+          ],
+          "id": "claim-012-a",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-012",
+          "claim": "Mahishasura approaches the roar with his army; Devi's crown, bow sound, radiance and many arms fill the worlds.",
+          "event_id": "dm-event-012",
+          "evidence_ids": [
+            "dm-evidence-012",
+            "dm-sanskrit-evidence-012"
+          ],
+          "id": "claim-012-b",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-013",
+          "claim": "Cikshura, Chamara, Udagra, Mahahanu, Asiloman, Bashkala and Bidala lead vast contingents of chariots, elephants, cavalry and foot soldiers.",
+          "event_id": "dm-event-013",
+          "evidence_ids": [
+            "dm-evidence-013",
+            "dm-sanskrit-evidence-013"
+          ],
+          "id": "claim-013-a",
+          "source_class": "MULA"
+        },
+        {
+          "adaptation_note": "Editorial handling of an open Bombay-reading variant; no extra chief is introduced.",
+          "beat_id": "beat-013",
+          "claim": "The narrative excludes the disputed Ugradarshana name and groups the commanders into a readable advance.",
+          "event_id": "dm-event-013",
+          "evidence_ids": [],
+          "id": "claim-013-b",
+          "source_class": "DRISHTI"
+        },
+        {
+          "beat_id": "beat-014",
+          "claim": "Devi cuts the enemy missiles, her lion attacks, and troops bearing varied weapons arise from her breaths.",
+          "event_id": "dm-event-014",
+          "evidence_ids": [
+            "dm-evidence-014"
+          ],
+          "id": "claim-014-a",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-014",
+          "claim": "Drums and conches accompany the breath-born troops, while Devi's weapons and bell kill, bind and confound the enemy.",
+          "event_id": "dm-event-014",
+          "evidence_ids": [
+            "dm-evidence-014"
+          ],
+          "id": "claim-014-b",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-015",
+          "claim": "The terrible battlefield is obstructed by the fallen and runs red before Devi, the lion and the breath-born troops destroy the host.",
+          "event_id": "dm-event-015",
+          "evidence_ids": [
+            "dm-evidence-015"
+          ],
+          "id": "claim-015-a",
+          "source_class": "MULA"
+        },
+        {
+          "adaptation_note": "Violence is reduced in detail for shared family reading and independent readers ages 10 and up without changing the army's destruction or the field's cost.",
+          "beat_id": "beat-015",
+          "claim": "Graphic details are compressed into sober consequences suitable for family reading.",
+          "event_id": "dm-event-015",
+          "evidence_ids": [],
+          "id": "claim-015-b",
+          "source_class": "DRISHTI"
+        },
+        {
+          "beat_id": "beat-015",
+          "claim": "The gods shower flowers after Mahishasura's host is destroyed.",
+          "event_id": "dm-event-015",
+          "evidence_ids": [
+            "dm-evidence-015"
+          ],
+          "id": "claim-015-c",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-016",
+          "claim": "Devi counters Cikshura's arrows, kills his horses and driver, breaks his bow and banner and wounds him.",
+          "event_id": "dm-event-016",
+          "evidence_ids": [
+            "dm-evidence-016",
+            "dm-sanskrit-evidence-016"
+          ],
+          "id": "claim-016-a",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-016",
+          "claim": "Cikshura's sword breaks after striking the lion and Devi, and Devi's spear shatters his weapon and ends his attack.",
+          "event_id": "dm-event-016",
+          "evidence_ids": [
+            "dm-evidence-016",
+            "dm-sanskrit-evidence-016"
+          ],
+          "id": "claim-016-b",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-017",
+          "claim": "Devi's utterance renders Chamara's first spear powerless and her arrows cut his next spear.",
+          "event_id": "dm-event-017",
+          "evidence_ids": [
+            "dm-evidence-017",
+            "dm-sanskrit-evidence-017"
+          ],
+          "id": "claim-017-a",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-017",
+          "claim": "Devi's lion fights elephant-mounted Chamara to the ground and kills him with a paw-blow.",
+          "event_id": "dm-event-017",
+          "evidence_ids": [
+            "dm-evidence-017",
+            "dm-sanskrit-evidence-017"
+          ],
+          "id": "claim-017-b",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-018",
+          "claim": "Udagra, Karala, Uddhata, Bashkala, Tamra, Andhaka, Ugrasya, Ugravirya, Mahahanu, Bidala, Durdhara and Durmukha are defeated by the source-specified means.",
+          "event_id": "dm-event-018",
+          "evidence_ids": [
+            "dm-evidence-018",
+            "dm-sanskrit-evidence-018"
+          ],
+          "id": "claim-018-a",
+          "source_class": "MULA"
+        },
+        {
+          "adaptation_note": "Pacing adaptation; all retained names, weapons and outcomes remain source-bound.",
+          "beat_id": "beat-018",
+          "claim": "The named-chief sequence is arranged as waves of pressure rather than an unexplained roll call.",
+          "event_id": "dm-event-018",
+          "evidence_ids": [],
+          "id": "claim-018-b",
+          "source_class": "DRISHTI"
+        },
+        {
+          "beat_id": "beat-019",
+          "claim": "In buffalo form Mahishasura attacks the breath-born troops and Devi's lion with muzzle, hooves, tail, horns, rush, roar, circling and breath.",
+          "event_id": "dm-event-019",
+          "evidence_ids": [
+            "dm-evidence-019",
+            "dm-sanskrit-evidence-019"
+          ],
+          "id": "claim-019-a",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-019",
+          "claim": "Mahishasura's movements disturb earth, sea, clouds and mountains.",
+          "event_id": "dm-event-019",
+          "evidence_ids": [
+            "dm-evidence-019",
+            "dm-sanskrit-evidence-019"
+          ],
+          "id": "claim-019-b",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-020",
+          "claim": "When Devi binds Mahishasura, he shifts from buffalo to lion, armed man, elephant and buffalo again.",
+          "event_id": "dm-event-020",
+          "evidence_ids": [
+            "dm-evidence-020"
+          ],
+          "id": "claim-020-a",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-020",
+          "claim": "Devi counters the lion and armed man, cuts the elephant's trunk after it seizes her lion, and faces the returned buffalo form.",
+          "event_id": "dm-event-020",
+          "evidence_ids": [
+            "dm-evidence-020"
+          ],
+          "id": "claim-020-b",
+          "source_class": "MULA"
+        },
+        {
+          "adaptation_note": "Causal ordering of the stated transformations and counters, without assigning motive, plan or interior state.",
+          "beat_id": "beat-020",
+          "claim": "The source-stated form changes are presented in sequence between Devi's successive counters.",
+          "event_id": "dm-event-020",
+          "evidence_ids": [],
+          "id": "claim-020-c",
+          "source_class": "DRISHTI"
+        },
+        {
+          "beat_id": "beat-021",
+          "claim": "Devi drinks and laughs, breaks Mahishasura's hurled mountains with arrows and warns that his roaring will be brief.",
+          "event_id": "dm-event-021",
+          "evidence_ids": [
+            "dm-evidence-021"
+          ],
+          "id": "claim-021-a",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-021",
+          "claim": "Devi leaps, pins Mahishasura's neck, strikes with the trident and beheads him while he emerges halfway from the buffalo's mouth.",
+          "event_id": "dm-event-021",
+          "evidence_ids": [
+            "dm-evidence-021"
+          ],
+          "id": "claim-021-b",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-021",
+          "claim": "The gods rejoice and celestial singers and dancers celebrate Mahishasura's death.",
+          "event_id": "dm-event-021",
+          "evidence_ids": [
+            "dm-evidence-021"
+          ],
+          "id": "claim-021-c",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-022",
+          "claim": "The gods praise Devi as cosmic power, knowledge, prosperity, protection and mercy.",
+          "event_id": "dm-event-022",
+          "evidence_ids": [
+            "dm-evidence-022"
+          ],
+          "id": "claim-022-a",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-022",
+          "claim": "The gods state in their praise that the enemies slain by Devi reach heaven and ask her forms and weapons to protect every direction.",
+          "event_id": "dm-event-022",
+          "evidence_ids": [
+            "dm-evidence-022"
+          ],
+          "id": "claim-022-b",
+          "source_class": "MULA"
+        },
+        {
+          "adaptation_note": "Attribution safeguard required by the source-clearance contract.",
+          "beat_id": "beat-022",
+          "claim": "The manuscript explicitly frames the hymn's cosmic and soteriological language as speech by the gods.",
+          "event_id": "dm-event-022",
+          "evidence_ids": [],
+          "id": "claim-022-c",
+          "source_class": "DRISHTI"
+        },
+        {
+          "beat_id": "beat-023",
+          "claim": "The gods worship with flowers, perfume and incense, then request relief when they remember Devi in calamity and prosperity for mortal hymn-singers.",
+          "event_id": "dm-event-023",
+          "evidence_ids": [
+            "dm-evidence-023"
+          ],
+          "id": "claim-023-a",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-023",
+          "claim": "Devi grants the stated request and disappears.",
+          "event_id": "dm-event-023",
+          "evidence_ids": [
+            "dm-evidence-023"
+          ],
+          "id": "claim-023-b",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-023",
+          "claim": "After the completed Mahishasura ending, Medhas introduces the later emergence of the Goddess from Gauri.",
+          "event_id": "dm-event-023",
+          "evidence_ids": [
+            "dm-evidence-023"
+          ],
+          "id": "claim-023-c",
+          "source_class": "MULA"
+        },
+        {
+          "adaptation_note": "Original scene-setting and dialogue; it adds no plot fact, identity, relationship or doctrine.",
+          "beat_id": "beat-008",
+          "claim": "Forest evening imagery and Medhas's opening sentence establish a quiet oral-story frame.",
+          "evidence_ids": [],
+          "id": "claim-frame-a",
+          "source_class": "KALPANA"
+        },
+        {
+          "adaptation_note": "Explicitly labeled modern editorial reflection, not scripture, quotation or doctrine.",
+          "beat_id": "beat-023",
+          "claim": "The labeled closing reflection observes that changing threats require attentive responses.",
+          "evidence_ids": [],
+          "id": "claim-reflection-a",
+          "source_class": "KALPANA"
+        }
+      ],
+      "climax": "Devi prevents Mahishasura from completing another transformation, pins his buffalo form, strikes with the trident and kills him as he emerges halfway from its mouth.",
+      "complete_narrative": true,
+      "context": "Sage Medhas tells a complete story from the Devi Mahatmya's Mahishasura arc: the gods' displacement, the manifestation and arming of Devi, the destruction of Mahishasura's forces, his changing forms and death, and the gods' praise and request for protection. The frame and dialogue are fresh literary adaptation, never presented as verbatim scripture.",
+      "creator": {
+        "attestation_scope": "ORCHESTRATOR_SESSION_RECORD_NOT_CRYPTOGRAPHIC_IDENTITY",
+        "capability": "manuscript_generation",
+        "capability_verified": true,
+        "execution_mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+        "id": "codex-subagent:/root/dm04_manuscript_writer",
+        "request_hash": "7854391139c0b4730cef1ce5bf32697e7873ff3ebe2fbaaab84b772c9faa3990",
+        "role": "manuscript-story"
+      },
+      "dialogue": [
+        {
+          "adaptation_note": "Original framing dialogue; not attributed as scripture.",
+          "beat_id": "beat-008",
+          "chapter_id": "ch-01",
+          "evidence_ids": [],
+          "id": "dlg-01",
+          "speaker_id": "dm-medhas",
+          "text": "A kingdom is not lost only when its gates are broken. Sometimes it is lost when every rightful place has been taken. Listen, and I will tell you of a time when even the heavens stood empty.",
+          "verbatim_source_quote": false
+        },
+        {
+          "adaptation_note": "Fresh paraphrased collective plea based on the event; not a translated quotation.",
+          "beat_id": "beat-008",
+          "chapter_id": "ch-01",
+          "evidence_ids": [
+            "dm-evidence-008",
+            "dm-sanskrit-evidence-008"
+          ],
+          "id": "dlg-02",
+          "speaker_id": "dm-gods",
+          "text": "Mahishasura holds our places. He commands where we once served. Our strength has not been enough. Help us find the means by which he can be stopped.",
+          "verbatim_source_quote": false
+        },
+        {
+          "adaptation_note": "Original narrative transition; no doctrinal claim is presented as scripture.",
+          "beat_id": "beat-009",
+          "chapter_id": "ch-01",
+          "evidence_ids": [],
+          "id": "dlg-03",
+          "speaker_id": "dm-medhas",
+          "text": "Their loss was not the end of the story. It was the moment when scattered power began to become one.",
+          "verbatim_source_quote": false
+        },
+        {
+          "adaptation_note": "Fresh family-readable paraphrase of Devi's source-grounded warning; not a direct translation.",
+          "beat_id": "beat-021",
+          "chapter_id": "ch-07",
+          "evidence_ids": [
+            "dm-evidence-021"
+          ],
+          "id": "dlg-05",
+          "speaker_id": "dm-devi",
+          "text": "Roar while you can, Mahishasura. When this battle is ended, the gods will raise their voices.",
+          "verbatim_source_quote": false
+        },
+        {
+          "adaptation_note": "Fresh condensation of the attributed divine hymn; not a translated quotation.",
+          "beat_id": "beat-022",
+          "chapter_id": "ch-08",
+          "evidence_ids": [
+            "dm-evidence-022"
+          ],
+          "id": "dlg-06",
+          "speaker_id": "dm-gods",
+          "text": "You are the power present through the worlds. You are knowledge and the fortune that sustains a household. You protect those who seek refuge. Your greatness is beyond the measure of our speech.",
+          "verbatim_source_quote": false
+        },
+        {
+          "adaptation_note": "Fresh paraphrase kept explicitly inside the gods' praise, including its mercy claim and directional protection request.",
+          "beat_id": "beat-022",
+          "chapter_id": "ch-08",
+          "evidence_ids": [
+            "dm-evidence-022"
+          ],
+          "id": "dlg-07",
+          "speaker_id": "dm-gods",
+          "text": "Even those struck down by you have reached heaven through meeting you in battle. Guard us with your gentle form and with your fearsome form. Let your trident, sword, bell and bow protect the directions around us.",
+          "verbatim_source_quote": false
+        },
+        {
+          "adaptation_note": "Fresh narrow paraphrase of the boon request; not expanded into a universal guarantee.",
+          "beat_id": "beat-023",
+          "chapter_id": "ch-08",
+          "evidence_ids": [
+            "dm-evidence-023"
+          ],
+          "id": "dlg-08",
+          "speaker_id": "dm-gods",
+          "text": "When calamity comes and we remember you, relieve us. And may mortals who sing this hymn with devotion receive prosperity.",
+          "verbatim_source_quote": false
+        },
+        {
+          "adaptation_note": "Original concise wording representing Devi's agreement; not a source quotation.",
+          "beat_id": "beat-023",
+          "chapter_id": "ch-08",
+          "evidence_ids": [
+            "dm-evidence-023"
+          ],
+          "id": "dlg-09",
+          "speaker_id": "dm-devi",
+          "text": "What you have asked shall be granted.",
+          "verbatim_source_quote": false
+        },
+        {
+          "adaptation_note": "Original closing summary within the Medhas frame; it adds no event beyond the locked ending.",
+          "beat_id": "beat-023",
+          "chapter_id": "ch-08",
+          "evidence_ids": [
+            "dm-evidence-023"
+          ],
+          "id": "dlg-10",
+          "speaker_id": "dm-medhas",
+          "text": "That is how Mahishasura's rule was broken. The gods asked for aid in calamity, Devi granted their request, and she vanished from their sight.",
+          "verbatim_source_quote": false
+        }
+      ],
+      "editorial_reflection": "A threat may change form without changing the harm it causes. The narrative shows different responses to different dangers. This is a modern editorial reflection, not scripture or doctrine.",
+      "ending": "Mahishasura is dead, his army's occupation has ended, the gods' praise and boon request are complete, and Devi grants the request and disappears. Sage Medhas explicitly closes the buffalo king's story before any later episode is mentioned.",
+      "ending_before_next_book_hook": true,
+      "event_coverage": [
+        {
+          "beat_ids": [
+            "beat-008"
+          ],
+          "chapter_ids": [
+            "ch-01"
+          ],
+          "event_id": "dm-event-008",
+          "status": "COVERED"
+        },
+        {
+          "beat_ids": [
+            "beat-009"
+          ],
+          "chapter_ids": [
+            "ch-01",
+            "ch-02"
+          ],
+          "event_id": "dm-event-009",
+          "status": "COVERED"
+        },
+        {
+          "beat_ids": [
+            "beat-010"
+          ],
+          "chapter_ids": [
+            "ch-02"
+          ],
+          "event_id": "dm-event-010",
+          "status": "COVERED"
+        },
+        {
+          "beat_ids": [
+            "beat-011"
+          ],
+          "chapter_ids": [
+            "ch-02"
+          ],
+          "event_id": "dm-event-011",
+          "status": "COVERED"
+        },
+        {
+          "beat_ids": [
+            "beat-012"
+          ],
+          "chapter_ids": [
+            "ch-02",
+            "ch-03"
+          ],
+          "event_id": "dm-event-012",
+          "status": "COVERED"
+        },
+        {
+          "beat_ids": [
+            "beat-013"
+          ],
+          "chapter_ids": [
+            "ch-03"
+          ],
+          "event_id": "dm-event-013",
+          "status": "COVERED"
+        },
+        {
+          "beat_ids": [
+            "beat-014"
+          ],
+          "chapter_ids": [
+            "ch-03",
+            "ch-04"
+          ],
+          "event_id": "dm-event-014",
+          "status": "COVERED"
+        },
+        {
+          "beat_ids": [
+            "beat-015"
+          ],
+          "chapter_ids": [
+            "ch-04"
+          ],
+          "event_id": "dm-event-015",
+          "status": "COVERED"
+        },
+        {
+          "beat_ids": [
+            "beat-016"
+          ],
+          "chapter_ids": [
+            "ch-04",
+            "ch-05"
+          ],
+          "event_id": "dm-event-016",
+          "status": "COVERED"
+        },
+        {
+          "beat_ids": [
+            "beat-017"
+          ],
+          "chapter_ids": [
+            "ch-05"
+          ],
+          "event_id": "dm-event-017",
+          "status": "COVERED"
+        },
+        {
+          "beat_ids": [
+            "beat-018"
+          ],
+          "chapter_ids": [
+            "ch-05"
+          ],
+          "event_id": "dm-event-018",
+          "status": "COVERED"
+        },
+        {
+          "beat_ids": [
+            "beat-019"
+          ],
+          "chapter_ids": [
+            "ch-05",
+            "ch-06"
+          ],
+          "event_id": "dm-event-019",
+          "status": "COVERED"
+        },
+        {
+          "beat_ids": [
+            "beat-020"
+          ],
+          "chapter_ids": [
+            "ch-06"
+          ],
+          "event_id": "dm-event-020",
+          "status": "COVERED"
+        },
+        {
+          "beat_ids": [
+            "beat-021"
+          ],
+          "chapter_ids": [
+            "ch-06",
+            "ch-07"
+          ],
+          "event_id": "dm-event-021",
+          "status": "COVERED"
+        },
+        {
+          "beat_ids": [
+            "beat-022"
+          ],
+          "chapter_ids": [
+            "ch-07",
+            "ch-08"
+          ],
+          "event_id": "dm-event-022",
+          "status": "COVERED"
+        },
+        {
+          "beat_ids": [
+            "beat-023"
+          ],
+          "chapter_ids": [
+            "ch-08",
+            "ch-09"
+          ],
+          "event_id": "dm-event-023",
+          "status": "COVERED"
+        }
+      ],
+      "next_book_hook": "After the resolved ending and labeled editorial reflection, Medhas introduces the later emergence of the Goddess from Gauri as a separate story.",
+      "opening": "Before the first weapon crossed the sky, the heavens had already been conquered. Mahishasura had taken the gods' places, but their defeat kindled a radiance greater than any one of them possessed alone.",
+      "source_classification": "MULA",
+      "source_clearance_hash": "d43a5f725e4ea595f49a55411eb88af1c65c3d0ca6bf397fdef0d6b7c54f7c7c",
+      "source_note": "Private editorial draft based only on the locked DM04 story packet's fresh evidence paraphrases for Devi Mahatmya chapters 2-4 (Pargiter cantos 82-84) and its listed locators. It reproduces no modern website presentation, OCR, SanskritDocuments transcription or other modern translation. Dialogue, sensory transitions and the closing reflection are literary adaptation and are not verbatim scripture. The hymn's cosmic and soteriological statements remain attributed to the gods. The Bombay-only Ugradarshana and extra-chief readings are excluded. Events 014-015 and 020-023 have only the single English witness in the locked packet; there is no critical-edition collation or blanket theological certification. Publication, illustration, PDF generation and distribution remain blocked pending separate review and clearance.",
+      "source_packet_hash": "b784b365d9c921312285f453b4f6a4a15a7be935e2f0fdda6cfa8eba12797744",
+      "source_packet_hashes": [
+        "b784b365d9c921312285f453b4f6a4a15a7be935e2f0fdda6cfa8eba12797744"
+      ],
+      "subtitle": "The Divine Mother and Mahishasura",
+      "title": "The Buffalo King",
+      "version": 2
+    },
+    "operation_key": "review-manuscript-bd50126ff3f8c3d8f4a666c1",
+    "request_hash": "a40c883c2a1c062122324353ca96df7b301ea7d8e19074498cc5d2b96c25c1f9",
+    "required_dimensions": [
+      "complete_source_event_coverage",
+      "factual_and_theological_accuracy",
+      "character_and_divine_identity_accuracy",
+      "causal_sequence",
+      "framing_and_background",
+      "family_readability",
+      "dialogue_and_emotional_progression",
+      "action_narration_reflection_balance",
+      "quotation_and_source_notes",
+      "ending",
+      "collection_continuity"
+    ],
+    "required_event_ids": [
+      "dm-event-008",
+      "dm-event-009",
+      "dm-event-010",
+      "dm-event-011",
+      "dm-event-012",
+      "dm-event-013",
+      "dm-event-014",
+      "dm-event-015",
+      "dm-event-016",
+      "dm-event-017",
+      "dm-event-018",
+      "dm-event-019",
+      "dm-event-020",
+      "dm-event-021",
+      "dm-event-022",
+      "dm-event-023"
+    ],
+    "reviewed_manuscript_hash": "40d02a77dedf68f8b9e216822293b8a5911ba9be8c644fe8ca6d434efbdba1fa",
+    "reviewed_packet_hashes": [
+      "b784b365d9c921312285f453b4f6a4a15a7be935e2f0fdda6cfa8eba12797744"
+    ],
+    "schema_version": "1.0",
+    "source_clearance_hash": "d43a5f725e4ea595f49a55411eb88af1c65c3d0ca6bf397fdef0d6b7c54f7c7c",
+    "writer_id": "codex-subagent:/root/dm04_manuscript_writer"
+  },
+  "request_hash": "a40c883c2a1c062122324353ca96df7b301ea7d8e19074498cc5d2b96c25c1f9",
+  "required_capability": "editorial_review",
+  "required_independence_from_writer_id": "codex-subagent:/root/dm04_manuscript_writer",
+  "required_role": "family-editor",
+  "schema_version": "1.0",
+  "status": "AWAITING_CODEX_SPECIALIST_AGENT"
+}

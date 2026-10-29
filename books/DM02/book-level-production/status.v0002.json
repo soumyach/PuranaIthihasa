@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "campaign_id": "dm02-book-level-private-production-v0001",
+  "subject_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+  "status": "AUTHORIZED_READY_FOR_INTERNAL_BATCH_01",
+  "approval_id": "approval-3174e958372faf8a1e6f380f",
+  "approval_inheritable": false,
+  "operations": {"total_ceiling": 43, "necessary_planned": 29, "conditional_fallback_ceiling": 7, "repair_ceiling": 7, "executed": 0, "remaining_ceiling": 43},
+  "next_batch": ["p01-panel-02 targeted tilak edit", "p02-panel-01 targeted hand edit", "p14-panel-02 new master", "p14-panel-03 new master"],
+  "page_11": {"status": "ESCALATE_BEFORE_GENERATION", "included": false},
+  "allowance_preflight": {"used_percent": 26, "remaining_percent": 74, "purchased_credit_balance": "0", "paid_spend_authorized_usd": 0},
+  "publication_state": "BLOCKED_PRIVATE_INTERNAL_ONLY"
+}

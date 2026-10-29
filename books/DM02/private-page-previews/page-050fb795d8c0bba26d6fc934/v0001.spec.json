@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "book_version": "DM02-BOOK-LEVEL-PRODUCTION-PAGE08-V1",
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "page_script_hash": "f04ac65c7e8e473a2d2bc4a407d1d2a5d266724bf33bc3d079bbd0f95f4f0cee",
+  "page_id": "page-050fb795d8c0bba26d6fc934",
+  "page_number": 8,
+  "reading_order": 8,
+  "page_title": "A PLACE OF INVOCATION",
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "layout_type": "TWO_PANEL_SEQUENTIAL",
+  "fixture": false,
+  "private_preview": true,
+  "publication_eligible": false,
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "preview_authority": {
+    "scope": "DM02_BOOK_LEVEL_PRIVATE_CAMPAIGN_PASS_REVIEWED_ASSETS",
+    "basis": "Exact approval approval-3174e958372faf8a1e6f380f and independent actual-pixel review",
+    "image_generation_authorized": true,
+    "publication_authorized": false,
+    "paid_provider_calls_authorized": false
+  },
+  "storyboard_conformance": {
+    "status": "PRIVATE_PREVIEW_FROM_PASS_REVIEWED_ASSETS",
+    "reason": "All required panel assets passed independent private-use review; lettering is exact from locked storyboard v2."
+  },
+  "reference_comparison": [
+    {
+      "role": "PRESENTATION_REFERENCE_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "role": "COMIC_PAGE_RHYTHM_REFERENCE_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+    }
+  ],
+  "panels": [
+    {
+      "panel_id": "p08-panel-01",
+      "reading_order": 1,
+      "asset": {
+        "path": "books/DM02/book-level-production/images/p08-panel-01/v0001.png",
+        "sha256": "cce8805857a1557bb1ba4ce0d60784ad4eb5907af352b453887914e41c5d7726",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW",
+        "approval": {
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "cce8805857a1557bb1ba4ce0d60784ad4eb5907af352b453887914e41c5d7726",
+          "review_path": "books/DM02/book-level-production/reviews/campaign-image-reviews.v0001.json",
+          "review_result": "PASS"
+        }
+      },
+      "crop": {
+        "mode": "CONTAIN",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "zoom": 1.0,
+        "crop_intent": "Preserve the complete reviewed portrait master, including the protected lettering field and all source-critical relationships."
+      },
+      "speaker_anchors": []
+    },
+    {
+      "panel_id": "p08-panel-02",
+      "reading_order": 2,
+      "asset": {
+        "path": "books/DM02/book-level-production/images/p08-panel-02/v0001.png",
+        "sha256": "c3de0571bb4ade1e96d5d17b73ce392115b64a7e8f26ff9cfd4507228fc46dce",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW",
+        "approval": {
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "c3de0571bb4ade1e96d5d17b73ce392115b64a7e8f26ff9cfd4507228fc46dce",
+          "review_path": "books/DM02/book-level-production/reviews/campaign-image-reviews.v0001.json",
+          "review_result": "PASS"
+        }
+      },
+      "crop": {
+        "mode": "CONTAIN",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "zoom": 1.0,
+        "crop_intent": "Preserve the complete reviewed portrait master, including the protected lettering field and all source-critical relationships."
+      },
+      "speaker_anchors": []
+    }
+  ],
+  "lettering": [
+    {
+      "lettering_id": "p08-narration",
+      "panel_id": "p08-panel-01",
+      "reading_order": 1,
+      "channel": "NARRATION",
+      "speaker_id": "narrator",
+      "text": "Brahma did not address the sleepers with a hurried shout. He turned his praise toward Yoganidra herself.\n\nThe silence at the end of the world became a place of invocation.\n\nBrahma gathered his attention and praised the Goddess who held Vishnu in sleep.",
+      "box": {
+        "x": 0.08,
+        "y": 0.115,
+        "width": 0.84,
+        "height": 0.14
+      },
+      "padding": 12,
+      "font": {
+        "size": 22,
+        "minimum_size": 22
+      },
+      "badge_number": 1,
+      "source_script_hash": "f9213a387803acb7f71d0b08466dc7608fe45737ed3e2c7dcea17095283876f3"
+    }
+  ],
+  "required_lettering_ids": [
+    "p08-narration"
+  ],
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "typography": {
+    "family": "STIXGeneral",
+    "body_size": 22,
+    "title_size": 30
+  },
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    }
+  }
+}

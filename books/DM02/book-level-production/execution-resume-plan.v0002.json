@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "campaign_id": "dm02-book-level-private-production-v0001",
+  "authorization_subject_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+  "state": "PAUSED_AFTER_AUTHORIZED_SCOPE_EXECUTION",
+  "durable_checkpoint": {
+    "necessary_operations_executed": 29,
+    "conditional_fallback_operations_executed": 3,
+    "review_directed_repairs_executed": 7,
+    "total_operations_executed": 39,
+    "total_ceiling": 43,
+    "completed_private_preview_pages": 15,
+    "blocked_pages": 9,
+    "partial_pdf_validated": true
+  },
+  "budget_rules": {
+    "per_unit_two_operation_ceiling_preserved": true,
+    "one_repair_or_retry_per_unit_preserved": true,
+    "unspent_conditional_fallback_slots": 4,
+    "unspent_slots_repurposable": false,
+    "reason": "Every remaining deterministic derived panel already passed; repair slots are exhausted and the conditional reserve cannot be converted into repairs or unlisted work."
+  },
+  "page_11": {
+    "status": "ESCALATE_BEFORE_GENERATION",
+    "qualified_review_signed": false,
+    "generated": false,
+    "minimum_resume_action": "Obtain the existing qualified human iconography decision, then create a separate exact Page 11 image authorization."
+  },
+  "minimum_actions_to_complete_private_book": [
+    "Obtain qualified Page 11 iconography clearance and separately authorize its bounded image operation.",
+    "Prepare a new hash-bound corrective campaign for blocked Pages 1, 4, 5, 6, 10, 12, 19 and 20; do not reuse the four conditional fallback slots.",
+    "Independently review corrected pixels, compose only passing pages and re-run full-book PDF inspection."
+  ],
+  "automatic_internal_batches_remaining_under_current_authorization": false,
+  "publication_state": "BLOCKED_PRIVATE_INTERNAL_ONLY"
+}

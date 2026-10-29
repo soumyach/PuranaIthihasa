@@ -1,0 +1,290 @@
+{
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"
+    }
+  },
+  "book_id": "DM02",
+  "book_version": "DM02-PRIVATE-REUSE-PREVIEW-PAGE01-V1",
+  "canvas": {
+    "aspect_ratio": "3:4",
+    "height": 1448,
+    "width": 1086
+  },
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "composition_hash": "2c32583337754500168c3acd137976324e5f2cd9e094678f85dc03bfc4850d25",
+  "engine_version": "0.8.1",
+  "fixture": false,
+  "fixture_mode": false,
+  "font_config_sha256": "ba6cd2c0c4d716aa550059148339642da7fb2f1af1bfaad2e5d6ab838fb1e0aa",
+  "layout_type": "TWO_PANEL_SEQUENTIAL",
+  "lettering": [
+    {
+      "badge_number": 1,
+      "box": {
+        "height": 0.07,
+        "width": 0.36,
+        "x": 0.065,
+        "y": 0.12
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 25
+      },
+      "lettering_id": "p01-narration",
+      "panel_id": "p01-panel-01",
+      "reading_order": 1,
+      "source_script_hash": "5ccc0d412c7d9fd9ed6138e21f941e83bf865bbe331dd6f36fa7a85dfb275d80",
+      "speaker_id": "narrator",
+      "text": "Sage Medhas began with a distinction."
+    },
+    {
+      "box": {
+        "height": 0.14,
+        "width": 0.64,
+        "x": 0.18,
+        "y": 0.55
+      },
+      "channel": "DIALOGUE",
+      "font": {
+        "minimum_size": 22,
+        "size": 25
+      },
+      "lettering_id": "p01-dialogue",
+      "panel_id": "p01-panel-02",
+      "reading_order": 2,
+      "source_script_hash": "0f4366c192f2df1b1e45d401e8fe48787299b8eb40a9ff518252d27ccc23c629",
+      "speaker_id": "dm-medhas",
+      "text": "The Goddess is eternal. When the sacred account speaks of her appearing, it tells of the forms by which she becomes known for divine purposes."
+    }
+  ],
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "page_id": "page-71e9de766bf786cb9499a31b",
+  "page_number": 1,
+  "page_script_hash": "f5767c345c8bd76643b3d86a2e823fb5ced8e8460fb0440ace884b89e3c434ef",
+  "page_title": "THE TALE OPENS",
+  "panels": [
+    {
+      "asset": {
+        "approval": {
+          "review_path": "books/DM02/visual-proof-reviews/p01-panel-01/v0001.json",
+          "status": "FIX",
+          "subject_hash": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27"
+        },
+        "path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+        "sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+        "usage": "PRIVATE_INTERNAL_DIAGNOSTIC"
+      },
+      "crop": {
+        "crop_intent": "Wide landscape crop retaining all three figures, the low fire and their spatial relationship.",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.65
+        },
+        "mode": "COVER",
+        "zoom": 1.0
+      },
+      "diagnostic_beat": "Establish Medhas, Suratha and Samadhi in the locked listening triangle across the low fire.",
+      "panel_id": "p01-panel-01",
+      "reading_order": 1,
+      "speaker_anchors": []
+    },
+    {
+      "asset": {
+        "approval": {
+          "review_path": "books/DM02/visual-proof-reviews/p01-panel-01/v0001.json",
+          "status": "FIX",
+          "subject_hash": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27"
+        },
+        "path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+        "sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+        "usage": "PRIVATE_INTERNAL_DIAGNOSTIC"
+      },
+      "crop": {
+        "crop_intent": "Medhas-centered speaking crop retaining both listeners at the lateral edges and leaving sky behind the dialogue balloon.",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.49
+        },
+        "mode": "COVER",
+        "zoom": 1.12
+      },
+      "diagnostic_beat": "Use a distinct crop of the same locked moment to test Medhas's exact speaker-attributed dialogue without altering pixels.",
+      "panel_id": "p01-panel-02",
+      "reading_order": 2,
+      "speaker_anchors": [
+        {
+          "speaker_id": "dm-medhas",
+          "target_feature": "Medhas speaking face",
+          "x": 0.5,
+          "y": 0.76
+        }
+      ]
+    }
+  ],
+  "preview_authority": {
+    "basis": "Explicit user request in the current Codex thread",
+    "image_generation_authorized": false,
+    "paid_provider_calls_authorized": false,
+    "publication_authorized": false,
+    "scope": "ONE_LOCAL_DM02_EXISTING_ART_REUSE_PREVIEW"
+  },
+  "private_preview": true,
+  "publication_eligible": false,
+  "reading_order": 1,
+  "reference_comparison": [
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "role": "PRESENTATION_REFERENCE_ONLY",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "role": "COMIC_PAGE_RHYTHM_REFERENCE_ONLY",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+    }
+  ],
+  "renderer_source_sha256": "d3e86e8a4fbb181c57f06d2f8e5cafc21365c345a33bfd2179b6412b8ec420ad",
+  "required_lettering_ids": [
+    "p01-narration",
+    "p01-dialogue"
+  ],
+  "resolved_font": {
+    "bold": "/System/Library/Fonts/Supplemental/STIXGeneralBol.otf",
+    "bold_sha256": "7e4dfb4979e9bb79a0bdedc56f055eab615fb9a3dff8788a52992ae65e8f572d",
+    "classification": "serif",
+    "family": "STIXGeneral",
+    "font_binary_bundled_in_repository": false,
+    "legal_installation": "Install the STIX Fonts project from its official distribution, then update paths if the operating system stores it elsewhere. Confirm the specific distribution's license before publication.",
+    "license_evidence": "The installed font metadata identifies the STIX license, derived from the SIL Open Font License. The renderer records hashes but does not copy these system files into the repository.",
+    "license_status": "SYSTEM_FONT_LICENSE_REVIEWED_NOT_REDISTRIBUTED",
+    "regular": "/System/Library/Fonts/Supplemental/STIXGeneral.otf",
+    "regular_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7"
+  },
+  "resolved_lettering": [
+    {
+      "box": [
+        71,
+        174,
+        462,
+        275
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p01-narration",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "rendered_font_size": 22,
+      "requested_font_size": 25,
+      "source_script_hash": "5ccc0d412c7d9fd9ed6138e21f941e83bf865bbe331dd6f36fa7a85dfb275d80",
+      "text_sha256": "6148ea1de547c349dccf85ff665c52b6d2db7b1b83e78a39615feeeaff6142b3"
+    },
+    {
+      "box": [
+        195,
+        796,
+        891,
+        999
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p01-dialogue",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "rendered_font_size": 25,
+      "requested_font_size": 25,
+      "source_script_hash": "0f4366c192f2df1b1e45d401e8fe48787299b8eb40a9ff518252d27ccc23c629",
+      "text_sha256": "6541fee5970824fb8f5980ce621cf03c6699ea13d65727157b351ff22be3a40e"
+    }
+  ],
+  "resolved_panels": [
+    {
+      "asset_path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+      "asset_sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+      "box": [
+        49,
+        152,
+        1037,
+        733
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.65
+      },
+      "panel_id": "p01-panel-01",
+      "scale_mode": "ASPECT_PRESERVING_COVER",
+      "semantic_crop_review": "PENDING_IMAGE_CAPABLE_REVIEW",
+      "source_crop": [
+        0,
+        624,
+        1086,
+        1258
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "zoom": 1.0
+    },
+    {
+      "asset_path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+      "asset_sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+      "box": [
+        49,
+        759,
+        1037,
+        1339
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.49
+      },
+      "panel_id": "p01-panel-02",
+      "scale_mode": "ASPECT_PRESERVING_COVER",
+      "semantic_crop_review": "PENDING_IMAGE_CAPABLE_REVIEW",
+      "source_crop": [
+        58,
+        427,
+        1028,
+        992
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "zoom": 1.12
+    }
+  ],
+  "schema_version": "1.0",
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "storyboard_conformance": {
+    "reason": "The reviewed p01-panel-01 raster truthfully supplies the locked wide listening triangle and also supports a distinct Medhas-centered crop for testing the exact p01-panel-02 dialogue, but the crop is not a replacement approval for a separately illustrated second master.",
+    "status": "PARTIAL_DIAGNOSTIC_NOT_ARTWORK_COMPLETE"
+  },
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "typography": {
+    "body_size": 25,
+    "family": "STIXGeneral",
+    "title_size": 30
+  }
+}

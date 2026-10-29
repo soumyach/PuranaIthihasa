@@ -1,0 +1,30 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/manuscript.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "audience": {"type": "string"},
+    "beats": {"items": {"type": "object"}, "minItems": 1, "type": "array"},
+    "chapters": {"items": {"type": "object"}, "minItems": 1, "type": "array"},
+    "book_id": {"type": "string"},
+    "claim_map": {"items": {"type": "object"}, "type": "array"},
+    "context": {"type": "string"},
+    "creator": {"type": "object"},
+    "dialogue": {"items": {"type": "object"}, "type": "array"},
+    "ending": {"type": "string"},
+    "ending_before_next_book_hook": {"type": "boolean"},
+    "complete_narrative": {"const": true, "type": "boolean"},
+    "event_coverage": {"items": {"type": "object"}, "minItems": 1, "type": "array"},
+    "opening": {"type": "string"},
+    "source_packet_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "source_packet_hashes": {"items": {"pattern": "^[0-9a-f]{64}$", "type": "string"}, "minItems": 1, "type": "array"},
+    "source_clearance_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "source_note": {"type": "string"},
+    "source_classification": {"enum": ["MULA", "SAMPRADAYA", "DRISHTI", "KALPANA"], "type": "string"},
+    "title": {"type": "string"},
+    "version": {"minimum": 1, "type": "integer"}
+  },
+  "required": ["book_id", "version", "title", "audience", "opening", "context", "chapters", "beats", "ending", "ending_before_next_book_hook", "complete_narrative", "source_classification", "source_packet_hashes", "source_clearance_hash", "source_note", "event_coverage", "claim_map", "dialogue", "creator"],
+  "title": "Versioned manuscript",
+  "type": "object"
+}

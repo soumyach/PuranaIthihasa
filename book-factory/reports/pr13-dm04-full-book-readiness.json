@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "milestone": "PR13",
+  "book_id": "DM04",
+  "assessment": "NOT_READY_FOR_FULL_BOOK_VISUAL_PRODUCTION",
+  "observed_facts": {
+    "locked_storyboard_pages": 32,
+    "locked_storyboard_panel_slots": 67,
+    "pages_with_any_existing_source_art": 7,
+    "pages_with_no_existing_source_art": 25,
+    "pages_with_usable_private_preview_art": 1,
+    "usable_page_ids": ["page-27d143ae995bf60742b65c5b"],
+    "usable_scope": "PRIVATE_DIAGNOSTIC_PREVIEW_ONLY",
+    "publication_ready_pages": 0,
+    "pages_with_existing_art_but_blocking_source_or_iconography_findings": 6,
+    "blocked_existing_art_page_numbers": [4, 13, 14, 17, 23, 29],
+    "pages_currently_requiring_only_lettering_or_layout_work_for_private_preview": 1,
+    "layout_only_page_numbers": [1],
+    "pages_with_existing_exact-panel_art_likely_recoverable_by_local_image_edit": 3,
+    "local_edit_page_numbers": [13, 14, 23],
+    "pages_whose_existing_art_requires_replacement_new_generation": 3,
+    "replacement_page_numbers": [4, 17, 29],
+    "pr13_new_image_operations": 0,
+    "pr13_image_edits": 0,
+    "pr13_source_image_hashes_changed": 0,
+    "pr12_image_operation_ceiling": 5,
+    "pr12_image_operations_executed": 5,
+    "pr12_remaining_image_operations": 0,
+    "pr12_counter_reset": false,
+    "pr6_counter_reset": false,
+    "publication_eligible": false
+  },
+  "conservative_estimates": {
+    "pages_requiring_at_least_one_new_illustration": 28,
+    "derivation_pages": "25 pages have no art; pages 4, 17 and 29 have only unusable proof/production art and require replacement generation.",
+    "remaining_panel_assets_after_page_1": 65,
+    "panel_assets_likely_recoverable_by_local_image_edit": 4,
+    "local_edit_panel_ids": ["p13-panel-01", "p13-panel-02", "p14-panel-01", "p23-panel-01"],
+    "new_panel_images_likely_required": 61,
+    "derivation_panels": "57 panel slots belong to the 25 pages with no art; page 4 needs 1 replacement, page 17 needs 2 replacements, and page 29 needs 1 replacement.",
+    "minimum_remaining_image_operations_if_each_locked_panel_gets_one_distinct_asset": 65,
+    "estimate_limitations": [
+      "The four local-edit candidates may prove unrecoverable after source/iconography review, in which case new-generation count rises by up to four.",
+      "No multi-panel reuse is assumed because each storyboard panel encodes a distinct viewpoint or action.",
+      "No allowance or USD estimate per operation is exposed."
+    ]
+  },
+  "unresolved_source_and_iconography_pages": [
+    {
+      "page_number": 4,
+      "issues": ["donor-to-body mapping not auditable", "donor identities not certifiable", "unsourced halo disks", "fantasy celestial architecture"]
+    },
+    {
+      "page_number": 13,
+      "issues": ["unsourced force-field action", "unsourced halo", "missing exhalation", "cross-panel sacred silhouette drift", "source-unbound palace"]
+    },
+    {
+      "page_number": 14,
+      "issues": ["unsourced shields and mace/club forms", "bell effect lacks visible sourced bell", "unsourced halo"]
+    },
+    {
+      "page_number": 17,
+      "issues": ["counter-arrow action missing", "bow/banner consequences unresolved", "many-armed identity lost"]
+    },
+    {
+      "page_number": 23,
+      "issues": ["ordinary two-arm silhouette", "unsourced halo", "continuity drift from breath-born army page"]
+    },
+    {
+      "page_number": 29,
+      "issues": ["decisive action mechanism unresolved", "neck pin unclear", "gods omitted", "family-reading limit exceeded in latest proof"]
+    }
+  ],
+  "director_readiness": {
+    "verdict": "PARTIALLY_AUTONOMOUS_NOT_END_TO_END",
+    "can_manage": [
+      "locked page and panel selection",
+      "hash-bound request and reference preparation",
+      "approval and operation-budget checks",
+      "receipt import and immutable provenance",
+      "no-retry enforcement",
+      "deterministic page composition and validation",
+      "private diagnostic PDF gates after an independent page PASS"
+    ],
+    "cannot_manage_without_external_or_human_boundary": [
+      "repository-native execution of the built-in host image tool",
+      "positive verification of per-operation incremental USD cost",
+      "expert religious-iconography resolution",
+      "semantic acceptance without an independent actual-pixel reviewer",
+      "publication approval",
+      "continued image work after an exhausted or absent campaign authorization"
+    ],
+    "blocking_scale_issue": "A 65-operation conservative remainder is incompatible with the current no-retry, host-handoff workflow until first-pass identity and source-action fidelity materially improve."
+  },
+  "visual_qa_assessment": {
+    "verdict": "GENUINE_FAILURES_NOT_EXCESSIVE_FALSE_REJECTION",
+    "evidence": [
+      "Every PR12 image FIX finding is visible in the pixels and tied to a locked action, identity, iconography, continuity or lettering requirement.",
+      "The reviewer accepted the corrected Page 1 composition even though its underlying images retain FIX, showing that page-level QA distinguishes a safe deterministic layout repair from image promotion.",
+      "The PR13 Page 1 review passed all 12 requested dimensions and preserved advisory presentation gaps instead of escalating them as blockers.",
+      "No reviewed source image with a complete locked action and clean identity/iconography record was rejected solely for stylistic preference."
+    ],
+    "false_rejection_rate": "NOT_QUANTIFIABLE_FROM_CURRENT_SMALL_SAMPLE",
+    "recommendation": "Retain actual-pixel independent review; improve character/setting reference assets and prompt contracts rather than weakening the gate."
+  },
+  "next_run_recommendation": {
+    "scope": "SEPARATE_FIVE_OPERATION_PAGES_2_AND_3_CAMPAIGN_ONLY",
+    "preconditions": [
+      "fresh exact-hash authorization",
+      "included-allowance and cost preflight",
+      "approved DM04 character and location reference pixels for Brahmā, Śiva, Viṣṇu, Indra, the assembled gods, displaced-heaven and gods-gathering",
+      "one operation per locked panel and no automatic retry",
+      "independent actual-pixel review after each image",
+      "stop if any tool requests purchased credits, paid billing or external-provider authorization"
+    ],
+    "do_not_begin_full_book": true
+  }
+}

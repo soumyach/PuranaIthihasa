@@ -1,0 +1,113 @@
+{
+  "book_id": "DM04",
+  "content_hash": "d57f98b7597b9dadf5e118e77516bb7e57340da0f4e47a8bd3f1639776b00575",
+  "id": "autonomous-pilot-visual-reviews/page-54d61ef5bfcb1159088ac489--p23-panel-01-39a3e7f31a6b01e47dd8087d",
+  "kind": "autonomous-pilot-visual-reviews/page-54d61ef5bfcb1159088ac489--p23-panel-01",
+  "parent_hash": null,
+  "payload": {
+    "assessments": [
+      {
+        "dimension": "SOURCE_FIDELITY",
+        "evidence": "A massive dark-umber buffalo form surges from the near foreground with muzzle, hooves, tail and horns visibly scattering ivory-gold troops. No human, lion or elephant antagonist form is present, and Devi with her distinct tawny dark-maned lion holds the upper line.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "RELIGIOUS_ICONOGRAPHY",
+        "evidence": "Devi has the approved palette, crown and one sourced spear/trident-like implement, but she is depicted with exactly two ordinary arms and no implied many-arm field. The character bible requires the same many-armed identity on non-event-012 pages, and a small sunburst disk behind her crown also conflicts with the prohibition on unsourced halo symbolism.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "CULTURAL_AUTHENTICITY",
+        "evidence": "Devi and the breath-born troops use coherent classical Indian garments, crowns and jewelry; the battlefield remains free of modern objects, Western armor, Greco-Roman helmets, invented standards and unrelated architecture.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "CHARACTER_CONTINUITY",
+        "evidence": "Relative to page 14, Devi changes from an explicit eight-arm, pink-white-garlanded manifestation to an ungarlanded two-arm figure, and the breath-born army changes from mostly moustached male soldiers with blue-gold accents to mostly long-haired, crowned white-gold figures. The lion's tawny coat and dark mane remain consistent.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "NARRATIVE_CLARITY",
+        "evidence": "The vertical reversal is immediate at both scales: the buffalo drives upward through scattered troops while Devi and her lion remain visibly unbroken on the ridge above. The exclusive buffalo antagonist form cannot be mistaken for Devi's lion.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "ARTISTIC_QUALITY",
+        "evidence": "The 1086x1448 render has excellent foreground scale, storm-light control and depth. Buffalo anatomy, horn placement, Devi's face and hands, lion anatomy and falling troops remain coherent, with no decisive fusion, extra limb or raster defect.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "LETTERING_READABILITY",
+        "evidence": "No raster text or watermark is present, but the locked upper safe area and prompt's upper-left lettering zone are occupied by Devi's raised arm and spear, crown, hair, storm clouds and bright lightning break. A plaque would cover sacred/action pixels or lose contrast.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "COMPOSITION",
+        "evidence": "The buffalo dominates the near field without obscuring the scattered troops, while the elevated opposing line preserves a clear top-to-bottom confrontation. The tail, horns and diagonal debris reinforce the surge, and the ridge provides a stable separator.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "REFERENCE_ALIGNMENT",
+        "evidence": "The output follows Reference A's sacred focal hierarchy and Reference B's immersive climax depth and before/after force. It avoids DM08 characters, skulls, blood, flags, copied armor, weapons and theology.",
+        "result": "PASS"
+      }
+    ],
+    "book_id": "DM04",
+    "campaign_subject_hash": "fd9864465aebf8e0c121f72ce8a4249d08af372a48829ab926b0a223e6956b21",
+    "correction_instructions": [
+      "For a future separately authorized correction only, preserve the exact buffalo surge, lion distinction and troop scattering while restoring Devi's readable many-armed identity and removing the halo disk.",
+      "Carry the page-14 breath-born troop costume and gender presentation forward, and reserve a genuinely low-detail upper-left narration zone clear of spear, arm and lightning.",
+      "Do not retry automatically."
+    ],
+    "findings": [
+      {
+        "dimension": "RELIGIOUS_ICONOGRAPHY",
+        "discrepancy": "Devi is reduced to an ordinary two-arm silhouette and given an unsourced halo.",
+        "evidence": "Only two arms are visible or implied at original resolution, with no rear arm field; a small radiating disk is centered directly behind the crown.",
+        "page_id": "page-54d61ef5bfcb1159088ac489",
+        "repair_type": "ICONOGRAPHY_AND_ARM_COUNT_REPAIR"
+      },
+      {
+        "dimension": "CHARACTER_CONTINUITY",
+        "discrepancy": "Devi and the breath-born troop design changes materially from the preceding page.",
+        "evidence": "Page 14 shows an eight-arm, garlanded Devi and predominantly moustached male troops with blue-gold accents; page 23 shows a two-arm ungarlanded Devi and predominantly long-haired crowned troops in near-uniform white-gold.",
+        "page_id": "page-54d61ef5bfcb1159088ac489",
+        "repair_type": "CHARACTER_AND_ARMY_CONTINUITY_REPAIR"
+      },
+      {
+        "dimension": "LETTERING_READABILITY",
+        "discrepancy": "The requested upper-left narration-safe area is occupied by focal action.",
+        "evidence": "Devi's spear and raised arm cross the upper-left while crown, hair, clouds and the brightest sky break occupy the remainder of the locked top region.",
+        "page_id": "page-54d61ef5bfcb1159088ac489",
+        "repair_type": "LETTERING_REGION_REPAIR"
+      }
+    ],
+    "generation_retry_authorized": false,
+    "image_path": "books/DM04/autonomous-pilot/images/page-54d61ef5bfcb1159088ac489--p23-panel-01/v0001.png",
+    "image_sha256": "6d41a3604423dfab3e1f31e6fc00c034fa40325173fbfcf26e70826548891e07",
+    "independent_actual_pixel_review": true,
+    "milestone": "PR12",
+    "page_id": "page-54d61ef5bfcb1159088ac489",
+    "panel_id": "p23-panel-01",
+    "preview_eligible": false,
+    "publication_eligible": false,
+    "request_hash": "0e67e232b3ed67587d40a9285779321c01a61805921d689dc4a84e0da5cf408a",
+    "request_record_hash": "aa3406f087e3b936999eb358e46775ac29107c5225514fa36e9d94951500957f",
+    "result": "FIX",
+    "review_hash": "c276a5a46921ab8e8e28c12fa24acaf673ef6298b76756eceac125c685803d67",
+    "reviewed_at": "2026-10-21T16:38:56Z",
+    "reviewer": {
+      "id": "/root/pr12_visual_reviewer",
+      "image_capable": true,
+      "inspected_actual_pixels": true,
+      "produced_image": false,
+      "producer_independence": "Independent of codex-root-image-producer-pr12",
+      "reading_size": "ACTUAL_READING_SIZE",
+      "role": "INDEPENDENT_ACTUAL_PIXEL_VISUAL_REVIEWER"
+    },
+    "schema_version": "1.0",
+    "unit_id": "page-54d61ef5bfcb1159088ac489--p23-panel-01"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

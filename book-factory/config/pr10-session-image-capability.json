@@ -1,0 +1,19 @@
+{
+  "current_session_availability": "AVAILABLE_TO_ACTIVE_CODEX_HOST_ONLY",
+  "direct_monetary_cost": "NO_DIRECT_PRICE_EXPOSED_TO_REPOSITORY",
+  "host_tool": "image_gen.imagegen",
+  "inspection_method": "HOST_TOOL_INTERFACE_SCHEMA",
+  "model": "NOT_SURFACED_BY_HOST_TOOL",
+  "operations": [
+    "generate",
+    "edit",
+    "reference_conditioning"
+  ],
+  "provider_id": "codex-built-in-image-gen",
+  "reference_conditioning": true,
+  "reference_input_interface": "referenced_image_paths",
+  "repository_programmatic_invocation": false,
+  "schema_version": "1.0",
+  "scope": "PR10_ACTIVE_CODEX_SESSION_RECHECK",
+  "usage_limit_visibility": "NOT_SURFACED_TO_REPOSITORY"
+}

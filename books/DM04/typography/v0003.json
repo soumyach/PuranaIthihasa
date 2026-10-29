@@ -1,0 +1,129 @@
+{
+  "book_id": "DM04",
+  "content_hash": "605f269acb50053132a7a313374456ad707c48c2c4dde0b31c075cabfae7b835",
+  "id": "typography-525d93f4371420b1cddefed3",
+  "kind": "typography",
+  "parent_hash": "8a92faa18116042d142b67823bc5b4b1644ac92f86716e3828c9258f60d02b87",
+  "payload": {
+    "book_id": "DM04",
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "editable_text_separate": true,
+    "font_candidates": [
+      {
+        "bundled": false,
+        "inspection_basis": "SYSTEM_INSTALLED_REFERENCE_ONLY",
+        "licensing_status": "NOT_VERIFIED_FOR_BUNDLING",
+        "name": "New York",
+        "path": "/System/Library/Fonts/NewYork.ttf"
+      },
+      {
+        "bundled": false,
+        "inspection_basis": "SYSTEM_INSTALLED_REFERENCE_ONLY",
+        "licensing_status": "NOT_VERIFIED_FOR_BUNDLING",
+        "name": "Georgia",
+        "path": "/System/Library/Fonts/Supplemental/Georgia.ttf"
+      },
+      {
+        "bundled": false,
+        "inspection_basis": "SYSTEM_INSTALLED_REFERENCE_ONLY",
+        "licensing_status": "NOT_VERIFIED_FOR_BUNDLING",
+        "name": "Charter",
+        "path": "/System/Library/Fonts/Supplemental/Charter.ttc"
+      }
+    ],
+    "lettering_rules": [
+      "All text remains editable and separate from artwork.",
+      "No AI-rendered lettering.",
+      "Preserve safe regions and minimum contrast."
+    ],
+    "manuscript_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+    "ornamental_frames": {
+      "art_safe_inset_ratio": 0.05,
+      "highlight_color": "#F0CF76",
+      "outer_color": "#D8AC4E",
+      "style": "navy field with restrained antique-gold rule and bright-gold highlight"
+    },
+    "page_numbering": {
+      "color": "#D8AC4E",
+      "editable": true,
+      "enabled": true,
+      "placement": "outer-bottom",
+      "start_on": 1
+    },
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "print_readiness": {
+      "bleed": null,
+      "claim": "NOT_PRINT_READY",
+      "export_profile": null,
+      "reason": "Trim, bleed, export profile and font redistribution choices are outside PR5 and unresolved.",
+      "trim": null
+    },
+    "schema_version": "1.0",
+    "text_channels": {
+      "DIALOGUE": {
+        "background": "#FFF9EF",
+        "color": "#251C18",
+        "family_candidate": "Georgia",
+        "geometry": {
+          "padding_px": 22,
+          "shape": "rounded balloon",
+          "tail": "speaker-anchored"
+        },
+        "role": "speech balloons"
+      },
+      "INSET_EXPLANATION": {
+        "background": "#F0CF76",
+        "color": "#071F35",
+        "family_candidate": "Charter",
+        "geometry": {
+          "corner_radius_px": 8,
+          "padding_px": 20,
+          "shape": "gold-edged inset"
+        },
+        "role": "clearly labeled editorial/source inset"
+      },
+      "NARRATION": {
+        "background": "#FFF9EF",
+        "color": "#251C18",
+        "family_candidate": "New York or Charter",
+        "geometry": {
+          "corner_radius_px": 18,
+          "padding_px": 24,
+          "shape": "rectangular plaque"
+        },
+        "role": "narrative captions"
+      },
+      "THOUGHT": {
+        "background": "#F6E8C6",
+        "color": "#071F35",
+        "family_candidate": "Georgia Italic",
+        "geometry": {
+          "padding_px": 22,
+          "shape": "cloud balloon",
+          "tail": "bubble chain"
+        },
+        "role": "attributed thought balloons"
+      }
+    },
+    "text_safe_area": {
+      "gutter_ratio": 0.035,
+      "minimum_balloon_padding_px": 22,
+      "outer_margin_ratio": 0.07
+    },
+    "version": 3
+  },
+  "schema_version": "1.0",
+  "version": 3
+}

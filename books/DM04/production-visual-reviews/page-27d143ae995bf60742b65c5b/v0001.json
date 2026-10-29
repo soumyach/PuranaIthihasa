@@ -1,0 +1,108 @@
+{
+  "book_id": "DM04",
+  "content_hash": "b0f1761a495d94ec01f991d248332a20cba20093bce509ce5a0bd66f0a02af22",
+  "id": "production-visual-reviews/page-27d143ae995bf60742b65c5b-02406fdf020df835576229ac",
+  "kind": "production-visual-reviews/page-27d143ae995bf60742b65c5b",
+  "parent_hash": null,
+  "payload": {
+    "assessments": [
+      {
+        "dimension": "SOURCE_FIDELITY",
+        "evidence": "The original pixels show exactly Medhas, Suratha and Samadhi seated around a low hermitage fire at dusk. Medhas raises an open right hand and is visibly the speaker; both listeners turn toward him, and no weapon or unrelated action is present.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "RELIGIOUS_ICONOGRAPHY",
+        "evidence": "The sage is depicted with restrained beads and bark-and-ivory clothing; no deity, invented halo, miracle sign, weapon or merged sacred identity appears.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "CULTURAL_AUTHENTICITY",
+        "evidence": "Indian clothing, floor-seated posture, low fire, thatched shelter, vessels and manuscript stack form a coherent hermitage setting without modern or Western-fantasy objects.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "CHARACTER_CONTINUITY",
+        "evidence": "Compared with the inspected edit source, the three identities remain stable: Medhas retains his white topknot, long beard and bark-and-ivory dress; Suratha retains the blue-and-gold royal profile; Samadhi retains plain earth-toned garments and a bearded listener profile. All three remain unarmed, and no extra character or identity merger is visible.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "NARRATIVE_CLARITY",
+        "evidence": "Medhas's open palm, direct gaze and mouth pose establish him as the questioner, while the two inward-facing listeners read immediately as attentive rather than active speakers.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "ARTISTIC_QUALITY",
+        "evidence": "The 1086 by 1448 render is crisp and cohesive, with controlled dusk-to-firelight color, stable facial features, readable fabric detail and no decisive malformed hand, limb or facial anatomy at original resolution.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "LETTERING_READABILITY",
+        "evidence": "No raster text, pseudo-lettering, logo, signature or watermark is present. The required normalized top safe rectangle is not protected end to end: the large left trunk, overhead branches and leaves, and right-side foliage and hut roof cross the x=0.07..0.93, y=0.05..0.25 area. The area nearest Medhas that would carry his dialogue balloon contains foliage, hut structure and his raised hand, so the exact speaker-anchored balloon geometry cannot be added without covering story detail.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "COMPOSITION",
+        "evidence": "The render is one continuous full-bleed scene, but the locked page and generation request require a two-panel clean-art sheet with separately reviewable wide and intimate moments. There is no panel separation and no second over-shoulder close moment, so the page-level reading order cannot be assembled from this asset alone.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "REFERENCE_ALIGNMENT",
+        "evidence": "The output adopts the PR7 references' navy, gold, cream and warm-earth finish, speaker-listener gaze rhythm and layered forest depth. It does not transfer the references' Vishnu, Goddess, lion, palace dialogue, sages, borders, lettering or plot content.",
+        "result": "PASS"
+      }
+    ],
+    "book_id": "DM04",
+    "campaign_subject_hash": "5a5b7c2a606f47a9b72ef001f19ef9c8736f4b328d2434dae08c5d0b08c061d7",
+    "correction_instructions": [
+      "For a future authorized correction only, preserve the current three identities, dusk firelight and weapon-free interaction but render the requested two-panel clean-art sheet: panel 1 wide eye-level and panel 2 intimate over-shoulder.",
+      "Keep the full normalized top safe rectangle clear in each panel and reserve a low-detail speaker-anchored region near Medhas for the exact dialogue balloon without covering his hand or face.",
+      "Do not retry under the current campaign authorization."
+    ],
+    "findings": [
+      {
+        "code": "PAGE01_SINGLE_SCENE_NOT_TWO_PANEL_UNIT",
+        "dimension": "COMPOSITION",
+        "discrepancy": "The output is a single full-bleed scene instead of the required two-panel clean-art sheet.",
+        "evidence": "Original-resolution pixels contain no panel boundary and no separate wide and over-shoulder moments, although both are required by the locked page script.",
+        "message": "The image is excellent single-scene art but does not satisfy the locked two-panel production unit or provide independently reviewable panel regions.",
+        "page_id": "page-27d143ae995bf60742b65c5b",
+        "repair_type": "PAGE_RECOMPOSITION",
+        "severity": "BLOCKING"
+      },
+      {
+        "code": "PAGE01_LETTERING_SAFE_REGIONS_NOT_PROTECTED",
+        "dimension": "LETTERING_READABILITY",
+        "discrepancy": "The narration and speaker-anchored dialogue safe regions are not protected.",
+        "evidence": "Tree trunk, canopy, foliage and hut roof cross the locked upper safe rectangle, while foliage, structure and Medhas's raised hand occupy the intended dialogue area.",
+        "message": "Dense branches and architecture occupy the required narration and Medhas-dialogue regions; editable lettering cannot be placed without covering story pixels.",
+        "page_id": "page-27d143ae995bf60742b65c5b",
+        "repair_type": "LETTERING_REGION_REPAIR",
+        "severity": "BLOCKING"
+      }
+    ],
+    "image_path": "books/DM04/production-pilot/images/page-27d143ae995bf60742b65c5b/v0001.png",
+    "image_sha256": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+    "independent_actual_pixel_review": true,
+    "milestone": "PR11",
+    "page_id": "page-27d143ae995bf60742b65c5b",
+    "preview_eligible": false,
+    "publication_eligible": false,
+    "request_hash": "7a04342a41026798ac8165592961d5cc8107543783154a5b291bcc59611a2784",
+    "request_record_hash": "1e470f5053023e07a7b86df25a4324bda5c716f8ab98a631c8e1b2d8a02cfe2e",
+    "result": "FIX",
+    "review_hash": "29605df38b5d27ed16cadde25db723731b5ae1f07c28ed9c863a9dee54fca7c4",
+    "reviewed_at": "2026-10-20T12:28:43Z",
+    "reviewer": {
+      "id": "/root/pr11_visual_reviewer",
+      "image_capable": true,
+      "inspected_actual_pixels": true,
+      "produced_image": false,
+      "reading_size": "ACTUAL_READING_SIZE",
+      "role": "INDEPENDENT_ACTUAL_PIXEL_VISUAL_REVIEWER"
+    },
+    "schema_version": "1.0"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

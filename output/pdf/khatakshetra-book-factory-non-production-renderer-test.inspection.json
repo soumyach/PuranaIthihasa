@@ -1,0 +1,82 @@
+{
+  "digital_reader_profile": "ONE_NATIVE_1086_X_1448_RASTER_PER_PAGE_NO_PRINT_CLAIM",
+  "engine_version": "0.8.0",
+  "findings": [],
+  "page_count": 4,
+  "page_order": [
+    "dm04-renderer-fixture-page-01",
+    "dm04-renderer-fixture-page-02",
+    "dm04-renderer-fixture-page-03",
+    "dm04-renderer-fixture-page-04"
+  ],
+  "pages": [
+    {
+      "height": 1448.0,
+      "images": [
+        {
+          "dimensions": [
+            1086,
+            1448
+          ],
+          "name": "FormXob.4da8f68cf81df5dcdec7c949fa051eb3.png",
+          "pixel_sha256": "34efa829cd0880878478b584afd659824da96d2337634b276f4f90e376d962a8"
+        }
+      ],
+      "orientation": "PORTRAIT",
+      "page_number": 1,
+      "width": 1086.0
+    },
+    {
+      "height": 1448.0,
+      "images": [
+        {
+          "dimensions": [
+            1086,
+            1448
+          ],
+          "name": "FormXob.7dc1e042847b992c9e79a5d48a64f685.png",
+          "pixel_sha256": "6953e8748019a48acdcef588d18d846eda14446fab123c3ccc1edf08a96da766"
+        }
+      ],
+      "orientation": "PORTRAIT",
+      "page_number": 2,
+      "width": 1086.0
+    },
+    {
+      "height": 1448.0,
+      "images": [
+        {
+          "dimensions": [
+            1086,
+            1448
+          ],
+          "name": "FormXob.279f0c848af5ccf1be894c98376b8ff0.png",
+          "pixel_sha256": "ab5e7662eda2693451bb11a5ba61814f51a721d689eaf35b4372cf3e3bbcfa84"
+        }
+      ],
+      "orientation": "PORTRAIT",
+      "page_number": 3,
+      "width": 1086.0
+    },
+    {
+      "height": 1448.0,
+      "images": [
+        {
+          "dimensions": [
+            1086,
+            1448
+          ],
+          "name": "FormXob.b2238452abffa1d53ceb86bc9e2287c0.png",
+          "pixel_sha256": "5ba0db6f8052df8e4306dfa238696d9746531ebf13b91fa61ad8256ea4caebc5"
+        }
+      ],
+      "orientation": "PORTRAIT",
+      "page_number": 4,
+      "width": 1086.0
+    }
+  ],
+  "pdf_path": "output/pdf/khatakshetra-book-factory-non-production-renderer-test.pdf",
+  "pdf_sha256": "7b6202b860a45a8c7e5bd151498a3095836e79012dd5183c239edeff7d145417",
+  "result": "PASS",
+  "schema_version": "1.0"
+}

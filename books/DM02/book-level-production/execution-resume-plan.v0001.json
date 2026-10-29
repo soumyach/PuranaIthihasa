@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "campaign_id": "dm02-book-level-private-production-v0001",
+  "authorization_subject_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+  "state": "AWAITING_CAMPAIGN_AUTHORIZATION",
+  "default_internal_batch_size": 4,
+  "priority": [
+    {"order": 1, "work": ["p01-panel-02 targeted edit", "p02-panel-01 targeted edit"], "outcome": "Complete partially finished Pages 1 and 2 first."},
+    {"order": 2, "work": ["p14-panel-02", "p14-panel-03"], "outcome": "Complete Page 14 around the preserved reviewed master."},
+    {"order": 3, "work": ["remaining eligible new masters in storyboard order"], "outcome": "Complete the story without skipping narrative actions."},
+    {"order": 4, "work": ["derived crops and reframes"], "outcome": "Use reviewed masters before any conditional fallback generation."},
+    {"order": 5, "work": ["Pages 23 and 24 deterministic back matter"], "outcome": "Compose without image operations after minimal assetless composer support."}
+  ],
+  "per_operation_transaction": [
+    "Confirm exact unit membership and unused campaign/per-unit budget.",
+    "Confirm current source/iconography status; Page 11 always fails this check.",
+    "Check the live Codex allowance and stop on any payment, credit or overage request.",
+    "Submit the locked panel action with actual allowed Gold Standard and proposal-only continuity references.",
+    "Persist the immutable output, hash, provider receipt and exact A/B/C/D submitted-reference receipt.",
+    "Obtain independent source and actual-pixel review from a reviewer distinct from the producing operation.",
+    "On PASS, preserve the asset and compose any now-complete page; on repairable FIX, spend at most one review-directed repair within both global and unit ceilings; otherwise escalate.",
+    "Independently inspect every composed page and update the durable checkpoint atomically."
+  ],
+  "durable_state": {
+    "authoritative_inputs": ["campaign-request.v0001.json", "matching authenticated approval record", "immutable operation ledger", "latest per-unit review", "latest allowance observation"],
+    "resume_rule": "Reconstruct state only from durable files and hashes, never from estimated chat memory. Count every attempted provider invocation before deciding remaining budget.",
+    "counter_reset": "FORBIDDEN",
+    "pass_asset_regeneration": "FORBIDDEN",
+    "cross_campaign_budget_borrowing": "FORBIDDEN"
+  },
+  "no_additional_batch_authorization": {
+    "enabled_after_exact_campaign_approval": true,
+    "limits": "Only units, methods, references, source gates, provider and budgets in the exact authorization subject.",
+    "new_authorization_required_for": ["Page 11 after qualified clearance", "any unlisted unit or optional enhancement", "new visual style", "operation ceiling increase", "provider or billing-policy change"]
+  },
+  "pause_conditions": ["unresolved source or religious iconography", "new visual style", "budget exhausted", "payment/credit/overage request", "persistent failure after bounded repair", "provider or execution environment unavailable"],
+  "final_private_pdf_gate": "All required story pages must pass source, image, lettering and composed-page review. Page 11 remains a hard blocker to a complete private PDF until separately cleared, authorized, produced and passed.",
+  "publication_state": "BLOCKED"
+}

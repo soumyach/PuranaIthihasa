@@ -1,0 +1,24 @@
+{
+  "affected_sections": [
+    "beat-008",
+    "beat-023",
+    "ch-01",
+    "ch-08",
+    "ch-09"
+  ],
+  "book_id": "DM04",
+  "bounded_excerpts": [
+    "Their words in this retelling are part of the story's literary frame, not words quoted from scripture.",
+    "In this telling, that is what you have noticed.",
+    "The present story had fully ended: Mahishasura was dead, the hymn had been offered, the boon had been granted and Devi had disappeared."
+  ],
+  "constraint": "Repair only listed findings and affected sections; preserve all approved source choices and unrelated text.",
+  "finding_ids": [
+    "FRAME_META_DISCLOSURES_INTERRUPT_CHARACTER_VOICE",
+    "ENDING_RESOLUTION_RECAP_IS_REDUNDANT"
+  ],
+  "request_hash": "fc20d3cb15ad275ceb4436a421ea9118949b550de804ce91df288925f86f2d80",
+  "review_hash": "051991f1a223430a5600a45bc3ff6165108379008e9f6bfdcaf1463cbff8c1ab",
+  "reviewed_manuscript_hash": "b4256fcb2d4bf24a9c04559f59c3f0985101ef42c6299392b159fba5e41cfdcd",
+  "schema_version": "1.0"
+}

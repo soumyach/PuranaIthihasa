@@ -1,0 +1,390 @@
+{
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"
+    }
+  },
+  "book_id": "DM02",
+  "book_version": "DM02-BOOK-LEVEL-PRODUCTION-PAGE13-V2",
+  "canvas": {
+    "aspect_ratio": "3:4",
+    "height": 1448,
+    "width": 1086
+  },
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "composition_hash": "46a5d321fe296e3ecdc77a38b35adf944632ad32e6a027893119f8358da2dfb6",
+  "composition_repair": {
+    "artwork_hashes_changed": false,
+    "new_pixels_required": false,
+    "parent_version": "v0001",
+    "reason": "INDEPENDENT_REVIEW_DIRECTED_LAYOUT_ONLY_REPAIR"
+  },
+  "engine_version": "0.8.2",
+  "fixture": false,
+  "fixture_mode": false,
+  "font_config_sha256": "ba6cd2c0c4d716aa550059148339642da7fb2f1af1bfaad2e5d6ab838fb1e0aa",
+  "layout_type": "THREE_PANEL",
+  "lettering": [
+    {
+      "badge_number": 1,
+      "box": {
+        "height": 0.14,
+        "width": 0.84,
+        "x": 0.08,
+        "y": 0.115
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 22
+      },
+      "lettering_id": "p13-narration-a",
+      "padding": 12,
+      "panel_id": "p13-panel-01",
+      "reading_order": 1,
+      "source_script_hash": "72611030ea869c006449e5d676fd6158017fd5942c7ea7d41f6642f1595f4327",
+      "speaker_id": "narrator",
+      "text": "Vishnu rose to meet Madhu and Kaitabha.\n\nNo army marched into the waters. No ranks gathered behind him. Vishnu met the two Asuras with his arms, and the combat closed around them.\n\nThe two Asuras turned from the lotus to face him."
+    },
+    {
+      "badge_number": 2,
+      "box": {
+        "height": 0.11,
+        "width": 0.84,
+        "x": 0.08,
+        "y": 0.54
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 22
+      },
+      "lettering_id": "p13-narration-b",
+      "padding": 12,
+      "panel_id": "p13-panel-03",
+      "placement_scope": "PAGE_BAND",
+      "reading_order": 2,
+      "source_script_hash": "d434e35c4bfe2edadab09a7b07c9a3e24a81ff2d838b9f0aeed99ce3d54be4f6",
+      "speaker_id": "narrator",
+      "text": "Brahma’s danger had not vanished; it had become a confrontation. Yoganidra had answered the invocation by withdrawing, appearing before Brahma, and opening the way for Vishnu to wake.\n\nNow the long struggle began."
+    }
+  ],
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "page_id": "page-4adc33689921626f8d0b1f8d",
+  "page_number": 13,
+  "page_script_hash": "4b1cbba433450a349dfb5f830e451d3fb94612827e308f0911f66359e104bfc3",
+  "page_title": "THE CONFRONTATION CLOSES",
+  "panels": [
+    {
+      "asset": {
+        "approval": {
+          "review_path": "books/DM02/book-level-production/reviews/campaign-image-reviews.v0001.json",
+          "review_result": "PASS",
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "aa4758c6df522018629794a33fbf6eeb06a90e4939f5c404118da33c60069b56"
+        },
+        "path": "books/DM02/book-level-production/images/p13-panel-01/v0001.png",
+        "sha256": "aa4758c6df522018629794a33fbf6eeb06a90e4939f5c404118da33c60069b56",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW"
+      },
+      "box": {
+        "height": 0.42,
+        "width": 0.91,
+        "x": 0.045,
+        "y": 0.105
+      },
+      "crop": {
+        "crop_intent": "Preserve the complete reviewed portrait master, including the protected lettering field and all source-critical relationships.",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "mode": "CONTAIN",
+        "zoom": 1.0
+      },
+      "panel_id": "p13-panel-01",
+      "reading_order": 1,
+      "speaker_anchors": []
+    },
+    {
+      "asset": {
+        "approval": {
+          "review_path": "books/DM02/book-level-production/reviews/campaign-image-reviews.v0001.json",
+          "review_result": "PASS",
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "f0f7ac73ffa16d826f9c2bb999174188df10e50f48dd8a676505d30bfe2e0efb"
+        },
+        "path": "books/DM02/book-level-production/images/p13-panel-02/v0001.png",
+        "sha256": "f0f7ac73ffa16d826f9c2bb999174188df10e50f48dd8a676505d30bfe2e0efb",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW"
+      },
+      "box": {
+        "height": 0.26,
+        "width": 0.446,
+        "x": 0.045,
+        "y": 0.665
+      },
+      "crop": {
+        "crop_intent": "Preserve the complete reviewed portrait master, including the protected lettering field and all source-critical relationships.",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "mode": "CONTAIN",
+        "zoom": 1.0
+      },
+      "panel_id": "p13-panel-02",
+      "reading_order": 2,
+      "speaker_anchors": []
+    },
+    {
+      "asset": {
+        "approval": {
+          "review_path": "books/DM02/book-level-production/reviews/campaign-image-reviews.v0001.json",
+          "review_result": "PASS",
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "cd1b7c05130ae71fbfba4fa03c2550174994e9bd42fa2d011a75501e99b264a1"
+        },
+        "path": "books/DM02/book-level-production/images/p13-panel-03/v0001.png",
+        "sha256": "cd1b7c05130ae71fbfba4fa03c2550174994e9bd42fa2d011a75501e99b264a1",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW"
+      },
+      "box": {
+        "height": 0.26,
+        "width": 0.446,
+        "x": 0.509,
+        "y": 0.665
+      },
+      "crop": {
+        "crop_intent": "Preserve the complete reviewed portrait master, including the protected lettering field and all source-critical relationships.",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "mode": "CONTAIN",
+        "zoom": 1.0
+      },
+      "panel_id": "p13-panel-03",
+      "reading_order": 3,
+      "speaker_anchors": []
+    }
+  ],
+  "preview_authority": {
+    "basis": "Exact approval approval-3174e958372faf8a1e6f380f and independent actual-pixel review",
+    "image_generation_authorized": true,
+    "paid_provider_calls_authorized": false,
+    "publication_authorized": false,
+    "scope": "DM02_BOOK_LEVEL_PRIVATE_CAMPAIGN_PASS_REVIEWED_ASSETS"
+  },
+  "private_preview": true,
+  "publication_eligible": false,
+  "reading_order": 13,
+  "reference_comparison": [
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "role": "PRESENTATION_REFERENCE_ONLY",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "role": "COMIC_PAGE_RHYTHM_REFERENCE_ONLY",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+    }
+  ],
+  "renderer_source_sha256": "13fd0f410e7c8928ee2995352a5e31f8b5a239809890964f5d8246b495f6bdb6",
+  "required_lettering_ids": [
+    "p13-narration-a",
+    "p13-narration-b"
+  ],
+  "resolved_font": {
+    "bold": "/System/Library/Fonts/Supplemental/STIXGeneralBol.otf",
+    "bold_sha256": "7e4dfb4979e9bb79a0bdedc56f055eab615fb9a3dff8788a52992ae65e8f572d",
+    "classification": "serif",
+    "family": "STIXGeneral",
+    "font_binary_bundled_in_repository": false,
+    "legal_installation": "Install the STIX Fonts project from its official distribution, then update paths if the operating system stores it elsewhere. Confirm the specific distribution's license before publication.",
+    "license_evidence": "The installed font metadata identifies the STIX license, derived from the SIL Open Font License. The renderer records hashes but does not copy these system files into the repository.",
+    "license_status": "SYSTEM_FONT_LICENSE_REVIEWED_NOT_REDISTRIBUTED",
+    "regular": "/System/Library/Fonts/Supplemental/STIXGeneral.otf",
+    "regular_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7"
+  },
+  "resolved_lettering": [
+    {
+      "box": [
+        87,
+        167,
+        999,
+        369
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p13-narration-a",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 12,
+      "rendered_font_size": 22,
+      "requested_font_size": 22,
+      "source_script_hash": "72611030ea869c006449e5d676fd6158017fd5942c7ea7d41f6642f1595f4327",
+      "text_sha256": "5327dd4a3a924729cfb28280eda95da8e80fad44cfc4fbd0ecc5681d4ca177a6"
+    },
+    {
+      "box": [
+        87,
+        782,
+        999,
+        941
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p13-narration-b",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 12,
+      "rendered_font_size": 22,
+      "requested_font_size": 22,
+      "source_script_hash": "d434e35c4bfe2edadab09a7b07c9a3e24a81ff2d838b9f0aeed99ce3d54be4f6",
+      "text_sha256": "8003e87cf5dbff32d9a61c882fb5e42bed69a9e3c54a342006d50f61dbb93a1d"
+    }
+  ],
+  "resolved_panels": [
+    {
+      "asset_path": "books/DM02/book-level-production/images/p13-panel-01/v0001.png",
+      "asset_sha256": "aa4758c6df522018629794a33fbf6eeb06a90e4939f5c404118da33c60069b56",
+      "box": [
+        49,
+        152,
+        1037,
+        760
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "panel_id": "p13-panel-01",
+      "paste_at": [
+        319,
+        157
+      ],
+      "rendered_size": [
+        448,
+        598
+      ],
+      "scale_mode": "ASPECT_PRESERVING_CONTAIN",
+      "semantic_crop_review": "PENDING_IMAGE_CAPABLE_REVIEW",
+      "source_crop": [
+        0,
+        0,
+        1086,
+        1448
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "zoom": 1.0
+    },
+    {
+      "asset_path": "books/DM02/book-level-production/images/p13-panel-02/v0001.png",
+      "asset_sha256": "f0f7ac73ffa16d826f9c2bb999174188df10e50f48dd8a676505d30bfe2e0efb",
+      "box": [
+        49,
+        963,
+        533,
+        1339
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "panel_id": "p13-panel-02",
+      "paste_at": [
+        154,
+        968
+      ],
+      "rendered_size": [
+        274,
+        366
+      ],
+      "scale_mode": "ASPECT_PRESERVING_CONTAIN",
+      "semantic_crop_review": "PENDING_IMAGE_CAPABLE_REVIEW",
+      "source_crop": [
+        0,
+        0,
+        1086,
+        1448
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "zoom": 1.0
+    },
+    {
+      "asset_path": "books/DM02/book-level-production/images/p13-panel-03/v0001.png",
+      "asset_sha256": "cd1b7c05130ae71fbfba4fa03c2550174994e9bd42fa2d011a75501e99b264a1",
+      "box": [
+        553,
+        963,
+        1037,
+        1339
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "panel_id": "p13-panel-03",
+      "paste_at": [
+        658,
+        968
+      ],
+      "rendered_size": [
+        274,
+        366
+      ],
+      "scale_mode": "ASPECT_PRESERVING_CONTAIN",
+      "semantic_crop_review": "PENDING_IMAGE_CAPABLE_REVIEW",
+      "source_crop": [
+        0,
+        0,
+        1086,
+        1448
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "zoom": 1.0
+    }
+  ],
+  "schema_version": "1.0",
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "storyboard_conformance": {
+    "reason": "All required panel assets passed independent private-use review; lettering is exact from locked storyboard v2.",
+    "status": "PRIVATE_PREVIEW_FROM_PASS_REVIEWED_ASSETS"
+  },
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "typography": {
+    "body_size": 22,
+    "family": "STIXGeneral",
+    "title_size": 30
+  }
+}

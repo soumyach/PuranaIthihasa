@@ -1,0 +1,564 @@
+{
+  "book_id": "DM04",
+  "content_hash": "4fca552229c9be91cabb50c322fd79b31094ca2a4ef86d539a2e18a30f1701c1",
+  "id": "production-slices-012215e66d46c31c71889931",
+  "kind": "production-slices",
+  "parent_hash": "33002b7dc42b0489caa097f48f6bcb26adb28d284c552916039449abc7d8c41f",
+  "payload": {
+    "authorization_subject": {
+      "api_or_external_provider_authorized": false,
+      "book_id": "DM04",
+      "campaign_id": "dm04-pr12-autonomous-multi-page-pilot-01",
+      "currency": "USD",
+      "included_allowance_first": true,
+      "locked_input_sha256": [
+        "0775af9ff8dacfdcbecece946b781e2187574883f148bb9a6327603f1ffdae3f",
+        "08c26eee5a9a2370ccfd673b54181266dd0df66a3960710c971838358e2ea6da",
+        "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070",
+        "3350c42d2463a2d27247ee7debbdbf62f0942af9d546da11399ca5e9c23db447",
+        "5743bcebb6bacdcfaf6e03cbaf2a395a3647a902adf8574e380fe07676e4e36c",
+        "5af228856ef0a6b4d32d1ac5d2cd476f1563040dfa4d25bb2e31155fcf55c3cd",
+        "6439498a4bc9b60090572301f0e78dca685079db1eb4acfc318bfefd4aa77f16",
+        "74e48879d389a64e12af8b3f97f6434018c3afc02c23f92cea65d7fe9b4e3dcb",
+        "7b825487144f63e1ec193085738449967a36990581bc8d462c4c1c647045d180",
+        "94033e951e0b5b716ecf240f486732f4312b1d1fb924746d0cbf4a63415bc296"
+      ],
+      "maximum_paid_spend_minor_units": 0,
+      "operation_ceiling_per_unit": 1,
+      "operation_ceiling_total": 5,
+      "operations": [
+        "edit",
+        "generate",
+        "generate",
+        "generate",
+        "generate"
+      ],
+      "pr11_counter_reset": false,
+      "pr6_counter_reset": false,
+      "provider_id": "codex-built-in-image-gen",
+      "publication_authorized": false,
+      "purchased_credits_authorized": false,
+      "purpose": "PRIVATE_INTERNAL_AUTONOMOUS_MULTI_PAGE_PRODUCTION_PILOT",
+      "unit_ids": [
+        "page-27d143ae995bf60742b65c5b--p01-panel-02",
+        "page-23e0e9cd9d4013ed03ae7e8c--p13-panel-01",
+        "page-23e0e9cd9d4013ed03ae7e8c--p13-panel-02",
+        "page-5aca23381e148b472373cd8c--p14-panel-01",
+        "page-54d61ef5bfcb1159088ac489--p23-panel-01"
+      ],
+      "unit_prompt_hashes": [
+        "2d3b212bc6c195041df9ded22e7918a89ac10c9d4301ef0f440b7d98c89670d2",
+        "a1df5b0c4c4cdfb7543d3c9e0f654e4b70368cffd3b573dac69e8b27f0d6aa5f",
+        "d310527806bde85a0f0877e2c617fce0e0c1dee7fc72283a2417eff4badc5c13",
+        "3409b198a4208f00d61a1bafd6e6df76779f4351a2f1564ff9dc2e52ba52e2e4",
+        "ff22f170c3c9da52534da3f9bc4a48dd08efdebd91bc5d10d3a7141ea2f79afd"
+      ],
+      "unit_reference_hashes": [
+        "7ec1af72ea0f6b66f63f9e54311bccf2377cadf67fec8a70fdfb8b16e6da6dcd",
+        "6d83b0e5e023dc34b394c60b25a48b003e1bdc70245b9aac8b2f792e35c773d4",
+        "6d83b0e5e023dc34b394c60b25a48b003e1bdc70245b9aac8b2f792e35c773d4",
+        "3626f58bc20b7c094abad6eed01e3e05e9a66837d75ff13fb6cbb8b7b96220f9",
+        "3069a0f0f76b004f2ca4e1c53a4a05baa7e0fdbef848e4994c7e068b9d6614e3"
+      ]
+    },
+    "authorization_subject_hash": "fd9864465aebf8e0c121f72ce8a4249d08af372a48829ab926b0a223e6956b21",
+    "backend": {
+      "host_tool": "image_gen.imagegen",
+      "provider_id": "codex-built-in-image-gen",
+      "reference_input_interface": "referenced_image_paths",
+      "repository_programmatic_invocation": false
+    },
+    "book_id": "DM04",
+    "campaign_id": "dm04-pr12-autonomous-multi-page-pilot-01",
+    "cost_policy": {
+      "actual_incremental_usd_exposed_by_tool": false,
+      "external_provider_authorized": false,
+      "included_allowance_first": true,
+      "maximum_paid_spend_minor_units": 0,
+      "purchased_credit_consumption_authorized": false
+    },
+    "locked_inputs": [
+      {
+        "bytes": 22447,
+        "path": "MYTHOLOGY_COMIC_RULES.md",
+        "role": "SERIES_RULES",
+        "sha256": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070"
+      },
+      {
+        "bytes": 54359,
+        "path": "books/DM04/manuscripts/v0005.json",
+        "role": "MANUSCRIPT_V5",
+        "sha256": "94033e951e0b5b716ecf240f486732f4312b1d1fb924746d0cbf4a63415bc296"
+      },
+      {
+        "bytes": 244298,
+        "path": "books/DM04/storyboards/v0003.json",
+        "role": "STORYBOARD_V3",
+        "sha256": "08c26eee5a9a2370ccfd673b54181266dd0df66a3960710c971838358e2ea6da"
+      },
+      {
+        "bytes": 115015,
+        "path": "books/DM04/character-bibles/v0004.json",
+        "role": "CHARACTER_BIBLE",
+        "sha256": "74e48879d389a64e12af8b3f97f6434018c3afc02c23f92cea65d7fe9b4e3dcb"
+      },
+      {
+        "bytes": 18176,
+        "path": "books/DM04/location-bibles/v0002.json",
+        "role": "LOCATION_BIBLE",
+        "sha256": "7b825487144f63e1ec193085738449967a36990581bc8d462c4c1c647045d180"
+      },
+      {
+        "bytes": 347410,
+        "path": "books/DM04/source-readiness/75a6d7223209feb8850b482d9e0876cd323991652b436ac139470cadc95041d3.json",
+        "role": "SOURCE_DOSSIER",
+        "sha256": "3350c42d2463a2d27247ee7debbdbf62f0942af9d546da11399ca5e9c23db447"
+      },
+      {
+        "bytes": 295965,
+        "path": "books/DM04/story-packets/b784b365d9c921312285f453b4f6a4a15a7be935e2f0fdda6cfa8eba12797744.json",
+        "role": "STORY_PACKET",
+        "sha256": "6439498a4bc9b60090572301f0e78dca685079db1eb4acfc318bfefd4aa77f16"
+      },
+      {
+        "bytes": 20996,
+        "path": "book-factory/references/visual-gold-standard/manifest.json",
+        "role": "VISUAL_GOLD_STANDARD",
+        "sha256": "0775af9ff8dacfdcbecece946b781e2187574883f148bb9a6327603f1ffdae3f"
+      },
+      {
+        "bytes": 3094,
+        "path": "books/DM04/production-status.json",
+        "role": "PR6_STATUS",
+        "sha256": "5af228856ef0a6b4d32d1ac5d2cd476f1563040dfa4d25bb2e31155fcf55c3cd"
+      },
+      {
+        "bytes": 2933,
+        "path": "books/DM04/production-integration-status.json",
+        "role": "PR11_STATUS",
+        "sha256": "5743bcebb6bacdcfaf6e03cbaf2a395a3647a902adf8574e380fe07676e4e36c"
+      }
+    ],
+    "milestone": "PR12",
+    "preservation": {
+      "dm08_mutation_authorized": false,
+      "pr11_campaign_id": "dm04-pr10-real-production-slice-01",
+      "pr11_operations_before": 2,
+      "pr6_exact_result_before": "ILLUSTRATION_PROOFS_REVIEWED_FIX_RETRY_EXHAUSTED_PUBLICATION_BLOCKED",
+      "pr6_proof_image_hashes_before": [
+        "016faa6b34b5c1addeffd634554015033c1dbacd0ba6718dba1c767a17f3a619",
+        "21af6bf894e1abc6d63f6d797ccebebda569e65f372658ff4cc126164f3a7139",
+        "18f850fb0ba3accaf956cc7d74cec34af610e174b8f68890e1ebdf87e9b54d32",
+        "578e0fcdb4dcf016b7b85a50736e498859528560f569885ddf0f8060003f32fc"
+      ],
+      "pr6_real_images_generated_total_before": 8,
+      "source_graph_mutation_authorized": false
+    },
+    "publication_eligible": false,
+    "purpose": "PRIVATE_INTERNAL_AUTONOMOUS_MULTI_PAGE_PRODUCTION_PILOT",
+    "schema_version": "1.0",
+    "units": [
+      {
+        "base_image": {
+          "bytes": 3088759,
+          "path": "books/DM04/production-pilot/images/page-27d143ae995bf60742b65c5b/v0001.png",
+          "role": "EDIT_TARGET_EXISTING_FIX_ART_REFERENCE_ONLY",
+          "sha256": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7"
+        },
+        "character_ids": [
+          "dm-medhas",
+          "dm-suratha",
+          "dm-samadhi"
+        ],
+        "event_ids": [
+          "dm-event-008"
+        ],
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p01-narration",
+            "placement": "caption-safe-region",
+            "text": "Night settles around the hermitage fire. Suratha and Samādhi turn toward Medhas as he begins."
+          },
+          {
+            "channel": "DIALOGUE",
+            "id": "p01-dialogue",
+            "placement": "speaker-anchored-balloon",
+            "speaker_id": "dm-medhas",
+            "text": "What remains of a kingdom when every gate still stands, every throne is occupied—and yet none of its rightful guardians can return?"
+          }
+        ],
+        "lettering_hash": "92e0ae2d99ae66868eb0482aabd25f4e479b4e9136badbb0ef3f37ccd266a892",
+        "location_id": "forest-hermitage",
+        "locked_action": "Intimate over-shoulder from behind the two listeners: Medhas asks the exact opening question; end on their attentive silence before the page turn to heaven.",
+        "operation": "edit",
+        "operation_ceiling": 1,
+        "page_id": "page-27d143ae995bf60742b65c5b",
+        "page_number": 1,
+        "page_script": {
+          "bytes": 5740,
+          "path": "books/DM04/page-scripts/page-0001.v0003.json",
+          "role": "LOCKED_PAGE_SCRIPT",
+          "sha256": "4509f47443c27b55dd6d8914def8119393fcc16f23b56a0c328c094c0a042cc0"
+        },
+        "page_title": "A Question Beneath the Trees",
+        "panel_count": 2,
+        "panel_id": "p01-panel-02",
+        "prompt": "Create one clean landscape comic-panel illustration for DM04 page 1 panel 2. EDIT TARGET: preserve the exact three established people, clothing, dusk forest-hermitage, firelight and painterly finish from the supplied DM04 image, but change the camera to a genuine intimate over-shoulder view from behind both listeners: Suratha's muted-blue royal shoulder at left foreground and Samadhi's plain earth-toned shoulder at right foreground, both facing Sage Medhas. Medhas is the clearly readable speaking focus, aged, white-bearded, seated and gesturing calmly across the low fire. Their attentive silence must read in posture. Reserve uncluttered upper branches and lower-left space for later editable lettering. REFERENCE A supplies only Khatakshetra premium devotional painterly identity and navy-gold sensibility. REFERENCE B supplies only intimate speaker-listener staging and clear reaction-driven comic storytelling. Do not transfer any deity, lion, architecture, clothing identity or story content from the references. No embedded text, balloons, border, watermark, modern objects, Western fantasy armor, helmets or emblems. Family-reading appropriate. One moment only; no duplicated figures.",
+        "prompt_sha256": "2d3b212bc6c195041df9ded22e7918a89ac10c9d4301ef0f440b7d98c89670d2",
+        "reference_package_hash": "7ec1af72ea0f6b66f63f9e54311bccf2377cadf67fec8a70fdfb8b16e6da6dcd",
+        "references": [
+          {
+            "approval_status": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY",
+            "available": true,
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+            "reference_id": "kgs-satya-p01",
+            "role": "A_SERIES_VISUAL_IDENTITY",
+            "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+          },
+          {
+            "approval_status": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY",
+            "available": true,
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+            "reference_id": "kgs-dm08-p09",
+            "role": "B_PAGE_PANEL_COMPOSITION",
+            "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+          },
+          {
+            "approval_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_DM04_CHARACTER_ASSET",
+            "available": false,
+            "content_transfer": "NOT_APPLICABLE",
+            "role": "C_APPROVED_CHARACTER_REFERENCE"
+          },
+          {
+            "approval_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_DM04_SETTING_ASSET",
+            "available": false,
+            "content_transfer": "NOT_APPLICABLE",
+            "role": "D_APPROVED_SETTING_REFERENCE"
+          }
+        ],
+        "selection_role": "INTIMATE_CONVERSATION",
+        "source_claim_ids": [
+          "claim-008-a",
+          "claim-008-b"
+        ],
+        "text_in_image": false,
+        "unit_id": "page-27d143ae995bf60742b65c5b--p01-panel-02"
+      },
+      {
+        "base_image": null,
+        "character_ids": [
+          "dm-devi",
+          "dm-lion",
+          "dm-asura-army"
+        ],
+        "event_ids": [
+          "dm-event-014"
+        ],
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p13-narration",
+            "placement": "caption-safe-region",
+            "text": "Devī cuts apart arrows, spears and heavy weapons while her lion breaks the massed formation. Her noose catches attackers who rush too near, and her other weapons answer the host."
+          }
+        ],
+        "lettering_hash": "9fb028725372eaacad247899b1e14d9d25efd5a76b13dbbf5511330653e4c8dc",
+        "location_id": "battlefield",
+        "locked_action": "Skyward diagonal: arrows, spears and heavy weapons cross toward Devī; she cuts them before impact as broken shafts fall in front of, not through, the first ranks.",
+        "operation": "generate",
+        "operation_ceiling": 1,
+        "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+        "page_number": 13,
+        "page_script": {
+          "bytes": 5706,
+          "path": "books/DM04/page-scripts/page-0013.v0003.json",
+          "role": "LOCKED_PAGE_SCRIPT",
+          "sha256": "80f0e418fd26f3644580c0b4fa36714185d41868791e1e86a1ccb171f3576eb4"
+        },
+        "page_title": "Missiles Cut Away",
+        "panel_count": 2,
+        "panel_id": "p13-panel-01",
+        "prompt": "Create one clean landscape comic-panel illustration for DM04 page 13 panel 1, a skyward diagonal battle action. Devī/Chandikā is the serene authoritative focal defender in classical modest Indian dress, deep blue, warm ivory and antique gold, with a radiant crown. Show a readable many-armed identity only through the foreground arms needed for this exact action plus a restrained implied arm field; do not invent weapons. Arrows, spears and heavy weapons fly diagonally toward her from the asura ranks; she cuts them apart before impact, with broken shafts falling in front of—not through—the first ranks. Keep trajectories and cause-effect unmistakable, energetic but non-graphic. The battlefield has a stable distant ridge, hard daylight and an uncluttered upper-left lettering zone. REFERENCE A supplies only premium Khatakshetra devotional painterly finish. REFERENCE B supplies only large-scale battle depth and sequential action clarity; omit its blood, flags, armor, characters and theology. No text, balloons, border, watermark, gore, Western fantasy armor, Greco-Roman helmets, invented emblems, demonic-face flags or unrelated divine iconography. Family-reading appropriate.",
+        "prompt_sha256": "a1df5b0c4c4cdfb7543d3c9e0f654e4b70368cffd3b573dac69e8b27f0d6aa5f",
+        "reference_package_hash": "6d83b0e5e023dc34b394c60b25a48b003e1bdc70245b9aac8b2f792e35c773d4",
+        "references": [
+          {
+            "approval_status": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY",
+            "available": true,
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+            "reference_id": "kgs-satya-p01",
+            "role": "A_SERIES_VISUAL_IDENTITY",
+            "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+          },
+          {
+            "approval_status": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY",
+            "available": true,
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p21.png",
+            "reference_id": "kgs-dm08-p21",
+            "role": "B_PAGE_PANEL_COMPOSITION",
+            "sha256": "332b208d14df3d94139a3ab598e7e7e327e49bc9d4bbf5f41ddf20d8260291af"
+          },
+          {
+            "approval_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_DM04_CHARACTER_ASSET",
+            "available": false,
+            "content_transfer": "NOT_APPLICABLE",
+            "role": "C_APPROVED_CHARACTER_REFERENCE"
+          },
+          {
+            "approval_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_DM04_SETTING_ASSET",
+            "available": false,
+            "content_transfer": "NOT_APPLICABLE",
+            "role": "D_APPROVED_SETTING_REFERENCE"
+          }
+        ],
+        "selection_role": "ACTION_MISSILE_COUNTER",
+        "source_claim_ids": [
+          "claim-014-a",
+          "claim-014-b"
+        ],
+        "text_in_image": false,
+        "unit_id": "page-23e0e9cd9d4013ed03ae7e8c--p13-panel-01"
+      },
+      {
+        "base_image": null,
+        "character_ids": [
+          "dm-devi",
+          "dm-lion",
+          "dm-asura-army"
+        ],
+        "event_ids": [
+          "dm-event-014"
+        ],
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p13-narration",
+            "placement": "caption-safe-region",
+            "text": "Devī cuts apart arrows, spears and heavy weapons while her lion breaks the massed formation. Her noose catches attackers who rush too near, and her other weapons answer the host."
+          }
+        ],
+        "lettering_hash": "9fb028725372eaacad247899b1e14d9d25efd5a76b13dbbf5511330653e4c8dc",
+        "location_id": "battlefield",
+        "locked_action": "Ground-level counterframe: her lion splits the soldiers while Devī's noose catches the nearest attackers and her other sourced weapons hold the center; end on Devī's visible exhalation.",
+        "operation": "generate",
+        "operation_ceiling": 1,
+        "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+        "page_number": 13,
+        "page_script": {
+          "bytes": 5706,
+          "path": "books/DM04/page-scripts/page-0013.v0003.json",
+          "role": "LOCKED_PAGE_SCRIPT",
+          "sha256": "80f0e418fd26f3644580c0b4fa36714185d41868791e1e86a1ccb171f3576eb4"
+        },
+        "page_title": "Missiles Cut Away",
+        "panel_count": 2,
+        "panel_id": "p13-panel-02",
+        "prompt": "Create one clean landscape comic-panel illustration for DM04 page 13 panel 2, a distinct ground-level counterframe after the missile exchange. Devī/Chandikā keeps the same serene authoritative visual design: classical modest Indian dress in deep blue, warm ivory and antique gold, radiant crown, readable many-armed identity with only sourced equipment. Her tawny-gold lion with dark mane splits the asura soldiers' formation. Devī's Varuṇa-given noose visibly catches the nearest attackers while her other sourced weapons hold the center; show one visible breath beginning as the transition toward the next page, without yet depicting the breath-born army. Use a low camera, clear action lanes, stable distant ridge, charcoal/oxblood enemy massing, and an uncluttered top zone for later narration. REFERENCE A supplies only premium Khatakshetra devotional painterly finish. REFERENCE B supplies only battle depth and readable sequential action; omit its blood, flags, armor, characters and theology. No text, balloons, border, watermark, gore, Western fantasy armor, Greco-Roman helmets, invented emblems, demonic-face flags or unrelated iconography. Family-reading appropriate.",
+        "prompt_sha256": "d310527806bde85a0f0877e2c617fce0e0c1dee7fc72283a2417eff4badc5c13",
+        "reference_package_hash": "6d83b0e5e023dc34b394c60b25a48b003e1bdc70245b9aac8b2f792e35c773d4",
+        "references": [
+          {
+            "approval_status": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY",
+            "available": true,
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+            "reference_id": "kgs-satya-p01",
+            "role": "A_SERIES_VISUAL_IDENTITY",
+            "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+          },
+          {
+            "approval_status": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY",
+            "available": true,
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p21.png",
+            "reference_id": "kgs-dm08-p21",
+            "role": "B_PAGE_PANEL_COMPOSITION",
+            "sha256": "332b208d14df3d94139a3ab598e7e7e327e49bc9d4bbf5f41ddf20d8260291af"
+          },
+          {
+            "approval_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_DM04_CHARACTER_ASSET",
+            "available": false,
+            "content_transfer": "NOT_APPLICABLE",
+            "role": "C_APPROVED_CHARACTER_REFERENCE"
+          },
+          {
+            "approval_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_DM04_SETTING_ASSET",
+            "available": false,
+            "content_transfer": "NOT_APPLICABLE",
+            "role": "D_APPROVED_SETTING_REFERENCE"
+          }
+        ],
+        "selection_role": "ACTION_GROUND_COUNTER",
+        "source_claim_ids": [
+          "claim-014-a",
+          "claim-014-b"
+        ],
+        "text_in_image": false,
+        "unit_id": "page-23e0e9cd9d4013ed03ae7e8c--p13-panel-02"
+      },
+      {
+        "base_image": null,
+        "character_ids": [
+          "dm-devi",
+          "dm-devi-troops",
+          "dm-asura-army"
+        ],
+        "event_ids": [
+          "dm-event-014"
+        ],
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p14-narration",
+            "placement": "caption-safe-region",
+            "text": "With each battle breath, troops arise carrying axes, javelins, swords and halberds. Drums and conches sound; Devī's bell confounds the enemy, and the formations break as her new army advances."
+          }
+        ],
+        "lettering_hash": "3f9f97f9111663862d4fb6aa3679e136087aee417f11231210afe1eaa156596b",
+        "location_id": "battlefield",
+        "locked_action": "Full-page layered emergence: Devī exhales at the top center; below, new troops resolve carrying exact axes, javelins, swords and halberds as drums and conches answer; along the lower edge her bell's sound visibly confounds the asura formation, which breaks before their advance.",
+        "operation": "generate",
+        "operation_ceiling": 1,
+        "page_id": "page-5aca23381e148b472373cd8c",
+        "page_number": 14,
+        "page_script": {
+          "bytes": 4647,
+          "path": "books/DM04/page-scripts/page-0014.v0003.json",
+          "role": "LOCKED_PAGE_SCRIPT",
+          "sha256": "d96eb426c0c21b901c4d1772521ab4dac053a3dc30b08c9ed0ff3505ba865997"
+        },
+        "page_title": "An Army from Breath",
+        "panel_count": 1,
+        "panel_id": "p14-panel-01",
+        "prompt": "Create one clean portrait 3:4 immersive full-page illustration for DM04 page 14. Devī/Chandikā is at the top center, serene and commanding in classical modest Indian dress, deep blue, warm ivory and antique gold, radiant crown, readable many-armed identity using sourced equipment only. A luminous battle breath visibly leaves her and resolves in layered stages into disciplined warm ivory-gold troops below, carrying exactly axes, javelins, swords and halberds. Drums and conches answer; subtle concentric bell waves confound the charcoal-and-oxblood asura formation along the lower edge as it breaks before the advance. Make emergence, instruments and consequence legible without compressing unrelated actions. Preserve a stable distant ridge and a calm upper-left parchment-safe area. REFERENCE A supplies premium Khatakshetra devotional painterly identity and focal hierarchy. REFERENCE B supplies only transformation sequencing, battlefield depth and cinematic reveal; do not transfer Kali/Chamunda, skulls, blood, flags, opponents, weapons or theology. No text, balloons, border, watermark, gore, Western fantasy armor, Greco-Roman helmets, invented emblems or unrelated divine iconography. Family-reading appropriate.",
+        "prompt_sha256": "3409b198a4208f00d61a1bafd6e6df76779f4351a2f1564ff9dc2e52ba52e2e4",
+        "reference_package_hash": "3626f58bc20b7c094abad6eed01e3e05e9a66837d75ff13fb6cbb8b7b96220f9",
+        "references": [
+          {
+            "approval_status": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY",
+            "available": true,
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+            "reference_id": "kgs-satya-p01",
+            "role": "A_SERIES_VISUAL_IDENTITY",
+            "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+          },
+          {
+            "approval_status": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY",
+            "available": true,
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+            "reference_id": "kgs-dm08-p12",
+            "role": "B_PAGE_PANEL_COMPOSITION",
+            "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+          },
+          {
+            "approval_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_DM04_CHARACTER_ASSET",
+            "available": false,
+            "content_transfer": "NOT_APPLICABLE",
+            "role": "C_APPROVED_CHARACTER_REFERENCE"
+          },
+          {
+            "approval_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_DM04_SETTING_ASSET",
+            "available": false,
+            "content_transfer": "NOT_APPLICABLE",
+            "role": "D_APPROVED_SETTING_REFERENCE"
+          }
+        ],
+        "selection_role": "DRAMATIC_REVELATION_IMMERSIVE",
+        "source_claim_ids": [
+          "claim-014-a",
+          "claim-014-b"
+        ],
+        "text_in_image": false,
+        "unit_id": "page-5aca23381e148b472373cd8c--p14-panel-01"
+      },
+      {
+        "base_image": null,
+        "character_ids": [
+          "dm-mahisha",
+          "dm-devi",
+          "dm-lion",
+          "dm-devi-troops"
+        ],
+        "event_ids": [
+          "dm-event-019"
+        ],
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p23-narration",
+            "placement": "caption-safe-region",
+            "text": "After his chiefs fall, Mahiṣāsura himself charges in buffalo form against the breath-born troops and Devī's lion."
+          }
+        ],
+        "lettering_hash": "7721c19010b5044eb5c17b7476df77b18c879e35942f8dded1955bc05a2dfbf5",
+        "location_id": "mahisha-arrival",
+        "locked_action": "Full-page reversal: Mahiṣāsura's buffalo form surges from the near foreground, massive muzzle, hooves, tail and horns scattering the breath-born troops; Devī and her lion hold a small but unbroken opposing line at the top of the vertical field.",
+        "operation": "generate",
+        "operation_ceiling": 1,
+        "page_id": "page-54d61ef5bfcb1159088ac489",
+        "page_number": 23,
+        "page_script": {
+          "bytes": 4663,
+          "path": "books/DM04/page-scripts/page-0023.v0003.json",
+          "role": "LOCKED_PAGE_SCRIPT",
+          "sha256": "57483e856fb296bceaae6ac43ec6e3af00e0bf33947a24e522ecb49ac3d50a50"
+        },
+        "page_title": "The Buffalo King Enters",
+        "panel_count": 1,
+        "panel_id": "p23-panel-01",
+        "prompt": "Create one clean portrait 3:4 immersive full-page illustration for DM04 page 23, a single exact reversal. Mahiṣāsura appears only in massive dark-umber buffalo form, surging from the near foreground; his muzzle, hooves, tail and horns scatter the warm ivory-gold breath-born troops. Do not show a human, lion or elephant antagonist form. At the top of the vertical field, Devī/Chandikā and her distinct tawny-gold dark-maned lion hold a small but unbroken opposing line. Devī wears classical modest Indian dress in deep blue, warm ivory and antique gold, with radiant crown and sourced equipment only. Use storm-dark edge light against her gold, readable depth, stable ridge and an uncluttered upper-left lettering area. REFERENCE A supplies premium Khatakshetra devotional painterly identity and focal hierarchy. REFERENCE B supplies only immersive climax depth and before/after visual force; omit its characters, blood, flags, skulls, armor, weapons and theology. No text, balloons, border, watermark, gore, Western fantasy armor, Greco-Roman helmets, invented emblems or unrelated divine iconography. Family-reading appropriate.",
+        "prompt_sha256": "ff22f170c3c9da52534da3f9bc4a48dd08efdebd91bc5d10d3a7141ea2f79afd",
+        "reference_package_hash": "3069a0f0f76b004f2ca4e1c53a4a05baa7e0fdbef848e4994c7e068b9d6614e3",
+        "references": [
+          {
+            "approval_status": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY",
+            "available": true,
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+            "reference_id": "kgs-satya-p01",
+            "role": "A_SERIES_VISUAL_IDENTITY",
+            "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+          },
+          {
+            "approval_status": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY",
+            "available": true,
+            "content_transfer": "FORBIDDEN",
+            "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+            "reference_id": "kgs-dm08-p28",
+            "role": "B_PAGE_PANEL_COMPOSITION",
+            "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5"
+          },
+          {
+            "approval_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_DM04_CHARACTER_ASSET",
+            "available": false,
+            "content_transfer": "NOT_APPLICABLE",
+            "role": "C_APPROVED_CHARACTER_REFERENCE"
+          },
+          {
+            "approval_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_DM04_SETTING_ASSET",
+            "available": false,
+            "content_transfer": "NOT_APPLICABLE",
+            "role": "D_APPROVED_SETTING_REFERENCE"
+          }
+        ],
+        "selection_role": "ACTION_IMMERSIVE_REVERSAL",
+        "source_claim_ids": [
+          "claim-019-a",
+          "claim-019-b",
+          "claim-mahisha-reversal"
+        ],
+        "text_in_image": false,
+        "unit_id": "page-54d61ef5bfcb1159088ac489--p23-panel-01"
+      }
+    ]
+  },
+  "schema_version": "1.0",
+  "version": 3
+}

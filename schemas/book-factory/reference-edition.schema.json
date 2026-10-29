@@ -1,0 +1,18 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/reference-edition.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {"const": "1.0", "type": "string"},
+    "book_id": {"type": "string"},
+    "edition_status": {"const": "EXISTING_EDITION", "type": "string"},
+    "production_provenance": {"const": "PRE_EXISTING_IMPORT", "type": "string"},
+    "automatic_production_eligible": {"const": false, "type": "boolean"},
+    "publication_readiness_status": {"type": "string"},
+    "source_verification_status": {"type": "string"},
+    "assets": {"items": {"type": "object"}, "minItems": 2, "type": "array"}
+  },
+  "required": ["schema_version", "book_id", "edition_status", "production_provenance", "automatic_production_eligible", "publication_readiness_status", "source_verification_status", "assets"],
+  "title": "Existing reference edition",
+  "type": "object"
+}

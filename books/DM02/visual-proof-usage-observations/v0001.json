@@ -1,0 +1,98 @@
+{
+  "book_id": "DM02",
+  "content_hash": "d0846261da03b9ce93984353dafc88c317bb8ec3523740dd3d6c7aba1ff9c1a7",
+  "id": "visual-proof-usage-observations-1ffeea2e2dcf451814a7a8bb",
+  "kind": "visual-proof-usage-observations",
+  "parent_hash": null,
+  "payload": {
+    "book_id": "DM02",
+    "campaign_id": "dm02-visual-proof-campaign-01",
+    "observation": {
+      "accountId": "dc42d701-74cc-4fb9-a9ba-275d4cd5eece",
+      "observedAt": "2026-10-22T12:01:04Z",
+      "ordinaryUsageAllowed": true,
+      "rateLimitResetCredits": {
+        "availableCount": 3,
+        "credits": [
+          {
+            "description": "Thanks for using Codex! You've been granted one free rate limit reset.",
+            "expiresAt": 1792701524,
+            "grantedAt": 1790109524,
+            "id": "RateLimitResetCredit_7dcb2673d7a08191bc922010d426285b",
+            "resetType": "codexRateLimits",
+            "status": "available",
+            "title": "Full reset"
+          },
+          {
+            "description": "Thanks for using Codex! You've been granted one free rate limit reset.",
+            "expiresAt": 1793300774,
+            "grantedAt": 1790708774,
+            "id": "RateLimitResetCredit_4ad525610af08191ab4045e7fcf47298",
+            "resetType": "codexRateLimits",
+            "status": "available",
+            "title": "Full reset"
+          },
+          {
+            "description": "Thanks for using Codex! You've been granted one free rate limit reset.",
+            "expiresAt": 1794008011,
+            "grantedAt": 1791416011,
+            "id": "RateLimitResetCredit_f36683bd33b88191b4fa52588230ddbb",
+            "resetType": "codexRateLimits",
+            "status": "available",
+            "title": "Full reset"
+          }
+        ]
+      },
+      "rateLimitUpsell": null,
+      "rateLimits": {
+        "credits": {
+          "balance": "0",
+          "hasCredits": false,
+          "unlimited": false
+        },
+        "individualLimit": null,
+        "limitId": "codex",
+        "limitName": null,
+        "normalModelSlug": null,
+        "planType": "prolite",
+        "primary": {
+          "resetsAt": 1793101834,
+          "usedPercent": 29,
+          "windowDurationMins": 10080
+        },
+        "rateLimitReachedType": null,
+        "secondary": null,
+        "spendControlReached": false
+      },
+      "rateLimitsByLimitId": {
+        "codex": {
+          "credits": {
+            "balance": "0",
+            "hasCredits": false,
+            "unlimited": false
+          },
+          "individualLimit": null,
+          "limitId": "codex",
+          "limitName": null,
+          "normalModelSlug": null,
+          "planType": "prolite",
+          "primary": {
+            "resetsAt": 1793101834,
+            "usedPercent": 29,
+            "windowDurationMins": 10080
+          },
+          "rateLimitReachedType": null,
+          "secondary": null,
+          "spendControlReached": false
+        }
+      }
+    },
+    "phase": "BEFORE",
+    "recorded_at": "2026-10-22T12:06:53Z",
+    "schema_version": "1.0",
+    "source_path": "/Users/vellankisriharsha/Documents/Codex/2026-10-16/files-pasted-by-the-user-you/work/PuranaIthihasa/books/DM02/usage-inputs/visual-proof-before-2026-10-22T120104Z.json",
+    "source_sha256": "a3b9bec95e650c7f59f607b5642ba491fa7d0bb306991fb07d2beceec4210eb3"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

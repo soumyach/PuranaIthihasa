@@ -1,0 +1,16 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/budget.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "book_max_minor_units": {"minimum": 0, "type": "integer"},
+    "currency": {"type": "string"},
+    "job_max_minor_units": {"minimum": 0, "type": "integer"},
+    "max_retries": {"minimum": 0, "type": "integer"},
+    "page_max_minor_units": {"minimum": 0, "type": "integer"},
+    "paid_calls_enabled": {"type": "boolean"}
+  },
+  "required": ["currency", "book_max_minor_units", "page_max_minor_units", "job_max_minor_units", "max_retries", "paid_calls_enabled"],
+  "title": "Spending policy",
+  "type": "object"
+}

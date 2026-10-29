@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "reviewer": {
+    "id": "/root/dm02_corrective_pixel_reviewer",
+    "role": "INDEPENDENT_COMPOSED_PAGE_PIXEL_REVIEWER",
+    "actual_pixels_inspected": true,
+    "inspection_resolution": "1086x1448 ORIGINAL",
+    "independent_of_composer": true
+  },
+  "asset": {
+    "path": "books/DM02/private-page-previews/page-a694d4c3702975edfdceb0c5/v0001/0003-page-a694d4c3702975edfdceb0c5.png",
+    "sha256": "86acbc41b697a180ecb9c40d18b271c04ccb87ad740c05c98c2c5ebf17d616d3"
+  },
+  "result": "FIX",
+  "repair_class": "COMPOSITION_REPAIRABLE",
+  "new_art_required": false,
+  "assessments": [
+    {"dimension": "EXACT_NARRATION", "result": "PASS", "evidence": "Visible narration matches the locked Page 3 script exactly, including sentence order, punctuation and capitalization."},
+    {"dimension": "FONT_SIZE_AND_OVERFLOW", "result": "PASS", "evidence": "Resolved STIX font is 22 px; all three lines are crisp, contained and free of clipping or overflow."},
+    {"dimension": "PLAQUE_PROPORTIONALITY", "result": "FIX", "evidence": "The 890x209 px plaque leaves approximately 90-100 px of unused cream below the text and unnecessarily covers atmospheric cloud texture."},
+    {"dimension": "BADGE_TEXT_CLEARANCE", "result": "PASS", "evidence": "Badge 1 and the first W remain distinct with no clipping, tangency or overlap."},
+    {"dimension": "FRAME_AND_NUMBERING", "result": "PASS", "evidence": "Navy ground, gold frame, ornaments, masthead, title and page number 3 are intact and aligned."},
+    {"dimension": "HORIZONLESS_WATER_NARRATIVE", "result": "PASS", "evidence": "Water continues into mist without shore, land, landmark, vessel or figure."},
+    {"dimension": "CROP_INTEGRITY", "result": "PASS", "evidence": "Aspect-preserving crop [0,99,1086,1406] retains the wave field, mist transition and gold reflections."},
+    {"dimension": "RENDER_ARTIFACTS", "result": "PASS", "evidence": "No seams, malformed glyphs, scaling distortion, border collisions or raster artifacts are visible."},
+    {"dimension": "PRIVATE_PREVIEW_LABEL", "result": "PASS", "evidence": "Footer clearly reads INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION."}
+  ],
+  "required_fix": {
+    "scope": "LETTERING_PLAQUE_HEIGHT_ONLY",
+    "instruction": "Reduce plaque height from 209 px to approximately 145-160 px while preserving width, top position, exact narration, 22 px font, 18 px padding and badge clearance.",
+    "image_generation_needed": false
+  },
+  "scope_limits": [
+    "Private-preview composition only.",
+    "No publication approval.",
+    "No character or environment reference promotion."
+  ]
+}

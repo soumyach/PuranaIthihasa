@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "milestone": "PR12",
+  "book_id": "DM04",
+  "campaign_id": "dm04-pr12-autonomous-multi-page-pilot-01",
+  "campaign_subject_hash": "fd9864465aebf8e0c121f72ce8a4249d08af372a48829ab926b0a223e6956b21",
+  "policy": {
+    "provider": "codex-built-in-image-gen",
+    "included_allowance_first": true,
+    "maximum_paid_spend_minor_units_authorized": 0,
+    "purchased_credits_authorized": false,
+    "external_provider_authorized": false,
+    "automatic_credit_purchase_authorized": false
+  },
+  "observations": {
+    "before_campaign": {
+      "used_percent": 10,
+      "window_duration_minutes": 10080,
+      "ordinary_usage_allowed": true,
+      "plan_type": "prolite",
+      "credits_has_credits": false,
+      "credits_balance": "0"
+    },
+    "immediately_after_five_image_operations": {
+      "used_percent": 12,
+      "ordinary_usage_allowed": true,
+      "credits_has_credits": false,
+      "credits_balance": "0"
+    },
+    "at_final_reporting": {
+      "used_percent": 15,
+      "ordinary_usage_allowed": true,
+      "credits_has_credits": false,
+      "credits_balance": "0",
+      "spend_control_reached": false
+    }
+  },
+  "interpretation": {
+    "observed_bucket_change_during_image_window_percentage_points": 2,
+    "observed_bucket_change_through_final_reporting_percentage_points": 5,
+    "attribution": "UNKNOWN_ACCOUNT_WIDE_ROUNDED_PERCENTAGE_CANNOT_BE_ATTRIBUTED_EXACTLY_TO_THE_FIVE_IMAGES",
+    "image_operations_count_against_included_codex_limits": "YES_PER_OFFICIAL_DOCUMENTATION_AND_CONSISTENT_WITH_OBSERVED_BUCKET_MOVEMENT",
+    "separately_billed_api_calls": 0,
+    "paid_third_party_calls": 0,
+    "purchased_credit_consumption": "NOT_REQUESTED_OR_REPORTED_AND_NO_PURCHASED_CREDIT_BALANCE_WAS_EXPOSED",
+    "actual_incremental_usd": "UNKNOWN_NOT_EXPOSED",
+    "positive_zero_usd_verification": false,
+    "observed_charge": "NONE_VISIBLE_IN_AVAILABLE_TOOL_OUTPUT",
+    "caution": "No observable charge is not proof of zero incremental USD spending. The built-in interface exposes allowance state but no per-operation price or transaction ledger."
+  },
+  "provider_receipts": "books/DM04/autonomous-pilot/provider-receipts",
+  "official_documentation": [
+    "https://learn.chatgpt.com/docs/pricing?codex-usage-limits=gpt-5-4",
+    "https://learn.chatgpt.com/docs/image-generation"
+  ]
+}

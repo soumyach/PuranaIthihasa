@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "approval_type": "PRODUCTION_CAMPAIGN",
+  "subject_type": "DM02_BOOK_LEVEL_PRIVATE_IMAGE_CAMPAIGN",
+  "subject_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+  "scope": {"type": "book", "id": "DM02"},
+  "approver": {
+    "id": "human-user-current-session-dm02-book-level",
+    "identity_claim": "The human user directly authorized the exact DM02 book-level private production campaign in the current Codex thread.",
+    "authority": ["PRIVATE_INTERNAL_VISUAL_PRODUCTION"],
+    "signature_claimed": false
+  },
+  "creator": {"id": "codex-root-dm02-book-level-producer"},
+  "decision": "PASS_WITH_CONDITIONS",
+  "inheritance_allowed": false,
+  "conditions": [
+    "TWENTY_NINE_NECESSARY_OPERATIONS",
+    "SEVEN_CONDITIONAL_DERIVED_FALLBACK_OPERATIONS_MAXIMUM",
+    "SEVEN_INDEPENDENT_REVIEW_DIRECTED_REPAIR_OPERATIONS_MAXIMUM",
+    "FORTY_THREE_TOTAL_IMAGE_OPERATION_CEILING",
+    "TWO_TOTAL_OPERATIONS_PER_UNIT_MAXIMUM",
+    "ONE_REPAIR_OR_RETRY_PER_UNIT_MAXIMUM",
+    "NO_AUTOMATIC_RETRY",
+    "BUILT_IN_CODEX_IMAGE_GENERATION_ONLY",
+    "INCLUDED_ALLOWANCE_FIRST",
+    "NO_API_KEY_OR_EXTERNAL_PAID_PROVIDER",
+    "NO_PURCHASED_CREDIT_OR_OVERAGE_AUTHORIZED",
+    "STOP_IF_PAYMENT_OR_CREDIT_AUTHORIZATION_REQUESTED",
+    "EXACT_A_B_C_D_REFERENCE_RECEIPTS_REQUIRED",
+    "INDEPENDENT_SOURCE_AND_ACTUAL_PIXEL_REVIEW_REQUIRED",
+    "PAGE_11_EXCLUDED_AND_ESCALATED",
+    "PRIVATE_INTERNAL_ONLY",
+    "NO_PUBLICATION_DEPLOYMENT_PUSH_OR_MERGE",
+    "ROUTINE_INTERNAL_BATCHES_NEED_NO_FURTHER_APPROVAL_WITHIN_EXACT_SCOPE",
+    "ZERO_INCREMENTAL_USD_NOT_TECHNICALLY_GUARANTEED"
+  ],
+  "invalidators": ["campaign_hash", "cost_policy", "provider", "reference_hash", "source_clearance", "unit_spec_hash"],
+  "evidence_refs": [
+    "0514b073e6c19b76436960feb9b632c3c99d7e599ac3a21c8092e67c9aa712e0",
+    "CURRENT_USER_MESSAGE_DM02_BOOK_LEVEL_AUTHORIZATION_2026-10-23",
+    "c097d6a890a9bcceef573e67ddc4dd5f981735f4b811b83d8e7b89e9a5335495"
+  ],
+  "source_scope": "dm-source",
+  "tradition_id": "devi-mahatmyam",
+  "edition_id": "pargiter-1904",
+  "evidence_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+  "expires_at": null,
+  "created_at": "2026-10-23T14:34:56Z",
+  "id": "approval-3174e958372faf8a1e6f380f"
+}

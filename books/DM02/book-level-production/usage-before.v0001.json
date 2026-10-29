@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "campaign_id": "dm02-book-level-private-production-v0001",
+  "authorization_subject_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+  "observed_at": "2026-10-23T14:34:56Z",
+  "ordinary_usage_allowed": true,
+  "plan_type": "prolite",
+  "primary_window": {"used_percent": 26, "remaining_percent": 74, "duration_minutes": 10080, "resets_at": 1793332727},
+  "credits": {"has_credits": false, "unlimited": false, "balance": "0"},
+  "spend_control_reached": false,
+  "free_rate_limit_reset_credits": {"available_count": 2, "campaign_use_authorized": false, "automatic_use": false},
+  "incremental_usd": "UNKNOWN_NOT_EXPOSED",
+  "zero_incremental_usd_verified": false,
+  "execution_decision": "PROCEED_INCLUDED_ALLOWANCE_FIRST_STOP_IF_PAYMENT_OR_CREDIT_AUTHORIZATION_REQUESTED"
+}

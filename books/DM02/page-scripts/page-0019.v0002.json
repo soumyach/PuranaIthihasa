@@ -1,0 +1,328 @@
+{
+  "character_ids": [
+    "dm-vishnu",
+    "dm-madhu",
+    "dm-kaitabha"
+  ],
+  "continuity_in": "after-page-18",
+  "continuity_out": "after-page-19",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-vishnu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-madhu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-kaitabha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-007"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "THREE_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p19-narration-a",
+      "placement": "caption-safe-region",
+      "text": "Across the scene lay only the flood of dissolution."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p19-dialogue-madhu",
+      "placement": "speaker-anchored-balloon",
+      "speaker_id": "dm-madhu",
+      "text": "Only where earth is not flooded."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p19-dialogue-kaitabha",
+      "placement": "speaker-anchored-balloon",
+      "speaker_id": "dm-kaitabha",
+      "text": "On that condition, we grant it."
+    },
+    {
+      "channel": "NARRATION",
+      "id": "p19-narration-b",
+      "placement": "caption-safe-region",
+      "text": "It was a condition attached by both demons to the boon they had offered."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p19-dialogue-vishnu",
+      "placement": "speaker-anchored-balloon",
+      "speaker_id": "dm-vishnu",
+      "text": "I accept."
+    }
+  ],
+  "lineage": {
+    "original_page_id": "page-0a7e5fc37740e64356580b94",
+    "original_page_number": 19,
+    "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+    "transformation": "PAGE_RECORD_RETAINED"
+  },
+  "location_id": "dm02-flooded-combat-expanse",
+  "moment_ids": [],
+  "narrative_beats": [
+    "Across the scene lay only the flood of dissolution.",
+    "It was a condition attached by both demons to the boon they had offered."
+  ],
+  "page_id": "page-0a7e5fc37740e64356580b94",
+  "page_number": 19,
+  "panel_count": 3,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "composition": "High-resolution wide condition master: flood fills every direction while Madhu and Kaiṭabha remain jointly readable for a balanced two-shot crop; no dry place, outside boon-giver or bodily solution is shown yet.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p19-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "High-resolution wide condition master: flood fills every direction while Madhu and Kaiṭabha remain jointly readable for a balanced two-shot crop; no dry place, outside boon-giver or bodily solution is shown yet.",
+        "shot_scale": "wide"
+      },
+      "lineage": {
+        "original_panel_ids": [
+          "p19-panel-01"
+        ],
+        "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+        "transformation": "RETAINED_PANEL_SPECIFICATION"
+      },
+      "location_id": "dm02-flooded-combat-expanse",
+      "production_plan": {
+        "asset_source": "NEW_RASTER_MASTER",
+        "classification": "ESSENTIAL_NEW_ART",
+        "existing_approved_pixel_asset": null,
+        "independent_pixel_review_required": true,
+        "master_panel_id": "p19-panel-01",
+        "rationale": "A distinct master is required for the retained narrative state or safe reusable framing.",
+        "requires_new_raster_generation": true
+      },
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p19-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "High-resolution wide condition master: flood fills every direction while Madhu and Kaiṭabha remain jointly readable for a balanced two-shot crop; no dry place, outside boon-giver or bodily solution is shown yet."
+    },
+    {
+      "character_ids": [
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "composition": "Balanced two-shot of Madhu and Kaiṭabha completing the condition jointly, with neither replaced by an outside boon-giver.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p19-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Balanced two-shot of Madhu and Kaiṭabha completing the condition jointly, with neither replaced by an outside boon-giver.",
+        "shot_scale": "medium"
+      },
+      "lineage": {
+        "original_panel_ids": [
+          "p19-panel-02"
+        ],
+        "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+        "transformation": "RETAINED_PANEL_SPECIFICATION"
+      },
+      "location_id": "dm02-flooded-combat-expanse",
+      "production_plan": {
+        "asset_source": "FUTURE_SHARED_MASTER_IF_EXACT_PIXEL_REVIEW_PASSES",
+        "classification": "REFRAME_EXISTING_ART",
+        "existing_approved_pixel_asset": null,
+        "fallback": "PROMOTE_TO_NEW_GENERATION_ONLY_UNDER_NEW_EXACT_AUTHORIZATION",
+        "independent_pixel_review_required": true,
+        "master_panel_id": "p19-panel-01",
+        "rationale": "The adjacent slot is a crop/reframe of the same moment; approval never inherits from the master.",
+        "requires_new_raster_generation": false
+      },
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p19-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Balanced two-shot of Madhu and Kaiṭabha completing the condition jointly, with neither replaced by an outside boon-giver."
+    },
+    {
+      "character_ids": [
+        "dm-vishnu"
+      ],
+      "composition": "Close dialogue hold on Viṣṇu's acceptance; do not preview any thigh, lap, buttocks or other anatomical solution.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p19-panel-03",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Close dialogue hold on Viṣṇu's acceptance; do not preview any thigh, lap, buttocks or other anatomical solution.",
+        "shot_scale": "close"
+      },
+      "lineage": {
+        "original_panel_ids": [
+          "p19-panel-03"
+        ],
+        "original_storyboard_record_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+        "transformation": "RETAINED_PANEL_SPECIFICATION"
+      },
+      "location_id": "dm02-flooded-combat-expanse",
+      "production_plan": {
+        "asset_source": "NEW_RASTER_MASTER",
+        "classification": "ESSENTIAL_NEW_ART",
+        "existing_approved_pixel_asset": null,
+        "independent_pixel_review_required": true,
+        "master_panel_id": "p19-panel-03",
+        "rationale": "A distinct master is required for the retained narrative state or safe reusable framing.",
+        "requires_new_raster_generation": true
+      },
+      "reading_order": 3,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p19-panel-03-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Close dialogue hold on Viṣṇu's acceptance; do not preview any thigh, lap, buttocks or other anatomical solution."
+    }
+  ],
+  "reading_order": [
+    "p19-panel-01",
+    "p19-panel-02",
+    "p19-panel-03"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p19-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-007-b",
+    "claim-007-e"
+  ],
+  "title": "The Condition",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation",
+    "no unsupported iconography",
+    "no unsupported body-locus claim"
+  ],
+  "version": 1,
+  "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+}

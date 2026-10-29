@@ -1,0 +1,159 @@
+{
+  "character_ids": [
+    "dm-devi",
+    "dm-gods"
+  ],
+  "continuity_in": "after-page-29",
+  "continuity_out": "after-page-30",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-devi",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-gods",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-022"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "immersive hold",
+    "type": "FULL_PAGE"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p30-narration",
+      "placement": "caption-safe-region",
+      "text": "The field becomes still. The divine assembly faces Devī, and every word that follows is visibly attributed to the gods."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p30-dialogue",
+      "placement": "speaker-anchored-balloon",
+      "speaker_id": "dm-gods",
+      "text": "You are the power present through the worlds. You are knowledge and the fortune that sustains a household. You protect those who seek refuge. Your greatness is beyond the measure of our speech."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p30-extra-01",
+      "placement": "second-attributed-hymn-balloon",
+      "speaker_id": "dm-gods",
+      "text": "Even those struck down by you have reached heaven through meeting you in battle. Guard us with your gentle form and with your fearsome form. Let your trident, sword, bell and bow protect the directions around us."
+    }
+  ],
+  "location_id": "thanksgiving",
+  "moment_ids": [
+    "gods_hymn_and_boon"
+  ],
+  "narrative_beats": [
+    "The field becomes still. The divine assembly faces Devī, and every word that follows is visibly attributed to the gods."
+  ],
+  "page_id": "page-eed17cbab21ba556a7dcccc4",
+  "page_number": 30,
+  "panel_count": 1,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-gods"
+      ],
+      "composition": "Full-page calm assembly: the gods face Devī across the cleared field, flowers below and open gold-edged space above for both attributed hymn balloons; show directional gestures and weapon symbols only as part of their spoken protection request, with no anonymous theological narration.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p30-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Full-page calm assembly: the gods face Devī across the cleared field, flowers below and open gold-edged space above for both attributed hymn balloons; show directional gestures and weapon symbols only as part of their spoken protection request, with no anonymous theological narration.",
+        "shot_scale": "wide"
+      },
+      "location_id": "thanksgiving",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p30-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Full-page calm assembly: the gods face Devī across the cleared field, flowers below and open gold-edged space above for both attributed hymn balloons; show directional gestures and weapon symbols only as part of their spoken protection request, with no anonymous theological narration."
+    }
+  ],
+  "reading_order": [
+    "p30-panel-01"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p30-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-022-a",
+    "claim-022-b",
+    "claim-022-c"
+  ],
+  "title": "The Gods Speak Their Praise",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation"
+  ],
+  "version": 3,
+  "visual_intent": "A cinematic story beat with exact editable lettering and source-bounded imagery."
+}

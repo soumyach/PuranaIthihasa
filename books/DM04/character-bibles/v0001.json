@@ -1,0 +1,1644 @@
+{
+  "book_id": "DM04",
+  "content_hash": "f406ee38f74084d5ab6e84dedb5e017c64d618119440d1e8671d073d4776498f",
+  "id": "character-bibles-8716ee47e9a04017c2ed249d",
+  "kind": "character-bibles",
+  "parent_hash": null,
+  "payload": {
+    "book_id": "DM04",
+    "entries": [
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "Manifested from gathered divine radiances; receives the sourced gifts, lion and adornments; defeats Mahiṣāsura and grants the gods' request."
+        },
+        "authorized_weapon_ids": [
+          "dm-trident",
+          "dm-discus",
+          "dm-conch",
+          "dm-bow",
+          "dm-arrows",
+          "dm-vajra",
+          "dm-bell",
+          "dm-noose",
+          "dm-axe",
+          "dm-sword",
+          "dm-shield"
+        ],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-009",
+          "dm-evidence-010",
+          "dm-evidence-011",
+          "dm-evidence-021",
+          "dm-evidence-023"
+        ],
+        "id": "dm-devi",
+        "identity": {
+          "group": "principal",
+          "id": "dm-devi",
+          "label": "Devī / Caṇḍikā"
+        },
+        "manifestation_rules": [
+          {
+            "manifestation_id": "dm-devi-manifested",
+            "name": "manifested Devī",
+            "required_attributes": [
+              "source-specified divine form",
+              "radiant crown and sourced equipment"
+            ],
+            "source_scope": "dm-source"
+          }
+        ],
+        "name": "Devī / Caṇḍikā",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "deep blue, antique gold and warm ivory; serene authority; many arms shown only as needed to hold sourced equipment",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "deep blue, antique gold and warm ivory; serene authority; many arms shown only as needed to hold sourced equipment",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "Displaces the gods, enters battle in buffalo form, changes through the sourced sequence of forms, and is slain while half-emerged."
+        },
+        "authorized_weapon_ids": [
+          "dm-sword",
+          "dm-shield"
+        ],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-008",
+          "dm-evidence-019",
+          "dm-evidence-020",
+          "dm-evidence-021"
+        ],
+        "id": "dm-mahisha",
+        "identity": {
+          "group": "principal",
+          "id": "dm-mahisha",
+          "label": "Mahiṣāsura"
+        },
+        "manifestation_rules": [
+          {
+            "manifestation_id": "dm-mahisha-buffalo",
+            "name": "buffalo",
+            "required_attributes": [
+              "buffalo form",
+              "massive grounded silhouette"
+            ],
+            "source_scope": "dm-source"
+          },
+          {
+            "manifestation_id": "dm-mahisha-lion",
+            "name": "lion",
+            "required_attributes": [
+              "lion form",
+              "distinct from Devi's lion"
+            ],
+            "source_scope": "dm-source"
+          },
+          {
+            "manifestation_id": "dm-mahisha-armed-man",
+            "name": "armed man",
+            "required_attributes": [
+              "humanlike armed form",
+              "same antagonist identity cues"
+            ],
+            "source_scope": "dm-source"
+          },
+          {
+            "manifestation_id": "dm-mahisha-elephant",
+            "name": "elephant",
+            "required_attributes": [
+              "elephant form",
+              "trunk action readable"
+            ],
+            "source_scope": "dm-source"
+          },
+          {
+            "manifestation_id": "dm-mahisha-partial-emergence",
+            "name": "half-emerged asura",
+            "required_attributes": [
+              "half-emerged from buffalo mouth",
+              "decisive action readable without gore"
+            ],
+            "source_scope": "dm-source"
+          }
+        ],
+        "name": "Mahiṣāsura",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "dark umber and oxblood accents; powerful asymmetrical mass; one persistent brow and eye motif across forms",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "dark umber and oxblood accents; powerful asymmetrical mass; one persistent brow and eye motif across forms",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "Given by Himavat; serves as Devī's mount and combat companion; defeats Cāmara and is seized by the elephant form."
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-011",
+          "dm-evidence-017",
+          "dm-evidence-020"
+        ],
+        "id": "dm-lion",
+        "identity": {
+          "group": "principal",
+          "id": "dm-lion",
+          "label": "Devī's lion"
+        },
+        "manifestation_rules": [],
+        "name": "Devī's lion",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "tawny-gold coat, dark mane, broad triangular head; never resemble Mahiṣa's lion form",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "tawny-gold coat, dark mane, broad triangular head; never resemble Mahiṣa's lion form",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "Displaced divine assembly whose radiances manifest Devī; later praise her and request remembrance-based aid."
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-008",
+          "dm-evidence-009",
+          "dm-evidence-022",
+          "dm-evidence-023"
+        ],
+        "id": "dm-gods",
+        "identity": {
+          "group": "assembly",
+          "id": "dm-gods",
+          "label": "The gods"
+        },
+        "manifestation_rules": [],
+        "name": "The gods",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "group silhouette with differentiated crowns and restrained pale-gold radiance",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "group silhouette with differentiated crowns and restrained pale-gold radiance",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "Leads the displaced gods and contributes radiance."
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-008",
+          "dm-evidence-009"
+        ],
+        "id": "dm-brahma",
+        "identity": {
+          "group": "principal god",
+          "id": "dm-brahma",
+          "label": "Brahmā"
+        },
+        "manifestation_rules": [],
+        "name": "Brahmā",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "four-facing implication through composition, warm copper-gold palette",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "four-facing implication through composition, warm copper-gold palette",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "Receives the gods' plea, contributes radiance and gives a trident."
+        },
+        "authorized_weapon_ids": [
+          "dm-trident"
+        ],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-008",
+          "dm-evidence-009",
+          "dm-evidence-010"
+        ],
+        "id": "dm-shiva",
+        "identity": {
+          "group": "principal god",
+          "id": "dm-shiva",
+          "label": "Śiva"
+        },
+        "manifestation_rules": [],
+        "name": "Śiva",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "ash, deep blue and muted gold; trident donor",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "ash, deep blue and muted gold; trident donor",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "Receives the gods' plea, contributes radiance and gives a discus."
+        },
+        "authorized_weapon_ids": [
+          "dm-discus"
+        ],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-008",
+          "dm-evidence-009",
+          "dm-evidence-010"
+        ],
+        "id": "dm-vishnu",
+        "identity": {
+          "group": "principal god",
+          "id": "dm-vishnu",
+          "label": "Viṣṇu"
+        },
+        "manifestation_rules": [],
+        "name": "Viṣṇu",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "blue and antique gold; discus donor",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "blue and antique gold; discus donor",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "His office is occupied; he contributes radiance and gives the vajra and bell."
+        },
+        "authorized_weapon_ids": [
+          "dm-vajra",
+          "dm-bell"
+        ],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-008",
+          "dm-evidence-009",
+          "dm-evidence-010"
+        ],
+        "id": "dm-indra",
+        "identity": {
+          "group": "principal god",
+          "id": "dm-indra",
+          "label": "Indra"
+        },
+        "manifestation_rules": [],
+        "name": "Indra",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "storm-blue and gold; vajra-bearing silhouette",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "storm-blue and gold; vajra-bearing silhouette",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "Narrator in the forest frame."
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-001",
+          "dm-evidence-002",
+          "dm-evidence-003"
+        ],
+        "id": "dm-medhas",
+        "identity": {
+          "group": "frame",
+          "id": "dm-medhas",
+          "label": "Sage Medhas"
+        },
+        "manifestation_rules": [],
+        "name": "Sage Medhas",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "aged sage, bark-and-ivory garments, composed seated silhouette",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "aged sage, bark-and-ivory garments, composed seated silhouette",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "Listener in the forest frame."
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-001",
+          "dm-evidence-002",
+          "dm-evidence-003"
+        ],
+        "id": "dm-suratha",
+        "identity": {
+          "group": "frame",
+          "id": "dm-suratha",
+          "label": "King Suratha"
+        },
+        "manifestation_rules": [],
+        "name": "King Suratha",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "travel-worn royal bearing, muted blue cloak, attentive posture",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "travel-worn royal bearing, muted blue cloak, attentive posture",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "Listener in the forest frame."
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-001",
+          "dm-evidence-002",
+          "dm-evidence-003"
+        ],
+        "id": "dm-samadhi",
+        "identity": {
+          "group": "frame",
+          "id": "dm-samadhi",
+          "label": "Samādhi"
+        },
+        "manifestation_rules": [],
+        "name": "Samādhi",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "plain earth-toned garments, open attentive posture",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "plain earth-toned garments, open attentive posture",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "The sourced chariot, elephant, cavalry and foot contingents."
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-012",
+          "dm-evidence-013",
+          "dm-evidence-015"
+        ],
+        "id": "dm-asura-army",
+        "identity": {
+          "group": "army",
+          "id": "dm-asura-army",
+          "label": "Mahiṣāsura's army"
+        },
+        "manifestation_rules": [],
+        "name": "Mahiṣāsura's army",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "charcoal and oxblood massing; varied units readable without grotesque detail",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "charcoal and oxblood massing; varied units readable without grotesque detail",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "Troops arising from Devī's breaths during battle."
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-014",
+          "dm-evidence-015"
+        ],
+        "id": "dm-devi-troops",
+        "identity": {
+          "group": "army",
+          "id": "dm-devi-troops",
+          "label": "Devī's breath-born troops"
+        },
+        "manifestation_rules": [],
+        "name": "Devī's breath-born troops",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "warm ivory-gold energy resolving into disciplined figures",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "warm ivory-gold energy resolving into disciplined figures",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "bow, sword and spear sequence"
+        },
+        "authorized_weapon_ids": [
+          "dm-bow",
+          "dm-arrows",
+          "dm-sword",
+          "dm-spear"
+        ],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-016"
+        ],
+        "id": "dm-chikshura",
+        "identity": {
+          "group": "commander",
+          "id": "dm-chikshura",
+          "label": "Cikṣura"
+        },
+        "manifestation_rules": [],
+        "name": "Cikṣura",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "elephant-mounted commander with two spear attacks"
+        },
+        "authorized_weapon_ids": [
+          "dm-spear"
+        ],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-017"
+        ],
+        "id": "dm-chamara",
+        "identity": {
+          "group": "commander",
+          "id": "dm-chamara",
+          "label": "Cāmara"
+        },
+        "manifestation_rules": [],
+        "name": "Cāmara",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "named chief defeated by the source-specified means"
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-018"
+        ],
+        "id": "dm-udagra",
+        "identity": {
+          "group": "commander",
+          "id": "dm-udagra",
+          "label": "Udagra"
+        },
+        "manifestation_rules": [],
+        "name": "Udagra",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "named chief defeated by the source-specified means"
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-018"
+        ],
+        "id": "dm-mahahanu",
+        "identity": {
+          "group": "commander",
+          "id": "dm-mahahanu",
+          "label": "Mahāhanu"
+        },
+        "manifestation_rules": [],
+        "name": "Mahāhanu",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "commander of a vast contingent"
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-013"
+        ],
+        "id": "dm-asiloman",
+        "identity": {
+          "group": "commander",
+          "id": "dm-asiloman",
+          "label": "Asiloman"
+        },
+        "manifestation_rules": [],
+        "name": "Asiloman",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "named chief defeated by the source-specified means"
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-018"
+        ],
+        "id": "dm-bashkala",
+        "identity": {
+          "group": "commander",
+          "id": "dm-bashkala",
+          "label": "Bāṣkala"
+        },
+        "manifestation_rules": [],
+        "name": "Bāṣkala",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "named chief defeated by the source-specified means"
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-018"
+        ],
+        "id": "dm-bidala",
+        "identity": {
+          "group": "commander",
+          "id": "dm-bidala",
+          "label": "Biḍāla"
+        },
+        "manifestation_rules": [],
+        "name": "Biḍāla",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "named chief defeated by the source-specified means"
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-018"
+        ],
+        "id": "dm-karala",
+        "identity": {
+          "group": "commander",
+          "id": "dm-karala",
+          "label": "Karāla"
+        },
+        "manifestation_rules": [],
+        "name": "Karāla",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "named chief defeated by the source-specified means"
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-018"
+        ],
+        "id": "dm-uddhata",
+        "identity": {
+          "group": "commander",
+          "id": "dm-uddhata",
+          "label": "Uddhata"
+        },
+        "manifestation_rules": [],
+        "name": "Uddhata",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "named chief defeated by the source-specified means"
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-018"
+        ],
+        "id": "dm-tamra",
+        "identity": {
+          "group": "commander",
+          "id": "dm-tamra",
+          "label": "Tāmra"
+        },
+        "manifestation_rules": [],
+        "name": "Tāmra",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "named chief defeated by the source-specified means"
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-018"
+        ],
+        "id": "dm-andhaka",
+        "identity": {
+          "group": "commander",
+          "id": "dm-andhaka",
+          "label": "Andhaka"
+        },
+        "manifestation_rules": [],
+        "name": "Andhaka",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "named chief defeated by the source-specified means"
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-018"
+        ],
+        "id": "dm-ugrasya",
+        "identity": {
+          "group": "commander",
+          "id": "dm-ugrasya",
+          "label": "Ugrāsya"
+        },
+        "manifestation_rules": [],
+        "name": "Ugrāsya",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "named chief defeated by the source-specified means"
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-018"
+        ],
+        "id": "dm-ugravirya",
+        "identity": {
+          "group": "commander",
+          "id": "dm-ugravirya",
+          "label": "Ugravīrya"
+        },
+        "manifestation_rules": [],
+        "name": "Ugravīrya",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "named chief defeated by the source-specified means"
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-018"
+        ],
+        "id": "dm-durdhara",
+        "identity": {
+          "group": "commander",
+          "id": "dm-durdhara",
+          "label": "Durdhara"
+        },
+        "manifestation_rules": [],
+        "name": "Durdhara",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "recognition_rule": "preserve across every appearance"
+        }
+      },
+      {
+        "arm_count_policy": "Use only the source-bounded or explicitly approved depiction recorded here; never improvise between pages.",
+        "authoritative_source_record": {
+          "source_facts": "named chief defeated by the source-specified means"
+        },
+        "authorized_weapon_ids": [],
+        "clothing_policy": "Classical, modest, movement-readable clothing; exact textiles remain a proposed visual choice.",
+        "continuity_checks": [
+          "face",
+          "silhouette",
+          "arm count",
+          "clothing",
+          "ornaments",
+          "weapons",
+          "mount relationship"
+        ],
+        "evidence_ids": [
+          "dm-evidence-018"
+        ],
+        "id": "dm-durmukha",
+        "identity": {
+          "group": "commander",
+          "id": "dm-durmukha",
+          "label": "Durmukha"
+        },
+        "manifestation_rules": [],
+        "name": "Durmukha",
+        "ornament_policy": "Only source-given ornaments are mandatory; other ornament detail stays restrained and consistent.",
+        "prohibited_attributes": [
+          "unsourced halo symbolism",
+          "unsourced weapon",
+          "merged identity"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "required_attributes": [
+          "stable silhouette",
+          "recognizable face or group profile",
+          "source-bounded role"
+        ],
+        "silhouette_policy": "Maintain a unique, instantly readable outline at thumbnail scale.",
+        "source_scope": "dm-source",
+        "unspecified_fields": [
+          "exact complexion",
+          "exact garment weave",
+          "exact age presentation"
+        ],
+        "visual_constants": {
+          "palette_family": "distinct helmet crest and compact oxblood/charcoal commander silhouette",
+          "recognition_rule": "preserve across every appearance"
+        }
+      }
+    ],
+    "kind": "CHARACTER",
+    "manuscript_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+    "schema_version": "1.0",
+    "source_and_proposal_separation": "Authoritative source records and proposed visual interpretations are stored in disjoint fields.",
+    "version": 1
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

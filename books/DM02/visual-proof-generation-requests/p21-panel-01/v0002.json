@@ -1,0 +1,95 @@
+{
+  "book_id": "DM02",
+  "content_hash": "8305bf4128952aa51ccbef1d8014d35987ffabaeb1bc6788b47fc2761d0d6f80",
+  "id": "visual-proof-generation-requests/p21-panel-01-cef59843ea9e7999e31f3391",
+  "kind": "visual-proof-generation-requests/p21-panel-01",
+  "parent_hash": "a6b2964704971570cd774025c01012ccb471292b464cd17f5ff0d5658ec2fbac",
+  "payload": {
+    "automatic_retry_authorized": false,
+    "book_id": "DM02",
+    "campaign_approval_id": "approval-e7619062088034622bbd2ca5",
+    "campaign_id": "dm02-corrective-proof-campaign-01",
+    "campaign_subject_hash": "dc0d0d1bdccde821f94fce4b6a614c7dcbea7562cb66cf6ec4f72d0751120679",
+    "character_consistency_certified": false,
+    "character_reference_promoted": false,
+    "location_reference_promoted": false,
+    "maximum_operations_for_campaign": 2,
+    "maximum_operations_for_unit": 1,
+    "maximum_paid_spend_minor_units": 0,
+    "operation": "edit",
+    "page_id": "page-8619f3db280abbfd867eefe4",
+    "page_number": 21,
+    "panel_id": "p21-panel-01",
+    "parent_generation_request_content_hash": "a6b2964704971570cd774025c01012ccb471292b464cd17f5ff0d5658ec2fbac",
+    "parent_image_path": "books/DM02/visual-proof-campaign/images/p21-panel-01/v0001.png",
+    "parent_image_receipt_content_hash": "c7b1845aec11617e4fc1063e5351eb21ed13b9a673c5940107d377abdc2b5aa1",
+    "parent_image_sha256": "e7de39593aa71644f4c2a57fd577855a8611b2a0c8015b78497d84ecb759dbee",
+    "parent_review_content_hash": "036e33c3e40285d1cf95c6e439ee60428622608cff4b2f180e67ab12659a7167",
+    "prompt": "EDIT REFERENCE 1, the existing DM02 Page 21 proof, into one corrected full-page portrait 3:4 illustration. Preserve its premium Indian devotional painterly finish and the recognizable identities of Vishnu, broad Madhu, and taller angular Kaitabha, but replace the source-critical errors. The prior Page 19 acceptance and Page 20 condition-satisfied state have already occurred. Show the decisive Page 21 consequence on a low, open, edge-indeterminate plane of unflooded earth with the cosmic flood visible beyond. Keep every edge, exact size, exposure mechanism, shoreline, and larger geography outside the frame or visually indeterminate: no island, cliff, waterfall, mountain, bounded platform, or invented cosmography. The earth plane must be geologically separate from every body; no thigh, lap, buttocks, anatomy, or body may serve as the platform or condition solution. Vishnu uses only the single sourced discus. Keep the discus and its luminous motion path wholly outside both demons' torsos. Show their defeat non-graphically through recoil, collapsing stance, separated silhouettes, and motion only: no wound, blood, red impact mark, severing, bodily contact point, or precise strike locus. Preserve Madhu as broad in oxblood and charcoal and Kaitabha as taller/angular in charcoal and deep crimson, treating those colors only as project continuity proposals. Use only scene-required coherent visible arms. No halo, extra weapon, sacred emblem, flag, army, temple, Western fantasy armor, unrelated figure, text, page border, speech balloon, or watermark. Keep the complete upper caption-safe rectangle (approximately x 7%-93%, y 5%-25%) quiet enough for the exact two-paragraph Page 21 narration without covering faces, the discus, the demons' readable recoil, or the earth/flood distinction. REFERENCE 2 is PR7 role A and supplies only premium Khatakshetra finish, warm devotional lighting, painterly detail, and cinematic sacred focus; copy none of its character anatomy, arm count, halo, emblems, scene, or theology. REFERENCE 3 is PR7 role B and supplies only climactic hierarchy, depth, and resolution energy; copy none of its Chandika/Chamunda/Mothers/Raktabija identities, lion, skulls, blood, weapons, flags, army, text, frame, or theology. REFERENCE 4 is the previously reviewed DM02 Page 14 continuity candidate, not a canonical approved character reference; use it only to keep Vishnu stable, Madhu broad/oxblood-charcoal, and Kaitabha tall-angular/charcoal-deep-crimson. Do not transfer its battle pose, geography, weapons, effects, or approve it by implication.",
+    "prompt_sha256": "fa06d8ec4b273c462b23939b3ec1848fe690bfb7924559815616784da07ed69f",
+    "provider_id": "codex-built-in-image-gen",
+    "provider_interface": "referenced_image_paths",
+    "references": [
+      {
+        "content_transfer": "PRESERVE_IDENTITIES_AND_PREMIUM_FINISH_CORRECT_LOCKED_ERRORS",
+        "input_index": 1,
+        "path": "books/DM02/visual-proof-campaign/images/p21-panel-01/v0001.png",
+        "role": "EDIT_TARGET_AND_PARENT_ART",
+        "sha256": "e7de39593aa71644f4c2a57fd577855a8611b2a0c8015b78497d84ecb759dbee"
+      },
+      {
+        "approval_status": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY",
+        "content_transfer": "STYLE_ONLY_CONTENT_FORBIDDEN",
+        "input_index": 2,
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+        "reference_id": "kgs-satya-p01",
+        "role": "A_SERIES_VISUAL_IDENTITY",
+        "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+      },
+      {
+        "approval_status": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY",
+        "content_transfer": "STYLE_AND_HIERARCHY_ONLY_CONTENT_FORBIDDEN",
+        "input_index": 3,
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+        "reference_id": "kgs-dm08-p28",
+        "role": "B_PAGE_PANEL_COMPOSITION",
+        "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5"
+      },
+      {
+        "approval_status": "REVIEWED_PROOF_NOT_PROMOTED_TO_CHARACTER_REFERENCE",
+        "content_transfer": "IDENTITY_PROPOSAL_ONLY",
+        "input_index": 4,
+        "path": "books/DM02/visual-proof-campaign/images/p14-panel-01/v0001.png",
+        "role": "SUPPORTING_CONTINUITY_CANDIDATE_NOT_ROLE_C",
+        "sha256": "c3cf653e36e0d03a0d9b126ffeab56bee0b655ba752d8d988d9d057f8354170c"
+      }
+    ],
+    "request_hash": "552a899520c3be5c50a6c6f035d91f3cc5ceaf8b8a397213cefd0924e2bd60f0",
+    "required_sequence": [
+      "Page 19 condition stated and accepted",
+      "Page 20 condition-satisfied state established",
+      "Page 21 discus consequence"
+    ],
+    "safe_regions": [
+      {
+        "height": 0.2,
+        "id": "p21-page-safe",
+        "purpose": "primary lettering",
+        "width": 0.86,
+        "x": 0.07,
+        "y": 0.05
+      }
+    ],
+    "schema_version": "1.0",
+    "source_iconography_clearance_sha256": "b80b470d873bca8f6c1b78c7a983bdc4e3101ca427d5abe821f4c167d685eb05",
+    "status": "AUTHORIZED_READY_FOR_SINGLE_OPERATION",
+    "text_in_image": false,
+    "unavailable_reference_roles": [
+      "C_APPROVED_CHARACTER_REFERENCE",
+      "D_APPROVED_SETTING_REFERENCE"
+    ],
+    "unit_id": "page-8619f3db280abbfd867eefe4--p21-panel-01"
+  },
+  "schema_version": "1.0",
+  "version": 2
+}

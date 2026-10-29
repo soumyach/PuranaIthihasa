@@ -1,0 +1,15 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/character-reference.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {"const": "1.0", "type": "string"},
+    "book_id": {"type": "string"},
+    "character_bible_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "registry_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "entries": {"items": {"type": "object"}, "minItems": 1, "type": "array"}
+  },
+  "required": ["schema_version", "book_id", "character_bible_hash", "registry_hash", "entries"],
+  "title": "Character reference-conditioning registry",
+  "type": "object"
+}

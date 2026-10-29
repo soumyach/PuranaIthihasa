@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM04",
+  "page_id": "page-27d143ae995bf60742b65c5b",
+  "page_title": "A Question Beneath the Trees",
+  "reviewed_at": "2026-10-21T18:45:39+05:30",
+  "reviewer": {
+    "id": "/root",
+    "role": "LEAD_ARCHITECT_PAGE_COMPOSITOR_AND_ACTUAL_PIXEL_REVIEWER",
+    "inspected_actual_pixels": true,
+    "reading_size_inspection": true,
+    "generated_source_art": false
+  },
+  "inputs": {
+    "page_script": {
+      "path": "books/DM04/page-scripts/page-0001.v0003.json",
+      "sha256": "4509f47443c27b55dd6d8914def8119393fcc16f23b56a0c328c094c0a042cc0"
+    },
+    "reused_art": {
+      "path": "books/DM04/production-pilot/images/page-27d143ae995bf60742b65c5b/v0001.png",
+      "sha256": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+      "review_status_at_input": "FIX"
+    }
+  },
+  "output": {
+    "path": "books/DM04/private-page-previews/page-27d143ae995bf60742b65c5b/v0001/0001-page-27d143ae995bf60742b65c5b.png",
+    "sha256": "a93e9f987b6c020c2bdd0dc336dbdfce4caf435bb2bc125c25dba553f08c07e1",
+    "pixel_sha256": "7fce11a60a9f54557be4a06100e8fab559014b152556cc8191eed0cc68fc9e58",
+    "dimensions": [
+      1086,
+      1448
+    ],
+    "publication_eligible": false,
+    "visible_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION"
+  },
+  "crop_review": [
+    {
+      "panel_id": "p01-panel-01",
+      "source_crop_pixels": [
+        0,
+        335,
+        1086,
+        969
+      ],
+      "result": "PASS",
+      "evidence": "The wide crop retains Suratha, Samādhi, Medhas, the fire and enough river-and-hermitage context to establish the listening triangle. The narration plaque remains above all three faces."
+    },
+    {
+      "panel_id": "p01-panel-02",
+      "source_crop_pixels": [
+        385,
+        462,
+        1086,
+        870
+      ],
+      "result": "PASS_WITH_LIMITATION",
+      "evidence": "The 1.55x crop is materially distinct from panel 1: Medhas becomes dominant, Samādhi remains an attentive edge presence, and the exact dialogue is readable without covering either face. It does not create the locked over-shoulder camera angle."
+    }
+  ],
+  "assessments": [
+    {
+      "dimension": "DETERMINISTIC_TECHNICAL_VALIDATION",
+      "result": "PASS",
+      "evidence": "The page engine reports no geometry, hash, approval-isolation, font-size, collision or overflow findings. The output is 1086 by 1448 pixels."
+    },
+    {
+      "dimension": "EXACT_EDITABLE_LETTERING",
+      "result": "PASS",
+      "evidence": "Both locked strings match their source-script hashes. Narration rendered at 24 px and dialogue at 26 px, above the 22 px floor, with no overflow. Lettering remains in the JSON composition authority rather than the source art."
+    },
+    {
+      "dimension": "READING_SIZE_LEGIBILITY",
+      "result": "PASS",
+      "evidence": "At normal page-view size, the title, narration and dialogue remain readable with strong cream-on-navy and dark-on-cream contrast. The speaker tail reaches Medhas without crossing either face."
+    },
+    {
+      "dimension": "SOURCE_AND_CHARACTER_FIDELITY",
+      "result": "PASS",
+      "evidence": "The composition only crops the reviewed source pixels. It introduces no new character, object, iconography, event, doctrine or raster lettering into the artwork."
+    },
+    {
+      "dimension": "TWO_BEAT_DIFFERENTIATION",
+      "result": "PASS",
+      "evidence": "Panel 1 functions as a three-person establishing beat; panel 2 functions as a tighter speaker-emphasis beat. The different source rectangles and 1.0x versus 1.55x framing are not exact duplication."
+    },
+    {
+      "dimension": "LOCKED_TWO_PANEL_STORYBOARD_CONFORMANCE",
+      "result": "FIX",
+      "evidence": "The source portrait cannot yield the specified over-shoulder view from behind both listeners. The preview therefore demonstrates a valid two-panel page design but is not a completed rendering of the locked two-panel storyboard."
+    },
+    {
+      "dimension": "PR7_REFERENCE_ALIGNMENT",
+      "result": "PASS_WITH_LIMITATION",
+      "evidence": "The navy-and-gold frame, cream lettering surfaces, numbered narration and clear panel hierarchy align with the inspected PR7 presentation references. Compared with kgs-dm08-p09.png and kgs-satya-p02.png, the page has less camera-angle and pose variation because both panels derive from one source illustration."
+    },
+    {
+      "dimension": "PRIVATE_PREVIEW_ISOLATION",
+      "result": "PASS",
+      "evidence": "The visible non-publication label sits below the artwork; publication_eligible is false; the factory gate reports state_mutation_allowed false."
+    }
+  ],
+  "verdict": "FIX",
+  "verdict_reason": "The page is a polished and readable internal two-beat diagnostic, but a new separately reviewed panel illustration is required to satisfy the locked over-shoulder second panel before approval.",
+  "essential_fixes_before_approval": [
+    "Create a separately authorized panel-2 illustration using the locked over-shoulder view from behind Suratha and Samādhi, with Medhas's face and speaking gesture preserved.",
+    "Recompose with that distinct panel-2 asset and repeat actual-pixel crop, lettering and character-continuity review.",
+    "Keep this preview publication-ineligible; do not promote its FIX-status source art or composition as an approved page."
+  ],
+  "pdf_proof": {
+    "created": false,
+    "reason": "The optional PDF was withheld because the visual verdict is FIX and the single-page PNG plus editable composition already provide the requested diagnostic evidence."
+  },
+  "cost": {
+    "image_generation_operations": 0,
+    "external_provider_calls": 0,
+    "paid_api_calls": 0,
+    "additional_monetary_cost_usd": 0.0,
+    "basis": "Local deterministic composition, validation and pixel inspection only."
+  }
+}

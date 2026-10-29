@@ -1,0 +1,19 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/agent-handoff.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {"const": "1.0", "type": "string"},
+    "book_id": {"type": "string"},
+    "kind": {"enum": ["MANUSCRIPT_GENERATION", "MANUSCRIPT_REVISION", "EDITORIAL_REVIEW", "VISUAL_PREPRODUCTION", "VISUAL_REVIEW"], "type": "string"},
+    "status": {"const": "AWAITING_CODEX_SPECIALIST_AGENT", "type": "string"},
+    "request_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "request": {"type": "object"},
+    "locked_input_hashes": {"items": {"pattern": "^[0-9a-f]{64}$", "type": "string"}, "minItems": 1, "type": "array"},
+    "handoff_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "id": {"type": "string"}
+  },
+  "required": ["schema_version", "book_id", "kind", "status", "request_hash", "request", "locked_input_hashes", "handoff_hash", "id"],
+  "title": "Codex specialist-agent handoff",
+  "type": "object"
+}

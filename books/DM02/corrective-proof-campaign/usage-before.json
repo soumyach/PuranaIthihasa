@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "dm02-corrective-proof-campaign-01",
+  "observation_phase": "BEFORE_IMAGE_OPERATION",
+  "observed_at": "2026-10-22T15:01:22Z",
+  "source": "CODEX_APP_GET_USAGE_LIMITS_READ_ONLY",
+  "ordinary_usage_allowed": true,
+  "plan_type_reported_by_control": "prolite",
+  "codex_limit_id": "codex",
+  "codex_used_percent": 37,
+  "codex_remaining_percent": 63,
+  "window_duration_minutes": 10080,
+  "resets_at_unix_seconds": 1793101834,
+  "has_purchased_credits": false,
+  "purchased_credit_balance": "0",
+  "spend_control_reached": false,
+  "rate_limit_reached_type": null,
+  "free_rate_limit_reset_credits_available": 3,
+  "api_key_supplied": false,
+  "external_provider_authorized": false,
+  "paid_authorization_requested_by_tool": false,
+  "per_image_credit_estimate_available": false,
+  "incremental_usd_amount_available": false,
+  "zero_incremental_usd_positively_verified": false,
+  "notes": [
+    "The control exposes the shared Codex allowance and purchased-credit balance, not a per-image quote or reservation.",
+    "The built-in image interface has not requested paid billing, an API key, an external provider, or an automatic credit purchase.",
+    "Official OpenAI documentation says Codex activity counts against applicable plan usage and credits; images and certain tool activity may not appear at chat level.",
+    "Complete monetary verification requires the applicable workspace usage or billing records; the campaign therefore reports actual incremental USD as UNKNOWN_NOT_EXPOSED."
+  ],
+  "official_documentation": [
+    "https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan",
+    "https://help.openai.com/en/articles/20001478-reviewing-work-and-codex-usage-and-using-personal-analytics-in-chatgpt-desktop"
+  ]
+}

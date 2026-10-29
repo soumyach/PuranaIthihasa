@@ -1,0 +1,266 @@
+{
+  "character_ids": [
+    "dm-devi",
+    "dm-udagra",
+    "dm-karala",
+    "dm-uddhata",
+    "dm-bashkala",
+    "dm-asura-army"
+  ],
+  "continuity_in": "after-page-20",
+  "continuity_out": "after-page-21",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-devi",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-udagra",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-karala",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-uddhata",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-bashkala",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-asura-army",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-018"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "THREE_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p21-narration",
+      "placement": "caption-safe-region",
+      "text": "Udagra, Karāla, Uddhata and Bāṣkala are shown in separate readable actions using the source-specified groupings."
+    }
+  ],
+  "location_id": "battlefield",
+  "moment_ids": [
+    "commander_battles"
+  ],
+  "narrative_beats": [
+    "Udagra, Karāla, Uddhata and Bāṣkala are shown in separate readable actions using the source-specified groupings."
+  ],
+  "page_id": "page-a8473c318f6ebbd2768dacfb",
+  "page_number": 21,
+  "panel_count": 3,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-udagra",
+        "dm-karala",
+        "dm-uddhata",
+        "dm-bashkala",
+        "dm-asura-army"
+      ],
+      "composition": "Wide establishing action",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p21-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false
+      },
+      "location_id": "battlefield",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p21-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Udagra, Karāla, Uddhata and Bāṣkala are shown in separate readable actions using the source-specified groupings."
+    },
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-udagra",
+        "dm-karala",
+        "dm-uddhata",
+        "dm-bashkala",
+        "dm-asura-army"
+      ],
+      "composition": "Closer reaction or consequence beat",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p21-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false
+      },
+      "location_id": "battlefield",
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p21-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Advance the same sourced action without repeating the lettering."
+    },
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-udagra",
+        "dm-karala",
+        "dm-uddhata",
+        "dm-bashkala",
+        "dm-asura-army"
+      ],
+      "composition": "Closer reaction or consequence beat",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p21-panel-03",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false
+      },
+      "location_id": "battlefield",
+      "reading_order": 3,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p21-panel-03-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Advance the same sourced action without repeating the lettering."
+    }
+  ],
+  "reading_order": [
+    "p21-panel-01",
+    "p21-panel-02",
+    "p21-panel-03"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p21-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-018-a",
+    "claim-018-b"
+  ],
+  "title": "The Chiefs, First Wave",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation"
+  ],
+  "version": 1,
+  "visual_intent": "A cinematic story beat with exact editable lettering and source-bounded imagery."
+}

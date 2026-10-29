@@ -1,0 +1,23 @@
+{
+  "found": [
+    {"destination": "MYTHOLOGY_COMIC_RULES.md", "filename": "MYTHOLOGY_COMIC_RULES.md", "sha256": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070"},
+    {"destination": "book-factory/inputs/catalogues/Khatakshetra_Illustrated_Library_Catalogue_v0.1.json", "filename": "Khatakshetra_Illustrated_Library_Catalogue_v0.1.json", "sha256": "e80483a0c77e8453616868b85ce883407e7c5bfaa81fae5d6c605266764c2f5b"},
+    {"destination": "book-factory/references/literary-benchmarks/The_Enemy_Who_Multiplied_Manuscript_v2.md", "filename": "The_Enemy_Who_Multiplied_Manuscript_v2.md", "sha256": "6684d61e7c8f58a3fc3d851d7e8cbc7d13eb1e42105dbb9d011c1e7453791865"},
+    {"destination": "book-factory/references/visual-benchmarks/Satyanarayana_Vrata_Katha_Complete_Illustrated_Storybook.pdf", "filename": "Satyanarayana_Vrata_Katha_Complete_Illustrated_Storybook.pdf", "sha256": "82ae125d099ef2608adad705922567df6b553db40dd39af64b77c5de28dcadd2", "storage_mode": "LOCAL_UNTRACKED_REFERENCE"},
+    {"destination": "book-factory/references/visual-benchmarks/The_Enemy_Who_Multiplied_Original_Size_Combined.pdf", "filename": "The_Enemy_Who_Multiplied_Original_Size_Combined.pdf", "sha256": "3867fccdd8c8755d27ff06c7543d8002cefb7531c1d4f39c743a43bff9c4a29f", "storage_mode": "LOCAL_UNTRACKED_REFERENCE"}
+  ],
+  "missing": [],
+  "operational_blockers": [
+    "The Codex built-in image tool executed real proof generation in the PR6 session, but its executor is host-injected and no reusable repository credential or provider-side recovery API is configured.",
+    "PR6 declared edit and reference-conditioning capability, but no PR6 request supplied a reference image and no durable provider receipt proves those operations in a future session.",
+    "No DM04 character image has human exact-asset approval; the PR7 role-C character references therefore remain explicitly unavailable rather than reusing rejected proofs.",
+    "DM04 has private-draft rights clearance only; worldwide or target-market publication clearance is not granted.",
+    "DM04 chapter extraction remains atomically partial and blanket independent full-arc scripture/theological approval is not established.",
+    "All four latest DM04 proof images received independent FIX after attempt two; the hard ceiling of two attempts per proof and eight total is exhausted, so style approval cannot open.",
+    "The independent visual reviewer is a zero-cost Codex specialist handoff, not a reusable programmatic visual-evaluation service or human theological approval.",
+    "Typography is not print-ready until a redistributable font choice, trim, bleed, and export profile are approved.",
+    "The four PR7 recovery requests are non-executable preparations. A separate PR8 authorization, fresh provider capability check, exact reference-input receipt, and new budget decision are required before any image or edit call.",
+    "Full illustration, PDF production, and publication remain outside the PR7 milestone."
+  ],
+  "status": "VISUAL_BENCHMARK_COMPLETE_RECOVERY_REQUESTS_PREPARED_GENERATION_NOT_AUTHORIZED"
+}

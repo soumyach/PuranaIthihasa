@@ -1,0 +1,272 @@
+{
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"
+    }
+  },
+  "book_id": "DM02",
+  "book_version": "DM02-BOOK-LEVEL-PRODUCTION-PAGE02-V2",
+  "canvas": {
+    "aspect_ratio": "3:4",
+    "height": 1448,
+    "width": 1086
+  },
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "composition_hash": "b6d3c1c5cbb70185a0d70fbe813d5757b7ccfeb807ab4270a48b2a582a56e48d",
+  "engine_version": "0.8.2",
+  "fixture": false,
+  "fixture_mode": false,
+  "font_config_sha256": "ba6cd2c0c4d716aa550059148339642da7fb2f1af1bfaad2e5d6ab838fb1e0aa",
+  "layout_type": "TWO_PANEL_SEQUENTIAL",
+  "lettering": [
+    {
+      "badge_number": 1,
+      "box": {
+        "height": 0.075,
+        "width": 0.84,
+        "x": 0.08,
+        "y": 0.108
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 24
+      },
+      "lettering_id": "p02-narration",
+      "padding": 14,
+      "panel_id": "p02-panel-01",
+      "reading_order": 1,
+      "source_script_hash": "2306ca608bd7ddb22df7ed26df0f786b36fd04c34f22d93c504480a88362007e",
+      "speaker_id": "narrator",
+      "text": "Then his story moved beyond kingdoms, roads and remembered seasons, to the dissolution of a world."
+    }
+  ],
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "page_id": "page-88792a15dcd25b30d3982d7c",
+  "page_number": 2,
+  "page_script_hash": "2de21eb4f1c1b8bbd608e9bdbda0cf3d24959dc5c453d7ce6a9d6be1cba75bea",
+  "page_title": "BEYOND REMEMBERED SEASONS",
+  "panels": [
+    {
+      "asset": {
+        "approval": {
+          "review_path": "books/DM02/book-level-production/reviews/batch-01.v0001.json",
+          "review_result": "PASS",
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "8e2a798a58cdcefd29329ee1d7001c3f01b40207544ef272dbd9ad0efb3d91b8"
+        },
+        "path": "books/DM02/book-level-production/images/p02-panel-01/v0002.png",
+        "sha256": "8e2a798a58cdcefd29329ee1d7001c3f01b40207544ef272dbd9ad0efb3d91b8",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW"
+      },
+      "crop": {
+        "crop_intent": "Show the complete corrected hand, beads, smoke, low fire and source frame without destructive cropping.",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "mode": "CONTAIN",
+        "zoom": 1.0
+      },
+      "panel_id": "p02-panel-01",
+      "reading_order": 1,
+      "speaker_anchors": []
+    },
+    {
+      "asset": {
+        "approval": {
+          "review_path": "books/DM02/pages-1-3-production/independent-visual-review.v0001.json",
+          "review_result": "PASS",
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "6a74cd64078d324d3d6e6abfdb8b573034f8d9a829b6d0b227bb02eeada5fa17"
+        },
+        "path": "books/DM02/pages-1-3-production/images/p02-panel-02/v0001.png",
+        "sha256": "6a74cd64078d324d3d6e6abfdb8b573034f8d9a829b6d0b227bb02eeada5fa17",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW"
+      },
+      "crop": {
+        "crop_intent": "Show all three neutral silhouettes, the entire low fire and the unaltered transition field.",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "mode": "CONTAIN",
+        "zoom": 1.0
+      },
+      "panel_id": "p02-panel-02",
+      "reading_order": 2,
+      "speaker_anchors": []
+    }
+  ],
+  "parent_preview": {
+    "change_scope": "CONTAIN_BOTH_IMMUTABLE_ASSETS_AND_REDUCE_NARRATION_PLAQUE",
+    "png_path": "books/DM02/private-page-previews/page-88792a15dcd25b30d3982d7c/v0001/0002-page-88792a15dcd25b30d3982d7c.png",
+    "png_sha256": "5f766e2df3e8980035ad5f51021f005cf5d852ffdbc3946486d73c959a449968",
+    "review_result": "FIX_COMPOSITION_ONLY",
+    "spec_path": "books/DM02/private-page-previews/page-88792a15dcd25b30d3982d7c/v0001.spec.json"
+  },
+  "preview_authority": {
+    "basis": "Approval approval-3174e958372faf8a1e6f380f plus independent actual-pixel PASS reviews",
+    "image_generation_authorized": true,
+    "paid_provider_calls_authorized": false,
+    "publication_authorized": false,
+    "scope": "ONE_LOCAL_DM02_PAGE02_FROM_TWO_INDEPENDENTLY_PASS_REVIEWED_ASSETS"
+  },
+  "private_preview": true,
+  "publication_eligible": false,
+  "reading_order": 2,
+  "reference_comparison": [
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "role": "PRESENTATION_REFERENCE_ONLY",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "role": "COMIC_PAGE_RHYTHM_REFERENCE_ONLY",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+    }
+  ],
+  "renderer_source_sha256": "a80f84b2d30b37f402cc08323eb534e92c91641a72185e5c63319b1f284fa469",
+  "required_lettering_ids": [
+    "p02-narration"
+  ],
+  "resolved_font": {
+    "bold": "/System/Library/Fonts/Supplemental/STIXGeneralBol.otf",
+    "bold_sha256": "7e4dfb4979e9bb79a0bdedc56f055eab615fb9a3dff8788a52992ae65e8f572d",
+    "classification": "serif",
+    "family": "STIXGeneral",
+    "font_binary_bundled_in_repository": false,
+    "legal_installation": "Install the STIX Fonts project from its official distribution, then update paths if the operating system stores it elsewhere. Confirm the specific distribution's license before publication.",
+    "license_evidence": "The installed font metadata identifies the STIX license, derived from the SIL Open Font License. The renderer records hashes but does not copy these system files into the repository.",
+    "license_status": "SYSTEM_FONT_LICENSE_REVIEWED_NOT_REDISTRIBUTED",
+    "regular": "/System/Library/Fonts/Supplemental/STIXGeneral.otf",
+    "regular_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7"
+  },
+  "resolved_lettering": [
+    {
+      "box": [
+        87,
+        156,
+        999,
+        265
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p02-narration",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 14,
+      "rendered_font_size": 24,
+      "requested_font_size": 24,
+      "source_script_hash": "2306ca608bd7ddb22df7ed26df0f786b36fd04c34f22d93c504480a88362007e",
+      "text_sha256": "d265d6d9d98482fa25503350e4aa646df903fcb23c676260e19baf951bc488cf"
+    }
+  ],
+  "resolved_panels": [
+    {
+      "asset_path": "books/DM02/book-level-production/images/p02-panel-01/v0002.png",
+      "asset_sha256": "8e2a798a58cdcefd29329ee1d7001c3f01b40207544ef272dbd9ad0efb3d91b8",
+      "box": [
+        49,
+        152,
+        1037,
+        733
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "panel_id": "p02-panel-01",
+      "paste_at": [
+        329,
+        157
+      ],
+      "rendered_size": [
+        428,
+        571
+      ],
+      "scale_mode": "ASPECT_PRESERVING_CONTAIN",
+      "semantic_crop_review": "PENDING_IMAGE_CAPABLE_REVIEW",
+      "source_crop": [
+        0,
+        0,
+        1086,
+        1448
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "zoom": 1.0
+    },
+    {
+      "asset_path": "books/DM02/pages-1-3-production/images/p02-panel-02/v0001.png",
+      "asset_sha256": "6a74cd64078d324d3d6e6abfdb8b573034f8d9a829b6d0b227bb02eeada5fa17",
+      "box": [
+        49,
+        759,
+        1037,
+        1339
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "panel_id": "p02-panel-02",
+      "paste_at": [
+        329,
+        764
+      ],
+      "rendered_size": [
+        428,
+        570
+      ],
+      "scale_mode": "ASPECT_PRESERVING_CONTAIN",
+      "semantic_crop_review": "PENDING_IMAGE_CAPABLE_REVIEW",
+      "source_crop": [
+        0,
+        0,
+        1086,
+        1448
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "zoom": 1.0
+    }
+  ],
+  "schema_version": "1.0",
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "storyboard_conformance": {
+    "reason": "This revision changes only deterministic fit and lettering geometry so the complete immutable panel masters remain visible.",
+    "status": "PRIVATE_PREVIEW_FROM_PASS_REVIEWED_ASSETS"
+  },
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "typography": {
+    "body_size": 24,
+    "family": "STIXGeneral",
+    "title_size": 30
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "milestone": "PR13",
+  "book_id": "DM04",
+  "branch": "feature/book-factory-three-page-acceptance-pr13",
+  "baseline": {
+    "branch": "feature/book-factory-autonomous-pilot-pr12",
+    "commit": "dd40102a621809f494748ac3fae0524d75eab458",
+    "verified": true
+  },
+  "result": "ONE_PAGE_ACCEPTED_TWO_PAGES_EXACTLY_BLOCKED",
+  "selected_sequence": [
+    {"page_number": 1, "page_id": "page-27d143ae995bf60742b65c5b", "status": "COMPOSED_AND_INDEPENDENT_PASS_PRIVATE_ONLY"},
+    {"page_number": 2, "page_id": "page-fe9965a25ead5b61a664263b", "status": "BLOCKED_TWO_MISSING_PANEL_IMAGES"},
+    {"page_number": 3, "page_id": "page-c599d254a2e3ff2c4d1ba8e0", "status": "BLOCKED_THREE_MISSING_PANEL_IMAGES"}
+  ],
+  "production_actions": {
+    "existing_source_images_audited": 15,
+    "source_images_reused": 2,
+    "source_image_pixels_modified": 0,
+    "new_images_generated": 0,
+    "image_edits_executed": 0,
+    "automatic_retries": 0,
+    "pages_composed": 1,
+    "additional_pages_substituted_with_unrelated_art": 0,
+    "pdf_pages": 1
+  },
+  "page_1_repair": {
+    "type": "DETERMINISTIC_DIALOGUE_BALLOON_GEOMETRY_ONLY",
+    "original_box": {"x": 0.055, "y": 0.735, "width": 0.48, "height": 0.17},
+    "repaired_box": {"x": 0.055, "y": 0.805, "width": 0.48, "height": 0.1},
+    "height_reduction_percent": 41.1764705882,
+    "dialogue_changed": false,
+    "rendered_font_size": 25,
+    "minimum_font_size": 22,
+    "overflow": false,
+    "faces_or_hands_occluded": false,
+    "speaker_tail": "Terminates at Medhas's lower speaking face/beard line.",
+    "png_path": "books/DM04/three-page-acceptance/page-previews/page-27d143ae995bf60742b65c5b/v0001/0001-page-27d143ae995bf60742b65c5b.png",
+    "png_sha256": "cb2f0843e01ae2b81d5a2d34c2e2f25e3bdb21eaae8973ea16fa18c2fa3564e9"
+  },
+  "independent_qa": {
+    "reviewer": "/root/pr12_visual_reviewer",
+    "actual_pixels_inspected": true,
+    "normal_reading_size_inspected": true,
+    "dimensions_evaluated": 12,
+    "dimension_results": {"PASS": 12, "FIX": 0, "ESCALATE": 0},
+    "overall_verdict": "PASS",
+    "eligibility": "PRIVATE_DIAGNOSTIC_PDF_PROOF_ONLY",
+    "underlying_source_images_promoted": false,
+    "publication_eligible": false,
+    "review_path": "book-factory/reports/pr13-independent-page-review.json"
+  },
+  "missing_art": {
+    "panel_ids": ["p02-panel-01", "p02-panel-02", "p03-panel-01", "p03-panel-02", "p03-panel-03"],
+    "minimum_additional_image_operations": 5,
+    "local_edit_possible": false,
+    "new_generation_unavoidable": true,
+    "plan_path": "book-factory/reports/pr13-minimal-missing-illustration-specification.json"
+  },
+  "full_book_readiness": {
+    "usable_private_preview_pages": 1,
+    "publication_ready_pages": 0,
+    "pages_requiring_at_least_one_new_illustration_estimate": 28,
+    "pages_likely_recoverable_by_local_image_edit_estimate": 3,
+    "pages_requiring_only_lettering_or_layout_for_private_preview": 1,
+    "pages_with_unresolved_source_or_iconography_findings": 6,
+    "conservative_remaining_image_operations": 65,
+    "director_readiness": "PARTIALLY_AUTONOMOUS_NOT_END_TO_END",
+    "assessment_path": "book-factory/reports/pr13-dm04-full-book-readiness.json"
+  },
+  "diagnostic_pdf": {
+    "path": "output/pdf/dm04-pr13-one-page-private-diagnostic-proof.pdf",
+    "sha256": "c21376565cb0b8d943ab67e49272666d76c42a8c37b4c385f8c3423c6c56d611",
+    "page_count": 1,
+    "page_order": ["page-27d143ae995bf60742b65c5b"],
+    "native_page_dimensions": [1086, 1448],
+    "pixel_inspection": "PASS",
+    "publication_state_transition": "PROHIBITED_PRIVATE_PREVIEW",
+    "not_a_completed_book": true
+  },
+  "tests": {
+    "pr13_targeted": {"passed": 8, "failed": 0},
+    "book_factory_regression": {"passed": 210, "failed": 0, "elapsed_seconds": 43.786},
+    "factory_validate": "PASS",
+    "visual_gold_standard": "PASS",
+    "page_validation": "PASS",
+    "pdf_validation": "PASS"
+  },
+  "preservation": {
+    "source_graph_diff_from_baseline": "EMPTY",
+    "dm08_diff_from_baseline": "EMPTY",
+    "catalogue_book_count": 78,
+    "dm08_edition_status": "EXISTING_EDITION",
+    "dm08_queue_status": "EXCLUDED",
+    "pr6_counter_reset": false,
+    "pr11_counter_reset": false,
+    "pr12_image_operations_before_and_after": 5,
+    "pr12_remaining_operations_before_and_after": 0,
+    "unrelated_ds_store_changes_preserved": true,
+    "push_merge_publish_or_deploy": false
+  },
+  "usage_and_cost": {
+    "observed_at": "2026-10-21T17:23:06Z",
+    "image_operations": 0,
+    "separately_billed_provider_calls": 0,
+    "external_provider_calls": 0,
+    "purchased_credit_balance": "0",
+    "purchased_credits_used": false,
+    "known_paid_provider_spend_usd": "0.00",
+    "actual_total_incremental_usd": "UNKNOWN_NOT_EXPOSED",
+    "positive_zero_incremental_usd_verification": false,
+    "codex_primary_window_used_percent": 16,
+    "codex_primary_window_remaining_percent": 84,
+    "allowance_attribution_to_pr13": "NOT_EXPOSED",
+    "interpretation": "PR13 made no image, API-key or external-provider call. The app does not expose an attributable incremental USD amount for ordinary Codex work, so the report does not infer total zero cost."
+  },
+  "elapsed_time": {
+    "started_at": "2026-10-21T17:06:07Z",
+    "validated_at": "2026-10-21T17:37:34Z",
+    "seconds_through_validation": 1887,
+    "human_readable_through_validation": "31 minutes 27 seconds"
+  },
+  "next_recommendation": "Authorize, only in a separate future campaign after a fresh cost and allowance preflight, exactly five one-shot panel operations for pages 2 and 3 using approved DM04 character and location references. Do not begin the remaining 32-page production run.",
+  "stop_condition": "PR13_COMPLETE_STOP_NO_FULL_BOOK_CONTINUATION"
+}

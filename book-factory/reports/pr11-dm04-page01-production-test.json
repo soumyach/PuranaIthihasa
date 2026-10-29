@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "milestone": "FIRST_REAL_COMIC_PAGE_PRODUCTION_TEST",
+  "repository": {
+    "branch": "feature/book-factory-controlled-visual-pilot-pr11",
+    "starting_commit": "dca733d07e8ce8a485fb4d45a27837c16f4faf58",
+    "push_performed": false,
+    "merge_performed": false,
+    "deployment_performed": false
+  },
+  "scope": {
+    "book_id": "DM04",
+    "page_id": "page-27d143ae995bf60742b65c5b",
+    "title": "A Question Beneath the Trees",
+    "private_internal_only": true,
+    "publication_eligible": false
+  },
+  "reused_art": {
+    "path": "books/DM04/production-pilot/images/page-27d143ae995bf60742b65c5b/v0001.png",
+    "sha256": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+    "image_generation_operations": 0,
+    "image_edits": 0
+  },
+  "outputs": {
+    "spec": "books/DM04/private-page-previews/page-27d143ae995bf60742b65c5b/v0001.spec.json",
+    "editable_composition": "books/DM04/private-page-previews/page-27d143ae995bf60742b65c5b/v0001/0001-page-27d143ae995bf60742b65c5b.composition.json",
+    "rendered_png": {
+      "path": "books/DM04/private-page-previews/page-27d143ae995bf60742b65c5b/v0001/0001-page-27d143ae995bf60742b65c5b.png",
+      "sha256": "a93e9f987b6c020c2bdd0dc336dbdfce4caf435bb2bc125c25dba553f08c07e1",
+      "dimensions": [
+        1086,
+        1448
+      ]
+    },
+    "render_metadata": "books/DM04/private-page-previews/page-27d143ae995bf60742b65c5b/v0001/0001-page-27d143ae995bf60742b65c5b.render.json",
+    "deterministic_validation": "books/DM04/private-page-previews/page-27d143ae995bf60742b65c5b/v0001/0001-page-27d143ae995bf60742b65c5b.validation.json",
+    "actual_pixel_visual_review": "books/DM04/private-page-previews/page-27d143ae995bf60742b65c5b/v0001/0001-page-27d143ae995bf60742b65c5b.visual-review.json",
+    "pdf": null
+  },
+  "two_panel_status": {
+    "distinct_crops": true,
+    "distinct_beats": true,
+    "locked_storyboard_complete": false,
+    "classification": "PARTIAL_DIAGNOSTIC_NOT_STORYBOARD_COMPLETE",
+    "reason": "The reused portrait supports a wide establishing crop and a distinct Medhas close crop, but not the locked over-shoulder view from behind both listeners."
+  },
+  "validation": {
+    "page_engine_version": "0.8.1",
+    "deterministic_page_result": "PASS",
+    "actual_pixel_visual_result": "FIX",
+    "factory_validate": "PASS",
+    "book_factory_tests": {
+      "result": "PASS",
+      "count": 185
+    },
+    "source_graph": "PASS_UNCHANGED",
+    "dm08_changed": false,
+    "pr6_counters_reset": false,
+    "production_state_mutated": false
+  },
+  "reference_comparison": {
+    "result": "PASS_WITH_LIMITATION",
+    "strengths": [
+      "navy-and-gold Khatakshetra framing",
+      "cream editable lettering surfaces",
+      "numbered narration hierarchy",
+      "clear establishing-to-speaker reading rhythm"
+    ],
+    "gap": "The PR7 examples use independently staged panels with greater camera and pose variation; this preview remains constrained by one source illustration."
+  },
+  "verdict": "FIX",
+  "essential_fixes_before_approval": [
+    "Produce a separately authorized and reviewed over-shoulder panel-2 illustration.",
+    "Recompose page 1 with that distinct asset and repeat crop, lettering and continuity review.",
+    "Do not promote the present FIX-status source art or page preview to publication."
+  ],
+  "pdf_decision": {
+    "created": false,
+    "reason": "The optional proof was withheld because the actual-pixel page verdict is FIX; the PNG and editable composition are sufficient for this diagnostic milestone."
+  },
+  "execution": {
+    "started_at": "2026-10-21T18:38:27+05:30",
+    "completed_at": "2026-10-21T18:50:01+05:30",
+    "elapsed_minutes": 11.57,
+    "external_provider_calls": 0,
+    "paid_api_calls": 0,
+    "additional_monetary_cost_usd": 0.0
+  }
+}

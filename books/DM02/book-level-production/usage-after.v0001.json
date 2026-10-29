@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "campaign_id": "dm02-book-level-private-production-v0001",
+  "authorization_subject_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+  "observed_at": "2026-10-23T16:22:00Z",
+  "ordinary_usage_allowed": true,
+  "plan_type": "prolite",
+  "primary_window": {
+    "used_percent": 32,
+    "remaining_percent": 68,
+    "duration_minutes": 10080,
+    "resets_at": 1793332727
+  },
+  "credits": {
+    "has_credits": false,
+    "unlimited": false,
+    "balance": "0"
+  },
+  "spend_control_reached": false,
+  "free_rate_limit_reset_credits": {
+    "available_count": 2,
+    "campaign_use_authorized": false,
+    "used_by_campaign": false
+  },
+  "incremental_usd": "UNKNOWN_NOT_EXPOSED",
+  "zero_incremental_usd_verified": false,
+  "exclusive_campaign_attribution_available": false,
+  "observations": [
+    "No payment, purchased-credit, API-key, external-provider or overage authorization prompt appeared.",
+    "Codex primary-window used percentage moved from 26% before the campaign to 32% at the final observation; the interface does not attribute that change exclusively to these image operations."
+  ]
+}

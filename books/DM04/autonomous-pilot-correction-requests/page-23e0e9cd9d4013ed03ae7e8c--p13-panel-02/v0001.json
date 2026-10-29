@@ -1,0 +1,67 @@
+{
+  "book_id": "DM04",
+  "content_hash": "a29470ba614f28b06d543be3e47a6fd4a33d61bb421c12016052933737855f13",
+  "id": "autonomous-pilot-correction-requests/page-23e0e9cd9d4013ed03ae7e8c--p13-panel-02-cdc8ca69b092ad79fb5e5cf1",
+  "kind": "autonomous-pilot-correction-requests/page-23e0e9cd9d4013ed03ae7e8c--p13-panel-02",
+  "parent_hash": null,
+  "payload": {
+    "book_id": "DM04",
+    "failed_image_sha256": "e303a5c2cd40c5c9b59ed7e4fd4b3a77c11c9f838ab43b095311d1677746105d",
+    "generation_retry_authorized": false,
+    "localized_findings": [
+      {
+        "dimension": "SOURCE_FIDELITY",
+        "discrepancy": "The required visible exhalation that bridges into the breath-born army page is missing.",
+        "evidence": "At original resolution, Devi's mouth and face show no breath, vapor, energy stream or other exhalation; all visible energy is confined to the head disk and weapons.",
+        "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+        "repair_type": "SOURCE_ACTION_INSERTION"
+      },
+      {
+        "dimension": "RELIGIOUS_ICONOGRAPHY",
+        "discrepancy": "An unsourced head halo has been added to Devi.",
+        "evidence": "A full concentric luminous disk is centered directly behind the crown despite the character bible's prohibition on unsourced halo symbolism.",
+        "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+        "repair_type": "ICONOGRAPHY_CONTRACT_REPAIR"
+      },
+      {
+        "dimension": "CULTURAL_AUTHENTICITY",
+        "discrepancy": "A source-unbound palace-temple complex has been inserted into the battlefield setting.",
+        "evidence": "The original pixels show multiple towers and a large complex on the right ridge where the location contract specifies only stable terrain, ridge and action lanes.",
+        "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+        "repair_type": "ENVIRONMENT_CONTINUITY_REPAIR"
+      },
+      {
+        "dimension": "CHARACTER_CONTINUITY",
+        "discrepancy": "Devi's sacred silhouette and costume details do not match panel 1.",
+        "evidence": "This panel has eight explicit weapon-bearing arms and a pink-white garland; panel 1 is weaponless, shows a smaller arm field and uses a white garland with different crown/halo geometry.",
+        "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+        "repair_type": "CHARACTER_CONTINUITY_REPAIR"
+      },
+      {
+        "dimension": "NARRATIVE_CLARITY",
+        "discrepancy": "The panel does not visually communicate the scripted transition to the next page.",
+        "evidence": "The lion and noose action read clearly, but the absent breath cue leaves no visible cause for the page-14 emergence.",
+        "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+        "repair_type": "TRANSITION_CLARITY_REPAIR"
+      }
+    ],
+    "milestone": "PR12",
+    "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+    "pr11_counter_reset": false,
+    "pr6_counter_reset": false,
+    "preserve_other_units": true,
+    "publication_eligible": false,
+    "remaining_campaign_image_operations": 0,
+    "result": "FIX",
+    "schema_version": "1.0",
+    "targeted_correction_instructions": [
+      "For a future separately authorized correction only, add one restrained, unmistakable breath beginning at Devi's mouth while preserving the lion and noose action.",
+      "Remove the halo disk and distant palace, and lock face, crown, garland, arm-field and authorized equipment to the preceding panel.",
+      "Do not retry automatically."
+    ],
+    "unit_id": "page-23e0e9cd9d4013ed03ae7e8c--p13-panel-02",
+    "visual_review_hash": "056ca63e9c35aa3d15f9197620a3acd93959571fc0ce77583faf13579e0b49c6"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

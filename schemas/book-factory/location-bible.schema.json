@@ -1,0 +1,15 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/location-bible.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "book_id": {"type": "string"},
+    "entries": {"items": {"type": "object"}, "minItems": 1, "type": "array"},
+    "manuscript_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "kind": {"const": "LOCATION", "type": "string"},
+    "version": {"minimum": 1, "type": "integer"}
+  },
+  "required": ["book_id", "version", "kind", "manuscript_hash", "entries"],
+  "title": "Location bible",
+  "type": "object"
+}

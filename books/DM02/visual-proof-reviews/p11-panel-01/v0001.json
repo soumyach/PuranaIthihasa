@@ -1,0 +1,152 @@
+{
+  "book_id": "DM02",
+  "content_hash": "09e53922823c95e0cb7ae554fbed503b8e292da56284e7b60ca303ba9205edcc",
+  "id": "visual-proof-reviews/p11-panel-01-300233b55ec2585a92ff213f",
+  "kind": "visual-proof-reviews/p11-panel-01",
+  "parent_hash": null,
+  "payload": {
+    "assessments": [
+      {
+        "dimension": "SOURCE_FIDELITY",
+        "evidence": "The proof includes sleeping Vishnu on Shesha, Brahma on the lotus, the two demons and a separate Yoganidra presence, but the required six distinct withdrawal groups from eyes, mouth, nose, arms, heart and breast cannot be individually traced in the pixels.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "THEOLOGICAL_ACCURACY",
+        "evidence": "The bounded evidence leaves Brahma's head count, Shesha's hood count, Vishnu's arm count and Yoganidra's halo unspecified, yet the proof prominently fixes Brahma as four-headed, Shesha as five-hooded, appears to give Vishnu a conventional multi-arm treatment, and surrounds Yoganidra's crown with a halo-like radiance. These sacred attributes require qualified iconographic review and cannot be certified from the locked evidence.",
+        "result": "ESCALATE"
+      },
+      {
+        "dimension": "CULTURAL_AUTHENTICITY",
+        "evidence": "The lotus, garments, crowns, ornaments and cosmic-ocean staging use a coherent Indian devotional visual language rather than Western fantasy armor or modern props.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "CHARACTER_IDENTITY",
+        "evidence": "No approved exact character-image references exist, and the output commits to unsupported conventional identity markers including Brahma's four heads, Shesha's five prominent hoods and a peacock-feather crown on Vishnu. The exact identities therefore cannot be promoted or continuity-certified.",
+        "result": "ESCALATE"
+      },
+      {
+        "dimension": "EVENT_ACTION_DEPICTION",
+        "evidence": "A general luminous withdrawal toward Yoganidra is visible, but mouth, nose, arms, heart and breast are not all separately readable as six named locus groups; several ribbons merge or share ambiguous origins.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "ANATOMY",
+        "evidence": "Within the chosen iconographic forms, visible hands, faces and limbs are rendered coherently without decisive fused fingers or detached anatomy; unsupported counts are treated separately as iconography defects.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "NARRATIVE_CLARITY",
+        "evidence": "The viewer can read that a radiant goddess has emerged from Vishnu before Brahma, but cannot decode the locked six-locus sequence without external explanation.",
+        "result": "FIX"
+      },
+      {
+        "dimension": "EMOTIONAL_EXPRESSIVENESS",
+        "evidence": "Vishnu remains peacefully asleep, Brahma is reverent, Yoganidra is dignified, and the demons remain separate and watchful, giving each role an intelligible emotional state.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "VISUAL_COMPOSITION",
+        "evidence": "The diagonal path from reclining Vishnu through the lotus-seated Brahma to the elevated Yoganidra creates strong sacred hierarchy while keeping the two demons separate below.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "GOLD_STANDARD_ALIGNMENT",
+        "evidence": "The proof matches the references' premium jewel-toned painterly finish and large-scale divine-reveal clarity, while avoiding Kali, skulls, weapons, army, flags, gore, embedded text and copied benchmark plot action.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "LETTERING_COMPATIBILITY",
+        "evidence": "No raster lettering is present, but Yoganidra's crown, halo-like light, hair and surrounding luminous cloud intrude into the required x=0.08..0.92, y=0.06..0.24 top safe rectangle.",
+        "result": "FIX"
+      }
+    ],
+    "book_id": "DM02",
+    "campaign_id": "dm02-visual-proof-campaign-01",
+    "campaign_subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+    "character_reference_promoted": false,
+    "comparison_references": [
+      {
+        "content_transfer": "FORBIDDEN",
+        "input_index": 1,
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+        "reference_id": "kgs-satya-p01",
+        "role": "A_SERIES_VISUAL_IDENTITY",
+        "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+      },
+      {
+        "content_transfer": "FORBIDDEN",
+        "input_index": 2,
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+        "reference_id": "kgs-dm08-p12",
+        "role": "B_PAGE_PANEL_COMPOSITION",
+        "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+      }
+    ],
+    "correction_instructions": [
+      "Obtain qualified religious-iconography review before any future correction; do not treat the depicted head, hood, arm, crown or halo choices as approved identity references.",
+      "For a future separately authorized correction, use six visually distinct and individually traceable non-anatomical paths from the exact named locus groups, without a seventh path or a permanent-residence implication.",
+      "Keep every source-unspecified sacred attribute neutral and move all figures and radiance outside the complete top safe rectangle.",
+      "No retry is authorized by this review."
+    ],
+    "findings": [
+      {
+        "dimension": "THEOLOGICAL_ACCURACY",
+        "discrepancy": "The proof fixes multiple source-unspecified sacred attributes and requires qualified iconographic review.",
+        "evidence": "Original pixels show four Brahma heads, five prominent Shesha hoods, an apparent conventional multi-arm Vishnu treatment, a peacock-feather crown and halo-like radiance around Yoganidra, although the locked bible leaves these counts and symbols unspecified or prohibited.",
+        "page_id": "page-b85332e92940926f67e6dd9d",
+        "panel_id": "p11-panel-01",
+        "repair_type": "RELIGIOUS_ICONOGRAPHY_EXPERT_REVIEW"
+      },
+      {
+        "dimension": "EVENT_ACTION_DEPICTION",
+        "discrepancy": "The six named withdrawal locus groups are not separately auditable.",
+        "evidence": "Multiple gold ribbons emerge from the face, chest and hands, but distinct paths from eyes, mouth, nose, arms, heart and breast cannot all be uniquely traced to Yoganidra.",
+        "page_id": "page-b85332e92940926f67e6dd9d",
+        "panel_id": "p11-panel-01",
+        "repair_type": "SOURCE_MAPPING_RECOMPOSITION"
+      },
+      {
+        "dimension": "CHARACTER_IDENTITY",
+        "discrepancy": "Character identity cannot be continuity-certified against the text-only locks.",
+        "evidence": "The proof supplies conventional head, hood, arm, crown and halo details that have no approved exact character-image reference and are expressly source-unspecified.",
+        "page_id": "page-b85332e92940926f67e6dd9d",
+        "panel_id": "p11-panel-01",
+        "repair_type": "CHARACTER_IDENTITY_ESCALATION"
+      },
+      {
+        "dimension": "LETTERING_COMPATIBILITY",
+        "discrepancy": "The complete upper lettering-safe rectangle is occupied.",
+        "evidence": "Yoganidra's crown and halo-like glow enter the top safe band, with hair and luminous cloud occupying additional caption space.",
+        "page_id": "page-b85332e92940926f67e6dd9d",
+        "panel_id": "p11-panel-01",
+        "repair_type": "LETTERING_REGION_RECOMPOSITION"
+      }
+    ],
+    "generation_retry_authorized": false,
+    "image_path": "books/DM02/visual-proof-campaign/images/p11-panel-01/v0001.png",
+    "image_sha256": "aa2104618b9f4395c1f62cdba279974f5be3a38b4ff78242182cc9d13438fa6c",
+    "independent_actual_pixel_review": true,
+    "page_id": "page-b85332e92940926f67e6dd9d",
+    "panel_id": "p11-panel-01",
+    "publication_eligible": false,
+    "request_hash": "ec1a94d3890c13ee7be82d2115d6c597068a3688cb7277e9cf5030a2befad584",
+    "request_record_hash": "9560b4063adb05434aa018040bed60a979b09e2a99251618bdeb450a38e786fd",
+    "result": "ESCALATE",
+    "review_hash": "a8285092422447191a2edae67c4b56048c8e2bd915309951748370aa941159f6",
+    "reviewed_at": "2026-10-22T12:24:19Z",
+    "reviewer": {
+      "id": "/root/pr11_visual_reviewer-dm02",
+      "image_capable": true,
+      "independent_of_producer": true,
+      "inspected_actual_pixels": true,
+      "reading_size": "ACTUAL_READING_SIZE"
+    },
+    "schema_version": "1.0",
+    "setting_reference_promoted": false,
+    "unit_id": "page-b85332e92940926f67e6dd9d--p11-panel-01"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

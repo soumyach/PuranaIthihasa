@@ -1,0 +1,45 @@
+{
+  "artifact_policy": {
+    "diagnostic_pdf": "OPTIONAL_ONLY_AFTER_REAL_IMAGES_EXIST_AND_MUST_BE_VISIBLY_NON_PRODUCTION_UNAPPROVED",
+    "preview_composition": "ALLOWED_ONLY_WITH_VISIBLE_UNAPPROVED_LABEL_AND_SEPARATE_STORAGE",
+    "production_composition": "REQUIRES_INDEPENDENT_PIXEL_PASS_AND_HUMAN_STYLE_APPROVAL",
+    "production_pdf": "REQUIRES_BOTH_SELECTED_PAGES_TO_PASS_ALL_IMAGE_COMPOSITION_AND_STYLE_GATES"
+  },
+  "authorization": {
+    "approval_type": "PRODUCTION_CAMPAIGN",
+    "inheritance_allowed": false,
+    "monetary_cap_is_authorization": false,
+    "operation_ceiling_is_authorization": false,
+    "scope": "EXACT_BOOK_CAMPAIGN_PAGES_INPUT_HASHES_REFERENCES_BACKEND_AND_COST_POLICY"
+  },
+  "campaign_id": "dm04-pr10-real-production-slice-01",
+  "contract_id": "khatakshetra-real-production-slice-pr10",
+  "page_ids": [
+    "page-27d143ae995bf60742b65c5b",
+    "page-5316f7271234e4ab31991528"
+  ],
+  "preservation": {
+    "dm08_automatic_production": "EXCLUDED",
+    "failed_images": "EDIT_INPUT_ONLY_WHEN_EXPLICITLY_BOUND_NEVER_PRODUCTION_PAGE_ASSET",
+    "pr6_counters": "IMMUTABLE_EXHAUSTED_NO_RESET",
+    "source_graph": "READ_ONLY"
+  },
+  "review_dimensions": [
+    "SOURCE_FIDELITY",
+    "RELIGIOUS_ICONOGRAPHY",
+    "CULTURAL_AUTHENTICITY",
+    "CHARACTER_CONTINUITY",
+    "NARRATIVE_CLARITY",
+    "ARTISTIC_QUALITY",
+    "LETTERING_READABILITY",
+    "COMPOSITION",
+    "REFERENCE_ALIGNMENT"
+  ],
+  "reviewer": {
+    "actual_pixels_required": true,
+    "actual_reading_size_required": true,
+    "image_capable_required": true,
+    "independent_from_producer": true
+  },
+  "schema_version": "1.0"
+}

@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "milestone": "PR13",
+  "book_id": "DM04",
+  "selected_pages": [1, 2, 3],
+  "status": "FIVE_EXACT_PANEL_ASSETS_MISSING",
+  "minimum_additional_image_operations": 5,
+  "minimum_basis": "Each missing panel is a distinct locked viewpoint or action. No existing image can supply any of them by honest cropping, and one image may not be counted as multiple narrative moments merely to reduce operations.",
+  "shared_references": [
+    {
+      "role": "A_SERIES_VISUAL_IDENTITY_AND_PAGE_HIERARCHY_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "role": "B_SEQUENTIAL_CONVERSATION_AND_ASSEMBLY_RHYTHM_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p02.png",
+      "sha256": "a0fa07b60d1b8b128b541300f3fb5e26358863e3153c719e2d0aacb0fd7858dd"
+    },
+    {
+      "role": "C_DIVINE_MANIFESTATION_AND_CINEMATIC_TRANSITION_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+      "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+    }
+  ],
+  "reference_restrictions": [
+    "References are presentation and composition evidence only, never DM04 source authority.",
+    "Do not transfer Vishnu, Narada, Kali/Chamunda, Raktabija, skulls, tongue, weapons, mounts, flags, gore or theology from a benchmark.",
+    "The existing DM04 page-4 images are negative continuity evidence only; they already show a formed Goddess and cannot be conditioned into page 3 without event-order risk."
+  ],
+  "missing_panels": [
+    {
+      "page_number": 2,
+      "page_id": "page-fe9965a25ead5b61a664263b",
+      "panel_id": "p02-panel-01",
+      "source_event_id": "dm-event-008",
+      "required_visual_action": "High wide view of celestial standards and abandoned offices receding behind the displaced gods; Brahmā leads, and Indra's emptied office remains visibly celestial rather than an earthly throne room.",
+      "required_characters": ["dm-gods", "dm-brahma", "dm-shiva", "dm-vishnu", "dm-indra"],
+      "required_location": "displaced-heaven",
+      "safe_region": "Reserve the locked upper lettering region for the exact narration.",
+      "continuity": "Begins after Medhas's page-1 question and establishes loss before the plea.",
+      "existing_suitable_source_image": null,
+      "local_edit_possible": false,
+      "reason_local_edit_is_not_possible": "No existing DM04 pixels depict abandoned divine offices or this high-wide celestial setup.",
+      "new_generation_unavoidable": true,
+      "recommended_operations": 1
+    },
+    {
+      "page_number": 2,
+      "page_id": "page-fe9965a25ead5b61a664263b",
+      "panel_id": "p02-panel-02",
+      "source_event_id": "dm-event-008",
+      "required_visual_action": "Medium triangular grouping: Brahmā leads the gods before Śiva and Viṣṇu; every gaze directs toward the two deities while the exact collective plea is spoken.",
+      "required_characters": ["dm-gods", "dm-brahma", "dm-shiva", "dm-vishnu", "dm-indra"],
+      "required_location": "displaced-heaven",
+      "safe_region": "Reserve a speaker-anchored area for the gods' exact plea without covering faces or identifying attributes.",
+      "continuity": "Must follow the abandoned-office wide shot and aim visual energy toward page 3's radiance.",
+      "existing_suitable_source_image": null,
+      "local_edit_possible": false,
+      "reason_local_edit_is_not_possible": "No existing DM04 image contains the required pleading group and Shiva/Vishnu audience in one source-faithful composition.",
+      "new_generation_unavoidable": true,
+      "recommended_operations": 1
+    },
+    {
+      "page_number": 3,
+      "page_id": "page-c599d254a2e3ff2c4d1ba8e0",
+      "panel_id": "p03-panel-01",
+      "source_event_id": "dm-event-009",
+      "required_visual_action": "Close three-quarter frame: anger brightens Śiva's face and a single controlled beam leaves him toward an empty center.",
+      "required_characters": ["dm-shiva", "dm-gods", "dm-brahma", "dm-vishnu", "dm-indra"],
+      "required_location": "gods-gathering",
+      "safe_region": "Leave the locked upper narration zone clear.",
+      "continuity": "Śiva must match page 2 and the beam direction must establish the common convergence center used in panels 2 and 3.",
+      "existing_suitable_source_image": null,
+      "local_edit_possible": false,
+      "reason_local_edit_is_not_possible": "Existing reveal art shows multiple donors around an already formed Goddess, not the initiating Shiva close-up and empty target center.",
+      "new_generation_unavoidable": true,
+      "recommended_operations": 1
+    },
+    {
+      "page_number": 3,
+      "page_id": "page-c599d254a2e3ff2c4d1ba8e0",
+      "panel_id": "p03-panel-02",
+      "source_event_id": "dm-event-009",
+      "required_visual_action": "Opposing medium frame: radiance streams separately from Viṣṇu, Brahmā, Indra and the assembled gods, with every origin remaining visually distinct.",
+      "required_characters": ["dm-gods", "dm-brahma", "dm-vishnu", "dm-indra"],
+      "required_location": "gods-gathering",
+      "safe_region": "Keep the locked lettering region free of faces and essential stream origins.",
+      "continuity": "Maintain page-2 identities and direct all streams toward the same still-unformed center.",
+      "existing_suitable_source_image": null,
+      "local_edit_possible": false,
+      "reason_local_edit_is_not_possible": "Neither page-4 proof nor production art provides a source-auditable medium shot with the center still unformed.",
+      "new_generation_unavoidable": true,
+      "recommended_operations": 1
+    },
+    {
+      "page_number": 3,
+      "page_id": "page-c599d254a2e3ff2c4d1ba8e0",
+      "panel_id": "p03-panel-03",
+      "source_event_id": "dm-event-009",
+      "required_visual_action": "Overhead frame: the separate streams converge into one mountainlike blaze while the center remains unformed for the page-4 reveal.",
+      "required_characters": ["dm-gods", "dm-brahma", "dm-shiva", "dm-vishnu", "dm-indra"],
+      "required_location": "gods-gathering",
+      "safe_region": "Preserve the locked upper narration zone while keeping the blaze's scale legible.",
+      "continuity": "This is the page-turn hinge; do not reveal Devī's face, body, arms, weapons, lion or donor-to-body map yet.",
+      "existing_suitable_source_image": null,
+      "local_edit_possible": false,
+      "reason_local_edit_is_not_possible": "All existing event-009 images already depict a completed body. Removing it would reconstruct the entire focal event rather than constitute a bounded local edit.",
+      "new_generation_unavoidable": true,
+      "recommended_operations": 1
+    }
+  ],
+  "allowance_observation": {
+    "observed_at": "2026-10-21T17:23:06Z",
+    "codex_primary_window_used_percent": 16,
+    "codex_primary_window_remaining_percent": 84,
+    "window_duration_minutes": 10080,
+    "purchased_credit_balance": "0",
+    "has_purchased_credits": false,
+    "estimated_per_image_deduction": "UNKNOWN_NOT_EXPOSED",
+    "estimated_five_image_deduction": "UNKNOWN_NOT_EXPOSED",
+    "incremental_usd": "UNKNOWN_NOT_EXPOSED",
+    "note": "No future image operation is authorized by PR13. A separate exact-hash campaign approval and fresh allowance preflight are required before any of these five operations."
+  },
+  "pr13_execution": {
+    "image_operations": 0,
+    "paid_provider_calls": 0,
+    "purchased_credits_requested_or_used": false,
+    "automatic_retries": 0
+  }
+}

@@ -1,0 +1,5269 @@
+{
+  "book_id": "DM02",
+  "content_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+  "id": "storyboards-95197cb6032be4d4defeff02",
+  "kind": "storyboards",
+  "parent_hash": null,
+  "payload": {
+    "book_id": "DM02",
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "cinematic_rhythm": {
+      "full_page_numbers": [
+        3,
+        4,
+        6,
+        9,
+        11,
+        15,
+        21
+      ],
+      "layout_rule": "Use full-page holds for scale or sacred transition and two/three-panel progressions for dialogue and cause-effect; no universal panel count.",
+      "page_count": 24,
+      "page_count_basis": "Twenty-two story pages are derived from four event clusters requiring distinct frame, dissolution, hymn, withdrawal, awakening, long-combat, boon, condition and defeat beats; two additional pages carry the required source note and family reflection."
+    },
+    "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+    "pages": [
+      {
+        "character_ids": [
+          "dm-medhas",
+          "dm-suratha",
+          "dm-samadhi"
+        ],
+        "continuity_in": "story-open",
+        "continuity_out": "after-page-01",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-medhas",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-suratha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-samadhi",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-004"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "measured progression",
+          "type": "TWO_PANEL"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p01-narration",
+            "placement": "caption-safe-region",
+            "text": "Sage Medhas began with a distinction."
+          },
+          {
+            "channel": "DIALOGUE",
+            "id": "p01-dialogue",
+            "placement": "speaker-anchored-balloon",
+            "speaker_id": "dm-medhas",
+            "text": "The Goddess is eternal. When the sacred account speaks of her appearing, it tells of the forms by which she becomes known for divine purposes."
+          }
+        ],
+        "location_id": "dm02-forest-hermitage-frame",
+        "moment_ids": [
+          "medhas_opens_cosmic_tale"
+        ],
+        "narrative_beats": [
+          "Sage Medhas began with a distinction."
+        ],
+        "page_id": "page-71e9de766bf786cb9499a31b",
+        "page_number": 1,
+        "panel_count": 2,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-medhas",
+              "dm-suratha",
+              "dm-samadhi"
+            ],
+            "composition": "Wide eye-level listening triangle: Medhas faces Suratha and Samādhi across a low fire; their neutral attention is labeled visual adaptation and adds no reaction or motive.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p01-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Wide eye-level listening triangle: Medhas faces Suratha and Samādhi across a low fire; their neutral attention is labeled visual adaptation and adds no reaction or motive.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-forest-hermitage-frame",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p01-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Wide eye-level listening triangle: Medhas faces Suratha and Samādhi across a low fire; their neutral attention is labeled visual adaptation and adds no reaction or motive."
+          },
+          {
+            "character_ids": [
+              "dm-medhas",
+              "dm-suratha",
+              "dm-samadhi"
+            ],
+            "composition": "Medium speaker-anchored view of Medhas beginning the distinction, with both listeners present in quiet profile and the upper field reserved for lettering.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p01-panel-02",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Medium speaker-anchored view of Medhas beginning the distinction, with both listeners present in quiet profile and the upper field reserved for lettering.",
+              "shot_scale": "medium"
+            },
+            "location_id": "dm02-forest-hermitage-frame",
+            "reading_order": 2,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p01-panel-02-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Medium speaker-anchored view of Medhas beginning the distinction, with both listeners present in quiet profile and the upper field reserved for lettering."
+          }
+        ],
+        "reading_order": [
+          "p01-panel-01",
+          "p01-panel-02"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p01-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-004-a",
+          "claim-004-d"
+        ],
+        "title": "The Tale Opens",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-medhas",
+          "dm-suratha",
+          "dm-samadhi"
+        ],
+        "continuity_in": "after-page-01",
+        "continuity_out": "after-page-02",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-medhas",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-suratha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-samadhi",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-004"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "measured progression",
+          "type": "TWO_PANEL"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p02-narration",
+            "placement": "caption-safe-region",
+            "text": "Then his story moved beyond kingdoms, roads and remembered seasons, to the dissolution of a world."
+          }
+        ],
+        "location_id": "dm02-forest-hermitage-frame",
+        "moment_ids": [],
+        "narrative_beats": [
+          "Then his story moved beyond kingdoms, roads and remembered seasons, to the dissolution of a world."
+        ],
+        "page_id": "page-88792a15dcd25b30d3982d7c",
+        "page_number": 2,
+        "panel_count": 2,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-medhas"
+            ],
+            "composition": "Close view of Medhas's open hand above the low fire; smoke and navy negative space begin the transition without becoming a supernatural source claim.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p02-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Close view of Medhas's open hand above the low fire; smoke and navy negative space begin the transition without becoming a supernatural source claim.",
+              "shot_scale": "close"
+            },
+            "location_id": "dm02-forest-hermitage-frame",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p02-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Close view of Medhas's open hand above the low fire; smoke and navy negative space begin the transition without becoming a supernatural source claim."
+          },
+          {
+            "character_ids": [
+              "dm-medhas",
+              "dm-suratha",
+              "dm-samadhi"
+            ],
+            "composition": "Wide frame of the three listeners reduced to silhouettes as the dark upper field opens toward the dissolution sequence; no invented listener reaction.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p02-panel-02",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Wide frame of the three listeners reduced to silhouettes as the dark upper field opens toward the dissolution sequence; no invented listener reaction.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-forest-hermitage-frame",
+            "reading_order": 2,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p02-panel-02-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Wide frame of the three listeners reduced to silhouettes as the dark upper field opens toward the dissolution sequence; no invented listener reaction."
+          }
+        ],
+        "reading_order": [
+          "p02-panel-01",
+          "p02-panel-02"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p02-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-004-d"
+        ],
+        "title": "Beyond Remembered Seasons",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [],
+        "continuity_in": "after-page-02",
+        "continuity_out": "after-page-03",
+        "continuity_requirements": [],
+        "event_ids": [
+          "dm-event-004"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "immersive hold",
+          "type": "FULL_PAGE"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p03-narration",
+            "placement": "caption-safe-region",
+            "text": "Water stretched through the vastness. No shore divided one direction from another. There was no field to cross, no mountain path to climb, no city lamp to mark a home. The flood of dissolution held the scene in a silence deeper than ordinary night."
+          }
+        ],
+        "location_id": "dm02-cosmic-ocean-dissolution",
+        "moment_ids": [],
+        "narrative_beats": [
+          "Water stretched through the vastness. No shore divided one direction from another. There was no field to cross, no mountain path to climb, no city lamp to mark a home. The flood of dissolution held the scene in a silence deeper than ordinary night."
+        ],
+        "page_id": "page-a694d4c3702975edfdceb0c5",
+        "page_number": 3,
+        "panel_count": 1,
+        "panels": [
+          {
+            "character_ids": [],
+            "composition": "Full-page horizonless dissolution water: no shore, mountain, city, temple, star map or ordinary landmark; scale comes only from sparse gold reflections and layered darkness.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p03-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Full-page horizonless dissolution water: no shore, mountain, city, temple, star map or ordinary landmark; scale comes only from sparse gold reflections and layered darkness.",
+              "shot_scale": "extreme-wide"
+            },
+            "location_id": "dm02-cosmic-ocean-dissolution",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p03-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Full-page horizonless dissolution water: no shore, mountain, city, temple, star map or ordinary landmark; scale comes only from sparse gold reflections and layered darkness."
+          }
+        ],
+        "reading_order": [
+          "p03-panel-01"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p03-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-004-b",
+          "claim-004-d"
+        ],
+        "title": "Water Without Shore",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-vishnu",
+          "dm-shesha",
+          "dm-yoganidra"
+        ],
+        "continuity_in": "after-page-03",
+        "continuity_out": "after-page-04",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-shesha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "manifestation_id": "dm-shesha-supporting-form",
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-yoganidra",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "manifestation_id": "dm-yoganidra-cosmic-sleep",
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-004"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "immersive hold",
+          "type": "FULL_PAGE"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p04-narration-a",
+            "placement": "caption-safe-region",
+            "text": "Upon Shesha rested Vishnu."
+          },
+          {
+            "channel": "NARRATION",
+            "id": "p04-narration-b",
+            "placement": "caption-safe-region",
+            "text": "He was not keeping the light sleep of a traveller who might wake at the snap of a twig. Yoganidra, the divine power of cosmic sleep, held him in profound stillness. His breathing alone gave measure to the immeasurable quiet."
+          }
+        ],
+        "location_id": "dm02-vishnu-on-shesha",
+        "moment_ids": [
+          "vishnu_sleeps_on_shesha"
+        ],
+        "narrative_beats": [
+          "Upon Shesha rested Vishnu.",
+          "He was not keeping the light sleep of a traveller who might wake at the snap of a twig. Yoganidra, the divine power of cosmic sleep, held him in profound stillness. His breathing alone gave measure to the immeasurable quiet."
+        ],
+        "page_id": "page-d20c0821bca7f13784a34630",
+        "page_number": 4,
+        "panel_count": 1,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-shesha",
+              "dm-yoganidra"
+            ],
+            "composition": "Low horizontal full-page repose: sleeping Viṣṇu is clearly supported by Śeṣa above the flood; Yoganidrā is a non-anatomical sleep field, with no fixed halo, weapon, body residence or conventional arm/hood count.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p04-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Low horizontal full-page repose: sleeping Viṣṇu is clearly supported by Śeṣa above the flood; Yoganidrā is a non-anatomical sleep field, with no fixed halo, weapon, body residence or conventional arm/hood count.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-vishnu-on-shesha",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p04-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Low horizontal full-page repose: sleeping Viṣṇu is clearly supported by Śeṣa above the flood; Yoganidrā is a non-anatomical sleep field, with no fixed halo, weapon, body residence or conventional arm/hood count."
+          }
+        ],
+        "reading_order": [
+          "p04-panel-01"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p04-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-004-b"
+        ],
+        "title": "Sleep Beyond the World",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-vishnu",
+          "dm-shesha",
+          "dm-brahma",
+          "dm-yoganidra"
+        ],
+        "continuity_in": "after-page-04",
+        "continuity_out": "after-page-05",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-shesha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "manifestation_id": "dm-shesha-supporting-form",
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-brahma",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-yoganidra",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "manifestation_id": "dm-yoganidra-cosmic-sleep",
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-004"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "measured progression",
+          "type": "THREE_PANEL"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p05-narration-a",
+            "placement": "caption-safe-region",
+            "text": "From him rose a lotus, and upon that lotus sat Brahma."
+          },
+          {
+            "channel": "NARRATION",
+            "id": "p05-narration-b",
+            "placement": "caption-safe-region",
+            "text": "The flower stood above the waters like the single open eye of a world not yet remade. Brahma had no ground beneath him—only the lotus, Vishnu below, and the unbroken flood beyond."
+          },
+          {
+            "channel": "NARRATION",
+            "id": "p05-narration-c",
+            "placement": "caption-safe-region",
+            "text": "Vishnu slept.\n\nThe waters waited.\n\nAnd in that stillness, danger appeared."
+          }
+        ],
+        "location_id": "dm02-brahma-lotus",
+        "moment_ids": [],
+        "narrative_beats": [
+          "From him rose a lotus, and upon that lotus sat Brahma.",
+          "The flower stood above the waters like the single open eye of a world not yet remade. Brahma had no ground beneath him—only the lotus, Vishnu below, and the unbroken flood beyond.",
+          "Vishnu slept.",
+          "The waters waited.",
+          "And in that stillness, danger appeared."
+        ],
+        "page_id": "page-2e96a0bca25ea33924a24fde",
+        "page_number": 5,
+        "panel_count": 3,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-shesha",
+              "dm-brahma",
+              "dm-yoganidra"
+            ],
+            "composition": "Vertical establishing panel: the lotus rises from Viṣṇu to lotus-seated Brahmā while Śeṣa remains visibly below; do not add a temple, throne room or invented island.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p05-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Vertical establishing panel: the lotus rises from Viṣṇu to lotus-seated Brahmā while Śeṣa remains visibly below; do not add a temple, throne room or invented island.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-brahma-lotus",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p05-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Vertical establishing panel: the lotus rises from Viṣṇu to lotus-seated Brahmā while Śeṣa remains visibly below; do not add a temple, throne room or invented island."
+          },
+          {
+            "character_ids": [
+              "dm-brahma"
+            ],
+            "composition": "Medium lotus-level view of Brahmā with only flood beyond; exact head and arm counts remain source-silent and no conventional multiplicity is asserted.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p05-panel-02",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Medium lotus-level view of Brahmā with only flood beyond; exact head and arm counts remain source-silent and no conventional multiplicity is asserted.",
+              "shot_scale": "medium"
+            },
+            "location_id": "dm02-brahma-lotus",
+            "reading_order": 2,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p05-panel-02-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Medium lotus-level view of Brahmā with only flood beyond; exact head and arm counts remain source-silent and no conventional multiplicity is asserted."
+          },
+          {
+            "character_ids": [],
+            "composition": "Narrow closing panel of still water and a dark approaching interval, carrying danger without yet revealing invented detail.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p05-panel-03",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Narrow closing panel of still water and a dark approaching interval, carrying danger without yet revealing invented detail.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-brahma-lotus",
+            "reading_order": 3,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p05-panel-03-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Narrow closing panel of still water and a dark approaching interval, carrying danger without yet revealing invented detail."
+          }
+        ],
+        "reading_order": [
+          "p05-panel-01",
+          "p05-panel-02",
+          "p05-panel-03"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p05-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-004-b",
+          "claim-004-d"
+        ],
+        "title": "The Lotus Above the Flood",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-vishnu",
+          "dm-shesha",
+          "dm-brahma",
+          "dm-yoganidra",
+          "dm-madhu",
+          "dm-kaitabha"
+        ],
+        "continuity_in": "after-page-05",
+        "continuity_out": "after-page-06",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-shesha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "manifestation_id": "dm-shesha-supporting-form",
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-brahma",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-yoganidra",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "manifestation_id": "dm-yoganidra-cosmic-sleep",
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-madhu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-kaitabha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-004"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "immersive hold",
+          "type": "FULL_PAGE"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p06-narration",
+            "placement": "caption-safe-region",
+            "text": "From the region of Vishnu’s ears arose two Asuras: Madhu and Kaitabha.\n\nThey entered the story already powerful, moving through the waters of dissolution toward the lotus where Brahma sat.\n\nTheir purpose was plain. They threatened to kill him."
+          }
+        ],
+        "location_id": "dm02-brahma-lotus",
+        "moment_ids": [
+          "madhu_kaitabha_threaten_brahma"
+        ],
+        "narrative_beats": [
+          "From the region of Vishnu’s ears arose two Asuras: Madhu and Kaitabha.",
+          "They entered the story already powerful, moving through the waters of dissolution toward the lotus where Brahma sat.",
+          "Their purpose was plain. They threatened to kill him."
+        ],
+        "page_id": "page-6f5b1e3391910b496a7194d0",
+        "page_number": 6,
+        "panel_count": 1,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-shesha",
+              "dm-brahma",
+              "dm-yoganidra",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Full-page opposing depth: Madhu and Kaiṭabha emerge into the water near Viṣṇu's ear-region and advance toward Brahmā's lotus; show no anatomical gore, genealogy, weapons, army or motive beyond the threat.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p06-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Full-page opposing depth: Madhu and Kaiṭabha emerge into the water near Viṣṇu's ear-region and advance toward Brahmā's lotus; show no anatomical gore, genealogy, weapons, army or motive beyond the threat.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-brahma-lotus",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p06-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Full-page opposing depth: Madhu and Kaiṭabha emerge into the water near Viṣṇu's ear-region and advance toward Brahmā's lotus; show no anatomical gore, genealogy, weapons, army or motive beyond the threat."
+          }
+        ],
+        "reading_order": [
+          "p06-panel-01"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p06-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-004-c"
+        ],
+        "title": "The Threat at the Lotus",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-vishnu",
+          "dm-shesha",
+          "dm-brahma",
+          "dm-yoganidra",
+          "dm-madhu",
+          "dm-kaitabha"
+        ],
+        "continuity_in": "after-page-06",
+        "continuity_out": "after-page-07",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-shesha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "manifestation_id": "dm-shesha-supporting-form",
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-brahma",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-yoganidra",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "manifestation_id": "dm-yoganidra-cosmic-sleep",
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-madhu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-kaitabha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-004"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "measured progression",
+          "type": "THREE_PANEL"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p07-narration-a",
+            "placement": "caption-safe-region",
+            "text": "Brahma looked from the approaching figures to Vishnu. The preserver still rested upon Shesha, held in the depth of Yoganidra. No call from the lotus had yet broken that sleep.\n\nMadhu and Kaitabha came nearer."
+          },
+          {
+            "channel": "NARRATION",
+            "id": "p07-narration-b",
+            "placement": "caption-safe-region",
+            "text": "There was nowhere for Brahma to flee. Around the lotus lay the same endless flood. Below it slept the one who could face the threat. Yet the sleep upon Vishnu was itself divine power, not an ordinary weariness that Brahma could simply shake away.\n\nThe danger and the answer stood almost together: the threatening Asuras upon the waters, Vishnu beneath the lotus, and the power of sleep holding him still."
+          }
+        ],
+        "location_id": "dm02-brahma-lotus",
+        "moment_ids": [],
+        "narrative_beats": [
+          "Brahma looked from the approaching figures to Vishnu. The preserver still rested upon Shesha, held in the depth of Yoganidra. No call from the lotus had yet broken that sleep.",
+          "Madhu and Kaitabha came nearer.",
+          "There was nowhere for Brahma to flee. Around the lotus lay the same endless flood. Below it slept the one who could face the threat. Yet the sleep upon Vishnu was itself divine power, not an ordinary weariness that Brahma could simply shake away.",
+          "The danger and the answer stood almost together: the threatening Asuras upon the waters, Vishnu beneath the lotus, and the power of sleep holding him still."
+        ],
+        "page_id": "page-2eff3830302e6bb1ce973d73",
+        "page_number": 7,
+        "panel_count": 3,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-shesha",
+              "dm-brahma",
+              "dm-yoganidra",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Brahmā's sightline connects the approaching pair to sleeping Viṣṇu below; keep lotus, sleepers and threat in one stable vertical geography.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p07-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Brahmā's sightline connects the approaching pair to sleeping Viṣṇu below; keep lotus, sleepers and threat in one stable vertical geography.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-brahma-lotus",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p07-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Brahmā's sightline connects the approaching pair to sleeping Viṣṇu below; keep lotus, sleepers and threat in one stable vertical geography."
+          },
+          {
+            "character_ids": [
+              "dm-madhu",
+              "dm-kaitabha",
+              "dm-brahma"
+            ],
+            "composition": "Tight panel on the narrowing water gap between the demons and lotus, with no invented weapon or attack contact.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p07-panel-02",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Tight panel on the narrowing water gap between the demons and lotus, with no invented weapon or attack contact.",
+              "shot_scale": "medium"
+            },
+            "location_id": "dm02-brahma-lotus",
+            "reading_order": 2,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p07-panel-02-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Tight panel on the narrowing water gap between the demons and lotus, with no invented weapon or attack contact."
+          },
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-shesha",
+              "dm-brahma",
+              "dm-yoganidra",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Wide three-level hold: demons on water, Viṣṇu on Śeṣa, Brahmā above; Yoganidrā remains a sleep field, not a body-locus figure.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p07-panel-03",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Wide three-level hold: demons on water, Viṣṇu on Śeṣa, Brahmā above; Yoganidrā remains a sleep field, not a body-locus figure.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-brahma-lotus",
+            "reading_order": 3,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p07-panel-03-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Wide three-level hold: demons on water, Viṣṇu on Śeṣa, Brahmā above; Yoganidrā remains a sleep field, not a body-locus figure."
+          }
+        ],
+        "reading_order": [
+          "p07-panel-01",
+          "p07-panel-02",
+          "p07-panel-03"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p07-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-004-b",
+          "claim-004-c",
+          "claim-004-d"
+        ],
+        "title": "Danger and Answer Together",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-brahma",
+          "dm-yoganidra",
+          "dm-vishnu",
+          "dm-madhu",
+          "dm-kaitabha"
+        ],
+        "continuity_in": "after-page-07",
+        "continuity_out": "after-page-08",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-brahma",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-yoganidra",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-madhu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-kaitabha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-005"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "measured progression",
+          "type": "TWO_PANEL"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p08-narration",
+            "placement": "caption-safe-region",
+            "text": "Brahma did not address the sleepers with a hurried shout. He turned his praise toward Yoganidra herself.\n\nThe silence at the end of the world became a place of invocation.\n\nBrahma gathered his attention and praised the Goddess who held Vishnu in sleep."
+          }
+        ],
+        "location_id": "dm02-brahma-lotus",
+        "moment_ids": [],
+        "narrative_beats": [
+          "Brahma did not address the sleepers with a hurried shout. He turned his praise toward Yoganidra herself.",
+          "The silence at the end of the world became a place of invocation.",
+          "Brahma gathered his attention and praised the Goddess who held Vishnu in sleep."
+        ],
+        "page_id": "page-050fb795d8c0bba26d6fc934",
+        "page_number": 8,
+        "panel_count": 2,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-brahma",
+              "dm-yoganidra",
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Medium lotus-level view: Brahmā turns his attention toward Yoganidrā rather than shouting at Viṣṇu; the demons remain distant but advancing.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p08-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Medium lotus-level view: Brahmā turns his attention toward Yoganidrā rather than shouting at Viṣṇu; the demons remain distant but advancing.",
+              "shot_scale": "medium"
+            },
+            "location_id": "dm02-brahma-lotus",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p08-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Medium lotus-level view: Brahmā turns his attention toward Yoganidrā rather than shouting at Viṣṇu; the demons remain distant but advancing."
+          },
+          {
+            "character_ids": [
+              "dm-brahma"
+            ],
+            "composition": "Quiet close view of Brahmā in gathered attention with a protected dialogue field; do not add weapons, multi-head iconography or an unsourced halo.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p08-panel-02",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Quiet close view of Brahmā in gathered attention with a protected dialogue field; do not add weapons, multi-head iconography or an unsourced halo.",
+              "shot_scale": "close"
+            },
+            "location_id": "dm02-brahma-lotus",
+            "reading_order": 2,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p08-panel-02-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Quiet close view of Brahmā in gathered attention with a protected dialogue field; do not add weapons, multi-head iconography or an unsourced halo."
+          }
+        ],
+        "reading_order": [
+          "p08-panel-01",
+          "p08-panel-02"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p08-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-005-a",
+          "claim-005-c"
+        ],
+        "title": "A Place of Invocation",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-brahma",
+          "dm-yoganidra",
+          "dm-vishnu",
+          "dm-madhu",
+          "dm-kaitabha"
+        ],
+        "continuity_in": "after-page-08",
+        "continuity_out": "after-page-09",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-brahma",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-yoganidra",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-madhu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-kaitabha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-005"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "immersive hold",
+          "type": "FULL_PAGE"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p09-narration",
+            "placement": "caption-safe-region",
+            "text": "Brahma gathered his attention and praised the Goddess who held Vishnu in sleep."
+          },
+          {
+            "channel": "DIALOGUE",
+            "id": "p09-dialogue",
+            "placement": "speaker-anchored-balloon",
+            "speaker_id": "dm-brahma",
+            "text": "You are the sacred utterance by which offerings are made. You are the power by which creation arises, by which it is preserved, and by which it is drawn again into dissolution. You are knowledge, and you are the great illusion that can veil knowledge. You are nature, nourishment and peace. You are also power armed against danger."
+          }
+        ],
+        "location_id": "dm02-brahma-lotus",
+        "moment_ids": [
+          "brahma_invokes_goddess"
+        ],
+        "narrative_beats": [
+          "Brahma gathered his attention and praised the Goddess who held Vishnu in sleep."
+        ],
+        "page_id": "page-ca28c1486ed14e92ca7c6c89",
+        "page_number": 9,
+        "panel_count": 1,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-brahma",
+              "dm-yoganidra",
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Full-page devotional address from Brahmā toward the source-neutral field of Yoganidrā; keep the hymn attributed to its speaker and do not literalize its cosmic names as independent project facts or add a weapon array.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p09-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Full-page devotional address from Brahmā toward the source-neutral field of Yoganidrā; keep the hymn attributed to its speaker and do not literalize its cosmic names as independent project facts or add a weapon array.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-brahma-lotus",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p09-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Full-page devotional address from Brahmā toward the source-neutral field of Yoganidrā; keep the hymn attributed to its speaker and do not literalize its cosmic names as independent project facts or add a weapon array."
+          }
+        ],
+        "reading_order": [
+          "p09-panel-01"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p09-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-005-a",
+          "claim-005-c"
+        ],
+        "title": "Brahma's Hymn",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-brahma",
+          "dm-yoganidra",
+          "dm-vishnu",
+          "dm-madhu",
+          "dm-kaitabha"
+        ],
+        "continuity_in": "after-page-09",
+        "continuity_out": "after-page-10",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-brahma",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-yoganidra",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-madhu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-kaitabha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-005"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "measured progression",
+          "type": "TWO_PANEL"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p10-narration-a",
+            "placement": "caption-safe-region",
+            "text": "Madhu and Kaitabha continued their approach.\n\nBrahma’s praise became a direct appeal."
+          },
+          {
+            "channel": "DIALOGUE",
+            "id": "p10-dialogue",
+            "placement": "speaker-anchored-balloon",
+            "speaker_id": "dm-brahma",
+            "text": "Great Goddess, delude these two Asuras. Withdraw your sleep from Vishnu and awaken him, so that their threat may be ended."
+          },
+          {
+            "channel": "NARRATION",
+            "id": "p10-narration-b",
+            "placement": "caption-safe-region",
+            "text": "The lotus did not move away from danger. The waters did not open a road of escape. Nothing in the scene became smaller or safer.\n\nBut the invocation had found the power to whom it was addressed.\n\nThe change began within the stillness of Vishnu himself."
+          }
+        ],
+        "location_id": "dm02-brahma-lotus",
+        "moment_ids": [],
+        "narrative_beats": [
+          "Madhu and Kaitabha continued their approach.",
+          "Brahma’s praise became a direct appeal.",
+          "The lotus did not move away from danger. The waters did not open a road of escape. Nothing in the scene became smaller or safer.",
+          "But the invocation had found the power to whom it was addressed.",
+          "The change began within the stillness of Vishnu himself."
+        ],
+        "page_id": "page-29ea6f05a380ac8e4598753f",
+        "page_number": 10,
+        "panel_count": 2,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-brahma",
+              "dm-yoganidra",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Brahmā's appeal is directed toward Yoganidrā while the advancing pair remains in the same spatial lane; no escape route is invented.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p10-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Brahmā's appeal is directed toward Yoganidrā while the advancing pair remains in the same spatial lane; no escape route is invented.",
+              "shot_scale": "medium"
+            },
+            "location_id": "dm02-brahma-lotus",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p10-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Brahmā's appeal is directed toward Yoganidrā while the advancing pair remains in the same spatial lane; no escape route is invented."
+          },
+          {
+            "character_ids": [
+              "dm-yoganidra",
+              "dm-vishnu"
+            ],
+            "composition": "Closing stillness around Viṣṇu: six subtle source-named locus groups prepare for withdrawal without implying that Yoganidrā permanently resides inside any body part.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p10-panel-02",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Closing stillness around Viṣṇu: six subtle source-named locus groups prepare for withdrawal without implying that Yoganidrā permanently resides inside any body part.",
+              "shot_scale": "close"
+            },
+            "location_id": "dm02-brahma-lotus",
+            "reading_order": 2,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p10-panel-02-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Closing stillness around Viṣṇu: six subtle source-named locus groups prepare for withdrawal without implying that Yoganidrā permanently resides inside any body part."
+          }
+        ],
+        "reading_order": [
+          "p10-panel-01",
+          "p10-panel-02"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p10-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-005-b",
+          "claim-005-c"
+        ],
+        "title": "The Direct Appeal",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-yoganidra",
+          "dm-vishnu",
+          "dm-brahma",
+          "dm-shesha",
+          "dm-madhu",
+          "dm-kaitabha"
+        ],
+        "continuity_in": "after-page-10",
+        "continuity_out": "after-page-11",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-yoganidra",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "manifestation_id": "dm-yoganidra-before-brahma",
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-brahma",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-shesha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "manifestation_id": "dm-shesha-supporting-form",
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-madhu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-kaitabha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-006"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "immersive hold",
+          "type": "FULL_PAGE"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p11-narration",
+            "placement": "caption-safe-region",
+            "text": "Yoganidra withdrew from Vishnu’s eyes, mouth and nose; from his arms, heart and breast.\n\nThe power that had held Vishnu in cosmic sleep now appeared before Brahma.\n\nFor one suspended moment, the whole scene had changed without the waters changing at all. Brahma remained upon the lotus. Madhu and Kaitabha remained near. Shesha still bore Vishnu above the flood."
+          }
+        ],
+        "location_id": "dm02-yoganidra-manifestation-space",
+        "moment_ids": [
+          "yoganidra_leaves_vishnu"
+        ],
+        "narrative_beats": [
+          "Yoganidra withdrew from Vishnu’s eyes, mouth and nose; from his arms, heart and breast.",
+          "The power that had held Vishnu in cosmic sleep now appeared before Brahma.",
+          "For one suspended moment, the whole scene had changed without the waters changing at all. Brahma remained upon the lotus. Madhu and Kaitabha remained near. Shesha still bore Vishnu above the flood."
+        ],
+        "page_id": "page-b85332e92940926f67e6dd9d",
+        "page_number": 11,
+        "panel_count": 1,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-yoganidra",
+              "dm-vishnu",
+              "dm-brahma",
+              "dm-shesha",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Full-page exact-locus withdrawal map: distinct radiance leaves Viṣṇu's eyes, mouth, nose, arms, heart and breast, then gathers as a separate appeared presence before Brahmā; keep all six groups readable, modest and non-anatomical, with no seventh locus or permanent-residence implication.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p11-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Full-page exact-locus withdrawal map: distinct radiance leaves Viṣṇu's eyes, mouth, nose, arms, heart and breast, then gathers as a separate appeared presence before Brahmā; keep all six groups readable, modest and non-anatomical, with no seventh locus or permanent-residence implication.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-yoganidra-manifestation-space",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p11-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Full-page exact-locus withdrawal map: distinct radiance leaves Viṣṇu's eyes, mouth, nose, arms, heart and breast, then gathers as a separate appeared presence before Brahmā; keep all six groups readable, modest and non-anatomical, with no seventh locus or permanent-residence implication."
+          }
+        ],
+        "reading_order": [
+          "p11-panel-01"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p11-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-006-a"
+        ],
+        "title": "When Sleep Stood Apart",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-yoganidra",
+          "dm-vishnu",
+          "dm-brahma",
+          "dm-shesha",
+          "dm-madhu",
+          "dm-kaitabha"
+        ],
+        "continuity_in": "after-page-11",
+        "continuity_out": "after-page-12",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-yoganidra",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "manifestation_id": "dm-yoganidra-before-brahma",
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-brahma",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-shesha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "manifestation_id": "dm-shesha-supporting-form",
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-madhu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-kaitabha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-006"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "measured progression",
+          "type": "TWO_PANEL"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p12-narration",
+            "placement": "caption-safe-region",
+            "text": "Yet sleep no longer enclosed him.\n\nVishnu’s eyes opened.\n\nStillness gave way to attention. Rest gave way to readiness. He saw Brahma upon the lotus and the two Asuras who had come to destroy him."
+          }
+        ],
+        "location_id": "dm02-vishnu-on-shesha",
+        "moment_ids": [
+          "vishnu_awakens"
+        ],
+        "narrative_beats": [
+          "Yet sleep no longer enclosed him.",
+          "Vishnu’s eyes opened.",
+          "Stillness gave way to attention. Rest gave way to readiness. He saw Brahma upon the lotus and the two Asuras who had come to destroy him."
+        ],
+        "page_id": "page-5d55c9f3f53bac24d1f44238",
+        "page_number": 12,
+        "panel_count": 2,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-yoganidra"
+            ],
+            "composition": "Close view of Viṣṇu's eyes opening after the withdrawal; the same sleeping identity shifts to alertness without an invented transformation.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p12-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Close view of Viṣṇu's eyes opening after the withdrawal; the same sleeping identity shifts to alertness without an invented transformation.",
+              "shot_scale": "close"
+            },
+            "location_id": "dm02-vishnu-on-shesha",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p12-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Close view of Viṣṇu's eyes opening after the withdrawal; the same sleeping identity shifts to alertness without an invented transformation."
+          },
+          {
+            "character_ids": [
+              "dm-yoganidra",
+              "dm-vishnu",
+              "dm-brahma",
+              "dm-shesha",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Wide re-establishing view: awake Viṣṇu sees Brahmā and both Asuras while Śeṣa remains the stable support and Yoganidrā stands apart before Brahmā.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p12-panel-02",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Wide re-establishing view: awake Viṣṇu sees Brahmā and both Asuras while Śeṣa remains the stable support and Yoganidrā stands apart before Brahmā.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-vishnu-on-shesha",
+            "reading_order": 2,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p12-panel-02-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Wide re-establishing view: awake Viṣṇu sees Brahmā and both Asuras while Śeṣa remains the stable support and Yoganidrā stands apart before Brahmā."
+          }
+        ],
+        "reading_order": [
+          "p12-panel-01",
+          "p12-panel-02"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p12-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-006-a",
+          "claim-006-b"
+        ],
+        "title": "Vishnu Awakens",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-vishnu",
+          "dm-brahma",
+          "dm-madhu",
+          "dm-kaitabha",
+          "dm-yoganidra"
+        ],
+        "continuity_in": "after-page-12",
+        "continuity_out": "after-page-13",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-brahma",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-madhu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-kaitabha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-yoganidra",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-006"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "measured progression",
+          "type": "THREE_PANEL"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p13-narration-a",
+            "placement": "caption-safe-region",
+            "text": "Vishnu rose to meet Madhu and Kaitabha.\n\nNo army marched into the waters. No ranks gathered behind him. Vishnu met the two Asuras with his arms, and the combat closed around them.\n\nThe two Asuras turned from the lotus to face him."
+          },
+          {
+            "channel": "NARRATION",
+            "id": "p13-narration-b",
+            "placement": "caption-safe-region",
+            "text": "Brahma’s danger had not vanished; it had become a confrontation. Yoganidra had answered the invocation by withdrawing, appearing before Brahma, and opening the way for Vishnu to wake.\n\nNow the long struggle began."
+          }
+        ],
+        "location_id": "dm02-flooded-combat-expanse",
+        "moment_ids": [],
+        "narrative_beats": [
+          "Vishnu rose to meet Madhu and Kaitabha.",
+          "No army marched into the waters. No ranks gathered behind him. Vishnu met the two Asuras with his arms, and the combat closed around them.",
+          "The two Asuras turned from the lotus to face him.",
+          "Brahma’s danger had not vanished; it had become a confrontation. Yoganidra had answered the invocation by withdrawing, appearing before Brahma, and opening the way for Vishnu to wake.",
+          "Now the long struggle began."
+        ],
+        "page_id": "page-4adc33689921626f8d0b1f8d",
+        "page_number": 13,
+        "panel_count": 3,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha",
+              "dm-brahma"
+            ],
+            "composition": "Viṣṇu rises into the water action lane while Madhu and Kaiṭabha turn from the lotus; maintain left-to-right approach continuity.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p13-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Viṣṇu rises into the water action lane while Madhu and Kaiṭabha turn from the lotus; maintain left-to-right approach continuity.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-flooded-combat-expanse",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p13-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Viṣṇu rises into the water action lane while Madhu and Kaiṭabha turn from the lotus; maintain left-to-right approach continuity."
+          },
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Arm-to-arm engagement begins with three coherent humanlike silhouettes; no army, weapon, wound or unsupported arm count.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p13-panel-02",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Arm-to-arm engagement begins with three coherent humanlike silhouettes; no army, weapon, wound or unsupported arm count.",
+              "shot_scale": "medium"
+            },
+            "location_id": "dm02-flooded-combat-expanse",
+            "reading_order": 2,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p13-panel-02-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Arm-to-arm engagement begins with three coherent humanlike silhouettes; no army, weapon, wound or unsupported arm count."
+          },
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha",
+              "dm-yoganidra",
+              "dm-brahma"
+            ],
+            "composition": "Wide hold on the three combatants against the unbounded flood; Yoganidrā and Brahmā remain distant witnesses, not combatants.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p13-panel-03",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Wide hold on the three combatants against the unbounded flood; Yoganidrā and Brahmā remain distant witnesses, not combatants.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-flooded-combat-expanse",
+            "reading_order": 3,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p13-panel-03-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Wide hold on the three combatants against the unbounded flood; Yoganidrā and Brahmā remain distant witnesses, not combatants."
+          }
+        ],
+        "reading_order": [
+          "p13-panel-01",
+          "p13-panel-02",
+          "p13-panel-03"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p13-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-006-b"
+        ],
+        "title": "The Confrontation Closes",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-vishnu",
+          "dm-madhu",
+          "dm-kaitabha"
+        ],
+        "continuity_in": "after-page-13",
+        "continuity_out": "after-page-14",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-madhu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-kaitabha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-006"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "measured progression",
+          "type": "THREE_PANEL"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p14-narration",
+            "placement": "caption-safe-region",
+            "text": "Vishnu grappled with Madhu and Kaitabha upon the cosmic waters.\n\nA hold was made and broken. One Asura drove forward; Vishnu checked him. The other closed from the side; Vishnu turned to meet him. Again they joined, separated and returned."
+          }
+        ],
+        "location_id": "dm02-flooded-combat-expanse",
+        "moment_ids": [],
+        "narrative_beats": [
+          "Vishnu grappled with Madhu and Kaitabha upon the cosmic waters.",
+          "A hold was made and broken. One Asura drove forward; Vishnu checked him. The other closed from the side; Vishnu turned to meet him. Again they joined, separated and returned."
+        ],
+        "page_id": "page-b3c2c7ea03e4d1259ccbea7b",
+        "page_number": 14,
+        "panel_count": 3,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Madhu drives forward and Viṣṇu checks him with an anatomically coherent grappling hold; Kaiṭabha remains a separate flank threat.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p14-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Madhu drives forward and Viṣṇu checks him with an anatomically coherent grappling hold; Kaiṭabha remains a separate flank threat.",
+              "shot_scale": "medium"
+            },
+            "location_id": "dm02-flooded-combat-expanse",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p14-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Madhu drives forward and Viṣṇu checks him with an anatomically coherent grappling hold; Kaiṭabha remains a separate flank threat."
+          },
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Kaiṭabha closes from the side as Viṣṇu turns; preserve all three silhouettes and show no weapon or injury.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p14-panel-02",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Kaiṭabha closes from the side as Viṣṇu turns; preserve all three silhouettes and show no weapon or injury.",
+              "shot_scale": "medium"
+            },
+            "location_id": "dm02-flooded-combat-expanse",
+            "reading_order": 2,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p14-panel-02-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Kaiṭabha closes from the side as Viṣṇu turns; preserve all three silhouettes and show no weapon or injury."
+          },
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "The trio separates into a readable triangle that can cycle again, with wave direction carrying the eye back to panel one.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p14-panel-03",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "The trio separates into a readable triangle that can cycle again, with wave direction carrying the eye back to panel one.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-flooded-combat-expanse",
+            "reading_order": 3,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p14-panel-03-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "The trio separates into a readable triangle that can cycle again, with wave direction carrying the eye back to panel one."
+          }
+        ],
+        "reading_order": [
+          "p14-panel-01",
+          "p14-panel-02",
+          "p14-panel-03"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p14-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-006-b",
+          "claim-006-d"
+        ],
+        "title": "Strength Against Strength",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-vishnu",
+          "dm-madhu",
+          "dm-kaitabha"
+        ],
+        "continuity_in": "after-page-14",
+        "continuity_out": "after-page-15",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-madhu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-kaitabha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-006"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "immersive hold",
+          "type": "FULL_PAGE"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p15-narration",
+            "placement": "caption-safe-region",
+            "text": "Years passed, yet the struggle did not end.\n\nHundreds became thousands.\n\nFor five thousand years, Vishnu fought the two Asuras with his arms."
+          }
+        ],
+        "location_id": "dm02-flooded-combat-expanse",
+        "moment_ids": [
+          "long_combat_shown_nonliterally"
+        ],
+        "narrative_beats": [
+          "Years passed, yet the struggle did not end.",
+          "Hundreds became thousands.",
+          "For five thousand years, Vishnu fought the two Asuras with his arms."
+        ],
+        "page_id": "page-25f617b853e82ff066d97844",
+        "page_number": 15,
+        "panel_count": 1,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Full-page nonliteral time image: one central arm-to-arm tableau is surrounded by repeated wave-rings and changing light bands rather than duplicate bodies, clocks or a literal count of years; no weapons, army or injury.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p15-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Full-page nonliteral time image: one central arm-to-arm tableau is surrounded by repeated wave-rings and changing light bands rather than duplicate bodies, clocks or a literal count of years; no weapons, army or injury.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-flooded-combat-expanse",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p15-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Full-page nonliteral time image: one central arm-to-arm tableau is surrounded by repeated wave-rings and changing light bands rather than duplicate bodies, clocks or a literal count of years; no weapons, army or injury."
+          }
+        ],
+        "reading_order": [
+          "p15-panel-01"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p15-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-006-b",
+          "claim-006-d"
+        ],
+        "title": "Five Thousand Years",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-vishnu",
+          "dm-madhu",
+          "dm-kaitabha",
+          "dm-yoganidra"
+        ],
+        "continuity_in": "after-page-15",
+        "continuity_out": "after-page-16",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-madhu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-kaitabha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-yoganidra",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-006"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "measured progression",
+          "type": "TWO_PANEL"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p16-narration",
+            "placement": "caption-safe-region",
+            "text": "The story’s measure of time is immense, but its problem is easy to understand: strength met strength, and still the danger remained. Whenever one attacker was forced back, the other pressed in. Whenever both were driven away, they returned to the struggle.\n\nThen Yoganidra’s power brought the reversal Brahma had requested.\n\nMadhu and Kaitabha became deluded. Intoxicated with their own strength, they no longer saw the contest clearly. They had fought Vishnu for five thousand years, and pride made them speak as if the advantage were theirs to give."
+          }
+        ],
+        "location_id": "dm02-flooded-combat-expanse",
+        "moment_ids": [],
+        "narrative_beats": [
+          "The story’s measure of time is immense, but its problem is easy to understand: strength met strength, and still the danger remained. Whenever one attacker was forced back, the other pressed in. Whenever both were driven away, they returned to the struggle.",
+          "Then Yoganidra’s power brought the reversal Brahma had requested.",
+          "Madhu and Kaitabha became deluded. Intoxicated with their own strength, they no longer saw the contest clearly. They had fought Vishnu for five thousand years, and pride made them speak as if the advantage were theirs to give."
+        ],
+        "page_id": "page-a77b8959a9dbfa9b247f6eed",
+        "page_number": 16,
+        "panel_count": 2,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "A repeated struggle rhythm shows one Asura pressing whenever the other falls back; use only arm-to-arm action and no invented strategy.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p16-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "A repeated struggle rhythm shows one Asura pressing whenever the other falls back; use only arm-to-arm action and no invented strategy.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-flooded-combat-expanse",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p16-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "A repeated struggle rhythm shows one Asura pressing whenever the other falls back; use only arm-to-arm action and no invented strategy."
+          },
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha",
+              "dm-yoganidra"
+            ],
+            "composition": "The struggle pauses as Madhu and Kaiṭabha's posture shifts to pride under Yoganidrā's deluding power; render the influence as source-neutral spatial distortion, not mind-control anatomy or a new motive.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p16-panel-02",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "The struggle pauses as Madhu and Kaiṭabha's posture shifts to pride under Yoganidrā's deluding power; render the influence as source-neutral spatial distortion, not mind-control anatomy or a new motive.",
+              "shot_scale": "medium"
+            },
+            "location_id": "dm02-flooded-combat-expanse",
+            "reading_order": 2,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p16-panel-02-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "The struggle pauses as Madhu and Kaiṭabha's posture shifts to pride under Yoganidrā's deluding power; render the influence as source-neutral spatial distortion, not mind-control anatomy or a new motive."
+          }
+        ],
+        "reading_order": [
+          "p16-panel-01",
+          "p16-panel-02"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p16-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-006-b",
+          "claim-006-c",
+          "claim-006-d"
+        ],
+        "title": "The Reversal",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-vishnu",
+          "dm-madhu",
+          "dm-kaitabha"
+        ],
+        "continuity_in": "after-page-16",
+        "continuity_out": "after-page-17",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-madhu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-kaitabha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-006"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "measured progression",
+          "type": "TWO_PANEL"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p17-narration-a",
+            "placement": "caption-safe-region",
+            "text": "Madhu drew back."
+          },
+          {
+            "channel": "DIALOGUE",
+            "id": "p17-dialogue-madhu",
+            "placement": "speaker-anchored-balloon",
+            "speaker_id": "dm-madhu",
+            "text": "Ask a boon of us."
+          },
+          {
+            "channel": "NARRATION",
+            "id": "p17-narration-b",
+            "placement": "caption-safe-region",
+            "text": "Kaitabha stood beside him."
+          },
+          {
+            "channel": "DIALOGUE",
+            "id": "p17-dialogue-kaitabha",
+            "placement": "speaker-anchored-balloon",
+            "speaker_id": "dm-kaitabha",
+            "text": "Yes. Choose what we shall give."
+          },
+          {
+            "channel": "NARRATION",
+            "id": "p17-narration-c",
+            "placement": "caption-safe-region",
+            "text": "After an age of combat, the strangest moment in the battle was not another blow. It was the offer made by the two who had come as enemies.\n\nThey had become the boon-givers.\n\nVishnu answered them."
+          }
+        ],
+        "location_id": "dm02-flooded-combat-expanse",
+        "moment_ids": [
+          "demons_offer_unusual_boon"
+        ],
+        "narrative_beats": [
+          "Madhu drew back.",
+          "Kaitabha stood beside him.",
+          "After an age of combat, the strangest moment in the battle was not another blow. It was the offer made by the two who had come as enemies.",
+          "They had become the boon-givers.",
+          "Vishnu answered them."
+        ],
+        "page_id": "page-e738c476c98efb28ec475cdd",
+        "page_number": 17,
+        "panel_count": 2,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "The three combatants stand apart after the long struggle; Madhu and Kaiṭabha occupy equal boon-giver positions without a victory throne or invented ritual.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p17-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "The three combatants stand apart after the long struggle; Madhu and Kaiṭabha occupy equal boon-giver positions without a victory throne or invented ritual.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-flooded-combat-expanse",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p17-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "The three combatants stand apart after the long struggle; Madhu and Kaiṭabha occupy equal boon-giver positions without a victory throne or invented ritual."
+          },
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Quiet reaction hold on Viṣṇu receiving the joint offer; no thought text, weapon or added motive.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p17-panel-02",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Quiet reaction hold on Viṣṇu receiving the joint offer; no thought text, weapon or added motive.",
+              "shot_scale": "medium"
+            },
+            "location_id": "dm02-flooded-combat-expanse",
+            "reading_order": 2,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p17-panel-02-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Quiet reaction hold on Viṣṇu receiving the joint offer; no thought text, weapon or added motive."
+          }
+        ],
+        "reading_order": [
+          "p17-panel-01",
+          "p17-panel-02"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p17-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-006-c",
+          "claim-006-d"
+        ],
+        "title": "The Unusual Offer",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-vishnu",
+          "dm-madhu",
+          "dm-kaitabha"
+        ],
+        "continuity_in": "after-page-17",
+        "continuity_out": "after-page-18",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-madhu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-kaitabha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-007"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "measured progression",
+          "type": "TWO_PANEL"
+        },
+        "lettering": [
+          {
+            "channel": "DIALOGUE",
+            "id": "p18-dialogue",
+            "placement": "speaker-anchored-balloon",
+            "speaker_id": "dm-vishnu",
+            "text": "Then let the boon be this. Let both of you be overcome by me."
+          },
+          {
+            "channel": "NARRATION",
+            "id": "p18-narration",
+            "placement": "caption-safe-region",
+            "text": "The words changed the shape of the contest.\n\nMadhu and Kaitabha had offered the boon jointly. Vishnu had not asked them for land, treasure or long life. He had asked for the one outcome their pride had not expected to grant: their own defeat at his hands."
+          }
+        ],
+        "location_id": "dm02-flooded-combat-expanse",
+        "moment_ids": [
+          "vishnu_names_their_death"
+        ],
+        "narrative_beats": [
+          "The words changed the shape of the contest.",
+          "Madhu and Kaitabha had offered the boon jointly. Vishnu had not asked them for land, treasure or long life. He had asked for the one outcome their pride had not expected to grant: their own defeat at his hands."
+        ],
+        "page_id": "page-52288832b81caa0075cc9f6b",
+        "page_number": 18,
+        "panel_count": 2,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Medium triangular dialogue frame: Viṣṇu answers both joint boon-givers directly, with no discus yet raised and no defeat locus implied.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p18-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Medium triangular dialogue frame: Viṣṇu answers both joint boon-givers directly, with no discus yet raised and no defeat locus implied.",
+              "shot_scale": "medium"
+            },
+            "location_id": "dm02-flooded-combat-expanse",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p18-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Medium triangular dialogue frame: Viṣṇu answers both joint boon-givers directly, with no discus yet raised and no defeat locus implied."
+          },
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Wide still-water hold after the words, keeping all three figures separate and the flood unbroken.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p18-panel-02",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Wide still-water hold after the words, keeping all three figures separate and the flood unbroken.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-flooded-combat-expanse",
+            "reading_order": 2,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p18-panel-02-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Wide still-water hold after the words, keeping all three figures separate and the flood unbroken."
+          }
+        ],
+        "reading_order": [
+          "p18-panel-01",
+          "p18-panel-02"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p18-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-007-a",
+          "claim-007-e"
+        ],
+        "title": "Vishnu Names the Boon",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-vishnu",
+          "dm-madhu",
+          "dm-kaitabha"
+        ],
+        "continuity_in": "after-page-18",
+        "continuity_out": "after-page-19",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-madhu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-kaitabha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-007"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "measured progression",
+          "type": "THREE_PANEL"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p19-narration-a",
+            "placement": "caption-safe-region",
+            "text": "Across the scene lay only the flood of dissolution."
+          },
+          {
+            "channel": "DIALOGUE",
+            "id": "p19-dialogue-madhu",
+            "placement": "speaker-anchored-balloon",
+            "speaker_id": "dm-madhu",
+            "text": "Only where earth is not flooded."
+          },
+          {
+            "channel": "DIALOGUE",
+            "id": "p19-dialogue-kaitabha",
+            "placement": "speaker-anchored-balloon",
+            "speaker_id": "dm-kaitabha",
+            "text": "On that condition, we grant it."
+          },
+          {
+            "channel": "NARRATION",
+            "id": "p19-narration-b",
+            "placement": "caption-safe-region",
+            "text": "It was a condition attached by both demons to the boon they had offered."
+          },
+          {
+            "channel": "DIALOGUE",
+            "id": "p19-dialogue-vishnu",
+            "placement": "speaker-anchored-balloon",
+            "speaker_id": "dm-vishnu",
+            "text": "I accept."
+          }
+        ],
+        "location_id": "dm02-flooded-combat-expanse",
+        "moment_ids": [],
+        "narrative_beats": [
+          "Across the scene lay only the flood of dissolution.",
+          "It was a condition attached by both demons to the boon they had offered."
+        ],
+        "page_id": "page-0a7e5fc37740e64356580b94",
+        "page_number": 19,
+        "panel_count": 3,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Wide panel of flood in every direction as Madhu states the first half of the joint condition; no dry place is yet shown.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p19-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Wide panel of flood in every direction as Madhu states the first half of the joint condition; no dry place is yet shown.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-flooded-combat-expanse",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p19-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Wide panel of flood in every direction as Madhu states the first half of the joint condition; no dry place is yet shown."
+          },
+          {
+            "character_ids": [
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Balanced two-shot of Madhu and Kaiṭabha completing the condition jointly, with neither replaced by an outside boon-giver.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p19-panel-02",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Balanced two-shot of Madhu and Kaiṭabha completing the condition jointly, with neither replaced by an outside boon-giver.",
+              "shot_scale": "medium"
+            },
+            "location_id": "dm02-flooded-combat-expanse",
+            "reading_order": 2,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p19-panel-02-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Balanced two-shot of Madhu and Kaiṭabha completing the condition jointly, with neither replaced by an outside boon-giver."
+          },
+          {
+            "character_ids": [
+              "dm-vishnu"
+            ],
+            "composition": "Close dialogue hold on Viṣṇu's acceptance; do not preview any thigh, lap, buttocks or other anatomical solution.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p19-panel-03",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Close dialogue hold on Viṣṇu's acceptance; do not preview any thigh, lap, buttocks or other anatomical solution.",
+              "shot_scale": "close"
+            },
+            "location_id": "dm02-flooded-combat-expanse",
+            "reading_order": 3,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p19-panel-03-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Close dialogue hold on Viṣṇu's acceptance; do not preview any thigh, lap, buttocks or other anatomical solution."
+          }
+        ],
+        "reading_order": [
+          "p19-panel-01",
+          "p19-panel-02",
+          "p19-panel-03"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p19-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-007-b",
+          "claim-007-e"
+        ],
+        "title": "The Condition",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-vishnu",
+          "dm-madhu",
+          "dm-kaitabha"
+        ],
+        "continuity_in": "after-page-19",
+        "continuity_out": "after-page-20",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-madhu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-kaitabha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-007"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "measured progression",
+          "type": "TWO_PANEL"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p20-narration",
+            "placement": "caption-safe-region",
+            "text": "The combat had lasted five thousand years. The exchange took only a few words. Yet those words did what force alone had not done: they fixed a condition under which the struggle could end.\n\nThe waters were still everywhere around them.\n\nVishnu met the condition."
+          }
+        ],
+        "location_id": "dm02-unflooded-defeat-locus",
+        "moment_ids": [],
+        "narrative_beats": [
+          "The combat had lasted five thousand years. The exchange took only a few words. Yet those words did what force alone had not done: they fixed a condition under which the struggle could end.",
+          "The waters were still everywhere around them.",
+          "Vishnu met the condition."
+        ],
+        "page_id": "page-f64eb6d498aa51d874a3ff79",
+        "page_number": 20,
+        "panel_count": 2,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "The flood still surrounds all three figures while a distinct dry-earth plane enters the composition away from every body; its mechanism, geography and size remain unspecified.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p20-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "The flood still surrounds all three figures while a distinct dry-earth plane enters the composition away from every body; its mechanism, geography and size remain unspecified.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-unflooded-defeat-locus",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p20-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "The flood still surrounds all three figures while a distinct dry-earth plane enters the composition away from every body; its mechanism, geography and size remain unspecified."
+          },
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Overhead geometry confirms water around a separate unflooded earth area without placing either demon on Viṣṇu's thigh, lap, buttocks or any other bodily locus.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p20-panel-02",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Overhead geometry confirms water around a separate unflooded earth area without placing either demon on Viṣṇu's thigh, lap, buttocks or any other bodily locus.",
+              "shot_scale": "overhead-wide"
+            },
+            "location_id": "dm02-unflooded-defeat-locus",
+            "reading_order": 2,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p20-panel-02-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Overhead geometry confirms water around a separate unflooded earth area without placing either demon on Viṣṇu's thigh, lap, buttocks or any other bodily locus."
+          }
+        ],
+        "reading_order": [
+          "p20-panel-01",
+          "p20-panel-02"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p20-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-007-b",
+          "claim-007-d",
+          "claim-007-e"
+        ],
+        "title": "A Condition Force Could Not Make",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-vishnu",
+          "dm-madhu",
+          "dm-kaitabha"
+        ],
+        "continuity_in": "after-page-20",
+        "continuity_out": "after-page-21",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-vishnu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": [
+              "dm-discus"
+            ]
+          },
+          {
+            "character_id": "dm-madhu",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-kaitabha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-007"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "immersive hold",
+          "type": "FULL_PAGE"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p21-narration",
+            "placement": "caption-safe-region",
+            "text": "The place of their defeat met the demons’ condition: the earth there was not under the flood.\n\nVishnu raised his discus. Its swift circle ended the contest, and Madhu and Kaitabha could no longer threaten the lotus."
+          }
+        ],
+        "location_id": "dm02-unflooded-defeat-locus",
+        "moment_ids": [
+          "unflooded_condition_and_defeat"
+        ],
+        "narrative_beats": [
+          "The place of their defeat met the demons’ condition: the earth there was not under the flood.",
+          "Vishnu raised his discus. Its swift circle ended the contest, and Madhu and Kaitabha could no longer threaten the lotus."
+        ],
+        "page_id": "page-8619f3db280abbfd867eefe4",
+        "page_number": 21,
+        "panel_count": 1,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "composition": "Full-page decisive composition: all three stand on or beside the clearly separate unflooded earth plane, Viṣṇu raises the sourced discus, and the swift luminous circle ends the threat through silhouettes and motion only; show no wound, anatomical impact point, thigh/lap/buttocks platform or graphic body detail.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p21-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Full-page decisive composition: all three stand on or beside the clearly separate unflooded earth plane, Viṣṇu raises the sourced discus, and the swift luminous circle ends the threat through silhouettes and motion only; show no wound, anatomical impact point, thigh/lap/buttocks platform or graphic body detail.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-unflooded-defeat-locus",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p21-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Full-page decisive composition: all three stand on or beside the clearly separate unflooded earth plane, Viṣṇu raises the sourced discus, and the swift luminous circle ends the threat through silhouettes and motion only; show no wound, anatomical impact point, thigh/lap/buttocks platform or graphic body detail."
+          }
+        ],
+        "reading_order": [
+          "p21-panel-01"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p21-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-007-b",
+          "claim-007-c",
+          "claim-007-d",
+          "claim-007-e"
+        ],
+        "title": "Where the Earth Was Not Flooded",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [
+          "dm-medhas",
+          "dm-suratha",
+          "dm-samadhi"
+        ],
+        "continuity_in": "after-page-21",
+        "continuity_out": "after-page-22",
+        "continuity_requirements": [
+          {
+            "character_id": "dm-medhas",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-suratha",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          },
+          {
+            "character_id": "dm-samadhi",
+            "checks": [
+              "face",
+              "silhouette",
+              "clothing",
+              "ornaments",
+              "arm count",
+              "authorized equipment",
+              "source-bounded spatial relationship"
+            ],
+            "weapon_ids": []
+          }
+        ],
+        "event_ids": [
+          "dm-event-007"
+        ],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "measured progression",
+          "type": "TWO_PANEL"
+        },
+        "lettering": [
+          {
+            "channel": "NARRATION",
+            "id": "p22-narration",
+            "placement": "caption-safe-region",
+            "text": "Brahma was safe. Vishnu stood awake above the cosmic waters. Yoganidra’s withdrawal had made his awakening possible, and her power had turned the demons’ pride toward the boon that ended them.\n\nSage Medhas let the struggle come to rest.\n\nThe danger at the lotus was over."
+          }
+        ],
+        "location_id": "dm02-forest-hermitage-frame",
+        "moment_ids": [
+          "resolved_return_to_frame"
+        ],
+        "narrative_beats": [
+          "Brahma was safe. Vishnu stood awake above the cosmic waters. Yoganidra’s withdrawal had made his awakening possible, and her power had turned the demons’ pride toward the boon that ended them.",
+          "Sage Medhas let the struggle come to rest.",
+          "The danger at the lotus was over."
+        ],
+        "page_id": "page-d22f4a199dc41892b93a95e8",
+        "page_number": 22,
+        "panel_count": 2,
+        "panels": [
+          {
+            "character_ids": [
+              "dm-medhas",
+              "dm-suratha",
+              "dm-samadhi"
+            ],
+            "composition": "Quiet return to the same hermitage geometry: Medhas lets the account rest while Suratha and Samādhi remain neutral listeners with no invented spoken reaction.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p22-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Quiet return to the same hermitage geometry: Medhas lets the account rest while Suratha and Samādhi remain neutral listeners with no invented spoken reaction.",
+              "shot_scale": "wide"
+            },
+            "location_id": "dm02-forest-hermitage-frame",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p22-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Quiet return to the same hermitage geometry: Medhas lets the account rest while Suratha and Samādhi remain neutral listeners with no invented spoken reaction."
+          },
+          {
+            "character_ids": [],
+            "composition": "Close on the low fire settling beneath a protected final caption field; no next-book hook or new doctrinal symbol.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p22-panel-02",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Close on the low fire settling beneath a protected final caption field; no next-book hook or new doctrinal symbol.",
+              "shot_scale": "close"
+            },
+            "location_id": "dm02-forest-hermitage-frame",
+            "reading_order": 2,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p22-panel-02-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Close on the low fire settling beneath a protected final caption field; no next-book hook or new doctrinal symbol."
+          }
+        ],
+        "reading_order": [
+          "p22-panel-01",
+          "p22-panel-02"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p22-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-007-c",
+          "claim-007-d",
+          "claim-007-e"
+        ],
+        "title": "The Danger Ends",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [],
+        "continuity_in": "after-page-22",
+        "continuity_out": "after-page-23",
+        "continuity_requirements": [],
+        "event_ids": [],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "measured progression",
+          "type": "BACK_MATTER"
+        },
+        "lettering": [
+          {
+            "channel": "INSET_EXPLANATION",
+            "id": "p23-source-note",
+            "placement": "full-page-editable-inset",
+            "text": "This private editorial draft is fresh original English prose based only on the locked paraphrases and locators for Devi Mahatmya 1 in dm-event-004 through dm-event-007. Brahma’s cosmic and theological descriptions are presented as his attributed hymn-praise, not as independent project certification. All dialogue is non-verbatim adaptation. The five-thousand-year combat, joint boon offer by Madhu and Kaitabha, Vishnu’s requested boon, the unflooded-earth condition and the discus defeat remain in source order. No demon genealogy, earlier ascetic or invulnerability boon, outside boon-giver, divine motive or sacred quotation has been added. Because the bounded English and Sanskrit witnesses leave the final bodily locus unresolved, the manuscript states only that the water condition is met and omits any thigh, lap, buttocks or other precise locus. The DM08 manuscript was consulted only as a literary-quality benchmark and was neither copied nor treated as evidence. This clearance permits only a private manuscript draft; illustration, PDF production, publication, public sharing and distribution remain blocked."
+          }
+        ],
+        "location_id": "dm02-forest-hermitage-frame",
+        "moment_ids": [
+          "source_and_adaptation_notes"
+        ],
+        "narrative_beats": [
+          "This private editorial draft is fresh original English prose based only on the locked paraphrases and locators for Devi Mahatmya 1 in dm-event-004 through dm-event-007. Brahma’s cosmic and theological descriptions are presented as his attributed hymn-praise, not as independent project certification. All dialogue is non-verbatim adaptation. The five-thousand-year combat, joint boon offer by Madhu and Kaitabha, Vishnu’s requested boon, the unflooded-earth condition and the discus defeat remain in source order. No demon genealogy, earlier ascetic or invulnerability boon, outside boon-giver, divine motive or sacred quotation has been added. Because the bounded English and Sanskrit witnesses leave the final bodily locus unresolved, the manuscript states only that the water condition is met and omits any thigh, lap, buttocks or other precise locus. The DM08 manuscript was consulted only as a literary-quality benchmark and was neither copied nor treated as evidence. This clearance permits only a private manuscript draft; illustration, PDF production, publication, public sharing and distribution remain blocked."
+        ],
+        "page_id": "page-0de736c5ac791f2e0c546fd3",
+        "page_number": 23,
+        "panel_count": 1,
+        "panels": [
+          {
+            "character_ids": [],
+            "composition": "Text-led ivory source-note page with a restrained navy-and-gold forest-frame border; no character figure, mythic reenactment, source quotation styling or new iconographic claim.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p23-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Text-led ivory source-note page with a restrained navy-and-gold forest-frame border; no character figure, mythic reenactment, source quotation styling or new iconographic claim.",
+              "shot_scale": "flat"
+            },
+            "location_id": "dm02-forest-hermitage-frame",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p23-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Text-led ivory source-note page with a restrained navy-and-gold forest-frame border; no character figure, mythic reenactment, source quotation styling or new iconographic claim."
+          }
+        ],
+        "reading_order": [
+          "p23-panel-01"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p23-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-004-d",
+          "claim-005-c",
+          "claim-006-d",
+          "claim-007-d",
+          "claim-007-e"
+        ],
+        "title": "Source and Adaptation Note",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      },
+      {
+        "character_ids": [],
+        "continuity_in": "after-page-23",
+        "continuity_out": "story-complete",
+        "continuity_requirements": [],
+        "event_ids": [],
+        "image_instructions": {
+          "canvas": {
+            "aspect_ratio": "3:4",
+            "pixel_height": 1448,
+            "pixel_width": 1086
+          },
+          "model_prompt_status": "SPECIFICATION_ONLY",
+          "palette": [
+            "#071F35",
+            "#D8AC4E",
+            "#F0CF76",
+            "#F6E8C6",
+            "#FFF9EF",
+            "#251C18",
+            "#692019"
+          ],
+          "render": false,
+          "text_in_image": false
+        },
+        "layout": {
+          "rhythm": "measured progression",
+          "type": "BACK_MATTER"
+        },
+        "lettering": [
+          {
+            "channel": "INSET_EXPLANATION",
+            "id": "p24-editorial-a",
+            "placement": "editable-editorial-label",
+            "text": "This is a modern editorial reflection, not a quotation from scripture."
+          },
+          {
+            "channel": "INSET_EXPLANATION",
+            "id": "p24-editorial-b",
+            "placement": "editable-editorial-body",
+            "text": "Sleep, sustained strength and the boon condition each change the story in a different way: Yoganidra’s withdrawal makes awakening possible, Vishnu endures the long struggle, and the demons’ own condition opens the way to its end."
+          },
+          {
+            "channel": "INSET_EXPLANATION",
+            "id": "p24-editorial-c",
+            "placement": "editable-family-prompt",
+            "text": "For family conversation: When a problem will not yield to force, what condition might be holding it in place? What can change when that condition is understood?"
+          }
+        ],
+        "location_id": "dm02-forest-hermitage-frame",
+        "moment_ids": [],
+        "narrative_beats": [
+          "This is a modern editorial reflection, not a quotation from scripture.",
+          "Sleep, sustained strength and the boon condition each change the story in a different way: Yoganidra’s withdrawal makes awakening possible, Vishnu endures the long struggle, and the demons’ own condition opens the way to its end.",
+          "For family conversation: When a problem will not yield to force, what condition might be holding it in place? What can change when that condition is understood?"
+        ],
+        "page_id": "page-83f106e1acc55e4a61e6fdc0",
+        "page_number": 24,
+        "panel_count": 1,
+        "panels": [
+          {
+            "character_ids": [],
+            "composition": "Text-led family-reflection page with a quiet fire-and-tree ornamental border only; no character speech balloon, sacred quotation styling or implied scriptural status.",
+            "continuity_requirements": [
+              "match the page-level character and location bible records",
+              "preserve action direction",
+              "do not add source-silent iconography"
+            ],
+            "id": "p24-panel-01",
+            "image_instructions": {
+              "exclude": [
+                "embedded text",
+                "watermark",
+                "modern object",
+                "graphic gore",
+                "unsourced halo",
+                "unsupported body-locus claim"
+              ],
+              "intent": "preproduction specification only",
+              "render": false,
+              "required_action": "Text-led family-reflection page with a quiet fire-and-tree ornamental border only; no character speech balloon, sacred quotation styling or implied scriptural status.",
+              "shot_scale": "flat"
+            },
+            "location_id": "dm02-forest-hermitage-frame",
+            "reading_order": 1,
+            "safe_regions": [
+              {
+                "height": 0.18,
+                "id": "p24-panel-01-safe",
+                "purpose": "lettering separation",
+                "width": 0.84,
+                "x": 0.08,
+                "y": 0.06
+              }
+            ],
+            "visual_description": "Text-led family-reflection page with a quiet fire-and-tree ornamental border only; no character speech balloon, sacred quotation styling or implied scriptural status."
+          }
+        ],
+        "reading_order": [
+          "p24-panel-01"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.2,
+            "id": "p24-page-safe",
+            "purpose": "primary lettering",
+            "width": 0.86,
+            "x": 0.07,
+            "y": 0.05
+          }
+        ],
+        "source_claim_ids": [
+          "claim-editorial-a"
+        ],
+        "title": "Editorial Reflection — A Thought for Families",
+        "validation_requirements": [
+          "source-event coverage",
+          "speaker attribution",
+          "character continuity",
+          "safe-region preservation",
+          "editable lettering separation",
+          "no unsupported iconography",
+          "no unsupported body-locus claim"
+        ],
+        "version": 1,
+        "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+      }
+    ],
+    "reading_order_policy": "Pages are sequential; panels read top-to-bottom and left-to-right by explicit reading_order. Lettering remains separate and editable.",
+    "required_moments": [
+      {
+        "event_ids": [
+          "dm-event-004"
+        ],
+        "id": "medhas_opens_cosmic_tale"
+      },
+      {
+        "event_ids": [
+          "dm-event-004"
+        ],
+        "id": "vishnu_sleeps_on_shesha"
+      },
+      {
+        "event_ids": [
+          "dm-event-004"
+        ],
+        "id": "madhu_kaitabha_threaten_brahma"
+      },
+      {
+        "event_ids": [
+          "dm-event-005"
+        ],
+        "id": "brahma_invokes_goddess"
+      },
+      {
+        "event_ids": [
+          "dm-event-006"
+        ],
+        "id": "yoganidra_leaves_vishnu"
+      },
+      {
+        "event_ids": [
+          "dm-event-006"
+        ],
+        "id": "vishnu_awakens"
+      },
+      {
+        "event_ids": [
+          "dm-event-006"
+        ],
+        "id": "long_combat_shown_nonliterally"
+      },
+      {
+        "event_ids": [
+          "dm-event-006"
+        ],
+        "id": "demons_offer_unusual_boon"
+      },
+      {
+        "event_ids": [
+          "dm-event-007"
+        ],
+        "id": "vishnu_names_their_death"
+      },
+      {
+        "event_ids": [
+          "dm-event-007"
+        ],
+        "id": "unflooded_condition_and_defeat"
+      },
+      {
+        "event_ids": [
+          "dm-event-007"
+        ],
+        "id": "resolved_return_to_frame"
+      },
+      {
+        "event_ids": [],
+        "id": "source_and_adaptation_notes"
+      }
+    ],
+    "schema_version": "1.0",
+    "text_channels": [
+      "NARRATION",
+      "DIALOGUE",
+      "THOUGHT",
+      "INSET_EXPLANATION"
+    ],
+    "version": 1
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

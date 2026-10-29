@@ -1,0 +1,211 @@
+"""Read-only adapter over the existing source graph and its validator."""
+
+import json
+import os
+import subprocess
+import sys
+from pathlib import Path
+
+from .errors import ContractError
+from .util import tree_hash, tree_snapshot
+
+
+TABLES = {
+    "spines": "story_spines.json",
+    "events": "narrative_events.json",
+    "passages": "passages.json",
+    "evidence": "evidence.json",
+    "entities": "entities.json",
+    "relationships": "relationships.json",
+    "powers": "boons_and_powers.json",
+    "variants": "variants_and_conflicts.json",
+    "source_registry": "source_registry.json",
+    "chapter_coverage": "chapter_coverage.json",
+    "source_coverage": "source_coverage.json",
+}
+
+
+class ReadOnlySourceGraph:
+    def __init__(self, graph_root):
+        self.root = Path(graph_root)
+        if not (self.root / "validate_graph.py").is_file():
+            raise ContractError("source graph validator is missing")
+
+    def snapshot(self):
+        return tree_snapshot(self.root)
+
+    def graph_hash(self):
+        return tree_hash(self.root)
+
+    def _load(self, name):
+        path = self.root / TABLES[name]
+        with path.open("r", encoding="utf-8") as handle:
+            return json.load(handle)
+
+    def verify(self):
+        before = self.snapshot()
+        environment = os.environ.copy()
+        environment["PYTHONDONTWRITEBYTECODE"] = "1"
+        completed = subprocess.run(
+            [sys.executable, str(self.root / "validate_graph.py"), "--root", str(self.root)],
+            check=False,
+            capture_output=True,
+            text=True,
+            env=environment,
+        )
+        after = self.snapshot()
+        if before != after:
+            raise ContractError("source graph changed while its validator ran")
+        try:
+            report = json.loads(completed.stdout)
+        except json.JSONDecodeError as exc:
+            raise ContractError("source graph validator returned invalid JSON: %s" % exc)
+        if completed.returncode != 0 or not report.get("passed"):
+            raise ContractError("source graph validation failed", report)
+        report["graph_hash"] = tree_hash(self.root)
+        return report
+
+    def complete_story_spines(self):
+        return sorted(
+            (item for item in self._load("spines") if item.get("status") == "COMPLETE"),
+            key=lambda item: item["id"],
+        )
+
+    def story_spine(self, spine_id):
+        spine = next((item for item in self._load("spines") if item["id"] == spine_id), None)
+        if not spine:
+            raise ContractError("unknown story spine %s" % spine_id)
+        return spine
+
+    def source_record(self, source_id):
+        registry = self._load("source_registry")
+        records = registry.get("sources", []) if isinstance(registry, dict) else registry
+        return next((item for item in records if item.get("id") == source_id), None)
+
+    def witness_record(self, witness_id):
+        registry = self._load("source_registry")
+        return next((item for item in registry.get("witnesses", []) if item.get("id") == witness_id), None)
+
+    def source_coverage_records(self, source_id, witness_id=None):
+        coverage = self._load("source_coverage")
+        return [
+            item for item in coverage.get("records", [])
+            if item.get("source_id") == source_id
+            and (witness_id is None or item.get("witness_id") == witness_id)
+        ]
+
+    def full_arc_review(self, spine_id):
+        path = self.root / "review_resolution.json"
+        if not path.is_file():
+            return {"story_spine_id": spine_id, "independent_full_arc_completeness": "UNDETERMINED", "reason": "No review-resolution record is available."}
+        with path.open("r", encoding="utf-8") as handle:
+            records = json.load(handle).get("full_arc_completeness", [])
+        return next(
+            (item for item in records if item.get("story_spine_id") == spine_id),
+            {"story_spine_id": spine_id, "independent_full_arc_completeness": "UNDETERMINED", "reason": "No blanket independent full-arc determination is recorded."},
+        )
+
+    @staticmethod
+    def _review_records(value):
+        records = []
+        if isinstance(value, dict):
+            if value.get("id"):
+                records.append(value)
+            else:
+                for child in value.values():
+                    records.extend(ReadOnlySourceGraph._review_records(child))
+        elif isinstance(value, list):
+            for child in value:
+                records.extend(ReadOnlySourceGraph._review_records(child))
+        return records
+
+    def story_packet(self, spine_id, event_ids=None):
+        spine = self.story_spine(spine_id)
+        event_index = {item["id"]: item for item in self._load("events")}
+        selected_ids = list(event_ids) if event_ids else list(spine["event_ids"])
+        unknown = set(selected_ids) - set(spine["event_ids"])
+        if unknown:
+            raise ContractError("event scope is outside story spine", {"spine_id": spine_id, "event_ids": sorted(unknown)})
+        events = [event_index[event_id] for event_id in selected_ids]
+        events.sort(key=lambda item: item["sequence"])
+        passage_ids = {value for event in events for value in event.get("passage_ids", [])}
+        evidence_ids = {value for event in events for value in event.get("evidence_ids", [])}
+        entity_ids = {
+            value
+            for event in events
+            for key in ("participants", "introduced_entity_ids")
+            for value in event.get(key, [])
+        }
+        relationship_ids = {value for event in events for value in event.get("changed_relationship_ids", [])}
+        power_ids = {value for event in events for value in event.get("introduced_power_ids", [])}
+        passages = [item for item in self._load("passages") if item["id"] in passage_ids]
+        evidence = [item for item in self._load("evidence") if item["id"] in evidence_ids]
+        entities = [item for item in self._load("entities") if item["id"] in entity_ids]
+        relationships = [
+            item for item in self._load("relationships")
+            if item["id"] in relationship_ids or item.get("subject_id") in entity_ids or item.get("object_id") in entity_ids
+        ]
+        powers = [
+            item for item in self._load("powers")
+            if item["id"] in power_ids
+            or item.get("recipient_id") in entity_ids
+            or item.get("grantor_id") in entity_ids
+            or set(item.get("later_event_ids", [])).intersection(selected_ids)
+        ]
+        variants = [item for item in self._load("variants") if spine["source_id"] in item.get("source_ids", [])]
+        with (self.root / "claims_needing_review.json").open("r", encoding="utf-8") as handle:
+            reviews = self._review_records(json.load(handle))
+        unresolved = [
+            item for item in reviews
+            if item.get("source_id") == spine["source_id"]
+            or item.get("id") in evidence_ids
+            or item.get("id") in relationship_ids
+            or item.get("id") in power_ids
+            or item.get("id") in spine["event_ids"]
+        ]
+        coverage = [
+            item for item in self._load("chapter_coverage")
+            if item.get("source_id") == spine["source_id"]
+            and (not item.get("witness_id") or item.get("witness_id") == spine.get("witness_id"))
+            and passage_ids.intersection(item.get("passage_ids", []))
+        ]
+        source_coverage = self.source_coverage_records(spine["source_id"], spine.get("witness_id"))
+        narrative_complete = any(item.get("narrative_extraction_complete") for item in source_coverage)
+        return {
+            "graph_hash": self.graph_hash(),
+            "spine": spine,
+            "events": events,
+            "passages": passages,
+            "evidence": evidence,
+            "entities": entities,
+            "relationships": relationships,
+            "boons_and_powers": powers,
+            "variants_and_conflicts": variants,
+            "unresolved_review_flags": unresolved,
+            "source": self.source_record(spine["source_id"]),
+            "witness": self.witness_record(spine.get("witness_id")),
+            "source_coverage": source_coverage,
+            "independent_full_arc_review": self.full_arc_review(spine_id),
+            "selected_event_ids": selected_ids,
+            "chapter_coverage": coverage,
+            "completeness": {
+                "bounded_spine_status": spine["status"],
+                "basis": spine.get("completeness_basis"),
+                "chapter_extraction_status": (
+                    "COMPLETE" if coverage and all(
+                        item.get("state") == "COMPLETE" and item.get("read_entire_chapter")
+                        for item in coverage
+                    ) else "NARRATIVE_COMPLETE_ATOMIC_PARTIAL" if narrative_complete else "INCOMPLETE"
+                ),
+                "not_exhaustive_scripture_verification": True,
+            },
+        }
+
+    def assert_unchanged(self, snapshot):
+        current = self.snapshot()
+        if current != snapshot:
+            changed = sorted(set(snapshot).symmetric_difference(current) | {
+                key for key in set(snapshot).intersection(current) if snapshot[key] != current[key]
+            })
+            raise ContractError("read-only source graph guard failed", {"changed": changed})
+        return True

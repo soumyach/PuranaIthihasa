@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "book_version": "DM02-BOOK-LEVEL-PRODUCTION-PAGE07-V2",
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "page_script_hash": "35f26b8e183dc26290835e5300384285154ff25c5c7bec04bb929514ea1d05a5",
+  "page_id": "page-2eff3830302e6bb1ce973d73",
+  "page_number": 7,
+  "reading_order": 7,
+  "page_title": "DANGER AND ANSWER TOGETHER",
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "layout_type": "THREE_PANEL",
+  "fixture": false,
+  "private_preview": true,
+  "publication_eligible": false,
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "preview_authority": {
+    "scope": "DM02_BOOK_LEVEL_PRIVATE_CAMPAIGN_PASS_REVIEWED_ASSETS",
+    "basis": "Exact approval approval-3174e958372faf8a1e6f380f and independent actual-pixel review",
+    "image_generation_authorized": true,
+    "publication_authorized": false,
+    "paid_provider_calls_authorized": false
+  },
+  "storyboard_conformance": {
+    "status": "PRIVATE_PREVIEW_FROM_PASS_REVIEWED_ASSETS",
+    "reason": "All required panel assets passed independent private-use review; lettering is exact from locked storyboard v2."
+  },
+  "reference_comparison": [
+    {
+      "role": "PRESENTATION_REFERENCE_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "role": "COMIC_PAGE_RHYTHM_REFERENCE_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+    }
+  ],
+  "panels": [
+    {
+      "panel_id": "p07-panel-01",
+      "reading_order": 1,
+      "asset": {
+        "path": "books/DM02/book-level-production/images/p07-panel-01/v0002.png",
+        "sha256": "65ef35282c8a4ea1038bf6dd30a6ad2ad969692feb4f5387adbf38c50ca6e2f5",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW",
+        "approval": {
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "65ef35282c8a4ea1038bf6dd30a6ad2ad969692feb4f5387adbf38c50ca6e2f5",
+          "review_path": "books/DM02/book-level-production/reviews/campaign-image-reviews.v0001.json",
+          "review_result": "PASS"
+        }
+      },
+      "crop": {
+        "mode": "CONTAIN",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "zoom": 1.0,
+        "crop_intent": "Preserve the complete reviewed portrait master, including the protected lettering field and all source-critical relationships."
+      },
+      "speaker_anchors": [],
+      "box": {
+        "x": 0.045,
+        "y": 0.105,
+        "width": 0.91,
+        "height": 0.41
+      }
+    },
+    {
+      "panel_id": "p07-panel-02",
+      "reading_order": 2,
+      "asset": {
+        "path": "books/DM02/book-level-production/images/p07-panel-02/v0001.png",
+        "sha256": "eb60186532b962dbd7d40708f97ea37af49b9442a4580bc126219c88183021f7",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW",
+        "approval": {
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "eb60186532b962dbd7d40708f97ea37af49b9442a4580bc126219c88183021f7",
+          "review_path": "books/DM02/book-level-production/reviews/campaign-image-reviews.v0001.json",
+          "review_result": "PASS"
+        }
+      },
+      "crop": {
+        "mode": "CONTAIN",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "zoom": 1.0,
+        "crop_intent": "Preserve the complete reviewed portrait master, including the protected lettering field and all source-critical relationships."
+      },
+      "speaker_anchors": [],
+      "box": {
+        "x": 0.045,
+        "y": 0.675,
+        "width": 0.446,
+        "height": 0.25
+      }
+    },
+    {
+      "panel_id": "p07-panel-03",
+      "reading_order": 3,
+      "asset": {
+        "path": "books/DM02/book-level-production/images/p07-panel-03/v0001.png",
+        "sha256": "26a6924dd30ccf09f5e4a72910cbfdf22a6a3fb8f830b30a199809a0f814c0d1",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW",
+        "approval": {
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "26a6924dd30ccf09f5e4a72910cbfdf22a6a3fb8f830b30a199809a0f814c0d1",
+          "review_path": "books/DM02/book-level-production/reviews/campaign-image-reviews.v0001.json",
+          "review_result": "PASS"
+        }
+      },
+      "crop": {
+        "mode": "CONTAIN",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "zoom": 1.0,
+        "crop_intent": "Preserve the complete reviewed portrait master, including the protected lettering field and all source-critical relationships."
+      },
+      "speaker_anchors": [],
+      "box": {
+        "x": 0.509,
+        "y": 0.675,
+        "width": 0.446,
+        "height": 0.25
+      }
+    }
+  ],
+  "lettering": [
+    {
+      "lettering_id": "p07-narration-a",
+      "panel_id": "p07-panel-01",
+      "reading_order": 1,
+      "channel": "NARRATION",
+      "speaker_id": "narrator",
+      "text": "Brahma looked from the approaching figures to Vishnu. The preserver still rested upon Shesha, held in the depth of Yoganidra. No call from the lotus had yet broken that sleep.\n\nMadhu and Kaitabha came nearer.",
+      "box": {
+        "x": 0.08,
+        "y": 0.115,
+        "width": 0.84,
+        "height": 0.14
+      },
+      "padding": 12,
+      "font": {
+        "size": 22,
+        "minimum_size": 22
+      },
+      "badge_number": 1,
+      "source_script_hash": "5177b787c102ba260f77a6b07f8b9c0826039b8e17321d030a94cb9bc941f17b"
+    },
+    {
+      "lettering_id": "p07-narration-b",
+      "panel_id": "p07-panel-03",
+      "reading_order": 2,
+      "channel": "NARRATION",
+      "speaker_id": "narrator",
+      "text": "There was nowhere for Brahma to flee. Around the lotus lay the same endless flood. Below it slept the one who could face the threat. Yet the sleep upon Vishnu was itself divine power, not an ordinary weariness that Brahma could simply shake away.\n\nThe danger and the answer stood almost together: the threatening Asuras upon the waters, Vishnu beneath the lotus, and the power of sleep holding him still.",
+      "box": {
+        "x": 0.08,
+        "y": 0.525,
+        "width": 0.84,
+        "height": 0.14
+      },
+      "padding": 12,
+      "font": {
+        "size": 22,
+        "minimum_size": 22
+      },
+      "badge_number": 2,
+      "source_script_hash": "4e0855997c7027469823ae165939fcbe5f8b17cf1bf3f23491658834c4da54a3",
+      "placement_scope": "PAGE_BAND"
+    }
+  ],
+  "required_lettering_ids": [
+    "p07-narration-a",
+    "p07-narration-b"
+  ],
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "typography": {
+    "family": "STIXGeneral",
+    "body_size": 22,
+    "title_size": 30
+  },
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    }
+  },
+  "composition_repair": {
+    "parent_version": "v0001",
+    "reason": "INDEPENDENT_REVIEW_DIRECTED_LAYOUT_ONLY_REPAIR",
+    "new_pixels_required": false,
+    "artwork_hashes_changed": false
+  }
+}

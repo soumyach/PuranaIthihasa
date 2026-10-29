@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "khatakshetra-indian-cultural-authenticity-v1",
+  "applies_to": "ALL_KHATAKSHETRA_KATHAS",
+  "decision_values": [
+    "SOURCE_REQUIRED",
+    "TRADITION_SUPPORTED",
+    "ARTISTICALLY_APPROVED",
+    "SOURCE_SILENT",
+    "FORBIDDEN"
+  ],
+  "principle": "Use source-backed details when present. When the source is silent, require a documented, context-appropriate Indian visual convention or an explicit artistic approval; never declare one regional, historical or sectarian style canonical for every Purana or era.",
+  "subject_gates": [
+    {
+      "subject": "DEITIES_AND_DIVINE_MANIFESTATIONS",
+      "required_checks": ["identity", "authorized manifestation", "arm count", "weapons and emblems", "mount", "gesture", "garment and ornament", "unrelated-deity transfer"]
+    },
+    {
+      "subject": "KINGS_AND_ROYAL_COURTS",
+      "required_checks": ["source-supported rank", "court function", "crown or headgear basis", "garment basis", "architecture basis", "unsupported imperial uniform"]
+    },
+    {
+      "subject": "SAGES_AND_DEVOTEES",
+      "required_checks": ["role", "life-stage cues", "garment basis", "ritual objects", "setting", "absence of unsupported weaponry"]
+    },
+    {
+      "subject": "ASURA_RULERS_AND_COMMANDERS",
+      "required_checks": ["individual identity", "event-bound form", "authorized weapons", "source-silent costume label", "no invented canonical Asura uniform", "no RPG demonic shorthand"]
+    },
+    {
+      "subject": "SOLDIERS_AND_BATTLEFIELD_EQUIPMENT",
+      "required_checks": ["unit type", "weapon", "shield", "headgear", "armor", "banner", "chariot or mount", "current-story provenance"]
+    },
+    {
+      "subject": "HELMETS_AND_CROWNS",
+      "required_checks": ["source or tradition basis", "regional and period uncertainty", "foreign-style exclusion", "not used as generic good-versus-evil coding"]
+    },
+    {
+      "subject": "GARMENTS_AND_JEWELRY",
+      "required_checks": ["Indian visual basis", "character role", "movement and modesty", "source-given ornament", "proposal versus fact label"]
+    },
+    {
+      "subject": "SHIELDS_AND_WEAPONS",
+      "required_checks": ["authorized weapon ID", "recognizable form", "correct holder", "no duplicated unsupported weapon", "action-state continuity"]
+    },
+    {
+      "subject": "ARCHITECTURE",
+      "required_checks": ["story geography", "documented Indian visual convention", "source-silent label", "no imported European castle", "continuity"]
+    },
+    {
+      "subject": "FLAGS_AND_MILITARY_SYMBOLS",
+      "required_checks": ["source or tradition basis", "story-specific approval", "no invented faction emblem", "no unsupported demonic face"]
+    },
+    {
+      "subject": "MOUNTS_ANIMALS_AND_ENVIRONMENTS",
+      "required_checks": ["correct species and owner", "event relationship", "Indian environmental basis where relevant", "continuity", "no arbitrary fantasy creature"]
+    }
+  ],
+  "explicit_foreign_style_exclusions": [
+    {"id": "forbid-greek-corinthian-helmet", "decision": "FORBIDDEN", "label": "Greek Corinthian helmet"},
+    {"id": "forbid-roman-hellenistic-crested-helmet", "decision": "FORBIDDEN", "label": "Roman or Hellenistic crested helmet"},
+    {"id": "forbid-trojan-spartan-odyssey-equipment", "decision": "FORBIDDEN", "label": "Trojan, Spartan or Odyssey-style battle equipment"},
+    {"id": "forbid-european-medieval-plate", "decision": "FORBIDDEN", "label": "European medieval plate armor"},
+    {"id": "forbid-viking-helmet", "decision": "FORBIDDEN", "label": "Viking-style helmet"},
+    {"id": "forbid-generic-western-fantasy-equipment", "decision": "FORBIDDEN", "label": "generic Western fantasy equipment"},
+    {"id": "forbid-rpg-demonic-armor", "decision": "FORBIDDEN", "label": "RPG-inspired demonic armor"},
+    {"id": "forbid-unsupported-fantasy-flag-emblem", "decision": "FORBIDDEN", "label": "unsupported fantasy emblem on a flag"},
+    {"id": "forbid-european-castle", "decision": "FORBIDDEN", "label": "European castle architecture without source justification"}
+  ],
+  "dm04_specific_failures": [
+    {
+      "failure_id": "dm04-pr6-greco-roman-red-crest",
+      "decision": "FORBIDDEN",
+      "evidence_image_hashes": [
+        "42cfdd660d064fddb289c38f7f404ab0232ed1234f66ffa66dfdd8ae8c47ddef"
+      ],
+      "finding": "An Asura warrior wears red-crested Greco-Roman-looking headgear. The crest wording in the character proposal did not authorize a Roman, Hellenistic, Trojan or Spartan silhouette.",
+      "future_rule": "Do not use a transverse or longitudinal Greco-Roman plume, Corinthian face form or classical Mediterranean armor vocabulary. Source silence must remain source silence until a documented Indian convention is reviewed."
+    },
+    {
+      "failure_id": "dm04-pr6-unsupported-demonic-face-flag",
+      "decision": "FORBIDDEN",
+      "evidence_image_hashes": [
+        "42cfdd660d064fddb289c38f7f404ab0232ed1234f66ffa66dfdd8ae8c47ddef"
+      ],
+      "finding": "A black/red demonic-face flag emblem appears without demonstrated source or tradition support.",
+      "future_rule": "Use no faction emblem when none is sourced or artistically approved; a plain story-appropriate standard is still a proposal and must be labeled SOURCE_SILENT."
+    }
+  ],
+  "source_silence_protocol": [
+    "Record the field as SOURCE_SILENT.",
+    "Offer one or more documented, context-appropriate Indian visual conventions as proposals, with region, medium and uncertainty named.",
+    "Require ARTISTICALLY_APPROVED before an exact design becomes reusable.",
+    "Never describe an approved proposal as scriptural fact or universal canon."
+  ],
+  "review_outcomes": ["PASS", "FIX", "ESCALATE"],
+  "fail_closed_rules": [
+    "Any FORBIDDEN element produces FIX or ESCALATE, never PASS.",
+    "A sacred-identity conflict produces ESCALATE unless the correction is unambiguous and source-backed.",
+    "A visually attractive image cannot pass if source, iconography or cultural-authenticity evidence fails.",
+    "Only an image-capable independent reviewer may make semantic pixel conclusions."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "concurrency": {
+    "max_active_books": 1,
+    "max_image_requests": 2,
+    "max_worker_jobs": 3
+  },
+  "retry_limits": {
+    "provider": 2,
+    "qa_repair": 3,
+    "stage": 3
+  },
+  "runtime_directory": ".book-factory-runtime",
+  "schema_version": "1.0"
+}

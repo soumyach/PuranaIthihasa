@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "decision_scope": "PRIVATE_DM02_PRODUCTION_REUSE_ONLY",
+  "publication_eligible": false,
+  "character_reference_promotions": 0,
+  "assets": [
+    {
+      "page_number": 1,
+      "panel_id": "p01-panel-01",
+      "path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+      "sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+      "original_review": {"path": "books/DM02/visual-proof-reviews/p01-panel-01/v0001.json", "result": "FIX"},
+      "recovery_decision": "REUSE_NOW_FOR_PRIVATE_COMPOSITION",
+      "permitted_scope": ["p01-panel-01 private crop", "proposal continuity for dm-medhas, dm-suratha and dm-samadhi", "forest-frame palette and geometry proposal"],
+      "withheld_scope": ["p01-panel-02 substitution", "canonical character reference", "publication approval"],
+      "repair": "Place exact lettering in the demonstrated smaller safe regions; do not alter source pixels."
+    },
+    {
+      "page_number": 11,
+      "panel_id": "p11-panel-01",
+      "path": "books/DM02/visual-proof-campaign/images/p11-panel-01/v0001.png",
+      "sha256": "aa2104618b9f4395c1f62cdba279974f5be3a38b4ff78242182cc9d13438fa6c",
+      "original_review": {"path": "books/DM02/visual-proof-reviews/p11-panel-01/v0001.json", "result": "ESCALATE"},
+      "recovery_decision": "DO_NOT_REUSE_AS_SOURCE_VALID_MASTER_OR_REFERENCE",
+      "critical_reasons": ["Six withdrawal locus groups are not separately auditable", "Fixed source-silent Brahma heads, Shesha hoods, Vishnu treatment and Yoganidra attributes require qualified review"],
+      "new_pixels_required": true,
+      "status": "ESCALATE_BEFORE_GENERATION"
+    },
+    {
+      "page_number": 14,
+      "panel_id": "p14-panel-01",
+      "path": "books/DM02/visual-proof-campaign/images/p14-panel-01/v0001.png",
+      "sha256": "c3cf653e36e0d03a0d9b126ffeab56bee0b655ba752d8d988d9d057f8354170c",
+      "original_review": {"path": "books/DM02/visual-proof-reviews/p14-panel-01/v0001.json", "result": "FIX"},
+      "recovery_decision": "REUSE_FOR_PRIVATE_COMPOSITION_AND_PROPOSAL_CONTINUITY_WITH_LIGHTING_CAVEAT",
+      "permitted_scope": ["p14-panel-01 private composition", "proposal-level combat identity and action continuity for Vishnu, Madhu and Kaitabha"],
+      "withheld_scope": ["halo convention", "canonical character reference", "automatic reuse for p14-panel-02 or p14-panel-03", "publication approval"],
+      "repair": "Place narration over verified negative space; treat the diffuse gold disk only as environmental combat light."
+    },
+    {
+      "page_number": 21,
+      "panel_id": "p21-panel-01",
+      "path": "books/DM02/visual-proof-campaign/images/p21-panel-01/v0001.png",
+      "sha256": "e7de39593aa71644f4c2a57fd577855a8611b2a0c8015b78497d84ecb759dbee",
+      "original_review": {"path": "books/DM02/visual-proof-reviews/p21-panel-01/v0001.json", "result": "FIX"},
+      "recovery_decision": "PRESERVE_BUT_DO_NOT_REUSE",
+      "critical_reasons": ["Invented bounded island, cliffs and waterfalls", "Torso-crossing luminous bands and red chest marks imply unsupported anatomical impacts"],
+      "new_pixels_required": true
+    },
+    {
+      "page_number": 21,
+      "panel_id": "p21-panel-01",
+      "path": "books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png",
+      "sha256": "c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d",
+      "parent_sha256": "e7de39593aa71644f4c2a57fd577855a8611b2a0c8015b78497d84ecb759dbee",
+      "independent_review": {"path": "books/DM02/visual-proof-reviews/p21-panel-01/v0002.json", "result": "PASS"},
+      "recovery_decision": "REUSE_NOW_FOR_PRIVATE_COMPOSITION",
+      "permitted_scope": ["Page 21 exact-script private composition", "proposal continuity comparison for Vishnu, Madhu and Kaitabha"],
+      "withheld_scope": ["canonical character reference", "location reference", "theological certification", "publication approval"]
+    }
+  ],
+  "composition_decisions": [
+    {
+      "page_number": 1,
+      "path": "books/DM02/private-page-previews/page-71e9de766bf786cb9499a31b/v0001/0001-page-71e9de766bf786cb9499a31b.png",
+      "status": "PARTIAL_PRIVATE_DIAGNOSTIC_ONLY",
+      "limitation": "The second crop does not supply the locked distinct p01-panel-02 master."
+    },
+    {
+      "page_number": 21,
+      "path": "books/DM02/private-page-previews/page-8619f3db280abbfd867eefe4/v0004/0021-page-8619f3db280abbfd867eefe4.png",
+      "sha256": "33658c7df3f95991d573919045902ee33032f930529433ca276379fec40e4f6f",
+      "composition_hash": "d8409815c910cf69180af050e55fc6d33f192cfa8685f96e57252bccb2d03bc9",
+      "independent_review_path": "books/DM02/private-page-previews/page-8619f3db280abbfd867eefe4/v0004/0021-page-8619f3db280abbfd867eefe4.independent-visual-review.json",
+      "independent_review_result": "PASS",
+      "status": "PRIVATE_PREVIEW_DETERMINISTIC_AND_INDEPENDENT_PIXEL_PASS",
+      "source_art_modified": false,
+      "layout_change": "Plaque footprint is 153488 px², 10.354% smaller than v0001; height is 12.5% of canvas, padding is 24 px, and exact narration remains legible at the 22 px floor with clear badge separation."
+    }
+  ]
+}

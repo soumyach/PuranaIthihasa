@@ -1,0 +1,56 @@
+{
+  "book_id": "DM02",
+  "coverage": [
+    {
+      "beat_ids": [
+        "beat-004"
+      ],
+      "chapter_ids": [
+        "ch-01",
+        "ch-02"
+      ],
+      "event_id": "dm-event-004",
+      "status": "COVERED"
+    },
+    {
+      "beat_ids": [
+        "beat-005"
+      ],
+      "chapter_ids": [
+        "ch-03"
+      ],
+      "event_id": "dm-event-005",
+      "status": "COVERED"
+    },
+    {
+      "beat_ids": [
+        "beat-006"
+      ],
+      "chapter_ids": [
+        "ch-04",
+        "ch-05"
+      ],
+      "event_id": "dm-event-006",
+      "status": "COVERED"
+    },
+    {
+      "beat_ids": [
+        "beat-007"
+      ],
+      "chapter_ids": [
+        "ch-06",
+        "ch-07"
+      ],
+      "event_id": "dm-event-007",
+      "status": "COVERED"
+    }
+  ],
+  "manuscript_hash": "8b7dc126012186ada26df3b6acb16e46fcc72a600ad151de49f6aaf3c06d2c44",
+  "required_event_ids": [
+    "dm-event-004",
+    "dm-event-005",
+    "dm-event-006",
+    "dm-event-007"
+  ],
+  "schema_version": "1.0"
+}

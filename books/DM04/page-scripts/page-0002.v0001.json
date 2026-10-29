@@ -1,0 +1,220 @@
+{
+  "character_ids": [
+    "dm-gods",
+    "dm-brahma",
+    "dm-shiva",
+    "dm-vishnu",
+    "dm-indra"
+  ],
+  "continuity_in": "after-page-01",
+  "continuity_out": "after-page-02",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-gods",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-brahma",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-shiva",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-vishnu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-indra",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-008"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "TWO_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p02-narration",
+      "placement": "caption-safe-region",
+      "text": "After a hundred-year war, the gods are displaced and Mahiṣāsura commands their offices and jurisdictions."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p02-dialogue",
+      "placement": "speaker-anchored-balloon",
+      "speaker_id": "dm-gods",
+      "text": "Mahishasura holds our places. He commands where we once served. Our strength has not been enough. Help us find the means by which he can be stopped."
+    }
+  ],
+  "location_id": "displaced-heaven",
+  "moment_ids": [
+    "empty_thrones_and_defeated_gods"
+  ],
+  "narrative_beats": [
+    "After a hundred-year war, the gods are displaced and Mahiṣāsura commands their offices and jurisdictions."
+  ],
+  "page_id": "page-fe9965a25ead5b61a664263b",
+  "page_number": 2,
+  "panel_count": 2,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-gods",
+        "dm-brahma",
+        "dm-shiva",
+        "dm-vishnu",
+        "dm-indra"
+      ],
+      "composition": "Wide establishing action",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p02-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false
+      },
+      "location_id": "displaced-heaven",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p02-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "After a hundred-year war, the gods are displaced and Mahiṣāsura commands their offices and jurisdictions."
+    },
+    {
+      "character_ids": [
+        "dm-gods",
+        "dm-brahma",
+        "dm-shiva",
+        "dm-vishnu",
+        "dm-indra"
+      ],
+      "composition": "Closer reaction or consequence beat",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p02-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false
+      },
+      "location_id": "displaced-heaven",
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p02-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Advance the same sourced action without repeating the lettering."
+    }
+  ],
+  "reading_order": [
+    "p02-panel-01",
+    "p02-panel-02"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p02-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-008-a",
+    "claim-008-b"
+  ],
+  "title": "The Empty Offices of Heaven",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation"
+  ],
+  "version": 1,
+  "visual_intent": "A cinematic story beat with exact editable lettering and source-bounded imagery."
+}

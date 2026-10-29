@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "proof-recovery-campaign.schema.json",
+  "type": "object",
+  "required": ["schema_version", "campaign_id", "prepared_in_milestone", "execution_milestone", "book_id", "generation_authorized", "pr6_history", "recommended_pr8_budget", "locked_hashes", "requests", "request_count", "campaign_hash"],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0"},
+    "campaign_id": {"type": "string", "minLength": 1},
+    "prepared_in_milestone": {"type": "string", "const": "PR7"},
+    "execution_milestone": {"type": "string", "const": "PR8_IF_SEPARATELY_AUTHORIZED"},
+    "book_id": {"type": "string", "const": "DM04"},
+    "generation_authorized": {"type": "boolean", "const": false},
+    "pr6_history": {"type": "object"},
+    "recommended_pr8_budget": {"type": "object"},
+    "locked_hashes": {"type": "object"},
+    "requests": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "object"}},
+    "request_count": {"type": "integer", "const": 4},
+    "campaign_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

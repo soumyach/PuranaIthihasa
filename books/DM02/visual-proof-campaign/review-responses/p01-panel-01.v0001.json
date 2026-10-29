@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "request_hash": "0a247af0c30ff76ff7786a2d4ce92fdb38e00b9fb3fdd5d033fd1f77fb5c2cb0",
+  "unit_id": "page-71e9de766bf786cb9499a31b--p01-panel-01",
+  "page_id": "page-71e9de766bf786cb9499a31b",
+  "panel_id": "p01-panel-01",
+  "image_sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+  "reviewer": {
+    "id": "/root/pr11_visual_reviewer-dm02",
+    "image_capable": true,
+    "inspected_actual_pixels": true,
+    "reading_size": "ACTUAL_READING_SIZE",
+    "independent_of_producer": true
+  },
+  "assessments": [
+    {
+      "dimension": "SOURCE_FIDELITY",
+      "result": "PASS",
+      "evidence": "Original-resolution pixels show only Medhas, Suratha and Samadhi in the permitted forest frame, seated around a low fire with Medhas speaking; no extra action, motive, genealogy, quotation or weapon is introduced."
+    },
+    {
+      "dimension": "THEOLOGICAL_ACCURACY",
+      "result": "PASS",
+      "evidence": "The image makes no divine-body, halo, weapon, manifestation or other unsupported theological claim."
+    },
+    {
+      "dimension": "CULTURAL_AUTHENTICITY",
+      "result": "PASS",
+      "evidence": "The seated listening arrangement, modest Indian garments, sage beads, low fire and natural clearing form a coherent family-storybook hermitage without modern or Western-fantasy objects."
+    },
+    {
+      "dimension": "CHARACTER_IDENTITY",
+      "result": "PASS",
+      "evidence": "Medhas is an aged bark-brown and ivory-clad sage with a measured open-hand gesture; Suratha has a travel-worn peacock-blue cloak without crown, regalia or weapon; Samadhi is plainly earth-toned and unarmed."
+    },
+    {
+      "dimension": "EVENT_ACTION_DEPICTION",
+      "result": "PASS",
+      "evidence": "The wide eye-level triangle clearly depicts Medhas addressing two neutral listeners across the fire, exactly matching the locked panel action."
+    },
+    {
+      "dimension": "ANATOMY",
+      "result": "PASS",
+      "evidence": "Visible faces, hands, arms, seated legs and feet are coherent at original resolution; no fused fingers, extra limbs or detached anatomy is apparent."
+    },
+    {
+      "dimension": "NARRATIVE_CLARITY",
+      "result": "PASS",
+      "evidence": "Medhas's direct gaze and open right hand establish him as speaker while both inward-facing profiles read immediately as listeners."
+    },
+    {
+      "dimension": "EMOTIONAL_EXPRESSIVENESS",
+      "result": "PASS",
+      "evidence": "The expressions are attentive and restrained rather than dramatic, preserving the source-neutral emotional policy."
+    },
+    {
+      "dimension": "VISUAL_COMPOSITION",
+      "result": "PASS",
+      "evidence": "Two framing trunks, a low central fire and the three-person triangle give the panel a stable wide-shot hierarchy and clear eye path."
+    },
+    {
+      "dimension": "GOLD_STANDARD_ALIGNMENT",
+      "result": "PASS",
+      "evidence": "The proof reaches the submitted Khatakshetra references' premium painterly finish, jewel-toned warmth, facial clarity and cinematic depth without copying their deity, lion, palace, dialogue, border or plot content."
+    },
+    {
+      "dimension": "LETTERING_COMPATIBILITY",
+      "result": "FIX",
+      "evidence": "No raster lettering is present, but the complete required safe rectangle at x=0.08..0.92 and y=0.06..0.24 is not calm and unobstructed: heavy branches and leaves cross both upper corners and extend inward over the intended caption field."
+    }
+  ],
+  "overall_verdict": "FIX",
+  "findings": [
+    {
+      "dimension": "LETTERING_COMPATIBILITY",
+      "discrepancy": "The full upper lettering-safe rectangle is not protected.",
+      "evidence": "At actual pixels, dense foliage and branches occupy the left and right portions of the locked x=0.08..0.92, y=0.06..0.24 region, leaving only a narrower central sky opening.",
+      "repair_type": "LETTERING_REGION_RECOMPOSITION",
+      "page_id": "page-71e9de766bf786cb9499a31b",
+      "panel_id": "p01-panel-01"
+    }
+  ],
+  "correction_instructions": [
+    "For a future separately authorized correction, preserve the current three identities and action but move all canopy detail outside the complete normalized top safe rectangle.",
+    "No retry is authorized by this review."
+  ],
+  "preview_eligible": false
+}

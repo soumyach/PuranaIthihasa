@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "campaign_id": "dm02-book-level-private-production-v0001",
+  "authorization_subject_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+  "batch_id": "dm02-book-level-batch-01",
+  "review_date": "2026-10-23",
+  "review_method": "INDEPENDENT_ACTUAL_PIXEL_REVIEW",
+  "reviewer_role": "image-capable specialist distinct from image producer",
+  "reviewer_agent": "/root/dm02_corrective_pixel_reviewer",
+  "qualified_theological_certification_claimed": false,
+  "canonical_character_reference_approval_claimed": false,
+  "files_modified_by_reviewer": false,
+  "results": [
+    {
+      "unit_id": "page-71e9de766bf786cb9499a31b--p01-panel-02",
+      "path": "books/DM02/book-level-production/images/p01-panel-02/v0002.png",
+      "sha256": "501164e2e9351693277abf1c3731f95a0763fd222de5c33bbf440480698b57e0",
+      "verdict": "FIX_FOR_PRIVATE_PAGE_COMPOSITION",
+      "targeted_edit_result": "PASS",
+      "findings": [
+        "The prominent white-and-orange forehead mark was removed cleanly.",
+        "Source compatibility, anatomy, iconography, identity preservation and local edit quality pass for this asset.",
+        "The immutable adjacent p01-panel-01 still displays the removed mark, creating a same-page ornament continuity mismatch."
+      ],
+      "required_action": "Do not alter this corrected asset. Page 1 remains blocked unless the adjacent unlisted p01-panel-01 receives separate authorization or an independently reviewed truthful composition solution is established.",
+      "repair_reserve_authorized_in_this_campaign": false
+    },
+    {
+      "unit_id": "page-88792a15dcd25b30d3982d7c--p02-panel-01",
+      "path": "books/DM02/book-level-production/images/p02-panel-01/v0002.png",
+      "sha256": "8e2a798a58cdcefd29329ee1d7001c3f01b40207544ef272dbd9ad0efb3d91b8",
+      "verdict": "PASS",
+      "findings": [
+        "The focal raised hand has exactly five coherent digits.",
+        "The teaching gesture, wrist, beads, sleeve, fire and surrounding environment are preserved.",
+        "Source fidelity, anatomy, composition, cultural authenticity, continuity and lettering compatibility pass for private composition."
+      ],
+      "required_action": "Eligible for Page 2 private composition with the existing p02-panel-02 asset."
+    },
+    {
+      "unit_id": "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-02",
+      "path": "books/DM02/book-level-production/images/p14-panel-02/v0001.png",
+      "sha256": "285d37d4ce2f506f1c5483e7a80aa7b5c6b90ed251ff97e6a8babf846ac48900",
+      "verdict": "FIX",
+      "findings": [
+        "Source action, character identities, anatomy, cultural authenticity and Gold Standard alignment pass.",
+        "The gold light reads as environmental backlight and is not treated as halo certification.",
+        "Kaitabha's crown, hair, raised fist and forearm intrude into the locked complete normalized upper safe region x=0.08..0.92, y=0.06..0.24."
+      ],
+      "required_action": "Use the one authorized targeted composition repair to lower or reposition Kaitabha and the connected grapple enough to clear the complete upper safe region while preserving identities, action, two-arm weaponless Vishnu, unbounded water and environmental lighting.",
+      "repair_reserve_authorized_in_this_campaign": true
+    },
+    {
+      "unit_id": "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-03",
+      "path": "books/DM02/book-level-production/images/p14-panel-03/v0001.png",
+      "sha256": "ebfc7493442791f0a5d0043f931bd62bbbc652b45fd414b0a97a7365fba19de4",
+      "verdict": "PASS",
+      "findings": [
+        "Source action, identity continuity, anatomy, cultural authenticity and Gold Standard alignment pass.",
+        "The complete locked upper safe region remains clear.",
+        "The asset is eligible for Page 14 private composition after p14-panel-02 is repaired and passes independent review."
+      ],
+      "required_action": "Preserve without regeneration."
+    }
+  ],
+  "batch_summary": {
+    "pass_count": 2,
+    "fix_count": 2,
+    "escalate_count": 0,
+    "in_scope_repairs_justified": 1,
+    "unlisted_repairs_not_executed": [
+      "page-71e9de766bf786cb9499a31b--p01-panel-01"
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "milestone": "PR12",
+  "provider_id": "codex-built-in-image-gen",
+  "provider_interface": "image_gen.imagegen",
+  "unit_id": "page-23e0e9cd9d4013ed03ae7e8c--p13-panel-01",
+  "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+  "panel_id": "p13-panel-01",
+  "operation": "generate",
+  "operation_sequence": 2,
+  "request_hash": "7b30793eac5f25d7a65c28bb56749c36800982b932de606a2b965f522d5d0aea",
+  "campaign_subject_hash": "fd9864465aebf8e0c121f72ce8a4249d08af372a48829ab926b0a223e6956b21",
+  "producer": {
+    "id": "codex-root-image-producer-pr12",
+    "host_session_only": true
+  },
+  "submitted_edit_target": null,
+  "submitted_references": [
+    {
+      "role": "A_SERIES_VISUAL_IDENTITY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+      "input_index": 1,
+      "content_transfer": "FORBIDDEN"
+    },
+    {
+      "role": "B_PAGE_PANEL_COMPOSITION",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p21.png",
+      "sha256": "332b208d14df3d94139a3ab598e7e7e327e49bc9d4bbf5f41ddf20d8260291af",
+      "input_index": 2,
+      "content_transfer": "FORBIDDEN"
+    }
+  ],
+  "unavailable_reference_roles": [
+    "C_APPROVED_CHARACTER_REFERENCE",
+    "D_APPROVED_SETTING_REFERENCE"
+  ],
+  "submitted_prompt": "Create one clean landscape comic-panel illustration for DM04 page 13 panel 1, a skyward diagonal battle action. Devī/Chandikā is the serene authoritative focal defender in classical modest Indian dress, deep blue, warm ivory and antique gold, with a radiant crown. Show a readable many-armed identity only through the foreground arms needed for this exact action plus a restrained implied arm field; do not invent weapons. Arrows, spears and heavy weapons fly diagonally toward her from the asura ranks; she cuts them apart before impact, with broken shafts falling in front of—not through—the first ranks. Keep trajectories and cause-effect unmistakable, energetic but non-graphic. The battlefield has a stable distant ridge, hard daylight and an uncluttered upper-left lettering zone. REFERENCE A supplies only premium Khatakshetra devotional painterly finish. REFERENCE B supplies only large-scale battle depth and sequential action clarity; omit its blood, flags, armor, characters and theology. No text, balloons, border, watermark, gore, Western fantasy armor, Greco-Roman helmets, invented emblems, demonic-face flags or unrelated divine iconography. Family-reading appropriate.",
+  "submitted_prompt_sha256": "a1df5b0c4c4cdfb7543d3c9e0f654e4b70368cffd3b573dac69e8b27f0d6aa5f",
+  "output_path": "books/DM04/autonomous-pilot/images/page-23e0e9cd9d4013ed03ae7e8c--p13-panel-01/v0001.png",
+  "output_sha256": "c0a0d15ea531ba00bee1c1c3ccac1bb795dc84f59e0a25d96dd08eca1b6a09b4",
+  "output_width": 1672,
+  "output_height": 940,
+  "source_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-00414f56-1f2b-4f18-9bbf-c6eb1a456b81.png",
+  "included_allowance_policy": "CURRENT_INCLUDED_ALLOWANCE_FIRST",
+  "api_key_supplied": false,
+  "external_provider_authorization_requested": false,
+  "paid_billing_requested": false,
+  "automatic_credit_purchase_requested": false,
+  "purchased_credit_consumption": "NOT_REPORTED_NO_BALANCE",
+  "actual_incremental_usd": "UNKNOWN_NOT_EXPOSED",
+  "retry": false
+}

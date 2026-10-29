@@ -1,0 +1,55 @@
+{
+  "approval_type": "PRODUCTION_CAMPAIGN",
+  "approver": {
+    "attestation": "Explicit authorized-user confirmation received in the current Codex thread on 2026-10-20 Asia/Kolkata.",
+    "authority": [
+      "PRIVATE_INTERNAL_VISUAL_TESTING"
+    ],
+    "id": "authorized-human-user-pr11",
+    "role": "private-visual-testing-authority"
+  },
+  "conditions": [
+    "BUILT_IN_CODEX_IMAGE_TOOL_ONLY",
+    "INCLUDED_ALLOWANCE_FIRST",
+    "INDEPENDENT_ACTUAL_PIXEL_REVIEW_REQUIRED",
+    "NO_API_KEY_OR_EXTERNAL_PROVIDER",
+    "NO_INTENTIONAL_CREDIT_PURCHASE_OR_CONSUMPTION",
+    "NO_RETRY_WITHOUT_NEW_APPROVAL",
+    "ONE_OPERATION_PER_SELECTED_PAGE",
+    "PR6_COUNTERS_REMAIN_EXHAUSTED",
+    "PRIVATE_INTERNAL_ONLY",
+    "PUBLICATION_REMAINS_BLOCKED",
+    "REFERENCE_INPUT_RECEIPT_REQUIRED",
+    "STOP_IF_PAID_BILLING_OR_EXTERNAL_AUTHORIZATION_REQUESTED",
+    "ZERO_ADDITIONAL_COST_ONLY"
+  ],
+  "created_at": "2026-10-20T12:10:59Z",
+  "creator": {
+    "id": "codex-director-pr11"
+  },
+  "decision": "PASS",
+  "edition_id": "pargiter-1904",
+  "evidence_hash": "5a5b7c2a606f47a9b72ef001f19ef9c8736f4b328d2434dae08c5d0b08c061d7",
+  "evidence_refs": [
+    "43f6761b1789e8763c11c4016a646e66c37e07cb408db23a3539bfcc889055e0",
+    "a71faccbc68256f6ebf202648fcbeabacfa31892de0ae0f4ac595d07f085f535"
+  ],
+  "expires_at": null,
+  "id": "approval-9ac3c1c3bc2a352021552a8d",
+  "inheritance_allowed": false,
+  "invalidators": [
+    "backend_capability",
+    "cost_policy",
+    "page_script_hash",
+    "reference_hash"
+  ],
+  "schema_version": "1.0",
+  "scope": {
+    "id": "DM04",
+    "type": "book"
+  },
+  "source_scope": "dm-source",
+  "subject_hash": "5a5b7c2a606f47a9b72ef001f19ef9c8736f4b328d2434dae08c5d0b08c061d7",
+  "subject_type": "PRODUCTION_CAMPAIGN",
+  "tradition_id": "devi-mahatmyam"
+}

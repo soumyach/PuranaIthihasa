@@ -1,0 +1,44 @@
+{
+  "book_id": "DM02",
+  "content_hash": "a144ed4254c34cc73b6f305beb17ef9a2af9996782b6acaf28c39cf20321b173",
+  "id": "visual-proof-contact-sheets-7a902352f2a56ac4faa68f7d",
+  "kind": "visual-proof-contact-sheets",
+  "parent_hash": null,
+  "payload": {
+    "book_id": "DM02",
+    "campaign_id": "dm02-visual-proof-campaign-01",
+    "format": "SVG_WITH_EMBEDDED_UNMODIFIED_PNG_PIXELS",
+    "panels": [
+      {
+        "image_path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+        "image_sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+        "panel_id": "p01-panel-01",
+        "visual_review": "FIX"
+      },
+      {
+        "image_path": "books/DM02/visual-proof-campaign/images/p11-panel-01/v0001.png",
+        "image_sha256": "aa2104618b9f4395c1f62cdba279974f5be3a38b4ff78242182cc9d13438fa6c",
+        "panel_id": "p11-panel-01",
+        "visual_review": "ESCALATE"
+      },
+      {
+        "image_path": "books/DM02/visual-proof-campaign/images/p14-panel-01/v0001.png",
+        "image_sha256": "c3cf653e36e0d03a0d9b126ffeab56bee0b655ba752d8d988d9d057f8354170c",
+        "panel_id": "p14-panel-01",
+        "visual_review": "FIX"
+      },
+      {
+        "image_path": "books/DM02/visual-proof-campaign/images/p21-panel-01/v0001.png",
+        "image_sha256": "e7de39593aa71644f4c2a57fd577855a8611b2a0c8015b78497d84ecb759dbee",
+        "panel_id": "p21-panel-01",
+        "visual_review": "FIX"
+      }
+    ],
+    "path": "books/DM02/visual-proof-campaign/contact-sheet.svg",
+    "publication_eligible": false,
+    "schema_version": "1.0",
+    "sha256": "59c25d7df569c4f6e6aa7ba596192ec0526f723a724e09d2474cf36cd8cb1921"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

@@ -1,0 +1,28 @@
+{
+  "affected_sections": [
+    "beat-008",
+    "beat-020",
+    "beat-021",
+    "ch-01",
+    "ch-06",
+    "ch-07"
+  ],
+  "book_id": "DM04",
+  "bounded_excerpts": [
+    "He took Indra's office and claimed the powers and duties held by the gods of fire, wind, moon, waters and the other regions of the world.",
+    "A lion tore free of the bonds and sprang toward Devi.",
+    "They pierced his defense and broke sword and shield.",
+    "Before he could rise fully into another form, Devi ended the struggle with one stroke."
+  ],
+  "constraint": "Repair only listed findings and affected sections; preserve all approved source choices and unrelated text.",
+  "finding_ids": [
+    "DIVINE_JURISDICTIONS_MISSTATED_AS_POWERS",
+    "NOOSE_TRANSFORMATION_MISSTATED_AS_ESCAPE",
+    "ARMED_MAN_COUNTER_EXCEEDS_LOCKED_EVIDENCE",
+    "FINAL_BEHEADING_MECHANISM_NOT_PRESERVED"
+  ],
+  "request_hash": "2752c4bde615c8c6fbacb8204350f6732252cf1df56117d7f12dfcbffbb285f4",
+  "review_hash": "4ed655dd854801a46bbbd06973c4df3788d9d8b452b76a8c34f2dbbac5994e83",
+  "reviewed_manuscript_hash": "23b478f91c17e3c9801784f0601077adea3076f4db917b0bbd95d4cbaf93ce38",
+  "schema_version": "1.0"
+}

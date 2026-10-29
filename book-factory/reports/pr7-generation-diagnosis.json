@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "report_id": "dm04-pr7-generation-diagnosis",
+  "book_id": "DM04",
+  "evidence_scope": {
+    "requests_inspected": 8,
+    "receipts_inspected": 8,
+    "images_visually_inspected": 8,
+    "visual_reviews_inspected": 8,
+    "generation_ledger_events": 16,
+    "gold_standard_pages_visually_inspected": 8
+  },
+  "classification_values": ["VERIFIED", "LIKELY_CAUSE", "UNKNOWN", "UNSUPPORTED_CAPABILITY"],
+  "questions": [
+    {
+      "question_id": 1,
+      "question": "Were the successful earlier book pages directly supplied to the image generator?",
+      "classification": "VERIFIED",
+      "answer": "No. Every persisted PR6 request has reference_image_paths equal to an empty array.",
+      "evidence": ["books/DM04/illustration-proofs/requests/*.json", "all eight request records"]
+    },
+    {
+      "question_id": 2,
+      "question": "If so, which exact images?",
+      "classification": "VERIFIED",
+      "answer": "None. No benchmark PDF page, character image or location image was supplied as a generation input.",
+      "evidence": ["reference_image_paths=[] in all eight request records"]
+    },
+    {
+      "question_id": 3,
+      "question": "If not, why not?",
+      "classification": "VERIFIED",
+      "answer": "The active character-reference registry contained no HUMAN_APPROVED_EXACT_ASSET binding and reported TEXT_ONLY_PENDING_STYLE_APPROVAL. PR6 did not yet contain a curated page-reference manifest or role-aware reference package.",
+      "evidence": ["books/DM04/character-references/v0001.json", "book_factory/illustration_production.py build_generation_request"]
+    },
+    {
+      "question_id": 4,
+      "question": "Was the prompt primarily asking for a standalone illustration rather than a comic panel?",
+      "classification": "VERIFIED",
+      "answer": "Yes. Each request described a portrait 3:4 internal illustration proof as one generated raster. The prompt used the page-level narrative_beats field and proof composition, not a selected panel geometry and reading-order package. Only the full-page proof was naturally aligned with that unit.",
+      "evidence": ["Asset type: Khatakshetra DM04 internal illustration proof; artwork only, no lettering", "operation=generate", "target_canvas=1086x1448", "book_factory/illustration_production.py build_generation_request"]
+    },
+    {
+      "question_id": 5,
+      "question": "Did the model receive conflicting instructions?",
+      "classification": "LIKELY_CAUSE",
+      "answer": "The requests contained a material ambiguity: Devī's text registry calls for a many-armed identity, while the common avoid list includes extra limb. Battle page 17 also combines the counter-arrow exchange and its later equipment-loss consequence into one full-canvas request. These are demonstrable prompt tensions, but their exact effect on the unsurfaced model cannot be proven.",
+      "evidence": ["battle request hashes 62939be6... and 381f280d...", "prompt contains many-armed identity and Avoid: extra limb", "page-0017.v0003.json has two sequential panels"]
+    },
+    {
+      "question_id": 6,
+      "question": "Did reference-conditioning actually execute?",
+      "classification": "VERIFIED",
+      "answer": "No. All requests used operation=generate and empty reference_image_paths. The receipts bind generated output but record no submitted visual reference.",
+      "evidence": ["books/DM04/illustration-proofs/requests/*.json", "books/DM04/illustration-proofs/receipts/*.json"]
+    },
+    {
+      "question_id": 7,
+      "question": "Is the underlying model identity known?",
+      "classification": "UNKNOWN",
+      "answer": "No. Provider metadata records model=NOT_SURFACED_BY_BUILTIN_TOOL. It is unsupported to infer model quality or identity from the pixels.",
+      "evidence": ["book-factory/config/image-provider-capabilities.json", "all eight generation requests"]
+    },
+    {
+      "question_id": 8,
+      "question": "Does the tool support image editing or reference-guided generation?",
+      "classification": "VERIFIED",
+      "answer": "PR6 capability metadata declares generate, edit and reference_conditioning for the Codex built-in image tool. However, durable provider-side evidence that reference conditioning works in a future session has not yet been captured.",
+      "evidence": ["book-factory/config/image-provider-capabilities.json"],
+      "qualification": "Capability declared; PR6 execution path for edit/reference input untested."
+    },
+    {
+      "question_id": 9,
+      "question": "Did later prompts lose the earlier books' visual identity?",
+      "classification": "VERIFIED",
+      "answer": "The earlier page pixels were never in the PR6 context. Both attempt rounds repeated a textual style summary, so the generator could approximate navy/gold ornament and painterly finish but could not align to the benchmarks' actual page rhythm, expressions or lettering hierarchy.",
+      "evidence": ["identical textual Style/medium line in persisted prompts", "empty reference_image_paths in both rounds"]
+    },
+    {
+      "question_id": 10,
+      "question": "Was visual QA comparing images against real reference pages?",
+      "classification": "VERIFIED",
+      "answer": "No. PR6 review assessed series_identity as a semantic dimension, but the review requests contain no exact Gold Standard page IDs, paths or hashes and no side-by-side evidence artifact.",
+      "evidence": ["books/DM04/visual-reviews/v0001.json through v0008.json", "books/DM04/handoffs/visual-review/*.request.json"]
+    }
+  ],
+  "additional_findings": [
+    {
+      "classification": "VERIFIED",
+      "finding": "All eight outputs are genuine readable 1086x1448 PNGs. No post-generation crop or resize changed their composition; receipts record IDENTITY_COPY normalization."
+    },
+    {
+      "classification": "LIKELY_CAUSE",
+      "finding": "Page-level prompts with many subjects, weapons and temporal clauses encourage emblematic poster composition instead of sequential storytelling. This is strongest in the divine, battle and decisive-victory requests."
+    },
+    {
+      "classification": "LIKELY_CAUSE",
+      "finding": "A uniform top safe-region instruction was applied even to immersive pages without first designing the exact page lettering. This encouraged empty-sky poster layouts and still did not reliably preserve the specified geometry."
+    },
+    {
+      "classification": "VERIFIED",
+      "finding": "The prompt builder resolved the entire selected character records into long text sections and a union of exclusions, but did not attach exact role-labeled visual references or panel geometry."
+    },
+    {
+      "classification": "UNKNOWN",
+      "finding": "Provider-side sampling parameters, seed, internal image model revision, safety transformations and detailed reference-conditioning behavior were not surfaced."
+    },
+    {
+      "classification": "UNSUPPORTED_CAPABILITY",
+      "finding": "The repository cannot independently invoke the session-scoped Codex image tool or prove future availability. A host-injected execution boundary is still required."
+    },
+    {
+      "classification": "UNSUPPORTED_CAPABILITY",
+      "finding": "Deterministic repository code cannot judge emotional expressiveness, complex religious iconography or cultural authenticity from pixels. Those judgments require an image-capable independent reviewer."
+    }
+  ],
+  "largest_quality_gap": "PR6 optimized a single ornate painting per proof. The benchmark books derive their storybook quality from page design: changing shot scale, explicit reaction beats, panel-to-panel causality, character emotion, environmental continuity and exact lettering hierarchy.",
+  "non_conclusion": "There is no evidence that Codex used an inferior image model. The verified gap is in reference delivery, production-unit choice, prompt construction and comparative QA; model identity remains unknown."
+}

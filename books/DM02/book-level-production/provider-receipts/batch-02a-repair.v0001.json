@@ -1,0 +1,18 @@
+{
+  "schema_version":"1.0",
+  "book_id":"DM02",
+  "campaign_id":"dm02-book-level-private-production-v0001",
+  "batch_id":"dm02-book-level-batch-02a-repair",
+  "provider":"Codex built-in image generation",
+  "api_key_used":false,
+  "external_provider_used":false,
+  "explicit_payment_requested":false,
+  "purchased_credit_use_intended_or_authorized":false,
+  "operation":{"operation_index":7,"unit_id":"page-d20c0821bca7f13784a34630--p04-panel-01","provider_operation_identifier":"exec-8f06fc45-088d-4b88-bab3-fd8b7913b27d","repository_output_path":"books/DM02/book-level-production/images/p04-panel-01/v0002.png","sha256":"4aeb45297b21d2805326328e05ad91e1233a59c88e709c10ae58618c6c327cef","dimensions":[1086,1448],"mode":"RGB","result":"OUTPUT_STORED_PENDING_INDEPENDENT_REVIEW"},
+  "campaign_operations_executed_after_batch":7,
+  "necessary_operations_executed_after_batch":5,
+  "review_directed_repair_operations_executed_after_batch":2,
+  "campaign_remaining_ceiling_after_batch":36,
+  "unit_operation_count_after_batch":2,
+  "unit_operation_limit_reached":true
+}

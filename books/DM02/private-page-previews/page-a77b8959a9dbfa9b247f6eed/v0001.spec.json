@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "book_version": "DM02-BOOK-LEVEL-PRODUCTION-PAGE16-V1",
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "page_script_hash": "895be8ee7499317adfd3097f532652f23351b5dce77523091047fd78cdf596db",
+  "page_id": "page-a77b8959a9dbfa9b247f6eed",
+  "page_number": 16,
+  "reading_order": 16,
+  "page_title": "THE REVERSAL",
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "layout_type": "TWO_PANEL_SEQUENTIAL",
+  "fixture": false,
+  "private_preview": true,
+  "publication_eligible": false,
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "preview_authority": {
+    "scope": "DM02_BOOK_LEVEL_PRIVATE_CAMPAIGN_PASS_REVIEWED_ASSETS",
+    "basis": "Exact approval approval-3174e958372faf8a1e6f380f and independent actual-pixel review",
+    "image_generation_authorized": true,
+    "publication_authorized": false,
+    "paid_provider_calls_authorized": false
+  },
+  "storyboard_conformance": {
+    "status": "PRIVATE_PREVIEW_FROM_PASS_REVIEWED_ASSETS",
+    "reason": "All required panel assets passed independent private-use review; lettering is exact from locked storyboard v2."
+  },
+  "reference_comparison": [
+    {
+      "role": "PRESENTATION_REFERENCE_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "role": "COMIC_PAGE_RHYTHM_REFERENCE_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+    }
+  ],
+  "panels": [
+    {
+      "panel_id": "p16-panel-01",
+      "reading_order": 1,
+      "asset": {
+        "path": "books/DM02/book-level-production/images/p16-panel-01/v0001.png",
+        "sha256": "2519766e96643103954685d96ce75143a2b5ee71a2342797cbdf630fbe9b6285",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW",
+        "approval": {
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "2519766e96643103954685d96ce75143a2b5ee71a2342797cbdf630fbe9b6285",
+          "review_path": "books/DM02/book-level-production/reviews/campaign-image-reviews.v0001.json",
+          "review_result": "PASS"
+        }
+      },
+      "crop": {
+        "mode": "CONTAIN",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "zoom": 1.0,
+        "crop_intent": "Preserve the complete reviewed portrait master, including the protected lettering field and all source-critical relationships."
+      },
+      "speaker_anchors": []
+    },
+    {
+      "panel_id": "p16-panel-02",
+      "reading_order": 2,
+      "asset": {
+        "path": "books/DM02/book-level-production/images/p16-panel-02/v0001.png",
+        "sha256": "7fcfe88c2c1dcfccac6dba6cc0d176f053ab89b0d823c60e0b2ee2576cf8341d",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW",
+        "approval": {
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "7fcfe88c2c1dcfccac6dba6cc0d176f053ab89b0d823c60e0b2ee2576cf8341d",
+          "review_path": "books/DM02/book-level-production/reviews/campaign-image-reviews.v0001.json",
+          "review_result": "PASS"
+        }
+      },
+      "crop": {
+        "mode": "CONTAIN",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "zoom": 1.0,
+        "crop_intent": "Preserve the complete reviewed portrait master, including the protected lettering field and all source-critical relationships."
+      },
+      "speaker_anchors": []
+    }
+  ],
+  "lettering": [
+    {
+      "lettering_id": "p16-narration",
+      "panel_id": "p16-panel-01",
+      "reading_order": 1,
+      "channel": "NARRATION",
+      "speaker_id": "narrator",
+      "text": "The story’s measure of time is immense, but its problem is easy to understand: strength met strength, and still the danger remained. Whenever one attacker was forced back, the other pressed in. Whenever both were driven away, they returned to the struggle.\n\nThen Yoganidra’s power brought the reversal Brahma had requested.\n\nMadhu and Kaitabha became deluded. Intoxicated with their own strength, they no longer saw the contest clearly. They had fought Vishnu for five thousand years, and pride made them speak as if the advantage were theirs to give.",
+      "box": {
+        "x": 0.08,
+        "y": 0.115,
+        "width": 0.84,
+        "height": 0.2
+      },
+      "padding": 12,
+      "font": {
+        "size": 22,
+        "minimum_size": 22
+      },
+      "badge_number": 1,
+      "source_script_hash": "d123719215876352bc46aa7eaf5d3feab8011b67174b0caad7e93a2738c6e39d"
+    }
+  ],
+  "required_lettering_ids": [
+    "p16-narration"
+  ],
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "typography": {
+    "family": "STIXGeneral",
+    "body_size": 22,
+    "title_size": 30
+  },
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    }
+  }
+}

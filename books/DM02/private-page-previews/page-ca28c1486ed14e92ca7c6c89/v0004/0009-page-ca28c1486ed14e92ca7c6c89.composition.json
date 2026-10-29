@@ -1,0 +1,263 @@
+{
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"
+    }
+  },
+  "book_id": "DM02",
+  "book_version": "DM02-BOOK-LEVEL-PRODUCTION-PAGE09-V4",
+  "canvas": {
+    "aspect_ratio": "3:4",
+    "height": 1448,
+    "width": 1086
+  },
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "composition_hash": "5dea73653c017d05b78ddbac4c7421603ca41bbbd8609947948cccb0967a5b87",
+  "composition_repair": {
+    "artwork_hashes_changed": false,
+    "new_pixels_required": false,
+    "parent_version": "v0003",
+    "reason": "INDEPENDENT_REVIEW_DIRECTED_BRAHMA_CALLOUT_DIRECTION"
+  },
+  "engine_version": "0.8.2",
+  "fixture": false,
+  "fixture_mode": false,
+  "font_config_sha256": "ba6cd2c0c4d716aa550059148339642da7fb2f1af1bfaad2e5d6ab838fb1e0aa",
+  "layout_type": "SINGLE_PANEL_IMMERSIVE",
+  "lettering": [
+    {
+      "badge_number": 1,
+      "box": {
+        "height": 0.055,
+        "width": 0.84,
+        "x": 0.08,
+        "y": 0.115
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 22
+      },
+      "lettering_id": "p09-narration",
+      "padding": 12,
+      "panel_id": "p09-panel-01",
+      "placement_scope": "PAGE_BAND",
+      "reading_order": 1,
+      "source_script_hash": "5f4a47dde38ab0d8ea717ddba26a4a5f1102da28f6f7feff486192ff10e7a823",
+      "speaker_id": "narrator",
+      "text": "Brahma gathered his attention and praised the Goddess who held Vishnu in sleep."
+    },
+    {
+      "box": {
+        "height": 0.16,
+        "width": 0.84,
+        "x": 0.08,
+        "y": 0.185
+      },
+      "channel": "DIALOGUE",
+      "font": {
+        "minimum_size": 22,
+        "size": 22
+      },
+      "lettering_id": "p09-dialogue",
+      "padding": 12,
+      "panel_id": "p09-panel-01",
+      "placement_scope": "PAGE_BAND",
+      "reading_order": 2,
+      "source_script_hash": "c2c0022f007ea0b4dc4f4110a13ec947bf9b08b9bb3b9aa7fe1e1a31c0b7eefd",
+      "speaker_id": "dm-brahma",
+      "tail_max_length": 60,
+      "text": "You are the sacred utterance by which offerings are made. You are the power by which creation arises, by which it is preserved, and by which it is drawn again into dissolution. You are knowledge, and you are the great illusion that can veil knowledge. You are nature, nourishment and peace. You are also power armed against danger."
+    }
+  ],
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "page_id": "page-ca28c1486ed14e92ca7c6c89",
+  "page_number": 9,
+  "page_script_hash": "b193f33b6b9c23857424399a98d7fc966318ee35fc7ec05293baeb24aa36ea01",
+  "page_title": "BRAHMA'S HYMN",
+  "panels": [
+    {
+      "asset": {
+        "approval": {
+          "review_path": "books/DM02/book-level-production/reviews/campaign-image-reviews.v0001.json",
+          "review_result": "PASS",
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "a316b6ae9ba2f8415c7ad52fcdcb0199a1b761c899ab4bd187c2f459c4e4b0d3"
+        },
+        "path": "books/DM02/book-level-production/images/p09-panel-01/v0001.png",
+        "sha256": "a316b6ae9ba2f8415c7ad52fcdcb0199a1b761c899ab4bd187c2f459c4e4b0d3",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW"
+      },
+      "box": {
+        "height": 0.56,
+        "width": 0.91,
+        "x": 0.045,
+        "y": 0.365
+      },
+      "crop": {
+        "crop_intent": "Preserve the complete reviewed portrait master, including the protected lettering field and all source-critical relationships.",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.55
+        },
+        "mode": "CONTAIN",
+        "zoom": 1.0
+      },
+      "panel_id": "p09-panel-01",
+      "reading_order": 1,
+      "speaker_anchors": [
+        {
+          "speaker_id": "dm-brahma",
+          "x": 0.4,
+          "y": 0.53
+        }
+      ]
+    }
+  ],
+  "preview_authority": {
+    "basis": "Exact approval approval-3174e958372faf8a1e6f380f and independent actual-pixel review",
+    "image_generation_authorized": true,
+    "paid_provider_calls_authorized": false,
+    "publication_authorized": false,
+    "scope": "DM02_BOOK_LEVEL_PRIVATE_CAMPAIGN_PASS_REVIEWED_ASSETS"
+  },
+  "private_preview": true,
+  "publication_eligible": false,
+  "reading_order": 9,
+  "reference_comparison": [
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "role": "PRESENTATION_REFERENCE_ONLY",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "role": "COMIC_PAGE_RHYTHM_REFERENCE_ONLY",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+    }
+  ],
+  "renderer_source_sha256": "578be319d0647d2d7d226bb982954684268b920ef33ba635b6e9a3a6b0118e2d",
+  "required_lettering_ids": [
+    "p09-narration",
+    "p09-dialogue"
+  ],
+  "resolved_font": {
+    "bold": "/System/Library/Fonts/Supplemental/STIXGeneralBol.otf",
+    "bold_sha256": "7e4dfb4979e9bb79a0bdedc56f055eab615fb9a3dff8788a52992ae65e8f572d",
+    "classification": "serif",
+    "family": "STIXGeneral",
+    "font_binary_bundled_in_repository": false,
+    "legal_installation": "Install the STIX Fonts project from its official distribution, then update paths if the operating system stores it elsewhere. Confirm the specific distribution's license before publication.",
+    "license_evidence": "The installed font metadata identifies the STIX license, derived from the SIL Open Font License. The renderer records hashes but does not copy these system files into the repository.",
+    "license_status": "SYSTEM_FONT_LICENSE_REVIEWED_NOT_REDISTRIBUTED",
+    "regular": "/System/Library/Fonts/Supplemental/STIXGeneral.otf",
+    "regular_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7"
+  },
+  "resolved_lettering": [
+    {
+      "box": [
+        87,
+        167,
+        999,
+        246
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p09-narration",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 12,
+      "rendered_font_size": 22,
+      "requested_font_size": 22,
+      "source_script_hash": "5f4a47dde38ab0d8ea717ddba26a4a5f1102da28f6f7feff486192ff10e7a823",
+      "text_sha256": "e253ae9c161c0a596d11d299e27f7c2854c2918a66758b184144116af2993f75"
+    },
+    {
+      "box": [
+        87,
+        268,
+        999,
+        500
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p09-dialogue",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 12,
+      "rendered_font_size": 22,
+      "requested_font_size": 22,
+      "source_script_hash": "c2c0022f007ea0b4dc4f4110a13ec947bf9b08b9bb3b9aa7fe1e1a31c0b7eefd",
+      "text_sha256": "c7613e5b781f3312cc308197553be8e3b74d226a715a59f1c38b3248f70009cc"
+    }
+  ],
+  "resolved_panels": [
+    {
+      "asset_path": "books/DM02/book-level-production/images/p09-panel-01/v0001.png",
+      "asset_sha256": "a316b6ae9ba2f8415c7ad52fcdcb0199a1b761c899ab4bd187c2f459c4e4b0d3",
+      "box": [
+        49,
+        529,
+        1037,
+        1339
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "panel_id": "p09-panel-01",
+      "paste_at": [
+        243,
+        534
+      ],
+      "rendered_size": [
+        600,
+        800
+      ],
+      "scale_mode": "ASPECT_PRESERVING_CONTAIN",
+      "semantic_crop_review": "PENDING_IMAGE_CAPABLE_REVIEW",
+      "source_crop": [
+        0,
+        0,
+        1086,
+        1448
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "zoom": 1.0
+    }
+  ],
+  "schema_version": "1.0",
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "storyboard_conformance": {
+    "reason": "All required panel assets passed independent private-use review; lettering is exact from locked storyboard v2.",
+    "status": "PRIVATE_PREVIEW_FROM_PASS_REVIEWED_ASSETS"
+  },
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "typography": {
+    "body_size": 22,
+    "family": "STIXGeneral",
+    "title_size": 30
+  }
+}

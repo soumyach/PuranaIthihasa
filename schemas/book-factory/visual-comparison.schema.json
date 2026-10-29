@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "visual-comparison.schema.json",
+  "type": "object",
+  "required": ["schema_version", "comparison_id", "book_id", "actual_pixels_inspected", "reviewer", "side_by_side", "dimension_order", "records"],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0"},
+    "comparison_id": {"type": "string", "minLength": 1},
+    "book_id": {"type": "string", "const": "DM04"},
+    "actual_pixels_inspected": {"type": "boolean", "const": true},
+    "reviewer": {"type": "object"},
+    "side_by_side": {"type": "object"},
+    "dimension_order": {"type": "array", "minItems": 11, "maxItems": 11, "items": {"type": "string"}},
+    "records": {"type": "array", "minItems": 8, "maxItems": 8, "items": {"type": "object"}}
+  }
+}

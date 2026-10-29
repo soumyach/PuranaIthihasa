@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "book_version": "DM02-BOOK-LEVEL-PRODUCTION-PAGE02-V1",
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "page_script_hash": "2de21eb4f1c1b8bbd608e9bdbda0cf3d24959dc5c453d7ce6a9d6be1cba75bea",
+  "page_id": "page-88792a15dcd25b30d3982d7c",
+  "page_number": 2,
+  "reading_order": 2,
+  "page_title": "BEYOND REMEMBERED SEASONS",
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "layout_type": "TWO_PANEL_SEQUENTIAL",
+  "fixture": false,
+  "private_preview": true,
+  "publication_eligible": false,
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "preview_authority": {
+    "scope": "ONE_LOCAL_DM02_PAGE02_FROM_TWO_INDEPENDENTLY_PASS_REVIEWED_ASSETS",
+    "basis": "Approval approval-3174e958372faf8a1e6f380f plus independent actual-pixel PASS reviews",
+    "image_generation_authorized": true,
+    "publication_authorized": false,
+    "paid_provider_calls_authorized": false
+  },
+  "storyboard_conformance": {
+    "status": "PRIVATE_PREVIEW_FROM_PASS_REVIEWED_ASSETS",
+    "reason": "The corrected hand-and-fire transition and the existing quiet silhouette transition both independently passed their exact source-bounded panel specifications."
+  },
+  "reference_comparison": [
+    {
+      "role": "PRESENTATION_REFERENCE_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "role": "COMIC_PAGE_RHYTHM_REFERENCE_ONLY",
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+      "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+    }
+  ],
+  "panels": [
+    {
+      "panel_id": "p02-panel-01",
+      "reading_order": 1,
+      "diagnostic_beat": "Medhas's anatomically corrected open hand, low fire and smoke begin the transition without a supernatural claim.",
+      "asset": {
+        "path": "books/DM02/book-level-production/images/p02-panel-01/v0002.png",
+        "sha256": "8e2a798a58cdcefd29329ee1d7001c3f01b40207544ef272dbd9ad0efb3d91b8",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW",
+        "approval": {
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "8e2a798a58cdcefd29329ee1d7001c3f01b40207544ef272dbd9ad0efb3d91b8",
+          "review_path": "books/DM02/book-level-production/reviews/batch-01.v0001.json",
+          "review_result": "PASS"
+        }
+      },
+      "crop": {
+        "mode": "COVER",
+        "focal_point": {"x": 0.5, "y": 0.58},
+        "zoom": 1.0,
+        "crop_intent": "Preserve the complete corrected hand, prayer beads, low fire, smoke and upper navy negative space."
+      },
+      "speaker_anchors": []
+    },
+    {
+      "panel_id": "p02-panel-02",
+      "reading_order": 2,
+      "diagnostic_beat": "The three listeners remain neutral silhouettes as the upper field opens toward dissolution.",
+      "asset": {
+        "path": "books/DM02/pages-1-3-production/images/p02-panel-02/v0001.png",
+        "sha256": "6a74cd64078d324d3d6e6abfdb8b573034f8d9a829b6d0b227bb02eeada5fa17",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW",
+        "approval": {
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "6a74cd64078d324d3d6e6abfdb8b573034f8d9a829b6d0b227bb02eeada5fa17",
+          "review_path": "books/DM02/pages-1-3-production/independent-visual-review.v0001.json",
+          "review_result": "PASS"
+        }
+      },
+      "crop": {
+        "mode": "COVER",
+        "focal_point": {"x": 0.5, "y": 0.58},
+        "zoom": 1.0,
+        "crop_intent": "Retain all three quiet silhouettes, the low fire and the broad dark transition field without implying a portal."
+      },
+      "speaker_anchors": []
+    }
+  ],
+  "lettering": [
+    {
+      "lettering_id": "p02-narration",
+      "panel_id": "p02-panel-01",
+      "reading_order": 1,
+      "channel": "NARRATION",
+      "speaker_id": "narrator",
+      "badge_number": 1,
+      "text": "Then his story moved beyond kingdoms, roads and remembered seasons, to the dissolution of a world.",
+      "source_script_hash": "2306ca608bd7ddb22df7ed26df0f786b36fd04c34f22d93c504480a88362007e",
+      "box": {"x": 0.08, "y": 0.105, "width": 0.84, "height": 0.1},
+      "padding": 18,
+      "font": {"size": 25, "minimum_size": 22}
+    }
+  ],
+  "required_lettering_ids": ["p02-narration"],
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": ["#071F35", "#D8AC4E", "#F0CF76", "#F6E8C6", "#FFF9EF", "#251C18", "#692019"]
+  },
+  "typography": {"family": "STIXGeneral", "body_size": 25, "title_size": 30},
+  "approvals": {
+    "manuscript": {"status": "LOCKED_FOR_PRIVATE_PREVIEW", "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"},
+    "storyboard": {"status": "LOCKED_FOR_PRIVATE_PREVIEW", "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"},
+    "series_standard": {"status": "LOCKED_FOR_PRIVATE_PREVIEW", "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"}
+  }
+}

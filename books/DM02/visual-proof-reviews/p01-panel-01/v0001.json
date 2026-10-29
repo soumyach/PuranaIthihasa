@@ -1,0 +1,126 @@
+{
+  "book_id": "DM02",
+  "content_hash": "fe5549afe3b24e0854f9f916def192f8d01c429eb2e764b7ae40254664bbca6c",
+  "id": "visual-proof-reviews/p01-panel-01-e83244771f39c812c1e11efb",
+  "kind": "visual-proof-reviews/p01-panel-01",
+  "parent_hash": null,
+  "payload": {
+    "assessments": [
+      {
+        "dimension": "SOURCE_FIDELITY",
+        "evidence": "Original-resolution pixels show only Medhas, Suratha and Samadhi in the permitted forest frame, seated around a low fire with Medhas speaking; no extra action, motive, genealogy, quotation or weapon is introduced.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "THEOLOGICAL_ACCURACY",
+        "evidence": "The image makes no divine-body, halo, weapon, manifestation or other unsupported theological claim.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "CULTURAL_AUTHENTICITY",
+        "evidence": "The seated listening arrangement, modest Indian garments, sage beads, low fire and natural clearing form a coherent family-storybook hermitage without modern or Western-fantasy objects.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "CHARACTER_IDENTITY",
+        "evidence": "Medhas is an aged bark-brown and ivory-clad sage with a measured open-hand gesture; Suratha has a travel-worn peacock-blue cloak without crown, regalia or weapon; Samadhi is plainly earth-toned and unarmed.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "EVENT_ACTION_DEPICTION",
+        "evidence": "The wide eye-level triangle clearly depicts Medhas addressing two neutral listeners across the fire, exactly matching the locked panel action.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "ANATOMY",
+        "evidence": "Visible faces, hands, arms, seated legs and feet are coherent at original resolution; no fused fingers, extra limbs or detached anatomy is apparent.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "NARRATIVE_CLARITY",
+        "evidence": "Medhas's direct gaze and open right hand establish him as speaker while both inward-facing profiles read immediately as listeners.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "EMOTIONAL_EXPRESSIVENESS",
+        "evidence": "The expressions are attentive and restrained rather than dramatic, preserving the source-neutral emotional policy.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "VISUAL_COMPOSITION",
+        "evidence": "Two framing trunks, a low central fire and the three-person triangle give the panel a stable wide-shot hierarchy and clear eye path.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "GOLD_STANDARD_ALIGNMENT",
+        "evidence": "The proof reaches the submitted Khatakshetra references' premium painterly finish, jewel-toned warmth, facial clarity and cinematic depth without copying their deity, lion, palace, dialogue, border or plot content.",
+        "result": "PASS"
+      },
+      {
+        "dimension": "LETTERING_COMPATIBILITY",
+        "evidence": "No raster lettering is present, but the complete required safe rectangle at x=0.08..0.92 and y=0.06..0.24 is not calm and unobstructed: heavy branches and leaves cross both upper corners and extend inward over the intended caption field.",
+        "result": "FIX"
+      }
+    ],
+    "book_id": "DM02",
+    "campaign_id": "dm02-visual-proof-campaign-01",
+    "campaign_subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+    "character_reference_promoted": false,
+    "comparison_references": [
+      {
+        "content_transfer": "FORBIDDEN",
+        "input_index": 1,
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+        "reference_id": "kgs-satya-p01",
+        "role": "A_SERIES_VISUAL_IDENTITY",
+        "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+      },
+      {
+        "content_transfer": "FORBIDDEN",
+        "input_index": 2,
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+        "reference_id": "kgs-dm08-p09",
+        "role": "B_PAGE_PANEL_COMPOSITION",
+        "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"
+      }
+    ],
+    "correction_instructions": [
+      "For a future separately authorized correction, preserve the current three identities and action but move all canopy detail outside the complete normalized top safe rectangle.",
+      "No retry is authorized by this review."
+    ],
+    "findings": [
+      {
+        "dimension": "LETTERING_COMPATIBILITY",
+        "discrepancy": "The full upper lettering-safe rectangle is not protected.",
+        "evidence": "At actual pixels, dense foliage and branches occupy the left and right portions of the locked x=0.08..0.92, y=0.06..0.24 region, leaving only a narrower central sky opening.",
+        "page_id": "page-71e9de766bf786cb9499a31b",
+        "panel_id": "p01-panel-01",
+        "repair_type": "LETTERING_REGION_RECOMPOSITION"
+      }
+    ],
+    "generation_retry_authorized": false,
+    "image_path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png",
+    "image_sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27",
+    "independent_actual_pixel_review": true,
+    "page_id": "page-71e9de766bf786cb9499a31b",
+    "panel_id": "p01-panel-01",
+    "publication_eligible": false,
+    "request_hash": "0a247af0c30ff76ff7786a2d4ce92fdb38e00b9fb3fdd5d033fd1f77fb5c2cb0",
+    "request_record_hash": "de7e2c96158d70df11d48c6d0fc110d2ab5914f2ae8503e4c62d654f07de8ebf",
+    "result": "FIX",
+    "review_hash": "0dbdc0d1fe3237362648d886d8bb450e4939adc38ee83e6eba6272d7bf826ea0",
+    "reviewed_at": "2026-10-22T12:24:19Z",
+    "reviewer": {
+      "id": "/root/pr11_visual_reviewer-dm02",
+      "image_capable": true,
+      "independent_of_producer": true,
+      "inspected_actual_pixels": true,
+      "reading_size": "ACTUAL_READING_SIZE"
+    },
+    "schema_version": "1.0",
+    "setting_reference_promoted": false,
+    "unit_id": "page-71e9de766bf786cb9499a31b--p01-panel-01"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

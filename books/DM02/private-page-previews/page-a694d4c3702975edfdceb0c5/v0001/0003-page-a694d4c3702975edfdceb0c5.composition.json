@@ -1,0 +1,197 @@
+{
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"
+    }
+  },
+  "book_id": "DM02",
+  "book_version": "DM02-PAGES-1-3-PRODUCTION-PAGE03-V1",
+  "canvas": {
+    "aspect_ratio": "3:4",
+    "height": 1448,
+    "width": 1086
+  },
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "composition_hash": "b6974095613651f6c2f04351ee1839693cd016e04a53dab4cec083c9de5dd6be",
+  "engine_version": "0.8.2",
+  "fixture": false,
+  "fixture_mode": false,
+  "font_config_sha256": "ba6cd2c0c4d716aa550059148339642da7fb2f1af1bfaad2e5d6ab838fb1e0aa",
+  "layout_type": "SINGLE_PANEL_IMMERSIVE",
+  "lettering": [
+    {
+      "badge_number": 1,
+      "box": {
+        "height": 0.145,
+        "width": 0.82,
+        "x": 0.09,
+        "y": 0.115
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 22
+      },
+      "lettering_id": "p03-narration",
+      "padding": 18,
+      "panel_id": "p03-panel-01",
+      "reading_order": 1,
+      "source_script_hash": "585243fd12eed28e488af9698540e3d3a868fbd458bcd9bd185eaae001391645",
+      "speaker_id": "narrator",
+      "text": "Water stretched through the vastness. No shore divided one direction from another. There was no field to cross, no mountain path to climb, no city lamp to mark a home. The flood of dissolution held the scene in a silence deeper than ordinary night."
+    }
+  ],
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "page_id": "page-a694d4c3702975edfdceb0c5",
+  "page_number": 3,
+  "page_script_hash": "3792be0fdd214746bab437f1c636b55c24812e1144896b707dc4d05078ee0135",
+  "page_title": "WATER WITHOUT SHORE",
+  "panels": [
+    {
+      "asset": {
+        "approval": {
+          "review_path": "books/DM02/pages-1-3-production/independent-visual-review.v0001.json",
+          "review_result": "PASS",
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "8c5e72bf52d71d13997af976c3f7d43917802b8bcd91506d35495031bdf3e86a"
+        },
+        "path": "books/DM02/pages-1-3-production/images/p03-panel-01/v0001.png",
+        "sha256": "8c5e72bf52d71d13997af976c3f7d43917802b8bcd91506d35495031bdf3e86a",
+        "usage": "PRIVATE_INTERNAL_PRODUCTION_PREVIEW"
+      },
+      "crop": {
+        "crop_intent": "Preserve uninterrupted water depth, upper cloud texture and the absence of a shore or landmark.",
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.52
+        },
+        "mode": "COVER",
+        "zoom": 1.0
+      },
+      "diagnostic_beat": "Show horizonless dissolution water without a shore, landmark, figure or invented cosmography.",
+      "panel_id": "p03-panel-01",
+      "reading_order": 1,
+      "speaker_anchors": []
+    }
+  ],
+  "preview_authority": {
+    "basis": "Exact campaign approval approval-d50a10509141390a31d41cdb and independent actual-pixel PASS",
+    "image_generation_authorized": true,
+    "paid_provider_calls_authorized": false,
+    "publication_authorized": false,
+    "scope": "ONE_LOCAL_DM02_PAGE03_PASS_REVIEWED_CAMPAIGN_OUTPUT"
+  },
+  "private_preview": true,
+  "publication_eligible": false,
+  "reading_order": 3,
+  "reference_comparison": [
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+      "role": "PRESENTATION_REFERENCE_ONLY",
+      "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+    },
+    {
+      "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+      "role": "FULL_PAGE_ATMOSPHERIC_COMPOSITION_REFERENCE_ONLY",
+      "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+    }
+  ],
+  "renderer_source_sha256": "6e8859fc460eb68ddb12cde26608f0d0c2cf8956b47cf4809dc686d9276a9526",
+  "required_lettering_ids": [
+    "p03-narration"
+  ],
+  "resolved_font": {
+    "bold": "/System/Library/Fonts/Supplemental/STIXGeneralBol.otf",
+    "bold_sha256": "7e4dfb4979e9bb79a0bdedc56f055eab615fb9a3dff8788a52992ae65e8f572d",
+    "classification": "serif",
+    "family": "STIXGeneral",
+    "font_binary_bundled_in_repository": false,
+    "legal_installation": "Install the STIX Fonts project from its official distribution, then update paths if the operating system stores it elsewhere. Confirm the specific distribution's license before publication.",
+    "license_evidence": "The installed font metadata identifies the STIX license, derived from the SIL Open Font License. The renderer records hashes but does not copy these system files into the repository.",
+    "license_status": "SYSTEM_FONT_LICENSE_REVIEWED_NOT_REDISTRIBUTED",
+    "regular": "/System/Library/Fonts/Supplemental/STIXGeneral.otf",
+    "regular_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7"
+  },
+  "resolved_lettering": [
+    {
+      "box": [
+        98,
+        167,
+        988,
+        376
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p03-narration",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 18,
+      "rendered_font_size": 22,
+      "requested_font_size": 22,
+      "source_script_hash": "585243fd12eed28e488af9698540e3d3a868fbd458bcd9bd185eaae001391645",
+      "text_sha256": "c58961ae0ce1645300b9fe7dc9841d0606a2b142803a110ae4baaea17d08f541"
+    }
+  ],
+  "resolved_panels": [
+    {
+      "asset_path": "books/DM02/pages-1-3-production/images/p03-panel-01/v0001.png",
+      "asset_sha256": "8c5e72bf52d71d13997af976c3f7d43917802b8bcd91506d35495031bdf3e86a",
+      "box": [
+        49,
+        152,
+        1037,
+        1339
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.52
+      },
+      "panel_id": "p03-panel-01",
+      "scale_mode": "ASPECT_PRESERVING_COVER",
+      "semantic_crop_review": "PENDING_IMAGE_CAPABLE_REVIEW",
+      "source_crop": [
+        0,
+        99,
+        1086,
+        1406
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "zoom": 1.0
+    }
+  ],
+  "schema_version": "1.0",
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "storyboard_conformance": {
+    "reason": "The exact Page 3 environment master passed source, composition, safe-region and actual-pixel review without a character or iconography claim.",
+    "status": "PRIVATE_PREVIEW_FROM_PASS_REVIEWED_NEW_MASTER"
+  },
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "typography": {
+    "body_size": 22,
+    "family": "STIXGeneral",
+    "title_size": 30
+  }
+}

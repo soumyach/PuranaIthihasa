@@ -1,0 +1,254 @@
+{
+  "book_id": "DM04",
+  "content_hash": "f8c418f99170ab8711a89ac64f61296b85255318f8926886d9a00828ae465d17",
+  "id": "proof-specs-6e3adc69ebadfeddb576e756",
+  "kind": "proof-specs",
+  "parent_hash": "4b6e13a5d966564292d297cc8fdb3a57652d0d59ee3db0cc1d7562b8a5774b06",
+  "payload": {
+    "approval_policy": "Every rendered attempt requires semantic visual review; approval binds exact proof spec hash, package version and image hash and never transfers to unrelated characters.",
+    "approval_records": [],
+    "book_id": "DM04",
+    "manuscript_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+    "provider_status": "BLOCKED_PROVIDER",
+    "retry_limit": 2,
+    "schema_version": "1.0",
+    "specs": [
+      {
+        "attempts": [],
+        "canvas": {
+          "aspect_ratio": "3:4",
+          "pixel_height": 1448,
+          "pixel_width": 1086
+        },
+        "character_ids": [
+          "dm-medhas",
+          "dm-suratha",
+          "dm-samadhi"
+        ],
+        "composition": "Three-person listening triangle with generous quiet negative space.",
+        "exclusions": [
+          "embedded lettering",
+          "watermark",
+          "modern object",
+          "extra limb",
+          "unsourced weapon",
+          "graphic gore",
+          "merged Mahisha forms"
+        ],
+        "iconography": "Bind every figure to character-bible identity, form, arm-count and authorized-weapon rules.",
+        "id": "dm04-proof-quiet-conversation",
+        "kind": "QUIET_CONVERSATION",
+        "review_requirements": [
+          "iconographic_accuracy",
+          "hands_and_anatomy",
+          "character_continuity",
+          "facial_consistency",
+          "scene_correctness",
+          "clipped_artwork",
+          "lettering_readability"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.18,
+            "id": "dm04-proof-quiet-conversation-safe",
+            "purpose": "editable lettering",
+            "width": 0.84,
+            "x": 0.08,
+            "y": 0.06
+          }
+        ],
+        "setting": "forest-hermitage",
+        "source_boundaries": [
+          "No invented doctrine or boon.",
+          "Source silence stays marked as visual proposal.",
+          "Use only locked DM04 identities and events."
+        ],
+        "source_support": [
+          "dm-evidence-001",
+          "dm-evidence-002",
+          "dm-evidence-003"
+        ],
+        "status": "SPEC_READY_PROVIDER_BLOCKED",
+        "style": "cinematic Indian epic storybook; painterly line and shape; exact seven-color palette",
+        "title": "Hermitage question"
+      },
+      {
+        "attempts": [],
+        "canvas": {
+          "aspect_ratio": "3:4",
+          "pixel_height": 1448,
+          "pixel_width": 1086
+        },
+        "character_ids": [
+          "dm-devi",
+          "dm-gods"
+        ],
+        "composition": "Full-body source-bounded reveal amid converging radiance.",
+        "exclusions": [
+          "embedded lettering",
+          "watermark",
+          "modern object",
+          "extra limb",
+          "unsourced weapon",
+          "graphic gore",
+          "merged Mahisha forms"
+        ],
+        "iconography": "Bind every figure to character-bible identity, form, arm-count and authorized-weapon rules.",
+        "id": "dm04-proof-divine-reveal",
+        "kind": "DIVINE_REVEAL",
+        "review_requirements": [
+          "iconographic_accuracy",
+          "hands_and_anatomy",
+          "character_continuity",
+          "facial_consistency",
+          "scene_correctness",
+          "clipped_artwork",
+          "lettering_readability"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.18,
+            "id": "dm04-proof-divine-reveal-safe",
+            "purpose": "editable lettering",
+            "width": 0.84,
+            "x": 0.08,
+            "y": 0.06
+          }
+        ],
+        "setting": "manifestation-space",
+        "source_boundaries": [
+          "No invented doctrine or boon.",
+          "Source silence stays marked as visual proposal.",
+          "Use only locked DM04 identities and events."
+        ],
+        "source_support": [
+          "dm-evidence-009",
+          "dm-sanskrit-evidence-009"
+        ],
+        "status": "SPEC_READY_PROVIDER_BLOCKED",
+        "style": "cinematic Indian epic storybook; painterly line and shape; exact seven-color palette",
+        "title": "Devī manifested"
+      },
+      {
+        "attempts": [],
+        "canvas": {
+          "aspect_ratio": "3:4",
+          "pixel_height": 1448,
+          "pixel_width": 1086
+        },
+        "character_ids": [
+          "dm-devi",
+          "dm-lion",
+          "dm-chikshura",
+          "dm-asura-army"
+        ],
+        "composition": "Readable opposing vectors and family-appropriate consequence without graphic gore.",
+        "exclusions": [
+          "embedded lettering",
+          "watermark",
+          "modern object",
+          "extra limb",
+          "unsourced weapon",
+          "graphic gore",
+          "merged Mahisha forms"
+        ],
+        "iconography": "Bind every figure to character-bible identity, form, arm-count and authorized-weapon rules.",
+        "id": "dm04-proof-battle",
+        "kind": "BATTLE",
+        "review_requirements": [
+          "iconographic_accuracy",
+          "hands_and_anatomy",
+          "character_continuity",
+          "facial_consistency",
+          "scene_correctness",
+          "clipped_artwork",
+          "lettering_readability"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.18,
+            "id": "dm04-proof-battle-safe",
+            "purpose": "editable lettering",
+            "width": 0.84,
+            "x": 0.08,
+            "y": 0.06
+          }
+        ],
+        "setting": "battlefield",
+        "source_boundaries": [
+          "No invented doctrine or boon.",
+          "Source silence stays marked as visual proposal.",
+          "Use only locked DM04 identities and events."
+        ],
+        "source_support": [
+          "dm-evidence-014",
+          "dm-evidence-016",
+          "dm-sanskrit-evidence-016"
+        ],
+        "status": "SPEC_READY_PROVIDER_BLOCKED",
+        "style": "cinematic Indian epic storybook; painterly line and shape; exact seven-color palette",
+        "title": "Devī and lion against the commanders"
+      },
+      {
+        "attempts": [],
+        "canvas": {
+          "aspect_ratio": "3:4",
+          "pixel_height": 1448,
+          "pixel_width": 1086
+        },
+        "character_ids": [
+          "dm-devi",
+          "dm-mahisha"
+        ],
+        "composition": "Vertical full-page confrontation with Devī dominant and the half-emerged form unambiguous.",
+        "exclusions": [
+          "embedded lettering",
+          "watermark",
+          "modern object",
+          "extra limb",
+          "unsourced weapon",
+          "graphic gore",
+          "merged Mahisha forms"
+        ],
+        "iconography": "Bind every figure to character-bible identity, form, arm-count and authorized-weapon rules.",
+        "id": "dm04-proof-full-page",
+        "kind": "FULL_PAGE_IMMERSION",
+        "review_requirements": [
+          "iconographic_accuracy",
+          "hands_and_anatomy",
+          "character_continuity",
+          "facial_consistency",
+          "scene_correctness",
+          "clipped_artwork",
+          "lettering_readability"
+        ],
+        "safe_regions": [
+          {
+            "height": 0.18,
+            "id": "dm04-proof-full-page-safe",
+            "purpose": "editable lettering",
+            "width": 0.84,
+            "x": 0.08,
+            "y": 0.06
+          }
+        ],
+        "setting": "mahisha-arrival",
+        "source_boundaries": [
+          "No invented doctrine or boon.",
+          "Source silence stays marked as visual proposal.",
+          "Use only locked DM04 identities and events."
+        ],
+        "source_support": [
+          "dm-evidence-021"
+        ],
+        "status": "SPEC_READY_PROVIDER_BLOCKED",
+        "style": "cinematic Indian epic storybook; painterly line and shape; exact seven-color palette",
+        "title": "The decisive moment"
+      }
+    ],
+    "storyboard_hash": "9c7d2fa39a25cfbe034c60aefbb1e25c2b6d7dd6a429bb381e84c37e7be7ceb4",
+    "version": 2
+  },
+  "schema_version": "1.0",
+  "version": 2
+}

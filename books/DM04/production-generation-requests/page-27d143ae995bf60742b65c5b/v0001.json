@@ -1,0 +1,73 @@
+{
+  "book_id": "DM04",
+  "content_hash": "f8fa09ea2e53eb4ef04810e42eb9c53ba13f3a74e27febc7d8ce837fbffdd153",
+  "id": "production-generation-requests/page-27d143ae995bf60742b65c5b-e20f1c5b56ee047f2825d9f3",
+  "kind": "production-generation-requests/page-27d143ae995bf60742b65c5b",
+  "parent_hash": null,
+  "payload": {
+    "base_image": {
+      "path": "books/DM04/illustration-proofs/images/dm04-proof-quiet-conversation/attempt-02-578e0fcdb4dcf016.png",
+      "sha256": "578e0fcdb4dcf016b7b85a50736e498859528560f569885ddf0f8060003f32fc",
+      "status": "REJECTED_PR6_EDIT_SOURCE_ONLY_NOT_PAGE_ASSET"
+    },
+    "book_id": "DM04",
+    "campaign_approval_id": "approval-9ac3c1c3bc2a352021552a8d",
+    "campaign_id": "dm04-pr10-real-production-slice-01",
+    "campaign_subject_hash": "5a5b7c2a606f47a9b72ef001f19ef9c8736f4b328d2434dae08c5d0b08c061d7",
+    "lettering_hash": "92e0ae2d99ae66868eb0482aabd25f4e479b4e9136badbb0ef3f37ccd266a892",
+    "maximum_operations_for_page": 1,
+    "maximum_paid_spend_minor_units": 0,
+    "operation": "edit",
+    "page_id": "page-27d143ae995bf60742b65c5b",
+    "page_number": 1,
+    "page_script_sha256": "4509f47443c27b55dd6d8914def8119393fcc16f23b56a0c328c094c0a042cc0",
+    "production_unit": "TWO_PANEL_CLEAN_ART_SHEET_WITH_SEPARATELY_REVIEWABLE_PANEL_REGIONS",
+    "prompt": "PANEL_ILLUSTRATION for DM04 p01-panel-02. Preserve the current attempt-2 hermitage, three identities and quiet dusk/firelight, but recompose closer: Medhas raises one open hand while asking his question; Suratha and Samādhi turn and listen. Keep all figures unarmed. Use reference A only for Khatakshetra finish, B only for speaker/listener rhythm, and D only for forest depth. Clean art, no text. Reserve the exact dialogue geometry and Medhas tail anchor. Do not copy any benchmark person, deity, lion, palace, dialogue or plot.",
+    "provider_id": "codex-built-in-image-gen",
+    "provider_interface": "referenced_image_paths",
+    "reference_conditioning_required": true,
+    "references": [
+      {
+        "available": true,
+        "content_transfer": "FORBIDDEN",
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+        "reference_id": "kgs-satya-p01",
+        "role": "REFERENCE_A_SERIES_VISUAL_IDENTITY",
+        "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+        "use": "navy/gold/cream hierarchy and painterly dignity only"
+      },
+      {
+        "available": true,
+        "content_transfer": "FORBIDDEN",
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png",
+        "reference_id": "kgs-dm08-p09",
+        "role": "REFERENCE_B_PAGE_COMPOSITION",
+        "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d",
+        "use": "speaker/listener staging, gaze direction and reaction scale only"
+      },
+      {
+        "available": false,
+        "content_transfer": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+        "path": null,
+        "reference_id": null,
+        "role": "REFERENCE_C_CHARACTER_IDENTITY",
+        "sha256": null,
+        "use": "locked text registry only"
+      },
+      {
+        "available": true,
+        "content_transfer": "FORBIDDEN",
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p02.png",
+        "reference_id": "kgs-satya-p02",
+        "role": "REFERENCE_D_SETTING_ENVIRONMENT",
+        "sha256": "a0fa07b60d1b8b128b541300f3fb5e26358863e3153c719e2d0aacb0fd7858dd",
+        "use": "forest assembly depth and warm conversational environment only"
+      }
+    ],
+    "request_hash": "cf5610b02700837ef6bee853d645df6b66f1743c28e2ac8de581f401345c81e5",
+    "schema_version": "1.0",
+    "text_in_image": false
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

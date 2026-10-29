@@ -1,0 +1,24 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/editorial-review.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {"const": "1.0", "type": "string"},
+    "book_id": {"type": "string"},
+    "reviewed_manuscript_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "reviewed_packet_hashes": {"items": {"pattern": "^[0-9a-f]{64}$", "type": "string"}, "minItems": 1, "type": "array"},
+    "result": {"enum": ["PASS", "FIX", "ESCALATE"], "type": "string"},
+    "findings": {"items": {"type": "object"}, "type": "array"},
+    "reviewed_dimensions": {"items": {"type": "string"}, "minItems": 1, "type": "array"},
+    "review_perspective": {"enum": ["LEGACY_COMBINED", "SOURCE_FIDELITY", "LITERARY_EXPERIENCE"], "type": "string"},
+    "reviewer": {"type": "object"},
+    "dimension_assessments": {"items": {"type": "object"}, "type": "array"},
+    "evidence_checks": {"items": {"type": "object"}, "type": "array"},
+    "publication_readiness_certified": {"const": false, "type": "boolean"},
+    "source_readiness_overridden": {"const": false, "type": "boolean"},
+    "review_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
+  },
+  "required": ["schema_version", "book_id", "reviewer", "reviewed_manuscript_hash", "reviewed_packet_hashes", "reviewed_dimensions", "result", "findings", "review_hash", "publication_readiness_certified", "source_readiness_overridden"],
+  "title": "Independent editorial review",
+  "type": "object"
+}

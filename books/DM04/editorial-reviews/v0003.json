@@ -1,0 +1,280 @@
+{
+  "book_id": "DM04",
+  "content_hash": "07d7504967665a5082d573af4fb344931c3ddf11acd715677a7ca922f2d2cd23",
+  "id": "editorial-reviews-689af5c73c7a5bd044e47168",
+  "kind": "editorial-reviews",
+  "parent_hash": "024a89c5f46e11f0b34dc3090ab05cbeacbc57179bffd4bdb04d324aa20e6880",
+  "payload": {
+    "book_id": "DM04",
+    "certification_scope": "LITERARY_EXPERIENCE_INDEPENDENT_MANUSCRIPT_REVIEW_ONLY",
+    "dimension_assessments": [
+      {
+        "assessment": "The manuscript gives each major action a readable dramatic unit: manifestation, arming, roar, army battle, commander encounters, buffalo-form reversal, transformations, climax and hymn. Quiet forest exchanges punctuate rather than dilute the battle, and the modern reflection is clearly separated after the resolved story. The one redundant pre-hook recap is addressed under narrative_redundancy rather than indicating a broader balance failure.",
+        "dimension": "action_narration_reflection_balance",
+        "result": "PASS"
+      },
+      {
+        "assessment": "Suratha and Samadhi now function as distinct reader companions: Suratha tests the political and tactical stakes, while Samadhi responds to unity and remembrance. Medhas guides without overexplaining most scenes. Devi is characterized through composure, gathered power, tactical response and the transition from fierce battle to receiving worship; Mahishasura is dramatically legible through force, disruption and changing forms without invented psychology.",
+        "dimension": "character_engagement",
+        "result": "PASS"
+      },
+      {
+        "assessment": "The forest storyteller frame, family-facing clarifications, labeled reflection and clean next-volume invitation belong naturally beside the DM08 literary benchmark, while DM04 keeps its own plot, cast and emotional shape. The benchmark is used as a quality reference only; no DM08 event or theological explanation has been imported into this story.",
+        "dimension": "collection_continuity",
+        "result": "PASS"
+      },
+      {
+        "assessment": "The dialogue now marks genuine shifts: the opening question turns occupation into a felt problem, Samadhi makes the manifestation intelligible, Suratha voices surprise when the apparent victory reverses, and the closing exchange moves from violence toward remembrance. That progression is strong, but Medhas's line 'In this telling, that is what you have noticed' withdraws from the emotional moment into editorial qualification and needs the bounded repair identified above.",
+        "dimension": "dialogue_and_emotional_progression",
+        "result": "FIX"
+      },
+      {
+        "assessment": "Most lines are concise, speakable and differentiated by role. 'The army had fallen. Its king had not.' is especially effective because it clarifies stakes while creating momentum. The two in-scene adaptation disclosures are the exceptions: they sound like production notes rather than spoken or narrated story language. Their removal does not require more dialogue or any arbitrary quota.",
+        "dimension": "dialogue_quality",
+        "result": "FIX"
+      },
+      {
+        "assessment": "The manuscript contains several fully realized scenes rather than summary alone: the lamp-lit question, the lights crossing and joining, the lion's arrival, the breath-born army, the interrupted flower shower, the dust-hidden buffalo, the tightening noose and each distinct transformation. The opening scene loses tension for one sentence when the narrator pauses to label the adaptation; removing that disclosure will let the question flow directly into Medhas's tale.",
+        "dimension": "dramatic_scene_quality",
+        "result": "FIX"
+      },
+      {
+        "assessment": "The emotional contour is varied and cumulative: dispossession gives way to wonder, arming to awe, the roar to dread, mass battle to an apparent victory, Mahishasura's arrival to renewed danger, the transformation sequence to concentrated suspense, and the hymn to calm gratitude. Short silences, petals, dust, music and the dimming lamp provide useful rests between large actions.",
+        "dimension": "emotional_rhythm",
+        "result": "PASS"
+      },
+      {
+        "assessment": "The source ending itself is complete and satisfying: death, celebration, hymn, worship, boon, agreement and disappearance all occur before the frame closes and before any hook. The literary ending then announces that completeness once too often at the start of THE NEXT FIRELIGHT. Trimming that single recap will preserve the gate while improving the cadence.",
+        "dimension": "ending",
+        "result": "FIX"
+      },
+      {
+        "assessment": "For family read-aloud and independent readers around age ten and above, the syntax is clear, unfamiliar names are introduced in context, and battlefield consequences are candid without lingering on gore. Questions from the listeners help younger readers track unity, apparent victory and remembrance. The sacred hymn is clearly attributed and the modern reflection is plainly labeled.",
+        "dimension": "family_readability",
+        "result": "PASS"
+      },
+      {
+        "assessment": "Repetition inside the main arc is usually purposeful: recurring flowers contrast interrupted and final victory, and the transformation sequence advances rather than recaps. The exception is the explicit four-part resolution summary under THE NEXT FIRELIGHT, which repeats the immediately preceding finished ending without adding emotion, image or causality.",
+        "dimension": "narrative_redundancy",
+        "result": "FIX"
+      },
+      {
+        "assessment": "The prose offers strong, varied visual units suitable for a 3:4 comic: intimate lamp-lit reactions, a widening cosmic manifestation, sequential gift portraits, a mounted hero image, wide army scale, bell and breath effects, petal-versus-weapon contrasts, dust-obscured buffalo attacks, discrete transformation panels, a half-emergence climax and incense-lit aftermath. Dense donor and chief sequences can be expanded across pages without inventing filler, and the narration/dialogue roles are distinct enough for later caption and balloon design.",
+        "dimension": "visual_adaptability",
+        "result": "PASS"
+      }
+    ],
+    "evidence_checks": [
+      {
+        "check": "OPENING_AND_FRAME_SCENES",
+        "evidence": "The opening question, Suratha's answer and Samadhi's extension create immediate relational interest. The two quoted meta-disclosures briefly interrupt that engagement; all other frame dialogue is clearly classified as non-verbatim KALPANA or DRISHTI in the claim and dialogue records.",
+        "result": "FIX",
+        "section_ids": [
+          "ch-01",
+          "ch-08",
+          "ch-09"
+        ]
+      },
+      {
+        "check": "MANIFESTATION_AND_ARMING_EXPERIENCE",
+        "event_ids": [
+          "dm-event-009",
+          "dm-event-010",
+          "dm-event-011",
+          "dm-event-012"
+        ],
+        "evidence": "The light first gathers, then takes bodily form, then receives weapons, adornment and mount before the roar. This creates escalating wonder and gives the many source-required details memorable visual and narrative grouping.",
+        "evidence_ids": [
+          "dm-evidence-009",
+          "dm-sanskrit-evidence-009",
+          "dm-evidence-010",
+          "dm-sanskrit-evidence-010",
+          "dm-evidence-011",
+          "dm-sanskrit-evidence-011",
+          "dm-evidence-012",
+          "dm-sanskrit-evidence-012"
+        ],
+        "result": "PASS",
+        "section_ids": [
+          "ch-01",
+          "ch-02",
+          "ch-03"
+        ]
+      },
+      {
+        "check": "ARMY_AND_COMMANDER_SCENES",
+        "event_ids": [
+          "dm-event-013",
+          "dm-event-014",
+          "dm-event-015",
+          "dm-event-016",
+          "dm-event-017",
+          "dm-event-018"
+        ],
+        "evidence": "Scale is established before the text narrows to Cikshura and Chamara, then compresses the remaining chiefs into two legible waves. The falling petals followed by Cikshura's entrance gives the prolonged battle a needed reversal rather than a flat catalogue.",
+        "evidence_ids": [
+          "dm-evidence-013",
+          "dm-sanskrit-evidence-013",
+          "dm-evidence-014",
+          "dm-evidence-015",
+          "dm-evidence-016",
+          "dm-sanskrit-evidence-016",
+          "dm-evidence-017",
+          "dm-sanskrit-evidence-017",
+          "dm-evidence-018",
+          "dm-sanskrit-evidence-018"
+        ],
+        "result": "PASS",
+        "section_ids": [
+          "ch-03",
+          "ch-04",
+          "ch-05"
+        ]
+      },
+      {
+        "check": "MAHISHASURA_REVERSAL_AND_CLIMAX",
+        "event_ids": [
+          "dm-event-019",
+          "dm-event-020",
+          "dm-event-021"
+        ],
+        "evidence": "The ground movement and interrupted flower shower prepare Mahishasura's entrance; the buffalo's physical power reverses the apparent victory; the noose creates a visual hinge; and each new form receives its own counter before the final half-emergence. The climax is specific, comprehensible and non-gratuitous.",
+        "evidence_ids": [
+          "dm-evidence-019",
+          "dm-sanskrit-evidence-019",
+          "dm-evidence-020",
+          "dm-evidence-021"
+        ],
+        "result": "PASS",
+        "section_ids": [
+          "ch-05",
+          "ch-06",
+          "ch-07"
+        ]
+      },
+      {
+        "check": "HYMN_REFLECTION_AND_HOOK",
+        "event_ids": [
+          "dm-event-022",
+          "dm-event-023"
+        ],
+        "evidence": "The attributed hymn, precise boon, disappearance and quiet forest return provide a genuine aftermath. The labeled modern reflection is appropriately separate. The hook is correctly placed after resolution, but its opening recap redundantly re-proves that placement instead of trusting the completed scene.",
+        "evidence_ids": [
+          "dm-evidence-022",
+          "dm-evidence-023"
+        ],
+        "result": "FIX",
+        "section_ids": [
+          "ch-08",
+          "ch-09"
+        ]
+      },
+      {
+        "check": "DM08_QUALITY_REFERENCE_ONLY",
+        "evidence": "Compared with the complete DM08 benchmark, v3 reaches the intended family-storybook qualities through a question-led frame, listener reactions, clear battle mechanics, a reflection and a next-book bridge. It does so with DM04's own locked events and does not reproduce DM08's Raktabija plot, dialogue or explanatory material.",
+        "result": "PASS"
+      },
+      {
+        "check": "LOCKED_BOUNDARY_SANITY",
+        "event_ids": [
+          "dm-event-008",
+          "dm-event-009",
+          "dm-event-010",
+          "dm-event-011",
+          "dm-event-012",
+          "dm-event-013",
+          "dm-event-014",
+          "dm-event-015",
+          "dm-event-016",
+          "dm-event-017",
+          "dm-event-018",
+          "dm-event-019",
+          "dm-event-020",
+          "dm-event-021",
+          "dm-event-022",
+          "dm-event-023"
+        ],
+        "evidence": "Every required event remains represented in order. New listener business, sensory transitions and reflection are explicitly classified as adaptation; the literary findings do not require any change to source facts, theology, identities or outcomes.",
+        "result": "PASS"
+      }
+    ],
+    "findings": [
+      {
+        "additional_bounded_excerpts": [
+          "In this telling, that is what you have noticed."
+        ],
+        "claim_ids": [
+          "claim-frame-a",
+          "claim-frame-samadhi"
+        ],
+        "code": "FRAME_META_DISCLOSURES_INTERRUPT_CHARACTER_VOICE",
+        "excerpt": "Their words in this retelling are part of the story's literary frame, not words quoted from scripture.",
+        "problem": "Both sentences step outside the scene to explain the adaptation while the characters are speaking. The opening disclaimer interrupts an otherwise inviting exchange around the lamp, and Medhas's final reply sounds like editorial risk language rather than a character-natural response to Samadhi's reflection. The dialogue metadata and final source note already disclose that these exchanges are adapted.",
+        "repair": "Remove the opening in-scene disclaimer and rely on the structured dialogue records and source note. At the close, either let Samadhi's line stand in silence or replace only Medhas's meta reply with a brief non-doctrinal gesture or acknowledgment. Do not add a new religious teaching, source claim, or moral.",
+        "section_ids": [
+          "ch-01",
+          "ch-08",
+          "beat-008",
+          "beat-023"
+        ],
+        "severity": "MODERATE"
+      },
+      {
+        "claim_ids": [
+          "claim-next-volume-frame"
+        ],
+        "code": "ENDING_RESOLUTION_RECAP_IS_REDUNDANT",
+        "excerpt": "The present story had fully ended: Mahishasura was dead, the hymn had been offered, the boon had been granted and Devi had disappeared.",
+        "problem": "Chapter 8 has already completed the death, hymn, boon, disappearance, quiet return to the hermitage and explicit statement that the buffalo king's story is finished. Restating all four closure facts immediately before the next-volume exchange reads like a compliance note and stalls the graceful firelight transition.",
+        "repair": "Delete only this recap sentence and begin THE NEXT FIRELIGHT with Suratha noticing the lamp or asking his question. Keep the next-volume hook after the completed Chapter 8 ending, retain the sourced Gauri transition, and do not move any hook material into the unresolved battle.",
+        "section_ids": [
+          "ch-09",
+          "beat-023"
+        ],
+        "severity": "MODERATE"
+      }
+    ],
+    "id": "editorial-review-f1202d9d4346c653a936252f",
+    "limitations": [
+      "This is an independent LITERARY_EXPERIENCE review of immutable DM04 manuscript v3 at hash b4256fcb2d4bf24a9c04559f59c3f0985101ef42c6299392b159fba5e41cfdcd against the locked Story Packet hash b784b365d9c921312285f453b4f6a4a15a7be935e2f0fdda6cfa8eba12797744.",
+      "This literary review does not certify or override source readiness, rights clearance, theological authority, iconographic accuracy, visual quality, PDF quality or publication readiness.",
+      "Visual adaptability assesses the manuscript's scene and panel potential only; no character bible, scene bible, page script, illustration or rendered page was reviewed.",
+      "The DM08 manuscript was used only as a literary-quality and collection-presentation reference, never as a source of DM04 facts, characters, dialogue or theology.",
+      "The locked packet remains narratively complete but atomically partial, and events 014-015 and 020-023 retain the recorded single-English-witness limitation; this review adds no critical-edition collation or blanket theological approval."
+    ],
+    "publication_readiness_certified": false,
+    "result": "FIX",
+    "review_hash": "051991f1a223430a5600a45bc3ff6165108379008e9f6bfdcaf1463cbff8c1ab",
+    "review_perspective": "LITERARY_EXPERIENCE",
+    "reviewed_dimensions": [
+      "action_narration_reflection_balance",
+      "character_engagement",
+      "collection_continuity",
+      "dialogue_and_emotional_progression",
+      "dialogue_quality",
+      "dramatic_scene_quality",
+      "emotional_rhythm",
+      "ending",
+      "family_readability",
+      "narrative_redundancy",
+      "visual_adaptability"
+    ],
+    "reviewed_manuscript_hash": "b4256fcb2d4bf24a9c04559f59c3f0985101ef42c6299392b159fba5e41cfdcd",
+    "reviewed_packet_hashes": [
+      "b784b365d9c921312285f453b4f6a4a15a7be935e2f0fdda6cfa8eba12797744"
+    ],
+    "reviewer": {
+      "attestation_scope": "ORCHESTRATOR_SESSION_RECORD_NOT_CRYPTOGRAPHIC_IDENTITY",
+      "capability_verified": true,
+      "execution_mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+      "id": "/root/dm04_family_editor",
+      "independent": true,
+      "provider_kind": "editorial_review",
+      "role": "family-editor"
+    },
+    "schema_version": "1.0",
+    "source_readiness_overridden": false
+  },
+  "schema_version": "1.0",
+  "version": 3
+}

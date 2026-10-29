@@ -1,0 +1,79 @@
+{
+  "book_id": "DM04",
+  "content_hash": "120b33c44370d992731ddc0e605c9d3f413cf3333964395052e58dfcce245d98",
+  "id": "production-campaign-requests-83ba3e11a6ac0223081be410",
+  "kind": "production-campaign-requests",
+  "parent_hash": "bffcc9959466f690cabf8126a4317c6b40f6c91c40c4e79f668639ca967b767f",
+  "payload": {
+    "approval_not_implied_by_request": true,
+    "approval_type": "PRODUCTION_CAMPAIGN",
+    "book_id": "DM04",
+    "campaign_id": "dm04-pr12-autonomous-multi-page-pilot-01",
+    "conditions_required": [
+      "PRIVATE_INTERNAL_ONLY",
+      "PUBLICATION_REMAINS_BLOCKED",
+      "BUILT_IN_CODEX_IMAGE_TOOL_ONLY",
+      "INCLUDED_ALLOWANCE_FIRST",
+      "NO_SEPARATELY_BILLED_API_OR_EXTERNAL_PROVIDER",
+      "NO_PURCHASED_CREDIT_CONSUMPTION_INTENDED",
+      "FIVE_OPERATIONS_TOTAL_CEILING",
+      "ONE_OPERATION_PER_UNIT_NO_AUTOMATIC_RETRY",
+      "PR6_AND_PR11_COUNTERS_UNCHANGED",
+      "EXACT_REFERENCE_RECEIPTS_REQUIRED",
+      "INDEPENDENT_ACTUAL_PIXEL_REVIEW_REQUIRED"
+    ],
+    "currency": "USD",
+    "maximum_paid_spend_minor_units": 0,
+    "milestone": "PR12",
+    "plan_record_hash": "4fca552229c9be91cabb50c322fd79b31094ca2a4ef86d539a2e18a30f1701c1",
+    "request_hash": "04a4a530823ccfe1f6b9830778e4e22ba536ebc1c717c50b248023b1f01c47d4",
+    "request_type": "PRODUCTION_CAMPAIGN_AUTHORIZATION",
+    "requested_authority": "PRIVATE_INTERNAL_VISUAL_TESTING_ONLY",
+    "requested_units": [
+      {
+        "maximum_operations": 1,
+        "operation": "edit",
+        "page_id": "page-27d143ae995bf60742b65c5b",
+        "panel_id": "p01-panel-02",
+        "unit_id": "page-27d143ae995bf60742b65c5b--p01-panel-02"
+      },
+      {
+        "maximum_operations": 1,
+        "operation": "generate",
+        "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+        "panel_id": "p13-panel-01",
+        "unit_id": "page-23e0e9cd9d4013ed03ae7e8c--p13-panel-01"
+      },
+      {
+        "maximum_operations": 1,
+        "operation": "generate",
+        "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+        "panel_id": "p13-panel-02",
+        "unit_id": "page-23e0e9cd9d4013ed03ae7e8c--p13-panel-02"
+      },
+      {
+        "maximum_operations": 1,
+        "operation": "generate",
+        "page_id": "page-5aca23381e148b472373cd8c",
+        "panel_id": "p14-panel-01",
+        "unit_id": "page-5aca23381e148b472373cd8c--p14-panel-01"
+      },
+      {
+        "maximum_operations": 1,
+        "operation": "generate",
+        "page_id": "page-54d61ef5bfcb1159088ac489",
+        "panel_id": "p23-panel-01",
+        "unit_id": "page-54d61ef5bfcb1159088ac489--p23-panel-01"
+      }
+    ],
+    "schema_version": "1.0",
+    "scope": {
+      "id": "DM04",
+      "type": "book"
+    },
+    "subject_hash": "fd9864465aebf8e0c121f72ce8a4249d08af372a48829ab926b0a223e6956b21",
+    "subject_type": "PRODUCTION_CAMPAIGN"
+  },
+  "schema_version": "1.0",
+  "version": 3
+}

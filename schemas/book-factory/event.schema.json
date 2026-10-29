@@ -1,0 +1,20 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/event.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "action": {"type": "string"},
+    "book_id": {"type": "string"},
+    "id": {"type": "string"},
+    "input_hashes": {"items": {"type": "string"}, "type": "array"},
+    "output_hashes": {"items": {"type": "string"}, "type": "array"},
+    "policy_hashes": {"items": {"type": "string"}, "type": "array"},
+    "sequence": {"minimum": 1, "type": "integer"},
+    "state_snapshot": {"type": "object"},
+    "timestamp": {"type": "string"},
+    "to": {"type": "string"}
+  },
+  "required": ["id", "sequence", "book_id", "action", "to", "timestamp", "input_hashes", "output_hashes", "policy_hashes", "state_snapshot"],
+  "title": "State transition event",
+  "type": "object"
+}

@@ -1,0 +1,214 @@
+{
+  "character_ids": [
+    "dm-yoganidra",
+    "dm-vishnu",
+    "dm-brahma",
+    "dm-shesha",
+    "dm-madhu",
+    "dm-kaitabha"
+  ],
+  "continuity_in": "after-page-10",
+  "continuity_out": "after-page-11",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-yoganidra",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "manifestation_id": "dm-yoganidra-before-brahma",
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-vishnu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-brahma",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-shesha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "manifestation_id": "dm-shesha-supporting-form",
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-madhu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-kaitabha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-006"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "immersive hold",
+    "type": "FULL_PAGE"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p11-narration",
+      "placement": "caption-safe-region",
+      "text": "Yoganidra withdrew from Vishnu’s eyes, mouth and nose; from his arms, heart and breast.\n\nThe power that had held Vishnu in cosmic sleep now appeared before Brahma.\n\nFor one suspended moment, the whole scene had changed without the waters changing at all. Brahma remained upon the lotus. Madhu and Kaitabha remained near. Shesha still bore Vishnu above the flood."
+    }
+  ],
+  "location_id": "dm02-yoganidra-manifestation-space",
+  "moment_ids": [
+    "yoganidra_leaves_vishnu"
+  ],
+  "narrative_beats": [
+    "Yoganidra withdrew from Vishnu’s eyes, mouth and nose; from his arms, heart and breast.",
+    "The power that had held Vishnu in cosmic sleep now appeared before Brahma.",
+    "For one suspended moment, the whole scene had changed without the waters changing at all. Brahma remained upon the lotus. Madhu and Kaitabha remained near. Shesha still bore Vishnu above the flood."
+  ],
+  "page_id": "page-b85332e92940926f67e6dd9d",
+  "page_number": 11,
+  "panel_count": 1,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-yoganidra",
+        "dm-vishnu",
+        "dm-brahma",
+        "dm-shesha",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "composition": "Full-page exact-locus withdrawal map: distinct radiance leaves Viṣṇu's eyes, mouth, nose, arms, heart and breast, then gathers as a separate appeared presence before Brahmā; keep all six groups readable, modest and non-anatomical, with no seventh locus or permanent-residence implication.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p11-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Full-page exact-locus withdrawal map: distinct radiance leaves Viṣṇu's eyes, mouth, nose, arms, heart and breast, then gathers as a separate appeared presence before Brahmā; keep all six groups readable, modest and non-anatomical, with no seventh locus or permanent-residence implication.",
+        "shot_scale": "wide"
+      },
+      "location_id": "dm02-yoganidra-manifestation-space",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p11-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Full-page exact-locus withdrawal map: distinct radiance leaves Viṣṇu's eyes, mouth, nose, arms, heart and breast, then gathers as a separate appeared presence before Brahmā; keep all six groups readable, modest and non-anatomical, with no seventh locus or permanent-residence implication."
+    }
+  ],
+  "reading_order": [
+    "p11-panel-01"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p11-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-006-a"
+  ],
+  "title": "When Sleep Stood Apart",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation",
+    "no unsupported iconography",
+    "no unsupported body-locus claim"
+  ],
+  "version": 1,
+  "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+}

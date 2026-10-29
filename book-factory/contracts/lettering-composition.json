@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "khatakshetra-lettering-composition-v1",
+  "canvas": {"aspect_ratio": "3:4", "pixel_width": 1086, "pixel_height": 1448},
+  "coordinate_system": "normalized page coordinates from 0.0 to 1.0, origin at top-left",
+  "artwork": {
+    "permanent_text": false,
+    "required_outputs": ["clean scene artwork", "panel geometry", "text-safe regions", "speaker-tail anchors", "ornamental framing instructions"]
+  },
+  "panel_geometry_fields": ["panel_id", "x", "y", "width", "height", "reading_order", "bleed_edges", "crop_priority"],
+  "text_geometry_fields": ["lettering_id", "channel", "x", "y", "width", "height", "speaker_id", "tail_anchor", "exact_text", "minimum_reading_size_check"],
+  "speaker_tail_anchor_fields": ["speaker_id", "x", "y", "target_feature", "must_remain_inside_panel"],
+  "frame_instructions": {
+    "outer_ground": "#071F35",
+    "ornament": ["#D8AC4E", "#F0CF76"],
+    "caption_surface": "#F6E8C6",
+    "speech_surface": "#FFF9EF",
+    "ink": "#251C18",
+    "panel_number": "#692019"
+  },
+  "layout_rules": [
+    "Use the exact approved dialogue and narration records after artwork generation.",
+    "Dialogue-heavy pages define panel and balloon geometry before generation.",
+    "A full-page immersive scene uses only the actual locked page lettering; it is not rejected for failing an arbitrary generic top-mask rule.",
+    "Do not shrink a major character or manifestation solely to manufacture blank space.",
+    "Inspect the final composed page at actual reading size."
+  ],
+  "dm04_recovery_geometry": {
+    "page-1-panel-2": {
+      "production_unit": "PANEL_ILLUSTRATION",
+      "panel": {"panel_id": "p01-panel-02", "x": 0.05, "y": 0.30, "width": 0.90, "height": 0.62, "reading_order": 2, "bleed_edges": [], "crop_priority": "faces and speaking gesture"},
+      "text": [
+        {"lettering_id": "p01-dialogue", "channel": "DIALOGUE", "x": 0.50, "y": 0.34, "width": 0.40, "height": 0.20, "speaker_id": "dm-medhas", "tail_anchor": {"speaker_id": "dm-medhas", "x": 0.72, "y": 0.60, "target_feature": "speaking hand and face", "must_remain_inside_panel": true}, "exact_text": "What remains of a kingdom when every gate still stands, every throne is occupied—and yet none of its rightful guardians can return?", "minimum_reading_size_check": "REQUIRED"}
+      ]
+    },
+    "page-4-full": {
+      "production_unit": "FULL_PAGE_IMMERSIVE",
+      "panel": {"panel_id": "p04-panel-01", "x": 0.04, "y": 0.18, "width": 0.92, "height": 0.76, "reading_order": 1, "bleed_edges": ["left", "right", "bottom"], "crop_priority": "complete Devī silhouette and distinguishable radiance streams"},
+      "text": [
+        {"lettering_id": "p04-narration", "channel": "NARRATION", "x": 0.07, "y": 0.05, "width": 0.86, "height": 0.12, "speaker_id": null, "tail_anchor": null, "exact_text": "Śiva's radiance forms her face; Yama's her hair; Viṣṇu's her arms; the Moon's her breast; Indra's her waist; Varuṇa's her thighs and legs; Earth's her hips; Brahmā's her feet; sunlight her toes; the Vasus her fingers; Kubera her nose; Prajāpati her teeth; Agni her eyes; the twilights her brows; Vāyu her ears.", "minimum_reading_size_check": "REQUIRED; split into a designed source inset if the exact text does not fit"}
+      ]
+    },
+    "page-17-panel-1": {
+      "production_unit": "PANEL_ILLUSTRATION",
+      "panel": {"panel_id": "p17-panel-01", "x": 0.05, "y": 0.18, "width": 0.90, "height": 0.34, "reading_order": 1, "bleed_edges": [], "crop_priority": "opposing arrow vectors and both shooters"},
+      "text": [
+        {"lettering_id": "p17-narration", "channel": "NARRATION", "x": 0.07, "y": 0.05, "width": 0.86, "height": 0.10, "speaker_id": null, "tail_anchor": null, "exact_text": "Devī answers Cikṣura's arrows, then his horses, driver, bow and banner fall from the fight.", "minimum_reading_size_check": "REQUIRED"}
+      ]
+    },
+    "page-29-full": {
+      "production_unit": "FULL_PAGE_IMMERSIVE",
+      "panel": {"panel_id": "p29-panel-01", "x": 0.04, "y": 0.16, "width": 0.92, "height": 0.78, "reading_order": 1, "bleed_edges": ["left", "right", "bottom"], "crop_priority": "neck pin, half-emergence, trident contact and sword-at-neck action"},
+      "text": [
+        {"lettering_id": "p29-narration", "channel": "NARRATION", "x": 0.07, "y": 0.05, "width": 0.86, "height": 0.09, "speaker_id": null, "tail_anchor": null, "exact_text": "Devī leaps, pins his neck, strikes with the trident and beheads the half-emerged Asura without graphic emphasis.", "minimum_reading_size_check": "REQUIRED"}
+      ]
+    }
+  }
+}

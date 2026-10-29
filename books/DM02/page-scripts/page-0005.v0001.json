@@ -1,0 +1,275 @@
+{
+  "character_ids": [
+    "dm-vishnu",
+    "dm-shesha",
+    "dm-brahma",
+    "dm-yoganidra"
+  ],
+  "continuity_in": "after-page-04",
+  "continuity_out": "after-page-05",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-vishnu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-shesha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "manifestation_id": "dm-shesha-supporting-form",
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-brahma",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-yoganidra",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "manifestation_id": "dm-yoganidra-cosmic-sleep",
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-004"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "THREE_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p05-narration-a",
+      "placement": "caption-safe-region",
+      "text": "From him rose a lotus, and upon that lotus sat Brahma."
+    },
+    {
+      "channel": "NARRATION",
+      "id": "p05-narration-b",
+      "placement": "caption-safe-region",
+      "text": "The flower stood above the waters like the single open eye of a world not yet remade. Brahma had no ground beneath him—only the lotus, Vishnu below, and the unbroken flood beyond."
+    },
+    {
+      "channel": "NARRATION",
+      "id": "p05-narration-c",
+      "placement": "caption-safe-region",
+      "text": "Vishnu slept.\n\nThe waters waited.\n\nAnd in that stillness, danger appeared."
+    }
+  ],
+  "location_id": "dm02-brahma-lotus",
+  "moment_ids": [],
+  "narrative_beats": [
+    "From him rose a lotus, and upon that lotus sat Brahma.",
+    "The flower stood above the waters like the single open eye of a world not yet remade. Brahma had no ground beneath him—only the lotus, Vishnu below, and the unbroken flood beyond.",
+    "Vishnu slept.",
+    "The waters waited.",
+    "And in that stillness, danger appeared."
+  ],
+  "page_id": "page-2e96a0bca25ea33924a24fde",
+  "page_number": 5,
+  "panel_count": 3,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-shesha",
+        "dm-brahma",
+        "dm-yoganidra"
+      ],
+      "composition": "Vertical establishing panel: the lotus rises from Viṣṇu to lotus-seated Brahmā while Śeṣa remains visibly below; do not add a temple, throne room or invented island.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p05-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Vertical establishing panel: the lotus rises from Viṣṇu to lotus-seated Brahmā while Śeṣa remains visibly below; do not add a temple, throne room or invented island.",
+        "shot_scale": "wide"
+      },
+      "location_id": "dm02-brahma-lotus",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p05-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Vertical establishing panel: the lotus rises from Viṣṇu to lotus-seated Brahmā while Śeṣa remains visibly below; do not add a temple, throne room or invented island."
+    },
+    {
+      "character_ids": [
+        "dm-brahma"
+      ],
+      "composition": "Medium lotus-level view of Brahmā with only flood beyond; exact head and arm counts remain source-silent and no conventional multiplicity is asserted.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p05-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Medium lotus-level view of Brahmā with only flood beyond; exact head and arm counts remain source-silent and no conventional multiplicity is asserted.",
+        "shot_scale": "medium"
+      },
+      "location_id": "dm02-brahma-lotus",
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p05-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Medium lotus-level view of Brahmā with only flood beyond; exact head and arm counts remain source-silent and no conventional multiplicity is asserted."
+    },
+    {
+      "character_ids": [],
+      "composition": "Narrow closing panel of still water and a dark approaching interval, carrying danger without yet revealing invented detail.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p05-panel-03",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Narrow closing panel of still water and a dark approaching interval, carrying danger without yet revealing invented detail.",
+        "shot_scale": "wide"
+      },
+      "location_id": "dm02-brahma-lotus",
+      "reading_order": 3,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p05-panel-03-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Narrow closing panel of still water and a dark approaching interval, carrying danger without yet revealing invented detail."
+    }
+  ],
+  "reading_order": [
+    "p05-panel-01",
+    "p05-panel-02",
+    "p05-panel-03"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p05-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-004-b",
+    "claim-004-d"
+  ],
+  "title": "The Lotus Above the Flood",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation",
+    "no unsupported iconography",
+    "no unsupported body-locus claim"
+  ],
+  "version": 1,
+  "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+}

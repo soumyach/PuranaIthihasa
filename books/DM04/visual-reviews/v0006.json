@@ -1,0 +1,149 @@
+{
+  "book_id": "DM04",
+  "content_hash": "a61cb9292f1473bee6d50739e859fcdd100022ab06fedda3ec701cfb0401f026",
+  "id": "visual-reviews-e5cb147570f9585aab96c061",
+  "kind": "visual-reviews",
+  "parent_hash": "8036e94b9ad8d2b6402cbd686c1ac261679483028496337a8d627769d38bd38a",
+  "payload": {
+    "actual_pixels_inspected": true,
+    "approval_claimed": false,
+    "book_id": "DM04",
+    "dimension_assessments": [
+      {
+        "dimension": "source_fidelity",
+        "findings": [
+          "The donor-to-body stream map is now substantially readable, but Devī is rendered as an ordinary fixed two-armed figure, contrary to the locked character rule that non-event-012 pages may foreground needed arms but must still imply her many-armed identity."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "religious_iconography",
+        "findings": [
+          "Devī is reduced to a fixed ordinary two-arm form, and the donor portraits use large disk halos despite the locked prohibition on unsourced halo symbolism."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "character_identity",
+        "findings": [
+          "The central figure does not preserve Devī's locked many-armed identity; the donor identities are otherwise differentiated and the prior lion is removed."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "limbs",
+        "findings": [
+          "Only two arms are shown with no visual implication of the required many-armed identity."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "weapons_and_mounts",
+        "findings": [
+          "Devī's prior weapon array and lion are removed, but event-010-style donor equipment and unrequested mounts remain visible, including Yama's rod, Indra's elephant and Sūrya's horse chariot, while the locked page-4 continuity records no equipment for these figures."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "anatomy",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "composition",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "environmental_consistency",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "cropping_and_clipping",
+        "findings": [
+          "Several required donor portraits are cut by the left canvas edge, including portions of the Viṣṇu and Indra groupings, weakening complete donor readability."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "lighting_and_color",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "series_identity",
+        "findings": [],
+        "result": "PASS"
+      },
+      {
+        "dimension": "scripted_page_suitability",
+        "findings": [
+          "The body-correspondence narration is much better supported, but the fixed two-arm Devī and later-stage donor equipment keep the image from satisfying the locked manifestation page as-is."
+        ],
+        "result": "FIX"
+      },
+      {
+        "dimension": "lettering_safe_regions",
+        "findings": [
+          "The exact x=0.08..0.92, y=0.06..0.24 rectangle is occupied across its lower portion by Shiva and Yama portraits, luminous disks, clouds and donor radiance."
+        ],
+        "result": "FIX"
+      }
+    ],
+    "findings": [
+      {
+        "code": "DEVI_MANY_ARMED_IDENTITY_LOST",
+        "dimension": "limbs",
+        "message": "Retain the successful donor/body stream map while implying Devī's many-armed identity rather than depicting a fixed ordinary two-arm form."
+      },
+      {
+        "code": "UNSOURCED_HALO_SYMBOLISM",
+        "dimension": "religious_iconography",
+        "message": "Replace the large portrait disks with restrained source-bounded radiance that does not read as added halo iconography."
+      },
+      {
+        "code": "LATER_STAGE_DONOR_EQUIPMENT_REMAINS",
+        "dimension": "weapons_and_mounts",
+        "message": "Keep this page on body formation only; remove donor weapons and unrequested mounts/chariots from the event-009 proof."
+      },
+      {
+        "code": "LETTERING_SAFE_REGION_STILL_OCCUPIED",
+        "dimension": "lettering_safe_regions",
+        "message": "Move all portraits, clouds and radiance below y=0.24 within x=0.08..0.92."
+      }
+    ],
+    "id": "visual-review-22064fe90d3bb08297c1ec91",
+    "image": {
+      "aspect_ratio": "3:4",
+      "bytes": 3262186,
+      "format": "PNG",
+      "height": 1448,
+      "integrity": "PASS_CRC_AND_PIXEL_STREAM",
+      "path": "books/DM04/illustration-proofs/images/dm04-proof-divine-reveal/attempt-02-21af6bf894e1abc6.png",
+      "readable": true,
+      "sha256": "21af6bf894e1abc6d63f6d797ccebebda569e65f372658ff4cc126164f3a7139",
+      "width": 1086
+    },
+    "page_id": "page-5316f7271234e4ab31991528",
+    "producer": {
+      "id": "codex-native-image-tool",
+      "role": "illustration"
+    },
+    "proof_id": "dm04-proof-divine-reveal",
+    "proof_spec_hash": "3d882c732da466ab49daadfe1e4c15b14d422fbe7dd742c4b39f36cc3a07f323",
+    "request_hash": "2fd1528aa9d0bdb927a21eadb998c5a229ff06df381e08bc13f2fb0a643a4685",
+    "result": "FIX",
+    "review_hash": "7b40da0afef3e8aa65d6b84ae7f7a284960bf76a1fed212131f3e245c40c22d6",
+    "reviewed_at": "2026-10-16T17:09:13Z",
+    "reviewer": {
+      "capability_verified": true,
+      "execution_mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+      "id": "/root/dm04_visual_preproduction",
+      "role": "typesetter-independent-qa"
+    },
+    "schema_version": "1.0"
+  },
+  "schema_version": "1.0",
+  "version": 6
+}

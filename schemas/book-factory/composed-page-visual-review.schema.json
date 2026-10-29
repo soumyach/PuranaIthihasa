@@ -1,0 +1,17 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/composed-page-visual-review.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Independent composed-page visual review",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "string"},
+    "book_id": {"type": "string"},
+    "page_id": {"type": "string"},
+    "rendered_page_hash": {"type": "string"},
+    "reviewer": {"type": "object"},
+    "assessments": {"type": "object"},
+    "findings": {"type": "array", "items": {"type": "object"}}
+  },
+  "required": ["schema_version", "book_id", "page_id", "rendered_page_hash", "reviewer", "assessments", "findings"]
+}

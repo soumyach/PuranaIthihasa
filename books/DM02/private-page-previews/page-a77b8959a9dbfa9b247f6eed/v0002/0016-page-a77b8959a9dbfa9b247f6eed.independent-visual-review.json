@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "page_id": "page-a77b8959a9dbfa9b247f6eed",
+  "page_number": 16,
+  "review_scope": "COMPOSED_PRIVATE_PREVIEW_ONLY",
+  "reviewer": {
+    "id": "/root/dm02_corrective_pixel_reviewer",
+    "role": "INDEPENDENT_ACTUAL_PIXEL_VISUAL_REVIEWER",
+    "image_capable": true,
+    "independent_of_composer": true,
+    "actual_pixels_inspected": true,
+    "inspection_resolution": "1086x1448 ORIGINAL",
+    "files_modified": false
+  },
+  "composed_png": {
+    "path": "books/DM02/private-page-previews/page-a77b8959a9dbfa9b247f6eed/v0002/0016-page-a77b8959a9dbfa9b247f6eed.png",
+    "sha256": "49d83e04121a31f2beaaee0bf7aa7e7cb21b41e62c8fc11196cf0a1dd515e7cb",
+    "dimensions": [
+      1086,
+      1448
+    ]
+  },
+  "overall_verdict": "PASS",
+  "private_pdf_proof_eligible": true,
+  "publication_eligible": false,
+  "new_pixels_required": false,
+  "blocking_findings": [],
+  "evidence": "The exact long narration is isolated above two complete panels; alternating pressure and the three-figure reversal remain readable.",
+  "scope_limitations": [
+    "PRIVATE_PREVIEW_COMPOSITION_ONLY",
+    "NO_PUBLICATION_APPROVAL",
+    "NO_CANONICAL_REFERENCE_PROMOTION",
+    "NO_PAGE_11_OR_THEOLOGICAL_APPROVAL"
+  ]
+}

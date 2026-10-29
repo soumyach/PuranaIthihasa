@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "visual-gold-standard.schema.json",
+  "type": "object",
+  "required": ["schema_version", "standard_id", "status", "source_assets", "coverage", "extraction", "pages"],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0"},
+    "standard_id": {"type": "string", "minLength": 1},
+    "status": {"type": "string", "const": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY"},
+    "source_assets": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "object"}},
+    "coverage": {"type": "object"},
+    "extraction": {"type": "object"},
+    "pages": {"type": "array", "minItems": 8, "maxItems": 8, "items": {"type": "object"}}
+  }
+}

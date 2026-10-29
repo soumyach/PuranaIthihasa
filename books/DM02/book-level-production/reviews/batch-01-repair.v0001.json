@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "campaign_id": "dm02-book-level-private-production-v0001",
+  "authorization_subject_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+  "batch_id": "dm02-book-level-batch-01-repair",
+  "review_date": "2026-10-23",
+  "review_method": "INDEPENDENT_ACTUAL_PIXEL_REVIEW",
+  "reviewer": {
+    "agent": "/root/dm02_corrective_pixel_reviewer",
+    "image_capable": true,
+    "independent_of_producer": true,
+    "files_modified": false
+  },
+  "unit_id": "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-02",
+  "path": "books/DM02/book-level-production/images/p14-panel-02/v0002.png",
+  "sha256": "0c8dd39c7473bd934b005e6342cd1e859b116a31cd7fd76e9ba054fc7f8af125",
+  "dimensions": [1086, 1448],
+  "actual_pixels_inspected": true,
+  "result": "PASS",
+  "assessments": {
+    "safe_rectangle": "PASS — normalized x=0.08..0.92, y=0.06..0.24 (approximately x=87..999, y=87..348) contains only nonessential dark star field, blue-nebula texture and small stars; no head, crown, hair, limb, costume, large flare or wave enters it.",
+    "source_fidelity_and_action": "PASS — exactly three combatants; taller Kaitabha closes from the side, two-arm weaponless Vishnu turns and checks his forearm, and broad low Madhu remains separate opposite; no defeat, injury or new event.",
+    "identity_continuity": "PASS_WITH_PROPOSAL_ONLY_SCOPE — the established noncanonical value structures, body types and Page 14 continuity are preserved.",
+    "anatomy": "PASS — readable grapple, hands, shoulders, torsos and legs; no merged silhouette, duplicated limb or malformed focal hand.",
+    "environment": "PASS — wave-ringed apparently shallow but unbounded cosmic water; no shore, island, cliff, structure or terrestrial landmark.",
+    "lighting_and_iconography": "PASS_WITH_PRIVATE_ENVIRONMENTAL_LIGHTING_CAVEAT — the broad scene-wide gold horizon/nebular light is not a bounded head-attached halo; no theological certification is asserted.",
+    "cultural_authenticity_and_family_suitability": "PASS — classical draped garments, restrained epic ornament and non-graphic action.",
+    "gold_standard_alignment": "PASS — premium painterly finish, jewel-toned contrast, foreground action hierarchy and cinematic depth without transferring the reference cast or theology.",
+    "lettering_compatibility": "PASS — no embedded text or watermark; the complete safe band can accept an opaque editable plaque without obscuring story content."
+  },
+  "private_composition_eligible": true,
+  "unit_operation_count": 2,
+  "unit_operation_limit_reached": true,
+  "additional_repair_proposed_or_authorized": false,
+  "scope_limitations": [
+    "No theological certification",
+    "No publication approval",
+    "No canonical character-reference promotion"
+  ]
+}

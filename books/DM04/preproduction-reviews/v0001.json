@@ -1,0 +1,100 @@
+{
+  "book_id": "DM04",
+  "content_hash": "1bd7617c202a64ae1d48dcf7b11e1779d6b2c18ceda6ce3e681a54500f3c6790",
+  "id": "preproduction-reviews-1c48ef782a2fc59a348191ba",
+  "kind": "preproduction-reviews",
+  "parent_hash": null,
+  "payload": {
+    "book_id": "DM04",
+    "component_hashes": {
+      "character_bible": "f406ee38f74084d5ab6e84dedb5e017c64d618119440d1e8671d073d4776498f",
+      "location_bible": "6a953cd210d8055ea52fc64be060ededfa341798e00e49a6bbc044038116bbdf",
+      "proof_specs": "4b6e13a5d966564292d297cc8fdb3a57652d0d59ee3db0cc1d7562b8a5774b06",
+      "storyboard": "c15d41a1ebee807ff432adcd744eb81219955054f1d436dbf61c241926d69267",
+      "typography": "46832af92ce5da4f5b71bacfeb03375485edfa5c27d9c6aed425fb85b903e60d"
+    },
+    "component_reports": [
+      {
+        "created_at": "2026-10-16T16:10:05Z",
+        "findings": [],
+        "gate": "CHARACTER_BIBLE",
+        "id": "qa-093ce52a1bd689a5a8496796",
+        "result": "PASS",
+        "schema_version": "1.0",
+        "subject_id": "DM04"
+      },
+      {
+        "created_at": "2026-10-16T16:10:05Z",
+        "findings": [],
+        "gate": "LOCATION_BIBLE",
+        "id": "qa-9d152af8b7f352bc10f5d9d4",
+        "result": "PASS",
+        "schema_version": "1.0",
+        "subject_id": "DM04"
+      },
+      {
+        "created_at": "2026-10-16T16:10:05Z",
+        "findings": [],
+        "gate": "STORYBOARD",
+        "id": "qa-85ab3f79a2f839c81b0a4b03",
+        "result": "PASS",
+        "schema_version": "1.0",
+        "subject_id": "DM04"
+      },
+      {
+        "created_at": "2026-10-16T16:10:05Z",
+        "findings": [],
+        "gate": "TYPOGRAPHY",
+        "id": "qa-eb04e4e289a7e231dd1e55a6",
+        "result": "PASS",
+        "schema_version": "1.0",
+        "subject_id": "DM04"
+      },
+      {
+        "created_at": "2026-10-16T16:10:05Z",
+        "findings": [],
+        "gate": "PROOF_SPECS",
+        "id": "qa-74350f97de7d1e1e827534f5",
+        "result": "PASS",
+        "schema_version": "1.0",
+        "subject_id": "DM04"
+      }
+    ],
+    "images_generated": false,
+    "manuscript_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+    "pdf_generated": false,
+    "publication_readiness_certified": false,
+    "result": "PASS",
+    "review_kind": "DETERMINISTIC_SPECIFICATION_REVIEW",
+    "reviewer": {
+      "capability_verified": true,
+      "execution_mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+      "id": "/root",
+      "role": "art-iconography-orchestrator"
+    },
+    "schema_version": "1.0",
+    "semantic_visual_approval_claimed": false,
+    "semantic_visual_review": {
+      "book_id": "DM04",
+      "executed": false,
+      "image_inputs": [],
+      "proof_package_hash": "a55f88458133bfacdd77c9afd5dd03987adeff7287aa718d194bf44c0dcb359c",
+      "reason": "No configured visual-evaluation backend and/or no rendered proof images.",
+      "request_hash": "286ed335f2729d2a79b1758a604aab84444e66b7864a4222999956b5f951c451",
+      "required_dimensions": [
+        "iconographic_accuracy",
+        "hands_and_anatomy",
+        "character_continuity",
+        "facial_consistency",
+        "scene_correctness",
+        "clipped_artwork",
+        "lettering_readability"
+      ],
+      "required_reviewer_kind": "visual_evaluation",
+      "schema_version": "1.0",
+      "status": "BLOCKED_PROVIDER"
+    }
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

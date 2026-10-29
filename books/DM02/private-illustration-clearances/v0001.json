@@ -1,0 +1,54 @@
+{
+  "book_id": "DM02",
+  "content_hash": "3983a90dc72dedcc8510290357dccdfc3d562b2d622b3a09680fc19f38745653",
+  "id": "private-illustration-clearances-1b89f2677ebfc26dd6b3a967",
+  "kind": "private-illustration-clearances",
+  "parent_hash": null,
+  "payload": {
+    "approver": {
+      "authority": [
+        "PRIVATE_INTERNAL_VISUAL_TESTING"
+      ],
+      "id": "human-user-current-session-dm02-visual-proof",
+      "identity_claim": "The human user directly authorized exactly four private DM02 visual-proof operations in the current Codex thread.",
+      "signature_claimed": false
+    },
+    "authorization_subject_hash": "022e685794c7a807a2850c0522791db72944f52e785355b0f396d7ea4e49ee69",
+    "authorized_panel_ids": [
+      "p01-panel-01",
+      "p11-panel-01",
+      "p14-panel-01",
+      "p21-panel-01"
+    ],
+    "book_id": "DM02",
+    "campaign_hash": "0465f0111d3fac1729014bb95ac5247e417aaf3429672ebc5f69e79f18fdac1e",
+    "conditions": [
+      "BUILT_IN_CODEX_IMAGE_TOOL_ONLY",
+      "EXACT_REFERENCE_RECEIPTS_REQUIRED",
+      "FOUR_OPERATIONS_TOTAL_CEILING",
+      "INCLUDED_ALLOWANCE_FIRST",
+      "INDEPENDENT_ACTUAL_PIXEL_REVIEW_REQUIRED",
+      "NO_PURCHASED_CREDIT_CONSUMPTION_INTENDED",
+      "NO_SEPARATELY_BILLED_API_OR_EXTERNAL_PROVIDER",
+      "ONE_OPERATION_PER_UNIT_NO_AUTOMATIC_RETRY",
+      "PRIVATE_ILLUSTRATION_CLEARANCE_EXPLICIT",
+      "PRIVATE_INTERNAL_ONLY",
+      "PUBLICATION_REMAINS_BLOCKED",
+      "REMAINING_THIRTY_ONE_INITIAL_OPERATIONS_NOT_AUTHORIZED"
+    ],
+    "decision": "PASS",
+    "full_book_generation_authorized": false,
+    "maximum_image_operations": 4,
+    "pdf_authorized": false,
+    "provider_id": "codex-built-in-image-gen",
+    "publication_authorized": false,
+    "purpose": "BOUNDED_PRIVATE_INTERNAL_ILLUSTRATION_TEST",
+    "recorded_at": "2026-10-22T12:06:40Z",
+    "retries_authorized": false,
+    "schema_version": "1.0",
+    "user_authorization_evidence_path": "/Users/vellankisriharsha/.codex/attachments/cda938d5-3e77-440b-82cd-f900d40cba18/Pasted text.txt",
+    "user_authorization_evidence_sha256": "69f90da6f42b70ee277fb77d70a07ecfc8d244246c86bf3f02660f075b7f22f5"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

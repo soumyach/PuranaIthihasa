@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "khatakshetra-page-local-recovery-pr9",
+  "routes": {
+    "WRONG_BALLOON_PLACEMENT": "LETTERING_REPAIR",
+    "TEXT_OVERFLOW": "LETTERING_REPAIR",
+    "INCORRECT_CROP": "CROP_ADJUSTMENT",
+    "INCORRECT_ARTWORK": "LOCAL_IMAGE_EDIT_OR_REGENERATION",
+    "WRONG_CHARACTER_APPEARANCE": "LOCAL_IMAGE_EDIT_OR_REGENERATION",
+    "INCORRECT_ICONOGRAPHY": "LOCAL_IMAGE_EDIT_OR_REGENERATION",
+    "CULTURAL_AUTHENTICITY_FAILURE": "LOCAL_IMAGE_EDIT_OR_REGENERATION",
+    "MISSING_PANEL": "PANEL_REGENERATION",
+    "FAILED_PDF_PAGE": "PAGE_PDF_REEXPORT",
+    "INTERRUPTED_GENERATION": "RESUME_SAME_JOB_ID",
+    "EXPIRED_OR_INVALID_APPROVAL": "REAPPROVAL"
+  },
+  "invariants": ["preserve unaffected pages", "preserve every approved prior image and page version", "never reset retry counters", "invalidate only actual hash dependents"]
+}

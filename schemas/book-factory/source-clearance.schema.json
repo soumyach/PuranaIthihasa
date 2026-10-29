@@ -1,0 +1,22 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/source-clearance.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {"const": "1.0", "type": "string"},
+    "book_id": {"type": "string"},
+    "dossier_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "packet_hashes": {"items": {"pattern": "^[0-9a-f]{64}$", "type": "string"}, "minItems": 1, "type": "array"},
+    "graph_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "private_draft_gate": {"const": "PRIVATE_DRAFT_PERMITTED_PUBLICATION_BLOCKED", "type": "string"},
+    "publication_gate": {"const": "BLOCKED", "type": "string"},
+    "rights_determination": {"type": "object"},
+    "independent_source_review": {"type": "object"},
+    "limitations": {"items": {"type": "string"}, "type": "array"},
+    "clearance_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "id": {"type": "string"}
+  },
+  "required": ["schema_version", "book_id", "dossier_hash", "packet_hashes", "graph_hash", "private_draft_gate", "publication_gate", "rights_determination", "independent_source_review", "limitations", "clearance_hash", "id"],
+  "title": "Private-draft source clearance",
+  "type": "object"
+}

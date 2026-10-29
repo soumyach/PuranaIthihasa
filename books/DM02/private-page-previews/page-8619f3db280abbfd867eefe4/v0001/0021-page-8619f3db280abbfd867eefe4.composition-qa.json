@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "page_id": "page-8619f3db280abbfd867eefe4",
+  "page_number": 21,
+  "review_scope": "COMPOSED_PRIVATE_PREVIEW_ONLY",
+  "actual_pixels_inspected": true,
+  "inspection_resolution": "1086x1448 ORIGINAL",
+  "reviewer": {
+    "id": "codex-root-composer-qa",
+    "independent_of_composer": false,
+    "independent_of_original_image_producer": true,
+    "capability_limit": "This is composition-level actual-pixel QA, not an independent semantic approval, theological certification or publication approval."
+  },
+  "inputs": {
+    "source_image_path": "books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png",
+    "source_image_sha256": "c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d",
+    "independent_source_pixel_review_path": "books/DM02/visual-proof-reviews/p21-panel-01/v0002.json",
+    "independent_source_pixel_review_result": "PASS",
+    "composition_path": "books/DM02/private-page-previews/page-8619f3db280abbfd867eefe4/v0001/0021-page-8619f3db280abbfd867eefe4.composition.json",
+    "composition_hash": "bc61b13df29fb36f41cf0b2766f5ea52ae9ac828d872a44ba9ff9cd6adff8f74",
+    "rendered_png_path": "books/DM02/private-page-previews/page-8619f3db280abbfd867eefe4/v0001/0021-page-8619f3db280abbfd867eefe4.png",
+    "rendered_png_sha256": "868041b7cffb9fb9daf11f439bafc5af5ac74f2df0425d165630a58373341534"
+  },
+  "findings": [
+    {
+      "dimension": "EXACT_SCRIPT",
+      "result": "PASS_TECHNICAL",
+      "evidence": "The preview contains the exact Page 21 two-paragraph narration from the locked v0002 page script; no raster text was imported from the illustration."
+    },
+    {
+      "dimension": "LEGIBILITY",
+      "result": "PASS_TECHNICAL",
+      "evidence": "The narration renders at 25 px, above the 22 px floor, with no overflow and clear ink-on-parchment contrast."
+    },
+    {
+      "dimension": "ESSENTIAL_IMAGERY_OCCLUSION",
+      "result": "PASS_TECHNICAL",
+      "evidence": "The plaque occupies the reviewed upper starfield and does not cover Vishnu's face, either demon's face, the discus, the luminous motion path, readable recoil, the unflooded-earth plane or the flood beyond."
+    },
+    {
+      "dimension": "CROP_INTEGRITY",
+      "result": "PASS_TECHNICAL",
+      "evidence": "The aspect-preserving crop retains all three identities, the discus consequence, and the earth/flood distinction; no body becomes the defeat platform."
+    },
+    {
+      "dimension": "PRIVATE_PREVIEW_ISOLATION",
+      "result": "PASS_TECHNICAL",
+      "evidence": "The visible INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION label is present and the render metadata remains publication_eligible=false."
+    }
+  ],
+  "deterministic_validation": "PASS",
+  "composition_qa_result": "PASS_TECHNICAL_PENDING_INDEPENDENT_COMPOSITION_SEMANTIC_REVIEW",
+  "publication_eligible": false,
+  "character_reference_promoted": false,
+  "location_reference_promoted": false,
+  "theological_certification": "NOT_PERFORMED_AND_NOT_CLAIMED"
+}

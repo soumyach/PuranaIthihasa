@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0",
+  "report_id": "dm02-complete-book-pilot-2026-10-22",
+  "generated_at": "2026-10-22T05:33:51Z",
+  "book_id": "DM02",
+  "title": "The Sleep That Held Vishnu",
+  "outcome": "PARTIAL",
+  "baseline": {
+    "expected_commit": "b1574f87b11074354c12058263fe6a68bc5b4908",
+    "verified_commit": "b1574f87b11074354c12058263fe6a68bc5b4908",
+    "branch": "feature/book-factory-dm02-pilot"
+  },
+  "source_and_rights": {
+    "source_readiness": "BLOCKED",
+    "private_draft_gate": "PRIVATE_DRAFT_PERMITTED_PUBLICATION_BLOCKED",
+    "publication_readiness": "NOT_CERTIFIED",
+    "bounded_source": "F. Eden Pargiter, The Markandeya Purana (1904), canto 81; bounded Devi Mahatmyam chapter 1 comparison",
+    "source_event_ids": [
+      "dm-event-004",
+      "dm-event-005",
+      "dm-event-006",
+      "dm-event-007"
+    ],
+    "source_event_coverage": "COMPLETE_FOR_DECLARED_BOUNDED_CHRONOLOGY",
+    "independent_clearance_result": "PASS_WITH_LIMITATIONS",
+    "rights_use": "ORIGINAL_ENGLISH_ADAPTATION_FROM_EVIDENCE_PARAPHRASES",
+    "private_illustration_clearance": "NOT_GRANTED",
+    "theological_certification": "NOT_PERFORMED",
+    "iconographic_certification": "NOT_PERFORMED",
+    "critical_edition_collation": "NOT_PERFORMED",
+    "unresolved_source_ambiguity": "Exact bodily locus for the defeat remains unresolved; no thigh, lap, buttocks or other precise locus may be asserted.",
+    "dossier_path": "books/DM02/source-readiness/601fc63f99cb9ad7d7feb14b45216c573568c4afe395f192e9d97fb83b211457.json",
+    "story_packet_path": "books/DM02/story-packets/b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd.json",
+    "clearance_path": "books/DM02/source-clearance/483cc82d41b142878778e107deabd090ec623ccf4a48410b28d80a3c95f1213e.json"
+  },
+  "manuscript": {
+    "latest_version": 2,
+    "latest_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+    "chapter_count": 8,
+    "story_word_count": 1202,
+    "versions_preserved": 2,
+    "v1_story_word_count": 1565,
+    "path": "books/DM02/manuscripts/v0002.md",
+    "structured_path": "books/DM02/manuscripts/v0002.json"
+  },
+  "independent_editorial_review": {
+    "v1_source_fidelity": "PASS",
+    "v1_literary_experience": "FIX",
+    "v1_literary_findings": [
+      "MAIN_NARRATIVE_EDITORIAL_AUDIT_INTRUSIONS",
+      "ENDING_CLOSURE_RECAP_STACK",
+      "FAMILY_REFLECTION_REPEATS_ANALYSIS_AND_DISCLOSURE"
+    ],
+    "targeted_revision_completed": true,
+    "v2_source_fidelity": "PASS",
+    "v2_literary_experience": "PASS",
+    "v2_remaining_findings": [],
+    "independent_reviewer_count": 2
+  },
+  "visual_preproduction": {
+    "result": "PASS_DETERMINISTIC_SPECIFICATION_REVIEW",
+    "page_count": 24,
+    "story_pages": 22,
+    "source_note_pages": 1,
+    "family_reflection_pages": 1,
+    "panel_count": 44,
+    "lettering_item_count": 44,
+    "full_page_immersive_scenes": [3, 4, 6, 9, 11, 15, 21],
+    "required_moments_covered": 12,
+    "required_moments_total": 12,
+    "character_bible_entries": 9,
+    "location_bible_entries": 7,
+    "proof_spec_count": 4,
+    "proof_provider_status": "BLOCKED_PROVIDER",
+    "semantic_visual_review": "NOT_EXECUTED_NO_IMAGES",
+    "storyboard_path": "books/DM02/storyboards/v0001.json",
+    "character_bible_path": "books/DM02/character-bibles/v0001.json",
+    "location_bible_path": "books/DM02/location-bibles/v0001.json",
+    "typography_path": "books/DM02/typography/v0001.json",
+    "proof_specs_path": "books/DM02/proof-specs/v0001.json"
+  },
+  "image_campaign": {
+    "status": "AWAITING_CAMPAIGN_AUTHORIZATION",
+    "authorization_subject_hash": "e9c4635fdafaca4b1a4db2c9ae9bc09b494e5a2142ab67340889a0e3f32994fc",
+    "campaign_hash": "5afc3beed39e3a79a40e768f172c188691ef6cbf5d5938eca229c49aabb0fcf4",
+    "campaign_path": "books/DM02/image-campaigns/5afc3beed39e3a79a40e768f172c188691ef6cbf5d5938eca229c49aabb0fcf4.request.json",
+    "approval_record_created": false,
+    "existing_usable_dm02_assets": 0,
+    "image_edit_opportunities": 0,
+    "panels_needing_new_art": 44,
+    "initial_generation_operations": 44,
+    "maximum_retry_operations": 44,
+    "maximum_total_operations": 88,
+    "operation_ceiling_per_unit": 2,
+    "actual_image_operations": 0,
+    "actual_images": 0,
+    "actual_composed_pages": 0,
+    "actual_pdf_files": 0,
+    "minimum_preconditions_before_execution": [
+      "Record explicit private-illustration clearance for the bounded original adaptation.",
+      "Provide non-inheritable campaign approval bound exactly to authorization subject e9c4635fdafaca4b1a4db2c9ae9bc09b494e5a2142ab67340889a0e3f32994fc.",
+      "Repeat the read-only allowance and billing preflight immediately before the first operation.",
+      "Stop if purchased credits, paid billing, an API key, workspace overage or an external provider is requested."
+    ]
+  },
+  "usage_and_cost": {
+    "observation_path": "books/DM02/usage-observations/2026-10-22T052232Z.json",
+    "ordinary_codex_usage_allowed": true,
+    "codex_used_percent": 24,
+    "codex_remaining_percent": 76,
+    "purchased_credit_balance": "0",
+    "has_purchased_credits": false,
+    "image_operations_during_pilot": 0,
+    "recorded_image_operation_cost_usd": 0,
+    "account_level_incremental_usd_ledger_available": false,
+    "per_image_allowance_estimate_available": false,
+    "zero_incremental_usd_enforceable_by_repository": false
+  },
+  "production_readiness": {
+    "manuscript": "PASS",
+    "source_event_coverage": "PASS_BOUNDED",
+    "editorial_review": "PASS_DUAL_INDEPENDENT",
+    "storyboard_and_lettering": "PASS_SPECIFICATION",
+    "character_and_location_bibles": "PASS_SPECIFICATION",
+    "illustrations": "NOT_STARTED_AUTHORIZATION_AND_CLEARANCE_BLOCKED",
+    "composed_pages": "NOT_STARTED_NO_APPROVED_ART",
+    "private_pdf": "NOT_STARTED_NO_APPROVED_PAGES",
+    "publication": "BLOCKED",
+    "complete_book_produced": false,
+    "exact_production_state": "AWAITING_CAMPAIGN_AUTHORIZATION"
+  },
+  "preservation": {
+    "dm04_modified": false,
+    "dm08_modified": false,
+    "source_graph_modified": false,
+    "publication_or_deployment_performed": false,
+    "remote_push_or_merge_performed": false
+  }
+}

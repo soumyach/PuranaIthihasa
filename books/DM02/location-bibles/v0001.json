@@ -1,0 +1,513 @@
+{
+  "book_id": "DM02",
+  "content_hash": "33a8a7d20973eba40580261f7f274375593db356d81564dd0a55cb9c2f0a592f",
+  "id": "location-bibles-de5776fee697b83b4e59a141",
+  "kind": "location-bibles",
+  "parent_hash": null,
+  "payload": {
+    "book_id": "DM02",
+    "entries": [
+      {
+        "architecture_and_landscape": {
+          "production_proposal": "sheltered clearing, low fire and two tree trunks framing a quiet listening triangle; all listener reactions remain neutral adaptation",
+          "source_record": "Medhas narrates to Suratha and Samādhi in the permitted frame context."
+        },
+        "authoritative_source_record": {
+          "source_facts": "Medhas narrates to Suratha and Samādhi in the permitted frame context."
+        },
+        "continuity_checks": [
+          "horizon",
+          "light direction",
+          "anchor placement",
+          "travel direction",
+          "scale"
+        ],
+        "continuity_constants": {
+          "anchor": "sheltered clearing, low fire and two tree trunks framing a quiet listening triangle; all listener reactions remain neutral adaptation",
+          "camera_rule": "Re-establish the principal anchor after every major transition."
+        },
+        "evidence_ids": [
+          "dm-evidence-001",
+          "dm-evidence-002",
+          "dm-evidence-003"
+        ],
+        "id": "dm02-forest-hermitage-frame",
+        "lighting": "quiet dusk and low firelight",
+        "name": "forest hermitage frame",
+        "palette": [
+          "#071F35",
+          "#F6E8C6",
+          "#251C18"
+        ],
+        "prohibited_features": [
+          "modern object",
+          "unapproved inscription",
+          "geographic overclaim",
+          "unsupported sacred architecture"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "sheltered clearing, low fire and two tree trunks framing a quiet listening triangle; all listener reactions remain neutral adaptation",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "recurring_scene_elements": [
+          "stable anchor",
+          "recognizable light direction",
+          "consistent foreground-to-background scale"
+        ],
+        "required_features": [
+          "clear staging geography",
+          "stable scale and light direction",
+          "source-bounded spatial relationship"
+        ],
+        "source_backed_vs_proposed": "The authoritative record is source-backed; palette staging, architecture, landscape detail and camera arrangement are proposals unless expressly stated otherwise.",
+        "source_scope": "dm-source",
+        "spatial_anchors": [
+          "foreground character plane",
+          "middle action plane",
+          "stable distant anchor"
+        ],
+        "unspecified_fields": [
+          "exact architecture",
+          "exact flora",
+          "precise geography",
+          "listener reactions"
+        ],
+        "visual_transitions": [
+          "re-establish the anchor before action",
+          "carry the prior page's dominant light or motion into the first panel"
+        ]
+      },
+      {
+        "architecture_and_landscape": {
+          "production_proposal": "horizonless midnight water with sparse gold reflections and no ordinary coast, city, mountain or temple",
+          "source_record": "At world dissolution water extends without a shore or ordinary landmark."
+        },
+        "authoritative_source_record": {
+          "source_facts": "At world dissolution water extends without a shore or ordinary landmark."
+        },
+        "continuity_checks": [
+          "horizon",
+          "light direction",
+          "anchor placement",
+          "travel direction",
+          "scale"
+        ],
+        "continuity_constants": {
+          "anchor": "horizonless midnight water with sparse gold reflections and no ordinary coast, city, mountain or temple",
+          "camera_rule": "Re-establish the principal anchor after every major transition."
+        },
+        "evidence_ids": [
+          "dm-evidence-004"
+        ],
+        "id": "dm02-cosmic-ocean-dissolution",
+        "lighting": "dim source-less cosmic light",
+        "name": "cosmic ocean at dissolution",
+        "palette": [
+          "#071F35",
+          "#D8AC4E",
+          "#251C18"
+        ],
+        "prohibited_features": [
+          "ordinary shoreline",
+          "city",
+          "temple",
+          "mountain",
+          "modern object",
+          "unapproved inscription"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "horizonless midnight water with sparse gold reflections and no ordinary coast, city, mountain or temple",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "recurring_scene_elements": [
+          "stable anchor",
+          "recognizable light direction",
+          "consistent foreground-to-background scale"
+        ],
+        "required_features": [
+          "clear staging geography",
+          "stable scale and light direction",
+          "source-bounded spatial relationship"
+        ],
+        "source_backed_vs_proposed": "The authoritative record is source-backed; palette staging, architecture, landscape detail and camera arrangement are proposals unless expressly stated otherwise.",
+        "source_scope": "dm-source",
+        "spatial_anchors": [
+          "foreground character plane",
+          "middle action plane",
+          "stable distant anchor"
+        ],
+        "unspecified_fields": [
+          "precise horizon",
+          "weather",
+          "celestial objects",
+          "geographic coordinates"
+        ],
+        "visual_transitions": [
+          "re-establish the anchor before action",
+          "carry the prior page's dominant light or motion into the first panel"
+        ]
+      },
+      {
+        "architecture_and_landscape": {
+          "production_proposal": "low horizontal repose composition with Śeṣa as a distinct support and Yoganidrā rendered only as a source-neutral sleep field",
+          "source_record": "Viṣṇu sleeps upon Śeṣa under Yoganidrā above the dissolution flood."
+        },
+        "authoritative_source_record": {
+          "source_facts": "Viṣṇu sleeps upon Śeṣa under Yoganidrā above the dissolution flood."
+        },
+        "continuity_checks": [
+          "horizon",
+          "light direction",
+          "anchor placement",
+          "travel direction",
+          "scale"
+        ],
+        "continuity_constants": {
+          "anchor": "low horizontal repose composition with Śeṣa as a distinct support and Yoganidrā rendered only as a source-neutral sleep field",
+          "camera_rule": "Re-establish the principal anchor after every major transition."
+        },
+        "evidence_ids": [
+          "dm-evidence-004"
+        ],
+        "id": "dm02-vishnu-on-shesha",
+        "lighting": "breathing pulses of very low gold against midnight blue",
+        "name": "Vishnu on Shesha",
+        "palette": [
+          "#071F35",
+          "#D8AC4E",
+          "#F6E8C6"
+        ],
+        "prohibited_features": [
+          "modern object",
+          "unapproved inscription",
+          "geographic overclaim",
+          "unsupported sacred architecture"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "low horizontal repose composition with Śeṣa as a distinct support and Yoganidrā rendered only as a source-neutral sleep field",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "recurring_scene_elements": [
+          "stable anchor",
+          "recognizable light direction",
+          "consistent foreground-to-background scale"
+        ],
+        "required_features": [
+          "clear staging geography",
+          "stable scale and light direction",
+          "source-bounded spatial relationship"
+        ],
+        "source_backed_vs_proposed": "The authoritative record is source-backed; palette staging, architecture, landscape detail and camera arrangement are proposals unless expressly stated otherwise.",
+        "source_scope": "dm-source",
+        "spatial_anchors": [
+          "foreground character plane",
+          "middle action plane",
+          "stable distant anchor"
+        ],
+        "unspecified_fields": [
+          "exact couch form",
+          "exact hood count",
+          "exact elevation above water",
+          "precise direction"
+        ],
+        "visual_transitions": [
+          "re-establish the anchor before action",
+          "carry the prior page's dominant light or motion into the first panel"
+        ]
+      },
+      {
+        "architecture_and_landscape": {
+          "production_proposal": "single ivory-and-gold lotus column above the water, kept spatially aligned with sleeping Viṣṇu below",
+          "source_record": "A lotus rises from Viṣṇu and Brahmā sits upon it above the flood with no ground beneath him."
+        },
+        "authoritative_source_record": {
+          "source_facts": "A lotus rises from Viṣṇu and Brahmā sits upon it above the flood with no ground beneath him."
+        },
+        "continuity_checks": [
+          "horizon",
+          "light direction",
+          "anchor placement",
+          "travel direction",
+          "scale"
+        ],
+        "continuity_constants": {
+          "anchor": "single ivory-and-gold lotus column above the water, kept spatially aligned with sleeping Viṣṇu below",
+          "camera_rule": "Re-establish the principal anchor after every major transition."
+        },
+        "evidence_ids": [
+          "dm-evidence-004",
+          "dm-evidence-005",
+          "dm-supp-evidence-brahma-hymn"
+        ],
+        "id": "dm02-brahma-lotus",
+        "lighting": "lotus glow against the dissolution dark",
+        "name": "Brahma's lotus",
+        "palette": [
+          "#071F35",
+          "#F0CF76",
+          "#FFF9EF"
+        ],
+        "prohibited_features": [
+          "ordinary throne room",
+          "temple platform",
+          "separate invented island",
+          "modern object",
+          "unapproved inscription"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "single ivory-and-gold lotus column above the water, kept spatially aligned with sleeping Viṣṇu below",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "recurring_scene_elements": [
+          "stable anchor",
+          "recognizable light direction",
+          "consistent foreground-to-background scale"
+        ],
+        "required_features": [
+          "clear staging geography",
+          "stable scale and light direction",
+          "source-bounded spatial relationship"
+        ],
+        "source_backed_vs_proposed": "The authoritative record is source-backed; palette staging, architecture, landscape detail and camera arrangement are proposals unless expressly stated otherwise.",
+        "source_scope": "dm-source",
+        "spatial_anchors": [
+          "foreground character plane",
+          "middle action plane",
+          "stable distant anchor"
+        ],
+        "unspecified_fields": [
+          "exact stem anatomy",
+          "exact lotus scale",
+          "exact direction of growth",
+          "architectural platform"
+        ],
+        "visual_transitions": [
+          "re-establish the anchor before action",
+          "carry the prior page's dominant light or motion into the first panel"
+        ]
+      },
+      {
+        "architecture_and_landscape": {
+          "production_proposal": "abstract luminous interval joining the six named locus groups to a separate appeared presence before Brahmā; no path implies prior residence",
+          "source_record": "Yoganidrā withdraws from Viṣṇu's eyes, mouth, nose, arms, heart and breast and appears before Brahmā."
+        },
+        "authoritative_source_record": {
+          "source_facts": "Yoganidrā withdraws from Viṣṇu's eyes, mouth, nose, arms, heart and breast and appears before Brahmā."
+        },
+        "continuity_checks": [
+          "horizon",
+          "light direction",
+          "anchor placement",
+          "travel direction",
+          "scale"
+        ],
+        "continuity_constants": {
+          "anchor": "abstract luminous interval joining the six named locus groups to a separate appeared presence before Brahmā; no path implies prior residence",
+          "camera_rule": "Re-establish the principal anchor after every major transition."
+        },
+        "evidence_ids": [
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006"
+        ],
+        "id": "dm02-yoganidra-manifestation-space",
+        "lighting": "radiance is the only key light",
+        "name": "Yoganidra manifestation space",
+        "palette": [
+          "#071F35",
+          "#F0CF76",
+          "#FFF9EF"
+        ],
+        "prohibited_features": [
+          "temple",
+          "unsourced halo",
+          "weapon array",
+          "body-cutaway anatomy",
+          "unsupported seventh locus",
+          "modern object"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "abstract luminous interval joining the six named locus groups to a separate appeared presence before Brahmā; no path implies prior residence",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "recurring_scene_elements": [
+          "stable anchor",
+          "recognizable light direction",
+          "consistent foreground-to-background scale"
+        ],
+        "required_features": [
+          "clear staging geography",
+          "stable scale and light direction",
+          "source-bounded spatial relationship"
+        ],
+        "source_backed_vs_proposed": "The authoritative record is source-backed; palette staging, architecture, landscape detail and camera arrangement are proposals unless expressly stated otherwise.",
+        "source_scope": "dm-source",
+        "spatial_anchors": [
+          "foreground character plane",
+          "middle action plane",
+          "stable distant anchor"
+        ],
+        "unspecified_fields": [
+          "exact appeared form",
+          "exact complexion",
+          "exact garment",
+          "exact path of withdrawal",
+          "permanent bodily residence"
+        ],
+        "visual_transitions": [
+          "re-establish the anchor before action",
+          "carry the prior page's dominant light or motion into the first panel"
+        ]
+      },
+      {
+        "architecture_and_landscape": {
+          "production_proposal": "three-figure action lane across shallow-looking but unbounded cosmic water, with repeated wave-rings marking time nonliterally",
+          "source_record": "Viṣṇu fights Madhu and Kaiṭabha with his arms upon the cosmic waters for five thousand years; no army joins them."
+        },
+        "authoritative_source_record": {
+          "source_facts": "Viṣṇu fights Madhu and Kaiṭabha with his arms upon the cosmic waters for five thousand years; no army joins them."
+        },
+        "continuity_checks": [
+          "horizon",
+          "light direction",
+          "anchor placement",
+          "travel direction",
+          "scale"
+        ],
+        "continuity_constants": {
+          "anchor": "three-figure action lane across shallow-looking but unbounded cosmic water, with repeated wave-rings marking time nonliterally",
+          "camera_rule": "Re-establish the principal anchor after every major transition."
+        },
+        "evidence_ids": [
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006"
+        ],
+        "id": "dm02-flooded-combat-expanse",
+        "lighting": "hard gold edge light over midnight water",
+        "name": "flooded combat expanse",
+        "palette": [
+          "#071F35",
+          "#692019",
+          "#F6E8C6"
+        ],
+        "prohibited_features": [
+          "army",
+          "chariot",
+          "combat weapon",
+          "ordinary shoreline",
+          "graphic injury",
+          "modern object"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "three-figure action lane across shallow-looking but unbounded cosmic water, with repeated wave-rings marking time nonliterally",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "recurring_scene_elements": [
+          "stable anchor",
+          "recognizable light direction",
+          "consistent foreground-to-background scale"
+        ],
+        "required_features": [
+          "clear staging geography",
+          "stable scale and light direction",
+          "source-bounded spatial relationship"
+        ],
+        "source_backed_vs_proposed": "The authoritative record is source-backed; palette staging, architecture, landscape detail and camera arrangement are proposals unless expressly stated otherwise.",
+        "source_scope": "dm-source",
+        "spatial_anchors": [
+          "foreground character plane",
+          "middle action plane",
+          "stable distant anchor"
+        ],
+        "unspecified_fields": [
+          "water depth",
+          "ordinary shoreline",
+          "weather",
+          "exact elapsed visual cycles"
+        ],
+        "visual_transitions": [
+          "re-establish the anchor before action",
+          "carry the prior page's dominant light or motion into the first panel"
+        ]
+      },
+      {
+        "architecture_and_landscape": {
+          "production_proposal": "a clearly separate dry-earth plane interrupting the surrounding flood, staged away from every body so no thigh, lap, buttocks or other anatomical platform is implied",
+          "source_record": "The place of defeat meets the demons' condition: earth there is not under the flood. The exact bodily locus is unresolved and not asserted."
+        },
+        "authoritative_source_record": {
+          "source_facts": "The place of defeat meets the demons' condition: earth there is not under the flood. The exact bodily locus is unresolved and not asserted."
+        },
+        "continuity_checks": [
+          "horizon",
+          "light direction",
+          "anchor placement",
+          "travel direction",
+          "scale"
+        ],
+        "continuity_constants": {
+          "anchor": "a clearly separate dry-earth plane interrupting the surrounding flood, staged away from every body so no thigh, lap, buttocks or other anatomical platform is implied",
+          "camera_rule": "Re-establish the principal anchor after every major transition."
+        },
+        "evidence_ids": [
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-007"
+        ],
+        "id": "dm02-unflooded-defeat-locus",
+        "lighting": "restrained gold edge light with no graphic impact flash",
+        "name": "unflooded defeat locus",
+        "palette": [
+          "#251C18",
+          "#D8AC4E",
+          "#071F35"
+        ],
+        "prohibited_features": [
+          "Vishnu's thigh as platform",
+          "Vishnu's lap as platform",
+          "buttocks or any other body-locus claim",
+          "graphic gore",
+          "invented island mythology",
+          "modern object"
+        ],
+        "proposed_visual_interpretation": {
+          "design_proposal": "a clearly separate dry-earth plane interrupting the surrounding flood, staged away from every body so no thigh, lap, buttocks or other anatomical platform is implied",
+          "status": "PROPOSAL_NOT_SOURCE_FACT"
+        },
+        "recurring_scene_elements": [
+          "stable anchor",
+          "recognizable light direction",
+          "consistent foreground-to-background scale"
+        ],
+        "required_features": [
+          "clear staging geography",
+          "stable scale and light direction",
+          "source-bounded spatial relationship"
+        ],
+        "source_backed_vs_proposed": "The authoritative record is source-backed; palette staging, architecture, landscape detail and camera arrangement are proposals unless expressly stated otherwise.",
+        "source_scope": "dm-source",
+        "spatial_anchors": [
+          "foreground character plane",
+          "middle action plane",
+          "stable distant anchor"
+        ],
+        "unspecified_fields": [
+          "exact geography",
+          "exact size",
+          "exact mechanism of exposure",
+          "precise bodily locus",
+          "precise anatomical strike location"
+        ],
+        "visual_transitions": [
+          "re-establish the anchor before action",
+          "carry the prior page's dominant light or motion into the first panel"
+        ]
+      }
+    ],
+    "kind": "LOCATION",
+    "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+    "schema_version": "1.0",
+    "source_and_proposal_separation": "Authoritative source records and production proposals use disjoint keys; source silence remains explicit in unspecified_fields.",
+    "version": 1
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

@@ -1,0 +1,16 @@
+{
+  "mythology_comic_rules": {
+    "authoritative_path": "MYTHOLOGY_COMIC_RULES.md",
+    "sha256": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070",
+    "version": "authoritative-2026-10-15"
+  },
+  "machine_rules": {
+    "caption_dialogue_repetition": "PROHIBITED",
+    "default_page_aspect_ratio": "3:4",
+    "fixed_palette": ["deep navy", "antique gold", "parchment cream"],
+    "priority_order": ["story fidelity", "iconographic accuracy", "legibility", "continuity", "aesthetics", "speed"],
+    "text_layers": "SEPARATE_EDITABLE",
+    "visual_benchmark_story_authority": false
+  },
+  "schema_version": "1.0"
+}

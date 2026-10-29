@@ -1,0 +1,284 @@
+{
+  "book_id": "DM02",
+  "content_hash": "1697fc85dc79dcef7e5437cf9791b9b4a85653521e37ac0e048c638acacd96f0",
+  "id": "editorial-reviews-8c796e0e2136fb9b569f1b66",
+  "kind": "editorial-reviews",
+  "parent_hash": "633610b1aa1af8806e5f2a2fb79a7e4f61b9aa7923cfc0fcf2930a0b26f3a14f",
+  "payload": {
+    "book_id": "DM02",
+    "certification_scope": "LITERARY_EXPERIENCE_INDEPENDENT_MANUSCRIPT_REVIEW_ONLY",
+    "dimension_assessments": [
+      {
+        "assessment": "The core balance is promising: two chapters establish danger, invocation triggers awakening, a compressed struggle leads to a verbal reversal, and a non-graphic climax follows. However, source-audit explanations repeatedly enter the narrative just before or after important actions, and the long closure plus separate reflection re-analyze what the action has already shown. The requested bounded cuts would restore the intended progression without changing an event.",
+        "dimension": "action_narration_reflection_balance",
+        "result": "FIX"
+      },
+      {
+        "assessment": "Brahma has a clear problem and responds through attentive invocation; Yoganidra changes the situation without being reduced to a tool; Vishnu moves from stillness to sustained action; and Madhu and Kaitabha reveal pride through the boon offer. Those roles are legible, but the reader is repeatedly redirected from the characters to what 'the account,' 'this book' or 'cleared evidence' permits. Removing that intermediary audit voice is necessary for the existing character actions to carry the emotional load.",
+        "dimension": "character_engagement",
+        "result": "FIX"
+      },
+      {
+        "assessment": "The title, Medhas frame, dignified sacred register, chaptered arc and labeled family reflection belong to the Khatakshetra collection. The divergence is tonal: production terms such as 'bounded witnesses,' 'cleared evidence' and 'source-bounded action' are unlike the benchmark's reader-facing story voice and make this volume feel like a clearance memo embedded in a book. DM08 is used here only to calibrate finish and immersion, not as source evidence.",
+        "dimension": "collection_continuity",
+        "result": "FIX"
+      },
+      {
+        "assessment": "The dialogue marks the correct emotional turns—Medhas frames the manifestation, Brahma moves from praise to urgent appeal, the demons' confidence becomes a boon offer, and Vishnu turns that offer against them. Yet the dramatic progression is repeatedly paused for statements about absent backstory, source wording and production boundaries, especially between the boon exchange and the final action. The dialogue itself need not be expanded; the surrounding interruptions need to be removed.",
+        "dimension": "dialogue_and_emotional_progression",
+        "result": "FIX"
+      },
+      {
+        "assessment": "The spoken lines are concise, performable and appropriate to their speakers. Brahma's formal hymn voice suits attributed sacred praise, Madhu and Kaitabha each contribute to the joint offer and joint condition, and Vishnu's short acceptance gives the exchange finality. The lines do not imitate casual modern banter, but their elevated register is natural within this cosmic episode and no arbitrary dialogue quota is needed.",
+        "dimension": "dialogue_quality",
+        "result": "PASS"
+      },
+      {
+        "assessment": "The opening quickly reaches a vivid dramatic image: one lotus above shoreless dissolution waters, Vishnu asleep below and danger approaching Brahma. Yoganidra's withdrawal, Vishnu's opened eyes, the long grapple, the unexpected boon offer and the raised discus all provide strong scene hinges. The climax is nevertheless interrupted at its threshold by an explanation of bounded witnesses and cleared evidence, while several earlier scenes pause for similar source commentary. These intrusions prevent otherwise strong scenes from playing continuously.",
+        "dimension": "dramatic_scene_quality",
+        "result": "FIX"
+      },
+      {
+        "assessment": "Silence, approach, invocation, awakening, prolonged strain, pride, verbal reversal and release form a coherent emotional curve. Short lines such as 'Vishnu's eyes opened' and 'Hundreds became thousands' vary the pace effectively. The curve loses tension whenever editorial cautions replace scene experience, and the aftermath stays in analytical closure too long after the threat has ended.",
+        "dimension": "emotional_rhythm",
+        "result": "FIX"
+      },
+      {
+        "assessment": "The plot resolves completely and with dignity: the unflooded-earth condition is met without asserting the disputed anatomical locus, the discus ends the conflict, Brahma is safe and Vishnu is awake. The literary ending does not yet trust that resolution. It supplies multiple recaps, scope disclaimers and explicit completeness statements in succession; one brief aftermath and one natural closing cadence would be stronger.",
+        "dimension": "ending",
+        "result": "FIX"
+      },
+      {
+        "assessment": "The mythic vocabulary is generally well supported by context, sentences are mostly clear for read-aloud use, and the violence is restrained enough for the declared approximate 10+ audience. The barrier is not the sacred material but unexplained editorial vocabulary inside the story: 'bounded witnesses,' 'cleared evidence' and 'source-bounded action' ask a child or family reader to understand scholarly workflow at the climax. These phrases should remain in adult-facing notes.",
+        "dimension": "family_readability",
+        "result": "FIX"
+      },
+      {
+        "assessment": "Some recurrence is purposeful—the continuing flood maintains the spatial problem, and repeated returns to the struggle convey five thousand years without graphic detail. Material redundancy begins after the final action, where the boon, character states, Yoganidra's role and completion are each restated, and continues into a reflection that explains the same functional sequence twice. The two bounded compression findings identify the removable repetition.",
+        "dimension": "narrative_redundancy",
+        "result": "FIX"
+      },
+      {
+        "assessment": "The story offers a compelling visual grammar: shoreless water, Vishnu on Shesha, a solitary lotus, two approaching figures, Yoganidra separating from named places in Vishnu, opened eyes, close combat across immense time, a taut three-way boon exchange and the final discus. Those visual units are strong, but sizable audit and recap passages have no in-world visual action and would produce static or text-heavy pages at precisely the climax and resolution. Removing or relocating them would make the manuscript readily adaptable without inventing scenes.",
+        "dimension": "visual_adaptability",
+        "result": "FIX"
+      }
+    ],
+    "evidence_checks": [
+      {
+        "check": "DRAMATIC_OPENING_AND_INDEPENDENT_ENTRY",
+        "event_ids": [
+          "dm-event-004"
+        ],
+        "evidence": "Although the first sentence is expository, the opening rapidly establishes an independently comprehensible dramatic problem through the shoreless flood, sleeping Vishnu, exposed Brahma and approaching Madhu and Kaitabha. A new reader does not need prior DM volumes to understand who is threatened, who is unavailable and why ordinary escape is impossible.",
+        "evidence_ids": [
+          "dm-evidence-004"
+        ],
+        "result": "PASS",
+        "section_ids": [
+          "ch-01",
+          "ch-02"
+        ]
+      },
+      {
+        "check": "DIALOGUE_NATURALNESS_AND_ROLE_DISTINCTNESS",
+        "evidence": "Medhas provides a formal frame, Brahma speaks in praise and appeal, the two demons divide the joint offer and condition, and Vishnu answers with controlled brevity. The dialogue is sparse but functional and character-appropriate; the literary problem lies in narrator commentary around it rather than in the spoken lines.",
+        "result": "PASS",
+        "section_ids": [
+          "ch-01",
+          "ch-03",
+          "ch-05",
+          "ch-06"
+        ]
+      },
+      {
+        "check": "DIGNIFIED_NON_GRAPHIC_ACTION",
+        "event_ids": [
+          "dm-event-006",
+          "dm-event-007"
+        ],
+        "evidence": "The combat uses holds, checks and return movements without wounds or gore. The final death is conveyed through the swift discus and immediate cessation of danger, with no disputed anatomical placement or lingering physical detail. No human age-suitability escalation is needed for this presentation.",
+        "evidence_ids": [
+          "dm-evidence-006",
+          "dm-sanskrit-evidence-006",
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-007"
+        ],
+        "result": "PASS",
+        "section_ids": [
+          "ch-04",
+          "ch-05",
+          "ch-07"
+        ]
+      },
+      {
+        "check": "READER_FACING_VOICE_VERSUS_SOURCE_CONTROL",
+        "evidence": "The manuscript repeatedly names the account, source, storyteller, book, bounded witnesses, cleared evidence and source-bounded action inside the story. The source note already provides a suitable home for these controls. Their recurrence in scene prose is the principal barrier to polished family reading.",
+        "result": "FIX",
+        "section_ids": [
+          "ch-02",
+          "ch-03",
+          "ch-04",
+          "ch-06",
+          "ch-07"
+        ]
+      },
+      {
+        "check": "RESOLUTION_AND_REFLECTION_GATE",
+        "event_ids": [
+          "dm-event-007"
+        ],
+        "evidence": "The sacred-story outcome is fully resolved before the labeled reflection, and no next-book hook reopens it. The gate is structurally correct, but chapter 7 repeatedly declares and recaps completion, while chapter 8 repeats the same interpretive sequence and disclosure. Compression is required for a satisfying landing.",
+        "evidence_ids": [
+          "dm-evidence-007",
+          "dm-sanskrit-evidence-007"
+        ],
+        "result": "FIX",
+        "section_ids": [
+          "ch-07",
+          "ch-08"
+        ]
+      },
+      {
+        "check": "LOCKED_EVENT_CONTINUITY",
+        "event_ids": [
+          "dm-event-004",
+          "dm-event-005",
+          "dm-event-006",
+          "dm-event-007"
+        ],
+        "evidence": "All four locked events are represented in order and form a complete bounded arc from Medhas's distinction and Brahma's danger through invocation, awakening, long combat, joint boon offer, stated condition and discus defeat. The requested literary repairs require no change to identities, theology, causality, weapon, outcome or disputed anatomical locus. This is a continuity check only, not source certification.",
+        "result": "PASS"
+      },
+      {
+        "check": "DM08_QUALITY_BENCHMARK_ONLY",
+        "evidence": "DM02 already reaches the benchmark's strengths in clear stakes, dignified non-graphic conflict, memorable central mechanics and a family reflection. It does not yet match the benchmark's reader-facing finish because source-control vocabulary and repeated closure remain inside the story experience. No DM08 fact, scene, dialogue or theological explanation was used as DM02 evidence.",
+        "result": "FIX"
+      }
+    ],
+    "findings": [
+      {
+        "additional_bounded_excerpts": [
+          "The account gives no childhood for them, no family history and no earlier boon.",
+          "they were not a list invented by the storyteller, nor a declaration added by this book.",
+          "The source tells of a combat fought with his arms, close and unrelenting.",
+          "The account does not bring in another deity to grant it, nor does it tell of an older ascetic bargain that made the demons invulnerable.",
+          "The telling does not linger over the violence. It is enough to know"
+        ],
+        "beat_ids": [
+          "beat-004",
+          "beat-005",
+          "beat-006",
+          "beat-007"
+        ],
+        "claim_ids": [
+          "claim-004-d",
+          "claim-005-c",
+          "claim-006-d",
+          "claim-007-d",
+          "claim-007-e"
+        ],
+        "code": "MAIN_NARRATIVE_EDITORIAL_AUDIT_INTRUSIONS",
+        "excerpt": "The exact bodily place associated with the final act is uncertain across the bounded witnesses used for this book. The story therefore keeps only what the cleared evidence establishes",
+        "problem": "These sentences are responsible source-control notes, but they are written inside the dramatic narrative in the voice of an audit trail. Phrases such as 'bounded witnesses,' 'cleared evidence,' 'the source tells,' 'this book' and 'the account does not bring in' repeatedly make the family reader leave the cosmic scene to consider the production process. The most disruptive instance opens the climax immediately after 'Vishnu met the condition,' replacing anticipated action with witness-management language. The effect is cumulative: character engagement, emotional rhythm, read-aloud naturalness and visual continuity all weaken even though the locked events remain understandable.",
+        "repair": "Keep every source boundary and locked outcome, but remove production-process language from chapters 2-7. Put witness uncertainty, excluded backstories, non-verbatim status and rights/source cautions in the existing editorial source note or structured metadata. Within the story, use only neutral narrative wording that preserves what is known without naming the audit process—for example, state the established condition and action without asserting any precise bodily locus. Do not add a childhood, genealogy, earlier boon, outside boon-giver, motive, anatomical location, weapon detail or theological conclusion.",
+        "section_ids": [
+          "ch-02",
+          "ch-03",
+          "ch-04",
+          "ch-06",
+          "ch-07"
+        ],
+        "severity": "MODERATE"
+      },
+      {
+        "additional_bounded_excerpts": [
+          "Yoganidra’s part in the episode was complete: she had held the cosmic sleep, withdrawn when Brahma invoked her, appeared before him, and deluded the two Asuras until their confidence turned the battle.",
+          "This bounded tale does not claim when they receded or what came next.",
+          "Sage Medhas brought the episode to its close where the source-bounded action closes: the threat to Brahma ended, Madhu and Kaitabha defeated under their own condition, and the power behind sleep revealed through what she had done.",
+          "The story was complete."
+        ],
+        "beat_ids": [
+          "beat-007"
+        ],
+        "claim_ids": [
+          "claim-007-c",
+          "claim-007-d",
+          "claim-007-e"
+        ],
+        "code": "ENDING_CLOSURE_RECAP_STACK",
+        "excerpt": "After five thousand years of struggle, there was no third attacker and no further condition. The unusual boon had been offered, chosen, limited and fulfilled.",
+        "problem": "After the discus ends the contest, the chapter confirms completion through several consecutive mechanisms: denial of further attackers, a four-part boon recap, separate status lines for Brahma and Vishnu, a full recap of Yoganidra's role, a scope disclaimer, a second full episode recap and an explicit declaration that the story is complete. Necessary consequence is present, but the repeated closure prevents the ending from landing as an image or felt release and makes the narrator sound defensive rather than assured.",
+        "repair": "Retain a brief non-graphic outcome and the minimum aftermath needed to show that Brahma is safe, Vishnu is awake and Yoganidra's action mattered. Remove the repeated completion proofs and move the cosmic-water scope caution to the editorial source note. End the sacred-story section once, in a natural narrative or Medhas-frame cadence, before the separately labeled reflection. Do not add later chronology or claim when the waters recede.",
+        "section_ids": [
+          "ch-07"
+        ],
+        "severity": "MODERATE"
+      },
+      {
+        "additional_bounded_excerpts": [
+          "The story does not treat sleep, strength and wisdom as if they were the same thing. Each has a different place in the sequence.",
+          "This is a modern editorial reflection, not a quotation from the Devi Mahatmya and not an additional event in the sacred story.",
+          "Those questions are offered for conversation. They are not presented as words spoken by Medhas, Brahma, Vishnu, Madhu, Kaitabha or the Goddess."
+        ],
+        "beat_ids": [
+          "beat-editorial"
+        ],
+        "claim_ids": [
+          "claim-editorial-a"
+        ],
+        "code": "FAMILY_REFLECTION_REPEATS_ANALYSIS_AND_DISCLOSURE",
+        "excerpt": "The episode asks readers to notice how its turning points differ from one another.",
+        "problem": "The reflection explains the same three-part insight twice—Yoganidra enables awakening, Vishnu sustains the struggle, and the boon condition creates the ending—after chapter 7 has already recapped those functions. It also brackets the reflection with two disclaimers even though the heading already labels it editorial and the final source note repeats the boundary. The useful family questions arrive late and carry less force because the reader has been given the interpretation multiple times.",
+        "repair": "Compress chapter 8 to one short, clearly labeled modern reflection followed by the existing family questions, or an equivalently concise pair of questions. Retain one plain non-scripture disclosure, not both opening and closing disclaimers. Preserve the distinction among sleep, sustained strength and the boon condition, but state it once and do not turn the reflection into additional character dialogue or sacred teaching.",
+        "section_ids": [
+          "ch-08"
+        ],
+        "severity": "MODERATE"
+      }
+    ],
+    "id": "editorial-review-829f2275044604f1653550f0",
+    "limitations": [
+      "This is an independent LITERARY_EXPERIENCE review of immutable DM02 manuscript v1 at hash 8b7dc126012186ada26df3b6acb16e46fcc72a600ad151de49f6aaf3c06d2c44 against locked Story Packet hash b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd.",
+      "The FIX verdict is limited to reader-facing prose, pacing, closure and reflection. It does not reject the four-event bounded chronology or authorize any change to source facts, theology, identities, causal mechanisms, the joint boon, the unflooded-earth condition, the discus outcome or the unresolved bodily locus.",
+      "This review does not certify or override source readiness, rights clearance, theological authority, iconographic accuracy, visual quality, PDF quality or publication readiness.",
+      "Visual adaptability assesses prose-level scene and page potential only. No character bible, scene bible, page script, illustration, typography, layout or rendered page was reviewed.",
+      "The Raktabija v2 manuscript was used only as a literary-quality and collection-presentation benchmark, never as a source of DM02 facts, characters, dialogue or theology.",
+      "The locked source record remains a complete four-event bounded chronology rather than exhaustive scripture verification; critical-edition collation, independent Sanskrit translation and theological certification were not performed."
+    ],
+    "publication_readiness_certified": false,
+    "result": "FIX",
+    "review_hash": "02fb9ac76532a9d409faac2ded74e90f155598ae17c8228997b6e9615b95b3af",
+    "review_perspective": "LITERARY_EXPERIENCE",
+    "reviewed_dimensions": [
+      "action_narration_reflection_balance",
+      "character_engagement",
+      "collection_continuity",
+      "dialogue_and_emotional_progression",
+      "dialogue_quality",
+      "dramatic_scene_quality",
+      "emotional_rhythm",
+      "ending",
+      "family_readability",
+      "narrative_redundancy",
+      "visual_adaptability"
+    ],
+    "reviewed_manuscript_hash": "8b7dc126012186ada26df3b6acb16e46fcc72a600ad151de49f6aaf3c06d2c44",
+    "reviewed_packet_hashes": [
+      "b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd"
+    ],
+    "reviewer": {
+      "attestation_scope": "ORCHESTRATOR_SESSION_RECORD_NOT_CRYPTOGRAPHIC_IDENTITY",
+      "capability_verified": true,
+      "execution_mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+      "id": "/root/dm04_family_editor",
+      "independent": true,
+      "provider_kind": "editorial_review",
+      "role": "family-editor"
+    },
+    "schema_version": "1.0",
+    "source_readiness_overridden": false
+  },
+  "schema_version": "1.0",
+  "version": 2
+}

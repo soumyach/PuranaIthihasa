@@ -1,0 +1,119 @@
+{
+  "character_ids": [],
+  "continuity_in": "after-page-22",
+  "continuity_out": "after-page-23",
+  "continuity_requirements": [],
+  "event_ids": [],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "BACK_MATTER"
+  },
+  "lettering": [
+    {
+      "channel": "INSET_EXPLANATION",
+      "id": "p23-source-note",
+      "placement": "full-page-editable-inset",
+      "text": "This private editorial draft is fresh original English prose based only on the locked paraphrases and locators for Devi Mahatmya 1 in dm-event-004 through dm-event-007. Brahma’s cosmic and theological descriptions are presented as his attributed hymn-praise, not as independent project certification. All dialogue is non-verbatim adaptation. The five-thousand-year combat, joint boon offer by Madhu and Kaitabha, Vishnu’s requested boon, the unflooded-earth condition and the discus defeat remain in source order. No demon genealogy, earlier ascetic or invulnerability boon, outside boon-giver, divine motive or sacred quotation has been added. Because the bounded English and Sanskrit witnesses leave the final bodily locus unresolved, the manuscript states only that the water condition is met and omits any thigh, lap, buttocks or other precise locus. The DM08 manuscript was consulted only as a literary-quality benchmark and was neither copied nor treated as evidence. This clearance permits only a private manuscript draft; illustration, PDF production, publication, public sharing and distribution remain blocked."
+    }
+  ],
+  "location_id": "dm02-forest-hermitage-frame",
+  "moment_ids": [
+    "source_and_adaptation_notes"
+  ],
+  "narrative_beats": [
+    "This private editorial draft is fresh original English prose based only on the locked paraphrases and locators for Devi Mahatmya 1 in dm-event-004 through dm-event-007. Brahma’s cosmic and theological descriptions are presented as his attributed hymn-praise, not as independent project certification. All dialogue is non-verbatim adaptation. The five-thousand-year combat, joint boon offer by Madhu and Kaitabha, Vishnu’s requested boon, the unflooded-earth condition and the discus defeat remain in source order. No demon genealogy, earlier ascetic or invulnerability boon, outside boon-giver, divine motive or sacred quotation has been added. Because the bounded English and Sanskrit witnesses leave the final bodily locus unresolved, the manuscript states only that the water condition is met and omits any thigh, lap, buttocks or other precise locus. The DM08 manuscript was consulted only as a literary-quality benchmark and was neither copied nor treated as evidence. This clearance permits only a private manuscript draft; illustration, PDF production, publication, public sharing and distribution remain blocked."
+  ],
+  "page_id": "page-0de736c5ac791f2e0c546fd3",
+  "page_number": 23,
+  "panel_count": 1,
+  "panels": [
+    {
+      "character_ids": [],
+      "composition": "Text-led ivory source-note page with a restrained navy-and-gold forest-frame border; no character figure, mythic reenactment, source quotation styling or new iconographic claim.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p23-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Text-led ivory source-note page with a restrained navy-and-gold forest-frame border; no character figure, mythic reenactment, source quotation styling or new iconographic claim.",
+        "shot_scale": "flat"
+      },
+      "location_id": "dm02-forest-hermitage-frame",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p23-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Text-led ivory source-note page with a restrained navy-and-gold forest-frame border; no character figure, mythic reenactment, source quotation styling or new iconographic claim."
+    }
+  ],
+  "reading_order": [
+    "p23-panel-01"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p23-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-004-d",
+    "claim-005-c",
+    "claim-006-d",
+    "claim-007-d",
+    "claim-007-e"
+  ],
+  "title": "Source and Adaptation Note",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation",
+    "no unsupported iconography",
+    "no unsupported body-locus claim"
+  ],
+  "version": 1,
+  "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+}

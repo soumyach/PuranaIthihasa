@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "status": "CAMPAIGN_COMPLETE_WITH_TWO_FIX_FINDINGS",
+  "branch": "feature/book-factory-dm02-production-unblocking",
+  "verified_baseline_commit": "975e350bc26ce85bb8a3a3531d4df51459fca81d",
+  "campaign": {
+    "subject_hash": "820c1d0371f19ec0e44a5000c3012f29aab1e05501802ef324078841657211cd",
+    "approval_id": "approval-d50a10509141390a31d41cdb",
+    "approval_decision": "PASS_WITH_CONDITIONS",
+    "approval_inheritable": false,
+    "authorized_operations": 4,
+    "executed_operations": 4,
+    "maximum_operations_per_unit": 1,
+    "retries_authorized": 0,
+    "retries_executed": 0,
+    "provider": "Codex built-in image generation",
+    "api_key_used": false,
+    "external_provider_used": false,
+    "explicit_payment_requested": false
+  },
+  "outputs": [
+    {
+      "unit_id": "page-71e9de766bf786cb9499a31b--p01-panel-02",
+      "path": "books/DM02/pages-1-3-production/images/p01-panel-02/v0001.png",
+      "sha256": "582196a26f1dafa22a669ccfc2f126af1edeb53f3f7c8c01ba47a6702e4972c2",
+      "dimensions": [1086, 1448],
+      "independent_pixel_result": "FIX",
+      "composition_eligible": false,
+      "finding": "Unsupported prominent forehead tilak or sectarian mark on Medhas."
+    },
+    {
+      "unit_id": "page-88792a15dcd25b30d3982d7c--p02-panel-01",
+      "path": "books/DM02/pages-1-3-production/images/p02-panel-01/v0001.png",
+      "sha256": "7702fbc90c1d03295ccb7628281e5f3026d634a714daba1c00cea73db85cede4",
+      "dimensions": [1086, 1448],
+      "independent_pixel_result": "FIX",
+      "composition_eligible": false,
+      "finding": "Focal hand has one thumb plus five non-thumb digit tips; the action cannot be truthfully cropped around the defect."
+    },
+    {
+      "unit_id": "page-88792a15dcd25b30d3982d7c--p02-panel-02",
+      "path": "books/DM02/pages-1-3-production/images/p02-panel-02/v0001.png",
+      "sha256": "6a74cd64078d324d3d6e6abfdb8b573034f8d9a829b6d0b227bb02eeada5fa17",
+      "dimensions": [1086, 1448],
+      "independent_pixel_result": "PASS",
+      "composition_eligible": true,
+      "canonical_reference_promoted": false
+    },
+    {
+      "unit_id": "page-a694d4c3702975edfdceb0c5--p03-panel-01",
+      "path": "books/DM02/pages-1-3-production/images/p03-panel-01/v0001.png",
+      "sha256": "8c5e72bf52d71d13997af976c3f7d43917802b8bcd91506d35495031bdf3e86a",
+      "dimensions": [1086, 1448],
+      "independent_pixel_result": "PASS",
+      "composition_eligible": true,
+      "canonical_reference_promoted": false
+    }
+  ],
+  "pages_1_to_3": {
+    "completed_private_preview_pages": 1,
+    "completed_page_numbers": [3],
+    "incomplete_page_numbers": [1, 2],
+    "page_1_blocker": "p01-panel-02 requires new corrected pixels under a separate future authorization.",
+    "page_2_blocker": "p02-panel-01 requires new corrected pixels under a separate future authorization.",
+    "page_3_preview": {
+      "path": "books/DM02/private-page-previews/page-a694d4c3702975edfdceb0c5/v0002/0003-page-a694d4c3702975edfdceb0c5.png",
+      "sha256": "e2f4eb52be5d3579f4a8dfc3658a75f9b1abcfdbbc98d5e097228ec6062f636d",
+      "deterministic_validation": "PASS",
+      "independent_actual_pixel_review": "PASS",
+      "publication_eligible": false
+    }
+  },
+  "private_pdf_proof": {
+    "scope": "PAGE_3_ONLY_PAGES_1_AND_2_INCOMPLETE",
+    "path": "books/DM02/pages-1-3-production/pdf-proof/dm02-pages-1-3-private-proof.pdf",
+    "sha256": "805e857b3d2ee9afe185401eff1ff2009036dfa6159fe46cb1f0f3b2ff51295e",
+    "page_count": 1,
+    "page_order": ["page-a694d4c3702975edfdceb0c5"],
+    "native_page_dimensions": [1086, 1448],
+    "deterministic_inspection": "PASS",
+    "rendered_pixel_inspection": "PASS",
+    "publication_state_transition": "PROHIBITED_PRIVATE_PREVIEW"
+  },
+  "character_reference_state": {
+    "approved_canonical_exact_pixel_references": 0,
+    "forest_ensemble_continuity": "PROPOSAL_ONLY",
+    "approved_traits_observed": [
+      "Medhas remains the central forest teacher in bark-brown and warm ivory.",
+      "Suratha remains identifiable through peacock-blue clothing.",
+      "Samadhi remains identifiable through restrained earth-toned clothing."
+    ],
+    "unresolved_pixels": [
+      "Medhas forehead mark in p01-panel-02 is not approved.",
+      "Medhas focal hand anatomy in p02-panel-01 is not usable."
+    ],
+    "promotion_performed": false
+  },
+  "page_11": {
+    "page_id": "page-b85332e92940926f67e6dd9d",
+    "panel_id": "p11-panel-01",
+    "status": "ESCALATE_BEFORE_GENERATION",
+    "qualified_review_signed": false,
+    "included_in_campaign": false,
+    "modified": false
+  },
+  "usage_and_cost": {
+    "plan_type_observed": "prolite",
+    "ordinary_usage_allowed_after_campaign": true,
+    "before_used_percent": 14,
+    "after_used_percent": 16,
+    "observed_account_wide_percentage_point_change": 2,
+    "after_remaining_percent": 84,
+    "purchased_credit_balance_before": "0",
+    "purchased_credit_balance_after": "0",
+    "incremental_usd": "UNKNOWN_NOT_EXPOSED",
+    "zero_incremental_usd_positively_verified": false,
+    "attribution_limit": "The account-wide meter does not expose a per-image deduction or exclusive campaign attribution."
+  },
+  "validation": {
+    "factory_validate": "PASS",
+    "page_3_deterministic": "PASS",
+    "page_3_independent_pixel_review": "PASS",
+    "private_pdf_deterministic_inspection": "PASS",
+    "private_pdf_rendered_visual_inspection": "PASS",
+    "source_graph_structural": "PASS_0_ERRORS_0_WARNINGS",
+    "source_graph_integrity": "PASS_15_OF_15",
+    "book_factory_tests": "PASS_228_OF_228"
+  },
+  "preservation": {
+    "original_art_modified": false,
+    "prior_campaign_counters_reset": false,
+    "source_graph_modified": false,
+    "dm04_modified": false,
+    "dm08_modified": false,
+    "publication_deployment_push_merge_performed": false,
+    "unrelated_ds_store_changes_preserved": true
+  },
+  "next_resumable_checkpoint": {
+    "state": "PAGES_1_AND_2_REQUIRE_SEPARATE_CORRECTIVE_CAMPAIGN",
+    "minimum_image_operations": 2,
+    "operations": [
+      "Correct only the unsupported Medhas forehead mark in p01-panel-02 while preserving all other pixels.",
+      "Correct only the six-digit focal hand in p02-panel-01 while preserving the gesture, beads, sleeve, fire, smoke, lighting and framing."
+    ],
+    "authorization": "Not granted by the completed campaign. A fresh exact hash-bound approval is required, with no automatic retry.",
+    "after_pass": "Compose Pages 1 and 2 from their complete reviewed panel sets, then independently review the composed pages and update the private Pages 1-3 proof.",
+    "page_11_parallel_gate": "Keep Page 11 blocked until a genuine qualified reviewer signs the existing exact-scope iconography decision; that decision still would not authorize image generation."
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "books": 78,
+  "catalogue_sha256": "e80483a0c77e8453616868b85ce883407e7c5bfaa81fae5d6c605266764c2f5b",
+  "collections": 12,
+  "controlled_pilot_policy": {
+    "does_not_mean": "publication ready, source certified, rights cleared, or editorially approved",
+    "meaning": "A complete bounded event arc may enter source-controlled pre-production while chapter atomization, rights clearance, and independent review remain visible blockers."
+  },
+  "declared_roadmap_counts": {
+    "ORIGINAL_FICTION": 4,
+    "PARTIAL_GRAPH": 10,
+    "SOURCE_SPINE_READY": 22,
+    "SOURCE_WORK_NEEDED": 42
+  },
+  "dm08_excluded": true,
+  "factory_readiness_counts": {
+    "INCOMPLETE_SOURCE": 22,
+    "NEEDS_SOURCE_REVIEW": 56
+  },
+  "mapping_validation": {
+    "outcomes": {
+      "UNMAPPED": 56,
+      "VERIFIED_EXACT": 4,
+      "VERIFIED_SUBSET": 18
+    },
+    "validated_segments": 23
+  },
+  "schema_version": "1.0",
+  "selected_pilot": "DM04",
+  "selected_pilot_basis": "Best combination of exact graph mapping, self-contained full arc, visual range, and enough scope to exercise the complete future pipeline.",
+  "strictly_ready_book_ids": [],
+  "strictly_ready_count": 0,
+  "top_conditional_finalists": [
+    {
+      "blockers": [
+        {
+          "code": "RIGHTS_NOT_CLEARED",
+          "rights_status": "UNKNOWN"
+        }
+      ],
+      "book_id": "DM04",
+      "controlled_pilot_eligibility": "CONDITIONAL_RIGHTS_AND_INDEPENDENT_REVIEW",
+      "evidence": {
+        "characters": 63,
+        "citations": 26,
+        "events": 16,
+        "powers": 9
+      },
+      "mapping_outcome": "VERIFIED_EXACT",
+      "publication_readiness": "NOT_CERTIFIED",
+      "rank": 1,
+      "reason": "A complete sixteen-event arc with dispossession, divine manifestation, weapon gifts, battle escalation, transformation duel, victory, hymn, and aftermath.",
+      "scope_score": 5,
+      "source_limitations": [
+        {
+          "code": "CHAPTER_EXTRACTION_INCOMPLETE",
+          "spine_id": "dm-story-mahisha",
+          "status": "NARRATIVE_COMPLETE_ATOMIC_PARTIAL"
+        },
+        {
+          "code": "INDEPENDENT_FULL_ARC_REVIEW_UNDETERMINED",
+          "reason": "Correction closure adds no whole-arc source reread or blanket independent approval.",
+          "spine_id": "dm-story-mahisha",
+          "status": "UNDETERMINED"
+        }
+      ],
+      "source_readiness": "BLOCKED",
+      "title": "The Buffalo King",
+      "visual_score": 5
+    },
+    {
+      "blockers": [
+        {
+          "code": "RIGHTS_NOT_CLEARED",
+          "rights_status": "UNKNOWN"
+        }
+      ],
+      "book_id": "DM02",
+      "controlled_pilot_eligibility": "CONDITIONAL_RIGHTS_AND_INDEPENDENT_REVIEW",
+      "evidence": {
+        "characters": 16,
+        "citations": 7,
+        "events": 4,
+        "powers": 3
+      },
+      "mapping_outcome": "VERIFIED_EXACT",
+      "publication_readiness": "NOT_CERTIFIED",
+      "rank": 2,
+      "reason": "A compact exact four-event cosmic arc with a clear reversal and modest first-run complexity.",
+      "scope_score": 5,
+      "source_limitations": [
+        {
+          "code": "CHAPTER_EXTRACTION_INCOMPLETE",
+          "spine_id": "dm-story-madhu-kaitabha",
+          "status": "NARRATIVE_COMPLETE_ATOMIC_PARTIAL"
+        },
+        {
+          "code": "INDEPENDENT_FULL_ARC_REVIEW_UNDETERMINED",
+          "reason": "Correction closure adds no whole-arc source reread or blanket independent approval.",
+          "spine_id": "dm-story-madhu-kaitabha",
+          "status": "UNDETERMINED"
+        }
+      ],
+      "source_readiness": "BLOCKED",
+      "title": "The Sleep That Held Vishnu",
+      "visual_score": 4
+    },
+    {
+      "blockers": [
+        {
+          "code": "RIGHTS_NOT_CLEARED",
+          "rights_status": "UNKNOWN"
+        }
+      ],
+      "book_id": "DM01",
+      "controlled_pilot_eligibility": "CONDITIONAL_RIGHTS_AND_INDEPENDENT_REVIEW",
+      "evidence": {
+        "characters": 15,
+        "citations": 9,
+        "events": 6,
+        "powers": 8
+      },
+      "mapping_outcome": "VERIFIED_EXACT",
+      "publication_readiness": "NOT_CERTIFIED",
+      "rank": 3,
+      "reason": "A self-contained framed human story with a resolved return, although less visually varied than the battle narratives.",
+      "scope_score": 5,
+      "source_limitations": [
+        {
+          "code": "CHAPTER_EXTRACTION_INCOMPLETE",
+          "spine_id": "dm-story-frame",
+          "status": "NARRATIVE_COMPLETE_ATOMIC_PARTIAL"
+        },
+        {
+          "code": "INDEPENDENT_FULL_ARC_REVIEW_UNDETERMINED",
+          "reason": "Correction closure adds no whole-arc source reread or blanket independent approval.",
+          "spine_id": "dm-story-frame",
+          "status": "UNDETERMINED"
+        }
+      ],
+      "source_readiness": "BLOCKED",
+      "title": "The King Who Could Not Let Go",
+      "visual_score": 3
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "character_ids": [
+    "dm-devi",
+    "dm-devi-troops",
+    "dm-asura-army"
+  ],
+  "continuity_in": "after-page-13",
+  "continuity_out": "after-page-14",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-devi",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-devi-troops",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-asura-army",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-014"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "immersive hold",
+    "type": "FULL_PAGE"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p14-narration",
+      "placement": "caption-safe-region",
+      "text": "With each battle breath, new troops arise bearing varied weapons as drums and conches sound."
+    }
+  ],
+  "location_id": "battlefield",
+  "moment_ids": [
+    "army_from_devi_breath"
+  ],
+  "narrative_beats": [
+    "With each battle breath, new troops arise bearing varied weapons as drums and conches sound."
+  ],
+  "page_id": "page-5aca23381e148b472373cd8c",
+  "page_number": 14,
+  "panel_count": 1,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-devi-troops",
+        "dm-asura-army"
+      ],
+      "composition": "Wide establishing composition for An Army from Breath",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p14-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Establish An Army from Breath in battlefield: With each battle breath, new troops arise bearing varied weapons as drums and conches sound.",
+        "shot_scale": "wide"
+      },
+      "location_id": "battlefield",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p14-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Establish An Army from Breath in battlefield: With each battle breath, new troops arise bearing varied weapons as drums and conches sound."
+    }
+  ],
+  "reading_order": [
+    "p14-panel-01"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p14-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-014-a",
+    "claim-014-b"
+  ],
+  "title": "An Army from Breath",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation"
+  ],
+  "version": 2,
+  "visual_intent": "A cinematic story beat with exact editable lettering and source-bounded imagery."
+}

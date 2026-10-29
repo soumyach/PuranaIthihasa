@@ -1,0 +1,63 @@
+{
+  "book_id": "DM04",
+  "content_hash": "5aeffce11b5ac56336be0221c87f8e0c13430e40dfad804e14b468318b56dafe",
+  "id": "autonomous-pilot-generation-requests/page-54d61ef5bfcb1159088ac489--p23-panel-01-68f2eaf98053ca8271d79075",
+  "kind": "autonomous-pilot-generation-requests/page-54d61ef5bfcb1159088ac489--p23-panel-01",
+  "parent_hash": null,
+  "payload": {
+    "automatic_retry_authorized": false,
+    "base_image": null,
+    "book_id": "DM04",
+    "campaign_approval_id": "approval-10d8e25958b7ae7dbb00eb57",
+    "campaign_id": "dm04-pr12-autonomous-multi-page-pilot-01",
+    "campaign_subject_hash": "fd9864465aebf8e0c121f72ce8a4249d08af372a48829ab926b0a223e6956b21",
+    "maximum_operations_for_unit": 1,
+    "maximum_paid_spend_minor_units": 0,
+    "milestone": "PR12",
+    "operation": "generate",
+    "page_id": "page-54d61ef5bfcb1159088ac489",
+    "panel_id": "p23-panel-01",
+    "prompt": "Create one clean portrait 3:4 immersive full-page illustration for DM04 page 23, a single exact reversal. Mahiṣāsura appears only in massive dark-umber buffalo form, surging from the near foreground; his muzzle, hooves, tail and horns scatter the warm ivory-gold breath-born troops. Do not show a human, lion or elephant antagonist form. At the top of the vertical field, Devī/Chandikā and her distinct tawny-gold dark-maned lion hold a small but unbroken opposing line. Devī wears classical modest Indian dress in deep blue, warm ivory and antique gold, with radiant crown and sourced equipment only. Use storm-dark edge light against her gold, readable depth, stable ridge and an uncluttered upper-left lettering area. REFERENCE A supplies premium Khatakshetra devotional painterly identity and focal hierarchy. REFERENCE B supplies only immersive climax depth and before/after visual force; omit its characters, blood, flags, skulls, armor, weapons and theology. No text, balloons, border, watermark, gore, Western fantasy armor, Greco-Roman helmets, invented emblems or unrelated divine iconography. Family-reading appropriate.",
+    "prompt_sha256": "ff22f170c3c9da52534da3f9bc4a48dd08efdebd91bc5d10d3a7141ea2f79afd",
+    "provider_id": "codex-built-in-image-gen",
+    "provider_interface": "referenced_image_paths",
+    "references": [
+      {
+        "approval_status": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY",
+        "available": true,
+        "content_transfer": "FORBIDDEN",
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+        "reference_id": "kgs-satya-p01",
+        "role": "A_SERIES_VISUAL_IDENTITY",
+        "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+      },
+      {
+        "approval_status": "CURATED_PRESENTATION_REFERENCE_NOT_SOURCE_AUTHORITY",
+        "available": true,
+        "content_transfer": "FORBIDDEN",
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+        "reference_id": "kgs-dm08-p28",
+        "role": "B_PAGE_PANEL_COMPOSITION",
+        "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5"
+      },
+      {
+        "approval_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_DM04_CHARACTER_ASSET",
+        "available": false,
+        "content_transfer": "NOT_APPLICABLE",
+        "role": "C_APPROVED_CHARACTER_REFERENCE"
+      },
+      {
+        "approval_status": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_DM04_SETTING_ASSET",
+        "available": false,
+        "content_transfer": "NOT_APPLICABLE",
+        "role": "D_APPROVED_SETTING_REFERENCE"
+      }
+    ],
+    "request_hash": "4d355deb4b28ce765c714a646875dcd325dbd6cc0e0caa07d313dc583efb2d1f",
+    "schema_version": "1.0",
+    "text_in_image": false,
+    "unit_id": "page-54d61ef5bfcb1159088ac489--p23-panel-01"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "milestone": "PR12",
+  "book_id": "DM04",
+  "page_id": "page-27d143ae995bf60742b65c5b",
+  "page_number": 1,
+  "reviewed_at": "2026-10-21T16:43:28Z",
+  "reviewer": {
+    "id": "/root/pr12_visual_reviewer",
+    "role": "INDEPENDENT_ACTUAL_PIXEL_COMPOSED_PAGE_REVIEWER",
+    "image_capable": true,
+    "inspected_actual_pixels": true,
+    "reading_size": "ACTUAL_READING_SIZE",
+    "generated_or_edited_image": false,
+    "producer_independence": "Independent of codex-root-image-producer-pr12 and the page composer"
+  },
+  "no_generation_attestation": "The reviewer did not generate, edit, crop, compose or otherwise modify any image and did not alter production, approval or campaign state.",
+  "composed_png": {
+    "path": "books/DM04/autonomous-pilot/page-previews/page-27d143ae995bf60742b65c5b/v0001/0001-page-27d143ae995bf60742b65c5b.png",
+    "sha256": "bab574a77ee2630d1eeef2145f82eb08968c086013bb8e63b3db78dc1424fb34",
+    "width": 1086,
+    "height": 1448,
+    "inspection_modes": ["ORIGINAL_PIXELS", "ACTUAL_READING_SIZE"]
+  },
+  "bound_records": {
+    "spec_path": "books/DM04/autonomous-pilot/page-previews/page-27d143ae995bf60742b65c5b/v0001.spec.json",
+    "composition_path": "books/DM04/autonomous-pilot/page-previews/page-27d143ae995bf60742b65c5b/v0001/0001-page-27d143ae995bf60742b65c5b.composition.json",
+    "composition_sha256": "dabd5d07a76302390388ed3c2b685d168448e513799d62c43236876767b3647d",
+    "render_path": "books/DM04/autonomous-pilot/page-previews/page-27d143ae995bf60742b65c5b/v0001/0001-page-27d143ae995bf60742b65c5b.render.json",
+    "render_sha256": "f3ddb8e7130d40dbbf2e0ef3e6534be468a6d0abc339a8c306954a6d735a45c5",
+    "validation_path": "books/DM04/autonomous-pilot/page-previews/page-27d143ae995bf60742b65c5b/v0001/0001-page-27d143ae995bf60742b65c5b.validation.json",
+    "validation_sha256": "e62e254b09db2a0ddc6cd27a5aecb1598871ec927a2ccf6aee74890677538cc8"
+  },
+  "assessment_summary": {
+    "manuscript_and_storyboard_fidelity": "PASS_EXACT_LOCKED_NARRATION_AND_DIALOGUE",
+    "two_beat_sequential_composition": "PASS_GENUINE_WIDE_TO_OVER_SHOULDER",
+    "editable_lettering": "PASS",
+    "ordinary_reading_size": "PASS",
+    "balloon_tail_and_speaker_mapping": "PASS_MEDHAS",
+    "clipping_and_safe_bounds": "PASS",
+    "face_and_hand_occlusion": "PASS_NO_FACE_OR_HAND_OBSCURED",
+    "cultural_and_visual_integrity": "PASS",
+    "gold_standard_alignment": "PASS_WITH_ADVISORY_PRESENTATION_GAP",
+    "non_production_label": "PASS_VISIBLE",
+    "private_diagnostic_pdf_proof": "PASS_ELIGIBLE"
+  },
+  "overall_verdict": "PASS",
+  "private_pdf_proof_eligible": true,
+  "publication_eligible": false,
+  "source_images_promoted": false,
+  "findings": [
+    {
+      "severity": "ADVISORY",
+      "criterion": "GOLD_STANDARD_PRESENTATION_ALIGNMENT",
+      "discrepancy": "The large rectangular dialogue balloon and long diagonal tail are mechanically heavier than the PR7 conversation reference.",
+      "impact": "Acceptable only for the labeled private diagnostic proof, not publication polish."
+    },
+    {
+      "severity": "ADVISORY",
+      "criterion": "PANEL_ART_VISIBILITY",
+      "discrepancy": "The dialogue box covers substantial lower-left shoulder and fire detail but no face, hand or required action.",
+      "impact": "Narrative clarity remains intact; future approved redesign should reserve more art-specific lettering space."
+    },
+    {
+      "severity": "ADVISORY",
+      "criterion": "SOURCE_ASSET_STATUS",
+      "discrepancy": "Both source images retain their independent FIX verdicts.",
+      "impact": "This page-level PASS does not promote either source image or certify publication readiness."
+    }
+  ],
+  "remaining_quality_issues": [
+    "Use a more compact speaker-proximate balloon and shorter tail for future Gold Standard polish.",
+    "Recover more shoulder and fire-plane detail in any future publication-authorized redesign.",
+    "Obtain separate source-image approval and a new publication-readiness review before public use."
+  ],
+  "eligibility_scope": "PRIVATE_DIAGNOSTIC_PDF_PROOF_ONLY",
+  "restriction": "PASS does not promote either source image, certify publication readiness, authorize publication, distribution, deployment, push or merge, or permit additional image operations."
+}

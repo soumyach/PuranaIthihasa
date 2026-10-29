@@ -1,0 +1,299 @@
+{
+  "execution": {
+    "agent_id": "/root/pr4_source_rights",
+    "attestation_scope": "ORCHESTRATOR_SESSION_RECORD_NOT_CRYPTOGRAPHIC_IDENTITY",
+    "capability": "editorial_review",
+    "cost_minor_units": 0,
+    "executed": true,
+    "mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+    "paid_api_calls": 0,
+    "role": "source-evidence"
+  },
+  "handoff_hash": "54f9906e9b1bc600cfd1292ad64c40b404bceb31e06eda16091225c024b9ac6f",
+  "id": "agent-response-db98cd7cbc6584037dadd0b0",
+  "orchestrator_attested": true,
+  "request_hash": "e06b3ac9ac6ec8dc30576bee48afdca30e64357f8de8cb6326602aa0ab184c7b",
+  "response_hash": "94d2d3c27c97f08ff583981b377cb44dcc5e23547dbb9fa90f5e823e107b9265",
+  "result": {
+    "review": {
+      "dimension_assessments": [
+        {
+          "dimension": "causal_sequence",
+          "result": "PASS",
+          "summary": "V2 preserves the complete locked sequence despite its literary compression: Madhu and Kaitabha threaten Brahma while Vishnu sleeps; Brahma praises and petitions Yoganidra; her withdrawal and appearance enable Vishnu's awakening; five thousand years of arm-to-arm combat lead to the deluded demons' joint boon offer; Vishnu chooses their death, accepts their unflooded-earth condition, meets it, and ends them with the discus. No repair reorders a source event or introduces another grantor, boon, condition, or mechanism."
+        },
+        {
+          "dimension": "character_and_divine_identity_accuracy",
+          "result": "PASS",
+          "summary": "Medhas, Yoganidra, Vishnu, Shesha, Brahma, Madhu, and Kaitabha remain distinct with their source-bounded roles unchanged. The shorter chapters still identify Yoganidra as the power of cosmic sleep who withdraws and appears, Vishnu as sleeper and combatant, and Madhu and Kaitabha as joint boon offerers and condition-setters. No genealogy, older invulnerability bargain, outside boon-giver, identity collapse, or unsupported divine motive appears."
+        },
+        {
+          "dimension": "complete_source_event_coverage",
+          "result": "PASS",
+          "summary": "All four required events, dm-event-004 through dm-event-007, remain substantively present. The repairs delete redundant source-boundary explanation but not an event: the eternal-versus-purposeful-appearance distinction, dissolution setting and threat; Brahma's attributed hymn and request; Yoganidra's source-named withdrawal, appearance, awakening, combat duration, delusion and joint boon offer; and the death request, condition, acceptance, discus action and fatal outcome are retained across the chapters, claim map, climax and ending."
+        },
+        {
+          "dimension": "ending",
+          "result": "PASS",
+          "summary": "The compressed final story chapter still states that the condition is met, Vishnu raises the discus, its circle ends the contest, the boon ends the demons, Brahma is safe, and the lotus danger is over. The immutable ending and claim-007-c remain explicit that Vishnu kills Madhu and Kaitabha with the discus; the separately headed modern reflection follows only after source closure. No recession of the waters, later sacred event, third attacker, or next-book hook is invented."
+        },
+        {
+          "dimension": "factual_and_theological_accuracy",
+          "result": "PASS",
+          "summary": "The literary cuts introduce no factual or theological drift. Brahma remains the identified speaker of the cosmic hymn; Yoganidra's withdrawal anatomy, five-thousand-year duration, arm-to-arm combat, delusion, joint boon offer, water condition and discus outcome remain within the locked evidence. V2 removes the in-story explanation of the bodily-locus conflict but still asserts no thigh, lap, buttocks or other precise location, and the unchanged source note explicitly preserves that unresolved boundary."
+        },
+        {
+          "dimension": "framing_and_background",
+          "result": "PASS",
+          "summary": "Medhas still frames the primordial episode, and the shortened prose imports no external demon history or exhaustive-scripture claim. Original scene-setting and combat rhythm remain classified as DRISHTI or KALPANA in the unchanged claim map. Chapter 8 remains separately titled and begins by identifying itself as a modern editorial reflection rather than scripture; its family question adds no source event or sacred-character speech."
+        },
+        {
+          "dimension": "quotation_and_source_notes",
+          "result": "PASS",
+          "summary": "All nine dialogue records and their evidence links are unchanged, non-verbatim, and adaptation-noted. The shortened hymn chapter still grammatically attributes both praise and appeal to Brahma; it does not turn the lines into narrator-certified doctrine. The unchanged source note records the exact event boundary, attributed-praise rule, non-verbatim dialogue, body-locus omission, excluded backstories, DM08 benchmark-only use, and continuing illustration, PDF, publication, public-sharing and distribution blocks."
+        }
+      ],
+      "evidence_checks": [
+        {
+          "changed_top_level_fields": [
+            "chapters",
+            "creator",
+            "editorial_reflection",
+            "version"
+          ],
+          "kind": "LITERARY_REPAIR_SOURCE_DRIFT_CHECK",
+          "note": "The repairs remove explanatory and reflective scaffolding and tighten the final action. They do not alter source ids, source order, claim classifications, dialogue provenance, event coverage, the explicit immutable ending, the source note, or any packet and clearance binding. The compressed ch-07 remains fatal in meaning: the discus ends the contest and the boon 'ended them,' while the unchanged ending and claim-007-c state the killing unambiguously.",
+          "prior_manuscript_hash": "8b7dc126012186ada26df3b6acb16e46fcc72a600ad151de49f6aaf3c06d2c44",
+          "result": "PASS",
+          "reviewed_manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+          "section_ids": [
+            "ch-02",
+            "ch-03",
+            "ch-04",
+            "ch-06",
+            "ch-07",
+            "ch-08"
+          ],
+          "unchanged_source_control_fields": [
+            "beats",
+            "claim_map",
+            "dialogue",
+            "event_coverage",
+            "climax",
+            "aftermath",
+            "ending",
+            "source_note",
+            "source_packet_hashes",
+            "source_clearance_hash"
+          ]
+        },
+        {
+          "event_id": "dm-event-004",
+          "evidence_ids": [
+            "dm-evidence-004"
+          ],
+          "kind": "SOURCE_EVENT_CHECK",
+          "manuscript_claim_ids": [
+            "claim-004-a",
+            "claim-004-b",
+            "claim-004-c",
+            "claim-004-d"
+          ],
+          "note": "Medhas's distinction, cosmic dissolution, Vishnu asleep on Shesha under Yoganidra, lotus-seated Brahma, the demons' ear-region origin and threat, and Brahma's turn toward Yoganidra are intact. Removing the negative backstory sentence creates no gap and adds no genealogy or boon. The locked packet records this event against one English witness.",
+          "result": "PASS",
+          "section_ids": [
+            "ch-01",
+            "ch-02",
+            "beat-004"
+          ]
+        },
+        {
+          "event_id": "dm-event-005",
+          "evidence_ids": [
+            "dm-evidence-005",
+            "dm-supp-evidence-brahma-hymn"
+          ],
+          "kind": "SOURCE_EVENT_CHECK",
+          "manuscript_claim_ids": [
+            "claim-005-a",
+            "claim-005-b",
+            "claim-005-c"
+          ],
+          "note": "The accessible hymn compression retains sacrificial utterance, creation, preservation, dissolution, knowledge, illusion, nature, nourishment, peace and armed power, followed by the request for demon-delusion and Vishnu's awakening. The revised chapter still opens with Brahma gathering attention and praising, then labels his praise as a direct appeal, so removing the redundant attribution disclaimer does not change the speaker or elevate the passage to project-certified doctrine.",
+          "result": "PASS",
+          "section_ids": [
+            "ch-03",
+            "beat-005",
+            "dlg-002",
+            "dlg-003"
+          ]
+        },
+        {
+          "event_id": "dm-event-006",
+          "evidence_ids": [
+            "dm-evidence-006",
+            "dm-sanskrit-evidence-006"
+          ],
+          "kind": "SOURCE_EVENT_CHECK",
+          "manuscript_claim_ids": [
+            "claim-006-a",
+            "claim-006-b",
+            "claim-006-c",
+            "claim-006-d"
+          ],
+          "note": "Yoganidra still withdraws from Vishnu's eyes, mouth, nose, arms, heart and breast, appears before Brahma, and enables his awakening. Vishnu fights both demons with his arms for five thousand years; they are deluded and intoxicated with strength and jointly offer the boon. The tightened combat sentence preserves the arm-to-arm mechanism, while the unchanged claim and dialogue records keep the fight rhythm and split boon lines explicitly adapted and non-verbatim.",
+          "result": "PASS",
+          "section_ids": [
+            "ch-04",
+            "ch-05",
+            "beat-006",
+            "dlg-004",
+            "dlg-005"
+          ]
+        },
+        {
+          "event_id": "dm-event-007",
+          "evidence_ids": [
+            "dm-evidence-007",
+            "dm-sanskrit-evidence-007"
+          ],
+          "kind": "SOURCE_EVENT_CHECK",
+          "manuscript_claim_ids": [
+            "claim-007-a",
+            "claim-007-b",
+            "claim-007-c",
+            "claim-007-d",
+            "claim-007-e"
+          ],
+          "note": "Vishnu's requested fatal outcome, both demons' joint unflooded-earth condition, his acceptance, the condition being met, the discus action and their death remain preserved across the beat, claim map, climax, final chapter and explicit ending. The non-verbatim 'overcome by me' line does not create a nonfatal outcome because ch-07 says the boon ended them and the immutable ending states they are killed. V2 asserts no anatomical locus, while the unchanged source note explicitly reserves the thigh, lap, buttocks and other precise readings.",
+          "result": "PASS",
+          "section_ids": [
+            "ch-06",
+            "ch-07",
+            "beat-007",
+            "dlg-006",
+            "dlg-007",
+            "dlg-008",
+            "dlg-009",
+            "ending"
+          ]
+        },
+        {
+          "claim_ids": [
+            "claim-005-a",
+            "claim-005-b",
+            "claim-005-c"
+          ],
+          "event_ids": [
+            "dm-event-005"
+          ],
+          "evidence_ids": [
+            "dm-evidence-005",
+            "dm-supp-evidence-brahma-hymn"
+          ],
+          "kind": "ATTRIBUTED_PRAISE_CHECK",
+          "note": "Brahma remains the explicit praising and petitioning speaker in the revised chapter. The unchanged dialogue metadata and source note continue to classify the hymn as non-verbatim attributed praise, not an independent theological statement by the project.",
+          "result": "PASS",
+          "section_ids": [
+            "ch-03",
+            "source_note"
+          ]
+        },
+        {
+          "claim_ids": [
+            "claim-007-c",
+            "claim-007-d"
+          ],
+          "event_ids": [
+            "dm-event-007"
+          ],
+          "evidence_ids": [
+            "dm-evidence-007",
+            "dm-sanskrit-evidence-007"
+          ],
+          "kind": "BODY_LOCUS_VARIANT_CHECK",
+          "note": "The shortened final chapter states only that the place met the water condition. It does not assert a thigh, lap, buttocks or another bodily site, and the source note continues to disclose that the bounded witnesses leave the precise locus unresolved.",
+          "result": "PASS",
+          "section_ids": [
+            "ch-07",
+            "source_note"
+          ]
+        },
+        {
+          "claim_ids": [
+            "claim-004-d",
+            "claim-005-c",
+            "claim-006-d",
+            "claim-007-e",
+            "claim-editorial-a"
+          ],
+          "dialogue_ids": [
+            "dlg-001",
+            "dlg-002",
+            "dlg-003",
+            "dlg-004",
+            "dlg-005",
+            "dlg-006",
+            "dlg-007",
+            "dlg-008",
+            "dlg-009"
+          ],
+          "event_ids": [
+            "dm-event-004",
+            "dm-event-005",
+            "dm-event-006",
+            "dm-event-007"
+          ],
+          "kind": "ADAPTATION_AND_QUOTATION_CHECK",
+          "note": "The provenance classification and dialogue records are unchanged from v1: scenic, dialogue, compression and reflection material remains DRISHTI or KALPANA; every spoken line is non-verbatim; and the shorter family reflection remains explicitly outside scripture and sacred-character speech.",
+          "result": "PASS"
+        },
+        {
+          "event_ids": [
+            "dm-event-004",
+            "dm-event-005",
+            "dm-event-006",
+            "dm-event-007"
+          ],
+          "kind": "SOURCE_NOTE_AND_ENDING_CHECK",
+          "note": "The compressed story reaches the locked fatal outcome before the editorial reflection, and the unchanged ending and source note preserve the exact evidence, variant and private-draft boundary. No literary deletion is used to claim broader source, rights, theological or publication status.",
+          "result": "PASS",
+          "section_ids": [
+            "ch-07",
+            "ch-08",
+            "ending",
+            "source_note"
+          ]
+        }
+      ],
+      "findings": [],
+      "limitations": [
+        "This PASS is an independent SOURCE_FIDELITY review of immutable DM02 manuscript v2 at hash ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762 against the single locked Story Packet hash b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd. It does not apply to another version or derivative.",
+        "The comparison to v1 is a source-drift audit only. It does not adopt or certify the literary merits of the revisions, age-band suitability, or visual adaptability.",
+        "PASS means semantic fidelity to the locked four-event packet and claim map only. It does not certify exhaustive extraction of Devi Mahatmya chapter 1, the wider text, or a tradition-wide account.",
+        "dm-event-004 remains supported by the single locked English witness. The Sanskrit support for dm-event-005 through dm-event-007 is limited to the cited displayed ranges; this review performs no new translation, manuscript collation, or critical-edition adjudication.",
+        "The jaghane or bodily-locus difference remains unresolved. V2 passes because it asserts no precise location and retains the source-note disclosure, not because the variant has been settled.",
+        "The non-scriptural dialogue, scenic bridges, combat compression and family reflection pass only as explicitly classified adaptation; this review does not recategorize them as MULA, quotation, or theological teaching.",
+        "This review neither certifies nor changes source readiness, private-draft rights, legal or territorial clearance, theological or cultural authority, iconographic accuracy, visual quality, PDF quality, publication readiness, or distribution eligibility.",
+        "Illustration, visual development, page composition, PDF generation, publication, public sharing and distribution remain blocked under separate repository gates; this manuscript-level PASS does not override them."
+      ],
+      "result": "PASS",
+      "review_perspective": "SOURCE_FIDELITY",
+      "reviewed_dimensions": [
+        "causal_sequence",
+        "character_and_divine_identity_accuracy",
+        "complete_source_event_coverage",
+        "ending",
+        "factual_and_theological_accuracy",
+        "framing_and_background",
+        "quotation_and_source_notes"
+      ],
+      "reviewed_manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+      "reviewed_packet_hashes": [
+        "b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd"
+      ]
+    }
+  },
+  "schema_version": "1.0",
+  "stored_at": "2026-10-22T05:19:44Z"
+}

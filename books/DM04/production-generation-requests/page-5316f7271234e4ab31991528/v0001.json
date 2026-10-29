@@ -1,0 +1,69 @@
+{
+  "book_id": "DM04",
+  "content_hash": "0bc362f57b74cacbf570c4ef8f94b9cda05799efce8c140d64c45816671327df",
+  "id": "production-generation-requests/page-5316f7271234e4ab31991528-71f80469ba614020381d7ca3",
+  "kind": "production-generation-requests/page-5316f7271234e4ab31991528",
+  "parent_hash": null,
+  "payload": {
+    "base_image": null,
+    "book_id": "DM04",
+    "campaign_approval_id": "approval-9ac3c1c3bc2a352021552a8d",
+    "campaign_id": "dm04-pr10-real-production-slice-01",
+    "campaign_subject_hash": "5a5b7c2a606f47a9b72ef001f19ef9c8736f4b328d2434dae08c5d0b08c061d7",
+    "lettering_hash": "54f2c1b525456c1d0c573601ec8aa178e17f815fcf0488e0ab74ae8d5d82df2e",
+    "maximum_operations_for_page": 1,
+    "maximum_paid_spend_minor_units": 0,
+    "operation": "generate",
+    "page_id": "page-5316f7271234e4ab31991528",
+    "page_number": 4,
+    "page_script_sha256": "f7322c12dd28c43c0c9172f2d06fde902a2916c7a082403cb3d365e707bab487",
+    "production_unit": "FULL_PAGE_CLEAN_ART",
+    "prompt": "FULL_PAGE_IMMERSIVE DM04 manifestation. One action only: the named gods' distinct radiances form the corresponding regions of one complete Devī body. Keep a coherent many-armed divine identity, all arm attachments anatomical, donors secondary and fully inside frame. Body formation only—no weapons, gifts, lion, mounts, chariot or halo disks. Reference A supplies series finish only; B supplies manifestation rhythm only. Clean art, no text; honor the p04 narration geometry. Never copy Kali, Chamunda, Raktabija, the Mothers, Vishnu's cover pose, or any benchmark story content.",
+    "provider_id": "codex-built-in-image-gen",
+    "provider_interface": "referenced_image_paths",
+    "reference_conditioning_required": true,
+    "references": [
+      {
+        "available": true,
+        "content_transfer": "FORBIDDEN",
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+        "reference_id": "kgs-satya-p01",
+        "role": "REFERENCE_A_SERIES_VISUAL_IDENTITY",
+        "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b",
+        "use": "devotional central hierarchy and premium series finish only"
+      },
+      {
+        "available": true,
+        "content_transfer": "FORBIDDEN",
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+        "reference_id": "kgs-dm08-p12",
+        "role": "REFERENCE_B_PAGE_COMPOSITION",
+        "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4",
+        "use": "manifestation staging, scale change and directed energy only"
+      },
+      {
+        "available": false,
+        "content_transfer": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+        "path": null,
+        "reference_id": null,
+        "role": "REFERENCE_C_CHARACTER_IDENTITY",
+        "sha256": null,
+        "use": "locked dm-devi and dm-gods text registry only"
+      },
+      {
+        "available": false,
+        "content_transfer": "UNAVAILABLE_NO_HUMAN_APPROVED_EXACT_ASSET",
+        "path": null,
+        "reference_id": null,
+        "role": "REFERENCE_D_SETTING_ENVIRONMENT",
+        "sha256": null,
+        "use": "manifestation-space location bible only; no approved exact image"
+      }
+    ],
+    "request_hash": "7e24e70043a86cf13a3be457c4c1c095fa2821d852c2e82ff970fafea6f065f3",
+    "schema_version": "1.0",
+    "text_in_image": false
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

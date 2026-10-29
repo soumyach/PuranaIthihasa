@@ -1,0 +1,998 @@
+{
+  "book_id": "DM02",
+  "execution_boundary": {
+    "identity_assurance": "SESSION_ATTESTATION_ONLY_NOT_CRYPTOGRAPHIC",
+    "mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+    "orchestrated_by_current_codex_session": true,
+    "paid_api_calls_allowed": 0,
+    "programmatic_spawn_available_inside_repository": false
+  },
+  "handoff_hash": "5d02dd8abab337dce4c24922c1dda52815e237875cff63f13c41c889c4f172c3",
+  "id": "agent-handoff-d1907c56616f31f57eb6ec9d",
+  "kind": "EDITORIAL_REVIEW",
+  "locked_input_hashes": [
+    "483cc82d41b142878778e107deabd090ec623ccf4a48410b28d80a3c95f1213e",
+    "601fc63f99cb9ad7d7feb14b45216c573568c4afe395f192e9d97fb83b211457",
+    "8b7dc126012186ada26df3b6acb16e46fcc72a600ad151de49f6aaf3c06d2c44",
+    "b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd"
+  ],
+  "request": {
+    "book_id": "DM02",
+    "constraints": [
+      "Review the immutable version; do not rewrite it in place.",
+      "Tie source-fidelity findings to event, claim, and evidence ids.",
+      "Return PASS, FIX, or ESCALATE; critical findings cannot average to PASS.",
+      "Do not certify publication readiness, legal clearance, or theological authority."
+    ],
+    "dossier_hash": "601fc63f99cb9ad7d7feb14b45216c573568c4afe395f192e9d97fb83b211457",
+    "locked_source_evidence": [
+      {
+        "adaptation_boundaries": [
+          {
+            "code": "NO_UNSOURCED_FACTS",
+            "rule": "Every critical factual claim must cite evidence or be explicitly classified as adaptation."
+          },
+          {
+            "code": "UNSPECIFIED_STAYS_UNSPECIFIED",
+            "rule": "Missing motivation, iconography, dialogue, chronology, or causality must not be invented."
+          },
+          {
+            "code": "BOUNDED_NOT_EXHAUSTIVE",
+            "rule": "A COMPLETE spine covers only its declared bounded chronology."
+          }
+        ],
+        "citations": [
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-004",
+            "locator": "DM 1 / Pargiter canto 81, web lines 87–89",
+            "paraphrase": "Medhas distinguishes eternal Devī from births described when she appears for divine purposes. At cosmic dissolution Viṣṇu sleeps on Śeṣa; Madhu and Kaiṭabha arise from his ear-region and threaten lotus-seated Brahmā.",
+            "passage_id": "dm-ch01",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-005",
+            "locator": "DM 1 / Pargiter canto 81, web lines 90–96",
+            "paraphrase": "Brahmā praises the goddess as sacrificial utterance, cosmic creation, preservation and dissolution, knowledge, illusion, nature and armed power. He asks her to delude the demons and awaken Viṣṇu to kill them.",
+            "passage_id": "dm-ch01",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-006",
+            "locator": "DM 1 / Pargiter canto 81, web lines 98–99",
+            "paraphrase": "Yoganidrā leaves Viṣṇu’s eyes, mouth, nose, arms, heart and breast and appears before Brahmā. Viṣṇu awakens and fights the demons with his arms for five thousand years; deluded and intoxicated with strength, they offer him a boon.",
+            "passage_id": "dm-ch01",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-evidence-007",
+            "locator": "DM 1 / Pargiter canto 81, web lines 100–109",
+            "paraphrase": "Viṣṇu chooses their death at his hands. They stipulate a place where earth is not flooded; he accepts and kills them with his discus. The Sanskrit says jaghane, while Pargiter renders the bodily locus ambiguously; a precise thigh-position is reserved for review.",
+            "passage_id": "dm-ch01",
+            "source_id": "dm-source",
+            "verification_notes": "Checked against cited English narrative body. This status does not assert complete Sanskrit collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; direct reading",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-sanskrit-evidence-006",
+            "locator": "DM 1.89–95",
+            "paraphrase": "Yoganidrā leaves Viṣṇu’s eyes, mouth, nose, arms, heart and breast and appears before Brahmā. Viṣṇu awakens and fights the demons with his arms for five thousand years; deluded and intoxicated with strength, they offer him a boon.",
+            "passage_id": "dm-sanskrit-006",
+            "source_id": "dm-source",
+            "verification_notes": "Selected displayed Sanskrit range checked for local names, sequence and stated mechanisms. Cross-witness comparisons in paraphrase rely jointly on linked English evidence; this is not full independent translation or edition collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; selected Sanskrit reading",
+            "witness_id": "dm-sanskritdocuments"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-sanskrit-evidence-007",
+            "locator": "DM 1.96–104",
+            "paraphrase": "Viṣṇu chooses their death at his hands. They stipulate a place where earth is not flooded; he accepts and kills them with his discus. The Sanskrit says jaghane, while Pargiter renders the bodily locus ambiguously; a precise thigh-position is reserved for review.",
+            "passage_id": "dm-sanskrit-007",
+            "source_id": "dm-source",
+            "verification_notes": "Selected displayed Sanskrit range checked for local names, sequence and stated mechanisms. Cross-witness comparisons in paraphrase rely jointly on linked English evidence; this is not full independent translation or edition collation.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM research agent; selected Sanskrit reading",
+            "witness_id": "dm-sanskritdocuments"
+          },
+          {
+            "classification": "DIRECT_TEXT",
+            "id": "dm-supp-evidence-brahma-hymn",
+            "locator": "DM 1.73–87",
+            "paraphrase": "Brahmā addresses Yoganidrā as sacrificial utterances and as cosmic, intellectual, nocturnal and nourishing names; he describes bhuśuṇḍī and parigha among weapons and asks for demon-delusion and Viṣṇu’s awakening.",
+            "passage_id": "dm-supp-passage-brahma-hymn",
+            "source_id": "dm-source",
+            "verification_notes": "Only bounded displayed Sanskrit checked. Hymnic identification is attributed to its speaker.",
+            "verification_status": "VERIFIED",
+            "verifier": "DM agent direct Sanskrit inspection",
+            "witness_id": "dm-sanskritdocuments"
+          }
+        ],
+        "events": [
+          {
+            "cause": null,
+            "changed_relationship_ids": [
+              "dm-rel-005",
+              "dm-rel-007"
+            ],
+            "consequences": [],
+            "details": "Medhas distinguishes eternal Devī from births described when she appears for divine purposes. At cosmic dissolution Viṣṇu sleeps on Śeṣa; Madhu and Kaiṭabha arise from his ear-region and threaten lotus-seated Brahmā.",
+            "evidence_ids": [
+              "dm-evidence-004"
+            ],
+            "id": "dm-event-004",
+            "introduced_entity_ids": [
+              "dm-vishnu",
+              "dm-shesha",
+              "dm-brahma",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "introduced_power_ids": [],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Brahmā seeks awakening of Viṣṇu.",
+            "participants": [
+              "dm-medhas",
+              "dm-yoganidra",
+              "dm-vishnu",
+              "dm-shesha",
+              "dm-brahma",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "passage_ids": [
+              "dm-ch01"
+            ],
+            "sequence": 4,
+            "setting": "Cosmic ocean",
+            "source_id": "dm-source",
+            "story_id": "dm-story-madhu-kaitabha",
+            "supporting_witness_ids": [
+              "dm-pargiter"
+            ],
+            "title": "Brahmā seeks awakening of Viṣṇu.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "cause": null,
+            "changed_relationship_ids": [
+              "dm-rel-009"
+            ],
+            "consequences": [],
+            "details": "Brahmā praises the goddess as sacrificial utterance, cosmic creation, preservation and dissolution, knowledge, illusion, nature and armed power. He asks her to delude the demons and awaken Viṣṇu to kill them.",
+            "evidence_ids": [
+              "dm-evidence-005",
+              "dm-supp-evidence-brahma-hymn"
+            ],
+            "id": "dm-event-005",
+            "introduced_entity_ids": [
+              "dm-sword",
+              "dm-trident",
+              "dm-club",
+              "dm-discus",
+              "dm-conch",
+              "dm-bow",
+              "dm-arrows",
+              "dm-bhushundi",
+              "dm-parigha"
+            ],
+            "introduced_power_ids": [],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Brahmā’s invocation addresses cosmic sleep.",
+            "participants": [
+              "dm-brahma",
+              "dm-yoganidra",
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha",
+              "dm-sword",
+              "dm-trident",
+              "dm-club",
+              "dm-discus",
+              "dm-conch",
+              "dm-bow",
+              "dm-arrows",
+              "dm-bhushundi",
+              "dm-parigha"
+            ],
+            "passage_ids": [
+              "dm-ch01",
+              "dm-supp-passage-brahma-hymn"
+            ],
+            "sequence": 5,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-madhu-kaitabha",
+            "supporting_witness_ids": [
+              "dm-pargiter",
+              "dm-sanskritdocuments"
+            ],
+            "title": "Brahmā’s invocation addresses cosmic sleep.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "cause": null,
+            "changed_relationship_ids": [
+              "dm-rel-010",
+              "dm-rel-011"
+            ],
+            "consequences": [],
+            "details": "Yoganidrā leaves Viṣṇu’s eyes, mouth, nose, arms, heart and breast and appears before Brahmā. Viṣṇu awakens and fights the demons with his arms for five thousand years; deluded and intoxicated with strength, they offer him a boon.",
+            "evidence_ids": [
+              "dm-evidence-006",
+              "dm-sanskrit-evidence-006"
+            ],
+            "id": "dm-event-006",
+            "introduced_entity_ids": [],
+            "introduced_power_ids": [
+              "dm-power-sleep"
+            ],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Demons become boon-offerers.",
+            "participants": [
+              "dm-yoganidra",
+              "dm-vishnu",
+              "dm-brahma",
+              "dm-madhu",
+              "dm-kaitabha"
+            ],
+            "passage_ids": [
+              "dm-ch01",
+              "dm-sanskrit-006"
+            ],
+            "sequence": 6,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-madhu-kaitabha",
+            "supporting_witness_ids": [
+              "dm-pargiter",
+              "dm-sanskritdocuments"
+            ],
+            "title": "Demons become boon-offerers.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          },
+          {
+            "cause": null,
+            "changed_relationship_ids": [
+              "dm-rel-006",
+              "dm-rel-008",
+              "dm-rel-157"
+            ],
+            "consequences": [],
+            "details": "Viṣṇu chooses their death at his hands. They stipulate a place where earth is not flooded; he accepts and kills them with his discus. The Sanskrit says jaghane, while Pargiter renders the bodily locus ambiguously; a precise thigh-position is reserved for review.",
+            "evidence_ids": [
+              "dm-evidence-007",
+              "dm-sanskrit-evidence-007"
+            ],
+            "id": "dm-event-007",
+            "introduced_entity_ids": [],
+            "introduced_power_ids": [
+              "dm-power-demon-offer"
+            ],
+            "order_type": "SOURCE_NARRATION",
+            "outcome": "Madhu and Kaiṭabha are slain under their stated condition.",
+            "participants": [
+              "dm-vishnu",
+              "dm-madhu",
+              "dm-kaitabha",
+              "dm-discus"
+            ],
+            "passage_ids": [
+              "dm-ch01",
+              "dm-sanskrit-007"
+            ],
+            "sequence": 7,
+            "setting": null,
+            "source_id": "dm-source",
+            "story_id": "dm-story-madhu-kaitabha",
+            "supporting_witness_ids": [
+              "dm-pargiter",
+              "dm-sanskritdocuments"
+            ],
+            "title": "Madhu and Kaiṭabha are slain under their stated condition.",
+            "verification_status": "VERIFIED",
+            "witness_id": "dm-pargiter"
+          }
+        ],
+        "packet_hash": "b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd",
+        "variants_and_conflicts": [
+          {
+            "description": "Pargiter main text Aruṇākṣa; its footnote gives Bombay Aruṇākhya. SanskritDocuments DM 11.52 reads Aruṇākhya, meaning named Aruṇa.",
+            "evidence_ids": [
+              "dm-evidence-056",
+              "dm-sanskrit-evidence-056"
+            ],
+            "id": "dm-variant-aruna",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "RETAINED_WITNESS_DIFFERENCE",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          },
+          {
+            "description": "Wisdomlib index prose labels DM as chapters 82–92; actual linked chapter heading and narrative boundaries are 81–93. Catalogue uses linked headings.",
+            "evidence_ids": [
+              "dm-evidence-001"
+            ],
+            "id": "dm-variant-chapter-map",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "RESOLVED_WITH_ACCESSIBLE_HEADINGS",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          },
+          {
+            "description": "DM9.30 calls Niśumbha ditija; record textual Diti-descendant descriptor, not an independently narrated biological mother–son genealogy.",
+            "evidence_ids": [
+              "dm-evidence-045",
+              "dm-sanskrit-evidence-045"
+            ],
+            "id": "dm-variant-ditija",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "RETAINED_ATTRIBUTED_DESCRIPTOR",
+            "type": "KINSHIP_INTERPRETATION"
+          },
+          {
+            "description": "Wisdomlib Pargiter display has corrupted rain/failure text and says heavy rain in the nourishment sentence; Sanskrit DM 11.46–48 explicitly says drought and nourishment until rain.",
+            "evidence_ids": [
+              "dm-evidence-054",
+              "dm-sanskrit-evidence-054"
+            ],
+            "id": "dm-variant-drought",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "SANSKRIT_READING_RECORDED",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          },
+          {
+            "description": "Sanskrit DM 11.50 explicitly announces Durgādevī after Durgama’s killing; the displayed Pargiter paragraph omits the name-sentence.",
+            "evidence_ids": [
+              "dm-evidence-054",
+              "dm-sanskrit-evidence-054"
+            ],
+            "id": "dm-variant-durga-name",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "RETAINED_WITNESS_DIFFERENCE",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          },
+          {
+            "description": "Pargiter canto 83 footnote 2 reports Bombay additions killing Kāla, Ugradarśana and Asiloman. These are footnote-attested variants, excluded from main event order pending edition inspection.",
+            "evidence_ids": [
+              "dm-evidence-018",
+              "dm-sanskrit-evidence-018"
+            ],
+            "id": "dm-variant-extra-chiefs",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "OPEN_UNDERLYING_EDITION",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          },
+          {
+            "description": "Pargiter’s killing sentence says heads and buttocks; Sanskrit has jaghane. Conventional thigh-position is not imposed until another reliable witness is inspected.",
+            "evidence_ids": [
+              "dm-evidence-007",
+              "dm-sanskrit-evidence-007"
+            ],
+            "id": "dm-variant-jaghane",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "OPEN",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          },
+          {
+            "description": "Pārvatī becoming Kālikā in ch5 and Kālī emanating from Ambikā in ch7 are separate source-scoped manifestation nodes; sameness not established by those scenes alone.",
+            "evidence_ids": [
+              "dm-evidence-033",
+              "dm-sanskrit-evidence-033"
+            ],
+            "id": "dm-variant-kalika-kali",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "RETAINED_DISTINCT_MANIFESTATIONS",
+            "type": "ENTITY_IDENTITY_CAUTION"
+          },
+          {
+            "description": "Pargiter interprets Kolāvidhvaṃsin as non-destroyers of Kolas; other common retellings translate destroyers. No etymological conclusion imposed.",
+            "evidence_ids": [
+              "dm-evidence-001"
+            ],
+            "id": "dm-variant-kola",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "OPEN",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          },
+          {
+            "description": "Pargiter has Mauryas; SanskritDocuments DM 8.6 has Maurvas. Manuscript/print collation needed before standardizing the group-name.",
+            "evidence_ids": [
+              "dm-evidence-036",
+              "dm-sanskrit-evidence-036"
+            ],
+            "id": "dm-variant-maurya",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "OPEN",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          },
+          {
+            "description": "Pargiter ch10 translates absorption into breasts; Sanskrit 10.6 says tanau, body. Graph records only absorption into Devī.",
+            "evidence_ids": [
+              "dm-evidence-047",
+              "dm-sanskrit-evidence-047"
+            ],
+            "id": "dm-variant-reabsorption-body",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "SANSKRIT_READING_RECORDED",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          },
+          {
+            "description": "Ch8 emits Caṇḍikā’s Śakti named Śivadūtī; Pargiter ch9 note identifies Śivadūtī with Caṇḍikā. Main graph retains emanation, avoids silently collapsing entities.",
+            "evidence_ids": [
+              "dm-evidence-038",
+              "dm-sanskrit-evidence-038"
+            ],
+            "id": "dm-variant-shivaduti",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "OPEN_THEOLOGICAL_IDENTIFICATION",
+            "type": "ENTITY_IDENTITY_CAUTION"
+          },
+          {
+            "description": "Pargiter adopts Ugradarśana as a name from Bombay reading; SanskritDocuments DM 2.43–44 has a participle and no such proper name.",
+            "evidence_ids": [
+              "dm-evidence-013",
+              "dm-sanskrit-evidence-013"
+            ],
+            "id": "dm-variant-ugradarshana",
+            "resolution": null,
+            "source_ids": [
+              "dm-source"
+            ],
+            "status": "RETAINED_WITNESS_DIFFERENCE",
+            "type": "EDITION_OR_TRANSLATION_VARIANT"
+          }
+        ]
+      }
+    ],
+    "manuscript": {
+      "aftermath": "Madhu and Kaitabha are defeated under the condition they themselves state. Brahma is no longer under their immediate threat, and the bounded episode closes without claiming that the cosmic waters recede or adding events beyond the locked arc.",
+      "audience": "Family read-aloud and independent readers around age ten and above; exact age band requires independent editorial confirmation.",
+      "beats": [
+        {
+          "chapter_ids": [
+            "ch-01",
+            "ch-02"
+          ],
+          "event_ids": [
+            "dm-event-004"
+          ],
+          "id": "beat-004",
+          "summary": "Medhas distinguishes eternal Devi from her purposeful appearances; at cosmic dissolution Vishnu sleeps on Shesha while Madhu and Kaitabha arise from his ear-region and threaten lotus-seated Brahma."
+        },
+        {
+          "chapter_ids": [
+            "ch-03"
+          ],
+          "event_ids": [
+            "dm-event-005"
+          ],
+          "id": "beat-005",
+          "summary": "Brahma addresses Yoganidra in an attributed hymn and asks her to delude the demons and awaken Vishnu."
+        },
+        {
+          "chapter_ids": [
+            "ch-04",
+            "ch-05"
+          ],
+          "event_ids": [
+            "dm-event-006"
+          ],
+          "id": "beat-006",
+          "summary": "Yoganidra withdraws from the source-named places in Vishnu, appears before Brahma, and enables his awakening; after five thousand years of combat, the deluded demons offer Vishnu a boon."
+        },
+        {
+          "chapter_ids": [
+            "ch-06",
+            "ch-07"
+          ],
+          "event_ids": [
+            "dm-event-007"
+          ],
+          "id": "beat-007",
+          "summary": "Vishnu requests that both demons die by his hand, accepts their unflooded-earth condition, and defeats them with his discus without specifying the disputed bodily locus."
+        },
+        {
+          "chapter_ids": [
+            "ch-08"
+          ],
+          "event_ids": [],
+          "id": "beat-editorial",
+          "summary": "A clearly labeled modern editorial reflection invites family discussion without presenting its interpretation as scripture."
+        }
+      ],
+      "book_id": "DM02",
+      "chapters": [
+        {
+          "id": "ch-01",
+          "text": "Sage Medhas began with a distinction.\n\n“The Goddess is eternal,” he said. “When the sacred account speaks of her appearing, it tells of the forms by which she becomes known for divine purposes.”\n\nThen his story moved beyond kingdoms, roads and remembered seasons, to the dissolution of a world.\n\nWater stretched through the vastness. No shore divided one direction from another. There was no field to cross, no mountain path to climb, no city lamp to mark a home. The flood of dissolution held the scene in a silence deeper than ordinary night.\n\nUpon Shesha rested Vishnu.\n\nHe was not keeping the light sleep of a traveller who might wake at the snap of a twig. Yoganidra, the divine power of cosmic sleep, held him in profound stillness. His breathing alone gave measure to the immeasurable quiet.\n\nFrom him rose a lotus, and upon that lotus sat Brahma.\n\nThe flower stood above the waters like the single open eye of a world not yet remade. Brahma had no ground beneath him—only the lotus, Vishnu below, and the unbroken flood beyond.\n\nVishnu slept.\n\nThe waters waited.\n\nAnd in that stillness, danger appeared.",
+          "title": "The Sleep Beyond the World"
+        },
+        {
+          "id": "ch-02",
+          "text": "From the region of Vishnu’s ears arose two Asuras: Madhu and Kaitabha.\n\nThe account gives no childhood for them, no family history and no earlier boon. They entered this story already powerful, moving through the waters of dissolution toward the lotus where Brahma sat.\n\nTheir purpose was plain. They threatened to kill him.\n\nBrahma looked from the approaching figures to Vishnu. The preserver still rested upon Shesha, held in the depth of Yoganidra. No call from the lotus had yet broken that sleep.\n\nMadhu and Kaitabha came nearer.\n\nThere was nowhere for Brahma to flee. Around the lotus lay the same endless flood. Below it slept the one who could face the threat. Yet the sleep upon Vishnu was itself divine power, not an ordinary weariness that Brahma could simply shake away.\n\nThe danger and the answer stood almost together: the threatening Asuras upon the waters, Vishnu beneath the lotus, and the power of sleep holding him still.\n\nBrahma did not address the sleepers with a hurried shout. He turned his praise toward Yoganidra herself.\n\nThe silence at the end of the world became a place of invocation.",
+          "title": "The Danger at the Lotus"
+        },
+        {
+          "id": "ch-03",
+          "text": "Brahma gathered his attention and praised the Goddess who held Vishnu in sleep.\n\n“You are the sacred utterance by which offerings are made,” he said. “You are the power by which creation arises, by which it is preserved, and by which it is drawn again into dissolution. You are knowledge, and you are the great illusion that can veil knowledge. You are nature, nourishment and peace. You are also power armed against danger.”\n\nThese were Brahma’s words of praise within the sacred story. They named Yoganidra through many cosmic and sacred functions; they were not a list invented by the storyteller, nor a declaration added by this book.\n\nMadhu and Kaitabha continued their approach.\n\nBrahma’s praise became a direct appeal.\n\n“Great Goddess, delude these two Asuras. Withdraw your sleep from Vishnu and awaken him, so that their threat may be ended.”\n\nThe lotus did not move away from danger. The waters did not open a road of escape. Nothing in the scene became smaller or safer.\n\nBut the invocation had found the power to whom it was addressed.\n\nThe change began within the stillness of Vishnu himself.",
+          "title": "Brahma’s Invocation"
+        },
+        {
+          "id": "ch-04",
+          "text": "Yoganidra withdrew from the places named in the account: from Vishnu’s eyes, mouth and nose; from his arms, heart and breast.\n\nThe withdrawal was not described as the loss of a mere shadow. The power that had held Vishnu in cosmic sleep now appeared before Brahma.\n\nFor one suspended moment, the whole scene had changed without the waters changing at all. Brahma remained upon the lotus. Madhu and Kaitabha remained near. Shesha still bore Vishnu above the flood.\n\nYet sleep no longer enclosed him.\n\nVishnu’s eyes opened.\n\nStillness gave way to attention. Rest gave way to readiness. He saw Brahma upon the lotus and the two Asuras who had come to destroy him.\n\nVishnu rose to meet Madhu and Kaitabha.\n\nNo army marched into the waters. No ranks gathered behind him. The source tells of a combat fought with his arms, close and unrelenting.\n\nThe two Asuras turned from the lotus to face him.\n\nBrahma’s danger had not vanished; it had become a confrontation. Yoganidra had answered the invocation by withdrawing, appearing before Brahma, and opening the way for Vishnu to wake.\n\nNow the long struggle began.",
+          "title": "When Sleep Stood Apart"
+        },
+        {
+          "id": "ch-05",
+          "text": "Vishnu grappled with Madhu and Kaitabha upon the cosmic waters.\n\nA hold was made and broken. One Asura drove forward; Vishnu checked him. The other closed from the side; Vishnu turned to meet him. Again they joined, separated and returned.\n\nYears passed, yet the struggle did not end.\n\nHundreds became thousands.\n\nFor five thousand years, Vishnu fought the two Asuras with his arms.\n\nThe story’s measure of time is immense, but its problem is easy to understand: strength met strength, and still the danger remained. Whenever one attacker was forced back, the other pressed in. Whenever both were driven away, they returned to the struggle.\n\nThen Yoganidra’s power brought the reversal Brahma had requested.\n\nMadhu and Kaitabha became deluded. Intoxicated with their own strength, they no longer saw the contest clearly. They had fought Vishnu for five thousand years, and pride made them speak as if the advantage were theirs to give.\n\nMadhu drew back.\n\n“Ask a boon of us,” he said.\n\nKaitabha stood beside him. “Yes. Choose what we shall give.”\n\nAfter an age of combat, the strangest moment in the battle was not another blow. It was the offer made by the two who had come as enemies.\n\nThey had become the boon-givers.\n\nVishnu answered them.",
+          "title": "Five Thousand Years"
+        },
+        {
+          "id": "ch-06",
+          "text": "“Then let the boon be this,” Vishnu said. “Let both of you be overcome by me.”\n\nThe words changed the shape of the contest.\n\nMadhu and Kaitabha had offered the boon jointly. Vishnu had not asked them for land, treasure or long life. He had asked for the one outcome their pride had not expected to grant: their own defeat at his hands.\n\nAcross the scene lay only the flood of dissolution.\n\nMadhu answered, “Only where earth is not flooded.”\n\nKaitabha added, “On that condition, we grant it.”\n\nIt was a condition attached by both demons to the boon they had offered. The account does not bring in another deity to grant it, nor does it tell of an older ascetic bargain that made the demons invulnerable. Here the boon began with Madhu and Kaitabha, and its condition came from them.\n\nVishnu replied, “I accept.”\n\nThe combat had lasted five thousand years. The exchange took only a few words. Yet those words did what force alone had not done: they fixed a condition under which the struggle could end.\n\nThe waters were still everywhere around them.\n\nVishnu met the condition.",
+          "title": "The Boon Turned Back"
+        },
+        {
+          "id": "ch-07",
+          "text": "The exact bodily place associated with the final act is uncertain across the bounded witnesses used for this book. The story therefore keeps only what the cleared evidence establishes: the place of defeat met the demons’ condition, for the earth there was not under the flood.\n\nVishnu raised his discus.\n\nIts swift circle ended the contest. Madhu and Kaitabha were killed by Vishnu’s hand, as the boon allowed. The telling does not linger over the violence. It is enough to know that the two who had threatened Brahma could no longer reach the lotus.\n\nAfter five thousand years of struggle, there was no third attacker and no further condition. The unusual boon had been offered, chosen, limited and fulfilled.\n\nBrahma remained safe upon the lotus.\n\nVishnu was awake.\n\nYoganidra’s part in the episode was complete: she had held the cosmic sleep, withdrawn when Brahma invoked her, appeared before him, and deluded the two Asuras until their confidence turned the battle.\n\nThe waters of dissolution still belonged to a story larger than this one. This bounded tale does not claim when they receded or what came next.\n\nSage Medhas brought the episode to its close where the source-bounded action closes: the threat to Brahma ended, Madhu and Kaitabha defeated under their own condition, and the power behind sleep revealed through what she had done.\n\nThe story was complete.",
+          "title": "Where the Earth Was Not Flooded"
+        },
+        {
+          "id": "ch-08",
+          "text": "This is a modern editorial reflection, not a quotation from the Devi Mahatmya and not an additional event in the sacred story.\n\nThe episode asks readers to notice how its turning points differ from one another. Brahma cannot solve the danger by pretending Vishnu’s sleep is ordinary; he addresses Yoganidra, the power holding that sleep. Vishnu’s awakening begins the struggle, but even immense strength does not bring a quick ending. The final reversal comes when Madhu and Kaitabha, deluded and proud of their strength, offer a boon and then state its condition.\n\nThe story does not treat sleep, strength and wisdom as if they were the same thing. Each has a different place in the sequence. Yoganidra’s withdrawal makes awakening possible. Vishnu’s strength sustains the long confrontation. The boon exchange creates the condition that lets the danger end.\n\nA family might ask: When a problem will not yield to force, what condition is keeping it in place? What changes when that condition is finally understood?\n\nThose questions are offered for conversation. They are not presented as words spoken by Medhas, Brahma, Vishnu, Madhu, Kaitabha or the Goddess.",
+          "title": "Editorial Reflection — A Thought for Families"
+        }
+      ],
+      "claim_map": [
+        {
+          "beat_id": "beat-004",
+          "claim": "Medhas distinguishes eternal Devi from the appearances described when she becomes manifest for divine purposes.",
+          "event_id": "dm-event-004",
+          "evidence_ids": [
+            "dm-evidence-004"
+          ],
+          "id": "claim-004-a",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-004",
+          "claim": "At cosmic dissolution Vishnu sleeps upon Shesha under Yoganidra while lotus-seated Brahma is present above the flood.",
+          "event_id": "dm-event-004",
+          "evidence_ids": [
+            "dm-evidence-004"
+          ],
+          "id": "claim-004-b",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-004",
+          "claim": "Madhu and Kaitabha arise from Vishnu’s ear-region and threaten to kill Brahma.",
+          "event_id": "dm-event-004",
+          "evidence_ids": [
+            "dm-evidence-004"
+          ],
+          "id": "claim-004-c",
+          "source_class": "MULA"
+        },
+        {
+          "adaptation_note": "Fresh scenic connective prose for readability; it adds no event, motive, genealogy, iconography or doctrinal claim.",
+          "beat_id": "beat-004",
+          "claim": "The quiet staging, contrast between the lotus and flood, and transition from stillness to danger are original narrative bridges.",
+          "evidence_ids": [],
+          "id": "claim-004-d",
+          "source_class": "DRISHTI"
+        },
+        {
+          "beat_id": "beat-005",
+          "claim": "Brahma praises Yoganidra as sacrificial utterance, creation, preservation and dissolution, knowledge and illusion, nature, nourishment, peace and armed power.",
+          "event_id": "dm-event-005",
+          "evidence_ids": [
+            "dm-evidence-005",
+            "dm-supp-evidence-brahma-hymn"
+          ],
+          "id": "claim-005-a",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-005",
+          "claim": "Brahma asks Yoganidra to delude Madhu and Kaitabha and awaken Vishnu so their threat can be ended.",
+          "event_id": "dm-event-005",
+          "evidence_ids": [
+            "dm-evidence-005",
+            "dm-supp-evidence-brahma-hymn"
+          ],
+          "id": "claim-005-b",
+          "source_class": "MULA"
+        },
+        {
+          "adaptation_note": "Rights-safe literary compression mandated by the clearance; the hymn remains explicitly attributed to Brahma.",
+          "beat_id": "beat-005",
+          "claim": "The manuscript compresses Brahma’s hymn into accessible attributed praise rather than reproducing or exhaustively listing the source presentation.",
+          "evidence_ids": [],
+          "id": "claim-005-c",
+          "source_class": "DRISHTI"
+        },
+        {
+          "beat_id": "beat-006",
+          "claim": "Yoganidra leaves Vishnu’s eyes, mouth, nose, arms, heart and breast and appears before Brahma.",
+          "event_id": "dm-event-006",
+          "evidence_ids": [
+            "dm-evidence-006",
+            "dm-sanskrit-evidence-006"
+          ],
+          "id": "claim-006-a",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-006",
+          "claim": "Vishnu awakens and fights Madhu and Kaitabha with his arms for five thousand years.",
+          "event_id": "dm-event-006",
+          "evidence_ids": [
+            "dm-evidence-006",
+            "dm-sanskrit-evidence-006"
+          ],
+          "id": "claim-006-b",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-006",
+          "claim": "Deluded by Yoganidra and intoxicated with their strength, Madhu and Kaitabha jointly offer Vishnu a boon.",
+          "event_id": "dm-event-006",
+          "evidence_ids": [
+            "dm-evidence-006",
+            "dm-sanskrit-evidence-006"
+          ],
+          "id": "claim-006-c",
+          "source_class": "MULA"
+        },
+        {
+          "adaptation_note": "The adaptation does not add weapons, injuries, strategy, genealogy or motive and preserves the joint boon offer.",
+          "beat_id": "beat-006",
+          "claim": "The physical rhythms used to compress the long arm-to-arm combat and the allocation of short non-verbatim lines between Madhu and Kaitabha are literary adaptations.",
+          "evidence_ids": [],
+          "id": "claim-006-d",
+          "source_class": "KALPANA"
+        },
+        {
+          "beat_id": "beat-007",
+          "claim": "Vishnu chooses as his boon that both Madhu and Kaitabha be killed by him.",
+          "event_id": "dm-event-007",
+          "evidence_ids": [
+            "dm-evidence-007",
+            "dm-sanskrit-evidence-007"
+          ],
+          "id": "claim-007-a",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-007",
+          "claim": "The demons jointly require that their deaths occur where earth is not flooded, and Vishnu accepts their condition.",
+          "event_id": "dm-event-007",
+          "evidence_ids": [
+            "dm-evidence-007",
+            "dm-sanskrit-evidence-007"
+          ],
+          "id": "claim-007-b",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-007",
+          "claim": "After the water condition is met, Vishnu kills Madhu and Kaitabha with his discus.",
+          "event_id": "dm-event-007",
+          "evidence_ids": [
+            "dm-evidence-007",
+            "dm-sanskrit-evidence-007"
+          ],
+          "id": "claim-007-c",
+          "source_class": "MULA"
+        },
+        {
+          "beat_id": "beat-007",
+          "claim": "The exact bodily locus of the killing is unresolved in the bounded witnesses and is therefore not asserted.",
+          "event_id": "dm-event-007",
+          "evidence_ids": [
+            "dm-evidence-007",
+            "dm-sanskrit-evidence-007"
+          ],
+          "id": "claim-007-d",
+          "source_class": "MULA"
+        },
+        {
+          "adaptation_note": "These choices preserve the source order, joint grantors, condition, weapon and outcome while avoiding an unsupported precise bodily locus.",
+          "beat_id": "beat-007",
+          "claim": "The pauses, short dialogue distribution and non-graphic description of the final action are literary presentation choices.",
+          "evidence_ids": [],
+          "id": "claim-007-e",
+          "source_class": "KALPANA"
+        },
+        {
+          "adaptation_note": "Clearly labeled post-story reflection; not scripture, not character dialogue and not part of the locked event chronology.",
+          "beat_id": "beat-editorial",
+          "claim": "The family discussion about sleep, strength, conditions and problem-solving is a modern editorial reflection.",
+          "evidence_ids": [],
+          "id": "claim-editorial-a",
+          "source_class": "KALPANA"
+        }
+      ],
+      "climax": "Madhu and Kaitabha jointly offer Vishnu a boon; he requests their death at his hands, accepts their condition that the place not be flooded earth, meets that condition without a disputed anatomical claim, and defeats them with his discus.",
+      "complete_narrative": true,
+      "context": "A fresh private-draft adaptation of the complete bounded chronology in Devi Mahatmya 1 represented by dm-event-004 through dm-event-007. Medhas frames the primordial account; Brahma’s theological language remains attributed praise. Publication, illustration and distribution remain blocked.",
+      "creator": {
+        "attestation_scope": "ORCHESTRATOR_SESSION_RECORD_NOT_CRYPTOGRAPHIC_IDENTITY",
+        "capability": "manuscript_generation",
+        "capability_verified": true,
+        "execution_mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+        "id": "/root/dm04_manuscript_writer",
+        "request_hash": "dba4efefb84dea1d7d6c6c46eb8d6baa7c4c69bf937243ade736d19a9955cb04",
+        "role": "manuscript-story"
+      },
+      "dialogue": [
+        {
+          "adaptation_note": "Fresh English paraphrase of Medhas’s source-grounded distinction; not a verbatim quotation.",
+          "beat_id": "beat-004",
+          "chapter_id": "ch-01",
+          "evidence_ids": [
+            "dm-evidence-004"
+          ],
+          "id": "dlg-001",
+          "speaker_id": "dm-medhas",
+          "text": "The Goddess is eternal. When the sacred account speaks of her appearing, it tells of the forms by which she becomes known for divine purposes.",
+          "verbatim_source_quote": false
+        },
+        {
+          "adaptation_note": "Original accessible compression of Brahma’s attributed praise; not a copied translation or exhaustive hymn.",
+          "beat_id": "beat-005",
+          "chapter_id": "ch-03",
+          "evidence_ids": [
+            "dm-evidence-005",
+            "dm-supp-evidence-brahma-hymn"
+          ],
+          "id": "dlg-002",
+          "speaker_id": "dm-brahma",
+          "text": "You are the sacred utterance by which offerings are made. You are the power by which creation arises, by which it is preserved, and by which it is drawn again into dissolution. You are knowledge, and you are the great illusion that can veil knowledge. You are nature, nourishment and peace. You are also power armed against danger.",
+          "verbatim_source_quote": false
+        },
+        {
+          "adaptation_note": "Fresh source-based paraphrase of Brahma’s request; not verbatim scripture.",
+          "beat_id": "beat-005",
+          "chapter_id": "ch-03",
+          "evidence_ids": [
+            "dm-evidence-005",
+            "dm-supp-evidence-brahma-hymn"
+          ],
+          "id": "dlg-003",
+          "speaker_id": "dm-brahma",
+          "text": "Great Goddess, delude these two Asuras. Withdraw your sleep from Vishnu and awaken him, so that their threat may be ended.",
+          "verbatim_source_quote": false
+        },
+        {
+          "adaptation_note": "Non-verbatim literary allocation of one part of the demons’ joint boon offer.",
+          "beat_id": "beat-006",
+          "chapter_id": "ch-05",
+          "evidence_ids": [
+            "dm-evidence-006",
+            "dm-sanskrit-evidence-006"
+          ],
+          "id": "dlg-004",
+          "speaker_id": "dm-madhu",
+          "text": "Ask a boon of us.",
+          "verbatim_source_quote": false
+        },
+        {
+          "adaptation_note": "Non-verbatim literary allocation preserving the demons’ joint boon offer.",
+          "beat_id": "beat-006",
+          "chapter_id": "ch-05",
+          "evidence_ids": [
+            "dm-evidence-006",
+            "dm-sanskrit-evidence-006"
+          ],
+          "id": "dlg-005",
+          "speaker_id": "dm-kaitabha",
+          "text": "Yes. Choose what we shall give.",
+          "verbatim_source_quote": false
+        },
+        {
+          "adaptation_note": "Fresh paraphrase of Vishnu’s requested boon; not verbatim scripture.",
+          "beat_id": "beat-007",
+          "chapter_id": "ch-06",
+          "evidence_ids": [
+            "dm-evidence-007",
+            "dm-sanskrit-evidence-007"
+          ],
+          "id": "dlg-006",
+          "speaker_id": "dm-vishnu",
+          "text": "Then let the boon be this. Let both of you be overcome by me.",
+          "verbatim_source_quote": false
+        },
+        {
+          "adaptation_note": "Non-verbatim literary allocation of the demons’ jointly stated condition.",
+          "beat_id": "beat-007",
+          "chapter_id": "ch-06",
+          "evidence_ids": [
+            "dm-evidence-007",
+            "dm-sanskrit-evidence-007"
+          ],
+          "id": "dlg-007",
+          "speaker_id": "dm-madhu",
+          "text": "Only where earth is not flooded.",
+          "verbatim_source_quote": false
+        },
+        {
+          "adaptation_note": "Adapted line clarifying that both demons jointly grant the conditional boon; it adds no new boon-giver.",
+          "beat_id": "beat-007",
+          "chapter_id": "ch-06",
+          "evidence_ids": [
+            "dm-evidence-007",
+            "dm-sanskrit-evidence-007"
+          ],
+          "id": "dlg-008",
+          "speaker_id": "dm-kaitabha",
+          "text": "On that condition, we grant it.",
+          "verbatim_source_quote": false
+        },
+        {
+          "adaptation_note": "Concise non-verbatim rendering of Vishnu’s acceptance.",
+          "beat_id": "beat-007",
+          "chapter_id": "ch-06",
+          "evidence_ids": [
+            "dm-evidence-007",
+            "dm-sanskrit-evidence-007"
+          ],
+          "id": "dlg-009",
+          "speaker_id": "dm-vishnu",
+          "text": "I accept.",
+          "verbatim_source_quote": false
+        }
+      ],
+      "editorial_reflection": "Modern editorial reflection, not a source quotation: the episode separates the roles of Yoganidra’s withdrawal, Vishnu’s sustained strength and the condition created by the demons’ own boon offer. Families are invited to ask what condition may be holding a difficult problem in place. This reflection is not attributed to any sacred character and adds no source event.",
+      "ending": "Vishnu meets the demons’ unflooded-earth condition and kills Madhu and Kaitabha with his discus. Brahma’s immediate danger ends, Vishnu remains awake, Yoganidra’s role is accounted for, and Medhas’s bounded primordial episode closes before the separately labeled editorial reflection.",
+      "ending_before_next_book_hook": true,
+      "event_coverage": [
+        {
+          "beat_ids": [
+            "beat-004"
+          ],
+          "chapter_ids": [
+            "ch-01",
+            "ch-02"
+          ],
+          "event_id": "dm-event-004",
+          "status": "COVERED"
+        },
+        {
+          "beat_ids": [
+            "beat-005"
+          ],
+          "chapter_ids": [
+            "ch-03"
+          ],
+          "event_id": "dm-event-005",
+          "status": "COVERED"
+        },
+        {
+          "beat_ids": [
+            "beat-006"
+          ],
+          "chapter_ids": [
+            "ch-04",
+            "ch-05"
+          ],
+          "event_id": "dm-event-006",
+          "status": "COVERED"
+        },
+        {
+          "beat_ids": [
+            "beat-007"
+          ],
+          "chapter_ids": [
+            "ch-06",
+            "ch-07"
+          ],
+          "event_id": "dm-event-007",
+          "status": "COVERED"
+        }
+      ],
+      "next_book_hook": "",
+      "opening": "Sage Medhas distinguishes the eternal Goddess from her purposeful manifestations, then carries the listener into the world-dissolving flood where Vishnu sleeps on Shesha beneath the power of Yoganidra and danger approaches lotus-seated Brahma.",
+      "source_classification": "MULA",
+      "source_clearance_hash": "483cc82d41b142878778e107deabd090ec623ccf4a48410b28d80a3c95f1213e",
+      "source_note": "This private editorial draft is fresh original English prose based only on the locked paraphrases and locators for Devi Mahatmya 1 in dm-event-004 through dm-event-007. Brahma’s cosmic and theological descriptions are presented as his attributed hymn-praise, not as independent project certification. All dialogue is non-verbatim adaptation. The five-thousand-year combat, joint boon offer by Madhu and Kaitabha, Vishnu’s requested boon, the unflooded-earth condition and the discus defeat remain in source order. No demon genealogy, earlier ascetic or invulnerability boon, outside boon-giver, divine motive or sacred quotation has been added. Because the bounded English and Sanskrit witnesses leave the final bodily locus unresolved, the manuscript states only that the water condition is met and omits any thigh, lap, buttocks or other precise locus. The DM08 manuscript was consulted only as a literary-quality benchmark and was neither copied nor treated as evidence. This clearance permits only a private manuscript draft; illustration, PDF production, publication, public sharing and distribution remain blocked.",
+      "source_packet_hash": "b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd",
+      "source_packet_hashes": [
+        "b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd"
+      ],
+      "subtitle": "A Story of Yoganidra, Brahma, Vishnu, Madhu and Kaitabha",
+      "title": "The Sleep That Held Vishnu",
+      "version": 1
+    },
+    "operation_key": "review-manuscript-d805426a6a967b0b862a16b7",
+    "request_hash": "1b48dbf03fae91e415d26b445eb0adfc7ad0f230baa625ccb9d7f669027a5c45",
+    "require_source_event_checks": true,
+    "required_dimensions": [
+      "causal_sequence",
+      "character_and_divine_identity_accuracy",
+      "complete_source_event_coverage",
+      "ending",
+      "factual_and_theological_accuracy",
+      "framing_and_background",
+      "quotation_and_source_notes"
+    ],
+    "required_event_ids": [
+      "dm-event-004",
+      "dm-event-005",
+      "dm-event-006",
+      "dm-event-007"
+    ],
+    "review_perspective": "SOURCE_FIDELITY",
+    "reviewed_manuscript_hash": "8b7dc126012186ada26df3b6acb16e46fcc72a600ad151de49f6aaf3c06d2c44",
+    "reviewed_packet_hashes": [
+      "b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd"
+    ],
+    "schema_version": "1.0",
+    "source_clearance_hash": "483cc82d41b142878778e107deabd090ec623ccf4a48410b28d80a3c95f1213e",
+    "writer_id": "/root/dm04_manuscript_writer"
+  },
+  "request_hash": "1b48dbf03fae91e415d26b445eb0adfc7ad0f230baa625ccb9d7f669027a5c45",
+  "required_capability": "editorial_review",
+  "required_independence_from_writer_id": "/root/dm04_manuscript_writer",
+  "required_role": "source-evidence",
+  "schema_version": "1.0",
+  "status": "AWAITING_CODEX_SPECIALIST_AGENT"
+}

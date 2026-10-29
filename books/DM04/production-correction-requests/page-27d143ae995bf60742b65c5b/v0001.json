@@ -1,0 +1,50 @@
+{
+  "book_id": "DM04",
+  "content_hash": "cb2f1368c07a6f7def42926b005edb2e181964741fa0b018a68997c2e3515d26",
+  "id": "production-correction-requests/page-27d143ae995bf60742b65c5b-da3092805737424cc55fa285",
+  "kind": "production-correction-requests/page-27d143ae995bf60742b65c5b",
+  "parent_hash": null,
+  "payload": {
+    "book_id": "DM04",
+    "failed_image_sha256": "5a8d154988f7f9b67ff927ab8b3d4e8b9fe96e6d7a0c99be4d3da9ef6fbdecf7",
+    "generation_retry_authorized": false,
+    "localized_findings": [
+      {
+        "code": "PAGE01_SINGLE_SCENE_NOT_TWO_PANEL_UNIT",
+        "dimension": "COMPOSITION",
+        "discrepancy": "The output is a single full-bleed scene instead of the required two-panel clean-art sheet.",
+        "evidence": "Original-resolution pixels contain no panel boundary and no separate wide and over-shoulder moments, although both are required by the locked page script.",
+        "message": "The image is excellent single-scene art but does not satisfy the locked two-panel production unit or provide independently reviewable panel regions.",
+        "page_id": "page-27d143ae995bf60742b65c5b",
+        "repair_type": "PAGE_RECOMPOSITION",
+        "severity": "BLOCKING"
+      },
+      {
+        "code": "PAGE01_LETTERING_SAFE_REGIONS_NOT_PROTECTED",
+        "dimension": "LETTERING_READABILITY",
+        "discrepancy": "The narration and speaker-anchored dialogue safe regions are not protected.",
+        "evidence": "Tree trunk, canopy, foliage and hut roof cross the locked upper safe rectangle, while foliage, structure and Medhas's raised hand occupy the intended dialogue area.",
+        "message": "Dense branches and architecture occupy the required narration and Medhas-dialogue regions; editable lettering cannot be placed without covering story pixels.",
+        "page_id": "page-27d143ae995bf60742b65c5b",
+        "repair_type": "LETTERING_REGION_REPAIR",
+        "severity": "BLOCKING"
+      }
+    ],
+    "milestone": "PR11",
+    "page_id": "page-27d143ae995bf60742b65c5b",
+    "pr6_counter_reset": false,
+    "preserve_other_page": true,
+    "publication_eligible": false,
+    "remaining_campaign_image_operations": 0,
+    "result": "FIX",
+    "schema_version": "1.0",
+    "targeted_correction_instructions": [
+      "For a future authorized correction only, preserve the current three identities, dusk firelight and weapon-free interaction but render the requested two-panel clean-art sheet: panel 1 wide eye-level and panel 2 intimate over-shoulder.",
+      "Keep the full normalized top safe rectangle clear in each panel and reserve a low-detail speaker-anchored region near Medhas for the exact dialogue balloon without covering his hand or face.",
+      "Do not retry under the current campaign authorization."
+    ],
+    "visual_review_hash": "29605df38b5d27ed16cadde25db723731b5ae1f07c28ed9c863a9dee54fca7c4"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

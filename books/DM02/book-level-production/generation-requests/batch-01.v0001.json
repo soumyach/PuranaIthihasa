@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "campaign_id": "dm02-book-level-private-production-v0001",
+  "authorization_subject_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+  "approval_id": "approval-3174e958372faf8a1e6f380f",
+  "batch_id": "dm02-book-level-batch-01",
+  "operation_count": 4,
+  "retry": false,
+  "requests": [
+    {
+      "operation_index": 1,
+      "unit_id": "page-71e9de766bf786cb9499a31b--p01-panel-02",
+      "panel_spec_sha256": "7507f36190976845de16f4f3f09b181b151327256bf86e9d37d92a0ba5e91d80",
+      "method": "REFERENCE_CONDITIONED_TARGETED_LOCAL_EDIT",
+      "submitted_prompt": "Use case: precise-object-edit\nAsset type: DM02 children's devotional comic illustration master, portrait 3:4\nInput images: Image 1 is the sole edit target p01-panel-02 v0001; Image 2 is PR7 Gold Standard A for series finish only; Image 3 is PR7 Gold Standard B for conversational visual hierarchy only; Image 4 is the existing p01-panel-01 proposal reference for Medhas, Suratha, Samadhi and the forest-fire environment.\nPrimary request: Change only Medhas's prominent white-and-orange vertical forehead mark in Image 1. Remove the mark and restore natural forehead skin matching the surrounding complexion, texture, lighting and facial anatomy.\nConstraints: Preserve Image 1's exact face and identity, hair, beard, expression, pose, hands, fingers, beads, clothing, listeners, fire, trees, mountains, river, sunset, lighting, palette, framing, dimensions and every unaffected pixel as closely as possible. Do not redesign any character. Do not transfer any deity, text, theology, ornament, symbol or story content from Images 2–4. No text, watermark, halo, new forehead mark or other sacred symbol. Produce exactly one edited image, no variant.",
+      "references": [
+        {"input_index":1,"role":"EDIT_TARGET","path":"books/DM02/pages-1-3-production/images/p01-panel-02/v0001.png","sha256":"582196a26f1dafa22a669ccfc2f126af1edeb53f3f7c8c01ba47a6702e4972c2"},
+        {"input_index":2,"role":"A_SERIES_VISUAL_IDENTITY","path":"book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png","sha256":"15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"},
+        {"input_index":3,"role":"B_CONVERSATIONAL_VISUAL_HIERARCHY","path":"book-factory/references/visual-gold-standard/pages/kgs-satya-p02.png","sha256":"a0fa07b60d1b8b128b541300f3fb5e26358863e3153c719e2d0aacb0fd7858dd"},
+        {"input_index":4,"role":"C_D_CHARACTER_AND_D_ENVIRONMENT_PROPOSAL_CONTINUITY","path":"books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png","sha256":"3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27"}
+      ]
+    },
+    {
+      "operation_index": 2,
+      "unit_id": "page-88792a15dcd25b30d3982d7c--p02-panel-01",
+      "panel_spec_sha256": "aea83683eb62e1786f03539111d91e88660c59c33a046810632c15d208953de5",
+      "method": "REFERENCE_CONDITIONED_TARGETED_LOCAL_EDIT",
+      "submitted_prompt": "Use case: precise-object-edit\nAsset type: DM02 children's devotional comic illustration master, portrait 3:4\nInput images: Image 1 is the sole edit target p02-panel-01 v0001; Image 2 is PR7 Gold Standard A for premium series finish only; Image 3 is PR7 Gold Standard B for conversational visual hierarchy only; Image 4 is the existing Page 1 environment proposal reference for dusk, firelight and forest continuity.\nPrimary request: Correct only the focal raised hand in Image 1 so it has anatomically coherent five-digit human anatomy: one thumb and four fingers, with a natural open teaching gesture directed toward the fire.\nConstraints: Preserve the existing wrist, prayer beads, sleeve, arm, gesture direction, fire, smoke, rocks, forest, lake, mountains, sunset, lighting, palette, framing, dimensions and every unaffected pixel as closely as possible. Do not alter the surrounding scene or add a face. Do not transfer text, theology, characters or symbols from Images 2–4. No extra or fused fingers, no text, watermark, halo or sacred emblem. Produce exactly one edited image, no variant.",
+      "references": [
+        {"input_index":1,"role":"EDIT_TARGET","path":"books/DM02/pages-1-3-production/images/p02-panel-01/v0001.png","sha256":"7702fbc90c1d03295ccb7628281e5f3026d634a714daba1c00cea73db85cede4"},
+        {"input_index":2,"role":"A_SERIES_VISUAL_IDENTITY","path":"book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png","sha256":"15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"},
+        {"input_index":3,"role":"B_CONVERSATIONAL_VISUAL_HIERARCHY","path":"book-factory/references/visual-gold-standard/pages/kgs-satya-p02.png","sha256":"a0fa07b60d1b8b128b541300f3fb5e26358863e3153c719e2d0aacb0fd7858dd"},
+        {"input_index":4,"role":"D_ENVIRONMENT_PROPOSAL_CONTINUITY","path":"books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png","sha256":"3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27"},
+        {"role":"C_CHARACTER_REFERENCE","status":"NOT_SUPPLIED_NOT_APPLICABLE_TO_HAND_ONLY_CROP"}
+      ]
+    },
+    {
+      "operation_index": 3,
+      "unit_id": "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-02",
+      "panel_spec_sha256": "7d36f8fbe1e7fa9c10c624c174de8059b7f9d01582919d7f9fc9eb38a4a19da6",
+      "method": "GENERATE_NEW_RASTER_MASTER_WITH_REFERENCE_CONDITIONING",
+      "submitted_prompt": "Use case: illustration-story\nAsset type: DM02 children's devotional comic panel master, portrait 3:4, no lettering\nInput images: Image 1 is PR7 Gold Standard A for Khatakshetra navy-gold premium series finish only; Image 2 is PR7 Gold Standard B for high-energy Indian epic action composition only; Image 3 is the existing DM02 p14-panel-01 proposal reference for the exact three identities and cosmic-water setting; Image 4 is the corrected DM02 p21-panel-01 proposal reference for the same identities, palette and unbounded-water continuity.\nPrimary request: Create DM02 Page 14 panel p14-panel-02. On unbounded midnight cosmic water under hard directional gold edge light, tall angular Kaiṭabha closes from the side as Vishnu turns to meet him; broad low Madhu remains a separate readable figure recovering on the opposite side. Preserve all three silhouettes and identities. Show a clear arm-to-arm combat transition with no weapon and no injury.\nStyle/medium: premium painterly Indian devotional children's-book illustration, cinematic action, jewel-toned navy, antique gold, oxblood and charcoal, family-reading suitable.\nComposition/framing: medium three-figure composition; lower figures enough to keep the complete normalized top rectangle x=0.08..0.92, y=0.06..0.24 calm for later lettering. No head, crown, hair, limb, bright flare or wave detail may enter that safe region. All three figures must be clearly separated, complete enough for anatomical review, and never merged.\nIdentity constraints: Vishnu has the same proposal face and midnight-blue, antique-gold and warm-ivory value structure as Images 3–4, exactly two visible anatomically coherent arms for this action, and no halo or weapon. Madhu is broad, oxblood-and-charcoal, low-centered. Kaiṭabha is taller, angular, charcoal-and-deep-crimson with a distinct shoulder line. Humanlike anatomy only.\nEnvironment: shallow-looking but unbounded cosmic water, repeated wave-rings only as a nonliteral time motif; no ordinary shore, island, cliff, mountain, city, temple, army or chariot.\nConstraints: source-bounded action only; no discus or other weapon, no injury, no blood, no extra limbs, no embedded text, no watermark, no symbol centered behind a head. Transfer no Raktabija, army, elephant, flags, lettering, blood multiplication or theology from Image 2. Produce exactly one image and no variant.",
+      "references": [
+        {"input_index":1,"role":"A_SERIES_VISUAL_IDENTITY","path":"book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png","sha256":"15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"},
+        {"input_index":2,"role":"B_PAGE_PANEL_COMPOSITION","path":"book-factory/references/visual-gold-standard/pages/kgs-dm08-p21.png","sha256":"332b208d14df3d94139a3ab598e7e7e327e49bc9d4bbf5f41ddf20d8260291af"},
+        {"input_index":3,"role":"C_CHARACTER_PROPOSAL_CONTINUITY","path":"books/DM02/visual-proof-campaign/images/p14-panel-01/v0001.png","sha256":"c3cf653e36e0d03a0d9b126ffeab56bee0b655ba752d8d988d9d057f8354170c"},
+        {"input_index":4,"role":"D_ENVIRONMENT_AND_CHARACTER_PROPOSAL_CONTINUITY","path":"books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png","sha256":"c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d"}
+      ]
+    },
+    {
+      "operation_index": 4,
+      "unit_id": "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-03",
+      "panel_spec_sha256": "1aab03e7b8bcaff6b249697605401a568954972a4f3a734f45d4e2e69b2ee213",
+      "method": "GENERATE_NEW_RASTER_MASTER_WITH_REFERENCE_CONDITIONING",
+      "submitted_prompt": "Use case: illustration-story\nAsset type: DM02 children's devotional comic panel master, portrait 3:4, no lettering\nInput images: Image 1 is PR7 Gold Standard A for Khatakshetra navy-gold premium series finish only; Image 2 is PR7 Gold Standard B for sequential Indian epic action composition only; Image 3 is the existing DM02 p14-panel-01 proposal reference for the exact three identities and cosmic-water setting; Image 4 is the corrected DM02 p21-panel-01 proposal reference for the same identities, palette and unbounded-water continuity.\nPrimary request: Create DM02 Page 14 panel p14-panel-03. Vishnu, Madhu and Kaiṭabha have separated after a grapple into a wide, clearly readable triangle that can cycle into renewed arm-to-arm combat. Wave direction should curve the eye back toward the prior action without depicting a new event. No one is defeated or injured.\nStyle/medium: premium painterly Indian devotional children's-book illustration, cinematic but source-disciplined, jewel-toned navy, antique gold, oxblood and charcoal, family-reading suitable.\nComposition/framing: wide three-figure composition within a portrait canvas; lower all figures and visual intensity enough to keep the complete normalized top rectangle x=0.08..0.92, y=0.06..0.24 calm for later narration. Do not place heads, crowns, hair, limbs, bright flares or wave details in that region. Maintain clear negative space between every silhouette.\nIdentity constraints: Vishnu preserves the same proposal face and midnight-blue, antique-gold and warm-ivory value structure as Images 3–4, exactly two visible anatomically coherent arms, and no halo or weapon. Madhu is broad, oxblood-and-charcoal with a low center of gravity. Kaiṭabha is taller, angular, charcoal-and-deep-crimson with a distinct shoulder line. Humanlike anatomy only.\nEnvironment: shallow-looking but unbounded cosmic water under hard directional gold edge light; repeated wave-rings may mark time nonliterally; no ordinary shore, island, cliff, mountain, city, temple, army or chariot.\nConstraints: source-bounded staging only; no weapon, injury, blood, extra limbs, embedded text, watermark or centered head radiance. Transfer no Raktabija, army, elephant, flags, lettering, blood multiplication or theology from Image 2. Produce exactly one image and no variant.",
+      "references": [
+        {"input_index":1,"role":"A_SERIES_VISUAL_IDENTITY","path":"book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png","sha256":"15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"},
+        {"input_index":2,"role":"B_PAGE_PANEL_COMPOSITION","path":"book-factory/references/visual-gold-standard/pages/kgs-dm08-p21.png","sha256":"332b208d14df3d94139a3ab598e7e7e327e49bc9d4bbf5f41ddf20d8260291af"},
+        {"input_index":3,"role":"C_CHARACTER_PROPOSAL_CONTINUITY","path":"books/DM02/visual-proof-campaign/images/p14-panel-01/v0001.png","sha256":"c3cf653e36e0d03a0d9b126ffeab56bee0b655ba752d8d988d9d057f8354170c"},
+        {"input_index":4,"role":"D_ENVIRONMENT_AND_CHARACTER_PROPOSAL_CONTINUITY","path":"books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png","sha256":"c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "character_ids": [
+    "dm-vishnu",
+    "dm-shesha",
+    "dm-yoganidra"
+  ],
+  "continuity_in": "after-page-03",
+  "continuity_out": "after-page-04",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-vishnu",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-shesha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "manifestation_id": "dm-shesha-supporting-form",
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-yoganidra",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment",
+        "source-bounded spatial relationship"
+      ],
+      "manifestation_id": "dm-yoganidra-cosmic-sleep",
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-004"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "immersive hold",
+    "type": "FULL_PAGE"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p04-narration-a",
+      "placement": "caption-safe-region",
+      "text": "Upon Shesha rested Vishnu."
+    },
+    {
+      "channel": "NARRATION",
+      "id": "p04-narration-b",
+      "placement": "caption-safe-region",
+      "text": "He was not keeping the light sleep of a traveller who might wake at the snap of a twig. Yoganidra, the divine power of cosmic sleep, held him in profound stillness. His breathing alone gave measure to the immeasurable quiet."
+    }
+  ],
+  "location_id": "dm02-vishnu-on-shesha",
+  "moment_ids": [
+    "vishnu_sleeps_on_shesha"
+  ],
+  "narrative_beats": [
+    "Upon Shesha rested Vishnu.",
+    "He was not keeping the light sleep of a traveller who might wake at the snap of a twig. Yoganidra, the divine power of cosmic sleep, held him in profound stillness. His breathing alone gave measure to the immeasurable quiet."
+  ],
+  "page_id": "page-d20c0821bca7f13784a34630",
+  "page_number": 4,
+  "panel_count": 1,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-vishnu",
+        "dm-shesha",
+        "dm-yoganidra"
+      ],
+      "composition": "Low horizontal full-page repose: sleeping Viṣṇu is clearly supported by Śeṣa above the flood; Yoganidrā is a non-anatomical sleep field, with no fixed halo, weapon, body residence or conventional arm/hood count.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction",
+        "do not add source-silent iconography"
+      ],
+      "id": "p04-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore",
+          "unsourced halo",
+          "unsupported body-locus claim"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Low horizontal full-page repose: sleeping Viṣṇu is clearly supported by Śeṣa above the flood; Yoganidrā is a non-anatomical sleep field, with no fixed halo, weapon, body residence or conventional arm/hood count.",
+        "shot_scale": "wide"
+      },
+      "location_id": "dm02-vishnu-on-shesha",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p04-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Low horizontal full-page repose: sleeping Viṣṇu is clearly supported by Śeṣa above the flood; Yoganidrā is a non-anatomical sleep field, with no fixed halo, weapon, body residence or conventional arm/hood count."
+    }
+  ],
+  "reading_order": [
+    "p04-panel-01"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p04-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-004-b"
+  ],
+  "title": "Sleep Beyond the World",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation",
+    "no unsupported iconography",
+    "no unsupported body-locus claim"
+  ],
+  "version": 1,
+  "visual_intent": "A source-bounded cinematic beat using only the locked manuscript lettering and explicit proposal-only staging."
+}

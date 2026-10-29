@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "milestone": "PR12",
+  "book_id": "DM04",
+  "campaign_id": "dm04-pr12-autonomous-multi-page-pilot-01",
+  "assessment": "BOUNDED_PIPELINE_DEMONSTRATED_NOT_READY_FOR_LARGER_PRIVATE_RUN",
+  "measured_autonomy": {
+    "image_operations_executed": 5,
+    "unique_storyboard_pages_selected": 4,
+    "complete_private_preview_pages": 1,
+    "incomplete_pages": 3,
+    "independent_image_reviews": 5,
+    "independent_composed_page_reviews": 1,
+    "automatic_mechanical_repairs": 1,
+    "automatic_image_retries": 0,
+    "human_campaign_authorizations": 1,
+    "human_interventions_after_campaign_start": 0,
+    "elapsed_seconds_through_report": 2706,
+    "elapsed_human_readable": "45 minutes 6 seconds",
+    "pdf_pages": 1
+  },
+  "director_continuation": {
+    "source_and_production_checks": "AUTONOMOUS",
+    "page_selection": "AUTONOMOUS_WITHIN_LOCKED_STORYBOARD",
+    "reference_resolution": "AUTONOMOUS_A_AND_B_EXACT_HASH_BOUND",
+    "host_image_execution": "AUTONOMOUS_SESSION_COORDINATION_WITH_PERSISTED_HANDOFFS",
+    "image_import_and_receipts": "AUTONOMOUS",
+    "independent_pixel_review": "AUTONOMOUS_SPECIALIST_COORDINATION",
+    "eligible_page_composition": "AUTONOMOUS",
+    "mechanical_lettering_repair": "AUTONOMOUS_NO_IMAGE_OPERATION",
+    "private_pdf_proof": "AUTONOMOUS_AFTER_PAGE_LEVEL_PASS",
+    "publication": "PROHIBITED",
+    "full_book_continuation": "PROHIBITED_BY_CAMPAIGN_BOUNDARY"
+  },
+  "observed_engineering_gaps": [
+    {
+      "code": "NO_APPROVED_DM04_CHARACTER_OR_SETTING_PIXEL_REFERENCES",
+      "evidence": "Reference roles C and D were unavailable for every unit, and character/page continuity failed on pages 13, 14 and 23.",
+      "impact": "A larger run would amplify identity drift."
+    },
+    {
+      "code": "IMAGE_PROVIDER_CONSTRAINT_FIDELITY_IS_NON_DETERMINISTIC",
+      "evidence": "Four generated battle/revelation images introduced or omitted source-relevant visual content despite explicit prompts: force-field action, halo disks, missing breath, unsourced arms, palace, and blocked lettering regions.",
+      "impact": "No-retry campaigns need a higher first-pass acceptance rate before scaling."
+    },
+    {
+      "code": "HOST_ONLY_IMAGE_EXECUTION_BOUNDARY",
+      "evidence": "The repository can prepare and validate exact requests and receipts, but the built-in image operation remains a host tool action rather than a repository-native provider call.",
+      "impact": "Persisted handoffs work, but the Director cannot replay image execution from tests."
+    },
+    {
+      "code": "PER_OPERATION_COST_NOT_EXPOSED",
+      "evidence": "The usage interface exposes only an account-wide rounded percentage and credit balance; provider receipts cannot bind exact USD cost.",
+      "impact": "Zero incremental USD cannot be positively certified."
+    }
+  ],
+  "resolved_during_pr12": [
+    {
+      "code": "PRIVATE_PREVIEW_PDF_GATE",
+      "resolution": "Added an explicit private-preview PDF path that requires a persisted independent composed-page PASS, preserves publication_eligible=false, and forbids lifecycle state mutation."
+    },
+    {
+      "code": "SHARED_CAMPAIGN_STORE_IDEMPOTENCY",
+      "resolution": "PR10 and PR12 now resolve their own exact stored campaign payloads instead of assuming the latest shared-store version belongs to them."
+    }
+  ],
+  "larger_private_run_readiness": {
+    "ready": false,
+    "reason": "Only one of four selected pages became an eligible private proof page, while all five new images received FIX findings and the five-operation budget is exhausted.",
+    "minimum_next_decisions": [
+      "Approve exact DM04 character and setting reference pixels for continuity conditioning.",
+      "Resolve source/action/iconography findings in a new separately authorized correction campaign.",
+      "Retain independent actual-pixel review and no automatic retry policy until first-pass quality improves."
+    ]
+  }
+}

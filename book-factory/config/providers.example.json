@@ -1,0 +1,32 @@
+{
+  "image": {
+    "adapter": null,
+    "status": "NOT_CONFIGURED"
+  },
+  "language_model": {
+    "adapter": null,
+    "status": "NOT_CONFIGURED"
+  },
+  "manuscript_generation": {
+    "adapter": null,
+    "status": "DIRECT_ADAPTER_NOT_CONFIGURED",
+    "supported_equivalent": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+    "programmatic_repository_spawn": false
+  },
+  "editorial_review": {
+    "adapter": null,
+    "status": "DIRECT_ADAPTER_NOT_CONFIGURED",
+    "supported_equivalent": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+    "independent_agent_required": true,
+    "programmatic_repository_spawn": false
+  },
+  "pdf": {
+    "adapter": null,
+    "status": "NOT_CONFIGURED"
+  },
+  "schema_version": "1.0",
+  "visual_evaluation": {
+    "adapter": null,
+    "status": "NOT_CONFIGURED"
+  }
+}

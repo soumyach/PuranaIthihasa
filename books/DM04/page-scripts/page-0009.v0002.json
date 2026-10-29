@@ -1,0 +1,158 @@
+{
+  "character_ids": [
+    "dm-devi",
+    "dm-lion",
+    "dm-gods"
+  ],
+  "continuity_in": "after-page-08",
+  "continuity_out": "after-page-09",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-devi",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-lion",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-gods",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-012"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "immersive hold",
+    "type": "FULL_PAGE"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p09-narration",
+      "placement": "caption-safe-region",
+      "text": "Devī's roar shakes sea, earth and mountains. Her crown touches the sky, and a thousand arms fill the surrounding spaces while gods and sages praise her."
+    }
+  ],
+  "location_id": "battlefield",
+  "moment_ids": [
+    "devi_roar_and_gathering_asura_army"
+  ],
+  "narrative_beats": [
+    "Devī's roar shakes sea, earth and mountains. Her crown touches the sky, and a thousand arms fill the surrounding spaces while gods and sages praise her."
+  ],
+  "page_id": "page-1e2328f1cd14227f65fc46f2",
+  "page_number": 9,
+  "panel_count": 1,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-lion",
+        "dm-gods"
+      ],
+      "composition": "Wide establishing composition for The Roar Across Worlds",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p09-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Use a vertical cosmic composition: crown at the sky, a readable foreground set of sourced weapons, and the sourced thousand-arm field filling the surrounding spaces as the roar crosses sea, earth and mountains.",
+        "shot_scale": "wide"
+      },
+      "location_id": "battlefield",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p09-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Use a vertical cosmic composition: crown at the sky, a readable foreground set of sourced weapons, and the sourced thousand-arm field filling the surrounding spaces as the roar crosses sea, earth and mountains."
+    }
+  ],
+  "reading_order": [
+    "p09-panel-01"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p09-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-012-a",
+    "claim-012-b"
+  ],
+  "title": "The Roar Across Worlds",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation"
+  ],
+  "version": 2,
+  "visual_intent": "A cinematic story beat with exact editable lettering and source-bounded imagery."
+}

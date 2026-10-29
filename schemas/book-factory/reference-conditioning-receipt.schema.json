@@ -1,0 +1,15 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/reference-conditioning-receipt.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Image-backend reference conditioning receipt",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {"type": "string"},
+    "provider_id": {"type": "string"},
+    "provider_capabilities": {"type": "object"},
+    "submitted_references": {"type": "array", "items": {"type": "object"}},
+    "operation_id": {"type": "string"}
+  },
+  "required": ["schema_version", "provider_id", "provider_capabilities", "submitted_references", "operation_id"]
+}

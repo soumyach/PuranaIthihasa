@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "campaign_id": "dm02-book-level-private-production-v0001",
+  "subject_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+  "status": "IMAGE_CAMPAIGN_COMPLETE_WITH_BLOCKED_UNITS_COMPOSITION_IN_PROGRESS",
+  "approval_id": "approval-3174e958372faf8a1e6f380f",
+  "operations": {
+    "total_ceiling": 43,
+    "necessary_planned": 29,
+    "necessary_executed": 29,
+    "conditional_fallback_ceiling": 7,
+    "conditional_fallback_executed": 3,
+    "repair_ceiling": 7,
+    "repair_executed": 7,
+    "total_executed": 39,
+    "unspent_reserve": 4
+  },
+  "budget_closure_reason": "All necessary operations ran; all review-directed repairs are exhausted; remaining conditional slots are not spendable because the remaining derivable panels passed deterministic crop review.",
+  "page_11": {
+    "status": "ESCALATE_BEFORE_GENERATION",
+    "included": false,
+    "generated": false,
+    "qualified_review_signed": false
+  },
+  "publication_state": "BLOCKED_PRIVATE_INTERNAL_ONLY",
+  "next_checkpoint": "Compose and independently inspect all pages whose complete panel set passed; preserve blocked pages and create no misleading complete PDF."
+}

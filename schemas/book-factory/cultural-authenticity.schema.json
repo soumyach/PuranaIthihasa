@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cultural-authenticity.schema.json",
+  "type": "object",
+  "required": ["schema_version", "policy_id", "decision_values", "subject_gates", "explicit_foreign_style_exclusions", "dm04_specific_failures", "review_outcomes", "fail_closed_rules"],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0"},
+    "policy_id": {"type": "string", "minLength": 1},
+    "decision_values": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"type": "string"}},
+    "subject_gates": {"type": "array", "minItems": 10, "items": {"type": "object"}},
+    "explicit_foreign_style_exclusions": {"type": "array", "minItems": 9, "items": {"type": "object"}},
+    "dm04_specific_failures": {"type": "array", "minItems": 2, "items": {"type": "object"}},
+    "review_outcomes": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "string"}},
+    "fail_closed_rules": {"type": "array", "minItems": 4, "items": {"type": "string"}}
+  }
+}

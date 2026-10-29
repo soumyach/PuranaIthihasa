@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "fixture": true,
+  "publication_eligible": false,
+  "label": "SYNTHETIC ORCHESTRATION ACCEPTANCE FIXTURE - NOT A KHATAKSHETRA PUBLICATION",
+  "eligible_book_ids": ["FX-001", "FX-002"],
+  "page_fixture_manifest": "book-factory/fixtures/page-engine/demo-book.json",
+  "policy": {
+    "paid_calls_enabled": false,
+    "actual_cost_minor_units": 0,
+    "fixture_outcomes_may_not_enter_production": true
+  },
+  "exact_lettering": [
+    "A compact narration plaque establishes the technical scene without repeating the dialogue.",
+    "Does every word remain editable after the art is placed?",
+    "Yes. The script, geometry, font and tail anchor remain separate records.",
+    "Then a layout repair does not regenerate the illustration."
+  ],
+  "stages": {
+    "SOURCE_CHECK": {
+      "worker_id": "fixture-source-specialist",
+      "result": "PASS"
+    },
+    "MANUSCRIPT": {
+      "worker_id": "fixture-manuscript-specialist",
+      "result": "PASS"
+    },
+    "EDITORIAL_QA": {
+      "worker_id": "fixture-editorial-review-gate",
+      "reviewer_ids": ["fixture-independent-family-editor", "fixture-independent-source-reviewer"],
+      "independent_from": ["fixture-manuscript-specialist"],
+      "result": "PASS"
+    },
+    "STORYBOARD": {
+      "worker_id": "fixture-storyboard-specialist",
+      "result": "PASS"
+    },
+    "CHARACTER_BIBLE": {
+      "worker_id": "fixture-iconography-specialist",
+      "result": "PASS"
+    },
+    "ART_PROOFS": {
+      "worker_id": "fixture-image-provider-adapter",
+      "provider_config_hash": "synthetic-provider-no-network-no-cost",
+      "result": "PASS"
+    },
+    "AWAITING_STYLE_APPROVAL": {
+      "worker_id": "fixture-human-approval-record",
+      "result": "PASS"
+    },
+    "ILLUSTRATION": {
+      "worker_id": "fixture-image-provider-adapter",
+      "provider_config_hash": "synthetic-provider-no-network-no-cost",
+      "interrupt_once": true,
+      "result": "PASS"
+    },
+    "LETTERING": {
+      "worker_id": "fixture-typesetter",
+      "result": "PASS"
+    },
+    "PDF_LAYOUT": {
+      "worker_id": "fixture-page-engine",
+      "result": "PASS"
+    },
+    "VISUAL_QA": {
+      "worker_id": "fixture-independent-image-reviewer",
+      "independent_from": ["fixture-page-engine", "fixture-image-provider-adapter"],
+      "result": "PASS"
+    },
+    "READY_FOR_PUBLICATION": {
+      "worker_id": "fixture-readiness-gate",
+      "result": "PASS"
+    }
+  }
+}

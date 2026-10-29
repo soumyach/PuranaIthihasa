@@ -1,0 +1,68 @@
+{
+  "book_id": "DM02",
+  "content_hash": "5e4bdbf21c1427db08dc7f4fa83b1a448351839fdc11734390974758088da322",
+  "id": "visual-proof-review-requests/p21-panel-01-033ddbed376b59b06c2cc1a8",
+  "kind": "visual-proof-review-requests/p21-panel-01",
+  "parent_hash": "6886187b5dca7d213692287d353b63f69bbcab69df24f776e18a31ee3e366446",
+  "payload": {
+    "actual_pixels_required": true,
+    "book_id": "DM02",
+    "campaign_id": "dm02-corrective-proof-campaign-01",
+    "campaign_subject_hash": "dc0d0d1bdccde821f94fce4b6a614c7dcbea7562cb66cf6ec4f72d0751120679",
+    "character_reference_promotion_requested": false,
+    "comparison_references": [
+      {
+        "content_transfer": "FORBIDDEN",
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+        "role": "A_SERIES_VISUAL_IDENTITY",
+        "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+      },
+      {
+        "content_transfer": "FORBIDDEN",
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p28.png",
+        "role": "B_PAGE_PANEL_COMPOSITION",
+        "sha256": "7c57ff55122e1054aa36cc9c4a122c9c9245a71152068da3b0b6b2dd02f9fdb5"
+      },
+      {
+        "content_transfer": "IDENTITY_PROPOSAL_ONLY",
+        "path": "books/DM02/visual-proof-campaign/images/p14-panel-01/v0001.png",
+        "role": "SUPPORTING_CONTINUITY_CANDIDATE_NOT_ROLE_C",
+        "sha256": "c3cf653e36e0d03a0d9b126ffeab56bee0b655ba752d8d988d9d057f8354170c"
+      }
+    ],
+    "image_path": "books/DM02/corrective-proof-campaign/images/p21-panel-01/v0002.png",
+    "image_receipt_content_hash": "cff831872e35fb2a9ce72bf4c112560f41167aa1ad2f6c5f4e62424036fb3005",
+    "image_sha256": "c2289c8e85a02071388af597d25b17cde29b8f9a4b139f9e423676e9fb8ad65d",
+    "independent_reviewer_required": true,
+    "original_resolution_required": true,
+    "page_id": "page-8619f3db280abbfd867eefe4",
+    "panel_id": "p21-panel-01",
+    "producer_ids": [
+      "codex-root-dm02-corrective-proof-producer"
+    ],
+    "request_hash": "cc4a4ca46ae7e2a6491839d5aac89ea88c22c11f28cc812497e4bf9791d38015",
+    "required_dimensions": [
+      "SOURCE_ACCURACY",
+      "RELIGIOUS_ICONOGRAPHY",
+      "CULTURAL_AUTHENTICITY",
+      "CHARACTER_IDENTITY",
+      "ACTION_CLARITY",
+      "ANATOMICAL_COHERENCE",
+      "VISUAL_CONTINUITY",
+      "PR7_GOLD_STANDARD_ALIGNMENT",
+      "LETTERING_COMPATIBILITY"
+    ],
+    "result_values": [
+      "PASS",
+      "FIX",
+      "ESCALATE"
+    ],
+    "schema_version": "1.0",
+    "source_iconography_clearance_path": "books/DM02/corrective-proof-campaign/source-iconography-clearance.json",
+    "source_iconography_clearance_sha256": "b80b470d873bca8f6c1b78c7a983bdc4e3101ca427d5abe821f4c167d685eb05",
+    "theological_certification_requested": false,
+    "unit_id": "page-8619f3db280abbfd867eefe4--p21-panel-01"
+  },
+  "schema_version": "1.0",
+  "version": 2
+}

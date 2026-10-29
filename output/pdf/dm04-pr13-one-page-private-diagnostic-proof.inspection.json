@@ -1,0 +1,31 @@
+{
+  "digital_reader_profile": "ONE_NATIVE_1086_X_1448_RASTER_PER_PAGE_NO_PRINT_CLAIM",
+  "engine_version": "0.8.1",
+  "findings": [],
+  "page_count": 1,
+  "page_order": [
+    "page-27d143ae995bf60742b65c5b"
+  ],
+  "pages": [
+    {
+      "height": 1448.0,
+      "images": [
+        {
+          "dimensions": [
+            1086,
+            1448
+          ],
+          "name": "FormXob.be0a247d6fbbf41d41867f376620a27c.png",
+          "pixel_sha256": "6374fc3a3c89574712ef144d9aab7940be053cd69d033f3f9383271c04400503"
+        }
+      ],
+      "orientation": "PORTRAIT",
+      "page_number": 1,
+      "width": 1086.0
+    }
+  ],
+  "pdf_path": "output/pdf/dm04-pr13-one-page-private-diagnostic-proof.pdf",
+  "pdf_sha256": "c21376565cb0b8d943ab67e49272666d76c42a8c37b4c385f8c3423c6c56d611",
+  "result": "PASS",
+  "schema_version": "1.0"
+}

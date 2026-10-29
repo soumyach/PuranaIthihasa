@@ -1,0 +1,3866 @@
+{
+  "approach_a_measured": {
+    "actual_incremental_usd": 0,
+    "campaign_hash": "5afc3beed39e3a79a40e768f172c188691ef6cbf5d5938eca229c49aabb0fcf4",
+    "campaign_status": "AWAITING_CAMPAIGN_AUTHORIZATION",
+    "existing_usable_assets": 0,
+    "image_operations_executed": 0,
+    "initial_generation_operations": 44,
+    "maximum_retry_operations": 44,
+    "maximum_total_operations": 88,
+    "measurement_basis": "Persisted DM02 campaign record, not an estimate.",
+    "name": "CURRENT_CAMPAIGN_ONE_NEW_IMAGE_PER_PANEL",
+    "per_image_cost_available": false,
+    "principal_risks": [
+      "Two text-only back-matter pages are incorrectly counted as image-generation operations.",
+      "Every panel receives the same 18% safe-region geometry regardless of actual lettering load.",
+      "No approved DM02 character or environment pixels exist for continuity roles C or D.",
+      "The uniform two-attempt ceiling exposes the campaign to 88 operations despite DM04's low first-pass acceptance rate."
+    ],
+    "storyboard_pages": 24,
+    "storyboard_panels": 44
+  },
+  "approach_b_proposed": {
+    "distinct_new_raster_masters": 35,
+    "illustrated_panel_slots": 42,
+    "initial_operation_reduction_from_a": 9,
+    "initial_operation_reduction_percent": 20.45,
+    "layout_only_back_matter_panels": 2,
+    "layout_only_panels": [
+      "p23-panel-01",
+      "p24-panel-01"
+    ],
+    "name": "BALANCED_24_PAGE_SHARED_MASTER_EDITION",
+    "pages": 24,
+    "panel_records_retained": 44,
+    "proof_first_units": [
+      "p01-panel-01",
+      "p11-panel-01",
+      "p14-panel-01",
+      "p21-panel-01"
+    ],
+    "recommended": true,
+    "reframe_conditions": [
+      "The future master must visibly contain the target panel's exact character identities, action state and focal detail at usable crop resolution.",
+      "Each crop remains a separately reviewed panel asset and inherits no approval from the master.",
+      "If a crop cannot protect its lettering region or loses facial/hand clarity, promote that target back to a unique generation rather than fabricating detail."
+    ],
+    "retry_reserve_recommendation": 9,
+    "risks": [
+      "Close crops may lack facial or hand resolution.",
+      "The 71-word hymn and other dense pages still need page-specific lettering geometry.",
+      "Thirty-five first-pass masters remain too large for one ungated batch without approved DM02 identity/location references."
+    ],
+    "same_moment_reframes": [
+      {
+        "master_panel_id": "p05-panel-01",
+        "target_panel_ids": [
+          "p05-panel-02",
+          "p05-panel-03"
+        ]
+      },
+      {
+        "master_panel_id": "p08-panel-01",
+        "target_panel_ids": [
+          "p08-panel-02"
+        ]
+      },
+      {
+        "master_panel_id": "p17-panel-01",
+        "target_panel_ids": [
+          "p17-panel-02"
+        ]
+      },
+      {
+        "master_panel_id": "p18-panel-01",
+        "target_panel_ids": [
+          "p18-panel-02"
+        ]
+      },
+      {
+        "master_panel_id": "p19-panel-01",
+        "target_panel_ids": [
+          "p19-panel-02"
+        ]
+      },
+      {
+        "master_panel_id": "p22-panel-01",
+        "target_panel_ids": [
+          "p22-panel-02"
+        ]
+      }
+    ],
+    "staged_authorization_ceiling": 44
+  },
+  "approach_c_lean_complete": {
+    "additional_combines": [
+      {
+        "group_id": "c-p02-frame-to-cosmos",
+        "panel_ids": [
+          "p02-panel-01",
+          "p02-panel-02"
+        ],
+        "result": "One transition composition with Medhas's hand/fire in the foreground and the three listeners receding into the opening cosmic field.",
+        "risk": "Loses the deliberate close-to-wide rhythm and may crowd the 16-word caption if the transition is over-detailed."
+      },
+      {
+        "group_id": "c-p10-appeal-to-withdrawal",
+        "panel_ids": [
+          "p10-panel-01",
+          "p10-panel-02"
+        ],
+        "result": "One split-focus composition with Brahmā's direct appeal above and the six subtle pre-withdrawal loci on Viṣṇu below.",
+        "risk": "May prematurely literalize withdrawal or make the 76-word page too dense; page 11 must remain the first actual withdrawal."
+      },
+      {
+        "group_id": "c-p20-unflooded-geometry",
+        "panel_ids": [
+          "p20-panel-01",
+          "p20-panel-02"
+        ],
+        "result": "One high oblique composition introducing the separate dry-earth plane and proving water surrounds it without a body platform.",
+        "risk": "Combining entrance and proof weakens the reveal and increases the chance of an accidental bodily-locus reading."
+      }
+    ],
+    "distinct_new_raster_masters": 30,
+    "illustrated_panel_slots": 40,
+    "inherits_approach_b_reframes_and_layout_only": true,
+    "initial_operation_reduction_from_a": 14,
+    "initial_operation_reduction_percent": 31.82,
+    "layout_only_back_matter_panels": 2,
+    "name": "LEAN_COMPLETE_24_PAGE_EDITION",
+    "pages": 24,
+    "panel_records_after_revision": 42,
+    "principal_risks": [
+      "More source transitions must coexist in single images, increasing provider omission and ordering risk.",
+      "Page 10 and page 20 become less forgiving of safe-region failure.",
+      "The reduction is specification-level only and requires a new validated storyboard/campaign before execution."
+    ],
+    "recommended": false,
+    "removals": [
+      {
+        "panel_id": "p07-panel-03",
+        "preserved_by": [
+          "p07-panel-01",
+          "p07-panel-02",
+          "page 7 exact narration"
+        ],
+        "risk": "The final three-level geography echo is lost."
+      },
+      {
+        "panel_id": "p13-panel-03",
+        "preserved_by": [
+          "p13-panel-01",
+          "p13-panel-02",
+          "page 13 exact narration"
+        ],
+        "risk": "Brahmā and Yoganidrā cease to be visible distant witnesses on the combat-opening page."
+      }
+    ],
+    "retry_reserve_recommendation": 7,
+    "staged_authorization_ceiling": 37
+  },
+  "authoritative_artifacts_modified": false,
+  "baseline": {
+    "branch": "feature/book-factory-dm02-production-optimization",
+    "commit": "36d3c4db86f0c1d0fbbf489e74f6498048c4d9e8",
+    "commit_short": "36d3c4d"
+  },
+  "book_id": "DM02",
+  "classification_contract": {
+    "allowed_classifications": [
+      "ESSENTIAL_NEW_ART",
+      "REUSE_EXISTING_ART",
+      "REFRAME_EXISTING_ART",
+      "COMBINE_WITH_ADJACENT",
+      "REMOVE_REDUNDANT_PANEL",
+      "SOURCE_OR_STORYBOARD_REVIEW_REQUIRED"
+    ],
+    "rule": "Every storyboard panel has exactly one primary classification from this exact list; analysis_category retains the review's internal production reasoning."
+  },
+  "dm04_failure_evidence_summary": [
+    {
+      "dm02_consequence": "Every future master must be composed around a visibly low-detail safe band and reviewed at actual pixels before lettering.",
+      "evidence": "All eight PR6 proof attempts and multiple PR11/PR12 panels occupied locked top lettering regions despite explicit instructions.",
+      "lesson_id": "SAFE_REGION_PROMPTS_ARE_NOT_SELF_ENFORCING"
+    },
+    {
+      "dm02_consequence": "Distinct source actions and viewpoint changes remain unique; only same-instant reframes are candidates for a shared master.",
+      "evidence": "PR11 page 1 produced strong single-scene art but failed the locked two-panel wide-to-close unit.",
+      "lesson_id": "ONE_SCENE_CANNOT_STAND_IN_FOR_A_SEQUENCE"
+    },
+    {
+      "dm02_consequence": "A reframe is permitted only when the future master already contains the exact character, action and continuity detail required by the target panel.",
+      "evidence": "PR13 found that crops could reuse exact page-1 action but could not create missing donor maps, arrow exchanges, breath, equipment loss or decisive actions.",
+      "lesson_id": "CROPPING_CANNOT_CREATE_MISSING_ACTION"
+    },
+    {
+      "dm02_consequence": "Pages 4, 6, 9, 11, 14-16 and 20-21 require strict negative prompts, exact bibles and independent review; page 11 and page 21 require proof gating.",
+      "evidence": "DM04 outputs repeatedly introduced halo disks, force fields, extra weapons, palaces, mounts or omitted required source actions and identities.",
+      "lesson_id": "SOURCE_AND_ICONOGRAPHY_DRIFT_RECURS"
+    },
+    {
+      "dm02_consequence": "Do not scale a full campaign from prose bibles alone; approve representative DM02 identity and environment references first.",
+      "evidence": "PR12 recorded five of five generated images as FIX and linked continuity failures to unavailable approved character and setting pixels.",
+      "lesson_id": "NO_APPROVED_C_OR_D_PIXELS_AMPLIFIES_DRIFT"
+    },
+    {
+      "dm02_consequence": "Lettering and crop success may validate composition mechanics only; it never inherits semantic approval to the source images.",
+      "evidence": "PR12/PR13 achieved a private composed-page PASS while preserving both underlying image statuses as FIX.",
+      "lesson_id": "LAYOUT_REPAIR_DOES_NOT_APPROVE_SOURCE_PIXELS"
+    }
+  ],
+  "execution": {
+    "attestation_scope": "ORCHESTRATOR_SESSION_RECORD_NOT_CRYPTOGRAPHIC_IDENTITY",
+    "capability": "visual_production_efficiency_review",
+    "cost_minor_units": 0,
+    "executed": true,
+    "external_calls_executed": 0,
+    "image_operations_executed": 0,
+    "mechanism": "CODEX_SPECIALIST_SUBAGENT_HANDOFF",
+    "paid_api_calls": 0,
+    "pdf_operations_executed": 0
+  },
+  "full_page_reviews": [
+    {
+      "approved_pixels_available": false,
+      "character_ids": [],
+      "decision": "KEEP_FULL_PAGE_UNIQUE",
+      "event_ids": [
+        "dm-event-004"
+      ],
+      "failure_prevention": "Reserve the full top safe band as low-detail water/sky and forbid all ordinary landmarks.",
+      "lettering_word_count": 44,
+      "location_id": "dm02-cosmic-ocean-dissolution",
+      "moment_ids": [],
+      "page_id": "page-a694d4c3702975edfdceb0c5",
+      "page_number": 3,
+      "panel_id": "p03-panel-01",
+      "production_complexity": "MEDIUM",
+      "reason": "The shoreless ocean is the scale-setting page-turn and can be rendered without character-continuity risk.",
+      "safe_region": {
+        "height": 0.18,
+        "id": "p03-panel-01-safe",
+        "purpose": "lettering separation",
+        "width": 0.84,
+        "x": 0.08,
+        "y": 0.06
+      },
+      "title": "Water Without Shore"
+    },
+    {
+      "approved_pixels_available": false,
+      "character_ids": [
+        "dm-vishnu",
+        "dm-shesha",
+        "dm-yoganidra"
+      ],
+      "decision": "KEEP_FULL_PAGE_UNIQUE_AND_PROOF_ADJACENT",
+      "event_ids": [
+        "dm-event-004"
+      ],
+      "failure_prevention": "Show only scene-required anatomy, no fixed four-arm or hood count, no halo or extra equipment, and preserve the top lettering band.",
+      "lettering_word_count": 44,
+      "location_id": "dm02-vishnu-on-shesha",
+      "moment_ids": [
+        "vishnu_sleeps_on_shesha"
+      ],
+      "page_id": "page-d20c0821bca7f13784a34630",
+      "page_number": 4,
+      "panel_id": "p04-panel-01",
+      "production_complexity": "HIGH",
+      "reason": "This is the first sacred identity lock for Viṣṇu, Śeṣa and the non-anatomical sleep field; compression would weaken the cosmic stillness.",
+      "safe_region": {
+        "height": 0.18,
+        "id": "p04-panel-01-safe",
+        "purpose": "lettering separation",
+        "width": 0.84,
+        "x": 0.08,
+        "y": 0.06
+      },
+      "title": "Sleep Beyond the World"
+    },
+    {
+      "approved_pixels_available": false,
+      "character_ids": [
+        "dm-vishnu",
+        "dm-shesha",
+        "dm-brahma",
+        "dm-yoganidra",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "decision": "KEEP_FULL_PAGE_UNIQUE",
+      "event_ids": [
+        "dm-event-004"
+      ],
+      "failure_prevention": "Do not render anatomical gore at the ear-region, weapons, armies or an invented motive; keep both Asuras distinct and fully in frame.",
+      "lettering_word_count": 39,
+      "location_id": "dm02-brahma-lotus",
+      "moment_ids": [
+        "madhu_kaitabha_threaten_brahma"
+      ],
+      "page_id": "page-6f5b1e3391910b496a7194d0",
+      "page_number": 6,
+      "panel_id": "p06-panel-01",
+      "production_complexity": "VERY_HIGH",
+      "reason": "The origin, threat direction, lotus geography and six-figure continuity must be read in one spatial event.",
+      "safe_region": {
+        "height": 0.18,
+        "id": "p06-panel-01-safe",
+        "purpose": "lettering separation",
+        "width": 0.84,
+        "x": 0.08,
+        "y": 0.06
+      },
+      "title": "The Threat at the Lotus"
+    },
+    {
+      "approved_pixels_available": false,
+      "character_ids": [
+        "dm-brahma",
+        "dm-yoganidra",
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "decision": "KEEP_FULL_PAGE_UNIQUE_WITH_EXPANDED_LETTERING_PLAN",
+      "event_ids": [
+        "dm-event-005"
+      ],
+      "failure_prevention": "Design a low-detail lettering field before generation and keep Brahmā's praise attributed; do not literalize hymn epithets or add a weapon array.",
+      "lettering_word_count": 71,
+      "location_id": "dm02-brahma-lotus",
+      "moment_ids": [
+        "brahma_invokes_goddess"
+      ],
+      "page_id": "page-ca28c1486ed14e92ca7c6c89",
+      "page_number": 9,
+      "panel_id": "p09-panel-01",
+      "production_complexity": "HIGH",
+      "reason": "The attributed hymn needs devotional scale, but its 71 words cannot be assumed to fit a generic 18% safe strip.",
+      "safe_region": {
+        "height": 0.18,
+        "id": "p09-panel-01-safe",
+        "purpose": "lettering separation",
+        "width": 0.84,
+        "x": 0.08,
+        "y": 0.06
+      },
+      "title": "Brahma's Hymn"
+    },
+    {
+      "approved_pixels_available": false,
+      "character_ids": [
+        "dm-yoganidra",
+        "dm-vishnu",
+        "dm-brahma",
+        "dm-shesha",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "decision": "KEEP_FULL_PAGE_UNIQUE_PROOF_GATE_REQUIRED",
+      "event_ids": [
+        "dm-event-006"
+      ],
+      "failure_prevention": "Use six unmistakable but modest radiance paths, no seventh locus, no permanent-residence implication, no halo/weapon array and no crowded architecture.",
+      "lettering_word_count": 59,
+      "location_id": "dm02-yoganidra-manifestation-space",
+      "moment_ids": [
+        "yoganidra_leaves_vishnu"
+      ],
+      "page_id": "page-b85332e92940926f67e6dd9d",
+      "page_number": 11,
+      "panel_id": "p11-panel-01",
+      "production_complexity": "VERY_HIGH",
+      "reason": "All six source-named withdrawal groups and the separate appeared presence are irreducible; this is analogous to DM04's failed donor/body mapping scenes.",
+      "safe_region": {
+        "height": 0.18,
+        "id": "p11-panel-01-safe",
+        "purpose": "lettering separation",
+        "width": 0.84,
+        "x": 0.08,
+        "y": 0.06
+      },
+      "title": "When Sleep Stood Apart"
+    },
+    {
+      "approved_pixels_available": false,
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "decision": "KEEP_FULL_PAGE_UNIQUE",
+      "event_ids": [
+        "dm-event-006"
+      ],
+      "failure_prevention": "Use wave rings and light bands rather than duplicated figures, clocks, armies, weapons or injuries.",
+      "lettering_word_count": 23,
+      "location_id": "dm02-flooded-combat-expanse",
+      "moment_ids": [
+        "long_combat_shown_nonliterally"
+      ],
+      "page_id": "page-25f617b853e82ff066d97844",
+      "page_number": 15,
+      "panel_id": "p15-panel-01",
+      "production_complexity": "HIGH",
+      "reason": "One nonliteral duration tableau efficiently carries five thousand years without generating repeated combat bodies.",
+      "safe_region": {
+        "height": 0.18,
+        "id": "p15-panel-01-safe",
+        "purpose": "lettering separation",
+        "width": 0.84,
+        "x": 0.08,
+        "y": 0.06
+      },
+      "title": "Five Thousand Years"
+    },
+    {
+      "approved_pixels_available": false,
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "decision": "KEEP_FULL_PAGE_UNIQUE_PROOF_GATE_REQUIRED",
+      "event_ids": [
+        "dm-event-007"
+      ],
+      "failure_prevention": "Keep dry earth visibly separate from every body, omit anatomical impact and gore, use only the discus, and protect the full lettering band.",
+      "lettering_word_count": 37,
+      "location_id": "dm02-unflooded-defeat-locus",
+      "moment_ids": [
+        "unflooded_condition_and_defeat"
+      ],
+      "page_id": "page-8619f3db280abbfd867eefe4",
+      "page_number": 21,
+      "panel_id": "p21-panel-01",
+      "production_complexity": "VERY_HIGH",
+      "reason": "The sourced discus, unflooded-earth condition and unresolved bodily locus make this the highest-risk decisive image.",
+      "safe_region": {
+        "height": 0.18,
+        "id": "p21-panel-01-safe",
+        "purpose": "lettering separation",
+        "width": 0.84,
+        "x": 0.08,
+        "y": 0.06
+      },
+      "title": "Where the Earth Was Not Flooded"
+    }
+  ],
+  "input_bindings": [
+    {
+      "file_sha256": "62a8edcbbd4e328bf6d216dc061b961ecdf1c178a9cc91bea43e7788e7cd8520",
+      "path": "AGENTS.md"
+    },
+    {
+      "file_sha256": "2eeeaa195301d035fae7e5600b68954e1d6564eebd9860d130c1029ac1162ddc",
+      "path": "skills/book-factory-art-iconography/SKILL.md"
+    },
+    {
+      "file_sha256": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070",
+      "path": "MYTHOLOGY_COMIC_RULES.md"
+    },
+    {
+      "file_sha256": "988853aadfbde1b09f080ea409b7e23772712f97e0eed42946bf7930ffe7c3a9",
+      "path": "books/DM02/manuscripts/v0002.json",
+      "stored_content_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762"
+    },
+    {
+      "file_sha256": "c1b548799c8cfdd01c94f2f463bcb0219aa086f531089873f51894fce456f9bb",
+      "path": "books/DM02/storyboards/v0001.json",
+      "stored_content_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6"
+    },
+    {
+      "file_sha256": "e15e42cb62fd2c17715d1acfcf95b09d7210bebb1afe4b7a06e0fb41b4cdc791",
+      "path": "books/DM02/character-bibles/v0001.json",
+      "stored_content_hash": "b469d78e327da2b41082dfbb48ad51a5a98e47112eea311157b2fd7ab979a1f7"
+    },
+    {
+      "file_sha256": "65a6da806ac3669b321745b561e134117ce5a9aa258d405c6ef79c45fd8e4e35",
+      "path": "books/DM02/location-bibles/v0001.json",
+      "stored_content_hash": "33a8a7d20973eba40580261f7f274375593db356d81564dd0a55cb9c2f0a592f"
+    },
+    {
+      "file_sha256": "7152d9e53a0a7468b62e71b6afbaaca00693c609626520f99daf266599337b80",
+      "path": "books/DM02/proof-specs/v0001.json",
+      "stored_content_hash": "38ccd93cfe00915a978c27e6be701ce481236c0f6fdb37010781a0e67a97044c"
+    },
+    {
+      "file_sha256": "0775af9ff8dacfdcbecece946b781e2187574883f148bb9a6327603f1ffdae3f",
+      "path": "book-factory/references/visual-gold-standard/manifest.json"
+    },
+    {
+      "file_sha256": "8e3a3d5ee5437f0d7e9f44a3b228ac6674f2250216a7e335f3a0173a30247c7d",
+      "path": "books/DM02/image-campaigns/5afc3beed39e3a79a40e768f172c188691ef6cbf5d5938eca229c49aabb0fcf4.request.json",
+      "stored_content_hash": "5afc3beed39e3a79a40e768f172c188691ef6cbf5d5938eca229c49aabb0fcf4"
+    },
+    {
+      "file_sha256": "d777721321fb0469a5f0a526a113fc80a90bd606d917e42f95f3a07ed87a8421",
+      "path": "books/DM02/image-campaign-status.json"
+    },
+    {
+      "file_sha256": "04dd8c0bf6009f7497931f809ff2e1e5940518f3b57b726ee5505d482183d1e5",
+      "path": "book-factory/reports/pr11-controlled-visual-pilot.json"
+    },
+    {
+      "file_sha256": "1dd3aba105fe3abb7d8820cca70b13610342d9e009ed1a7e146645f14657af1b",
+      "path": "book-factory/reports/pr12-autonomous-production-assessment.json"
+    },
+    {
+      "file_sha256": "dc23edf38f68c95244c1ba0362771ddc47d9ec669feedc85fe3051a08f9fb59e",
+      "path": "book-factory/reports/pr13-independent-page-review.json"
+    },
+    {
+      "file_sha256": "c58475930ebe728abc85c0a3568f0f3b00e09a61c13431d41d22e117eb1ae585",
+      "path": "book-factory/reports/pr13-minimal-missing-illustration-specification.json"
+    },
+    {
+      "file_sha256": "002fe077bee18701591b6dbf1992b119c80114c95a0eb13e05801eae48319647",
+      "path": "book-factory/reports/pr13-three-page-sequence-asset-coverage.json"
+    },
+    {
+      "file_sha256": "32e542e7ffe0caa2380d59593b5fe590c33d382f34909599220aa0d54304b445",
+      "path": "work/pr6/reviews/quiet.response.json"
+    },
+    {
+      "file_sha256": "0b2851da6af3397d9379636bd1b9dea40af1dafe9c83ba5c80e2dc75b7ec659b",
+      "path": "work/pr6/reviews/divine.response.json"
+    },
+    {
+      "file_sha256": "77b5660c34db03517ce6c519d7a705f32b38851c5cd9e0feb0eb488e3b5d8d99",
+      "path": "work/pr6/reviews/battle.response.json"
+    },
+    {
+      "file_sha256": "b385a81a8858a35190bc39ff46cdad2f57a6c3cb10ddecc83d5dd5354d56363f",
+      "path": "work/pr6/reviews/full-page.response.json"
+    },
+    {
+      "file_sha256": "54878bed7ba92be2c6152e592b6997e79a64589da269dfc927312fcde893b39b",
+      "path": "work/pr6/reviews-v2/quiet.response.json"
+    },
+    {
+      "file_sha256": "b157131e2ada56fc76529747d4cb425ddcad12cd49b43ac556d6c539f9b39bc3",
+      "path": "work/pr6/reviews-v2/divine.response.json"
+    },
+    {
+      "file_sha256": "0ac80d4cc9fafa345ce07df4993f858344058035fe9e846c253378877f587be1",
+      "path": "work/pr6/reviews-v2/battle.response.json"
+    },
+    {
+      "file_sha256": "228d0b12f6b0b4d62029756fd482b41d9fc11f3349b1919dd2a8bf0dfee0923e",
+      "path": "work/pr6/reviews-v2/full.response.json"
+    }
+  ],
+  "kind": "DM02_VISUAL_PRODUCTION_EFFICIENCY_REVIEW",
+  "media_generated": false,
+  "panel_audit": [
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-medhas",
+        "dm-suratha",
+        "dm-samadhi"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION",
+          "DIALOGUE"
+        ],
+        "necessary": true,
+        "why": "Attributed speech carries invocation, boon or condition content that image-only staging cannot state precisely without inventing meaning."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-004"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-forest-hermitage-frame",
+      "moment_ids": [
+        "medhas_opens_cosmic_tale"
+      ],
+      "narrative_purpose": "Establishes the three-person hermitage listening triangle.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-71e9de766bf786cb9499a31b",
+      "page_lettering_word_count": 31,
+      "page_number": 1,
+      "page_title": "The Tale Opens",
+      "panel_id": "p01-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "MEDIUM",
+      "proof_spec_id": "dm02-proof-quiet-conversation",
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Wide eye-level listening triangle: Medhas faces Suratha and Samādhi across a low fire; their neutral attention is labeled visual adaptation and adds no reaction or motive.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "frame_reaction_adaptation_boundary"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p01-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-004-a",
+        "claim-004-d"
+      ],
+      "source_criticality": "LOCKED_MOMENT",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-71e9de766bf786cb9499a31b--p01-panel-01",
+      "visual_change_from_prior_panel": "Establishes the three-person hermitage listening triangle."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-medhas",
+        "dm-suratha",
+        "dm-samadhi"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION",
+          "DIALOGUE"
+        ],
+        "necessary": true,
+        "why": "Attributed speech carries invocation, boon or condition content that image-only staging cannot state precisely without inventing meaning."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-004"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-forest-hermitage-frame",
+      "moment_ids": [
+        "medhas_opens_cosmic_tale"
+      ],
+      "narrative_purpose": "Moves from the wide frame to Medhas as the speaking focus.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-71e9de766bf786cb9499a31b",
+      "page_lettering_word_count": 31,
+      "page_number": 1,
+      "page_title": "The Tale Opens",
+      "panel_id": "p01-panel-02",
+      "panel_reading_order": 2,
+      "production_complexity": "MEDIUM",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Medium speaker-anchored view of Medhas beginning the distinction, with both listeners present in quiet profile and the upper field reserved for lettering.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "frame_reaction_adaptation_boundary"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p01-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-004-a",
+        "claim-004-d"
+      ],
+      "source_criticality": "LOCKED_MOMENT",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-71e9de766bf786cb9499a31b--p01-panel-02",
+      "visual_change_from_prior_panel": "Moves from the wide frame to Medhas as the speaking focus."
+    },
+    {
+      "analysis_category": "ADJACENT_COMBINE_CANDIDATE",
+      "character_ids": [
+        "dm-medhas"
+      ],
+      "classification": "COMBINE_WITH_ADJACENT",
+      "classification_rationale": "The two adjacent panels form one continuous transition and could be re-scripted as one composition only in the lean edition; this is not assumed safe for the recommended edition.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-004"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "COMBINE_WITH_ADJACENT_PANEL",
+      "lean_complete_c_group_id": "c-p02-frame-to-cosmos",
+      "location_id": "dm02-forest-hermitage-frame",
+      "moment_ids": [],
+      "narrative_purpose": "Turns Medhas's hand and fire smoke into the transition toward dissolution.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-88792a15dcd25b30d3982d7c",
+      "page_lettering_word_count": 16,
+      "page_number": 2,
+      "page_title": "Beyond Remembered Seasons",
+      "panel_id": "p02-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "MEDIUM",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Close view of Medhas's open hand above the low fire; smoke and navy negative space begin the transition without becoming a supernatural source claim.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "frame_reaction_adaptation_boundary"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p02-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-004-d"
+      ],
+      "source_criticality": "SUPPORTING",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-88792a15dcd25b30d3982d7c--p02-panel-01",
+      "visual_change_from_prior_panel": "Turns Medhas's hand and fire smoke into the transition toward dissolution."
+    },
+    {
+      "analysis_category": "ADJACENT_COMBINE_CANDIDATE",
+      "character_ids": [
+        "dm-medhas",
+        "dm-suratha",
+        "dm-samadhi"
+      ],
+      "classification": "COMBINE_WITH_ADJACENT",
+      "classification_rationale": "The two adjacent panels form one continuous transition and could be re-scripted as one composition only in the lean edition; this is not assumed safe for the recommended edition.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-004"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "COMBINE_WITH_ADJACENT_PANEL",
+      "lean_complete_c_group_id": "c-p02-frame-to-cosmos",
+      "location_id": "dm02-forest-hermitage-frame",
+      "moment_ids": [],
+      "narrative_purpose": "Widens to all three frame figures as the cosmic field opens.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-88792a15dcd25b30d3982d7c",
+      "page_lettering_word_count": 16,
+      "page_number": 2,
+      "page_title": "Beyond Remembered Seasons",
+      "panel_id": "p02-panel-02",
+      "panel_reading_order": 2,
+      "production_complexity": "MEDIUM",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Wide frame of the three listeners reduced to silhouettes as the dark upper field opens toward the dissolution sequence; no invented listener reaction.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "frame_reaction_adaptation_boundary"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p02-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-004-d"
+      ],
+      "source_criticality": "SUPPORTING",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-88792a15dcd25b30d3982d7c--p02-panel-02",
+      "visual_change_from_prior_panel": "Widens to all three frame figures as the cosmic field opens."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-004"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "FULL_PAGE",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-cosmic-ocean-dissolution",
+      "moment_ids": [],
+      "narrative_purpose": "Replaces the hermitage with shoreless dissolution water.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-a694d4c3702975edfdceb0c5",
+      "page_lettering_word_count": 44,
+      "page_number": 3,
+      "page_title": "Water Without Shore",
+      "panel_id": "p03-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "LOW",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Full-page horizonless dissolution water: no shore, mountain, city, temple, star map or ordinary landmark; scale comes only from sparse gold reflections and layered darkness.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p03-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-004-b",
+        "claim-004-d"
+      ],
+      "source_criticality": "SUPPORTING",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-a694d4c3702975edfdceb0c5--p03-panel-01",
+      "visual_change_from_prior_panel": "Replaces the hermitage with shoreless dissolution water."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-shesha",
+        "dm-yoganidra"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-004"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "FULL_PAGE",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-vishnu-on-shesha",
+      "moment_ids": [
+        "vishnu_sleeps_on_shesha"
+      ],
+      "narrative_purpose": "Introduces sleeping Viṣṇu, Śeṣa and Yoganidrā's non-anatomical sleep field.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-d20c0821bca7f13784a34630",
+      "page_lettering_word_count": 44,
+      "page_number": 4,
+      "page_title": "Sleep Beyond the World",
+      "panel_id": "p04-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "HIGH",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Low horizontal full-page repose: sleeping Viṣṇu is clearly supported by Śeṣa above the flood; Yoganidrā is a non-anatomical sleep field, with no fixed halo, weapon, body residence or conventional arm/hood count.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "arm_head_hood_count_source_silence"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p04-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-004-b"
+      ],
+      "source_criticality": "LOCKED_MOMENT",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-d20c0821bca7f13784a34630--p04-panel-01",
+      "visual_change_from_prior_panel": "Introduces sleeping Viṣṇu, Śeṣa and Yoganidrā's non-anatomical sleep field."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-shesha",
+        "dm-brahma",
+        "dm-yoganidra"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-004"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "THREE_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-brahma-lotus",
+      "moment_ids": [],
+      "narrative_purpose": "Establishes the lotus's vertical relation from Viṣṇu to Brahmā.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-2e96a0bca25ea33924a24fde",
+      "page_lettering_word_count": 54,
+      "page_number": 5,
+      "page_title": "The Lotus Above the Flood",
+      "panel_id": "p05-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "HIGH",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Vertical establishing panel: the lotus rises from Viṣṇu to lotus-seated Brahmā while Śeṣa remains visibly below; do not add a temple, throne room or invented island.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "arm_head_hood_count_source_silence",
+        "lotus_vertical_geography"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p05-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-004-b",
+        "claim-004-d"
+      ],
+      "source_criticality": "SUPPORTING",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-2e96a0bca25ea33924a24fde--p05-panel-01",
+      "visual_change_from_prior_panel": "Establishes the lotus's vertical relation from Viṣṇu to Brahmā."
+    },
+    {
+      "analysis_category": "SAME_MOMENT_REFRAME_CANDIDATE",
+      "character_ids": [
+        "dm-brahma"
+      ],
+      "classification": "REFRAME_EXISTING_ART",
+      "classification_rationale": "The panel is the same characters, setting and instant as its named master; a deliberately composed high-resolution master may support the crop if the exact focal detail survives review.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": false,
+      "event_ids": [
+        "dm-event-004"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": true,
+      "layout_type": "THREE_PANEL",
+      "lean_complete_c_action": "REFRAME_FROM_SHARED_MASTER",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-brahma-lotus",
+      "moment_ids": [],
+      "narrative_purpose": "Reframes the same instant at lotus level around Brahmā.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": false,
+      "new_image_essential": false,
+      "page_id": "page-2e96a0bca25ea33924a24fde",
+      "page_lettering_word_count": 54,
+      "page_number": 5,
+      "page_title": "The Lotus Above the Flood",
+      "panel_id": "p05-panel-02",
+      "panel_reading_order": 2,
+      "production_complexity": "MEDIUM",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "REFRAME_FROM_FUTURE_SHARED_MASTER",
+      "recommended_approach_b_master_panel_id": "p05-panel-01",
+      "required_action": "Medium lotus-level view of Brahmā with only flood beyond; exact head and arm counts remain source-silent and no conventional multiplicity is asserted.",
+      "reuse_basis": "FUTURE_SHARED_MASTER_PROPOSAL_NO_EXISTING_APPROVED_PIXELS",
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "arm_head_hood_count_source_silence",
+        "lotus_vertical_geography"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p05-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-004-b",
+        "claim-004-d"
+      ],
+      "source_criticality": "SUPPORTING",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-2e96a0bca25ea33924a24fde--p05-panel-02",
+      "visual_change_from_prior_panel": "Reframes the same instant at lotus level around Brahmā."
+    },
+    {
+      "analysis_category": "SAME_MOMENT_REFRAME_CANDIDATE",
+      "character_ids": [],
+      "classification": "REFRAME_EXISTING_ART",
+      "classification_rationale": "The panel is the same characters, setting and instant as its named master; a deliberately composed high-resolution master may support the crop if the exact focal detail survives review.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": false,
+      "event_ids": [
+        "dm-event-004"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": true,
+      "layout_type": "THREE_PANEL",
+      "lean_complete_c_action": "REFRAME_FROM_SHARED_MASTER",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-brahma-lotus",
+      "moment_ids": [],
+      "narrative_purpose": "Reframes the same environment as still water darkens toward danger.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": false,
+      "new_image_essential": false,
+      "page_id": "page-2e96a0bca25ea33924a24fde",
+      "page_lettering_word_count": 54,
+      "page_number": 5,
+      "page_title": "The Lotus Above the Flood",
+      "panel_id": "p05-panel-03",
+      "panel_reading_order": 3,
+      "production_complexity": "LOW",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "REFRAME_FROM_FUTURE_SHARED_MASTER",
+      "recommended_approach_b_master_panel_id": "p05-panel-01",
+      "required_action": "Narrow closing panel of still water and a dark approaching interval, carrying danger without yet revealing invented detail.",
+      "reuse_basis": "FUTURE_SHARED_MASTER_PROPOSAL_NO_EXISTING_APPROVED_PIXELS",
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "arm_head_hood_count_source_silence",
+        "lotus_vertical_geography"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p05-panel-03-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-004-b",
+        "claim-004-d"
+      ],
+      "source_criticality": "SUPPORTING",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-2e96a0bca25ea33924a24fde--p05-panel-03",
+      "visual_change_from_prior_panel": "Reframes the same environment as still water darkens toward danger."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-shesha",
+        "dm-brahma",
+        "dm-yoganidra",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-004"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "FULL_PAGE",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-brahma-lotus",
+      "moment_ids": [
+        "madhu_kaitabha_threaten_brahma"
+      ],
+      "narrative_purpose": "Introduces Madhu and Kaiṭabha advancing from Viṣṇu's ear-region toward the lotus.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-6f5b1e3391910b496a7194d0",
+      "page_lettering_word_count": 39,
+      "page_number": 6,
+      "page_title": "The Threat at the Lotus",
+      "panel_id": "p06-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "HIGH",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Full-page opposing depth: Madhu and Kaiṭabha emerge into the water near Viṣṇu's ear-region and advance toward Brahmā's lotus; show no anatomical gore, genealogy, weapons, army or motive beyond the threat.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "lotus_vertical_geography",
+        "ear_region_origin_without_anatomical_gore"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p06-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-004-c"
+      ],
+      "source_criticality": "LOCKED_MOMENT",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-6f5b1e3391910b496a7194d0--p06-panel-01",
+      "visual_change_from_prior_panel": "Introduces Madhu and Kaiṭabha advancing from Viṣṇu's ear-region toward the lotus."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-shesha",
+        "dm-brahma",
+        "dm-yoganidra",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-004"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "THREE_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-brahma-lotus",
+      "moment_ids": [],
+      "narrative_purpose": "Connects Brahmā's sightline, the approaching pair and sleeping Viṣṇu.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-2eff3830302e6bb1ce973d73",
+      "page_lettering_word_count": 105,
+      "page_number": 7,
+      "page_title": "Danger and Answer Together",
+      "panel_id": "p07-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "HIGH",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Brahmā's sightline connects the approaching pair to sleeping Viṣṇu below; keep lotus, sleepers and threat in one stable vertical geography.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "arm_head_hood_count_source_silence",
+        "lotus_vertical_geography"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p07-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-004-b",
+        "claim-004-c",
+        "claim-004-d"
+      ],
+      "source_criticality": "SUPPORTING",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-2eff3830302e6bb1ce973d73--p07-panel-01",
+      "visual_change_from_prior_panel": "Connects Brahmā's sightline, the approaching pair and sleeping Viṣṇu."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-madhu",
+        "dm-kaitabha",
+        "dm-brahma"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-004"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "THREE_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-brahma-lotus",
+      "moment_ids": [],
+      "narrative_purpose": "Compresses the threat into the narrowing water gap at the lotus.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-2eff3830302e6bb1ce973d73",
+      "page_lettering_word_count": 105,
+      "page_number": 7,
+      "page_title": "Danger and Answer Together",
+      "panel_id": "p07-panel-02",
+      "panel_reading_order": 2,
+      "production_complexity": "MEDIUM",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Tight panel on the narrowing water gap between the demons and lotus, with no invented weapon or attack contact.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "arm_head_hood_count_source_silence",
+        "lotus_vertical_geography"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p07-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-004-b",
+        "claim-004-c",
+        "claim-004-d"
+      ],
+      "source_criticality": "SUPPORTING",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-2eff3830302e6bb1ce973d73--p07-panel-02",
+      "visual_change_from_prior_panel": "Compresses the threat into the narrowing water gap at the lotus."
+    },
+    {
+      "analysis_category": "REDUNDANT_REMOVE_CANDIDATE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-shesha",
+        "dm-brahma",
+        "dm-yoganidra",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "REMOVE_REDUNDANT_PANEL",
+      "classification_rationale": "The panel repeats geography or grouping already established on the same page and its factual content remains in adjacent art and exact lettering.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": false,
+      "event_ids": [
+        "dm-event-004"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "THREE_PANEL",
+      "lean_complete_c_action": "REMOVE_REDUNDANT_PANEL",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-brahma-lotus",
+      "moment_ids": [],
+      "narrative_purpose": "Repeats the three-level geography already carried by panel 1.",
+      "narratively_redundant": true,
+      "new_camera_angle_required": false,
+      "new_image_essential": true,
+      "page_id": "page-2eff3830302e6bb1ce973d73",
+      "page_lettering_word_count": 105,
+      "page_number": 7,
+      "page_title": "Danger and Answer Together",
+      "panel_id": "p07-panel-03",
+      "panel_reading_order": 3,
+      "production_complexity": "HIGH",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Wide three-level hold: demons on water, Viṣṇu on Śeṣa, Brahmā above; Yoganidrā remains a sleep field, not a body-locus figure.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "arm_head_hood_count_source_silence",
+        "lotus_vertical_geography"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p07-panel-03-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-004-b",
+        "claim-004-c",
+        "claim-004-d"
+      ],
+      "source_criticality": "SUPPORTING",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-2eff3830302e6bb1ce973d73--p07-panel-03",
+      "visual_change_from_prior_panel": "Repeats the three-level geography already carried by panel 1."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-brahma",
+        "dm-yoganidra",
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-005"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-brahma-lotus",
+      "moment_ids": [],
+      "narrative_purpose": "Changes Brahmā from threatened observer to invoker of Yoganidrā.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-050fb795d8c0bba26d6fc934",
+      "page_lettering_word_count": 43,
+      "page_number": 8,
+      "page_title": "A Place of Invocation",
+      "panel_id": "p08-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "HIGH",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Medium lotus-level view: Brahmā turns his attention toward Yoganidrā rather than shouting at Viṣṇu; the demons remain distant but advancing.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "arm_head_hood_count_source_silence",
+        "lotus_vertical_geography"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p08-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-005-a",
+        "claim-005-c"
+      ],
+      "source_criticality": "SUPPORTING",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-050fb795d8c0bba26d6fc934--p08-panel-01",
+      "visual_change_from_prior_panel": "Changes Brahmā from threatened observer to invoker of Yoganidrā."
+    },
+    {
+      "analysis_category": "SAME_MOMENT_REFRAME_CANDIDATE",
+      "character_ids": [
+        "dm-brahma"
+      ],
+      "classification": "REFRAME_EXISTING_ART",
+      "classification_rationale": "The panel is the same characters, setting and instant as its named master; a deliberately composed high-resolution master may support the crop if the exact focal detail survives review.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": false,
+      "event_ids": [
+        "dm-event-005"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": true,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "REFRAME_FROM_SHARED_MASTER",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-brahma-lotus",
+      "moment_ids": [],
+      "narrative_purpose": "Reframes the same invocation instant as a close speaking view.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": false,
+      "new_image_essential": false,
+      "page_id": "page-050fb795d8c0bba26d6fc934",
+      "page_lettering_word_count": 43,
+      "page_number": 8,
+      "page_title": "A Place of Invocation",
+      "panel_id": "p08-panel-02",
+      "panel_reading_order": 2,
+      "production_complexity": "MEDIUM",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "REFRAME_FROM_FUTURE_SHARED_MASTER",
+      "recommended_approach_b_master_panel_id": "p08-panel-01",
+      "required_action": "Quiet close view of Brahmā in gathered attention with a protected dialogue field; do not add weapons, multi-head iconography or an unsourced halo.",
+      "reuse_basis": "FUTURE_SHARED_MASTER_PROPOSAL_NO_EXISTING_APPROVED_PIXELS",
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "arm_head_hood_count_source_silence",
+        "lotus_vertical_geography"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p08-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-005-a",
+        "claim-005-c"
+      ],
+      "source_criticality": "SUPPORTING",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-050fb795d8c0bba26d6fc934--p08-panel-02",
+      "visual_change_from_prior_panel": "Reframes the same invocation instant as a close speaking view."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-brahma",
+        "dm-yoganidra",
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION",
+          "DIALOGUE"
+        ],
+        "necessary": true,
+        "why": "Attributed speech carries invocation, boon or condition content that image-only staging cannot state precisely without inventing meaning."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-005"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "FULL_PAGE",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-brahma-lotus",
+      "moment_ids": [
+        "brahma_invokes_goddess"
+      ],
+      "narrative_purpose": "Expands Brahmā's attributed hymn into a devotional full-page address.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-ca28c1486ed14e92ca7c6c89",
+      "page_lettering_word_count": 71,
+      "page_number": 9,
+      "page_title": "Brahma's Hymn",
+      "panel_id": "p09-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "HIGH",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Full-page devotional address from Brahmā toward the source-neutral field of Yoganidrā; keep the hymn attributed to its speaker and do not literalize its cosmic names as independent project facts or add a weapon array.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "arm_head_hood_count_source_silence",
+        "lotus_vertical_geography",
+        "attributed_hymn_not_literalized"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p09-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-005-a",
+        "claim-005-c"
+      ],
+      "source_criticality": "LOCKED_MOMENT",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-ca28c1486ed14e92ca7c6c89--p09-panel-01",
+      "visual_change_from_prior_panel": "Expands Brahmā's attributed hymn into a devotional full-page address."
+    },
+    {
+      "analysis_category": "ADJACENT_COMBINE_CANDIDATE",
+      "character_ids": [
+        "dm-brahma",
+        "dm-yoganidra",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "COMBINE_WITH_ADJACENT",
+      "classification_rationale": "The two adjacent panels form one continuous transition and could be re-scripted as one composition only in the lean edition; this is not assumed safe for the recommended edition.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION",
+          "DIALOGUE"
+        ],
+        "necessary": true,
+        "why": "Attributed speech carries invocation, boon or condition content that image-only staging cannot state precisely without inventing meaning."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-005"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "COMBINE_WITH_ADJACENT_PANEL",
+      "lean_complete_c_group_id": "c-p10-appeal-to-withdrawal",
+      "location_id": "dm02-brahma-lotus",
+      "moment_ids": [],
+      "narrative_purpose": "Changes the hymn into the direct request while the threat continues.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-29ea6f05a380ac8e4598753f",
+      "page_lettering_word_count": 79,
+      "page_number": 10,
+      "page_title": "The Direct Appeal",
+      "panel_id": "p10-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "HIGH",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Brahmā's appeal is directed toward Yoganidrā while the advancing pair remains in the same spatial lane; no escape route is invented.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "arm_head_hood_count_source_silence",
+        "lotus_vertical_geography"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p10-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-005-b",
+        "claim-005-c"
+      ],
+      "source_criticality": "SEQUENCE_CRITICAL",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-29ea6f05a380ac8e4598753f--p10-panel-01",
+      "visual_change_from_prior_panel": "Changes the hymn into the direct request while the threat continues."
+    },
+    {
+      "analysis_category": "ADJACENT_COMBINE_CANDIDATE",
+      "character_ids": [
+        "dm-yoganidra",
+        "dm-vishnu"
+      ],
+      "classification": "COMBINE_WITH_ADJACENT",
+      "classification_rationale": "The two adjacent panels form one continuous transition and could be re-scripted as one composition only in the lean edition; this is not assumed safe for the recommended edition.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION",
+          "DIALOGUE"
+        ],
+        "necessary": true,
+        "why": "Attributed speech carries invocation, boon or condition content that image-only staging cannot state precisely without inventing meaning."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-005"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "COMBINE_WITH_ADJACENT_PANEL",
+      "lean_complete_c_group_id": "c-p10-appeal-to-withdrawal",
+      "location_id": "dm02-brahma-lotus",
+      "moment_ids": [],
+      "narrative_purpose": "Moves attention from Brahmā to the six withdrawal loci on Viṣṇu.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-29ea6f05a380ac8e4598753f",
+      "page_lettering_word_count": 79,
+      "page_number": 10,
+      "page_title": "The Direct Appeal",
+      "panel_id": "p10-panel-02",
+      "panel_reading_order": 2,
+      "production_complexity": "MEDIUM",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Closing stillness around Viṣṇu: six subtle source-named locus groups prepare for withdrawal without implying that Yoganidrā permanently resides inside any body part.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "arm_head_hood_count_source_silence",
+        "lotus_vertical_geography"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p10-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-005-b",
+        "claim-005-c"
+      ],
+      "source_criticality": "SEQUENCE_CRITICAL",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-29ea6f05a380ac8e4598753f--p10-panel-02",
+      "visual_change_from_prior_panel": "Moves attention from Brahmā to the six withdrawal loci on Viṣṇu."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-yoganidra",
+        "dm-vishnu",
+        "dm-brahma",
+        "dm-shesha",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-006"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "FULL_PAGE",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-yoganidra-manifestation-space",
+      "moment_ids": [
+        "yoganidra_leaves_vishnu"
+      ],
+      "narrative_purpose": "Shows all six named withdrawal groups and Yoganidrā appearing separately before Brahmā.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-b85332e92940926f67e6dd9d",
+      "page_lettering_word_count": 59,
+      "page_number": 11,
+      "page_title": "When Sleep Stood Apart",
+      "panel_id": "p11-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "VERY_HIGH",
+      "proof_spec_id": "dm02-proof-divine-reveal",
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Full-page exact-locus withdrawal map: distinct radiance leaves Viṣṇu's eyes, mouth, nose, arms, heart and breast, then gathers as a separate appeared presence before Brahmā; keep all six groups readable, modest and non-anatomical, with no seventh locus or permanent-residence implication.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "exact_six_locus_mapping",
+        "no_permanent_residence_implication"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p11-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-006-a"
+      ],
+      "source_criticality": "LOCKED_MOMENT",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-b85332e92940926f67e6dd9d--p11-panel-01",
+      "visual_change_from_prior_panel": "Shows all six named withdrawal groups and Yoganidrā appearing separately before Brahmā."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-yoganidra"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-006"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-vishnu-on-shesha",
+      "moment_ids": [
+        "vishnu_awakens"
+      ],
+      "narrative_purpose": "Moves from withdrawal to Viṣṇu's eyes opening.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-5d55c9f3f53bac24d1f44238",
+      "page_lettering_word_count": 35,
+      "page_number": 12,
+      "page_title": "Vishnu Awakens",
+      "panel_id": "p12-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "MEDIUM",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Close view of Viṣṇu's eyes opening after the withdrawal; the same sleeping identity shifts to alertness without an invented transformation.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "arm_head_hood_count_source_silence"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p12-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-006-a",
+        "claim-006-b"
+      ],
+      "source_criticality": "LOCKED_MOMENT",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-5d55c9f3f53bac24d1f44238--p12-panel-01",
+      "visual_change_from_prior_panel": "Moves from withdrawal to Viṣṇu's eyes opening."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-yoganidra",
+        "dm-vishnu",
+        "dm-brahma",
+        "dm-shesha",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-006"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-vishnu-on-shesha",
+      "moment_ids": [
+        "vishnu_awakens"
+      ],
+      "narrative_purpose": "Widens to Viṣṇu recognizing Brahmā and both Asuras.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-5d55c9f3f53bac24d1f44238",
+      "page_lettering_word_count": 35,
+      "page_number": 12,
+      "page_title": "Vishnu Awakens",
+      "panel_id": "p12-panel-02",
+      "panel_reading_order": 2,
+      "production_complexity": "HIGH",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Wide re-establishing view: awake Viṣṇu sees Brahmā and both Asuras while Śeṣa remains the stable support and Yoganidrā stands apart before Brahmā.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "arm_head_hood_count_source_silence"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p12-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-006-a",
+        "claim-006-b"
+      ],
+      "source_criticality": "LOCKED_MOMENT",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-5d55c9f3f53bac24d1f44238--p12-panel-02",
+      "visual_change_from_prior_panel": "Widens to Viṣṇu recognizing Brahmā and both Asuras."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha",
+        "dm-brahma"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-006"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "THREE_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "moment_ids": [],
+      "narrative_purpose": "Moves Viṣṇu into the water lane as the Asuras turn from the lotus.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-4adc33689921626f8d0b1f8d",
+      "page_lettering_word_count": 75,
+      "page_number": 13,
+      "page_title": "The Confrontation Closes",
+      "panel_id": "p13-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "HIGH",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Viṣṇu rises into the water action lane while Madhu and Kaiṭabha turn from the lotus; maintain left-to-right approach continuity.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "hands_limbs_and_exact_action"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p13-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-006-b"
+      ],
+      "source_criticality": "SUPPORTING",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-4adc33689921626f8d0b1f8d--p13-panel-01",
+      "visual_change_from_prior_panel": "Moves Viṣṇu into the water lane as the Asuras turn from the lotus."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-006"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "THREE_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "moment_ids": [],
+      "narrative_purpose": "Begins the source-bounded arm-to-arm engagement.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-4adc33689921626f8d0b1f8d",
+      "page_lettering_word_count": 75,
+      "page_number": 13,
+      "page_title": "The Confrontation Closes",
+      "panel_id": "p13-panel-02",
+      "panel_reading_order": 2,
+      "production_complexity": "MEDIUM",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Arm-to-arm engagement begins with three coherent humanlike silhouettes; no army, weapon, wound or unsupported arm count.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "hands_limbs_and_exact_action"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p13-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-006-b"
+      ],
+      "source_criticality": "SUPPORTING",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-4adc33689921626f8d0b1f8d--p13-panel-02",
+      "visual_change_from_prior_panel": "Begins the source-bounded arm-to-arm engagement."
+    },
+    {
+      "analysis_category": "REDUNDANT_REMOVE_CANDIDATE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha",
+        "dm-yoganidra",
+        "dm-brahma"
+      ],
+      "classification": "REMOVE_REDUNDANT_PANEL",
+      "classification_rationale": "The panel repeats geography or grouping already established on the same page and its factual content remains in adjacent art and exact lettering.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": false,
+      "event_ids": [
+        "dm-event-006"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "THREE_PANEL",
+      "lean_complete_c_action": "REMOVE_REDUNDANT_PANEL",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "moment_ids": [],
+      "narrative_purpose": "Repeats the combatant grouping while retaining distant witnesses.",
+      "narratively_redundant": true,
+      "new_camera_angle_required": false,
+      "new_image_essential": true,
+      "page_id": "page-4adc33689921626f8d0b1f8d",
+      "page_lettering_word_count": 75,
+      "page_number": 13,
+      "page_title": "The Confrontation Closes",
+      "panel_id": "p13-panel-03",
+      "panel_reading_order": 3,
+      "production_complexity": "HIGH",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Wide hold on the three combatants against the unbounded flood; Yoganidrā and Brahmā remain distant witnesses, not combatants.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "hands_limbs_and_exact_action"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p13-panel-03-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-006-b"
+      ],
+      "source_criticality": "SUPPORTING",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-4adc33689921626f8d0b1f8d--p13-panel-03",
+      "visual_change_from_prior_panel": "Repeats the combatant grouping while retaining distant witnesses."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-006"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "THREE_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "moment_ids": [],
+      "narrative_purpose": "Shows Madhu drive forward and Viṣṇu check him.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-b3c2c7ea03e4d1259ccbea7b",
+      "page_lettering_word_count": 40,
+      "page_number": 14,
+      "page_title": "Strength Against Strength",
+      "panel_id": "p14-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "HIGH",
+      "proof_spec_id": "dm02-proof-battle",
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Madhu drives forward and Viṣṇu checks him with an anatomically coherent grappling hold; Kaiṭabha remains a separate flank threat.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "hands_limbs_and_exact_action"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p14-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-006-b",
+        "claim-006-d"
+      ],
+      "source_criticality": "SEQUENCE_CRITICAL",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-01",
+      "visual_change_from_prior_panel": "Shows Madhu drive forward and Viṣṇu check him."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-006"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "THREE_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "moment_ids": [],
+      "narrative_purpose": "Changes the attacker as Kaiṭabha closes from the side.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-b3c2c7ea03e4d1259ccbea7b",
+      "page_lettering_word_count": 40,
+      "page_number": 14,
+      "page_title": "Strength Against Strength",
+      "panel_id": "p14-panel-02",
+      "panel_reading_order": 2,
+      "production_complexity": "HIGH",
+      "proof_spec_id": "dm02-proof-battle",
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Kaiṭabha closes from the side as Viṣṇu turns; preserve all three silhouettes and show no weapon or injury.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "hands_limbs_and_exact_action"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p14-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-006-b",
+        "claim-006-d"
+      ],
+      "source_criticality": "SEQUENCE_CRITICAL",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-02",
+      "visual_change_from_prior_panel": "Changes the attacker as Kaiṭabha closes from the side."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-006"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "THREE_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "moment_ids": [],
+      "narrative_purpose": "Breaks the hold and resets the trio for the repeated struggle.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-b3c2c7ea03e4d1259ccbea7b",
+      "page_lettering_word_count": 40,
+      "page_number": 14,
+      "page_title": "Strength Against Strength",
+      "panel_id": "p14-panel-03",
+      "panel_reading_order": 3,
+      "production_complexity": "HIGH",
+      "proof_spec_id": "dm02-proof-battle",
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "The trio separates into a readable triangle that can cycle again, with wave direction carrying the eye back to panel one.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "hands_limbs_and_exact_action"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p14-panel-03-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-006-b",
+        "claim-006-d"
+      ],
+      "source_criticality": "SEQUENCE_CRITICAL",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-03",
+      "visual_change_from_prior_panel": "Breaks the hold and resets the trio for the repeated struggle."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-006"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "FULL_PAGE",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "moment_ids": [
+        "long_combat_shown_nonliterally"
+      ],
+      "narrative_purpose": "Converts repeated combat into a nonliteral five-thousand-year duration image.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-25f617b853e82ff066d97844",
+      "page_lettering_word_count": 23,
+      "page_number": 15,
+      "page_title": "Five Thousand Years",
+      "panel_id": "p15-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "HIGH",
+      "proof_spec_id": "dm02-proof-battle",
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Full-page nonliteral time image: one central arm-to-arm tableau is surrounded by repeated wave-rings and changing light bands rather than duplicate bodies, clocks or a literal count of years; no weapons, army or injury.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "hands_limbs_and_exact_action",
+        "nonliteral_duration_without_duplicate_bodies"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p15-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-006-b",
+        "claim-006-d"
+      ],
+      "source_criticality": "LOCKED_MOMENT",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-25f617b853e82ff066d97844--p15-panel-01",
+      "visual_change_from_prior_panel": "Converts repeated combat into a nonliteral five-thousand-year duration image."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-006"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "moment_ids": [],
+      "narrative_purpose": "Restates the alternating-pressure mechanism after the time passage.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-a77b8959a9dbfa9b247f6eed",
+      "page_lettering_word_count": 89,
+      "page_number": 16,
+      "page_title": "The Reversal",
+      "panel_id": "p16-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "HIGH",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "A repeated struggle rhythm shows one Asura pressing whenever the other falls back; use only arm-to-arm action and no invented strategy.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "hands_limbs_and_exact_action",
+        "delusion_without_mind_control_invention"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p16-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-006-b",
+        "claim-006-c",
+        "claim-006-d"
+      ],
+      "source_criticality": "SEQUENCE_CRITICAL",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-a77b8959a9dbfa9b247f6eed--p16-panel-01",
+      "visual_change_from_prior_panel": "Restates the alternating-pressure mechanism after the time passage."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha",
+        "dm-yoganidra"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-006"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "moment_ids": [],
+      "narrative_purpose": "Stops the struggle as Yoganidrā's deluding reversal changes the demons' posture.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-a77b8959a9dbfa9b247f6eed",
+      "page_lettering_word_count": 89,
+      "page_number": 16,
+      "page_title": "The Reversal",
+      "panel_id": "p16-panel-02",
+      "panel_reading_order": 2,
+      "production_complexity": "HIGH",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "The struggle pauses as Madhu and Kaiṭabha's posture shifts to pride under Yoganidrā's deluding power; render the influence as source-neutral spatial distortion, not mind-control anatomy or a new motive.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "hands_limbs_and_exact_action",
+        "delusion_without_mind_control_invention"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p16-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-006-b",
+        "claim-006-c",
+        "claim-006-d"
+      ],
+      "source_criticality": "SEQUENCE_CRITICAL",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-a77b8959a9dbfa9b247f6eed--p16-panel-02",
+      "visual_change_from_prior_panel": "Stops the struggle as Yoganidrā's deluding reversal changes the demons' posture."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION",
+          "DIALOGUE"
+        ],
+        "necessary": true,
+        "why": "Attributed speech carries invocation, boon or condition content that image-only staging cannot state precisely without inventing meaning."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-006"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "moment_ids": [
+        "demons_offer_unusual_boon"
+      ],
+      "narrative_purpose": "Changes combat into the demons' joint boon offer.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-e738c476c98efb28ec475cdd",
+      "page_lettering_word_count": 54,
+      "page_number": 17,
+      "page_title": "The Unusual Offer",
+      "panel_id": "p17-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "MEDIUM",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "The three combatants stand apart after the long struggle; Madhu and Kaiṭabha occupy equal boon-giver positions without a victory throne or invented ritual.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "hands_limbs_and_exact_action",
+        "speaker_and_joint_boon_sequence"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p17-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-006-c",
+        "claim-006-d"
+      ],
+      "source_criticality": "LOCKED_MOMENT",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-e738c476c98efb28ec475cdd--p17-panel-01",
+      "visual_change_from_prior_panel": "Changes combat into the demons' joint boon offer."
+    },
+    {
+      "analysis_category": "SAME_MOMENT_REFRAME_CANDIDATE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "REFRAME_EXISTING_ART",
+      "classification_rationale": "The panel is the same characters, setting and instant as its named master; a deliberately composed high-resolution master may support the crop if the exact focal detail survives review.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION",
+          "DIALOGUE"
+        ],
+        "necessary": true,
+        "why": "Attributed speech carries invocation, boon or condition content that image-only staging cannot state precisely without inventing meaning."
+      },
+      "distinct_from_adjacent": false,
+      "event_ids": [
+        "dm-event-006"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": true,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "REFRAME_FROM_SHARED_MASTER",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "moment_ids": [
+        "demons_offer_unusual_boon"
+      ],
+      "narrative_purpose": "Reframes the same standoff around Viṣṇu receiving the offer.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": false,
+      "new_image_essential": false,
+      "page_id": "page-e738c476c98efb28ec475cdd",
+      "page_lettering_word_count": 54,
+      "page_number": 17,
+      "page_title": "The Unusual Offer",
+      "panel_id": "p17-panel-02",
+      "panel_reading_order": 2,
+      "production_complexity": "MEDIUM",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "REFRAME_FROM_FUTURE_SHARED_MASTER",
+      "recommended_approach_b_master_panel_id": "p17-panel-01",
+      "required_action": "Quiet reaction hold on Viṣṇu receiving the joint offer; no thought text, weapon or added motive.",
+      "reuse_basis": "FUTURE_SHARED_MASTER_PROPOSAL_NO_EXISTING_APPROVED_PIXELS",
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "hands_limbs_and_exact_action",
+        "speaker_and_joint_boon_sequence"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p17-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-006-c",
+        "claim-006-d"
+      ],
+      "source_criticality": "LOCKED_MOMENT",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-e738c476c98efb28ec475cdd--p17-panel-02",
+      "visual_change_from_prior_panel": "Reframes the same standoff around Viṣṇu receiving the offer."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "DIALOGUE",
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Attributed speech carries invocation, boon or condition content that image-only staging cannot state precisely without inventing meaning."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-007"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "moment_ids": [
+        "vishnu_names_their_death"
+      ],
+      "narrative_purpose": "Changes the negotiation when Viṣṇu names their defeat as the boon.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-52288832b81caa0075cc9f6b",
+      "page_lettering_word_count": 61,
+      "page_number": 18,
+      "page_title": "Vishnu Names the Boon",
+      "panel_id": "p18-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "MEDIUM",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Medium triangular dialogue frame: Viṣṇu answers both joint boon-givers directly, with no discus yet raised and no defeat locus implied.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "hands_limbs_and_exact_action",
+        "speaker_and_joint_boon_sequence"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p18-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-007-a",
+        "claim-007-e"
+      ],
+      "source_criticality": "LOCKED_MOMENT",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-52288832b81caa0075cc9f6b--p18-panel-01",
+      "visual_change_from_prior_panel": "Changes the negotiation when Viṣṇu names their defeat as the boon."
+    },
+    {
+      "analysis_category": "SAME_MOMENT_REFRAME_CANDIDATE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "REFRAME_EXISTING_ART",
+      "classification_rationale": "The panel is the same characters, setting and instant as its named master; a deliberately composed high-resolution master may support the crop if the exact focal detail survives review.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "DIALOGUE",
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Attributed speech carries invocation, boon or condition content that image-only staging cannot state precisely without inventing meaning."
+      },
+      "distinct_from_adjacent": false,
+      "event_ids": [
+        "dm-event-007"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": true,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "REFRAME_FROM_SHARED_MASTER",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "moment_ids": [
+        "vishnu_names_their_death"
+      ],
+      "narrative_purpose": "Reframes the same response as a wider still-water hold.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": false,
+      "new_image_essential": false,
+      "page_id": "page-52288832b81caa0075cc9f6b",
+      "page_lettering_word_count": 61,
+      "page_number": 18,
+      "page_title": "Vishnu Names the Boon",
+      "panel_id": "p18-panel-02",
+      "panel_reading_order": 2,
+      "production_complexity": "MEDIUM",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "REFRAME_FROM_FUTURE_SHARED_MASTER",
+      "recommended_approach_b_master_panel_id": "p18-panel-01",
+      "required_action": "Wide still-water hold after the words, keeping all three figures separate and the flood unbroken.",
+      "reuse_basis": "FUTURE_SHARED_MASTER_PROPOSAL_NO_EXISTING_APPROVED_PIXELS",
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "hands_limbs_and_exact_action",
+        "speaker_and_joint_boon_sequence"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p18-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-007-a",
+        "claim-007-e"
+      ],
+      "source_criticality": "LOCKED_MOMENT",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-52288832b81caa0075cc9f6b--p18-panel-02",
+      "visual_change_from_prior_panel": "Reframes the same response as a wider still-water hold."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION",
+          "DIALOGUE"
+        ],
+        "necessary": true,
+        "why": "Attributed speech carries invocation, boon or condition content that image-only staging cannot state precisely without inventing meaning."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-007"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "THREE_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "moment_ids": [],
+      "narrative_purpose": "Reasserts the all-flood setting as Madhu states the first condition.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-0a7e5fc37740e64356580b94",
+      "page_lettering_word_count": 37,
+      "page_number": 19,
+      "page_title": "The Condition",
+      "panel_id": "p19-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "MEDIUM",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Wide panel of flood in every direction as Madhu states the first half of the joint condition; no dry place is yet shown.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "hands_limbs_and_exact_action",
+        "speaker_and_joint_boon_sequence"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p19-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-007-b",
+        "claim-007-e"
+      ],
+      "source_criticality": "SEQUENCE_CRITICAL",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-0a7e5fc37740e64356580b94--p19-panel-01",
+      "visual_change_from_prior_panel": "Reasserts the all-flood setting as Madhu states the first condition."
+    },
+    {
+      "analysis_category": "SAME_MOMENT_REFRAME_CANDIDATE",
+      "character_ids": [
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "REFRAME_EXISTING_ART",
+      "classification_rationale": "The panel is the same characters, setting and instant as its named master; a deliberately composed high-resolution master may support the crop if the exact focal detail survives review.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION",
+          "DIALOGUE"
+        ],
+        "necessary": true,
+        "why": "Attributed speech carries invocation, boon or condition content that image-only staging cannot state precisely without inventing meaning."
+      },
+      "distinct_from_adjacent": false,
+      "event_ids": [
+        "dm-event-007"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": true,
+      "layout_type": "THREE_PANEL",
+      "lean_complete_c_action": "REFRAME_FROM_SHARED_MASTER",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "moment_ids": [],
+      "narrative_purpose": "Reframes the same exchange on both demons completing the joint condition.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": false,
+      "new_image_essential": false,
+      "page_id": "page-0a7e5fc37740e64356580b94",
+      "page_lettering_word_count": 37,
+      "page_number": 19,
+      "page_title": "The Condition",
+      "panel_id": "p19-panel-02",
+      "panel_reading_order": 2,
+      "production_complexity": "MEDIUM",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "REFRAME_FROM_FUTURE_SHARED_MASTER",
+      "recommended_approach_b_master_panel_id": "p19-panel-01",
+      "required_action": "Balanced two-shot of Madhu and Kaiṭabha completing the condition jointly, with neither replaced by an outside boon-giver.",
+      "reuse_basis": "FUTURE_SHARED_MASTER_PROPOSAL_NO_EXISTING_APPROVED_PIXELS",
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "hands_limbs_and_exact_action",
+        "speaker_and_joint_boon_sequence"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p19-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-007-b",
+        "claim-007-e"
+      ],
+      "source_criticality": "SEQUENCE_CRITICAL",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-0a7e5fc37740e64356580b94--p19-panel-02",
+      "visual_change_from_prior_panel": "Reframes the same exchange on both demons completing the joint condition."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-vishnu"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION",
+          "DIALOGUE"
+        ],
+        "necessary": true,
+        "why": "Attributed speech carries invocation, boon or condition content that image-only staging cannot state precisely without inventing meaning."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-007"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "THREE_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-flooded-combat-expanse",
+      "moment_ids": [],
+      "narrative_purpose": "Changes speaker and scale for Viṣṇu's acceptance.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-0a7e5fc37740e64356580b94",
+      "page_lettering_word_count": 37,
+      "page_number": 19,
+      "page_title": "The Condition",
+      "panel_id": "p19-panel-03",
+      "panel_reading_order": 3,
+      "production_complexity": "MEDIUM",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Close dialogue hold on Viṣṇu's acceptance; do not preview any thigh, lap, buttocks or other anatomical solution.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "hands_limbs_and_exact_action",
+        "speaker_and_joint_boon_sequence"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p19-panel-03-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-007-b",
+        "claim-007-e"
+      ],
+      "source_criticality": "SEQUENCE_CRITICAL",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-0a7e5fc37740e64356580b94--p19-panel-03",
+      "visual_change_from_prior_panel": "Changes speaker and scale for Viṣṇu's acceptance."
+    },
+    {
+      "analysis_category": "ADJACENT_COMBINE_CANDIDATE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "COMBINE_WITH_ADJACENT",
+      "classification_rationale": "The two adjacent panels form one continuous transition and could be re-scripted as one composition only in the lean edition; this is not assumed safe for the recommended edition.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-007"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "COMBINE_WITH_ADJACENT_PANEL",
+      "lean_complete_c_group_id": "c-p20-unflooded-geometry",
+      "location_id": "dm02-unflooded-defeat-locus",
+      "moment_ids": [],
+      "narrative_purpose": "Introduces a separate dry-earth plane without explaining its mechanism.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-f64eb6d498aa51d874a3ff79",
+      "page_lettering_word_count": 45,
+      "page_number": 20,
+      "page_title": "A Condition Force Could Not Make",
+      "panel_id": "p20-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "HIGH",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "The flood still surrounds all three figures while a distinct dry-earth plane enters the composition away from every body; its mechanism, geography and size remain unspecified.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "hands_limbs_and_exact_action",
+        "defeat_body_locus_nonassertion",
+        "separate_unflooded_earth_geometry"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p20-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-007-b",
+        "claim-007-d",
+        "claim-007-e"
+      ],
+      "source_criticality": "SEQUENCE_CRITICAL",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-f64eb6d498aa51d874a3ff79--p20-panel-01",
+      "visual_change_from_prior_panel": "Introduces a separate dry-earth plane without explaining its mechanism."
+    },
+    {
+      "analysis_category": "ADJACENT_COMBINE_CANDIDATE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "COMBINE_WITH_ADJACENT",
+      "classification_rationale": "The two adjacent panels form one continuous transition and could be re-scripted as one composition only in the lean edition; this is not assumed safe for the recommended edition.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-007"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "COMBINE_WITH_ADJACENT_PANEL",
+      "lean_complete_c_group_id": "c-p20-unflooded-geometry",
+      "location_id": "dm02-unflooded-defeat-locus",
+      "moment_ids": [],
+      "narrative_purpose": "Changes to overhead geometry to prove the earth is separate from every body.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-f64eb6d498aa51d874a3ff79",
+      "page_lettering_word_count": 45,
+      "page_number": 20,
+      "page_title": "A Condition Force Could Not Make",
+      "panel_id": "p20-panel-02",
+      "panel_reading_order": 2,
+      "production_complexity": "HIGH",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Overhead geometry confirms water around a separate unflooded earth area without placing either demon on Viṣṇu's thigh, lap, buttocks or any other bodily locus.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "hands_limbs_and_exact_action",
+        "defeat_body_locus_nonassertion",
+        "separate_unflooded_earth_geometry"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p20-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-007-b",
+        "claim-007-d",
+        "claim-007-e"
+      ],
+      "source_criticality": "SEQUENCE_CRITICAL",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-f64eb6d498aa51d874a3ff79--p20-panel-02",
+      "visual_change_from_prior_panel": "Changes to overhead geometry to prove the earth is separate from every body."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-vishnu",
+        "dm-madhu",
+        "dm-kaitabha"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-007"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "FULL_PAGE",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-unflooded-defeat-locus",
+      "moment_ids": [
+        "unflooded_condition_and_defeat"
+      ],
+      "narrative_purpose": "Resolves the condition with the sourced discus and a non-graphic defeat.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-8619f3db280abbfd867eefe4",
+      "page_lettering_word_count": 37,
+      "page_number": 21,
+      "page_title": "Where the Earth Was Not Flooded",
+      "panel_id": "p21-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "VERY_HIGH",
+      "proof_spec_id": "dm02-proof-full-page",
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Full-page decisive composition: all three stand on or beside the clearly separate unflooded earth plane, Viṣṇu raises the sourced discus, and the swift luminous circle ends the threat through silhouettes and motion only; show no wound, anatomical impact point, thigh/lap/buttocks platform or graphic body detail.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "religious_iconography_and_source_silence",
+        "hands_limbs_and_exact_action",
+        "defeat_body_locus_nonassertion",
+        "separate_unflooded_earth_geometry",
+        "discus_only_at_sourced_defeat"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p21-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-007-b",
+        "claim-007-c",
+        "claim-007-d",
+        "claim-007-e"
+      ],
+      "source_criticality": "LOCKED_MOMENT",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-8619f3db280abbfd867eefe4--p21-panel-01",
+      "visual_change_from_prior_panel": "Resolves the condition with the sourced discus and a non-graphic defeat."
+    },
+    {
+      "analysis_category": "ESSENTIAL_UNIQUE",
+      "character_ids": [
+        "dm-medhas",
+        "dm-suratha",
+        "dm-samadhi"
+      ],
+      "classification": "ESSENTIAL_NEW_ART",
+      "classification_rationale": "The panel carries a distinct source action, viewpoint, speaker change or page-turn function that honest cropping cannot manufacture.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [
+        "dm-event-007"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": false,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "KEEP_UNIQUE_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-forest-hermitage-frame",
+      "moment_ids": [
+        "resolved_return_to_frame"
+      ],
+      "narrative_purpose": "Returns from the cosmic story to Medhas and the two neutral listeners.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": true,
+      "new_image_essential": true,
+      "page_id": "page-d22f4a199dc41892b93a95e8",
+      "page_lettering_word_count": 46,
+      "page_number": 22,
+      "page_title": "The Danger Ends",
+      "panel_id": "p22-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "MEDIUM",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "KEEP_UNIQUE_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Quiet return to the same hermitage geometry: Medhas lets the account rest while Suratha and Samādhi remain neutral listeners with no invented spoken reaction.",
+      "reuse_basis": null,
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "character_continuity",
+        "frame_reaction_adaptation_boundary"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p22-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-007-c",
+        "claim-007-d",
+        "claim-007-e"
+      ],
+      "source_criticality": "LOCKED_MOMENT",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-d22f4a199dc41892b93a95e8--p22-panel-01",
+      "visual_change_from_prior_panel": "Returns from the cosmic story to Medhas and the two neutral listeners."
+    },
+    {
+      "analysis_category": "SAME_MOMENT_REFRAME_CANDIDATE",
+      "character_ids": [],
+      "classification": "REFRAME_EXISTING_ART",
+      "classification_rationale": "The panel is the same characters, setting and instant as its named master; a deliberately composed high-resolution master may support the crop if the exact focal detail survives review.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "NARRATION"
+        ],
+        "necessary": true,
+        "why": "Narration carries sourced chronology, context, duration or action boundaries that image-only staging cannot state precisely."
+      },
+      "distinct_from_adjacent": false,
+      "event_ids": [
+        "dm-event-007"
+      ],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": true,
+      "layout_type": "TWO_PANEL",
+      "lean_complete_c_action": "REFRAME_FROM_SHARED_MASTER",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-forest-hermitage-frame",
+      "moment_ids": [
+        "resolved_return_to_frame"
+      ],
+      "narrative_purpose": "Reframes the same return as the hermitage fire settles.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": false,
+      "new_image_essential": false,
+      "page_id": "page-d22f4a199dc41892b93a95e8",
+      "page_lettering_word_count": 46,
+      "page_number": 22,
+      "page_title": "The Danger Ends",
+      "panel_id": "p22-panel-02",
+      "panel_reading_order": 2,
+      "production_complexity": "LOW",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "REFRAME_FROM_FUTURE_SHARED_MASTER",
+      "recommended_approach_b_master_panel_id": "p22-panel-01",
+      "required_action": "Close on the low fire settling beneath a protected final caption field; no next-book hook or new doctrinal symbol.",
+      "reuse_basis": "FUTURE_SHARED_MASTER_PROPOSAL_NO_EXISTING_APPROVED_PIXELS",
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "frame_reaction_adaptation_boundary"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p22-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-007-c",
+        "claim-007-d",
+        "claim-007-e"
+      ],
+      "source_criticality": "LOCKED_MOMENT",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-d22f4a199dc41892b93a95e8--p22-panel-02",
+      "visual_change_from_prior_panel": "Reframes the same return as the hermitage fire settles."
+    },
+    {
+      "analysis_category": "NON_IMAGE_LAYOUT",
+      "character_ids": [],
+      "classification": "REUSE_EXISTING_ART",
+      "classification_rationale": "This is text-led back matter. Deterministic navy/gold/ivory layout and ornament should be used without an image-generation operation.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "INSET_EXPLANATION"
+        ],
+        "necessary": true,
+        "why": "Required labeled back matter distinguishes the source/adaptation note or editorial family reflection from the story voice."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": true,
+      "layout_type": "BACK_MATTER",
+      "lean_complete_c_action": "LAYOUT_ONLY_NO_RASTER_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-forest-hermitage-frame",
+      "moment_ids": [
+        "source_and_adaptation_notes"
+      ],
+      "narrative_purpose": "Changes from story imagery to a clearly labeled source/adaptation note.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": false,
+      "new_image_essential": false,
+      "page_id": "page-0de736c5ac791f2e0c546fd3",
+      "page_lettering_word_count": 157,
+      "page_number": 23,
+      "page_title": "Source and Adaptation Note",
+      "panel_id": "p23-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "LOW",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "LAYOUT_ONLY_NO_RASTER_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Text-led ivory source-note page with a restrained navy-and-gold forest-frame border; no character figure, mythic reenactment, source quotation styling or new iconographic claim.",
+      "reuse_basis": "DETERMINISTIC_ORNAMENTAL_AND_LAYOUT_TEMPLATE_NO_RASTER_ART_REUSE",
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "back_matter_labeling_and_legibility"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p23-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-004-d",
+        "claim-005-c",
+        "claim-006-d",
+        "claim-007-d",
+        "claim-007-e"
+      ],
+      "source_criticality": "BACK_MATTER",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-0de736c5ac791f2e0c546fd3--p23-panel-01",
+      "visual_change_from_prior_panel": "Changes from story imagery to a clearly labeled source/adaptation note."
+    },
+    {
+      "analysis_category": "NON_IMAGE_LAYOUT",
+      "character_ids": [],
+      "classification": "REUSE_EXISTING_ART",
+      "classification_rationale": "This is text-led back matter. Deterministic navy/gold/ivory layout and ornament should be used without an image-generation operation.",
+      "dialogue_or_narration_necessary": {
+        "channels": [
+          "INSET_EXPLANATION"
+        ],
+        "necessary": true,
+        "why": "Required labeled back matter distinguishes the source/adaptation note or editorial family reflection from the story voice."
+      },
+      "distinct_from_adjacent": true,
+      "event_ids": [],
+      "existing_approved_dm02_pixels": false,
+      "existing_image_reuse_appropriate": true,
+      "layout_type": "BACK_MATTER",
+      "lean_complete_c_action": "LAYOUT_ONLY_NO_RASTER_GENERATION",
+      "lean_complete_c_group_id": null,
+      "location_id": "dm02-forest-hermitage-frame",
+      "moment_ids": [],
+      "narrative_purpose": "Changes from source note to a clearly labeled editorial family reflection.",
+      "narratively_redundant": false,
+      "new_camera_angle_required": false,
+      "new_image_essential": false,
+      "page_id": "page-83f106e1acc55e4a61e6fdc0",
+      "page_lettering_word_count": 74,
+      "page_number": 24,
+      "page_title": "Editorial Reflection — A Thought for Families",
+      "panel_id": "p24-panel-01",
+      "panel_reading_order": 1,
+      "production_complexity": "LOW",
+      "proof_spec_id": null,
+      "recommended_approach_b_action": "LAYOUT_ONLY_NO_RASTER_GENERATION",
+      "recommended_approach_b_master_panel_id": null,
+      "required_action": "Text-led family-reflection page with a quiet fire-and-tree ornamental border only; no character speech balloon, sacred quotation styling or implied scriptural status.",
+      "reuse_basis": "DETERMINISTIC_ORNAMENTAL_AND_LAYOUT_TEMPLATE_NO_RASTER_ART_REUSE",
+      "reuse_status": "PROPOSED_ONLY_NO_APPROVED_DM02_PIXELS",
+      "risk_dimensions": [
+        "lettering_safe_region",
+        "back_matter_labeling_and_legibility"
+      ],
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p24-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "source_claim_ids": [
+        "claim-editorial-a"
+      ],
+      "source_criticality": "BACK_MATTER",
+      "source_guardrails": [
+        "Do not invent source facts, weapons, genealogy, motive, halo, arm/head/hood count or sacred architecture.",
+        "Do not assert a thigh, lap, buttocks or other bodily defeat locus.",
+        "A crop or layout repair cannot supply a missing action, character identity, source mapping or approval."
+      ],
+      "unit_id": "page-83f106e1acc55e4a61e6fdc0--p24-panel-01",
+      "visual_change_from_prior_panel": "Changes from source note to a clearly labeled editorial family reflection."
+    }
+  ],
+  "recommended_edition": {
+    "approach": "B",
+    "approval_statement": "No image, crop, character design, location design, page or edition is approved by this review; all reuse is proposed future planning only.",
+    "decision": "RECOMMEND_WITH_STAGED_PROOF_GATE",
+    "name": "BALANCED_24_PAGE_SHARED_MASTER_EDITION",
+    "required_preconditions": [
+      "Revise and deterministically validate the storyboard and campaign; this review does not modify authoritative artifacts.",
+      "Treat pages 23 and 24 as deterministic layout, not image generation.",
+      "Approve exact DM02 character and environment reference pixels before scaling beyond proofs.",
+      "Run the four proof-first units and independent actual-pixel review before authorizing the remaining masters.",
+      "Use page-specific lettering geometry; do not rely on the generic top 18% instruction alone.",
+      "Preserve all source boundaries, especially the six Yoganidrā withdrawal groups and the unresolved defeat body locus."
+    ],
+    "why": "It removes nine operations without deleting any scripted panel or merging distinct source actions. The additional five-operation saving in C depends on compression patterns that DM04 evidence identifies as failure-prone."
+  },
+  "review_hash": "1c35ae17621f61fb6098ce6431a14c0e13f3449a7ae46133260f72accd5b2198",
+  "reviewed_at": "2026-10-22T07:44:51Z",
+  "reviewer": {
+    "agent_id": "/root/dm04_visual_preproduction",
+    "independent_from_image_producer": true,
+    "role": "art-iconography-independent-efficiency-reviewer",
+    "scope": "visual planning and source-bound production efficiency only"
+  },
+  "schema_version": "1.0",
+  "source_boundaries": {
+    "approved_dm02_character_pixels": 0,
+    "approved_dm02_location_pixels": 0,
+    "defeat_locus_rule": "The exact bodily locus remains unresolved; no thigh, lap, buttocks or other body part may be asserted.",
+    "full_page_count": 7,
+    "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+    "proof_provider_status": "BLOCKED_PROVIDER",
+    "required_visual_moments": 12,
+    "reuse_rule": "No reuse recommendation asserts that approved pixels exist. Reuse is a future planning strategy and remains contingent on exact-action, exact-identity and actual-pixel review.",
+    "storyboard_content_hash": "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+    "storyboard_pages": 24,
+    "storyboard_panels": 44,
+    "storyboard_payload_hash": "cf124d53f851ebe4d6265b596e187b1f03b8b64c0eaf493f425a0a7242d58249"
+  },
+  "title": "The Sleep That Held Vishnu"
+}

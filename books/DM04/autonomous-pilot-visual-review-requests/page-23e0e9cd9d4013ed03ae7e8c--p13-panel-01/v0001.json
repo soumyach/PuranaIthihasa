@@ -1,0 +1,58 @@
+{
+  "book_id": "DM04",
+  "content_hash": "e9fac90dccb4c3ca5b9ad0aee8b94925ab93421f5c52f1aa8871ddea1fedc9a0",
+  "id": "autonomous-pilot-visual-review-requests/page-23e0e9cd9d4013ed03ae7e8c--p13-panel-01-1e75ba476ec03b82a692ca4c",
+  "kind": "autonomous-pilot-visual-review-requests/page-23e0e9cd9d4013ed03ae7e8c--p13-panel-01",
+  "parent_hash": null,
+  "payload": {
+    "actual_pixels_required": true,
+    "actual_reading_size_required": true,
+    "campaign_subject_hash": "fd9864465aebf8e0c121f72ce8a4249d08af372a48829ab926b0a223e6956b21",
+    "comparison_references": [
+      {
+        "content_transfer": "FORBIDDEN",
+        "input_index": 1,
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+        "role": "A_SERIES_VISUAL_IDENTITY",
+        "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+      },
+      {
+        "content_transfer": "FORBIDDEN",
+        "input_index": 2,
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p21.png",
+        "role": "B_PAGE_PANEL_COMPOSITION",
+        "sha256": "332b208d14df3d94139a3ab598e7e7e327e49bc9d4bbf5f41ddf20d8260291af"
+      }
+    ],
+    "image_path": "books/DM04/autonomous-pilot/images/page-23e0e9cd9d4013ed03ae7e8c--p13-panel-01/v0001.png",
+    "image_sha256": "c0a0d15ea531ba00bee1c1c3ccac1bb795dc84f59e0a25d96dd08eca1b6a09b4",
+    "independent_reviewer_required": true,
+    "milestone": "PR12",
+    "page_id": "page-23e0e9cd9d4013ed03ae7e8c",
+    "panel_id": "p13-panel-01",
+    "producer_ids": [
+      "codex-root-image-producer-pr12"
+    ],
+    "request_hash": "b076d926aa3f021f7bc41e64a45224aada02048076f88c9ab65cbff5d0842a98",
+    "required_dimensions": [
+      "SOURCE_FIDELITY",
+      "RELIGIOUS_ICONOGRAPHY",
+      "CULTURAL_AUTHENTICITY",
+      "CHARACTER_CONTINUITY",
+      "NARRATIVE_CLARITY",
+      "ARTISTIC_QUALITY",
+      "LETTERING_READABILITY",
+      "COMPOSITION",
+      "REFERENCE_ALIGNMENT"
+    ],
+    "result_values": [
+      "PASS",
+      "FIX",
+      "ESCALATE"
+    ],
+    "schema_version": "1.0",
+    "unit_id": "page-23e0e9cd9d4013ed03ae7e8c--p13-panel-01"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

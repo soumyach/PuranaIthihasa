@@ -1,0 +1,55 @@
+{
+  "book_id": "DM04",
+  "content_hash": "a64ae14c962dc57e2743e852d72cc667e2800c5c312d758614d9559a985302b0",
+  "id": "production-visual-review-requests/page-5316f7271234e4ab31991528-743594cdccb5f5070a650536",
+  "kind": "production-visual-review-requests/page-5316f7271234e4ab31991528",
+  "parent_hash": null,
+  "payload": {
+    "actual_pixels_required": true,
+    "actual_reading_size_required": true,
+    "book_id": "DM04",
+    "campaign_subject_hash": "5a5b7c2a606f47a9b72ef001f19ef9c8736f4b328d2434dae08c5d0b08c061d7",
+    "comparison_references": [
+      {
+        "input_index": 1,
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png",
+        "role": "REFERENCE_A_SERIES_VISUAL_IDENTITY",
+        "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"
+      },
+      {
+        "input_index": 2,
+        "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p12.png",
+        "role": "REFERENCE_B_PAGE_COMPOSITION",
+        "sha256": "d46f264508cf0283e56f14d1a02b6d66b37a49b8e2e66c7b3f31f16764fadfe4"
+      }
+    ],
+    "image_path": "books/DM04/production-pilot/images/page-5316f7271234e4ab31991528/v0001.png",
+    "image_sha256": "cfac6ab6666e84fcd79d1fccd1aa5273adf4e28185d823cd92847131b7802819",
+    "independent_reviewer_required": true,
+    "milestone": "PR11",
+    "page_id": "page-5316f7271234e4ab31991528",
+    "producer_ids": [
+      "/root"
+    ],
+    "request_hash": "74a757a644a729764f658aef375235f92eb4f25b3c0999ad78baec8e1864f2d9",
+    "required_dimensions": [
+      "SOURCE_FIDELITY",
+      "RELIGIOUS_ICONOGRAPHY",
+      "CULTURAL_AUTHENTICITY",
+      "CHARACTER_CONTINUITY",
+      "NARRATIVE_CLARITY",
+      "ARTISTIC_QUALITY",
+      "LETTERING_READABILITY",
+      "COMPOSITION",
+      "REFERENCE_ALIGNMENT"
+    ],
+    "result_values": [
+      "PASS",
+      "FIX",
+      "ESCALATE"
+    ],
+    "schema_version": "1.0"
+  },
+  "schema_version": "1.0",
+  "version": 1
+}

@@ -1,0 +1,236 @@
+{
+  "character_ids": [
+    "dm-devi",
+    "dm-lion",
+    "dm-chikshura"
+  ],
+  "continuity_in": "after-page-17",
+  "continuity_out": "after-page-18",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-devi",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": [
+        "dm-spear"
+      ]
+    },
+    {
+      "character_id": "dm-lion",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-chikshura",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments",
+        "arm count",
+        "authorized equipment"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-016"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "measured progression",
+    "type": "THREE_PANEL"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p18-narration",
+      "placement": "caption-safe-region",
+      "text": "Cikṣura's sword strikes the lion and then Devī's arm before it breaks. When he hurls his spear, Devī's answering spear shatters it and ends his attack."
+    }
+  ],
+  "location_id": "battlefield",
+  "moment_ids": [],
+  "narrative_beats": [
+    "Cikṣura's sword strikes the lion and then Devī's arm before it breaks. When he hurls his spear, Devī's answering spear shatters it and ends his attack."
+  ],
+  "page_id": "page-5c63f7e6ec004fad68f13239",
+  "page_number": 18,
+  "panel_count": 3,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-lion",
+        "dm-chikshura"
+      ],
+      "composition": "Close action frame: Cikṣura's sword strikes the lion and then Devī's arm, breaking only after both contacts are readable.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p18-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Close action frame: Cikṣura's sword strikes the lion and then Devī's arm, breaking only after both contacts are readable.",
+        "shot_scale": "wide"
+      },
+      "location_id": "battlefield",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p18-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Close action frame: Cikṣura's sword strikes the lion and then Devī's arm, breaking only after both contacts are readable."
+    },
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-lion",
+        "dm-chikshura"
+      ],
+      "composition": "Medium counterframe: Cikṣura hurls his spear while Devī releases hers on the opposing line.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p18-panel-02",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Medium counterframe: Cikṣura hurls his spear while Devī releases hers on the opposing line.",
+        "shot_scale": "medium"
+      },
+      "location_id": "battlefield",
+      "reading_order": 2,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p18-panel-02-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Medium counterframe: Cikṣura hurls his spear while Devī releases hers on the opposing line."
+    },
+    {
+      "character_ids": [
+        "dm-devi",
+        "dm-lion",
+        "dm-chikshura"
+      ],
+      "composition": "Impact frame: Devī's spear shatters his weapon and ends the charge; point the debris away from the next entrant, Cāmara.",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p18-panel-03",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false,
+        "required_action": "Impact frame: Devī's spear shatters his weapon and ends the charge; point the debris away from the next entrant, Cāmara.",
+        "shot_scale": "close"
+      },
+      "location_id": "battlefield",
+      "reading_order": 3,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p18-panel-03-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "Impact frame: Devī's spear shatters his weapon and ends the charge; point the debris away from the next entrant, Cāmara."
+    }
+  ],
+  "reading_order": [
+    "p18-panel-01",
+    "p18-panel-02",
+    "p18-panel-03"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p18-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-016-a",
+    "claim-016-b"
+  ],
+  "title": "The Spear Ends the Charge",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation"
+  ],
+  "version": 3,
+  "visual_intent": "A cinematic story beat with exact editable lettering and source-bounded imagery."
+}

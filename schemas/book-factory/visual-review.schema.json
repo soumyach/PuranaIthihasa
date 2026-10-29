@@ -1,0 +1,19 @@
+{
+  "$id": "https://khatakshetra.example/schemas/book-factory/visual-review.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {"const": "1.0", "type": "string"},
+    "book_id": {"type": "string"},
+    "proof_id": {"type": "string"},
+    "result": {"enum": ["PASS", "FIX", "ESCALATE"], "type": "string"},
+    "actual_pixels_inspected": {"const": true, "type": "boolean"},
+    "reviewer": {"type": "object"},
+    "image": {"type": "object"},
+    "dimension_assessments": {"items": {"type": "object"}, "minItems": 13, "type": "array"},
+    "review_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
+  },
+  "required": ["schema_version", "book_id", "proof_id", "result", "actual_pixels_inspected", "reviewer", "image", "dimension_assessments", "review_hash"],
+  "title": "Independent exact-image visual review",
+  "type": "object"
+}

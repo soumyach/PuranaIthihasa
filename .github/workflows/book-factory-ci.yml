@@ -1,0 +1,36 @@
+name: Book Factory Foundation
+
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-foundation:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install page-engine dependencies
+        run: python -m pip install -e .
+      - name: Foundation tests
+        run: python -m unittest discover -s tests/book_factory -p 'test_*.py'
+      - name: Existing source graph validator
+        run: python research/source-graph/validate_graph.py
+      - name: Existing source graph integrity tests
+        working-directory: research/source-graph
+        run: python -m unittest test_integrity.py
+      - name: Existing dependency-free Node tests
+        run: |
+          node --test tests/diag.test.mjs
+          node --test tests/drip.test.mjs
+      - name: Scope and binary boundary checks
+        run: python scripts/check_book_factory_boundaries.py
+      - name: Source graph Git guard
+        run: git diff --exit-code -- research/source-graph

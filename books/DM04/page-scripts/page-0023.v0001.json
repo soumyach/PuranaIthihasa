@@ -1,0 +1,195 @@
+{
+  "character_ids": [
+    "dm-mahisha",
+    "dm-devi",
+    "dm-lion",
+    "dm-devi-troops",
+    "dm-suratha",
+    "dm-medhas"
+  ],
+  "continuity_in": "after-page-22",
+  "continuity_out": "after-page-23",
+  "continuity_requirements": [
+    {
+      "character_id": "dm-mahisha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "manifestation_id": "dm-mahisha-buffalo",
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-devi",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-lion",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-devi-troops",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-suratha",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    },
+    {
+      "character_id": "dm-medhas",
+      "checks": [
+        "face",
+        "silhouette",
+        "clothing",
+        "ornaments"
+      ],
+      "weapon_ids": []
+    }
+  ],
+  "event_ids": [
+    "dm-event-019"
+  ],
+  "image_instructions": {
+    "canvas": {
+      "aspect_ratio": "3:4",
+      "pixel_height": 1448,
+      "pixel_width": 1086
+    },
+    "model_prompt_status": "SPECIFICATION_ONLY",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ],
+    "render": false,
+    "text_in_image": false
+  },
+  "layout": {
+    "rhythm": "immersive hold",
+    "type": "FULL_PAGE"
+  },
+  "lettering": [
+    {
+      "channel": "NARRATION",
+      "id": "p23-narration",
+      "placement": "caption-safe-region",
+      "text": "After his chiefs fall, Mahiṣāsura himself charges in buffalo form against the troops and lion."
+    },
+    {
+      "channel": "DIALOGUE",
+      "id": "p23-dialogue",
+      "placement": "speaker-anchored-balloon",
+      "speaker_id": "dm-suratha",
+      "text": "After the army and all its chiefs had fallen—was the battle still not won?"
+    }
+  ],
+  "location_id": "mahisha-arrival",
+  "moment_ids": [
+    "mahishasura_buffalo_entrance"
+  ],
+  "narrative_beats": [
+    "After his chiefs fall, Mahiṣāsura himself charges in buffalo form against the troops and lion."
+  ],
+  "page_id": "page-54d61ef5bfcb1159088ac489",
+  "page_number": 23,
+  "panel_count": 1,
+  "panels": [
+    {
+      "character_ids": [
+        "dm-mahisha",
+        "dm-devi",
+        "dm-lion",
+        "dm-devi-troops",
+        "dm-suratha",
+        "dm-medhas"
+      ],
+      "composition": "Wide establishing action",
+      "continuity_requirements": [
+        "match the page-level character and location bible records",
+        "preserve action direction"
+      ],
+      "id": "p23-panel-01",
+      "image_instructions": {
+        "exclude": [
+          "embedded text",
+          "watermark",
+          "modern object",
+          "graphic gore"
+        ],
+        "intent": "preproduction specification only",
+        "render": false
+      },
+      "location_id": "mahisha-arrival",
+      "reading_order": 1,
+      "safe_regions": [
+        {
+          "height": 0.18,
+          "id": "p23-panel-01-safe",
+          "purpose": "lettering separation",
+          "width": 0.84,
+          "x": 0.08,
+          "y": 0.06
+        }
+      ],
+      "visual_description": "After his chiefs fall, Mahiṣāsura himself charges in buffalo form against the troops and lion."
+    }
+  ],
+  "reading_order": [
+    "p23-panel-01"
+  ],
+  "safe_regions": [
+    {
+      "height": 0.2,
+      "id": "p23-page-safe",
+      "purpose": "primary lettering",
+      "width": 0.86,
+      "x": 0.07,
+      "y": 0.05
+    }
+  ],
+  "source_claim_ids": [
+    "claim-019-a",
+    "claim-019-b",
+    "claim-mahisha-reversal"
+  ],
+  "title": "The Buffalo King Enters",
+  "validation_requirements": [
+    "source-event coverage",
+    "speaker attribution",
+    "character continuity",
+    "safe-region preservation",
+    "editable lettering separation"
+  ],
+  "version": 1,
+  "visual_intent": "A cinematic story beat with exact editable lettering and source-bounded imagery."
+}

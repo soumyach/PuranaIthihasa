@@ -1,0 +1,46 @@
+{
+  "artifacts": [
+    "483cc82d41b142878778e107deabd090ec623ccf4a48410b28d80a3c95f1213e",
+    "4b37d33a63bd3ea80299fc1d82bc652ba59436defd269ee44cf985376e68a229",
+    "8b7dc126012186ada26df3b6acb16e46fcc72a600ad151de49f6aaf3c06d2c44",
+    "9151296a1329c390f20c6ddb620526cd3b95e1ca20ebaddbf1d690f701a448c1",
+    "21b197e30af545ba39f2e1004b5132ccfecee5cfef662bb6eec913675cbf33f6",
+    "b469d78e327da2b41082dfbb48ad51a5a98e47112eea311157b2fd7ab979a1f7",
+    "38ccd93cfe00915a978c27e6be701ce481236c0f6fdb37010781a0e67a97044c"
+  ],
+  "attempts": {
+    "CHARACTER_BIBLE": 1,
+    "EDITORIAL_QA": 1,
+    "MANUSCRIPT": 1,
+    "QUEUED": 1,
+    "SOURCE_CHECK": 1,
+    "STORYBOARD": 1
+  },
+  "blocked": null,
+  "book_id": "DM02",
+  "completed_stages": [
+    "QUEUED",
+    "SOURCE_CHECK",
+    "MANUSCRIPT",
+    "EDITORIAL_QA",
+    "STORYBOARD",
+    "CHARACTER_BIBLE"
+  ],
+  "current_stage": "ART_PROOFS",
+  "last_event_id": "event-9fca7d067f335e7bf7e1da6c",
+  "locked_input_hashes": [
+    "601fc63f99cb9ad7d7feb14b45216c573568c4afe395f192e9d97fb83b211457",
+    "b7986e36746d67a2dc29b48db194ccd62845c09385603778c7357cb159c4bdfd",
+    "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070",
+    "483cc82d41b142878778e107deabd090ec623ccf4a48410b28d80a3c95f1213e",
+    "f3a02b5eebbe4b11035240f64ede32fcf889ff7b85f481dfe11b13744a0fc6b1",
+    "31510d418d1271d1f977c7462fdfd28708d647df6bcef1be93553ac8dff637ab",
+    "ca54ad2d167ceb36bbcd10b33a9d5350aba6fae98c19693cef07bf41709dd762",
+    "d029aa0e1c63868b32f19a100103bad2f57845eac42c82fe8fe829b46edff1af"
+  ],
+  "outstanding_jobs": [],
+  "recovery": null,
+  "schema_version": "1.0",
+  "updated_at": "2026-10-22T05:32:17Z",
+  "version": 7
+}

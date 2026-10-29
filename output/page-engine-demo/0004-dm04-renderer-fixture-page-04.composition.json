@@ -1,0 +1,199 @@
+{
+  "approvals": {
+    "manuscript": {
+      "status": "FIXTURE_ONLY"
+    },
+    "series_standard": {
+      "status": "FIXTURE_ONLY"
+    },
+    "storyboard": {
+      "status": "FIXTURE_ONLY"
+    }
+  },
+  "book_id": "DM04-RENDERER-FIXTURE",
+  "book_version": "PR8-TECHNICAL-DEMO",
+  "canvas": {
+    "aspect_ratio": "3:4",
+    "height": 1448,
+    "width": 1086
+  },
+  "chapter_masthead": "PR8 TECHNICAL FIXTURE",
+  "composition_hash": "f4fe8e9b13c9c83b25df752314abc83392d124ec6ab065570dea0fc1eb352b48",
+  "engine_version": "0.8.0",
+  "fixture": true,
+  "fixture_mode": true,
+  "font_config_sha256": "ba6cd2c0c4d716aa550059148339642da7fb2f1af1bfaad2e5d6ab838fb1e0aa",
+  "layout_type": "REFLECTION_SOURCE_NOTE",
+  "lettering": [
+    {
+      "box": {
+        "height": 0.27,
+        "width": 0.8,
+        "x": 0.1,
+        "y": 0.2
+      },
+      "channel": "INSET_EXPLANATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 29,
+        "weight": "bold"
+      },
+      "lettering_id": "fixture-p04-i01",
+      "panel_id": "fixture-p04-panel-01",
+      "reading_order": 1,
+      "source_script_hash": "2a3752afeae4bdd204c5306b32a386b3bd57166ccfa4df762e4a73bc2a5ae644",
+      "speaker_id": "editorial-inset",
+      "text": "TECHNICAL SOURCE NOTE\nThis page demonstrates a distinct expository channel. Its wording is fixture text, not scripture and not an editorial claim about DM04."
+    },
+    {
+      "badge_number": 1,
+      "box": {
+        "height": 0.13,
+        "width": 0.68,
+        "x": 0.16,
+        "y": 0.58
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 27
+      },
+      "lettering_id": "fixture-p04-n01",
+      "panel_id": "fixture-p04-panel-01",
+      "reading_order": 2,
+      "source_script_hash": "439e80e7162a5137962011f556c04c71681c5725e749ee9ced1d25c42e8c1971",
+      "speaker_id": "narrator",
+      "text": "Reflection pages remain readable, restrained and separately editable."
+    }
+  ],
+  "manuscript_hash": "25e25f0734d50c4d109ebf00d3bafb5b6abc9f0043c9951c38821743ff5a45f6",
+  "non_production_label": "KHATAKSHETRA BOOK FACTORY — NON-PRODUCTION RENDERER TEST",
+  "page_id": "dm04-renderer-fixture-page-04",
+  "page_number": 4,
+  "page_title": "REFLECTION / SOURCE-NOTE TEST",
+  "panels": [
+    {
+      "asset": {
+        "approval": {
+          "status": "NOT_APPLICABLE_FIXTURE",
+          "subject_hash": "515d285a63a9d3bb975b77182e8755197f82c0f39207cdc90f96b1b8c54bdf2c"
+        },
+        "path": "book-factory/fixtures/page-engine/assets/source-note-geometry.png",
+        "sha256": "515d285a63a9d3bb975b77182e8755197f82c0f39207cdc90f96b1b8c54bdf2c",
+        "usage": "SYNTHETIC_TEST_ONLY"
+      },
+      "crop": {
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "mode": "COVER",
+        "protected_subjects": []
+      },
+      "panel_id": "fixture-p04-panel-01",
+      "reading_order": 1,
+      "speaker_anchors": []
+    }
+  ],
+  "publication_eligible": false,
+  "reading_order": 4,
+  "renderer_source_sha256": "d4bac587d35d277ed850c07003b17629ffcbb2bec312b812587d7be739e93096",
+  "required_lettering_ids": [
+    "fixture-p04-i01",
+    "fixture-p04-n01"
+  ],
+  "resolved_font": {
+    "bold": "/System/Library/Fonts/Supplemental/STIXGeneralBol.otf",
+    "bold_sha256": "7e4dfb4979e9bb79a0bdedc56f055eab615fb9a3dff8788a52992ae65e8f572d",
+    "classification": "serif",
+    "family": "STIXGeneral",
+    "font_binary_bundled_in_repository": false,
+    "legal_installation": "Install the STIX Fonts project from its official distribution, then update paths if the operating system stores it elsewhere. Confirm the specific distribution's license before publication.",
+    "license_evidence": "The installed font metadata identifies the STIX license, derived from the SIL Open Font License. The renderer records hashes but does not copy these system files into the repository.",
+    "license_status": "SYSTEM_FONT_LICENSE_REVIEWED_NOT_REDISTRIBUTED",
+    "regular": "/System/Library/Fonts/Supplemental/STIXGeneral.otf",
+    "regular_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7"
+  },
+  "resolved_lettering": [
+    {
+      "box": [
+        109,
+        290,
+        977,
+        681
+      ],
+      "font_sha256": "7e4dfb4979e9bb79a0bdedc56f055eab615fb9a3dff8788a52992ae65e8f572d",
+      "lettering_id": "fixture-p04-i01",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "rendered_font_size": 29,
+      "requested_font_size": 29,
+      "source_script_hash": "2a3752afeae4bdd204c5306b32a386b3bd57166ccfa4df762e4a73bc2a5ae644",
+      "text_sha256": "70cfe1f28e32e0c23778dafcab8bd3ac4b7c63a2a7204776c17f50a6d61a3070"
+    },
+    {
+      "box": [
+        174,
+        840,
+        912,
+        1028
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "fixture-p04-n01",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "rendered_font_size": 27,
+      "requested_font_size": 27,
+      "source_script_hash": "439e80e7162a5137962011f556c04c71681c5725e749ee9ced1d25c42e8c1971",
+      "text_sha256": "094388fb9af9c0b47213d3a8d2baddb80e934901ea94fbb6f7b8e975d8d6a59f"
+    }
+  ],
+  "resolved_panels": [
+    {
+      "asset_path": "book-factory/fixtures/page-engine/assets/source-note-geometry.png",
+      "asset_sha256": "515d285a63a9d3bb975b77182e8755197f82c0f39207cdc90f96b1b8c54bdf2c",
+      "box": [
+        49,
+        152,
+        1037,
+        1339
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "panel_id": "fixture-p04-panel-01",
+      "scale_mode": "ASPECT_PRESERVING_COVER",
+      "semantic_crop_review": "NOT_APPLICABLE_SYNTHETIC_FIXTURE",
+      "source_crop": [
+        0,
+        71,
+        1086,
+        1377
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ]
+    }
+  ],
+  "schema_version": "1.0",
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "storyboard_hash": "25cc8bed5368e78c36a3bec43ad03efb7fe2ddc4dd41124ca9ce02bcdcc18185",
+  "typography": {
+    "body_size": 28,
+    "family": null,
+    "title_size": 34
+  }
+}
