@@ -66,11 +66,27 @@ class FoundationPR7AcceptanceTests(unittest.TestCase):
         )
 
     def test_02_reference_manifest_validity_and_complete_coverage(self):
-        result = validate_gold_standard(ROOT, require_source_assets=True)
+        # The exact benchmark PDFs are registered local-only references (the
+        # DM08 edition exceeds GitHub's object limit), while their curated page
+        # extracts are tracked and hash-bound.  Repository CI therefore uses
+        # generic validation; strict benchmark-use validation remains available
+        # and must fail closed whenever either original PDF is unavailable.
+        self.assertEqual(
+            {item["storage_mode"] for item in self.manifest["source_assets"]},
+            {"LOCAL_UNTRACKED_REFERENCE"},
+        )
+        result = validate_gold_standard(ROOT, require_source_assets=False)
         self.assertEqual(result["status"], "PASS")
         self.assertEqual(len(result["pages"]), 8)
         self.assertEqual(set(self.manifest["coverage"]), GOLD_CATEGORIES)
-        self.assertEqual({item["status"] for item in result["source_assets"]}, {"VERIFIED"})
+        expected_statuses = {
+            "VERIFIED" if (ROOT / item["path"]).is_file() else "MISSING_LOCAL_REFERENCE"
+            for item in self.manifest["source_assets"]
+        }
+        self.assertEqual({item["status"] for item in result["source_assets"]}, expected_statuses)
+        if "MISSING_LOCAL_REFERENCE" in expected_statuses:
+            with self.assertRaises(ContractError):
+                validate_gold_standard(ROOT, require_source_assets=True)
         malformed = copy.deepcopy(self.manifest)
         malformed["pages"].append(copy.deepcopy(malformed["pages"][0]))
         with self.assertRaises(ContractError):
@@ -237,7 +253,7 @@ class FoundationPR7AcceptanceTests(unittest.TestCase):
         self.assertEqual(before, tree_snapshot(GRAPH_ROOT))
 
     def test_18_pr7_validation_and_existing_factory_regression(self):
-        direct = validate_pr7(ROOT, require_source_assets=True)
+        direct = validate_pr7(ROOT, require_source_assets=False)
         self.assertEqual(direct["status"], "PASS")
         self.assertFalse(direct["generation_executed"])
         result = FactoryDirector(ROOT).validate()
