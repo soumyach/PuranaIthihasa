@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "campaign_id": "dm02-series-identity-corrective-private-production-v0002",
+  "authorization_subject_hash": "fe3fb60da7731db076d9b63e453caf60f79a533bfa6c5934e52ed85e77d61299",
+  "campaign_approval_id": "approval-f0e98f48aa6faafce29b11fd",
+  "status": "STOPPED_GENUINE_QUALITY_BLOCKER",
+  "stopped_at": "2026-10-29T13:25:20Z",
+  "stop_rule": "STOP_WHEN_CAMPAIGN_COMPLETES_OR_ENCOUNTERS_A_GENUINE_BLOCKER",
+  "stop_reason": {
+    "code": "REPEATED_ENSEMBLE_CONSTRAINT_FAILURE_WITH_UNIT_CEILINGS_EXHAUSTED",
+    "affected_units": [
+      "page-d20c0821bca7f13784a34630--p04-panel-01",
+      "page-2e96a0bca25ea33924a24fde--p05-panel-01"
+    ],
+    "repeated_failures": [
+      "VISHNU_FOUR_ACCOUNTABLE_ARMS",
+      "COUNT_NEUTRAL_MULTIHOODED_SHESHA",
+      "COMPLETE_NORMALIZED_TOP_LETTERING_SAFE_REGION"
+    ],
+    "independent_reviewer": "/root/dm02_campaign_v2_pixel_reviewer",
+    "theological_certification": false
+  },
+  "units": {
+    "passed": ["page-71e9de766bf786cb9499a31b--p01-panel-01"],
+    "failed_with_unit_ceiling_exhausted": [
+      "page-d20c0821bca7f13784a34630--p04-panel-01",
+      "page-2e96a0bca25ea33924a24fde--p05-panel-01"
+    ],
+    "not_started": 30,
+    "page_11_status": "ESCALATE_BEFORE_GENERATION"
+  },
+  "operation_counts": {
+    "primary": 3,
+    "fallback": 0,
+    "repair": 2,
+    "total": 5,
+    "total_ceiling": 47
+  },
+  "remaining_numeric_budget_frozen": {
+    "primary": 30,
+    "fallback_ceiling": 7,
+    "repair_ceiling": 5,
+    "total_ceiling": 42,
+    "reason": "A numeric remainder does not override the genuine-blocker stop condition."
+  },
+  "page_11_touched": false,
+  "source_graph_modified": false,
+  "manuscript_modified": false,
+  "dm04_modified": false,
+  "dm08_modified": false,
+  "published": false,
+  "deployed": false,
+  "pushed": false,
+  "merged": false,
+  "next_resumable_action": "Design and validate a revised production method for multi-arm Vishnu, count-neutral Shesha and normalized lettering-safe regions, then prepare a new exact hash-bound authorization. Do not reuse this campaign's frozen remainder or touch Page 11."
+}

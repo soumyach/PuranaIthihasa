@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "campaign_id": "dm02-series-identity-corrective-private-production-v0002",
+  "authorization_subject_hash": "fe3fb60da7731db076d9b63e453caf60f79a533bfa6c5934e52ed85e77d61299",
+  "campaign_request_path": "books/DM02/book-level-production/campaign-request.v0002.json",
+  "campaign_request_sha256": "077e0586f81d07bf608a62af5a6a8a706c9d4516a5b4f8fc98353448520947a6",
+  "campaign_approval_id": "approval-f0e98f48aa6faafce29b11fd",
+  "brahma_artistic_convention_approval_id": "approval-69e5ee5bb5efeba19b9689af",
+  "vishnu_artistic_convention_approval_id": "approval-22941d8d48a22623b1ce80b0",
+  "provider": "CODEX_BUILT_IN_IMAGE_GENERATION_ONLY",
+  "provider_interface": "image_gen.imagegen",
+  "api_key_used": false,
+  "external_provider_used": false,
+  "explicit_payment_requested": false,
+  "purchased_credit_use_intended_or_authorized": false,
+  "paid_overage_authorized": false,
+  "automatic_retry": false,
+  "status": "STOPPED_GENUINE_QUALITY_BLOCKER",
+  "operation_counts": {
+    "required_primary_executed": 3,
+    "conditional_edit_to_generation_fallback_executed": 0,
+    "independent_review_directed_repair_executed": 2,
+    "total_executed": 5,
+    "required_primary_remaining": 30,
+    "fallback_ceiling_remaining": 7,
+    "repair_ceiling_remaining": 5,
+    "total_ceiling_remaining": 42,
+    "total_ceiling": 47,
+    "remaining_ceiling_spendable_while_blocked": false
+  },
+  "attempts_by_unit": {
+    "page-71e9de766bf786cb9499a31b--p01-panel-01": 1,
+    "page-d20c0821bca7f13784a34630--p04-panel-01": 2,
+    "page-2e96a0bca25ea33924a24fde--p05-panel-01": 2
+  },
+  "batches": [
+    {
+      "batch_id": "dm02-series-identity-corrective-batch-001",
+      "operation_indices": [1, 2, 3, 4],
+      "fresh_allowance_observation": {"used_percent": 18, "remaining_percent": 82, "purchased_credit_balance": "0", "ordinary_usage_allowed": true}
+    },
+    {
+      "batch_id": "dm02-series-identity-corrective-batch-002",
+      "operation_indices": [5],
+      "fresh_allowance_observation": {"used_percent": 18, "remaining_percent": 82, "purchased_credit_balance": "0", "ordinary_usage_allowed": true}
+    }
+  ],
+  "operations": [
+    {
+      "operation_index": 1,
+      "executed_at": "2026-10-29T13:14:35Z",
+      "unit_id": "page-71e9de766bf786cb9499a31b--p01-panel-01",
+      "operation_class": "REQUIRED_PRIMARY_TARGETED_EDIT",
+      "provider_operation_identifier": "exec-30ca87dd-1810-4553-94f9-279df12f13e0",
+      "source_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-30ca87dd-1810-4553-94f9-279df12f13e0.png",
+      "repository_output_path": "books/DM02/book-level-production/images/p01-panel-01/v0002.png",
+      "output_sha256": "f99193ac4fb3a3cd4fbc474c3a0d8a6913f2da6e12e980e36f1d71885edf9851",
+      "dimensions": [1086, 1448],
+      "prompt_path": "books/DM02/book-level-production/corrective-v0002/prompts/operation-001-p01-panel-01-primary.txt",
+      "prompt_sha256": "b8835600588b10db5acee24b371213e82319cdd617208f7938cdf384f175a10c",
+      "submitted_references": [
+        {"input_index": 1, "role": "EDIT_TARGET", "path": "books/DM02/visual-proof-campaign/images/p01-panel-01/v0001.png", "sha256": "3a51c5ab75ba4833bd66331cf038394cfd414de864fef8996b03d10a44e86a27"}
+      ],
+      "unsubmitted_reference_roles": ["A_PR7_STYLE_NOT_NEEDED_FOR_LOCAL_PIXEL_PRESERVATION", "B_PR7_COMPOSITION_NOT_NEEDED_FOR_LOCAL_PIXEL_PRESERVATION", "C_APPROVED_CHARACTER_PIXEL_UNAVAILABLE", "D_APPROVED_ENVIRONMENT_PIXEL_UNAVAILABLE"],
+      "independent_review_path": "books/DM02/book-level-production/corrective-v0002/reviews/p01-panel-01.v0002.json",
+      "independent_review_result": "PASS"
+    },
+    {
+      "operation_index": 2,
+      "executed_at": "2026-10-29T13:15:52Z",
+      "unit_id": "page-d20c0821bca7f13784a34630--p04-panel-01",
+      "operation_class": "REQUIRED_PRIMARY_NEW_GENERATION",
+      "provider_operation_identifier": "exec-94fae283-1547-47a5-9d5d-4b36826d3b7a",
+      "source_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-94fae283-1547-47a5-9d5d-4b36826d3b7a.png",
+      "repository_output_path": "books/DM02/book-level-production/images/p04-panel-01/v0003.png",
+      "output_sha256": "95e4af8df0ef52c4882d0db9da540e317bdbe6607f965826dff856ca905741c5",
+      "dimensions": [1087, 1447],
+      "prompt_path": "books/DM02/book-level-production/corrective-v0002/prompts/operation-002-p04-panel-01-primary.txt",
+      "prompt_sha256": "d84c906c0ca105010a9843a2a7e6c5e15001b39b3229a8fc8982c6123d392008",
+      "submitted_references": [
+        {"input_index": 1, "role": "A_PR7_SERIES_AESTHETIC_ONLY", "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png", "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"},
+        {"input_index": 2, "role": "B_PR7_NARRATIVE_STAGING_ONLY", "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png", "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"}
+      ],
+      "unsubmitted_reference_roles": ["C_APPROVED_CHARACTER_PIXEL_UNAVAILABLE", "D_APPROVED_ENVIRONMENT_PIXEL_UNAVAILABLE"],
+      "independent_review_path": "books/DM02/book-level-production/corrective-v0002/reviews/p04-panel-01.v0003.json",
+      "independent_review_result": "FIX"
+    },
+    {
+      "operation_index": 3,
+      "executed_at": "2026-10-29T13:19:40Z",
+      "unit_id": "page-d20c0821bca7f13784a34630--p04-panel-01",
+      "operation_class": "INDEPENDENT_REVIEW_DIRECTED_REPAIR",
+      "provider_operation_identifier": "exec-92726e29-e939-459f-a5b8-41e0cbb899fd",
+      "source_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-92726e29-e939-459f-a5b8-41e0cbb899fd.png",
+      "repository_output_path": "books/DM02/book-level-production/images/p04-panel-01/v0004.png",
+      "output_sha256": "05c77862c230cc43a1df26bdfc9335aa10d25c1f5f6165af7d1c8465abb01e15",
+      "dimensions": [1055, 1491],
+      "prompt_path": "books/DM02/book-level-production/corrective-v0002/prompts/operation-003-p04-panel-01-repair.txt",
+      "prompt_sha256": "56faa8c6045cc3b1cbc8a0fdaa2814b863e56825820d04899675a048b6a16e9a",
+      "submitted_references": [
+        {"input_index": 1, "role": "EDIT_TARGET_PARENT_V0003", "path": "books/DM02/book-level-production/images/p04-panel-01/v0003.png", "sha256": "95e4af8df0ef52c4882d0db9da540e317bdbe6607f965826dff856ca905741c5"}
+      ],
+      "unsubmitted_reference_roles": ["A_PR7_NOT_RESUBMITTED_FOR_BOUNDED_REPAIR", "B_PR7_NOT_RESUBMITTED_FOR_BOUNDED_REPAIR", "C_APPROVED_CHARACTER_PIXEL_UNAVAILABLE", "D_APPROVED_ENVIRONMENT_PIXEL_UNAVAILABLE"],
+      "independent_review_path": "books/DM02/book-level-production/corrective-v0002/reviews/p04-panel-01.v0004.json",
+      "independent_review_result": "FAIL_WITH_UNIT_CEILING_EXHAUSTED"
+    },
+    {
+      "operation_index": 4,
+      "executed_at": "2026-10-29T13:21:10Z",
+      "unit_id": "page-2e96a0bca25ea33924a24fde--p05-panel-01",
+      "operation_class": "REQUIRED_PRIMARY_NEW_GENERATION",
+      "provider_operation_identifier": "exec-b17c090d-7bc0-4058-bca9-ee968c9542be",
+      "source_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-b17c090d-7bc0-4058-bca9-ee968c9542be.png",
+      "repository_output_path": "books/DM02/book-level-production/images/p05-panel-01/v0003.png",
+      "output_sha256": "431b3796d31f672059893a937a6430ee3c409cf532a0c38df972d948a94a010f",
+      "dimensions": [1086, 1448],
+      "prompt_path": "books/DM02/book-level-production/corrective-v0002/prompts/operation-004-p05-panel-01-primary.txt",
+      "prompt_sha256": "f87c87de30da6689f7e56ba7df6f53676819d1eac1ead5b420bb13431dc76e08",
+      "submitted_references": [
+        {"input_index": 1, "role": "A_PR7_SERIES_AESTHETIC_ONLY", "path": "book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png", "sha256": "15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b"},
+        {"input_index": 2, "role": "B_PR7_NARRATIVE_STAGING_ONLY", "path": "book-factory/references/visual-gold-standard/pages/kgs-dm08-p09.png", "sha256": "26f5a3d7fdc9c9432f0a793c6b50711a2bb4b1157cde79a7534c542a6c9bfa2d"}
+      ],
+      "unsubmitted_reference_roles": ["C_APPROVED_CHARACTER_PIXEL_UNAVAILABLE", "D_APPROVED_ENVIRONMENT_PIXEL_UNAVAILABLE"],
+      "independent_review_path": "books/DM02/book-level-production/corrective-v0002/reviews/p05-panel-01.v0003.json",
+      "independent_review_result": "FIX"
+    },
+    {
+      "operation_index": 5,
+      "executed_at": "2026-10-29T13:23:51Z",
+      "unit_id": "page-2e96a0bca25ea33924a24fde--p05-panel-01",
+      "operation_class": "INDEPENDENT_REVIEW_DIRECTED_REPAIR",
+      "provider_operation_identifier": "exec-0625e481-c976-40de-b884-e60141670d24",
+      "source_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-0625e481-c976-40de-b884-e60141670d24.png",
+      "repository_output_path": "books/DM02/book-level-production/images/p05-panel-01/v0004.png",
+      "output_sha256": "f774f116e3acf599475d773bead8a62f3e8213e59bf9558b45c73fb58b053580",
+      "dimensions": [1086, 1448],
+      "prompt_path": "books/DM02/book-level-production/corrective-v0002/prompts/operation-005-p05-panel-01-repair.txt",
+      "prompt_sha256": "396ef5dc2ecfc19465db0bdafa0398fc54425f2fce96526398b6aeecbf98156b",
+      "submitted_references": [
+        {"input_index": 1, "role": "EDIT_TARGET_PARENT_V0003", "path": "books/DM02/book-level-production/images/p05-panel-01/v0003.png", "sha256": "431b3796d31f672059893a937a6430ee3c409cf532a0c38df972d948a94a010f"}
+      ],
+      "unsubmitted_reference_roles": ["A_PR7_NOT_RESUBMITTED_FOR_BOUNDED_REPAIR", "B_PR7_NOT_RESUBMITTED_FOR_BOUNDED_REPAIR", "C_APPROVED_CHARACTER_PIXEL_UNAVAILABLE", "D_APPROVED_ENVIRONMENT_PIXEL_UNAVAILABLE"],
+      "independent_review_path": "books/DM02/book-level-production/corrective-v0002/reviews/p05-panel-01.v0004.json",
+      "independent_review_result": "FAIL_WITH_UNIT_CEILING_EXHAUSTED"
+    }
+  ],
+  "billing_observation": {
+    "pre_campaign_used_percent": 18,
+    "post_campaign_used_percent": 18,
+    "pre_campaign_purchased_credit_balance": "0",
+    "post_campaign_purchased_credit_balance": "0",
+    "ordinary_usage_allowed_after_campaign": true,
+    "per_operation_deduction_available": false,
+    "exclusive_campaign_attribution_available": false,
+    "incremental_usd": "UNKNOWN_NOT_EXPOSED_BY_BUILT_IN_TOOL",
+    "zero_incremental_usd_verified": false,
+    "usage_observation_path": "books/DM02/usage-observations/2026-10-29T132603Z.json"
+  },
+  "stop_condition": {
+    "code": "GENUINE_QUALITY_BLOCKER",
+    "scope": "VISHNU_ON_SHESHA_ENSEMBLE_UNDER_CURRENT_TWO_OPERATION_PER_UNIT_LIMIT",
+    "evidence": "Both p04-panel-01 and p05-panel-01 repeated the same hard failures after one primary and one review-directed repair: only three accountable Vishnu arms, a readily countable Shesha hood fan, and an occupied complete top lettering-safe rectangle.",
+    "further_operations_executed_after_blocker": 0,
+    "page_11_touched": false
+  }
+}

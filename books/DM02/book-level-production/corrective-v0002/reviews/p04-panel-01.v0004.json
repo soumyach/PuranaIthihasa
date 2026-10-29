@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "campaign_id": "dm02-series-identity-corrective-private-production-v0002",
+  "authorization_subject_hash": "fe3fb60da7731db076d9b63e453caf60f79a533bfa6c5934e52ed85e77d61299",
+  "unit_id": "page-d20c0821bca7f13784a34630--p04-panel-01",
+  "image_path": "books/DM02/book-level-production/images/p04-panel-01/v0004.png",
+  "image_sha256": "05c77862c230cc43a1df26bdfc9335aa10d25c1f5f6165af7d1c8465abb01e15",
+  "dimensions": [1055, 1491],
+  "reviewer": {
+    "id": "/root/dm02_campaign_v2_pixel_reviewer",
+    "independent_of_producer": true,
+    "image_capable": true,
+    "actual_pixels_inspected": true,
+    "files_modified": false
+  },
+  "result": "FAIL_WITH_UNIT_CEILING_EXHAUSTED",
+  "pass_findings": [
+    "The complexion is materially deeper luminous blue.",
+    "The source action, crown, garments, ornaments, family-safe finish and exclusions remain clear."
+  ],
+  "fail_findings": [
+    "Only three arms remain visually accountable.",
+    "Approximately seven distinct Shesha heads remain readily countable.",
+    "Radiance remains centered behind the crown/body and reads as a halo-like bloom.",
+    "Hood heads and high-contrast celestial detail remain inside the locked lettering-safe rectangle.",
+    "Output dimensions are 1055x1491 rather than 1086x1448."
+  ],
+  "repair_operation_released": false,
+  "unit_operation_count": 2,
+  "unit_operation_ceiling": 2,
+  "theological_certification": false,
+  "publication_eligible": false,
+  "reviewed_at": "2026-10-29T13:20:20Z"
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "approval_type": "VISUAL_STYLE_OR_CHARACTER_FAMILY",
+  "subject_type": "DM02_VISHNU_SERIES_IDENTITY_ARTISTIC_CONVENTION",
+  "subject_hash": "eead7d4e0379d3cf82037238ebe6c521e9d8daa9f500743ccfe86eb6b4fbd9e1",
+  "scope": {"type": "character", "id": "DM02-VISHNU"},
+  "approver": {
+    "id": "human-user-current-session-dm02-series-identity-campaign-v2",
+    "identity_claim": "The human user directly approved the existing DM02 Vishnu series-identity sheet as a private-production Khatakshetra artistic convention only in the current Codex thread.",
+    "authority": ["DM02_PRIVATE_ARTISTIC_CONVENTION_APPROVAL"],
+    "signature_claimed": false
+  },
+  "creator": {"id": "codex-root-dm02-series-identity-corrective-producer-v2"},
+  "decision": "PASS_WITH_CONDITIONS",
+  "inheritance_allowed": false,
+  "conditions": [
+    "DM02_PRIVATE_PRODUCTION_ONLY",
+    "ARTISTIC_CONVENTION_ONLY",
+    "NO_THEOLOGICAL_CERTIFICATION",
+    "NO_EXISTING_PIXEL_PROMOTION",
+    "STABLE_FACE_DEEP_BLUE_COMPLEXION_SHOULDER_LENGTH_BLACK_HAIR",
+    "UNCHANGING_TALL_KIRITA_MUKUTA_IN_REPOSE_AND_BATTLE",
+    "FOUR_ARMS_IN_READABLE_FULL_OR_MEDIUM_VIEWS",
+    "PALE_GOLD_U_SHAPED_FOREHEAD_MARK",
+    "YELLOW_PITAMBARA_TEAL_UTTARIYA_FIXED_ORNAMENT_SET",
+    "DISCUS_ONLY_WHERE_LOCKED_EVENT_PERMITS_OTHER_IMPLEMENT_WITHHELD",
+    "COUNT_NEUTRAL_MULTIHOODED_SHESHA",
+    "NAVEL_LOTUS_CONTINUITY_WHERE_RELATION_IS_IN_FRAME",
+    "PAGE_11_NOT_CLEARED"
+  ],
+  "invalidators": ["character_sheet_hash", "source_clearance", "tradition_scope"],
+  "evidence_refs": [
+    "CURRENT_USER_MESSAGE_DM02_SERIES_IDENTITY_CORRECTIVE_AUTHORIZATION_2026-10-29",
+    "fe3fb60da7731db076d9b63e453caf60f79a533bfa6c5934e52ed85e77d61299"
+  ],
+  "source_scope": "dm-source",
+  "tradition_id": "devi-mahatmyam",
+  "edition_id": "pargiter-1904",
+  "evidence_hash": "eead7d4e0379d3cf82037238ebe6c521e9d8daa9f500743ccfe86eb6b4fbd9e1",
+  "expires_at": null,
+  "created_at": "2026-10-29T13:11:51Z",
+  "id": "approval-22941d8d48a22623b1ce80b0"
+}

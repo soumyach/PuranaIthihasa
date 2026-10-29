@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "approval_type": "VISUAL_STYLE_OR_CHARACTER_FAMILY",
+  "subject_type": "DM02_BRAHMA_SERIES_IDENTITY_ARTISTIC_CONVENTION",
+  "subject_hash": "0ec0a174b42e76452beb8bcf7a94e781ab532eefa261d8201e5257e83a7b808a",
+  "scope": {"type": "character", "id": "DM02-BRAHMA"},
+  "approver": {
+    "id": "human-user-current-session-dm02-series-identity-campaign-v2",
+    "identity_claim": "The human user directly approved the existing DM02 Brahma series-identity sheet as a private-production Khatakshetra artistic convention only in the current Codex thread.",
+    "authority": ["DM02_PRIVATE_ARTISTIC_CONVENTION_APPROVAL"],
+    "signature_claimed": false
+  },
+  "creator": {"id": "codex-root-dm02-series-identity-corrective-producer-v2"},
+  "decision": "PASS_WITH_CONDITIONS",
+  "inheritance_allowed": false,
+  "conditions": [
+    "DM02_PRIVATE_PRODUCTION_ONLY",
+    "ARTISTIC_CONVENTION_ONLY",
+    "NO_THEOLOGICAL_CERTIFICATION",
+    "NO_EXISTING_PIXEL_PROMOTION",
+    "FOUR_FACES_TOTAL_THREE_NORMALLY_VISIBLE_FOURTH_IMPLIED",
+    "FOUR_ARMS_IN_READABLE_VIEWS",
+    "SHARED_LOW_DIADEM_AND_REPEATED_WHITE_BEARD_TREATMENT",
+    "ROSARY_AND_WATER_VESSEL_AS_NON_NARRATIVE_IDENTITY_MARKERS",
+    "COPPER_GOLD_CRIMSON_IVORY_SERIES_PALETTE",
+    "NAVEL_LOTUS_CONTINUITY_WHERE_RELATION_IS_IN_FRAME",
+    "PAGE_11_NOT_CLEARED"
+  ],
+  "invalidators": ["character_sheet_hash", "source_clearance", "tradition_scope"],
+  "evidence_refs": [
+    "CURRENT_USER_MESSAGE_DM02_SERIES_IDENTITY_CORRECTIVE_AUTHORIZATION_2026-10-29",
+    "fe3fb60da7731db076d9b63e453caf60f79a533bfa6c5934e52ed85e77d61299"
+  ],
+  "source_scope": "dm-source",
+  "tradition_id": "devi-mahatmyam",
+  "edition_id": "pargiter-1904",
+  "evidence_hash": "0ec0a174b42e76452beb8bcf7a94e781ab532eefa261d8201e5257e83a7b808a",
+  "expires_at": null,
+  "created_at": "2026-10-29T13:11:51Z",
+  "id": "approval-69e5ee5bb5efeba19b9689af"
+}
