@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0",
+  "checkpoint_id": "dm02-production-operations-2026-10-29-v0001",
+  "book_id": "DM02",
+  "branch": "main",
+  "baseline_commit": "0528250f1c6ed9136fd68d063f1920c39b69a66d",
+  "repository_sync": "LOCAL_MAIN_EQUALS_ORIGIN_MAIN_AT_BASELINE",
+  "effective_state": {
+    "path": "books/DM02/orchestration/effective-state.json",
+    "file_sha256": "16ea56cb45944d86a6691eaaa69ab2fd28bf232698067f2c48397f7da2454367",
+    "effective_state_hash": "2f718a04137b4de23792d3b4e99570bdb909220b8f0073c4d1c507ffb3914f83",
+    "status": "BLOCKED",
+    "current_stage": "ILLUSTRATION",
+    "reconciliation_conflicts": false,
+    "prior_campaign_operations_executed": 39,
+    "prior_campaign_operation_ceiling": 43,
+    "prior_campaign_scope_closed": true,
+    "prior_unspent_reserve_reusable": false,
+    "prior_attempt_counters_reset": false,
+    "currently_eligible_unit_ids_before_new_approvals": []
+  },
+  "completed_pages": [
+    {"page":2,"page_id":"page-88792a15dcd25b30d3982d7c","path":"books/DM02/private-page-previews/page-88792a15dcd25b30d3982d7c/v0002/0002-page-88792a15dcd25b30d3982d7c.png","sha256":"47f664db0be2ce1d9f68d32dffebca07efc3812b1def0f5f1b86536b92cedd8f"},
+    {"page":3,"page_id":"page-a694d4c3702975edfdceb0c5","path":"books/DM02/private-page-previews/page-a694d4c3702975edfdceb0c5/v0002/0003-page-a694d4c3702975edfdceb0c5.png","sha256":"e2f4eb52be5d3579f4a8dfc3658a75f9b1abcfdbbc98d5e097228ec6062f636d"},
+    {"page":22,"page_id":"page-d22f4a199dc41892b93a95e8","path":"books/DM02/private-page-previews/page-d22f4a199dc41892b93a95e8/v0001/0022-page-d22f4a199dc41892b93a95e8.png","sha256":"01c29ebf5e7e63ab25590ce62b2d80afd3cc36cae7d4ce9e898e560fe053a700"},
+    {"page":23,"page_id":"page-0de736c5ac791f2e0c546fd3","path":"books/DM02/private-page-previews/page-0de736c5ac791f2e0c546fd3/v0001/0023-page-0de736c5ac791f2e0c546fd3.png","sha256":"8d44d6fe385f5b732f7a3445c3483d90a1a97793594f931393e543115348cc0f"},
+    {"page":24,"page_id":"page-83f106e1acc55e4a61e6fdc0","path":"books/DM02/private-page-previews/page-83f106e1acc55e4a61e6fdc0/v0001/0024-page-83f106e1acc55e4a61e6fdc0.png","sha256":"c28f652921d7f687d98ee8129139f8c0ac886aac926beff9af03506ee99d1eec"}
+  ],
+  "remaining_work_inventory": {
+    "path": "books/DM02/book-level-production/remaining-work-inventory.v0002.json",
+    "sha256": "f12288db9534975916a737ccd93191b68132749883221a1ef36b5b77b6b06bfc",
+    "counts": {
+      "READY_WITH_EXISTING_ART": 10,
+      "LAYOUT_REPAIR_ONLY": 0,
+      "IMAGE_EDIT_REQUIRED": 21,
+      "NEW_IMAGE_REQUIRED": 12,
+      "QUALIFIED_REVIEW_REQUIRED": 1,
+      "BLOCKED_BY_DEPENDENCY": 0
+    }
+  },
+  "non_image_work_completed": {
+    "factory_reconciliation_run": true,
+    "factory_resume_run": true,
+    "effective_state_materialization": "BYTE_IDENTICAL_NO_CHANGE_REQUIRED",
+    "eligible_existing_pages_recomposed": 0,
+    "layout_repairs_performed": 0,
+    "reason_no_new_composition": "All five effective complete pages already pass their applicable private validation/review gates. Every other page requires image correction or Page 11 clearance; no truthful layout-only unit remains.",
+    "new_independent_composed_page_reviews": 0,
+    "reason_no_new_review": "No new or modified composition was produced, so no reviewer result was fabricated or duplicated."
+  },
+  "character_dependency_resolution": {
+    "source_required": [
+      "Preserve the locked DM02 event actions and chronology.",
+      "Preserve Brahma on the lotus from Vishnu's navel wherever that relation is shown.",
+      "Preserve Vishnu's identity through sleep, awakening, dialogue, battle and the sourced Page 21 discus action.",
+      "Preserve Page 11's six named withdrawal loci: eyes, mouth, nose, arms, heart and breast."
+    ],
+    "documented_traditional_conventions_proposed": [
+      "Brahma: four faces with three normally visible and the fourth implied; four arms; coherent crown, beard, rosary and water-vessel identity markers.",
+      "Vishnu: stable deep-blue identity, four-arm structure, tall crown, yellow pitambara, teal uttariya and fixed ornaments across scene states.",
+      "Shesha: recognizably multihooded but count-neutral; no exact hood count is asserted as a DM02 source fact."
+    ],
+    "user_approved_khatakshetra_design_choices": [],
+    "smallest_reusable_human_decisions_needed": [
+      "Approve or amend the six decisions on the existing Brahma series-identity sheet.",
+      "Approve or amend the eight decisions on the existing Vishnu series-identity sheet."
+    ],
+    "ordinary_design_approval_is_not_theological_certification": true,
+    "genuine_unresolved_qualified_question": "Page 11's exact six-locus Yoganidra withdrawal and sacred ensemble depiction remains ESCALATE_BEFORE_GENERATION."
+  },
+  "campaign_request": {
+    "path": "books/DM02/book-level-production/campaign-request.v0002.json",
+    "file_sha256": "077e0586f81d07bf608a62af5a6a8a706c9d4516a5b4f8fc98353448520947a6",
+    "authorization_subject_hash": "fe3fb60da7731db076d9b63e453caf60f79a533bfa6c5934e52ed85e77d61299",
+    "status": "AWAITING_CAMPAIGN_AUTHORIZATION_AND_CHARACTER_IDENTITY_APPROVAL",
+    "required_targeted_edits": 21,
+    "required_new_generations": 12,
+    "required_primary_operations": 33,
+    "conditional_edit_to_generation_fallback_ceiling": 7,
+    "independent_review_directed_repair_ceiling": 7,
+    "total_operation_ceiling": 47,
+    "operations_executed": 0,
+    "approval_record_created": false,
+    "page_11_excluded": true
+  },
+  "usage_observation": {
+    "path": "books/DM02/usage-observations/2026-10-29T124919Z.json",
+    "sha256": "6bad6628d3d9954b5f758eed10f42b2b8373ce9f08f19106b4c71c1dda7a8a1b",
+    "ordinary_usage_allowed": true,
+    "codex_used_percent": 17,
+    "codex_remaining_percent": 83,
+    "window_duration_minutes": 10080,
+    "resets_at_unix_seconds": 1793776854,
+    "purchased_credit_balance": "0",
+    "has_purchased_credits": false,
+    "incremental_usd": "UNKNOWN_NOT_EXPOSED",
+    "zero_incremental_usd_verified": false
+  },
+  "one_instruction_readiness": {
+    "codex_hosted_director_session": "CONDITIONALLY_EXECUTABLE_AFTER_EXACT_AUTHORIZATION_AND_IDENTITY_APPROVAL",
+    "standalone_repository_execution": "NOT_FULLY_EXECUTABLE",
+    "resume_command": "./factory resume-book --book-id DM02",
+    "capabilities_verified": {
+      "resume_exact_effective_state": true,
+      "persisted_specialist_handoffs": true,
+      "host_image_operations_after_authorization": "CODEX_HOST_INJECTED_NOT_REPOSITORY_CREDENTIAL",
+      "independent_actual_pixel_review": "SUPPORTED_BY_DISTINCT_CODEX_SPECIALIST_WHEN_AVAILABLE_NOT_A_STANDALONE_SERVICE",
+      "bounded_page_repair": true,
+      "page_composition_and_validation": true,
+      "private_pdf_export_after_all_pages_pass": true,
+      "durable_reconciliation_after_interruption": true
+    },
+    "genuine_execution_limitations": [
+      "The repository exposes no reusable built-in-image credential or autonomous background worker; an active Codex host session is required.",
+      "The generic CLI has no importer/executor dedicated to this newly frozen corrective campaign; the active Director must record the authenticated approval using existing approval conventions and enforce the manifest.",
+      "Page 11 cannot be completed by this campaign."
+    ]
+  },
+  "future_catalogue_progression": {
+    "catalogue_entries_evaluated": 78,
+    "deterministic_queue_available": true,
+    "selection_policy": "RESUME_THEN_PRIORITY_THEN_STABLE_BOOK_ID",
+    "currently_selected_next_book": null,
+    "reason": "No other catalogue entry presently passes private source-readiness gates; the Director correctly returns no selection instead of bypassing them.",
+    "manual_production_prompt_required_after_an_entry_becomes_eligible": false,
+    "next_book_started": false
+  },
+  "validation": {
+    "factory_validate": "PASS_WITH_BUNDLED_RUNTIME",
+    "source_graph_hash": "f3a02b5eebbe4b11035240f64ede32fcf889ff7b85f481dfe11b13744a0fc6b1",
+    "source_graph_modified": false,
+    "book_factory_tests": "241_PASS",
+    "dm04_modified": false,
+    "dm08_modified": false,
+    "images_generated": 0,
+    "paid_calls": 0,
+    "publication_or_deployment": false
+  },
+  "minimum_actions_to_complete_private_book": [
+    "Approve the scoped Brahma and Vishnu series-identity design choices.",
+    "Authorize campaign subject fe3fb60da7731db076d9b63e453caf60f79a533bfa6c5934e52ed85e77d61299.",
+    "Run the 33 primary operations in reviewed internal batches, spending at most the authorized conditional reserves.",
+    "Obtain signed qualified Page 11 iconography review and separately authorize its corrected image operation.",
+    "Compose and independently review every corrected page, then export and inspect the complete private PDF."
+  ]
+}

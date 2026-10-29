@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "dm02-series-identity-corrective-private-production-v0002",
+  "book_id": "DM02",
+  "status": "AWAITING_CAMPAIGN_AUTHORIZATION_AND_CHARACTER_IDENTITY_APPROVAL",
+  "authorization_received": false,
+  "approval_record_created": false,
+  "character_identity_approval_received": false,
+  "image_operations_executed": 0,
+  "authorization_subject_hash": "fe3fb60da7731db076d9b63e453caf60f79a533bfa6c5934e52ed85e77d61299",
+  "authorization_subject": {
+    "schema_version": "1.0",
+    "subject_type": "DM02_SERIES_IDENTITY_CORRECTIVE_PRIVATE_IMAGE_CAMPAIGN",
+    "campaign_id": "dm02-series-identity-corrective-private-production-v0002",
+    "book_id": "DM02",
+    "baseline_commit": "0528250f1c6ed9136fd68d063f1920c39b69a66d",
+    "purpose": "PRIVATE_INTERNAL_CORRECTION_OF_ALL_CURRENTLY_ELIGIBLE_DM02_IMAGE_UNITS",
+    "provider": "CODEX_BUILT_IN_IMAGE_GENERATION_ONLY",
+    "included_allowance_first": true,
+    "api_key_authorized": false,
+    "external_paid_provider_authorized": false,
+    "purchased_credit_use_authorized": false,
+    "automatic_credit_purchase_authorized": false,
+    "workspace_overage_authorized": false,
+    "paid_spend_authorized_usd": 0,
+    "zero_incremental_usd_technically_guaranteed": false,
+    "stop_if_explicit_payment_credit_overage_api_key_or_external_provider_requested": true,
+    "locked_unit_manifest": {
+      "path": "books/DM02/book-level-production/remaining-work-inventory.v0002.json",
+      "sha256": "f12288db9534975916a737ccd93191b68132749883221a1ef36b5b77b6b06bfc"
+    },
+    "targeted_edit_unit_ids": [
+      "page-71e9de766bf786cb9499a31b--p01-panel-01",
+      "page-2e96a0bca25ea33924a24fde--p05-panel-02",
+      "page-2eff3830302e6bb1ce973d73--p07-panel-02",
+      "page-050fb795d8c0bba26d6fc934--p08-panel-02",
+      "page-29ea6f05a380ac8e4598753f--p10-panel-01",
+      "page-5d55c9f3f53bac24d1f44238--p12-panel-01",
+      "page-4adc33689921626f8d0b1f8d--p13-panel-01",
+      "page-4adc33689921626f8d0b1f8d--p13-panel-02",
+      "page-4adc33689921626f8d0b1f8d--p13-panel-03",
+      "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-01",
+      "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-02",
+      "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-03",
+      "page-25f617b853e82ff066d97844--p15-panel-01",
+      "page-a77b8959a9dbfa9b247f6eed--p16-panel-01",
+      "page-a77b8959a9dbfa9b247f6eed--p16-panel-02",
+      "page-e738c476c98efb28ec475cdd--p17-panel-01",
+      "page-e738c476c98efb28ec475cdd--p17-panel-02",
+      "page-52288832b81caa0075cc9f6b--p18-panel-01",
+      "page-52288832b81caa0075cc9f6b--p18-panel-02",
+      "page-0a7e5fc37740e64356580b94--p19-panel-03",
+      "page-8619f3db280abbfd867eefe4--p21-panel-01"
+    ],
+    "new_generation_unit_ids": [
+      "page-d20c0821bca7f13784a34630--p04-panel-01",
+      "page-2e96a0bca25ea33924a24fde--p05-panel-01",
+      "page-6f5b1e3391910b496a7194d0--p06-panel-01",
+      "page-2eff3830302e6bb1ce973d73--p07-panel-01",
+      "page-2eff3830302e6bb1ce973d73--p07-panel-03",
+      "page-050fb795d8c0bba26d6fc934--p08-panel-01",
+      "page-ca28c1486ed14e92ca7c6c89--p09-panel-01",
+      "page-29ea6f05a380ac8e4598753f--p10-panel-02",
+      "page-5d55c9f3f53bac24d1f44238--p12-panel-02",
+      "page-0a7e5fc37740e64356580b94--p19-panel-01",
+      "page-f64eb6d498aa51d874a3ff79--p20-panel-01",
+      "page-f64eb6d498aa51d874a3ff79--p20-panel-02"
+    ],
+    "budget": {
+      "required_targeted_edits": 21,
+      "required_new_generations": 12,
+      "required_primary_operations": 33,
+      "conditional_edit_to_generation_fallback_ceiling": 7,
+      "independent_review_directed_repair_ceiling": 7,
+      "total_image_operation_ceiling": 47,
+      "maximum_total_operations_per_unit": 2,
+      "maximum_secondary_operations_per_unit": 1,
+      "automatic_retry": false,
+      "unused_reserve_must_not_be_spent": true,
+      "secondary_operation_rule": "Only an independent actual-pixel FIX may release one bounded second operation. Fallback and repair reserves share the per-unit limit and cannot both be spent on one unit."
+    },
+    "required_preconditions": {
+      "brahma_series_identity": {
+        "status": "HUMAN_APPROVAL_REQUIRED",
+        "path": "books/DM02/iconography-review/series-character-identity-v0001/brahma-character-reference-approval-sheet.v0001.md",
+        "sha256": "0ec0a174b42e76452beb8bcf7a94e781ab532eefa261d8201e5257e83a7b808a"
+      },
+      "vishnu_series_identity": {
+        "status": "HUMAN_APPROVAL_REQUIRED",
+        "path": "books/DM02/iconography-review/series-character-identity-v0001/vishnu-character-reference-approval-sheet.v0001.md",
+        "sha256": "eead7d4e0379d3cf82037238ebe6c521e9d8daa9f500743ccfe86eb6b4fbd9e1"
+      },
+      "campaign_authorization": "EXACT_SUBJECT_HASH_AUTHORIZATION_REQUIRED",
+      "fresh_allowance_check_before_each_internal_batch": true,
+      "independent_actual_pixel_review_after_each_operation": true,
+      "compose_and_independently_review_only_after_all_page_units_pass": true
+    },
+    "internal_batch_policy": {
+      "default_maximum_operations_per_batch": 4,
+      "additional_per_batch_user_authorization_required": false,
+      "condition": "Every operation remains inside the exact unit list, source gate, identity decisions, provider, total and per-unit budgets, and private-production scope bound by this subject."
+    },
+    "prior_campaign_history": {
+      "campaign_id": "dm02-book-level-private-production-v0001",
+      "subject_hash": "75d58aed55571bac527e146b9a9dcd66af41bb3124bdbf393bdd557dcc2b9269",
+      "operations_executed": 39,
+      "operation_ceiling": 43,
+      "unspent_conditional_reserve": 4,
+      "scope_closed": true,
+      "budget_inheritance_allowed": false,
+      "attempt_counters_reset": false
+    },
+    "excluded": {
+      "page_11": {
+        "page_id": "page-b85332e92940926f67e6dd9d",
+        "panel_id": "p11-panel-01",
+        "status": "ESCALATE_BEFORE_GENERATION",
+        "qualified_review_signed": false
+      },
+      "unit_ids": [
+        "page-b85332e92940926f67e6dd9d--p11-panel-01"
+      ],
+      "operations": [
+        "unlisted_or_optional_image_work",
+        "automatic_retry",
+        "manuscript_rewrite",
+        "source_graph_modification",
+        "DM04_or_DM08_work"
+      ],
+      "external_actions": [
+        "publication",
+        "deployment",
+        "push",
+        "merge",
+        "automatic_next_book"
+      ]
+    },
+    "locked_input_hashes": [
+      "0775af9ff8dacfdcbecece946b781e2187574883f148bb9a6327603f1ffdae3f",
+      "0ec0a174b42e76452beb8bcf7a94e781ab532eefa261d8201e5257e83a7b808a",
+      "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070",
+      "16ea56cb45944d86a6691eaaa69ab2fd28bf232698067f2c48397f7da2454367",
+      "2ffc82651274e049bf8b20c270f5abde63841fb2abc40137d935b956990069f6",
+      "63195c77c26e324af9809f1cfde80131108d655b550ce137115e3337b3f84e84",
+      "6bad6628d3d9954b5f758eed10f42b2b8373ce9f08f19106b4c71c1dda7a8a1b",
+      "e15e42cb62fd2c17715d1acfcf95b09d7210bebb1afe4b7a06e0fb41b4cdc791",
+      "eead7d4e0379d3cf82037238ebe6c521e9d8daa9f500743ccfe86eb6b4fbd9e1",
+      "f12288db9534975916a737ccd93191b68132749883221a1ef36b5b77b6b06bfc"
+    ]
+  },
+  "allowance_observation": {
+    "path": "books/DM02/usage-observations/2026-10-29T124919Z.json",
+    "sha256": "6bad6628d3d9954b5f758eed10f42b2b8373ce9f08f19106b4c71c1dda7a8a1b",
+    "codex_used_percent": 17,
+    "codex_remaining_percent": 83,
+    "purchased_credit_balance": "0",
+    "has_purchased_credits": false,
+    "per_image_allowance_estimate_available": false,
+    "incremental_usd_amount_available": false
+  },
+  "reference_policy": {
+    "pr7_gold_standard": "PRESENTATION_AND_SERIES_AESTHETIC_REFERENCE_ONLY",
+    "source_or_theology_authority": false,
+    "exact_A_B_C_D_paths_hashes_and_roles_required": true,
+    "do_not_claim_reference_conditioning_when_not_supplied": true,
+    "canonical_character_promotion_requires_separate_gate": true
+  },
+  "cost_and_execution_boundary": {
+    "actual_incremental_usd": "UNKNOWN_NO_IMAGE_OPERATION_EXECUTED_HOST_MONETARY_LEDGER_UNAVAILABLE",
+    "zero_incremental_usd_verified": false,
+    "included_image_deduction_estimate_available": false,
+    "stop_conditions": [
+      "PURCHASED_CREDIT_USE_REQUESTED",
+      "PAID_BILLING_OR_OVERAGE_REQUESTED",
+      "EXTERNAL_PROVIDER_OR_API_KEY_REQUIRED",
+      "INCLUDED_ALLOWANCE_UNAVAILABLE",
+      "IDENTITY_PRECONDITION_NOT_APPROVED",
+      "SOURCE_OR_ICONOGRAPHY_GATE_NOT_SATISFIED",
+      "TOTAL_OR_PER_UNIT_OPERATION_CEILING_REACHED"
+    ]
+  },
+  "next_action": "An authorized human must approve the exact Brahma and Vishnu series-identity design choices and this authorization_subject_hash. Do not execute an image operation before both are durably recorded."
+}

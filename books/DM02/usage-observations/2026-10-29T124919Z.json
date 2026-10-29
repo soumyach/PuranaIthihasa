@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-10-29T12:49:19Z",
+  "source": "CODEX_APP_GET_USAGE_LIMITS_READ_ONLY",
+  "ordinary_usage_allowed": true,
+  "codex_limit_id": "codex",
+  "codex_used_percent": 17,
+  "codex_remaining_percent": 83,
+  "window_duration_minutes": 10080,
+  "resets_at_unix_seconds": 1793776854,
+  "plan_type_reported_by_control": "prolite",
+  "purchased_credit_balance": "0",
+  "has_purchased_credits": false,
+  "spend_control_reached": false,
+  "rate_limit_reached_type": null,
+  "free_rate_limit_reset_credits_available": 2,
+  "image_operations_executed_during_observation": 0,
+  "per_image_allowance_estimate_available": false,
+  "incremental_usd_amount_available": false,
+  "notes": [
+    "The read-only control reports the shared Codex allowance and purchased-credit balance, not an image-operation reservation or per-image quote.",
+    "No image generation or edit was invoked while taking this observation.",
+    "The built-in image tool does not expose a positive zero-incremental-USD guarantee; the campaign therefore stops if payment, purchased credits, overage, an API key, or an external provider is requested.",
+    "The two available reset credits are not purchased credits and are not authorized for automatic use by this campaign."
+  ]
+}
