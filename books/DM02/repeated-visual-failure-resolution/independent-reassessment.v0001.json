@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "review_scope": "PAGE_4_AND_PAGE_5_REPEATED_VISUAL_FAILURE_RESOLUTION",
+  "baseline_commit": "174f492f55f17907e802cea245d92519f6f11ae3",
+  "reviewer": {
+    "id": "/root/dm02_repeated_failure_reviewer",
+    "independent_of_image_producer": true,
+    "distinct_from_prior_reviewer": true,
+    "prior_reviewer_id": "/root/dm02_campaign_v2_pixel_reviewer",
+    "image_capable": true,
+    "actual_pixels_inspected": true,
+    "files_modified": false
+  },
+  "governing_findings": {
+    "direct_source": "DM02 directly requires sleeping Vishnu on Shesha for Page 4 and a continuous navel-lotus relation to lotus-seated Brahma above the flood for Page 5. It does not prescribe Vishnu's arm total or Shesha's exact hood count.",
+    "approved_private_artistic_convention": "Approval approval-22941d8d48a22623b1ce80b0 makes four visually accountable Vishnu arms binding for DM02 private production. The approval is an artistic convention, not theological certification.",
+    "shesha_policy": "No exact hood count is fixed. Recognizable overlapping multihooded Shesha passes unless there is an anatomical contradiction, species confusion, or a false source claim. Countability alone is not a defect.",
+    "lettering_policy": "The exact page script and readable composition govern. A suggested top safe region is not an automatic rejection gate when layout adaptation preserves essential imagery."
+  },
+  "images": [
+    {
+      "page_number": 4,
+      "version": "v0003",
+      "path": "books/DM02/book-level-production/images/p04-panel-01/v0003.png",
+      "sha256": "95e4af8df0ef52c4882d0db9da540e317bdbe6607f965826dff856ca905741c5",
+      "result": "FIX",
+      "arms": "Exactly three arms are visually accountable. There is no fourth shoulder contour, upper-arm path, hand, negative-space route, or crop-based support for an invisible fourth.",
+      "anatomy": "The three shown arms and hands are coherent; no fused, duplicated, malformed, missing-joint, or serpent-merged anatomy is visible.",
+      "shesha": "PASS_RECOGNIZABLE_OVERLAPPING_MULTIHOODED_SHESHA; an approximate count is possible but is not a rejection ground.",
+      "other_findings": ["Pale grey/lavender-blue complexion conflicts with the approved deep divine-blue identity.", "The concentrated white-violet glow has a mild fixed-halo reading; v0004 improves it."],
+      "critical": true,
+      "composition_only_repair_sufficient": false,
+      "localized_image_edit_sufficient": true,
+      "regeneration_unavoidable": false,
+      "production_role": "PRESERVE_SUPERSEDED_HISTORY"
+    },
+    {
+      "page_number": 4,
+      "version": "v0004",
+      "path": "books/DM02/book-level-production/images/p04-panel-01/v0004.png",
+      "sha256": "05c77862c230cc43a1df26bdfc9335aa10d25c1f5f6165af7d1c8465abb01e15",
+      "result": "FIX",
+      "arms": "Exactly three arms are visually accountable and no plausible fourth-arm occlusion is established.",
+      "anatomy": "The three shown arms and hands are coherent; no fusion, duplication, malformed joint, or serpent merge is visible.",
+      "shesha": "PASS_RECOGNIZABLE_OVERLAPPING_MULTIHOODED_SHESHA; edge cropping and overlap avoid any source claim about an exact total.",
+      "other_findings": ["Deep divine-blue complexion, stable face, crown, garments, ornaments, sleeping action, unbounded water and non-anatomical atmospheric sleep field pass.", "Native dimensions differ from the page canvas but aspect-preserving cover produces a valid 1086x1448 derivative without stretching."],
+      "critical": true,
+      "composition_only_repair_sufficient": false,
+      "localized_image_edit_sufficient": true,
+      "regeneration_unavoidable": false,
+      "production_role": "PREFERRED_LOCAL_EDIT_BASE",
+      "recommendation": "LOCAL_IMAGE_EDIT_REQUIRED"
+    },
+    {
+      "page_number": 5,
+      "version": "v0003",
+      "path": "books/DM02/book-level-production/images/p05-panel-01/v0003.png",
+      "sha256": "431b3796d31f672059893a937a6430ee3c409cf532a0c38df972d948a94a010f",
+      "result": "FIX",
+      "arms": "Exactly three Vishnu arms are visually accountable; an invisible fourth is not supported.",
+      "anatomy": "The three shown Vishnu arms and all shown hands are coherent; no fusion or duplication is visible.",
+      "shesha": "PASS_RECOGNIZABLE_OVERLAPPING_MULTIHOODED_SHESHA; countability alone is a nondefect.",
+      "other_findings": ["Vishnu is pale/grey-blue rather than the approved deep blue.", "Brahma has three visible faces with a fourth implied and four coherent arms, but uses separate tall crown caps rather than the approved integrated low diadem.", "The continuous stem visibly meets the central navel/abdomen and supports lotus-seated Brahma."],
+      "critical": true,
+      "composition_only_repair_sufficient": false,
+      "localized_image_edit_sufficient": true,
+      "regeneration_unavoidable": false,
+      "production_role": "PRESERVE_SUPERSEDED_HISTORY"
+    },
+    {
+      "page_number": 5,
+      "version": "v0004",
+      "path": "books/DM02/book-level-production/images/p05-panel-01/v0004.png",
+      "sha256": "f774f116e3acf599475d773bead8a62f3e8213e59bf9558b45c73fb58b053580",
+      "result": "FIX",
+      "arms": "Exactly three Vishnu arms are visually accountable and no plausible fourth-arm occlusion is established.",
+      "anatomy": "The three shown arms and hands are coherent; no fusion, duplication, malformed joint, or serpent merge is visible.",
+      "shesha": "PASS_RECOGNIZABLE_OVERLAPPING_MULTIHOODED_SHESHA; an approximate count is acceptable and creates no identity confusion.",
+      "other_findings": ["Vishnu's deep-blue complexion and stable identity pass.", "Brahma's three visible faces/fourth implied, four arms, integrated low diadem, rosary, water vessel and palette pass.", "The navel-lotus connection is continuous and unambiguous."],
+      "critical": true,
+      "composition_only_repair_sufficient": false,
+      "localized_image_edit_sufficient": true,
+      "regeneration_unavoidable": false,
+      "production_role": "PREFERRED_LOCAL_EDIT_BASE",
+      "recommendation": "LOCAL_IMAGE_EDIT_REQUIRED_AND_COMPOSITION_REPAIR"
+    }
+  ],
+  "compositions": [
+    {
+      "page_number": 4,
+      "path": "books/DM02/repeated-visual-failure-resolution/page-0004-v0001/0004-page-d20c0821bca7f13784a34630.png",
+      "sha256": "d6d785d24917fb647a2f538080e0c094dde1eb64d1364cb88173e121772a74de",
+      "deterministic_validation": "PASS",
+      "independent_composition_result": "PASS",
+      "font_size_px": 22,
+      "overflow": false,
+      "finding": "Both exact captions remain readable. The top plaque covers only nonessential sky and the lower plaque avoids Vishnu's face, crown and hands while leaving the repose and Shesha identity readable. A fixed empty top band is unnecessary.",
+      "page_art_status": "FIX_MISSING_FOURTH_ACCOUNTABLE_ARM",
+      "publication_eligible": false
+    },
+    {
+      "page_number": 5,
+      "path": "books/DM02/repeated-visual-failure-resolution/page-0005-v0005/0005-page-2e96a0bca25ea33924a24fde.png",
+      "sha256": "fc114c0dca4d9797a835baaedeb11ad4052865756e8e2b7daa59b62303ba5dd4",
+      "deterministic_validation": "PASS",
+      "independent_composition_result": "FIX",
+      "font_size_px": 22,
+      "overflow": false,
+      "pass_findings": ["The dominant panel preserves Brahma's faces, four arms, full lotus, continuous stem, Vishnu's repose and Shesha support.", "All three exact narration blocks are ordered and readable."],
+      "fix_findings": ["The panel-2 plaque still obscures Brahma's front hands and most of the lotus, with partial lower-ensemble pixels at the edges.", "The panel-3 crop is mostly nebula; its plaque covers most visible water and a lotus-petal fragment remains."],
+      "repair": "COMPOSITION_ONLY_CROP_AND_PLAQUE_GEOMETRY_USING_EXISTING_PIXELS",
+      "page_art_status": "FIX_MISSING_FOURTH_ACCOUNTABLE_ARM",
+      "publication_eligible": false
+    }
+  ],
+  "failure_diagnosis": {
+    "result": "MIXED_GENUINE_AND_OVERLY_RIGID_REVIEW",
+    "genuine": ["Every reviewed image fails the approved private-production four-accountable-arm Vishnu convention."],
+    "overly_rigid": ["Rejecting recognizable multihooded Shesha merely because an approximate hood total can be counted.", "Rejecting otherwise usable pixels merely because a suggested complete top safe band is occupied before testing exact lettering and layout adaptation."],
+    "theological_certification": false,
+    "qualified_review_required": false
+  },
+  "production": {
+    "page_4": "LOCAL_IMAGE_EDIT_REQUIRED",
+    "page_5": "LOCAL_IMAGE_EDIT_REQUIRED_AND_COMPOSITION_REPAIR",
+    "regeneration_required": false,
+    "pages_fully_recoverable_without_new_pixels": 0,
+    "pages_composition_recoverable_without_new_pixels": [4, 5],
+    "effective_complete_pages_before": 5,
+    "effective_complete_pages_after": 5,
+    "effective_complete_page_numbers": [2, 3, 22, 23, 24],
+    "minimum_new_image_operations": 2,
+    "minimum_operation_description": ["One localized Page 4 v0004 edit that makes the fourth Vishnu arm visually accountable while preserving all passed pixels.", "One localized Page 5 v0004 edit that makes the fourth Vishnu arm visually accountable while preserving Brahma and the navel-lotus connection."],
+    "authorization_note": "Both units exhausted their two-operation ceilings and the current campaign is stopped. Its numeric remainder is frozen and not spendable; any edit requires a new exact hash-bound authorization."
+  },
+  "campaign_preservation": {
+    "status": "STOPPED_GENUINE_QUALITY_BLOCKER",
+    "operations_executed": 5,
+    "attempts_page_4": 2,
+    "attempts_page_5": 2,
+    "numeric_remainder_frozen": {"primary": 30, "fallback_ceiling": 7, "repair_ceiling": 5, "total_ceiling": 42},
+    "counters_reset": false,
+    "new_image_operations": 0
+  }
+}

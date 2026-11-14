@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "baseline_branch": "main",
+  "baseline_commit": "174f492f55f17907e802cea245d92519f6f11ae3",
+  "purpose": "READ_ONLY_PAGE_4_PAGE_5_REPEATED_VISUAL_FAILURE_REASSESSMENT",
+  "inputs": [
+    {"role": "AUTHORITATIVE_RULES", "path": "MYTHOLOGY_COMIC_RULES.md", "sha256": "0f47a1bb48b3b85c7442d67e51398a6a5fe0e379790a09ed0d852d4d3ab65070"},
+    {"role": "LOCKED_STORYBOARD", "path": "books/DM02/storyboards/v0002.json", "sha256": "2ffc82651274e049bf8b20c270f5abde63841fb2abc40137d935b956990069f6"},
+    {"role": "PAGE_4_SCRIPT", "path": "books/DM02/page-scripts/page-0004.v0002.json", "sha256": "c4f6131b8a89902cc10315fea04ef15dccf595e039ba3364b3519d5f9d4012e5"},
+    {"role": "PAGE_5_SCRIPT", "path": "books/DM02/page-scripts/page-0005.v0002.json", "sha256": "631f4155879f8b7f1381005fdad1216dcbcd7455ed115bdb3a849375fc6bf529"},
+    {"role": "APPROVED_PRIVATE_VISHNU_CONVENTION", "path": "books/DM02/iconography-review/series-character-identity-v0001/vishnu-character-reference-approval-sheet.v0001.md", "sha256": "eead7d4e0379d3cf82037238ebe6c521e9d8daa9f500743ccfe86eb6b4fbd9e1"},
+    {"role": "APPROVED_PRIVATE_BRAHMA_CONVENTION", "path": "books/DM02/iconography-review/series-character-identity-v0001/brahma-character-reference-approval-sheet.v0001.md", "sha256": "0ec0a174b42e76452beb8bcf7a94e781ab532eefa261d8201e5257e83a7b808a"},
+    {"role": "VISHNU_CONVENTION_APPROVAL_RECORD", "path": "books/DM02/approvals/approval-22941d8d48a22623b1ce80b0.json", "sha256": "46ce13d8c8a1155f8bd14939a3ee7179acacc83eb6fcee64a77ee65922539e85"},
+    {"role": "BRAHMA_CONVENTION_APPROVAL_RECORD", "path": "books/DM02/approvals/approval-69e5ee5bb5efeba19b9689af.json", "sha256": "c7f45d31054e2665d01fdd03031e333d0a1f1183c3bbfbc10c5f2897fa17361c"},
+    {"role": "CURRENT_CORRECTIVE_CAMPAIGN_LEDGER", "path": "books/DM02/book-level-production/corrective-v0002/execution-ledger.v0001.json", "sha256": "52d60f483f5d8933a2e5a4f805274a6a2cbd32ba7c1b58feba507961aa7e72a5"},
+    {"role": "CURRENT_CORRECTIVE_CAMPAIGN_STATE", "path": "books/DM02/book-level-production/corrective-v0002/campaign-state.v0001.json", "sha256": "5b3256c772b45e9e0138f7d1e2540ec24ef0004b9f215f518eb5ee106e580165"},
+    {"role": "CURRENT_EFFECTIVE_BOOK_STATE", "path": "books/DM02/orchestration/effective-state.json", "sha256": "16ea56cb45944d86a6691eaaa69ab2fd28bf232698067f2c48397f7da2454367"},
+    {"role": "PAGE_4_V0003_RASTER", "path": "books/DM02/book-level-production/images/p04-panel-01/v0003.png", "sha256": "95e4af8df0ef52c4882d0db9da540e317bdbe6607f965826dff856ca905741c5", "dimensions": [1087, 1447]},
+    {"role": "PAGE_4_V0004_RASTER", "path": "books/DM02/book-level-production/images/p04-panel-01/v0004.png", "sha256": "05c77862c230cc43a1df26bdfc9335aa10d25c1f5f6165af7d1c8465abb01e15", "dimensions": [1055, 1491]},
+    {"role": "PAGE_5_V0003_RASTER", "path": "books/DM02/book-level-production/images/p05-panel-01/v0003.png", "sha256": "431b3796d31f672059893a937a6430ee3c409cf532a0c38df972d948a94a010f", "dimensions": [1086, 1448]},
+    {"role": "PAGE_5_V0004_RASTER", "path": "books/DM02/book-level-production/images/p05-panel-01/v0004.png", "sha256": "f774f116e3acf599475d773bead8a62f3e8213e59bf9558b45c73fb58b053580", "dimensions": [1086, 1448]}
+  ],
+  "preservation": {
+    "source_rasters_modified": false,
+    "historical_reviews_modified": false,
+    "campaign_counters_modified": false,
+    "source_graph_modified": false,
+    "manuscript_modified": false,
+    "page_11_touched": false,
+    "dm04_modified": false,
+    "dm08_modified": false
+  }
+}
