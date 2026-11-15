@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "observed_after_operations": "2026-11-14T12:59:37Z",
+  "source": "CODEX_DESKTOP_ACCOUNT_USAGE_LIMITS_READ_ONLY",
+  "ordinary_usage_allowed": true,
+  "limit_id": "codex",
+  "plan_type": "team",
+  "primary_used_percent": 98,
+  "primary_remaining_percent": 2,
+  "secondary_used_percent": 15,
+  "secondary_remaining_percent": 85,
+  "credits": {"has_credits": false, "balance": "0", "unlimited": false},
+  "spend_control_reached": false,
+  "payment_prompt_observed_during_operations": false,
+  "provider_requested_api_key_or_external_billing": false,
+  "per_image_allowance_deduction_available": false,
+  "incremental_usd_amount_available": false,
+  "actual_incremental_usd": "UNKNOWN_HOST_MONETARY_LEDGER_NOT_EXPOSED",
+  "zero_incremental_usd_verified": false,
+  "comparison_to_preflight": "Primary used percentage changed from 87 to 98 and secondary from 14 to 15 during the interval. Because the limits are shared and the endpoint does not provide per-operation attribution, this is an observation rather than a claimed exact image deduction. Purchased-credit balance remained zero."
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "subject_type": "DM02_PAGE_4_PAGE_5_LOCALIZED_ARM_REPAIR_PRIVATE_IMAGE_CAMPAIGN",
+  "campaign_id": "dm02-page-4-page-5-localized-arm-repair-v0001",
+  "book_id": "DM02",
+  "baseline_branch": "main",
+  "baseline_commit": "52dbbdcfc96d7f11b375ea301a2c91da5c49ac6f",
+  "purpose": "PRIVATE_INTERNAL_LOCALIZED_REPAIR_OF_THE_MISSING_FOURTH_ACCOUNTABLE_VISHNU_ARM_ON_PAGES_4_AND_5",
+  "provider": "CODEX_BUILT_IN_IMAGE_EDITING_ONLY",
+  "method": "LOCALIZED_IMAGE_EDIT",
+  "operations": [
+    {
+      "sequence": 1,
+      "page_number": 4,
+      "page_id": "page-d20c0821bca7f13784a34630",
+      "panel_id": "p04-panel-01",
+      "unit_id": "page-d20c0821bca7f13784a34630--p04-panel-01",
+      "input_path": "books/DM02/book-level-production/images/p04-panel-01/v0004.png",
+      "input_sha256": "05c77862c230cc43a1df26bdfc9335aa10d25c1f5f6165af7d1c8465abb01e15",
+      "maximum_operations": 1,
+      "retry_budget": 0,
+      "correction": "Add only the missing fourth visually accountable, anatomically coherent Vishnu arm while preserving the accepted composition and all passed scene content."
+    },
+    {
+      "sequence": 2,
+      "page_number": 5,
+      "page_id": "page-2e96a0bca25ea33924a24fde",
+      "panel_id": "p05-panel-01",
+      "unit_id": "page-2e96a0bca25ea33924a24fde--p05-panel-01",
+      "input_path": "books/DM02/book-level-production/images/p05-panel-01/v0004.png",
+      "input_sha256": "f774f116e3acf599475d773bead8a62f3e8213e59bf9558b45c73fb58b053580",
+      "maximum_operations": 1,
+      "retry_budget": 0,
+      "correction": "Add only the missing fourth visually accountable, anatomically coherent Vishnu arm while preserving Brahma, the continuous navel-lotus relationship, the accepted composition and all passed scene content."
+    }
+  ],
+  "budget": {
+    "maximum_image_operations": 2,
+    "maximum_operations_per_unit": 1,
+    "automatic_retry": false,
+    "manual_retry": false,
+    "whole_composition_regeneration_authorized": false
+  },
+  "required_preservation": [
+    "EXISTING_ACCEPTED_COMPOSITION",
+    "VISHNU_IDENTITY_AND_DEEP_BLUE_COMPLEXION",
+    "EXISTING_THREE_ACCOUNTABLE_ARMS",
+    "SHESHA_AS_RECOGNIZABLE_MULTIHOODED_CANOPY_WITHOUT_EXACT_COUNT_GATE",
+    "ENVIRONMENT_LIGHTING_GARMENTS_EXPRESSIONS_AND_SOURCE_EVENT",
+    "NO_NEW_WEAPONS_OR_UNAUTHORIZED_ATTRIBUTES",
+    "NO_ARTIFICIAL_EMPTY_TOP_LETTERING_BAND",
+    "PAGE_5_BRAHMA_AND_NAVEL_LOTUS_RELATIONSHIP"
+  ],
+  "post_edit_requirements": {
+    "independent_actual_pixel_review": true,
+    "deterministic_page_composition": true,
+    "independent_reading_size_composed_page_review": true,
+    "page_4_lettering_strategy": "REUSE_ALREADY_VALIDATED_STRATEGY",
+    "page_5_composition_repair": "REDUCE_OR_REPOSITION_SECONDARY_BRAHMA_PLAQUE_AND_USE_EXISTING_PIXELS_FOR_A_CLEARER_CLOSING_WATER_INTERVAL_WITHOUT_NARRATION_REWRITE"
+  },
+  "included_allowance_first": true,
+  "api_key_authorized": false,
+  "external_paid_provider_authorized": false,
+  "purchased_credit_use_authorized": false,
+  "automatic_credit_purchase_authorized": false,
+  "workspace_overage_authorized": false,
+  "paid_spend_authorized_usd": 0,
+  "zero_incremental_usd_technically_guaranteed": false,
+  "stop_if_explicit_payment_credit_overage_api_key_or_external_provider_requested": true,
+  "prior_campaign_preservation": {
+    "campaign_id": "dm02-series-identity-corrective-private-production-v0002",
+    "execution_ledger_path": "books/DM02/book-level-production/corrective-v0002/execution-ledger.v0001.json",
+    "execution_ledger_sha256": "52d60f483f5d8933a2e5a4f805274a6a2cbd32ba7c1b58feba507961aa7e72a5",
+    "campaign_state_path": "books/DM02/book-level-production/corrective-v0002/campaign-state.v0001.json",
+    "campaign_state_sha256": "5b3256c772b45e9e0138f7d1e2540ec24ef0004b9f215f518eb5ee106e580165",
+    "attempt_counters_reset": false,
+    "budget_inheritance_allowed": false,
+    "numeric_remainder_spendable": false
+  },
+  "review_basis": {
+    "path": "books/DM02/repeated-visual-failure-resolution/independent-reassessment.v0001.json",
+    "sha256": "4e988d1fd2d9c2427b3f4cf5de4b36510a52b21d52793ede004e686018dd26c0"
+  },
+  "excluded": {
+    "page_11": "ESCALATE_BEFORE_GENERATION",
+    "additional_image_operations": true,
+    "source_graph_change": true,
+    "manuscript_change": true,
+    "DM04_or_DM08_change": true,
+    "publication_deployment_push_or_merge": true
+  }
+}

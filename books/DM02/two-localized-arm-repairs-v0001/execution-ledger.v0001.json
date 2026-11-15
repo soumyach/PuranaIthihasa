@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "dm02-page-4-page-5-localized-arm-repair-v0001",
+  "authorization_subject_hash": "ba208b1d5c04e16575798c231f50858fa3294fbba553a4e23d4fcd90eb51752b",
+  "approval_id": "approval-0c457703b435b3052518fd9c",
+  "status": "COMPLETED_EXACT_SCOPE_NO_RETRIES",
+  "budget": {
+    "maximum_operations": 2,
+    "executed_operations": 2,
+    "remaining_operations": 0,
+    "maximum_operations_per_unit": 1,
+    "retry_budget": 0
+  },
+  "units": [
+    {
+      "sequence": 1,
+      "unit_id": "page-d20c0821bca7f13784a34630--p04-panel-01",
+      "input_sha256": "05c77862c230cc43a1df26bdfc9335aa10d25c1f5f6165af7d1c8465abb01e15",
+      "operations_executed": 1,
+      "output_path": "books/DM02/book-level-production/images/p04-panel-01/v0005.png",
+      "output_sha256": "a7d239cf1b1cc0ece087f47ac4d2f9975c8b0638a6b84e82e288d18faa30600b",
+      "receipt_path": "books/DM02/two-localized-arm-repairs-v0001/provider-receipt.page-0004.v0005.json",
+      "independent_pixel_review": "PASS",
+      "status": "COMPLETED_PASS"
+    },
+    {
+      "sequence": 2,
+      "unit_id": "page-2e96a0bca25ea33924a24fde--p05-panel-01",
+      "input_sha256": "f774f116e3acf599475d773bead8a62f3e8213e59bf9558b45c73fb58b053580",
+      "operations_executed": 1,
+      "output_path": "books/DM02/book-level-production/images/p05-panel-01/v0005.png",
+      "output_sha256": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c",
+      "receipt_path": "books/DM02/two-localized-arm-repairs-v0001/provider-receipt.page-0005.v0005.json",
+      "independent_pixel_review": "PASS",
+      "status": "COMPLETED_PASS"
+    }
+  ],
+  "operations": [
+    {
+      "operation_sequence": 1,
+      "provider_operation_identifier": "exec-a8d1bccb-2d7e-4529-83ed-2668bc7ad4a2",
+      "unit_id": "page-d20c0821bca7f13784a34630--p04-panel-01",
+      "output_sha256": "a7d239cf1b1cc0ece087f47ac4d2f9975c8b0638a6b84e82e288d18faa30600b",
+      "retry": false
+    },
+    {
+      "operation_sequence": 2,
+      "provider_operation_identifier": "exec-e3688121-d020-4aa6-8438-38b0c40c7799",
+      "unit_id": "page-2e96a0bca25ea33924a24fde--p05-panel-01",
+      "output_sha256": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c",
+      "retry": false
+    }
+  ],
+  "image_operations_after_scope_completion": 0,
+  "prior_campaign_counters_reset": false,
+  "prior_campaign_budget_borrowed": false,
+  "page_11_touched": false
+}

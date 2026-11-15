@@ -1,0 +1,217 @@
+{
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fa98c19693cef07bf41709dd762"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"
+    }
+  },
+  "book_id": "DM02",
+  "book_version": "DM02-PAGE04-LOCALIZED-ARM-REPAIR-V0005",
+  "canvas": {
+    "aspect_ratio": "3:4",
+    "height": 1448,
+    "width": 1086
+  },
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "composition_hash": "55804fd61b7b1c7f7c6d13046dafffff7a8420686b3882fca0d584c69ccd309e",
+  "engine_version": "0.8.2",
+  "fixture": false,
+  "fixture_mode": false,
+  "font_config_sha256": "ba6cd2c0c4d716aa550059148339642da7fb2f1af1bfaad2e5d6ab838fb1e0aa",
+  "layout_type": "SINGLE_PANEL_IMMERSIVE",
+  "lettering": [
+    {
+      "badge_number": 1,
+      "box": {
+        "height": 0.09,
+        "width": 0.3,
+        "x": 0.61,
+        "y": 0.13
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 22
+      },
+      "lettering_id": "p04-narration-a",
+      "padding": 16,
+      "panel_id": "p04-panel-01",
+      "reading_order": 1,
+      "source_script_hash": "f657720a924de18248d536e4fea4d926877addc548c4efbf889261b68fa61de1",
+      "speaker_id": "narrator",
+      "text": "Upon Shesha rested Vishnu."
+    },
+    {
+      "badge_number": 2,
+      "box": {
+        "height": 0.155,
+        "width": 0.84,
+        "x": 0.08,
+        "y": 0.755
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 22
+      },
+      "lettering_id": "p04-narration-b",
+      "padding": 16,
+      "panel_id": "p04-panel-01",
+      "reading_order": 2,
+      "source_script_hash": "a100ee6474e5ce8f3f02c61ed772412c0c8fd3f2ebf80c568166117e70bf6ce0",
+      "speaker_id": "narrator",
+      "text": "He was not keeping the light sleep of a traveller who might wake at the snap of a twig. Yoganidra, the divine power of cosmic sleep, held him in profound stillness. His breathing alone gave measure to the immeasurable quiet."
+    }
+  ],
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fa98c19693cef07bf41709dd762",
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "page_id": "page-d20c0821bca7f13784a34630",
+  "page_number": 4,
+  "page_script_hash": "c4f6131b8a89902cc10315fea04ef15dccf595e039ba3364b3519d5f9d4012e5",
+  "page_title": "SLEEP BEYOND THE WORLD",
+  "panels": [
+    {
+      "asset": {
+        "approval": {
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "a7d239cf1b1cc0ece087f47ac4d2f9975c8b0638a6b84e82e288d18faa30600b"
+        },
+        "path": "books/DM02/book-level-production/images/p04-panel-01/v0005.png",
+        "sha256": "a7d239cf1b1cc0ece087f47ac4d2f9975c8b0638a6b84e82e288d18faa30600b",
+        "usage": "PRIVATE_INTERNAL_PREVIEW_ONLY"
+      },
+      "crop": {
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.52
+        },
+        "mode": "COVER",
+        "zoom": 1.0
+      },
+      "panel_id": "p04-panel-01",
+      "reading_order": 1,
+      "speaker_anchors": []
+    }
+  ],
+  "private_preview": true,
+  "publication_eligible": false,
+  "reading_order": 4,
+  "renderer_source_sha256": "578be319d0647d2d7d226bb982954684268b920ef33ba635b6e9a3a6b0118e2d",
+  "required_lettering_ids": [
+    "p04-narration-a",
+    "p04-narration-b"
+  ],
+  "resolved_font": {
+    "bold": "/System/Library/Fonts/Supplemental/STIXGeneralBol.otf",
+    "bold_sha256": "7e4dfb4979e9bb79a0bdedc56f055eab615fb9a3dff8788a52992ae65e8f572d",
+    "classification": "serif",
+    "family": "STIXGeneral",
+    "font_binary_bundled_in_repository": false,
+    "legal_installation": "Install the STIX Fonts project from its official distribution, then update paths if the operating system stores it elsewhere. Confirm the specific distribution's license before publication.",
+    "license_evidence": "The installed font metadata identifies the STIX license, derived from the SIL Open Font License. The renderer records hashes but does not copy these system files into the repository.",
+    "license_status": "SYSTEM_FONT_LICENSE_REVIEWED_NOT_REDISTRIBUTED",
+    "regular": "/System/Library/Fonts/Supplemental/STIXGeneral.otf",
+    "regular_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7"
+  },
+  "resolved_lettering": [
+    {
+      "box": [
+        662,
+        188,
+        988,
+        319
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p04-narration-a",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 16,
+      "rendered_font_size": 22,
+      "requested_font_size": 22,
+      "source_script_hash": "f657720a924de18248d536e4fea4d926877addc548c4efbf889261b68fa61de1",
+      "text_sha256": "a23e7dfafc28f4e21a18c7c49718fcd0089eb9ecdd83ac816a022ed4350e5b56"
+    },
+    {
+      "box": [
+        87,
+        1093,
+        999,
+        1318
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p04-narration-b",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 16,
+      "rendered_font_size": 22,
+      "requested_font_size": 22,
+      "source_script_hash": "a100ee6474e5ce8f3f02c61ed772412c0c8fd3f2ebf80c568166117e70bf6ce0",
+      "text_sha256": "df98956d05c4acdeb2417c81e6358a40fab11f715229b896e32ba4ae5080cd22"
+    }
+  ],
+  "resolved_panels": [
+    {
+      "asset_path": "books/DM02/book-level-production/images/p04-panel-01/v0005.png",
+      "asset_sha256": "a7d239cf1b1cc0ece087f47ac4d2f9975c8b0638a6b84e82e288d18faa30600b",
+      "box": [
+        49,
+        152,
+        1037,
+        1339
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.52
+      },
+      "panel_id": "p04-panel-01",
+      "paste_at": [
+        54,
+        157
+      ],
+      "rendered_size": [
+        978,
+        1177
+      ],
+      "scale_mode": "ASPECT_PRESERVING_COVER",
+      "semantic_crop_review": "PENDING_IMAGE_CAPABLE_REVIEW",
+      "source_crop": [
+        0,
+        140,
+        1055,
+        1410
+      ],
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "zoom": 1.0
+    }
+  ],
+  "schema_version": "1.0",
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "typography": {
+    "body_size": 22,
+    "family": "STIXGeneral",
+    "title_size": 30
+  }
+}

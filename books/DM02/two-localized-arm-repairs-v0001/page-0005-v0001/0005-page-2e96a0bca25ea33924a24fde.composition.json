@@ -1,0 +1,390 @@
+{
+  "approvals": {
+    "manuscript": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fa98c19693cef07bf41709dd762"
+    },
+    "series_standard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"
+    },
+    "storyboard": {
+      "status": "LOCKED_FOR_PRIVATE_PREVIEW",
+      "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"
+    }
+  },
+  "book_id": "DM02",
+  "book_version": "DM02-PAGE05-LOCALIZED-ARM-REPAIR-V0005",
+  "canvas": {
+    "aspect_ratio": "3:4",
+    "height": 1448,
+    "width": 1086
+  },
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "composition_hash": "20116924e8dc7f5731b0035fbeafefa2656c7bdc6b075acb5a1f133ad12c841f",
+  "engine_version": "0.8.2",
+  "fixture": false,
+  "fixture_mode": false,
+  "font_config_sha256": "ba6cd2c0c4d716aa550059148339642da7fb2f1af1bfaad2e5d6ab838fb1e0aa",
+  "layout_type": "CINEMATIC_HERO",
+  "lettering": [
+    {
+      "badge_number": 1,
+      "box": {
+        "height": 0.095,
+        "width": 0.442,
+        "x": 0.065,
+        "y": 0.805
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 22
+      },
+      "lettering_id": "p05-narration-a",
+      "padding": 14,
+      "panel_id": "p05-panel-01",
+      "reading_order": 1,
+      "source_script_hash": "94af80a46eaf5d752bbc0206b9db7d4211d311f55f379c6ba63b12e388757d30",
+      "speaker_id": "narrator",
+      "text": "From him rose a lotus, and upon that lotus sat Brahma."
+    },
+    {
+      "badge_number": 2,
+      "box": {
+        "height": 0.18,
+        "width": 0.37,
+        "x": 0.565,
+        "y": 0.112
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 22
+      },
+      "lettering_id": "p05-narration-b",
+      "padding": 12,
+      "panel_id": "p05-panel-02",
+      "reading_order": 2,
+      "source_script_hash": "13c3a72b5b2292ac1547452b55818e046353a5c562e84305ab489f774be697d7",
+      "speaker_id": "narrator",
+      "text": "The flower stood above the waters like the single open eye of a world not yet remade. Brahma had no ground beneath him—only the lotus, Vishnu below, and the unbroken flood beyond."
+    },
+    {
+      "badge_number": 3,
+      "box": {
+        "height": 0.19,
+        "width": 0.37,
+        "x": 0.565,
+        "y": 0.72
+      },
+      "channel": "NARRATION",
+      "font": {
+        "minimum_size": 22,
+        "size": 22
+      },
+      "lettering_id": "p05-narration-c",
+      "padding": 12,
+      "panel_id": "p05-panel-03",
+      "reading_order": 3,
+      "source_script_hash": "e8d838000e310275c00d9886df3314ad4e6cefb67c84906515468140e8b8f7ae",
+      "speaker_id": "narrator",
+      "text": "Vishnu slept.\n\nThe waters waited.\n\nAnd in that stillness, danger appeared."
+    }
+  ],
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fa98c19693cef07bf41709dd762",
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "page_id": "page-2e96a0bca25ea33924a24fde",
+  "page_number": 5,
+  "page_script_hash": "631f4155879f8b7f1381005fdad1216dcbcd7455ed115bdb3a849375fc6bf529",
+  "page_title": "THE LOTUS ABOVE THE FLOOD",
+  "panels": [
+    {
+      "asset": {
+        "approval": {
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c"
+        },
+        "path": "books/DM02/book-level-production/images/p05-panel-01/v0005.png",
+        "sha256": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c",
+        "usage": "PRIVATE_INTERNAL_PREVIEW_ONLY"
+      },
+      "box": {
+        "height": 0.82,
+        "width": 0.482,
+        "x": 0.045,
+        "y": 0.105
+      },
+      "crop": {
+        "focal_point": {
+          "x": 0.48,
+          "y": 0.5
+        },
+        "mode": "COVER",
+        "zoom": 1.0
+      },
+      "panel_id": "p05-panel-01",
+      "reading_order": 1,
+      "speaker_anchors": []
+    },
+    {
+      "asset": {
+        "approval": {
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c"
+        },
+        "path": "books/DM02/book-level-production/images/p05-panel-01/v0005.png",
+        "sha256": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c",
+        "usage": "PRIVATE_INTERNAL_DERIVED_CROP_PREVIEW_ONLY"
+      },
+      "box": {
+        "height": 0.4,
+        "width": 0.41,
+        "x": 0.545,
+        "y": 0.105
+      },
+      "crop": {
+        "focal_point": {
+          "x": 0.5,
+          "y": 0.08
+        },
+        "mode": "COVER",
+        "zoom": 1.5
+      },
+      "panel_id": "p05-panel-02",
+      "reading_order": 2,
+      "speaker_anchors": []
+    },
+    {
+      "asset": {
+        "approval": {
+          "status": "PRIVATE_PREVIEW_AUTHORIZED",
+          "subject_hash": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c"
+        },
+        "path": "books/DM02/book-level-production/images/p05-panel-01/v0005.png",
+        "sha256": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c",
+        "usage": "PRIVATE_INTERNAL_DERIVED_CROP_PREVIEW_ONLY"
+      },
+      "box": {
+        "height": 0.4,
+        "width": 0.41,
+        "x": 0.545,
+        "y": 0.525
+      },
+      "crop": {
+        "focal_point": {
+          "x": 0.88,
+          "y": 0.68
+        },
+        "mode": "COVER",
+        "zoom": 2.0
+      },
+      "panel_id": "p05-panel-03",
+      "reading_order": 3,
+      "speaker_anchors": []
+    }
+  ],
+  "private_preview": true,
+  "publication_eligible": false,
+  "reading_order": 5,
+  "renderer_source_sha256": "578be319d0647d2d7d226bb982954684268b920ef33ba635b6e9a3a6b0118e2d",
+  "required_lettering_ids": [
+    "p05-narration-a",
+    "p05-narration-b",
+    "p05-narration-c"
+  ],
+  "resolved_font": {
+    "bold": "/System/Library/Fonts/Supplemental/STIXGeneralBol.otf",
+    "bold_sha256": "7e4dfb4979e9bb79a0bdedc56f055eab615fb9a3dff8788a52992ae65e8f572d",
+    "classification": "serif",
+    "family": "STIXGeneral",
+    "font_binary_bundled_in_repository": false,
+    "legal_installation": "Install the STIX Fonts project from its official distribution, then update paths if the operating system stores it elsewhere. Confirm the specific distribution's license before publication.",
+    "license_evidence": "The installed font metadata identifies the STIX license, derived from the SIL Open Font License. The renderer records hashes but does not copy these system files into the repository.",
+    "license_status": "SYSTEM_FONT_LICENSE_REVIEWED_NOT_REDISTRIBUTED",
+    "regular": "/System/Library/Fonts/Supplemental/STIXGeneral.otf",
+    "regular_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7"
+  },
+  "resolved_lettering": [
+    {
+      "box": [
+        71,
+        1166,
+        551,
+        1303
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p05-narration-a",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 14,
+      "rendered_font_size": 22,
+      "requested_font_size": 22,
+      "source_script_hash": "94af80a46eaf5d752bbc0206b9db7d4211d311f55f379c6ba63b12e388757d30",
+      "text_sha256": "ae8cf031ff78fb61482ede3d20ae2f0547ecbce925c868b5d157280a6acba7b6"
+    },
+    {
+      "box": [
+        614,
+        162,
+        1015,
+        423
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p05-narration-b",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 12,
+      "rendered_font_size": 22,
+      "requested_font_size": 22,
+      "source_script_hash": "13c3a72b5b2292ac1547452b55818e046353a5c562e84305ab489f774be697d7",
+      "text_sha256": "246f1c749542b29b08a1c723a84b850ab2dd0f14ac6a2ac4022694c0409e15db"
+    },
+    {
+      "box": [
+        614,
+        1043,
+        1015,
+        1318
+      ],
+      "font_sha256": "5add3f3f2bd7fd897d2fa5ccbe468607c52111dc44cdfaaf2d851a574f5357a7",
+      "lettering_id": "p05-narration-c",
+      "minimum_font_size": 22,
+      "overflow": false,
+      "padding": 12,
+      "rendered_font_size": 22,
+      "requested_font_size": 22,
+      "source_script_hash": "e8d838000e310275c00d9886df3314ad4e6cefb67c84906515468140e8b8f7ae",
+      "text_sha256": "693471add9233a0f4d136d65d2e5e08fd8469e77bd4bd040d803cc8866bf8940"
+    }
+  ],
+  "resolved_panels": [
+    {
+      "asset_path": "books/DM02/book-level-production/images/p05-panel-01/v0005.png",
+      "asset_sha256": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c",
+      "box": [
+        49,
+        152,
+        572,
+        1339
+      ],
+      "focal_point": {
+        "x": 0.48,
+        "y": 0.5
+      },
+      "panel_id": "p05-panel-01",
+      "paste_at": [
+        54,
+        157
+      ],
+      "rendered_size": [
+        513,
+        1177
+      ],
+      "scale_mode": "ASPECT_PRESERVING_COVER",
+      "semantic_crop_review": "PENDING_IMAGE_CAPABLE_REVIEW",
+      "source_crop": [
+        206,
+        0,
+        837,
+        1448
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "zoom": 1.0
+    },
+    {
+      "asset_path": "books/DM02/book-level-production/images/p05-panel-01/v0005.png",
+      "asset_sha256": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c",
+      "box": [
+        592,
+        152,
+        1037,
+        731
+      ],
+      "focal_point": {
+        "x": 0.5,
+        "y": 0.08
+      },
+      "panel_id": "p05-panel-02",
+      "paste_at": [
+        597,
+        157
+      ],
+      "rendered_size": [
+        435,
+        569
+      ],
+      "scale_mode": "ASPECT_PRESERVING_COVER",
+      "semantic_crop_review": "PENDING_IMAGE_CAPABLE_REVIEW",
+      "source_crop": [
+        181,
+        0,
+        905,
+        947
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "zoom": 1.5
+    },
+    {
+      "asset_path": "books/DM02/book-level-production/images/p05-panel-01/v0005.png",
+      "asset_sha256": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c",
+      "box": [
+        592,
+        760,
+        1037,
+        1339
+      ],
+      "focal_point": {
+        "x": 0.88,
+        "y": 0.68
+      },
+      "panel_id": "p05-panel-03",
+      "paste_at": [
+        597,
+        765
+      ],
+      "rendered_size": [
+        435,
+        569
+      ],
+      "scale_mode": "ASPECT_PRESERVING_COVER",
+      "semantic_crop_review": "PENDING_IMAGE_CAPABLE_REVIEW",
+      "source_crop": [
+        543,
+        630,
+        1086,
+        1340
+      ],
+      "source_dimensions": [
+        1086,
+        1448
+      ],
+      "zoom": 2.0
+    }
+  ],
+  "schema_version": "1.0",
+  "series_standard": {
+    "id": "KHATAKSHETRA_NAVY_GOLD_3X4",
+    "palette": [
+      "#071F35",
+      "#D8AC4E",
+      "#F0CF76",
+      "#F6E8C6",
+      "#FFF9EF",
+      "#251C18",
+      "#692019"
+    ]
+  },
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "typography": {
+    "body_size": 22,
+    "family": "STIXGeneral",
+    "title_size": 30
+  }
+}

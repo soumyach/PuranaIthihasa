@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-11-14T12:54:33Z",
+  "source": "CODEX_DESKTOP_ACCOUNT_USAGE_LIMITS_READ_ONLY",
+  "ordinary_usage_allowed": true,
+  "limit_id": "codex",
+  "plan_type": "team",
+  "primary_window": {
+    "used_percent": 87,
+    "remaining_percent": 13,
+    "window_duration_minutes": 300,
+    "resets_at": "2026-11-14T17:26:01Z"
+  },
+  "secondary_window": {
+    "used_percent": 14,
+    "remaining_percent": 86,
+    "window_duration_minutes": 10080,
+    "resets_at": "2026-11-21T12:26:01Z"
+  },
+  "credits": {
+    "has_credits": false,
+    "balance": "0",
+    "unlimited": false
+  },
+  "spend_control_reached": false,
+  "per_image_allowance_deduction_available": false,
+  "incremental_usd_amount_available": false,
+  "zero_incremental_usd_verified": false,
+  "note": "The read-only account endpoint exposes shared Codex windows and a zero purchased-credit balance. It does not quote per-image usage or incremental USD. The user authorized this two-operation run under the recorded included-allowance-first policy while acknowledging that zero incremental USD cannot be technically guaranteed."
+}

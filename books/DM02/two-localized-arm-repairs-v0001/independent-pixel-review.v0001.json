@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "dm02-page-4-page-5-localized-arm-repair-v0001",
+  "reviewer": {
+    "id": "/root/dm02_repeated_failure_reviewer",
+    "independent_of_image_producer": true,
+    "image_capable": true,
+    "actual_pixels_inspected": true,
+    "files_modified": false
+  },
+  "theological_certification": false,
+  "publication_approval": false,
+  "images": [
+    {
+      "page_number": 4,
+      "path": "books/DM02/book-level-production/images/p04-panel-01/v0005.png",
+      "sha256": "a7d239cf1b1cc0ece087f47ac4d2f9975c8b0638a6b84e82e288d18faa30600b",
+      "result": "PASS",
+      "arm_accounting": ["left upper supports the head", "left lower rests across the couch", "right upper extends distinctly along Shesha", "right lower rests at the torso/thigh"],
+      "finding": "All four arms have separable shoulder-to-hand paths with no fusion, duplication, floating limb, malformed attachment or serpent merge. No weapon or new sacred attribute was introduced. Face, deep-blue complexion, crown, garments, ornaments, sleeping event, flood and recognizable multihooded Shesha remain stable without visible edit degradation.",
+      "critical_defects": []
+    },
+    {
+      "page_number": 5,
+      "path": "books/DM02/book-level-production/images/p05-panel-01/v0005.png",
+      "sha256": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c",
+      "result": "PASS",
+      "arm_accounting": ["left upper supports the head", "left lower rests on the coil", "right upper extends over the couch", "right lower rests by the torso/thigh"],
+      "finding": "The parallel right arms remain distinct through their full visible paths and hands. No new implement, attribute or edit artifact appears. Vishnu identity and Shesha remain stable. Brahma's established identity and attributes, the single lotus, continuous stem and central navel/abdomen connection remain readable and unobscured.",
+      "critical_defects": []
+    }
+  ],
+  "overall_result": "PASS_FOR_PRIVATE_PAGE_COMPOSITION"
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "dm02-page-4-page-5-localized-arm-repair-v0001",
+  "reviewer": {
+    "id": "/root/dm02_repeated_failure_reviewer",
+    "independent_of_image_and_page_producer": true,
+    "image_capable": true,
+    "actual_reading_size_pixels_inspected": true,
+    "files_modified": false
+  },
+  "publication_approval": false,
+  "pages": [
+    {
+      "page_number": 4,
+      "path": "books/DM02/two-localized-arm-repairs-v0001/page-0004-v0001/0004-page-d20c0821bca7f13784a34630.png",
+      "sha256": "61c967090cc94d406f14d1150e9310ddf700fc594b06b97eb226b184f6ed8424",
+      "result": "PASS",
+      "finding": "Both exact narration blocks are readable at 22px without overflow. Plaques cover only nonessential sky or lower water/coil and avoid Vishnu's face, crown, all four arms/hands and the repose action. Artwork remains dominant; Shesha, identity, private label and page number 4 pass."
+    },
+    {
+      "page_number": 5,
+      "final_path": "books/DM02/two-localized-arm-repairs-v0001/page-0005-v0004/0005-page-2e96a0bca25ea33924a24fde.png",
+      "final_sha256": "1bce4178ca5da7a53dbd6572fcce74336dcc9060b0604e80d907c2dc5e6d6231",
+      "result": "PASS",
+      "finding": "All exact narration is readable at 22px. Caption 2 occupies upper atmosphere while Brahma's faces, four arms/hands, rosary, vessel and most of the lotus remain visible. Caption 3 occupies upper atmosphere and leaves a substantial clean dark-water interval with no figure, garment, lotus or Shesha sliver. The main panel preserves the continuous navel-lotus action and corrected four-arm Vishnu; artwork, private label and page number 5 pass.",
+      "composition_repair_history": [
+        {"version": "v0001", "result": "FIX", "reason": "Secondary plaque and closing crop retained the prior occlusion problems."},
+        {"version": "v0002", "result": "FIX", "reason": "Brahma plaque passed, but Caption 3 still hid the water band."},
+        {"version": "v0003", "result": "FIX", "reason": "Water became visible, but a hand/garment/Shesha sliver remained."},
+        {"version": "v0004", "result": "PASS", "reason": "Narrower far-right derived crop exposes clean water and preserves exact lettering."}
+      ]
+    }
+  ],
+  "overall_result": "PASS_PRIVATE_PREVIEW_ONLY"
+}

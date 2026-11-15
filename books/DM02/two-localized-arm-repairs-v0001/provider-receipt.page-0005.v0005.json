@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "dm02-page-4-page-5-localized-arm-repair-v0001",
+  "authorization_subject_hash": "ba208b1d5c04e16575798c231f50858fa3294fbba553a4e23d4fcd90eb51752b",
+  "approval_id": "approval-0c457703b435b3052518fd9c",
+  "operation_sequence": 2,
+  "unit_id": "page-2e96a0bca25ea33924a24fde--p05-panel-01",
+  "operation_type": "BUILT_IN_CODEX_LOCALIZED_IMAGE_EDIT",
+  "provider": "CODEX_BUILT_IN_IMAGE_GENERATION_CAPABILITY",
+  "api_key_supplied": false,
+  "external_provider_used": false,
+  "payment_prompt_observed": false,
+  "retry": false,
+  "submitted_references": [
+    {
+      "slot": "A",
+      "role": "EDIT_TARGET_AND_IDENTITY_COMPOSITION_LOCK",
+      "path": "books/DM02/book-level-production/images/p05-panel-01/v0004.png",
+      "sha256": "f774f116e3acf599475d773bead8a62f3e8213e59bf9558b45c73fb58b053580"
+    }
+  ],
+  "additional_reference_images_submitted": false,
+  "prompt": "Localized corrective image edit of the supplied Page 5 master. Preserve the entire accepted devotional illustration, framing, aspect ratio, and visual identity. Make exactly one narrowly scoped anatomy correction to Lord Vishnu: add the one missing fourth arm so that exactly four Vishnu arms are visually accountable in the finished image. Keep the three existing Vishnu arms, hands, pose, face, crown, deep divine-blue complexion, garments, jewelry, garland, expression, body position, lighting, and proportions unchanged. Place the added far arm in a natural relaxed sleeping position supported by Shesha, with a clearly connected shoulder, upper arm, elbow, forearm, wrist, and hand; it must read as an anatomically coherent fourth arm and not as a duplicate, fused limb, serpent, or garment fold. Keep the new arm clear of the navel and lotus stem. Match the existing blue skin tone, gold ornaments, lighting, focus, painterly detail, and scale. Preserve Brahma exactly as depicted—including his three visible faces with fourth implied, four arms, crown/diadem, ornaments, rosary, water vessel, seated posture, lotus and expression. Preserve the continuous green lotus stem and its unambiguous connection to Vishnu's navel exactly. Preserve Shesha exactly as the recognizable overlapping multihooded canopy and coiled couch; do not change or recount the hoods. Preserve the cosmic ocean, stars, nebulae, water, all environment pixels, current composition, and current available lettering space wherever possible. Add no weapons, conch, discus, mace, lotus beyond the existing navel-lotus, sacred emblems, new figures, lettering, borders, watermarks, or empty top band. Exactly four Vishnu arms total—not three and not five. This is a local edit, not a restaging or regeneration of the composition.",
+  "host_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-e3688121-d020-4aa6-8438-38b0c40c7799.png",
+  "immutable_output_path": "books/DM02/book-level-production/images/p05-panel-01/v0005.png",
+  "output_sha256": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c",
+  "output_dimensions": [1086, 1448],
+  "completed_at": "2026-11-14T12:58:57Z",
+  "operation_result": "COMPLETED_ONE_OPERATION"
+}

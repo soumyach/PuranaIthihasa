@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "book_version": "DM02-PAGE05-LOCALIZED-ARM-REPAIR-V0005",
+  "manuscript_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fa98c19693cef07bf41709dd762",
+  "storyboard_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28",
+  "page_script_hash": "631f4155879f8b7f1381005fdad1216dcbcd7455ed115bdb3a849375fc6bf529",
+  "page_id": "page-2e96a0bca25ea33924a24fde",
+  "page_number": 5,
+  "reading_order": 5,
+  "page_title": "THE LOTUS ABOVE THE FLOOD",
+  "chapter_masthead": "DM02 — THE SLEEP THAT HELD VISHNU",
+  "layout_type": "CINEMATIC_HERO",
+  "fixture": false,
+  "private_preview": true,
+  "publication_eligible": false,
+  "non_production_label": "INTERNAL PREVIEW — NOT APPROVED FOR PUBLICATION",
+  "panels": [
+    {
+      "panel_id": "p05-panel-01",
+      "reading_order": 1,
+      "box": {"x": 0.045, "y": 0.105, "width": 0.482, "height": 0.82},
+      "asset": {"path": "books/DM02/book-level-production/images/p05-panel-01/v0005.png", "sha256": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c", "usage": "PRIVATE_INTERNAL_PREVIEW_ONLY", "approval": {"status": "PRIVATE_PREVIEW_AUTHORIZED", "subject_hash": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c"}},
+      "crop": {"mode": "COVER", "focal_point": {"x": 0.48, "y": 0.50}, "zoom": 1.0},
+      "speaker_anchors": []
+    },
+    {
+      "panel_id": "p05-panel-02",
+      "reading_order": 2,
+      "box": {"x": 0.545, "y": 0.105, "width": 0.41, "height": 0.40},
+      "asset": {"path": "books/DM02/book-level-production/images/p05-panel-01/v0005.png", "sha256": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c", "usage": "PRIVATE_INTERNAL_DERIVED_CROP_PREVIEW_ONLY", "approval": {"status": "PRIVATE_PREVIEW_AUTHORIZED", "subject_hash": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c"}},
+      "crop": {"mode": "COVER", "focal_point": {"x": 0.50, "y": 0.08}, "zoom": 2.5},
+      "speaker_anchors": []
+    },
+    {
+      "panel_id": "p05-panel-03",
+      "reading_order": 3,
+      "box": {"x": 0.60, "y": 0.525, "width": 0.355, "height": 0.40},
+      "asset": {"path": "books/DM02/book-level-production/images/p05-panel-01/v0005.png", "sha256": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c", "usage": "PRIVATE_INTERNAL_DERIVED_CROP_PREVIEW_ONLY", "approval": {"status": "PRIVATE_PREVIEW_AUTHORIZED", "subject_hash": "4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c"}},
+      "crop": {"mode": "COVER", "focal_point": {"x": 1.0, "y": 0.49}, "zoom": 3.0},
+      "speaker_anchors": []
+    }
+  ],
+  "lettering": [
+    {
+      "lettering_id": "p05-narration-a", "panel_id": "p05-panel-01", "reading_order": 1, "channel": "NARRATION", "speaker_id": "narrator", "badge_number": 1,
+      "text": "From him rose a lotus, and upon that lotus sat Brahma.",
+      "source_script_hash": "94af80a46eaf5d752bbc0206b9db7d4211d311f55f379c6ba63b12e388757d30",
+      "box": {"x": 0.065, "y": 0.805, "width": 0.442, "height": 0.095}, "padding": 14, "font": {"size": 22, "minimum_size": 22}
+    },
+    {
+      "lettering_id": "p05-narration-b", "panel_id": "p05-panel-02", "reading_order": 2, "channel": "NARRATION", "speaker_id": "narrator", "badge_number": 2,
+      "text": "The flower stood above the waters like the single open eye of a world not yet remade. Brahma had no ground beneath him—only the lotus, Vishnu below, and the unbroken flood beyond.",
+      "source_script_hash": "13c3a72b5b2292ac1547452b55818e046353a5c562e84305ab489f774be697d7",
+      "box": {"x": 0.565, "y": 0.112, "width": 0.37, "height": 0.17}, "padding": 12, "font": {"size": 22, "minimum_size": 22}
+    },
+    {
+      "lettering_id": "p05-narration-c", "panel_id": "p05-panel-03", "reading_order": 3, "channel": "NARRATION", "speaker_id": "narrator", "badge_number": 3,
+      "text": "Vishnu slept.\n\nThe waters waited.\n\nAnd in that stillness, danger appeared.",
+      "source_script_hash": "e8d838000e310275c00d9886df3314ad4e6cefb67c84906515468140e8b8f7ae",
+      "box": {"x": 0.62, "y": 0.545, "width": 0.315, "height": 0.19}, "padding": 12, "font": {"size": 22, "minimum_size": 22}
+    }
+  ],
+  "required_lettering_ids": ["p05-narration-a", "p05-narration-b", "p05-narration-c"],
+  "series_standard": {"id": "KHATAKSHETRA_NAVY_GOLD_3X4", "palette": ["#071F35", "#D8AC4E", "#F0CF76", "#F6E8C6", "#FFF9EF", "#251C18", "#692019"]},
+  "typography": {"family": "STIXGeneral", "body_size": 22, "title_size": 30},
+  "approvals": {
+    "manuscript": {"status": "LOCKED_FOR_PRIVATE_PREVIEW", "subject_hash": "ca54ad2d167ceb36bbcd10b33a9d5350aba6fa98c19693cef07bf41709dd762"},
+    "storyboard": {"status": "LOCKED_FOR_PRIVATE_PREVIEW", "subject_hash": "b3bc6d96458730500a3a3361a5382796cdd3f882c9a51eb59f25648c3ea94f28"},
+    "series_standard": {"status": "LOCKED_FOR_PRIVATE_PREVIEW", "subject_hash": "53d88316c1085aacc4bacef61ed32783edf4b787f734285061c5d8752d1fac81"}
+  }
+}

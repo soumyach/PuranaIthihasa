@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "approval_type": "PRODUCTION_CAMPAIGN",
+  "subject_type": "DM02_PAGE_4_PAGE_5_LOCALIZED_ARM_REPAIR_PRIVATE_IMAGE_CAMPAIGN",
+  "subject_hash": "ba208b1d5c04e16575798c231f50858fa3294fbba553a4e23d4fcd90eb51752b",
+  "scope": {"type": "book", "id": "DM02"},
+  "decision": "PASS_WITH_CONDITIONS",
+  "approver": {
+    "id": "human-user-current-session-dm02-page4-page5-localized-arm-repairs",
+    "identity_claim": "The human user directly requested and authorized an exact hash-bound campaign for one localized Page 4 v0004 edit and one localized Page 5 v0004 edit in the current Codex thread.",
+    "authority": ["PRIVATE_INTERNAL_VISUAL_PRODUCTION"],
+    "signature_claimed": false
+  },
+  "creator": {"id": "codex-root-dm02-localized-arm-repair-producer-v1"},
+  "conditions": [
+    "EXACTLY_TWO_LOCALIZED_IMAGE_EDIT_OPERATIONS_MAXIMUM",
+    "ONE_OPERATION_PER_LISTED_UNIT",
+    "ZERO_RETRIES",
+    "WHOLE_COMPOSITION_REGENERATION_NOT_AUTHORIZED",
+    "BUILT_IN_CODEX_IMAGE_EDITING_ONLY",
+    "INCLUDED_ALLOWANCE_FIRST",
+    "NO_API_KEY_OR_EXTERNAL_PAID_PROVIDER",
+    "NO_INTENTIONAL_PURCHASED_CREDIT_USE_OR_PAID_OVERAGE",
+    "STOP_IF_EXPLICIT_PAYMENT_IS_REQUESTED",
+    "INDEPENDENT_ACTUAL_PIXEL_REVIEW_REQUIRED",
+    "COMPOSE_AND_INDEPENDENTLY_REVIEW_AT_READING_SIZE_WHEN_ELIGIBLE",
+    "PAGE_11_EXCLUDED_AND_ESCALATED",
+    "PRIVATE_INTERNAL_ONLY",
+    "NO_PUBLICATION_DEPLOYMENT_PUSH_OR_MERGE",
+    "ZERO_INCREMENTAL_USD_NOT_TECHNICALLY_GUARANTEED"
+  ],
+  "maximum_paid_spend_minor_units": 0,
+  "currency": "USD",
+  "user_authorization_evidence": "DIRECT_HUMAN_MESSAGE_IN_CURRENT_CODEX_THREAD_2026-11-14",
+  "cryptographic_signature_present": false,
+  "evidence_refs": [
+    "d91afbedcc04889c95a237423fb4e136dee671619cc929f1f7da36a6571e3133",
+    "05c77862c230cc43a1df26bdfc9335aa10d25c1f5f6165af7d1c8465abb01e15",
+    "f774f116e3acf599475d773bead8a62f3e8213e59bf9558b45c73fb58b053580",
+    "4e988d1fd2d9c2427b3f4cf5de4b36510a52b21d52793ede004e686018dd26c0",
+    "52d60f483f5d8933a2e5a4f805274a6a2cbd32ba7c1b58feba507961aa7e72a5"
+  ],
+  "evidence_note": "Records the user's direct current-thread authorization without claiming a cryptographic signature, theological certification, Page 11 clearance, paid-spend authorization, or authority for any image beyond the two bound v0004 inputs."
+}

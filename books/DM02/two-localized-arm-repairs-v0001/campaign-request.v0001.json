@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "dm02-page-4-page-5-localized-arm-repair-v0001",
+  "book_id": "DM02",
+  "status": "COMPLETED_EXACT_SCOPE_NO_RETRIES",
+  "authorization_received": true,
+  "approval_record_created": true,
+  "image_operations_executed": 2,
+  "authorization_subject_path": "books/DM02/two-localized-arm-repairs-v0001/authorization-subject.v0001.json",
+  "authorization_subject_file_sha256": "d91afbedcc04889c95a237423fb4e136dee671619cc929f1f7da36a6571e3133",
+  "authorization_subject_hash": "ba208b1d5c04e16575798c231f50858fa3294fbba553a4e23d4fcd90eb51752b",
+  "approval_record": {
+    "id": "approval-0c457703b435b3052518fd9c",
+    "path": "books/DM02/approvals/approval-0c457703b435b3052518fd9c.json"
+  },
+  "allowance_observation": {
+    "path": "books/DM02/two-localized-arm-repairs-v0001/allowance-observation.v0001.json",
+    "sha256": "14403d4633f1cc3a35b1638d2e759c74da29799d5c0f588e7d7bb4965b549e21",
+    "ordinary_usage_allowed": true,
+    "codex_primary_used_percent": 87,
+    "codex_primary_remaining_percent": 13,
+    "codex_secondary_used_percent": 14,
+    "codex_secondary_remaining_percent": 86,
+    "purchased_credit_balance": "0",
+    "has_purchased_credits": false,
+    "per_image_deduction_estimate_available": false,
+    "incremental_usd_available": false
+  },
+  "execution_boundary": {
+    "provider": "CODEX_BUILT_IN_IMAGE_EDITING_ONLY",
+    "maximum_operations": 2,
+    "maximum_operations_per_unit": 1,
+    "retry_budget": 0,
+    "paid_spend_authorized_usd": 0,
+    "zero_incremental_usd_verified": false,
+    "stop_if_payment_or_external_provider_requested": true
+  },
+  "next_action": "STOP. The exact two-operation scope is exhausted; any later image operation requires a new authorization."
+}

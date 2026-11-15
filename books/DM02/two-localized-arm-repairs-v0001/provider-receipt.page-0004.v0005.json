@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "dm02-page-4-page-5-localized-arm-repair-v0001",
+  "authorization_subject_hash": "ba208b1d5c04e16575798c231f50858fa3294fbba553a4e23d4fcd90eb51752b",
+  "approval_id": "approval-0c457703b435b3052518fd9c",
+  "operation_sequence": 1,
+  "unit_id": "page-d20c0821bca7f13784a34630--p04-panel-01",
+  "operation_type": "BUILT_IN_CODEX_LOCALIZED_IMAGE_EDIT",
+  "provider": "CODEX_BUILT_IN_IMAGE_GENERATION_CAPABILITY",
+  "api_key_supplied": false,
+  "external_provider_used": false,
+  "payment_prompt_observed": false,
+  "retry": false,
+  "submitted_references": [
+    {
+      "slot": "A",
+      "role": "EDIT_TARGET_AND_IDENTITY_COMPOSITION_LOCK",
+      "path": "books/DM02/book-level-production/images/p04-panel-01/v0004.png",
+      "sha256": "05c77862c230cc43a1df26bdfc9335aa10d25c1f5f6165af7d1c8465abb01e15"
+    }
+  ],
+  "additional_reference_images_submitted": false,
+  "prompt": "Localized corrective image edit of the supplied Page 4 master. Preserve the entire accepted devotional illustration, framing, aspect ratio, and visual identity. Make exactly one narrowly scoped anatomy correction to Lord Vishnu: add the one missing fourth arm so that exactly four Vishnu arms are visually accountable in the finished image. Keep the three existing arms, hands, pose, face, crown, deep divine-blue complexion, garments, jewelry, garland, expression, body position, lighting, and proportions unchanged. Place the added far arm in a natural relaxed sleeping position supported by Shesha, with a clearly connected shoulder, upper arm, elbow, forearm, wrist, and hand; it must read as an anatomically coherent fourth arm and not as a duplicate, fused limb, serpent, or garment fold. Match the existing blue skin tone, gold ornaments, lighting, focus, painterly detail, and scale. Preserve Shesha exactly as the recognizable overlapping multihooded canopy and coiled couch; do not change or recount the hoods. Preserve the cosmic ocean, stars, nebulae, water, all environment pixels, current composition, and current available lettering space wherever possible. Add no weapons, conch, discus, mace, lotus, sacred emblems, new figures, lettering, borders, watermarks, or empty top band. Exactly four Vishnu arms total—not three and not five. This is a local edit, not a restaging or regeneration of the composition.",
+  "host_output_path": "/Users/vellankisriharsha/.codex/generated_images/01a1446f-a222-73f0-b710-0453d4bc464e/exec-a8d1bccb-2d7e-4529-83ed-2668bc7ad4a2.png",
+  "immutable_output_path": "books/DM02/book-level-production/images/p04-panel-01/v0005.png",
+  "output_sha256": "a7d239cf1b1cc0ece087f47ac4d2f9975c8b0638a6b84e82e288d18faa30600b",
+  "output_dimensions": [1055, 1491],
+  "completed_at": "2026-11-14T12:57:55Z",
+  "operation_result": "COMPLETED_ONE_OPERATION"
+}
