@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "observed_at": "2026-11-18T11:32:18+0530",
+  "observation_method": "CODEX_HOST_READ_ONLY_USAGE_LIMITS",
+  "ordinary_usage_allowed": true,
+  "plan_type": "team",
+  "primary_window": {
+    "duration_minutes": 300,
+    "used_percent": 1,
+    "remaining_percent": 99,
+    "resets_at_epoch_seconds": 1794999724,
+    "resets_at_asia_kolkata": "2026-11-18T16:32:04+0530"
+  },
+  "secondary_window": {
+    "duration_minutes": 10080,
+    "used_percent": 95,
+    "remaining_percent": 5,
+    "resets_at_epoch_seconds": 1795263961,
+    "resets_at_asia_kolkata": "2026-11-21T17:56:01+0530"
+  },
+  "purchased_credits": {
+    "has_credits": false,
+    "unlimited": false,
+    "balance": "0",
+    "balance_interpretation": "EXPOSED_ZERO"
+  },
+  "spend_control_reached": false,
+  "rate_limit_reached_type": null,
+  "host_requested_payment_or_overage": false,
+  "rate_limit_reset_credit": {
+    "available_count": 1,
+    "used_by_this_task": false,
+    "note": "Observed only; no reset was applied."
+  },
+  "incremental_usd_spend": "UNKNOWN_NOT_EXPOSED",
+  "image_operation_deduction_estimate": "UNAVAILABLE",
+  "image_operations_executed_in_this_task": 0
+}

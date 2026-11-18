@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "book_id": "DM02",
+  "review_scope": "INDEPENDENT_ACTUAL_PIXEL_AND_READING_SIZE_ZERO_IMAGE_REASSESSMENT",
+  "reviewer": {
+    "id": "/root/dm02_repeated_failure_reviewer",
+    "independent_of_page_composer_and_record_author": true,
+    "image_capable": true,
+    "actual_pixels_inspected": true,
+    "files_modified": false,
+    "image_operations_performed": 0
+  },
+  "governing_rules": {
+    "vishnu_private_identity": "Four arms must be visually accountable in readable full/medium figures; stable deep-blue complexion, crown, U-mark, garments and facial identity apply.",
+    "brahma_private_identity": "Readable Brahma must not collapse to a generic one-face/two-arm sage.",
+    "shesha": "A countable but recognizable multihooded form is not a rejection ground by itself.",
+    "lettering": "Exact script placement governs; no artificial empty top band is required.",
+    "theological_certification_claimed": false
+  },
+  "page_1": {
+    "path": "books/DM02/zero-image-completion-v0001/page-0001-v0001/0001-page-71e9de766bf786cb9499a31b.png",
+    "sha256": "f82c4926890a2ba360b38ed37fe819b57f9e56e7e3ff0fc176b1cb6f8a26dd0b",
+    "result": "PASS_PRIVATE_PRODUCTION_COMPLETE",
+    "publication_eligible": false,
+    "panel_decisions": [
+      {"panel":"p01-panel-01","class":"REUSE_AS_IS","path":"books/DM02/book-level-production/images/p01-panel-01/v0002.png","sha256":"f99193ac4fb3a3cd4fbc474c3a0d8a6913f2da6e12e980e36f1d71885edf9851"},
+      {"panel":"p01-panel-02","class":"REUSE_AS_IS","path":"books/DM02/book-level-production/images/p01-panel-02/v0002.png","sha256":"501164e2e9351693277abf1c3731f95a0763fd222de5c33bbf440480698b57e0"}
+    ],
+    "findings": [
+      "The later panel-01 PASS resolves the previous same-page forehead-mark mismatch; both displayed Medhas faces are materially consistent and unmarked.",
+      "Exact narration and dialogue are readable without overflow; the narration plaque covers background only and the dialogue balloon leaves Medhas's eyes, mouth, face and gesture readable.",
+      "Crops preserve the three-person listening triangle, low fire, Medhas-centered speaking beat and both listeners.",
+      "No fused anatomy, generated lettering, watermark or material edit artifact is visible; art remains dominant and the private label and page number are present."
+    ]
+  },
+  "legacy_page_reassessments": [
+    {"page":7,"preview":{"path":"books/DM02/private-page-previews/page-2eff3830302e6bb1ce973d73/v0002/0007-page-2eff3830302e6bb1ce973d73.png","sha256":"8e3e4b4bde8b68e8b428b9e15e8a876c976f4dfdf98a4e53d6ce021e27e03619"},"result":"FIX","units":{"p07-panel-01":"LOCAL_IMAGE_EDIT","p07-panel-02":"LOCAL_IMAGE_EDIT","p07-panel-03":"LOCAL_IMAGE_EDIT"},"after_pixels":"COMPOSITION_ONLY_ENLARGE_ART_AND_REMOVE_UNNECESSARY_CONTAIN_BARS"},
+    {"page":8,"preview":{"path":"books/DM02/private-page-previews/page-050fb795d8c0bba26d6fc934/v0002/0008-page-050fb795d8c0bba26d6fc934.png","sha256":"42ebabe4629998d7257b954af6d80e945753f68c21f8c93f9c87ce95b115a949"},"result":"FIX","units":{"p08-panel-01":"LOCAL_IMAGE_EDIT","p08-panel-02":"COMPOSITION_ONLY_DERIVED_FROM_CORRECTED_PANEL_01"},"after_pixels":"REDERIVE_AND_REFRAME_LOWER_CROP"},
+    {"page":9,"preview":{"path":"books/DM02/private-page-previews/page-ca28c1486ed14e92ca7c6c89/v0004/0009-page-ca28c1486ed14e92ca7c6c89.png","sha256":"a10d28a18ab88257cb1fbb095e8a705b72f246106adedeeebc8837383a3f6a3b"},"result":"FIX","units":{"p09-panel-01":"LOCAL_IMAGE_EDIT"},"after_pixels":"RECOMPOSE_WITH_EXISTING_VALID_DIALOGUE_LAYOUT"},
+    {"page":13,"preview":{"path":"books/DM02/private-page-previews/page-4adc33689921626f8d0b1f8d/v0002/0013-page-4adc33689921626f8d0b1f8d.png","sha256":"34307fe33bcab84f544fc5f8516aa9b2439b4648a157f8d3b1647bff1c33645a"},"result":"FIX","units":{"p13-panel-01":"LOCAL_IMAGE_EDIT","p13-panel-02":"LOCAL_IMAGE_EDIT","p13-panel-03":"LOCAL_IMAGE_EDIT"},"after_pixels":"COMPOSITION_ONLY_ENLARGE_ART"},
+    {"page":14,"preview":{"path":"books/DM02/private-page-previews/page-b3c2c7ea03e4d1259ccbea7b/v0001/0014-page-b3c2c7ea03e4d1259ccbea7b.png","sha256":"1a5498eb4bda21e7fbb5fed0d0e044474eb818d97e677e6d13d69fae409f1be5"},"result":"FIX","units":{"p14-panel-01":"LOCAL_IMAGE_EDIT","p14-panel-02":"LOCAL_IMAGE_EDIT","p14-panel-03":"LOCAL_IMAGE_EDIT"},"after_pixels":"CURRENT_COMPOSITION_READABLE_AND_ART_DOMINANT"},
+    {"page":15,"preview":{"path":"books/DM02/private-page-previews/page-25f617b853e82ff066d97844/v0001/0015-page-25f617b853e82ff066d97844.png","sha256":"35f0c54f5cd0d9322e944612d74c6e3d638229a43f97f21aaf5c7db8921b5224"},"result":"FIX","units":{"p15-panel-01":"LOCAL_IMAGE_EDIT"},"after_pixels":"CURRENT_FULL_PAGE_COMPOSITION_STRONG"},
+    {"page":16,"preview":{"path":"books/DM02/private-page-previews/page-a77b8959a9dbfa9b247f6eed/v0002/0016-page-a77b8959a9dbfa9b247f6eed.png","sha256":"49d83e04121a31f2beaaee0bf7aa7e7cb21b41e62c8fc11196cf0a1dd515e7cb"},"result":"FIX","units":{"p16-panel-01":"LOCAL_IMAGE_EDIT","p16-panel-02":"LOCAL_IMAGE_EDIT"},"after_pixels":"COMPOSITION_ONLY_ENLARGE_ART_AND_REDUCE_BARS"},
+    {"page":17,"preview":{"path":"books/DM02/private-page-previews/page-e738c476c98efb28ec475cdd/v0001/0017-page-e738c476c98efb28ec475cdd.png","sha256":"180fa2a23ab76e7cb4836180f6fc9b8e88e6b0bf7eeb627e2a5e65668aa7b10d"},"result":"FIX","units":{"p17-panel-01":"LOCAL_IMAGE_EDIT","p17-panel-02":"COMPOSITION_ONLY_DERIVED_FROM_CORRECTED_PANEL_01"},"after_pixels":"REDERIVE_CROP_AND_REDUCE_PLAQUE_DOMINANCE"},
+    {"page":18,"preview":{"path":"books/DM02/private-page-previews/page-52288832b81caa0075cc9f6b/v0003/0018-page-52288832b81caa0075cc9f6b.png","sha256":"65abbc6f5ac60014b1de7835a187850b2c0cf2e32c065af63a65dd1f10763088"},"result":"FIX","units":{"p18-panel-01":"LOCAL_IMAGE_EDIT","p18-panel-02":"LOCAL_IMAGE_EDIT"},"after_pixels":"COMPOSITION_ONLY_REDUCE_SPEECH_AND_BAR_AREA"},
+    {"page":21,"preview":{"path":"books/DM02/private-page-previews/page-8619f3db280abbfd867eefe4/v0004/0021-page-8619f3db280abbfd867eefe4.png","sha256":"33658c7df3f95991d573919045902ee33032f930529433ca276379fec40e4f6f"},"result":"FIX","units":{"p21-panel-01":"LOCAL_IMAGE_EDIT"},"after_pixels":"CURRENT_COMPOSITION_AND_SOURCE_CONDITION_REMAIN_VALID_IF_CLEARED_PIXELS_ARE_PRESERVED"}
+  ],
+  "overall": {
+    "pages_promotable_now": [1],
+    "legacy_pages_not_promotable": [7,8,9,13,14,15,16,17,18,21],
+    "reason": "Their source actions generally remain reusable, but their Brahma/Vishnu pixels predate and contradict the approved private series identities.",
+    "qualified_theological_review_newly_required": false,
+    "page_11_status_unchanged": "ESCALATE_BEFORE_GENERATION"
+  }
+}

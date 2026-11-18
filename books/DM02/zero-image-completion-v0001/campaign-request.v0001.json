@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "dm02-minimum-remaining-private-image-campaign-v0001",
+  "book_id": "DM02",
+  "status": "AWAITING_CAMPAIGN_AUTHORIZATION",
+  "authorization_received": false,
+  "approval_record_created": false,
+  "image_operations_executed": 0,
+  "authorization_subject": {
+    "path": "books/DM02/zero-image-completion-v0001/authorization-subject.v0001.json",
+    "file_sha256": "c995a5e6ddb53700920704148de706bbdcde8bb1360289b3c172860a55d962a4",
+    "canonical_subject_sha256": "6b9dc84b5796c79c0e1a6a68c6e5289e1c6b0795bf1a42900456b352a850aaa4"
+  },
+  "exact_scope": {
+    "localized_edits": 21,
+    "new_generations": 6,
+    "primary_operations": 27,
+    "repair_or_retry_operations": 0,
+    "total_ceiling": 27,
+    "maximum_per_unit": 1,
+    "page_11_included": false
+  },
+  "authorization_boundary": {
+    "provider": "CODEX_BUILT_IN_IMAGE_TOOLING_ONLY",
+    "included_allowance_first": true,
+    "paid_spend_authorized_usd": 0,
+    "api_key_authorized": false,
+    "external_provider_authorized": false,
+    "purchased_credit_use_authorized": false,
+    "overage_authorized": false,
+    "automatic_retry_authorized": false,
+    "zero_incremental_usd_technically_guaranteed": false,
+    "stop_if_paid_or_external_authorization_is_requested": true
+  },
+  "fresh_allowance_observation": {
+    "path": "books/DM02/zero-image-completion-v0001/allowance-observation.v0001.json",
+    "sha256": "226f58c6c39e671c3898cdd3aba420832cdf500e0cb3b35dcd47eb5ab01718e8",
+    "primary_used_percent": 1,
+    "primary_remaining_percent": 99,
+    "secondary_used_percent": 95,
+    "secondary_remaining_percent": 5,
+    "purchased_credit_balance": "0",
+    "has_purchased_credits": false,
+    "host_requested_paid_usage": false
+  },
+  "required_authorization_text": "I authorize DM02 private campaign subject 6b9dc84b5796c79c0e1a6a68c6e5289e1c6b0795bf1a42900456b352a850aaa4 for exactly the 21 localized edits and 6 new generations in its hash-bound manifest, 27 operations total, at most one operation per unit and zero retries or repairs, using only built-in Codex image tooling under the included-allowance-first and zero-authorized-paid-spend conditions. Page 11, unlisted work, purchased-credit use, API keys, external providers, overage, publication, deployment, push and merge remain unauthorized.",
+  "next_action": "STOP. An authorized human must explicitly authorize the exact canonical subject hash before any image operation or approval-record creation."
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "subject_type": "DM02_MINIMUM_REMAINING_PRIVATE_IMAGE_CAMPAIGN_EXCLUDING_PAGE_11",
+  "campaign_id": "dm02-minimum-remaining-private-image-campaign-v0001",
+  "book_id": "DM02",
+  "baseline_branch": "main",
+  "baseline_commit": "8ad2c5efda8eb16565fae67473f3bec1bc944506",
+  "purpose": "PRIVATE_INTERNAL_CORRECTION_OF_ONLY_THE_27_PIXEL_UNITS_STILL_REQUIRED_AFTER_ZERO_IMAGE_RECOVERY",
+  "provider": "CODEX_BUILT_IN_IMAGE_TOOLING_ONLY",
+  "locked_unit_manifest": {
+    "path": "books/DM02/zero-image-completion-v0001/unit-reassessment.v0001.json",
+    "sha256": "858691be877dc183c42183488fcf11f48ce7c1b136f8f1a87737550a9f48fe9f"
+  },
+  "operations": {
+    "localized_edits": [
+      "page-2eff3830302e6bb1ce973d73--p07-panel-01",
+      "page-2eff3830302e6bb1ce973d73--p07-panel-02",
+      "page-2eff3830302e6bb1ce973d73--p07-panel-03",
+      "page-050fb795d8c0bba26d6fc934--p08-panel-01",
+      "page-ca28c1486ed14e92ca7c6c89--p09-panel-01",
+      "page-29ea6f05a380ac8e4598753f--p10-panel-01",
+      "page-5d55c9f3f53bac24d1f44238--p12-panel-01",
+      "page-4adc33689921626f8d0b1f8d--p13-panel-01",
+      "page-4adc33689921626f8d0b1f8d--p13-panel-02",
+      "page-4adc33689921626f8d0b1f8d--p13-panel-03",
+      "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-01",
+      "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-02",
+      "page-b3c2c7ea03e4d1259ccbea7b--p14-panel-03",
+      "page-25f617b853e82ff066d97844--p15-panel-01",
+      "page-a77b8959a9dbfa9b247f6eed--p16-panel-01",
+      "page-a77b8959a9dbfa9b247f6eed--p16-panel-02",
+      "page-e738c476c98efb28ec475cdd--p17-panel-01",
+      "page-52288832b81caa0075cc9f6b--p18-panel-01",
+      "page-52288832b81caa0075cc9f6b--p18-panel-02",
+      "page-0a7e5fc37740e64356580b94--p19-panel-03",
+      "page-8619f3db280abbfd867eefe4--p21-panel-01"
+    ],
+    "new_generations": [
+      "page-6f5b1e3391910b496a7194d0--p06-panel-01",
+      "page-29ea6f05a380ac8e4598753f--p10-panel-02",
+      "page-5d55c9f3f53bac24d1f44238--p12-panel-02",
+      "page-0a7e5fc37740e64356580b94--p19-panel-01",
+      "page-f64eb6d498aa51d874a3ff79--p20-panel-01",
+      "page-f64eb6d498aa51d874a3ff79--p20-panel-02"
+    ],
+    "composition_only_after_parent_correction": [
+      "page-050fb795d8c0bba26d6fc934--p08-panel-02",
+      "page-e738c476c98efb28ec475cdd--p17-panel-02"
+    ]
+  },
+  "budget": {
+    "required_localized_edits": 21,
+    "required_new_generations": 6,
+    "required_primary_operations": 27,
+    "independent_review_directed_repair_operations": 0,
+    "edit_to_generation_fallback_operations": 0,
+    "maximum_image_operations": 27,
+    "maximum_operations_per_unit": 1,
+    "automatic_retry": false,
+    "manual_retry_within_this_subject": false,
+    "failed_primary_requires_new_hash_bound_authorization": true,
+    "unused_capacity_inheritance": false
+  },
+  "character_identity_inputs": [
+    {"role":"APPROVED_PRIVATE_VISHNU_ARTISTIC_CONVENTION","path":"books/DM02/iconography-review/series-character-identity-v0001/vishnu-character-reference-approval-sheet.v0001.md","sha256":"eead7d4e0379d3cf82037238ebe6c521e9d8daa9f500743ccfe86eb6b4fbd9e1","approval_id":"approval-22941d8d48a22623b1ce80b0","theological_certification":false},
+    {"role":"APPROVED_PRIVATE_BRAHMA_ARTISTIC_CONVENTION","path":"books/DM02/iconography-review/series-character-identity-v0001/brahma-character-reference-approval-sheet.v0001.md","sha256":"0ec0a174b42e76452beb8bcf7a94e781ab532eefa261d8201e5257e83a7b808a","approval_id":"approval-69e5ee5bb5efeba19b9689af","theological_certification":false}
+  ],
+  "reference_policy": {
+    "A_series_style":{"path":"book-factory/references/visual-gold-standard/pages/kgs-satya-p01.png","sha256":"15c2cfaf37a379c8042105051ac432e3aba5ccc0594eef43dc95d157cee53a1b","role":"PRESENTATION_AND_FINISH_ONLY"},
+    "B_comic_hierarchy":{"path":"book-factory/references/visual-gold-standard/pages/kgs-satya-p02.png","sha256":"a0fa07b60d1b8b128b541300f3fb5e26358863e3153c719e2d0aacb0fd7858dd","role":"COMPOSITIONAL_HIERARCHY_ONLY"},
+    "private_continuity_pixels":[
+      {"path":"books/DM02/book-level-production/images/p04-panel-01/v0005.png","sha256":"a7d239cf1b1cc0ece087f47ac4d2f9975c8b0638a6b84e82e288d18faa30600b","role":"PASSED_PRIVATE_VISHNU_CONTINUITY_REFERENCE_NOT_CANONICAL"},
+      {"path":"books/DM02/book-level-production/images/p05-panel-01/v0005.png","sha256":"4eed33e693dc1cc8795dfb5bf1ef1e51bbcac74c15b390faab3e6089763d5c3c","role":"PASSED_PRIVATE_VISHNU_BRAHMA_CONTINUITY_REFERENCE_NOT_CANONICAL"}
+    ],
+    "D_operation_specific_existing_asset":"Use the exact locked edit target for localized edits and the locked prior asset only as a source-compatible composition/environment reference for new generations.",
+    "exact_submitted_A_B_C_D_paths_hashes_and_roles_required": true,
+    "do_not_claim_reference_conditioning_unless_reference_was_actually_submitted": true,
+    "canonical_character_reference_promotion_authorized": false
+  },
+  "execution_gates": {
+    "fresh_read_only_allowance_observation_before_each_batch": true,
+    "default_maximum_operations_per_internal_batch": 4,
+    "included_allowance_must_be_available": true,
+    "independent_actual_pixel_review_after_each_operation": true,
+    "page_local_recovery_only": true,
+    "compose_and_independently_review_after_all_required_page_units_pass": true,
+    "stop_affected_unit_after_failed_primary": true,
+    "no_automatic_retry_escalation": true
+  },
+  "included_allowance_first": true,
+  "api_key_authorized": false,
+  "external_paid_provider_authorized": false,
+  "purchased_credit_use_authorized": false,
+  "automatic_credit_purchase_authorized": false,
+  "workspace_overage_authorized": false,
+  "paid_spend_authorized_usd": 0,
+  "zero_incremental_usd_technically_guaranteed": false,
+  "stop_if_explicit_payment_credit_overage_api_key_or_external_provider_requested": true,
+  "fresh_allowance_observation": {"path":"books/DM02/zero-image-completion-v0001/allowance-observation.v0001.json","sha256":"226f58c6c39e671c3898cdd3aba420832cdf500e0cb3b35dcd47eb5ab01718e8"},
+  "prior_campaign_preservation": {
+    "corrective_v0002_execution_ledger":{"path":"books/DM02/book-level-production/corrective-v0002/execution-ledger.v0001.json","sha256":"52d60f483f5d8933a2e5a4f805274a6a2cbd32ba7c1b58feba507961aa7e72a5"},
+    "corrective_v0002_campaign_state":{"path":"books/DM02/book-level-production/corrective-v0002/campaign-state.v0001.json","sha256":"5b3256c772b45e9e0138f7d1e2540ec24ef0004b9f215f518eb5ee106e580165"},
+    "page_4_5_repair_campaign_subject":"ba208b1d5c04e16575798c231f50858fa3294fbba553a4e23d4fcd90eb51752b",
+    "page_4_5_repair_campaign_status":"COMPLETED_EXACT_SCOPE_NO_RETRIES",
+    "attempt_counters_reset":false,
+    "budget_inheritance_allowed":false
+  },
+  "excluded": {
+    "page_11":{"unit_id":"page-b85332e92940926f67e6dd9d--p11-panel-01","status":"ESCALATE_BEFORE_GENERATION","qualified_review_signed":false},
+    "completed_pages":[1,2,3,4,5,22,23,24],
+    "already_reusable_unit":"page-0a7e5fc37740e64356580b94--p19-panel-02",
+    "DM04":true,
+    "DM08":true,
+    "source_graph_change":true,
+    "manuscript_change":true,
+    "publication_deployment_push_or_merge":true,
+    "unlisted_or_optional_image_work":true
+  }
+}
